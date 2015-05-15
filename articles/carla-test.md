@@ -3,10 +3,6 @@
         description="description" 
         services="powerbi" 
         documentationCenter="" 
-        authors="HeidiSteen" />
+        authors="sabotta" />
 
-
-
-This is my second test
-
-sdfsdfsdf aa
+This is a test markdown article.
