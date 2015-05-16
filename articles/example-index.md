@@ -13,7 +13,7 @@ This page includes links out to the standard Azure example pages and our own tes
 
 ## Azure Examples ##
 
-- [example-azure-note](example-azure-note.md)
+- [example-azure-note](articles\example-azure-note.md)
 - [example-azure-selector-list](example-azure-selector-list.md)
 - [example-azure-selector-list2](example-azure-selector-list2.md)
 - [example-code](example-code.md)
