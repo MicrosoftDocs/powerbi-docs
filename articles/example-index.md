@@ -9,7 +9,7 @@
 
 ![luck](./media/example-index/luck.png)
 
-This page includes links out to the standard Azure example pages and our own test pages as we add them. **NOTE:** I'm including `articles/` in the link paths, which I don't think should be necessary, will check into this.
+This page includes links out to the standard Azure example pages and our own test pages as we add them. **NOTE:** I'm including `articles/` in the link paths, which I don't think should be necessary, will check into this. Making a change now to show Git commands.
 
 ---
 
