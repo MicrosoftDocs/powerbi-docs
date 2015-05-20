@@ -29,7 +29,7 @@ If you have important data in an Excel spreadsheet on your computer, you can cre
 3. Click the **Get data** ﻿icon.  
 ![](./media/powerbi-getting-started/PBI_GetData.png)
 4. The default option is to get data from an Excel spreadsheet.  Click **Connect** ﻿to continue.
-5. Click ﻿**Browse** ﻿to find the Excel spreadsheet that contains the data you want on your dashboard, then click OK. *Want to continue this tutorial with sample data? [Download this sample Excel spreadsheet](http://go.microsoft.com/fwlink/?LinkID=521962).*
+5. Click ﻿**Browse** ﻿to find the Excel spreadsheet that contains the data you want on your dashboard, then click OK. *Want to continue this tutorial with sample data? [Download this sample Excel spreadsheet](http://go.microsoft.com/fwlink/?LinkID=521962).*  
 ![](./media/powerbi-getting-started/gettingstart2.png)  
 6. Once you've selected your spreadsheet, click **Connect**.
 7. Your new dataset appears in the navigation pane.  
