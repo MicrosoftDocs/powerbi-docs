@@ -3,10 +3,6 @@
         description="description" 
         services="powerbi" 
         documentationCenter="" 
-        authors="HeidiSteen" />
+        authors="dvana" />
 
-
-
-This is my second test
-
-sdfsdfsdf aa
+Derrick's Test
