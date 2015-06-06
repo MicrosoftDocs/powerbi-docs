@@ -13,6 +13,21 @@ This page includes links out to the standard Azure example pages and our own tes
 
 ---
 
+## Power BI Content Migration
+- [powerbi-service-get-started](articles/powerbi-service-get-started.md)
+- [powerbi-analysis-services-connector](articles/powerbi-analysis-services-connector.md)
+- [powerbi-designer-data-sources](articles/powerbi-designer-data-sources.md)
+- [powerbi-designer-help](articles/powerbi-designer-help.md)
+- [powerbi-mobile-android-get-started](articles/powerbi-mobile-android-get-started.md)
+- [powerbi-mobile-ipad-iphone-apps](articles/powerbi-mobile-ipad-iphone-apps.md)
+- [powerbi-on-premises-organizational-data](articles/powerbi-on-premises-organizational-data.md)
+- [powerbi-refresh-data](articles/powerbi-refresh-data.md)
+- [powerbi-sample-datasets](articles/powerbi-sample-datasets.md)
+- [powerbi-service-excel-data](articles/powerbi-service-excel-data.md)
+- [powerbi-service-share-unshare-dashboard](articles/powerbi-service-share-unshare-dashboard.md)
+
+
+
 ## Azure Examples ##
 
 - [example-azure-note](articles/example-azure-note.md)
@@ -40,7 +55,7 @@ This page includes links out to the standard Azure example pages and our own tes
 - [example-markdown-article-links](articles/example-markdown-article-links.md)
 
 
-## PBI Test Pages ##
+## Personal Test Pages
 
 - [carla-test](articles/carla-test.md)
 - [derrick-test](articles/derrick-test.md)
