@@ -1,11 +1,30 @@
+<properties 
+   pageTitle="Refresh data in Power BI" 
+   description="Refresh data in Power BI" 
+   services="powerbi" 
+   documentationCenter="" 
+   authors="v-anpasi" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date=""
+   ms.author="v-anpasi"/>
+
 #Refresh data in Power BI
 [← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
-Whenever you’re reporting on data that’s changing, it’s important the data behind your reports is up-to-date. Power BI Preview supports scheduled and manual refresh for a limited number of data sources. Additional data sources will support refresh in upcoming releases.﻿
+Whenever you’re reporting on data that’s changing, it’s important the data behind your reports is up-to-date. Power BI supports scheduled and manual refresh for a limited number of data sources. Additional data sources will support refresh in upcoming releases.﻿
 ﻿
-##Data sources that support refresh in Power BI Preview
+##Data sources that support refresh in Power BI
 
-Schedule Refresh and Refresh Now in Power BI Preview are ***only*** supported for Excel workbooks where Power Query is used to connect to and query data from the following data sources:  
+Schedule Refresh and Refresh Now in Power BI are ***only*** supported for Excel workbooks where Power Query is used to connect to and query data from the following data sources:  
 
 |Data source|Authentication type|
 |---|---|
