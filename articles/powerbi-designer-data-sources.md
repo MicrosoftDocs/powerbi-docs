@@ -1,3 +1,21 @@
+<properties 
+   pageTitle="Data Sources in Power BI Designer" 
+   description="Data Sources in Power BI Designer" 
+   services="powerbi" 
+   documentationCenter="" 
+   authors="v-anpasi" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date=""
+   ms.author="v-anpasi"/>
 
 #Data Sources in Power BI Designer
 [← Power BI Designer](https://support.powerbi.com/media/knowledgebase/topics/68530-power-bi-designer)

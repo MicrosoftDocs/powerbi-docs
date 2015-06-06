@@ -1,10 +1,29 @@
+<properties 
+   pageTitle="Connecting to on-premises organizational data from Power BI" 
+   description="Connecting to on-premises organizational data from Power BI" 
+   services="powerbi" 
+   documentationCenter="" 
+   authors="v-anpasi" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date=""
+   ms.author="v-anpasi"/>
+
 #Connecting to on-premises organizational data from Power BI
 
 [← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
-![](media/powerbi-on-premises-organizational-data/importantIcon.png) **Important:** In Power BI Designer or Excel, you can query, import, and create reports from your on-premises organizational data from sources like SQL Server.  However, from Power BI Preview, we currently do not support refreshing datasets connected to on-premises data sources. For more information about refreshing data in Power BI Preview, see [Refresh data](http://support.powerbi.com/knowledgebase/articles/474669-refresh-data). 
+![](media/powerbi-on-premises-organizational-data/importantIcon.png) **Important:** In Power BI Designer or Excel, you can query, import, and create reports from your on-premises organizational data from sources like SQL Server.  However, from Power BI, we currently do not support refreshing datasets connected to on-premises data sources. For more information about refreshing data in Power BI, see [Refresh data](http://support.powerbi.com/knowledgebase/articles/474669-refresh-data). 
 
-We know your own data is critical to making the right decisions. Power BI Preview makes it easy to connect to your organizational data, whether in be on-premises or in the cloud.
+We know your own data is critical to making the right decisions. Power BI makes it easy to connect to your organizational data, whether in be on-premises or in the cloud.
  
 Organizational data is often on premises. It’s in Excel workbooks on your own computer or in a fileshare system like SharePoint. Getting data from Excel workbooks is easy. See [Get Excel Data](https://powerbi.uservoice.com/knowledgebase/articles/424871-get-data-excel-data).
 
@@ -15,7 +34,7 @@ To learn more about connecting to these and other data sources, see [Connect to 
 See Also:
 ---------
 
-[Get started with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Power BI Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
 
 
