@@ -44,7 +44,7 @@ The connector can run on any domain computer. It doesn't have to be your local 
 
 ##To install and configure a Power BI Analysis Services Connector
 
-1.  In Power BI, click on the Settings icon ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVDhP5VQ9boYwDHU7Iq4AI3fhCFyAa3AKFi7AwIgEOzMjAwMsMMDGgMRK80zyEf5aVfrUpU+y/JPYcZynfBDRKuRt+JT6bfi7gmEYUtM01HWdjBAFQcDxn4AZXqQoilXB932OjePIflVVl/2a7I7jOGscx2yXZcnJCsuySOsXBc9FnqAOfZDNQHd6FwAOQBzrruuuYqYcxz4x23WaJr2Qkt1BEjYBT9dCIR3ioQ7rh1fO85zmeWY7SRLWoksSeZRlGftpmrIG+r6nYRikt+FVEJQQ3ZFlWTJyhGma0trQti3Ztk1RFMnIDm4Vg9ahX1nRBqKuDAqp+Z5kM5CEzfqMwEWVBI1DdKCoytfkErgknqHYgANv8i+BFz2AM5UUB5+4+O3ngMEbhsGvr1DXNWvP81jf4fYk8QkcSA1+YhSwz3t1+XcfLNEXtXPv0IvqeuUAAAAASUVORK5CYII=)  \> **Analysis Services Connector Preview**.
+1.  In Power BI, click on the Settings icon ![](media/powerbi-analysis-services-connector/settingsIcon.png)  \> **Analysis Services Connector Preview**.
 
     ![](media/powerbi-analysis-services-connector/ASConnector_Download.png)  
      **Note**: You can also [download the Analysis Services Connector Preview from the Microsoft Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=45333).
