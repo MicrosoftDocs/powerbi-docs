@@ -7,7 +7,7 @@ Welcome to the **Power BI Designer Getting Started Guide**. This short tour of t
 
 Prefer to watch instead of read? Feel free to [take a look at our getting started video](http://go.microsoft.com/fwlink/?LinkID=522675&clcid=0x409). ﻿﻿And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook.](http://go.microsoft.com/fwlink/?LinkID=521962)
 
-![](media/powerbi-designer-getting-started/PBI_NewGettingStartedSplash_resized.png)
+![](media/powerbi-designer-getting-started/PBI_NewGettingStartedSplash_resized.jpg)
 The Power BI Designer lets you create a collection of queries, data connections, and reports that can easily be shared with others. The Power BI Designer integrates proven Microsoft technologies – the powerful Query engine, data modeling, and visualizations – and works seamlessly with the online [**Power BI Service**](https://preview.powerbi.com/).
 
 With the combination of the **Power BI Designer** (where analysts and others can create powerful data connections, models and reports) and the [**Power BI Service**](https://preview.powerbi.com/) (where Power BI Designer reports can be shared so users can view and interact with them), new insights from the world of data are easier to model, build, share, and extend.
