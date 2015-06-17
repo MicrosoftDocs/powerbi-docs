@@ -290,4 +290,4 @@ There are all sorts of things you can do with the Power BI Designer. For more in
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in the Power BI Designer. We look forward to hearing from you!
 
-![](media/powerbi-designer-common-query-tasks/sendfeedback.png)
+![](media/powerbi-designer-common-query-tasks/SendFeedback.png)
