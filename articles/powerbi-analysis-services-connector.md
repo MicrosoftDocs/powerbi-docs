@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date=""
+   ms.date="06/16/2015"
    ms.author="v-anpasi"/>
 
 #Configure a Power BI Analysis Services Connector

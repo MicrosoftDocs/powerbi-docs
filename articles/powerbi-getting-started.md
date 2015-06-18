@@ -1,9 +1,21 @@
 <properties 
-        pageTitle="Getting Started with Power BI" 
-        description="description" 
-        services="powerbi" 
-        documentationCenter="" 
-        authors="mgblythe" />
+   pageTitle="Getting Started with Power BI" 
+   description="Getting Started with Power BI" 
+   services="powerbi" 
+   documentationCenter="" 
+   authors="v-anpasi" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date="06/18/2015"
+   ms.author="v-anpasi"/>
 
 #Getting Started with Power BI
 
