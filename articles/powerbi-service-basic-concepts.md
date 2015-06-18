@@ -25,11 +25,16 @@ The 3 major building blocks of Power BI are: ***dashboards***, ***reports***, a
 
 ###Datasets
 
-A *dataset* is something that you *connect* to. Use Power BI to bring all of your data together. See it all in one place and access it from all of your devices.
+A *dataset* is something that you *connect* to. Use Power BI to bring all of your data together. See it all in one place and access it from all of your devices.
 
-In the navigation pane, the datasets you've connected to are listed under the **Datasets** heading. Each listed
+In the navigation pane, the datasets you've connected to are listed under the **Datasets** heading. Each listed under the Datasets heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce database, etc. [See the list of dataset types that can be used with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/434354-get-data).
 
-<table><tr><td><img src="media/powerbi-service-basic-concepts/Drawing2.png"/></td><td><b>ONE</b> dataset...<ul><li>can be used over and over. </li><li>can be used in many different reports.</li><li>Visualizations from that one dataset can display on many different dashboards.</li></ul></td></tr></table>
+**ONE** Dataset...
+- can be used over and over.
+- can be used in many different reports.
+- Visualizations from that one dataset can display on many different dashboards.  
+
+ ![](media/powerbi-service-basic-concepts/Drawing2.png) 
 
 To [connect to a dataset](http://support.powerbi.com/knowledgebase/articles/434354-get-data), click **Get Data** (at the top of the navigation pane) or click the plus sign (next to the **Datasets** heading). The work you do in Power BI does not change the underlying dataset.
 
@@ -39,7 +44,11 @@ A *dashboard* is something you create or something a coworker creates and shares
 
 In the navigation pane, your dashboards are listed under the **Dashboards** heading. Each listed dashboard represents a customized view of some subset of the underlying datasets.  What this means is that someone (you or a coworker) created the dashboard and then navigated to Editing View where s/he explored the data and created visualizations and then picked some of those visualizations to display on the dashboard.
 
-<table><tr><td><img src="media/powerbi-service-basic-concepts/Drawing1.png"</td><td><b>ONE</b> dashboard...<ul><li>can display visualizations from many different datasets</li><li>can display visualizations from many different reports</li></ul></td></tr></table>
+**ONE** Dataset...
+- can display visualizations from many different datasets 
+- can display visualizations from many different reports  
+
+ ![](media/powerbi-service-basic-concepts/Drawing1.png) 
 
 **A dashboard can be [created from scratch](http://support.powerbi.com/knowledgebase/articles/475163-create-a-power-bi-dashboard)** -- create a new blank dashboard and then get some data. 
 
