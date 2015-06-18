@@ -83,8 +83,6 @@ There are 2 ways to view and interact with reports: [Reading View](http://suppor
 
  ![](media/powerbi-service-basic-concepts/Drawing3new.png) 
 
-<table><tr><td><img src="media/powerbi-service-basic-concepts/Drawing3new.png"/></td><td><b>ONE</b> report...<ul><li>can be associated with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards). </li><li>can be created using data from one dataset. (the slight exception to this is that Power BI Designer can combine more than 1 dataset into a single report and that report can be imported into Power BI)</li></ul></td></tr></table>
-
 ###The Retail Analysis Sample dashboard
 
 The first time you open Power BI, you're looking at the [sample dashboard](https://powerbi.uservoice.com/admin/faqs/487029/a%20href=%22http://support.powerbi.com/knowledgebase/articles/471115%22%3E), the ***Retail Analysis Sample***.  This sample will always be there, unless you [manually remove it](http://support.powerbi.com/knowledgebase/articles/475173-delete-or-remove-a-dashboard).
