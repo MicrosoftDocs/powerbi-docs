@@ -14,17 +14,17 @@ This page includes links out to the standard Azure example pages and our own tes
 ---
 
 ## Power BI Content Migration
-- [powerbi-service-get-started](./powerbi-service-get-started.md)
-- [powerbi-analysis-services-connector](./powerbi-analysis-services-connector.md)
-- [powerbi-designer-data-sources](./powerbi-designer-data-sources.md)
-- [powerbi-designer-help](./powerbi-designer-help.md)
-- [powerbi-mobile-android-get-started](./powerbi-mobile-android-get-started.md)
-- [powerbi-mobile-ipad-iphone-apps](./powerbi-mobile-ipad-iphone-apps.md)
-- [powerbi-on-premises-organizational-data](./powerbi-on-premises-organizational-data.md)
-- [powerbi-refresh-data](./powerbi-refresh-data.md)
-- [powerbi-sample-datasets](./powerbi-sample-datasets.md)
-- [powerbi-service-excel-data](./powerbi-service-excel-data.md)
-- [powerbi-service-share-unshare-dashboard](./powerbi-service-share-unshare-dashboard.md)
+- [powerbi-service-get-started](powerbi-service-get-started.md)
+- [powerbi-analysis-services-connector](powerbi-analysis-services-connector.md)
+- [powerbi-designer-data-sources](powerbi-designer-data-sources.md)
+- [powerbi-designer-help](powerbi-designer-help.md)
+- [powerbi-mobile-android-get-started](powerbi-mobile-android-get-started.md)
+- [powerbi-mobile-ipad-iphone-apps](powerbi-mobile-ipad-iphone-apps.md)
+- [powerbi-on-premises-organizational-data](powerbi-on-premises-organizational-data.md)
+- [powerbi-refresh-data](powerbi-refresh-data.md)
+- [powerbi-sample-datasets](powerbi-sample-datasets.md)
+- [powerbi-service-excel-data](powerbi-service-excel-data.md)
+- [powerbi-service-share-unshare-dashboard](powerbi-service-share-unshare-dashboard.md)
 
 
 
