@@ -29,9 +29,9 @@ A *dataset* is something that you *connect* to. Use Power BI to bring all of you
 
 In the navigation pane, the datasets you've connected to are listed under the **Datasets** heading. Each listed under the Datasets heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce database, etc. [See the list of dataset types that can be used with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/434354-get-data).
 
-**ONE** Dataset...
-- can be used over and over.
-- can be used in many different reports.
+**ONE** dataset...
+- can be used over and over. 
+- can be used in many different reports.  
 - Visualizations from that one dataset can display on many different dashboards.  
 
  ![](media/powerbi-service-basic-concepts/Drawing2.png) 
@@ -44,7 +44,7 @@ A *dashboard* is something you create or something a coworker creates and shares
 
 In the navigation pane, your dashboards are listed under the **Dashboards** heading. Each listed dashboard represents a customized view of some subset of the underlying datasets.  What this means is that someone (you or a coworker) created the dashboard and then navigated to Editing View where s/he explored the data and created visualizations and then picked some of those visualizations to display on the dashboard.
 
-**ONE** Dataset...
+**ONE** dashboard...
 - can display visualizations from many different datasets 
 - can display visualizations from many different reports  
 
@@ -74,7 +74,12 @@ There are 2 ways to view and interact with reports: [Reading View](http://suppor
 
 > **Note:** If a *shared* dashboard has reports, you will NOT see the report listed in the navigation pane.  To open the report, from the shared dashboard, click one of the tiles. If the report owner created the tile from a report, the report opens.  If the report owner created the tile from Q&A, the Q&A page opens.
 
-<table><tr><td><img src="media/powerbi-service-basic-concepts/Drawing3new.png"/></td><td><b>ONE</b> report...<ul><li>can be associated with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards). </li><li>can be created using data from one dataset. (the slight exception to this is that Power BI Designer can combine more than 1 dataset into a single report and that report can be imported into Power BI)</li></ul></td></tr></table>
+
+**ONE** report...
+- can be associated with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards). 
+- can be created using data from one dataset. (the slight exception to this is that Power BI Designer can combine more than 1 dataset into a single report and that report can be imported into Power BI  
+
+ ![](media/powerbi-service-basic-concepts/Drawing3new.png) 
 
 ###The Retail Analysis Sample dashboard
 
