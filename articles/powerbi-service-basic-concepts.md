@@ -25,9 +25,9 @@ The 3 major building blocks of Power BI are: ***dashboards***, ***reports***, a
 
 ###Datasets
 
-A *dataset* is something that you *connect* to. Use Power BI to bring all of your data together. See it all in one place and access it from all of your devices.
+A *dataset* is something that you *connect* to. Use Power BI to bring all of your data together. See it all in one place and access it from all of your devices.
 
-In the navigation pane, the datasets you've connected to are listed under the **Datasets** heading. Each listed  under the Datasets heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce database, etc. [See the list of dataset types that can be used with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/434354-get-data).
+In the navigation pane, the datasets you've connected to are listed under the **Datasets** heading. Each listed under the Datasets heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce database, etc. [See the list of dataset types that can be used with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/434354-get-data).
 
 **ONE** dataset...
 - can be used over and over. 
@@ -37,8 +37,6 @@ In the navigation pane, the datasets you've connected to are listed under the **
  ![](media/powerbi-service-basic-concepts/Drawing2.png) 
 
 To [connect to a dataset](http://support.powerbi.com/knowledgebase/articles/434354-get-data), click **Get Data** (at the top of the navigation pane) or click the plus sign (next to the **Datasets** heading). The work you do in Power BI does not change the underlying dataset.
-
-
 
 ###Dashboards
 
