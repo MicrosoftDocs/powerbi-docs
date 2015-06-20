@@ -236,7 +236,7 @@ The Power BI Designer lets you interact with visuals that cross-highlight and fi
 
 1. Click on the light blue shape covering **Canada**
 
-	1.  ![](media/powerbi-designer-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18(1).png)       
+	1.  ![](media/powerbi-designer-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)       
 
 	2.  Note how the other visuals are filtered to show Stock and Total Orders just for Canada.
 
