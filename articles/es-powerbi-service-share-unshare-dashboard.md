@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date=""
+   ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
 #Compartir un panel de Power BI \(y dejar de compartir\)
