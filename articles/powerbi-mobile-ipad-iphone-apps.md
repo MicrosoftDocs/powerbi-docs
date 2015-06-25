@@ -17,7 +17,7 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#iPad and iPhone apps (Power BI for iOS preview)
+#iPad and iPhone apps (Power BI for iOS)
 
 The iPad and iPhone apps for Microsoft Power BI for iOS preview deliver the mobile BI experience. They provide live, touch-enabled mobile access to your important business information, so you can view and interact with your company dashboards and reports from anywhere. Explore the data in your dashboards, and share them with your colleagues in email or text messages.
 
@@ -29,7 +29,7 @@ Go to Power BI to [sign up for the Power BI](http://go.microsoft.com/fwlink/?Lin
 
 ##iPad app for Power BI
 
-Get started with the [iPad app for Power BI for iOS](http://support.powerbi.com/knowledgebase/articles/467172-get-started-with-the-ipad-app-power-bi-for-ios-pr) preview.
+Get started with the [iPad app for Power BI for iOS](powerbi-mobile-iphone.md).
 
 ##iPhone app for Power BI
 
