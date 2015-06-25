@@ -1,3 +1,5 @@
+<properties pageTitle="Azure and Power BI" description="Azure and Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
+<tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
 #Azure and Power BI
 
 [← Big data and more](https://support.powerbi.com/knowledgebase/topics/88773-big-data-and-more)
