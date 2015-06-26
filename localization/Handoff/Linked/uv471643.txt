@@ -1,0 +1,179 @@
+	<title>Data Sources in Power BI Designer</title>	<div class="MsoNormal"><font face="Calibri" size="3">The Power BI Designer lets you connect to data from many
+different sources. A full list of available data sources is at the bottom of
+this page.</font><font face="Times New Roman" size="3">
+</font></div><div class="MsoNormal"><font face="Times New Roman" size="3">
+<br></font></div><div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">To connect to data, you need to have the <b style="mso-bidi-font-weight: normal;">Query</b> canvas displayed. Select <b style="mso-bidi-font-weight: normal;">Query</b> from the bottom left corner of
+the canvas.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79102488/QueryOverview_QueryView.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">From the <b style="mso-bidi-font-weight: normal;">Query</b>
+canvas, on the <b style="mso-bidi-font-weight: normal;">Home</b> ribbon select <b style="mso-bidi-font-weight: normal;">Get Data</b>. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Selecting the down arrow, or the <b style="mso-bidi-font-weight: normal;">Get Data</b> text on the button, shows the <b style="mso-bidi-font-weight: normal;">Most Common</b> data types menu shown in the following image. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span></span><span></span><span><img src="https://powerbi.uservoice.com/assets/79102551/QueryOverview_GetDataMenu.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Selecting <b style="mso-bidi-font-weight: normal;">More…</b>
+from the <b style="mso-bidi-font-weight: normal;">Most Common</b> menu displays
+the <b style="mso-bidi-font-weight: normal;">Get Data</b> window. You can also bring
+up the <b style="mso-bidi-font-weight: normal;">Get Data </b>window (and bypass
+the <b style="mso-bidi-font-weight: normal;">Most Common</b> menu) by selecting
+the <b style="mso-bidi-font-weight: normal;">Get Data</b> <b style="mso-bidi-font-weight: normal;">icon button</b> directly.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79102563/DataSources_GetData.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><h1 style="margin: 12pt 0in 0pt;"><font color="#2e74b5" face="Calibri Light" size="5">Data Sources</font></h1><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Data types are organized in the following categories:</font></p><font face="Times New Roman" size="3">
+
+</font><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;">All</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;">File</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;">Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;">Azure</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l0 level1 lfo1;">Other</p></li></ul><font face="Times New Roman" size="3">
+
+
+
+
+
+
+
+
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">&nbsp;</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The <b style="mso-bidi-font-weight: normal;">All</b> category
+includes all data connection types from all categories.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The <b style="mso-bidi-font-weight: normal;">File</b> category
+provides the following data connections:</font></p><font face="Times New Roman" size="3">
+
+</font><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Excel</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">CSV</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">XML</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Text</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l2 level1 lfo2;">Folder</p></li></ul><font face="Times New Roman" size="3">
+
+
+
+
+
+
+
+
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The following image shows the <b style="mso-bidi-font-weight: normal;">Get Data</b> window for <b style="mso-bidi-font-weight: normal;">File</b>.</font></p><font face="Times New Roman" size="3"></font><font face="Times New Roman" size="3"></font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span></span><span><img src="https://powerbi.uservoice.com/assets/79102578/DataSources_File.png"></span>&nbsp;</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The <b style="mso-bidi-font-weight: normal;">Database</b>
+category provides the following data connections:</font></p><font face="Times New Roman" size="3">
+
+</font><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">SQL Server Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Access Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">SQL Server Analysis Services Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Oracle Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">IBM DB2 Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">MySQL Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">PostgreSQL Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Sybase Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l2 level1 lfo2;">Teradata Database</p></li></ul><font face="Times New Roman" size="3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The following image shows the <b style="mso-bidi-font-weight: normal;">Get Data</b> window for <b style="mso-bidi-font-weight: normal;">Database</b>.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79102629/DataSources_Database.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The <b style="mso-bidi-font-weight: normal;">Azure</b>
+category provides the following data connections:</font></p><font face="Times New Roman" size="3">
+
+</font><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Microsoft Azure SQL Database</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Microsoft Azure Marketplace</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Microsoft Azure HDInsight</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Microsoft Azure Blob Storage</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l2 level1 lfo2;">Microsoft Azure Table Storage</p></li></ul><font face="Times New Roman" size="3">
+
+
+
+
+
+
+
+
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The following image shows the <b style="mso-bidi-font-weight: normal;">Get Data</b> window for <b style="mso-bidi-font-weight: normal;">Azure</b>.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79102644/DataSources_Azure.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The <b style="mso-bidi-font-weight: normal;">Other</b>
+category provides the following data connections:</font></p><font face="Times New Roman" size="3">
+
+</font><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Web</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">SharePoint List</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">OData Feed</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Hadoop File (HDFS)</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Active Directory</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Microsoft Exchange</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Dynamics CRM Online</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Facebook</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Google Analytics</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">SAP BusinessObjects BI Universe</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Salesforce Objects</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">Salesforce Reports</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">ODBC Query</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l2 level1 lfo2;">ODBC Tables (Beta)</p></li><li style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-family: &quot;Calibri&quot;,sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l2 level1 lfo2;">Blank Query</p></li></ul><font face="Times New Roman" size="3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The following image shows the <b style="mso-bidi-font-weight: normal;">Get Data</b> window for <b style="mso-bidi-font-weight: normal;">Other</b>.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span><img src="https://powerbi.uservoice.com/assets/82793095/PBID_GetDataOther.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><h1 style="margin: 12pt 0in 0pt;"><font color="#2e74b5" face="Calibri Light" size="5">Connecting to a Data Source</font></h1><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">&nbsp;</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">To connect to a data source, select the data source from the
+<b style="mso-bidi-font-weight: normal;">Get Data</b> window and select <b style="mso-bidi-font-weight: normal;">Connect</b>. In the following image, <b style="mso-bidi-font-weight: normal;">Web</b> is selected from the <b style="mso-bidi-font-weight: normal;">Other</b> data connection category.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span><img src="https://powerbi.uservoice.com/assets/82793125/PBID_GetDataOther.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">A connection window is displayed, specific to the type of
+data connection. If credentials are required, you’ll be prompted to provide
+them. The following image shows a URL being entered to connect to a Web data
+source.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79102761/DataSources_FromWebBox.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">When the URL or resource connection information is entered,
+select <b style="mso-bidi-font-weight: normal;">OK</b>. The Power BI Designer
+makes the connection to the data source, and presents the available data
+sources in the <b style="mso-bidi-font-weight: normal;">Navigator</b>. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79102773/DataSources_FromNavigatorDialog.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">You can either load the data by selecting the <b style="mso-bidi-font-weight: normal;">Load</b> button at the bottom of the <b style="mso-bidi-font-weight: normal;">Navigator</b> pane, or edit the query
+before loading data by selecting the <b style="mso-bidi-font-weight: normal;">Edit
+Query</b> button. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">That’s all there is to connecting to data sources in the
+Power BI Designer. </font></p><font face="Times New Roman" size="3">
+
+</font><h1 style="margin: 12pt 0in 0pt;"><font color="#2e74b5" face="Calibri Light" size="5">More Information</font></h1><font face="Times New Roman" size="3"></font><span style="line-height: 1.4em;">There are all sorts of things you can do with the Power BI
+Designer. For more information on its capabilities, check out the following
+resources:</span><br>
+
+<ul><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471664">Getting
+Started with Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471646">Query
+Overview with Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471643">Data Sources
+in Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471644">Shape and
+Combine Data with Power BI Designer</a><br></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471648">Common Query
+Tasks in the Power BI Designer</a><span style="line-height: 1.4em;">&nbsp; </span><span style="line-height: 1.4em;">&nbsp;&nbsp;</span></li></ul>
+
+Want to give us feedback? Great – use the <b>Send Feedback</b> menu item in the Power BI
+Designer. We look forward to hearing from you!<br><br><font face="Times New Roman" size="3"></font><p style="margin: 0in 0in 8pt;"><span style="mso-no-proof: yes;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79102785/SendFeedback.png"></span><br></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">&nbsp;</font></p><font face="Times New Roman" size="3">
+
+</font></div><div></div>"

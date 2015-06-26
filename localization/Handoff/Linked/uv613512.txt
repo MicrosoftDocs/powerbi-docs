@@ -1,0 +1,100 @@
+	<title>appFigures content pack for Power BI</title>	<div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Tracking important statistics about your apps is easy with
+Power BI and the appFigures content pack. Power BI retrieves your data, including app sales, downloads, and ad statistics, then builds a default dashboard and related reports based on that data.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span><img width="1049" height="898" style="width: 558px; height: 470px;" src="https://powerbi.uservoice.com/assets/81504852/appFiguresDoc_01.png"></span></font></p><p style="margin: 0in 0in 8pt;"><br></p><font face="Calibri" size="3"><p style="margin: 0in 0in 8pt;">After you have created the connection, you can explore your
+data and customize the dashboard to meet your needs. Data is&nbsp;<span style="font-family: Calibri; font-size: medium; font-style: normal; font-variant: normal; line-height: 22.3999996185303px;">automatically</span><span style="font-family: Calibri; font-size: medium; font-style: normal; font-variant: normal; line-height: 22.3999996185303px;">&nbsp;</span><span style="line-height: 1.4em;">refreshed every day.</span></p></font><font face="Calibri" size="3"><p style="margin: 0in 0in 8pt;"><br></p><strong style="font-family: 'Times New Roman';">
+
+</strong><font face="Calibri" style="font-family: 'Times New Roman';">1.&nbsp;</font>Select <b>Get Data</b> at the bottom of the left navigation pane.<br></font><br><img src="https://powerbi.uservoice.com/assets/82642324/PBI_GetData.png" style="font-size: 11pt; background-color: rgb(249, 250, 251);"><br><br><font size="3"><p style="font-family: Calibri; margin: 0in 0in 8pt;"><font face="Calibri" style="font-family: 'Times New Roman';">2.&nbsp;</font>In the <b>Services </b>box, select <b>Get</b>.</p><p style="font-family: Calibri; margin: 0in 0in 8pt;"><span><img src="https://powerbi.uservoice.com/assets/82722055/PBI_GetServices.png"></span><br></p><p style="font-family: 'Times New Roman'; margin: 0in 0in 8pt;"><font face="Calibri">3. Select&nbsp;<b style="mso-bidi-font-weight: normal;">appFigures</b>
+&gt; &nbsp;<b style="mso-bidi-font-weight: normal;">Connect</b>.</font></p><p style="font-family: 'Times New Roman'; margin: 0in 0in 8pt;"><span><img src="https://powerbi.uservoice.com/assets/82717069/appFigures.png"></span></p><p style="font-family: 'Times New Roman'; margin: 0in 0in 8pt;"><span style="font-family: Calibri; font-size: medium; font-style: normal; font-variant: normal; line-height: 22.3999996185303px;">3. For <b>Authentication Method</b>, select <b>oAuth2 </b>&gt; <b>Sign In</b>.</span><span><br></span></p><p style="margin: 0in 0in 8pt;"><span style="font-family: Calibri; font-size: medium; font-style: normal; font-variant: normal; line-height: 22.3999996185303px;">4.&nbsp;</span><font face="Calibri"><span style="line-height: 22.3999996185303px;">When prompted, enter your appFigures credentials and follow the appFigures authentication process.</span></font></p><p style="font-family: 'Times New Roman'; margin: 0in 0in 8pt;"><span style="font-family: Calibri; line-height: 1.4em;">The first time you connect, Power BI prompts you to allow read-only access to your account. Select </span><b style="font-family: Calibri;">Allow </b><span style="font-family: Calibri; line-height: 1.4em;">to begin the import process. This
+can take a few minutes depending on the volume of data in your account.</span><br></p><p style="font-family: 'Times New Roman'; margin: 0in 0in 8pt;">
+
+<span><img src="https://powerbi.uservoice.com/assets/81508740/appFiguresDoc_06.png"></span></p><p style="font-family: 'Times New Roman'; margin: 0in 0in 8pt;"><font face="Calibri">5. After Power BI imports the data
+you will see a new dashboard, report, and dataset in the left navigation pane.
+New items are marked with a yellow asterisk *:</font></p><p style="font-family: 'Times New Roman'; margin: 0in 0in 8pt;"><span><img src="https://powerbi.uservoice.com/assets/82721875/PBI_appFigures%203.png"></span></p><p style="font-family: Calibri; margin: 0in 0in 8pt;"></p><font face="Times New Roman" style="font-family: Calibri;"><p style="margin: 0in 0in 8pt;">
+
+<font face="Calibri">6. Select the appFigures dashboard.
+This is the default dashboard that Power BI creates to display your data. You
+can modify this dashboard to display your data in any way you want.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri"><span><img src="https://powerbi.uservoice.com/assets/81508803/appFiguresDoc_08.png"></span></font></p><p style="margin: 0in 0in 8pt;"><br></p><font face="Calibri"><h3><font face="Times New Roman">
+
+</font>What can you do now?</h3></font><font face="Calibri"><p style="margin: 0in 0in 8pt;">- Try <a href="https://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi-preview"><font color="#0563c1">asking
+a question in the Q&amp;A box</font></a> at the top of the dashboard,&nbsp;such as "total downloads by product"</p><p style="margin: 0in 0in 8pt;"><span><img src="https://powerbi.uservoice.com/assets/81508959/appFiguresDoc_10.png"></span></p><font face="Times New Roman"><p style="margin: 0in 0in 8pt;">- <a href="https://support.powerbi.com/knowledgebase/articles/424878"><font color="#0563c1" face="Calibri">Change the
+tiles</font></a><font face="Calibri"> in the dashboard.</font></p><p style="margin: 0in 0in 8pt;">
+- <a href="https://support.powerbi.com/knowledgebase/articles/425669"><font color="#0563c1" face="Calibri">Select a tile</font></a><font face="Calibri">
+to open the underlying report.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri">- Rename the dashboard: Select the ellipsis (…) next to the appFigures dashboard &gt; <b style="mso-bidi-font-weight: normal;">Rename</b>.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri"><span><img src="https://powerbi.uservoice.com/assets/81508944/appFiguresDoc_09.png"></span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri"><span>- While your dataset will be refreshed automatically, you can also refresh it on demand using <b>﻿Refresh Now</b>﻿</span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri"><span><span><img src="https://powerbi.uservoice.com/assets/81509121/appFiguresDoc_12.png"></span></span></font></p><p style="margin: 0in 0in 8pt;"><strong>
+
+<br></strong>
+
+</p><h3><font face="Calibri">Dataset </font></h3><p style="margin: 0in 0in 8pt;"><font face="Calibri">The following data is available from appFigures in Power BI.</font></p><table style="border: currentColor; border-image: none; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt;" border="1" cellspacing="0" cellpadding="0">
+ <tbody><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+  <td width="117" valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 70.15pt; background-color: transparent; mso-border-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><b style="mso-bidi-font-weight: normal;"><font color="#000000" face="Calibri">Table Name</font></b></p><font color="#000000">
+  </font></td>
+  <td width="543" valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 325.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><b style="mso-bidi-font-weight: normal;"><font color="#000000" face="Calibri">Description</font></b></p><font color="#000000">
+  </font></td>
+ </tr>
+ <tr style="mso-yfti-irow: 1;">
+  <td width="117" valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 70.15pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">Countries</font></p><font color="#000000">
+  </font></td>
+  <td width="543" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 325.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">This table provides country name information.</font></p><font color="#000000">
+  </font></td>
+ </tr>
+ <tr style="mso-yfti-irow: 2;">
+  <td width="117" valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 70.15pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">Dates</font></p><font color="#000000">
+  </font></td>
+  <td width="543" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 325.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">This table contains dates from today back to the earliest PublishDate
+  of apps that are Active and Visible in your appFigures account.</font></p><font color="#000000">
+  </font></td>
+ </tr>
+ <tr style="mso-yfti-irow: 3;">
+  <td width="117" valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 70.15pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">Events</font></p><font color="#000000">
+  </font></td>
+  <td width="543" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 325.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">This table contains download, sales, and ad information for each app,
+  by country, on a daily basis. Note that both app and in-app purchase
+  information is all in this single table—you can use the <b style="mso-bidi-font-weight: normal;">Type</b> column to differentiate.</font></p><font color="#000000">
+  </font></td>
+ </tr>
+ <tr style="mso-yfti-irow: 4;">
+  <td width="117" valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 70.15pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">Inapps</font></p><font color="#000000">
+  </font></td>
+  <td width="543" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 325.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">This table contains data about the different types of In-App
+  Purchases that are associated with Active, Visible apps on your appFigures account.</font></p><font color="#000000">
+  </font></td>
+ </tr>
+ <tr style="mso-yfti-irow: 5; mso-yfti-lastrow: yes;">
+  <td width="117" valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 70.15pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">Products</font></p><font color="#000000">
+  </font></td>
+  <td width="543" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 325.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;"><font color="#000000">
+  </font><p style="margin: 0in 0in 0pt; line-height: normal;"><font color="#000000" face="Calibri">This table contains data about the different apps that are Active and
+  Visible on your appFigures account.</font></p><font color="#000000">
+  </font></td>
+ </tr>
+</tbody></table><p style="margin: 0in 0in 8pt;"><strong>
+
+<br></strong>
+
+</p><h3><font face="Calibri">Troubleshooting</font></h3><p style="margin: 0in 0in 8pt;"><font face="Calibri">If data from some of your apps is not showing up in Power
+BI, check to make sure that those apps are Visible and Active on the <b style="mso-bidi-font-weight: normal;">apps</b> tab of the appFigures site.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri"><span><img src="https://powerbi.uservoice.com/assets/81509037/appFiguresDoc_11.png"></span></font></p><p style="margin: 0in 0in 8pt;">
+
+<br></p></font><h3>See Also</h3><p style="margin: 0in 0in 8pt;"><br></p><font face="Times New Roman"><p style="margin: 0in 0in 8pt;"><strong>
+<span class="_wysihtml5-temp-placeholder">﻿</span></strong><a href="https://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi"><font color="#0563c1" face="Calibri">Get
+started in Power BI</font></a></p><p style="margin: 0in 0in 8pt;">
+
+<span class="_wysihtml5-temp-placeholder">﻿</span><a href="https://support.powerbi.com/knowledgebase/topics/63369"><font color="#0563c1" face="Calibri">Get data in Power
+BI</font></a></p><p style="margin: 0in 0in 8pt;">
+
+<span class="_wysihtml5-temp-placeholder">﻿</span><a href="https://support.powerbi.com/knowledgebase/topics/88770"><font color="#0563c1" face="Calibri">Services in Power
+BI</font></a></p><p style="margin: 0in 0in 8pt;">
+
+<br></p></font><p style="margin: 0in 0in 8pt;"><br></p></font><p style="margin: 0in 0in 8pt;"><br></p><p style="margin: 0in 0in 8pt;">
+
+<br></p></font><p style="font-family: Calibri; margin: 0in 0in 8pt;"></p></font><p style="margin: 0in 0in 8pt;"><br></p><font face="Times New Roman" size="3">
+
+</font></div><div></div>

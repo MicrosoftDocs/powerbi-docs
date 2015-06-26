@@ -1,0 +1,225 @@
+	<title>Tutorial: Importing and analyzing data from a Web Page using Power BI Designer</title>	<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG></o:AllowPNG>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><div class="MsoNormal"></div>
+
+In this tutorial, you
+will learn how to import a table of data from a Web page and create a report to
+visualize this data. As part of this process, you navigate across tables
+available on a web page, and apply data transformation steps to bring the table
+into a new shape.<br><br>
+
+In this article<br><br><blockquote>Task 1: Connect to a web data
+source </blockquote><br>
+
+<blockquote>Task 2: Shape data in the Query view </blockquote><br><blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step
+1: Remove Other Columns to only display columns of interest </blockquote><br><blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step
+2: Replace Values to clean up values in a selected column </blockquote><br>
+
+<blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 3: Filter values in a column </blockquote><br>
+
+<blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 4: Rename a
+column</blockquote><br>
+
+<blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 5: Filter null
+values in a column</blockquote><br>
+
+<blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 6: Rename a query</blockquote><br>
+
+<blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Query Steps created</blockquote><br>
+
+<blockquote>Task 3: Create visualizations using the Report view </blockquote><br>
+
+<blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 1: Load the query to your report </blockquote><br>
+
+<blockquote>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 2: Create a Map
+visualization</blockquote><h2>Task 1: Connect to a web data source</h2><br>
+
+In task 1, you import
+a Tournament Summary table from the UEFA European Football Championship
+Wikipedia page at http://en.wikipedia.org/wiki/UEFA_European_Football_Championship <br><br>﻿﻿﻿<span><img src="https://powerbi.uservoice.com/assets/75933449/WebPage1.jpg"></span><br><br>
+
+<h3>Add a Wikipedia page data source</h3>
+
+
+ <ol><li>In the <b>Getting Started dialog or in the Home ribbon
+     tab</b>, click <b>Get Data</b>.</li><li>This brings up the <b>Get
+     Data</b> dialog, where you can pick from a wide range of data sources to
+     import data into Power BI Designer. We will select <b>Web</b> which is available under the <b>All</b> or <b>Other</b> group.</li><li>In the<b> Web Content</b> dialog box, in the <b>URL</b>
+     text box, paste the Wikipedia URL (http://en.wikipedia.org/wiki/UEFA_European_Football_Championship).</li><li>Click <b>OK</b>.</li></ol>
+ 
+ 
+ 
+After establishing a
+connection to the web page, you see a list of tables available on this
+Wikipedia page in the <b>Navigator</b> dialog. You can single-click on each of
+these tables to preview the data. <br><br>
+
+In the <b>Navigator</b>
+left-pane, click the<b> Results[edit]</b> table for the Tournament Summary
+results, or select the <b>Results[edit]</b> table and click <b>Edit Query</b>.
+This will allow us to reshape this table before loading it to the Report, since
+the data is not in the shape that we need for our analysis.<br><br>
+
+<img><span><img src="https://powerbi.uservoice.com/assets/82836175/TutorialImAnaly_Navigator.png"></span><span></span><br><br>This will land a
+preview of the table in the Query view, where we can apply a set of
+transformation steps to clean up the data. <br><br>
+
+<img><span><img src="https://powerbi.uservoice.com/assets/75933522/WebPage3.jpg"></span><br><br><h3>Task 2: Shape data in the subject table</h3><br>
+
+Now that you have the
+subject table selected for your data query, you learn how to perform various
+data shaping and cleansing steps.<br><br>
+
+Step 1: Remove Other Columns to only display columns of interest<br><br>
+
+In this step, you
+remove all columns except <b>Year</b> and <b>Final Winners</b>.<br><ol><li>
+
+
+ In the <b>Query Preview</b> grid, select the <b>Year</b>
+     and <b>Final Winners</b> columns (use <b>CTRL</b> + <b>Click</b>).</li><li>
+ Right-click a column header in the <b>Query Preview</b>
+     grid, and click <b>Remove Other Columns</b> to remove the unselected
+     columns. Note that this operation is also available in the <b>Home</b> ribbon tab, in the <b>Manage Columns </b>group.</li></ol><span><img src="https://powerbi.uservoice.com/assets/75933569/WebPage4.jpg"></span><br>
+
+<img>&nbsp;<br><br>
+
+Step 2: Replace Values
+to clean up values in a selected column<br><br>
+
+In this step, you
+replace the Details suffix in the <b>Year</b> column. Note that this suffix is
+on a new line so it is not visible in the table preview. However, if you click
+in one of the cells with a numeric value in the Year column, you will see the
+full value in the detailed view.<br><br>
+
+<img><span><img src="https://powerbi.uservoice.com/assets/75933603/WebPage5.jpg"></span><br><br><ol><li>Select the <b>Year </b>column.</li><li>
+ In the <b>Query
+     view</b> ribbon, click <b>Replace Values</b> under the <b>Home </b>tab or right-click the <b>Year
+</b>     column, and click <b>Replace Values</b> to replace Details with empty
+     text.</li><li>
+ In the <b>Replace Values</b> dialog box, type Details
+     in the <b>Value to Find </b>text box and leave the <b>Replace With</b>
+     text box empty.</li><li>
+ Click <b>OK</b>.</li></ol>
+<span><img src="https://powerbi.uservoice.com/assets/75933620/WebPage6.jpg"></span><br><br>
+
+<img><br>
+
+Step 3: Filter values in
+a column<br><br>
+
+In this step, you
+filter the <b>Year </b>column to display rows that do not contain “Year”.<br><ol><li>
+
+
+ Click the filter drop down arrow on the <b>Year
+</b>     column.</li><li>
+ In the <b>Filter </b>drop-down, clear the <b>Year
+</b>     option.</li><li>
+ Click <b>OK</b>.</li></ol>
+<span><img src="https://powerbi.uservoice.com/assets/75933643/WebPage7.jpg"></span><br><br>
+
+<img><br>Step 4: Rename a column<br><br>
+
+Now that we have cleaned
+up the data in the <b>Year </b>column, we
+are going to work on the <b>Final Winner</b>
+column.<br><br>
+
+Since we are only
+looking at the list of winners, we can rename this column to <b>Country</b>.<br><ol><li>Select the <b>Final Winner</b> column in the Query
+preview.</li><li>In the <b>Query view</b> ribbon, under the <b>Transform </b>tab and <b>Any Column</b> group, you will find <b>Rename</b>.</li><li>This will make the
+column name editable. We will rename this column to <b>Country</b>.</li></ol>
+
+Step 5: Filter out null
+values in a column<br><br>
+
+We also need to filter
+out null values in the <b>Country
+</b>column. In order to do this, we could use the filter menu as we saw in Step 3,
+or alternatively we can:<br><ol><li>Right-click on one of
+the cells in the <b>Country </b>column that
+contain a null value.</li><li>Select <b>Text Filters -&gt; Does not Equal</b> in
+the context menu.</li><li>This creates a new
+filter step to remove rows with null values in the <b>Country </b>column.</li></ol><br>Step 6: Name a query<br><br>
+
+In this step, you name
+your final query <b>Euro Cup Winners</b>.<br><ol><li>
+
+
+ In the <b>Query Settings </b>pane, in the <b>Name
+</b>     text box, enter <b>Euro Cup Winners</b>. </li></ol>
+<span><img src="https://powerbi.uservoice.com/assets/75933736/WebPage8.jpg"></span><br><br>
+
+<br><h3>Task 3: Create visualizations using the Report
+view</h3><br>
+
+Now that we have
+converted the data into the shape that we need for our analysis, we can load
+the resulting table into our Report and create a few visualizations.<br><br>
+
+Step 1: Load the query
+to your report<br><br>
+
+In order to load the
+query results to the report, we can switch to the <b>Report view</b>, using the view switcher at the bottom-left corner of
+the Power BI Designer window.<br><br>
+
+<img><span><img src="https://powerbi.uservoice.com/assets/75933812/WebPage9.jpg"></span><br><br>
+
+This will trigger
+evaluation of the query and load of the table output to the Report. You can
+check progress of this action in the <b>Load
+</b>dialog.<br><br>
+
+<img><span><img src="https://powerbi.uservoice.com/assets/75933826/WebPage10.jpg"></span><br><br>
+
+&nbsp;<br>After the query
+finishes loading, you will see the resulting table fields in the <b>Fields pane</b> at the right of the <b>Report view</b>.<br><br>
+
+<img><span><img src="https://powerbi.uservoice.com/assets/75933846/WebPage11.jpg"></span><br><br>
+
+&nbsp;<br>
+
+Step 2: Create a Map
+visualization<br><br>
+
+In order to create a
+visualization, we can drag fields from the <b>Field
+list </b>and drop them in the <b>Report
+canvas</b>.<br><br><ol><li>Drag the <b>Country </b>field and drop it in the <b>Report canvas</b>. This will create a new
+visualization in the <b>Report canvas</b>.
+In this case, since we have a list of countries, it will create a <b>Table visualization</b>.</li><li>We can easily change
+the type of visualization by clicking on the <b>Change Visualization Type button</b> in the top-right corner of the
+visualization. Alternatively, we can also change the visualization type using
+the <b>Visualize gallery</b> in the <b>Home </b>ribbon tab.</li></ol>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://powerbi.uservoice.com/assets/75933908/WebPage12.jpg"><br><span style="line-height: 1.4em;"><br>&nbsp; &nbsp; &nbsp;3. &nbsp;We are going to change
+the visualization type to Map, using the third option from the bottom in the
+Change Visualization Type skittle.<br><br><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://powerbi.uservoice.com/assets/75933932/WebPage13.jpg"></span><br></span><span style="line-height: 1.4em;">&nbsp; &nbsp; &nbsp;<br>&nbsp; &nbsp; &nbsp;4. &nbsp;We can also resize the
+visualization by dragging from one of the corners of the visualization up to
+the desired size.</span><span style="line-height: 1.4em;"><br></span><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span><img src="https://powerbi.uservoice.com/assets/75933951/WebPage14.jpg"></span><br><br>
+
+<img>&nbsp; &nbsp; &nbsp;5.&nbsp;&nbsp;&nbsp;&nbsp;
+Note that currently
+all the points in the map have the same size. We want to change this so that
+countries with more Euro Cup tournaments won are represented with a larger
+point in the map.&nbsp;In order to do this, we can drag the <b>Year </b>field in the <b>Fields
+list</b> to the <b>Values </b>box in the
+lower half of the <b>Fields pane</b>.<br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span><img src="https://powerbi.uservoice.com/assets/75933968/WebPage15.jpg"></span><br><br>
+
+<img>As you can see, it is
+very easy to customize visualizations in your report, in order to present the
+data in the way that you want. Power BI Designer provides a seamless end-to-end
+experience from getting data from a wide range of data sources and shaping it
+to meet your analysis needs to visualizing this data in rich and interactive
+ways. Once your report is ready, you can &nbsp;<a href="http://support.powerbi.com/knowledgebase/articles/461278-upload-power-bi-designer-reports">upload it to Power BI</a>&nbsp;and create dashboards based
+on it, which you can share with other Power BI users.<br><br>
+
+This concludes the <b>Importing Data from the Web </b>tutorial.
+You can download the completed Power BI Designer file <a href="http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Data_From_The_Web.pbix">here</a>.<br><br><strong>
+
+</strong><h3 class="MsoNormal"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Where else can I get more information?</span></h3><p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><a style="text-indent: -18pt;" href="http://go.microsoft.com/fwlink/?LinkID=521937"><font color="#2c2929" size="3">Read other Power BI Designer tutorials</font></a><span style="color: rgb(31, 73, 125); text-indent: -18pt;">.</span></p><p class="MsoListParagraph" style="text-indent: -18pt; mso-list: l0 level1 lfo1;"><!--[if !supportLists]--><span style="color: rgb(31, 73, 125); font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;">·<span style='line-height: normal; font-family: "Times New Roman"; font-size: 7pt; font-style: normal; font-variant: normal; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><a href="http://go.microsoft.com/fwlink/?LinkID=519322"><font color="#2c2929" size="3">Watch Power BI Designer videos.</font></a></p><p class="MsoListParagraph" style="text-indent: -18pt; mso-list: l0 level1 lfo1;"><!--[if !supportLists]--><span style="color: rgb(31, 73, 125); font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;">·<span style='line-height: normal; font-family: "Times New Roman"; font-size: 7pt; font-style: normal; font-variant: normal; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><a href="http://go.microsoft.com/fwlink/?LinkID=519326"><font color="#2c2929" size="3">Visit the Power BI Forum.</font></a></p><p class="MsoNormal"><a style="text-indent: -18pt;" href="http://go.microsoft.com/fwlink/?LinkID=519327"><font color="#2c2929" size="3">Read the Power BI Blog.</font></a><span style='font-family: "Arial",sans-serif;'><o:p></o:p></span></p>&nbsp;<br><br>
+
+&nbsp;<br><br><div></div>
