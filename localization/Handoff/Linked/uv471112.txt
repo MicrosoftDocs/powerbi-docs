@@ -1,0 +1,110 @@
+	<title>Sample datasets for Power BI</title>	"<p>Want to try Power BI with sample data?&nbsp;&nbsp;Use one of our sample datasets to learn how Power BI keeps you in the know and focus on what matters to run your business.</p>
+
+<h2>Industry sample datasets</h2><br>These samples are part of a series that illustrate how you can use Power BI with business-oriented data, reports, and dashboards.&nbsp; The samples are real data from obviEnce (<a href="http://www.obvience.com">www.obvience.com</a>) that has been anonymized.
+
+
+
+<ul><li>
+<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#retail">
+Retail Analysis</a></li><li>
+<a href="https://support.powerbi.com/knowledgebase/articles/514904">
+Download Power BI samples</a> (Excel workbooks)</li>
+<!--<li><a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#sales">
+Sales and Marketing</a>
+
+<li>
+<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#procure">
+Procurement Analysis</a></li>
+
+<li>
+<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#itspend>&#10;IT Spend Analysis</a></li>&#10;&#10;<li>&#10;<a href=" 471112-sample-datasets&#10;#hr"=" articles=" knowledgebase=" support.powerbi.com=">
+Human Resources</a></li>
+
+<li>
+<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#profit">
+Customer Profitability</a></li>
+
+<li>
+<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#quality">
+Supplier Quality Analysis</a></li>
+
+<li>
+<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#opp">
+Opportunity Analysis</a>
+-->
+</ul>
+<h2>View the sample dashboard, report, and dataset available in Power BI</h2><ol><li>
+
+Click <b>Get Data<br><br><span><img src="https://powerbi.uservoice.com/assets/82599916/getData.png"></span></b><br><br><span></span><br><span>
+</span></li><li>Select the sa﻿mple from the list. <br><br></li>
+<li>Click <b>Connect</b>.</li></ol><b><a name="retail" style="text-decoration: none;">Retail Analysis</a><br></b>
+This industry sample dashboard and underlying dataset and report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas:  sales, units, gross margin, and variance, as well as new store analysis.
+
+<ul><li><a href="http://support.powerbi.com/knowledgebase/articles/474807-take-a-tour-retail-analysis-sample">Take a tour of the Retail Analysis Sample</a>.</li><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a>
+</li></ul><p>
+
+
+
+
+<!--
+
+<b><a name="quality">Supplier Quality Analysis</a></b><br>
+This industry sample dashboard and underlying report focus on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: 
+<ul><li>Understand who the best and worst suppliers are, with respect to quality.
+</li><li>Identify which plants do a better job finding and rejecting defects, to minimize downtime.
+	<ul><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528585">Take a tour of this sample.   </a>
+	</li><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a></li></ul></li></ul>
+
+<b><a name="hr">Human Resources</a></b><br>
+This industry sample dashboard and underlying report analyze HR information. The HR department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who left and tries to uncover any trends in the hiring strategy. Our main objectives are to understand: 
+<ul><li>Who we hire.  
+</li><li>Biases in our hiring strategy.  
+</li><li>Trends in voluntary separations.</li>
+	<ul><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528586">Take a tour of this sample</a>  
+	</li><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a>
+</li></ul></ul>
+
+<b><a ame="profit" n=">Customer Profitability Sample</a></b><br>
+This industry sample dashboard and underlying report analyze a company that manufactures marketing materials.  This dashboard was created by a CFO to see key metrics about her 5 business unit managers (aka executives), products, customers, and gross margins (GM). At a glance she can see what factors are impacting profitability.
+<ul><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528587">Take a tour of this sample</a>   
+</li><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a></li></ul>
+
+<b><a name="opp">Opportunity Analysis Sample</a></b><br>
+This industry sample dashboard and underlying report analyze a software company that has 2 sales channels: direct and partner.  The Sales Manager created this dashboard to track opportunities and revenue by region, deal size, and channel. The Sales Manager relies on 2 measures of revenue:
+<ul><li>Revenue -- this is a salesperson's estimate of what the company's revenue will be</li><li>
+Factored Revenue – this is calculated as Revenue X Probability % and is generally accepted as being a more-accurate predictor of actual sales revenue.  Probability is determined by the deal’s current Sales Stage.</li><ul><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528588">Take a tour of this sample</a></li><li>  
+<a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a></li></ul></ul>
+
+<b><a name="itspend">IT Spend Analysis Sample</a><b><br>
+This industry sample dashboard and underlying report analyze the planned vs. actual costs of the IT department of a company. This comparison helps us understand how well the company planned for the year and allows us to investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
+<ul><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528589">Take a tour of this sample</a>   
+</li><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a></li></ul>
+
+<b><a ame="procure" n=">Procurement Analysis Sample</a></b><br>
+This industry sample dashboard and underlying report analyze a manufacturing company’s spending on vendors by category and location, and lets us explore the following areas:
+<ul><li>Who the top vendors are
+</li><li>What categories we spend most on
+</li><li>Which vendors give us the highest discount and when
+</li><ul><li><a href="http://go.microsoft.com/fwlink/?LinkId=528590">Take a tour of this sample</a>  
+	</li><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a></li></ul></ul>
+
+<b><a name="sales">Sales &amp; Marketing Sample</a></b><br>
+This industry sample dashboard and underlying report analyze a manufacturing company named VanArsdel Ltd.  This dashboard was created by the VanArsdel Chief Marketing Officer (CMO) to keep an eye on the industry and his company’s market share, product volume, sales, and sentiment.
+<ul><li><a href="http://go.microsoft.com/fwlink/?LinkId=528591">Take a tour of this sample</a>   
+</li><li>
+<a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a></li></ul>
+-->
+
+<br><p></p>
+<br>Are you looking for a different type of sample? &nbsp;<a href="http://support.powerbi.com/forums/265200-power-bi/category/91332-samples">Request a new sample</a>.<div></div>"
