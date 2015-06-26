@@ -1,0 +1,52 @@
+<properties pageTitle="Share dashboards from the iPad app (Power BI for iOS)" description="Share dashboards from the iPad app (Power BI for iOS)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
+<tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
+#Share dashboards from the iPad app (Power BI for iOS)
+[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios-preview)
+
+Invite colleagues by sharing links to dashboards and [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/527030-annotate-and-share-a-snapshot-of-a-tile-from-the-i) from the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS. The people you share it with need to sign up for Power BI, too.
+
+##Share a dashboard with colleagues
+
+1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/PBI_iOS_ShareRptIcon.png) icon in the upper-right corner of your dashboard.
+2.  Type email addresses and a message to accompany your dashboard invitation.
+3.  To allow resharing, leave **Allow recipients to share this dashboard** selected.
+
+    **Note**   Resharing allows your colleagues to forward the email invitation to other colleagues, either through the web or the mobile apps.
+
+4.  Tap the green check mark in the upper-right corner.
+
+Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in one of the mobile apps, it's added to their Power BI.
+
+##Unshare a dashboard
+
+You can only unshare a dashboard if you're the dashboard owner.
+
+1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/PBI_iPad_ShareRptIcon20h.png) icon in the upper-right corner of your dashboard.
+
+    You see the list of colleagues with whom you've shared this dashboard. Below their names are these words:
+
+    -   **Pending**: They haven't viewed the dashboard yet.
+
+    -   **Can View**: They can view the dashboard but not share it.
+
+    -   **Can View & Invite**: They can view the dashboard and share it with other colleagues.
+
+2.  Tap **Edit**.
+
+3.  To unshare, tap the red circle next to a name and tap **Delete**.
+
+##Notes about sharing dashboards
+
+You and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard.
+
+-   If your colleagues haven't signed up for Power BI yet, they need to do so to see your dashboard.
+
+-   Your colleagues can see your dashboard and even see changes you make in the Power BI service online, after you save those changes.
+
+-   You can share snapshots of tiles with anyone, in or out of your email domain.You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
+
+## See Also
+
+[Annotate and share a snapshot of a tile from the iPad app](http://support.powerbi.com/knowledgebase/articles/527030-annotate-and-share-a-snapshot-of-a-tile-from-the-i)  
+[Share a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/431008-share-and-unshare-a-dashboard)  
+[The iPad app](http://support.powerbi.com/knowledgebase/articles/467172-the-ipad-app-for-power-bi-preview) for Power BI for iOS
