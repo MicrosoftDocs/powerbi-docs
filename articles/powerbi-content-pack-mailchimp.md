@@ -34,7 +34,7 @@ The Power BI content pack pulls data from your MailChimp account and generates a
 
 	- Try [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi-preview) at the top of the dashboard, such as "Show total clicks by location on a map"
 
-	![](media/powerbi-content-pack-mailchimp/Q&A.png)
+	![](media/powerbi-content-pack-mailchimp/Q&A.jpg)
 
 	- [Change the tiles](https://support.powerbi.com/knowledgebase/articles/424878) in the dashboard.
 
