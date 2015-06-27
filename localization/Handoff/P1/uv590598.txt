@@ -1,0 +1,117 @@
+	<title>Calculated columns in Power BI Designer</title>
+	
+	<div><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">With calculated columns, you can add new data to a table already
+in your model. But instead of querying and loading values into your new column
+from a data source, you create a Data Analysis Expressions (DAX) formula that
+defines the column’s values. In Power BI Designer, calculated columns are created
+by using the New Column feature in Report View.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Unlike custom columns created as part of a query by using
+Add Custom Column in Query View, calculated columns created in Report View are
+based on data you’ve already loaded into the model. For example, you might
+choose to concatenate values from two different columns in two different but
+related tables , perform addition, or extract sub-strings.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Calculated columns you create appear in the Fields list just
+like any other field, but they’ll have a special icon showing its values are
+the result of a formula. You can name your columns whatever you want, and add
+them to a report visualization just like other fields. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><span style="mso-no-proof: yes;"><v:shapetype id="_x0000_t75" stroked="f" filled="f" path="m@4@5l@4@11@9@11@9@5xe" o:preferrelative="t" o:spt="75" coordsize="21600,21600"><font face="Calibri"><font size="3">
+ <v:stroke joinstyle="miter">
+ 
+  <v:f eqn="if lineDrawn pixelLineWidth 0">
+  <v:f eqn="sum @0 1 0">
+  <v:f eqn="sum 0 0 @1">
+  <v:f eqn="prod @2 1 2">
+  <v:f eqn="prod @3 21600 pixelWidth">
+  <v:f eqn="prod @3 21600 pixelHeight">
+  <v:f eqn="sum @0 0 1">
+  <v:f eqn="prod @6 1 2">
+  <v:f eqn="prod @7 21600 pixelWidth">
+  <v:f eqn="sum @8 21600 0">
+  <v:f eqn="prod @7 21600 pixelHeight">
+  <v:f eqn="sum @10 21600 0">
+ </v:f>
+ <v:path o:connecttype="rect" gradientshapeok="t" o:extrusionok="f">
+ <o:lock aspectratio="t" v:ext="edit">
+</o:lock><v:shape id="Picture_x0020_2" style="width: 187.5pt; height: 173.25pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1029">
+ <v:imagedata o:title="" src="file:///C:\Users\owend\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png">
+</v:imagedata></v:shape></v:path></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:stroke></font></font></v:shapetype></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">&nbsp;<span><img src="https://powerbi.uservoice.com/assets/80599491/CalcColInPBID_Fields.png"></span></font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Calculated columns calculate results by using </font><a href="https://support.office.com/en-us/article/Data-Analysis-Expressions-DAX-Reference-411C6891-614D-438C-BF45-C7E061DD9E08"><font color="#0000ff" face="Calibri" size="3">Data
+Analysis Expressions</font></a><font face="Calibri" size="3"> (DAX), a formula language meant to work with relational
+data like in Power BI Designer. DAX includes a library of over 200 functions,
+operators, and constructs, providing immense flexibility in creating formulas
+to calculate results for just about any data analysis need. To learn more about DAX, see the Additional resources section at the end of this article.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">DAX formulas are similar to Excel formulas. In fact, DAX has
+many of the same functions as Excel. DAX functions, however, are meant to work
+with relational data, like in Power BI Designer. Unlike Excel, where you can
+have a different formula for each row in a table, when you create a DAX formula
+for a new column in the designer, it will calculate a result for every row in
+the table. Column values are recalculated as necessary, like when the
+underlying data is refreshed and values have changed.</font></p><font face="Times New Roman" size="3">
+
+</font><font face="Times New Roman" size="3">
+
+
+</font><p></p><h2>Let’s look at an example</h2><p style="margin: 6pt 0in;"><font face="Times New Roman">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Jeff is a shipping manager at Contoso. He wants to create a
+report showing the number of shipments to different cities. He has a Geography
+table with separate fields for city and state. But, Jeff wants his reports to
+show City, State as a single value on the same row. Right now, Jeff’s Geography
+table doesn’t have the field he wants.</font></p><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><span><img src="https://powerbi.uservoice.com/assets/80599509/CalcColInPBID_CityAndStateFields.png"></span></font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><span style="mso-no-proof: yes;"><v:shape id="Picture_x0020_9" style="width: 180.75pt; height: 133.5pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1028"><font face="Calibri"><font size="3">
+ <v:imagedata o:title="" src="file:///C:\Users\owend\AppData\Local\Temp\msohtmlclip1\01\clip_image002.png">
+</v:imagedata></font></font></v:shape></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">But with a calculated column, Jeff can simply put together,
+or concatenate, the cities from the City column with the states from the State
+column. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Jeff right clicks on the Geography table and then clicks New
+Column. He then enters the following DAX formula into the formula bar: </font></p><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><span><img src="https://powerbi.uservoice.com/assets/80599545/CalcColInPBID_Formula.png"></span></font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><span style="mso-no-proof: yes;"><v:shape id="Picture_x0020_10" style="width: 374.25pt; height: 27pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1027"><font face="Calibri"><font size="3">
+ <v:imagedata o:title="" src="file:///C:\Users\owend\AppData\Local\Temp\msohtmlclip1\01\clip_image003.png">
+</v:imagedata></font></font></v:shape></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">This formula simply creates a new column named CityState,
+and for each row in the Geography table, it takes values from the City column,
+adds a comma and a space, and then concatenates values from the State column.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Now Jeff has the field he wants.</font></p><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><span><img src="https://powerbi.uservoice.com/assets/80599566/CalcColInPBID_CityStateField.png"></span></font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><span style="mso-no-proof: yes;"><v:shape id="Picture_x0020_8" style="width: 179.25pt; height: 141.75pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1026"><font face="Calibri"><font size="3">
+ <v:imagedata o:title="" src="file:///C:\Users\owend\AppData\Local\Temp\msohtmlclip1\01\clip_image004.png">
+</v:imagedata></font></font></v:shape></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">And, he can add it to his report canvas along with the
+number of shipments.</font></p><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><span><img src="https://powerbi.uservoice.com/assets/80599587/CalcColInPBID_CityStateMap.png"></span></font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><span style="mso-no-proof: yes;"><v:shape id="Picture_x0020_7" style="width: 283.5pt; height: 243.75pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1025"><font face="Calibri"><font size="3">
+ <v:imagedata o:title="" src="file:///C:\Users\owend\AppData\Local\Temp\msohtmlclip1\01\clip_image005.png">
+</v:imagedata></font></font></v:shape></span></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Very quickly and with minimal effort, Jeff now has a City,
+State field. He can add to just about any type of visualization. Jeff even sees
+that when he creates a map visualization, the designer even knows how to read
+the City, State values in his new column.</font></p><font face="Times New Roman" size="3">
+
+</font><p></p><h2>Learn more</h2><p style="margin: 6pt 0in;"><font face="Times New Roman">
+
+</font><p style="margin: 6pt 0in;"><font face="Calibri"><font size="3">We’ve<span style='line-height: 107%; font-family: "Calibri",sans-serif; font-size: 11pt; mso-ansi-language: EN-US; mso-fareast-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-bidi-language: AR-SA;'>
+only provided a quick introduction to calculated columns here. Be sure
+to see the <a href="https://support.powerbi.com/knowledgebase/articles/590610-tutorial-create-calculated-columns-in-power-bi-de">Create calculated columns in Power BI Designer</a> tutorial,</span> where you can download a sample file and get step-by-step lessons on
+how to create more columns. <span style="mso-spacerun: yes;">&nbsp;</span></font></font></p><font face="Times New Roman" size="3">
+
+</font><span style='line-height: 107%; font-family: "Calibri",sans-serif; font-size: 11pt; mso-ansi-language: EN-US; mso-fareast-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-bidi-language: AR-SA;'>To learn more about columns you create as part
+of a query, see the Create custom columns section in <a href="https://support.powerbi.com/knowledgebase/articles/471648-common-query-tasks-in-power-bi-designer"><font color="#0000ff">Common
+query tasks in Power BI Designer</font></a>.</span></div><div></div>

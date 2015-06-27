@@ -1,13 +1,14 @@
-	<title>Zendesk content pack for Power BI</title>	To analyze your Zendesk data in Power BI, you must connect to Zendesk using your Zendesk <b>admin </b>account
+	<title>Zendesk content pack for Power BI</title>
+	
+	To analyze your Zendesk data in Power BI, you must connect to Zendesk using your Zendesk <b>admin </b>account
  credentials so that Power BI will be able to import&nbsp; your data.&nbsp; You will get a Power BI
  dashboard and a set of Power BI reports that provide insights about your
  ticket volumes and agent performance. You can use the dashboard and reports
  provided, or customize them to highlight the information you care most
  about.&nbsp; The data will be refreshed
- automatically once per day
-<br>
+ automatically once a day.&nbsp;<br><br>Connect to the <a href="https://app.powerbi.com/getdata/services/zendesk">Zendesk content pack</a> for Power BI.<br>
 
-<ol><li value="1" style="font-family: Calibri; font-style: normal; font-size: 11pt; vertical-align: middle;"><font face="Calibri"><span style="line-height: 14.6666669845581px; font-size: 14.6666669845581px;">Select&nbsp;<span style="font-weight: bolder;">Get Data</span>&nbsp;at the bottom of the left navigation pane.</span></font><br></li><br><font face="Calibri" style="font-family: Calibri; font-size: 11pt;"><span style="line-height: 1.4em; font-size: 11pt;">&nbsp;<img src="https://powerbi.uservoice.com/assets/82642324/PBI_GetData.png"></span></font><br><br><li style="font-family: Calibri; font-style: normal; font-size: 11pt;"><font face="Calibri">In the&nbsp;<span style="font-weight: bolder;">Services&nbsp;</span>box, select&nbsp;<span style="font-weight: bolder;">Get</span>.</font><br><br><font face="Calibri"><img src="https://powerbi.uservoice.com/assets/82642363/PBI_GetServices.png">&nbsp;</font></li>
+<ol><li style="font-family: Calibri; font-size: 11pt; font-style: normal; vertical-align: middle;" value="1"><font face="Calibri"><span style="line-height: 14.66px; font-size: 14.66px;">Select&nbsp;<span style="font-weight: bolder;">Get Data</span>&nbsp;at the bottom of the left navigation pane.</span></font><br></li><br><font face="Calibri" style="font-family: Calibri; font-size: 11pt;"><span style="line-height: 1.4em; font-size: 11pt;">&nbsp;<img src="https://powerbi.uservoice.com/assets/82642324/PBI_GetData.png"></span></font><br><br><li style="font-family: Calibri; font-size: 11pt; font-style: normal;"><font face="Calibri">In the&nbsp;<span style="font-weight: bolder;">Services&nbsp;</span>box, select&nbsp;<span style="font-weight: bolder;">Get</span>.</font><br><br><font face="Calibri"><img src="https://powerbi.uservoice.com/assets/82642363/PBI_GetServices.png">&nbsp;</font></li>
 
 
 <br>
@@ -33,7 +34,7 @@ to allow Power BI to access your Zendesk data.</li>
  <img src="https://powerbi.uservoice.com/assets/77897404/zendesk2.jpg"><p></p>
  <li>Click
 <b>
-Connect </b>to begin the import process.&nbsp;<span style="font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal; line-height: 19.6000003814697px; background-color: rgb(249, 250, 251);">After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk *.</span></li>
+Connect </b>to begin the import process.&nbsp;<span style="line-height: 19.6px; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal; background-color: rgb(249, 250, 251);">After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk *.</span></li>
   
  <br><span><img src="https://powerbi.uservoice.com/assets/82662517/PBI_ZendeskDash.png"></span>&nbsp;<br>
 

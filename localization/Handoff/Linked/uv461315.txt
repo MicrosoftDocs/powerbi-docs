@@ -1,4 +1,6 @@
-	<title>Tutorial: Importing and analyzing data from a Web Page using Power BI Designer</title>	<!--[if gte mso 9]><xml>
+	<title>Tutorial: Importing and analyzing data from a Web Page using Power BI Designer</title>	
+	
+	<!--[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG></o:AllowPNG>
  </o:OfficeDocumentSettings>

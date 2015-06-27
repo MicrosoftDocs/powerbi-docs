@@ -1,0 +1,13 @@
+	<title>Upload Power BI Designer files</title>
+	
+	<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG></o:AllowPNG>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><div class="MsoNormal"></div>
+
+<div><font face="Times New Roman" size="3">
+
+</font>When you save a&nbsp;file created in the designer, it will have a <b>.pbix </b>extension. <span>You can&nbsp;then upload your Power BI Designer&nbsp;files to your Power BI site. </span></div><div><br></div><blockquote><span><img src="https://powerbi.uservoice.com/assets/75867182/PBIDesignerSavedFile.png"></span></blockquote><p><span><span><img src="https://powerbi.uservoice.com/assets/80457222/importantIcon.png">&nbsp;</span><b>Important:</b>&nbsp;In Power BI, the maximum size of a Power BI Designer file you can upload to your Power BI site is 250 megabytes.</span></p><h2><span>To upload a Power BI Designer file</span></h2><p>1.&nbsp; In Power BI, click&nbsp;Get data <span><img src="https://powerbi.uservoice.com/assets/75867237/ConnectIcon.png">.</span></p><p><span>2.&nbsp; In <b>Get data</b>, click <b>Power BI Designer File &nbsp;</b>&gt;<span style="line-height: 14px; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal;">&nbsp;</span><span style="font: bolder 14px/14px sans-serif; font-size-adjust: none; font-stretch: normal;">Connect</span><span style="line-height: 14px; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal;">.</span><b><br></b></span><br><span><span><span></span><span><img src="https://powerbi.uservoice.com/assets/80659779/PBI_GetDesignerFile.png"></span><br><br></span></span><span>3.&nbsp; Browse to your report file, then click <b>Connect</b>.</span><br></p><p><span>Once uploaded to your Power BI page, your designer file’s report will appear under <b>Reports</b> in the navigator and the dataset will appear in <b>Datasets</b>. You can edit your report and pin visualizations to your dashboard right in Power BI. </span></p><blockquote><span><span><span><span><img src="https://powerbi.uservoice.com/assets/80659791/PBI_FileInGetData.png"></span></span></span></span></blockquote><p><span><b>Note:</b> Any changes you make in Power BI, for example, add, delete, or change visualizations in reports, will not be saved in the original Power BI Designer file. Changes to a Power BI Designer file can only be made in the designer.<br></span></p><p><span><br></span></p><p><span><span style='background: rgb(249, 250, 251); color: black; font-family: "Arial",sans-serif; font-size: 10.5pt;'></span></span></p><p><br><font face="Times New Roman">
+
+</font></p><div></div>
