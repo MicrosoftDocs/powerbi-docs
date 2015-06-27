@@ -1,4 +1,6 @@
-	<title>Sample datasets for Power BI</title>	"<p>Want to try Power BI with sample data?&nbsp;&nbsp;Use one of our sample datasets to learn how Power BI keeps you in the know and focus on what matters to run your business.</p>
+	<title>Sample datasets for Power BI</title>	
+	
+	<p>Want to try Power BI with sample data?&nbsp;&nbsp;Use one of our sample content packs or datasets to learn how Power BI keeps you in the know and focus on what matters to run your business.</p>
 
 <h2>Industry sample datasets</h2><br>These samples are part of a series that illustrate how you can use Power BI with business-oriented data, reports, and dashboards.&nbsp; The samples are real data from obviEnce (<a href="http://www.obvience.com">www.obvience.com</a>) that has been anonymized.
 
@@ -6,41 +8,12 @@
 
 <ul><li>
 <a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#retail">
-Retail Analysis</a></li><li>
+Retail Analysis</a>&nbsp;content pack</li><li>
 <a href="https://support.powerbi.com/knowledgebase/articles/514904">
-Download Power BI samples</a> (Excel workbooks)</li>
-<!--<li><a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#sales">
-Sales and Marketing</a>
-
-<li>
-<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#procure">
-Procurement Analysis</a></li>
-
-<li>
-<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#itspend>&#10;IT Spend Analysis</a></li>&#10;&#10;<li>&#10;<a href=" 471112-sample-datasets&#10;#hr"=" articles=" knowledgebase=" support.powerbi.com=">
-Human Resources</a></li>
-
-<li>
-<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#profit">
-Customer Profitability</a></li>
-
-<li>
-<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#quality">
-Supplier Quality Analysis</a></li>
-
-<li>
-<a href="http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets&#10;#opp">
-Opportunity Analysis</a>
--->
-</ul>
-<h2>View the sample dashboard, report, and dataset available in Power BI</h2><ol><li>
-
-Click <b>Get Data<br><br><span><img src="https://powerbi.uservoice.com/assets/82599916/getData.png"></span></b><br><br><span></span><br><span>
-</span></li><li>Select the sa﻿mple from the list. <br><br></li>
-<li>Click <b>Connect</b>.</li></ol><b><a name="retail" style="text-decoration: none;">Retail Analysis</a><br></b>
+Download Power BI samples</a> (Excel workbooks)</li></ul><h2><a name="retail" style="text-decoration: none;">Retail Analysis sample content pack</a></h2>
 This industry sample dashboard and underlying dataset and report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas:  sales, units, gross margin, and variance, as well as new store analysis.
 
-<ul><li><a href="http://support.powerbi.com/knowledgebase/articles/474807-take-a-tour-retail-analysis-sample">Take a tour of the Retail Analysis Sample</a>.</li><li>
+<ul><li><a href="http://support.powerbi.com/knowledgebase/articles/474807-take-a-tour-retail-analysis-sample">Take a tour of the Retail Analysis Sample</a>.</li><li>Download the <a href="https://support.powerbi.com/knowledgebase/articles/640117">Retail Analysis sample content pack</a>.</li><li>
 <a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a>
 </li></ul><p>
 
@@ -69,7 +42,7 @@ This industry sample dashboard and underlying report analyze HR information. The
 <a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a>
 </li></ul></ul>
 
-<b><a ame="profit" n=">Customer Profitability Sample</a></b><br>
+<b><a ame="profit" n="">Customer Profitability Sample</a></b><br>
 This industry sample dashboard and underlying report analyze a company that manufactures marketing materials.  This dashboard was created by a CFO to see key metrics about her 5 business unit managers (aka executives), products, customers, and gross margins (GM). At a glance she can see what factors are impacting profitability.
 <ul><li>
 <a href="http://go.microsoft.com/fwlink/?LinkId=528587">Take a tour of this sample</a>   
@@ -90,7 +63,7 @@ This industry sample dashboard and underlying report analyze the planned vs. act
 </li><li>
 <a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a></li></ul>
 
-<b><a ame="procure" n=">Procurement Analysis Sample</a></b><br>
+<b><a ame="procure" n="">Procurement Analysis Sample</a></b><br>
 This industry sample dashboard and underlying report analyze a manufacturing company’s spending on vendors by category and location, and lets us explore the following areas:
 <ul><li>Who the top vendors are
 </li><li>What categories we spend most on
@@ -106,5 +79,5 @@ This industry sample dashboard and underlying report analyze a manufacturing com
 <a href="http://go.microsoft.com/fwlink/?LinkId=528592">Download the Excel file for this sample.</a></li></ul>
 -->
 
-<br><p></p>
-<br>Are you looking for a different type of sample? &nbsp;<a href="http://support.powerbi.com/forums/265200-power-bi/category/91332-samples">Request a new sample</a>.<div></div>"
+<br></p><p></p>
+<br>Are you looking for a different type of sample? &nbsp;<a href="http://support.powerbi.com/forums/265200-power-bi/category/91332-samples">Request a new sample</a>.<div></div>

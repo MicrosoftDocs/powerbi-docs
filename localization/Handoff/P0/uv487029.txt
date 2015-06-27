@@ -1,0 +1,87 @@
+	<title>Power BI - basic concepts</title>
+	
+	<div>When you first open Power BI, you'll see:</div><ol><li>navigation pane</li><li>dashboard with tiles</li><li>Q&amp;A question box</li><li>help and feedback buttons</li><li>dashboard title</li><li>Power BI Home button</li><li>Power BI version<br></li></ol><p>
+<br></p><p><span><img src="https://powerbi.uservoice.com/assets/82599493/completeNew.png"></span><br>
+</p><p><br><a href="#dig">We'll dig into these later</a>, but first let's review some Power BI concepts.</p><h1>Power BI concepts</h1>
+
+<p>The 3 major building blocks of Power BI&nbsp;are: <b><i>dashboards</i></b>, <i><b>reports</b></i>, and <b><i>datasets</i></b>. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not very useful until they have data.)</p>
+
+<h2><a name="datasets" style="text-decoration: none;">Datasets</a></h2><p>A <i>dataset </i>is something that you <i>connect </i>to. Use Power BI&nbsp;to bring all of your data together. See it all in one place and access it from all of your devices. </p>
+
+In the navigation pane, the datasets you've connected to are listed under the <b>Datasets </b>heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce database, etc. <a href="http://support.powerbi.com/knowledgebase/articles/434354-get-data">See the list of dataset types that can be used with Power BI</a>. <br>
+
+
+<table width="100%" border="0">
+     <tbody><tr align="top">
+<td align="top"><img src="https://powerbi.uservoice.com/assets/76457908/Drawing2.png"></td>
+     <td align="top"><p><b>ONE</b> dataset...</p><ul><li>can be used over and over.&nbsp; </li><li>can be used in many different reports. </li><li>Visualizations from that one dataset can display on many different dashboards. </li></ul></tr>
+  </tbody></table> 
+
+To <a href="http://support.powerbi.com/knowledgebase/articles/434354-get-data">connect to a dataset</a>, click <b>Get Data </b>(at the top of the navigation pane)&nbsp;or click the plus sign (next to the <b>Datasets </b>heading). The work you do&nbsp;in Power BI does not change the underlying dataset.
+
+<p>
+<h2><a name="dashboards" style="text-decoration: none;">Dashboards</a></h2><p>A <i>dashboard </i>is something you create or something a coworker creates and shares with you. It is a single canvas that contains one or more tiles. Each tile displays a single <a href="http://support.powerbi.com/knowledgebase/topics/65160-all-about-visualizations">visualization </a>that was created from the&nbsp;data in the underlying dataset(s). To <a href="http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi">create and add a tile</a>, you must be in report <a href="http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report">Editing View</a> or in <a href="http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi">Q&amp;A</a>.&nbsp; </p><p>In the navigation pane, your dashboards are listed under the <b>Dashboards </b>heading. Each listed dashboard represents a customized view of some subset of the underlying datasets.&nbsp; What this means is that someone (you or a coworker)&nbsp;created the dashboard and then navigated to Editing View where s/he explored the data and created visualizations and then picked some of those&nbsp;visualizations to display on the dashboard.<span></span></p>
+
+<table border="0">
+     <tbody><tr><td><span>&nbsp;
+<span><img src="https://powerbi.uservoice.com/assets/78834274/Drawing1.png"></span></span></td>
+     <td><b>ONE </b>dashboard...<ul><li>can display visualizations from many different datasets</li><li>can display visualizations from many different reports<span>
+
+
+&nbsp; </span></li></ul></tr>
+  </tbody></table> 
+
+
+<p><b>A dashboard can be <a href="http://support.powerbi.com/knowledgebase/articles/475163-create-a-power-bi-dashboard">created from scratch </a></b>
+
+-- create a new blank dashboard and then get some data.&nbsp; </p><p><b>You, or a coworker, can create a dashboard and <a href="http://support.powerbi.com/knowledgebase/articles/431008-share-a-dashboard">share it </a></b>
+-&nbsp; when you accept the invitation, the shared dashboard (and associated report and dataset)&nbsp;is added to your navigation pane.&nbsp;</p><p><b>Sometimes dashboards are imported with the dataset or are created as you connect to the dataset</b>. For example,&nbsp;the <b>Get Data </b>wizard for Salesforce asks you if you'd like a dashboard and/or report to be created from the dataset.&nbsp;</p><p><b>Why&nbsp;do people create&nbsp;dashboards?</b>&nbsp; Here are just some of the reasons:</p><ul><li>to see, in one glance,&nbsp;all the information needed to make decisions</li><li>to monitor the most-important information about their business </li><li>to ensure all coworkers are on the same page, viewing and using&nbsp;the same information</li><li>to monitor the health of a business or product or business unit or marketing campaign, etc.</li><li>to create a personalized view of a larger dashboard -- all the metrics that matter to me<br></li></ul>
+
+<h3><br></h3><h2><a name="reports" style="text-decoration: none;">Reports</a></h2><p>
+ 
+
+A Power BI&nbsp;report is one or more pages of visualizations (charts and graphs).&nbsp; Reports can be created from scratch within Power BI or can be imported with datasets and with shared dashboards. This doesn't mean that you can create a Power BI report outside of Power BI.&nbsp; What it means is that Power BI&nbsp;takes a look at data you're connecting to and, if it can, creates a report based on some or all of the data.&nbsp; For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets.</p><p>In the navigation pane, your reports are listed under the <b>Reports </b>heading. Each listed report represents 1 or more pages of visualizations based on 1 or more of the underlying datasets.</p><p>There are 2 ways to view and interact with reports: <a href="http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view">Reading View</a> and <a href="http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report">Editing View</a>.&nbsp; Only the report creator can open Editing View for a report. Use Editing View to create and modify and explore your report. Reading View offers more-limited interaction; you can <a href="http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports">interact with filters</a> (if the report owner created any), dig down into visualizations, do page-level filtering and highlighting, and temporarily pin visualizations to the dashboard (the pinned tiles will not be saved when you close and reopen Power BI).</p><p><font color="red"><b>NOTE</b></font>: If a <i>shared </i>dashboard has reports, you will NOT see the report listed in the navigation pane.&nbsp; To open the report, from the shared dashboard, click one of the tiles. If the report owner created the tile from a report, the report opens.&nbsp; If the report owner created the tile from Q&amp;A, the Q&amp;A page opens.<br></p>
+<table>
+     
+     <tbody><tr><td>
+<span><span><img src="https://powerbi.uservoice.com/assets/78834247/Drawing3new.png"></span></span></td>
+     <td>
+<b>ONE </b>report...<ul><li>can be&nbsp;associated with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards).&nbsp; </li><li>can be created using data from one dataset. (the slight exception to this is that Power BI Designer can combine more than 1 dataset into a single report and that report can be imported into Power BI)</li></ul></tr>
+  </tbody></table> 
+
+
+<h2><a name="sample" style="text-decoration: none;">The Retail Analysis Sample dashboard</a></h2><p>The first time you open Power BI, you're looking at the <a href="https://powerbi.uservoice.com/admin/faqs/487029/a%20href=%22http://support.powerbi.com/knowledgebase/articles/471115%22%3E">sample dashboard</a>, the&nbsp;<b><i>Retail Analysis Sample</i></b>.&nbsp; This sample will always be there, unless you <a href="http://support.powerbi.com/knowledgebase/articles/475173-delete-or-remove-a-dashboard">manually remove it</a>.</p><p style="margin: 0in 0in 0pt; line-height: normal;"><span lang="EN" style='color: rgb(41, 44, 51); font-family: "Segoe UI",sans-serif; font-size: 10.5pt; mso-ansi-language: EN; mso-fareast-font-family: "Times New Roman";'>Even though it doesn't show up in the navigation pane under Reports, the Retail Analysis Sample dashboard does&nbsp;have a report (see <b><font color="red">NOTE</font> </b>above).The
+Sample report is made up of several pages of visualizations that highlight
+insights about the underlying dataset.&nbsp; Unless you remove it, the Sample
+report is always available for you to use to explore and learn.&nbsp; <a href="http://support.powerbi.com/knowledgebase/articles/474807-take-a-tour-retail-analysis-sample"><span style="mso-ansi-font-size: 10.5pt; mso-bidi-font-size: 10.5pt;"><font color="#505050">Take a tour of the Retail
+Analysis Sample</font></span></a>. </span></p><p><font face="Times New Roman" size="3">
+
+</font></p><p style="margin: 0in 0in 0pt; line-height: normal;"><span lang="EN" style='color: rgb(41, 44, 51); font-family: "Segoe UI",sans-serif; font-size: 10.5pt; mso-ansi-language: EN; mso-fareast-font-family: "Times New Roman";'><b>Because it’s a
+sample, you can’t save changes to the Retail Analysis Sample dashboard or report</b>. </span><span lang="EN" style='color: rgb(41, 44, 51); font-family: "Segoe UI",sans-serif; font-size: 10.5pt; mso-ansi-language: EN;'>For a version of this sample that you can edit, in the
+navigation pane, click <b>Get Data &gt; Retail Analysis Sample</b>.</span><span lang="EN" style='color: rgb(41, 44, 51); font-family: "Segoe UI",sans-serif; font-size: 10.5pt; mso-ansi-language: EN; mso-fareast-font-family: "Times New Roman";'> Also, although you will be able to temporarily pin tiles from other datasets, you will only be able to use Q&amp;A with the sample dataset.<br><br></span></p><p><font face="Times New Roman" size="3">
+
+</font></p><h2><a name="dig" style="text-decoration: none;"><em>Navigation</em> Pane</a></h2><p>Use the navigation pane to move between the Power BI building blocks: dashboards, reports, and datasets.<br><br><span><img src="https://powerbi.uservoice.com/assets/82599574/NavPane.png"></span></p><p><span><span><span><span><br></span></span></span></span></p><ul><li>Click <b>Get Data </b>to <a href="http://support.powerbi.com/knowledgebase/articles/434354-get-data">add datasets to Power BI</a>. </li><li>Use the filter to limit what is shown on the navigation pane.</li><li>Click the plus icon&nbsp;<span><img src="https://powerbi.uservoice.com/assets/76458692/pbi_Nancy_plus.png"></span> to create a new dashboard or get a new dataset.<br></li><li>
+
+The listed <b>Dashboards, Reports, </b>and <b>Datasets&nbsp;</b>are available for you to use.&nbsp; Shared dashboards are read-only and display a lock icon <span><img src="https://powerbi.uservoice.com/assets/76452518/pbi_Nancy_LockIcon.png"></span>. </li><li>
+
+Dashboard, report, and dataset&nbsp;names usually match the name of the underlying dataset file&nbsp;-- but you can <a href="http://support.powerbi.com/knowledgebase/articles/475172-rename-a-dashboard">rename them</a>. </li><li>Right-click a dashboard, report or dataset to display the context-sensitive menu.&nbsp;<br><br><span><img src="https://powerbi.uservoice.com/assets/82599823/menu.png"></span><span><br><span></span></span></li></ul>
+
+
+<ul><li>Single-click</li><ul><li>a heading to collapse it</li><li>a dashboard to display it</li><li>a report to open it in Editing View</li><li>a dataset to explore it</li></ul></ul><h2>
+
+Dashboard tiles</h2><p>Dashboards are composed of <a href="http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi">visualization tiles</a>.&nbsp; Tiles are created either in report Editing View or Q&amp;A.&nbsp; The tiles that appear on a dashboard were specifically put there by the report creator/owner.&nbsp; The act of adding a tile to a dashboard is called <i>pinning</i>.</p><p><span></span><span><img src="https://powerbi.uservoice.com/assets/79749489/canvas.png"></span><br><span></span></p><br>For more information, see <b><a href="#dashboards">Dashboards</a> </b>(above). <br>
+<h2>Q&amp;A question box</h2><p>One way to explore your data is to ask a question and let Power BI Q&amp;A give you an answer, in the form of a visualization. Q&amp;A cannot be used to add content to a report -- only to add content, in the form of tiles, to dashboards.</p><p>Q&amp;A looks for an answer in the dataset(s) connected to the dashboard.&nbsp; A connected dataset is one that has at least one tile pinned to that dashboard.<br><span><br><span><img src="https://powerbi.uservoice.com/assets/79749507/qna.png"></span></span><br></p><p>As soon as you start to type your question, Q&amp;A takes you to the Q&amp;A page.&nbsp;As you type,&nbsp;Q&amp;A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more.&nbsp;When you have&nbsp;a visualization (answer) you like, pin it to your dashboard. <br></p>
+
+<h2>Help and feedback buttons</h2>
+
+The icons in the top right corner are your resources for downloads,&nbsp;<a href="http://support.powerbi.com/knowledgebase/articles/436810-get-help-and-support-with-power-bi">getting help </a>and providing <a href="http://support.powerbi.com/knowledgebase/articles/436738-we-want-your-feedback">feedback </a>to the Power BI team.&nbsp;&nbsp;&nbsp;<br><br><span><img src="https://powerbi.uservoice.com/assets/79749519/help.png"></span><br><h2>
+
+Dashboard title (aka What dashboard is active?)</h2><p>It's not always easy to figure out which dashboard is active.&nbsp; The dashboard title appears on the dashboard view page, on the Q&amp;A page, in report Editing View and report Reading View, and when you open a dataset.&nbsp; This way, when you <a href="http://support.powerbi.com/knowledgebase/topics/65160-all-about-visualizations">pin a visualization</a>, you know which dashboard you're pinning it to.<br><span><br><span><img src="https://powerbi.uservoice.com/assets/79749525/dashTitle.png"></span></span><br><h2>
+
+Home button</h2>This powerful button is often overlooked.&nbsp; In the top left corner of every screen in Power BI, click it to return to your dashboard and navigation pane.<br><span><br><span></span><span><img src="https://powerbi.uservoice.com/assets/79796481/basic%20concepts%202.png"></span></span><br><h2>
+Power BI version</h2>Always know which version of Power BI you are using.<br><p></p><h3>
+
+<span><span><img src="https://powerbi.uservoice.com/assets/79749540/version.png"></span></span></h3><h2>
+
+See Also:</h2><p><a href="http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi">Get started with Power BI</a><br><a href="http://support.powerbi.com/knowledgebase/articles/475702-power-bi-preview-videos">Power BI videos</a><br><br></p><p>
+<font color="red"><br></font></p><div></div>

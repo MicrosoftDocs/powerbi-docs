@@ -1,6 +1,8 @@
-	<title>Configure a Power BI Analysis Services Connector</title>	"<h2><span style='line-height: 115%; font-family: "Calibri",sans-serif; font-size: 18pt; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: SimSun; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA;'>
+	<title>Configure a Power BI Analysis Services Connector</title>	
+	
+	<h2><span style='line-height: 115%; font-family: "Calibri",sans-serif; font-size: 18pt; mso-ansi-language: EN-US; mso-fareast-font-family: SimSun; mso-bidi-font-family: Arial; mso-fareast-language: ZH-CN; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-bidi-language: AR-SA;'>
 <a href="http://www.microsoft.com/en-us/download/details.aspx?id=45333">
-<b>Download the&nbsp;Analysis Services&nbsp;Connector Preview now</b></a></span></h2><p>
+<b>Download the&nbsp;Analysis Services&nbsp;Connector now</b></a></span></h2><p>
 
 Before users can connect to a SQL Server Analysis Services tabular model, a Power BI Analysis Services connector needs to be configured for the server.&nbsp; If you have more than one&nbsp;Analysis Services&nbsp;server, you'll need to configure one connector per server.&nbsp;This is done by a server administrator. For more detailed information about how the connector works, be sure to see <a href="http://support.powerbi.com/knowledgebase/articles/546004-power-bi-analysis-services-connector-in-depth">Power BI Analysis Services Connector in-depth</a>.</p><p>
 
@@ -18,7 +20,7 @@ The connector can run on any domain computer. It doesn't have to be your local&n
 </a><br>
 <img src="https://powerbi.uservoice.com/assets/75974316/importantIcon.png">
 
-<strong>Important:</strong><span style='line-height: 115%; font-family: "Calibri",sans-serif; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: SimSun; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA;'>
+<strong>Important:</strong><span style='line-height: 115%; font-family: "Calibri",sans-serif; font-size: 11pt; mso-ansi-language: EN-US; mso-fareast-font-family: SimSun; mso-bidi-font-family: Arial; mso-fareast-language: ZH-CN; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-bidi-language: AR-SA;'>
 </span><div></div><ul><li>
 
 
@@ -76,4 +78,4 @@ Uninstall the connector by using Remove Programs in Control Panel.
 
 <h2>Troubleshooting</h2><p>
 Be sure to see <a href="http://support.powerbi.com/knowledgebase/articles/505324-troubleshooting-analysis-service-connector">Troubleshooting Power BI Analysis Services Connector
-</a>for tips on troubleshooting problems you might have.<br></p><p><br></p>"
+</a>for tips on troubleshooting problems you might have.<br></p><p><br></p>

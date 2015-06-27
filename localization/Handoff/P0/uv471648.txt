@@ -1,0 +1,362 @@
+	<title>Common Query Tasks in Power BI Designer</title>
+	
+	<div class="MsoNormal"></div>
+
+<font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;">When working in the Query view of the Power BI Designer, there are a handful of commonly used tasks. This document demonstrates those common tasks, and provides links for additional information.&nbsp;<br></p><p style="margin: 0in 0in 8pt;">The common Query tasks demonstrated here are the following:</p><ul><li><span style="line-height: 19.6px;"><span class="Apple-tab-span" style="white-space: pre;">	</span>Connect to Data</span></li><li><span style="line-height: 19.6px;"><span class="Apple-tab-span" style="white-space: pre;">	</span>Shape and Combine Data</span></li><li><span style="line-height: 19.6px;"><span class="Apple-tab-span" style="white-space: pre;">	</span>Group Rows</span></li><li><span style="line-height: 19.6px;"><span class="Apple-tab-span" style="white-space: pre;">	</span>Pivot Columns</span></li><li><span style="line-height: 19.6px;"><span class="Apple-tab-span" style="white-space: pre;">	</span>Create Custom Columns</span></li><li><span style="line-height: 19.6px;"><span class="Apple-tab-span" style="white-space: pre;">	</span>Query Formulas</span></li></ul><p style="margin: 0in 0in 8pt;">We’ll use a few data connections to complete these tasks. The data is available for you to download or connect to, in case you want to step through these tasks yourself.</p><p style="margin: 0in 0in 8pt;">The first data connection is an Excel workbook. The other is a Web resource (which is also used in other Power BI Designer help content) which can be accessed from here:</p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><a href="http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx"><i style="mso-bidi-font-style: normal;"><font color="#0563c1" face="Calibri" size="3">http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx</font></i></a></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The steps necessary to connect to both of those data sources
+is where the common Query tasks begin.</font></p><font face="Times New Roman" size="3">
+
+</font><h1 style="margin: 12pt 0in 0pt;"><a name="_Connect_to_Data"></a><font color="#2e74b5" face="Calibri Light" size="5">Connect to Data</font></h1><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">To connect to data in the Power BI Designer, select the <b style="mso-bidi-font-weight: normal;">Get Data</b> button from the <b style="mso-bidi-font-weight: normal;">Home</b> tab on the ribbon. The Power BI
+Designer presents a menu with the most common data sources. For a complete list
+of data sources to which Query can connect, select the <b style="mso-bidi-font-weight: normal;">More...</b> button at the bottom of the menu. For more information, see
+<a href="https://powerbi.uservoice.com/knowledgebase/articles/471643">Data Sources in Power BI Designer</a>.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79308300/CommonQueryTasks_GetData.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">To start with, select <b style="mso-bidi-font-weight: normal;">Excel</b>
+and navigate to the workbook, then select it. Query inspects the workbook, then
+presents the data it found in the <b style="mso-bidi-font-weight: normal;">Navigator</b>
+window.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79308354/CommonQueryTasks_Navigator.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">You can select <b style="mso-bidi-font-weight: normal;">Edit
+Query</b> to adjust, or <i style="mso-bidi-font-style: normal;">shape,</i> the
+data before loading it into Query. Editing a query before loading is especially
+useful when working with large data sets that you intend to pare down before
+loading. In this case, we select <b style="mso-bidi-font-weight: normal;">Load</b>.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Connecting to different types of data is just as easy. We
+also want to connect to a Web resource. Select <b style="mso-bidi-font-weight: normal;">Get Data &gt; More...</b> and then select <b style="mso-bidi-font-weight: normal;">Other &gt; Web</b>. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span></span><span><img src="https://powerbi.uservoice.com/assets/82835602/CommonQueryTasks_GetData_Other.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The From Web window appears, where you can type in the URL
+of the Web page.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79308411/DataSources_FromWebBox.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Select <b style="mso-bidi-font-weight: normal;">OK</b>, and
+like before, Query inspects the workbook and presents the data it finds in the <b style="mso-bidi-font-weight: normal;">Navigator</b> window.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Other data connections in Query are similar. If
+authentication is required to make a data connection, Query prompts you for the
+appropriate credentials. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">For a step-by-step demonstration of connecting to data in
+the Power BI Designer, see&nbsp;</font><a href="https://powerbi.uservoice.com/knowledgebase/articles/471635">Connect to
+Data in Power BI Designer</a>.</p><font face="Calibri" size="3"><h1 style="margin: 12pt 0in 0pt;"><font color="#2e74b5" face="Calibri Light" size="5">Shape and Combine Data</font></h1><p style="margin: 0in 0in 8pt;">You can easily shape and combine data with Query. This
+section includes a few examples of how you can shape data in Query. For a more
+complete demonstration of shaping and combining data, see <b style="mso-bidi-font-weight: normal;">﻿</b><a href="https://powerbi.uservoice.com/knowledgebase/articles/471644">Shape and
+Combine Data with Power BI Designer</a>.</p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">In the previous section we loaded two sets of data – an
+Excel workbook, and a Web resource. Once loaded, Query view in the Power BI
+Designer looks like the following, with the query from the Web page selected
+(from the available queries listed in the left pane).</span></p><p style="margin: 0in 0in 8pt;"><span style="mso-spacerun: yes;">&nbsp;<span><img src="https://powerbi.uservoice.com/assets/79308486/CommonQueryTasks_QueryPaneLoaded.png"></span><span></span></span></p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">When you shape data, you transform a data source into the
+form and format that meets your needs. In this case, we don’t need that first
+column, titled </span><i>Header</i><span style="line-height: 1.4em;">, so we’ll
+remove it.</span><br></p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">In Query, many commands can be found in the ribbon, and in a
+context-sensitive right-click menu. For example, when I right-click on the </span><i>Header</i><span style="line-height: 1.4em;"> column, the menu that appears
+lets me remove the column. I could also select the column and then select the </span><b>Remove Columns</b><span style="line-height: 1.4em;"> button from the ribbon.</span><br></p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79308510/CommonQueryTasks_RemoveColumns.png"></span><br></p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">There are many other ways I could shape the data in this
+query; I could remove any number of rows from the top, or from the bottom; I
+could add columns, split columns, replace values, and perform other shaping
+tasks to direct Query to get the data how I want it.</span></p><h1 style="margin: 12pt 0in 0pt;"><a name="_Group_Rows"></a><font color="#2e74b5" face="Calibri Light" size="5">Group Rows</font></h1><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">In Query, you can group the values in multiple rows into a
+single value.</span>&nbsp; <span style="line-height: 1.4em;">This can be useful when
+summarizing the number of products offered, the total sales, or the count of
+students.</span><br></p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">In this example, we group rows in an education enrollment
+data set. The data is from an Excel workbook, and has been shaped in Query to
+get just the columns we need, renamed the table, and performed a few other
+transforms.</span><br></p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">Let’s find out how many Agencies (this includes school
+districts, and other education agencies such as regional service districts, and
+so on) each state has. Select the </span><i>State
+Name</i><span style="line-height: 1.4em;"> column then select the </span><b>Group By</b><span style="line-height: 1.4em;">
+button in the </span><b>Transform</b><span style="line-height: 1.4em;"> tab or the </span><b>Home</b><span style="line-height: 1.4em;"> tab of the ribbon (</span><b>Group By</b><span style="line-height: 1.4em;"> is available in both tabs).</span><br></p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79308531/CommonQueryTasks_GroupBy.png"></span><br></p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">The </span><b>Group By…</b><span style="line-height: 1.4em;">
+window appears. When Query groups rows, it creates a new column into which it
+places the </span><b>Group By</b><span style="line-height: 1.4em;"> results. You can
+adjust the </span><b>Group By</b><span style="line-height: 1.4em;"> operation in the
+following ways:</span><br></p><ol style="list-style-type: decimal; direction: ltr;"><li style="color: rgb(0, 0, 0); font-size: 11pt; font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;"><i style="mso-bidi-font-style: normal;">Group by</i>
+– this is the column to be grouped; Query chooses the selected column, but you
+can change that in this window to any column in the table.<br style="mso-special-character: line-break;">
+<br style="mso-special-character: line-break;">
+</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'><i style="mso-bidi-font-style: normal;">New column
+name</i> – Query suggests a name for the new column, based on the operation it
+applies to the column being grouped, but you can name the new column anything
+you want.<br style="mso-special-character: line-break;">
+<br style="mso-special-character: line-break;">
+</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'><i style="mso-bidi-font-style: normal;">Operation</i>
+– here you specify the operation that Query applies.<br style="mso-special-character: line-break;">
+<br style="mso-special-character: line-break;">
+</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l0 level1 lfo1;'><i style="mso-bidi-font-style: normal;">The +/-
+signs</i> – you can perform aggregation operations (<b style="mso-bidi-font-weight: normal;">Group By</b> actions) on multiple columns, and perform multiple
+aggregations, all within the Group By window, and all in one operation. Query creates
+a new column (based on your selections in this window) that operate on multiple
+columns. Select the <b style="mso-bidi-font-weight: normal;">+</b> button to add
+more columns or aggregations to a <b style="mso-bidi-font-weight: normal;">Group
+By</b> operation. You can remove a column or aggregation by selecting the –
+icon, so go ahead and try it, and see what it looks like.<span style="mso-spacerun: yes;">&nbsp; </span></p></li></ol><p style="margin: 0in 0in 8pt;">&nbsp;<span><img src="https://powerbi.uservoice.com/assets/79308537/CommonQueryTasks_GroupByNumbered.png"></span><span></span></p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">When we select </span><b>OK</b><span style="line-height: 1.4em;">,
+Query performs the </span><b>Group By</b><span style="line-height: 1.4em;">
+operation, and returns the results. Whew, look at that – Ohio, Texas, Illinois,
+and California each have over a thousand agencies!</span><br></p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79308552/CommonQueryTasks_GroupedResult.png"></span><br></p><p style="margin: 0in 0in 8pt;"><span style="line-height: 1.4em;">And with Query, you can always remove the last shaping
+operation by selecting the </span><b>X</b><span style="line-height: 1.4em;"> next to
+the step just completed. </span><span style="line-height: 1.4em;">So go ahead and experiment, redo the step if you don’t like
+the results, until Query shapes your data just the way you want it.</span><br></p><p style="margin: 0in 0in 8pt;"></p><font face="Times New Roman"><p style="margin: 0in 0in 8pt;"><strong>
+
+</strong>
+
+</p><h1 style="margin: 12pt 0in 0pt;"><font color="#2e74b5" face="Calibri Light" size="5">Pivot Columns</font></h1><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">With the Power BI Designer, you can pivot columns, and
+create a table that contains aggregated values for each unique value in a
+column. For example, if you need to know how many different products you have
+in each product category, you can quickly create a table the does precisely
+that.</font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">Let’s look at an example. The following <b style="mso-bidi-font-weight: normal;">Products</b> table has been shaped to only show each unique product (by
+name), and which category each product falls under. To create a new table that
+shows a count of products for each category (based on the <i style="mso-bidi-font-style: normal;">CategoryName</i> column), select the column, then select <b style="mso-bidi-font-weight: normal;">Pivot Column</b> from the <b style="mso-bidi-font-weight: normal;">Transform</b> tab on the ribbon.</font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79309542/PivotColumns_PivotButton.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">The <b style="mso-bidi-font-weight: normal;">Pivot Column</b>
+window appears, letting you know which column’s values will be used to create
+new columns (1), and when you expand <b style="mso-bidi-font-weight: normal;">Advanced
+option</b> (2), you can select the function that will be applied to the aggregated
+values (3). </font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79309563/PivotColumns_PivotDialog.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">When you select <b style="mso-bidi-font-weight: normal;">OK</b>,
+Query displays the table according to the transform instructions provided in
+the <b style="mso-bidi-font-weight: normal;">Pivot Column</b> window.</font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79309584/PivotColumns_PivotComplete.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><h1 style="margin: 12pt 0in 0pt;"><a name="_Create_Custom_Columns"></a><font color="#2e74b5" face="Calibri Light" size="5">Create Custom Columns</font></h1><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">In the Power BI Designer, you can create custom formulas
+that operate on multiple columns in your table, then place the results of such
+formulas into a new (custom) column. Query makes it easy to create custom
+columns. </font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">In Query view, select <b style="mso-bidi-font-weight: normal;">Add
+Custom Column</b> from the <b style="mso-bidi-font-weight: normal;">Add Column</b>
+tab on the ribbon. </font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79311024/CommonQueryTasks_CustomColumn.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">The following window appears. In the following example, we
+create a custom column called <i style="mso-bidi-font-style: normal;">Percent ELL</i>
+that calculates the percentage of total students that are English Language
+Learners (ELL). </font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79311030/CustomColumn_AddCustomColumnDialog.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">Like any other applied step in Query, if the new custom
+column doesn’t provide the data you’re looking for, you can simply delete the
+step from the <b style="mso-bidi-font-weight: normal;">Applied Steps</b> section
+of the <b style="mso-bidi-font-weight: normal;">Query Settings</b> pane by
+selecting the <b style="mso-bidi-font-weight: normal;">X</b> next to the <b style="mso-bidi-font-weight: normal;">Added Custom</b> step.</font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79311069/CustomColumn_AddedAppliedStep.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><h1 style="margin: 12pt 0in 0pt;"><a name="_Query_Formulas"></a><font color="#2e74b5" face="Calibri Light" size="5">Query Formulas</font></h1><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">You can edit the steps that Query generates, and you can create
+custom formulas to get precise control over connecting to and shaping your
+data. Whenever Query performs an action on data, the formula associated with
+the action is displayed in the <b style="mso-bidi-font-weight: normal;">Formula
+Bar</b>. To view the <b style="mso-bidi-font-weight: normal;">Formula Bar</b>, select
+the checkbox next to <b style="mso-bidi-font-weight: normal;">Formula Bar</b> in
+the <b style="mso-bidi-font-weight: normal;">View</b> tab of the ribbon. </font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79311126/QueryFormulas_FormulaBar.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">Query keeps all applied steps for each query as text that
+you can view or modify. You can view or modify the text for any query using the
+<b style="mso-bidi-font-weight: normal;">Advanced Editor</b>, which is displayed
+when you select <b style="mso-bidi-font-weight: normal;">Advanced Editor</b> from
+the <b style="mso-bidi-font-weight: normal;">View</b> tab of the ribbon.</font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79311147/QueryFormulas_AdvancedEditorButton.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">Here's a look at the <b style="mso-bidi-font-weight: normal;">Advanced
+Editor</b>, with the query steps associated with the <b style="mso-bidi-font-weight: normal;">USA_StudentEnrollment</b> query displayed.&nbsp;</font><span style="line-height: 107%; font-family: Calibri, sans-serif; font-size: 11pt;">These
+steps are created in the Power Query Formula Language, often referred to as </span><b style="font-family: Calibri, sans-serif; font-size: 11pt;">M</b><span style="line-height: 107%; font-family: Calibri, sans-serif; font-size: 11pt;">. For information, see </span><a style="font-family: Calibri, sans-serif; font-size: 11pt;" href="https://support.office.com/en-us/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&amp;rs=en-US&amp;ad=US">Learn
+about Power Query formulas</a><span style="line-height: 107%; font-family: Calibri, sans-serif; font-size: 11pt;">. To view the language specification itself,
+download the </span><a style="font-family: Calibri, sans-serif; font-size: 11pt;" href="http://go.microsoft.com/fwlink/?linkid=320633">Microsoft
+Power Query for Excel Formula Language Specification</a><span style="line-height: 107%; font-family: Calibri, sans-serif; font-size: 11pt;">.</span><span style="line-height: 1.4em; font-family: Calibri;">﻿</span></p></font></font><font face="Calibri" size="3"><font face="Times New Roman"><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79311162/QueryFormulas_AdvancedEditor.png"></span><br></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">The Power BI Designer provides an extensive set of formula
+categories. For more information, and a complete reference of all Query
+formulas, visit </font><a href="https://support.office.com/en-in/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819"><font color="#0563c1" face="Calibri">Power
+Query Formula Categories</font></a><font face="Calibri">.</font></p><p style="margin: 0in 0in 8pt;">
+
+</p><p style="margin: 0in 0in 8pt;"><font face="Calibri">The formula categories for Query are the following:</font></p><p style="margin: 0in 0in 8pt;">
+
+</p><ul style="list-style-type: disc; direction: ltr;"><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Number</p><ul style="list-style-type: circle;"><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Constants</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Information</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Conversion and formatting</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Format</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Rounding</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Operations</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Random</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Trigonometry</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Bytes</p></li></ul></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Text</p><ul style="list-style-type: circle;"><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Information</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Text comparisons</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Extraction</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Modification</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Membership</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Transformations</p></li></ul></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Logical</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Date</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Time</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>DateTime</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>DateTimeZone</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Duration</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Record</p><ul style="list-style-type: circle;"><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Information</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Transformations</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Selection</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Serialization</p></li></ul></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>List</p><ul style="list-style-type: circle;"><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Information</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Selection</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Transformation</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Membership</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Set operations</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Ordering</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Averages</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Addition</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Numerics</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Generators</p></li></ul></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Table</p><ul style="list-style-type: circle;"><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Table construction</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Conversions</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Information</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Row operations</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Column operations</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Membership</p></li></ul></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Values</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Arithmetic operations</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Parameter Types</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Metadata</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Accessing data</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>URI</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Binary formats</p><ul style="list-style-type: circle;"><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level2 lfo1; mso-add-space: auto;'>Reading numbers</p></li></ul></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Binary</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Lines</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Expression</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Function</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Error</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Comparer</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Splitter</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Combiner</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l0 level1 lfo1;'>Replacer</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l0 level1 lfo1;'>Type</p></li></ul><p style="margin: 0in 0in 8pt;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="margin: 0in 0in 8pt;">﻿<span style="font-size: 28px; font-weight: bold;">﻿</span><o:p style="line-height: 1em; font-family: inherit; font-size: 28px; font-style: inherit; font-variant: inherit; font-weight: bold;"></o:p><span style='color: rgb(46, 116, 181); font-family: "Calibri Light"; font-size: x-large; font-style: normal; font-variant: normal; font-weight: bold;'>More Information</span></p></font></font>
+
+<p class="MsoNormal">There are all sorts of things you can do with the Power BI
+Designer. For more information on its capabilities, check out the following
+resources:<o:p></o:p></p>
+
+<ul><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471664">Getting
+Started with Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471646">Query
+Overview with Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471643">Data Sources
+in Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471635">Connect to
+Data in Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471644">Shape and
+Combine Data with Power BI Designer</a></li></ul><p class="MsoNormal"><o:p></o:p></p>
+
+<p class="MsoNormal"><o:p></o:p></p>
+
+<p class="MsoNormal"><o:p></o:p></p>
+
+<p class="MsoNormal"><o:p></o:p></p>
+
+<p class="MsoNormal"><o:p></o:p></p>
+
+<p class="MsoNormal"><o:p></o:p></p>
+
+<p class="MsoNormal">Want to give us feedback? Great – use the <b>Send Feedback</b> menu item in the Power BI
+Designer. We look forward to hearing from you!<o:p></o:p></p><p class="MsoNormal">﻿﻿<span><img src="https://powerbi.uservoice.com/assets/79311183/SendFeedback.png"></span><span></span><br></p><p class="MsoNormal"><br></p><font face="Calibri" size="3"><font face="Times New Roman"><p style="margin: 0in 0in 8pt;">
+
+<br></p></font><p style="margin: 0in 0in 8pt;"></p></font><p style="margin: 0in 0in 8pt;"><br></p><font face="Times New Roman" size="3">
+
+</font><div></div>
+	
+	

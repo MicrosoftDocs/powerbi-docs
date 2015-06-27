@@ -1,0 +1,335 @@
+	<title>QuickStart: Learn DAX basics in Power BI Designer</title>
+	
+	<div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">This QuickStart is for users new to Power BI Designer. It’s
+meant to give you a quick and easy introduction on how you can use Data
+Analysis Expressions (DAX) to solve a number of basic calculation and data
+analysis problems. We’ll go over some conceptual information, a series of tasks
+you can complete, and a few quizzes to test what you’ve learned. After
+completing this article, you should have a good understanding of the most
+important fundamental concepts in DAX.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"></font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h2>What is DAX?</h2><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">DAX is a collection of functions, operators, and constants
+that can be used in a formula, or expression, to calculate and return one or
+more values. Stated more simply, DAX helps you create new information from data
+already in your model.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h2>Why is DAX so important?</h2><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">It’s quite easy to create a new Power BI Designer file and
+import some data into it. You can even create reports that show valuable
+insights without using any DAX formulas at all. But, what if you need to
+analyze growth percentage across product categories and for different date
+ranges? Or, you need calculate year-over-year growth compared to market trends? DAX formulas provide this capability and many other
+important capabilities as well. Learning how to create effective DAX formulas
+will help you get the most out of your data. When you get the information you
+need, you can begin to solve real business problems that affect your bottom
+line. This is the power in Power BI, and DAX will help you get there.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h2>Prerequisites</h2><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">You might already be familiar with creating formulas in
+Microsoft Excel. That knowledge will be helpful in understanding DAX, but even
+if you have no experience with Excel formulas, the concepts described here will
+help you get started creating DAX formulas and solving real-world BI problems
+right away.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">We’re going to focus on understanding DAX formulas used in calculations,
+more specifically, in measures and calculated columns. You should already be familiar with Power BI
+Designer, importing data, adding fields to a report, and you should also be
+familiar with fundamental concepts of&nbsp;<a href="https://support.powerbi.com/knowledgebase/articles/554577-measures-in-power-bi-designer">Measures</a> and&nbsp;C<a href="https://support.powerbi.com/knowledgebase/articles/590598-calculated-columns-in-power-bi-designer">alculated columns</a>. </font></p><div><font face="Times New Roman" size="3">
+
+</font><b>Example Workbook</b><font face="Times New Roman" size="3"><b>
+</b>
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">The best way to learn DAX is to create some basic formulas,
+use it with some actual data, and see the results for yourself. The examples
+and tasks here use the Contoso Sales for Power BI Designer file. This is the same sample file used in the Tutorial: Create your own measures in Power BI article. You
+can download it <a href="http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso Sales for Power BI Designer.zip">here</a>. </font></p><h2>Let's begin!</h2><div><font face="Times New Roman" size="3">
+
+<br></font></div><div><font face="Calibri" size="3">We will frame our understanding of DAX around three
+fundamental concepts: <i>Syntax</i>, <i>Functions</i>, and <i>Context</i>. Of course, there are
+other important concepts in DAX, but understanding these three concepts will
+provide the best foundation on which to build your DAX skills.</font></div><div><font face="Times New Roman" size="3">
+
+</font></div><h3>Syntax</h3><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Before you create your own formulas, let’s take a look at
+DAX formula syntax. Syntax includes the various elements that make up a
+formula, or more simply, how the formula is written. For example, let’s look at
+a simple DAX formula.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><span style="mso-no-proof: yes;"><font face="Times New Roman" size="3"><span><span><img src="https://powerbi.uservoice.com/assets/79312242/DAXQS_Syntax.png"></span></span></font></span></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">This formula includes the following syntax elements:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>A.</b> The measure name <b>Total Sales</b>.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>B.</b> The equals sign operator (<b>=</b>) indicates the beginning of the
+formula. When calculated, it will return a result.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>C. </b>The DAX function <b>SUM</b> adds up all of the numbers in the <b>Sales[SalesAmount]</b>
+column. You’ll learn more about functions later.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>D.</b> Parenthesis <b>() </b>surround an expression containing one or more arguments. All functions
+require at least one argument. An argument passes a value to a function.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>E.</b> The referenced table <b>Sales</b>.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>F.</b> The referenced column <b>[SalesAmount]</b> in the Sales table. With
+this argument, the SUM function knows on which column to aggregate a SUM.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><br></font></p><p style="margin: 6pt 0in;"><font face="Calibri" size="3">When trying to understand a DAX formula, it is often helpful
+to break down each of the elements into a language you think and speak every
+day. For example, you can read this formula as: </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><blockquote><font face="Calibri" size="3"><i>For the measure named Total Sales, calculate (=) the SUM of
+values in the [SalesAmount ] column in the Sales table. </i></font></blockquote><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">When added to a report, this measure calculates and returns
+values by summing up sales amounts for each of the other fields we include, for
+example, Cell Phones in the USA.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">You might be thinking ‘Isn’t this measure doing the same
+thing as if I were to just add the SalesAmount field to my report?’ Well, yes.
+But, there’s a good reason to create our own measure that sums up values from
+the SalesAmount field: We can use it as an argument in other formulas. This may
+seem a little confusing now, but as your DAX formula skills grow, knowing this
+will make your formulas and your model more efficient. In-fact, you’ll see the
+Total Sales measure showing up as an argument in other formulas later on.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Let’s go over a few more things about this formula. In
+particular, we introduced a function, </font><a href="https://support.office.com/en-us/article/SUM-Function-DAX-5a01483a-8426-40d8-8eb2-be04358b7d50"><font color="#0000ff" face="Calibri" size="3">SUM</font></a><font face="Calibri" size="3">.
+Functions are pre-written formulas that make it easier to do complex
+calculations and manipulations with numbers, dates, time, text, and more. You
+will learn more about functions later. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">You also see the column [SalesAmount] was preceded by the
+table Sales in which the column belongs. This is known as a fully qualified
+column name in that it includes the column name preceded by the table name.
+Columns referenced in the same table do not require the table name be included
+in the formula. This can make long formulas that reference many columns shorter
+and easier to read. However, it's good practice to&nbsp; include the table
+name in your measure formulas, even when in the same table.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><blockquote><font face="Calibri" size="3"><b>Note: </b>If a table name contains spaces, reserved keywords, or
+disallowed characters, you’ll need to <span style="mso-spacerun: yes;">&nbsp;</span>enclose the table name in single quotation
+marks. You’ll also need to enclose table names in quotation marks if the name
+contains any characters outside the ANSI alphanumeric character range,
+regardless of whether your locale supports the character set or not.</font></blockquote><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">It’s important your formulas have the correct syntax. In
+most cases, if the syntax is not correct, a syntax error will be returned. In
+other cases, the syntax may be correct, but the values returned might not be
+what you are expecting. The DAX editor in Power BI Designer includes suggestions;
+a feature used to create syntactically correct formulas by helping you select
+the correct elements.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Let’s create a simple formula. This task will help you
+further understand formula syntax and how the suggestions feature in the
+formula bar can help you.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h3><font face="Calibri" size="3">Task: Create a measure formula</font></h3><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">To complete this task, you’ll need to open the Contoso Sales
+Power BI Designer file.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>1.</b>&nbsp; In Report view, in the field list, right-click on the <b>Sales</b> table, and then click <b>New Measure</b>.</font></div><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>2.</b>&nbsp; In the formula bar, replace <b>Measure</b> by typing a new measure name, <b>Previous Quarter Sales</b>. </font></div><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>3.</b>&nbsp; After the equals sign, type <b>SUM</b> followed by an opening parenthesis. </font></div><blockquote><font face="Calibri" size="3">Rather than type a column name to sum up right away, we’re going to enter another function, to <i>filter</i> the data we want to sum up.</font></blockquote><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>4.</b>&nbsp; Between the parentheses, type <b>CALCULATE</b>, followed by an opening parenthesis. </font></div><blockquote>You’ll use the CALCULATE<font face="Calibri" size="3"> function to filter the amounts we want to sum by an argument we pass to the CALCULATE function. This is what’s referred to as nesting functions. The CALCULATE function has at least two arguments. The first is the expression to be evaluated, and second, a filter.</font></blockquote><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>5.</b>&nbsp; Between the parenthesis<b> () </b>for the <b>CALCULATE</b> function, type <b>Sales[SalesAmount]</b>. This is the first expression argument for our CALCULATE function. </font></div><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>6.&nbsp;</b> Type a comma (<b>,</b>) to specify the first filter, then type <b>PREVIOUSQUARTER</b> followed by an opening parenthesis.. </font></div><blockquote>You’ll use the PREVIOUSQUARTER time intelligence function to filter our SUM results by the previous quarter.</blockquote><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>7.&nbsp;</b> Between the parenthesis <b>() </b>for the PREVIOUSQUARTER function, type <b>Calendar[DateKey]</b>.</font></div><blockquote><font face="Calibri" size="3">The PREVIOUSQUARTER function has one argument, a column containing a contiguous range of dates.</font></blockquote><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>8.&nbsp;</b> Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by two closing parentheses <b>))</b>.</font></div><div style="margin: 6pt 0in;"><font face="Calibri" size="3">Your formula should now look like this:</font></div><blockquote><font face="Calibri" size="3"><b>Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))</b></font></blockquote><div style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>10.&nbsp;</b> Click the checkmark&nbsp;<span><img src="https://powerbi.uservoice.com/assets/79088796/QSDAX_Syntax_TaskCheckmark.png"></span><span style="mso-no-proof: yes;"></span><span style="mso-spacerun: yes;">&nbsp;</span>in the formula bar or press Enter to validate the formula and add it to the model.</font></div><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">&nbsp;</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">You did it! You just created a measure using DAX, and not an
+easy one at that. What this formula will do is calculate the total sales for
+the previous quarter, depending on the filters applied in a report. For
+example, if we put SalesAmount and our new Previous Quarter Sales measure in a
+chart, and then added Year and QuarterOfYear as Slicers, we’d get something
+like this: </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><span style="mso-no-proof: yes;"><font face="Times New Roman" size="3"><span><img src="https://powerbi.uservoice.com/assets/82835701/QSDAX_3_Chart.png"></span></font></span></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">You were just introduced to several important aspects of DAX
+formulas. First, this formula included two functions. Notice </font><a href="https://support.office.com/en-us/article/PREVIOUSQUARTER-Function-DAX-d6dd1ba0-0541-4c03-b928-f6884078e736?ui=en-US&amp;rs=en-US&amp;ad=US"><font color="#0000ff" face="Calibri" size="3">PREVIOUSQUARTER</font></a><font face="Calibri" size="3">,
+a time intelligence, function is nested as an argument passed to </font><a title="CALCULATE" href="https://support.office.com/en-us/article/CALCULATE-19654bc2-aa88-4f6c-a0b9-6fa7a59c4432"><font color="#0000ff" face="Calibri" size="3">CALCULATE</font></a><font face="Calibri" size="3">, a filter function. DAX formulas can contain up
+to 64 nested functions. It’s unlikely a formula would ever contain so many
+nested functions. In fact, such a formula would be very difficult to create and
+debug, and it probably wouldn’t be very fast either. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">In this formula, you also used filters. Filters narrow down
+what will be calculated. In this case, you selected one filter as an argument,
+which is actually the result of another function. You will learn more about filters later. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Finally, you used the CALCULATE function. This is one of the
+most powerful functions in DAX. As you author models and create more complex
+formulas, you will likely use this function many times. Discussing the
+CALCULATE function is outside the scope of this article, but as your knowledge
+of DAX grows, pay special attention to this one. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h3><font face="Calibri" size="3">Syntax QuickQuiz</font></h3><div><font face="Times New Roman" size="3">
+
+</font></div><div style="margin: 6pt 0in;"><font face="Calibri"><font size="3">1.&nbsp; What does this button on the formula bar do?</font></font></div><blockquote><font face="Calibri"><font size="3"><span><img src="https://powerbi.uservoice.com/assets/82835785/QSDAX_2_SyntaxQuiz.png"></span><br><span style="mso-no-proof: yes;"></span></font></font></blockquote><div style="margin: 6pt 0in;"><font face="Calibri" size="3">2.&nbsp; What always surrounds a column name in a DAX formula?</font></div><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Answers are provided at the end of this article.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h3>Functions</h3><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Functions are predefined formulas that perform calculations
+by using specific values, called arguments, in a particular order or structure.
+Arguments can be other functions, another formula, expression,&nbsp;column references, numbers,
+text, logical values such as TRUE or FALSE, or constants. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">DAX includes the following categories of functions: </font><a href="https://support.office.com/en-us/article/Date-and-Time-Functions-DAX-052a31ec-10b5-4481-b3a3-66ff9144e1c1"><font color="#0000ff" face="Calibri" size="3">Date
+and Time</font></a><font face="Calibri" size="3">, </font><a href="https://support.office.com/en-us/article/Time-Intelligence-Functions-DAX-0571dcda-e4e8-42a8-b205-e1f0f9301b26"><font color="#0000ff" face="Calibri" size="3">Time
+Intelligence</font></a><font face="Calibri" size="3">, </font><font color="#0000ff" face="Calibri" size="3"><a href="https://support.office.com/en-us/article/Logical-Functions-DAX-3e6f6898-8d50-4d0f-9e2c-99bb2aa1a8bc">Information</a></font><font face="Calibri" size="3">,
+</font><a href="https://support.office.com/en-us/article/Logical-Functions-DAX-3e6f6898-8d50-4d0f-9e2c-99bb2aa1a8bc"><font color="#0000ff" face="Calibri" size="3">Logical</font></a><font face="Calibri" size="3">,
+</font><a href="https://support.office.com/en-us/article/Math-and-Trig-Functions-DAX-c780a73e-944e-46c4-a367-b50bff1767e2"><font color="#0000ff" face="Calibri" size="3">Mathematical</font></a><font face="Calibri" size="3">,
+</font><a href="https://support.office.com/en-us/article/Statistical-Functions-DAX-68df5baa-b6f5-4064-befb-d5d8c6c0a7be"><font color="#0000ff" face="Calibri" size="3">Statistical</font></a><font face="Calibri" size="3">,
+</font><a href="https://support.office.com/en-us/article/Text-Functions-DAX-4dcc8e50-c6a0-45c5-890b-b81c8af67a53"><font color="#0000ff" face="Calibri" size="3">Text</font></a><font face="Calibri" size="3">,
+</font><a href="https://support.office.com/en-us/article/ParentChild-Functions-DAX-9a8604a0-6f25-49a6-b275-df26084aa6f5"><font color="#0000ff" face="Calibri" size="3">Parent/Child</font></a><font face="Calibri" size="3">
+and </font><a href="https://support.office.com/en-us/article/Other-Functions-DAX-6a9cb293-8cd2-4b25-adb5-e1c05892aeb1"><font color="#0000ff" face="Calibri" size="3">Other</font></a><font face="Calibri" size="3">
+functions. If you’re familiar with functions in Excel formulas, many of the
+functions in DAX will appear similar to you; however, DAX functions are unique
+in the following ways:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><ul><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">A DAX function always references a complete column or a table. If you want to use only particular values from a table or column, you can add filters to the formula.</font></div></li><font face="Times New Roman" size="3"></font><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">If you need to customize calculations on a row-by-row basis, DAX provides functions that let you use the current row value or a related value as a kind of argument, to perform calculations that vary by context. You will learn more about context later. </font></div></li><font face="Times New Roman" size="3"></font><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">DAX includes many functions that return a table rather than a value. The table is not displayed, but is used to provide input to other functions. For example, you can retrieve a table and then count the distinct values in it, or calculate dynamic sums across filtered tables or columns. </font></div></li><font face="Times New Roman" size="3"></font><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">DAX includes a variety of time intelligence functions. These functions let you define or select date ranges, and perform dynamic calculations based on them. For example, you can compare sums across parallel periods. </font></div></li><font face="Times New Roman" size="3"></font><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">Excel has a very popular function, VLOOKUP. DAX functions don’t take a cell or cell range as a reference like VLOOKUP does in Excel. DAX functions take a column or a table as a reference. Keep in-mind, in Power BI Designer, you’re working with a relational data model. Looking up values in another table is really quite easy, and in most cases you don’t need to create any formula at all.</font></div></li></ul><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><br><font face="Calibri" size="3">
+As you can see, functions in DAX can help you create very powerful formulas. We
+really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to
+learn details about each of DAX functions is in the </font><a title="Data Analysis Expressions (DAX) Reference" href="https://support.office.com/en-us/article/Data-Analysis-Expressions-DAX-Reference-411c6891-614d-438c-bf45-c7e061dd9e08"><font color="#0000ff" face="Calibri" size="3">Data Analysis Expressions
+(DAX) Reference</font></a><font face="Calibri" size="3">.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h3><font face="Calibri" size="3">Functions QuickQuiz</font></h3><div><font face="Times New Roman" size="3">
+
+</font></div><ol><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">What does a function always reference?</font></div></li><font face="Times New Roman" size="3"></font><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">Can a formula contain more than one function?</font></div></li><font face="Times New Roman" size="3"></font><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">What category of functions would you use to concatenate two text strings into one string?</font></div></li></ol><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Answers are provided at the end of this article.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h3>Context</h3><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Context is one of the most important DAX concepts to
+understand. There are two types of context in DAX; row context and filter
+context. We’ll first look at row context. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><a name="row_context"></a><font face="Calibri" size="3"><b>Row Context</b></font><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Row context is most easily thought of as the current row. It
+applies whenever a formula has a function that applies filters to identify a
+single row in a table. The function will inherently apply a row context for
+each row of the table over which it is filtering. This type of row context most
+often applies to measures. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><a name="filter_context"></a><font face="Calibri" size="3"><b>Filter Context</b></font><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Filter context is a little more difficult to understand than
+row context. You can most easily think of filter context as: One or more
+filters applied in a calculation that determines a result or value. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Filter context doesn’t exist in-place of row context;
+rather, it applies in addition to row context. For example, to further narrow
+down the values to include in a calculation, you can apply a filter context
+which not only specifies the row context, but also specifies only a particular
+value (filter) in that row context. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Filter context is easily seen in your reports. For example,
+when you add TotalCost to a visualization, and then add Year and Region, you
+are defining a filter context that selects a subset of data based on a given
+year and region. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Why is filter context so important to DAX? Because while
+filter context can most easily be applied by adding fields to a visualization,
+filter context can also be applied in a DAX formula by defining a filter using
+functions such as ALL, RELATED, FILTER, CALCULATE, by relationships, and by
+other measures <span style="mso-spacerun: yes;">&nbsp;</span>and columns. For example,
+let’s look at the following formula in a measure named Store Sales:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><span style="mso-no-proof: yes;"><font face="Times New Roman" size="3"><span><span><img src="https://powerbi.uservoice.com/assets/79312263/DAXQS_FilterContext.png"></span></span></font></span></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">To better understand this formula, we can break it down,
+much like with other formulas.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">This formula includes the following syntax elements:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>A.</b> The measure name <b>Store Sales</b>.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>B. </b>The equals sign operator (<b>=</b>) indicates the beginning of the
+formula. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>C.</b> The <b>CALCULATE</b> function evaluates an expression, as an
+argument, in a context that is modified by the specified filters. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>D.</b> Parenthesis <b>()</b> surround&nbsp;an expression containing one or more arguments. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>E. </b>A measure <b>[Total Sales]</b> in the same table as an expression.
+The Total Sales measure has the formula: =SUM(Sales[SalesAmount]).</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>F.</b> A comma (<b>,</b>) separates the first expression argument from the
+filter argument. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>G.</b> The fully qualified referenced column, <b>Channel[ChannelName]</b>.
+This is our row context. Each row in this column specifies a channel: Store, Online, etc. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3"><b>H.</b> The particular value, <b>Store</b> as a filter. This is our filter context.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">This formula ensures only sales values defined by the Total
+Sales measure are calculated only for rows in the Channel[ChannelName] column
+with the value “Store”, as a filter.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">As you can imagine, being able to define filter context
+within a formula has immense and powerful capabilities. Being able to reference
+only a particular value in a related table is just one such example. Don’t
+worry if you do not completely understand context right away. As you create
+your own formulas, you will better understand context and why it’s so important
+in DAX.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">&nbsp;</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h3><font face="Calibri" size="3">Context QuickQuiz</font></h3><div><font face="Times New Roman" size="3">
+
+</font></div><ol><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">What are the two types of context?</font></div></li><font face="Times New Roman" size="3"></font><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">What is filter context?</font></div></li><font face="Times New Roman" size="3"></font><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">What is row context?</font></div></li></ol><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Answers are provided at the end of this article.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h2>Summary</h2><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Now that you have a basic understanding of the most
+important concepts in DAX, you can begin creating DAX formulas for measures on
+your own. DAX can indeed be a little tricky to learn, but there are many
+resources available to you. After reading through this article and
+experimenting with a few of your own formulas, you can learn more about other
+DAX concepts and formulas that can help you solve your own business problems.
+There are many DAX resources available to you; most important is the </font><a title="Data Analysis Expressions (DAX) Reference" href="https://support.office.com/en-us/article/Data-Analysis-Expressions-DAX-Reference-411c6891-614d-438c-bf45-c7e061dd9e08"><font color="#0000ff" face="Calibri" size="3">Data Analysis Expressions
+(DAX) Reference</font></a><font face="Calibri" size="3">. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;">DAX has been around for several years in other Microsoft BI
+tools such as Power Pivot and Analysis Services Tabular models, so there’s a
+lot of great information out there. You can find more information in books, whitepapers, and blogs from both
+Microsoft and leading BI professionals. The <a href="http://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx">DAX
+Resource Center Wiki on TechNet</a> is also a great place to start. </p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">&nbsp;</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">&nbsp;</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">&nbsp;</font></p><div><font face="Times New Roman" size="3">
+
+<br></font></div><div><font face="Times New Roman" size="3">
+
+</font></div><h3><span class="_wysihtml5-temp-placeholder"><span class="_wysihtml5-temp-placeholder"><span class="_wysihtml5-temp-placeholder">﻿</span>﻿</span>﻿</span>QuickQuiz Answers</h3><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Syntax:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><ol><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">Validates and enters the measure into the model.</font></div></li><li><font face="Calibri" size="3">Brackets [].</font></li></ol><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Functions:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><ol><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">A table and a column.</font></div></li><li><font face="Calibri" size="3">Yes. A formula can contain up to 64 nested functions.</font></li><li><a title="Text Functions" href="https://support.office.com/en-us/article/Text-Functions-4dcc8e50-c6a0-45c5-890b-b81c8af67a53"><font color="#0000ff" face="Calibri" size="3">Text Functions</font></a><font face="Calibri" size="3">.</font></li></ol><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">Context:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><ol><li><div style="margin: 6pt 0in;"><font face="Calibri" size="3">Row context and filter context.</font></div></li><li><span class="_wysihtml5-temp-placeholder">﻿</span><font face="Calibri" size="3">One or more filters in a calculation that determines a single value.</font></li><li><font face="Calibri" size="3">The current row.</font></li></ol><div><font face="Times New Roman" size="3">
+
+</font></div><div></div>

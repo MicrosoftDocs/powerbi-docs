@@ -1,4 +1,6 @@
-	<title>Tutorial: Facebook analytics using Power BI Designer</title>	<!--[if gte mso 9]><xml>
+	<title>Tutorial: Facebook analytics using Power BI Designer</title>	
+	
+	<!--[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG></o:AllowPNG>
  </o:OfficeDocumentSettings>
@@ -46,14 +48,14 @@ Power BI Facebook </a>site, which is found at the following URL:&nbsp;https://ww
 <p class="MsoNormal" style="line-height: normal; margin-bottom: 0pt; mso-margin-top-alt: auto; mso-outline-level: 3;"><span style="font-family: Arial, sans-serif;"><o:p><br></o:p></span></p>
 
 <ol type="1" start="1">
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
      the <b>Getting Started</b> dialog or in the <b>Home ribbon tab</b>, select <b>Get
      Data.</b><o:p></o:p></span></li>
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>The <b>Get Data</b> dialog appears,
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>The <b>Get Data</b> dialog appears,
 letting you select from all sorts of data sources. Select <b>Facebook</b>
 from the <b>All</b>
      or <b>Other</b> group.<o:p></o:p></span></li>
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
      the <b>Facebook</b> dialog box, paste the page name (<b>microsoftbi</b>) into the <b>Username</b>
      text box and select <b>Posts</b> from
      the <b>Connection</b> drop down.<o:p></o:p></span></li>
@@ -62,8 +64,8 @@ from the <b>All</b>
 <p class="MsoNormal" style="line-height: normal; margin-left: 36pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050710/2.png"></span><br></p>
 
 <ol type="1" start="4">
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Click
-     <b>OK</b>.</span></li><li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>When prompted for credentials, sign in using your Facebook account and allow Power BI access through your account.</span></li></ol><blockquote><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><span><img src="https://powerbi.uservoice.com/assets/78812653/FacebookCredentials.PNG"></span></span></blockquote><ol type="1" start="4">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Click
+     <b>OK</b>.</span></li><li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>When prompted for credentials, sign in using your Facebook account and allow Power BI access through your account.</span></li></ol><blockquote><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><span><img src="https://powerbi.uservoice.com/assets/78812653/FacebookCredentials.PNG"></span></span></blockquote><ol type="1" start="4">
 </ol>
 
 <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>After establishing a connection to the page, you
@@ -123,9 +125,9 @@ shaping and cleansing steps in order to get the most out of your data.<o:p></o:p
 date and time values. <o:p></o:p></span></p>
 
 <ol type="1" start="1">
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
      the <b>Query Preview</b> grid, scroll to the right until you find the <b>created_time</b> column<o:p></o:p></span></li>
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Right-click
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Right-click
      a column header in the <b>Query Preview</b> grid, and click <b>Split
      Column &gt; By Delimiter</b> to split the columns. Chose <b>Custom </b>in the delimiter drop down
      and enter <b>“T”</b> Note that this
@@ -139,10 +141,10 @@ date and time values. <o:p></o:p></span></p>
 <p class="MsoNormal" style="line-height: normal; text-indent: 36pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050724/10.png"></span><br></p>
 
 <ol type="1" start="3">
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Rename
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Rename
      the created columns to <b>created_date</b>
      and <b>created_time</b> respectively. <o:p></o:p></span></li>
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Select
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Select
      the new column, <b>created_time</b>,<b> </b>and in </span><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>the <b>Query view</b>
      ribbon, navigate to the <b>Add Column </b>tab
      and select <b>Time&gt;Hour </b>under
@@ -153,7 +155,7 @@ date and time values. <o:p></o:p></span></p>
 <p class="MsoNormal" style="line-height: normal; margin-left: 36pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050725/11.png"></span><br></p>
 
 <ol type="1" start="5">
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt;"><a name="__toc378680390"></a><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Change the type of the new <b>Hour</b> column to <b>Whole Number</b>, by navigating to the
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l5 level1 lfo2; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><a name="__toc378680390"></a><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Change the type of the new <b>Hour</b> column to <b>Whole Number</b>, by navigating to the
      <b>Home</b> tab and selecting the <b>Data Type </b>drop down or by right-clicking
      the column and selecting <b>Transform&gt;Whole
      Number</b>. <o:p></o:p></span></li>
@@ -170,10 +172,10 @@ the nested value so that you can use it in the visualizations. <o:p></o:p></span
 <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050730/13.png"></span><br></p>
 
 <ol type="1" start="1">
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Continue
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Continue
      scrolling to the right until you see the <b>shares</b> column. The nested value indicates that we need to do
      another transform in order to get the actual values.<o:p></o:p></span></li>
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
      the top right of the column header, select the&nbsp;<span><img src="https://powerbi.uservoice.com/assets/76050731/14.png"></span></span><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>&nbsp;icon to open the <b>Expand/Aggregate</b> builder. Select <b>count </b>and hit <b>OK</b>.
      This will add the count of the shares for each row in our table.<o:p></o:p></span></li>
 </ol>
@@ -184,7 +186,7 @@ double clicking on the column name, right clicking the column or </span><span st
 ribbon, select <b>Rename </b>under the <b>Transform</b> tab and <b>Any Column</b> group.<o:p></o:p></span></p>
 
 <ol type="1" start="4">
- <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Finally,
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Finally,
      change the type of the new <b>shares</b>
      column to <b>Whole Number</b>. With
      the column selected, the type can be changed by right-clicking the column
@@ -193,7 +195,7 @@ ribbon, select <b>Rename </b>under the <b>Transform</b> tab and <b>Any Column</b
      the <b>Home</b> tab and selecting the <b>Data Type </b>drop down or. <o:p></o:p></span></li>
 </ol>
 
-<p class="MsoListParagraph" style="line-height: normal; margin-bottom: 0pt; mso-margin-top-alt: auto; mso-outline-level: 3; mso-add-space: auto;"><a name="__toc378680391"></a><a name="__toc378680392"></a><span style="font-family: Arial, sans-serif;"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoListParagraph" style="line-height: normal; margin-bottom: 0pt; mso-margin-top-alt: auto; mso-add-space: auto; mso-outline-level: 3;"><a name="__toc378680391"></a><a name="__toc378680392"></a><span style="font-family: Arial, sans-serif;"><o:p>&nbsp;</o:p></span></p>
 
 <p class="MsoNormal" style="line-height: normal; margin-bottom: 0pt; mso-margin-top-alt: auto; mso-outline-level: 3;"><a name="__toc378680393"></a><a name="__toc378680394"></a><span style="font-family: Arial, sans-serif;">Query steps created<o:p></o:p></span></p>
 
@@ -257,4 +259,178 @@ formula, also known as the "M" language. <o:p></o:p></span></p>
  </tr>
  <tr>
   <td width="437" valign="top" style="padding: 0cm 5.4pt; width: 328.1pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none;">
-  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Rename </span></b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-wei
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Rename </span></b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-weight: bold;'>a column<b><o:p></o:p></b></span></p>
+  </td>
+  <td width="216" valign="top" style="padding: 0cm 5.4pt; width: 162pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Renamed Columns<o:p></o:p></span></p>
+  </td>
+  <td width="636" valign="top" style="padding: 0cm 5.4pt; width: 477pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Table.RenameColumns<o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>(#"Changed
+  Type",{{"created_time.1", "created_date"},
+  {"created_time.2", "created_time"}})<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="437" valign="top" style="padding: 0cm 5.4pt; width: 328.1pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Insert </span></b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-weight: bold;'>a column<b><o:p></o:p></b></span></p>
+  </td>
+  <td width="216" valign="top" style="padding: 0cm 5.4pt; width: 162pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Inserted Hour<o:p></o:p></span></p>
+  </td>
+  <td width="636" valign="top" style="padding: 0cm 5.4pt; width: 477pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Table.AddColumn<o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>(#"Renamed Columns",
+  "Hour", each Time.Hour([created_time]), type number)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="437" valign="top" style="padding: 0cm 5.4pt; width: 328.1pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Change Type </span></b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-weight: bold;'><o:p></o:p></span></p>
+  </td>
+  <td width="216" valign="top" style="padding: 0cm 5.4pt; width: 162pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Changed Type1<o:p></o:p></span></p>
+  </td>
+  <td width="636" valign="top" style="padding: 0cm 5.4pt; width: 477pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Table.TransformColumnTypes<o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>(#"Inserted Hour",{{"Hour",
+  type text}})<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="437" valign="top" style="padding: 0cm 5.4pt; width: 328.1pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Expand </span></b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-weight: bold;'>values in a nested table<b><o:p></o:p></b></span></p>
+  </td>
+  <td width="216" valign="top" style="padding: 0cm 5.4pt; width: 162pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Expand shares<o:p></o:p></span></p>
+  </td>
+  <td width="636" valign="top" style="padding: 0cm 5.4pt; width: 477pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Table.ExpandRecordColumn<o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>(#"Changed Type1",
+  "shares", {"count"}, {"shares.count"})<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="437" valign="top" style="padding: 0cm 5.4pt; width: 328.1pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Rename </span></b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-weight: bold;'>the column<b><o:p></o:p></b></span></p>
+  </td>
+  <td width="216" valign="top" style="padding: 0cm 5.4pt; width: 162pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Renamed Columns1<o:p></o:p></span></p>
+  </td>
+  <td width="636" valign="top" style="padding: 0cm 5.4pt; width: 477pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Table.RenameColumns<o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>(#"</span><span style='font-family: "Arial",sans-serif;'> </span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Expand
+  shares",{{"shares.count", "shares"}})<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="437" valign="top" style="padding: 0cm 5.4pt; width: 328.1pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Change Type<o:p></o:p></span></b></p>
+  </td>
+  <td width="216" valign="top" style="padding: 0cm 5.4pt; width: 162pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Changed Type2<o:p></o:p></span></p>
+  </td>
+  <td width="636" valign="top" style="padding: 0cm 5.4pt; width: 477pt; border-right-color: windowtext; border-bottom-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-left-style: none;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Table.TransformColumnTypes<o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>(#"Renamed
+  Columns1",{{"shares", Int64.Type}})<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><span style='font-family: "Arial",sans-serif;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style='font-family: "Arial",sans-serif;'><o:p>&nbsp;</o:p></span></p>
+
+<h2 class="MsoNormal"><b><span style="font-family: Arial, sans-serif;">Task 4: </span></b><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Create additional visualizations using the
+Report view </span></b></h2><p class="MsoNormal" style="line-height: normal; margin-bottom: 0pt; mso-margin-top-alt: auto; mso-outline-level: 2;"><b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'></span></b><span style="font-family: Arial, sans-serif;">Now that we have
+converted the data into the shape that we need for the rest of our analysis, we
+can load the resulting table into our Report and create additional
+visualizations.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Step 1: Load the query to your report<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In order to load the query results to the
+report, we can switch to the <b>Report view</b>,
+using the view switcher at the bottom-left corner of the Power BI Designer
+window.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050736/17.png"></span><br></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>This will trigger evaluation of the query and
+load of the table output to the Report. You can check progress of this action
+in the <b>Load</b> dialog.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050738/18.png"></span><br></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>After the query finishes loading, you will see
+the updated fields in the <b>Fields pane</b>
+at the right of the <b>Report view</b>.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Step 2: Create a Line chart and a Bar chart<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In order to create a visualization, we can
+drag fields from the <b>Field list</b> and
+drop them in the <b>Report canvas</b>.<o:p></o:p></span></p>
+
+<ol type="1" start="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l3 level1 lfo6; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Drag
+     the <b>created_date</b> field and drop
+     it in the <b>Report canvas</b>. This
+     will create a new visualization in the <b>Report canvas</b>. In this case, it will also include the <b>shares</b> column since it’s a numeric
+     value and create a <b>Line Chart</b>. <o:p></o:p></span></li>
+</ol>
+
+<p class="MsoListParagraphCxSpFirst" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-add-space: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListParagraphCxSpLast" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-add-space: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050745/19.png"></span><br></p>
+
+<ol type="1" start="2">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l3 level1 lfo6; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Next,
+     drag the <b>shares</b> field and drop
+     it in the <b>Report canvas</b>. Now
+     drag the <b>Hour</b> field into the <b>Axis </b>section under the <b>Field List</b>.<o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal" style="line-height: normal; margin-left: 36pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050746/20.png"></span><br></p>
+
+<ol type="1" start="3">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l3 level1 lfo6; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>We
+     can easily change the type of visualization by clicking on the <b>Change Visualization Type skittle</b>
+     in the top-right corner of the visualization. Alternatively, we can also
+     change the visualization type using the <b>Visualize gallery</b> in the <b>Home</b>
+     ribbon tab.<o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal" style="line-height: normal; margin-left: 36pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050751/21.png"></span><br></p>
+
+<ol type="1" start="4">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l3 level1 lfo6; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>We
+     are going to change the visualization type to <b>Bar Chart</b>, using the first option in the list.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-list: l3 level1 lfo6; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Right
+     click the chart to change the <b>Sort
+     Order</b>, sort by <b>Hour</b>,<b> A-&gt;Z</b><o:p></o:p></span></li>
+</ol>
+
+<p class="MsoListParagraphCxSpFirst" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-add-space: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050752/22.png"></span><br></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-add-space: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p>&nbsp;</o:p></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Update and resize the visualizations as needed. Hit refresh at
+any point to include the latest data in your report.<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpLast" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-add-space: auto;"><span><img src="https://powerbi.uservoice.com/assets/76050754/23.png"></span><br></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>As you can see, it is very easy to customize
+visualizations in your report, in order to present the data in the way that you
+want. Power BI Designer provides a seamless end-to-end experience from getting
+data from a wide range of data sources and shaping it to meet your analysis
+needs to visualizing this data in rich and interactive ways. Once your report
+is ready, you can <a href="http://support.powerbi.com/knowledgebase/articles/461278-upload-power-bi-designer-files">upload it to Power BI</a>&nbsp;and create dashboards based on it, which you can share
+with other Power BI users.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">You can download the end result of this tutorial <a href="http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/FacebookAnalytics.pbix">here</a></p><p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><br></p><h3 class="MsoNormal" style="font-family: sans-serif; font-size: 17px; font-style: normal; font-variant: normal; background-color: rgb(249, 250, 251);"><span style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">Where else can I get more information?</span></h3><p class="MsoNormal" style="line-height: normal; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal; background-color: rgb(249, 250, 251);"><a style="color: rgb(41, 62, 102); text-indent: -18pt;" href="http://go.microsoft.com/fwlink/?LinkID=521937">Read other Power BI Designer tutorials</a><span style="color: rgb(31, 73, 125); text-indent: -18pt;">.</span></p><p class="MsoListParagraph" style="line-height: 19.6px; text-indent: -18pt; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal; background-color: rgb(249, 250, 251);"><span style="color: rgb(31, 73, 125); font-family: Symbol;">·<span style='line-height: normal; font-family: "Times New Roman"; font-size: 7pt; font-style: normal; font-variant: normal; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><a style="color: rgb(41, 62, 102);" href="http://go.microsoft.com/fwlink/?LinkID=519322">Watch Power BI Designer videos.</a><span style="color: rgb(31, 73, 125);"><o:p></o:p></span></p><p class="MsoListParagraph" style="line-height: 19.6px; text-indent: -18pt; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal; background-color: rgb(249, 250, 251);"><span style="color: rgb(31, 73, 125); font-family: Symbol;">·<span style='line-height: normal; font-family: "Times New Roman"; font-size: 7pt; font-style: normal; font-variant: normal; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><a style="color: rgb(41, 62, 102);" href="http://go.microsoft.com/fwlink/?LinkID=519326">Visit the Power BI Forum.</a><span style="color: rgb(31, 73, 125);"><o:p></o:p></span></p><p class="MsoNormal" style="line-height: 19.6px; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: normal; background-color: rgb(249, 250, 251);"><a style="color: rgb(41, 62, 102); text-indent: -18pt;" href="http://go.microsoft.com/fwlink/?LinkID=519327">Read the Power BI Blog.</a><span style="font-family: Arial, sans-serif;"><o:p>﻿</o:p></span></p>
+
+<p class="MsoNormal"><span style='font-family: "Arial",sans-serif;'><o:p>&nbsp;</o:p></span></p><div></div>

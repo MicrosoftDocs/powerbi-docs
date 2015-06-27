@@ -1,0 +1,25 @@
+	<title>Reports in Power BI</title>
+
+	<p>Dashboards, reports, and datasets are at the heart of Power BI. A <b>report </b>is a multi-perspective view into your data, with visualizations that represent different findings and insights from that data.&nbsp; A report may have a single visualization or pages full of visualizations.<br><br><span><img src="https://powerbi.uservoice.com/assets/79868841/pbi_Nancy_report.png"></span><br>
+
+</p><p>Need help understanding the building blocks that make up Power BI?&nbsp; See <a href="http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts">Power BI - Basic Concepts</a>.</p><p>You can <a href="http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report">create a report from scratch </a>or <a href="http://support.powerbi.com/knowledgebase/articles/431008-share-a-dashboard">have one shared with you</a>. And for some kinds of data, Power BI&nbsp;will <a href="http://support.powerbi.com/knowledgebase/articles/434354-get-data">create a report for you as it adds the dataset</a>.&nbsp;&nbsp; </p><h2>For more information about reports:<br></h2><blockquote><p><i>What are the Power BI building blocks? </i>for a description of how reports fit into Power BI.</p><p><a href="http://support.powerbi.com/knowledgebase/articles/475616-create-a-new-power-bi-report"><strong>Creating a report</strong></a><strong>&nbsp;&nbsp;</strong>requires a <a href="http://support.powerbi.com/knowledgebase/articles/434354-get-data">dataset</a>.&nbsp;&nbsp;<br><br>View and interact with reports in either <a href="http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view"><b>Reading View </b></a>or <b><a href="http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report">Editing View </a></b>.&nbsp;Editing View is only available to a report creator and has many more options for creating and modifying reports. <br><br><b><a href="http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports">Filter and highlight data in reports </a></b>-- create them&nbsp;in <a href="http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report">Editing View </a>and interact with them&nbsp;in <a href="http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view">Reading View. </a><br><br><a href="http://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report"><b>Add a page to a report </b></a>if you need more room.<br><br><a href="http://support.powerbi.com/knowledgebase/articles/474805-delete-a-page-from-a-power-bi-report"><b>Delete a page from a report</b></a>, even if it's not blank.<br><br><b><a href="http://support.powerbi.com/knowledgebase/articles/474347-rename-a-report">Renaming a report&nbsp;</a></b> doesn't change the name of any associated dashboard or dataset. <br><br><a href="http://support.powerbi.com/knowledgebase/articles/444112-save-a-report"><b>Save a report </b></a>so you can use it again and share it with coworkers. The name of the saved report is added to your Power BI navigation pane, under the <b>Reports </b>heading. <br><br><b><a href="http://support.powerbi.com/knowledgebase/articles/474346-delete-a-report">Delete a report </a></b>if you don't need it any more.&nbsp;Deleting the report does not remove the dataset.</p></blockquote>
+
+<h2>View reports in the navigation pane</h2><p>
+
+Power BI can have more than one report-- as you add reports, their titles are added to the list under the <b>Reports </b>heading (see screenshot below).&nbsp;The report you're currently viewing&nbsp;is highlighted. Only one report can be open at a time.<br><br><span></span><span><span><img src="https://powerbi.uservoice.com/assets/79868889/NavPane.png"></span><br></span>
+
+</p><h2>See Also</h2><font face="Times New Roman" size="3">
+
+</font><p><ins cite="mailto:Michele%20Hart" datetime="2015-03-13T01:07"><a title="Visualizations in Power BI reports" href="https://support.office.microsoft.com/en-US/article/Visualizations-in-Power-BI-reports-96901475-bf5a-4fac-8042-82a0ff580767"><span style='font-family: "Segoe UI Light",sans-serif;'><font color="#0000ff" size="3"></font></span></a><font color="#0000ff" size="3"><a href="http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports">Visualizations
+in Power BI reports</a></font></ins><span style='color: rgb(54, 54, 54); font-family: "Segoe UI Light",sans-serif;'><ins cite="mailto:Michele%20Hart" datetime="2015-03-13T01:07"><u><a href="http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports"> </a></u></ins></span><ins cite="mailto:Michele%20Hart" datetime="2015-03-13T01:07">
+
+<br><a href="http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi">Get
+Started with Power BI</a>
+<br>
+
+<a href="http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts">Power
+BI - Basic Concepts</a>
+</ins></p><p><ins cite="mailto:Michele%20Hart" datetime="2015-03-13T01:07">
+
+
+<font color="#000000"></font></ins></p><div></div>
