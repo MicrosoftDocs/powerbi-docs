@@ -1,0 +1,1503 @@
+<title>Tutorial: Analyzing sales data from Excel and an OData feed</title>	<div 
+
+class="MsoNormal"></div>
+
+<div class="MsoNormal"></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><a 
+
+name="__top"></a><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: 
+
+"Times New Roman";'>In this tutorial, you'll learn how to combine data from two data sources.&nbsp;</span></p><p 
+
+class="MsoNormal"><font color="#363636" face="Arial, sans-serif">It's common to have data spread across multiple 
+
+data sources such as product information in one database and sales information in another. The techniques you'll 
+
+learn below are shown in the context of an Excel file and an OData feed but are general purpose techniques you 
+
+can immediately apply to other data sources like SQL Server queries, CSV files, or any of the data sources Power 
+
+BI supports.</font></p><p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto;"><span style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">You'll import data from 
+
+a local Excel Workbook that
+contains Products information, and from an OData feed that contains Product Orders
+information. </span><span style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">You'll perform 
+
+transformation and aggregation steps, and combine data
+from both sources to produce a <b>Total Sales per Product and Year</b> report
+that includes interactive visualizations.&nbsp;</span></p><p class="MsoNormal" style="line-height: normal; mso-
+
+margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style="color: rgb(54, 54, 54); font-family: Arial, 
+
+sans-serif;">Here's what the final report will look like:</span><br></p><p class="MsoNormal" style="line-height: 
+
+normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><span><img width="1210" height="686" 
+
+style="width: 580px; height: 340px;" 
+
+src="https://powerbi.uservoice.com/assets/76066508/18.png"></span></span></p><p class="MsoNormal" style="line-
+
+height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p><br></o:p></span></p><div 
+
+class="WordSection1"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-
+
+family: "Times New Roman";'>In order to perform this tutorial, you need the Products workbook which you can 
+
+download <a href="http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-
+
+23B4DA81C4DE/Products.xlsx">here</a>.&nbsp;In the <b>Save As</b> dialog box, name the file 
+
+<b>Products.xlsx</b>.</span><b><span style="font-family: Arial, sans-
+
+serif;"><o:p>&nbsp;</o:p></span></b></div><div class="WordSection1">
+
+</div><h1 class="MsoNormal"><span style="mso-bookmark: _Toc405907672;"><span style='color: black; font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Task 1: Get product data from an Excel 
+
+workbook</span></span><b style="mso-bidi-font-weight: normal;"><span style='color: black; font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></b></h1><div 
+
+class="WordSection1"><span style="mso-bookmark: _Toc405907672;"><span style='color: black; font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><br></span></span></div><div 
+
+class="WordSection1">
+
+</div><p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: 
+
+auto;"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>In this task, you import products from the Products.xlsx&nbsp;</span><span style='color: rgb(54, 54, 
+
+54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>file into Power BI Designer. 
+
+<o:p></o:p></span></p><div class="WordSection1">
+
+</div><h2 class="MsoNormal"><a name="_Toc405907673"></a><a name="__step_1__connect"></a><span style="mso-
+
+bookmark: _Toc405907673;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: 
+
+"Times New Roman";'>Step 1: Connect to an Excel workbook</span></span><span style='color: black; font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></h2><div 
+
+class="WordSection1">
+
+</div><div class="WordSection1"><ol type="1" start="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Launch
+     Power BI Designer..<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Getting Started </b><span style="mso-bidi-font-weight: bold;">dialog</span>,
+     click <b>Get Data</b>.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Get Data</b> dialog box, browse for Excel Workbook and click <b style="mso-bidi-font-weight: 
+
+normal;">Connect</b><o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b style="mso-bidi-font-weight: normal;">Open File</b> dialog box,
+     select the Products.xlsx file.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Navigator</b> pane, click <b>Products </b>(the name of the Excel table object)<b>&nbsp;</b>and click 
+
+<b>Edit Query</b>.</span></li></ol></div>
+
+<h2 class="MsoNormal"><a name="_Toc405907675"></a><a name="__to_hide_other"></a><span style="mso-bookmark: 
+
+_Toc405907675;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Step 2: Remove other columns to only display columns of interest</span></span><span style='color: black; 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></h2><div><span 
+
+style="mso-bookmark: _Toc405907675;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-
+
+font-family: "Times New Roman";'><br></span></span></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In 
+
+this step you remove all columns except <b>ProductID</b>,
+<b>ProductName</b>, <b>UnitsInStock</b>, and <b>QuantityPerUnit</b>.<o:p></o:p></span></p>
+
+<ol type="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l18 level1 lfo3; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Query View</b> , select the <b>ProductID</b>, <b>ProductName</b>, <b>QuantityPerUnit</b>,
+     and <b>UnitsInStock</b> columns (use Ctrl+Click or Shift+Click).<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l18 level1 lfo3; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Query Editor</b> ribbon, click <b>Remove Columns</b> &gt; <b>Remove
+     Other Columns</b> or right-click on a column header, and click <b>Remove
+     Other Columns</b>. </span></li></ol><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: 
+
+"Times New Roman";'><span><img 
+
+src="https://powerbi.uservoice.com/assets/82934671/AnlayzingSalesData_RemoveOtherColumns.png"></span><br></span>
+
+<p class="MsoNormal" style="line-height: normal; margin-left: 36pt; mso-margin-top-alt: auto; mso-margin-bottom-
+
+alt: auto;"><span style='font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_29" 
+
+style="width: 468.75pt; height: 159.75pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" 
+
+o:spid="_x0000_i1041">
+ <v:imagedata o:title="" src="Analyzing%20Sales%20Data%20Final_files/image004.png">
+</v:imagedata></v:shape></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'><o:p></o:p></span></p>
+
+<h2 class="MsoNormal"><a name="_Toc405907676"><span style='color: black; font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'>﻿</span></a><span style="font-family: Arial, sans-serif;">Step 3: Change 
+
+the data type of the UnitsInStock column</span></h2><h2 class="MsoNormal" style="font-family: sans-serif; font-
+
+size: 22px; font-style: normal; font-variant: normal;"><span style="font-family: Arial, sans-
+
+serif;"><o:p></o:p></span></h2><div class="MsoNormal"><span style="color: rgb(54, 54, 54); font-family: Arial, 
+
+sans-serif;">Power BI brings in numeric fields from Excel as decimal values. In this instance, we will only ever 
+
+have whole numbers of products in stock, so in this step you change the </span><b style="color: rgb(54, 54, 54); 
+
+font-family: Arial, sans-serif;">UnitsInStock</b><span style="color: rgb(54, 54, 54); font-family: Arial, sans-
+
+serif;"> column’s datatype to be a whole number</span><br></div>
+
+<p class="MsoListParagraphCxSpFirst" style="line-height: normal; text-indent: -18pt; mso-margin-top-alt: auto; 
+
+mso-margin-bottom-alt: auto; mso-list: l16 level1 lfo18; mso-add-space: auto;"><!--[if !supportLists]--><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: Arial;'><span 
+
+style="mso-list: Ignore;">1.<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-
+
+stretch: normal;'>&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'>Select the <b style="mso-bidi-font-weight: normal;">UnitsInStock</b> 
+
+column<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="line-height: normal; text-indent: -18pt; mso-margin-top-alt: auto; 
+
+mso-margin-bottom-alt: auto; mso-list: l16 level1 lfo18; mso-add-space: auto;"><!--[if !supportLists]--><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: Arial;'><span 
+
+style="mso-list: Ignore;">2.<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-
+
+stretch: normal;'>&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'>Click the <b style="mso-bidi-font-weight: normal;">Data Type</b> button 
+
+in the <b style="mso-bidi-font-weight: normal;">Home</b> ribbon<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="line-height: normal; text-indent: -18pt; mso-margin-top-alt: auto; 
+
+mso-margin-bottom-alt: auto; mso-list: l16 level1 lfo18; mso-add-space: auto;"><!--[if !supportLists]--><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: Arial;'><span 
+
+style="mso-list: Ignore;">3.<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-
+
+stretch: normal;'>&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'>Choose the <b style="mso-bidi-font-weight: normal;">Whole Number</b> 
+
+datatype from the drop
+down<br></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: 
+
+Arial;'><span style="mso-list: Ignore;"><span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; 
+
+font-stretch: normal;'><span><img 
+
+src="https://powerbi.uservoice.com/assets/82934743/AnlayzingSalesData_WholeNumber.png"></span>&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style='font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape 
+
+id="Picture_x0020_27" style="width: 468pt; height: 97.5pt; visibility: visible; mso-wrap-style: square;" 
+
+type="#_x0000_t75" o:spid="_x0000_i1040">
+ <v:imagedata o:title="" src="Analyzing%20Sales%20Data%20Final_files/image005.png">
+</v:imagedata></v:shape><span style="mso-spacerun: yes;">&nbsp;</span></span><span style='color: rgb(54, 54, 54); 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></p>
+
+<h3 class="MsoNormal"><span style="font-family: Arial, sans-serif;">Power BI Designer steps
+cr</span><span style="font-family: Arial, sans-serif;">eated</span><br><a name="__toc382391191"></a></h3>
+
+As you perform query activities in the Query
+View, query steps are created and listed in the Query Settings pane on the right of the Designer, in
+the APPLIED STEPS list. Each query step has a corresponding formula,
+also known as the "M" language. For more information about the “M” formula
+language, see <a href="https://support.office.com/en-US/Article/Learn-about-Power-Query-formulas-6bc50988-022b-
+
+4799-a709-f8aafdee2b2f">Learn about Power BI formulas</a>.
+
+<table class="MsoNormalTable" style="mso-yfti-tbllook: 1184; mso-cellspacing: 1.5pt;" border="0" cellpadding="0">
+ <thead>
+  <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+   <td style="padding: 0.75pt;">
+   <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Task<o:p></o:p></span></p>
+   </td>
+   <td style="padding: 0.75pt;">
+   <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Query step<o:p></o:p></span></p>
+   </td>
+   <td style="padding: 0.75pt;">
+   <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Formula<o:p></o:p></span></p>
+   </td>
+  </tr>
+ </thead>
+ <tbody><tr style="mso-yfti-irow: 1;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Connect to an Excel workbook<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Source<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Source{[Name="Products"]}[Data]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 2;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Promote the first row to table column
+  headers<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>FirstRowAsHeader<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='font-family: "Arial",sans-serif;'><a title="Table.PromoteHeaders" href="https://support.office.com/en-
+
+US/Article/TablePromoteHeaders-b8eaeb95-042a-42e1-9164-6d3c646acadc"><span style='mso-fareast-font-family: "Times 
+
+New Roman";'>Table.PromoteHeaders</span></a></span><span style='color: rgb(54, 54, 54); font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'> <o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>
+
+(Products)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 3;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Remove other columns to only display columns
+  of interest<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>RemovedOtherColumns<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='font-family: "Arial",sans-serif;'><a title="Table.SelectColumns" href="https://support.office.com/en-
+
+US/Article/TableSelectColumns-20bb9e28-9fd3-4cd2-a21b-97972c82ec22"><span style='mso-fareast-font-family: "Times 
+
+New Roman";'>Table.SelectColumns</span></a></span><span style='color: rgb(54, 54, 54); font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'> <o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>
+
+(FirstRowAsHeader,{"ProductID",
+  "ProductName", "QuantityPerUnit", "UnitsInStock"})<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 4; mso-yfti-lastrow: yes;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Change datatype<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Changed Type<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Table.TransformColumnTypes(#"Removed
+  Other Columns",{{"UnitsInStock", Int64.Type}})</span><span style='font-family: "Arial",sans-
+
+serif;'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<h1 class="MsoNormal"><a name="_Toc405907677"></a><a name="__step_3__import"></a><a 
+
+name="__task_2__import"></a><a name="__toc382391193"></a><span style="mso-bookmark: _Toc405907677;"><span 
+
+style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Task 2: Import 
+
+order
+data from an OData feed</span></span><b style="mso-bidi-font-weight: normal;"><span style='color: black; font-
+
+family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></b></h1><div><span 
+
+style="mso-bookmark: _Toc405907677;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-
+
+font-family: "Times New Roman";'><br></span></span></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In 
+
+this task, you'll bring in data on orders your company has taken for these products. This step represents 
+
+connecting to a sales system. You import data into the Power
+BI Designer from the sample Northwind OData feed at<span style='color: rgb(31, 73, 125); font-family: 
+
+"Calibri",sans-serif; font-size: 11pt; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; 
+
+mso-bidi-font-family: "Times New Roman"; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-
+
+language: AR-SA;'>: <font color="#0563c1"><a 
+
+href="http://services.odata.org/V3/Northwind/Northwind.svc/">http://services.odata.org/V3/Northwind/Northwind.svc
+
+/</a>&nbsp;</font></span></span></p>
+
+<h2 class="MsoNormal"><a name="_Toc405907678"></a><a name="__step_1__connect_1"></a><span style="mso-bookmark: 
+
+_Toc405907678;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Step 1: Connect to an OData feed</span></span><span style='color: black; font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></h2>
+
+<ol type="1" start="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l17 level1 lfo5; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Home </b>ribbon tab, click <b>Get Data</b><o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l17 level1 lfo5; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Browse
+     to the <b style="mso-bidi-font-weight: normal;">OData Feed</b> data source<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l17 level1 lfo5; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>OData Feed</b> dialog box, enter the <b>URL</b> for the Northwind
+     OData feed.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l17 level1 lfo5; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Click
+     <b>OK</b>.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l17 level1 lfo5; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Navigator</b> pane click <b>Orders</b> and click <b>Edit Query</b>.<span><img 
+
+src="https://powerbi.uservoice.com/assets/82934839/AnlayzingSalesData_ODataFeed.png"></span><o:p></o:p></span></l
+
+i>
+</ol>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><b><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Note 
+
+</span></b><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times 
+
+New Roman";'>&nbsp;&nbsp; You can
+click the item name once to see a preview<br><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_19" style="width: 468pt; 
+
+height: 367.5pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1039">
+ <v:imagedata o:title="" src="Analyzing%20Sales%20Data%20Final_files/image006.png">
+</v:imagedata></v:shape></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'><o:p></o:p></span></p>
+
+<h2 class="MsoNormal"><a name="_Toc405907679"></a><a name="__step_2__expand"></a><span style="mso-bookmark: 
+
+_Toc405907679;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Step 2: Expand the Order_Details table</span></span><span style='color: black; font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></h2><div><span style="mso-
+
+bookmark: _Toc405907679;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: 
+
+"Times New Roman";'><br></span></span></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>The 
+
+Orders table that you just connected to contains a reference to a Details table.This table contains the 
+
+individual products that were included in each Order. If you are connecting to data sources with multiples tables 
+
+(such as a relational database) you can use these references to build up your query.&nbsp;</span></p><p 
+
+class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">In this step, you expand the </span><b 
+
+style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">Order_Details</b><span style="color: rgb(54, 54, 
+
+54); font-family: Arial, sans-serif;">
+table that is related to the </span><b style="color: rgb(54, 54, 54); font-family: Arial, sans-
+
+serif;">Orders</b><span style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;"> table, to combine the 
+
+</span><b style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">ProductID</b><span style="color: rgb
+
+(54, 54, 54); font-family: Arial, sans-serif;">,
+</span><b style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">UnitPrice</b><span style="color: rgb
+
+(54, 54, 54); font-family: Arial, sans-serif;">, and </span><b style="color: rgb(54, 54, 54); font-family: Arial, 
+
+sans-serif;">Quantity</b><span style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;"> columns from 
+
+</span><b style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">Order_Details</b><span style="color: 
+
+rgb(54, 54, 54); font-family: Arial, sans-serif;"> into
+the </span><b style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">Orders</b><span style="color: rgb
+
+(54, 54, 54); font-family: Arial, sans-serif;"> table. This is a representation of the data in these 
+
+tables:</span></p><p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-
+
+alt: auto;"><span style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;"><span><img 
+
+src="https://powerbi.uservoice.com/assets/76067095/OrderDetails.png"></span><br></span></p><p class="MsoNormal" 
+
+style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style="color: rgb(54, 
+
+54, 54); font-family: Arial, sans-serif;">The </span><b style="color: rgb(54, 54, 54); font-family: Arial, sans-
+
+serif;">Expand</b><span style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;"> operation combines 
+
+columns from a
+related table into a subject table. When the query runs, rows from the related
+table (</span><b style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">Order_Details</b><span 
+
+style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">) are combined into rows from the subject table 
+
+(</span><b style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;">Orders</b><span style="color: rgb(54, 
+
+54, 54); font-family: Arial, sans-serif;">).</span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>After you expand the <b>Order_Details</b>
+table, three new columns and additional rows are added to the <b>Orders</b>
+table, one for each row in the nested or related table.<o:p></o:p></span></p>
+
+<ol type="1" start="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l13 level1 lfo6; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Query View</b>, scroll to the <b>Order_Details</b> column.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l13 level1 lfo6; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Order_Details</b> column, click the expand icon (<span><img 
+
+src="https://powerbi.uservoice.com/assets/76067164/expand.png"></span>).<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l13 level1 lfo6; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Expand</b> drop-down:<o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l13 level2 lfo6; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Click
+      <b>(Select All Columns)</b> to clear all columns.<o:p></o:p></span></li>
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l13 level2 lfo6; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Click
+      <b>ProductID</b>, <b>UnitPrice</b>, and <b>Quantity</b>.<o:p></o:p></span></li>
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l13 level2 lfo6; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Click
+      <b>OK</b>.<br><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050882/7.png"></span><br><o:p></o:p></span></li>
+ </ol>
+</ol>
+
+<p class="MsoNormal" style="line-height: normal; margin-left: 72pt; mso-margin-top-alt: auto; mso-margin-bottom-
+
+alt: auto;"><span style='font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_30" 
+
+style="width: 275.25pt; height: 249.75pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" 
+
+o:spid="_x0000_i1037">
+ <v:imagedata o:title="" src="Analyzing%20Sales%20Data%20Final_files/image008.png">
+</v:imagedata></v:shape></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; margin-left: 72pt; mso-margin-top-alt: auto; mso-margin-bottom-
+
+alt: auto;"><br></p>
+
+<h2 class="MsoNormal"><a name="_Toc405907680"></a><a name="__step_3__hide_1"></a><span style="mso-bookmark: 
+
+_Toc405907680;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Step 3: Remove other columns to only display columns of interest</span></span><span style='color: black; 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></h2><div><span 
+
+style="mso-bookmark: _Toc405907680;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-
+
+font-family: "Times New Roman";'><br></span></span></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In 
+
+this step you remove all columns except <b style="mso-bidi-font-weight: normal;">ShipCity</b>, <b style="mso-
+
+bidi-font-weight: normal;">ShipCountry</b>, <b>OrderDate</b>, <b>ProductID</b>, <b>UnitPrice</b>,
+and <b>Quantity</b> columns. In the previous task, you used <b>Remove Other
+Columns</b>. For this task, you remove selected columns.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; margin-bottom: 0pt; mso-margin-top-alt: auto; mso-outline-level: 
+
+4;"><a name="__toc382391198"></a></p><ol type="1" start="1"><li class="MsoNormal" style="color: rgb(54, 54, 54); 
+
+line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l5 level1 lfo7; tab-stops: 
+
+list 36.0pt;"><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Query View</b>, select all columns:<o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l5 level2 lfo7; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Click
+      the first column (<b>OrderID</b>).<o:p></o:p></span></li>
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l5 level2 lfo7; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Shift+Click
+      the last column (<b>Shipper</b>).<o:p></o:p></span></li>
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l5 level2 lfo7; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Ctrl+Click
+      the <b>OrderDate</b>, <b style="mso-bidi-font-weight: normal;">ShipCity</b>,
+      <b style="mso-bidi-font-weight: normal;">ShipCountry</b>, <b>Order_Details.ProductID</b>,
+      <b>Order_Details.UnitPrice</b>, and <b>Order_Details.Quantity</b>
+      columns.<o:p></o:p></span></li>
+ </ol>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l5 level1 lfo7; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Right-click
+     on a selected column header, and click <b>Remove Columns</b>.<o:p></o:p></span></li>
+</ol>
+
+<h2 class="MsoNormal"><a name="_Toc405907681"></a><a name="__step_4__calculate"></a><span style="mso-bookmark: 
+
+_Toc405907681;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Step 4: Calculate the line total for each Order_Details row</span></span><span style='color: black; 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></h2><div><span 
+
+style="mso-bookmark: _Toc405907681;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-
+
+font-family: "Times New Roman";'><br></span></span></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>The 
+
+Power BI Designer allows you to create calculations based on the columns you are importing, to enrich the data 
+
+that you connect to. In this step, you create a <b>Custom Column</b>
+to calculate the line total for each <b>Order_Details</b> row.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; margin-bottom: 0pt; mso-margin-top-alt: auto; mso-outline-level: 
+
+4;"><a name="__toc382391200"></a><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-
+
+family: "Times New Roman";'>Calculate the line total for each Order_Details row<o:p></o:p></span></p>
+
+<ol type="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l9 level1 lfo8; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Add Column </b><span style="mso-bidi-font-weight: bold;">ribbon tab</span>,
+     click <b style="mso-bidi-font-weight: normal;">Add</b> <b>Custom Column</b>.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l9 level1 lfo8; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Add Custom Column</b> dialog box, in the <b>Custom Column Formula</b>
+     textbox, enter <b>[Order_Details.UnitPrice] * [Order_Details.Quantity]</b>.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l9 level1 lfo8; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>New column name</b> textbox, enter <b>LineTotal</b>.<br><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050886/8.png"></span><br><o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l9 level1 lfo8; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Click
+     <b>OK</b>.<o:p></o:p></span></li>
+</ol>
+
+<h2 class="MsoNormal"><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-
+
+family: "Times New Roman";'>Step 5: Set the datatype of the LineTotal
+field</span></h2><ol type="1" style="font-family: sans-serif; font-size: 14px; font-style: normal; font-variant: 
+
+normal;" start="1"><li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal;"><span style="font-
+
+family: Arial, sans-serif;">Right click the <b>LineTotal </b>column.<o:p></o:p></span></li><li class="MsoNormal" 
+
+style="color: rgb(54, 54, 54); line-height: normal;"><span style="font-family: Arial, sans-serif;">Select 
+
+<b>Change Type</b> and choose <b>Decimal Number<br><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050893/9.png"></span><br></b></span></li></ol><h2 
+
+class="MsoNormal"><span style="font-family: Arial, sans-serif;">Step 6: Rename and reorder columns in the 
+
+query</span><br></h2><span style="font-family: Arial, sans-serif;"><br></span>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In 
+
+this step, you finish making the model easy
+to work with when creating reports by renaming the final columns and changing
+their order.<o:p></o:p></span></p>
+
+<ol type="1" start="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l10 level1 lfo11; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b>Query View </b>grid, drag the LineTotal column to the left, after
+     ShipCountry<br><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050906/10.png"></span><br><o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_32" style="width: 403.5pt; 
+
+height: 89.25pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1034">
+ <v:imagedata o:title="" src="Analyzing%20Sales%20Data%20Final_files/image011.png">
+</v:imagedata></v:shape></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'><o:p></o:p></span></p>
+
+<ol type="1" start="2">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l10 level1 lfo11; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Remove
+     the ‘Order_Details’ prefix from the <b style="mso-bidi-font-weight: normal;">Order_Details.ProductID</b>,
+     <b style="mso-bidi-font-weight: normal;">Order_Details.UnitPrice</b> and <b style="mso-bidi-font-weight: 
+
+normal;">Order_Details.Quantity </b>columns by double-clicking on each column header and deleting the 
+
+text.</span></li></ol>
+
+<h3 class="MsoNormal"><a name="__toc382391205"></a><span style='color: black; font-family: "Arial",sans-serif; 
+
+mso-fareast-font-family: "Times New Roman";'>Power BI Designer steps created<o:p></o:p></span></h3><span 
+
+style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><br></span>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>As 
+
+you perform query activities in Query View,
+query steps are created and listed in the <b>Query Settings</b> pane, in the <b>APPLIED
+STEPS</b> list. Each query step has a corresponding Power Query formula, also
+known as the "M" language. For more information about this formula
+language, see </span><span style='font-family: "Arial",sans-serif;'><a title="Learn about Power Query formulas" 
+
+href="https://support.office.com/en-US/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-
+
+f8aafdee2b2f"><span style='mso-fareast-font-family: "Times New Roman";'>Learn about Power BI 
+
+formulas</span></a></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-
+
+font-family: "Times New Roman";'>.<o:p></o:p></span></p>
+
+<table class="MsoNormalTable" style="mso-yfti-tbllook: 1184; mso-cellspacing: 1.5pt;" border="0" cellpadding="0">
+ <thead>
+  <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+   <td style="padding: 0.75pt;">
+   <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Task<o:p></o:p></span></p>
+   </td>
+   <td style="padding: 0.75pt;">
+   <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Query step<o:p></o:p></span></p>
+   </td>
+   <td style="padding: 0.75pt;">
+   <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Formula<o:p></o:p></span></p>
+   </td>
+  </tr>
+ </thead>
+ <tbody><tr style="mso-yfti-irow: 1;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Connect to an OData feed<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Source<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Source{[Name="Orders"]}[Data]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 2;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Expand the Order_Details table<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Expand Order_Details<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='font-family: "Arial",sans-serif;'><a title="Table.ExpandTableColumn" href="https://support.office.com/en-
+
+US/Article/TableExpandTableColumn-54903f25-75a2-4a44-a9a3-52a9d895ee98"><span style='mso-fareast-font-family: 
+
+"Times New Roman";'>Table.ExpandTableColumn</span></a></span><span style='color: rgb(54, 54, 54); font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'> <o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>
+
+(Orders, "Order_Details",
+  {"ProductID", "UnitPrice", "Quantity"},
+  {"Order_Details.ProductID", "Order_Details.UnitPrice",
+  "Order_Details.Quantity"})<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 3;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Remove other columns to only display columns
+  of interest<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>RemovedColumns<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='font-family: "Arial",sans-serif;'><a title="Table.RemoveColumns" href="https://support.office.com/en-
+
+US/Article/TableRemoveColumns-6265190e-2f58-4300-85b8-df88fc1a67d3"><span style='mso-fareast-font-family: "Times 
+
+New Roman";'>Table.RemoveColumns</span></a></span><span style='color: rgb(54, 54, 54); font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'> <o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>
+
+(#"Expand
+  Order_Details",{"OrderID", "CustomerID",
+  "EmployeeID", "RequiredDate", "ShippedDate",
+  "ShipVia", "Freight", "ShipName",
+  "ShipAddress", "ShipCity", "ShipRegion",
+  "ShipPostalCode", "ShipCountry", "Customer",
+  "Employee", "Shipper"})<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 4;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Calculate the line total for each
+  Order_Details row<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>InsertedColumns<o:p></o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='font-family: "Arial",sans-serif;'><a title="Table.AddColumn" href="https://support.office.com/en-
+
+US/Article/TableAddColumn-6c64d0a5-9654-4d15-bfb6-9cc380aaf3c0"><span style='mso-fareast-font-family: "Times New 
+
+Roman";'>Table.AddColumn</span></a></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; 
+
+mso-fareast-font-family: "Times New Roman";'> <o:p></o:p></span></p>
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>
+
+(RemovedColumns, "Custom", each
+  [Order_Details.UnitPrice] * [Order_Details.Quantity])<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 5; mso-yfti-lastrow: yes;">
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="padding: 0.75pt;">
+  <p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<h1 class="MsoNormal"><a name="_Toc405907683"></a><a name="__step_8__disable"></a><a name="__toc382391207"></a><a 
+
+name="__task_3__combine"></a><a name="__toc382391208"></a><span style="mso-bookmark: _Toc405907683;"><span 
+
+style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Task 3: 
+
+Combine the Products and Total Sales queries</span></span><b style="mso-bidi-font-weight: normal;"><span 
+
+style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'><o:p></o:p></span></b></h1><div><span style="mso-bookmark: _Toc405907683;"><span style='color: black; 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><br></span></span></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Power BI Designer does not require you to
+combine queries to report on them. Instead, you can create <b style="mso-bidi-font-weight: 
+
+normal;">Relationships</b> between datasets. These relationships can be created
+on any column that is common to your datasets. For more information see </span><span style='font-family: 
+
+"Arial",sans-serif;'><span style='mso-fareast-font-family: "Times New Roman";'><a 
+
+href="http://support.powerbi.com/knowledgebase/articles/464155">Create and manage
+relationships</a>. In this tutorial, we have Orders and Products data that share a common 'ProductID' field, so 
+
+we'll create a relationship using this. All you need to tell Power BI is the columns from each table that are 
+
+related (i.e. those that have the same values). Power BI works out the direction and cardinality of the 
+
+relationship for you. In some cases, it will even detect the relationships automatically.</span></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In 
+
+this task, you create a relationship
+between the <b>Products </b><span style="mso-bidi-font-weight: bold;">and<b>
+Total Sales</b></span> queries. <o:p></o:p></span></p>
+
+<h2 class="MsoNormal"><a name="_Toc405907684"></a><a name="__step_1__merge"></a><span style="mso-bookmark: 
+
+_Toc405907684;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Step 1: Create a relationship between Products and Total Sales</span></span><span style='color: black; 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></h2>
+
+<ol type="1" start="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l3 level1 lfo13; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Swap
+     to the Report View <o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l3 level2 lfo13; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>This
+      will load the data from your two queries<br></span><span style='color: windowtext; font-family: 
+
+"Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_33" style="width: 5in; height: 161.25pt; 
+
+visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1033"><span><img 
+
+src="https://powerbi.uservoice.com/assets/76067709/11.png"></span>&nbsp;<v:imagedata o:title="" src="Analyzing
+
+%20Sales%20Data%20Final_files/image012.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </v:imagedata></v:shape></span><span 
+
+style='font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></li>
+ </ol>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l3 level1 lfo13; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Click
+     the <b style="mso-bidi-font-weight: normal;">Manage</b> button in the <b style="mso-bidi-font-weight: 
+
+normal;">Relationships</b> group on the <span style="mso-spacerun: yes;">&nbsp;</span><b style="mso-bidi-font-
+
+weight: normal;">Home</b>
+     tab of the ribbon<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l3 level1 lfo13; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Click
+     the <b style="mso-bidi-font-weight: normal;">New… </b>button<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l3 level1 lfo13; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>In
+     the <b style="mso-bidi-font-weight: normal;">From: Table </b>drop down,
+     select <b style="mso-bidi-font-weight: normal;">Products</b><o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l3 level2 lfo13; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>The
+      <b style="mso-bidi-font-weight: normal;">Total Sales</b> table is
+      automatically added to the <b style="mso-bidi-font-weight: normal;">To:
+      Table</b> drop down<o:p></o:p></span></li>
+ </ol>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l3 level1 lfo13; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Select
+     <b style="mso-bidi-font-weight: normal;">ProductID</b> in the <b style="mso-bidi-font-weight: normal;">From: 
+
+Column</b> list box<o:p></o:p></span></li>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l3 level1 lfo13; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Select
+     <b style="mso-bidi-font-weight: normal;">ProductID</b> in the <b style="mso-bidi-font-weight: normal;">To: 
+
+Column</b> list box<br><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050931/12.png"></span><br><o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal" style="line-height: normal; margin-left: 36pt; mso-margin-top-alt: auto; mso-margin-bottom-
+
+alt: auto;"><span style='font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_36" 
+
+style="width: 468pt; height: 266.25pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" 
+
+o:spid="_x0000_i1032">
+ <v:imagedata o:title="" src="Analyzing%20Sales%20Data%20Final_files/image013.png">
+</v:imagedata></v:shape></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'><o:p></o:p></span></p>
+
+<ol type="1" start="7">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l3 level1 lfo13; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Click
+     <b>OK</b>.<br><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050936/13.png"></span><br><o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal" style="line-height: normal; margin-left: 36pt; mso-margin-top-alt: auto; mso-margin-bottom-
+
+alt: auto;"><span style='font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_37" 
+
+style="width: 468pt; height: 327pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" 
+
+o:spid="_x0000_i1031">
+ <v:imagedata o:title="" src="Analyzing%20Sales%20Data%20Final_files/image014.png">
+</v:imagedata></v:shape></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-
+
+fareast-font-family: "Times New Roman";'><o:p></o:p></span></p>
+
+<ol type="1" start="8">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l3 level1 lfo13; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Click
+     <b style="mso-bidi-font-weight: normal;">Close</b><o:p></o:p></span></li>
+</ol>
+
+<h1 class="MsoNormal"><a name="_Toc405907685"></a><a name="__step_2__expand_1"></a><a 
+
+name="__toc382391211"></a><a name="__toc382391212"></a><a name="__step_3__load"></a><span style="mso-bookmark: 
+
+_Toc405907685;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Task
+4: Build visuals using your data</span></span><b style="mso-bidi-font-weight: normal;"><span style='color: black; 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'><o:p></o:p></span></b></h1><div><span style="mso-bookmark: _Toc405907685;"><span style='color: black; 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><br></span></span></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Power BI Designer lets you create a variety of
+visualizations to gain insights from your data. You can build reports with
+multiple pages and each page can have multiple visuals. You can interact with
+your visualizations to help analyze and understand your data. For more
+information about editing reports, see </span><span style='font-family: "Arial",sans-serif;'><a title="Combine 
+
+multiple queries" href="http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report"><span 
+
+style='mso-fareast-font-family: "Times New Roman";'>Edit
+a Report</span></a></span><span style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-
+
+font-family: "Times New Roman";'>.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>In 
+
+this task, you create a report based on the
+data previously loaded. You use the Fields Pane to select the columns from which
+you create the visualizations.<o:p></o:p></span></p><h2 class="MsoNormal"><span style='color: rgb(54, 54, 54); 
+
+font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Step 1: Create charts showing Units 
+
+in Stock by Product and Total Sales by Year</span></h2>
+
+<ol type="1" start="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l12 level1 lfo17; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Drag
+     <b>ProductName </b>from the Field List to the right of the screen onto a blank space in the top left of the
+     canvas<o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l12 level2 lfo17; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Power
+      BI Designer automatically selects the <b>UnitsInStock </b>field to be plotted
+      with the Product Name<o:p></o:p></span></li>
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l12 level2 lfo17; tab-stops: list 72.0pt;"><span style='color: windowtext; 
+
+font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_40" style="width: 315pt; height: 
+
+182.25pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1029"><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050938/14.png"></span>&nbsp;<v:imagedata o:title="" src="Analyzing
+
+%20Sales%20Data%20Final_files/image016.png"></v:imagedata></v:shape></span><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></li>
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l12 level2 lfo17; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>We
+      can see there are more units on hand of the Rhonbrau Klosterbier than
+      anything else.<o:p></o:p></span></li>
+ </ol>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l12 level1 lfo17; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Drag
+     <b>OrderDate </b>to the canvas beneath the UnitsInStock by ProductName chart<o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l12 level2 lfo17; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Because
+      you selected a date field, a line chart was created automatically<o:p></o:p></span></li>
+ </ol>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l12 level1 lfo17; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Grab
+     the resize handles on the right side of the chart and drag it to take up
+     the full width of the canvas<o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l12 level2 lfo17; tab-stops: list 72.0pt;"><span style='color: windowtext; 
+
+font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_43" style="width: 468pt; height: 
+
+265.5pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1028"><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050939/15.png"></span>&nbsp; &nbsp; &nbsp; &nbsp;<v:imagedata 
+
+o:title="" src="Analyzing%20Sales%20Data%20Final_files/image017.png">
+      </v:imagedata></v:shape></span><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: 
+
+"Times New Roman";'><o:p></o:p></span></li>
+ </ol>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l12 level1 lfo17; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Drag
+     <b>ShipCountry </b>to a space on the canvas in the top right<o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l12 level2 lfo17; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Because
+      you selected a geographic field, a map was created automatically<o:p></o:p></span></li>
+ </ol>
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l12 level1 lfo17; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Expand
+     the Visualize gallery in the ribbon and choose the <b>Filled Map</b> option<o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: black; line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-
+
+alt: auto; mso-list: l12 level2 lfo17; tab-stops: list 72.0pt;"><span style='color: windowtext; font-family: 
+
+"Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_44" style="width: 78.75pt; height: 48pt; 
+
+visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" o:spid="_x0000_i1027"><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050947/16.png"></span>&nbsp;<v:imagedata o:title="" src="Analyzing
+
+%20Sales%20Data%20Final_files/image018.png"></v:imagedata></v:shape></span><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></li>
+  <li class="MsoNormal" style="color: black; line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-
+
+alt: auto; mso-list: l12 level2 lfo17; tab-stops: list 72.0pt;"><span style='color: windowtext; font-family: 
+
+"Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_45" style="width: 468pt; height: 234.75pt; 
+
+visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" 
+
+o:spid="_x0000_i1026">&nbsp;</v:shape></span><span style="font-family: Arial, sans-serif;">The
+      resulting map shows the outline of countries, shaded based on the sum of
+      LineTotals. Darker colors represent higher order totals in that country.</span></li><li class="MsoNormal" 
+
+style="color: black; line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l12 
+
+level2 lfo17; tab-stops: list 72.0pt;"><span style="font-family: Arial, sans-serif;"><span><img 
+
+src="https://powerbi.uservoice.com/assets/76050950/17.png"></span><br></span></li></ol></ol><h2 class="MsoNormal" 
+
+style="font-family: sans-serif; font-size: 22px; font-style: normal; font-variant: normal;"><span style="color: 
+
+rgb(54, 54, 54); font-family: Arial, sans-serif;">Step 2: Interact with your report visuals to analyze 
+
+further</span></h2><span style="color: rgb(54, 54, 54); font-family: Arial, sans-serif;"><br></span><div 
+
+class="MsoNormal"><span style="font-family: Arial, sans-serif;">The Power BI Designer
+lets you interact with visuals that cross-highlight and filter each other to
+uncover further trends. For more detail see <a href="http://support.powerbi.com/knowledgebase/articles/467092-
+
+about-filters-and-highlighting-in-reports">Filtering and Highlighting in Reports</a></span><br></div>
+
+<ol type="1" start="1">
+ <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-margin-
+
+bottom-alt: auto; mso-list: l2 level1 lfo21; tab-stops: list 36.0pt;"><span style='font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'>Click
+     on the light blue shape covering <b>Canad</b></span><span style='color: black; font-family: "Arial",sans-
+
+serif; mso-fareast-font-family: "Times New Roman";'><b>a</b></span><span style='font-family: "Arial",sans-serif; 
+
+mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></li>
+ <ol type="a" start="1">
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l2 level2 lfo21; tab-stops: list 72.0pt;"><span style='color: windowtext; 
+
+font-family: "Arial",sans-serif; mso-no-proof: yes;'><v:shape id="Picture_x0020_26" style="width: 468.75pt; 
+
+height: 264.75pt; visibility: visible; mso-wrap-style: square;" type="#_x0000_t75" 
+
+o:spid="_x0000_i1025"><span><img src="https://powerbi.uservoice.com/assets/76050951/18.png"></span>&nbsp; &nbsp; 
+
+&nbsp; &nbsp;<v:imagedata o:title="" src="Analyzing%20Sales%20Data%20Final_files/image020.png">
+      </v:imagedata></v:shape></span><span style='font-family: "Arial",sans-serif; mso-fareast-font-family: 
+
+"Times New Roman";'><o:p></o:p></span></li>
+  <li class="MsoNormal" style="color: rgb(54, 54, 54); line-height: normal; mso-margin-top-alt: auto; mso-
+
+margin-bottom-alt: auto; mso-list: l2 level2 lfo21; tab-stops: list 72.0pt;"><span style='font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'>Note
+      how the other visuals are filtered to show Stock and Total Orders just
+      for Canada.<o:p></o:p></span></li>
+ </ol>
+</ol>
+
+<h1 class="MsoNormal"><a name="_Toc405907688"></a><a name="__toc382391214"></a><a name="__toc382391215"></a><span 
+
+style="mso-bookmark: _Toc405907688;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-
+
+font-family: "Times New Roman";'>Complete
+Sales Analysis Report</span></span><b style="mso-bidi-font-weight: normal;"><span style='color: black; font-
+
+family: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><o:p></o:p></span></b></h1><div><span 
+
+style="mso-bookmark: _Toc405907688;"><span style='color: black; font-family: "Arial",sans-serif; mso-fareast-
+
+font-family: "Times New Roman";'><br></span></span></div>
+
+<p class="MsoNormal" style="line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>After you perform all these steps, you will
+have a Sales Report that combines data from Products.xlsx file and Northwind
+OData feed. The report shows visuals that help analyze sales information from
+different countries. You can download a completed Power BI Designer file for this tutorial <a 
+
+href="http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-
+
+23B4DA81C4DE/Analyzing_Sales_Data.pbix">here</a>.</span></p><p class="MsoNormal" style="line-height: normal; 
+
+mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style='color: rgb(54, 54, 54); font-family: 
+
+"Arial",sans-serif; mso-fareast-font-family: "Times New Roman";'><br></span></p><h3 class="MsoNormal"><span 
+
+style='color: rgb(54, 54, 54); font-family: "Arial",sans-serif; mso-fareast-font-family: "Times New 
+
+Roman";'>Where else can I get more information?</span></h3><p class="MsoNormal" style="line-height: normal; mso-
+
+margin-top-alt: auto; mso-margin-bottom-alt: auto;"><a style="text-indent: -18pt;" 
+
+href="http://go.microsoft.com/fwlink/?LinkID=521937">Read other Power BI
+Designer tutorials</a><span style="color: rgb(31, 73, 125); text-indent: -18pt;">.</span></p>
+
+<p class="MsoListParagraph" style="text-indent: -18pt; mso-list: l0 level1 lfo1;"><!--[if !supportLists]--><span 
+
+style="color: rgb(31, 73, 125); font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: 
+
+Symbol;">·<span style='line-height: normal; font-family: "Times New Roman"; font-size: 7pt; font-style: normal; 
+
+font-variant: normal; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><a 
+
+href="http://go.microsoft.com/fwlink/?LinkID=519322">Watch Power BI Designer
+videos.</a><span style="color: rgb(31, 73, 125);"><o:p></o:p></span></p>
+
+<p class="MsoListParagraph" style="text-indent: -18pt; mso-list: l0 level1 lfo1;"><!--[if !supportLists]--><span 
+
+style="color: rgb(31, 73, 125); font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: 
+
+Symbol;">·<span style='line-height: normal; font-family: "Times New Roman"; font-size: 7pt; font-style: normal; 
+
+font-variant: normal; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><a 
+
+href="http://go.microsoft.com/fwlink/?LinkID=519326">Visit the Power BI Forum.</a><span style="color: rgb(31, 73, 
+
+125);"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><a style="text-indent: -18pt;" href="http://go.microsoft.com/fwlink/?LinkID=519327">Read the 
+
+Power BI Blog.</a><span style='font-family: "Arial",sans-serif;'><o:p>﻿</o:p></span></p>
+
+<div></div>
