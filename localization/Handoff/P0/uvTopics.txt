@@ -2,7 +2,7 @@
 <topic id="live63369_test99322">Get data</topic>
 <topic id="live88767_test99325">Files in Power BI</topic>
 <topic id="live88770_test99328">Services in Power BI</topic>
-<topic id="live88773_test99331">Big data and more</topic>
+<topic id="live88773_test99331">Databases and more</topic>
 <topic id="live65158_test99334">All about dashboards</topic>
 <topic id="live65157_test99337">All about reports</topic>
 <topic id="live65160_test99340">Visualizations in reports</topic>
