@@ -1,0 +1,304 @@
+<title>Shape and Combine Data in Power BI Designer</title>
+
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG></o:AllowPNG>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><div class="MsoNormal"><font face="Calibri" size="3">With the <b style="mso-bidi-font-weight: normal;">Power BI
+Designer</b>, you can connect to many different types of data sources, then
+shape the data to meet your needs. <i style="mso-bidi-font-style: normal;">Shaping
+</i>data means transforming the data – such as renaming columns or tables,
+changing text to numbers, removing rows, setting the first row as headers, and
+so on. <i style="mso-bidi-font-style: normal;">Combining</i> data means
+connecting to two or more data sources, shaping them as needed, then consolidating<i style="mso-bidi-font-style: normal;"> </i>them into one useful query.</font></div><div><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">This document demonstrates how to shape a query using the
+Power BI Designer, highlighting some of the most common tasks. The query used
+here is described in more detail, including how to create the query from
+scratch, in <a href="https://powerbi.uservoice.com/knowledgebase/articles/471664">Getting
+Started with Power BI Designer</a>. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">It’s useful to know that the <b style="mso-bidi-font-weight: normal;">Query</b> view in Power BI Designer makes ample use of right-click
+menus, as well as the ribbon. Most of what you can select in the <b style="mso-bidi-font-weight: normal;">Transform</b> ribbon is also available by
+right-clicking an item (such as a column) and choosing from the menu that
+appears.</font></p><font face="Times New Roman" size="3">
+
+</font><h2 style="margin: 2pt 0in 0pt;"><font color="#2e74b5" face="Calibri Light" size="4">Shape Data</font></h2><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">When you shape data in the Query view, you’re providing
+step-by-step instructions (that Query carries out for you) to adjust the data
+as Query loads and presents it. The original data source is not affected; only
+this particular view of the data is adjusted, or <i style="mso-bidi-font-style: normal;">shaped</i>. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The steps you specify (such as rename a table, transform a
+data type, or delete columns) are recorded by Query, and each time this query
+connects to the data source those steps are carried out so that the data is
+always shaped the way you specify. This process occurs whenever you use the
+query in the Power BI Designer, or for anyone who uses your shared query, such
+as on the <b style="mso-bidi-font-weight: normal;">Power BI Service</b>. Those
+steps are captured, sequentially, in the <b style="mso-bidi-font-weight: normal;">Query
+Settings</b> pane under <b style="mso-bidi-font-weight: normal;">Applied Steps</b>.
+</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The following image shows the <b style="mso-bidi-font-weight: normal;">Query Settings</b> pane for a query that has been shaped – we’ll go
+through each of those steps in the next few paragraphs.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79248069/ShapeCombine_QuerySettingsFinished.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Using the retirement data from&nbsp;</font><a style="font-family: Calibri; font-size: medium; font-style: normal; font-variant: normal;" href="https://powerbi.uservoice.com/knowledgebase/articles/471664">Getting Started with Power BI Designer</a><font face="Calibri" size="3">, which we found by
+connecting to a Web data source, let’s shape that data to fit our needs. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">For starters, one column's scores were not automatically transformed from text to numbers when Query loaded the table, and we need them to be numbers. No problem – just
+right-click the column header, and select <b style="mso-bidi-font-weight: normal;">Change
+Type &gt; Whole Number</b> to change them. To choose more than one column,
+first select a column then hold down <b style="mso-bidi-font-weight: normal;">SHIFT</b>,
+select additional adjacent columns, and then right-click a column header to change all
+selected columns. You can also use the <b>CTRL </b>key to choose non-adjacent columns.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span></span><span><img src="https://powerbi.uservoice.com/assets/79248405/ShapeCombine_ChangeType.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">You can also <i style="mso-bidi-font-style: normal;">transform</i>
+those columns from text to header from the <b style="mso-bidi-font-weight: normal;">Transform</b>
+ribbon. Here’s the <b style="mso-bidi-font-weight: normal;">Transform</b> ribbon,
+with an arrow pointing toward the <b>Data Type</b> button, which lets you transform
+the current data type to another.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79243365/QueryOverview_TransformRibbonArrow.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Note that in <b style="mso-bidi-font-weight: normal;">Query
+Settings</b>, the <b style="mso-bidi-font-weight: normal;">Applied Steps</b>
+reflect any shaping steps applied to the data. If I want to remove any step from the
+shaping process, I simply select the <b style="mso-bidi-font-weight: normal;">X</b> to the left of the step. In the following image, <b>Applied Steps </b>reflects the steps so far: connecting to the website (<b>Source</b>); selecting the table (<b>Navigation</b>); and while loading the table, Query automatically changed text-based number columns from <i>Text </i>to <i>Whole Number </i>(<b>Changed Type</b>). One column of rankings was not automatically changed to a number-based type, and we'll find out why in the next few paragraphs.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span></span><span><img src="https://powerbi.uservoice.com/assets/79248513/ShapeCombine_AppliedStepsEarly.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Before we can work with this query, we need to make a few changes to get its data where we
+want it:</font></p><font face="Times New Roman" size="3">
+
+</font><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l5 level1 lfo1;"><i style="mso-bidi-font-style: normal;">Remove the
+first column</i> – we don’t need it, it just includes redundant rows that say
+“Check out how your state ranks for retirement” which is an artifact of this
+data source being a Web-based table<br style="mso-special-character: line-break;">
+<br style="mso-special-character: line-break;">
+</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 0pt; mso-list: l5 level1 lfo1;'><i style="mso-bidi-font-style: normal;">Fix a few
+Errors</i> – one of the columns, <b>Health care quality</b>,&nbsp;contains a few ties in states' rankings, which was noted on the website by having the text<i> (tie)</i> after their numbers. That works well on the website, but it reqires that we transform the column&nbsp;from text to data manually. It's&nbsp;easy to fix&nbsp;this using the Power BI Designer, and doing so demonstrates a cool feature of <b>Applied Steps </b>in Query<br style="mso-special-character: line-break;">
+<br style="mso-special-character: line-break;">
+</p></li><li style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal;'><p style='color: rgb(0, 0, 0); font-family: "Calibri",sans-serif; font-size: 11pt; font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l5 level1 lfo1;'><i style="mso-bidi-font-style: normal;">Change the
+Table Name</i> – that <b style="mso-bidi-font-weight: normal;">Table 0</b> is not
+a useful descriptor, but changing it simple</p></li></ul><font face="Times New Roman" size="3">
+
+
+
+
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">To remove the first column, simply select the column and
+choose the <b style="mso-bidi-font-weight: normal;">Home</b> tab from the ribbon,
+then <b style="mso-bidi-font-weight: normal;">Remove Columns</b> as shown in the
+following figure. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79243845/ShapeCombine_RemoveColumnsRetirement.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Next we need to address the text column, and transform it into numbers. At first it seems straightforward, that we can just change the type of the <b>Health care quality</b> column from text to number (such as <i>Whole Number</i>, or <i>Decimal Number</i>). But when we change the type from Text to Whole Number, then look through the values in that column, we find that Query reports a few errors.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79243887/ShapeCombine_Error.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">There are a few ways to get more information about each error. You can select the cell
+(without clicking on the word <b>Error</b>), or click the word <b style="mso-bidi-font-weight: normal;">Error</b> directly. If you select the cell <i style="mso-bidi-font-style: normal;">without</i> clicking directly on the word <b>Error</b>, Query displays the error information on the bottom of the
+window.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79243929/ShapeCombine_ErrorInfo.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">If you click the word <i style="mso-bidi-font-style: normal;">Error</i>
+directly, Query creates an <b style="mso-bidi-font-weight: normal;">Applied Step</b>
+in the <b style="mso-bidi-font-weight: normal;">Query Settings</b> pane and
+displays information about the error.</font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79243959/ShapeCombine_ErrorSelect.png"></span><br></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">To get back to the Query, you have to remove that step by
+selecting the <b style="mso-bidi-font-weight: normal;">X</b> next to it. </font></p><font face="Times New Roman" size="3">
+
+</font><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">When we select the most recent <b>Applied Step</b>, we see the error just described, as shown in the following image.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span><img src="https://powerbi.uservoice.com/assets/79250862/ShapeCombine_QueryStep1.png"></span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Since Query records steps sequentially, we can select the step prior to changing the type, in <b>Applied Steps</b>, and see what the value of that cell is prior to the transformation, as shown in the following image. </font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span><img src="https://powerbi.uservoice.com/assets/79250997/ShapeCombine_QueryStep2.png"></span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Okay, now we can fix those values, and <i>then </i>change the type. Since Query records the steps sequentially, yet independently of each other, you can move each <b>Applied Step</b> up or down in the sequence. Just right-click any step, and Query provides a menu that lets you do the following: <b>Move Up</b>, <b>Move Down</b>, <b>Delete</b>, <b>Delete Until End </b>(remove the current step, and all subsequent steps too), or <b>Rename</b>. </font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span><img src="https://powerbi.uservoice.com/assets/79296330/ShapeCombine_QueryStepReorder.png"></span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span>In addition, you can select an <b>Applied Step </b>anywhere in the list, and continue shaping the data at that point in the sequence. Query will automatically insert a new step directly after the currently selected <b>Applied Step</b>. Let's give that a try.</span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span>First, we select the <b>Applied Step</b> prior to changing the type of the <b>Health care quality</b> column. Then we replace the values that have the text "(tie)" in the cell so that only the number remains. Right-click the cell that contains "35 (tie)" and select <i>Replace Values... </i>from the menu that appears. Note which <b>Applied Step </b>is currently selected (the step prior to changing the type).</span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span><span><img src="https://powerbi.uservoice.com/assets/79296918/ShapeCombine_ReplaceValues.png"></span></span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span>Since we're inserting a step, Query warns us about the danger of doing so - subsequent steps could cause the query to break. We need to be careful, and thoughtful! Since this is a tutorial, and we're highlighting a really cool feature of Query to demonstrate&nbsp;how you can create, delete, insert, and reorder steps, we'll push ahead and select <b>Insert</b>. </span></font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span><span><img src="https://powerbi.uservoice.com/assets/79297200/ShapeCombine_InsertStep.png"></span></span></font></p></div><font face="Calibri" size="3"><p style="margin: 0in 0in 8pt;">There are three ties, so we replace the values for each. When you create a new Applied Step, Query names it based on the action - in this case, Replaced Value. When you have more than one step with the same name in your query, Query adds a number (in sequence) to each subsequent <b>Applied Step</b> to differentiate between them. </p><p style="margin: 0in 0in 8pt;">The following screen shows the three Replaced Value steps in Query Settings, but it also shows something else that's even more interesting: since we removed each instance of the text "(tie)" from the Health care quality column, the <b>Changed Type </b>step now completes <i>with no errors</i>.</p><p style="margin: 0in 0in 8pt;"><span><img src="https://powerbi.uservoice.com/assets/79297752/ShapeCombine_ReplacedValuesOk.png"></span><br></p></font><div><font face="Calibri" size="3"></font><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt 0.5in;"><font face="Calibri"><font size="3"><b style="mso-bidi-font-weight: normal;">Note:</b> You can also <b style="mso-bidi-font-weight: normal;">Remove
+Errors</b> (using the ribbon or the right-click menu), which removes any rows
+that have errors. In this case it would’ve removed all the states that had "<i>(tie)</i>" from our data, and we didn’t want to do that – we like
+all the states, and want to keep them in the table. </font></font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Okay that was a little involved, but it was&nbsp;a good example of how powerful and&nbsp;versatile&nbsp;Query can be.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Lastly, we want to change the name of that table to
+something descriptive. When we get to creating reports, it’s especially useful
+to have descriptive table names, especially when we connect to multiple data
+sources, and they’re all listed in the Fields pane of the Report view. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Changing the table name is easy: in the <b>Query Settings </b>pane,
+under Properties, simply type in the new name of the table, as shown in the
+following image, and hit Enter. Let’s call this table <i style="mso-bidi-font-style: normal;">RetirementStats</i>. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79297929/ShapeCombine_RenameTable.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Okay, we’ve shaped that data to the extent we need to. Next
+let’s connect to another data source, and combine data.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h2 style="margin: 2pt 0in 0pt;"><font color="#2e74b5" face="Calibri Light" size="4">Combine Data</font></h2><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">That data about various states is interesting, and will be
+useful for building additional analysis efforts and queries. But there’s one
+problem: most data out there uses a two-letter abbreviation for state codes,
+not the full name of the state. We need some way to associate state names with
+their abbreviations. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">We’re in luck: there’s another public data source that does
+just that, but it needs a fair amount of shaping before we can connect it to
+our retirement table. Here’s the Web resource for state abbreviations:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><a href="http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations"><font color="#0563c1" face="Calibri" size="3">http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations</font></a></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">From the <b style="mso-bidi-font-weight: normal;">Home</b>
+ribbon in Query, we select <b style="mso-bidi-font-weight: normal;">Get Data &gt;
+Web</b> and type the address, select OK, and the Navigator shows what it found
+on that Web page.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">&nbsp;<span><img src="https://powerbi.uservoice.com/assets/79298184/Designer_GSG_USStateAbbreviationsNavigator.png"></span><span></span></font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">We select <b style="mso-bidi-font-weight: normal;">Table[edit]</b>
+because that includes the data we want, but it’s going to take quite a bit of
+shaping to pare that table’s data down to what we want. We select Edit Query,
+then take the following steps:</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l3 level1 lfo2;">Remove the top two rows – they’re a result of
+the way that Web page’s table was created, and we don’t need them. From the <b style="mso-bidi-font-weight: normal;">Home</b> ribbon, select <b style="mso-bidi-font-weight: normal;">Remove Rows &gt; Remove Top Rows</b>.</p></li></ul><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt 0.25in;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298214/ShapeCombine_RemoveTopRows.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The <b style="mso-bidi-font-weight: normal;">Remove Top Rows</b>
+window appears, letting you specify how many rows you want to remove.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l4 level1 lfo3;">Remove the bottom 26 rows – they’re all the
+territories, which we don’t need to include. From the <b style="mso-bidi-font-weight: normal;">Home</b> ribbon, select <b style="mso-bidi-font-weight: normal;">Remove
+Rows &gt; Remove Bottom Rows</b>.</p></li></ul><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt 0.25in;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298286/ShapeCombine_RemoveBottomRows.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l6 level1 lfo4;">Remove a few unneeded columns – we only need the
+mapping of state to its official two-letter abbreviation, so we can remove the
+following columns: <b style="mso-bidi-font-weight: normal;">Column2</b>, <b style="mso-bidi-font-weight: normal;">Column3</b>, and then <b style="mso-bidi-font-weight: normal;">Column5</b> through <b style="mso-bidi-font-weight: normal;">Column10</b>.
+First select Column2, then hold down the <b style="mso-bidi-font-weight: normal;">CTRL</b>
+key and select the other columns to be removed (this lets you select multiple,
+non-contiguous columns). From the Home tab on the ribbon, select <b style="mso-bidi-font-weight: normal;">Remove Columns &gt; Remove Columns</b>.</p></li></ul><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt 0.25in;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298355/ShapeCombine_RemoveColumns.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l1 level1 lfo5;">Use the first row as headers – since we removed
+the top three rows, the current top row is the header we want. You can select <b style="mso-bidi-font-weight: normal;">Use First Row As Headers</b> from the <b style="mso-bidi-font-weight: normal;">Home</b> tab or the <b style="mso-bidi-font-weight: normal;">Transform</b> tab in the ribbon.</p></li></ul><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt 0.25in;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298364/ShapeCombine_UseFirstRowAsHeaders.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt 0.25in;"><font face="Calibri"><font size="3"><b style="mso-bidi-font-weight: normal;">Note:</b> This is a good time to point out that the <i style="mso-bidi-font-style: normal;">sequence</i> of applied steps in Query is
+important, and can affect how the data is shaped. It’s also important to
+consider how one step may impact another subsequent step; if you remove a step
+from the Applied Steps, subsequent steps may not behave as originally intended,
+because of the impact of the query’s sequence of steps.</font></font></p><div><font face="Times New Roman" size="3">
+
+</font></div><ul style="list-style-type: disc; direction: ltr;"><li style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal;"><p style="color: rgb(0, 0, 0); font-style: normal; font-weight: normal; margin-top: 0in; margin-bottom: 8pt; mso-list: l2 level1 lfo6;">Rename the columns, and the table itself – as
+usual, there are a couple ways to rename a column; first select the column,
+then either select <b style="mso-bidi-font-weight: normal;">Rename</b> from the <b style="mso-bidi-font-weight: normal;">Transform</b> tab on the ribbon, or
+right-click and select <b style="mso-bidi-font-weight: normal;">Rename…</b> from
+the menu that appears. The following image has arrows pointing to both options;
+you only need to choose one.</p></li></ul><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt 0.25in;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298400/ShapeCombine_Rename.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Let’s rename them to <i style="mso-bidi-font-style: normal;">State
+Name</i> and <i style="mso-bidi-font-style: normal;">State Code</i>. To rename
+the table, just type the name into the <b style="mso-bidi-font-weight: normal;">Name</b>
+box in the <b style="mso-bidi-font-weight: normal;">Query Settings</b> pane.
+Let’s call this table <i style="mso-bidi-font-style: normal;">StateCodes</i>.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Now that we’ve shaped the StateCodes table the way we want,
+let’s combine these two tables, or queries, into one; since the tables we now
+have are a result of the queries we applied to the data, they’re often referred
+to as <i style="mso-bidi-font-style: normal;">queries</i>. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">There are two primary ways of combining queries – <i style="mso-bidi-font-style: normal;">merging</i> and <i style="mso-bidi-font-style: normal;">appending</i>. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">When you have one or more columns that you’d like to add to
+another query, you <b style="mso-bidi-font-weight: normal;">merge</b> the
+queries. When you have additional rows of data that you’d like to add to an
+existing query, you <b style="mso-bidi-font-weight: normal;">append</b> the
+query. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">In this case we want to merge queries. To get started, we
+select the query <i style="mso-bidi-font-style: normal;">into which</i> we want
+the other query to merge, then select <b style="mso-bidi-font-weight: normal;">Merge
+Queries</b> from the <b style="mso-bidi-font-weight: normal;">Home</b> tab on the
+ribbon.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><span></span><span></span><span><img src="https://powerbi.uservoice.com/assets/79298463/ShapeCombine_MergeQueries.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">The <b style="mso-bidi-font-weight: normal;">Merge</b> window
+appears, prompting us to select which table we’d like merged into the selected
+table, and then, the matching columns to use for the merge. Select State from
+the <i style="mso-bidi-font-style: normal;">RetirementStats</i> table (query),
+then select the <i style="mso-bidi-font-style: normal;">StateCodes</i> query
+(easy in this case, since there’s only one other query – when you connect to
+many data sources, there are many queries to choose from). When we select the
+correct matching columns – <b style="mso-bidi-font-weight: normal;">State</b>
+from <i style="mso-bidi-font-style: normal;">RetirementStats</i>, and <b style="mso-bidi-font-weight: normal;">State Name</b> from <i style="mso-bidi-font-style: normal;">StateCodes</i> – the <b style="mso-bidi-font-weight: normal;">Merge</b>
+window looks like the following, and the <b style="mso-bidi-font-weight: normal;">OK</b>
+button is enabled.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298472/ShapeCombine_Merge.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">A <b style="mso-bidi-font-weight: normal;">NewColumn</b> is
+created at the end of the query, which is the contents of the table (query)
+that was merged with the existing query. All columns from the merged query are
+condensed into the <b style="mso-bidi-font-weight: normal;">NewColumn</b>, but
+you can select to <b style="mso-bidi-font-weight: normal;">Expand</b> the table,
+and include whichever columns you want. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298496/ShapeCombine_MergeNewColumn.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">To Expand the merged table, and select which columns to
+include, select the expand icon (<span style="mso-no-proof: yes;"><img width="15" height="15" alt="Expand" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADZmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjk1MjE3MDUwRkRCM0UxMTFBNzYyQTc5QTgxNjMwMDJDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlEQ0JDNTM0QzU0QzExRTE5MERBQzFBRjYwQkYxREMwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlEQ0JDNTMzQzU0QzExRTE5MERBQzFBRjYwQkYxREMwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjVGOEQ2OEM0Q0M1RTExMTlFRjNFMDYxRTRGMzc0NDEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTUyMTcwNTBGREIzRTExMUE3NjJBNzlBODE2MzAwMkMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6huPKdAAAAW0lEQVQ4T2P8DwQMZAImMvWBtQ0izS3tnVh9gk0cxdm4NMJMQ5dnhIU2No01leUMuMRRAgykEAaQ2SAxXHIozkbXhO55dHmMqMJlADZxiuIZHmDkpDSKbB44zQAyESPAkNbJ3gAAAABJRU5ErkJggg==" border="0" v:shapes="Picture_x0020_41"></span>). The <b style="mso-bidi-font-weight: normal;">Expand</b> window appears.</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298508/ShapeCombine_MergeExpand.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">In this case, we only want the <b style="mso-bidi-font-weight: normal;">State Code</b> column, so we select only that column and then select <b style="mso-bidi-font-weight: normal;">OK</b>. We clear the checkbox from Use
+original column name as prefix because we don’t need or want that; if we leave
+that selected, the merged column would be named <b style="mso-bidi-font-weight: normal;">NewColumn.State Code</b> (the original column name, or <b style="mso-bidi-font-weight: normal;">NewColumn</b>, then a dot, then the name of
+the column being brought into the query).</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt 0.5in;"><font face="Calibri"><font size="3"><b style="mso-bidi-font-weight: normal;">Note:</b> Want to play around with how to bring in that <b style="mso-bidi-font-weight: normal;">NewColumn</b> table? You can experiment a
+bit, and if you don’t like the results, just delete that step from the <b style="mso-bidi-font-weight: normal;">Applied Steps</b> list in the <b style="mso-bidi-font-weight: normal;">Query Settings</b> pane; your query returns
+to the state prior to applying that <b style="mso-bidi-font-weight: normal;">Expand</b>
+step. It’s like a free do-over, which you can do as many times as you like
+until the expand process looks the way you want it.</font></font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">We now have a single query (table) that combined two data
+sources, each of which has been shaped to meet our needs. This query can serve
+as a basis for lots of additional, interesting data connections – such as
+housing cost statistics, demographics, or job opportunities in any state. </font></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">&nbsp;</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><h1 style="margin: 12pt 0in 0pt;"><font color="#2e74b5" face="Calibri Light" size="5">More Information</font></h1><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">﻿</font><span style="line-height: 1.4em;">There are all sorts of things you can do with the Power BI
+Designer. For more information on its capabilities, check out the following
+resources:</span></p><p class="MsoNormal"><o:p></o:p></p><div>
+
+</div><ul><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471664">Getting
+Started with Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471646">Query
+Overview with Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471643">Data Sources
+in Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471635">Connect to
+Data in Power BI Designer</a></li><li><a href="https://powerbi.uservoice.com/knowledgebase/articles/471648">Common Query
+Tasks in the Power BI Designer</a><span style="line-height: 1.4em;">&nbsp;&nbsp;</span></li></ul><p class="MsoNormal"><o:p></o:p></p><div>
+
+</div><p class="MsoNormal">Want to give us feedback? Great – use the <b>Send Feedback</b> menu item in the Power BI
+Designer. We look forward to hearing from you!<o:p></o:p></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><span></span><span><img src="https://powerbi.uservoice.com/assets/79298520/SendFeedback.png"></span><br></p><div><font face="Times New Roman" size="3">
+
+</font></div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">&nbsp;</font></p><div><font face="Times New Roman" size="3">
+
+</font></div><div></div>
