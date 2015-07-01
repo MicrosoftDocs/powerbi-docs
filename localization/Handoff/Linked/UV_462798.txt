@@ -1,5 +1,5 @@
-	<title>Zendesk content pack for Power BI</title>
-	
+Zendesk content pack for Power BI
+
 	To analyze your Zendesk data in Power BI, you must connect to Zendesk using your Zendesk <b>admin </b>account
  credentials so that Power BI will be able to import&nbsp; your data.&nbsp; You will get a Power BI
  dashboard and a set of Power BI reports that provide insights about your

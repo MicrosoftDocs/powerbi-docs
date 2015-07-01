@@ -1,5 +1,5 @@
-	<title>Configure a Power BI Analysis Services Connector</title>	
-	
+Configure a Power BI Analysis Services Connector
+
 	<h2><span style='line-height: 115%; font-family: "Calibri",sans-serif; font-size: 18pt; mso-ansi-language: EN-US; mso-fareast-font-family: SimSun; mso-bidi-font-family: Arial; mso-fareast-language: ZH-CN; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-bidi-language: AR-SA;'>
 <a href="http://www.microsoft.com/en-us/download/details.aspx?id=45333">
 <b>Download the&nbsp;Analysis Services&nbsp;Connector now</b></a></span></h2><p>

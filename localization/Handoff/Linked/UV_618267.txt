@@ -1,5 +1,5 @@
-	<title>MailChimp content pack for Power BI</title>
-	
+MailChimp content pack for Power BI
+
 	<div><font face="Calibri"><span style='color: black; font-family: "Calibri",sans-serif; font-size: 11pt; mso-ansi-language: EN-US; mso-fareast-font-family: Calibri; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-bidi-language: AR-SA;'>The Power BI content
 pack pulls data from your MailChimp account and generates a dashboard, a set of
 reports and a dataset to allow you to explore your data. Use MailChimp’s

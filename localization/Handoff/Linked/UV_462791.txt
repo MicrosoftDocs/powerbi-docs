@@ -1,5 +1,5 @@
-	<title>Microsoft Dynamics CRM content pack for Power BI</title>	
-	
+Microsoft Dynamics CRM content pack for Power BI
+
 	<span style="line-height: 1.4em; font-family: Calibri; font-size: 11pt;">The Microsoft
 Dynamics CRM content pack for Power BI allows you to easily access and analyze
 your data. The&nbsp;</span><span style="line-height: 20.53px; font-family: Calibri; font-size: 14.66px; font-style: normal; font-variant: normal;">content pack&nbsp;</span><span style="line-height: 1.4em; font-family: Calibri; font-size: 11pt;">uses the OData feed to create a descriptive model,

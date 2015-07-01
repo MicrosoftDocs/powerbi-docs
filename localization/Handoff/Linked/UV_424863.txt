@@ -1,5 +1,5 @@
-	<title>Salesforce content pack for Power BI</title>	
-	
+Salesforce content pack for Power BI
+
 	<p>
 
 With Power BI,&nbsp;you can easily connect to your

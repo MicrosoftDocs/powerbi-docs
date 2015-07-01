@@ -1,5 +1,5 @@
-	<title>Data Sources in Power BI Designer</title>
-	
+Data Sources in Power BI Designer
+
 	<div class="MsoNormal"><font face="Calibri" size="3">The Power BI Designer lets you connect to data from many
 different sources. A full list of available data sources is at the bottom of
 this page.</font><font face="Times New Roman" size="3">

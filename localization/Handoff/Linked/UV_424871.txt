@@ -1,5 +1,5 @@
-	<title>Excel data in Power BI</title>
-	
+Excel data in Power BI
+
 	<p>You can use any XLSX Excel workbook&nbsp;- Excel 2007, 2010, and 2013 - as a dataset for your Power BI dashboards and reports. <a href="https://support.powerbi.com/knowledgebase/articles/597003">Get your Excel data into Power BI</a>.</p><p><span style="line-height: 1.4em;">&nbsp;For the best results, your Excel workbook data:</span><br></p>
 <ul>
 <li>is in table format. (

@@ -1,5 +1,5 @@
-	<title>Azure SQL Database Auditing content pack for Power BI</title>
-	
+Azure SQL Database Auditing content pack for Power BI
+
 	<div><font face="Times New Roman" size="3">
 
 </font><p style="margin: 0in 0in 0pt;"><span lang="EN" style='font-family: "Calibri",sans-serif; mso-ansi-language: EN;'><font size="3">The Power BI content pack for Azure&nbsp;</font><a href="http://azure.microsoft.com/en-us/documentation/articles/sql-database-auditing-get-started/"><font color="#0000ff" size="3">SQL
