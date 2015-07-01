@@ -1,5 +1,5 @@
-	<title>Share (and unshare) a dashboard from Power BI</title>	
-	
+Share (and unshare) a dashboard from Power BI
+
 	<p><span style="line-height: 1.4em;">You can share your dashboards with people in your organization.&nbsp;</span><span style="line-height: 1.4em;">If they haven't signed up for <a href="http://powerbi.com">Power BI</a>, they'll need to&nbsp;do so to see your dashboard.</span></p><ol><li>&nbsp;Open the dashboard to share and click <b>Share Dashboard</b>.<br><br><span><img src="https://powerbi.uservoice.com/assets/82600012/sharedash.png"></span><span><br><br></span></li><li><span><span>To share with coworkers, click <b>In﻿vite </b>and type the coworkers' email addresses in the top box and, optionally,&nbsp;modify the message. <br><br></span></span></li><li><span><span>To allow your coworkers to reshare your dashboard with others, check <b>Allow recipients to share your dashboard </b>(the checkbox is in the lower-right corner).&nbsp;<br><br><span><img src="https://powerbi.uservoice.com/assets/79790010/PBI_ShareInvite.png"></span><br><br></span></span></li><li>Click <b>Share.</b></li><p></p><p>Your coworkers will&nbsp;receive an email invitation with a link to the shared dashboard. Clicking the link adds the dashboard to their Power BI. If they haven't yet signed up for Power BI, the email includes instructions to do so.<br></p>
 
 <br><li>To see who the dashboard is shared with, click <b>Shared With</b>.

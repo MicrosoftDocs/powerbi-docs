@@ -1,5 +1,5 @@
-	<title>appFigures content pack for Power BI</title>
-	
+appFigures content pack for Power BI
+
 	<div><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Tracking important statistics about your apps is easy with
 Power BI and the appFigures content pack. Power BI retrieves your data, including app sales, downloads, and ad statistics, then builds a default dashboard and related reports based on that data.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3">Connect to the <a href="https://app.powerbi.com/getdata/services/appfigures">appFigures content pack</a> for Power BI.</font></p><p style="margin: 0in 0in 8pt;"><font face="Calibri" size="3"><span><img width="1049" height="898" style="width: 558px; height: 470px;" src="https://powerbi.uservoice.com/assets/81504852/appFiguresDoc_01.png"></span></font></p><p style="margin: 0in 0in 8pt;"><br></p><font face="Calibri" size="3"><p style="margin: 0in 0in 8pt;">After you have created the connection, you can explore your
 data and customize the dashboard to meet your needs. Data is&nbsp;<span style="line-height: 22.39px; font-family: Calibri; font-size: medium; font-style: normal; font-variant: normal;">automatically</span><span style="line-height: 22.39px; font-family: Calibri; font-size: medium; font-style: normal; font-variant: normal;">&nbsp;</span><span style="line-height: 1.4em;">refreshed every day.</span></p></font><font face="Calibri" size="3"><p style="margin: 0in 0in 8pt;"><br></p><strong style='font-family: "Times New Roman";'>

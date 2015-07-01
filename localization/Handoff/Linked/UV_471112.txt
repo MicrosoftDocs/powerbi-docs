@@ -1,5 +1,5 @@
-	<title>Sample datasets for Power BI</title>	
-	
+Sample datasets for Power BI
+
 	<p>Want to try Power BI with sample data?&nbsp;&nbsp;Use one of our sample content packs or datasets to learn how Power BI keeps you in the know and focus on what matters to run your business.</p>
 
 <h2>Industry sample datasets</h2><br>These samples are part of a series that illustrate how you can use Power BI with business-oriented data, reports, and dashboards.&nbsp; The samples are real data from obviEnce (<a href="http://www.obvience.com">www.obvience.com</a>) that has been anonymized.

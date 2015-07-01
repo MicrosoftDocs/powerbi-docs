@@ -1,5 +1,5 @@
-	<title>Marketo content pack for Power BI</title>	
-	
+Marketo content pack for Power BI
+
 	<div>﻿<span style="line-height: 1.4em; font-family: Calibri; font-size: 11pt;">The Power BI
 content pack for Marketo allows you to gain insights into your Marketo account
 with data around Leads and their activities.

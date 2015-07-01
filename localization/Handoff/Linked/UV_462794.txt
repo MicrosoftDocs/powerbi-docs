@@ -1,5 +1,5 @@
-	<title>GitHub content pack for Power BI</title>	
-	
+GitHub content pack for Power BI
+
 	<p style="margin: 0in; font-family: Calibri; font-size: 11pt;">The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also
 known as repo) with data around contributions, issues, pull requests and active
 users.</p><p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><br></p><p style="margin: 0in; font-family: Calibri; font-size: 11pt;">Connect to the <a href="https://app.powerbi.com/getdata/services/github">GitHub content pack </a>for Power BI.</p>

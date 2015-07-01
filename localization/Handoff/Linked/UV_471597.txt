@@ -1,4 +1,6 @@
-<title>Tutorial: Analyzing sales data from Excel and an OData feed</title>	<div 
+Tutorial: Analyzing sales data from Excel and an OData feed
+
+<div 
 
 class="MsoNormal"></div>
 
