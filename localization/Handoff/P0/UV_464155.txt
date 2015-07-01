@@ -1,5 +1,5 @@
-	<title>Create and manage relationships in Power BI Designer</title>
-	
+Create and manage relationships in Power BI Designer
+
 	<div class="MsoNormal"><font face="Calibri"><font size="3"><span style='line-height: 115%; font-family: "Calibri",sans-serif; font-size: 11pt; mso-ansi-language: EN-US; mso-fareast-font-family: SimSun; mso-bidi-font-family: Arial; mso-fareast-language: ZH-CN; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-bidi-language: AR-SA;'>When you import multiple
 tables, chances are you’re going to do some analysis using data from all those
 tables. Relationships between those tables are necessary in order to accurately

@@ -1,5 +1,5 @@
-	<title>Upload Power BI Designer files</title>
-	
+Upload Power BI Designer files
+
 	<!--[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG></o:AllowPNG>

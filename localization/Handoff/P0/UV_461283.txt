@@ -1,6 +1,5 @@
-	<title>Report View in Power BI Designer</title>
+Report View in Power BI Designer
 
-	
 	<div class="MsoNormal"><font face="Calibri" size="3">If you’ve been working with Power BI, you know how easy it
 is to create reports providing dynamic perspectives and insights into your
 data. Power BI also has more advanced features in the Power BI Designer. With the designer, you can create advanced queries, mashup data from
