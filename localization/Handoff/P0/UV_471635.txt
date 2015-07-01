@@ -1,5 +1,5 @@
-	<title>Connect to Data in Power BI Designer</title>
-	
+Connect to Data in Power BI Designer
+
 	<div class="MsoNormal"><font face="Calibri" size="3">The Power BI Designer lets you easily connect to the ever
 expanding world of data. If you don’t have the Power BI Designer, you can
 download and install it from <b style="mso-bidi-font-weight: normal;">here</b>.
