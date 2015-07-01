@@ -1,5 +1,5 @@
-	<title>Query Overview in Power BI Designer</title>
-	
+Query Overview in Power BI Designer
+
 	<!--[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG></o:AllowPNG>

@@ -1,5 +1,5 @@
-	<title>Download the Power BI samples (Excel workbooks)</title>	
-	
+Download the Power BI samples (Excel workbooks)
+
 	<h2>
 Important information</h2><br>
 

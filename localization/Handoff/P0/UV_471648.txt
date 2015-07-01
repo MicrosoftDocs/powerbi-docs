@@ -1,5 +1,5 @@
-	<title>Common Query Tasks in Power BI Designer</title>
-	
+Common Query Tasks in Power BI Designer
+
 	<div class="MsoNormal"></div>
 
 <font face="Times New Roman" size="3">
