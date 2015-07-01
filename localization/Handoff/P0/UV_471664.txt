@@ -1,5 +1,5 @@
-	<title>Getting Started with Power BI Designer</title>
-	
+Getting Started with Power BI Designer
+
 	<!--[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG></o:AllowPNG>

@@ -1,5 +1,5 @@
-	<title>Tutorial: Create your own measures in Power BI Designer</title>
-	
+Tutorial: Create your own measures in Power BI Designer
+
 	<div><font face="Times New Roman" size="3">
 
 </font><font face="Times New Roman" size="3">

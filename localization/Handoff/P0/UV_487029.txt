@@ -1,5 +1,5 @@
-	<title>Power BI - basic concepts</title>
-	
+Power BI - basic concepts
+
 	<div>When you first open Power BI, you'll see:</div><ol><li>navigation pane</li><li>dashboard with tiles</li><li>Q&amp;A question box</li><li>help and feedback buttons</li><li>dashboard title</li><li>Power BI Home button</li><li>Power BI version<br></li></ol><p>
 <br></p><p><span><img src="https://powerbi.uservoice.com/assets/82599493/completeNew.png"></span><br>
 </p><p><br><a href="#dig">We'll dig into these later</a>, but first let's review some Power BI concepts.</p><h1>Power BI concepts</h1>

@@ -1,5 +1,5 @@
-	<title>Measures in Power BI Designer</title>
-	
+Measures in Power BI Designer
+
 	<font face="Times New Roman" size="3">
 
 </font><p style="margin: 6pt 0in;"><span style="color: black; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;"><font face="Calibri" size="3">Power BI Designer helps you create

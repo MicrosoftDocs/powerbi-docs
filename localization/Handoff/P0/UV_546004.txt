@@ -1,5 +1,5 @@
-	<title>Power BI Analysis Services Connector in-depth</title>
-	
+Power BI Analysis Services Connector in-depth
+
 	<div><font face="Times New Roman" size="3">
 
 </font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">With Power BI, users in your organization can now

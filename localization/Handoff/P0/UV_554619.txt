@@ -1,5 +1,5 @@
-	<title>QuickStart: Learn DAX basics in Power BI Designer</title>
-	
+QuickStart: Learn DAX basics in Power BI Designer
+
 	<div><font face="Times New Roman" size="3">
 
 </font></div><p style="margin: 6pt 0in;"><font face="Calibri" size="3">This QuickStart is for users new to Power BI Designer. It’s
