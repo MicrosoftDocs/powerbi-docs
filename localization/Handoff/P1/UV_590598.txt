@@ -1,5 +1,5 @@
-	<title>Calculated columns in Power BI Designer</title>
-	
+Calculated columns in Power BI Designer
+
 	<div><font face="Times New Roman" size="3">
 
 </font><p style="margin: 6pt 0in;"><font face="Calibri" size="3">With calculated columns, you can add new data to a table already
