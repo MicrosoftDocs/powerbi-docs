@@ -44,28 +44,26 @@ The tags section uses this syntax:
 
 ![](./media/article-metadata/checkmark-small.png)**pageTitle**: Required; important to SEO. The text for this attribute appears in the browser tab and as the title in a search result. Use 55-60 characters including spaces and including the site identifier *| Microsoft Power BI* (typed as: space pipe space Microsoft Power BI).
 
-![](./media/article-metadata/checkmark-small.png)**description**: Required; important for SEO (relevance) and site functionalities. Use at least 140 characters, but don't exceed 170 characters including spaces. Describe the  purpose of your content so customers will know whether to choose it from a list of search results. The value is:
-
-- Usually displayed as the description or abstract paragraph in search results
+![](./media/article-metadata/checkmark-small.png)**description**: Required; important for SEO (relevance) and site functionalities. Use at least 140 characters, but don't exceed 170 characters including spaces. Describe the  purpose of your content so customers will know whether to choose it from a list of search results. The value is usually displayed as the description or abstract paragraph in search results.
 
 ![](./media/article-metadata/checkmark-small.png)**services**: Always "powerbi" for Power BI content (Azure has multiple options).
 
-![](./media/article-metadata/checkmark-small.png)**documentationCenter**: NA for Power BI content.
+![](./media/article-metadata/checkmark-small.png)**documentationCenter**: "NA" for Power BI content.
 
 ![](./media/article-metadata/checkmark-small.png)**authors**: Required, one value only. List the GitHub account for the primary author or article SME. This attribute drives the byline on the published article. List only one, in spite of the plural name of the attribute.
 
 ![](./media/article-metadata/checkmark-small.png)**manager**: Required if you are a Microsoft contributor. List the alias of the content publishing manager for the technology area. If you are a community contributor, include the attribute but leave it empty so we can fill it out.
 
-![](./media/article-metadata/checkmark-small.png)**editor**: NA - Not used. Do not use it for other purposes.
+![](./media/article-metadata/checkmark-small.png)**editor**: "NA" - Not used. Do not use it for other purposes.
 
-![](./media/article-metadata/checkmark-small.png)**tags**: NA for Power BI content.
+![](./media/article-metadata/checkmark-small.png)**tags**: "NA" for Power BI content.
 
 
 ## Attributes and values for the tags section
 
 ![](./media/article-metadata/checkmark-small.png)**ms.service**: Always "powerbi" for Power BI content (Azure has multiple options).
 
-![](./media/article-metadata/checkmark-small.png)**ms.devlang**: NA for Power BI content.
+![](./media/article-metadata/checkmark-small.png)**ms.devlang**: "NA" for Power BI content.
 
 ![](./media/article-metadata/checkmark-small.png)**ms.topic**: Required. Specifies the topic type. Most new pages created by contributors will be article or reference. NOTE: the list below is from Azure, and I have removed some of the options that definitely aren't valid for Power BI. We will decide how to use the remaining options as our site architecture is developed. If in doubt, use "article". 
 
@@ -73,9 +71,9 @@ The tags section uses this syntax:
 
  - **campaign-page**: A page that is specifically designed as a landing page for external campaigns, and is not included as part of the primary site IA.  Should not be used for documentation articles or regular doc landing pages.
 
- - **get-started-article**: assign to articles that are featured in the Get Started section of the left navigation for a service.
+ - **get-started-article**: Assign to articles that are featured in the Get Started section of the left navigation for a service.
 
- - **hero-article**: a "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Assign this value ONLY to articles that are featured at the top of the documentation landing page for your service.
+ - **hero-article**: A "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Assign this value ONLY to articles that are featured at the top of the documentation landing page for your service.
 
  - **home-page**: Top level documentation home page.
 
