@@ -1,6 +1,6 @@
 ﻿<properties 
 pageTitle="Install and set up tools for authoring in GitHub" 
-description="Tools and steps to get set up for authoring Azure content in GitHub." 
+description="Tools and steps to get set up for authoring Power BI content in GitHub." 
 services="contributor-guide" 
 documentationCenter="" 
 authors="tysonn"  
@@ -17,7 +17,7 @@ ms.service="contributor-guide"
 
 #Install and set up tools for authoring in GitHub
 
-Follow the steps in this article to set up tools for contributing to the Azure technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
+Follow the steps in this article to set up tools for contributing to the Power BI technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
 
 If you're unfamiliar with Git, you might want to review some Git terminology: [https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary). In addition, this StackOverflow thread contains a glossary of Git terms you'll encounter in this set of steps: [http://stackoverflow.com/questions/7076164/terminology-used-by-git](http://stackoverflow.com/questions/7076164/terminology-used-by-git)
 
@@ -37,7 +37,7 @@ If you're unfamiliar with Git, you might want to review some Git terminology: [h
 
 ## Create a GitHub account and set up your profile
 
-To contribute to the Azure technical content, you'll need a [GitHub](http://www.github.com) account.
+To contribute to the Power BI technical content, you'll need a [GitHub](http://www.github.com) account.
 
 If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
 
@@ -54,7 +54,7 @@ Your profile should resemble this profile:
 
 ## Sign up for Disqus
 
-Every published Azure technical article has a comment stream provided by the Disqus service.
+Every published Power BI technical article has a comment stream provided by the Disqus service.
 
  ![Discus logo](./media/tools-and-setup/discus.png)
 
@@ -95,9 +95,9 @@ You need to install the tools if you want to make any of the following sorts of 
 
 ##Permissions in GitHub
 
-Anybody with a GitHub account can contribute to Azure technical content through our public repository at [https://github.com/Azure/azure-content](https://github.com/Azure/azure-content). No special permissions are required.
+Anybody with a GitHub account can contribute to Power BI technical content through our public repository at [https://github.com/Power BI/powerbi-content](https://github.com/Power BI/powerbi-content). No special permissions are required.
 
-If you are a Microsoft employee working on Azure content, you should work in our private content repository, azure-content-pr. Visit [http://aka.ms/azuregithub](http://aka.ms/azuregithub) to obtain the read permissions that will let you make contributions through the private repo - click **Join a Team**, and join **azure-content-read**.
+If you are a Microsoft employee working on Power BI content, you should work in our private content repository, powerbi-content-pr. Visit [http://aka.ms/Power BIgithub](http://aka.ms/Power BIgithub) to obtain the read permissions that will let you make contributions through the private repo - click **Join a Team**, and join **powerbi-content-read**.
 
 ## Install Git for Windows
 
@@ -144,29 +144,29 @@ We author content using simple "markdown" notation in the files, rather than com
 
 If you use Atom, you'll need to set a few things up.
 
-- Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into Azure. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length. 
+- Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into Power BI. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length. 
 - You will probably also want to turn on Soft Wrap in this section too, which does the same as "word wrap" in Notepad. 
 - To turn on the markdown preview, click Packages>Markdown Preview>Toggle Preview. You can use Ctrl-Shift-M to toggle the preview HTML view. 
 
 ## Fork the repository and copy it to your computer
 
-1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created. This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork azure-content-pr, the private repo. Community contributors need to fork azure-content, the public repo. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
+1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created. This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork powerbi-content-pr, the private repo. Community contributors need to fork powerbi-content, the public repo. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
 
 2. Copy the Personal Access Token that you got from [https://github.com/settings/applications#personal-access-tokens](https://github.com/settings/applications#personal-access-tokens). You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
 
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open GitBash.  At the command prompt, enter the following command.  This command creates a azure-content(-pr) drectory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\azure-content(-pr).
+3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open GitBash.  At the command prompt, enter the following command.  This command creates a powerbi-content(-pr) drectory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\powerbi-content(-pr).
 
 Public repo:
 
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/azure-content.git
+        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content.git
 
 Private repo:
 
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/azure-content-pr.git
+        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content-pr.git
 
 For example, this clone command could look something like this:
 
-        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/azure-content-pr.git  
+        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/powerbi-content-pr.git  
 
 ## Set remote repository connection and configure credentials
 
@@ -174,14 +174,14 @@ Create a reference to the root repository by entering these commands. This sets 
 
 Public repo:
 
-        cd azure-content
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/azure-content.git
+        cd powerbi-content
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/Power BI/powerbi-content.git
         git fetch upstream
 
 Private repo:
 
-        cd azure-content-pr
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/azure-content-pr.git
+        cd powerbi-content-pr
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/Power BI/powerbi-content-pr.git
         git fetch upstream
 
 This usually takes a while. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
@@ -191,16 +191,16 @@ This usually takes a while. After you do this, you won't have to fork again or e
 
 To ensure you are listed correctly as a contributor, you need to configure your user name and email locally in Git.
 
-1. Start Git Bash, and switch into azure-content or azure-content-pr:
+1. Start Git Bash, and switch into powerbi-content or powerbi-content-pr:
 
    ````
-   cd azure-content
+   cd powerbi-content
    ````
 
  or
 
    ````
-   cd azure-content-pr
+   cd powerbi-content-pr
    ````
 
 2. Configure your user name so it matches your name as you set it up in your GitHub profile:

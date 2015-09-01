@@ -1,10 +1,10 @@
-<properties title="" pageTitle="Writing Azure documentation - style and voice cheat sheet" description="Style and voice information to help you create technical content for the Azure documentation center." metaKeywords="" services="" solutions="" documentationCenter="" authors="tysonn" videoId="" scriptId="" manager="required" />
+<properties title="" pageTitle="Writing Power BI documentation - style and voice cheat sheet" description="Style and voice information to help you create technical content for the Power BI documentation center." metaKeywords="" services="" solutions="" documentationCenter="" authors="tysonn" videoId="" scriptId="" manager="required" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="12/16/2014" ms.author="glenga" />
 
-#Writing Azure documentation - style and voice cheat sheet
+#Writing Power BI documentation - style and voice cheat sheet
 
-Here's a cheat sheet that contains pointers about how to write technical articles for Azure services and technologies. These guidelines apply whether you are creating new documentation or updating existing documentation.
+Here's a cheat sheet that contains pointers about how to write technical articles for Power BI services and technologies. These guidelines apply whether you are creating new documentation or updating existing documentation.
 
 At a bare minimum, please:
 
@@ -21,7 +21,7 @@ The following sections contain a more details:
 
 ##Use a customer-friendly voice
 
-We aspire to follow these principles when we write technical content for Azure. We may not always get there, but we need to keep trying!
+We aspire to follow these principles when we write technical content for Power BI. We may not always get there, but we need to keep trying!
 
 - **Use everyday words**: Try to use natural language, the words your customers use; be less formal but not less technical; provide examples that explain new concepts.
 
@@ -40,7 +40,7 @@ Our technical articles are translated into many other languages, and some are mo
 
 - **Use simple and consistent sentence construction**: Consistency is better for translation. Avoid parentheticals and asides, and have the subject as near the beginning of the sentence as possible. Check out a few published topics - if the topic has a friendly, easy to read style, use it as a model.
 
-- **Use consistent wording and capitalization**: Again, consistency is key. Azure uses sentence casing for titles, so never capitalize a word if it isn't at the start of a sentence or a proper noun.
+- **Use consistent wording and capitalization**: Again, consistency is key. Power BI uses sentence casing for titles, so never capitalize a word if it isn't at the start of a sentence or a proper noun.
 
 - **Include the "small words"**: Words that we consider small and unimportant in English because they are understood for context (such as "a", "the", "that", and "is") are crucial for machine translation - make sure you include them!
 
@@ -50,19 +50,19 @@ Our technical articles are translated into many other languages, and some are mo
 
 - For steps that include code snippets, put additional information about the step into the code as comments. This reduces the amount of text people have to read through, and the key information gets copied into the code project to remind people of what the code is doing when they refer to it later.
 
-- The official product name is “Microsoft Azure”, but we can almost always just say “Azure”, as in "Azure Mobile Services".
+- The official product name is “Microsoft Power BI”, but we can almost always just say “Power BI”, as in "Power BI Mobile Services".
 
-- Don’t create acronyms that start with "MA" or "A." Just use “Azure” at first reference before a service or feature name and then drop it (e.g. "Azure Mobile Services" becomes "Mobile Services" after first use). Try to avoid acronyms in general - they just confuse people.
+- Don’t create acronyms that start with "MA" or "A." Just use “Power BI” at first reference before a service or feature name and then drop it (e.g. "Power BI Mobile Services" becomes "Mobile Services" after first use). Try to avoid acronyms in general - they just confuse people.
 
-- Azure uses sentence casing for all titles.
+- Power BI uses sentence casing for all titles.
 
 - Use "sign-in" and not "log-in."
 
 - Include the words "following" or "as follows" in every sentence that precedes a list or code snippet.
 
-- "SQL Database" is the Azure feature. A "SQL database" is a database instance running on SQL Database.
+- "SQL Database" is the Power BI feature. A "SQL database" is a database instance running on SQL Database.
 
-- Azure Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. (It's not called the "Azure Table storage service".)
+- Power BI Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. (It's not called the "Power BI Table storage service".)
 
 
 

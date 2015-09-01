@@ -9,16 +9,16 @@ Staging is now automated for private repository pull requests. See [Git commands
 <!--
 Follow the steps in this article to stage content to the internal staging site prior to releasing the article to the public site.
 
-[AZURE.IMPORTANT] The preview site is available for internal Microsoft contributors only. If you're an internal contributor, see the internal wiki to get the URL of the preview site.
+[Power BI.IMPORTANT] The preview site is available for internal Microsoft contributors only. If you're an internal contributor, see the internal wiki to get the URL of the preview site.
 
 ![](./media/git-commands-for-sandbox/githubcommands2.png)
 
 
 1. Start Git Bash.
 
-2. Change to azure-content-pr:
+2. Change to powerbi-content-pr:
 
-        cd azure-content-pr
+        cd powerbi-content-pr
 
 3. Check out the sandbox branch:
 
