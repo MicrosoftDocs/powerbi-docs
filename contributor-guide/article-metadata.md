@@ -14,14 +14,14 @@ All Power BI technical articles contain two metadata sections - a properties sec
 The properties section uses this syntax:
 
     <properties
-       pageTitle="Page title that displays in search results and the browser tab | Microsoft Aure"
+       pageTitle="Page title that displays in search results and the browser tab | Microsoft Power BI"
        description="Article description that will be displayed on landing pages and in most search results"
-       services="service-name"
-       documentationCenter="dev-center-name"
+       services="powerbi"
+       documentationCenter="n/a"
        authors="GitHub-alias-of-only-one-author"
-       manager="manager-alias"
-       editor=""
-       tags=""/>
+       manager="mblythe"
+       editor="n/a"
+       tags="n/a"/>
 
 The tags section uses this syntax:
 
