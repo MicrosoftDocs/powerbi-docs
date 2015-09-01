@@ -1,12 +1,12 @@
 <properties
     title="required"
     pageTitle="Custom markdown extensions used in our technical articles"
-    description="Lists the custom markdown extensions that enable embedded videos, notes and tips, reusable content, and other item in Power BI.microsoft.com technical articles."
+    description="Lists the custom markdown extensions that enable embedded videos, notes and tips, reusable content, and other item in powerbi.microsoft.com technical articles."
     services=""
     solutions=""
     documentationCenter=""
-    authors="tysonn"
-    manager="carolz"
+    authors="mblythe"
+    manager="dongill"
     editor=""/>
 
 <tags
@@ -16,17 +16,17 @@
     ms.tgt_pltfrm=""
     ms.workload=""
     ms.date="01/22/2015"
-    ms.author="tysonn"/>
+    ms.author="mblythe"/>
 
-## Markdown for Power BI.microsoft.com
+## Markdown for powerbi.microsoft.com
 
 For general markdown tips, see [Markdown Basics](https://help.github.com/articles/markdown-basics/) and our [markdown cheatsheet](./media/documents/markdown-cheatsheet.pdf?raw=true). If you need to create article crosslinks in markdown, see the [linking guidance] (./create-links-markdown.md#markdown-syntax-for-acom-relative-links.md/).
 
-Power BI.microsoft.com supports [fenced code blocks](https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks) and [syntax highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting). However, ACOM supports only one syntax highlighting color scheme, regardless of the language you specify in a code block.
+powerbi.microsoft.com supports [fenced code blocks](https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks) and [syntax highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting). However, ACOM supports only one syntax highlighting color scheme, regardless of the language you specify in a code block.
 
 ## Custom markdown extensions used in our technical articles
 
-Our articles use GitHub flavored markdown for most article formatting - paragraphs, links, lists, headings, etc. But we use custom markdown extensions where we need richer formatting in the rendered pages on Power BI.microsoft.com. Here's the extensions we are currently using:
+Our articles use GitHub flavored markdown for most article formatting - paragraphs, links, lists, headings, etc. But we use custom markdown extensions where we need richer formatting in the rendered pages on powerbi.microsoft.com. Here's the extensions we are currently using:
 
 + [Notes and tips]
 + [Includes]
@@ -37,27 +37,27 @@ Our articles use GitHub flavored markdown for most article formatting - paragrap
 
 You can choose from 4 types of notes and tips:
 
-- Power BI.NOTE
-- Power BI.WARNING
-- Power BI.TIP
-- Power BI.IMPORTANT
+- AZURE.NOTE
+- AZURE.WARNING
+- AZURE.TIP
+- AZURE.IMPORTANT
 
 ###Usage
 In general, use notes and tips sparingly throughout your articles. When you do use them, choose the appropriate type of note or tip:
 
-- Use Power BI.NOTE to highlight neutral or positive information that emphasizes or supplements key points of the main text. A note supplies information that applies only in special cases.
+- Use AZURE.NOTE to highlight neutral or positive information that emphasizes or supplements key points of the main text. A note supplies information that applies only in special cases.
 
   ![](./media/custom-markdown-extensions/Notes-note.PNG)
 
-- Use Power BI.WARNING to alert the user to a condition that might cause a problem in the future. For example, selecting a certain option or making a certain choice might permanently lock you into a particular scenario.
+- Use AZURE.WARNING to alert the user to a condition that might cause a problem in the future. For example, selecting a certain option or making a certain choice might permanently lock you into a particular scenario.
 
   ![](./media/custom-markdown-extensions/Notes-warning.PNG)
 
-- Use Power BI.TIP to help your users apply the techniques and procedures described in the text to their specific needs. A tip might also suggest alternative methods that may not be obvious. Tips, however, are not essential to the basic understanding of the text.
+- Use AZURE.TIP to help your users apply the techniques and procedures described in the text to their specific needs. A tip might also suggest alternative methods that may not be obvious. Tips, however, are not essential to the basic understanding of the text.
 
   ![](./media/custom-markdown-extensions/Notes-tip.PNG)
 
-- Use Power BI.IMPORTANT to provide information that is essential to the completion of a task.
+- Use AZURE.IMPORTANT to provide information that is essential to the completion of a task.
 
   ![](./media/custom-markdown-extensions/Notes-important.PNG)
 
@@ -65,21 +65,21 @@ While these notes and tips support code blocks, images, lists, and links, try to
 
 ###Sample markdown
 
-The samples all show an Power BI.NOTE. To use a TIP, WARNING, or IMPORTANT, replace "NOTE" in the markdown:
+The samples all show a AZURE.NOTE. To use a TIP, WARNING, or IMPORTANT, replace "NOTE" in the markdown:
 
-    > [Power BI.TIP]
+    > [AZURE.TIP]
 
-    > [Power BI.WARNING]
+    > [AZURE.WARNING]
 
-    > [Power BI.IMPORTANT]
+    > [AZURE.IMPORTANT]
 
 Single paragraph:
 
-    > [Power BI.NOTE] To complete this tutorial, you must have an active Microsoft Power BI account. If you don't have an account, you can create a free trial account in just a couple of minutes.
+    > [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Power BI account. If you don't have an account, you can create a free trial account in just a couple of minutes.
 
 Multiparagraph:
 
-    > [Power BI.NOTE] To complete this tutorial, you must have an active Microsoft Power BI account.
+    > [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Power BI account.
     >
     > If you don't have an account, you can [create a free trial account](http://www.windowsPower BI.com/pricing/free-trial/) in just a couple of minutes.
 
@@ -117,11 +117,11 @@ Reusable text fragments in our GitHub repository are called "includes". When you
 ###Sample markdown
 The syntax for adding an include to a documentation article is:
 
-    [Power BI.INCLUDE [include-short-name](../includes/include-file-name.md)]
+    [AZURE.INCLUDE [include-short-name](../includes/include-file-name.md)]
 
 Example
 
-    [Power BI.INCLUDE [howto-blob-storage](../includes/howto-blob-storage.md)]
+    [AZURE.INCLUDE [howto-blob-storage](../includes/howto-blob-storage.md)]
 
 The first part of the include is the include name without the path and without the .md extension. The second part is the relative path to the include in the /includes directory, with the .md extension.
 
@@ -129,22 +129,22 @@ The first part of the include is the include name without the path and without t
 
 In the rendered GitHub page, the include will render as follows:
 
- [Power BI.INCLUDE howto-blob-storage]
+ [AZURE.INCLUDE howto-blob-storage]
 
-In the rendered HTML on Power BI.microsoft.com, the HTML from the includes is merged into the rest of the document's HTML. However, the HTML will contain an HTML comment with the original include markdown filename and the GitHub commit hash. This comment is included for troubleshooting purposes so that the source content can easily be identified and found in GitHub:
+In the rendered HTML on powerbi.microsoft.com, the HTML from the includes is merged into the rest of the document's HTML. However, the HTML will contain an HTML comment with the original include markdown filename and the GitHub commit hash. This comment is included for troubleshooting purposes so that the source content can easily be identified and found in GitHub:
 
   ![](./media/custom-markdown-extensions/include.png)
 
 
 ## Embedded videos
 
-Our technical articles support embeddeded videos in technical articles as long as the videos are on Microsoft's [Channel 9](http://channel9.msdn.com/) site. The videos from Channel 9 must be integrated with [the Power BI.microsoft.com Video Center](http://Power BI.microsoft.com/documentation/videos/home/). We currently do not support embedded YouTube videos; if you're a community contributor, you are welcome to link to YouTube if the video you want to feature is posted there. Microsoft contributors should use Channel 9 and the Video Center.
+Our technical articles support embeddeded videos in technical articles as long as the videos are on Microsoft's [Channel 9](http://channel9.msdn.com/) site. The videos from Channel 9 must be integrated with [the powerbi.microsoft.com Video Center](http://powerbi.microsoft.com/documentation/videos/home/). We currently do not support embedded YouTube videos; if you're a community contributor, you are welcome to link to YouTube if the video you want to feature is posted there. Microsoft contributors should use Channel 9 and the Video Center.
 
 ### Usage
 
 - Make sure that the video is on the Video Center.
 
-- Copy the video ID from the friendly URL of the video on Channel 9 or from the Power BI Video Center. For example, the video ID for the video at [http://Power BI.microsoft.com/documentation/videos/Power BI-scheduler-unusual-schedules/](http://Power BI.microsoft.com/documentation/videos/Power BI-scheduler-unusual-schedules/) is **Power BI-scheduler-unusual-schedules**.
+- Copy the video ID from the friendly URL of the video on Channel 9 or from the Power BI Video Center. For example, the video ID for the video at [http://powerbi.microsoft.com/documentation/videos/Power BI-scheduler-unusual-schedules/](http://powerbi.microsoft.com/documentation/videos/Power BI-scheduler-unusual-schedules/) is **Power BI-scheduler-unusual-schedules**.
 
 ### Syntax
 
@@ -154,7 +154,7 @@ Our technical articles support embeddeded videos in technical articles as long a
 
 On GitHub: [https://github.com/Power BI/powerbi-content-pr/blob/master/articles/web-sites-backup.md](https://github.com/Power BI/powerbi-content-pr/blob/master/articles/web-sites-backup.md)
 
-Published article: [http://Power BI.microsoft.com/documentation/articles/web-sites-backup/](http://Power BI.microsoft.com/documentation/articles/web-sites-backup/)
+Published article: [http://powerbi.microsoft.com/documentation/articles/web-sites-backup/](http://powerbi.microsoft.com/documentation/articles/web-sites-backup/)
 
 
 ## Technology and platform selectors
@@ -167,7 +167,7 @@ Because the same selector markdown goes in each topic in the selection, we recom
 
 Simple (one-way) selectors render as a set of option buttons right below the title. Use these buttons when customers only need to choose from topics in a single platform or technology set, such as .NET, Node.js, and Java.  Please use the below custom markdown format for any selectors.  Do not use HTML for selector functions.  
 
-See [Get started with Notification Hubs](http://Power BI.microsoft.com/documentation/articles/notification-hubs-windows-phone-get-started/) to see how the author created 8 versions of the same article, but used selectors to enable navigation across them all.
+See [Get started with Notification Hubs](http://powerbi.microsoft.com/documentation/articles/notification-hubs-windows-phone-get-started/) to see how the author created 8 versions of the same article, but used selectors to enable navigation across them all.
 
 ![Simple selector example](./media/custom-markdown-extensions/selectors.PNG)
 
@@ -191,17 +191,17 @@ Example:
 
 #### Rendering
 
-The image above shows the rendering on Power BI.microsoft.com. On the rendered GitHub pages, the selectors render as a bulleted list of links.
+The image above shows the rendering on powerbi.microsoft.com. On the rendered GitHub pages, the selectors render as a bulleted list of links.
 
 ###<a id="two-way-selectors"></a>Two-way selectors
 
-Two-way selectors lets users select a topics from a two way matrix. This is essential when an Power BI technology, such as Mobile Services, supports multiple backend platforms as well as multiple clients. Keep in mind the following:
+Two-way selectors lets users select a topics from a two way matrix. This is essential when a Power BI technology, such as Mobile Services, supports multiple backend platforms as well as multiple clients. Keep in mind the following:
 
 - While it was designed as `(Platform | Backend)`, the dropwdown text can now be customized.
 - You do not need a list item for every point in your matrix, but do only have an item where a topic URL exists and is not a duplicate.
 - The link can be any URL, although it is generally another GitHub topic.
 
-See [Get started with Mobile Services](http://Power BI.microsoft.com/en-us/documentation/articles/mobile-services-ios-get-started/) to see how the author created 15 versions of the same article (9 mobile client platforms and 2 backend platforms), but used selectors to enable navigation across them all. Note that 3 articles don't have both backend versions.
+See [Get started with Mobile Services](http://powerbi.microsoft.com/en-us/documentation/articles/mobile-services-ios-get-started/) to see how the author created 15 versions of the same article (9 mobile client platforms and 2 backend platforms), but used selectors to enable navigation across them all. Note that 3 articles don't have both backend versions.
 
 ![Two-way selectors example](./media/custom-markdown-extensions/selector-list.png)
 
@@ -229,7 +229,7 @@ Example:
 
 #### Rendering
 
-The image above shows the rendering on Power BI.microsoft.com. On the rendered GitHub pages, the selectors render as a bulleted list of links.
+The image above shows the rendering on powerbi.microsoft.com. On the rendered GitHub pages, the selectors render as a bulleted list of links.
 
 <!--Anchors-->
 [Notes and tips]: #notes-and-tips
