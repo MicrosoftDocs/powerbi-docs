@@ -1,6 +1,6 @@
-<properties title="" pageTitle="Power BI technical content contributors' guide index" description="Lists the articles available in the Power BI technical content contributors' guide for Power BI.microsoft.com." metaKeywords="" services="" solutions="" documentationCenter="" authors="tysonn" videoId="" scriptId="" manager="carolz" />
+<properties title="" pageTitle="Power BI technical content contributors' guide index" description="Lists the articles available in the Power BI technical content contributors' guide for powerbi.microsoft.com." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
-<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="12/19/2014" ms.author="tysonn" />
+<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="12/19/2014" ms.author="mblythe" />
 
 #Power BI technical content contributors' guide index
 

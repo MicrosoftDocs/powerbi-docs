@@ -3,8 +3,8 @@ pageTitle="Install and set up tools for authoring in GitHub"
 description="Tools and steps to get set up for authoring Power BI content in GitHub." 
 services="contributor-guide" 
 documentationCenter="" 
-authors="tysonn"  
-manager="carolz" />
+authors="mblythe"  
+manager="dongill" />
 
 <tags 
 ms.service="contributor-guide"
@@ -13,7 +13,7 @@ ms.service="contributor-guide"
   ms.tgt_pltfrm="" 
   ms.workload="" 
   ms.date="01/19/2015" 
-  ms.author="tysonn" />
+  ms.author="mblythe" />
 
 #Install and set up tools for authoring in GitHub
 

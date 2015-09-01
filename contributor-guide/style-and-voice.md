@@ -1,4 +1,4 @@
-<properties title="" pageTitle="Writing Power BI documentation - style and voice cheat sheet" description="Style and voice information to help you create technical content for the Power BI documentation center." metaKeywords="" services="" solutions="" documentationCenter="" authors="tysonn" videoId="" scriptId="" manager="required" />
+<properties title="" pageTitle="Writing Power BI documentation - style and voice cheat sheet" description="Style and voice information to help you create technical content for the Power BI documentation center." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="required" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="12/16/2014" ms.author="glenga" />
 

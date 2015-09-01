@@ -1,10 +1,10 @@
 <properties
-   pageTitle="Create links in markdown articles" description="Explains how to code crosslinks in markdown." metaKeywords="" services="" solutions="" documentationCenter="" authors="tysonn" videoId="" scriptId="" manager="carolz" />
+   pageTitle="Create links in markdown articles" description="Explains how to code crosslinks in markdown." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
-<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="02/03/2015" ms.author="tysonn" />
+<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="02/03/2015" ms.author="mblythe" />
 
 # Linking guidance for Power BI technical content
-## Guidelines for technical articles on Power BI.microsoft.com
+## Guidelines for technical articles on powerbi.microsoft.com
 
 | Link scenario | Guidance  |
 |---------------|-----------|
@@ -39,7 +39,7 @@ Article in a directory links to another article in the same directory:
     [link text](article-name.md)
 
 
-You do not have to create anchors anymore - they are automatically generated at publishing time for all H2 headings. The only thing you have to do is create links to the H2 sections:
+You do not have to create anchors - they are automatically generated at publishing time for all H2 headings. The only thing you have to do is create links to the H2 sections:
 
     [link](#the-text-of-the-H2-section-separated-by-hyphens)
     [Create cache](#create-cache)
@@ -73,7 +73,7 @@ If you have selectors embedded in an include, you would use this sort of linking
 
 To link to a page on ACOM (such as a pricing page, SLA page or anything else that is not a documentation article), use an absolute URL, but omit the locale. The goal here is that links work in GitHub and on the rendered site:
 
-    [link text](http://Power BI.microsoft.com/pricing/details/virtual-machines/)
+    [link text](http://powerbi.microsoft.com/pricing/details/virtual-machines/)
 
 To test your links, push your page to your fork and view it in the rendered view and publish to Sandbox. The cross links on the GitHub version of the page should work as long as the targets of the URLs are present in your fork.
 
@@ -95,15 +95,15 @@ Link references at the end of the article:
     [3]: http://search.msn.com/
 
 ## Remember the Power BI library chrome!
-If you want to link to an Power BI library topic that lives under [this node](https://msdn.microsoft.com/library/Power BI), remember to specify the Power BI chrome in the link (/Power BI/). The Power BI chrome shares the ACOM navigation options and displays only the Power BI content of the MSDN library. A properly scoped link looks like this:
+If you want to link to a Power BI library topic that lives under [this node](https://msdn.microsoft.com/library/Power BI), remember to specify the Power BI chrome in the link (/Power BI/). The Power BI chrome shares the ACOM navigation options and displays only the Power BI content of the MSDN library. A properly scoped link looks like this:
 
-    http://msdn.microsoft.com/library/Power BI/dd163896.aspx
+    http://msdn.microsoft.com/library/powerbidd163896.aspx
 
 Otherwise, the page will be rendered in the standard MSDN view, with the entire MSDN tree displayed.
 
 ## FWLinks
 
-Avoid FWLinks (our redirection system) in Power BI.microsoft.com content. They should be used only as a last resort when you need to create a link for a page whose URL you don't yet know. They are almost never actually needed. For ACOM, you define the file name, so you can know what it will be ahead of time. For a library topic that is not yet published, you can create a link that uses the topic GUID so that you don't have to use an FWLink.
+Avoid FWLinks (our redirection system) in powerbi.microsoft.com content. They should be used only as a last resort when you need to create a link for a page whose URL you don't yet know. They are almost never actually needed. For ACOM, you define the file name, so you can know what it will be ahead of time. For a library topic that is not yet published, you can create a link that uses the topic GUID so that you don't have to use an FWLink.
 
 If you must use an FWLink on a web page, include the P parameter to make it a permanent redirect:
 

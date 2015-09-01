@@ -1,6 +1,6 @@
 # Steps to follow when you retire or change the name of an ACOM technical article
 
-This guidance is for SMEs who are listed as the author of an article that needs to be retired from the technical documentation section of Power BI.microsoft.com. The steps also apply if a file is renamed.
+This guidance is for SMEs who are listed as the author of an article that needs to be retired from the technical documentation section of powerbi.microsoft.com. The steps also apply if a file is renamed.
 
 If you're a member of our Power BI community and you think an article should be retired for any reason, please leave a comment in the Disqus comment stream for the article to let the author know something is wrong with the article.
 
@@ -36,7 +36,7 @@ Determine if there are any non-Microsoft inbound links to your content. Frequent
 
 Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed. More info - [internal wiki](http://sharepoint/sites/Power BIcontentguidance/wiki/Pages/Manage%20inbound%20links%20to%20retired%20topics.aspx).
 
-## Step 4: Remove all crosslinks to the article from other pages on Power BI.microsoft.com and create a redirect for the retired page, if appropriate
+## Step 4: Remove all crosslinks to the article from other pages on powerbi.microsoft.com and create a redirect for the retired page, if appropriate
 
 You'll have to work with the person who maintains and updates the documentation landing page for your service for this part. Contact your content team partner if you don't know who that person is. The person who maintains and updates the doc landing page will need to do two things:
 

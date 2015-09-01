@@ -4,9 +4,9 @@
     services=""
     solutions=""
     documentationCenter=""
-    authors="kenhoff"
-    manager="ilanas"
-    editor="tysonn"/>
+    authors="mblythe"
+    manager="dongill"
+    editor="NA"/>
 
 <tags
     ms.service="contributor-guide"
@@ -14,8 +14,8 @@
     ms.topic="article"
     ms.tgt_pltfrm=""
     ms.workload=""
-    ms.date="06/25/2015"
-    ms.author="kenhoff" />
+    ms.date="09/01/2015"
+    ms.author="mblythe" />
 
 # Create images in markdown
 
@@ -23,11 +23,11 @@
 
 For a new article, you'll need to create a folder in the following location:
 
-    /articles/<service-directory>/media/<article-name>/
+    /articles/media/<article-name>/
 
 For example:
 
-    /articles/app-service/media/app-service-enterprise-multichannel-apps/
+    /articles/media/powerbi-analysis-services-connector/
 
 After you create the folder and added images to it, use the following syntax to create images in your article:
 
@@ -36,14 +36,16 @@ After you create the folder and added images to it, use the following syntax to 
 ```
 Example:
 
-See [the markdown template](https://raw.githubusercontent.com/Power BI/powerbi-content-pr/master/markdown%20templates/markdown-template-for-new-articles.md) for an example.  The image call references in this markdown template are designed so the calls are made to image references at the bottom of the template.
+See [the markdown template](https://raw.githubusercontent.com/azure/azure-content-pr/master/markdown%20templates/markdown-template-for-new-articles.md) for an example.  The image call references in this markdown template are designed so the calls are made to image references at the bottom of the template.
 
-## Guidelines specific to Power BI.microsoft.com
+## Guidelines specific to powerbi.microsoft.com
+
+NOTE: We will revise this section based on art guidelines specific to Power BI.
 
 Screenshots are currently encouraged if it's not possible to include repro steps. Do write your content so that the content can stand without the screenshots if necessary.
 
 Use the following guidelines when creating and including art files:
-- Do not share art files across documents. Copy the file you need and add it to the media folder for your specific topic. Sharing between files is discouraged because  it is easier to remove deprecated content and images which keeps the repo clean.
+- Do not share art files across documents. Copy the file you need and add it to the media folder for your specific topic. Sharing between files is discouraged because it is easier to remove deprecated content and images which keeps the repo clean.
 
 - .png files are highly preferred over other formats.
 
