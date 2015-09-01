@@ -3,8 +3,8 @@
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="02/03/2015" ms.author="tysonn" />
 
-# Linking guidance for Azure technical content
-## Guidelines for technical articles on azure.microsoft.com
+# Linking guidance for Power BI technical content
+## Guidelines for technical articles on Power BI.microsoft.com
 
 | Link scenario | Guidance  |
 |---------------|-----------|
@@ -65,7 +65,7 @@ Learn more about how to use an includes file in the [Custom markdown extensions 
 
 If you have selectors embedded in an include, you would use this sort of linking: 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+    > [Power BI.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
     - [(Text1 | Example1 )](../articles/service-folder/article-name1.md)
     - [(Text1 | Example2 )](../articles/service-folder/article-name2.md)
     - [(Text2 | Example3 )](../articles/service-folder/article-name3.md)
@@ -73,7 +73,7 @@ If you have selectors embedded in an include, you would use this sort of linking
 
 To link to a page on ACOM (such as a pricing page, SLA page or anything else that is not a documentation article), use an absolute URL, but omit the locale. The goal here is that links work in GitHub and on the rendered site:
 
-    [link text](http://azure.microsoft.com/pricing/details/virtual-machines/)
+    [link text](http://Power BI.microsoft.com/pricing/details/virtual-machines/)
 
 To test your links, push your page to your fork and view it in the rendered view and publish to Sandbox. The cross links on the GitHub version of the page should work as long as the targets of the URLs are present in your fork.
 
@@ -94,16 +94,16 @@ Link references at the end of the article:
     [2]: http://search.yahoo.com/  
     [3]: http://search.msn.com/
 
-## Remember the Azure library chrome!
-If you want to link to an Azure library topic that lives under [this node](https://msdn.microsoft.com/library/azure), remember to specify the Azure chrome in the link (/azure/). The Azure chrome shares the ACOM navigation options and displays only the Azure content of the MSDN library. A properly scoped link looks like this:
+## Remember the Power BI library chrome!
+If you want to link to an Power BI library topic that lives under [this node](https://msdn.microsoft.com/library/Power BI), remember to specify the Power BI chrome in the link (/Power BI/). The Power BI chrome shares the ACOM navigation options and displays only the Power BI content of the MSDN library. A properly scoped link looks like this:
 
-    http://msdn.microsoft.com/library/azure/dd163896.aspx
+    http://msdn.microsoft.com/library/Power BI/dd163896.aspx
 
 Otherwise, the page will be rendered in the standard MSDN view, with the entire MSDN tree displayed.
 
 ## FWLinks
 
-Avoid FWLinks (our redirection system) in azure.microsoft.com content. They should be used only as a last resort when you need to create a link for a page whose URL you don't yet know. They are almost never actually needed. For ACOM, you define the file name, so you can know what it will be ahead of time. For a library topic that is not yet published, you can create a link that uses the topic GUID so that you don't have to use an FWLink.
+Avoid FWLinks (our redirection system) in Power BI.microsoft.com content. They should be used only as a last resort when you need to create a link for a page whose URL you don't yet know. They are almost never actually needed. For ACOM, you define the file name, so you can know what it will be ahead of time. For a library topic that is not yet published, you can create a link that uses the topic GUID so that you don't have to use an FWLink.
 
 If you must use an FWLink on a web page, include the P parameter to make it a permanent redirect:
 

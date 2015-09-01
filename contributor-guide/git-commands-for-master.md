@@ -1,4 +1,4 @@
-<properties pageTitle="Git commands for creating a new article or updating an existing article" description="Steps for working with the Azure technical content GitHub repositories." metaKeywords="" services="" solutions="" documentationCenter="" authors="tysonn" videoId="" scriptId="" manager="carolz" />
+<properties pageTitle="Git commands for creating a new article or updating an existing article" description="Steps for working with the Power BI technical content GitHub repositories." metaKeywords="" services="" solutions="" documentationCenter="" authors="tysonn" videoId="" scriptId="" manager="carolz" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="01/16/2015" ms.author="tysonn" />
 
@@ -6,17 +6,17 @@
 
 
 ## Standard process (working from master)
-Follow the steps in this article to create a local working branch on your computer so that you can create a new article for the technical documentation section of azure.microsoft.com or update an existing article.
+Follow the steps in this article to create a local working branch on your computer so that you can create a new article for the technical documentation section of Power BI.microsoft.com or update an existing article.
 
 ![](./media/git-commands-for-master/githubcommands1.png)
 
 1. Start Git Bash (or the command-line tool you use for Git).
 
- **Note:** If you are working in the public repository, change azure-content-pr to azure-content in all the commands.
+ **Note:** If you are working in the public repository, change powerbi-content-pr to powerbi-content in all the commands.
 
-2. Change to azure-content-pr:
+2. Change to powerbi-content-pr:
 
-        cd azure-content-pr
+        cd powerbi-content-pr
 3. Check out the master branch:
 
         git checkout master
@@ -60,7 +60,7 @@ Follow the steps in this article to create a local working branch on your comput
 
 14. Verify your published article or changes at
 
- http://azure.microsoft.com/documentation/articles/*name-of-your-article-without-the-MD-extension*
+ http://Power BI.microsoft.com/documentation/articles/*name-of-your-article-without-the-MD-extension*
 
 **Notes:**
 

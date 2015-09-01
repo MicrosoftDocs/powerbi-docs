@@ -1,6 +1,6 @@
 <properties
     pageTitle="Create images in markdown"
-    description="Explains how to create images in markdown according to guidelines set for the Azure repositories."
+    description="Explains how to create images in markdown according to guidelines set for the Power BI repositories."
     services=""
     solutions=""
     documentationCenter=""
@@ -36,9 +36,9 @@ After you create the folder and added images to it, use the following syntax to 
 ```
 Example:
 
-See [the markdown template](https://raw.githubusercontent.com/Azure/azure-content-pr/master/markdown%20templates/markdown-template-for-new-articles.md) for an example.  The image call references in this markdown template are designed so the calls are made to image references at the bottom of the template.
+See [the markdown template](https://raw.githubusercontent.com/Power BI/powerbi-content-pr/master/markdown%20templates/markdown-template-for-new-articles.md) for an example.  The image call references in this markdown template are designed so the calls are made to image references at the bottom of the template.
 
-## Guidelines specific to azure.microsoft.com
+## Guidelines specific to Power BI.microsoft.com
 
 Screenshots are currently encouraged if it's not possible to include repro steps. Do write your content so that the content can stand without the screenshots if necessary.
 
