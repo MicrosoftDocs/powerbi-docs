@@ -9,7 +9,7 @@ The data is filtered down to opportunities that were created or closed in the la
 
 Requirements:
 - You need to specify valid OData URL for a Dynamics CRM Online instance (the content pack will not work with an on-premises CRM version).
--   An administrator must enable the OData endpoint in the site settings. The address of the OData endpoint can be found by navigating to **Microsoft Dynamics CRM \> Settings \> Customizations \> Developer Resources**.  The OData URL is listed under **Service Endpoints**.  It typically has the format: [https://[instance\_name].crm.dynamics.com/XRMServices/2011/OrganizationData.svc](https://[instance_name].crm.dynamics.com/XRMServices/2011/OrganizationData.svc) 
+-   An administrator must enable the OData endpoint in the site settings. The address of the OData endpoint can be found by navigating to **Microsoft Dynamics CRM \> Settings \> Customizations \> Developer Resources**.  The OData URL is listed under **Service Endpoints**.  It typically has the format:https://[instance\_name].crm.dynamics.com/XRMServices/2011/OrganizationData.svc
 -   The user account/identity that you use to access Dynamics CRM Online must be the same as the one you are signed up for using with Power BI. When logging into CRM Online, you will be auto-signed into CRM with the same identity you are using for Power BI. If you wish to sign into CRM Online with a different account, please register as a Power BI user using the same account. We hope to resolve this issue in an upcoming release. 
 
 ## Connect to Dynamics CRM
@@ -28,7 +28,7 @@ Requirements:
     
 	![](media/powerbi-content-pack-microsoft-dynamics-crm/PBI_DynamicsCRMConnect.png)
 
-4.  Provide the OData URL associated with your account.  This will be in the form ["<https://mytenant.crm.dynamics.com/XRMServices/2011/OrganizationData.svc>"](https://mytenant.crm.dynamics.com/XRMServices/2011/OrganizationData.svc)
+4.  Provide the OData URL associated with your account.  This will be in the form https://mytenant.crm.dynamics.com/XRMServices/2011/OrganizationData.svc
 
 	![](media/powerbi-content-pack-microsoft-dynamics-crm/PBI_DynamicsCRMConnectSvc.png)
 
