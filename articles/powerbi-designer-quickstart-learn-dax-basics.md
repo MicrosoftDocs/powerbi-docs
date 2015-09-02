@@ -1,21 +1,21 @@
 <properties pageTitle="QuickStart: Learn DAX basics in Power BI Designer" description="QuickStart: Learn DAX basics in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#QuickStart: Learn DAX basics in Power BI Designer
+# QuickStart: Learn DAX basics in Power BI Designer
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
 This QuickStart is for users new to Power BI Designer. It’s meant to give you a quick and easy introduction on how you can use Data Analysis Expressions (DAX) to solve a number of basic calculation and data analysis problems. We’ll go over some conceptual information, a series of tasks you can complete, and a few quizzes to test what you’ve learned. After completing this article, you should have a good understanding of the most important fundamental concepts in DAX.
 
 **Note:** Just like Power BI Designer is Preview edition, so is this article. Information provided here will change often as new features in the designer become available.
 
-##What is DAX?
+## What is DAX?
 
 DAX is a collection of functions, operators, and constants that can be used in a formula, or expression, to calculate and return one or more values. Stated more simply, DAX helps you create new information from data already in your model.
 
-##Why is DAX so important?
+## Why is DAX so important?
 
 It’s quite easy to create a new Power BI Designer file and import some data into it. You can even create reports that show valuable insights without using any DAX formulas at all. But, what if you need to analyze growth percentage across product categories and for different date ranges? Or, you need calculate year-over-year growth compared to market trends? DAX formulas provide this capability and many other important capabilities as well. Learning how to create effective DAX formulas will help you get the most out of your data. When you get the information you need, you can begin to solve real business problems that affect your bottom line. This is the power in Power BI, and DAX will help you get there.
 
-##Prerequisites
+## Prerequisites
 
 You might already be familiar with creating formulas in Microsoft Excel. That knowledge will be helpful in understanding DAX, but even if you have no experience with Excel formulas, the concepts described here will help you get started creating DAX formulas and solving real-world BI problems right away.
 
@@ -25,11 +25,11 @@ We’re going to focus on understanding DAX formulas used in calculations, more 
 
 The best way to learn DAX is to create some basic formulas, use it with some actual data, and see the results for yourself. The examples and tasks here use the Contoso Sales for Power BI Designer Preview file. This is the same sample file used in the Tutorial: Create your own measures in Power BI article. You can download it [here](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip).
 
-##Let's begin!
+## Let's begin!
 
 We will frame our understanding of DAX around three fundamental concepts: *Syntax*, *Functions*, and *Context*. Of course, there are other important concepts in DAX, but understanding these three concepts will provide the best foundation on which to build your DAX skills.
 
-###Syntax
+### Syntax
 
 Before you create your own formulas, let’s take a look at DAX formula syntax. Syntax includes the various elements that make up a formula, or more simply, how the formula is written. For example, let’s look at a simple DAX formula.
 
@@ -67,7 +67,7 @@ It’s important your formulas have the correct syntax. In most cases, if the sy
 
 Let’s create a simple formula. This task will help you further understand formula syntax and how the suggestions feature in the formula bar can help you.
 
-###Task: Create a measure formula
+### Task: Create a measure formula
 
 To complete this task, you’ll need to open the Contoso Sales Power BI Designer Preview file.
 
@@ -112,7 +112,7 @@ In this formula, you also used filters. Filters narrow down what will be calcula
 
 Finally, you used the CALCULATE function. This is one of the most powerful functions in DAX. As you author models and create more complex formulas, you will likely use this function many times. Discussing the CALCULATE function is outside the scope of this article, but as your knowledge of DAX grows, pay special attention to this one.
 
-####Syntax QuickQuiz
+#### Syntax QuickQuiz
 
 1.  What does this button on the formula bar do?  
     ![](media/powerbi-designer-quickstart-learn-dax-basics/QSDAX_Formula_Bar.png)
@@ -121,7 +121,7 @@ Finally, you used the CALCULATE function. This is one of the most powerful funct
 
 Answers are provided at the end of this article.
 
-###Functions
+### Functions
 
 Functions are predefined formulas that perform calculations by using specific values, called arguments, in a particular order or structure. Arguments can be other functions, another formula, expression, column references, numbers, text, logical values such as TRUE or FALSE, or constants.
 
@@ -139,7 +139,7 @@ DAX includes the following categories of functions: [Date and Time](https://supp
 
  As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of DAX functions is in the [Data Analysis Expressions (DAX) Reference](https://support.office.com/en-us/article/Data-Analysis-Expressions-DAX-Reference-411c6891-614d-438c-bf45-c7e061dd9e08 "Data Analysis Expressions (DAX) Reference").
 
-###Functions QuickQuiz
+### Functions QuickQuiz
 
 1.  What does a function always reference?
 
@@ -149,7 +149,7 @@ DAX includes the following categories of functions: [Date and Time](https://supp
 
 Answers are provided at the end of this article.
 
-###Context
+### Context
 
 Context is one of the most important DAX concepts to understand. There are two types of context in DAX; row context and filter context. We’ll first look at row context.
 
@@ -195,7 +195,7 @@ As you can imagine, being able to define filter context within a formula has imm
 
  
 
-###Context QuickQuiz
+### Context QuickQuiz
 
 1.  What are the two types of context?
 
@@ -205,7 +205,7 @@ As you can imagine, being able to define filter context within a formula has imm
 
 Answers are provided at the end of this article.
 
-##Summary
+## Summary
 
 Now that you have a basic understanding of the most important concepts in DAX, you can begin creating DAX formulas for measures on your own. DAX can indeed be a little tricky to learn, but there are many resources available to you. After reading through this article and experimenting with a few of your own formulas, you can learn more about other DAX concepts and formulas that can help you solve your own business problems. There are many DAX resources available to you; most important is the [Data Analysis Expressions (DAX) Reference](https://support.office.com/en-us/article/Data-Analysis-Expressions-DAX-Reference-411c6891-614d-438c-bf45-c7e061dd9e08 "Data Analysis Expressions (DAX) Reference").
 

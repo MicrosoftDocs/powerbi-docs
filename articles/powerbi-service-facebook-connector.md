@@ -1,6 +1,6 @@
 <properties pageTitle="3rd Party Service - Facebook connector" description="3rd Party Service - Facebook connector" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Third-party service: Facebook connector for Power BI Designer
+# Third-party service: Facebook connector for Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 

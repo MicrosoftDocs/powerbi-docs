@@ -1,6 +1,6 @@
 <properties pageTitle="SQL Database Auditing content pack for Power BI" description="SQL Database Auditing content pack for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
-#Azure SQL Database Auditing content pack for Power BI
+# Azure SQL Database Auditing content pack for Power BI
 
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 

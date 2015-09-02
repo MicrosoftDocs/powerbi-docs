@@ -17,7 +17,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Orígenes de datos en el Diseñador de Power BI
+# Orígenes de datos en el Diseñador de Power BI
 [Diseñador ← Power BI](https://support.powerbi.com/media/knowledgebase/topics/68530-power-bi-designer)
 
 El Diseñador de BI de energía le permite conectarse a datos de muchos orígenes diferentes. Es una lista completa de los orígenes de datos disponibles en la parte inferior de esta página.
@@ -39,7 +39,7 @@ Seleccionar **más...** desde el **más comunes** menú muestra el **obtener dat
 ![](media/powerbi-designer-data-sources/DataSources_GetData.png)
 
 
-##Orígenes de datos
+## Orígenes de datos
 
 Tipos de datos se organizan en las categorías siguientes:
 
@@ -116,7 +116,7 @@ La siguiente imagen muestra el **obtener datos** ventana **otros**.
 ![](media/powerbi-designer-data-sources/DataSources_Other.png)
 
 
-##Conectarse a un origen de datos
+## Conectarse a un origen de datos
 
 Para conectarse a un origen de datos, seleccione el origen de datos de la **obtener datos** ventana y seleccione **Conectar**. En la siguiente imagen, **Web** está seleccionado en el **otros** categoría de conexión de datos.
 

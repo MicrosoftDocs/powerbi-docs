@@ -1,6 +1,6 @@
 <properties pageTitle="Get data from files for Power BI" description="Get data from files for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Get Excel and Power BI Designer files into Power BI
+# Get Excel and Power BI Designer files into Power BI
 
 [← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
 
@@ -12,7 +12,7 @@ You can upload Excel and Designer files from your computer, or connect to them o
 
 Important: In Power BI Preview, the maximum size of an Excel or Power BI Designer file you can upload to your Power BI site is 250 megabytes. 
 
-##Import or connect to files
+## Import or connect to files
 
 1. Starting from the dashboard to which you want to add the workbook data, select **Get Data** at the bottom of the left navigation pane.
 
@@ -42,7 +42,7 @@ Important: In Power BI Preview, the maximum size of an Excel or Power BI Designe
 
 	>**Tip:** Any changes you make in Power BI, for example, add, delete, or change visualizations in reports, aren't saved in the original Excel or Power BI Designer file. You can only change an Excel file in Excel, and a Power BI Designer file in the Designer. You can change the dataset and report names.  
 
-##What can you do next?
+## What can you do next?
 
 - Click the dataset name to [explore the dataset in Power BI](http://support.powerbi.com/knowledgebase/articles/475159-explore-a-dataset).
 - Or just type a [question in the question box on the dashboard](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi).

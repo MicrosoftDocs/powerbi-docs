@@ -1,6 +1,6 @@
 <properties pageTitle="Common Query Tasks in Power BI Designer" description="Common Query Tasks in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Common Query Tasks in Power BI Designer
+# Common Query Tasks in Power BI Designer
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
 When working in the Query view of the Power BI Designer, there are a handful of commonly used tasks. This document demonstrates those common tasks, and provides links for additional information. 
@@ -22,7 +22,7 @@ The first data connection is an Excel workbook. The other is a Web resource (whi
 
 The steps necessary to connect to both of those data sources is where the common Query tasks begin.
 
-##Connect to Data
+## Connect to Data
 
 To connect to data in the Power BI Designer, select the **Get Data** button from the **Home** tab on the ribbon. The Power BI Designer presents a menu with the most common data sources. For a complete list of data sources to which Query can connect, select the **More...** button at the bottom of the menu. For more information, see [Data Sources in Power BI Designer](https://powerbi.uservoice.com/knowledgebase/articles/471643).
 
@@ -279,7 +279,7 @@ The formula categories for Query are the following:
 
 ﻿﻿
 
-##More Information
+## More Information
 There are all sorts of things you can do with the Power BI Designer. For more information on its capabilities, check out the following resources:
 
 -   [Getting Started with Power BI Designer](https://powerbi.uservoice.com/knowledgebase/articles/471664)

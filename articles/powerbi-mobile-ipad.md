@@ -1,6 +1,6 @@
 <properties pageTitle="Get started with the iPhone app (Power BI for iOS preview)" description="Get started with the iPhone app (Power BI for iOS preview)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Get started with the iPhone app (Power BI for iOS preview)
+# Get started with the iPhone app (Power BI for iOS preview)
 [← iPhone app (Power BI for iOS preview)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios-preview)
 
 The iPhone app for Microsoft Power BI for iOS preview brings Power BI to your pocket, with live, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere.
@@ -19,7 +19,7 @@ Bring your own data together and create dashboards and reports in [Power BI](ht
 
 -   **Start with samples**    Even without signing up or signing in, after you download the app you can view the samples. Or go back to the samples whenever you want from the dashboards home page.
 
-##Now what?
+## Now what?
 
 What else you can do in the iPhone app for Power BI?
 

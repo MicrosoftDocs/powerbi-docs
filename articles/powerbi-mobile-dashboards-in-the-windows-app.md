@@ -1,6 +1,6 @@
 <properties pageTitle="Dashboards in the Power BI for Windows app" description="Dashboards in the Power BI for Windows app" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Dashboards in the Power BI for Windows app
+# Dashboards in the Power BI for Windows app
 
 [← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 

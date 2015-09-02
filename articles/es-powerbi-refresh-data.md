@@ -17,11 +17,11 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Actualizar datos en Power BI
+# Actualizar datos en Power BI
 [Datos de Get ←](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 Siempre que los informes sobre los datos que está cambiando, es importante que los datos detrás de los informes están actualizados. Power BI admite actualización programada o manual para un número limitado de orígenes de datos. Orígenes de datos adicionales será compatible con la actualización en las próximas versiones.
-##Orígenes de datos que la actualización de soporte técnico en Power BI
+## Orígenes de datos que la actualización de soporte técnico en Power BI
 
 Programación de actualización y actualizar ahora en Power BI son ***sólo*** admite para los libros de Excel donde Power Query se utiliza para conectarse a y consultar los datos de los orígenes de datos siguientes:
 
@@ -50,7 +50,7 @@ Programación de actualización y actualizar ahora en Power BI son ***sólo*** a
 	-   Si ha creado una conexión directa a los datos a través de PowerPivot, no puede programarse para la actualización. La alternativa consiste en conectar directamente a través de Power Query.
 	-   Si ha cargado los datos a una hoja de cálculo, no puede programarse para la actualización. La alternativa es cargar la consulta directamente en el modelo de datos cambiando la configuración de la carga de la consulta.
 
-##Actualizar los datos
+## Actualizar los datos
 
 Hay dos maneras puede actualizar un conjunto de datos, programación de actualización y actualizar ahora. En cualquier caso, en primer lugar necesitará especificar credenciales para Power BI pueda conectarse al origen de datos. Cuando se especifica, se conservan en la configuración del conjunto de datos y no tendrá que escribir de nuevo.
 ### Para especificar las credenciales
@@ -79,7 +79,7 @@ En el Explorador de Power BI, en conjuntos de datos, seleccione un conjunto de d
   
 ![](media/powerbi-refresh-data/RefreshData_RefNow_1.png)
 
-##Más información acerca de la actualización de los datos
+## Más información acerca de la actualización de los datos
 En Power BI, actualizar conjuntos de datos, ya que esto es donde los datos subyacentes de los informes. Quizás esté pensando "pero conectados a una hoja de cálculo de Excel y SalesForce como los orígenes de datos". Bueno, eso es true, pero cuando se conecta a los libros de Excel en Power BI, se importarán los datos o conexiones de ellos Power BI. Una vez en Power BI, los datos se almacenan en un modelo que se mantiene en memoria y en una estructura que facilita visualizaciones en los informes y paneles para cambiar y volver a calcular las métricas rápidamente.
 ### Cuándo actualizar datos
 

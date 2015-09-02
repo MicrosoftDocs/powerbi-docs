@@ -1,6 +1,6 @@
 <properties pageTitle="Measures in Power BI Designer" description="Measures in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Measures in Power BI Designer
+# Measures in Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -10,19 +10,19 @@ Measures are used in some of the most common data analysis; for example, sums, a
 
 **Note:** Just like Power BI Designer is Preview edition, so is this article. Information provided here will change often as new features in the designer become available.
 
-##Understanding measures
+## Understanding measures
 
 In Power BI Designer, measures are created and used in Report View. Measures you create yourself appear in the field list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
 
 ![](media/powerbi-designer-measures/MIPBID_1_FieldListWithMeasures.png)
 
-##Data Analysis Expressions
+## Data Analysis Expressions
 
 Measures calculate a result from an expression formula. When you create your own measures, you’ll use the Data Analysis Expressions (DAX) formula language. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating measures to calculate results for just about any data analysis need.
 
 DAX formulas are a lot like Excel formulas. DAX even has many of the same functions like DATE, SUM, and LEFT. But, DAX’s functions are meant to work with relational data like we have in Power BI Designer.
 
-##Let’s look at an example
+## Let’s look at an example
 
 Jan is a sales manager at Contoso. She’s been asked to provide reseller sales projections over the next fiscal year. She decides to base her estimates on last year’s sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
 
@@ -40,7 +40,7 @@ Jan then drags her new Projected Sales measure into the chart.
 
 Very quickly and with minimal effort, Jan now has a measure to calculate projected sales. She can  further analyze her projections by filtering on specific resellers or by adding other fields to her report.
 
-##Learn more
+## Learn more
 
 We’ve only provided you with a quick introduction to measures here, but there’s a lot more to help you learn how to create your own. Be sure to see the [Tutorial: Create your own measures in Power BI Designer](http://support.powerbi.com/knowledgebase/articles/556656-tutorial-create-your-own-measures-in-power-bi-des), where you can download a sample file and get step-by-step lessons on how to create more measures.  
 

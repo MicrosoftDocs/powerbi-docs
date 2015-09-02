@@ -1,6 +1,6 @@
 <properties pageTitle="Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)" description="Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)
+# Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)
 
 [← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios-preview)
 
@@ -35,7 +35,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
 6.  Tap **Send**.
 
-##See also
+## See also
 
 [Get started with the iPad app](http://support.powerbi.com/knowledgebase/articles/467172-the-ipad-app-for-power-bi-preview) (Power BI for iOS)  
 [Share dashboards from the iPad app](http://support.powerbi.com/knowledgebase/articles/467181-share-dashboards-from-the-ipad-app-power-bi-for-i)

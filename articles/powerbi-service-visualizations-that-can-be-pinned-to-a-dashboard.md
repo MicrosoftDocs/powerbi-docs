@@ -1,9 +1,9 @@
 <properties pageTitle="Visualizations that can be pinned to a dashboard" description="Visualizations that can be pinned to a dashboard" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Visualizations that can be pinned to a dashboard
+# Visualizations that can be pinned to a dashboard
 
 [← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)  
-##Visualizations you **can** pin to a dashboard
+## Visualizations you **can** pin to a dashboard
 
 Not all of the [visualizations that you can add to Power BI reports](http://support.powerbi.com/knowledgebase/articles/469552) can be pinned to a dashboard. The current list of pin-able visualizations:
 
@@ -27,7 +27,7 @@ Not all of the [visualizations that you can add to Power BI reports](http://sup
 -   Tree maps (For more information, see [Tutorial: Treemaps in Power BI](https://support.powerbi.com/knowledgebase/articles/556188))
     
 
-##See Also:
+## See Also:
 
 [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
 [Types of visualizations available in Power BI reports and Q&A](http://support.powerbi.com/knowledgebase/articles/469552)  

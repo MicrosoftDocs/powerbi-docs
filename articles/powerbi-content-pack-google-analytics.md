@@ -1,6 +1,6 @@
 <properties pageTitle="Google Analytics content pack for Power BI" description="Google Analytics content pack for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Google Analytics content pack for Power BI
+# Google Analytics content pack for Power BI
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 **Update 6/3:**
@@ -51,7 +51,7 @@ Still having issues? Open a support ticket to reach the Power BI team:
 -   While in the Power BI app, select the question mark > **Contact Support.**
 -   From the Power BI Support site (where you're reading this article), select **Contact Support** on the right side of the page.
 
-##See also
+## See also
 
 [Get started with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
 [Power BI Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)

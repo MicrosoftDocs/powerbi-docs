@@ -1,17 +1,17 @@
 <properties pageTitle="Connect to Project Online data through the Power BI Designer" description="Connect to Project Online data through the Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Connect to Project Online data through the Power BI Designer
+# Connect to Project Online data through the Power BI Designer
 
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 You can connect to data in Project Online through the Power BI Designer.
-###Step 1: Download the Power BI Designer
+### Step 1: Download the Power BI Designer
 
 1.  Download the Power BI Designer from the following link.  
     [﻿http://powerbi.com/dashboards/downloads/designer/](http://powerbi.com/dashboards/downloads/designer/)
 2.  Run the installer and follow the instructions.
 
-###Step 2: Connect to Project Online with OData
+### Step 2: Connect to Project Online with OData
 
 1.  Open the Power BI Designer on your computer.
 2.  On the Welcome screen, click **﻿Get Data.**﻿

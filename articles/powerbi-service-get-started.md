@@ -17,7 +17,7 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Get started with Power BI
+# Get started with Power BI
 [← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to explore further with ***reports***.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
@@ -30,7 +30,7 @@ Prefer to watch instead of read?  Watch our getting started video:
 <p><span><iframe width="500" height="281" frameborder="0" data-embed-url="https://www.youtube.com/watch?v=UE001nxTKqg" allowfullscreen="" scrolling="no" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FUE001nxTKqg%3Fwmode%3Dtransparent%26feature%3Doembed&amp;wmode=transparent&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUE001nxTKqg&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FUE001nxTKqg%2Fhqdefault.jpg&amp;key=92cb8bc08566453cb1d8d02838cb7b06&amp;type=text%2Fhtml&amp;schema=youtube" class="embedly-embed"></iframe></span><br></p>
 
 
-##Step 1: Get data
+## Step 1: Get data
 
 [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? You can try out the [new Power BI for free](http://www.powerbi.com/ "try out the new Power BI for free").
 
@@ -58,7 +58,7 @@ Prefer to watch instead of read?  Watch our getting started video:
     ![](media/powerbi-service-get-started/gettingstart3.png)
     
 
-##Step 2: Explore your dataset
+## Step 2: Explore your dataset
 
 Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.
 

@@ -1,6 +1,6 @@
 <properties pageTitle="Add an image to a dashboard" description="Add an image to a dashboard" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Add an image to a dashboard
+# Add an image to a dashboard
 
 [← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)  
 

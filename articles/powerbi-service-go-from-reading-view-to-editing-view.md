@@ -1,6 +1,6 @@
 <properties pageTitle="Go from Reading View to Editing View in Power BI" description="Go from Reading View to Editing View in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Go from Reading View to Editing View in Power BI
+# Go from Reading View to Editing View in Power BI
 
 [← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
@@ -15,7 +15,7 @@ In Editing View in Power BI (compared to [Reading View](http://support.powerbi.c
 2.  There are so many ways to [edit your report](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report), slicing and dicing your data to discover insights and get answers to questions. 
 3.  When you get it the way you want it, [save your report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
 
-##See Also:
+## See Also:
 
 Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)  
 [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  

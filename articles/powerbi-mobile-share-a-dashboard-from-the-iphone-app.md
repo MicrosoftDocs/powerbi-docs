@@ -1,12 +1,12 @@
 <properties pageTitle="Share a dashboard from the iPhone app (Power BI for iOS)" description="Share a dashboard from the iPhone app (Power BI for iOS)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Share a dashboard from the iPhone app (Power BI for)
+# Share a dashboard from the iPhone app (Power BI for)
 
 [← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios-preview)
 
 Invite colleagues to view your dashboards by sharing links from the iPhone app for Power BI. You can only share dashboards with colleagues in the same email domain as you.
 
-##Share a dashboard
+## Share a dashboard
 
 1.  In the upper-right corner of your dashboard, tap the Options icon \> tap **Invite a colleague**.
 
@@ -22,7 +22,7 @@ Invite colleagues to view your dashboards by sharing links from the iPhone app f
 
     Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in the iPhone or iPad app, it's added to their Power BI.
 
-##Unshare a dashboard
+## Unshare a dashboard
 
 You can only unshare a dashboard if you're the dashboard owner.
 
@@ -42,7 +42,7 @@ You can only unshare a dashboard if you're the dashboard owner.
 
 3.  To unshare, tap the red circle next to a name and tap **Delete**.
 
-##Notes about sharing dashboards
+## Notes about sharing dashboards
 
 You and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard.
 

@@ -17,7 +17,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Compartir un panel de Power BI \(y dejar de compartir\)
+# Compartir un panel de Power BI \(y dejar de compartir\)
 [← Todo acerca de los paneles](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 Puede compartir sus escritorios con personas de su organización. Si no ha suscrito a [Power BI](http://powerbi.com/), deberá hacerlo para ver el escritorio.
@@ -37,7 +37,7 @@ Puede compartir sus escritorios con personas de su organización. Si no ha suscr
 
     ![](media/powerbi-service-share-unshare-dashboard/PBI_ShareDash1.png)
 
-##Notas acerca del uso compartido
+## Notas acerca del uso compartido
 
 Cuando se comparte con sus colegas:-pueden ver el escritorio e interactuar con los informes en [vista lectura](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view). Que no pueden crear nuevos informes o guardar los cambios en los informes existentes. -Incluso pueden ver los cambios que realice \(después de guardar los cambios\). No pueden ver o descargar el conjunto de datos o usar cualquiera de las operaciones de actualización de datos. -Verán este icono ![](media/powerbi-service-share-unshare-dashboard/PBI_SharedWithYouIcon.png) junto a Mi panel compartido, que indica el panel se comparte con ellos.
 
@@ -47,10 +47,10 @@ Puede compartir con los usuarios que tienen el mismo dominio de correo electrón
 
 -   https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
 
-###Resharing  
+### Resharing  
 Resharing permite que sus compañeros de trabajo reenviar la invitación de correo electrónico a otras personas de su organización \(la invitación expira transcurrido un mes\). También pueden compartir compañeros de trabajo a través del web y aplicaciones móviles. Como propietario del panel, puede desactivar resharing y también se puede revocar resharing de forma individual \(ver abajo\).
 
-##Dejar de compartir un panel de información
+## Dejar de compartir un panel de información
 
 1.  Abra el panel para compartir y haga clic en Compartir escritorio.  
 
@@ -61,7 +61,7 @@ Resharing permite que sus compañeros de trabajo reenviar la invitación de corr
     ![](media/powerbi-service-share-unshare-dashboard/PBI_SharedWith.png)
 3.  Haga clic en el botón de puntos suspensivos \(\*\*... \*\*\) junto a **puede ver** y seleccione: **dejar de compartir** con dicha persona o **Deshabilitar reshares** para impedir que esa persona compartir con otra persona. O si la persona todavía no ha aceptado su invitación de recurso compartido **Cancelar invitar a**.
 
-##Desactivar resharing
+## Desactivar resharing
 
 Sólo el propietario de panel puede activar resharing activar y desactivar.
 

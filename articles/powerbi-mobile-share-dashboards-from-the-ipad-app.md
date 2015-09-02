@@ -1,11 +1,11 @@
 <properties pageTitle="Share dashboards from the iPad app (Power BI for iOS)" description="Share dashboards from the iPad app (Power BI for iOS)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Share dashboards from the iPad app (Power BI for iOS)
+# Share dashboards from the iPad app (Power BI for iOS)
 [← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios-preview)
 
 Invite colleagues by sharing links to dashboards and [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/527030-annotate-and-share-a-snapshot-of-a-tile-from-the-i) from the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS. The people you share it with need to sign up for Power BI, too.
 
-##Share a dashboard with colleagues
+## Share a dashboard with colleagues
 
 1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/PBI_iOS_ShareRptIcon.png) icon in the upper-right corner of your dashboard.
 2.  Type email addresses and a message to accompany your dashboard invitation.
@@ -17,7 +17,7 @@ Invite colleagues by sharing links to dashboards and [snapshots of tiles](http:
 
 Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in one of the mobile apps, it's added to their Power BI.
 
-##Unshare a dashboard
+## Unshare a dashboard
 
 You can only unshare a dashboard if you're the dashboard owner.
 
@@ -35,7 +35,7 @@ You can only unshare a dashboard if you're the dashboard owner.
 
 3.  To unshare, tap the red circle next to a name and tap **Delete**.
 
-##Notes about sharing dashboards
+## Notes about sharing dashboards
 
 You and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard.
 

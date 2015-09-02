@@ -1,6 +1,6 @@
 <properties pageTitle="Marketo content pack for Power BI" description="Marketo content pack for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
-#Marketo content pack for Power BI
+# Marketo content pack for Power BI
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 ﻿The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.  
@@ -53,7 +53,7 @@ The following data is available from Marketo in Power BI where the activity occu
 
 All dates are in UTC. Depending on which time zone your account is in, dates my vary (similar as is seen in the Marketo client)
 
-###API Limit Details
+### API Limit Details
 
 Importing data from Marketo uses Marketo APIs. Every customer of Marketo has a total limit of 10,000 API calls per day that are shared between all applications that use the Marketo APIs. You may use the APIs for other integrations as well as the Power BI integration. For more information on the APIs see: <http://developers.marketo.com/documentation/rest/>.
 
@@ -69,7 +69,7 @@ The amount of API calls Power BI makes to Marketo depends on the amount of data 
 |**Total API Calls**|-|**2,200**|
  
 
-###See Also:
+### See Also:
 
 [Get started with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
 [Get Data for Power BI Preview](http://support.powerbi.com/knowledgebase/articles/434354-get-data)  

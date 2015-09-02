@@ -1,10 +1,10 @@
 <properties pageTitle="Download the Power BI samples (Excel workbooks)" description="Download the Power BI samples (Excel workbooks)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Download the Power BI samples (Excel workbooks)
+# Download the Power BI samples (Excel workbooks)
 
 [← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
-##Important information
+## Important information
 
  ©2015 Microsoft Corporation. All rights reserved. The documents and workbooks are provided "as-is." Information and views expressed in the workbooks, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
@@ -49,7 +49,7 @@ The workbook contains the actual data, but it's in the data model, not in worksh
 -   To see the data, on the **PowerPivot** tab, click **Manage Data Model**.  
     Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/en-US/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
 
-##See Also:
+## See Also:
 
 -  [Sample datasets](http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets)
 -  [Get data for Power BI](http://support.powerbi.com/knowledgebase/articles/434354-get-data)

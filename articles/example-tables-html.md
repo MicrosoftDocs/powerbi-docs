@@ -1,20 +1,20 @@
 ﻿<properties pageTitle="Documentation Example - HTML Tables" description="This is an example document" title="Documentation Example - HTML Tables" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
 
 
-# Example - HTML Tables #
+# Example - HTML Tables
 This is a sample documentation article that is used to test and validate the publishing system for WindowsAzure.com.  
 
 The content between the lines below demonstrates the use of HTML formatted tables.  Notice that each closing table tag is followed by `<br />`. This is required (as of 2014-01-01) by WindowsAzure.com and also by GitHub in order to avoid breaking the markdown formatting.  
 
 ---
 
-#What version of Hadoop is in Windows Azure HDInsight?
+# What version of Hadoop is in Windows Azure HDInsight?
 
 HDInsight supports multiple Hadoop cluster versions that can be deployed at any time. Each version choice provisions a specific version of the HortonWorks Data Platform (HDP) distribution and a set of components that are contained within that distribution.
 
-##HDInsight versions
+## HDInsight versions
 
-###Cluster version 2.1
+### Cluster version 2.1
 
 The default cluster version used by [Windows Azure HDInsight](http://go.microsoft.com/fwlink/?LinkID=285601) is 2.1. It is based on the Hortonworks Data Platform version 1.3.0 and provides Hadoop services with the component versions itemized in the following table:
 
@@ -31,7 +31,7 @@ The default cluster version used by [Windows Azure HDInsight](http://go.microsof
 </table><br/>
 
 
-###Cluster version 1.6
+### Cluster version 1.6
 
 [Windows Azure HDInsight](http://go.microsoft.com/fwlink/?LinkID=285601) cluster version 1.6 is also available. It is based on the Hortonworks Data Platform version 1.1.0 and provides Hadoop services with the component versions itemized in the following table:
 

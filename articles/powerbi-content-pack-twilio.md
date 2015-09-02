@@ -1,6 +1,6 @@
 <properties pageTitle="Twilio content pack for Power BI" description="Twilio content pack for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
-#Twilio Content Pack for Power BI
+# Twilio Content Pack for Power BI
 
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
@@ -8,7 +8,7 @@ The Microsoft Twilio content pack for Power BI allows you to retrieve your Twil
 
 The data will be refreshed once a day so you are always looking at the latest data.
 
-##Get started using the content pack
+## Get started using the content pack
 
 1.  Click the **Get Data** link at the top of the navigation pane.
 
@@ -34,7 +34,7 @@ The data will be refreshed once a day so you are always looking at the latest da
 
 This dashboard can be fully changed to how you want to display your data. It allows you to ask a [question in ](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)[Q&A](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669-when-you-click-a-tile-in-a-dashboard) and [c](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete)[](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete)[hange the tiles](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) in the dashboard. 
 
-##The data that the content pack brings from Twilio
+## The data that the content pack brings from Twilio
 
 1.  The details for all calls and messages transactions for the last 30 days. You can do all sorts of analysis and aggregation on this data.
 2.  A set of already aggregated stats that you may want to keep an eye on. This set includes:
@@ -78,6 +78,6 @@ This dashboard can be fully changed to how you want to display your data. It all
 > This Month Outbound Messages Price  
 > This Month Outbound Messages Count  
 
-##Known Issues
+## Known Issues
 
 If you have a very large amount of data in the past 30 days (hundreds of thousands of transactions), the data retrieval step might fail. We are aware of the problem and working on solving it. Meanwhile, if you hit this issue please use the support link at the top of your Power BI page to let us know and we'll contact you for further investigations.

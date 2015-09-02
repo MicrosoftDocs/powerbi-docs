@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Importing and analyzing data from a Web Page using Power BI Designer" description="Tutorial: Importing and analyzing data from a Web Page using Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/19/2015" ms.author="v-anpasi"/>
-#Tutorial: Importing and analyzing data from a Web Page using Power BI Designer
+# Tutorial: Importing and analyzing data from a Web Page using Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -30,7 +30,7 @@ In this article
 
 >             Step 2: Create a Map visualization
 
-##Task 1: Connect to a web data source
+## Task 1: Connect to a web data source
 
 In task 1, you import a Tournament Summary table from the UEFA European Football Championship Wikipedia page at http://en.wikipedia.org/wiki/UEFA\_European\_Football\_Championship
 ﻿﻿﻿![](media/powerbi-designer-tutorial-importing-and-analyzing-data-from-a-web-page/WebPage1.jpg)

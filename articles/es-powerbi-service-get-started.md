@@ -17,7 +17,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Introducción a Power BI
+# Introducción a Power BI
 [← Introducción](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Microsoft Power BI le ayudará a mantenerse al día con la información que es importante para usted. Con Power BI, ***paneles*** ayuda a tener un dedo en el pulso de su negocio. Los paneles muestran ***mosaicos*** que puede hacer clic para explorar más con ***informes***. Conectarse a varios ***conjuntos de datos*** para llevar todos los datos relevantes juntos en un solo lugar.
@@ -29,7 +29,7 @@ Microsoft Power BI le ayudará a mantenerse al día con la información que es i
 <p><span><iframe width="500" height="281" frameborder="0" data-embed-url="https://www.youtube.com/watch?v=UE001nxTKqg" allowfullscreen="" scrolling="no" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FUE001nxTKqg%3Fwmode%3Dtransparent%26feature%3Doembed&amp;wmode=transparent&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUE001nxTKqg&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FUE001nxTKqg%2Fhqdefault.jpg&amp;key=92cb8bc08566453cb1d8d02838cb7b06&amp;type=text%2Fhtml&amp;schema=youtube" class="embedly-embed"></iframe></span><br></p>
 
 
-##Paso 1: Obtener datos
+## Paso 1: Obtener datos
 
 [Iniciar sesión en Power BI](http://www.powerbi.com/). ¿No tiene una cuenta? Puede probar el [nuevo Power BI para liberar](http://www.powerbi.com/ "Pruebe gratis los nuevos Power BI").
 
@@ -57,7 +57,7 @@ Microsoft Power BI le ayudará a mantenerse al día con la información que es i
     ![](media/powerbi-service-get-started/gettingstart3.png)
     
 
-##Paso 2: Explorar el conjunto de datos
+## Paso 2: Explorar el conjunto de datos
 
 Ahora que ha conectado a datos, explore para buscar información. Cuando haya encontrado algo que desea supervisar, puede crear un panel de información para mantener actualizados con los cambios.
 

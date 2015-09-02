@@ -17,7 +17,7 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Data Sources in Power BI Designer
+# Data Sources in Power BI Designer
 [← Power BI Designer](https://support.powerbi.com/media/knowledgebase/topics/68530-power-bi-designer)
 
 The Power BI Designer lets you connect to data from many different sources. A full list of available data sources is at the bottom of this page.
@@ -39,7 +39,7 @@ Selecting **More…** from the **Most Common** menu displays the **Get Data** wi
 ![](media/powerbi-designer-data-sources/DataSources_GetData.png)
 
 
-##Data Sources
+## Data Sources
 
 Data types are organized in the following categories:
 
@@ -116,7 +116,7 @@ The following image shows the **Get Data** window for **Other**.
 ![](media/powerbi-designer-data-sources/DataSources_Other.png)
 
 
-##Connecting to a Data Source
+## Connecting to a Data Source
 
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 

@@ -1,6 +1,6 @@
 <properties pageTitle="Troubleshooting scheduled refresh for Azure SQL Databases in Power BI" description="Troubleshooting scheduled refresh for Azure SQL Databases in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Troubleshooting scheduled refresh for Azure SQL Databases in Power BI
+# Troubleshooting scheduled refresh for Azure SQL Databases in Power BI
 
 [← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 

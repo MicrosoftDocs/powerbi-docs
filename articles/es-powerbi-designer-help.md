@@ -17,7 +17,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Ayuda de diseñador de BI de energía
+# Ayuda de diseñador de BI de energía
 
 [Diseñador ← Power BI](https://support.powerbi.com/media/knowledgebase/topics/68530-power-bi-designer)
 

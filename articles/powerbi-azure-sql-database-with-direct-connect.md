@@ -1,6 +1,6 @@
 <properties pageTitle="Azure SQL Database With Direct Connect" description="Azure SQL Database With Direct Connect" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
-#Azure SQL Database With Direct Connect
+# Azure SQL Database With Direct Connect
 
 [← Big data and more](https://support.powerbi.com/knowledgebase/topics/88773-big-data-and-more)
 
@@ -39,7 +39,7 @@ These restrictions and notes may change as we continue to improve the experience
 
 ![](media/powerbi-azure-sql-database-with-direct-connect/Visuals.png)
 
-###Finding Parameter Values
+### Finding Parameter Values
 
 Your fully qualified server name and database name can be found in the Azure Portal.
 
@@ -48,7 +48,7 @@ Your fully qualified server name and database name can be found in the Azure Por
 
 ![](media/powerbi-azure-sql-database-with-direct-connect/AzurePortal_update.png)
 
-##See Also:
+## See Also:
 
 [Get started with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
 [Get Data for Power BI Preview](http://support.powerbi.com/knowledgebase/articles/434354-get-data)

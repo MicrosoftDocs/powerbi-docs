@@ -1,22 +1,22 @@
 <properties pageTitle="Create and manage relationships in Power BI Designer" description="Create and manage relationships in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Create and manage relationships in Power BI Designer
+# Create and manage relationships in Power BI Designer
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
 When you import multiple tables, chances are you’re going to do some analysis using data from all those tables. Relationships between those tables are necessary in order to accurately calculate results and display the correct information in your reports. The Power BI Designer makes creating those relationships easy. In-fact, in most cases you won’t have to do anything, the designer’s Autodetect feature can do it for you. However, in some cases you might have to create relationships yourself, or you might need to make some changes to a relationship. Either way, it’s important to understand relationships in Power BI and how to create and edit them.
 
-##Autodetect during load
+## Autodetect during load
 
 If you query two or more tables at the same time, when the data is loaded, the designer will attempt to find and create relationships for you. Cardinality, Cross filter direction, and Active properties are automatically set. The designer looks at column names in the tables you are querying to determine if there are any potential relationships. If there are, those relationships are created automatically. If the designer cannot determine with a high-level of confidence there is a match, it will not automatically create the relationship. You can still use the Manage Relationships dialog to create or edit relationships.
 
 
-##Create a relationship by using Autodetect
+## Create a relationship by using Autodetect
 
 In Power BI Designer, in Report View, on the **Home** tab, click **Manage Relationships** \> **AutoDetect.**
 
 > ![](media/powerbi-designer-create-and-manage-relationships/AutoDetectRelationships.gif)
 
-##Create a relationship manually
+## Create a relationship manually
 
 1.  On the **Home** tab, click **Manage Relationships** \> **New**.
 
@@ -28,18 +28,18 @@ In Power BI Designer, in Report View, on the **Home** tab, click **Manage Relati
 
 By default, the designer will automatically configure the Cardinality (direction), Cross filter direction, and Active properties for your new relationship; however, you can change these if necessary in **Advanced options**. To learn more, see the Understanding advanced options section later in this article.
 
-###Edit a relationship
+### Edit a relationship
 
 1.  On the **Home** tab, click **Manage Relationships**.
 
 2.  In the **Manage Relationships** dialog, select the relationship, then click **Edit**.
 
-###Configure advanced options
+### Configure advanced options
 
 
 When you create or edit a relationship, you can configure advanced options.  By default, the designer will automatically configure the advanced options based on a best guess. This can be different for each relationship based on the data in the columns.
 
-####Cardinality
+#### Cardinality
 
 **Many to One (\*:1)**  - This is the most common, default type. This means the column in one table can have more than one instance of a value, and the other related table, often know as the Lookup table, has only one instance of a value.
 
@@ -49,7 +49,7 @@ When you create or edit a relationship, you can configure advanced options.  By
 
 See the Understanding advanced options section later in this article for more details about when to change cardinality.
 
-####Cross filter direction
+#### Cross filter direction
 
 **Both -** This is the most common, default direction. This means for filtering purposes, both tables are treated as if they are a single table.
 
@@ -57,13 +57,13 @@ See the Understanding advanced options section later in this article for more de
 
 See the Understanding advanced options section later in this article for more details about when to change cross filter direction.
 
-####Make this relationship active
+#### Make this relationship active
 
 When checked, this means the relationship serves as the active, default relationship.  In cases where there are more than one relationship between two tables, the active relationship provides a way for the designer to automatically create visuals that include both tables.
 
 See the Understanding advanced options section later in this article for more details about when to make a particular relationship active.
 
-##Understanding relationships
+## Understanding relationships
 
 Once you have connected two tables together with a relationship, you can work with the data in both tables as if they were a single table, freeing you from having to worry about relationship details, or flattening those tables into a single table before importing them into Power BI.  In many situations, Power BI can automatically create relationships for you, so manually creating those relationships might not even be needed; however, if Power BI can’t determine with a high-degree of certainty that a relationship between two tables should exist, it will *not* automatically create the relationship for you. In that case, you will need to create the relationship.   
 
@@ -227,7 +227,7 @@ Why these columns? Well, if we look at the Project column in the ProjectHours ta
 
 If we look at the Project column in the CompanyProject table, we see there’s only *one* of each of the color values for project. In-effect, each color value in this table is *unique*, and that’s important, because we can create a relationship between these two tables. In this case, a *many-to-one* relationship. In a many-to-one relationship, at least one column in one of the tables must contain unique values. There are some advanced options for some relationships, and we’ll look at those later, but for now, let’s create a relationship between the Project columns in each of our two tables.
 
-###To create the new relationship
+### To create the new relationship
 
 1.  In the Designer, click **Manage Relationships**. This opens the Manage Relationship dialog.
 
@@ -253,7 +253,7 @@ When we sum up hours by Priority, Power BI will look for every instance of the u
 That was pretty easy, in-fact, with Autodetect, you might not even have to do this much.
 
 
-##Understanding advanced options
+## Understanding advanced options
 
 When a relationship is created, either with Autodetect or one you create manually, the designer will automatically configure advanced options based on the data in your tables. You can configure advanced relationship properties by expanding **Advanced options** in the Create/Edit relationship dialog.
 
@@ -262,7 +262,7 @@ When a relationship is created, either with Autodetect or one you create manuall
 As we said, these are usually set automatically and you won’t need to mess with them; however, there are several situations where you might want to configure advanced options yourself.
 
 
-###Future updates to the data require a different cardinality
+### Future updates to the data require a different cardinality
 
 Normally, the designer can automatically determine the best cardinality for the relationship.  If you do need to override the automatic setting, because you know the data will change in the future, you can select it in the Cardinality control. Let’s look at an example where we need to select a different cardinality.
 
@@ -520,7 +520,7 @@ But, let’s say you know the data will change the next time you refresh it. A r
 
 In this new combined table, the Project column has repeating values.  The two original tables won’t have a one-to-one relationship once the table is refreshed. In this case, because we know those future updates will cause the Project column to have duplicates, we want to set the Cardinality to be Many-to-One (\*:1), with the Many on the ProjectBudget side and the One on the CompanyProject side.
 
-##Adjusting cross filter direction for a complex set of tables of relationships
+## Adjusting cross filter direction for a complex set of tables of relationships
 
 For most relationships, the cross filter direction is set to ‘Both’.  There are, however, some more uncommon circumstances where you might need to set this different from the default, like if you’re importing a model from an older version of Power Pivot, where every relationship is set to a single direction. 
 
@@ -556,7 +556,7 @@ If you have a table pattern like this, with loops, then cross filtering can crea
 -   Bring in a table twice (with a different name the second time) to eliminate loops.  This makes the pattern of relationships like a star schema.  With a star schema all of the relationships can be set to Both.
 
 
-###Wrong active relationship
+### Wrong active relationship
 
 
 When the designer automatically creates relationships, it sometimes encounters more than one relationship between two tables.  When this happens only one of the relationships is set to be active.  The active relationship serves as the default relationship so that when you choose fields from two different tables, the designer can automatically create a visualization for you.  However, in some cases the automatically selected relationship can be wrong.  You can use the Manage Relationships dialog to set a relationship as active or inactive, or you can set the active relationship in the Edit relationship dialog. 

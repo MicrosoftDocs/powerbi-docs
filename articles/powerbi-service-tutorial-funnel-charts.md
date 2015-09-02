@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Funnel charts in Power BI" description="Tutorial: Funnel charts in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Tutorial: Funnel charts in Power BI
+# Tutorial: Funnel charts in Power BI
 
 [← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
  
@@ -11,7 +11,7 @@ Each funnel stage represents a percentage of the total. So, in most cases, a Fun
  > **NOTE**: This tutorial applies to the Power BI service and not to Power BI Designer. 
 
 ![](media/powerbi-service-tutorial-funnel-charts/funnel-plain.png)  
-##When to use a Funnel Chart
+## When to use a Funnel Chart
 
 Funnel Charts are a great choice:
 
@@ -23,7 +23,7 @@ Funnel Charts are a great choice:
 -   to track a shopping cart workflow.
 -   to track the progress and success of click-through advertising/marketing campaigns.
 
-##Working with Funnel Charts
+## Working with Funnel Charts
 
 Funnel Charts:
 
@@ -33,7 +33,7 @@ Funnel Charts:
 -   Can be highlighted and cross-filtered by other visualizations on the same report page.
 -   Can be used to highlight and cross-filter other visualizations on the same report page.
 
-##Create a basic Funnel Chart
+## Create a basic Funnel Chart
 
 We'll create a Funnel Chart that shows the number of opportunities we have in our sales stages.
 These instructions use the Opportunity Tracking Sample. To follow along, [download the sample](http://support.powerbi.com/knowledgebase/articles/514904-download-samples), sign in to powerBI.com and select **Get Data \> Excel Workbook \>  Connect \> Opportunity Tracking Sample**.**xlsx**.
@@ -59,7 +59,7 @@ These instructions use the Opportunity Tracking Sample. To follow along, [downlo
 
 6.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
 
-##Create an advanced Funnel Chart
+## Create an advanced Funnel Chart
 
 Sometimes it's not the numbers that are important, but the trends.  Let's look at our Opportunity Count funnel chart by month and compare conversion rates (by sales stage).
 
@@ -69,7 +69,7 @@ Sometimes it's not the numbers that are important, but the trends.  Let's look 
 Instead of a perfectly-shaped funnel chart each month, we see many different shapes.  A next step might be to compare this to previous years and months to determine whether we need to focus more attention on lead generation and/or sales closure in certain times of the year. 
 
 
-##Highlighting and cross-filtering
+## Highlighting and cross-filtering
 
 For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
 
@@ -83,7 +83,7 @@ Highlighting a bar in a Funnel cross-filters the other visualizations on the rep
 2.  In the "Factored Revenue by Opportunity" chart, highlight the **Large** bar to cross-filter the other visualizations on the page, including the Funnel chart.
     
 
-##Create a Funnel Chart in Q&A
+## Create a Funnel Chart in Q&A
 
 Highlight the dashboard that has at least one visualization pinned from the "Opportunity Tracking" dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](http://support.powerbi.com/knowledgebase/articles/487029).
 
@@ -94,7 +94,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 
     Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
 
-##See also:
+## See also:
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
 [Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-dashboard-from-a-report)  

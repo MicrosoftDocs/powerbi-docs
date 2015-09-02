@@ -1,6 +1,6 @@
 <properties pageTitle="Edit a tile -- resize, move, rename, delete" description="Edit a tile -- resize, move, rename, delete" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Edit a tile -- resize, move, rename, delete
+# Edit a tile -- resize, move, rename, delete
 
 [← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
@@ -17,15 +17,15 @@ You can change the look of a tile in a dashboard:
 ﻿
 2.  Hover over a dashboard tile and:
 
-    ###Rename the tile
+### Rename the tile
 
     -   click the pencil icon  ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png) to edit the tile title.
 
-    ###Move the tile
+### Move the tile
 
     -   click and hold the tile to drag it to a new location on the dashboard canvas.
 
-    ###Resize the tile
+### Resize the tile
 
     You can make tiles three different sizes -- small, medium, and large.
 
@@ -37,7 +37,7 @@ You can change the look of a tile in a dashboard:
     -   click the X icon ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_X_icon.png) to delete the tile. Deleting a tile does not delete the underlying report.
     
 
-##See Also:
+## See Also:
 
 [Dashboard tiles in Power BI](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi)  
 [Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  

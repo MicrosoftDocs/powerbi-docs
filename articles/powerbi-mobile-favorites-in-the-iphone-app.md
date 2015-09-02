@@ -1,6 +1,6 @@
 <properties pageTitle="Favorites in the iPhone app (Power BI for iOS)" description="Favorites in the iPhone app (Power BI for iOS)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Favorites in the iPhone app (Power BI for iOS)
+# Favorites in the iPhone app (Power BI for iOS)
 
 [← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios-preview)
 
@@ -10,7 +10,7 @@ For easy access to your most interesting data, you can mark specific tiles as fa
 
 > **Note**   You can't see your iPhone favorites on your iPad, or vice versa.
 
-##Create favorites
+## Create favorites
 
 1.  In your dashboard in the iPhone app, tap the Options icon \> tap **Add to favorites**.
 
@@ -24,7 +24,7 @@ For easy access to your most interesting data, you can mark specific tiles as fa
 
 3.  Tap the check mark in the upper-right corner when you've selected all the favorites you want.
 
-##View your favorites
+## View your favorites
 
 -   Tap **Favorites** ![](media/powerbi-mobile-favorites-in-the-iphone-app/PBI_iPh_FavesIcon.png) in the bar at the bottom of the app.
 
@@ -32,7 +32,7 @@ For easy access to your most interesting data, you can mark specific tiles as fa
 
     ![](media/powerbi-mobile-favorites-in-the-iphone-app/PBI_iPhone_FavePageNew.png)
 
-##Remove favorites
+## Remove favorites
 
 1.  On the Favorites page, tap the pencil in the upper-right corner ![](media/powerbi-mobile-favorites-in-the-iphone-app/PBI_iPh_FavesPagePencilIcon.png) and clear the stars from the tiles you don't want as favorites.
 

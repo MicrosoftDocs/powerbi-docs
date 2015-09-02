@@ -1,7 +1,7 @@
 
 <properties pageTitle="Connect to Data in Power BI Designer" description="Connect to Data in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/> 
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Connect to Data in Power BI Designer
+# Connect to Data in Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -55,7 +55,7 @@ Once the table is loaded, the Query view in the Power BI Designer lets you to sh
 
 Of course, this is a simple model with a single data connection; most Power BI Designer reports will have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model.  
 
-##More Information
+## More Information
 
 ﻿There are all sorts of things you can do with the Power BI Designer. For more information on its capabilities, check out the following resources:
 

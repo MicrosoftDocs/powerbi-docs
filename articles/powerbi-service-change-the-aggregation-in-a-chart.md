@@ -1,11 +1,11 @@
 <properties pageTitle="Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI" description="Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI
+# Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI
 [← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 A calculated field is a numeric value that will be summed or averaged, for example. Calculated fields in Power BI are imported with the data (defined in the data model your report is based on). In the Field List, calculated fields are shown with the ∑ symbol. If you want more information you can [Take a tour.of the Fields Pane](http://support.powerbi.com/knowledgebase/articles/468474-take-a-tour-of-the-fields-pane) and read about [aggregations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/471200-change-the-aggregation-in-a-chart-sum-average-m).
 
-##Change how a calculated field is aggregated in a chart
+## Change how a calculated field is aggregated in a chart
 Say you have a chart that sums the sales data for different regions, but you'd rather have the average. 
 
 1.  Add the calculated field to a visualization.
@@ -50,6 +50,6 @@ Would give the following results:
 **Convert a non-aggregated field to a calculated field**  
 You can also use a non-aggregated field as a calculated field. For example, if you have a Product Name field, you can add it to a table and then set it to Count. 
 
-##See Also:
+## See Also:
 [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
 [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)

@@ -35,7 +35,7 @@ Get started with the [iPad app for Power BI for iOS](powerbi-mobile-iphone.md).
 
 Get started with the [iPhone app for Power BI for iOS](http://support.powerbi.com/knowledgebase/articles/527036-get-started-with-the-iphone-app-power-bi-for-ios) preview.
 
-##Get started with Power BI
+## Get started with Power BI
 
 Start by [getting your data](http://support.powerbi.com/knowledgebase/topics/63369-get-data) from sources as varied as Excel spreadsheets, SQL Server Analysis Services, Salesforce, and and GitHub.
 

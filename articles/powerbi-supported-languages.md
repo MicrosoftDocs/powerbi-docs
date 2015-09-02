@@ -1,6 +1,6 @@
 <properties pageTitle="Supported languages for Power BI" description="Supported languages for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Supported languages for Power BI
+# Supported languages for Power BI
 
 [← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
@@ -53,7 +53,7 @@ The Power BI Preview (in your browser) is available in the following 44 languag
 
 **NOTE:** The Power BI Designer Preview and Power BI for iOS Preview are available in English only at this time.
 
-##What's translated
+## What's translated
 
 Menus, buttons, messages, and other elements of the experience are translated into your language, making it easier to navigate and interact with Power BI.  
 
@@ -64,7 +64,7 @@ At this time in the Preview, a few features are available in English only:
 
 Stay tuned as we work to bring additional features to other languages. 
 
-##Choose your language
+## Choose your language
 
 Power BI detects your language based on your language preferences on your computer. The way you access and change these preferences may vary depending on your operating system and browser. Here's how to access these preferences from Internet Explorer and Google Chrome.
 

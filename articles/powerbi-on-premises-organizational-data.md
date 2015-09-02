@@ -17,7 +17,7 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Connecting to on-premises organizational data from Power BI
+# Connecting to on-premises organizational data from Power BI
 
 [← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
