@@ -1,6 +1,6 @@
 <properties pageTitle="Shape and Combine Data in Power BI Designer" description="Shape and Combine Data in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Shape and Combine Data in Power BI Designer
+# Shape and Combine Data in Power BI Designer
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
 With the **Power BI Designer**, you can connect to many different types of data sources, then shape the data to meet your needs. *Shaping* data means transforming the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on. *Combining* data means connecting to two or more data sources, shaping them as needed, then consolidating them into one useful query.
@@ -9,7 +9,7 @@ This document demonstrates how to shape a query using the Power BI Designer, hig
 
 It’s useful to know that the **Query** view in Power BI Designer makes ample use of right-click menus, as well as the ribbon. Most of what you can select in the **Transform** ribbon is also available by right-clicking an item (such as a column) and choosing from the menu that appears.
 
-##Shape Data
+## Shape Data
 
 When you shape data in the Query view, you’re providing step-by-step instructions (that Query carries out for you) to adjust the data as Query loads and presents it. The original data source is not affected; only this particular view of the data is adjusted, or *shaped*.
 
@@ -99,7 +99,7 @@ Changing the table name is easy: in the **Query Settings** pane, under Propertie
 
 Okay, we’ve shaped that data to the extent we need to. Next let’s connect to another data source, and combine data.
 
-##Combine Data
+## Combine Data
 
 That data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there’s one problem: most data out there uses a two-letter abbreviation for state codes, not the full name of the state. We need some way to associate state names with their abbreviations.
 
@@ -169,7 +169,7 @@ We now have a single query (table) that combined two data sources, each of which
 
  
 
-##More Information
+## More Information
 
 ﻿There are all sorts of things you can do with the Power BI Designer. For more information on its capabilities, check out the following resources:
 

@@ -1,6 +1,6 @@
 <properties pageTitle="Dashboards on the iPad app (Power BI for iOS)" description="Dashboards on the iPad app (Power BI for iOS)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Dashboards on the iPad app (Power BI for iOS)
+# Dashboards on the iPad app (Power BI for iOS)
 
 [← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios-preview)
 
@@ -16,7 +16,7 @@ Power BI comes with built-in dashboards for some data sources such as Salesforce
 
 Then you see these same dashboards in the iPad app for Microsoft Power BI for iOS, and you can see dashboards your colleagues share with you.
 
-##View dashboards on your iPad
+## View dashboards on your iPad
 
 1.  Open the Power BI app.  
     Need to [download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store first?

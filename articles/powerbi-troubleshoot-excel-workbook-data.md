@@ -4,13 +4,13 @@
 
 [← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 
-##Problem
+## Problem
 
 When you import an Excel workbook into Power BI, you may see the following error:
 
 ![](media/powerbi-troubleshoot-excel-workbook-data/PBI_CldntFindData.png)
 
-##Quick solution
+## Quick solution
 
 1. Edit your workbook in Excel.
 2. Select the range of cells that contain your data. The first row should contain your column headers (the column names).
@@ -18,15 +18,15 @@ When you import an Excel workbook into Power BI, you may see the following error
 4. Save your workbook.
 5. Return to Power BI and import your workbook again.
 
-##Details
+## Details
 
-###Cause
+### Cause
 
 In Excel, you can create a **table** out of a range of cells, which makes it easier to sort, filter, and format data.
 
 When you import an Excel workbook, Power BI looks for these tables and imports them into a dataset; if it doesn't find any tables, you'll see this error message.
 
-###Solution
+### Solution
 
 1. Open your workbook in Excel. (Note: The pictures here are of Excel 2013. If you're using Excel 2007 or 2010, things may look a little different, but the steps are the same.)
 
@@ -61,7 +61,7 @@ If the import still fails, let us know by clicking **Contact support** in the he
 
   ![](media/powerbi-troubleshoot-excel-workbook-data/PBI_CldntFindData_ContactSupt.png)
 
-##More information
+## More information
 
 -   This article applies to Excel 2007, 2010, and 2013.
 -   The pictures here are of Excel 2013. If you're using Excel 2007 or 2010, things may look a little different, but the steps are the same.

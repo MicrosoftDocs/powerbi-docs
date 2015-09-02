@@ -1,6 +1,6 @@
 <properties pageTitle="GitHub content pack for Power BI" description="GitHub content pack for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
-#GitHub content pack for Power BI
+# GitHub content pack for Power BI
 
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
@@ -10,7 +10,7 @@ The GitHub content pack for Power BI allows you to gain insights into a GitHub r
 Creating this connection retrieves your data and automatically provides a dashboard and related reports based on the data.
 
 
-##Requirements:
+## Requirements:
 
 -   The GitHub account that has access to the repo
 -   Permission granted to the Power BI for GitHub app during first login
@@ -66,11 +66,11 @@ Creating this connection retrieves your data and automatically provides a dashb
 | ContributionPunchCard | This table can be used as a contribution punch card for the selected repo. It shows commits by day of week and hour of day. This table is not connected to other tables in the model. |
 | RepoDetails | This table provides details for the repo selected.  |
 
-##De-authorize Power BI
+## De-authorize Power BI
 
 To de-authorize Power BI from being connected to your GitHub repo you can Revoke access in GitHub. For more details see this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic.
 
-##Troubleshooting
+## Troubleshooting
 
 If necessary, you can verify your GitHub credentials.
 
@@ -78,7 +78,7 @@ If necessary, you can verify your GitHub credentials.
 2. In GitHub, navigate to the URL of the repo you plan to access in Power BI. For example: https://github.com/dotnet/corefx.
 3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.
 
-##See also
+## See also
 
 [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)  
 [Get data](http://support.powerbi.com/knowledgebase/topics/63369-get-data)

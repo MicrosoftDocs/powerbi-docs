@@ -1,6 +1,6 @@
 <properties pageTitle="Ask the right questions of Salesforce data in Power BI" description="Ask the right questions of Salesforce data in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Ask the right questions of Salesforce data in Power BI
+# Ask the right questions of Salesforce data in Power BI
 
 [← Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi)
 
@@ -23,7 +23,7 @@ Also look at the values in a column. For example, Stage Name is the column, but 
 
 > **Note**: We'll be adding questions for other cloud data sources periodically. Check back for more.
 
-##Questions to ask for Salesforce
+## Questions to ask for Salesforce
 
 For Salesforce data, here’s the best list of questions:
 
@@ -35,7 +35,7 @@ For Salesforce data, here’s the best list of questions:
 -   Closed sales by month
 
  
-##See also
+## See also
 
 [Salesforce data connector for Power BI](http://support.powerbi.com/knowledgebase/articles/424863-salesforce-connector-for-power-bi)  
 [Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)  

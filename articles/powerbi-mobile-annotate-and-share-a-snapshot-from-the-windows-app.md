@@ -1,13 +1,13 @@
 <properties pageTitle="Annotate and share a snapshot of a tile from the Power BI for Windows app" description="Annotate and share a snapshot of a tile from the Power BI for Windows app" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Annotate and share a snapshot of a tile from the Power BI for Windows app
+# Annotate and share a snapshot of a tile from the Power BI for Windows app
 [← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 When you share a tile from the Windows app for Power BI, you're sharing a snapshot of the tile. Your recipients see the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
 You can add annotations — lines, text, or stamps — to a tile before you share a snapshot. You can't save the annotations in the dashboard. They only show up with the tile you send in email.
 
-##Annotate a snapshot
+## Annotate a snapshot
 
 1.  Tap a tile to interact with it.
 
@@ -30,7 +30,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 -   Tap the X in the upper-left corner to close without sharing.
 -   Tap the share snapshot icon to share ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app/PBI_WinAppShareIconAlone.png).
 
-##Share the snapshot
+## Share the snapshot
 
 1.  Tap the share snapshot icon ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app/PBI_WinAppShareIconAlone.png) in the upper-right corner of the app.
 
@@ -42,7 +42,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
     
 	The recipient can see the annotated image of the tile, but can't open the report
 
-##See also
+## See also
 
 More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).  
 [Share dashboards](http://support.powerbi.com/knowledgebase/articles/510955-share-dashboards-from-the-power-bi-for-windows-app) from the Power BI for Windows app

@@ -17,7 +17,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Conectarse a datos de la organización local de Power BI
+# Conectarse a datos de la organización local de Power BI
 
 [Datos de Get ←](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 

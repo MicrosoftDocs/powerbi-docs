@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Facebook Analytics using Power BI Designer" description="Tutorial: Facebook Analytics using Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/19/2015" ms.author="v-anpasi"/>
-#Tutorial: Facebook analytics using Power BI Designer
+# Tutorial: Facebook analytics using Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -25,7 +25,7 @@ Here are the steps you'll take:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Step 2**: Create a Line chart and a Bar chart
 
-##Task 1: Connect to a Facebook page
+## Task 1: Connect to a Facebook page
 
 In this task you import data from the [Microsoft Power BI Facebook](https://www.facebook.com/microsoftbi)site, which is found at the following URL: https://www.facebook.com/microsoftbi. 
 
@@ -54,7 +54,7 @@ Once loaded, you’ll be taken to the **Report view** where the columns from the
 
 ![](media/powerbi-designer-tutorial-facebook-analytics/FBDesigner1.png)
 
-##Task 2: Create visualizations using the Report view
+## Task 2: Create visualizations using the Report view
 
 Now that you have landed the data from the page, you can quickly and easily gain insights about your data, using visualizations.
 
@@ -78,7 +78,7 @@ Move and resize the chart as necessary.
 
 ![](media/powerbi-designer-tutorial-facebook-analytics/FBDesigner5.png)
 
-##Task 3: Shape data in the table
+## Task 3: Shape data in the table
 
 Now that you have imported the table selected and you start to visualize it, you may notice you need to perform various data shaping and cleansing steps in order to get the most out of your data.
 
@@ -138,7 +138,7 @@ As you perform transformations in the Query view, query steps are created and li
 |**Rename **the column****|Renamed Columns1|Table.RenameColumns<br/><br/>(#&quot; Expand shares&quot;,{{&quot;shares.count&quot;, &quot;shares&quot;}})|
 |**Change Type**|Changed Type2|Table.TransformColumnTypes<br/><br/>(#&quot;Renamed Columns1&quot;,{{&quot;shares&quot;, Int64.Type}})|
 
-##Task 4: Create additional visualizations using the Report view
+## Task 4: Create additional visualizations using the Report view
 
 Now that we have converted the data into the shape that we need for the rest of our analysis, we can load the resulting table into our Report and create additional visualizations.
 

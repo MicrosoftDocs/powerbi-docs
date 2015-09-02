@@ -17,7 +17,7 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Getting Started with Power BI
+# Getting Started with Power BI
 
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, **dashboards** help you keep a finger on the pulse of your business.  Your dashboards display **tiles** that you can click to explore further with **reports**.  Connect to multiple **datasets** to bring all of the relevant data together in one place.
 
@@ -29,7 +29,7 @@ Prefer to watch instead of read?  Watch our getting started video:
 
 [TODO: Add video]
 
-##Step 1: Get data
+## Step 1: Get data
 
 [Sign in to Power BI](http://powerbi.microsoft.com). Don’t have an account? You can try out the [new Power BI Preview for free](http://powerbi.microsoft.com).
 

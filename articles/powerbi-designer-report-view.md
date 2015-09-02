@@ -1,6 +1,6 @@
 <properties pageTitle="Report View in Power BI Designer" description="Report View in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Report View in Power BI Designer
+# Report View in Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -10,7 +10,7 @@ The designer includes Report View, where you can create any number of report pag
 
 The difference is, when using the designer you can also work with your queries and model at the same time, to make sure your data supports the best insights in your reports. You can then save your designer reports to wherever you like, whether it be your local drive or to the cloud.
 
-##Let's take a look!
+## Let's take a look!
 
 When you first open the Power BI Designer, you’ll see Report View with a blank canvas.
 

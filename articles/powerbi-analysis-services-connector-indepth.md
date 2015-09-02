@@ -1,6 +1,6 @@
 <properties pageTitle="Power BI Analysis Services Connector in-depth" description="Power BI Analysis Services Connector in-depth" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Power BI Analysis Services Connector in-depth
+# Power BI Analysis Services Connector in-depth
 [← Administrative](https://support.powerbi.com/knowledgebase/topics/63248-administrative)  
 
 With Power BI Preview, users in your organization can now see your on-premises SQL Server Analysis Services data and metrics in a whole new way. But before users can connect to your Analysis Services models as a data source, an Analysis Services Connector needs to be installed and configured. The connector helps make the behind-the-scenes communication from a user in Power BI to your on-premises Analysis Services server and back to Power BI quick and secure.  
@@ -9,7 +9,7 @@ Installing and configuring a connector is usually done by an administrator. It r
 
 This article doesn’t provide step-by-step guidance on how to install and configure an Analysis Services Connector. For that, be sure to see [Configure a Power BI Analysis Services Connector](http://support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connector-f). This article is meant to provide you with an in-depth understanding of how the connector works. We’ll also go into some detail about usernames and security in both Power BI and Analysis Services, and how Power BI uses the e-mail address a user signs into Power BI with, the connector, and Active Directory to securely connect to and query your on-premises Analysis Services data. If you want to dig deeper, links to more detailed articles are provided.  
 
-##Making the connection
+## Making the connection
 
 Let’s first look at what happens when a user in Power BI interacts with a report connected to an Analysis Services datasource.
 
@@ -27,7 +27,7 @@ Let’s first look at what happens when a user in Power BI interacts with a repo
 
 Now, let’s go over what needs to be in-place for this to happen.
 
-##Usernames in Power BI
+## Usernames in Power BI
 
 When a user signs up for a Power BI account, they use an e-mail address. In most cases, this is a work e-mail address, like nancy@contoso.com.
 
@@ -35,15 +35,15 @@ However, in some cases, it could be an e-mail address like nancyt@contoso.onmicr
 
 The e-mail address users sign into Power BI with is known as an *effective username*. In-fact, when connecting to Analysis Services, it’s a value in an EffectiveUserName connection string property. Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the Analysis Services Connector and then onto your on-premises Analysis Services server. It must then be converted by an Active Directory server in the same domain to a Windows domain\\username account specified for the roles that Analysis Services use to secure your data.
 
-##Usernames in Analysis Services
+## Usernames in Analysis Services
 
 Before we talk about how an effective username and the connector is used to connect to Analysis Services, let’s take a quick look at how Analysis Services secures data. In tabular models, there are two levels of security:
 
-###Role-based security
+### Role-based security
 
 Tabular models provide security based on user roles. Roles are defined for a particular tabular model project during authoring in SQL Server Data Tools – Business Intelligence (SSDT-BI), or after a model is deployed, by using SQL Server Management Studio (SSMS). Roles contain members by Windows username or by Windows group. Roles define permissions a user has to query or perform actions on the tabular model. Most users will belong to a role with Read permissions. Other roles are meant for administrators with permissions to process tables, manage database functions, and manage other roles.
 
-###Row-level security
+### Row-level security
 
 Tabular models also provide dynamic, row-level security. Unlike having at least one role in which users belong to, dynamic security is not required for any tabular model. At a high-level, dynamic security defines a users read access to data right down to a particular row in a particular table. Similar to roles, dynamic row-level security relies on a user’s Windows username.
 
@@ -51,18 +51,18 @@ In Power BI, a users ability to query and view tabular model data are determined
 
 Implementing role and dynamic row-level security in tabular models is beyond the scope of this article.  You can learn more at [Roles (SSAS Tabular)](https://msdn.microsoft.com/en-us/library/hh213165.aspx) on MSDN. And, for the most in-depth understanding of tabular model security, download and read the [Securing the Tabular BI Semantic Model](https://msdn.microsoft.com/en-us/library/jj127437.aspx) whitepaper.
 
-##What is Active Directory’s role?
+## What is Active Directory’s role?
 
 
 In order for Analysis Services Server to determine if a user connecting to it belongs to a role with permissions to read data, the server needs to convert the effective username passed from Power BI to the connector and then onto the Analysis Services server. The Analysis Services server passes the effective username to a Windows Active Directory server *joined to the same domain*. The Active Directory server then validates the effective username and returns that user’s Windows username back to the Analysis Services server.
 
-##What about Azure Active Directory?
+## What about Azure Active Directory?
 
 Because Power BI is a cloud service, it uses [Azure Active Directory](http://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/) takes care of authenticating Power BI users.
 
 When users connect to an on-premises Analysis Services server from Power BI, their username must also be resolved in your domain’s Active Directory. If users in your organization login with their work e-mail address, like nancy@contoso.com, username resolution typically isn’t a problem. In some cases, if a user logs into Power BI with an .onmicrosoft.com address, your domains Active Directory server might need to be synchronized with Azure Active Directory. Fortunately, there’s a tool just for this.
 
-##Synchronize an on-premises Active Directory with Azure Active Directory
+## Synchronize an on-premises Active Directory with Azure Active Directory
 
 Synchronizing your Active Directory to Azure Active Directory with the Directory Synchronization (DirSync) tool is not a requirement if users sign into sign into Power BI with their work e-mail address. But if users sign into Power BI with a .onmicrosoft.com email address, you will need to sync your Active Directory server with Azure Active Directory.
 
@@ -88,13 +88,13 @@ In this case, you can use DirSync to synchronize Active Directory to Azure Activ
 
 To learn more about using DirSync, see [Directory Integration](https://technet.microsoft.com/en-us/library/jj573653.aspx) on TechNet.
 
-##Now, this is where the Analysis Services Connector comes in
+## Now, this is where the Analysis Services Connector comes in
 
 The connector acts as a bridge between the Power BI cloud service running in a user’s browser and your on-premises Analysis Services server. Data transfer between Power BI and the Analysis Services Connector is secured through [Azure Service Bus](http://azure.microsoft.com/en-us/documentation/services/service-bus/). The Service Bus creates a secure channel between  Power BI and your on-premises Analysis Services server through an outbound connection.  An inbound connection is not required to be opened in your on-premises firewall.
 
 You’ll need to install the connector on a computer joined to the same domain as your Analysis Services server and Active Directory. This can be the same computer as Analysis Services. In-fact, it’s even better because the communications between the connector and your Analysis Services server doesn’t have to make an extra hop over the network.
 
-###Before you install and configure a connector, be sure you have the following:
+### Before you install and configure a connector, be sure you have the following:
 
 -   The name of the Analysis Server you want to connect to. You will specify it right away when you step through the Connector’s configuration wizard. If your server uses a default instance name, you’ll only need to enter that name. If you’re connecting to an instance, you’ll enter ServerName\\Instance.
 
@@ -114,13 +114,13 @@ You’ll need to install the connector on a computer joined to the same domain a
 
 -   .NET Framework 4.5.1 or later must be installed on the same computer as the connector.
 
-##Uploading Excel workbooks with Analysis Services connections
+## Uploading Excel workbooks with Analysis Services connections
 
 Users in Power BI can upload Excel 2013 workbooks that already connect to Analysis Services tabular models. This can be useful when a user has already created a workbook with Power View reports based on Analysis Services tabular model data, and they want those reports for dashboards in Power BI.
 
 The Analysis Services connection string configured in the Excel workbook needs to match an Analysis Services Connector already installed and configured for the same Analysis Services instance. Power BI will automatically match the workbook’s connection with the connection defined in the Analysis Services Connector.
 
-##Where things can go wrong
+## Where things can go wrong
 
 Sometimes installing the connector fails. Or, maybe the connector seems to install ok, but Power BI is still unable to connect to an Analysis Services server. In many cases, it’s something simple, like the password for the Server Administrator account the connector uses to sign into Analysis Services expires.
 
@@ -128,7 +128,7 @@ In other cases, there might be issues with type of e-mail address users sign in 
 
 Rather than go into troubleshooting connector issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the Power BI Analysis Service Connector](http://support.powerbi.com/knowledgebase/articles/505324-troubleshooting-analysis-service-connector). Hopefully you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
-##FAQ
+## FAQ
 
 **Question:** Can I use msdmpump.dll to create custom effective username mappings  
 **Answer:** No. This is not supported at this time.
@@ -169,7 +169,7 @@ Rather than go into troubleshooting connector issues here, we’ve put a series 
 		<DbpropMsmdRequestID>ed28257d-b516-427e-a299-be5d60f14427</DbpropMsmdRequestID>
 	</PropertyList>
 
-##Additional resources
+## Additional resources
 
 For information in how to install and configure a Power BI Analysis Services Connector, see ﻿[Configure a Power BI Analysis Services Connector](http://support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connectorhttp:/support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connector).
 

@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Create your own measures in Power BI Designer" description="Tutorial: Create your own measures in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-##Tutorial: Create your own measures in Power BI Designer
+# Tutorial: Create your own measures in Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -12,7 +12,7 @@ This article is intended for Power BI users already familiar with using the desi
 
 To complete the steps in this tutorial, you’ll need to download the [Contoso Sales for Power BI Designer](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) file. It already includes online sales data from the fictitious company, Contoso, Inc. Because data in the file was imported from a database, you won’t be able to connect to the datasource or view it in Query view. When you have the designer file on your own computer, go ahead and open it in Power BI Designer.
 
-##First-things-first: What are these measures all about?
+## First-things-first: What are these measures all about?
 
 We create measures when in Power BI Designer’s Report view.
 
@@ -58,7 +58,7 @@ There are over 200 DAX functions that do everything from simple aggregations lik
 
 When we create our own measures, they’re added to the field list for the table we want. This is known as an *explicit* measure, and it will remain in our table as a field. Some of the great advantages to explicit measures are that we can name them what we want, making them more identifiable. We can also use them as an argument in other DAX expressions, and we can create measures that perform complex calculations very quickly.
 
-##Let’s create our own measure
+## Let’s create our own measure
 
 Let’s say we want to analyze our net sales. If we look at our Sales table in the field list, we see that there's no field named NetSales. But, we have the building blocks to create our own measure to calculate net sales.
 
@@ -179,7 +179,7 @@ Now we have Year as a Slicer. We can select any individual or group of years and
 
 ![](media/powerbi-designer-tutorial-create-measures/MeasTut_NetSales_ChartSlicedByYear.png)
 
-##Let’s create another measure
+## Let’s create another measure
 
 Now that you know how to create your own measures, let’s create a another.
 
@@ -227,11 +227,11 @@ That’s some good info, but what if we want to look at net sales by product?
 
 Now that’s just cool!
 
-##What we’ve learned
+## What we’ve learned
 
 Measures give us a lot of power in getting the insights we want from our data. You’ve learned how to create measures by using the formula bar. You can name measures whatever makes most sense to you, and the suggestion lists make it easy to find and select the right element to add to your formulas. You’ve also been introduced to context, where the result of calculations in measures change according to other fields, or by other expressions in your measure formula.
 
-##Additional resources
+## Additional resources
 
 If you want to take a deeper dive into DAX formulas, and create some more advanced measures, see [QuickStart: Learn DAX basics in Power BI Designer](http://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-designer). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 

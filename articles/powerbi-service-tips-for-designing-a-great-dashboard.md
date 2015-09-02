@@ -1,6 +1,6 @@
 <properties pageTitle="Tips for designing a great Power BI dashboard" description="Tips for designing a great Power BI dashboard" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Tips for designing a great Power BI dashboard
+# Tips for designing a great Power BI dashboard
 
 [← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
@@ -51,7 +51,7 @@ For example:
     
     ![](media/powerbi-service-tips-for-designing-a-great-dashboard/gaugechart.png)
 
-##See Also:
+## See Also:
 
 [Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
 [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)

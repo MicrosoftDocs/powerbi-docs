@@ -17,7 +17,7 @@
    ms.date="06/16/2015"
    ms.author="v-anpasi"/>
 
-#Configure a Power BI Analysis Services Connector
+# Configure a Power BI Analysis Services Connector
 
 [← Big data and more](https://support.powerbi.com/media/knowledgebase/topics/88773-big-data-and-more)
 
@@ -42,7 +42,7 @@ The connector can run on any domain computer. It doesn't have to be your local 
 -   The Analysis Services connector & Analysis Services server are installed on computers in the same domain.
 -   If you use a .onmicrosoft.com email address, you'll need to sync your Active Directory to Azure Active Directory using Azure Active Directory Sync (DirSync). To learn more. see [Power BI Analysis Services Connector in-depth](http://support.powerbi.com/media/knowledgebase/articles/546004-power-bi-analysis-services-connector-in-depth).
 
-##To install and configure a Power BI Analysis Services Connector
+## To install and configure a Power BI Analysis Services Connector
 
 1.  In Power BI, click on the Settings icon ![](media/powerbi-analysis-services-connector/settingsIcon.png)  \> **Analysis Services Connector Preview**.
 
@@ -88,11 +88,11 @@ When a user selects the new connection, all of the Tabular models available on t
 
 ![](media/powerbi-analysis-services-connector/ConnectToAS_Models.png)
  
-##To remove a connector from the Get Data list
+## To remove a connector from the Get Data list
 
 Uninstall the connector by using Remove Programs in Control Panel.
 
-##Troubleshooting
+## Troubleshooting
 
 Be sure to see [Troubleshooting Analysis Services Connector](http://support.powerbi.com/media/knowledgebase/articles/505324-troubleshooting-analysis-service-connector)for tips on troubleshooting problems you might have.
 

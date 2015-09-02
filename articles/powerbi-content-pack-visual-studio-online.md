@@ -1,6 +1,6 @@
 <properties pageTitle="Visual Studio Online content pack for Power BI" description="Visual Studio Online content pack for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
-#Visual Studio Online content pack for Power BI
+# Visual Studio Online content pack for Power BI
 
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
@@ -75,7 +75,7 @@ Visual Studio Online in Power BI provides the following data:
 
 To disconnect Power BI and remove its authorization to access your Visual Studio Online account, you can Revoke access in Visual Studio Online. See: <https://www.visualstudio.com/get-started/setup/change-application-access-policies-vs>
 
-##Authentication Troubleshooting
+## Authentication Troubleshooting
 
 When you attempt to login to your Visual Studio Online, you may receive a Login failed message.  
 

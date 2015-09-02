@@ -17,7 +17,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Aplicaciones de iPad e iPhone \(Power BI para la vista previa de iOS\)
+# Aplicaciones de iPad e iPhone \(Power BI para la vista previa de iOS\)
 
 Las aplicaciones de iPad e iPhone de Microsoft Power BI para la vista previa de iOS ofrecen la experiencia móvil de BI. Proporcionan acceso móvil directo y táctiles a su información empresarial importante, por lo que puede ver e interactuar con los informes y paneles empresariales desde cualquier lugar. Explorar los datos en los paneles y compartirlos con sus colegas en los mensajes de correo electrónico o de texto.
 
@@ -35,7 +35,7 @@ Introducción a la [aplicación de iPad para Power BI para iOS](http://support.p
 
 Introducción a la [aplicación para iPhone de Power BI para iOS](http://support.powerbi.com/knowledgebase/articles/527036-get-started-with-the-iphone-app-power-bi-for-ios) vista previa.
 
-##Introducción a Power BI
+## Introducción a Power BI
 
 Comience por [obtener sus datos](http://support.powerbi.com/knowledgebase/topics/63369-get-data) de orígenes tan variados como hojas de cálculo Excel, SQL Server Analysis Services, Salesforce, y y GitHub.
 

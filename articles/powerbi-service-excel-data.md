@@ -17,7 +17,7 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Excel data in Power BI
+# Excel data in Power BI
 
 [← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
 
@@ -31,7 +31,7 @@ You can use any XLSX Excel workbook - Excel 2007, 2010, and 2013 - as a dataset
 
 ![](media/powerbi-service-excel-data/importantIcon.png) **Important:** **** Only the person who uploads the dataset (the owner) can access the underlying data.  If you share your dashboard with others, they'll be able to see and interact with the reports in [Reading View](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view), but they won't be able to explore or access the underlying data.
 
-##Instructions
+## Instructions
 
 
 1.  Start from the dashboard to which you want to add the workbook data, and select **Get Data**.  
@@ -60,7 +60,7 @@ You can use any XLSX Excel workbook - Excel 2007, 2010, and 2013 - as a dataset
 6.  Or just type a [question in the question box](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi) on the dashboard.
 7.  [Pin a few visualizations to your dashboard](http://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-dashboard-from-a-report). 
 
-##What is imported?
+## What is imported?
 
 Power BI brings in the data in the workbook from worksheet tables or from the Excel data model. Data model content takes precedence over worksheet content.
 
@@ -70,16 +70,16 @@ Power BI brings in Power View sheets, but doesn't yet recognize PivotTables or P
 
 Power BI recognizes values and supports these data types: Whole Number, Decimal Number, Currency, Date, True/False, Text).  Marking data as specific data types in Excel will improve the Power BI experience.
 
-##Refreshing Excel data
+## Refreshing Excel data
 -   When you upload an Excel workbook from your computer, you can't refresh the data. 
 -   When you connect to an [Excel workbook in OneDrive](http://support.powerbi.com/knowledgebase/articles/471009-excel-data-stored-in-onedrive), you can [refresh the data](http://support.powerbi.com/knowledgebase/articles/474669-refresh-data-in-power-bi).
 
-##Troubleshooting
+## Troubleshooting
 Currently in the Preview, when connecting to Excel, Power BI only imports data that is part of a named table or a data model. As a result:  
 
 -   When importing a workbook, if there are no named tables, Power View sheets, or Excel data models in the workbook, you see this error. The article "[We couldn't find any data in your Excel workbook](https://support.powerbi.com/knowledgebase/articles/501937--we-couldn-t-find-any-data-in-your-excel-workbook)" explains how to fix the workbook and reimport it.
 
-###See also
+### See also
 
 
 [Get data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)  

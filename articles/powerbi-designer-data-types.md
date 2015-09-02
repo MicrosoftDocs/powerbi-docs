@@ -1,6 +1,6 @@
 <properties pageTitle="Data Types in Power BI Designer" description="Data Types in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/19/2015" ms.author="v-anpasi"/>
-#Data types in Power BI Designer
+# Data types in Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -58,7 +58,7 @@ Power BI Designer supports five Date/Time data types in Query View and three in 
 
 DAX uses a table data type in many functions, such as aggregations and time intelligence calculations. Some functions require a reference to a table; other functions return a table that can then be used as input to other functions. In some functions that require a table as input, you can specify an expression that evaluates to a table; for some functions, a reference to a base table is required. For information about the requirements of specific functions, see [DAX Function Reference](https://support.office.com/en-us/article/DAX-Function-Reference-DAX-6BE048AB-A454-4A1D-BB37-E3D21BFB6A65).
 
-##Implicit and explicit data type conversion in DAX formulas
+## Implicit and explicit data type conversion in DAX formulas
 
 Each DAX function has specific requirements as to the types of data that are used as inputs and outputs. For example, some functions require integers for some arguments and dates for others; other functions require text or tables.
 
@@ -113,7 +113,7 @@ For example, if a date is used in a subtraction operation with any other data ty
 
 For example, if an integer is combined with a real number in a multiplication operation, both numbers are converted to real numbers, and the return value is also REAL.
 
-##Division (/)
+## Division (/)
 
 In the following table, the row header is the numerator and the column header is the denominator.
 
@@ -147,7 +147,7 @@ Conversions are performed implicitly for numeric or date/time types as described
 |REAL|REAL|REAL|REAL|REAL|
 |Date/time|REAL|REAL|REAL|Date/time|
 
-##Handling blanks, empty strings, and zero values
+## Handling blanks, empty strings, and zero values
 
 In DAX, a null, blank value, empty cell, or a missing value are all represented by the same new value type, a BLANK. You can also generate blanks by using the BLANK function, or test for blanks by using the ISBLANK function.
 

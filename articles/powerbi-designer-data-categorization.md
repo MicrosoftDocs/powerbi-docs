@@ -1,6 +1,6 @@
 <properties pageTitle="Data categorization in Power BI Designer" description="Data categorization in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/19/2015" ms.author="v-anpasi"/>
-#Data categorization in Power BI Designer
+# Data categorization in Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 

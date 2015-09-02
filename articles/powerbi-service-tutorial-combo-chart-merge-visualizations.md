@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Combo Chart (Merge visualizations) in Power BI" description="Tutorial: Combo Chart (Merge visualizations) in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Tutorial: Combo Chart (Merge visualizations) in Power BI
+# Tutorial: Combo Chart (Merge visualizations) in Power BI
 
 [← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
@@ -12,7 +12,7 @@ In this tutorial we'll merge (and un-merge) two different chart types and add a
 
 > **NOTE**: This tutorial applies to the Power BI service and not to Power BI Designer or Power View. 
 
-##When to use a Combo Chart
+## When to use a Combo Chart
 
 Combo Charts are a great choice:
 
@@ -21,7 +21,7 @@ Combo Charts are a great choice:
 -   to illustrate the correlation between two measures in one visualization.
 -   to conserve canvas space.
 
-##Working with Combo Charts
+## Working with Combo Charts
 
 Combo Charts:
 
@@ -31,7 +31,7 @@ Combo Charts:
 -   Can be used to highlight and cross-filter other visualizations on the same report page.
 -   Cannot be created if either chart contains a hierarchy, and the current state of the chart is "drilled down."  You will need to drill all the way back up before combining.
 
-##Create a basic, single-axis, Combo Chart
+## Create a basic, single-axis, Combo Chart
 
 To follow along, sign in to powerBI.com and select **Get Data \>Retail Analysis Sample**.
 
@@ -64,7 +64,7 @@ To follow along, sign in to powerBI.com and select **Get Data \>Retail Analysis
     
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/unmergeNoOwl.gif)  
  
-##Create a Combo Chart with two axes
+## Create a Combo Chart with two axes
 
 In the task above, the Y axes of both visualizations used the same units of measurement, and the values along the Y axes were within a similar range.  But what happens when you combine two visualizations where the values being measured use different units (e.g., dollars vs. percent)?  Or when the units are the same (e.g., volume) but are not close (hundreds of items vs. millions of items).  That's what we'll find out in the next task.
 
@@ -87,7 +87,7 @@ In this task, we'll see what impact store count has on sales.
 4.  [Add the Combo Chart as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).
 5.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
 
-##Highlighting and cross-filtering
+## Highlighting and cross-filtering
 
 For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
 
@@ -99,11 +99,11 @@ Highlighting a column or line in a Combo Chart cross-filters the other visualiza
     
 3.  In the pie chart, highlight **Lindseys** to highlight other visualizations on the page, including the Combo Chart.
 
-##Tips and Troubleshooting
+## Tips and Troubleshooting
 
 -   If one of the charts to be combined has a hierarchy, and you've drilled down, you will not be able to combine that chart until you drill back up.
 
-##See Also:
+## See Also:
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
 [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  

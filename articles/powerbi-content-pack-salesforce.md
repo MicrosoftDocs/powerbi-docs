@@ -1,6 +1,6 @@
 <properties pageTitle="Salesforce content pack for Power BI" description="Salesforce content pack for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
-#Salesforce content pack for Power BI
+# Salesforce content pack for Power BI
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 With Power BI Preview, you can easily connect to your Salesforce.com account. Creating this connection retrieves your data and automatically provides a dashboard and related reports based on your data.
@@ -53,7 +53,7 @@ Requirements:
 -   A valid authentication token is required for refresh. Ensure you have 5 or less Salesforce data sets imported, as Salesforce has a limit of 5 authentication tokens per application.
 -   The ability to log in through login.salesforce.com, as custom or sandbox domains, is not currently supported.
 
-###See also
+### See also
 
 [Ask the right questions of Salesforce data](http://support.powerbi.com/knowledgebase/articles/475138-ask-the-right-questions-of-salesforce-data)  
 [Get Started with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)  

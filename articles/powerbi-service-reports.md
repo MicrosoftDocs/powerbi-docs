@@ -1,6 +1,6 @@
 <properties pageTitle="Reports in Power BI Preview" description="Reports in Power BI Preview" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/> 
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Reports in Power BI Preview
+# Reports in Power BI Preview
 [← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Dashboards, reports, and datasets are at the heart of Power BI Preview. A **report** is a multi-perspective view into your data, with visualizations that represent different findings and insights from that data.  A report may have a single visualization or pages full of visualizations.
@@ -10,7 +10,7 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 
 You can [create a report from scratch](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report)or [have one shared with you](http://support.powerbi.com/knowledgebase/articles/431008-share-a-dashboard). And for some kinds of data, Power BI Preview will [create a report for you as it adds the dataset](http://support.powerbi.com/knowledgebase/articles/434354-get-data).  
 
-##For more information about reports:
+## For more information about reports:
 
 *What are the Power BI Preview building blocks?* for a description of how reports fit into Power BI.  
 
@@ -30,12 +30,12 @@ View and interact with reports in either [**Reading View**](http://support.power
 
 **[Delete a report](http://support.powerbi.com/knowledgebase/articles/474346-delete-a-report)**if you don't need it any more. Deleting the report does not remove the dataset.
 
-##View reports in the navigation pane
+## View reports in the navigation pane
 
 Power BI Preview can have more than one report-- as you add reports, their titles are added to the list under the **Reports** heading (see screenshot below). The report you're currently viewing is highlighted. Only one report can be open at a time.  
 ![](media/powerbi-service-reports/NavPane.png)
 
-##See Also
+## See Also
 [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)[](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
 [Get Started with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
 [Power BI Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)

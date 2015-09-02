@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Create calculated columns in Power BI Designer" description="Tutorial: Create calculated columns in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/> 
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Tutorial: Create calculated columns in Power BI Designer
+# Tutorial: Create calculated columns in Power BI Designer
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
 Sometimes the data you’re analyzing just doesn’t contain a particular field you need to get the results you’re after. This is where calculated columns come in. Calculated columns use Data Analysis Expressions (DAX) formulas to define a column’s values. Those values can be just about anything, whether it be putting together text values from a couple of different columns elsewhere in the model, or calculating a numeric value from other values. For example, let’s say your data has a City and State columns (as fields in the Fields list), but you want a single Location field that has both as a single value, like Miami, FL. This is precisely what calculated columns are for.
@@ -11,7 +11,7 @@ This tutorial will guide you through understanding and creating some of your own
 
 To complete the steps in this tutorial, you’ll need to download the [Contoso Sales for Power BI Designer Preview file](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip). This is the same sample file used for the [Create your own measures in Power BI Designer](https://support.powerbi.com/knowledgebase/articles/556656-tutorial-create-your-own-measures-in-power-bi-des) tutorial. It already includes sales data from the fictitious company, Contoso, Inc. Because data in the file was imported from a database, you won’t be able to connect to the datasource or view it in Query view. When you have the designer file on your own computer, go ahead and open it in Power BI Designer.
 
-##Let’s create a calculated column
+## Let’s create a calculated column
 
 Let’s say we want to display product categories together with product subcategories in a single value on rows, like Cell phones – Accessories, Cell phones – Smart phones & PDAs, and so on. If we look at our product tables in the field list, we see there’s no field that gives is what we want. We do, however, have a ProductCategory field and a ProductSubcategory field, each in their own tables.
 
@@ -19,7 +19,7 @@ Let’s say we want to display product categories together with product subcateg
 
 We’ll create a new calculated column to combine values from these two column into new values for our new column. Interestingly enough, we need to combine data from two different tables into a single column. Because we’re going to use DAX to create our new column, we can leverage the full power of the model we already have, including the relationships between different tables that already exist.
 
-###To create a ProductFullCategory column
+### To create a ProductFullCategory column
 
 **1.**  Right click, or click the down arrow on the **ProductSubcategory** table in the Fields list, and then click **New Column**. This will make sure our new column is added to the ProductSubcategory table.
 
@@ -74,7 +74,7 @@ You’ll notice we didn’t use another RELATED function in the second expressio
 
 You’ll notice calculated columns get a special icon in the field list. This shows they’re special and contain a formula. They’ll only appear like this in Power BI Designer. In PowerBI.com (Power BI Sites), there’s no way to change a formula, so a calculated column field won’t have an icon.
 
-###Let’s add our new column to a report
+### Let’s add our new column to a report
 
 Now we can add our new ProductFullCategory column to the report canvas. Let’s look at SalesAmount by ProductFullCategory.
 
@@ -85,7 +85,7 @@ Drag the **ProductFullCategory** column from the **ProductSubcategory** table on
 
  
 
-##Let’s create another
+## Let’s create another
 
 Now that you know how to create a calculated column, let’s create another.
 
@@ -93,7 +93,7 @@ The Contoso Sales for Power BI Designer model contains sales data for both activ
 
 Fortunately, our Stores table has a column named Status, with a value of On for active stores, and Off for inactive stores. We can test values for each row in the Status column to create new values in our new column.
 
-###To create an Active StoreName column
+### To create an Active StoreName column
 
 **1.**  Create a new calculated column named **Active StoreName** in the **Stores** table.
 
@@ -135,11 +135,11 @@ Just like any other field, we can use our new Active StoreName column in visuali
 
  ![](media/powerbi-designer-tutorial-create-calculated-columns/CalcCol_ActiveStore_Viz.png)
 
-##What we’ve learned
+## What we’ve learned
 
 Calculated columns can enrich your data, providing easier insights. You’ve learned how to create calculated columns by using the formula bar, how to use the suggestions list, and how to best name your new columns.
 
-##Additional resources
+## Additional resources
 
 If you want to take a deeper dive into DAX formulas, and create calculated columns with more advanced DAX formulas, see [QuickStart: DAX in Power BI Designer](https://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-designer). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 

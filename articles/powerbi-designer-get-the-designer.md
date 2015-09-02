@@ -1,12 +1,12 @@
 <properties pageTitle="Get the Power BI Designer Preview" description="Get the Power BI Designer Preview" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Get the Power BI Designer Preview
+# Get the Power BI Designer Preview
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
 Before you can use some of the more advanced query, modeling, and report features in Power BI, you'll need to get the Microsoft Power BI Designer.
 
-##Minimum requirements
+## Minimum requirements
 
 -   Windows 7 / Windows Server 2008 R2, or later
 -   .NET 4.5
@@ -14,7 +14,7 @@ Before you can use some of the more advanced query, modeling, and report feature
 
 **Note:** Power BI Designer is only available in English (en-us) language. 
 
-##To download and install the designer
+## To download and install the designer
 
 1.  In Power BI site, click on the Downloads icon ![](media/powerbi-designer-get-the-designer/download2.png)  \> **Power BI Designer** (located in the top-right corner of the site pages)
 2.  Click **Run**.
@@ -22,7 +22,7 @@ Before you can use some of the more advanced query, modeling, and report feature
 
 > ![](media/powerbi-designer-get-the-designer/download.png)
 
-##With the designer, you can...
+## With the designer, you can...
 
 ### Get data
 

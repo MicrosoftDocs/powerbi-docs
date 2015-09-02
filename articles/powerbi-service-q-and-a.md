@@ -1,12 +1,12 @@
 <properties pageTitle="Release notes for Power BI" description="Release notes for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Release notes for Power BI
+# Release notes for Power BI
 
 [← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Check this page for known issues and recently-released features in the Power BI.
 
-##Recent Updates
+## Recent Updates
 
 **May 13, 2015**
 
@@ -50,6 +50,6 @@ Check this page for known issues and recently-released features in the Power BI.
 **
 -   Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
-##See Also:
+## See Also:
 
 [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)

@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Treemaps in Power BI" description="Tutorial: Treemaps in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Tutorial: Treemaps in Power BI
+# Tutorial: Treemaps in Power BI
 
 [← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
@@ -12,7 +12,7 @@ Treemaps display hierarchical data as a set of nested rectangles.  Each level o
 
 For example, if I'm analyzing my sales, I might have top-level rectangles (branches) for the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**.  My category rectangles would contain smaller rectangles (leaves) for the clothing manufacturers within that category, and these smaller rectangles would be sized and shaded based on the number eaten.  In the **Urban** branch above, lots of Maximus clothing was sold, less Natura and Fama, and very little Leo.  So, the **Urban** branch of my Treemap would have the largest rectangle for Maximus (in the top left corner), slightly-smaller rectangles for Natura and Fama, lots of other rectangles representing all the other fruit eaten, and a tiny rectangle for Leo.  And I could compare the number of items eaten across  the other food groups by comparing the size and shading of each leaf node; the larger the rectangle and the darker the shading, the higher the value.
 
-##When to use a Treemap
+## When to use a Treemap
 
 Treemaps are a great choice:
 
@@ -23,7 +23,7 @@ Treemaps are a great choice:
 -   to show attributes using size and color coding.
 -   to spot patterns, outliers, most-important contributors, and exceptions.
 
-##Create a basic Treemap
+## Create a basic Treemap
 
 These instructions use the Retail Analysis Sample. To follow along,  [download the sample](http://support.powerbi.com/knowledgebase/articles/514904-download-samples), sign in to powerBI.com and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
 
@@ -53,7 +53,7 @@ These instructions use the Retail Analysis Sample. To follow along,  [downloa
 5. [Add the Gauge chart as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi). 
 6. [Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
 
-##Highlighting and cross-filtering
+## Highlighting and cross-filtering
 
 For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
 
@@ -68,7 +68,7 @@ Highlighting a Category or Details in a Treemap filters the other visualizations
 
     ![](media/powerbi-service-tutorial-treemaps/treemapNoOwl.gif)
 
-##See also:
+## See also:
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
 [Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-dashboard-from-a-report)  

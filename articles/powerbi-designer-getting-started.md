@@ -1,6 +1,6 @@
 <properties pageTitle="Getting Started with Power BI Designer" description="Getting Started with Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Getting Started with Power BI Designer
+# Getting Started with Power BI Designer
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
 Welcome to the **Power BI Designer Getting Started Guide**. This short tour of the Power BI Designer gets you acquainted with how it works, demonstrates what it can do, and accelerates your ability to build robust data models — along with amazing reports — that amplify your business intelligence efforts. 
@@ -14,7 +14,7 @@ With the combination of the **Power BI Designer** (where analysts and others can
 
 Data analysts will find the Power BI Designer a powerful, flexible, and a highly accessible tool to connect with and shape the world of data, build robust models, and craft well-structured reports.
 
-##How to Use This Guide
+## How to Use This Guide
 
 You can use this guide in a couple of ways – scan it for a quick overview, or read through each section for a strong understanding of how the Power BI Designer works.
 
@@ -22,7 +22,7 @@ If you’re in a hurry you can do a visual sweep of this guide in just a couple 
 
 For a more thorough understanding you can read through each section, perform the steps, and walk away with your own Power BI Designer file that’s ready to post onto the **Power BI Service**, and share with others.
 
-##How the Power BI Designer Works
+## How the Power BI Designer Works
 
 With the Power BI Designer, you *connect to data* (usually multiple data sources), *shape that data* (with queries that build insightful, compelling data models), and use that model to *create reports* (which others can leverage, build upon, and share).
 
@@ -32,7 +32,7 @@ The Power BI Designer centralizes, simplifies, and streamlines what can otherwis
 
 Ready to give it a try? Let’s get started.
 
-##Install and Run the Power BI Designer
+## Install and Run the Power BI Designer
 
 You can download the Power BI Designer from the Power BI Service, by selecting the **gear** icon, then select **Power BI Designer Preview**.
 
@@ -55,7 +55,7 @@ There are two primary views in the Power BI Designer: the **Report** view, and t
 
 With the Power BI Designer installed you’re ready to connect to data, shape data, and build reports (usually in that order). In the next few sections, we take a tour through each in turn.
 
-##Connect to Data
+## Connect to Data
 
 With the Power BI Designer installed, you’re ready to connect to the ever expanding world of data. From the bottom left corner of the Power BI Designer select **Query**.
 
@@ -91,13 +91,13 @@ For more information about connecting to data, see [Connect to Data in Power BI 
 
 In the next section, we adjust the data so it meets our needs. The process of adjusting connected data is called *shaping* data.
 
-##Shape and Combine Data
+## Shape and Combine Data
 
 Now that we’ve connected to a data source, we need to adjust the data to meet our needs. Sometimes adjusting means *transforming* the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on.
 
 The Query view in Power BI Designer makes ample use of right-click menus, in addition to having tasks available on the ribbon. Most of what you can select in the **Transform** ribbon is also available by right-clicking an item (such as a column) and choosing from the menu that appears.
 
-###Shape Data
+### Shape Data
 
 When you shape data in the **Query** view, you’re providing step-by-step instructions (that Query carries out for you) to adjust the data as Query loads and presents it. The original data source is not affected; only this particular view of the data is adjusted, or *shaped*.
 
@@ -131,7 +131,7 @@ We need to make a few more changes to get the query where we want it:
 
 Each of these steps is demonstrated in **[Shape and Combine Data in Power BI Designer](http://support.powerbi.com/knowledgebase/articles/471644)**. Feel free to check out that page, or keep going in this document to see what you would do next. The next section picks up after the changes above are applied.
 
-###Combine Data
+### Combine Data
 
 That data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there’s one problem: most data out there uses a two-letter abbreviation for state codes, not the full name of the state. We need some way to associate state names with their abbreviations.
 
@@ -191,7 +191,7 @@ For a more complete description of each of these shape and combine data steps, s
 
 For now, we have enough data to create a few interesting reports, all within the Power BI Designer. Since this is a milestone let’s save this Power BI Designer file – we’ll call it **Get Started**.
 
-##Build Reports
+## Build Reports
 
 Additional changes can still be made after the table is loaded, but for now this will do. When we select **Report**, the Power BI Designer switches to **Report** view, and the data (as modified by the query steps) is loaded into the model. Once the table is loaded, the Power BI Designer is ready to build reports.
 
@@ -239,7 +239,7 @@ Here’s what the cost of living-focused Report page looks like.
 
 There are all sorts of interesting reports and visualizations you can create.
 
-##Share Your Work
+## Share Your Work
 
 Now that we have a Power BI Designer report that’s reasonably complete, we can share it with others on the **Power BI Service**. The following link brings up the **Power BI Service** in a browser:
 
@@ -277,7 +277,7 @@ For more information about creating, sharing, and modifying dashboards, see **[S
 
 There are all sorts of compelling data-related mash-ups and visualizations you can do with the Power BI Designer, and with the Power BI Service. Check out the next section for more information.
 
-##More Information
+## More Information
 
 There are all sorts of things you can do with the Power BI Designer. For more information on its capabilities, check out the following resources:
 

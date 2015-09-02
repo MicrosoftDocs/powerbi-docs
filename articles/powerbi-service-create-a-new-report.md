@@ -1,6 +1,6 @@
 <properties pageTitle="Create a new Power BI report" description="Create a new Power BI report" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Create a new Power BI report
+# Create a new Power BI report
 
 [← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
@@ -9,7 +9,7 @@ There are different ways to create a new report:
 -   From a dataset
 -   From an existing report
 
-##Create a new report from a dataset
+## Create a new report from a dataset
 
 This method creates a new report from scratch.
 
@@ -20,7 +20,7 @@ This method creates a new report from scratch.
 2.  Explore your data and [add visualizations](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports).
 3.  [Save your report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
 
-##Create a new report from an existing report
+## Create a new report from an existing report
 
 1.  [Open a report](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view).
     
@@ -43,12 +43,12 @@ This method creates a new report from scratch.
 5.  Have fun updating and editing your new report.
     
 
-##Next Steps:
+## Next Steps:
 
 [Create new visualizations](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report)  
 [Delete visualizations](http://support.powerbi.com/knowledgebase/articles/465144-delete-a-visualization) you don't need
 
-##See Also:
+## See Also:
 
 Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)  
 [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  

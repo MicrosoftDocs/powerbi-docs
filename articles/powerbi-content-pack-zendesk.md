@@ -1,6 +1,6 @@
 <properties pageTitle="Zendesk content pack for Power BI" description="Zendesk content pack for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/25/2015" ms.author="v-anpasi"/>
-#Zendesk content pack for Power BI
+# Zendesk content pack for Power BI
 
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
@@ -36,7 +36,7 @@ To analyze your Zendesk data in Power BI, you must connect to Zendesk using your
 
 You can change this dashboard to display your data the way you want it. Plus you can ask a [question in Q&A](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669-when-you-click-a-tile-in-a-dashboard) and [change the tiles](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) in the dashboard.
 
-##See Also
+## See Also
 
 [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
 [Get Data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)  

@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Analyzing Sales Data from Excel and an OData feed" description="Tutorial: Analyzing Sales Data from Excel and an OData feed" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/19/2015" ms.author="v-anpasi"/>
-#Tutorial: Analyzing sales data from Excel and an OData feed
+# Tutorial: Analyzing sales data from Excel and an OData feed
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -18,11 +18,11 @@ Here's what the final report will look like:
 
 In order to perform this tutorial, you need the Products workbook which you can download [here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx). In the **Save As** dialog box, name the file **Products.xlsx**.
  
-##Task 1: Get product data from an Excel workbook
+## Task 1: Get product data from an Excel workbook
 
 In this task, you import products from the Products.xlsx file into Power BI Designer. 
 
-###Step 1: Connect to an Excel workbook
+### Step 1: Connect to an Excel workbook
 
 1.  Launch Power BI Designer..
 
@@ -34,7 +34,7 @@ In this task, you import products from the Products.xlsx file into Power BI Des
 
 5.  In the **Navigator** pane, click **Products** (the name of the Excel table object)** **and click **Edit Query**.
 
-###Step 2: Remove other columns to only display columns of interest
+### Step 2: Remove other columns to only display columns of interest
 In this step you remove all columns except **ProductID**, **ProductName**, **UnitsInStock**, and **QuantityPerUnit**.
 
 1.  In the **Query View** , select the **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns (use Ctrl+Click or Shift+Click).
@@ -63,11 +63,11 @@ As you perform query activities in the Query View, query steps are created and l
 |Promote the first row to table column headers|FirstRowAsHeader|[Table.PromoteHeaders](https://support.office.com/en-US/Article/TablePromoteHeaders-b8eaeb95-042a-42e1-9164-6d3c646acadc "Table.PromoteHeaders") <br/><br/>(Products)|
 |Remove other columns to only display columns of interest|RemovedOtherColumns|[Table.SelectColumns](https://support.office.com/en-US/Article/TableSelectColumns-20bb9e28-9fd3-4cd2-a21b-97972c82ec22 "Table.SelectColumns")<br/><br/>(FirstRowAsHeader,{"ProductID", "ProductName", "QuantityPerUnit", "UnitsInStock"})|
 |Change datatype|Changed Type|Table.TransformColumnTypes(\#"Removed Other Columns",{{"UnitsInStock", Int64.Type}})|
-##Task 2: Import order data from an OData feed
+## Task 2: Import order data from an OData feed
 
 In this task, you'll bring in data on orders your company has taken for these products. This step represents connecting to a sales system. You import data into the Power BI Designer from the sample Northwind OData feed at: <http://services.odata.org/V3/Northwind/Northwind.svc/> 
 
-###Step 1: Connect to an OData feed
+### Step 1: Connect to an OData feed
 
 1.  In the **Home** ribbon tab, click **Get Data**
 
@@ -82,7 +82,7 @@ In this task, you'll bring in data on orders your company has taken for these pr
 **Note:** You can click the item name once to see a preview  
 ![](media/powerbi-designer-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/task2step1.png)    
 
-###Step 2: Expand the Order\_Details table
+### Step 2: Expand the Order\_Details table
 
 The Orders table that you just connected to contains a reference to a Details table.This table contains the individual products that were included in each Order. If you are connecting to data sources with multiples tables (such as a relational database) you can use these references to build up your query. 
 
@@ -108,7 +108,7 @@ After you expand the **Order\_Details** table, three new columns and additional 
 	3.  Click **OK**.  
     ![](media/powerbi-designer-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
     
-###Step 3: Remove other columns to only display columns of interest
+### Step 3: Remove other columns to only display columns of interest
 
 In this step you remove all columns except **ShipCity**, **ShipCountry**, **OrderDate**, **ProductID**, **UnitPrice**, and **Quantity** columns. In the previous task, you used **Remove Other Columns**. For this task, you remove selected columns.
 
@@ -122,7 +122,7 @@ In this step you remove all columns except **ShipCity**, **ShipCountry**, **Orde
 
 2. Right-click on a selected column header, and click **Remove Columns**.
 
-###Step 4: Calculate the line total for each Order\_Details row
+### Step 4: Calculate the line total for each Order\_Details row
 
 The Power BI Designer allows you to create calculations based on the columns you are importing, to enrich the data that you connect to. In this step, you create a **Custom Column** to calculate the line total for each **Order\_Details** row.
 
@@ -138,7 +138,7 @@ Calculate the line total for each Order\_Details row
 
 4.  Click **OK**.
 
-###Step 5: Set the datatype of the LineTotal field
+### Step 5: Set the datatype of the LineTotal field
 
 1.  Right click the **LineTotal** column.
 
@@ -146,7 +146,7 @@ Calculate the line total for each Order\_Details row
     ![](media/powerbi-designer-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
     **
 
-###Step 6: Rename and reorder columns in the query
+### Step 6: Rename and reorder columns in the query
 
 In this step, you finish making the model easy to work with when creating reports by renaming the final columns and changing their order.
 
@@ -166,13 +166,13 @@ As you perform query activities in Query View, query steps are created and liste
 |Remove other columns to only display columns of interest|RemovedColumns|[Table.RemoveColumns](https://support.office.com/en-US/Article/TableRemoveColumns-6265190e-2f58-4300-85b8-df88fc1a67d3 "Table.RemoveColumns")<br/><br/>(\#"Expand Order\_Details",{"OrderID", "CustomerID", "EmployeeID", "RequiredDate", "ShippedDate", "ShipVia", "Freight", "ShipName", "ShipAddress", "ShipCity", "ShipRegion", "ShipPostalCode", "ShipCountry", "Customer", "Employee", "Shipper"})|
 |Calculate the line total for each Order\_Details row|InsertedColumns|[Table.AddColumn](https://support.office.com/en-US/Article/TableAddColumn-6c64d0a5-9654-4d15-bfb6-9cc380aaf3c0 "Table.AddColumn")<br/><br/>(RemovedColumns, "Custom", each [Order\_Details.UnitPrice] \* [Order\_Details.Quantity])|
 
-##Task 3: Combine the Products and Total Sales queries
+## Task 3: Combine the Products and Total Sales queries
 
 Power BI Designer does not require you to combine queries to report on them. Instead, you can create **Relationships** between datasets. These relationships can be created on any column that is common to your datasets. For more information see [Create and manage relationships](http://support.powerbi.com/knowledgebase/articles/464155). In this tutorial, we have Orders and Products data that share a common 'ProductID' field, so we'll create a relationship using this. All you need to tell Power BI is the columns from each table that are related (i.e. those that have the same values). Power BI works out the direction and cardinality of the relationship for you. In some cases, it will even detect the relationships automatically.
 
 In this task, you create a relationship between the **Products** and **Total Sales** queries. 
 
-###Step 1: Create a relationship between Products and Total Sales
+### Step 1: Create a relationship between Products and Total Sales
 
 1. Swap to the Report View 
 
@@ -196,14 +196,14 @@ In this task, you create a relationship between the **Products** and **Total Sal
 ![](media/powerbi-designer-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/13.png)
 
 8.  Click **Close**
-##Task 4: Build visuals using your data
+## Task 4: Build visuals using your data
 
 
 Power BI Designer lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report "Combine multiple queries").
 
 In this task, you create a report based on the data previously loaded. You use the Fields Pane to select the columns from which you create the visualizations.
 
-###Step 1: Create charts showing Units in Stock by Product and Total Sales by Year
+### Step 1: Create charts showing Units in Stock by Product and Total Sales by Year
 
 1. Drag **ProductName** from the Field List to the right of the screen onto a blank space in the top left of the canvas
 	1.  Power BI Designer automatically selects the **UnitsInStock** field to be plotted with the Product Name
@@ -231,7 +231,7 @@ In this task, you create a report based on the data previously loaded. You use t
 	2.   The resulting map shows the outline of countries, shaded based on the sum of LineTotals. Darker colors represent higher order totals in that country.
 	3.  ![](media/powerbi-designer-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
-###Step 2: Interact with your report visuals to analyze further
+### Step 2: Interact with your report visuals to analyze further
 The Power BI Designer lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports)
 
 1. Click on the light blue shape covering **Canada**
@@ -240,7 +240,7 @@ The Power BI Designer lets you interact with visuals that cross-highlight and fi
 
 	2.  Note how the other visuals are filtered to show Stock and Total Orders just for Canada.
 
-##Complete Sales Analysis Report
+## Complete Sales Analysis Report
 
 After you perform all these steps, you will have a Sales Report that combines data from Products.xlsx file and Northwind OData feed. The report shows visuals that help analyze sales information from different countries. You can download a completed Power BI Designer file for this tutorial [here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Sales_Data.pbix).
 

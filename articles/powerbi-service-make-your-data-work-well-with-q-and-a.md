@@ -1,6 +1,6 @@
 <properties pageTitle="Make your data work well with Q&A in Power BI" description="Make your data work well with Q&A in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Make your data work well with Q&A in Power BI
+# Make your data work well with Q&A in Power BI
 [← Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi)
 
 In Power BI, Q&A can search structured data and choose the right visualization for your question -- that's what makes it a compelling tool to use.   
@@ -9,12 +9,12 @@ In Power BI, Q&A can search structured data and choose the right visualization f
 
 Q&A can work on any uploaded Excel file, but the more optimizations and data cleaning you do, the more robust Q&A performance is. 
 
-##How Q&A works
+## How Q&A works
 Q&A has a set of core natural language understanding abilities that work across your data. It has context-dependent keyword search for your Excel table, column, and calculated field names. Second, it has built-in knowledge for how to filter, sort, aggregate, group, and display data. 
 
 For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about the [kinds of questions you can ask](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-1.aspx), and [asking questions using a question template](http://support.powerbi.com/knowledgebase/articles/474566) and [visualization types you can specify in a Q&A query](http://support.powerbi.com/knowledgebase/articles/469552).
 
-##Prepare a workbook for Q&A
+## Prepare a workbook for Q&A
 
 Q&A relies on the names of tables, columns, and calculated fields to answer data-specific questions, meaning what you call entities in your workbook is important!
 
@@ -26,7 +26,7 @@ Here are some tips for making the most of Q&A in your workbook.
 
 NOTE: If your workbook has a Power Pivot data model, you can do even more optimizations. Read more about [Demystifying Power BI Q&A part 2](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx) from our in-house team of natural language experts.
 
-##See Also:
+## See Also:
 [Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)  
 [Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)  
 [Ask the right questions of Salesforce data in Power BI](http://support.powerbi.com/knowledgebase/articles/475138)  

@@ -1,10 +1,10 @@
 <properties pageTitle="What's new in the latest Power BI Designer Preview update?" description="What's new in the latest Power BI Designer Preview update?" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/19/2015" ms.author="v-anpasi"/>
-#What's new in the latest Power BI Designer update?
+# What's new in the latest Power BI Designer update?
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
-##May 2015 Update (2.23.4036.161)
+## May 2015 Update (2.23.4036.161)
 
 **You can download the latest version of the Power BI Designer from here:**  
 <https://powerbi.com/dashboards/downloads/designer>
@@ -59,7 +59,7 @@ You can watch the following video for details: 
 
 <p><span><iframe width="560" height="315" src="https://www.youtube.com/embed/FuL8agVKrcg" frameborder="0" allowfullscreen></iframe></span></p>
 
-##March 2015 Update (2.21.3975.261)
+## March 2015 Update (2.21.3975.261)
 
 The following features have been added in this update:
 

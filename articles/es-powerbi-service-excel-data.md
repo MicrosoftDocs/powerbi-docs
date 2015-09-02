@@ -17,7 +17,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Datos de Excel en Power BI
+# Datos de Excel en Power BI
 
 [Archivos ← en Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
 
@@ -31,7 +31,7 @@ Puede utilizar cualquier libro de Excel XLSX - 2007 de Excel 2010 y 2013 - como 
 
 ![](media/powerbi-service-excel-data/importantIcon.png) **Importante:** \*\*\* solo la persona que carga el conjunto de datos \(el propietario\) puede tener acceso a los datos subyacentes. Si comparte su escritorio con otras personas, podrán ver e interactuar con los informes de [la vista de lectura](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view), pero no podrá explorar o tener acceso a los datos subyacentes.
 
-##Instrucciones
+## Instrucciones
 
 
 1.  Inicio desde el panel al que desea agregar los datos del libro y seleccione **obtener datos**. ![](media/powerbi-service-excel-data/PBI_GetData.png) **Nota:** panel de ejemplo el análisis comercial está protegido contra escritura, por lo que si se inicia a partir de ahí, Power BI crea un panel en blanco y le agrega el nuevo conjunto de datos. El nuevo panel tendrá el mismo nombre que el conjunto de datos. Puede descargar su propia copia de: panel de ejemplo el análisis comercial: después de Seleccionar obtener datos, seleccionar ejemplo de análisis de venta. O bien: los [análisis comercial](https://support.powerbi.com/knowledgebase/articles/474807) libro de ejemplo.
@@ -66,16 +66,16 @@ Power BI trae hojas de Power View, pero todavía no reconoce las tablas dinámic
 
 Power BI reconoce los valores y es compatible con estos tipos de datos: número entero, número Decimal, moneda, fecha, True/False, texto\). Marcar los datos como datos específicos tipos en Excel mejorará la experiencia de Power BI.
 
-##Actualizar los datos de Excel
+## Actualizar los datos de Excel
 -   Al cargar un libro de Excel desde su equipo, no puede actualizar los datos. 
 -   Cuando se conecta a un [libro de Excel en OneDrive](http://support.powerbi.com/knowledgebase/articles/471009-excel-data-stored-in-onedrive), puede [actualizar los datos](http://support.powerbi.com/knowledgebase/articles/474669-refresh-data-in-power-bi).
 
-##Solución de problemas
+## Solución de problemas
 Actualmente en la vista previa, al conectarse a Excel, Power BI sólo importa datos que forma parte de una tabla con nombre o un modelo de datos. Como resultado:
 
 -   Al importar un libro, si no hay ninguna tabla con nombre, hojas de Power View o modelos de datos de Excel en el libro, verá este error. El artículo "[no se pudieron encontrar los datos en un libro de Excel](https://support.powerbi.com/knowledgebase/articles/501937--we-couldn-t-find-any-data-in-your-excel-workbook)" se explica cómo corregir el libro y vuelva a importarlo.
 
-###Consulte también
+### Consulte también
 
 
 [Obtener datos](http://support.powerbi.com/knowledgebase/articles/434354-get-data) [empezar a trabajar con Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi) [conceptos básicos de Power BI -](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)

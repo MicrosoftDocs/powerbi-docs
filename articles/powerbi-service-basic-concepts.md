@@ -1,6 +1,6 @@
 <properties pageTitle="Power BI Preview - basic concepts" description="Power BI Preview - basic concepts" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Power BI - basic concepts
+# Power BI - basic concepts
 
 [← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
@@ -19,11 +19,11 @@ When you first open Power BI, you'll see:
 
 [We'll dig into these later](#dig), but first let's review some Power BI concepts.
 
-##Power BI concepts
+## Power BI concepts
 
 The 3 major building blocks of Power BI are: ***dashboards***, ***reports***, and ***datasets***. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not very useful until they have data.)
 
-###Datasets
+### Datasets
 
 A *dataset* is something that you *connect* to. Use Power BI to bring all of your data together. See it all in one place and access it from all of your devices.
 
@@ -38,7 +38,7 @@ In the navigation pane, the datasets you've connected to are listed under the **
 
 To [connect to a dataset](http://support.powerbi.com/knowledgebase/articles/434354-get-data), click **Get Data** (at the top of the navigation pane) or click the plus sign (next to the **Datasets** heading). The work you do in Power BI does not change the underlying dataset.
 
-###Dashboards
+### Dashboards
 
 A *dashboard* is something you create or something a coworker creates and shares with you. It is a single canvas that contains one or more tiles. Each tile displays a single [visualization](http://support.powerbi.com/knowledgebase/topics/65160-all-about-visualizations)that was created from the data in the underlying dataset(s). To [create and add a tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi), you must be in report [Editing View](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report) or in [Q&A](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi). 
 
@@ -64,7 +64,7 @@ In the navigation pane, your dashboards are listed under the **Dashboards** head
 -   to monitor the health of a business or product or business unit or marketing campaign, etc.
 -   to create a personalized view of a larger dashboard -- all the metrics that matter to me
 
-###Reports
+### Reports
 
 A Power BI report is one or more pages of visualizations (charts and graphs).  Reports can be created from scratch within Power BI or can be imported with datasets and with shared dashboards. This doesn't mean that you can create a Power BI report outside of Power BI.  What it means is that Power BI takes a look at data you're connecting to and, if it can, creates a report based on some or all of the data.  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets.
 
@@ -81,7 +81,7 @@ There are 2 ways to view and interact with reports: [Reading View](http://suppor
 
  ![](media/powerbi-service-basic-concepts/Drawing3new.png) 
 
-###The Retail Analysis Sample dashboard
+### The Retail Analysis Sample dashboard
 
 The first time you open Power BI, you're looking at the [sample dashboard](https://powerbi.uservoice.com/admin/faqs/487029/a%20href=%22http://support.powerbi.com/knowledgebase/articles/471115%22%3E), the ***Retail Analysis Sample***.  This sample will always be there, unless you [manually remove it](http://support.powerbi.com/knowledgebase/articles/475173-delete-or-remove-a-dashboard).
 
@@ -111,7 +111,7 @@ Single-click
 -   a report to open it in Editing View
 -   a dataset to explore it
 
-##Dashboard tiles
+## Dashboard tiles
 
 Dashboards are composed of [visualization tiles](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).  Tiles are created either in report Editing View or Q&A.  The tiles that appear on a dashboard were specifically put there by the report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
@@ -120,7 +120,7 @@ Dashboards are composed of [visualization tiles](http://support.powerbi.com/know
 
 For more information, see **[Dashboards](#dashboards)** (above).
 
-##Q&A question box
+## Q&A question box
 
 One way to explore your data is to ask a question and let Power BI Q&A give you an answer, in the form of a visualization. Q&A cannot be used to add content to a report -- only to add content, in the form of tiles, to dashboards.
 
@@ -130,19 +130,19 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connec
 
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard.
 
-##Help and feedback buttons
+## Help and feedback buttons
 
 The icons in the top right corner are your resources for downloads, [getting help](http://support.powerbi.com/knowledgebase/articles/436810-get-help-and-support-with-power-bi) and providing [feedback](http://support.powerbi.com/knowledgebase/articles/436738-we-want-your-feedback) to the Power BI team.  
  
 ![](media/powerbi-service-basic-concepts/help.png)
 
-##Dashboard title (aka What dashboard is active?)
+## Dashboard title (aka What dashboard is active?)
 
 It's not always easy to figure out which dashboard is active.  The dashboard title appears on the dashboard view page, on the Q&A page, in report Editing View and report Reading View, and when you open a dataset.  This way, when you [pin a visualization](http://support.powerbi.com/knowledgebase/topics/65160-all-about-visualizations), you know which dashboard you're pinning it to.
 
 ![](media/powerbi-service-basic-concepts/dashTitle.png)
 
-##Home button
+## Home button
 
 This powerful button is often overlooked.  In the top left corner of every screen in Power BI, click it to return to your dashboard and navigation pane.
 
@@ -154,7 +154,7 @@ Always know which version of Power BI you are using.
 
 ### ![](media/powerbi-service-basic-concepts/version.png)
 
-##See Also:
+## See Also:
 
 [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
 [Power BI videos](http://support.powerbi.com/knowledgebase/articles/475702-power-bi-preview-videos)

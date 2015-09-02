@@ -1,6 +1,6 @@
 <properties pageTitle="Get started with the Power BI for Windows app" description="Get started with the Power BI for Windows app" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Get started with the Power BI for Windows app
+# Get started with the Power BI for Windows app
 
 [← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 

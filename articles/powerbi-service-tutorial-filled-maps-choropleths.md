@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Filled Maps (Choropleths) in Power BI" description="Tutorial: Filled Maps (Choropleths) in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Tutorial: Filled Maps (Choropleths) in Power BI
+# Tutorial: Filled Maps (Choropleths) in Power BI
 [← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 A Filled Map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
@@ -9,7 +9,7 @@ A Filled Map uses shading or tinting or patterns to display how a value differs 
 
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/filledMap.png)
 
-##When to use a Filled Map
+## When to use a Filled Map
 
 Filled Maps are a great choice:
 
@@ -20,7 +20,7 @@ Filled Maps are a great choice:
 -   when defined regions are important.
 -   to get an overview of the distribution across the geographic locations.
 
-##Working with Filled Maps
+## Working with Filled Maps
 
 Filled Maps:
 
@@ -30,7 +30,7 @@ Filled Maps:
 -   Support multi-select; hold down the CTRL button to select more than one region.
 -   Can have a legend.
 
-##Create a basic Filled Map
+## Create a basic Filled Map
 
 We'll create a Filled Map that shows sentiment data by state.  
 These instructions use the Sales and Marketing Sample. To follow along, [download the sample](http://support.powerbi.com/knowledgebase/articles/514904-download-samples), sign in to powerBI.com and select **Get Data \> Excel Workbook \>  Connect \> Sales and Marketing Sample**.**xlsx**.
@@ -62,7 +62,7 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 6.  [Add the Filled Map as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi). 
 7.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
 
-##Highlighting and cross-filtering
+## Highlighting and cross-filtering
 
 For information about using the Filters pane, see [Add a filter to a report](https://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
 
@@ -73,7 +73,7 @@ Highlighting a Location in a Filled Map filters the other visualizations on the 
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/FilledmapFiltered.png)
 2.  On the line chart, toggle between **No** and **Yes**. This filters the Filled Map to show Sentiment for VanArsdel and for VanArsdel's competition.
 
-##See also:
+## See also:
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
 [Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-dashboard-from-a-report)  

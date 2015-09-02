@@ -1,6 +1,6 @@
 <properties pageTitle="Pin a tile to a Power BI dashboard from the Q&A question box" description="Pin a tile to a Power BI dashboard from the Q&A question box" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Pin a tile to a Power BI dashboard from the Q&A question box
+# Pin a tile to a Power BI dashboard from the Q&A question box
 
 [← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
@@ -24,12 +24,12 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
     
 5.  Optionally, [rename, resize, and reposition the tile](http://support.powerbi.com/knowledgebase/articles/424878) on your dashboard.
 
-##Tips for using Q&A
+## Tips for using Q&A
 
 -   When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard highlighted in the navigation pane.
 -   **How does Q&A know which datasets to use**?  Q&A has access to all datasets that have visualizations pinned to that dashboard.
 
-##See Also:
+## See Also:
 
 [Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
 [Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)  

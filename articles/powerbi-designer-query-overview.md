@@ -1,6 +1,6 @@
 <properties pageTitle="Query Overview in Power BI Designer" description="Query Overview in Power BI Designer" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/> 
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Query Overview in Power BI Designer
+# Query Overview in Power BI Designer
 
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
@@ -16,7 +16,7 @@ This document provides an overview of the Query view. At the end of this documen
 
 But first, let’s see get acquainted with the Power BI Designer Query view.
 
-##The Query View
+## The Query View
 
 To get to the Query view, select **Query** from the lower left corner of the Power BI Designer.
 
@@ -47,7 +47,7 @@ Here’s how the **Query** window appears once a data connection is established,
 
 We’ll look at each of these four areas – the ribbon, the queries pane, the data view, and the Query Settings pane – in the following sections.
 
-##The Query Ribbon
+## The Query Ribbon
 
 The ribbon in Query view consists of four tabs – **Home**, **Transform**, **Add Column**, and **View**.
 
@@ -79,14 +79,14 @@ The **View** tab on the ribbon is used to toggle whether certain panes or window
 
 It’s useful to know that many of the tasks available from the ribbon are also available by right-clicking a column, or other data, in the center pane.
 
-##The Left Pane
+## The Left Pane
 
 The left pane displays the number of active queries, as well as the name of the query. When you select a query from the left pane, its data is displayed in the center pane, where you can shape and transform the data to meet your needs. The following image shows the left pane with multiple queries.
 
 ![](media/powerbi-designer-query-overview/QueryOverview_TheLeftPane.png)
 
 
-##The Center (Data) Pane
+## The Center (Data) Pane
 
 In the center pane, or Data pane, date from the selected query is displayed. This is where much of the work of the Query view is accomplished.
 
@@ -96,7 +96,7 @@ In the following image, the Web data connection established earlier is displayed
 
 When you select a right-click menu item (or a ribbon button), Query applies the step to the data, and saves it as part of the query itself. The steps are recorded in the **Query Settings** pane in sequential order, as described in the next section.
 
-##The Query Settings Pane
+## The Query Settings Pane
 
 The Query Settings pane is where all steps associated with a query are displayed. For example, in the following image, the Applied Steps section of the Query Settings pane reflects the fact that we just changed the type of the **Overall score** column.
 
@@ -112,7 +112,7 @@ In the Query Settings pane, you can rename steps, delete steps, or reorder the s
 ![](media/powerbi-designer-query-overview/QueryOverview_QuerySettings_Rename.png)
 
 
-##The Advanced Editor
+## The Advanced Editor
 
 If you want to see the code that Query is creating with each step, or want to create your own shaping code, you can use the Advanced Editor. To launch the advanced editor, select **View** from the ribbon, then select **Advanced Editor**. A window appears, showing the existing Query code.
 
@@ -121,7 +121,7 @@ If you want to see the code that Query is creating with each step, or want to cr
 
 You can directly edit the code in the **Advanced Editor** window. To close the window, select the **Done** or **Cancel** button.
 
-##Saving Your Work
+## Saving Your Work
 
 Once you have your query where you want it, or if you just want to make sure your work is saved, the Power BI Designer can save your work in the form of a .pbix file.
 
@@ -129,7 +129,7 @@ To save your work, select **File \> Save** (or **File \> Save As**), as shown in
 
 ![](media/powerbi-designer-query-overview/QueryOverview_SaveWork.png)
 
-##More Information
+## More Information
 
 There are all sorts of things you can do with the Power BI Designer. For more information on its capabilities, check out the following resources:
 

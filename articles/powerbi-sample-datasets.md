@@ -17,18 +17,18 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Sample datasets for Power BI
+# Sample datasets for Power BI
 
 [← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Want to try Power BI with sample data?  Use one of our sample datasets to learn how Power BI keeps you in the know and focus on what matters to run your business.
 
-##Industry sample datasets
+## Industry sample datasets
 
 These samples are part of a series that illustrate how you can use Power BI with business-oriented data, reports, and dashboards.  The samples are real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 -   [Retail Analysis](http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets#retail)
 
-##To view the sample datasets available
+## To view the sample datasets available
 
 1.  Click **Get Data**  
     ![](media/powerbi-sample-datasets/samples.png)

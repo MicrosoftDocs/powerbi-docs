@@ -1,6 +1,6 @@
 <properties pageTitle="Upload Power BI Designer files" description="Upload Power BI Designer files" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Upload Power BI Designer files
+# Upload Power BI Designer files
 [← Power BI Designer](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-designer)
 
 When you save a file created in the designer, it will have a **.pbix** extension. You can then upload your Power BI Designer files to your Power BI site.
@@ -9,7 +9,7 @@ When you save a file created in the designer, it will have a **.pbix** extensio
 
 ![](media/powerbi-designer-upload-designer-files/importantIcon.png) **Important:** In Power BI Preview, the maximum size of a Power BI Designer file you can upload to your Power BI site is 250 megabytes.
 
-##To upload a Power BI Designer file
+## To upload a Power BI Designer file
 
 1.  In Power BI, click Get data ![](media/powerbi-designer-upload-designer-files/ConnectIcon.png).
 

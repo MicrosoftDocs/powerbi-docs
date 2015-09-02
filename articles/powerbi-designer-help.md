@@ -17,7 +17,7 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Power BI Designer Help
+# Power BI Designer Help
 
 [← Power BI Designer](https://support.powerbi.com/media/knowledgebase/topics/68530-power-bi-designer)  
 

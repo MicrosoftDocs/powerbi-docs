@@ -1,6 +1,6 @@
 <properties pageTitle="Tutorial: Introduction to Power BI Q&A" description="Tutorial: Introduction to Power BI Q&A" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Tutorial: Introduction to Power BI Q&A
+# Tutorial: Introduction to Power BI Q&A
 
 [← Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi)
 
@@ -22,7 +22,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_3.png)
 
-##How would we go about creating this same line chart using Q&A?
+## How would we go about creating this same line chart using Q&A?
 
 1.  Navigate back to your Power BI workspace.
 
@@ -38,7 +38,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 3.  To pin the chart to your dashboard, select the pin icon.
 
-##See Also:
+## See Also:
 
 [Power Bi - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
 [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  

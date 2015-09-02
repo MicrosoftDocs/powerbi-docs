@@ -17,7 +17,7 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Share (and unshare) a dashboard from Power BI
+# Share (and unshare) a dashboard from Power BI
 [← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 You can share your dashboards with people in your organization. If they haven't signed up for [Power BI](http://powerbi.com/), they'll need to do so to see your dashboard.
@@ -37,7 +37,7 @@ You can share your dashboards with people in your organization. If they haven't
 
     ![](media/powerbi-service-share-unshare-dashboard/PBI_ShareDash1.png)
 
-##Notes about sharing
+## Notes about sharing
 
 When you share with your colleagues:
 -   They can see your dashboard and interact with your reports in [Reading View](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view). They can't create new reports or save changes to existing reports.
@@ -51,10 +51,10 @@ You can share with users who have the same email domain as you, and with users w
 
 -   https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
 
-###Resharing  
+### Resharing  
 Resharing allows your coworkers to forward the email invitation to others in your organization (the invitation expires after one month). Coworkers can also reshare through the web and mobile apps. As the owner of the dashboard, you can turn off resharing and you can also revoke resharing on an individual basis (see below).
 
-##Unshare a dashboard
+## Unshare a dashboard
 
 1.  Open the dashboard to share and click Share Dashboard.  
 
@@ -68,7 +68,7 @@ Resharing allows your coworkers to forward the email invitation to others in you
     **Disable reshares** to keep that person from sharing with anyone else.  
     Or if the person hasn't yet accepted your share invitation, **Cancel Invite**.
 
-##Turn off resharing
+## Turn off resharing
 
 Only the dashboard owner can turn resharing on and off.
 

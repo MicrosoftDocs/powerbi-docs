@@ -17,12 +17,12 @@
    ms.date="06/18/2015"
    ms.author="v-anpasi"/>
 
-#Refresh data in Power BI
+# Refresh data in Power BI
 [← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 Whenever you’re reporting on data that’s changing, it’s important the data behind your reports is up-to-date. Power BI supports scheduled and manual refresh for a limited number of data sources. Additional data sources will support refresh in upcoming releases.﻿
 ﻿
-##Data sources that support refresh in Power BI
+## Data sources that support refresh in Power BI
 
 Schedule Refresh and Refresh Now in Power BI are ***only*** supported for Excel workbooks where Power Query is used to connect to and query data from the following data sources:  
 
@@ -51,7 +51,7 @@ Schedule Refresh and Refresh Now in Power BI are ***only*** supported for Excel
 	-   If you've created a direct connection to data through Power Pivot, it cannot be scheduled for refresh. The alternative is to connect directly through Power Query.
 	-   If you've loaded the data to a worksheet, it cannot be scheduled for refresh. The alternative is to load the query directly into the data model by changing the query’s load settings.
 
-##Refreshing your data
+## Refreshing your data
 
 ﻿There are two ways you can refresh a dataset, Schedule Refresh and Refresh Now. Either way, you’ll first need to specify credentials so Power BI can connect to the data source. Once specified, they are retained in that dataset’s settings and you won’t have to enter them again.
 ### To specify credentials
@@ -86,7 +86,7 @@ Schedule Refresh and Refresh Now in Power BI are ***only*** supported for Excel
   
 ![](media/powerbi-refresh-data/RefreshData_RefNow_1.png)
 
-##More about refreshing your data
+## More about refreshing your data
 ﻿In Power BI, you refresh datasets, because this is where the data behind your reports is. You might be thinking ‘but, I connected to an Excel worksheet, and SalesForce as my data sources’. Well, that’s true, but when you connected to those Excel workbooks in Power BI, the data or connections from them are imported into Power BI. Once in Power BI, the data is stored in a model that keeps it in-memory and in a structure that makes it easy for visualizations in your reports and dashboards to change and recalculate metrics quickly.
 ### When to refresh data
 

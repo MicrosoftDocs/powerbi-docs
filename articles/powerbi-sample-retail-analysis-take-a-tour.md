@@ -1,6 +1,6 @@
 <properties pageTitle="Retail Analysis sample for Power BI: Take a tour" description="Retail Analysis sample for Power BI: Take a tour" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Retail Analysis sample for Power BI: Take a tour
+# Retail Analysis sample for Power BI: Take a tour
 
 [← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
@@ -133,7 +133,7 @@ To make this easier to analyze, let’s sort it.
 
 We hope this tour of the Retail Analysis Sample has provided you education on how to exercise the various functionality of the dashboard, Q&A and report, as well as inspiration for you to connect and explore your own data and discover the insights awaiting!
 
-##See Also:
+## See Also:
 
 [Download the Retail Analysis sample content pack](https://support.powerbi.com/knowledgebase/articles/640117)  
 [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=528592)  

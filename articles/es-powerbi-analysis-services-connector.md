@@ -17,7 +17,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Configurar un conector de servicios de análisis de BI de energía
+# Configurar un conector de servicios de análisis de BI de energía
 
 [Datos de gran tamaño ← y mucho más](https://support.powerbi.com/media/knowledgebase/topics/88773-big-data-and-more)
 
@@ -42,7 +42,7 @@ El conector puede ejecutarse en cualquier equipo del dominio. No tiene que ser e
 -   El conector de Analysis Services y el servidor de Analysis Services están instalados en equipos en el mismo dominio.
 -   Si utiliza un. onmicrosoft.com dirección de correo electrónico, tendrá que sincronizar Active Directory con Azure Active Directory mediante la sincronización de Azure Active Directory \(DirSync\). Para obtener más información. consulte [Power BI Analysis Services conector detallada](http://support.powerbi.com/media/knowledgebase/articles/546004-power-bi-analysis-services-connector-in-depth).
 
-##Para instalar y configurar un conector de servicios de análisis de BI de alimentación
+## Para instalar y configurar un conector de servicios de análisis de BI de alimentación
 
 1.  En Power BI, haga clic en el icono de configuración ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVDhP5VQ9boYwDHU7Iq4AI3fhCFyAa3AKFi7AwIgEOzMjAwMsMMDGgMRK80zyEf5aVfrUpU+y/JPYcZynfBDRKuRt+JT6bfi7gmEYUtM01HWdjBAFQcDxn4AZXqQoilXB932OjePIflVVl/2a7I7jOGscx2yXZcnJCsuySOsXBc9FnqAOfZDNQHd6FwAOQBzrruuuYqYcxz4x23WaJr2Qkt1BEjYBT9dCIR3ioQ7rh1fO85zmeWY7SRLWoksSeZRlGftpmrIG+r6nYRikt+FVEJQQ3ZFlWTJyhGma0trQti3Ztk1RFMnIDm4Vg9ahX1nRBqKuDAqp+Z5kM5CEzfqMwEWVBI1DdKCoytfkErgknqHYgANv8i+BFz2AM5UUB5+4+O3ngMEbhsGvr1DXNWvP81jf4fYk8QkcSA1+YhSwz3t1+XcfLNEXtXPv0IvqeuUAAAAASUVORK5CYII=) \> **vista previa de conector de Analysis Services**.
 
@@ -86,11 +86,11 @@ Cuando un usuario selecciona la nueva conexión, todos los modelos tabulares dis
 
 ![](media/powerbi-analysis-services-connector/ConnectToAS_Models.png)
  
-##Para quitar un conector de la lista de obtener datos
+## Para quitar un conector de la lista de obtener datos
 
 Desinstalar el conector con quitar programas en el Panel de Control.
 
-##Solución de problemas
+## Solución de problemas
 
 Consulte [conector de solución de problemas de servicios de análisis](http://support.powerbi.com/media/knowledgebase/articles/505324-troubleshooting-analysis-service-connector)para obtener sugerencias sobre cómo solucionar problemas es posible que tenga.
 

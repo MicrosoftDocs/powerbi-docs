@@ -14,7 +14,7 @@
    ms.date="06/19/2015"
    ms.author="v-anpasi"/>
 
-#Introducción a Power BI
+# Introducción a Power BI
 
 Microsoft Power BI le ayudará a mantenerse al día con la información que es importante para usted. Con Power BI, **paneles** ayuda a tener un dedo en el pulso de su negocio. Los paneles muestran **mosaicos** que puede hacer clic para explorar más con **informes**. Conectarse a varios **conjuntos de datos** para llevar todos los datos relevantes juntos en un solo lugar.
 
@@ -26,7 +26,7 @@ Microsoft Power BI le ayudará a mantenerse al día con la información que es i
 
 [TODO: Agregar vídeo]
 
-##Paso 1: Obtener datos
+## Paso 1: Obtener datos
 
 [Iniciar sesión en Power BI](http://powerbi.microsoft.com). ¿No tiene una cuenta? Puede probar el [nuevo Power BI obtener una vista previa de forma gratuita](http://powerbi.microsoft.com).
 

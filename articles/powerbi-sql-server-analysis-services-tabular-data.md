@@ -1,6 +1,6 @@
 <properties pageTitle="SQL Server Analysis Services Tabular data in Power BI" description="SQL Server Analysis Services Tabular data in Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#SQL Server Analysis Services Tabular data in Power BI
+# SQL Server Analysis Services Tabular data in Power BI
 
 [← Big data and more](https://support.powerbi.com/knowledgebase/topics/88773-big-data-and-more)
 
@@ -12,7 +12,7 @@ In Power BI Preview, there are two ways you can connect to SQL Server Analysis S
 -   Q&A natural language querying is not currently available for SSAS on-premises tabular data.  Only cloud-based datasets are supported for Q&A.
 
  
-##To connect to a tabular model from Get data
+## To connect to a tabular model from Get data
 
 1.  In **Get data**, click **Big Data & More**.
 
@@ -36,17 +36,17 @@ In Power BI Preview, there are two ways you can connect to SQL Server Analysis S
 
 If you pin visuals from a report to the dashboard, the pinned tiles are automatically refreshed every 10 minutes. If the data in your on-premises Analysis Services Tabular server is updated, the tiles will get auto-updated after 10 minutes.
 
-##More about tabular models
+## More about tabular models
 
 ﻿Tabular models are in-memory databases in [SQL Server Analysis Services](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx). Using state-of-the-art compression algorithms and a multi-threaded query processor, the Analysis Services in-memory analytics engine delivers fast access to tabular model objects and data by reporting client applications such as Microsoft Excel and Microsoft Power BI Preview.
 
-###High performance and highly secure
+### High performance and highly secure
 Tabular model databases can scale to terabytes of data, partitioned for optimized processing. Tabular model databases also provide a highly secure environment for your data, right down to the row-level, using role-based permissions.
 
-###Authoring tabular models
+### Authoring tabular models
 Tabular models are authored in SQL Server Data Tools – Business Intelligence for Visual Studio (SSDT-BI) using tabular model project templates. You can connect to data from multiple sources, and then enrich the model by adding relationships, calculated columns, measures, KPIs, and hierarchies. Models can then be deployed to an instance of SQL Server Analysis Services where client reporting applications such as Power BI Preview can connect to them. 
 
-###Analysis Services tabular models and Power BI Preview
+### Analysis Services tabular models and Power BI Preview
 If your organization already has SQL Server Analysis Services tabular models on-premises, you can use Power BI Preview to explore, mashup, and visualize data and metrics in them. 
 
 ﻿To learn more about SQL Server Analysis Services tabular models, see [Microsoft Business Intelligence](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx).

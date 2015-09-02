@@ -1,6 +1,6 @@
 <properties pageTitle="Tips for Power BI visualizations" description="Tips for Power BI visualizations" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-#Tips for Power BI visualizations
+# Tips for Power BI visualizations
 [← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 There are so many visualization types to choose from.  Use these tips to help you pick the right visualization for your data.  For the full list of Power BI visualization types, see [Visualization types available in Power BI reports](http://support.powerbi.com/knowledgebase/articles/469552-visualization-types-available-in-power-bi-reports).
@@ -33,7 +33,7 @@ There are so many visualization types to choose from.  Use these tips to help y
 
     ![](media/powerbi-service-tips-for-visualizations/PBI_TreeMap.png)
 
-##See Also:
+## See Also:
 
 [Visualizations in reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
 [Tips for designing dashboards](http://support.powerbi.com/knowledgebase/articles/433616-tips-for-designing-a-great-dashboard)  

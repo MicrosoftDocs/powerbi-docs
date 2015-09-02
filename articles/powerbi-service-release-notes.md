@@ -1,6 +1,6 @@
 <properties pageTitle="Q&A in Power BI Preview" description="Q&A in Power BI Preview" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/> 
 <tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-#Q&A in Power BI Preview
+# Q&A in Power BI Preview
 [← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Sometimes the fastest way to get an answer from your data, is to ask a question using natural language.  For example, "what were total sales last year."  Use Q&A to explore your Excel data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
@@ -11,7 +11,7 @@ How does Q&A know how to answer data-specific questions? It relies on the name
 
 Read more about [preparing a workbook for Q&A](http://support.powerbi.com/knowledgebase/articles/474690-how-to-make-q-a-work-with-your-data), [pinning a tile to the dashboard from Q&A](http://support.powerbi.com/knowledgebase/articles/424874-pin-a-tile-to-a-dashboard-from-the-question-box), and [asking the right questions of your Salesforce dataset](http://support.powerbi.com/knowledgebase/articles/475138-ask-the-right-questions-of-salesforce-data).
 
-##Q&A basic concepts
+## Q&A basic concepts
 
 The Q&A text box is located at the top of a dashboard. To see and use Q&A, a dashboard name must be selected in the navigation pane.
 
@@ -25,7 +25,7 @@ When you type a query, Power BI looks for an answer in any dataset that has a ti
 
 For more information, see [Power Bi Preview - basic concepts](http://support.powerbi.com/knowledgebase/articles/487029).
 
-##Types of questions to ask of an uploaded Excel workbook
+## Types of questions to ask of an uploaded Excel workbook
 
 When you have a workbook prepared for Q&A, you are on your way to start asking questions. Here’s a sample of the types of questions you can ask:
 
@@ -56,7 +56,7 @@ When you have a workbook prepared for Q&A, you are on your way to start asking q
 -   &lt;measure\> by &lt;column name\> for &lt;specific entity within another column\>  
 	Example: Total sales by sales rep for Surface Pro 3
 
-##See Also:
+## See Also:
 
 [Power Bi Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
 [Get started with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
