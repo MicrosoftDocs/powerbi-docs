@@ -42,7 +42,7 @@ When you connect to your QuickBooks Online data from Power BI you immediately ge
 
 8.  Select the QuickBooks Online dashboard. This is the dashboard Power BI created automatically to display your imported data. You can modify this dashboard to display your data any way you want
 
-     ![](media/powerbi-content-pack-quickbooks-online/QB_dashboard.png)
+     ![](media/powerbi-content-pack-quickbooks-online/QB_Dashboard.png)
 
 9.  What can you do now?
 

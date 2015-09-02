@@ -34,7 +34,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
     When you finish typing your question, the result is the exact same line chart that we saw in the report.  But creating it this way was much faster!  
 
-    ![](media/powerbi-service-tutorial-introduction-to-q-and-a/QnANoOwl.gif)
+    NOTE: removed reference to following b/c over 1MB: media/powerbi-service-tutorial-introduction-to-q-and-a/QnANoOwl.gif
 
 3.  To pin the chart to your dashboard, select the pin icon.
 
