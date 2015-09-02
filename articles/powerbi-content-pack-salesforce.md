@@ -23,7 +23,7 @@ After you have a connection to your Salesforce account, you can explore your dat
 
 4. When prompted, enter your Salesforce credentials. Click **Allow** so Power BI Preview can access your basic Salesforce information and data.
 
-	![](media/powerbi-content-pack-salesforce/SF_Authorize.png)
+	![](media/powerbi-content-pack-salesforce/SF_authorize.png)
 
 5. Configure what you'd like to import into Power BI Preview using the dropdown option:
 	- **Dashboard**  
