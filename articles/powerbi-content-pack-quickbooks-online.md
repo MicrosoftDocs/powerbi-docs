@@ -7,7 +7,7 @@
 When you connect to your QuickBooks Online data from Power BI you immediately get a Power BI dashboard and Power BI reports that provide insights about your business cash flow, profitability, customers, and more. Use the dashboard and reports as they are, or customize them to highlight the information you care most about. The data is refreshed automatically once a day.
  > **Note:** If you're having issues connecting, see the **Troubleshooting** section at the end of this article.
 
-![](media/powerbi-content-pack-quickbooks-online/QB_Dashboard.png)
+![](media/powerbi-content-pack-quickbooks-online/QB_dashboard.png)
 
  > **Important**: To import your QuickBooks Online data into Power BI, you need to be an admin on your QuickBooks Online account and sign in with your admin account credentials.
  
@@ -42,7 +42,7 @@ When you connect to your QuickBooks Online data from Power BI you immediately ge
 
 8.  Select the QuickBooks Online dashboard. This is the dashboard Power BI created automatically to display your imported data. You can modify this dashboard to display your data any way you want
 
-     ![](media/powerbi-content-pack-quickbooks-online/QB_Dashboard.png)
+     ![](media/powerbi-content-pack-quickbooks-online/QB_dashboard.png)
 
 9.  What can you do now?
 
