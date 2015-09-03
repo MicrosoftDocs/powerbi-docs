@@ -1,7 +1,7 @@
-azure-content-test
+powerbi-content-test
 ==================
 
-This repository is used to test the Documentation Publishing Service (DPS) that is used for managing the azure.microsoft.com documentation. The documentation articles within the /articles directory of this repository are example articles designed to validate and demonstrate specific markdown syntax, custom markdown extensions, and common authoring scenarios.  These example documentation articles are published using DPS into the /test/documentation/articles path within the azure.microsoft.com site.  
+This repository is used to test the Documentation Publishing Service (DPS) that is used for managing the Power BI documentation. The example*.md documentation articles within the /articles directory of this repository are example articles designed to validate and demonstrate specific markdown syntax, custom markdown extensions, and common authoring scenarios. 
 
 The following example articles are currently being used:
 
