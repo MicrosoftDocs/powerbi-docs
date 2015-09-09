@@ -49,7 +49,7 @@ Use the following guidelines when creating and including art files:
 
 - .png files are highly preferred over other formats.
 
-- Use red squares of the default width provided in Paint (5 px) to call attention to particular elements in screenshots.  
+- Use pink squares of the default width provided in Paint (5 px) to call attention to particular elements in screenshots.  
 
     Example:
     
