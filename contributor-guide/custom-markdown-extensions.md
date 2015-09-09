@@ -15,7 +15,7 @@
     ms.topic="article"
     ms.tgt_pltfrm=""
     ms.workload=""
-    ms.date="01/22/2015"
+    ms.date="09/09/2015"
     ms.author="mblythe"/>
 
 ## Markdown for powerbi.microsoft.com
@@ -85,11 +85,11 @@ Multiparagraph:
 
 ## Includes
 
-Reusable text fragments in our GitHub repository are called "includes". When you have text that needs to be used in multiple articles, you include a reference to the text fragments in the markdown files. The text fragment (the include) itself is a simple markdown (.md) file. It can contain any valid markdown, including text, links, and images. All include markdown files must be in [the /includes directory](https://github.com/Power BI/powerbi-content/tree/master/includes) in the root of the repository. When the article is published, the include text is seamlessly integrated into the published topic.
+Reusable text fragments in our GitHub repository are called "includes". When you have text that needs to be used in multiple articles, you include a reference to the text fragments in the markdown files. The text fragment (the include) itself is a simple markdown (.md) file. It can contain any valid markdown, including text, links, and images. All include markdown files must be in [the /includes directory](https://github.com/azure/powerbi-content/tree/master/includes) in the root of the repository. When the article is published, the include text is seamlessly integrated into the published topic.
 
 - We use a specific syntax to reference an include.
 
-- Media files you put in an include must be created in a media folder specific to the include. Media folders for includes belong in [the powerbi-content/includes/media folder](https://github.com/Power BI/powerbi-content/tree/master/includes/media). The media directory should not contain any images in its root. If the include does not have images, then a corresponding media directory is not required.
+- Media files you put in an include must be created in a media folder specific to the include. Media folders for includes belong in [the powerbi-content/includes/media folder](https://github.com/azure/powerbi-content/tree/master/includes/media). The media directory should not contain any images in its root. If the include does not have images, then a corresponding media directory is not required.
 
 ###Usage
 
@@ -138,26 +138,12 @@ In the rendered HTML on powerbi.microsoft.com, the HTML from the includes is mer
 
 ## Embedded videos
 
-Our technical articles support embeddeded videos in technical articles as long as the videos are on Microsoft's [Channel 9](http://channel9.msdn.com/) site. The videos from Channel 9 must be integrated with [the powerbi.microsoft.com Video Center](http://powerbi.microsoft.com/documentation/videos/home/). We currently do not support embedded YouTube videos; if you're a community contributor, you are welcome to link to YouTube if the video you want to feature is posted there. Microsoft contributors should use Channel 9 and the Video Center.
-
-### Usage
-
-- Make sure that the video is on the Video Center.
-
-- Copy the video ID from the friendly URL of the video on Channel 9 or from the Power BI Video Center. For example, the video ID for the video at [http://powerbi.microsoft.com/documentation/videos/Power BI-scheduler-unusual-schedules/](http://powerbi.microsoft.com/documentation/videos/Power BI-scheduler-unusual-schedules/) is **Power BI-scheduler-unusual-schedules**.
-
-### Syntax
-
-    > [Power BI.VIDEO video-id-string]
-
-### Rendering
-
-On GitHub: [https://github.com/Power BI/powerbi-content-pr/blob/master/articles/web-sites-backup.md](https://github.com/Power BI/powerbi-content-pr/blob/master/articles/web-sites-backup.md)
-
-Published article: [http://powerbi.microsoft.com/documentation/articles/web-sites-backup/](http://powerbi.microsoft.com/documentation/articles/web-sites-backup/)
+Our technical articles will support embeddeded videos in technical articles, details are TBD (Azure requires Channel 9, but we want to use YouTube).
 
 
 ## Technology and platform selectors
+
+> [AZURE.NOTE] This info is for Azure but we might adopt selectors in the future.
 
 Use technology and platform switchers in technical articles when you author multiple flavors of the same article to address differences in implementation across technologies or platforms. This is typically most applicable to our mobile platform content for developers. There are currently two different types of selectors, [simple selectors](#simple-selectors) and [two-way selectors](#two-way-selectors).
 
@@ -167,19 +153,19 @@ Because the same selector markdown goes in each topic in the selection, we recom
 
 Simple (one-way) selectors render as a set of option buttons right below the title. Use these buttons when customers only need to choose from topics in a single platform or technology set, such as .NET, Node.js, and Java.  Please use the below custom markdown format for any selectors.  Do not use HTML for selector functions.  
 
-See [Get started with Notification Hubs](http://powerbi.microsoft.com/documentation/articles/notification-hubs-windows-phone-get-started/) to see how the author created 8 versions of the same article, but used selectors to enable navigation across them all.
+See [Get started with Notification Hubs](http://azure.microsoft.com/documentation/articles/notification-hubs-windows-phone-get-started/) to see how the author created 8 versions of the same article, but used selectors to enable navigation across them all.
 
 ![Simple selector example](./media/custom-markdown-extensions/selectors.PNG)
 
 ####Syntax
 
-    > [Power BI.SELECTOR]
+    > [AZURE.SELECTOR]
     - [Link #1 Label](link #1 url)
     - [Link #2 Label](link #2 url)
 
 Example:
 
-    > [Power BI.SELECTOR]
+    > [AZURE.SELECTOR]
     - [Universal Windows](../articles/notification-hubs-windows-store-dotnet-get-started/)
     - [Windows Phone](../articles/notification-hubs-windows-phone-get-started/)
     - [iOS](../articles/notification-hubs-ios-get-started/)
@@ -195,19 +181,19 @@ The image above shows the rendering on powerbi.microsoft.com. On the rendered Gi
 
 ###<a id="two-way-selectors"></a>Two-way selectors
 
-Two-way selectors lets users select a topics from a two way matrix. This is essential when a Power BI technology, such as Mobile Services, supports multiple backend platforms as well as multiple clients. Keep in mind the following:
+Two-way selectors lets users select a topics from a two way matrix. This is essential when an Azure technology, such as Mobile Services, supports multiple backend platforms as well as multiple clients. Keep in mind the following:
 
 - While it was designed as `(Platform | Backend)`, the dropwdown text can now be customized.
 - You do not need a list item for every point in your matrix, but do only have an item where a topic URL exists and is not a duplicate.
 - The link can be any URL, although it is generally another GitHub topic.
 
-See [Get started with Mobile Services](http://powerbi.microsoft.com/en-us/documentation/articles/mobile-services-ios-get-started/) to see how the author created 15 versions of the same article (9 mobile client platforms and 2 backend platforms), but used selectors to enable navigation across them all. Note that 3 articles don't have both backend versions.
+See [Get started with Mobile Services](http://azure.microsoft.com/en-us/documentation/articles/mobile-services-ios-get-started/) to see how the author created 15 versions of the same article (9 mobile client platforms and 2 backend platforms), but used selectors to enable navigation across them all. Note that 3 articles don't have both backend versions.
 
 ![Two-way selectors example](./media/custom-markdown-extensions/selector-list.png)
 
 ####Syntax
 
-	> [Power BI.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+	> [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
 	- [(Dropdown1Text1 | Dropdown2Text1 )](../articles/dropdown1-text1-dropdown2-text1.md)
 	- [(Dropdown1Text1 | Dropdown2Text2 )](../articles/dropdown1-text1-dropdown2-text1.md)
 	- [(Dropdown1Text2 | Dropdown2Text3 )](../articles/dropdown1-text1-dropdown2-text1.md)
@@ -215,7 +201,7 @@ See [Get started with Mobile Services](http://powerbi.microsoft.com/en-us/docume
 
 Example:
 
-	> [Power BI.SELECTOR-LIST (Platform | Backend )]
+	> [AZURE.SELECTOR-LIST (Platform | Backend )]
 	- [(iOS | .NET)](./mobile-services-dotnet-backend-ios-get-started-push.md)
 	- [(iOS | JavaScript)](./mobile-services-javascript-backend-ios-get-started-push.md)
 	- [(Windows universal C# | .NET)](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)
@@ -229,7 +215,7 @@ Example:
 
 #### Rendering
 
-The image above shows the rendering on powerbi.microsoft.com. On the rendered GitHub pages, the selectors render as a bulleted list of links.
+The image above shows the rendering on azure.microsoft.com. On the rendered GitHub pages, the selectors render as a bulleted list of links.
 
 <!--Anchors-->
 [Notes and tips]: #notes-and-tips

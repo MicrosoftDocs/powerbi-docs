@@ -12,7 +12,7 @@ ms.service="contributor-guide"
  ms.topic="article"
   ms.tgt_pltfrm="" 
   ms.workload="" 
-  ms.date="01/19/2015" 
+  ms.date="09/09/2015" 
   ms.author="mblythe" />
 
 #Install and set up tools for authoring in GitHub
@@ -95,9 +95,11 @@ You need to install the tools if you want to make any of the following sorts of 
 
 ##Permissions in GitHub
 
-Anybody with a GitHub account can contribute to Power BI technical content through our public repository at [https://github.com/Power BI/powerbi-content](https://github.com/Power BI/powerbi-content). No special permissions are required.
+Anybody with a GitHub account can contribute to Power BI technical content through our public repository at [https://github.com/azure/powerbi-content](https://github.com/azure/powerbi-content). No special permissions are required.
 
-If you are a Microsoft employee working on Power BI content, you should work in our private content repository, powerbi-content-pr. Visit [http://aka.ms/Power BIgithub](http://aka.ms/Power BIgithub) to obtain the read permissions that will let you make contributions through the private repo - click **Join a Team**, and join **powerbi-content-read**.
+> [AZURE.NOTE] The powerbi-content repo will be private until further notice. You should work in the powerbi-content-pr repo.
+
+If you are a Microsoft employee working on Power BI content, you should work in our private content repository, powerbi-content-pr. Visit [http://aka.ms/azuregithub](http://aka.ms/azuregithub) to obtain the read permissions that will let you make contributions through the private repo - click **Join a Team**, and join **azure-content-read**.
 
 ## Install Git for Windows
 

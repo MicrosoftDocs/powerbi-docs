@@ -1,10 +1,12 @@
 <properties pageTitle="Git commands for staging an new or updated article" description="Steps for previewing new and updated articles." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
-<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="01/16/2015" ms.author="mblythe" />
+<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
 # Git commands for staging an article on the internal preview site
 
 Staging is now automated for private repository pull requests. See [Git commands for creating a new article or updating an existing article](git-commands-for-master.md)
+
+> [AZURE.NOTE] Will revisit this article and add info as appropriate, depending on how we set up staging.
 
 <!--
 Follow the steps in this article to stage content to the internal staging site prior to releasing the article to the public site.
