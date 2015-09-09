@@ -177,13 +177,13 @@ Create a reference to the root repository by entering these commands. This sets 
 Public repo:
 
         cd powerbi-content
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Power BI/powerbi-content.git
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content.git
         git fetch upstream
 
 Private repo:
 
         cd powerbi-content-pr
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Power BI/powerbi-content-pr.git
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content-pr.git
         git fetch upstream
 
 This usually takes a while. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
