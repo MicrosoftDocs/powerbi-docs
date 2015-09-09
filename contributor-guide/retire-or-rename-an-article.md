@@ -2,7 +2,7 @@
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
-# Steps to follow when you retire or change the name of an ACOM technical article
+# Steps to follow when you retire or change the name of a Power BI technical article
 
 This guidance is for SMEs who are listed as the author of an article that needs to be retired from the technical documentation section of powerbi.microsoft.com. The steps also apply if a file is renamed.
 
