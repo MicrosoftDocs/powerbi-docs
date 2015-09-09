@@ -1,6 +1,6 @@
 <properties pageTitle="Git commands for creating a new article or updating an existing article" description="Steps for working with the Power BI technical content GitHub repositories." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
-<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="01/16/2015" ms.author="mblythe" />
+<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
 # Git commands for creating a new article or updating an existing article
 

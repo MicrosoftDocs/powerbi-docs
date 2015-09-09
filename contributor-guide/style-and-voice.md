@@ -1,6 +1,6 @@
 <properties title="" pageTitle="Writing Power BI documentation - style and voice cheat sheet" description="Style and voice information to help you create technical content for the Power BI documentation center." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="required" />
 
-<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="12/16/2014" ms.author="glenga" />
+<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
 #Writing Power BI documentation - style and voice cheat sheet
 
@@ -12,7 +12,7 @@ At a bare minimum, please:
 - Use a casual and friendly voice--like you were talking to another person one-on-one.
 - Use simple sentences. They are easier to understand, and they are more easily translated by both human and machine translators.
 
-The following sections contain a more details:
+The following sections contain more details:
 
 + [Use a customer-friendly voice]
 + [Consider localization and machine translation]
@@ -50,21 +50,15 @@ Our technical articles are translated into many other languages, and some are mo
 
 - For steps that include code snippets, put additional information about the step into the code as comments. This reduces the amount of text people have to read through, and the key information gets copied into the code project to remind people of what the code is doing when they refer to it later.
 
-- The official product name is “Microsoft Power BI”, but we can almost always just say “Power BI”, as in "Power BI Mobile Services".
+- The official product name is “Microsoft Power BI”, but we can almost always just say “Power BI”, as in "Power BI dashboard".
 
-- Don’t create acronyms that start with "MA" or "A." Just use “Power BI” at first reference before a service or feature name and then drop it (e.g. "Power BI Mobile Services" becomes "Mobile Services" after first use). Try to avoid acronyms in general - they just confuse people.
+- Don’t create acronyms that start with "MPBI" or "PBI."  Try to avoid acronyms in general - they just confuse people.
 
 - Power BI uses sentence casing for all titles.
 
 - Use "sign-in" and not "log-in."
 
 - Include the words "following" or "as follows" in every sentence that precedes a list or code snippet.
-
-- "SQL Database" is the Power BI feature. A "SQL database" is a database instance running on SQL Database.
-
-- Power BI Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. (It's not called the "Power BI Table storage service".)
-
-
 
 
 ###Contributors' Guide Links
