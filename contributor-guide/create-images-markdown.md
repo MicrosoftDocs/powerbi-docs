@@ -40,7 +40,7 @@ See [the markdown template](https://raw.githubusercontent.com/azure/azure-conten
 
 ## Guidelines specific to powerbi.microsoft.com
 
-NOTE: We will revise this section based on art guidelines specific to Power BI.
+> [AZURE.NOTE] We will revise this section based on art guidelines specific to Power BI.
 
 Screenshots are currently encouraged if it's not possible to include repro steps. Do write your content so that the content can stand without the screenshots if necessary.
 

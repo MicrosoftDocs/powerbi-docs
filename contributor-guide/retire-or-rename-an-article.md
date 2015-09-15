@@ -1,10 +1,14 @@
-# Steps to follow when you retire or change the name of an ACOM technical article
+<properties pageTitle="Git commands for staging an new or updated article" description="Steps for retiring and renaming articles." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+
+<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
+
+# Steps to follow when you retire or change the name of a Power BI technical article
 
 This guidance is for SMEs who are listed as the author of an article that needs to be retired from the technical documentation section of powerbi.microsoft.com. The steps also apply if a file is renamed.
 
 If you're a member of our Power BI community and you think an article should be retired for any reason, please leave a comment in the Disqus comment stream for the article to let the author know something is wrong with the article.
 
-SME authors need to follow several steps to gracefully retire content so users of the website don't have a bad experience when we retire content from the site. Deleting the article or changing it’s name should be the last thing that happens!
+SME authors need to follow several steps to gracefully retire content so users of the website don't have a bad experience when we retire content from the site. Deleting the article or changing its name should be the last thing that happens!
 
 ## Step 1: Manage inbound links
 
@@ -14,7 +18,7 @@ Determine if there are any non-Microsoft inbound links to your content. Frequent
 
 1. Ensure you are working in an up-to-date local branch – run `git pull upstream master` (or the appropriate variation on this command.
 
-2.	Scan the powerbi-content-pr/articles folder and the powerbi-content-pr/includes folder for any articles and includes that link to the article you want to retire, and either remove the crosslinks or replace them with an appropriate new crosslinks. You can use a search and replace utility to find the crosslinks if you have one installed. If you don't, you can use Windows PowerShell for free! Here's how to use PowerShell to find the crosslinks:
+2.	Scan the powerbi-content-pr/articles folder and the powerbi-content-pr/includes folder for any articles and includes that link to the article you want to retire, and either remove the crosslinks or replace them with appropriate new crosslinks. You can use a search and replace utility to find the crosslinks if you have one installed. If you don't, you can use Windows PowerShell for free! Here's how to use PowerShell to find the crosslinks:
 
  a. Start Windows PowerShell.
 
@@ -34,15 +38,17 @@ Determine if there are any non-Microsoft inbound links to your content. Frequent
 
 ## Step 3: Update the FWLink tool
 
-Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed. More info - [internal wiki](http://sharepoint/sites/Power BIcontentguidance/wiki/Pages/Manage%20inbound%20links%20to%20retired%20topics.aspx).
+Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed. More info - [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Manage%20inbound%20links%20to%20retired%20topics.aspx).
 
 ## Step 4: Remove all crosslinks to the article from other pages on powerbi.microsoft.com and create a redirect for the retired page, if appropriate
 
-You'll have to work with the person who maintains and updates the documentation landing page for your service for this part. Contact your content team partner if you don't know who that person is. The person who maintains and updates the doc landing page will need to do two things:
+> [AZURE.NOTE]] Need to verify what steps are required for Power BI links.
 
-1. In Visual Studio, scan the **entire** ACOM web solution for cross references to the file to retire. Remove the cross references, or replace them with an updated cross reference. You'll need to remove the HTML links as well as the related resource strings for the HTML links. More info - see the [internal wiki](http://sharepoint/sites/Power BIcontentguidance/wiki/Pages/Create%20or%20edit%20a%20service%20landing%20page%20or%20left%20nav.aspx)
+The person who maintains and updates the doc landing page will need to do two things:
 
-2. If a replacement article exists, create a redirect. More info - see the [internal wiki](http://sharepoint/sites/Power BIcontentguidance/wiki/Pages/Remove%20published%20pages%20and%20request%20redirects.aspx).
+1. In Visual Studio, scan the **entire** Power BI web solution for cross references to the file to retire. Remove the cross references, or replace them with an updated cross reference. You'll need to remove the HTML links as well as the related resource strings for the HTML links. More info - see the [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Create%20or%20edit%20a%20service%20landing%20page%20or%20left%20nav.aspx)
+
+2. If a replacement article exists, create a redirect. More info - see the [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Remove%20published%20pages%20and%20request%20redirects.aspx).
 
 3. Check the changes into the repository.
 
