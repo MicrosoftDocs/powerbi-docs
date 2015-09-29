@@ -84,7 +84,7 @@ The following features have been added in this update:
 
 -   Support for Exchange UPN Credentials in the Exchange connector.﻿
 
-In addition to all these new features, we’re also making **Power BI Desktop available in 42 different languages.** Get the full list of languages and install the one you want from [our official download page](https://www.microsoft.com/en-us/download/details.aspx?id=45331).
+In addition to all these new features, we’re also making **Power BI Desktop available in 42 different languages.** Get the full list of languages and install the one you want from [our official download page](https://www.microsoft.com/download/details.aspx?id=45331).
 
 Take a look at the following video for more details:
 

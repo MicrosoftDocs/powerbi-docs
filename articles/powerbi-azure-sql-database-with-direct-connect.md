@@ -26,7 +26,7 @@ Notes:
 
 -   Specify the fully qualified server name when connecting (see below for more details)
 
--   Ensure firewall rules for the database are configured to "[Allow access to Azure services](https://msdn.microsoft.com/en-us/library/azure/ee621782.aspx)".
+-   Ensure firewall rules for the database are configured to "[Allow access to Azure services](https://msdn.microsoft.com/library/azure/ee621782.aspx)".
 
 -   Every action such as selecting a column or adding a filter will send a query back to the database
 

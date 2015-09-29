@@ -66,7 +66,7 @@ Tabular models also provide dynamic, row-level security. Unlike having at least 
 
 In Power BI, a users ability to query and view tabular model data are determined first by the roles their Windows user account are a member of and second, by dynamic row-level security, if configured.
 
-Implementing role and dynamic row-level security in tabular models is beyond the scope of this article.  You can learn more at [Roles (SSAS Tabular)](https://msdn.microsoft.com/en-us/library/hh213165.aspx) on MSDN. And, for the most in-depth understanding of tabular model security, download and read the [Securing the Tabular BI Semantic Model](https://msdn.microsoft.com/en-us/library/jj127437.aspx) whitepaper.
+Implementing role and dynamic row-level security in tabular models is beyond the scope of this article.  You can learn more at [Roles (SSAS Tabular)](https://msdn.microsoft.com/library/hh213165.aspx) on MSDN. And, for the most in-depth understanding of tabular model security, download and read the [Securing the Tabular BI Semantic Model](https://msdn.microsoft.com/library/jj127437.aspx) whitepaper.
 
 ## What is Active Directory’s role?
 
@@ -74,7 +74,7 @@ In order for Analysis Services Server to determine if a user connecting to it be
 
 ## What about Azure Active Directory?
 
-Because Power BI is a cloud service, it uses [Azure Active Directory](http://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/) to take care of authenticating users.
+Because Power BI is a cloud service, it uses [Azure Active Directory](http://azure.microsoft.com/documentation/articles/active-directory-whatis/) to take care of authenticating users.
 
 When users connect to an on-premises Analysis Services server from Power BI, their username must also be resolved in your domain’s Active Directory. If users in your organization login with their work e-mail address, like nancy@contoso.com, username resolution typically isn’t a problem. In some cases, if a user logs into Power BI with an .onmicrosoft.com address, your domains Active Directory server might need to be synchronized with Azure Active Directory. Fortunately, there’s a tool just for this.
 
@@ -102,11 +102,11 @@ Nancy’s work e-mail is nancy@contoso.com, but when she signs into Power BI, sh
 
 In this case, you can use DirSync to synchronize Active Directory to Azure Active Directory. Once synchronized, Nancy can sign into Power BI using her work e-mail address, nancy@contoso.com. Nancy will be able to interact with her reports just like in our scenario above.
 
-To learn more about using DirSync, see [Directory Integration](https://technet.microsoft.com/en-us/library/jj573653.aspx) on TechNet.
+To learn more about using DirSync, see [Directory Integration](https://technet.microsoft.com/library/jj573653.aspx) on TechNet.
 
 ## Now, this is where the Analysis Services Connector comes in
 
-The connector acts as a bridge between the Power BI cloud service running in a user’s browser and your on-premises Analysis Services server. Data transfer between Power BI and the Analysis Services Connector is secured through [Azure Service Bus](http://azure.microsoft.com/en-us/documentation/services/service-bus/). The Service Bus creates a secure channel between  Power BI and your on-premises Analysis Services server through an outbound connection.  An inbound connection is not required to be opened in your on-premises firewall.
+The connector acts as a bridge between the Power BI cloud service running in a user’s browser and your on-premises Analysis Services server. Data transfer between Power BI and the Analysis Services Connector is secured through [Azure Service Bus](http://azure.microsoft.com/documentation/services/service-bus/). The Service Bus creates a secure channel between  Power BI and your on-premises Analysis Services server through an outbound connection.  An inbound connection is not required to be opened in your on-premises firewall.
 
 You’ll need to install the connector on a computer joined to the same domain as your Analysis Services server and Active Directory. This can be the same computer as Analysis Services. In-fact, it’s even better because the communications between the connector and your Analysis Services server doesn’t have to make an extra hop over the network.
 
@@ -218,7 +218,7 @@ Power BI Analysis Services Connector communicates on outbound ports: TCP 443 (de
 
 For information in how to install and configure a Power BI Analysis Services Connector, see ﻿[Configure a Power BI Analysis Services Connector](http://support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connectorhttp:/support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connector).
 
-For information on synchronizing Azure Active Directory with an on-premises Active Directory by using DirSync, see ﻿[Directory Integration](https://technet.microsoft.com/en-us/library/jj573653.aspx) on TechNet.
+For information on synchronizing Azure Active Directory with an on-premises Active Directory by using DirSync, see ﻿[Directory Integration](https://technet.microsoft.com/library/jj573653.aspx) on TechNet.
 
 For troubleshooting, see ﻿[Troubleshooting Power BI Analysis Service Connector](http://support.powerbi.com/knowledgebase/articles/505324-troubleshooting-analysis-service-connector).
 

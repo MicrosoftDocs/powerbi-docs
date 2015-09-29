@@ -32,7 +32,7 @@ In Power BI Desktop, measures are created and used in Report View or Data View. 
 
 ## Data Analysis Expressions
 
-Measures calculate a result from an expression formula. When you create your own measures, you’ll use the [Data Analysis Expressions](https://msdn.microsoft.com/en-us/library/gg413422.aspx) (DAX) formula language. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating measures to calculate results for just about any data analysis need.
+Measures calculate a result from an expression formula. When you create your own measures, you’ll use the [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX) formula language. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating measures to calculate results for just about any data analysis need.
 
 DAX formulas are a lot like Excel formulas. DAX even has many of the same functions like DATE, SUM, and LEFT. But, DAX’s functions are meant to work with relational data like we have in Power BI Desktop.
 
@@ -58,7 +58,7 @@ Very quickly and with minimal effort, Jan now has a measure to calculate project
 
 We’ve only provided you with a quick introduction to measures here, but there’s a lot more to help you learn how to create your own. Be sure to see the [Tutorial: Create your own measures in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/556656-tutorial-create-your-own-measures-in-power-bi-des), where you can download a sample file and get step-by-step lessons on how to create more measures.  
 
-To dive a little deeper into DAX, be sure to check out [DAX basics in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-designer). The [Data Analysis Expressions Reference](https://msdn.microsoft.com/en-us/library/gg413422.aspx) provides detailed articles on each of the functions, syntax, operators, and naming conventions. DAX has been around for several years in Power Pivot in Excel and SQL Server Analysis Services, so there are a lot of other great resources available, too. Be sure to check out the [DAX Resource Center Wiki](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), where influential members of the BI community share their knowledge of DAX. 
+To dive a little deeper into DAX, be sure to check out [DAX basics in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-designer). The [Data Analysis Expressions Reference](https://msdn.microsoft.com/library/gg413422.aspx) provides detailed articles on each of the functions, syntax, operators, and naming conventions. DAX has been around for several years in Power Pivot in Excel and SQL Server Analysis Services, so there are a lot of other great resources available, too. Be sure to check out the [DAX Resource Center Wiki](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), where influential members of the BI community share their knowledge of DAX. 
 
 ﻿
 

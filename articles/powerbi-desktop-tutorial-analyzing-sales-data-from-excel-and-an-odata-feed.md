@@ -85,13 +85,13 @@ When Query Editor connects to data, it reviews each field and to determine the b
 
 ### Power BI Desktop steps created
 
-As you perform query activities in Query Editor, query steps are created and listed in the **Query Settings** pane, in the **Applied Steps** list. Each query step has a corresponding formula, also known as the "M" language. For more information about the “M” formula language, see [Learn about Power BI formulas](https://support.office.com/en-US/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
+As you perform query activities in Query Editor, query steps are created and listed in the **Query Settings** pane, in the **Applied Steps** list. Each query step has a corresponding formula, also known as the "M" language. For more information about the “M” formula language, see [Learn about Power BI formulas](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 |Task|Query step|Formula|
 |---|---|---|
 |Connect to an Excel workbook|Source|Source{[Name="Products"]}[Data]
-|Promote the first row to table column headers|FirstRowAsHeader|[Table.PromoteHeaders](https://support.office.com/en-US/Article/TablePromoteHeaders-b8eaeb95-042a-42e1-9164-6d3c646acadc "Table.PromoteHeaders") <br /> (Products)|
-|Remove other columns to only display columns of interest|RemovedOtherColumns|[Table.SelectColumns](https://support.office.com/en-US/Article/TableSelectColumns-20bb9e28-9fd3-4cd2-a21b-97972c82ec22 "Table.SelectColumns")  <br />(FirstRowAsHeader,{"ProductID", "ProductName", "QuantityPerUnit", "UnitsInStock"})|
+|Promote the first row to table column headers|FirstRowAsHeader|[Table.PromoteHeaders](https://support.office.com/Article/TablePromoteHeaders-b8eaeb95-042a-42e1-9164-6d3c646acadc "Table.PromoteHeaders") <br /> (Products)|
+|Remove other columns to only display columns of interest|RemovedOtherColumns|[Table.SelectColumns](https://support.office.com/Article/TableSelectColumns-20bb9e28-9fd3-4cd2-a21b-97972c82ec22 "Table.SelectColumns")  <br />(FirstRowAsHeader,{"ProductID", "ProductName", "QuantityPerUnit", "UnitsInStock"})|
 |Change datatype|Changed Type |Table.TransformColumnTypes(\#"Removed Other Columns",{{"UnitsInStock", Int64.Type}})|
 
 
@@ -187,14 +187,14 @@ In this step you finish making the model easy to work with when creating reports
 
 ### Power BI Desktop steps created
 
-As you perform query activities in Query Editor, query steps are created and listed in the **Query Settings** pane, in the **Applied Steps** list. Each query step has a corresponding Power Query formula, also known as the "M" language. For more information about this formula language, see [Learn about Power BI formulas](https://support.office.com/en-US/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f "Learn about Power Query formulas").
+As you perform query activities in Query Editor, query steps are created and listed in the **Query Settings** pane, in the **Applied Steps** list. Each query step has a corresponding Power Query formula, also known as the "M" language. For more information about this formula language, see [Learn about Power BI formulas](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f "Learn about Power Query formulas").
 
 |Task|Query step|Formula
 |---|---|---|
 |Connect to an OData feed|Source|Source{[Name="Orders"]}[Data]|
-|Expand the Order\_Details table|Expand Order\_Details|[Table.ExpandTableColumn](https://support.office.com/en-US/Article/TableExpandTableColumn-54903f25-75a2-4a44-a9a3-52a9d895ee98 "Table.ExpandTableColumn") <br /> (Orders, "Order\_Details", {"ProductID", "UnitPrice", "Quantity"}, {"Order\_Details.ProductID", "Order\_Details.UnitPrice", "Order\_Details.Quantity"})|
-|Remove other columns to only display columns of interest|RemovedColumns|[Table.RemoveColumns](https://support.office.com/en-US/Article/TableRemoveColumns-6265190e-2f58-4300-85b8-df88fc1a67d3 "Table.RemoveColumns") <br />(\#"Expand Order\_Details",{"OrderID", "CustomerID", "EmployeeID", "RequiredDate", "ShippedDate", "ShipVia", "Freight", "ShipName", "ShipAddress", "ShipCity", "ShipRegion", "ShipPostalCode", "ShipCountry", "Customer", "Employee", "Shipper"})|
-|Calculate the line total for each Order\_Details row|InsertedColumn|[Table.AddColumn](https://support.office.com/en-US/Article/TableAddColumn-6c64d0a5-9654-4d15-bfb6-9cc380aaf3c0 "Table.AddColumn") <br /> (RemovedColumns, "Custom", each [Order\_Details.UnitPrice] \* [Order\_Details.Quantity])|
+|Expand the Order\_Details table|Expand Order\_Details|[Table.ExpandTableColumn](https://support.office.com/Article/TableExpandTableColumn-54903f25-75a2-4a44-a9a3-52a9d895ee98 "Table.ExpandTableColumn") <br /> (Orders, "Order\_Details", {"ProductID", "UnitPrice", "Quantity"}, {"Order\_Details.ProductID", "Order\_Details.UnitPrice", "Order\_Details.Quantity"})|
+|Remove other columns to only display columns of interest|RemovedColumns|[Table.RemoveColumns](https://support.office.com/Article/TableRemoveColumns-6265190e-2f58-4300-85b8-df88fc1a67d3 "Table.RemoveColumns") <br />(\#"Expand Order\_Details",{"OrderID", "CustomerID", "EmployeeID", "RequiredDate", "ShippedDate", "ShipVia", "Freight", "ShipName", "ShipAddress", "ShipCity", "ShipRegion", "ShipPostalCode", "ShipCountry", "Customer", "Employee", "Shipper"})|
+|Calculate the line total for each Order\_Details row|InsertedColumn|[Table.AddColumn](https://support.office.com/Article/TableAddColumn-6c64d0a5-9654-4d15-bfb6-9cc380aaf3c0 "Table.AddColumn") <br /> (RemovedColumns, "Custom", each [Order\_Details.UnitPrice] \* [Order\_Details.Quantity])|
 
 
 ## Task 3: Combine the Products and Total Sales queries

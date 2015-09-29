@@ -128,6 +128,6 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 ### Stay in touch with Power BI
 
 -   Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
--   Sign up for the [Power BI Newsletter](http://www.microsoft.com/en-us/powerBI/newsletter.aspx)
--   Watch our [Power BI Getting Started webinars](http://www.microsoft.com/en-us/powerBI/webinars.aspx) on demand
+-   Sign up for the [Power BI Newsletter](http://www.microsoft.com/powerBI/newsletter.aspx)
+-   Watch our [Power BI Getting Started webinars](http://www.microsoft.com/powerBI/webinars.aspx) on demand
 

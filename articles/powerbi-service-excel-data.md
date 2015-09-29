@@ -23,11 +23,11 @@
 You can use any XLSX Excel workbook - Excel 2007, 2010, and 2013 - as a dataset for your Power BI dashboards and reports. [Get your Excel data into Power BI](https://support.powerbi.com/knowledgebase/articles/597003).
 
 For the best results, your Excel workbook data:
--  is in table format. ( [Instructions for formatting Excel data as a table](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US))
+-  is in table format. ( [Instructions for formatting Excel data as a table](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US))
 -  is prepared as an Excel data model (typically created using Power Pivot). Don't worry if you don't know how to do this, it's not required.
 -  has columns marked by data type (e.g, date, number). For more information:
-	-   [data types in Excel data models](https://support.office.com/en-US/Article/Data-Types-Supported-in-Data-Models-e2388f62-6122-4e2b-bcad-053e3da9ba90)
-	-   [formatting number data types in Excel](https://support.office.com/en-us/article/Format-numbers-f27f865b-2dc5-4970-b289-5286be8b994a)
+	-   [data types in Excel data models](https://support.office.com/Article/Data-Types-Supported-in-Data-Models-e2388f62-6122-4e2b-bcad-053e3da9ba90)
+	-   [formatting number data types in Excel](https://support.office.com/article/Format-numbers-f27f865b-2dc5-4970-b289-5286be8b994a)
 
 ## What is imported?
 

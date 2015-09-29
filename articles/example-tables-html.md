@@ -67,7 +67,7 @@ The following table lists the versions of HDInsight currently available, the cor
 
 ---
 
-[connect-excel-with-hive-ODBC]: /en-us/manage/services/hdinsight/connect-excel-with-hive-ODBC/
+[connect-excel-with-hive-ODBC]: /manage/services/hdinsight/connect-excel-with-hive-ODBC/
 
 [hdp-1-3-0]: http://docs.hortonworks.com/HDPDocuments/HDP1/HDP-1.3.0/bk_releasenotes_hdp_1.x/content/ch_relnotes-hdp1.3.0_1.html
 

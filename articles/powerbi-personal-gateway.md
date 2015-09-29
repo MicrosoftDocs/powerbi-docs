@@ -26,7 +26,7 @@ Power BI Gateway is only available with [Power BI Pro](https://support.powerbi.c
 
 When Power BI refreshes data from an on-premises data source, the Gateway assures your Power BI account has the right permissions to connect to and query data from the source.
 
-Data transfer between Power BI and the Gateway is secured through [Azure Service Bus](http://azure.microsoft.com/en-us/documentation/services/service-bus/). The Service Bus creates a secure channel between the Power BI service and your computer. Because the Gateway provides this secure connection, there’s usually no need to open a port in your firewall.
+Data transfer between Power BI and the Gateway is secured through [Azure Service Bus](http://azure.microsoft.com/documentation/services/service-bus/). The Service Bus creates a secure channel between the Power BI service and your computer. Because the Gateway provides this secure connection, there’s usually no need to open a port in your firewall.
 
 Before we go into details about the Gateway, let’s look at some terms used in Power BI:
 
