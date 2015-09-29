@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Analyzing sales data from Excel and an OData feed"
    description="Tutorial: Analyzing sales data from Excel and an OData feed"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Tutorial: Analyzing sales data from Excel and an OData feed
 
