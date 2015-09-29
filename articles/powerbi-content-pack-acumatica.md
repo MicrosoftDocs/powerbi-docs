@@ -26,7 +26,7 @@ Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services
 
 Note: this content pack requires a minimum version of Acumatica v5.2.
 
-![](media/powerbi-content-pack-acumatica/dashboard.PNG)
+![](media/powerbi-content-pack-acumatica/dashboard.png)
 
 After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
 
