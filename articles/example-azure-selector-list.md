@@ -6,7 +6,7 @@
 > [AZURE.SELECTOR-LIST (Platform | Backend )]
 - [(HTML | Javascript)](/xx-yy/documentation/articles/example-azure-selector-list/)
 - [(Windows Store | C#)](/xx-yy/documentation/articles/example-azure-selector-list2/)
-- [(Windows Store | Javascript)](http://www.windowsazure.com/)
+- [(Windows Store | Javascript)](http:// azure.microsoft.com/)
 - [(iOS | C#)](/documentation/ios/csharp/)
 - [(iOS | Javascript)](/documentation/ios/javascript/)
 
