@@ -87,7 +87,6 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
 ## More information
 
 -   This article applies to Excel 2007, 2010, and 2013.
-
 -   The pictures here are of Excel 2013. If you're using Excel 2007 or 2010, things may look a little different, but the steps are the same.
 
 *Error: We couldn't find any data in your Excel workbook. Your data might not be formatted properly. You'll need to edit your workbook in Excel and then import it again.*
