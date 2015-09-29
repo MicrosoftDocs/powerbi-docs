@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Get started with Power BI"
    description="Get started with Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Get started with Power BI
 
@@ -128,6 +128,6 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 ### Stay in touch with Power BI
 
 -   Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
--   Sign up for the [Power BI Newsletter](http://www.microsoft.com/en-us/powerBI/newsletter.aspx)
--   Watch our [Power BI Getting Started webinars](http://www.microsoft.com/en-us/powerBI/webinars.aspx) on demand
+-   Sign up for the [Power BI Newsletter](http://www.microsoft.com/powerBI/newsletter.aspx)
+-   Watch our [Power BI Getting Started webinars](http://www.microsoft.com/powerBI/webinars.aspx) on demand
 

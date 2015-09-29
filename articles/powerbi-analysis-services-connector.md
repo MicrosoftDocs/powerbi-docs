@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Configure a Power BI Analysis Services Connector"
    description="Configure a Power BI Analysis Services Connector"
    services="powerbi" 
@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Configure a Power BI Analysis Services Connector
 
 [← Databases and more](https://support.powerbi.com/knowledgebase/topics/88773-databases-and-more)
 
 
-##  [**Download the Analysis Services Connector now**](http://www.microsoft.com/en-us/download/details.aspx?id=45333)
+##  [**Download the Analysis Services Connector now**](http://www.microsoft.com/download/details.aspx?id=45333)
 
 Before users can connect to a SQL Server Analysis Services tabular model, a Power BI Analysis Services connector needs to be configured for the server.  If you have more than one Analysis Services server, you'll need to configure one connector per server. This is done by a server administrator. For more detailed information about how the connector works, be sure to see [Power BI Analysis Services Connector in-depth](http://support.powerbi.com/knowledgebase/articles/546004-power-bi-analysis-services-connector-in-depth).
 
@@ -29,7 +29,7 @@ Once the connector is configured, tabular model databases on the Analysis Servic
 
 The connector can run on any domain computer. It doesn't have to be your local computer or the Analysis Services server, as it's just acting as a proxy between Analysis Services and Power BI. The connector makes the connection to Analysis Services and passes the credentials of the user accessing Power BI along to it. The computer where it is installed has to remain turned on, connected to the network, and able to access the Analysis Services server at all times.
 
-[](http://www.microsoft.com/en-us/download/details.aspx?id=45333)
+[](http://www.microsoft.com/download/details.aspx?id=45333)
 
  ![](media/powerbi-analysis-services-connector/importantIcon.png) **Important:** 
 
@@ -51,7 +51,7 @@ The connector can run on any domain computer. It doesn't have to be your local 
 
 ![](media/powerbi-analysis-services-connector/ASConnector_Download.png)
 
- **Note**: You can also [download the Analysis Services Connector from the Microsoft Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=45333).
+ **Note**: You can also [download the Analysis Services Connector from the Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=45333).
 
  2.  Click **Save** or  **Run**.
 

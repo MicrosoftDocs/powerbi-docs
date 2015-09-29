@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tips and tricks for creating reports in Power BI Desktop"
    description="Tips and tricks for creating reports in Power BI Desktop"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Tips and tricks for creating reports in Power BI Desktop
 
@@ -54,9 +54,9 @@ To get the most out of your data, sometimes you need a little extra help. We’v
 
 Query Editor in Power BI Desktop is similar to the Power Query add-in capability in Excel 2013. While there are several helpful articles in Power BI Support, you might also want to review the Power Query documentation on support.office.com to get started.
 
-[Power Query Resource Center](https://support.office.com/en-us/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94): https://support.office.com/en-us/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94
+[Power Query Resource Center](https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94): https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94
 
-[Formulas Reference:](https://support.office.com/en-US/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f) https://support.office.com/en-US/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f
+[Formulas Reference:](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f) https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f
 
 ## Data types in Query Editor
 
@@ -203,7 +203,7 @@ DAX is the calculations formula language in Power BI Desktop.  It's optimized f
 
 [QuickStart: Learn DAX Basics in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-desktop)
 
-[Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/en-us/library/gg413422.aspx)
+[Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 
 [DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 

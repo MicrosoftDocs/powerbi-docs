@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Get Power BI Desktop"
    description="Get Power BI Desktop"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Get Power BI Desktop
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Circuit ID content pack for Power BI"
    description="Circuit ID content pack for Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Circuit ID content pack for Power BI
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Getting started with Power BI Desktop"
    description="Getting started with Power BI Desktop"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Getting started with Power BI Desktop
 
@@ -80,7 +80,7 @@ With Power BI Desktop installed you’re ready to connect to data, shape data, a
 
 With Power BI Desktop installed, you’re ready to connect to the ever expanding world of data. There are *all sorts* of data sources available in the Query window. The following image shows how to connect to data, by selecting the **Home** ribbon, then **Get Data \> More**.
 
- ![](media/powerbi-desktop-getting-started/GetDataVid_small.gif)
+ ![](media/powerbi-desktop-getting-started/getdatavidsmall.gif)
 
 For this quick tour, we'll connect to a couple different **Web** data sources.
 

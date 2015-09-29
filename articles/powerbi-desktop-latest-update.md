@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="What's new in the latest Power BI Desktop update?"
    description="What's new in the latest Power BI Desktop update?"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # What's new in the latest Power BI Desktop update?
 
@@ -84,7 +84,7 @@ The following features have been added in this update:
 
 -   Support for Exchange UPN Credentials in the Exchange connector.﻿
 
-In addition to all these new features, we’re also making **Power BI Desktop available in 42 different languages.** Get the full list of languages and install the one you want from [our official download page](https://www.microsoft.com/en-us/download/details.aspx?id=45331).
+In addition to all these new features, we’re also making **Power BI Desktop available in 42 different languages.** Get the full list of languages and install the one you want from [our official download page](https://www.microsoft.com/download/details.aspx?id=45331).
 
 Take a look at the following video for more details:
 

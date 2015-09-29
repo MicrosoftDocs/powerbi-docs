@@ -1,7 +1,7 @@
 ﻿<properties pageTitle="Documentation Example - Inline code" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Inline code" authors="jamescon" solutions="" videoId="" scriptId="" />
 
 # Example - Inline Code #
-This is a sample documentation article that is used to test and validate the publishing system for WindowsAzure.com.  
+This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
 
 The content between the lines below demonstrates the use of inline code within a text block.
 

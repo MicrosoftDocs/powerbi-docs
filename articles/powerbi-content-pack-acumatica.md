@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Acumatica content pack for Power BI"
    description="Acumatica content pack for Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Acumatica content pack for Power BI
 
@@ -26,7 +26,7 @@ Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services
 
 Note: this content pack requires a minimum version of Acumatica v5.2.
 
-![](media/powerbi-content-pack-acumatica/dashboard.PNG)
+![](media/powerbi-content-pack-acumatica/dashboard.png)
 
 After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
 

@@ -2,7 +2,7 @@
 
 # Example - Table of Contents #
 
-This is a sample documentation article that is used to test and validate the publishing system for WindowsAzure.com.  
+This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
 
 The content between the lines below demonstrates the use of a table of contents.  
 
@@ -12,13 +12,13 @@ The content between the lines below demonstrates the use of a table of contents.
 
 You will learn: 
 
-- [About virtual machines in Windows Azure] []
+- [About virtual machines in Microsoft Azure] []
 - [How to create the virtual machine] [] 
 - [How to log on to the virtual machine after you create it] [] 
 - [How to attach a data disk to the new virtual machine] [] 
 
 
-## <a id="virtualmachine"> </a>About virtual machines in Windows Azure ##
+## <a id="virtualmachine"> </a>About virtual machines in Microsoft Azure ##
 
 Some text goes here...
 
@@ -38,7 +38,7 @@ Some more text goes here...DAn was here
 
 ---
 
-[About virtual machines in Windows Azure]: #virtualmachine
+[About virtual machines in Microsoft Azure]: #virtualmachine
 [How to create the virtual machine]: #custommachine
 [How to log on to the virtual machine after you create it]: #logon
 [How to attach a data disk to the new virtual machine]: #attachdisk

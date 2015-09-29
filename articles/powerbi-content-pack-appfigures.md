@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # appFigures content pack for Power BI
 
@@ -95,8 +95,6 @@ If data from some of your apps is not showing up in Power BI, check to make sure
 
 ### See Also
 
-**﻿**[Get started in Power BI](https://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
-
-﻿[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
-
-﻿[Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770)
+-  [Get started in Power BI](https://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+-  [Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
+-  [Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770)

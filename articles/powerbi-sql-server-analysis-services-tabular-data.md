@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="SQL Server Analysis Services Tabular data in Power BI"
    description="SQL Server Analysis Services Tabular data in Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # SQL Server Analysis Services Tabular data in Power BI
 
@@ -72,7 +72,7 @@ If you pin visuals from a report to the dashboard, the pinned tiles are automati
 
 ## ﻿More about tabular models
 
-﻿Tabular models are in-memory databases in [SQL Server Analysis Services](http://www.microsoft.com/en-us/server-cloud/solutions/business-intelligence/analysis.aspx). Using state-of-the-art compression algorithms and a multi-threaded query processor, the Analysis Services in-memory analytics engine delivers fast access to tabular model objects and data by reporting client applications such as Microsoft Excel and Microsoft Power BI.
+﻿Tabular models are in-memory databases in [SQL Server Analysis Services](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx). Using state-of-the-art compression algorithms and a multi-threaded query processor, the Analysis Services in-memory analytics engine delivers fast access to tabular model objects and data by reporting client applications such as Microsoft Excel and Microsoft Power BI.
 
 **﻿****High performance and highly secure**
 
@@ -86,5 +86,5 @@ Tabular models are authored in SQL Server Data Tools – Business Intelligence f
 
 If your organization already has SQL Server Analysis Services tabular models on-premises, you can use Power BI to explore, mashup, and visualize data and metrics in them. 
 
-﻿To learn more about SQL Server Analysis Services tabular models, see [Microsoft Business Intelligence](http://www.microsoft.com/en-us/server-cloud/solutions/business-intelligence/analysis.aspx).
+﻿To learn more about SQL Server Analysis Services tabular models, see [Microsoft Business Intelligence](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx).
 

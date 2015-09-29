@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Important considerations for connecting to data in Power BI"
    description="Important considerations for connecting to data in Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Important considerations for connecting to data in Power BI
 

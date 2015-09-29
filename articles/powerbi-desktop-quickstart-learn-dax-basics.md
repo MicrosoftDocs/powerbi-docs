@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="DAX basics in Power BI Desktop"
    description="DAX basics in Power BI Desktop"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # DAX basics in Power BI Desktop
 
@@ -72,7 +72,7 @@ When added to a report, this measure calculates and returns values by summing up
 
 You might be thinking ‘Isn’t this measure doing the same thing as if I were to just add the SalesAmount field to my report?’ Well, yes. But, there’s a good reason to create our own measure that sums up values from the SalesAmount field: We can use it as an argument in other formulas. This may seem a little confusing now, but as your DAX formula skills grow, knowing this will make your formulas and your model more efficient. In-fact, you’ll see the Total Sales measure showing up as an argument in other formulas later on.
 
-Let’s go over a few more things about this formula. In particular, we introduced a function, [SUM](https://msdn.microsoft.com/en-us/library/ee634387.aspx). Functions are pre-written formulas that make it easier to do complex calculations and manipulations with numbers, dates, time, text, and more. You will learn more about functions later.
+Let’s go over a few more things about this formula. In particular, we introduced a function, [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Functions are pre-written formulas that make it easier to do complex calculations and manipulations with numbers, dates, time, text, and more. You will learn more about functions later.
 
 You also see the column [SalesAmount] was preceded by the table Sales in which the column belongs. This is known as a fully qualified column name in that it includes the column name preceded by the table name. Columns referenced in the same table do not require the table name be included in the formula. This can make long formulas that reference many columns shorter and easier to read. However, it's good practice to  include the table name in your measure formulas, even when in the same table.
 > **Note:** If a table name contains spaces, reserved keywords, or disallowed characters, you’ll need to  enclose the table name in single quotation marks. You’ll also need to enclose table names in quotation marks if the name contains any characters outside the ANSI alphanumeric character range, regardless of whether your locale supports the character set or not.
@@ -117,7 +117,7 @@ You did it! You just created a measure using DAX, and not an easy one at that. W
 ![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_3_Chart.png)
 
 
-You were just introduced to several important aspects of DAX formulas. First, this formula included two functions. Notice [PREVIOUSQUARTER](https://msdn.microsoft.com/en-us/library/ee634385.aspx), a time intelligence, function is nested as an argument passed to [CALCULATE](https://msdn.microsoft.com/en-us/library/ee634825.aspx), a filter function. DAX formulas can contain up to 64 nested functions. It’s unlikely a formula would ever contain so many nested functions. In fact, such a formula would be very difficult to create and debug, and it probably wouldn’t be very fast either.
+You were just introduced to several important aspects of DAX formulas. First, this formula included two functions. Notice [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx), a time intelligence, function is nested as an argument passed to [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx), a filter function. DAX formulas can contain up to 64 nested functions. It’s unlikely a formula would ever contain so many nested functions. In fact, such a formula would be very difficult to create and debug, and it probably wouldn’t be very fast either.
 
 In this formula, you also used filters. Filters narrow down what will be calculated. In this case, you selected one filter as an argument, which is actually the result of another function. You will learn more about filters later.
 
@@ -137,7 +137,7 @@ Answers are provided at the end of this article.
 
 Functions are predefined formulas that perform calculations by using specific values, called arguments, in a particular order or structure. Arguments can be other functions, another formula, expression, column references, numbers, text, logical values such as TRUE or FALSE, or constants.
 
-DAX includes the following categories of functions: [Date and Time](https://msdn.microsoft.com/en-us/library/ee634786.aspx), [Time Intelligence](https://msdn.microsoft.com/en-us/library/ee634763.aspx)[,](https://msdn.microsoft.com/en-us/library/ee634552.aspx)[Information](https://msdn.microsoft.com/en-us/library/ee634552.aspx), [Logical](https://msdn.microsoft.com/en-us/library/ee634365.aspx)[,](https://msdn.microsoft.com/en-us/library/ee634365.aspx)[Mathematical](https://msdn.microsoft.com/en-us/library/ee634241.aspx), [Statistical](https://msdn.microsoft.com/en-us/library/ee634822.aspx), [Text](https://msdn.microsoft.com/en-us/library/ee634938.aspx), [Parent/Child](https://msdn.microsoft.com/en-us/library/mt150102.aspx) and [Other](https://msdn.microsoft.com/en-us/library/mt150101.aspx) functions. If you’re familiar with functions in Excel formulas, many of the functions in DAX will appear similar to you; however, DAX functions are unique in the following ways:
+DAX includes the following categories of functions: [Date and Time](https://msdn.microsoft.com/library/ee634786.aspx), [Time Intelligence](https://msdn.microsoft.com/library/ee634763.aspx)[,](https://msdn.microsoft.com/library/ee634552.aspx)[Information](https://msdn.microsoft.com/library/ee634552.aspx), [Logical](https://msdn.microsoft.com/library/ee634365.aspx)[,](https://msdn.microsoft.com/library/ee634365.aspx)[Mathematical](https://msdn.microsoft.com/library/ee634241.aspx), [Statistical](https://msdn.microsoft.com/library/ee634822.aspx), [Text](https://msdn.microsoft.com/library/ee634938.aspx), [Parent/Child](https://msdn.microsoft.com/library/mt150102.aspx) and [Other](https://msdn.microsoft.com/library/mt150101.aspx) functions. If you’re familiar with functions in Excel formulas, many of the functions in DAX will appear similar to you; however, DAX functions are unique in the following ways:
 
 -   A DAX function always references a complete column or a table. If you want to use only particular values from a table or column, you can add filters to the formula.
 
@@ -149,7 +149,7 @@ DAX includes the following categories of functions: [Date and Time](https://msdn
 
 -   Excel has a very popular function, VLOOKUP. DAX functions don’t take a cell or cell range as a reference like VLOOKUP does in Excel. DAX functions take a column or a table as a reference. Keep in-mind, in Power BI Desktop, you’re working with a relational data model. Looking up values in another table is really quite easy, and in most cases you don’t need to create any formula at all.
 
- As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of DAX functions is in the [DAX Function Reference](https://msdn.microsoft.com/en-us/library/ee634396.aspx). 
+ As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of DAX functions is in the [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx). 
 
 ### Functions QuickQuiz
 
@@ -220,7 +220,7 @@ Answers are provided at the end of this article.
 
 ## Summary
 
-Now that you have a basic understanding of the most important concepts in DAX, you can begin creating DAX formulas for measures on your own. DAX can indeed be a little tricky to learn, but there are many resources available to you. After reading through this article and experimenting with a few of your own formulas, you can learn more about other DAX concepts and formulas that can help you solve your own business problems. There are many DAX resources available to you; most important is the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/en-us/library/gg413422.aspx).
+Now that you have a basic understanding of the most important concepts in DAX, you can begin creating DAX formulas for measures on your own. DAX can indeed be a little tricky to learn, but there are many resources available to you. After reading through this article and experimenting with a few of your own formulas, you can learn more about other DAX concepts and formulas that can help you solve your own business problems. There are many DAX resources available to you; most important is the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx).
 
 DAX has been around for several years in other Microsoft BI tools such as Power Pivot and Analysis Services Tabular models, so there’s a lot of great information out there. You can find more information in books, whitepapers, and blogs from both Microsoft and leading BI professionals. The [DAX Resource Center Wiki on TechNet](http://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) is also a great place to start.
 
@@ -235,7 +235,7 @@ Functions:
 
 1.  A table and a column.
 2.  Yes. A formula can contain up to 64 nested functions.
-3.  [Text functions](https://msdn.microsoft.com/en-us/library/ee634938.aspx).
+3.  [Text functions](https://msdn.microsoft.com/library/ee634938.aspx).
 
 Context:
 

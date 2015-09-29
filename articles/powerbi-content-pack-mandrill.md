@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Mandrill content pack for Power BI"
    description="Mandrill content pack for Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Mandrill content pack for Power BI
 
@@ -44,7 +44,7 @@ The Power BI content pack pulls data from your Mandrill account and generates a 
 
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data. You can modify this dashboard to display your data in any way you want.
 
-	![](media/powerbi-content-pack-mandrill/Mandrill-Dashboard(1).jpg)
+	![](media/powerbi-content-pack-mandrill/Mandrill-Dashboard1.jpg)
 
 You can change this dashboard to display your data the way you want it. Plus you can:
 

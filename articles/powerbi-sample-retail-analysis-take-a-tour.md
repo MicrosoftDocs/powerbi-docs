@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Retail Analysis sample for Power BI: Take a tour"
    description="Retail Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Retail Analysis sample for Power BI: Take a tour
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Reports in Power BI"
    description="Reports in Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Reports in Power BI
 
@@ -60,7 +60,7 @@ Power BI can have more than one report-- as you add reports, their titles are ad
 
 ## See Also
 
-[](https://support.office.microsoft.com/en-US/article/Visualizations-in-Power-BI-reports-96901475-bf5a-4fac-8042-82a0ff580767 "Visualizations in Power BI reports")[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)[](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[](https://support.office.microsoft.com/article/Visualizations-in-Power-BI-reports-96901475-bf5a-4fac-8042-82a0ff580767 "Visualizations in Power BI reports")[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)[](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
 
 [Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi) 
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="SQL Database Auditing content pack for Power BI"
    description="SQL Database Auditing content pack for Power BI"
    services="powerbi" 
@@ -14,13 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # SQL Database Auditing content pack for Power BI
 
 [← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
-The Power BI content pack for Azure [SQL Database Auditing](http://azure.microsoft.com/en-us/documentation/articles/sql-database-auditing-get-started/) allows you to understand your database activity and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations. 
+The Power BI content pack for Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) allows you to understand your database activity and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations. 
 
 The content pack imports data from all tables that contain “AuditLogs” in their name and append it to a single data model table named “AuditLogs”. The last 250k events will be included and the data will be refreshed daily.
 

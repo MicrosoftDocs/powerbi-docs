@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="09/28/2015"
    ms.author="v-anpasi"/>
 # Tutorial: Create your own measures in Power BI Desktop
 
@@ -271,5 +271,5 @@ Measures give us a lot of power in getting the insights we want from our data. W
 
 If you want to take a deeper dive into DAX formulas, and create some more advanced measures, see [DAX basics in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-designer). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
-Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/en-us/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
+Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
 
