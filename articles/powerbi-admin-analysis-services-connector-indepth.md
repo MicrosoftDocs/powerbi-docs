@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Power BI Analysis Services Connector in-depth"
    description="Power BI Analysis Services Connector in-depth"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="v-anpasi" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="v-anpasi"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -20,7 +20,7 @@
 
 [← Administrative](https://support.powerbi.com/knowledgebase/topics/63248-administrative)
 
-With Power BI, users in your organization can now see your on-premises SQL Server Analysis Services data and metrics in a whole new way. But before users can connect to your Analysis Services models as a data source, an Analysis Services Connector needs to be installed and configured. The connector helps make the behind-the-scenes communication from a user in Power BI to your on-premises Analysis Services server and back to Power BI quick and secure.
+With Power BI, users in your organization can now see your on-premises SQL Server Analysis Services data and metrics in a whole new way. But before users can connect to your Analysis Services models as a data source, an Analysis Services Connector needs to be installed and configured. The connector helps make the behind-the-scenes communication from a user in Power BI to your on-premises Analysis Services server and back to Power BI quick and secure. 
 
 Installing and configuring a connector is usually done by an administrator. It requires special knowledge of your Analysis Services servers and it requires Server Administrator permissions.
 
@@ -223,4 +223,3 @@ For information on synchronizing Azure Active Directory with an on-premises Acti
 For troubleshooting, see ﻿[Troubleshooting Power BI Analysis Service Connector](http://support.powerbi.com/knowledgebase/articles/505324-troubleshooting-analysis-service-connector).
 
 Once a Power BI Analysis Services Connector is installed, configured, and running, users can connect to tabular models on that Analysis Services instance. To learn how to connect from Get Data in Power BI,  see ﻿[SQL Server Analysis Services Tabular data in Power BI](http://support.powerbi.com/knowledgebase/articles/471633-sql-server-analysis-services-tabular-data-in-power).
-
