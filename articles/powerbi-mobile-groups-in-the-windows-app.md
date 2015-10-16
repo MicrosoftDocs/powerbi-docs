@@ -36,11 +36,11 @@ Then you see and interact with group dashboards and reports in the Microsoft [
 
 2.  From My Workspace, select a group.
 
-    ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F084%2F845%2F054%2Foriginal%2FPBI_WebAppWindows_Groups.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1503901322%26Signature%3DDq80jCfMr2LEaSq8%252FFc3qFlMUk4%253D&key=afea23f29e5a4f63bd166897e3dc72df)
+    ![](media/powerbi-mobile-groups-in-the-windows-app/group.png)
 
 3.  Your group page displays the dashboards and reports that have been published to the group workspace.
 
-    ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F084%2F846%2F815%2Foriginal%2FPBI_WebAppWindows_Groups2.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1503898979%26Signature%3D29bTm8yW7NcKCEgT5S7uOCvsmJw%253D&key=afea23f29e5a4f63bd166897e3dc72df)
+    ![](media/powerbi-mobile-groups-in-the-windows-app/group_workspace.png)
 
 4.  [Select a dashboard](https://support.powerbi.com/knowledgebase/articles/510951) or [select a report](https://support.powerbi.com/knowledgebase/articles/510953) to open and view it.
 

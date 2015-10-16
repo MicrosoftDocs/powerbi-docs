@@ -66,7 +66,7 @@ The lifecycle looks something like this:
 9. If Jane has not customized the original content pack, then the content is automatically removed. If Jane has customized the content pack, the next time she opens the dashboard all tiles from the original content pack will be gone.  But tiles she pinned from other reports still render. The associated reports and dataset will no longer be available (and won't appear in her Navigation Pane).
 
   
-# What is a Power BI *content pack library*?
+## What is a Power BI *content pack library*?
 
 Publishing an organizational content pack adds it to the content pack gallery.  This centralized repository makes it easy for members to browse and discover dashboards, reports, and datasets published for them.  
 - To view the content pack library, select **Get Data** > **My Organization**.

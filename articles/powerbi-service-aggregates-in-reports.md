@@ -32,7 +32,7 @@ Say you have a chart that sums the sales data for different regions, but you'd r
 
 2.  Find that field in the **Fields** pane bucket, right-click, and select the aggregate type you need.
 
-    ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F083%2F872%2F888%2Foriginal%2Faggregates.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1500559810%26Signature%3DOnAYVzlo2imSfLQ1DRma22bxr7A%253D&key=afea23f29e5a4f63bd166897e3dc72df)
+    ![](media/powerbi-service-aggregates-in-reports/image.png)
 
 
 ### Convert a non-aggregate field to an aggregate
