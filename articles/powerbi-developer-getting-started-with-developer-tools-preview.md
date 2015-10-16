@@ -22,6 +22,7 @@
 
 We’re excited to share the first preview of Developer Tools available in Power BI. Developer Tools will allow you to build and test custom visuals for use in Power BI. This article provides steps for enabling the preview developer tools, provides usage instructions, and identifies currently supported scenarios.
 
+<iframe width="500" height="281" src="https://www.youtube.com/embed/iFa8JEdWvnI" frameborder="0" allowfullscreen></iframe>
 
 **Building your first custom visual for Power BI**
 

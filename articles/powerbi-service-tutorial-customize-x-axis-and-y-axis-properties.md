@@ -151,7 +151,3 @@ More about [Visualizations in Power BI reports](http://support.powerbi.com/know
 
 [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
 
-**
-
-**
-
