@@ -31,7 +31,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 	![](media/powerbi-content-pack-azure-audit-logs/services.PNG) 
 
 3. Select Azure Audit Logs, then select Connect.  
-	![](media/powerbi-content-pack-azure-audit-logs/getdata(1).png)
+	![](media/powerbi-content-pack-azure-audit-logs/getdata1.png)
 
 4. When prompted, enter your Azure Subscription ID. See details on finding your subscription ID below.   
 	![](media/powerbi-content-pack-azure-audit-logs/parameters.png)
