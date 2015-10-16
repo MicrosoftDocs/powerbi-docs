@@ -1,9 +1,9 @@
-﻿<properties 
+<properties 
    pageTitle="Excel data in Power BI"
    description="Excel data in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="pcw3187" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,8 +14,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.date="10/14/2015"
+   ms.author="v-pawrig"/>
 # Excel data in Power BI
 
 [← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
@@ -28,6 +28,10 @@ For the best results, your Excel workbook data:
 -  has columns marked by data type (e.g, date, number). For more information:
 	-   [data types in Excel data models](https://support.office.com/Article/Data-Types-Supported-in-Data-Models-e2388f62-6122-4e2b-bcad-053e3da9ba90)
 	-   [formatting number data types in Excel](https://support.office.com/article/Format-numbers-f27f865b-2dc5-4970-b289-5286be8b994a)
+
+This video demonstrates getting your Excel data ready for Power BI:
+
+<iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
 
 ## What is imported?
 
