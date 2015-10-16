@@ -104,7 +104,7 @@ Sometimes it's not the numbers that are important, but the trends.  Let's look 
 
 Instead of a perfectly-shaped funnel chart each month, we see many different shapes.  A next step might be to compare this to previous years and months to determine whether we need to focus more attention on lead generation and/or sales closure in certain times of the year. 
 
-# Highlighting and cross-filtering
+## Highlighting and cross-filtering
 
 For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
 
