@@ -2,7 +2,7 @@
 
 
 # Example - Markdown Tables #
-This is a sample documentation article that is used to test and validate the publishing system for WindowsAzure.com.  
+This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
 
 The content between the lines below demonstrates the use of the Markdown extension that is used in GitHub Flavored Markdown to render tables. 
 

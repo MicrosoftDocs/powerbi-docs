@@ -2,7 +2,7 @@
 
 # Example - Includes with Images #
 
-This is a sample documentation article that is used to test and validate the publishing system for WindowsAzure.com.  
+This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
 
 The content between the lines below demonstrates an article that references an include that contains an image.  
 
