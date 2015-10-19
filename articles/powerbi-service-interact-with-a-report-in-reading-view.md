@@ -65,7 +65,7 @@ For more information: Tutorial on changing the display settings for a report.
 
  2.  You'll see the filters that have been applied to the visual you have selected (Visual level filters), and across the whole report page (Page level filters).
 
-    ![]((media/powerbi-service-interact-with-a-report-in-reading-view/filetersmenu.png)
+    ![](media/powerbi-service-interact-with-a-report-in-reading-view/filtersmenu.png)
 
  3.  Hover over a filter and expand it by selecting the down arrow.
 
