@@ -47,7 +47,7 @@ For more information: Tutorial on changing the display settings for a report.
 
 - **Hover over visual elements to see the details**.
 
-![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F083%2F875%2F672%2Foriginal%2Fhover%2520for%2520tooltip.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1500829061%26Signature%3DgZYn1wmib8MvSb%252FcIHVQuYGNCyw%253D&key=afea23f29e5a4f63bd166897e3dc72df)
+    ![](media/powerbi-service-interact-with-a-report-in-reading-view/amarillachart.png)
 
 - **Sort the data in a visualization**  
 
@@ -61,15 +61,15 @@ For more information: Tutorial on changing the display settings for a report.
 
  1.  Select the Filter icon in the upper-right corner.
 
-    ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F083%2F875%2F531%2Foriginal%2Ffilter%2520expand.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1500829061%26Signature%3DQkET3L%252BXZ90zT7qYrJoXh6MlJ%252F8%253D&key=afea23f29e5a4f63bd166897e3dc72df)  
+    ![](media/powerbi-service-interact-with-a-report-in-reading-view/filters.png)  
 
  2.  You'll see the filters that have been applied to the visual you have selected (Visual level filters), and across the whole report page (Page level filters).
 
-    ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F083%2F875%2F609%2Foriginal%2Fdeleted.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1500829061%26Signature%3DZu7X9UpG5J2xz6TyPBMgxJI5r9c%253D&key=afea23f29e5a4f63bd166897e3dc72df)
+    ![]((media/powerbi-service-interact-with-a-report-in-reading-view/filetersmenu.png)
 
  3.  Hover over a filter and expand it by selecting the down arrow.
 
-    ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F083%2F875%2F651%2Foriginal%2Fhover%2520on%2520filter.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1500829061%26Signature%3Db9abigXrGdxNVfGAQoome94epxY%253D&key=afea23f29e5a4f63bd166897e3dc72df)
+    ![](media/powerbi-service-interact-with-a-report-in-reading-view/IV1980RZ.png)
 
 For more information, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-visualization-in-a-report) and [About filters and highlighting in reports](http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports).
 

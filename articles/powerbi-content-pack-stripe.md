@@ -40,7 +40,7 @@ schedule you control. 
 
 3. Select Stripe &gt; Connect.
 
-   ![](media/powerbi-content-pack-stripe/GetData(1).png)  
+   ![](media/powerbi-content-pack-stripe/GetData1.png)  
 
 4. Provide your Stripe [API key](https://dashboard.stripe.com/account/apikeys) to connect. 
  

@@ -49,7 +49,7 @@ There are two modes for interacting with reports: [Reading View](http://suppor
 
 The visualization changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values. 
 
-# Add a filter to an entire page (aka Page View filter)
+## Add a filter to an entire page (aka Page View filter)
 
 1.  Open your [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view).
 
