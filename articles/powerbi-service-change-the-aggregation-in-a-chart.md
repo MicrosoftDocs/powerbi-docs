@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI"
    description="Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI"
    services="powerbi" 
@@ -29,7 +29,7 @@ Say you have a chart that sums the sales data for different regions, but you'd r
 
 2.  Find that field in the Visualizations pane, right-click, and select the aggregate type you need.
 
-    ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F083%2F875%2F342%2Foriginal%2Ffilter%2520expand.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1500869786%26Signature%3DO5yPZPxinByZMIG9LRZchoJK%252FQA%253D&key=afea23f29e5a4f63bd166897e3dc72df)
+    ![](/media/powerbi-service-change-the-aggregation-in-a-chart/image.png)
 
 >**NOTE:**   
 >**The options available in the dropdown will vary depending on the field selected.**
