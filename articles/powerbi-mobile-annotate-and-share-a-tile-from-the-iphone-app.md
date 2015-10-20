@@ -50,7 +50,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
 ### See Also
 
-[Share a dashboard from the iPhone app \(Power BI for iOS\)](powerbi-mobile-dashboards-in-the-iphone-app.md)
+[Share a dashboard from the iPhone app \(Power BI for iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
 
 [Get started with the iPhone app for Power BI](https://support.office.com/article/Get-started-with-the-iPhone-app-for-Power-BI-preview-f4001b4f-6b9a-4363-b97e-cb1ac5dfd3f6 "Get started with the iPhone app for Power BI preview")
 
