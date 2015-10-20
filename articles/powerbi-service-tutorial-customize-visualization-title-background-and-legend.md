@@ -34,31 +34,31 @@ I’ve signed in to the Power BI service and I’m starting with the Retail Anal
 1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
 
 2.  In the Visualizations and Filters pane, select the paintbrush icon ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) to reveal the customization options.  
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizeFull.png)
+	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull.png)
 
 3.  Turn the title on and off by selecting the On (or Off) slider. For now, leave it **On**.  
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/onOffSlider.png)
+	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/onoffslider.png)
 
 4.  Change the title text by typing **Store count by month opened** in the text field.  
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizeText2.png)
+	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizetext2.png)
 
 5.  Change the text color to orange and the text background to yellow.
 	
 	-   Select the dropdown and choose a color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
 
 	-   Select the dropdown to close the color window.  
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizeColorPicker.png)
+	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizecolorpicker.png)
 
 	You can always revert to the default colors by selecting **Revert to default** in the color window.
 
 6.  The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
-![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizeAlign.png)
+![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizealign.png)
 
 	At this point in the tutorial, your column chart should look like this:  
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/tutorialProgress1.png)
+	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/tutorialprogress1.png)
 
 	To revert all the title customization we've done so far, select **Revert To Default**, at the bottom of the **Title** customization pane.  
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/revertAll.png)
+	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/revertall.png)
 
 ## Customize visualization backgrounds  
 With the same column chart selected, expand the Background options.
@@ -72,7 +72,7 @@ With the same column chart selected, expand the Background options.
     -   Select the dropdown to close the color window.
 
 3.  When you select a background color, Power BI defaults to 50% transparency. Change Transparency to 74%.   
-    ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizeBackground.png)
+    ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizebackground.png)
 
     To revert all the title background customization we've done so far, select **Revert To Default**, at the bottom of the **Background **customization pane.
 
@@ -88,7 +88,7 @@ To customize a legend, select "This Year Sales by FiscalMonth and Name" line cha
     -   Select the dropdown to close the legend position window.
 
 3.  Add a legend title by toggling **Title** to **On **and, in the Text field, typing "Store Name"  
-    ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizeLegend.png)
+    ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizelegend.png)
 
     To revert all the legend customization we've done so far, select **Revert To Default**, at the bottom of the **Legend **customization pane.
 

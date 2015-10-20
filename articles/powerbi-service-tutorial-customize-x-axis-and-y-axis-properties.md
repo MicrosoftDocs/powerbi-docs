@@ -36,7 +36,7 @@ I’ve signed in to the Power BI service and I’m starting with the **Retail An
 
 4.  Turn the X-axis on and off by selecting the On (or Off) slider. For now, leave it **On**.  Turning the X-axis off removes the X-axis label and saves space for more data.
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onOffSlider.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onoffslider.png)
 
 5.  Change the X-axis type to **Continuous.**  The choices are **Continuous, Categorical,** or **Auto (default)**.
 
@@ -44,7 +44,7 @@ I’ve signed in to the Power BI service and I’m starting with the **Retail An
 
     After all these customizations, your column chart should look like this:
 
-     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizeXaxis.png)
+     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizexaxis.png)
 
     >**NOTE**: If the X-axis is string/Boolean, the **Type** option will not display. 
 
@@ -61,7 +61,7 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
 2.  Expand the Y-Axis options and ensure that the Y-Axis slider is toggled to **On**.
 
-     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onOffSlider.png)
+     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onoffslider.png)
 
 3.  Change the Y-axis Position to **Right** to move it away from the legend and easier to read.
 
@@ -75,7 +75,7 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
 6.  After all these customizations, your line chart should look like this:
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizeYaxis.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizeyaxis.png)
 
     To revert all the Y-axis customization we've done so far, select **Revert To Default**, at the bottom of the **Y-axis** customization pane.
 
@@ -99,11 +99,11 @@ First we'll create a Combo chart that looks at the impact store count has on sal
 
 3. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart. 
 
-	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/lineAndStacked.png)
+	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/lineandstacked.png)
 
 4. Drag **Store Count** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the data sets to be scaled differently; the left measures dollars and the right measures count of stores.
 
-	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/comboChart2Done.png)
+	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/combochart2done.png)
 
   
 ### Format the secondary Y-axis
@@ -116,7 +116,7 @@ First we'll create a Combo chart that looks at the impact store count has on sal
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/combo3.png)
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/YaxisOff.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/yaxisoff.png)
 
     Toggle **Show Secondary** to **On**.
 
@@ -130,10 +130,10 @@ With a visualization this complicated, it helps to add axes titles.  Titles hel
 
 2.  Set **Style** to **Show title only**.
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/YaxisSettings.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/yaxissettings.png)
 
 3.  Your Combo chart now displays dual axes, both with titles.
-	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/XYaxisTitlesOn.png)
+	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/xyaxistitleson.png)
 
 For more information, see the following article:
 
