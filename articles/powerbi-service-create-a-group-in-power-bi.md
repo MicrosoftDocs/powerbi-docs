@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Create a group in Power BI
    description="Create a group in Power BI"
    services="powerbi" 
@@ -16,7 +16,6 @@
    ms.workload="powerbi"
    ms.date="10/15/2015"
    ms.author="jastru"/>
-
 # Create a group in Power BI  
 
 Groups in Power BI bring together people and information, and connect with apps across Office 365 to foster communication and collaboration. You can create a group in Power BI, or in Office 365 -- it will have the same characteristics either way. 

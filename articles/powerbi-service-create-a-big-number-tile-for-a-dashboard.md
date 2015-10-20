@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Create a big number tile for a Power BI dashboard by asking a question"
    description="Create a big number tile for a Power BI dashboard by asking a question"
    services="powerbi" 
@@ -30,7 +30,7 @@ The question box is the easiest way to make a number tile like this.
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QnABox.png)
 
 3.  For example, as I type "number of opportunities" in the question box on a Sales Rep dashboard...  
-    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_Qamp%3BA_Number.png)
+    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QA_Number.png)
 
     The question box suggests, auto-completes to **Show number of opportunities**, and displays the total number.  
 
