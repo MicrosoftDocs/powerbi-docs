@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Pin a tile to a Power BI dashboard from a report"
    description="Pin a tile to a Power BI dashboard from a report"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Pin a tile to a Power BI dashboard from a report
-
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 ﻿One way to add a new [dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi) is from within a [Power BI report](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi). In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
 

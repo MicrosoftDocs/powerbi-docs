@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Reorder pages in a report in Power BI"
    description="Reorder pages in a report in Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Reorder pages in a report in Power BI  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 In Power BI, drag the tab where you want it in the report and let go.  
 ![](media/powerbi-service-reorder-pages-in-a-report/reorder.gif)

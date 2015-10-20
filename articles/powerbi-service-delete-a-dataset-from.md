@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Delete a dataset from Power BI"
    description="Delete a dataset from Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Delete a dataset from Power BI
-
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 Datasets can be deleted.  When you delete a dataset:
 

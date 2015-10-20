@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Download the Financial Sample workbook for Power BI"
    description="Download the Financial Sample workbook for Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Download the Financial Sample workbook for Power BI
-
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 We have an Excel workbook of sample financial data available for download.  Here's how to download it:
 

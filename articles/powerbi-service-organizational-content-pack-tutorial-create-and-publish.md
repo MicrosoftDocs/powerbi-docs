@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: create and publish an organizational content pack"
    description="Tutorial: create and publish an organizational content pack"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tutorial: create and publish an organizational content pack  
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 In this tutorial we'll create a new organizational content pack, restrict access to the Product Launch group, and publish it to Power BI.
 

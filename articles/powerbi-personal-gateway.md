@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Power BI Personal Gateway"
    description="Power BI Personal Gateway"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 
 # Power BI Personal Gateway
-
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 Power BI Personal Gateway acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support [refresh](https://support.powerbi.com/knowledgebase/articles/474669-refresh-data-in-power-bi). This article is meant to provide you with an in-depth understanding of how the Gateway works and whether or not a Gateway is necessary for you. We've also put together this [helpful video](https://www.youtube.com/watch?v=de58vROLqZI) about the Power BI Personal Gateway. 
 

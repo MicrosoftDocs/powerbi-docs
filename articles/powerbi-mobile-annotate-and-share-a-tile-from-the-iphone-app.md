@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Annotate and share a tile from the iPhone app (Power BI for iOS)"
    description="Annotate and share a tile from the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Annotate and share a tile from the iPhone app (Power BI for iOS)
-
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 When you share a snapshot of a tile from the iPhone app for Microsoft Power BI for iOS, your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 

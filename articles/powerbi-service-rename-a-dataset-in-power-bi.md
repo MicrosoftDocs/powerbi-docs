@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Rename a dataset in Power BI"
    description="Rename a dataset in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Rename a dataset in Power BI
-
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 You can rename datasets. In the navigation pane, right-click the dataset to be renamed and select **Rename**.
 

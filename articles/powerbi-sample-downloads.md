@@ -19,8 +19,6 @@
 
 # Download the Power BI industry samples (Excel workbooks)
 
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
-
 ## Important information
 
  ©2015 Microsoft Corporation. All rights reserved. The documents and workbooks are provided "as-is." Information and views expressed in the workbooks, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. Microsoft makes no warranties, express or implied, with respect to the information provided here.

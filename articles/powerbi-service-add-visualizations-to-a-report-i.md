@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Part I, Add visualizations to a Power BI report"
    description="Tutorial: Part I, Add visualizations to a Power BI report"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Tutorial: Part I, Add visualizations to a Power BI report
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](http://support.powerbi.com/knowledgebase/articles/467184-part-ii-add-visualizations-to-a-power-bi-report). 
 

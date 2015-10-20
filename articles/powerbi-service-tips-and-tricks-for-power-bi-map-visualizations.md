@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tips and Tricks for Power BI Map visualizations"
    description="Tips and Tricks for Power BI Map visualizations"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tips and Tricks for Power BI Map visualizations  
-[← Knowledge Base](https://support.powerbi.com/knowledgebase)
 
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, you can use the following tips:
 

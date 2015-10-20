@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Change the display settings for a page in a Power BI report"
    description="Tutorial: Change the display settings for a page in a Power BI report"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tutorial: Change the display settings for a page in a Power BI report  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 In the [previous article](https://support.powerbi.com/knowledgebase/articles/742155) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Now let's try it ourselves.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="What's new in the Power BI service"
    description="What's new in the Power BI service"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # What's new in the Power BI service  
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Check this page for known issues and recently-released features in Power BI.
 

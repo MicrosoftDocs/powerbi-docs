@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Create a new Power BI report"
    description="Create a new Power BI report"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Create a new Power BI report
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 There are different ways to create a new report:
 

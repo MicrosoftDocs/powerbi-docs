@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Free trial for Power BI Pro
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
 -   Create and publish customized [content packs](https://support.powerbi.com/knowledgebase/articles/651040)

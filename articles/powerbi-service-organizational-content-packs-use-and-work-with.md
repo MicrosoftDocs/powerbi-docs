@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Work with organizational content packs"
    description="Work with organizational content packs"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Work with organizational content packs
-
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 When an organizational content pack is published, all members see the same dashboard, reports, and datasets (unless it's an SSAS data source).  [Only the creator can edit and republish](https://support.powerbi.com/knowledgebase/articles/651631%0A) the content pack.  However, all users can customize the dashboards and reports, and when those changes are saved, a new *personalized* version of the content pack replaces the original.
 

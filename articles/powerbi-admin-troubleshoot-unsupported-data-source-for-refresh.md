@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Troubleshooting unsupported data source for refresh"
    description="Troubleshooting unsupported data source for refresh"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Troubleshooting unsupported data source for refresh  
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 
 You may see an error when trying to configured a dataset for scheduled refresh.
 

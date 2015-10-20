@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Pyramid Analytics"
    description="Pyramid Analytics"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Pyramid Analytics
-
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 [![Pyramid Analytics logo](media/powerbi-desktop-pyramid-analytics/logo-pyramid.png)](http://pyramidanalytics.com/)
 

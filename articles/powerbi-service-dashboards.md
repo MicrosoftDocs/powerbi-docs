@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Dashboards in Power BI
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 Dashboards, reports, and datasets are at the heart of Power BI. Create personalized ***dashboards*** to monitor your most important data, at a glance.  A dashboard combines on-premises and cloud-born data in a single pane of glass, providing a consolidated view across the organization regardless of where the data lives. Each metric, or insight, is displayed on the dashboard as a ***tile***. 
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts).

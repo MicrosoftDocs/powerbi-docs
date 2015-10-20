@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Supported languages and countries/regions for Power BI"
    description="Supported languages and countries/regions for Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Supported languages and countries/regions for Power BI
-
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 For countries and regions where Power BI is available, see this [international availability list](https://products.office.com/en-us/business/international-availability). 
 

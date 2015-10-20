@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Set data alerts in the iPhone app (Power BI for iOS)"
    description="Set data alerts in the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Set data alerts in the iPhone app (Power BI for iOS)  
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 In the iPhone app for Microsoft Power BI for iOS, you set alerts to notify you when data in your dashboards changes beyond limits you set. Alerts work for tiles featuring a single number. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
 

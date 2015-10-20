@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Data Management Gateway in Power BI for Office 365"
    description="Data Management Gateway in Power BI for Office 365"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Data Management Gateway in Power BI for Office 365  
-[← Administrative](https://support.powerbi.com/knowledgebase/topics/63248-administrative)
 
 If you are a user of Power BI for Office 365, you may be familiar with the [Data Management Gateway](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0CDgQFjAB&url=http%3A%2F%2Foffice.microsoft.com%2Fen-us%2Foffice365-sharepoint-online-enterprise-help%2Fintroduction-to-data-management-gateway-HA104079171.aspx&ei=N9fTVK-9G5e1oQSy7oEI&usg=AFQjCNHqjIu9Y-CXI7To2AUHOm4pxcxHyg&sig2=L9R4eBJ_ISpCxjg3cPcYxQ&bvm=bv.85464276,d.cGU) for refreshing on premises data.
 

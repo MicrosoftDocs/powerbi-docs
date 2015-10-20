@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tiles in the iPhone app (Power BI for iOS)"
    description="Tiles in the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Tiles in the iPhone app (Power BI for iOS)
-
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You create tiles on a dashboard in Power BI. Then you see and interact with the tiles in your iPhone app for Microsoft Power BI for iOS.
 

@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Get started with Power BI
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to explore further with ***reports***.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts).

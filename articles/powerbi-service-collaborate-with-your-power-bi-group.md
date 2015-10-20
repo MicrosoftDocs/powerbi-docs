@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Collaborate with your Power BI group"
    description="Collaborate with your Power BI group"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Collaborate with your Power BI group
-
-[← Groups in Power BI](https://support.powerbi.com/knowledgebase/topics/101158-groups-in-power-bi)
 
 Probably the main reason you created a group in Power BI was to share and collaborate on dashboards, reports, and datasets in Power BI. Collaborating on data starts with connecting to files on your group’s OneDrive for Business. [Connect to your group’s files](https://support.powerbi.com/knowledgebase/articles/664462).
 

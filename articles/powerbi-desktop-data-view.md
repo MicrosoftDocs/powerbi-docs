@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Data View in Power BI Desktop"
    description="Data View in Power BI Desktop"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Data View in Power BI Desktop  
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 Data View helps you inspect, explore, and understand data in your Power BI Desktop model. It's different from how you view tables, columns, and data in Query Editor. With Data View, you’re looking at your data *after* it has been loaded into the model.
 

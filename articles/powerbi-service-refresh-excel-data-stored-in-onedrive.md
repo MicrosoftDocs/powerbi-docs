@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Refresh Excel, CSV, and Power BI Desktop files stored in OneDrive
 
-[← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
-
 Power BI can connect to your Excel, CSV, and Power BI Desktop files in **OneDrive** and **OneDrive for Business**. Read about how to [get Excel and Power BI Desktop files into Power BI](https://support.powerbi.com/knowledgebase/articles/597003).
 
 **NOTE**: You can connect to any Excel workbook (XLSX or XLSM) that's in OneDrive for Business, and explore the whole file in Power BI, exactly as you would in Excel Online. Read about [bringing whole Excel files into Power BI](https://support.powerbi.com/knowledgebase/articles/640168).

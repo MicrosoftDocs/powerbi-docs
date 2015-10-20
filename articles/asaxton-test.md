@@ -1,4 +1,4 @@
-<properties
+﻿<properties
         pageTitle="page title"
         description="description"
         services="powerbi"
@@ -6,8 +6,6 @@
         authors="asaxton" />
 
 # Unsupported data source for refresh
-
-[← Data Refresh in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 You may see an error when trying to configure a dataset for **Scheduled Refresh**.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Ask the right questions of Salesforce data in Power BI"
    description="Ask the right questions of Salesforce data in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Ask the right questions of Salesforce data in Power BI
-
-[← Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi)
 
 In this article, we suggest the best questions to ask for [Salesforce data](http://support.powerbi.com/knowledgebase/articles/424863-salesforce-connector-for-power-bi) in Power BI, and how to go about asking your own questions.
 

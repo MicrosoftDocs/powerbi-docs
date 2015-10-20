@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # comScore Digital Analytix content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 Visual and explore your comScore Digital Analytix data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 
 [Connect to the comScore content pack for Power BI.](%20https://app.powerbi.com/getdata/services/comscore)

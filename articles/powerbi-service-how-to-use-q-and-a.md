@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="How to use Power BI Q&A"
    description="How to use Power BI Q&A"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # How to use Power BI Q&A  
-[← Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi)
 
 ## Ask questions of your data using natural language  
 The Q&A question box is where you type your question using natural language. Q&A recognizes the words you type and figures out where (which dataset) to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.

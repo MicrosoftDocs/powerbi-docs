@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Open a Power BI report in Reading View"
    description="Open a Power BI report in Reading View"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Open a Power BI report in Reading View  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 Reading View is a great way to explore the data in a Power BI report, without worrying that you'll break something.  You can browse the report, interact with the visualizations, and pin any of the visualizations to your dashboard. 
 

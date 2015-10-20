@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Power BI - basic concepts
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 When you first open Power BI, you'll see:
 
 ![](media/powerbi-service-basic-concepts/completeNew.png)

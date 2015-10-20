@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Manage your data storage in Power BI"
    description="Manage your data storage in Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Manage your data storage in Power BI
-
-[← Administrative](https://support.powerbi.com/knowledgebase/topics/63248-administrative)
 
 Power BI offers two licenses – free and Pro – with different storage limits:
 

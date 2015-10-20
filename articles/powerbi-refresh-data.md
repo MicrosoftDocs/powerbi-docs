@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Data refresh in Power BI"
    description="Data refresh in Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Data refresh in Power BI  
-[← Data refresh](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh)
 
 Making sure you’re always getting the latest data is often critical in making the right decisions. You’ve probably already used Get Data in Power BI to connect to and upload some data, created some reports and a dashboard. Now, you want to make sure your data really is the latest and greatest.
 

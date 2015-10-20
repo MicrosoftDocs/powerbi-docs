@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Marketo content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 ﻿The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.
 
  Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data. 

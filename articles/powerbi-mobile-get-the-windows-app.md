@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Get the Power BI for Windows app"
    description="Get the Power BI for Windows app"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Get the Power BI for Windows app  
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 ## Download the Power BI for Windows app  
 [Download the Power BI for Windows app](http://go.microsoft.com/fwlink/?LinkId=526478) from the Windows Store.

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Rename a Power BI dashboard"
    description="Rename a Power BI dashboard"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Rename a Power BI dashboard
-
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 Right-click the dashboard name and select **Rename**.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Power BI service health status"
    description="Power BI service health status"
    services="powerbi" 
@@ -18,6 +18,5 @@
    ms.author="jastru"/>
 
 # Power BI service health status  
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 
 All the features of PowerBI are working as expected

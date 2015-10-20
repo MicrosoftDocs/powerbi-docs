@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Add an image to a dashboard"
    description="Add an image to a dashboard"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Add an image to a dashboard
-
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 Say you want your company logo on your dashboard. 
 

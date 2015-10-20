@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="How to use the same account login for Power BI and Azure"
    description="How to use the same account login for Power BI and Azure"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # How to use the same account login for Power BI and Azure
-
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 
 If you are a user of both Power BI and Azure, you may want to use the same login for both services so that you don't need to type in your password twice.
 

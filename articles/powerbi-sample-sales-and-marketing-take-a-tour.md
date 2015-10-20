@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Sales & Marketing sample for Power BI: Take a tour"
    description="Sales & Marketing sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Sales & Marketing sample for Power BI: Take a tour  
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 The **Sales and Marketing Sample** contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. This dashboard was created by the VanArsdel Chief Marketing Officer (CMO) to keep an eye on the industry and his company’s market share, product volume, sales, and sentiment.
 

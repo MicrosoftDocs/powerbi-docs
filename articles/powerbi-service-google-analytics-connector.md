@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Third-party service: Google Analytics connector for Power BI Desktop"
    description="Third-party service: Google Analytics connector for Power BI Desktop"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Third-party service: Google Analytics connector for Power BI Desktop  
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 >**Note:**  
 >The Google Analytics content pack and the connector in Power BI Desktop rely on the Google Analytics Core Reporting API. As such, features and availability may vary over time.

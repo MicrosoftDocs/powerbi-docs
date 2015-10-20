@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Find and open an organizational content pack"
    description="Find and open an organizational content pack"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Find and open an organizational content pack  
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 When an organizational content pack is published to your organization or [group](http://support.powerbi.com/knowledgebase/articles/654247%0A), it appears in your  content gallery.  Browse the content gallery to find and open organizational content packs.
 

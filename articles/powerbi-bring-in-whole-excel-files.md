@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Bring whole Excel files into Power BI"
    description="Bring whole Excel files into Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Bring whole Excel files into Power BI
-
-[← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
 
 If Excel is your go-to tool for working with data, you can leverage your Excel expertise and investments by using them in Power BI. You can bring any Excel workbook (XLSX or XLSM) into Power BI and explore the whole file, exactly as you would in Excel Online.
 

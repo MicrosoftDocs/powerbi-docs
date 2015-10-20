@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tips for designing a great Power BI dashboard"
    description="Tips for designing a great Power BI dashboard"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tips for designing a great Power BI dashboard  
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 Now that you've created a dashboard and added some tiles, think about how to make your dashboard not just pretty, but also functional. In general, that means making the most important information stand out, and making it clean and uncluttered﻿.
 

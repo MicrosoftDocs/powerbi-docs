@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Dashboards in the Android app for Power BI"
    description="Dashboards in the Android app for Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Dashboards in the Android app for Power BI  
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
 

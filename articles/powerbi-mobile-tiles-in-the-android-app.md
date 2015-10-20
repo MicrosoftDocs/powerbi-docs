@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tiles in the Android app for Power BI"
    description="Tiles in the Android app for Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tiles in the Android app for Power BI  
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
 
 Tiles are live snapshots of your data, displayed on a dashboard. Their values change as the data changes. You create tiles on a dashboard on your [Power BI](http://powerbi.com/) site. Then you see and interact with the tiles in your [Android app for Microsoft Power BI](https://support.powerbi.com/knowledgebase/articles/577773).
 

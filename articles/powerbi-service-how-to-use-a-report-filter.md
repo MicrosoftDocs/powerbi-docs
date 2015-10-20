@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="How to use report filters"
    description="How to use report filters"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # How to use report filters  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 ## Working with filters  
 Report owners can add filters to a report and those filters are saved with the report.  This is [done in Editing View](http://support.powerbi.com/knowledgebase/articles/464704).  People viewing the report in [Reading View can interact with the filters](http://support.powerbi.com/knowledgebase/articles/445094), but cannot save changes to the report.

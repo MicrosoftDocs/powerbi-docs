@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Connect to the Power BI samples"
    description="Tutorial: Connect to the Power BI samples"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tutorial: Connect to the Power BI samples  
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 Want to try Power BI with sample data?  Use our sample content packs or one of our Excel datasets to learn how Power BI keeps you in the know and focused on what matters to run your business.  The samples use real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 

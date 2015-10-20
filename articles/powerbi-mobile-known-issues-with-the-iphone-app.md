@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Known issues with the iPhone app (Power BI for iOS)"
    description="Known issues with the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Known issues with the iPhone app (Power BI for iOS)
-
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 
 ## "We encountered communication failures"

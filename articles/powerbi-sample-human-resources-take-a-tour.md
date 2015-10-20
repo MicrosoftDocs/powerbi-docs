@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Human Resources sample for Power BI: Take a tour"
    description="Human Resources sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Human Resources sample for Power BI: Take a tour  
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 The HR department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who left and tries to uncover any trends in the hiring strategy. Our main objectives are to understand:
 

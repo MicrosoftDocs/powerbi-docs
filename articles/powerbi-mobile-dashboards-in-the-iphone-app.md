@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Dashboards in the iPhone app (Power BI for iOS)"
    description="Dashboards in the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
 

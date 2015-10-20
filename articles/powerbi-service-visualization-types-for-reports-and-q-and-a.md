@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Visualization types in Power BI
 
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
-
 
 ## Power BI visualizations
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Add a filter to a report in Power BI"
    description="Add a filter to a report in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Add a filter to a report in Power BI
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 Filters can be applied to Power BI report pages and to individual report visualizations. A **page filter** applies to all the visualizations on the report page.  A **visual filter** applies to a single visualization on a report page.
 

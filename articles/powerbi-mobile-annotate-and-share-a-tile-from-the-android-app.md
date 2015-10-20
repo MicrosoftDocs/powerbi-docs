@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Annotate and share a tile from the Android app for Power BI"
    description="Annotate and share a tile from the Android app for Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Annotate and share a tile from the Android app for Power BI
-
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
 
 When you share a snapshot of a tile from the [Android app for Microsoft Power BI](https://support.powerbi.com/knowledgebase/articles/577773), your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 

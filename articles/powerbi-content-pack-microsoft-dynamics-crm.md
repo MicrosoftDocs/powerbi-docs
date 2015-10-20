@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Microsoft Dynamics CRM content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 The Microsoft Dynamics CRM content pack for Power BI allows you to easily access and analyze your data. The content pack uses the OData feed to create a descriptive model, with all the entities and measures needed such as Accounts, Activities, Opportunities, Product, Leads, Users and more.
 
 

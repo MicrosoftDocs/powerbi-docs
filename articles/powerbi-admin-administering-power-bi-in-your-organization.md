@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Administering Power BI in your organization"
    description="Administering Power BI in your organization"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Administering Power BI in your organization  
-[← Administrative](https://support.powerbi.com/knowledgebase/topics/63248-administrative)
 
 Power BI is built on the foundation of Office 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](https://support.powerbi.com/knowledgebase/articles/667840-power-bi-security). Administering Power BI tenants, users, and groups is the same as administering them in Office 365. See the following articles for more information:  
 -   [Power BI in your organization](https://support.office.com/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5)  

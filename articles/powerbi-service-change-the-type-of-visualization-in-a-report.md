@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Change the type of visualization in a Power BI report"
    description="Change the type of visualization in a Power BI report"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Change the type of visualization in a Power BI report
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 Try different types of visualizations in Power BI to see which one illustrates your data best. 
 

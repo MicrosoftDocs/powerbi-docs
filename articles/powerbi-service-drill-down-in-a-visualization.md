@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Drill down in a visualization in Power BI"
    description="Drill down in a visualization in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Drill down in a visualization in Power BI
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 1.  In Power BI, open a report in [Reading View](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view)or [Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view). Drill requires a visualization with a hierarchy. 
 

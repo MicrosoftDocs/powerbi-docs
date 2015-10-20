@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Manage, update, and delete organizational content packs"
    description="Manage, update, and delete organizational content packs"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Managing, updating, and deleting organizational content packs
-
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 A few organizational content pack tasks can only be made by the content pack creator.
 

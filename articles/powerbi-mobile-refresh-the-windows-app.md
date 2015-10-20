@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Refresh the Power BI for Windows app"
    description="Refresh the Power BI for Windows app"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Refresh the Power BI for Windows app  
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 Every time you start or return to the Microsoft Power BI for Windows app, it automatically refreshes all the data -- in the home page, the dashboards, and the reports.
 

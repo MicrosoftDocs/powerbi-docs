@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Troubleshooting refresh scenarios"
    description="Troubleshooting refresh scenarios"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Troubleshooting refresh scenarios  
-[← Data refresh](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh)
 
 Here you can find information regarding different scenarios you may face when refreshing data within the Power BI service.
 

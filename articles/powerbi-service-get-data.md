@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Get data for Power BI
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 Dashboards, reports, and datasets are at the heart of Power BI. Connect to or import ***datasets*** from a variety of sources, including content packs, files and databases. Content packs provide "out of the box" connectivity to a number of popular software-as-a-service (SaaS) applications like Salesforce.
 
 

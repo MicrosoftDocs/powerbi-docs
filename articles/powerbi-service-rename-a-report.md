@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Rename a report in Power BI"
    description="Rename a report in Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Rename a report in Power BI
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 Don't like the default name of a report in Power BI?  A new name is just a click away.  And renaming a report does not rename the associated dataset or [rename the associated dashboard](http://support.powerbi.com/knowledgebase/articles/475172-rename-a-dashboard).
 

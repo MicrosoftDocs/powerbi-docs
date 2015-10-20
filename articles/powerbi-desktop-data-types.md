@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Data types in Power BI Desktop"
    description="Data types in Power BI Desktop"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Data types in Power BI Desktop
-
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 This article describes data types supported in Power BI Desktop and Data Analysis Expressions (DAX). ﻿
 

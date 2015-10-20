@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="About filters and highlighting in Power BI reports"
    description="About filters and highlighting in Power BI reports"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # About filters and highlighting in Power BI reports
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 Power BI reports provides several ways to filter and highlight data. Because of the metadata in the underlying [data model](https://support.office.com/en-us/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US), Power BI uses the relationships between the different tables and fields in the model to make items on a report page highlight and filter each other.
 

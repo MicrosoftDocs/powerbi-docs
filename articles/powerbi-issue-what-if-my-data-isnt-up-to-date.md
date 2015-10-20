@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="What if my data isn't up to date?"
    description="What if my data isn't up to date?"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # What if my data isn't up to date?
-
-[← Top issues and questions](https://support.powerbi.com/knowledgebase/topics/106950-top-issues-and-questions)
 
 If your dashboards or reports aren't showing your latest data, here are some things to check.
 

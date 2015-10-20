@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Share dashboards from the Power BI for Windows app"
    description="Share dashboards from the Power BI for Windows app"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Share dashboards from the Power BI for Windows app
-
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 Invite colleagues by sharing links to dashboards and [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/535432-share-a-snapshot-of-a-tile-from-the-power-bi-for-w) from the Power BI app for Windows. The people you share it with need to [sign up for Power BI](http://powerbi.com), too. 
 

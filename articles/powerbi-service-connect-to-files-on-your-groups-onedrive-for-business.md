@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Connect to files on your group's OneDrive for Business"
    description="Connect to files on your group's OneDrive for Business"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Connect to files on your group's OneDrive for Business
-
-[← Groups in Power BI](https://support.powerbi.com/knowledgebase/topics/101158-groups-in-power-bi)
 
 Now that you have a group in Power BI, you want to take advantage of your group’s OneDrive for Business for storing your Excel, CSV, and Power BI Desktop files. Why? Because you can continue updating the files in your OneDrive for Business, and those updates are automatically reflected in the reports and dashboards based on the files. 
 

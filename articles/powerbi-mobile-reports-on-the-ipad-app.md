@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Reports on the iPad app (Power BI for iOS)"
    description="Reports on the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Reports on the iPad app (Power BI for iOS)
-
-[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios)
 
 
 A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You [create and customize reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi).

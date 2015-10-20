@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Procurement Analysis sample for Power BI: Take a tour"
    description="Procurement Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Procurement Analysis sample for Power BI: Take a tour 
-
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 This industry sample dashboard and underlying report analyze a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
 

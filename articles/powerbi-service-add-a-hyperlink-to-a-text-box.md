@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Add a hyperlink to a Text Box in Power BI"
    description="Add a hyperlink to a Text Box in Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Add a hyperlink to a Text Box in Power BI
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 >**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](https://support.powerbi.com/knowledgebase/articles/633580). 
 

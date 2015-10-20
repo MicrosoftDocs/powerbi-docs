@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Dashboard tiles in Power BI"
    description="Dashboard tiles in Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Dashboard tiles in Power BI  
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, from a dataset, from another dashboard, from the Q&A box, and from SQL Server Reporting Services (SSRS).  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)

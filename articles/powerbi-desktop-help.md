@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Power BI Desktop Help
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
-
 **Stay up-to-date**
 
 **[What's new in the latest Power BI Desktop update?](https://support.powerbi.com/knowledgebase/articles/489224-what-s-new-in-the-latest-power-bi-designer-preview)**

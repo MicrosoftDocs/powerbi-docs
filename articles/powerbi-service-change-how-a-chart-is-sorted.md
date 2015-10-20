@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Change how a chart is sorted in a Power BI report"
    description="Change how a chart is sorted in a Power BI report"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Change how a chart is sorted in a Power BI report
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 In Power BI, you can sort charts alphabetically by the names of the categories in the chart, or by the numeric values of each category. For example, this chart is sorted by store name.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Third-party service: Facebook connector for Power BI Desktop"
    description="Third-party service: Facebook connector for Power BI Desktop"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Third-party service: Facebook connector for Power BI Desktop
-
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 The Facebook connector in Power BI Desktop relies on the Facebook Graph API. As such, features and availability may vary over time.
 

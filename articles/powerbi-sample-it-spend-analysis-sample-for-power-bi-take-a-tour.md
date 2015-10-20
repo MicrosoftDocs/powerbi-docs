@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="IT Spend Analysis sample for Power BI: Take a tour"
    description="IT Spend Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # IT Spend Analysis sample for Power BI: Take a tour
-
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 The IT Spend Analysis [content pack](https://support.powerbi.com/knowledgebase/articles/651040-introduction-to-organizational-content-packs)(dashboard, report, and dataset) analyze the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
 

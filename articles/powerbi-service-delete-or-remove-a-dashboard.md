@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Delete or remove a dashboard"
    description="Delete or remove a dashboard"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Delete or remove a dashboard  
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 Dashboards can be deleted and removed.  Deleting and removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
 

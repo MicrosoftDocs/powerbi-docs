@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Get started with the iPhone app (Power BI for iOS)"
    description="Get started with the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Get started with the iPhone app (Power BI for iOS)
-
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 The iPhone app for Microsoft Power BI for iOS brings Power BI to your pocket, with live, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere.
 

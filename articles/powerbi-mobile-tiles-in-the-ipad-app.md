@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tiles in the iPad app (Power BI for iOS)"
    description="Tiles in the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tiles in the iPad app (Power BI for iOS)  
-[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios)
 
 Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).
 

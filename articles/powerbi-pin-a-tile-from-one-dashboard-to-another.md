@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Pin a tile from one dashboard to another dashboard"
    description="Pin a tile from one dashboard to another dashboard"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
  
 # Pin a tile from one dashboard to another dashboard  
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 ﻿One way to add a new [dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi) is by copying it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&A or a report. 
 

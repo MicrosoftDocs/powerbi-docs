@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
    description="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Edit a tile -- resize, move, rename, pin, delete, add hyperlink
-
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 You can change the look and default behavior of a tile in a dashboard:
 

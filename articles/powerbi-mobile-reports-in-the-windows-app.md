@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Reports in the Power BI for Windows app"
    description="Reports in the Power BI for Windows app"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Reports in the Power BI for Windows app
-
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports in the Power BI service (https://powerbi.com)](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi).
 

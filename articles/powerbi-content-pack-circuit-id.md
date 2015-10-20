@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Circuit ID content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 ﻿Analyzing your communication data from Circuit ID is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data.
 
 Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/services/circuitid)[ ](https://app.powerbi.com/getdata/services/circuitid)for Power BI.

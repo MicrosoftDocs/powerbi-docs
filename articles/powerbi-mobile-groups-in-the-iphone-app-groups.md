@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Groups in the iPhone app (Power BI for iOS)"
    description="Groups in the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Groups in the iPhone app (Power BI for iOS)  
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) and [groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247). Groups are available with the paid Power BI experience.
 

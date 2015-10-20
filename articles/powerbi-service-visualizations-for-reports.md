@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Visualizations in Power BI"
    description="Visualizations in Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Visualizations in Power BI  
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 Data visualizations allow you to interact with your data to find business insights. Create and modify visualizations in your reports, and then pin them to your dashboards.   
 ![](media/powerbi-service-visualizations-for-reports/PBI_ChoroUSSentiment.png)

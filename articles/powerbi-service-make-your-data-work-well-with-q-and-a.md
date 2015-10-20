@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Make your data work well with Q&A in Power BI"
    description="Make your data work well with Q&A in Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Make your data work well with Q&A in Power BI  
-[← Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi)
 
 If you are a person who creates data models or builds Excel workbooks that will be used with Power BI, read on...
 

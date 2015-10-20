@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Get started with the Power BI for Android app
 
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
-
 The Android app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere.
 
 ![](media/powerbi-mobile-android-app-get-started/PBI_Andr_StartScrnSm.png)

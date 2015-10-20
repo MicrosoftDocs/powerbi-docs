@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Publish from Power BI Desktop"
    description="Publish from Power BI Desktop"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Publish from Power BI Desktop  
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 When you publish a Power BI Desktop file to the Power BI service, the data in the model and any reports you created in Report View are published to your Power BI site. You’ll see a new dataset with the same name, and any reports in your Workspace navigator.
 

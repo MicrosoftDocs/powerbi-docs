@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Share a dashboard from the iPhone app (Power BI for iOS)"
    description="Share a dashboard from the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Share a dashboard from the iPhone app (Power BI for iOS)
-
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 Invite colleagues to view your dashboards by sharing links from the iPhone app for Power BI. You can only share dashboards with colleagues in the same email domain as you.
 

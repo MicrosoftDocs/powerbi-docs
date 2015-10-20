@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Relationship View in Power BI Desktop"
    description="Relationship View in Power BI Desktop"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Relationship View in Power BI Desktop
-
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 Relationship View shows all of the tables, columns, and relationships in your model. This can be especially helpful when your model has complex relationships between many tables.
 

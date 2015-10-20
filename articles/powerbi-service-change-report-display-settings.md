@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Page display settings in a Power BI report"
    description="Page display settings in a Power BI report"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Page display settings in a Power BI report
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 We understand it is critical to keep your report layout pixel perfect. Sometimes, it can be challenging, because you and your colleagues view those reports on screens with different aspect ratios and sizes. 
 

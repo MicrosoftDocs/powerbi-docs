@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Azure SQL Database with direct connect
 
-[← Databases and more](https://support.powerbi.com/knowledgebase/topics/88773-databases-and-more)
-
 Azure SQL Database with direct connect allows you to create dynamic reports based on data and metric you already have in your Azure SQL Database. With direct connect, queries are sent back to your Azure SQL Database as you explore the data in the report view. This experience is suggested for users who are familiar with the databases and entities they connect to.
 
 Notes:

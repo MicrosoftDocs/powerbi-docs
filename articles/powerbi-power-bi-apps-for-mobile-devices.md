@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Power BI apps for mobile devices"
    description="Power BI apps for mobile devices"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Power BI apps for mobile devices  
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 You have several options for viewing your Power BI dashboards on your mobile device. Of course, you can just view them in a browser on your phone or iPad. But beyond that, you can also download a Power BI app to specific devices:
 

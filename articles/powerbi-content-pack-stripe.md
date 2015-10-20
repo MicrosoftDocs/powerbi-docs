@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Stripe content pack for Power BI"
    description="Stripe content pack for Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Stripe content pack for Power BI
-
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 Visual and explore your Stripe data in Power BI with the Power BI
 content pack. The Power BI Stripe content pack pulls in data about your

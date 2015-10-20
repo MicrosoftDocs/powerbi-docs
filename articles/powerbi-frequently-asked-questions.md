@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Frequently Asked Questions
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 ## What is Microsoft Power BI?
 
 [Power BI](https://powerbi.microsoft.com/) is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life.

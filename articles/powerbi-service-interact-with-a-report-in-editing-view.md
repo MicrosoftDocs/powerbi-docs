@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Interact with a report in Editing View in Power BI"
    description="Interact with a report in Editing View in Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Interact with a report in Editing View in Power BI
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 In report [Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-exploration-mode-to-edit-mode) in Power BI, you have lots of flexibility in designing a report. All the [Reading View](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)functionality is available -- plus lots more.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Retail Analysis sample for Power BI: Take a tour"
    description="Retail Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 
 # Retail Analysis sample for Power BI: Take a tour
-
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Add a page to a Power BI report"
    description="Add a page to a Power BI report"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Add a page to a Power BI report  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 No reason to crowd up a report page -- just add a new blank page.
 

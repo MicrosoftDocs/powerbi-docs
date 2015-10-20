@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Azure Audit Logs content pack for Power BI"
    description="Azure Audit Logs content pack for Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Azure Audit Logs content pack for Power BI  
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 With the Azure Audit Logs content pack you can analyze and visualize the information stored in the audit logs. Power BI retrieves your data, builds an out-of-the box dashboard, and creates reports based on that data.
 

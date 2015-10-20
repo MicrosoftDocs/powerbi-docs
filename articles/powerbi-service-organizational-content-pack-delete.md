@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Delete an organizational content pack"
    description="Delete an organizational content pack"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Delete an organizational content pack  
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 A coworker created a content pack and you discovered it in the content gallery and added it to your Power BI workspace. But you don't need it any longer.  How do you remove it?
 

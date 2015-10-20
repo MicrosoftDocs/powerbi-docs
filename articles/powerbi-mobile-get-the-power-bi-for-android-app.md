@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Get the Power BI for Android app"
    description="Get the Power BI for Android app"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Get the Power BI for Android app
-
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
 
 ### Download the Power BI for Android app
 

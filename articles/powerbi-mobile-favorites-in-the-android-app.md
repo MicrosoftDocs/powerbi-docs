@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Favorites in the Android app for Power BI"
    description="Favorites in the Android app for Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Favorites in the Android app for Power BI
-
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
 
 For easy access to your most interesting data, you can mark specific tiles as favorites in the [Android app for Microsoft Power BI](https://support.powerbi.com/knowledgebase/articles/577773). Only you can see your Favorites page, where you bring together in one place your favorite tiles from all of your dashboards.
 

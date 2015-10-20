@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Tutorial: Facebook analytics using Power BI Desktop
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
-
 In this tutorial you learn how to import and visualize data from **Facebook**. During the tutorial you'll learn how to connect to a specific Facebook page (the Power BI page), apply data transformation steps, and create some visualizations.
 
 Here are the steps you'll take:

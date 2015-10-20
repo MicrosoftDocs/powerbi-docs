@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="How should I share my dashboard?"
    description="How should I share my dashboard?"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # How should I share my dashboard?  
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 In Power BI you can share your dashboards several different ways. Each has its advantages. You can:
 -   Share a dashboard with your colleagues.

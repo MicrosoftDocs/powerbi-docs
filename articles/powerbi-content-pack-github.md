@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # GitHub content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also known as repo) with data around contributions, issues, pull requests and active users.
 
 Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github)for Power BI.

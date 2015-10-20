@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Power BI Pro content - what is it?"
    description="Power BI Pro content - what is it?"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Power BI Pro content - what is it?  
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Power BI free and Pro licenses are different based on the kind of content users can consume.  **Power BI Pro content** is a dashboard, report, or dataset that uses a connection or other functionality (such as hourly refresh) that is only available to consume with a Power BI Pro license.
 

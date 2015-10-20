@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tiles in the Power BI for Windows app"
    description="Tiles in the Power BI for Windows app"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tiles in the Power BI for Windows app  
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).
 

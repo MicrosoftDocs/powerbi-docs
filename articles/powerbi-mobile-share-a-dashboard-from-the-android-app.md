@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Share a dashboard from the Android app for Power BI"
    description="Share a dashboard from the Android app for Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Share a dashboard from the Android app for Power BI
-
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
 
 Invite colleagues to view your dashboards by sharing links from the [Android app for Microsoft Power BI](https://support.powerbi.com/knowledgebase/articles/577773). You can only share dashboards with colleagues in the same email domain as you, and only if you have permissions to invite others.
 

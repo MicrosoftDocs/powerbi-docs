@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Share (and unshare) a dashboard from Power BI"
    description="Share (and unshare) a dashboard from Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 
 # Share (and unshare) a dashboard from Power BI
-
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 You can share your dashboards with people in your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
 

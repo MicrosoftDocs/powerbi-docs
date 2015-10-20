@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tips and tricks for color formatting in Power BI"
    description="Tips and tricks for color formatting in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Tips and tricks for color formatting in Power BI
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 Power BI provides many different ways to customize your dashboards and reports. This article details a collection of tips that can make your Power BI visualizations more compelling, interesting, and customized to your needs.
 

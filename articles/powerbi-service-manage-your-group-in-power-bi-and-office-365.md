@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Manage your group in Power BI and Office 365"
    description="Manage your group in Power BI and Office 365"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Manage your group in Power BI and Office 365
-
-[← Groups in Power BI](https://support.powerbi.com/knowledgebase/topics/101158-groups-in-power-bi)
 
 As creator or admin of a group in Power BI or in Office 365, you manage some aspects of your group in Power BI. Other aspects you manage in Office 365. 
 

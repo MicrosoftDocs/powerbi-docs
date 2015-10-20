@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Reference lines in your report"
    description="Reference lines in your report"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Reference lines in your report
-
-[← Knowledge Base](https://support.powerbi.com/knowledgebase)
 
 You can use a calculated column to define a reference line.  Identify the table and column on which you want to create a reference line.  Select "New Column" in the ribbon and, in the formula bar, type the following formula:
 

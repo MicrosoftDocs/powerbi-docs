@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Twilio content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 The Microsoft Twilio content pack for Power BI allows you to retrieve your Twilio data to Power BI and creates an out of box dashboard and report that shows insights on your data. You can also create your custom reports and dashboard on the dataset Power BI creates.
 
 The data will be refreshed once a day so you are always looking at the latest data.

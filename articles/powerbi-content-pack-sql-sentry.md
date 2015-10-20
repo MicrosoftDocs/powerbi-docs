@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # SQL Sentry content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 ﻿Analyzing your performance data collected by SQL Sentry is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data.
 
 **Requirements:**

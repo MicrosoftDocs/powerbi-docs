@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Text Boxes in Power BI reports"
    description="Text Boxes in Power BI reports"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Text Boxes in Power BI reports
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 In Editing View, add a text box to a report and then pin it to a dashboard. 
 

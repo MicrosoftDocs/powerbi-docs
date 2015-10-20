@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Connect to data in Power BI Desktop"
    description="Connect to data in Power BI Desktop"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Connect to data in Power BI Desktop
-
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 With Power BI Desktop you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](http://go.microsoft.com/fwlink/?LinkID=521662) and install it.
 

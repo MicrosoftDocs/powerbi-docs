@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Get started with the Power BI for Windows app
 
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
-
 The Microsoft Power BI for Windows app adds to the Power BI experience. It provides live, touch-enabled mobile access to your important business information, so you can view and interact with your company dashboards and reports easily, from anywhere. Explore the data in your dashboards, and share them with your colleagues in email.
 
 ![](media/powerbi-service-windows-app-get-started/PBI_WinAppHome0915.png)

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Groups in the Power BI for Windows app"
    description="Groups in the Power BI for Windows app"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Groups in the Power BI for Windows app
-
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/en-US/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) and [groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247). Groups are available with the paid Power BI experience.
 

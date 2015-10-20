@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Getting started with color formatting and axis properties"
    description="Getting started with color formatting and axis properties"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Getting started with color formatting and axis properties  
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 In Power BI, you can change the color of data series, data points, and even the background of visualizations. You can also change how the x-axis and y-axis are presented, providing you with full control of how your dashboards and reports appear.
 

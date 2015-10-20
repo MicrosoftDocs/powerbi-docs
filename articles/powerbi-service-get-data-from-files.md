@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Get data from Excel, Power BI Desktop, and CSV files into Power BI
 
-[← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
-
 **Excel files**
 
 If Excel is your go-to tool for working with data, you can leverage your Excel expertise and investments by using them in Power BI. You have two options:

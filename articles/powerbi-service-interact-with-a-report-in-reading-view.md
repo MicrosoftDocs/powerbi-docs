@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Interact with a report in Reading View in Power BI"
    description="Interact with a report in Reading View in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Interact with a report in Reading View in Power BI
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 Reports in Power BI Reading View are very interactive. When you highlight a value in one visualization, it can change the values in the rest of the page. You can filter values on a page, and change the way values are sorted in a visualization. It's a great way to play with and get to know your data. 
 

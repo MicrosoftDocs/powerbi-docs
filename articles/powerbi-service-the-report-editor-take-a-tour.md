@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # The report editor...Take a tour
 
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
-
 The Power BI report editor is made up of 3 panes:  **Fields**, **Visualizations**, and **Filters**, and the report canvas.  The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering.  And the pane on the right side, Fields, control the underlying data being used in the visualizations. 
 
 The content displayed in the report editor varies by selections you make in the report canvas.  For example, when you select an individual visual, 

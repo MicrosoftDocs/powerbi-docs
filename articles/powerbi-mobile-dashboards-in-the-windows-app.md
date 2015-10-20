@@ -19,8 +19,6 @@
 
 # Dashboards in the Power BI for Windows app
 
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
-
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business.
 
 Microsoft Power BI comes with built-in dashboards for some data sources such as Salesforce, and you create your own [dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi).

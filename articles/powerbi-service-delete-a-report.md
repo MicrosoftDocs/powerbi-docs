@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Delete a report from Power BI"
    description="Delete a report from Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Delete a report from Power BI  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 Don't worry, deleting a report does not delete the dataset that the report is based on.  And any visualizations that you pinned from the report are also safe -- they remain on the dashboard until you delete them individually.
 

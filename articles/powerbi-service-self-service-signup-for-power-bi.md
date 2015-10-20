@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Self-Service Signup for Power BI"
    description="Self-Service Signup for Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Self-Service Signup for Power BI
-
-[← Knowledge Base](https://support.powerbi.com/knowledgebase)
 
 In many cases, registering for Power BI can be achieved by following the simple [self-service signup process](http://powerbi.microsoft.com). However, there are several reasons why you may not be able to complete self-service signup.  The table below summarizes some of the most common reasons you may not be able to complete signup and ways you can workaround these issues.
 

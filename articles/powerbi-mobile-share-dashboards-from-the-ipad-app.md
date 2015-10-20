@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Share dashboards from the iPad app (Power BI for iOS)"
    description="Share dashboards from the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Share dashboards from the iPad app (Power BI for iOS)
-
-[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios)
 
 Invite colleagues by sharing links to dashboards and [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/527030-annotate-and-share-a-snapshot-of-a-tile-from-the-i) from the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS. The people you share it with need to sign up for Power BI, too.
 

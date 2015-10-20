@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Replace an Excel, Power BI Desktop, or CSV file in Power BI"
    description="Replace an Excel, Power BI Desktop, or CSV file in Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Replace an Excel, Power BI Desktop, or CSV file in Power BI
-
-[← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
 
 Say you upload an Excel, Power BI Desktop, or CSV file from your computer to Power BI, and use it as a dataset for reports and dashboards in Power BI.
 

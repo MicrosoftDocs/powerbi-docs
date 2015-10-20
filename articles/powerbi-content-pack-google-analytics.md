@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Google Analytics content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 ### Update 6/3:
 
 The issue we were experiencing while connecting to Google Analytics has been resolved. If you were encountering any issues logging in to Google Analytics through Power BI or refreshing Google Analytics datasets, please try again.

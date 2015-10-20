@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Copy and paste a visualization in Power BI"
    description="Copy and paste a visualization in Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Copy and paste a visualization in Power BI  
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 1.  In Power BI, open a report in [Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view)and [create a visualization](http://support.powerbi.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report) if your report doesn't already have one. 
 

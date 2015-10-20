@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Favorites in the iPhone app (Power BI for iOS)"
    description="Favorites in the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Favorites in the iPhone app (Power BI for iOS)
-
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 For easy access to your most interesting data, you can mark specific tiles as favorites in the [iPhone app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios-preview) for iOS. Only you can see your Favorites dashboard, which brings your favorite tiles from all of your dashboards together in one place.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Support for Office 365 dedicated customers - known issues"
    description="Support for Office 365 dedicated customers - known issues"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Support for Office 365 dedicated customers - known issues  
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 
 Power BI is now supported for Office 365 Dedicated customers.  If you are an O365 Dedicated customer, you can sign in with an account from that tenant and use Power BI. There are two known issues currently.
 

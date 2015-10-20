@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Supplier Quality Analysis sample for Power BI: Take a tour"
    description="Supplier Quality Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Supplier Quality Analysis sample for Power BI: Take a tour  
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 This industry sample dashboard and underlying report focus on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives:
 

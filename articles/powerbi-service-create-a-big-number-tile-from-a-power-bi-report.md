@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Create a big number tile from a Power BI report"
    description="Create a big number tile from a Power BI report"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Create a big number tile from a Power BI report
-
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can create a big number tile by [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/436733), or in a Power BI report. This article explains how to create one in a report.
 

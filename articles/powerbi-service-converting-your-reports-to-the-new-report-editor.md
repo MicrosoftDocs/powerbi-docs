@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Converting your reports to the new report editor"
    description="Converting your reports to the new report editor"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Converting your reports to the new report editor  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 If you participated in the Power BI Preview, you may notice that our report editor has been updated. [Take a tour of the new report editor](https://support.powerbi.com/knowledgebase/articles/665494).
 

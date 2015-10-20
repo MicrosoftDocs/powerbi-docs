@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Configure a Power BI Analysis Services Connector
 
-[← Databases and more](https://support.powerbi.com/knowledgebase/topics/88773-databases-and-more)
-
 
 ##  [**Download the Analysis Services Connector now**](http://www.microsoft.com/download/details.aspx?id=45333)
 

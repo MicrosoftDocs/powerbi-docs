@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Acumatica content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 The Power BI Acumatica content pack allows to you quickly gain insights into your opportunity data. Power BI retrieves your data, including opportunities, accounts, and customers, then builds a default dashboard and related reports based on that data.
 
 Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services/acumatica) for Power BI.

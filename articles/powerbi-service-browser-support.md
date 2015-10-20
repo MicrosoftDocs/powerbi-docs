@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Supported browsers for Power BI"
    description="Supported browsers for Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Supported browsers for Power BI  
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 We support Power BI in these browsers:
 

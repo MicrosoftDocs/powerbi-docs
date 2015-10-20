@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Sample content packs and datasets for Power BI"
    description="Sample content packs and datasets for Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Sample content packs and datasets for Power BI  
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Want to try Power BI with industry-specific sample data?  Use our sample content packs or one of our datasets to learn how Power BI keeps you in the know and focused on what matters to run your business.  The samples use real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Customer Profitability sample for Power BI: Take a tour"
    description="Customer Profitability sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Customer Profitability sample for Power BI: Take a tour  
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 The “Customer Profitability Sample” content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about her 5 business unit managers (aka executives), products, customers, and gross margins (GM). At a glance she can see what factors are impacting profitability.
 

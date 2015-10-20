@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Excel data in Power BI"
    description="Excel data in Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Excel data in Power BI
-
-[← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
 
 You can use any XLSX Excel workbook - Excel 2007, 2010, and 2013 - as a dataset for your Power BI dashboards and reports. [Get your Excel data into Power BI](https://support.powerbi.com/knowledgebase/articles/597003).
 

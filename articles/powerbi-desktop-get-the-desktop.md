@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Get Power BI Desktop
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
-
 Before you can use some of the more advanced query, modeling, and report features in Power BI, you'll need to get Power BI Desktop.
 
 ## Minimum requirements
