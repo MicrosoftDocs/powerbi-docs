@@ -3,7 +3,7 @@
    description="Explore a dataset in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Explore a dataset in Power BI
 
 Exploring a dataset is similar to [creating a report](powerbi-service-reports.md).  When you click **Explore** you'll see the same canvas, navigation, and Fields and Filters pane. Dataset explore always starts with a blank canvas and always opens in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). Use dataset explore to dig into your data, create visualizations, create reports, and pin visualizations to your dashboard.

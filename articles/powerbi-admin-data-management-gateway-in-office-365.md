@@ -3,7 +3,7 @@
    description="Data Management Gateway in Power BI for Office 365"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/15/2015"
-   ms.author="jastru"/>
+   ms.author="asaxton"/>
 
 # Data Management Gateway in Power BI for Office 365  
 

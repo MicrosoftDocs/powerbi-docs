@@ -3,7 +3,7 @@
    description="Get data from Excel, Power BI Desktop, and CSV files into Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="Minewiskan" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="owend"/>
 # Get data from Excel, Power BI Desktop, and CSV files into Power BI
 
 **Excel files**

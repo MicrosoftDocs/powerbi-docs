@@ -3,7 +3,7 @@
    description="Third-party service: Facebook connector for Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="davidi"/>
 # Third-party service: Facebook connector for Power BI Desktop
 
 The Facebook connector in Power BI Desktop relies on the Facebook Graph API. As such, features and availability may vary over time.

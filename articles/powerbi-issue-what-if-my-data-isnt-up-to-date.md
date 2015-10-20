@@ -3,7 +3,7 @@
    description="What if my data isn't up to date?"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-aljenk" 
+   authors="mgblythe" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="v-aljenk"/>
+   ms.author="adamw"/>
 
 # What if my data isn't up to date?
 

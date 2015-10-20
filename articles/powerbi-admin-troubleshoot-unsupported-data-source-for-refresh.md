@@ -3,7 +3,7 @@
    description="Troubleshooting unsupported data source for refresh"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="jastru"/>
+   ms.author="asaxton"/>
 
 # Troubleshooting unsupported data source for refresh  
 

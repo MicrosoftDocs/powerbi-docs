@@ -3,7 +3,7 @@
    description="Signing up for Power BI with a new Office 365 Trial"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="asaxton"/>
 # Signing up for Power BI with a new Office 365 Trial
 
 If you are having problems signing up for Power BI with your work email address, one potential workaround is to sign up for an Office 365 trial first and then signing up for Power BI.  You will be able to use Power BI even after the Office 365 trial expires.

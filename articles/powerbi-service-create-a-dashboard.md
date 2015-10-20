@@ -3,7 +3,7 @@
    description="Create a Power BI dashboard"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="mihart"/>
 # Create a Power BI dashboard
 
 You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now you want to create your own. Remember that your dashboard will be blank until you [get some data](powerbi-service-get-data.md)and either [pin visualizations from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) or [pin visualizations from reports](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md).

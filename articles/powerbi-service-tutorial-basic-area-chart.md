@@ -3,7 +3,7 @@
    description="Tutorial: Basic Area chart"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/15/2015"
-   ms.author="jastru"/>
+   ms.author="mihart"/>
 
 # Tutorial: Basic Area chart  
 

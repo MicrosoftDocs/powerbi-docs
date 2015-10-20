@@ -3,7 +3,7 @@
    description="Introduction to organizational content packs"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Introduction to organizational content packs
 
 Package up and share your own dashboard, reports, and datasets with your coworkers.  Do you have any reports that you regularly distribute via email to your team?  Instead, create the reports in Power BI and publish them as a content pack to your team! Content packs are easy to find -- they are all in one location, the content gallery. And since they're part of Power BI, they leverage all the great features of Power BI including interactive data exploration, new visualizations, Q&A, integration with other data sources, data refresh, and more.

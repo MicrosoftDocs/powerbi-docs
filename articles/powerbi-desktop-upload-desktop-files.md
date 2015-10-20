@@ -3,7 +3,7 @@
    description="Publish from Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/15/2015"
-   ms.author="jastru"/>
+   ms.author="davidi"/>
 
 # Publish from Power BI Desktop  
 

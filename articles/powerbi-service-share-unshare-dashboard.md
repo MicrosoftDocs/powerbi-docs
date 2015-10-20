@@ -3,7 +3,7 @@
    description="Share (and unshare) a dashboard from Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="06/18/2015"
-   ms.author="v-anpasi"/>
+   ms.author="mihart"/>
 
 # Share (and unshare) a dashboard from Power BI
 

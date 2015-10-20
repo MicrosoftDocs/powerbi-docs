@@ -3,7 +3,7 @@
    description="Interact with a report in Editing View in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="mihart"/>
 # Interact with a report in Editing View in Power BI
 
 In report [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) in Power BI, you have lots of flexibility in designing a report. All the [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)functionality is available -- plus lots more.

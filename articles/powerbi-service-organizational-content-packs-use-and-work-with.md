@@ -3,7 +3,7 @@
    description="Work with organizational content packs"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Work with organizational content packs
 
 When an organizational content pack is published, all members see the same dashboard, reports, and datasets (unless it's an SSAS data source).  [Only the creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md%0A) the content pack.  However, all users can customize the dashboards and reports, and when those changes are saved, a new *personalized* version of the content pack replaces the original.

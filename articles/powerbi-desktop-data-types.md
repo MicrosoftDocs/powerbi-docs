@@ -3,7 +3,7 @@
    description="Data types in Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="davidi"/>
 # Data types in Power BI Desktop
 
 This article describes data types supported in Power BI Desktop and Data Analysis Expressions (DAX). ﻿

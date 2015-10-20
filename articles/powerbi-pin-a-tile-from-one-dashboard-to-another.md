@@ -3,7 +3,7 @@
    description="Pin a tile from one dashboard to another dashboard"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="jastru"/>
+   ms.author="mihart"/>
  
 # Pin a tile from one dashboard to another dashboard  
 

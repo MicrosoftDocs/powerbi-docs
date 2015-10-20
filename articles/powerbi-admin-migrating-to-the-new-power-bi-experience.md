@@ -3,7 +3,7 @@
    description="Migrating to the new Power BI experience"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-aljenk" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-aljenk"/>
+   ms.author="asaxton"/>
 
 # Migrating to the new Power BI experience
 

@@ -3,7 +3,7 @@
    description="Troubleshooting Power BI Analysis Service Connector"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="asaxton"/>
 # Troubleshooting Power BI Analysis Service Connector
 
 If you're having issues using the Power BI Analysis Services Connector, be sure check out these troubleshooting tips.

@@ -3,7 +3,7 @@
    description="Get Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="davidi"/>
 # Get Power BI Desktop
 
 Before you can use some of the more advanced query, modeling, and report features in Power BI, you'll need to get Power BI Desktop.

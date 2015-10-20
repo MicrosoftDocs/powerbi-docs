@@ -3,7 +3,7 @@
    description="Closing your Power BI Account"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="asaxton"/>
 # Closing your Power BI Account
 
 If you don't want to use Power BI any longer, you can ask us to close your Power BI account.  After your account is closed, you can no longer sign in to Power BI.  Also, any customer data you uploaded or created in Power BI is deleted according to the data retention policy in the Power BI Terms of Service.

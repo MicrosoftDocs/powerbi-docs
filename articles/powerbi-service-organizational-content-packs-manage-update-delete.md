@@ -3,7 +3,7 @@
    description="Manage, update, and delete organizational content packs"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Managing, updating, and deleting organizational content packs
 
 A few organizational content pack tasks can only be made by the content pack creator.

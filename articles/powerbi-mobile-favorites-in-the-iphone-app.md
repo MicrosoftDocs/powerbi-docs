@@ -3,7 +3,7 @@
    description="Favorites in the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Favorites in the iPhone app (Power BI for iOS)
 
 For easy access to your most interesting data, you can mark specific tiles as favorites in the [iPhone app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios-preview) for iOS. Only you can see your Favorites dashboard, which brings your favorite tiles from all of your dashboards together in one place.

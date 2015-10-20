@@ -3,7 +3,7 @@
    description="Tiles in the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-aljenk" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-aljenk"/>
+   ms.author="maggies"/>
 
 # Tiles in the iPhone app (Power BI for iOS)
 

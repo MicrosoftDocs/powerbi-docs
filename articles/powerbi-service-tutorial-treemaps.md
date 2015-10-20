@@ -3,7 +3,7 @@
    description="Tutorial: Treemaps in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/15/2015"
-   ms.author="jastru"/>
+   ms.author="mihart"/>
 
 # Tutorial: Treemaps in Power BI  
 
