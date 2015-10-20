@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Tutorial: Combo Chart in Power BI"
    description="Tutorial: Combo Chart in Power BI"
    services="powerbi" 
@@ -54,21 +54,21 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 	3. Select **Time** \> **Month** to add it to the **Axis** well. 
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/comboTutorial1.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combotutorial1.png)
 
 5. Convert the column chart to a Combo chart.
 
 	1.  With the column chart selected, open the Visualizations pane and select the **Line and Clustered Column chart**.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/convertToCombo.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo.png)
 
 	2.  From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line Values** bucket.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/lineValueBucket.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/linevaluebucket.png)
 
     Your combo chart should look like this:
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/comboChartDone.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochartdone.png)
 
 
 ## Create a Combo Chart with two axes
@@ -86,11 +86,11 @@ In this task, we'll see what impact store count has on sales.
 
 3.  To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/lineAndStacked.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/lineandstacked.png)
 
 4.  Drag **Store Count** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the data sets to be scaled differently; the left measures dollars and the right measures count of stores.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/comboChart2Done.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochart2done.png)
 
       
 
@@ -104,7 +104,7 @@ In this task, we'll see what impact store count has on sales.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo3.png)
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/YaxisOff.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/yaxisoff.png)
 
 
 ## Add titles to the axes
@@ -119,7 +119,7 @@ In this task, we'll see what impact store count has on sales.
 
 5.  Set **Style** to **Show title only**.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/YaxisSettings.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/yaxissettings.png)
 
 6.  Select the down arrow to expand the X-axis options.
 
@@ -129,7 +129,7 @@ In this task, we'll see what impact store count has on sales.
 
     Your Combo chart now displays dual axes, both with titles.
 
-	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/XYaxisTitlesOn.png)
+	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/xyaxistitleson.png)
 
 	[Add the Combo Chart as a dashboard tile](powerbi-service-dashboard-tiles.md).
 

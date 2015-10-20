@@ -1,11 +1,11 @@
 <properties 
-   pageTitle="Create a group in Power BI
-   description="Create a group in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
-   editor=""
+   pageTitle = "Create a group in Power BI
+   description = "Create a group in Power BI"
+   services = "powerbi" 
+   documentationCenter = "na" 
+   authors = "jastru" 
+   manager = "mblythe" 
+   editor = "na"
    tags=""/>
  
 <tags

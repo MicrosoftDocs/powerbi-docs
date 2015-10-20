@@ -21,7 +21,7 @@
 
 A Filled Map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
-![](/media/powerbi-service-tutorial-filled-maps-choropleths/map.png)
+![](/media/powerbi-service-tutorial-filled-maps-choropleths/large_map.png)
 
 ## When to use a Filled Map  
 Filled Maps are a great choice:

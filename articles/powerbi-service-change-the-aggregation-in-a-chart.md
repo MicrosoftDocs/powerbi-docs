@@ -29,7 +29,7 @@ Say you have a chart that sums the sales data for different regions, but you'd r
 
 2.  Find that field in the Visualizations pane, right-click, and select the aggregate type you need.
 
-    ![](/media/powerbi-service-change-the-aggregation-in-a-chart/image.png)
+    ![](media/powerbi-service-change-the-aggregation-in-a-chart/aggregate.png)
 
 >**NOTE:**   
 >**The options available in the dropdown will vary depending on the field selected.**
