@@ -82,7 +82,7 @@ This is the probably the most common way of getting your data into Power BI. Dat
 |Get Data is used to connect to and query data from any listed|No|Yes|Yes|
 
 
-For more detailed information, see [Refresh a dataset created from a Power BI Desktop file on a local drive](https://support.powerbi.com/knowledgebase/articles/753645-refresh-a-dataset-created-from-a-power-bi-desktop).
+For more detailed information, see [Refresh a dataset created from a Power BI Desktop file on a local drive](https://support.powerbi.com/knowledgebase/articles/753645).
 
 **Excel workbook on a local drive**
 
@@ -97,7 +97,7 @@ For more detailed information, see [Refresh a dataset created from a Power BI De
 
     \* Power Query is known as Get & Transform Data in Excel 2016.
 
-For more detailed information, see [Refresh a dataset created from an Excel workbook on a local drive](https://support.powerbi.com/knowledgebase/articles/753603-refresh-a-dataset-created-from-an-excel-workbook-o).
+For more detailed information, see [Refresh a dataset created from an Excel workbook on a local drive](https://support.powerbi.com/knowledgebase/articles/753603).
 
 ### Files on OneDrive – Personal or OneDrive – Business  
 Keeping your files on OneDrive and connecting to them from Power BI provides a great amount of flexibility. But with all that flexibility, it also makes it one of the most challenging to understand.
@@ -111,7 +111,7 @@ Keeping your files on OneDrive and connecting to them from Power BI provides a g
 |Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark.|Yes (hourly)|Yes|No|
 |Get Data is used to connect to and query data from any listed|No|Yes|Yes|
 
-For more detailed information, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](https://support.powerbi.com/knowledgebase/articles/753627-refresh-a-dataset-created-from-a-power-bi-desktop).
+For more detailed information, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](https://support.powerbi.com/knowledgebase/articles/753627).
 
 **Excel workbook on OneDrive**
 
@@ -126,7 +126,7 @@ For more detailed information, see [Refresh a dataset created from a Power BI De
 
 \* Power Query is known as Get & Transform Data in Excel 2016.
 
-For more detailed information, see [Refresh a dataset created from an Excel workbook on OneDrive](https://support.powerbi.com/knowledgebase/articles/753615-refresh-a-dataset-created-from-an-excel-workbook-o).
+For more detailed information, see [Refresh a dataset created from an Excel workbook on OneDrive](https://support.powerbi.com/knowledgebase/articles/753615).
 
 **Comma separated value (.csv) file on OneDrive**
 
@@ -237,7 +237,7 @@ Unfortunately, refresh is not supported in this scenario. In order to refresh th
 
 When you connect to a file on OneDrive, your reports and dashboards will show data as it is in the file. In this case, your Excel workbook. Power BI automatically checks the file on OneDrive every hour for updates. If you make changes to the workbook (stored in OneDrive), those changes are reflected in your dashboard and reports within an hour. You don’t need to setup refresh at all. However, if you need to see your updates in Power BI immediately, you can manually refresh the dataset by using Refresh Now.
 
-To learn more, see [Excel data in Power BI](powerbi-service-excel-data.md-excel-data-in-power-bi),[Replace an Excel, Power BI Desktop, or CSV file in Power BI](powerbi-replace-an-excel-power-bi-desktop-or-csv-file.md-replace-an-excel-power-bi-desktop-or-csv-file-in), [Refresh a dataset created from an Excel workbook on OneDrive](https://support.powerbi.com/knowledgebase/articles/753615-refresh-a-dataset-created-from-an-excel-workbook-o).
+To learn more, see [Excel data in Power BI](powerbi-service-excel-data.md-excel-data-in-power-bi),[Replace an Excel, Power BI Desktop, or CSV file in Power BI](powerbi-replace-an-excel-power-bi-desktop-or-csv-file.md-replace-an-excel-power-bi-desktop-or-csv-file-in), [Refresh a dataset created from an Excel workbook on OneDrive](https://support.powerbi.com/knowledgebase/articles/753615).
 
 ### Excel workbook connects to a SQL database in your company  
 Let’s say you have an Excel workbook named SalesReport.xlsx on your local computer. Power Query in Excel was used to connect to a SQL database on a server in your company and query for sales data that is loaded into the data model. Each morning, you open the workbook and hit Refresh to update your PivotTables.
@@ -246,14 +246,14 @@ Now you want to explore your sales data in Power BI, so you use Get Data to conn
 
 In this case, you can manually refresh the data in the SalesReport.xlsx dataset or setup a refresh schedule. Because the data really comes from the SQL database in your company, you’ll need to download and install a Power BI Personal Gateway. Once you’ve installed and configured the gateway, you’ll need to go into the SalesReport dataset’s settings and sign in to the data source; but you’ll only have to do this once. You can then setup a refresh schedule so Power BI automatically connects to the SQL database and gets updated data. Your reports and dashboards will also be updated automatically.
 
-To learn more, see  [Excel data in Power BI](powerbi-service-excel-data.md-excel-data-in-power-bi), [Power BI Personal Gateway](powerbi-personal-gateway.md-power-bi-personal-gateway), [Refresh a dataset created from an Excel workbook on a local drive](https://support.powerbi.com/knowledgebase/articles/753603-refresh-a-dataset-created-from-an-excel-workbook-o).
+To learn more, see  [Excel data in Power BI](powerbi-service-excel-data.md-excel-data-in-power-bi), [Power BI Personal Gateway](powerbi-personal-gateway.md-power-bi-personal-gateway), [Refresh a dataset created from an Excel workbook on a local drive](https://support.powerbi.com/knowledgebase/articles/753603).
 
 ### Power BI Desktop file with data from an OData feed  
 In this case, you use Get Data in Power BI Desktop to connect to and import census data from an OData feed.  You create several reports in Power BI Desktop, then name the file WACensus and save it on a share in your company. You then publish the file to your Power BI Site.
 
 In this case, you can manually refresh the data in the WACensus dataset or setup a refresh schedule. Because the data in the data source comes from an OData feed online, you do not need to install a Power BI Personal Gateway, but you will need to go into the WACensus dataset’s settings and sign in to the OData data source. You can then setup a refresh schedule so Power BI automatically connects to the OData feed and gets updated data. Your reports and dashboards will also be updated automatically.
 
-To learn more, see [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md-publish-from-power-bi-desktop), [Refresh a dataset created from a Power BI Desktop file on a local drive](https://support.powerbi.com/knowledgebase/articles/753645-refresh-a-dataset-created-from-a-power-bi-desktop), [Refresh a dataset created from a Power BI Desktop file on OneDrive](https://support.powerbi.com/knowledgebase/articles/753627-refresh-a-dataset-created-from-a-power-bi-desktop).
+To learn more, see [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md-publish-from-power-bi-desktop), [Refresh a dataset created from a Power BI Desktop file on a local drive](https://support.powerbi.com/knowledgebase/articles/753645), [Refresh a dataset created from a Power BI Desktop file on OneDrive](https://support.powerbi.com/knowledgebase/articles/753627).
 
 ### Shared content pack from another user in your organization  
 You’ve connected to an organizational content pack. It includes a dashboard, several reports, and a dataset.

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Knowledge Base"
    description="Knowledge Base"
    services="powerbi" 
@@ -42,7 +42,7 @@
 1.  [Get data from Excel, Power BI Desktop, and CSV files into Power BI](powerbi-service-get-data-from-files.md-get-data-from-excel-power-bi-desktop-and-csv-fil)
 2.  [Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md-bring-whole-excel-files-into-power-bi)
 3.  [Excel data in Power BI](powerbi-service-excel-data.md-excel-data-in-power-bi)
-4.  [Publish to Power BI from Excel](https://support.powerbi.com/knowledgebase/articles/752631-publish-to-power-bi-from-excel)
+4.  [Publish to Power BI from Excel](https://support.powerbi.com/knowledgebase/articles/752631)
 5.  [Refresh Excel, CSV, and Power BI Desktop files stored in OneDrive](powerbi-service-refresh-excel-data-stored-in-onedrive.md-refresh-excel-csv-and-power-bi-desktop-files-sto)
 
 [7 articles →](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi "View all articles in Files in Power BI")
@@ -67,10 +67,10 @@
 
 ## [Data refresh →](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh)  
 1.  [Data refresh in Power BI](powerbi-refresh-data.md-data-refresh-in-power-bi)
-2.  [Refresh a dataset created from an Excel workbook on a local drive](https://support.powerbi.com/knowledgebase/articles/753603-refresh-a-dataset-created-from-an-excel-workbook-o)
-3.  [Refresh a dataset created from an Excel workbook on OneDrive](https://support.powerbi.com/knowledgebase/articles/753615-refresh-a-dataset-created-from-an-excel-workbook-o)
-4.  [Refresh a dataset created from a Power BI Desktop file on a local drive](https://support.powerbi.com/knowledgebase/articles/753645-refresh-a-dataset-created-from-a-power-bi-desktop)
-5.  [Refresh a dataset created from a Power BI Desktop file on OneDrive](https://support.powerbi.com/knowledgebase/articles/753627-refresh-a-dataset-created-from-a-power-bi-desktop)
+2.  [Refresh a dataset created from an Excel workbook on a local drive](https://support.powerbi.com/knowledgebase/articles/753603)
+3.  [Refresh a dataset created from an Excel workbook on OneDrive](https://support.powerbi.com/knowledgebase/articles/753615)
+4.  [Refresh a dataset created from a Power BI Desktop file on a local drive](https://support.powerbi.com/knowledgebase/articles/753645)
+5.  [Refresh a dataset created from a Power BI Desktop file on OneDrive](https://support.powerbi.com/knowledgebase/articles/753627)
 
 [9 articles →](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh "View all articles in Data refresh")
 
@@ -106,7 +106,7 @@
 2.  [Tutorial: use Power BI Q&A with the Retail Analysis sample](powerbi-service-tutorial-introduction-to-q-and-a.md-tutorial-use-power-bi-q-a-with-the-retail-analysi)
 3.  [Make your data work well with Q&A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md-make-your-data-work-well-with-q-a-in-power-bi)
 4.  [Ask the right questions of Salesforce data in Power BI](powerbi-service-ask-the-right-questions-of-salesforce-data.md-ask-the-right-questions-of-salesforce-data-in-powe)
-5.  [Tips for asking questions with Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/664393-tips-for-asking-questions-with-power-bi-q-a)
+5.  [Tips for asking questions with Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/664393)
 
 ## [Groups in Power BI →](https://support.powerbi.com/knowledgebase/topics/101158-groups-in-power-bi)  
 1.  [Groups in Power BI](powerbi-service-groups.md-groups-in-power-bi)
