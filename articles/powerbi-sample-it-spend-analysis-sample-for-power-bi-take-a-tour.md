@@ -1,9 +1,9 @@
-﻿<properties 
+<properties 
    pageTitle="IT Spend Analysis sample for Power BI: Take a tour"
    description="IT Spend Analysis sample for Power BI: Take a tour"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="pcw3187" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,8 +14,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.date="10/14/2015"
+   ms.author="v-pawrig"/>
 # IT Spend Analysis sample for Power BI: Take a tour
 
 [← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
