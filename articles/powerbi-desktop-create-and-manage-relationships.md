@@ -328,5 +328,5 @@ We can change the active relationship and get SubmittedBy instead of OpenedBy. I
 
 ## See all of your relationships in Relationship View
 
-Sometimes your model has multiple tables and complex relationships between them. Relationship View in Power BI Desktop shows all of the relationships in your model, their direction, and cardinality in an easy to understand and customizable diagram. To learn more, see [Relationship View in Power BI Desktop](powerbi-desktop-relationship-view.md-relationship-view-in-power-bi-desktop).
+Sometimes your model has multiple tables and complex relationships between them. Relationship View in Power BI Desktop shows all of the relationships in your model, their direction, and cardinality in an easy to understand and customizable diagram. To learn more, see [Relationship View in Power BI Desktop](powerbi-desktop-relationship-view.md).
 

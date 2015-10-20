@@ -51,7 +51,7 @@ Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services
 
 	You can change this dashboard to display your data the way you want it. Plus you can:
 
-	- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md-q-a-in-power-bi-preview) at the top of the dashboard, such as "Show total clicks by location on a map"
+	- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard, such as "Show total clicks by location on a map"
 
 		![](media/powerbi-content-pack-mailchimp/PBI_MailChimpQnA.png)
 
@@ -61,7 +61,7 @@ Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services
 
 ### See Also
 
-[Get started in Power BI](powerbi-service-get-started.md-get-started-with-power-bi)
+[Get started in Power BI](powerbi-service-get-started.md)
 
 ﻿[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
 

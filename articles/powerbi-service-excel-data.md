@@ -50,7 +50,7 @@ Power BI recognizes values and supports these data types: Whole Number, Decimal 
 
 Currently, when you connect to an Excel workbook as a dataset, Power BI only imports data that is part of a named table or a data model. As a result:
 
--   If the workbook contains no named tables, Power View sheets, or Excel data models, you see this error. The article "[We couldn't find any data in your Excel workbook](powerbi-admin-troubleshoot-excel-workbook-data.md--we-couldn-t-find-any-data-in-your-excel-workbook)" explains how to fix the workbook and reimport it.
+-   If the workbook contains no named tables, Power View sheets, or Excel data models, you see this error. The article "[We couldn't find any data in your Excel workbook](powerbi-admin-troubleshoot-excel-workbook-data.md)" explains how to fix the workbook and reimport it.
 
 See also
 

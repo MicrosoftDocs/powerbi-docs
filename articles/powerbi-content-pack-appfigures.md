@@ -56,7 +56,7 @@ After you have created the connection, you can explore your data and customize t
 
 ### What can you do now?
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md-q-a-in-power-bi-preview) at the top of the dashboard, such as "total downloads by product"
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard, such as "total downloads by product"
 
 ![](media/powerbi-content-pack-appfigures/QAbox.png)
 
@@ -93,6 +93,6 @@ If data from some of your apps is not showing up in Power BI, check to make sure
 
 ### See Also
 
--  [Get started in Power BI](powerbi-service-get-started.md-get-started-with-power-bi)
+-  [Get started in Power BI](powerbi-service-get-started.md)
 -  [Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
 -  [Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770)

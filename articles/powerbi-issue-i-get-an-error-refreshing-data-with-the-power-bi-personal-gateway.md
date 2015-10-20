@@ -19,4 +19,4 @@
 
 # I get an error refreshing data with the Power BI Personal Gateway.  
 
-Please take a look at our [Personal Gateway troubleshooting guide](powerbi-admin-troubleshooting-power-bi-personal-gateway.md-troubleshooting-power-bi-personal-gateway) for more information.  
+Please take a look at our [Personal Gateway troubleshooting guide](powerbi-admin-troubleshooting-power-bi-personal-gateway.md) for more information.  

@@ -53,7 +53,7 @@ Now you're ready.
 
 6.  In Power BI, start from the dashboard where you want the logo, or create a dashboard.
 
-7.  Select **Get Data**, and [upload the Excel workbook](powerbi-service-excel-data.md-excel-data-in-power-bi) from wherever you saved it.
+7.  Select **Get Data**, and [upload the Excel workbook](powerbi-service-excel-data.md) from wherever you saved it.
 
 8.  In the navigation pane under **Reports**, select the report you just added. It has a yellow asterisk \* by its name. 
 
@@ -79,5 +79,5 @@ Now you're ready.
 
 13. On the dashboard, drag the lower-right corner to make the tile smaller, and then drag it to the place you want it.
 
-More about [creating Power BI dashboards](powerbi-service-create-a-dashboard.md-create-a-power-bi-dashboard).
+More about [creating Power BI dashboards](powerbi-service-create-a-dashboard.md).
 

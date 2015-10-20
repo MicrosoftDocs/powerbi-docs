@@ -45,7 +45,7 @@ The Power BI content pack pulls data from your SweetIQ account and generates se
 
 Once the loading has completed, you can start exploring your data.
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md-q-a-in-power-bi-preview) , such as "average rating by domain"
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) , such as "average rating by domain"
 
 ![](media/powerbi-content-pack-sweetiq/QA3.png)
 

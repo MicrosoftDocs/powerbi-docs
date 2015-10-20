@@ -64,7 +64,7 @@ Connect to the [QuickBooks Online content pack](https://dxt.powerbi.com/getdata/
 
 9.  What can you do now?
 > -   Rename the dashboard: Select the ellipsis (...) next to the QuickBook Online dashboard \> **Rename**.
-> -   Try [asking a question in the Q&A box](powerbi-service-q-and-a.md-q-a-in-power-bi-preview) at the top of the dashboard.
+> -   Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard.
 > -   [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 > -   Select a tile to [open the underlying report](powerbi-service-dashboard-tiles.md). 
 

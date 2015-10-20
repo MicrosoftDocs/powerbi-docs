@@ -84,7 +84,7 @@ You can upload Excel, Power BI Desktop, and CSV files from your computer, or con
 
 ### More about files in Power BI
 
--   [Excel data in Power BI](powerbi-service-excel-data.md-excel-data-in-power-bi)
+-   [Excel data in Power BI](powerbi-service-excel-data.md)
 
 -   [Refresh Excel data stored in OneDrive](powerbi-service-refresh-excel-data-stored-in-onedrive.md)
 

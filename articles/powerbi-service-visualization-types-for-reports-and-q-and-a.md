@@ -38,7 +38,7 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 
 **Tip**: The Area chart is based on the line chart with the area between the axis and line filled in.
 
-For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md-tutorial-basic-area-chart).
+For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md).
 
 ### Single number card tiles
 
@@ -66,7 +66,7 @@ For more information, see [Tutorial: Doughnut charts in Power BI](powerbi-servic
 
 **Tip**: Funnels help visualize a process that has stages and items flow sequentially from one stage to the next.  Use a funnel when there is a sequential flow between stages, such as a sales process that starts with leads and ends with purchase fulfillment.
 
-For more information, see [Tutorial: Funnel Charts in Power BI](powerbi-service-tutorial-funnel-charts.md-tutorial-funnel-charts-in-power-bi).
+For more information, see [Tutorial: Funnel Charts in Power BI](powerbi-service-tutorial-funnel-charts.md).
 
 ### Gauge charts
 
@@ -135,7 +135,7 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 
 **Tip**: Waterfall charts show a running total as values are added or subtracted.
 
-For more information, see [Tutorial Waterfall charts in Power BI](powerbi-service-tutorial-waterfall-charts.md-tutorial-waterfall-charts-in-power-bi).
+For more information, see [Tutorial Waterfall charts in Power BI](powerbi-service-tutorial-waterfall-charts.md).
 
 ### 
 
