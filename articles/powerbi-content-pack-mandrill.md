@@ -52,7 +52,7 @@ You can change this dashboard to display your data the way you want it. Plus you
 
 ### See Also
 
-****[Get started in Power BI](powerbi-service-get-started.md-get-started-with-power-bi)
+****[Get started in Power BI](powerbi-service-get-started.md)
 
 ﻿[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
 

@@ -68,7 +68,7 @@ In most cases, Power BI does its thing and calculates and returns values accordi
 
 With Power BI Desktop, you create your own measures with the Data Analysis Expressions (DAX) formula language. DAX formulas are very similar to Excel formulas. In fact, DAX uses many of the same functions, operators, and syntax as Excel formulas. However, DAX’s functions are designed to work with relational data and perform more dynamic calculations as we interact with our reports.
 
-There are over 200 DAX functions that do everything from simple aggregations like Sum and Average to more complex statistical and filtering functions. We’re not going to go into too much detail on the DAX language here, but there are many resources to help you learn more. After you've gone through this tutorial, be sure to see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md-quickstart-learn-dax-basics-in-power-bi-designer).
+There are over 200 DAX functions that do everything from simple aggregations like Sum and Average to more complex statistical and filtering functions. We’re not going to go into too much detail on the DAX language here, but there are many resources to help you learn more. After you've gone through this tutorial, be sure to see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md).
 
 When we create our own measures, they’re added to the Fields list for the table we want. This is known as an *explicit* measure, and it will remain in our table as a field. Some of the great advantages to explicit measures are that we can name them what we want, making them more identifiable. We can also use them as an argument in other DAX expressions, and we can create measures that perform complex calculations very quickly.
 

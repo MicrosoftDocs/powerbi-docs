@@ -27,4 +27,4 @@ You have several options for viewing your Power BI dashboards on your mobile dev
 
 -   The [Power BI app for Windows](powerbi-service-windows-app-get-started.md) devices (not Windows phones)
 
--   The [Power BI app for Android](powerbi-mobile-android-app-get-started.md-get-started-with-the-power-bi-for-android-app) phones  
+-   The [Power BI app for Android](powerbi-mobile-android-app-get-started.md) phones  

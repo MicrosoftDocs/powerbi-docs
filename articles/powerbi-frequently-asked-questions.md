@@ -46,11 +46,11 @@ Yes. Power BI has native apps for Android, iOS, and Windows. Download one of the
 
 ## Why do I have to sign up with my work email?
 
-Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](powerbi-service-self-service-signup-for-power-bi.md-self-service-signup-for-power-bi).
+Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](powerbi-service-self-service-signup-for-power-bi.md).
 
 ## Is Power BI available on-premises?
 
-No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Analysis Services Connector](powerbi-analysis-services-connector.md-configure-a-power-bi-analysis-services-connector), you can connect live to your on-premises SQL Server Analysis Services Tabular models. And, with the [Power BI Personal Gateway](powerbi-personal-gateway.md-power-bi-personal-gateway), you can refresh data from other on-premises data sources.
+No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Analysis Services Connector](powerbi-analysis-services-connector.md), you can connect live to your on-premises SQL Server Analysis Services Tabular models. And, with the [Power BI Personal Gateway](powerbi-personal-gateway.md), you can refresh data from other on-premises data sources.
 
 ## What data sources can I connect to?
 
@@ -84,17 +84,17 @@ The following resources are available to help get your started:
 
 [Power BI Blog](http://blogs.msdn.com/b/powerbi/)
 
-[Webinars](powerbi-webinars.md-power-bi-webinars)
+[Webinars](powerbi-webinars.md)
 
 Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 
-[Getting started articles](https://support.powerbi.com/knowledgebase/topics/63037-getting-started) in our [Knowledge Base](powerbi-analysis-services-connector.md-configure-a-power-bi-analysis-services-connector)
+[Getting started articles](https://support.powerbi.com/knowledgebase/topics/63037-getting-started) in our [Knowledge Base](powerbi-analysis-services-connector.md)
 
 [Join our community](http://community.powerbi.com/) and ask questions
 
 ## What regions/languages does Power BI support?
 
-Here's a complete list of [regions and languages supported by Power BI](powerbi-supported-languages.md-supported-languages-for-power-bi).
+Here's a complete list of [regions and languages supported by Power BI](powerbi-supported-languages.md).
 
 ## How can I buy Power BI Pro in my country?
 
@@ -104,7 +104,7 @@ You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help 
 
 ## Where can I learn more about security?
 
-You can learn more about Power BI security, privacy and compliance by reading this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md-power-bi-security).
+You can learn more about Power BI security, privacy and compliance by reading this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
 
 ## Is government, academic and non-profit pricing available for Power BI?
 
