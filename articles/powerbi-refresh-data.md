@@ -33,8 +33,8 @@ Before we go any further, it’s important to know how data refresh works depend
 |---|---|---|
 |Datasets scheduled to refresh|Daily|Hourly|
 |Streaming data in your dashboards and reports using 10k rows/hour|1M rows/hour|
-|Live data sources with full interactivity (Azure SQL Database, Azure SQL Data Warehouse, Spark on HDInsight)| | ![](media/powerbi-refresh-data/Checkmark.png)|
-|On-premises data sources requiring a Power BI Personal Gateway and on-premises SQL Server Analysis Services requiring Analysis Services Connector.| | ![](media/powerbi-refresh-data/Checkmark.png)|
+|Live data sources with full interactivity (Azure SQL Database, Azure SQL Data Warehouse, Spark on HDInsight)| | ![](media/powerbi-refresh-data/checkmark.png)|
+|On-premises data sources requiring a Power BI Personal Gateway and on-premises SQL Server Analysis Services requiring Analysis Services Connector.| | ![](media/powerbi-refresh-data/checkmark.png)|
 
 ## Understanding data refresh  
 Before setting up refresh, it’s important to understand what it is you’re refreshing and where you’re getting your data.
