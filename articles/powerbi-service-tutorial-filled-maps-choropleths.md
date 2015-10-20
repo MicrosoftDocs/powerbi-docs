@@ -21,7 +21,7 @@
 
 A Filled Map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
-![](/media/powerbi-service-tutorial-filled-maps-choropleths/large_map.png)
+![](media/powerbi-service-tutorial-filled-maps-choropleths/large_map.png)
 
 ## When to use a Filled Map  
 Filled Maps are a great choice:
@@ -47,13 +47,13 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 >This tutorial uses the classic report canvas.  For more information, see Power BI classic report canvas vs. new report canvas.
 
 1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)from the Sales and Marketing Sample dataset  
-![](/media/powerbi-service-tutorial-filled-maps-choropleths/img001.png)
+![](media/powerbi-service-tutorial-filled-maps-choropleths/img001.png)
 
 2.  and select the **Geo** \> **State** field.    
-![](/media/powerbi-service-tutorial-filled-maps-choropleths/img002.png)
+![](media/powerbi-service-tutorial-filled-maps-choropleths/img002.png)
 
 3.  [Convert the chart](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a Filled Map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the Filled Map.  
-![](/media/powerbi-service-tutorial-filled-maps-choropleths/img003.png)
+![](media/powerbi-service-tutorial-filled-maps-choropleths/img003.png)
 
 4.  Filter the map to display only the continental United States.
 
@@ -67,10 +67,10 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
     ![](/media/powerbi-service-tutorial-filled-maps-choropleths/img005.png)
 
 5.  Select **SalesFact** \> **Sentiment** to add it to the **Values** well. The field in the **Values** well controls the map shading.  
-![](/media/powerbi-service-tutorial-filled-maps-choropleths/img006.png)
+![](media/powerbi-service-tutorial-filled-maps-choropleths/img006.png)
 
 6.  The Filled Map is shaded in blue, with light blue representing the lower sentiment numbers and dark blue representing the higher, more-positive sentiment.  Here I've highlighted the state of Wyoming (WY) and see that Sentiment is very good, 74.  
-![](/media/powerbi-service-tutorial-filled-maps-choropleths/img007.png)
+![](media/powerbi-service-tutorial-filled-maps-choropleths/img007.png)
 
 7.  [Add the Filled Map as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md). 
 
