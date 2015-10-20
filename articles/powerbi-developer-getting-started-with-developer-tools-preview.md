@@ -1,9 +1,9 @@
-﻿<properties 
+<properties 
    pageTitle="Knowledge Base"
    description="Knowledge Base"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="mgblythe" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="jastru"/>
+   ms.author="mblythe"/>
 
 # Knowledge Base  
 [← Microsoft Power BI](https://support.powerbi.com/ "Microsoft Power BI")
