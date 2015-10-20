@@ -18,17 +18,17 @@
    ms.author="v-pawrig"/>
 # Create a big number tile from a Power BI report
 
-Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can create a big number tile by [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/436733), or in a Power BI report. This article explains how to create one in a report.
+Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can create a big number tile by [asking a question in the Q&A box](powerbi-service-create-a-big-number-tile-for-a-dashboard.md), or in a Power BI report. This article explains how to create one in a report.
 
 1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
-    If you want data to practice on, try [downloading the Retail Analysis sample](https://support.powerbi.com/knowledgebase/articles/474807). 
+    If you want data to practice on, try [downloading the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). 
 
 2.  In the left navigation bar, select the report that the dashboard is based on - in this example, the Retail Analysis Sample report.
 
 3.  Select **Edit Report**.
 
-4.  In the report, find a page with some blank space, or [add a new page to the report](https://support.powerbi.com/knowledgebase/articles/474804).
+4.  In the report, find a page with some blank space, or [add a new page to the report](powerbi-service-add-a-page-to-a-report.md).
 
 5.  In the Fields list, select the number field you want to display.
 

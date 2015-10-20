@@ -113,7 +113,7 @@ But what if you want to set your own maximum value?  Let's say that instead of
 
 ## See also:
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
  [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 

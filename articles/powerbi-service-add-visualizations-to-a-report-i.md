@@ -28,7 +28,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/pbi_Nancy_FieldsFiltersArrow.png)
 
-3.  [Add a blank page to the report](https://support.powerbi.com/knowledgebase/articles/474804).
+3.  [Add a blank page to the report](powerbi-service-add-a-page-to-a-report.md).
 
 4.  Create a visualization by selecting a field from the **Fields** pane.  
 
@@ -48,7 +48,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/part1ConvertToColumn.png)
 
-7.  When you create visualizations in your report, you can [pin them to your dashboard](https://support.powerbi.com/knowledgebase/articles/430323). To pin the visualization, select the pin icon ![](media/powerbi-service-add-visualizations-to-a-report-i/pinNoOutline.png).
+7.  When you create visualizations in your report, you can [pin them to your dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md). To pin the visualization, select the pin icon ![](media/powerbi-service-add-visualizations-to-a-report-i/pinNoOutline.png).
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/part1Pin.png)
 
@@ -71,7 +71,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

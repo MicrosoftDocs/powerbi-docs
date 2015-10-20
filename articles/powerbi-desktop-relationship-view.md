@@ -30,5 +30,5 @@ Let’s take a look.
 
 In the figure above, you can see the Stores table has a StoreKey column that’s related to the Sales table that also has a StoreKey column. We see it’s a Many to One (\*:1) relationship, and the icon in the middle of the line shows the Cross filter direction set to Both. The arrow on the icon shows the direction of the filter context flow.
 
-To learn more about relationships, see [Create and manage relationships in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/464155-create-and-manage-relationships-in-power-bi-deskto).
+To learn more about relationships, see [Create and manage relationships in Power BI Desktop](powerbi-desktop-create-and-manage-relationships.md-create-and-manage-relationships-in-power-bi-deskto).
 

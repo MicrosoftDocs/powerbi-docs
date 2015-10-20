@@ -66,7 +66,7 @@ See what else you can do in the iPad app for Power BI.
 
 -   [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
 
--   View your [groups' dashboards and reports](https://support.powerbi.com/knowledgebase/articles/721749).
+-   View your [groups' dashboards and reports](powerbi-service-mobile-groups-in-the-ipad-app.md).
 
 ## See Also  
 [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  

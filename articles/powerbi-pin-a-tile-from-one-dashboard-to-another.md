@@ -41,7 +41,7 @@
 6.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
 ## See Also  
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)  
-[Q&A in Power BI](https://support.powerbi.com/knowledgebase/articles/474566)  
+[Reports in Power BI](powerbi-service-reports.md)  
+[Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Dashboards in Power BI Preview](powerbi-service-dashboards.md)  

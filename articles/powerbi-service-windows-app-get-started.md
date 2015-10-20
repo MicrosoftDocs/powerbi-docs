@@ -56,7 +56,7 @@ You can get back to the samples at any time.
 
 ### Keep going
 
--   Get the [Power BI for Windows app](https://support.powerbi.com/knowledgebase/articles/536383-get-the-power-bi-for-windows-app)
+-   Get the [Power BI for Windows app](powerbi-mobile-get-the-windows-app.md-get-the-power-bi-for-windows-app)
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-windows-app.md).
 
@@ -66,9 +66,9 @@ You can get back to the samples at any time.
 
 -   Share [dashboards](powerbi-mobile-share-dashboards-from-the-windows-app.md).
 
--   Collaborate using [Groups](https://support.powerbi.com/knowledgebase/articles/683479).
+-   Collaborate using [Groups](powerbi-mobile-groups-in-the-windows-app.md).
 
--   [Refresh the data](https://support.powerbi.com/knowledgebase/articles/536281-refresh-the-power-bi-for-windows-app) in the Power BI for Windows app.
+-   [Refresh the data](powerbi-mobile-refresh-the-windows-app.md-refresh-the-power-bi-for-windows-app) in the Power BI for Windows app.
 
 -   Annotate and share [snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app.md).
 

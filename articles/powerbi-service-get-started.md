@@ -22,10 +22,10 @@ Microsoft Power BI helps you stay up to date with the information that matters t
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
-If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi) you can connect to. If you are part of an organization, see if any [organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040) have been published for you.
+If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi) you can connect to. If you are part of an organization, see if any [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) have been published for you.
 
 
-Read about all the other ways to [get data for Power BI](https://support.powerbi.com/knowledgebase/articles/434354).
+Read about all the other ways to [get data for Power BI](powerbi-service-get-data.md).
 
 ## Step 1: Get data
 
@@ -114,11 +114,11 @@ Ready to try more?  Here are some great ways to explore more of Power BI.
 -   [Connect to another dataset](https://powerbi.uservoice.com/knowledgebase/articles/434354).
 -   [Share your dashboard](powerbi-service-share-unshare-dashboard.md) with your colleagues.
 -   Read [tips for designing dashboards](powerbi-service-tips-for-designing-a-great-dashboard.md).
--   View your dashboards with a [Power BI app on a mobile device](https://support.powerbi.com/knowledgebase/articles/652525)
+-   View your dashboards with a [Power BI app on a mobile device](powerbi-power-bi-apps-for-mobile-devices.md)
 
 Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
 
--   [Power BI basic concepts](https://support.powerbi.com/knowledgebase/articles/487029)
+-   [Power BI basic concepts](powerbi-service-basic-concepts.md)
 -   [Power BI videos](powerbi-videos.md)
 -   [Learn how reports, datasets, dashboards, and tiles all fit together](powerbi-service-basic-concepts.md)
 -   [See what samples we have available for you to use](powerbi-sample-datasets.md)

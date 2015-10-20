@@ -44,7 +44,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 2. Select **Edit Report** to open the report in Editing View.
 
-3. [Add a new report page](https://support.powerbi.com/knowledgebase/articles/474804).
+3. [Add a new report page](powerbi-service-add-a-page-to-a-report.md).
 
 4. Create a column chart that displays this year's sales and gross margin by month.
 

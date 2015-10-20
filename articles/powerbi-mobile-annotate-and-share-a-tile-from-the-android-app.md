@@ -18,13 +18,13 @@
    ms.author="v-pawrig"/>
 # Annotate and share a tile from the Android app for Power BI
 
-When you share a snapshot of a tile from the [Android app for Microsoft Power BI](https://support.powerbi.com/knowledgebase/articles/577773), your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
+When you share a snapshot of a tile from the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md), your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
 You can add annotations — lines, comments, or stickers — to a tile before you share a snapshot.
 
 ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/PBI_Andr_AnnotatedSm.png)
 
-1. Open a [dashboard in the Android app](https://support.powerbi.com/knowledgebase/articles/608316) for Power BI.
+1. Open a [dashboard in the Android app](powerbi-mobile-dashboards-in-the-android-app.md) for Power BI.
 
 	Need to [download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
 
@@ -48,9 +48,9 @@ You can add annotations — lines, comments, or stickers — to a tile before yo
 
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play
 
-[Share a dashboard from the Android app](https://support.powerbi.com/knowledgebase/articles/608337)
+[Share a dashboard from the Android app](powerbi-mobile-share-a-dashboard-from-the-android-app.md)
 
-[Get started with the Android app for Power BI](https://support.powerbi.com/knowledgebase/articles/577773)
+[Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

@@ -30,7 +30,7 @@ Don't like the default name of a report in Power BI?  A new name is just a clic
 
 ### To rename a report that is part of an organizational content pack:
 
-If the report is part of an [organizational content pack](https://support.powerbi.com/knowledgebase/articles/651040), you will not see the Rename option.  To rename the report, you'll need to personalize it.
+If the report is part of an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md), you will not see the Rename option.  To rename the report, you'll need to personalize it.
 
 1.  In the navigation pane, right-click the report and select **Personalize \> Save**.
 

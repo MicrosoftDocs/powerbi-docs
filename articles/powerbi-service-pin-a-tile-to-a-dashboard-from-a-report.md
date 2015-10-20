@@ -60,9 +60,9 @@ When you open a report that has one or more pages, it [opens in Reading View](po
 
 ## See Also:
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
-[Q&A in Power BI](https://support.powerbi.com/knowledgebase/articles/474566)
+[Q&A in Power BI](powerbi-service-q-and-a.md)
 
 [Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)
 

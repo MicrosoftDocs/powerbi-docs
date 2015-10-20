@@ -23,7 +23,7 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 
 Power BI brings together data from different types of data sources -- for example, SaaS such as Salesforce, organizational content packs, databases, and Excel workbooks.
 
-You [create and connect to dashboards in the Power BI service](https://support.powerbi.com/knowledgebase/articles/424868). Then in the [Android app for Microsoft Power BI](https://support.powerbi.com/knowledgebase/articles/577773), you can explore these same dashboards.
+You [create and connect to dashboards in the Power BI service](powerbi-service-dashboards.md). Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md), you can explore these same dashboards.
 
 ## View dashboards on your Android phone  
 1.  Open the Power BI app on your Android phone and sign in.
@@ -46,11 +46,11 @@ You [create and connect to dashboards in the Power BI service](https://support.p
 
 5.  Swipe to see all the tiles in the dashboard. While here, you can:
 
-    -   [Tap a tile](https://support.powerbi.com/knowledgebase/articles/608319) to open and interact with it.
+    -   [Tap a tile](powerbi-mobile-tiles-in-the-android-app.md) to open and interact with it.
 
-    -   Tap the Invite icon ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_InviteIcon.png) in the upper-right corner to [share your dashboard](https://support.powerbi.com/knowledgebase/articles/608337) with a colleague.
+    -   Tap the Invite icon ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_InviteIcon.png) in the upper-right corner to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-android-app.md) with a colleague.
 
-    -   Tap the Star icon ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_AddFaveStar.png) to mark some of the [dashboard tiles as favorites](https://support.powerbi.com/knowledgebase/articles/608328).
+    -   Tap the Star icon ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_AddFaveStar.png) to mark some of the [dashboard tiles as favorites](powerbi-mobile-favorites-in-the-android-app.md).
 
     -   Tap the i icon ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_iIcon.png) for information about the dashboard.
 
@@ -58,5 +58,5 @@ You [create and connect to dashboards in the Power BI service](https://support.p
 
 ## See Also  
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
-[Get started with the Android app for Power BI](https://support.powerbi.com/knowledgebase/articles/577773)  
+[Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  

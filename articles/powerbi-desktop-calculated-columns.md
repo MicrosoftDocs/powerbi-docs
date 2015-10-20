@@ -53,8 +53,8 @@ He can add it to his report canvas along with the number of shipments. Very quic
 ![](media/powerbi-desktop-calculated-columns/CalcColInPBID_CityStateMap.png)
 
 ## Learn more  
-We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/590610-tutorial-create-calculated-columns-in-power-bi-de) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns.  
+We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md-tutorial-create-calculated-columns-in-power-bi-de) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns.  
 
-To learn more about DAX, see [DAX basics in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/554619-dax-basics-in-power-bi-desktop).
+To learn more about DAX, see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md-dax-basics-in-power-bi-desktop).
 
-To learn more about columns you create as part of a query, see the Create custom columns section in [Common query tasks in Power BI Desktop.](https://support.powerbi.com/knowledgebase/articles/471648-common-query-tasks-in-power-bi-designer)  
+To learn more about columns you create as part of a query, see the Create custom columns section in [Common query tasks in Power BI Desktop.](powerbi-desktop-common-query-tasks.md-common-query-tasks-in-power-bi-designer)  

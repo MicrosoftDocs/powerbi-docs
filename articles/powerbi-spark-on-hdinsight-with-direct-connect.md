@@ -26,7 +26,7 @@ Spark on Azure HDInsight with direct connect allows you to create dynamic report
 >-   Tiles are refreshed every 15 mins.
 >-   Q&A is not available for direct connect datasets.
 >-   Schema changes are not picked up automatically.
->-   Groups are only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479).
+>-   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.  Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/%20)
 

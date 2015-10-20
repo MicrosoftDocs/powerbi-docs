@@ -49,15 +49,15 @@ To remove a field from the visualization, select the field and click the **X**.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/deleteField.png)
 
-For more information, see [Add visualizations to a Power BI report](https://support.powerbi.com/knowledgebase/articles/441777)
+For more information, see [Add visualizations to a Power BI report](powerbi-service-add-visualizations-to-a-report-i.md)
 
 ### Format your visuals
 
 Select the paintbrush icon to display customization options. 
 
--   [Customizing  visualization title, background and legend](https://support.powerbi.com/knowledgebase/articles/637423)
--   [Color formatting](https://support.powerbi.com/knowledgebase/articles/666325)
--   [Customizing X-axis and Y-axis properties](https://support.powerbi.com/knowledgebase/articles/637429)
+-   [Customizing  visualization title, background and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
+-   [Color formatting](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
+-   [Customizing X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
 -   Customizing data point labels
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/vizCustomize.png)
@@ -68,7 +68,7 @@ View, set, and modify page and visualization-level filters.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/vizFilters.png)
 
-For more information, see [Add a filter to a report](https://support.powerbi.com/knowledgebase/articles/464704).
+For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 ## The Fields pane 
 

@@ -64,5 +64,5 @@ When you import data into Excel, follow these tips:
 -   **From the Excel Data tab**: don’t check **Table** in the **Import Data** box.
 
 ## Related info  
-[Bring whole Excel files into Power BI](https://support.powerbi.com/knowledgebase/articles/640168)  
+[Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md)  
 [Create a memory-efficient Data Model](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)  

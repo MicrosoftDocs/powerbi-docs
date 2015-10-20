@@ -77,7 +77,7 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 8.  [Save the report](powerbi-service-save-a-report.md).
 
 ## Highlighting and cross-filtering  
-For information about using the Filters pane, see [Add a filter to a report](https://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
+For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md-add-a-filter-to-a-report).
 
 Highlighting a Location in a Filled Map filters the other visualizations on the report page... and vice versa.
 

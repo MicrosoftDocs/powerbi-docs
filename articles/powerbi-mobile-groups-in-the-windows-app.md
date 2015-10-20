@@ -18,10 +18,10 @@
    ms.author="v-pawrig"/>
 # Groups in the Power BI for Windows app
 
-Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/en-US/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) and [groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247). Groups are available with the paid Power BI experience.
+Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/en-US/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) and [groups in Power BI](powerbi-service-groups.md). Groups are available with the paid Power BI experience.
 
 
-You [create a group in the Power BI service](https://support.powerbi.com/knowledgebase/articles/654250).
+You [create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md).
 
 Then you see and interact with group dashboards and reports in the Microsoft [Power BI for Windows app](powerbi-service-windows-app-get-started.md). 
 
@@ -40,7 +40,7 @@ Then you see and interact with group dashboards and reports in the Microsoft [
 
     ![](media/powerbi-mobile-groups-in-the-windows-app/group_workspace.png)
 
-4.  [Select a dashboard](https://support.powerbi.com/knowledgebase/articles/510951) or [select a report](https://support.powerbi.com/knowledgebase/articles/510953) to open and view it.
+4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-windows-app.md) or [select a report](powerbi-mobile-reports-in-the-windows-app.md) to open and view it.
 
 More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
 

@@ -29,13 +29,13 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 
 Power BI is designed to work well with a variety of data sources:
 
--   Data from [Excel and Power BI Desktop files](https://support.powerbi.com/knowledgebase/articles/597003).
+-   Data from [Excel and Power BI Desktop files](powerbi-service-get-data-from-files.md).
 
--   [Organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040), designed with dashboards, reports, and datasets specifically for your group or organization.
+-   [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md), designed with dashboards, reports, and datasets specifically for your group or organization.
 
 -   Content packs for [SaaS applications](https://support.powerbi.com/knowledgebase/topics/88770), if you have an existing subscription to that application. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
 
--   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](https://support.powerbi.com/knowledgebase/articles/581421) and SQL Server [Analysis Services tabular data](https://support.powerbi.com/knowledgebase/articles/471633).
+-   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
 
 **Tip**: Read [Important considerations for connecting to data.](powerbi-service-important-considerations-for-connecting-to-data-in-power-bi.md)
 

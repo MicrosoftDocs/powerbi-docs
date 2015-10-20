@@ -44,7 +44,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 2. Select **Edit Report** to open the report in Editing View.
 
-3. [Add a new report page](https://support.powerbi.com/knowledgebase/articles/474804).
+3. [Add a new report page](powerbi-service-add-a-page-to-a-report.md).
 
 4. Create a waterfall chart that displays this year's sales and sales goal by month.
 
@@ -68,7 +68,7 @@ Highlighting a column in a Waterfall Chart cross-filters the other visualization
 
 ## See Also:
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 

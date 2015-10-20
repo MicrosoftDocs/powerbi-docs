@@ -47,7 +47,7 @@ Treemaps are a great choice:
 These instructions use the Retail Analysis Sample. To follow along,  [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
 
 >**Note:**  
->This tutorial uses the classic report canvas.  For more information, see [Converting your reports to the new report editor](https://support.powerbi.com/knowledgebase/articles/663517).
+>This tutorial uses the classic report canvas.  For more information, see [Converting your reports to the new report editor](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
 
 1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)and select the **Last Years Sales** measure.   
 ![](media/powerbi-service-tutorial-treemaps/treemapFirstValue.png)
@@ -86,7 +86,7 @@ Highlighting a Category or Details in a Treemap filters the other visualizations
     ![](media/powerbi-service-tutorial-treemaps/treemapNoOwl.gif)
 
 ## See Also  
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)  
+[Reports in Power BI](powerbi-service-reports.md)  
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
 [ Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

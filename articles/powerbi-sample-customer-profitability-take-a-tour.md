@@ -110,4 +110,4 @@ We hope this tour has shown how Power BI dashboards, Q&A, and reports can provid
 
 ## See Also  
 [Take a tour of another industry sample](https://support.powerbi.com/knowledgebase/topics/75672-samples)  
-[Back to Samples in Power BI](https://support.powerbi.com/knowledgebase/articles/471112-sample-content-packs-and-datasets-for-power-bi)  
+[Back to Samples in Power BI](powerbi-sample-datasets.md-sample-content-packs-and-datasets-for-power-bi)  

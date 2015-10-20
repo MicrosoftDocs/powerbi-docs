@@ -32,7 +32,7 @@ Check this page for known issues and recently-released features in Power BI.
 
 -   If your 60-day Power BI Pro trial period is close to expiration, you can [contact us](https://app.powerbi.com/extendtrial?WT.mc_id=Doc_Service) now to request an extension to your trial. If approved, your trial will be extended for another 60 days.
 
--   comScore Digital Analytix is an online solution that provides insights into your user base through the best of analytics and audience demographics. With the Power BI comScore content pack, you can quickly connect and begin gaining insights into your web analytics data. This content pack includes an out-of-the box dashboard, a set of reports, and a curated data set to help you explore and drill into your data. Learn more about the content pack in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/16/visualize-and-explore-your-comscore-data-with-power-bi.aspx) and [help topic](https://support.powerbi.com/knowledgebase/articles/734013). 
+-   comScore Digital Analytix is an online solution that provides insights into your user base through the best of analytics and audience demographics. With the Power BI comScore content pack, you can quickly connect and begin gaining insights into your web analytics data. This content pack includes an out-of-the box dashboard, a set of reports, and a curated data set to help you explore and drill into your data. Learn more about the content pack in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/16/visualize-and-explore-your-comscore-data-with-power-bi.aspx) and [help topic](powerbi-content-pack-content-pack.md). 
 
 **September 8, 2015**
 
@@ -42,11 +42,11 @@ Check this page for known issues and recently-released features in Power BI.
 
 -   Two new Industry Related Samples, It Spend Analysis and Supplier Quality Analysis, have been added under the samples section of the Get Data experience. These samples are great examples of how you can use your data to create insightful reports and dashboards.
 
--   We have a new content pack for tyGraph, which allows you to easily gain deeper insights into your Yammer data. The content pack includes a dashboard, a set of reports and a curated dataset to explore and provide insights such as the Measure of Active Engagement (The MAE Score) and content consumption metrics such as File Views and File Downloads. Learn more on our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/09/analyze-and-monitor-your-tygraph-data-with-power-bi.aspx) and [help topic](https://support.powerbi.com/knowledgebase/articles/728691).
+-   We have a new content pack for tyGraph, which allows you to easily gain deeper insights into your Yammer data. The content pack includes a dashboard, a set of reports and a curated dataset to explore and provide insights such as the Measure of Active Engagement (The MAE Score) and content consumption metrics such as File Views and File Downloads. Learn more on our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/09/analyze-and-monitor-your-tygraph-data-with-power-bi.aspx) and [help topic](powerbi-content-pack-tygraph.md).
 
 **September 1, 2015**
 
--   Webtrends helps companies make sense of their customer data to drive digital marketing success. Users have the ability to observe, analyze and deliver insights on the visitor journey across web, social, mobile and SharePoint channels. With the release of [the Webtrends content pack](http://blogs.msdn.com/b/powerbi/archive/2015/09/01/visualize-and-explore-your-webtrends-data-in-power-bi.aspx), users will now have the ability to use Power BI to monitor, analyze, and visualize their Webtrends analytics data. The Webtrends content pack for Power BI [help page](https://support.powerbi.com/knowledgebase/articles/724662) has more information.
+-   Webtrends helps companies make sense of their customer data to drive digital marketing success. Users have the ability to observe, analyze and deliver insights on the visitor journey across web, social, mobile and SharePoint channels. With the release of [the Webtrends content pack](http://blogs.msdn.com/b/powerbi/archive/2015/09/01/visualize-and-explore-your-webtrends-data-in-power-bi.aspx), users will now have the ability to use Power BI to monitor, analyze, and visualize their Webtrends analytics data. The Webtrends content pack for Power BI [help page](powerbi-content-pack-webtrends.md) has more information.
 
 -   Getting started with Q&A is even simpler. The moment you put your cursor inside the Q&A text box, we instantly display a list of questions and key metrics that are relevant to your data.  In the drop down, by default, you will see the questions for tiles already pinned to the dashboard as well as an entry for each table you have in your dataset.
 
@@ -56,48 +56,48 @@ Check this page for known issues and recently-released features in Power BI.
 
 **August 25, 2015**
 
--   Now you can use Power BI to monitor, explore and [visualize your Adobe Analytics data](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx). With an out-of-box content pack, you can connect and discover insights from your data immediately. To learn more, visit the [Adobe Analytics content pack for Power BI help page](https://support.powerbi.com/knowledgebase/articles/716718).
+-   Now you can use Power BI to monitor, explore and [visualize your Adobe Analytics data](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx). With an out-of-box content pack, you can connect and discover insights from your data immediately. To learn more, visit the [Adobe Analytics content pack for Power BI help page](powerbi-content-pack-adobe-analytics.md).
 
 **August 18, 2015**
 
--   Azure Mobile Engagement is an app analytics service that allows developers to track their application’s performance helping them increase retention and app usage. Using the [Power BI Azure Mobile Engagement content pack](http://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) you can quickly connect to an out-of-box dashboard, a set of reports and a curated data set, and instantly get insights into how well your app is doing. Please see the [Azure Mobile Engagement content pack for Power BI help page](https://support.powerbi.com/knowledgebase/articles/703416) for more information.
+-   Azure Mobile Engagement is an app analytics service that allows developers to track their application’s performance helping them increase retention and app usage. Using the [Power BI Azure Mobile Engagement content pack](http://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) you can quickly connect to an out-of-box dashboard, a set of reports and a curated data set, and instantly get insights into how well your app is doing. Please see the [Azure Mobile Engagement content pack for Power BI help page](powerbi-content-pack-azure-mobile.md) for more information.
 
 **August 11, 2015**
 
--   Mandrill is an email infrastructure service developed by MailChimp that lets you analyze your email campaigns from a wide variety of information. With the [Power BI Mandrill content pack](http://blogs.msdn.com/b/powerbi/archive/2015/08/12/explore-and-analyze-your-mandrill-data-in-power-bi.aspx), you can quickly connect to your Mandrill data and immediately gain insights into your newsletter or marketing campaign. For additional details on how to get started, please see the [Mandrill content pack for Power BI help page](https://support.powerbi.com/knowledgebase/articles/691725).
+-   Mandrill is an email infrastructure service developed by MailChimp that lets you analyze your email campaigns from a wide variety of information. With the [Power BI Mandrill content pack](http://blogs.msdn.com/b/powerbi/archive/2015/08/12/explore-and-analyze-your-mandrill-data-in-power-bi.aspx), you can quickly connect to your Mandrill data and immediately gain insights into your newsletter or marketing campaign. For additional details on how to get started, please see the [Mandrill content pack for Power BI help page](powerbi-content-pack-mandrill.md).
 
 **August 4, 2015**
 
--   Power BI now offers [Circuit ID](http://blogs.msdn.com/b/powerbi/archive/2015/08/04/circuit-id-data-with-power-bi.aspx) users the ability to track and monitor all their Circuit ID cloud communications services, empowering them to make the right business decisions. For additional details on how to get started, please see the Circuit ID content pack for [Power BI help page](https://support.powerbi.com/knowledgebase/articles/683708).
+-   Power BI now offers [Circuit ID](http://blogs.msdn.com/b/powerbi/archive/2015/08/04/circuit-id-data-with-power-bi.aspx) users the ability to track and monitor all their Circuit ID cloud communications services, empowering them to make the right business decisions. For additional details on how to get started, please see the Circuit ID content pack for [Power BI help page](powerbi-content-pack-circuit-id.md).
 
 -   Today we’ve released an enhancement to the Share Dashboard feature to make it even easier to use.  If your organization uses Office 365 for email, you can now [share to an email distribution group](http://blogs.msdn.com/b/powerbi/archive/2015/08/04/easier-dashboard-sharing-with-distribution-groups.aspx) just the same way you would send an email in Outlook.  Just enter the address of the distribution group and click Share.  All members of the distribution group will receive an email invitation to view the dashboard.
 
 **July 28, 2015**
 
--   We’re excited to announce that this week’s update to Power BI now offers database performance tracking with the [SQL Sentry content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/28/monitoring-your-sql-sentry-data-with-power-bi.aspx). This content pack includes a dashboard and reports that help you monitor the SQL Server deployments you track using the SQL Sentry Cloud. For additional details on how to get started, please see the SQL Sentry content pack for Power BI [help page](https://support.powerbi.com/knowledgebase/articles/671314).
+-   We’re excited to announce that this week’s update to Power BI now offers database performance tracking with the [SQL Sentry content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/28/monitoring-your-sql-sentry-data-with-power-bi.aspx). This content pack includes a dashboard and reports that help you monitor the SQL Server deployments you track using the SQL Sentry Cloud. For additional details on how to get started, please see the SQL Sentry content pack for Power BI [help page](powerbi-content-pack-sql-sentry.md).
 
 **July 24, 2015**
 
--   We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/664495). As part of the GA release, we are offering some great new features:
+-   We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](powerbi-free-trial-for-power-bi-pro.md). As part of the GA release, we are offering some great new features:
 
--   [A new visualization and report creation experience](https://support.powerbi.com/knowledgebase/articles/663517): The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
+-   [A new visualization and report creation experience](powerbi-service-converting-your-reports-to-the-new-report-editor.md): The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
 
--   [Power BI groups](https://support.powerbi.com/knowledgebase/articles/654247): groups offer a powerful collaborative experience built on Office 365 groups.
--   [Organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
+-   [Power BI groups](powerbi-service-groups.md): groups offer a powerful collaborative experience built on Office 365 groups.
+-   [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
 
--   [Bring in whole Excel files](https://support.powerbi.com/knowledgebase/articles/640168): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.
+-   [Bring in whole Excel files](powerbi-bring-in-whole-excel-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.
 
--   [Bring in CSV files](https://support.powerbi.com/knowledgebase/articles/597003): Just like Excel or Power BI Desktop file, a comma-separated values text (CSV) file can also be a dataset for your Power BI dashboards and reports.
+-   [Bring in CSV files](powerbi-service-get-data-from-files.md): Just like Excel or Power BI Desktop file, a comma-separated values text (CSV) file can also be a dataset for your Power BI dashboards and reports.
 
--   [Replace Excel, Power BI Desktop, and CSV files](https://support.powerbi.com/knowledgebase/articles/655108): you can upload an updated version of a file to Power BI and it will replace the existing dataset. All the reports and dashboards that are connected to this dataset now automatically use the new version.
+-   [Replace Excel, Power BI Desktop, and CSV files](powerbi-replace-an-excel-power-bi-desktop-or-csv-file.md): you can upload an updated version of a file to Power BI and it will replace the existing dataset. All the reports and dashboards that are connected to this dataset now automatically use the new version.
 
--   We’re excited to announce that this week’s update to Power BI now offers work item tracking in [the Visual Studio Online content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx). This update includes a new dashboard, report and an updated data set offering insights on your work items in addition to important metrics about your Git repository, pull requests, and version control content included in the initial version. For additional details on how to get started, please see [the Visual Studio Online content pack for Power BI help page](https://support.powerbi.com/knowledgebase/articles/596925).
+-   We’re excited to announce that this week’s update to Power BI now offers work item tracking in [the Visual Studio Online content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx). This update includes a new dashboard, report and an updated data set offering insights on your work items in addition to important metrics about your Git repository, pull requests, and version control content included in the initial version. For additional details on how to get started, please see [the Visual Studio Online content pack for Power BI help page](powerbi-content-pack-quickbooks-online.md).
 
 **July 14, 2015**
 
--   Acumatica Cloud ERP delivers a suite of fully integrated business management applications such as Financials, Distribution, CRM and Project Accounting, powered by a robust and flexible platform. With the Power BI [Acumatica content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/13/analyze-and-explore-your-acumatica-cloud-erp-data-with-power-bi.aspx), you can quickly connect and immediately gain insights into your opportunity data. This content includes an out-of-box dashboard, a set of reports and a curated dataset to explore and provide details such as your total won opportunities by date. Read more [here](https://support.powerbi.com/knowledgebase/articles/654097). 
+-   Acumatica Cloud ERP delivers a suite of fully integrated business management applications such as Financials, Distribution, CRM and Project Accounting, powered by a robust and flexible platform. With the Power BI [Acumatica content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/13/analyze-and-explore-your-acumatica-cloud-erp-data-with-power-bi.aspx), you can quickly connect and immediately gain insights into your opportunity data. This content includes an out-of-box dashboard, a set of reports and a curated dataset to explore and provide details such as your total won opportunities by date. Read more [here](powerbi-content-pack-acumatica.md). 
 
--   [Azure HDInsight](http://blogs.msdn.com/b/powerbi/archive/2015/07/14/visualize-big-data-with-power-bi-and-spark-for-azure-hdinsight.aspx) now offers a fully managed Spark service. This capability allows for scenarios such as iterative machine learning and interactive data analysis. Power BI allows you to directly connect to the data in Spark on HDInsight offering simple and live exploration. Read our [help doc](https://support.powerbi.com/knowledgebase/articles/654094) for more information.
+-   [Azure HDInsight](http://blogs.msdn.com/b/powerbi/archive/2015/07/14/visualize-big-data-with-power-bi-and-spark-for-azure-hdinsight.aspx) now offers a fully managed Spark service. This capability allows for scenarios such as iterative machine learning and interactive data analysis. Power BI allows you to directly connect to the data in Spark on HDInsight offering simple and live exploration. Read our [help doc](powerbi-spark-on-hdinsight-with-direct-connect.md) for more information.
 
 -   [Office 365 navigation and application launcher integration](http://blogs.msdn.com/b/powerbi/archive/2015/07/15/new-capabilities-added-to-power-bi.aspx#launcher). With a single click, you can now navigate to all of your Office 365 applications.
 
@@ -125,35 +125,35 @@ Check this page for known issues and recently-released features in Power BI.
 
 **June 16, 2015**
 
--   SweetIQ lets you to easily track your local listings by providing location and review data from your local search ecosystem. Power BI allows you to analyze and monitor that data, by offering [out of box content](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) built from your SweetIQ data. For additional details on how to get started, please see the SweetIQ content pack for Power BI [help page](https://support.powerbi.com/knowledgebase/articles/624282).
+-   SweetIQ lets you to easily track your local listings by providing location and review data from your local search ecosystem. Power BI allows you to analyze and monitor that data, by offering [out of box content](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) built from your SweetIQ data. For additional details on how to get started, please see the SweetIQ content pack for Power BI [help page](powerbi-content-pack-sweetiq.md).
 
 **June 9, 2015**
 
--   Power BI allows you to monitor and explore that data using the [MailChimp APIs](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx), offering a set of out-of-box content for your analytics. The dashboard, reports and dataset curated for the MailChimp scenario allow you to easily access data such as Top Campaigns of Total Opens by Day of Week. For additional details on how to get started, please see the MailChimp content pack for Power BI [documentation](https://support.powerbi.com/knowledgebase/articles/618267).
+-   Power BI allows you to monitor and explore that data using the [MailChimp APIs](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx), offering a set of out-of-box content for your analytics. The dashboard, reports and dataset curated for the MailChimp scenario allow you to easily access data such as Top Campaigns of Total Opens by Day of Week. For additional details on how to get started, please see the MailChimp content pack for Power BI [documentation](powerbi-content-pack-mailchimp.md).
 
 **June 2, 2015**
 
--   Now tracking important statistics about your apps is easy with Power BI and the [appFigures content pack](http://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx). For additional details on how to connect and get started, see the [documentation](https://support.powerbi.com/knowledgebase/articles/613512) for appFigures content pack for Power BI.
+-   Now tracking important statistics about your apps is easy with Power BI and the [appFigures content pack](http://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx). For additional details on how to connect and get started, see the [documentation](powerbi-content-pack-appfigures.md) for appFigures content pack for Power BI.
 
 **May 28, 2015**
 
--   Get quick insights into your QuickBooks Online account data using our [content pack](http://blogs.msdn.com/b/powerbi/archive/2015/05/28/get-quick-insights-into-your-quickbooks-online-account-data.aspx). For additional details on how to connect and get started, see the QuickBooks Online content pack for Power BI [documentation](https://support.powerbi.com/knowledgebase/articles/596925).
+-   Get quick insights into your QuickBooks Online account data using our [content pack](http://blogs.msdn.com/b/powerbi/archive/2015/05/28/get-quick-insights-into-your-quickbooks-online-account-data.aspx). For additional details on how to connect and get started, see the QuickBooks Online content pack for Power BI [documentation](powerbi-content-pack-quickbooks-online.md).
 
 **May 19, 2015**
 
--   With this update, you can now connect to [Twilio through our content pack](https://support.powerbi.com/knowledgebase/articles/591810-twilio-content-pack-for-power-bi)
+-   With this update, you can now connect to [Twilio through our content pack](powerbi-content-pack-twilio.md-twilio-content-pack-for-power-bi)
 
 -   The Power BI API has new additions! You can now [list all tables](http://docs.powerbi.apiary.io/#reference/datasets/tables-collection/list-all-tables) and [update an existing table schema](http://docs.powerbi.apiary.io/#reference/datasets/table/update-an-existing-tables-schema)
 
 **May 13, 2015**
 
--   With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard.﻿ This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](https://support.powerbi.com/knowledgebase/articles/581499-azure-sql-database-auditing-connector-for-power-bi).
+-   With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard.﻿ This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](powerbi-azure-sql-database-auditing-connector.md-azure-sql-database-auditing-connector-for-power-bi).
 
--   You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) and [documentation](https://support.powerbi.com/knowledgebase/articles/581421-azure-sql-database-with-direct-connect) for more information.
+-   You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) and [documentation](powerbi-azure-sql-database-with-direct-connect.md-azure-sql-database-with-direct-connect) for more information.
 
 **May 7, 2015**
 
--   You can now use the **Visual Studio Online** content pack for Power BI to gain insights into your git and TFVC team projects. You can read our [documentation](https://support.powerbi.com/knowledgebase/articles/543394) or [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/07/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) for more information.
+-   You can now use the **Visual Studio Online** content pack for Power BI to gain insights into your git and TFVC team projects. You can read our [documentation](powerbi-content-pack-visual-studio-online.md) or [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/07/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) for more information.
 
 -   We updated our look to a new modern design, a look that is fresh and distinctive while keeping your focus on what matters: your data and your insights.
 

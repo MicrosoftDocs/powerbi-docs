@@ -40,15 +40,15 @@ Then you see these same dashboards in the iPad app for Microsoft Power BI for 
 
 3.  You see the tiles in that dashboard. Now you can:
 
-    [Interact with the tiles](https://support.powerbi.com/knowledgebase/articles/467178).
+    [Interact with the tiles](powerbi-mobile-tiles-in-the-ipad-app.md).
 
-    [Make favorites](https://support.powerbi.com/knowledgebase/articles/467179) of the tiles.
+    [Make favorites](powerbi-mobile-favorites-on-the-ipad-app.md) of the tiles.
 
-    [Open the reports](https://support.powerbi.com/knowledgebase/articles/467180) behind the tiles.
+    [Open the reports](powerbi-mobile-reports-on-the-ipad-app.md) behind the tiles.
 
-    [Share the dashboard](https://support.powerbi.com/knowledgebase/articles/467181).
+    [Share the dashboard](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
 
-    [Annotate and share a snapshot](https://support.powerbi.com/knowledgebase/articles/527030) of a tile.
+    [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
 
 4.  Click the back arrow in the upper-left corner or tap **Dashboards** in the bottom bar.
 

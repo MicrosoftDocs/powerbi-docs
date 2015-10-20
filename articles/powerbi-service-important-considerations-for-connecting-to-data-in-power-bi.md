@@ -20,11 +20,11 @@
 
 Connecting to data sources through Power BI is an easy way to get analytics and insights on data that is important to you. Power BI is designed to work well with a variety of data sources:
 
--   Data from [Excel and Power BI Desktop files](https://support.powerbi.com/knowledgebase/articles/597003).
+-   Data from [Excel and Power BI Desktop files](powerbi-service-get-data-from-files.md).
 
 -   Content packs with ready-made dashboards, reports, and datasets for [SaaS ](https://support.powerbi.com/knowledgebase/topics/88770) applications. Connecting to these SaaS applications requires an existing subscription to that application. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
 
--   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](https://support.powerbi.com/knowledgebase/articles/581421) and SQL Server [Analysis Services tabular data](https://support.powerbi.com/knowledgebase/articles/471633).
+-   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
 
 When connecting to data sources through Power BI, there are some things to consider across all sources:
 

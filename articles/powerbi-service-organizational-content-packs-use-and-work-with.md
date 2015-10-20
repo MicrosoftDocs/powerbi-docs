@@ -18,7 +18,7 @@
    ms.author="v-pawrig"/>
 # Work with organizational content packs
 
-When an organizational content pack is published, all members see the same dashboard, reports, and datasets (unless it's an SSAS data source).  [Only the creator can edit and republish](https://support.powerbi.com/knowledgebase/articles/651631%0A) the content pack.  However, all users can customize the dashboards and reports, and when those changes are saved, a new *personalized* version of the content pack replaces the original.
+When an organizational content pack is published, all members see the same dashboard, reports, and datasets (unless it's an SSAS data source).  [Only the creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md%0A) the content pack.  However, all users can customize the dashboards and reports, and when those changes are saved, a new *personalized* version of the content pack replaces the original.
 
 ## Edit an organizational content pack:
 
@@ -46,15 +46,15 @@ This can happen for several reasons:
 
 When the content pack is created, the refresh settings are inherited with the dataset.  When a group member creates a new personal version of the content pack, the link to the original dataset, and its refresh schedule, is retained. 
 
-See [Managing, updating, and deleting organizational content packs](https://support.powerbi.com/knowledgebase/articles/651631).
+See [Managing, updating, and deleting organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
 ## See Also:
 
-[Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)
+[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
 
 [Get Started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
+[Groups in Power BI](powerbi-service-groups.md)
 

@@ -29,7 +29,7 @@ In Power BI, there are two ways you can connect to SQL Server Analysis Services 
 -   Q&A natural language querying is not currently available for on-premises tabular data.  Only cloud-based datasets are supported for Q&A.
 
 
- NOTE: Groups are only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479).
+ NOTE: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 
 ## To connect to a tabular model from Get data

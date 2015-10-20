@@ -69,11 +69,11 @@ Another modification available to content pack creators is expanding and restric
 
 ## Refresh an organizational content pack
 
-As the content pack creator, you can [schedule refresh of the datasets](https://support.powerbi.com/knowledgebase/articles/474669).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you'll need to re-publish the content pack (see above).
+As the content pack creator, you can [schedule refresh of the datasets](powerbi-refresh-data.md).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you'll need to re-publish the content pack (see above).
 
 ## Delete an organizational content pack
 
-You can [delete your connection to a content pack](https://support.powerbi.com/knowledgebase/articles/663661) you didn't create, but only the content pack creator can delete the content pack from the content pack library.
+You can [delete your connection to a content pack](powerbi-service-organizational-content-pack-delete.md) you didn't create, but only the content pack creator can delete the content pack from the content pack library.
 
 1. Select the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
 
@@ -85,7 +85,7 @@ You can [delete your connection to a content pack](https://support.powerbi.com/k
 
 ## See Also:
 
-[Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)
+[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
 
 [Get Started with Power BI](powerbi-service-get-started.md)
 

@@ -35,7 +35,7 @@ Every [Power BI Pro](https://powerbi.microsoft.com/pricing) user has an organiza
 
 4.  Select **Connect** to add the content pack to your active workspace. New reports and datasets are listed with a yellow asterisk.
 
-The content pack is locked when you first connect to it, but you can [edit and save your own copy](https://support.powerbi.com/knowledgebase/articles/651727). 
+The content pack is locked when you first connect to it, but you can [edit and save your own copy](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
 ## Changes to the content pack  
 If the content pack owner changes the content pack, and:  
@@ -44,7 +44,7 @@ If the content pack owner changes the content pack, and:
 - You have customized the content pack: you receive a notification that there is a new version. You can go to the content pack library and get the updated content pack without losing your personalized copy. Now you'll have two copy: your personalized copy and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone. Tiles pinned from other reports will still render. 
 
 ## See Also  
-[Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)  
+[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Groups in Power BI](powerbi-service-groups.md%0A)  

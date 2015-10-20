@@ -32,15 +32,15 @@ You can [create a report from scratch](powerbi-service-create-a-new-report.md) 
 
 View and interact with reports in either [**Reading View**](powerbi-service-interact-with-a-report-in-reading-view.md)or **[Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)**. Editing View is only available to a report creator and has many more options for creating and modifying reports.
 
-Did you participate in the Power BI Preview?  [Find out how to upgrade to the new report canvas](https://support.powerbi.com/knowledgebase/articles/663517).
+Did you participate in the Power BI Preview?  [Find out how to upgrade to the new report canvas](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
 
-[The report editor... take a tour](https://support.powerbi.com/knowledgebase/articles/665494) - including the Visualizations pane, Filters pane, and Fields pane.
+[The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md) - including the Visualizations pane, Filters pane, and Fields pane.
 
 **[Filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)** -- create them in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and interact with them in [Reading View.](powerbi-service-interact-with-a-report-in-reading-view.md)
 
 [**Add a page to a report**](powerbi-service-add-a-page-to-a-report.md) if you need more room.
 
-[Reorder report pages](https://support.powerbi.com/knowledgebase/articles/475186) to put the most-important information first.
+[Reorder report pages](powerbi-service-reorder-pages-in-a-report.md) to put the most-important information first.
 
 [**Delete a page from a report**](powerbi-service-delete-a-page-from-a-report.md), even if it's not blank.
 

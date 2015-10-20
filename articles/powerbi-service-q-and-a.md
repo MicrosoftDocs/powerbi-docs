@@ -29,12 +29,12 @@ The experience is truly interactive…and fast! Powered by an in-memory storage,
 
 ## For more details about Power BI Q&A:
 
-[How to use Q&A](https://support.powerbi.com/knowledgebase/articles/743532)
+[How to use Q&A](powerbi-service-how-to-use-q-and-a.md)
 Step by step instructions for using Q&A and an overview of how it all works.
 [Tips for asking questions in Q&A](https://support.powerbi.com/knowledgebase/articles/664393)
 Learn how to talk to Q&A to get the best possible results.
 
-[Tutorial: Use Power BI Q&A with the Retail Sales sample](https://support.powerbi.com/knowledgebase/articles/607113)
+[Tutorial: Use Power BI Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)
 Use Q&A in a realistic industry tutorial.
 
 [Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
@@ -49,7 +49,7 @@ How does Q&A communicate with Salesforce.
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)
+[Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
 
-[Make your data work well with Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)
+[Make your data work well with Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
 

@@ -32,7 +32,7 @@ Now say you change the version of the file on your computer. You can upload the 
 
 -   If you add a column, Power BI ignores the added column in existing visuals, but adds the new column to the dataset, so you can use it in creating or updating visuals.
 
--   Refreshing doesn't work the same way for Excel workbooks you bring intact into Power BI. Read more about [bringing whole Excel files into Power B](https://support.powerbi.com/knowledgebase/articles/640168)I. 
+-   Refreshing doesn't work the same way for Excel workbooks you bring intact into Power BI. Read more about [bringing whole Excel files into Power B](powerbi-bring-in-whole-excel-files.md)I. 
 
 ## Replace a file
 

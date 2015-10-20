@@ -18,7 +18,7 @@
    ms.author="v-pawrig"/>
 # Excel data in Power BI
 
-You can use any XLSX Excel workbook - Excel 2007, 2010, and 2013 - as a dataset for your Power BI dashboards and reports. [Get your Excel data into Power BI](https://support.powerbi.com/knowledgebase/articles/597003).
+You can use any XLSX Excel workbook - Excel 2007, 2010, and 2013 - as a dataset for your Power BI dashboards and reports. [Get your Excel data into Power BI](powerbi-service-get-data-from-files.md).
 
 For the best results, your Excel workbook data:
 -  is in table format. ( [Instructions for formatting Excel data as a table](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US))
@@ -35,7 +35,7 @@ This video demonstrates getting your Excel data ready for Power BI:
 
 Power BI brings in:
 -   **The data in the workbook** from worksheet tables or from the Excel data model. Data model content takes precedence over worksheet content.
--   **Power View sheets**, but not PivotTables or PivotCharts or custom fields. If your workbook has PivotTables or PivotCharts, consider [bringing the whole Excel file into Power BI](https://support.powerbi.com/knowledgebase/articles/640168) instead.
+-   **Power View sheets**, but not PivotTables or PivotCharts or custom fields. If your workbook has PivotTables or PivotCharts, consider [bringing the whole Excel file into Power BI](powerbi-bring-in-whole-excel-files.md) instead.
 
 ### Data types
 
@@ -50,7 +50,7 @@ Power BI recognizes values and supports these data types: Whole Number, Decimal 
 
 Currently, when you connect to an Excel workbook as a dataset, Power BI only imports data that is part of a named table or a data model. As a result:
 
--   If the workbook contains no named tables, Power View sheets, or Excel data models, you see this error. The article "[We couldn't find any data in your Excel workbook](https://support.powerbi.com/knowledgebase/articles/501937--we-couldn-t-find-any-data-in-your-excel-workbook)" explains how to fix the workbook and reimport it.
+-   If the workbook contains no named tables, Power View sheets, or Excel data models, you see this error. The article "[We couldn't find any data in your Excel workbook](powerbi-admin-troubleshoot-excel-workbook-data.md--we-couldn-t-find-any-data-in-your-excel-workbook)" explains how to fix the workbook and reimport it.
 
 See also
 

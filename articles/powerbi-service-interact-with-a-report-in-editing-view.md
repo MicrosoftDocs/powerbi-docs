@@ -28,7 +28,7 @@ No need to crowd your report pages.  If you need more room, [add a new page](po
 
 ### Change the way a report page is displayed
 
-[How do you want your report pages to be viewed?](https://support.powerbi.com/knowledgebase/articles/742155)  Set rendering rules, display ratios, and absolute page sizes (in pixels). 
+[How do you want your report pages to be viewed?](powerbi-service-change-report-display-settings.md)  Set rendering rules, display ratios, and absolute page sizes (in pixels). 
 
 ### Add visualizations
 
@@ -52,7 +52,7 @@ There are many ways to [filter and highlight data in reports](powerbi-service-ab
 
 ### Rename a report
 
-Don't like the name of the report? [Rename it](https://support.powerbi.com/knowledgebase/articles/474347). 
+Don't like the name of the report? [Rename it](powerbi-service-rename-a-report.md). 
 
 ### Save a report
 
@@ -71,7 +71,7 @@ Don't need the report any more?  [Delete it](powerbi-service-delete-a-report.md
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
-Go back to Power BI [report Reading View](https://support.powerbi.com/knowledgebase/articles/445094)
+Go back to Power BI [report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

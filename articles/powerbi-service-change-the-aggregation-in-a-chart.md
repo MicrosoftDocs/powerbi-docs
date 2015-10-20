@@ -19,7 +19,7 @@
 
 # Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI  
 
-A numeric field is a value that will be summed or averaged, for example. Numeric fields in Power BI are imported with the data (defined in the data model your report is based on). In the Fields list, numeric fields are shown with the ∑ symbol. If you want more information see [The report editor... take a tour](https://support.powerbi.com/knowledgebase/articles/665494), and read about [aggregations in Power BI reports](powerbi-service-change-the-aggregation-in-a-chart.md).
+A numeric field is a value that will be summed or averaged, for example. Numeric fields in Power BI are imported with the data (defined in the data model your report is based on). In the Fields list, numeric fields are shown with the ∑ symbol. If you want more information see [The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md), and read about [aggregations in Power BI reports](powerbi-service-change-the-aggregation-in-a-chart.md).
 
  **Change how a numeric** **field** **is aggregated in a chart
 

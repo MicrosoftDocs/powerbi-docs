@@ -19,4 +19,4 @@
 
 # I need help signing up for Power BI.  
 
-If you get an error message when signing up for Power BI, please consult these [common errors and workarounds](https://support.powerbi.com/knowledgebase/articles/594453-self-service-signup-for-power-bi).
+If you get an error message when signing up for Power BI, please consult these [common errors and workarounds](powerbi-service-self-service-signup-for-power-bi.md-self-service-signup-for-power-bi).

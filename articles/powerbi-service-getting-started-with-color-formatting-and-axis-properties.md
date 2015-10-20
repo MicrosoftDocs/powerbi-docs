@@ -94,4 +94,4 @@ There are all sorts of colors to choose from, and many more customizations you c
 >These color, axis, and related customizations available when the **Format** icon is selected are also available in Power BI Desktop.
 
 For more information, see the following article:  
--   [Tips and tricks for color formatting in Power BI](https://support.powerbi.com/knowledgebase/articles/666355)  
+-   [Tips and tricks for color formatting in Power BI](powerbi-service-tips-and-tricks-for-color-formatting.md)  

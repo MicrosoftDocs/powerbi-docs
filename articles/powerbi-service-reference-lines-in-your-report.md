@@ -24,5 +24,5 @@ You can use a calculated column to define a reference line.  Identify the table
 
 This calculated column will return the value 100 regardless of where it is used.  Your new column will show up in the Field List.  Add the Target Value calculated column to a line chart to show how any series relates to that specific reference line.  
 
-[Learn more about calculated columns](https://support.powerbi.com/knowledgebase/articles/590598)
+[Learn more about calculated columns](powerbi-desktop-calculated-columns.md)
 

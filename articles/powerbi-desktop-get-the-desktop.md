@@ -44,11 +44,11 @@ Power BI Desktop makes discovering data easy. You can import data from a wide va
 
 ### Model data
 
-Power BI Desktop provides advanced data modeling features like autodetect and manual relationships, custom measures, calculated columns, data categorization, and sort by column. [Data View](https://support.powerbi.com/knowledgebase/articles/663202-data-view-in-power-bi-desktop) makes seeing the data in your model easy, and with [Relationship View](https://support.powerbi.com/knowledgebase/articles/663229-relationship-view-in-power-bi-desktop), you get a customizable diagram view of all your tables and the relationships between them. 
+Power BI Desktop provides advanced data modeling features like autodetect and manual relationships, custom measures, calculated columns, data categorization, and sort by column. [Data View](powerbi-desktop-data-view.md-data-view-in-power-bi-desktop) makes seeing the data in your model easy, and with [Relationship View](powerbi-desktop-relationship-view.md-relationship-view-in-power-bi-desktop), you get a customizable diagram view of all your tables and the relationships between them. 
 
 ### Create reports
 
-Power BI Desktop includes [Report View](https://support.powerbi.com/knowledgebase/articles/461283-report-view-in-power-bi-desktop). Select the fields you want, add filters, choose from dozens of visuals. Report View gives you many of  the same great report and visualization tools just like when creating a report in the Power BI service 
+Power BI Desktop includes [Report View](powerbi-desktop-report-view.md-report-view-in-power-bi-desktop). Select the fields you want, add filters, choose from dozens of visuals. Report View gives you many of  the same great report and visualization tools just like when creating a report in the Power BI service 
 
 ### Save
 

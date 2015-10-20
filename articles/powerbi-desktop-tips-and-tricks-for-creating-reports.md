@@ -86,7 +86,7 @@ This calculated column will return the value 100 regardless of where it is used.
 
 ## Sort by another column
 
-When you use a categorical (string) value in Power BI Desktop for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order, for example for things like days of the week or months, then you can tell Power BI Desktop to sort by a different column.To learn more, see [Sort by Column in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/592116-sort-by-column-in-power-bi-desktop).
+When you use a categorical (string) value in Power BI Desktop for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order, for example for things like days of the week or months, then you can tell Power BI Desktop to sort by a different column.To learn more, see [Sort by Column in Power BI Desktop](powerbi-desktop-sort-by-column.md-sort-by-column-in-power-bi-desktop).
 
 ## Building maps more easily with hints to Bing
 
@@ -100,7 +100,7 @@ You can always provide specific latitude and longitude locations.  When you do 
 
 ## Categorizing geographic fields to hint Bing's geocoding
 
-In Power BI Desktop, you can ensure fields are correctly geocoded by setting the Data Category on the data fields.   In Power BI Desktop, select the desired table, go to the Advanced ribbon and then set the Data Category to Address, City, Continent, Country/Region, Country, Postal Code, State or Province.  These data categories help Bing to correctly encode the date.To learn more, see [Data categorization in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/594282-data-categorization-in-power-bi-desktop).
+In Power BI Desktop, you can ensure fields are correctly geocoded by setting the Data Category on the data fields.   In Power BI Desktop, select the desired table, go to the Advanced ribbon and then set the Data Category to Address, City, Continent, Country/Region, Country, Postal Code, State or Province.  These data categories help Bing to correctly encode the date.To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md-data-categorization-in-power-bi-desktop).
 
 ## Better geocoding with more specific locations
 
@@ -199,7 +199,7 @@ Sometimes it's useful to compute summary statistics for a data set.  The easy w
 
 DAX is the calculations formula language in Power BI Desktop.  It's optimized for BI analytics.  It's a little different than what you might be familiar with if you've only used a SQL like query language. There are very good resources online and in literature for learning DAX. 
 
-[QuickStart: Learn DAX Basics in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-desktop)
+[QuickStart: Learn DAX Basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md-quickstart-learn-dax-basics-in-power-bi-desktop)
 
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 

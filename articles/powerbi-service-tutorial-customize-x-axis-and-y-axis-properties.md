@@ -79,7 +79,7 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
 ## Customizing visualizations with dual Y-axes
 
-First we'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](https://support.powerbi.com/knowledgebase/articles/436737). Then we'll format the dual Y-axes.
+First we'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](powerbi-service-tutorial-combo-chart-merge-visualizations.md). Then we'll format the dual Y-axes.
 
 ### Create a chart with two Y-axes
 
@@ -135,7 +135,7 @@ With a visualization this complicated, it helps to add axes titles.  Titles hel
 
 For more information, see the following article:
 
--   [Tips and tricks for color formatting, labeling, and axis properties](https://support.powerbi.com/knowledgebase/articles/666355)
+-   [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md)
 
 See Also:
 
@@ -143,9 +143,9 @@ More about [Visualizations in Power BI reports](powerbi-service-visualizations-
 
 [Customize d](https://support.powerbi.com/knowledgebase/articles/637417%0A)[ata point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)
 
-[Customize t](https://support.powerbi.com/knowledgebase/articles/637423)[itles, backgrounds, and legends](https://support.powerbi.com/knowledgebase/articles/637423)
+[Customize t](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)[itles, backgrounds, and legends](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 
-[Customize colors and axis properties](https://support.powerbi.com/knowledgebase/articles/666325)
+[Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

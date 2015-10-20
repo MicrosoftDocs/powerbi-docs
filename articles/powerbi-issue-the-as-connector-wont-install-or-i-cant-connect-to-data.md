@@ -19,4 +19,4 @@
 
 # The AS Connector won't install or I can't connect to data.  
 
-Please read the [Analysis Services Connector troubleshooting guide](https://support.powerbi.com/knowledgebase/articles/505324-troubleshooting-power-bi-analysis-service-connecto).  
+Please read the [Analysis Services Connector troubleshooting guide](powerbi-admin-troubleshoot-analysis-service-connector.md-troubleshooting-power-bi-analysis-service-connecto).  

@@ -22,13 +22,13 @@
 
 If Excel is your go-to tool for working with data, you can leverage your Excel expertise and investments by using them in Power BI. You have two options:
 
--   Use an XLSX Excel workbook as a dataset for your Power BI dashboards and reports. Read about [what makes a good Excel workbook](https://support.powerbi.com/knowledgebase/articles/424871) for Power BI.  Want a sample Excel file to use as dataset? Download the [Financial Sample Excel file](https://support.powerbi.com/knowledgebase/articles/497124).
+-   Use an XLSX Excel workbook as a dataset for your Power BI dashboards and reports. Read about [what makes a good Excel workbook](powerbi-service-excel-data.md) for Power BI.  Want a sample Excel file to use as dataset? Download the [Financial Sample Excel file](powerbi-sample-download-the-financial-sample-workbook.md).
 
--   Bring a whole Excel workbook into Power BI intact . Explore the whole file, exactly as you would in Excel Online. [Bring whole Excel files into Power BI](https://support.powerbi.com/knowledgebase/articles/640168)
+-   Bring a whole Excel workbook into Power BI intact . Explore the whole file, exactly as you would in Excel Online. [Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md)
 
 **Power BI Desktop files**
 
-You can also create reports in Power BI Desktop, a free, downloadable app, and use those reports as datasets for Power BI. [Get Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/464158).
+You can also create reports in Power BI Desktop, a free, downloadable app, and use those reports as datasets for Power BI. [Get Power BI Desktop](powerbi-desktop-get-the-desktop.md).
 
 
 **CSV files**
@@ -58,7 +58,7 @@ You can upload Excel, Power BI Desktop, and CSV files from your computer, or con
 
     **OneDrive - Business** and **OneDrive - Personal**: Browse to the file and select **Connect**. Power BI creates a connection to the file. Any changes to files on OneDrive appear automatically in Power BI.
 
-    Note: Power BI doesn't change the files on OneDrive. Read more about [refreshing data in Excel workbooks on OneDrive](https://support.powerbi.com/knowledgebase/articles/471009). 
+    Note: Power BI doesn't change the files on OneDrive. Read more about [refreshing data in Excel workbooks on OneDrive](powerbi-service-refresh-excel-data-stored-in-onedrive.md). 
 
 4.  In OneDrive for Business, under **Import Excel data into Power BI**, select **Import**. Power BI creates a dataset based on the data model in the workbook.
 
@@ -84,9 +84,9 @@ You can upload Excel, Power BI Desktop, and CSV files from your computer, or con
 
 ### More about files in Power BI
 
--   [Excel data in Power BI](https://support.powerbi.com/knowledgebase/articles/424871-excel-data-in-power-bi)
+-   [Excel data in Power BI](powerbi-service-excel-data.md-excel-data-in-power-bi)
 
--   [Refresh Excel data stored in OneDrive](https://support.powerbi.com/knowledgebase/articles/471009)
+-   [Refresh Excel data stored in OneDrive](powerbi-service-refresh-excel-data-stored-in-onedrive.md)
 
--   [Bring whole Excel files into Power BI](https://support.powerbi.com/knowledgebase/articles/640168%20)
+-   [Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md%20)
 

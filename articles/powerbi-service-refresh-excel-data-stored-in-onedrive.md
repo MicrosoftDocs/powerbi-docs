@@ -18,14 +18,14 @@
    ms.author="v-anpasi"/>
 # Refresh Excel, CSV, and Power BI Desktop files stored in OneDrive
 
-Power BI can connect to your Excel, CSV, and Power BI Desktop files in **OneDrive** and **OneDrive for Business**. Read about how to [get Excel and Power BI Desktop files into Power BI](https://support.powerbi.com/knowledgebase/articles/597003).
+Power BI can connect to your Excel, CSV, and Power BI Desktop files in **OneDrive** and **OneDrive for Business**. Read about how to [get Excel and Power BI Desktop files into Power BI](powerbi-service-get-data-from-files.md).
 
-**NOTE**: You can connect to any Excel workbook (XLSX or XLSM) that's in OneDrive for Business, and explore the whole file in Power BI, exactly as you would in Excel Online. Read about [bringing whole Excel files into Power BI](https://support.powerbi.com/knowledgebase/articles/640168).
+**NOTE**: You can connect to any Excel workbook (XLSX or XLSM) that's in OneDrive for Business, and explore the whole file in Power BI, exactly as you would in Excel Online. Read about [bringing whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md).
 
 
 ## Why connect to files on OneDrive?
 
-If your Excel, CSV, or Power BI Desktop file is in the cloud, in OneDrive, then when the data in the file changes, Power BI can [refresh the data](powerbi-refresh-data.md) from the file in OneDrive. You don't need to re-upload the file to Power BI. (By contrast, if your file is on your computer rather than in OneDrive, you have to re-upload the file to Power BI and [replace the existing file](https://support.powerbi.com/knowledgebase/articles/655108).)
+If your Excel, CSV, or Power BI Desktop file is in the cloud, in OneDrive, then when the data in the file changes, Power BI can [refresh the data](powerbi-refresh-data.md) from the file in OneDrive. You don't need to re-upload the file to Power BI. (By contrast, if your file is on your computer rather than in OneDrive, you have to re-upload the file to Power BI and [replace the existing file](powerbi-replace-an-excel-power-bi-desktop-or-csv-file.md).)
 
 **NOTE**: Avoid changing the structure of the data. If you rename or delete a column, any visuals based on that column will be broken. If you add a column, Power BI ignores the added column in existing visuals, but adds the new column to the dataset, so you can use it in creating or updating visuals. 
 

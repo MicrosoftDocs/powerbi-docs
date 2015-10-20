@@ -35,7 +35,7 @@ NOTES: When using the SQL Data Warehouse connector:
 
 -   schema changes are not picked up automatically
 
--   Groups are only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479).
+-   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 These restrictions and notes may change as we continue to improve the experiences. The step to connect are detailed below.
 

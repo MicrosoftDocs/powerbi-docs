@@ -66,11 +66,11 @@ Want to follow along? Go to **Get Data > Samples > Opportunity Analysis Sample**
 	>**Tip:**  
 >The URL displayed in your browser is an unique address for this content pack.  Want to tell your coworkers about this new content pack?  Paste the URL into an email.
 
-6.  They select **Connect**, and now they can [work with your content pack](https://support.powerbi.com/knowledgebase/articles/651727). 
+6.  They select **Connect**, and now they can [work with your content pack](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
 ## See Also  
-[Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)  
-[Manage, update, and delete organizational content packs](https://support.powerbi.com/knowledgebase/articles/651631)  
+[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+[Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Groups in Power BI](powerbi-service-groups.md)  

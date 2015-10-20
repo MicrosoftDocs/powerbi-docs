@@ -23,15 +23,15 @@ Power BI free and Pro licenses are different based on the kind of content users 
 
 If your content contains any of the following items, it's Power BI Pro content:
 
--   Data from a direct query dataset, such as [SQL Server Analysis Services](https://support.powerbi.com/knowledgebase/articles/471633) tabular data, [Azure SQL Database](https://support.powerbi.com/knowledgebase/articles/581421), [Azure SQL Data Warehouse](https://support.powerbi.com/knowledgebase/articles/636088), or Apache [Spark for HDInsight](https://support.powerbi.com/knowledgebase/articles/654094).
+-   Data from a direct query dataset, such as [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data, [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md), [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md), or Apache [Spark for HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md).
 
--   Data from a [dataset that refreshes more frequently than daily](https://support.powerbi.com/knowledgebase/articles/474669).
+-   Data from a [dataset that refreshes more frequently than daily](powerbi-refresh-data.md).
 
--   Data from a dataset that connects to on-premises data using the Power BI [Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846) or Power BI [Data Management Gateway](https://support.powerbi.com/knowledgebase/articles/497354).
+-   Data from a dataset that connects to on-premises data using the Power BI [Personal Gateway](powerbi-personal-gateway.md) or Power BI [Data Management Gateway](powerbi-admin-data-management-gateway-in-office-365.md).
 
--   A dashboard or report that's installed from an [organizational content pack](https://support.powerbi.com/knowledgebase/articles/651040).
+-   A dashboard or report that's installed from an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md).
 
--   A dashboard, report, or dataset that's contained in a [group workspace](https://support.powerbi.com/knowledgebase/articles/654247).
+-   A dashboard, report, or dataset that's contained in a [group workspace](powerbi-service-groups.md).
 
 -   A dashboard that contains data streamed at a rate above 10k rows/hour.
 
@@ -43,6 +43,6 @@ Conversely, if your content contains only the following items it will be consuma
 
 For example, if you create a manufacturing dashboard that updates progress multiple times during the day, anyone *consuming* that dashboard would need a Power BI Pro license. Or, if you create a report using the Power BI AS Connector, then another that uses Personal Gateway, anyone *consuming or interacting* with either of those reports would need a Power BI Pro license.
 
-If you want to share your Power BI Pro content with users, they can sign up for a [free trial of Power BI Pro](https://support.powerbi.com/knowledgebase/articles/664495), and gain access to your content during the trial period.
+If you want to share your Power BI Pro content with users, they can sign up for a [free trial of Power BI Pro](powerbi-free-trial-for-power-bi-pro.md), and gain access to your content during the trial period.
 
 For a list of Power BI Pro features (and how those features compare to a free Power BI license), take a look at [Power BI Pricing](https://powerbi.microsoft.com/pricing).

@@ -53,7 +53,7 @@ To follow along, sign in to Power BI and select Get Data \> Samples \> Retail 
 
 ## See Also:
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 

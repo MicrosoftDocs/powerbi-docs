@@ -38,9 +38,9 @@ In Editing View, add a text box to a report and then pin it to a dashboard. 
 
 ## See Also:
 
-[Add a hyperlink to a Text Box](https://support.powerbi.com/knowledgebase/articles/729906)
+[Add a hyperlink to a Text Box](powerbi-service-add-a-hyperlink-to-a-text-box.md)
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 

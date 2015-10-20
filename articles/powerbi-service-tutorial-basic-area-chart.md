@@ -58,6 +58,6 @@ To select an area, click inside that area or along the top line.  Basic Area ch
 -   Basic Area charts are not effective for comparing the values due to the occlusion on the layered areas. Power BI uses transparency to indicate the overlap of areas. However, it only works well with two or three different areas. When you need to compare trend to more than three measures, try using Line charts. When you need to compare volume to more than three measures, try using Treemap.
 
 ## See Also  
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)  
+[Reports in Power BI](powerbi-service-reports.md)  
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

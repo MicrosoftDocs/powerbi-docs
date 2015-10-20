@@ -139,4 +139,4 @@ Do you have a tip you’d like to share? Please send it our way, and we’ll see
 
 For more information, see the following articles:
 
--   [Getting started with color formatting and axis properties](https://support.powerbi.com/knowledgebase/articles/666325)
+-   [Getting started with color formatting and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)

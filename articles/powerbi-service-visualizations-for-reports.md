@@ -50,29 +50,29 @@ You can [sort a visualization](powerbi-service-change-how-a-chart-is-sorted.md) 
 Learn how to create and add links to table visualizations.
 
 ## Tutorials  
--   [Customize visualization title, background, and legend](https://support.powerbi.com/knowledgebase/articles/637423%0A)
+-   [Customize visualization title, background, and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md%0A)
 
--   [Customize X-axis and Y-axis properties](https://support.powerbi.com/knowledgebase/articles/637429%0A)
+-   [Customize X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md%0A)
 
 -   [Customize data point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)
 
--   [Basic Area charts](https://support.powerbi.com/knowledgebase/articles/653149)
+-   [Basic Area charts](powerbi-service-tutorial-basic-area-chart.md)
 
--   [Combo charts](https://support.powerbi.com/knowledgebase/articles/436737)
+-   [Combo charts](powerbi-service-tutorial-combo-chart-merge-visualizations.md)
 
--   [Doughnut charts](https://support.powerbi.com/knowledgebase/articles/653143)
+-   [Doughnut charts](powerbi-service-tutorial-doughnut-charts.md)
 
--   [Filled Maps](https://support.powerbi.com/knowledgebase/articles/556194%0A) (Choropleths)
+-   [Filled Maps](powerbi-service-tutorial-filled-maps-choropleths.md%0A) (Choropleths)
 
--   [Funnel charts](https://support.powerbi.com/knowledgebase/articles/556197%0A)
+-   [Funnel charts](powerbi-service-tutorial-funnel-charts.md%0A)
 
--   [Radial Gauge charts](https://support.powerbi.com/knowledgebase/articles/556188%0A)
+-   [Radial Gauge charts](powerbi-service-tutorial-radial-gauge-charts.md%0A)
 
--   [Treemaps](https://support.powerbi.com/knowledgebase/articles/556200)
+-   [Treemaps](powerbi-service-tutorial-treemaps.md)
 
--   [Waterfall charts](https://support.powerbi.com/knowledgebase/articles/653140)
+-   [Waterfall charts](powerbi-service-tutorial-waterfall-charts.md)
 
 ## See Also  
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)  
+[Reports in Power BI](powerbi-service-reports.md)  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

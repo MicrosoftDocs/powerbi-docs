@@ -24,17 +24,17 @@ A tile is a snapshot of your data, pinned to the dashboard. A tile can be create
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
--   [Pin a tile to a dashboard from the Q&A question box](https://support.powerbi.com/knowledgebase/articles/424874-pin-a-tile-to-a-power-bi-dashboard-from-the-q-a-qu)
+-   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md-pin-a-tile-to-a-power-bi-dashboard-from-the-q-a-qu)
 
--   [Pin a tile to a dashboard from a report](https://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-power-bi-dashboard-from-a-report)
+-   [Pin a tile to a dashboard from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md-pin-a-tile-to-a-power-bi-dashboard-from-a-report)
 
--   [Pin a tile to a dashboard from another dashboard](https://support.powerbi.com/knowledgebase/articles/735087)
+-   [Pin a tile to a dashboard from another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 
 -   Pin a tile to a dashboard from SSRS
 
--   [Add an image to a dashboard](https://support.powerbi.com/knowledgebase/articles/582552)
+-   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
 
--   Add a big number tile [from Q&A](https://support.powerbi.com/knowledgebase/articles/436733) and [from a report](https://support.powerbi.com/knowledgebase/articles/587907)
+-   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
 -   [Rename, resize, add a hyperlink, and reposition the tile](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
 

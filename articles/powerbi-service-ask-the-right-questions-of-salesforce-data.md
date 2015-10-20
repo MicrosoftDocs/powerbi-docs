@@ -63,7 +63,7 @@ For Salesforce data, here’s the best list of questions:
 
 [Q&A in Power BI](powerbi-service-q-and-a.md)
 
-[Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)
+[Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
 
 [Make your data work well with Q&A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 

@@ -63,7 +63,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_9.png)
 
 ## See Also  
--   For more information about the Fields pane, see [The report editor... take a tour](https://support.powerbi.com/knowledgebase/articles/665494).   
+-   For more information about the Fields pane, see [The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md).   
 -   To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).  
 -   To learn about using and changing aggregations, see [Aggregates in reports](powerbi-service-aggregates-in-reports.md).  
 -   Need help understanding the building blocks that make up Power BI?  [See Power BI - Basic Concepts](powerbi-service-basic-concepts.md).  

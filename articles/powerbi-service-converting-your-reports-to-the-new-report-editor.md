@@ -19,7 +19,7 @@
 
 # Converting your reports to the new report editor  
 
-If you participated in the Power BI Preview, you may notice that our report editor has been updated. [Take a tour of the new report editor](https://support.powerbi.com/knowledgebase/articles/665494).
+If you participated in the Power BI Preview, you may notice that our report editor has been updated. [Take a tour of the new report editor](powerbi-service-the-report-editor-take-a-tour.md).
 
 You have a choice...you can continue to work in the classic reporting canvas or upgrade your reports for the new canvas.  The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, etc... We've made some changes to the look and feel of some visuals in your report, and we think you'll be happy with them.  
 

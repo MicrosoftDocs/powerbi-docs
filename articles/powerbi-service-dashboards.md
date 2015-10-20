@@ -37,7 +37,7 @@ Learn how to [create a new dashboard](powerbi-service-create-a-dashboard.md)and 
 
 Learn how to [share a read-only dashboard with your colleagues](powerbi-service-share-unshare-dashboard.md).
 
-Learn how to [co-own a dashboard among colleagues](https://support.powerbi.com/knowledgebase/articles/651040).
+Learn how to [co-own a dashboard among colleagues](powerbi-service-organizational-content-packs-introduction.md).
 
 ### Rename a dashboard
 
@@ -49,7 +49,7 @@ Don't need the dashboard any more?  [Delete it](powerbi-service-delete-or-remov
 
 ### Add tiles to a dashboard
 
-[Get data](powerbi-service-get-data.md)and [add tiles](powerbi-service-dashboard-tiles.md)to your dashboard [from a report](https://support.powerbi.com/knowledgebase/articles/430323) and [from Q&A](https://support.powerbi.com/knowledgebase/articles/424874).
+[Get data](powerbi-service-get-data.md)and [add tiles](powerbi-service-dashboard-tiles.md)to your dashboard [from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) and [from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md).
 
 ### Dashboard size
 

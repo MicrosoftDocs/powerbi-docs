@@ -43,4 +43,4 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/)
 
 3.  In the Android app, tap Sign in to view your dashboards. Sign in with the same credentials as your Power BI account on the web.
 
-More about the [Power BI for Android app](https://support.powerbi.com/knowledgebase/articles/577773).
+More about the [Power BI for Android app](powerbi-mobile-android-app-get-started.md).

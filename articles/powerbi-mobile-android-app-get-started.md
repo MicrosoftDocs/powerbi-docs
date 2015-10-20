@@ -28,7 +28,7 @@ Bring your own data together and create dashboards and reports on the [Power BI
 
 ### First things first
 
--   **Get the app**  [Get the Power BI for Android app](https://support.powerbi.com/knowledgebase/articles/577785) from Google play.
+-   **Get the app**  [Get the Power BI for Android app](powerbi-mobile-get-the-power-bi-for-android-app.md) from Google play.
 
 -   **Start with samples**    Even without signing up or signing in, after you download the app you can view the samples. Or go back to the samples whenever you want from the dashboards home page.
 
@@ -36,15 +36,15 @@ Bring your own data together and create dashboards and reports on the [Power BI
 
 What else you can do in the Android phone app for Power BI?
 
--   View your [dashboards](https://support.powerbi.com/knowledgebase/articles/608316).
+-   View your [dashboards](powerbi-mobile-dashboards-in-the-android-app.md).
 
--   Explore the [tiles on your dashboards](https://support.powerbi.com/knowledgebase/articles/608319).
+-   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
 
--   Pick out [favorites](https://support.powerbi.com/knowledgebase/articles/608328).
+-   Pick out [favorites](powerbi-mobile-favorites-in-the-android-app.md).
 
--   [Annotate and share tiles](https://support.powerbi.com/knowledgebase/articles/608340).
+-   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 
--   Share [dashboards](https://support.powerbi.com/knowledgebase/articles/608337).
+-   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
 
 ### See Also
 

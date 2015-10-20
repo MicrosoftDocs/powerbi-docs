@@ -20,7 +20,7 @@
 
 Package up and share your own dashboard, reports, and datasets with your coworkers.  Do you have any reports that you regularly distribute via email to your team?  Instead, create the reports in Power BI and publish them as a content pack to your team! Content packs are easy to find -- they are all in one location, the content gallery. And since they're part of Power BI, they leverage all the great features of Power BI including interactive data exploration, new visualizations, Q&A, integration with other data sources, data refresh, and more.
 
->**NOTE**:  Organizational content packs are only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479).
+>**NOTE**:  Organizational content packs are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 In the Content Pack Library, you can browse and access the content packs published to the entire organization and to [security groups and Office 365 groups you belong to](powerbi-service-groups.md%0A).  If you are not a member of a specific group, you will not see that group's content packs. All members of the group have the same access and view of the content pack data, reports, and dashboards (unless it's an SSAS data source, in which case your privileges are inherited with the data source).
 
@@ -32,9 +32,9 @@ This is different from [dashboard sharing](powerbi-service-share-unshare-dashboa
 
 -   [What is a content gallery?](651040.html#cg)
 -   Data security and SSAS tabular data connections
--   [How to create and publish an organizational content pack](https://support.powerbi.com/knowledgebase/articles/651337%0A).
--   [How to find and open an organizational content pack](https://support.powerbi.com/knowledgebase/articles/651715).
--   [How to manage, update, and delete an organizational content pack](https://support.powerbi.com/knowledgebase/articles/651631%0A).
+-   [How to create and publish an organizational content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md%0A).
+-   [How to find and open an organizational content pack](powerbi-service-organizational-content-pack-find-and-open.md).
+-   [How to manage, update, and delete an organizational content pack](powerbi-service-organizational-content-packs-manage-update-delete.md%0A).
 -   [What is a Power BI ](powerbi-service-groups.md%0A)*[group?](powerbi-service-groups.md%0A)*
 
 ## Working with organizational content packs
@@ -75,7 +75,7 @@ All group members have the same permissions to the data as the content pack cre
 
 ## See Also:
 
-[Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)
+[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
 
 [Get Started with Power BI](powerbi-service-get-started.md)
 

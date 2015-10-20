@@ -62,11 +62,11 @@ After you have created the connection, you can explore your data and customize t
 
 **What can you do now?**
 
-- Try [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi-preview) at the top of the dashboard, such as "total downloads by product"
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md-q-a-in-power-bi-preview) at the top of the dashboard, such as "total downloads by product"
 
-- [Change the tiles](https://support.powerbi.com/knowledgebase/articles/424878) in the dashboard.
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
-- [Select a tile](https://support.powerbi.com/knowledgebase/articles/425669) to open the underlying report.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
 - While your dataset will be refreshed automatically, you can also refresh it on demand using **﻿Refresh Now**﻿
 
@@ -94,7 +94,7 @@ If you're having trouble connecting, please confirm with your admin your versio
 
 **See Also**
 
-[Get started in Power BI](https://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started in Power BI](powerbi-service-get-started.md-get-started-with-power-bi)
 
 ﻿[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
 

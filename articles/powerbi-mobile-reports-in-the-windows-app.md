@@ -28,7 +28,7 @@ Then you view and interact with those reports in the [Power BI for Windows app]
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppReptsMenu.png)
 
-    >**NOTE**: If you have [brought whole Excel files into Power BI](https://support.powerbi.com/knowledgebase/articles/640168), when you tap them in the app, they open in your browser.
+    >**NOTE**: If you have [brought whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), when you tap them in the app, they open in your browser.
 
 -   Or: On a dashboard, tap a tile and then tap the Reports icon.
 

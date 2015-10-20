@@ -55,13 +55,13 @@ To explore a dataset, select that dataset.  You can explore the dataset by drag
 
 ### Dig deeper:
 
--   [Power BI Pro content - what is it?](https://support.powerbi.com/knowledgebase/articles/685479)
--   [Get data for Power BI](https://support.powerbi.com/knowledgebase/articles/434354)
--   [Sample datasets and content packs for Power BI](https://support.powerbi.com/knowledgebase/articles/471112)
+-   [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md)
+-   [Get data for Power BI](powerbi-service-get-data.md)
+-   [Sample datasets and content packs for Power BI](powerbi-sample-datasets.md)
 
 ## Reports
 
-A Power BI report is one or more pages of visualizations (charts and graphs).  Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created for you when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications and [content packs](https://support.powerbi.com/knowledgebase/articles/434354).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
+A Power BI report is one or more pages of visualizations (charts and graphs).  Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created for you when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications and [content packs](powerbi-service-get-data.md).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
 
 There are 2 ways to view and interact with reports: [Reading View](powerbi-service-open-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  Only a report creator or owner can open Editing View for a report. Use Editing View to create and modify and explore your report. Reading View offers more-limited interaction; you can [interact with filters](powerbi-service-about-filters-and-highlighting-in-reports.md) (if the report owner created any), dig down into visualizations, do page-level filtering and highlighting, and temporarily pin visualizations to the dashboard (the pinned tiles will not be saved when you close and reopen Power BI).
 
@@ -106,7 +106,7 @@ To permanently pin a tile to a dashboard, I must a report owner.  If I’m not 
 
 ## The Retail Analysis Sample dashboard
 
-The first time you open Power BI, you're looking at the [sample dashboard](https://support.powerbi.com/knowledgebase/articles/474807), the ***Retail Analysis Sample***.  This sample will always be there, unless you [manually remove it](powerbi-service-delete-or-remove-a-dashboard.md).
+The first time you open Power BI, you're looking at the [sample dashboard](powerbi-sample-retail-analysis-take-a-tour.md), the ***Retail Analysis Sample***.  This sample will always be there, unless you [manually remove it](powerbi-service-delete-or-remove-a-dashboard.md).
 
 Even though it doesn't show up in the navigation pane under Reports, the Retail Analysis Sample dashboard does have a report (see **NOTE** above).The Sample report is made up of several pages of visualizations that highlight insights about the underlying dataset.  Unless you remove it, the Sample report is always available for you to use to explore and learn.  [Take a tour of the Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour.md). 
 

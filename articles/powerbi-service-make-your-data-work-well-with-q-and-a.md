@@ -46,7 +46,7 @@ Here are some tips for making the most of Q&A in your workbook.
 
 ## See Also  
 [Q&A in Power BI](powerbi-service-q-and-a.md)  
-[Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)  
+[Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
 [Ask the right questions of Salesforce data in Power BI](powerbi-service-ask-the-right-questions-of-salesforce-data.md)  
 [Get Data: Salesforce](powerbi-content-pack-salesforce.md)  
 [Get data (for Power BI)](powerbi-service-get-data.md)  

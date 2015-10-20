@@ -43,6 +43,6 @@ Then you see and interact with the tiles in the Microsoft [Power BI for Windo
 
     ... and then share a [snapshot of the tile](powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app.md) with others.
 
--   [Open the report](https://support.powerbi.com/knowledgebase/articles/510953-reports-in-the-power-bi-for-windows-app) that the tile is based on.
+-   [Open the report](powerbi-mobile-reports-in-the-windows-app.md-reports-in-the-power-bi-for-windows-app) that the tile is based on.
 
 More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
