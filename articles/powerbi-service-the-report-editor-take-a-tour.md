@@ -92,7 +92,7 @@ The Fields pane displays the tables and fields that exist in your data.  Use th
 
 An aggregate is a numeric value that will be summed or averaged, for example. Aggregates are imported with the data (defined in the data model your report is based on).
 
-For more information, see [Aggregates in Power BI reports](http://support.powerbi.com/knowledgebase/articles/475147).
+For more information, see [Aggregates in Power BI reports](powerbi-service-aggregates-in-reports.md).
 
 -  **Calculated fields**  
 	Each calculated field has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. 
@@ -106,17 +106,17 @@ For more information, see [Aggregates in Power BI reports](http://support.powerb
 
 ## Next Steps:
 
-[Edit a report](http://support.powerbi.com/knowledgebase/articles/443094)
+[Edit a report](powerbi-service-interact-with-a-report-in-editing-view.md)
 
-[Create a report](http://support.powerbi.com/knowledgebase/articles/475616)
+[Create a report](powerbi-service-create-a-new-report.md)
 
 
 
 ## See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)
+Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)﻿
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
 

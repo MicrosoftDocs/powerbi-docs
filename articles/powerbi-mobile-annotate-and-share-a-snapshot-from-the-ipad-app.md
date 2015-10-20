@@ -47,5 +47,5 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 5.  Tap Send.
 
 ## See Also  
-[Get started with the iPad app](http://support.powerbi.com/knowledgebase/articles/467172) (Power BI for iOS)  
-[Share dashboards from the iPad app](http://support.powerbi.com/knowledgebase/articles/467181)
+[Get started with the iPad app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS)  
+[Share dashboards from the iPad app](powerbi-mobile-share-dashboards-from-the-ipad-app.md)

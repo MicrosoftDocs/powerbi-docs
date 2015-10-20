@@ -40,7 +40,7 @@ The 3 major building blocks of Power BI are: ***dashboards***, ***reports***, an
 
 A *dataset* is something that you *import* or *connect* to. Use Power BI to bring all of your data together. See it all in one place and access it from all of your devices.
 
-In the navigation pane, the datasets you've connected to are listed under the **Datasets** heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. [See the list of dataset types that can be used with Power BI](http://support.powerbi.com/knowledgebase/articles/434354).
+In the navigation pane, the datasets you've connected to are listed under the **Datasets** heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. [See the list of dataset types that can be used with Power BI](powerbi-service-get-data.md).
 
 **ONE** dataset...
 - can be used over and over.
@@ -49,7 +49,7 @@ In the navigation pane, the datasets you've connected to are listed under the **
 
 ![](media/powerbi-service-basic-concepts/Drawing2.png)
 
-To [connect to a dataset](http://support.powerbi.com/knowledgebase/articles/434354), select **Get Data** (at the bottom of the navigation pane) or select the plus icon (next to the **Datasets** heading). Follow the instructions to connect to the specific source and add the dataset to your workspace. The new dataset is added to the left navigation pane with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
+To [connect to a dataset](powerbi-service-get-data.md), select **Get Data** (at the bottom of the navigation pane) or select the plus icon (next to the **Datasets** heading). Follow the instructions to connect to the specific source and add the dataset to your workspace. The new dataset is added to the left navigation pane with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
 
 To explore a dataset, select that dataset.  You can explore the dataset by dragging and dropping fields from the field list and specifying what visual you'd like the data displayed in.  If you'd like to save these visuals as a report, simply select **Save**. Back in **My Workspace**, the new report is added to the left navigation pane with a yellow asterisk. 
 
@@ -63,7 +63,7 @@ To explore a dataset, select that dataset.  You can explore the dataset by drag
 
 A Power BI report is one or more pages of visualizations (charts and graphs).  Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created for you when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications and [content packs](https://support.powerbi.com/knowledgebase/articles/434354).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
 
-There are 2 ways to view and interact with reports: [Reading View](http://support.powerbi.com/knowledgebase/articles/439920) and [Editing View](http://support.powerbi.com/knowledgebase/articles/443094).  Only a report creator or owner can open Editing View for a report. Use Editing View to create and modify and explore your report. Reading View offers more-limited interaction; you can [interact with filters](http://support.powerbi.com/knowledgebase/articles/467092) (if the report owner created any), dig down into visualizations, do page-level filtering and highlighting, and temporarily pin visualizations to the dashboard (the pinned tiles will not be saved when you close and reopen Power BI).
+There are 2 ways to view and interact with reports: [Reading View](powerbi-service-open-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  Only a report creator or owner can open Editing View for a report. Use Editing View to create and modify and explore your report. Reading View offers more-limited interaction; you can [interact with filters](powerbi-service-about-filters-and-highlighting-in-reports.md) (if the report owner created any), dig down into visualizations, do page-level filtering and highlighting, and temporarily pin visualizations to the dashboard (the pinned tiles will not be saved when you close and reopen Power BI).
 
 
 In the navigation pane, your reports are listed under the Reports heading. Each listed report represents 1 or more pages of visualizations based on 1 or more of the underlying datasets. All of the reports listed here can be opened in both Reading View and Editing View.To open a report, simply select it. By default, the report opens in Reading View and I select Edit Report to open it in Editing View.  If a shared dashboard has reports, you will NOT see the report listed in the navigation pane.  To open the report, from the shared dashboard, select one of the tiles. If the report owner pinned the tile from a report, the report opens.  If the report owner pinned the tile from Q&A, Q&A opens.
@@ -78,7 +78,7 @@ In the navigation pane, your reports are listed under the Reports heading. Eac
 
 ## Dashboards
 
-A *dashboard* is something you create or something a colleague creates and shares with you. It is a single canvas that contains one or more tiles. Each tile displays a single [visualization](http://support.powerbi.com/knowledgebase/topics/65160-all-about-visualizations)that was created from the data in one of the underlying dataset(s). The only exception to this is a brand new dashboard created from scratch – if I click the plus icon next to **Dashboards**, and name it – my new dashboard has no tiles at all. To [create and add a tile](http://support.powerbi.com/knowledgebase/articles/425669), you must be in report [Editing View](http://support.powerbi.com/knowledgebase/articles/443094) or in [Q&A](http://support.powerbi.com/knowledgebase/articles/474566). 
+A *dashboard* is something you create or something a colleague creates and shares with you. It is a single canvas that contains one or more tiles. Each tile displays a single [visualization](http://support.powerbi.com/knowledgebase/topics/65160-all-about-visualizations)that was created from the data in one of the underlying dataset(s). The only exception to this is a brand new dashboard created from scratch – if I click the plus icon next to **Dashboards**, and name it – my new dashboard has no tiles at all. To [create and add a tile](powerbi-service-dashboard-tiles.md), you must be in report [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) or in [Q&A](powerbi-service-q-and-a.md). 
 
 In the navigation pane, your dashboards are listed under the **Dashboards** heading. Each listed dashboard represents a customized view of some subset of the underlying datasets.  What this means is that someone (you or a colleague) created the dashboard and then navigated to Editing View where s/he explored the data and created visualizations and then picked some of those visualizations to display on the dashboard.
 
@@ -90,9 +90,9 @@ To permanently pin a tile to a dashboard, I must a report owner.  If I’m not 
 
 ![](media/powerbi-service-basic-concepts/Drawing1.png)
 
-**A dashboard can be [created from scratch](http://support.powerbi.com/knowledgebase/articles/475163)** -- create a new blank dashboard and then get some data. 
+**A dashboard can be [created from scratch](powerbi-service-create-a-dashboard.md)** -- create a new blank dashboard and then get some data. 
 
-**You, or a colleague, can create a dashboard and [share it](http://support.powerbi.com/knowledgebase/articles/431008)** -  when you accept the invitation, the shared dashboard (and associated report and dataset) is added to your navigation pane. 
+**You, or a colleague, can create a dashboard and [share it](powerbi-service-share-unshare-dashboard.md)** -  when you accept the invitation, the shared dashboard (and associated report and dataset) is added to your navigation pane. 
 
 **Sometimes dashboards are imported with the dataset or are created as you connect to the dataset**. For example, the **Get Data** wizard for Salesforce asks you if you'd like a dashboard and/or report to be created from the dataset. 
 
@@ -106,9 +106,9 @@ To permanently pin a tile to a dashboard, I must a report owner.  If I’m not 
 
 ## The Retail Analysis Sample dashboard
 
-The first time you open Power BI, you're looking at the [sample dashboard](https://support.powerbi.com/knowledgebase/articles/474807), the ***Retail Analysis Sample***.  This sample will always be there, unless you [manually remove it](http://support.powerbi.com/knowledgebase/articles/475173).
+The first time you open Power BI, you're looking at the [sample dashboard](https://support.powerbi.com/knowledgebase/articles/474807), the ***Retail Analysis Sample***.  This sample will always be there, unless you [manually remove it](powerbi-service-delete-or-remove-a-dashboard.md).
 
-Even though it doesn't show up in the navigation pane under Reports, the Retail Analysis Sample dashboard does have a report (see **NOTE** above).The Sample report is made up of several pages of visualizations that highlight insights about the underlying dataset.  Unless you remove it, the Sample report is always available for you to use to explore and learn.  [Take a tour of the Retail Analysis Sample](http://support.powerbi.com/knowledgebase/articles/474807). 
+Even though it doesn't show up in the navigation pane under Reports, the Retail Analysis Sample dashboard does have a report (see **NOTE** above).The Sample report is made up of several pages of visualizations that highlight insights about the underlying dataset.  Unless you remove it, the Sample report is always available for you to use to explore and learn.  [Take a tour of the Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour.md). 
 
 **Because it’s a sample, you can’t save changes to the Retail Analysis Sample dashboard or report**. For a version of this sample that you can edit, in the navigation pane, click **Get Data \> Samples \> Retail Analysis Sample**. Also, although you will be able to temporarily pin tiles from other datasets, you will only be able to use Q&A with the sample dataset.
 
@@ -118,11 +118,11 @@ Use the navigation pane to move between the Power BI building blocks: dashboards
 
 ![](media/powerbi-service-basic-concepts/NavPane.png)
 
--   Click **Get Data** to [add datasets to Power BI](http://support.powerbi.com/knowledgebase/articles/434354).
+-   Click **Get Data** to [add datasets to Power BI](powerbi-service-get-data.md).
 -   Use the filter to limit what is shown on the navigation pane.
 -   Click the plus icon ![](media/powerbi-service-basic-concepts/pbi_Nancy_plus.png) to create a new dashboard or get a new dataset.
 -   The listed **Dashboards, Reports,** and **Datasets **are available for you to use.  Shared dashboards are read-only and display a lock icon ![](media/powerbi-service-basic-concepts/pbi_Nancy_LockIcon.png).
--   Dashboard, report, and dataset names usually match the name of the underlying dataset file -- but you can [rename them](http://support.powerbi.com/knowledgebase/articles/475172).
+-   Dashboard, report, and dataset names usually match the name of the underlying dataset file -- but you can [rename them](powerbi-service-rename-a-dashboard.md).
 -   Right-click a dashboard, report or dataset to display the context-sensitive menu. 
 
     ![](media/powerbi-service-basic-concepts/menu.png)
@@ -137,7 +137,7 @@ Single-click
 
 ## Dashboard tiles
 
-Dashboards are composed of [visualization tiles](http://support.powerbi.com/knowledgebase/articles/425669).  Tiles are created either in report Editing View or Q&A.  The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
+Dashboards are composed of [visualization tiles](powerbi-service-dashboard-tiles.md).  Tiles are created either in report Editing View or Q&A.  The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
 ![](media/powerbi-service-basic-concepts/canvas.png)
 
@@ -180,7 +180,7 @@ Click to return to the dashboard that you viewed most recently.
 
 ## See Also:
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI videos](http://support.powerbi.com/knowledgebase/articles/475702)
+[Power BI videos](powerbi-videos.md)
 

@@ -25,9 +25,9 @@ We have an Excel workbook of sample financial data available for download.  H
 
 ## See also
 
-[Get Data](http://support.powerbi.com/knowledgebase/articles/434354)
+[Get Data](powerbi-service-get-data.md)
 
-[Excel data](http://support.powerbi.com/knowledgebase/articles/424871)
+[Excel data](powerbi-service-excel-data.md)
 
-[Sample datasets](http://support.powerbi.com/knowledgebase/articles/471112)
+[Sample datasets](powerbi-sample-datasets.md)
 

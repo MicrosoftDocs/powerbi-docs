@@ -22,20 +22,20 @@ Package up and share your own dashboard, reports, and datasets with your coworke
 
 >**NOTE**:  Organizational content packs are only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479).
 
-In the Content Pack Library, you can browse and access the content packs published to the entire organization and to [security groups and Office 365 groups you belong to](http://support.powerbi.com/knowledgebase/articles/654247%0A).  If you are not a member of a specific group, you will not see that group's content packs. All members of the group have the same access and view of the content pack data, reports, and dashboards (unless it's an SSAS data source, in which case your privileges are inherited with the data source).
+In the Content Pack Library, you can browse and access the content packs published to the entire organization and to [security groups and Office 365 groups you belong to](powerbi-service-groups.md%0A).  If you are not a member of a specific group, you will not see that group's content packs. All members of the group have the same access and view of the content pack data, reports, and dashboards (unless it's an SSAS data source, in which case your privileges are inherited with the data source).
 
 By default, the dashboards and reports are read-only but members can unlock and use them as a starting point for customizing their own reports and dashboards.  Once you edit a content pack, you now have a personalized version of the content pack.
 
 All group members see the same data (unless it's an SSAS data source, in which case privileges are inherited with the data source).
 
-This is different from [dashboard sharing](http://support.powerbi.com/knowledgebase/articles/431008), which gives read-only access to a dashboard and associated reports. Read [How should I share my dashboard?](https://support.powerbi.com/knowledgebase/articles/) to decide on the best for your situation. 
+This is different from [dashboard sharing](powerbi-service-share-unshare-dashboard.md), which gives read-only access to a dashboard and associated reports. Read [How should I share my dashboard?](https://support.powerbi.com/knowledgebase/articles/) to decide on the best for your situation. 
 
 -   [What is a content gallery?](651040.html#cg)
 -   Data security and SSAS tabular data connections
 -   [How to create and publish an organizational content pack](https://support.powerbi.com/knowledgebase/articles/651337%0A).
 -   [How to find and open an organizational content pack](https://support.powerbi.com/knowledgebase/articles/651715).
 -   [How to manage, update, and delete an organizational content pack](https://support.powerbi.com/knowledgebase/articles/651631%0A).
--   [What is a Power BI ](http://support.powerbi.com/knowledgebase/articles/654247%0A)*[group?](http://support.powerbi.com/knowledgebase/articles/654247%0A)*
+-   [What is a Power BI ](powerbi-service-groups.md%0A)*[group?](powerbi-service-groups.md%0A)*
 
 ## Working with organizational content packs
 
@@ -77,9 +77,9 @@ All group members have the same permissions to the data as the content pack cre
 
 [Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get Started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Groups in Power BI](http://support.powerbi.com/knowledgebase/articles/654247%0A)
+[Groups in Power BI](powerbi-service-groups.md%0A)
 

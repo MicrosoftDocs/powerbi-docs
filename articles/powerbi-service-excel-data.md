@@ -44,7 +44,7 @@ Power BI recognizes values and supports these data types: Whole Number, Decimal 
 ## Refreshing Excel data
 
 -   When you upload an Excel workbook from your computer, you can't refresh the data. 
--   When you connect to an [Excel workbook in OneDrive](http://support.powerbi.com/knowledgebase/articles/471009), you can [refresh the data](http://support.powerbi.com/knowledgebase/articles/474669).
+-   When you connect to an [Excel workbook in OneDrive](powerbi-service-refresh-excel-data-stored-in-onedrive.md), you can [refresh the data](powerbi-refresh-data.md).
 
 ## Troubleshooting
 
@@ -54,7 +54,7 @@ Currently, when you connect to an Excel workbook as a dataset, Power BI only i
 
 See also
 
--  [Get data](http://support.powerbi.com/knowledgebase/articles/434354)
--  [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814) 
--  [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+-  [Get data](powerbi-service-get-data.md)
+-  [Get started with Power BI](powerbi-service-get-started.md) 
+-  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

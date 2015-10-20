@@ -61,7 +61,7 @@
 
 [Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

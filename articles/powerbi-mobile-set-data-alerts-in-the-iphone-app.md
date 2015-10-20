@@ -37,5 +37,5 @@ Data sources are often set to refresh daily, although someone can manually refre
 ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneAlertSet.png)
 
 ## See Also  
-[Get started with the iPhone app for Power BI](http://support.powerbi.com/knowledgebase/articles/527036)  
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  
+[Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
+[Get started with Power BI](powerbi-service-get-started.md)  

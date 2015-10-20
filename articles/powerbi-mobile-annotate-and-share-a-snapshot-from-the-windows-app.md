@@ -61,7 +61,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
 ## See also
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917).
+More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
 
-[Share dashboards](http://support.powerbi.com/knowledgebase/articles/510955) from the Power BI for Windows app
+[Share dashboards](powerbi-mobile-share-dashboards-from-the-windows-app.md) from the Power BI for Windows app
 

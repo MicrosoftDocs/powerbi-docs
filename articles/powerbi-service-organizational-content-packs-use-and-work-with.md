@@ -52,9 +52,9 @@ See [Managing, updating, and deleting organizational content packs](https://supp
 
 [Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get Started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 

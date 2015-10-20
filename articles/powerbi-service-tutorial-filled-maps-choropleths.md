@@ -41,18 +41,18 @@ Filled Maps are a great choice:
 ## Create a basic Filled Map  
 We'll create a Filled Map that shows sentiment data by state.
 
-These instructions use the Sales and Marketing Sample. To follow along, [download the sample](http://support.powerbi.com/knowledgebase/articles/514904), sign in to Power BI and select **Get Data \> Files \> Local File** ﻿and upload the Sales and Marketing Sample.
+These instructions use the Sales and Marketing Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Files \> Local File** ﻿and upload the Sales and Marketing Sample.
 
 >**Note:**  
 >This tutorial uses the classic report canvas.  For more information, see Power BI classic report canvas vs. new report canvas.
 
-1.  Start on a [blank report page ](http://support.powerbi.com/knowledgebase/articles/474804)in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094)from the Sales and Marketing Sample dataset  
+1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)from the Sales and Marketing Sample dataset  
 ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F084%2F203%2F905%2Foriginal%2Fdataset.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1505573054%26Signature%3DVGMr4eDDO4QPkTDvczVjPJpZTx4%253D&key=afea23f29e5a4f63bd166897e3dc72df)
 
 2.  and select the **Geo** \> **State** field.    
 ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F084%2F203%2F950%2Foriginal%2Fdataset.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1505573054%26Signature%3DLk38ZCrWnIrP5gFqk%252FDc6Gg0%252Bfo%253D&key=afea23f29e5a4f63bd166897e3dc72df)
 
-3.  [Convert the chart](http://support.powerbi.com/knowledgebase/articles/444663) to a Filled Map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the Filled Map.  
+3.  [Convert the chart](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a Filled Map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the Filled Map.  
 ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F084%2F204%2F109%2Foriginal%2Fdataset.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1505573054%26Signature%3DJFnxS438zpeKwalAwipAbJ5%252BGaE%253D&key=afea23f29e5a4f63bd166897e3dc72df)
 
 4.  Filter the map to display only the continental United States.
@@ -72,9 +72,9 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 6.  The Filled Map is shaded in blue, with light blue representing the lower sentiment numbers and dark blue representing the higher, more-positive sentiment.  Here I've highlighted the state of Wyoming (WY) and see that Sentiment is very good, 74.  
 ![](https://i.embed.ly/1/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fuploads.uservoice.com%2Fassets%2F084%2F204%2F349%2Foriginal%2Fdataset.png%3FAWSAccessKeyId%3D14D6VH0N6B73PJ6VE382%26Expires%3D1505573054%26Signature%3DvsRNhjZMgAHKEnRz7huallGxk5I%253D&key=afea23f29e5a4f63bd166897e3dc72df)
 
-7.  [Add the Filled Map as a dashboard tile (pin the visual)](http://support.powerbi.com/knowledgebase/articles/425669). 
+7.  [Add the Filled Map as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md). 
 
-8.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112).
+8.  [Save the report](powerbi-service-save-a-report.md).
 
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](https://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
@@ -95,6 +95,6 @@ If you do not have access to latitude and longitude data, [follow these instruct
 
 ## See Also  
  [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
- [Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323)  
- [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
+ [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
+ [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Try it out -- it's free!](https://powerbi.com/)  

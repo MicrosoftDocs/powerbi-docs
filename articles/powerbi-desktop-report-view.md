@@ -53,4 +53,4 @@ To delete a page, click the X on the page's tab at the bottom of the Report Vi
 
 ![](media/powerbi-desktop-report-view/PBI_ReportViewInPBIDesigner_DeletePage.png)
 
-**Note:** Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/461278) to your  Power BI site.
+**Note:** Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md) to your  Power BI site.

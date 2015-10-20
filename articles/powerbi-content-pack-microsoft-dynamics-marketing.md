@@ -64,7 +64,7 @@ Connect to [Dynamics Marketing content pack](https://app.powerbi.com/getdata/ser
 6.  After connecting, you'll see a Dynamics Marketing dashboard, populated with your own data. The yellow asterisks mark the new items in the left navigation pane.
 	![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_DynamMktgNewDash.png)
 
-This dashboard can be fully changed to how you want to display your data. it allows you to ask a [question in ](http://support.powerbi.com/knowledgebase/articles/474566)[Q&A](http://support.powerbi.com/knowledgebase/articles/474566) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669) and [c](http://support.powerbi.com/knowledgebase/articles/424878)[](http://support.powerbi.com/knowledgebase/articles/424878)[hange the tiles](http://support.powerbi.com/knowledgebase/articles/424878) in the dashboard.
+This dashboard can be fully changed to how you want to display your data. it allows you to ask a [question in ](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
 
 ### Troubleshooting
@@ -83,6 +83,6 @@ If you're still having issues, open a support ticket to reach the Power BI tea
 
 #### See also
 
-[Get Data for Power BI](http://support.powerbi.com/knowledgebase/articles/434354)
+[Get Data for Power BI](powerbi-service-get-data.md)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get Started with Power BI](powerbi-service-get-started.md)

@@ -66,15 +66,15 @@ Data modeling:
 
 [Create and manage relationships in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/464155-create-and-manage-relationships-in-power-bi-design)
 
-[Calculated columns in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/590598)
+[Calculated columns in Power BI Desktop](powerbi-desktop-calculated-columns.md)
 
 [Measures in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/554577-measures-in-power-bi-designer)
 
 [Data types in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/558030-data-types-in-power-bi-designer)
 
-[Data categorization in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/594282)
+[Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)
 
-[Sort By Column in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/592116)
+[Sort By Column in Power BI Desktop](powerbi-desktop-sort-by-column.md)
 
 [DAX basics in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-designer)
 
@@ -89,5 +89,5 @@ Data modeling:
 
 [Tutorial: Create your own measures in Power BI Desktop ](https://support.powerbi.com/knowledgebase/articles/556656-tutorial-create-your-own-measures-in-power-bi-des)
 
-[Tutorial: Create calculated columns in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/590610)
+[Tutorial: Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md)
 

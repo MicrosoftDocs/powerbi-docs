@@ -20,7 +20,7 @@
 # How to use report filters  
 
 ## Working with filters  
-Report owners can add filters to a report and those filters are saved with the report.  This is [done in Editing View](http://support.powerbi.com/knowledgebase/articles/464704).  People viewing the report in [Reading View can interact with the filters](http://support.powerbi.com/knowledgebase/articles/445094), but cannot save changes to the report.
+Report owners can add filters to a report and those filters are saved with the report.  This is [done in Editing View](powerbi-service-add-a-filter-to-a-report.md).  People viewing the report in [Reading View can interact with the filters](powerbi-service-interact-with-a-report-in-reading-view.md), but cannot save changes to the report.
 
 Filters are displayed in the bottom half of the **Visualization pane**:  
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterList.jpg)
@@ -72,8 +72,8 @@ If the field values represent date or time, you can specify a start/end time wh
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_date-time-filters.png)
 
 ## See Also  
-[Filters and highlighting in reports](http://support.powerbi.com/knowledgebase/articles/467092)  
-[Interact with filters and highlighting in report Reading View](http://support.powerbi.com/knowledgebase/articles/445094)  
-[Create filters in report Editing View](http://support.powerbi.com/knowledgebase/articles/464704)  
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029) 
+[Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)  
+[Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)  
+[Create filters in report Editing View](powerbi-service-add-a-filter-to-a-report.md)  
+Read more about [reports in Power BI](powerbi-service-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md) 

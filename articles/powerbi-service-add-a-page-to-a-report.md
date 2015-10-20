@@ -25,5 +25,5 @@ Select the yellow plus icon and then type a new name for the page.
 ![](media/powerbi-service-add-a-page-to-a-report/reorderPages2.gif)
 
 ## See Also  
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+Read more about [reports in Power BI](powerbi-service-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

@@ -62,5 +62,5 @@ Removing a favorite doesn't remove the tile from the dashboard. It's just no lon
 
 [Get started with the Android app for Power BI](https://support.powerbi.com/knowledgebase/articles/577773)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)
 

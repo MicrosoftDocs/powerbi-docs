@@ -55,4 +55,4 @@ For fast and easy access to your most interesting data, you can mark specific ti
 
 2.  Tap **Done** in the upper-right corner when you've finished.
 
-More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172) for Power BI.
+More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.

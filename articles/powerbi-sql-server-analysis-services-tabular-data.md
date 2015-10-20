@@ -18,7 +18,7 @@
    ms.author="v-anpasi"/>
 # SQL Server Analysis Services Tabular data in Power BI
 
-In Power BI, there are two ways you can connect to SQL Server Analysis Services Tabular model data. In Get data, you can connect to a SQL Server Analysis Services server, or you can [connect to an Excel workbook](http://support.powerbi.com/knowledgebase/articles/424871) that already connects to an Analysis Services server. If your Excel workbook has reports based on your tabular data, you’ll be able to explore and edit them right in Power BI.
+In Power BI, there are two ways you can connect to SQL Server Analysis Services Tabular model data. In Get data, you can connect to a SQL Server Analysis Services server, or you can [connect to an Excel workbook](powerbi-service-excel-data.md) that already connects to an Analysis Services server. If your Excel workbook has reports based on your tabular data, you’ll be able to explore and edit them right in Power BI.
 
  ![](media/powerbi-sql-server-analysis-services-tabular-data/importantIcon.png) **Important:** 
 

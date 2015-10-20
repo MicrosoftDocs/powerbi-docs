@@ -73,7 +73,7 @@ This industry sample dashboard and underlying dataset and report analyze a CFO's
 ## Retail Analysis sample content pack  
 This industry sample dashboard and underlying dataset and report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, and variance, as well as new store analysis.
 
--   [Take a tour of the Retail Analysis sample](http://support.powerbi.com/knowledgebase/articles/474807).
+-   [Take a tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).
 -   Download the [Retail Analysis sample content pack](https://support.powerbi.com/knowledgebase/articles/640117).
 -   [Download the Excel file for this sample.](http://go.microsoft.com/fwlink/?LinkId=528592)
 

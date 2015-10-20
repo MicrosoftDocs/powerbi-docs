@@ -20,7 +20,7 @@
 
 Some of the most powerful data analysis solutions in Power BI Desktop can be created by using measures. Measures help us by performing calculations on our data as we interact with our reports. This tutorial will guide you through understanding and creating some of your own basic measures in Power BI Desktop.
 
-This article is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Get Data and Query Editor to import data, working with multiple related tables, and adding fields to the Report Canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/471664).
+This article is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Get Data and Query Editor to import data, working with multiple related tables, and adding fields to the Report Canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md).
 
 To complete the steps in this tutorial, you’ll need to download the [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file. It already includes online sales data from the fictitious company, Contoso, Inc. Because data in the file was imported from a database, you won’t be able to connect to the datasource or view it in Query Editor. When you have the file on your own computer, go ahead and open it in Power BI Desktop.
 
@@ -267,7 +267,7 @@ Measures give us a lot of power in getting the insights we want from our data. W
 
 ## Additional resources
 
-If you want to take a deeper dive into DAX formulas, and create some more advanced measures, see [DAX basics in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/554619). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
+If you want to take a deeper dive into DAX formulas, and create some more advanced measures, see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
 Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
 

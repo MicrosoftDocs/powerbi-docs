@@ -77,7 +77,7 @@ The workbook contains the actual data, but it's in the data model, not in worksh
 
 ## See Also:
 
-[Sample datasets](http://support.powerbi.com/knowledgebase/articles/471112)
+[Sample datasets](powerbi-sample-datasets.md)
 
-[Get data for Power BI](http://support.powerbi.com/knowledgebase/articles/434354)
+[Get data for Power BI](powerbi-service-get-data.md)
 

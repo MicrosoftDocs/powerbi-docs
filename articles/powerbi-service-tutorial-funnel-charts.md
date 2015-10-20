@@ -62,13 +62,13 @@ Funnel Charts:
 
 We'll create a Funnel Chart that shows the number of opportunities we have in our sales stages.
 
-These instructions use the Opportunity Tracking Sample. To follow along, [download the sample](http://support.powerbi.com/knowledgebase/articles/514904), sign in to Power BI and select **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
+These instructions use the Opportunity Tracking Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
 
-1. Start on a [blank report page ](http://support.powerbi.com/knowledgebase/articles/474804)in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094)and select the **SalesStage** \> **Sales Stage** field.  
+1. Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)and select the **SalesStage** \> **Sales Stage** field.  
 
 	![](media/powerbi-service-tutorial-funnel-charts/FunnelSelectField.png)
 
-2. [Convert the chart](http://support.powerbi.com/knowledgebase/articles/444663)to a Funnel. Notice that **Sales Stage** is in the **Group** well and **Count of Sales Stage** is in the **Values** well. Power BI created the Value for us, but we're going to use a different one. 
+2. [Convert the chart](powerbi-service-change-the-type-of-visualization-in-a-report.md)to a Funnel. Notice that **Sales Stage** is in the **Group** well and **Count of Sales Stage** is in the **Values** well. Power BI created the Value for us, but we're going to use a different one. 
 
 	![](media/powerbi-service-tutorial-funnel-charts/FunnelConvertTo.png)
 
@@ -88,9 +88,9 @@ These instructions use the Opportunity Tracking Sample. To follow along, [downlo
 
 	![](media/powerbi-service-tutorial-funnel-charts/funnelHover.png)
 
-5. [Add the Funnel as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669). 
+5. [Add the Funnel as a dashboard tile](powerbi-service-dashboard-tiles.md). 
 
-6. [Save the report](http://support.powerbi.com/knowledgebase/articles/444112).
+6. [Save the report](powerbi-service-save-a-report.md).
 
 ## Create an advanced Funnel Chart
 
@@ -104,7 +104,7 @@ Instead of a perfectly-shaped funnel chart each month, we see many different sha
 
 ## Highlighting and cross-filtering
 
-For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704).
+For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 Highlighting a bar in a Funnel cross-filters the other visualizations on the report page... and vice versa.
 
@@ -118,7 +118,7 @@ Highlighting a bar in a Funnel cross-filters the other visualizations on the rep
 
 ## Create a Funnel Chart in Q&A
 
-Highlight the dashboard that has at least one visualization pinned from the "Opportunity Tracking" dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](http://support.powerbi.com/knowledgebase/articles/487029).
+Highlight the dashboard that has at least one visualization pinned from the "Opportunity Tracking" dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](powerbi-service-basic-concepts.md).
 
 1.  Highlight a dashboard that has at least one tile pinned from the Opportunity Tracking dataset.
 
@@ -132,7 +132,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
-[Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323)
+[Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

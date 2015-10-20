@@ -40,7 +40,7 @@ The *Page View* settings let you control the display of your report page relativ
 -   **Fit to Width**: contents are scaled to fit within the width of the page
 -   **Actual Size**: contents are displayed at full size
 
-Page View settings are available in both [Reading View](http://support.powerbi.com/knowledgebase/articles/445094) and [Editing View](http://support.powerbi.com/knowledgebase/articles/443094). In Editing View, a report owner can assign a Page View setting to individual report pages, and those settings are saved with the report. When a colleague opens that report in Reading View, she sees the report pages display using the owner's settings.  However, while working with the report in Reading View, she can temporarily change the Page View settings.  Once she leaves the report, the Page View settings revert back to those that were set by the report owner. 
+Page View settings are available in both [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). In Editing View, a report owner can assign a Page View setting to individual report pages, and those settings are saved with the report. When a colleague opens that report in Reading View, she sees the report pages display using the owner's settings.  However, while working with the report in Reading View, she can temporarily change the Page View settings.  Once she leaves the report, the Page View settings revert back to those that were set by the report owner. 
 
 ## Page Size settings
 
@@ -57,5 +57,5 @@ The *Page Size* settings control the display ratio and actual size (in pixels). 
 
 ## See Also:
 
-Read more about [reports in Power B](http://support.powerbi.com/knowledgebase/articles/425684)
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+Read more about [reports in Power B](powerbi-service-reports.md)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

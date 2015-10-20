@@ -50,7 +50,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
     ![](media/powerbi-service-tutorial-basic-area-chart/AreachartTutorial.png)
 
 ## Highlighting and cross-filtering  
-For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704).
+For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 To select an area, click inside that area or along the top line.  Basic Area charts do not cross-filter the other visualizations on the report page. However, Area charts are a target for cross-filtering triggered by other visualizations on the report page.
 
@@ -59,5 +59,5 @@ To select an area, click inside that area or along the top line.  Basic Area ch
 
 ## See Also  
 [Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)  
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

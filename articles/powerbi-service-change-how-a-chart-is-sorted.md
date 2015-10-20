@@ -35,6 +35,6 @@ It's easy to sort it from highest to lowest sales per square feet instead.
 
 ## See Also:
 
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821).
+More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

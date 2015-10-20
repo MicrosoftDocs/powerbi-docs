@@ -19,10 +19,10 @@
 
 # Find and open an organizational content pack  
 
-When an organizational content pack is published to your organization or [group](http://support.powerbi.com/knowledgebase/articles/654247%0A), it appears in your  content gallery.  Browse the content gallery to find and open organizational content packs.
+When an organizational content pack is published to your organization or [group](powerbi-service-groups.md%0A), it appears in your  content gallery.  Browse the content gallery to find and open organizational content packs.
 
 ## Open an organizational content pack  
-Every [Power BI Pro](https://powerbi.microsoft.com/pricing) user has an organizational content pack library that displays content packs shared with the entire organization. If you belong to any [groups](http://support.powerbi.com/knowledgebase/articles/654247%0A), you'll also see content packs shared with those groups.   
+Every [Power BI Pro](https://powerbi.microsoft.com/pricing) user has an organizational content pack library that displays content packs shared with the entire organization. If you belong to any [groups](powerbi-service-groups.md%0A), you'll also see content packs shared with those groups.   
 
 1.  From the left Navigation Pane, select **Get Data \> My Organization**.
 
@@ -45,6 +45,6 @@ If the content pack owner changes the content pack, and:
 
 ## See Also  
 [Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)  
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
-[Groups in Power BI](http://support.powerbi.com/knowledgebase/articles/654247%0A)  
+[Get Started with Power BI](powerbi-service-get-started.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Groups in Power BI](powerbi-service-groups.md%0A)  

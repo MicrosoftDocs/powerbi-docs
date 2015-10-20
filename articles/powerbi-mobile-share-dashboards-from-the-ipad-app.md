@@ -19,7 +19,7 @@
 
 # Share dashboards from the iPad app (Power BI for iOS)
 
-Invite colleagues by sharing links to dashboards and [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/527030) from the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS. The people you share it with need to sign up for Power BI, too.
+Invite colleagues by sharing links to dashboards and [snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) from the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS. The people you share it with need to sign up for Power BI, too.
 
 ## Share a dashboard with colleagues
 
@@ -65,8 +65,8 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 ### See Also
 
-[Annotate and share a snapshot of a tile from the iPad app](http://support.powerbi.com/knowledgebase/articles/527030)
+[Annotate and share a snapshot of a tile from the iPad app](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
 
-[Share a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/431008)
+[Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
 
-[The iPad app](http://support.powerbi.com/knowledgebase/articles/467172) for Power BI for iOS
+[The iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI for iOS

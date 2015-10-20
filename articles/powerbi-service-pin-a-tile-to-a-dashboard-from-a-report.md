@@ -19,17 +19,17 @@
 
 # Pin a tile to a Power BI dashboard from a report
 
-﻿One way to add a new [dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669) is from within a [Power BI report](http://support.powerbi.com/knowledgebase/articles/425684). In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
+﻿One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is from within a [Power BI report](powerbi-service-reports.md). In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
 
 **NOTE**:  You can pin tiles from shared reports to a dashboard, but your changes aren't saved after you log out.
 
-1.  [Get data](http://support.powerbi.com/knowledgebase/articles/434354).
+1.  [Get data](powerbi-service-get-data.md).
 
-2.  Open a [report](http://support.powerbi.com/knowledgebase/articles/425684).
+2.  Open a [report](powerbi-service-reports.md).
 
 ### Pin a tile from a report in Reading View
 
-When you open a report that has one or more pages, it [opens in Reading View](http://support.powerbi.com/knowledgebase/articles/439920): you can interact with the visualizations and filters, but not edit the report. You can pin a tile from Reading View or from Editing View.
+When you open a report that has one or more pages, it [opens in Reading View](powerbi-service-open-a-report-in-reading-view.md): you can interact with the visualizations and filters, but not edit the report. You can pin a tile from Reading View or from Editing View.
 
 1.  Hover over the visualization you want to pin, and select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png) icon. 
 
@@ -48,7 +48,7 @@ When you open a report that has one or more pages, it [opens in Reading View](ht
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/pinSuccess.png)
 
-4.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](http://support.powerbi.com/knowledgebase/articles/424878) the pinned visualization.
+4.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
 ### Pin a tile from Editing View
 
@@ -64,6 +64,6 @@ When you open a report that has one or more pages, it [opens in Reading View](ht
 
 [Q&A in Power BI](https://support.powerbi.com/knowledgebase/articles/474566)
 
-[Power BI Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI Preview](http://support.powerbi.com/knowledgebase/articles/424868)
+[Dashboards in Power BI Preview](powerbi-service-dashboards.md)

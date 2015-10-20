@@ -76,9 +76,9 @@ Your fully qualified server name and database name can be found in the Azure Por
 
 ## See Also:
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](http://support.powerbi.com/knowledgebase/articles/434354)
+[Get Data for Power BI](powerbi-service-get-data.md)
 
 
 

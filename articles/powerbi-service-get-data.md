@@ -23,7 +23,7 @@ Dashboards, reports, and datasets are at the heart of Power BI. Connect to or im
 
 
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029).
+Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
 ## Power BI data sources
 
@@ -37,7 +37,7 @@ Power BI is designed to work well with a variety of data sources:
 
 -   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](https://support.powerbi.com/knowledgebase/articles/581421) and SQL Server [Analysis Services tabular data](https://support.powerbi.com/knowledgebase/articles/471633).
 
-**Tip**: Read [Important considerations for connecting to data.](http://support.powerbi.com/knowledgebase/articles/475435)
+**Tip**: Read [Important considerations for connecting to data.](powerbi-service-important-considerations-for-connecting-to-data-in-power-bi.md)
 
 ## How to get data
 
@@ -59,13 +59,13 @@ How you get data depends on the kind of data you're getting.
 
 After you've connected to or imported a dataset, it's time to: 
 
--   [Explore the dataset](http://support.powerbi.com/knowledgebase/articles/475159) 
+-   [Explore the dataset](powerbi-service-explore-a-dataset.md) 
 
--   [View and create reports](http://support.powerbi.com/knowledgebase/articles/425684) 
+-   [View and create reports](powerbi-service-reports.md) 
 
--   [Add the most important information to your dashboard](http://support.powerbi.com/knowledgebase/articles/424868) 
+-   [Add the most important information to your dashboard](powerbi-service-dashboards.md) 
 
--   [Use Q&A to ask questions on your dataset](http://support.powerbi.com/knowledgebase/articles/474566) 
+-   [Use Q&A to ask questions on your dataset](powerbi-service-q-and-a.md) 
 
 -   And more.
 
@@ -73,9 +73,9 @@ After you've connected to or imported a dataset, it's time to: 
 
 ## See Also:
 
-[Sample](http://support.powerbi.com/knowledgebase/articles/471112)[datasets](http://support.powerbi.com/knowledgebase/articles/471112)
+[Sample](powerbi-sample-datasets.md)[datasets](powerbi-sample-datasets.md)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get Started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

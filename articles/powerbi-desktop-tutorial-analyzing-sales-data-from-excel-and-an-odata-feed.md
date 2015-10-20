@@ -197,7 +197,7 @@ As you perform query activities in Query Editor, query steps are created and lis
 
 ## Task 3: Combine the Products and Total Sales queries
 
-Power BI Desktop does not require you to combine queries to report on them. Instead, you can create **Relationships** between datasets. These relationships can be created on any column that is common to your datasets. For more information see [Create and manage relationships](http://support.powerbi.com/knowledgebase/articles/464155). 
+Power BI Desktop does not require you to combine queries to report on them. Instead, you can create **Relationships** between datasets. These relationships can be created on any column that is common to your datasets. For more information see [Create and manage relationships](powerbi-desktop-create-and-manage-relationships.md). 
 
 In this tutorial, we have Orders and Products data that share a common 'ProductID' field, so we need to ensure there's a relationship between them in the model we're using with Power BI Desktop. Simply specify in Power BI Desktop that the columns from each table are related (i.e. columns that have the same values). Power BI Desktop works out the direction and cardinality of the relationship for you. In some cases, it will even detect the relationships automatically.
 
@@ -243,7 +243,7 @@ In this task, you confirm that a relationship is established in Power BI Desktop
 
 ## Task 4: Build visuals using your data
 
-Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](http://support.powerbi.com/knowledgebase/articles/443094).
+Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](powerbi-service-interact-with-a-report-in-editing-view.md).
 
 In this task, you create a report based on the data previously loaded. You use the Fields pane to select the columns from which you create the visualizations.
 
@@ -265,7 +265,7 @@ Drag **OrderDate** to the canvas beneath the first chart, then drag LineTotal (a
 
 ### Step 2: Interact with your report visuals to analyze further
 
-Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](http://support.powerbi.com/knowledgebase/articles/467092)
+Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
 
 1.  Click on the light blue circle centered in **Canad****a.** Note how the other visuals are filtered to show Stock (**ShipCountry**) and Total Orders (**LineTotal**) just for Canada.
 

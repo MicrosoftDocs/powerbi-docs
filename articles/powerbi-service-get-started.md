@@ -20,9 +20,9 @@
 
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to explore further with ***reports***.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029).
+Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
-If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](http://support.powerbi.com/knowledgebase/articles/424863) to automatically create a dashboard from that data, or [check out all the other SaaS apps](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi) you can connect to. If you are part of an organization, see if any [organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040) have been published for you.
+If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi) you can connect to. If you are part of an organization, see if any [organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040) have been published for you.
 
 
 Read about all the other ways to [get data for Power BI](https://support.powerbi.com/knowledgebase/articles/434354).
@@ -89,7 +89,7 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
     ![](media/powerbi-service-get-started/pinSuccess.png)
 
-8.  Back on your dashboard, you can see your new visualization. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](http://support.powerbi.com/knowledgebase/articles/424878).﻿﻿
+8.  Back on your dashboard, you can see your new visualization. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
 
     ![](media/powerbi-service-get-started/gsPinFirst.png)
 
@@ -112,16 +112,16 @@ In a few minutes, you've created an interactive dashboard.
 Ready to try more?  Here are some great ways to explore more of Power BI.
 
 -   [Connect to another dataset](https://powerbi.uservoice.com/knowledgebase/articles/434354).
--   [Share your dashboard](http://support.powerbi.com/knowledgebase/articles/431008) with your colleagues.
--   Read [tips for designing dashboards](http://support.powerbi.com/knowledgebase/articles/433616).
+-   [Share your dashboard](powerbi-service-share-unshare-dashboard.md) with your colleagues.
+-   Read [tips for designing dashboards](powerbi-service-tips-for-designing-a-great-dashboard.md).
 -   View your dashboards with a [Power BI app on a mobile device](https://support.powerbi.com/knowledgebase/articles/652525)
 
 Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
 
 -   [Power BI basic concepts](https://support.powerbi.com/knowledgebase/articles/487029)
--   [Power BI videos](http://support.powerbi.com/knowledgebase/articles/475702)
--   [Learn how reports, datasets, dashboards, and tiles all fit together](http://support.powerbi.com/knowledgebase/articles/487029)
--   [See what samples we have available for you to use](http://support.powerbi.com/knowledgebase/articles/471112)
+-   [Power BI videos](powerbi-videos.md)
+-   [Learn how reports, datasets, dashboards, and tiles all fit together](powerbi-service-basic-concepts.md)
+-   [See what samples we have available for you to use](powerbi-sample-datasets.md)
 
 ### Stay in touch with Power BI
 

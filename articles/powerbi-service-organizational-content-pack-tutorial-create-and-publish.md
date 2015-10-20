@@ -24,7 +24,7 @@ In this tutorial we'll create a new organizational content pack, restrict access
 >**Note:**  
 >Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
 
-Imagine you're the Release Manager at Adventureworks and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share with the other employees managing the launch. You could [share your dashboard](http://support.powerbi.com/knowledgebase/articles/431008), but then your coworkers will only have read permissions.  Instead, you want your coworkers to be able to personalize your dashboard and reports. 
+Imagine you're the Release Manager at Adventureworks and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share with the other employees managing the launch. You could [share your dashboard](powerbi-service-share-unshare-dashboard.md), but then your coworkers will only have read permissions.  Instead, you want your coworkers to be able to personalize your dashboard and reports. 
 
 Want to follow along? Go to **Get Data > Samples > Opportunity Analysis Sample**. 
 
@@ -33,7 +33,7 @@ Want to follow along? Go to **Get Data > Samples > Opportunity Analysis Sample**
 
 2.  In the **Create Content Pack** window, enter the following information.  Keep in mind that a content pack library could end up with 100s of content packs published for corporate or group use. Take time to select the right audience, to give your content pack a meaningful name, and to add a good description.  Use words that will make your content pack easy to find via search.
 
-    a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 group aliases](http://support.powerbi.com/knowledgebase/articles/654247), distribution group aliases, or security group aliases. For example:
+    a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 group aliases](powerbi-service-groups.md), distribution group aliases, or security group aliases. For example:
 
 	salesmgrs@contoso.com; sales@contoso.com
 
@@ -71,6 +71,6 @@ Want to follow along? Go to **Get Data > Samples > Opportunity Analysis Sample**
 ## See Also  
 [Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)  
 [Manage, update, and delete organizational content packs](https://support.powerbi.com/knowledgebase/articles/651631)  
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
-[Groups in Power BI](http://support.powerbi.com/knowledgebase/articles/654247)  
+[Get Started with Power BI](powerbi-service-get-started.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Groups in Power BI](powerbi-service-groups.md)  

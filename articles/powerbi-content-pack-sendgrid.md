@@ -62,7 +62,7 @@ Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/
 
     ![](media/powerbi-content-pack-sendgrid/PBI_SendGridDash.png)
 
-You can change this dashboard to display your data the way you want it. Plus you can ask a [question in ](http://support.powerbi.com/knowledgebase/articles/474566)[Q&A](http://support.powerbi.com/knowledgebase/articles/474566) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669) and [c](http://support.powerbi.com/knowledgebase/articles/424878)[](http://support.powerbi.com/knowledgebase/articles/424878)[hange the tiles](http://support.powerbi.com/knowledgebase/articles/424878) in the dashboard. 
+You can change this dashboard to display your data the way you want it. Plus you can ask a [question in ](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard. 
 
 ### Scheduled Refresh
 
@@ -74,7 +74,7 @@ Within your SendGrid dashboard, you can use Q&A as a way of using natural langua
 
 ## See Also:
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data](http://support.powerbi.com/knowledgebase/articles/434354)
+[Get Data](powerbi-service-get-data.md)
 

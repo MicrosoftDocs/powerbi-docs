@@ -87,9 +87,9 @@ You can [delete your connection to a content pack](https://support.powerbi.com/k
 
 [Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get Started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Groups in Power BI](http://support.powerbi.com/knowledgebase/articles/654247%0A)
+[Groups in Power BI](powerbi-service-groups.md%0A)
 

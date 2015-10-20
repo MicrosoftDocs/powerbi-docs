@@ -22,33 +22,33 @@ Dashboards, reports, and datasets are at the heart of Power BI. A **report** is 
 
 ![](media/powerbi-service-reports/reportview.png)
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029).
+Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
-You can [create a report from scratch](http://support.powerbi.com/knowledgebase/articles/475616) or [have one shared with you](http://support.powerbi.com/knowledgebase/articles/431008). And for some kinds of data, Power BI will [create a report for you as it adds the dataset](http://support.powerbi.com/knowledgebase/articles/434354).  
+You can [create a report from scratch](powerbi-service-create-a-new-report.md) or [have one shared with you](powerbi-service-share-unshare-dashboard.md). And for some kinds of data, Power BI will [create a report for you as it adds the dataset](powerbi-service-get-data.md).  
 
 ## For more information about reports:
 
-[**Creating a report**](http://support.powerbi.com/knowledgebase/articles/475616)**  **requires a [dataset](http://support.powerbi.com/knowledgebase/articles/434354).  
+[**Creating a report**](powerbi-service-create-a-new-report.md)**  **requires a [dataset](powerbi-service-get-data.md).  
 
-View and interact with reports in either [**Reading View**](http://support.powerbi.com/knowledgebase/articles/445094)or **[Editing View](http://support.powerbi.com/knowledgebase/articles/443094)**. Editing View is only available to a report creator and has many more options for creating and modifying reports.
+View and interact with reports in either [**Reading View**](powerbi-service-interact-with-a-report-in-reading-view.md)or **[Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)**. Editing View is only available to a report creator and has many more options for creating and modifying reports.
 
 Did you participate in the Power BI Preview?  [Find out how to upgrade to the new report canvas](https://support.powerbi.com/knowledgebase/articles/663517).
 
 [The report editor... take a tour](https://support.powerbi.com/knowledgebase/articles/665494) - including the Visualizations pane, Filters pane, and Fields pane.
 
-**[Filter and highlight data in reports](http://support.powerbi.com/knowledgebase/articles/467092)** -- create them in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094) and interact with them in [Reading View.](http://support.powerbi.com/knowledgebase/articles/445094)
+**[Filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)** -- create them in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and interact with them in [Reading View.](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-[**Add a page to a report**](http://support.powerbi.com/knowledgebase/articles/474804) if you need more room.
+[**Add a page to a report**](powerbi-service-add-a-page-to-a-report.md) if you need more room.
 
 [Reorder report pages](https://support.powerbi.com/knowledgebase/articles/475186) to put the most-important information first.
 
-[**Delete a page from a report**](http://support.powerbi.com/knowledgebase/articles/474805), even if it's not blank.
+[**Delete a page from a report**](powerbi-service-delete-a-page-from-a-report.md), even if it's not blank.
 
-**[Renaming a report ](http://support.powerbi.com/knowledgebase/articles/474347)**  doesn't change the name of any associated dashboard or dataset.
+**[Renaming a report ](powerbi-service-rename-a-report.md)**  doesn't change the name of any associated dashboard or dataset.
 
-[**Save a report**](http://support.powerbi.com/knowledgebase/articles/444112) so you can use it again and share it with colleagues. The name of the saved report is added to your Power BI navigation pane, under the **Reports** heading.
+[**Save a report**](powerbi-service-save-a-report.md) so you can use it again and share it with colleagues. The name of the saved report is added to your Power BI navigation pane, under the **Reports** heading.
 
-**[Delete a report](http://support.powerbi.com/knowledgebase/articles/474346)** if you don't need it any more. Deleting the report does not remove the dataset.
+**[Delete a report](powerbi-service-delete-a-report.md)** if you don't need it any more. Deleting the report does not remove the dataset.
 
 ## View reports in the navigation pane
 
@@ -58,8 +58,8 @@ Power BI can have more than one report-- as you add reports, their titles are ad
 
 ## See Also
 
-[](https://support.office.microsoft.com/article/Visualizations-in-Power-BI-reports-96901475-bf5a-4fac-8042-82a0ff580767 "Visualizations in Power BI reports")[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)[](http://support.powerbi.com/knowledgebase/articles/434821)
+[](https://support.office.microsoft.com/article/Visualizations-in-Power-BI-reports-96901475-bf5a-4fac-8042-82a0ff580767 "Visualizations in Power BI reports")[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)[](powerbi-service-visualizations-for-reports.md)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814) 
+[Get Started with Power BI](powerbi-service-get-started.md) 
 
- [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+ [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

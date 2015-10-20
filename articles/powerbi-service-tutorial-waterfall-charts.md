@@ -62,7 +62,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 ## Highlighting and cross-filtering
 
-For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704).
+For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 Highlighting a column in a Waterfall Chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
@@ -70,7 +70,7 @@ Highlighting a column in a Waterfall Chart cross-filters the other visualization
 
 [Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

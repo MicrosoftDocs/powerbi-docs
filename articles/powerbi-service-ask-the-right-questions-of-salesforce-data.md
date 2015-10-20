@@ -19,7 +19,7 @@
 
 # Ask the right questions of Salesforce data in Power BI
 
-In this article, we suggest the best questions to ask for [Salesforce data](http://support.powerbi.com/knowledgebase/articles/424863) in Power BI, and how to go about asking your own questions.
+In this article, we suggest the best questions to ask for [Salesforce data](powerbi-content-pack-salesforce.md) in Power BI, and how to go about asking your own questions.
 
 For Salesforce, Power BI automatically generates a dashboard and a few reports when you connect. These dashboard tiles and report visualizations provide entities you can ask about. Let’s take a look at a report.  
 
@@ -59,14 +59,14 @@ For Salesforce data, here’s the best list of questions:
 
 ## See also
 
-[Salesforce data connector for Power BI](http://support.powerbi.com/knowledgebase/articles/424863)
+[Salesforce data connector for Power BI](powerbi-content-pack-salesforce.md)
 
-[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566)
+[Q&A in Power BI](powerbi-service-q-and-a.md)
 
 [Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)
 
-[Make your data work well with Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474690)
+[Make your data work well with Q&A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-[Get data (for Power BI)](http://support.powerbi.com/knowledgebase/articles/434354)
+[Get data (for Power BI)](powerbi-service-get-data.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

@@ -19,11 +19,11 @@
 
 # Tiles in the iPad app (Power BI for iOS)  
 
-Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/425669).
+Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](powerbi-service-dashboard-tiles.md).
 
 Then you see and interact with the tiles in [the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) for Microsoft Power BI for iOS.# Interact with tiles on a dashboard
 
-1.  Open a [dashboard in the iPad app](http://support.powerbi.com/knowledgebase/articles/467176).
+1.  Open a [dashboard in the iPad app](powerbi-mobile-dashboards-on-the-ipad-app.md).
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
@@ -35,8 +35,8 @@ Then you see and interact with the tiles in [the iPad app](http://go.microsof
 -   In a pie chart, tap a slice of the pie to show the values of the slice in the center of the pie.  
     ![](media/powerbi-mobile-tiles-in-the-ipad-app/PBI_iPad_PieTile.png)
 
--   [Share a snapshot of the tile](http://support.powerbi.com/knowledgebase/articles/467181) with others.
+-   [Share a snapshot of the tile](powerbi-mobile-share-dashboards-from-the-ipad-app.md) with others.
 
--   [Open the report](http://support.powerbi.com/knowledgebase/articles/467180) that the tile is based on.
+-   [Open the report](powerbi-mobile-reports-on-the-ipad-app.md) that the tile is based on.
 
-More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172) for Power BI.
+More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.

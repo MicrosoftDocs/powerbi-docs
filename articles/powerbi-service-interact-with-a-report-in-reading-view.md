@@ -21,7 +21,7 @@
 
 Reports in Power BI Reading View are very interactive. When you highlight a value in one visualization, it can change the values in the rest of the page. You can filter values on a page, and change the way values are sorted in a visualization. It's a great way to play with and get to know your data. 
 
-Reports [shared with you](http://support.powerbi.com/knowledgebase/articles/431008)can only be opened in Reading View, not Editing View.
+Reports [shared with you](powerbi-service-share-unshare-dashboard.md)can only be opened in Reading View, not Editing View.
 
 - **Adjust the display dimensions**  
    Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  If so, you can do the following: 
@@ -69,11 +69,11 @@ For more information: Tutorial on changing the display settings for a report.
 
     ![](media/powerbi-service-interact-with-a-report-in-reading-view/IV1980RZ.png)
 
-For more information, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704) and [About filters and highlighting in reports](http://support.powerbi.com/knowledgebase/articles/467092).
+For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
 ## See Also:
 
-[Reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
- [About filters and highlighting in Power BI reports](http://support.powerbi.com/knowledgebase/articles/467092)
+ [About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
 

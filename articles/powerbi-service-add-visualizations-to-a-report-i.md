@@ -18,11 +18,11 @@
    ms.author="v-pawrig"/>
 # Tutorial: Part I, Add visualizations to a Power BI report
 
-This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](http://support.powerbi.com/knowledgebase/articles/467184). 
+This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](powerbi-service-add-visualizations-to-a-report-ii.md). 
 
   
 
-1.  Open a [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921). This tutorial uses the Sales and Marketing sample.
+1.  Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the Sales and Marketing sample.
 
 2.  If the Fields pane isn't visible, select the arrow icon to open it. 
 
@@ -54,25 +54,25 @@ This article gives a quick introduction to creating a visualization in a report.
 
 8.  Now you can:
 
-    Continue on to [Part 2: Add visualizations to a Power BI report](http://support.powerbi.com/knowledgebase/articles/467184)
+    Continue on to [Part 2: Add visualizations to a Power BI report](powerbi-service-add-visualizations-to-a-report-ii.md)
 
-    [C](http://support.powerbi.com/knowledgebase/articles/444663)[hange the visualization type](http://support.powerbi.com/knowledgebase/articles/444663)[.](http://support.powerbi.com/knowledgebase/articles/444663)
+    [C](powerbi-service-change-the-type-of-visualization-in-a-report.md)[hange the visualization type](powerbi-service-change-the-type-of-visualization-in-a-report.md)[.](powerbi-service-change-the-type-of-visualization-in-a-report.md)
 
-    [Pin the visualization](http://support.powerbi.com/knowledgebase/articles/430323) to your dashboard as a tile.
+    [Pin the visualization](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) to your dashboard as a tile.
 
-    [Interact with the visualizations](http://support.powerbi.com/knowledgebase/articles/445094)in the report.
+    [Interact with the visualizations](powerbi-service-interact-with-a-report-in-reading-view.md)in the report.
 
-    [Do even more with visualizations](http://support.powerbi.com/knowledgebase/articles/434821).
+    [Do even more with visualizations](powerbi-service-visualizations-for-reports.md).
 
-    [Save your report](http://support.powerbi.com/knowledgebase/articles/444112).
+    [Save your report](powerbi-service-save-a-report.md).
 
 
 ## See Also:
 
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821).
+More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).
 
 [Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 

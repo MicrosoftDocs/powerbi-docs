@@ -59,19 +59,19 @@ How would we go about creating this same line chart using Q&A?
 
 ## See Also:
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[What type of questions can I ask Q&A?](http://support.powerbi.com/knowledgebase/articles/474566)
+[What type of questions can I ask Q&A?](powerbi-service-q-and-a.md)
 
-[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566)
+[Q&A in Power BI](powerbi-service-q-and-a.md)
 
-[Make your data work well with Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474690)
+[Make your data work well with Q&A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-[Ask the right questions of Salesforce data in Power BI](http://support.powerbi.com/knowledgebase/articles/475138)
+[Ask the right questions of Salesforce data in Power BI](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 
-[preparing a workbook for Q&A](http://support.powerbi.com/knowledgebase/articles/474690)
+[preparing a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-[pinning a tile to the dashboard from Q&A](http://support.powerbi.com/knowledgebase/articles/424874)
+[pinning a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 

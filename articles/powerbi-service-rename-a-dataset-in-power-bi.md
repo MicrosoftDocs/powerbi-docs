@@ -25,8 +25,8 @@ You can rename datasets. In the navigation pane, right-click the dataset to be 
 
 ## See also
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data](http://support.powerbi.com/knowledgebase/articles/434354)
+[Get Data](powerbi-service-get-data.md)
 
-[Power BI - Basic concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic concepts](powerbi-service-basic-concepts.md)

@@ -62,7 +62,7 @@ After you have a connection to your Salesforce account, you can explore your dat
 
 During the import you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the navigation pane on the left.
 
-You can change this dashboard to display your data any way you want. You can ask questions with Q&A - see [ask the right questions of Salesforce data](http://support.powerbi.com/knowledgebase/articles/475138) for suggestions. Or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669) and [change the tiles](http://support.powerbi.com/knowledgebase/articles/424878) in the dashboard.
+You can change this dashboard to display your data any way you want. You can ask questions with Q&A - see [ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md) for suggestions. Or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
 
 Requirements:
@@ -79,9 +79,9 @@ Requirements:
 
 ### See also
 
-[Ask the right questions of Salesforce data](http://support.powerbi.com/knowledgebase/articles/475138)
+[Ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get Started with Power BI](powerbi-service-get-started.md)
 
 [Get Data](http://support.powerbi.com/knowledgebase/topics/63369-get-data)
 

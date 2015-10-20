@@ -37,17 +37,17 @@ Learn how to talk to Q&A to get the best possible results.
 [Tutorial: Use Power BI Q&A with the Retail Sales sample](https://support.powerbi.com/knowledgebase/articles/607113)
 Use Q&A in a realistic industry tutorial.
 
-[Make your data work well with Q&A](http://support.powerbi.com/knowledgebase/articles/474690)
+[Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 Are you the person creating datasets and data models?  Then this topic is for you.
 
-[Use Q&A with Salesforce data](http://support.powerbi.com/knowledgebase/articles/475138)
+[Use Q&A with Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 How does Q&A communicate with Salesforce.
 
 ## See Also:
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)
 
 [Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)
 

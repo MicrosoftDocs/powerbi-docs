@@ -22,7 +22,7 @@
 A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, from a dataset, from another dashboard, from the Q&A box, and from SQL Server Reporting Services (SSRS).  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029).
+Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
 -   [Pin a tile to a dashboard from the Q&A question box](https://support.powerbi.com/knowledgebase/articles/424874-pin-a-tile-to-a-power-bi-dashboard-from-the-q-a-qu)
 
@@ -36,7 +36,7 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 
 -   Add a big number tile [from Q&A](https://support.powerbi.com/knowledgebase/articles/436733) and [from a report](https://support.powerbi.com/knowledgebase/articles/587907)
 
--   [Rename, resize, add a hyperlink, and reposition the tile](http://support.powerbi.com/knowledgebase/articles/424878) on your dashboard. 
+-   [Rename, resize, add a hyperlink, and reposition the tile](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
 
 -   [Power Point - import a dashboard tile](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 
@@ -57,9 +57,9 @@ Hovering over a tile reveals clickable icon that allow you to interact with the 
 - Use the column chart icon ![](media/powerbi-service-dashboard-tiles/chart-icon.jpg) to open the report or Q&A query that was used to create the tile.
 
 ## What happens when I select a dashboard tile?  
-When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](http://support.powerbi.com/knowledgebase/articles/424878). If it has a custom link, selecting the tile takes you to that link. If there is no custom link, and you created the tile from:
+When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. If there is no custom link, and you created the tile from:
 
--   **a report**: you go to a page in the report (in [Reading View](http://support.powerbi.com/knowledgebase/articles/445094)).
+-   **a report**: you go to a page in the report (in [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)).
 
 -   **Q&A**: you go to the Q&A box with the tile and associated query active.
 
@@ -85,5 +85,5 @@ Q&A opens with the question that was used to create the visualization, displayin
 ![](media/powerbi-service-dashboard-tiles/PBI_DashTileQnAQuestion.png)
 
 ## See Also  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
+[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

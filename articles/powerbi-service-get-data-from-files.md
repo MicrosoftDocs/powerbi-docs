@@ -76,11 +76,11 @@ You can upload Excel, Power BI Desktop, and CSV files from your computer, or con
 
 ### What can you do next?
 
--   Click the dataset name to [explore the dataset in Power BI](http://support.powerbi.com/knowledgebase/articles/475159).
+-   Click the dataset name to [explore the dataset in Power BI](powerbi-service-explore-a-dataset.md).
 
--   Or just type a [question in the Q&A box](http://support.powerbi.com/knowledgebase/articles/474566) on the dashboard.
+-   Or just type a [question in the Q&A box](powerbi-service-q-and-a.md) on the dashboard.
 
--   [Pin visualizations to your dashboard](http://support.powerbi.com/knowledgebase/articles/430323). 
+-   [Pin visualizations to your dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md). 
 
 ### More about files in Power BI
 

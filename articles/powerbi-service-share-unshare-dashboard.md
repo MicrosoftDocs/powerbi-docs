@@ -45,7 +45,7 @@ You can share your dashboards with people in your organization. If they haven't
 
 When you share with your colleagues:
 
--   They can see your dashboard and interact with your reports in [Reading View](http://support.powerbi.com/knowledgebase/articles/439920). They can't create new reports or save changes to existing reports.
+-   They can see your dashboard and interact with your reports in [Reading View](powerbi-service-open-a-report-in-reading-view.md). They can't create new reports or save changes to existing reports.
 
 -   They can even see the changes you make (after you save those changes). 
 
@@ -101,11 +101,11 @@ Only the dashboard owner can turn resharing on and off.
 
 ## See Also:
 
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868)
+[Dashboards in Power BI](powerbi-service-dashboards.md)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get Started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 
 

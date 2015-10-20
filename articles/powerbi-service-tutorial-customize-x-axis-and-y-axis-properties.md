@@ -24,7 +24,7 @@ In this tutorial you'll learn many different ways to customize the X-axis and Y
 
 ## Customizing visualization X-axes in reports
 
-I’ve signed in to the Power BI service and I’m starting with the **Retail Analysis Sample** report in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094). To follow along, [connect to the Retail Analysis sample](http://support.powerbi.com/knowledgebase/articles/514904).
+I’ve signed in to the Power BI service and I’m starting with the **Retail Analysis Sample** report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
 
 1.  Create a new column chart that shows this year's sales and last year's sales by month. 
 
@@ -139,7 +139,7 @@ For more information, see the following article:
 
 See Also:
 
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
+More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Customize d](https://support.powerbi.com/knowledgebase/articles/637417%0A)[ata point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)
 
@@ -147,5 +147,5 @@ More about [Visualizations in Power BI reports](http://support.powerbi.com/know
 
 [Customize colors and axis properties](https://support.powerbi.com/knowledgebase/articles/666325)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

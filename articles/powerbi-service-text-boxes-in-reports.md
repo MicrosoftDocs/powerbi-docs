@@ -42,9 +42,9 @@ In Editing View, add a text box to a report and then pin it to a dashboard. 
 
 [Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts
 
-](http://support.powerbi.com/knowledgebase/articles/487029)
+](powerbi-service-basic-concepts.md)
 

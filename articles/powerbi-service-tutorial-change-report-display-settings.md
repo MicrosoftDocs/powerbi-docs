@@ -90,5 +90,5 @@ In this exercise, you'll create a report that will display in Cortana.  Cortana
 
 ## See Also  
 Back to [Page display settings in a Power BI report](https://support.powerbi.com/knowledgebase/articles/742155)  
-Read more about  [reports in Power B ](http://support.powerbi.com/knowledgebase/articles/425684)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
+Read more about  [reports in Power B ](powerbi-service-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

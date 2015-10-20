@@ -44,12 +44,12 @@ Treemaps are a great choice:
 -   to spot patterns, outliers, most-important contributors, and exceptions.
 
 ## Create a basic Treemap  
-These instructions use the Retail Analysis Sample. To follow along,  [download the sample](http://support.powerbi.com/knowledgebase/articles/514904), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
+These instructions use the Retail Analysis Sample. To follow along,  [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
 
 >**Note:**  
 >This tutorial uses the classic report canvas.  For more information, see [Converting your reports to the new report editor](https://support.powerbi.com/knowledgebase/articles/663517).
 
-1.  Start in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094)and select the **Last Years Sales** measure.   
+1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)and select the **Last Years Sales** measure.   
 ![](media/powerbi-service-tutorial-treemaps/treemapFirstValue.png)
 
 2.  Convert the chart to a Treemap.  
@@ -67,12 +67,12 @@ These instructions use the Retail Analysis Sample. To follow along,  [downloa
 	-   Hover over a **Chain** title to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
     ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetails.png)
 
-5.  [Add the Gauge chart as a dashboard tile (pin the visual)](http://support.powerbi.com/knowledgebase/articles/425669).  
+5.  [Add the Gauge chart as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md).  
  
-6.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112).
+6.  [Save the report](powerbi-service-save-a-report.md).
 
 ## Highlighting and cross-filtering  
-For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704).
+For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 Highlighting a Category or Details in a Treemap filters the other visualizations on the report page... and vice versa.
 
@@ -88,6 +88,6 @@ Highlighting a Category or Details in a Treemap filters the other visualizations
 ## See Also  
 [Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)  
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
-[ Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
+[ Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Try it out -- it's free!](https://powerbi.com/)  

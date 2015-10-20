@@ -75,7 +75,7 @@ Now you're ready.
 
     ![](media/powerbi-service-add-an-image-to-a-dashboard/pinSuccess.png)
 
-12. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](http://support.powerbi.com/knowledgebase/articles/424878) the pinned visualization.
+12. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
 13. On the dashboard, drag the lower-right corner to make the tile smaller, and then drag it to the place you want it.
 

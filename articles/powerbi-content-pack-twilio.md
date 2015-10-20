@@ -49,7 +49,7 @@ Connect to the [Twilio content pack](https://app.powerbi.com/getdata/services/tw
 
     ![](media/powerbi-content-pack-twilio/PBI_Twilio_DB.png)
 
-This dashboard can be fully changed to how you want to display your data. It allows you to ask a [question in ](http://support.powerbi.com/knowledgebase/articles/474566)[Q&A](http://support.powerbi.com/knowledgebase/articles/474566) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669) and [c](http://support.powerbi.com/knowledgebase/articles/424878)[](http://support.powerbi.com/knowledgebase/articles/424878)[hange the tiles](http://support.powerbi.com/knowledgebase/articles/424878) in the dashboard. 
+This dashboard can be fully changed to how you want to display your data. It allows you to ask a [question in ](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard. 
 
 **The data that the content pack brings from Twilio**
 

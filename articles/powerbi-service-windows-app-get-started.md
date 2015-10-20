@@ -22,11 +22,11 @@ The Microsoft Power BI for Windows app adds to the Power BI experience. It p
 
 ![](media/powerbi-service-windows-app-get-started/PBI_WinAppHome0915.png)
 
-Bring your data together by creating [dashboards and reports in Power BI](http://support.powerbi.com/knowledgebase/articles/430814). Then experience them in the Windows app.
+Bring your data together by creating [dashboards and reports in Power BI](powerbi-service-get-started.md). Then experience them in the Windows app.
 
 ### Get the app
 
-Download the [Power BI for Windows app from the Windows Store](http://support.powerbi.com/knowledgebase/articles/536383).
+Download the [Power BI for Windows app from the Windows Store](powerbi-mobile-get-the-windows-app.md).
 
 ### Open the app
 
@@ -58,19 +58,19 @@ You can get back to the samples at any time.
 
 -   Get the [Power BI for Windows app](https://support.powerbi.com/knowledgebase/articles/536383-get-the-power-bi-for-windows-app)
 
--   View your [dashboards](http://support.powerbi.com/knowledgebase/articles/510951).
+-   View your [dashboards](powerbi-mobile-dashboards-in-the-windows-app.md).
 
--   Interact with [tiles on your dashboards](http://support.powerbi.com/knowledgebase/articles/510952). 
+-   Interact with [tiles on your dashboards](powerbi-mobile-tiles-in-the-windows-app.md). 
 
--   Open [reports](http://support.powerbi.com/knowledgebase/articles/510953). 
+-   Open [reports](powerbi-mobile-reports-in-the-windows-app.md). 
 
--   Share [dashboards](http://support.powerbi.com/knowledgebase/articles/510955).
+-   Share [dashboards](powerbi-mobile-share-dashboards-from-the-windows-app.md).
 
 -   Collaborate using [Groups](https://support.powerbi.com/knowledgebase/articles/683479).
 
 -   [Refresh the data](https://support.powerbi.com/knowledgebase/articles/536281-refresh-the-power-bi-for-windows-app) in the Power BI for Windows app.
 
--   Annotate and share [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/535432).
+-   Annotate and share [snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app.md).
 
 ### Supported devices
 

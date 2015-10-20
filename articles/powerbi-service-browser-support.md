@@ -33,4 +33,4 @@ We support Power BI in these browsers:
 
 -   Firefox desktop latest version
 
-Now you're ready to [get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814).  
+Now you're ready to [get started with Power BI](powerbi-service-get-started.md).  

@@ -41,20 +41,20 @@ Bring your own data together and create dashboards and reports in [Power BI](ht
 
 What else you can do in the iPhone app for Power BI?
 
--   View your [dashboards](http://support.powerbi.com/knowledgebase/articles/527051).
+-   View your [dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
 
--   Interact with the [tiles](http://support.powerbi.com/knowledgebase/articles/527054) on your dashboards.
+-   Interact with the [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
 
--   Create [favorites](http://support.powerbi.com/knowledgebase/articles/527060).
+-   Create [favorites](powerbi-mobile-favorites-in-the-iphone-app.md).
 
--   Set [data alerts](http://support.powerbi.com/knowledgebase/articles/527063) for your data.
+-   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
 
--   Share [dashboards](http://support.powerbi.com/knowledgebase/articles/527075).
+-   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 
--   Annotate and share [tiles](http://support.powerbi.com/knowledgebase/articles/527099).
+-   Annotate and share [tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
 
 ### See Also
 
-[Get started with the iPad app for Power BI](http://support.powerbi.com/knowledgebase/articles/467172)
+[Get started with the iPad app for Power BI](powerbi-mobile-iphone-app-get-started.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+[Get started with Power BI](powerbi-service-get-started.md)

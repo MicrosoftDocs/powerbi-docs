@@ -72,9 +72,9 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 ### See Also
 
-[Annotate and share a tile from the iPhone app for Power BI](http://support.powerbi.com/knowledgebase/articles/527099)
+[Annotate and share a tile from the iPhone app for Power BI](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
 
-[Get started with the iPhone app for Power BI](http://support.powerbi.com/knowledgebase/articles/527036)
+[Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)
 
-[Share a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/431008)
+[Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
 

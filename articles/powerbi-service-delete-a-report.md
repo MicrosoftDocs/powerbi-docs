@@ -31,5 +31,5 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
 >If the report is part of a [content pack](https://support.powerbi.com/knowledgebase/articles/651040), you will not be able to delete it using this method.  See [Deleting an organizational content pack](https://support.powerbi.com/knowledgebase/articles/663661). 
 
 ## See Also  
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
+Read more about [reports in Power BI](powerbi-service-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
