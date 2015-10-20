@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Azure and Power BI
 
-[← Databases and more](https://support.powerbi.com/knowledgebase/topics/88773-databases-and-more)
-
 With **Azure** services and **Power BI**, you can turn your data processing efforts into analytics and reports that provide real-time insights into your business. Whether your data processing is cloud-based or on-premise, straightforward or complex, single-sourced or massively scaled, warehoused or real-time, Azure and Power BI have the built-in connectivity and integration to bring your business intelligence efforts to life.
 
 ![](media/powerbi-azure-and-power-bi/Azure_1.png)
@@ -28,7 +26,7 @@ Power BI has a multitude of Azure connections available, and the business intell
 
 ### Azure SQL Database and Power BI
 
-You can start with a straightforward connection to an Azure SQL Database, and create reports to monitor the progress of your business. Using the [Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664), you can create reports that  identify trends and key performance indicators that move your business forward.
+You can start with a straightforward connection to an Azure SQL Database, and create reports to monitor the progress of your business. Using the [Power BI Desktop](powerbi-desktop-getting-started.md), you can create reports that  identify trends and key performance indicators that move your business forward.
 
 ![](media/powerbi-azure-and-power-bi/Azure_2_SQLtoPBI.png)
 

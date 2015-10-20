@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # GitHub content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also known as repo) with data around contributions, issues, pull requests and active users.
 
 Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github)for Power BI.
@@ -73,7 +71,7 @@ Creating this connection retrieves your data and automatically provides a dashb
 
     ![](media/powerbi-content-pack-github/PBI_GithubDash.png)
 	
-	You can change this dashboard to display your data the way you want it. Plus you can ask a [question in Q&A](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669-when-you-click-a-tile-in-a-dashboard) and [change the tiles](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) in the dashboard. 
+	You can change this dashboard to display your data the way you want it. Plus you can ask a [question in Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard. 
 	 
 	The following data is available from GitHub in Power BI:     
 	
@@ -98,5 +96,5 @@ If necessary, you can verify your GitHub credentials.
 3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.
 
 ## See also
-- [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+- [Get started with Power BI](powerbi-service-get-started.md)
 - [Get data](http://support.powerbi.com/knowledgebase/topics/63369-get-data)

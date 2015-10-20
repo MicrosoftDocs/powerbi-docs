@@ -3,7 +3,7 @@
    description="What's new in the latest Power BI Desktop update?"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="pcw3187" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,15 +14,84 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.date="10/14/2015"
+   ms.author="v-pawrig"/>
 # What's new in the latest Power BI Desktop update?
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
+## September 2015 Update (2.27.4163.351)
+
+You can download the latest version of Power BI Desktop from here:
+https://powerbi.com/dashboards/downloads/designer
+
+The following massive collection of 44 features has been added to this update:
+
+###Report Authoring
+
+- Report-level filters
+- Drill Up/Down for column and scatter charts
+- New Page Size and Page View options
+- Support for inserting Shapes in the Report canvas
+- Fields pane improvements
+	- Search Box to make it easier to find fields by name
+	- “Expand/Collapse All” to improve navigation when there are multiple tables in the Fields pane
+	- Field well cardinality support, drag-replace for buckets with 1 item
+	- Additional Data Labels formatting options
+	- Chart Cartesian Axis Improvements:
+		- X-Axis label direction (horizontal / diagonal)
+		- Support for Logarithmic & Linear scales for values in Y-axis
+		- Display Text for hyperlinks in text boxes
+		- Improvements to existing visualizations: Table, Matrix, Slicer, Scatter Chart, Single Cards, Combo Charts and Gauges
+		- Support for displaying Color Saturation values in tooltips
+		- Ability to resize images and apply additional formatting options
+
+
+###Data Modeling
+
+- Calculated Tables.
+- Relationships view:
+	- Create relationships via drag/drop between two tables in the diagram.
+	- Delete relationships in relationship view by selecting and hitting the Delete key.
+	- Rename/delete tables and columns
+- Data view:
+	- Copy Table contents to clipboard.
+- Field Summarization:
+	- Support for additional operations in the Fields pane: median, standard deviation, and variance
+	- Default summarization: Users can now customize the default summarization operation for any given field in their model
+
+###Data Connectivity
+
+- Support for on-premises Spark distributions
+- Support for SharePoint lists from non-English sites
+- Exchange connector - Enhanced support, now allowing connections to multiple mailboxes
+- Excel Workbook Connector – Automatic Column Type detection when importing .XLS files
+- “Select Related Tables” option when connecting to database sources
+- Enhanced Active Directory connector credentials, allowing alternate Windows Credentials
+- Improved Function Invocation experience when loading functions from a data source (such as a database)
+- “Import Excel Workbook Contents” feature released last month now also supports external connections to Analysis Services tabular models
+- New option to “Delete All” entries in the Data Source Settings dialog
+- Option to “Enable Relationship Import during Refresh operations”
+
+###Data Transformations and Query Editor Improvements
+
+- Copy to clipboard (available for cells/columns/tables)
+- Filter date columns by earliest/latest date (dynamic filter)
+- Extract min/max date/time value from a column
+- Replace Values - Provision for specifying special characters
+- “Detect Column Types” option to trigger type detection on demand
+- “Refresh All Previews” to refresh all Query Editor previews with a single click
+- Performance Improvements:
+	- Choose Columns dialog: Faster user experience for dealing with wide tables
+	- Auto-filter & Expand/Aggregate popups: Faster for large number of values/fields
+
+The following video covers these features in more detail.
+
+<iframe width="500" height="281" src="https://www.youtube.com/embed/Jm44dLXdarQ" frameborder="0" allowfullscreen></iframe>
+
+For more information about this update, [check out the blog announcement](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx) that describes more details about each update.
 
 ## August 2015 Update (2.26.4128.403)
 
-**You can download the latest version of Power BI Desktop from here:  
+**You can download the latest version of Power BI Desktop from here:**  
 https://powerbi.com/dashboards/downloads/designer
 
 The following features have been added to this update:
@@ -137,9 +206,7 @@ The following features have been added in this update:
 
 -   Rename & Delete fields in Report view
 
-**Get Data & Query
-
-**
+**Get Data & Query**
 
 -   OData V4 support
 
@@ -191,40 +258,28 @@ The following features have been added in this update:
 
 You can watch the following video for more details:
 
-**February 2015 Update (2.20.3945.102)**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xJTcGro08TI" frameborder="0" allowfullscreen></iframe>
+
+## February 2015 Update (2.20.3945.102)
 
 The following features have been added or improved in this update:
 
-Performance improvements
-
-Dynamics CRM Online connector
-> *Note: Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We’ll fix this issue in our March update. The temporary workaround is to connect to this feed using “From OData”.*
-
-Navigator Dialog improvements
-
--   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
-
--   Show Selected Items option
-
--   Improved Search capabilities in the Navigator tree
-
-New Transformations
-
--   Age and Subtract operations for Date/Time columns
-
--   Aggregate Columns: Option to disable new columns’ prefix
-
-Field List improvements
-
--   Expand/Collapse tables
-
--   Hide/Unhide fields
-
--   Optimized layout (spacing, margins, and fonts)
-
-Report Pages Navigation - Keyboarding support
-
-Lots of bug fixes
+- Performance improvements
+- Dynamics CRM Online connector
+	> *Note: Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We’ll fix this issue in our March update. The temporary workaround is to connect to this feed using “From OData”.*
+- Navigator Dialog improvements
+	-   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
+	-   Show Selected Items option
+	-   Improved Search capabilities in the Navigator tree
+-   New Transformations
+	-   Age and Subtract operations for Date/Time columns
+	-   Aggregate Columns: Option to disable new columns’ prefix
+-   Field List improvements
+	-   Expand/Collapse tables
+	-   Hide/Unhide fields
+	-   Optimized layout (spacing, margins, and fonts)
+-   Report Pages Navigation - Keyboarding support
+-   Lots of bug fixes
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 

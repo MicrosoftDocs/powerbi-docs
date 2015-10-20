@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Frequently Asked Questions
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 ## What is Microsoft Power BI?
 
 [Power BI](https://powerbi.microsoft.com/) is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life.
@@ -48,21 +46,21 @@ Yes. Power BI has native apps for Android, iOS, and Windows. Download one of the
 
 ## Why do I have to sign up with my work email?
 
-Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](https://support.powerbi.com/knowledgebase/articles/594453-self-service-signup-for-power-bi).
+Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](powerbi-service-self-service-signup-for-power-bi.md).
 
 ## Is Power BI available on-premises?
 
-No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Analysis Services Connector](https://support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connector), you can connect live to your on-premises SQL Server Analysis Services Tabular models. And, with the [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846-power-bi-personal-gateway), you can refresh data from other on-premises data sources.
+No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Analysis Services Connector](powerbi-analysis-services-connector.md), you can connect live to your on-premises SQL Server Analysis Services Tabular models. And, with the [Power BI Personal Gateway](powerbi-personal-gateway.md), you can refresh data from other on-premises data sources.
 
 ## What data sources can I connect to?
 
 The list of data sources for Power BI is extensive, but it can be grouped into the following:
 
-Data from [Excel and Power BI Desktop files](https://support.powerbi.com/knowledgebase/articles/597003).
+Data from [Excel and Power BI Desktop files](powerbi-service-get-data-from-files.md).
 
 Content packs with ready-made dashboards, reports, and datasets for [SaaS applications](https://support.powerbi.com/knowledgebase/topics/88770). Connecting to these SaaS applications requires an existing subscription to that application. In addition to establishing a data connection, Power BI provides pre-built dashboards and reports for each of these applications.
 
-Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](https://support.powerbi.com/knowledgebase/articles/581421) and SQL Server [Analysis Services](https://support.powerbi.com/knowledgebase/articles/471633) tabular data.
+Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data.
 
 To learn more about data sources in Power BI, see [Get Data](https://support.powerbi.com/knowledgebase/topics/63369-get-data), [Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi), [Databases and more](https://support.powerbi.com/knowledgebase/topics/88773-databases-and-more), [Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi).
 
@@ -86,17 +84,17 @@ The following resources are available to help get your started:
 
 [Power BI Blog](http://blogs.msdn.com/b/powerbi/)
 
-[Webinars](https://support.powerbi.com/knowledgebase/articles/587886-power-bi-webinars)
+[Webinars](powerbi-webinars.md)
 
 Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 
-[Getting started articles](https://support.powerbi.com/knowledgebase/topics/63037-getting-started) in our [Knowledge Base](https://support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connector)
+[Getting started articles](https://support.powerbi.com/knowledgebase/topics/63037-getting-started) in our [Knowledge Base](powerbi-analysis-services-connector.md)
 
 [Join our community](http://community.powerbi.com/) and ask questions
 
 ## What regions/languages does Power BI support?
 
-Here's a complete list of [regions and languages supported by Power BI](https://support.powerbi.com/knowledgebase/articles/559626-supported-languages-for-power-bi).
+Here's a complete list of [regions and languages supported by Power BI](powerbi-supported-languages.md).
 
 ## How can I buy Power BI Pro in my country?
 
@@ -106,7 +104,7 @@ You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help 
 
 ## Where can I learn more about security?
 
-You can learn more about Power BI security, privacy and compliance by reading this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](https://support.powerbi.com/knowledgebase/articles/667840-power-bi-security).
+You can learn more about Power BI security, privacy and compliance by reading this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
 
 ## Is government, academic and non-profit pricing available for Power BI?
 

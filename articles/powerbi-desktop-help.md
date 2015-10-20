@@ -18,78 +18,76 @@
    ms.author="v-anpasi"/>
 # Power BI Desktop Help
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
-
 **Stay up-to-date**
 
-**[What's new in the latest Power BI Desktop update?](https://support.powerbi.com/knowledgebase/articles/489224-what-s-new-in-the-latest-power-bi-designer-preview)**
+**[What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md)**
 
 **Get Started with Power BI Desktop:**
 
-[Get Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/464158-get-the-power-bi-designer-preview)
+[Get Power BI Desktop](powerbi-desktop-get-the-desktop.md)
 
-[Getting started with Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664-getting-started-with-power-bi-designer)
+[Getting started with Power BI Desktop](powerbi-desktop-getting-started.md)
 
-[Watch our video tutorials](https://support.powerbi.com/knowledgebase/articles/461292-power-bi-designer-videos)
+[Watch our video tutorials](powerbi-desktop-videos.md)
 
 **Connecting to data:**
 
-[Connect to data in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471635-connect-to-data-in-power-bi-designer)
+[Connect to data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
 
-[Data Sources in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471643-data-sources-in-power-bi-designer)
+[Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 
-[Analysis Services Tabular data in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/665278-analysis-services-tabular-data-in-power-bi-desktop)
+[Analysis Services Tabular data in Power BI Desktop](powerbi-desktop-analysis-services-tabular-data.md)
 
 **Creating reports:**
 
-[Report View in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/461283-report-view-in-power-bi-designer)
+[Report View in Power BI Desktop](powerbi-desktop-report-view.md)
 
-[Tips and tricks for creating reports in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/464157-tips-and-tricks-for-creating-reports-in-power-bi-d)
+[Tips and tricks for creating reports in Power BI Desktop](powerbi-desktop-tips-and-tricks-for-creating-reports.md)
 
 **Publishing data and reports created in Power BI Desktop:**
 
-[Publish from Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/461278-upload-power-bi-designer-files)
+[Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md)
 
 **Transform and shape your data:**
 
-[Query overview in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471646-query-overview-in-power-bi-designer)
+[Query overview in Power BI Desktop](powerbi-desktop-query-overview.md)
 
-[Shape and combine data in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471644-shape-and-combine-data-in-power-bi-designer)
+[Shape and combine data in Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
-[Common query tasks in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471648-common-query-tasks-in-power-bi-designer)
+[Common query tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)
 
 [Learn about the Query formula language (also known as "M")](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?CorrelationId=4382f78a-d3a8-4c19-90ab-abf4b09a21a8&ui=en-US&rs=en-US&ad=US)
 
 Data modeling:
 
-[Data View in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/663202-data-view-in-power-bi-desktop)
+[Data View in Power BI Desktop](powerbi-desktop-data-view.md)
 
-[Relationship View in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/663229-relationship-view-in-power-bi-desktop)
+[Relationship View in Power BI Desktop](powerbi-desktop-relationship-view.md)
 
-[Create and manage relationships in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/464155-create-and-manage-relationships-in-power-bi-design)
+[Create and manage relationships in Power BI Desktop](powerbi-desktop-create-and-manage-relationships.md)
 
-[Calculated columns in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/590598)
+[Calculated columns in Power BI Desktop](powerbi-desktop-calculated-columns.md)
 
-[Measures in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/554577-measures-in-power-bi-designer)
+[Measures in Power BI Desktop](powerbi-desktop-measures.md)
 
-[Data types in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/558030-data-types-in-power-bi-designer)
+[Data types in Power BI Desktop](powerbi-desktop-data-types.md)
 
-[Data categorization in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/594282)
+[Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)
 
-[Sort By Column in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/592116)
+[Sort By Column in Power BI Desktop](powerbi-desktop-sort-by-column.md)
 
-[DAX basics in Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/554619-quickstart-learn-dax-basics-in-power-bi-designer)
+[DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md)
 
 
 **Step-by-step tutorials:**
 
-[Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/461315-tutorial-importing-and-analyzing-data-from-a-web)
+[Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop](powerbi-desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md)
 
-[Tutorial: Analyzing sales data from Excel and an OData feed](https://support.powerbi.com/knowledgebase/articles/471597-tutorial-analyzing-sales-data-from-excel-and-an-o)
+[Tutorial: Analyzing sales data from Excel and an OData feed](powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md)
 
-[Tutorial: Facebook analytics using Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/461312-tutorial-facebook-analytics-using-power-bi-design)
+[Tutorial: Facebook analytics using Power BI Desktop](powerbi-desktop-tutorial-facebook-analytics.md)
 
-[Tutorial: Create your own measures in Power BI Desktop ](https://support.powerbi.com/knowledgebase/articles/556656-tutorial-create-your-own-measures-in-power-bi-des)
+[Tutorial: Create your own measures in Power BI Desktop ](powerbi-desktop-tutorial-create-measures.md)
 
-[Tutorial: Create calculated columns in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/590610)
+[Tutorial: Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md)
 

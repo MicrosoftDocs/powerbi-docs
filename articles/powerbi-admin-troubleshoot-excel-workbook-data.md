@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # "We couldn't find any data in your Excel workbook"
 
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
-
 ## Problem
 
 When you import an Excel workbook into Power BI, you may see the following error:

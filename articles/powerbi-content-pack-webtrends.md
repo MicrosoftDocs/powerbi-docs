@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Webtrends content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 The Webtrends content pack for Power BI includes a variety of out of box metrics such total page views and visits by traffic source. Visualizing your Webtrends data in Power BI starts by connecting to your Webtrends account. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once per day.
 
 [Connect to the Webtrends content pack for Power BI.](https://app.powerbi.com/getdata/services/webtrends)
