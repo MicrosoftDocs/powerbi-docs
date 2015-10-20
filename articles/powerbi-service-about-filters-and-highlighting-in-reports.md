@@ -18,7 +18,7 @@
    ms.author="v-pawrig"/>
 # About filters and highlighting in Power BI reports
 
-Power BI reports provides several ways to filter and highlight data. Because of the metadata in the underlying [data model](https://support.office.com/en-us/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US), Power BI uses the relationships between the different tables and fields in the model to make items on a report page highlight and filter each other.
+Power BI reports provides several ways to filter and highlight data. Because of the metadata in the underlying [data model](https://support.office.com/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US), Power BI uses the relationships between the different tables and fields in the model to make items on a report page highlight and filter each other.
 
 ***Filters*** remove all but the data you want to focus on.  ***Highlighting*** is not filtering since it does not remove data but instead highlights a subset of the visible data; the unhighlighted data remains visible but dimmed.
 

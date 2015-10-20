@@ -54,7 +54,7 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 
 -   You can't connect to a whole Excel file again if you're already connected to it. But you can connect to a single file both as a whole Excel workbook and as a dataset. The whole Excel file appears under Reports in the left navigation pane, and the workbook-as-dataset appears under Datasets.
 
--   If you have an Excel 2010 workbook with a PowerPivot 2010 data model, you need to [upgrade the workbook to Excel 2013](https://support.office.com/en-US/article/Upgrade-Power-Pivot-Data-Models-to-Excel-2013-c66578cb-74d5-43ae-a474-5a01be5db439).
+-   If you have an Excel 2010 workbook with a PowerPivot 2010 data model, you need to [upgrade the workbook to Excel 2013](https://support.office.com/article/Upgrade-Power-Pivot-Data-Models-to-Excel-2013-c66578cb-74d5-43ae-a474-5a01be5db439).
 
 
 ### Connect to an Excel file on OneDrive for Business
@@ -97,7 +97,7 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 ### Edit, share, or print a workbook in Excel Online
 
 
-After you open a workbook in Excel Online, you can edit, share, or print it from there. See [basic tasks in Excel Online](https://support.office.com/en-us/article/Basic-tasks-in-Excel-Online-0dcac23b-8430-4289-87a5-f2c97bdb49e1) for details.
+After you open a workbook in Excel Online, you can edit, share, or print it from there. See [basic tasks in Excel Online](https://support.office.com/article/Basic-tasks-in-Excel-Online-0dcac23b-8430-4289-87a5-f2c97bdb49e1) for details.
 
 ## Refresh data in an intact Excel file
 

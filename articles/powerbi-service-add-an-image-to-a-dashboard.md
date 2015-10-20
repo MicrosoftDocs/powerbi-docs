@@ -43,7 +43,7 @@ Now you're ready.
 
 1.  In the Excel workbook, add a Power View sheet: **Insert** \> **Power View**.
 
-2.  Don't see Power View on the **Insert** tab? You may need to [turn on the Power View add-in](https://support.office.com/en-us/article/Create-a-Power-View-sheet-in-Excel-2013-b23d768d-7586-47fe-97bd-89b80967a405?ui=en-US&rs=en-US&ad=US).
+2.  Don't see Power View on the **Insert** tab? You may need to [turn on the Power View add-in](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-b23d768d-7586-47fe-97bd-89b80967a405?ui=en-US&rs=en-US&ad=US).
 
 3.  On the **Power View** tab \> **Insert Picture**.
 

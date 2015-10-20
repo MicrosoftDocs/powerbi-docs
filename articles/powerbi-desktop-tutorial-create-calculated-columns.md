@@ -49,7 +49,7 @@ By default a new calculated column is simply named Column. If we don’t rename 
 
 **2. ** Since the **Column** name is already highlighted in the formula bar, just type **ProductFullCategory**.
 
-Now we can begin entering our formula. We want the values in our new column to start with the ProductCategory name from the ProductCategory table. Because this column is in a different, but related table, we’re going to use the [RELATED](https://msdn.microsoft.com/en-us/library/ee634202.aspx) function to help us get it.
+Now we can begin entering our formula. We want the values in our new column to start with the ProductCategory name from the ProductCategory table. Because this column is in a different, but related table, we’re going to use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help us get it.
 
 **3.**  After the equals sign, type **R**. You’ll see a dropdown suggestion list appear with all of the DAX functions beginning with the letter R. The more we type, the more the suggestion list is scaled closer to the function we need. Next to the function you’ll see a description of the function. Select **RELATED** by scrolling down, and then pressing Enter.
 
@@ -113,7 +113,7 @@ Fortunately, our Stores table has a column named Status, with a value of On for 
 
 **1.**  Create a new calculated column named **Active StoreName** in the **Stores** table.
 
-For this column, our DAX formula is going to check each stores status. If a stores status is On, our formula will return the stores name. If it’s Off, it will have the name, “Inactive”. To do this, we’ll use the logical [IF](https://msdn.microsoft.com/en-us/library/ee634824.aspx) function to test the stores status and return a particular value if the result is true or false.
+For this column, our DAX formula is going to check each stores status. If a stores status is On, our formula will return the stores name. If it’s Off, it will have the name, “Inactive”. To do this, we’ll use the logical [IF](https://msdn.microsoft.com/library/ee634824.aspx) function to test the stores status and return a particular value if the result is true or false.
 
 **2.**  Begin typing **IF**. The suggestion list will show what we can add. Select **IF**.
 
@@ -160,5 +160,5 @@ Calculated columns can enrich our data, providing easier insights. We've learned
 
 If you want to take a deeper dive into DAX formulas, and create calculated columns with more advanced DAX formulas, see [DAX Basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md-quickstart-learn-dax-basics-in-power-bi-designer). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
-Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/en-us/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
+Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
 

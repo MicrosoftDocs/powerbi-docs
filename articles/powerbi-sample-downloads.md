@@ -67,13 +67,13 @@ Each workbook contains several sheets:
 
 -   The Info tab provides information about obviEnce, the company that created the sample.
 
--   The other tabs are Power View sheets with the report visuals. You may need to [enable the Power View add-in](https://support.office.com/en-US/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
+-   The other tabs are Power View sheets with the report visuals. You may need to [enable the Power View add-in](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
 
 The workbook contains the actual data, but it's in the data model, not in worksheets.
 
 -   To see the data, on the **PowerPivot** tab, select **Manage Data Model**.
 
-    Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/en-US/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
+    Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
 
 ## See Also:
 
