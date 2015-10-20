@@ -60,11 +60,11 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 	a.  At the bottom of the Visualizations pane, look for the **Filters** area.
 
 	b.  Hover over **State** and click the expand chevron  
-    ![](/media/powerbi-service-tutorial-filled-maps-choropleths/img004.png)
+    ![](media/powerbi-service-tutorial-filled-maps-choropleths/img004.png)
 
 	c.  Place a checkmark next to **All** and remove the checkmark next to **AK**.
 
-    ![](/media/powerbi-service-tutorial-filled-maps-choropleths/img005.png)
+    ![](media/powerbi-service-tutorial-filled-maps-choropleths/img005.png)
 
 5.  Select **SalesFact** \> **Sentiment** to add it to the **Values** well. The field in the **Values** well controls the map shading.  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img006.png)
@@ -82,10 +82,10 @@ For information about using the Filters pane, see [Add a filter to a report](pow
 Highlighting a Location in a Filled Map filters the other visualizations on the report page... and vice versa.
 
 1.  On the Filled Map, select a state.  This highlights the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 74, Texas is in the Central District \#23, and that most of the sales volume comes from the Moderation and Convenience segments.   
-    ![](/media/powerbi-service-tutorial-filled-maps-choropleths/img008.png)
+    ![](media/powerbi-service-tutorial-filled-maps-choropleths/img008.png)
 
 2.  On the line chart, toggle between **No** and **Yes**. This filters the Filled Map to show Sentiment for VanArsdel and for VanArsdel's competition.  
-    ![](/media/powerbi-service-tutorial-filled-maps-choropleths/img009.gif)
+    ![](media/powerbi-service-tutorial-filled-maps-choropleths/img009.gif)
 
 ## Troubleshooting  
 Map data can be ambiguous.  For example, there's a Paris, France, but there's also a Paris, Texas. Your geographic data is probably stored in separate columns – a column for city names, a column for state or province names, etc. – so Bing may not be able to tell which Paris is which. If your dataset already contains latitude and longitude data, Power BI has special fields to help make the map data unambiguous. Just drag the field that contains your latitude data into the Visualizations \> Latitude area.  And do the same for your longitude data.  
