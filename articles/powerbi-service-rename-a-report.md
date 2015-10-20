@@ -18,7 +18,7 @@
    ms.author="v-pawrig"/>
 # Rename a report in Power BI
 
-Don't like the default name of a report in Power BI?  A new name is just a click away.  And renaming a report does not rename the associated dataset or [rename the associated dashboard](http://support.powerbi.com/knowledgebase/articles/475172-rename-a-dashboard).
+Don't like the default name of a report in Power BI?  A new name is just a click away.  And renaming a report does not rename the associated dataset or [rename the associated dashboard](http://support.powerbi.com/knowledgebase/articles/475172).
 
 ### To rename a report:
 
@@ -41,7 +41,7 @@ If the report is part of an [organizational content pack](https://support.powerb
 
 ##  See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)*﻿*
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)*﻿*
 

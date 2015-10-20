@@ -32,13 +32,13 @@ This method creates a new report from scratch.
 
     ![](media/powerbi-service-create-a-new-report/exploreDataset.png) 
 
-2.  Explore your data and [add visualizations](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports).
+2.  Explore your data and [add visualizations](http://support.powerbi.com/knowledgebase/articles/434821).
 
-3.  [Save your report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
+3.  [Save your report](http://support.powerbi.com/knowledgebase/articles/444112).
 
 ## Create a new report from an existing report
 
-1.  [Open a report](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view).
+1.  [Open a report](http://support.powerbi.com/knowledgebase/articles/439920).
 
 2.  From the **File** menu, select **Save As**.
 
@@ -63,15 +63,15 @@ This method creates a new report from scratch.
 
 [Create new visualizations](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report)
 
-[Delete visualizations](http://support.powerbi.com/knowledgebase/articles/465144-delete-a-visualization)you don't need
+[Delete visualizations](http://support.powerbi.com/knowledgebase/articles/465144)you don't need
 
 ## See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
 
 

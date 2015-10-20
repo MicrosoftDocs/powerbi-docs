@@ -38,4 +38,4 @@ Then you see and interact with group dashboards in the Microsoft [Power BI iOS
 
 4.  [Select a dashboard](https://support.powerbi.com/knowledgebase/articles/527051) to open and view it.
 
-More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172-the-ipad-app-for-power-bi-preview) for Power BI.  
+More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172) for Power BI.  

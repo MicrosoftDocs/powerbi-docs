@@ -117,8 +117,8 @@ To customize a legend, select "This Year Sales by FiscalMonth and Name" line cha
 |waterfall|yes|yes|yes|
 
 ## See Also  
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
+More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)  
 [Customize X-axis and Y-axis](https://support.powerbi.com/knowledgebase/articles/637429%0A)  
 [Customize data point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)  
 [Customize colors and axis properties](https://support.powerbi.com/knowledgebase/articles/666325)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  

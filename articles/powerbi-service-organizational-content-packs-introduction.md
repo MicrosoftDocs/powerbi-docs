@@ -77,9 +77,9 @@ All group members have the same permissions to the data as the content pack cre
 
 [Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
 [Groups in Power BI](http://support.powerbi.com/knowledgebase/articles/654247%0A)
 

@@ -32,9 +32,9 @@ You can change the look and default behavior of a tile in a dashboard:
 
 -   [Delete the tile](424878.html#delete)
 
->**Note**: To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).
+>**Note**: To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669).
 
-1. In a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi), [get data ](http://support.powerbi.com/knowledgebase/articles/434354-get-data)and add a tile. 
+1. In a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868), [get data ](http://support.powerbi.com/knowledgebase/articles/434354)and add a tile. 
 
 	![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_DashTile.png)
 
@@ -86,9 +86,9 @@ By default, clicking a tile takes you to the report where the tile was created o
 
 ## **See Also:**
 
-[Dashboard tiles in Power BI](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi)
+[Dashboard tiles in Power BI](http://support.powerbi.com/knowledgebase/articles/425669)
 
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)
+[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 

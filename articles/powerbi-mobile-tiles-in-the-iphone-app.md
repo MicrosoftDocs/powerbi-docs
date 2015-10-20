@@ -23,7 +23,7 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
 ## Interact with tiles on a dashboard
 
-1.  Open a [dashboard in the iPhone app](http://support.powerbi.com/knowledgebase/articles/527051-dashboards-in-the-iphone-app-power-bi-for-ios-pre).
+1.  Open a [dashboard in the iPhone app](http://support.powerbi.com/knowledgebase/articles/527051).
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
@@ -37,12 +37,12 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_PieTileNew.png)
 
--   Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneShareTileIconNoBorder.png) to [annotate and share a tile](http://support.powerbi.com/knowledgebase/articles/527099-annotate-and-share-a-tile-from-the-iphone-app-pow) with others.
+-   Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneShareTileIconNoBorder.png) to [annotate and share a tile](http://support.powerbi.com/knowledgebase/articles/527099) with others.
 
 -   Tap the close icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPh_CloseSnapIcon.PNG) to close the tile and return to the dashboard.
 
 ### See Also
 
-[Get started with the iPhone app for Power BI](http://support.powerbi.com/knowledgebase/articles/527036-get-started-with-the-iphone-app-power-bi-for-ios)
+[Get started with the iPhone app for Power BI](http://support.powerbi.com/knowledgebase/articles/527036)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)

@@ -24,18 +24,18 @@ Power BI reports provides several ways to filter and highlight data. Because of 
 
 Filters can be applied to individual visualizations, to report pages, and to an entire report. 
 
->**TIP**: You must be in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report%0A) to add new filters to a report or to create filters that remain with the report.  In [Reading View](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view%0A), you (and people you've shared the report with) can interact with those filters but cannot save changes made to those filters.
+>**TIP**: You must be in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094) to add new filters to a report or to create filters that remain with the report.  In [Reading View](http://support.powerbi.com/knowledgebase/articles/445094), you (and people you've shared the report with) can interact with those filters but cannot save changes made to those filters.
 
 
 ## See Also:
 
-[Interact with filters and highlighting (in Reading View)](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)
+[Interact with filters and highlighting (in Reading View)](http://support.powerbi.com/knowledgebase/articles/445094)
 
 [Add a filter to a report (in Editing View)](http://support.powerbi.com/knowledgebase/articles/464704)
 
 [How to use report filters](http://support.powerbi.com/knowledgebase/articles/546859)
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)*﻿*
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)*﻿*
 

@@ -39,9 +39,9 @@ Radial Gauges are a great choice to:
 
 ## Create a basic Radial Gauge
 
-These instructions use the Retail Analysis Sample. To follow along, [download the sample](http://support.powerbi.com/knowledgebase/articles/514904-download-samples), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**. 
+These instructions use the Retail Analysis Sample. To follow along, [download the sample](http://support.powerbi.com/knowledgebase/articles/514904), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**. 
 
-1.  Start in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report)and select the **New Stores** measure.  Measures are identified by the calculator icon ![](media/powerbi-service-tutorial-radial-gauge-charts/measureIcon.png).
+1.  Start in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094)and select the **New Stores** measure.  Measures are identified by the calculator icon ![](media/powerbi-service-tutorial-radial-gauge-charts/measureIcon.png).
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_selectMeasure.png)
 
@@ -57,9 +57,9 @@ These instructions use the Retail Analysis Sample. To follow along, [download t
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeSetTargetValue.png)
 
-4.  [Add the Gauge chart as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi). 
+4.  [Add the Gauge chart as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669). 
 
-5.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
+5.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112).
 
 ## Add a Maximum Value to a Radial Gauge
 
@@ -117,7 +117,7 @@ But what if you want to set your own maximum value?  Let's say that instead of
 
  [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
-[Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-dashboard-from-a-report)
+[Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323)
 
-[ Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[ Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 

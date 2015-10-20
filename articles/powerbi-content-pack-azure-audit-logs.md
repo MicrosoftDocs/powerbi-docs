@@ -53,5 +53,5 @@ There are two easy ways to find your Subscription Id.
 Your subscription ID will be long set of numbers and characters, similar to the example in Step \#4 above. 
 
 ## See Also  
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  

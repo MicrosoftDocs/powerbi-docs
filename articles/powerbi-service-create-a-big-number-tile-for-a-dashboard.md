@@ -24,7 +24,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
 The question box is the easiest way to make a number tile like this.
 
-1.  Create a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi) and [get data](http://support.powerbi.com/knowledgebase/articles/434354-connect-to-a-data-source).
+1.  Create a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868) and [get data](http://support.powerbi.com/knowledgebase/articles/434354).
 
 2.  At the top of your dashboard, start typing what you want to know about your data in the question box.  
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QnABox.png)
@@ -47,11 +47,11 @@ The question box is the easiest way to make a number tile like this.
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.  
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/pinSuccess.png)
 
-7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) the pinned visualization.  
+7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](http://support.powerbi.com/knowledgebase/articles/424878) the pinned visualization.  
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_DashTileTitle.png)
 
 ## See Also  
 [Dashboard tiles in Power BI](http://support.powerbi.com/knowledgebase/articles/425669)  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
-[](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
+[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
+[](http://support.powerbi.com/knowledgebase/articles/424868)  

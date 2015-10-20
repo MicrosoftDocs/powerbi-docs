@@ -56,7 +56,7 @@ For easy access to your most interesting data, you can mark specific tiles as fa
 
 ### See Also
 
-[Get started with the iPhone app for Power BI](http://support.powerbi.com/knowledgebase/articles/527036-get-started-with-the-iphone-app-power-bi-for-ios)
+[Get started with the iPhone app for Power BI](http://support.powerbi.com/knowledgebase/articles/527036)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 

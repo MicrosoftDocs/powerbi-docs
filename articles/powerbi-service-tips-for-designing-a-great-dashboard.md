@@ -41,7 +41,7 @@ If the text and visualizations on your dashboard are all the same size, your rea
 
 But be sure to provide context.  
 
-Read about [creating a tile with just a number](http://support.powerbi.com/knowledgebase/articles/436733-pin-a-number-tile-to-a-dashboard).
+Read about [creating a tile with just a number](http://support.powerbi.com/knowledgebase/articles/436733).
 
 ### Put the most important information in the upper corner
 Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left). 
@@ -61,7 +61,7 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 
 - Don’t clutter your charts with data labels that are not needed. The values in bar charts are usually well understood without displaying the actual number.
 
-- Pay attention to how [charts are sorted](http://support.powerbi.com/knowledgebase/articles/441746-change-how-a-chart-is-sorted).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
+- Pay attention to how [charts are sorted](http://support.powerbi.com/knowledgebase/articles/441746).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
 
 - Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.
 
@@ -77,5 +77,5 @@ To master the art of excellent dashboard design, consider learning basic Gestalt
 - *Advanced Presentations* by Design by Andrew Abela   
 
 ## See Also  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  

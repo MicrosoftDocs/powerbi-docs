@@ -76,9 +76,9 @@ Still having issues? Open a support ticket to reach the Power BI team:
 
 ## See also
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
 ![](media/powerbi-content-pack-google-analytics/PBIproduct_icon_black_GA.png)
 

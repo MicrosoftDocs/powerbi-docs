@@ -18,7 +18,7 @@
    ms.author="v-pawrig"/>
 # Go from Reading View to Editing View in Power BI
 
-In Editing View in Power BI (compared to [Reading View](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)) you can dig even deeper into your data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report.  To edit a report, you must be the owner of the report.
+In Editing View in Power BI (compared to [Reading View](http://support.powerbi.com/knowledgebase/articles/445094)) you can dig even deeper into your data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report.  To edit a report, you must be the owner of the report.
 
 1.  In Reading View, select **Edit Report**. 
 
@@ -30,14 +30,14 @@ In Editing View in Power BI (compared to [Reading View](http://support.powerbi.c
     
 	![](media/powerbi-service-go-from-reading-view-to-editing-view/ReadingViewReturn.png)
 
-There are so many ways to [edit your report](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report), slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Editing View](http://support.powerbi.com/knowledgebase/articles/443094), lists and describes these in detail.
+There are so many ways to [edit your report](http://support.powerbi.com/knowledgebase/articles/443094), slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Editing View](http://support.powerbi.com/knowledgebase/articles/443094), lists and describes these in detail.
 
 
 ## See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
 

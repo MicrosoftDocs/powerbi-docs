@@ -60,5 +60,5 @@ You can also allocate additional resources in the Resource Manager:
 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/ResourceManager.png)
 
 ## See Also  
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Get Data for Power BI](http://support.powerbi.com/knowledgebase/articles/434354-get-data)  
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  
+[Get Data for Power BI](http://support.powerbi.com/knowledgebase/articles/434354)  

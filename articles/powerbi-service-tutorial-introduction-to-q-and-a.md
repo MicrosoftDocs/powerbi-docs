@@ -59,19 +59,19 @@ How would we go about creating this same line chart using Q&A?
 
 ## See Also:
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 
-[What type of questions can I ask Q&A?](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)
+[What type of questions can I ask Q&A?](http://support.powerbi.com/knowledgebase/articles/474566)
 
-[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)
+[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566)
 
-[Make your data work well with Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474690-make-your-data-work-well-with-q-a)
+[Make your data work well with Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474690)
 
-[Ask the right questions of Salesforce data in Power BI](http://support.powerbi.com/knowledgebase/articles/475138-ask-the-right-questions-of-salesforce-data)
+[Ask the right questions of Salesforce data in Power BI](http://support.powerbi.com/knowledgebase/articles/475138)
 
-[preparing a workbook for Q&A](http://support.powerbi.com/knowledgebase/articles/474690-how-to-make-q-a-work-with-your-data)
+[preparing a workbook for Q&A](http://support.powerbi.com/knowledgebase/articles/474690)
 
-[pinning a tile to the dashboard from Q&A](http://support.powerbi.com/knowledgebase/articles/424874-pin-a-tile-to-a-dashboard-from-the-question-box)
+[pinning a tile to the dashboard from Q&A](http://support.powerbi.com/knowledgebase/articles/424874)
 

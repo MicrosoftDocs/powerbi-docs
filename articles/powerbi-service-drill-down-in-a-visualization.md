@@ -19,7 +19,7 @@
 
 # Drill down in a visualization in Power BI
 
-1.  In Power BI, open a report in [Reading View](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view)or [Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view). Drill requires a visualization with a hierarchy. 
+1.  In Power BI, open a report in [Reading View](http://support.powerbi.com/knowledgebase/articles/439920)or [Editing View](http://support.powerbi.com/knowledgebase/articles/439921). Drill requires a visualization with a hierarchy. 
 
     A hierarchy is shown below.  The *Profit by Product *visualization has a hierarchy made up of **Product **and **Segment**; each product has one or more segments. By default, the visualization displays only the product data, because *Product *appears in the Axis bucket above *Segment*.
 
@@ -43,9 +43,9 @@
 
 ## See Also:
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
 
-[Power BI Preview reports](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi-preview)
+[Power BI Preview reports](http://support.powerbi.com/knowledgebase/articles/425684)
 
-[Power BI Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 

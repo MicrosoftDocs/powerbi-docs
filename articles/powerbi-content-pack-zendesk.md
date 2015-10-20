@@ -50,9 +50,9 @@ Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/z
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskDash.png)
 
-You can change this dashboard to display your data any way you want. It allows you to ask a [question in Q&A](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669-when-you-click-a-tile-in-a-dashboard) [change the tiles in the dashboard](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete).
+You can change this dashboard to display your data any way you want. It allows you to ask a [question in Q&A](http://support.powerbi.com/knowledgebase/articles/474566) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669) [change the tiles in the dashboard](http://support.powerbi.com/knowledgebase/articles/424878).
 
 ##See Also:
--  [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
--  [Get Data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
+-  [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
+-  [Get Data](http://support.powerbi.com/knowledgebase/articles/434354)
 -  [Power BI blog: Better insights into your Zendesk customer support with Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/03/24/better-insights-into-your-zendesk-customer-support-with-power-bi.aspx)

@@ -23,5 +23,5 @@ In Power BI, drag the tab where you want it in the report and let go.
 ![](media/powerbi-service-reorder-pages-in-a-report/reorder.gif)
 
 ## See Also  
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  

@@ -23,7 +23,7 @@ Power BI groups offer a powerful collaborative experience built on Office 365 gr
 
 You [create a group in the Power BI service](https://support.powerbi.com/knowledgebase/articles/654250).
 
-Then you see and interact with group dashboards and reports in the Microsoft [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app). 
+Then you see and interact with group dashboards and reports in the Microsoft [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917). 
 
 
 ## Interact with groups content
@@ -42,5 +42,5 @@ Then you see and interact with group dashboards and reports in the Microsoft [
 
 4.  [Select a dashboard](https://support.powerbi.com/knowledgebase/articles/510951) or [select a report](https://support.powerbi.com/knowledgebase/articles/510953) to open and view it.
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).
+More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917).
 

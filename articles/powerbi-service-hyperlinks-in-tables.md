@@ -55,9 +55,9 @@ Hyperlinks are created in Excel Power Pivot before the workbook is imported into
 
 ## See Also:
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
 
 

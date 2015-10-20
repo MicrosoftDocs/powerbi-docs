@@ -22,7 +22,7 @@ With Power BI, users in your organization can now see your on-premises SQL Serve
 
 Installing and configuring a connector is usually done by an administrator. It requires special knowledge of your Analysis Services servers and it requires Server Administrator permissions.
 
-This article doesn’t provide step-by-step guidance on how to install and configure an Analysis Services Connector. For that, be sure to see [Configure a Power BI Analysis Services Connector](http://support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connector-f). This article is meant to provide you with an in-depth understanding of how the connector works. We’ll also go into some detail about usernames and security in both Power BI and Analysis Services, and how Power BI uses the e-mail address a user signs into Power BI with, the connector, and Active Directory to securely connect to and query your on-premises Analysis Services data. If you want to dig deeper, links to more detailed articles are provided.
+This article doesn’t provide step-by-step guidance on how to install and configure an Analysis Services Connector. For that, be sure to see [Configure a Power BI Analysis Services Connector](http://support.powerbi.com/knowledgebase/articles/471577). This article is meant to provide you with an in-depth understanding of how the connector works. We’ll also go into some detail about usernames and security in both Power BI and Analysis Services, and how Power BI uses the e-mail address a user signs into Power BI with, the connector, and Active Directory to securely connect to and query your on-premises Analysis Services data. If you want to dig deeper, links to more detailed articles are provided.
 
 ## Making the connection
 
@@ -138,7 +138,7 @@ Sometimes installing the connector fails. Or, maybe the connector seems to insta
 
 In other cases, there might be issues with type of e-mail address users sign in with, or Analysis Services’ inability to resolve an effective username. If you have multiple domains with trusts between them, and your Active Directory server is in one and Analysis Services in another, this sometimes can cause some problems.
 
-Rather than go into troubleshooting connector issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the Power BI Analysis Service Connector](http://support.powerbi.com/knowledgebase/articles/505324-troubleshooting-analysis-service-connector). Hopefully you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
+Rather than go into troubleshooting connector issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the Power BI Analysis Service Connector](http://support.powerbi.com/knowledgebase/articles/505324). Hopefully you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
 ## Ports
 
@@ -214,11 +214,11 @@ Power BI Analysis Services Connector communicates on outbound ports: TCP 443 (de
 
 ## Additional resources
 
-For information in how to install and configure a Power BI Analysis Services Connector, see ﻿[Configure a Power BI Analysis Services Connector](http://support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connectorhttp:/support.powerbi.com/knowledgebase/articles/471577-configure-a-power-bi-analysis-services-connector).
+For information in how to install and configure a Power BI Analysis Services Connector, see ﻿[Configure a Power BI Analysis Services Connector](http://support.powerbi.com/knowledgebase/articles/471577).
 
 For information on synchronizing Azure Active Directory with an on-premises Active Directory by using DirSync, see ﻿[Directory Integration](https://technet.microsoft.com/library/jj573653.aspx) on TechNet.
 
-For troubleshooting, see ﻿[Troubleshooting Power BI Analysis Service Connector](http://support.powerbi.com/knowledgebase/articles/505324-troubleshooting-analysis-service-connector).
+For troubleshooting, see ﻿[Troubleshooting Power BI Analysis Service Connector](http://support.powerbi.com/knowledgebase/articles/505324).
 
-Once a Power BI Analysis Services Connector is installed, configured, and running, users can connect to tabular models on that Analysis Services instance. To learn how to connect from Get Data in Power BI,  see ﻿[SQL Server Analysis Services Tabular data in Power BI](http://support.powerbi.com/knowledgebase/articles/471633-sql-server-analysis-services-tabular-data-in-power).
+Once a Power BI Analysis Services Connector is installed, configured, and running, users can connect to tabular models on that Analysis Services instance. To learn how to connect from Get Data in Power BI,  see ﻿[SQL Server Analysis Services Tabular data in Power BI](http://support.powerbi.com/knowledgebase/articles/471633).
 

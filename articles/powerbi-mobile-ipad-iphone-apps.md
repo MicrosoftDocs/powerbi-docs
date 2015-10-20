@@ -28,11 +28,11 @@ Go to Power BI to [sign up for the Power BI](http://go.microsoft.com/fwlink/?Lin
 
 ## iPad app for Power BI
 
-Get started with the [iPad app for Power BI for iOS](http://support.powerbi.com/knowledgebase/articles/467172-get-started-with-the-ipad-app-power-bi-for-ios-pr).
+Get started with the [iPad app for Power BI for iOS](http://support.powerbi.com/knowledgebase/articles/467172).
 
 ## iPhone app for Power BI
 
-Get started with the [iPhone app for Power BI for iOS](http://support.powerbi.com/knowledgebase/articles/527036-get-started-with-the-iphone-app-power-bi-for-ios).
+Get started with the [iPhone app for Power BI for iOS](http://support.powerbi.com/knowledgebase/articles/527036).
 
 ## Get started with Power BI
 
@@ -44,5 +44,5 @@ Now experience them in the iPad and iPhone apps.
 
 ### See Also
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 

@@ -72,8 +72,8 @@ If the field values represent date or time, you can specify a start/end time wh
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_date-time-filters.png)
 
 ## See Also  
-[Filters and highlighting in reports](http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports)  
-[Interact with filters and highlighting in report Reading View](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)  
+[Filters and highlighting in reports](http://support.powerbi.com/knowledgebase/articles/467092)  
+[Interact with filters and highlighting in report Reading View](http://support.powerbi.com/knowledgebase/articles/445094)  
 [Create filters in report Editing View](http://support.powerbi.com/knowledgebase/articles/464704)  
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts) 
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029) 

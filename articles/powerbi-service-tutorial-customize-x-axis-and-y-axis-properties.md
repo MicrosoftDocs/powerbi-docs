@@ -139,7 +139,7 @@ For more information, see the following article:
 
 See Also:
 
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
 
 [Customize d](https://support.powerbi.com/knowledgebase/articles/637417%0A)[ata point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)
 
@@ -147,5 +147,5 @@ More about [Visualizations in Power BI reports](http://support.powerbi.com/know
 
 [Customize colors and axis properties](https://support.powerbi.com/knowledgebase/articles/666325)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 

@@ -19,7 +19,7 @@
 
 # Move and resize a visualization in a Power BI report  
 
-In Power BI, open a report in [Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view) and [create a visualization](http://support.powerbi.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report) if your report doesn't already have one.
+In Power BI, open a report in [Editing View](http://support.powerbi.com/knowledgebase/articles/439921) and [create a visualization](http://support.powerbi.com/knowledgebase/articles/441777) if your report doesn't already have one.
 
 ### Move the visualization﻿  
 -   Select any blank area of the visualization and drag to the new location. 
@@ -30,5 +30,5 @@ In Power BI, open a report in [Editing View](http://support.powerbi.com/knowledg
 
 ## See Also  
 [Resize a visualization on a dashboard](https://support.powerbi.com/knowledgebase/articles/424878)  
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  

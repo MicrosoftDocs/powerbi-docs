@@ -42,7 +42,7 @@ For more information on aggregating values see [Change The Aggregation Used In 
 
 ## See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)﻿
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)﻿
 

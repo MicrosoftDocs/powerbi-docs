@@ -58,5 +58,5 @@ With the Power BI Desktop, you can save your work as a Power BI Desktop file.
 
 ### Publish
 
-In Power BI Desktop, you can publish and share your datasets and reports right to your Power BI site. To learn more, see [Publish from Power BI Desktop.](http://support.powerbi.com/knowledgebase/articles/461278-upload-power-bi-designer-reports).
+In Power BI Desktop, you can publish and share your datasets and reports right to your Power BI site. To learn more, see [Publish from Power BI Desktop.](http://support.powerbi.com/knowledgebase/articles/461278).
 

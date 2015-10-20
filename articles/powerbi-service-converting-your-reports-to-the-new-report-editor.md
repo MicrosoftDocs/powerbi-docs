@@ -65,6 +65,6 @@ You'll still be able to edit the report in the new reporting canvas, but you'll 
 Remember, as long as you don't save the report, you're not going to affect the original so don't worry about losing your work! But the conversion process is one-way so do be sure that you're ready to stay in the new experience before you save your report.
 
 ## See Also  
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)  
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)﻿  
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)  
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)﻿  

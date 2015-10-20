@@ -22,9 +22,9 @@
 Reading View is a great way to explore the data in a Power BI report, without worrying that you'll break something.  You can browse the report, interact with the visualizations, and pin any of the visualizations to your dashboard. 
 
 >**Note:**  
->To edit the report and save your changes, [open it in Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-exploration-mode-to-edit-mode).
+>To edit the report and save your changes, [open it in Editing View](http://support.powerbi.com/knowledgebase/articles/439921).
 
-1.  [Create a report](http://support.powerbi.com/knowledgebase/articles/475616-create-a-new-power-bi-report) and open it in Reading View.
+1.  [Create a report](http://support.powerbi.com/knowledgebase/articles/475616) and open it in Reading View.
 
 	-   From the left navigation pane, select the name of the report, or
 
@@ -33,9 +33,9 @@ Reading View is a great way to explore the data in a Power BI report, without wo
 2.  The report opens in Reading View.  
 ![](media/powerbi-service-open-a-report-in-reading-view/readingView.png)
 
-3.  There's so much you can do in Reading View.  Start by browsing the report by clicking the arrows at the bottom of the screen.  This sample report has multiple pages. Now start [interacting with your report](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view) 
+3.  There's so much you can do in Reading View.  Start by browsing the report by clicking the arrows at the bottom of the screen.  This sample report has multiple pages. Now start [interacting with your report](http://support.powerbi.com/knowledgebase/articles/445094) 
 
 ## See Also  
- Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)  
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Power BI - Basic Concepts ](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+ Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)  
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  
+[Power BI - Basic Concepts ](http://support.powerbi.com/knowledgebase/articles/487029)  

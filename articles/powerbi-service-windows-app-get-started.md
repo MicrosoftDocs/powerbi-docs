@@ -22,11 +22,11 @@ The Microsoft Power BI for Windows app adds to the Power BI experience. It p
 
 ![](media/powerbi-service-windows-app-get-started/PBI_WinAppHome0915.png)
 
-Bring your data together by creating [dashboards and reports in Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi). Then experience them in the Windows app.
+Bring your data together by creating [dashboards and reports in Power BI](http://support.powerbi.com/knowledgebase/articles/430814). Then experience them in the Windows app.
 
 ### Get the app
 
-Download the [Power BI for Windows app from the Windows Store](http://support.powerbi.com/knowledgebase/articles/536383-get-the-power-bi-for-windows-app).
+Download the [Power BI for Windows app from the Windows Store](http://support.powerbi.com/knowledgebase/articles/536383).
 
 ### Open the app
 
@@ -58,19 +58,19 @@ You can get back to the samples at any time.
 
 -   Get the [Power BI for Windows app](https://support.powerbi.com/knowledgebase/articles/536383-get-the-power-bi-for-windows-app)
 
--   View your [dashboards](http://support.powerbi.com/knowledgebase/articles/510951-dashboards-in-the-power-bi-for-windows-app).
+-   View your [dashboards](http://support.powerbi.com/knowledgebase/articles/510951).
 
--   Interact with [tiles on your dashboards](http://support.powerbi.com/knowledgebase/articles/510952-tiles-in-the-power-bi-for-windows-app). 
+-   Interact with [tiles on your dashboards](http://support.powerbi.com/knowledgebase/articles/510952). 
 
--   Open [reports](http://support.powerbi.com/knowledgebase/articles/510953-reports-in-the-power-bi-for-windows-app). 
+-   Open [reports](http://support.powerbi.com/knowledgebase/articles/510953). 
 
--   Share [dashboards](http://support.powerbi.com/knowledgebase/articles/510955-share-dashboards-from-the-power-bi-for-windows-app).
+-   Share [dashboards](http://support.powerbi.com/knowledgebase/articles/510955).
 
 -   Collaborate using [Groups](https://support.powerbi.com/knowledgebase/articles/683479).
 
 -   [Refresh the data](https://support.powerbi.com/knowledgebase/articles/536281-refresh-the-power-bi-for-windows-app) in the Power BI for Windows app.
 
--   Annotate and share [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/535432-share-a-snapshot-of-a-tile-from-the-power-bi-for-w).
+-   Annotate and share [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/535432).
 
 ### Supported devices
 

@@ -36,4 +36,4 @@ The app refreshes with the data in [Power BI](http://powerbi.com), not necessari
 >-   Each time the app refreshes, whether you started it or it was automatic, the app saves the data in the app cache until the next refresh.   
 >-   When you uninstall or upgrade the app, that clears the cache.
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).  
+More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917).  

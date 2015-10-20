@@ -78,7 +78,7 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 [Get started with the Android app for Power BI](https://support.powerbi.com/knowledgebase/articles/577773)
 
-[Share a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/431008-share-and-unshare-a-dashboard)
+[Share a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/431008)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 

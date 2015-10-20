@@ -43,5 +43,5 @@ Then you see and interact with group dashboards and reports in the Microsoft [P
 
 5.  [Select a dashboard](https://support.powerbi.com/knowledgebase/articles/467176) or [select a report](https://support.powerbi.com/knowledgebase/articles/467180) to open and view it.
 
-More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172-the-ipad-app-for-power-bi-preview) for Power BI.
+More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172) for Power BI.
 

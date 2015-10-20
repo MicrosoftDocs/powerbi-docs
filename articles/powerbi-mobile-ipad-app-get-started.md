@@ -41,20 +41,20 @@ Bring your own data together and create dashboards and reports in [Power BI](ht
 
 What else you can do in the iPhone app for Power BI?
 
--   View your [dashboards](http://support.powerbi.com/knowledgebase/articles/527051-dashboards-in-the-iphone-app-power-bi-for-ios-pre).
+-   View your [dashboards](http://support.powerbi.com/knowledgebase/articles/527051).
 
--   Interact with the [tiles](http://support.powerbi.com/knowledgebase/articles/527054-tiles-in-the-iphone-app-power-bi-for-ios-preview) on your dashboards.
+-   Interact with the [tiles](http://support.powerbi.com/knowledgebase/articles/527054) on your dashboards.
 
--   Create [favorites](http://support.powerbi.com/knowledgebase/articles/527060-favorites-in-the-iphone-app-power-bi-for-ios-prev).
+-   Create [favorites](http://support.powerbi.com/knowledgebase/articles/527060).
 
--   Set [data alerts](http://support.powerbi.com/knowledgebase/articles/527063-create-data-alerts-in-the-iphone-app-power-bi-for) for your data.
+-   Set [data alerts](http://support.powerbi.com/knowledgebase/articles/527063) for your data.
 
--   Share [dashboards](http://support.powerbi.com/knowledgebase/articles/527075-share-a-dashboard-from-the-iphone-app-power-bi-fo).
+-   Share [dashboards](http://support.powerbi.com/knowledgebase/articles/527075).
 
--   Annotate and share [tiles](http://support.powerbi.com/knowledgebase/articles/527099-annotate-and-share-a-tile-from-the-iphone-app-pow).
+-   Annotate and share [tiles](http://support.powerbi.com/knowledgebase/articles/527099).
 
 ### See Also
 
-[Get started with the iPad app for Power BI](http://support.powerbi.com/knowledgebase/articles/467172-get-started-with-the-ipad-app-power-bi-for-ios-pr)
+[Get started with the iPad app for Power BI](http://support.powerbi.com/knowledgebase/articles/467172)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)

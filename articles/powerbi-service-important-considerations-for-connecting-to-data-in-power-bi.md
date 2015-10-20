@@ -52,9 +52,9 @@ Some of the data sources may have additional requirements, please review the ind
 
 ## See Also:
 
-[Get data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
+[Get data](http://support.powerbi.com/knowledgebase/articles/434354)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi) 
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814) 
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 

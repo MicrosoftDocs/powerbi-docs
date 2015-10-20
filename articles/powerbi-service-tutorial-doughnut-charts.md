@@ -55,8 +55,8 @@ To follow along, sign in to Power BI and select Get Data \> Samples \> Retail 
 
 [Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
 

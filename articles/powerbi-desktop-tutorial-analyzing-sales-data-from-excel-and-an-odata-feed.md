@@ -243,7 +243,7 @@ In this task, you confirm that a relationship is established in Power BI Desktop
 
 ## Task 4: Build visuals using your data
 
-Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report "Combine multiple queries").
+Power BI Desktop lets you create a variety of visualizations to gain insights from your data. You can build reports with multiple pages and each page can have multiple visuals. You can interact with your visualizations to help analyze and understand your data. For more information about editing reports, see [Edit a Report](http://support.powerbi.com/knowledgebase/articles/443094).
 
 In this task, you create a report based on the data previously loaded. You use the Fields pane to select the columns from which you create the visualizations.
 
@@ -265,7 +265,7 @@ Drag **OrderDate** to the canvas beneath the first chart, then drag LineTotal (a
 
 ### Step 2: Interact with your report visuals to analyze further
 
-Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports)
+Power BI Desktop lets you interact with visuals that cross-highlight and filter each other to uncover further trends. For more detail see [Filtering and Highlighting in Reports](http://support.powerbi.com/knowledgebase/articles/467092)
 
 1.  Click on the light blue circle centered in **Canad****a.** Note how the other visuals are filtered to show Stock (**ShipCountry**) and Total Orders (**LineTotal**) just for Canada.
 

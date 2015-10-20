@@ -131,13 +131,13 @@ In this task, we'll see what impact store count has on sales.
 
 	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/XYaxisTitlesOn.png)
 
-	[Add the Combo Chart as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).
+	[Add the Combo Chart as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669).
 
-	[Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
+	[Save the report](http://support.powerbi.com/knowledgebase/articles/444112).
 
 ## Highlighting and cross-filtering
 
-For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
+For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704).
 
 Highlighting a column or line in a Combo Chart cross-filters the other visualizations on the report page... and vice versa.
 
@@ -147,11 +147,11 @@ Highlighting a column or line in a Combo Chart cross-filters the other visualiza
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
-[Visualizations in Power BI  reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI  reports](http://support.powerbi.com/knowledgebase/articles/434821)
 
-[Visualization types in Power BI](http://support.powerbi.com/knowledgebase/articles/469552-visualization-types-available-in-power-bi-reports)
+[Visualization types in Power BI](http://support.powerbi.com/knowledgebase/articles/469552)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
 [Try it out -- it's free!](https://powerbi.com/)
 

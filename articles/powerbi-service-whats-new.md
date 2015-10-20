@@ -163,11 +163,11 @@ Check this page for known issues and recently-released features in Power BI.
 
 **April 23, 2015**
 
--   You can now visualize and explore your **Microsoft Dynamics Marketing** data with our new content pack! You can read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) and [documentation](http://support.powerbi.com/knowledgebase/articles/462793-microsoft-dynamics-marketing) for more information.﻿
+-   You can now visualize and explore your **Microsoft Dynamics Marketing** data with our new content pack! You can read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) and [documentation](http://support.powerbi.com/knowledgebase/articles/462793) for more information.﻿
 
 **April 15, 2015**
 
--   You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) and [documentation](http://support.powerbi.com/knowledgebase/articles/511323-google-analytics-connector-for-power-bi) for more information.
+-   You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) and [documentation](http://support.powerbi.com/knowledgebase/articles/511323) for more information.
 
 -   You can now **pin all cards** expect those containing KPIs and Images from Q&A and reports
 
@@ -198,4 +198,4 @@ Check this page for known issues and recently-released features in Power BI.
 -   Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
 ## See Also  
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  

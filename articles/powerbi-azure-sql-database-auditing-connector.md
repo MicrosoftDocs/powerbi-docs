@@ -65,7 +65,7 @@ Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getd
 
  
 
-You can change this dashboard to display your data the way you want it. Plus you can ask a [question in ](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)[Q&A](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669-when-you-click-a-tile-in-a-dashboard) and [c](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete)[](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete)[hange the tiles](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) in the dashboard. 
+You can change this dashboard to display your data the way you want it. Plus you can ask a [question in ](http://support.powerbi.com/knowledgebase/articles/474566)[Q&A](http://support.powerbi.com/knowledgebase/articles/474566) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669) and [c](http://support.powerbi.com/knowledgebase/articles/424878)[](http://support.powerbi.com/knowledgebase/articles/424878)[hange the tiles](http://support.powerbi.com/knowledgebase/articles/424878) in the dashboard. 
 
  
 

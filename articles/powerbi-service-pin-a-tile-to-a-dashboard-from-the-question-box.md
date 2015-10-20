@@ -21,7 +21,7 @@
 
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
-1.  Create a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi) and [get data](http://support.powerbi.com/knowledgebase/articles/434354-connect-to-a-data-source).
+1.  Create a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868) and [get data](http://support.powerbi.com/knowledgebase/articles/434354).
 
 2.  In the question box at the top of your dashboard, start typing what you want to know about your data.  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnAQuestionBox.png)
@@ -52,6 +52,6 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 -   **How does Q&A know which datasets to use**?  Q&A has access to all datasets that have visualizations pinned to that dashboard.
 
 ## See Also  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868)  
+[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  

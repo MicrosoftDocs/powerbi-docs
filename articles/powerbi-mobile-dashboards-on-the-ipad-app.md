@@ -24,7 +24,7 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 ![](media/powerbi-mobile-dashboards-on-the-ipad-app/PBI_iPad_DashSM.png)
 
 
-Power BI comes with built-in dashboards for some data sources such as Salesforce, and you [create your own dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi).
+Power BI comes with built-in dashboards for some data sources such as Salesforce, and you [create your own dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868).
 
 Then you see these same dashboards in the iPad app for Microsoft Power BI for iOS, and you can see dashboards your colleagues share with you.# View dashboards on your iPad
 
@@ -52,5 +52,5 @@ Then you see these same dashboards in the iPad app for Microsoft Power BI for 
 
 4.  Click the back arrow in the upper-left corner or tap **Dashboards** in the bottom bar.
 
-More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172-the-ipad-app-for-power-bi-preview) for Power BI.
+More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172) for Power BI.
 

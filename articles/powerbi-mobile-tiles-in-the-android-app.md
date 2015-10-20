@@ -44,4 +44,4 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 ## See Also  
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 [Get started with the Android app for Power BI](https://support.powerbi.com/knowledgebase/articles/577773)  
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)  
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  

@@ -37,9 +37,9 @@ Dashboards can be deleted and removed.  Deleting and removing the dashboard do
 >Dashboards that are part of an organizational content packs have a different process for deleting.  See [Delete an organizational content pack](https://support.powerbi.com/knowledgebase/articles/663661).
 
 ## To remove a shared dashboard  
-A sharing icon ![](media/powerbi-service-delete-or-remove-a-dashboard/PBI_SharedWithYouIcon.png) tells you that the dashboard is being [shared](http://support.powerbi.com/knowledgebase/articles/431008-share-a-dashboard)with you.  Shared dashboards are read-only and can't be deleted -- only removed. To remove a dashboard, follow the same steps as deleting, but select **Remove**.
+A sharing icon ![](media/powerbi-service-delete-or-remove-a-dashboard/PBI_SharedWithYouIcon.png) tells you that the dashboard is being [shared](http://support.powerbi.com/knowledgebase/articles/431008)with you.  Shared dashboards are read-only and can't be deleted -- only removed. To remove a dashboard, follow the same steps as deleting, but select **Remove**.
 
 ## See Also  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868)  
+[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  

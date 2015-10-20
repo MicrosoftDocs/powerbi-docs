@@ -18,7 +18,7 @@
    ms.author="v-pawrig"/>
 # Delete a visualization in Power BI
 
-1.  In Power BI, open a report in [Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view)and [create a visualization](http://support.powerbi.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report) if your report doesn't already have one. 
+1.  In Power BI, open a report in [Editing View](http://support.powerbi.com/knowledgebase/articles/439921)and [create a visualization](http://support.powerbi.com/knowledgebase/articles/441777) if your report doesn't already have one. 
 
 2.  Select the ellipses (...) and choose **Remove**.
 
@@ -26,7 +26,7 @@
 
 ## See Also:
 
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 

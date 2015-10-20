@@ -20,7 +20,7 @@
 
 Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can create a big number tile by [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/436733), or in a Power BI report. This article explains how to create one in a report.
 
-1.  Create a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi) and [get data](http://support.powerbi.com/knowledgebase/articles/434354-connect-to-a-data-source).
+1.  Create a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868) and [get data](http://support.powerbi.com/knowledgebase/articles/434354).
 
     If you want data to practice on, try [downloading the Retail Analysis sample](https://support.powerbi.com/knowledgebase/articles/474807). 
 
@@ -56,7 +56,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/pinSuccess.png)
 
-10. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) the pinned visualization.
+10. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](http://support.powerbi.com/knowledgebase/articles/424878) the pinned visualization.
 
  
 
@@ -64,11 +64,11 @@ Sometimes a single number is the most important thing you want to track in your 
 
 [Dashboard tiles in Power BI](http://support.powerbi.com/knowledgebase/articles/425669)
 
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)
+[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
-[](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)
+[](http://support.powerbi.com/knowledgebase/articles/424868)
 
 
 

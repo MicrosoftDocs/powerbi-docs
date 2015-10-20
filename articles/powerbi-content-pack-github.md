@@ -71,7 +71,7 @@ Creating this connection retrieves your data and automatically provides a dashb
 
     ![](media/powerbi-content-pack-github/PBI_GithubDash.png)
 	
-	You can change this dashboard to display your data the way you want it. Plus you can ask a [question in Q&A](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669-when-you-click-a-tile-in-a-dashboard) and [change the tiles](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) in the dashboard. 
+	You can change this dashboard to display your data the way you want it. Plus you can ask a [question in Q&A](http://support.powerbi.com/knowledgebase/articles/474566) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669) and [change the tiles](http://support.powerbi.com/knowledgebase/articles/424878) in the dashboard. 
 	 
 	The following data is available from GitHub in Power BI:     
 	
@@ -96,5 +96,5 @@ If necessary, you can verify your GitHub credentials.
 3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.
 
 ## See also
-- [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+- [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 - [Get data](http://support.powerbi.com/knowledgebase/topics/63369-get-data)

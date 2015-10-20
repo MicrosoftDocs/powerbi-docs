@@ -50,5 +50,5 @@ What else you can do in the Android phone app for Power BI?
 
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 

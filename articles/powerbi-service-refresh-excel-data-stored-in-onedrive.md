@@ -25,7 +25,7 @@ Power BI can connect to your Excel, CSV, and Power BI Desktop files in **OneDriv
 
 ## Why connect to files on OneDrive?
 
-If your Excel, CSV, or Power BI Desktop file is in the cloud, in OneDrive, then when the data in the file changes, Power BI can [refresh the data](http://support.powerbi.com/knowledgebase/articles/474669-refresh-data-in-power-bi) from the file in OneDrive. You don't need to re-upload the file to Power BI. (By contrast, if your file is on your computer rather than in OneDrive, you have to re-upload the file to Power BI and [replace the existing file](https://support.powerbi.com/knowledgebase/articles/655108).)
+If your Excel, CSV, or Power BI Desktop file is in the cloud, in OneDrive, then when the data in the file changes, Power BI can [refresh the data](http://support.powerbi.com/knowledgebase/articles/474669) from the file in OneDrive. You don't need to re-upload the file to Power BI. (By contrast, if your file is on your computer rather than in OneDrive, you have to re-upload the file to Power BI and [replace the existing file](https://support.powerbi.com/knowledgebase/articles/655108).)
 
 **NOTE**: Avoid changing the structure of the data. If you rename or delete a column, any visuals based on that column will be broken. If you add a column, Power BI ignores the added column in existing visuals, but adds the new column to the dataset, so you can use it in creating or updating visuals. 
 
@@ -61,9 +61,9 @@ If your workbook contains Power View sheets, then when those sheets change, Powe
 
 ## See also
 
-[Get data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
+[Get data](http://support.powerbi.com/knowledgebase/articles/434354)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi) 
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814) 
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 

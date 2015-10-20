@@ -45,9 +45,9 @@ Here are some tips for making the most of Q&A in your workbook.
 >If your workbook has a Power Pivot data model, you can do even more optimizations. Read more about [Demystifying Power BI Q&A part 2](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx) from our in-house team of natural language experts.
 
 ## See Also  
-[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)  
+[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566)  
 [Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)  
 [Ask the right questions of Salesforce data in Power BI](http://support.powerbi.com/knowledgebase/articles/475138)  
-[Get Data: Salesforce](http://support.powerbi.com/knowledgebase/articles/424863-get-data-salesforce-data)  
-[Get data (for Power BI)](http://support.powerbi.com/knowledgebase/articles/434354-get-data)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Get Data: Salesforce](http://support.powerbi.com/knowledgebase/articles/424863)  
+[Get data (for Power BI)](http://support.powerbi.com/knowledgebase/articles/434354)  
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  

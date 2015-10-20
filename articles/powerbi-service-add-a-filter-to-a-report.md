@@ -33,7 +33,7 @@ There are two modes for interacting with reports: [Reading View](http://suppor
 
 ### By filtering the fields already in the chart
 
-1.  Open your [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view).
+1.  Open your [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921).
 
 2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 
@@ -49,7 +49,7 @@ The visualization changes to reflect the new filter. If you save your report wit
 
 ## Add a filter to an entire page (aka Page View filter)
 
-1.  Open your [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view).
+1.  Open your [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921).
 
 2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 
@@ -65,7 +65,7 @@ If you save your report with the filter, report readers can interact with the fi
 
 ## Add a filter to an entire report (aka Report filter)
 
-1. Open your [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view).
+1. Open your [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. Select a field in the field list and drag it below **Report Level Filters**.
 4. Select the values you want to filter (see [How to use report filters](http://support.powerbi.com/knowledgebase/articles/546859)). 
@@ -76,10 +76,10 @@ The visualizations on the active page, and on all pages in the report, changes t
 
  [How to use report filters](http://support.powerbi.com/knowledgebase/articles/546859)
 
-  [Filters and highlighting in reports](http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports)
+  [Filters and highlighting in reports](http://support.powerbi.com/knowledgebase/articles/467092)
 
-[Interact with filters and highlighting in report Reading View](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)
+[Interact with filters and highlighting in report Reading View](http://support.powerbi.com/knowledgebase/articles/445094)
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)*﻿*
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)*﻿*

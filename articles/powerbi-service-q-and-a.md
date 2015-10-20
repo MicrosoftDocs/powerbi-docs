@@ -40,14 +40,14 @@ Use Q&A in a realistic industry tutorial.
 [Make your data work well with Q&A](http://support.powerbi.com/knowledgebase/articles/474690)
 Are you the person creating datasets and data models?  Then this topic is for you.
 
-[Use Q&A with Salesforce data](http://support.powerbi.com/knowledgebase/articles/475138-ask-the-right-questions-of-salesforce-data)
+[Use Q&A with Salesforce data](http://support.powerbi.com/knowledgebase/articles/475138)
 How does Q&A communicate with Salesforce.
 
 ## See Also:
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814)
 
 [Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)
 

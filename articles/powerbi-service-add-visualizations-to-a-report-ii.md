@@ -33,7 +33,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 3.  Select **Edit Report** to open the report in Editing View.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/EditReport.png)
 
-4.  [Add a new page](http://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report)by selecting the yellow plus icon at the bottom of the canvas.  
+4.  [Add a new page](http://support.powerbi.com/knowledgebase/articles/474804)by selecting the yellow plus icon at the bottom of the canvas.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_addReportPage.png)
 
 ### Add a visualization that looks at this year's sales compared to last year.  
@@ -43,14 +43,14 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 2.  From the Time table, select **FiscalMonth** and drag it into the **Axis** area.  
 ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_5.png)
 
-3.  [Change the visualization](http://support.powerbi.com/knowledgebase/articles/444663-change-the-type-of-visualization-in-a-report)to a line chart.
+3.  [Change the visualization](http://support.powerbi.com/knowledgebase/articles/444663)to a line chart.
 
 	-   From the Visualizations pane, select the line chart icon.
 
-4.  [Resize the visualization](http://support.powerbi.com/knowledgebase/articles/465130-move-and-resize-a-visualization)by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.  
+4.  [Resize the visualization](http://support.powerbi.com/knowledgebase/articles/465130)by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.  
 ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7.png)
 
-5.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
+5.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112).
 
 ### Add a map visualization that looks at sales by location  
 1.  From the **Store** table, click **Territory**. Power BI recognizes that Territory is a location, and creates a map visualization.  
@@ -64,7 +64,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 
 ## See Also  
 -   For more information about the Fields pane, see [The report editor... take a tour](https://support.powerbi.com/knowledgebase/articles/665494).   
--   To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports).  
--   To learn about using and changing aggregations, see [Aggregates in reports](http://support.powerbi.com/knowledgebase/articles/475147-aggregates-in-power-bi-reports).  
--   Need help understanding the building blocks that make up Power BI?  [See Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts).  
--   More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports).  
+-   To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](http://support.powerbi.com/knowledgebase/articles/467092).  
+-   To learn about using and changing aggregations, see [Aggregates in reports](http://support.powerbi.com/knowledgebase/articles/475147).  
+-   Need help understanding the building blocks that make up Power BI?  [See Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029).  
+-   More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821).  

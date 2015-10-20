@@ -19,11 +19,11 @@
 
 # Tiles in the Power BI for Windows app  
 
-Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).
+Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/425669).
 
-Then you see and interact with the tiles in the Microsoft [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app). # Interact with tiles on a dashboard
+Then you see and interact with the tiles in the Microsoft [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917). # Interact with tiles on a dashboard
 
-1.  Open a [dashboard](http://support.powerbi.com/knowledgebase/articles/510951-dashboards-in-the-power-bi-for-windows-app) in the Windows app.
+1.  Open a [dashboard](http://support.powerbi.com/knowledgebase/articles/510951) in the Windows app.
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data.  
     ![](media/powerbi-mobile-tiles-in-the-windows-app/PBI_WinAppTileSM.png)
@@ -41,8 +41,8 @@ Then you see and interact with the tiles in the Microsoft [Power BI for Windo
 -   Annotate the tile...   
     ![](media/powerbi-mobile-tiles-in-the-windows-app/PBI_WinAppTileIcons.png)
 
-    ... and then share a [snapshot of the tile](http://support.powerbi.com/knowledgebase/articles/535432-share-a-snapshot-of-a-tile-from-the-power-bi-for-w) with others.
+    ... and then share a [snapshot of the tile](http://support.powerbi.com/knowledgebase/articles/535432) with others.
 
 -   [Open the report](https://support.powerbi.com/knowledgebase/articles/510953-reports-in-the-power-bi-for-windows-app) that the tile is based on.
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).
+More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917).
