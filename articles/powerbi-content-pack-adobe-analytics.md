@@ -3,7 +3,7 @@
    description="Adobe Analytics content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="maggies"/>
 # Adobe Analytics content pack for Power BI
 
 Connecting to Adobe Analytics through Power BI starts by connecting to your Adobe Analytics Marketing Cloud account. You will get a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once per day.

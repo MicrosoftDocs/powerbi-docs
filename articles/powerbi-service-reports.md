@@ -3,7 +3,7 @@
    description="Reports in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="mihart"/>
 # Reports in Power BI
 
 Dashboards, reports, and datasets are at the heart of Power BI. A **report** is a multi-perspective view into your data, with visualizations that represent different findings and insights from that data.  A report may have a single visualization or pages full of visualizations.

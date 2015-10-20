@@ -3,7 +3,7 @@
    description="Annotate and share a snapshot of a tile from the Power BI for Windows app"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Annotate and share a snapshot of a tile from the Power BI for Windows app
 
 When you share a tile from the Windows app for Power BI, you're sharing a snapshot of the tile. Your recipients see the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.

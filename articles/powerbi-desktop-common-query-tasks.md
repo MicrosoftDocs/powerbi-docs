@@ -3,7 +3,7 @@
    description="Common query tasks in Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="davidi"/>
 # Common query tasks in Power BI Desktop
 
 When working in the **Query Editor** window of Power BI Desktop, there are a handful of commonly used tasks. This document demonstrates those common tasks, and provides links for additional information. 

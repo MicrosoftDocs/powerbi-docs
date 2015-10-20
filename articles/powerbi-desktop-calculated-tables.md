@@ -3,7 +3,7 @@
    description="Calculated tables in Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-aljenk" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="v-aljenk"/>
+   ms.author="davidi"/>
 
 # Calculated tables in Power BI Desktop
 

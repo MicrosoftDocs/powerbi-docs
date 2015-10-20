@@ -3,7 +3,7 @@
    description="Salesforce content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mgblythe" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="tpalmer"/>
 # Salesforce content pack for Power BI
 
 With Power BI, you can easily connect to your Salesforce.com account. Creating this connection retrieves your data and automatically provides a dashboard and related reports based on your data.

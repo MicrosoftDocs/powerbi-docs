@@ -3,7 +3,7 @@
    description="Tips and tricks for creating reports in Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="davidi"/>
 # Tips and tricks for creating reports in Power BI Desktop
 
 To get the most out of your data, sometimes you need a little extra help. We’ve put together some tips & tricks you can use when creating reports in the Microsoft Power BI Desktop *and* in Microsoft Excel 2013 Pro-Plus editions with the Power Pivot add-in enabled and Power Query installed and enabled. 

@@ -3,7 +3,7 @@
    description="Visual Studio Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="mgblythe" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="jastru"/>
+   ms.author="lukaszp"/>
 # Visual Studio Online content pack for Power BI
 
 Use the Visual Studio Online content pack for Power BI to gain insights into your git and TFVC team projects. After you make a connection, your data comes to you automatically on a dashboard and in reports. 

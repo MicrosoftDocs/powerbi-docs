@@ -3,7 +3,7 @@
    description="Text Boxes in Power BI reports"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="mihart"/>
 # Text Boxes in Power BI reports
 
 In Editing View, add a text box to a report and then pin it to a dashboard. 

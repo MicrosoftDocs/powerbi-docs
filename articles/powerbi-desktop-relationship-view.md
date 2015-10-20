@@ -3,7 +3,7 @@
    description="Relationship View in Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="davidi"/>
 # Relationship View in Power BI Desktop
 
 Relationship View shows all of the tables, columns, and relationships in your model. This can be especially helpful when your model has complex relationships between many tables.

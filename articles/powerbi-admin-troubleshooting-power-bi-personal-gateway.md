@@ -3,7 +3,7 @@
    description="Troubleshooting Power BI Personal Gateway"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="asaxton"/>
 # Troubleshooting Power BI Personal Gateway
 
 ## Installation

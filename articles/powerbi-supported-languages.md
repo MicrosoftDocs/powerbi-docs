@@ -3,7 +3,7 @@
    description="Supported languages and countries/regions for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
 For countries and regions where Power BI is available, see this [international availability list](https://products.office.com/business/international-availability). 

@@ -3,7 +3,7 @@
    description="Microsoft Dynamics Marketing content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="mgblythe" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="yshoukry"/>
 # Microsoft Dynamics Marketing content pack for Power BI
 
 The Microsoft Dynamics Marketing content pack for Power BI allows you to easily access and analyze your data from Dynamics Marketing. The content pack uses a descriptive model on top of the OData feed, with all the entities and measures needed such as Programs, Campaigns, Marketing Contacts and Companies, Leads, Lead Interactions and Lead Scoring, Email Marketing Messages and Web Sites, behavioral observations, budgets, financial transactions, performance KPIs, and many more. 

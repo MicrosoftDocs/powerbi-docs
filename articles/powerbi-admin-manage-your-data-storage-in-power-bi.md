@@ -3,7 +3,7 @@
    description="Manage your data storage in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="asaxton"/>
 # Manage your data storage in Power BI
 
 Power BI offers two licenses – free and Pro – with different storage limits:

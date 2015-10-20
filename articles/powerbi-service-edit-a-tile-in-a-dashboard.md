@@ -3,7 +3,7 @@
    description="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="mihart"/>
 # Edit a tile -- resize, move, rename, pin, delete, add hyperlink
 
 You can change the look and default behavior of a tile in a dashboard:

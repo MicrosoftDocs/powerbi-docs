@@ -3,7 +3,7 @@
    description="Power BI Desktop Help"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="davidi"/>
 # Power BI Desktop Help
 
 **Stay up-to-date**

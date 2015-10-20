@@ -3,7 +3,7 @@
    description="Replace an Excel, Power BI Desktop, or CSV file in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="Minewiskan" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="owend"/>
 # Replace an Excel, Power BI Desktop, or CSV file in Power BI
 
 Say you upload an Excel, Power BI Desktop, or CSV file from your computer to Power BI, and use it as a dataset for reports and dashboards in Power BI.

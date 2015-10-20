@@ -3,7 +3,7 @@
    description="Human Resources sample for Power BI: Take a tour"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="jastru"/>
+   ms.author="maggies"/>
 
 # Human Resources sample for Power BI: Take a tour  
 

@@ -3,7 +3,7 @@
    description="Add a hyperlink to a Text Box in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="mihart"/>
 # Add a hyperlink to a Text Box in Power BI
 
 >**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). 

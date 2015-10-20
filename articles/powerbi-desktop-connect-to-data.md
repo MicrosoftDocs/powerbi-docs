@@ -3,7 +3,7 @@
    description="Connect to data in Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="davidi"/>
 # Connect to data in Power BI Desktop
 
 With Power BI Desktop you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](http://go.microsoft.com/fwlink/?LinkID=521662) and install it.

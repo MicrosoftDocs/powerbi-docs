@@ -3,7 +3,7 @@
    description="Power BI Security"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="asaxton"/>
 # Power BI Security
 
 For a detailed explanation of Power BI security, please [download the Power BI Security whitepaper](http://download.microsoft.com/download/4/8/C/48CFCF8A-2025-4B97-B249-7B505E26E7ED/Power%20BI%20Security%20Whitepaper.docx).

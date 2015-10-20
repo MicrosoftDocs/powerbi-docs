@@ -3,7 +3,7 @@
    description="Favorites in the Android app for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Favorites in the Android app for Power BI
 
 For easy access to your most interesting data, you can mark specific tiles as favorites in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md). Only you can see your Favorites page, where you bring together in one place your favorite tiles from all of your dashboards.

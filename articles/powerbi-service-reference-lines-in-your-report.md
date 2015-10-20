@@ -3,7 +3,7 @@
    description="Reference lines in your report"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="mihart"/>
 # Reference lines in your report
 
 You can use a calculated column to define a reference line.  Identify the table and column on which you want to create a reference line.  Select "New Column" in the ribbon and, in the formula bar, type the following formula:

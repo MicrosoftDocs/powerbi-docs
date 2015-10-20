@@ -3,7 +3,7 @@
    description="Share a dashboard from the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Share a dashboard from the iPhone app (Power BI for iOS)
 
 Invite colleagues to view your dashboards by sharing links from the iPhone app for Power BI. You can only share dashboards with colleagues in the same email domain as you.

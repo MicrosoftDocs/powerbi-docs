@@ -3,7 +3,7 @@
    description="Tutorial: Change the display settings for a page in a Power BI report"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="jastru"/>
+   ms.author="mihart"/>
 
 # Tutorial: Change the display settings for a page in a Power BI report  
 

@@ -3,7 +3,7 @@
    description="Data sources in Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="davidi"/>
 # Data sources in Power BI Desktop
 
 With Power BI Desktop, you can connect to data from many different sources. A full list of available data sources is at the bottom of this page.

@@ -3,7 +3,7 @@
    description="Capturing additional diagnostic information for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/15/2015"
-   ms.author="jastru"/>
+   ms.author="asaxton"/>
 
 # Capturing additional diagnostic information for Power BI  
 

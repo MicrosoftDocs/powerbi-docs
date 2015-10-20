@@ -3,7 +3,7 @@
    description="Getting started with color formatting and axis properties"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/15/2015"
-   ms.author="jastru"/>
+   ms.author="davidi"/>
 
 # Getting started with color formatting and axis properties  
 

@@ -3,7 +3,7 @@
    description="Procurement Analysis sample for Power BI: Take a tour"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-aljenk" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="v-aljenk"/>
+   ms.author="maggies"/>
 
 # Procurement Analysis sample for Power BI: Take a tour 
 

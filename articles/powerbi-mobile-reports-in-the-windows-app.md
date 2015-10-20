@@ -3,7 +3,7 @@
    description="Reports in the Power BI for Windows app"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="maggies"/>
 # Reports in the Power BI for Windows app
 
 A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports in the Power BI service (https://powerbi.com)](powerbi-service-reports.md).

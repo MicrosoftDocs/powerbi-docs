@@ -3,7 +3,7 @@
    description="Tutorial: Create your own measures in Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="davidi"/>
 # Tutorial: Create your own measures in Power BI Desktop
 
 Some of the most powerful data analysis solutions in Power BI Desktop can be created by using measures. Measures help us by performing calculations on our data as we interact with our reports. This tutorial will guide you through understanding and creating some of your own basic measures in Power BI Desktop.

@@ -3,7 +3,7 @@
    description="What's new in the latest Power BI Desktop update?"
    services="powerbi" 
    documentationCenter="" 
-   authors="pcw3187" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="v-pawrig"/>
+   ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
 
 ## September 2015 Update (2.27.4163.351)

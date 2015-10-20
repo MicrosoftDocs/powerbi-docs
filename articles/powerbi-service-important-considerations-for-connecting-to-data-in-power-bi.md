@@ -3,7 +3,7 @@
    description="Important considerations for connecting to data in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="maggies"/>
 # Important considerations for connecting to data in Power BI
 
 Connecting to data sources through Power BI is an easy way to get analytics and insights on data that is important to you. Power BI is designed to work well with a variety of data sources:
