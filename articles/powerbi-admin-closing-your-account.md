@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Closing your Power BI Account"
    description="Closing your Power BI Account"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Closing your Power BI Account
-
-[← Administrative](https://support.powerbi.com/knowledgebase/topics/63248-administrative)
 
 If you don't want to use Power BI any longer, you can ask us to close your Power BI account.  After your account is closed, you can no longer sign in to Power BI.  Also, any customer data you uploaded or created in Power BI is deleted according to the data retention policy in the Power BI Terms of Service.
 

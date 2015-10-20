@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Create a big number tile from a Power BI report"
    description="Create a big number tile from a Power BI report"
    services="powerbi" 
@@ -18,19 +18,17 @@
    ms.author="v-pawrig"/>
 # Create a big number tile from a Power BI report
 
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
+Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can create a big number tile by [asking a question in the Q&A box](powerbi-service-create-a-big-number-tile-for-a-dashboard.md), or in a Power BI report. This article explains how to create one in a report.
 
-Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can create a big number tile by [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/436733), or in a Power BI report. This article explains how to create one in a report.
+1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
-1.  Create a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi) and [get data](http://support.powerbi.com/knowledgebase/articles/434354-connect-to-a-data-source).
-
-    If you want data to practice on, try [downloading the Retail Analysis sample](https://support.powerbi.com/knowledgebase/articles/474807). 
+    If you want data to practice on, try [downloading the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). 
 
 2.  In the left navigation bar, select the report that the dashboard is based on - in this example, the Retail Analysis Sample report.
 
 3.  Select **Edit Report**.
 
-4.  In the report, find a page with some blank space, or [add a new page to the report](https://support.powerbi.com/knowledgebase/articles/474804).
+4.  In the report, find a page with some blank space, or [add a new page to the report](powerbi-service-add-a-page-to-a-report.md).
 
 5.  In the Fields list, select the number field you want to display.
 
@@ -58,19 +56,19 @@ Sometimes a single number is the most important thing you want to track in your 
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/pinSuccess.png)
 
-10. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) the pinned visualization.
+10. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
  
 
 ## See Also:
 
-[Dashboard tiles in Power BI](http://support.powerbi.com/knowledgebase/articles/425669)
+[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)
+[Dashboards in Power BI](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)
+[](powerbi-service-dashboards.md)
 
 
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Alternate Email Address for Power BI"
    description="Alternate Email Address for Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Alternate Email Address for Power BI
-
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 
 By default, the email address you used to sign up to Power BI with is used to send you updates about activity in Power BI.  For example, when someone sends you a sharing invitation it will go to this address.
 

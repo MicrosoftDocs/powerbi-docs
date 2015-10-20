@@ -18,11 +18,9 @@
    ms.author="v-anpasi"/>
 # Getting started with Power BI Desktop
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
-
 Welcome to the **Power BI Desktop Getting Started Guide**. This short tour of Power BI Desktop gets you acquainted with how it works, demonstrates what it can do, and accelerates your ability to build robust data models — along with amazing reports — that amplify your business intelligence efforts.  
 
-Prefer to watch instead of read? Feel free to [take a look at our getting started video](https://support.powerbi.com/knowledgebase/articles/461292). And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962). 
+Prefer to watch instead of read? Feel free to [take a look at our getting started video](powerbi-desktop-videos.md). And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962). 
 
 ![](media/powerbi-desktop-getting-started/PBI_GettingStartedSplash_resized.png)
 
@@ -150,7 +148,7 @@ We need to make a few more changes to get the query where we want it:
 
 -   *Change the Table Name* – that **Table 0** is not a useful descriptor, but changing it simple
 
-Each of these steps is demonstrated in **[Shape and Combine Data in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/471644)**. Feel free to check out that page, or keep going in this document to see what you would do next. The next section picks up after the changes above are applied.
+Each of these steps is demonstrated in **[Shape and Combine Data in Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)**. Feel free to check out that page, or keep going in this document to see what you would do next. The next section picks up after the changes above are applied.
 
 ## Combine Data
 
@@ -164,7 +162,7 @@ From the **Home** ribbon in **Query Editor**, we select **Get Data \> Web** and 
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_USStateAbbreviationsNavigator.png)
 
-We select **Table[edit]** because it includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down. Each of these steps is also demonstrated in **[Shape and Combine Data in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/471644)**. To summarize those steps, here's what we do:
+We select **Table[edit]** because it includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down. Each of these steps is also demonstrated in **[Shape and Combine Data in Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)**. To summarize those steps, here's what we do:
 
 We select **Edit**, then:
 
@@ -212,7 +210,7 @@ In this case, we only want the *State Code* column, so we select only that colum
 
 We now have a single query (table) that combined two data sources, each of which has been shaped to meet our needs. This query can serve as a basis for lots of additional, interesting data connections – such as housing cost statistics, demographics, or job opportunities in any state.
 
-For a more complete description of each of these shape and combine data steps, see [Shape and Combine Data in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/471644).
+For a more complete description of each of these shape and combine data steps, see [Shape and Combine Data in Power BI Desktop](powerbi-desktop-shape-and-combine-data.md).
 
 For now, we have enough data to create a few interesting reports, all within Power BI Desktop. Since this is a milestone let’s save this Power BI Desktop file – we’ll call it **Getting Started with Power BI Desktop**. To save the changed in **Query Editor**, and load them into Power BI Desktop, select **Close & Load** from the **Home** ribbon.
 
@@ -250,7 +248,7 @@ Notice that in the **Visualizations** pane, I can select different types of visu
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_VisualizationTypes.png)
 
-Let’s fast-forward a bit, and see what the **Report** view looks like after a handful of visualizations have been added, as well as a few new Report pages.For more information about reports, see **[Report View in Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/461283)**.
+Let’s fast-forward a bit, and see what the **Report** view looks like after a handful of visualizations have been added, as well as a few new Report pages.For more information about reports, see **[Report View in Power BI Desktop](powerbi-desktop-report-view.md)**.
 
 The first Report page provides a perspective of the data based on *Overall rank*. When we select one of the visualizations, the **Fields and Filters** pane shows which fields are selected, and the structure of the visualization (which fields are applied to the **Shared Axis**, **Column Values**, and **Line Values**).
 
@@ -325,7 +323,7 @@ The **Power BI** service displays the first page of the report. Along the bottom
 
 You can make changes to a report in the **Power BI** service by selecting **Edit Report** from the top of the report canvas.
 
-To save your report, select **File \> Save As** from the service. There are all sorts of interesting visuals you can create in the **Power BI** service from your report, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service**[, see Tips for designing a great dashboard](http://support.powerbi.com/knowledgebase/articles/433616)**.
+To save your report, select **File \> Save As** from the service. There are all sorts of interesting visuals you can create in the **Power BI** service from your report, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service**[, see Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md)**.
 
  ![](media/powerbi-desktop-getting-started/GSG_Share5.png)
 
@@ -337,7 +335,7 @@ From here, you can send an email to colleagues with whom you’d like to share t
 
  ![](media/powerbi-desktop-getting-started/GSG_Share7.png)
 
-For more information about creating, sharing, and modifying dashboards, see **[Share a dashboard](http://support.powerbi.com/knowledgebase/articles/431008)**.
+For more information about creating, sharing, and modifying dashboards, see **[Share a dashboard](powerbi-service-share-unshare-dashboard.md)**.
 
 There are all sorts of compelling data-related mash-ups and visualizations you can do with Power BI Desktop, and with the Power BI service. Check out the next section for more information.
 

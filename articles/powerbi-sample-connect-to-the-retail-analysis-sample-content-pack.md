@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Connect to the Power BI samples"
    description="Tutorial: Connect to the Power BI samples"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tutorial: Connect to the Power BI samples  
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 Want to try Power BI with sample data?  Use our sample content packs or one of our Excel datasets to learn how Power BI keeps you in the know and focused on what matters to run your business.  The samples use real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
@@ -26,11 +25,11 @@ This tutorial uses the *Retail Analysis* sample content pack. The Retail Analysi
 
 **Take a tour:**
 
--   [Retail Analysis sample](https://support.powerbi.com/knowledgebase/articles/474807)
+-   [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md)
 
--   [Supplier Quality sample](https://support.powerbi.com/knowledgebase/articles/510270)
+-   [Supplier Quality sample](powerbi-sample-supplier-quality-analysis-sample-for-power-bi-take-a-tour.md)
 
--   [IT Spend Analysis sample](https://support.powerbi.com/knowledgebase/articles/510274)
+-   [IT Spend Analysis sample](powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour.md)
 
 1.  Select Get Data at the bottom of the left navigation pane.  
     ![](media/powerbi-sample-connect-to-the-retail-analysis-sample-content-pack/PBI_GetData.png)
@@ -44,6 +43,6 @@ This tutorial uses the *Retail Analysis* sample content pack. The Retail Analysi
 4.  Power BI installs the dashboard, report, and dataset for the Retail Analysis sample. Because they're new, they're marked with a yellow asterisk.  
     ![](media/powerbi-sample-connect-to-the-retail-analysis-sample-content-pack/PBI_NewExcelLeftNav.png)
 
-5.  Now explore the dashboard and report on your own, or check out the [tour of the Retail Analysis sample](https://support.powerbi.com/knowledgebase/articles/474807).
+5.  Now explore the dashboard and report on your own, or check out the [tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).
 
 Are you looking for a different type of sample?  [Request a new sample](http://support.powerbi.com/forums/265200-power-bi/category/91332-samples).  

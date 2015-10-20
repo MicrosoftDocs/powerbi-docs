@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # DAX basics in Power BI Desktop
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
-
 This article is for users new to Power BI Desktop. It’s meant to give you a quick and easy introduction on how you can use Data Analysis Expressions (DAX) to solve a number of basic calculation and data analysis problems. We’ll go over some conceptual information, a series of tasks you can complete, and a few quizzes to test what you’ve learned. After completing this article, you should have a good understanding of the most important fundamental concepts in DAX.
 
 ## What is DAX?
@@ -34,7 +32,7 @@ It’s quite easy to create a new Power BI Desktop file and import some data int
 
 You might already be familiar with creating formulas in Microsoft Excel. That knowledge will be helpful in understanding DAX, but even if you have no experience with Excel formulas, the concepts described here will help you get started creating DAX formulas and solving real-world BI problems right away.
 
-We’re going to focus on understanding DAX formulas used in calculations, more specifically, in measures and calculated columns. You should already be familiar with Power BI Desktop, importing data, adding fields to a report, and you should also be familiar with fundamental concepts of [Measures](https://support.powerbi.com/knowledgebase/articles/554577-measures-in-power-bi-designer) and [Calculated columns](https://support.powerbi.com/knowledgebase/articles/590598-calculated-columns-in-power-bi-designer).
+We’re going to focus on understanding DAX formulas used in calculations, more specifically, in measures and calculated columns. You should already be familiar with Power BI Desktop, importing data, adding fields to a report, and you should also be familiar with fundamental concepts of [Measures](powerbi-desktop-measures.md-measures-in-power-bi-designer) and [Calculated columns](powerbi-desktop-calculated-columns.md-calculated-columns-in-power-bi-designer).
 
 **Example Workbook**
 

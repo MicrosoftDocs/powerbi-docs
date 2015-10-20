@@ -18,8 +18,6 @@
    ms.author="v-pawrig"/>
 # Tutorial: Combo Chart in Power BI
 
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
-
 In Power BI, a Combo Chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data. 
 
 Combo charts can have one or two Y axes.
@@ -46,7 +44,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 2. Select **Edit Report** to open the report in Editing View.
 
-3. [Add a new report page](https://support.powerbi.com/knowledgebase/articles/474804).
+3. [Add a new report page](powerbi-service-add-a-page-to-a-report.md).
 
 4. Create a column chart that displays this year's sales and gross margin by month.
 
@@ -56,21 +54,21 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 	3. Select **Time** \> **Month** to add it to the **Axis** well. 
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/comboTutorial1.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combotutorial1.png)
 
 5. Convert the column chart to a Combo chart.
 
 	1.  With the column chart selected, open the Visualizations pane and select the **Line and Clustered Column chart**.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/convertToCombo.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo.png)
 
 	2.  From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line Values** bucket.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/lineValueBucket.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/linevaluebucket.png)
 
     Your combo chart should look like this:
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/comboChartDone.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochartdone.png)
 
 
 ## Create a Combo Chart with two axes
@@ -88,11 +86,11 @@ In this task, we'll see what impact store count has on sales.
 
 3.  To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/lineAndStacked.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/lineandstacked.png)
 
 4.  Drag **Store Count** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the data sets to be scaled differently; the left measures dollars and the right measures count of stores.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/comboChart2Done.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochart2done.png)
 
       
 
@@ -106,7 +104,7 @@ In this task, we'll see what impact store count has on sales.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo3.png)
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/YaxisOff.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/yaxisoff.png)
 
 
 ## Add titles to the axes
@@ -121,7 +119,7 @@ In this task, we'll see what impact store count has on sales.
 
 5.  Set **Style** to **Show title only**.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/YaxisSettings.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/yaxissettings.png)
 
 6.  Select the down arrow to expand the X-axis options.
 
@@ -131,15 +129,15 @@ In this task, we'll see what impact store count has on sales.
 
     Your Combo chart now displays dual axes, both with titles.
 
-	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/XYaxisTitlesOn.png)
+	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/xyaxistitleson.png)
 
-	[Add the Combo Chart as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).
+	[Add the Combo Chart as a dashboard tile](powerbi-service-dashboard-tiles.md).
 
-	[Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
+	[Save the report](powerbi-service-save-a-report.md).
 
 ## Highlighting and cross-filtering
 
-For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
+For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 Highlighting a column or line in a Combo Chart cross-filters the other visualizations on the report page... and vice versa.
 
@@ -149,11 +147,11 @@ Highlighting a column or line in a Combo Chart cross-filters the other visualiza
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
-[Visualizations in Power BI  reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI  reports](powerbi-service-visualizations-for-reports.md)
 
-[Visualization types in Power BI](http://support.powerbi.com/knowledgebase/articles/469552-visualization-types-available-in-power-bi-reports)
+[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Try it out -- it's free!](https://powerbi.com/)
 

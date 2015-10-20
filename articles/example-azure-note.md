@@ -36,12 +36,12 @@ Here is an example of a AZURE.NOTE with multiple paragraphs:
 ````lang-html
 > [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Azure account. 
 > 
-> If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/en-us/pricing/free-trial/) in just a couple of minutes. 
+> If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/pricing/free-trial/) in just a couple of minutes. 
 ````
 
 > [AZURE.NOTE] To complete this tutorial, you must have an Microsoft Azure account. 
 > 
-> If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/en-us/pricing/free-trial/) in just a couple of minutes. 
+> If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/pricing/free-trial/) in just a couple of minutes. 
 
 ---
 ## AZURE.NOTE with inline links and formatting ##
@@ -49,10 +49,10 @@ Here is an example of a AZURE.NOTE with multiple paragraphs:
 Here is an example of a AZURE.NOTE with an inline link and inline formatting for bold and italics:
 
 ````lang-html
-> [AZURE.NOTE] To complete this tutorial, you must have an _active_ **Microsoft Azure account**. If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/en-us/pricing/free-trial/) in just a couple of minutes. 
+> [AZURE.NOTE] To complete this tutorial, you must have an _active_ **Microsoft Azure account**. If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/pricing/free-trial/) in just a couple of minutes. 
 ````
 
-> [AZURE.NOTE] To complete this tutorial, you must have an _active_ **Microsoft Azure account**. If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/en-us/pricing/free-trial/) in just a couple of minutes. 
+> [AZURE.NOTE] To complete this tutorial, you must have an _active_ **Microsoft Azure account**. If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/pricing/free-trial/) in just a couple of minutes. 
 
 ---
 

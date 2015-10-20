@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Delete a dataset from Power BI"
    description="Delete a dataset from Power BI"
    services="powerbi" 
@@ -19,8 +19,6 @@
 
 # Delete a dataset from Power BI
 
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
-
 Datasets can be deleted.  When you delete a dataset:
 
 -   If the dataset connects to a file in OneDrive, the connection is deleted but the file itself is not deleted from OneDrive.
@@ -35,8 +33,8 @@ In the navigation pane, right-click the dataset to delete and click **Delete**.
 
 ## See also
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
+[Get Data](powerbi-service-get-data.md)
 
-[Power BI - Basic concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic concepts](powerbi-service-basic-concepts.md)

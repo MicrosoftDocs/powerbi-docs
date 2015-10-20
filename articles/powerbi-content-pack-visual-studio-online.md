@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Visual Studio Online content pack for Power BI"
    description="Visual Studio Online content pack for Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/16/2015"
    ms.author="jastru"/>
 # Visual Studio Online content pack for Power BI
-
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 Use the Visual Studio Online content pack for Power BI to gain insights into your git and TFVC team projects. After you make a connection, your data comes to you automatically on a dashboard and in reports. 
 

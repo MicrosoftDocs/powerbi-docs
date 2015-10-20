@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Move and resize a visualization in a Power BI report"
    description="Move and resize a visualization in a Power BI report"
    services="powerbi" 
@@ -18,9 +18,8 @@
    ms.author="jastru"/>
 
 # Move and resize a visualization in a Power BI report  
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
-In Power BI, open a report in [Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view) and [create a visualization](http://support.powerbi.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report) if your report doesn't already have one.
+In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) and [create a visualization](powerbi-service-add-visualizations-to-a-report-i.md) if your report doesn't already have one.
 
 ### Move the visualization﻿  
 -   Select any blank area of the visualization and drag to the new location. 
@@ -30,6 +29,6 @@ In Power BI, open a report in [Editing View](http://support.powerbi.com/knowledg
     ![](media/powerbi-service-move-and-resize-a-visualization/Untitled.gif)
 
 ## See Also  
-[Resize a visualization on a dashboard](https://support.powerbi.com/knowledgebase/articles/424878)  
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Resize a visualization on a dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md)  
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Bring whole Excel files into Power BI"
    description="Bring whole Excel files into Power BI"
    services="powerbi" 
@@ -18,11 +18,9 @@
    ms.author="v-pawrig"/>
 # Bring whole Excel files into Power BI
 
-[← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
-
 If Excel is your go-to tool for working with data, you can leverage your Excel expertise and investments by using them in Power BI. You can bring any Excel workbook (XLSX or XLSM) into Power BI and explore the whole file, exactly as you would in Excel Online.
 
->Note: You can't pin items in Excel to a dashboard in Power BI. If you want to pin Power View visuals to a Power BI dashboard, either [connect to it on OneDrive or import it from your computer, as a data source](https://support.powerbi.com/knowledgebase/articles/597003). 
+>Note: You can't pin items in Excel to a dashboard in Power BI. If you want to pin Power View visuals to a Power BI dashboard, either [connect to it on OneDrive or import it from your computer, as a data source](powerbi-service-get-data-from-files.md). 
 
 To view and explore whole Excel files in Power BI, your workbooks need to be on OneDrive for Business. Here's a big advantage of connecting to files on OneDrive: any changes you make to a file on OneDrive appear automatically in the file in Power BI. The reverse is also true when you bring in whole Excel files: Changes you make to the file in Power BI are saved to the file on OneDrive.
 
@@ -50,13 +48,13 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 
     10 MB for the rest of the workbook.
 
-    Read more about [Excel workbook size](https://support.powerbi.com/knowledgebase/articles/723615).
+    Read more about [Excel workbook size](powerbi-reduce-the-size-of-an-excel-workbook.md).
 
 -   The file can't be encrypted -- protected with a password or information or digital rights management (IRM or DRM).
 
 -   You can't connect to a whole Excel file again if you're already connected to it. But you can connect to a single file both as a whole Excel workbook and as a dataset. The whole Excel file appears under Reports in the left navigation pane, and the workbook-as-dataset appears under Datasets.
 
--   If you have an Excel 2010 workbook with a PowerPivot 2010 data model, you need to [upgrade the workbook to Excel 2013](https://support.office.com/en-US/article/Upgrade-Power-Pivot-Data-Models-to-Excel-2013-c66578cb-74d5-43ae-a474-5a01be5db439).
+-   If you have an Excel 2010 workbook with a PowerPivot 2010 data model, you need to [upgrade the workbook to Excel 2013](https://support.office.com/article/Upgrade-Power-Pivot-Data-Models-to-Excel-2013-c66578cb-74d5-43ae-a474-5a01be5db439).
 
 
 ### Connect to an Excel file on OneDrive for Business
@@ -99,7 +97,7 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 ### Edit, share, or print a workbook in Excel Online
 
 
-After you open a workbook in Excel Online, you can edit, share, or print it from there. See [basic tasks in Excel Online](https://support.office.com/en-us/article/Basic-tasks-in-Excel-Online-0dcac23b-8430-4289-87a5-f2c97bdb49e1) for details.
+After you open a workbook in Excel Online, you can edit, share, or print it from there. See [basic tasks in Excel Online](https://support.office.com/article/Basic-tasks-in-Excel-Online-0dcac23b-8430-4289-87a5-f2c97bdb49e1) for details.
 
 ## Refresh data in an intact Excel file
 
@@ -110,7 +108,7 @@ You can set up a scheduled data refresh for your Excel file, or you can refresh 
 
     ![](media/powerbi-bring-in-whole-excel-files/PBI_XLFF_Menu.png)
 
-2.  Follow the steps in [Refresh data in Power BI](https://support.powerbi.com/knowledgebase/articles/474669).
+2.  Follow the steps in [Refresh data in Power BI](powerbi-refresh-data.md).
 
 ### About refreshing whole Excel files in Power BI
 
@@ -118,9 +116,9 @@ You can set up a scheduled data refresh for your Excel file, or you can refresh 
 
 -   Power BI can't refresh a workbook if it's checked out in Office 365, or open for editing.
 
--   Power BI can refresh the same data connections in whole Excel workbooks as in Excel workbooks you're using as datasets for Power BI. See [Refresh data in Power BI](https://support.powerbi.com/knowledgebase/articles/474669) for more information. 
+-   Power BI can refresh the same data connections in whole Excel workbooks as in Excel workbooks you're using as datasets for Power BI. See [Refresh data in Power BI](powerbi-refresh-data.md) for more information. 
 
 -   If you set up data refresh using the [Data Management Gateway](https://support.office.com/article/Introduction-to-Data-Management-Gateway-22C313B9-E758-435B-AB9E-AD5D6236D06F) in the previous version of Power BI for Office 365, the new Power BI can refresh workbooks using that gateway.
 
--   If the workbook data source is on premises, you can set up a [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846) to refresh data. 
+-   If the workbook data source is on premises, you can set up a [Power BI Personal Gateway](powerbi-personal-gateway.md) to refresh data. 
 

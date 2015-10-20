@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Retail Analysis sample for Power BI: Take a tour"
    description="Retail Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -19,11 +19,9 @@
 
 # Retail Analysis sample for Power BI: Take a tour
 
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
-
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 
-[Download the Retail Analysis sample content pack](https://support.powerbi.com/knowledgebase/articles/640117), with a dashboard, report, and dataset.
+[Download the Retail Analysis sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md), with a dashboard, report, and dataset.
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
@@ -150,12 +148,12 @@ This is a safe environment to play in. You can always choose not to save your ch
 
 ## Next steps: Connect to your data
 
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](https://support.office.com/en-US/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
 
 ## See Also:
 
--   [Download the Retail Analysis sample content pack](https://support.powerbi.com/knowledgebase/articles/640117)
+-   [Download the Retail Analysis sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md)
 -   [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=528592)
--   [Get data (for Power BI)](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
--   [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+-   [Get data (for Power BI)](powerbi-service-get-data.md)
+-   [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

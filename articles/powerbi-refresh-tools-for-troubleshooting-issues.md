@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tools for troubleshooting refresh issues"
    description="Tools for troubleshooting refresh issues"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tools for troubleshooting refresh issues  
-[← Data refresh](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh)
 
 The following can be used for general troubleshooting when you encounter an issue with performing a refresh within the Power BI service.
 

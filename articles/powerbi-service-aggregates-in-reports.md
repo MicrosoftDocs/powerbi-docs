@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Aggregates in Power BI reports"
    description="Aggregates in Power BI reports"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Aggregates in Power BI reports
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 ## ∑ Aggregates
 
@@ -44,7 +42,7 @@ For more information on aggregating values see [Change The Aggregation Used In 
 
 ## See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)﻿
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
 

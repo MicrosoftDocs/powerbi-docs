@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Waterfall charts in Power BI"
    description="Tutorial: Waterfall charts in Power BI"
    services="powerbi" 
@@ -18,11 +18,9 @@
    ms.author="v-pawrig"/>
 # Tutorial: Waterfall charts in Power BI
 
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
-
 A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how an initial value (for example, net income) is affected by a series of positive and negative changes.
 
-The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often [start on the horizontal axis](https://support.office.com/en-US/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "start on the horizontal axis"), while the intermediate values are floating columns. Because of this "look", waterfall charts are also called bridge charts.
+The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often [start on the horizontal axis](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "start on the horizontal axis"), while the intermediate values are floating columns. Because of this "look", waterfall charts are also called bridge charts.
 
 ## When to use a Waterfall Chart
 
@@ -46,7 +44,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 2. Select **Edit Report** to open the report in Editing View.
 
-3. [Add a new report page](https://support.powerbi.com/knowledgebase/articles/474804).
+3. [Add a new report page](powerbi-service-add-a-page-to-a-report.md).
 
 4. Create a waterfall chart that displays this year's sales and sales goal by month.
 
@@ -64,15 +62,15 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 ## Highlighting and cross-filtering
 
-For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
+For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 Highlighting a column in a Waterfall Chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
 ## See Also:
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

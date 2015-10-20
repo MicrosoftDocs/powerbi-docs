@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="What's new in the latest Power BI Desktop update?"
    description="What's new in the latest Power BI Desktop update?"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # What's new in the latest Power BI Desktop update?
-
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 ## September 2015 Update (2.27.4163.351)
 

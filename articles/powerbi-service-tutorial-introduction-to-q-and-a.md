@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: use Power BI Q&A with the Retail Analysis sample"
    description="Tutorial: use Power BI Q&A with the Retail Analysis sample"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Tutorial: use Power BI Q&A with the Retail Analysis sample
-
-[← Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi)
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this tutorial we'll look at 2 different ways of creating the same visualization: building it in a report and asking a question with Q&A.  
 
@@ -61,19 +59,19 @@ How would we go about creating this same line chart using Q&A?
 
 ## See Also:
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[What type of questions can I ask Q&A?](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)
+[What type of questions can I ask Q&A?](powerbi-service-q-and-a.md)
 
-[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)
+[Q&A in Power BI](powerbi-service-q-and-a.md)
 
-[Make your data work well with Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474690-make-your-data-work-well-with-q-a)
+[Make your data work well with Q&A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-[Ask the right questions of Salesforce data in Power BI](http://support.powerbi.com/knowledgebase/articles/475138-ask-the-right-questions-of-salesforce-data)
+[Ask the right questions of Salesforce data in Power BI](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 
-[preparing a workbook for Q&A](http://support.powerbi.com/knowledgebase/articles/474690-how-to-make-q-a-work-with-your-data)
+[preparing a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-[pinning a tile to the dashboard from Q&A](http://support.powerbi.com/knowledgebase/articles/424874-pin-a-tile-to-a-dashboard-from-the-question-box)
+[pinning a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 

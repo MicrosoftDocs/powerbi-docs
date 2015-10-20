@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Manage your group in Power BI and Office 365"
    description="Manage your group in Power BI and Office 365"
    services="powerbi" 
@@ -18,11 +18,9 @@
    ms.author="v-pawrig"/>
 # Manage your group in Power BI and Office 365
 
-[← Groups in Power BI](https://support.powerbi.com/knowledgebase/topics/101158-groups-in-power-bi)
-
 As creator or admin of a group in Power BI or in Office 365, you manage some aspects of your group in Power BI. Other aspects you manage in Office 365. 
 
->NOTE: Groups are only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479).
+>NOTE: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 In Power BI you can:
 
@@ -88,7 +86,7 @@ In Office 365 you can:
 
 ## Find the email address for your group
 
-When you create an [organizational content pack](https://support.powerbi.com/knowledgebase/articles/651040), you can distribute it to your whole organization or to specific people or groups. With the email address for the group, you can easily distribute it to all the members of your group. 
+When you create an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md), you can distribute it to your whole organization or to specific people or groups. With the email address for the group, you can easily distribute it to all the members of your group. 
 
 1.  In the Outlook for Office 365 view of your group, under **Groups** in the left navigation pane, right-click the group name \> **View details**.
 
@@ -98,5 +96,5 @@ When you create an [organizational content pack](https://support.powerbi.com/kno
 
     *yourgroupID*@service.microsoft.com. 
 
-More about [groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247).
+More about [groups in Power BI](powerbi-service-groups.md).
 

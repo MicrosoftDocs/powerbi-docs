@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Known issues in the iPad app (Power BI for iOS)"
    description="Known issues in the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Known issues in the iPad app (Power BI for iOS)  
-[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios)
 
 ## "We encountered communication failures"  
 You may see this message if your iPad internet connection requires a mandatory explicit HTTP proxy configured, either manual or automatic. In this case, the Power BI app won’t work on your iPad.

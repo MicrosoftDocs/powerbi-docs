@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Radial Gauge charts in Power BI"
    description="Tutorial: Radial Gauge charts in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Tutorial: Radial Gauge charts in Power BI
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 A Radial Gauge chart has a circular arc and displays a single value that measures progress toward a goal/KPI.  The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading.  And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
@@ -41,9 +39,9 @@ Radial Gauges are a great choice to:
 
 ## Create a basic Radial Gauge
 
-These instructions use the Retail Analysis Sample. To follow along, [download the sample](http://support.powerbi.com/knowledgebase/articles/514904-download-samples), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**. 
+These instructions use the Retail Analysis Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**. 
 
-1.  Start in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report)and select the **New Stores** measure.  Measures are identified by the calculator icon ![](media/powerbi-service-tutorial-radial-gauge-charts/measureIcon.png).
+1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)and select the **New Stores** measure.  Measures are identified by the calculator icon ![](media/powerbi-service-tutorial-radial-gauge-charts/measureIcon.png).
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_selectMeasure.png)
 
@@ -59,9 +57,9 @@ These instructions use the Retail Analysis Sample. To follow along, [download t
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeSetTargetValue.png)
 
-4.  [Add the Gauge chart as a dashboard tile](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi). 
+4.  [Add the Gauge chart as a dashboard tile](powerbi-service-dashboard-tiles.md). 
 
-5.  [Save the report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
+5.  [Save the report](powerbi-service-save-a-report.md).
 
 ## Add a Maximum Value to a Radial Gauge
 
@@ -115,11 +113,11 @@ But what if you want to set your own maximum value?  Let's say that instead of
 
 ## See also:
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
  [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
-[Pin a visualization to a dashboard](http://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-dashboard-from-a-report)
+[Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
-[ Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[ Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

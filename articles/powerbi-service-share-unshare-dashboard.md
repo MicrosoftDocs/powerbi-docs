@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Share (and unshare) a dashboard from Power BI"
    description="Share (and unshare) a dashboard from Power BI"
    services="powerbi" 
@@ -19,11 +19,9 @@
 
 # Share (and unshare) a dashboard from Power BI
 
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
-
 You can share your dashboards with people in your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
 
-**NOTE**: Dashboards (and their associated reports) that are shared with you are read-only and cannot be saved-as (personalized).  [Organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040), on the other hand, do allow you to personalize the dashboard and reports. Read [How should I share my dashboard](https://support.powerbi.com/knowledgebase/articles/)? to decide which is best for your situation. 
+**NOTE**: Dashboards (and their associated reports) that are shared with you are read-only and cannot be saved-as (personalized).  [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md), on the other hand, do allow you to personalize the dashboard and reports. Read [How should I share my dashboard](https://support.powerbi.com/knowledgebase/articles/)? to decide which is best for your situation. 
 
 1.   Open the dashboard to share and select **Share Dashboard**.
 
@@ -47,7 +45,7 @@ You can share your dashboards with people in your organization. If they haven't
 
 When you share with your colleagues:
 
--   They can see your dashboard and interact with your reports in [Reading View](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view). They can't create new reports or save changes to existing reports.
+-   They can see your dashboard and interact with your reports in [Reading View](powerbi-service-open-a-report-in-reading-view.md). They can't create new reports or save changes to existing reports.
 
 -   They can even see the changes you make (after you save those changes). 
 
@@ -103,11 +101,11 @@ Only the dashboard owner can turn resharing on and off.
 
 ## See Also:
 
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)
+[Dashboards in Power BI](powerbi-service-dashboards.md)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get Started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 
 

@@ -18,18 +18,16 @@
    ms.author="v-anpasi"/>
 # Free trial for Power BI Pro
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
--   Create and publish customized [content packs](https://support.powerbi.com/knowledgebase/articles/651040)
--   Share [refreshable](https://support.powerbi.com/knowledgebase/articles/474669-refresh-data-in-power-bi) team dashboards and reports using [groups](https://support.powerbi.com/knowledgebase/articles/654247-groups-in-power-bi)
--   Connect to on-premises data using [Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846)
+-   Create and publish customized [content packs](powerbi-service-organizational-content-packs-introduction.md)
+-   Share [refreshable](powerbi-refresh-data.md-refresh-data-in-power-bi) team dashboards and reports using [groups](powerbi-service-groups.md-groups-in-power-bi)
+-   Connect to on-premises data using [Personal Gateway](powerbi-personal-gateway.md)
 -   Enable live interactive connectivity to the following sources:
-	-   [SQL Server Analysis Services](https://support.powerbi.com/knowledgebase/articles/471633-sql-server-analysis-services-tabular-data-in-power)
-	-   [Spark on Azure HDInsight](https://support.powerbi.com/knowledgebase/articles/654094-spark-on-hdinsight-with-direct-connect)
-	-   [Azure SQL Data Warehouse](https://support.powerbi.com/knowledgebase/articles/636088-azure-sql-data-warehouse-with-direct-connect)
-	-   [Azure SQL Database](https://support.powerbi.com/knowledgebase/articles/581421-azure-sql-database-with-direct-connect)
+	-   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md-sql-server-analysis-services-tabular-data-in-power)
+	-   [Spark on Azure HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md-spark-on-hdinsight-with-direct-connect)
+	-   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md-azure-sql-data-warehouse-with-direct-connect)
+	-   [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md-azure-sql-database-with-direct-connect)
 
 When you try any of these features, you will be prompted to start your free trial.
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Save a report in Power BI"
    description="Save a report in Power BI"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Save a report in Power BI
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 After you change a report in Power BI, you can save it, save it with a new name, or just close it without saving your changes. Say you open the report, create a visualization, and pin it to your dashboard. If you close it now without saving your changes, the tile remains on the dashboard, but the visualization isn't saved in the report. When you click that tile on the dashboard, the report opens, but the visualization is gone.
 
@@ -39,7 +37,7 @@ After you change a report in Power BI, you can save it, save it with a new name,
 
 ## See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)*﻿*
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*﻿*
 

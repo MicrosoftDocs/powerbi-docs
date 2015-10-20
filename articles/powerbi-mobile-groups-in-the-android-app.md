@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Groups in the Android app for Power BI"
    description="Groups in the Android app for Power BI"
    services="powerbi" 
@@ -18,13 +18,12 @@
    ms.author="jastru"/>
 
 # Groups in the Android app for Power BI  
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
 
-Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) and [groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247). Groups are available with the paid Power BI experience.
+Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) and [groups in Power BI](powerbi-service-groups.md). Groups are available with the paid Power BI experience.
 
-You [create a group in the Power BI service](https://support.powerbi.com/knowledgebase/articles/654250).
+You [create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md).
 
-Then you see and interact with group dashboards in the Microsoft [Power BI for Android app](https://support.powerbi.com/knowledgebase/articles/577773).  
+Then you see and interact with group dashboards in the Microsoft [Power BI for Android app](powerbi-mobile-android-app-get-started.md).  
 
 ## Interact with groups content  
 1.  Open the Android app for Power BI.
@@ -37,4 +36,4 @@ Then you see and interact with group dashboards in the Microsoft [Power BI for 
 3.  Your group page displays the dashboards that have been published to the group workspace.  
     ![](media/powerbi-mobile-groups-in-the-android-app/PBI_Andr_GroupDashes.png)
 
-4.  [Select a dashboard to open and view it](https://support.powerbi.com/knowledgebase/articles/608316).  
+4.  [Select a dashboard to open and view it](powerbi-mobile-dashboards-in-the-android-app.md).  

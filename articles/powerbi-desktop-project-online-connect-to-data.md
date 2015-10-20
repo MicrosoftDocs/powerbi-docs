@@ -19,8 +19,6 @@
 
 # Project Online: connect to data through Power BI Desktop
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
-
 You can connect to data in Project Online through Power BI Desktop.
 
 ### Step 1: Download Power BI Desktop

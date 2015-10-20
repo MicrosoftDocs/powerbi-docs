@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Procurement Analysis sample for Power BI: Take a tour"
    description="Procurement Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Procurement Analysis sample for Power BI: Take a tour 
-
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 This industry sample dashboard and underlying report analyze a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
 
@@ -113,4 +111,4 @@ This is a safe environment to play in. You can always choose not to save your ch
 ## Next steps: Connect to your data 
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports
-can provide insights into procurement data. Now it’s your turn - connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](https://support.office.com/en-US/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
+can provide insights into procurement data. Now it’s your turn - connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).

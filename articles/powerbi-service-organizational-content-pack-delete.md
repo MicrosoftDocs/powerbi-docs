@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Delete an organizational content pack"
    description="Delete an organizational content pack"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Delete an organizational content pack  
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 A coworker created a content pack and you discovered it in the content gallery and added it to your Power BI workspace. But you don't need it any longer.  How do you remove it?
 
@@ -30,10 +29,10 @@ To delete a content pack, you must delete the dataset.  
 Deleting the dataset removes all associated reports and dashboards.  Remember, you can always return to the content gallery and add the content pack back to your workspace.
 
 >**Note:**  
->If you create a content pack, you (and only you) can [delete it from the content pack library](https://support.powerbi.com/knowledgebase/articles/651631).
+>If you create a content pack, you (and only you) can [delete it from the content pack library](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
 ## See Also  
-[Introduction to organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040)  
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
-[Groups in Power BI](http://support.powerbi.com/knowledgebase/articles/654247)  
+[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+[Get Started with Power BI](powerbi-service-get-started.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Groups in Power BI](powerbi-service-groups.md)  

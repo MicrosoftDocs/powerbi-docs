@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Part I, Add visualizations to a Power BI report"
    description="Tutorial: Part I, Add visualizations to a Power BI report"
    services="powerbi" 
@@ -18,19 +18,17 @@
    ms.author="v-pawrig"/>
 # Tutorial: Part I, Add visualizations to a Power BI report
 
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
-
-This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](http://support.powerbi.com/knowledgebase/articles/467184-part-ii-add-visualizations-to-a-power-bi-report). 
+This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](powerbi-service-add-visualizations-to-a-report-ii.md). 
 
   
 
-1.  Open a [report in Editing View](http://support.powerbi.com/knowledgebase/articles/439921-go-from-report-reading-view-to-editing-view). This tutorial uses the Sales and Marketing sample.
+1.  Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the Sales and Marketing sample.
 
 2.  If the Fields pane isn't visible, select the arrow icon to open it. 
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/pbi_Nancy_FieldsFiltersArrow.png)
 
-3.  [Add a blank page to the report](https://support.powerbi.com/knowledgebase/articles/474804).
+3.  [Add a blank page to the report](powerbi-service-add-a-page-to-a-report.md).
 
 4.  Create a visualization by selecting a field from the **Fields** pane.  
 
@@ -50,31 +48,31 @@ This article gives a quick introduction to creating a visualization in a report.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/part1ConvertToColumn.png)
 
-7.  When you create visualizations in your report, you can [pin them to your dashboard](https://support.powerbi.com/knowledgebase/articles/430323). To pin the visualization, select the pin icon ![](media/powerbi-service-add-visualizations-to-a-report-i/pinNoOutline.png).
+7.  When you create visualizations in your report, you can [pin them to your dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md). To pin the visualization, select the pin icon ![](media/powerbi-service-add-visualizations-to-a-report-i/pinNoOutline.png).
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/part1Pin.png)
 
 8.  Now you can:
 
-    Continue on to [Part 2: Add visualizations to a Power BI report](http://support.powerbi.com/knowledgebase/articles/467184-part-ii-add-visualizations-to-a-power-bi-report)
+    Continue on to [Part 2: Add visualizations to a Power BI report](powerbi-service-add-visualizations-to-a-report-ii.md)
 
-    [C](http://support.powerbi.com/knowledgebase/articles/444663-change-the-type-of-report-visualization)[hange the visualization type](http://support.powerbi.com/knowledgebase/articles/444663-change-the-type-of-report-visualization)[.](http://support.powerbi.com/knowledgebase/articles/444663-change-the-type-of-report-visualization)
+    [C](powerbi-service-change-the-type-of-visualization-in-a-report.md)[hange the visualization type](powerbi-service-change-the-type-of-visualization-in-a-report.md)[.](powerbi-service-change-the-type-of-visualization-in-a-report.md)
 
-    [Pin the visualization](http://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-dashboard-from-a-report) to your dashboard as a tile.
+    [Pin the visualization](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) to your dashboard as a tile.
 
-    [Interact with the visualizations](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)in the report.
+    [Interact with the visualizations](powerbi-service-interact-with-a-report-in-reading-view.md)in the report.
 
-    [Do even more with visualizations](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports).
+    [Do even more with visualizations](powerbi-service-visualizations-for-reports.md).
 
-    [Save your report](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report).
+    [Save your report](powerbi-service-save-a-report.md).
 
 
 ## See Also:
 
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports).
+More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 

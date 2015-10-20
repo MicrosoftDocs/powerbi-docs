@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Reports in the Power BI for Windows app"
    description="Reports in the Power BI for Windows app"
    services="powerbi" 
@@ -18,11 +18,9 @@
    ms.author="v-pawrig"/>
 # Reports in the Power BI for Windows app
 
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
+A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports in the Power BI service (https://powerbi.com)](powerbi-service-reports.md).
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports in the Power BI service (https://powerbi.com)](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi).
-
-Then you view and interact with those reports in the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).
+Then you view and interact with those reports in the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
 
 ## Open a Power BI report
 
@@ -30,7 +28,7 @@ Then you view and interact with those reports in the [Power BI for Windows app]
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppReptsMenu.png)
 
-    >**NOTE**: If you have [brought whole Excel files into Power BI](https://support.powerbi.com/knowledgebase/articles/640168), when you tap them in the app, they open in your browser.
+    >**NOTE**: If you have [brought whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), when you tap them in the app, they open in your browser.
 
 -   Or: On a dashboard, tap a tile and then tap the Reports icon.
 
@@ -76,7 +74,7 @@ Then you view and interact with those reports in the [Power BI for Windows app]
 
 ## Filter a Power BI report
 
-You can always filter visuals in a Power BI report, because you can use the fields in the visual itself as filters. You can also filter whole pages in a report, if you or someone else has [added filters to the page](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-visualization-in-a-report) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). You can also add other fields to a visual as filters in the Power BI service. 
+You can always filter visuals in a Power BI report, because you can use the fields in the visual itself as filters. You can also filter whole pages in a report, if you or someone else has [added filters to the page](powerbi-service-add-a-filter-to-a-report.md) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). You can also add other fields to a visual as filters in the Power BI service. 
 
 In a report, expand the Filters pane, if it's collapsed.
 
@@ -116,11 +114,11 @@ You can only filter a whole page if you or someone else has added a filter to th
 
 2.  If there are fields under the Page heading, you can set filters for the page.
 
-3.  if there are no fields in the Filters pane or you want other fields go to the Power BI service ([https://powerbi.com](http://powerbi.com/)), [add filters to the page](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-visualization-in-a-report), and save the report.
+3.  if there are no fields in the Filters pane or you want other fields go to the Power BI service ([https://powerbi.com](http://powerbi.com/)), [add filters to the page](powerbi-service-add-a-filter-to-a-report.md), and save the report.
 
 ## Drill down and up in a chart
 
-You can drill down in some charts to see the values that make up one part of the chart. To [add drill down to a visual](http://support.powerbi.com/knowledgebase/articles/467072-drill-down-in-a-visualization), edit the report in the Power BI service ([https://powerbi.com](http://powerbi.com/)).
+You can drill down in some charts to see the values that make up one part of the chart. To [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md), edit the report in the Power BI service ([https://powerbi.com](http://powerbi.com/)).
 
 -   Double-tap a bar, column, or other part of a chart to drill into the details for that part — in this case, the red **FD-02 **bubble.
 
@@ -130,5 +128,5 @@ You can drill down in some charts to see the values that make up one part of the
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppDrillBackUp.png)
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).
+More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
 

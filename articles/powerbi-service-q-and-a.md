@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Q&A in Power BI"
    description="Q&A in Power BI"
    services="powerbi" 
@@ -19,8 +19,6 @@
 
 # Q&A in Power BI
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 Sometimes the fastest way to get an answer from your data, is to ask a question using natural language.  For example, "what were total sales last year."  Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
 ![](media/powerbi-service-q-and-a/PBI_QA_BoxSalesSqFt.png)
@@ -31,27 +29,27 @@ The experience is truly interactive…and fast! Powered by an in-memory storage,
 
 ## For more details about Power BI Q&A:
 
-[How to use Q&A](https://support.powerbi.com/knowledgebase/articles/743532)
+[How to use Q&A](powerbi-service-how-to-use-q-and-a.md)
 Step by step instructions for using Q&A and an overview of how it all works.
 [Tips for asking questions in Q&A](https://support.powerbi.com/knowledgebase/articles/664393)
 Learn how to talk to Q&A to get the best possible results.
 
-[Tutorial: Use Power BI Q&A with the Retail Sales sample](https://support.powerbi.com/knowledgebase/articles/607113)
+[Tutorial: Use Power BI Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)
 Use Q&A in a realistic industry tutorial.
 
-[Make your data work well with Q&A](http://support.powerbi.com/knowledgebase/articles/474690)
+[Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 Are you the person creating datasets and data models?  Then this topic is for you.
 
-[Use Q&A with Salesforce data](http://support.powerbi.com/knowledgebase/articles/475138-ask-the-right-questions-of-salesforce-data)
+[Use Q&A with Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 How does Q&A communicate with Salesforce.
 
 ## See Also:
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)
+[Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
 
-[Make your data work well with Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)
+[Make your data work well with Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Annotate and share a snapshot of a tile from the Power BI for Windows app"
    description="Annotate and share a snapshot of a tile from the Power BI for Windows app"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Annotate and share a snapshot of a tile from the Power BI for Windows app
-
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 When you share a tile from the Windows app for Power BI, you're sharing a snapshot of the tile. Your recipients see the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
@@ -63,7 +61,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
 ## See also
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).
+More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
 
-[Share dashboards](http://support.powerbi.com/knowledgebase/articles/510955-share-dashboards-from-the-power-bi-for-windows-app) from the Power BI for Windows app
+[Share dashboards](powerbi-mobile-share-dashboards-from-the-windows-app.md) from the Power BI for Windows app
 

@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Troubleshooting Power BI Personal Gateway
 
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
-
 ## Installation
 
 **Personal Gateway fails to install** - Personal Gateway can install can fail if the user is in the computer’s local Administrator group, but group policy does not allow that username to log on as a service.  At the moment, ensure the group policy allows a user to log on as a service. We’re working on a fix for this issue. 

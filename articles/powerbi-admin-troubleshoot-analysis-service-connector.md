@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Troubleshooting Power BI Analysis Service Connector"
    description="Troubleshooting Power BI Analysis Service Connector"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Troubleshooting Power BI Analysis Service Connector
-
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 
 If you're having issues using the Power BI Analysis Services Connector, be sure check out these troubleshooting tips.
 

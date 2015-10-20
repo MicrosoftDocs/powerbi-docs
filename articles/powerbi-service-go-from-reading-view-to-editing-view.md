@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Go from Reading View to Editing View in Power BI"
    description="Go from Reading View to Editing View in Power BI"
    services="powerbi" 
@@ -18,28 +18,26 @@
    ms.author="v-pawrig"/>
 # Go from Reading View to Editing View in Power BI
 
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
-
-In Editing View in Power BI (compared to [Reading View](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)) you can dig even deeper into your data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report.  To edit a report, you must be the owner of the report.
+In Editing View in Power BI (compared to [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)) you can dig even deeper into your data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report.  To edit a report, you must be the owner of the report.
 
 1.  In Reading View, select **Edit Report**. 
 
     ![](media/powerbi-service-go-from-reading-view-to-editing-view/EditReport.png)
 
-    The report is now in Editing View and uses the same [display settings](https://support.powerbi.com/knowledgebase/articles/742155) you last used in Reading View.
+    The report is now in Editing View and uses the same [display settings](powerbi-service-change-report-display-settings.md) you last used in Reading View.
 
 2. To return to **Reading View**, select Reading View from the top navigation bar. 
     
 	![](media/powerbi-service-go-from-reading-view-to-editing-view/ReadingViewReturn.png)
 
-There are so many ways to [edit your report](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report), slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Editing View](http://support.powerbi.com/knowledgebase/articles/443094), lists and describes these in detail.
+There are so many ways to [edit your report](powerbi-service-interact-with-a-report-in-editing-view.md), slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Editing View](powerbi-service-interact-with-a-report-in-editing-view.md), lists and describes these in detail.
 
 
 ## See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 

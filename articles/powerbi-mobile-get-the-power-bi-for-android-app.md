@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Get the Power BI for Android app"
    description="Get the Power BI for Android app"
    services="powerbi" 
@@ -19,8 +19,6 @@
 
 # Get the Power BI for Android app
 
-[← Power BI app for Android phones](https://support.powerbi.com/knowledgebase/topics/85887-power-bi-app-for-android-phones)
-
 ### Download the Power BI for Android app
 
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
@@ -37,7 +35,7 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/)
 
 1.  In the Power BI service, tap [Sign up](http://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
 
-    Start [creating your own dashboards and reports](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi).
+    Start [creating your own dashboards and reports](powerbi-service-get-started.md).
 
 2.  On your Android phone, from the start screen open the Power BI for Android app.
 
@@ -45,4 +43,4 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/)
 
 3.  In the Android app, tap Sign in to view your dashboards. Sign in with the same credentials as your Power BI account on the web.
 
-More about the [Power BI for Android app](https://support.powerbi.com/knowledgebase/articles/577773).
+More about the [Power BI for Android app](powerbi-mobile-android-app-get-started.md).

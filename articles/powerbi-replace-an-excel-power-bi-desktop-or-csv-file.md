@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Replace an Excel, Power BI Desktop, or CSV file in Power BI"
    description="Replace an Excel, Power BI Desktop, or CSV file in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-pawrig"/>
 # Replace an Excel, Power BI Desktop, or CSV file in Power BI
 
-[← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
-
 Say you upload an Excel, Power BI Desktop, or CSV file from your computer to Power BI, and use it as a dataset for reports and dashboards in Power BI.
 
 Now say you change the version of the file on your computer. You can upload the updated version to Power BI and it will replace the earlier version of the file, as long as the file name is the same. After you replace the earlier version of the file with the updated version, Power BI automatically redirects connections from reports and dashboards to go to the updated version of the dataset. 
@@ -34,7 +32,7 @@ Now say you change the version of the file on your computer. You can upload the 
 
 -   If you add a column, Power BI ignores the added column in existing visuals, but adds the new column to the dataset, so you can use it in creating or updating visuals.
 
--   Refreshing doesn't work the same way for Excel workbooks you bring intact into Power BI. Read more about [bringing whole Excel files into Power B](https://support.powerbi.com/knowledgebase/articles/640168)I. 
+-   Refreshing doesn't work the same way for Excel workbooks you bring intact into Power BI. Read more about [bringing whole Excel files into Power B](powerbi-bring-in-whole-excel-files.md)I. 
 
 ## Replace a file
 

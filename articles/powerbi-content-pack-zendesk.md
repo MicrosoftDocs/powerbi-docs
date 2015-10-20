@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Zendesk content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 To analyze your Zendesk data in Power BI, you must connect to Zendesk using your Zendesk **admin** account credentials so that Power BI will be able to import  your data.  You will get a Power BI dashboard and a set of Power BI reports that provide insights about your ticket volumes and agent performance. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once a day. 
 
 Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/zendesk) for Power BI.
@@ -52,9 +50,9 @@ Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/z
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskDash.png)
 
-You can change this dashboard to display your data any way you want. It allows you to ask a [question in Q&A](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi) or click a tile to [open the underlying report](http://support.powerbi.com/knowledgebase/articles/425669-when-you-click-a-tile-in-a-dashboard) [change the tiles in the dashboard](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete).
+You can change this dashboard to display your data any way you want. It allows you to ask a [question in Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) [change the tiles in the dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md).
 
 ##See Also:
--  [Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
--  [Get Data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
+-  [Get started with Power BI](powerbi-service-get-started.md)
+-  [Get Data](powerbi-service-get-data.md)
 -  [Power BI blog: Better insights into your Zendesk customer support with Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/03/24/better-insights-into-your-zendesk-customer-support-with-power-bi.aspx)

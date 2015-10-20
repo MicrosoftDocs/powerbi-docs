@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Query overview in Power BI Desktop"
    description="Query overview in Power BI Desktop"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Query overview in Power BI Desktop  
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 Welcome to Power BI Desktop. With Power BI Desktop you can connect to the world of data, create compelling and foundational reports, and share your efforts with others – who can then build on your work, and expand their business intelligence efforts.
 

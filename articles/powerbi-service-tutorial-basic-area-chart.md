@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Basic Area chart"
    description="Tutorial: Basic Area chart"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tutorial: Basic Area chart  
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 The Basic Area Chart (aka Layered Area Chart.) is based on the line chart. The area between axis and line is filled with colors to indicate volume. 
 
@@ -51,7 +50,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
     ![](media/powerbi-service-tutorial-basic-area-chart/AreachartTutorial.png)
 
 ## Highlighting and cross-filtering  
-For information about using the Filters pane, see [Add a filter to a report](http://support.powerbi.com/knowledgebase/articles/464704-add-a-filter-to-a-report).
+For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 To select an area, click inside that area or along the top line.  Basic Area charts do not cross-filter the other visualizations on the report page. However, Area charts are a target for cross-filtering triggered by other visualizations on the report page.
 
@@ -59,6 +58,6 @@ To select an area, click inside that area or along the top line.  Basic Area ch
 -   Basic Area charts are not effective for comparing the values due to the occlusion on the layered areas. Power BI uses transparency to indicate the overlap of areas. However, it only works well with two or three different areas. When you need to compare trend to more than three measures, try using Line charts. When you need to compare volume to more than three measures, try using Treemap.
 
 ## See Also  
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)  
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Reports in Power BI](powerbi-service-reports.md)  
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

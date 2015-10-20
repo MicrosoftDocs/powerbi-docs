@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # UserVoice content pack for Power BI
 
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
-
 Tracking and exploring your UserVoice data is easy with Power BI and the UserVoice content pack. Power BI retrieves your data, including tickets, suggestions and satisfaction ratings, then builds an out-of-box dashboard and reports based on that data.
 
 Connect to the [UserVoice content pack](https://app.powerbi.com/getdata/services/uservoice) for Power BI.
@@ -62,9 +60,9 @@ Connect to the [UserVoice content pack](https://app.powerbi.com/getdata/services
 
 8.  What can you do now?
 	-   Rename the dashboard: Select the ellipsis (...) next to the UserVoice dashboard \> **Rename**.
-	-   Try [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi-preview) at the top of the dashboard.
-	-   [Change the tiles](https://support.powerbi.com/knowledgebase/articles/424878) in the dashboard.
-	-   Select a tile to [open the underlying report](https://support.powerbi.com/knowledgebase/articles/425669). 
+	-   Try [asking a question in the Q&A box](powerbi-service-q-and-a.md-q-a-in-power-bi-preview) at the top of the dashboard.
+	-   [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+	-   Select a tile to [open the underlying report](powerbi-service-dashboard-tiles.md). 
 
 ###Troubleshooting
 

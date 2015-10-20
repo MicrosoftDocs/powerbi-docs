@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tiles in the Power BI for Windows app"
    description="Tiles in the Power BI for Windows app"
    services="powerbi" 
@@ -18,13 +18,12 @@
    ms.author="jastru"/>
 
 # Tiles in the Power BI for Windows app  
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
-Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](http://support.powerbi.com/knowledgebase/articles/425669-tiles-in-power-bi).
+Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](powerbi-service-dashboard-tiles.md).
 
-Then you see and interact with the tiles in the Microsoft [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app). # Interact with tiles on a dashboard
+Then you see and interact with the tiles in the Microsoft [Power BI for Windows app](powerbi-service-windows-app-get-started.md). # Interact with tiles on a dashboard
 
-1.  Open a [dashboard](http://support.powerbi.com/knowledgebase/articles/510951-dashboards-in-the-power-bi-for-windows-app) in the Windows app.
+1.  Open a [dashboard](powerbi-mobile-dashboards-in-the-windows-app.md) in the Windows app.
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data.  
     ![](media/powerbi-mobile-tiles-in-the-windows-app/PBI_WinAppTileSM.png)
@@ -42,8 +41,8 @@ Then you see and interact with the tiles in the Microsoft [Power BI for Windo
 -   Annotate the tile...   
     ![](media/powerbi-mobile-tiles-in-the-windows-app/PBI_WinAppTileIcons.png)
 
-    ... and then share a [snapshot of the tile](http://support.powerbi.com/knowledgebase/articles/535432-share-a-snapshot-of-a-tile-from-the-power-bi-for-w) with others.
+    ... and then share a [snapshot of the tile](powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app.md) with others.
 
--   [Open the report](https://support.powerbi.com/knowledgebase/articles/510953-reports-in-the-power-bi-for-windows-app) that the tile is based on.
+-   [Open the report](powerbi-mobile-reports-in-the-windows-app.md-reports-in-the-power-bi-for-windows-app) that the tile is based on.
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).
+More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).

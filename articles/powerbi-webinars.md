@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Power BI Webinars"
    description="Power BI Webinars"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Power BI Webinars
-
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 The following webinars can help you to understand and use Power BI:
 

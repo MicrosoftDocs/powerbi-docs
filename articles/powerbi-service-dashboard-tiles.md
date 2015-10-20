@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Dashboard tiles in Power BI"
    description="Dashboard tiles in Power BI"
    services="powerbi" 
@@ -18,26 +18,25 @@
    ms.author="jastru"/>
 
 # Dashboard tiles in Power BI  
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, from a dataset, from another dashboard, from the Q&A box, and from SQL Server Reporting Services (SSRS).  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts).
+Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
--   [Pin a tile to a dashboard from the Q&A question box](https://support.powerbi.com/knowledgebase/articles/424874-pin-a-tile-to-a-power-bi-dashboard-from-the-q-a-qu)
+-   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md-pin-a-tile-to-a-power-bi-dashboard-from-the-q-a-qu)
 
--   [Pin a tile to a dashboard from a report](https://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-power-bi-dashboard-from-a-report)
+-   [Pin a tile to a dashboard from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md-pin-a-tile-to-a-power-bi-dashboard-from-a-report)
 
--   [Pin a tile to a dashboard from another dashboard](https://support.powerbi.com/knowledgebase/articles/735087)
+-   [Pin a tile to a dashboard from another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 
 -   Pin a tile to a dashboard from SSRS
 
--   [Add an image to a dashboard](https://support.powerbi.com/knowledgebase/articles/582552)
+-   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
 
--   Add a big number tile [from Q&A](https://support.powerbi.com/knowledgebase/articles/436733) and [from a report](https://support.powerbi.com/knowledgebase/articles/587907)
+-   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
--   [Rename, resize, add a hyperlink, and reposition the tile](http://support.powerbi.com/knowledgebase/articles/424878) on your dashboard. 
+-   [Rename, resize, add a hyperlink, and reposition the tile](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
 
 -   [Power Point - import a dashboard tile](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 
@@ -58,9 +57,9 @@ Hovering over a tile reveals clickable icon that allow you to interact with the 
 - Use the column chart icon ![](media/powerbi-service-dashboard-tiles/chart-icon.jpg) to open the report or Q&A query that was used to create the tile.
 
 ## What happens when I select a dashboard tile?  
-When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](http://support.powerbi.com/knowledgebase/articles/424878). If it has a custom link, selecting the tile takes you to that link. If there is no custom link, and you created the tile from:
+When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. If there is no custom link, and you created the tile from:
 
--   **a report**: you go to a page in the report (in [Reading View](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)).
+-   **a report**: you go to a page in the report (in [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)).
 
 -   **Q&A**: you go to the Q&A box with the tile and associated query active.
 
@@ -86,5 +85,5 @@ Q&A opens with the question that was used to create the visualization, displayin
 ![](media/powerbi-service-dashboard-tiles/PBI_DashTileQnAQuestion.png)
 
 ## See Also  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

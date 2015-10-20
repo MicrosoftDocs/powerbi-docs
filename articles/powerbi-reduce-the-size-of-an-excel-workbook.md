@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Reduce the size of an Excel workbook to view it in Power BI"
    description="Reduce the size of an Excel workbook to view it in Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Reduce the size of an Excel workbook to view it in Power BI  
-[← Files in Power BI](https://support.powerbi.com/knowledgebase/topics/88767-files-in-power-bi)
 
 You can upload any Excel workbook smaller than 250 MB to Power BI. An Excel workbook can have two parts: a Data Model, and the rest of the report—the core worksheet contents. If the report meets the following size limits, you can save it to OneDrive for Business, connect to it from Power BI, and view it in Excel Online:
 
@@ -65,5 +64,5 @@ When you import data into Excel, follow these tips:
 -   **From the Excel Data tab**: don’t check **Table** in the **Import Data** box.
 
 ## Related info  
-[Bring whole Excel files into Power BI](https://support.powerbi.com/knowledgebase/articles/640168)  
+[Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md)  
 [Create a memory-efficient Data Model](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)  

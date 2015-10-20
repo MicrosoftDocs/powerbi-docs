@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Customize X-axis and Y-axis properties"
    description="Tutorial: Customize X-axis and Y-axis properties"
    services="powerbi" 
@@ -18,15 +18,13 @@
    ms.author="v-pawrig"/>
 # Tutorial: Customize X-axis and Y-axis properties
 
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
-
 In this tutorial you'll learn many different ways to customize the X-axis and Y-axis of your visualizations. Not all visualizations have axes and/or can be customized; Pie charts, for example, don't have axes.  
 
 >**Note**: These customizations available when the **Format** icon is selected are also available in Power BI Desktop.
 
 ## Customizing visualization X-axes in reports
 
-I’ve signed in to the Power BI service and I’m starting with the **Retail Analysis Sample** report in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094). To follow along, [connect to the Retail Analysis sample](http://support.powerbi.com/knowledgebase/articles/514904).
+I’ve signed in to the Power BI service and I’m starting with the **Retail Analysis Sample** report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
 
 1.  Create a new column chart that shows this year's sales and last year's sales by month. 
 
@@ -81,7 +79,7 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
 ## Customizing visualizations with dual Y-axes
 
-First we'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](https://support.powerbi.com/knowledgebase/articles/436737). Then we'll format the dual Y-axes.
+First we'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](powerbi-service-tutorial-combo-chart-merge-visualizations.md). Then we'll format the dual Y-axes.
 
 ### Create a chart with two Y-axes
 
@@ -137,17 +135,17 @@ With a visualization this complicated, it helps to add axes titles.  Titles hel
 
 For more information, see the following article:
 
--   [Tips and tricks for color formatting, labeling, and axis properties](https://support.powerbi.com/knowledgebase/articles/666355)
+-   [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md)
 
 See Also:
 
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Customize d](https://support.powerbi.com/knowledgebase/articles/637417%0A)[ata point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)
 
-[Customize t](https://support.powerbi.com/knowledgebase/articles/637423)[itles, backgrounds, and legends](https://support.powerbi.com/knowledgebase/articles/637423)
+[Customize t](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)[itles, backgrounds, and legends](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 
-[Customize colors and axis properties](https://support.powerbi.com/knowledgebase/articles/666325)
+[Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Delete a report from Power BI"
    description="Delete a report from Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Delete a report from Power BI  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 Don't worry, deleting a report does not delete the dataset that the report is based on.  And any visualizations that you pinned from the report are also safe -- they remain on the dashboard until you delete them individually.
 
@@ -29,8 +28,8 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
 2.  Confirm the deletion.
 
 >**Note:**  
->If the report is part of a [content pack](https://support.powerbi.com/knowledgebase/articles/651040), you will not be able to delete it using this method.  See [Deleting an organizational content pack](https://support.powerbi.com/knowledgebase/articles/663661). 
+>If the report is part of a [content pack](powerbi-service-organizational-content-packs-introduction.md), you will not be able to delete it using this method.  See [Deleting an organizational content pack](powerbi-service-organizational-content-pack-delete.md). 
 
 ## See Also  
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+Read more about [reports in Power BI](powerbi-service-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

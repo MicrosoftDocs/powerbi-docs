@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Azure SQL Data Warehouse with direct connect"
    description="Azure SQL Data Warehouse with direct connect"
    services="powerbi" 
@@ -19,8 +19,6 @@
 
 # Azure SQL Data Warehouse with direct connect
 
-[← Databases and more](https://support.powerbi.com/knowledgebase/topics/88773-databases-and-more)
-
 Azure SQL Data Warehouse connector allows users to leverage powerful logical pushdown alongside the analytic capabilities of Power BI. With direct connect, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the **﻿Open in Power BI **﻿button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
 
 NOTES: When using the SQL Data Warehouse connector:
@@ -37,7 +35,7 @@ NOTES: When using the SQL Data Warehouse connector:
 
 -   schema changes are not picked up automatically
 
--   Groups are only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479).
+-   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 These restrictions and notes may change as we continue to improve the experiences. The step to connect are detailed below.
 

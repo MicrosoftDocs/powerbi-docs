@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="What's new in the mobile apps for Power BI"
    description="What's new in the mobile apps for Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # What's new in the mobile apps for Power BI  
-[← Mobile apps for Power BI](https://support.powerbi.com/knowledgebase/topics/72969-mobile-apps-for-power-bi)
 
 ## September 2015  
 Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and Windows.

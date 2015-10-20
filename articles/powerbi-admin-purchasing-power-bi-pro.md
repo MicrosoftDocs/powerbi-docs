@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Purchasing Power BI Pro"
    description="Purchasing Power BI Pro"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
    
 # Purchasing Power BI Pro  
-[← Administrative](https://support.powerbi.com/knowledgebase/topics/63248-administrative)
 
 You can purchase Power BI Pro directly through the Power BI website or through your Microsoft representative or partner.
 

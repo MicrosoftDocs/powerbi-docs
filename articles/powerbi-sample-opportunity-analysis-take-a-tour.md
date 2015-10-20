@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Opportunity Analysis sample for Power BI: Take a tour"
    description="Opportunity Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Opportunity Analysis sample for Power BI: Take a tour  
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
 
 The **Opportunity Tracking Sample** contains a dashboard (and associated report) for a software company that has 2 sales channels: *direct* and *partner*. The Sales Manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 

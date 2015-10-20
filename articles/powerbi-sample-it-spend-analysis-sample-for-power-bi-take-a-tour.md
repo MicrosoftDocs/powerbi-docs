@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="IT Spend Analysis sample for Power BI: Take a tour"
    description="IT Spend Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -18,13 +18,11 @@
    ms.author="v-pawrig"/>
 # IT Spend Analysis sample for Power BI: Take a tour
 
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
-
-The IT Spend Analysis [content pack](https://support.powerbi.com/knowledgebase/articles/651040-introduction-to-organizational-content-packs)(dashboard, report, and dataset) analyze the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
+The IT Spend Analysis [content pack](powerbi-service-organizational-content-packs-introduction.md-introduction-to-organizational-content-packs)(dashboard, report, and dataset) analyze the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (<http://obvience.com/>) that has been anonymized.
 
--   [get the IT Spend Analysis content pack](https://support.powerbi.com/knowledgebase/articles/640117)
+-   [get the IT Spend Analysis content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md)
 -   [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
 ![](media/powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour/IT1.png)

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Power BI Security"
    description="Power BI Security"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Power BI Security
-
-[← Administrative](https://support.powerbi.com/knowledgebase/topics/63248-administrative)
 
 For a detailed explanation of Power BI security, please [download the Power BI Security whitepaper](http://download.microsoft.com/download/4/8/C/48CFCF8A-2025-4B97-B249-7B505E26E7ED/Power%20BI%20Security%20Whitepaper.docx).
 
@@ -45,10 +43,10 @@ The dotted line in the **Back End** cluster image, above, clarifies the boundary
 
 ## User Authentication
 
-Power BI uses Azure Active Directory ([AAD](http://azure.microsoft.com/en-us/services/active-directory/)) to authenticate users who login to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempt to resources that require authentication. Users login to the Power BI service using the email address used to establish their Power BI account; Power BI uses the that login email as the *effective username*, which is passed to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a *User Principal Name* ([UPN](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380525(v=vs.85).aspx) and resolved to the associated Windows domain account, against which authentication is applied.
+Power BI uses Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) to authenticate users who login to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempt to resources that require authentication. Users login to the Power BI service using the email address used to establish their Power BI account; Power BI uses the that login email as the *effective username*, which is passed to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a *User Principal Name* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) and resolved to the associated Windows domain account, against which authentication is applied.
 
 
-For organizations that used work emails for Power BI login (such as *david@contoso.com*), the *effective username* to UPN mapping is straightforward. For organizations that did not use work emails for Power BI login (such as *david@contoso.onmicrosoft.com*), mapping between AAD and on-premises credentials will require [directory synchronization](https://technet.microsoft.com/en-us/library/jj573653.aspx) to work properly.
+For organizations that used work emails for Power BI login (such as *david@contoso.com*), the *effective username* to UPN mapping is straightforward. For organizations that did not use work emails for Power BI login (such as *david@contoso.onmicrosoft.com*), mapping between AAD and on-premises credentials will require [directory synchronization](https://technet.microsoft.com/library/jj573653.aspx) to work properly.
 
 
 Platform security for Power BI also includes multi-tenant environment security, networking security, and the ability to add additional AAD-based security measures.
@@ -58,4 +56,4 @@ Platform security for Power BI also includes multi-tenant environment security, 
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using her credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report. 
 
 
-An exception is connections to **SQL Server Analysis Services** using the **Power BI Analysis Services Connector**; dashboards are cached in Power BI, but access to underlying reports or datasets initiate authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [Power BI Analysis Services Connector deep-dive](https://support.powerbi.com/knowledgebase/articles/546004).
+An exception is connections to **SQL Server Analysis Services** using the **Power BI Analysis Services Connector**; dashboards are cached in Power BI, but access to underlying reports or datasets initiate authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [Power BI Analysis Services Connector deep-dive](powerbi-admin-analysis-services-connector-indepth.md).

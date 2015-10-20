@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Report View in Power BI Desktop"
    description="Report View in Power BI Desktop"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Report View in Power BI Desktop
-
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 If you’ve been working with Power BI, you know how easy it is to create reports providing dynamic perspectives and insights into your data. Power BI also has more advanced features in Power BI Desktop. With Power BI Desktop, you can create advanced queries, mashup data from multiple sources, create relationships between tables, and more.
 
@@ -55,4 +53,4 @@ To delete a page, click the X on the page's tab at the bottom of the Report Vi
 
 ![](media/powerbi-desktop-report-view/PBI_ReportViewInPBIDesigner_DeletePage.png)
 
-**Note:** Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](http://support.powerbi.com/knowledgebase/articles/461278-upload-power-bi-designer-files) to your  Power BI site.
+**Note:** Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md) to your  Power BI site.

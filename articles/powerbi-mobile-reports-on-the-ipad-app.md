@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Reports on the iPad app (Power BI for iOS)"
    description="Reports on the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -18,10 +18,8 @@
    ms.author="v-pawrig"/>
 # Reports on the iPad app (Power BI for iOS)
 
-[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios)
 
-
-A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You [create and customize reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi).
+A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You [create and customize reports in Power BI](powerbi-service-reports.md).
 
 Then you view and interact with reports on the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS.
 
@@ -65,7 +63,7 @@ When the icon is blue, you can select more than one column at a time.
 
 ## Drill down and up in a chart
 
-Sometimes you can drill down in charts to see the values that make up one part of the chart. You can drill up and down in the iPad app, but you can't add it to a visualization. You can only [add drill down to a visualization](http://support.powerbi.com/knowledgebase/articles/467072-drill-down-in-a-visualization) in a report in Power BI. 
+Sometimes you can drill down in charts to see the values that make up one part of the chart. You can drill up and down in the iPad app, but you can't add it to a visualization. You can only [add drill down to a visualization](powerbi-service-drill-down-in-a-visualization.md) in a report in Power BI. 
 
 >**Note:** Currently, drill-down doesn't work on maps in the iPad.
 
@@ -77,5 +75,5 @@ Sometimes you can drill down in charts to see the values that make up one part o
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillUp.png)
 
-More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172-the-ipad-app-for-power-bi-preview) for Power BI.
+More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
 

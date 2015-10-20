@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Annotate and share a tile from the iPhone app (Power BI for iOS)"
    description="Annotate and share a tile from the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Annotate and share a tile from the iPhone app (Power BI for iOS)
-
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 When you share a snapshot of a tile from the iPhone app for Microsoft Power BI for iOS, your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
@@ -54,5 +52,5 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
 [Share a dashboard from the iPhone app (Power BI for iOS](http://)[)](http://)
 
-[Get started with the iPhone app for Power BI](https://support.office.com/en-us/article/Get-started-with-the-iPhone-app-for-Power-BI-preview-f4001b4f-6b9a-4363-b97e-cb1ac5dfd3f6 "Get started with the iPhone app for Power BI preview")
+[Get started with the iPhone app for Power BI](https://support.office.com/article/Get-started-with-the-iPhone-app-for-Power-BI-preview-f4001b4f-6b9a-4363-b97e-cb1ac5dfd3f6 "Get started with the iPhone app for Power BI preview")
 

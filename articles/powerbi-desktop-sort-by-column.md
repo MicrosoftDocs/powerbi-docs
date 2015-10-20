@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Sort by column in Power BI Desktop"
    description="Sort by column in Power BI Desktop"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Sort by column in Power BI Desktop  
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 With Sort by Column on the Data Tools Modeling tab in Power BI Desktop, you can change how values in a column are sorted in a visualization.
 

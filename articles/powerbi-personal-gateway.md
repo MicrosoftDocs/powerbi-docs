@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Power BI Personal Gateway"
    description="Power BI Personal Gateway"
    services="powerbi" 
@@ -19,15 +19,13 @@
 
 # Power BI Personal Gateway
 
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
+Power BI Personal Gateway acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support [refresh](powerbi-refresh-data.md-refresh-data-in-power-bi). This article is meant to provide you with an in-depth understanding of how the Gateway works and whether or not a Gateway is necessary for you. We've also put together this [helpful video](https://www.youtube.com/watch?v=de58vROLqZI) about the Power BI Personal Gateway. 
 
-Power BI Personal Gateway acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support [refresh](https://support.powerbi.com/knowledgebase/articles/474669-refresh-data-in-power-bi). This article is meant to provide you with an in-depth understanding of how the Gateway works and whether or not a Gateway is necessary for you. We've also put together this [helpful video](https://www.youtube.com/watch?v=de58vROLqZI) about the Power BI Personal Gateway. 
-
-Power BI Gateway is only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479). It installs and runs as a service on your computer. As a service, it runs using a Windows account you  specify during configuration. In some cases, the Gateway runs as an application. We'll go into more about that later.
+Power BI Gateway is only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md). It installs and runs as a service on your computer. As a service, it runs using a Windows account you  specify during configuration. In some cases, the Gateway runs as an application. We'll go into more about that later.
 
 When Power BI refreshes data from an on-premises data source, the Gateway assures your Power BI account has the right permissions to connect to and query data from the source.
 
-Data transfer between Power BI and the Gateway is secured through [Azure Service Bus](http://azure.microsoft.com/en-us/documentation/services/service-bus/). The Service Bus creates a secure channel between the Power BI service and your computer. Because the Gateway provides this secure connection, there’s usually no need to open a port in your firewall.
+Data transfer between Power BI and the Gateway is secured through [Azure Service Bus](http://azure.microsoft.com/documentation/services/service-bus/). The Service Bus creates a secure channel between the Power BI service and your computer. Because the Gateway provides this secure connection, there’s usually no need to open a port in your firewall.
 
 Before we go into details about the Gateway, let’s look at some terms used in Power BI:
 
@@ -99,7 +97,7 @@ On a desktop computer – Not many issues here. Just make sure the computer and 
 
 Once you install a Gateway, you won’t have to install another. One Gateway will work for any number of supported datasets. You also don’t have to install the Gateway on the same computer you upload your workbook and Power BI Desktop files from. Here’s an example: Let’s say you have an Excel workbook that connects to a SQL Server data source in your organization. You used Get Data in Power BI to upload the workbook from your laptop computer. You also have a desktop computer you leave running all the time, and you’ve installed and configured a Gateway on that computer. In Power BI, you’ve signed in to your data sources, and you’ve setup a refresh schedule for the dataset.  When a scheduled refresh time comes, Power BI makes a secure connection to the Gateway installed on your desktop computer. It then securely connects to the data sources to get updates. For refresh, there’s no communication with the original workbook you uploaded from your laptop computer.
 
-**Note:** You cannot install a Gateway on the same computer as a Power BI Analysis Services Connector. This usually isn’t a problem since only one Connector is needed in environments that have Analysis Services as a data source, and it’s typically installed on the Analysis Services server itself. To learn more about the Connector, see [Power BI Analysis Services Connector in-depth](https://support.powerbi.com/knowledgebase/articles/546004-power-bi-analysis-services-connector-in-depth).
+**Note:** You cannot install a Gateway on the same computer as a Power BI Analysis Services Connector. This usually isn’t a problem since only one Connector is needed in environments that have Analysis Services as a data source, and it’s typically installed on the Analysis Services server itself. To learn more about the Connector, see [Power BI Analysis Services Connector in-depth](powerbi-admin-analysis-services-connector-indepth.md-power-bi-analysis-services-connector-in-depth).
 
 ### Windows account
 
@@ -162,5 +160,5 @@ Power BI Personal Gateway communicates on outbound ports: TCP 443 (default), 567
 
 ## Troubleshooting
 
-If you're having trouble when installing and configuring a Personal Gateway, be sure to see [Troubleshooting Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/666367-troubleshooting-power-bi-personal-gateway).
+If you're having trouble when installing and configuring a Personal Gateway, be sure to see [Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md-troubleshooting-power-bi-personal-gateway).
 

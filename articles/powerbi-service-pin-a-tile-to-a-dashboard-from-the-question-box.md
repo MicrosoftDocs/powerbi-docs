@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Pin a tile to a Power BI dashboard from the Q&A question box"
    description="Pin a tile to a Power BI dashboard from the Q&A question box"
    services="powerbi" 
@@ -18,11 +18,10 @@
    ms.author="jastru"/>
 
 # Pin a tile to a Power BI dashboard from the Q&A question box  
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
-1.  Create a [dashboard](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi) and [get data](http://support.powerbi.com/knowledgebase/articles/434354-connect-to-a-data-source).
+1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
 2.  In the question box at the top of your dashboard, start typing what you want to know about your data.  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnAQuestionBox.png)
@@ -45,7 +44,7 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/pinSuccess.png)
 
-7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile](http://support.powerbi.com/knowledgebase/articles/424878) on your dashboard. 
+7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
 
 ## Tips for using Q&A  
 -   When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard highlighted in the navigation pane.
@@ -53,6 +52,6 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 -   **How does Q&A know which datasets to use**?  Q&A has access to all datasets that have visualizations pinned to that dashboard.
 
 ## See Also  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Q&A in Power BI](powerbi-service-q-and-a.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="I get an error refreshing data with the Power BI Personal Gateway"
    description="I get an error refreshing data with the Power BI Personal Gateway"
    services="powerbi" 
@@ -18,6 +18,5 @@
    ms.author="jastru"/>
 
 # I get an error refreshing data with the Power BI Personal Gateway.  
-[← Top issues and questions](/knowledgebase/topics/106950-top-issues-and-questions)
 
-Please take a look at our [Personal Gateway troubleshooting guide](https://support.powerbi.com/knowledgebase/articles/666367-troubleshooting-power-bi-personal-gateway) for more information.  
+Please take a look at our [Personal Gateway troubleshooting guide](powerbi-admin-troubleshooting-power-bi-personal-gateway.md-troubleshooting-power-bi-personal-gateway) for more information.  

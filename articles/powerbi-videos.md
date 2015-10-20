@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # Power BI Videos
 
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
-
 We have a YouTube channel for Power BI! You can visit [our channel](https://www.youtube.com/user/mspowerbi/videos).
 
 -   This video covers some tips for optimizing your data for Power BI. Learn the best way to format your data before uploading it to the service.
@@ -36,7 +34,7 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 
 ## See also
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](powerbi-service-get-started.md)
 
 ﻿
 

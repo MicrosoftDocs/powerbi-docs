@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Customize visualization title, background, and legend"
    description="Tutorial: Customize visualization title, background, and legend"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Tutorial: Customize visualization title, background, and legend  
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 In this tutorial you'll learn many different ways to customize the title of your visualizations. Not all visualizations can be customized, [see the complete list](637423.html#list).  Specifically, this tutorial covers customizing (in reports and on dashboards):  
 -   visualization titles  
@@ -26,7 +25,7 @@ In this tutorial you'll learn many different ways to customize the title of you
 -   visualization title legends
 
 ## Customize visualization titles in reports    
-I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094). To follow along, [connect to the Retail Analysis sample](http://support.powerbi.com/knowledgebase/articles/514904).
+I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
 
 >**Note:**  
 >When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with new titles and subtitles, hyperlinks, and resized.
@@ -118,8 +117,8 @@ To customize a legend, select "This Year Sales by FiscalMonth and Name" line cha
 |waterfall|yes|yes|yes|
 
 ## See Also  
-More about [Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
-[Customize X-axis and Y-axis](https://support.powerbi.com/knowledgebase/articles/637429%0A)  
+More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
+[Customize X-axis and Y-axis](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md%0A)  
 [Customize data point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)  
-[Customize colors and axis properties](https://support.powerbi.com/knowledgebase/articles/666325)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Calculated tables in Power BI Desktop"
    description="Calculated tables in Power BI Desktop"
    services="powerbi" 
@@ -19,8 +19,6 @@
 
 # Calculated tables in Power BI Desktop
 
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
-
 With calculated tables, you can add a new table to the model. But instead of querying and loading values into your new table's columns from a data source, you create a Data Analysis Expressions (DAX) formula that defines the table’s values. In Power BI Desktop, calculated tables are created by using the New Table feature in Report View or Data View.
 
 Most of the time, you import data into your model from an external data source. However, calculated tables provide certain advantages. Calculated tables are generally best for intermediate calculations and data you want stored as part of the model rather than calculated on the fly or as part of a query. 
@@ -29,7 +27,7 @@ Unlike tables created as part of a query, calculated tables created in Report Vi
 
 Just like normal tables, calculated tables can have relationships with other tables. The columns in your calculated table have data types, formatting, and can belong to a data category. You can name your columns whatever you want, and add them to a report visualization just like other fields. Calculated tables are re-calculated if any of the tables it pulls data from are refreshed or updated in any way.
 
-Calculated tables calculate results by using [Data Analysis Expressions](https://msdn.microsoft.com/en-us/library/gg413422.aspx) (DAX), a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating formulas to calculate results for just about any data analysis need.
+Calculated tables calculate results by using [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX), a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating formulas to calculate results for just about any data analysis need.
 
 ## Let’s look at an example
 
@@ -87,5 +85,5 @@ INTERSECT
 CALENDAR
 CALENDARAUTO
 
-See the [DAX Function Reference](https://msdn.microsoft.com/en-us/ee634396.aspx) for these and
+See the [DAX Function Reference](https://msdn.microsoft.com/ee634396.aspx) for these and
 other table returning DAX functions.

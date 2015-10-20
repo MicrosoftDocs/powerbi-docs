@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Histograms"
    description="Histograms"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Histograms  
-[← Knowledge Base](https://support.powerbi.com/knowledgebase)
 
 There are several ways to build histograms, we'll start with the simplest and go from there:
 

@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Add an image to a dashboard"
    description="Add an image to a dashboard"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Add an image to a dashboard
-
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 Say you want your company logo on your dashboard. 
 
@@ -45,7 +43,7 @@ Now you're ready.
 
 1.  In the Excel workbook, add a Power View sheet: **Insert** \> **Power View**.
 
-2.  Don't see Power View on the **Insert** tab? You may need to [turn on the Power View add-in](https://support.office.com/en-us/article/Create-a-Power-View-sheet-in-Excel-2013-b23d768d-7586-47fe-97bd-89b80967a405?ui=en-US&rs=en-US&ad=US).
+2.  Don't see Power View on the **Insert** tab? You may need to [turn on the Power View add-in](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-b23d768d-7586-47fe-97bd-89b80967a405?ui=en-US&rs=en-US&ad=US).
 
 3.  On the **Power View** tab \> **Insert Picture**.
 
@@ -55,7 +53,7 @@ Now you're ready.
 
 6.  In Power BI, start from the dashboard where you want the logo, or create a dashboard.
 
-7.  Select **Get Data**, and [upload the Excel workbook](https://support.powerbi.com/knowledgebase/articles/424871-excel-data-in-power-bi) from wherever you saved it.
+7.  Select **Get Data**, and [upload the Excel workbook](powerbi-service-excel-data.md-excel-data-in-power-bi) from wherever you saved it.
 
 8.  In the navigation pane under **Reports**, select the report you just added. It has a yellow asterisk \* by its name. 
 
@@ -77,9 +75,9 @@ Now you're ready.
 
     ![](media/powerbi-service-add-an-image-to-a-dashboard/pinSuccess.png)
 
-12. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](http://support.powerbi.com/knowledgebase/articles/424878-edit-a-tile-resize-move-rename-delete) the pinned visualization.
+12. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
 13. On the dashboard, drag the lower-right corner to make the tile smaller, and then drag it to the place you want it.
 
-More about [creating Power BI dashboards](https://support.powerbi.com/knowledgebase/articles/475163-create-a-power-bi-dashboard).
+More about [creating Power BI dashboards](powerbi-service-create-a-dashboard.md-create-a-power-bi-dashboard).
 

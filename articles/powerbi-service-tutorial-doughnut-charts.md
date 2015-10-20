@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Doughnut charts in Power BI"
    description="Tutorial: Doughnut charts in Power BI"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Tutorial: Doughnut charts in Power BI
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 A  doughnut chart is similar to a pie chart in that it shows the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
@@ -55,10 +53,10 @@ To follow along, sign in to Power BI and select Get Data \> Samples \> Retail 
 
 ## See Also:
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 

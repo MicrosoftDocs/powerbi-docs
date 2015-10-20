@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Refresh the Power BI for Windows app"
    description="Refresh the Power BI for Windows app"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Refresh the Power BI for Windows app  
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
 
 Every time you start or return to the Microsoft Power BI for Windows app, it automatically refreshes all the data -- in the home page, the dashboards, and the reports.
 
@@ -37,4 +36,4 @@ The app refreshes with the data in [Power BI](http://powerbi.com), not necessari
 >-   Each time the app refreshes, whether you started it or it was automatic, the app saves the data in the app cache until the next refresh.   
 >-   When you uninstall or upgrade the app, that clears the cache.
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).  
+More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).  

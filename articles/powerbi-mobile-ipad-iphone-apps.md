@@ -18,8 +18,6 @@
    ms.author="v-anpasi"/>
 # iPad and iPhone apps (Power BI for iOS)
 
-[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios)
-
 The iPad and iPhone apps for Microsoft Power BI for iOS deliver the mobile BI experience. They provide live, touch-enabled mobile access to your important business information, so you can view and interact with your company dashboards and reports from anywhere. Explore the data in your dashboards, and share them with your colleagues in email or text messages.
 
 ![](media/powerbi-mobile-ipad-iphone-apps/PBI_iPad_iPhoneDevices.png)
@@ -30,11 +28,11 @@ Go to Power BI to [sign up for the Power BI](http://go.microsoft.com/fwlink/?Lin
 
 ## iPad app for Power BI
 
-Get started with the [iPad app for Power BI for iOS](http://support.powerbi.com/knowledgebase/articles/467172-get-started-with-the-ipad-app-power-bi-for-ios-pr).
+Get started with the [iPad app for Power BI for iOS](powerbi-mobile-iphone-app-get-started.md).
 
 ## iPhone app for Power BI
 
-Get started with the [iPhone app for Power BI for iOS](http://support.powerbi.com/knowledgebase/articles/527036-get-started-with-the-iphone-app-power-bi-for-ios).
+Get started with the [iPhone app for Power BI for iOS](powerbi-mobile-ipad-app-get-started.md).
 
 ## Get started with Power BI
 
@@ -46,5 +44,5 @@ Now experience them in the iPad and iPhone apps.
 
 ### See Also
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](powerbi-service-get-started.md)
 

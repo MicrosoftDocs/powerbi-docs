@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Converting your reports to the new report editor"
    description="Converting your reports to the new report editor"
    services="powerbi" 
@@ -18,9 +18,8 @@
    ms.author="jastru"/>
 
 # Converting your reports to the new report editor  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
-If you participated in the Power BI Preview, you may notice that our report editor has been updated. [Take a tour of the new report editor](https://support.powerbi.com/knowledgebase/articles/665494).
+If you participated in the Power BI Preview, you may notice that our report editor has been updated. [Take a tour of the new report editor](powerbi-service-the-report-editor-take-a-tour.md).
 
 You have a choice...you can continue to work in the classic reporting canvas or upgrade your reports for the new canvas.  The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, etc... We've made some changes to the look and feel of some visuals in your report, and we think you'll be happy with them.  
 
@@ -66,6 +65,6 @@ You'll still be able to edit the report in the new reporting canvas, but you'll 
 Remember, as long as you don't save the report, you're not going to affect the original so don't worry about losing your work! But the conversion process is one-way so do be sure that you're ready to stay in the new experience before you save your report.
 
 ## See Also  
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)  
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)﻿  
+Read more about [reports in Power BI](powerbi-service-reports.md)  
+[Get started with Power BI](powerbi-service-get-started.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿  

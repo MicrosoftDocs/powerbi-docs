@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Share dashboards from the Power BI for Windows app"
    description="Share dashboards from the Power BI for Windows app"
    services="powerbi" 
@@ -19,9 +19,7 @@
 
 # Share dashboards from the Power BI for Windows app
 
-[← Power BI app for Windows](https://support.powerbi.com/knowledgebase/topics/75729-power-bi-app-for-windows)
-
-Invite colleagues by sharing links to dashboards and [snapshots of tiles](http://support.powerbi.com/knowledgebase/articles/535432-share-a-snapshot-of-a-tile-from-the-power-bi-for-w) from the Power BI app for Windows. The people you share it with need to [sign up for Power BI](http://powerbi.com), too. 
+Invite colleagues by sharing links to dashboards and [snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app.md) from the Power BI app for Windows. The people you share it with need to [sign up for Power BI](http://powerbi.com), too. 
 
 1.  Tap the Share ![](media/powerbi-mobile-share-dashboards-from-the-windows-app/PBI_WinAppShareIcon.png) icon in the upper-right corner of your dashboard, or tap the ellipsis (...) in the lower-right corner to show the app bars \> tap **Invite a colleague**.
 
@@ -69,4 +67,4 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 ### See Also
 
-More about the [Power BI for Windows app](http://support.powerbi.com/knowledgebase/articles/510917-get-started-with-the-power-bi-for-windows-app).
+More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).

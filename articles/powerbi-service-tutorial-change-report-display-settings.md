@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Tutorial: Change the display settings for a page in a Power BI report"
    description="Tutorial: Change the display settings for a page in a Power BI report"
    services="powerbi" 
@@ -18,12 +18,11 @@
    ms.author="jastru"/>
 
 # Tutorial: Change the display settings for a page in a Power BI report  
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
-In the [previous article](https://support.powerbi.com/knowledgebase/articles/742155) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Now let's try it ourselves.
+In the [previous article](powerbi-service-change-report-display-settings.md) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Now let's try it ourselves.
 
 ## First, let's change the page View setting.  
-1.  Open a report in Editing View. This example uses the "District Monthly Sales" page of the [Retail Analysis sample](https://support.powerbi.com/knowledgebase/articles/474807).  By default, pages display using the **Dynamic** setting.  In this case, Dynamic displays the report page without scrollbars, but some of the titles are cut off.    
+1.  Open a report in Editing View. This example uses the "District Monthly Sales" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  By default, pages display using the **Dynamic** setting.  In this case, Dynamic displays the report page without scrollbars, but some of the titles are cut off.    
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_changeDisplay1.jpg)
 
 2.  Make sure that no visualizations are selected on the canvas. Select **View** and review the display options.   
@@ -52,7 +51,7 @@ In the [previous article](https://support.powerbi.com/knowledgebase/articles/742
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_changeDisplay6.jpg)
     
 ## Now, let's change the Page Size setting  
-1.  Re-open the report in Editing View. This example uses the "District Monthly Sales" page of the [Retail Analysis sample](https://support.powerbi.com/knowledgebase/articles/474807).    
+1.  Re-open the report in Editing View. This example uses the "District Monthly Sales" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).    
 
 2.  Make sure that no visualizations are selected on the canvas.  In the **Visualizations** pane, select the paintbrush icon ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_paintbrush.jpg) .    
 
@@ -90,6 +89,6 @@ In this exercise, you'll create a report that will display in Cortana.  Cortana
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_changeDisplayBoth3.jpg)
 
 ## See Also  
-Back to [Page display settings in a Power BI report](https://support.powerbi.com/knowledgebase/articles/742155)  
-Read more about  [reports in Power B ](http://support.powerbi.com/knowledgebase/articles/425684)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)  
+Back to [Page display settings in a Power BI report](powerbi-service-change-report-display-settings.md)  
+Read more about  [reports in Power B ](powerbi-service-reports.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

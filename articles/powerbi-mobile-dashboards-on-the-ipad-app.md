@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Dashboards on the iPad app (Power BI for iOS)"
    description="Dashboards on the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -18,15 +18,13 @@
    ms.author="v-pawrig"/>
 # Dashboards on the iPad app (Power BI for iOS)
 
-[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios)
-
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business.
 
 ![](media/powerbi-mobile-dashboards-on-the-ipad-app/PBI_iPad_DashSM.png)
 
 
-Power BI comes with built-in dashboards for some data sources such as Salesforce, and you [create your own dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi).
+Power BI comes with built-in dashboards for some data sources such as Salesforce, and you [create your own dashboards in Power BI](powerbi-service-dashboards.md).
 
 Then you see these same dashboards in the iPad app for Microsoft Power BI for iOS, and you can see dashboards your colleagues share with you.# View dashboards on your iPad
 
@@ -42,17 +40,17 @@ Then you see these same dashboards in the iPad app for Microsoft Power BI for 
 
 3.  You see the tiles in that dashboard. Now you can:
 
-    [Interact with the tiles](https://support.powerbi.com/knowledgebase/articles/467178).
+    [Interact with the tiles](powerbi-mobile-tiles-in-the-ipad-app.md).
 
-    [Make favorites](https://support.powerbi.com/knowledgebase/articles/467179) of the tiles.
+    [Make favorites](powerbi-mobile-favorites-on-the-ipad-app.md) of the tiles.
 
-    [Open the reports](https://support.powerbi.com/knowledgebase/articles/467180) behind the tiles.
+    [Open the reports](powerbi-mobile-reports-on-the-ipad-app.md) behind the tiles.
 
-    [Share the dashboard](https://support.powerbi.com/knowledgebase/articles/467181).
+    [Share the dashboard](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
 
-    [Annotate and share a snapshot](https://support.powerbi.com/knowledgebase/articles/527030) of a tile.
+    [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
 
 4.  Click the back arrow in the upper-left corner or tap **Dashboards** in the bottom bar.
 
-More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172-the-ipad-app-for-power-bi-preview) for Power BI.
+More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
 

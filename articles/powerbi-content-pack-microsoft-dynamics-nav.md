@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Microsoft Dynamics NAV content pack for Power BI"
    description="Microsoft Dynamics NAV content pack for Power BI"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Microsoft Dynamics NAV content pack for Power BI  
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 Getting insights into your Microsoft Dynamics NAV data is easy with Power BI and the Microsoft Dynamics NAV content pack. Power BI retrieves your data, both Sales and Financial data then builds an out-of-box dashboard and reports based on that data.
 

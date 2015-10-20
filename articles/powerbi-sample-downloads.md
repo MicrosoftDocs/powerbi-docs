@@ -19,8 +19,6 @@
 
 # Download the Power BI industry samples (Excel workbooks)
 
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
-
 ## Important information
 
  ©2015 Microsoft Corporation. All rights reserved. The documents and workbooks are provided "as-is." Information and views expressed in the workbooks, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -69,17 +67,17 @@ Each workbook contains several sheets:
 
 -   The Info tab provides information about obviEnce, the company that created the sample.
 
--   The other tabs are Power View sheets with the report visuals. You may need to [enable the Power View add-in](https://support.office.com/en-US/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
+-   The other tabs are Power View sheets with the report visuals. You may need to [enable the Power View add-in](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
 
 The workbook contains the actual data, but it's in the data model, not in worksheets.
 
 -   To see the data, on the **PowerPivot** tab, select **Manage Data Model**.
 
-    Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/en-US/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
+    Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
 
 ## See Also:
 
-[Sample datasets](http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets)
+[Sample datasets](powerbi-sample-datasets.md)
 
-[Get data for Power BI](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
+[Get data for Power BI](powerbi-service-get-data.md)
 

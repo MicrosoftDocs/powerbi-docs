@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Forgot your password for Power BI?"
    description="Forgot your password for Power BI?"
    services="powerbi" 
@@ -17,8 +17,6 @@
    ms.date="10/14/2015"
    ms.author="v-pawrig"/>
 # Forgot your password for Power BI?
-
-[← Troubleshooting](https://support.powerbi.com/knowledgebase/topics/65779-troubleshooting)
 
 If you've forgotten your password, you can use the following link to request a password reset.
 

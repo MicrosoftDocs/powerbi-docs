@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Get started with the iPhone app (Power BI for iOS)"
    description="Get started with the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -18,8 +18,6 @@
    ms.author="v-aljenk"/>
 
 # Get started with the iPhone app (Power BI for iOS)
-
-[← iPhone app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/78002-iphone-app-power-bi-for-ios)
 
 The iPhone app for Microsoft Power BI for iOS brings Power BI to your pocket, with live, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere.
 
@@ -43,20 +41,20 @@ Bring your own data together and create dashboards and reports in [Power BI](ht
 
 What else you can do in the iPhone app for Power BI?
 
--   View your [dashboards](http://support.powerbi.com/knowledgebase/articles/527051-dashboards-in-the-iphone-app-power-bi-for-ios-pre).
+-   View your [dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
 
--   Interact with the [tiles](http://support.powerbi.com/knowledgebase/articles/527054-tiles-in-the-iphone-app-power-bi-for-ios-preview) on your dashboards.
+-   Interact with the [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
 
--   Create [favorites](http://support.powerbi.com/knowledgebase/articles/527060-favorites-in-the-iphone-app-power-bi-for-ios-prev).
+-   Create [favorites](powerbi-mobile-favorites-in-the-iphone-app.md).
 
--   Set [data alerts](http://support.powerbi.com/knowledgebase/articles/527063-create-data-alerts-in-the-iphone-app-power-bi-for) for your data.
+-   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
 
--   Share [dashboards](http://support.powerbi.com/knowledgebase/articles/527075-share-a-dashboard-from-the-iphone-app-power-bi-fo).
+-   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 
--   Annotate and share [tiles](http://support.powerbi.com/knowledgebase/articles/527099-annotate-and-share-a-tile-from-the-iphone-app-pow).
+-   Annotate and share [tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
 
 ### See Also
 
-[Get started with the iPad app for Power BI](http://support.powerbi.com/knowledgebase/articles/467172-get-started-with-the-ipad-app-power-bi-for-ios-pr)
+[Get started with the iPad app for Power BI](powerbi-mobile-iphone-app-get-started.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](powerbi-service-get-started.md)

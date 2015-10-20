@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Add a hyperlink to a Text Box in Power BI"
    description="Add a hyperlink to a Text Box in Power BI"
    services="powerbi" 
@@ -18,13 +18,11 @@
    ms.author="v-pawrig"/>
 # Add a hyperlink to a Text Box in Power BI
 
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
-
->**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](https://support.powerbi.com/knowledgebase/articles/633580). 
+>**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). 
 
 ## To add a hyperlink to a Text Box
 
-1.  [Create a Text Box and add some text](http://https://support.powerbi.com/knowledgebase/articles/729903). 
+1.  [Create a Text Box and add some text](http://powerbi-service-text-boxes-in-reports.md). 
 
 2.  Highlight existing text, or add new text to use as a hyperlink.
 
@@ -59,11 +57,11 @@
 
 ## See Also:
 
-[Text Boxes in Power BI reports](https://support.powerbi.com/knowledgebase/articles/729903)
+[Text Boxes in Power BI reports](powerbi-service-text-boxes-in-reports.md)
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

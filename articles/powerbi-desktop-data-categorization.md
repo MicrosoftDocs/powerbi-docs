@@ -1,4 +1,4 @@
-<properties 
+﻿<properties 
    pageTitle="Data categorization in Power BI Desktop"
    description="Data categorization in Power BI Desktop"
    services="powerbi" 
@@ -18,7 +18,6 @@
    ms.author="jastru"/>
 
 # Data categorization in Power BI Desktop  
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 In Power BI Desktop, you can specify the Data Category for a column so Power BI Desktop knows how it should treat its values when in a visualization.
 
