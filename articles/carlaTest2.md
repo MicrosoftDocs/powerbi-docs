@@ -1,11 +1,12 @@
 <properties 
         pageTitle="Test Markdown 2 (carlasab)" 
-        description="<description> " 
+        description="test page" 
         services="powerbi" 
         documentationCenter="" 
         authors="sabotta" />
 
 # Introduction
+
 This is a test markdown article, and it's the first markdown article that I've created using MarkdownPad2. The UI seems *user friendly*.
 
 ## Tables
@@ -17,7 +18,7 @@ The following is a table.
 |Content Cell|Content Cell|
 
 
-# Lists
+## Lists
 1. First step includes adding `code`
 2. Second step.
 3. Third step.
