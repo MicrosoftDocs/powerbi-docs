@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Power BI Analysis Services Connector in-depth"
    description="Power BI Analysis Services Connector in-depth"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -168,7 +168,7 @@ Power BI Analysis Services Connector communicates on outbound ports: TCP 443 (de
 
 **Question:** If users share dashboards connected to Analysis Services, will those other users be able to see the data even though they might not have the same the permissions.
 
-**Answer:** Yes. In Power BI, sharing means sharing your own data. This is the current behavior, but could change at any time.
+**Answer:** For a dashboard connected to Analysis Services, users will only see the data they have access to. If the users do not have the same permissions, they will not be able to see any data.
 
 **Question:** How can I find out what effective username is being passed to my on-premises Analysis Services server?
 
@@ -221,4 +221,3 @@ For information on synchronizing Azure Active Directory with an on-premises Acti
 For troubleshooting, see ﻿[Troubleshooting Power BI Analysis Service Connector](powerbi-admin-troubleshoot-analysis-service-connector.md).
 
 Once a Power BI Analysis Services Connector is installed, configured, and running, users can connect to tabular models on that Analysis Services instance. To learn how to connect from Get Data in Power BI,  see ﻿[SQL Server Analysis Services Tabular data in Power BI](powerbi-sql-server-analysis-services-tabular-data.md).
-
