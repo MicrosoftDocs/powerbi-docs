@@ -3,7 +3,7 @@
    description="Azure SQL Database with direct connect"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,8 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="asaxton"/>
 # Azure SQL Database with direct connect
-
-[← Databases and more](https://support.powerbi.com/knowledgebase/topics/88773-databases-and-more)
 
 Azure SQL Database with direct connect allows you to create dynamic reports based on data and metric you already have in your Azure SQL Database. With direct connect, queries are sent back to your Azure SQL Database as you explore the data in the report view. This experience is suggested for users who are familiar with the databases and entities they connect to.
 
@@ -36,7 +34,7 @@ Notes:
 
 -   Schema changes are not picked up automatically
 
--   Groups are only available with [Power BI Pro](https://support.powerbi.com/knowledgebase/articles/685479).
+-   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below. 
 
@@ -78,9 +76,9 @@ Your fully qualified server name and database name can be found in the Azure Por
 
 ## See Also:
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Get Data for Power BI](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
+[Get Data for Power BI](powerbi-service-get-data.md)
 
 
 

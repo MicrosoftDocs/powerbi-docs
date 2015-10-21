@@ -3,7 +3,7 @@
    description="Configure a Power BI Analysis Services Connector"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,15 +15,13 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="asaxton"/>
 # Configure a Power BI Analysis Services Connector
-
-[← Databases and more](https://support.powerbi.com/knowledgebase/topics/88773-databases-and-more)
 
 
 ##  [**Download the Analysis Services Connector now**](http://www.microsoft.com/download/details.aspx?id=45333)
 
-Before users can connect to a SQL Server Analysis Services tabular model, a Power BI Analysis Services connector needs to be configured for the server.  If you have more than one Analysis Services server, you'll need to configure one connector per server. This is done by a server administrator. For more detailed information about how the connector works, be sure to see [Power BI Analysis Services Connector in-depth](http://support.powerbi.com/knowledgebase/articles/546004-power-bi-analysis-services-connector-in-depth).
+Before users can connect to a SQL Server Analysis Services tabular model, a Power BI Analysis Services connector needs to be configured for the server.  If you have more than one Analysis Services server, you'll need to configure one connector per server. This is done by a server administrator. For more detailed information about how the connector works, be sure to see [Power BI Analysis Services Connector in-depth](powerbi-admin-analysis-services-connector-indepth.md).
 
 Once the connector is configured, tabular model databases on the Analysis Services server instance will appear in the SQL Server Analysis Services page in Power BI. Creating the connection requires a Windows account and password with Server Administrator permissions for the server instance you are connecting to. Once configured, users will need to have at least Read permissions for any tabular model databases they’re connecting to.
 
@@ -43,7 +41,7 @@ The connector can run on any domain computer. It doesn't have to be your local 
 -   Installing the Power BI Analysis Services Connector and the Data Management Gateway on the same computer is not supported. If you already have the Data Management Gateway installed, uninstall it before installing the Power BI Analysis Services Connector, or install the Connector on different computer.
 -   The Analysis Services server is domain joined.
 -   The Analysis Services connector & Analysis Services server are installed on computers in the same domain.
--   If you use a .onmicrosoft.com email address, you'll need to sync your Active Directory to Azure Active Directory using Azure Active Directory Sync (DirSync). To learn more. see [Power BI Analysis Services Connector in-depth](http://support.powerbi.com/knowledgebase/articles/546004-power-bi-analysis-services-connector-in-depth).
+-   If you use a .onmicrosoft.com email address, you'll need to sync your Active Directory to Azure Active Directory using Azure Active Directory Sync (DirSync). To learn more. see [Power BI Analysis Services Connector in-depth](powerbi-admin-analysis-services-connector-indepth.md).
 
 ## To install and configure a Power BI Analysis Services Connector
 
@@ -105,5 +103,5 @@ Uninstall the connector by using Remove Programs in Control Panel.
 
 ## Troubleshooting
 
-If you're having trouble when installing and configuring the Connector, be sure to see [Troubleshooting Power BI Analysis Services Connector.](http://support.powerbi.com/knowledgebase/articles/505324-troubleshooting-analysis-service-connector)
+If you're having trouble when installing and configuring the Connector, be sure to see [Troubleshooting Power BI Analysis Services Connector.](powerbi-admin-troubleshoot-analysis-service-connector.md)
 

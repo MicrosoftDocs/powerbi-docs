@@ -3,7 +3,7 @@
    description="MailChimp content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mgblythe" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,8 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="yshoukry"/>
 # MailChimp content pack for Power BI
-
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 The Power BI content pack pulls data from your MailChimp account and generates a dashboard, a set of reports and a dataset to allow you to explore your data. Use MailChimp’s analytics to quickly identify trends within your campaigns, reports, and individual subscribers. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 
@@ -53,17 +51,17 @@ Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services
 
 	You can change this dashboard to display your data the way you want it. Plus you can:
 
-	- Try [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi-preview) at the top of the dashboard, such as "Show total clicks by location on a map"
+	- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard, such as "Show total clicks by location on a map"
 
 		![](media/powerbi-content-pack-mailchimp/PBI_MailChimpQnA.png)
 
-	- [Change the tiles](https://support.powerbi.com/knowledgebase/articles/424878) in the dashboard.
+	- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
-	- [Select a tile](https://support.powerbi.com/knowledgebase/articles/425669) to open the underlying report.
+	- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
 ### See Also
 
-[Get started in Power BI](https://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started in Power BI](powerbi-service-get-started.md)
 
 ﻿[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
 

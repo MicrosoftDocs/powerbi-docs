@@ -3,7 +3,7 @@
    description="Important considerations for connecting to data in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,18 +15,16 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="maggies"/>
 # Important considerations for connecting to data in Power BI
-
-[← Get data](https://support.powerbi.com/knowledgebase/topics/63369-get-data)
 
 Connecting to data sources through Power BI is an easy way to get analytics and insights on data that is important to you. Power BI is designed to work well with a variety of data sources:
 
--   Data from [Excel and Power BI Desktop files](https://support.powerbi.com/knowledgebase/articles/597003).
+-   Data from [Excel and Power BI Desktop files](powerbi-service-get-data-from-files.md).
 
 -   Content packs with ready-made dashboards, reports, and datasets for [SaaS ](https://support.powerbi.com/knowledgebase/topics/88770) applications. Connecting to these SaaS applications requires an existing subscription to that application. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
 
--   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](https://support.powerbi.com/knowledgebase/articles/581421) and SQL Server [Analysis Services tabular data](https://support.powerbi.com/knowledgebase/articles/471633).
+-   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
 
 When connecting to data sources through Power BI, there are some things to consider across all sources:
 
@@ -54,9 +52,9 @@ Some of the data sources may have additional requirements, please review the ind
 
 ## See Also:
 
-[Get data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)
+[Get data](powerbi-service-get-data.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi) 
+[Get started with Power BI](powerbi-service-get-started.md) 
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

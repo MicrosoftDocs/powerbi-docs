@@ -3,7 +3,7 @@
    description="Share (and unshare) a dashboard from Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,15 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
-# Share (and unshare) a dashboard from Power BI
+   ms.date="06/18/2015"
+   ms.author="mihart"/>
 
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
+# Share (and unshare) a dashboard from Power BI
 
 You can share your dashboards with people in your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
 
-**NOTE**: Dashboards (and their associated reports) that are shared with you are read-only and cannot be saved-as (personalized).  [Organizational content packs](https://support.powerbi.com/knowledgebase/articles/651040), on the other hand, do allow you to personalize the dashboard and reports.
+**NOTE**: Dashboards (and their associated reports) that are shared with you are read-only and cannot be saved-as (personalized).  [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md), on the other hand, do allow you to personalize the dashboard and reports. Read [How should I share my dashboard](https://support.powerbi.com/knowledgebase/articles/)? to decide which is best for your situation. 
 
 1.   Open the dashboard to share and select **Share Dashboard**.
 
@@ -30,9 +29,7 @@ You can share your dashboards with people in your organization. If they haven't
 
 2.  To share with colleagues, select **In﻿vite** and type the colleagues' email addresses in the top box and, optionally, modify the message.
 
-    ![](media/powerbi-service-share-unshare-dashboard/PBI_ShareInvite.png)
-
- 
+    ![](media/powerbi-service-share-unshare-dashboard/PBI_ShareInvite.png)  
 
 3.  To allow your colleagues to reshare your dashboard with others, check **Allow recipients to share your dashboard** (the checkbox is in the lower-right corner). 
 
@@ -48,7 +45,7 @@ You can share your dashboards with people in your organization. If they haven't
 
 When you share with your colleagues:
 
--   They can see your dashboard and interact with your reports in [Reading View](http://support.powerbi.com/knowledgebase/articles/439920-open-a-report-in-reading-view). They can't create new reports or save changes to existing reports.
+-   They can see your dashboard and interact with your reports in [Reading View](powerbi-service-open-a-report-in-reading-view.md). They can't create new reports or save changes to existing reports.
 
 -   They can even see the changes you make (after you save those changes). 
 
@@ -67,6 +64,8 @@ You can share with colleagues who have the same email domain as you, and with c
 ## Resharing
 
 Resharing allows your colleagues to forward the email invitation to others in your organization (the invitation expires after one month). Colleagues can also reshare through the web and mobile apps. As the owner of the dashboard, you can turn off resharing and you can also revoke resharing on an individual basis (see below).# Unshare a dashboard
+
+## Unshare a dashboard
 
 1.  Open the dashboard to share and click **Share Dashboard**.
 
@@ -102,11 +101,11 @@ Only the dashboard owner can turn resharing on and off.
 
 ## See Also:
 
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)
+[Dashboards in Power BI](powerbi-service-dashboards.md)
 
-[Get Started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get Started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 
 

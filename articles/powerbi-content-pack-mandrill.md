@@ -3,7 +3,7 @@
    description="Mandrill content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,8 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="maggies"/>
 # Mandrill content pack for Power BI
-
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 **Update 8/17**: The Mandrill content pack has been restored in Power BI, we apologize for any inconvenience. We are always interested in your feedback, please contact us at http://support.powerbi.com.
 
@@ -48,13 +46,13 @@ The Power BI content pack pulls data from your Mandrill account and generates a 
 
 You can change this dashboard to display your data the way you want it. Plus you can:
 
-- [Change the tiles](https://support.powerbi.com/knowledgebase/articles/424878) in the dashboard.
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
-- [Select a tile](https://support.powerbi.com/knowledgebase/articles/425669) to open the underlying report.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
 ### See Also
 
-****[Get started in Power BI](https://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+****[Get started in Power BI](powerbi-service-get-started.md)
 
 ﻿[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
 

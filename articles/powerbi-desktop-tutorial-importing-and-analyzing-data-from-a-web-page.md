@@ -3,7 +3,7 @@
    description="Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,8 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="davidi"/>
 # Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop
-
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 In this tutorial, you will learn how to import a table of data from a Web page and create a report to visualize this data. As part of this process, you navigate across tables available on a web page, and apply data transformation steps to bring the table into a new shape.
 
@@ -176,7 +174,7 @@ You can see the resulting table fields in the **Fields pane** at the right of t
 
              ![](media/powerbi-desktop-tutorial-importing-and-analyzing-data-from-a-web-page/WebPage15.png)
 
- As you can see, it is very easy to customize visualizations in your report, in order to present the data in the way that you want. Power BI Desktop provides a seamless end-to-end experience from getting data from a wide range of data sources and shaping it to meet your analysis needs to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](http://support.powerbi.com/knowledgebase/articles/461278-upload-power-bi-designer-reports) and create dashboards based on it, which you can share with other Power BI users.
+ As you can see, it is very easy to customize visualizations in your report, in order to present the data in the way that you want. Power BI Desktop provides a seamless end-to-end experience from getting data from a wide range of data sources and shaping it to meet your analysis needs to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](powerbi-desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
  This concludes the **Importing Data from the Web** tutorial. You can download the completed Power BI Desktop file [here](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Data_From_The_Web.pbix).
 

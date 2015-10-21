@@ -3,7 +3,7 @@
    description="Power BI Videos" 
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,8 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="mihart"/>
 # Power BI Videos
-
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 We have a YouTube channel for Power BI! You can visit [our channel](https://www.youtube.com/user/mspowerbi/videos).
 
@@ -36,7 +34,7 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 
 ## See also
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi-preview)
+[Get started with Power BI](powerbi-service-get-started.md)
 
 ﻿
 

@@ -3,7 +3,7 @@
    description="The report editor...Take a tour"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,8 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="mihart"/>
 # The report editor...Take a tour
-
-[← All about reports](https://support.powerbi.com/knowledgebase/topics/65157-all-about-reports)
 
 The Power BI report editor is made up of 3 panes:  **Fields**, **Visualizations**, and **Filters**, and the report canvas.  The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering.  And the pane on the right side, Fields, control the underlying data being used in the visualizations. 
 
@@ -51,15 +49,15 @@ To remove a field from the visualization, select the field and click the **X**.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/deleteField.png)
 
-For more information, see [Add visualizations to a Power BI report](https://support.powerbi.com/knowledgebase/articles/441777)
+For more information, see [Add visualizations to a Power BI report](powerbi-service-add-visualizations-to-a-report-i.md)
 
 ### Format your visuals
 
 Select the paintbrush icon to display customization options. 
 
--   [Customizing  visualization title, background and legend](https://support.powerbi.com/knowledgebase/articles/637423)
--   [Color formatting](https://support.powerbi.com/knowledgebase/articles/666325)
--   [Customizing X-axis and Y-axis properties](https://support.powerbi.com/knowledgebase/articles/637429)
+-   [Customizing  visualization title, background and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
+-   [Color formatting](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
+-   [Customizing X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
 -   Customizing data point labels
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/vizCustomize.png)
@@ -70,7 +68,7 @@ View, set, and modify page and visualization-level filters.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/vizFilters.png)
 
-For more information, see [Add a filter to a report](https://support.powerbi.com/knowledgebase/articles/464704).
+For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
 ## The Fields pane 
 
@@ -94,7 +92,7 @@ The Fields pane displays the tables and fields that exist in your data.  Use th
 
 An aggregate is a numeric value that will be summed or averaged, for example. Aggregates are imported with the data (defined in the data model your report is based on).
 
-For more information, see [Aggregates in Power BI reports](http://support.powerbi.com/knowledgebase/articles/475147-aggregates-in-power-bi-reports).
+For more information, see [Aggregates in Power BI reports](powerbi-service-aggregates-in-reports.md).
 
 -  **Calculated fields**  
 	Each calculated field has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. 
@@ -108,17 +106,17 @@ For more information, see [Aggregates in Power BI reports](http://support.powerb
 
 ## Next Steps:
 
-[Edit a report](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report)
+[Edit a report](powerbi-service-interact-with-a-report-in-editing-view.md)
 
-[Create a report](http://support.powerbi.com/knowledgebase/articles/475616-create-a-new-power-bi-report)
+[Create a report](powerbi-service-create-a-new-report.md)
 
 
 
 ## See Also:
 
-Read more about [reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi)
+Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)﻿
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
 

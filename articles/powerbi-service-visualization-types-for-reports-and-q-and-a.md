@@ -3,7 +3,7 @@
    description="Visualization types in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,8 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="mihart"/>
 # Visualization types in Power BI
-
-[← Visualizations in reports](https://support.powerbi.com/knowledgebase/topics/65160-visualizations-in-reports)
 
 
 ## Power BI visualizations
@@ -40,7 +38,7 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 
 **Tip**: The Area chart is based on the line chart with the area between the axis and line filled in.
 
-For more information, see [Tutorial: Basic Area chart](https://support.powerbi.com/knowledgebase/articles/653149-tutorial-basic-area-chart).
+For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md).
 
 ### Single number card tiles
 
@@ -52,7 +50,7 @@ For more information, see [Tutorial: Basic Area chart](https://support.powerbi.c
 
 **Tip**: A Combo chart combines a column chart and a line chart.
 
-For more information, see [Tutorial: Combo charts in Power BI](https://support.powerbi.com/knowledgebase/articles/436737).
+For more information, see [Tutorial: Combo charts in Power BI](powerbi-service-tutorial-combo-chart-merge-visualizations.md).
 
 ### Doughnut charts
 
@@ -60,7 +58,7 @@ For more information, see [Tutorial: Combo charts in Power BI](https://support.p
 
 **Tip**: Doughnut charts are similar to Pie charts.  They show the relationship of parts to a whole.
 
-For more information, see [Tutorial: Doughnut charts in Power BI](https://support.powerbi.com/knowledgebase/articles/653143)
+For more information, see [Tutorial: Doughnut charts in Power BI](powerbi-service-tutorial-doughnut-charts.md)
 
 ### Funnel charts
 
@@ -68,7 +66,7 @@ For more information, see [Tutorial: Doughnut charts in Power BI](https://suppor
 
 **Tip**: Funnels help visualize a process that has stages and items flow sequentially from one stage to the next.  Use a funnel when there is a sequential flow between stages, such as a sales process that starts with leads and ends with purchase fulfillment.
 
-For more information, see [Tutorial: Funnel Charts in Power BI](https://support.powerbi.com/knowledgebase/articles/556197-tutorial-funnel-charts-in-power-bi).
+For more information, see [Tutorial: Funnel Charts in Power BI](powerbi-service-tutorial-funnel-charts.md).
 
 ### Gauge charts
 
@@ -76,7 +74,7 @@ For more information, see [Tutorial: Funnel Charts in Power BI](https://support.
 
 **Tip**: Displays current status in the context of a goal.
 
-For more information, see [Tutorial: Gauge Charts in Power BI](https://support.powerbi.com/knowledgebase/articles/556188).
+For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-tutorial-radial-gauge-charts.md).
 
 
 
@@ -103,7 +101,7 @@ Filled Maps (Choropleth)
 
 **Tip**: The more intense the color, the larger the value.
 
-For more information, see [Tutorial: Filled Maps in Power BI](https://support.powerbi.com/knowledgebase/articles/556194).
+For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tutorial-filled-maps-choropleths.md).
 
 ### Pie charts
 
@@ -137,7 +135,7 @@ For more information, see [Tutorial: Filled Maps in Power BI](https://support.po
 
 **Tip**: Waterfall charts show a running total as values are added or subtracted.
 
-For more information, see [Tutorial Waterfall charts in Power BI](https://support.powerbi.com/knowledgebase/articles/653140-tutorial-waterfall-charts-in-power-bi).
+For more information, see [Tutorial Waterfall charts in Power BI](powerbi-service-tutorial-waterfall-charts.md).
 
 ### 
 
@@ -152,11 +150,11 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 ## See Also:
 
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Reports in Power BI](https://support.powerbi.com/knowledgebase/articles/425684)
+[Reports in Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 
 

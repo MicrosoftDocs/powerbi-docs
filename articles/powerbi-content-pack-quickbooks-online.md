@@ -3,7 +3,7 @@
    description="QuickBooks Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="v-anpasi" 
+   authors="mgblythe" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,8 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="09/28/2015"
-   ms.author="v-anpasi"/>
+   ms.author="fazhu (Julie)"/>
 # QuickBooks Online content pack for Power BI
-
-[← Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770-services-in-power-bi)
 
 When you connect to your QuickBooks Online data from Power BI you immediately get a Power BI dashboard and Power BI reports that provide insights about your business cash flow, profitability, customers, and more. Use the dashboard and reports as they are, or customize them to highlight the information you care most about. The data is refreshed automatically once a day.
 
@@ -66,9 +64,9 @@ Connect to the [QuickBooks Online content pack](https://dxt.powerbi.com/getdata/
 
 9.  What can you do now?
 > -   Rename the dashboard: Select the ellipsis (...) next to the QuickBook Online dashboard \> **Rename**.
-> -   Try [asking a question in the Q&A box](https://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi-preview) at the top of the dashboard.
-> -   [Change the tiles](https://support.powerbi.com/knowledgebase/articles/424878) in the dashboard.
-> -   Select a tile to [open the underlying report](https://support.powerbi.com/knowledgebase/articles/425669). 
+> -   Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard.
+> -   [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+> -   Select a tile to [open the underlying report](powerbi-service-dashboard-tiles.md). 
 
 ### Troubleshooting 
 
