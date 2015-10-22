@@ -19,7 +19,7 @@
 
 # Administering Power BI in your organization  
 
-Power BI is built on the foundation of Office 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](powerbi-admin-power-bi-security.md). Administering Power BI tenants, users, and groups is the same as administering them in Office 365. See the following articles for more information:  
+Power BI is built on the foundation of Office 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](powerbi-admin-power-bi-security.md). Administering Power BI tenants, users, and groups is the same as administering them in Office 365. See the following articles for more information:
 -   [Power BI in your organization](https://support.office.com/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5)  
 -   [Power BI tenant management guidance](https://support.office.com/article/Power-BI-Tenant-Management-Guidance-d5ec06f3-0ed5-489e-8b8f-4820c80c96ac)  
 -   [Office 365 user account management](https://technet.microsoft.com/library/office-365-user-account-management.aspx)  
