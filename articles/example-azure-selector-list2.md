@@ -1,6 +1,6 @@
-﻿<properties title="Documentation Example - Mobile selectors" pageTitle="Documentation Example - Mobile selectors" metaKeywords="" description="This is an example document" documentationCenter="" services="" solutions="" authors="" videoId="" scriptId="" />
+<properties title="Documentation Example - Mobile selectors" pageTitle="Documentation Example - Mobile selectors" metaKeywords="" description="This is an example document" documentationCenter="" services="" solutions="" authors="" videoId="" scriptId="" />
 
-## MOBILE Selector List Test - Second page##
+# MOBILE Selector List Test - Second page
 
 > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdon2)]
 - [(HTML | Javascript )](/xx-yy/documentation/articles/example-azure-selector-list/#1)

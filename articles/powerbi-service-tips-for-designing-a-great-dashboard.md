@@ -1,59 +1,81 @@
-<properties pageTitle="Tips for designing a great Power BI dashboard" description="Tips for designing a great Power BI dashboard" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
-<tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
-# Tips for designing a great Power BI dashboard
+﻿<properties 
+   pageTitle="Tips for designing a great Power BI dashboard"
+   description="Tips for designing a great Power BI dashboard"
+   services="powerbi" 
+   documentationCenter="" 
+   authors="mihart" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date="10/15/2015"
+   ms.author="mihart"/>
 
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
+# Tips for designing a great Power BI dashboard  
 
 Now that you've created a dashboard and added some tiles, think about how to make your dashboard not just pretty, but also functional. In general, that means making the most important information stand out, and making it clean and uncluttered﻿.
 
 Here are a few tips.
 
-## What to put in a dashboard
+### Consider your audience  
+What are the key metrics that will help them make decisions? How will the dashboard be used? What learned or cultural assumptions may affect design choices? What information does your audience need to be successful?
 
-Consider who your audience is. What are the key metrics that will help them make decisions?
+Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and datasets, and those can contain loads of details. Your readers can drill into the reports from your dashboard. So don't put the detail on the dashboard unless that's what your readers need to monitor.
 
-Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and datasets, and those can contain loads of details. Your readers can drill into the reports from your dashboard. So don't put the detail on the dashboard unless that's what your readers need to monitor.
+Where is the dashboard going to be displayed? If it will be on a large monitor, you can put more content on it. If readers will view it on their tablets, then fewer tiles will be more readable. 
 
-Where is the dashboard going to be displayed? If it will be on a large monitor, you can put more content on it. If readers will view it on their tablets, then fewer tiles will be more readable.
+### Tell a story and keep it to one screen  
+Because dashboards are meant to show important information at a glance, having all the tiles on one screen is best. Can you avoid scroll bars on your dashboard? 
 
-## Keep it to one screen
+Is the dashboard too cluttered?  Remove all but essential information that can be easily read and interpreted.
 
-Because dashboards are meant to show important information at a glance, having all the tiles on one screen is best. Can you avoid scroll bars on your dashboard?
-
-## Make the most important information biggest
-
-If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:
-
+### Make the most important information biggest  
+If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
 ![](media/powerbi-service-tips-for-designing-a-great-dashboard/PBI_card.png)
 
-Read about [creating a tile with just a number](http://support.powerbi.com/knowledgebase/articles/436733-pin-a-number-tile-to-a-dashboard).
+But be sure to provide context.  
 
-## Put the most important information in the upper-left corner
+Read about [creating a tile with just a number](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
 
-Most people read from left to right and top to bottom, so the upper-left corner is where their eyes go first.
+### Put the most important information in the upper corner
+Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left). 
 
-## Use the right visualization for the data
+### Use the right visualization for the data  
+Avoid visualization variety for the sake of variety.  Visualizations should paint a picture and be easy to "read" and interpret.  For some data and visualizations, a simple graphic visualization is enough. But other data may call for a more-complex visualization - be sure to make use of titles and labels and other customization to help the reader.  
+   
+- [Choose appropriate data visualizations](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Be careful using charts that distort reality i.e. 3-D charts. Keep in mind that it is difficult for the human brain to interpret circular shapes. Pie charts, donut charts, gauges and other circular chart types may look pretty but they are not a data visualization best practice. 
 
-For example:
--   Line charts are often best for dates and for viewing trends over time.
+- Be consistent with chart scales on axes, chart dimension ordering and also the colors used for dimension values within charts.
 
-    ![](media/powerbi-service-tips-for-designing-a-great-dashboard/PBI_TimeLineChart.png)
-    
--   Bar and column charts are great for comparing values in categories side by side. 
+- Be sure to encode quantitative data nicely. Don’t exceed three or four numerals when displaying numbers. Display measures to one or two numerals left of the decimal point and scale for thousands or millions i.e. 3.4 million not 3,400,000.
+
+- Don’t mix levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year. 
+
+- Don’t mix big and small measures on the same scale, such as on a line or bar chart.  For example one measure can be in the millions and the other measure in the thousands.  With such a large scale, it would be difficult to see the differences of the measure that is in the thousands.  If you need to mix, choose a visualization that allows the use of a second axis.
+
+- Don’t clutter your charts with data labels that are not needed. The values in bar charts are usually well understood without displaying the actual number.
+
+- Pay attention to how [charts are sorted](powerbi-service-change-how-a-chart-is-sorted.md).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
+
+- Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.
+
+For more visualization-specific guidance, see [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md).  
  
-    ![](media/powerbi-service-tips-for-designing-a-great-dashboard/PBI_ColChart.png)
+## Learning More about Best Practice Dashboard Design  
+To master the art of excellent dashboard design, consider learning basic Gestalt Principles of visual perception and how to clearly communicate actionable information in context. Luckily, there is a plethora of resources already widely available and sprinkled within our blogs. A few of our favorite books include:
 
-    Pay attention to how [charts are sorted](http://support.powerbi.com/knowledgebase/articles/441746-change-how-a-chart-is-sorted).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis. 
-    
--   Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts.
+- *Information Dashboard Design* by Stephen Few  
+- *Show Me the Numbers* by Stephen Few  
+- *Now You See It* by Stephen Few  
+- *Envisioning Information* by Edward Tufte  
+- *Advanced Presentations* by Design by Andrew Abela   
 
--   Gauge charts are great for displaying the current status in the context of a goal.  
-    
-    ![](media/powerbi-service-tips-for-designing-a-great-dashboard/gaugechart.png)
-
-## See Also:
-
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
-
-This is a draft topic in development. Feedback? Click **Contact support** on the right side of this page.  
+## See Also  
+[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

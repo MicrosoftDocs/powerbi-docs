@@ -1,22 +1,33 @@
-<properties pageTitle="Download the Financial Sample workbook for Power BI" description="Download the Financial Sample workbook for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
-<tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
+﻿<properties 
+   pageTitle="Download the Financial Sample workbook for Power BI"
+   description="Download the Financial Sample workbook for Power BI"
+   services="powerbi" 
+   documentationCenter="" 
+   authors="mihart" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date="10/14/2015"
+   ms.author="mihart"/>
 # Download the Financial Sample workbook for Power BI
 
-[← Samples](https://support.powerbi.com/knowledgebase/topics/75672-samples)
+We have an Excel workbook of sample financial data available for download.  Here's how to download it:
 
-We have a financial excel workbook sample available for download.  Here's the information on how to download it or get the data set as shown below:
--   Financial Excel workbook  
-    This workbook has one table of data of sales and profit data by market segment and country/region.  You can [download the sample directly](http://go.microsoft.com/fwlink/?LinkID=521962), or: 
+-   Financial sample Excel workbook: [download the sample directly](http://go.microsoft.com/fwlink/?LinkID=521962).
+	This workbook has one table of data of sales and profit data by market segment and country/region.
 
-1.  Click **Get Data.**
+## See also
 
-    ![](media/powerbi-sample-download-the-financial-sample-workbook/getdata.png)
-    
-2.  Select **Excel workbook**.
-3.  At the bottom of the page, you'll see a link "Need a workbook to try? Download this one... "  Click the link to save the workbook to your OneDrive (recommended) or your desktop.
+[Get Data](powerbi-service-get-data.md)
 
-## See Also:
+[Excel data](powerbi-service-excel-data.md)
 
-[Get Data](http://support.powerbi.com/knowledgebase/articles/434354-get-data)  
-[Excel data](http://support.powerbi.com/knowledgebase/articles/424871-connect-to-excel-data)  
-[Sample datasets](http://support.powerbi.com/knowledgebase/articles/471112-sample-datasets)
+[Sample datasets](powerbi-sample-datasets.md)
+

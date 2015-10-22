@@ -1,18 +1,35 @@
-<properties pageTitle="Reports on the iPad app (Power BI for iOS)" description="Reports on the iPad app (Power BI for iOS)" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
-<tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/26/2015" ms.author="v-anpasi"/>
+﻿<properties 
+   pageTitle="Reports on the iPad app (Power BI for iOS)"
+   description="Reports on the iPad app (Power BI for iOS)"
+   services="powerbi" 
+   documentationCenter="" 
+   authors="maggiesMSFT" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date="10/14/2015"
+   ms.author="maggies"/>
 # Reports on the iPad app (Power BI for iOS)
 
-[← iPad app (Power BI for iOS)](https://support.powerbi.com/knowledgebase/topics/77999-ipad-app-power-bi-for-ios-preview)
 
-A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You [create and customize reports in Power BI](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi).
+A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You [create and customize reports in Power BI](powerbi-service-reports.md).
 
 Then you view and interact with reports on the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS.
 
 ## Open reports from your dashboard
 
--   Tap a tile on a dashboard, and tap **Open report**.
+-   Tap **Reports** at the top of the app home page.
 
-    > NOTE: Not all tiles can open in a report. For example, to open the sample reports, you need to sign in to Power BI. Also, tiles created from Salesforce or created with Q&A don't open reports.
+-   Or tap a tile on a dashboard, and tap **Open report**.
+
+    >**NOTE**: Not all tiles can open in a report. For example, to open the sample reports, you need to sign in to Power BI. Also, tiles created from Salesforce or created with Q&A don't open reports.
 
 ## See other pages in the report
 
@@ -20,10 +37,10 @@ Then you view and interact with reports on the [iPad app for Microsoft Power BI]
 
 ## Cross-filter a report page
 
--   Tap a bar or column in a chart.  
-    
+-   Tap a bar or column in a chart.
+
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iOS_RptHiliteCrop2.png)
-    
+
     Tapping the Urban column in one chart highlights related values in the other charts. Because the % Unit Market Share YOY chart shows percentages, some highlighted values are larger than the total values and some are smaller. 
 
 ## Sort a chart
@@ -38,7 +55,7 @@ To reverse the sort order, tap **asc** or **desc**.
 
 Tap the chart, then tap the multiselect icon ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_MultiselectIcon2.png) in the upper-right corner of the chart.
 
-![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iOS_MultiselectCrop.png)
+![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iOS_MultiselectCrop.PNG)
 
 When the icon is blue, you can select more than one column at a time.
 
@@ -46,9 +63,9 @@ When the icon is blue, you can select more than one column at a time.
 
 ## Drill down and up in a chart
 
-Sometimes you can drill down in charts to see the values that make up one part of the chart. You can drill up and down in the iPad app, but you can't add it to a visualization. You can only [add drill down to a visualization](http://support.powerbi.com/knowledgebase/articles/467072-drill-down-in-a-visualization) in a report in Power BI. 
+Sometimes you can drill down in charts to see the values that make up one part of the chart. You can drill up and down in the iPad app, but you can't add it to a visualization. You can only [add drill down to a visualization](powerbi-service-drill-down-in-a-visualization.md) in a report in Power BI. 
 
-> **Note:** Currently, drill-down doesn't work on maps in the iPad.
+>**Note:** Currently, drill-down doesn't work on maps in the iPad.
 
 -   Double-tap a bar, column, or other part of a chart to drill into the details for that part — in this case, the **Functional** columns.
 
@@ -58,6 +75,5 @@ Sometimes you can drill down in charts to see the values that make up one part o
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillUp.png)
 
-More about [the iPad app](http://support.powerbi.com/knowledgebase/articles/467172-the-ipad-app-for-power-bi-preview) for Power BI.
+More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
 
-This is a draft topic in development. Feedback? Click **Contact support** on the right side of this page.

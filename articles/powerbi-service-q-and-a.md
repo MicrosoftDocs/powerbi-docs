@@ -1,55 +1,55 @@
-<properties pageTitle="Release notes for Power BI" description="Release notes for Power BI" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/>
-<tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-# Release notes for Power BI
+﻿<properties 
+   pageTitle="Q&A in Power BI"
+   description="Q&A in Power BI"
+   services="powerbi" 
+   documentationCenter="" 
+   authors="mihart" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date="10/14/2015"
+   ms.author="mihart"/>
 
-[← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
+# Q&A in Power BI
 
-Check this page for known issues and recently-released features in the Power BI.
+Sometimes the fastest way to get an answer from your data, is to ask a question using natural language.  For example, "what were total sales last year."  Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
-## Recent Updates
+![](media/powerbi-service-q-and-a/PBI_QA_BoxSalesSqFt.png)
 
-**May 13, 2015**
+Asking the question is just the beginning.  Have fun traveling through your data refining or expanding your question, uncovering trust-worthy new information, zeroing in on details and zooming out for a broader view. You’ll be delighted by the insights and discoveries you make.
 
--   With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard.﻿ This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](https://support.powerbi.com/knowledgebase/articles/581499-azure-sql-database-auditing-connector-for-power-bi).
--   You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) and [documentation](https://support.powerbi.com/knowledgebase/articles/581421-azure-sql-database-with-direct-connect) for more information.
+The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous. 
 
-**May 7, 2015**
+## For more details about Power BI Q&A:
 
--   You can now use the **Visual Studio Online** content pack for Power BI to gain insights into your git and TFVC team projects. You can read our [documentation](https://support.powerbi.com/knowledgebase/articles/543394) or [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/07/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) for more information.
--   We updated the our look to a new modern design, a look that is fresh and distinctive while keeping your focus on what matters: your data and your insights.
+[How to use Q&A](powerbi-service-how-to-use-q-and-a.md)
+Step by step instructions for using Q&A and an overview of how it all works.
+[Tips for asking questions in Q&A](https://support.powerbi.com/knowledgebase/articles/664393)
+Learn how to talk to Q&A to get the best possible results.
 
-**April 28, 2015**
+[Tutorial: Use Power BI Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)
+Use Q&A in a realistic industry tutorial.
 
--   ﻿Power BI is now available in **44 languages**. Read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/28/power-bi-preview-now-available-in-your-language.aspx) to see the full list.
+[Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+Are you the person creating datasets and data models?  Then this topic is for you.
 
-**April 23, 2015
-**
-
--   You can now visualize and explore your **Microsoft Dynamics Marketing** data with our new content pack! You can read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) and [documentation](http://support.powerbi.com/knowledgebase/articles/462793-microsoft-dynamics-marketing) for more information.﻿
-
-**April 15, 2015**
--   You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) and [documentation](http://support.powerbi.com/knowledgebase/articles/511323-google-analytics-connector-for-power-bi) for more information.
--   You can now **pin all cards** expect those containing KPIs and Images from Q&A and reports
--   You can now **use cards in Q&A** by using the phrase 'as card' at the end of your query
-
-**March 31, 2015
-**
--   **GitHub **dashboards have new visuals that focus on community building, improved calculations, and improved layout
--   **SendGrid **dashboards have new visuals and a new layout to help find better insights
--   You can now use** treemaps in Q&A** by using the phrase 'as treemap' at the end of your query
--   You can now **pin treemaps** from Q&A and reports 
--   Lots of bug fixes!
-
-**February 25, 2015**
--   Bug fixes and improvements to user experience and reliability. 
-
-**January 26, 2015**
--   Service usability and reliability has been improved through various bug fixes. ﻿
-
-**﻿December 11, 2014
-**
--   Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
+[Use Q&A with Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
+How does Q&A communicate with Salesforce.
 
 ## See Also:
 
-[Get started with Power BI](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+[Get started with Power BI](powerbi-service-get-started.md)
+
+[Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
+
+[Make your data work well with Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
+

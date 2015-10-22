@@ -1,41 +1,65 @@
-<properties pageTitle="Reports in Power BI Preview" description="Reports in Power BI Preview" services="powerbi" documentationCenter="" authors="v-anpasi" manager="mblythe" editor=""/> 
-<tags ms.service="powerbi" ms.devlang="NA" ms.topic="article" ms.tgt_pltfrm="NA" ms.workload="powerbi" ms.date="06/16/2015" ms.author="v-anpasi"/>
-# Reports in Power BI Preview
-[← Getting Started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
+﻿<properties 
+   pageTitle="Reports in Power BI"
+   description="Reports in Power BI"
+   services="powerbi" 
+   documentationCenter="" 
+   authors="mihart" 
+   manager="mblythe" 
+   editor=""
+   tags=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date="09/28/2015"
+   ms.author="mihart"/>
+# Reports in Power BI
 
-Dashboards, reports, and datasets are at the heart of Power BI Preview. A **report** is a multi-perspective view into your data, with visualizations that represent different findings and insights from that data.  A report may have a single visualization or pages full of visualizations.
-![](media/powerbi-service-reports/pbi_Nancy_report.png)
+Dashboards, reports, and datasets are at the heart of Power BI. A **report** is a multi-perspective view into your data, with visualizations that represent different findings and insights from that data.  A report may have a single visualization or pages full of visualizations.
 
-Need help understanding the building blocks that make up Power BI?  See [Power Bi Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts).
+![](media/powerbi-service-reports/reportview.png)
 
-You can [create a report from scratch](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report)or [have one shared with you](http://support.powerbi.com/knowledgebase/articles/431008-share-a-dashboard). And for some kinds of data, Power BI Preview will [create a report for you as it adds the dataset](http://support.powerbi.com/knowledgebase/articles/434354-get-data).  
+Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
+
+You can [create a report from scratch](powerbi-service-create-a-new-report.md) or [have one shared with you](powerbi-service-share-unshare-dashboard.md). And for some kinds of data, Power BI will [create a report for you as it adds the dataset](powerbi-service-get-data.md).  
 
 ## For more information about reports:
 
-*What are the Power BI Preview building blocks?* for a description of how reports fit into Power BI.  
+[**Creating a report**](powerbi-service-create-a-new-report.md)**  **requires a [dataset](powerbi-service-get-data.md).  
 
-[**Creating a report**](http://support.powerbi.com/knowledgebase/articles/475616-create-a-new-power-bi-report) requires a [dataset](http://support.powerbi.com/knowledgebase/articles/434354-get-data).  
+View and interact with reports in either [**Reading View**](powerbi-service-interact-with-a-report-in-reading-view.md)or **[Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)**. Editing View is only available to a report creator and has many more options for creating and modifying reports.
 
-View and interact with reports in either [**Reading View**](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)or **[Editing View](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report)**. Editing View is only available to a report creator and has many more options for creating and modifying reports.  
+Did you participate in the Power BI Preview?  [Find out how to upgrade to the new report canvas](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
 
-**[Filter and highlight data in reports](http://support.powerbi.com/knowledgebase/articles/467092-about-filters-and-highlighting-in-reports)**-- create them in [Editing View](http://support.powerbi.com/knowledgebase/articles/443094-edit-a-report) and interact with them in [Reading View.](http://support.powerbi.com/knowledgebase/articles/445094-interact-with-a-report-in-reading-view)  
+[The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md) - including the Visualizations pane, Filters pane, and Fields pane.
 
-[**Add a page to a report**](http://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report) if you need more room.  
+**[Filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)** -- create them in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and interact with them in [Reading View.](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-[**Delete a page from a report**](http://support.powerbi.com/knowledgebase/articles/474805-delete-a-page-from-a-power-bi-report), even if it's not blank.  
+[**Add a page to a report**](powerbi-service-add-a-page-to-a-report.md) if you need more room.
 
-**[Renaming a report ](http://support.powerbi.com/knowledgebase/articles/474347-rename-a-report)** doesn't change the name of any associated dashboard or dataset.  
+[Reorder report pages](powerbi-service-reorder-pages-in-a-report.md) to put the most-important information first.
 
-[**Save a report**](http://support.powerbi.com/knowledgebase/articles/444112-save-a-report) so you can use it again and share it with coworkers. The name of the saved report is added to your Power BI Preview navigation pane, under the **Reports** heading.  
+[**Delete a page from a report**](powerbi-service-delete-a-page-from-a-report.md), even if it's not blank.
 
-**[Delete a report](http://support.powerbi.com/knowledgebase/articles/474346-delete-a-report)**if you don't need it any more. Deleting the report does not remove the dataset.
+**[Renaming a report ](powerbi-service-rename-a-report.md)**  doesn't change the name of any associated dashboard or dataset.
+
+[**Save a report**](powerbi-service-save-a-report.md) so you can use it again and share it with colleagues. The name of the saved report is added to your Power BI navigation pane, under the **Reports** heading.
+
+**[Delete a report](powerbi-service-delete-a-report.md)** if you don't need it any more. Deleting the report does not remove the dataset.
 
 ## View reports in the navigation pane
 
-Power BI Preview can have more than one report-- as you add reports, their titles are added to the list under the **Reports** heading (see screenshot below). The report you're currently viewing is highlighted. Only one report can be open at a time.  
-![](media/powerbi-service-reports/NavPane.png)
+Power BI can have more than one report-- as you add reports, their titles are added to the list under the **Reports** heading (see screenshot below). The report you're currently viewing is highlighted. New reports have a yellow asterisk. Only one report can be open at a time.
+
+![](media/powerbi-service-reports/navigator.png)
 
 ## See Also
-[Visualizations in Power BI reports](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)[](http://support.powerbi.com/knowledgebase/articles/434821-visualizations-in-power-bi-reports)  
-[Get Started with Power BI Preview](http://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi)  
-[Power BI Preview - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)
+
+[](https://support.office.microsoft.com/article/Visualizations-in-Power-BI-reports-96901475-bf5a-4fac-8042-82a0ff580767 "Visualizations in Power BI reports")[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)[](powerbi-service-visualizations-for-reports.md)
+
+[Get Started with Power BI](powerbi-service-get-started.md) 
+
+ [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
