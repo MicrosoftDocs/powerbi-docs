@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="appFigures content pack for Power BI"
    description="appFigures content pack for Power BI"
    services="powerbi" 
@@ -91,8 +91,8 @@ If data from some of your apps is not showing up in Power BI, check to make sure
 
 ![](media/powerbi-content-pack-appfigures/appFiguresDoc_11.png)
 
-### See Also
+### See also
 
 -  [Get started in Power BI](powerbi-service-get-started.md)
--  [Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
--  [Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770)
+-  [Get data in Power BI](powerbi-service-get-data.md)
+

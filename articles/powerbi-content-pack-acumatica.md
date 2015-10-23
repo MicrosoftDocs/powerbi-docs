@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Acumatica content pack for Power BI"
    description="Acumatica content pack for Power BI"
    services="powerbi" 
@@ -96,9 +96,8 @@ If you're having trouble connecting, please confirm with your admin your versio
 
 [Get started in Power BI](powerbi-service-get-started.md)
 
-﻿[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
+﻿[Get data in Power BI](powerbi-service-get-data.md)
 
-﻿[Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770)
 
  
 

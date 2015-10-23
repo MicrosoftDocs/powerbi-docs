@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="GitHub content pack for Power BI"
    description="GitHub content pack for Power BI"
    services="powerbi" 
@@ -97,4 +97,4 @@ If necessary, you can verify your GitHub credentials.
 
 ## See also
 - [Get started with Power BI](powerbi-service-get-started.md)
-- [Get data](http://support.powerbi.com/knowledgebase/topics/63369-get-data)
+- [Get data](powerbi-service-get-data.md)
