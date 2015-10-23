@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Salesforce content pack for Power BI"
    description="Salesforce content pack for Power BI"
    services="powerbi" 
@@ -83,5 +83,5 @@ Requirements:
 
 [Get Started with Power BI](powerbi-service-get-started.md)
 
-[Get Data](http://support.powerbi.com/knowledgebase/topics/63369-get-data)
+[Get Data](powerbi-service-get-data.md)
 
