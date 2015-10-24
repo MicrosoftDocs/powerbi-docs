@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Favorites on the iPad app (Power BI for iOS)"
    description="Favorites on the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -19,7 +19,7 @@
 
 # Favorites on the iPad app (Power BI for iOS)
 
-For fast and easy access to your most interesting data, you can mark specific tiles as favorites in the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS. Only you can see your Favorites dashboard, which brings together in one place your favorite tiles from all of your dashboards.
+For fast and easy access to your most interesting data, you can mark specific tiles as favorites in the [iPad app for Microsoft Power BI](http://go.microsoft.com/fwlink/?LinkId=522062) for iOS. Only you can see your Favorites dashboard, which brings together in one place your favorite tiles from all of your dashboards.
 
 **Note** You can't see your iPad favorites on your iPhone, and vice versa.
 

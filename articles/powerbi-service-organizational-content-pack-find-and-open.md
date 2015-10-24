@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Find and open an organizational content pack"
    description="Find and open an organizational content pack"
    services="powerbi" 
@@ -38,12 +38,13 @@ Every [Power BI Pro](https://powerbi.microsoft.com/pricing) user has an organiza
 The content pack is locked when you first connect to it, but you can [edit and save your own copy](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
 ## Changes to the content pack  
-If the content pack owner changes the content pack, and:  
-- You haven't customized the content pack, the update is automatically applied.
+If the content pack owner changes the content pack, and: 
+ 
+- **You haven't customized the content pack** The update is automatically applied.
 
-- You have customized the content pack: you receive a notification that there is a new version. You can go to the content pack library and get the updated content pack without losing your personalized copy. Now you'll have two copy: your personalized copy and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone. Tiles pinned from other reports will still render. 
+- **You have customized the content pack** You receive a notification that there is a new version. You can go to the content pack library and get the updated content pack without losing your personalized copy. Now you'll have two copy: your personalized copy and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone. Tiles pinned from other reports will still render. 
 
-## See Also  
+## See also  
 [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

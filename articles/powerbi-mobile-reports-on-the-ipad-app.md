@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Reports on the iPad app (Power BI for iOS)"
    description="Reports on the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -21,7 +21,7 @@
 
 A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You [create and customize reports in Power BI](powerbi-service-reports.md).
 
-Then you view and interact with reports on the [iPad app for Microsoft Power BI](http://support.powerbi.com/knowledgebase/topics/69272-ipad-app-for-power-bi) for iOS.
+Then you view and interact with reports on the [iPad app for Microsoft Power BI](http://go.microsoft.com/fwlink/?LinkId=522062) for iOS.
 
 ## Open reports from your dashboard
 
