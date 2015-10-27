@@ -1,9 +1,9 @@
 ﻿<properties
    pageTitle="Power BI Analysis Services Connector in-depth"
    description="Power BI Analysis Services Connector in-depth"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="10/27/2015"
    ms.author="asaxton"/>
 
 # Power BI Analysis Services Connector in-depth
@@ -169,7 +169,7 @@ Power BI Analysis Services Connector communicates on outbound ports: TCP 443 (de
 
 **Question:** If users share dashboards connected to Analysis Services, will those other users be able to see the data even though they might not have the same the permissions.
 
-**Answer:** Yes. In Power BI, sharing means sharing your own data. This is the current behavior, but could change at any time.
+**Answer:** For a dashboard connected to Analysis Services, users will only see the data they have access to. If the users do not have the same permissions, they will not be able to see any data.
 
 **Question:** How can I find out what effective username is being passed to my on-premises Analysis Services server?
 
