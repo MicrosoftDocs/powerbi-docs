@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="iPad and iPhone apps (Power BI for iOS)"
    description="iPad and iPhone apps (Power BI for iOS)"
    services="powerbi" 
@@ -36,9 +36,9 @@ Get started with the [iPhone app for Power BI for iOS](powerbi-mobile-ipad-app-
 
 ## Get started with Power BI
 
-Start by [getting your data](http://support.powerbi.com/knowledgebase/topics/63369-get-data) from sources as varied as Excel spreadsheets, SQL Server Analysis Services, Salesforce, and and GitHub.
+Start by [getting your data](powerbi-service-get-data.md) from sources as varied as Excel spreadsheets, SQL Server Analysis Services, Salesforce, and and GitHub.
 
-Then bring your data together by creating [dashboards](http://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards) and [reports](http://support.powerbi.com/knowledgebase/topics/65157-all-about-reports) in Power BI.
+Then bring your data together by creating [dashboards](powerbi-service-dashboards.md) and [reports](powerbi-service-reports.md) in Power BI.
 
 Now experience them in the iPad and iPhone apps.
 

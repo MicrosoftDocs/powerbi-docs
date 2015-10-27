@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Introduction to organizational content packs"
    description="Introduction to organizational content packs"
    services="powerbi" 
@@ -28,7 +28,7 @@ By default, the dashboards and reports are read-only but members can unlock and 
 
 All group members see the same data (unless it's an SSAS data source, in which case privileges are inherited with the data source).
 
-This is different from [dashboard sharing](powerbi-service-share-unshare-dashboard.md), which gives read-only access to a dashboard and associated reports. Read [How should I share my dashboard?](https://support.powerbi.com/knowledgebase/articles/) to decide on the best for your situation. 
+This is different from [dashboard sharing](powerbi-service-share-unshare-dashboard.md), which gives read-only access to a dashboard and associated reports. Read [How should I share my dashboard?](powerbi-service-how-should-I-share-my-dashboard.md) to decide on the best for your situation. 
 
 -   [What is a content gallery?](651040.html#cg)
 -   Data security and SSAS tabular data connections
