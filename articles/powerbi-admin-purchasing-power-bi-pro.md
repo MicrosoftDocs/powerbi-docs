@@ -21,7 +21,7 @@
 
 You can purchase Power BI Pro directly through the Power BI website or through your Microsoft representative or partner.
 
-To purchase directly through the Power BI website, follow these steps:
+To purchase directly through the Power BI website, follow these steps: 
 
 1.  Go to https://app.powerbi.com.
 

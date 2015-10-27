@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="UserVoice content pack for Power BI"
    description="UserVoice content pack for Power BI"
    services="powerbi" 
@@ -84,13 +84,11 @@ If you get a "login failed" error after using your UserVoice credentials to logi
 
 "**Oops something went wrong**"
 
-If you get this error message while the data is being loaded, make sure your UserVoice account hasn't exceeded its monthly APIs usage quota. If all looks good, try connecting again. If the problem persists, please contact Power BI support at http://support.powerbi.com.
+If you get this error message while the data is being loaded, make sure your UserVoice account hasn't exceeded its monthly APIs usage quota. If all looks good, try connecting again. If the problem persists, please contact Power BI support at [http://support.powerbi.com](http://support.powerbi.com).
 
 ### See also
 
-[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
-
-[Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770)
+[Get data in Power BI](powerbi-service-get-data.md)
 
 
 

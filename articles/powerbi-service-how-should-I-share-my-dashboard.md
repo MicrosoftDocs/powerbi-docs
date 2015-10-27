@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="How should I share my dashboard?"
    description="How should I share my dashboard?"
    services="powerbi" 
@@ -20,20 +20,23 @@
 # How should I share my dashboard?  
 
 In Power BI you can share your dashboards several different ways. Each has its advantages. You can:
+
 -   Share a dashboard with your colleagues.
 -   Create a dashboard in a group
-    And then share it with colleagues outside the group
+	
+	And then share it with colleagues outside the group
 -   Create a content pack and publish it to your whole organization or to a security or distribution list.
 
 In any case, your colleagues need to [sign up for Power BI](https://powerbi.microsoft.com/) before they can see your dashboards.
 
 Here's a summary of how sharing works, depending on which you do. Details follow below. 
 
-| Your colleagues can | When you: Share a dashboard | When you: Create a dashboard in a group| When you: Publish a content pack |
-|---|---|---|---|
-| View and interact | yes | yes | yes |                                                                                                                                                            
+| Your colleagues | When you: | When you: Create a | When you: Publish |
+| can | Share a dashboard | dashboard in a group | a content pack |
+| --------------- | --------  | ------------ | ---------------- |
+| View and interact | yes | yes | yes |                                                                                                                                                       
 | Edit the original | no | yes | no |
-| Create their own copies | no | yes | yes |                                                                                                                                
+| Create their own copies | no | yes | yes |
 
 ## Share a dashboard with coworkers  
 When you share a dashboard with your colleagues, they can view it and interact with it, but can't edit it. They can see the same data that you see in the dashboard and reports. They can share the dashboard with other colleagues, if you allow them to. More about [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).

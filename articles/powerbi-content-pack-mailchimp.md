@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="MailChimp content pack for Power BI"
    description="MailChimp content pack for Power BI"
    services="powerbi" 
@@ -59,13 +59,12 @@ Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services
 
 	- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
-### See Also
+### See also
 
 [Get started in Power BI](powerbi-service-get-started.md)
 
-﻿[Get data in Power BI](https://support.powerbi.com/knowledgebase/topics/63369)
+﻿[Get data in Power BI](powerbi-service-get-data.md)
 
-﻿[Services in Power BI](https://support.powerbi.com/knowledgebase/topics/88770)
 
 ﻿
 
