@@ -26,7 +26,7 @@ Power BI groups offer a powerful collaborative experience built on Office 365 gr
 
 Groups in Power BI bring you and your colleagues together to collaborate, communicate, and connect with your data across Office 365. Create a group in either Power BI or Office 365. Then invite co-workers into this group workspace where you can collaborate on your organization’s shared dashboards, reports, and datasets.  
 
-Groups and [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) complement each other. When you create a content pack from within the group workspace, everyone in that group can edit the content pack. Read [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) to decide which is best for your situation.   
+Groups and [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) complement each other. When you create dashboards, reports, or content packs in the group workspace, you can decide that everyone in that group can edit the group's content, or you can let some members edit, and others just read. See [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) for more about other ways to share.  
 
 Collaboration doesn’t end with Power BI. It continues with other Office 365 group services, like sharing files on OneDrive for Business, conversations in Exchange, calendar, tasks, and so on.
 
