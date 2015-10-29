@@ -1,13 +1,13 @@
-﻿<properties 
+<properties
    pageTitle="Bring whole Excel files into Power BI"
-   description="Bring whole Excel files into Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="Minewiskan" 
-   manager="mblythe" 
+   description="Learn how to bring whole Excel files into Power BI"
+   services="powerbi"
+   documentationCenter=""
+   authors="Minewiskan"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -94,31 +94,9 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
     Or select **Edit in Excel** if you have Excel installed on your computer.
 
 
-### Edit, share, or print a workbook in Excel Online
-
-
-After you open a workbook in Excel Online, you can edit, share, or print it from there. See [basic tasks in Excel Online](https://support.office.com/article/Basic-tasks-in-Excel-Online-0dcac23b-8430-4289-87a5-f2c97bdb49e1) for details.
+## Share your workbooks in content packs
+With organizational content packs, you can share workbooks you connect to on OneDrive for Business with others in your organization. To learn more, see [Organizational content packs: an introduction](powerbi-service-organizational-content-packs-introduction.md).
 
 ## Refresh data in an intact Excel file
 
-
-You can set up a scheduled data refresh for your Excel file, or you can refresh it whenever you want. When you refresh the Excel file in Power BI, you're also refreshing it in OneDrive for Business -- it's one and the same file.
-
-1.  Select the file \> **Schedule Refresh** or **Refresh Now**.
-
-    ![](media/powerbi-bring-in-whole-excel-files/PBI_XLFF_Menu.png)
-
-2.  Follow the steps in [Refresh data in Power BI](powerbi-refresh-data.md).
-
-### About refreshing whole Excel files in Power BI
-
--   To set scheduled refresh for an Excel file, you need edit permissions.
-
--   Power BI can't refresh a workbook if it's checked out in Office 365, or open for editing.
-
--   Power BI can refresh the same data connections in whole Excel workbooks as in Excel workbooks you're using as datasets for Power BI. See [Refresh data in Power BI](powerbi-refresh-data.md) for more information. 
-
--   If you set up data refresh using the [Data Management Gateway](https://support.office.com/article/Introduction-to-Data-Management-Gateway-22C313B9-E758-435B-AB9E-AD5D6236D06F) in the previous version of Power BI for Office 365, the new Power BI can refresh workbooks using that gateway.
-
--   If the workbook data source is on premises, you can set up a [Power BI Personal Gateway](powerbi-personal-gateway.md) to refresh data. 
-
+You can set up a scheduled data refresh for your Excel file on OneDrive for Business, or you can refresh it whenever you want. When you refresh the Excel file in Power BI, you're also refreshing it in OneDrive for Business -- it's one and the same file. To learn more, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](https://https://support.powerbi.com/knowledgebase/articles/753627-refresh-a-dataset-created-from-a-power-bi-desktop).
