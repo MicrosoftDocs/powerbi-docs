@@ -6,8 +6,6 @@
 
 ##General guidance
 
-- [Contribute to Power BI documentation](./../README.md)
-
 - [Content channel guidance](./content-channel-guidance.md)
 
 - [Style and voice](./style-and-voice.md)
@@ -19,7 +17,7 @@
 
 - [Git commands for creating a new article or updating an existing article](./git-commands-for-master.md)
 
-- [How to undo almost anythin with git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+- [How to undo almost anything with git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
 - [Git troubleshooting](https://microsoft.sharepoint.com/teams/azurecontentguidance/wiki/Pages/Git%20Troubleshooting.aspx)
 

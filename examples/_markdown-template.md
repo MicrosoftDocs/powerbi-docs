@@ -102,10 +102,10 @@ Quisque commodo eros vel lectus euismod auctor eget sit amet leo. Proin faucibus
 Vestibul ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ultricies, ipsum vitae volutpat hendrerit, purus diam pretium eros, vitae tincidunt nulla lorem sed turpis: [Link 3 to another azure.microsoft.com documentation topic](storage-whatis-account.md).
 
 <!--Image references-->
-[5]: ./media/markdown-template-for-new-articles/octocats.png
-[6]: ./media/markdown-template-for-new-articles/pretty49.png
-[7]: ./media/markdown-template-for-new-articles/channel-9.png
-[8]: ./media/markdown-template-for-new-articles/copytemplate.png
+[5]: ./media/_markdown-template/octocats.png
+[6]: ./media/_markdown-template/pretty49.png
+[7]: ./media/_markdown-template/channel-9.png
+[8]: ./media/_markdown-template/copytemplate.png
 
 <!--Reference style links - using these makes the source content way more readable than using inline links-->
 [gog]: http://google.com/
