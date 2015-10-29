@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Tutorial: create and publish an organizational content pack"
    description="Tutorial: create and publish an organizational content pack"
    services="powerbi" 
@@ -17,7 +17,7 @@
    ms.date="10/15/2015"
    ms.author="maggies"/>
 
-# Tutorial: create and publish an organizational content pack  
+# Tutorial: Create and publish an organizational content pack  
 
 In this tutorial we'll create a new organizational content pack, restrict access to the Product Launch group, and publish it to Power BI.
 
@@ -47,10 +47,13 @@ Want to follow along? Go to **Get Data > Samples > Opportunity Analysis Sample**
 
 	e.  Select the **Opportunity Analysis Sample** dashboard to add it to the content pack.  Power BI automatically adds the associated report and dataset. 
 
-	>**Note:**  
-	>Only dashboards and reports that you can edit are listed. Thus, any that were shared with you aren't in the list.
+	>**Note:**  Only dashboards, reports, and workbooks that you can edit are listed. Thus, any that were shared with you aren't in the list.
 
        ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/cpwindow.png) 
+
+	f. If you have Excel workbooks, you see them under Reports, with an Excel icon. You can add them to the content pack, too.
+
+	If members of the group can't view the workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
 
 3.  Select **Publish** to add the content pack to the group's organizational content pack library.  
 
@@ -63,14 +66,14 @@ Want to follow along? Go to **Get Data > Samples > Opportunity Analysis Sample**
 5.  They see your content pack.  
 	![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/cp_contentpack.png) 
 
-	>**Tip:**  
->The URL displayed in your browser is an unique address for this content pack.  Want to tell your coworkers about this new content pack?  Paste the URL into an email.
+	>**TIP:** The URL displayed in your browser is an unique address for this content pack.  Want to tell your coworkers about this new content pack?  Paste the URL into an email.
 
 6.  They select **Connect**, and now they can [work with your content pack](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
-## See Also  
+## See also  
 [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
 [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Groups in Power BI](powerbi-service-groups.md)  
+[What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
