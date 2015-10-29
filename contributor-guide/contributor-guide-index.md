@@ -19,7 +19,9 @@
 
 - [Git commands for creating a new article or updating an existing article](./git-commands-for-master.md)
 
-<!-- [Git commands for staging an article on the internal preview site](./git-commands-for-sandbox.md)-->
+- [How to undo almost anythin with git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+
+- [Git troubleshooting](https://microsoft.sharepoint.com/teams/azurecontentguidance/wiki/Pages/Git%20Troubleshooting.aspx)
 
 - [File names and locations for Power BI technical articles](./file-names-and-locations.md)
 
@@ -42,6 +44,6 @@
 
 - [Custom markdown extensions used in our technical articles](./custom-markdown-extensions.md)
 
-- [Markdown template for technical articles](../markdown templates/markdown-template-for-new-articles.md)
+- [Markdown template for technical articles](../examples/_markdown-template.md)
 
 - [Metadata for Power BI technical articles](./article-metadata.md)
