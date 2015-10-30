@@ -39,7 +39,7 @@ Then use the standard sync and pull request process so that your new images are 
 
 Example:
 
-See [the markdown template](https://raw.githubusercontent.com/azure/azure-content-pr/master/markdown%20templates/markdown-template-for-new-articles.md) for an example.  The image call references in this markdown template are designed so the calls are made to image references at the bottom of the template.
+See [the markdown template](https://raw.githubusercontent.com/azure/azure-content-pr/master/examples/_markdown-template.md) for an example.  The image call references in this markdown template are designed so the calls are made to image references at the bottom of the template.
 
 ## Guidelines specific to powerbi.microsoft.com
 
