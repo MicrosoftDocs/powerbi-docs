@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Explore a dataset in Power BI"
    description="Explore a dataset in Power BI"
    services="powerbi" 
@@ -42,7 +42,7 @@ Now you can:
 
 -   [Delete a page](powerbi-service-delete-a-page-from-a-report.md) from your report.
 
--   [Reorder pages](powerbi-service-reorder-pages-in-a-report.md) in your report.# See also
+-   [Reorder pages](powerbi-service-reorder-pages-in-a-report.md) in your report.
 
 ### See also
 

@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Delete a dataset from Power BI"
    description="Delete a dataset from Power BI"
    services="powerbi" 
@@ -19,7 +19,7 @@
 
 # Delete a dataset from Power BI
 
-Datasets can be deleted.  When you delete a dataset:
+You can delete datasets from Power BI.  When you delete a dataset:
 
 -   If the dataset connects to a file in OneDrive, the connection is deleted but the file itself is not deleted from OneDrive.
 
@@ -27,7 +27,9 @@ Datasets can be deleted.  When you delete a dataset:
 
 -   Reports that use the dataset are deleted.
 
-In the navigation pane, right-click the dataset to delete and click **Delete**.
+> NOTE: The only way to delete your connection to an organizational content pack is to delete the dataset. That deletes all related dashboards and reports.
+
+In the navigation pane, right-click the dataset you want to delete, or select the ellipsis (...) and select **Delete**.
 
 ![](media/powerbi-service-delete-a-dataset-from/PBI_DatasetFlyoutDelete.png)
 
