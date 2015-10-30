@@ -3,7 +3,7 @@
    description="Display dashboards and reports in Full Screen mode"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,9 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.author="mihart"/>
 
 # Display dashboards and reports in Full Screen mode  
-[← Getting started](https://support.powerbi.com/knowledgebase/topics/63037-getting-started)
 
 Display your dashboards and reports without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is also referred to as TV mode.
 
@@ -42,5 +41,5 @@ Some uses for Full Screen mode are:
     ![](media/powerbi-service-display-dashboard-report-in-full-screen-mode/PBI_FitToScreenIconClose.jpg)
 
 ## See Also  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

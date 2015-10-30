@@ -3,7 +3,7 @@
    description="Use DirectQuery in Power BI Desktop (Preview Feature)"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="davidiseminger" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,10 +15,9 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop (Preview Feature)  
-[← Power BI Desktop](https://support.powerbi.com/knowledgebase/topics/68530-power-bi-desktop)
 
 With Power BI Desktop, when you connect to your data source, it is always possible to import a copy of the data into the Power BI Desktop. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
 

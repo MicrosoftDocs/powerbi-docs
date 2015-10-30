@@ -15,10 +15,9 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.author="mihart"/>
 
 # Make your data work well with Q&A in Power BI  
-[← Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi)
 
 If you are a person who creates data models or builds Excel workbooks that will be used with Power BI, read on...
 
@@ -44,9 +43,9 @@ For example, if you have a table with sales data, call the table “Sales”. Co
 >If your workbook has a Power Pivot data model, you can do even more optimizations. Read more about [Demystifying Power BI Q&A part 2](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx) from our in-house team of natural language experts.
 
 ## See Also  
-[Q&A in Power BI](http://support.powerbi.com/knowledgebase/articles/474566-q-a-in-power-bi)  
-[Tutorial: Introduction to Power BI Q&A](https://support.powerbi.com/knowledgebase/articles/607113)  
-[Ask the right questions of Salesforce data in Power BI](http://support.powerbi.com/knowledgebase/articles/475138)  
-[Get Data: Salesforce](http://support.powerbi.com/knowledgebase/articles/424863-get-data-salesforce-data)  
-[Get data (for Power BI)](http://support.powerbi.com/knowledgebase/articles/434354-get-data)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Q&A in Power BI](powerbi-service-q-and-a.md)  
+[Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
+[Ask the right questions of Salesforce data in Power BI](powerbi-service-ask-the-right-questions-of-salesforce-data.md)  
+[Get Data: Salesforce](powerbi-content-pack-salesforce.md)  
+[Get data (for Power BI)](powerbi-service-get-data.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

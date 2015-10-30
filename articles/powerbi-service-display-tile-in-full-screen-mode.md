@@ -15,10 +15,9 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.author="mihart"/>
 
 # Display a dashboard tile in full screen mode (In-focus mode)  
-[← All about dashboards](https://support.powerbi.com/knowledgebase/topics/65158-all-about-dashboards)
 
 ***In-focus*** mode lets you expand a dashboard tile to full screen and see more detail.  While in In-focus mode, you can view and modify the filters that were applied when this tile visualization was created. In-focus mode is similar to using Pop out for visualizations in reports.
 
@@ -40,5 +39,5 @@
 6.  Close In-focus mode and return to the dashboard by selecting **Back to Dashboard** (in the top right corner of the tile).
 
 ## See Also  
-[Dashboards in Power BI](http://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi)  
-[Power BI - Basic Concepts](http://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts)  
+[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
