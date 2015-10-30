@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Refresh a dataset created from a Power BI Desktop file on OneDrive"
    description="Refresh a dataset created from a Power BI Desktop file on OneDrive"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -15,10 +15,9 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.author="asaxton"/>
 
 # Refresh a dataset created from a Power BI Desktop file on OneDrive  
-[← Data refresh](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh)
 
 ## What are the advantages?  
 Importing files from OneDrive is a great way to make sure the work you’re doing in Power BI Desktop stays in-sync with your Power BI site. Any data you’ve loaded into your file’s model is imported into the dataset and any reports you’ve created in the file are loaded into Reports in Power BI. If you make changes to your file on OneDrive, like add new measures, change column names, or edit visualizations, once you save, those changes will be updated in Power BI too, usually within about an hour.
@@ -35,7 +34,7 @@ Once a dataset is created in Power BI, Refresh Now and Schedule Refresh is suppo
 -   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
 
 >**Note:**  
->A [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846-power-bi-personal-gateway) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
+>A [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
 
 ## One Drive – Personal or OneDrive for Business. What’s the difference?  
 If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
@@ -51,7 +50,7 @@ If you make changes to your file on OneDrive that cannot be synchronized with th
 When you setup a refresh schedule, Power BI will connect directly to the data sources using connection information and credentials in the dataset to query for updated data. It then loads the updated data into the dataset. Any visualizations in reports and dashboards based on the dataset are also updated. Before you can setup a refresh schedule, you’ll need to do a couple of things first:
 
 ### Make sure your gateway is online (if required)  
-If your dataset connects to on-premises data sources, a [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846-power-bi-personal-gateway) must be installed and online before you can setup a refresh schedule.
+If your dataset connects to on-premises data sources, a [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed and online before you can setup a refresh schedule.
 
 In **My Workspace** &gt; **Datasets** &gt; **dataset** &gt;  **SCHEDULE REFRESH** or **REFRESH NOW** to open the Settings page, then expand **Gateway Status**. Make sure your gateway is online before trying to setup a refresh schedule.  
 	![](media/powerbi-refresh-desktop-file-onedrive/Refresh_PGOnline.png)
@@ -82,4 +81,4 @@ If you’re making changes to the Power BI Desktop file on OneDrive and saving, 
 
 Be sure to leave the **Send refresh failure notification email to me** checked. You’ll want to know right away if a scheduled refresh fails.
 
-To learn more about how to troubleshoot refresh issues, see [Troubleshooting refresh.scenarios](https://support.powerbi.com/knowledgebase/articles/742209-troubleshooting-refresh-scenarios)and [Tools for troubleshooting refresh issues](https://support.powerbi.com/knowledgebase/articles/742023-tools-for-troubleshooting-refresh-issues).
+To learn more about how to troubleshoot refresh issues, see [Troubleshooting refresh.scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)and [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md).

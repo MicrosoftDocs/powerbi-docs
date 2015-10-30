@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Refresh a dataset created from a comma separated value (.csv) file on OneDrive"
    description="Refresh a dataset created from a comma separated value (.csv) file on OneDrive"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -15,10 +15,9 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.author="asaxton"/>
 
 # Refresh a dataset created from a comma separated value (.csv) file on OneDrive  
-[← Data refresh](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh)
 
 ## What are the advantages?  
 When you connect to a .csv file on OneDrive, a dataset is created in Power BI. Data from the .csv file on OneDrive is then imported into the dataset in Power BI. Power BI then automatically connects to the file in OneDrive and refreshes any changes with the dataset in Power BI. If you edit the .csv file in OneDrive, once you save, those changes will appear in Power BI, usually within about an hour. Any visualizations in Power BI based on the dataset are automatically updated too.
@@ -44,4 +43,4 @@ If you make changes to your .csv file on OneDrive that cannot be synchronized wi
 ## When things go wrong  
 If data in the .csv file on OneDrive is changing and those changes aren’t being reflected in Power BI, it’s most likely because Power BI cannot connect to your OneDrive. Try connecting to the file and importing it again. If you’re prompted to sign in, make sure you select **Keep me signed in**.
 
-For more help, see [Tools for troubleshooting refresh issues](https://support.powerbi.com/knowledgebase/articles/742023-tools-for-troubleshooting-refresh-issues) and [Troubleshooting refresh scenarios](https://support.powerbi.com/knowledgebase/articles/742209-troubleshooting-refresh-scenarios).
+For more help, see [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md) and [Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md).

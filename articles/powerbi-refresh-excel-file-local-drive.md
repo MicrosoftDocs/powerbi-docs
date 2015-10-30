@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Refresh a dataset created from an Excel workbook on a local drive"
    description="Refresh a dataset created from an Excel workbook on a local drive"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -15,10 +15,9 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.author="asaxton"/>
 
 # Refresh a dataset created from an Excel workbook on a local drive
-[← Data refresh](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh)
 
 ## What’s supported?  
 In Power BI, Refresh Now and Schedule Refresh  is supported for datasets created from Excel workbooks imported from a local drive where Power Query (Get & Transform data in Excel 2016) or Power Pivot is used to connect to any of the following data sources and load data into the Excel data model:  
@@ -28,7 +27,7 @@ In Power BI, Refresh Now and Schedule Refresh  is supported for datasets create
 -   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
 
 >**Notes:**  
->- [A Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846-power-bi-personal-gateway) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
+>- [A Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
 >
 >- When using Excel 2013, make sure you’ve updated Power Query to the latest version.
 >
@@ -58,7 +57,7 @@ No problem. Whenever you use Power Pivot to connect to and query data from an on
 When you first import your workbook from a local drive, Power BI doesn’t actually upload the whole workbook. Power BI copies the structure and data in the workbook’s data model and then creates a dataset in Power BI. Power BI does not connect to the workbook on your local drive again unless you re-upload or re-publish. To refresh, Power BI will connect directly to the data sources using connection information and credentials in the dataset to query for updated data, then load the updated data into the dataset. Before you can setup a refresh schedule, you’ll need to do a couple of things first:
 
 ### Make sure your gateway is online (if required)  
-If your dataset connects to on-premises data sources, a [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846-power-bi-personal-gateway) must be installed and online before you can setup a refresh schedule.
+If your dataset connects to on-premises data sources, a [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed and online before you can setup a refresh schedule.
 
 In **My Workspace** &gt; **Datasets** &gt; **dataset** &gt; **SCHEDULE REFRESH** or **REFRESH NOW** to open the Settings page, then expand **Gateway Status**. Make sure your gateway is online before trying to setup a refresh schedule.  
 	![](media/powerbi-refresh-excel-file-local-drive/Refresh_PGOnline.png)
@@ -87,7 +86,7 @@ When things go wrong, it’s usually because Power BI can’t sign into data sou
 
 Be sure to leave the **Send refresh failure notification email to me checked**. You’ll want to know right away if a scheduled refresh fails.
 
-To learn more about how to troubleshoot refresh issues, see [Troubleshooting refresh.scenarios](https://support.powerbi.com/knowledgebase/articles/742209-troubleshooting-refresh-scenarios)and [Tools for troubleshooting refresh issues](https://support.powerbi.com/knowledgebase/articles/742023-tools-for-troubleshooting-refresh-issues).
+To learn more about how to troubleshoot refresh issues, see [Troubleshooting refresh.scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)and [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md).
 
 ## Important notes  
 \* Refresh is not supported for OData feeds connected to and queried from Power Pivot. When using an OData feed as a data source, use Power Query.
