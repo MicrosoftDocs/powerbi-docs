@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Excel data in Power BI"
    description="Excel data in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="Minewiskan" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="Minewiskan"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -44,17 +44,16 @@ Power BI recognizes values and supports these data types: Whole Number, Decimal 
 ## Refreshing Excel data
 
 -   When you upload an Excel workbook from your computer, you can't refresh the data. 
--   When you connect to an [Excel workbook in OneDrive](powerbi-service-refresh-excel-data-stored-in-onedrive.md), you can [refresh the data](powerbi-refresh-data.md).
+-   When you connect to an Excel workbook on OneDrive, worksheet data is automatically refreshed about every hour. If your workbook on OneDrive connnects to and queries external data sources, you can manually refresh or setup a refresh schedule. To learn more, see [Data refresh in Power BI](powerbi-refresh-data.md).
 
 ## Troubleshooting
 
 Currently, when you connect to an Excel workbook as a dataset, Power BI only imports data that is part of a named table or a data model. As a result:
 
--   If the workbook contains no named tables, Power View sheets, or Excel data models, you see this error. The article "[We couldn't find any data in your Excel workbook](powerbi-admin-troubleshoot-excel-workbook-data.md)" explains how to fix the workbook and reimport it.
+-   If the workbook contains no named tables, Power View sheets, or Excel data models, you see this error. The article "[We couldn't find any data in your Excel workbook](powerbi-admin-troubleshoot-excel-workbook-data.md)" explains how to fix the workbook and re-import it.
 
 See also
 
 -  [Get data](powerbi-service-get-data.md)
 -  [Get started with Power BI](powerbi-service-get-started.md) 
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
