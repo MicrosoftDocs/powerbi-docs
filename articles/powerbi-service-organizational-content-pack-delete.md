@@ -28,11 +28,10 @@ To delete a content pack, you must delete its dataset.  
 
 Deleting the dataset removes all associated reports and dashboards.  Remember, you can always return to the content gallery and add the content pack back to your workspace.
 
->**Note:**  
->If you create a content pack, you (and only you) can [delete it from the content pack library](powerbi-service-organizational-content-packs-manage-update-delete.md).
+>**Note:** If you create a content pack, you (and only you) can [delete it from the content pack library](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
 ## See also  
 [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
-[Get Started with Power BI](powerbi-service-get-started.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Get started with Power BI](powerbi-service-get-started.md)  
+[Power BI - basic concepts](powerbi-service-basic-concepts.md)  
 [Groups in Power BI](powerbi-service-groups.md)  
