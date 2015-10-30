@@ -50,4 +50,4 @@ If the content pack owner changes the content pack, and:
 [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-[Groups in Power BI](powerbi-service-groups.md%0A)  
+[Groups in Power BI](powerbi-service-groups.md)  
