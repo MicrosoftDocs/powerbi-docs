@@ -21,8 +21,7 @@
 
 In this tutorial we'll create a new organizational content pack, restrict access to the Product Launch group, and publish it to Power BI.
 
->**Note:**  
->Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
+>**Note:** Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
 
 Imagine you're the Release Manager at Adventureworks and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share with the other employees managing the launch. You could [share your dashboard](powerbi-service-share-unshare-dashboard.md), but then your coworkers will only have read permissions.  Instead, you want your coworkers to be able to personalize your dashboard and reports. 
 
@@ -52,6 +51,8 @@ Want to follow along? Go to **Get Data > Samples > Opportunity Analysis Sample**
        ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/cpwindow.png) 
 
 	f. If you have Excel workbooks, you see them under Reports, with an Excel icon. You can add them to the content pack, too.
+		
+		![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/PBI_OrgContPkExcel.png)
 
 	If members of the group can't view the workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
 
