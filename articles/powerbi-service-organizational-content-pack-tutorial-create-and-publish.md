@@ -52,7 +52,7 @@ Want to follow along? Go to **Get Data > Samples > Opportunity Analysis Sample**
 
 	f. If you have Excel workbooks, you see them under Reports, with an Excel icon. You can add them to the content pack, too.
 		
-		![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/PBI_OrgContPkExcel.png)
+      ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/PBI_OrgContPkExcel.png)
 
 	If members of the group can't view the workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
 
