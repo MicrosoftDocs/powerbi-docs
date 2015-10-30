@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Refresh a dataset created from an Excel workbook on OneDrive"
    description="Refresh a dataset created from an Excel workbook on OneDrive"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -15,10 +15,9 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.author="asaxton"/>
 
 # Refresh a dataset created from an Excel workbook on OneDrive  
-[← Data refresh](https://support.powerbi.com/knowledgebase/topics/107925-data-refresh)
 
 ## What are the advantages?  
 Importing your workbooks from OneDrive is a great way to make sure the work you’re doing in Excel stays in-sync with your Power BI site. With OneDrive, you have quite a few options. How data refresh works with each of those options is a little different. We’ll start with where you keep your workbooks; on a personal OneDrive or OneDrive for Business. If you keep your workbooks on OneDrive for Business, you have a couple different ways you can explore your data in Power BI. We’ll describe how data is refreshed using both. We’ll then go into how you can make sure your data from external sources is always up to date by setting up a refresh schedule.
@@ -26,7 +25,7 @@ Importing your workbooks from OneDrive is a great way to make sure the work you�
 ## One Drive - Personal  
 When you import an Excel workbook from your personal OneDrive, any data in the workbook, like tables in worksheets and/or data that is loaded into the Excel data model and the structure of the data model are imported into a new dataset in Power BI. Any Power View visualizations are re-created in Reports. Power BI automatically connects to the workbook on OneDrive about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in Power BI.
 
-If your workbook connects to external data sources to query and load data into the Excel data model, you cannot schedule refresh on that data from within Excel. You can, however, schedule refresh on the dataset in Power BI. When you manually refresh or schedule refresh on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive.  
+If your workbook connects to external data sources to query and load data into the Excel data model, you cannot schedule refresh on that data from within Excel. You can, however, schedule refresh on the dataset in Power BI. When you manually refresh or schedule refresh on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive. 
 
 Once a dataset is created in Power BI, Refresh Now and Schedule Refresh Refresh is supported for:  
 -   All online data sources shown in Power Query (Get & Transform Data in Excel 2016).
@@ -35,7 +34,7 @@ Once a dataset is created in Power BI, Refresh Now and Schedule Refresh Refresh 
 -   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
 
 >**Notes:**  
->- A [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846-power-bi-personal-gateway) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
+>- A [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
 >
 >- When using Excel 2013, make sure you’ve updated Power Query to the latest version.
 
@@ -53,9 +52,9 @@ If you have both a personal OneDrive and OneDrive for Business, it’s recommend
 ## OneDrive - Business  
 When you connect to an Excel workbook in OneDrive for Business, you’ll have two options on how to get what’s in your workbook into Power BI.
 
-[**Import Excel data into Power BI**](https://support.powerbi.com/knowledgebase/articles/424871-excel-data-in-power-bi) – When you import an Excel workbook from your OneDrive for Business, any data in the workbook, like tables in worksheets and/or data that is loaded into the Excel data model and the structure of the data model are imported into a new dataset in Power BI. Any Power View visualizations are re-created in Reports. Power BI automatically connects to the workbook on OneDrive about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in Power BI.
+[**Import Excel data into Power BI**](powerbi-desktop-import-excel-workbooks.md) – When you import an Excel workbook from your OneDrive for Business, any data in the workbook, like tables in worksheets and/or data that is loaded into the Excel data model and the structure of the data model are imported into a new dataset in Power BI. Any Power View visualizations are re-created in Reports. Power BI automatically connects to the workbook on OneDrive about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in Power BI.
 
-If your workbook on OneDrive connects to external data sources to query and load data into the Excel data model, you cannot schedule refresh on that data from within Excel. You can, however, schedule refresh on the dataset in Power BI. When you manually refresh or schedule refresh on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive.  
+If your workbook on OneDrive connects to external data sources to query and load data into the Excel data model, you cannot schedule refresh on that data from within Excel. You can, however, schedule refresh on the dataset in Power BI. When you manually refresh or schedule refresh on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive. 
 
 Once a dataset is created in Power BI, Refresh Now and Schedule Refresh is supported for:  
 -   All online data sources shown in Power Query (Get & Transform Data in Excel 2016).
@@ -64,11 +63,11 @@ Once a dataset is created in Power BI, Refresh Now and Schedule Refresh is suppo
 -   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
 
 >**Notes:**  
->- A [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846-power-bi-personal-gateway) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
+>- A [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
 >
 >- When using Excel 2013, make sure you’ve updated Power Query to the latest version.
 
-[**Connect, Manage, and View Excel in Power BI**](https://support.powerbi.com/knowledgebase/articles/640168-bring-whole-excel-files-into-power-bi) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for Business.
+[**Connect, Manage, and View Excel in Power BI**](powerbi-bring-in-whole-excel-files.md) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for Business.
 
 When you connect to an Excel workbook this way, a dataset is not created in Power BI. However, the workbook will appear in your Power BI site in My Workspace &gt; Reports with an Excel icon next to the name. Unlike with Excel Online, when you connect to your workbook from Power BI, if your workbook has connections to external data sources that load data into the Excel data model, you can setup a refresh schedule by clicking the Open Menu icon next to the workbook’s name
 
@@ -108,7 +107,7 @@ If you connect to your workbook on OneDrive for Business by using Connect, Manag
 Before you can setup a refresh schedule, you’ll need to do a couple of things first:
 
 ### Make sure your gateway is online (if required)  
-If your dataset connects to on-premises data sources, a [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846-power-bi-personal-gateway) must be installed and online before you can setup a refresh schedule.
+If your dataset connects to on-premises data sources, a [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed and online before you can setup a refresh schedule.
 
 In My **Workspace** &gt; **Datasets** &gt; **dataset** &gt;  **SCHEDULE REFRESH** or **REFRESH NOW** to open the Settings page, then expand **Gateway Status**. Make sure your gateway is online before trying to setup a refresh schedule.
 
@@ -138,7 +137,7 @@ When things go wrong, it’s usually because Power BI can’t sign into data sou
 
 Be sure to leave the **Send refresh failure notification email to me checked**. You’ll want to know right away if a scheduled refresh fails.
 
-To learn more about how to troubleshoot refresh issues, see [Troubleshooting refresh.scenarios](https://support.powerbi.com/knowledgebase/articles/742209-troubleshooting-refresh-scenarios)and [Tools for troubleshooting refresh issues](https://support.powerbi.com/knowledgebase/articles/742023-tools-for-troubleshooting-refresh-issues).
+To learn more about how to troubleshoot refresh issues, see [Troubleshooting refresh.scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)and [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md).
 
 ## Important notes  
 \* Refresh is not supported for OData feeds connected to and queried from Power Pivot. When using an OData feed as a data source, use Power Query.
