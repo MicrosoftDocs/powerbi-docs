@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="What's new in the mobile apps for Power BI"
    description="What's new in the mobile apps for Power BI"
    services="powerbi" 
@@ -18,6 +18,22 @@
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## October 2015
+
+### All Power BI mobile apps 
+
+- Line charts with a percentage-based Y-axis now calculate the visual range according to your actual data. The graph now starts from the lowest data point in the chart, instead of from a default value.
+
+- Line, column, and bar charts can now have data labels. 
+
+    ![](media/powerbi-mobile-whats-new-in-the-mobile-apps/PBI_MobileLineChart.png)
+
+### iPhone
+- Stay up to date with your groups' newest dashboards -- receive notifications on your iPhone each time a team member adds a dashboard to one of your groups.
+
+    ![](media/powerbi-mobile-whats-new-in-the-mobile-apps/PBI_iPh_GrpDashAlertCrop.png)
+
 
 ## September 2015  
 Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and Windows.
