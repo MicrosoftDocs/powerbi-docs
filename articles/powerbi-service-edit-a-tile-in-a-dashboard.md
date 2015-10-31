@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
    description="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -22,7 +22,7 @@ You can change the look and default behavior of a tile in a dashboard:
 
 -   [Pin the tile to a different dashboard](424878.html#different)
 
--   [](424878.html#different)[Rename the tile](424878.html#rename)
+-   [Rename the tile](424878.html#rename)
 
 -   [Move the tile](424878.html#move)
 
@@ -91,4 +91,3 @@ By default, clicking a tile takes you to the report where the tile was created o
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
