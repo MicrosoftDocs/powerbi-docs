@@ -1,10 +1,10 @@
-﻿<properties 
+﻿<properties
    pageTitle="Delete a report from Power BI"
    description="Delete a report from Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
  

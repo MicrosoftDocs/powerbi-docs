@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Interact with a report in Reading View in Power BI"
    description="Interact with a report in Reading View in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -19,20 +19,20 @@
 
 # Interact with a report in Reading View in Power BI
 
-Reports in Power BI Reading View are very interactive. When you highlight a value in one visualization, it can change the values in the rest of the page. You can filter values on a page, and change the way values are sorted in a visualization. It's a great way to play with and get to know your data. 
+Reports in Power BI Reading View are very interactive. When you highlight a value in one visualization, it can change the values in the rest of the page. You can filter values on a page, and change the way values are sorted in a visualization. It's a great way to play with and get to know your data.
 
 Reports [shared with you](powerbi-service-share-unshare-dashboard.md)can only be opened in Reading View, not Editing View.
 
 - **Adjust the display dimensions**  
-   Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  If so, you can do the following: 
+   Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  If so, you can do the following:
 
- - Fit to Page: scale content to best fit the page 
- - Fit to Width: Scale content to the width of the page 
+ - Fit to Page: scale content to best fit the page
+ - Fit to Width: Scale content to the width of the page
  - Actual Size: Display content at full size  
 
-  In Reading View, the display option you select is temporary - it is not saved when you close the report. 
+  In Reading View, the display option you select is temporary - it is not saved when you close the report.
 
-For more information: Tutorial on changing the display settings for a report. 
+For more information: Tutorial on changing the display settings for a report.
 
 
 - **Highlight the related visualizations on a page**.
@@ -69,6 +69,12 @@ For more information: Tutorial on changing the display settings for a report.
 
     ![](media/powerbi-service-interact-with-a-report-in-reading-view/IV1980RZ.png)
 
+- **Pop out a visualization**
+
+  Hover over a visualization and select the Pop-out icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PopOutIcon.jpg). When you pop-out a visualization, it expands to fill the entire report canvas.
+
+  ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PoppedOut.jpg)
+
 For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
 ## See Also:
@@ -76,4 +82,3 @@ For more information, see [Add a filter to a report](powerbi-service-add-a-filte
 [Reports in Power BI](powerbi-service-reports.md)
 
  [About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
-

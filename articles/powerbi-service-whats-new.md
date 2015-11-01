@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="What's new in the Power BI service"
    description="What's new in the Power BI service"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -22,6 +22,43 @@
 Check this page for known issues and recently-released features in Power BI.
 
 ## Recent Updates  
+**October 20, 2015**
+- Read-only members in Power BI groups
+- Featured questions in Q&A
+- Full screen pop-out mode for report visualizations
+For all the details, visit the [Power BI blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/power-bi-weekly-service-update-1020.aspx)
+
+**October 13, 2015**
+- Full screen mode to display your dashboards and reports on big screen TVs
+- 'Fit to screen’ support in full screen mode to display your entire dashboard in the available space
+- In-focus mode to get more details on dashboard tiles
+- Ability to view last update time for each tile
+- Ability to view the source for each tile
+- Planview Enterprise is an end-to-end portfolio and resource management solution that connects strategy to execution, improving decision-making across the enterprise. The Planview Enterprise content pack for Power BI allows you to visualize your resource and work management data in an entirely new way. Simply sign in with your credentials and begin to interactively explore your portfolio investment spend, budget status, and how well your projects align with strategic priorities.
+View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/14/analyze-your-planview-enterprise-data-in-power-bi.aspx) and [online documenation](https://support.powerbi.com/knowledgebase/articles/749148) to learn more.
+
+**October 6, 2015**
+- With Power BI Q&A, you can explore your data using simple, intuitive questions and receive answers in the form of interactive charts and graphs. With this release, we have added a feature to help you get started with Power BI Q&A, even when you do not know anything about the data. To get started with this, navigate to any dashboard and click the “How to ask” link near the Q&A question box. Power BI presents you with a number of suggestions based on your data.
+- Two weeks ago, we introduced support for inserting shapes into the report canvas in Power BI Desktop. This week, we are happy to announce that you can now add shapes to your report canvas when you are authoring and/or editing reports in the Power BI web app.
+- We have added the option to turn off email notification when you share a dashboard. Simply uncheck the “Send email notification to recipients” check box in the Power BI share dialog. You will be presented with a URL – copy and share this URL to your colleagues to give them access to the dashboard.
+- Microsoft Dynamics NAV is a<span>&nbsp;business management solution for small to medium organizations. It </span>offers customers a full solution for their business with greater control over their financials and business processes. The Power BI content pack provides out-of-box reports for Dynamics NAV users, such as sales and profit, opportunities pipeline, profitability and more. These metrics are organized on a dashboard that can be fully customized, allowing you to easily connect and immediately start exploring your data. Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/07/exploring-your-microsoft-dynamics-nav-data-with-power-bi.aspx) and [online documentation](https://support.powerbi.com/knowledgebase/articles/746439) for more information.
+
+**September 29, 2015**
+- With this week’s service update, when creating new reports you can now choose from multiple page sizes as well as define your own page size. This controls the size and aspect ratio of each page in the report.
+- We added additional visual formatting support for images and bubble charts. You can lock the aspect while resizing images to avoid image distortion and scatter chart bubbles can be configured to be filled or not.
+- Today, Power BI will send sharing invites to an alternate email address. When a dashboard is shared with you, we will send the sharing invite link both to your original email address and to your alternate email address (if you have it configured).
+- Power BI is available to all customers including those on the Dedicated on Multitenant (DonMT) O365 architecture. You will be using Power BI as a shared service in multi-tenant mode. In most cases, you can register for Power BI by following the simple [self-service-signup process](https://powerbi.microsoft.com/) – just enter your work email address, enter your name and password to get started. If you are the tenant administrator, you can assign licenses to your users using the instructions [here](http://go.microsoft.com/fwlink/?LinkId=627174).
+- Azure Audit Logs allows you to view control-plane operational logs in your Azure subscription. The Power BI Azure Audit Logs content pack can help you easily analyze and visualize the wealth of information contained in these logs. The content pack allows you to connect to your data and begin to discover insights with the out-of-the box dashboard and reports.
+Read our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/30/monitor-azure-audit-logs-with-power-bi.aspx) and [online documentation(https://support.powerbi.com/knowledgebase/articles/742695)for more information.
+
+**September 22, 2015**
+- Have more flexibility on your dashboard to customize your dashboards with additional tile sizes, ranging from 1x1 to 5x5.
+- You can now share (and un-share) a dashboard from your group space exactly the way you would do it in your own space. Once colleagues accept your sharing invitation, the shared dashboard (and their associated reports) will be added in their own space with read-only permission.
+- We added 5 additional industry related samples to Power BI: Customer Profitability, Human Resources, Opportunity Analysis, Procurement Analysis, and Sales and Marketing Sample.
+- Stripe is an advanced payment platform for online businesses. From start-ups to Fortune 500 companies, thousands of businesses use Stripe to accept payments in over 130 currencies, from anyone in the world. By connecting Power BI with your existing Stripe account, you’ll be able to use the Power BI Stripe content pack to monitor, explore, and visualize your Stripe activity.
+
+Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/monitor-and-explore-your-stripe-data-in-power-bi.aspx) or [online documentation](https://support.powerbi.com/knowledgebase/articles/737868).
+
 **September 15, 2015**
 
 -   You can now choose which dashboard you want to pin your visual to! You can choose the target dashboard from your existing dashboards, or even create a new dashboard and pin the visual to it in one shot.
