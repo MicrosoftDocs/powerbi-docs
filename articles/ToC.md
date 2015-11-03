@@ -41,6 +41,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-reports",
             "powerbi-service-dashboards",
             "powerbi-service-q-and-a",
+			"powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-whats-new",
             "powerbi-developer-getting-started-with-developer-tools-preview",
             "powerbi-frequently-asked-questions",
@@ -49,7 +50,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-browser-support",
             "powerbi-supported-languages"
           ],
-          "numberOfFeaturedArticles": 9
+          "numberOfFeaturedArticles": 14
         },
         {
           "sectionTitle": "Resources",
@@ -186,13 +187,14 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-service-how-should-i-share-my-dashboard",
 			      "powerbi-service-share-unshare-dashboard",
 			      "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
+				  "powerbi-service-display-dashboard-report-in-full-screen-mode",
 			      "powerbi-service-rename-a-dashboard",
 			      "powerbi-service-add-an-image-to-a-dashboard",
 			      "powerbi-service-create-a-big-number-tile-for-a-dashboard",
 			      "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
 			      "powerbi-service-delete-or-remove-a-dashboard"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Reports",
