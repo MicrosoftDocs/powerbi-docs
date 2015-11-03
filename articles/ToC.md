@@ -83,11 +83,10 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-service-explore-a-dataset",
             "powerbi-service-rename-a-dataset-in-power-bi",
-            "powerbi-refresh-data",
             "powerbi-service-delete-a-dataset-from",
             "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 4
         },
         {
           "sectionTitle": "Get organizational data",
@@ -163,10 +162,16 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Data refresh",
           "articles": [
-			      "powerbi-refresh-tools-for-troubleshooting-issues",
+			      "powerbi-refresh-data",
+				  "powerbi-refresh-excel-file-local-drive",
+				  "powerbi-refresh-excel-file-onedrive",
+				  "powerbi-refresh-csv-file-onedrive",
+				  "powerbi-refresh-desktop-file-local-drive",
+				  "powerbi-refresh-desktop-file-onedrive",
+				  "powerbi-refresh-tools-for-troubleshooting-issues",
 			      "powerbi-refresh-troubleshooting-refresh-scenarios"
           ],
-          "numberOfFeaturedArticles": 2
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Dashboards",
