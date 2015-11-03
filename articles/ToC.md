@@ -171,7 +171,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 				  "powerbi-refresh-tools-for-troubleshooting-issues",
 			      "powerbi-refresh-troubleshooting-refresh-scenarios"
           ],
-          "numberOfFeaturedArticles": 2
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Dashboards",
