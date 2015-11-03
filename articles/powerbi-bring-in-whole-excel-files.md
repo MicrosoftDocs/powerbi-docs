@@ -97,6 +97,6 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 ## Share your workbooks in content packs
 With organizational content packs, you can share workbooks you connect to on OneDrive for Business with others in your organization. To learn more, see [Organizational content packs: an introduction](powerbi-service-organizational-content-packs-introduction.md).
 
-## Refresh data in an intact Excel file
+## Refresh data in an Excel workbook
 
-You can set up a scheduled data refresh for your Excel file on OneDrive for Business, or you can refresh it whenever you want. When you refresh the Excel file in Power BI, you're also refreshing it in OneDrive for Business -- it's one and the same file. To learn more, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](https://https://support.powerbi.com/knowledgebase/articles/753627-refresh-a-dataset-created-from-a-power-bi-desktop).
+With Power BI, if your workbook on OneDrive for Business connects to external online or on-premises data sources, you can setup a data refresh schedule or you can refresh it whenever you want by using Refresh now. When you refresh from Power BI, you're also refreshing it in OneDrive for Business -- it's one and the same file. To learn more, see [Refresh a dataset created from an Excel workbook on OneDrive](powerbi-refresh-excel-file-onedrive.md).
