@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Create featured questions for Power BI Q&A"
    description="Create featured questions for Power BI Q&A"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="jastru"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -24,22 +24,26 @@ If you own a dataset, you can add your own featured questions to that dataset.�
 This article uses the Retail Analysis Sales sample.
 
 1.  Select the Q&A question box.   Notice that Q&A is already being helpful by displaying a list of terms that appear in the dataset.
+
 2.  To add to this list, select the gear icon in the top right corner of Power BI.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_gearIcon2.jpg)
+
 3.  Select **Settings** &gt; **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A Questions**.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_AddQuestion.jpg)
+
 4.  Select **Add a question**.
+
 5.  Type your question in the text box and select **Apply**.   Optionally, add another question by selecting **Add a question**.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_typeQuestion.jpg)
 6.  Navigate back to the Power BI dashboard for Retail Analysis Sample, and select the **How to ask** link.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_QnA_HowToAsk.jpg)
-    
+
 7.  The new featured question, **Sales by territory**, is first in the list. Select it.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_QnA_NewQuestionAppears.jpg)
 8.  The answer displays as a map visualization.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_QnA_MapViz.jpg)
 
-## See Also    
+## See Also
 [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

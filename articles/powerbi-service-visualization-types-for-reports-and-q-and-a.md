@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Visualization types in Power BI"
    description="Visualization types in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -21,7 +21,9 @@
 
 ## Power BI visualizations
 
-We'll be adding new visualizations, stay tuned!  
+We'll be adding new visualizations, stay tuned!
+
+And check out the community site, visuals.powerbi.com, where you'll find a growing list of  custom visuals you can download and use in your own dashboards and reports. Feeling creative?  Watch this video to learn how to create and add your own visuals to the community site.  
 
 ## List of visualizations available in Power BI
 
@@ -29,7 +31,9 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 
 ### Bar and column charts
 
-![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bar.png)  ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_col.png)
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bar.png) 
+
+ ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_col.png)
 
 
 ### Basic (Layered) Area chart
@@ -58,7 +62,7 @@ For more information, see [Tutorial: Combo charts in Power BI](powerbi-service-t
 
 **Tip**: Doughnut charts are similar to Pie charts.  They show the relationship of parts to a whole.
 
-For more information, see [Tutorial: Doughnut charts in Power BI](powerbi-service-tutorial-doughnut-charts.md)
+For more information, see [Tutorial: Doughnut charts in Power BI](powerbi-service-tutorial-doughnut-charts.md).
 
 ### Funnel charts
 
@@ -111,7 +115,7 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bubble.png)
 
-**Tip**: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which 
+**Tip**: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which
 
 ### Standalone images
 
@@ -137,7 +141,7 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 
 For more information, see [Tutorial Waterfall charts in Power BI](powerbi-service-tutorial-waterfall-charts.md).
 
-### 
+###
 
 ## Tell Q&A which visualization to use
 
@@ -155,7 +159,3 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 [Reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-
-
-
