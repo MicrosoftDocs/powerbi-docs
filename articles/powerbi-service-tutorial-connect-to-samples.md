@@ -17,19 +17,20 @@
    ms.date="11/01/2015"
    ms.author="mihart"/>
 
-   Want to try Power BI with sample data?  Use our sample content packs or one of our Excel datasets to learn how Power BI keeps you in the know and focused on what matters to run your business.  The samples use real data from obviEnce (www.obvience.com) that has been anonymized.
+# Tutorial: Connect to the Power BI samples  
 
-   This tutorial uses the **Retail Analysis sample** content pack. The Retail Analysis sample content pack consists of a dashboard, report, and dataset. Use these instructions to download one of the samples and then take a tour of the downloaded sample to see how Power BI highlights important retail data.
+Want to try Power BI with sample data?  Use our sample content packs or one of our Excel datasets to learn how Power BI keeps you in the know and focused on what matters to run your business.  The samples use real data from obviEnce (www.obvience.com) that has been anonymized.
+
+This tutorial uses the **Retail Analysis sample** content pack. The Retail Analysis sample content pack consists of a dashboard, report, and dataset. Use these instructions to download one of the samples and then take a tour of the downloaded sample to see how Power BI highlights important retail data.
    **Take a tour**:
 
 - [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour)
 - [HR](powerbi-sample-human-resources-take-a-tour)
 - [Opportunity Analysis](powerbi-sample-opportunity-analysis-take-a-tour)
 - [Procurement Analysis](powerbi-sample-procurement-analysis-take-a-tour)
-- - [Sales and Marketing](powerbi-sample-sales-and-marketing-take-a-tour)
+- [Sales and Marketing](powerbi-sample-sales-and-marketing-take-a-tour)
 - [Supplier Quality sample](powerbi-sample-suppllier-quality-analysis-take-a-tour)
 - [IT Spend Analysis sample](powerbi-sample-it-spend-analysis-take-a-tour)
-
 
 
 1. Select **Get Data** at the bottom of the left navigation pane.
