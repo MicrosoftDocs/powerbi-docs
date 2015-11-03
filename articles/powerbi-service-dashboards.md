@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Dashboards in Power BI"
    description="Dashboards in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -66,7 +66,3 @@ Power BI can have more than one dashboard -- as you add more dashboards, their t
 [Get Started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-
-
-

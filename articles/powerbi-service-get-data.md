@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Get data for Power BI"
    description="Get data for Power BI"
    services="powerbi" 
@@ -14,11 +14,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/02/2015"
    ms.author="maggies"/>
 # Get data for Power BI
 
-Dashboards, reports, and datasets are at the heart of Power BI. Connect to or import ***datasets*** from a variety of sources, including content packs, files and databases. Content packs provide "out of the box" connectivity to a number of popular software-as-a-service (SaaS) applications like Salesforce.
+Dashboards, reports, and datasets are at the heart of Power BI. Connect to or import ***datasets*** from a variety of sources, including content packs, files and databases. Content packs provide "out of the box" connectivity to a number of popular services such as Salesforce.
 
 
 
@@ -33,9 +33,10 @@ Power BI is designed to work well with a variety of data sources:
 
 -   [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md), designed with dashboards, reports, and datasets specifically for your group or organization.
 
--   Content packs for [SaaS applications](https://support.powerbi.com/knowledgebase/topics/88770), if you have an existing subscription to that application. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
+-   Content packs for services, if you have an existing subscription to that service. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
 
--   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
+-   Connectors to 
+-   databases and other datasets, such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
 
 **Tip**: Read [Important considerations for connecting to data.](powerbi-service-important-considerations-for-connecting-to-data-in-power-bi.md)
 
@@ -48,7 +49,7 @@ How you get data depends on the kind of data you're getting.
     ![](media/powerbi-service-get-data/PBI_GetData.png)
 
 
--   Take your pick of data sources: organizational or SaaS content packs, files, databases, and samples.
+-   Take your pick of data sources: organizational or service content packs, files, databases, and samples.
 
     ![](media/powerbi-service-get-data/PBI_GetDataStartScreen.png)
 
@@ -71,7 +72,7 @@ After you've connected to or imported a dataset, it's time to: 
 
 
 
-## See Also:
+## See also
 
 [Sample](powerbi-sample-datasets.md)[datasets](powerbi-sample-datasets.md)
 

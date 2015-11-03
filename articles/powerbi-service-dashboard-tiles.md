@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Dashboard tiles in Power BI"
    description="Dashboard tiles in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -23,6 +23,8 @@ A tile is a snapshot of your data, pinned to the dashboard. A tile can be create
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
+### [What happens when I hover over a tile?](powerbi-service-dashboard-tiles#hover)
+### [What happens when I select a tile?](powerbi-service-dashboard-tiles#select)
 
 -   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
@@ -36,12 +38,23 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 
 -   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
--   [Rename, resize, add a hyperlink, and reposition the tile](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
 
--   [Power Point - import a dashboard tile](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+### Edit and move tiles on a dashboard
+-   [Add a hyperlink to a tile](powerbi-service-edit-a-tile-in-a-dashboard.md).
+-   [Rename a tile](powerbi-service-edit-a-tile-in-a-dashboard.md). 
+
+-   [Resize a tile](powerbi-service-edit-a-tile-in-a-dashboard.md). 
+
+-   [Move a tile](powerbi-service-edit-a-tile-in-a-dashboard.md). 
+
+-   [Add a hyperlink to a tile](powerbi-service-edit-a-tile-in-a-dashboard.md).
+
+-   [View a tile in full screen mode](powerbi-service-edit-a-tile-in-a-dashboard.md). 
+
+-   [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 
 ## What happens when I hover over a dashboard tile?  
-Hovering over a tile reveals clickable icon that allow you to interact with the tile.     
+Hovering over a tile reveals clickable icon that allow you to interact with the tile.
 ![](media/powerbi-service-dashboard-tiles/hover-over-dashboard-tile.jpg)
 
 - Open the tile in full screen mode with the in-focus icon ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
@@ -50,7 +63,7 @@ Hovering over a tile reveals clickable icon that allow you to interact with the 
 
 - Edit the title with the pencil icon ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
 
-- Remove the tile from the dashboard with the delete icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg) 
+- Remove the tile from the dashboard with the delete icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg)
 
 - Resize the tile with the resize handle ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg)
 
@@ -67,7 +80,7 @@ When you select a tile, what happens next depends on how the tile was created an
 
 -   SSRS: if you have permissions, the SSRS report manager page opens.
 
-## If the tile was created in a Power BI report  
+### If the tile was created in a Power BI report  
 In the dashboard, select the tile.  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashTile.png)
 
@@ -75,9 +88,9 @@ The report opens.  If the report has more than one page, you are taken to the p
 ![](media/powerbi-service-dashboard-tiles/PBI_DashTileRept.png)
 
 >**Note:**  
->If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. 
+>If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart.
 
-## If the tile was created with Q&A  
+### If the tile was created with Q&A  
 In the dashboard, select the tile.  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashTileQnA.png)
 
