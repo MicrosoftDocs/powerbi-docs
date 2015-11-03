@@ -16,7 +16,7 @@
    ms.workload="powerbi"
    ms.date="11/01/2015"
    ms.author="mihart"/>
-
+# Add a custom visualization to a Power BI report
 
 Once downloaded, custom visualizations appear in the Visualizations pane of your report canvas. To learn how to download custom visualizations, see [Download a custom visualization from the gallery](powerbi-custom-visuals-download-from-the-gallery).
 

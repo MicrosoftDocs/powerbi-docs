@@ -46,7 +46,7 @@ This tutorial uses the **Retail Analysis sample** content pack. The Retail Analy
 
 4. Power BI installs the dashboard, report, and dataset for the Retail Analysis sample. Because they're new, they're marked with a yellow asterisk.
 
-  ![](media/powerbi-service-tutorial-connect-to-samples/PBI_NewSamples.png)
+  ![](media/powerbi-service-tutorial-connect-to-samples/PBI_newSamples.png)
 
 5. Now explore the dashboard and report on your own, or check out the [tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).
 
