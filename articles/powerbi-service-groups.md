@@ -14,15 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/02/2015"
    ms.author="maggies"/>
 
 # Groups in Power BI  
 
 Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1).
 
->**Note:**  
->Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+>**Note:** Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 Groups in Power BI bring you and your colleagues together to collaborate, communicate, and connect with your data across Office 365. Create a group in either Power BI or Office 365. Then invite co-workers into this group workspace where you can collaborate on your organization’s shared dashboards, reports, and datasets.  
 
