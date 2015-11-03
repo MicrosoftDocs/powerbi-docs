@@ -17,7 +17,7 @@
    ms.date="11/02/2015"
    ms.author="mihart"/>
 
-# Display a dashboard tile in full screen mode (In-focus mode)
+#Display a dashboard tile in full screen mode (In-focus mode)  
 
 In-focus mode lets you expand a dashboard tile to full screen and see more detail.  While in In-focus mode, you can view and modify the filters that were applied when this tile visualization was created. In-focus mode is similar to using Pop out for visualizations in reports.
 
