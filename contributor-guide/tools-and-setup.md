@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
 pageTitle="Install and set up tools for authoring in GitHub" 
 description="Tools and steps to get set up for authoring Power BI content in GitHub." 
 services="contributor-guide" 
@@ -99,7 +99,7 @@ Anybody with a GitHub account can contribute to Power BI technical content throu
 
 > [AZURE.NOTE] The powerbi-content repo will be private until further notice. You should work in the powerbi-content-pr repo.
 
-If you are a Microsoft employee working on Power BI content, you should work in our private content repository, powerbi-content-pr. Visit [http://aka.ms/azuregithub](http://aka.ms/azuregithub) to obtain the read permissions that will let you make contributions through the private repo - click **Join a Team**, and join **azure-content-read**.
+If you are a Microsoft employee working on Power BI content, you should work in our private content repository, powerbi-content-pr. Visit [http://aka.ms/azuregithub](http://aka.ms/azuregithub) to obtain the read permissions that will let you make contributions through the private repo - click **Join a Team**, and join **cloud-enterprise-read**.
 
 ## Install Git for Windows
 
