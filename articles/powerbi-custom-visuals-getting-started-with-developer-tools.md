@@ -1,13 +1,13 @@
-<properties 
-   pageTitle="Getting Started with Developer Tools (Preview)"
+<properties
+   pageTitle="Create a custom visual with the Developer Tools (Preview)"
    description="Getting Started with Developer Tools (Preview)"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="jastru"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -17,7 +17,7 @@
    ms.date="10/27/2015"
    ms.author="v-jastru"/>
 
-# Getting Started with Developer Tools (Preview)  
+# Create a custom visual with the Developer Tools (Preview)  
 [← Knowledge Base](https://support.powerbi.com/knowledgebase)
 
 We’re excited to share the first preview of **Developer Tools** available in Power BI which allow you to build and test custom visuals for use in Power BI. This article provides steps to enable the preview **Developer Tools**, provides usage instructions, and identifies supported scenarios.
@@ -92,3 +92,11 @@ After you design your custom visual, you export it to share it with others or up
 2.  In **Visuals Settings**, enter your custom visual settings.
      ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/DevToolVisualSettings.png)
 3.  Choose **Export**.
+
+## See also:
+
+[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
+
+[Custom Visualizations in Power BI](powerbi-custom-visuals.md)
+
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)

@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Review custom visuals for security and privacy"
    description="Review custom visuals for security and privacy"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="jastru"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -62,15 +62,15 @@ To evaluate the JavaScript code in a custom visual, extract the custom visual co
 The following are the contents of a pbiviz file:
 
 
-| **File** | **Description** |
-|---|---|
-| ./package.json | A manifest file that indicates which files to load for the custom visual. |
-| ./resources | Contains the CSS, TypeScript, and JavaScript used by the custom visual. |
-| ./resources/&lt;name&gt; | &lt;name&gt; is the name of the custom visual.                                                                                                                            |
+| **File**                     | **Description**                                                                                                                                                           |
+|:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ./package.json               | A manifest file that indicates which files to load for the custom visual.                                                                                                 |
+| ./resources                  | Contains the CSS, TypeScript, and JavaScript used by the custom visual.                                                                                                   |
+| ./resources/&lt;name&gt;     | &lt;name&gt; is the name of the custom visual.                                                                                                                            |
 | ./resources/&lt;name&gt;.css | The css resource file for the custom visual.                                                                                                                              |
-| ./resources/&lt;name&gt;.js | The code that executes when a user clicks Enable custom visuals or after a user Imports a custom visual. Warning JavaScript code could contain security or privacy risks. |
-| ./resources/&lt;name&gt;.ts | The JavaScript source code for the visual in TypeScript format. Warning JavaScript or TypeScript code could contain security or privacy risks. |
-| ./resources/&lt;name&gt;.png | The icon shown to the user for the visual. |
+| ./resources/&lt;name&gt;.js  | The code that executes when a user clicks Enable custom visuals or after a user Imports a custom visual. Warning JavaScript code could contain security or privacy risks. |
+| ./resources/&lt;name&gt;.ts  | The JavaScript source code for the visual in TypeScript format. Warning JavaScript or TypeScript code could contain security or privacy risks.                            |
+| ./resources/&lt;name&gt;.png | The icon shown to the user for the visual.                                                                                                                                |
 
 After you extract the pbiviz file, you can evaluate the code. Here are some best practices and threats to look for.
 
@@ -92,3 +92,23 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 6.  Save copies of each visual you reviewed in the past.  
 7.  If you are reviewing an update to a visual you previously reviewed, ensure to check for changes. Always apply equal rigor to updates as you did the first time you received the visual for review  
 8.  If you find something suspicious or unclear, please reach out to us we're here to help.
+
+## See also:
+
+[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
+
+[Custom Visualizations in Power BI](powerbi-custom-visuals.md)
+
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
+
+[Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)
+
+[Download custom visualizations from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)
+
+[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-and-submit-to-the-gallery.md)
+
+[Add a custom visualization to a report](powerbi-custom-visuals-add-to-report.md)
+
+[Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)
+
+[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)

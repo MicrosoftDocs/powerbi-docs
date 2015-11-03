@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Use a custom visual"
    description="Use a custom visual"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="jastru"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -22,7 +22,7 @@
 
 Power BI supports new custom visualization types which help you see data in new, delightful ways. A custom visual can be added to the **Visualization** pane alongside other Power BI visuals.
 
-**Warning**  
+>**Warning**  
 If the custom visual is created by someone else, you will need to review the custom visual for security and privacy. See [Review custom visuals for security and privacy](https://support.powerbi.com/knowledgebase/articles/750219).
 
 It's easy to use a custom visual in a Power BI report: you import a .pbiviz file into the **Visualization** pane.
@@ -58,3 +58,11 @@ Once you have a .pbiviz custom visual, here's how to use a custom visual:
 
 4. You will see the custom visual added to the visualizations available for your use.  
 ![](media/powerbi-custom-visuals-use/VisualUse.png)
+
+## See also:
+
+[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
+
+[Custom Visualizations in Power BI](powerbi-custom-visuals.md)
+
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
