@@ -58,7 +58,7 @@ Once downloaded, custom visualizations appear in the Visualizations pane of your
 
 [Download custom visualizations from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)
 
-[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-and-submit-to-the-gallery.md)
+[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
 
 [Review custom visuals for security and privacy](powerbi-custom-visuals-review-for-security-and-privacy.md)
 

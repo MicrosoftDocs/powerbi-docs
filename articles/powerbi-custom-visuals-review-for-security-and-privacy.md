@@ -105,7 +105,7 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 
 [Download custom visualizations from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)
 
-[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-and-submit-to-the-gallery.md)
+[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
 
 [Add a custom visualization to a report](powerbi-custom-visuals-add-to-report.md)
 
