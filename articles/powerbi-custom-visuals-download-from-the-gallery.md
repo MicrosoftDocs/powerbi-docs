@@ -3,7 +3,7 @@
    description="Download a custom visual from the gallery"
    services="powerbi"
    documentationCenter=""
-   authors="jastru"
+   authors="mihart"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -14,13 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.date="11/02/2015"
+   ms.author="mihart"/>
 
 # Download a custom visual from the gallery  
-[← Knowledge Base](https://support.powerbi.com/knowledgebase)
 
-Power BI has a **visuals gallery** which contains many useful visualizations created by the community and Microsoft that you can download, and use in your Power BI reports. There is an active developer community creating a wide range of custom visuals. To learn more about how to create a Power BI visual, see [Extend Power BI with custom visuals](https://powerbi.microsoft.com/custom-visuals).
+Power BI has a **visuals gallery** which contains many useful visualizations created by the community and Microsoft that you can download, and use in your Power BI reports. There is an active developer community creating a wide range of custom visuals. To learn more about how to create a Power BI visual, see [Extend Power BI with custom visuals](https://powerbi.microsoft.com/custom-visuals.md) or [Create and submit a custom visual](powerbi-custom-visuals-create-and-submit-to-the-gallery).
 
 ![](media/powerbi-custom-visuals-download-from-the-gallery/PowerBI-VisualsGallery.png)
 
@@ -33,11 +32,11 @@ It's easy to download, and use a custom visual in your reports.
 3.  On the tile page, read through the description and choose **Download Visual**.
     ![](media/powerbi-custom-visuals-download-from-the-gallery/PBI_downloadCustomViz.jpg)
 
-4.  On the **This visual is published and is licensed to you by a Power BI community member﻿ ...** page, read the visual agreement. For tips on evaluating custom visuals, see [Review custom visuals for security and privacy](powerbi-custom-visuals-review-for-security-and-privacy). When you select **I Agree**, the custom visual is downloaded to your computer.
+4.  On the **This visual is published and is licensed to you by a Power BI community member﻿ ...** page, read the visual agreement. For tips on evaluating custom visuals, see [Review custom visuals for security and privacy](powerbi-custom-visuals-review-for-security-and-privacy.md). When you select **I Agree**, the custom visual is downloaded to your computer.
 
 5.  Save the .pbiviz file.
 
-6.  To use a custom visual, see [Add a custom visual to a report](powerbi-custom-visuals-add-to-report).
+6.  To use a custom visual, see [Add a custom visual to a report (Service)](powerbi-custom-visuals-add-to-report.md) or [Add a custom visual to a report (Desktop)](powerbi-custom-visuals-use.md)
 
 ## See also:
 
@@ -45,11 +44,7 @@ It's easy to download, and use a custom visual in your reports.
 
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)
 
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
-
-[Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)
-
-[Add a custom visualization to a report](powerbi-custom-visuals-add-to-report)
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals.md)
 
 [Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
 
