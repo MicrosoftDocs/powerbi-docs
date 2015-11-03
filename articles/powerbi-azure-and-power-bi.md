@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Azure and Power BI"
    description="Azure and Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -18,7 +18,7 @@
    ms.author="davidi"/>
 # Azure and Power BI
 
-With **Azure** services and **Power BI**, you can turn your data processing efforts into analytics and reports that provide real-time insights into your business. Whether your data processing is cloud-based or on-premise, straightforward or complex, single-sourced or massively scaled, warehoused or real-time, Azure and Power BI have the built-in connectivity and integration to bring your business intelligence efforts to life.
+With **Azure** services and **Power BI**, you can turn your data processing efforts into analytics and reports that provide real-time insights into your business. Whether your data processing is cloud-based or on-premises, straightforward or complex, single-sourced or massively scaled, warehoused or real-time, Azure and Power BI have the built-in connectivity and integration to bring your business intelligence efforts to life.
 
 ![](media/powerbi-azure-and-power-bi/Azure_1.png)
 
@@ -63,4 +63,3 @@ There's lots of information about Power BI APIs in the [Power BI Developer Porta
 ### What could you do with Azure and Power BI?
 
 There are all sorts of scenarios where **Azure** and **Power BI** can be combined - the possibilities and opportunities are as unique as your business. For more information about **Azure services**, check out this [overview page](http://go.microsoft.com/fwlink/?LinkId=535031&clcid=0x409), which describes **Data Analytics Scenarios using Azure**, and learn how to transform your data sources into intelligence that drives your business ahead.
-
