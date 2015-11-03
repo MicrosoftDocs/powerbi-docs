@@ -16,7 +16,6 @@
    ms.workload="powerbi"
    ms.date="11/01/2015"
    ms.author="mihart"/>
-
 # Tutorial: Connect to the Power BI samples  
 
 Want to try Power BI with sample data?  Use our sample content packs or one of our Excel datasets to learn how Power BI keeps you in the know and focused on what matters to run your business.  The samples use real data from obviEnce (www.obvience.com) that has been anonymized.
