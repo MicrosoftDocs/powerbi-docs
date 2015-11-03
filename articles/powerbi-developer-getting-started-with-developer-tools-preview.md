@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/3/2015"
+   ms.date="11/03/2015"
    ms.author="v-jastru"/>
 
 # Getting Started with Developer Tools (Preview)  
