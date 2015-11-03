@@ -29,11 +29,11 @@ Power BI supports new custom visualization types which help you see data in new,
 ### Create a custom visual with the Power BI Developer Tools (Preview)  
 <a name="devtools"></a>You can create a custom visual using the Power BI Developer Tools (Preview). In the Power BI **Developer Tools**, you design and test a custom visual by writing custom visual **TypeScript** code, and creating CSS. Once you have tested your custom visual, you can export it to Power BI, or submit it to the **Power BI visuals** gallery.
 
-To learn more about the Developer Tools, see [Get started with Developer Tools (Preview)](https://support.powerbi.com/knowledgebase/articles/722121).  
+To learn more about the Developer Tools, see [Get started with Developer Tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md).  
 ![](media/powerbi-custom-visuals-create-for-the-gallery/DevToolsExample.png)
 
 ### Submit your custom visual to the Power BI visuals gallery  
-<a name="submit"></a>Submit your custom visual to the Power BI visuals gallery via email. To learn how, see" [Get started with Developer Tools (Preview)](https://support.powerbi.com/knowledgebase/articles/722121).  
+<a name="submit"></a>Submit your custom visual to the Power BI visuals gallery via email. To learn how, see" [Get started with Developer Tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md).  
 
 ## See Also:
 [Custom visuals in Power BI](powerbi-custom-visuals.md)
@@ -43,8 +43,8 @@ To learn more about the Developer Tools, see [Get started with Developer Tools (
 [Use a custom visual in a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)
 
 [Use a custom visual in a report (Power BI Desktop)](powerbi-custom-visuals-use.md)
-To learn more about how to add a custom visual to the **Visualization** pane, see [Use a custom visual](https://support.powerbi.com/knowledgebase/articles/750216).  
+To learn more about how to add a custom visual to the **Visualization** pane, see [Use a custom visual](powerbi-custom-visuals-download-from-the-gallery.  
 ![](media/powerbi-custom-visuals-create-for-the-gallery/insert_to_use.png)
 
 ### Submit a custom visual to the Power BI visuals gallery  
-You can also submit your custom visual to the Power BI visuals gallery. It's easy, just follow the steps in the [Submit a custom visual to the gallery](https://support.powerbi.com/knowledgebase/articles/751899) article.
+You can also submit your custom visual to the Power BI visuals gallery. It's easy, just follow the steps in the [Submit a custom visual to the gallery](powerbi-custom-visuals-create-for-the-gallery.md) article.
