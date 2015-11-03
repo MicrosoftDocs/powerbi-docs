@@ -19,7 +19,7 @@
 
 # Submit a custom visual to the gallery  
 
-Power BI supports custom visuals that you can create with the [Power BI Developer Tools](https://support.powerbi.com/knowledgebase/articles/722121). Once you create a custom visual, share it with others by submitting it to the [Power BI visuals gallery](http://visuals.powerbi.com).
+Power BI supports custom visuals that you can create with the . Once you create a custom visual, share it with others by submitting it to the [Power BI visuals gallery](http://visuals.powerbi.com).
 
 1. [Create the visual](powerbi-custom-visuals-getting-started-with-developer-tools.md).
 
