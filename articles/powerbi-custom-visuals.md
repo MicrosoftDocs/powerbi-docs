@@ -25,7 +25,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 - [Download a custom visualization from the gallery](powerbi-custom-visuals-download-from-the-gallery)
 - [Add a custom visualization to your report]()
 - [Use a custom visualization in Power BI Desktop](powerbi-custom-visuals-use)
-- [Create and submit a visualization to the gallery](powerbi-custom-visuals-create-and-submit-to-the-gallery.md)
+- [Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
 
 
 >**Warning**  

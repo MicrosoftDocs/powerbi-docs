@@ -51,7 +51,7 @@ It's easy to download, and use a custom visual in your reports.
 
 [Add a custom visualization to a report](powerbi-custom-visuals-add-to-report)
 
-[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-and-submit-to-the-gallery.md)
+[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
 
 [Review custom visuals for security and privacy](powerbi-custom-visuals-review-for-security-and-privacy.md)
 
