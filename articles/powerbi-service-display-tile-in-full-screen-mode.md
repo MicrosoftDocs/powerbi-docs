@@ -1,9 +1,9 @@
-<properties 
+﻿<properties 
    pageTitle="Display a dashboard tile in full screen mode (In-focus mode)"
    description="Display a dashboard tile in full screen mode (In-focus mode)"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="mihart" 
    manager="mblythe" 
    editor=""
    tags=""/>

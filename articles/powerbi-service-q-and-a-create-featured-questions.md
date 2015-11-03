@@ -1,9 +1,9 @@
-<properties
+﻿<properties
    pageTitle="Create featured questions for Power BI Q&A"
    description="Create featured questions for Power BI Q&A"
    services="powerbi"
    documentationCenter=""
-   authors="jastru"
+   authors="mihart"
    manager="mblythe"
    editor=""
    tags=""/>
