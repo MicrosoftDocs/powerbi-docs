@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/02/2015"
    ms.author="yshoukry"/>
 # UserVoice content pack for Power BI
 
@@ -84,7 +84,7 @@ If you get a "login failed" error after using your UserVoice credentials to logi
 
 "**Oops something went wrong**"
 
-If you get this error message while the data is being loaded, make sure your UserVoice account hasn't exceeded its monthly APIs usage quota. If all looks good, try connecting again. If the problem persists, please contact Power BI support at [http://support.powerbi.com](http://support.powerbi.com).
+If you get this error message while the data is being loaded, make sure your UserVoice account hasn't exceeded its monthly APIs usage quota. If all looks good, try connecting again. If the problem persists, please contact Power BI support at [https://community.powerbi.com](https://community.powerbi.com/).
 
 ### See also
 

@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Migrating to the new Power BI experience"
    description="Migrating to the new Power BI experience"
    services="powerbi" 
@@ -27,7 +27,7 @@ This table compares key aspects of the two experiences.
 
 ||Current experience|New experience|More info|
 |---|---|---|---|
-|Collaboration|Power BI team sites based on SharePoint Online|Group workspaces based on Office 365 unified groups|[Groups](powerbi-service-groups.md%20)|
+|Collaboration|Power BI team sites based on SharePoint Online|Group workspaces based on Office 365 unified groups|[Groups](powerbi-service-groups.md)|
 |Manage permissions|Manage permissions to folders and workbooks in SharePoint Online|Manage group membership|<em>[﻿](powerbi-service-create-a-group-in-power-bi.md)</em>[﻿Create a group](powerbi-service-create-a-group-in-power-bi.md)<br />|
 |Quick access|Add favorite reports and featured Q&amp;A questions|Pin visuals and Q&amp;A answers to a dashboard|[Pin a tile to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)|
 |Edit Excel workbooks|Edit workbooks from the Power BI team site|Edit workbooks in Excel Online from Power BI, or in the Office 365 group|[Whole Excel workbooks in Power BI](powerbi-bring-in-whole-excel-files.md)|

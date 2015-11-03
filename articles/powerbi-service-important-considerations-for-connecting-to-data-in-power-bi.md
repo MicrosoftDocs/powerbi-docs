@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Important considerations for connecting to data in Power BI"
    description="Important considerations for connecting to data in Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/02/2015"
    ms.author="maggies"/>
 # Important considerations for connecting to data in Power BI
 
@@ -22,9 +22,9 @@ Connecting to data sources through Power BI is an easy way to get analytics and 
 
 -   Data from [Excel and Power BI Desktop files](powerbi-service-get-data-from-files.md).
 
--   Content packs with ready-made dashboards, reports, and datasets for [SaaS ](https://support.powerbi.com/knowledgebase/topics/88770) applications. Connecting to these SaaS applications requires an existing subscription to that application. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
+-   Content packs with ready-made dashboards, reports, and datasets for services such as Salesforce. Connecting to these services requires an existing subscription to that application. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
 
--   Connectors to [databases and other datasets](https://support.powerbi.com/knowledgebase/topics/88773), such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
+-   Connectors to databases and other datasets, such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
 
 When connecting to data sources through Power BI, there are some things to consider across all sources:
 
@@ -48,9 +48,7 @@ The refresh schedule is automatically configured for these sources but many of t
 
 Some of the data sources may have additional requirements, please review the individual Connect to… pages for specific details on the data sources you're trying to connect to.
 
-**Be careful not to overwrite data sources**
-
-## See Also:
+## See also
 
 [Get data](powerbi-service-get-data.md)
 

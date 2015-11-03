@@ -14,11 +14,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/02/2015"
    ms.author="maggies"/>
 # Mandrill content pack for Power BI
 
-**Update 8/17**: The Mandrill content pack has been restored in Power BI, we apologize for any inconvenience. We are always interested in your feedback. Please contact us at [http://support.powerbi.com](http://support.powerbi.com).
+**Update 8/17**: The Mandrill content pack has been restored in Power BI. We apologize for any inconvenience. We are always interested in your feedback. Please contact us at [https://community.powerbi.com/](https://community.powerbi.com/).
 
 The Power BI content pack pulls data from your Mandrill account and generates a dashboard, a set of reports and a dataset to allow you to explore your data. Use Mandrill's analytics to quickly gain insights into your newsletter or marketing campaign. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 
