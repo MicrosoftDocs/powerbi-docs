@@ -17,14 +17,16 @@
    ms.date="11/01/2015"
    ms.author="mihart"/>
 
-   Display your dashboards and reports without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is also referred to as TV mode.
+# Display dashboards and reports in Full Sceen mode
 
-   Some uses for Full Screen mode are:
+Display your dashboards and reports without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is also referred to as TV mode.
 
-- ◾presenting your dashboards and reports at a meeting or conference
+Some uses for Full Screen mode are:
+
+- presenting your dashboards and reports at a meeting or conference
 - displaying your dashboard in an office on a dedicated large screen or projector
 - looking at your dashboards and reports on a small screen
-- ◾reviewing your dashboards and reports in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report
+- reviewing your dashboards and reports in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report
 
 >**NOTE**:
 >Tiles can also be viewed in full screen mode (aka In-focus mode).
