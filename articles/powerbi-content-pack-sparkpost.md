@@ -33,7 +33,7 @@ Connect to the [SparkPost content pack for Power BI](https://app.powerbi.com/get
 
 3.  Select the SparkPost content pack and click Connect. 
 
-	![](media/powerbi-content-pack-sparkpost/getdata(1).PNG)
+	![](media/powerbi-content-pack-sparkpost/getdata-1.PNG)
 
 4.  When prompted, provide your SparkPost API key and select Sign In. For more details, please see the **﻿Finding your SparkPost API key** ﻿below.
 
