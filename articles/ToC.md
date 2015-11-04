@@ -107,8 +107,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-google-analytics",
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
-            "powerbi-content-pack-marketo",      
-            "powerbi-content-pack-microsoft-dynamics-crm",    
+            "powerbi-content-pack-marketo",
+            "powerbi-content-pack-microsoft-dynamics-crm",
             "powerbi-content-pack-microsoft-dynamics-marketing",
             "powerbi-content-pack-microsoft-dynamics-nav",
 			"powerbi-content-pack-planview",
@@ -264,7 +264,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-tutorial-introduction-to-q-and-a",
             "powerbi-service-make-your-data-work-well-with-q-and-a",
 			"powerbi-service-q-and-a-create-featured-questions",
-            "powerbi-service-ask-the-right-questions-of-salesforce-data"
+            "powerbi-service-ask-the-right-questions-of-salesforce-data",
 			"powerbi-service-q-and-a-tips"
           ],
           "numberOfFeaturedArticles": 4
