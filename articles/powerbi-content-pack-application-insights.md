@@ -38,17 +38,19 @@ Before you start, you’ll need:
 
 3. Select **Application Insights** > **Connect**.
 
-
+    ![Application Insights content pack](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsightConnect.png)
 
 4. Provide the details of the application you want to connect to, including **Application Insights Resource Name**, **Resource Group**, and **Subscription ID**. See [Finding your Application Insights parameters](#FindingAppInsightsParams) below for more details.
 
-
+    ![Application Insights connection dialog box](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitConnectnDialog.png)    
 
 5. Select **Sign In** and follow the screens to connect.
 
+    ![Application Insights connection sign-in](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitConnectn2.png)
 
 The import process begins automatically. When complete, a notification is shown and a new dashboard, report, and dataset  appear in the Navigation Pane marked with an asterisk. Select the dashboard to view your imported data.
 
+![Application Insights dashboard](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitDash.png)
 
 You can change this dashboard to display your data the way you want. Click a tile to open the underlying report and change the tiles in the dashboard.
 
@@ -56,7 +58,12 @@ You can change this dashboard to display your data the way you want. Click a til
 <a name="FindingAppInsightsParams"></a>
 
 Your Resource Name, Resource Group and Subscription ID can all be found in the Azure Portal. Selecting the Name will open a detailed view and you can use the Essentials drop-down to find all the values you need.
- Copy and paste these into the fields into Power BI:
+
+![Application Insights parameters](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitParams.png)
+
+Copy and paste these into the fields into Power BI:
+
+![Application Insights parameters](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitParam2.png)
 
 ### See also
 

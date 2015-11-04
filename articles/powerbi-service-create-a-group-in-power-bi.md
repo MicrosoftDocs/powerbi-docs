@@ -35,11 +35,9 @@ You can decide if all members of the group can modify the group's content, or if
 
     Power BI suggests a Group ID and lets you know if it's available. If it's not, select the pencil to the right of the **Group ID** box to modify it.  
 
-    >**Note:**  The group ID will be the group's email address:
-
-    *yourgroupID*@service.microsoft.com
-
-    If you forget the group ID, you can see it by going to the group's Office 365 Outlook account.
+    >**Note:**  The group ID will be the group's email address:  
+    >*yourgroupID*@service.microsoft.com.  
+    >If you forget the group ID, you can see it by going to the group's Office 365 Outlook account.
 
 3.  Select a privacy setting:
 
@@ -55,6 +53,8 @@ You can decide if all members of the group can modify the group's content, or if
 	Admins can modify content in the group. By default, members can modify the content. You can change that in the next step.
 
 6.  To limit  members to just viewing the group's content, under **Privacy**, select **Members can only view Power BI content**.
+
+     ![](media/powerbi-service-create-a-group-in-power-bi/PBI_GrpAddMembers.png)
 
 7.  Select **Save**.
 
