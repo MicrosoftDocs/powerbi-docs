@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Customize X-axis and Y-axis properties"
    description="Tutorial: Customize X-axis and Y-axis properties"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -141,11 +141,10 @@ See Also:
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Customize d](https://support.powerbi.com/knowledgebase/articles/637417%0A)[ata point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)
+
 
 [Customize t](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)[itles, backgrounds, and legends](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 
 [Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
