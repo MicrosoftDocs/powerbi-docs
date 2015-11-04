@@ -17,9 +17,10 @@
    ms.date="11/01/2015"
    ms.author="mihart"/>
 
-#Display dashboards and reports in Full Screen mode  
+# Display dashboards and reports in Full Screen mode  
+## What is Full Screen mode?
 
-   Display your dashboards and reports without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is also referred to as TV mode.
+Display your dashboards and reports without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is also referred to as TV mode.
 
 Some uses for Full Screen mode are:
 
@@ -29,7 +30,8 @@ Some uses for Full Screen mode are:
 - reviewing your dashboards and reports in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report
 
 >**NOTE**:
->Tiles can also be viewed in full screen mode (aka In-focus mode).
+>This is different than In-focus mode.  In-focus mode is available for [tiles](powerbi-service-display-tile-in-full-screen-mode.md) 
+and [dashboards](powerbi-service-dash-in-focus-mode.md).
 
 ##To turn Full Screen on (and off)
 1. From your dashboard or report, select the **Full Screen** icon.
