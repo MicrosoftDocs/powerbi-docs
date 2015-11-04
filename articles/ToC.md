@@ -54,7 +54,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ],
           "numberOfFeaturedArticles": 15
         },
-
         {
           "sectionTitle": "Samples",
           "articles": [
