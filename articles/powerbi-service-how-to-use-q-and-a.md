@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="How to use Power BI Q&A"
    description="How to use Power BI Q&A"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/03/2015"
    ms.author="mihart"/>
 
 # How to use Power BI Q&A  
@@ -38,18 +38,18 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
 
 2.  Select from the dropdown or begin typing your own question.  
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_begin-typing-question.jpg)
-    
+
 3.  As you type a question, Power BI Q&A picks the best [visualization ](powerbi-service-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question. Q&A also helps you formulate your question with auto-completion, by restating your question, and with other textual and visual aids.  
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_continue-typing-question.jpg)
-    
+
 4.  When you type a query, Power BI looks for an answer in any dataset that has a tile on that dashboard.  If all the tiles are from *datasetA*, then your answer will come from *datasetA*.  If there are tiles from *datasetA *and *datasetB*, then Q&A will search for the best answer from those 2 datasets.
-    
+
     The dataset(s) that is used to create the visualization is visible below the visualization.  
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_qna_which-dataset-used.jpg)
 
-    >**Tip:**  
+    >**Tip:** 
 	>So be careful, if you only have one tile from *datasetA *and you remove it from your dashboard, Q&A will no longer have access to *datasetA*.
-	
+
 5.  When you're happy with the result, [pin the visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) by selecting the pin icon in the top right corner.
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_finish-typing-question.jpg)
 
@@ -66,7 +66,7 @@ For example, suppose you had an Excel table named “Sales”, with columns tit
 
 Q&A can answer questions that are based on how your dataset is organized. How would this work for data in Salesforce? When you connect to your salesforce.com account, Power BI generates a dashboard automatically.  Before you start asking questions with Q&A, take a look at the data displayed in the dashboard visualizations and also at the data displayed in the Q&A dropdown.
 
--   If the visualizations' axis labels and values include "sales",  "account", "month", and “opportunities”, then you can confidently ask questions such as: “Which *account *has the highest *opportunity*”, or “show *sales *by month as a bar chart”. 
+-   If the visualizations' axis labels and values include "sales",  "account", "month", and “opportunities”, then you can confidently ask questions such as: “Which *account *has the highest *opportunity*”, or “show *sales *by month as a bar chart”.
  
 -   If the dropdown includes "salesperson", "state", and "year", then you can confidently ask questions such as: "which *salesperson *had the lowest *sales *in *Florida* in *2013*."
 
@@ -79,8 +79,8 @@ You can also tell Q&A which visualization to use by adding it to your question. 
 
 ## See Also  
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
-[Tutorial: Use Q&A with the Retail Sales sample](http://https//support.powerbi.com/knowledgebase/articles/607113)  
-[Tips for asking questions in Q&A](https://support.powerbi.com/knowledgebase/articles/664393)  
+[Tutorial: Use Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)  
+[Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md)  
 [Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
 [Pin a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)  
 [Ask the right questions of your Salesforce dataset](powerbi-service-ask-the-right-questions-of-salesforce-data.md)  

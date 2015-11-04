@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Customize visualization title, background, and legend"
    description="Tutorial: Customize visualization title, background, and legend"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -42,7 +42,7 @@ I’ve signed in to the Power BI service and I’m starting with the Retail Anal
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizetext2.png)
 
 5.  Change the text color to orange and the text background to yellow.
-	
+
 	-   Select the dropdown and choose a color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
 
 	-   Select the dropdown to close the color window.  
@@ -92,33 +92,32 @@ To customize a legend, select "This Year Sales by FiscalMonth and Name" line cha
     To revert all the legend customization we've done so far, select **Revert To Default**, at the bottom of the **Legend **customization pane.
 
 ## Visualization types that can be customized  
-|Visualization|Title|Background|Legend|
-|---|---|---|---|
-|area|yes|yes|yes|
-|bar|yes|yes|yes|
-|card|yes|yes|n/a|
-|Multi Row Card|yes|yes|n/a|
-||<br />|<br />|<br />|
-|column|yes|yes|yes|
-|combo|yes|yes|yes|
-|donut|yes|yes|yes|
-|filled map|yes|yes|yes|
-|funnel|yes|yes|n/a|
-|gauge|yes|yes|n/a|
-|<br />|<br />|<br />|<br />|
-|line|yes|yes|yes|
-|map|yes|yes|yes|
-|matrix|yes|yes|n/a|
-|pie|yes|yes|yes|
-|scatter|yes|yes|yes|
-|table|yes|yes|n/a|
-|textbox|no|yes|n/a|
-|treemap|yes|yes|yes|
-|waterfall|yes|yes|yes|
+| Visualization  | Title  | Background | Legend |
+|:---------------|:-------|:-----------|:-------|
+| area           | yes    | yes        | yes    |
+| bar            | yes    | yes        | yes    |
+| card           | yes    | yes        | n/a    |
+| Multi Row Card | yes    | yes        | n/a    |
+|                | <br /> | <br />     | <br /> |
+| column         | yes    | yes        | yes    |
+| combo          | yes    | yes        | yes    |
+| donut          | yes    | yes        | yes    |
+| filled map     | yes    | yes        | yes    |
+| funnel         | yes    | yes        | n/a    |
+| gauge          | yes    | yes        | n/a    |
+| <br />         | <br /> | <br />     | <br /> |
+| line           | yes    | yes        | yes    |
+| map            | yes    | yes        | yes    |
+| matrix         | yes    | yes        | n/a    |
+| pie            | yes    | yes        | yes    |
+| scatter        | yes    | yes        | yes    |
+| table          | yes    | yes        | n/a    |
+| textbox        | no     | yes        | n/a    |
+| treemap        | yes    | yes        | yes    |
+| waterfall      | yes    | yes        | yes    |
 
 ## See Also  
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
 [Customize X-axis and Y-axis](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md%0A)  
-[Customize data point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)  
 [Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

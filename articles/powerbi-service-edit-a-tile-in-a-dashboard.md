@@ -28,7 +28,7 @@ You can change the look and default behavior of a tile in a dashboard:
 
 -   [Resize the tile](424878.html#resize)
 
--   [Add a hyperlink to a tile](https://support.powerbi.com/knowledgebase/articles/hyperlink)
+-   [Add a hyperlink to a tile](424878.html#hyperlink)
 
 -   [Delete the tile](424878.html#delete)
 

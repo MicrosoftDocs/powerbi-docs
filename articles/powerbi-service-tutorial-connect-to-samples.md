@@ -50,8 +50,6 @@ This tutorial uses the **Retail Analysis sample** content pack. The Retail Analy
 
 5. Now explore the dashboard and report on your own, or check out the [tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).
 
-Are you looking for a different type of sample?  [Request a new sample](http://support.powerbi.com/forums/265200-power-bi/category/91332-samples).
-
 
 ## See Also  
 [Samples in Power BI](powerbi-service-dashboards.md)  

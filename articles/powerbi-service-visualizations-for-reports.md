@@ -53,11 +53,9 @@ You can [sort a visualization](powerbi-service-change-how-a-chart-is-sorted.md) 
 Learn how to create and add links to table visualizations.
 
 ## Tutorials  
--   [Customize visualization title, background, and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md%0A)
+-   [Customize visualization title, background, and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 
--   [Customize X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md%0A)
-
--   [Customize data point labels](https://support.powerbi.com/knowledgebase/articles/637417%0A)
+-   [Customize X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
 
 -   [Basic Area charts](powerbi-service-tutorial-basic-area-chart.md)
 
