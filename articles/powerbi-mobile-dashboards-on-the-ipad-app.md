@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Dashboards on the iPad app (Power BI for iOS)"
    description="Dashboards on the iPad app (Power BI for iOS)"
    services="powerbi" 
@@ -26,7 +26,7 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 
 Power BI comes with built-in dashboards for some data sources such as Salesforce, and you [create your own dashboards in Power BI](powerbi-service-dashboards.md).
 
-Then you see these same dashboards in the iPad app for Microsoft Power BI for iOS, and you can see dashboards your colleagues share with you.# View dashboards on your iPad
+Then you see these same dashboards in the iPad app for Microsoft Power BI for iOS, and you can see dashboards your colleagues share with you.
 
 ## View dashboards on your iPad
 

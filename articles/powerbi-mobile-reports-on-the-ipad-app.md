@@ -29,7 +29,7 @@ Then you view and interact with reports on the [iPad app for Microsoft Power BI]
 
 -   Or tap a tile on a dashboard, and tap **Open report**.
 
-    >**NOTE**: Not all tiles can open in a report. For example, to open the sample reports, you need to sign in to Power BI. Also, tiles created from Salesforce or created with Q&A don't open reports.
+    >**NOTE**: Not all tiles can open in a report. For example, tiles created from Salesforce  or created with Q&A don't open reports.
 
 ## See other pages in the report
 

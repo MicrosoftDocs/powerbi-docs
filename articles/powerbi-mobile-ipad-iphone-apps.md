@@ -24,7 +24,7 @@ The iPad and iPhone apps for Microsoft Power BI for iOS deliver the mobile BI e
 
 Download the [iPad or iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062 "iPad or iPhone app") from the Apple App Store.
 
-Go to Power BI to [sign up for the Power BI](http://go.microsoft.com/fwlink/?LinkID=513879 "sign up for the Power BI preview").
+Go to [Power BI](http://go.microsoft.com/fwlink/?LinkID=513879) to sign up for the Power BI service.
 
 ## iPad app for Power BI
 
