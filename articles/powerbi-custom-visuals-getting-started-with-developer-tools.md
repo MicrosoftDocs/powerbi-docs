@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
+   ms.date="11/03/2015"
    ms.author="mihart"/>
 
 # Create a custom visual with the Developer Tools (Preview)
