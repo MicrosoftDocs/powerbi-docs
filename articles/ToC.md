@@ -43,6 +43,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-q-and-a",
 			"powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-whats-new",
+			"powerbi-videos",
+            "powerbi-webinars",
             "powerbi-developer-getting-started-with-developer-tools-preview",
             "powerbi-frequently-asked-questions",
             "powerbi-free-trial-for-power-bi-pro",
@@ -50,21 +52,14 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-browser-support",
             "powerbi-supported-languages"
           ],
-          "numberOfFeaturedArticles": 14
+          "numberOfFeaturedArticles": 15
         },
-        {
-          "sectionTitle": "Resources",
-          "articles": [
-            "powerbi-videos",
-            "powerbi-webinars",
-            "powerbi-sample-datasets"
-          ],
-          "numberOfFeaturedArticles": 3
-        },
+
         {
           "sectionTitle": "Samples",
           "articles": [
-            "powerbi-sample-tutorial-connect-to-the-samples",
+            "powerbi-sample-datasets",
+			"powerbi-sample-tutorial-connect-to-the-samples",
             "powerbi-sample-download-the-financial-sample-workbook",
             "powerbi-sample-downloads",
             "powerbi-sample-connect-to-the-retail-analysis-sample-content-pack",
@@ -76,7 +71,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-sample-opportunity-analysis-take-a-tour",
             "powerbi-sample-procurement-analysis-take-a-tour"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Get data overview",
@@ -187,7 +182,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-service-how-should-i-share-my-dashboard",
 			      "powerbi-service-share-unshare-dashboard",
 			      "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
-				  "powerbi-service-display-dashboard-report-in-full-screen-mode",
+				  "powerbi-service-display-dash-in-focus-mode",
 			      "powerbi-service-rename-a-dashboard",
 			      "powerbi-service-add-an-image-to-a-dashboard",
 			      "powerbi-service-create-a-big-number-tile-for-a-dashboard",
@@ -269,7 +264,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-how-to-use-q-and-a",
             "powerbi-service-tutorial-introduction-to-q-and-a",
             "powerbi-service-make-your-data-work-well-with-q-and-a",
+			"powerbi-service-q-and-a-create-featured-questions",
             "powerbi-service-ask-the-right-questions-of-salesforce-data"
+			"powerbi-service-q-and-a-tips"
           ],
           "numberOfFeaturedArticles": 4
         },
