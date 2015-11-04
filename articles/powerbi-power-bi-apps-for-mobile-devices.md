@@ -14,12 +14,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/03/2015"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
 
-You have several options for viewing your Power BI dashboards on your mobile device. Of course, you can just view them in a browser on your phone or iPad. But beyond that, you can also download a Power BI app to specific devices:
+Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device - be it Windows tablet, iOS (iPad or iPhone), or Android phone. 
+
+![](media/powerbi-powerbi-apps-for-mobile-devices/PBI_PhonePhotoCrop.png)
+
+Set data alerts to notify you when your data changes. Mark certain tiles as favorites. And annotate tiles and send snapshots to your coworkers. 
+
+Download a Power BI app:
 
 -   The [iPad app](powerbi-mobile-ipad-app-get-started.md) (Power BI for iOS)
 
