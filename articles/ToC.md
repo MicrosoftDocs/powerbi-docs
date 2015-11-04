@@ -182,6 +182,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-service-share-unshare-dashboard",
 			      "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
 				  "powerbi-service-display-dash-in-focus-mode",
+				  "powerbi-service-display-tile-in-full-screen-mode",
 			      "powerbi-service-rename-a-dashboard",
 			      "powerbi-service-add-an-image-to-a-dashboard",
 			      "powerbi-service-create-a-big-number-tile-for-a-dashboard",
