@@ -43,7 +43,7 @@ To learn more about the Developer Tools, see [Get started with Developer Tools (
 [Use a custom visual in a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)
 
 [Use a custom visual in a report (Power BI Desktop)](powerbi-custom-visuals-use.md)
-To learn more about how to add a custom visual to the **Visualization** pane, see [Use a custom visual](powerbi-custom-visuals-download-from-the-gallery.  
+To learn more about how to add a custom visual to the **Visualization** pane, see [Use a custom visual](powerbi-custom-visuals-download-from-the-gallery).  
 ![](media/powerbi-custom-visuals-create-for-the-gallery/insert_to_use.png)
 
 ### Submit a custom visual to the Power BI visuals gallery  
