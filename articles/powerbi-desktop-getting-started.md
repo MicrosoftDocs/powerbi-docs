@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Getting started with Power BI Desktop"
    description="Getting started with Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -18,7 +18,7 @@
    ms.author="davidi"/>
 # Getting started with Power BI Desktop
 
-Welcome to the **Power BI Desktop Getting Started Guide**. This short tour of Power BI Desktop gets you acquainted with how it works, demonstrates what it can do, and accelerates your ability to build robust data models — along with amazing reports — that amplify your business intelligence efforts.  
+Welcome to the **Power BI Desktop Getting Started Guide**. This short tour of Power BI Desktop gets you acquainted with how it works, demonstrates what you can do with it, and accelerates your ability to build robust data models — and amazing reports — that amplify your business intelligence efforts. 
 
 Prefer to watch instead of read? Feel free to [take a look at our getting started video](powerbi-desktop-videos.md). And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962). 
 
@@ -42,7 +42,7 @@ For a more thorough understanding you can read through each section, perform the
 
 With Power BI Desktop, you *connect to data* (usually multiple data sources), *shape that data* (with queries that build insightful, compelling data models), and use that model to *create reports* (which others can leverage, build upon, and share).
 
-When the steps are completed to your satisfaction – connect, shape, and report – you can save that work in Power BI Desktop file format, which is the .pbix extension. Power BI Desktop files can be shared like any other file, but the most compelling way to share Power BI Desktop files is to upload them (share them) on the [**Power BI service**](https://preview.powerbi.com/).  
+When the steps are completed to your satisfaction – connect, shape, and report – you can save that work in Power BI Desktop file format, which is the .pbix extension. Power BI Desktop files can be shared like any other file, but the most compelling way to share Power BI Desktop files is to upload them (share them) on the [**Power BI service**](https://preview.powerbi.com/). 
 
 Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be a scattered, disconnected, and arduous process of designing and creating business intelligence repositories and reports.
 
@@ -351,13 +351,8 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 
 -   [Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)
 
--   [Common Query Tasks in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471648)    
+-   [Common Query Tasks in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471648)   
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 
 ![](media/powerbi-desktop-getting-started/SendFeedback.png)
-
-
-
-
-
