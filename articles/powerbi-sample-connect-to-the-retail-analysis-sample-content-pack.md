@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Connect to the Power BI samples"
    description="Tutorial: Connect to the Power BI samples"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -37,12 +37,10 @@ This tutorial uses the *Retail Analysis* sample content pack. The Retail Analysi
 2.  Select Samples.  
     ![](media/powerbi-sample-connect-to-the-retail-analysis-sample-content-pack/PBI_SamplesDownload.png)
 
-3.  Select the Retail Analysis sa﻿mple, and choose Connect.   
+3.  Select the Retail Analysis sa﻿mple, and choose **Connect**.   
     ![](media/powerbi-sample-connect-to-the-retail-analysis-sample-content-pack/PBI_RetailAnalysisSampleConnect.png)
 
 4.  Power BI installs the dashboard, report, and dataset for the Retail Analysis sample. Because they're new, they're marked with a yellow asterisk.  
     ![](media/powerbi-sample-connect-to-the-retail-analysis-sample-content-pack/PBI_NewExcelLeftNav.png)
 
 5.  Now explore the dashboard and report on your own, or check out the [tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).
-
-Are you looking for a different type of sample?  [Request a new sample](http://support.powerbi.com/forums/265200-power-bi/category/91332-samples).  

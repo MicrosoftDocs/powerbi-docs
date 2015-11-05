@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Power BI - basic concepts"
    description="Power BI - basic concepts"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -78,7 +78,7 @@ In the navigation pane, your reports are listed under the Reports heading. Eac
 
 ## Dashboards
 
-A *dashboard* is something you create or something a colleague creates and shares with you. It is a single canvas that contains one or more tiles. Each tile displays a single [visualization](http://support.powerbi.com/knowledgebase/topics/65160-all-about-visualizations)that was created from the data in one of the underlying dataset(s). The only exception to this is a brand new dashboard created from scratch – if I click the plus icon next to **Dashboards**, and name it – my new dashboard has no tiles at all. To [create and add a tile](powerbi-service-dashboard-tiles.md), you must be in report [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) or in [Q&A](powerbi-service-q-and-a.md). 
+A *dashboard* is something you create or something a colleague creates and shares with you. It is a single canvas that contains one or more tiles. Each tile displays a single [visualization](powerbi-service-visualizations-for-reports.md)that was created from the data in one of the underlying dataset(s). The only exception to this is a brand new dashboard created from scratch – if I click the plus icon next to **Dashboards**, and name it – my new dashboard has no tiles at all. To [create and add a tile](powerbi-service-dashboard-tiles.md), you must be in report [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) or in [Q&A](powerbi-service-q-and-a.md). 
 
 In the navigation pane, your dashboards are listed under the **Dashboards** heading. Each listed dashboard represents a customized view of some subset of the underlying datasets.  What this means is that someone (you or a colleague) created the dashboard and then navigated to Editing View where s/he explored the data and created visualizations and then picked some of those visualizations to display on the dashboard.
 
@@ -108,7 +108,7 @@ To permanently pin a tile to a dashboard, I must a report owner.  If I’m not 
 
 The first time you open Power BI, you're looking at the [sample dashboard](powerbi-sample-retail-analysis-take-a-tour.md), the ***Retail Analysis Sample***.  This sample will always be there, unless you [manually remove it](powerbi-service-delete-or-remove-a-dashboard.md).
 
-Even though it doesn't show up in the navigation pane under Reports, the Retail Analysis Sample dashboard does have a report (see **NOTE** above).The Sample report is made up of several pages of visualizations that highlight insights about the underlying dataset.  Unless you remove it, the Sample report is always available for you to use to explore and learn.  [Take a tour of the Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour.md). 
+Even though it doesn't show up in the navigation pane under Reports, the Retail Analysis Sample dashboard does have a report (see **NOTE** above).The Sample report is made up of several pages of visualizations that highlight insights about the underlying dataset.  Unless you remove it, the Sample report is always available for you to use to explore and learn.  [Take a tour of the Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour.md).
 
 **Because it’s a sample, you can’t save changes to the Retail Analysis Sample dashboard or report**. For a version of this sample that you can edit, in the navigation pane, click **Get Data \> Samples \> Retail Analysis Sample**. Also, although you will be able to temporarily pin tiles from other datasets, you will only be able to use Q&A with the sample dataset.
 
@@ -152,7 +152,7 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connec
 
 ![](media/powerbi-service-basic-concepts/qna.png)
 
-As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](https://support.powerbi.com/knowledgebase/topics/70394-q-a-in-power-bi).
+As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](powerbi-service-q-and-a.md).
 
 ## Help and feedback buttons
 
@@ -183,4 +183,3 @@ Click to return to the dashboard that you viewed most recently.
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI videos](powerbi-videos.md)
-

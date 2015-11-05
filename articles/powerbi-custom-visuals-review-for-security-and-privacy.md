@@ -3,10 +3,10 @@
    description="Review custom visuals for security and privacy"
    services="powerbi"
    documentationCenter=""
-   authors="jastru"
+   authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags="power bi"/>
 
 <tags
    ms.service="powerbi"
@@ -14,27 +14,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
-   ms.author="v-jastru"/>
+   ms.date="11/03/2015"
+   ms.author="mihart"/>
 
 # Review custom visuals for security and privacy  
-[← Knowledge Base](https://support.powerbi.com/knowledgebase)
 
 Power BI supports new visualization types through custom visuals. When you open a report that contains a custom visual, you will see the following warning: This report contains a custom visual not provided by Microsoft. Custom visuals could contain code with security or privacy risks. Learn more here.  
+
 ![](media/powerbi-custom-visuals-review-for-security-and-privacy/Enable.png)  
 
 Before you enable a custom visual, you should review the custom visual for security and privacy.
 
 ## In this article  
--   [Enable a custom visual](https://support.powerbi.com/knowledgebase/articles/750219#enable)
--   [Considerations before you enable a custom visual](https://support.powerbi.com/knowledgebase/articles/750219#considerations)
--   [Security best practices for IT Professionals](https://support.powerbi.com/knowledgebase/articles/750219#security)
+-   [Enable a custom visual](#enable)
+-   [Considerations before you enable a custom visual](#considerations)
+-   [Security best practices for IT Professionals](#security)
 
 ## Enable a custom visual  
-A custom visual in the report is disabled until you choose **Enable custom visuals** as shown below.  
+<a name="enable"></a>A custom visual in the report is disabled until you choose **Enable custom visuals** as shown below.  
+
 ![](media/powerbi-custom-visuals-review-for-security-and-privacy/EmptyVisual.png)
 
 ## Considerations before you enable a custom visual  
+<a name="considerations"></a>
 >**Warning:**  
 >A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. Here are some considerations to decide whether to enable a custom visual:
 
@@ -43,6 +45,7 @@ A custom visual in the report is disabled until you choose **Enable custom visua
 3.  If someone shares a report with you that contains a custom visual, even if they're a close co-worker, do not feel obligated to enable the custom visual. It's okay to step back and consider whether it is essential to the task at hand. It's always okay to ask someone to provide you a report without custom visuals if you don't feel confident about the custom visual.
 
 ## Security best practices for IT Professionals to enable a custom visual  
+<a name="security"></a>
 >**Warning:**  
 >A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. There are several best practices you can follow to evaluate a custom visual for security and privacy.
 
@@ -101,13 +104,13 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 
 [The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
 
-[Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)
+[Add a custom visualizations to a report (Power BI Desktop)](powerbi-custom-visuals-use.md)
+
+[Add a custom visualization to a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)
 
 [Download custom visualizations from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)
 
 [Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
-
-[Add a custom visualization to a report](powerbi-custom-visuals-add-to-report.md)
 
 [Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)
 
