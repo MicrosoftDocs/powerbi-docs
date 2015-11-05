@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Manage your group in Power BI and Office 365"
    description="Manage your group in Power BI and Office 365"
    services="powerbi" 
@@ -24,18 +24,15 @@ As creator or admin of a group in Power BI or in Office 365, you manage some asp
 
 In Power BI you can:
 
--   Add or remove group members.
-
+-   Add or remove a group member, including making a group member an admin.
 -   Edit the group name.
-
+-   Make it so group members can only read and not edit content in the group.
 -   Delete the group.
 
 In Office 365 you can:
 
 -   Add or remove members, including making a member an admin.
-
 -   Edit the group name and description.
-
 -   See the group email address.
 
 ## Edit your group in Power BI
