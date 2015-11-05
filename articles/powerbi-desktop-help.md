@@ -58,7 +58,7 @@
 
 [Learn about the Query formula language (also known as "M")](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?CorrelationId=4382f78a-d3a8-4c19-90ab-abf4b09a21a8&ui=en-US&rs=en-US&ad=US)
 
-**Data modeling:**
+**Data Modeling:**
 
 [Data View in Power BI Desktop](powerbi-desktop-data-view.md)
 
