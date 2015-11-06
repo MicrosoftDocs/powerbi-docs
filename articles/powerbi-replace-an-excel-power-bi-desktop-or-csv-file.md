@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Replace an Excel, Power BI Desktop, or CSV file in Power BI"
    description="Replace an Excel, Power BI Desktop, or CSV file in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="Minewiskan" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="Minewiskan"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="owend"/>
 # Replace an Excel, Power BI Desktop, or CSV file in Power BI
 
@@ -55,5 +55,4 @@ Now say you change the version of the file on your computer. You can upload the 
     ![](media/powerbi-replace-an-excel-power-bi-desktop-or-csv-file/PBI_ReplaceFile.png)
 
  
->**NOTE**: If you already have more than one dataset with the same name, Power BI won’t upload the new dataset. You need to change the name first – or change the names of the extra existing datasets — so only one remains by that name.
-
+**NOTE**: If you already have more than one dataset with the same name, Power BI won’t upload the new dataset. You need to change the name first – or change the names of the extra existing datasets — so only one remains by that name.

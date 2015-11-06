@@ -3,7 +3,7 @@
    description="Learn how to publish an Excel workbook to your Power BI site."
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan" 
+   authors="Minewiskan"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
+   ms.date="11/06/2015"
    ms.author="owend"/>
 
 # Publish to Power BI from Excel  
@@ -45,8 +45,8 @@ You can continue working in your workbook. When you save, your changes automatic
 ### Limitations
 There are a few limitations when publishing from Excel to Power BI:
 
--  Publishing to Power BI requires the workbook to be saved to OneDrive for Business. If your workbook isn't saved to a OneDrive for Business account, publishing to Power BI will guide you through the process of uploading to OneDrive for Business, then publishing to Power BI.
+-  Publishing to Power BI requires your workbook to be saved on OneDrive for Business. If your workbook isn't saved to a OneDrive for Business account, publishing to Power BI will guide you through the process of uploading to OneDrive for Business, then publishing to Power BI.
 -  Your OneDrive for Business account must be associated with the account with which you’re using Excel.
--  You can’t publish an empty workbook, nor a workbook that doesn’t have any Power BI supported content. Get more information about supported content.
+-  You can’t publish an empty workbook, nor a workbook that doesn’t have any Power BI supported content. Get more information about [supported content](powerbi-service-excel-data.md).
 -  You can’t publish encrypted workbooks, which are workbooks that are password protected, have Information Protection Management, or IRM.
--  Publishing to Power BI requires modern authentication to be enabled (it is enabled by default). If modern authentication is disabled, the Publish option is not available from the File menu. Contact your administrator to enable modern authentication.
+-  Publishing to Power BI requires modern authentication to be enabled (it is enabled by default). If modern authentication is disabled, the Publish option is not available from the File menu. Contact your administrator to [enable modern authentication](https://support.office.com/en-us/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910?ui=en-US&rs=en-US&ad=US).

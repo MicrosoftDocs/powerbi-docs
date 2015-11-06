@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="owend"/>
 # Get data from Excel, Power BI Desktop, and CSV files into Power BI
 
@@ -37,7 +37,9 @@ A comma-separated values (CSV) text file can be a dataset for your Power BI dash
 
 ### Import or connect to files 
 
-You can bring in Excel, Power BI Desktop, and CSV files from your computer, or connect to them on OneDrive for Business or OneDrive Personal. Here's the advantage of connecting to files on OneDrive: Changes to a file on OneDrive appear automatically in the dashboards and reports connected to the file in Power BI.
+You can bring in Excel, Power BI Desktop, and CSV files from your computer, or connect to them on OneDrive for Business or OneDrive Personal.
+
+**Tip**: When you keep your files on OneDrive, if you make changes, for example, add rows to a table, those changes will appear automatically in dashboards and reports in Power BI created from the data, usually in about an hour.
 
 **Important**: The maximum file size is 250 megabytes for any file you upload to your Power BI site.
 
