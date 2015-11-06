@@ -30,7 +30,7 @@ If you have a free account, or are paying for the individual Power BI Pro subscr
 
 ![](media/powerbi-admin-closing-your-account/get-help.png)
 
-3. Select **Contact support** under **Ask for help**.
+3. Under the **Ask for help** section, select **Contact support**.
 
 ## Managed tenant users
 
