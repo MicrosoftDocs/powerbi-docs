@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop"
    description="Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop
 
@@ -193,4 +193,3 @@ You can see the resulting table fields in the **Fields pane** at the right of t
  
 
   
-

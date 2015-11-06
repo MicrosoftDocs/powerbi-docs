@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Import Excel workbooks into Power BI Desktop"
    description="Import Excel workbooks into Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Import Excel workbooks into Power BI Desktop
 
@@ -30,7 +30,7 @@ To import a workbook, from Power BI Desktop select **File -\> Import -\> Excel W
 
 
 
-A window appears, letting you select the workbook to import. There is currently no limitation on the size or number of objects in the workbook, but larger workbooks take longer for Power BI Desktop to analyze and import. 
+A window appears, letting you select the workbook to import. There is currently no limitation on the size or number of objects in the workbook, but larger workbooks take longer for Power BI Desktop to analyze and import.
 
 
 Once a workbook is selected, Power BI Desktop analyzes the workbook and converts it into a Power BI Desktop file (.pbix). Note that this is a one-time event; once the Power BI Desktop file is created with these steps, the Power BI Desktop file has no dependence on the original Excel workbook, and can be modified or changed (and saved, and shared) without affecting the original workbook.
@@ -55,7 +55,7 @@ Now that the workbook is imported, you can continue working on the report – su
 
 ## Which workbook elements are imported?
 
-Power BI Desktop can import the following elements, commonly referred to as *objects*, in Excel. 
+Power BI Desktop can import the following elements, commonly referred to as *objects*, in Excel.
 
 
 |Object in Excel Workbook|Final Result in Power BI Desktop file|
@@ -85,10 +85,3 @@ There are a few limitations to importing a workbook into Power BI Desktop, which
 7.  **Named Ranges using** ***From Table*** **in Power Query, or using** ***Excel.CurrentWorkbook*** **in M:** Importing this named range data into Power BI Desktop is not currently supported, but it is a planned update for Power BI Desktop. Currently, these named ranges are loaded into Power BI Desktop as a connection to the external Excel workbook.
 
 8.  **PowerPivot to SSRS:** PowerPivot external connections to SQL Server Reporting Services (SSRS) are not currently supported, since that data source is not currently available in Power BI Desktop.
-
-
-
-
-
-
-

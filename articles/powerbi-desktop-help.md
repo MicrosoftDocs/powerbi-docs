@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Power BI Desktop Help"
    description="Power BI Desktop Help"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Power BI Desktop Help
 
@@ -90,4 +90,3 @@ Data modeling:
 [Tutorial: Create your own measures in Power BI Desktop ](powerbi-desktop-tutorial-create-measures.md)
 
 [Tutorial: Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md)
-

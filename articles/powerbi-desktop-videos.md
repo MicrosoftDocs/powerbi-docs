@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Power BI Desktop videos"
    description="Power BI Desktop videos"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Power BI Desktop videos
 
@@ -33,5 +33,3 @@ The following list describes all available videos about Power BI Desktop. Select
 -   Understand how to [import, reshape and transform data using Query Editor](https://www.youtube.com/watch?v=ByIUx-HmQbw) in the Power BI Desktop.
 
 	<iframe width="500" height="281" src="https://www.youtube.com/embed/ByIUx-HmQbw" frameborder="0" allowfullscreen></iframe>﻿
-
-
