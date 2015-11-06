@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Personal Gateway
 
@@ -56,10 +56,14 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 
   ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/PBI_PG_CredentialsError.jpg.png)
 
-**﻿Error: Sign in error when selecting Windows authentication for a data source using ACE OLEDB** - If you get the following error when entering data source credentials for a data source using ACE OLEDB provider:
+**Error: Sign in error when selecting Windows authentication for a data source using ACE OLEDB** - If you get the following error when entering data source credentials for a data source using ACE OLEDB provider:
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/ACEOLEDBerror.png)
 
 Power BI does not currently support Windows authentication for a data source using ACE OLEDB provider.
 
 **Solution:** To workaround this error, you can select Anonymous authentication. For legacy ACE OLEDB provider, Anonymous credentials are equivalent to Windows credentials.
+
+## See Also
+
+[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)
