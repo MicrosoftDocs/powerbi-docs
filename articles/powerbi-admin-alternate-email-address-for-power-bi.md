@@ -17,6 +17,8 @@
    ms.date="11/06/2015"
    ms.author="asaxton"/>
 
+# Alternate Email Address for Power BI
+
 By default, the email address you used to sign up to Power BI with is used to send you updates about activity in Power BI.  For example, when someone sends you a sharing invitation it will go to this address.
 
 Sometimes you may want these emails delivered to an alternate email address rather than the one you originally used to sign up for Power BI with.
