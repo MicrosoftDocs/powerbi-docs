@@ -28,7 +28,7 @@ If you have a free account, or are paying for the individual Power BI Pro subscr
 
 2. Select **Get Help**.
 
-![](media/powerbi-admin-closing-your-account/get-help.png)
+    ![](media/powerbi-admin-closing-your-account/get-help.png)
 
 3. Under the **Ask for help** section, select **Contact support**.
 
