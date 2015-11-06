@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Power BI Webinars"
-   description="Power BI Webinars"
+   pageTitle="PBI"
+   description="PBI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -16,13 +16,14 @@
    ms.workload="powerbi"
    ms.date="10/14/2015"
    ms.author="mihart"/>
-# Power BI Webinars
+
+   # Power BI Webinars
 
 The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to "join" the webinar.
 ## [Upcoming webinars](http://blogs.msdn.com/b/powerbi/archive/2015/10/16/webinar-fall-2015-power-bi-webinar-season.aspx)
 ## Past webinars
 
-[Power Bi Explore What is New: On Demand](="https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07JUL-GettingStartedwithPowerBI-2-Register.html?ls=JenUnderwood)
+[Power BI Explore What is New: On Demand](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07JUL-GettingStartedwithPowerBI-2-Register.html?ls=JenUnderwood)
 
 [Power BI Desktop: On Demand](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Aug15-DeepDiveCreatingReportswithPowerBIDesktop-Register.html)
 
