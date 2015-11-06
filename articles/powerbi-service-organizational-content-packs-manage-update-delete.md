@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/03/2015"
    ms.author="maggies"/>
 # Manage, update, and delete organizational content packs
 
@@ -29,7 +29,7 @@ A few organizational content pack tasks can only be made by the content pack cre
 -   Delete the content pack
 
 ## Modify and re-publish an organizational content pack
-If you make changes to the original content pack dashboard and report, Power BI will prompt you to republish. Additionally, as the content pack creator, you can update any of the options you selected in the Create Content Pack window when you were creating the original content pack. 
+If you make changes to the original content pack dashboard, report, or Excel workbook, Power BI prompts you to republish. Additionally, as the content pack creator, you can update any of the options you selected in the Create Content Pack window when you were creating the original content pack. 
 
 ## Republish with new content
 

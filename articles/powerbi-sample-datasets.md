@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Sample content packs and datasets for Power BI"
    description="Sample content packs and datasets for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -24,7 +24,7 @@ Want to try Power BI with industry-specific sample data?  Use our sample conte
 >**Note:**  
 >A *content pack* is a type of sample where the dataset is bundled with a dashboard and/or report.
 
-The following sample content packs are available for Power BI. And for each content pack, you can also [download just the Excel workbook](https://support.powerbi.com/knowledgebase/articles/a%20href="powerbi-sample-downloads.md).
+The following sample content packs are available for Power BI. And for each content pack, you can also [download just the Excel workbook](powerbi-sample-downloads.md).
 
 -   Customer Profitability
 -   Human Resources
@@ -90,5 +90,3 @@ This industry sample dashboard and underlying dataset and report focus on one of
 -   [Take a tour of the Supplier Quality sample](powerbi-sample-supplier-quality-analysis-sample-for-power-bi-take-a-tour.md).
 -   Download the [Supplier Quality sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md).
 -   [Download the Excel file for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
-
-Are you looking for a different type of sample?  [Request a new sample](http://support.powerbi.com/forums/265200-power-bi/category/91332-samples).  

@@ -1,4 +1,4 @@
-﻿<properties 
+﻿<properties
    pageTitle="SQL Server Analysis Services Tabular data in Power BI"
    description="SQL Server Analysis Services Tabular data in Power BI"
    services="powerbi"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 # SQL Server Analysis Services Tabular data in Power BI
 
@@ -34,7 +34,7 @@ In Power BI, there are two ways you can connect to SQL Server Analysis Services 
 
 ## To connect to a tabular model from Get data
 
-1.  In **My Workspace**, click **﻿Get data**.
+1.  In **My Workspace**, click **Get data**.
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_GetDataButton.png)
 
@@ -59,29 +59,26 @@ In Power BI, there are two ways you can connect to SQL Server Analysis Services 
 ﻿After you connect to the model, it will appear in your Power BI site in **My Workspace/Datasets**.
 
 
-
-
-
 ![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_Dataset_5.png)
 
 If you pin visuals from a report to the dashboard, the pinned tiles are automatically refreshed every 10 minutes. If the data in your on-premises Analysis Services Tabular server is updated, the tiles will get auto-updated after 10 minutes.
 
 
 
-## ﻿More about tabular models
+## More about tabular models
 
-﻿Tabular models are in-memory databases in [SQL Server Analysis Services](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx). Using state-of-the-art compression algorithms and a multi-threaded query processor, the Analysis Services in-memory analytics engine delivers fast access to tabular model objects and data by reporting client applications such as Microsoft Excel and Microsoft Power BI.
+Tabular models are in-memory databases in [SQL Server Analysis Services](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx). Using state-of-the-art compression algorithms and a multi-threaded query processor, the Analysis Services in-memory analytics engine delivers fast access to tabular model objects and data by reporting client applications such as Microsoft Excel and Microsoft Power BI.
 
-**﻿****High performance and highly secure**
+**High performance and highly secure**
 
 Tabular model databases can scale to terabytes of data, partitioned for optimized processing. Tabular model databases also provide a highly secure environment for your data, right down to the row-level, using role-based permissions.
 
-**﻿Authoring tabular models**
+**Authoring tabular models**
 
 Tabular models are authored in SQL Server Data Tools – Business Intelligence for Visual Studio (SSDT-BI) using tabular model project templates. You can connect to data from multiple sources, and then enrich the model by adding relationships, calculated columns, measures, KPIs, and hierarchies. Models can then be deployed to an instance of SQL Server Analysis Services where client reporting applications such as Power BI can connect to them. 
 
-**﻿****Analysis Services tabular models and Power BI**
+**Analysis Services tabular models and Power BI**
 
 If your organization already has SQL Server Analysis Services tabular models on-premises, you can use Power BI to explore, mashup, and visualize data and metrics in them. 
 
-﻿To learn more about SQL Server Analysis Services tabular models, see [Microsoft Business Intelligence](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx).
+To learn more about SQL Server Analysis Services tabular models, see [Microsoft Business Intelligence](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx).

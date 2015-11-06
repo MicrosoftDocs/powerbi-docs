@@ -41,7 +41,10 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-reports",
             "powerbi-service-dashboards",
             "powerbi-service-q-and-a",
+			"powerbi-service-dash-and-reports-fullscreen",
             "powerbi-service-whats-new",
+			"powerbi-videos",
+            "powerbi-webinars",
             "powerbi-developer-getting-started-with-developer-tools-preview",
             "powerbi-frequently-asked-questions",
             "powerbi-free-trial-for-power-bi-pro",
@@ -49,25 +52,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-browser-support",
             "powerbi-supported-languages"
           ],
-          "numberOfFeaturedArticles": 9
-        },
-        {
-          "sectionTitle": "Resources",
-          "articles": [
-            "powerbi-videos",
-            "powerbi-webinars",
-            "powerbi-sample-datasets"
-          ],
-          "numberOfFeaturedArticles": 3
+          "numberOfFeaturedArticles": 15
         },
         {
           "sectionTitle": "Samples",
           "articles": [
-            "powerbi-sample-tutorial-connect-to-the-samples",
-            "powerbi-sample-download-the-financial-sample-workbook",
+            "powerbi-sample-datasets",
+			"powerbi-sample-tutorial-connect-to-the-samples",
             "powerbi-sample-downloads",
-            "powerbi-sample-retail-analysis-take-a-tour",
-            "powerbi-sample-connect-to-the-retail-analysis-sample-content-pack",
+			"powerbi-sample-download-the-financial-sample-workbook",
             "powerbi-sample-supplier-quality-analysis-take-a-tour",
             "powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour",
             "powerbi-sample-sales-and-marketing-take-a-tour",
@@ -76,7 +69,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-sample-opportunity-analysis-take-a-tour",
             "powerbi-sample-procurement-analysis-take-a-tour"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Get data overview",
@@ -114,8 +107,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-google-analytics",
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
-            "powerbi-content-pack-marketo",      
-            "powerbi-content-pack-microsoft-dynamics-crm",    
+            "powerbi-content-pack-marketo",
+            "powerbi-content-pack-microsoft-dynamics-crm",
             "powerbi-content-pack-microsoft-dynamics-marketing",
             "powerbi-content-pack-microsoft-dynamics-nav",
 			"powerbi-content-pack-planview",
@@ -187,13 +180,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-service-how-should-i-share-my-dashboard",
 			      "powerbi-service-share-unshare-dashboard",
 			      "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
+				  "powerbi-service-display-dash-in-focus-mode",
+				  "powerbi-service-display-tile-in-full-screen-mode",
 			      "powerbi-service-rename-a-dashboard",
 			      "powerbi-service-add-an-image-to-a-dashboard",
 			      "powerbi-service-create-a-big-number-tile-for-a-dashboard",
 			      "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
 			      "powerbi-service-delete-or-remove-a-dashboard"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Reports",
@@ -225,10 +220,18 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-service-visualizations-for-reports",
             "powerbi-service-visualization-types-for-reports-and-q-and-a",
-            "powerbi-service-getting-started-with-color-formatting-and-axis-properties",
+			"powerbi-custom-visuals",
             "powerbi-service-add-visualizations-to-a-report-i",
             "powerbi-service-add-visualizations-to-a-report-ii",
             "powerbi-service-change-the-type-of-visualization-in-a-report",
+            "powerbi-custom-visuals-use",
+            "powerbi-custom-visuals-add-to-report",
+            "powerbi-custom-visuals-create-for-the-gallery",
+            "powerbi-custom-visuals-download-from-the-gallery",
+            "powerbi-custom-visuals-getting-started-with-developer-tools",
+            "powerbi-custom-visuals-review-for-security-and-privacy",
+			"powerbi-service-getting-started-with-color-formatting-and-axis-properties",
+			"powerbi-service-tips-and-tricks-for-color-formatting",
             "powerbi-service-change-how-a-chart-is-sorted",
             "powerbi-service-change-the-aggregation-in-a-chart",
             "powerbi-service-copy-and-paste-a-visualization",
@@ -241,7 +244,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-reference-lines-in-your-report",
             "powerbi-service-tips-and-tricks-for-power-bi-map-visualizations",
             "powerbi-service-text-boxes-in-reports",
-            "powerbi-service-tips-and-tricks-for-color-formatting",
             "powerbi-service-tutorial-basic-area-chart",
             "powerbi-service-tutorial-combo-chart-merge-visualizations",
             "powerbi-service-tutorial-customize-visualization-title-background-and-legend",
@@ -261,7 +263,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-how-to-use-q-and-a",
             "powerbi-service-tutorial-introduction-to-q-and-a",
             "powerbi-service-make-your-data-work-well-with-q-and-a",
-            "powerbi-service-ask-the-right-questions-of-salesforce-data"
+			"powerbi-service-q-and-a-create-featured-questions",
+            "powerbi-service-ask-the-right-questions-of-salesforce-data",
+			"powerbi-service-q-and-a-tips"
           ],
           "numberOfFeaturedArticles": 4
         },

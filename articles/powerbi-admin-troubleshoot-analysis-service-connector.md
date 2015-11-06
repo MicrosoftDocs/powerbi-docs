@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Analysis Service Connector
 
@@ -92,3 +92,6 @@ If you've followed all these steps and are still having problems, click ![](med
 
 -   Any ‘Audit Failure’ events in the Windows Security log related to the account you’re using to connect to Analysis Services. Any errors you see in SQL Profiler while trying to connect from Power BI.
 
+## See Also  
+
+[SQL Server Analysis Services Tabular data in Power BI](powerbi-sql-server-analysis-services-tabular-data.md)  

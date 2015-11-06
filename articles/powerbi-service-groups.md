@@ -27,11 +27,12 @@ Groups in Power BI bring you and your colleagues together to collaborate, commun
 
 Groups and [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) complement each other. When you create dashboards, reports, or content packs in the group workspace, you can decide that everyone in that group can edit the group's content, or you can let some members edit, and others just read. See [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) for more about other ways to share.  
 
-Collaboration doesn’t end with Power BI. It continues with other Office 365 group services, like sharing files on OneDrive for Business, conversations in Exchange, calendar, tasks, and so on.
+Collaboration doesn’t end with Power BI. It continues with other Office 365 group services, like sharing files on OneDrive for Business, conversations in Exchange, calendar, tasks, and so on. [Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md).
 
 You can also share dashboards, reports, and datasets read-only with people outside your group. The process is the same as [sharing dashboards in your own workspace.](powerbi-service-share-unshare-dashboard.md)
 
 ## More about groups in Power BI  
 [Create a group](powerbi-service-create-a-group-in-power-bi.md)  
 [Connect to files on your group's OneDrive for Business](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md)  
+[Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md)  
 [Manage your group](powerbi-service-manage-your-group-in-power-bi-and-office-365.md)  

@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Download the Power BI industry samples (Excel workbooks)"
    description="Download the Power BI industry samples (Excel workbooks)"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -18,6 +18,8 @@
    ms.author="mihart"/>
 
 # Download the Power BI industry samples (Excel workbooks)
+
+Microsoft provides sample content packs and sample Excel workbooks. This article explains how to download and open the sample Excel workbooks. To learn how to add the sample content packs to Power BI, see [sample content packs](powerbi-sample-datasets)
 
 ## Important information
 
@@ -80,4 +82,3 @@ The workbook contains the actual data, but it's in the data model, not in worksh
 [Sample datasets](powerbi-sample-datasets.md)
 
 [Get data for Power BI](powerbi-service-get-data.md)
-

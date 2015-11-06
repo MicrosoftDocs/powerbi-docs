@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 # Signing up for Power BI with a new Office 365 Trial
 
@@ -34,3 +34,6 @@ If you are having problems signing up for Power BI with your work email address,
 
 -   By using this signup method you are creating a new organizational tenant and you will become the administrator of the tenant.  Because sharing in Power BI is only allowed within a single tenant, you will not be able to share with users outside this tenant.  For example, if you create the tenant yourcompany.onmicrosoft.com in Step 2, you will not be able to share with users at yourcompany.com.  You can add new users to your tenant, then share with them, as described in [this help topic](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
 
+## See also
+
+[Administering Power BI in your organization](powerbi-admin-administering-power-bi-in-your-organization.md)

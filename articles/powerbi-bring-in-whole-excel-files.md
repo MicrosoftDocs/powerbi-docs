@@ -38,7 +38,7 @@ Excel workbooks in Power BI display the same items as workbooks in Excel Online.
 
 Excel workbooks can't display named ranges in Excel Online. If you come across a feature that can't be displayed in Excel Online, you can open the workbook in Excel on your computer.
 
-### Notes about connecting to Excel workbooks in Power BI
+## Some important things to know
 
 -   Here are the maximum sizes of an Excel workbook and Data Model you can connect to:
 
@@ -57,7 +57,7 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 -   If you have an Excel 2010 workbook with a PowerPivot 2010 data model, you need to [upgrade the workbook to Excel 2013](https://support.office.com/article/Upgrade-Power-Pivot-Data-Models-to-Excel-2013-c66578cb-74d5-43ae-a474-5a01be5db439).
 
 
-### Connect to an Excel file on OneDrive for Business
+## Connect to an Excel file on OneDrive for Business
 
 1.  Select **Get Data** at the bottom of the left navigation pane. 
 
