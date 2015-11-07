@@ -16,11 +16,13 @@
    ms.workload="powerbi"
    ms.date="10/14/2015"
    ms.author="mihart"/>
+
 # Power BI Webinars
 
-The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to "join" the webinar.
+The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** the webinar.
 
 ## Upcoming webinars
+
 [Power BI Content Pack for Twilio](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05Nov15-TwilioPowerBIContentPack-Register.html)
 
 [Using the Cortana Analytics Process to build intelligent applications](https://info.microsoft.com/CO-Azure-WBNR-FY16-10Nov15-CortanaIntelligentApplication-Registration.html)
@@ -40,11 +42,12 @@ The following webinars can help you to understand and use Power BI. After you re
 [Microsoft Power BI Technical Overview - January 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-20Jan16-PowerBITechnicalOverview-Register.html)
 
 ## Past webinars
+
 [Power BI Technical Overview - September 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-09Sep-16-PowerBITechnicalOverview-Register.html)
 
 [Creating Reports for Power BI using Power BI Desktop](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Aug15-DeepDiveCreatingReportswithPowerBIDesktop-Register.html)
 
-[Power BI Explore What is New: On Demand](="https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07JUL-GettingStartedwithPowerBI-2-Register.html?ls=JenUnderwood)
+[Power BI Explore What is New: On Demand](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07JUL-GettingStartedwithPowerBI-2-Register.html?ls=JenUnderwood)
 
 [Power BI Desktop: On Demand](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Aug15-DeepDiveCreatingReportswithPowerBIDesktop-Register.html)
 
