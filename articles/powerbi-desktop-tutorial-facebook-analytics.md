@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Facebook analytics using Power BI Desktop"
    description="Tutorial: Facebook analytics using Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Tutorial: Facebook analytics using Power BI Desktop
 
@@ -24,25 +24,25 @@ Here are the steps you'll take:
 
 -  **Task 1:** Connect to a Facebook Page
 
--  **Task 2**: Create visualizations using the Report view 
+-  **Task 2**: Create visualizations using the Report view
 
 	-  **Step 1**: Create a Treemap visualization
 
--  **Task 3**: Shape data in the Query view 
+-  **Task 3**: Shape data in the Query view
 
-	-  **Step 1**: Split the date-time column into two 
+	-  **Step 1**: Split the date-time column into two
 
 	-  **Step 2**: Add an aggregate value from a related table
 
--  **Task 4**: Create additional visualizations using the Report view 
+-  **Task 4**: Create additional visualizations using the Report view
 
-	-  **Step 1**: Load the query to your report 
+	-  **Step 1**: Load the query to your report
 
 	-  **Step 2**: Create a Line chart and a Bar chart
 
 ## **Task 1: Connect to a Facebook page**
 
-In this task you import data from the [Microsoft Power BI Facebook](https://www.facebook.com/microsoftbi)site (here's the URL: *https://www.facebook.com/microsoftbi )*. 
+In this task you import data from the [Microsoft Power BI Facebook](https://www.facebook.com/microsoftbi)site (here's the URL: *https://www.facebook.com/microsoftbi )*.
 
 Anyone can connect to that page, and follow these steps - no special credentials (other than your own Facebook account, which you use in this step) are required.
 
@@ -70,15 +70,15 @@ Anyone can connect to that page, and follow these steps - no special credentials
 
 	![](media/powerbi-desktop-tutorial-facebook-analytics/FacebookCredentials.png)
 
-After establishing a connection to the page, you will see the data being loaded in the model.  
+After establishing a connection to the page, you will see the data being loaded in the model. 
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/T_FB_1-LoadPreview.png)
 
-From there, **Query Editor** displays the data. **Query Editor** is part of Power BI Desktop, but loads in a separate window, and is where you perform all your transformations on your data connections. 
+From there, **Query Editor** displays the data. **Query Editor** is part of Power BI Desktop, but loads in a separate window, and is where you perform all your transformations on your data connections.
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/T_FB_1-IntoQueryEditor.png)
 
-When your data is how you want it, you can load it into Power BI Desktop. Select **Load & Close** from the **Home** ribbon. 
+When your data is how you want it, you can load it into Power BI Desktop. Select **Load & Close** from the **Home** ribbon.
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/T_FB_1-LoadandClose.png)
 
@@ -127,7 +127,7 @@ In the following image, those settings are already made and reflected in the vis
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/FBDesigner3b.png)
 
-Next, let's change the color of one of the data points. The link data point should be blue, so it's closer to the common color for hyperlinks. 
+Next, let's change the color of one of the data points. The link data point should be blue, so it's closer to the common color for hyperlinks.
 
 Select the arrow next to **Data Colors** to expand that section. The data points are shown, with selection arrows beside each color that allows us to select a different color for each data point.
 
@@ -137,7 +137,7 @@ When you click on the color box down arrow beside any data point, a color select
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/FBDesigner3d.png)
 
-That's better. In the following image, you can see how the color is applied to the data point in the visualization, and that the legend is also automatically updated, as is its color in the **Data Colors** section. 
+That's better. In the following image, you can see how the color is applied to the data point in the visualization, and that the legend is also automatically updated, as is its color in the **Data Colors** section.
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/FBDesigner3e.png)
 
@@ -159,19 +159,19 @@ In this step, you will split the **created\_time** column to get both the date a
 
 	![](media/powerbi-desktop-tutorial-facebook-analytics/10.png)
 
-3.  Rename the created columns to **created\_date** and **created\_time** respectively. 
+3.  Rename the created columns to **created\_date** and **created\_time** respectively.
 
 4.  Select the new column, **created\_time**, **** and in the **Query view** ribbon, navigate to the **Add Column** tab and select **Time\>Hour** under the **From Date & Time** group. This will add a new column that is only the hour component of the time.
 
 	![](media/powerbi-desktop-tutorial-facebook-analytics/11.png)
 
-5.  Change the type of the new **Hour** column to **Whole Number**, by navigating to the **Home** tab and selecting the **Data Type** drop down or by right-clicking the column and selecting **Transform\>Whole Number**. 
+5.  Change the type of the new **Hour** column to **Whole Number**, by navigating to the **Home** tab and selecting the **Data Type** drop down or by right-clicking the column and selecting **Transform\>Whole Number**.
 
 	![](media/powerbi-desktop-tutorial-facebook-analytics/12.png)
 
 **Step 2:** Add an aggregate value from a related table
 
-In this step, you add the count of shares from the nested value so that you can use it in the visualizations. 
+In this step, you add the count of shares from the nested value so that you can use it in the visualizations.
 
 1.  Continue scrolling to the right until you see the **shares** column. The nested value indicates that we need to do another transform in order to get the actual values.
 
@@ -181,11 +181,11 @@ In this step, you add the count of shares from the nested value so that you can 
 
 	After the data loads, rename the column to **shares** by double clicking on the column name, right clicking the column or in the **Query view** ribbon, select **Rename** under the **Transform** tab and **Any Column** group.
 
-3.  Finally, change the type of the new **shares** column to **Whole Number**. With the column selected, the type can be changed by right-clicking the column and selecting **Transform\>Whole Number** or **** by navigating to the **Home** tab and selecting the **Data Type** drop down or. 
+3.  Finally, change the type of the new **shares** column to **Whole Number**. With the column selected, the type can be changed by right-clicking the column and selecting **Transform\>Whole Number** or **** by navigating to the **Home** tab and selecting the **Data Type** drop down or.
 
 ### Query steps created
 
-As you perform transformations in the Query view, query steps are created and listed in the **Query Settings** pane, in the **APPLIED STEPS** list. Each query step has a corresponding Query formula, also known as the "M" language. 
+As you perform transformations in the Query view, query steps are created and listed in the **Query Settings** pane, in the **APPLIED STEPS** list. Each query step has a corresponding Query formula, also known as the "M" language.
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/16.png)
 
@@ -222,7 +222,7 @@ In Power BI Desktop, we need to make sure we're in **Report** view. Select the t
 
 In order to create a visualization, we can drag fields from the **Field list** and drop them in the **Report canvas**.
 
-1.  Drag the **shares** field onto the **Report** canvas, which creates a bar chart. Then drag created\_date onto the chart, and Power BI Desktop changes the visualization to a **Line Chart**. 
+1.  Drag the **shares** field onto the **Report** canvas, which creates a bar chart. Then drag created\_date onto the chart, and Power BI Desktop changes the visualization to a **Line Chart**.
 
 	![](media/powerbi-desktop-tutorial-facebook-analytics/19.png)
 
@@ -236,7 +236,7 @@ In order to create a visualization, we can drag fields from the **Field list** a
 
 4.  Change the visualization type to **Bar Chart**.
 
-5.  The **Bar Chart** is created, but the axis isn't what we want - we want it sorted in the other direction (from high to low). Select the down arrow next to **Y-Axis** to expand that section. We need to change the type of axis from **Continuous** to **Categorical**, so it'll sort how we want it (the image below shows the axis before we make the selection - check out the subsequent image for how we want it to look). 
+5.  The **Bar Chart** is created, but the axis isn't what we want - we want it sorted in the other direction (from high to low). Select the down arrow next to **Y-Axis** to expand that section. We need to change the type of axis from **Continuous** to **Categorical**, so it'll sort how we want it (the image below shows the axis before we make the selection - check out the subsequent image for how we want it to look).
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/22.png)
 

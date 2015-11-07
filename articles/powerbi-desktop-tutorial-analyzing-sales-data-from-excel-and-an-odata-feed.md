@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Analyzing sales data from Excel and an OData feed"
    description="Tutorial: Analyzing sales data from Excel and an OData feed"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Tutorial: Analyzing sales data from Excel and an OData feed
 
@@ -34,7 +34,7 @@ In the **Save As** dialog box, name the file **Products.xlsx**.
 
 ## Task 1: Get product data from an Excel workbook
 
-In this task, you import products from the Products.xlsx file into Power BI Desktop. 
+In this task, you import products from the Products.xlsx file into Power BI Desktop.
 
 
 ### Step 1: Connect to an Excel workbook
@@ -59,13 +59,13 @@ In this task, you import products from the Products.xlsx file into Power BI Des
 
 
 
-In this step you remove all columns except **ProductID**, **ProductName**, **UnitsInStock**, and **QuantityPerUnit**. In Power BI Desktop, there are often a few ways to accomplish the same task. For example, many buttons in the ribbon can also be achieved by using the right-click menu on a column or a cell. 
+In this step you remove all columns except **ProductID**, **ProductName**, **UnitsInStock**, and **QuantityPerUnit**. In Power BI Desktop, there are often a few ways to accomplish the same task. For example, many buttons in the ribbon can also be achieved by using the right-click menu on a column or a cell.
 
 Power BI Desktop includes Query Editor, which is where you shape and transform your data connections. Query Editor opens automatically when you select **Edit** from **Navigator**. You can also open the Query Editor by selecting **Edit Queries** from the **Home** ribbon in Power BI Desktop. The following steps are performed in Query Editor.
 
 1.  In Query Editor, select the **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns (use **Ctrl+Click** to select more than one column, or **Shift+Click** to select columns that are beside each other).
 
-2.  Select **Remove Columns** \> **Remove Other Columns** from the ribbon, or right-click on a column header and click **Remove Other Columns**. 
+2.  Select **Remove Columns** \> **Remove Other Columns** from the ribbon, or right-click on a column header and click **Remove Other Columns**.
 
 ![](media/powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/AnlayzingSalesData_RemoveOtherColumns.png)
 
@@ -197,11 +197,11 @@ As you perform query activities in Query Editor, query steps are created and lis
 
 ## Task 3: Combine the Products and Total Sales queries
 
-Power BI Desktop does not require you to combine queries to report on them. Instead, you can create **Relationships** between datasets. These relationships can be created on any column that is common to your datasets. For more information see [Create and manage relationships](powerbi-desktop-create-and-manage-relationships.md). 
+Power BI Desktop does not require you to combine queries to report on them. Instead, you can create **Relationships** between datasets. These relationships can be created on any column that is common to your datasets. For more information see [Create and manage relationships](powerbi-desktop-create-and-manage-relationships.md).
 
 In this tutorial, we have Orders and Products data that share a common 'ProductID' field, so we need to ensure there's a relationship between them in the model we're using with Power BI Desktop. Simply specify in Power BI Desktop that the columns from each table are related (i.e. columns that have the same values). Power BI Desktop works out the direction and cardinality of the relationship for you. In some cases, it will even detect the relationships automatically.
 
-In this task, you confirm that a relationship is established in Power BI Desktop between the **Products** and **Total Sales** queries. 
+In this task, you confirm that a relationship is established in Power BI Desktop between the **Products** and **Total Sales** queries.
 
 
 ### Step 1: Confirm the relationship between Products and Total Sales
@@ -289,4 +289,3 @@ After you perform all these steps, you will have a Sales Report that combines da
 [Read the Power BI Blog.](http://go.microsoft.com/fwlink/?LinkID=519327)
 
 ﻿
-

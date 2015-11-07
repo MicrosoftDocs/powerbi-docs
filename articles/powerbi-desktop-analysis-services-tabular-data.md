@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Analysis Services Tabular data in Power BI Desktop"
    description="Analysis Services Tabular data in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Analysis Services Tabular data in Power BI Desktop
 
@@ -108,4 +108,3 @@ Once you create a Power BI Desktop file with an explore live connection, there m
 2. Enter the new server name.
 
  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_ChName_Dialog.png)
-

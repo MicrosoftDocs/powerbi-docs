@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 
 # Power BI Archived Workspace  
@@ -28,21 +28,21 @@ No content will be deleted from your Archived Workspace.  You can continue to g
 
 However, there are some restrictions on content in your Archived Workspace:
 
--   **﻿OneDrive for Business.  **﻿You will no longer be able to get data or refresh from OneDrive for Business for datasets in your Archived Workspace.  If you try to connect to this source, you will receive a warning.
+-   **OneDrive for Business.  ** You will no longer be able to get data or refresh from OneDrive for Business for datasets in your Archived Workspace.  If you try to connect to this source, you will receive a warning.
 
--   **﻿Sharing dashboards.  **﻿You can't share dashboards with other users from your Archived Workspace.  Any users that already have access will continue to be able to view shared dashboards by accessing their Archived Workspace.
+-   **Sharing dashboards.  ** You can't share dashboards with other users from your Archived Workspace.  Any users that already have access will continue to be able to view shared dashboards by accessing their Archived Workspace.
 
--   **﻿Creating groups.  **﻿You can't create groups in your Archived Workspace.
+-   **Creating groups.  ** You can't create groups in your Archived Workspace.
 
--   **﻿Access on Power BI mobile apps.  **﻿While you can still view content on the web in your Archived Workspace, this content will no longer appear in the Power BI mobile apps.
+-   **Access on Power BI mobile apps.  **﻿While you can still view content on the web in your Archived Workspace, this content will no longer appear in the Power BI mobile apps.
 
 ## Migrating Content in your Archived Workspace  
 To continue to use Power BI, you should create new content in your My Workspace, managed by your IT department.   You should also plan to migrate any content in your Archived Workspace to your My Workspace.  How you migrate content depends on the kind of content:
 
--   **Excel or Power BI Desktop ﻿Datasets.  **﻿Migrate these datasets by switching from your Archived Workspace to My Workspace and re-uploading the Excel or Power BI Desktop file by clicking the "My Data" button.  If you set up scheduled refresh, you will need to reconfigure those settings for the new dataset in My Workspace.
+-   **Excel or Power BI Desktop ﻿Datasets.  ** Migrate these datasets by switching from your Archived Workspace to My Workspace and re-uploading the Excel or Power BI Desktop file by clicking the "My Data" button.  If you set up scheduled refresh, you will need to reconfigure those settings for the new dataset in My Workspace.
 
--   **﻿Other Datasets.  **﻿Switch to My Workspace and then click the Get Data button to reconnect to any other datasets you created in your Archived Workspace.  You may need to re-enter security or connection information.
+-   **Other Datasets.  ** Switch to My Workspace and then click the Get Data button to reconnect to any other datasets you created in your Archived Workspace.  You may need to re-enter security or connection information.
 
--   **Reports.  **﻿Reports that were contained in Excel or Power BI Desktop files or reports installed as part of content packs will be automatically recreated once you re-upload the corresponding Excel or Power BI Desktop file or reconnect to the content pack.  If you created your own reports through the Power BI service, you will need to recreate those reports in your My Workspace.
+-   **Reports.  ** Reports that were contained in Excel or Power BI Desktop files or reports installed as part of content packs will be automatically recreated once you re-upload the corresponding Excel or Power BI Desktop file or reconnect to the content pack.  If you created your own reports through the Power BI service, you will need to recreate those reports in your My Workspace.
 
--   **Dashboards.  **﻿Dashboards installed as part of content packs will be automatically recreated when you reconnect to the content pack in My Workspace.  If you created your own dashboards through the Power BI service, you will need to recreate those dashboards in your My Workspace.  
+-   **Dashboards.  ** Dashboards installed as part of content packs will be automatically recreated when you reconnect to the content pack in My Workspace.  If you created your own dashboards through the Power BI service, you will need to recreate those dashboards in your My Workspace.  

@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Data types in Power BI Desktop"
    description="Data types in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Data types in Power BI Desktop
 
@@ -44,9 +44,9 @@ Power BI Desktop supports three number types:
 
 **Decimal Number** – Represents a 64 bit (eight-byte) floating point number. It’s the most common number type and corresponds to numbers as you usually think of them.  Although designed to handle numbers with fractional values, it also handles whole numbers.  The Decimal Number type can handle negative values from -1.79E +308 through -2.23E -308, 0, and positive values from 2.23E -308 through 1.79E + 308. For example, numbers like 34, 34.01, and 34.000367063 are valid decimal numbers. The largest value that can be represented in a Decimal Number type is 15 digits long.  The decimal separator can occur anywhere in the number. The Decimal Number type corresponds to how Excel stores its numbers.
 
-**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative).  The Fixed Decimal Number type is useful in cases where rounding might introduce errors.  When you work with many numbers that have small fractional values they can sometimes accumulate and force a number to be just slightly off.  Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors.   If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency Data type in Power Pivot.  
+**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative).  The Fixed Decimal Number type is useful in cases where rounding might introduce errors.  When you work with many numbers that have small fractional values they can sometimes accumulate and force a number to be just slightly off.  Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors.   If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency Data type in Power Pivot. 
 
-**Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).  It can represent the largest possible number of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding.  
+**Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,808 (-2^63) and 9,223,372,036,854,775,807 (2^63-1).  It can represent the largest possible number of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding. 
 
 ### Date/Time Types
 
