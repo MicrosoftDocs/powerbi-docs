@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Sort by column in Power BI Desktop"
    description="Sort by column in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 
 # Sort by column in Power BI Desktop  
@@ -31,11 +31,11 @@ In this case, the data source table for Stage Label (in an Excel worksheet) has 
 
 ![](media/powerbi-desktop-sort-by-column/SBC_Table.png)
 
-The StageOrder column has the order we want.  So, what we want to do is sort the Stage Label column by the StageOrder column.   
+The StageOrder column has the order we want.  So, what we want to do is sort the Stage Label column by the StageOrder column.  
 
 **To sort by a different column**
 
-**1.**  In Report View or Data View, in the Fields list, we select the field we want sorted.  In this case, we select **Stage Label**.  
+**1.**  In Report View or Data View, in the Fields list, we select the field we want sorted.  In this case, we select **Stage Label**. 
 
 ![](media/powerbi-desktop-sort-by-column/SBC_SelectStageLabel.png)
 
@@ -43,7 +43,7 @@ The StageOrder column has the order we want.  So, what we want to do is sort th
 
 ![](media/powerbi-desktop-sort-by-column/SBC_Menu_DefaultOrder.png)
 
-**3.**  We really want to sort by StageOrder, so we select the **StageOrder** column.  
+**3.**  We really want to sort by StageOrder, so we select the **StageOrder** column. 
 
 ![](media/powerbi-desktop-sort-by-column/SBC_Menu_StageOrder.png)
 

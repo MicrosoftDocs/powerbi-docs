@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 
 # How to use the same account login for Power BI and Azure
@@ -25,7 +25,7 @@ Power BI signs you in with your organizational account, associated with your wor
 
 If you want to use the same login for both Azure and Power BI, be sure to sign in to Azure with your organizational account.
 
-**﻿What if I already sign in to Azure with my Microsoft Account?**
+**What if I already sign in to Azure with my Microsoft Account?**
 
 You can add your organizational account as a co-administrator in Azure.  Here's how:
 

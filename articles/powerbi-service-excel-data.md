@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="owend"/>
 # Excel data in Power BI
 
@@ -45,6 +45,4 @@ One of the really great features in Power BI is being able to automatically refr
 
 ## Troubleshooting
 
-Currently, when you connect to an Excel workbook as a dataset, Power BI only imports data that is part of a named table or a data model. As a result:
-
--   If the workbook contains no named tables, Power View sheets, or Excel data models, you see this error. The article "[We couldn't find any data in your Excel workbook](powerbi-admin-troubleshoot-excel-workbook-data.md)" explains how to fix the workbook and re-import it.
+Currently, when you connect to an Excel workbook as a dataset, Power BI only imports data that is part of a named table or a data model. As a result, if the workbook contains no named tables, Power View sheets, or Excel data models, you might see this error: "We couldn't find any data in your Excel workbook". [This article](powerbi-admin-troubleshoot-excel-workbook-data.md) explains how to fix your workbook and re-import it.

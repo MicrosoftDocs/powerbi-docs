@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Get Power BI Desktop"
    description="Get Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
@@ -44,19 +44,18 @@ Power BI Desktop makes discovering data easy. You can import data from a wide va
 
 ### Model data
 
-Power BI Desktop provides advanced data modeling features like autodetect and manual relationships, custom measures, calculated columns, data categorization, and sort by column. [Data View](powerbi-desktop-data-view.md) makes seeing the data in your model easy, and with [Relationship View](powerbi-desktop-relationship-view.md), you get a customizable diagram view of all your tables and the relationships between them. 
+Power BI Desktop provides advanced data modeling features like autodetect and manual relationships, custom measures, calculated columns, data categorization, and sort by column. [Data View](powerbi-desktop-data-view.md) makes seeing the data in your model easy, and with [Relationship View](powerbi-desktop-relationship-view.md), you get a customizable diagram view of all your tables and the relationships between them.
 
 ### Create reports
 
-Power BI Desktop includes [Report View](powerbi-desktop-report-view.md). Select the fields you want, add filters, choose from dozens of visuals. Report View gives you many of  the same great report and visualization tools just like when creating a report in the Power BI service 
+Power BI Desktop includes [Report View](powerbi-desktop-report-view.md). Select the fields you want, add filters, choose from dozens of visuals. Report View gives you many of  the same great report and visualization tools just like when creating a report in the Power BI service
 
 ### Save
 
 With the Power BI Desktop, you can save your work as a Power BI Desktop file.
 > ![](media/powerbi-desktop-get-the-desktop/PBI_GetPBIDesignerPreview_SavedFile.png)
-> 
+>
 
 ### Publish
 
 In Power BI Desktop, you can publish and share your datasets and reports right to your Power BI site. To learn more, see [Publish from Power BI Desktop.](powerbi-desktop-upload-desktop-files.md).
-

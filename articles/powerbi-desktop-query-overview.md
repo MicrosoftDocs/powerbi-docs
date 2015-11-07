@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Query overview in Power BI Desktop"
    description="Query overview in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 
 # Query overview in Power BI Desktop  
@@ -139,7 +139,7 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 
 -   [Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)
 
--   [Common Query Tasks in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471648)   
+-   [Common Query Tasks in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471648)  
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!  
 ![](media/powerbi-desktop-query-overview/SendFeedback.png)  

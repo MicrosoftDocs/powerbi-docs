@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Create your own measures in Power BI Desktop"
    description="Tutorial: Create your own measures in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Tutorial: Create your own measures in Power BI Desktop
 
@@ -87,7 +87,7 @@ We need a measure to subtract discounts and returns from sales amounts. Because 
 > **Tip:** You can also create a new measure by clicking on the New Measure button in the ribbon on Power BI Desktop’s Home tab.
 >
 > ![](media/powerbi-desktop-tutorial-create-measures/MeasTut_NetSales_NewMeasureRibbon.png)
-> 
+>
 > When you create a measure from the ribbon, the measure could be created in any of the tables. While a measure doesn’t have to belong in a particular table, it will be easier to find if you create them in a table most logical to you. If you want it to be in a particular table, click the table first, to make it active. Then click New Measure. In our case, we’re going to create our first measure in the Sales table.
 
 The formula bar appears along the top of the Report Canvas. This is where we can rename our measure and enter a DAX formula.
@@ -270,4 +270,3 @@ Measures give us a lot of power in getting the insights we want from our data. W
 If you want to take a deeper dive into DAX formulas, and create some more advanced measures, see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
 Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
-

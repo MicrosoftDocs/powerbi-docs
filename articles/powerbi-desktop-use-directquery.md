@@ -1,20 +1,20 @@
-<properties 
+<properties
    pageTitle="Use DirectQuery in Power BI Desktop (Preview Feature)"
    description="Use DirectQuery in Power BI Desktop (Preview Feature)"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop (Preview Feature)  

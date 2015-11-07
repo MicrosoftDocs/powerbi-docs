@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Free trial for Power BI Pro"
    description="Free trial for Power BI Pro"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Free trial for Power BI Pro
 
@@ -37,4 +37,3 @@ When you try any of these features, you will be prompted to start your free tria
 -   Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
 -   ﻿If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for an [admin Power BI Pro trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO).  You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial.
 -   Using shared queries in the Data Catalog is not available through the in-product trial.  If you would like to try this feature, you can sign up for an [admin Power BI Pro trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO).
-
