@@ -16,6 +16,7 @@
    ms.date="11/06/2015"
    ms.author="mihart"/>
 
+
 # Power BI webinars
 
    The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** the webinar.
