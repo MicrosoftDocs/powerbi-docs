@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="mihart"/>
 
-# Power BI Webinars
+   # Power BI Webinars
 
-The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** the webinar.
+   The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** the webinar.
 
 ## Upcoming webinars
 
@@ -84,3 +84,6 @@ The following webinars can help you to understand and use Power BI. After you re
 [Leveraging predictive analytics for Sales and Marketing](https://info.microsoft.com/CO-Azure-WBNR-FY16-09Sep-01-Predictive-Analytics-for-Sales-Marketing.html)
 
 [Real-time and Predictive Insights on Vehicle Health and Driving Behavior](https://info.microsoft.com/CO-Azure-WBNR-FY16-15Sep15-Real-Time-Predictive-Insights-Cortana-Analytics-Register.html)
+
+## See Also  
+[Get started with Power BI](powerbi-service-get-started.md)  
