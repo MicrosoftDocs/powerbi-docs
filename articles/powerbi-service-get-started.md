@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Get started with Power BI"
    description="Get started with Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="mihart"/>
 # Get started with Power BI
 
@@ -50,15 +50,15 @@ Here's an example of getting data from a CSV file. Want to follow along with th
     ![](media/powerbi-service-get-started/gs4.png)
 
 
-## Step 2: Explore your dataset
+## Step 2: Start exploring your dataset
 
-Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.**﻿**﻿
+Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.
 
 1.  Select the dataset image on the dashboard to explore the data you just connected to.
 
     ![](media/powerbi-service-get-started/gettingstart4.png)
 
-2.  In the Fields list on the right side of the page, select fields to build a visualization.  Click the checkbox beside **﻿Gross Sales**﻿ and then **﻿Date**﻿.
+2.  In the **Fields** list on the right side of the page, select fields to build a visualization.  Click the checkbox beside **﻿Gross Sales**﻿ and then **﻿Date**﻿.
 
     ![](media/powerbi-service-get-started/fields.png)
 
@@ -66,7 +66,7 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
     ![](media/powerbi-service-get-started/gettingstart5.png)
 
-4.  When you have a visualization you want on your dashboard, hover over the visualization and select the **﻿Pin **﻿icon.  When you pin this visualization, it will be stored on your dashboard so you can track the latest value at a glance.
+4.  When you have a visualization you want on your dashboard, hover over the visualization and select the **﻿Pin**﻿ icon.  When you pin this visualization, it will be stored on your dashboard so you can track the latest value at a glance.
 
     ![](media/powerbi-service-get-started/pin.png)
 
@@ -91,7 +91,7 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
 8.  Back on your dashboard, you can see your new visualization. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
 
-    ![](media/powerbi-service-get-started/gsPinFirst.png)
+    ![](media/powerbi-service-get-started/gsPinFirst2.png)
 
     You can click the new tile on your dashboard to return to the report any time.
 
@@ -99,13 +99,39 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
     ﻿![](media/powerbi-service-get-started/PBI_GetStartQnA.png)
 
-10. Select the pin icon ![](media/powerbi-service-get-started/PBI_PinIcon.png) to show this visualization on your dashboard too.
+## Step 3: Continue exploring with Q&A
 
-11. Pin the visualization to the Financial Sample dashboard.
+1. Select the pin icon ![](media/powerbi-service-get-started/PBI_PinIcon.png) to show this visualization on your dashboard too.
+
+2. Pin the visualization to the Financial Sample dashboard.
 
     ![](media/powerbi-service-get-started/gsPinWithQnA.png)
 
-12. Select the back arrow ![](media/powerbi-service-get-started/PBI_QABackArrow.png) to return to your dashboard where you'll see the new tile.
+3. Select the back arrow ![](media/powerbi-service-get-started/PBI_QABackArrow.png) to return to your dashboard where you'll see the new tile.
+
+## Step 4: Auto Insights
+
+Another way to explore your dataset is to run Auto Insights.  Power BI looks through your dataset and presents you with a set of insights.  Start here and dig deeper or pin one or more of the insights to your dashboard.
+
+1. In the left navigation pane, under **Datasets** > **Financial Sample** and select the ellipses (...).
+
+2. Select **Get Insights**.
+
+  ![](media/powerbi-service-get-started/PBI_AutoInsightEllipses.png)
+
+  In the top right corner, you'll see a status message and then a Success message.
+
+  ![](media/powerbi-service-get-started/PBI_AutoInsightsSearching.png)
+
+  ![](media/powerbi-service-get-started/PBI_AutoInsightSuccess.png)
+
+
+3. Select **View Insights** to review the insights found by Power BI.
+
+  ![](media/powerbi-service-get-started/PBI_AutoInsightsMore.png)
+
+4. Pin one or more visualizations to your dashboard using the same method described above.
+
 
 In a few minutes, you've created an interactive dashboard.
 
@@ -128,4 +154,3 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 -   Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
 -   Sign up for the [Power BI Newsletter](http://www.microsoft.com/powerBI/newsletter.aspx)
 -   Watch our [Power BI Getting Started webinars](http://www.microsoft.com/powerBI/webinars.aspx) on demand
-
