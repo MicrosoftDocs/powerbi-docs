@@ -5,8 +5,7 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
-   editor=""
-   tags=""/>
+   editor=""/>
  
 <tags
    ms.service="powerbi"
