@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Power BI Pro content - what is it?"
    description="Power BI Pro content - what is it?"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  

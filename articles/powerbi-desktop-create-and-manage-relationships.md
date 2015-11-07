@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Create and manage relationships in Power BI Desktop"
    description="Create and manage relationships in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 
 # Create and manage relationships in Power BI Desktop
@@ -65,7 +65,7 @@ See the Understanding advanced options section later in this article for more de
 
 **Both** - This is the most common, default direction. This means for filtering purposes, both tables are treated as if they're a single table.  This works well with a single table that has a number of lookup tables that surround it.  An example is a Sales actuals table with a lookup table for department.  This is often called a Star schema configuration (a central table with several Lookup tables.)  However, if you have two or more tables that also have lookup tables (with some in common) then you wouldn't want to use the Both setting.  To continue the previous example, in this case, you also have a budget sales table that records target budget for each department.  And, the department table is connected to both the sales and the budget table.  Avoid the Both setting for this kind of configuration.
 
-**Single** - This means that filtering choices in connected tables work on the table where values are being aggregated. If you import a Power Pivot in Excel 2013 or earlier data model, all relationships will have a single direction.  
+**Single** - This means that filtering choices in connected tables work on the table where values are being aggregated. If you import a Power Pivot in Excel 2013 or earlier data model, all relationships will have a single direction. 
 
 See the Understanding advanced options section later in this article for more details about when to change cross filter direction.
 
@@ -77,13 +77,13 @@ See the Understanding advanced options section later in this article for more de
 
 ## Understanding relationships
 
-Once you have connected two tables together with a relationship, you can work with the data in both tables as if they were a single table, freeing you from having to worry about relationship details, or flattening those tables into a single table before importing them.  In many situations, Power BI Desktop can automatically create relationships for you, so creating those relationships yourself might not even be needed. However, if Power BI Desktop can’t determine with a high-degree of certainty that a relationship between two tables should exist, it will not automatically create the relationship . In that case, you will need to create the relationship.    
+Once you have connected two tables together with a relationship, you can work with the data in both tables as if they were a single table, freeing you from having to worry about relationship details, or flattening those tables into a single table before importing them.  In many situations, Power BI Desktop can automatically create relationships for you, so creating those relationships yourself might not even be needed. However, if Power BI Desktop can’t determine with a high-degree of certainty that a relationship between two tables should exist, it will not automatically create the relationship . In that case, you will need to create the relationship.   
 
 Let’s do a little tutorial, to better show you how relationships work in Power BI Desktop.
 
 **Tip:** You can complete this lesson yourself. Copy the ProjectHours table below into an Excel worksheet, select all of the cells, click **INSERT** \> **Table**. In the **Create Table** dialog, just click **OK**. Then in **Table Name**, type **ProjectHours**. Do the same for the CompanyProject table. You can then import the data by using **Get Data** in Power BI Desktop. Select your workbook and tables as a data source.
 
-This first table, ProjectHours, is a record of work tickets that record the number of hours a person has worked on a particular project.   
+This first table, ProjectHours, is a record of work tickets that record the number of hours a person has worked on a particular project.  
 
 **ProjectHours**
 
@@ -102,7 +102,7 @@ This first table, ProjectHours, is a record of work tickets that record the numb
 | 1010 | Bowen, Eli | 28 | Green | 10/1/2013 |
 | 1011 | Bowen, Eli | 9 | Blue | 10/15/2013 |
 
-This second table, CompanyProject, is a list of projects with an assigned priority, A, B, or C.  
+This second table, CompanyProject, is a list of projects with an assigned priority, A, B, or C. 
 
 **CompanyProject**
 
@@ -219,7 +219,7 @@ But, let’s say you know the data will change the next time you refresh it. A r
 |Blue| 80,000|6/1/2013|
 |Red| 90,000|6/1/2013|
 
- This means the best combination of the two tables now really looks like this:  
+ This means the best combination of the two tables now really looks like this: 
 
 | **Project** | **Priority** | **BudgetAllocation** | **AllocationDate** |
 |---|---|---:|---:|
@@ -236,7 +236,7 @@ In this new combined table, the Project column has repeating values.  The two o
 
 ## Adjusting cross filter direction for a complex set of tables of relationships
 
-For most relationships, the cross filter direction is set to ‘Both’.  There are, however, some more uncommon circumstances where you might need to set this different from the default, like if you’re importing a model from an older version of Power Pivot, where every relationship is set to a single direction.  
+For most relationships, the cross filter direction is set to ‘Both’.  There are, however, some more uncommon circumstances where you might need to set this different from the default, like if you’re importing a model from an older version of Power Pivot, where every relationship is set to a single direction. 
 
 The Both setting enables Power BI Desktop to treat all aspects of connected tables as if they are a single table.  There are some situations, however, where Power BI Desktop cannot set a relationship’s cross filter direction to ‘Both’ and also keep an unambiguous set of defaults available for reporting purposes. If a relationship cross filter direction isn't set to Both, then it’s usually because it would create ambiguity.  If the default cross filter setting isn’t working for you, try setting it to a particular table or Both.
 
@@ -264,7 +264,7 @@ Cross filtering direction does not work well with a more general pattern often f
 
  ![](media/powerbi-desktop-create-and-manage-relationships/CandMRel_CrossFilterWithLoops.png)
 
-If you have a table pattern like this, with loops, then cross filtering can create an ambiguous set of relationships. For instance, if you sum up a field from TableX and then choose to filter by a field on TableY, then it’s not clear how the filter should travel, through the top table or the bottom table. A common example for this kind of pattern is TableX to be a Sales table with actuals data and for TableY to be budget data. Then, the tables in the middle are lookup tables that both tables use, such as Division or Region.  
+If you have a table pattern like this, with loops, then cross filtering can create an ambiguous set of relationships. For instance, if you sum up a field from TableX and then choose to filter by a field on TableY, then it’s not clear how the filter should travel, through the top table or the bottom table. A common example for this kind of pattern is TableX to be a Sales table with actuals data and for TableY to be budget data. Then, the tables in the middle are lookup tables that both tables use, such as Division or Region. 
 
 Just like with active/inactive relationships, Power BI Desktop won’t allow a relationship to be set as Both if it will create ambiguity in reports. There are several different ways you can deal with this, here are the two most common:
 
@@ -274,7 +274,7 @@ Just like with active/inactive relationships, Power BI Desktop won’t allow a r
 
 ## Wrong active relationship
 
-When Power BI Desktop automatically creates relationships, it sometimes encounters more than one relationship between two tables.  When this happens only one of the relationships is set to be active.  The active relationship serves as the default relationship so that when you choose fields from two different tables, Power BI Desktop can automatically create a visualization for you.  However, in some cases the automatically selected relationship can be wrong.  You can use the Manage Relationships dialog to set a relationship as active or inactive, or you can set the active relationship in the Edit relationship dialog.  
+When Power BI Desktop automatically creates relationships, it sometimes encounters more than one relationship between two tables.  When this happens only one of the relationships is set to be active.  The active relationship serves as the default relationship so that when you choose fields from two different tables, Power BI Desktop can automatically create a visualization for you.  However, in some cases the automatically selected relationship can be wrong.  You can use the Manage Relationships dialog to set a relationship as active or inactive, or you can set the active relationship in the Edit relationship dialog. 
 
 To ensure there’s a default relationship, Power BI Desktop only allows a single active relationship between two tables at a given time.  So, you must first set the current relationship as inactive and then set the relationship you want to be active.
 
@@ -329,4 +329,3 @@ We can change the active relationship and get SubmittedBy instead of OpenedBy. I
 ## See all of your relationships in Relationship View
 
 Sometimes your model has multiple tables and complex relationships between them. Relationship View in Power BI Desktop shows all of the relationships in your model, their direction, and cardinality in an easy to understand and customizable diagram. To learn more, see [Relationship View in Power BI Desktop](powerbi-desktop-relationship-view.md).
-

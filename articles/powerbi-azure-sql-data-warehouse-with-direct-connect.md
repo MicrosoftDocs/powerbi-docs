@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 
 # Azure SQL Data Warehouse with direct connect
 
-Azure SQL Data Warehouse connector allows users to leverage powerful logical pushdown alongside the analytic capabilities of Power BI. With direct connect, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the **﻿Open in Power BI **﻿button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
+Azure SQL Data Warehouse connector allows users to leverage powerful logical pushdown alongside the analytic capabilities of Power BI. With direct connect, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the **Open in Power BI** button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
 
 NOTES: When using the SQL Data Warehouse connector:
 
@@ -41,11 +41,11 @@ These restrictions and notes may change as we continue to improve the experience
 
 ### Using the 'Open in Power BI' button
 
-The easiest way to move between your SQL Data Warehouse and Power BI is with the **﻿Open in Power BI **﻿button. This button allows you to seamlessly begin creating new dashboards in Power BI.
+The easiest way to move between your SQL Data Warehouse and Power BI is with the **Open in Power BI ** button. This button allows you to seamlessly begin creating new dashboards in Power BI.
 
 1. To get started, navigate to your SQL Data Warehouse instance in the Azure Portal. Please note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
 
-2. Click the **﻿Open in Power BI**﻿ button
+2. Click the **Open in Power BI** button
 
    ![](media/powerbi-azure-sql-data-warehouse-with-direct-connect/Open.png)
 
@@ -57,19 +57,19 @@ The easiest way to move between your SQL Data Warehouse and Power BI is with the
 
 SQL Data Warehouse is also listed on the Power BI Get Data page. 
 
-1. Select **Get Data﻿** at the bottom of the left navigation pane.  
+1. Select **Get Data** at the bottom of the left navigation pane.  
 
    ![](media/powerbi-azure-sql-data-warehouse-with-direct-connect/GetDatabutton.png)
 
-2. Select **Databases & More**﻿.
+2. Select **Databases & More**.
 
    ![](media/powerbi-azure-sql-data-warehouse-with-direct-connect/DatabasesMore.png)
 
-3. Select the **SQL Data Warehouse** connector. \>**﻿ Connect.**
+3. Select the **SQL Data Warehouse** connector. \>** Connect.**
 
    ![](media/powerbi-azure-sql-data-warehouse-with-direct-connect/AzureSQLDataWarehouse.png)
 
-4. Enter the necessary information to connect. The **﻿Finding Parameters**﻿ section below shows where this data can be located in your Azure Portal.
+4. Enter the necessary information to connect. The **Finding Parameters** section below shows where this data can be located in your Azure Portal.
 
    ![](media/powerbi-azure-sql-data-warehouse-with-direct-connect/AzureSQLDataWarehouse2.png)
 

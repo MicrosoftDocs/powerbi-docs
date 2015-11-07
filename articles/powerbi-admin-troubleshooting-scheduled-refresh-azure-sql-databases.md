@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 
 # Troubleshooting scheduled refresh for Azure SQL Databases in Power BI  

@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Shape and combine data in Power BI Desktop"
    description="Shape and combine data in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Shape and combine data in Power BI Desktop
 
@@ -92,7 +92,7 @@ First, we select the **Applied Step** prior to changing the type of the **Health
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_ReplaceValues.png)
 
-Since we're inserting a step, Query Editor warns us about the danger of doing so - subsequent steps could cause the query to break. We need to be careful, and thoughtful! Since this is a tutorial, and we're highlighting a really cool feature of Query Editor to demonstrate how you can create, delete, insert, and reorder steps, we'll push ahead and select **Insert**. 
+Since we're inserting a step, Query Editor warns us about the danger of doing so - subsequent steps could cause the query to break. We need to be careful, and thoughtful! Since this is a tutorial, and we're highlighting a really cool feature of Query Editor to demonstrate how you can create, delete, insert, and reorder steps, we'll push ahead and select **Insert**.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_InsertStep.png)
 
@@ -207,4 +207,3 @@ Want to give us feedback? Great – use the **Send Feedback** menu item in Power
 ![](media/powerbi-desktop-shape-and-combine-data/SendFeedback.png)
 
  
-

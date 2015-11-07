@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 
 # Troubleshooting refresh scenarios  
@@ -34,5 +34,7 @@ You may encounter GatewayNotReachable when trying to set credentials for a data 
 This could be an issue with your M script within your Power BI Desktop file or Excel Workbook.  It could also be due to an out of date Power BI Desktop version.
 
 ## See Also  
+
 [Data Refresh](powerbi-refresh-data.md)  
+
 [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)  

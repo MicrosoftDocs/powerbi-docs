@@ -1,20 +1,20 @@
 ﻿<properties 
    pageTitle="Configure a Power BI Analysis Services Connector"
    description="Configure a Power BI Analysis Services Connector"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 # Configure a Power BI Analysis Services Connector
 
@@ -29,7 +29,7 @@ The connector can run on any domain computer. It doesn't have to be your local 
 
 [](http://www.microsoft.com/download/details.aspx?id=45333)
 
- ![](media/powerbi-analysis-services-connector/importantIcon.png) **Important:** 
+ ![](media/powerbi-analysis-services-connector/importantIcon.png) **Important:**
 
 -   Only SQL Server Analysis Services Tabular models are supported for Power BI
 -   The connector has to continue running and the computer where it is installed has to remain on.
@@ -104,4 +104,3 @@ Uninstall the connector by using Remove Programs in Control Panel.
 ## Troubleshooting
 
 If you're having trouble when installing and configuring the Connector, be sure to see [Troubleshooting Power BI Analysis Services Connector.](powerbi-admin-troubleshoot-analysis-service-connector.md)
-

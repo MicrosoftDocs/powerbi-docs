@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="What's new in the latest Power BI Desktop update?"
    description="What's new in the latest Power BI Desktop update?"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
 
@@ -286,4 +286,3 @@ The following features have been added or improved in this update:
 **January 2015 Update (2.19.3923.101)**
 
 This month we've made a number of improvements and bug fixes under the covers. Please try out the new version and continue to send us feedback if you find any issues!
-

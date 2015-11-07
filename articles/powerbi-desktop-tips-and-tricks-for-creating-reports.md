@@ -14,39 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Tips and tricks for creating reports in Power BI Desktop
 
 To get the most out of your data, sometimes you need a little extra help. We’ve put together some tips & tricks you can use when creating reports in the Microsoft Power BI Desktop *and* in Microsoft Excel 2016, or Excel 2013 Pro-Plus editions with the Power Pivot add-in enabled and Power Query installed and enabled. 
 
-[Learning to use the Query Editor](464157.html#LearningToUseTheQueryEditor)
-
-[Data types in Query Editor](464157.html#DataTypes)
-
-[Reference queries in the Query Editor](464157.html#ReferenceQueries)
-
-[Scatter charts need a point identifier](464157.html#ScatterChart)
-
-[Reference lines in your report](464157.html#ReferenceLines)
-
-[Sort by another column](464157.html#SortBy)
-
-[Building maps more easily with hints to Bing](464157.html#BuildMaps)
-
-[Categorizing geographic fields to hint Bing's geocoding](464157.html#GeoCategories)
-
-[Better geocoding with more specific locations](464157.html#Geocoding)
-
-[Histograms in the query stage](464157.html#HistogramsQuery)
-
-[Histograms](464157.html#Histograms)
-
-[Tips and tricks for creating relationships](464157.html#Relationships)
-
-[Patterns to jump start your use of the Query Editor](464157.html#QueryEditor)
-
-[Using DAX for the first time](464157.html#DAX)
 
 ## Learning to use the Query Editor
 
