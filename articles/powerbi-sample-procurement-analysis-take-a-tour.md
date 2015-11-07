@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Procurement Analysis sample for Power BI: Take a tour"
    description="Procurement Analysis sample for Power BI: Take a tour"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="101/06/2015"
    ms.author="maggies"/>
 
 # Procurement Analysis sample for Power BI: Take a tour 
