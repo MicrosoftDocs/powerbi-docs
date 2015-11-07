@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Connect to data in Power BI Desktop"
    description="Connect to data in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Connect to data in Power BI Desktop
 
@@ -62,7 +62,7 @@ With the data model loaded, in **Report** view in Power BI Desktop, we can begin
 
 ![](media/powerbi-desktop-connect-to-data/ConnectToData_DragOntoReportView.png)
 
-Of course, this is a simple model with a single data connection; most Power BI Desktop reports will have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model.  
+Of course, this is a simple model with a single data connection; most Power BI Desktop reports will have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model. 
 
 ## More Information
 
@@ -81,4 +81,3 @@ Of course, this is a simple model with a single data connection; most Power BI D
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 
 ![](media/powerbi-desktop-connect-to-data/SendFeedback.png)
-

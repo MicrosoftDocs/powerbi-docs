@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="SQL Server Analysis Services Tabular data in Power BI"
    description="SQL Server Analysis Services Tabular data in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -20,7 +20,7 @@
 
 In Power BI, there are two ways you can connect to SQL Server Analysis Services Tabular model data. In Get data, you can connect to a SQL Server Analysis Services server, or you can [connect to an Excel workbook](powerbi-service-excel-data.md) that already connects to an Analysis Services server. If your Excel workbook has reports based on your tabular data, you’ll be able to explore and edit them right in Power BI.
 
- ![](media/powerbi-sql-server-analysis-services-tabular-data/importantIcon.png) **Important:** 
+ ![](media/powerbi-sql-server-analysis-services-tabular-data/importantIcon.png) **Important:**
 
 -   In order to connect to a tabular model, a Power BI Analysis Services Connector must be installed and configured by an administrator. For more information, see [Configure a Power BI Analysis Services Connector](https://powerbi.uservoice.com/knowledgebase/articles/471577-create-an-analysis-services-connector).
 
@@ -56,10 +56,7 @@ In Power BI, there are two ways you can connect to SQL Server Analysis Services 
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_Models_4.png)
 
-After you connect to the model, it will appear in your Power BI site in **My Workspace/Datasets**. 
-
-
- 
+﻿After you connect to the model, it will appear in your Power BI site in **My Workspace/Datasets**.
 
 
 ![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_Dataset_5.png)
@@ -85,4 +82,3 @@ Tabular models are authored in SQL Server Data Tools – Business Intelligence f
 If your organization already has SQL Server Analysis Services tabular models on-premises, you can use Power BI to explore, mashup, and visualize data and metrics in them. 
 
 To learn more about SQL Server Analysis Services tabular models, see [Microsoft Business Intelligence](http://www.microsoft.com/server-cloud/solutions/business-intelligence/analysis.aspx).
-

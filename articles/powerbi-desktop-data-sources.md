@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Data sources in Power BI Desktop"
    description="Data sources in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Data sources in Power BI Desktop
 
@@ -73,10 +73,13 @@ The following image shows the **Get Data** window for **Database**.
 The **Azure** category provides the following data connections:
 
 -   Microsoft Azure SQL Database
+-   Microsoft Azure SQL Data Warehouse
 -   Microsoft Azure Marketplace
 -   Microsoft Azure HDInsight
 -   Microsoft Azure Blob Storage
 -   Microsoft Azure Table Storage
+-   Azure HDInsight Spark (Beta)
+-   Microsoft Azure DocumentDB (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
@@ -98,11 +101,13 @@ The **Other** category provides the following data connections:
 -   Salesforce Reports
 -   ODBC
 -   appFigures (Beta)
--   QuickBooks Online (beta)
--   ZenDesk (Beta)
 -   GitHub (Beta)
--   Twilio (Beta)
+-   MailChimp (Beta)
+-   QuickBooks Online (Beta)
 -   SweetIQ (Beta)
+-   Twilio (Beta)
+-   ZenDesk (Beta)
+-   Spark (Beta)
 -   Blank Query
 
 The following image shows the **Get Data** window for **Other**.
@@ -146,4 +151,3 @@ Want to give us feedback? Great – use the **Send Feedback** menu item in Power
 
 
  
-

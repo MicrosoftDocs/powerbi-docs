@@ -14,13 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Getting started with Power BI Desktop
 
-Welcome to the **Power BI Desktop Getting Started Guide**. This short tour of Power BI Desktop gets you acquainted with how it works, demonstrates what you can do with it, and accelerates your ability to build robust data models — and amazing reports — that amplify your business intelligence efforts. 
 
-Prefer to watch instead of read? Feel free to [take a look at our getting started video](powerbi-desktop-videos.md). And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962). 
+Welcome to the **Power BI Desktop Getting Started Guide**. This short tour of Power BI Desktop gets you acquainted with how it works, demonstrates what it can do, and accelerates your ability to build robust data models — along with amazing reports — that amplify your business intelligence efforts. 
+
+Prefer to watch instead of read? Feel free to [take a look at our getting started video](powerbi-desktop-videos.md). And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962).
 
 ![](media/powerbi-desktop-getting-started/PBI_GettingStartedSplash_resized.png)
 

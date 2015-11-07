@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Calculated columns in Power BI Desktop"
    description="Calculated columns in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 
 # Calculated columns in Power BI Desktop  
@@ -53,7 +53,7 @@ He can add it to his report canvas along with the number of shipments. Very quic
 ![](media/powerbi-desktop-calculated-columns/CalcColInPBID_CityStateMap.png)
 
 ## Learn more  
-We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns.  
+We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
 
 To learn more about DAX, see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md).
 

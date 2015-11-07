@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="DAX basics in Power BI Desktop"
    description="DAX basics in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # DAX basics in Power BI Desktop
 
@@ -125,7 +125,7 @@ Finally, you used the CALCULATE function. This is one of the most powerful funct
 
 1.  What does this button on the formula bar do?
 > ![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_2_SyntaxQuiz.png)
-> 
+>
 
 2.  What always surrounds a column name in a DAX formula?
 
@@ -147,7 +147,7 @@ DAX includes the following categories of functions: [Date and Time](https://msdn
 
 -   Excel has a very popular function, VLOOKUP. DAX functions don’t take a cell or cell range as a reference like VLOOKUP does in Excel. DAX functions take a column or a table as a reference. Keep in-mind, in Power BI Desktop, you’re working with a relational data model. Looking up values in another table is really quite easy, and in most cases you don’t need to create any formula at all.
 
- As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of DAX functions is in the [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx). 
+ As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of DAX functions is in the [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx).
 
 ### Functions QuickQuiz
 

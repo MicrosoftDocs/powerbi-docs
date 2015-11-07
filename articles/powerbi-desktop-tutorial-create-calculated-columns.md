@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Create calculated columns in Power BI Desktop"
    description="Tutorial: Create calculated columns in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Tutorial: Create calculated columns in Power BI Desktop
 
@@ -148,7 +148,7 @@ The first argument for IF is a logical test. We want to test whether or not a st
 
 **7.**  Complete the formula by pressing Enter or clicking on the checkmark in the formula bar. The formula is validated and added to the field list in the Stores table.
 
-Just like any other field, we can use our new Active StoreName column in visualizations. In this chart, stores with a status of On are shown individually by name, but stores with a status of Off are grouped together and shown as Inactive.  
+Just like any other field, we can use our new Active StoreName column in visualizations. In this chart, stores with a status of On are shown individually by name, but stores with a status of Off are grouped together and shown as Inactive. 
 
  ![](media/powerbi-desktop-tutorial-create-calculated-columns/CalcCol_ActiveStore_Viz.png)
 
@@ -161,4 +161,3 @@ Calculated columns can enrich our data, providing easier insights. We've learned
 If you want to take a deeper dive into DAX formulas, and create calculated columns with more advanced DAX formulas, see [DAX Basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
 Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
-
