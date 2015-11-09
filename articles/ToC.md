@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Table of Contents"
    description="Table of Contents"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="bewillia" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="bewillia"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -16,14 +16,14 @@
    ms.workload="powerbi"
    ms.date="11/02/2015"
    ms.author="bewillia"/>
-   
+
 <!---
 This file contains the table of contents structure in JSON format.  
 
 Note to localization team:
 Only the categoryName and sectionTitle fields should be translated.  The articles field should not be modified during localization.
 -->
-   
+
 # Table of Contents
 
 {
@@ -32,7 +32,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
       "categoryName": "Power BI Service",
       "subSections": [
         {
-          "sectionTitle": "Getting started",
+          "sectionTitle": "Get started",
           "articles": [
             "powerbi-service-get-started",
             "powerbi-service-self-service-signup-for-power-bi",
@@ -94,7 +94,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 6
         },
         {
-          "sectionTitle": "Get data from services",
+          "sectionTitle": "Connect to services",
           "articles": [
             "powerbi-content-pack-acumatica",
             "powerbi-content-pack-adobe-analytics",
@@ -130,7 +130,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 5
         },
         {
-          "sectionTitle": "Get data from files",
+          "sectionTitle": "Data from files",
           "articles": [
             "powerbi-service-get-data-from-files",
             "powerbi-bring-in-whole-excel-files",
@@ -143,7 +143,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 5
         },
         {
-          "sectionTitle": "Get data from databases",
+          "sectionTitle": "Data from databases",
           "articles": [
             "powerbi-azure-sql-data-warehouse-with-direct-connect",
             "powerbi-azure-sql-database-with-direct-connect",
@@ -270,7 +270,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 4
         },
         {
-          "sectionTitle": "Share in groups",
+          "sectionTitle": "Share your work",
           "articles": [
             "powerbi-service-groups",
             "powerbi-service-create-a-group-in-power-bi",
@@ -323,7 +323,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
       "categoryName": "Power BI Desktop",
       "subSections": [
         {
-          "sectionTitle": "Getting started",
+          "sectionTitle": "Get started",
           "articles": [
 			      "powerbi-desktop-get-the-desktop",
 			      "powerbi-desktop-getting-started",
@@ -400,7 +400,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
       "categoryName": "Power BI Mobile Apps",
       "subSections": [
         {
-          "sectionTitle": "Getting started",
+          "sectionTitle": "Get started",
           "articles": [
 			      "powerbi-power-bi-apps-for-mobile-devices",
 			      "powerbi-mobile-ipad-iphone-apps",
@@ -470,5 +470,5 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         }
       ]
     }
-  ] 
+  ]
 }
