@@ -35,24 +35,23 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Get started",
           "articles": [
             "powerbi-service-get-started",
-            "powerbi-service-self-service-signup-for-power-bi",
             "powerbi-service-basic-concepts",
+            "powerbi-service-self-service-signup-for-power-bi",
             "powerbi-service-get-data",
             "powerbi-service-reports",
             "powerbi-service-dashboards",
             "powerbi-service-q-and-a",
-			"powerbi-service-dash-and-reports-fullscreen",
             "powerbi-service-whats-new",
 			"powerbi-videos",
             "powerbi-webinars",
-            "powerbi-developer-getting-started-with-developer-tools-preview",
             "powerbi-frequently-asked-questions",
             "powerbi-free-trial-for-power-bi-pro",
             "powerbi-power-bi-pro-content-what-is-it",
             "powerbi-service-browser-support",
-            "powerbi-supported-languages"
+            "powerbi-supported-languages",
+            "powerbi-developer-getting-started-with-developer-tools-preview"
           ],
-          "numberOfFeaturedArticles": 15
+          "numberOfFeaturedArticles": 13
         },
         {
           "sectionTitle": "Samples",
@@ -180,6 +179,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-service-how-should-i-share-my-dashboard",
 			      "powerbi-service-share-unshare-dashboard",
 			      "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
+                  "powerbi-service-dash-and-reports-fullscreen",
 				  "powerbi-service-display-dash-in-focus-mode",
 				  "powerbi-service-display-tile-in-full-screen-mode",
 			      "powerbi-service-rename-a-dashboard",
