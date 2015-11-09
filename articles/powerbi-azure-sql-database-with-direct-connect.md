@@ -74,7 +74,7 @@ Your fully qualified server name and database name can be found in the Azure Por
 
 ![](media/powerbi-azure-sql-database-with-direct-connect/AzurePortal_update.png)
 
-## See Also:
+## See Also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
