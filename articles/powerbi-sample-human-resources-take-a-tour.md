@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Human Resources sample for Power BI: Take a tour"
    description="Human Resources sample for Power BI: Take a tour"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/06/2015"
    ms.author="maggies"/>
 
 # Human Resources sample for Power BI: Take a tour  

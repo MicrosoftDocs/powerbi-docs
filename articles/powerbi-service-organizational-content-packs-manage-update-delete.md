@@ -21,11 +21,8 @@
 A few organizational content pack tasks can only be made by the content pack creator.
 
 -   Republish
-
 -   Restrict or expand access to the content pack
-
 -   Set and change scheduled refresh
-
 -   Delete the content pack
 
 ## Modify and re-publish an organizational content pack
