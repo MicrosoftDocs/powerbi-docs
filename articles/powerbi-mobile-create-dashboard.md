@@ -29,7 +29,7 @@ To get more dashboards on your mobile device, start from your computer. Open a w
 
 [iPhone app for Power BI for iOS](powerbi-mobile-ipad-app-get-started.md).
 
-[Power BI app for Windows](powerbi-service-windows-app-get-started) (not Windows phones)
+[Power BI app for Windows](powerbi-service-windows-app-get-started.md) (not Windows phones)
 
 
-[Power BI app for Android phones](powerbi-mobile-android-app-get-started)
+[Power BI app for Android phones](powerbi-mobile-android-app-get-started.md)
