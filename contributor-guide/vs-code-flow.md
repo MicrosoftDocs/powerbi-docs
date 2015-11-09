@@ -18,7 +18,7 @@ ms.author="asaxton"/>
 
 # Visual Studio Code - Flow
 
-This will walk through how you can use Visual Studio Code with the Power BI Git repo.
+This will walk through how you can use Visual Studio Code with the Power BI Git repo. You can download VS Code from https://code.visualstudio.com/.
 
 ## Advantages
 
