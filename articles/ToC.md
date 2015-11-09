@@ -41,6 +41,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-reports",
             "powerbi-service-dashboards",
             "powerbi-service-q-and-a",
+            "powerbi-service-organizational-content-packs-introduction",
             "powerbi-service-whats-new",
 			"powerbi-videos",
             "powerbi-webinars",
@@ -71,30 +72,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 6
         },
         {
-          "sectionTitle": "Get data overview",
-          "articles": [
-            "powerbi-service-explore-a-dataset",
-            "powerbi-service-rename-a-dataset-in-power-bi",
-            "powerbi-service-delete-a-dataset-from",
-            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
-          ],
-          "numberOfFeaturedArticles": 4
-        },
-        {
-          "sectionTitle": "Get organizational data",
-          "articles": [
-            "powerbi-service-organizational-content-packs-introduction",
-            "powerbi-service-organizational-content-pack-tutorial-create-and-publish",
-            "powerbi-service-organizational-content-packs-manage-update-delete",
-            "powerbi-service-organizational-content-pack-find-and-open",
-            "powerbi-service-organizational-content-packs-use-and-work-with",
-            "powerbi-service-organizational-content-pack-delete"
-          ],
-          "numberOfFeaturedArticles": 6
-        },
-        {
           "sectionTitle": "Connect to services",
           "articles": [
+            "powerbi-content-packs-services",
             "powerbi-content-pack-acumatica",
             "powerbi-content-pack-adobe-analytics",
             "powerbi-content-pack-appfigures",
@@ -137,7 +117,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
             "powerbi-personal-gateway",
             "powerbi-reduce-the-size-of-an-excel-workbook",
-            "powerbi-service-excel-data"
+            "powerbi-service-excel-data",
+            "powerbi-service-explore-a-dataset",
+            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -176,7 +158,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-pin-a-tile-from-one-dashboard-to-another",
 			      "powerbi-service-edit-a-tile-in-a-dashboard",
 			      "powerbi-service-tips-for-designing-a-great-dashboard",
-			      "powerbi-service-how-should-i-share-my-dashboard",
 			      "powerbi-service-share-unshare-dashboard",
 			      "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
                   "powerbi-service-dash-and-reports-fullscreen",
@@ -272,11 +253,17 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Share your work",
           "articles": [
+            "powerbi-service-how-should-i-share-my-dashboard",
             "powerbi-service-groups",
             "powerbi-service-create-a-group-in-power-bi",
             "powerbi-service-connect-to-files-on-your-groups-onedrive-for-business",
             "powerbi-service-collaborate-with-your-power-bi-group",
-            "powerbi-service-manage-your-group-in-power-bi-and-office-365"
+            "powerbi-service-manage-your-group-in-power-bi-and-office-365",
+            "powerbi-service-organizational-content-pack-tutorial-create-and-publish",
+            "powerbi-service-organizational-content-packs-manage-update-delete",
+            "powerbi-service-organizational-content-pack-find-and-open",
+            "powerbi-service-organizational-content-packs-use-and-work-with",
+            "powerbi-service-organizational-content-pack-delete"
           ],
           "numberOfFeaturedArticles": 5
         },
