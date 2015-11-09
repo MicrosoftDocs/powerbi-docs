@@ -1,5 +1,5 @@
-﻿<properties 
-   pageTitle="Adobe Analytics content pack for Power BI"
+<properties 
+   pageTitle="Adobe Analytics content pack"
    description="Adobe Analytics content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
