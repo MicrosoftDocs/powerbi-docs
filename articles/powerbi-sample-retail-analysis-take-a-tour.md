@@ -21,7 +21,7 @@
 
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 
-[Download the Retail Analysis sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md), with a dashboard, report, and dataset.
+[Download the Retail Analysis sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md), with a dashboard, report, and dataset.
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
@@ -149,7 +149,7 @@ We hope this tour has shown how Power BI dashboards, Q&A, and reports can provid
 
 ## See Also:
 
--   [Download the Retail Analysis sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md)
+-   [Download the Retail Analysis sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md)
 -   [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=528592)
 -   [Get data (for Power BI)](powerbi-service-get-data.md)
 -   [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
