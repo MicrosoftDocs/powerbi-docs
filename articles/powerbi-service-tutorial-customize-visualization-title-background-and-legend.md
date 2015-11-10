@@ -19,7 +19,7 @@
 
 # Tutorial: Customize visualization title, background, and legend  
 
-In this tutorial you'll learn many different ways to customize the title of your visualizations. Not all visualizations can be customized, [see the complete list](637423.html#list).  Specifically, this tutorial covers customizing (in reports and on dashboards):  
+In this tutorial you'll learn many different ways to customize the title of your visualizations. Not all visualizations can be customized, [see the complete list](#list).  Specifically, this tutorial covers customizing (in reports and on dashboards):  
 -   visualization titles  
 -   visualization title backgrounds  
 -   visualization title legends
@@ -89,8 +89,10 @@ To customize a legend, select "This Year Sales by FiscalMonth and Name" line cha
 3.  Add a legend title by toggling **Title** to **On **and, in the Text field, typing "Store Name"  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizelegend.png)
 
-    To revert all the legend customization we've done so far, select **Revert To Default**, at the bottom of the **Legend **customization pane.
+    To revert all the legend customization we've done so far, select **Revert To Default**, at the bottom of the **Legend** customization pane.
 
+
+<a name="list"></a>
 ## Visualization types that can be customized  
 | Visualization  | Title  | Background | Legend |
 |:---------------|:-------|:-----------|:-------|

@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="IT Spend Analysis sample for Power BI: Take a tour"
    description="IT Spend Analysis sample for Power BI: Take a tour"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mgblythe" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mgblythe"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -16,6 +16,7 @@
    ms.workload="powerbi"
    ms.date="11/06/2015"
    ms.author="mblythe"/>
+
 # IT Spend Analysis sample for Power BI: Take a tour
 
 The IT Spend Analysis [content pack](powerbi-service-organizational-content-packs-introduction.md)(dashboard, report, and dataset) analyze the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
@@ -106,4 +107,3 @@ This is a safe environment to play in. You can always choose not to save your ch
 ## Next steps: Connect to your data
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into IT spend data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about getting started with Power BI.
-

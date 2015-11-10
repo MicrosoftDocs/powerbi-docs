@@ -44,7 +44,7 @@ It's easy to download, and use a custom visual in your reports.
 
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)
 
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals.md)
+[The Power BI custom visuals gallery](http://visuals.powerbi.com/)
 
 [Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
 

@@ -32,7 +32,7 @@ Here are some elements that can make the core worksheet contents larger than 10 
 
 -   Shaded cells. [Remove a cell shading format](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
 
--   Colored worksheets. [Remove a sheet background](https://support.office.com/article/Add-or-remove-a-sheet-background-0905942c-554d-49bc-acb3-286139e818f).
+-   Colored worksheets. [Remove a sheet background](https://support.office.com/en-US/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
 
 -   Text boxes.
 
