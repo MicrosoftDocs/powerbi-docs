@@ -143,7 +143,7 @@ Dashboards are composed of [visualization tiles](powerbi-service-dashboard-tiles
 ![](media/powerbi-service-basic-concepts/canvas.png)
 
 
-For more information, see **[Dashboards](487029.html#dashboards)** (above).
+For more information, see **[Dashboards]** (above).
 
 ## Q&A question box
 

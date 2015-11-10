@@ -60,8 +60,6 @@ Power BI can have more than one report-- as you add reports, their titles are ad
 
 ## See Also
 
-[](https://support.office.microsoft.com/article/Visualizations-in-Power-BI-reports-96901475-bf5a-4fac-8042-82a0ff580767 "Visualizations in Power BI reports")[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)[](powerbi-service-visualizations-for-reports.md)
-
 [Get Started with Power BI](powerbi-service-get-started.md) 
 
- [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

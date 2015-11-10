@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="IT Spend Analysis sample for Power BI: Take a tour"
    description="IT Spend Analysis sample for Power BI: Take a tour"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mgblythe" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mgblythe"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -16,6 +16,7 @@
    ms.workload="powerbi"
    ms.date="11/06/2015"
    ms.author="mblythe"/>
+
 # IT Spend Analysis sample for Power BI: Take a tour
 
 The IT Spend Analysis [content pack](powerbi-service-organizational-content-packs-introduction.md)(dashboard, report, and dataset) analyze the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
@@ -25,7 +26,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 -   [get the IT Spend Analysis content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md)
 -   [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-![](media/powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour/IT1.png)
+![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT1.png)
 
 ## The IT Spend Analysis Sample dashboard
 
@@ -35,13 +36,13 @@ The two numbers tiles on the dashboard, the **Var Plan %** and **Variance Latest
 
 Selecting the **Var Plan % by Sales Region** dashboard tile takes you to the “IT Spend Trend Analysis” page of the IT Spend Analysis Sample report. We see at a glance that we have positive variance in US and Europe and negative variance in Canada, Latin America, and Australia. US had about 6% +LE variance and Australia has about 7% -LE variance.
 
-![](media/powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour/IT2.png)
+![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT2.png)
 
 But just looking at this chart and drawing conclusions can be misleading. We need to look at actual dollar amounts to put things in perspective.
 
 1.  Select **Aus and NZ**﻿ in the Var Plan % by Sales Region chart, and observe Var Plan by IT Area chart. 
 
-    ![](media/powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour/IT3.png)
+    ![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT3.png)
 
 2.  Now select **USA**. You get the idea — Australia is a really small part of our overall spend as compared to US.
 
@@ -53,7 +54,7 @@ But just looking at this chart and drawing conclusions can be misleading. We nee
 
 2.  In the question box, type “show IT areas, var plan % and var le3 % bar chart”.
 
-    ![](media/powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour/IT4.png) 
+    ![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT4.png) 
 
     In the first IT area, **Infrastructure**, the percentage has changed drastically between the initial variance plan and the variance plan latest estimate.
 
@@ -61,7 +62,7 @@ But just looking at this chart and drawing conclusions can be misleading. We nee
 
 Go back to the dashboard and look at the **Var Plan %, Var LE3%** dashboard tile.
 
-![](media/powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour/IT5.png)
+![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT5.png)
 
 Infrastructure jumps out with huge positive variance to plan.
 
@@ -69,7 +70,7 @@ Infrastructure jumps out with huge positive variance to plan.
 
 2.  Click the **Infrastructure** bar in the “Var Plan % and Var LE3 % by IT Area” chart in the lower left, and observe the variance to plan in the "Var Plan % by Sales Region" to the left.
 
-     ![](media/powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour/IT6.png)
+     ![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT6.png)
 
 3.  Click the name of each Cost Element Group in the slicer to find the cost element with a large variance.
 
@@ -85,7 +86,7 @@ Still in the report, click the "Plan Variance Analysis" tab on the bottom of th
 
 In the “Var Plan, and Var Plan % by Business Area” combo chart on the left, click the Infrastructure column to highlight infrastructure values in the rest of the page.
 
-![](media/powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour/IT7.png)
+![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT7.png)
 
 Notice on the “Var plan% by Month and Business Area” chart that infrastructure started to have a positive variance around February and then it keeps increasing. Also, notice how the variance to plan value for infrastructure varies by country, compared to the value for all business areas. Use the “IT Area” and “IT Sub Areas” slicers on the right to filter the values in the rest of the page rather than highlighting them. Click the different IT Areas on the right to explore the data in another way. You can also click IT Sub Areas and see the variance at that level.
 
@@ -106,4 +107,3 @@ This is a safe environment to play in. You can always choose not to save your ch
 ## Next steps: Connect to your data
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into IT spend data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about getting started with Power BI.
-

@@ -60,14 +60,14 @@ In this industry sample dashboard and underlying dataset and report, we analyze 
 This industry sample dashboard and underlying dataset and report explore a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
 
 -   [Take a tour of the Opportunity Analysis sample](powerbi-sample-opportunity-analysis-take-a-tour.md).
--   Download the Opportunity[ Analysis sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md).
+-   Download the [Opportunity Analysis sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md).
 -   [Download the Excel file for this sample.](http://go.microsoft.com/fwlink/?LinkId=528592)
 
 ## Procurement Analysis sample content pack  
 This industry sample dashboard and underlying dataset and report analyze a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability
 
 -   [Take a tour of the Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
--   Download the Procurement Analysis sample content pack.
+-   Download the [Procurement Analysis sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md).
 -   [Download the Excel file for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
 ## Retail Analysis sample content pack  
@@ -87,6 +87,6 @@ This industry sample dashboard and underlying dataset and report analyze a manuf
 ## Supplier Quality sample content pack  
 This industry sample dashboard and underlying dataset and report focus on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: understand who the best and worst suppliers are, with respect to quality, and identify which plants do a better job finding and rejecting defects, to minimize downtime.
 
--   [Take a tour of the Supplier Quality sample](powerbi-sample-supplier-quality-analysis-sample-for-power-bi-take-a-tour.md).
+-   [Take a tour of the Supplier Quality sample](powerbi-sample-supplier-quality-analysis-take-a-tour.md).
 -   Download the [Supplier Quality sample content pack](powerbi-sample-connect-to-the-retail-analysis-sample-content-pack.md).
 -   [Download the Excel file for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
