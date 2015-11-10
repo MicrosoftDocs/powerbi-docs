@@ -75,24 +75,24 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Connect to services",
           "articles": [
             "powerbi-content-packs-services",
-            "powerbi-content-pack-acumatica",
             "powerbi-content-pack-adobe-analytics",
-            "powerbi-content-pack-appfigures",
             "powerbi-content-pack-azure-audit-logs",
+            "powerbi-content-pack-google-analytics",
+            "powerbi-content-pack-marketo",
+            "powerbi-content-pack-salesforce",
+            "powerbi-content-pack-acumatica",
+            "powerbi-content-pack-appfigures",
             "powerbi-content-pack-azure-mobile",
             "powerbi-content-pack-circuit-id",
             "powerbi-content-pack-content-pack",
             "powerbi-content-pack-github",
-            "powerbi-content-pack-google-analytics",
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
-            "powerbi-content-pack-marketo",
             "powerbi-content-pack-microsoft-dynamics-crm",
             "powerbi-content-pack-microsoft-dynamics-marketing",
             "powerbi-content-pack-microsoft-dynamics-nav",
 			"powerbi-content-pack-planview",
             "powerbi-content-pack-quickbooks-online",
-            "powerbi-content-pack-salesforce",
             "powerbi-content-pack-sendgrid",
 			"powerbi-content-pack-sparkpost",
             "powerbi-azure-sql-database-auditing-connector",
@@ -106,7 +106,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-webtrends",
             "powerbi-content-pack-zendesk"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Dashboards",
@@ -157,7 +157,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-organizational-content-packs-use-and-work-with",
             "powerbi-service-organizational-content-pack-delete"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 7
         },
         {
           "sectionTitle": "Reports",
@@ -280,7 +280,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-analysis-services-connector-indepth",
             "powerbi-admin-closing-your-account"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         		{
           "sectionTitle": "Troubleshooting",
