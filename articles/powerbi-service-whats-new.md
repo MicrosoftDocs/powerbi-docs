@@ -135,7 +135,7 @@ Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/moni
 
 -   You can now simply pin the tile from one dashboard to another, the same way you would pin a report visual to a dashboard.
 
--   If your 60-day Power BI Pro trial period is close to expiration, you can [contact us](https://app.powerbi.com/extendtrial?WT.mc_id=Doc_Service) now to request an extension to your trial. If approved, your trial will be extended for another 60 days.
+-   If your 60-day Power BI Pro trial period is close to expiration, you can [contact us](http://go.microsoft.com/fwlink/?LinkID=624573&clcid=0x409) now to request an extension to your trial. If approved, your trial will be extended for another 60 days.
 
 -   comScore Digital Analytix is an online solution that provides insights into your user base through the best of analytics and audience demographics. With the Power BI comScore content pack, you can quickly connect and begin gaining insights into your web analytics data. This content pack includes an out-of-the box dashboard, a set of reports, and a curated data set to help you explore and drill into your data. Learn more about the content pack in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/16/visualize-and-explore-your-comscore-data-with-power-bi.aspx) and [help topic](powerbi-content-pack-content-pack.md). 
 
