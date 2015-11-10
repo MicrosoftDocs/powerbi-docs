@@ -1,26 +1,28 @@
-﻿<properties 
+﻿<properties
    pageTitle=""We couldn't find any data in your Excel workbook""
    description=""We couldn't find any data in your Excel workbook""
-   services="powerbi" 
-   documentationCenter="" 
-   authors="Minewiskan" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="Minewiskan"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="owend"/>
 # "We couldn't find any data in your Excel workbook"
 
 ## Problem
 
 When you import an Excel workbook into Power BI, you may see the following error:
+
+*Error: We couldn't find any data in your Excel workbook. Your data might not be formatted properly. You'll need to edit your workbook in Excel and then import it again.*
 
 ![](media/powerbi-admin-troubleshoot-excel-workbook-data/PBI_WeCouldntFindAnyData.png)
 
@@ -34,7 +36,7 @@ When you import an Excel workbook into Power BI, you may see the following error
 
 4. Save your workbook.
 
-5. Return to Power BI and import your workbook again.
+5. Return to Power BI and import your workbook again, or if you're working in Excel 2016 and you've saved your workbook to OneDrive for Business, in Excel, click File > Publish.
 
 ## Details
 
@@ -84,8 +86,5 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
 
 ## More information
 
--   This article applies to Excel 2007, 2010, and 2013.
--   The pictures here are of Excel 2013. If you're using Excel 2007 or 2010, things may look a little different, but the steps are the same.
-
-*Error: We couldn't find any data in your Excel workbook. Your data might not be formatted properly. You'll need to edit your workbook in Excel and then import it again.*
-
+-   This article applies to Excel 2007 and later.
+-   The pictures here are of Excel 2013. If you're using a different version, things may look a little different, but the steps are the same.

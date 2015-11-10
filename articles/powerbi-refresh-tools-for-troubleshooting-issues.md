@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 
 # Tools for troubleshooting refresh issues  
@@ -58,3 +58,9 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 >Going to %temp% may take you to a subfolder of temp.  The **Power\_BI\_** files will be in the root of the temp directory.  You may need to go up a level or two.
 
 ![](media/powerbi-refresh-tools-for-troubleshooting-issues/Setup-Logs2.png)
+
+## See also
+
+[Data Refresh](powerbi-refresh-data.md)  
+
+[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)  

@@ -1,20 +1,20 @@
-﻿<properties 
+<properties
    pageTitle="Reduce the size of an Excel workbook to view it in Power BI"
    description="Reduce the size of an Excel workbook to view it in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="Minewiskan" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="Minewiskan"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/05/2015"
    ms.author="owend"/>
 
 # Reduce the size of an Excel workbook to view it in Power BI  
@@ -32,7 +32,7 @@ Here are some elements that can make the core worksheet contents larger than 10 
 
 -   Shaded cells. [Remove a cell shading format](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
 
--   Colored worksheets. [Remove a sheet background](https://support.office.com/article/Add-or-remove-a-sheet-background-0905942c-554d-49bc-acb3-286139e818f).
+-   Colored worksheets. [Remove a sheet background](https://support.office.com/en-US/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
 
 -   Text boxes.
 
@@ -63,6 +63,9 @@ When you import data into Excel, follow these tips:
 
 -   **From the Excel Data tab**: don’t check **Table** in the **Import Data** box.
 
+## Workbook Size Optimizer
+If your workbook contains a data model, you can run the workbook size optimizer to reduce the size of your workbook. [Download Workbook Size Optimizer](https://www.microsoft.com/en-us/download/details.aspx?id=38793).
+
+
 ## Related info  
-[Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md)  
 [Create a memory-efficient Data Model](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)  

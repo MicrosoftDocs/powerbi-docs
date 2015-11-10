@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 
 # Data refresh in Power BI  
@@ -75,7 +75,7 @@ This is the probably the most common way of getting your data into Power BI. Dat
 
 ### Power BI Desktop file on a local drive  
 
-|**Data source**|**Automatic refresh**|**User-configured manual or scheduled refresh**|**Personal Gateway required**</p></td>
+|**Data source**|**Automatic refresh**|**User-configured manual or scheduled refresh**|**Personal Gateway required**|
 |---|---|---|---|
 |Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|No|Yes|No|
 |Get Data is used to connect to and explore live an Analysis Services database.|Yes|No|Yes|
@@ -131,6 +131,7 @@ For more detailed information, see [Refresh a dataset created from an Excel work
 ### Comma separated value (.csv) file on OneDrive
 
 |**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|---|---|---|---|
 |Simple comma separated value|Yes, hourly|Manual only|No|
 
 For more detailed information, see Refresh a dataset created from a comma separated value file on OneDrive.
@@ -144,7 +145,7 @@ Organizational content packs - created and shared by users in your own organizat
 
 ### Content packs from online services
 
-|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Personal Gateway required**</p></td>
+|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
 |---|---|---|---|
 |Online services in Get Data &gt; Services|Yes|Yes|No|
 
@@ -161,7 +162,7 @@ To learn more, see [Introduction to organizational content packs](powerbi-servic
 ## Databases in the cloud  
 With direct query, there is a live connection between Power BI and the database in the cloud. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. If there is no user interaction in a visualization, like in a dashboard, data is refreshed automatically about every fifteen minutes. Because there is a direct connection between Power BI and the database, there is no need to manually refresh or setup a refresh schedule for the dataset. And, because both the Power BI service and the data source are in the cloud, there is no need for a Personal Gateway.
 
-|**Data source**|**Live with direct connect**|**User configured manual or scheduled refresh**|**Personal Gateway required**</p></td>
+|**Data source**|**Live with direct connect**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
 |---|---|---|---|
 |SQL Azure Database|Yes|No|No|
 |SQL Azure Data Warehouse|Yes|No|No|
@@ -209,7 +210,7 @@ The Gateway also has to sign into your Power BI account in order to update the d
 We’ve just covered the most important things to know about the gateway here. If you want to learn more, be sure to see [Power BI Personal Gateway](powerbi-personal-gateway.md). If you’re having trouble with your gateway, be sure to check out [Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md).
 
 ### Data Source Credentials  
-﻿﻿﻿Each dataset requires credentials in order for Power BI to connect to the data sources on your behalf and query for updated data. In some cases, like when you get data from a content pack from an online service, data source credentials are retained from when you signed into the service to get the content pack. In other cases, like when you connect to and upload an Excel workbook or Power BI Desktop file into Power BI, in order for Power BI to refresh your new dataset, you will need to sign in to any data sources included in the dataset. You only need to sign in to your data sources once, after you’ve uploaded your file, but before you setup refresh. This is because the password you used when you connected to a data source from Excel or Power BI Desktop is not uploaded to the dataset along with the connection settings and data.
+Each dataset requires credentials in order for Power BI to connect to the data sources on your behalf and query for updated data. In some cases, like when you get data from a content pack from an online service, data source credentials are retained from when you signed into the service to get the content pack. In other cases, like when you connect to and upload an Excel workbook or Power BI Desktop file into Power BI, in order for Power BI to refresh your new dataset, you will need to sign in to any data sources included in the dataset. You only need to sign in to your data sources once, after you’ve uploaded your file, but before you setup refresh. This is because the password you used when you connected to a data source from Excel or Power BI Desktop is not uploaded to the dataset along with the connection settings and data.
 
 Let’s look at an example. Here we’ve just published a Power BI Desktop file named Channel Sales to our Power BI site. The file connects to an on-premises SQL Data Warehouse database. In our Channel Sales dataset’s settings, if we try to setup a refresh schedule, we’ll get an error saying the credentials are incorrect.  
 ![](media/powerbi-refresh-data/DataRefreshInPowerBI_DataSourceCred_Error.png)
@@ -275,3 +276,9 @@ To learn more, see [Salesforce content pack for Power BI](powerbi-content-pack-s
 When things go wrong, it’s usually because Power BI can’t sign into data sources, or the dataset connects to an on-premises data source and the Power BI Personal Gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
 
 For more information about troubleshooting, see [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md) and [Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md).
+
+## See also
+
+[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)  
+
+[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)  

@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Make your data work well with Q&A in Power BI"
    description="Make your data work well with Q&A in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="jastru" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="jastru"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -28,7 +28,7 @@ Q&A can work on any uploaded Excel file, but the more optimizations and data cle
 ## How Q&A works  
 Q&A has a set of core natural language understanding abilities that work across your data. It has context-dependent keyword search for your Excel table, column, and calculated field names. Second, it has built-in knowledge for how to filter, sort, aggregate, group, and display data. 
 
-For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about the [kinds of questions you can ask](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-1.aspx), and [asking questions using a question template](http://support.powerbi.com/knowledgebase/articles/474566) and [visualization types you can specify in a Q&A query](http://support.powerbi.com/knowledgebase/articles/469552).
+For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about the [kinds of questions you can ask](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-1.aspx), and [asking questions using a question template](powerbi-service-q-and-a.md) and [visualization types you can specify in a Q&A query](powerbi-service-visualization-types-for-reports-and-q-and-a.md).
 
 ## Prepare a workbook for Q&A  
 Q&A relies on the names of tables, columns, and calculated fields to answer data-specific questions, meaning what you call entities in your workbook is important!

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 
 # Power BI Analysis Services Connector in-depth
@@ -175,7 +175,7 @@ Power BI Analysis Services Connector communicates on outbound ports: TCP 443 (de
 
 **Answer:** You can use SQL Profiler. You’ll see something like this:
 
-\<RestrictionList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
+    \<RestrictionList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
 
           \<CATALOG\_NAME\>AdventureWorks\_prod\</CATALOG\_NAME\>
 
@@ -183,7 +183,7 @@ Power BI Analysis Services Connector communicates on outbound ports: TCP 443 (de
 
         \</RestrictionList\>
 
-\<PropertyList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
+    \<PropertyList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
 
           \<Catalog\>AdventureWorks\_prod\</Catalog\>
 
@@ -205,7 +205,7 @@ Power BI Analysis Services Connector communicates on outbound ports: TCP 443 (de
 
           \<DbpropMsmdRequestID\>ed28257d-b516-427e-a299-be5d60f14427\</DbpropMsmdRequestID\>
 
-        \</PropertyList\>
+    \</PropertyList\>
 
 **Question:** How do I find the Analysis Connector service in Services?
 
@@ -215,10 +215,10 @@ Power BI Analysis Services Connector communicates on outbound ports: TCP 443 (de
 
 ## Additional resources
 
-For information in how to install and configure a Power BI Analysis Services Connector, see ﻿[Configure a Power BI Analysis Services Connector](powerbi-analysis-services-connector.md).
+For information in how to install and configure a Power BI Analysis Services Connector, see [Configure a Power BI Analysis Services Connector](powerbi-analysis-services-connector.md).
 
-For information on synchronizing Azure Active Directory with an on-premises Active Directory by using DirSync, see ﻿[Directory Integration](https://technet.microsoft.com/library/jj573653.aspx) on TechNet.
+For information on synchronizing Azure Active Directory with an on-premises Active Directory by using DirSync, see [Directory Integration](https://technet.microsoft.com/library/jj573653.aspx) on TechNet.
 
-For troubleshooting, see ﻿[Troubleshooting Power BI Analysis Service Connector](powerbi-admin-troubleshoot-analysis-service-connector.md).
+For troubleshooting, see [Troubleshooting Power BI Analysis Service Connector](powerbi-admin-troubleshoot-analysis-service-connector.md).
 
-Once a Power BI Analysis Services Connector is installed, configured, and running, users can connect to tabular models on that Analysis Services instance. To learn how to connect from Get Data in Power BI,  see ﻿[SQL Server Analysis Services Tabular data in Power BI](powerbi-sql-server-analysis-services-tabular-data.md).
+Once a Power BI Analysis Services Connector is installed, configured, and running, users can connect to tabular models on that Analysis Services instance. To learn how to connect from Get Data in Power BI,  see [SQL Server Analysis Services Tabular data in Power BI](powerbi-sql-server-analysis-services-tabular-data.md).

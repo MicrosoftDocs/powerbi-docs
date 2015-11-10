@@ -1,20 +1,20 @@
-<properties 
+<properties
    pageTitle="Import and display KPIs (Preview)"
    description="Import and display KPIs (Preview)"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 
 # Import and display KPIs (Preview)  
@@ -30,11 +30,11 @@ Let's see how it works.
 
 	a.  Select **File** &gt; **Options and settings** &gt; **Options**  
     ![](media/powerbi-desktop-import-and-display-kpis/settings_options.jpg)  
-	
+
 	b.  Select **Preview Features** &gt; **Use KPIs from Power Pivot or SSAS Tabular**  
-	
+
 	c.  Restart Desktop and navigate back to this report page.  
     ![](media/powerbi-desktop-import-and-display-kpis/DesktopKPIrestart.jpg)  
-	
+
 	d.  The KPI fields are now showing up in the Fields list.    
     ![](media/powerbi-desktop-import-and-display-kpis/DesktopPreviewFeatureON.jpg)

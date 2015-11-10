@@ -14,8 +14,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="mihart"/>
+
 # Power BI - basic concepts
 
 When you first open Power BI, you'll see:
@@ -61,7 +62,7 @@ To explore a dataset, select that dataset.  You can explore the dataset by drag
 
 ## Reports
 
-A Power BI report is one or more pages of visualizations (charts and graphs).  Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created for you when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications and [content packs](powerbi-service-get-data.md).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
+A Power BI report is one or more pages of visualizations (charts and graphs).  Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created for you when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications and [content packs](powerbi-service-organizational-content-packs-introduction.md).  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
 
 There are 2 ways to view and interact with reports: [Reading View](powerbi-service-open-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  Only a report creator or owner can open Editing View for a report. Use Editing View to create and modify and explore your report. Reading View offers more-limited interaction; you can [interact with filters](powerbi-service-about-filters-and-highlighting-in-reports.md) (if the report owner created any), dig down into visualizations, do page-level filtering and highlighting, and temporarily pin visualizations to the dashboard (the pinned tiles will not be saved when you close and reopen Power BI).
 
@@ -142,7 +143,7 @@ Dashboards are composed of [visualization tiles](powerbi-service-dashboard-tiles
 ![](media/powerbi-service-basic-concepts/canvas.png)
 
 
-For more information, see **[Dashboards](487029.html#dashboards)** (above).
+For more information, see **[Dashboards]** (above).
 
 ## Q&A question box
 

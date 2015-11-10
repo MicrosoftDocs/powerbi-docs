@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="asaxton"/>
 # Azure SQL Database with direct connect
 
@@ -74,7 +74,7 @@ Your fully qualified server name and database name can be found in the Azure Por
 
 ![](media/powerbi-azure-sql-database-with-direct-connect/AzurePortal_update.png)
 
-## See Also:
+## See Also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Common query tasks in Power BI Desktop"
    description="Common query tasks in Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Common query tasks in Power BI Desktop
 
@@ -97,7 +97,7 @@ The **Group By…** window appears. When Query Editor groups rows, it creates a 
 
 3.  *Operation* – here you specify the operation that Query Editor applies.
 
-4.  *The +/- signs* – you can perform aggregation operations (**Group By** actions) on multiple columns, and perform multiple aggregations, all within the **Group By** window, and all in one operation. Query Editor creates a new column (based on your selections in this window) that operate on multiple columns. Select the **+** button to add more columns or aggregations to a **Group By** operation. You can remove a column or aggregation by selecting the – icon, so go ahead and try it, and see what it looks like.  
+4.  *The +/- signs* – you can perform aggregation operations (**Group By** actions) on multiple columns, and perform multiple aggregations, all within the **Group By** window, and all in one operation. Query Editor creates a new column (based on your selections in this window) that operate on multiple columns. Select the **+** button to add more columns or aggregations to a **Group By** operation. You can remove a column or aggregation by selecting the – icon, so go ahead and try it, and see what it looks like. 
 
  ![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_GroupByNumbered.png)
 

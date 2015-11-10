@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Acumatica content pack for Power BI"
+   pageTitle="Acumatica content pack"
    description="Acumatica content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

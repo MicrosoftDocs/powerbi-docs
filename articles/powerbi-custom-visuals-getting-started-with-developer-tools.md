@@ -3,7 +3,7 @@
    description="Getting Started with Developer Tools (Preview)"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="dvana"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -14,8 +14,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2015"
-   ms.author="mihart"/>
+   ms.date="10/27/2015"
+   ms.author="derrickv"/>
 
 # Create a custom visual with the Developer Tools (Preview)
 
@@ -83,8 +83,9 @@ You can work in two browser windows or two tabs one with the **Developer Tools**
 >**Note:**
 >When testing your custom visual in a Report or Dashboard, press **CTRL+F5** to ensure the latest version of your custom visual code is used. Repeat this each time you choose **Compile + Run** in the Developer Tools. Otherwise, you may be using an older version of your code.
 
+<a name ="testing"></a>
 **Step 5: Testing your custom visual in Reports and Dashboards**
-<a name="testing"></a>
+
 After you test your visual and get it working in the Developer Tools, you should test that it is working in Reports and Dashboards in Power BI. Here’s how to do this:
 
 1.  If you’re using a browser tab you already have open press **Ctrl+F5** to refresh the page.

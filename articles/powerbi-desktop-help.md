@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Power BI Desktop Help"
    description="Power BI Desktop Help"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="davidi"/>
 # Power BI Desktop Help
 
@@ -58,7 +58,7 @@
 
 [Learn about the Query formula language (also known as "M")](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?CorrelationId=4382f78a-d3a8-4c19-90ab-abf4b09a21a8&ui=en-US&rs=en-US&ad=US)
 
-**Data modeling:**
+**Data Modeling:**
 
 [Data View in Power BI Desktop](powerbi-desktop-data-view.md)
 
@@ -90,4 +90,3 @@
 [Tutorial: Create your own measures in Power BI Desktop ](powerbi-desktop-tutorial-create-measures.md)
 
 [Tutorial: Create calculated columns in Power BI Desktop](powerbi-desktop-tutorial-create-calculated-columns.md)
-
