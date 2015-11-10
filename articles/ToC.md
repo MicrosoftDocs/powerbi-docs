@@ -50,7 +50,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-power-bi-pro-content-what-is-it",
             "powerbi-service-browser-support",
             "powerbi-supported-languages",
-            "powerbi-developer-getting-started-with-developer-tools-preview"
+            "powerbi-custom-visuals-getting-started-with-developer-tools"
           ],
           "numberOfFeaturedArticles": 13
         },
