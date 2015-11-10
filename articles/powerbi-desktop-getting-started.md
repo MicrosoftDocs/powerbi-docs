@@ -252,7 +252,7 @@ Notice that in the **Visualizations** pane, I can select different types of visu
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_VisualizationTypes.png)
 
-Let’s fast-forward a bit, and see what the **Report** view looks like after a handful of visualizations have been added, as well as a few new Report pages.For more information about reports, see **[Report View in Power BI Desktop](powerbi-desktop-report-view.md)**.
+Let’s fast-forward a bit, and see what the **Report** view looks like after a handful of visualizations have been added, as well as a few new Report pages. For more information about reports, see **[Report View in Power BI Desktop](powerbi-desktop-report-view.md)**.
 
 The first Report page provides a perspective of the data based on *Overall rank*. When we select one of the visualizations, the **Fields and Filters** pane shows which fields are selected, and the structure of the visualization (which fields are applied to the **Shared Axis**, **Column Values**, and **Line Values**).
 
@@ -286,7 +286,7 @@ First, let's look at publishing to the **Power BI** service directly from Power 
 
 ![](media/powerbi-desktop-getting-started/GSG_SYW_1.png)
 
-You'll be prompted to sign in to Power BI.
+You may be prompted to sign in to Power BI.
 
 ![](media/powerbi-desktop-getting-started/GSG_SYW_2.png)
 
@@ -304,7 +304,7 @@ Select **Get Data** to start the process of loading your Power BI Desktop report
 
  ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData1.png)
 
-The **Get** **data** page appears, from which you can select where to get your data from. In this case, we select **Get** from the **Files** box.
+The **Get Data** page appears, from which you can select where to get your data from. In this case, we select **Get** from the **Files** box.
 
 ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData2.png)
 
@@ -316,12 +316,12 @@ When you select the file, Power BI uploads the file.
 
 ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData3a.png)
 
-Once the file is uploaded, you can select the tile that represents your .pbix file.
+Once the file is uploaded, you can select the file from the **Reports** in the left pane of the Power BI service.
 
 ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData4.png)
 
 
-The **Power BI** service displays the first page of the report. Along the bottom of the page, you can select the region between navigation arrows to see small tiles representing the pages in your report. Select any tile to display that page of the report.
+The **Power BI** service displays the first page of the report. Along the bottom of the page, you can select any tab to display that page of the report.
 
  ![](media/powerbi-desktop-getting-started/GSG_Share4.png)
 
