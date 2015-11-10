@@ -19,15 +19,12 @@
 
 # What's new in the Power BI service  
 
-
 Check this page for known issues and recently-released features in Power BI.
-
 
 ## Recent Updates  
 
 
 **November 3, 2015**
-
 
 -   Guided Power BI purchase experience.
 
@@ -39,7 +36,6 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 
 **October 28, 2015**
-
 
 - Share dashboards with Active Directory Security groups
 
@@ -54,7 +50,6 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 **October 20, 2015**
 
-
 -   Read-only members in Power BI groups
 
 -   Featured questions in Q&A
@@ -65,7 +60,6 @@ For all the details, visit the [Power BI blog](http://blogs.msdn.com/b/powerbi/a
 
 
 **October 13, 2015**
-
 
 -   Full screen mode to display your dashboards and reports on big screen TVs
 
@@ -84,7 +78,6 @@ View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/14/analyze-your-
 
 **October 6, 2015**
 
-
 -   With Power BI Q&A, you can explore your data using simple, intuitive questions and receive answers in the form of interactive charts and graphs. With this release, we have added a feature to help you get started with Power BI Q&A, even when you do not know anything about the data. To get started with this, navigate to any dashboard and click the “How to ask” link near the Q&A question box. Power BI presents you with a number of suggestions based on your data.
 
 -   Two weeks ago, we introduced support for inserting shapes into the report canvas in Power BI Desktop. This week, we are happy to announce that you can now add shapes to your report canvas when you are authoring and/or editing reports in the Power BI web app.
@@ -97,7 +90,6 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/07/explorin
 
 
 **September 29, 2015**
-
 
 -   With this week’s service update, when creating new reports you can now choose from multiple page sizes as well as define your own page size. This controls the size and aspect ratio of each page in the report.
 
@@ -114,7 +106,6 @@ Read our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/30/monitor-azure
 
 **September 22, 2015**
 
-
 -   Have more flexibility on your dashboard to customize your dashboards with additional tile sizes, ranging from 1x1 to 5x5.
 
 -   You can now share (and un-share) a dashboard from your group space exactly the way you would do it in your own space. Once colleagues accept your sharing invitation, the shared dashboard (and their associated reports) will be added in their own space with read-only permission.
@@ -128,14 +119,13 @@ Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/moni
 
 **September 15, 2015**
 
-
 -   You can now choose which dashboard you want to pin your visual to! You can choose the target dashboard from your existing dashboards, or even create a new dashboard and pin the visual to it in one shot.
 
 -   Additionally, you can control your visual colors in the dashboard. If your report is using a different theme from the dashboard theme, you can control whether the visual retains current theme, or uses the default dashboard theme to achieve consistency across visuals from various sources.
 
 -   You can now simply pin the tile from one dashboard to another, the same way you would pin a report visual to a dashboard.
 
--   If your 60-day Power BI Pro trial period is close to expiration, you can [contact us](http://go.microsoft.com/fwlink/?LinkID=624573&clcid=0x409) now to request an extension to your trial. If approved, your trial will be extended for another 60 days.
+-   If your 60-day Power BI Pro trial period is close to expiration, you can [contact us]( http://go.microsoft.com/fwlink/?LinkID=624573&clcid=0x409now) to request an extension to your trial. If approved, your trial will be extended for another 60 days.
 
 -   comScore Digital Analytix is an online solution that provides insights into your user base through the best of analytics and audience demographics. With the Power BI comScore content pack, you can quickly connect and begin gaining insights into your web analytics data. This content pack includes an out-of-the box dashboard, a set of reports, and a curated data set to help you explore and drill into your data. Learn more about the content pack in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/16/visualize-and-explore-your-comscore-data-with-power-bi.aspx) and [help topic](powerbi-content-pack-content-pack.md). 
 
