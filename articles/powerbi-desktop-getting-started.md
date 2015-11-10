@@ -131,7 +131,7 @@ For starters, most ratings were brought into **Query Editor** as whole numbers, 
 
 You can also change, or *transform,* those columns from text to header by using the **Transform** ribbon. Here’s the **Transform** ribbon, with an arrow pointing toward the **Data Type** button, which lets you transform the current data type to another.
 
- ![](media/powerbi-desktop-getting-started/Designer_GSG_ChangeDataTypeRibbon.png)
+ ![](media/powerbi-desktop-getting-started/ShapeCombine_ChangeType.png)
 
 Note that in **Query Settings**, the **Applied Steps** reflect the changes that were made. If I want to remove any step from the shaping process, I simply select that step, and then select the **X** to the left of the step.
 
@@ -174,6 +174,9 @@ We select **Edit**, then:
 -   *Remove the bottom 26 rows* – they’re all the territories, which we don’t need to include.
 
 <!-- -->
+-   *Filter out Washington DC* – the retirement stats table doesn't include DC, so we'll exclude it from our list.
+
+<!-- -->
 
 -   *Remove a few unneeded columns* – we only need the mapping of state to its official two-letter abbreviation, so we can remove the other columns.
 
@@ -213,9 +216,9 @@ We now have a single query (table) that combined two data sources, each of which
 
 For a more complete description of each of these shape and combine data steps, see [Shape and Combine Data in Power BI Desktop](powerbi-desktop-shape-and-combine-data.md).
 
-For now, we have enough data to create a few interesting reports, all within Power BI Desktop. Since this is a milestone let’s save this Power BI Desktop file – we’ll call it **Getting Started with Power BI Desktop**. To save the changed in **Query Editor**, and load them into Power BI Desktop, select **Close & Load** from the **Home** ribbon.
+For now, we have enough data to create a few interesting reports, all within Power BI Desktop. Since this is a milestone let’s save this Power BI Desktop file – we’ll call it **Getting Started with Power BI Desktop**. To apply the changes in **Query Editor** and load them into Power BI Desktop, select **Close & Apply** from the **Home** ribbon.
 
-![](media/powerbi-desktop-getting-started/GSG_CloseNLoad.png)
+![](media/powerbi-desktop-getting-started/ShapeCombine_CloseAndApply.png)
 
 ## Build Reports
 
