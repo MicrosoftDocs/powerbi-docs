@@ -19,7 +19,7 @@
 
 # Download the Power BI industry samples (Excel workbooks)
 
-Microsoft provides sample content packs and sample Excel workbooks. This article explains how to download and open the sample Excel workbooks. To learn how to add the sample content packs to Power BI, see [sample content packs](powerbi-sample-datasets)
+Microsoft provides sample content packs and sample Excel workbooks. This article explains how to download and open the sample Excel workbooks. To learn how to add the sample content packs to Power BI, see [sample content packs](powerbi-sample-datasets.md)
 
 ## Important information
 
