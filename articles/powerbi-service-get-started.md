@@ -16,6 +16,7 @@
    ms.workload="powerbi"
    ms.date="11/06/2015"
    ms.author="mihart"/>
+
 # Get started with Power BI
 
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to explore further with ***reports***.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
@@ -109,32 +110,6 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
 3. Select the back arrow ![](media/powerbi-service-get-started/PBI_QABackArrow.png) to return to your dashboard where you'll see the new tile.
 
-## Step 4: Auto Insights
-
-Another way to explore your dataset is to run Auto Insights.  Power BI looks through your dataset and presents you with a set of insights.  Start here and dig deeper or pin one or more of the insights to your dashboard.
-
-1. In the left navigation pane, under **Datasets** > **Financial Sample** and select the ellipses (...).
-
-2. Select **Get Insights**.
-
-  ![](media/powerbi-service-get-started/PBI_AutoInsightEllipses.png)
-
-  In the top right corner, you'll see a status message and then a Success message.
-
-  ![](media/powerbi-service-get-started/PBI_AutoInsightsSearching.png)
-
-  ![](media/powerbi-service-get-started/PBI_AutoInsightSuccess.png)
-
-
-3. Select **View Insights** to review the insights found by Power BI.
-
-  ![](media/powerbi-service-get-started/PBI_AutoInsightsMore.png)
-
-4. Pin one or more visualizations to your dashboard using the same method described above.
-
-
-In a few minutes, you've created an interactive dashboard.
-
 Ready to try more?  Here are some great ways to explore more of Power BI.
 
 -   [Connect to another dataset](https://powerbi.uservoice.com/knowledgebase/articles/434354).
@@ -144,9 +119,8 @@ Ready to try more?  Here are some great ways to explore more of Power BI.
 
 Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
 
--   [Power BI basic concepts](powerbi-service-basic-concepts.md)
--   [Power BI videos](powerbi-videos.md)
 -   [Learn how reports, datasets, dashboards, and tiles all fit together](powerbi-service-basic-concepts.md)
+-   [Power BI videos](powerbi-videos.md)
 -   [See what samples we have available for you to use](powerbi-sample-datasets.md)
 
 ### Stay in touch with Power BI
