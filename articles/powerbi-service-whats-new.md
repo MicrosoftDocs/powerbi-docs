@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="What's new in the Power BI service"
    description="What's new in the Power BI service"
    services="powerbi"
@@ -26,7 +26,7 @@ Check this page for known issues and recently-released features in Power BI.
 
 **November 3, 2015**
 
--   ﻿Guided Power BI purchase experience.
+-   Guided Power BI purchase experience.
 
 -   Individuals can buy Power BI Pro.
 
