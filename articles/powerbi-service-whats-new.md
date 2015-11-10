@@ -23,6 +23,7 @@ Check this page for known issues and recently-released features in Power BI.
 
 ## Recent Updates  
 
+
 **November 3, 2015**
 
 - Guided Power BI Purchase experience
@@ -32,6 +33,7 @@ Check this page for known issues and recently-released features in Power BI.
 - Duplicate report page
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/03/power-bi-weekly-service-update-1103.aspx)
+
 
 **October 28, 2015**
 
@@ -45,6 +47,7 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/28/power-bi-weekly-service-update-1027.aspx)
 
+
 **October 20, 2015**
 
 -   Read-only members in Power BI groups
@@ -54,6 +57,7 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 -   Full screen pop-out mode for report visualizations
 
 For all the details, visit the [Power BI blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/power-bi-weekly-service-update-1020.aspx)
+
 
 **October 13, 2015**
 
@@ -71,6 +75,7 @@ For all the details, visit the [Power BI blog](http://blogs.msdn.com/b/powerbi/a
 
 View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/14/analyze-your-planview-enterprise-data-in-power-bi.aspx) and [online documentation](powerbi-content-pack-planview.md) to learn more.
 
+
 **October 6, 2015**
 
 -   With Power BI Q&A, you can explore your data using simple, intuitive questions and receive answers in the form of interactive charts and graphs. With this release, we have added a feature to help you get started with Power BI Q&A, even when you do not know anything about the data. To get started with this, navigate to any dashboard and click the “How to ask” link near the Q&A question box. Power BI presents you with a number of suggestions based on your data.
@@ -82,6 +87,7 @@ View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/14/analyze-your-
 -   Microsoft Dynamics NAV is a business management solution for small to medium organizations. It offers customers a full solution for their business with greater control over their financials and business processes. The Power BI content pack provides out-of-box reports for Dynamics NAV users, such as sales and profit, opportunities pipeline, profitability and more. These metrics are organized on a dashboard that can be fully customized, allowing you to easily connect and immediately start exploring your data.
 
 Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/07/exploring-your-microsoft-dynamics-nav-data-with-power-bi.aspx) and [online documentation](powerbi-content-pack-microsoft-dynamics-nav.md) for more information.
+
 
 **September 29, 2015**
 
@@ -97,6 +103,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/07/explorin
 
 Read our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/30/monitor-azure-audit-logs-with-power-bi.aspx) and [online documentation](powerbi-content-pack-azure-audit-logs.md)for more information.
 
+
 **September 22, 2015**
 
 -   Have more flexibility on your dashboard to customize your dashboards with additional tile sizes, ranging from 1x1 to 5x5.
@@ -108,6 +115,7 @@ Read our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/30/monitor-azure
 -   Stripe is an advanced payment platform for online businesses. From start-ups to Fortune 500 companies, thousands of businesses use Stripe to accept payments in over 130 currencies, from anyone in the world. By connecting Power BI with your existing Stripe account, you’ll be able to use the Power BI Stripe content pack to monitor, explore, and visualize your Stripe activity.
 
 Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/monitor-and-explore-your-stripe-data-in-power-bi.aspx) or [online documentation](powerbi-content-pack-stripe.md).
+
 
 **September 15, 2015**
 
