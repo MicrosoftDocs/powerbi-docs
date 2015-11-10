@@ -26,11 +26,11 @@ Check this page for known issues and recently-released features in Power BI.
 
 **November 3, 2015**
 
-- Guided Power BI Purchase experience
+-   Guided Power BI Purchase experience
 
-- Individuals can buy Power BI Pro
+-   Individuals can buy Power BI Pro
 
-- Duplicate report page
+-   Duplicate report page
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/03/power-bi-weekly-service-update-1103.aspx)
 
