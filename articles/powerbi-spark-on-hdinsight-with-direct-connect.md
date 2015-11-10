@@ -29,7 +29,7 @@ Spark on Azure HDInsight with direct connect allows you to create dynamic report
 >-   Schema changes are not picked up automatically.
 >-   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
-These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.  Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/%20)
+These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.  Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
 
 1. Select **Get Data** at the bottom of the left navigation pane.  
  	![](media/powerbi-spark-on-hdinsight-with-direct-connect/getdata3.png)  
