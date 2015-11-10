@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="appFigures content pack for Power BI"
+   pageTitle="appFigures content pack"
    description="appFigures content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

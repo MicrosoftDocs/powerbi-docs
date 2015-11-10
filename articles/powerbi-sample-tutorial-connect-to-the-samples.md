@@ -30,7 +30,7 @@ This tutorial uses the *Retail Analysis* sample content pack which consists of a
 - [Opportunity Analysis](powerbi-sample-opportunity-analysis-take-a-tour.md)
 - [Procurement Analysis](powerbi-sample-procurement-analysis-take-a-tour.md)
 - [Sales and Marketing](powerbi-sample-sales-and-marketing-take-a-tour.md)
-- [Supplier Quality](powerbi-sample-suppllier-quality-analysis-take-a-tour.md)
+- [Supplier Quality](powerbi-sample-supplier-quality-analysis-take-a-tour.md)
 - [IT Spend Analysis](powerbi-sample-it-spend-analysis-take-a-tour.md)
 
 ## Get Data

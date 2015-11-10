@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Explore a dataset in Power BI"
    description="Explore a dataset in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggiesMSFT" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="maggiesMSFT"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -16,6 +16,7 @@
    ms.workload="powerbi"
    ms.date="10/14/2015"
    ms.author="maggies"/>
+
 # Explore a dataset in Power BI
 
 Exploring a dataset is similar to [creating a report](powerbi-service-reports.md).  When you click **Explore** you'll see the same canvas, navigation, and Fields and Filters pane. Dataset explore always starts with a blank canvas and always opens in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). Use dataset explore to dig into your data, create visualizations, create reports, and pin visualizations to your dashboard.
@@ -32,7 +33,7 @@ Exploring a dataset is similar to [creating a report](powerbi-service-reports.md
 
     ![](media/powerbi-service-explore-a-dataset/PBI_DatasetBlankRept.png)
 
-From this point, you can start [creating visualizations the way you do in report Editing View](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report).  
+From this point, you can start [creating visualizations the way you do in report Editing View](powerbi-service-add-visualizations-to-a-report-i).  
 
 Now you can:
 
@@ -53,9 +54,3 @@ Now you can:
 [Rename a dataset](powerbi-service-rename-a-dataset-in-power-bi.md).
 
 [Delete a dataset](powerbi-service-delete-a-dataset-from.md)
-
-
-
-
-
-

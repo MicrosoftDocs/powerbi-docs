@@ -16,7 +16,6 @@
    ms.date="11/06/2015"
    ms.author="mihart"/>
 
-
 # Power BI webinars
 
    The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** the webinar.
@@ -44,8 +43,6 @@
 ## Past webinars
 
 [Power BI Technical Overview - September 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-09Sep-16-PowerBITechnicalOverview-Register.html)
-
-[Creating Reports for Power BI using Power BI Desktop](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Aug15-DeepDiveCreatingReportswithPowerBIDesktop-Register.html)
 
 [Power BI Explore What is New: On Demand](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07JUL-GettingStartedwithPowerBI-2-Register.html?ls=JenUnderwood)
 

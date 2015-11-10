@@ -23,8 +23,8 @@ A tile is a snapshot of your data, pinned to the dashboard. A tile can be create
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
-### [What happens when I hover over a tile?](powerbi-service-dashboard-tiles#hover)
-### [What happens when I select a tile?](powerbi-service-dashboard-tiles#select)
+### [What happens when I hover over a tile?](powerbi-service-dashboard-tiles.md#hover)
+### [What happens when I select a tile?](powerbi-service-dashboard-tiles.md#select)
 
 -   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 

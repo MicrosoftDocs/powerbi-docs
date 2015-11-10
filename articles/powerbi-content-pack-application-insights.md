@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Application Insights content pack for Power BI"
+   pageTitle="Application Insights content pack"
    description="Application Insights content pack for Power BI"
    services="powerbi"
    documentationCenter=""

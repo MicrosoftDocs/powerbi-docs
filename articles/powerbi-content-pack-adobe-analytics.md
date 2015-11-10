@@ -1,5 +1,5 @@
-﻿<properties 
-   pageTitle="Adobe Analytics content pack for Power BI"
+<properties 
+   pageTitle="Adobe Analytics content pack"
    description="Adobe Analytics content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -66,7 +66,7 @@ The Company value can be found in the top right of your account once you're sign
 
 The Suite ID is created when the Report Suite is created. You can contact your administrator to identify the ID value. Note that this is not the Report Suite name.
 
-From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html%20):
+From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html):
 
 ![](media/powerbi-content-pack-adobe-analytics/ReportSuiteID.PNG)
 
