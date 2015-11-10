@@ -20,7 +20,7 @@
 
 Visual and explore your comScore Digital Analytix data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 
-[Connect to the comScore content pack for Power BI.](%20https://app.powerbi.com/getdata/services/comscore)
+[Connect to the comScore content pack for Power BI.](https://app.powerbi.com/getdata/services/comscore)
 
 1.  Select Get Data at the bottom of the left navigation pane.
 

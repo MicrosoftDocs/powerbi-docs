@@ -81,4 +81,4 @@ Once you get data and reports from your file into Power BI, it's time to explore
 
 -   [Data refresh in Power BI](powerbi-refresh-data.md)
 
--   [Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md%20)
+-   [Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md)

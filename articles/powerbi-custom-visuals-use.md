@@ -54,7 +54,7 @@ Once downloaded, custom visualizations must be imported into a report. Once impo
 
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)
 
-[Create and submit a custom visual](powerbi-custom-visuals-create-and-submit-to-the-gallery.md)
+[Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md)
 
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
 
