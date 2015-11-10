@@ -23,7 +23,7 @@ Once downloaded, custom visualizations must be imported into a report.  Once imp
 >**Important**
 A custom visual is added to a specific report when imported. If you'd like to use the visual in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual is saved with the new report.
 
-1. Open [Power BI](http://powerbi.com) and select the report where you want to add the custom visualization.  Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
+1. Open [Power BI](http://app.powerbi.com) and select the report where you want to add the custom visualization.  Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
 
 2. In the **Visualizations** pane, select the ellipses (...).
 
@@ -55,7 +55,7 @@ A custom visual is added to a specific report when imported. If you'd like to us
 
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)
 
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals.md)
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
 
 [Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)
 
