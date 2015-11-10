@@ -75,24 +75,24 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Connect to services",
           "articles": [
             "powerbi-content-packs-services",
-            "powerbi-content-pack-acumatica",
             "powerbi-content-pack-adobe-analytics",
-            "powerbi-content-pack-appfigures",
             "powerbi-content-pack-azure-audit-logs",
+            "powerbi-content-pack-google-analytics",
+            "powerbi-content-pack-marketo",
+            "powerbi-content-pack-salesforce",
+            "powerbi-content-pack-acumatica",
+            "powerbi-content-pack-appfigures",
             "powerbi-content-pack-azure-mobile",
             "powerbi-content-pack-circuit-id",
             "powerbi-content-pack-content-pack",
             "powerbi-content-pack-github",
-            "powerbi-content-pack-google-analytics",
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
-            "powerbi-content-pack-marketo",
             "powerbi-content-pack-microsoft-dynamics-crm",
             "powerbi-content-pack-microsoft-dynamics-marketing",
             "powerbi-content-pack-microsoft-dynamics-nav",
 			"powerbi-content-pack-planview",
             "powerbi-content-pack-quickbooks-online",
-            "powerbi-content-pack-salesforce",
             "powerbi-content-pack-sendgrid",
 			"powerbi-content-pack-sparkpost",
             "powerbi-azure-sql-database-auditing-connector",
@@ -106,70 +106,58 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-webtrends",
             "powerbi-content-pack-zendesk"
           ],
-          "numberOfFeaturedArticles": 5
-        },
-        {
-          "sectionTitle": "Data from files",
-          "articles": [
-            "powerbi-service-get-data-from-files",
-            "powerbi-bring-in-whole-excel-files",
-            "powerbi-service-publish-from-excel",
-            "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
-            "powerbi-personal-gateway",
-            "powerbi-reduce-the-size-of-an-excel-workbook",
-            "powerbi-service-excel-data",
-            "powerbi-service-explore-a-dataset",
-            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
-          ],
-          "numberOfFeaturedArticles": 5
-        },
-        {
-          "sectionTitle": "Data from databases",
-          "articles": [
-            "powerbi-azure-sql-data-warehouse-with-direct-connect",
-            "powerbi-azure-sql-database-with-direct-connect",
-            "powerbi-spark-on-hdinsight-with-direct-connect",
-            "powerbi-sql-server-analysis-services-tabular-data",
-            "powerbi-analysis-services-connector",
-            "powerbi-azure-and-power-bi"
-          ],
-          "numberOfFeaturedArticles": 5
-        },
-        {
-          "sectionTitle": "Data refresh",
-          "articles": [
-			      "powerbi-refresh-data",
-				  "powerbi-refresh-excel-file-local-drive",
-				  "powerbi-refresh-excel-file-onedrive",
-				  "powerbi-refresh-csv-file-onedrive",
-				  "powerbi-refresh-desktop-file-local-drive",
-				  "powerbi-refresh-desktop-file-onedrive",
-				  "powerbi-refresh-tools-for-troubleshooting-issues",
-			      "powerbi-refresh-troubleshooting-refresh-scenarios"
-          ],
           "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Dashboards",
           "articles": [
-			      "powerbi-service-create-a-dashboard",
-			      "powerbi-service-dashboard-tiles",
-			      "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
-			      "powerbi-pin-a-tile-from-one-dashboard-to-another",
-			      "powerbi-service-edit-a-tile-in-a-dashboard",
-			      "powerbi-service-tips-for-designing-a-great-dashboard",
-			      "powerbi-service-share-unshare-dashboard",
-			      "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
+                  "powerbi-service-create-a-dashboard",
+                  "powerbi-service-dashboard-tiles",
+                  "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
+                  "powerbi-pin-a-tile-from-one-dashboard-to-another",
+                  "powerbi-service-edit-a-tile-in-a-dashboard",
+                  "powerbi-service-tips-for-designing-a-great-dashboard",
+                  "powerbi-service-share-unshare-dashboard",
+                  "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
                   "powerbi-service-dash-and-reports-fullscreen",
-				  "powerbi-service-display-dash-in-focus-mode",
-				  "powerbi-service-display-tile-in-full-screen-mode",
-			      "powerbi-service-rename-a-dashboard",
-			      "powerbi-service-add-an-image-to-a-dashboard",
-			      "powerbi-service-create-a-big-number-tile-for-a-dashboard",
-			      "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
-			      "powerbi-service-delete-or-remove-a-dashboard"
+                  "powerbi-service-display-dash-in-focus-mode",
+                  "powerbi-service-display-tile-in-full-screen-mode",
+                  "powerbi-service-rename-a-dashboard",
+                  "powerbi-service-add-an-image-to-a-dashboard",
+                  "powerbi-service-create-a-big-number-tile-for-a-dashboard",
+                  "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
+                  "powerbi-service-delete-or-remove-a-dashboard"
           ],
           "numberOfFeaturedArticles": 8
+        },
+        {
+          "sectionTitle": "Ask questions of your data",
+          "articles": [
+            "powerbi-service-how-to-use-q-and-a",
+            "powerbi-service-tutorial-introduction-to-q-and-a",
+            "powerbi-service-make-your-data-work-well-with-q-and-a",
+            "powerbi-service-q-and-a-create-featured-questions",
+            "powerbi-service-ask-the-right-questions-of-salesforce-data",
+            "powerbi-service-q-and-a-tips"
+          ],
+          "numberOfFeaturedArticles": 6
+        },
+        {
+          "sectionTitle": "Share your work",
+          "articles": [
+            "powerbi-service-how-should-i-share-my-dashboard",
+            "powerbi-service-groups",
+            "powerbi-service-create-a-group-in-power-bi",
+            "powerbi-service-connect-to-files-on-your-groups-onedrive-for-business",
+            "powerbi-service-collaborate-with-your-power-bi-group",
+            "powerbi-service-manage-your-group-in-power-bi-and-office-365",
+            "powerbi-service-organizational-content-pack-tutorial-create-and-publish",
+            "powerbi-service-organizational-content-packs-manage-update-delete",
+            "powerbi-service-organizational-content-pack-find-and-open",
+            "powerbi-service-organizational-content-packs-use-and-work-with",
+            "powerbi-service-organizational-content-pack-delete"
+          ],
+          "numberOfFeaturedArticles": 7
         },
         {
           "sectionTitle": "Reports",
@@ -205,7 +193,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-add-visualizations-to-a-report-i",
             "powerbi-service-add-visualizations-to-a-report-ii",
             "powerbi-service-change-the-type-of-visualization-in-a-report",
-            "powerbi-custom-visuals-use",
             "powerbi-custom-visuals-add-to-report",
             "powerbi-custom-visuals-create-for-the-gallery",
             "powerbi-custom-visuals-download-from-the-gallery",
@@ -239,33 +226,45 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 5
         },
         {
-          "sectionTitle": "Ask questions of your data",
+          "sectionTitle": "Data from files",
           "articles": [
-            "powerbi-service-how-to-use-q-and-a",
-            "powerbi-service-tutorial-introduction-to-q-and-a",
-            "powerbi-service-make-your-data-work-well-with-q-and-a",
-			"powerbi-service-q-and-a-create-featured-questions",
-            "powerbi-service-ask-the-right-questions-of-salesforce-data",
-			"powerbi-service-q-and-a-tips"
-          ],
-          "numberOfFeaturedArticles": 4
-        },
-        {
-          "sectionTitle": "Share your work",
-          "articles": [
-            "powerbi-service-how-should-i-share-my-dashboard",
-            "powerbi-service-groups",
-            "powerbi-service-create-a-group-in-power-bi",
-            "powerbi-service-connect-to-files-on-your-groups-onedrive-for-business",
-            "powerbi-service-collaborate-with-your-power-bi-group",
-            "powerbi-service-manage-your-group-in-power-bi-and-office-365",
-            "powerbi-service-organizational-content-pack-tutorial-create-and-publish",
-            "powerbi-service-organizational-content-packs-manage-update-delete",
-            "powerbi-service-organizational-content-pack-find-and-open",
-            "powerbi-service-organizational-content-packs-use-and-work-with",
-            "powerbi-service-organizational-content-pack-delete"
+            "powerbi-service-get-data-from-files",
+            "powerbi-bring-in-whole-excel-files",
+            "powerbi-service-publish-from-excel",
+            "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
+            "powerbi-personal-gateway",
+            "powerbi-reduce-the-size-of-an-excel-workbook",
+            "powerbi-service-excel-data",
+            "powerbi-service-explore-a-dataset",
+            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
           ],
           "numberOfFeaturedArticles": 5
+        },
+        {
+          "sectionTitle": "Data from databases",
+          "articles": [
+            "powerbi-azure-sql-data-warehouse-with-direct-connect",
+            "powerbi-azure-sql-database-with-direct-connect",
+            "powerbi-spark-on-hdinsight-with-direct-connect",
+            "powerbi-sql-server-analysis-services-tabular-data",
+            "powerbi-analysis-services-connector",
+            "powerbi-azure-and-power-bi"
+          ],
+          "numberOfFeaturedArticles": 5
+        },
+        {
+          "sectionTitle": "Data refresh",
+          "articles": [
+                  "powerbi-refresh-data",
+                  "powerbi-refresh-excel-file-local-drive",
+                  "powerbi-refresh-excel-file-onedrive",
+                  "powerbi-refresh-csv-file-onedrive",
+                  "powerbi-refresh-desktop-file-local-drive",
+                  "powerbi-refresh-desktop-file-onedrive",
+                  "powerbi-refresh-tools-for-troubleshooting-issues",
+                  "powerbi-refresh-troubleshooting-refresh-scenarios"
+          ],
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Administration",
@@ -281,7 +280,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-analysis-services-connector-indepth",
             "powerbi-admin-closing-your-account"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         		{
           "sectionTitle": "Troubleshooting",
@@ -366,9 +365,10 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Create reports",
           "articles": [
             "powerbi-desktop-report-view",
-            "powerbi-desktop-tips-and-tricks-for-creating-reports"
+            "powerbi-desktop-tips-and-tricks-for-creating-reports",
+            "powerbi-custom-visuals-use"
           ],
-          "numberOfFeaturedArticles": 2
+          "numberOfFeaturedArticles": 3
         },
         {
           "sectionTitle": "Learn more",
