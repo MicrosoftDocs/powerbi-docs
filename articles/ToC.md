@@ -62,7 +62,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-sample-downloads",
 			"powerbi-sample-download-the-financial-sample-workbook",
             "powerbi-sample-supplier-quality-analysis-take-a-tour",
-            "powerbi-sample-it-spend-analysis-sample-for-power-bi-take-a-tour",
+            "powerbi-sample-it-spend-analysis-take-a-tour",
             "powerbi-sample-sales-and-marketing-take-a-tour",
             "powerbi-sample-customer-profitability-take-a-tour",
             "powerbi-sample-human-resources-take-a-tour",
