@@ -35,6 +35,6 @@ In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-vie
 
 ## See Also  
 [Resize a visualization on a dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md)
-[Display a dashboard tile in full-screen mode (In-focus)](https://support.powerbi.com/knowledgebase/articles/756723)  
+[Display a dashboard tile in full-screen mode (In-focus)](powerbi-service-display-dash-in-focus-mode.md)  
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
