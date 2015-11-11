@@ -14,12 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/10/2015"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
 
 ## October 2015
+
+Read the [mid-October Power BI mobile blog post](http://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
 
 ### All Power BI mobile apps 
 
@@ -34,9 +36,12 @@
 
     ![](media/powerbi-mobile-whats-new-in-the-mobile-apps/PBI_iPh_GrpDashAlertCrop.png)
 
+- You can now view dashboards horizontally, just by turning your phone. Read more about [landscape mode in the iPhone app](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+
+    ![](media/powerbi-mobile-whats-new-in-the-mobile-apps/PBI_iPh_Landscape.png)
 
 ## September 2015  
-Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and Windows.
+Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and Windows. Read the [mid-September Power BI mobile blog post](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
 ### Android  
 -   Support for group workspaces: Collaborate with colleagues in group workspaces. 

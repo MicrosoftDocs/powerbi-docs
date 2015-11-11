@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Tiles in the iPhone app (Power BI for iOS)"
    description="Tiles in the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/10/2015"
    ms.author="maggies"/>
 
 # Tiles in the iPhone app (Power BI for iOS)
@@ -27,11 +27,11 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
--   In a line, bar, or column chart, drag the bar to view the values for specific parts of the visualization.
+-   In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
 
-    ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_LineTileNew.png)
+    ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_ColTile2.png)
 
-    In this line chart, the values of the blue and purple lines are listed under the month, April, where the vertical bar intersects them.
+    In this column chart, the value of the selected black bar is listed for Lindseys under the month, May.  
 
 -   In a pie chart, spin the pie to show the values of the slice at the top of the pie.
 
@@ -39,7 +39,7 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
 -   Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneShareTileIconNoBorder.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
 
--   Tap the close icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPh_CloseSnapIcon.PNG) to close the tile and return to the dashboard.
+-   Tap the back arrow ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneBackArrowIcon.png) to close the tile and return to the dashboard.
 
 ### See Also
 

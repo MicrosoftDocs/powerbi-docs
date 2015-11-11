@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2015"
+   ms.date="11/10/2015"
    ms.author="maggies"/>
 
 # Get started with the iPhone app (Power BI for iOS)

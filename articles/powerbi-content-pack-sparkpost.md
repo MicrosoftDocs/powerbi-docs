@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create featured questions for Power BI Q&A"
-   description="Create featured questions for Power BI Q&A"
+   pageTitle="SparkPost content pack for Power BI"
+   description="SparkPost content pack for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mgblythe"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
+   ms.date="11/10/2015"
    ms.author="mblythe"/>
 
 # SparkPost content pack for Power BI
@@ -23,15 +23,15 @@ The Power BI content pack for SparkPost allows you to extract valuable datasets 
 
 Connect to the [SparkPost content pack for Power BI](https://app.powerbi.com/getdata/services/spark-post).
 
-1.  Select Get Data at the bottom of the left navigation pane.
+1.  Select **Get Data** at the bottom of the left navigation pane.
 
 	![](media/powerbi-content-pack-sparkpost/getdata.png)
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
 	![](media/powerbi-content-pack-sparkpost/services.PNG)
 
-3.  Select the SparkPost content pack and click Connect. 
+3.  Select the **SparkPost** content pack and click **Connect**. 
 
 	![](media/powerbi-content-pack-sparkpost/getdata-1.PNG)
 
