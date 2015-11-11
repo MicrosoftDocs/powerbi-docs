@@ -21,7 +21,7 @@
 
 A Slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.  
 
-![](media/powerbi-service-tutorial-slicers/PBI_slicer.png)
+  ![](media/powerbi-service-tutorial-slicers/PBI_slicer.png)
 
 ## When to use a slicer  
 Slicers are a great choice:
@@ -89,6 +89,10 @@ Slicers are a great choice:
 
 
 ## See Also  
- [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
+ [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
+
+ [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+
  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+
 [Try it out -- it's free!](https://powerbi.com/)  

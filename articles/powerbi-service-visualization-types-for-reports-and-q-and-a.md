@@ -119,7 +119,7 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 
 ### Slicers
 
-![](media/powerbi-service-tutorial-slicers/PBI_slicer.png)
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/PBI_slicer.png)
 
 ### Standalone images
 

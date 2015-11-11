@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Radial Gauge charts in Power BI"
    description="Tutorial: Radial Gauge charts in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -115,9 +115,10 @@ But what if you want to set your own maximum value?  Let's say that instead of
 
 [Reports in Power BI](powerbi-service-reports.md)
 
- [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
+[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+
+[Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
 [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
 [ Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-

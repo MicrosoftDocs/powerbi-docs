@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Funnel charts in Power BI"
    description="Tutorial: Funnel charts in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -22,7 +22,7 @@ A Funnel Chart helps you visualize a linear process that has sequential connecte
 
 Each funnel stage represents a percentage of the total. So, in most cases, a Funnel Chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
 
->**NOTE**: This tutorial applies to the Power BI service and not to Power BI Desktop. 
+>**NOTE**: This tutorial applies to the Power BI service and not to Power BI Desktop.
 
 ![](media/powerbi-service-tutorial-funnel-charts/funnelplain.png)
 
@@ -43,7 +43,7 @@ Funnel Charts are a great choice:
 -   to track a shopping cart workflow.
 
 -   to track the progress and success of click-through advertising/marketing campaigns.
-  
+
 ## Working with Funnel Charts
 
 Funnel Charts:
@@ -132,7 +132,8 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
+[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+
 [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
