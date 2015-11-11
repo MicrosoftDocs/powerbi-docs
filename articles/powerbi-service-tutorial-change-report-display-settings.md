@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/08/2015"
    ms.author="mihart"/>
 
 # Tutorial: Change the display settings for a page in a Power BI report  
@@ -61,7 +61,7 @@ In the [previous article](powerbi-service-change-report-display-settings.md) you
 4.  Select **16:9** page ratio.  
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_changeDisplayPageSize2.jpg)
 
-    The report page displays using a ration of 16 wide by 9 high. To see the actual pixel size being used, take a look at the greyed out Width and Height fields (1280x720).  There is a lot of empty space around the report canvas; this is because we previously set **View** to "Fit to Page."
+    The report page displays using a ratio of 16 wide by 9 high. To see the actual pixel size being used, take a look at the greyed out Width and Height fields (1280x720).  There is a lot of empty space around the report canvas; this is because we previously set **View** to "Fit to Page."
 
 5.  Select **Letter**.  On the canvas, only the contents that fit within 816 x 1056 pixels (Letter size) remain on the white portion of the canvas.  Depending on our View setting, the contents that have "fallen off" the canvas are still visible. Since our **View** setting is "Fit to Page" we still see, and can interact with, the visualizations in the grey area of our canvas.  
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_changeDisplayPageSize3.jpg)

@@ -82,6 +82,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-salesforce",
             "powerbi-content-pack-acumatica",
             "powerbi-content-pack-appfigures",
+            "powerbi-content-pack-application-insights",
             "powerbi-content-pack-azure-mobile",
             "powerbi-content-pack-circuit-id",
             "powerbi-content-pack-content-pack",
