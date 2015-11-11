@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Set data alerts in the iPhone app (Power BI for iOS)"
    description="Set data alerts in the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/10/2015"
    ms.author="maggies"/>
 
 # Set data alerts in the iPhone app (Power BI for iOS)  
@@ -36,6 +36,6 @@ Data sources are often set to refresh daily, although someone can manually refre
 
 ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneAlertSet.png)
 
-## See Also  
+## See also  
 [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  
