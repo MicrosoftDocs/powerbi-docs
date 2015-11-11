@@ -29,7 +29,7 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
 -   In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
 
-    ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_ColTile.png)
+    ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_ColTile2.png)
 
     In this column chart, the value of the selected black bar is listed for Lindseys under the month, May.  
 
