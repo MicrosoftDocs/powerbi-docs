@@ -52,7 +52,7 @@ Before we can work with this query, we need to make a few changes to get its dat
 
 -   *Remove the first column* – we don’t need it, it just includes redundant rows that say “Check out how your state ranks for retirement” which is an artifact of this data source being a Web-based table
 
--   *Fix a few Errors* – one of the columns, **Health care quality**, contains a few ties in states' rankings, which was noted on the website by having the text *(tie)* after their numbers. That works well on the website, but it reqires that we transform the column from text to data manually. It's easy to fix this using Power BI Desktop, and doing so demonstrates a cool feature of **Applied Steps** in Query
+-   *Fix a few Errors* – one of the columns, **Health care quality**, contains a few ties in states' rankings, which was noted on the website by having the text *(tie)* after their numbers. That works well on the website, but it requires that we transform the column from text to data manually. It's easy to fix this using Power BI Desktop, and doing so demonstrates a cool feature of **Applied Steps** in Query
 
 -   *Change the Table Name* – that **Table 0** is not a useful descriptor, but changing it simple
 
@@ -122,7 +122,7 @@ We’re in luck: there’s another public data source that does just that, but i
 
 <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
-From the **Home** ribbon in Query Editor, we select **Get Data \> Web** and type the address, select OK, and the Navigator shows what it found on that Web page.
+From the **Home** ribbon in Query Editor, we select **New Source \> Web** and type the address, select OK, and the Navigator shows what it found on that Web page.
 
  ![](media/powerbi-desktop-shape-and-combine-data/Designer_GSG_USStateAbbreviationsNavigator.png)
 
@@ -138,11 +138,15 @@ The **Remove Top Rows** window appears, letting you specify how many rows you wa
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveBottomRows.png)
 
+-   Since the RetirementStats table doesn't have information for Washington DC, we need to filter it from our list. Select the drop-down arrow beside the Region Status column, then clear the checkbox beside **Federal district**.
+
+![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_FilterDC.png)
+
 -   Remove a few unneeded columns – we only need the mapping of state to its official two-letter abbreviation, so we can remove the following columns: **Column2**, **Column3**, and then **Column5** through **Column10**. First select Column2, then hold down the **CTRL** key and select the other columns to be removed (this lets you select multiple, non-contiguous columns). From the Home tab on the ribbon, select **Remove Columns \> Remove Columns**.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_RemoveColumns.png)
 
--   Use the first row as headers – since we removed the top three rows, the current top row is the header we want. You can select **Use First Row As Headers** from the **Home** tab or the **Transform** tab in the ribbon.
+-   Use the first row as headers – since we removed the top three rows, the current top row is the header we want. You can select **Use First Row As Headers** from the **Home** tab, or from the **Transform** tab in the ribbon.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_UseFirstRowAsHeaders.png)
 
@@ -150,7 +154,7 @@ The **Remove Top Rows** window appears, letting you specify how many rows you wa
 
 **Another Note:** When you resize the Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
 
--   Rename the columns, and the table itself – as usual, there are a couple ways to rename a column; first select the column, then either select **Rename** from the **Transform** tab on the ribbon, or right-click and select **Rename…** from the menu that appears. The following image has arrows pointing to both options; you only need to choose one.
+-   Rename the columns, and the table itself – as usual, there are a few ways to rename a column; first select the column, then either select **Rename** from the **Transform** tab on the ribbon, or right-click and select **Rename…** from the menu that appears. The following image has arrows pointing to both options; you only need to choose one.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_Rename.png)
 
@@ -162,11 +166,11 @@ There are two primary ways of combining queries – *merging* and *appending*.
 
 When you have one or more columns that you’d like to add to another query, you **merge** the queries. When you have additional rows of data that you’d like to add to an existing query, you **append** the query.
 
-In this case we want to merge queries. To get started, we select the query *into which* we want the other query to merge, then select **Merge Queries** from the **Home** tab on the ribbon.
+In this case we want to merge queries. To get started, from the left pane of Query Editor we select the query *into which* we want the other query to merge, which in this case is *RetirementStats*. Then select **Combine \> Merge Queries** from the **Home** tab on the ribbon.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_MergeQueries.png)
 
-You're prompted to set the privacy levels, to ensure the data is combined without including or transferring data you didn't want transferred.
+You may be prompted to set the privacy levels, to ensure the data is combined without including or transferring data you didn't want transferred.
 
 ![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_MergeQueriesB.png)
 
@@ -187,6 +191,10 @@ In this case, we only want the **State Code** column, so we select only that col
 **Note:** Want to play around with how to bring in that **NewColumn** table? You can experiment a bit, and if you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane; your query returns to the state prior to applying that **Expand** step. It’s like a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
 
 We now have a single query (table) that combined two data sources, each of which has been shaped to meet our needs. This query can serve as a basis for lots of additional, interesting data connections – such as housing cost statistics, demographics, or job opportunities in any state.
+
+To apply changes and close Query Editor, select Close & Apply from the **Home** ribbon tab. The transformed dataset appears in Power BI Desktop, ready to be used for creating reports.
+
+![](media/powerbi-desktop-shape-and-combine-data/ShapeCombine_CloseAndApply.png)
 
 ## More Information
 
