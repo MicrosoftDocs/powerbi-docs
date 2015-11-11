@@ -26,20 +26,21 @@ Check this page for known issues and recently-released features in Power BI.
 
 **November 3, 2015**
 
--   Guided Power BI purchase experience.
+*   Guided Power BI purchase experience.
 
--   Individuals can buy Power BI Pro.
+*   Individuals can buy Power BI Pro.
 
--   Duplicate report page.
+*   Duplicate report page.
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/03/power-bi-weekly-service-update-1103.aspx)
 
 
 **October 28, 2015**
 
-- Share dashboards with Active Directory Security groups
+* Share dashboards with Active Directory Security groups
 
-- People picker
+
+* People picker
 
 - Sharing with a large number of email addresses
 
@@ -50,9 +51,9 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 **October 20, 2015**
 
--   Read-only members in Power BI groups
+    *   Read-only members in Power BI groups
 
--   Featured questions in Q&A
+  -   Featured questions in Q&A
 
 -   Full screen pop-out mode for report visualizations
 
