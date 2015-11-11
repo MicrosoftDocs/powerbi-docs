@@ -19,17 +19,17 @@
 
 # Azure SQL Data Warehouse with DirectQuery
 
-Azure SQL Data Warehouse with DirectQuery allows you to create dynamic reports based on data and metric you already have in Azure SQL Data Warehouse. With DirectQuery, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the **Open in Power BI** button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
+Azure SQL Data Warehouse with DirectQuery allows you to create dynamic reports based on data and metrics you already have in Azure SQL Data Warehouse. With DirectQuery, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the **Open in Power BI** button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
 
 NOTES: When using the SQL Data Warehouse connector:
 
--   specify the fully qualified server name when connecting (see below for details)
+-   Specify the fully qualified server name when connecting (see below for details)
 
--   ensure firewall rules for the server are configured to "Allow access to Azure services"
+-   Ensure firewall rules for the server are configured to "Allow access to Azure services"
 
--   every action such as selecting a column or adding a filter will directly query the data warehouse
+-   Every action such as selecting a column or adding a filter will directly query the data warehouse
 
--   tiles are set to refresh approximately every 15 minutes and refresh does not need to be scheduled.  This can be adjusted in the Advanced settings when you connect.
+-   Tiles are set to refresh approximately every 15 minutes and refresh does not need to be scheduled.  This can be adjusted in the Advanced settings when you connect.
 
 -   Q&A is not available for DirectQuery datasets
 
