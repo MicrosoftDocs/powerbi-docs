@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Filled Maps (Choropleths) in Power BI"
    description="Tutorial: Filled Maps (Choropleths) in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -95,6 +95,7 @@ If you do not have access to latitude and longitude data, [follow these instruct
 
 ## See Also  
  [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
+ [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
  [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Try it out -- it's free!](https://powerbi.com/)  

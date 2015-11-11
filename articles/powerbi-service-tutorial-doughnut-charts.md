@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Doughnut charts in Power BI"
    description="Tutorial: Doughnut charts in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -55,8 +55,8 @@ To follow along, sign in to Power BI and select Get Data \> Samples \> Retail 
 
 [Reports in Power BI](powerbi-service-reports.md)
 
+[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-

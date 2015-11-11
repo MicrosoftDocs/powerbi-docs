@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Waterfall charts in Power BI"
    description="Tutorial: Waterfall charts in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -35,7 +35,7 @@ Waterfall Charts are a great choice:
 -   to illustrate the beginning and the ending headcount for your company in a year
 
 -   to visualize how much money you make and spend each month, and the running balance for your account. 
-   
+
 ## Create a Waterfall Chart
 
 To follow along, sign in to Power BI and select **Get Data \> Samples \> Retail Analysis Sample**. 
@@ -66,11 +66,12 @@ For information about using the Filters pane, see [Add a filter to a report](po
 
 Highlighting a column in a Waterfall Chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
-## See Also:
+## See Also
 
 [Reports in Power BI](powerbi-service-reports.md)
+
+[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-

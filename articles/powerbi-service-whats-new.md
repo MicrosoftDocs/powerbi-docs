@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="What's new in the Power BI service"
    description="What's new in the Power BI service"
    services="powerbi"
@@ -23,16 +23,20 @@ Check this page for known issues and recently-released features in Power BI.
 
 ## Recent Updates  
 
+
 **November 3, 2015**
-- Guided Power BI Purchase experience
 
-- Individuals can buy Power BI Pro
+*   Guided Power BI purchase experience.
 
-- Duplicate report page
+*   Individuals can buy Power BI Pro.
+
+*   Duplicate report page.
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/03/power-bi-weekly-service-update-1103.aspx)
 
+
 **October 28, 2015**
+
 - Share dashboards with Active Directory Security groups
 
 - People picker
@@ -43,7 +47,9 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/28/power-bi-weekly-service-update-1027.aspx)
 
+
 **October 20, 2015**
+
 -   Read-only members in Power BI groups
 
 -   Featured questions in Q&A
@@ -52,7 +58,9 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 For all the details, visit the [Power BI blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/power-bi-weekly-service-update-1020.aspx)
 
+
 **October 13, 2015**
+
 -   Full screen mode to display your dashboards and reports on big screen TVs
 
 -   'Fit to screen’ support in full screen mode to display your entire dashboard in the available space
@@ -67,7 +75,9 @@ For all the details, visit the [Power BI blog](http://blogs.msdn.com/b/powerbi/a
 
 View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/14/analyze-your-planview-enterprise-data-in-power-bi.aspx) and [online documentation](powerbi-content-pack-planview.md) to learn more.
 
+
 **October 6, 2015**
+
 -   With Power BI Q&A, you can explore your data using simple, intuitive questions and receive answers in the form of interactive charts and graphs. With this release, we have added a feature to help you get started with Power BI Q&A, even when you do not know anything about the data. To get started with this, navigate to any dashboard and click the “How to ask” link near the Q&A question box. Power BI presents you with a number of suggestions based on your data.
 
 -   Two weeks ago, we introduced support for inserting shapes into the report canvas in Power BI Desktop. This week, we are happy to announce that you can now add shapes to your report canvas when you are authoring and/or editing reports in the Power BI web app.
@@ -78,7 +88,9 @@ View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/14/analyze-your-
 
 Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/07/exploring-your-microsoft-dynamics-nav-data-with-power-bi.aspx) and [online documentation](powerbi-content-pack-microsoft-dynamics-nav.md) for more information.
 
+
 **September 29, 2015**
+
 -   With this week’s service update, when creating new reports you can now choose from multiple page sizes as well as define your own page size. This controls the size and aspect ratio of each page in the report.
 
 -   We added additional visual formatting support for images and bubble charts. You can lock the aspect while resizing images to avoid image distortion and scatter chart bubbles can be configured to be filled or not.
@@ -91,7 +103,9 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/07/explorin
 
 Read our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/30/monitor-azure-audit-logs-with-power-bi.aspx) and [online documentation](powerbi-content-pack-azure-audit-logs.md)for more information.
 
+
 **September 22, 2015**
+
 -   Have more flexibility on your dashboard to customize your dashboards with additional tile sizes, ranging from 1x1 to 5x5.
 
 -   You can now share (and un-share) a dashboard from your group space exactly the way you would do it in your own space. Once colleagues accept your sharing invitation, the shared dashboard (and their associated reports) will be added in their own space with read-only permission.
@@ -102,6 +116,7 @@ Read our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/30/monitor-azure
 
 Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/monitor-and-explore-your-stripe-data-in-power-bi.aspx) or [online documentation](powerbi-content-pack-stripe.md).
 
+
 **September 15, 2015**
 
 -   You can now choose which dashboard you want to pin your visual to! You can choose the target dashboard from your existing dashboards, or even create a new dashboard and pin the visual to it in one shot.
@@ -110,7 +125,7 @@ Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/moni
 
 -   You can now simply pin the tile from one dashboard to another, the same way you would pin a report visual to a dashboard.
 
--   If your 60-day Power BI Pro trial period is close to expiration, you can [contact us](https://app.powerbi.com/extendtrial?WT.mc_id=Doc_Service) now to request an extension to your trial. If approved, your trial will be extended for another 60 days.
+-   If your 60-day Power BI Pro trial period is close to expiration, you can [contact us]( http://go.microsoft.com/fwlink/?LinkID=624573&clcid=0x409now) to request an extension to your trial. If approved, your trial will be extended for another 60 days.
 
 -   comScore Digital Analytix is an online solution that provides insights into your user base through the best of analytics and audience demographics. With the Power BI comScore content pack, you can quickly connect and begin gaining insights into your web analytics data. This content pack includes an out-of-the box dashboard, a set of reports, and a curated data set to help you explore and drill into your data. Learn more about the content pack in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/16/visualize-and-explore-your-comscore-data-with-power-bi.aspx) and [help topic](powerbi-content-pack-content-pack.md). 
 

@@ -69,11 +69,14 @@ Learn how to [create and add links to table visualizations](powerbi-service-hype
 
 -   [Radial Gauge charts](powerbi-service-tutorial-radial-gauge-charts.md)
 
+- [Slicers](powerbi-service-tutorial-slicers.md)
+
 -   [Treemaps](powerbi-service-tutorial-treemaps.md)
 
 -   [Waterfall charts](powerbi-service-tutorial-waterfall-charts.md)
 
 ## See Also  
+[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 [Reports in Power BI](powerbi-service-reports.md)  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

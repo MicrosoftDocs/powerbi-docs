@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Change how a chart is sorted in a Power BI report"
    description="Change how a chart is sorted in a Power BI report"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -23,7 +23,7 @@ In Power BI, you can sort charts alphabetically by the names of the categories 
 
 ![](media/powerbi-service-change-how-a-chart-is-sorted/PBI_ChartSortCategory.png)
 
-It's easy to sort it from highest to lowest sales per square feet instead. 
+It's easy to sort it from highest to lowest sales per square feet instead.
 
 1.  Select the ellipses (...) and choose **Sort by** \> **Sales Per Sq Ft**.
 
@@ -31,7 +31,7 @@ It's easy to sort it from highest to lowest sales per square feet instead.
 
     ![](media/powerbi-service-change-how-a-chart-is-sorted/PBI_agif_Sort500.gif)
 
-**NOTE**: Not all visuals can be sorted.  The following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Slicer, Waterfall.
+**NOTE**: Not all visuals can be sorted.  The following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
 
 ## See Also:
 
