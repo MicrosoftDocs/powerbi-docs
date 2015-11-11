@@ -196,7 +196,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-custom-visuals-add-to-report",
             "powerbi-custom-visuals-create-for-the-gallery",
             "powerbi-custom-visuals-download-from-the-gallery",
-            "powerbi-custom-visuals-getting-started-with-developer-tools",
             "powerbi-custom-visuals-review-for-security-and-privacy",
 			"powerbi-service-getting-started-with-color-formatting-and-axis-properties",
 			"powerbi-service-tips-and-tricks-for-color-formatting",
