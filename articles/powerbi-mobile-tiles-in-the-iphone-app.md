@@ -39,7 +39,7 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
 -   Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneShareTileIconNoBorder.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
 
--   Tap the back arrow ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneBackArrowIcon.PNG) to close the tile and return to the dashboard.
+-   Tap the back arrow ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneBackArrowIcon.png) to close the tile and return to the dashboard.
 
 ### See Also
 
