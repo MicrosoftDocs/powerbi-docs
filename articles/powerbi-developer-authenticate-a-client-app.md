@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/6/2015"
+   ms.date="11/1/2015"
    ms.author="derrickv"/>
 
 # Authenticate a client app
@@ -41,15 +41,15 @@ Power BI REST API calls are made on behalf of an authenticated user by passing a
 ## What you need to authenticate a Power BI client app
 To authenticate a Power BI client app and perform a REST web request, you need to:
 
-1. **Register your client app	** - To register a Power BI client app, see [Register a client app](Register+a+client+app.md).	When you register a client app in **Azure Active Directory**, you give your app access to the Power BI APIs.
-2. **Assign the client id for your app** - To get the client id for your app, see [How to get a client app id](Register+a+client+app.md#clientID). The Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
+1. **Register your client app** - To register a Power BI client app, see [Register a client app](powerbi-developer-register-a-client-app.md).	When you register a client app in **Azure Active Directory**, you give your app access to the Power BI APIs.
+2. **Assign the client id for your app** - To get the client id for your app, see [How to get a client app id](powerbi-developer-register-a-client-app#clientID). The Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
 	- In your client app code, assign the **clientID** variable to the client id of your Azure application.
 3. **Assign the redirect Uri** - For a client app, a redirect uri gives AAD more details about the specific application it will authenticate. A uniform resource identifier (URI) is a value to identify a name of a resource.
 	- In your client app code, assign the **redirectUri** to "https://login.live.com/oauth20_desktop.srf". Since a client app does not have an external service to redirect to, this URI is the standard placeholder for client apps.
 
 4. **Assign the resource Uri for Power BI API** - The resource Uri identifies the Power BI API resource.
 	- In your client app code, assign the **resourceUri** to "https://analysis.windows.net/powerbi/api".
-5. **Assign the OAuth2 authority uri ** - The authority Uri identifies the OAuth2 authority resource.
+5. **Assign the OAuth2 authority uri** - The authority Uri identifies the OAuth2 authority resource.
 	- In your client app code, assign an authority Uri to "https://login.windows.net/common/oauth2/authorize".
 6. **Assign the dataset Uri for the Power BI API datasets**	- The datasets Uri identifies the Power BI API datasets resource.
 	- In your client app code, assign the **datasetsUri** to "https://api.powerbi.com/v1.0/myorg/datasets".
@@ -80,7 +80,7 @@ If you do not have Windows Azure Authentication Library (ADAL), see [How to add 
 
 For more information about what AuthenticationContext does to get a token, see [Azure Authentication Context Flow](#Flow).
 
-###C# example - Get access token
+### C# example - Get access token
 
 In a .NET client app, you use **AuthenticationContext** to get an access token.
 
@@ -128,7 +128,7 @@ request.Headers.Add("Authorization", String.Format("Bearer {0}", AccessToken()))
 
 ### C# example - Power BI REST API data request using a token
 
-For a complete C# sample that shows how to authenticate a Power BI client app and call all Power BI REST operations, see [Client app sample](Power+BI+client+app+sample.md) or [view the code on GitHub](http://go.microsoft.com/fwlink/?LinkId=619429).
+For a complete C# sample that shows how to authenticate a Power BI client app and call all Power BI REST operations, see [Client app sample](https://msdn.microsoft.com/en-US/library/mt186159.aspx) or [view the code on GitHub](http://go.microsoft.com/fwlink/?LinkId=619429).
 
 ```
         static dataset[] GetDatasets()
@@ -184,6 +184,7 @@ public class dataset
 <a name="Flow"></a>
 ## Azure Authentication Context Flow
 In a .NET client app, you use **AuthenticationContext** to acquire an Azure access token. **AuthenticationContext** is the main class representing the token issuing authority for Azure AD resources. **AuthenticationContext** does the following:
+
 1.	AuthenticationContext starts the flow by redirecting the user agent to the Azure Active Directory authorization endpoint. The user authenticates and consents, if consent is required.
 2.	The Azure Active Directory authorization endpoint redirects the user agent back to the AuthenticationContext with an authorization code. The user agent returns an authorization code to the client application’s redirect URI.
 3.	The AuthenticationContext requests an access token from the Azure Active Directory token issuance endpoint. It presents the authorization code to prove that the user has consented.
@@ -197,6 +198,7 @@ To learn more about Azure Active Directory (Azure AD) authorization flow, see [A
 ## How to add Azure Active Directory Authentication Library
 
 In a .NET client app, you use **AuthenticationContext** in the **Active Directory Authentication Library** to acquire an Azure access token. You can install the **Active Directory Authentication Library** NuGet package from Visual Studio. When you install a NuGet package, Visual Studio creates a reference to the required assemblies.
+
 1.	Right click a solution.
 2.	Choose **Manage NuGet Packages**.
 3.	Search for **Active Directory Authentication Library**.
