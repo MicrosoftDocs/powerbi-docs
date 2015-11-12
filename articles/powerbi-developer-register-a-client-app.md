@@ -23,11 +23,6 @@ This article shows you how to register a Power BI client app in **Azure Active D
 
 **Important** Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](Create+an+Azure+Active+Directory+tenant.md), and a [Power BI service account](Sign+up+for+Power+BI+service.md).
 There are two ways to register your client app: with the Power BI App Registration Tool or on Azure Management Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. However, with this tool, you will need to use Azure Management Portal to manage your app settings.
-### In this article
-
-- [Register a client app with Power BI App Registration Tool](#clientTool)
-- [Register a client app with Azure Management Portal](#client)
-- [How to get a client id in Azure Management Portal](#clientID)
 
 <a name="clientTool"></a>
 ## Register a client app with Power BI App Registration Tool

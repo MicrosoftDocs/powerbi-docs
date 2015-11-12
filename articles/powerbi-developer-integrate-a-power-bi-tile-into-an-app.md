@@ -31,7 +31,7 @@ You integrate a Power BI **tile** or **report** into an app with an **IFrame** H
 
 Here are the steps to integrate a Power BI tile or report into an app. You can also download the [Integrate a tile or report into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
-### To create an app that integrates a Power BI tile
+## To create an app that integrates a Power BI tile
 
 |**Step**|**See also**
 |:-|:-

@@ -26,13 +26,6 @@ This article shows you how to register a Power BI web app in Azure Active Direct
 
 There are two ways to register your web app: with the Power BI App Registration Tool or on Azure Management Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. However, with this tool, you will need to use Azure Management Portal to manage your app settings.
 
-### In this article
-
-- [Register a web app with Power BI App Registration Tool](#webTool)
-- [Register a web app with Azure Management Portal](#web)
-- [How to get a client id ](#clientID)
-- [How to get a client secret key](#clientSecret)
-
 <a name="webTool"></a>
 ## Register a web app with Power BI App Registration Tool
 You need to register your web app in **Azure Active Directory** to establish an identity for your application and specify permissions to Power BI REST resources. When you register a web app, you receive a **Client ID** and **Client Secret**.  The **Client ID** is used by the application to identify themselves to the users that they are requesting permissions from. The client secret **Key** is used by the web app to securely identify themselves to the **Power BI service**.
