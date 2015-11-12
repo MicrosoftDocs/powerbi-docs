@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/04/2015"
-   ms.author="v-jastru"/>
+   ms.date="11/12/2015"
+   ms.author="tpalmer"/>
 
-# Projecplace Enterprise content pack for Power BI  
+# Projectplace by Planview content pack for Power BI  
 
-With the Projectplace content pack, you can visualize your collaborative project data in entirely new ways directly in Power BI. Use your Projectplace sign-in credentials to interactively view key project statistics, find out who your most active and productive team members are, and identify at-risk cards and activities across projects in your Projectplace account. You can also extend the out-of-the box dashboard and reports to get the insights that are most important to you.
+With the Projectplace by Planview content pack, you can visualize your collaborative project data in entirely new ways directly in Power BI. Use your Projectplace sign-in credentials to interactively view key project statistics, find out who your most active and productive team members are, and identify at-risk cards and activities across projects in your Projectplace account. You can also extend the out-of-the box dashboard and reports to get the insights that are most important to you.
 
 [Connect to the Projectplace content pack in Power BI](https://app.powerbi.com/getdata/services/projectplace)
 
@@ -29,8 +29,8 @@ With the Projectplace content pack, you can visualize your collaborative project
 
 
 
-1. On the Power BI page, select **Projectplace**, then select **Connect**, as shown in the following image:  
-	![](media/powerbi-content-pack-projectplace/getdata.PNG)
+1. On the Power BI page, select **Projectplace by Planview**, then select **Connect**, as shown in the following image:  
+	![](media/powerbi-content-pack-projectplace/getdata2.PNG)
 
 2. In the OData Feed URL text box, enter the URL for the Projectplace OData feed you want to use, as shown in the following image:
 	![](media/powerbi-content-pack-projectplace/params.PNG)
