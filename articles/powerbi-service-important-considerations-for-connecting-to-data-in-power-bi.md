@@ -24,7 +24,7 @@ Connecting to data sources through Power BI is an easy way to get analytics and 
 
 -   Content packs with ready-made dashboards, reports, and datasets for services such as Salesforce. Connecting to these services requires an existing subscription to that application. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
 
--   Connectors to databases and other datasets, such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
+-   Connectors to databases and other datasets, such as [Azure SQL Database](powerbi-azure-sql-database-with-directquery.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
 
 When connecting to data sources through Power BI, there are some things to consider across all sources:
 
