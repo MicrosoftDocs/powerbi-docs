@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2015"
+   ms.date="11/12/2015"
    ms.author="asaxton"/>
 # Azure SQL Database with DirectQuery
 
@@ -47,40 +47,40 @@ Connect to the [Azure SQL Database connector](https://app.powerbi.com/getdata/bi
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
-    ![](media/powerbi-azure-sql-database-with-direct-connect/PBI_GetData.png)
+    ![](media/powerbi-azure-sql-database-with-directquery/PBI_GetData.png)
 
 2.  Within **Databases**, select **Get**. 
 
-    ![](media/powerbi-azure-sql-database-with-direct-connect/databases.png)
+    ![](media/powerbi-azure-sql-database-with-directquery/databases.png)
 
 3.  Select **Azure SQL Database** \> **Connect**.
 
-    ![](media/powerbi-azure-sql-database-with-direct-connect/azuresqldatabase.png)
+    ![](media/powerbi-azure-sql-database-with-directquery/azuresqldatabase.png)
 
 4.  Enter the necessary information to connect. The **Finding Parameters** section below shows where this data can be located in your Azure Portal.
 
-    ![](media/powerbi-azure-sql-database-with-direct-connect/servername.png)
+    ![](media/powerbi-azure-sql-database-with-directquery/servername.png)
    
-    ![](media/powerbi-azure-sql-database-with-direct-connect/servernamewithadvanced.png)
+    ![](media/powerbi-azure-sql-database-with-directquery/servernamewithadvanced.png)
    
-    ![](media/powerbi-azure-sql-database-with-direct-connect/username.png)
+    ![](media/powerbi-azure-sql-database-with-directquery/username.png)
 
 5.  After you've connected, you see a new dataset with the same name as the database you connected to, and a placeholder tile for the dataset, created on the dashboard.
 
-    ![](media/powerbi-azure-sql-database-with-direct-connect/PBI_AzureSQLbNewDataset.png)
+    ![](media/powerbi-azure-sql-database-with-directquery/dataset2.png)
 
 6.  Selecting the placeholder tile for the dataset opens a new report, where you can explore all of the tables and columns in your database. Selecting a column will send a query back to the source, dynamically creating your visual. These visuals can be saved in a new report, and pinned back to your dashboard.
 
-    ![](media/powerbi-azure-sql-database-with-direct-connect/adventureworks_report.png)
+    ![](media/powerbi-azure-sql-database-with-directquery/explore.png)
 
 ### Finding Parameter Values
 
 Your fully qualified server name and database name can be found in the Azure Portal.
 
-![](media/powerbi-azure-sql-database-with-direct-connect/AzurePortNew_update.png)
+![](media/powerbi-azure-sql-database-with-directquery/AzurePortNew_update.png)
 
 
-![](media/powerbi-azure-sql-database-with-direct-connect/AzurePortal_update.png)
+![](media/powerbi-azure-sql-database-with-directquery/AzurePortal_update.png)
 
 ## See Also
 
