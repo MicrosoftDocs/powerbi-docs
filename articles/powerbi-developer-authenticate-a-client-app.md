@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/1/2015"
+   ms.date="11/01/2015"
    ms.author="derrickv"/>
 
 # Authenticate a client app
@@ -23,7 +23,7 @@
 
 This article shows you how to authenticate a Power BI client app. It includes examples in C#; however, the authentication process is the same for other programming languages.
 
-For a complete C# sample that shows how to authenticate a Power BI client app, see [Client app sample](https://msdn.microsoft.com/en-US/library/mt186159.aspx).
+For a complete C# sample that shows how to authenticate a Power BI client app, see [Client app sample](https://msdn.microsoft.com/library/mt186159.aspx).
 
 ## In this article
 - [What you need to authenticate a Power BI client app](#What)
@@ -54,7 +54,7 @@ To authenticate a Power BI client app and perform a REST web request, you need t
 6. **Assign the dataset Uri for the Power BI API datasets**	- The datasets Uri identifies the Power BI API datasets resource.
 	- In your client app code, assign the **datasetsUri** to "https://api.powerbi.com/v1.0/myorg/datasets".
 
-To make a data request to the Power BI REST service, you need to supply an access token. In a .NET client app, you use the [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/azure/jj573266.aspx) to get an access token. Here’s the process. Below is an example **AccessToken()** method.
+To make a data request to the Power BI REST service, you need to supply an access token. In a .NET client app, you use the [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/library/azure/jj573266.aspx) to get an access token. Here’s the process. Below is an example **AccessToken()** method.
 
 If you do not have Windows Azure Authentication Library (ADAL), see [How to add Azure Active Directory Authentication Library](#Library).
 
@@ -109,7 +109,7 @@ In a .NET client app, you use **AuthenticationContext** to get an access token.
 
             // Call AcquireToken to get an Azure token from Azure Active Directory token issuance endpoint
             //  AcquireToken takes a Client Id that Azure AD creates when you register your client app.
-            //  To learn how to register a client app and get a Client ID, see https://msdn.microsoft.com/en-US/library/dn877542(Azure.100).aspx   
+            //  To learn how to register a client app and get a Client ID, see https://msdn.microsoft.com/library/dn877542(Azure.100).aspx   
             string token = authContext.AcquireToken(resourceUri, clientID, new Uri(redirectUri)).AccessToken;
 
             return token;
@@ -128,7 +128,7 @@ request.Headers.Add("Authorization", String.Format("Bearer {0}", AccessToken()))
 
 ### C# example - Power BI REST API data request using a token
 
-For a complete C# sample that shows how to authenticate a Power BI client app and call all Power BI REST operations, see [Client app sample](https://msdn.microsoft.com/en-US/library/mt186159.aspx) or [view the code on GitHub](http://go.microsoft.com/fwlink/?LinkId=619429).
+For a complete C# sample that shows how to authenticate a Power BI client app and call all Power BI REST operations, see [Client app sample](https://msdn.microsoft.com/library/mt186159.aspx) or [view the code on GitHub](http://go.microsoft.com/fwlink/?LinkId=619429).
 
 ```
         static dataset[] GetDatasets()
@@ -198,7 +198,7 @@ In a .NET client app, you use **AuthenticationContext** to acquire an Azure acce
 6.	After authenticating the client application, the Power BI REST API returns the requested data.
 
 
-To learn more about Azure Active Directory (Azure AD) authorization flow, see [Authorization Code Grant Flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx).
+To learn more about Azure Active Directory (Azure AD) authorization flow, see [Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx).
 
 <a name="Library"></a>
 ## How to add Azure Active Directory Authentication Library
