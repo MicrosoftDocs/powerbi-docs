@@ -25,12 +25,6 @@ This article shows you how to authenticate a Power BI client app. It includes ex
 
 For a complete C# sample that shows how to authenticate a Power BI client app, see [Client app sample](https://msdn.microsoft.com/library/mt186159.aspx).
 
-## In this article
-- [What you need to authenticate a Power BI client app](#What)
-- [How to make a data request to Power BI REST API using a token](#Datarequest)
-- [Azure Authentication Context Flow](#Flow)
-- [How to add Azure Active Directory Authentication Library](#Library)
-
 Power BI client apps use **Azure Active Directory** (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your client app in AAD, you register your app with AAD. When you register a client app in AAD, you give your app access to the Power BI APIs. To learn how to register your Power BI client app, see [Register a client app](powerbi-developer-register-a-client-app.md).
 
 Power BI REST API calls are made on behalf of an authenticated user by passing a token in the "Authorization" header of the request. The token is acquired through Azure Active Directory.
@@ -80,7 +74,7 @@ If you do not have Windows Azure Authentication Library (ADAL), see [How to add 
 
 For more information about what AuthenticationContext does to get a token, see [Azure Authentication Context Flow](#Flow).
 
-### C# example - Get access token
+## C# example - Get access token
 
 In a .NET client app, you use **AuthenticationContext** to get an access token.
 
@@ -126,7 +120,7 @@ request.Headers.Add("Authorization", String.Format("Bearer {0}", AccessToken()))
 ```
 
 
-### C# example - Power BI REST API data request using a token
+## C# example - Power BI REST API data request using a token
 
 For a complete C# sample that shows how to authenticate a Power BI client app and call all Power BI REST operations, see [Client app sample](https://msdn.microsoft.com/library/mt186159.aspx) or [view the code on GitHub](http://go.microsoft.com/fwlink/?LinkId=619429).
 
