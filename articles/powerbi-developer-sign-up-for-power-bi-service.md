@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/6/2015"
+   ms.date="11/1/2015"
    ms.author="derrickv"/>
 
 # Sign up for Power BI service
@@ -40,5 +40,5 @@ The registration process validates the user and provisions the **Power BI servic
 ## Next step to create a Power BI app - Register your app
 After you sign up for the **Power BI service**, you’ll see the Power BI service added to your Azure AD and can register a client app or web app with the right permissions.
 
-- [Register a client app](Register+a+client+app.md)
-- [Register a web app](Register+a+web+app.md)
+- [Register a client app](powerbi-developer-register-a-client-app.md)
+- [Register a web app](powerbi-developer-register-a-web-app.md)

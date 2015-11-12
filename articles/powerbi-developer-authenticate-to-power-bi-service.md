@@ -87,8 +87,8 @@ When you register a web app, you receive a client secret **Key**. The client sec
 For a complete sample of how to use an Azure **Client ID** and client secret **Key** to authenticate a web app, see [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md).
 
 ## Related topics
-- [Get started creating a Power BI app](Get+started+creating+a+Power+BI+app.md)
+- [Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md)
 - [How to get an Azure Active Directory tenant](https://azure.microsoft.com/en-us/documentation/articles/active-directory-howto-tenant/)
-- [Create an Azure Active Directory tenant](Create+an+Azure+Active+Directory+tenant.md)
-- [Register a client app](Register+a+client+app.md)
-- [Register a web app](Register+a+web+app.md)
+- [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)
+- [Register a client app](powerbi-developer-register-a-client-app.md)
+- [Register a web app](powerbi-developer-register-a-web-app.md)

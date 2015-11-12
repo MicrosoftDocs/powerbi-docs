@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/6/2015"
+   ms.date="11/1/2015"
    ms.author="derrickv"/>
 
 # Register a client app
@@ -120,5 +120,5 @@ Here's how to get a client id:
     ![](media/powerbi-developer-register-a-client-app/register-app-clientid.png)
 
 ## Next steps to create a Power BI app
-- [Create your Power BI app](Introduction+to+creating+a+Power+BI+app.md)
-- [Learn how to Authenticate with Azure AD](Authenticate+to+Power+BI+service.md)
+- [Create your Power BI app](powerbi-developer-introduction-to-creating-a-power-bi-app.md)
+- [Learn how to Authenticate with Azure AD](powerbi-developer-authenticate-to-power-bi-service.md)
