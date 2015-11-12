@@ -14,17 +14,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/6/2015"
+   ms.date="11/1/2015"
    ms.author="derrickv"/>
 
 # Authenticate a web app
 
 [Download the web app sample](http://go.microsoft.com/fwlink/?LinkId=619279) | View the code on GitHub: [Default.aspx.cs](http://go.microsoft.com/fwlink/?LinkId=619431) | [Redirect.aspx.cs](http://go.microsoft.com/fwlink/?LinkId=619432)
 
-This article shows you how to authenticate a Power BI web app. It includes examples in C#; however, the authentication process is the same for other web programming languages. There is a [web app sample on GitHub](http://go.microsoft.com/fwlink/?LinkId=619279). To learn how to run the sample, see [Web app sample](Power+BI+web+app+sample.md).
+This article shows you how to authenticate a Power BI web app. It includes examples in C#; however, the authentication process is the same for other web programming languages. There is a [web app sample on GitHub](http://go.microsoft.com/fwlink/?LinkId=619279). To learn how to run the sample, see [Web app sample](https://msdn.microsoft.com/en-us/library/mt186158.aspx).
 
 
-Power BI web apps use Active Directory (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your web app in AAD, you register your app with AAD. When you register a web app in AAD, you give your app access to the Power BI REST API resources. To learn how to register your Power BI web app, see [Register a web app](Register+a+web+app.md).
+Power BI web apps use Active Directory (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your web app in AAD, you register your app with AAD. When you register a web app in AAD, you give your app access to the Power BI REST API resources. To learn how to register your Power BI web app, see [Register a web app](powerbi-developer-register-a-web-app.md).
 
 ## In this article
 
@@ -43,12 +43,18 @@ To learn more about Azure Active Directory (Azure AD) authorization flow, see [A
 Here are the steps to authenticate a Power BI web app and perform a REST web request. These steps apply to an ASP.NET web app; however, the steps apply to other platforms. To learn more about OAuth 2.0 in Azure AD, see [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx).
 <a name="register"/>
 ### Step 1 - Register your web app
-When you register a web app in Azure Active Directory, you give your app access to the Power BI REST API resources. To register a Power BI web app, see [Register a web app](Register+a+web+app.md).
+When you register a web app in Azure Active Directory, you give your app access to the Power BI REST API resources. To register a Power BI web app, see [Register a web app](powerbi-developer-register-a-web-app.md).
 <a name="configure"/>
 ### Step 2 - Configure Power BI settings to authenticate with Azure AD
-Here are the settings you need to authenticate a Power BI web app with Azure AD:
+Here are the settings you need to authenticate a Power BI web app with Azure AD.
 
-<table><tr><td><b>Setting</b></td><td><b>Description</b></td><td><b>Value</b></td></tr><tr><td>Client ID</td><td>Client ID is used by the application to identify themselves to the users that they are requesting permissions from.</td><td>To get a Power BI app client id, see [How to get a client app id](Register+a+web+app.md#clientID).</td></tr><tr><td>Client Secret</td><td>The client secret key is sent along with a Client ID when authenticating to Azure AD to call a web API.</td><td>To get a Power BI app client secret key, see [How to get a client secret key](Register+a+web+app.md#clientSecret).</td></tr><tr><td>Resource Uri</td><td>The resource Uri to the Power BI resource to be authorized. You must use this exact Uri.</td><td>https://analysis.windows.net/powerbi/api</td></tr><tr><td>Authority Uri</td><td>The authority Uri is an Azure resource that takes a client id to get an access token.</td><td>https://login.windows.net/common/oauth2/authorize</td></tr><tr><td>Redirect Url</td><td>A Redirect Url for the web app url. The Azure AD service redirects back to the web app url with an authentication code.</td><td>Example: http://localhost:13526/Redirect</td></tr></table>
+|Setting|Description|Value
+|:-|:-|:-
+|Client ID|Client ID is used by the application to identify themselves to the users that they are requesting permissions from.|To get a Power BI app client id, see [How to get a client app id](powerbi-developer-register-a-web-app.md#clientID).
+|Client Secret|The client secret key is sent along with a Client ID when authenticating to Azure AD to call a web API.|To get a Power BI app client secret key, see [How to get a client secret key](powerbi-developer-register-a-web-app.md#clientSecret).
+|Resource Uri|The resource Uri to the Power BI resource to be authorized. You must use this exact Uri.|https://analysis.windows.net/powerbi/api
+|Authority Uri|The authority Uri is an Azure resource that takes a client id to get an access token.|https://login.windows.net/common/oauth2/authorize
+|Redirect Url|A Redirect Url for the web app url. The Azure AD service redirects back to the web app url with an authentication code.|Example: http://localhost:13526/Redirect
 
 <a name="create"/>
 ### Step 3 - Create a query string to get authorization code from Azure AD
