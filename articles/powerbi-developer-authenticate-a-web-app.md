@@ -1,9 +1,9 @@
-<properties
+﻿<properties
    pageTitle="Authenticate a web app"
    description="Authenticate a web app"
    services="powerbi"
    documentationCenter=""
-   authors="derrickv"
+   authors="dvana"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -21,7 +21,7 @@
 
 [Download the web app sample](http://go.microsoft.com/fwlink/?LinkId=619279) | View the code on GitHub: [Default.aspx.cs](http://go.microsoft.com/fwlink/?LinkId=619431) | [Redirect.aspx.cs](http://go.microsoft.com/fwlink/?LinkId=619432)
 
-This article shows you how to authenticate a Power BI web app. It includes examples in C#; however, the authentication process is the same for other web programming languages. There is a [web app sample on GitHub](http://go.microsoft.com/fwlink/?LinkId=619279). To learn how to run the sample, see [Web app sample](https://msdn.microsoft.com/en-us/library/mt186158.aspx).
+This article shows you how to authenticate a Power BI web app. It includes examples in C#; however, the authentication process is the same for other web programming languages. There is a [web app sample on GitHub](http://go.microsoft.com/fwlink/?LinkId=619279). To learn how to run the sample, see [Web app sample](https://msdn.microsoft.com/library/mt186158.aspx).
 
 
 Power BI web apps use Active Directory (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your web app in AAD, you register your app with AAD. When you register a web app in AAD, you give your app access to the Power BI REST API resources. To learn how to register your Power BI web app, see [Register a web app](powerbi-developer-register-a-web-app.md).
@@ -35,12 +35,12 @@ Power BI web apps use Active Directory (AAD) to authenticate users and protect a
 - [Use Azure AD access token to call a Power BI operation](#use)
 - [How to add Azure Active Directory Authentication Library](#add)
 
-To learn more about Azure Active Directory (Azure AD) authorization flow, see [Authorization Code Grant Flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx).
+To learn more about Azure Active Directory (Azure AD) authorization flow, see [Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx).
 
 **NOTE** For Power BI, apps are created as multi-tenant apps using the Azure Management Portal.
 
 ## What you need to authenticate a Power BI web app
-Here are the steps to authenticate a Power BI web app and perform a REST web request. These steps apply to an ASP.NET web app; however, the steps apply to other platforms. To learn more about OAuth 2.0 in Azure AD, see [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx).
+Here are the steps to authenticate a Power BI web app and perform a REST web request. These steps apply to an ASP.NET web app; however, the steps apply to other platforms. To learn more about OAuth 2.0 in Azure AD, see [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx).
 <a name="register"/>
 ### Step 1 - Register your web app
 When you register a web app in Azure Active Directory, you give your app access to the Power BI REST API resources. To register a Power BI web app, see [Register a web app](powerbi-developer-register-a-web-app.md).
@@ -107,7 +107,7 @@ Here’s a C# code sample to create an Azure AD authorization url with a query s
 <a name="acquire"/>
 ### Step 4 – Acquire an Azure AD access token using authorization code
 
-To make a data request to the Power BI REST service, you need to supply an access token. In a .NET web app, you use the [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/azure/jj573266.aspx) to get an access token. If you do not have [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/azure/jj573266.aspx), see [How to add Azure Active Directory Authentication Library](#add).
+To make a data request to the Power BI REST service, you need to supply an access token. In a .NET web app, you use the [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/library/azure/jj573266.aspx) to get an access token. If you do not have [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/library/azure/jj573266.aspx), see [How to add Azure Active Directory Authentication Library](#add).
 
 After your app redirects to the Azure AD authority Uri and acquires an authorization code, your app gets a token by authorization code. Here’s how your app can get the authorization code and get an access token:
 **In a Redirect class**:
@@ -280,8 +280,8 @@ In a .NET client app, you use **AuthenticationContext** in the Active Directory 
 4. Choose Active Directory Authentication Library in the list of packages, and click Install.
 
 ## Related topics
-* [Azure AD Authentication Library for .NET](https://msdn.microsoft.com/en-us/library/azure/jj573266.aspx)
+* [Azure AD Authentication Library for .NET](https://msdn.microsoft.com/library/azure/jj573266.aspx)
 * [Active Directory Authentication Library (ADAL) v1 for .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
-* [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx)
-* [Authorization Code Grant Flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx)
-* [Authentication Scenarios for Azure AD](https://msdn.microsoft.com/en-US/library/azure/dn499820.aspx)
+* [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx)
+* [Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
+* [Authentication Scenarios for Azure AD](https://msdn.microsoft.com/library/azure/dn499820.aspx)

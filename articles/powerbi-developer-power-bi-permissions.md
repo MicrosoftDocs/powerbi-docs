@@ -3,7 +3,7 @@
    description="Power BI permissions"
    services="powerbi"
    documentationCenter=""
-   authors="derrickv"
+   authors="dvana"
    manager="mblythe"
    editor=""
    tags=""/>

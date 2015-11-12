@@ -1,9 +1,9 @@
-<properties
+﻿<properties
    pageTitle="Authenticate a client app"
    description="Authenticate a client app"
    services="powerbi"
    documentationCenter=""
-   authors="derrickv"
+   authors="dvana"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -214,8 +214,8 @@ In a .NET client app, you use **AuthenticationContext** in the **Active Director
 4.	Choose **Active Directory Authentication Library** in the list of packages, and click **Install**.
 
 ## Related topics
-- [Azure AD Authentication Library for .NET](https://msdn.microsoft.com/en-us/library/azure/jj573266.aspx)
+- [Azure AD Authentication Library for .NET](https://msdn.microsoft.com/library/azure/jj573266.aspx)
 - [Active Directory Authentication Library (ADAL) v1 for .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
-- [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx)
-- [Authorization Code Grant Flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx)
-- [Authentication Scenarios for Azure AD](https://msdn.microsoft.com/en-US/library/azure/dn499820.aspx)
+- [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx)
+- [Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
+- [Authentication Scenarios for Azure AD](https://msdn.microsoft.com/library/azure/dn499820.aspx)

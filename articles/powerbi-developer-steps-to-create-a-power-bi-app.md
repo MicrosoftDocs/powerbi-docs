@@ -3,7 +3,7 @@
    description="Get started creating a Power BI app"
    services="powerbi"
    documentationCenter=""
-   authors="derrickv"
+   authors="dvana"
    manager="mblythe"
    editor=""
    tags=""/>

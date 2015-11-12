@@ -3,7 +3,7 @@
    description="Register a web app"
    services="powerbi"
    documentationCenter=""
-   authors="derrickv"
+   authors="dvana"
    manager="mblythe"
    editor=""
    tags=""/>

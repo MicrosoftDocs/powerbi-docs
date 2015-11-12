@@ -3,7 +3,7 @@
    description="Create an Azure Active Directory tenant"
    services="powerbi"
    documentationCenter=""
-   authors="derrickv"
+   authors="dvana"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -103,5 +103,5 @@ Once you have an **Azure Active Directory** tenant, and an organizational user, 
 **Note** When you sign up for the Power BI service, use your organizational user. Once you login to the **Power BI service** for the first time, you will see the **Power BI service** added to your Azure AD.
 
 ## See Also
-- [What is an Azure AD directory?](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx)
-- [How to get an Azure Active Directory tenant](https://azure.microsoft.com/en-us/documentation/articles/active-directory-howto-tenant/)
+- [What is an Azure AD directory?](https://msdn.microsoft.com/library/azure/jj573650.aspx)
+- [How to get an Azure Active Directory tenant](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)

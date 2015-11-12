@@ -3,7 +3,7 @@
    description="Authenticate to Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="derrickv"
+   authors="dvana"
    manager="mblythe"
    editor=""
    tags=""/>
