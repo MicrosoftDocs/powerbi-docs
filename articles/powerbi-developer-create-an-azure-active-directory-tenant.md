@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/6/2015"
+   ms.date="11/1/2015"
    ms.author="derrickv"/>
 
 # Create an Azure Active Directory tenant
 
-Using the Power BI REST API, you can create a Power BI app in any platform that supports calling REST operations. However, before you get started creating a Power BI app, you need an **Azure Active Directory**, an organizational user, and a [Power BI service account](Sign+up+for+Power+BI+service.md).
+Using the Power BI REST API, you can create a Power BI app in any platform that supports calling REST operations. However, before you get started creating a Power BI app, you need an **Azure Active Directory**, an organizational user, and a [Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md).
 
 ### In this article
 - [Create an Azure Active Directory tenant](#setup)
@@ -29,7 +29,7 @@ Using the Power BI REST API, you can create a Power BI app in any platform that 
 
 Power BI apps are integrated with **Azure Active Directory** (Azure AD) to provide secure sign in and authorization for your app. To integrate a Power BI app with Azure AD, you register the details about your application with Azure AD by using the Azure Management Portal.
 
-**Important** To sign up for the **Power BI service**, your **Azure Active Directory** must have at least one organizational user. Use your organizational user to [sign up for the Power BI service](Sign+up+for+Power+BI+service.md).
+**Important** To sign up for the **Power BI service**, your **Azure Active Directory** must have at least one organizational user. Use your organizational user to [sign up for the Power BI service](powerbi-developer-sign-up-for-power-bi-service.md).
 
 <a name="setup"></a>
 ### Create an Azure Active Directory tenant
@@ -98,7 +98,7 @@ You need a user from your Azure AD to register an Azure AD app. Here's how to ad
 Once you have an **Azure Active Directory** tenant, and an organizational user, you need to sign up for Power BI.
 
 ## Next step to create a Power BI app - Sign up for Power BI
-- [Sign up for Power BI](Sign+up+for+Power+BI+service.md)
+- [Sign up for Power BI](powerbi-developer-sign-up-for-power-bi-service.md)
 
 **Note** When you sign up for the Power BI service, use your organizational user. Once you login to the **Power BI service** for the first time, you will see the **Power BI service** added to your Azure AD.
 
