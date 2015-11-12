@@ -25,26 +25,35 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 
 >**Notes:**  
 
->- To import your Projectplace data into Power BI, you must be a Projectplace user.   
+>-   To import your Projectplace data into Power BI, you must be a Projectplace user
 
->- This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, create a new free Power BI account on the Power BI home page, and then click Get Data.
+>-   This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, create a new free Power BI account on the Power BI home page, and then click Get Data.
+ 
+1. Select **Get Data** at the bottom of the left navigation pane.
 
+    ![](media/powerbi-content-pack-projectplace/get.PNG)
 
+2. In the **Services** box, select **Get**.
 
-1. On the Power BI page, select **Projectplace by Planview**, then select **Connect**, as shown in the following image:  
+    ![](media/powerbi-content-pack-projectplace/services.PNG)
+
+3. On the Power BI page, select **Projectplace by Planview**, then select **Connect**, as shown in the following image:  
+
 	![](media/powerbi-content-pack-projectplace/getdata2.PNG)
 
-2. In the OData Feed URL text box, enter the URL for the Projectplace OData feed you want to use, as shown in the following image:
+4. In the OData Feed URL text box, enter the URL for the Projectplace OData feed you want to use, as shown in the following image:
+
 	![](media/powerbi-content-pack-projectplace/params.png)
 
-3.  On the Authentication Method list, select **OAuth** if it is not already selected. Hit **Sign In** and follow the login flow.   
+5.  On the Authentication Method list, select **OAuth** if it is not already selected. Hit **Sign In** and follow the login flow.  
+
 	![](media/powerbi-content-pack-projectplace/creds.PNG)
 
-4. On the left pane, select **Projectplace** from the list of dashboards. Power BI imports Projectplace data into the dashboard. Note that the data may take some time to load.  
+6. On the left pane, select **Projectplace** from the list of dashboards. Power BI imports Projectplace data into the dashboard. Note that the data may take some time to load.  
 
 The dashboard contains tiles that display data from your Projectplace database. The following image shows an example of the default Projectplace dashboard in Power BI.
-	![](media/powerbi-content-pack-projectplace/dashboard.PNG)
 
+	![](media/powerbi-content-pack-projectplace/dashboard.PNG)
 
 You can perform the following tasks with the Projectplace content pack for Power BI:  
 
