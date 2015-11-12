@@ -33,7 +33,7 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 	![](media/powerbi-content-pack-projectplace/getdata2.PNG)
 
 2. In the OData Feed URL text box, enter the URL for the Projectplace OData feed you want to use, as shown in the following image:
-	![](media/powerbi-content-pack-projectplace/params.PNG)
+	![](media/powerbi-content-pack-projectplace/params.png)
 
 3.  On the Authentication Method list, select **OAuth** if it is not already selected. Hit **Sign In** and follow the login flow.   
 	![](media/powerbi-content-pack-projectplace/creds.PNG)
