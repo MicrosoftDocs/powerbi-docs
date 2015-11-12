@@ -242,8 +242,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Data from databases",
           "articles": [
-            "powerbi-azure-sql-data-warehouse-with-direct-connect",
-            "powerbi-azure-sql-database-with-direct-connect",
+            "powerbi-azure-sql-data-warehouse-with-directquery",
+            "powerbi-azure-sql-database-with-directquery",
             "powerbi-spark-on-hdinsight-with-direct-connect",
             "powerbi-sql-server-analysis-services-tabular-data",
             "powerbi-analysis-services-connector",
