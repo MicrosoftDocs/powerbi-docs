@@ -396,7 +396,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-mobile-android-app-get-started",
 			      "powerbi-mobile-get-the-windows-app",
 			      "powerbi-service-windows-app-get-started",
-				  "powerbi-mobile-create-dashboard",
+				    "powerbi-mobile-create-dashboard",
 			      "powerbi-mobile-whats-new-in-the-mobile-apps"
           ],
           "numberOfFeaturedArticles": 10

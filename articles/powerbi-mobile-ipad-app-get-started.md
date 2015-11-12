@@ -27,7 +27,7 @@ interact with your company dashboards and reports easily, from anywhere. Explore
 
 your dashboards, and share them with your colleagues in email or text messages.  
 
->**Note:** Your iPad needs to be running at least iOS 8.0.
+>**Note:** Your iPad needs to be running at least iOS 8.0. 
 
 ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_DashPopout.png)
 
