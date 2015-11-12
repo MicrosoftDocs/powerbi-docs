@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/11/2015"
    ms.author="maggies"/>
 # Annotate and share a tile from the iPhone app (Power BI for iOS)
 
@@ -22,33 +22,29 @@ When you share a snapshot of a tile from the iPhone app for Microsoft Power BI f
 
 You can add annotations — lines, text, or stamps — to a tile before you share a snapshot.
 
-![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_iPhoneAnnotEdit.png)
+![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_AnnotateSmiley.png)
 
-1.  Tap a tile to interact with it.
+1.  Tap a tile to open it in focus mode.
 
-2.  Tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_iPhoneShareTileIconNoBorder.png) in the upper-right corner of the tile.
+2.  Tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_ShareIcon.png) in the upper-right corner of the tile.
 
 3.  To annotate the tile, tap an icon in the lower bar in the Edit window:
 
-    ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_iPhoneAnnotEditBar.png)
+    ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_AnnotateBar.png)
 
     -   Tap the pencil icon to draw lines of different colors and thicknesses.
-
-        ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_iPh_iPad_Annotate.png)
 
     -   Tap the text balloon to type comments.
 
     -   Tap the smiley face to paste stamps (like emoticons) on the tile.
 
-4.  After annotating, tap the check mark in the upper-right corner.
+4.  After annotating, tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_ShareIcon.png) in the upper-right corner.
 
-5.  Tap the **Mail** icon, type the recipients' names, and modify the message, if you want.
-
-    ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_iPhoneAnnotMail.png)
+5.  Type the recipients' names and modify the message if you want.
 
 6.  Tap **Send**.
 
-### See Also
+### See also
 
 [Share a dashboard from the iPhone app \(Power BI for iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
 

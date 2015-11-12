@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Share a dashboard from the iPhone app (Power BI for iOS)"
    description="Share a dashboard from the iPhone app (Power BI for iOS)"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/11/2015"
    ms.author="maggies"/>
 # Share a dashboard from the iPhone app (Power BI for iOS)
 
@@ -22,9 +22,7 @@ Invite colleagues to view your dashboards by sharing links from the iPhone app f
 
 ## Share a dashboard
 
-1.  In the upper-right corner of your dashboard, tap the Options icon \> tap **Invite a colleague**.
-
-    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/PBI_iPhone_OptionsMenu200w.png)
+1.  In the upper-right corner of the dashboard, tap **Invite a colleague** ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/PBI_iPhShareIcon.png).
 
 2.  Type names and a message to accompany your dashboard invitation.
 
@@ -40,9 +38,7 @@ Invite colleagues to view your dashboards by sharing links from the iPhone app f
 
 You can only unshare a dashboard if you're the dashboard owner.
 
-1.  In the upper-right corner of your dashboard, tap the Options icon \> tap **Invite a colleague**.
-
-    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/PBI_iPhone_OptionsMenu200w.png)
+1.  In the upper-right corner of the dashboard, tap **Invite a colleague** ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/PBI_iPhShareIcon.png).
 
     You see the list of colleagues with whom you've shared this dashboard. Below their names are these words:
 
@@ -70,7 +66,7 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 -   You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
 
-### See Also
+### See also
 
 [Annotate and share a tile from the iPhone app for Power BI](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
 
