@@ -23,7 +23,7 @@
 
 This article shows you how to authenticate a Power BI client app. It includes examples in C#; however, the authentication process is the same for other programming languages.
 
-For a complete C# sample that shows how to authenticate a Power BI client app, see [Client app sample](Power+BI+client+app+sample.md).
+For a complete C# sample that shows how to authenticate a Power BI client app, see [Client app sample](https://msdn.microsoft.com/en-US/library/mt186159.aspx).
 
 ## In this article
 - [What you need to authenticate a Power BI client app](#What)
@@ -31,7 +31,7 @@ For a complete C# sample that shows how to authenticate a Power BI client app, s
 - [Azure Authentication Context Flow](#Flow)
 - [How to add Azure Active Directory Authentication Library](#Library)
 
-Power BI client apps use **Azure Active Directory** (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your client app in AAD, you register your app with AAD. When you register a client app in AAD, you give your app access to the Power BI APIs. To learn how to register your Power BI client app, see [Register a client app](Register+a+client+app.md).
+Power BI client apps use **Azure Active Directory** (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your client app in AAD, you register your app with AAD. When you register a client app in AAD, you give your app access to the Power BI APIs. To learn how to register your Power BI client app, see [Register a client app](powerbi-developer-register-a-client-app.md).
 
 Power BI REST API calls are made on behalf of an authenticated user by passing a token in the "Authorization" header of the request. The token is acquired through Azure Active Directory.
 
