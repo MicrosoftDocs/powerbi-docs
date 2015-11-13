@@ -32,6 +32,8 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 
  
 1. Select **Get Data** at the bottom of the left navigation pane.
+    ![](media/powerbi-content-pack-projectplace/get.png)
+
 2. In the **Services** box, select **Get**.
 
     ![](media/powerbi-content-pack-projectplace/services.png)
