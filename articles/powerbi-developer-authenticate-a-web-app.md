@@ -39,7 +39,7 @@ When you register a web app in Azure Active Directory, you give your app access 
 Here are the settings you need to authenticate a Power BI web app with Azure AD.
 
 |Setting|Description|Value|
-|---|---|---|
+|:--|:--|:--|
 |Client ID|Client ID is used by the application to identify themselves to the users that they are requesting permissions from.|To get a Power BI app client id, see [How to get a client app id](powerbi-developer-register-a-web-app.md#clientID).|
 |Client Secret|The client secret key is sent along with a Client ID when authenticating to Azure AD to call a web API.|To get a Power BI app client secret key, see [How to get a client secret key](powerbi-developer-register-a-web-app.md#clientSecret).|
 |Resource Uri|The resource Uri to the Power BI resource to be authorized. You must use this exact Uri.|https://analysis.windows.net/powerbi/api|
@@ -59,7 +59,7 @@ To authenticate a Power BI web app, you first create a url query string to redir
 **Power BI authentication query string settings**
 
 |Setting|Description|
-|---|---|
+|:--|:--|
 |response_type=code|Azure AD returns an authorization code.|
 |client_id=1861585d...9a79c296|Client ID is used by the application to identify themselves to the users that they are requesting permissions from. You get the client id when you register your Azure app.|
 |resource= https://analysis.windows.net/powerbi/api|Resource uri to the Power BI resource to be authorized. You must use this exact Uri.|
