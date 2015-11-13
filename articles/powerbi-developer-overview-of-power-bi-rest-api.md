@@ -24,6 +24,7 @@ Power BI displays dashboards that are interactive, and can be created and update
 Using any programming language that supports REST calls, you can create a business solution that updates a Power BI dashboard in real-time.
 
 With the Power BI REST API, you can:
+
 - [Authenticate Power BI REST operations with Azure Active Directory OAuth2](powerbi-developer-authenticate-to-power-bi-service.md)
 - [Create and get datasets](https://msdn.microsoft.com/library/mt203551.aspx)
 - [Set a retention policy to automatically clean up old data](https://msdn.microsoft.com/library/mt186545.aspx)

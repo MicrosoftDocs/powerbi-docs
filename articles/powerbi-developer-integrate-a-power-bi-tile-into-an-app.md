@@ -34,7 +34,7 @@ Here are the steps to integrate a Power BI tile or report into an app. You can a
 ## To create an app that integrates a Power BI tile
 
 |**Step**|**See also**|
-|---|---|
+|---|:--|
 |The Power BI user's account must have at least one **dashboard** with at least one **tile** on it.|To sign up for Power BI, see [Sign up for the Power BI service](powerbi-developer-sign-up-for-power-bi-service.md).  <br/><br/>To learn how to get a **tile** in a **dashboard** using the Power BI REST API, see [Get a Power BI tile](#gettile).|
 |In an app, get an Azure Active Directory (Azure AD) authentication token.|To learn how to get an Azure AD authentication token, see [Authenticate to Power BI service](powerbi-developer-authenticate-to-power-bi-service.md).  Learn about [Azure Active Directory Authentication Libraries](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/).|
 |For a tile, get the **dashboard** id and **tile** id to embed an **IFrame** tile into an app|To learn how to get a **dashboard** id and **tile** id, see [Get a Power BI tile](#gettile).|
