@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Reports in the Power BI for Windows app"
    description="Reports in the Power BI for Windows app"
    services="powerbi" 
@@ -39,15 +39,15 @@ Then you view and interact with those reports in the [Power BI for Windows app]
 
 ## See other pages in a Power BI report
 
--   Tap the arrows at the bottom of the page. 
+-   Tap the tabs at the bottom of the page. 
 
 ## Sort a chart in a Power BI report
 
-1.  Tap and hold, or right-click the chart. 
+1.  Tap the chart. 
 
-2.  Tap the down arrow next to **Sort by**, then tap the field name.
+2.  Tap the ellipsis (...) in the upper-right corner, tap the **Sort by** arrow, then tap the field name.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppSortChart.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppSort.png)
 
 3.  To reverse the sort order, tap **A\>Z** or **Z\>A**. 
 
@@ -78,19 +78,21 @@ You can always filter visuals in a Power BI report, because you can use the fiel
 
 In a report, expand the Filters pane, if it's collapsed.
 
-![](media/powerbi-mobile-reports-in-the-windows-app/PBI_FiltersCollapsed.png)
+![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppCollapsFilter.png)
 
-When filtering fields, you can select check boxes for the values you want.
+When filtering fields, select check boxes for the values you want.
 
-![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppCheckFilter.png)
+![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinApp_PageFilter.png)
 
-Or you can switch the filtering mode. Tap **Change filter type** ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_FilterSwitchIcon.png) to select values using expressions instead.
+Or you can switch the filtering mode. Tap **Advanced filtering** ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppAdvFilter.png) at the end of the list of values, to select values using expressions instead.
 
 -   Number fields offer expressions such as **is less than**, **is greater than**, **is not**, and **is blank**.
 
+     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppAdvFilterOptions.png)
+
 -   Text fields offer expressions such as **contains**, **doesn't start with**, and **is not**.
 
-![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppFilterExpressn.png)
+
 
 ### Filter a visual in a Power BI report
 
@@ -98,7 +100,7 @@ When you filter a visual, such as a chart, you can always filter it by one of th
 
 1.  On a report page, select a chart or other visual and tap **Filters** in the upper-right corner to expand the Filters pane.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_FiltersCollapsed.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppCollapsFilter.png)
 
     You see a list of the fields in the visual, and maybe other fields, if you added them in the Power BI service ([https://powerbi.com](http://powerbi.com)).
 
@@ -110,7 +112,7 @@ You can only filter a whole page if you or someone else has added a filter to th
 
 1.  In a report page, without selecting any visuals on the page, tap **Filters** in the upper-right corner.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_FiltersCollapsed.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppCollapsFilter.png)
 
 2.  If there are fields under the Page heading, you can set filters for the page.
 

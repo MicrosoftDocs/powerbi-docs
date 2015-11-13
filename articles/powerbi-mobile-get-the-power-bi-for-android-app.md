@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Get the Power BI for Android app"
    description="Get the Power BI for Android app"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/13/2015"
    ms.author="maggies"/>
 
 # Get the Power BI for Android app
@@ -23,13 +23,13 @@
 
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
 
-**Note:** Your phone needs to be using Android 4.4 or newer.
+>**Note:** Your phone needs to be using Android 4.4 or newer.
 
-### Sign in
+## Sign in
 
 -   If you've already signed up on the Power BI site, in the Android app tap [Sign in](http://go.microsoft.com/fwlink/?LinkId=522061) to view your dashboards.
 
-### Sign up for Power BI on the web
+## Sign up for Power BI on the web
 
 If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) to sign up for your own place to create and store dashboards and bring your data together. Then sign in to Power BI from your Android phone to see your own dashboards from anywhere.
 

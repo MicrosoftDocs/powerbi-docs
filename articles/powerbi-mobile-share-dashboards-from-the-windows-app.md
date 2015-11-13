@@ -1,4 +1,4 @@
-﻿<properties 
+****<properties 
    pageTitle="Share dashboards from the Power BI for Windows app"
    description="Share dashboards from the Power BI for Windows app"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/13/2015"
    ms.author="maggies"/>
 
 # Share dashboards from the Power BI for Windows app
@@ -25,7 +25,7 @@ Invite colleagues by sharing links to dashboards and [snapshots of tiles](power
 
 2.  In the **Invite a colleague** pane, type email names or tap ![](media/powerbi-mobile-share-dashboards-from-the-windows-app/PBI_WinAppPeopleIcon.png) to search for contacts in your People app. Then type a message to accompany your dashboard invitation, if you want.
 
-3.  To allow resharing, leave Allow recipients to share this dashboard selected.
+3.  To allow resharing, leave **Allow recipients to share this dashboard** selected.
 
     **NOTE** If you allow resharing, your colleagues can share the dashboard with other colleagues in your organization, either from the [Power BI](http://powerbi.com) service or from the mobile apps.
 
@@ -63,8 +63,9 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 -   Your colleagues can see your dashboard and even see changes you make in the Power BI service online, after you save those changes.
 
--   You can share snapshots of tiles with anyone, in or out of your email domain.You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
+-   You can share snapshots of tiles with anyone, in or out of your email domain.
+-   You can share dashboards with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
 
-### See Also
+## See also
 
 More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
