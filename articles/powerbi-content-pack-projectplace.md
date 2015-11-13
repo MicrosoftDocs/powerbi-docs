@@ -32,9 +32,6 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 
  
 1. Select **Get Data** at the bottom of the left navigation pane.
-
-    ![](media/powerbi-content-pack-projectplace/get.png)
-
 2. In the **Services** box, select **Get**.
 
     ![](media/powerbi-content-pack-projectplace/services.png)
@@ -60,6 +57,9 @@ The dashboard contains tiles that display data from your Projectplace database. 
 You can perform the following tasks with the Projectplace content pack for Power BI:  
 
 - Select a tile on the dashboard to view the underlying report in detail.
+
 - Change, resize, and reorder the tiles on the dashboard.
+
 - Rename the default Projectplace dashboard, report, or dataset by clicking the ellipsis (…) next to the Projectplace dashboard, report, or dataset, and selecting Rename.
+
 - Ask a question about your Projectplace data by entering text such as “total cards” in the Q&A box at the top of the dashboard to receive real-time results.
