@@ -92,6 +92,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-microsoft-dynamics-marketing",
             "powerbi-content-pack-microsoft-dynamics-nav",
 			"powerbi-content-pack-planview",
+            "powerbi-content-pack-projectplace",
             "powerbi-content-pack-quickbooks-online",
             "powerbi-content-pack-sendgrid",
 			"powerbi-content-pack-sparkpost",
