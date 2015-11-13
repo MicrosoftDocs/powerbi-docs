@@ -242,8 +242,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Data from databases",
           "articles": [
-            "powerbi-azure-sql-data-warehouse-with-directquery",
-            "powerbi-azure-sql-database-with-directquery",
+            "powerbi-azure-sql-data-warehouse-with-direct-connect",
+            "powerbi-azure-sql-database-with-direct-connect",
             "powerbi-spark-on-hdinsight-with-direct-connect",
             "powerbi-sql-server-analysis-services-tabular-data",
             "powerbi-analysis-services-connector",
@@ -453,6 +453,45 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app"
           ],
           "numberOfFeaturedArticles": 5
+        }
+      ]
+    },
+    {
+      "categoryName": "Power BI Developer",
+      "subSections": [
+        {
+          "sectionTitle": "Get started",
+          "articles": [
+            "powerbi-developer-overview-of-power-bi-rest-api",
+            "powerbi-developer-introduction-to-creating-a-power-bi-app",
+            "powerbi-developer-steps-to-create-a-power-bi-app",
+            "powerbi-developer-create-an-azure-active-directory-tenant",
+            "powerbi-developer-sign-up-for-power-bi-service",
+            "powerbi-developer-register-a-client-app",
+            "powerbi-developer-register-a-web-app",
+            "powerbi-developer-authenticate-to-power-bi-service",
+            "powerbi-developer-power-bi-permissions",
+            "powerbi-developer-authenticate-a-client-app",
+            "powerbi-developer-authenticate-a-web-app",
+            "powerbi-developer-rest-api-reference"
+          ],
+          "numberOfFeaturedArticles": 3
+        },
+        {
+          "sectionTitle": "Integrate a Power BI tile",
+          "articles": [
+            "powerbi-developer-integrate-a-power-bi-tile-into-an-app"
+          ],
+          "numberOfFeaturedArticles": 1
+        },
+        {
+          "sectionTitle": "Create a custom visual",
+          "articles": [
+            "powerbi-custom-visuals-create-for-the-gallery",
+            "powerbi-custom-visuals-getting-started-with-developer-tools",
+            "powerbi-custom-visuals-review-for-security-and-privacy"
+          ],
+          "numberOfFeaturedArticles": 3
         }
       ]
     }
