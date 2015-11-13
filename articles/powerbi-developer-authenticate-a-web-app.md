@@ -58,7 +58,12 @@ To authenticate a Power BI web app, you first create a url query string to redir
 
 **Power BI authentication query string settings**
 
-<table><tr><td><b>Setting</b></td><td><b>Description</b></td></tr><tr><td>response_type=code</td><td>Azure AD returns an authorization code.</td></tr><tr><td>client_id=1861585d...9a79c296</td><td>Client ID is used by the application to identify themselves to the users that they are requesting permissions from. You get the client id when you register your Azure app.</td></tr><tr><td>resource= https://analysis.windows.net/powerbi/api</td><td>Resource uri to the Power BI resource to be authorized. You must use this exact Uri.</td></tr><tr><td>redirect_uri= http://localhost:13526/Redirect</td><td>After user authenticates, Azure AD will redirect back to the web app.</td></tr></table>
+|Setting|Description|
+|---|---|
+|response_type=code|Azure AD returns an authorization code.|
+|client_id=1861585d...9a79c296|Client ID is used by the application to identify themselves to the users that they are requesting permissions from. You get the client id when you register your Azure app.|
+|resource= https://analysis.windows.net/powerbi/api|Resource uri to the Power BI resource to be authorized. You must use this exact Uri.|
+|redirect_uri= http://localhost:13526/Redirect|After user authenticates, Azure AD will redirect back to the web app.|
 
 Here’s a C# code sample to create an Azure AD authorization url with a query string, and redirect to the Azure AD authority service.
 
