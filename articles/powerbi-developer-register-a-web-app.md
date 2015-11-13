@@ -19,7 +19,6 @@
 
 # Register a web app
 
----
 This article shows you how to register a Power BI web app in Azure Active Directory (Azure AD). To allow your application access to the Power BI REST API, you need to register your application with **Azure Active Directory**. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources. For a list of Power BI permissions, see [Power BI permissions](Power+BI+permissions.md).
 
 **Important** Before you register a Power BI app you need an [Azure Active Directory and an organizational user](Create+an+Azure+Active+Directory+tenant.md), and a [Power BI service account](Sign+up+for+Power+BI+service.md). 

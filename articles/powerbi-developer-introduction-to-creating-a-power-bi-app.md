@@ -24,7 +24,7 @@ With the Power BI REST API, you can create your own business solution to push da
 ### Here is what you need to create a Power BI app
 
 |What you need | Description |
-|-|-|
+|---|---|
 | [Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) | Power BI apps are integrated with  Azure Active Directory (Azure AD) to provide secure sign in and authorization for your app.|
 |[Register your client app](Rpowerbi-developer-register-a-client-app.md) or [Register your web app](powerbi-developer-register-a-web-app.md) | To allow your application access to the Power BI REST API, you need to register your application with Azure Active Directory.|
 |[Authenticate your app](powerbi-developer-authenticate-to-power-bi-service.md)  | Power BI client apps use Active Directory (AAD) to authenticate users and protect applications. Learn how to [Authenticate a client app](powerbi-developer-authenticate-a-client-app.md) or [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md).|
@@ -34,7 +34,7 @@ With the Power BI REST API, you can create your own business solution to push da
 ### Quick starts to call each Power BI REST operation
 
 |Quick start example | Description |
-|-|-|
+|---|---|
 |[Create Dataset Example](https://msdn.microsoft.com/en-us/library/mt203562.aspx#example) | Shows how to create a dataset.  |
 |[Get Datasets Example](https://msdn.microsoft.com/en-us/library/mt203567.aspx#example)  | Shows how to get a dataset including how to **Deserialize** the JSON response using the **JavaScriptSerializer** class.|
 |[Get Tables Example](https://msdn.microsoft.com/en-us/library/mt203556.aspx#example)  | Shows how to get dataset tables. It also shows how to get a Dataset id using a LINQ query, and **Deserialize** the JSON response using the **JavaScriptSerializer** class. |
@@ -45,6 +45,6 @@ With the Power BI REST API, you can create your own business solution to push da
 
 ### Power BI samples
 |Power BI sample| Description |
-|-|-|
+|---|---|
 |[Client app sample](https://msdn.microsoft.com/en-US/library/mt186159.aspx) | Shows how to get an access token for a client app and execute all Power BI REST operations.|
 |[ASP.NET web app sample](https://msdn.microsoft.com/en-us/library/mt186158.aspx) | Shows how to get an access token for a web app and execute a Power BI REST operation.|

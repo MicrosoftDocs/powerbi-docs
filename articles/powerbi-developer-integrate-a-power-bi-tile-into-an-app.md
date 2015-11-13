@@ -33,13 +33,13 @@ Here are the steps to integrate a Power BI tile or report into an app. You can a
 
 ## To create an app that integrates a Power BI tile
 
-|**Step**|**See also**
-|:-|:-
-|The Power BI user's account must have at least one **dashboard** with at least one **tile** on it.|To sign up for Power BI, see [Sign up for the Power BI service](powerbi-developer-sign-up-for-power-bi-service.md).  <br/><br/>To learn how to get a **tile** in a **dashboard** using the Power BI REST API, see [Get a Power BI tile](#gettile).
-|In an app, get an Azure Active Directory (Azure AD) authentication token.|To learn how to get an Azure AD authentication token, see [Authenticate to Power BI service](powerbi-developer-authenticate-to-power-bi-service.md).  Learn about [Azure Active Directory Authentication Libraries](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/).
-|For a tile, get the **dashboard** id and **tile** id to embed an **IFrame** tile into an app|To learn how to get a **dashboard** id and **tile** id, see [Get a Power BI tile](#gettile).
-|In an app, set the SRC attribute of an **IFrame** to the **embedUrl**.|To set an **IFrame** SRC attribute, see [Embed a Power BI tile into a web app](#embed).
-|Add a click event handler that navigates to the Power BI dashboard.|See [Navigate from a Power BI tile to a dashboard](#navigate)
+|**Step**|**See also**|
+|---|---|
+|The Power BI user's account must have at least one **dashboard** with at least one **tile** on it.|To sign up for Power BI, see [Sign up for the Power BI service](powerbi-developer-sign-up-for-power-bi-service.md).  <br/><br/>To learn how to get a **tile** in a **dashboard** using the Power BI REST API, see [Get a Power BI tile](#gettile).|
+|In an app, get an Azure Active Directory (Azure AD) authentication token.|To learn how to get an Azure AD authentication token, see [Authenticate to Power BI service](powerbi-developer-authenticate-to-power-bi-service.md).  Learn about [Azure Active Directory Authentication Libraries](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/).|
+|For a tile, get the **dashboard** id and **tile** id to embed an **IFrame** tile into an app|To learn how to get a **dashboard** id and **tile** id, see [Get a Power BI tile](#gettile).|
+|In an app, set the SRC attribute of an **IFrame** to the **embedUrl**.|To set an **IFrame** SRC attribute, see [Embed a Power BI tile into a web app](#embed).|
+|Add a click event handler that navigates to the Power BI dashboard.|See [Navigate from a Power BI tile to a dashboard](#navigate)|
 
 
 <br/>
@@ -134,10 +134,11 @@ The **embedUrl** has the following pattern and url parameters:
 
 **Embed URL Parameters**
 
-|**Name**|**Description**|**REST operation**
-|:-|:-|:-
-|dashboardId|The id of the user's **dashboard**.|[Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx)
-|tileId|The id of the **tile** to embed. You get an array of **tiles** from a **dashboard** id.|[Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx)
+|**Name**|**Description**|**REST operation**|
+|---|---|---|
+|dashboardId|The id of the user's **dashboard**.|[Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx)|
+|tileId|The id of the **tile** to embed. You get an array of **tiles** from a **dashboard** id.|[Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx)|
+
 **Step 2 – Submit authentication token**
 
 To view a Power BI **tile** in an **IFrame**, you need to pass the **authentication token** you got in **Step 1 – Get an Azure AD authentication token**. You do this by assigning a POST method to the IFrame.onload event as follows:
@@ -230,8 +231,8 @@ In a **receiveMessage(event)** function, get message data by parsing the JSON in
 The steps in this article generally describe how to use an **IFrame** to embed a Power BI **tile** into an app. The [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app) shows all the code you need to embed a Power BI tile into a web app. The sample also shows how to add a **tile** click event so that the user can navigate to their Power BI **dashboard** from the **tile**.
 
 ## See also
--	[Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)
--	[Register a web app](powerbi-developer-register-a-web-app.md)
--	[Azure Active Directory Authentication Libraries](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/).
--	[Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md)
--	Power BI REST [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) and [Get Tiles]( https://msdn.microsoft.com/library/mt465741.aspx) operations
+- [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)
+- [Register a web app](powerbi-developer-register-a-web-app.md)
+- [Azure Active Directory Authentication Libraries](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/).
+- [Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md)
+- Power BI REST [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) and [Get Tiles]( https://msdn.microsoft.com/library/mt465741.aspx) operations

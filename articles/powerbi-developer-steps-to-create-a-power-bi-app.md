@@ -23,8 +23,8 @@ Power BI displays dashboards that are interactive, and can be created and update
 
 Here's how to get started creating a Power BI app:
 
-| Get started with the Power BI REST API to send data to a Power BI dashboard in real-time |
-| :- |
+|Get started with the Power BI REST API to send data to a Power BI dashboard in real-time|
+|---|
 |1 - Get an [Overview of REST](Overview+of+Power+BI+REST+API.md) and the [Power BI REST API](Power+BI+REST+API+reference.md). <br/><br/>**For samples**: [Try the Power BI REST API in Apiary](http://docs.powerbi.apiary.io/#)  or download the [Power BI REST API samples](Power+BI+Samples.md).|
 |2 - [Create an Azure Active Directory tenant](Create+an+Azure+Active+Directory+tenant.md). If you already have an Azure AD tenant and organizational user, you can skip this step. **Important** To create a Power BI app, you need an **Azure Active Directory** tenant and a Power BI service account.  |
 |3 - [Sign up for the Power BI service to get started](Sign+up+for+Power+BI+service.md). To sign up for the Power BI service, you need an Azure AD organizational user. |
