@@ -49,8 +49,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-free-trial-for-power-bi-pro",
             "powerbi-power-bi-pro-content-what-is-it",
             "powerbi-service-browser-support",
-            "powerbi-supported-languages",
-            "powerbi-custom-visuals-getting-started-with-developer-tools"
+            "powerbi-supported-languages"
           ],
           "numberOfFeaturedArticles": 13
         },
@@ -194,9 +193,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-add-visualizations-to-a-report-ii",
             "powerbi-service-change-the-type-of-visualization-in-a-report",
             "powerbi-custom-visuals-add-to-report",
-            "powerbi-custom-visuals-create-for-the-gallery",
             "powerbi-custom-visuals-download-from-the-gallery",
-            "powerbi-custom-visuals-review-for-security-and-privacy",
 			"powerbi-service-getting-started-with-color-formatting-and-axis-properties",
 			"powerbi-service-tips-and-tricks-for-color-formatting",
             "powerbi-service-change-how-a-chart-is-sorted",
@@ -475,7 +472,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-developer-authenticate-a-web-app",
             "powerbi-developer-rest-api-reference"
           ],
-          "numberOfFeaturedArticles": 3
+          "numberOfFeaturedArticles": 12
         },
         {
           "sectionTitle": "Integrate a Power BI tile",
