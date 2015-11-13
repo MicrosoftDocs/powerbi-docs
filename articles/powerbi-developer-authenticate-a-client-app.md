@@ -179,17 +179,17 @@ public class dataset
 ## Azure Authentication Context Flow
 In a .NET client app, you use **AuthenticationContext** to acquire an Azure access token. **AuthenticationContext** is the main class representing the token issuing authority for Azure AD resources. **AuthenticationContext** does the following:
 
-1.	AuthenticationContext starts the flow by redirecting the user agent to the Azure Active Directory authorization endpoint. The user authenticates and consents, if consent is required.
+1. AuthenticationContext starts the flow by redirecting the user agent to the Azure Active Directory authorization endpoint. The user authenticates and consents, if consent is required.
 
-2.	The Azure Active Directory authorization endpoint redirects the user agent back to the AuthenticationContext with an authorization code. The user agent returns an authorization code to the client application’s redirect URI.
+2. The Azure Active Directory authorization endpoint redirects the user agent back to the AuthenticationContext with an authorization code. The user agent returns an authorization code to the client application’s redirect URI.
 
-3.	The AuthenticationContext requests an access token from the Azure Active Directory token issuance endpoint. It presents the authorization code to prove that the user has consented.
+3. The AuthenticationContext requests an access token from the Azure Active Directory token issuance endpoint. It presents the authorization code to prove that the user has consented.
 
-4.	The Azure Active Directory token issuance endpoint returns an access token.
+4. The Azure Active Directory token issuance endpoint returns an access token.
 
-5.	The client application uses the access token to authenticate to the Web API.
+5. The client application uses the access token to authenticate to the Web API.
 
-6.	After authenticating the client application, the Power BI REST API returns the requested data.
+6. After authenticating the client application, the Power BI REST API returns the requested data.
 
 
 To learn more about Azure Active Directory (Azure AD) authorization flow, see [Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx).
@@ -199,13 +199,13 @@ To learn more about Azure Active Directory (Azure AD) authorization flow, see [A
 
 In a .NET client app, you use **AuthenticationContext** in the **Active Directory Authentication Library** to acquire an Azure access token. You can install the **Active Directory Authentication Library** NuGet package from Visual Studio. When you install a NuGet package, Visual Studio creates a reference to the required assemblies.
 
-1.	Right click a solution.
+1. Right click a solution.
 
-2.	Choose **Manage NuGet Packages**.
+2. Choose **Manage NuGet Packages**.
 
-3.	Search for **Active Directory Authentication Library**.
+3. Search for **Active Directory Authentication Library**.
 
-4.	Choose **Active Directory Authentication Library** in the list of packages, and click **Install**.
+4. Choose **Active Directory Authentication Library** in the list of packages, and click **Install**.
 
 ## Related topics
 - [Azure AD Authentication Library for .NET](https://msdn.microsoft.com/library/azure/jj573266.aspx)
