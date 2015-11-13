@@ -23,7 +23,7 @@ Power BI free and Pro licenses are different based on the kind of content users 
 
 If your content contains any of the following items, it's Power BI Pro content:
 
--   Data from a direct query dataset, such as [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data, [Azure SQL Database](powerbi-azure-sql-database-with-directquery.md), [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-directquery.md), or Apache [Spark for HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md).
+-   Data from a direct query dataset, such as [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data, [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md), [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md), or Apache [Spark for HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md).
 
 -   Data from a [dataset that refreshes more frequently than daily](powerbi-refresh-data.md).
 
