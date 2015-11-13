@@ -26,8 +26,8 @@ Power BI Pro has all the features of the free version of Power BI, and additiona
 -   Enable live interactive connectivity to the following sources:
 	-   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
 	-   [Spark on Azure HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md)
-	-   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-directquery.md)
-	-   [Azure SQL Database](powerbi-azure-sql-database-with-directquery.md)
+	-   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
+	-   [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md)
 
 When you try any of these features, you will be prompted to start your free trial.
 
