@@ -50,7 +50,7 @@ For easy access to your most interesting data, you can mark specific tiles as fa
 
     >**Note**   Removing a favorite doesn't remove the tile from the dashboard, or the chart from the report. It's just no longer a favorite.
 
-2.  Tap **Done **in the upper-right corner when you've finished.
+2.  Tap **Done** in the upper-right corner when you've finished.
 
 ### See also
 
