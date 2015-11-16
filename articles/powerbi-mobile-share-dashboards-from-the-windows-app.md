@@ -1,4 +1,4 @@
-****<properties 
+<properties 
    pageTitle="Share dashboards from the Power BI for Windows app"
    description="Share dashboards from the Power BI for Windows app"
    services="powerbi" 

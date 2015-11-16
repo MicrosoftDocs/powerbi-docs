@@ -46,7 +46,7 @@ For easy access to your most interesting data, you can mark specific tiles as fa
 
 1.  On the Favorites page, tap **Edit**, and clear the stars from the tiles you don't want as favorites.
 
-    ![](media/powerbi-mobile-favorites-in-the-iphone-app/PBI_iPh_RemoveFave.png)
+    ![](media/powerbi-mobile-favorites-in-the-iphone-app/PBI_iPh_RemoveFave2.png)
 
     >**Note**   Removing a favorite doesn't remove the tile from the dashboard, or the chart from the report. It's just no longer a favorite.
 
