@@ -85,7 +85,7 @@ You can always filter individual visuals in a Power BI report by using the field
 
  -   Text fields offer expressions such as **contains**, **doesn't start with**, and **is not**.
 
-4.  To other fields to the Filters pane, go to the Power BI service ([https://powerbi.com](http://powerbi.com/)), [add filters to the page](powerbi-service-add-a-filter-to-a-report.md), and save the report.
+4.  To add other fields to the Filters pane, go to the Power BI service ([https://powerbi.com](http://powerbi.com/)), [add filters to the page](powerbi-service-add-a-filter-to-a-report.md), and save the report.
 
 ## Drill down and up in a chart
 
