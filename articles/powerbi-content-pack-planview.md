@@ -24,6 +24,7 @@ With the Planview Enterprise content pack, you can visualize your resource and w
 [Connect to the Planview Enterprise content pack in Power BI](https://app.powerbi.com/getdata/services/planview-enterprise)
 
 >**Notes:**  
+>
 >- To import your Planview Enterprise data into Power BI, you must be a Planview Enterprise user with the Reporting Portal Viewer feature enabled on your role.
 >
 >- This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, create a new free Power BI account on the Power BI home page, and then click Get Data.
@@ -54,7 +55,11 @@ With the Planview Enterprise content pack, you can visualize your resource and w
 The dashboard contains tiles that display data from your Planview Enterprise database. The following image shows an example of the default Planview Enterprise dashboard in Power BI.
 
 You can perform the following tasks with the Planview Enterprise content pack for Power BI:  
+
 - Select a tile on the dashboard to view the underlying report in detail.
+
 - Change, resize, and reorder the tiles on the dashboard.
+
 - Rename the default Planview Enterprise dashboard, report, or dataset by clicking the ellipsis (…) next to the Planview Enterprise dashboard, report, or dataset, and selecting Rename.
+
 - Ask a question about your Planview Enterprise data by entering text such as “show forecast cost” in the Q&A box at the top of the dashboard to receive real-time results.

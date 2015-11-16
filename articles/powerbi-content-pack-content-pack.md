@@ -23,6 +23,7 @@ Visual and explore your comScore Digital Analytix data in Power BI with the Powe
 [Connect to the comScore content pack for Power BI.](https://app.powerbi.com/getdata/services/comscore)
 
 >**Notes:**
+>
 >- To connect to the content pack you need a comScore DAx user account and have comScore API access. Please contact your comScore DAx admin to confirm your account.
 
 1.  Select Get Data at the bottom of the left navigation pane.
