@@ -18,7 +18,7 @@
    ms.author="bewillia"/>
 
 <!---
-This file contains the table of contents structure in JSON format.  
+This file contains the table of contents structure in JSON format.   
 
 Note to localization team:
 Only the categoryName and sectionTitle fields should be translated.  The articles field should not be modified during localization.
