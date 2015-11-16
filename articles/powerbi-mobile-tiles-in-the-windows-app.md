@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Tiles in the Power BI for Windows app"
    description="Tiles in the Power BI for Windows app"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/13/2015"
    ms.author="maggies"/>
 
 # Tiles in the Power BI for Windows app  
