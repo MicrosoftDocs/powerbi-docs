@@ -1,6 +1,6 @@
 <properties
 pageTitle="Troubleshooting tile errors"
-description=""
+description="Common errors that may be encountered when a tile tries to refresh"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
