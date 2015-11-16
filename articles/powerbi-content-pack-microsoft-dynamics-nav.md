@@ -38,7 +38,7 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI and
 3. Select Microsoft Dynamics NAV, then select Connect.  
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/getdata1.PNG)
 
-4. When prompted, enter your Microsoft Dynamics NAV credentials and follow the Microsoft Dynamics NAV authentication process. If you are already signed in to Microsoft Dynamics NAV in your browser, you may not be prompted for credentials.
+4. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern: 
 
     	https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')
 	- "instance.navserver.com" with your NAV Server name
@@ -62,15 +62,15 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI and
 **"Parameter validation failed, please make sure all parameters are valid"**  
 If you see this error after typing your Microsoft Dynamics NAV URL. Make sure the following requirements are satisfied:
 
-  - The URL follows exactly this pattern 
+- The URL follows exactly this pattern 
+
     	https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')
-	Replacing:
     - "instance.navserver.com" with your NAV Server name
-	- "DynamicsNAV90\_Instance1" with your NAV Server Instance name
+    - "DynamicsNAV90\_Instance1" with your NAV Server Instance name
     - "Company('CRONUS%20International%20Ltd.')" with your NAV Company name
-  - Make sure all the letters are lower case.  
-  - Make sure the URL is in 'https'.  
-  - Make sure there are no trailing forward slash at the end of the URL.
+- Make sure all the letters are lower case.  
+- Make sure the URL is in 'https'.  
+- Make sure there are no trailing forward slash at the end of the URL.
 
 **"Login failed"**  
 If you get a "login failed" error after using your Microsoft Dynamics NAV credentials to login, then you may be hitting one of the following issues:
