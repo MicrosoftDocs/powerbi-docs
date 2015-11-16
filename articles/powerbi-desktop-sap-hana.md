@@ -34,13 +34,13 @@ In this preview release **SAP HANA** is only supported in Power BI Desktop, and 
 
 ### Limitations of SAP HANA  
 There are certain limitations to using the preview version of **SAP HANA**:  
-- NVARCHAR strings are truncated to maximum length of 4000 Unicode characters
-- SMALLDECIMAL is not supported
-- VARBINARY is not supported
-- Valid Dates are between 1899/12/30 and 9999/12/31. Certain operations such as filtering may produce unexpected results against date values outside the valid range
-- Certain operations such as filtering may produce unexpected results against datetime values with sub-second precision
-- Power BI converts decimal numbers to doubles, and therefor may lose precision
-- If strings have leading spaces, the leading spaces are not shown in Power BI reports
+-   NVARCHAR strings are truncated to maximum length of 4000 Unicode characters
+-   SMALLDECIMAL is not supported
+-   VARBINARY is not supported
+-   Valid Dates are between 1899/12/30 and 9999/12/31. Certain operations such as filtering may produce unexpected results against date values outside the valid range
+-   Certain operations such as filtering may produce unexpected results against datetime values with sub-second precision
+-   Power BI converts decimal numbers to doubles, and therefor may lose precision
+-   If strings have leading spaces, the leading spaces are not shown in Power BI reports
 
 
 In addition, as mentioned earlier you cannot publish a report created with the preview version of **SAP HANA** to the Power BI Service.
