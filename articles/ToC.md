@@ -18,7 +18,7 @@
    ms.author="bewillia"/>
 
 <!---
-This file contains the table of contents structure in JSON format.  
+This file contains the table of contents structure in JSON format.   
 
 Note to localization team:
 Only the categoryName and sectionTitle fields should be translated.  The articles field should not be modified during localization.
@@ -390,14 +390,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-mobile-ipad-iphone-apps",
 			      "powerbi-mobile-iphone-app-get-started",
 			      "powerbi-mobile-ipad-app-get-started",
-			      "powerbi-mobile-get-the-power-bi-for-android-app",
 			      "powerbi-mobile-android-app-get-started",
 			      "powerbi-mobile-get-the-windows-app",
 			      "powerbi-service-windows-app-get-started",
 				    "powerbi-mobile-create-dashboard",
 			      "powerbi-mobile-whats-new-in-the-mobile-apps"
           ],
-          "numberOfFeaturedArticles": 10
+          "numberOfFeaturedArticles": 9
         },
         {
           "sectionTitle": "iPad app (Power BI for iOS)",
