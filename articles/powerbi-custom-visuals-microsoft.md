@@ -21,8 +21,7 @@
 
 Introducing custom visuals from Microsoft! Check them out in the power bi [visuals gallery](https://visuals.powerbi.com).
 This article provides a quick overview of the custom visuals submitted by Microsoft to the visuals gallery and how to use them in your report.
->Watch a video on how to use these charts: Here is the link to the [video playlist](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) on how to use these charts
-Or, read about them here.
+>Watch a video on how to use these charts. Here is the link to the [video playlist](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) on how to use these charts.
 
 # Enhanced Scatter
 
