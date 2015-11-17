@@ -42,7 +42,7 @@ Here is a screenshot of Enhanced Scatter with Shapes and Images along with basic
 
  [Here](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) is the link to the video
 
-## See also:
+## See also
 
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)
 
