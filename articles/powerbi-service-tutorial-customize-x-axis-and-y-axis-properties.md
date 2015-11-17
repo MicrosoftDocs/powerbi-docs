@@ -137,7 +137,7 @@ For more information, see the following article:
 
 -   [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md)
 
-See Also:
+## See also
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 

@@ -128,7 +128,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 
     Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
 
-## See also:
+## See also
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 

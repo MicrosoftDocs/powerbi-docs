@@ -156,7 +156,7 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/QAtreeMap.png)
 
 
-## See Also:
+## See also
 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 

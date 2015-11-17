@@ -292,5 +292,5 @@ Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/moni
 
 -   Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
-## See Also  
+## See also  
 [Get started with Power BI](powerbi-service-get-started.md)  

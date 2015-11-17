@@ -88,7 +88,7 @@ Slicers are a great choice:
   ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sorted.png)
 
 
-## See Also  
+## See also  
  [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
 
  [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
