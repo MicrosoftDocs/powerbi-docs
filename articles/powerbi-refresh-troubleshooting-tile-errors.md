@@ -53,7 +53,7 @@ This is usually a transient issue. If you try again later and you still see this
 
 ## Contact support
 
-If you are still having issue, please [contact support](https://support.powerbi.com) to investigate further.
+If you are still having an issue, please [contact support](https://support.powerbi.com) to investigate further.
 
 
 
