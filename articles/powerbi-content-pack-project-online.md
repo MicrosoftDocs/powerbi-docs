@@ -46,7 +46,7 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 
 6.  You’ll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data. You can modify this dashboard to display your data in any way you want.
 
-	![](media/powerbi-content-pack-project-online/dashboard.png)
+	![](media/powerbi-content-pack-project-online/dashboard2.png)
 
 	You can change this dashboard to display your data the way you want it. Plus you can:
 
