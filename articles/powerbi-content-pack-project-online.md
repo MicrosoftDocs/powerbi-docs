@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Microsoft Azure Enterprise content pack for Power BI"
-   description="Microsoft Azure Enterprise content pack for Power BI"
+   pageTitle="Project Online content pack for Power BI"
+   description="Project Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="tpalmer" 
@@ -16,36 +16,37 @@
    ms.workload="powerbi"
    ms.date="11/02/2015"
    ms.author="tpalmer"/>
-# Microsoft Azure Enterprise content pack for Power BI
+# Project Online content pack for Power BI
 
-Explore and monitor your Microsoft Azure Enterprise data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
+Microsoft Project Online is a flexible online solution for project portfolio management (PPM) and everyday work. Project Online enables organizations to get started, prioritize project portfolio investments and deliver the intended business value. The Project Online content pack for Power BI allows you to explore your project data with out-of-box metrics such as portfolio status and project compliance.
 
-Connect to the [Microsoft Azure Enterprise content pack](https://app.powerbi.com/getdata/services/azure-enterprise) for Power BI.
+Connect to the [Project Online content pack](https://app.powerbi.com/getdata/services/project-online) for Power BI.
+
 
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 
-	![](media/powerbi-content-pack-azure-enterprise/getdata.png)
+	![](media/powerbi-content-pack-project-online/getdata.png)
 
 2.  In the **Services** box, select **Get**.
 
-	![](media/powerbi-content-pack-azure-enterprise/services.png)
+	![](media/powerbi-content-pack-project-online/services.png)
 
-3.  Select **Microsoft Azure Enterprise** \> **Connect**. 
+3.  Select **Microsoft Project Online** \> **Connect**. 
 
-	![](media/powerbi-content-pack-azure-enterprise/connect.png)
+	![](media/powerbi-content-pack-project-online/connect.png)
 
-4. Provide the Azure Environment URL, the number months of data you want to import and your Azure Enterprise enrollment number. Your Azure Environment URL will be `https://ea.azure.com` or `https://ea.windowsazure.cn`.
+4. In the **Project Web App URL** text box, enter the URL for the Project Web Add (PWA) you want to connect to and hit **Next**. Note this may differ from the example if you have a custom domain.
 
-    ![](media/powerbi-content-pack-azure-enterprise/params.png)
+    ![](media/powerbi-content-pack-project-online/params.png)
 
-5. Provide your Access key to connect. The key for your enrollment can be found in your Azure EA Portal. 
+5. For Authentication Method, select **oAuth2** \> **Sign In**. When prompted, enter your Project Online credentials and follow the authentication process.
 
-	![](media/powerbi-content-pack-azure-enterprise/creds.png)
+	![](media/powerbi-content-pack-project-online/creds.png)
 
-6.  The import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6.  You’ll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data. You can modify this dashboard to display your data in any way you want.
 
-	![](media/powerbi-content-pack-azure-enterprise/dashboard.png)
+	![](media/powerbi-content-pack-project-online/dashboard.png)
 
 	You can change this dashboard to display your data the way you want it. Plus you can:
 
@@ -54,25 +55,6 @@ Connect to the [Microsoft Azure Enterprise content pack](https://app.powerbi.com
 	- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
 	- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
-    
-###Providing your Azure Enterprise parameters
-Power BI reporting is available for EA Direct, Partner and Indirect Customers who are able to view billing information. Please read below for details about finding each of the values the connection flow expects.
-
-**Azure Environment URL**
-
-- This value is typically https://ea.azure.com, however you can check the URL once you sign in to confirm.
-
-**Number of Months**
-
-- This should be a number between 1-36 representing the number of months of data (from today) you'd like to import.
-
-**Enrollment Number**
-
-- This is your Azure Enterprise enrollment number. If you're having difficulties finding it please contact your admin.
-
-**Access Key**
-
-- Your key can be found in the Azure Enterprise portal, under "Download Usage" > "API Access Key"
 
 ### See also
 
