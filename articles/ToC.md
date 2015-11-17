@@ -296,7 +296,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
 			      "powerbi-admin-troubleshoot-analysis-service-connector",
 			      "powerbi-admin-troubleshoot-unsupported-data-source-for-refresh",
 			      "powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases",
-			      "powerbi-admin-troubleshoot-excel-workbook-data"
+			      "powerbi-admin-troubleshoot-excel-workbook-data",
+            "powerbi-refresh-troubleshooting-tile-errors"
           ],
           "numberOfFeaturedArticles": 5
         }
