@@ -36,7 +36,7 @@ A sharing icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIc
 
 Read more [tips for designing your dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
 
-## See Also
+## See also
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
