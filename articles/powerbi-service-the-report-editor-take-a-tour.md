@@ -112,7 +112,7 @@ For more information, see [Aggregates in Power BI reports](powerbi-service-aggre
 
 
 
-## See Also
+## See also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
