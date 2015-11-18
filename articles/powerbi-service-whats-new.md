@@ -23,6 +23,20 @@ Check this page for known issues and recently-released features in Power BI.
 
 ## Recent Updates  
 
+**November 11, 2015**
+
+*   New site for Power BI documentation, localized
+
+*   Improved load time for reports
+
+*   Update organizational content packs with report-only changes
+
+* Power BI health status in Office 365 Admin Portal
+
+* KPIs and images in tables, matrices, and cards
+
+For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx)
+
 
 **November 3, 2015**
 
