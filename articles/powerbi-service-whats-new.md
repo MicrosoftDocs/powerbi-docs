@@ -21,7 +21,7 @@
 
 Check this page for known issues and recently-released features in Power BI.
 
-## Recent Updates  
+## Recent updates  
 
 **November 18, 2015**
 
