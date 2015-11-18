@@ -35,7 +35,7 @@ To learn more about the Developer Tools, see [Get started with Developer Tools (
 ### Submit your custom visual to the Power BI visuals gallery  
 <a name="submit"></a>Submit your custom visual to the Power BI visuals gallery via email. To learn how, see" [Get started with Developer Tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md).  
 
-## See Also:
+## See also
 [Custom visuals in Power BI](powerbi-custom-visuals.md)
 
 [Download a custom visual from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)

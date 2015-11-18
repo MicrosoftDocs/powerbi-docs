@@ -49,7 +49,7 @@ A custom visual is added to a specific report when imported. If you'd like to us
 
 8. Continue to work with and explore this visualization as you would any other (native) visualization in Power BI.
 
-## See also:
+## See also
 
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
 
