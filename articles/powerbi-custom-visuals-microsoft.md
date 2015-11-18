@@ -23,7 +23,7 @@ Introducing custom visuals from Microsoft! Check them out in the power bi [visua
 This article provides a quick overview of the custom visuals submitted by Microsoft to the visuals gallery and how to use them in your report.
 >Watch a video on how to use these charts. Here is the link to the [video playlist](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) on how to use these charts.
 
-# Enhanced Scatter
+## Enhanced Scatter
 
 Enhanced Scatter chart is useful for finding correlations and non-linear relationships between variables. It builds on top of the existing scatter chart and provides advanced options such as displaying shapes or images instead of the standard bubbles.This also includes background image support
 
