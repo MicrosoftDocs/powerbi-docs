@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Add a filter to a report in Power BI"
    description="Add a filter to a report in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -45,7 +45,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
     ![](media/powerbi-service-add-a-filter-to-a-report/vizFilter.png)
 
-The visualization changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values. 
+The visualization changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
 ## Add a filter to an entire page (aka Page View filter)
 
@@ -53,7 +53,7 @@ The visualization changes to reflect the new filter. If you save your report wit
 
 2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 
-3.  Select a field in the field list in the report and drag it below **Page Level Filters**. 
+3.  Select a field in the field list in the report and drag it below **Page Level Filters**.
 
 4.  Select the values you want to filter **Basic** or **Advanced** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
 
@@ -61,18 +61,18 @@ The visualization changes to reflect the new filter. If you save your report wit
 
     ![](media/powerbi-service-add-a-filter-to-a-report/filterPage.gif)
 
-If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values. 
+If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
 ## Add a filter to an entire report (aka Report filter)
 
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. Select a field in the field list and drag it below **Report Level Filters**.
-4. Select the values you want to filter (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)). 
+4. Select the values you want to filter (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
 
-The visualizations on the active page, and on all pages in the report, changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values. 
+The visualizations on the active page, and on all pages in the report, changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
-##  See Also:
+##  See also
 
  [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
 

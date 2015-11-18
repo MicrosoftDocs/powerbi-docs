@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Converting your reports to the new report editor"
    description="Converting your reports to the new report editor"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -64,7 +64,7 @@ You'll still be able to edit the report in the new reporting canvas, but you'll 
 
 Remember, as long as you don't save the report, you're not going to affect the original so don't worry about losing your work! But the conversion process is one-way so do be sure that you're ready to stay in the new experience before you save your report.
 
-## See Also  
+## See also  
 Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿  

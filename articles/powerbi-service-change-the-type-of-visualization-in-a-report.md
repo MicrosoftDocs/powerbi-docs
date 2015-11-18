@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Change the type of visualization in a Power BI report"
    description="Change the type of visualization in a Power BI report"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -33,10 +33,8 @@ If you changed the visualization type in the report after you pinned it to your
 
 
 
-##  See Also:
+##  See also
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-

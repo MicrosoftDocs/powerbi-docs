@@ -83,7 +83,7 @@ A *dashboard* is something you create or something a colleague creates and share
 
 In the navigation pane, your dashboards are listed under the **Dashboards** heading. Each listed dashboard represents a customized view of some subset of the underlying datasets.  What this means is that someone (you or a colleague) created the dashboard and then navigated to Editing View where s/he explored the data and created visualizations and then picked some of those visualizations to display on the dashboard.
 
-To permanently pin a tile to a dashboard, I must a report owner.  If I’m not an owner, the dashboard will display a shared icon to the left of the name. And as we saw when we were talking about reports, when a dashboard is shared with me I’ll also be able to interact with the underlying reports using Reading View.
+To permanently pin a tile to a dashboard, I must be a report owner.  If I’m not an owner, the dashboard will display a shared icon to the left of the name. And as we saw when we were talking about reports, when a dashboard is shared with me I’ll also be able to interact with the underlying reports using Reading View.
 
 **ONE** dashboard...
 - can display visualizations from many different datasets
@@ -179,7 +179,7 @@ Click to return to the dashboard that you viewed most recently.
 
 ### ![](media/powerbi-service-basic-concepts/version.png)
 
-## See Also:
+## See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

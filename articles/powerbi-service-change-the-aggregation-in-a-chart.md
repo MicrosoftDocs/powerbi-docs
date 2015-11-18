@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI"
    description="Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -52,15 +52,15 @@ Some of the options that may be available for aggregating a field:
 
 For example, this data:
 
-|Country|Amount|
-|---|---|
-|USA|100|
-|UK|150|
-|Canada|100|
-|Germany|125|
-|France||
-|Japan|125|
-|Australia|150|
+| Country   | Amount |
+|:----------|:-------|
+| USA       | 100    |
+| UK        | 150    |
+| Canada    | 100    |
+| Germany   | 125    |
+| France    |        |
+| Japan     | 125    |
+| Australia | 150    |
 
 Would give the following results:
 
@@ -82,6 +82,6 @@ Would give the following results:
 
 You can also use a non-aggregated field as a numeric field. For example, if you have a Product Name field, you can add it as a value and then set it to **Count**. 
 
-## See Also  
+## See also  
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

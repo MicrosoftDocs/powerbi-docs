@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Part I, Add visualizations to a Power BI report"
    description="Tutorial: Part I, Add visualizations to a Power BI report"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -40,7 +40,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/PBI_Agif_CreateChart3.gif)
 
-5.  Select other fields to add to the visualization.  Select **Count of** **Product** to add it to the **Values **well.
+5.  Select other fields to add to the visualization.  Select **Count of** **Product** to add it to the **Values** well.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/part1table.png)
 
@@ -67,12 +67,10 @@ This article gives a quick introduction to creating a visualization in a report.
     [Save your report](powerbi-service-save-a-report.md).
 
 
-## See Also:
+## See also
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).
 
 [Reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-

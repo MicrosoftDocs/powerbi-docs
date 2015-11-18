@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Part 2, Add visualizations to a Power BI report"
    description="Tutorial: Part 2, Add visualizations to a Power BI report"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -62,7 +62,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 3.  Add a legend.  To see the data by store name, drag **Chain **into the Legend area.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_9.png)
 
-## See Also  
+## See also  
 -   For more information about the Fields pane, see [The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md).   
 -   To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).  
 -   To learn about using and changing aggregations, see [Aggregates in reports](powerbi-service-aggregates-in-reports.md).  

@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="About filters and highlighting in Power BI reports"
    description="About filters and highlighting in Power BI reports"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -22,12 +22,12 @@ Power BI reports provides several ways to filter and highlight data. Because of 
 
 ***Filters*** remove all but the data you want to focus on.  ***Highlighting*** is not filtering since it does not remove data but instead highlights a subset of the visible data; the unhighlighted data remains visible but dimmed.
 
-Filters can be applied to individual visualizations, to report pages, and to an entire report. 
+Filters can be applied to individual visualizations, to report pages, and to an entire report.
 
 >**TIP**: You must be in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) to add new filters to a report or to create filters that remain with the report.  In [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md), you (and people you've shared the report with) can interact with those filters but cannot save changes made to those filters.
 
 
-## See Also:
+## See also
 
 [Interact with filters and highlighting (in Reading View)](powerbi-service-interact-with-a-report-in-reading-view.md)
 
@@ -38,4 +38,3 @@ Filters can be applied to individual visualizations, to report pages, and to an 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*﻿*
-

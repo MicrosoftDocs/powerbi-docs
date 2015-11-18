@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Aggregates in Power BI reports"
    description="Aggregates in Power BI reports"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -40,9 +40,8 @@ You can also use a non-aggregate field as an aggregate. For example, if you have
 For more information on aggregating values see [Change The Aggregation Used In a Visual](https://powerbi.uservoice.com/knowledgebase/articles/471200-change-the-aggregation-used-in-a-chart-sum-avera).
 
 
-## See Also:
+## See also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
-
