@@ -16,7 +16,7 @@
    ms.workload="powerbi"
    ms.date="09/28/2015"
    ms.author="maggies"/>
-# comScore Digital Analytix content pack for Power BI
+# comScore Digital Analytix content pack for Power&nbsp;BI
 
 Visual and explore your comScore Digital Analytix data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 

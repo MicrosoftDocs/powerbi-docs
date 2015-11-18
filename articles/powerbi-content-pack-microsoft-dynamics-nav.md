@@ -17,7 +17,7 @@
    ms.date="10/16/2015"
    ms.author="maggies"/>
 
-# Microsoft Dynamics NAV content pack for Power BI  
+# Microsoft Dynamics NAV content pack for Power&nbsp;BI  
 
 Getting insights into your Microsoft Dynamics NAV data is easy with Power BI and the Microsoft Dynamics NAV content pack. Power BI retrieves your data, both Sales and Financial data then builds an out-of-box dashboard and reports based on that data.
 
