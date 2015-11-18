@@ -37,8 +37,10 @@ A new tab will open that represents the **Developer Tools**. Here’s an example
 **Step 2: Create your custom visual**  
 The diagram below shows the major parts of using the developer tools. You write your [TypeScript](http://www.typescriptlang.org/) code in the **TypeScript code pane** and any CSS styles in the **CSS pane**.
 
-**To run your custom visual**  
+**To run your custom visual**
+
 1.  Choose **Compile + Run** to see a preview of your visual. If your visual is not shown, you may see errors highlighted in red in the code window. You may also check your browser debugging tools for JavaScript errors.  
+
 ![](media/powerbi-developer-getting-started-with-developer-tools-preview/DevToolParts.png)
 
 The developer tools allow you to also specify an Icon, work with multiple visuals and delete visuals. The **Data Preview** option allows you to select from sample data views to test your visual’s behavior. To test with additional data, see [Testing your custom visual in Reports and Dashboards](#testing).
