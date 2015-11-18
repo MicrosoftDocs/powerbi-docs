@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="The report editor...Take a tour"
    description="The report editor...Take a tour"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -112,11 +112,10 @@ For more information, see [Aggregates in Power BI reports](powerbi-service-aggre
 
 
 
-## See Also:
+## See Also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
-

@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Save a report in Power BI"
    description="Save a report in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -35,9 +35,8 @@ After you change a report in Power BI, you can save it, save it with a new name,
     ![](media/powerbi-service-save-a-report/savereport3.png)
 
 
-## See Also:
+## See Also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*﻿*
-
