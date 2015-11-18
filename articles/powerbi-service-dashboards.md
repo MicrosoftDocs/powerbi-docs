@@ -61,7 +61,7 @@ Power BI can have more than one dashboard -- as you add more dashboards, their t
 
 ![](media/powerbi-service-dashboards/dashboardpanepiece.png)
 
-## See Also:
+## See also
 
 [Get Started with Power BI](powerbi-service-get-started.md)
 

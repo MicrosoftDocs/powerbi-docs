@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Delete or remove a dashboard"
    description="Delete or remove a dashboard"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -39,7 +39,7 @@ Dashboards can be deleted and removed.  Deleting and removing the dashboard do
 ## To remove a shared dashboard  
 A sharing icon ![](media/powerbi-service-delete-or-remove-a-dashboard/PBI_SharedWithYouIcon.png) tells you that the dashboard is being [shared](powerbi-service-share-unshare-dashboard.md)with you.  Shared dashboards are read-only and can't be deleted -- only removed. To remove a dashboard, follow the same steps as deleting, but select **Remove**.
 
-## See Also  
+## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

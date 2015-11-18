@@ -77,7 +77,7 @@ For more information: Tutorial on changing the display settings for a report.
 
 For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
-## See Also:
+## See also
 
 [Reports in Power BI](powerbi-service-reports.md)
 

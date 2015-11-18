@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Create a new Power BI report"
    description="Create a new Power BI report"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -65,14 +65,10 @@ This method creates a new report from scratch.
 
 [Delete visualizations](powerbi-service-delete-a-visualization.md)you don't need
 
-## See Also:
+## See also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-
-
-

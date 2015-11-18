@@ -21,7 +21,36 @@
 
 Check this page for known issues and recently-released features in Power BI.
 
-## Recent Updates  
+## Recent updates  
+
+**November 18, 2015**
+
+*   Create a duplicate dashboard
+
+*   Freely position dashboard tiles
+
+*   Improved navigation for full screen view
+
+* Better experience when inviting perrs from your organization to Power BI groups
+
+* Improved error messages for tiles
+
+For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/18/power-bi-weekly-service-update-1110.aspx)
+
+
+**November 11, 2015**
+
+*   New site for Power BI documentation, localized
+
+*   Improved load time for reports
+
+*   Update organizational content packs with report-only changes
+
+* Power BI health status in Office 365 Admin Portal
+
+* KPIs and images in tables, matrices, and cards
+
+For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1118.aspx)
 
 
 **November 3, 2015**
@@ -292,5 +321,5 @@ Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/moni
 
 -   Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
-## See Also  
+## See also  
 [Get started with Power BI](powerbi-service-get-started.md)  

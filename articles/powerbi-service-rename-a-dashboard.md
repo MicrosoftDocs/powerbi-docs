@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Rename a Power BI dashboard"
    description="Rename a Power BI dashboard"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -36,10 +36,8 @@ A sharing icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIc
 
 Read more [tips for designing your dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
 
-## See Also:
+## See also
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-

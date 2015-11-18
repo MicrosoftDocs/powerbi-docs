@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Hyperlinks in tables"
    description="Hyperlinks in tables"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -53,15 +53,8 @@ Hyperlinks are created in Excel Power Pivot before the workbook is imported into
     ![](media/powerbi-service-hyperlinks-in-tables/hyperlinksInTables.gif)
 
 
-## See Also:
+## See also
 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-
-
-
-
-
-

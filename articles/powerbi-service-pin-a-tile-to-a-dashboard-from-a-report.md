@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Pin a tile to a Power BI dashboard from a report"
    description="Pin a tile to a Power BI dashboard from a report"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -58,7 +58,7 @@ When you open a report that has one or more pages, it [opens in Reading View](po
 
 2.  Follow steps 1-4 above.
 
-## See Also:
+## See also
 
 [Reports in Power BI](powerbi-service-reports.md)
 

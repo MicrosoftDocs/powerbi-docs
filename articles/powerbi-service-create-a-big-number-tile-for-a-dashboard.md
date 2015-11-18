@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Create a big number tile for a Power BI dashboard by asking a question"
    description="Create a big number tile for a Power BI dashboard by asking a question"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -50,7 +50,7 @@ The question box is the easiest way to make a number tile like this.
 7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.  
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_DashTileTitle.png)
 
-## See Also  
+## See also  
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

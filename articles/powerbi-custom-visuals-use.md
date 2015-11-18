@@ -50,7 +50,7 @@ Once downloaded, custom visualizations must be imported into a report. Once impo
 
   ![](media/powerbi-custom-visuals-use/VisualUse.png)
 
-## See also:
+## See also
 
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)
 

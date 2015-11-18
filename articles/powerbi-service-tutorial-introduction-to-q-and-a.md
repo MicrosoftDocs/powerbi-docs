@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: use Power BI Q&A with the Retail Analysis sample"
    description="Tutorial: use Power BI Q&A with the Retail Analysis sample"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -57,7 +57,7 @@ How would we go about creating this same line chart using Q&A?
 
 3.  To pin the chart to your dashboard, select the pin icon ![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png).
 
-## See Also:
+## See also
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
@@ -74,4 +74,3 @@ How would we go about creating this same line chart using Q&A?
 [preparing a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
 [pinning a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
-

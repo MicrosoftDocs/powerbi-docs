@@ -77,7 +77,7 @@ Q&A picks the best visualization based on the data being displayed. Sometimes da
 
 You can also tell Q&A which visualization to use by adding it to your question. But keep in mind that it may not always be possible for Q&A to display the data in the visualization type you requested.
 
-## See Also  
+## See also  
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Use Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)  
 [Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md)  

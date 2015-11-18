@@ -55,7 +55,7 @@ The *Page Size* settings control the display ratio and actual size (in pixels). 
 
 [Learn how to use Page View and Page Size settings in your own Power BI reports](powerbi-service-tutorial-change-report-display-settings.md).
 
-## See Also:
+## See also
 
 Read more about [reports in Power B](powerbi-service-reports.md)
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

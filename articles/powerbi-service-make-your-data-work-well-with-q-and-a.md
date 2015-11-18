@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Make your data work well with Q&A in Power BI"
    description="Make your data work well with Q&A in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -44,7 +44,7 @@ Here are some tips for making the most of Q&A in your workbook.
 >**Note:**  
 >If your workbook has a Power Pivot data model, you can do even more optimizations. Read more about [Demystifying Power BI Q&A part 2](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx) from our in-house team of natural language experts.
 
-## See Also  
+## See also  
 [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
 [Ask the right questions of Salesforce data in Power BI](powerbi-service-ask-the-right-questions-of-salesforce-data.md)  

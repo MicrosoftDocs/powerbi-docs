@@ -90,7 +90,7 @@ By default, clicking a tile takes you to the report where the tile was created o
 
 
 
-## See Also
+## See also
 
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 
