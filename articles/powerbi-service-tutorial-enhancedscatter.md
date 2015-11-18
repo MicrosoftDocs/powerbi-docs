@@ -33,7 +33,7 @@ This tutorial uses the Retail Analysis sample. To follow along, sign in to Powe
 
   ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterTemplate.jpg)
 
-4. Create a Waterfall chart that displays this year's sales by category.
+4. Create an enhanced scatter chart that displays this year's sales by category.
 
  1.  From the Fields pane, select **Item** \> **Category** and drag it to  **Legends**.
 
@@ -42,15 +42,11 @@ This tutorial uses the Retail Analysis sample. To follow along, sign in to Powe
 
  3.  Select Item \> Category to add it to the Legend area. 
 
-    ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
+    ![](media/powerbi-service-txxx.png)
 
-## Tips and Tricks for Doughnut Charts
+## Tips and Tricks for Enhanced Scatter Charts
 
--   The sum of the doughnut chart values must add up to 100%.
-
--   Too many categories make it difficult to read and interpret.
-
--   Doughnut charts are best used to compare a particular section to the whole, rather than comparing individual sections with each other. 
+-   
 
 ## See Also
 
