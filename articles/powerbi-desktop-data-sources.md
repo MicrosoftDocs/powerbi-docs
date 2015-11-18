@@ -64,6 +64,7 @@ The **Database** category provides the following data connections:
 -   PostgreSQL Database
 -   Sybase Database
 -   Teradata Database
+-   SAP HANA Database
 
 The following image shows the **Get Data** window for **Database**.
 
@@ -80,6 +81,7 @@ The **Azure** category provides the following data connections:
 -   Microsoft Azure Table Storage
 -   Azure HDInsight Spark (Beta)
 -   Microsoft Azure DocumentDB (Beta)
+-   Microsoft Azure Data Lake Store (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
@@ -100,6 +102,7 @@ The **Other** category provides the following data connections:
 -   Salesforce Objects
 -   Salesforce Reports
 -   ODBC
+-   R Script (Beta)
 -   appFigures (Beta)
 -   GitHub (Beta)
 -   MailChimp (Beta)
@@ -107,6 +110,8 @@ The **Other** category provides the following data connections:
 -   SweetIQ (Beta)
 -   Twilio (Beta)
 -   ZenDesk (Beta)
+-   Merketo (Beta)
+-   UserVoice (Beta)
 -   Spark (Beta)
 -   Blank Query
 
@@ -139,11 +144,11 @@ That’s all there is to connecting to data sources in Power BI Desktop.# More I
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
--   [Getting Started with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471664)
--   [Query Overview with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471646)
--   [Data Sources in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643)
--   [Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)
--   [Common Query Tasks in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471648)    
+-   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
+-   [Data Types in Power BI Desktop](powerbi-desktop-data-types.md)
+-   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)    
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 
