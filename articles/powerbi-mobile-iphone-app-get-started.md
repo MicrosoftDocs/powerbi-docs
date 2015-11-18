@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Get started with the iPhone app (Power BI for iOS)"
+   pageTitle="Get started with the iPhone app"
    description="Get started with the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2015"
+   ms.date="11/17/2015"
    ms.author="maggies"/>
 
 # Get started with the iPhone app (Power BI for iOS)
@@ -53,7 +53,7 @@ What else you can do in the iPhone app for Power BI?
 
 -   Annotate and share [tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
 
-### See Also
+### See also
 
 [Get started with the iPad app for Power BI](powerbi-mobile-iphone-app-get-started.md)
 
