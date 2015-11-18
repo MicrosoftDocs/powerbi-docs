@@ -51,7 +51,7 @@ To follow along, sign in to Power BI and select Get Data \> Samples \> Retail 
 
 -   Doughnut charts are best used to compare a particular section to the whole, rather than comparing individual sections with each other. 
 
-## See Also:
+## See also
 
 [Reports in Power BI](powerbi-service-reports.md)
 

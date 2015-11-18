@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Delete a visualization in Power BI"
    description="Delete a visualization in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -24,9 +24,8 @@
 
     ![](media/powerbi-service-delete-a-visualization/deleteVizNew.gif)
 
-## See Also:
+## See also
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
