@@ -21,7 +21,9 @@
 
 Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You [create tiles on a dashboard in Power BI](powerbi-service-dashboard-tiles.md).
 
-Then you see and interact with the tiles in the Microsoft [Power BI for Windows app](powerbi-service-windows-app-get-started.md). # Interact with tiles on a dashboard
+Then you see and interact with the tiles in the Microsoft [Power BI for Windows app](powerbi-service-windows-app-get-started.md). 
+
+# Interact with tiles on a dashboard
 
 1.  Open a [dashboard](powerbi-mobile-dashboards-in-the-windows-app.md) in the Windows app.
 
