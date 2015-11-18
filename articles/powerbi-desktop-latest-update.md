@@ -18,14 +18,109 @@
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
 
-## September 2015 Update (2.27.4163.351)
+## November 2015 Update (2.29.4217.81)
 
-You can download the latest version of Power BI Desktop from here:
-https://powerbi.com/dashboards/downloads/designer
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop).
+
+Another month, another big collection of new features and improvements for Power BI Desktop. Improvements range from new data connectors to new modeling capabilities. Here are 26 new features and improvements:
+
+### Report Authoring:
+
+-   Play Axis for Scatter Chart
+-   Horizontal Slicers
+-   Slicer Selection Behaviors (single vs. multi-select)
+-   Control Z-order
+-   Background Colors for Slides
+-   Interactions between Visuals – Subview (tile by)
+-   Duplicate Pages
+-   Support for KPIs and Images in Tables, Matrices and Cards
+-   Better Tooltips on Area Charts & Line Charts
+-   Ability to change Text size in Cards & Tables/Matrix
+-   Improved tooltips and labels in Field Well and Formatting panes
+-   Ability to see Categories with no data
+-   Improved Default Sort behaviors for visuals
+-   Ability to control Axis Scale display units
+-   Visuals Refresh Optimizations when applying basic modeling operations  
+
+### Data Modeling:
+
+-   Basic Automatic Date Features
+
+### Data Connectivity:
+
+-   [SSAS Multidimensional support](powerbi-desktop-ssas-multidimensional.md)
+-   [SAP Hana](powerbi-desktop-sap-hana.md)
+-   [R Script](powerbi-desktop-r-scripts.md)
+-   DirectQuery for SQL Server, Azure SQL Database and Azure SQL Data Warehouse
+-   Azure Data Lake
+-   Marketo
+
+### Data Transformations:
+
+-   Improved Function Invocation experience
+-   Option to set Credentials at Server vs. Database level
+-   Add Prefix/Suffix to a Text column
+
+### Other Improvements:
+
+-   New Documentation Website, now also including localized content
+
+Want to see a video of the improvements? Take a look at the blog post (link coming soon), where you can see a video, and also read more detailed information about each of these new features.
+
+
+## October 2015 Update (2.28.4190.122)
+
+October brings another large collection of updates to Power BI Desktop:
+
+### Report Authoring:
+-   Custom Visualizations
+-   Insert Visual from the Ribbon
+-   Improved Default Sorting
+-   Tooltips & Data Labels on Funnel Charts
+-   Slicer Improvements:
+    - Ability to Sort items
+    - Ability to change Font Size
+-   Additional Formatting Options for Gauges
+-   Data Point Label layout improvements
+-   KPI Consumption (Preview Feature)
+
+### Data Modeling:
+
+-   Semi-Select support for DAX formulas in Data view
+
+### Data Connectivity:
+-   Azure Document DB connector
+-   Mailchimp connector
+-   DirectQuery for SQL Server and Azure SQL Database (Preview Feature)
+
+
+### Data Transformations:
+-   Filter by “not earliest/latest date”
+-   Filter by “is in previous N minutes/hours/seconds”
+-   Copy/Paste Queries between Power BI Desktop and Excel
+-   Support for Special Characters in Split Column
+-   Refresh Previews in Merge Queries dialog
+-   Monospaced font for Query Editor Preview
+
+### Other Improvements:
+-   Refresh Single Table (vs. All) from Report & Data Views
+-   Option to enable Preview features
+-   In-Product Ratings experience
+
+You can view a video of all these updates, too.
+
+<iframe width="500" height="281" src="https://www.youtube.com/embed/Jbocn1ZNkxM" frameborder="0" allowfullscreen></iframe>
+
+
+For more information, [check out the blog announcement](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx) that describes more details about each update.
+
+
+
+## September 2015 Update (2.27.4163.351)
 
 The following massive collection of 44 features has been added to this update:
 
-###Report Authoring
+### Report Authoring
 
 - Report-level filters
 - Drill Up/Down for column and scatter charts
@@ -45,7 +140,7 @@ The following massive collection of 44 features has been added to this update:
 		- Ability to resize images and apply additional formatting options
 
 
-###Data Modeling
+### Data Modeling
 
 - Calculated Tables.
 - Relationships view:
@@ -58,7 +153,7 @@ The following massive collection of 44 features has been added to this update:
 	- Support for additional operations in the Fields pane: median, standard deviation, and variance
 	- Default summarization: Users can now customize the default summarization operation for any given field in their model
 
-###Data Connectivity
+### Data Connectivity
 
 - Support for on-premises Spark distributions
 - Support for SharePoint lists from non-English sites
@@ -71,7 +166,7 @@ The following massive collection of 44 features has been added to this update:
 - New option to “Delete All” entries in the Data Source Settings dialog
 - Option to “Enable Relationship Import during Refresh operations”
 
-###Data Transformations and Query Editor Improvements
+### Data Transformations and Query Editor Improvements
 
 - Copy to clipboard (available for cells/columns/tables)
 - Filter date columns by earliest/latest date (dynamic filter)
@@ -91,8 +186,6 @@ For more information about this update, [check out the blog announcement](http:/
 
 ## August 2015 Update (2.26.4128.403)
 
-**You can download the latest version of Power BI Desktop from here:**  
-https://powerbi.com/dashboards/downloads/designer
 
 The following features have been added to this update:
 
@@ -188,7 +281,7 @@ Take a look at the following video for details:
 <iframe width="500" height="281" src="https://www.youtube.com/embed/LS0zMfup1pQ" frameborder="0" allowfullscreen></iframe>
 
 
-### April 2015 Update (2.22.4009.122)
+## April 2015 Update (2.22.4009.122)
 
 **You can download the latest version of the Power BI Designer from here:**
 
