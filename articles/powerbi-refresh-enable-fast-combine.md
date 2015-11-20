@@ -39,7 +39,7 @@ You can use the following steps to enable Fast Combine for your gateway.
 
 1. Open **ConnectorConfig.xml**.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
 
-    <code>C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector</code>
+    <precode>C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector</precode>
 
     If you are not an administrator, the location will be the following.
 
