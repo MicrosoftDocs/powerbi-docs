@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Turn on smart ordering for dashboards in the iPhone app"
-   description="Turn on smart ordering for dashboards in the iPhone app (Power BI for iOS)"
+   pageTitle="Turn on smart ordering for tiles in the iPhone app"
+   description="Turn on smart ordering for tiles in the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -14,37 +14,35 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/19/2015"
+   ms.date="11/20/2015"
    ms.author="maggies"/>
 
-# Turn on smart ordering for dashboards in the iPhone app (Power BI for iOS)  
+# Turn on smart ordering for tiles in the iPhone app (Power BI for iOS)  
 
-Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
+Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. In the Power BI iPhone app, you can view your dashboards in two formats:  
 
-In the Power BI iPhone app, you can view your dashboards in two formats:  
+- When your phone is in **portrait mode**, you see a series of tiles one after another, to maximize tile size.
+- When you turn your phone sideways to **landscape mode**, you see the tiles in the same dashboard format you see in the Power BI service on the web.
 
-- When your phone is in portrait mode, you see a series of tiles one after another, to maximize tile size.
-- When you turn your phone sideways to landscape mode, you see the tiles arranged in the same dashboard format you see in the Power BI service on the web.
-
+## How Power BI orders tiles in the iPhone app
 When your phone is in portrait mode, by default Power BI displays the series of tiles one after the other in left-to-right, then top-to-bottom order, regardless of the initial intention of the dashboard creator. 
 
 Maybe the dashboard creator wanted the dashboard to be viewed column by column -- that is, top to bottom, then left to right. With “smart ordering”, the Power BI app on your iPhone can figure that out.  
 
-When you turn on smart ordering, the Power BI app evaluates each dashboard and decides if it’s row-based or column-based, based on the order and structure of tiles on the dashboard. Then the Power BI app orders the dashboard accordingly, for the most logical experience. 
-
-For example, in the Power BI service on the web, this column-based dashboard has two columns: **Opportunities** and **Revenue**: 
+For example, in the Power BI service on the web, this column-based dashboard has two columns: **Opportunities** and **Revenue**. The dashboard creator wants you to see the tiles in each column together, in order: 
 
 ![](media/powerbi-mobile-dashboard-smart-order-in-the-iphone-app/PBI_iPh_SmtOrdDashNumbrsNoArrow.png)
 
+### With smart ordering off
 With smart ordering off, on the iPhone the tiles are in 1 - 2 - 4 - 5 - 3 order:
 
 ![](media/powerbi-mobile-dashboard-smart-order-in-the-iphone-app/PBI_iPh_SmtOrdBefore.png)
 
-With smart ordering turned on, the tiles are in 1 - 2 - 3 - 4 - 5 - 6 order:
+### With smart ordering on
+When smart ordering on, the Power BI app evaluates each dashboard and decides if it’s row-based or column-based, according to the order and structure of tiles on the dashboard. Then the Power BI app orders the dashboard tiles in the most logical order. 
+With smart ordering turned on, the tiles are ordered correctly, 1 - 2 - 3 - 4 - 5 - 6:
 
 ![](media/powerbi-mobile-dashboard-smart-order-in-the-iphone-app/PBI_iPh_SmtOrdAfter.png)
-
-You don’t have to remember to turn on smart ordering every time. Next time you open a column-based dashboard on your iPhone, Power BI suggests that for you. You just tap **Yes**. 
 
 ## Turn on smart ordering on your iPhone  
 1.  Open the Power BI app on your iPhone and sign in.
@@ -60,6 +58,9 @@ You don’t have to remember to turn on smart ordering every time. Next time you
      ![](media/powerbi-mobile-dashboard-smart-order-in-the-iphone-app/PBI_iPh_SmrtOrdrSetting.png)
 
 6.  Tap the menu in the upper-left corner to go back.
+
+>**NOTE**: You don’t have to remember to turn on smart ordering every time. Next time you open a column-based dashboard on your iPhone, Power BI suggests that for you. You just tap **Yes**. 
+
 
 ### See also  
 [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
