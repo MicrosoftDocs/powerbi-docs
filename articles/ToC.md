@@ -261,7 +261,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-refresh-desktop-file-local-drive",
             "powerbi-refresh-desktop-file-onedrive",
             "powerbi-refresh-tools-for-troubleshooting-issues",
-            "powerbi-refresh-troubleshooting-refresh-scenarios"
+            "powerbi-refresh-troubleshooting-refresh-scenarios",
+            "powerbi-refresh-enable-fast-combine"
           ],
           "numberOfFeaturedArticles": 6
         },
