@@ -37,21 +37,17 @@ Turning Fast Combine on will ignore the private setting and allow the execution 
 
 You can use the following steps to enable Fast Combine for your gateway.
 
-    C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector
-
-
-
 1. Open **ConnectorConfig.xml**.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
 
-    <precode>C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector</precode>
+    <pre><code>C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
 
     If you are not an administrator, the location will be the following.
 
-    <code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code>
+    <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
 
 2.	Add the **&lt;EnableFastCombine&gt;** element with a value of true to the config file. Adding this element will turn **Fast Combine** on.
 
-    <code>&lt;EnableFastCombine&gt;true&lt;/EnableFastCombine&gt;</code>
+    <pre><code>&lt;EnableFastCombine&gt;true&lt;/EnableFastCombine&gt;</code></pre>
     
     ![](media/powerbi-refresh-enable-fast-combine/configfile.png)
 
@@ -65,11 +61,11 @@ You can use the following steps to enable Fast Combine for your gateway.
 
 1. Open **ConnectorConfig.xml**.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
 
-    <code>C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector</code>
+    <pre><code>C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
 
     If you are not an administrator, the location will be the following.
 
-    <code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code>
+    <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
 
 2.	Remove the **&lt;EnableFastCombine&gt;** element from the config file. Removing this element will turn **Fast Combine** off.
 
