@@ -76,4 +76,5 @@ You can use the following steps to enable Fast Combine for your gateway.
 
 ## See also
 [Privacy Levels](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
+
 [Common query tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)
