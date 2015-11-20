@@ -18,7 +18,7 @@
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
 
-## November 2015 Update (2.29.4217.81)
+## November 2015 Update (2.29.4217.221)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop).
 
