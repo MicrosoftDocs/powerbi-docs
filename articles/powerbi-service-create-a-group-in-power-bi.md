@@ -25,7 +25,7 @@ Groups in Power BI bring together people and information, and connect with apps 
 
 As the creator of the group, you are automatically the admin. As admin, you can add and delete members, and make a member an admin. All admins can create, update, and delete the dashboards, reports, and other content of the group. 
 
-You can invite peers from your organization to your Power BI group, even if they are not in Azure Active directory.  
+You can invite peers from your organization to your Power BI group, even if they aren't in Azure Active Directory.  
 
 You can decide if all members of the group can modify the group's content, or if only the admins can modify the content, and members can only read it.
 
