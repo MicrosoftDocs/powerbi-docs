@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/20/2015"
    ms.author="maggies"/>
 
 # Create a group in Power BI  
@@ -25,7 +25,9 @@ Groups in Power BI bring together people and information, and connect with apps 
 
 As the creator of the group, you are automatically the admin. As admin, you can add and delete members, and make a member an admin. All admins can create, update, and delete the dashboards, reports, and other content of the group. 
 
-You can decide if all members of the group can modify the group's content, or if only the admins can modify the content, and members can only read it
+You can invite peers from your organization to your Power BI group, even if they are not in Azure Active directory.  
+
+You can decide if all members of the group can modify the group's content, or if only the admins can modify the content, and members can only read it.
 
 1.  In Power BI, select the down arrow next to My Workspace, then select the plus sign (+) next to **Group Workspaces**.   
     ![](media/powerbi-service-create-a-group-in-power-bi/PBI_GrpCreate.png)
@@ -47,7 +49,11 @@ You can decide if all members of the group can modify the group's content, or if
 
 4.  Add members by typing in the **Add group member** box, or copying and pasting multiple email addresses from Outlook. Select **Add**. 
 
-    >**Note:**  Currently you can't add team or security group aliases to groups.  
+    >**NOTES**:  
+    >
+    > - Currently you can't add team or security group distribution lists to groups. 
+    >  
+    > - If some potential members don't already have a Power BI account and aren't in Azure Active Directory, Power BI sends them an email invitation to join Power BI. When they accept, you see them as members of the group. 
 
 5.  Select **Admin** or **Member** for each group member.
 	Admins can modify content in the group. By default, members can modify the content. You can change that in the next step.
