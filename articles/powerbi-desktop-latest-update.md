@@ -65,7 +65,13 @@ Another month, another big collection of new features and improvements for Power
 
 -   New Documentation Website, now also including localized content
 
-Want to see a video of the improvements? Take a look at the blog post (link coming soon), where you can see a video, and also read more detailed information about each of these new features.
+Want more information about these updates? Take a look at the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx), where you can get more detailed information about each of these new features.
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="500" height="281" src="https://www.youtube.com/embed/ErHvpkyQjSg" frameborder="0" allowfullscreen></iframe>
+
+
 
 
 ## October 2015 Update (2.28.4190.122)
