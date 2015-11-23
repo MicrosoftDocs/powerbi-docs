@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/20/2015"
    ms.author="maggies"/>
 
 # Favorites on the iPad app (Power BI for iOS)
@@ -25,7 +25,7 @@ For fast and easy access to your most interesting data, you can mark specific ti
 
 ## Create favorites
 
-1.  In a dashboard in the iPad app, tap the Add Favorites icon ![](media/powerbi-mobile-favorites-on-the-ipad-app/PBI_iPad_CreateFaveIcon.png).
+1.  In a dashboard in the iPad app, tap the **Add Favorites** icon ![](media/powerbi-mobile-favorites-on-the-ipad-app/PBI_iPad_CreateFaveIcon.png).
 
 2.  Tap the tiles you want on your Favorites page.
 
@@ -37,7 +37,7 @@ For fast and easy access to your most interesting data, you can mark specific ti
  
 ## View your favorites
 
--   On the dashboard or report home page of the app, tap the Options icon ![](media/powerbi-mobile-favorites-on-the-ipad-app/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Favorites**.
+-   On the dashboard or report home page of the app, tap the **Options** icon ![](media/powerbi-mobile-favorites-on-the-ipad-app/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Favorites**.
 
     ![](media/powerbi-mobile-favorites-on-the-ipad-app/PBI_iPad_FaveMenuSm.png)
 
@@ -55,4 +55,5 @@ For fast and easy access to your most interesting data, you can mark specific ti
 
 2.  Tap **Done** in the upper-right corner when you've finished.
 
-More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
+### See also  
+[Get started with the iPad app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS) 
