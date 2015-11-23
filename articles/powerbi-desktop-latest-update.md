@@ -20,7 +20,7 @@
 
 ## November 2015 Update (2.29.4217.221)
 
-You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop).
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
 Another month, another big collection of new features and improvements for Power BI Desktop. Improvements range from new data connectors to new modeling capabilities. Here are 26 new features and improvements:
 
