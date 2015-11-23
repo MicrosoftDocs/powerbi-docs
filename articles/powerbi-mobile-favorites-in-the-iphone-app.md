@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Favorites in the iPhone app (Power BI for iOS)"
+   pageTitle="Favorites in the iPhone app"
    description="Favorites in the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/13/2015"
+   ms.date="11/17/2015"
    ms.author="maggies"/>
 # Favorites in the iPhone app (Power BI for iOS)
 
@@ -24,7 +24,13 @@ For easy access to your most interesting data, you can mark specific tiles as fa
 
 ## Create favorites
 
-1.  In your dashboard in the iPhone app, tap **Add to favorites** ![](media/powerbi-mobile-favorites-in-the-iphone-app/PBI_iPh_FaveIcon.png).
+1.  In your dashboard in the iPhone app, tap the ellipsis to open the dashboard menu.
+
+    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashEllipsis.png)
+
+3.  Tap **Edit favorites**.
+
+    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashMenu.png)
 
 2.  Tap the circles in the upper-left corner of the tiles you want on your Favorites page.
 

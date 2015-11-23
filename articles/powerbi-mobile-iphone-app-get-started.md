@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Get started with the iPhone app (Power BI for iOS)"
+   pageTitle="Get started with the iPhone app"
    description="Get started with the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
