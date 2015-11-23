@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tutorial: Basic Area chart"
    description="Tutorial: Basic Area chart"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -54,10 +54,10 @@ For information about using the Filters pane, see [Add a filter to a report](po
 
 To select an area, click inside that area or along the top line.  Basic Area charts do not cross-filter the other visualizations on the report page. However, Area charts are a target for cross-filtering triggered by other visualizations on the report page.
 
-## Tips and Tricks for Basic Area Charts  
+## Tips and tricks for Basic Area charts  
 -   Basic Area charts are not effective for comparing the values due to the occlusion on the layered areas. Power BI uses transparency to indicate the overlap of areas. However, it only works well with two or three different areas. When you need to compare trend to more than three measures, try using Line charts. When you need to compare volume to more than three measures, try using Treemap.
 
-## See Also  
+## See also  
 [Reports in Power BI](powerbi-service-reports.md)  
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

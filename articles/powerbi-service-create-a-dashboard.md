@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Create a Power BI dashboard"
    description="Create a Power BI dashboard"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -40,10 +40,8 @@ You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now yo
 
 **TIP**: Dashboards can be wider and longer than the browser window. If so, they have scroll bars. Because you want to show everything important at a glance, we recommend making the dashboard fit the browser window. For more tips, see [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
 
-## See Also:
+## See also
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
-
-

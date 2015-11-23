@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Open a Power BI report in Reading View"
    description="Open a Power BI report in Reading View"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -33,9 +33,9 @@ Reading View is a great way to explore the data in a Power BI report, without wo
 2.  The report opens in Reading View.  
 ![](media/powerbi-service-open-a-report-in-reading-view/readingView.png)
 
-3.  There's so much you can do in Reading View.  Start by browsing the report by clicking the arrows at the bottom of the screen.  This sample report has multiple pages. Now start [interacting with your report](powerbi-service-interact-with-a-report-in-reading-view.md) 
+3.  There's so much you can do in Reading View.  Start by browsing the report by clicking the arrows at the bottom of the screen.  This sample report has multiple pages. Now start [interacting with your report](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-## See Also  
+## See also  
  Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts ](powerbi-service-basic-concepts.md)  

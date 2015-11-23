@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -30,6 +30,6 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
 >**Note:**  
 >If the report is part of a [content pack](powerbi-service-organizational-content-packs-introduction.md), you will not be able to delete it using this method.  See [Deleting an organizational content pack](powerbi-service-organizational-content-pack-delete.md). 
 
-## See Also  
+## See also  
 Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

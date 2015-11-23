@@ -75,7 +75,7 @@ Learn how to [create and add links to table visualizations](powerbi-service-hype
 
 -   [Waterfall charts](powerbi-service-tutorial-waterfall-charts.md)
 
-## See Also  
+## See also  
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 [Reports in Power BI](powerbi-service-reports.md)  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  

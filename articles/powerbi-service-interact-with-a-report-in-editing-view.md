@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Interact with a report in Editing View in Power BI"
    description="Interact with a report in Editing View in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -28,7 +28,7 @@ No need to crowd your report pages.  If you need more room, [add a new page](po
 
 ### Change the way a report page is displayed
 
-[How do you want your report pages to be viewed?](powerbi-service-change-report-display-settings.md)  Set rendering rules, display ratios, and absolute page sizes (in pixels). 
+[How do you want your report pages to be viewed?](powerbi-service-change-report-display-settings.md)  Set rendering rules, display ratios, and absolute page sizes (in pixels).
 
 ### Add visualizations
 
@@ -67,7 +67,7 @@ See [share a dashboard](powerbi-service-share-unshare-dashboard.md).
 Don't need the report any more?  [Delete it](powerbi-service-delete-a-report.md).
 
 
-## See Also:
+## See also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
@@ -76,5 +76,3 @@ Go back to Power BI [report Reading View](powerbi-service-interact-with-a-report
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
-
-

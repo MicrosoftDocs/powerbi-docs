@@ -55,7 +55,7 @@
 
     Alternately, to remove the hyperlink but leave the text, highlight the entire hyperlink and select Delete.
 
-## See Also:
+## See also
 
 [Text Boxes in Power BI reports](powerbi-service-text-boxes-in-reports.md)
 

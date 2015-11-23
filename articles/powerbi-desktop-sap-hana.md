@@ -29,7 +29,7 @@ When connecting to a SAP HANA database, specify the server name and the port in 
 
 ![](media/powerbi-desktop-sap-hana/sap-hana-2.png)
 
-In this preview release **SAP HANA** is only supported in Power BI Desktop, and you cannot publish or upload reports that use **SAP HANA** to the Power BI service.
+In this preview release **SAP HANA** in [DirectQuery](use-directquery.md) mode is only supported in Power BI Desktop, and you cannot publish or upload reports that use **SAP HANA** in DirectQuery mode to the Power BI service. When not using **SAP HANA** in DirectQuery mode, you *can* publish and upload reports that use **SAP HANA**.
 
 
 ### Limitations of SAP HANA  
@@ -42,5 +42,11 @@ There are certain limitations to using the preview version of **SAP HANA**:
 -   Power BI converts decimal numbers to doubles, and therefor may lose precision
 -   If strings have leading spaces, the leading spaces are not shown in Power BI reports
 
+In addition, this release of **SAP HANA** in Power BI Desktop does not support the following:
+-   Hierarchies
+-   display folders
+-   KPI trends
+-   translations
+-   non-aggregatable attributes
 
 In addition, as mentioned earlier you cannot publish a report created with the preview version of **SAP HANA** to the Power BI Service.

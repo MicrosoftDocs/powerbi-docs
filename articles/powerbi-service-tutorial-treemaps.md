@@ -85,7 +85,7 @@ Highlighting a Category or Details in a Treemap filters the other visualizations
 2.  In the **Last Year Sales by Chain** pie chart, select the **Fashions Direct** slice.  
     ![](media/powerbi-service-tutorial-treemaps/treemapNoOwl.gif)
 
-## See Also  
+## See also  
 [Reports in Power BI](powerbi-service-reports.md)  
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)

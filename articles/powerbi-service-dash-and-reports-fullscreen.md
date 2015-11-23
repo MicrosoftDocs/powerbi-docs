@@ -30,7 +30,7 @@ Some uses for Full Screen mode are:
 - reviewing your dashboards and reports in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report
 
 >**NOTE**:
->This is different than In-focus mode.  In-focus mode is available for [tiles](powerbi-service-display-tile-in-full-screen-mode.md) 
+>This is different than In-focus mode.  In-focus mode is available for [tiles](powerbi-service-display-tile-in-full-screen-mode.md)
 and [dashboards](powerbi-service-dash-in-focus-mode.md).
 
 ##To turn Full Screen on (and off)
@@ -49,6 +49,6 @@ and [dashboards](powerbi-service-dash-in-focus-mode.md).
 
   ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_FitToScreenIconClose.jpg)
 
-## See Also  
+## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

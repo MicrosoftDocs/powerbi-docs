@@ -97,6 +97,6 @@ In the dashboard, select the tile.
 Q&A opens with the question that was used to create the visualization, displaying the visualization.  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashTileQnAQuestion.png)
 
-## See Also  
+## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

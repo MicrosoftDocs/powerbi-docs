@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Tutorial: Combo Chart in Power BI"
    description="Tutorial: Combo Chart in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -18,7 +18,7 @@
    ms.author="mihart"/>
 # Tutorial: Combo Chart in Power BI
 
-In Power BI, a Combo Chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data. 
+In Power BI, a Combo Chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.
 
 Combo charts can have one or two Y axes.
 
@@ -143,7 +143,7 @@ Highlighting a column or line in a Combo Chart cross-filters the other visualiza
 
 
 
-## See Also:
+## See also
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
@@ -154,4 +154,3 @@ Highlighting a column or line in a Combo Chart cross-filters the other visualiza
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Try it out -- it's free!](https://powerbi.com/)
-

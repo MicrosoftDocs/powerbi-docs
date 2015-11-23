@@ -111,7 +111,7 @@ But what if you want to set your own maximum value?  Let's say that instead of
 
     The Gauge is redrawn with a new end value, 1.21 million in gross sales.
 
-## See also:
+## See also
 
 [Reports in Power BI](powerbi-service-reports.md)
 
