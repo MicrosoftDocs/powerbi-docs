@@ -427,6 +427,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-set-data-alerts-in-the-iphone-app",
             "powerbi-mobile-groups-in-the-iphone-app-groups",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app",
+            "powerbi-mobile-picture-tiles-in-the-iphone-app",
             "powerbi-mobile-known-issues-with-the-iphone-app"
           ],
           "numberOfFeaturedArticles": 5
