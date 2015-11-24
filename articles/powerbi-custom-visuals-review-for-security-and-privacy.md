@@ -96,7 +96,7 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 7.  If you are reviewing an update to a visual you previously reviewed, ensure to check for changes. Always apply equal rigor to updates as you did the first time you received the visual for review  
 8.  If you find something suspicious or unclear, please reach out to us we're here to help.
 
-## See also:
+## See also
 
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
 

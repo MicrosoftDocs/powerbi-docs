@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Display dashboards and reports in Full Screen mode"
    description="Display dashboards and reports in Full Screen mode"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -40,6 +40,6 @@ Some uses for Full Screen mode are:
 4.  To exit Full Screen mode, select the **Close Full Screen** icon.  
     ![](media/powerbi-service-display-dashboard-report-in-full-screen-mode/PBI_FitToScreenIconClose.jpg)
 
-## See Also  
+## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
