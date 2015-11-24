@@ -21,7 +21,7 @@
 
 ## Pin a range from an Excel workbook to a dashboard
 
-﻿One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is from within an Excel workbook. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, and tables.
+﻿One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is from within an Excel workbook. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
 
 
 >**NOTE**:  You can view, but not pin, tiles from workbooks that have been shared with you.
@@ -34,7 +34,7 @@
 
 3.  In Power BI, the workbook is listed in the left navigation pane under **Reports**. The ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_workbookIcon.png) icon indicates this is an Excel workbook and the yellow asterisk indicates it's new.
 
-  ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_pinnedFromExcel.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_pinnedFromExcel.png)
 
   Open the workbook in Power BI by selecting the report name.
 
@@ -45,17 +45,17 @@
 
 1. Highlight the cells that you'd like to pin to a dashboard.
 
-  ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_selectRange.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_selectRange.png)
 
 2.  Select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png) icon. 
 
-2.  Pin the tile to an existing dashboard or to a new dashboard. 
+3.  Pin the tile to an existing dashboard or to a new dashboard. 
 
     -   Existing dashboard: select the name of the dashboard from the dropdown.
 
     -   New dashboard: type the name of the new dashboard.
 
-  ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_dashDialog.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_dashDialog.png)
 
 3.  Select **Pin**.
 

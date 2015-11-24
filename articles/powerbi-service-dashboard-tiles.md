@@ -62,7 +62,7 @@ Hovering over a tile reveals clickable icon that allow you to interact with the 
 
 ![](media/powerbi-service-dashboard-tiles/hover-over-dashboard-tile.jpg)
 
-- Open the tile in full screen mode with the in-focus icon ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
+- [Open the tile in full screen mode with the in-focus icon](powerbi-service-display-tile-in-full-screen-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
 
 - [Pin the tile to another dashboard with the pin icon](powerbi-service-pin-a-tile-from-one-dashboard-to-another.md)
  ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
@@ -109,13 +109,13 @@ Q&A opens with the question that was used to create the visualization, displayin
 
 ### If the tile was created from an Excel workbook on OneDrive for Business
 
-1. In the dashboard, select the tile.
+In the dashboard, select the tile.
 
-  ![](media/powerbi-service-dashboard-tiles/PBI_DashWorkbookTileSelect.png)  
+![](media/powerbi-service-dashboard-tiles/PBI_DashWorkbookTileSelect.png)  
 
-2. If you have at least Read permissions for the workbook, it will open in Power BI.
+If you have at least Read permissions for the workbook, it will open in Power BI.
 
-  ![](media/powerbi-service-dashboard-tiles/PBI_DashTileWorkbook_openInExcelOnline.png)
+![](media/powerbi-service-dashboard-tiles/PBI_DashTileWorkbook_openInExcelOnline.png)
 
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  

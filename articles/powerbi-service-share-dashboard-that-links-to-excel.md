@@ -35,7 +35,7 @@ When you share a dashboard or create a content pack and include a dashboard that
 
 To share a dashboard that links back to an Excel workbook on OneDrive for Business, see [Share and Unshare a Dashboard](powerbi-service-share-unshare-dashboard.md). The difference is that you'll have the option to modify the permissions for the linked Excel workbook before sharing.
 
-![](media/powerbi-service-share-dashboard-that-links-to-excel/PBI_shareDialog.png)
+  ![](media/powerbi-service-share-dashboard-that-links-to-excel/PBI_shareDialog.png)
 
 1. Enter the email addresses for your colleagues.
 

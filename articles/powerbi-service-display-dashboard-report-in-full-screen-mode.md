@@ -23,8 +23,11 @@ Display your dashboards and reports without the distraction of menus and navigat
 
 Some uses for Full Screen mode are:  
 -   presenting your dashboards and reports at a meeting or conference
+
 -   displaying your dashboard in an office on a dedicated large screens or projectors
+
 -   looking at your dashboards and reports on a small screen
+
 -   reviewing your dashboards and reports in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report
 
 >**Note:**  
@@ -32,12 +35,19 @@ Some uses for Full Screen mode are:
 
 ## To turn Full Screen on (and off)  
 1.  From your dashboard or report, select the **Full Screen** icon.  
+
     ![](media/powerbi-service-display-dashboard-report-in-full-screen-mode/PBI_TvModeIcon.jpg)
-2.  Your dashboard or report page fills the entire screen.  
-    ![](media/powerbi-service-display-dashboard-report-in-full-screen-mode/PBI_TVMode.jpg)  
-3.  Sometimes dashboards will display in Full Screen mode with scrollbars (see above). To remove scrollbars, in the upper right corner, select the **Fit to Screen** icon.  
+
+2.  Your dashboard or report page fills the entire screen.
+
+    ![](media/powerbi-service-display-dashboard-report-in-full-screen-mode/PBI_TVMode.jpg)
+
+3.  Sometimes dashboards will display in Full Screen mode with scrollbars (see above). To remove scrollbars, in the upper right corner, select the **Fit to Screen** icon.
+
     ![](media/powerbi-service-display-dashboard-report-in-full-screen-mode/PBI_FitToScreenIcon.jpg)
+
 4.  To exit Full Screen mode, select the **Close Full Screen** icon.  
+
     ![](media/powerbi-service-display-dashboard-report-in-full-screen-mode/PBI_FitToScreenIconClose.jpg)
 
 ## See also  

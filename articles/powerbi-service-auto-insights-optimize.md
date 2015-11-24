@@ -18,10 +18,7 @@
    ms.author="mihart"/>
 
 # Optimize your data for Power BI Quick Insights
-
-![](media/powerbi-service-auto-insights-optimize/PBI_AutoInsightsOptimizeError.png)
-
-Here are some changes to your dataset that you can do to improve Auto Insight results:
+Want to improve Quick Insights results?  Try these:
 
 - Hide or unhide columns in your dataset. Power BI Auto Insights doesn't search hidden columns.  So hide duplicate or unnecessary columns and unhide interesting columns.
 
