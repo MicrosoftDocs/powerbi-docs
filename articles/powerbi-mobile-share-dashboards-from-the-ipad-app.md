@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Share dashboards from the iPad app (Power BI for iOS)"
+   pageTitle="Share dashboards from the iPad app"
    description="Share dashboards from the iPad app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 
 # Share dashboards from the iPad app (Power BI for iOS)
@@ -63,7 +63,7 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 -   You can share snapshots of tiles with anyone, in or out of your email domain.You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
 
-### See Also
+### See also
 
 [Annotate and share a snapshot of a tile from the iPad app](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
 
