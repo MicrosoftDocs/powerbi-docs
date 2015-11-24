@@ -1,6 +1,6 @@
 <properties
    pageTitle="Share a dashboard that links to an Excel workbook on OneDrive for Business"
-   description="Share a dashboard that has links to an Excel workbook saved on OneDrive for Business."
+   description="Share a dashboard that has links to an Excel workbook on OneDrive for Business."
    services="powerbi"
    documentationCenter=""
    authors="mihart"

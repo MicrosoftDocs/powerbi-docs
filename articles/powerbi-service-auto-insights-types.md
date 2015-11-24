@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Types of Quick Insights supported by Power BI"
-   description="quick Insights with Power BI"
+   description="Quick Insights with Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
