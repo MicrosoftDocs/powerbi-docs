@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/15/2015"
    ms.author="mihart"/>
 
 # Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI  

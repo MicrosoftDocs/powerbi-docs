@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
+   ms.date="11/7/2015"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
