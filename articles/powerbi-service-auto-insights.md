@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Quick Insights in Power BI"
-   description="Quick Insights with Power BI."
+   description="Quick Insights with Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"

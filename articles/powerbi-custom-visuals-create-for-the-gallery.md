@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create and submit a visual to the gallery "
-   description="Create and submit a visual to the gallery. "
+   description="Create and submit a visual to the gallery "
    services="powerbi"
    documentationCenter=""
    authors="mihart"

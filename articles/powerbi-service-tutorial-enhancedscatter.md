@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Tutorial: Enhanced Scatter charts in Power BI"
-   description="Tutorial: Enhanced Scatter charts in Power BI."
+   description="Tutorial: Enhanced Scatter charts in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"

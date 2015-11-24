@@ -1,6 +1,6 @@
 <properties
    pageTitle="What's new in the Power BI service"
-   description="What's new in the Power BI service"
+   description="What's new in the Power BI service."
    services="powerbi"
    documentationCenter=""
    authors="mihart"

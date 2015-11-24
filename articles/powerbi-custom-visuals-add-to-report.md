@@ -1,6 +1,6 @@
 <properties
    pageTitle="Add a custom visualization to a Power BI report"
-   description="Add a custom visual to a Power BI report."
+   description="Add a custom visual to a Power BI report"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/01/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 # Add a custom visualization to a Power BI report
 

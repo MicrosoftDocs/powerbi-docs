@@ -1,6 +1,6 @@
 <properties
    pageTitle="Share (and unshare) a dashboard from Power BI"
-   description="Share, unshare, reshare a dashboard from Power BI"
+   description="Share, unshare, reshare a dashboard from Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="11/18/2015"
    ms.author="mihart"/>
 
 # Share (and unshare) a dashboard from Power BI

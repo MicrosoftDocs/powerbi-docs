@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Optimize your data for Power BI Quick Insights"
-   description="Optimize your data for Power BI Quick Insights. If Power BI doesn't find any insights in your data, here are some things you can do."
+   description="Optimize your data for Power BI Quick Insights. If Power BI doesn't find insights in your data, here are some things you can do."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
