@@ -1,5 +1,5 @@
-﻿<properties 
-   pageTitle="Groups in the iPad app (Power BI for iOS)"
+<properties 
+   pageTitle="Groups in the iPad app"
    description="Groups in the iPad app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 # Groups in the iPad app (Power BI for iOS)
 

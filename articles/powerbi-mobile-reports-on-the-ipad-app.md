@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Reports on the iPad app (Power BI for iOS)"
+   pageTitle="Reports on the iPad app"
    description="Reports on the iPad app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 # Reports on the iPad app (Power BI for iOS)
 
@@ -50,16 +50,6 @@ Tap the chart, then tap the down arrow next to **Sort by** and the field name.
 ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_Sort.png)
 
 To reverse the sort order, tap **asc** or **desc**.
-
-## Select more than one item in a chart
-
-Tap the chart, then tap the multiselect icon ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_MultiselectIcon2.png) in the upper-right corner of the chart.
-
-![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iOS_MultiselectCrop.PNG)
-
-When the icon is blue, you can select more than one column at a time.
-
-![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_MultiselectResult.png)
 
 ## Drill down and up in a chart
 
