@@ -38,7 +38,7 @@ It's easy to download, and use a custom visual in your reports.
 
 6.  To use a custom visual, see [Add a custom visual to a report (Service)](powerbi-custom-visuals-add-to-report.md) or [Add a custom visual to a report (Desktop)](powerbi-custom-visuals-use.md)
 
-## See also:
+## See also
 
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
 

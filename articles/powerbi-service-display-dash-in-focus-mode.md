@@ -46,7 +46,7 @@ NOTE: Currently, In-focus mode is not available for tiles created from Q&A or fo
 6. Close In-focus mode and return to the dashboard by selecting **Back to Dashboard** (in the top right corner of the tile).
 
 
-## See Also:
+## See also
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 

@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Pin a tile to a Power BI dashboard from a report"
-   description="Pin a tile to a Power BI dashboard from a report"
+   description="Pin a tile to a Power BI dashboard from a report."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from a report

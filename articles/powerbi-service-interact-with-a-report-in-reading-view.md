@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/15/2015"
    ms.author="mihart"/>
 
 # Interact with a report in Reading View in Power BI

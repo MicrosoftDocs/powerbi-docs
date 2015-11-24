@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Q&A in Power BI"
-   description="Q&A in Power BI"
+   description="Q&A in Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
