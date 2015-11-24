@@ -83,7 +83,7 @@
 
 Clicking a workbook tile opens the linked workbook. Since the workbook file is located on the owner’s OneDrive for Business, viewing the workbook requires you have Read permissions for the workbook. If you do not have permission to view the file, you will receive an error message. For more information, see [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 
->NOTE: Unsupported features: Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel Desktop are not supported in Excel Services REST API, they will not be seen on tiles in Power BI. For example: Sparklines, icon set conditional formatting, time slicers. For a full list of unsupported features see [Unsupported Features in Excel Services REST API](http://msdn.microsoft.com/en-us/library/office/ff394477.aspx)
+>NOTE: Unsupported features: Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel Desktop are not supported in Excel Services REST API, they will not be seen on tiles in Power BI. For example: Sparklines, icon set conditional formatting, time slicers. For a full list of unsupported features see [Unsupported Features in Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
 
 
 ## See also
