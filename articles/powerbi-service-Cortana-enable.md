@@ -59,7 +59,7 @@ For Cortana in Windows 10 to access data in Power BI, you need to add the work o
 Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana.
 
 
-# See also
+## See also
 [Using Cortana with Power BI](powerbi-service-Cortana-intro.md)
 
 [Create Cortana *Answer pages* in Power BI](powerbi-service-Cortana-Desktop-entity-cards.md)

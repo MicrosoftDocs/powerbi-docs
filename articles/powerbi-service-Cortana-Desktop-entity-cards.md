@@ -77,7 +77,7 @@ Results with high scoring answers (such as a complete match of an Answer Page na
 >NOTE: When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10 or otherwise restating the Cortana process in Windows 10 will allow new content to appear immediately.
 
 
-# See also
+## See also
 
 [Using Cortana with Power BI](powerbi-service-Cortana-intro.md)
 

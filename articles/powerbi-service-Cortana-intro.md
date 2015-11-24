@@ -40,7 +40,7 @@ When a Windows 10 (version 1511 or higher) user adds the account he or she uses 
 
 - If you are a dataset owner, [create Answer Cards designed specifically for Cortana](powerbi-service-Cortana-Desktop-entity-cards.md).
 
-# See also
+## See also
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get started with Power BI Desktop](powerbi-desktop-get-started.md)
