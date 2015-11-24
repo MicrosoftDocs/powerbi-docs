@@ -46,6 +46,7 @@ Before you enable a custom visual, you should review the custom visual for secur
 
 ## Security best practices for IT Professionals to enable a custom visual  
 <a name="security"></a>
+
 >**Warning:**  
 >A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. There are several best practices you can follow to evaluate a custom visual for security and privacy.
 
@@ -57,6 +58,7 @@ Before you enable a custom visual, you should review the custom visual for secur
 A custom visual uses JavaScript and can therefore contain security or privacy risks. If you receive a custom visual or a pbix file with a custom visual from an unknown source, you may want to look at the JavaScript to see if it is safe.
 
 To evaluate the JavaScript code in a custom visual, extract the custom visual code. Here’s how to extract the code:  
+
 1.  Save the .pbiviz file to a folder.
 
 2.  Rename the file to a .zip file.
