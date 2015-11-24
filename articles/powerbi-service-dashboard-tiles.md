@@ -34,7 +34,7 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 
 - [Pin a tile to a dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
 
--   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/en-us/library/mt604784.aspx)
+-   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
 
 -   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
 
