@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Groups in the iPhone app (Power BI for iOS)"
+   pageTitle="Groups in the iPhone app"
    description="Groups in the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/17/2015"
    ms.author="maggies"/>
 
 # Groups in the iPhone app (Power BI for iOS)  
@@ -36,4 +36,4 @@ Power BI sends a notification to your iPhone whenever someone adds a new dashboa
 
 4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-iphone-app.md) to open and view it.
 
-More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.  
+More about [the iPhone app](powerbi-mobile-iphone-app-get-started.md) for Power BI.  

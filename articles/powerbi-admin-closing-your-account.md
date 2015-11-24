@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="11/16/2015"
    ms.author="asaxton"/>
 # Closing your Power BI Account
 
@@ -22,18 +22,34 @@ If you don't want to use Power BI any longer, you can ask us to close your Power
 
 ## Power BI (free) or individual Power BI Pro users
 
-If you have a free account, or are paying for the individual Power BI Pro subscription, you can contact support to request an account closure.
+If you have a free account, or are paying for the individual Power BI Pro subscription, you close your account from the settings screen.
 
-1. Select the **?** in the upper right.
+1. Select the gear ![](media/powerbi-admin-closing-your-account/gear.png) in the upper right.
 
-2. Select **Get Help**.
+2. Select **Settings**.
 
-    ![](media/powerbi-admin-closing-your-account/get-help.png)
+    ![](media/powerbi-admin-closing-your-account/closeaccount-settings.png)
 
-3. Under the **Ask for help** section, select **Contact support**.
+3. **General** > **Close Account**
+
+    ![](media/powerbi-admin-closing-your-account/closeaccount-settings2.png)
+    
+4. Select a reason from the  **Why are you closing your account?** (1) dropdown.  You can optionally provide further information (2). Then select **Close account**.
+
+    ![](media/powerbi-admin-closing-your-account/closeaccount-settings3.png)
+    
+5. Confirm that you want to close your account.
+
+    ![](media/powerbi-admin-closing-your-account/closeaccount-settings4.png)
+    
+6. You will see a confirmation that your account is closed. You will also be given a link to reopen your account.
+
+    ![](media/powerbi-admin-closing-your-account/closeaccount-settings5.png)
 
 ## Managed tenant users
 
 You will need to contact your tenant admin and ask them to unassign the license from your account.
+
+![](media/powerbi-admin-closing-your-account/closeaccountmanaged.png)
 
 

@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Reports in the Power BI for Windows app"
    description="Reports in the Power BI for Windows app"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/17/2015"
    ms.author="maggies"/>
 # Reports in the Power BI for Windows app
 
@@ -39,30 +39,17 @@ Then you view and interact with those reports in the [Power BI for Windows app]
 
 ## See other pages in a Power BI report
 
--   Tap the arrows at the bottom of the page. 
+-   Tap the tabs at the bottom of the page. 
 
 ## Sort a chart in a Power BI report
 
-1.  Tap and hold, or right-click the chart. 
+1.  Tap the chart. 
 
-2.  Tap the down arrow next to **Sort by**, then tap the field name.
+2.  Tap the ellipsis (...) in the upper-right corner, tap the **Sort by** arrow, then tap the field name.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppSortChart.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppSort.png)
 
 3.  To reverse the sort order, tap **A\>Z** or **Z\>A**. 
-
-## Select more than one item in a chart
-
-1.  Tap and hold, or right-click the chart. 
-
-2.  Tap the multiselect icon in the upper-right corner of the chart.
-
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppMultiSelectChart.png)
-
-3.  When the icon is grayed ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppMultiSelectIcon.png), you can select more than one column at a time.
-
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppMultiSelectedChart.png)
-
 
 ## Cross-filter and highlight a Power BI report page
 
@@ -74,47 +61,31 @@ Then you view and interact with those reports in the [Power BI for Windows app]
 
 ## Filter a Power BI report
 
-You can always filter visuals in a Power BI report, because you can use the fields in the visual itself as filters. You can also filter whole pages in a report, if you or someone else has [added filters to the page](powerbi-service-add-a-filter-to-a-report.md) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). You can also add other fields to a visual as filters in the Power BI service. 
+You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has [added filters to the page](powerbi-service-add-a-filter-to-a-report.md) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). You can also add other fields to a visual as filters in the Power BI service. 
 
-In a report, expand the Filters pane, if it's collapsed.
+> **Note**  If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
 
-![](media/powerbi-mobile-reports-in-the-windows-app/PBI_FiltersCollapsed.png)
+1. In a report, expand the Filters pane, if it's collapsed.
 
-When filtering fields, you can select check boxes for the values you want.
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppCollapsFilter.png)
 
-![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppCheckFilter.png)
+    If the report creator has set page-level filters, when you select a visual you see filters for the page and the visual.
 
-Or you can switch the filtering mode. Tap **Change filter type** ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_FilterSwitchIcon.png) to select values using expressions instead.
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinApp_PgVizFilter.png)
 
--   Number fields offer expressions such as **is less than**, **is greater than**, **is not**, and **is blank**.
+2. Select check boxes for the values you want.
 
--   Text fields offer expressions such as **contains**, **doesn't start with**, and **is not**.
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinApp_PageFilter.png)
 
-![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppFilterExpressn.png)
+3. Or you can switch the filtering mode. Tap **Advanced filtering** ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppAdvFilter.png) at the end of the list of values, to select values using expressions instead.
 
-### Filter a visual in a Power BI report
+ -   Number fields offer expressions such as **is less than**, **is greater than**, **is not**, and **is blank**.
 
-When you filter a visual, such as a chart, you can always filter it by one of the fields in the chart. 
+        ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppAdvFilterOptions.png)
 
-1.  On a report page, select a chart or other visual and tap **Filters** in the upper-right corner to expand the Filters pane.
+ -   Text fields offer expressions such as **contains**, **doesn't start with**, and **is not**.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_FiltersCollapsed.png)
-
-    You see a list of the fields in the visual, and maybe other fields, if you added them in the Power BI service ([https://powerbi.com](http://powerbi.com)).
-
-2.  Tap the name of the field to expand it, and select the values you want to filter.
-
-### Filter a page in a Power BI report
-
-You can only filter a whole page if you or someone else has added a filter to the page in [t](http://powerbi.com/)he Power BI service ([https://powerbi.com](http://powerbi.com/)).
-
-1.  In a report page, without selecting any visuals on the page, tap **Filters** in the upper-right corner.
-
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_FiltersCollapsed.png)
-
-2.  If there are fields under the Page heading, you can set filters for the page.
-
-3.  if there are no fields in the Filters pane or you want other fields go to the Power BI service ([https://powerbi.com](http://powerbi.com/)), [add filters to the page](powerbi-service-add-a-filter-to-a-report.md), and save the report.
+4.  To add other fields to the Filters pane, go to the Power BI service ([https://powerbi.com](http://powerbi.com/)), [add filters to the page](powerbi-service-add-a-filter-to-a-report.md), and save the report.
 
 ## Drill down and up in a chart
 

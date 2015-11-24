@@ -47,7 +47,7 @@ Are you the person creating datasets and data models?  Then this topic is for yo
 [Use Q&A with Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 How does Q&A communicate with Salesforce.
 
-## See Also
+## See also
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

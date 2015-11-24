@@ -57,7 +57,7 @@ How would we go about creating this same line chart using Q&A?
 
 3.  To pin the chart to your dashboard, select the pin icon ![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png).
 
-## See Also
+## See also
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

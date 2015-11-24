@@ -79,5 +79,5 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 [Power BI Content Pack for Twilio](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05Nov15-TwilioPowerBIContentPack-Register.html)
 
 
-## See Also  
+## See also  
 [Get started with Power BI](powerbi-service-get-started.md)  

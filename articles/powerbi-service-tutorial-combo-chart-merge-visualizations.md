@@ -143,7 +143,7 @@ Highlighting a column or line in a Combo Chart cross-filters the other visualiza
 
 
 
-## See Also
+## See also
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 

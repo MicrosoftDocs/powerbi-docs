@@ -14,11 +14,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/02/2015"
+   ms.date="11/19/2015"
    ms.author="bewillia"/>
 
 <!---
-This file contains the table of contents structure in JSON format.  
+This file contains the table of contents structure in JSON format.   
 
 Note to localization team:
 Only the categoryName and sectionTitle fields should be translated.  The articles field should not be modified during localization.
@@ -43,14 +43,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-q-and-a",
             "powerbi-service-organizational-content-packs-introduction",
             "powerbi-service-whats-new",
-			"powerbi-videos",
+            "powerbi-videos",
             "powerbi-webinars",
             "powerbi-frequently-asked-questions",
             "powerbi-free-trial-for-power-bi-pro",
             "powerbi-power-bi-pro-content-what-is-it",
             "powerbi-service-browser-support",
-            "powerbi-supported-languages",
-            "powerbi-custom-visuals-getting-started-with-developer-tools"
+            "powerbi-supported-languages"
           ],
           "numberOfFeaturedArticles": 13
         },
@@ -58,9 +57,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Samples",
           "articles": [
             "powerbi-sample-datasets",
-			"powerbi-sample-tutorial-connect-to-the-samples",
+            "powerbi-sample-tutorial-connect-to-the-samples",
             "powerbi-sample-downloads",
-			"powerbi-sample-download-the-financial-sample-workbook",
+            "powerbi-sample-download-the-financial-sample-workbook",
             "powerbi-sample-supplier-quality-analysis-take-a-tour",
             "powerbi-sample-it-spend-analysis-take-a-tour",
             "powerbi-sample-sales-and-marketing-take-a-tour",
@@ -89,13 +88,16 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-github",
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
+            "powerbi-content-pack-azure-enterprise",
             "powerbi-content-pack-microsoft-dynamics-crm",
             "powerbi-content-pack-microsoft-dynamics-marketing",
             "powerbi-content-pack-microsoft-dynamics-nav",
-			"powerbi-content-pack-planview",
+            "powerbi-content-pack-planview",
+            "powerbi-content-pack-project-online",
+            "powerbi-content-pack-projectplace",
             "powerbi-content-pack-quickbooks-online",
             "powerbi-content-pack-sendgrid",
-			"powerbi-content-pack-sparkpost",
+            "powerbi-content-pack-sparkpost",
             "powerbi-azure-sql-database-auditing-connector",
             "powerbi-content-pack-sql-sentry",
             "powerbi-content-pack-stripe",
@@ -112,21 +114,21 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Dashboards",
           "articles": [
-                  "powerbi-service-create-a-dashboard",
-                  "powerbi-service-dashboard-tiles",
-                  "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
-                  "powerbi-pin-a-tile-from-one-dashboard-to-another",
-                  "powerbi-service-edit-a-tile-in-a-dashboard",
-                  "powerbi-service-tips-for-designing-a-great-dashboard",
-                  "powerbi-service-share-unshare-dashboard",
-                  "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
-                  "powerbi-service-dash-and-reports-fullscreen",
-                  "powerbi-service-display-dash-in-focus-mode",
-                  "powerbi-service-rename-a-dashboard",
-                  "powerbi-service-add-an-image-to-a-dashboard",
-                  "powerbi-service-create-a-big-number-tile-for-a-dashboard",
-                  "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
-                  "powerbi-service-delete-or-remove-a-dashboard"
+            "powerbi-service-create-a-dashboard",
+            "powerbi-service-dashboard-tiles",
+            "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
+            "powerbi-pin-a-tile-from-one-dashboard-to-another",
+            "powerbi-service-edit-a-tile-in-a-dashboard",
+            "powerbi-service-tips-for-designing-a-great-dashboard",
+            "powerbi-service-share-unshare-dashboard",
+            "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
+            "powerbi-service-dash-and-reports-fullscreen",
+            "powerbi-service-display-dash-in-focus-mode",
+            "powerbi-service-rename-a-dashboard",
+            "powerbi-service-add-an-image-to-a-dashboard",
+            "powerbi-service-create-a-big-number-tile-for-a-dashboard",
+            "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
+            "powerbi-service-delete-or-remove-a-dashboard"
           ],
           "numberOfFeaturedArticles": 8
         },
@@ -189,17 +191,14 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-service-visualizations-for-reports",
             "powerbi-service-visualization-types-for-reports-and-q-and-a",
-			"powerbi-custom-visuals",
+            "powerbi-custom-visuals",
             "powerbi-service-add-visualizations-to-a-report-i",
             "powerbi-service-add-visualizations-to-a-report-ii",
             "powerbi-service-change-the-type-of-visualization-in-a-report",
             "powerbi-custom-visuals-add-to-report",
-            "powerbi-custom-visuals-create-for-the-gallery",
             "powerbi-custom-visuals-download-from-the-gallery",
-            "powerbi-custom-visuals-getting-started-with-developer-tools",
-            "powerbi-custom-visuals-review-for-security-and-privacy",
-			"powerbi-service-getting-started-with-color-formatting-and-axis-properties",
-			"powerbi-service-tips-and-tricks-for-color-formatting",
+            "powerbi-service-getting-started-with-color-formatting-and-axis-properties",
+            "powerbi-service-tips-and-tricks-for-color-formatting",
             "powerbi-service-change-how-a-chart-is-sorted",
             "powerbi-service-change-the-aggregation-in-a-chart",
             "powerbi-service-copy-and-paste-a-visualization",
@@ -255,14 +254,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Data refresh",
           "articles": [
-                  "powerbi-refresh-data",
-                  "powerbi-refresh-excel-file-local-drive",
-                  "powerbi-refresh-excel-file-onedrive",
-                  "powerbi-refresh-csv-file-onedrive",
-                  "powerbi-refresh-desktop-file-local-drive",
-                  "powerbi-refresh-desktop-file-onedrive",
-                  "powerbi-refresh-tools-for-troubleshooting-issues",
-                  "powerbi-refresh-troubleshooting-refresh-scenarios"
+            "powerbi-refresh-data",
+            "powerbi-refresh-excel-file-local-drive",
+            "powerbi-refresh-excel-file-onedrive",
+            "powerbi-refresh-csv-file-onedrive",
+            "powerbi-refresh-desktop-file-local-drive",
+            "powerbi-refresh-desktop-file-onedrive",
+            "powerbi-refresh-tools-for-troubleshooting-issues",
+            "powerbi-refresh-troubleshooting-refresh-scenarios",
+            "powerbi-refresh-enable-fast-combine"
           ],
           "numberOfFeaturedArticles": 6
         },
@@ -285,21 +285,22 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         		{
           "sectionTitle": "Troubleshooting",
           "articles": [
-			      "powerbi-issue-i-get-an-error-refreshing-data-with-the-power-bi-personal-gateway",
-			      "powerbi-issue-i-need-help-signing-up-for-power-bi",
-			      "powerbi-issue-the-as-connector-wont-install-or-i-cant-connect-to-data",
-			      "powerbi-issue-what-if-my-data-isnt-up-to-date",
-			      "powerbi-admin-forgot-your-password",
-			      "powerbi-admin-service-health-status",
-			      "powerbi-admin-capturing-additional-diagnostic-information-for-power-bi",
-			      "powerbi-admin-alternate-email-address-for-power-bi",
-			      "powerbi-admin-how-to-use-the-same-account-as-azure",
-			      "powerbi-admin-office-365-dedicated-known-issues",
-			      "powerbi-admin-troubleshooting-power-bi-personal-gateway",
-			      "powerbi-admin-troubleshoot-analysis-service-connector",
-			      "powerbi-admin-troubleshoot-unsupported-data-source-for-refresh",
-			      "powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases",
-			      "powerbi-admin-troubleshoot-excel-workbook-data"
+            "powerbi-issue-i-get-an-error-refreshing-data-with-the-power-bi-personal-gateway",
+            "powerbi-issue-i-need-help-signing-up-for-power-bi",
+            "powerbi-issue-the-as-connector-wont-install-or-i-cant-connect-to-data",
+            "powerbi-issue-what-if-my-data-isnt-up-to-date",
+            "powerbi-admin-forgot-your-password",
+            "powerbi-admin-service-health-status",
+            "powerbi-admin-capturing-additional-diagnostic-information-for-power-bi",
+            "powerbi-admin-alternate-email-address-for-power-bi",
+            "powerbi-admin-how-to-use-the-same-account-as-azure",
+            "powerbi-admin-office-365-dedicated-known-issues",
+            "powerbi-admin-troubleshooting-power-bi-personal-gateway",
+            "powerbi-admin-troubleshoot-analysis-service-connector",
+            "powerbi-admin-troubleshoot-unsupported-data-source-for-refresh",
+            "powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases",
+            "powerbi-admin-troubleshoot-excel-workbook-data",
+            "powerbi-refresh-troubleshooting-tile-errors"
           ],
           "numberOfFeaturedArticles": 5
         }
@@ -311,13 +312,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Get started",
           "articles": [
-			      "powerbi-desktop-get-the-desktop",
-			      "powerbi-desktop-getting-started",
-			      "powerbi-desktop-upload-desktop-files",
-			      "powerbi-desktop-help",
-			      "powerbi-desktop-videos",
-			      "powerbi-desktop-pyramid-analytics",
-			      "powerbi-desktop-latest-update"
+            "powerbi-desktop-get-the-desktop",
+            "powerbi-desktop-getting-started",
+            "powerbi-desktop-upload-desktop-files",
+            "powerbi-desktop-help",
+            "powerbi-desktop-videos",
+            "powerbi-desktop-pyramid-analytics",
+            "powerbi-desktop-latest-update"
           ],
           "numberOfFeaturedArticles": 7
         },
@@ -328,7 +329,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-data-sources",
             "powerbi-desktop-analysis-services-tabular-data",
             "powerbi-desktop-import-excel-workbooks",
-			"powerbi-desktop-use-directquery",
+            "powerbi-desktop-use-directquery",
             "powerbi-service-facebook-connector",
             "powerbi-service-google-analytics-connector",
             "powerbi-desktop-project-online-connect-to-data"
@@ -347,17 +348,17 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Model your data",
           "articles": [
-			      "powerbi-desktop-data-view",
-			      "powerbi-desktop-relationship-view",
-			      "powerbi-desktop-create-and-manage-relationships",
-				  "powerbi-desktop-import-and-display-kpis",
-			      "powerbi-desktop-quickstart-learn-dax-basics",
-			      "powerbi-desktop-data-types",
-			      "powerbi-desktop-data-categorization",
-			      "powerbi-desktop-sort-by-column",
-			      "powerbi-desktop-calculated-columns",
-			      "powerbi-desktop-calculated-tables",
-			      "powerbi-desktop-measures"
+            "powerbi-desktop-data-view",
+            "powerbi-desktop-relationship-view",
+            "powerbi-desktop-create-and-manage-relationships",
+            "powerbi-desktop-import-and-display-kpis",
+            "powerbi-desktop-quickstart-learn-dax-basics",
+            "powerbi-desktop-data-types",
+            "powerbi-desktop-data-categorization",
+            "powerbi-desktop-sort-by-column",
+            "powerbi-desktop-calculated-columns",
+            "powerbi-desktop-calculated-tables",
+            "powerbi-desktop-measures"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -373,11 +374,11 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Learn more",
           "articles": [
-			      "powerbi-desktop-tutorial-importing-and-analyzing-data-from-a-web-page",
-			      "powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed",
-			      "powerbi-desktop-tutorial-create-measures",
-			      "powerbi-desktop-tutorial-create-calculated-columns",
-			      "powerbi-desktop-tutorial-facebook-analytics"
+            "powerbi-desktop-tutorial-importing-and-analyzing-data-from-a-web-page",
+            "powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed",
+            "powerbi-desktop-tutorial-create-measures",
+            "powerbi-desktop-tutorial-create-calculated-columns",
+            "powerbi-desktop-tutorial-facebook-analytics"
           ],
           "numberOfFeaturedArticles": 5
         }
@@ -389,18 +390,17 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Get started",
           "articles": [
-			      "powerbi-power-bi-apps-for-mobile-devices",
-			      "powerbi-mobile-ipad-iphone-apps",
-			      "powerbi-mobile-iphone-app-get-started",
-			      "powerbi-mobile-ipad-app-get-started",
-			      "powerbi-mobile-get-the-power-bi-for-android-app",
-			      "powerbi-mobile-android-app-get-started",
-			      "powerbi-mobile-get-the-windows-app",
-			      "powerbi-service-windows-app-get-started",
-				  "powerbi-mobile-create-dashboard",
-			      "powerbi-mobile-whats-new-in-the-mobile-apps"
+            "powerbi-power-bi-apps-for-mobile-devices",
+            "powerbi-mobile-ipad-iphone-apps",
+            "powerbi-mobile-iphone-app-get-started",
+            "powerbi-mobile-ipad-app-get-started",
+            "powerbi-mobile-android-app-get-started",
+            "powerbi-mobile-get-the-windows-app",
+            "powerbi-service-windows-app-get-started",
+            "powerbi-mobile-create-dashboard",
+            "powerbi-mobile-whats-new-in-the-mobile-apps"
           ],
-          "numberOfFeaturedArticles": 10
+          "numberOfFeaturedArticles": 9
         },
         {
           "sectionTitle": "iPad app (Power BI for iOS)",
@@ -421,11 +421,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-mobile-dashboards-in-the-iphone-app",
             "powerbi-mobile-tiles-in-the-iphone-app",
+            "powerbi-mobile-dashboard-smart-order-in-the-iphone-app",
             "powerbi-mobile-favorites-in-the-iphone-app",
             "powerbi-mobile-share-a-dashboard-from-the-iphone-app",
             "powerbi-mobile-set-data-alerts-in-the-iphone-app",
             "powerbi-mobile-groups-in-the-iphone-app-groups",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app",
+            "powerbi-mobile-picture-tiles-in-the-iphone-app",
             "powerbi-mobile-known-issues-with-the-iphone-app"
           ],
           "numberOfFeaturedArticles": 5
@@ -454,6 +456,45 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app"
           ],
           "numberOfFeaturedArticles": 5
+        }
+      ]
+    },
+    {
+      "categoryName": "Power BI Developer",
+      "subSections": [
+        {
+          "sectionTitle": "Get started",
+          "articles": [
+            "powerbi-developer-overview-of-power-bi-rest-api",
+            "powerbi-developer-introduction-to-creating-a-power-bi-app",
+            "powerbi-developer-steps-to-create-a-power-bi-app",
+            "powerbi-developer-create-an-azure-active-directory-tenant",
+            "powerbi-developer-sign-up-for-power-bi-service",
+            "powerbi-developer-register-a-client-app",
+            "powerbi-developer-register-a-web-app",
+            "powerbi-developer-authenticate-to-power-bi-service",
+            "powerbi-developer-power-bi-permissions",
+            "powerbi-developer-authenticate-a-client-app",
+            "powerbi-developer-authenticate-a-web-app",
+            "powerbi-developer-rest-api-reference"
+          ],
+          "numberOfFeaturedArticles": 12
+        },
+        {
+          "sectionTitle": "Integrate a Power BI tile",
+          "articles": [
+            "powerbi-developer-integrate-a-power-bi-tile-into-an-app"
+          ],
+          "numberOfFeaturedArticles": 1
+        },
+        {
+          "sectionTitle": "Create a custom visual",
+          "articles": [
+            "powerbi-custom-visuals-create-for-the-gallery",
+            "powerbi-custom-visuals-getting-started-with-developer-tools",
+            "powerbi-custom-visuals-review-for-security-and-privacy"
+          ],
+          "numberOfFeaturedArticles": 3
         }
       ]
     }

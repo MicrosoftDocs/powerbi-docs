@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="11/17/2015"
    ms.author="asaxton"/>
 
 # Troubleshooting refresh scenarios  
@@ -32,6 +32,11 @@ You may encounter GatewayNotReachable when trying to set credentials for a data 
 
 ## Processing Error: The following system error occurred: Type Mismatch  
 This could be an issue with your M script within your Power BI Desktop file or Excel Workbook.  It could also be due to an out of date Power BI Desktop version.
+
+## Tile refresh errors
+You can use the following article to troubleshoot refresh issues with tiles.
+
+[Troubleshooting tile errors](powerbi-refresh-troubleshooting-refresh-scenarios.md)
 
 ## See Also  
 

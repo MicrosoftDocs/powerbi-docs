@@ -48,7 +48,7 @@ This tutorial uses the Retail Analysis sample. To follow along, sign in to Powe
 
 -   
 
-## See Also
+## See also
 
 [Reports in Power BI](powerbi-service-reports.md)
 

@@ -35,7 +35,7 @@ After you change a report in Power BI, you can save it, save it with a new name,
     ![](media/powerbi-service-save-a-report/savereport3.png)
 
 
-## See Also
+## See also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 

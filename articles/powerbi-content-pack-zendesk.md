@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Zendesk content pack for Power BI"
    description="Zendesk content pack for Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/10/2015"
    ms.author="tpalmer"/>
 # Zendesk content pack for Power BI
 
@@ -34,7 +34,7 @@ Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/z
 
     ![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
 
-4.  Provide the URL associated with your account. This will be in the form [https://company.zendesk.com](http://company.zendesk.com).
+4.  Provide the URL associated with your account. This will be in the form **https://company.zendesk.com**.
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
 
