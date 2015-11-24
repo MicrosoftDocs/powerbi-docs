@@ -31,12 +31,12 @@ Once downloaded, custom visualizations must be imported into a report. Once impo
   **From the Desktop File menu**  
   - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
 
-      ![](media/powerbi-custom-visuals-use/InsertFile.png)
+ ![](media/powerbi-custom-visuals-use/InsertFile.png)
 
   **From the Visualization pane**  
   - In the **Visualizations** pane, choose **Insert (…)**.  
 
-      ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+ ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
 4. **Review the warning**.
 
