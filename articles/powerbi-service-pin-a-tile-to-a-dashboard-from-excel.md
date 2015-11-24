@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Pin a tile to a Power BI dashboard from Excel"
-   description="Pin a tile to a Power BI dashboard from Excel. Pin ranges, charts, tables."
+   description="Pin a tile to a Power BI dashboard from Excel on OneDrive for Business. Pin ranges, charts, tables."
    services="powerbi"
    documentationCenter=""
    authors="mihart"

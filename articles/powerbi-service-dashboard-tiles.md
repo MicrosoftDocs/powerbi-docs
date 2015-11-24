@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Dashboard tiles in Power BI"
-   description="Dashboard tiles in Power BI"
+   description="All about dashboard tiles in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
