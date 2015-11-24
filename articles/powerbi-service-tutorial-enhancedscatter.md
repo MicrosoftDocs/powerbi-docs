@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Tutorial: Enhanced Scatter charts in Power BI
@@ -25,7 +25,7 @@ An Enchanced Scatter chart is similar to a Scatter chart in that it displays the
 
 This tutorial uses the Retail Analysis sample. To follow along, sign in to Power BI and select Get Data \> Samples \> Retail Analysis Sample. 
 
-1. [Download the Enhanced Scatter visualization](xxx) and [add it to the report](xx).
+1. [Download the Enhanced Scatter visualization](powerbi-custom-visuals-download-from-the-gallery.md) and [add it to the report](powerbi-custom-visuals-add-to-report.md).
 
 2. Open the "Retail Analysis Sample" report in Editing View and add a blank page.
 
@@ -42,7 +42,7 @@ This tutorial uses the Retail Analysis sample. To follow along, sign in to Powe
 
  3.  Select Item \> Category to add it to the Legend area. 
 
-    ![](media/powerbi-service-txxx.png)
+    
 
 ## Tips and Tricks for Enhanced Scatter Charts
 
