@@ -64,6 +64,8 @@ Cortana will use this work or school account to check Power BI for potential ans
 
 [Create Cortana *Answer pages* in Power BI](powerbi-service-Cortana-Desktop-entity-cards.md)
 
+[Tips for using Power BI with Cortana](powerbi-service-Cortana-intro.md)
+
 [Q&A in Power BI](powerbi-service-q-and-a.md)
 
 [Power BI basic concepts](powerbi-service-basic-concepts.md)

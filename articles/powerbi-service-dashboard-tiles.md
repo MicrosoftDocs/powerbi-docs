@@ -19,7 +19,7 @@
 
 # Dashboard tiles in Power BI  
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, from a dataset, from another dashboard, from the Q&A box, and from SQL Server Reporting Services (SSRS).  
+A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS).  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
@@ -32,7 +32,9 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 
 -   [Pin a tile to a dashboard from another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 
--   Pin a tile to a dashboard from SSRS
+- [Pin a tile to a dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+
+-   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/en-us/library/mt604784.aspx)
 
 -   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
 

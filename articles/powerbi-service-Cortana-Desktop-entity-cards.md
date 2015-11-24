@@ -79,6 +79,8 @@ Results with high scoring answers (such as a complete match of an Answer Page na
 
 ## See also
 
+[Tips for using Power BI with Cortana](powerbi-service-Cortana-intro.md)
+
 [Using Cortana with Power BI](powerbi-service-Cortana-intro.md)
 
 [Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
