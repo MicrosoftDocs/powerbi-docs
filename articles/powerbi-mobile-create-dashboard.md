@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 # Dashboards for mobile Power BI
 
@@ -23,7 +23,7 @@ You can get all of your Power BI dashboards right on your mobile device – iPho
 To get more dashboards on your mobile device, start from your computer. Open a web browser, sign in to Power BI at [https://www.powerbi.com](https://www.powerbi.com), and follow the instructions for [creating a Power BI dashboard](powerbi-service-create-a-dashboard.md).
 
 
-## See also
+## The Power BI mobile apps
 
 [iPad app for Power BI for iOS](powerbi-mobile-iphone-app-get-started.md).
 

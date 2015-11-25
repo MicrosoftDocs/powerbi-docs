@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Groups in the Power BI for Windows app"
    description="Groups in the Power BI for Windows app"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 # Groups in the Power BI for Windows app
 

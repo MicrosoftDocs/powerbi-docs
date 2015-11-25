@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/24/2015"
    ms.author="maggies"/>
 # Manage your group in Power BI and Office 365
 
@@ -22,14 +22,14 @@ As creator or admin of a group in Power BI or in Office 365, you manage some asp
 
 >NOTE: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
-In Power BI you can:
+**In Power BI** you can:
 
 -   Add or remove a group member, including making a group member an admin.
 -   Edit the group name.
 -   Make it so group members can only read and not edit content in the group.
 -   Delete the group.
 
-In Office 365 you can:
+**In Office 365** you can:
 
 -   Add or remove members, including making a member an admin.
 -   Edit the group name and description.
@@ -47,10 +47,11 @@ In Office 365 you can:
 
     >**NOTE**: You only see **Edit Group** if you’re a group admin.
 
-3.  Add or remove members, rename, or delete the group. 
+3.  Here you can add or remove members, rename, or delete the group. You can also set it so members can view the content in the group, but not edit it. In that case, only admins can edit the group's content.
 
-    ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/PBI_Grps_EditGrp.png)
+    ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/PBI_GrpEdit.png)
 
+4.  Select **Save** or **Cancel**.
 
 ## Edit Power BI group properties in Office 365 
 
