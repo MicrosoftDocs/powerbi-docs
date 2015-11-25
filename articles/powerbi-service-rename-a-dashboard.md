@@ -24,9 +24,9 @@ Right-click the dashboard name and select **Rename**.
 
 ## Having trouble renaming a dashboard?
 
--   If the dashboard has this icon 
+-   If the dashboard has this icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIcon.png)
 
-A sharing icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIcon.png) tells you that the dashboard is being [shared](powerbi-service-share-unshare-dashboard.md)with you or is part of an organizational content pack.  
+    A sharing icon  tells you that the dashboard is being [shared](powerbi-service-share-unshare-dashboard.md) with you or is part of an organizational content pack.  
 
 -   Shared dashboards are read-only and can't be renamed. 
 

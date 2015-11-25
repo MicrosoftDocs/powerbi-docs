@@ -42,6 +42,7 @@ When you open a report that has one or more pages, it [opens in Reading View](po
 
     -   New dashboard: type the name of the new dashboard.
 
+
 3.  Select **Pin**.
 
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.

@@ -49,10 +49,12 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 ## Interact with the Quick Insight Cards
 
 1. Hover over a card and select:
+
   - the pin icon to add the visualization to a dashboard.
+
   - the In-focus icon to display the card fullscreen.
 
-    ![](media/powerbi-service-auto-insights/PBI_hover.png)
+      ![](media/powerbi-service-auto-insights/PBI_hover.png)
 
 2. In fullscreen mode you can [filter](powerbi-service-interact-with-a-report-in-reading-view.md) the visualizations.  To display the filters, in the top right corner, select the arrow.
 

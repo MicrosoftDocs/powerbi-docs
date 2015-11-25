@@ -35,13 +35,13 @@ This tutorial uses the Retail Analysis sample. To follow along, sign in to Powe
 
 4. Create an enhanced scatter chart that displays this year's sales by category.
 
- a. From the Fields pane, select **Item** \> **Category** and drag it to  **Legends**.
+  - From the Fields pane, select **Item** \> **Category** and drag it to  **Legends**.
 
- b.  From the **Sales** table, select **Total Sales Variance %** to add it as the **X Axis**, **This Year Sales** to add it as the **Y Axis**, and **Avg $/Unit TY** and drag it to the **Size** field.
+  - From the **Sales** table, select **Total Sales Variance %** to add it as the **X Axis**, **This Year Sales** to add it as the **Y Axis**, and **Avg $/Unit TY** and drag it to the **Size** field.
 
-    ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterStep1.png)
+      ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterStep1.png)
 
- c.  Select Item \> Category to add it to the Legend area. 
+  - Select Item \> Category to add it to the Legend area. 
 
 
 

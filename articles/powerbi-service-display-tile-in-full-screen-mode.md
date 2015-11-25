@@ -21,7 +21,7 @@
 
 ***In-focus*** mode lets you expand a dashboard tile to full screen and see more detail.  While in In-focus mode, you can view and modify the filters that were applied when this tile visualization was created. In-focus mode is similar to using Pop out for visualizations in reports.
 
->**Note**:Currently, In-focus mode is not available for tiles created from Q&A or for map tiles. 
+>**Note**: Currently, In-focus mode is not available for tiles created from Q&A or for map tiles. 
 
 1.  Hover over the tile and select the In-focus icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
     ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_hoverTile.jpg)
