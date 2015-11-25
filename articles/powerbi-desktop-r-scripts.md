@@ -39,7 +39,7 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 -   Values that are N/A are translated to NULL values in Power BI Desktop
 -   Any R script that runs longer than 30 minutes times out
 -   Interactive calls in the R script, such as waiting for user input, halts the script’s execution
--   When you set your working directory in your R script, you *must* define a full path to the working directory, rather than a relative path. 
+-   When setting the working directory within the R script, you *must* define a full path to the working directory, rather than a relative path 
 
 #### Run your R Script and Import Data
 
