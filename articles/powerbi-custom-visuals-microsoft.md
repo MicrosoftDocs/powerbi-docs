@@ -25,7 +25,7 @@ This article provides a quick overview of the custom visuals submitted by Micros
 
 ## Enhanced Scatter
 
-Enhanced Scatter chart is useful for finding correlations and non-linear relationships between variables. It builds on top of the existing scatter chart and provides advanced options such as displaying shapes or images instead of the standard bubbles.This also includes background image support
+Enhanced Scatter chart is useful for finding correlations and non-linear relationships between variables. It builds on top of the existing scatter chart and provides advanced options such as displaying shapes or images instead of the standard bubbles.This also includes background image support.
 
 For Shape, Image, and Backdrop values, you must use a measure that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this field bucket).
 
@@ -34,12 +34,11 @@ For Shape the allowed values are circle, cross, diamond, square, triangle-up, tr
 Use Backdrop to display an image as the background for the chart. If you are using the Backdrop, then the xmin, xmax, ymin, and ymax fields allow you to align your background image with the x andy coordinates used to plot the data.
 
 
-Here is a screenshot of Enhanced Scatter with Shapes and Images along with basic scatter chart
+Here is a screenshot of Enhanced Scatter with Shapes and Images along with basic scatter chart:
 
+![](media/powerbi-custom-visuals-microsoft/ES.png)
 
-      ![](media/powerbi-custom-visuals-microsoft/ES.png)
-
- [Here](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) is the link to the video
+ [Here](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) is the link to the video.
 
 ## See also
 

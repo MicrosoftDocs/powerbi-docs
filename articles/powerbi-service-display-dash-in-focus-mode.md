@@ -29,24 +29,23 @@ NOTE: Currently, In-focus mode is not available for tiles created from Q&A or fo
 
 2.  The tile opens in full screen view.  Notice that the Y-axis displays with more detail.  The tile also displays the last updated date and time (at the top alongside the tile name) and the data source (bottom left corner).  
 
-  ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocus.jpg)
+    ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocus.jpg)
 
 3.  Expand the Filters pane to see all filters applied to this visual.
 
- ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilters.jpg)
+  ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilters.jpg)
 
 4. Change the filter. Expand Year and change 2014 to 2013.
 
- ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilterChange.jpg)
+  ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilterChange.jpg)
 
 5. It looks like Tina might be a new employee since we have no data for her for January through July of 2013.  
-
-  ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilters2013.jpg)
+    ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilters2013.jpg)
 
 6. Close In-focus mode and return to the dashboard by selecting **Back to Dashboard** (in the top right corner of the tile).
 
 
-## See Also:
+## See also
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 

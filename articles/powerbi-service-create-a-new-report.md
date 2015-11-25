@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 # Create a new Power BI report
 
@@ -63,7 +63,7 @@ This method creates a new report from scratch.
 
 [Create new visualizations](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report)
 
-[Delete visualizations](powerbi-service-delete-a-visualization.md)you don't need
+[Delete visualizations](powerbi-service-delete-a-visualization.md) you don't need
 
 ## See also
 

@@ -60,7 +60,7 @@ If you're hitting issues executing queries against your cluster, verify the app
 You can also allocate additional resources in the Resource Manager:  
 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/ResourceManager.png)
 
-## See Also  
+## See also  
 
 [Get started with Power BI](powerbi-service-get-started.md)  
 

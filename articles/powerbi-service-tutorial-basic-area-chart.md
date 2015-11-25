@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Tutorial: Basic Area chart"
-   description="Tutorial: Basic Area chart"
+   description="Tutorial: Basic Area chart."
    services="powerbi"
    documentationCenter=""
    authors="mihart"

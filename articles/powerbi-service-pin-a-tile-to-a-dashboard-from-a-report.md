@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Pin a tile to a Power BI dashboard from a report"
-   description="Pin a tile to a Power BI dashboard from a report"
+   description="Pin a tile to a Power BI dashboard from a report."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from a report
@@ -41,6 +41,7 @@ When you open a report that has one or more pages, it [opens in Reading View](po
     -   Existing dashboard: select the name of the dashboard from the dropdown.
 
     -   New dashboard: type the name of the new dashboard.
+
 
 3.  Select **Pin**.
 

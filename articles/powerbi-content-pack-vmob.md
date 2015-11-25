@@ -45,7 +45,7 @@ Connect to the [VMob content pack](https://app.powerbi.com/getdata/services/vmob
 
 6.  The import process will begin automatically and Power BI will retrieve your VMob data to create a ready-to-use dashboard and report for you.
 
-	![](media/powerbi-content-pack-vmob/dashboard.png)
+	![](media/powerbi-content-pack-vmob/dashboard2.png)
 
 	You can change this dashboard to display your data the way you want it. Plus you can:
 

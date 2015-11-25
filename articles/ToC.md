@@ -106,6 +106,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-tygraph",
             "powerbi-content-pack-uservoice",
             "powerbi-content-pack-visual-studio-online",
+            "powerbi-content-pack-vmob",
             "powerbi-content-pack-webtrends",
             "powerbi-content-pack-zendesk"
           ],

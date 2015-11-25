@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Power BI webinars"
-   description="Power BI webinars"
+   description="Power BI webinars."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Power BI webinars

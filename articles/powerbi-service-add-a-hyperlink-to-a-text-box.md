@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 # Add a hyperlink to a Text Box in Power BI
 
@@ -38,9 +38,9 @@
 
 5.  Test the link.  
 
-    1.  In the Text Box, select the hyperlink to displaythe URL
+    -  In the Text Box, select the hyperlink to display the URL
 
-    2.  Select the URL to open the page in a new browser window.# Remove a hyperlink from a Text Box
+    -  Select the URL to open the page in a new browser window. 
 
 
 ## To remove the hyperlink but leave the text
