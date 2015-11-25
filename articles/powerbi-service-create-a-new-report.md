@@ -63,7 +63,7 @@ This method creates a new report from scratch.
 
 [Create new visualizations](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report)
 
-[Delete visualizations](powerbi-service-delete-a-visualization.md)you don't need
+[Delete visualizations](powerbi-service-delete-a-visualization.md) you don't need
 
 ## See also
 

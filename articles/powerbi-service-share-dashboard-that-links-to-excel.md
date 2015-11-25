@@ -55,7 +55,7 @@ When you [publish a content pack](powerbi-service-organizational-content-pack-tu
 
 2. Select the dashboard and/or report that is linked to the Excel workbook on OneDrive for Business.
 
-  ![](media/powerbi-service-share-dashboard-that-links-to-excel/PBI_contentpack.png)
+    ![](media/powerbi-service-share-dashboard-that-links-to-excel/PBI_contentpack.png)
 
 3. Select **Go to OneDrive for Business to set workbook permissions**.
 

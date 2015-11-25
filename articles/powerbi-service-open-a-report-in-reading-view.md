@@ -29,6 +29,7 @@ Reading View is a great way to explore the data in a Power BI report, without wo
 	-   From the left navigation pane, select the name of the report, or
 
 	-   From a dashboard, click a tile, that was created from a report, to open the report
+	
 
 2.  The report opens in Reading View.  
 ![](media/powerbi-service-open-a-report-in-reading-view/readingView.png)

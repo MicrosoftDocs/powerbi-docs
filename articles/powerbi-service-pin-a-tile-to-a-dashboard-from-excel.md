@@ -36,7 +36,7 @@
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_pinnedFromExcel.png)
 
-  Open the workbook in Power BI by selecting the report name.
+    Open the workbook in Power BI by selecting the report name.
 
 >**NOTE:**  Changes you make to the workbook in Power BI are not saved and do not affect the original workbook on OneDrive for Business. If you sort, filter, or change values in Power BI, those changes cannot be saved or pinned. To update the workbook, open it in Excel Online by selecting the ellipses and choosing **Edit**. Changes to the workbook may take a few minutes to be updated in the tiles.     
 

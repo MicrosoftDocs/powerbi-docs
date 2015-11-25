@@ -45,6 +45,7 @@ The question box is the easiest way to make a number tile like this.
 6.  Select Pin.
 
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.  
+    
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/pinSuccess.png)
 
 7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.  
