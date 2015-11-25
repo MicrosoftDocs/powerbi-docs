@@ -28,11 +28,13 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
 ![](media/powerbi-service-how-to-use-q-and-a/Q&A-1.png)
 
 1.  Place your cursor in the question box. Even before you start typing, Q&A displays a dropdown with helpful suggestions.
+2.
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_qna_dropdown.jpg)  
 
     This dropdown list contains:  
-    a.  the questions used to create [tiles ](powerbi-service-dashboard-tiles.md)that are already pinned to the dashboard, and  
-    b.  the name of tables in the [underlying dataset(s)](powerbi-service-get-data.md).  
+    - the questions used to create [tiles ](powerbi-service-dashboard-tiles.md)that are already pinned to the dashboard, and  
+
+    - the name of tables in the [underlying dataset(s)](powerbi-service-get-data.md).  
 
 	You can always choose one of these questions as a starting point and continue to refine the question to find the specific answer you are looking for.  Or, use a table name to help you word a new question.
 
@@ -51,6 +53,7 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
 	>So be careful, if you only have one tile from *datasetA *and you remove it from your dashboard, Q&A will no longer have access to *datasetA*.
 
 5.  When you're happy with the result, [pin the visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) by selecting the pin icon in the top right corner.
+
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_finish-typing-question.jpg)
 
 ### Tell Q&A which visualization to use.  
