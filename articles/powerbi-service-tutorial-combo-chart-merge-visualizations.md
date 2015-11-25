@@ -1,6 +1,6 @@
 <properties
    pageTitle="Tutorial: Combo Chart in Power BI"
-   description="Tutorial: Combo Chart in Power BI"
+   description="Tutorial: Combo Chart in Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"

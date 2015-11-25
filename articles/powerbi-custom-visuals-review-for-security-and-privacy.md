@@ -25,7 +25,6 @@ Power BI supports new visualization types through custom visuals. When you open 
 
 Before you enable a custom visual, you should review the custom visual for security and privacy.
 
-## In this article  
 -   [Enable a custom visual](#enable)
 -   [Considerations before you enable a custom visual](#considerations)
 -   [Security best practices for IT Professionals](#security)
@@ -37,6 +36,7 @@ Before you enable a custom visual, you should review the custom visual for secur
 
 ## Considerations before you enable a custom visual  
 <a name="considerations"></a>
+
 >**Warning:**  
 >A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. Here are some considerations to decide whether to enable a custom visual:
 
@@ -46,6 +46,7 @@ Before you enable a custom visual, you should review the custom visual for secur
 
 ## Security best practices for IT Professionals to enable a custom visual  
 <a name="security"></a>
+
 >**Warning:**  
 >A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. There are several best practices you can follow to evaluate a custom visual for security and privacy.
 
@@ -57,8 +58,11 @@ Before you enable a custom visual, you should review the custom visual for secur
 A custom visual uses JavaScript and can therefore contain security or privacy risks. If you receive a custom visual or a pbix file with a custom visual from an unknown source, you may want to look at the JavaScript to see if it is safe.
 
 To evaluate the JavaScript code in a custom visual, extract the custom visual code. Here’s how to extract the code:  
+
 1.  Save the .pbiviz file to a folder.
+
 2.  Rename the file to a .zip file.
+
 3.  Extract the zip file to a local folder.
 
 **Custom visual file contents**  
@@ -81,22 +85,22 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 **JavaScript** or **TypeScript** code could contain security or privacy risks. Here are some best practices and threats to look for.
 
 **Best practices to evaluate JavaScript code**  
-1.  Always evaluate the .js file contents. This is the code that actually runs. It could be that the contents of the .ts file don't compile to the .js file included in the custom visual.  
-2.  Always evaluate the .ts file contents. You can load the .ts file into the **Developer Tools**, export the visual and compare the resulting .js file in the newly create .pbiviz file to the original .js file contained in the visual  
-3.  Check that the icon for the custom visual does not resemble too closely other visuals the user is familiar with.  
-4.  Always evaluate the visual in a test account that has minimal privileges and does not have access to any sensitive data. Ideally the test account would be a local account with no sign-in information to services other than Power BI.
+-  Always evaluate the .js file contents. This is the code that actually runs. It could be that the contents of the .ts file don't compile to the .js file included in the custom visual.  
+-  Always evaluate the .ts file contents. You can load the .ts file into the **Developer Tools**, export the visual and compare the resulting .js file in the newly create .pbiviz file to the original .js file contained in the visual  
+-  Check that the icon for the custom visual does not resemble too closely other visuals the user is familiar with.  
+-  Always evaluate the visual in a test account that has minimal privileges and does not have access to any sensitive data. Ideally the test account would be a local account with no sign-in information to services other than Power BI.
 
 **Threats to look for in JavaScript code**  
-1.  Check network activity when the visual is being used in both edit and view mode. Ensure you're satisfied with the requests that are being made. You should not see requests to resources outside the Power BI domain unless the visual author has communicated this ahead of time.  
-2.  Any data you see leaving the Power BI domain should match your expectations for what 'normal' use would be. For example - if the visual implements a video player that uses an iFrame to view a video from another site, some information should travel in the IFrame requests to render the video correctly. However, if you see the entire data set being sent across the wire, you might investigate further if this is required and desired.  
-3.  Check if personally identifiable data is being sent or stored by the custom visual.  
-4.  Check if the custom visual is trying to access local machine resources such as writing files to disk or accessing cookies.  
-5.  Check if the custom visual has what appears to be obfuscated code or code without a clear purpose.  
-6.  Save copies of each visual you reviewed in the past.  
-7.  If you are reviewing an update to a visual you previously reviewed, ensure to check for changes. Always apply equal rigor to updates as you did the first time you received the visual for review  
-8.  If you find something suspicious or unclear, please reach out to us we're here to help.
+-  Check network activity when the visual is being used in both edit and view mode. Ensure you're satisfied with the requests that are being made. You should not see requests to resources outside the Power BI domain unless the visual author has communicated this ahead of time.  
+-  Any data you see leaving the Power BI domain should match your expectations for what 'normal' use would be. For example - if the visual implements a video player that uses an iFrame to view a video from another site, some information should travel in the IFrame requests to render the video correctly. However, if you see the entire data set being sent across the wire, you might investigate further if this is required and desired.  
+-  Check if personally identifiable data is being sent or stored by the custom visual.  
+-  Check if the custom visual is trying to access local machine resources such as writing files to disk or accessing cookies.  
+-  Check if the custom visual has what appears to be obfuscated code or code without a clear purpose.  
+-  Save copies of each visual you reviewed in the past.  
+-  If you are reviewing an update to a visual you previously reviewed, ensure to check for changes. Always apply equal rigor to updates as you did the first time you received the visual for review  
+-  If you find something suspicious or unclear, please reach out to us we're here to help.
 
-## See also:
+## See also
 
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
 

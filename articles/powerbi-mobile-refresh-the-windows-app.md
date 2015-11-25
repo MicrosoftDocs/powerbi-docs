@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Refresh the Power BI for Windows app"
    description="Refresh the Power BI for Windows app"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 
 # Refresh the Power BI for Windows app  
@@ -29,11 +29,13 @@ The app refreshes with the data in [Power BI](http://powerbi.com), not necessari
 
     On a non-touch screen, tap the ellipsis (**...**) in the lower-right corner of the app.
 
-2.  In the lower-right corner, tap Refresh.  
+2.  In the lower-right corner, tap **Refresh**.  
+
     ![](media/powerbi-mobile-refresh-the-windows-app/PBI_WinAppRefresh.png)
 
->**Important:**  
->-   Each time the app refreshes, whether you started it or it was automatic, the app saves the data in the app cache until the next refresh.   
+>**Important** 
+>
+> -   Each time the app refreshes, whether you started it or it was automatic, the app saves the data in the app cache until the next refresh.   
 >-   When you uninstall or upgrade the app, that clears the cache.
 
 More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).  

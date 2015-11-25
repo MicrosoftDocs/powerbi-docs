@@ -1,6 +1,6 @@
 <properties
    pageTitle="Share (and unshare) a dashboard from Power BI"
-   description="Share (and unshare) a dashboard from Power BI"
+   description="Share, unshare, reshare a dashboard from Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/18/2015"
+   ms.date="11/18/2015"
    ms.author="mihart"/>
 
 # Share (and unshare) a dashboard from Power BI
 
 You can share your dashboards with people in your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
 
-**NOTE**: Dashboards (and their associated reports) that are shared with you are read-only and cannot be saved-as (personalized).  [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md), on the other hand, do allow you to personalize the dashboard and reports. Read [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation. 
+**NOTE**: Dashboards (and their associated reports) that are shared with you are read-only and cannot be saved-as (personalized).  [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md), on the other hand, do allow you to personalize the dashboard and reports. Read [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
 
 1.   Open the dashboard to share and select **Share Dashboard**.
 
@@ -100,6 +100,8 @@ Only the dashboard owner can turn resharing on and off.
 
 
 ## See Also:
+
+[How to share a dashboard that links to an Excel file on OneDrive for Business](powerbi-service-share-dashboard-that-links-to-excel)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 

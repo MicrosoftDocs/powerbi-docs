@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Rename a Power BI dashboard"
-   description="Rename a Power BI dashboard"
+   description="Rename a Power BI dashboard."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
