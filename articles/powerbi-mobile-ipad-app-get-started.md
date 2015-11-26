@@ -52,7 +52,7 @@ Even without signing up or signing in, you can play with the samples. After you 
 
 -   Tap **see our samples**, then pick a role and explore the sample dashboard for that role.  
 
-    ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_Samples.jpg)
+    ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_Samples.png)
 
     >**NOTE**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
 
