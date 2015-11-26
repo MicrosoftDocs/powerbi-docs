@@ -29,7 +29,7 @@ Then you view and interact with reports on the [iPad app for Microsoft Power BI]
 
 -   Or tap a tile on a dashboard, and tap **Open report**.
 
-    >**NOTE**: Not all tiles can open in a report. For example, tiles created from Salesforce  or created with Q&A don't open reports.
+    >**NOTE**: Not all tiles can open in a report. For example, tiles created by asking questions with Q&A don't open reports.
 
 ## See other pages in the report
 
@@ -39,17 +39,17 @@ Then you view and interact with reports on the [iPad app for Microsoft Power BI]
 
 -   Tap a bar or column in a chart.
 
-    ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iOS_RptHiliteCrop2.png)
+    ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_Xflter.png)
 
-    Tapping the Urban column in one chart highlights related values in the other charts. Because the % Unit Market Share YOY chart shows percentages, some highlighted values are larger than the total values and some are smaller. 
+    Tapping the **Raw Materials** column in the lower chart highlights related values in the upper chart.
 
 ## Sort a chart
 
-Tap the chart, then tap the down arrow next to **Sort by** and the field name.
+Tap the chart, tap the ellipsis (**...**) > **Sort by** and tap the field name.
 
-![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_Sort.png)
+![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_Rpt_SortBy.png)
 
-To reverse the sort order, tap **asc** or **desc**.
+To reverse the sort order, tap the **AZ** button.
 
 ## Drill down and up in a chart
 
@@ -57,13 +57,13 @@ Sometimes you can drill down in charts to see the values that make up one part o
 
 >**Note:** Currently, drill-down doesn't work on maps in the iPad.
 
--   Double-tap a bar, column, or other part of a chart to drill into the details for that part — in this case, the **Functional** columns.
+-   Tap a visual. If it has a down arrow in the upper-right corner, then you can drill down. Tap the arrow, then tap a value in the visual &#151; in this case, the **Oct** column.
 
-    ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillDown.png)
+    ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillDownNew.png)
 
--   To drill back up, with the chart selected tap the up arrow in the upper-right corner.
+-   To drill back up, tap the up arrow in the upper-left corner.
 
-    ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillUp.png)
+    ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillUpNew.png)
 
 More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
 
