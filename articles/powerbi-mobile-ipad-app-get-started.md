@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Get started with the iPad app (Power BI for iOS)"
+   pageTitle="Get started with the iPad app"
    description="Get started with the iPad app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/20/2015"
+   ms.date="11/25/2015"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -52,7 +52,7 @@ Even without signing up or signing in, you can play with the samples. After you 
 
 -   Tap **see our samples**, then pick a role and explore the sample dashboard for that role.  
 
-    ![](media/powerbi-mobile-ipad-app-get-started/PBI_SamplesImage.jpg)
+    ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_Samples.png)
 
     >**NOTE**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
 
