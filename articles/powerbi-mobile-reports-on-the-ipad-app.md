@@ -45,9 +45,9 @@ Then you view and interact with reports on the [iPad app for Microsoft Power BI]
 
 ## Sort a chart
 
-Tap the chart, tap the ellipsis (**...**) > **Sort by** and tap the field name.
+-  Tap the chart, tap the ellipsis (**...**) > **Sort by** and tap the field name.
 
-![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_Rpt_SortBy.png)
+    ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_Rpt_SortBy.png)
 
 To reverse the sort order, tap the **AZ** button.
 

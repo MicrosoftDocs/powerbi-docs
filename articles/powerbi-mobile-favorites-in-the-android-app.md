@@ -44,15 +44,15 @@ For easy access to your most interesting data, you can mark specific tiles as fa
       
     ![](media/powerbi-mobile-favorites-in-the-android-app/PBI_And_Home.png)
 
-Your favorites from all your dashboards are on this one page.
+    Your favorites from all your dashboards are on this one page.
 
-![](media/powerbi-mobile-favorites-in-the-android-app/PBI_FavePage2.png)
+    ![](media/powerbi-mobile-favorites-in-the-android-app/PBI_FavePage2.png)
 
 ## Remove favorites
 
 Removing a favorite doesn't remove the tile from the dashboard. It's just no longer on your Favorites page.
 
-1.  On the Favorites page, tap **Edit** in the lower-left corner and clear the stars from the tiles you don't want as favorites.
+1.  On the Favorites page, tap **Edit** in the upper-right corner and clear the stars from the tiles you don't want as favorites.
 
     **Tip** You can also remove a favorite when you're on a dashboard by tapping the dashboard star icon and clearing the star on the tile, or  when you're  looking at a [tile in focus mode](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md) by tapping the star again.
 
