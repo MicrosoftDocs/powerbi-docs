@@ -16,6 +16,7 @@
    ms.workload="powerbi"
    ms.date="10/14/2015"
    ms.author="mihart"/>
+
 # Tutorial: Part I, Add visualizations to a Power BI report
 
 This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](powerbi-service-add-visualizations-to-a-report-ii.md). 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Make your data work well with Q&A in Power BI  

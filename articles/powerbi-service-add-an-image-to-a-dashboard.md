@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Add an image to a dashboard"
-   description="Add an image to a dashboard"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   description="Add an image to a dashboard."
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/25/2015"
    ms.author="mihart"/>
 
 # Add an image to a dashboard
@@ -27,7 +27,7 @@ Say you want your company logo on your dashboard. 
 
 You need:
 
-- Excel 2013. The Power View add-in is only available in Excel 2013.
+- The Power View add-in which is available in Excel 2013 or later. 
 
 - An Excel 2013 workbook that contains data in a table format or in the data model. If it doesn't contain any other data, add at least 2 rows and 2 columns of values -- any values will do. 
 
@@ -41,7 +41,7 @@ If you plan on adding a title and or subtitle, subtract 50 pixels from the heigh
 
 Now you're ready.
 
-1.  In the Excel workbook, add a Power View sheet: **Insert** \> **Power View**.
+1.  In the Excel workbook, add a Power View sheet: **Power View** > **Insert** \> **Power View**.
 
 2.  Don't see Power View on the **Insert** tab? You may need to [turn on the Power View add-in](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-b23d768d-7586-47fe-97bd-89b80967a405?ui=en-US&rs=en-US&ad=US).
 
@@ -80,4 +80,3 @@ Now you're ready.
 13. On the dashboard, drag the lower-right corner to make the tile smaller, and then drag it to the place you want it.
 
 More about [creating Power BI dashboards](powerbi-service-create-a-dashboard.md).
-
