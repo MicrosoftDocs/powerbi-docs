@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Move and resize a visualization in a Power BI report"
+   pageTitle="Move, resize, and pop out a visualization in a Power BI report"
    description="Move and resize a visualization in a Power BI report"
    services="powerbi"
    documentationCenter=""
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 
 # Move and resize a visualization in a Power BI report  
@@ -34,7 +34,11 @@ In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-vie
 
 
 ## See also  
+
 [Resize a visualization on a dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md)
-[Display a dashboard tile in full-screen mode (In-focus)](powerbi-service-display-dash-in-focus-mode.md)  
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
+
+[Display a dashboard tile in full-screen mode (In-focus)](powerbi-service-display-dash-in-focus-mode.md)
+
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

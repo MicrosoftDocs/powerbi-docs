@@ -64,17 +64,15 @@ We'll create a Funnel Chart that shows the number of opportunities we have in ou
 
 These instructions use the Opportunity Tracking Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
 
-1. Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)and select the **SalesStage** \> **Sales Stage** field.  
+1. Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **SalesStage** \> **Sales Stage** field.  
 
-	![](media/powerbi-service-tutorial-funnel-charts/FunnelSelectField.png)
+	![](media/powerbi-service-tutorial-funnel-charts/FunnelSelectField_new.png)
 
-2. [Convert the chart](powerbi-service-change-the-type-of-visualization-in-a-report.md)to a Funnel. Notice that **Sales Stage** is in the **Group** well and **Count of Sales Stage** is in the **Values** well. Power BI created the Value for us, but we're going to use a different one. 
+2. [Convert the chart](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a Funnel. Notice that **Sales Stage** is in the **Group** well. 
 
-	![](media/powerbi-service-tutorial-funnel-charts/FunnelConvertTo.png)
+3. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
 
-3. Remove **Count of Sales Stage**, and, from the **Fields** pane, select **Fact** \> **Opportunity Count**.
-
-	![](media/powerbi-service-tutorial-funnel-charts/funnelFinal.png)
+	![](media/powerbi-service-tutorial-funnel-charts/funnelFinal_new.png)
 
 4. Hovering over a bar displays a wealth of information.
 
@@ -124,7 +122,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 
 2.   Begin typing your question in the Q&A question box.
 
-    ![](media/powerbi-service-tutorial-funnel-charts/funnelFromQnA.png)
+    ![](media/powerbi-service-tutorial-funnel-charts/funnelFromQnA_new.png)
 
     Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
 
