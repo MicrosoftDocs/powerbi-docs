@@ -14,11 +14,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 # Interact with a report in Editing View in Power BI
 
-In report [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) in Power BI, you have lots of flexibility in designing a report. All the [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)functionality is available -- plus lots more.
+In report [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) in Power BI, you have lots of flexibility in designing a report. All the [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) functionality is available -- plus lots more.
 
 
 ### Add a page
@@ -32,7 +32,7 @@ No need to crowd your report pages.  If you need more room, [add a new page](po
 
 ### Add visualizations
 
-[Create visualizations](powerbi-service-visualizations-for-reports.md)on the pages of your report.
+[Create visualizations](powerbi-service-visualizations-for-reports.md) on the pages of your report.
 
 ### Filtering and highlighting in reports
 

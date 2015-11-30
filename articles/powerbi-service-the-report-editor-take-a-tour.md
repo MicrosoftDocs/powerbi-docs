@@ -14,11 +14,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/28/2015"
    ms.author="mihart"/>
 # The report editor...Take a tour
 
-The Power BI report editor is made up of 3 panes:  **Fields**, **Visualizations**, and **Filters**, and the report canvas.  The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering.  And the pane on the right side, Fields, control the underlying data being used in the visualizations. 
+The Power BI report editor is made up of 3 panes:  **Fields**, **Visualizations**, and **Filters**, plus the top navigation bar and the report canvas.  
+
+## The report editor panes
+
+The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering.  And the pane on the right side, Fields, control the underlying data being used in the visualizations. 
 
 The content displayed in the report editor varies by selections you make in the report canvas.  For example, when you select an individual visual, 
 
@@ -27,7 +31,7 @@ The content displayed in the report editor varies by selections you make in the 
 -   the Filters pane displays any filters that have been applied, and
 -   the Fields list identifies tables (and fields if the table is already expanded) in use.
 
-![](media/powerbi-service-the-report-editor-take-a-tour/reportEditor.png)
+![](media/powerbi-service-the-report-editor-take-a-tour/PBI_report_canvas.png)
 
 ## The Visualizations pane (from top to bottom)
 
@@ -58,7 +62,6 @@ Select the paintbrush icon to display customization options. 
 -   [Customizing  visualization title, background and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 -   [Color formatting](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
 -   [Customizing X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
--   Customizing data point labels
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/vizCustomize.png)
 
@@ -88,20 +91,37 @@ The Fields pane displays the tables and fields that exist in your data.  Use th
 
 ### What do the field icons mean?
 
-**∑ Aggregates**
+- **∑ Aggregates**
 
-An aggregate is a numeric value that will be summed or averaged, for example. Aggregates are imported with the data (defined in the data model your report is based on).
+  An aggregate is a numeric value that will be summed or averaged, for example. Aggregates are imported with the data (defined in the data model your report is based on).
 
-For more information, see [Aggregates in Power BI reports](powerbi-service-aggregates-in-reports.md).
+  For more information, see [Aggregates in Power BI reports](powerbi-service-aggregates-in-reports.md).
 
--  **Calculated fields**  
+-  **![](media/powerbi-service-the-report-editor-take-a-tour/PBI_calculated_icon.png) Calculated fields**  
 	Each calculated field has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. 
 
 -  **Unique fields**  
 	Fields with this icon were imported from Excel and are set to show all values, even if they have duplicates. For example your data might have two records for people named 'John Smith', and each will be treated as unique -- they won't be summed.  
 
--  **Geography fields**  
+-  **![](media/powerbi-service-the-report-editor-take-a-tour/PBI_geo_icon.png) Geography fields**  
 	Location fields can be used to create map visualizations. 
+
+## The top navigation bar
+The actions available from the top navigation bar are covered in separate topics:
+
+- [Save the report](powerbi-service-save-a-report.md)
+
+- [Display settings](powerbi-service-change-report-display-settings.md)
+
+- [Switching from Reading View to Editing View]()
+
+- Shapes (coming soon)
+
+- [Refresh](powerbi-refresh-data.md)
+
+- Reload page (coming soon)
+
+- Pin a live page (coming soon)
 
 
 ## Next Steps:
