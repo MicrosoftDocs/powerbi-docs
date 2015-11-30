@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Download the Financial Sample workbook for Power BI"
    description="Download the Financial Sample workbook for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 # Download the Financial Sample workbook for Power BI
 
@@ -30,4 +30,3 @@ We have an Excel workbook of sample financial data available for download.  H
 [Excel data](powerbi-service-excel-data.md)
 
 [Sample datasets](powerbi-sample-datasets.md)
-

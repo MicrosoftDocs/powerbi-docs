@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 # Tutorial: Customize X-axis and Y-axis properties
 
@@ -42,7 +42,7 @@ I’ve signed in to the Power BI service and I’m starting with the **Retail An
 
     After all these customizations, your column chart should look like this:
 
-     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizexaxis.png)
+     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizexaxisnew.png)
 
     >**NOTE**: If the X-axis is string/Boolean, the **Type** option will not display. 
 
@@ -55,7 +55,7 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
 1.  From the Retail Analysis Sample report, select the chart "This Year Sales by FiscalMonth and Name."
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/linechart2.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/linechart2new.png)
 
 2.  Expand the Y-Axis options and ensure that the Y-Axis slider is toggled to **On**.
 
@@ -73,7 +73,7 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
 6.  After all these customizations, your line chart should look like this:
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizeyaxis.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizeyaxisnew.png)
 
     To revert all the Y-axis customization we've done so far, select **Revert To Default**, at the bottom of the **Y-axis** customization pane.
 
@@ -93,7 +93,7 @@ First we'll create a Combo chart that looks at the impact store count has on sal
 
 2. Add **This Year Sales** and **Last Year Sales** to the line chart. The scale of **Store Count** is much smaller than the scale of **Sales** which makes it difficult to compare. The scale is so different that Store Count appears as a flat blue line.     
 
-	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/flatline.png)
+	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/flatlinenew.png)
 
 3. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart. 
 
@@ -101,7 +101,7 @@ First we'll create a Combo chart that looks at the impact store count has on sal
 
 4. Drag **Store Count** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the data sets to be scaled differently; the left measures dollars and the right measures count of stores.
 
-	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/combochart2done.png)
+	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/combochart2donenew.png)
 
   
 ### Format the secondary Y-axis
@@ -114,7 +114,7 @@ First we'll create a Combo chart that looks at the impact store count has on sal
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/combo3.png)
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/yaxisoff.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/yaxisoffnew.png)
 
     Toggle **Show Secondary** to **On**.
 
@@ -131,11 +131,9 @@ With a visualization this complicated, it helps to add axes titles.  Titles hel
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/yaxissettings.png)
 
 3.  Your Combo chart now displays dual axes, both with titles.
-	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/xyaxistitleson.png)
+	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/xyaxistitlesonnew.png)
 
-For more information, see the following article:
-
--   [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md)
+For more information, see [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md).
 
 ## See also
 

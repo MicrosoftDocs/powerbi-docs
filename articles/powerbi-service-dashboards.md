@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/28/2015"
    ms.author="mihart"/>
 # Dashboards in Power BI
 
@@ -49,7 +49,7 @@ Don't need the dashboard any more?  [Delete it](powerbi-service-delete-or-remov
 
 ### Add tiles to a dashboard
 
-[Get data](powerbi-service-get-data.md)and [add tiles](powerbi-service-dashboard-tiles.md)to your dashboard [from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) and [from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md).
+[Get data](powerbi-service-get-data.md) and [add tiles](powerbi-service-dashboard-tiles.md) and [images](powerbi-service-add-an-image-to-a-dashboard.md) to your dashboard  from reports, Q&A, SSRS, Excel, and more.
 
 ### Dashboard size
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 
 # Tutorial: Filled Maps (Choropleths) in Power BI  
@@ -46,7 +46,7 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 >**Note:**  
 >This tutorial uses the classic report canvas.  For more information, see Power BI classic report canvas vs. new report canvas.
 
-1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)from the Sales and Marketing Sample dataset  
+1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) from the Sales and Marketing Sample dataset  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img001.png)
 
 2.  and select the **Geo** \> **State** field.    

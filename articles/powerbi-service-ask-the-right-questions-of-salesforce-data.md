@@ -1,27 +1,29 @@
-﻿<properties 
+﻿<properties
    pageTitle="Ask the right questions of Salesforce data in Power BI"
    description="Ask the right questions of Salesforce data in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Ask the right questions of Salesforce data in Power BI
 
 In this article, we suggest the best questions to ask for [Salesforce data](powerbi-content-pack-salesforce.md) in Power BI, and how to go about asking your own questions.
 
-For Salesforce, Power BI automatically generates a dashboard and a few reports when you connect. These dashboard tiles and report visualizations provide entities you can ask about. Let’s take a look at a report.  
+To see questions suggested by Q&A, select the Q&A question box to see a dropdown list of questions and keywords.
+
+For tips on creating your own questions, review the dashboard and reports that Power BI automatically generates when you connect. These dashboard tiles and report visualizations provide entities you can ask about. Let’s take a look at a report.  
 
 ![](media/powerbi-service-ask-the-right-questions-of-salesforce-data/PBI_QA_PipeSalesRep.png) 
 
@@ -43,7 +45,7 @@ Note: We'll be adding questions for other cloud data sources periodically. Check
 
 ## Questions to ask for Salesforce
 
-For Salesforce data, here’s the best list of questions:
+For Salesforce data, here’s a list of suggested questions:
 
 -   Which account has the highest opportunity
 

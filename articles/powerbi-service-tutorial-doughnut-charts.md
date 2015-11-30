@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/29/2015"
    ms.author="mihart"/>
 
 # Tutorial: Doughnut charts in Power BI
@@ -23,23 +23,23 @@ A  doughnut chart is similar to a pie chart in that it shows the relationship o
 
 ## Create a Doughnut Chart
 
-To follow along, sign in to Power BI and select Get Data \> Samples \> Retail Analysis Sample. 
+To follow along, sign in to Power BI and select **Get Data** \> **Samples** \> **Retail Analysis Sample**. 
 
-1. From the "Retail Analysis Sample" dashboard, select the Total Stores tile to open the "Retail Analysis Sample" report.
+1. From the "Retail Analysis Sample" dashboard, select the **Total Stores** tile to open the "Retail Analysis Sample" report.
 
-2. Select Edit Report to open the report in Editing View.
+2. Select **Edit Report** to open the report in Editing View.
 
 3. Add a new report page.
 
 4. Create a Waterfall chart that displays this year's sales by category.
 
- 1.  From the Fields pane, select Sales \> Last Year Sales.
+ 1.  From the **Fields** pane, select **Sales** \> **Last Year Sales**.
 
  2.  Convert to a Doughnut chart. If Last Year Sales is not in the **Values** area, drag it there.
 
     ![](media/powerbi-service-tutorial-doughnut-charts/convertDonut.png)
 
- 3.  Select Item \> Category to add it to the Legend area. 
+ 3.  Select **Item** \> **Category** to add it to the Legend area. 
 
     ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Sample content packs and datasets for Power BI  
