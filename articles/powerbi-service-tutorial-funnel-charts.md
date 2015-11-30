@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 # Tutorial: Funnel charts in Power BI
 
@@ -84,7 +84,7 @@ These instructions use the Opportunity Tracking Sample. To follow along, [downlo
 
 	-   Stage-to-stage (aka Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
 
-	![](media/powerbi-service-tutorial-funnel-charts/funnelHover.png)
+	![](media/powerbi-service-tutorial-funnel-charts/funnelHover_new.png)
 
 5. [Add the Funnel as a dashboard tile](powerbi-service-dashboard-tiles.md). 
 
