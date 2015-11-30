@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Excel data in Power BI"
-   description="Excel data in Power BI"
+   pageTitle="Import Excel data into Power BI"
+   description="Import Excel data into Power BI"
    services="powerbi"
    documentationCenter=""
    authors="Minewiskan"
@@ -16,11 +16,13 @@
    ms.workload="powerbi"
    ms.date="11/06/2015"
    ms.author="owend"/>
-# Excel data in Power BI
+# Import Excel data into Power BI
 
 You can use any XLSX Excel workbook - Excel 2007, 2010, and 2013 - as a dataset for your Power BI dashboards and reports.
 
-For the best results:
+**Note:** This article describes importing data into a new dataset and Power View sheets into reports. You can also connect to your Excel workbooks (without importing any data or reports) on OneDrive for Business. To learn more, see [Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md).
+
+When importing, for the best results:
 -  Your data should be in table format. To learn more, see [Instructions for formatting Excel data as a table](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US).
 -  Your data should be loaded into the Excel data model. Don't worry if you don't know how to do this, it's not required, but if you want to learn more, see [Create a Data Model in Excel](https://support.office.com/en-us/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b).
 -  Data types for columns are specified (e.g, date, number). To learn more, see [Data types in Excel data models](https://support.office.com/Article/Data-Types-Supported-in-Data-Models-e2388f62-6122-4e2b-bcad-053e3da9ba90) and [Formatting number data types in Excel](https://support.office.com/article/Format-numbers-f27f865b-2dc5-4970-b289-5286be8b994a).
