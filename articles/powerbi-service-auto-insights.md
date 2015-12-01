@@ -61,7 +61,7 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 
 ## See also
 
-[Optimize your data for Power BI Auto Insights](powerbi-service-auto-insights-optimize)
+[Optimize your data for Power BI Auto Insights](powerbi-service-auto-insights-optimize.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
