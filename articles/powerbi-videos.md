@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Power BI Videos"
-   description="Power BI Videos"
+   description="Power BI Videos and link to YouTube channel."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
