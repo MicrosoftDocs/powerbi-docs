@@ -277,7 +277,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-gateway-enterprise",
             "powerbi-gateway-enterprise-manage-sql",
             "powerbi-analysis-services-connector",
-            "powerbi-admin-analysis-services-connector-indepth"
+            "powerbi-admin-analysis-services-connector-indepth",
+            "powerbi-admin-data-management-gateway-in-office-365"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -290,7 +291,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-power-bi-security",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
             "powerbi-admin-migrating-to-the-new-power-bi-experience",
-            "powerbi-admin-data-management-gateway-in-office-365",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-closing-your-account"
           ],
