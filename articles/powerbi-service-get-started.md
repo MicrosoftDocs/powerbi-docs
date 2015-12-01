@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/01/2015"
    ms.author="mihart"/>
 
 # Get started with Power BI
@@ -55,31 +55,32 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
 Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.
 
-1.  Select the dataset image on the dashboard to explore the data you just connected to.
+1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading, right-click the dataset name and select **Explore**.
 
     ![](media/powerbi-service-get-started/gettingstart4.png)
+>NOTE: Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](powerbi-service-auto-insights.md)
 
-2.  In the **Fields** list on the right side of the page, select fields to build a visualization.  Click the checkbox beside **﻿Gross Sales**﻿ and then **﻿Date**﻿.
+2.  In the **Fields** list on the right side of the page, select fields to build a visualization.  Select the checkbox beside **﻿Gross Sales**﻿ and  **﻿Date**﻿.
 
     ![](media/powerbi-service-get-started/fields.png)
 
 3.  Power BI analyzes the data and creates a visual.  If you selected **Date** first, you'll see a table.  If you selected **Gross Sales** first, you'll see a chart. Switch to a different way of displaying your data. Try changing to a line chart by selecting the line chart option.
 
-    ![](media/powerbi-service-get-started/gettingstart5.png)
+    ![](media/powerbi-service-get-started/gettingstart5new.png)
 
 4.  When you have a visualization you want on your dashboard, hover over the visualization and select the **﻿Pin**﻿ icon.  When you pin this visualization, it will be stored on your dashboard so you can track the latest value at a glance.
 
-    ![](media/powerbi-service-get-started/pin.png)
+    ![](media/powerbi-service-get-started/pinnew.png)
 
-5.  Because this is a new report, you need to save it before you can pin a visualization from it to the dashboard, as a tile. Give your report a name (e.g., *Sales Over Time*) and select **Save and Continue**. 
+5.  Because this is a new report, you need to save it before you can pin a visualization from it to the dashboard. Give your report a name (e.g., *Sales Over Time*) and select **Save and Continue**. 
 
-    ![](media/powerbi-service-get-started/PBI_GetStartSaveB4Pin.png)
+    ![](media/powerbi-service-get-started/PBI_GetStartSaveB4Pinnew.png)
 
-    The new report appears in the navigation pane under the Reports heading.
+    The new report appears in the navigation pane under the **Reports** heading.
 
 6.  Pin the tile to an existing dashboard or to a new dashboard. 
 
-    ![](media/powerbi-service-get-started/PBI_GS_PinDialog.png)
+    ![](media/powerbi-service-get-started/PBI_GS_PinDialognew.png)
 
     -   **Existing dashboard**: select the name of the dashboard from the dropdown.
     -   **New dashboard**: type the name of the new dashboard.
@@ -92,9 +93,9 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
 8.  Back on your dashboard, you can see your new visualization. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
 
-    ![](media/powerbi-service-get-started/gsPinFirst2.png)
+    ![](media/powerbi-service-get-started/gsPinFirstnew.png)
 
-    You can click the new tile on your dashboard to return to the report any time.
+    You can select the new tile on your dashboard to return to the report any time.
 
 9.  For a quick exploration of your data, try asking a question in the Q&A box.  For example, try typing "**what segment had the most revenue**".﻿
 
@@ -112,7 +113,7 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
 Ready to try more?  Here are some great ways to explore more of Power BI.
 
--   [Connect to another dataset](https://powerbi.uservoice.com/knowledgebase/articles/434354).
+-   [Connect to another dataset](powerbi-service-get-data.md).
 -   [Share your dashboard](powerbi-service-share-unshare-dashboard.md) with your colleagues.
 -   Read [tips for designing dashboards](powerbi-service-tips-for-designing-a-great-dashboard.md).
 -   View your dashboards with a [Power BI app on a mobile device](powerbi-power-bi-apps-for-mobile-devices.md)
