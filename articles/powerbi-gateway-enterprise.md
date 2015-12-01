@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/1/2015"
+ms.date="12/01/2015"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise (Preview)
 
