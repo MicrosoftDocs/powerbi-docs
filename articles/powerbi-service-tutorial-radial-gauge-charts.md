@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 
 # Tutorial: Radial Gauge charts in Power BI
@@ -41,13 +41,13 @@ Radial Gauges are a great choice to:
 
 These instructions use the Retail Analysis Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**. 
 
-1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)and select the **New Stores** measure.  Measures are identified by the calculator icon ![](media/powerbi-service-tutorial-radial-gauge-charts/measureIcon.png).
+1.  [Open a blank report page](powerbi-service-add-a-page-to-a-report.md).
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_selectMeasure.png)
+2. Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **New Stores** measure.  Measures are identified by the calculator icon ![](media/powerbi-service-tutorial-radial-gauge-charts/measureIcon.png).
+
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_selectMeasure_new.png)
 
 2.  Convert the chart to a Gauge.
-
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/selectGauge.png)
 
     By default, Power BI creates a Gauge chart where the current value is assumed to be halfway between 0 and the target value.  Since I currently have 10 stores, Power BI creates a Gauge chart where the minimum value is 0, the current value is the halfway point, and the maximum value is set to double the current value (20).
 
@@ -55,7 +55,7 @@ These instructions use the Retail Analysis Sample. To follow along, [download t
 
 3.  Select the target value. Drag **New Stores Target** to the **Target Value** well. Power BI adds a needle to represent our target value of 14.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeSetTargetValue.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeSetTargetValue_new.png)
 
 4.  [Add the Gauge chart as a dashboard tile](powerbi-service-dashboard-tiles.md). 
 
@@ -79,19 +79,19 @@ These instructions use the [Financial Sample.](http://go.microsoft.com/fwlink/?L
 
 1.  In the **Fields** pane, select **Gross Sales**.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/GrossSalesValue.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/GrossSalesValue_new.png)
 
 2.  Change the aggregation to **Average**.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/changeToAverage.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/changeToAverage_new.png)
 
-3.  Select the Gauge icon ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeIcon.png) to convert the Column Chart to a Gauge.
+3.  Select the Gauge icon ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeIcon_new.png) to convert the Column Chart to a Gauge.
 
 4.  Drag **COGS** to the **Target Value** well.
 
 5.  Change the aggregation to **Average**.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
 
     By default, Power BI creates a Gauge chart where the current value (in this case, Average of Gross Sales) is assumed to be at the halfway point on the gauge. Since the Average Gross Sales is $180,000, the start value (Minimum) is set to 0 and the end value (Maximum) is set to double the current value.
 
@@ -107,7 +107,7 @@ But what if you want to set your own maximum value?  Let's say that instead of
 
 2.  Change the aggregation to **Maximum**.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/SetMaximum.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/SetMaximum_new.png)
 
     The Gauge is redrawn with a new end value, 1.21 million in gross sales.
 

@@ -1,20 +1,20 @@
-﻿<properties 
-   pageTitle="Power BI Videos" 
-   description="Power BI Videos" 
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+﻿<properties
+   pageTitle="Power BI Videos"
+   description="Power BI Videos"
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 # Power BI Videos
 
@@ -37,4 +37,3 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 [Get started with Power BI](powerbi-service-get-started.md)
 
 ﻿
-
