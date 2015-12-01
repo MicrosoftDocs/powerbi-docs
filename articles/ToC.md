@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/19/2015"
+   ms.date="12/01/2015"
    ms.author="bewillia"/>
 
 <!---
@@ -133,6 +133,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-add-an-image-to-a-dashboard",
             "powerbi-service-create-a-big-number-tile-for-a-dashboard",
             "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
+            "powerbi-service-qr-code-for-tile",
             "powerbi-service-delete-or-remove-a-dashboard"
           ],
           "numberOfFeaturedArticles": 8
@@ -236,7 +237,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-bring-in-whole-excel-files",
             "powerbi-service-publish-from-excel",
             "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
-            "powerbi-personal-gateway",
             "powerbi-reduce-the-size-of-an-excel-workbook",
             "powerbi-service-excel-data",
             "powerbi-service-explore-a-dataset",
@@ -251,7 +251,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-azure-sql-database-with-direct-connect",
             "powerbi-spark-on-hdinsight-with-direct-connect",
             "powerbi-sql-server-analysis-services-tabular-data",
-            "powerbi-analysis-services-connector",
             "powerbi-azure-and-power-bi"
           ],
           "numberOfFeaturedArticles": 5
@@ -272,6 +271,18 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 6
         },
         {
+          "sectionTitle": "Gateways",
+          "articles": [
+            "powerbi-personal-gateway",
+            "powerbi-gateway-enterprise",
+            "powerbi-gateway-enterprise-manage-sql",
+            "powerbi-analysis-services-connector",
+            "powerbi-admin-analysis-services-connector-indepth",
+            "powerbi-admin-data-management-gateway-in-office-365"
+          ],
+          "numberOfFeaturedArticles": 5
+        },
+        {
           "sectionTitle": "Administration",
           "articles": [
             "powerbi-admin-administering-power-bi-in-your-organization",
@@ -280,9 +291,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-power-bi-security",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
             "powerbi-admin-migrating-to-the-new-power-bi-experience",
-            "powerbi-admin-data-management-gateway-in-office-365",
             "powerbi-admin-power-bi-archived-workspace",
-            "powerbi-admin-analysis-services-connector-indepth",
             "powerbi-admin-closing-your-account"
           ],
           "numberOfFeaturedArticles": 6
@@ -295,12 +304,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-issue-the-as-connector-wont-install-or-i-cant-connect-to-data",
             "powerbi-issue-what-if-my-data-isnt-up-to-date",
             "powerbi-admin-forgot-your-password",
-            "powerbi-admin-service-health-status",
             "powerbi-admin-capturing-additional-diagnostic-information-for-power-bi",
             "powerbi-admin-alternate-email-address-for-power-bi",
             "powerbi-admin-how-to-use-the-same-account-as-azure",
             "powerbi-admin-office-365-dedicated-known-issues",
             "powerbi-admin-troubleshooting-power-bi-personal-gateway",
+            "powerbi-gateway-enterprise-tshoot",
             "powerbi-admin-troubleshoot-analysis-service-connector",
             "powerbi-admin-troubleshoot-unsupported-data-source-for-refresh",
             "powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases",
@@ -432,6 +441,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-set-data-alerts-in-the-iphone-app",
             "powerbi-mobile-groups-in-the-iphone-app-groups",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app",
+            "powerbi-mobile-qr-code-for-tile",
             "powerbi-mobile-picture-tiles-in-the-iphone-app",
             "powerbi-mobile-known-issues-with-the-iphone-app"
           ],
@@ -488,7 +498,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Integrate a Power BI tile",
           "articles": [
-            "powerbi-developer-integrate-a-power-bi-tile-into-an-app"
+            "powerbi-developer-integrate-a-power-bi-tile-or-report"
           ],
           "numberOfFeaturedArticles": 1
         },
