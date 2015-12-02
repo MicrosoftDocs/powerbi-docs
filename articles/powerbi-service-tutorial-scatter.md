@@ -23,7 +23,6 @@ A Scatter chart always has two value axes to show one set of numerical data alon
 
 A Bubble chart replaces the data points with bubbles, with the bubble *size* representing an additional dimension of the data.
 
-  ![](media/powerbi-service-tutorial-scatter/x.png)
 
 ## When to use a Scatter chart or Bubble chart
 
