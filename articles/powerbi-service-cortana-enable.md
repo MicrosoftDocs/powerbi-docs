@@ -34,8 +34,6 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 
 3. Select **Datasets** > **Cortana** > **Enable Cortana to access this dataset** > **Apply**.
 
-    ![](media/powerbi-service-cortana-enable/PBI_cortana-enable.jpg)
-
   In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
 
   >**NOTE**: When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
