@@ -41,7 +41,7 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
 3. In the **Visualizations** pane, select the paintbrush icon and choose **Page Size > Cortana**.
 
-  ![](media/powerbi-service-crtana-desktop-entity-cards/PBI-cortana-page-size.png)
+  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size.png)
 
 4. Create a visual or a set of visuals that you want to appear in Cortana in response to a particular question (or set of questions).
 
