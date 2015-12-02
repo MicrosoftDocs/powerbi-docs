@@ -29,7 +29,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
 **NOTE:**  This article describes how to create filters in report **Editing View**.  For more information on filters, see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)and [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
 
-## Add a filter to an entire page (aka Page View filter)
+## Add a filter to a specific visualization (aka visual filter)
 
 ### By filtering the fields already in the chart
 
@@ -47,7 +47,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
 The visualization changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
-## Add a filter to an entire page (aka Page View filter)
+## Add a filter to an entire page (aka page view filter)
 
 1.  Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
@@ -72,7 +72,16 @@ If you save your report with the filter, report readers can interact with the fi
 
 The visualizations on the active page, and on all pages in the report, changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
-##  See also
+##  Troubleshooting
+
+### Why your visual level filter and page level filter may return different results
+
+When you add a visual level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can [change the aggregation type](powerbi-service-change-the-aggregation-in-a-chart.md).  
+
+When you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visualizations which can each utilize different aggregation types.  So the filter is applied on each data row.
+
+
+## See also
 
  [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
 

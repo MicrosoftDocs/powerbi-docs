@@ -120,13 +120,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
             "powerbi-pin-a-tile-from-one-dashboard-to-another",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-excel",
+            "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
             "powerbi-service-edit-a-tile-in-a-dashboard",
             "powerbi-service-tips-for-designing-a-great-dashboard",
             "powerbi-service-auto-insights",
             "powerbi-service-auto-insights-types",
             "powerbi-service-auto-insights-optimize",
             "powerbi-service-share-unshare-dashboard",
-            "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
             "powerbi-service-dash-and-reports-fullscreen",
             "powerbi-service-display-dash-in-focus-mode",
             "powerbi-service-rename-a-dashboard",
@@ -144,6 +144,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-how-to-use-q-and-a",
             "powerbi-service-tutorial-introduction-to-q-and-a",
             "powerbi-service-make-your-data-work-well-with-q-and-a",
+            "powerbi-service-cortana-intro",
+            "powerbi-service-cortana-ask-questions",
+            "powerbi-service-cortana-enable",
             "powerbi-service-q-and-a-create-featured-questions",
             "powerbi-service-ask-the-right-questions-of-salesforce-data",
             "powerbi-service-q-and-a-tips"
@@ -182,7 +185,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-go-from-reading-view-to-editing-view",
             "powerbi-service-interact-with-a-report-in-editing-view",
             "powerbi-service-interact-with-a-report-in-reading-view",
-            "powerbi-service-aggregates-in-reports",
+            "powerbi-service-aggregates",
             "powerbi-service-rename-a-report",
             "powerbi-service-change-report-display-settings",
             "powerbi-service-tutorial-change-report-display-settings",
@@ -225,6 +228,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-tutorial-filled-maps-choropleths",
             "powerbi-service-tutorial-funnel-charts",
             "powerbi-service-tutorial-radial-gauge-charts",
+            "powerbi-service-tutorial-scatter",
             "powerbi-service-tutorial-treemaps",
             "powerbi-service-tutorial-waterfall-charts"
           ],
@@ -381,9 +385,10 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-desktop-report-view",
             "powerbi-desktop-tips-and-tricks-for-creating-reports",
-            "powerbi-custom-visuals-use"
+            "powerbi-custom-visuals-use",
+            "powerbi-service-cortana-desktop-entity-cards"
           ],
-          "numberOfFeaturedArticles": 3
+          "numberOfFeaturedArticles": 4
         },
         {
           "sectionTitle": "Learn more",

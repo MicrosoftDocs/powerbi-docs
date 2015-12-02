@@ -115,7 +115,9 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bubble.png)
 
-**Tip**: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which
+**Tip**: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which order, etc.
+
+For more information, see [Tutorial: Scatter charts in Power BI](powerbi-service-tutorial-scatter.md).
 
 ### Slicers
 
