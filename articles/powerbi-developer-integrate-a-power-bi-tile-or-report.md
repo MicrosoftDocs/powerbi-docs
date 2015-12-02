@@ -47,7 +47,7 @@ Here are the steps to integrate a Power BI tile or report into an app. You can a
 <a name="gettile"/>
 ## Get a Power BI tile
 
-To get a Power BI **tile**, you first need the id of a user’s dashboard. You get a **dashboard** id with the [Get Dashboards](https://msdn.microsoft.com/en-us/library/mt465739.aspx) operation. Once you have a **dashboard** id, you get the **tile** with the [Get Tiles](https://msdn.microsoft.com/en-us/library/mt465741.aspx) operation. For complete source code that shows how to embed a Power BI tile, download the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app) or [Integrate a report into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-report-into-an-app).
+To get a Power BI **tile**, you first need the id of a user’s dashboard. You get a **dashboard** id with the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation. Once you have a **dashboard** id, you get the **tile** with the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation. For complete source code that shows how to embed a Power BI tile, download the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app) or [Integrate a report into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-report-into-an-app).
 
 Here are the steps to get a Power BI **tile**:
 
@@ -57,7 +57,7 @@ To get an Azure AD authentication token, see [Authenticate a web app](powerbi-de
 
 **Step 2 – Get user’s dashboards**
 
-You get the user’s **dashboards** with a GET web request using the following REST Uri. The [Get Dashboards](https://msdn.microsoft.com/en-us/library/mt465739.aspx) operation returns a JSON array of the user’s dashboards which contains an **id** and **displayName**. You use the **dashboard id** in the [Get Tiles](https://msdn.microsoft.com/en-us/library/mt465741.aspx) operation to get the user’s tiles. See **Step 3 – Get user’s tiles**. The operation is as follows:
+You get the user’s **dashboards** with a GET web request using the following REST Uri. The [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation returns a JSON array of the user’s dashboards which contains an **id** and **displayName**. You use the **dashboard id** in the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation to get the user’s tiles. See **Step 3 – Get user’s tiles**. The operation is as follows:
 
 GET REST Uri
 
@@ -119,7 +119,7 @@ Once you have an **embedUrl** for a **tile**, you set the **SRC** attribute of a
 <a name="getreport"/>
 ## Get a Power BI report
 
-To get a Power BI **report**, you need the embedUrl of a user’s report. You get a **report** embedUrl with the [Get Reports](https://msdn.microsoft.com/en-us/library/mt634543.aspx) operation. For complete source code that shows how to embed a Power BI report, download the [Integrate a report into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-report-into-an-app).
+To get a Power BI **report**, you need the embedUrl of a user’s report. You get a **report** embedUrl with the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation. For complete source code that shows how to embed a Power BI report, download the [Integrate a report into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-report-into-an-app).
 
 Here are the steps to get a Power BI **report**:
 
@@ -129,7 +129,7 @@ To get an Azure AD authentication token, see [Authenticate a web app](powerbi-de
 
 **Step 2 – Get user’s reports**
 
-You get the user’s **reports** with a GET web request using the following REST Uri. The [Get Reports](https://msdn.microsoft.com/en-us/library/mt634543.aspx) operation returns a JSON array of the user’s reports which contains an **id**, **name**, and **embedUrl**.. The operation is as follows:
+You get the user’s **reports** with a GET web request using the following REST Uri. The [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation returns a JSON array of the user’s reports which contains an **id**, **name**, and **embedUrl**.. The operation is as follows:
 
 GET REST Uri
 
@@ -177,7 +177,7 @@ iframe.src =  embedTileUrl + "&width=" + width + "&height=" + height;
 
 **Embed Tile URL Parameters**
 
-<table><tr><td><b>**Name**</b></td><td><b>**Description**</b></td><td><b>**REST operation**</b></td></tr><tr><td>dashboardId</td><td>The id of the user’s **dashboard**.</td><td>[Get Dashboards](https://msdn.microsoft.com/en-us/library/mt465739.aspx)</td></tr><tr><td>tileId</td><td>The id of the **tile** to embed. You get an array of **tiles** from a **dashboard** id.</td><td>[Get Tiles](https://msdn.microsoft.com/en-us/library/mt465741.aspx)</td></tr></table>
+<table><tr><td><b>**Name**</b></td><td><b>**Description**</b></td><td><b>**REST operation**</b></td></tr><tr><td>dashboardId</td><td>The id of the user’s **dashboard**.</td><td>[Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx)</td></tr><tr><td>tileId</td><td>The id of the **tile** to embed. You get an array of **tiles** from a **dashboard** id.</td><td>[Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx)</td></tr></table>
 
 Example embedUrl:
 https://app.powerbi.com/embed?dashboardId=302e6400--26968b3ee1e8&tileId=9bbf6732-f0b1--cb2c40c286fd
@@ -319,6 +319,6 @@ The steps in this article generally describe how to use an **IFrame** to embed a
 ## See also
 -	[Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)
 -	[Register a web app](powerbi-developer-register-a-web-app.md)
--	[Azure Active Directory Authentication Libraries](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/).
+-	[Azure Active Directory Authentication Libraries](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/).
 -	[Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md)
--	Power BI REST [Get Dashboards](https://msdnstage.redmond.corp.microsoft.com/en-us/library/mt465739.aspx) and [Get Tiles](https://msdn.microsoft.com/en-us/library/mt465741.aspx) operations
+-	Power BI REST [Get Dashboards](https://msdnstage.redmond.corp.microsoft.com/library/mt465739.aspx) and [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operations

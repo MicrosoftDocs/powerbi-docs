@@ -19,11 +19,11 @@
 
 # Register a web app
 
-This article shows you how to register a Power BI web app in Azure Active Directory (Azure AD). To allow your application access to the Power BI REST API, you need to register your application with **Azure Active Directory**. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources. For a list of Power BI permissions, see [Power BI permissions](Power+BI+permissions.md).
+This article shows you how to register a Power BI web app in Azure Active Directory (Azure AD). To allow your application access to the Power BI REST API, you need to register your application with **Azure Active Directory**. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources. For a list of Power BI permissions, see [Power BI permissions](powerbi-developer-power-bi-permissions.md).
 
-**Important** Before you register a Power BI app you need an [Azure Active Directory and an organizational user](Create+an+Azure+Active+Directory+tenant.md), and a [Power BI service account](Sign+up+for+Power+BI+service.md). 
+**Important** Before you register a Power BI app you need an [Azure Active Directory and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md), and a [Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md).
 
-There are two ways to register your web app: with the Power BI App Registration Tool or on Azure Management Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. However, with this tool, you will need to use Azure Management Portal to manage your app settings.
+There are two ways to register your web app: with the Power BI App Registration Tool or on Azure Management Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to your app, this can be done through the Azure Management Portal.
 
 <a name="webTool"></a>
 ## Register a web app with Power BI App Registration Tool
@@ -31,21 +31,23 @@ You need to register your web app in **Azure Active Directory** to establish an 
 
 Here's how to register your web app with the **Power BI App Registration Tool**:
 
-1.	Go to www.powerbi.com/apps.
-2.	In the Power BI App Registration Tool, follow the four steps.
+1.	Go to dev.powerbi.com/apps.
+2.	In the **Power BI App Registration Tool**, follow these four steps:
+
 **Step 1** - Choose **Login in** to login to your Azure AD account. You will see your name in the Welcome line.
+
 **Step 2** – Enter information about your app.
-**App Name**: The name of your app.
-**App Type**: Choose Native app.
-**Redirect URI**: For a native client app, a redirect uri gives AAD more details on the specific application that it will authenticate. For a native client app, you can use this Uri: https://login.live.com/oauth20_desktop.srf.
-**Home Page**: The home page or sign on page for your web app.
+* **App Name**: The name of your app.
+* **App Type**: Choose Native app.
+* **Redirect URI**: For a web app, a redirect uri gives AAD more details on the specific application that it will authenticate. An example **Redirect URI** looks like this: http://localhost/redirect.
+* **Home Page**: The home page or sign on page for your web app.
 
 ![](media/powerbi-developer-register-a-web-app/register-tool-2.png)
 
-**Step 3** – Choose APIs to access. For more information about Power BI access permissions, see [Power BI Permissions](Power+BI+permissions.md).
- 
+**Step 3** – Choose APIs to access. For more information about Power BI access permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
+
 ![](media/powerbi-developer-register-a-web-app/register-app-tool-3.png)
-  
+
 **Step 4** - To register your app, click **Register App**. After the app is registered in Azure AD, you will get a **Client ID** and **Client Secret** key. Make sure you copy the Client ID and Client Secret key. You can get the Client ID or Client Secret key later in the **Azure Management Portal**. See [How to get a client id in Azure Management Portal](#clientID) and [How to get a client secret key](#clientSecret).
 
 You can now use your Client ID and Client Secret for your app. The next section shows how to register a web app with **Azure Management Portal**.
@@ -54,7 +56,7 @@ You can now use your Client ID and Client Secret for your app. The next section 
 ## Register a web app with Azure Management Portal
 When you register a web app, you receive an **Client ID** and a client secret **Key**. The **Client ID** is used by the application to identify themselves to the users that they are requesting permissions from. The client secret **Key** is used by the web app to securely identify themselves to the **Power BI service**.
 
-To learn how to authenticate a web app using an Azure AD **Client ID** and client secret **Key**, see [Authenticate a web app](Authenticate+a+web+app.md).
+To learn how to authenticate a web app using an Azure AD **Client ID** and client secret **Key**, see [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md).
 
 Here's how to register a client app:
 
@@ -69,7 +71,7 @@ Here's how to register a client app:
 
     ![](media/powerbi-developer-register-a-web-app/register-app-applications.png)
 
-6. Click **ADD**. 
+6. Click **ADD**.
 
     ![](media/powerbi-developer-register-a-web-app/register-app-add.png)
 
@@ -93,11 +95,11 @@ Here's how to register a client app:
 
     ![](media/powerbi-developer-register-a-web-app/register-app-permissions.png)
 
-    **Important** If you do not see **Power BI Service** in the **Permissions to other applications** list, you need to sign up for the [Power BI Service](https://www.powerbi.com/). To sign up for the Power BI Service, you need at least one organizational user in your Azure Active Directory (AAD) tenant. If you do not have an Azure Active Directory (AAD) tenant, see [Setup Azure Active Directory](Setup+Azure+Active+Directory.md) to create an Azure AD tenant and an organizational user in your Azure AD tenant.
-    
+    **Important** If you do not see **Power BI Service** in the **Permissions to other applications** list, you need to sign up for the [Power BI Service](https://www.powerbi.com/). To sign up for the Power BI Service, you need at least one organizational user in your Azure Active Directory (AAD) tenant. If you do not have an Azure Active Directory (AAD) tenant, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) to create an Azure AD tenant and an organizational user in your Azure AD tenant.
+
 14. Click **Complete** icon which is located at the lower right corner of the page.
 15. In the **permissions to other applications** group, dropdown  
-**Delegated Permissions**, and choose which operations your app is permitted to call. For more information about Power BI permissions, see [Power BI Permissions](Power+BI+Permissions.md).
+**Delegated Permissions**, and choose which operations your app is permitted to call. For more information about Power BI permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
 
     ![](media/powerbi-developer-register-a-web-app/register-app-delegated.png)
 
@@ -122,7 +124,7 @@ Here's how to get a client app id:
 7. In the **CONFIGURE** page, copy the **CLIENT ID**.
 
     ![step 1.3](media/powerbi-developer-register-a-web-app/register-app-clientid.png)
-  
+
 <a name="clientSecret"></a>
 ## How to get a client secret
 
@@ -131,4 +133,3 @@ For a web app, you need a client secret **Key**. When you register a web app, Az
 ## Next steps to create a Power BI app
 - [Create your Power BI app](powerbi-developer-introduction-to-creating-a-power-bi-app.md)
 - [Learn how to Authenticate with Azure AD](powerbi-developer-authenticate-to-power-bi-service.md)
-
