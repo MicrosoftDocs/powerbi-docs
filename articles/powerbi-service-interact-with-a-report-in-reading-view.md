@@ -14,25 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2015"
+   ms.date="12/02/2015"
    ms.author="mihart"/>
 
 # Interact with a report in Reading View in Power BI
 
 Reports in Power BI Reading View are very interactive. When you highlight a value in one visualization, it can change the values in the rest of the page. You can filter values on a page, and change the way values are sorted in a visualization. It's a great way to play with and get to know your data.
 
-Reports [shared with you](powerbi-service-share-unshare-dashboard.md)can only be opened in Reading View, not Editing View.
-
-- **Adjust the display dimensions**  
-   Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  If so, you can do the following:
-
- - Fit to Page: scale content to best fit the page
- - Fit to Width: Scale content to the width of the page
- - Actual Size: Display content at full size  
-
-  In Reading View, the display option you select is temporary - it is not saved when you close the report.
-
-  For more information: [Tutorial: Change display settings in a report](powerbi-service-tutorial-change-report-display-settings.md).
+Reports [shared with you](powerbi-service-share-unshare-dashboard.md) can only be opened in Reading View, not Editing View.
 
 
 - **Highlight the related visualizations on a page**.
@@ -75,7 +64,19 @@ Reports [shared with you](powerbi-service-share-unshare-dashboard.md)can only be
 
   ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PoppedOut.jpg)
 
-For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
+  For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
+
+- **Adjust the display dimensions**  
+   Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  If so, you can do the following:
+
+ - Fit to Page: scale content to best fit the page
+ - Fit to Width: Scale content to the width of the page
+ - Actual Size: Display content at full size  
+
+  In Reading View, the display option you select is temporary - it is not saved when you close the report.
+
+  For more information: [Tutorial: Change display settings in a report](powerbi-service-tutorial-change-report-display-settings.md).
+
 
 ## See also
 

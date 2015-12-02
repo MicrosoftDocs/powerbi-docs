@@ -26,7 +26,25 @@ To learn how to add hyperlinks to visualization titles, see xxxx.
 
 ## To create a hyperlink in Power BI
 
-Hyperlinks are created in Excel Power Pivot before the workbook is imported into Power BI.  Hyperlinks in tables cannot be added from Power BI.
+Hyperlinks in tables and matrixes can be created in Power BI Desktop but not from Power BI Service. Hyperlinks can also be created in Excel Power Pivot before the workbook is imported into Power BI. Both methods are described below.
+
+## Create a table or matrix hyperlink in Power BI Desktop
+
+1. If the hyperlink doesn't already exist as a column in your dataset, add it as a [custom column](tation/powerbi-desktop-common-query-tasks.md).
+
+2. Select the column and in the **Modeling** tab choose the dropdown for **Data Category**.
+
+  ![](media/powerbi-service-hyperlinks-in-tables/PBI_data_category.png)
+
+3. Select **Web URL**.
+
+4. Publish and open the report in Power BI Service.
+
+5. Add the new column to a table or matrix.
+
+
+
+## Create a table or matrix hyperlink in Excel Power Pivot
 
 1.  Open the workbook in Excel.
 

@@ -14,15 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="12/02/2015"
    ms.author="mihart"/>
 # Tutorial: Funnel charts in Power BI
 
 A Funnel Chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
 Each funnel stage represents a percentage of the total. So, in most cases, a Funnel Chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
-
->**NOTE**: This tutorial applies to the Power BI service and not to Power BI Desktop.
 
 ![](media/powerbi-service-tutorial-funnel-charts/funnelplain.png)
 

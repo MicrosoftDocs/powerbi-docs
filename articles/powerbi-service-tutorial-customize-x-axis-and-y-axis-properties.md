@@ -95,7 +95,7 @@ First we'll create a Combo chart that looks at the impact store count has on sal
 
 	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/flatlinenew.png)
 
-3. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart. 
+3. To make the visual easier to read and interpret, convert the line chart to a combo chart by selecting the **Line and Stacked Column chart** icon. 
 
 	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/lineandstacked.png)
 
