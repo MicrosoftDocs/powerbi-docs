@@ -144,9 +144,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-how-to-use-q-and-a",
             "powerbi-service-tutorial-introduction-to-q-and-a",
             "powerbi-service-make-your-data-work-well-with-q-and-a",
-            "powerbi-service-Cortana-intro",
-            "powerbi-service-Cortana-ask-questions",
-            "powerbi-service-Cortana-enable",
+            "powerbi-service-cortana-intro",
+            "powerbi-service-cortana-ask-questions",
+            "powerbi-service-cortana-enable",
             "powerbi-service-q-and-a-create-featured-questions",
             "powerbi-service-ask-the-right-questions-of-salesforce-data",
             "powerbi-service-q-and-a-tips"
@@ -386,7 +386,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-report-view",
             "powerbi-desktop-tips-and-tricks-for-creating-reports",
             "powerbi-custom-visuals-use",
-            "powerbi-service-Cortana-Desktop-entity-cards"
+            "powerbi-service-cortana-Desktop-entity-cards"
           ],
           "numberOfFeaturedArticles": 4
         },
