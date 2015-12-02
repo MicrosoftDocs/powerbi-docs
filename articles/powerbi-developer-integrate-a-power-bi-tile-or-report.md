@@ -34,7 +34,7 @@ Here are the steps to integrate a Power BI tile or report into an app. You can a
 ### Steps to create an app that integrates a Power BI tile or report
 
 |**Step**|**See also**
-|:-|:-
+|---|---
 |For a tile, the Power BI user's account must have at least one **dashboard** with at least one **tile** on it.|To sign up for Power BI, see [Sign up for the Power BI service](powerbi-developer-sign-up-for-power-bi-service.md).  <br/><br/>To learn how to get a **tile** in a **dashboard** using the Power BI REST API, see [Get a Power BI tile](#gettile).
 |In an app, get an Azure Active Directory (Azure AD) authentication token.|To learn how to get an Azure AD authentication token, see [Authenticate to Power BI service](powerbi-developer-authenticate-to-power-bi-service.md).
 |For a tile, get the **dashboard** id and **tile** id to embed an **IFrame** tile into an app|To learn how to get a **dashboard** id and **tile** id, see [Get a Power BI tile](#gettile).
@@ -157,9 +157,11 @@ Once you have an **embedUrl** for a **report**, you set the **SRC** attribute of
 
 <a name="embed"/>
 ## Embed a Power BI tile or report into an app
-You embed a Power BI **tile** or **report** into an app with an **IFrame** HTML element. You also need to post a **loadTile** or **loadReport** JSON message from the **IFrame** when it loads. The JSON message is slight different for **loadTile** and **loadReport** as shown below.
+You embed a Power BI **tile** or **report** into an app with an **IFrame** HTML element. You also need to post a **loadTile** or **loadReport** JSON message from the **IFrame** when it loads. The JSON message is slightly different for **loadTile** and **loadReport** as shown below.
+
 **JSON Message for loadTile**
 var m = { action: "loadTile", accessToken: accessToken, height: height, width: width };
+
 **JSON Message for loadReport**
 var m = { action: "loadReport", accessToken: accessToken };
 
@@ -185,7 +187,8 @@ https://app.powerbi.com/embed?dashboardId=302e6400--26968b3ee1e8&tileId=9bbf6732
 **For a report url**
 
 iframe.src =  embedTileUrl
-You can optionally use a filter query string.
+
+You can optionally use a filter query string. Below is an example filter query.
 
 Example embedUrl:
 https://app.powerbi.com/embedReport?reportId=302e6400--26968b3ee1e8&filter=Overview/DayOfWeek eq 'Sunday'
@@ -227,6 +230,7 @@ The POST method (postActionLoadTile) constructs a push message structure that is
         }
 
 Once the user can view a Power BI tile, they can click the tile to navigate to the Power BI dashboard which contains the tile.
+
 **View a Power BI report in an IFrame**
 To view a Power BI **report** in an **IFrame**, you need to pass the **authentication token** you got in **Step 1 – Get an Azure AD authentication token**. You do this by assigning a POST method to the IFrame.onload event as follows:
 
@@ -253,8 +257,6 @@ The POST method (postActionLoadReport) constructs a push message structure that 
             iframe.contentWindow.postMessage(message, "*");;
         }      
 Once the user can view a Power BI report, they can click the tile to navigate to the Power BI dashboard which contains the report.
-
-
 
 <a name="navigate"/>
 ## Navigate from a Power BI tile to a dashboard
