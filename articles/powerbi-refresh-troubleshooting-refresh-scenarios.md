@@ -36,7 +36,7 @@ This could be an issue with your M script within your Power BI Desktop file or E
 ## Tile refresh errors
 You can use the following article to troubleshoot refresh issues with tiles.
 
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-refresh-scenarios.md)
+[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
 
 ## See Also  
 
