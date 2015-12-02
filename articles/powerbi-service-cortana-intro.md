@@ -41,7 +41,7 @@ When a Windows 10 (version 1511 or higher) user adds the account he or she uses 
 
 - Answers from Power BI in Cortana need to be [enabled in Windows 10](powerbi-service-cortana-enable.md).
 
-- If you are a dataset owner, [create Answer Cards designed specifically for Cortana](powerbi-service-cortana-desktop-entity-cards.md).
+- If you are a dataset owner, [create Answer Pages designed specifically for Cortana](powerbi-service-cortana-desktop-entity-cards.md).
 
 ## See also
 [Tips for using Power BI with Cortana](powerbi-service-cortana-intro.md)

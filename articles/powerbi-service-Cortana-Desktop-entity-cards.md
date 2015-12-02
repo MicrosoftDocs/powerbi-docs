@@ -41,19 +41,19 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
 3. In the **Visualizations** pane, select the paintbrush icon and choose **Page Size > Cortana**.
 
-  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size.png)
 
 4. Create a visual or a set of visuals that you want to appear in Cortana in response to a particular question (or set of questions).
 
 5. Ensure that all visuals fit within the page borders.  Optionally, modify display settings, data labels, colors, and backgrounds.  
 
-  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify.png)
 
 4. Name the page and add alternate names.  Cortana uses these names when it searches for results.
 
-  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_cortana_names_new.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_cortana_names_new.png)
 
-5. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.  For example, if you ask Cortana:
+6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.  For example, if you ask Cortana:
 
   - "show sales by store name," this Answer Page will not appear because you did not include any of the items in the required page level filter.
 
@@ -61,7 +61,7 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
   - "show sales for Charlotte Lindseys," this Answer Page will display.
 
-  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
+      ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
 5. Publish the report to powerbi.com.
 
