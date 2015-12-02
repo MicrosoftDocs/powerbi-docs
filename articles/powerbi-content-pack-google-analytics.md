@@ -21,7 +21,7 @@
 
 Connecting to Google Analytics through Power BI starts by connecting to your Google Analytics account. You will get a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. You can use the dashboard and reports provided, or customize them to highlight the information you care most about. The data will be refreshed automatically once per day.
 
-Connect to the [Google Analytics content pack](https://app.powerbi.com/getdata/services/google-analytics)for Power BI.
+Connect to the [Google Analytics content pack](https://app.powerbi.com/getdata/services/google-analytics) for Power BI.
 
 In addition to this content pack, customized dashboards and reports can also be created starting from the Google Analytics content pack in Power BI Desktop. Just connect with your Google Analytics account and navigate to the View that you’re interested in. Once created, you can upload the content and tailor your dashboards accordingly.
 
@@ -64,6 +64,8 @@ If you're getting the message, "We couldn't import data from Google Analytics", 
 **Important:** Parameters are case-sensitive. Enter them exactly as they appear in your Google Analytics account.
 
 ![](media/powerbi-content-pack-google-analytics/PBI_GoogleAnalytics1.png)
+
+If you're getting an error indicating your credentials are invalid however you were able to sign into Google, please confirm you have a [Google Analytics](https://www.google.com/analytics/) account.
 
 Still having issues? Open a support ticket to reach the Power BI team:
 
