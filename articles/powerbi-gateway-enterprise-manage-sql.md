@@ -23,6 +23,8 @@ Once you have installed the Power BI Gateway - Enterprise (Preview), you will ne
 
 To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698863) and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
+> NOTE: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+
 ## Delete a gateway
 
 Deleting a gateway will also delete any data sources under that gateway.  This will also break any dashboards and reports that rely on those data sources.
