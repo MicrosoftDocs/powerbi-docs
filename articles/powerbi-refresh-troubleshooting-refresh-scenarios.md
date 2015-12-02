@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2015"
+   ms.date="12/02/2015"
    ms.author="asaxton"/>
 
 # Troubleshooting refresh scenarios  
@@ -43,3 +43,7 @@ You can use the following article to troubleshoot refresh issues with tiles.
 [Data Refresh](powerbi-refresh-data.md)  
 
 [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)  
+
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+
+[Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
