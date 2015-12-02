@@ -32,7 +32,11 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 
 2. In the upper right corner, select the cog icon and choose **Settings**.
 
+    ![](media/powerbi-service-cortana-enable/PBI_cortana_settings.png)
+
 3. Select **Datasets** > **Cortana** > **Enable Cortana to access this dataset** > **Apply**.
+
+    ![](media/powerbi-service-cortana-enable/PBI_cortana-enable.jpg)
 
   In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
 
@@ -61,7 +65,7 @@ Cortana will use this work or school account to check Power BI for potential ans
 
 [Create Cortana *Answer pages* in Power BI](powerbi-service-cortana-desktop-entity-cards.md)
 
-[Tips for using Power BI with Cortana](powerbi-service-Cortana-intro.md)
+[Tips for using Power BI with Cortana](powerbi-service-cortana-ask-questions.md)
 
 [Q&A in Power BI](powerbi-service-q-and-a.md)
 
