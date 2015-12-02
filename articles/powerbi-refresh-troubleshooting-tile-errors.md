@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="11/17/2015"
+ms.date="12/02/2015"
 ms.author="asaxton"/>
 # Troubleshooting tile errors
 
