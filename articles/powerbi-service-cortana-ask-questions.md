@@ -33,7 +33,7 @@ Any Power BI user can use Cortana to ask questions about their Power BI datasets
 
 2. Cortana looks for answers in the Power BI reports and datasets available to you, and displays them under the heading **Power BI** and marked with the Power BI icon.
 
-3. Power BI first looks for answers in [Answer Pages]([powerbi-service-cortana-desktop-entity-cards.md]) and then searches your datasets and reports for other answers and displays them in the form of visualizations.  The highest-scoring results display first as *best matches*, followed by links to other possible answers and applications. Best matches come from Power BI Answer Pages or Power BI reports.
+3. Power BI first looks for answers in [Answer Pages](powerbi-service-cortana-desktop-entity-cards.md) and then searches your datasets and reports for other answers and displays them in the form of visualizations.  The highest-scoring results display first as *best matches*, followed by links to other possible answers and applications. Best matches come from Power BI Answer Pages or Power BI reports.
   >NOTE: If you speak your question, Cortana will only display **Power BI** answers if it finds a best match.  
 
 4. To open an answer in Power BI, select the link.
