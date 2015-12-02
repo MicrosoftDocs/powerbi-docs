@@ -44,7 +44,7 @@ When a Windows 10 (version 1511 or higher) user adds the account he or she uses 
 - If you are a dataset owner, [create Answer Pages designed specifically for Cortana](powerbi-service-cortana-desktop-entity-cards.md).
 
 ## See also
-[Tips for using Power BI with Cortana](powerbi-service-cortana-intro.md)
+[Tips for using Power BI with Cortana](powerbi-service-cortana-ask-questions.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
