@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Azure Mobile Engagement content pack for Power BI"
    description="Azure Mobile Engagement content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggiesMSFT" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="maggiesMSFT"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -20,7 +20,7 @@
 
 The Power BI Azure Mobile Engagement content pack allows to you quickly gain insights into your app data.
 
-Connect to the [Azure Mobile Engagement content pack](https://app.powerbi.com/groups/me/getdata/services/azme)for Power BI.
+Connect to the [Azure Mobile Engagement content pack](https://app.powerbi.com/groups/me/getdata/services/azme) for Power BI.
 
 After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
 
@@ -51,4 +51,3 @@ After you have created the connection, you can explore your data and customize t
 	![](media/powerbi-content-pack-azure-mobile/Dashboard.png)
 
  
-
