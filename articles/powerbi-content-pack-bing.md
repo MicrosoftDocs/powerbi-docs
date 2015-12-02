@@ -31,7 +31,6 @@ Notes:
 
 - Tiles from the Bing content pack do not render in the mobile applications, we’re working to resolve this issue
 
-
 Connect to the [Bing content pack](https://app.powerbi.com/groups/me/getdata/services/bing) for Power BI.
 
 
