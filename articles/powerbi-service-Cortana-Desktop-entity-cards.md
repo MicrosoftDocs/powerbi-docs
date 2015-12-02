@@ -25,7 +25,7 @@ And, if the report has a filter, Cortana will understand questions that specify 
 
 ## Before you begin
 
-Before you can begin creating custom Answer Pages for Cortana, [enable Cortana for Power BI](powerbi-service-Cortana-enable.md).  
+Before you can begin creating custom Answer Pages for Cortana, [enable Cortana for Power BI](powerbi-service-cortana-enable.md).  
 
 ## Create an Answer Page for Cortana
 An *Answer Page* in a report is sized specifically for Cortana so that Cortana can show it as an answer to a question.  To create an Answer Page for Cortana:
@@ -41,17 +41,17 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
 3. In the **Visualizations** pane, select the paintbrush icon and choose **Page Size > Cortana**.
 
-  ![](media/powerbi-service-Cortana-Desktop-entity-cards/PBI-cortana-page-size.png)
+  ![](media/powerbi-service-crtana-desktop-entity-cards/PBI-cortana-page-size.png)
 
 4. Create a visual or a set of visuals that you want to appear in Cortana in response to a particular question (or set of questions).
 
 5. Ensure that all visuals fit within the page borders.  Optionally, modify display settings, data labels, colors, and backgrounds.  
 
-  ![](media/powerbi-service-Cortana-Desktop-entity-cards/PBI_Cortana_modify.png)
+  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify.png)
 
 4. Name the page and add alternate names.  Cortana uses these names when it searches for results.
 
-  ![](media/powerbi-service-Cortana-Desktop-entity-cards/PBI_cortana_names_new.png)
+  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_cortana_names_new.png)
 
 5. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.  For example, if you ask Cortana:
 
@@ -61,11 +61,11 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
   - "show sales for Charlotte Lindseys," this Answer Page will display.
 
-  ![](media/powerbi-service-Cortana-Desktop-entity-cards/PBI-cortana-single-selection.png)
+  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
 5. Publish the report to powerbi.com.
 
-6. [Enable the dataset for Cortana](powerbi-service-Cortana-enable.md).
+6. [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 Now, asking question including the name of a Cortana sized page will return results from Cortana.
 
@@ -78,8 +78,8 @@ Results with high scoring answers (such as a complete match of a specified page 
 
 ## See also
 
-[Tips for using Power BI with Cortana](powerbi-service-Cortana-intro.md)
+[Tips for using Power BI with Cortana](powerbi-service-cortana-intro.md)
 
-[Using Cortana with Power BI](powerbi-service-Cortana-intro.md)
+[Using Cortana with Power BI](powerbi-service-cortana-intro.md)
 
 [Get started with Power BI Desktop](powerbi-desktop-getting-started.md)

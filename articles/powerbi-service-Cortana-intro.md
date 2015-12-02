@@ -37,14 +37,14 @@ When a Windows 10 (version 1511 or higher) user adds the account he or she uses 
 
 ## How do I get started?
 
-- Cortana looks for answers in Power BI datasets that you have access to. If you are a dataset owner, [enable Cortana to access the dataset (and its reports)](powerbi-service-Cortana-enable.md).  
+- Cortana looks for answers in Power BI datasets that you have access to. If you are a dataset owner, [enable Cortana to access the dataset (and its reports)](powerbi-service-cortana-enable.md).  
 
-- Answers from Power BI in Cortana need to be [enabled in Windows 10](powerbi-service-Cortana-enable.md).
+- Answers from Power BI in Cortana need to be [enabled in Windows 10](powerbi-service-cortana-enable.md).
 
-- If you are a dataset owner, [create Answer Cards designed specifically for Cortana](powerbi-service-Cortana-Desktop-entity-cards.md).
+- If you are a dataset owner, [create Answer Cards designed specifically for Cortana](powerbi-service-cortana-desktop-entity-cards.md).
 
 ## See also
-[Tips for using Power BI with Cortana](powerbi-service-Cortana-intro.md)
+[Tips for using Power BI with Cortana](powerbi-service-cortana-intro.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
