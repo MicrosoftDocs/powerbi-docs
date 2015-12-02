@@ -65,7 +65,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 
 [Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)
 
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-refresh-scenarios.md) 
+[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
 
 [Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
