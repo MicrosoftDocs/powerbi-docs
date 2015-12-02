@@ -60,7 +60,7 @@ To learn how to authenticate a web app using an Azure AD **Client ID** and clien
 
 Here's how to register a client app:
 
-1. Accept the [Microsoft Power BI API Terms](https://powerbi.microsoft.com/en-us/api-terms).
+1. Accept the [Microsoft Power BI API Terms](https://powerbi.microsoft.com/api-terms).
 2. Sign into your Microsoft Azure subscription at https://manage.windowsazure.com.
 3. In the left service panel, choose **ACTIVE DIRECTORY**.
 4. Click any active directory.
