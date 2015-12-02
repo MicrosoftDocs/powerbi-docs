@@ -64,6 +64,8 @@ There’s really not much to installing a gateway. You’ll select a location to
 
 ![](media/powerbi-gateway-enterprise/egw-setup2.png)
 
+> NOTE: The enterprise and personal gateways can be installed on the same machine.
+
 <a name="configure"/>
 ## Configure the gateway
 After you install the gateway, it will prompt you to sign in to Power BI.  
@@ -82,6 +84,8 @@ Selecting **Configure** will register the gateway with the Power BI Service for 
 ## Manage the Power BI Gateway - Enterprise (Preview)
 
 You can manage the gateway by going to the Power BI service and selecting the gear icon ![](media/powerbi-gateway-enterprise/pbi_gearicon.png) in the upper-right corner > **Manage gateways**. From here you can delete gateways that you are an administrator for. 
+
+> NOTE: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
 
 ![](media/powerbi-gateway-enterprise/egw-managegateways.png)
 
