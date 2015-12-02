@@ -22,10 +22,15 @@ The Bing content pack will allow you to view analytics around Internet search ac
 
 
 Notes:
+
 - Bing tiles will automatically update approximately every ~5 minutes
+
 - The only tile that can be selected is the News tile, which will take you to the corresponding news article
+
 - The tiles can be pinned to any other dashboard using the pin icon on hover
+
 - Tiles from the Bing content pack do not render in the mobile applications, we’re working to resolve this issue
+
 
 Connect to the [Bing content pack](https://app.powerbi.com/groups/me/getdata/services/bing) for Power BI.
 
