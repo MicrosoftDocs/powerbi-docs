@@ -134,11 +134,11 @@ When your Gateway is up and running, you can click SCHEDULE REFRESH for a datase
 
 This page shows:
 
-1.  Refresh status – Shows refresh success and next scheduled refresh time.
+1. Refresh status – Shows refresh success and next scheduled refresh time.
 
-2.  **Gateway** - Shows whether or not a Gateway is installed and online. If a Gateway is installed but not online, Manage Data Sources and Schedule Refresh settings are disabled.
+2. **Gateway** - Shows whether or not a Gateway is installed and online. If a Gateway is installed but not online, Manage Data Sources and Schedule Refresh settings are disabled.
 
-3.  **Manage Data Sources** - Shows data sources the dataset connects to. You can Sign in or change the authentication type. You’ll only need to Sign in to each data source once.
+3. **Manage Data Sources** - Shows data sources the dataset connects to. You can Sign in or change the authentication type. You’ll only need to Sign in to each data source once.
 
 4. **Schedule Refresh** – You can configure a refresh schedule settings here. If the Gateway isn’t online, these settings will be disabled.
 
