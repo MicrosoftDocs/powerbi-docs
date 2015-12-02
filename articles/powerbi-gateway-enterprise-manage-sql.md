@@ -1,5 +1,5 @@
 <properties
-pageTitle="Manage your enterprise gateway (Preview) - SQL"
+pageTitle="Manage your enterprise data source - SQL"
 description="How to manage the enterprise gateway and data sources that belong to that gateway."
 services="powerbi"
 documentationCenter=""
@@ -15,7 +15,7 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="12/01/2015"
 ms.author="asaxton"/>
-# Manage your Power BI Gateway - Enterprise (Preview) for SQL Server
+# Manage your enterprise data source - SQL Server
 
 Once you have installed the Power BI Gateway - Enterprise (Preview), you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
 
@@ -45,7 +45,9 @@ You can then select the **Data Source Type** from the list. Currently, only SQL 
 
 You will then want to fill in the information for the data source which includes the **Server** and the **Database**.  
 
-You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use SQL Authentication instead of Windows Authentication.
+You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use SQL Authentication instead of Windows Authentication. Then enter the credentials that will be used for this data source.
+
+> NOTE: All queries to the data source will run using these credentials. [Learn more](powerbi-gateway-enterprise.md#credentials)
 
 ![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings3.png)
 

@@ -21,7 +21,7 @@ The Power BI Gateway - Enterprise (Preview) enables IT departments to deploy and
 
 With the enterprise gateway, IT can centrally manage the set of users who have access to the underlying data sources. IT departments can gain visibility into gateway usage, such as most commonly accessed data sources, and the users accessing them.
 
-This gateway is only available with a [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md) subscription. While you can install this gateway on any machine, it is intended to be installed on a server within your organization.  It installs and runs as a windows service.
+Anyone can install or manage an enterprise gateway. However, to view content that makes use of the gateway is only available with a [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md) subscription. While you can install this gateway on any machine, it is intended to be installed on a server within your organization.  It installs and runs as a windows service.
 
 Data transfer between the Power BI service and the gateway is secured through [Azure Service Bus](https://azure.microsoft.com/en-us/documentation/services/service-bus/). The Service Bus creates a secure channel between the Power BI service and your computer.  Because the gateway starts this secure connection, there’s usually no need to open a port in your firewall because it is an outbound connection.
 
@@ -30,6 +30,8 @@ Before we go into details about the enterprise gateway, let’s look at some ter
 A *dataset* is data uploaded into the Power BI service from an online or on-premises data source. You create a dataset when you use Get Data to connect to and upload data. Datasets appear in the left navigation pane. When you create reports and pin tiles to your dashboards, you’re looking at data from your datasets.
 
 A *data source* is where the data actually comes from. It can be just about anything; a database, Excel worksheet, Web service, etc. With Excel workbooks, you can create a simple worksheet with rows of data, and that is considered a data source. You can also use Power Query or Power Pivot in Excel to connect to and query data from both online and on-premises data sources, all in the same workbook. With Power BI Desktop, you use Get Data to connect to and query data from both online and on-premises data sources.
+
+The *gateway* is different from a *data source*. The gateway is more of the proxy between on-premises and the cloud. When you configure a data source for a gateway, you are providing the connection information that the gateway will use to connect to the data source.  An example of a data source would be a SQL Server deployed in your on-premises environment.
 
 *DirectQuery* always gets the latest data using the credentials that were setup for the Data Source by the Gateway Admin.
 
@@ -89,6 +91,11 @@ You can review the information you supplied during install. You can also add a d
 
 [Learn more](powerbi-gateway-enterprise-manage-sql.md) about managing your gateway for SQL Server.
 
+<a name="credentials">
+## Storing encrypted credentials in the cloud
+
+When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using asymmetric encryption so that they cannot be decrypted in the cloud, before they are stored in the cloud. The credentials are sent to the machine, running the gateway, on-premises where they are decrypted when the data sources are accessed.
+
 ## Service account
 The gateway is configured to use *NT SERVICE\PBIEgwService* for the windows service log on credential. By default, it has the right of *Log on as a service*.
 
@@ -100,6 +107,6 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 
 ## See also
 
-[Manage the Power BI Gateway – Enterprise (Preview) for SQL Server](powerbi-gateway-enterprise-manage-sql.md)
+[Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
 [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
