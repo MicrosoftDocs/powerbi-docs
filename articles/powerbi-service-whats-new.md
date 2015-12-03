@@ -37,8 +37,6 @@ Check this page for known issues and recently-released features in Power BI.
 
 * New Developer-focused enhancements: [Two new APIs and easier app  registration](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
-* Close your power bi account
-
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx)
 
 **November 24, 2015**
