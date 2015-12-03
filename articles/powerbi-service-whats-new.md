@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/4/2015"
+   ms.date="12/04/2015"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
