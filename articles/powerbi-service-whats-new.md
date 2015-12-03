@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/09/2015"
+   ms.date="12/4/2015"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
@@ -22,6 +22,25 @@
 Check this page for known issues and recently-released features in Power BI.
 
 ## Recent updates  
+
+**November 24, 2015**
+
+*   Pin Excel ranges to dashboards
+
+*   Chromeless full screen mode for dashboards and reports
+
+*   Know where your data is stored
+
+* Improved loading of on-premises reports
+
+* Share dashboards directly to another user's workspace
+
+* Improved Google Analytics connector experience
+
+* Close your power bi account
+
+For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx)
+
 
 **November 18, 2015**
 
