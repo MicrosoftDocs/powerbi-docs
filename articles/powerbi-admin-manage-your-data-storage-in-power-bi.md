@@ -16,7 +16,7 @@
    ms.workload="powerbi"
    ms.date="12/04/2015"
    ms.author="asaxton"/>
-# Manage your data storage in Power BI
+# Manage your data capacity in Power BI
 
 Power BI offers two licenses, Power BI (free) and Power BI Pro, with different data capacity limits:
 
