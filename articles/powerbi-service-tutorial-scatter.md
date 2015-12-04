@@ -84,22 +84,29 @@ We now have a Scatter chart that plots Total Sales Variance % along the Y axis, 
 
 ### **Your Scatter chart has only one data point**  
 
-- Have you added a field to the **Details** or **Legend** area?
+Does your scatter chart have only one data point that aggregates all the values on the X and Y axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
 
-- Numeric fields marked with the **∑** icon are aggregated in some way (e.g., summed, averaged). Are one or both of the chart fields being aggregated?  
+![](media/articles/powerbi-service-tutorial-scatter/PBI_scatter_tshoot1.png)
 
-There are several ways to do this:
+  Here are things you can try:
 
-  1. Change the aggregation setting for the field.
+  1. Change the aggregation setting for one or both of the fields.
 
-  2. Add a field to the **Details** area to tell Power BI how to group the values.
+  2. Add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot.  
+  
+    * Like a simple row number or ID field:
+    
+       ![](media/articles/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
+    
+    * Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:  
 
-  3. Use an ID field, if you have one.
+      ![](media/articles/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
 
-  4. Add an ID field. Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
+    Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
 
-  For more information, see [Change the aggregation in a chart](powerbi-service-change-the-aggregation-in-a-chart) and [Aggregates in reports](powerbi-service-aggregates-in-reports.md).
+  For more information, see [Aggregates in reports](powerbi-service-aggregates-in-reports.md).
 
+ 
 
 ## See also  
  [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
