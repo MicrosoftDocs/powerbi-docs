@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="12/04/2015"
    ms.author="mihart"/>
 
 
@@ -50,7 +50,7 @@ Detects upward or downward trends in time series data.
 ### Seasonality in time series
 Finds periodic patterns in time series data, such as weekly, monthly, or yearly seasonality.
 
-![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_seasonality.png)
+![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_seasonality_new.png)
 
 ### Steady share
 Highlights cases where there is a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable.
@@ -66,9 +66,6 @@ Detects cases where multiple measures show a correlation between each other when
 Highlights when there are significant changes in trends in a time series of data.
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_changepoint.png)
-
-### Low variance (coming soon)
-Discovers cases where all values of a measure for a given category are very close to each other when plotted against another dimension.
 
 ## See also
 
