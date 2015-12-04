@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Dashboards in the Windows 10 phone app for Power BI"
+   pageTitle="Dashboards in the Windows 10 phone app"
    description="Dashboards in the Windows 10 phone app for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="12/03/2015"
    ms.author="maggies"/>
 
 # Dashboards in the Windows 10 phone app for Power BI  
@@ -30,11 +30,9 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
     Need to [download the Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
 
-2.  From the home page, swipe right to see your dashboards. 
-  
     <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_And_Home.png)-->
 
-3.  Tap a dashboard to open it.   
+2.  Tap a dashboard to open it.   
 
     <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_DashHomeDemoCrop.png)-->
 
@@ -42,19 +40,17 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
     <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_DemDash.png)-->
 
-    >**Tip:**  You can also tap the ellipsis (**...**) to invite a colleague or see information about the dashboard.
+    >**Tip:**  You can also press and hold on a dashboard on the dashboards home page to invite a colleague or pin the dashboard to your Windows Start screen.
 
     <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_DashEllipsMenu.png)-->
 
-5.  Swipe to see all the tiles in the dashboard. While here, you can:
+5.  In the dashboard, you can:
 
     -   [Tap a tile](powerbi-mobile-dashboards-in-the-win10phone-app.md) to open and interact with it.
 
-    -   Tap the **Invite** icon <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIconNew.png)--> in the upper-right corner to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) with a colleague.
+    -   Tap the **Invite** icon <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIconNew.png)--> in the lower-right corner to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) with a colleague.
 
-    -   Tap the **i** icon <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_iIcon.png)--> for information about the dashboard.
-
-6.  To go back to the dashboards home page, tap the back arrow <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_BackArrow.png)--> in the upper bar.
+6.  To go back to the dashboards home page, tap the phone back button.
 
 ### See also  
 [Download the Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  

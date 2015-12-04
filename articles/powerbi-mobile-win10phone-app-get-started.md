@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="12/03/2015"
    ms.author="maggies"/>
 # Get started with the Power BI for Windows 10 phone app
 
@@ -28,11 +28,11 @@ Bring your own data together and create dashboards and reports on the [Power BI
 
 ## First things first
 
--   **Get the app**  [Get the Power BI for Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store.
+-   [**Get the Power BI for Windows 10 phone app**](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store.
 
-    >**Note:** Your phone needs to be running at least Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
+    >**Note:** Your phone needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
 
--   **Start with samples**    Even without signing up or signing in, after you download the app you can view the samples. Or go back to the samples whenever you want from the dashboards home page.
+-   **Start with samples**    Even without signing up or signing in, after you download the app you can view the samples. Or go back to the samples whenever you want from the side pane navigation menu ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_NavIcon30.png).
 
 ## Sign up for the Power BI service on the web
 
@@ -44,7 +44,7 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/)
 
 2.  On your Windows 10 phone, from the start screen open the Power BI app.
 
-    <!--![](media/powerbi-mobile-win10phone-app-get-started/PBI_Andr_StartIconSm.png)-->
+    ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_AppIconSm.png)
 
 3.  In the Power BI app, tap **Sign in** to view your dashboards. Sign in with the same credentials as your Power BI account on the web.
 

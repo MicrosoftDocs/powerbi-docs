@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Share a dashboard from the Windows 10 phone app for Power BI"
+   pageTitle="Share a dashboard from the Windows 10 phone app"
    description="Share a dashboard from the Windows 10 phone app for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="12/03/2015"
    ms.author="maggies"/>
 # Share a dashboard from the Windows 10 phone app for Power BI
 
@@ -22,9 +22,9 @@ Invite colleagues to view your dashboards by sharing links from the [Windows 10
 
 ## Share a dashboard
 
-1.  In the upper-right corner of a dashboard, tap the Invite icon <!--![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Andr_InviteIcon.png)-->.
+1.  In the bottom-right corner of a dashboard, tap the Invite icon ![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Andr_InviteIcon.png).
 
-    Or, on the dashboards home page, tap the ellipsis (...) and tap **Invite a colleague**.
+    Or, on the dashboards home page, press and hold, and tap **Invite**.
 
     <!--![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Andr_DashEllipsMenu.png)-->
 
@@ -32,30 +32,19 @@ Invite colleagues to view your dashboards by sharing links from the [Windows 10
 
     -   **Pending**: They haven't yet accepted the invitation to view the dashboard.
 
-    -   **Can View**: They have viewed the dashboard but can't share it.
+    -   **Read only**: They have viewed the dashboard but can't share it.
 
-    -   **Can View & Invite**: They have viewed the dashboard and can share it with other colleagues.
+    -   **Read and reshare**: They have viewed the dashboard and can share it with other colleagues.
 
 2.  Type email addresses, and a message to accompany your dashboard invitation. Otherwise Power BI sends a default message.
 
 3.  To allow resharing, leave **Allow recipients to share your dashboard** selected.
 
-    >**Note**:  Resharing allows your coworkers to forward the email invitation to others in your organization, either through the browser or the mobile apps.
+    >**Note**:  Resharing allows your coworkers to share this dashboard with others in your organization, either through the browser or the mobile apps.
 
-4.  Tap **Done**, then tap the paper airplane icon <!--![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Andr_SendPlane.png)--> in the upper-right corner to send the mail.
+4.  Tap **Send**.
 
-    Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it in a browser or in one of the mobile apps, it's added to their Power BI account.
-
-## Unshare a dashboard
-
-You can only unshare a dashboard if you're the dashboard owner.
-
-1.  In the upper-right corner of your dashboard, tap the Invite icon <!--![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Andr_InviteIcon.png)-->. 
-
-    You see the list of colleagues with whom you've shared this dashboard.
-
-2.   To stop sharing the dashboard with a colleague, tap the **X** next to a name \> **Remove**.
-
+    The dashboard is automatically added to your colleagues' Power BI account, and they get an email invitation with a direct link to the dashboard.
 
 
 ## Notes about sharing dashboards

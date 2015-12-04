@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Groups in the Windows 10 phone app for Power BI"
+   pageTitle="Groups in the Windows 10 phone app"
    description="Groups in the Windows 10 phone app for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="12/03/2015"
    ms.author="maggies"/>
 
 # Groups in the Windows 10 phone app for Power BI  
