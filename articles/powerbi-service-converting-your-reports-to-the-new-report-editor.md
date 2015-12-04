@@ -41,15 +41,9 @@ Some visuals aren't supported and will show up as grey boxes in the new reportin
 
 Some other report features aren't supported in the new reporting canvas. The visualization may still display in the new canvas, but these specific features and functions will not work:
 
--   **KPIs** - these are the red/amber/green status indicators that measure progress against a metric. You'd only have these if you'd uploaded an Excel workbook with the KPIs in a Power Pivot model.
-
 -   **Hierarchies** - these organize your data in levels. You'd only have these if you'd uploaded an Excel workbook with a Power Pivot model.
 
--   **Drill** - this feature let you navigate up and down through a visual.
-
--   **Images from your model** - you could show images from your model in slicers and in tables. You'd only have these if you'd uploaded an Excel workbook with images in a Power Pivot model and a Power View worksheet.
-
--   **Drag-and-drop creation of Combo charts** - you won't be able to create them using this method nor separate them using the shake method.
+-   **Images from your model** - you could show images from your model in slicers and in tables. You'd only have these if you'd uploaded an Excel workbook with images in a Power Pivot model and a Power View worksheet. Images are still supported if you’re using a URL to reference them rather than storing them in your model.
 
 ## Converting your reports  
 When you open a report that doesn't contain any of the unsupported features above, we'll automatically convert your report and show you the new report experience. You'll get a notification that you're seeing the new version:
