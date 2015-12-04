@@ -36,7 +36,7 @@ Included in your data capacity are your own datasets and Excel reports, and thos
 
 -   Reporting Services on-premises visualizations pinned to a Power BI dashboard.
 
--   Image data uploaded via the Power BI REST API.
+-   Uploaded images.
 
 <a name="manage"/>
 ## Manage your own account
