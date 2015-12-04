@@ -1,6 +1,6 @@
 ﻿<properties 
-   pageTitle="Manage your data storage in Power BI"
-   description="Manage your data storage in Power BI"
+   pageTitle="Manage your data capacity in Power BI"
+   description="Manage your data capacity and storage in Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -18,13 +18,13 @@
    ms.author="asaxton"/>
 # Manage your data storage in Power BI
 
-Power BI offers two licenses – free and Pro – with different data capacity limits:
+Power BI offers two licenses, Power BI (free) and Power BI Pro, with different data capacity limits:
 
--   Free customers have a maximum 1 GB data capacity.
+-   Free users have a maximum 1 GB data capacity.
 
--   Pro customers of Power BI Pro have 10 GB maximum capacity.
+-   Pro users of Power BI Pro have 10 GB maximum capacity.
 
--   Pro customers can create groups, with a maximum 10 GB data capacity each.
+-   Pro users can create groups, with a maximum 10 GB data capacity each.
 
 At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and groups in the tenant. 
 
@@ -32,14 +32,14 @@ Read about other features of the [Power BI pricing model](https://powerbi.micros
 
 Included in your data capacity are your own datasets and Excel reports, and those that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to, including Power BI Desktop files and Excel workbooks you’re using. The following are also included in your data capacity.
 
--   Excel range pinned to dashboard.
+-   Excel ranges pinned to dashboard.
 
 -   Reporting Services on-premises visualizations pinned to a Power BI dashboard.
 
 -   Uploaded images.
 
 <a name="manage"/>
-## Manage your own account
+## Manage items owned by you
 
 See how much data capacity you’re using in your Power BI account, and manage your account.
 
