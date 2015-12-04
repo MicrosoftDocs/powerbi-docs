@@ -86,7 +86,7 @@ We now have a Scatter chart that plots Total Sales Variance % along the Y axis, 
 
 Does your scatter chart have only one data point that aggregates all the values on the X and Y axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
 
-![](media/articles/powerbi-service-tutorial-scatter/PBI_scatter_tshoot1.png)
+![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot1.png)
 
   Here are things you can try:
 
@@ -96,11 +96,11 @@ Does your scatter chart have only one data point that aggregates all the values 
   
     * Like a simple row number or ID field:
     
-       ![](media/articles/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
+       ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
     
     * Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:  
 
-      ![](media/articles/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
+      ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
 
     Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
 
