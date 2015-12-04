@@ -25,7 +25,7 @@ Check this page for known issues and recently-released features in Power BI.
 
 **December 3, 2015**
 
-*  Automatically discover trends and uncover patterns in a dataset with Quick Insights:[video]](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) [article](powerbi-service-auto-insights)
+*  Automatically discover trends and uncover patterns in a dataset with Quick Insights:[video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) [article](powerbi-service-auto-insights)
 
 * [Visualize your VMob data in Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 
