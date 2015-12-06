@@ -1,6 +1,6 @@
 ﻿<properties 
-   pageTitle="Manage your data storage in Power BI"
-   description="Manage your data storage in Power BI"
+   pageTitle="Manage your data capacity in Power BI"
+   description="Manage your data capacity and storage in Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -14,27 +14,34 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/04/2015"
    ms.author="asaxton"/>
-# Manage your data storage in Power BI
+# Manage your data capacity in Power BI
 
-Power BI offers two licenses – free and Pro – with different storage limits:
+Power BI offers two licenses, Power BI (free) and Power BI Pro, with different data capacity limits:
 
--   Free customers have a maximum 1 GB data storage.
+-   Free users have a maximum 1 GB data capacity.
 
--   Pro customers of Power BI Pro have 10 GB maximum storage.
+-   Pro users of Power BI Pro have 10 GB maximum capacity.
 
--   Pro customers can create groups, with a maximum 10 GB storage each.
+-   Pro users can create groups, with a maximum 10 GB data capacity each.
 
 At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and groups in the tenant. 
 
 Read about other features of the [Power BI pricing model](https://powerbi.microsoft.com/pricing).
 
-Included in your storage limit are your own datasets and Excel reports, and those that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to, including Excel workbooks you’re using as datasets. Reports are the Excel files you uploaded as intact Excel workbooks. Power BI reports and dashboards don’t take up any storage space. 
+Included in your data capacity are your own datasets and Excel reports, and those that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to, including Power BI Desktop files and Excel workbooks you’re using. The following are also included in your data capacity.
 
-## Manage your own account storage
+-   Excel ranges pinned to dashboard.
 
-See how much data you’re storing in your Power BI account, and manage your account.
+-   Reporting Services on-premises visualizations pinned to a Power BI dashboard.
+
+-   Uploaded images.
+
+<a name="manage"/>
+## Manage items owned by you
+
+See how much data capacity you’re using in your Power BI account, and manage your account.
 
 1.  To manage your own storage, go to **My Workspace** at the top of the left navigation pane. 
 
@@ -56,7 +63,7 @@ See how much data you’re storing in your Power BI account, and manage your acc
 
 Keep in mind that you or someone else may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
 
-## Manage your group account storage
+## Manage your group
 
 1.  Select the arrow next to **My Workspace** \> select the name of the group.
 
@@ -78,3 +85,28 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 
 Keep in mind that you or someone else in the group may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
 
+## Dataset limits
+
+There is a 250 MB limit per dataset that is imported into Power BI. [Learn more](https://technet.microsoft.com/library/mt282164.aspx)
+
+## What happens when you hit a limit
+
+When you hit the data capacity limit of what you can do, you will see prompts within the service. 
+
+When you select the gear icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png), you will see a red bar indicating you are over your data capacity limit.
+
+![](media/powerbi-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
+
+You will also see this indicated within **Manage personal storage**.
+
+ ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
+ 
+ When you try to perform an action that will hit one of the limits, you will see a prompt indicating you are over the limit. For free users, you will have an opportunity to try Pro. Both free and pro users will be able to [manage](#manage) their storage.
+ 
+ **Free dialog**
+ 
+ ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/powerbi-free-over-limit.png)
+ 
+ **Pro dialog** 
+ 
+ ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
