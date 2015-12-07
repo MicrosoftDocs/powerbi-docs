@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Third-party service: Google Analytics connector for Power BI Desktop"
    description="Third-party service: Google Analytics connector for Power BI Desktop"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="12/05/2015"
    ms.author="davidi"/>
 
 # Third-party service: Google Analytics connector for Power BI Desktop  

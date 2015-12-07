@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Getting started with color formatting and axis properties"
    description="Getting started with color formatting and axis properties"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="12/05/2015"
    ms.author="davidi"/>
 
 # Getting started with color formatting and axis properties  
