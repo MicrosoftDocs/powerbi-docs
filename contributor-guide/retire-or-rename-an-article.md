@@ -42,7 +42,7 @@ Check the FWLink tool for any FWLinks that might point to the article. Point any
 
 ## Step 4: Create a redirect for the retired page, if appropriate
 
-1. Send mail to mblythe with the URL that you are renaming or retiring and the URL to which it should redirect. He will submit links to engineering on Fridays so that engineering can put 301 redirects in place.
+Send mail to mblythe with the URL that you are renaming or retiring and the URL to which it should redirect. He will submit links to engineering on Fridays so that engineering can put 301 redirects in place.
 
 ## Step 5: Retire the article
 
