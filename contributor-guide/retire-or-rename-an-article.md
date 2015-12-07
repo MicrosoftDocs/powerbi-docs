@@ -38,7 +38,7 @@ Determine if there are any non-Microsoft inbound links to your content. Frequent
 
 ## Step 3: Update the FWLink tool
 
-Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed. More info - [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Manage%20inbound%20links%20to%20retired%20topics.aspx).
+Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed.
 
 ## Step 4: Create a redirect for the retired page, if appropriate
 
