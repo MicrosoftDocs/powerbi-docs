@@ -23,7 +23,7 @@
 
 2.  From the top control bar, select the **Duplicate this page** icon.
 
-    ![](media/powerbi-service-copy-and-paste-a-visualization/PBI_duplicate_new.png)
+    ![](media/powerbi-service-copy-and-paste-a-report/PBI_duplicate_new.png)
 
     Your new page is created and becomes the active page.
 
