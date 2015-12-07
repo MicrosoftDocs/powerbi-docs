@@ -32,7 +32,8 @@ When connecting to a SAP HANA database, specify the server name and the port in 
 In this preview release **SAP HANA** in [DirectQuery](use-directquery.md) mode is only supported in Power BI Desktop, and you cannot publish or upload reports that use **SAP HANA** in DirectQuery mode to the Power BI service. When not using **SAP HANA** in DirectQuery mode, you *can* publish and upload reports that use **SAP HANA**.
 
 ### Supported features for SAP HANA
-This preview release has many capabilities for **SAP HANA**:
+This preview release has many capabilities for **SAP HANA**, as shown in the following list.
+
 -   The Power BI connector for **SAP HANA** uses the SAP ODBC driver, to provide the best use experience
 -   **SAP HANA** supports both DirectQuery and Import options
 -   Power BI supports HANA information models ( such as Analytic and Calc views) and has optimized navigation
@@ -41,7 +42,8 @@ This preview release has many capabilities for **SAP HANA**:
 -   Power BI supports **SAP HANA** Variables and Input parameters
 
 ### Limitations of SAP HANA  
-There are also a few limitations to using the preview version of **SAP HANA**:  
+There are also a few limitations to using the preview version of **SAP HANA**, shown below.
+
 -   NVARCHAR strings are truncated to maximum length of 4000 Unicode characters
 -   SMALLDECIMAL is not supported
 -   VARBINARY is not supported
@@ -51,6 +53,7 @@ There are also a few limitations to using the preview version of **SAP HANA**:
 -   If strings have leading spaces, the leading spaces are not shown in Power BI reports
 
 In addition, this release of **SAP HANA** in Power BI Desktop does not support the following:
+
 -   Hierarchies
 -   display folders
 -   KPI trends
