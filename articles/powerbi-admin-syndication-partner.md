@@ -19,7 +19,7 @@ ms.author="asaxton"/>
 
 Office 365 allows for a syndication model which allows companies to resell Office 365 bundled and integrate the office suite with their own solutions, providing end-customers with a single bill for services.
 
-When you purchase Office 365 through a syndicated partner, your experience, to add additional subscriptions, will be different. **Subscriptions** will not be available within the Office 365 Admin Center. You will only see **Licenses** under **Billing**.
+When you purchase Office 365 through a syndicated partner, you will not be able to add subscriptions through the Office 365 Admin Portal. **Subscriptions** will not be available under **Billing**.
 
 ![](media/powerbi-admin-syndication-partner/billing.png)
 
