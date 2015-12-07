@@ -14,18 +14,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/03/2015"
+   ms.date="12/06/2015"
    ms.author="mihart"/>
 
 # Converting your reports to the new report editor  
 
 If you participated in the Power BI Preview, you may notice that our report editor has been updated. [Take a tour of the new report editor](powerbi-service-the-report-editor-take-a-tour.md).
 
-You have a choice...you can continue to work in the classic reporting canvas or upgrade your reports for the new canvas.  The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, etc... We've made some changes to the look and feel of some visuals in your report, and we think you'll be happy with them.  
+The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, etc... We've made some changes to the look and feel of some visuals in your report, and we think you'll be happy with them.  
 
 You can try out the new reporting canvas without losing or overwriting your classic reports.  But once you save the report in the new reporting canvas, you can't go back.  
 
-The new canvas is great, but your old reports and visualizations may not transition perfectly.  For example, there may be features in your classic reports that either aren't currently supported in this new report canvas or that can't be automatically migrated.
+The new canvas is great, but your old reports and visualizations may not transition perfectly.  For example, there may be features in your classic reports that either aren't currently supported in the new report canvas or that can't be automatically migrated.
 
 >**Note:**  
 >Our plan is to eventually add all of these features back into Power BI and the new reporting canvas.  Your feedback will help us prioritize which to reintroduce first.
