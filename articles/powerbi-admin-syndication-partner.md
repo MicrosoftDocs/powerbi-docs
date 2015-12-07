@@ -25,7 +25,7 @@ When you purchase Office 365 through a syndicated partner, your experience, to a
 
 Some syndication models do not allow a customer to buy from a different channel or partner. This means that you would need to purchase the Power BI Pro subscription directly from the syndication partner that you purchased Office 365 from. They may not have Power BI Pro as part of their offering though.
 
-You have two options, to get Power BI, for the syndicated purchase.
+You have two options, to get Power BI, for a syndicated purchase.
 
 [Power BI (free)](#free)
 
