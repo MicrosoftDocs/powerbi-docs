@@ -14,10 +14,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2015"
+   ms.date="12/07/2015"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## November 2015
+
+Read the [November 2015 Power BI mobile blog post](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
+
+### All Power BI mobile apps
+
+- A new welcome experience.
+- Improved chart data capacity.
+
+### iPhone mobile app
+
+- [Add a picture tile to a dashboard](powerbi-mobile-picture-tiles-in-the-iphone-app.md) directly from your iPhone.
+- [Create QR codes in the Power BI service](powerbi-service-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
+
+### The Power BI app for Windows devices
+
+- [Link directly from a tile to a specific URL](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink).
+
 
 ## October 2015
 
