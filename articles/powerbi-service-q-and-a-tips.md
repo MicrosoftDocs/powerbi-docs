@@ -33,19 +33,19 @@ These are just some of the words and terms that Q&A automatically recognizes.
 
 * **Equality keywords**:  between, more than, less than, equal
 
-* **Names**: If a column in the dataset contains the phrase ""name"" (e.g., EmployeeName), Q&A understands the values in that column are names and you can ask questions like ""which employees are named robert.""
+* **Names**: If a column in the dataset contains the phrase "name" (e.g., EmployeeName), Q&A understands the values in that column are names and you can ask questions like "which employees are named robert."
 
-* **Plurals**: for example, both ""opportunity"" and ""opportunities"".
+* **Plurals**: for example, both "opportunity" and "opportunities".
 
-* **Possessives**: ""what is the total of Jaine's orders""
+* **Possessives**: "what is the total of Jaine's orders"
 
-* **Relationship**: datasets have tables and within tables are columns. Most columns will be related to their containing table with a simple phrasing like â€œhosts have flagsâ€ as well as ""flags have hosts."" These relationships can be described using words such as: have and of.
+* **Relationship**: datasets have tables and within tables are columns. Most columns will be related to their containing table with a simple phrasing like "hosts have flags" as well as "flags have hosts." These relationships can be described using words such as: have and of.
 
 * **Sort order**: descending, ascending, alphabetical order, sort
 
-* **Tenses**: for example, both ""buy"" and ""bought""
+* **Tenses**: for example, both buy" and "bought"
 
-* **Type of visualization**: specify the visualization to use, ""show sales by year as a clustered bar chart.""
+* **Type of visualization**: specify the visualization to use, "show sales by year as a clustered bar chart."
 
 >**NOTE**: If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A results for your customers.
 
@@ -72,7 +72,7 @@ Q&A displays the name of the dataset(s) that was used to produce the currently-d
 
 When typing natural language queries with Q&A, there are some visualization types that you can specify in the query.  For example:
 
-""sales by state as a treemap""
+"sales by state as a treemap"
 
 ## Question templates
 When you have a workbook prepared for Q&A, you are on your way to start asking questions. Here's a sample of the types of questions you can ask:
