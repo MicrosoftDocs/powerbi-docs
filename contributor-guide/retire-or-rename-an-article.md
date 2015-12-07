@@ -44,11 +44,15 @@ Check the FWLink tool for any FWLinks that might point to the article. Point any
 
 Send mail to mblythe by 4pm on Thursdays - with the URL that you are renaming or retiring and the URL to which it should redirect. He will submit links to engineering on Fridays so that engineering can put 301 redirects in place.
 
-## Step 5: Retire the article
+## Step 5: Update the TOC
+
+Remove the TOC entry for the article. If the article was in the "featured" set, make sure the featured articles number is still appropriate.
+
+## Step 6: Retire the article
 
 After you've completed the three prior steps and those changes are live, then you can delete the article from the repository.
 
-## Step 6: Remove cached pages from search engines
+## Step 7: Remove cached pages from search engines
 
 Go to these web pages to remove cached web pages from search engines:
 [Bing](https://www.bing.com/webmaster/tools/content-removal?rflid=1) and
