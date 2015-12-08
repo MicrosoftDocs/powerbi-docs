@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/01/2015"
+   ms.date="12/01/2015"
    ms.author="derrickv"/>
 
 # Register a client app
@@ -42,9 +42,10 @@ Here's how to register your client app with the Power BI App Registration Tool:
 **Step 1** - Choose **Login in** to login to your Azure AD account. You will see your name in the Welcome line.
 
 **Step 2** – Enter information about your app.
-* **App Name**: The name of your app.
-* **App Type**: Choose Native app.
-* **Redirect URI**: For a native client app, a redirect uri gives AAD more details on the specific application that it will authenticate. Any valid Uri will work such as https://login.live.com/oauth20_desktop.srf.
+
+  * **App Name**: The name of your app.
+  * **App Type**: Choose Native app.
+  * **Redirect URI**: For a native client app, a redirect uri gives AAD more details on the specific application that it will authenticate. Any valid Uri will work such as https://login.live.com/oauth20_desktop.srf.
 
 **Step 3** – Choose APIs to access. For more information about Power BI access permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
 
