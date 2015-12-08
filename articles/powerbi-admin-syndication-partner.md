@@ -27,11 +27,10 @@ Some syndication models do not allow a customer to buy from a different channel 
 
 You have two options, to get Power BI, for a syndicated purchase.
 
-[Power BI (free)](#free)
+[Power BI (free)](#power-bi-free)
 
-[Power BI Pro](#pro)
+[Power BI Pro](#power-bi-pro)
 
-<a name="free"/>
 ## Power BI (free)
 
 If you are happy with the free offering for Power BI, you can sign up for the free service. By default, individual sign-ups, also known as ad-hoc subscriptions, are disabled for the syndication model. When you try to sign up for Power BI, you will see a message indicating that your IT department has turned off sign up for Microsoft Power BI.
@@ -44,7 +43,6 @@ As an Admin, you can enable individual sign ups using the Azure Active Directory
 
     Set-MsolCompanySettings -AllowAdHocSubscriptions $true
 
-<a name="pro"/>
 ## Power BI Pro
 
 If you want to buy a subscription to Power BI Pro, and the syndicated partner does not offer Power BI Pro, you will need to move off of that syndicated partner and either go to a partner that is part of the Cloud Solution Provider (CSP) program, or buy Office 365 direct from office365.com.
