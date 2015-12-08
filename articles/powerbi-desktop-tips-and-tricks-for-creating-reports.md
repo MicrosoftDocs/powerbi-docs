@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/08/2015"
    ms.author="davidi"/>
 # Tips and tricks for creating reports in Power BI Desktop
 
@@ -177,5 +177,3 @@ DAX is the calculations formula language in Power BI Desktop.  It's optimized f
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 
 [DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
-
-**

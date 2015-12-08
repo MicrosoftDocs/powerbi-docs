@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/05/2015"
+   ms.date="12/08/2015"
    ms.author="davidi"/>
 
 # Getting started with color formatting and axis properties  
