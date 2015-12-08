@@ -136,15 +136,15 @@ You embed a Power BI **tile** into an app with an **IFrame** HTML element. Here 
 **Embed Tile URL Parameters**
 
 |**Name**|**Description**|**REST operation**
-|:-|:-|:-
+|---|---|---
 |dashboardId|The id of the user's **dashboard**.|[Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx)
 |tileId|The id of the **tile** to embed. You get an array of **tiles** from a **dashboard** id.|[Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx)
 
-**Step 2 - ** - Add an onload event handler to submit an Azure authentication token. To learn how to get an Azure authentication token for a web app, see [Authenticate a web app]( powerbi-developer-authenticate-a-web-app.md).
+**Step 2 -** - Add an onload event handler to submit an Azure authentication token. To learn how to get an Azure authentication token for a web app, see [Authenticate a web app]( powerbi-developer-authenticate-a-web-app.md).
 
     iframe.onload = postActionLoadTile;
 
-**Step 3 - ** Create a **loadTile** action event handler to post a message back to the Power BI REST API. Upon successful authentication, the user can view the Power BI **tile**.
+**Step 3 -** Create a **loadTile** action event handler to post a message back to the Power BI REST API. Upon successful authentication, the user can view the Power BI **tile**.
 
 The **loadTile** message is a JSON structure with the following format:
 
@@ -292,14 +292,14 @@ You embed a Power BI **report** into an app with an **IFrame** HTML element. Her
 **Embed Report URL Parameters**
 
 |**Name**|**Description**|**REST operation**
-|:-|:-|:-
+|---|---|---
 |reportId|The id of the user’s **report**.|[Get [Get Reports](Get+ Reports.md)
 
-**Step 2 - ** Add an onload event handler to submit an Azure authentication token. To learn how to get an Azure authentication token for a web app, see [Authenticate a web app]( powerbi-developer-authenticate-a-web-app.md).
+**Step 2 -** Add an onload event handler to submit an Azure authentication token. To learn how to get an Azure authentication token for a web app, see [Authenticate a web app]( powerbi-developer-authenticate-a-web-app.md).
 
     iframe.onload = postActionLoadReport;
 
-**Step 3 - ** Create a **loadReport** action event handler to post a message back to the Power BI REST API. Upon successful authentication, the user can view the Power BI **report**.
+**Step 3 -** Create a **loadReport** action event handler to post a message back to the Power BI REST API. Upon successful authentication, the user can view the Power BI **report**.
 
 The **loadReport** message is a JSON structure with the following format:
 
