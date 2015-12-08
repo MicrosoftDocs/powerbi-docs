@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Troubleshooting Power BI Analysis Service Connector"
+   pageTitle="Troubleshooting the Analysis Service Connector"
    description="Troubleshooting Power BI Analysis Service Connector"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/08/2015"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Analysis Service Connector
 

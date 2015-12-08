@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/16/2015"
+   ms.date="12/08/2015"
    ms.author="asaxton"/>
 # Closing your Power BI Account
 
