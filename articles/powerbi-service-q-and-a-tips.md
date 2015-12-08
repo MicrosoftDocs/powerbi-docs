@@ -78,45 +78,46 @@ When typing natural language queries with Q&A, there are some visualization type
 When you have a workbook prepared for Q&A, you are on your way to start asking questions. Here's a sample of the types of questions you can ask:
 
 * Show \<table\>
-  Examples:
 
-  Show sales
+    Examples:
 
-  Show orders
+    Show sales
+
+    Show orders
 
 * Average \<column\> (if the column has number values)
 
-  Example: Average employee age
+    Example: Average employee age
 
 * Show \<column\>, where \<column\> is between \<range\>
 
-  Examples:
+    Examples:
 
-  Show products, where price is between $10 and $30
+    Show products, where price is between $10 and $30
 
-  Show sales, where date is between 2012 and 2014
+    Show sales, where date is between 2012 and 2014
 
 * Show \<column\>, where \<column\> is before \<value\>
 
-  Examples:
+    Examples:
 
-  Show products, where date sold is before December 9th, 2014
+    Show products, where date sold is before December 9th, 2014
 
-  Show employees, where date of birth is after 3/3/1985
+    Show employees, where date of birth is after 3/3/1985
 
 * \<measure\> by \<column name\>
 
-  a. Year over year growth by year
+    a. Year over year growth by year
 
-  b. Total sales by product
+    b. Total sales by product
 
-  c. Number of sales by location
+    c. Number of sales by location
 
-  d. Total profit and total cost by product
+    d. Total profit and total cost by product
 
 * \<measure\> by \<column name\> for \<specific entity within another column\>
 
-  Example: Total sales by sales rep for Surface Pro 3
+    Example: Total sales by sales rep for Surface Pro 3
 
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.
