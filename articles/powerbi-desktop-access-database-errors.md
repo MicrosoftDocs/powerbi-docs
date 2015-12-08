@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/16/2015"
+   ms.date="12/08/2015"
    ms.author="davidi"/>
 
 # Resolve Issues Importing Access Databases and .XLS spreadsheets in Power BI Desktop and Power Query  
@@ -38,7 +38,7 @@ This situation often occurs when the installed version of Microsoft Office is 32
 
     ![](media/powerbi-desktop-access-database-errors/desktop-access-errors-2.png)
 
-    **Note:** When using the 32-bit version of Power BI Desktop, when creating very large data models you might experience out-of-memory issues. 
+    **Note:** When using the 32-bit version of Power BI Desktop, when creating very large data models you might experience out-of-memory issues.
 
 
 2.  Change the version of Microsoft Office to match the bit-version of your Power BI Desktop installation. To change the bit-version of Microsoft Office, uninstall Office, and then install the version of Office that matches your Power BI Desktop installation.
