@@ -1,6 +1,6 @@
 ﻿<properties 
-   pageTitle="Support for Office 365 dedicated customers - known issues"
-   description="Support for Office 365 dedicated customers - known issues"
+   pageTitle="Office 365 dedicated - known issues"
+   description="Support for Office 365 dedicated customers - known issues. This topics describes issues specific to an Office 365 Dedicated customer. This includes limitations to the group feature as well as the iPhone app with vanity domains."
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="12/08/2015"
    ms.author="asaxton"/>
 
 # Support for Office 365 dedicated customers - known issues  
