@@ -137,7 +137,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-qr-code-for-tile",
             "powerbi-service-delete-or-remove-a-dashboard"
           ],
-          "numberOfFeaturedArticles": 8
+          "numberOfFeaturedArticles": 9
         },
         {
           "sectionTitle": "Ask questions of your data",
