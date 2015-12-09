@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/03/2015"
+   ms.date="12/09/2015"
    ms.author="maggies"/>
 
 # Tiles in the Windows 10 phone app for Power BI  
@@ -27,16 +27,15 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
-  -   Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
-    <!--![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Andr_LineTileSm.png)-->
+  -   Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization. 
+   
+     ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_LineChtTile.png)
 
-       <!--In this line chart, the values of the blue and purple lines are listed under the month, April, where the vertical bar intersects them.-->
+       In this line chart, the values of the blue and purple lines are listed under the month, August, where the vertical bar intersects them.
 
   -   Spin a pie chart to show the values of the slice at the top of the pie.  
-    <!--![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Andr_PieTile.png)-->
 
- -   Tap the share snapshot icon <!--![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Andr_ShareSnapIcon.png)--> to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
-
+ -   Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
 
 3.   Tap the back button in the upper-left corner to close the tile and return to the dashboard.
 

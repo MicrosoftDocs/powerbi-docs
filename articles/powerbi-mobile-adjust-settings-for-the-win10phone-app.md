@@ -14,14 +14,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/03/2015"
+   ms.date="12/09/2015"
    ms.author="maggies"/>
 
 # Adjust settings for the Windows 10 phone app for Power BI
 
 You can view and adjust the settings for the [Windows 10 phone app for Microsoft Power BI](powerbi-mobile-win10phone-app-get-started.md).
 
-1. On the ____, tap the ___.
+1. In the Windows phone app for Power BI, tap the navigation icon ![](media/powerbi-mobile-adjust-settings-for-the-win10phone-app/PBI_Win10Ph_NavIcon30.png), then tap **Settings**.
+
+    ![](media/powerbi-mobile-adjust-settings-for-the-win10phone-app/PBI_Win10Ph_MyWkspace.png)
 
 2. Here you can see and adjust:
 

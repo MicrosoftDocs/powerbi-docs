@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/03/2015"
+   ms.date="12/09/2015"
    ms.author="maggies"/>
 # Share a dashboard from the Windows 10 phone app for Power BI
 
@@ -26,7 +26,7 @@ Invite colleagues to view your dashboards by sharing links from the [Windows 10
 
     Or, on the dashboards home page, press and hold, and tap **Invite**.
 
-    <!--![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Andr_DashEllipsMenu.png)-->
+    ![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Win10Ph_DashHomeInvitePin.png)
 
     If you're the owner of the dashboard, you see the list of colleagues with whom you've shared this dashboard, with these notes:
 
@@ -42,7 +42,7 @@ Invite colleagues to view your dashboards by sharing links from the [Windows 10
 
     >**Note**:  Resharing allows your coworkers to share this dashboard with others in your organization, either through the browser or the mobile apps.
 
-4.  Tap **Send**.
+4.  Tap the Send icon ![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Win10Ph_SendIcon.png).
 
     The dashboard is automatically added to your colleagues' Power BI account, and they get an email invitation with a direct link to the dashboard.
 

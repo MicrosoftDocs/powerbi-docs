@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/03/2015"
+   ms.date="12/09/2015"
    ms.author="maggies"/>
 
 # Dashboards in the Windows 10 phone app for Power BI  
@@ -30,25 +30,25 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
     Need to [download the Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
 
-    <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_And_Home.png)-->
-
 2.  Tap a dashboard to open it.   
 
-    <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_DashHomeDemoCrop.png)-->
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Win10Ph_DashHome.png)
+
+    >**Tip:**  You can also invite a colleague or [pin the dashboard to your Windows Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md). Press and hold on a dashboard on the dashboards home page.
+
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Win10Ph_DashHomeInvitePin.png)
 
     Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-    <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_DemDash.png)-->
-
-    >**Tip:**  You can also press and hold on a dashboard on the dashboards home page to invite a colleague or pin the dashboard to your Windows Start screen.
-
-    <!--![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_DashEllipsMenu.png)-->
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/WPI_Win10Ph_Dash.png)
 
 5.  In the dashboard, you can:
 
     -   [Tap a tile](powerbi-mobile-dashboards-in-the-win10phone-app.md) to open and interact with it.
 
     -   Tap the **Invite** icon ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIcon.png) in the lower-right corner to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) with a colleague.
+    -   Tap the ellipsis (...) > **Pin to Start** to [pin the dashboard to your Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md). 
+    
 
 6.  To go back to the dashboards home page, tap the phone back button.
 

@@ -14,13 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/03/2015"
+   ms.date="12/09/2015"
    ms.author="maggies"/>
 # Get started with the Power BI for Windows 10 phone app
 
-The Windows 10 phone app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere.
+The Windows 10 phone app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere &#151; right on your [Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).
 
-<!--![](media/powerbi-mobile-win10phone-app-get-started/PBI_AndrStartSm.png)-->
+![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_StartScrn.png)
 
 Maybe a colleague sent you a link to a dashboard? Now you can view it on your Windows 10 phone.
 
@@ -28,7 +28,7 @@ Bring your own data together and create dashboards and reports on the [Power BI
 
 ## First things first
 
--   [**Get the Power BI for Windows 10 phone app**](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store.
+-   [**Get the Power BI for Windows 10 phone app**](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
 
     >**Note:** Your phone needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
 
