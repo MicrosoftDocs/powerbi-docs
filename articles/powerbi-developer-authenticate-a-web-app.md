@@ -156,55 +156,61 @@ Here’s the complete code to acquire an Azure access token by authorization cod
 
 **Note** The Redirect Uri must match the redirect_uri used when requesting Authorization code.
 
-	public partial class Redirect : System.Web.UI.Page
+    public partial class Redirect : System.Web.UI.Page
     {
-		protected void Page_Load(object sender, EventArgs e)
-        {
-            //Redirect uri must match the redirect_uri used when requesting Authorization code.
-            string redirectUri = "http://localhost:13526/Redirect";
-            string authorityUri = "https://login.windows.net/common/oauth2/authorize/";
+      protected void Page_Load(object sender, EventArgs e)
+      {
+          //Redirect uri must match the redirect_uri used when requesting Authorization code.
+          string redirectUri = "http://localhost:13526/Redirect";
+          string authorityUri = "https://login.windows.net/common/oauth2/authorize/";
 
-            // Get the auth code
-            string code = Request.Params.GetValues(0)[0];
+          // Get the auth code
+          string code = Request.Params.GetValues(0)[0];
 
-            // Get auth token from auth code       
-            TokenCache TC = new TokenCache();
+          // Get auth token from auth code       
+          TokenCache TC = new TokenCache();
 
-            AuthenticationContext AC = new AuthenticationContext(authorityUri, TC);
-            ClientCredential cc = new ClientCredential
-                (Properties.Settings.Default.ClientID,
-                Properties.Settings.Default.ClientSecretKey);
+          AuthenticationContext AC = new AuthenticationContext(authorityUri, TC);
+          ClientCredential cc = new ClientCredential
+              (Properties.Settings.Default.ClientID,
+              Properties.Settings.Default.ClientSecret);
 
-            AuthenticationResult AR = AC.AcquireTokenByAuthorizationCode(code, new Uri(redirectUri), cc);
+          AuthenticationResult AR = AC.AcquireTokenByAuthorizationCode(code, new Uri(redirectUri), cc);
 
-            //Set Session "authResult" index string to the AuthenticationResult
-            Session["authResult"] = AR;
+          //Set Session "authResult" index string to the AuthenticationResult
+          Session["authResult"] = AR;
 
-            //Redirect back to Default.aspx
-            Response.Redirect("/Default.aspx");
-        }
+          //Redirect back to Default.aspx
+          Response.Redirect("/Default.aspx");
+      }
+    }
 
-	protected void Page_Load(object sender, EventArgs e)
-	{
-  		//Test for AuthenticationResult
-		if (Session["authResult"] != null)
-		{
-			//Get the authentication result from the session
-			authResult = (AuthenticationResult)Session["authResult"];
+    public partial class _Default : Page
+    {
+      public AuthenticationResult authResult { get; set; }
+      string baseUri = "https://api.powerbi.com/beta/myorg/";
 
-			//Show Power BI Panel
-			PBIPanel.Visible = true;
-			signinPanel.Visible = false;
+      protected void Page_Load(object sender, EventArgs e)
+      {
 
-			//Set user and toek from authentication result
-			userLabel.Text = authResult.UserInfo.DisplayableId;
-			accessTokenTextbox.Text = authResult.AccessToken;
-		}
-		else
-		{
-			PBIPanel.Visible = false;
-		}
-	}
+          //Test for AuthenticationResult
+          if (Session["authResult"] != null)
+          {
+              //Get the authentication result from the session
+              authResult = (AuthenticationResult)Session["authResult"];
+
+              //Show Power BI Panel
+              signInStatus.Visible = true;
+
+              //Set user and token from authentication result
+              userLabel.Text = authResult.UserInfo.DisplayableId;
+              accessTokenTextbox.Text = authResult.AccessToken;
+          }
+      }
+
+      ...
+    }
+
 <a name="use"/>
 ### Step 5 – Use Azure AD access token to call a Power BI operation
 

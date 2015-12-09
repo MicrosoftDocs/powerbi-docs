@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/01/2015"
+   ms.date="12/01/2015"
    ms.author="derrickv"/>
 
 # Register a web app
@@ -37,10 +37,11 @@ Here's how to register your web app with the **Power BI App Registration Tool**:
 **Step 1** - Choose **Login in** to login to your Azure AD account. You will see your name in the Welcome line.
 
 **Step 2** – Enter information about your app.
-* **App Name**: The name of your app.
-* **App Type**: Choose Native app.
-* **Redirect URI**: For a web app, a redirect uri gives AAD more details on the specific application that it will authenticate. An example **Redirect URI** looks like this: http://localhost/redirect.
-* **Home Page**: The home page or sign on page for your web app.
+
+  * **App Name**: The name of your app.
+  * **App Type**: Choose Native app.
+  * **Redirect URI**: For a web app, a redirect uri gives AAD more details on the specific application that it will authenticate. An example **Redirect URI** looks like this: http://localhost/redirect.
+  * **Home Page**: The home page or sign on page for your web app.
 
 ![](media/powerbi-developer-register-a-web-app/register-tool-2.png)
 

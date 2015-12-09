@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/08/2015"
+   ms.date="12/08/2015"
    ms.author="mihart"/>
 
 # Page display settings in a Power BI report
@@ -45,10 +45,15 @@ Page View settings are available in both [Reading View](powerbi-service-interact
 ## Page Size settings
 
 The *Page Size* settings control the display ratio and actual size (in pixels).  Page Size settings are only available in Editing View.
+
 -   4:3 ratio
+
 -   16:9 ratio (default)
+
 -   Dynamic
+
 -   Letter
+
 -   Custom (height and width in pixels)
 
 ## Next Step
@@ -58,4 +63,5 @@ The *Page Size* settings control the display ratio and actual size (in pixels). 
 ## See also
 
 Read more about [reports in Power B](powerbi-service-reports.md)
+
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

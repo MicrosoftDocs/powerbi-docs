@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/01/2015"
+   ms.date="12/01/2015"
    ms.author="derrickv"/>
 
 # Create an Azure Active Directory tenant
@@ -91,10 +91,7 @@ You need a user from your Azure AD to register an Azure AD app. Here's how to ad
  7. In the **Get temporary password** page, copy the temporary password, and click **Complete** icon. You use the temporary password when you first login to your AAD.
  8. After you click the **Complete** icon, a new Azure AD user is created.
 
-Once you have an **Azure Active Directory** tenant, and an organizational user, you need to sign up for Power BI.
-
-## Next step to create a Power BI app - Sign up for Power BI
-- [Sign up for Power BI](powerbi-developer-sign-up-for-power-bi-service.md)
+Once you have an **Azure Active Directory** tenant, and an organizational user, you [sign up for Power BI](powerbi-developer-sign-up-for-power-bi-service.md).
 
 **Note** When you sign up for the Power BI service, use your organizational user. Once you login to the **Power BI service** for the first time, you will see the **Power BI service** added to your Azure AD.
 

@@ -13,13 +13,13 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/07/2015"
+ms.date="12/08/2015"
 ms.author="asaxton"/>
 # Unable to add Power BI to Office 365 syndicated partner subscription
 
 Office 365 allows for a syndication model which allows companies to resell Office 365 bundled and integrate the office suite with their own solutions, providing end-customers with a single bill for services.
 
-When you purchase Office 365 through a syndicated partner, you will not be able to add subscriptions through the Office 365 Admin Portal. **Subscriptions** will not be available under **Billing**.
+When you purchase Office 365 through a syndicated partner, you will not be able to add subscriptions through the Office 365 Admin Portal. **Subscriptions** will not be available under **Billing**. 
 
 ![](media/powerbi-admin-syndication-partner/billing.png)
 
@@ -27,9 +27,9 @@ Some syndication models do not allow a customer to buy from a different channel 
 
 You have two options, to get Power BI, for a syndicated purchase.
 
-[Power BI (free)](#free)
+[Power BI (free)](#power-bi-free)
 
-[Power BI Pro](#pro)
+[Power BI Pro](#power-bi-pro)
 
 ## Power BI (free)
 
@@ -46,6 +46,10 @@ As an Admin, you can enable individual sign ups using the Azure Active Directory
 ## Power BI Pro
 
 If you want to buy a subscription to Power BI Pro, and the syndicated partner does not offer Power BI Pro, you will need to move off of that syndicated partner and either go to a partner that is part of the Cloud Solution Provider (CSP) program, or buy Office 365 direct from office365.com.
+
+This video looks at Office 365 syndication and purchasing Power BI:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C357phT94A8" frameborder="0" allowfullscreen></iframe>
 
 ## See Also
 
