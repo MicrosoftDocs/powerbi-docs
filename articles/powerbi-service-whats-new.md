@@ -21,13 +21,13 @@
 
 Check this page for known issues and recently-released features in Power BI Service.
 
->NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps).
+>NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 ## Recent updates
 
 **December 10, 2015**
 
-  * [QR codes in Power BI](bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes)
+  * [QR codes in Power BI](bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.md)
 
 **December 3, 2015**
 
