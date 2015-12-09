@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/06/2015"
+   ms.date="12/09/2015"
    ms.author="mihart"/>
 
 # Tips for asking questions in Power BI Q&A
@@ -57,7 +57,7 @@ Q&A does its best to ensure that the answer accurately reflects the question bei
 
 * corrects spelling.
 
-* provides a preview of the answer in the form of a visualization The visualization updates as you type and edit the question â€“ it doesnâ€™t wait for you to press Enter.
+* provides a preview of the answer in the form of a visualization The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
 
 * auto-suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
 
@@ -89,7 +89,7 @@ When you have a workbook prepared for Q&A, you are on your way to start asking q
 
     Example: Average employee age
 
-* Show \<column\>, where \<column\> is between \<range\>
+* Show \<column\>, where \<column\> is between <range>
 
     Examples:
 
@@ -97,7 +97,7 @@ When you have a workbook prepared for Q&A, you are on your way to start asking q
 
     Show sales, where date is between 2012 and 2014
 
-* Show \<column\>, where \<column\> is before \<value\>
+* Show \<column\>, where \<column\> is before <value>
 
     Examples:
 
@@ -105,7 +105,7 @@ When you have a workbook prepared for Q&A, you are on your way to start asking q
 
     Show employees, where date of birth is after 3/3/1985
 
-* \<measure\> by \<column name\>
+* <measure> by \<column name\>
 
     a. Year over year growth by year
 
@@ -125,7 +125,11 @@ After Q&A displays your results, keep the conversation going! Use the interactiv
 
 ## See also
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
+
 [Tutorial: Introduction to Q&A with Power BI](powerbi-service-tutorial-introduction-to-q-and-a.md)
+
 [Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+
 [Pin a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
+
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
