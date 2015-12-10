@@ -38,7 +38,7 @@ There are certain limitations to using the preview version of **SSAS MD**:
 -   Servers must be running SQL Server 2012 SP1 CU4 or later versions of Analysis Services for the Power BI Desktop SSAS MD connector to work properly
 -   Only Enterprise and Business Intelligence editions of SQL Server are supported for MD connectivity
 -   Display Folder, Cell level Formatting, KPI Trends, and translation features are not supported in this preview build of SSAS MD. These features will be enabled in upcoming releases of Power BI Desktop.
--   Starting in the December 2015 release of Power BI Desktop, users can consume hierarchies defined in the model, including the entire hierarchy or any levels (parent levels are added automatically). Support for removing intermediate and Slicer support is coming in upcoming releases. The workaround for this limitation is to use the page level or report level filtering of a hierarchy.
+-   Starting in the December 2015 release of Power BI Desktop, users can consume hierarchies defined in the model, including the entire hierarchy or any levels (parent levels are added automatically). Support for removing intermediate levels and Slicer support is coming in upcoming releases. The workaround for this limitation is to use the page level or report level filtering of a hierarchy.
 
 In addition, as mentioned earlier you cannot publish a report created with the preview version of **SSAS MD** to the Power BI Service.
 
