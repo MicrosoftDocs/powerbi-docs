@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="12/08/2015"
    ms.author="bewillia"/>
 
 <!---
@@ -137,7 +137,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-qr-code-for-tile",
             "powerbi-service-delete-or-remove-a-dashboard"
           ],
-          "numberOfFeaturedArticles": 8
+          "numberOfFeaturedArticles": 9
         },
         {
           "sectionTitle": "Ask questions of your data",
@@ -297,6 +297,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-manage-your-data-storage-in-power-bi",
             "powerbi-admin-migrating-to-the-new-power-bi-experience",
             "powerbi-admin-power-bi-archived-workspace",
+            "powerbi-admin-syndication-partner",
             "powerbi-admin-closing-your-account"
           ],
           "numberOfFeaturedArticles": 6

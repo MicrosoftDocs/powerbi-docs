@@ -1,6 +1,6 @@
 ﻿<properties 
    pageTitle="Power BI Archived Workspace"
-   description="Power BI Archived Workspace"
+   description="Power BI Archived Workspace after managing your Office 365 tenant"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/08/2015"
    ms.author="asaxton"/>
 
 # Power BI Archived Workspace  

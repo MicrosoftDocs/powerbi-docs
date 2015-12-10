@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Power BI Security"
-   description="Power BI Security"
+   description="Power BI Security. How Power BI relates to Azure Active Directory and other Azure services. This topic also includes a link to a white paper which goes more in-depth."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="12/08/2015"
    ms.author="asaxton"/>
 
 # Power BI Security

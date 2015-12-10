@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/06/2015"
+   ms.date="12/09/2015"
    ms.author="mihart"/>
 
 # Tips for asking questions in Power BI Q&A
@@ -57,7 +57,7 @@ Q&A does its best to ensure that the answer accurately reflects the question bei
 
 * corrects spelling.
 
-* provides a preview of the answer in the form of a visualization The visualization updates as you type and edit the question â€“ it doesnâ€™t wait for you to press Enter.
+* provides a preview of the answer in the form of a visualization The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
 
 * auto-suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
 
@@ -77,32 +77,47 @@ When typing natural language queries with Q&A, there are some visualization type
 ## Question templates
 When you have a workbook prepared for Q&A, you are on your way to start asking questions. Here's a sample of the types of questions you can ask:
 
-* Show <table>
-  Examples:
-  Show sales
-  Show orders
+* Show \<table\>
 
-* Average <column> (if the column has number values)
-  Example: Average employee age
+    Examples:
 
-* Show <column>, where <column> is between <range>
-  Examples:
-  Show products, where price is between $10 and $30
-  Show sales, where date is between 2012 and 2014
+    Show sales
 
-* Show <column>, where <column> is before <value>
-  Examples:
-  Show products, where date sold is before December 9th, 2014
-  Show employees, where date of birth is after 3/3/1985
+    Show orders
 
-* <measure> by <column name>
-  a. Year over year growth by year
-  b. Total sales by product
-  c. Number of sales by location
-  d. Total profit and total cost by product
+* Average \<column\> (if the column has number values)
 
-* <measure> by <column name> for <specific entity within another column>
-  Example: Total sales by sales rep for Surface Pro 3
+    Example: Average employee age
+
+* Show \<column\>, where \<column\> is between <range>
+
+    Examples:
+
+    Show products, where price is between $10 and $30
+
+    Show sales, where date is between 2012 and 2014
+
+* Show \<column\>, where \<column\> is before <value>
+
+    Examples:
+
+    Show products, where date sold is before December 9th, 2014
+
+    Show employees, where date of birth is after 3/3/1985
+
+* <measure> by \<column name\>
+
+    a. Year over year growth by year
+
+    b. Total sales by product
+
+    c. Number of sales by location
+
+    d. Total profit and total cost by product
+
+* \<measure\> by \<column name\> for \<specific entity within another column\>
+
+    Example: Total sales by sales rep for Surface Pro 3
 
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.
@@ -110,7 +125,11 @@ After Q&A displays your results, keep the conversation going! Use the interactiv
 
 ## See also
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
+
 [Tutorial: Introduction to Q&A with Power BI](powerbi-service-tutorial-introduction-to-q-and-a.md)
+
 [Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+
 [Pin a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
+
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
