@@ -36,8 +36,6 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
     >**Tip:**  You can also invite a colleague or [pin the dashboard to your Windows Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md). Press and hold on a dashboard on the dashboards home page.
 
-    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Win10Ph_DashHomeInvitePin.png)
-
     Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
     ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/WPI_Win10Ph_Dash.png)
