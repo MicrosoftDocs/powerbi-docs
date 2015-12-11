@@ -1,24 +1,24 @@
-<properties 
+<properties
    pageTitle="Tutorial: Combo Chart in Power BI"
-   description="Tutorial: Combo Chart in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   description="Tutorial: Combo Chart in Power BI."
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 # Tutorial: Combo Chart in Power BI
 
-In Power BI, a Combo Chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data. 
+In Power BI, a Combo Chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.
 
 Combo charts can have one or two Y axes.
 
@@ -58,9 +58,9 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 5. Convert the column chart to a Combo chart.
 
-	1.  With the column chart selected, open the Visualizations pane and select the **Line and Clustered Column chart**.
+	- With the column chart selected, open the **Visualizations** pane and select the **Line and Clustered Column chart**.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
 
 	2.  From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line Values** bucket.
 
@@ -74,23 +74,23 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 ## Create a Combo Chart with two axes
 
 
-In this task, we'll see what impact store count has on sales.
+In this task, we'll compare gross margin and sales.
 
-1.  Create a new line chart that tracks store count by month.  In January there were 92 stores and by July there were 100.  Will we see an increase in sales that corresponds to the increase in stores?
+1.  Create a new line chart that tracks Gross Margin % last year.  In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo1.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo1_new.png)
 
-2.  Add **This Year Sales** and **Last Year Sales** to the line chart. The scale of **Store Count** is much smaller than the scale of **Sales** which makes it difficult to compare.      
+2.  Add **This Year Sales** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** is much smaller than the scale of **Sales** which makes it difficult to compare.      
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/flatline.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/flatline_new.png)
 
 3.  To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/lineandstacked.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
 
-4.  Drag **Store Count** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the data sets to be scaled differently; the left measures dollars and the right measures count of stores.
+4.  Drag **Gross Margin% Last Year** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the data sets to be scaled differently; the left measures dollars and the right measures percentage.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochart2done.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochart2done_new.png)
 
       
 
@@ -104,14 +104,14 @@ In this task, we'll see what impact store count has on sales.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo3.png)
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/yaxisoff.png)
-
 
 ## Add titles to the axes
 
-1.  Select the down arrow to expand the Y-axis options.
+1.  Select the down arrow to expand the **Y-axis** options.
 
-2.  Set **Show Secondary** to **On**.
+2.  Set **Show Secondary** to **On**. This reveals additional settings.
+
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/yaxissettings_new.png)
 
 3.  Set **Position** to **Left**.
 
@@ -119,17 +119,15 @@ In this task, we'll see what impact store count has on sales.
 
 5.  Set **Style** to **Show title only**.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/yaxissettings.png)
-
 6.  Select the down arrow to expand the X-axis options.
 
 7.  Set **Title** to **On**.
 
 8.  Set **Style** to **Show title only**.
 
-    Your Combo chart now displays dual axes, both with titles.
+    Your Combo chart now displays dual axes, switched to opposite sides, both with titles.
 
-	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/xyaxistitleson.png)
+	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/PBI_newComboChart.png)
 
 	[Add the Combo Chart as a dashboard tile](powerbi-service-dashboard-tiles.md).
 
@@ -143,7 +141,7 @@ Highlighting a column or line in a Combo Chart cross-filters the other visualiza
 
 
 
-## See Also:
+## See also
 
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
@@ -154,4 +152,3 @@ Highlighting a column or line in a Combo Chart cross-filters the other visualiza
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Try it out -- it's free!](https://powerbi.com/)
-

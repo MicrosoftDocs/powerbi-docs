@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Dashboards in the iPhone app (Power BI for iOS)"
+   pageTitle="Dashboards in the iPhone app"
    description="Dashboards in the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,48 +14,52 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
 
-![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPh_DashHome.png)
 
-Power BI comes with built-in dashboards for some data sources such as Salesforce, and you can create your own [dashboards in Power B](powerbi-service-dashboards.md)I. Your colleagues can also share their dashboards with you.
+Power BI comes with built-in dashboards for some data sources such as Salesforce, and you can create your own [dashboards in Power BI](powerbi-service-dashboards.md). Your colleagues can also share their dashboards with you.
 
-In the iPhone app for Microsoft Power BI for iOS, you see and can interact with these same dashboards.
+In the iPhone app for Microsoft Power BI for iOS, you see and can interact with all of these dashboards.
 
 ## View dashboards on your iPhone  
 1.  Open the Power BI app on your iPhone and sign in.
 
-    Need to [download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store first?
+    Need to [download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store?
 
-2.  Tap **Dashboards** ![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPh_DashIcon.png) in the bottom bar.
+2.  From the navigation pane, swipe right to see your dashboards.
 
-3.  Swipe from side to side to see your available Power BI dashboards.
+     ![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPh_Nav.png)
 
-4.  Tap a dashboard to open it.  
-    ![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPhone_Dash.png)
+3.  Tap a dashboard to open it.  
 
     Power BI dashboards look a little different on your iPhone. All the tiles appear the same size, and they're arranged one after another from top to bottom.
 
-    You can also view dashboards horizontally, just by turning your phone. Read more about [landscape mode in the iPhone app](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+    >**NOTE**: You can also view dashboards horizontally, just by turning your phone. Read more about [landscape mode in the iPhone app](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
 
     ![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPh_Landscape.png)
-
-5.  Swipe up and down to see all the tiles in the dashboard.
+4.  Swipe up and down to see all the tiles in the dashboard.
 
     While here, you can:
 
     -   [Tap a tile](powerbi-mobile-tiles-in-the-iphone-app.md) to open and interact with it.
 
-    -   Tap the Options icon in the upper-right corner to [invite a colleague](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) to view your dashboard, or to make some of the dashboard tiles [favorites](powerbi-mobile-favorites-in-the-iphone-app.md).  
-        ![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPhone_OptionsMenu200w.png)
+    -   Tap the ellipsis to open the dashboard menu, and then...
 
-6.  Tap the back arrow in the upper-left corner or tap **Dashboards** in the bottom bar.
+        ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashEllipsis.png)
 
-## See Also  
+    -  Tap **Edit favorites** to mark dashboard tiles as [favorites](powerbi-mobile-favorites-in-the-iphone-app.md), or...  
+
+        ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashMenu.png)
+
+    -  Tap **Invite** to [invite a colleague](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) to view your dashboard.
+
+6.  Tap the back arrow in the upper-left corner to get back to the list of dashboards.
+
+### See also  
 [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  

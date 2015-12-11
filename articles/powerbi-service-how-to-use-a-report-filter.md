@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="How to use report filters"
    description="How to use report filters"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/16/2015"
    ms.author="mihart"/>
 
 # How to use report filters  
@@ -40,7 +40,7 @@ To display the filter options, select the down arrow next to the filter.  In th
 
 ### Types of filters: text field filters  
 #### List mode  
-Ticking a checkbox either selects or deselects the value. The **All** checkbox can be used to toggle the state of all checkboxes on or off. The checkboxes represent all the available values for that field.  As you adjust the filter, the restatement updates to reflect your choices.  
+Ticking a checkbox either selects or deselects the value. The **All** checkbox can be used to toggle the state of all checkboxes on or off. The checkboxes represent all the available values for that field.  As you adjust the filter, the restatement updates to reflect your choices. 
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_restatement.png)
 
@@ -56,7 +56,7 @@ Select **Advanced Filtering** to switch to advanced mode. Use the dropdown contr
 If the values are finite, selecting the field name displays a list.  See **Text field filters** &gt; **List mode** above for help using checkboxes.   
 
 #### Advanced mode  
-If the values are infinite or represent a range, selecting the field name opens the advanced filter mode. Use the dropdown and text boxes to specify a range of values that you want to see.  
+If the values are infinite or represent a range, selecting the field name opens the advanced filter mode. Use the dropdown and text boxes to specify a range of values that you want to see. 
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_dropdown-and-text.png)
 
@@ -71,9 +71,9 @@ If the field values represent date or time, you can specify a start/end time wh
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_date-time-filters.png)
 
-## See Also  
+## See also  
 [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)  
 [Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)  
 [Create filters in report Editing View](powerbi-service-add-a-filter-to-a-report.md)  
 Read more about [reports in Power BI](powerbi-service-reports.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md) 
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

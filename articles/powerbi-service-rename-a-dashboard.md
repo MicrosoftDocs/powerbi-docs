@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Rename a Power BI dashboard"
-   description="Rename a Power BI dashboard"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   description="Rename a Power BI dashboard."
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 # Rename a Power BI dashboard
 
@@ -24,9 +24,9 @@ Right-click the dashboard name and select **Rename**.
 
 ## Having trouble renaming a dashboard?
 
--   If the dashboard has this icon 
+-   If the dashboard has this icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIcon.png)
 
-A sharing icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIcon.png) tells you that the dashboard is being [shared](powerbi-service-share-unshare-dashboard.md)with you or is part of an organizational content pack.  
+    A sharing icon  tells you that the dashboard is being [shared](powerbi-service-share-unshare-dashboard.md) with you or is part of an organizational content pack.  
 
 -   Shared dashboards are read-only and can't be renamed. 
 
@@ -36,10 +36,8 @@ A sharing icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIc
 
 Read more [tips for designing your dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
 
-## See Also:
+## See also
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-

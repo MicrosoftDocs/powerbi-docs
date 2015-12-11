@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 
 # Tutorial: Filled Maps (Choropleths) in Power BI  
@@ -46,7 +46,7 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 >**Note:**  
 >This tutorial uses the classic report canvas.  For more information, see Power BI classic report canvas vs. new report canvas.
 
-1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)from the Sales and Marketing Sample dataset  
+1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) from the Sales and Marketing Sample dataset  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img001.png)
 
 2.  and select the **Geo** \> **State** field.    
@@ -93,7 +93,7 @@ Map data can be ambiguous.  For example, there's a Paris, France, but there's a
 
 If you do not have access to latitude and longitude data, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
-## See Also  
+## See also  
  [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
  [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
  [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  

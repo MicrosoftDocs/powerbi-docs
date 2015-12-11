@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Pin a tile to a Power BI dashboard from a report"
-   description="Pin a tile to a Power BI dashboard from a report"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   description="Pin a tile to a Power BI dashboard from a report."
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from a report
@@ -42,6 +42,7 @@ When you open a report that has one or more pages, it [opens in Reading View](po
 
     -   New dashboard: type the name of the new dashboard.
 
+
 3.  Select **Pin**.
 
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
@@ -58,7 +59,7 @@ When you open a report that has one or more pages, it [opens in Reading View](po
 
 2.  Follow steps 1-4 above.
 
-## See Also:
+## See also
 
 [Reports in Power BI](powerbi-service-reports.md)
 

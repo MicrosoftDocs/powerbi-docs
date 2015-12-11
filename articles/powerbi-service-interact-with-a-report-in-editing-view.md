@@ -1,24 +1,24 @@
-﻿<properties 
+﻿<properties
    pageTitle="Interact with a report in Editing View in Power BI"
    description="Interact with a report in Editing View in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 # Interact with a report in Editing View in Power BI
 
-In report [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) in Power BI, you have lots of flexibility in designing a report. All the [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)functionality is available -- plus lots more.
+In report [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) in Power BI, you have lots of flexibility in designing a report. All the [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) functionality is available -- plus lots more.
 
 
 ### Add a page
@@ -28,11 +28,11 @@ No need to crowd your report pages.  If you need more room, [add a new page](po
 
 ### Change the way a report page is displayed
 
-[How do you want your report pages to be viewed?](powerbi-service-change-report-display-settings.md)  Set rendering rules, display ratios, and absolute page sizes (in pixels). 
+[How do you want your report pages to be viewed?](powerbi-service-change-report-display-settings.md)  Set rendering rules, display ratios, and absolute page sizes (in pixels).
 
 ### Add visualizations
 
-[Create visualizations](powerbi-service-visualizations-for-reports.md)on the pages of your report.
+[Create visualizations](powerbi-service-visualizations-for-reports.md) on the pages of your report.
 
 ### Filtering and highlighting in reports
 
@@ -67,7 +67,7 @@ See [share a dashboard](powerbi-service-share-unshare-dashboard.md).
 Don't need the report any more?  [Delete it](powerbi-service-delete-a-report.md).
 
 
-## See Also:
+## See also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
@@ -76,5 +76,3 @@ Go back to Power BI [report Reading View](powerbi-service-interact-with-a-report
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
-
-

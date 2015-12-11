@@ -1,26 +1,26 @@
-﻿<properties 
+﻿<properties
    pageTitle="SweetIQ content pack for Power BI"
    description="SweetIQ content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mgblythe" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mgblythe"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/06/2015"
    ms.author="tpalmer"/>
 # SweetIQ content pack for Power BI
 
 The Power BI content pack pulls data from your SweetIQ account and generates set of out of box content allowing you to easily explore your data. Use the SweetIQ content pack to analyze data about your locations, listings, ratings and reviews. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 
-
+Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/services/sweetiq) for Power BI.
 
 
 1. In the navigation pane on the left, click **﻿Get Data.**﻿
@@ -61,4 +61,3 @@ The Client ID and API key for this content pack is not the same as your SweetIQ 
 Select a Client ID for one of the clients your account has access to. You can find the list of clients under "Client Management" in your SweetIQ account.
 
 Talk to your administrator for your API key, to access the data for specific client.
-

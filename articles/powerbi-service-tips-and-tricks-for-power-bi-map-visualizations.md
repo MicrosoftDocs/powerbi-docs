@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tips and Tricks for Power BI Map visualizations"
    description="Tips and Tricks for Power BI Map visualizations"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations  
@@ -37,9 +37,13 @@ You can always provide specific latitude and longitude locations. When you do th
 In Power BI Desktop, you can ensure fields are correctly geocoded by setting the *Data Category* on the data fields. In Power BI Desktop, select the desired table, go to the **Advanced** ribbon and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **Country**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md).
 
 ## Better geocoding with more specific locations  
-Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Within the query, you can build a more specific location like a street address using **Query Editor** in Power BI Desktop.  Use the **Add Column** feature to build a custom column, then build the desired location as follows:  
+Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Within the query, you can build a more specific location like a street address using **Query Editor** in Power BI Desktop.  Use the **Add Column** feature to build a custom column, then build the desired location as follows: 
 
 
     = [Field1] & " " & [Field2]
 
 Then use the resulting field in the map visualizations. This approach is very useful for building Street addresses from Shipping Address fields, which are common in data sets. Note that concatenation only works with text fields. If necessary, convert the street number to a *text* data type before using it to build an address.  
+
+## See also
+
+[Power Bi visualizations](powerbi-service-visualizations-for-reports.md)

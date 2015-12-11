@@ -14,15 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="12/02/2015"
    ms.author="mihart"/>
 
 # Tutorial: Treemaps in Power BI  
 
 Treemaps display hierarchical data as a set of nested rectangles.  Each level of the hierarchy is represented by a colored rectangle (often called a "branch") containing other rectangles ("leaves").  The space inside each rectangle is allocated based on the quantitative value being measured, with the rectangles arranged in size from top left (largest) to bottom right (smallest).
-
->**Note:**  
->This tutorial applies to the Power BI service and not to Power BI Desktop.
 
 ![](media/powerbi-service-tutorial-treemaps/pbi-Nancy_viz_treemap.png)
 
@@ -49,25 +46,22 @@ These instructions use the Retail Analysis Sample. To follow along,  [downloa
 >**Note:**  
 >This tutorial uses the classic report canvas.  For more information, see [Converting your reports to the new report editor](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
 
-1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)and select the **Last Years Sales** measure.   
-![](media/powerbi-service-tutorial-treemaps/treemapFirstValue.png)
+1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
+![](media/powerbi-service-tutorial-treemaps/treemapFirstValue_new.png)
 
 2.  Convert the chart to a Treemap.  
-![](media/powerbi-service-tutorial-treemaps/treemapConvertTo.png)
+![](media/powerbi-service-tutorial-treemaps/treemapConvertTo_new.png)
 
 3.  Drag **Category** to the **Group** well. Power BI creates a Treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.  
-![](media/powerbi-service-tutorial-treemaps/treemap_addGroup.png)
+
+  ![](media/powerbi-service-tutorial-treemaps/treemapComplete_new.png)
 
 4.  Drag **Chain** to the **Details** well to complete your Treemap. You can now compare last year's sales by category and chain.   
-![](media/powerbi-service-tutorial-treemaps/treemapComplete.png)
+![](media/powerbi-service-tutorial-treemaps/treemap_addGroup_new.png)
+	-   Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
+    ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
 
-	Hovering over a Group displays the values for each element.  
-	- Hover over a **Category** title to reveal the tooltip for the entire category.  For example, hovering over **090-Home** reveals the tooltip for that entire category, including **Fashions Direct** and **Lindseys**.  
-    ![](media/powerbi-service-tutorial-treemaps/treemapHoverNew.png)  
-	-   Hover over a **Chain** title to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
-    ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetails.png)
-
-5.  [Add the Gauge chart as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md). 
+5.  [Add the Treemap as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md). 
 
 6.  [Save the report](powerbi-service-save-a-report.md).
 
@@ -85,7 +79,7 @@ Highlighting a Category or Details in a Treemap filters the other visualizations
 2.  In the **Last Year Sales by Chain** pie chart, select the **Fashions Direct** slice.  
     ![](media/powerbi-service-tutorial-treemaps/treemapNoOwl.gif)
 
-## See Also  
+## See also  
 [Reports in Power BI](powerbi-service-reports.md)  
 [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use DirectQuery in Power BI Desktop (Preview Feature)"
-   description="Use DirectQuery in Power BI Desktop (Preview Feature)"
+   pageTitle="Use DirectQuery in Power BI Desktop"
+   description="Use DirectQuery in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -14,28 +14,26 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/08/2015"
    ms.author="davidi"/>
 
-# Use DirectQuery in Power BI Desktop (Preview Feature)  
+# Use DirectQuery in Power BI Desktop  
 
 With Power BI Desktop, when you connect to your data source, it is always possible to import a copy of the data into the Power BI Desktop. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
 
-To enable **DirectQuery** select **File &gt; Options and settings &gt; Options**, then select **Preview Features** from the left pane. Enable **DirectQuery** by selecting the box next to *DirectQuery for SQLServer and Azure SQL Database*, as shown in the following image.  
-![](media/powerbi-dekstop-use-directquery/DirectQuery_1.png)
-
-In this preview release, **DirectQuery** is only supported in Power BI Desktop, and you cannot publish or upload reports that use **DirectQuery** to the Power BI service.
-
 ### Supported Data Sources  
-In the preview release of **DirectQuery**, the following data sources are supported:  
+The following data sources are currently supported:  
 -   SQL Server
 -   Azure SQL Database
+-   Azure SLQ Data Warehouse
+-   [SAP HANA (preview)](powerbi-desktop-sap-hana.md)
 
 ### How to Connect using DirectQuery  
-When you choose the option to use the **DirectQuery** preview feature, and then use **Get Data** to connect to a data source supported by **DirectQuery**, a dialog window appears that asks how you want to connect.  
+When you use **Get Data** to connect to a data source supported by **DirectQuery**, a dialog window appears that asks how you want to connect.  
+
 ![](media/powerbi-dekstop-use-directquery/DirectQuery_2.png)
 
-The differences between selecting Import and DirectQuery are the following:
+The differences between selecting **Import** and **DirectQuery** are the following:
 
 **Import** – the selected tables and columns are imported into Power BI Desktop. As you create or interact with a visualization, Power BI Desktop uses the imported data. You must refresh the data, which imports the full data set again, to see any changes that occurred to the underlying data since the initial import or the most recent refresh.
 
@@ -49,12 +47,26 @@ There are two primary benefits to using **DirectQuery**:
 -   Underlying data changes can require a refresh of data, and for some reports, the need to display current data can require large data transfers, making re-importing data unfeasible. By contrast, **DirectQuery** reports always use current data
 
 ### Limitations of DirectQuery  
-There are certain limitations to using the preview version of **DirectQuery**:  
+There are currently a few limitations to using **DirectQuery**:  
 -   All tables must come from a single database
 -   If the Query Editor query is overly complex an error will occur. To remedy the error you must: delete the problematic step in Query Editor, or Import the data instead of using **DirectQuery**
--   You cannot enter a SQL query when connecting to data
 -   You cannot add calculated measures, columns, or tables
 -   Relationship filtering is limited to a single direction, rather than both directions
 -   You cannot change the data type of a column
 
-In addition, as mentioned earlier you cannot publish a report created with the preview version of **DirectQuery** to the Power BI Service.
+### Publish to the Power BI service
+Reports created using **DirectQuery** can be published to the Power BI Service.
+
+If the data source used is **Azure SQL Database** or **Azure SQL Data Warehouse**, credentials must be provided before the published report will be displayed in the Power BI Service.
+
+You can provide credentials by selecting the **Settings** gear icon in Power BI, then select **Settings**.
+
+![](media/powerbi-dekstop-use-directquery/DirectQuery_3.png)
+
+Power BI displays the **Settings** window. From there, select the **Datasets** tab and choose the dataset that uses **DirectQuery**, and select **Edit credentials**.
+
+![](media/powerbi-dekstop-use-directquery/DirectQuery_4.png)
+
+Until credentials are supplied, opening a published report or exploring a dataset created with a **DirectQuery** connection to **Azure SQL Database** or **Azure SQL Data Warehouse** results in an error.
+
+For data sources other than **Azure SQL Database** or **Azure SQL Data Warehouse** that use DirectQuery, and Enterprise Gateway must be installed and the data source must be registered to establish a data connection. You can [learn more about Enterprise Gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).

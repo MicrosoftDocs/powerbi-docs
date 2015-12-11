@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Dashboard tiles in Power BI"
-   description="Dashboard tiles in Power BI"
+   description="All about dashboard tiles in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,17 +14,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="11/16/2015"
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI  
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, from a dataset, from another dashboard, from the Q&A box, and from SQL Server Reporting Services (SSRS).  
+A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS).  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
-### [What happens when I hover over a tile?](powerbi-service-dashboard-tiles.md#hover)
-### [What happens when I select a tile?](powerbi-service-dashboard-tiles.md#select)
+
+
+## How do I create a tile?
+
+Tiles can be pinned to dashboards from reports, Q&A, SSRS, Excel, and more.
+
+1. When you select an item to pin, Power BI opens the **Pin to dashboard** screen.
+
+![](media/powerbi-service-dashboard-tiles/PBI_themes2.png)
+
+2. Decide whether to pin to an existing dashboard or new dashboard. If existing, select the dashboard name from the dropdown.  If new, enter the name for the new dashboard.
+
+3. In some cases, the item you are pinning may have a *theme* already applied.  For example, visuals pinned from an Excel workbook. If so, select which theme to apply to the tile.
+
 
 -   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
@@ -32,15 +44,18 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 
 -   [Pin a tile to a dashboard from another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 
--   Pin a tile to a dashboard from SSRS
+- [Pin a tile to a dashboard from an  Excel workbook on OneDrive for Business](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+
+-   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
 
 -   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
 
 -   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
 
-### Edit and move tiles on a dashboard
+### How do I edit and move a tile?
 -   [Add a hyperlink to a tile](powerbi-service-edit-a-tile-in-a-dashboard.md).
+
 -   [Rename a tile](powerbi-service-edit-a-tile-in-a-dashboard.md). 
 
 -   [Resize a tile](powerbi-service-edit-a-tile-in-a-dashboard.md). 
@@ -54,18 +69,22 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 -   [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 
 ## What happens when I hover over a dashboard tile?  
-Hovering over a tile reveals clickable icon that allow you to interact with the tile.
+Hovering over a tile reveals clickable icon that allow you to interact with the tile. Depending on how the tile was created (see above), you'll be able to do most, or all, of the following:
+
 ![](media/powerbi-service-dashboard-tiles/hover-over-dashboard-tile.jpg)
 
-- Open the tile in full screen mode with the in-focus icon ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
+- [Open the tile in full screen mode with the in-focus icon](powerbi-service-display-tile-in-full-screen-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
 
-- Pin the tile to another dashboard with the pin icon ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
+- [Pin the tile to another dashboard with the pin icon](powerbi-service-pin-a-tile-from-one-dashboard-to-another.md)
+ ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
 
-- Edit the title with the pencil icon ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+- [Edit the title with the pencil icon](powerbi-service-edit-a-tile-in-a-dashboard)
+ ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
 
-- Remove the tile from the dashboard with the delete icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg)
+- [Remove the tile from the dashboard with the delete icon](powerbi-service-edit-a-tile-in-a-dashboard.md)
+ ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg)
 
-- Resize the tile with the resize handle ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg)
+- [Resize the tile with the resize handle](powerbi-service-edit-a-tile-in-a-dashboard) ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg)
 
 - Use the column chart icon ![](media/powerbi-service-dashboard-tiles/chart-icon.jpg) to open the report or Q&A query that was used to create the tile.
 
@@ -78,9 +97,11 @@ When you select a tile, what happens next depends on how the tile was created an
 
 -   **a dataset**: if you saved the report in which you created the visualization, you go to a page in the report. If not, then selecting the tile produces no action.
 
--   SSRS: if you have permissions, the SSRS report manager page opens.
+- **An Excel workbook on OneDrive for Business**: if you have at least Read permissions for that workbook, it will open in Excel Online.
 
-### If the tile was created in a Power BI report  
+-   **SSRS**: [if you have permissions, the SSRS report manager page opens](https://msdn.microsoft.com/library/mt604784.aspx).
+
+### If the tile was created in a Power BI report or dataset Explore mode  
 In the dashboard, select the tile.  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashTile.png)
 
@@ -97,6 +118,16 @@ In the dashboard, select the tile.
 Q&A opens with the question that was used to create the visualization, displaying the visualization.  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashTileQnAQuestion.png)
 
-## See Also  
+### If the tile was created from an Excel workbook on OneDrive for Business
+
+In the dashboard, select the tile.
+
+![](media/powerbi-service-dashboard-tiles/PBI_DashWorkbookTileSelect.png)  
+
+If you have at least Read permissions for the workbook, it will open in Power BI.
+
+![](media/powerbi-service-dashboard-tiles/PBI_DashTileWorkbook_openInExcelOnline.png)
+
+## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

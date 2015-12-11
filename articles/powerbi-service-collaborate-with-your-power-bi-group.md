@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Collaborate with your Power BI group"
    description="Collaborate with your Power BI group"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 # Collaborate with your Power BI group
 
@@ -35,7 +35,7 @@ Collaborating in Office 365 starts from the group’s workspace.
     ![](media/powerbi-service-collaborate-with-your-power-bi-group/PBI_Grp_LeftNavEllips.png)
 
 
-##Have a group conversation
+## Have a group conversation
 
 1.  Select the ellipsis (…) next to your group name \> **Conversations**. 
 
@@ -47,7 +47,7 @@ Collaborating in Office 365 starts from the group’s workspace.
 
 ## Schedule an event on the group’s calendar
 
-1.  Select the ellipsis (…) next to your group name \> Calendar. 
+1.  Select the ellipsis (**…**) next to your group name \> Calendar. 
 
     This opens the calendar for your group in Outlook for Office 365.
 
@@ -59,7 +59,7 @@ Collaborating in Office 365 starts from the group’s workspace.
 
 If you’re owner or admin for a group, you can also add or remove group members. Read more about [managing your Power BI groups](powerbi-service-manage-your-group-in-power-bi-and-office-365.md).
 
- 
 
+More about [groups in Power BI](powerbi-service-groups.md).
  
 

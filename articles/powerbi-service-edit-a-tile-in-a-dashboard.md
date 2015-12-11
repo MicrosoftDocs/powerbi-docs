@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 
 # Edit a tile -- resize, move, rename, pin, delete, add hyperlink
@@ -90,7 +90,7 @@ By default, clicking a tile takes you to the report where the tile was created o
 
 
 
-## See Also
+## See also
 
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 

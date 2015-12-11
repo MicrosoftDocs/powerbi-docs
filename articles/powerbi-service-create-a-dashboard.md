@@ -1,24 +1,25 @@
-﻿<properties 
+﻿<properties
    pageTitle="Create a Power BI dashboard"
    description="Create a Power BI dashboard"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
+
 # Create a Power BI dashboard
 
-You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now you want to create your own. Remember that your dashboard will be blank until you [get some data](powerbi-service-get-data.md)and either [pin visualizations from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) or [pin visualizations from reports](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md).
+You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now you want to create your own. Remember that your dashboard will be blank until you [get some data](powerbi-service-get-data.md) and [pin some tiles](powerbi-service-dashboard-tiles.md).
 
 ## Create an empty dashboard
 
@@ -34,16 +35,15 @@ You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now yo
 
 4.  Now you're ready for the fun part.
 
-	-   [Add a tile by typing in the question box.](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
-	-   [Add a tile from a report.](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+	-   [Add a tile ](powerbi-service-dashboard-tiles.md)
 	-   [Resize, move, rename, add hyperlinks to the tiles.](powerbi-service-edit-a-tile-in-a-dashboard.md)
+  - [Display the dashboard full-screen](powerbi-service-dash-and-reports-fullscreen.md)
+  - [Add an image to the dashboard](powerbi-service-add-an-image-to-a-dashboard)
 
 **TIP**: Dashboards can be wider and longer than the browser window. If so, they have scroll bars. Because you want to show everything important at a glance, we recommend making the dashboard fit the browser window. For more tips, see [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
 
-## See Also:
+## See also
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
-
-

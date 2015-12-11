@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Reorder pages in a report in Power BI"
    description="Reorder pages in a report in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Reorder pages in a report in Power BI  

@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Create a big number tile from a Power BI report"
    description="Create a big number tile from a Power BI report"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 # Create a big number tile from a Power BI report
 
@@ -58,9 +58,9 @@ Sometimes a single number is the most important thing you want to track in your 
 
 10. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
- 
 
-## See Also:
+
+## See also
 
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 
@@ -69,6 +69,3 @@ Sometimes a single number is the most important thing you want to track in your 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [](powerbi-service-dashboards.md)
-
-
-

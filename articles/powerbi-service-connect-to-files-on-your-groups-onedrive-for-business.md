@@ -44,7 +44,7 @@ To make use of OneDrive for Business, adding files to your group’s workspace i
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_DragFilesHere.png)
 
 
-### Import Excel workbooks as datasets or as Excel Online workbooks
+## Import Excel workbooks as datasets or as Excel Online workbooks
 
 Now that your files are in your group’s OneDrive for Business, you have a choice. You can: 
 

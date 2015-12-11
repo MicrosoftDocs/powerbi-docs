@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Pin a tile to a Power BI dashboard from the Q&A question box"
    description="Pin a tile to a Power BI dashboard from the Q&A question box"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from the Q&A question box  
@@ -24,14 +24,14 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
 2.  In the question box at the top of your dashboard, start typing what you want to know about your data.  
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnAQuestionBox.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnAQuestionBoxNew.png)
 
 3.  For example, as you type "last year sales by month and territory"...  
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnARetailSample.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnARetailSampleNew.png)
 
     the question box restates your question as "Show month, territory that stores are in, and last year sales..."
 
-4.  To add the chart to your dashboard as a tile, select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_PinTile.png) on the right side of the question box. 
+4.  To add the chart to your dashboard as a tile, select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_PinTile.png) on the right side of the question box.
 
 5.  Pin the tile to an existing dashboard or to a new dashboard. 
 

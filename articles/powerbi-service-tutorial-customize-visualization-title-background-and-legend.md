@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/15/2015"
    ms.author="mihart"/>
 
 # Tutorial: Customize visualization title, background, and legend  
@@ -118,7 +118,7 @@ To customize a legend, select "This Year Sales by FiscalMonth and Name" line cha
 | treemap        | yes    | yes        | yes    |
 | waterfall      | yes    | yes        | yes    |
 
-## See Also  
+## See also  
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
 [Customize X-axis and Y-axis](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)  
 [Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)  

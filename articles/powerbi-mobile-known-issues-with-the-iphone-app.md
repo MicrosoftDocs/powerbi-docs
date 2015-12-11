@@ -1,5 +1,5 @@
-﻿<properties 
-   pageTitle="Known issues with the iPhone app (Power BI for iOS)"
+<properties 
+   pageTitle="Known issues with the iPhone app"
    description="Known issues with the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/17/2015"
    ms.author="maggies"/>
 # Known issues with the iPhone app (Power BI for iOS)
 

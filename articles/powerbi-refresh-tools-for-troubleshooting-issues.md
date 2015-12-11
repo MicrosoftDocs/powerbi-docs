@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/02/2015"
    ms.author="asaxton"/>
 
 # Tools for troubleshooting refresh issues  
@@ -38,7 +38,7 @@ A lot of issues can surface when the gateway version is out of date.  It is a g
 ## Event Logs  
 There are several event logs that can provide information. The first two, **Data Management Gateway** and **PowerBIGateway**, are present if you are an admin on the machine.  If you are not an admin, and you are using the Personal Gateway, you will see the log entries within the **Application** log.
 
-The **Data Management Gateway** and **﻿PowerBIGateway** logs are present under **Application and Services Logs**.
+The **Data Management Gateway** and **PowerBIGateway** logs are present under **Application and Services Logs**.
 
 ![](media/powerbi-refresh-tools-for-troubleshooting-issues/Event-Logs.png)
 
@@ -63,4 +63,10 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 
 [Data Refresh](powerbi-refresh-data.md)  
 
-[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)  
+[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)
+
+[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
+
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+
+[Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)

@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tips and tricks for color formatting in Power BI"
    description="Tips and tricks for color formatting in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="davidiseminger" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="12/08/2015"
    ms.author="davidi"/>
 
 # Tips and tricks for color formatting in Power BI
@@ -47,7 +47,7 @@ When the **Visualizations** pane appears along the right side of the **Report** 
 
 Sometimes you want to highlight one particular data point. Perhaps it’s sales figures for the launch of a new product, or increased quality scores after launching a new program. With Power BI, you can highlight a particular data point by changing its color.
 
-The following visualization ranks states in terms of cost of living.  
+The following visualization ranks states in terms of cost of living. 
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_3.png)
 
@@ -57,7 +57,7 @@ Expand the **Data Colors** section. The following appears.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_4.png)
 
-Set **Show All** to **On**. This displays the colors for each data element in the visualization. When you hover over the data points, scrolling is enabled so you can modify any of the data points. 
+Set **Show All** to **On**. This displays the colors for each data element in the visualization. When you hover over the data points, scrolling is enabled so you can modify any of the data points.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_5.png)
 
@@ -69,13 +69,13 @@ Once selected, the **Washington** data point is a nice shade of green, and certa
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_7.png)
 
-Even if you change visualization types, then return, Power BI remembers your selection and keeps **Washington** green. 
+Even if you change visualization types, then return, Power BI remembers your selection and keeps **Washington** green.
 
 You can change the color of a data point for more than one data element, too. In the following image, **Arizona** is red, and **Washington** is still green.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_8.png)
 
-There are all sorts of things you can do with colors. In the next section, we take a look at gradients. 
+There are all sorts of things you can do with colors. In the next section, we take a look at gradients.
 
 ## Base the colors of a chart on a numeric value
 
@@ -91,7 +91,7 @@ To change color based on a value, drag the field you want to base color on into 
 
 ## Customize the colors used in the color scale
 
-You can customize colors used in the color scale, too. Expand **Data Colors** and you see a gradient of colors used for visualizing your data. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color. 
+You can customize colors used in the color scale, too. Expand **Data Colors** and you see a gradient of colors used for visualizing your data. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color.
 
 The color range is shown in a gradient bar that displays the spectrum between **Minimum** and **Maximum** color values, with the **Minimum** value color on the left, and **Maximum** value color to the right.
 
@@ -101,13 +101,13 @@ To change the scale to use a different range of colors, select the color drop-do
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_11.png)
 
-You can also change the way the values map to these colors. In the following image, the colors for **Minimum** and **Maximum** are set to orange and green, respectively. 
+You can also change the way the values map to these colors. In the following image, the colors for **Minimum** and **Maximum** are set to orange and green, respectively.
 
 In this first image, notice how the bars in the chart reflect the gradient shown in the bar; the highest value is green, the lowest is orange, and each bar between is colored with a shade of the spectrum between green and orange.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_12.png)
 
-Now, let’s see what happens if we provide numeric values in the **Minimum** and **Maximum** value boxes, which are below the **Minimum** and **Maximum** color selectors (shown in the following image). Let’s set **Minimum** to 20,000,000, and set **Maximum** to 20,000,000. 
+Now, let’s see what happens if we provide numeric values in the **Minimum** and **Maximum** value boxes, which are below the **Minimum** and **Maximum** color selectors (shown in the following image). Let’s set **Minimum** to 20,000,000, and set **Maximum** to 20,000,000.
 
 By setting those values, gradient is no longer applied to values on the chart that are below **Minimum** or above **Maximum**; any bar with a value over **Maximum** value is colored green, and any bar with a value under **Minimum** value is colored red.
 
@@ -115,7 +115,7 @@ By setting those values, gradient is no longer applied to values on the chart th
 
 ## Use Diverging color scales
 
-Sometimes your data may have a naturally diverging scale. For example, a temperate range has a natural center at freezing point, and a profitability score has a natural mid-point (zero). 
+Sometimes your data may have a naturally diverging scale. For example, a temperate range has a natural center at freezing point, and a profitability score has a natural mid-point (zero).
 
 To use diverging color scales, slide the **Diverging** slider to **On**. When **Diverging** is turned on, an additional color selector and value box, both called **Center**, appear, as shown in the following image.
 
@@ -125,11 +125,11 @@ When the **Diverging** slider is on, you can set the colors for **Minimum**, **M
 
 ## How to undo in Power BI
 
-Like many other Microsoft services and software, Power BI provides an easy way to undo your last command. For example, let’s say you change the color of a data point, or a series of data points, and you don’t like the color when it appears in the visualization. You don’t recall exactly which color it was before, but you know you want that color back! 
+Like many other Microsoft services and software, Power BI provides an easy way to undo your last command. For example, let’s say you change the color of a data point, or a series of data points, and you don’t like the color when it appears in the visualization. You don’t recall exactly which color it was before, but you know you want that color back!
 
 To **undo** your last action, or the last few actions, all you have to do is:
 
-1.  Type CTRL+Z 
+1.  Type CTRL+Z
 
 ## Feedback
 

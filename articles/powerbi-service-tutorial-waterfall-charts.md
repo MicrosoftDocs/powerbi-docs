@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/30/2015"
    ms.author="mihart"/>
 # Tutorial: Waterfall charts in Power BI
 
@@ -66,7 +66,7 @@ For information about using the Filters pane, see [Add a filter to a report](po
 
 Highlighting a column in a Waterfall Chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
-## See Also
+## See also
 
 [Reports in Power BI](powerbi-service-reports.md)
 

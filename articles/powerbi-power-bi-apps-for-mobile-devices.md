@@ -29,7 +29,7 @@ Download a Power BI app:
 
 -   The [iPad app](powerbi-mobile-ipad-app-get-started.md) (Power BI for iOS)
 
--   The [iPhone app](powerbi-mobile-ipad-app-get-started.md) (Power BI for iOS)
+-   The [iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS)
 
 -   The [Power BI app for Windows](powerbi-service-windows-app-get-started.md) devices (not Windows phones)
 

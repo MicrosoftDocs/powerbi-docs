@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/08/2015"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -47,6 +47,8 @@ For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-
 ### Single number card tiles
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_card.png)
+
+For more information, see [Create a big number tile for a dashboard](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
 
 ### Combo charts
 
@@ -81,8 +83,6 @@ For more information, see [Tutorial: Funnel Charts in Power BI](powerbi-service-
 For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-tutorial-radial-gauge-charts.md).
 
 
-
-
 ### Line charts
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_line.png)
@@ -95,17 +95,17 @@ For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-
 
 **Ti﻿p**: are used to associate both categorical and quantitative information with spatial locations.
 
-### Matrix
-
-![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/matrix.png)
-
-Filled Maps (Choropleth)
+### Filled Maps (Choropleth)
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_FilledMap.png)
 
 **Tip**: The more intense the color, the larger the value.
 
 For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tutorial-filled-maps-choropleths.md).
+
+### Matrix
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/matrix.png)
 
 ### Pie charts
 
@@ -115,15 +115,21 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bubble.png)
 
-**Tip**: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which
+**Tip**: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which order, etc.
+
+For more information, see [Tutorial: Scatter charts in Power BI](powerbi-service-tutorial-scatter.md).
 
 ### Slicers
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/PBI_slicer.png)
 
+For more information, see [Tutorial: Slicers in Power BI](powerbi-service-tutorial-slicers.md).
+
 ### Standalone images
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_image.png)
+
+For more information, see [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md).
 
 ### Tables
 
@@ -134,6 +140,8 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 ### Tree Maps
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_tree.png)
+
+For more information, see [Tutorial: Treemaps in Power BI](powerbi-service-tutorial-treemaps.md).
 
 **Tip**: are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles.
 
@@ -156,7 +164,7 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/QAtreeMap.png)
 
 
-## See Also:
+## See also
 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 

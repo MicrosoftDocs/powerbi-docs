@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/02/2015"
    ms.author="asaxton"/>
 
 # Power BI Personal Gateway
@@ -61,7 +61,7 @@ REFRESH NOW and SCHEDULE REFRESH are supported without a Gateway for datasets up
 
 **Question:** What if my Excel workbook or Power BI Desktop file gets data from both online and on-premises data sources?
 
-**Answer:** A Gateway *is* required. You will need to install and configure a Gateway in order to refresh data from  your on-premises data sources.
+**Answer:** A Gateway *is* required. You will need to install and configure a Gateway in order to refresh data from  your on-premises data sources. 
 
 **Question:** What if my Excel workbook just has rows of data I typed in?**
 
@@ -134,11 +134,11 @@ When your Gateway is up and running, you can click SCHEDULE REFRESH for a datase
 
 This page shows:
 
-1.  Refresh status – Shows refresh success and next scheduled refresh time.
+1. Refresh status – Shows refresh success and next scheduled refresh time.
 
-2.  **Gateway** - Shows whether or not a Gateway is installed and online. If a Gateway is installed but not online, Manage Data Sources and Schedule Refresh settings are disabled.
+2. **Gateway** - Shows whether or not a Gateway is installed and online. If a Gateway is installed but not online, Manage Data Sources and Schedule Refresh settings are disabled.
 
-3.  **Manage Data Sources** - Shows data sources the dataset connects to. You can Sign in or change the authentication type. You’ll only need to Sign in to each data source once.
+3. **Manage Data Sources** - Shows data sources the dataset connects to. You can Sign in or change the authentication type. You’ll only need to Sign in to each data source once.
 
 4. **Schedule Refresh** – You can configure a refresh schedule settings here. If the Gateway isn’t online, these settings will be disabled.
 

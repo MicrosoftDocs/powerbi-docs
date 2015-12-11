@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Q&A in Power BI"
-   description="Q&A in Power BI"
+   description="Q&A in Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -29,25 +29,25 @@ The experience is truly interactive…and fast! Powered by an in-memory storage,
 
 ## For more details about Power BI Q&A:
 
-[How to use Q&A](powerbi-service-how-to-use-q-and-a.md)
+[How to use Q&A](powerbi-service-how-to-use-q-and-a.md):
 Step by step instructions for using Q&A and an overview of how it all works.
 
-[Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md)
+[Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md):
 Learn how to talk to Q&A to get the best possible results.
 
 [Add featured questions to your datasets](powerbi-service-q-and-a-create-featured-questions.md)
 and Q&A will suggest these questions to your colleagues.
 
-[Tutorial: Use Power BI Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)
+[Tutorial: Use Power BI Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md):
 Use Q&A in a realistic industry tutorial.
 
-[Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+[Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md):
 Are you the person creating datasets and data models?  Then this topic is for you.
 
-[Use Q&A with Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
+[Use Q&A with Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md): 
 How does Q&A communicate with Salesforce.
 
-## See Also:
+## See also
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

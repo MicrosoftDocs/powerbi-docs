@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/08/2015"
    ms.author="davidi"/>
 
 # Publish from Power BI Desktop  
@@ -47,3 +47,9 @@ This is all pretty straight forward, but there are a few things you should know:
 -   Power BI ignores some format changes of existing columns. For example, if you change a column’s format  from 0.25 to 25%.
 
 -   If you have a refresh schedule configured for your existing dataset in Power BI and you add new data sources to your file and then re-publish, you’ll have to sign into them in Manage Data Sources prior to the next scheduled refresh.
+
+## Pyramid Analytics
+
+Microsoft collaborated with Pyramid Analytics to develop the Power BI Desktop. Pyramid Analytics’ on-premise server-based technology complements Microsoft SQL Server Analysis Services, leveraging all the features of the Microsoft BI stack. You can now publish a Power BI Desktop file to Pyramid Analytics Server, and more features will be added soon to enable seamless integration. We’re excited to collaborate in accelerating the delivery of innovative BI features that customers want and need most.
+
+[Learn more about Pyramid Analytics.](http://pyramidanalytics.com/)

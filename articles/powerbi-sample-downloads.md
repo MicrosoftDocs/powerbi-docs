@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 
 # Download the Power BI industry samples (Excel workbooks)
@@ -77,7 +77,7 @@ The workbook contains the actual data, but it's in the data model, not in worksh
 
     Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
 
-## See Also:
+## See also
 
 [Sample datasets](powerbi-sample-datasets.md)
 

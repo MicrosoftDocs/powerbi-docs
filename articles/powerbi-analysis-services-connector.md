@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Configure a Power BI Analysis Services Connector"
+   pageTitle="Analysis Services Connector"
    description="Configure a Power BI Analysis Services Connector"
    services="powerbi"
    documentationCenter=""
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/08/2015"
    ms.author="asaxton"/>
 # Configure a Power BI Analysis Services Connector
 

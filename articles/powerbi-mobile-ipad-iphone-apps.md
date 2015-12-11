@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="iPad and iPhone apps (Power BI for iOS)"
+   pageTitle="iPad and iPhone apps"
    description="iPad and iPhone apps (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/23/2015"
    ms.author="maggies"/>
 # iPad and iPhone apps (Power BI for iOS)
 
@@ -42,7 +42,7 @@ Then bring your data together by creating [dashboards](powerbi-service-dashboard
 
 Now experience them in the iPad and iPhone apps.
 
-### See Also
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

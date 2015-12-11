@@ -14,14 +14,84 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/09/2015"
+   ms.date="12/10/2015"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
 
-Check this page for known issues and recently-released features in Power BI.
+Check this page for known issues and recently-released features in Power BI Service.
 
-## Recent Updates  
+>NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
+## Recent updates
+
+**December 10, 2015**
+
+  * [QR codes in Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx)
+
+**December 3, 2015**
+
+*  Automatically discover trends and uncover patterns in a dataset with Quick Insights: [video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) or  [article](powerbi-service-auto-insights)
+
+* [Visualize your VMob data in Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
+
+*   [Power BI integration with Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
+
+*   [Preview of Power BI gateway for enterprise](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
+
+* Introducting a new content pack: [Search Analytics from Bing on Power BI dashboards](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
+
+* New Developer-focused enhancements: [Two new APIs and easier app  registration](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
+
+For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx)
+
+**November 24, 2015**
+
+*   Pin Excel ranges to dashboards
+
+*   Chromeless full screen mode for dashboards and reports
+
+*   Know where your data is stored
+
+* Improved loading of on-premises reports
+
+* Share dashboards directly to another user's workspace
+
+* Improved Google Analytics connector experience
+
+* Close your power bi account
+
+For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx)
+
+
+**November 18, 2015**
+
+*   Create a duplicate dashboard
+
+*   Freely position dashboard tiles
+
+*   Improved navigation for full screen view
+
+* Better experience when inviting perrs from your organization to Power BI groups
+
+* Improved error messages for tiles
+
+For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/18/power-bi-weekly-service-update-1110.aspx)
+
+
+**November 11, 2015**
+
+*   New site for Power BI documentation, localized
+
+*   Improved load time for reports
+
+*   Update organizational content packs with report-only changes
+
+* Power BI health status in Office 365 Admin Portal
+
+* KPIs and images in tables, matrices, and cards
+
+For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1118.aspx)
 
 
 **November 3, 2015**
@@ -292,5 +362,5 @@ Learn more in our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/moni
 
 -   Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
-## See Also  
+## See also  
 [Get started with Power BI](powerbi-service-get-started.md)  

@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Add a filter to a report in Power BI"
    description="Add a filter to a report in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 
 # Add a filter to a report in Power BI
@@ -29,7 +29,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
 **NOTE:**  This article describes how to create filters in report **Editing View**.  For more information on filters, see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)and [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
 
-## Add a filter to an entire page (aka Page View filter)
+## Add a filter to a specific visualization (aka visual filter)
 
 ### By filtering the fields already in the chart
 
@@ -45,15 +45,15 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
     ![](media/powerbi-service-add-a-filter-to-a-report/vizFilter.png)
 
-The visualization changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values. 
+The visualization changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
-## Add a filter to an entire page (aka Page View filter)
+## Add a filter to an entire page (aka page view filter)
 
 1.  Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 
-3.  Select a field in the field list in the report and drag it below **Page Level Filters**. 
+3.  Select a field in the field list in the report and drag it below **Page Level Filters**.
 
 4.  Select the values you want to filter **Basic** or **Advanced** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
 
@@ -61,18 +61,27 @@ The visualization changes to reflect the new filter. If you save your report wit
 
     ![](media/powerbi-service-add-a-filter-to-a-report/filterPage.gif)
 
-If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values. 
+If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
 ## Add a filter to an entire report (aka Report filter)
 
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. Select a field in the field list and drag it below **Report Level Filters**.
-4. Select the values you want to filter (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)). 
+4. Select the values you want to filter (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
 
-The visualizations on the active page, and on all pages in the report, changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values. 
+The visualizations on the active page, and on all pages in the report, changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
-##  See Also:
+##  Troubleshooting
+
+### Why your visual level filter and page level filter may return different results
+
+When you add a visual level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can [change the aggregation type](powerbi-service-change-the-aggregation-in-a-chart.md).  
+
+When you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visualizations which can each utilize different aggregation types.  So the filter is applied on each data row.
+
+
+## See also
 
  [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
 

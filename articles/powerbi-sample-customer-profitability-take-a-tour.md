@@ -108,6 +108,6 @@ This is a safe environment to play in. You can always choose not to save your ch
 ## Next steps: Connect to your data  
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI Preview](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
 
-## See Also  
+## See also  
 [Take a tour of another industry sample](powerbi-sample-downloads.md)  
 [Back to Samples in Power BI](powerbi-sample-datasets.md)  

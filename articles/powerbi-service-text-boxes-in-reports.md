@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/04/2015"
    ms.author="mihart"/>
 # Text Boxes in Power BI reports
 
@@ -36,7 +36,7 @@ In Editing View, add a text box to a report and then pin it to a dashboard. 
 
 5.  Select the pin icon  ![](media/powerbi-service-text-boxes-in-reports/PBI_PinTile.png) to pin the Text Box to a dashboard. 
 
-## See Also:
+## See Also
 
 [Add a hyperlink to a Text Box](powerbi-service-add-a-hyperlink-to-a-text-box.md)
 

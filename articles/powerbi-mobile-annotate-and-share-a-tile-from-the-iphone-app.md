@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Annotate and share a tile from the iPhone app (Power BI for iOS)"
+   pageTitle="Annotate and share a tile from the iPhone app"
    description="Annotate and share a tile from the iPhone app (Power BI for iOS)"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/11/2015"
+   ms.date="11/17/2015"
    ms.author="maggies"/>
 # Annotate and share a tile from the iPhone app (Power BI for iOS)
 
@@ -24,7 +24,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
 ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_AnnotateSmiley.png)
 
-1.  Tap a tile to open it in focus mode.
+1.  In a [dashboard](powerbi-mobile-dashboards-in-the-iphone-app.md) in the iPhone app, tap a tile to open it in focus mode.
 
 2.  Tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_ShareIcon.png) in the upper-right corner of the tile.
 
@@ -48,5 +48,5 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
 [Share a dashboard from the iPhone app \(Power BI for iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
 
-[Get started with the iPhone app for Power BI](https://support.office.com/article/Get-started-with-the-iPhone-app-for-Power-BI-preview-f4001b4f-6b9a-4363-b97e-cb1ac5dfd3f6 "Get started with the iPhone app for Power BI preview")
+[Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
 

@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Rename a report in Power BI"
    description="Rename a report in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="11/14/2015"
    ms.author="mihart"/>
 # Rename a report in Power BI
 
@@ -39,9 +39,8 @@ If the report is part of an [organizational content pack](powerbi-service-organi
 2.  In the navigation pane, right-click the report and select **Rename**.
 
 
-##  See Also:
+##  See Also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*﻿*
-

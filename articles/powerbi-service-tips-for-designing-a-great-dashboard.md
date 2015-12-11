@@ -1,20 +1,20 @@
-﻿<properties 
+﻿<properties
    pageTitle="Tips for designing a great Power BI dashboard"
    description="Tips for designing a great Power BI dashboard"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 
 # Tips for designing a great Power BI dashboard  
@@ -28,12 +28,15 @@ What are the key metrics that will help them make decisions? How will the dashbo
 
 Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and datasets, and those can contain loads of details. Your readers can drill into the reports from your dashboard. So don't put the detail on the dashboard unless that's what your readers need to monitor.
 
-Where is the dashboard going to be displayed? If it will be on a large monitor, you can put more content on it. If readers will view it on their tablets, then fewer tiles will be more readable. 
+Where is the dashboard going to be displayed? If it will be on a large monitor, you can put more content on it. If readers will view it on their tablets, then fewer tiles will be more readable.
 
 ### Tell a story and keep it to one screen  
-Because dashboards are meant to show important information at a glance, having all the tiles on one screen is best. Can you avoid scroll bars on your dashboard? 
+Because dashboards are meant to show important information at a glance, having all the tiles on one screen is best. Can you avoid scroll bars on your dashboard?
 
 Is the dashboard too cluttered?  Remove all but essential information that can be easily read and interpreted.
+
+### Make use of dashboard TV Mode
+Display your dashboard in [full screen](powerbi-service-dash-and-reports-fullscreen.md) without distractions. 
 
 ### Make the most important information biggest  
 If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
@@ -44,18 +47,18 @@ But be sure to provide context.
 Read about [creating a tile with just a number](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
 
 ### Put the most important information in the upper corner
-Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left). 
+Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
 
 ### Use the right visualization for the data  
 Avoid visualization variety for the sake of variety.  Visualizations should paint a picture and be easy to "read" and interpret.  For some data and visualizations, a simple graphic visualization is enough. But other data may call for a more-complex visualization - be sure to make use of titles and labels and other customization to help the reader.  
-   
-- [Choose appropriate data visualizations](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Be careful using charts that distort reality i.e. 3-D charts. Keep in mind that it is difficult for the human brain to interpret circular shapes. Pie charts, donut charts, gauges and other circular chart types may look pretty but they are not a data visualization best practice. 
+
+- [Choose appropriate data visualizations](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Be careful using charts that distort reality i.e. 3-D charts. Keep in mind that it is difficult for the human brain to interpret circular shapes. Pie charts, donut charts, gauges and other circular chart types may look pretty but they are not a data visualization best practice.
 
 - Be consistent with chart scales on axes, chart dimension ordering and also the colors used for dimension values within charts.
 
 - Be sure to encode quantitative data nicely. Don’t exceed three or four numerals when displaying numbers. Display measures to one or two numerals left of the decimal point and scale for thousands or millions i.e. 3.4 million not 3,400,000.
 
-- Don’t mix levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year. 
+- Don’t mix levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year.
 
 - Don’t mix big and small measures on the same scale, such as on a line or bar chart.  For example one measure can be in the millions and the other measure in the thousands.  With such a large scale, it would be difficult to see the differences of the measure that is in the thousands.  If you need to mix, choose a visualization that allows the use of a second axis.
 
@@ -66,7 +69,7 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 - Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.
 
 For more visualization-specific guidance, see [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md).  
- 
+
 ## Learning More about Best Practice Dashboard Design  
 To master the art of excellent dashboard design, consider learning basic Gestalt Principles of visual perception and how to clearly communicate actionable information in context. Luckily, there is a plethora of resources already widely available and sprinkled within our blogs. A few of our favorite books include:
 

@@ -38,31 +38,24 @@ Determine if there are any non-Microsoft inbound links to your content. Frequent
 
 ## Step 3: Update the FWLink tool
 
-Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed. More info - [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Manage%20inbound%20links%20to%20retired%20topics.aspx).
+Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed.
 
-## Step 4: Remove all crosslinks to the article from other pages on powerbi.microsoft.com and create a redirect for the retired page, if appropriate
+## Step 4: Create a redirect for the retired page, if appropriate
 
-> [AZURE.NOTE]] Need to verify what steps are required for Power BI links.
+Send mail to mblythe by 4pm on Thursdays - with the URL that you are renaming or retiring and the URL to which it should redirect. He will submit links to engineering on Fridays so that engineering can put 301 redirects in place.
 
-The person who maintains and updates the doc landing page will need to do two things:
+## Step 5: Update the TOC
 
-1. In Visual Studio, scan the **entire** Power BI web solution for cross references to the file to retire. Remove the cross references, or replace them with an updated cross reference. You'll need to remove the HTML links as well as the related resource strings for the HTML links. More info - see the [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Create%20or%20edit%20a%20service%20landing%20page%20or%20left%20nav.aspx)
+Remove the TOC entry for the article. If the article was in the "featured" set, make sure the featured articles number is still appropriate.
 
-2. If a replacement article exists, create a redirect. More info - see the [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Remove%20published%20pages%20and%20request%20redirects.aspx).
-
-3. Check the changes into the repository.
-
-## Step 5: Retire the article
+## Step 6: Retire the article
 
 After you've completed the three prior steps and those changes are live, then you can delete the article from the repository.
-## Step 6: Remove links from MSDN
-
-Review the content QA tool for broken links to the retired or renamed topic and remove/fix the links in all MSDN topics affected.
 
 ## Step 7: Remove cached pages from search engines
 
 Go to these web pages to remove cached web pages from search engines:
-[Bing](https://www.bing.com/webmaster/tools/content-removal?rflid=1)
+[Bing](https://www.bing.com/webmaster/tools/content-removal?rflid=1) and
 [Google](https://www.google.com/webmasters/tools/removals?pli=1)
 
 

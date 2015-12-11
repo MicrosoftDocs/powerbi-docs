@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="11/24/2015"
    ms.author="mihart"/>
 # Reports in Power BI
 
@@ -28,29 +28,31 @@ You can [create a report from scratch](powerbi-service-create-a-new-report.md) 
 
 ## For more information about reports:
 
-[**Creating a report**](powerbi-service-create-a-new-report.md)**  **requires a [dataset](powerbi-service-get-data.md).  
+[Creating a report](powerbi-service-create-a-new-report.md)  requires a [dataset](powerbi-service-get-data.md).  
 
-View and interact with reports in either [**Reading View**](powerbi-service-interact-with-a-report-in-reading-view.md) or **[Editing View](powerbi-service-interact-with-a-report-in-editing-view.md)**. Editing View is only available to a report creator and has many more options for creating and modifying reports.
+View and interact with reports in either [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) or [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). Editing View is only available to a report creator and has many more options for creating and modifying reports.
 
-Did you participate in the Power BI Preview?  [**Find out how to upgrade to the new report canvas**](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
+Did you participate in the Power BI Preview?  [Find out how to upgrade to the new report canvas](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
 
-[**Take a tour of the report editor**](powerbi-service-the-report-editor-take-a-tour.md) - including the Visualizations pane, Filters pane, and Fields pane.
+[Take a tour of the report editor](powerbi-service-the-report-editor-take-a-tour.md) - including the Visualizations pane, Filters pane, and Fields pane.
 
-[**Filter and highlight data in reports**](powerbi-service-about-filters-and-highlighting-in-reports.md)** -- create them in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and interact with them in [Reading View.](powerbi-service-interact-with-a-report-in-reading-view.md)
+Modify how your reports display using [page display settings](powerbi-service-change-report-display-settings.md).
 
-[**Add a page to a report**](powerbi-service-add-a-page-to-a-report.md) if you need more room.
+[Filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md) -- create them in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and interact with them in [Reading View.](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-[**Reorder report pages**](powerbi-service-reorder-pages-in-a-report.md) to put the most-important information first.
+[Add a page to a report](powerbi-service-add-a-page-to-a-report.md) if you need more room.
 
-[**Delete a page from a report**](powerbi-service-delete-a-page-from-a-report.md), even if it's not blank.
+[Reorder report pages](powerbi-service-reorder-pages-in-a-report.md) to put the most-important information first.
 
-[**Rename a report**](powerbi-service-rename-a-report.md), it doesn't change the name of any associated dashboard or dataset.
+[Delete a page from a report](powerbi-service-delete-a-page-from-a-report.md), even if it's not blank.
 
-[**View a report in full screen mode**](powerbi-service-display-dashboard-report-in-full-screen-mode.md), without the distraction of menus and navigation icons.
+[Rename a report](powerbi-service-rename-a-report.md), it doesn't change the name of any associated dashboard or dataset.
 
-[**Save a report**](powerbi-service-save-a-report.md) so you can use it again and share it with colleagues. The name of the saved report is added to your Power BI navigation pane, under the **Reports** heading.
+[View a report in full screen mode](powerbi-service-display-dashboard-report-in-full-screen-mode.md), without the distraction of menus and navigation icons.
 
-**[Delete a report](powerbi-service-delete-a-report.md)** if you don't need it any more. Deleting the report does not remove the dataset.
+[Save a report](powerbi-service-save-a-report.md) so you can use it again and share it with colleagues. The name of the saved report is added to your Power BI navigation pane, under the **Reports** heading.
+
+[Delete a report](powerbi-service-delete-a-report.md) if you don't need it any more. Deleting the report does not remove the dataset.
 
 ## View reports in the navigation pane
 
