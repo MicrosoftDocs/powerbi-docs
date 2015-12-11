@@ -31,7 +31,7 @@ Tiles can be pinned to dashboards from reports, Q&A, SSRS, Excel, and more.
 
 1. When you select an item to pin, Power BI opens the **Pin to dashboard** screen.
 
-  ![](media/powerbi-service-dashboard-tiles/PBI_themes2.png)
+    ![](media/powerbi-service-dashboard-tiles/PBI_themes2.png)
 
 2. Decide whether to pin to an existing dashboard or new dashboard. If existing, select the dashboard name from the dropdown.  If new, enter the name for the new dashboard.
 

@@ -34,6 +34,7 @@ Some uses for Full Screen Mode are:
 >Full Screen Mode is different than Focus (Pop out) mode. Focus mode is available for [tiles and visualizations](powerbi-service-display-dash-in-focus-mode.md).
 
 ## To turn Full Screen Mode on (and off)
+
 1. From your dashboard or report, select the **Full Screen** icon.
 
   ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TvModeIcon.jpg)

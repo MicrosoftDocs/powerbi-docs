@@ -107,7 +107,7 @@ Let's take a look at the *Distribution* industry.
 
 5.  To see actual revenue, return to the dashboard and use Q&A to ask **total revenue for distribution by scenario by executive as clustered bar chart**.  
 
-![](media/powerbi-sample-customer-profitability-take-a-tour/customer8.png)
+  ![](media/powerbi-sample-customer-profitability-take-a-tour/customer8.png)
 
 We can similarly explore other industries and even add customers to our visuals to understand causes for Valery's performance.
 
