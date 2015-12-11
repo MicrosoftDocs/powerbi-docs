@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your enterprise data source - SQL"
-description="How to manage the enterprise gateway and data sources that belong to that gateway."
+pageTitle="Manage your enterprise data source - Analysis Services"
+description="How to manage the enterprise gateway and data sources that belong to that gateway. This is for Analysis Services in both Multidimensional and Tabular mode."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/01/2015"
+ms.date="12/14/2015"
 ms.author="asaxton"/>
 # Manage your enterprise data source - SQL Server
 
@@ -33,7 +33,7 @@ Removing a gateway will also delete any data sources under that gateway.  This w
 
 2.	Gateway > **Remove**
 
-    ![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings7.png)
+    ![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings7-ssas.png)
 
 ## Add a data source
 
@@ -41,21 +41,23 @@ You can add a data source by either selecting a gateway and click **Add data sou
 
 ![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings1.png)
 
-You can then select the **Data Source Type** from the list. Currently, only SQL Server is available.
+You can then select the **Data Source Type** from the list. Select Analysis Services if you are connecting to either a Multidimensional or Tabular server.
 
-![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings2.png)
+![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings2-ssas.png)
 
 You will then want to fill in the information for the data source which includes the **Server** and the **Database**.  
 
-You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use SQL Authentication instead of Windows Authentication. Then enter the credentials that will be used for this data source.
+The **Username** and **Password** that you enter will be used by the gateway to connect to the Analysis Services instance. 
 
-> NOTE: All queries to the data source will run using these credentials. [Learn more](powerbi-gateway-enterprise.md#credentials)
+> NOTE: The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. [Learn more](powerbi-gateway-enterprise.md#credentials)
 
-![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings3.png)
+When a user interacts with a report in Power BI, such as click on a chart, select a filter, or adds a new field, a query is created by Power BI and sent along with an effective username to the Analysis Services instance.
 
-You can click **Add** after you have everything filled in.  You can now use this data source for DirectQuery against a SQL Server that is on-premises. You will see *Connection Successful* if it succeeded.
+![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings3-ssas.png)
 
-![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings4.png)
+You can click **Add** after you have everything filled in.  You can now use this data source for live queries against an Analysis Services instance that is on premises.  You will see *Connection Successful* if it succeeded.
+
+![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings4-ssas.png)
 
 ## Remove a data source
 
@@ -63,7 +65,7 @@ Removing a data source will break any dashboards or reports that rely on the giv
 
 To remove a Data Source, go to the Data Source > **Remove**.
 
-![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings6.png)
+![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings6-ssas.png)
 
 ## Manage administrators
 

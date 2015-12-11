@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your enterprise data source - SQL"
-description="How to manage the enterprise gateway and data sources that belong to that gateway."
+pageTitle="Manage your enterprise data source - SAP HANA"
+description="How to manage the enterprise gateway and data sources that belong to that gateway. This article is specific to SAP HANA."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -13,9 +13,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/01/2015"
+ms.date="12/14/2015"
 ms.author="asaxton"/>
-# Manage your enterprise data source - SQL Server
+# Manage your enterprise data source - SAP HANA
 
 Once you have installed the Power BI Gateway - Enterprise (Preview), you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
 
@@ -43,19 +43,17 @@ You can add a data source by either selecting a gateway and click **Add data sou
 
 You can then select the **Data Source Type** from the list. Currently, only SQL Server is available.
 
-![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings2.png)
+![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings2-sap.png)
 
-You will then want to fill in the information for the data source which includes the **Server** and the **Database**.  
-
-You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use SQL Authentication instead of Windows Authentication. Then enter the credentials that will be used for this data source.
+You will then want to fill in the information for the data source which includes the **Server**, **Username** and **Password**. 
 
 > NOTE: All queries to the data source will run using these credentials. [Learn more](powerbi-gateway-enterprise.md#credentials)
 
-![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings3.png)
+![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings3-sap.png)
 
 You can click **Add** after you have everything filled in.  You can now use this data source for DirectQuery against a SQL Server that is on-premises. You will see *Connection Successful* if it succeeded.
 
-![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings4.png)
+![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings4-sap.png)
 
 ## Remove a data source
 
@@ -63,7 +61,7 @@ Removing a data source will break any dashboards or reports that rely on the giv
 
 To remove a Data Source, go to the Data Source > **Remove**.
 
-![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings6.png)
+![](media/powerbi-gateway-enterprise-manage-sql/datasourcesettings6-sap.png)
 
 ## Manage administrators
 

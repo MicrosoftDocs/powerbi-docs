@@ -111,6 +111,10 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 
 ## See also
 
+[Manage your enterprise data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
+
+[Manage your enterprise data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
+
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
 [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
