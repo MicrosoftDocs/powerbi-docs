@@ -29,7 +29,6 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 1. In the left navigation pane, under **Datasets** select the ellipses (...) and choose **Quick Insights**.
 
   ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesl.png)
-
 2. Power BI uses [various algorithms](powerbi-service-auto-insights-types.md) to search for trends in your dataset.  
 
   ![](media/powerbi-service-auto-insights/PBI_AutoInsightsSearching.png)

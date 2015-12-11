@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/29/2015"
+   ms.date="12/11/2015"
    ms.author="mihart"/>
 
 # Display dashboards and reports in Full Screen Mode  
@@ -31,7 +31,7 @@ Some uses for Full Screen Mode are:
 - reviewing your dashboard, tile, or report in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report
 
 >**NOTE**:
->Full Screen Mode is different than In-focus (Pop out) mode.  In-focus mode is available for [tiles and visualizations](powerbi-service-display-dash-in-focus-mode.md).
+>Full Screen Mode is different than Focus (Pop out) mode. Focus mode is available for [tiles and visualizations](powerbi-service-display-dash-in-focus-mode.md).
 
 ## To turn Full Screen Mode on (and off)
 1. From your dashboard or report, select the **Full Screen** icon.
