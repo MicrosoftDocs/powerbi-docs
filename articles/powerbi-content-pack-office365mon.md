@@ -48,7 +48,7 @@ Connect to the [Office365Mon content pack](https://app.powerbi.com/groups/me/ge
     
     ![](media/powerbi-content-pack-office365mon/creds2.png)
 
-6.  After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the OFfice365Mon entry.
+6.  After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the Office365Mon entry.
 
 	![](media/powerbi-content-pack-office365mon/dashboard4.png)
 
