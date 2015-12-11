@@ -337,10 +337,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-upload-desktop-files",
             "powerbi-desktop-help",
             "powerbi-desktop-videos",
-            "powerbi-desktop-pyramid-analytics",
             "powerbi-desktop-latest-update"
           ],
-          "numberOfFeaturedArticles": 7
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Connect to data",
