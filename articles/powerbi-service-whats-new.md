@@ -35,7 +35,7 @@ Check this page for known issues and recently-released features in Power BI Serv
 
 * Change interactions between report visuals
 
-For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx).
+  For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx).
 
 
 **December 8, 2015**
