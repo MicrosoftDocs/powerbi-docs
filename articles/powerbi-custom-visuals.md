@@ -23,8 +23,11 @@ The [Power BI Visuals gallery](https://app.powerbi.com/visuals) contains custom 
 
 Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery?   See [Extend Power BI with custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Power BI visuals gallery](http://app.powerbi.com/visuals?WT.mc_id=Blog_CustomVisuals) to learn how.  
 - [Download a custom visualization from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)
+
 - [Add a custom visualization to your report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)
+
 - [Add a custom visualization to your report (Power BI Desktop)](powerbi-custom-visuals-use.md)
+
 - [Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
 
 

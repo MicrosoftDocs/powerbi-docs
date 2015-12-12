@@ -39,20 +39,20 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 ### Add a visualization that looks at this year's sales compared to last year.  
 1.  From the **Sales** table, select **This Year Sales** and **Last Year Sales**. Power BI creates a column chart.  This is somewhat interesting, and you want to dig deeper. What do the sales look like by month?  
 
-  ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_4.png)
+    ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_4.png)
 
 2.  From the Time table, select **FiscalMonth** and drag it into the **Axis** area.  
-![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_5new.png)
+  ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_5new.png)
 
 3.  [Change the visualization](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a line chart.
 
-  From the Visualizations pane, select the line chart icon.
+4. From the Visualizations pane, select the line chart icon.
 
-4.  [Resize the visualization](powerbi-service-move-and-resize-a-visualization.md)by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
+5.  [Resize the visualization](powerbi-service-move-and-resize-a-visualization.md)by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
 
   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7.png)
 
-5.  [Save the report](powerbi-service-save-a-report.md).
+6.  [Save the report](powerbi-service-save-a-report.md).
 
 ### Add a map visualization that looks at sales by location  
 1.  From the **Store** table, click **Territory**. Power BI recognizes that Territory is a location, and creates a map visualization.  

@@ -30,11 +30,11 @@ Hyperlinks in tables and matrixes can be created in Power BI Desktop but not fr
 
 ## Create a table or matrix hyperlink in Power BI Desktop
 
-1. If the hyperlink doesn't already exist as a column in your dataset, add it as a [custom column](tation/powerbi-desktop-common-query-tasks.md).
+1. If the hyperlink doesn't already exist as a column in your dataset, add it as a [custom column](powerbi-desktop-common-query-tasks.md).
 
 2. Select the column and in the **Modeling** tab choose the dropdown for **Data Category**.
 
-  ![](media/powerbi-service-hyperlinks-in-tables/PBI_data_category.png)
+    ![](media/powerbi-service-hyperlinks-in-tables/PBI_data_category.png)
 
 3. Select **Web URL**.
 
