@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="12/11/2015"
    ms.author="mihart"/>
 
 # Tutorial: Radial Gauge charts in Power BI
@@ -73,7 +73,7 @@ These instructions use the Financial Sample. To follow along, [download the sam
 
   Power BI adds a needle to represent our target value of **$145.48K**. Notice that we've exceeded our target.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
+      ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
 
     >NOTE: You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
 
@@ -99,25 +99,21 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 1. Open the formatting pane by selecting the paintbrush icon.
 
-  ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_format.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_format.png)
 
 2. Expand the **Gauge axis** and enter values for **Min** and **Max**.
 
-  ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_gauge_axis.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_gauge_axis.png)
 
 3. Remove the current target value by removing the checkmark next to **COGS**.
 
-  ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_remove_target.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_remove_target.png)
 
 4. When the **Target** field appears under **Gauge axis**, enter a value.
 
-  ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_new_target.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_new_target.png)
 
 5. Optionally, continue formatting your Gauge chart.
-
-
-
-
 
 
 ## See also

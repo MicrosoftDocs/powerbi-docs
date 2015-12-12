@@ -38,7 +38,7 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
 
-  Or, in the leftnav, select the ellipses (...) and choose **View Insights**.
+    Or, in the leftnav, select the ellipses (...) and choose **View Insights**.
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
 

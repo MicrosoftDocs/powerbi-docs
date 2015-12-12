@@ -50,7 +50,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 
 5.  [Resize the visualization](powerbi-service-move-and-resize-a-visualization.md)by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
 
-  ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7.png)
+    ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7.png)
 
 6.  [Save the report](powerbi-service-save-a-report.md).
 
