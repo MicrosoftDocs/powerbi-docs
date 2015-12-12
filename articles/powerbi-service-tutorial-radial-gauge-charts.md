@@ -70,10 +70,8 @@ These instructions use the Financial Sample. To follow along, [download the sam
 1. Drag **COGS** to the **Target value** well.
 
 2.  Change the aggregation to **Average**.
-
   Power BI adds a needle to represent our target value of **$145.48K**. Notice that we've exceeded our target.
-
-      ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
+  ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
 
     >NOTE: You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
 
