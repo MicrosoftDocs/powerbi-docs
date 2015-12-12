@@ -37,8 +37,8 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 3. Within seconds, your insights are ready.  Select **View Insights** to display visualizations.
 ![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
 
-  Or, in the leftnav, select the ellipses (...) and choose **View Insights**.
-  ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
+    Or, in the leftnav, select the ellipses (...) and choose **View Insights**.
+    ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate Insight Cards. Each card has a chart or graph plus a short description.
 
