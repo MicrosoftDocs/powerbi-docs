@@ -37,18 +37,19 @@ Some uses for Full Screen Mode are:
 
 1. From your dashboard or report, select the **Full Screen** icon.
 
-    ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TvModeIcon.jpg)
+      ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TvModeIcon.jpg)
 
 2. Your dashboard or report page fills the entire screen.
-    ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TVMode.jpg)
+
+      ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TVMode.jpg)
 
 3. Sometimes dashboards will display in Full screen Mode with scrollbars (see above). To remove scrollbars, in the upper right corner, select the **Fit to Screen** icon.
 
-    ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_FitToScreenIcon.jpg)
+      ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_FitToScreenIcon.jpg)
 
 4. To exit Full Screen Mode, select the **Close Full Screen** icon.
 
-    ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_FitToScreenIconClose.jpg)
+      ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_FitToScreenIconClose.jpg)
 
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
