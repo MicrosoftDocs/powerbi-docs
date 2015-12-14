@@ -43,7 +43,7 @@ You can scan the QR code for immediate access to the relevant tile, right from y
 
 5. The tile appears automatically.
 
-    ![](media/powerbi-mobile-qr-code-for-android/PIB_iPh_ScandTile.png)
+    ![](media/powerbi-mobile-qr-code-for-android/PBI_Andr_TreeMapSM.png)
 
 
 ## Scan a QR code from an external scanner on your Android phone
