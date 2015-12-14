@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2015"
+   ms.date="12/14/2015"
    ms.author="maggies"/>
 
 # Tiles in the Windows 10 phone app for Power BI  
@@ -37,7 +37,7 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
   -    Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
 
-3.   Tap the back button in the upper-left corner to close the tile and return to the dashboard.
+3.   Tap your phone's back button to close the tile and return to the dashboard.
 
 ### See also  
 [Download the Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  

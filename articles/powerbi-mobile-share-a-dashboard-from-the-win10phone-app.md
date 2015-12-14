@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2015"
+   ms.date="12/14/2015"
    ms.author="maggies"/>
 # Share a dashboard from the Windows 10 phone app for Power BI
 

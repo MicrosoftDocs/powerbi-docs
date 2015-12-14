@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2015"
+   ms.date="12/14/2015"
    ms.author="maggies"/>
 
 # Pin a Power BI dashboard from the Windows 10 phone app to the Windows Start screen 
 
-You can pin a dashboard to the Windows Start screen two different ways.
+You can pin a dashboard to the Windows Start screen in two different ways.
 
 -   On the dashboards home page, press and hold on a dashboard, and tap **Pin to Start**.
 
