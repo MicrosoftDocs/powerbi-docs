@@ -27,7 +27,20 @@ Check this page for known issues and recently-released features in Power BI Serv
 
 **December 10, 2015**
 
-  * [QR codes in Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx)
+* Pin report pages to dashboard
+
+* Refresh dashboard tiles
+
+* Use images in slicers
+
+* Change interactions between report visuals
+
+  For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx).
+
+
+**December 8, 2015**
+
+* [QR codes in Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx)
 
 **December 3, 2015**
 
