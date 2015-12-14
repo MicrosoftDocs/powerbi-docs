@@ -31,11 +31,11 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
    
      ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_LineChtTile.png)
 
-       In this line chart, the values of the blue and purple lines are listed under the month, August, where the vertical bar intersects them.  
+       In this line chart, the values of the blue and purple lines are listed under the month, August, where the vertical bar intersects them.   
 
-  -    Spin a pie chart to show the values of the slice at the top of the pie.  
+   -    Spin a pie chart to show the values of the slice at the top of the pie.  
 
-  -    Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
+   -    Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
 
 3.   Tap your phone's back button to close the tile and return to the dashboard.
 
