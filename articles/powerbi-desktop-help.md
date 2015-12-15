@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Power BI Desktop Help"
-   description="Power BI Desktop Help"
+   description="Power BI Desktop help links"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -14,15 +14,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="12/15/2015"
    ms.author="davidi"/>
-# Power BI Desktop Help
+# Power BI Desktop Help Links
+This page provides easy links to help topics for Power BI Desktop.
 
-**Stay up-to-date**
 
-**[What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md)**
+## Stay up-to-date:
 
-**Get Started with Power BI Desktop:**
+[What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md)
+
+
+## Get Started with Power BI Desktop:
 
 [Get Power BI Desktop](powerbi-desktop-get-the-desktop.md)
 
@@ -30,7 +33,7 @@
 
 [Watch our video tutorials](powerbi-desktop-videos.md)
 
-**Connecting to data:**
+## Connect to data:
 
 [Connect to data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
 
@@ -38,17 +41,17 @@
 
 [Analysis Services Tabular data in Power BI Desktop](powerbi-desktop-analysis-services-tabular-data.md)
 
-**Creating reports:**
+## Create reports:
 
 [Report View in Power BI Desktop](powerbi-desktop-report-view.md)
 
 [Tips and tricks for creating reports in Power BI Desktop](powerbi-desktop-tips-and-tricks-for-creating-reports.md)
 
-**Publishing data and reports created in Power BI Desktop:**
+## Publishing data and reports created in Power BI Desktop:
 
 [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md)
 
-**Transform and shape your data:**
+## Transform and shape your data:
 
 [Query overview in Power BI Desktop](powerbi-desktop-query-overview.md)
 
@@ -58,7 +61,7 @@
 
 [Learn about the Query formula language (also known as "M")](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?CorrelationId=4382f78a-d3a8-4c19-90ab-abf4b09a21a8&ui=en-US&rs=en-US&ad=US)
 
-**Data Modeling:**
+## Data Modeling:
 
 [Data View in Power BI Desktop](powerbi-desktop-data-view.md)
 
@@ -79,7 +82,7 @@
 [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md)
 
 
-**Step-by-step tutorials:**
+## Step-by-step tutorials:
 
 [Tutorial: Importing and analyzing data from a Web Page using Power BI Desktop](powerbi-desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md)
 
