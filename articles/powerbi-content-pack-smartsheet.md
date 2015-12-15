@@ -50,7 +50,7 @@ Connect to the [Smartsheet content pack](https://app.powerbi.com/groups/me/getd
     
     ![](media/powerbi-content-pack-smartsheet/creds2.png)
 
-6.  After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the Office365Mon entry.
+6.  After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the Smartsheet entry.
 
 	![](media/powerbi-content-pack-smartsheet/dashboard.png)
 
