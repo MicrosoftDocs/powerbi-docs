@@ -134,7 +134,7 @@ In other cases, there might be issues with the type of e-mail address users sign
 Rather than go into troubleshooting gatewa issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md). Hopefully you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
 ## Ports
-The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/en-us/library/azure/ee732535.aspx)
+The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
 
 ## FAQ
 
