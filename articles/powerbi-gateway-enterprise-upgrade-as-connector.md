@@ -47,7 +47,7 @@ Support for security groups is planned by the time the enterprise comes out of p
 
 ## See also
 
-[Power BI Gateway - Enterprise (Preview)[powerbi-gateway-enterprise.md]
+[Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise.md)
 
 [Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
 
