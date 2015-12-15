@@ -15,7 +15,7 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="12/14/2015"
 ms.author="asaxton"/>
-# Manage your enterprise data source - SQL Server
+# Manage your enterprise data source - Analysis Services
 
 Once you have installed the Power BI Gateway - Enterprise (Preview), you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
 
