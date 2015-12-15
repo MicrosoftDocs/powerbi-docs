@@ -120,4 +120,4 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 
 [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
 
-[Azure Service Bus Port Settings](https://msdn.microsoft.com/en-us/library/azure/ee732535.aspx)
+[Azure Service Bus Port Settings](https://msdn.microsoft.com/library/azure/ee732535.aspx)

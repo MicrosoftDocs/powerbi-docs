@@ -217,7 +217,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
 
-[Azure Service Bus Port Settings](https://msdn.microsoft.com/en-us/library/azure/ee732535.aspx)
+[Azure Service Bus Port Settings](https://msdn.microsoft.com/library/azure/ee732535.aspx)
 
 [User Naming Attributes (UPN)](https://msdn.microsoft.com/library/ms677605(v=vs.85).aspx)
 
