@@ -339,34 +339,38 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-get-the-desktop",
             "powerbi-desktop-getting-started",
             "powerbi-desktop-upload-desktop-files",
-            "powerbi-desktop-help",
             "powerbi-desktop-videos",
-            "powerbi-desktop-latest-update"
+            "powerbi-desktop-latest-update",
+            "powerbi-desktop-help"
           ],
-          "numberOfFeaturedArticles": 6
+          "numberOfFeaturedArticles": 5
         },
         {
           "sectionTitle": "Connect to data",
           "articles": [
-            "powerbi-desktop-connect-to-data",
             "powerbi-desktop-data-sources",
-            "powerbi-desktop-analysis-services-tabular-data",
+            "powerbi-desktop-connect-to-data",
             "powerbi-desktop-import-excel-workbooks",
+            "powerbi-desktop-ssas-multidimensional",
+            "powerbi-desktop-r-scripts",
+            "powerbi-desktop-sap-hana",
+            "powerbi-desktop-analysis-services-tabular-data",
             "powerbi-desktop-use-directquery",
             "powerbi-service-facebook-connector",
             "powerbi-service-google-analytics-connector",
             "powerbi-desktop-project-online-connect-to-data"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Transform and shape data",
           "articles": [
+            "powerbi-desktop-data-types",
             "powerbi-desktop-query-overview",
             "powerbi-desktop-shape-and-combine-data",
             "powerbi-desktop-common-query-tasks"
           ],
-          "numberOfFeaturedArticles": 3
+          "numberOfFeaturedArticles": 4
         },
         {
           "sectionTitle": "Model your data",
@@ -374,26 +378,26 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-data-view",
             "powerbi-desktop-relationship-view",
             "powerbi-desktop-create-and-manage-relationships",
-            "powerbi-desktop-import-and-display-kpis",
             "powerbi-desktop-quickstart-learn-dax-basics",
-            "powerbi-desktop-data-types",
+            "powerbi-desktop-import-and-display-kpis",
             "powerbi-desktop-data-categorization",
-            "powerbi-desktop-sort-by-column",
             "powerbi-desktop-calculated-columns",
             "powerbi-desktop-calculated-tables",
             "powerbi-desktop-measures"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Create reports",
           "articles": [
             "powerbi-desktop-report-view",
+            "powerbi-desktop-sort-by-column",
             "powerbi-desktop-tips-and-tricks-for-creating-reports",
             "powerbi-custom-visuals-use",
-            "powerbi-service-cortana-desktop-entity-cards"
+            "powerbi-service-cortana-desktop-entity-cards",
+            "powerbi-custom-r-visuals"
           ],
-          "numberOfFeaturedArticles": 4
+          "numberOfFeaturedArticles": 5
         },
         {
           "sectionTitle": "Learn more",
