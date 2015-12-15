@@ -39,19 +39,18 @@ The *gateway* is different from a *data source*. The gateway is more of the prox
 
 Before you install the gateway, it’s important to know whether or not use you really need it.  It really depends on your data source and whether you want to use DirectQuery or not.
 
-Currently, the gateway allows for the use of DirectQuery to an on-premises SQL Server.  If you are not using DirectQuery to SQL Server, then you don’t need to use this gateway.
+Currently, the gateway allows for the use of DirectQuery to an on-premises SQL Server or SAP HANA, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services.
 
 ## Setting up the Power BI Gateway - Enterprise (Preview) for the first time
 
 Setting up a gateway for the first time is a three step process.
 
-1.	[Download and install the gateway](#install)
+1.	[Download and install the gateway](#download-and-install-the-power-bi-gateway---enterprise-preview)
 
-2.	[Configure the gateway on the server it was installed to](#configure)
+2.	[Configure the gateway on the server it was installed to](#configure-the-gateway)
 
-3.	[Manage the gateway](#manage)
+3.	[Manage the gateway](#manage-the-power-bi-gateway---enterprise-preview)
 
-<a name="install"/>
 ## Download and install the Power BI Gateway - Enterprise (Preview)
 
 To download the gateway, click on Power BI gateways under the Downloads menu. Download the Power BI Gateway – Enterprise.
@@ -66,7 +65,6 @@ There’s really not much to installing a gateway. You’ll select a location to
 
 > NOTE: The enterprise and personal gateways can be installed on the same machine.
 
-<a name="configure"/>
 ## Configure the gateway
 After you install the gateway, it will prompt you to sign in to Power BI.  
 
@@ -80,7 +78,6 @@ Selecting **Configure** will register the gateway with the Power BI Service for 
 
 ![](media/powerbi-gateway-enterprise/egw-setup5.png)
 
-<a name="manage"/>
 ## Manage the Power BI Gateway - Enterprise (Preview)
 
 You can manage the gateway by going to the Power BI service and selecting the gear icon ![](media/powerbi-gateway-enterprise/pbi_gearicon.png) in the upper-right corner > **Manage gateways**. From here you can delete gateways that you are an administrator for. 
@@ -104,7 +101,7 @@ When you add a data source to the gateway, you need to provide credentials for t
 The gateway is configured to use *NT SERVICE\PBIEgwService* for the windows service log on credential. By default, it has the right of *Log on as a service*.
 
 ## Ports
-The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. 
+The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/en-us/library/azure/ee732535.aspx)
 
 ## Troubleshooting
 If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the Power BI Gateway - Enterprise].
@@ -117,4 +114,10 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
+[Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
+
+[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgarde-as-connector.md)
+
 [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
+
+[Azure Service Bus Port Settings](https://msdn.microsoft.com/en-us/library/azure/ee732535.aspx)
