@@ -73,7 +73,7 @@ Models also provide dynamic, row-level security. Unlike having at least one role
 
 In Power BI, a users ability to query and view model data are determined first by the roles their Windows user account are a member of and second, by dynamic row-level security, if configured.
 
-Implementing role and dynamic row-level security in models is beyond the scope of this article.  You can learn more at [Roles (SSAS Tabular)](https://msdn.microsoft.com/library/hh213165.aspx) and [Security Roles (Analysis Services - Multidimensional Data)](https://technet.microsoft.com/library/ms174840(v=sql.120).aspx) on MSDN. And, for the most in-depth understanding of tabular model security, download and read the [Securing the Tabular BI Semantic Model](https://msdn.microsoft.com/library/jj127437.aspx) whitepaper.
+Implementing role and dynamic row-level security in models is beyond the scope of this article.  You can learn more at [Roles (SSAS Tabular)](https://msdn.microsoft.com/library/hh213165.aspx) and [Security Roles (Analysis Services - Multidimensional Data)](https://msdn.microsoft.com/library/ms174840.aspx) on MSDN. And, for the most in-depth understanding of tabular model security, download and read the [Securing the Tabular BI Semantic Model](https://msdn.microsoft.com/library/jj127437.aspx) whitepaper.
 
 ## What is Active Directory’s role?
 
@@ -219,6 +219,6 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 [Azure Service Bus Port Settings](https://msdn.microsoft.com/library/azure/ee732535.aspx)
 
-[User Naming Attributes (UPN)](https://msdn.microsoft.com/library/ms677605(v=vs.85).aspx)
+[User Naming Attributes (UPN)](https://msdn.microsoft.com/library/ms677605.aspx)
 
 [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
