@@ -18,7 +18,7 @@
    ms.author="maggies"/>
 # Smartsheet content pack for Power BI
 
-Smartsheet offers an easy platform for collaboration and file sharing., the Power BI content pack offers an overview of your Smartsheet account.
+Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet content pack for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account.
 
 **Important:**
 
