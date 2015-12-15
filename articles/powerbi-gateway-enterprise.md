@@ -17,13 +17,15 @@ ms.date="12/01/2015"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise (Preview)
 
-The Power BI Gateway - Enterprise (Preview) enables IT departments to deploy and manage central gateways to serve a large group of users. It is the successor to the Data Management Gateway in Power BI for Office 365. Instead of each employee installing and configuring a Power BI Gateway - Personal, IT can configure, manage and maintain a group of gateways to transparently refresh data uploaded to Power BI for users requiring up-to-date data.
+The Power BI Gateway - Enterprise (Preview) enables IT departments to deploy and manage central gateways to serve a large group of users. It is the successor to the Data Management Gateway in Power BI for Office 365. Instead of each employee installing and configuring a Power BI Gateway - Personal, IT can configure, manage and maintain a group of gateways to transparently refresh data uploaded to Power BI for users requiring up-to-date data. 
 
 With the enterprise gateway, IT can centrally manage the set of users who have access to the underlying data sources. IT departments can gain visibility into gateway usage, such as most commonly accessed data sources, and the users accessing them.
 
 Anyone can install or manage an enterprise gateway. However, to view content that makes use of the gateway is only available with a [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md) subscription. While you can install this gateway on any machine, it is intended to be installed on a server within your organization.  It installs and runs as a windows service.
 
 Data transfer between the Power BI service and the gateway is secured through [Azure Service Bus](https://azure.microsoft.com/en-us/documentation/services/service-bus/). The Service Bus creates a secure channel between the Power BI service and your computer.  Because the gateway starts this secure connection, there’s usually no need to open a port in your firewall because it is an outbound connection.
+
+For more detailed information about how the connector works, be sure to see [Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md).
 
 Before we go into details about the enterprise gateway, let’s look at some terms used in Power BI:
 
