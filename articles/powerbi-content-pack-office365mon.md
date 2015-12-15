@@ -42,7 +42,7 @@ Connect to the [Office365Mon content pack](https://app.powerbi.com/groups/me/ge
 
 4.  For Authentication Method, select oAuth2 \> Sign In.
 
-	When prompted, enter your Office365Mon admin credentials and follow the SQL Sentry authentication process.
+	When prompted, enter your Office365Mon admin credentials and follow the authentication process.
 
 	![](media/powerbi-content-pack-office365mon/creds.png)
     
