@@ -101,7 +101,7 @@ When you add a data source to the gateway, you need to provide credentials for t
 The gateway is configured to use *NT SERVICE\PBIEgwService* for the windows service log on credential. By default, it has the right of *Log on as a service*.
 
 ## Ports
-The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/en-us/library/azure/ee732535.aspx)
+The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
 
 ## Troubleshooting
 If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the Power BI Gateway - Enterprise].

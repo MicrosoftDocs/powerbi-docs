@@ -221,4 +221,4 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 [User Naming Attributes (UPN)](https://msdn.microsoft.com/library/ms677605(v=vs.85).aspx)
 
-[Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/)
+[Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)

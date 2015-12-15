@@ -33,7 +33,7 @@ Removing a gateway will also delete any data sources under that gateway.  This w
 
 2.	Gateway > **Remove**
 
-    ![](media/powerbi-gateway-enterprise-manage/datasourcesettings7-ssas.png)
+    ![](media/powerbi-gateway-enterprise-manage/datasourcesettings7.png)
 
 ## Add a data source
 
