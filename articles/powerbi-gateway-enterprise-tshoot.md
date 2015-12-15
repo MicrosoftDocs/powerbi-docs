@@ -81,6 +81,8 @@ You can also look in the Event Logs > **Applications and Services Logs** > **Pow
 
 [Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
 
+[Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
+
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage.md)
 
 [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)

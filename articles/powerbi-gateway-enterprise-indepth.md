@@ -205,7 +205,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 ## See also
 
-[Power BI Gateway - Enterprise (Preview)[powerbi-gateway-enterprise.md]
+[Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise.md)
 
 [Manage your enterprise data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
 
