@@ -22,11 +22,19 @@ Before you can use some of the more advanced query, modeling, and report feature
 
 ## Minimum requirements
 
--   Windows 7 / Windows Server 2008 R2, or later
+-    Windows 7 / Windows Server 2008 R2, or later
 
--   .NET 4.5
+-    .NET 4.5
 
--   Internet Explorer 10 or later
+-    Internet Explorer 10 or later
+
+-    **Memory (RAM):** At least 1 GB available, 1.5 GB or more recommended.
+
+-    **Display:** At least 1440x900 or 1600x900 (16:9) recommended. Lower resolutions such as 1024x768 or 1280x800 are not recommended, as certain controls (such as the startup screen) display beyond those resolutions.
+
+-    **CPU:** Power BI Desktop 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
+
+
 
 ## To download and install Power BI Desktop
 
