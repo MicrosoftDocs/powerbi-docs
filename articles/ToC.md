@@ -395,9 +395,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-report-view",
             "powerbi-desktop-sort-by-column",
             "powerbi-desktop-tips-and-tricks-for-creating-reports",
+            "powerbi-desktop-r-visuals",
             "powerbi-custom-visuals-use",
-            "powerbi-service-cortana-desktop-entity-cards",
-            "powerbi-custom-r-visuals"
+            "powerbi-service-cortana-desktop-entity-cards"
           ],
           "numberOfFeaturedArticles": 5
         },
