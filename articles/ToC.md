@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="12/15/2015"
    ms.author="bewillia"/>
 
 <!---
@@ -45,6 +45,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-whats-new",
             "powerbi-videos",
             "powerbi-webinars",
+            "powerbi-service-from-excel-to-stunning-report",
             "powerbi-frequently-asked-questions",
             "powerbi-free-trial-for-power-bi-pro",
             "powerbi-power-bi-pro-content-what-is-it",
@@ -66,7 +67,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-sample-customer-profitability-take-a-tour",
             "powerbi-sample-human-resources-take-a-tour",
             "powerbi-sample-opportunity-analysis-take-a-tour",
-            "powerbi-sample-procurement-analysis-take-a-tour"
+            "powerbi-sample-procurement-analysis-take-a-tour",
+            "powerbi-sample-retail-analysis-take-a-tour"
           ],
           "numberOfFeaturedArticles": 6
         },
@@ -129,7 +131,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-auto-insights",
             "powerbi-service-auto-insights-types",
             "powerbi-service-auto-insights-optimize",
-            "powerbi-service-share-unshare-dashboard",
             "powerbi-service-dash-and-reports-fullscreen",
             "powerbi-service-display-dash-in-focus-mode",
             "powerbi-service-rename-a-dashboard",
@@ -168,7 +169,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-organizational-content-packs-manage-update-delete",
             "powerbi-service-organizational-content-pack-find-and-open",
             "powerbi-service-organizational-content-packs-use-and-work-with",
-            "powerbi-service-organizational-content-pack-delete"
+            "powerbi-service-organizational-content-pack-delete",
+            "powerbi-service-share-unshare-dashboard",
+            "powerbi-service-share-dashboard-that-links-to-excel"
           ],
           "numberOfFeaturedArticles": 7
         },
@@ -192,6 +195,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-change-report-display-settings",
             "powerbi-service-tutorial-change-report-display-settings",
             "powerbi-service-reorder-pages-in-a-report",
+            "powerbi-service-copy-and-paste-a-report-page",
             "powerbi-service-delete-a-page-from-a-report",
             "powerbi-service-delete-a-report"
           ],
@@ -230,6 +234,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-tutorial-funnel-charts",
             "powerbi-service-tutorial-radial-gauge-charts",
             "powerbi-service-tutorial-scatter",
+            "powerbi-service-tutorial-slicers",
             "powerbi-service-tutorial-treemaps",
             "powerbi-service-tutorial-waterfall-charts"
           ],
