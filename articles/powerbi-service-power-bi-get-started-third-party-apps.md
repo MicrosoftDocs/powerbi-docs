@@ -35,7 +35,7 @@ Here are the types of access an application can request.
 
 -	**View all Datasets**
 
-  - This permission gives an application the ability to list out all datasets that you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. Currently there are no features that allow an application to see the data within the dataset, but this may change over time.  The permission does not give the application to add or make any changes to a dataset.
+  - This permission gives an application the ability to list out all datasets that you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read the data in a dataset. The permission does not give the application rights to add or make changes to a dataset.
 
 -	**Read and Write all Datasets**
 
