@@ -14,9 +14,72 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="12/16/2015"
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
+
+## December 2015 Update (2.30.4246.181)
+
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
+
+December is a month for giving, and the Power BI team is following suit with more updates, features, and more functionality in this month's Power BI Desktop update. The following enhancements are new to Power BI Desktop this month:
+
+### Report Authoring:
+
+-   Formatting Pane and Ribbon:
+    - Format data labels per category services
+    - Change the number of decimal places shown in visuals
+    - Change text size in visuals
+    - Ability to layout visuals accurately: alignment, distribute, size, position
+    - Set styles across multiple visuals through **Format Painter**
+    - Optimized **Home** ribbon layout
+
+
+-   Enhancements to Visualizations:
+    - Visual cue for sort state in **Table** visual
+    - New visual: **Stacked Area** chart
+    - Smart tooltips for **Area** and **Line** charts on hover
+    - Ability to create reference line/region for a **Cartesian** visual
+    - Improved data labels for **Pie** and **Scatter** charts
+
+
+-   [R Visuals integration in Power BI Desktop (Preview feature)](powerbi-desktop-r-visuals.md)
+
+
+-   Suggested table-to-table relationships when trying to create visuals involving two tables which are not related
+
+
+### Data Modeling:
+
+-   Relationships View
+    - Zooming slider
+    - Fit Zoom to screen
+    - Reset layout
+    - Ability to zoom in CTRL+(mouse selection range)
+
+### Data Connectivity:
+
+-   [SSAS Multidimensional support - hierarchies support](powerbi-desktop-ssas-multidimensional.md)
+-   Stripe Connector
+-   Smartsheet Connector
+-   **Enter Data**: paste or enter data to create a table
+-   DirectQuery improvements: support for all data types of T-SQL and SAP HANA, resulting in performance improvements
+-   ODBC Connector: support for selecting User/System DSNs
+-   CSV Connector: ability to specify Column Delimiter in the Source dialog
+
+
+Want more information about these updates? Take a look at the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx), where you can get more detailed information about each of these new features.
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="500" height="281" src="https://www.youtube.com/embed/iW5VH8iIyfE" frameborder="0" allowfullscreen></iframe>
+
+
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
+
+
 
 ## November 2015 Update (2.29.4217.221)
 
@@ -70,10 +133,6 @@ Want more information about these updates? Take a look at the [blog post](http:/
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/ErHvpkyQjSg" frameborder="0" allowfullscreen></iframe>
-
-
-
->NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 
 

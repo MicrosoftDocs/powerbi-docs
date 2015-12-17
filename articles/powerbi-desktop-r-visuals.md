@@ -56,7 +56,7 @@ When those steps are complete, you’re ready to begin creating R visuals.
 
   b) The **R script editor** appears along the bottom of the center pane.
 
-    ![](media/powerbi-desktop-r-visuals/r-visuals-4.png)
+  ![](media/powerbi-desktop-r-visuals/r-visuals-4.png)
 
 3.   Next, add fields you want to consume in your R script to the **Values** section in the **Fields** well, just as you would with any other Power BI Desktop visual. Only fields that have been added to the **Fields** well are available to your R script, and you can add new fields, or remove unneeded fields from the **Fields** well while working on your R script in the Power BI Desktop **R script editor**. Power BI Desktop automatically detects which fields you have added or removed.
 > **Note:** The default aggregation type for R visuals is *do not summarize*.
