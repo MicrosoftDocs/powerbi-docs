@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="12/16/2015"
    ms.author="davidi"/>
 # Data sources in Power BI Desktop
 
@@ -64,7 +64,7 @@ The **Database** category provides the following data connections:
 -   PostgreSQL Database
 -   Sybase Database
 -   Teradata Database
--   SAP HANA Database
+-   SAP HANA Database (Beta)
 
 The following image shows the **Get Data** window for **Database**.
 
@@ -106,12 +106,13 @@ The **Other** category provides the following data connections:
 -   appFigures (Beta)
 -   GitHub (Beta)
 -   MailChimp (Beta)
+-   Merketo (Beta)
 -   QuickBooks Online (Beta)
+-   Smartsheet (Beta)
+-   Stripe (Beta)
 -   SweetIQ (Beta)
 -   Twilio (Beta)
 -   ZenDesk (Beta)
--   Merketo (Beta)
--   UserVoice (Beta)
 -   Spark (Beta)
 -   Blank Query
 
