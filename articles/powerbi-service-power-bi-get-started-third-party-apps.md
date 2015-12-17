@@ -14,17 +14,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2015"
+   ms.date="12/17/2015"
    ms.author="derrickv"/>
 
 # Get started with third party apps
 
-With the Power BI REST API, you can build applications which integrate with Power BI. When you use an application that was built by a company other than Microsoft, you will be asked to grant that application certain permissions to your Power BI account and content. It is important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time by going to: https://portal.office.com/myapps.
+With Power BI, you can use an app built by a company or individual other than Microsoft. For example, you might use a third party app which integrates Power BI tiles into a custom built web application. When you use a third party app, you will be asked to grant that application certain permissions to your Power BI account and content. It is important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time. See [Revoke third party app permissions](#revoke).
 
 Here are the types of access an application can request.
 
 ## Power BI App permissions
-
 
 -	**View all Dashboards (preview)**
 
@@ -36,7 +35,7 @@ Here are the types of access an application can request.
 
 -	**View all Datasets**
 
-  - This permission gives an application the ability to list out all datasets that you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. Currently there are no features that allow anapplication to see the data within the dataset, but this may change over time.  The permission does not give the application to add or make any changes to a dataset.
+  - This permission gives an application the ability to list out all datasets that you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. Currently there are no features that allow an application to see the data within the dataset, but this may change over time.  The permission does not give the application to add or make any changes to a dataset.
 
 -	**Read and Write all Datasets**
 
@@ -44,4 +43,17 @@ Here are the types of access an application can request.
 
 -	**View user's Groups**
 
-  -  This permission gives the application the ability to list all groups that you are a member of. It can then use this permission along with some of the other permissions listed on this page to view or update content for that particular group. The application cannot make modifications to the group itself.
+  -  This permission gives the application the ability to list all groups that you are a member of. It can then use this permission along with some of the other permissions listed to view or update content for that particular group. The application cannot make modifications to the group itself.
+
+<a name="revoke"/>
+## Revoke third party app permissions
+
+You revoke permissions for a third party app by going to the Office 365 My Apps site.
+
+On the **Office 365 My apps** site, here's how to revoke third party permissions:
+
+1. Go to [Office 365 My Apps site](https://portal.office.com/myapps).
+2. On the **My apps** page, locate the third party app.
+3. Hover over the app tile, click the **(...)** button, and click **Remove**.
+
+  ![](media/powerbi-service-power-bi-get-started-third-party-apps/remove.png)
