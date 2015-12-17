@@ -472,7 +472,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-favorites-in-the-android-app",
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",
-            "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app"
+            "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app",
+            "powerbi-service-qr-code-for-tile"
           ],
           "numberOfFeaturedArticles": 5
         },
