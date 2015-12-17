@@ -49,6 +49,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-frequently-asked-questions",
             "powerbi-free-trial-for-power-bi-pro",
             "powerbi-power-bi-pro-content-what-is-it",
+            "powerbi-service-power-bi-get-started-third-party-apps",
             "powerbi-service-browser-support",
             "powerbi-supported-languages"
           ],
