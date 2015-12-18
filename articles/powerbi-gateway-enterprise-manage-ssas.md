@@ -57,7 +57,7 @@ You can click **Add** after you have everything filled in.  You can now use this
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4-ssas.png)
 
-### Username with Analysis Services
+### Usernames with Analysis Services
 
 Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [Learn more](https://msdn.microsoft.com/library/ms677605.aspx)
 
