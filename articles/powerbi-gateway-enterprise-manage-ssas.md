@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/14/2015"
+ms.date="12/18/2015"
 ms.author="asaxton"/>
 # Manage your enterprise data source - Analysis Services
 
@@ -51,13 +51,16 @@ The **Username** and **Password** that you enter will be used by the gateway to 
 
 > NOTE: The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. [Learn more](powerbi-gateway-enterprise.md#credentials)
 
-When a user interacts with a report in Power BI, such as click on a chart, select a filter, or adds a new field, a query is created by Power BI and sent along with an effective username to the Analysis Services instance.
-
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-ssas.png)
 
 You can click **Add** after you have everything filled in.  You can now use this data source for live queries against an Analysis Services instance that is on premises.  You will see *Connection Successful* if it succeeded.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4-ssas.png)
+
+### Username with Analysis Services
+
+Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [Learn more](https://msdn.microsoft.com/library/ms677605.aspx)
+
 
 ## Remove a data source
 

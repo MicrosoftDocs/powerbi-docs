@@ -77,6 +77,15 @@ Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownEr
 
 You can also look in the Event Logs > **Applications and Services Logs** > **Power BI Enterprise Gateway Service** for more details.
 
+## Dataset
+
+**Error: Couldn't refresh because your Personal Gateway is offline. Make sure your Personal Gateway is up and running.**
+
+You may have configured an enterprise gateway, and see this error for a given dataset when you try to refresh. The enterprise gateway currently does not support imported data. It supports SQL Server and SAP HANA in DirectQuery mode, or live connections with Analysis Services, either Tabular or Multidimensional.
+
+If you have imported data into your file, you will need the Personal Gateway to refresh the dataset.
+
+
 ## See Also
 
 [Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
