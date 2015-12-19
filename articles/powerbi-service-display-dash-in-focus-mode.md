@@ -28,7 +28,7 @@
 >**NOTE**:
 >Focus is different from full screen mode.  Full screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
 
-1.  Hover over the tile and select the **Focus** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
+1.  Hover over the tile and select the **Focus mode** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_hoverTile.jpg)
 
 2.  The tile opens and fills the entire report canvas.  In this example, notice that the Y-axis displays with more detail.  The tile also displays the data source (bottom left corner).    
@@ -45,7 +45,7 @@
 
     Once in focus, the tile can then be [viewed in full screen (TV Mode.)](powerbi-service-display-tile-in-full-screen-mode.md) Full Screen Mode displays the tile without the distraction of menus and navigation buttons.
 
-6.  Leave Focus mode and return to the dashboard by selecting the Focus icon (in the top left corner of the tile).
+6.  Leave Focus mode and return to the dashboard by selecting the **Focus mode** icon (in the top left corner of the tile).
 
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  

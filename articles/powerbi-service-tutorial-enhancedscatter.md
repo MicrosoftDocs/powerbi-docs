@@ -42,17 +42,17 @@ The Bubble chart will display website traffic details.
 
 5. Finally, add **Clicks** to **Size**.
 
-      ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterStep1.png)
+      ![](media/powerbi-service-tutorial-enhancedscatter/PBI_bubble_convert.png)
 
 I've created a typical bubble chart. The next steps demonstrate the advanced capabilities of the Enhanced Scatter.  
 
-## Convert the Bubble chart into an Enhanced Scatter chart
+## Convert the Bubble chart to an Enhanced Scatter chart
 
 1. [Download the Enhanced Scatter visualization](powerbi-custom-visuals-download-from-the-gallery.md) and [add it to the report](powerbi-custom-visuals-add-to-report.md).
 
 2. I may receive a message asking me to enable custom visuals. Read the warning and select **Enable custom visuals**.
 
-3. Select your Bubble chart and convert it to an Enhanced Scatter chart by selecting the Enhanced Scatter chart icon    ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg) from the **Visualizations** pane.
+3. Select the Bubble chart and convert it to an Enhanced Scatter chart by selecting the Enhanced Scatter chart icon    ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg) from the **Visualizations** pane.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_bubble_convert.png)
 
@@ -65,15 +65,15 @@ The Enhanced Scatter packs even more information into a single visualization. In
 
 >**IMPORTANT**  These visualization fields require your dataset to have measures that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this visualization field bucket).
 
-1. Add a shape that visually identifies the type of link: Download, Learn More, Pricing, Homepage, etc. Drag **ShapeMeasure** to **Shape**.  Power BI allows: circle, cross, diamond, square, triangle-up, triangle-down, star, hexagon, x, up arrow, and down arrow. These values must already exist in (or be added to) your dataset.
+1. Add shapes that visually identifies the type of link: Download, Learn More, Pricing, Homepage, etc. Drag **ShapeMeasure** to **Shape**.  Power BI allows: circle, cross, diamond, square, triangle-up, triangle-down, star, hexagon, x, up arrow, and down arrow. These values must already exist in (or be added to) your dataset.
 
-  ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape_new.png)
+    ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape_new.png)
 
-  These shapes are meaningful to me, but if I share this report, my colleagues will not understand what each shape represents.  Luckily, my dataset contains another field that has more intuitive graphics.
+    These shapes are meaningful to me, but if I share this report, my colleagues will not understand what each shape represents.  Luckily, my dataset contains another field that has more intuitive graphics.
 
 2. Remove **ShapeMeasure** from the **Shape** area and drag **LinkImageMeasure** to **Image**.
 
-  ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape2_new.png)
+    ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape2_new.png)
 
 3. To communicate even more information graphically, I drag **Trend** to **Rotation**.  The rotation of each image indicates whether the number of clicks is trending up or down.
 
@@ -82,7 +82,7 @@ The Enhanced Scatter packs even more information into a single visualization. In
 4. To make this chart even easier to read, I can add an image of the actual web page as a background.  In this example I'm not simply adding a single image, but a measure that controls which web page displays.
 Remove **LinkImageMeasure** and drag **PageLayout** > **ImageMeasure** to **Backdrop**.
 
-  ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_backdrop.png)
+    ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_backdrop.png)
 
 5. Use the xmin, xmax, ymin, and ymax areas to align the background image with the x and y coordinates used to plot the data.
   - drag **xmin** to **X Start**.
@@ -102,21 +102,18 @@ Right now, this visualization is not useful since it's displaying total clicks f
 
 2. Select **PageName** to add it to the **Field** area.
 
-  ![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer.png)
+    ![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer.png)
 
-  ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
+    ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
 
-3. Slice the Enhanced Scatter chart to display click data for each web page one at a time.
+3. Slice the Enhanced Scatter chart to display click data for each web page -- one at a time.
 
-  ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
+    ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
 
-  ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last3.png)
+    ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last3.png)
 
-  ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last4.png)
+    ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last4.png)
 
-## Tips and Tricks for Enhanced Scatter Charts
-
-  - coming soon!
 
 ## See also
 
