@@ -14,16 +14,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/15/2015"
+   ms.date="12/18/2015"
    ms.author="mihart"/>
 
-# Display a dashboard tile in Pop Out Mode
+# Display a dashboard tile in Focus mode
 
-## What is Focus Mode?  
+## What is Focus mode?  
 
 ***Focus*** mode lets you expand (pop out) a dashboard tile to see more detail.  While in Focus mode, you can view and modify the filters that were applied when this tile visualization was created.
 
->**Note**: Currently, Focus mode is not available for tiles created from Q&A or for map tiles. 
+>**NOTE**: Currently, Focus mode is not available for tiles created from Q&A or for map tiles. 
 
 >**NOTE**:
 >Focus is different from full screen mode.  Full screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).

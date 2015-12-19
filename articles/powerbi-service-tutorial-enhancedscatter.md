@@ -46,7 +46,7 @@ This tutorial uses the Retail Analysis sample. To follow along, sign in to Powe
 
       ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterStep1.png)
 
-Add fields to the **Shape**, **Image**, and **Backdrop** areas.  You must use a measure that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this field bucket).
+  Add fields to the **Shape**, **Image**, and **Backdrop** areas.  You must use a measure that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this field bucket).
 
 5. Add a shape.  The allowed values are circle, cross, diamond, square, triangle-up, triangle-down, star, hexagon, x, up arrow, and down arrow.
 
