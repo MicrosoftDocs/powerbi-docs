@@ -42,7 +42,7 @@ The Bubble chart will display website traffic details.
 
 5. Finally, add **Clicks** to **Size**.
 
-      ![](media/powerbi-service-tutorial-enhancedscatter/PBI_bubble_convert.png)
+      ![](media/powerbi-service-tutorial-enhancedscatter/pbi_bubble_convert.png)
 
 I've created a typical bubble chart. The next steps demonstrate the advanced capabilities of the Enhanced Scatter.  
 
