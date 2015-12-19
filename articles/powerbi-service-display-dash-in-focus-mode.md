@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display a tile in Pop Out Mode"
-   description="Display a dashboard tile In-focus mode, aka Pop Out."
+   pageTitle="Display a tile in Focus Mode"
+   description="Display a dashboard tile in Focus mode, aka Pop Out."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,21 +14,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/29/2015"
+   ms.date="12/15/2015"
    ms.author="mihart"/>
 
 # Display a dashboard tile in Pop Out Mode
 
-## What is Pop Out Mode?  
+## What is Focus Mode?  
 
-***Pop Out*** Mode lets you expand a dashboard tile to full screen and see more detail.  While popped out, you can view and modify the filters that were applied when this tile visualization was created. Pop Out Mode is also known as In-Focus Mode.
+***Focus*** mode lets you expand (pop out) a dashboard tile to see more detail.  While in Focus mode, you can view and modify the filters that were applied when this tile visualization was created.
 
->**Note**: Currently, Pop Out Mode is not available for tiles created from Q&A or for map tiles. 
+>**Note**: Currently, Focus mode is not available for tiles created from Q&A or for map tiles. 
 
 >**NOTE**:
->Pop Out is different than TV mode.  TV mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
+>Focus is different from full screen mode.  Full screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
 
-1.  Hover over the tile and select the **Pop out** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
+1.  Hover over the tile and select the **Focus** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_hoverTile.jpg)
 
 2.  The tile opens and fills the entire report canvas.  In this example, notice that the Y-axis displays with more detail.  The tile also displays the data source (bottom left corner).    
@@ -43,9 +43,9 @@
 5.  It looks like Tina might be a new employee since we have no data for her for January through July of 2013.   
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilters2013.jpg)
 
-    Once popped out, the tile can then be [viewed in full screen (TV Mode.)](powerbi-service-display-tile-in-full-screen-mode.md) Full Screen Mode displays the tile without the distraction of menus and navigation buttons.
+    Once in focus, the tile can then be [viewed in full screen (TV Mode.)](powerbi-service-display-tile-in-full-screen-mode.md) Full Screen Mode displays the tile without the distraction of menus and navigation buttons.
 
-6.  Pop in the tile and return to the dashboard by selecting **Pop in** (in the top left corner of the tile).
+6.  Leave Focus mode and return to the dashboard by selecting the Focus icon (in the top left corner of the tile).
 
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
