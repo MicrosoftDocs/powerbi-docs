@@ -311,7 +311,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-syndication-partner",
             "powerbi-admin-closing-your-account"
           ],
-          "numberOfFeaturedArticles": 6
+          "numberOfFeaturedArticles": 7
         },
         		{
           "sectionTitle": "Troubleshooting",
