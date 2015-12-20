@@ -37,7 +37,7 @@ Your Power BI for Office 365 licenses will be treated as Power BI Pro licenses w
 
 **How much does it cost for a Power BI Pro individual user license?**
 
-Please refer to the [pricing page](https://powerbi.microsoft.com/en-us/pricing).
+Please refer to the [pricing page](https://powerbi.microsoft.com/pricing).
 
 **Does a Power BI Pro subscription give me access to OneDrive for Business?**
 
