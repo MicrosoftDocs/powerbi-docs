@@ -287,12 +287,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-personal-gateway",
             "powerbi-gateway-enterprise",
+            "powerbi-gateway-enterprise-indepth",
+            "powerbi-gateway-enterprise-manage-ssas",
+            "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
             "powerbi-analysis-services-connector",
             "powerbi-admin-analysis-services-connector-indepth",
             "powerbi-admin-data-management-gateway-in-office-365"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Administration",
@@ -303,6 +306,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-power-bi-security",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
             "powerbi-admin-migrating-to-the-new-power-bi-experience",
+            "powerbi-admin-migration-faq",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
             "powerbi-admin-closing-your-account"
