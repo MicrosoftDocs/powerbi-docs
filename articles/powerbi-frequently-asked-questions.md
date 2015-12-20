@@ -112,3 +112,6 @@ Yes. Government and academic pricing is offered through the MOSP/Direct, EA and 
 
 **Note:** Work email addresses ending in **.gov** aren’t currently supported.
 
+## What is happening to the Power BI for Office 365 experience?
+
+The Power BI for Office 365 experience is going into limited support on December 31, 2015, and deprecation of the Power BI for Office 365 experience by March 31, 2016. [Learn more](powerbi-admin-migrating-to-the-new-power-bi-experience.md)

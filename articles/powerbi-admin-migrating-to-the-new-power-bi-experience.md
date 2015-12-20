@@ -19,9 +19,9 @@
 
 # Migrating to the new Power BI experience
 
-We are making [product and licensing updates to Power BI](https://www.microsoft.com/powerBI/licensing.aspx) that will lead to the deprecation of existing Power BI for Office 365 experiences by December 31, 2015. If you’re an existing Power BI for Office 365 customer, don’t worry: You will still be able to use your existing Power BI for Office 365 licenses as Power BI Pro licenses for the new experience. Your Power BI for Office 365 licenses will renew as Power BI Pro licenses at the end of the term of your existing subscription.
+We are making [product and licensing updates to Power BI](https://www.microsoft.com/powerBI/licensing.aspx) that will lead to limited support of existing Power BI for Office 365 experiences by December 31, 2015, and deprecation of the Power BI for Office 365 experience by March 31, 2016. If you’re an existing Power BI for Office 365 customer, don’t worry: You will still be able to use your existing Power BI for Office 365 licenses as Power BI Pro licenses for the new experience. After your Power BI for Office 365 licenses expire, and you need to use Pro features, you can add a new Power BI Pro subscription, or sign up for an individual Power BI Pro license.
 
-Read [Migrating from Power BI for Office 365 to Power BI Pro](http://go.microsoft.com/fwlink/?LinkId=619089) to learn how to migrate from your existing Power BI for Office 365 experience to the new Power BI experience.  
+Read [Migrating from Power BI for Office 365 to Power BI Pro](http://go.microsoft.com/fwlink/?LinkId=619089) to learn how to migrate from your existing Power BI for Office 365 experience to the new Power BI experience.  You can also check out the [migration frequently asked questions](powerbi-migration-faq.md).
 
 This table compares key aspects of the two experiences.
 
