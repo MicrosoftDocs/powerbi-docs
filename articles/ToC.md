@@ -291,11 +291,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-gateway-enterprise-manage-ssas",
             "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
+            "powerbi-gateway-enterprise-upgrade-as-connector",
             "powerbi-analysis-services-connector",
             "powerbi-admin-analysis-services-connector-indepth",
             "powerbi-admin-data-management-gateway-in-office-365"
           ],
-          "numberOfFeaturedArticles": 6
+          "numberOfFeaturedArticles": 7
         },
         {
           "sectionTitle": "Administration",
