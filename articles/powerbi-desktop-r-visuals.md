@@ -125,3 +125,8 @@ This preview version of R visuals has a few limitations:
 -  R visuals respond to highlighting other visuals, but you cannot click on elements in the R visual in order to cross filter other elements.
 
 -  Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
+
+-  In this release, RRO installations are not automatically identified by the 32-bit version of Power BI Desktop, so you must manually provide the path to the R installation directory in **Options and settings > Options > R Scripting**.
+
+-  In this release, languages in which decimal delimiters are represented with a comma result in an R visual error.
+This limitation will be removed in an upcoming release. Meanwhile, changing your Operating System (OS) region format to **English (World)** removes this error.
