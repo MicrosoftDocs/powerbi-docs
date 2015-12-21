@@ -19,9 +19,7 @@
 
 # Printing from Power BI
 
-Print an entire dashboard or a report page from Power BI.  
-
->**NOTE**:  Printing to PDF is one of the supported print options in Edge and Chrome or other browsers if you've already configured the PDF driver.   
+Print an entire dashboard or a report page from Power BI.  Printing to PDF is one of the supported print options.  You can also [export to PDF](powerbi-service-export_to-pdf.md).
 
 ## Print a dashboard
 
