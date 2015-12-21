@@ -213,7 +213,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
-[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgarde-as-connector.md)
+[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
 [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
 
