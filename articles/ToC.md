@@ -49,6 +49,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-frequently-asked-questions",
             "powerbi-free-trial-for-power-bi-pro",
             "powerbi-power-bi-pro-content-what-is-it",
+            "powerbi-service-power-bi-get-started-third-party-apps",
             "powerbi-service-browser-support",
             "powerbi-supported-languages"
           ],
@@ -286,12 +287,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-personal-gateway",
             "powerbi-gateway-enterprise",
+            "powerbi-gateway-enterprise-indepth",
+            "powerbi-gateway-enterprise-manage-ssas",
+            "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
             "powerbi-analysis-services-connector",
             "powerbi-admin-analysis-services-connector-indepth",
             "powerbi-admin-data-management-gateway-in-office-365"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Administration",
@@ -302,11 +306,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-power-bi-security",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
             "powerbi-admin-migrating-to-the-new-power-bi-experience",
+            "powerbi-admin-migration-faq",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
             "powerbi-admin-closing-your-account"
           ],
-          "numberOfFeaturedArticles": 6
+          "numberOfFeaturedArticles": 7
         },
         		{
           "sectionTitle": "Troubleshooting",
@@ -471,7 +476,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-favorites-in-the-android-app",
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",
-            "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app"
+            "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app",
+            "powerbi-service-qr-code-for-tile"
           ],
           "numberOfFeaturedArticles": 5
         },

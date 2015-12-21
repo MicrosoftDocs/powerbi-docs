@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/01/2015"
+   ms.date="12/18/2015"
    ms.author="mihart"/>
 
 # Custom visualizations in Power BI
 
-The [Power BI Visuals gallery](https://app.powerbi.com/visuals) contains custom visualizations created by members of the community.  These visualizations can be downloaded and added to Power BI reports and Power BI Desktop reports. They behave just like the native visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc.
+The [Power BI Visuals gallery](https://app.powerbi.com/visuals) contains custom visualizations created by members of the community and [by Microsoft](powerbi-custom-visuals-microsoft.md).  These visualizations can be downloaded and added to Power BI Service reports and Power BI Desktop reports. They behave just like the native visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc.
 
 Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery?   See [Extend Power BI with custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Power BI visuals gallery](http://app.powerbi.com/visuals?WT.mc_id=Blog_CustomVisuals) to learn how.
 
