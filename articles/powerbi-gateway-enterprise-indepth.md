@@ -166,7 +166,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 **Answer:** You can use SQL Profiler. You’ll see something like this:
 
-      \<RestrictionList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
+        \<RestrictionList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
 
           \<CATALOG\_NAME\>AdventureWorks\_prod\</CATALOG\_NAME\>
 
@@ -174,7 +174,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
         \</RestrictionList\>
 
-      \<PropertyList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
+        \<PropertyList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
 
           \<Catalog\>AdventureWorks\_prod\</Catalog\>
 
@@ -196,7 +196,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
           \<DbpropMsmdRequestID\>ed28257d-b516-427e-a299-be5d60f14427\</DbpropMsmdRequestID\>
 
-      \</PropertyList\>
+        \</PropertyList\>
 
 **Question:** How do I find the gateway service in Services?
 
