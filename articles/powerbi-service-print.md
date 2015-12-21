@@ -33,7 +33,7 @@ Print an entire dashboard or a report page from Power BI.
 
   ![](media/powerbi-service-print/pbi_print_dash_new.png)
 
-> **NOTE**: The print dialog you see will depend on which browser you are using.
+  > **NOTE**: The print dialog you see will depend on which browser you are using.
 
 ## Print a report page
 
@@ -47,7 +47,7 @@ Print an entire dashboard or a report page from Power BI.
 
   ![](media/powerbi-service-print/pbi_print_report.png)
 
-> **NOTE**: The print dialog you see will depend on which browser you are using.
+  > **NOTE**: The print dialog you see will depend on which browser you are using.
 
 ## See also
 
