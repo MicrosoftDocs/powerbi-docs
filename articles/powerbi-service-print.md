@@ -27,11 +27,11 @@ Print an entire dashboard or a report page from Power BI.
 
 2. In the top right corner, select the ellipses (...) and choose **Print dashboard**.
 
-  ![](media/powerbi-service-print/pbi_print_dash_ellipses.png)
+    ![](media/powerbi-service-print/pbi_print_dash_ellipses.png)
 
 3. Choose the settings and print destination, and select **Print**.
 
-  ![](media/powerbi-service-print/pbi_print_dash_new.png)
+    ![](media/powerbi-service-print/pbi_print_dash_new.png)
 
   > **NOTE**: The print dialog you see will depend on which browser you are using.
 
@@ -41,11 +41,11 @@ Print an entire dashboard or a report page from Power BI.
 
 2. Select **File** > **Print page** to print the current report page.
 
-  ![](media/powerbi-service-print/pbi_print_report_file.png)
+    ![](media/powerbi-service-print/pbi_print_report_file.png)
 
 2. Choose the settings and print destination, and select **Print**.
 
-  ![](media/powerbi-service-print/pbi_print_report.png)
+    ![](media/powerbi-service-print/pbi_print_report.png)
 
   > **NOTE**: The print dialog you see will depend on which browser you are using.
 
