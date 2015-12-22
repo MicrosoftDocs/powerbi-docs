@@ -442,6 +442,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "iPad app (Power BI for iOS)",
           "articles": [
+            "powerbi-mobile-ipad-kpis-mobile-reports",
             "powerbi-mobile-dashboards-on-the-ipad-app",
             "powerbi-mobile-tiles-in-the-ipad-app",
             "powerbi-mobile-favorites-on-the-ipad-app",
