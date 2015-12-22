@@ -19,7 +19,9 @@
 
 # Printing from Power BI
 
-Print an entire dashboard or a report page from Power BI.
+Print an entire dashboard or a report page from Power BI.  
+
+>**NOTE**:  Printing to PDF is one of the supported print options in Edge and Chrome or other browsers if you've already configured the PDF driver.   
 
 ## Print a dashboard
 
@@ -31,7 +33,7 @@ Print an entire dashboard or a report page from Power BI.
 
 3. Choose the settings and print destination, and select **Print**.
 
-    ![](media/powerbi-service-print/pbi_print_dash_new.png)
+    ![](media/powerbi-service-print/pbi_print_dash_new2.png)
 
   > **NOTE**: The print dialog you see will depend on which browser you are using.
 
@@ -45,7 +47,7 @@ Print an entire dashboard or a report page from Power BI.
 
 2. Choose the settings and print destination, and select **Print**.
 
-    ![](media/powerbi-service-print/pbi_print_report.png)
+    ![](media/powerbi-service-print/pbi_print_report_new.png)
 
   > **NOTE**: The print dialog you see will depend on which browser you are using.
 
