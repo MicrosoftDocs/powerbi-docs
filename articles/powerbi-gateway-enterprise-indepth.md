@@ -166,37 +166,39 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 **Answer:** You can use SQL Profiler. You’ll see something like this:
 
-    \<RestrictionList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
+```
+    <RestrictionList xmlns="urn:schemas-microsoft-com:xml-analysis">
 
-          \<CATALOG\_NAME\>AdventureWorks\_prod\</CATALOG\_NAME\>
+        <CATALOG_NAME>AdventureWorks_prod</CATALOG_NAME>
 
-          \<VERSION\>2.0\</VERSION\>
+        <VERSION>2.0</VERSION>
 
-        \</RestrictionList\>
+    </RestrictionList>
 
-    \<PropertyList xmlns="urn:schemas-microsoft-com:xml-analysis"\>
+    <PropertyList xmlns="urn:schemas-microsoft-com:xml-analysis">
 
-          \<Catalog\>AdventureWorks\_prod\</Catalog\>
+        <Catalog>AdventureWorks_prod</Catalog>
 
-          \<Cube\>InternetSales\</Cube\>
+        <Cube>InternetSales</Cube>
 
-          \<EffectiveUserName\>nancy@contoso.com\</EffectiveUserName\>
+        <EffectiveUserName>nancy@contoso.com</EffectiveUserName>
 
-          \<SspropInitAppName\>PowerBI\</SspropInitAppName\>
+        <SspropInitAppName>PowerBI</SspropInitAppName>
 
-          \<LocaleIdentifier\>1033\</LocaleIdentifier\>
+        <LocaleIdentifier>1033</LocaleIdentifier>
 
-          \<ClientProcessID\>3408\</ClientProcessID\>
+        <ClientProcessID>3408</ClientProcessID>
 
-          \<Content\>SchemaData\</Content\>
+        <Content>SchemaData</Content>
 
-          \<Format\>Tabular\</Format\>
+        <Format>Tabular</Format>
 
-          \<DbpropMsmdActivityID\>381f4fdf-48cf-eb13-a5bd-f585cd05dc5d\</DbpropMsmdActivityID\>
+        <DbpropMsmdActivityID>381f4fdf-48cf-eb13-a5bd-f585cd05dc5d</DbpropMsmdActivityID>
 
-          \<DbpropMsmdRequestID\>ed28257d-b516-427e-a299-be5d60f14427\</DbpropMsmdRequestID\>
+        <DbpropMsmdRequestID>ed28257d-b516-427e-a299-be5d60f14427</DbpropMsmdRequestID>
 
-    \</PropertyList\>
+    </PropertyList>
+```
 
 **Question:** How do I find the gateway service in Services?
 
@@ -213,7 +215,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
-[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgarde-as-connector.md)
+[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
 [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
 

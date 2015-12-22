@@ -90,7 +90,7 @@ On the Users tab, for the data source, you can add, and remove, users that can u
 
 [Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
 
-[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgarde-as-connector.md)
+[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
 [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
 
