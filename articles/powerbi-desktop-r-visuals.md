@@ -114,7 +114,7 @@ When executing a R script that results in an error, the R visual is not plotted 
 
 This preview version of R visuals has a few limitations:
 
--  Data size limitations – data used by the R visual for plotting is limited to 250,000 rows. If more than 250,000 rows are selected, only the top 250,000 rows are used and a message is displayed on the image.
+-  Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
 
 -  Calculation time limitation – if an R visual calculation exceeds 5 minutes the execution times out, resulting in an error.
 
