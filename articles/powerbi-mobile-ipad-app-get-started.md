@@ -19,7 +19,9 @@
 
 # Get started with the iPad app (Power BI for iOS)  
 
-The iPad app for Microsoft Power BI for iOS is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards, reports, and SQL Server KPIs and mobile reports easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
+The iPad app for Microsoft Power BI for iOS is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards and reports easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
+
+>**Note**: Coming in December 2015, you'll also be able to view and interact with your SQL Server KPIs and mobile reports in the Power BI app.
 
 ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_DashPopout.png)
 
@@ -42,8 +44,6 @@ Go to [Power BI to sign up](http://go.microsoft.com/fwlink/?LinkID=513879) for t
 
 ## Get started with the Power BI app 
 
-Sign in to Power BI from your iPad.
-
 1.  In the iPad, open the Power BI app.
   
 2.  To view your Power BI dashboards and reports, tap **Power BI**.  
@@ -54,7 +54,7 @@ Sign in to Power BI from your iPad.
     >Tip: When you're in the app, tap the options icon ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two. 
 
 ## Try the Power BI samples  
-Even without signing up or signing in, you can play with the Power BI samples. After you download the app, you can view the samples or sign in. Go back to the samples whenever you want from the dashboards home page.
+Even without signing up, you can play with the Power BI samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
 
 -   Tap **see our samples**, then pick a role and explore the sample dashboard for that role.  
 
