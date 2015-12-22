@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Sales & Marketing sample for Power BI: Take a tour"
    description="Sales & Marketing sample for Power BI: Take a tour"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -52,6 +52,7 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 
 #### What does total unit market share look like for category (versus region)?  
 1.  Notice “Total Units YTD by Manufacturer, Region” tile. I wonder how the total unit market share looks like by category? 
+
     ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales3.png)
 
 2.  In the question box at the top of the dashboard, type the question to **units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
@@ -61,7 +62,7 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 
 4.  Navigate back to the dashboard.
 
-Dashboards are also an entry point into reports.  If a tile was created from an underlying report, clicking that tile opens the report.  
+Dashboards are also an entry point into reports.  If a tile was created from an underlying report, clicking that tile opens the report. 
 
 On our dashboard, the R12M (Rolling 12 Months) line shows that our market share is no longer increasing over time, it’s even declining a bit. And why do we have a big market share dip in June? To investigate further, click this visualization to open the underlying report.
 
@@ -72,7 +73,7 @@ On our dashboard, the R12M (Rolling 12 Months) line shows that our market share 
 1.  Look at the “Total Units by Month and isVanArsdel” column chart at the bottom. The navy column represents VanArsdel (our products) and green is our competition. The drop in June 2014 that VanArsdel experiences is not experienced by the competition.
 
 2.  The “Total Category Volume by Segment” bar chart in the middle on the right, is filtered to show VanArsdel’s top 2 segments. Take a look at how this filter was created:  
-    
+
 	a.  Expand the Filters pane on the right.  
     b.  Click to select the visualization.  
     c.  Under Visual Level Filters, notice that **Segment** is filtered to include only **Convenience** and **Moderation**.  

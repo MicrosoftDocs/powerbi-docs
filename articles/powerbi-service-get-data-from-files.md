@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="12/14/2015"
    ms.author="owend"/>
 # Get data from Excel, Power BI Desktop, and CSV files into Power BI
 

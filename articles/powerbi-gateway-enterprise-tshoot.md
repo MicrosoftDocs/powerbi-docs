@@ -41,7 +41,7 @@ After you walk through the steps, and close the configurator, it will place a zi
 
 All of the details are available, but the call to the Power BI service returned an error.  The error, and an activity id, will be displayed. This could happy for different reasons. You can collect, and review, the logs as mentioned above to get more details. 
 
-This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You would need to modify the *enterprisegatewayconfigurator.exe.config* with the correct proxy information. [Learn more](https://msdn.microsoft.com/library/kd3cf2ex(v=vs.110).aspx)
+This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You would need to modify the *enterprisegatewayconfigurator.exe.config* with the correct proxy information. [Learn more](https://msdn.microsoft.com/library/kd3cf2ex.aspx)
 
 **Error: Failed to update gateway details.  Please try again.**
 
@@ -77,9 +77,20 @@ Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownEr
 
 You can also look in the Event Logs > **Applications and Services Logs** > **Power BI Enterprise Gateway Service** for more details.
 
+## Dataset
+
+**Error: Couldn't refresh because your Personal Gateway is offline. Make sure your Personal Gateway is up and running.**
+
+You may have configured an enterprise gateway, and see this error for a given dataset when you try to refresh. The enterprise gateway currently does not support imported data. It supports SQL Server and SAP HANA in DirectQuery mode, or live connections with Analysis Services, either Tabular or Multidimensional.
+
+If you have imported data into your file, you will need the Personal Gateway to refresh the dataset.
+
+
 ## See Also
 
 [Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
+
+[Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage.md)
 

@@ -25,10 +25,11 @@ The Q&A question box is where you type your question using natural language. Q&A
 The answer to your question is displayed as an interactive visualization and updates as you modify the question.
 
 Q&A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue.  
+
 ![](media/powerbi-service-how-to-use-q-and-a/Q&A-1.png)
 
 1.  Place your cursor in the question box. Even before you start typing, Q&A displays a dropdown with helpful suggestions.
-2.
+
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_qna_dropdown.jpg)  
 
     This dropdown list contains:  
