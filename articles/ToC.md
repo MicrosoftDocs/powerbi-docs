@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/15/2015"
+   ms.date="12/22/2015"
    ms.author="bewillia"/>
 
 <!---
@@ -132,6 +132,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-auto-insights",
             "powerbi-service-auto-insights-types",
             "powerbi-service-auto-insights-optimize",
+            "powerbi-service-print",
             "powerbi-service-dash-and-reports-fullscreen",
             "powerbi-service-display-dash-in-focus-mode",
             "powerbi-service-display-tile-in-full-screen-mode",
