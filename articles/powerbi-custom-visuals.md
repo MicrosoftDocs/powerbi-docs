@@ -31,10 +31,6 @@ Are you a Web developer and interested in creating your own visualizations and a
 
 - [Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
 
-
->**Warning**  
-If the custom visual is created by someone else, you should review the custom visual for security and privacy. See [Review custom visuals for security and privacy](powerbi-custom-visuals-review-for-security-and-privacy.md).
-
 > [AZURE.VIDEO https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/321]
 
 ## See also
