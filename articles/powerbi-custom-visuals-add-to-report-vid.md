@@ -18,9 +18,9 @@
    ms.author="mihart"/>
 # Add a custom visualization to a Power BI report
 
-[AZURE.INCLUDE [powerbi-custom-visuals-selector](../../includes/powerbi-custom-visuals-selector.md)]
+[AZURE.INCLUDE [powerbi-custom-visuals-selector](../includes/powerbi-custom-visuals-selector.md)]
 
-[AZURE.INCLUDE [powerbi-custom-visuals-selector-list](../../includes/powerbi-custom-visuals-selector-list.md)]
+[AZURE.INCLUDE [powerbi-custom-visuals-selector-list](../includes/powerbi-custom-visuals-selector-list.md)]
 
 > [AZURE.IMPORTANT] A custom visual is added to a specific report when imported. If you'd like to use the visual in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual is saved with the new report.
 
