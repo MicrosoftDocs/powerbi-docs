@@ -56,7 +56,7 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 
 **Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](powerbi-refresh-enable-fast-combine.md)
 
-**Data source error: We cannot convert the value "\[Table\]" to type Table.**
+**Error: Data source error: We cannot convert the value "\[Table\]" to type Table.**
 
 **Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](powerbi-refresh-enable-fast-combine.md)
 
