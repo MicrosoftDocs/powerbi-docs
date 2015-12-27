@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/21/2015"
+ms.date="12/28/2015"
 ms.author="asaxton"/>
 # Power BI for Office 365 migration frequently asked questions (FAQ)
 
@@ -21,13 +21,17 @@ The following are some frequently asked questions (FAQ) related to the migration
 
 ## Timeline
 
-**What if I can’t move my business off of Power BI Sites by December 31, 2015?**
+**What if I can’t move my business off of the Power BI for Office 365 site by December 31, 2015?**
 
-You will still be able to continue to access Power BI Sites, Power BI Admin Center and the Data Management Gateway, for use with Power BI, until March 31, 2016. It is recommended that you move to the new experience as soon as possible.
+You will still be able to continue to access the Power BI for Office 365 site, Power BI Admin Center and the Data Management Gateway, for use with Power BI for Office 365, until March 31, 2016. It is recommended that you move to the new experience as soon as possible.
 
-**Does this mean that the SharePoint Online integration, with Power BI Sites, will be available until March, 31, 2016?**
+**Does this mean that the SharePoint Online integration, with the Power BI for Office 365 site, will be available until March, 31, 2016?**
 
-While you will be able to access Power BI sites, it is recommended that you move to the new experience as soon as possible.
+While you will be able to access the Power BI for Office 365 site, it is recommended that you move to the new experience as soon as possible.
+
+** What does limited support mean?**
+
+The Power BI for Office 365 site will be going into limited support starting December 31, 2015. The site will not be going away, but the level of support that will be provided will be limited to certain exception cases (e.g. security bugs).  You should move to the new Power BI service prior to December 31, 2015 for continued production level support. If for some reason you are not able to move your business over, please let us know as soon as possible, so that we can aid in the migration over to the new service. You can send email to [sunsetPBIO365 at microsoft.com](mailto:sunsetPBIO365@microsoft.com)
 
 ## Licensing
 
@@ -47,11 +51,11 @@ No. OneDrive for Business is not includes with a Power BI Pro subscription. You 
 
 **I have a lot of files on my SharePoint Online team site, do I need to move all of them over to OneDrive for Business?**
 
-If your files are on your root SharePoint Online team site, you can connect those files to Power BI through Get Data > Files > SharePoint Team Sites. If you have a subsite, those will not be available, and files will need to be moved to OneDrive for Business.
+If your files are on your root SharePoint Online team site, you can connect those files to Power BI through Get Data > Files > SharePoint Team Sites. You will soon be able to supply a URL to any SharePoint Online site, and connect to your files.
 
 **Can I use an Excel document from a SharePoint Online document library?**
 
-If the document is in the root Team site, you will be able to connect to it from Power BI by going to Get Data > Files > SharePoint Team Sites. If you have a subsite, those will not be available, and files will need to be moved to OneDrive for Business.
+If the document is in the root Team site, you will be able to connect to it from Power BI by going to **Get Data > Files > SharePoint - Team Sites**. If you have a subsite, those will not be available, and files will need to be moved to OneDrive for Business.
 
 **Does uploading a workbook to Power BI accounts for my data capacity quota?**
 
