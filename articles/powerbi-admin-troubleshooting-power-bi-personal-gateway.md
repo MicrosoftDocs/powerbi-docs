@@ -56,6 +56,10 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 
 **Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](powerbi-refresh-enable-fast-combine.md)
 
+**Data source error: We cannot convert the value "\[Table\]" to type Table.**
+
+**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](powerbi-refresh-enable-fast-combine.md)
+
 ## Data sources
 
 **Missing data provider** – Power BI Personal Gateway is 64-bit only. It requires a 64-bit version of the data providers to be installed on the same computer where the Personal Gateway is installed. For example, if the data source in the dataset is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the Personal Gateway.  **Note:** if you have 32 bit Excel, you cannot install a 64-bit ACE provider on the same computer.
