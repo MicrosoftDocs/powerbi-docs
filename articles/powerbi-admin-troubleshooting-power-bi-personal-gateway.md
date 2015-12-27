@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="12/28/2015"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Personal Gateway
 
