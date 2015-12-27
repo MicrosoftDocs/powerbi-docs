@@ -29,7 +29,7 @@ You will still be able to continue to access the Power BI for Office 365 site, P
 
 While you will be able to access the Power BI for Office 365 site, it is recommended that you move to the new experience as soon as possible.
 
-** What does limited support mean?**
+**What does limited support mean?**
 
 The Power BI for Office 365 site will be going into limited support starting December 31, 2015. The site will not be going away, but the level of support that will be provided will be limited to certain exception cases (e.g. security bugs).  You should move to the new Power BI service prior to December 31, 2015 for continued production level support. If for some reason you are not able to move your business over, please let us know as soon as possible, so that we can aid in the migration over to the new service. You can send email to [sunsetPBIO365 at microsoft.com](mailto:sunsetPBIO365@microsoft.com)
 
