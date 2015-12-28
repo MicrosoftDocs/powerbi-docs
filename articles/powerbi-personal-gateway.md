@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="12/28/2015"
    ms.author="asaxton"/>
 
 # Power BI Personal Gateway
@@ -156,7 +156,18 @@ From here, you can update your password and check your Gateway's connection stat
 
 ## Ports
 
-Power BI Personal Gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354. The Gateway does not require inbound ports.
+The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
+
+|Domain names|Outbound ports|
+|---|---|
+|*.powerbi.com|443|
+|*.analysis.windows.net|443|
+|*.login.windows.net|443|
+|*.servicebus.windows.net|443, 5671-5672, 9350-9354|
+|*.frontend.clouddatahub.net|443|
+|*.core.windows.net|443|
+|login.microsoftonline.com|443|
+|login.windows.net|443|
 
 ## Troubleshooting
 

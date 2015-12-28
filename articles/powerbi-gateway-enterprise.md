@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/01/2015"
+ms.date="12/28/2015"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise (Preview)
 
@@ -104,6 +104,17 @@ The gateway is configured to use *NT SERVICE\PBIEgwService* for the windows serv
 
 ## Ports
 The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
+
+|Domain names|Outbound ports|
+|---|---|
+|*.powerbi.com|443|
+|*.analysis.windows.net|443|
+|*.login.windows.net|443|
+|*.servicebus.windows.net|443, 5671-5672, 9350-9354|
+|*.frontend.clouddatahub.net|443|
+|*.core.windows.net|443|
+|login.microsoftonline.com|443|
+|login.windows.net|443|
 
 ## Troubleshooting
 If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the Power BI Gateway - Enterprise].
