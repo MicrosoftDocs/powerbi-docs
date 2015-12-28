@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Procurement Analysis sample for Power BI: Take a tour"
    description="Procurement Analysis sample for Power BI: Take a tour"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggiesMSFT" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="maggiesMSFT"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -17,7 +17,7 @@
    ms.date="11/06/2015"
    ms.author="maggies"/>
 
-# Procurement Analysis sample for Power BI: Take a tour 
+# Procurement Analysis sample for Power BI: Take a tour
 
 This industry sample dashboard and underlying report analyze a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
 
@@ -50,7 +50,7 @@ Let’s explore the spending areas in Mexico:
 
 1.  In the pie chart, select the **Mexico** bubble in the map. Notice
     that in the “Total Invoice by Sub Category” column chart, most of it
-    is in the **Indirect Goods & Services** sub category.\
+    is in the **Indirect Goods & Services** sub category.
     ![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement3.png)
 2.  Drill down into the **Indirect Goods & Services** column by
     selecting the drill down arrow on the top right of the chart and
@@ -72,7 +72,7 @@ We can use filters to evaluate different cities.
 Let’s also explore the discounts available from vendors, and the time
 periods when we get most discounts. Select the dashboard tile **Total
 Invoice, Discount % By Month**. The
-report opens to the “Discount Analysis” page. 
+report opens to the “Discount Analysis” page.
 
 ![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement4.png)
 
@@ -108,7 +108,7 @@ Select **Edit Report** in the upper-left corner and explore in Editing View.
 
 This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to **Get Data** for a new copy of this sample.
 
-## Next steps: Connect to your data 
+## Next steps: Connect to your data
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports
 can provide insights into procurement data. Now it’s your turn - connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="12/11/2015"
    ms.author="mihart"/>
 # Hyperlinks in tables
 
@@ -30,19 +30,17 @@ Hyperlinks in tables and matrixes can be created in Power BI Desktop but not fr
 
 ## Create a table or matrix hyperlink in Power BI Desktop
 
-1. If the hyperlink doesn't already exist as a column in your dataset, add it as a [custom column](tation/powerbi-desktop-common-query-tasks.md).
+1. If the hyperlink doesn't already exist as a column in your dataset, add it as a [custom column](powerbi-desktop-common-query-tasks.md).
 
 2. Select the column and in the **Modeling** tab choose the dropdown for **Data Category**.
 
-  ![](media/powerbi-service-hyperlinks-in-tables/PBI_data_category.png)
+      ![](media/powerbi-service-hyperlinks-in-tables/PBI_data_category.png)
 
 3. Select **Web URL**.
 
 4. Publish and open the report in Power BI Service.
 
 5. Add the new column to a table or matrix.
-
-
 
 ## Create a table or matrix hyperlink in Excel Power Pivot
 
