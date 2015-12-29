@@ -432,6 +432,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-iphone-app-get-started",
             "powerbi-mobile-ipad-app-get-started",
             "powerbi-mobile-android-app-get-started",
+            "powerbi-mobile-win10phone-app-get-started",
             "powerbi-mobile-get-the-windows-app",
             "powerbi-service-windows-app-get-started",
             "powerbi-mobile-create-dashboard",
@@ -485,6 +486,19 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ],
           "numberOfFeaturedArticles": 5
         },
+        {
+          "sectionTitle": "Power BI app for Windows 10 phones",
+          "articles": [
+            "powerbi-mobile-dashboards-in-the-win10phone-app",
+            "powerbi-mobile-tiles-in-the-win10phone-app",
+            "powerbi-mobile-pin-dashboard-from-win10phone-app",
+            "powerbi-mobile-share-a-dashboard-from-the-win10phone-app",
+            "powerbi-mobile-share-a-tile-from-the-win10phone-app",
+            "powerbi-mobile-groups-in-the-win10phone-app",
+            "powerbi-mobile-adjust-settings-for-the-win10phone-app"
+   ],
+   "numberOfFeaturedArticles": 5
+},
         {
           "sectionTitle": "Power BI app for Windows",
           "articles": [
