@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/22/2015"
+   ms.date="11/03/2015"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
@@ -32,5 +32,7 @@ Download a Power BI app:
 -   The [iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS)
 
 -   The [Power BI app for Android phones](powerbi-mobile-android-app-get-started.md)
+
+-   The [Power BI app for Windows phones](powerbi-mobile-win10phone-app-get-started.md)
 
 -   The [Power BI app for Windows devices](powerbi-service-windows-app-get-started.md)
