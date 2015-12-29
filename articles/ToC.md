@@ -496,9 +496,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-share-a-tile-from-the-win10phone-app",
             "powerbi-mobile-groups-in-the-win10phone-app",
             "powerbi-mobile-adjust-settings-for-the-win10phone-app"
-   ],
-   "numberOfFeaturedArticles": 5
-},
+          ],
+          "numberOfFeaturedArticles": 5
+        },
         {
           "sectionTitle": "Power BI app for Windows",
           "articles": [
