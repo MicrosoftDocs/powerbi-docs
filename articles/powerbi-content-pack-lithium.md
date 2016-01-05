@@ -20,8 +20,7 @@
 
 Lithium builds trusted relationships between the world's best brands and their customers, helping people get answers and share their experiences. By connecting the Lithium content pack to Power BI, you can measure key metrics about your online community to help drive sales, reduce service costs and increase loyalty. 
 
-Notes:
--	The Power BI content pack uses the Lithium API. Excessive calls to the API may result in additional charges from Lithium, please confirm with your Lithium administrator..
+Note: The Power BI content pack uses the Lithium API. Excessive calls to the API may result in additional charges from Lithium, please confirm with your Lithium administrator.
 
 Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/lithium) for Power BI.
 
@@ -38,7 +37,7 @@ Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/l
 
     ![](media/powerbi-content-pack-lithium/connect.png)
     
-4.  Provide the URL of your Lithium community. It will be in the form of *https://community.<sitename>.powerbi.com*.
+4.  Provide the URL of your Lithium community. It will be in the form of *https://community.yoursite.com*.
 
     ![](media/powerbi-content-pack-lithium/params.png)
 
@@ -48,7 +47,7 @@ Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/l
     
     ![](media/powerbi-content-pack-lithium/creds2.png)
 
-6.  Click **Connect** to begin the import process. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6.  Once the login flow is completed the import process will begin. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
 
      ![](media/powerbi-content-pack-lithium/lithium.png)
 
