@@ -22,7 +22,7 @@ If Excel is your go-to tool for working with data, you can leverage your Excel e
 
 >Note: You can't pin items in Excel to a dashboard in Power BI. If you want to pin Power View visuals to a Power BI dashboard, either [connect to it on OneDrive or import it from your computer, as a data source](powerbi-service-get-data-from-files.md). 
 
-To view and explore whole Excel files in Power BI, your workbooks need to be on OneDrive for Business. Here's a big advantage of connecting to files on OneDrive: any changes you make to a file on OneDrive appear automatically in the file in Power BI. The reverse is also true when you bring in whole Excel files: Changes you make to the file in Power BI are saved to the file on OneDrive.
+To view and explore whole Excel files in Power BI, your workbooks need to be on OneDrive for Business or SharePoint -Team Sites. Here's a big advantage of connecting to files on OneDrive or SharePoint: any changes you make to a file will appear automatically in the file in Power BI. The reverse is also true when you bring in whole Excel files: Changes you make to the file in Power BI are saved to the file on OneDrive or SharePoint.
 
 Excel workbooks in Power BI display the same items as workbooks in Excel Online. For example, Excel workbooks can display these items:
 
@@ -57,7 +57,7 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 -   If you have an Excel 2010 workbook with a PowerPivot 2010 data model, you need to [upgrade the workbook to Excel 2013](https://support.office.com/article/Upgrade-Power-Pivot-Data-Models-to-Excel-2013-c66578cb-74d5-43ae-a474-5a01be5db439).
 
 
-## Connect to an Excel file on OneDrive for Business
+## Connect to an Excel file on OneDrive for Business or SharePoint -Team Sites
 
 1.  Select **Get Data** at the bottom of the left navigation pane. 
 
@@ -67,31 +67,40 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 
     ![](media/powerbi-bring-in-whole-excel-files/PBI_GetFiles.png)
 
-3.  Select **OneDrive - Business**. 
+3.  Select **OneDrive - Business** or **SharePoint - Team Sites**.
 
     ![](media/powerbi-bring-in-whole-excel-files/PBI_GetFilesLocalOneDriveEtc..png)
 
-4.  In OneDrive for Business, under **Connect, Manage, and View Excel in Power BI**, select **Connect**. This brings the whole Excel workbook into Power BI.
+4.  In OneDrive for Business or SharePoint for Business, under **Connect, Manage, and View Excel in Power BI**, select **Connect**. This brings the whole Excel workbook into Power BI.
 
     ![](media/powerbi-bring-in-whole-excel-files/PBI_ImportExcelDataOrWhole.png)
 
-5.  The Excel file is under **Reports**, with an Excel icon next to it. The yellow asterisk (\*) shows it's new.
+5.  Once brought into Power BI, your Excel file will under **Reports**, with an Excel icon next to it. The yellow asterisk (\*) shows it's new.
 
     ![](media/powerbi-bring-in-whole-excel-files/PBI_XLFF_LeftNav.png)
 
-6.  No dashboard or dataset is associated with it.
+  No dataset is associated with your Excel file, and no dashboard is associated with it yet. To explore, just click on the file name under **Reports**. Your workbook will open in read-only view, right in Power BI.
 
-7.  Select the ellipsis (...) next to the file \> **View** or **Edit**.
+## Pin a range to a dashboard
+When you bring whole Excel files into Power BI, you can select a range from a worksheet and pin it to a dashboard you already have or pin to a new dashboard. The range you select can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
+It's easy, just select a range, then click **Pin**.
 
-    ![](media/powerbi-bring-in-whole-excel-files/PBI_XLFF_Menu.png)
+![](media/powerbi-bring-in-whole-excel-files/PBI_PinRange.png)
 
-    The workbook opens in Excel Online in a new browser window. All the worksheet tab names are along the bottom.
+In **Pin to Dashboard**, select an existing dashboard or create a new one, then click **Pin**.
 
-    ![](media/powerbi-bring-in-whole-excel-files/PBI_XLFF_OlyReport.png)
+![](media/powerbi-bring-in-whole-excel-files/PBI_PinToDashboard.png)
 
-8.  To switch from read-only view to editing view, in the upper-right corner select **Edit Workbook** \> **Edit in Excel Online**.
+To learn more, see [Pin a tile to a Power BI dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md).
 
-    Or select **Edit in Excel** if you have Excel installed on your computer.
+## Edit your workbooks
+When exploring your workbook in Power BI, it's read-only. But sometimes you'll need to make some changes. No problem. You can open and edit your Excel files in Excel Desktop on your own computer or in Excel Online, right from Power BI!
+
+Click **Edit**, then click **Edit in Excel** to open the file in Excel Desktop. If you only need to make some quick changes, click **Edit in Excel Online** to open the file right in your browser.
+
+![](media/powerbi-bring-in-whole-excel-files/PBI_EditInExcel.png)
+
+When you edit your file in Excel Online, your changes are immediately saved to the file on OneDrive or SharePoint. When you edit your file in Excel Desktop, you'll need to save your changes. Power BI will pick up those changes, usually in about an hour, or you can refresh Power BI in your browser to see them right away.
 
 
 ## Share your workbooks in content packs
