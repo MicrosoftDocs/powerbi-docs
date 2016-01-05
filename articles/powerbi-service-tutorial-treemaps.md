@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="12/11/2015"
    ms.author="mihart"/>
 
 # Tutorial: Treemaps in Power BI  
@@ -52,14 +52,13 @@ These instructions use the Retail Analysis Sample. To follow along,  [downloa
 2.  Convert the chart to a Treemap.  
 ![](media/powerbi-service-tutorial-treemaps/treemapConvertTo_new.png)
 
-3.  Drag **Category** to the **Group** well. Power BI creates a Treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.  
-
+3.  Drag **Category** to the **Group** well. Power BI creates a Treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.
   ![](media/powerbi-service-tutorial-treemaps/treemapComplete_new.png)
 
 4.  Drag **Chain** to the **Details** well to complete your Treemap. You can now compare last year's sales by category and chain.   
 ![](media/powerbi-service-tutorial-treemaps/treemap_addGroup_new.png)
-	-   Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
-    ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
+
+5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
 
 5.  [Add the Treemap as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md). 
 

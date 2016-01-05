@@ -22,6 +22,8 @@ A waterfall chart shows a running total as values are added or subtracted. It's 
 
 The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often [start on the horizontal axis](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "start on the horizontal axis"), while the intermediate values are floating columns. Because of this "look", waterfall charts are also called bridge charts.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hEImCZT2g60" frameborder="0" allowfullscreen></iframe>
+
 ## When to use a Waterfall Chart
 
 Waterfall Charts are a great choice:

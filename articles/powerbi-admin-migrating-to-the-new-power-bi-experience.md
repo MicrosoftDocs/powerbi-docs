@@ -14,14 +14,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2015"
+   ms.date="12/28/2015"
    ms.author="asaxton"/>
 
 # Migrating to the new Power BI experience
 
-We are making [product and licensing updates to Power BI](https://www.microsoft.com/powerBI/licensing.aspx) that will lead to the deprecation of existing Power BI for Office 365 experiences by December 31, 2015. If you’re an existing Power BI for Office 365 customer, don’t worry: You will still be able to use your existing Power BI for Office 365 licenses as Power BI Pro licenses for the new experience. Your Power BI for Office 365 licenses will renew as Power BI Pro licenses at the end of the term of your existing subscription.
+We are making [product and licensing updates to Power BI](https://www.microsoft.com/powerBI/licensing.aspx) that will lead to limited support of the Power BI for Office 365 experiences by December 31, 2015, and deprecation of the Power BI for Office 365 experience by March 31, 2016. If you’re an existing Power BI for Office 365 customer, don’t worry: You will still be able to use your existing Power BI for Office 365 licenses as Power BI Pro licenses for the new experience. After your Power BI for Office 365 licenses expire, and you need to use Pro features, you can add a new Power BI Pro subscription, or sign up for an individual Power BI Pro license.
 
-Read [Migrating from Power BI for Office 365 to Power BI Pro](http://go.microsoft.com/fwlink/?LinkId=619089) to learn how to migrate from your existing Power BI for Office 365 experience to the new Power BI experience.  
+The Power BI for Office 365 site will not be going away, but the level of support that will be provided will be limited to certain exception cases (e.g. security bugs).  You should move to the new Power BI service prior to December 31, 2015 for continued production level support. If for some reason you are not able to move your business over, please let us know as soon as possible, so that we can aid in the migration over to the new service. You can send email to [sunsetPBIO365 at microsoft.com](mailto:sunsetPBIO365@microsoft.com).
+
+Read [Migrating from Power BI for Office 365 to Power BI Pro](http://go.microsoft.com/fwlink/?LinkId=619089) to learn how to migrate from your existing Power BI for Office 365 experience to the new Power BI experience.  You can also check out the [migration frequently asked questions](powerbi-migration-faq.md).
 
 This table compares key aspects of the two experiences.
 

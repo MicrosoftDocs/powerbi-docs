@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Get data for Power BI"
    description="Get data for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggiesMSFT" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="maggiesMSFT"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -16,11 +16,10 @@
    ms.workload="powerbi"
    ms.date="11/02/2015"
    ms.author="maggies"/>
+
 # Get data for Power BI
 
-Dashboards, reports, and datasets are at the heart of Power BI. Connect to or import ***datasets*** from a variety of sources, including content packs, files and databases. Content packs provide "out of the box" connectivity to a number of popular services such as Salesforce.
-
-
+Dashboards, reports, and datasets are at the heart of Power BI. Connect to or import ***datasets*** from a variety of sources, including content packs, files and databases. Content packs provide "out of the box" connectivity to a number of popular services such as [Salesforce](https://powerbi.microsoft.com/integrations/salesforce).
 
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
@@ -35,7 +34,7 @@ Power BI is designed to work well with a variety of data sources:
 
 -   Content packs for services, if you have an existing subscription to that service. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
 
--   Connectors to 
+-   Connectors to
 -   databases and other datasets, such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
 
 **Tip**: Read [Important considerations for connecting to data.](powerbi-service-important-considerations-for-connecting-to-data-in-power-bi.md)
@@ -79,4 +78,3 @@ After you've connected to or imported a dataset, it's time to: 
 [Get Started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-

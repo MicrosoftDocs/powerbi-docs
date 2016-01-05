@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="12/10/2015"
    ms.author="mihart"/>
 
 
@@ -28,19 +28,17 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 
 1. In the left navigation pane, under **Datasets** select the ellipses (...) and choose **Quick Insights**.
 
-  ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesl.png)
+    ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesl.png)
 
-2. Power BI uses [various algorithms](powerbi-service-auto-insights-types.md) to search for trends in your dataset.  
+2. Power BI uses [various algorithms](powerbi-service-auto-insights-types.md) to search for trends in your dataset.
 
-  ![](media/powerbi-service-auto-insights/PBI_AutoInsightsSearching.png)
+    ![](media/powerbi-service-auto-insights/PBI_AutoInsightsSearching.png)
 
 3. Within seconds, your insights are ready.  Select **View Insights** to display visualizations.
+![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
 
-  ![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
-
-  Or, in the leftnav, select the ellipses (...) and choose **View Insights**.
-
-  ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
+    Or, in the leftnav, select the ellipses (...) and choose **View Insights**.
+    ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate Insight Cards. Each card has a chart or graph plus a short description.
 

@@ -23,9 +23,13 @@ Below are the common errors you can encounter with tiles and an explanation.
 
 **Power BI encountered an unexpected error while loading the model. Please try again later.**
 or
-**Couldn't retrieve the data model. Please contact the dashboard owner to make sure the data sources and model exist and are accessible**
+**Couldn't retrieve the data model. Please contact the dashboard owner to make sure the data sources and model exist and are accessible.**
 
 We weren't able to access your data because the data source wasn't reachable. This could happen if the data source was removed, renamed, moved, offline, or permissions have changed. Check that the source is still in the location we are pointing to and you still have permission to access it. If that isn't the issue, the source may be slow. Try again later during a time when the load on the source is smaller. If it is an on-premise source, the data source owner may be able to provide more information. 
+
+**You don’t have permission to view this tile or open the workbook.**
+
+Please contact the dashboard owner to make sure the data sources and model exist and are accessible for your account.
 
 **Data shapes must contain at least one group or calculation that outputs data. Please contact the dashboard owner.**
 

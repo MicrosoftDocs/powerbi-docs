@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/07/2015"
+   ms.date="12/27/2015"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
@@ -31,24 +31,25 @@ Once downloaded, custom visualizations must be imported into a report. Once impo
     **From the Desktop File menu**  
   - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
 
- ![](media/powerbi-custom-visuals-use/InsertFile.png)
+    ![](media/powerbi-custom-visuals-use/InsertFile.png)
 
-    **From the Visualization pane**  
+    **From the Visualization pane**
+
   - In the **Visualizations** pane, choose **Insert (…)**.  
 
- ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+    ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
 3. **Review the warning**.
 
     A custom visual has access to the data in the report you use in the custom visual, and can perform actions on your behalf. If you share the report with others, when they view the report the custom visual can do the same, but for your co-workers. Take care to review the custom visual to ensure it comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to use a specific Custom Visual you obtained from the Power BI visuals gallery, through email, or from some other source.  
 
-  ![](media/powerbi-custom-visuals-use/caution.png)
+    ![](media/powerbi-custom-visuals-use/caution.png)
 
-3. Select a .pbiviz file in the **File Open** dialog.
+4. Select a .pbiviz file in the **File Open** dialog.
 
-4. You will see the custom visual added to the visualizations available for your use.
+5. You will see the custom visual added to the visualizations available for your use.
 
-  ![](media/powerbi-custom-visuals-use/VisualUse.png)
+    ![](media/powerbi-custom-visuals-use/VisualUse.png)
 
 ## See also
 
