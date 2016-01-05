@@ -19,7 +19,7 @@
 
 # Authenticate a web app
 
-[Download the web app sample](http://go.microsoft.com/fwlink/?LinkId=619279) | View the code on GitHub: [Default.aspx.cs](http://go.microsoft.com/fwlink/?LinkId=619431) | [Redirect.aspx.cs](http://go.microsoft.com/fwlink/?LinkId=619432)
+[Download the web app sample](http://go.microsoft.com/fwlink/?LinkId=619279) | View the code on GitHub: [Default.aspx.cs](https://github.com/Microsoft/PowerBI-CSharp/blob/master/samples/webforms/get-started-web-app-asp.net/PBIWebApp/Default.aspx.cs) | [Redirect.aspx.cs](https://github.com/Microsoft/PowerBI-CSharp/blob/master/samples/webforms/get-started-web-app-asp.net/PBIWebApp/Redirect.aspx.cs)
 
 This article shows you how to authenticate a Power BI web app. It includes examples in C#; however, the authentication process is the same for other web programming languages. There is a [web app sample on GitHub](http://go.microsoft.com/fwlink/?LinkId=619279). To learn how to run the sample, see [Web app sample](https://msdn.microsoft.com/library/mt186158.aspx).
 

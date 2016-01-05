@@ -31,7 +31,7 @@ A Power BI app uses a **Client ID** to identify itself to Azure AD. See [Azure a
 
 To learn how to register and authenticate a Power BI app:
 
-- **Power BI client app**: See [Register a client app](powerbi-developer-register-a-client-app.md) and [Authenticate a Power BI client app](Authenticate+a+client+app.md).
+- **Power BI client app**: See [Register a client app](powerbi-developer-register-a-client-app.md) and [Authenticate a Power BI client app](powerbi-developer-authenticate-a-client-app.md).
 
 - **Power BI web app**: See [Register a web app](powerbi-developer-register-a-web-app.md) and [Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md).
 
@@ -41,7 +41,7 @@ To learn how to register and authenticate a Power BI app:
 ## Azure app client ID
 An Azure app has a **Client ID** that is used by the application to identify themselves to the users that they are requesting permissions from. You use a **Client ID** to get an authentication token. To get an Azure **Client ID**, see [How to get a client app id](powerbi-developer-register-a-client-app.md#clientID).
 
-For a complete sample of how to use an Azure** Client ID** to authenticate a client app, see [Authenticate a client app](powerbi-developer-authenticate-a-client-app.md).
+For a complete sample of how to use an Azure **Client ID** to authenticate a client app, see [Authenticate a client app](powerbi-developer-authenticate-a-client-app.md).
 
 For example, the following C# code uses an Azure app client id to get an access token.
 

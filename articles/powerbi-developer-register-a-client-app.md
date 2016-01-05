@@ -69,7 +69,7 @@ Here's how to register a client app:
 3. In the left service panel, choose **ACTIVE DIRECTORY**.
 4. Click the active directory that you belong to.
 
-    ![](media/powerbi-developer-register-a-client-app/register-app-ad.png)
+  ![](media/powerbi-developer-register-a-client-app/register-app-ad.png)
 
 5. Click **APPLICATIONS**.
 
