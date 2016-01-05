@@ -16,7 +16,8 @@
    ms.workload="powerbi"
    ms.date="12/28/2015"
    ms.author="tpalmer"/>
-#Lithium content pack for Power&nbsp;BI
+
+# Lithium content pack for Power&nbsp;BI
 
 Lithium builds trusted relationships between the world's best brands and their customers, helping people get answers and share their experiences. By connecting the Lithium content pack to Power BI, you can measure key metrics about your online community to help drive sales, reduce service costs and increase loyalty. 
 
