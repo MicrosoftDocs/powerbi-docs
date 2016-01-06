@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="01/06/2015"
    ms.author="asaxton"/>
 
 # Data refresh in Power BI  
@@ -79,7 +79,7 @@ This is the probably the most common way of getting your data into Power BI. Dat
 |---|---|---|---|
 |Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|No|Yes|No|
 |Get Data is used to connect to and explore live an Analysis Services database.|Yes|No|Yes|
-|Get Data is used to connect to and query data from any listed on-premises data source except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.|No|Yes|Yes|
+|Get Data is used to connect to and query data from any listed on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange.|No|Yes|Yes|
 
 
 For details, see [Refresh a dataset created from a Power BI Desktop file on a local drive](powerbi-refresh-desktop-file-local-drive.md).
@@ -91,7 +91,7 @@ For details, see [Refresh a dataset created from a Power BI Desktop file on a lo
 |Tables of data in a worksheet not loaded into the Excel data model.|No|No|N/A|
 |Tables of data in a worksheet linked to a table in the Excel data model (linked tables).|No|No|N/A|
 |Power Query* is used to connect to and query data from any listed online data source and load data into the Excel data model.|No|Yes|No|
-|Power Query* is used to connect to and query data from any listed on-premises data source except for Hadoop file (HDFS), Active Directory, Microsoft Exchange and load data into the Excel data model.|No|Yes|Yes|
+|Power Query* is used to connect to and query data from any listed on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange and load data into the Excel data model.|No|Yes|Yes|
 |Power Pivot is used to connect to and query data from any listed online data source and load data into the Excel data model.|No|Yes|No|
 |Power Pivot is used to connect to and query data from any listed on-premises data source and load data into the Excel data model.|No|Yes|Yes|
 
@@ -109,7 +109,7 @@ Keeping your files on OneDrive and connecting to them from Power BI provides a g
 |Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|No|Yes|No|
 |Get Data is used to connect to and explore live an Analysis Services database.|Yes|No|Yes|
 |Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark.|Yes (hourly)|Yes|No|
-|Get Data is used to connect to and query data from any listed  on-premises data source except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.|No|Yes|Yes|
+|Get Data is used to connect to and query data from any listed  on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange.|No|Yes|Yes|
 
 For details, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](powerbi-refresh-desktop-file-onedrive.md).
 
@@ -120,7 +120,7 @@ For details, see [Refresh a dataset created from a Power BI Desktop file on OneD
 |Tables of data in a worksheet not loaded into the Excel data model.|Yes, hourly|Manual only|No|
 |Tables of data in a worksheet linked to a table in the Excel data model (linked tables).|Yes, hourly|Manual only|No|
 |Power Query* is used to connect to and query data from any listed online data source and load data into the Excel data model.|No|Yes|No|
-|Power Query* is used to connect to and query data from any listed on-premises data source except for Hadoop file (HDFS), Active Directory, Microsoft Exchange and load data into the Excel data model.|No|Yes|Yes|
+|Power Query* is used to connect to and query data from any listed on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange and load data into the Excel data model.|No|Yes|Yes|
 |Power Pivot is used to connect to and query data from any listed online data source and load data into the Excel data model.|No|Yes|No|
 |Power Pivot is used to connect to and query data from any listed on-premises data source and load data into the Excel data model.|No|Yes|Yes|
 

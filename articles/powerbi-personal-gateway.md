@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/28/2015"
+   ms.date="01/06/2015"
    ms.author="asaxton"/>
 
 # Power BI Personal Gateway
@@ -43,9 +43,9 @@ A Power BI Personal Gateway *is required* in order to refresh datasets that get 
 
 With a Gateway, REFRESH NOW and SCHEDULE REFRESH are supported for datasets uploaded from:
 
--   Microsoft Excel 2013 (or later) workbooks where Power Query or Power Pivot is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get External Data in Power Query or Power Pivot support refresh except Microsoft Exchange and Active Directory.
+-   Microsoft Excel 2013 (or later) workbooks where Power Query or Power Pivot is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get External Data in Power Query or Power Pivot support refresh except for Hadoop file (HDFS) and Microsoft Exchange.
 
--   Microsoft Power BI Desktop files where Get Data is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get Data support refresh except Microsoft Exchange and Active Directory.
+-   Microsoft Power BI Desktop files where Get Data is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get Data support refresh except for Hadoop file (HDFS) and Microsoft Exchange.
 
 ### Online data sources
 
