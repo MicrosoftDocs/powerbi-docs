@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2015"
+   ms.date="01/06/2016"
    ms.author="maggies"/>
 # Get started with the Power BI for Windows 10 phone app
 
@@ -48,20 +48,16 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) 
 
 3.  In the Power BI app, tap **Sign in** to view your dashboards. Sign in with the same credentials as your Power BI account on the web.
 
-## Now what?
+## What next?
 
-What else you can do in the Windows 10 phone app for Power BI?
+See what else you can do in the Windows 10 phone app for Power BI.
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
-
+-   [Pin a Power BI dashboard](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your phone's Start screen.
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md).
-
 -   [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
-
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md).
-
--   View the [dashboards and reports in your groups](powerbi-mobile-groups-in-the-win10phone-app.md).
-
+-   View your [groups' dashboards and reports](powerbi-mobile-groups-in-the-win10phone-app.md).
 ### See also
 
 [Download the Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store.  
