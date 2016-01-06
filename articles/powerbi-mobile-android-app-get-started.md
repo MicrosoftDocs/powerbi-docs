@@ -32,7 +32,7 @@ Bring your own data together and create dashboards and reports on the [Power BI
 
     >**Note:** Your phone needs to be using at least Android 4.4.
 
--   **Start with samples**    Even without signing up or signing in, after you download the app you can view the samples. Or go back to the samples whenever you want from the dashboards home page.
+-   **Start when you open the app**    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android phone. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can go back to the samples whenever you want from the dashboards home page.
 
 ## Sign up for the Power BI service on the web
 
@@ -48,19 +48,23 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/)
 
 3.  In the Android app, tap Sign in to view your dashboards. Sign in with the same credentials as your Power BI account on the web.
 
-## Now what?
+## What else?
 
-What else you can do in the Android phone app for Power BI?
+See what else you can do in the Android phone app for Power BI.
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-android-app.md).
 
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
 
--   Pick out [favorites](powerbi-mobile-favorites-in-the-android-app.md).
+-   View the dashboards in [your groups](powerbi-mobile-groups-in-the-android-app.md).
+
+-   Pick [favorites](powerbi-mobile-favorites-in-the-android-app.md).
 
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
+
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone to open a related dashboard. 
 
 ## See also
 
