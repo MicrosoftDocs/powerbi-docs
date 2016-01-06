@@ -35,11 +35,11 @@ Here are the types of access an application can request.
 
 -	**View all Datasets**
 
-  - This permission gives an application the ability to list out all datasets that you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. Currently there are no features that allow an application to see the data within the dataset, but this may change over time.  The permission does not give the application to add or make any changes to a dataset.
+  - This permission gives an application the ability to list out all datasets that you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read the data in a dataset. The permission does not give the application rights to add or make changes to a dataset.
 
 -	**Read and Write all Datasets**
 
-  - This permission gives an application the ability to list all datasets that you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. Currently there are no features that allow and application to see the data within the dataset, but this may change over time. The application can also create new dataset, make modifications to existing ones, or update the data within. This is commonly used by application that wish to send to data directly to Power BI.
+  - This permission gives an application the ability to list all datasets that you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read and write the data in a dataset. The application can also create new dataset, or make modifications to existing ones. This is commonly used by application that wish to send to data directly to Power BI.
 
 -	**View user's Groups**
 

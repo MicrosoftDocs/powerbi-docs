@@ -14,14 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/21/2015"
+   ms.date="01/06/2016"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
 
 The iPad app for Microsoft Power BI for iOS is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards and reports easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
-
->**Note**: Coming in December 2015, you'll also be able to view and interact with your SQL Server KPIs and mobile reports in the Power BI app.
 
 ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_DashPopout.png)
 

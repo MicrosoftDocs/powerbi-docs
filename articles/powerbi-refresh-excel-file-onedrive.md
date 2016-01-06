@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="01/06/2016"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from an Excel workbook on OneDrive  
@@ -29,9 +29,9 @@ If your workbook connects to external data sources to query and load data into t
 
 Once a dataset is created in Power BI, Refresh Now and Schedule Refresh Refresh is supported for:  
 -   All online data sources shown in Power Query (Get & Transform Data in Excel 2016).
--   All on-premises data sources shown in Power Query (Get & Transform Data in Excel 2016) except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
+-   All on-premises data sources shown in Power Query (Get & Transform Data in Excel 2016) except for Hadoop file (HDFS) and Microsoft Exchange.
 -   All online data sources shown in Power Pivot. \*
--   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
+-   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
 >**Notes:**  
 >- A [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
@@ -58,9 +58,9 @@ If your workbook on OneDrive connects to external data sources to query and load
 
 Once a dataset is created in Power BI, Refresh Now and Schedule Refresh is supported for:  
 -   All online data sources shown in Power Query (Get & Transform Data in Excel 2016).
--   All on-premises data sources shown in Power Query (Get & Transform Data in Excel 2016) except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
+-   All on-premises data sources shown in Power Query (Get & Transform Data in Excel 2016) except for Hadoop file (HDFS) and Microsoft Exchange.
 -   All online data sources shown in Power Pivot. \*
--   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
+-   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
 >**Notes:**  
 >- A [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
