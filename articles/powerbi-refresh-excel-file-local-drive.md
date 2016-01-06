@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="01/06/2015"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from an Excel workbook on a local drive
@@ -22,9 +22,9 @@
 ## What’s supported?  
 In Power BI, Refresh Now and Schedule Refresh  is supported for datasets created from Excel workbooks imported from a local drive where Power Query (Get & Transform data in Excel 2016) or Power Pivot is used to connect to any of the following data sources and load data into the Excel data model:  
 -   All online data sources shown in Power Query.
--   All on-premises data sources shown in Power Query except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
+-   All on-premises data sources shown in Power Query except for Hadoop file (HDFS) and Microsoft Exchange.
 -   All online data sources shown in Power Pivot.\*
--   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
+-   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
 >**Notes:**  
 >- [A Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.
@@ -65,7 +65,7 @@ In **My Workspace** &gt; **Datasets** &gt; **dataset** &gt; **SCHEDULE REFRESH
 ### Sign into data sources  
 In Power BI, when you import your file from a local drive, Power BI does not copy the credentials you used when you connected to and loaded data into the data model, so you’ll need to sign into the data sources again in Power BI. You only need to do this once. After that, Power BI retains those credentials as part of the dataset’s settings and uses them to sign into the data sources to query for updated data.
 
-1. ﻿In **My Workspace** &gt; **Datasets** &gt; **dataset** &gt;  **SCHEDULE REFRESH** or **REFRESH NOW** to open the Settings page.  
+1. In **My Workspace** &gt; **Datasets** &gt; **dataset** &gt;  **SCHEDULE REFRESH** or **REFRESH NOW** to open the Settings page.  
 	![](media/powerbi-refresh-excel-file-local-drive/Refresh_SignInToDS_1.png)
 
 2. Expand **Data Source Credentials**, and then click **Edit Credentials**.  
