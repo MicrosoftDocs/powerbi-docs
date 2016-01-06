@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/15/2015"
+   ms.date="12/22/2015"
    ms.author="bewillia"/>
 
 <!---
@@ -132,6 +132,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-auto-insights",
             "powerbi-service-auto-insights-types",
             "powerbi-service-auto-insights-optimize",
+            "powerbi-service-print",
             "powerbi-service-dash-and-reports-fullscreen",
             "powerbi-service-display-dash-in-focus-mode",
             "powerbi-service-display-tile-in-full-screen-mode",
@@ -431,6 +432,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-iphone-app-get-started",
             "powerbi-mobile-ipad-app-get-started",
             "powerbi-mobile-android-app-get-started",
+            "powerbi-mobile-win10phone-app-get-started",
             "powerbi-mobile-get-the-windows-app",
             "powerbi-service-windows-app-get-started",
             "powerbi-mobile-create-dashboard",
@@ -456,6 +458,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "iPhone app (Power BI for iOS)",
           "articles": [
+            "powerbi-mobile-iphone-kpis-mobile-reports",
             "powerbi-mobile-dashboards-in-the-iphone-app",
             "powerbi-mobile-tiles-in-the-iphone-app",
             "powerbi-mobile-dashboard-smart-order-in-the-iphone-app",
@@ -479,7 +482,20 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app",
-            "powerbi-service-qr-code-for-tile"
+            "powerbi-mobile-qr-code-for-android"
+          ],
+          "numberOfFeaturedArticles": 5
+        },
+        {
+          "sectionTitle": "Power BI app for Windows 10 phones",
+          "articles": [
+            "powerbi-mobile-dashboards-in-the-win10phone-app",
+            "powerbi-mobile-tiles-in-the-win10phone-app",
+            "powerbi-mobile-pin-dashboard-from-win10phone-app",
+            "powerbi-mobile-share-a-dashboard-from-the-win10phone-app",
+            "powerbi-mobile-share-a-tile-from-the-win10phone-app",
+            "powerbi-mobile-groups-in-the-win10phone-app",
+            "powerbi-mobile-adjust-settings-for-the-win10phone-app"
           ],
           "numberOfFeaturedArticles": 5
         },

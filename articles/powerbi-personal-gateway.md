@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="01/06/2016"
    ms.author="asaxton"/>
 
 # Power BI Personal Gateway
@@ -43,9 +43,9 @@ A Power BI Personal Gateway *is required* in order to refresh datasets that get 
 
 With a Gateway, REFRESH NOW and SCHEDULE REFRESH are supported for datasets uploaded from:
 
--   Microsoft Excel 2013 (or later) workbooks where Power Query or Power Pivot is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get External Data in Power Query or Power Pivot support refresh except Microsoft Exchange and Active Directory.
+-   Microsoft Excel 2013 (or later) workbooks where Power Query or Power Pivot is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get External Data in Power Query or Power Pivot support refresh except for Hadoop file (HDFS) and Microsoft Exchange.
 
--   Microsoft Power BI Desktop files where Get Data is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get Data support refresh except Microsoft Exchange and Active Directory.
+-   Microsoft Power BI Desktop files where Get Data is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get Data support refresh except for Hadoop file (HDFS) and Microsoft Exchange.
 
 ### Online data sources
 
@@ -156,7 +156,18 @@ From here, you can update your password and check your Gateway's connection stat
 
 ## Ports
 
-Power BI Personal Gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354. The Gateway does not require inbound ports.
+The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
+
+|Domain names|Outbound ports|
+|---|---|
+|*.powerbi.com|443|
+|*.analysis.windows.net|443|
+|*.login.windows.net|443|
+|*.servicebus.windows.net|443, 5671-5672, 9350-9354|
+|*.frontend.clouddatahub.net|443|
+|*.core.windows.net|443|
+|login.microsoftonline.com|443|
+|login.windows.net|443|
 
 ## Troubleshooting
 

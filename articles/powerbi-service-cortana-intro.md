@@ -29,6 +29,8 @@ Similar to Power BI Q&A, ask or type your questions using natural language. Cort
 
 Cortana can find answers either directly from datasets in Power BI or from report pages published to Power BI and designed specifically for Cortana (called *Answer Pages*).  Interact with the visualizations as you would in Power BI or, to further explore an answer, simply open a result in Power BI.
 
+>**NOTE**: Only datasets hosted in Power BI are supported. Cortana with Power BI does not work with DirectQuery or other direct-connect datasets.
+
 Cortana ranks the answers from Power BI, giving you one or more best matches if there is high confidence a result is a good answer. Other potential answers from Power BI are listed in a Power BI section below any best matches. If you're a dataset owner, you can help Cortana return better answers by creating specialized reports (called *Answer Pages*) for Cortana in Power BI Desktop to answer the most-common questions and by optimizing your model for Power BI Q&A.
 
 ## How do I get results?

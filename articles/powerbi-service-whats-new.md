@@ -25,6 +25,70 @@ Check this page for known issues and recently-released features in Power BI Serv
 
 ## Recent updates
 
+**December 16, 2015**
+
+Lots of updates this week, most apply to Power BI Desktop but several significant updates to report authoring and visualizations as well. The [Power BI Team Blog](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx) contains full descriptions and even a video describing the updates.   
+
+[Download Power BI Desktop](https://powerbi.microsoft.com/desktop?WT.mc_id=Blog_Desktop_Update)
+
+* Updates to the report authoring formatting pane and ribbon:
+
+  1. Format data labels per category series
+
+  2. Change number of decimal places showed in visuals
+
+  3. Change text size in visuals
+
+  4. Ability to lay out visuals accurately: alignment, distribute, size, position (requires Power BI Desktop for authoring)
+
+  5. Set styles across multiple visuals through Format Painter (requires Power BI Desktop for authoring)
+
+* Enhancements to visualizations:
+
+  1. visuals cue for sort state in Table visual
+
+  2. new visual: Stacked Area chart
+
+  3. smart tooltips for Area and Line charts on hover
+
+  4. ability to create Reference line/region for a Cartesian visual
+
+  5. improved data labels for pie and scatter chart
+
+* R visuals integration in Desktop (Preview feature)
+
+* Desktop will suggest table to table relationships when trying to create 2 tables which are not related.
+
+* Desktop optimized Home ribbon layout.
+
+* Desktop data modeling updates in Relationships View:
+
+  1. zooming slider
+
+  2. fit zoom to
+
+  3. reset layout
+
+  4. ability to zoom in using Ctrl-Mouse selection rectangle
+
+* Desktop data connectivity enhancements
+
+  1. SSAS Multidimensional support - Hierarchies support (Preview Feature)
+
+  2. Stripe Connector
+
+  3. Smartsheet Connector
+
+  4. “Enter Data”: Paste or enter data to create a table
+
+  5. DirectQuery Improvements:  Support for all data types of T-SQL and SAP HANA, resulting in Performance improvements.
+
+  6. ODBC Connector: Support for selecting User/System DSNs
+
+  7. CSV Connector: Ability to specify Column Delimiter in the Source dialog
+
+For all the details, including a video demonstrating many of these updates, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx).
+
 **December 10, 2015**
 
 * Pin report pages to dashboard
@@ -166,7 +230,7 @@ View our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-week
 
 -   We have added the option to turn off email notification when you share a dashboard. Simply uncheck the “Send email notification to recipients” check box in the Power BI share dialog. You will be presented with a URL – copy and share this URL to your colleagues to give them access to the dashboard.
 
--   Microsoft Dynamics NAV is a business management solution for small to medium organizations. It offers customers a full solution for their business with greater control over their financials and business processes. The Power BI content pack provides out-of-box reports for Dynamics NAV users, such as sales and profit, opportunities pipeline, profitability and more. These metrics are organized on a dashboard that can be fully customized, allowing you to easily connect and immediately start exploring your data. 
+-   Microsoft Dynamics NAV is a business management solution for small to medium organizations. It offers customers a full solution for their business with greater control over their financials and business processes. The Power BI content pack provides out-of-box reports for Dynamics NAV users, such as sales and profit, opportunities pipeline, profitability and more. These metrics are organized on a dashboard that can be fully customized, allowing you to easily connect and immediately start exploring your data.
 
 Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service-weekly-update-10-06.aspx) and [online documentation](powerbi-service-get-started.md) for more information.
 
