@@ -20,7 +20,7 @@
 
 If Excel is your go-to tool for working with data, you can leverage your Excel expertise and investments by using them in Power BI. You can bring any Excel workbook (XLSX or XLSM) into Power BI and explore the whole file, exactly as you would in Excel Online.
 
-To view and explore whole Excel files in Power BI, your workbooks need to be on OneDrive for Business or SharePoint -Team Sites. Here's a big advantage of connecting to files on OneDrive or SharePoint: any changes you make to a file will appear automatically in the file in Power BI. The reverse is also true when you bring in whole Excel files: Changes you make to the file in Power BI are saved to the file on OneDrive or SharePoint.
+To view and explore whole Excel files in Power BI, your workbooks need to be on OneDrive for Business or SharePoint -Team Sites. Here's a big advantage of connecting to files on OneDrive or SharePoint: Any changes you make to a file will appear automatically in the file in Power BI. The reverse is also true when you bring in whole Excel files: Changes you make to the file in Power BI are saved to the file on OneDrive or SharePoint.
 
 Excel workbooks in Power BI display the same items as workbooks in Excel Online. For example, Excel workbooks can display these items:
 
