@@ -29,17 +29,20 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
--   In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
+   -   In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
 
-    ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_ColTile2.png)
+        ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_ColTile2.png)
 
-    In this column chart, the value of the selected black bar is listed for Lindseys under the month, May.  
+        In this column chart, the value of the selected black bar is listed for Lindseys under the month, May.  
 
--   In a pie chart, spin the pie to show the values of the slice at the top of the pie.
+  -   In a pie chart, spin the pie to show the values of the slice at the top of the pie.
 
-    ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_PieTileNew.png)
+        ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhone_PieTileNew.png)
 
--   Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneShareTileIconNoBorder.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
+   -   Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneShareTileIconNoBorder.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
+
+   -   [Interact with a report page tile](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) in the iPhone app.
+
 
 -   Tap the back arrow ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_iPhoneBackArrowIcon.png) to close the tile and return to the dashboard.
 
