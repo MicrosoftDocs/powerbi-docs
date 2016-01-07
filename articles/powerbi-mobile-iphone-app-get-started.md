@@ -63,27 +63,24 @@ Even without signing up, you can play with the Power BI samples. After you downl
 
 See what else you can do in the iPhone app with dashboards in Power BI, and SQL Server mobile reports and KPIs in the Reporting Services web portal.
 
-### Dashboards in Power BI
+### Power BI dashboards
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
-
 -   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
-
 -   Create [favorites](powerbi-mobile-favorites-in-the-iphone-app.md).
-
 -   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
-
 -   Share [Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
-
 -   Annotate and [share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) from your iPhone
+-   [Create picture tiles](powerbi-mobile-picture-tiles-in-the-iphone-app.md) with your iPhone app
+-   [Turn on smart ordering for tiles](powerbi-mobile-dashboard-smart-order-in-the-iphone-app.md) in the app
 
-### Mobile reports and KPIs in the Reporting Services web portal  
+### SQL Server mobile reports and KPIs
 
 - [View SQL Server mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) on the Reporting Services web portal.
-
 - Create KPIs on the Reporting Services web portal.
-
 - [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
+
 
 ### See also
 
