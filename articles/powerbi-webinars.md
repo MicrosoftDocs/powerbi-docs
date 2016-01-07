@@ -22,14 +22,15 @@
 
 ## Upcoming webinars
 
-[December 15, 2015: Migrating from Power BI for O365 to PowerBI.com & Power BI – Excel – better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html)
+[February 23, 2016: Microsoft Power BI Technical Overview](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-23-PowerBITechnicalOverview-Register.html)
 
-[December 17, 2015: What’s New and Exciting in Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-17Dec15-PowerBIWhatsNew-Registration.html)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
 
 ###  Introductory webinars
+[What’s New and Exciting in Power BI - December 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-17Dec15-PowerBIWhatsNew-Registration.html)
+
 [What's New and Exciting in Power BI - November 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-12Nov15-PowerBIWhatsNew-Register.html)
 
 [Power BI Explore What is New - July 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07JUL-GettingStartedwithPowerBI-2-Register.html?ls=JenUnderwood)
@@ -57,6 +58,8 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 [Visualizing Your Data Effectively in Power BI Dashboards](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-01Oct15-VisualizingDataPowerBIDashboard-Register.html)
 
 [Migrating from Power BI for Office 365 to Power BI v2.0](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-16SEp15-MigratingPowerBIOffice365toPowerBIExperience-Register.html)
+
+[Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html)
 
 [Power BI Mobile Apps](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Oct15-PowerBIMobile-Register.html)
 
