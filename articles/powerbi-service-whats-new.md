@@ -25,6 +25,54 @@ Check this page for known issues and recently-released features in Power BI Serv
 
 ## Recent updates
 
+**January 6, 2016**
+
+The Power BI team has been busy over the holiday break. For all the details, [visit the Power BI Team blog](http://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx)
+
+***Dashboards***
+
+- Export tile data
+
+- Add an image or text box widget to dashboards
+
+- Print dashboards
+
+- Refresh time on tiles
+
+- Tooltips on dashboard tiles
+
+***Collaboration***
+
+- Shared dashboard notification
+
+- Contact owner of a shared or organizational dashboard
+
+***Reports***
+
+- Print current report page
+
+- Export report visual data
+
+***Connectivity***
+
+- Connect to files on SharePoint team sites
+
+***Excel Reports***
+
+- Open Excel reports in Excel desktop
+
+- Pin Excel charts
+
+- Format improvements for Excel tiles
+
+***Other***
+
+- Power BI in Brazil
+
+- Hebrew and Arabic support
+
+For all the details, [visit the Power BI Team blog](http://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx)
+
 **December 16, 2015**
 
 Lots of updates this week, most apply to Power BI Desktop but several significant updates to report authoring and visualizations as well. The [Power BI Team Blog](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx) contains full descriptions and even a video describing the updates.   
