@@ -23,11 +23,11 @@ When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI ser
 
 1.  When you open a [dashboard in the iPhone app](powerbi-mobile-dashboards-in-the-iphone-app.md), you see a default image of the report.
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/PBI_iOSAndr_PinnedReptDefault.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/PBI_iOSAndr_PinnedReptDeflt.png)
 
 2. Tap the tile. The pinned report page opens in landscape mode. 
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/PBI_iOSAndr_PinnedReportOpen.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/PBI_iOSAndr_PinnedReptOpen.png)
 
 -   Tap the **X** to close the tile and return to the dashboard.
 
