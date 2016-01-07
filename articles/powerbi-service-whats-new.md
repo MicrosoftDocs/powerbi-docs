@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2015"
+   ms.date="01/06/2015"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
@@ -72,6 +72,7 @@ The Power BI team has been busy over the holiday break. For all the details, [vi
 - Hebrew and Arabic support
 
 For all the details, [visit the Power BI Team blog](http://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx)
+
 
 **December 16, 2015**
 
