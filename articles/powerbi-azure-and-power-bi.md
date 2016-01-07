@@ -35,7 +35,7 @@ There's plenty more information for you to learn about [Azure SQL Database](http
 
 ### Transform, shape, and merge your cloud data
 
-Do you have more complex data, and all sorts of sources? No problem. With **Power BI Desktop and Azure services, connections are just a tap of the **Get Data** dialog away. Within the same Query you can connect to your **Azure SQL Database**, your **Azure HDInsight** data source, and your **Azure Blob Storage** (or **Azure Table Storage**), then select only the subsets within each that you need, and refine it from there.
+Do you have more complex data, and all sorts of sources? No problem. With **Power BI Desktop** and Azure services, connections are just a tap of the **Get Data** dialog away. Within the same Query you can connect to your **Azure SQL Database**, your **Azure HDInsight** data source, and your **Azure Blob Storage** (or **Azure Table Storage**), then select only the subsets within each that you need, and refine it from there.
 
 You can create different reports for different audiences too, using the same data connections and even the same Query. Just build a new report page, refine your visualizations for each audience, and watch it keep the business in the know.
 
