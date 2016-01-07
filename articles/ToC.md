@@ -417,7 +417,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed",
             "powerbi-desktop-tutorial-create-measures",
             "powerbi-desktop-tutorial-create-calculated-columns",
-            "powerbi-desktop-tutorial-facebook-analytics"
+            "powerbi-desktop-tutorial-facebook-analytics",
+            "powerbi-desktop-pyramid-analytics"
           ],
           "numberOfFeaturedArticles": 5
         }
