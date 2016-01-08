@@ -431,6 +431,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Get started",
           "articles": [
             "powerbi-power-bi-apps-for-mobile-devices",
+            "powerbi-mobile-whats-new-in-the-mobile-apps",
             "powerbi-mobile-ipad-iphone-apps",
             "powerbi-mobile-iphone-app-get-started",
             "powerbi-mobile-ipad-app-get-started",
@@ -438,8 +439,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-win10phone-app-get-started",
             "powerbi-mobile-get-the-windows-app",
             "powerbi-service-windows-app-get-started",
-            "powerbi-mobile-create-dashboard",
-            "powerbi-mobile-whats-new-in-the-mobile-apps"
+            "powerbi-mobile-create-dashboard"
           ],
           "numberOfFeaturedArticles": 9
         },
@@ -464,6 +464,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-iphone-kpis-mobile-reports",
             "powerbi-mobile-dashboards-in-the-iphone-app",
             "powerbi-mobile-tiles-in-the-iphone-app",
+            "powerbi-mobile-report-page-tiles-in-the-iphone-app",
             "powerbi-mobile-dashboard-smart-order-in-the-iphone-app",
             "powerbi-mobile-favorites-in-the-iphone-app",
             "powerbi-mobile-share-a-dashboard-from-the-iphone-app",
