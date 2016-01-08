@@ -22,7 +22,7 @@
 
 ## Upcoming webinars
 
-[February 23, 2016: Microsoft Power BI Technical Overview](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-23-PowerBITechnicalOverview-Register.html)
+Nothing on the calendar yet. Check back soon!
 
 
 ## On-Demand webinars
