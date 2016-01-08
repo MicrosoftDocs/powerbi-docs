@@ -58,6 +58,7 @@ See what else you can do in the Windows 10 phone app for Power BI.
 -   [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md).
 -   View your [groups' dashboards and reports](powerbi-mobile-groups-in-the-win10phone-app.md).
+
 ### See also
 
 [Download the Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store.  
