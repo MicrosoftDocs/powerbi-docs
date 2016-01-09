@@ -42,7 +42,7 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
 5.  In the dashboard, you can:
 
-    -   [Tap a tile](powerbi-mobile-dashboards-in-the-win10phone-app.md) to open and interact with it.
+    -   [Tap a tile](powerbi-mobile-tiles-in-the-win10phone-app.md) to open and interact with it.
 
     -   Tap the **Invite** icon ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIcon.png) in the lower-right corner to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) with a colleague.
     -   Tap the ellipsis (...) > **Pin to Start** to [pin the dashboard to your Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md). 

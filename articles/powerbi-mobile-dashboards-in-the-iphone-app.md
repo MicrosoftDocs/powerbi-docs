@@ -48,6 +48,8 @@ In the iPhone app for Microsoft Power BI for iOS, you see and can interact with 
 
     -   [Tap a tile](powerbi-mobile-tiles-in-the-iphone-app.md) to open and interact with it.
 
+    -   [Interact with a report page tile](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) in the iPhone app.
+
     -   Tap the ellipsis to open the dashboard menu, and then...
 
         ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashEllipsis.png)
