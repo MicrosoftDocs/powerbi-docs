@@ -214,6 +214,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-custom-visuals",
             "powerbi-service-add-visualizations-to-a-report-i",
             "powerbi-service-add-visualizations-to-a-report-ii",
+            "powerbi-service-export-data",
             "powerbi-service-change-the-type-of-visualization-in-a-report",
             "powerbi-custom-visuals-add-to-report",
             "powerbi-custom-visuals-download-from-the-gallery",
