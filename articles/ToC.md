@@ -85,11 +85,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-acumatica",
             "powerbi-content-pack-appfigures",
             "powerbi-content-pack-application-insights",
+            "powerbi-content-pack-at-internet",
             "powerbi-content-pack-azure-mobile",
             "powerbi-content-pack-bing",
             "powerbi-content-pack-circuit-id",
             "powerbi-content-pack-content-pack",
             "powerbi-content-pack-github",
+            "powerbi-content-pack-lithium",
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
             "powerbi-content-pack-azure-enterprise",
@@ -415,7 +417,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed",
             "powerbi-desktop-tutorial-create-measures",
             "powerbi-desktop-tutorial-create-calculated-columns",
-            "powerbi-desktop-tutorial-facebook-analytics"
+            "powerbi-desktop-tutorial-facebook-analytics",
+            "powerbi-desktop-pyramid-analytics"
           ],
           "numberOfFeaturedArticles": 5
         }
@@ -428,6 +431,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Get started",
           "articles": [
             "powerbi-power-bi-apps-for-mobile-devices",
+            "powerbi-mobile-whats-new-in-the-mobile-apps",
             "powerbi-mobile-ipad-iphone-apps",
             "powerbi-mobile-iphone-app-get-started",
             "powerbi-mobile-ipad-app-get-started",
@@ -435,8 +439,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-win10phone-app-get-started",
             "powerbi-mobile-get-the-windows-app",
             "powerbi-service-windows-app-get-started",
-            "powerbi-mobile-create-dashboard",
-            "powerbi-mobile-whats-new-in-the-mobile-apps"
+            "powerbi-mobile-create-dashboard"
           ],
           "numberOfFeaturedArticles": 9
         },
@@ -461,6 +464,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-iphone-kpis-mobile-reports",
             "powerbi-mobile-dashboards-in-the-iphone-app",
             "powerbi-mobile-tiles-in-the-iphone-app",
+            "powerbi-mobile-report-page-tiles-in-the-iphone-app",
             "powerbi-mobile-dashboard-smart-order-in-the-iphone-app",
             "powerbi-mobile-favorites-in-the-iphone-app",
             "powerbi-mobile-share-a-dashboard-from-the-iphone-app",
@@ -482,7 +486,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app",
-            "powerbi-service-qr-code-for-tile"
+            "powerbi-mobile-qr-code-for-android"
           ],
           "numberOfFeaturedArticles": 5
         },

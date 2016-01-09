@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="01/06/2016"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from a Power BI Desktop file on OneDrive  
@@ -31,7 +31,7 @@ When you refresh the dataset, Power BI does not connect to the file on OneDrive 
 ## What’s supported?  
 Once a dataset is created in Power BI, Refresh Now and Schedule Refresh is supported for:  
 -   All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
--   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS), Active Directory, Microsoft Exchange.
+-   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
 >**Note:**  
 >A [Power BI Personal Gateway](powerbi-personal-gateway.md) must be installed in order for Power BI to connect to on-premises data sources and refresh the dataset.

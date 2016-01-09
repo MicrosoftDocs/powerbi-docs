@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2015"
+   ms.date="01/06/2015"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
@@ -24,6 +24,55 @@ Check this page for known issues and recently-released features in Power BI Serv
 >NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 ## Recent updates
+
+**January 6, 2016**
+
+The Power BI team has been busy over the holiday break. For all the details, [visit the Power BI Team blog](http://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx)
+
+***Dashboards***
+
+- Export tile data
+
+- Add an image or text box widget to dashboards
+
+- Print dashboards
+
+- Refresh time on tiles
+
+- Tooltips on dashboard tiles
+
+***Collaboration***
+
+- Shared dashboard notification
+
+- Contact owner of a shared or organizational dashboard
+
+***Reports***
+
+- Print current report page
+
+- Export report visual data
+
+***Connectivity***
+
+- Connect to files on SharePoint team sites
+
+***Excel Reports***
+
+- Open Excel reports in Excel desktop
+
+- Pin Excel charts
+
+- Format improvements for Excel tiles
+
+***Other***
+
+- Power BI in Brazil
+
+- Hebrew and Arabic support
+
+For all the details, [visit the Power BI Team blog](http://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx)
+
 
 **December 16, 2015**
 

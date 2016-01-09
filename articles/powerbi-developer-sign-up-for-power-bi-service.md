@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="01/06/2016"
    ms.author="derrickv"/>
 
 # Sign up for Power BI service
@@ -27,7 +27,7 @@ This article introduces you to how to sign up for a Power BI account.
 When you sign up for the **Power BI service**, you must use an organizational user. Once you login to the **Power BI service** for the first time, you will see the **Power BI service** added to your Azure AD.
 
  1. [Sign up for Power BI](https://powerbi.microsoft.com/).
- 2. In the **Power BI service** registration page, enter an **Azure Active Directory**  organizational user. The format is {user name}@{Azure_AD_Name}.onmicrosoft.com. If you do not have an **Azure Active Directory** organizational user,  see [Add a user to your Azure Active Directory](powerbi-developer-create-an-azure-active-directory-tenant#newuser).
+ 2. In the **Power BI service** registration page, enter an **Azure Active Directory**  organizational user. The format is {user name}@{Azure_AD_Name}.onmicrosoft.com. If you do not have an **Azure Active Directory** organizational user,  see [Add a user to your Azure Active Directory](powerbi-developer-create-an-azure-active-directory-tenant.md).
 
 The registration process validates the user and provisions the **Power BI service** in your **Azure Active Directory**. After the **Power BI service** is provisioned, a Power BI tenant is available for a user.
 
