@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports in the Power BI for Windows app"
-   description="Reports in the Power BI for Windows app"
+   pageTitle="Reports in the Power BI mobile app for Windows 10"
+   description="Reports in the Power BI mobile app for Windows 10"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -14,27 +14,25 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2015"
+   ms.date="01/08/2016"
    ms.author="maggies"/>
-# Reports in the Power BI for Windows app
+# Reports in the Power BI mobile app for Windows 10
 
 A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports in the Power BI service (https://powerbi.com)](powerbi-service-reports.md).
 
-Then you view and interact with those reports in the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
+Then you view and interact with those reports in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
 
 ## Open a Power BI report
 
--   On the Windows app home page or the reports page, tap a report.
+-   In **My workspace** or in a group, tap a report.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppReptsMenu.png)
 
-    >**NOTE**: If you have [brought whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), when you tap them in the app, they open in your browser.
+    >**Note**: If you have [imported whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), when you tap them in the app, they open in a browser window.
 
--   Or: On a dashboard, tap a tile and then tap the Reports icon.
+-   Or: On a dashboard, tap a tile, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppReptIcon.png)
-
-    >**NOTE**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them.
+    >**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them.
 	Also, to open the sample reports, you need to sign in to Power BI.
 
 ## See other pages in a Power BI report
@@ -99,5 +97,7 @@ You can drill down in some charts to see the values that make up one part of the
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppDrillBackUp.png)
 
-More about the [Power BI for Windows app](powerbi-service-windows-app-get-started.md).
+### See also
+
+[Get started with the Power BI app for Windows 10 devices](powerbi-service-windows-app-get-started.md).
 
