@@ -20,7 +20,7 @@
 
 ## Installation
 
-**Personal Gateway fails to install** - Personal Gateway can install can fail if the user is in the computer’s local Administrator group, but group policy does not allow that username to log on as a service.  At the moment, ensure the group policy allows a user to log on as a service. We’re working on a fix for this issue. 
+**Personal Gateway fails to install as a service even though you are a local administrator for the computer** - Installation can fail if the user is in the computer’s local Administrator group, but group policy does not allow that username to log on as a service.  At the moment, ensure the group policy allows a user to log on as a service. We’re working on a fix for this issue. [Learn more](https://technet.microsoft.com/library/cc739424.aspx)
 
 **Operation timed out** - This is common if the computer (physical machine or VM) on which you’re installing the Personal Gateway has a single core processor. Close any applications and turn off any non-essential processes and try installing again.
 
