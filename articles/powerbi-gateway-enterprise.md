@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/28/2015"
+ms.date="01/11/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise (Preview)
 
@@ -103,18 +103,19 @@ When you add a data source to the gateway, you need to provide credentials for t
 The gateway is configured to use *NT SERVICE\PBIEgwService* for the windows service log on credential. By default, it has the right of *Log on as a service*.
 
 ## Ports
-The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
+The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/)
 
-|Domain names|Outbound ports|
-|---|---|
-|*.powerbi.com|443|
-|*.analysis.windows.net|443|
-|*.login.windows.net|443|
-|*.servicebus.windows.net|443, 5671-5672, 9350-9354|
-|*.frontend.clouddatahub.net|443|
-|*.core.windows.net|443|
-|login.microsoftonline.com|443|
-|login.windows.net|443|
+|Domain names|Outbound ports|Description|
+|---|---|---|
+|*.powerbi.com|443|HTTPS|
+|*.analysis.windows.net|443|HTTPS|
+|*.login.windows.net|443|HTTPS|
+|*.servicebus.windows.net|5671-5672|Advanced Message Queuing Protocol (AMQP)|
+|*.servicebus.windows.net|443, 9350-9354|Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition)|
+|*.frontend.clouddatahub.net|443|HTTPS|
+|*.core.windows.net|443|HTTPS|
+|login.microsoftonline.com|443|HTTPS|
+|login.windows.net|443|HTTPS|
 
 ## Troubleshooting
 If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the Power BI Gateway - Enterprise].
