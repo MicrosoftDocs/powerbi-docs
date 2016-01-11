@@ -42,13 +42,8 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
     ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_DemDash.png)
 
-    >**Tip:**  You can also tap the ellipsis (...) to invite a colleague or see information about the dashboard.
+5.  While on the dashboard, you can:
 
-    ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_DashEllipsMenu.png)
-
-5.  Swipe to see all the tiles in the dashboard. While here, you can:
-
-    -   [Tap a tile](powerbi-mobile-tiles-in-the-android-app.md) to open and interact with it.
 
     -   Tap the Invite icon ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_InviteIconNew.png) in the upper-right corner to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-android-app.md) with a colleague.
 
@@ -56,7 +51,22 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
     -   Tap the i icon ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_iIcon.png) for information about the dashboard.
 
-6.  To go back to the dashboards home page, tap the back arrow ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_BackArrow.png) in the upper bar.
+6.  Swipe to see all the [tiles in the dashboard](powerbi-mobile-tiles-in-the-android-app.md). Tap the vertical ellipsis on the tile.
+
+    ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_TileEllipsisMenu.png)
+
+    From here, you can: 
+    - Make the tile a [favorite](powerbi-mobile-favorites-in-the-android-app.md).
+    - [Annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
+    - Open it in focus mode.
+    - [Open the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) inside the Power BI app, if it has a link. Links can go to Power BI dashboards, or to an external URL. If it's an external site, Power BI asks you to allow it.
+    
+        ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_OpenLinkMessage.png)
+
+        After you open the link in the Power BI app, you can copy the link or open it in a browser window instead.
+
+
+7.  To go back to the dashboards home page, tap the back arrow ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_BackArrow.png) in the upper bar.
 
 ### See also  
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
