@@ -14,10 +14,33 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2015"
+   ms.date="01/06/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## December 2015
+The Power BI team ended 2015 strong, with several major additions and updates.
+
+### SQL Server 2016 Reporting Services mobile reports in iOS
+Now you can view your SQL Server mobile reports in the Power BI app on your iOS device, be it iPad or iPhone. Read more:
+
+-   [SQL 16 SSRS on Power BI app for iOS](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx) blog post
+-   View [SQL Server mobile reports and KPIs in the iPad app](powerbi-mobile-ipad-kpis-mobile-reports.md) documentation
+-   View [SQL Server mobile reports and KPIs in the iPhone app](powerbi-mobile-iphone-kpis-mobile-reports) documentation
+
+### Power BI app for Windows 10 phones
+The new Power BI app for Windows 10 phones is optimized for touch and mobile productivity. Explore dashboards and reports, invite colleagues to view data, and share insights over email to engage your team. Plus you can [pin Power BI dashboards to your Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).
+
+-   Read the [Power BI app for Windows 10 phones blog post](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
+-   [Get started with the Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md).
+
+### Other additions
+Read the [Power BI mobile apps December blog post](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx) for more details.
+
+-   Receive notifications when a colleague shares a dashboard with you. (iOS)
+-   View entire [pinned report pages in your dashboards](powerbi-mobile-report-page-tiles-in-the-iphone-app.md). (iOS and Android)
+-   [Scan a QR code](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) and go directly to a relevant tile on your Android phone.
 
 ## November 2015
 

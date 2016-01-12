@@ -42,7 +42,7 @@ For easy access to your most interesting data, you can mark specific tiles as fa
 
 -   On the Power BI home, tap **Favorites**. 
       
-    ![](media/powerbi-mobile-favorites-in-the-android-app/PBI_And_Home.png)
+    ![](media/powerbi-mobile-favorites-in-the-android-app/PBI_Andr_HomeSamplesSm.png)
 
     Your favorites from all your dashboards are on this one page.
 

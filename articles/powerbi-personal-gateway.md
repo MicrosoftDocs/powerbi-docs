@@ -156,18 +156,19 @@ From here, you can update your password and check your Gateway's connection stat
 
 ## Ports
 
-The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
+The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/)
 
-|Domain names|Outbound ports|
-|---|---|
-|*.powerbi.com|443|
-|*.analysis.windows.net|443|
-|*.login.windows.net|443|
-|*.servicebus.windows.net|443, 5671-5672, 9350-9354|
-|*.frontend.clouddatahub.net|443|
-|*.core.windows.net|443|
-|login.microsoftonline.com|443|
-|login.windows.net|443|
+|Domain names|Outbound ports|Description|
+|---|---|---|
+|*.powerbi.com|443|HTTPS|
+|*.analysis.windows.net|443|HTTPS|
+|*.login.windows.net|443|HTTPS|
+|*.servicebus.windows.net|5671-5672|Advanced Message Queuing Protocol (AMQP)|
+|*.servicebus.windows.net|443, 9350-9354|Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition)|
+|*.frontend.clouddatahub.net|443|HTTPS|
+|*.core.windows.net|443|HTTPS|
+|login.microsoftonline.com|443|HTTPS|
+|login.windows.net|443|HTTPS|
 
 ## Troubleshooting
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/21/2015"
+   ms.date="01/08/2015"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations

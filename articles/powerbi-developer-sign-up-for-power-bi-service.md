@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="01/06/2016"
    ms.author="derrickv"/>
 
 # Sign up for Power BI service

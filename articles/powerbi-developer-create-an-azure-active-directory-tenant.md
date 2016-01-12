@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/17/2015"
+   ms.date="01/11/2015"
    ms.author="derrickv"/>
 
 # Create an Azure Active Directory tenant
@@ -49,47 +49,30 @@ Before you get started creating a Power BI app, you need **Azure Active Director
 
 <a name="newuser"></a>
 ### Add a user to your Azure Active Directory tenant
-You use the user from your Azure AD to sign up for the **Power BI service**. Once you login to the **Power BI service** for the first time, you’ll see the **Power BI service** added to your Azure AD which will allow you to create Power BI apps with the right permissions. Here's how to add a user to your Azure Active Directory:
+You need an organizational user from your Azure AD to sign up for the **Power BI service**. Once you login to the **Power BI service** for the first time, you’ll see the **Power BI service** added to your Azure AD which will allow you to create Power BI apps with the right permissions. Here's how to add a user to your Azure Active Directory:
 
- 1. Navigate to https://manage.windowsazure.com and log in with the account that has an Azure subscription.
- 2. Click **ACTIVE DIRECTORY** management icon in the left pane.
- 3. Click **NEW** button at the bottom of the page.
- 4. Choose **APP SERVICES** > **ACTIVE DIRECTORY** > **DIRECTORY** > **CUSTOM CREATE**.
-
-    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/new-ad.png)
-
- 5. In the **Add directory** page, enter a name and domain name. For country or region choose United States or the country were Data Catalog is available.
-
-    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-directory.png)
-
- 6. Choose OK icon. An Azure Active Directory is created.
-
-<a name="newuser"></a>
-### Add a user to your Azure Active Directory tenant
-You need a user from your Azure AD to register an Azure AD app. Here's how to add a user to your **Azure Active Directory** tenant:
-
- 1. In your **Azure Active Directory**, click **USERS**.
+1. Navigate to https://manage.windowsazure.com and log in with the account that has an Azure subscription.
+2. Click **ACTIVE DIRECTORY** management icon in the left pane.
+3. In your **Azure Active Directory**, click **USERS**.
 
     ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-ad-user.png)
+4. At the bottom of the page, click **ADD USER**. A user account is used to register a Power BI app.
+5. In the **Tell us about this user page**:
 
- 2. At the bottom of the page, click **ADD USER**. A user account is used to register a Power BI app.
-
- 3. In the **Tell us about this user page**:
-
-	1. For **TYPE OF USER**, choose **New user in you organization**.
+	1. For **TYPE OF USER**, choose **New user in your organization**.
 	2. Enter your **USER NAME**.
 	3. Click **Next**.
 
         ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-ad-user2.png)
 
- 4. In the **user profile** page, enter your **DISPLAY NAME**. Display name is a required field.
+6. In the **user profile** page, enter your **DISPLAY NAME**. Display name is a required field.
 
 	![](media/powerbi-developer-create-an-azure-active-directory-tenant/user-profile.png)
 
- 5. Click **Next**. For **ROLE**, you can use **User**.
- 6. Click **Create** to create a temporary password. The new user is assigned a temporary password that must be changed on first sign in.
- 7. In the **Get temporary password** page, copy the temporary password, and click **Complete** icon. You use the temporary password when you first login to your AAD.
- 8. After you click the **Complete** icon, a new Azure AD user is created.
+7. Click **Next**. For **ROLE**, you can use **User**.
+8. Click **Create** to create a temporary password. The new user is assigned a temporary password that must be changed on first sign in.
+9. In the **Get temporary password** page, copy the temporary password, and click **Complete** icon. You use the temporary password when you first login to your AAD.
+10. After you click the **Complete** icon, a new Azure AD user is created.
 
 Once you have an **Azure Active Directory** tenant, and an organizational user, you [sign up for Power BI](powerbi-developer-sign-up-for-power-bi-service.md).
 
