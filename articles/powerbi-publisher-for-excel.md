@@ -43,7 +43,9 @@ The Power BI Publisher add-in is enabled by default, but if for some reason you 
 ## Pin a range to a dashboard
 You can select any range of cells from your worksheet and pin a snapshot to an existing or new dashboard in Power BI.
 1. In your worksheet, select a range, and then click Pin. If you're not already signed into Power BI, you'll need to now.
-2. In Pin to Dashboard, select an existing dashboard or create a new one, and then click Pin ![](media/powerbi-publisher-for-excel/pbi_publisher_pinrange.gif).
+2. In Pin to Dashboard, select an existing dashboard or create a new one, and then click Pin.
+
+    ![](media/powerbi-publisher-for-excel/pbi_publisher_pinrange.gif)
 
 
 ## Pin a Chart to a dashboard
