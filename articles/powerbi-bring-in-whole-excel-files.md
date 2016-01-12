@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2015"
+   ms.date="01/07/2016"
    ms.author="owend"/>
 # Bring whole Excel files into Power BI
 
