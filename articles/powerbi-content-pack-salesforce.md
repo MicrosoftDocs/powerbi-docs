@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/02/2015"
+   ms.date="01/12/2016"
    ms.author="tpalmer"/>
    
 # Salesforce content pack for Power&nbsp;BI
