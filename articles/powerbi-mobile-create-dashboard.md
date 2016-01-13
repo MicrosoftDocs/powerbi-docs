@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="01/13/2016"
    ms.author="maggies"/>
 # Dashboards for mobile Power BI
 
@@ -29,7 +29,9 @@ To get more dashboards on your mobile device, start from your computer. Open a w
 
 [iPhone app for Power BI for iOS](powerbi-mobile-ipad-app-get-started.md).
 
-[Power BI app for Windows](powerbi-service-windows-app-get-started.md) (not Windows phones)
+[Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md)
+
+[Power BI app for Windows](powerbi-service-windows-app-get-started.md) (other than Windows 10 phones)
 
 
 [Power BI app for Android phones](powerbi-mobile-android-app-get-started.md)
