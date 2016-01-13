@@ -28,7 +28,7 @@ What you can't pin: You cannot pin 3D Maps or visualizations in Power View sheet
 When you pin an object from Excel, a new tile is added to a new or existing dashboard in Power BI. The new tile is a snapshot, so it's not dynamic, but you can still update it. For example, if you make a change to a PivotTable you've already pinned, the dashboard tile in Power BI isn't updated automatically. You can update your pinned objects in Power BI by using Pin Manager. You'll learn more about Pin Manager below.
 
 ## Download and install
-Power BI Publisher for Excel is an add-in you can download and install on desktop versions of Microsoft Excel 2010 and later.
+Power BI Publisher for Excel is an add-in you can download and install on desktop versions of Microsoft Excel 2010 with SP1 and later.
 
 -   [Power BI Publisher for Excel 64-bit version](http://go.microsoft.com/fwlink/?LinkId=715729)
 -   [Power BI Publisher for Excel 32-bit (x86) version](http://go.microsoft.com/fwlink/?LinkId=715730)
@@ -41,7 +41,7 @@ ribbon in Excel, where you can sign in to and out of Power BI, pin objects to a 
 The Power BI Publisher add-in is enabled by default, but if for some reason you don't see the Power BI ribbon tab in Excel, you'll need to enable it. Click **File** > **Options** > **Add-ins** > **COM Add-ins**. Select **Microsoft Power BI Publisher for Excel**.
 
 ## Pin a range to a dashboard
-You can select any range of cells from your worksheet and pin a snapshot to an existing or new dashboard in Power BI.
+You can select any range of cells from your worksheet and pin a snapshot to any number of existing or new dashboards in Power BI.
 
 1. In your worksheet, select a range, and then click **Pin**. If you're not already signed into Power BI, you'll be prompted to.
 
@@ -61,12 +61,9 @@ With Pin Manager, you can update (refresh) a pinned object's associated tile in 
 
 ![](media/powerbi-publisher-for-excel/pbi_excel_publisher_pin_manager.png)
 
-To update a tile in your dashboard, in Pin Manager, select the object and then click **Update**.
+To update tiles in your dashboard, in Pin Manager, select one or more objects and then click **Update**.
 
 To remove the mapping between a pinned object in Excel and the associated tile in a dashboard, click **Remove**. When you click Remove, you're not removing the object from your worksheet in Excel or deleting the associated tile in the dashboard. You are removing the pin, or mapping, between them. The object will no longer appear in Pin Manager. If you pin the object again, it will appear as a new tile.
 
 To remove a pinned object (a tile) from a dashboard, you'll need to that in Power BI. In the tile you want to delete, click the **Open menu** icon ![](media/powerbi-publisher-for-excel/pbi_excel_publisher_tile_openmenu.png)
 and then click **Delete tile**   ![](media/powerbi-publisher-for-excel/pbi_excel_publisher_tile_trashcan.png).
-
-## A few things to know
-Waiting for known issues from Aviv.
