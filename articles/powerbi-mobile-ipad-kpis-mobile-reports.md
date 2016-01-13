@@ -14,14 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/22/2015"
+   ms.date="01/13/16"
    ms.author="maggies"/>
 
 # View SQL Server mobile reports and KPIs in the iPad app (Power BI for iOS)  
 
 The iPad app for Microsoft Power BI for iOS offers live, touch-enabled mobile access to your important on-premises business information. 
-
->**Note**: Coming in December 2015, you'll also be able to view and interact with your SQL Server KPIs and mobile reports in the Power BI app.
 
 ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_SSMRP_Portal.png)
 
