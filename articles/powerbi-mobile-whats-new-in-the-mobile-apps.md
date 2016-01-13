@@ -27,7 +27,7 @@ Now you can view your SQL Server mobile reports in the Power BI app on your iOS 
 
 -   [SQL 16 SSRS on Power BI app for iOS](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx) blog post
 -   View [SQL Server mobile reports and KPIs in the iPad app](powerbi-mobile-ipad-kpis-mobile-reports.md) documentation
--   View [SQL Server mobile reports and KPIs in the iPhone app](powerbi-mobile-iphone-kpis-mobile-reports) documentation
+-   View [SQL Server mobile reports and KPIs in the iPhone app](powerbi-mobile-iphone-kpis-mobile-reports.md) documentation
 
 ### Power BI app for Windows 10 phones
 The new Power BI app for Windows 10 phones is optimized for touch and mobile productivity. Explore dashboards and reports, invite colleagues to view data, and share insights over email to engage your team. Plus you can [pin Power BI dashboards to your Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).
