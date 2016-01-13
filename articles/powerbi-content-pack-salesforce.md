@@ -3,7 +3,7 @@
    description="Salesforce content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -16,15 +16,14 @@
    ms.workload="powerbi"
    ms.date="11/02/2015"
    ms.author="tpalmer"/>
-# Salesforce content pack for Power BI
+   
+# Salesforce content pack for Power&nbsp;BI
 
 With Power BI, you can easily connect to your Salesforce.com account. Creating this connection retrieves your data and automatically provides a dashboard and related reports based on your data.
 
-Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/services/salesforce) for Power BI.
+Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/services/salesforce) for Power BI or read more about the [Salesforce integration](https://powerbi.microsoft.com/integrations/salesforce) with Power BI.
 
-![](media/powerbi-content-pack-salesforce/PBI_GetDataSalesforceDash.png)
-
-After you have a connection to your Salesforce account, you can explore your data and change the dashboard to meet your needs. The data is refreshed automatically once a day.
+## How to Connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -58,26 +57,37 @@ After you have a connection to your Salesforce account, you can explore your dat
 
 		If you don't see any reports, add or create them in your Salesforce account and try connecting again.
 
-7.  Click **Connect** to begin the import process. 
+7.  Click **Connect** to begin the import process. During the import you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the navigation pane on the left.
 
-During the import you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the navigation pane on the left.
+    ![](media/powerbi-content-pack-salesforce/PBI_GetDataSalesforceDash.png)
 
-You can change this dashboard to display your data any way you want. You can ask questions with Q&A - see [ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md) for suggestions. Or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
+**What Now?**
 
-Requirements:
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard, see [ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md) for suggestions.
 
--   Connected with a Salesforce account that has API access enabled.
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard
 
--   Permission granted to the Power BI app during log-in.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report
 
--   The account has sufficient API calls available to pull and refresh the data.
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
--   A valid authentication token is required for refresh. Ensure you have 5 or less Salesforce data sets imported, as Salesforce has a limit of 5 authentication tokens per application.
+## System Requirements
 
--   The ability to log in through login.salesforce.com, as custom or sandbox domains, is not currently supported.
+-   Connected with a production Salesforce account that has API access enabled
 
-### See also
+-   Permission granted to the Power BI app during log-in
+
+-   The account has sufficient API calls available to pull and refresh the data
+
+-   A valid authentication token is required for refresh. Ensure you have 5 or less Salesforce data sets imported, as Salesforce has a limit of 5 authentication tokens per application
+
+## Troubleshooting
+
+If you encounter any errors, please review the requirements above. Also note the ability to login into a custom or sandbox domain is not currently supported.
+
+## See also
 
 [Ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 
