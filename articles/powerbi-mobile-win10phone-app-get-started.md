@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/08/2016"
+   ms.date="01/13/2016"
    ms.author="maggies"/>
 # Get started with the Power BI mobile app for Windows 10
 
@@ -37,8 +37,6 @@ Bring your own data together and create dashboards and reports on the [Power BI 
 ## Sign up for the Power BI service on the web
 
 If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
-
->**Note**: You can see only dashboards on Windows phones. You can see dashboards and reports on other Windows devices.
 
 1.  In the Power BI service, tap [Sign up](http://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
 
