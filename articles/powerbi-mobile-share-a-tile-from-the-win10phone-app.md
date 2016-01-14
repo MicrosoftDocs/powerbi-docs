@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/16"
+   ms.date="01/13/2016"
    ms.author="maggies"/>
 # Share a tile from the Power BI mobile app for Windows 10
 
