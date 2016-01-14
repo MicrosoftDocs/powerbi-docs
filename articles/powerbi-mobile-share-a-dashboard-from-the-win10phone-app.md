@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Share a dashboard from the Windows 10 phone app"
-   description="Share a dashboard from the Windows 10 phone app for Power BI"
+   pageTitle="Share a dashboard from the Power BI mobile app for Windows 10"
+   description="Share a dashboard from the Power BI mobile app for Windows 10"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -14,15 +14,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2015"
+   ms.date="01/13/2016"
    ms.author="maggies"/>
-# Share a dashboard from the Windows 10 phone app for Power BI
+# Share a dashboard from the Power BI mobile app for Windows 10
 
-Invite colleagues to view your dashboards by sharing links from the [Windows 10 phone app for Microsoft Power BI](powerbi-mobile-win10phone-app-get-started.md). You can only share dashboards with colleagues in the same email domain as you, and only if you have permissions to invite others.
+Invite colleagues to view your dashboards by sharing links from the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md). You can only share dashboards with colleagues in the same email domain as you, and only if you have permissions to invite others.
 
 ## Share a dashboard
 
-1.  In the bottom-right corner of a dashboard, tap the Invite icon ![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Andr_InviteIcon.png).
+1.  In a dashboard, tap the Invite icon ![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/PBI_Andr_InviteIcon.png).
 
     Or, on the dashboards home page, press and hold, and tap **Invite**.
 
@@ -53,15 +53,15 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 -   If your colleagues haven't signed up for Power BI yet, they need to do so to see your dashboard.
 
--   You can share snapshots of tiles with anyone, in or out of your email domain.
+-   You can share [snapshots of tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with anyone, in or out of your email domain.
 
 -   See more [notes about sharing dashboards in Power BI](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
 
 ### See also
 
-[Download the Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
-[Share a tile from the Windows 10 phone app](powerbi-mobile-share-a-tile-from-the-win10phone-app.md)  
-[Get started with the Windows 10 phone app for Power BI](powerbi-mobile-win10phone-app-get-started.md)  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) from the Power BI mobile app for Windows 10  
+[Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)  
 [Get started with Power BI](powerbi-service-get-started.md)
 

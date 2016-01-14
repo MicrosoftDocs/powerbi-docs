@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/08/2016"
+   ms.date="01/13/2016"
    ms.author="maggies"/>
 # Reports in the Power BI mobile app for Windows 10
 
