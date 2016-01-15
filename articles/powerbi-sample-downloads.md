@@ -14,12 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 
 # Download the Power BI industry samples (Excel workbooks)
 
-Microsoft provides sample content packs and sample Excel workbooks. This article explains how to download and open the sample Excel workbooks. To learn how to add the sample content packs to Power BI, see [sample content packs](powerbi-sample-datasets.md)
+Microsoft provides sample content packs and sample Excel workbooks. This article explains how to download and 
+open the sample Excel workbooks. To learn how to add the sample content packs to Power BI, 
+see [Tutorial: Using the sample content packs](powerbi-sample-tutorial-connect-to-the-samples.md).
 
 ## Important information
 
@@ -39,7 +41,7 @@ By clicking any of the links below to download the Excel workbook files, you are
 
 ### Download the Power BI sample workbooks
 
-You can download the individual samples files below, or use this link to download [a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020).
+You can download the individual samples files below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020).
 
 -   [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778)
 

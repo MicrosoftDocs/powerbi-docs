@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 # About filters and highlighting in Power BI reports
 
@@ -34,6 +34,8 @@ Filters can be applied to individual visualizations, to report pages, and to an 
 [Add a filter to a report (in Editing View)](powerbi-service-add-a-filter-to-a-report.md)
 
 [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
+
+[Change how report visuals filter and highlight each other](powerbi-service-visual-interactions.md)
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 

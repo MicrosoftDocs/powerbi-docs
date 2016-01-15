@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="01/14/2016"
    ms.author="mihart"/>
 # Download the Financial Sample workbook for Power BI
 

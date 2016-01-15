@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 
 # Add a filter to a report in Power BI
@@ -88,6 +88,8 @@ When you add a page level filter, Power BI filters without aggregating.  It does
   [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
 
 [Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)
+
+[Change how report visuals filter and highlight each other](powerbi-service-visual-interactions.md)
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
