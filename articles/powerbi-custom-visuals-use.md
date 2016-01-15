@@ -14,19 +14,24 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/27/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
 
-Once downloaded, custom visualizations must be imported into a report. Once imported, the new visual will appear in the Visualizations pane of your report canvas. To learn how to download custom visualizations, see [Download a custom visualization from the gallery](powerbi-custom-visuals-download-from-the-gallery.md).
+You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to 
+import that visual template into a report so that it is added, as an option, to your Visualization pane.
 
->**Important** A custom visual is added to a specific report when imported. If you'd like to use the visual in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual is saved with the new report.
+    ![](media/powerbi-custom-visuals-add-to-report/pbi-custom-viz-icon.png)
+
+>**Important**:
+A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well. 
+When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
 
 
 1. Open Power BI Desktop and select the report where you want to add the custom visualization.  Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
 
-2.  There are two options to import a custom visual: from the **File** menu or from the **Visualizations** pane.
+2.  There are two options to import a custom visual template: from the **File** menu or from the **Visualizations** pane.
 
     **From the Desktop File menu**  
   - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
@@ -47,7 +52,7 @@ Once downloaded, custom visualizations must be imported into a report. Once impo
 
 4. Select a .pbiviz file in the **File Open** dialog.
 
-5. You will see the custom visual added to the visualizations available for your use.
+5. You will see the icon for the custom visual added to the visualizations available for your use.
 
     ![](media/powerbi-custom-visuals-use/VisualUse.png)
 

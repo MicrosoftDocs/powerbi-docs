@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/02/2015"
+   ms.date="01/15/2015"
    ms.author="mihart"/>
 
 # Download a custom visual from the gallery  
 
-Power BI has a **visuals gallery** which contains many useful visualizations created by the community [and Microsoft](powerbi-custom-visuals-microsoft.md) that you can download, and use in your Power BI reports. There is an active developer community creating a wide range of custom visuals. To learn more about how to create a Power BI visual, see [Extend Power BI with custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md) or [Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md).
+Power BI has a **[visuals gallery](http://visuals.powerbi.com/)** which contains many useful visualizations created by the community [and Microsoft](powerbi-custom-visuals-microsoft.md) that you can download, and use in your Power BI reports. There is an active developer community creating a wide range of custom visuals. To learn more about how to create a Power BI visual, see [Extend Power BI with custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md) or [Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md).
 
 ![](media/powerbi-custom-visuals-download-from-the-gallery/PowerBI-VisualsGallery.png)
 

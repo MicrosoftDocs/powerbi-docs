@@ -14,17 +14,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 
-# Sample content packs and datasets for Power BI  
+# Sample content packs and datasets for Power BI Service 
 
-Want to try Power BI with industry-specific sample data?  Use our sample content packs or one of our datasets to learn how Power BI keeps you in the know and focused on what matters to run your business.  The samples use real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
+Want to try the Power BI Service with industry-specific sample data?  Use one of our samples to learn how Power BI 
+keeps you in the know and focused on what matters to run your business.  These samples are available as content packs and as Excel spreadsheets.
 
 >**Note:**  
 >A *content pack* is a type of sample where the dataset is bundled with a dashboard and/or report.
 
-The following sample content packs are available for Power BI. And for each content pack, you can also [download just the Excel workbook](powerbi-sample-downloads.md).
+The following samples are available for the Power BI Sservice. The samples use real data from 
+obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
+To learn how to use the sample content packs,
+ see [Tutorial: Using the sample content packs]()
 
 -   Customer Profitability
 -   Human Resources
@@ -40,6 +44,7 @@ This industry sample dashboard and underlying dataset and report analyze a CFO's
 
 -   [Take a tour of the Customer Profitability sample](powerbi-sample-customer-profitability-take-a-tour.md).
 -   Download the [Customer Profitability sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   Learn how to use the sample content packs by starting with the [Tutorial](powerbi-sample-tutorial-connect-to-the-samples.md).
 -   [Download the Excel file for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
 ## Human Resources sample content pack  
@@ -47,6 +52,7 @@ This industry sample dashboard and underlying dataset and report focus on the hi
 
 -   [Take a tour of the Human Resources sample](powerbi-sample-human-resources-take-a-tour.md).
 -   Download the [Human Resources sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   Learn how to use the sample content packs by starting with the [Tutorial](powerbi-sample-tutorial-connect-to-the-samples.md).
 -   [Download the Excel file for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
 ## IT Spend Analysis sample content pack  
@@ -54,6 +60,7 @@ In this industry sample dashboard and underlying dataset and report, we analyze 
 
 -   [Take a tour of the IT Spend Analysis sample](powerbi-sample-it-spend-analysis-take-a-tour.md).
 -   Download the [IT Spend Analysis](powerbi-sample-tutorial-connect-to-the-samples.md)[ sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   Learn how to use the sample content packs by starting with the [Tutorial](powerbi-sample-tutorial-connect-to-the-samples.md).
 -   [Download the Excel file for this sample](powerbi-sample-downloads.md).
 
 ## Opportunity Analysis sample content pack  
@@ -61,6 +68,7 @@ This industry sample dashboard and underlying dataset and report explore a softw
 
 -   [Take a tour of the Opportunity Analysis sample](powerbi-sample-opportunity-analysis-take-a-tour.md).
 -   Download the [Opportunity Analysis sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   Learn how to use the sample content packs by starting with the [Tutorial](powerbi-sample-tutorial-connect-to-the-samples.md).
 -   [Download the Excel file for this sample.](http://go.microsoft.com/fwlink/?LinkId=528592)
 
 ## Procurement Analysis sample content pack  
@@ -68,6 +76,7 @@ This industry sample dashboard and underlying dataset and report analyze a CFO's
 
 -   [Take a tour of the Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
 -   Download the [Procurement Analysis sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   Learn how to use the sample content packs by starting with the [Tutorial](powerbi-sample-tutorial-connect-to-the-samples.md).
 -   [Download the Excel file for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
 ## Retail Analysis sample content pack  
@@ -75,6 +84,7 @@ This industry sample dashboard and underlying dataset and report analyze retail 
 
 -   [Take a tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).
 -   Download the [Retail Analysis sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   Learn how to use the sample content packs by starting with the [Tutorial](powerbi-sample-tutorial-connect-to-the-samples.md).
 -   [Download the Excel file for this sample.](http://go.microsoft.com/fwlink/?LinkId=528592)
 
 ## Sales and Marketing sample content pack  
@@ -82,11 +92,13 @@ This industry sample dashboard and underlying dataset and report analyze a manuf
 
 -   [Take a tour of the Sales and Marketing sample](powerbi-sample-sales-and-marketing-take-a-tour.md).
 -   Download the [Sales and Marketing sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md).
--   [Download the Excel file for this sample.](http://go.microsoft.com/fwlink/?LinkId=528592)
+-   Learn how to use the sample content packs by starting with the [Tutorial](powerbi-sample-tutorial-connect-to-the-samples.md).
+-  [Download the Excel file for this sample.](http://go.microsoft.com/fwlink/?LinkId=528592)
 
 ## Supplier Quality sample content pack  
 This industry sample dashboard and underlying dataset and report focus on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: understand who the best and worst suppliers are, with respect to quality, and identify which plants do a better job finding and rejecting defects, to minimize downtime.
 
 -   [Take a tour of the Supplier Quality sample](powerbi-sample-supplier-quality-analysis-take-a-tour.md).
 -   Download the [Supplier Quality sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   Learn how to use the sample content packs by starting with the [Tutorial](powerbi-sample-tutorial-connect-to-the-samples.md).
 -   [Download the Excel file for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
