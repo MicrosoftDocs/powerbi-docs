@@ -257,6 +257,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-excel-data",
             "powerbi-service-explore-a-dataset",
             "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
+            "powerbi-publisher-for-excel"
           ],
           "numberOfFeaturedArticles": 5
         },
