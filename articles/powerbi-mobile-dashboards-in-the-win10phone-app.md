@@ -28,7 +28,7 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 ## View dashboards on your Windows 10 device  
 1.  Open the Power BI app on your Windows 10 device and sign in.
 
-    Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
+    Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=526478) first?
 
 2.  Tap a dashboard to open it.   
 
@@ -49,6 +49,6 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 6.  To go back to the dashboards home page, tap the back arrow or back button.
 
 ### See also  
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  

@@ -63,7 +63,7 @@ See what else you can do in the Power BI app for Windows 10 devices.
 
 ### See also
 
-[Download the Power BI app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Download the Power BI app](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Get started with Power BI](powerbi-service-get-started.md)
 
 

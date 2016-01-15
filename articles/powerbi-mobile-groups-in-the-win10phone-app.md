@@ -26,7 +26,7 @@ You [create a group in the Power BI service](powerbi-service-create-a-group-in-p
 ## Interact with groups content  
 1.  Open the Power BI mobile app for Windows 10.
 
-    Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
+    Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=526478) first?
 
 2.  Tap the navigation icon ![](media/powerbi-mobile-groups-in-the-win10phone-app/PBI_Win10Ph_NavIcon30.png), then under My Workspace, select a group.  
 
@@ -39,6 +39,6 @@ You [create a group in the Power BI service](powerbi-service-create-a-group-in-p
 4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-win10phone-app.md) to open and view it.  
 
 ### See also  
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Get started with thePower BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  

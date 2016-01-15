@@ -23,7 +23,7 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
 1.  Open a [dashboard in the Power BI mobile app](powerbi-mobile-dashboards-in-the-win10phone-app.md) for Windows 10.
 
-    Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
+    Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=526478) first?
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
@@ -36,14 +36,17 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
       Spin a pie chart to show the values of the slice at the top of the pie.  
 
-      ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Uni_PieTileSm.png)
+      ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10UniPie2Sm.png)
 
       Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
+
       Tap the Open Report icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10app_OpenRptIcon.png) to view the report that the tile is based on. 
+
+     >**Note**: You can't open reports on a Windows 10 phone, so you don't see the Open Report icon there.
 
 3.   Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ### See also  
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Get started with the Power BI mobile app](powerbi-mobile-win10phone-app-get-started.md) for Windows 10  
 [Get started with Power BI](powerbi-service-get-started.md)  

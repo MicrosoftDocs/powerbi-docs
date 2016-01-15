@@ -35,7 +35,7 @@ You can view and adjust the settings for the [Power BI mobile app for Windows 10
 
 ### See also
 
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)
 

@@ -22,6 +22,8 @@ A report is an interactive view of your data, with visuals representing differen
 
 Then you view and interact with those reports in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
 
+>**Note**: You can't open reports on a Windows 10 phone.
+
 ## Open a Power BI report
 
 -   In **My workspace** or in a group, tap a report.
@@ -32,8 +34,10 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
 -   Or: On a dashboard, tap a tile, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
 
-    >**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them.
-	Also, to open the sample reports, you need to sign in to Power BI.
+    >**Notes**:   
+    >-   Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them.   
+	>-  To open the sample reports, you need to sign in to Power BI.  
+	>-  Because you can't open reports on a Windows 10 phone,  you don't see the Open Report icon there.
 
 ## See other pages in a Power BI report
 

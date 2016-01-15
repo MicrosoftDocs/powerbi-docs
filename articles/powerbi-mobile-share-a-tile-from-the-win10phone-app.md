@@ -22,7 +22,7 @@ When you share a snapshot of a tile from the [Power BI mobile app for Windows 10
 
 1. Open a [dashboard in the Power BI mobile app for Windows 10](powerbi-mobile-dashboards-in-the-win10phone-app.md).
 
-	Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
+	Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=526478) first?
 
 2. Tap a tile to open it in focus mode.
 
@@ -32,7 +32,7 @@ When you share a snapshot of a tile from the [Power BI mobile app for Windows 10
 
 ### See also
 
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Share a dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) from Power BI mobile app for Windows 10  
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)

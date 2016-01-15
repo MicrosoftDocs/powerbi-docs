@@ -59,7 +59,7 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 ### See also
 
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) from the Power BI mobile app for Windows 10  
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)  

@@ -34,6 +34,6 @@ The dashboard is pinned to your Start screen.
 ![](media/powerbi-mobile-pin-dashboard-from-win10phone-app/pbi_win10ph_startscrn.png)
 
 ### See also  
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)
