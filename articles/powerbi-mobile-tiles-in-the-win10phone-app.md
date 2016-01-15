@@ -27,16 +27,19 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
-  -   Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization. 
+     Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
+
+     In this line chart, the values of the black and teal lines are listed under the month, August, where the vertical bar intersects them.
    
      ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_LineChtTile.png)
 
-       In this line chart, the values of the black and teal lines are listed under the month, August, where the vertical bar intersects them.   
 
-   -    Spin a pie chart to show the values of the slice at the top of the pie.  
+      Spin a pie chart to show the values of the slice at the top of the pie.  
 
-   -    Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
-   -    Tap the Open Report icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10app_OpenRptIcon.png) to view the source of the tile. 
+      ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Uni_PieTileSm.png)
+
+      Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
+      Tap the Open Report icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10app_OpenRptIcon.png) to view the report that the tile is based on. 
 
 3.   Tap the back arrow or the back button to close the tile and return to the dashboard.
 

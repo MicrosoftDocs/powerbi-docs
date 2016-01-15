@@ -46,8 +46,8 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) 
 
     ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_AppIconSm.png)
 
-3.  In the Power BI app, tap **Sign in** to view your own dashboards. Sign in with the same credentials as your Power BI account on the web.
-4.  Tap **Start exploring**.
+3.  In the Power BI app, tap **Sign in**. Sign in with the same credentials as your Power BI account on the web.
+4.  Tap **Start exploring**  to view your own dashboards.
 
 ## What next?
 

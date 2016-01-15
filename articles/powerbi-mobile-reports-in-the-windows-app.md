@@ -14,11 +14,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/2016"
+   ms.date="01/14/2016"
    ms.author="maggies"/>
 # Reports in the Power BI mobile app for Windows 10
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports in the Power BI service (https://powerbi.com)](powerbi-service-reports.md).
+A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com).
 
 Then you view and interact with those reports in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
 
@@ -26,9 +26,9 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
 -   In **My workspace** or in a group, tap a report.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppReptsMenu.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_ReptHome.png)
 
-    >**Note**: If you have [imported whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), when you tap them in the app, they open in a browser window.
+    >**Note**: If you [import whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), they have an Excel icon. When you tap them in the app, they open in the [Power BI service](https://powerbi.com) in a browser window.
 
 -   Or: On a dashboard, tap a tile, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
 
@@ -45,21 +45,21 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
 2.  Tap the ellipsis (...) in the upper-right corner, tap the **Sort by** arrow, then tap the field name.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppSort.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_Sort.png)
 
 3.  To reverse the sort order, tap **A\>Z** or **Z\>A**. 
 
 ## Cross-filter and highlight a Power BI report page
 
--   Tap a bar or column in a chart.
+-   Tap a value in a chart.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppHighlight.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_XFltrRptSm.png)
 
-    Tapping the three bubbles in the bubble chart highlights related values in the other charts. Because the bar chart in the upper-right shows percentages, some highlighted values are larger than the total values and some are smaller. 
+    Tapping the red "030-Kids" bubble in the bubble chart highlights related values in the other charts. Because the column chart in the upper-right shows percentages, some highlighted values are larger than the total values, and some are smaller. 
 
 ## Filter a Power BI report
 
-You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has [added filters to the page](powerbi-service-add-a-filter-to-a-report.md) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). You can also add other fields to a visual as filters in the Power BI service. 
+You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has [added filters to the page](powerbi-service-add-a-filter-to-a-report.md) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). In the Power BI service, you can also add other fields as filters for a specific visual. 
 
 > **Note**  If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
 
@@ -87,15 +87,17 @@ You can always filter individual visuals in a Power BI report by using the field
 
 ## Drill down and up in a chart
 
-You can drill down in some charts to see the values that make up one part of the chart. To [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md), edit the report in the Power BI service ([https://powerbi.com](http://powerbi.com/)).
+In charts with up and down arrows in the upper corners, you can drill down to see the values that make up one part of the chart. To [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md), edit the report in the Power BI service ([https://powerbi.com](http://powerbi.com/)).
 
--   Double-tap a bar, column, or other part of a chart to drill into the details for that part — in this case, the red **FD-02 **bubble.
+-   Tap the arrow in the upper-right corner to turn on drill-down.
+   
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_DrillSng1.png)
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppDrillDown.png)
+-   Double-tap a bar, column, or other part of a chart to drill into the details for that part — in this case, the OH column for stores in Ohio.
 
 -   To drill back up, tap and hold or right-click the chart, and tap the up arrow in the upper-right corner.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppDrillBackUp.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_DrillUp.png)
 
 ### See also
 
