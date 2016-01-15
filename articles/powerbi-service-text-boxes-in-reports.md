@@ -22,6 +22,7 @@ In Editing View, add a text box to a report and then pin it to a dashboard. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
 
+
 1.  Place your cursor anywhere on the report canvas and select **Text Box**.
 
     ![](media/powerbi-service-text-boxes-in-reports/PBI_textBox.png)
@@ -38,7 +39,7 @@ In Editing View, add a text box to a report and then pin it to a dashboard. 
 
 5.  Select the pin icon  ![](media/powerbi-service-text-boxes-in-reports/PBI_PinTile.png) to pin the Text Box to a dashboard. 
 
-## See Also
+### See Also
 
 [Add a hyperlink to a Text Box](powerbi-service-add-a-hyperlink-to-a-text-box.md)
 
