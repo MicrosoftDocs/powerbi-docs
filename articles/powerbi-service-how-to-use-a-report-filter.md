@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/16/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 
 # How to use report filters  
@@ -75,5 +75,6 @@ If the field values represent date or time, you can specify a start/end time wh
 [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)  
 [Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)  
 [Create filters in report Editing View](powerbi-service-add-a-filter-to-a-report.md)  
+[Change how report visuals filter and highlight each other](powerbi-service-visual-interactions.md)
 Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

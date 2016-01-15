@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 # Add a hyperlink to a Text Box in Power BI
 
@@ -54,6 +54,8 @@
     ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/PBI_removeHyperlink.png)
 
     Alternately, to remove the hyperlink but leave the text, highlight the entire hyperlink and select Delete.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
 
 ## See also
 

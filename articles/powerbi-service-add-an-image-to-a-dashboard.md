@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/25/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 
 # Add an image to a dashboard
@@ -22,6 +22,8 @@
 Say you want your company logo on your dashboard. 
 
 ![](media/powerbi-service-add-an-image-to-a-dashboard/imageTile13x9.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
 
 ### Before you start
 
