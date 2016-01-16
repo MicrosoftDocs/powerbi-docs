@@ -39,7 +39,7 @@ Any uses of the workbooks and/or data must include the above attribution (that i
 
 By clicking any of the links below to download the Excel workbook files, you are agreeing to the terms above.
 
-### Download the Power BI sample workbooks
+## Download the Power BI sample workbooks
 
 You can download the individual samples files below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020).
 
@@ -59,7 +59,7 @@ You can download the individual samples files below, or [download a zip file of 
 
 -   [Sales and Marketing Sample](http://go.microsoft.com/fwlink/?LinkId=529785)
 
-### Explore the Power BI sample workbooks
+## Explore the Power BI sample workbooks
 
 When you first open a sample workbook, you may see two warnings.
 

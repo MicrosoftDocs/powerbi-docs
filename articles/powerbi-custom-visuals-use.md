@@ -22,7 +22,7 @@
 You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to 
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
 
-    ![](media/powerbi-custom-visuals-add-to-report/pbi-custom-viz-icon.png)
+    ![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
 
 >**Important**:
 A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well. 
@@ -56,7 +56,7 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
     ![](media/powerbi-custom-visuals-use/VisualUse.png)
 
-## See also
+### See also
 
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)
 

@@ -19,11 +19,15 @@
 
 # Retail Analysis sample for Power BI: Take a tour
 
+##  About the Retail Analysis sample
+
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
 ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_newDash.png)
+
+##  Start on the dashboard and open the report
 
 1.  On the dashboard, select the "Total Stores" tile:
 
@@ -57,6 +61,8 @@ You can also [download just the dataset (Excel workbook) for this sample](http:
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_QnA.png)
 
+##  Review a tile created with Power BI Q&A
+
 Let’s get more specific.
 
 1.  Add “this year sales **by district**” onto the question. Observe the result: It automatically put the answer in a bar chart and suggests other phrases:
@@ -70,6 +76,8 @@ Let’s get more specific.
 3.  Play around with more questions and see what kind of results you get.
 
 4.  When you’re ready, return to the dashboard by selecting Power BI in the upper-left corner.
+
+##  Dive deeper into the data
 
 Now let's explore on a more detailed level, looking at the districts' performances.
 
@@ -97,6 +105,8 @@ Now let's explore on a more detailed level, looking at the districts' performanc
 
 4.  Select the bubble again to clear the filter.
 
+##  Try out the Slicer
+
 Let’s look at how specific districts are doing.
 
 1.  Select Allan Guinot in the slicer on the top left.
@@ -114,6 +124,8 @@ Let’s look at how specific districts are doing.
 3.  3.Explore the other district managers and categories – what other insights can you find?
 
 4.  When you are ready – return to the dashboard.
+
+## What is our data telling us about sales growth this year?
 
 The last area we want to explore is our growth – new stores opened this year.
 

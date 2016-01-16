@@ -20,6 +20,8 @@
 
 >**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
+
 ## To add a hyperlink to a Text Box
 
 1.  [Create a Text Box and add some text](powerbi-service-text-boxes-in-reports.md). 
@@ -55,7 +57,6 @@
 
     Alternately, to remove the hyperlink but leave the text, highlight the entire hyperlink and select Delete.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
 
 ## See also
 

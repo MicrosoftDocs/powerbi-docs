@@ -19,7 +19,11 @@
 
 # Add a filter to a report in Power BI
 
-Filters can be applied to Power BI report pages and to individual report visualizations. A **page filter** applies to all the visualizations on the report page.  A **visual filter** applies to a single visualization on a report page.
+The **Filters** pane is used to apply [filters and highlighting](powerbi-service-about-filters-and-highlighting-in-reports.md) to Power BI reports, report pages, and to individual report visualizations. A **page filter** applies to all the visualizations on the report page.  A **visual filter** applies to a single visualization on a report page. And a **report filter** applies to all pages in the report.
+
+
+>**NOTE**: Cross-filtering (and cross-highlighting) is when a selection made *within* one visualization impacts the other visualizations on that same page. For information on cross-filtering and cross-highlighting, see [Visual interactions](powerbi-service-visual-interactions.md).
+
 
 There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
@@ -27,7 +31,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
 -   In Reading View, you can interact with any page and visualization filters that already exist in the report, but you won't be able to save your filter changes.
 
-**NOTE:**  This article describes how to create filters in report **Editing View**.  For more information on filters, see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)and [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
+**NOTE:**  This article describes how to create filters in report **Editing View**.  For more information on filters, see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md) and [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
 
 ## Add a filter to a specific visualization (aka visual filter)
 
@@ -66,8 +70,11 @@ If you save your report with the filter, report readers can interact with the fi
 ## Add a filter to an entire report (aka Report filter)
 
 1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
+
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
+
 3. Select a field in the field list and drag it below **Report Level Filters**.
+
 4. Select the values you want to filter (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
 
 The visualizations on the active page, and on all pages in the report, changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
@@ -89,7 +96,7 @@ When you add a page level filter, Power BI filters without aggregating.  It does
 
 [Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-[Change how report visuals filter and highlight each other](powerbi-service-visual-interactions.md)
+[Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 

@@ -25,7 +25,7 @@ The default display view is **Fit to page** and the default display size is **16
 
 >**NOTE**: Selecting the default setting in one, resets the other to its default as well.
 
-<iframe width="560" height="315" src="https://youtu.be/MB3vfTPNkYE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MB3vfTPNkYE" frameborder="0" allowfullscreen></iframe>
 
 ## When to use Dynamic view
 

@@ -28,7 +28,8 @@ A custom visual template is added to a specific report when imported. If you'd l
 When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
 
 1. Open [Power BI](http://app.powerbi.com) and select the report where you want to add the custom visualization.  
-Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
+
+2.  Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
 
 2. In the **Visualizations** pane, select the ellipses (...).
 
@@ -60,7 +61,7 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 
 8. Continue to work with and explore this visualization as you would any other (native) visualization in Power BI.
 
-## See also
+### See also
 
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
 

@@ -19,8 +19,7 @@
 
 # Drill down in a visualization in Power BI
 
-<iframe width="560" height="315" src="https://youtu.be/As3KPPHn_ck" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/As3KPPHn_ck" frameborder="0" allowfullscreen></iframe>
 
 1.  In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md)or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). Drill requires a visualization with a hierarchy. 
 

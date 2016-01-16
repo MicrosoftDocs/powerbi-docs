@@ -23,7 +23,7 @@ We have an Excel workbook of sample financial data available for download.  H
 -   Financial sample Excel workbook: [download the sample directly](http://go.microsoft.com/fwlink/?LinkID=521962).
 	This workbook has one table of data of sales and profit data by market segment and country/region.
 
-## See also
+### See also
 
 [Get Data](powerbi-service-get-data.md)
 

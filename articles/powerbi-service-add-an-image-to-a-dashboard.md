@@ -19,13 +19,14 @@
 
 # Add an image to a dashboard
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
+
 Say you want your company logo on your dashboard. 
 
 ![](media/powerbi-service-add-an-image-to-a-dashboard/imageTile13x9.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
 
-### Before you start
+## Before you start
 
 You need:
 
@@ -42,6 +43,8 @@ You need:
 If you plan on adding a title and or subtitle, subtract 50 pixels from the height of your image.
 
 Now you're ready.
+
+##  Add an image to the dashboard
 
 1.  In the Excel workbook, add a Power View sheet: **Power View** > **Insert** \> **Power View**.
 
