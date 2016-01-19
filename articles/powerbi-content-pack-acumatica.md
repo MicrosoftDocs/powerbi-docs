@@ -96,7 +96,7 @@ If you’re not able to login, verify the Acumatica OData endpoint you provided 
 If you're having trouble connecting, please confirm with your admin your version of Acumatica. This content pack requires version 5.2 or later.
 
 
-### See Also
+### See also
 
 [Get started in Power BI](powerbi-service-get-started.md)
 
