@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 # Tutorial: Waterfall charts in Power BI
 
@@ -54,7 +54,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 	2.  Convert the chart to a **Waterfall**. 
 
-    ![](media/powerbi-service-tutorial-waterfall-charts/convertWaterfall.png)
+        ![](media/powerbi-service-tutorial-waterfall-charts/convertWaterfall.png)
 
 	3.  If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
 
