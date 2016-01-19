@@ -29,7 +29,7 @@ To familiarize yourself with this particular dataset and its scenario, you might
  >**Note:**  
 >A *content pack* is a type of sample where the dataset is bundled with a dashboard and/or report.  
 
-## Get Data
+## Get data
 1.  Open Power BI Service (powerbi.com).
 
 2.  Select **Get Data** at the bottom of the left navigation pane.  
