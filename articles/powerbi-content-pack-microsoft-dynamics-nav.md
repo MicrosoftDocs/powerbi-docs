@@ -25,7 +25,7 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI and
 
 Note: this content pack requires permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements below.
 
-## How to Connect
+## How to connect
 
 1. Select Get Data at the bottom of the left navigation pane.  
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/getdata.png)
@@ -66,7 +66,7 @@ Note: this content pack requires permissions to the tables where data is retriev
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## System Requirements
+## System requirements
 - To import your Microsoft Dynamics NAV data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from. All the tables (case sensitive) required for the content pack include:
     - ItemSalesAndProfit
     - ItemSalesByCustomer
@@ -110,7 +110,7 @@ If you see an "Oops" error dialog after you pass the authentication dialog, we'r
     
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
     
-## See also
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

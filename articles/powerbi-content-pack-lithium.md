@@ -25,7 +25,7 @@ Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/l
 
 Note: The Power BI content pack uses the Lithium API. Excessive calls to the API may result in additional charges from Lithium, please confirm with your Lithium administrator.
 
-## How to Connect
+## How to connect
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-content-pack-lithium/PBI_GetData.png) 
@@ -62,7 +62,7 @@ Note: The Power BI content pack uses the Lithium API. Excessive calls to the API
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## System Requirements
+## System requirements
 
 The Lithium content pack requires a Lithium communit v15.9 or greater. Please check with your Lithium admin to confirm.
 
@@ -71,7 +71,7 @@ The Lithium content pack requires a Lithium communit v15.9 or greater. Please ch
 Customers running in EMEA (mostly Europe and Middle East customers) are not currently supported by the content pack. This feature will be added in a future content pack update, please check back for details.
 
 
-## See also
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

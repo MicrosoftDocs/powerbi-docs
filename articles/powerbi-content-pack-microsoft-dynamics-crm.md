@@ -25,7 +25,7 @@ Connect to the [Dynamics CRM Online content pack](https://app.powerbi.com/getdat
 
 Note: this content pack requires an administrator must enable the OData endpoint in the site settings. More details on requirements below.
 
-## How to Connect
+## How to connect
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
@@ -61,7 +61,7 @@ Note: this content pack requires an administrator must enable the OData endpoint
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## System Requirements
+## System requirements
 
 -   You need to specify valid OData URL for a Dynamics CRM Online instance (the content pack will not work with an on-premises CRM version).
 
@@ -69,7 +69,7 @@ Note: this content pack requires an administrator must enable the OData endpoint
 
 -   The user account/identity that you use to access Dynamics CRM Online must be the same as the one you are signed up for using with Power BI. When logging into CRM Online, you will be auto-signed into CRM with the same identity you are using for Power BI. If you wish to sign into CRM Online with a different account, please register as a Power BI user using the same account. We hope to resolve this issue in an upcoming release. 
 
-## Finding Parameters
+## Finding parameters
 
 The address of the OData endpoint can be found by navigating to **Microsoft Dynamics CRM \> Settings \> Customizations \> Developer Resources**.  The OData URL is listed under **Service Endpoints**.  It typically has the format: `https://[instance_name].crm.dynamics.com/XRMServices/2011/OrganizationData.svc`
 
@@ -86,7 +86,7 @@ If you're still having issues, open a support ticket to reach the Power BI tea
 -   From the Power BI Support site (where you're reading this article), select Support on the right side of the page.
 
 
-## See also
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

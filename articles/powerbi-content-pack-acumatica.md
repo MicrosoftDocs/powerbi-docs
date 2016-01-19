@@ -17,7 +17,7 @@
    ms.date="01/12/2016"
    ms.author="tpalmer"/>
    
-# Acumatica content pack for Power&nbspBI
+# Acumatica content pack for Power&nbsp;BI
 
 The Power BI Acumatica content pack allows to you quickly gain insights into your opportunity data. Power BI retrieves your data, including opportunities, accounts, and customers, then builds a default dashboard and related reports based on that data. 
 
@@ -25,7 +25,7 @@ Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services
 
 Note: this content pack requires Acumatica v5.2 or higher.
 
-## How to Connect
+## How to connect
 1.	Select **Get Data** at the bottom of the left navigation pane.
 
 	![](media/powerbi-content-pack-acumatica/getdata3.png)
@@ -66,11 +66,11 @@ Note: this content pack requires Acumatica v5.2 or higher.
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 
-## System Requirements
+## System requirements
 This content pack requires Acumatica v5.2 or higher, please confirm the version with your Acumatica admin.
 
 
-## Finding Parameters
+## Finding parameters
 
 **Acumatica OData Endpoint**
 
@@ -96,7 +96,7 @@ If you’re not able to login, verify the Acumatica OData endpoint you provided 
 If you're having trouble connecting, please confirm with your admin your version of Acumatica. This content pack requires version 5.2 or later.
 
 
-## See Also
+### See Also
 
 [Get started in Power BI](powerbi-service-get-started.md)
 

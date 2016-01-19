@@ -45,7 +45,7 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
 
 	-  **Dashboard**
 
-     Select a predefined dashboard based on a persona (such as **Sales Manager**). These dashboards bring in a specific set of standard data from Salesforce and will not include custom fields.
+        Select a predefined dashboard based on a persona (such as **Sales Manager**). These dashboards bring in a specific set of standard data from Salesforce and will not include custom fields.
 
 		![](media/powerbi-content-pack-salesforce/PBI_SalesforceChooseRole.png)
 
@@ -55,7 +55,7 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
 
 		![](media/powerbi-content-pack-salesforce/PBI_SalesforceReports.png)
 
-		If you don't see any reports, add or create them in your Salesforce account and try connecting again.
+        If you don't see any reports, add or create them in your Salesforce account and try connecting again.
 
 7.  Click **Connect** to begin the import process. During the import you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the navigation pane on the left.
 
@@ -73,7 +73,7 @@ You can change this dashboard to display your data any way you want. You can ask
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## System Requirements
+## System requirements
 
 -   Connected with a production Salesforce account that has API access enabled
 
@@ -87,7 +87,7 @@ You can change this dashboard to display your data any way you want. You can ask
 
 If you encounter any errors, please review the requirements above. Also note the ability to login into a custom or sandbox domain is not currently supported.
 
-## See also
+### See also
 
 [Ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 

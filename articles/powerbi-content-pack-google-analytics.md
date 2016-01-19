@@ -25,7 +25,7 @@ Connect to the [Google Analytics content pack](https://app.powerbi.com/getdata/s
 
 In addition to this content pack, customized dashboards and reports can also be created starting from the [Google Analytics connector](powerbi-service-google-analytics-connector/) in Power BI Desktop. Just connect with your Google Analytics account and create your custom reports which can also be published to the Power BI service.
 
-## How to Connect
+## How to connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -65,7 +65,7 @@ In addition to this content pack, customized dashboards and reports can also be 
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## System Requirements
+## System requirements
 This content pack requires you to have a [Google Analytics](https://www.google.com/analytics/) account. Other Google accounts that do not have a Google Analytics account connected to it will see an authentication error.
 
 ## Troubleshooting 
@@ -84,7 +84,7 @@ Still having issues? Open a support ticket to reach the Power BI team:
 
 -   From the Power BI Support site (where you're reading this article), select **Contact Support** on the right side of the page.
 
-## See also
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
