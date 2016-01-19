@@ -14,25 +14,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/08/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
-Visualization data can be exported from visualizations on a dashboard and from report visualizations.
+Visualization data can be exported from visualizations on a dashboard and from report visualizations.  
+
+>**NOTE**: The maximum number of rows that can be downloaded is 10,000.
 
 ## Export data on a dashboard
 
-1. Select the ellipses in the top right corner of the visualization. Choose the  **Export data** icon.
+1. Select the ellipses in the top right corner of the visualization.
+
+  ![](media/powerbi-service-export-data/pbi-export-tile3.png)
+
+2. Choose the  **Export data** icon.
 
     ![](media/powerbi-service-export-data/pbi_export_dash.png)
 
-2. Exported data appears in the bottom left corner of Power BI, below the **Get Data** button.
+    The data is exported to a CSV file. If the visual is filtered, then the downloaded data will also be filtered.
 
-    ![](media/powerbi-service-export-data/pbi_exported.png)
+3. Open the CSV file in Excel.
 
-3. To open the data file, select the arrow and choose **Open**.
-
-    ![](media/powerbi-service-export-data/pbi_exported_open.png)
+    ![](media/powerbi-service-export-data/pbi-export-to-excel.png)
 
 
 ## Export data in a report
@@ -41,7 +45,7 @@ Visualization data can be exported from visualizations on a dashboard and from r
 
     ![](media/powerbi-service-export-data/pbi_export_dialog.png)
 
-2. See steps 2 and 3 above.
+2. See step 3 above.
 
 
 ## See also
