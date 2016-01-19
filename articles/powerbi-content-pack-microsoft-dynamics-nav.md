@@ -49,7 +49,7 @@ Note: this content pack requires permissions to the tables where data is retriev
 5. When prompted, enter your Microsoft Dynamics NAV credentials and follow the Microsoft Dynamics NAV authentication process. If you are already signed in to Microsoft Dynamics NAV in your browser, you may not be prompted for credentials.
 
 	>**Note:**  
-	>You need admin credentials (or at least permissions to sales and finance data for your Microsoft Dynamics NAV account.  
+	>You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  
 	
 	![](media/powerbi-content-pack-microsoft-dynamics-nav/creds.PNG)
 
