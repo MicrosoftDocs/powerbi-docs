@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2016"
+   ms.date="01/14/2016"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
@@ -30,7 +30,6 @@ Download a Power BI app:
 -   The [iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS)
 -   The [iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS)
 -   The [Power BI app for Android phones](http://go.microsoft.com/fwlink/?LinkID=544867)
--   The [Power BI app for Windows 10 phones](http://go.microsoft.com/fwlink/?LinkID=526478)
 -   The [Power BI app for Windows devices](http://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## The iPhone app (Power BI for iOS)
@@ -83,25 +82,16 @@ Download a Power BI app:
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone.
 
-## The Power BI app for Windows 10 phones
-[Get started with the Power BI app for Windows 10 phones](powerbi-service-windows-app-get-started.md).
+## The Power BI mobile app for Windows 10
+[Get started with the Power BI mobile app for Windows 10](powerbi-service-windows-app-get-started.md).
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
--   [Pin a Power BI dashboard](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your phone's Start screen.
+-   [Pin a Power BI dashboard](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen.
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md).
 -   [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md).
+-   Interact with [your reports](powerbi-mobile-reports-in-the-windows-app.md).
 -   View your [groups' dashboards and reports](powerbi-mobile-groups-in-the-win10phone-app.md).
 
-## The Power BI app for Windows devices
-[Get started with the Power BI app for Windows devices](powerbi-service-windows-app-get-started.md).
-
--   View your [dashboards](powerbi-mobile-dashboards-in-the-windows-app.md).
--   Interact with [tiles on your dashboards](powerbi-mobile-tiles-in-the-windows-app.md). 
--   Open [reports](powerbi-mobile-reports-in-the-windows-app.md). 
--   Share [dashboards](powerbi-mobile-share-dashboards-from-the-windows-app.md).
--   Collaborate using [groups](powerbi-mobile-groups-in-the-windows-app.md).
--   [Refresh the data](powerbi-mobile-refresh-the-windows-app.md) in the Power BI for Windows app.
--   Annotate and [share snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app.md).
 
 
