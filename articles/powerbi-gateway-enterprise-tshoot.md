@@ -77,6 +77,16 @@ Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownEr
 
 You can also look in the Event Logs > **Applications and Services Logs** > **Power BI Enterprise Gateway Service** for more details.
 
+**Error: Unable to Connect. Details: "Data source access error"**
+
+We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
+
+Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**. 
+
+If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-enterprise-manage-ssas.md#add-a-data-source)
+
+    The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
+
 ## Dataset
 
 **Error: Couldn't refresh because your Personal Gateway is offline. Make sure your Personal Gateway is up and running.**
@@ -85,8 +95,7 @@ You may have configured an enterprise gateway, and see this error for a given da
 
 If you have imported data into your file, you will need the Personal Gateway to refresh the dataset.
 
-
-## See Also
+## See also
 
 [Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
 
