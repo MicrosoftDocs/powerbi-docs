@@ -95,7 +95,7 @@ You may have configured an enterprise gateway, and see this error for a given da
 
 If you have imported data into your file, you will need the Personal Gateway to refresh the dataset.
 
-## See Also
+## See also
 
 [Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
 
