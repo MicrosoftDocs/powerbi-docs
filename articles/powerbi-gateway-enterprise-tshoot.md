@@ -87,7 +87,7 @@ If the underlying error message is similar to the following, this means that the
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
-** Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI site**
+**Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI site**
 
 We haven’t yet integrated data sources from the enterprise gateway into the *Get Data* experience for Analysis Services from Power BI web. This will be coming soon.
 
