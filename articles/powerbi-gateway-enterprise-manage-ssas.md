@@ -57,7 +57,7 @@ You can click **Add** after you have everything filled in.  You can now use this
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4-ssas.png)
 
-## Data source doesn't show up in 'Get Data' experience for Analysis Services in Power BI site
+## 'Get Data' experience for Analysis Services in Power BI site
 
 We haven’t yet integrated data sources from the enterprise gateway into the *Get Data* experience for Analysis Services from Power BI web. This will be coming soon.
 
