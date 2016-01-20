@@ -77,7 +77,7 @@ Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownEr
 
 You can also look in the Event Logs > **Applications and Services Logs** > **Power BI Enterprise Gateway Service** for more details.
 
-**Error: Unable to Connect Data source access error. Details: "Data source access error"**
+**Error: Unable to Connect. Details: "Data source access error"**
 
 We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
 
