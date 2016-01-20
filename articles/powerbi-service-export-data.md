@@ -26,7 +26,7 @@ Visualization data can be exported from visualizations on a dashboard and from r
 
 1. Select the ellipses in the top right corner of the visualization.
 
-  ![](media/powerbi-service-export-data/pbi-export-tile3.png)
+    ![](media/powerbi-service-export-data/pbi-export-tile3.png)
 
 2. Choose the  **Export data** icon.
 

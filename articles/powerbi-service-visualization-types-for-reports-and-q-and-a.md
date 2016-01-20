@@ -44,13 +44,13 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 
 For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md).
 
-### Single number card
+### Single number cards
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_card.png)
 
 For more information, see [Create a big number tile for a dashboard](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
 
-### Multi row card
+### Multi row cards
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
@@ -116,7 +116,7 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_pie.png)
 
-### Scatter and bubble charts
+### Scatter and Bubble charts
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bubble.png)
 

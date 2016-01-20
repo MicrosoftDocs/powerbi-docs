@@ -24,7 +24,7 @@ Don't like the default name of a report in Power BI?  A new name is just a clic
 
 1.  In the navigation pane, right-click the report and select **Rename**.
 
-    ![](media/powerbi-service-rename-a-report/Rename a report 2.png)
+    ![](media/powerbi-service-rename-a-report/Rename-a-report2.png)
 
 2.  Type the new name.
 

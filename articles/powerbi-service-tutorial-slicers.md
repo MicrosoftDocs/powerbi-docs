@@ -43,11 +43,11 @@ Slicers are a great choice:
 
 2. From the Fields pane, select **District > District Manager**. 
 
-  ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_chartFirst.png)
+    ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_chartFirst.png)
 
 3.  Convert the visualization to a slicer. In the Visualizations pane, select the slicer icon
 
-  ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_select.png).
+    ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_select.png).
 
 ## Format the slicer.
 
@@ -55,13 +55,11 @@ Slicers are a great choice:
 
 2. Select **General > Outline color** and choose dark blue and change the **Weight** to **6**.
 
-  ![](media/powerbi-service-tutorial-slicers/PBI_slicer_outline2.png)
+    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_outline2.png)
 
-3. Under **Selection Controls**, by default, **Select All** is **Off** and **Single Select** is **On**. This means that I have to use the CTRL key to select more than one name at a time.
+3. Under **Selection Controls**, by default, **Select All** is **Off** and **Single Select** is **On**. This means that I have to use the CTRL key to select more than one name at a time. Turn **Select All** to **On** and **Single Select** to **Off**.
 
-  Turn **Select All** to **On** and **Single Select** to **Off**.
-
-  ![](media/powerbi-service-tutorial-slicers/PBI_slicer_selectionControls2.png)
+    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_selectionControls2.png)
 
   - Notice that the slicer now has a **Select All** option at the top of the list. Toggle **Select All** to select all of the names or to select none of the names.
 
@@ -78,15 +76,15 @@ Slicers are a great choice:
 
 1. Add some additional visualizations to the report page.
 
-  ![](media/powerbi-service-tutorial-slicers/PBI_slicers_added.png)
+    ![](media/powerbi-service-tutorial-slicers/PBI_slicers_added.png)
 
 2. Slice the report page for Allan and Brad. Notice how the other visualizations update to reflect these selections.
 
-  ![](media/powerbi-service-tutorial-slicers/PBI_slicers_sliced.png)
+    ![](media/powerbi-service-tutorial-slicers/PBI_slicers_sliced.png)
 
 3. Sort the slicer alphabetically by District Manager last name.  Select the ellipses (...) in the top right corner of the slicer and choose **District Manager**.
 
-  ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sort2.png)
+    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sort2.png)
 
   ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sorted.png)
 
