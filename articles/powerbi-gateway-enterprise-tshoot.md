@@ -85,7 +85,7 @@ Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_D
 
 If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-enterprise-manage-ssas.md#add-a-data-source)
 
-    *The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.*
+    The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
 ## Dataset
 
