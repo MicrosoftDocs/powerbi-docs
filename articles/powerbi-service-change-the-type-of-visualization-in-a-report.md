@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2016
+   ms.date="01/19/2016"
    ms.author="mihart"/>
 
 # Change the type of visualization in a Power BI report
