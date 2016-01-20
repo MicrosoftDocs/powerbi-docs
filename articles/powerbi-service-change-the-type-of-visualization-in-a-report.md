@@ -14,8 +14,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/19/2016
    ms.author="mihart"/>
+
 # Change the type of visualization in a Power BI report
 
 Try different types of visualizations in Power BI to see which one illustrates your data best. 
@@ -33,7 +34,7 @@ If you changed the visualization type in the report after you pinned it to your
 
 
 
-##  See also
+###  See also
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 

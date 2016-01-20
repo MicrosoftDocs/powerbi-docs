@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/08/2015"
+   ms.date="01/19/2016"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -36,25 +36,30 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
  ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_col.png)
 
 
-### Basic (Layered) Area chart
+### Basic (Layered) and Stacked Area charts
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
-**Tip**: The Area chart is based on the line chart with the area between the axis and line filled in.
+**Tip**: The Basic Area chart is based on the line chart with the area between the axis and line filled in.
 
 For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md).
 
-### Single number card tiles
+### Single number card
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_card.png)
 
 For more information, see [Create a big number tile for a dashboard](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
 
+### Multi row card
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
+
+
 ### Combo charts
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/comboSmall.png)
 
-**Tip**: A Combo chart combines a column chart and a line chart.
+**Tip**: A Combo chart combines a column chart and a line chart. Choose from *Line and Stacked Column* and *Line and Clustered Column*.
 
 For more information, see [Tutorial: Combo charts in Power BI](powerbi-service-tutorial-combo-chart-merge-visualizations.md).
 

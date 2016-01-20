@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/20/2016"
    ms.author="mihart"/>
 
 # Delete a page from a Power BI report
@@ -23,7 +23,7 @@ Hover over the tab of the page to delete and click the **X** (in the top right c
 
 ![](media/powerbi-service-delete-a-page-from-a-report/deletepage.gif)
 
-## See also
+### See also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 

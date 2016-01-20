@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/19/2016"
    ms.author="mihart"/>
 # Save a report in Power BI
 
@@ -32,10 +32,10 @@ After you change a report in Power BI, you can save it, save it with a new name,
 
     If this is a new report, give it a descriptive name.  That name will appear under **Reports** in the navigation pane.
 
-    ![](media/powerbi-service-save-a-report/savereport3.png)
+    ![](media/powerbi-service-save-a-report/savereport3b.png)
 
 
-## See also
+### See also
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
