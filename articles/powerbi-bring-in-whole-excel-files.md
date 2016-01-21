@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/07/2016"
+   ms.date="01/20/2016"
    ms.author="owend"/>
 # Bring whole Excel files into Power BI
 
@@ -22,7 +22,7 @@ If Excel is your go-to tool for working with data, you can leverage your Excel e
 
 To view and explore whole Excel files in Power BI, your workbooks need to be on OneDrive for Business or SharePoint -Team Sites. Here's a big advantage of connecting to files on OneDrive or SharePoint: Any changes you make to a file will appear automatically in the file in Power BI. The reverse is also true when you bring in whole Excel files: Changes you make to the file in Power BI are saved to the file on OneDrive or SharePoint.
 
-Excel workbooks in Power BI display the same items as workbooks in Excel Online. For example, Excel workbooks can display these items:
+Excel workbooks in Power BI display the same elements as workbooks in Excel Online:
 
 -   PivotTables
 
@@ -34,7 +34,6 @@ Excel workbooks in Power BI display the same items as workbooks in Excel Online.
 
 -   Power View sheets
 
-Excel workbooks can't display named ranges in Excel Online. If you come across a feature that can't be displayed in Excel Online, you can open the workbook in Excel on your computer.
 
 ## Some important things to know
 
@@ -53,7 +52,6 @@ Excel workbooks can't display named ranges in Excel Online. If you come across a
 -   You can't connect to a whole Excel file again if you're already connected to it. But you can connect to a single file both as a whole Excel workbook and as a dataset. The whole Excel file appears under Reports in the left navigation pane, and the workbook-as-dataset appears under Datasets.
 
 -   If you have an Excel 2010 workbook with a PowerPivot 2010 data model, you need to [upgrade the workbook to Excel 2013](https://support.office.com/article/Upgrade-Power-Pivot-Data-Models-to-Excel-2013-c66578cb-74d5-43ae-a474-5a01be5db439).
-
 
 ## Connect to an Excel file on OneDrive for Business or SharePoint -Team Sites
 
