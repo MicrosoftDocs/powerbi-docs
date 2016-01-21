@@ -19,7 +19,7 @@
 
 # Resolve Issues when Power BI Desktop will not launch  
 
-In Power BI Desktop, users who installed and are running previous versions of the Power BI Enterprise Gateway can be blocked from launching Power BI Desktop, due to administrative policy restrictions that the Power BI Enterprise Gateway placed on named pipes on the local machine. There are two options to resolve this issue, and allow Power BI Desktop to launch:
+In Power BI Desktop, users who installed and are running previous versions of the Power BI Enterprise Gateway can be blocked from launching Power BI Desktop, due to administrative policy restrictions that the Power BI Enterprise Gateway placed on named pipes on the local machine. There three options to resolve this issue, and allow Power BI Desktop to launch:
 
 ### Resolution 1: Install the latest version of Power BI Enterprise Gateway
 The latest version of the Power BI Enterprise Gateway does not place named pipe restrictions on the local machine, and allows Power BI Desktop to launch properly. If you need to continue using Power BI Enterprise Gateway, this is the recommended resolution. You can download the the latest version of Power BI Enterprise Gateway from [this location](https://go.microsoft.com/fwlink/?LinkId=698863). Note that the link is a direct download link to the installation executable.
