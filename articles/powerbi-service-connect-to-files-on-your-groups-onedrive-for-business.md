@@ -19,15 +19,15 @@
 
 # Connect to files on your group's OneDrive for Business
 
-Now that you have a group in Power BI, you want to take advantage of your group’s OneDrive for Business for storing your Excel, CSV, and Power BI Desktop files. Why? Because you can continue updating the files in your OneDrive for Business, and those updates are automatically reflected in the reports and dashboards based on the files. 
+Now that you have a group in Power BI, you can store your Excel, CSV, and Power BI Desktop files on your group’s OneDrive for Business. When you store files in your OneDrive for Business, you can continue updating them, and those updates are automatically reflected in the reports and dashboards based on the files. 
 
 >**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
-To make use of OneDrive for Business, adding files to your group’s workspace is a two-step process: 
+Adding files to your group’s Power BI workspace is a two-step process: 
 
 -    First you upload files to your group’s OneDrive for Business.
 
--   Second you connect to those files from Power BI.
+-   Then you connect to those files from Power BI.
 
 ## Upload files to your group’s OneDrive for Business
 

@@ -26,12 +26,13 @@ Creating this connection retrieves your data and automatically provides a dashb
 
 ### Requirements
 
--   The GitHub account that has access to the repo
+-   The GitHub account that has access to the repo.
 
--   Permission granted to the Power BI for GitHub app during first login
+-   Permission granted to the Power BI for GitHub app during first login.
 
--    Sufficient API calls available to pull and refresh the data﻿
- 
+-   Sufficient API calls available to pull and refresh the data.﻿
+
+
 ## Connect to GitHub
 
 1.  Select **Get Data** at the bottom of the left navigation pane.

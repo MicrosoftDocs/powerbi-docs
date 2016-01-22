@@ -25,15 +25,11 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 
 ![](media/powerbi-powerbi-apps-for-mobile-devices/PBI_PhonePhotoCrop.png)
 
-Download a Power BI app:
-
--   The [iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS)
--   The [iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS)
--   The [Power BI app for Android phones](http://go.microsoft.com/fwlink/?LinkID=544867)
--   The [Power BI app for Windows 10 devices](http://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## The iPhone app (Power BI for iOS)
 [Get started with the iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS).
+
+-   Download the [iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS).
 
 ### Power BI dashboards
 
@@ -55,6 +51,9 @@ Download a Power BI app:
 
 ## The iPad app (Power BI for iOS)
 [Get started with the iPad app](powerbi-mobile-ipad-app-get-started.md) (Power BI for iOS).
+
+-   Download the [iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS).
+
 ### Power BI dashboards and reports
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-on-the-ipad-app.md).
@@ -74,6 +73,7 @@ Download a Power BI app:
 ## The Power BI app for Android phones
 [Get started with the Power BI app for Android phones](powerbi-mobile-android-app-get-started.md).
 
+-   Download the [Power BI app for Android phones](http://go.microsoft.com/fwlink/?LinkID=544867).
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-android-app.md).
 -   View your [Power BI groups](powerbi-mobile-groups-in-the-android-app.md).
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
@@ -85,6 +85,7 @@ Download a Power BI app:
 ## The Power BI mobile app for Windows 10 devices
 [Get started with the Power BI mobile app for Windows 10](powerbi-service-windows-app-get-started.md).
 
+-   Download the [Power BI app for Windows 10 devices](http://go.microsoft.com/fwlink/?LinkId=526478)
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
 -   [Pin a Power BI dashboard](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen.
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md).
