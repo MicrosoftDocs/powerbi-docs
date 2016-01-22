@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/21/2016"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from Excel
@@ -55,13 +55,13 @@
 
     -   New dashboard: type the name of the new dashboard.
 
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_dashDialog.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_dashDialog1.png)
 
 3.  Select **Pin**.
 
     A Success message (near the top right corner) lets you know the range was added, as a tile, to your dashboard.
 
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_pinnedToDash.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_pinnedToDash1.png)
 
 4.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
