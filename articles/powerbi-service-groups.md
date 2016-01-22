@@ -17,6 +17,7 @@
    ms.date="01/21/2016"
    ms.author="maggies"/>
 
+
 # Groups in Power BI  
 
 Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1).
