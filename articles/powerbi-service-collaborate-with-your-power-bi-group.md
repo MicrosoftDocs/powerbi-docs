@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/21/2016"
+   ms.date="01/21/2016"
    ms.author="maggies"/>
 # Collaborate with your Power BI group
 
