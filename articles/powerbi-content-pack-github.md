@@ -3,7 +3,7 @@
    description="GitHub content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="tpalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,24 +14,26 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/02/2015"
+   ms.date="01/20/2016"
    ms.author="lukaszp"/>
 # GitHub content pack for Power BI
 
 The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also known as repo) with data around contributions, issues, pull requests and active users.
 
-Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github)for Power BI.
+Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) for Power BI.
 
 Creating this connection retrieves your data and automatically provides a dashboard and related reports based on the data.
 
-**Requirements:**
+### Requirements
 
--   The GitHub account that has access to the repo
+-   The GitHub account that has access to the repo.
 
--   Permission granted to the Power BI for GitHub app during first login
+-   Permission granted to the Power BI for GitHub app during first login.
 
--    Sufficient API calls available to pull and refresh the data﻿
- 
+-   Sufficient API calls available to pull and refresh the data.﻿
+
+
+## Connect to GitHub
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -95,6 +97,6 @@ If necessary, you can verify your GitHub credentials.
 2. In GitHub, navigate to the URL of the repo you plan to access in Power BI. For example: https://github.com/dotnet/corefx.
 3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.
 
-## See also
+### See also
 - [Get started with Power BI](powerbi-service-get-started.md)
 - [Get data](powerbi-service-get-data.md)

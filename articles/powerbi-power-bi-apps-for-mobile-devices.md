@@ -14,26 +14,22 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/14/2016"
+   ms.date="01/21/2016"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
 
-Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &#151; be it iOS (iPad or iPhone), Android phone, Windows tablet, or Windows 10 phone.
+Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &#151; be it iOS (iPad or iPhone), Android phone, or Windows 10 device.
 
 See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 ![](media/powerbi-powerbi-apps-for-mobile-devices/PBI_PhonePhotoCrop.png)
 
-Download a Power BI app:
-
--   The [iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS)
--   The [iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS)
--   The [Power BI app for Android phones](http://go.microsoft.com/fwlink/?LinkID=544867)
--   The [Power BI app for Windows devices](http://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## The iPhone app (Power BI for iOS)
 [Get started with the iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS).
+
+-   Download the [iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS).
 
 ### Power BI dashboards
 
@@ -55,6 +51,9 @@ Download a Power BI app:
 
 ## The iPad app (Power BI for iOS)
 [Get started with the iPad app](powerbi-mobile-ipad-app-get-started.md) (Power BI for iOS).
+
+-   Download the [iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS).
+
 ### Power BI dashboards and reports
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-on-the-ipad-app.md).
@@ -74,6 +73,7 @@ Download a Power BI app:
 ## The Power BI app for Android phones
 [Get started with the Power BI app for Android phones](powerbi-mobile-android-app-get-started.md).
 
+-   Download the [Power BI app for Android phones](http://go.microsoft.com/fwlink/?LinkID=544867).
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-android-app.md).
 -   View your [Power BI groups](powerbi-mobile-groups-in-the-android-app.md).
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
@@ -82,9 +82,10 @@ Download a Power BI app:
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone.
 
-## The Power BI mobile app for Windows 10
+## The Power BI mobile app for Windows 10 devices
 [Get started with the Power BI mobile app for Windows 10](powerbi-service-windows-app-get-started.md).
 
+-   Download the [Power BI app for Windows 10 devices](http://go.microsoft.com/fwlink/?LinkId=526478)
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
 -   [Pin a Power BI dashboard](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen.
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md).
