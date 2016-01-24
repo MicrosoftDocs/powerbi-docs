@@ -23,7 +23,7 @@ Stay connected to your data from anywhere, anytime with the Power BI mobile apps
 
 See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
-![](media/powerbi-powerbi-apps-for-mobile-devices/PBI_PhonePhotoCrop.png)
+![](media/powerbi-powerbi-apps-for-mobile-devices/pbi_phone_photo_crop2.png)
 
 
 ## The iPhone app (Power BI for iOS)
@@ -83,7 +83,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone.
 
 ## The Power BI mobile app for Windows 10 devices
-[Get started with the Power BI mobile app for Windows 10](powerbi-service-windows-app-get-started.md).
+[Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
 
 -   Download the [Power BI app for Windows 10 devices](http://go.microsoft.com/fwlink/?LinkId=526478)
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
