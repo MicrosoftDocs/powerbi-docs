@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2016"
+   ms.date="01/22/2016"
    ms.author="mihart"/>
 
 # Tutorial: Slicers in Power BI  
@@ -36,7 +36,7 @@ Slicers are a great choice:
 
 ## Create a slicer
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pri1S_4GqTk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ek03amXuMQw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
 1.  Open the Retail Analysis Sample in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).

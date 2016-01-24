@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/2016"
+   ms.date="01/23/2016"
    ms.author="mihart"/>
 
 # Page display settings in a Power BI report
@@ -25,7 +25,7 @@ The default display view is **Fit to page** and the default display size is **16
 
 >**NOTE**: Selecting the default setting in one, resets the other to its default as well.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MB3vfTPNkYE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XPByITauE1g?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## When to use Dynamic view
 

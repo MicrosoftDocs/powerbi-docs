@@ -14,13 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="01/22/2016"
    ms.author="mihart"/>
 # Add a hyperlink to a Text Box in Power BI
 
 >**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## To add a hyperlink to a Text Box
 
@@ -42,7 +42,7 @@
 
     -  In the Text Box, select the hyperlink to display the URL
 
-    -  Select the URL to open the page in a new browser window. 
+    -  Select the URL to open the page in a new browser window.
 
 
 ## To remove the hyperlink but leave the text

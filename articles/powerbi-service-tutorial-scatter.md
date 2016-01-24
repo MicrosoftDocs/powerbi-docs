@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="01/22/2016"
    ms.author="mihart"/>
 
 # Tutorial: Scatter charts and Bubble charts in Power BI  
@@ -52,8 +52,7 @@ A Bubble chart replaces the data points with bubbles, with the bubble *size* rep
 
 ## Create a Scatter chart
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xLQ_ZVScI60" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 1.  Open the Retail Analysis Sample in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).
 

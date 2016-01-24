@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="01/22/2016"
    ms.author="mihart"/>
 
 # Add an image to a dashboard
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWV90QMsI64" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 Say you want your company logo on your dashboard. 
 
