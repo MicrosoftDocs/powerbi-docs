@@ -3,24 +3,27 @@
    description="AT Internet Bridge content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="theresapalmer"
-   manager="mblythe"
+   authors="theresapalmer" 
+   manager="mblythe" 
    editor=""
    tags=""/>
-
+ 
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/21/2015"
+   ms.date="01/18/2016"
    ms.author="tpalmer"/>
+   
 # AT Internet Bridge content pack for Power&nbsp;BI
 
 AT Internet helps you to extract immediate value from your data using its unified digital analytics platform, the Analytics Suite. The AT Internet Bridge content pack for Power BI includes data around visits, sources, localization and devices for your site.
 
 Connect to the [AT Internet Bridge content pack](https://app.powerbi.com/getdata/services/at-internet-bridge) for Power BI.
+
+## How to connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -46,10 +49,25 @@ Connect to the [AT Internet Bridge content pack](https://app.powerbi.com/getdata
 
      ![](media/powerbi-content-pack-at-internet/atinternet.png)
 
-You can change this dashboard to display your data the way you want. It allows you to ask a question in Q&A or click a tile to open the underlying report and change the tiles in the dashboard.
+**What Now?**
 
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
-## See also
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## What's included
+This content pack contains data from the last 45 days in the following tables:
+    - Conversion
+    - Devices
+    - Localization
+    - Sources
+    - Global Visits
+
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
