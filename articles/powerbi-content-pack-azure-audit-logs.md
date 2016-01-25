@@ -21,7 +21,7 @@
 
 With the Azure Audit Logs content pack you can analyze and visualize the information stored in the audit logs. Power BI retrieves your data, builds an out-of-the box dashboard, and creates reports based on that data.
 
-[Connect to the Azure Audit Logs content pack for Power BI](https://app.powerbi.com/getdata/services/azure-audit-logs)
+[Connect to the Azure Audit Logs content pack](https://app.powerbi.com/getdata/services/azure-audit-logs) or read more about the [Azure Audit Logs integration](https://powerbi.microsoft.com/integrations/azure_audit_logs) with Power BI.
 
 ## How to connect
 

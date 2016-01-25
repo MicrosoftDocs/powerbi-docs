@@ -21,7 +21,7 @@
 
 Tracking important statistics about your apps is easy with Power BI and the appFigures content pack. Power BI retrieves your data, including app sales, downloads, and ad statistics, then builds a default dashboard and related reports based on that data.
 
-Connect to the [appFigures content pack](https://app.powerbi.com/getdata/services/appfigures) for Power BI or read more about the [appFigures integration](https://powerbi.microsoft.com/en-us/integrations/appfigures).
+Connect to the [appFigures content pack](https://app.powerbi.com/getdata/services/appfigures) for Power BI or read more about the [appFigures integration](https://powerbi.microsoft.com/integrations/appfigures).
 
 ## How to connect
 
