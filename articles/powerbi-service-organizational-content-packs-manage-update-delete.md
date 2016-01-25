@@ -14,16 +14,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2015"
+   ms.date="01/22/2016"
    ms.author="maggies"/>
 # Manage, update, and delete organizational content packs
 
-A few organizational content pack tasks can only be made by the content pack creator.
+You can package up and share your own dashboards, reports, Excel workbooks, and datasets with your colleagues in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
 
--   Republish
--   Restrict or expand access to the content pack
--   Set and change scheduled refresh
--   Delete the content pack
+Only the content pack creator can do some organizational content pack tasks:
+
+-   Republish.
+-   Restrict or expand access to the content pack.
+-   Set and change scheduled refresh.
+-   Delete the content pack.
 
 ## Modify and re-publish an organizational content pack
 If you make changes to the original content pack dashboard, report, or Excel workbook, Power BI prompts you to republish. Additionally, as the content pack creator, you can update any of the options you selected in the Create Content Pack window when you were creating the original content pack. 
@@ -32,9 +34,10 @@ If you make changes to the original content pack dashboard, report, or Excel wor
 
 When you make and save a change to the dashboard that you used to create the content pack, Power BI will remind you to update it so others can see the changes. For example, if you pin a new tile or simply change the name of the dashboard.
 
-![](media/powerbi-service-organizational-content-packs-manage-update-delete/PBI_ContPkChangesMessage.png)
-
-1.  Select the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
+1.  Select **View Content Packs** in the message:
+  
+    ![](media/powerbi-service-organizational-content-packs-manage-update-delete/PBI_ContPkChangesMessage.png)
+2.  the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
 
     ![](media/powerbi-service-organizational-content-packs-manage-update-delete/PBI_ViewContentPack.png)
 
