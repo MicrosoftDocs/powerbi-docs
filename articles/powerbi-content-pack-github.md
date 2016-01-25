@@ -41,7 +41,7 @@ Creating this connection retrieves your data and automatically provides a dashb
 
 2.  In the **Services** box, select **Get**.
 
-    ![](media/powerbi-content-pack-github/PBI_GetServices.png) 
+    ![](media/powerbi-content-pack-github/pbi_get_services.png) 
 
 3.  Select GitHub \> **Connect**. 
 

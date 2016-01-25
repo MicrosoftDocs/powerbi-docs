@@ -32,7 +32,7 @@ You can also use [Power BI Desktop](powerbi-desktop-get-the-desktop.md) to conne
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
-    ![](media/powerbi-content-packs-services/PBI_GetData.png) 
+    ![](media/powerbi-content-packs-services/pbi_get_data.png) 
 
 2.  In the **Services** box, select **Get**.
 

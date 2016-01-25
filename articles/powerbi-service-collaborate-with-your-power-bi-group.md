@@ -41,7 +41,7 @@ Collaborating in Office 365 starts from the group’s workspace.
 
     This opens the email and conversation site for your group in Outlook for Office 365.
 
-    ![](media/powerbi-service-collaborate-with-your-power-bi-group/PBI_Grps_O365_Convo.png)
+    ![](media/powerbi-service-collaborate-with-your-power-bi-group/pbi_grps_o365convo.png)
 
 2.  Read more about [group conversations in Outlook for Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
