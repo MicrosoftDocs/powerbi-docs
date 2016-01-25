@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="01/22/2016"
    ms.author="mihart"/>
 
 # Duplicate a report page in Power BI  
@@ -26,8 +26,8 @@
     ![](media/powerbi-service-copy-and-paste-a-report-page/PBI_duplicate_new.png)
 
     Your new page is created and becomes the active page.
-    
-<iframe width="560" height="315" src="https://www.youtube.com/embed/infjHJS5DsY" frameborder="0" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## See also  
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).  
