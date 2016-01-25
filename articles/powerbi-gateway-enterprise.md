@@ -1,5 +1,5 @@
 <properties
-pageTitle="Power BI Gateway - Enterprise (Preview)"
+pageTitle="Power BI Gateway - Enterprise"
 description="Description and setup for the Power BI Gateway - Enterprise"
 services="powerbi"
 documentationCenter=""
@@ -13,11 +13,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/11/2016"
+ms.date="01/25/2016"
 ms.author="asaxton"/>
-# Power BI Gateway - Enterprise (Preview)
+# Power BI Gateway - Enterprise
 
-The Power BI Gateway - Enterprise (Preview) enables IT departments to deploy and manage central gateways to serve a large group of users. It is the successor to the Data Management Gateway in Power BI for Office 365. Instead of each employee installing and configuring a Power BI Gateway - Personal, IT can configure, manage and maintain a group of gateways to transparently refresh data uploaded to Power BI for users requiring up-to-date data. 
+The Power BI Gateway - Enterprise enables IT departments to deploy and manage central gateways to serve a large group of users. It is the successor to the Data Management Gateway in Power BI for Office 365. Instead of each employee installing and configuring a Power BI Gateway - Personal, IT can configure, manage and maintain a group of gateways to transparently refresh data uploaded to Power BI for users requiring up-to-date data. 
 
 With the enterprise gateway, IT can centrally manage the set of users who have access to the underlying data sources. IT departments can gain visibility into gateway usage, such as most commonly accessed data sources, and the users accessing them.
 
@@ -25,7 +25,7 @@ Anyone can install or manage an enterprise gateway. However, to view content tha
 
 Data transfer between the Power BI service and the gateway is secured through [Azure Service Bus](https://azure.microsoft.com/en-us/documentation/services/service-bus/). The Service Bus creates a secure channel between the Power BI service and your computer.  Because the gateway starts this secure connection, there’s usually no need to open a port in your firewall because it is an outbound connection.
 
-For more detailed information about how the connector works, be sure to see [Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md).
+For more detailed information about how the connector works, be sure to see [Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md).
 
 Before we go into details about the enterprise gateway, let’s look at some terms used in Power BI:
 
@@ -37,23 +37,23 @@ The *gateway* is different from a *data source*. The gateway is more of the prox
 
 *DirectQuery* always gets the latest data using the credentials that were setup for the Data Source by the Gateway Admin.
 
-## Do I need the Power BI Gateway - Enterprise (Preview)?
+## Do I need the Power BI Gateway - Enterprise?
 
 Before you install the gateway, it’s important to know whether or not use you really need it.  It really depends on your data source and whether you want to use DirectQuery or not.
 
 Currently, the gateway allows for the use of DirectQuery to an on-premises SQL Server or SAP HANA, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services.
 
-## Setting up the Power BI Gateway - Enterprise (Preview) for the first time
+## Setting up the Power BI Gateway - Enterprise for the first time
 
 Setting up a gateway for the first time is a three step process.
 
-1.	[Download and install the gateway](#download-and-install-the-power-bi-gateway---enterprise-preview)
+1.	[Download and install the gateway](#download-and-install-the-power-bi-gateway---enterprise)
 
 2.	[Configure the gateway on the server it was installed to](#configure-the-gateway)
 
-3.	[Manage the gateway](#manage-the-power-bi-gateway---enterprise-preview)
+3.	[Manage the gateway](#manage-the-power-bi-gateway---enterprise)
 
-## Download and install the Power BI Gateway - Enterprise (Preview)
+## Download and install the Power BI Gateway - Enterprise
 
 To download the gateway, click on Power BI gateways under the Downloads menu. Download the Power BI Gateway – Enterprise.
 
@@ -80,7 +80,7 @@ Selecting **Configure** will register the gateway with the Power BI Service for 
 
 ![](media/powerbi-gateway-enterprise/egw-setup5.png)
 
-## Manage the Power BI Gateway - Enterprise (Preview)
+## Manage the Power BI Gateway - Enterprise
 
 You can manage the gateway by going to the Power BI service and selecting the gear icon ![](media/powerbi-gateway-enterprise/pbi_gearicon.png) in the upper-right corner > **Manage gateways**. From here you can delete gateways that you are an administrator for. 
 
@@ -128,10 +128,10 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
-[Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
+[Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
 
-[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgrade-as-connector.md)
+[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
 
 [Azure Service Bus Port Settings](https://msdn.microsoft.com/library/azure/ee732535.aspx)
