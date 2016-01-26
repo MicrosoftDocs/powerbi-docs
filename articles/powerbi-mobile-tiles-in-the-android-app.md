@@ -27,7 +27,7 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
 2. Tap the vertical ellipsis on the tile. From here, you can: 
 
-    ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tileeillpsis.png)
+    ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tileellips_link.png)
 
     - [Annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
     - Tap **Expand tile** to open it in focus mode.
