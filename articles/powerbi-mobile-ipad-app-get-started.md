@@ -29,6 +29,8 @@ You can [create dashboards and reports in the Power BI service](powerbi-service-
 
 You can also [view SQL Server KPIs and mobile reports for your on-premises data](powerbi-mobile-ipad-kpis-mobile-reports.md) in the iPad app for Power BI. You [create those KPIs and mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx).
 
+Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
 >**Note**: You need a SQL Server 2016 CTP 3.2 Reporting Services web portal where you can publish your mobile reports and KPIs.
 
 ## Download the iOS app for the iPad  

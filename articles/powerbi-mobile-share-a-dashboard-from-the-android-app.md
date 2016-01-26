@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Share a dashboard from the Android app for Power BI"
    description="Share a dashboard from the Android app for Power BI"
    services="powerbi" 
@@ -70,7 +70,7 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 -   You can share snapshots of tiles with anyone, in or out of your email domain.
 
-### See Also
+### See also
 
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play
 
