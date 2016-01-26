@@ -62,7 +62,7 @@ Note: Access to the Application Insights overview blade for your application in 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
-The Application Insights content pack includes the following tables and metrics:
+The Application Insights content pack includes the following tables and metrics:  
     - ApplicationDetails  
     - UniqueUsersLast7Days   
     - UniqueUsersLast30Days   

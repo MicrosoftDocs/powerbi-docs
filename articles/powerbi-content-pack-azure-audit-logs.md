@@ -46,7 +46,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 	![](media/powerbi-content-pack-azure-audit-logs/creds.png)
 
 6. Enter your account credentials to finish the sign in process.
-  
+
 	![](media/powerbi-content-pack-azure-audit-logs/login.png)
 
 7. Power BI will retrieve your Azure Audit Log data and create a ready-to-use dashboard and report.  

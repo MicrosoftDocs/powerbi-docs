@@ -60,12 +60,12 @@ Connect to the [AT Internet Bridge content pack](https://app.powerbi.com/getdata
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
-This content pack contains data from the last 45 days in the following tables:
-    - Conversion
-    - Devices
-    - Localization
-    - Sources
-    - Global Visits
+This content pack contains data from the last 45 days in the following tables:  
+    - Conversion  
+    - Devices  
+    - Localization  
+    - Sources  
+    - Global Visits  
 
 ### See also
 

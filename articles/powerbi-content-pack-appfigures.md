@@ -21,7 +21,7 @@
 
 Tracking important statistics about your apps is easy with Power BI and the appFigures content pack. Power BI retrieves your data, including app sales, downloads, and ad statistics, then builds a default dashboard and related reports based on that data.
 
-Connect to the [appFigures content pack](https://app.powerbi.com/getdata/services/appfigures) for Power BI or read more about the [appFigures integration](https://powerbi.microsoft.com/integrations/appfigures).
+Connect to the [appFigures content pack](https://app.powerbi.com/getdata/services/appfigures) or read more about the [appFigures integration](https://powerbi.microsoft.com/integrations/appfigures) with Power BI.
 
 ## How to connect
 
@@ -37,11 +37,11 @@ Connect to the [appFigures content pack](https://app.powerbi.com/getdata/service
 
 	![](media/powerbi-content-pack-appfigures/appFigures.png)
 
-4.  For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your appFigures credentials and follow the appFigures authentication process.
+4.  For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your appFigures credentials and follow the appFigures authentication process. 
 
-	The first time you connect, Power BI prompts you to allow read-only access to your account. Select **Allow** to begin the import process. This can take a few minutes depending on the volume of data in your account.
+    The first time you connect, Power BI prompts you to allow read-only access to your account. Select **Allow** to begin the import process. This can take a few minutes depending on the volume of data in your account.
 
-	![](media/powerbi-content-pack-appfigures/appFiguresDoc_06.png)
+    ![](media/powerbi-content-pack-appfigures/appFiguresDoc_06.png) 
 
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*:
 
