@@ -13,9 +13,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/01/2015"
+ms.date="01/25/2016"
 ms.author="asaxton"/>
-# Troubleshooting the Power BI Gateway - Enterprise (Preview)
+# Troubleshooting the Power BI Gateway - Enterprise
 
 ## Configuration
 
@@ -101,11 +101,21 @@ You may have configured an enterprise gateway, and see this error for a given da
 
 If you have imported data into your file, you will need the Personal Gateway to refresh the dataset.
 
+## Reports
+
+**Report could not access the data source because you do not have access to our data source via an enterprise gateway.**
+
+This is usually caused by one of the following. 
+
+1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the enterprise gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the enterprise gateway, needs to use an IP Address as well.
+
+2. There is not a data source available on any enterprise gateway within your organization. You can configure the data source on a new, or existing, enterprise gateway.
+
 ## See also
 
-[Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
+[Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
 
-[Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
+[Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage.md)
 

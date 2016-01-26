@@ -1,5 +1,5 @@
 <properties
-pageTitle="Power BI Gateway - Enterprise (Preview) in-depth"
+pageTitle="Power BI Gateway - Enterprise in-depth"
 description="A deeper look at how the enterprise gateway works. This looks at how the usernames are passed for Analysis Services via the EffectiveUserName. Also a look at how Active Directory plays into this solution."
 services="powerbi"
 documentationCenter=""
@@ -13,15 +13,15 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/28/2015"
+ms.date="01/25/2016"
 ms.author="asaxton"/>
-# Power BI Gateway - Enterprise (Preview) in-depth
+# Power BI Gateway - Enterprise in-depth
 
-With Power BI, users in your organization can now see your on-premises data and metrics in a whole new way. But before users can connect to your on-premises data source, a Power BI Gatway - Enterprise (Preview) needs to be installed and configured. The gateway helps make the behind-the-scenes communication from a user in Power BI to your on-premises Analysis Services server and back to Power BI quick and secure.
+With Power BI, users in your organization can now see your on-premises data and metrics in a whole new way. But before users can connect to your on-premises data source, a Power BI Gatway - Enterprise needs to be installed and configured. The gateway helps make the behind-the-scenes communication from a user in Power BI to your on-premises Analysis Services server and back to Power BI quick and secure.
 
 Installing and configuring a gateway is usually done by an administrator. It requires special knowledge of your on-premises servers and it in some cases may require Server Administrator permissions.
 
-This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see [Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise.md). This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Power BI and Analysis Services, and how Power BI uses the e-mail address a user signs into Power BI with, the gateway, and Active Directory to securely connect to and query your on-premises data. If you want to dig deeper, links to more detailed articles are provided.
+This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md). This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Power BI and Analysis Services, and how Power BI uses the e-mail address a user signs into Power BI with, the gateway, and Active Directory to securely connect to and query your on-premises data. If you want to dig deeper, links to more detailed articles are provided.
 
 ## Making the connection
 
@@ -131,7 +131,7 @@ Sometimes installing the gateway fails. Or, maybe the gateway seems to install o
 
 In other cases, there might be issues with the type of e-mail address users sign in with, or Analysis Services’ inability to resolve an effective username. If you have multiple domains with trusts between them, and your Active Directory server is in one and Analysis Services in another, this sometimes can cause some problems.
 
-Rather than go into troubleshooting gatewa issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md). Hopefully you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
+Rather than go into troubleshooting gatewa issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md). Hopefully you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
 ## Ports
 The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
@@ -218,7 +218,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 ## See also
 
-[Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise.md)
+[Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md)
 
 [Manage your enterprise data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
 
@@ -226,9 +226,9 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
-[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgrade-as-connector.md)
+[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
 
 [Azure Service Bus Port Settings](https://msdn.microsoft.com/library/azure/ee732535.aspx)
 
