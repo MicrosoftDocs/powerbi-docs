@@ -3,7 +3,7 @@
    description="Adobe Analytics content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,37 +14,39 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
-   ms.author="maggies"/>
-# Adobe Analytics content pack for Power BI
+   ms.date="01/18/2016"
+   ms.author="tpalmer"/>
+# Adobe Analytics content pack for Power&nbsp;BI
 
 Connecting to Adobe Analytics through Power BI starts by connecting to your Adobe Analytics Marketing Cloud account. You will get a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once per day.
 
-Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/services/adobe-analytics) for Power BI.
+Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/services/adobe-analytics) or read more about the [Adobe Analytics integration](https://powerbi.microsoft.com/integrations/adobe_analytics) with Power BI. 
 
-1.  Select Get Data at the bottom of the left navigation pane.
+## How to connect
+
+1.  Select **Get Data** at the bottom of the left navigation pane.
 
 	![](media/powerbi-content-pack-adobe-analytics/getdata.png)
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
 	![](media/powerbi-content-pack-adobe-analytics/services.PNG)
 
-3.  Select Adobe Analytics \> Connect.
+3.  Select **Adobe Analytics** \>  **Connect**.
 
 	![](media/powerbi-content-pack-adobe-analytics/connect.PNG)
 
-4.  The content pack connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on finding those parameters below.
+4.  The content pack connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on [finding those parameters](#FindingParams) below.
 
 	![](media/powerbi-content-pack-adobe-analytics/parameters.PNG)
 
-5. Select oAuth 2 as the Authentication Mechanism and click Sign In. When prompted, enter your Adobe Analytics credentials. 
+5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Adobe Analytics credentials. 
 
 	![](media/powerbi-content-pack-adobe-analytics/Creds.PNG)
 
 	![](media/powerbi-content-pack-adobe-analytics/adobe_signin.PNG)
 
-6.  Click Accept to allow Power BI to access your Adobe Analytics data.
+6.  Click **Accept** to allow Power BI to access your Adobe Analytics data.
 
 	![](media/powerbi-content-pack-adobe-analytics/adobe_authorize.PNG)
 
@@ -52,13 +54,46 @@ Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/se
 
 	 ![](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
 
-You can change this dashboard to display your data the way you want. It allows you to ask a question in Q&A or click a tile to open the underlying report and change the tiles in the dashboard.
 
-### Finding your Adobe Analytics parameter information
+**What Now?**
+
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## What's included
+The content pack uses the Adobe Analytics Report API to define and run reports for the following tables:
+
+|**Table Name**|**Column Details**|
+|---|---|
+|Products|elements=  "product" (top 25) </br> metrics="cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units"|
+|Browsers| elements= "browser" (top 25)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "pageviews"|
+|Pages| elements= "page" (top 25)</br>  metrics="cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "visits", "uniquevisitors", "pageviews", "bounces", "bouncerate", "totaltimespent"|
+|JavaScript Enabled| elements=  "javascriptenabled”, “browser” (top 25)|
+|Mobile OS| elements= "mobileos"(top 25)</br> metrics="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "checkouts", "revenue", "units", "pageviews"|
+|Search Engines Keywords| elements= "searchengine" "searchenginekeyword"</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews"|
+|Search Engine to Products|	elements= "searchengine", "product"</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews"|
+|Referring Pages| elements= "referrer" (top 15), “page" (top 10)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews"|
+|Geocountry Pages| elements= "geocountry" (Top 20), "page"</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews"|
+|Geocountry Product| elements= "geocountry" (Top 20), "product"</br> metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units"|
+|Country and Region Lookup| elements= "geocountry" (Top 200)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units"|
+|Language| elements= "language", "browser" (Top 25)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "pageviews", "cartadditions", "cartremovals", "checkouts", "carts", "cartviews"|
+|Search Engines Look Up| elements= "searchengine" (top 100)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units"|
+|Browser Lookup| elements={[id="browser" (top 25)|
+
+## System requirements
+Access to [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) is required, including access to the correct parameters as described below.
+
+## Finding parameters
+<a name="FindingParams"></a>
 
 **Company**
 
-The Company value can be found in the top right of your account once you're signed in. **Note:**﻿ the value is case and spacing sensitive, enter it exactly as you see in your account.
+The Company value can be found in the top right of your account once you're signed in. **Note:** the value is case and spacing sensitive, enter it exactly as you see in your account.
 
 ![](media/powerbi-content-pack-adobe-analytics/adobe_companies.PNG)
 
@@ -70,3 +105,11 @@ From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/refe
 
 ![](media/powerbi-content-pack-adobe-analytics/ReportSuiteID.PNG)
 
+## Troubleshooting
+If you're seeing an error after successfully providing credentials and loading for some time, it's possible the reports are taking too long to complete. Please review the "What's included" section and compare to the size of your Adobe instance.
+
+### See also
+
+[Get started in Power BI](powerbi-service-get-started.md)
+
+[Get data in Power BI](powerbi-service-get-data.md)
