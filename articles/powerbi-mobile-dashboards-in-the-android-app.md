@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Dashboards in the Android app for Power BI"
+   pageTitle="Dashboards in the Android app"
    description="Dashboards in the Android app for Power BI"
    services="powerbi" 
    documentationCenter="" 

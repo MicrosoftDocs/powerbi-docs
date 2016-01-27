@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Tiles in the Android app for Power BI"
+   pageTitle="Tiles in the Android app"
    description="Tiles in the Android app for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -29,15 +29,19 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
     ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tileellips_link.png)
 
-    - [Annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
-    - Tap **Expand tile** to open it in focus mode.
-    - [Open the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) inside the Power BI app, if it has a link. Links can go to Power BI dashboards, or to an external URL. If it's an external site, Power BI asks you to allow it.
+    [Annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
+
+    [Open the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) inside the Power BI app, if it has a link. Links can go to Power BI dashboards, or to an external URL. If it's an external site, Power BI asks you to allow it.
     
-        ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_OpenLinkMessage.png)
+    ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_OpenLinkMessage.png)
 
-        After you open the link in the Power BI app, you can copy the link or open it in a browser window instead.
+    After you open the link in the Power BI app, you can copy the link or open it in a browser window instead.
 
-2.  Tap a tile. It expands to in focus mode, where it's easier to view and explore the tile data. 
+3.    Tap **Expand tile** to open it in focus mode.
+
+    >**Note**: In the Power BI service, you can now [pin a whole report page to a dashboard](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx#reportpin) as a live tile. In the Power BI app when you expand a report page tile, it opens in landscape mode so you can see more of it at once.
+    >
+    >![](media/powerbi-mobile-tiles-in-the-android-app/pbi_and_repttile.png)
 
 3.   Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
     ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tilefocus.png)
