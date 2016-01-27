@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Self-Service Signup for Power BI"
    description="Self-Service Signup for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mgblythe" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/14/2015"
-   ms.author="adamw"/>
+   ms.author="asaxton"/>
 
 # Self-Service Signup for Power BI
 

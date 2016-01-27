@@ -3,7 +3,7 @@
    description="The AS Connector won't install or I can't connect to data."
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="adamw"/>
+   ms.author="asaxton"/>
 
 # The AS Connector won't install or I can't connect to data.  
 
