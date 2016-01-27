@@ -37,7 +37,7 @@ Some uses for Full Screen Mode are:
 
 1. [Pop out the tile](powerbi-service-display-dash-in-focus-mode.md).
 
-  ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_hoverTile.jpg)
+    ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_hoverTile.jpg)
 
 2. Your tile fills the report canvas. Now view the tile in Full Screen Mode by selecting the Full Screen icon.
 

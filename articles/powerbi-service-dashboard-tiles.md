@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"  quick insights
+   ms.date="01/26/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI  
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS).  
+A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
@@ -38,23 +38,23 @@ Tiles can be pinned to dashboards from reports, Q&A, SSRS, Excel, and more.
 3. In some cases, the item you are pinning may have a *theme* already applied.  For example, visuals pinned from an Excel workbook. If so, select which theme to apply to the tile.
 
 
--   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
+  -   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
--   [Pin a tile to a dashboard from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+  -   [Pin a tile to a dashboard from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
--   [Pin a tile to a dashboard from another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+  -   [Pin a tile to a dashboard from another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 
-- [Pin a tile to a dashboard from an Excel workbook on OneDrive for Business](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+  - [Pin a tile to a dashboard from an Excel workbook on OneDrive for Business](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
 
-- [Pin an entire report page to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+  - [Pin an entire report page to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
-- [Run Quick Insights to discover insights and generate visualizations for your dashboard](powerbi-service-auto-insights.md).
+  - [Run Quick Insights to discover insights and generate visualizations for your dashboard](powerbi-service-auto-insights.md).
 
--   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+  -   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
 
--   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
+  -   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
 
--   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
+  -   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
 
 ### How do I edit and move a tile?
