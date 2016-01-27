@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Display a dashboard tile in Full Screen Mode (TV Mode"
+   pageTitle="Display a dashboard tile in Full Screen mode (TV mode)"
    description="Display a dashboard tile in full screen TV mode"
    services="powerbi"
    documentationCenter=""
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/29/2015"
+   ms.date="01/26/2016"
    ms.author="mihart"/>
 
 # Display a dashboard tile in Full Screen Mode
