@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/11/2015"
+   ms.date="01/11/2016"
    ms.author="derrickv"/>
 
 # Create an Azure Active Directory tenant
