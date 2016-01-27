@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Display dashboards and reports in Full Screen Mode"
+   pageTitle="Display dashboards and reports in Full Screen mode (TV mode)"
    description="Display dashboards and reports in TV mode, aka Full Screen Mode."
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.date="12/11/2015"
    ms.author="mihart"/>
 
-# Display dashboards and reports in Full Screen Mode  
+# Display dashboards and reports in Full Screen mode (TV mode) 
 
 ## What is Full Screen Mode?
 

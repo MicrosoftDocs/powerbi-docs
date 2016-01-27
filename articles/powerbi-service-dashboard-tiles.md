@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/11/2015"
+   ms.date="01/26/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI  
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS).  
+A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull.png)
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
@@ -38,19 +38,23 @@ Tiles can be pinned to dashboards from reports, Q&A, SSRS, Excel, and more.
 3. In some cases, the item you are pinning may have a *theme* already applied.  For example, visuals pinned from an Excel workbook. If so, select which theme to apply to the tile.
 
 
--   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
+  -   [Pin a tile to a dashboard from the Q&A question box](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
--   [Pin a tile to a dashboard from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+  -   [Pin a tile to a dashboard from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
--   [Pin a tile to a dashboard from another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+  -   [Pin a tile to a dashboard from another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 
-- [Pin a tile to a dashboard from an  Excel workbook on OneDrive for Business](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+  - [Pin a tile to a dashboard from an Excel workbook on OneDrive for Business](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
 
--   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+  - [Pin an entire report page to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
--   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
+  - [Run Quick Insights to discover insights and generate visualizations for your dashboard](powerbi-service-auto-insights.md).
 
--   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
+  -   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+
+  -   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
+
+  -   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
 
 ### How do I edit and move a tile?
@@ -69,24 +73,34 @@ Tiles can be pinned to dashboards from reports, Q&A, SSRS, Excel, and more.
 -   [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 
 ## What happens when I hover over a dashboard tile?  
-Hovering over a tile reveals clickable icon that allow you to interact with the tile. Depending on how the tile was created (see above), you'll be able to do most, or all, of the following:
 
-![](media/powerbi-service-dashboard-tiles/hover-over-dashboard-tile.jpg)
-
-- [Open the tile in full screen mode with the in-focus icon](powerbi-service-display-tile-in-full-screen-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
-
-- [Pin the tile to another dashboard with the pin icon](powerbi-service-pin-a-tile-from-one-dashboard-to-another.md)
- ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
-
-- [Edit the title with the pencil icon](powerbi-service-edit-a-tile-in-a-dashboard)
- ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
-
-- [Remove the tile from the dashboard with the delete icon](powerbi-service-edit-a-tile-in-a-dashboard.md)
- ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg)
+Hovering over a tile reveals the ellipses (...) and resize handle. Hovering also allows you to move the tile.
 
 - [Resize the tile with the resize handle](powerbi-service-edit-a-tile-in-a-dashboard) ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg)
 
-- Use the column chart icon ![](media/powerbi-service-dashboard-tiles/chart-icon.jpg) to open the report or Q&A query that was used to create the tile.
+- Move the tile by selecting and dragging the tile to a new location on the dashboard.
+
+- Select the ellipses (...) to open the action menu. Depending on how the tile was created (see above), you'll be able to do most, or all, of the following:
+
+  ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
+
+  - Open the tile in [Focus mode](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
+
+  - [Pin the tile to another dashboard with the pin icon](powerbi-service-pin-a-tile-from-one-dashboard-to-another.md)
+ ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
+
+  - [Export the data used in the tile](powerbi-service-export-data.md)
+  ![](media/powerbi-service-dashboard-tiles/export-icon.png)
+
+  - [Edit the title with the pencil icon](powerbi-service-edit-a-tile-in-a-dashboard.md)
+ ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+
+  - [Remove the tile from the dashboard with the delete icon](powerbi-service-edit-a-tile-in-a-dashboard.md)
+ ![](media/powerbi-service-dashboard-tiles/trash-icon.png)
+
+  - Select the arrow icon ![](media/powerbi-service-dashboard-tiles/goto-report.png) or the column chart **Go To Report** icon ![](media/powerbi-service-dashboard-tiles/chart-icon.jpg) to open the report or Q&A query that was used to create the tile.
+
+  - Close the action menu by selecting the X icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg).
 
 ## What happens when I select a dashboard tile?  
 When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. If there is no custom link, and you created the tile from:

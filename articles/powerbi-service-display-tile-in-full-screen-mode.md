@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Display a dashboard tile in Full Screen Mode (TV Mode"
+   pageTitle="Display a dashboard tile in Full Screen mode (TV mode)"
    description="Display a dashboard tile in full screen TV mode"
    services="powerbi"
    documentationCenter=""
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/29/2015"
+   ms.date="01/26/2016"
    ms.author="mihart"/>
 
 # Display a dashboard tile in Full Screen Mode
@@ -37,7 +37,7 @@ Some uses for Full Screen Mode are:
 
 1. [Pop out the tile](powerbi-service-display-dash-in-focus-mode.md).
 
-  ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_hoverTile.jpg)
+    ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_hoverTile.jpg)
 
 2. Your tile fills the report canvas. Now view the tile in Full Screen Mode by selecting the Full Screen icon.
 
