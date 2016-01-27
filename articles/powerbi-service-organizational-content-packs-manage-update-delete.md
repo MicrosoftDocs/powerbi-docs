@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2016"
+   ms.date="01/26/2016"
    ms.author="maggies"/>
 # Manage, update, and delete organizational content packs
 
@@ -32,18 +32,20 @@ If you make changes to the original content pack dashboard, report, or Excel wor
 
 ## Republish with new content
 
-When you make and save a change to the dashboard that you used to create the content pack, Power BI will remind you to update it so others can see the changes. For example, if you pin a new tile or simply change the name of the dashboard.
+When you make and save a change to the dashboard that you used to create the content pack, Power BI reminds you to update it so others can see the changes. For example, if you pin a new tile or just change the name of the dashboard.
 
 1.  Select **View Content Packs** in the message:
   
     ![](media/powerbi-service-organizational-content-packs-manage-update-delete/PBI_ContPkChangesMessage.png)
-2.  the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
+2.  Or select the cog icon in the upper-right corner ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and select **View Content Pack**.
 
-    ![](media/powerbi-service-organizational-content-packs-manage-update-delete/PBI_ViewContentPack.png)
+    ![](media/powerbi-service-organizational-content-packs-manage-update-delete/pbi_contpkview.png)
 
-2.  Select **Edit**.  Notice the warning icon.  This lets you know that you've modified the content pack in some way and it no longer matches what was published.
+    Notice the warning icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/pbi_contpkwarningicon.png).  This lets you know that you've modified the content pack in some way and it no longer matches what you published.
 
-3.  Make any necessary changes in the **Update Content Pack** window and select **Update**. A Success message appears.
+2.  Select **Edit**.  
+
+3.  Make any necessary changes in the **Update Content Pack** window and select **Update**. A **Success** message appears.
 
 	-   If a group member has not customized the content pack, the update is automatically applied.
 
