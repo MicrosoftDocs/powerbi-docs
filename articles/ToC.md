@@ -425,7 +425,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-pyramid-analytics"
           ],
           "numberOfFeaturedArticles": 5
-        }
+        },
+        {
+          "sectionTitle": "Troubleshooting",
+          "articles": [
+            "powerbi-desktop-access-database-errors",
+            "powerbi-desktop-error-launching-desktop"
+          ],
+          "numberOfFeaturedArticles": 2
+        }   
       ]
     },
     {
