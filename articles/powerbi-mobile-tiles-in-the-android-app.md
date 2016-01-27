@@ -37,7 +37,8 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
     After you open the link in the Power BI app, you can copy the link or open it in a browser window instead.
 
-    Tap **Expand tile** to open it in focus mode.
+3.    Tap **Expand tile** to open it in focus mode.
+
     >**Note**: In the Power BI service, you can now [pin a whole report page to a dashboard](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx#reportpin) as a live tile. In the Power BI app when you expand a report page tile, it opens in landscape mode so you can see more of it at once.
     >
     >![](media/powerbi-mobile-tiles-in-the-android-app/pbi_and_repttile.png)

@@ -18,7 +18,7 @@
    ms.author="maggies"/>
 # Share a dashboard from the Android app for Power BI
 
-Invite colleagues to view your dashboards by sharing links from the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md). See [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
+Invite colleagues to view your dashboards by sharing links from the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md). 
 
 ## Share a dashboard
 
@@ -43,6 +43,8 @@ Invite colleagues to view your dashboards by sharing links from the [Android ap
 4.  Tap the paper airplane icon ![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/PBI_Andr_SendPlane.png) in the upper-right corner to send the mail.
 
     Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it in a browser or in one of the mobile apps, it's added to their Power BI account.
+
+    >**Note**: Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
 
 ## Unshare a dashboard
 
