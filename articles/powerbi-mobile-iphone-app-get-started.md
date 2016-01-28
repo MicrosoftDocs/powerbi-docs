@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2016"
+   ms.date="01/27/2016"
    ms.author="maggies"/>
 
 # Get started with the iPhone app (Power BI for iOS)
@@ -69,7 +69,6 @@ See what else you can do in the iPhone app with dashboards in Power BI, and SQL 
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
 -   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
--   Create [favorites](powerbi-mobile-favorites-in-the-iphone-app.md).
 -   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
 -   Share [Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 -   Annotate and [share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="01/27/2016"
    ms.author="maggies"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
@@ -53,10 +53,6 @@ In the iPhone app for Microsoft Power BI for iOS, you see and can interact with 
     -   Tap the ellipsis to open the dashboard menu, and then...
 
         ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashEllipsis.png)
-
-    -  Tap **Edit favorites** to mark dashboard tiles as [favorites](powerbi-mobile-favorites-in-the-iphone-app.md), or...  
-
-        ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashMenu.png)
 
     -  Tap **Invite** to [invite a colleague](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) to view your dashboard.
 

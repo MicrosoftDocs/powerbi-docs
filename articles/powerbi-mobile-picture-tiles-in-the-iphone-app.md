@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2015"
+   ms.date="01/27/2016"
    ms.author="maggies"/>
 
 # Create picture tiles with your iPhone app (Power BI for iOS)
@@ -46,7 +46,6 @@ You can add any picture on your iPhone to any dashboard you own. Power BI adds t
 Picture tiles act the same as other tiles on your iPhone. You can:  
 
  - Open them in focus mode.
- - Make them [favorites](powerbi-mobile-favorites-in-the-iphone-app.md).
  - [Annotate and share them](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) in email. 
 
 
