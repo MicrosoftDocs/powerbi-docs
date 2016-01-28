@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/21/2016"
+   ms.date="01/27/2016"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
@@ -35,7 +35,6 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
 -   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
--   Create [favorites](powerbi-mobile-favorites-in-the-iphone-app.md).
 -   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
 -   Share [Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 -   Annotate and [share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
@@ -58,7 +57,6 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-on-the-ipad-app.md).
 -   Interact with [tiles on your Power BI dashboards](powerbi-mobile-tiles-in-the-ipad-app.md).
--   Create [favorites](powerbi-mobile-favorites-on-the-ipad-app.md).
 -   Open [Power BI reports](powerbi-mobile-reports-on-the-ipad-app.md) from your dashboard.
 -   [Share Power BI dashboards](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
 -   [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
@@ -77,7 +75,6 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-android-app.md).
 -   View your [Power BI groups](powerbi-mobile-groups-in-the-android-app.md).
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
--   Pick out [favorites](powerbi-mobile-favorites-in-the-android-app.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone.

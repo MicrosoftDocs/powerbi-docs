@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="01/27/2016"
    ms.author="maggies"/>
 # Dashboards on the iPad app (Power BI for iOS)
 
@@ -41,8 +41,6 @@ Then you see these same dashboards in the iPad app for Microsoft Power BI for 
 3.  You see the tiles in that dashboard. Now you can:
 
     [Interact with the tiles](powerbi-mobile-tiles-in-the-ipad-app.md).
-
-    [Make favorites](powerbi-mobile-favorites-on-the-ipad-app.md) of the tiles.
 
     [Open the reports](powerbi-mobile-reports-on-the-ipad-app.md) behind the tiles.
 
