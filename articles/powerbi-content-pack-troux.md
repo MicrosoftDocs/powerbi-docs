@@ -38,7 +38,7 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
 
 4.  4.	Specify your Troux OData URL. See details on [finding those parameters](#FindingParams) below.
 
-	![](media/powerbi-content-pack-troux/parameters.png)
+	![](media/powerbi-content-pack-troux/params.png)
 
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.
 
