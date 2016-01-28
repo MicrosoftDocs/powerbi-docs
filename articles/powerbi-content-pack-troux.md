@@ -36,7 +36,7 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
 
 	![](media/powerbi-content-pack-troux/connect.png)
 
-4.  4.	Specify your Troux OData URL. See details on [finding those parameters](#FindingParams) below.
+4.  Specify your Troux OData URL. See details on [finding those parameters](#FindingParams) below.
 
 	![](media/powerbi-content-pack-troux/params.png)
 
