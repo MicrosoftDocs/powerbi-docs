@@ -459,7 +459,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-ipad-kpis-mobile-reports",
             "powerbi-mobile-dashboards-on-the-ipad-app",
             "powerbi-mobile-tiles-in-the-ipad-app",
-            "powerbi-mobile-favorites-on-the-ipad-app",
             "powerbi-mobile-share-dashboards-from-the-ipad-app",
             "powerbi-mobile-reports-on-the-ipad-app",
             "powerbi-service-mobile-groups-in-the-ipad-app",
@@ -476,7 +475,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-tiles-in-the-iphone-app",
             "powerbi-mobile-report-page-tiles-in-the-iphone-app",
             "powerbi-mobile-dashboard-smart-order-in-the-iphone-app",
-            "powerbi-mobile-favorites-in-the-iphone-app",
             "powerbi-mobile-share-a-dashboard-from-the-iphone-app",
             "powerbi-mobile-set-data-alerts-in-the-iphone-app",
             "powerbi-mobile-groups-in-the-iphone-app-groups",
@@ -492,7 +490,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-mobile-dashboards-in-the-android-app",
             "powerbi-mobile-tiles-in-the-android-app",
-            "powerbi-mobile-favorites-in-the-android-app",
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app",
