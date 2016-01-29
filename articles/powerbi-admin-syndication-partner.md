@@ -54,7 +54,7 @@ To enable ad-hoc subscriptions, you can contact your partner and request that th
 
 2. Once you are signed in, you can issue the following command to enable free sign ups.
 
-    Set-MsolCompanySettings -AllowAdHocSubscriptions $true
+        Set-MsolCompanySettings -AllowAdHocSubscriptions $true
 
 
 ## Power BI Pro
