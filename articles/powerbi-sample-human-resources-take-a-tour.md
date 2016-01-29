@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/28/2016"
    ms.author="maggies"/>
 
 # Human Resources sample for Power BI: Take a tour  
@@ -25,50 +25,55 @@ The HR department has the same reporting model across different companies, even 
 - Biases in our hiring strategy.
 - Trends in voluntary separations.
 
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
-
-You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
+This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
 ![](media/powerbi-sample-human-resources-take-a-tour/hr1.png)
 
+Want to follow along? Go to **[Get Data > Samples > Human Resources Sample](https://powerbi.com/groups/me/getdata/samples/human-resources-sample)** > **Connect** to get your own copy of the sample. 
+
+You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=528592) for this sample.
+
 ## New hires  
-Let’s explore new hires first.
-- On the dashboard, click the **New Hires, New Hires Same Period Last Year, Actives YoY % Change** **By Month** tile.  
+Let’s explore new hires first. 
+
+1.  In the left navigation pane, select the Human Resources dashboard.
+2.  Select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change** **By Month** tile.  
     ![](media/powerbi-sample-human-resources-take-a-tour/hr2.png)  
 
-    This opens the “Human Resources Sample” report to the “New Hires” page.  
+    The Human Resources Sample report opens to the **New Hires** page.  
+
     ![](media/powerbi-sample-human-resources-take-a-tour/hr3.png)
 
 Notice the following:
 
-- The **New Hires, New Hires SPLY and Actives YoY % Change by Month** combo chart shows a significant growth in the number of new hires. We’re hiring lot more people this year compared to last year.
+- The **New Hire Count, New Hires SPLY and Actives YoY % Change by Month** combo chart shows we hired more people every month this year compared to last year &#151; significantly more people in some months.
 
-- Look at the combo chart **New Hires and Actives by Region and Ethnicity**. Notice we’re hiring fewer people in the **East** region.
+- In the combo chart **New Hire Count and Active Employee Count by Region and Ethnicity**, notice we’re hiring fewer people in the **East** region.
 
-- The **New Hires YoY Var by Age Group **waterfall chart shows we’re hiring mainly younger people. This may be due to the mainly part-time nature of the jobs.
+- The **New Hires YoY Var by Age Group** waterfall chart shows we’re hiring mainly younger people. This may be due to the mainly part-time nature of the jobs.
 
-- The **Gender** pie chart shows a pretty even split.
+- The **New Hire Count by Gender** pie chart shows a pretty even split.
 
-Can you find more insights – for example, a region where the gender split is not even? Click the different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
+Can you find more insights &#151; for example, a region where the gender split is not even? Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
 
-Click **Power BI** in the top navigation bar to return to the dashboard.
+Select **Power BI** in the top navigation bar to return to the dashboard.
 
 ## Compare current active and former employees  
 Let’s explore data for current active employees and employees who no longer work for the company.
 
-On the dashboard, click the **Actives by Age Group **tile.  
-![](media/powerbi-sample-human-resources-take-a-tour/hr4.png)
+On the dashboard, select the **Active Employee Count by Age Group** tile.  
+![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_activepie.png)
 
-This opens the report to the “Active Employees vs. Separations” page.  
+The Human Resources Sample report opens to the **Active Employees vs. Separations** page.  
 ![](media/powerbi-sample-human-resources-take-a-tour/hr5.png)
 
 Items of interest:
 
 - Combo charts on the left show year-over-year change for active employees and separates. We have more actives this year due to rapid hiring, but also more separates than last year.
 
-- In August we had more separates compared to other months. Click the different age groups, genders, or regions to see if you can find any outliers.
+- In August we had more separates compared to other months. Select the different age groups, genders, or regions to see if you can find any outliers.
 
-- Looking at the pie charts, we notice we have a pretty even split in our active employees by gender and age groups. Click different age groups to see the gender split by age. Do we have an even split by gender in every age group? 
+- Looking at the pie charts, we notice we have a pretty even split in our active employees by gender and age groups. Select different age groups to see the gender split differs by age. Do we have an even split by gender in every age group? 
 
 ## Reasons for separation  
 Let’s look at the report in Editing View. Tap **Edit Report** in the upper-left corner. 
