@@ -47,8 +47,8 @@ To enable ad-hoc subscriptions, you can contact your partner and request that th
 
 1. You need to first sign into Azure Active Directory using your Office 365 credential. The first line will prompt you for your credentials. The second line connects to Azure Active Directory.
 
-    $msolcred = get-credential
-    connect-msolservice -credential $msolcred
+        $msolcred = get-credential
+        connect-msolservice -credential $msolcred
 
     ![](media/powerbi-admin-syndication-partner/aad-signin.png)
 
