@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Find and open an organizational content pack"
-   description="Find and open an organizational content pack"
+   description="Find and open an organizational content pack in Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.date="01/27/2016"
    ms.author="maggies"/>
 
-# Find and open an organizational content pack  
+# Find and open an organizational content pack in Power BI  
 
 When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups you belong to](powerbi-service-groups.md), it appears in your  content gallery.  Browse or search the content gallery to find and open organizational content packs.
 
