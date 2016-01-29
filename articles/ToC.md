@@ -129,6 +129,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-pin-a-tile-from-one-dashboard-to-another",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-excel",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
+            "powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report",
             "powerbi-service-edit-a-tile-in-a-dashboard",
             "powerbi-service-tips-for-designing-a-great-dashboard",
             "powerbi-service-auto-insights",
@@ -145,7 +146,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-qr-code-for-tile",
             "powerbi-service-delete-or-remove-a-dashboard"
           ],
-          "numberOfFeaturedArticles": 9
+          "numberOfFeaturedArticles": 10
         },
         {
           "sectionTitle": "Ask questions of your data",
