@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/28/2016"
    ms.author="davidi"/>
 
 # Query overview in Power BI Desktop  
@@ -117,7 +117,7 @@ If you want to see the code that Query Editor is creating with each step, or wan
 You can directly edit the code in the **Advanced Editor** window. To close the window, select the **Done** or **Cancel** button.  
 
 ## Saving Your Work  
-When your query is where you want it, you can have Query Editor load the data model into Power BI Desktop, and close the Query Editor window. To do that, select **Close & Load** from Query Editor's **File** menu.  
+When your query is where you want it, you can have Query Editor apply the changes to the data model into Power BI Desktop, and close Query Editor. To do that, select **Close & Apply** from Query Editor's **File** menu.  
 ![](media/powerbi-desktop-query-overview/QueryOverview_CloseNLoad.png)
 
 As progress is made, Power BI Desktop provides a dialog to display its status.  

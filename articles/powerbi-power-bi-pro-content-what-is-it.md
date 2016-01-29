@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="01/28/2016"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
@@ -40,6 +40,8 @@ Conversely, if your content contains only the following items it will be consuma
 -   A dashboard or report connected to content packs for services (e.g. Dynamics CRM, Salesforce, and Google Analytics).
 
 -   A dashboard or report with data imported from files such as Excel spreadsheets, Power BI Desktop, and CSV.
+
+-   A dashboard or report that contains [R scripts](powerbi-desktop-r-scripts.md) or [R visuals](powerbi-desktop-r-visuals.md). Power BI free users will see a static image of any R visuals, and only Power BI Pro users will be able to refresh, filter, cross-filter, or otherwise interact with R visuals.
 
 For example, if you create a manufacturing dashboard that updates progress multiple times during the day, anyone *consuming* that dashboard would need a Power BI Pro license. Or, if you create a report using the Power BI AS Connector, then another that uses Personal Gateway, anyone *consuming or interacting* with either of those reports would need a Power BI Pro license.
 

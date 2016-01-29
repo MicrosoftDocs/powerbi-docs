@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/28/2016"
    ms.author="davidi"/>
 # Common query tasks in Power BI Desktop
 
@@ -81,11 +81,11 @@ There are many other ways I could shape the data in this query; I could remove a
 
 ## Group Rows
 
-In Query Editor, you can group the values in multiple rows into a single value.  This can be useful when summarizing the number of products offered, the total sales, or the count of students.
+In Query Editor, you can group the values in multiple rows into a single value. This can be useful when summarizing the number of products offered, the total sales, or the count of students.
 
 In this example, we group rows in an education enrollment data set. The data is from an Excel workbook, and has been shaped in Query Editor to get just the columns we need, renamed the table, and performed a few other transforms.
 
-Let’s find out how many Agencies (this includes school districts, and other education agencies such as regional service districts, and so on) each state has. Select the *State Name* column then select the **Group By** button in the **Transform** tab or the **Home** tab of the ribbon (**Group By** is available in both tabs).
+Let’s find out how many Agencies (this includes school districts, and other education agencies such as regional service districts, and so on) each state has. We select the *State Abbr* column then select the **Group By** button in the **Transform** tab or the **Home** tab of the ribbon (**Group By** is available in both tabs).
 
 ![](media/powerbi-desktop-common-query-tasks/CommonQueryTasks_GroupBy.png)
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/15/2015"
+   ms.date="01/28/2016"
    ms.author="davidi"/>
 
 # Create Power BI visuals using R (Preview)  
@@ -27,7 +27,7 @@ In this preview release, you can create reports and interact with R visuals in P
 
 ### Installing R
 
-Power BI Desktop does not include, deploy or install the R engine. To run R scripts in Power BI Desktop, you must separately install **R** on your local computer. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+Power BI Desktop does not include, deploy or install the R engine. To run R scripts in Power BI Desktop, you must separately install **R** on your local computer. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
 
 ### Enabling R Visuals Preview
 1.   To enable R visuals, from Power BI Desktop select **File > Options and settings > Options**, as shown in the following image.
@@ -128,5 +128,6 @@ This preview version of R visuals has a few limitations:
 
 -  In this release, RRO installations are not automatically identified by the 32-bit version of Power BI Desktop, so you must manually provide the path to the R installation directory in **Options and settings > Options > R Scripting**.
 
--  In this release, languages in which decimal delimiters are represented with a comma result in an R visual error.
-This limitation will be removed in an upcoming release. Meanwhile, changing your Operating System (OS) region format to **English (World)** removes this error.
+#### Updates to R visuals
+
+-  In this release, languages in which number formats use comma delimiters (,) are now supported.
