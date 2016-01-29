@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Work with organizational content packs"
-   description="Work with organizational content packs"
+   description="Work with organizational content packs in Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -14,13 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/27/2016"
    ms.author="maggies"/>
-# Work with organizational content packs
+# Work with organizational content packs in Power BI
 
-When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, and datasets (unless it's an SSAS data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can customize the dashboards and reports, and when those changes are saved, a new *personalized* version of the content pack replaces the original.
+When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's an SSAS data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can customize the dashboards and reports, and when they save their changes, a new *personalized* version of the content pack replaces the original.
 
-## Edit an organizational content pack:
+## Edit an organizational content pack
 
 Editing and saving changes to an organizational content pack creates a personalized version of the content pack, not visible to others.
 
@@ -48,7 +48,7 @@ When the content pack is created, the refresh settings are inherited with the da
 
 See [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
-## See also
+### See also
 
 [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
 

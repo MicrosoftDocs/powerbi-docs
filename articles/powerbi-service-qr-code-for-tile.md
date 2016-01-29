@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/10/2015"
+   ms.date="01/28/2016"
    ms.author="maggies"/>
 
 # Create a QR code for a tile in Power BI
@@ -35,9 +35,9 @@ Colleagues you've shared the dashboard with can scan the QR code for access to t
 
     ![](media/powerbi-service-qr-code-for-tile/PBI_iPh_QRGenerate.png)
 
-3. A pop-up showing the QR code appears. 
+3. A dialog box with the QR code appears. 
 
-    ![](media/powerbi-service-qr-code-for-tile/PBI_iPh_QRDialog.png)
+    ![](media/powerbi-service-qr-code-for-tile/pbi_create_qrcode.png)
 
 4. From here you can scan the QR code or download and save it so you can: 
 
