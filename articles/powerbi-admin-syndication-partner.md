@@ -50,7 +50,7 @@ To enable ad-hoc subscriptions, you can contact your partner and request that th
     $msolcred = get-credential
     connect-msolservice -credential $msolcred
 
-   ![](media/powerbi-admin-syndication-partner/aad-signin.png)
+    ![](media/powerbi-admin-syndication-partner/aad-signin.png)
 
 2. Once you are signed in, you can issue the following command to enable free sign ups.
 
