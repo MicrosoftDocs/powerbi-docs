@@ -14,13 +14,52 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/16/2015"
+   ms.date="01/29/2016"
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
 
-## December 2015 Update (2.30.4246.181)
+## January 2016 Update (2.30.4246.181)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
+
+Ring in the new year with another collection of improvements and enhancements to Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+
+### Report View:
+
+-   See data behind a visual
+-   You can now add borders to a visual
+-   Add an image background to a visual
+
+
+### Data Connectivity:
+
+-   You can now refresh data for individual tables from the Field List (in **Report** view and **Data** view), rather than (and in addition to) just being able to **refresh all** from the ribbon
+-   General Availability (GA) for SQL Server Analysis Services Multidimensional models Exploration mode (no longer a preview feature)
+-   Enhancements to hierarchy support
+-   General Availability (GA) for the SAP HANA connector (no longer a preview feature)
+-   DirectQuery: you can now create measures when using DirectQuery mode
+-   Ability to append multiple tables within a single Append operation
+-   Option to disable data previews to download in the background (performance optimization)
+
+### Other Improvements:
+
+-   Support for Internet Explorer 9 (IE9) browser
+-   Performance improvements for report rendering, cross-highlighting, and otherwise
+
+
+Want more information about these updates? Take a look at the [blog post](http://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), where you can get more detailed information about each of these new features.
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="500" height="281" src="https://www.youtube.com/watch?v=ek8dwi33-24" frameborder="0" allowfullscreen></iframe>
+
+
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
+
+
+## December 2015 Update (2.30.4246.181)
 
 December is a month for giving, and the Power BI team is following suit with more updates, features, and more functionality in this month's Power BI Desktop update. The following enhancements are new to Power BI Desktop this month:
 
@@ -73,11 +112,6 @@ Want more information about these updates? Take a look at the [blog post](http:/
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/iW5VH8iIyfE" frameborder="0" allowfullscreen></iframe>
-
-
-
->NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
-
 
 
 

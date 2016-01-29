@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use SAP HANA in Power BI Desktop (Preview Feature)"
-   description="Use SAP HANA in Power BI Desktop (Preview Feature)"
+   pageTitle="Use SAP HANA in Power BI Desktop"
+   description="Use SAP HANA in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="01/27/2016"
    ms.author="davidi"/>
 
-# Use SAP HANA in Power BI Desktop (Preview Feature)  
+# Use SAP HANA in Power BI Desktop
 
 With Power BI Desktop, you can now access **SAP HANA** databases. To use **SAP HANA**, the SAP HANA ODBC driver must be installed on the local client computer in order for the Power BI Desktop **SAP HANA** data connection to work properly. You can download the SAP HANA ODBC driver from the [SAP download page](https://support.sap.com/swdc).
 
@@ -29,10 +29,10 @@ When connecting to a SAP HANA database, specify the server name and the port in 
 
 ![](media/powerbi-desktop-sap-hana/sap-hana-2.png)
 
-In this preview release **SAP HANA** in [DirectQuery](use-directquery.md) mode is only supported in Power BI Desktop, and you cannot publish or upload reports that use **SAP HANA** in DirectQuery mode to the Power BI service. When not using **SAP HANA** in DirectQuery mode, you *can* publish and upload reports that use **SAP HANA**.
+In this release **SAP HANA** in [DirectQuery](use-directquery.md) mode is supported in Power BI Desktop and the Power BI Service, and you can publish and upload reports that use **SAP HANA** in DirectQuery mode to the Power BI service. You can also publish and upload reports to the Power BI Service when not using **SAP HANA** in DirectQuery mode.
 
 ### Supported features for SAP HANA
-This preview release has many capabilities for **SAP HANA**, as shown in the following list:
+This release has many capabilities for **SAP HANA**, as shown in the following list:
 
 
 -   The Power BI connector for **SAP HANA** uses the SAP ODBC driver, to provide the best use experience
@@ -49,7 +49,7 @@ This preview release has many capabilities for **SAP HANA**, as shown in the fol
 
 
 ### Limitations of SAP HANA  
-There are also a few limitations to using the preview version of **SAP HANA**, shown below:
+There are also a few limitations to using **SAP HANA**, shown below:
 
 
 -   NVARCHAR strings are truncated to maximum length of 4000 Unicode characters
@@ -59,6 +59,3 @@ There are also a few limitations to using the preview version of **SAP HANA**, s
 -   VARBINARY is not supported
 
 -   Valid Dates are between 1899/12/30 and 9999/12/31
-
-
-In addition, as mentioned earlier you cannot publish a report created with the preview version of **SAP HANA** to the Power BI Service.
