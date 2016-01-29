@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/28/2016"
    ms.author="davidi"/>
 # Tutorial: Facebook analytics using Power BI Desktop
 
