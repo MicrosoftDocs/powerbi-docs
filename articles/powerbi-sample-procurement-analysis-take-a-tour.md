@@ -36,13 +36,15 @@ You can also [download just the dataset (Excel workbook)](http://go.microsoft.c
 
 ## Spending trends
 
-Let’s first look for trends in spending by category and location. 
-1.  In the left navigation pane, select the Procurement Analysis dashboard.
-2.  Select the dashboard tile **Total Invoice by Country/Region**. It opens to the "Spend Overview" page of the “Procurement Analysis Sample” report.
+Let’s first look for trends in spending by category and location.  
+
+1. In the left navigation pane, select the Procurement Analysis dashboard.
+
+2. Select the dashboard tile **Total Invoice by Country/Region**. It opens to the "Spend Overview" page of the “Procurement Analysis Sample” report.
 
 ![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement2.png)
 
-Notice:
+Notice a few things:
 
 -   In the **Total Invoice by Month and Category** line chart: The **Direct** category has pretty consistent spending, **Logistics** has a peak in December, and **Other** has a spike in February.
 -   In the **Total Invoice by Country/Region** map: Most of our spending is in the USA.

@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Human Resources sample for Power BI: Take a tour"
+   pageTitle="Human Resources sample: Take a tour"
    description="Human Resources sample for Power BI: Take a tour"
    services="powerbi" 
    documentationCenter="" 
