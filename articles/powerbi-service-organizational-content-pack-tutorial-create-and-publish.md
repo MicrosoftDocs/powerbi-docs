@@ -25,7 +25,7 @@ In this tutorial we'll create an organizational content pack, restrict access to
 
 Imagine you're the Release Manager at Contoso and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share with the other employees managing the launch. You could [share your dashboard](powerbi-service-share-unshare-dashboard.md), but then your coworkers will have read-only permissions for the dashboard.  Instead, you want your coworkers to be able to make their own personalized version of your dashboard and reports. 
 
-Want to follow along? Go to **[Get Data > Samples > Opportunity Analysis Sample](https://powerbi.com/groups/me/getdata/samples/opportunity-analysis-sample)** > **Connect** to get your own copy of the sample. 
+Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Opportunity Analysis Sample** > **Connect** to get your own copy of the sample. 
 
 1.  In the left navigation pane, select the **Opportunity Analysis Sample** dashboard.
 
