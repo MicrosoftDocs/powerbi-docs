@@ -18,7 +18,7 @@
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
 
-## January 2016 Update (2.30.4246.181)
+## January 2016 Update (2.31.4280.361)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
@@ -51,9 +51,7 @@ Want more information about these updates? Take a look at the [blog post](http:/
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="500" height="281" src="https://www.youtube.com/watch?v=ek8dwi33-24" frameborder="0" allowfullscreen></iframe>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ek8dwi33-24" frameborder="0" allowfullscreen></iframe>
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
