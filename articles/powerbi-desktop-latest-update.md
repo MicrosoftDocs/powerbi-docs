@@ -26,18 +26,17 @@ Ring in the new year with another collection of improvements and enhancements to
 
 ### Report View:
 
--   See data behind a visual
--   You can now add borders to a visual
+-   Add borders to a visual
 -   Add an image background to a visual
 
 
 ### Data Connectivity:
 
+-   DirectQuery: you can now create measures when using DirectQuery mode
 -   You can now refresh data for individual tables from the Field List (in **Report** view and **Data** view), rather than (and in addition to) just being able to **refresh all** from the ribbon
 -   General Availability (GA) for SQL Server Analysis Services Multidimensional models Exploration mode (no longer a preview feature)
 -   Enhancements to hierarchy support
 -   General Availability (GA) for the SAP HANA connector (no longer a preview feature)
--   DirectQuery: you can now create measures when using DirectQuery mode
 -   Ability to append multiple tables within a single Append operation
 -   Option to disable data previews to download in the background (performance optimization)
 
@@ -45,6 +44,7 @@ Ring in the new year with another collection of improvements and enhancements to
 
 -   Support for Internet Explorer 9 (IE9) browser
 -   Performance improvements for report rendering, cross-highlighting, and otherwise
+-   Improvements to R integration in Power BI Desktop
 
 
 Want more information about these updates? Take a look at the [blog post](http://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), where you can get more detailed information about each of these new features.
