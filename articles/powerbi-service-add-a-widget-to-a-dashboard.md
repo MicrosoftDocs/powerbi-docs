@@ -108,6 +108,17 @@ When you add a video widget to your dashboard, the video plays right on your das
 
 ## Edit a widget
 
+To make changes to a widget...
 
+1. Select the ellipses in the top right corner of the tile.
+
+  ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi_ellipses.png)
+
+2. Select the edit icon to re-open the **Tile details** pane and make changes.
+
+  ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-edit.png)
+
+
+## See also  
 
 More about [creating Power BI dashboards](powerbi-service-create-a-dashboard.md).
