@@ -102,11 +102,9 @@ When you add a video widget to your dashboard, the video plays right on your das
 
   - to display a title above the video tile, select *Display title and subtitle* and type a title and/or subtitle.
 
-  - enter the embed code. In this example we're using Twitter.
+  - enter the embed code. In this example we're adding a Twitter feed.
 
   - Select **Apply**.  On the dashboard, resize and move the web content tile as needed.
-
-    ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-web-added.png)
 
 ## Edit a widget
 
