@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="02/01/2016"
    ms.author="maggies"/>
 
 # Get started with the iPhone app (Power BI for iOS)
@@ -48,9 +48,9 @@ Go to [Power BI to sign up](http://go.microsoft.com/fwlink/?LinkID=513879) for t
 2.  To view your Power BI dashboards, tap **Power BI**.  
    To view your SQL Server mobile reports and KPIs, tap **Reporting Services**.
 
-    ![](media/powerbi-mobile-iphone-app-get-started/PBI_iPhone_GetStartedSm.png)
+    ![](media/powerbi-mobile-iphone-app-get-started/pbi_ipad_getstarted.png)
 
-    >Tip: When you're in the app, tap the options icon ![](media/powerbi-mobile-iphone-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two. 
+    >**Tip**: When you're in the app, tap the options icon ![](media/powerbi-mobile-iphone-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two. 
 
 ## Start with samples
 
@@ -58,7 +58,7 @@ Even without signing up, you can play with the Power BI samples. After you downl
 
 -   Tap **Samples**, then pick a role and explore the sample dashboard for that role.  
 
-    ![](media/powerbi-mobile-iphone-app-get-started/PBI_iPh_Menu.png)
+    ![](media/powerbi-mobile-iphone-app-get-started/pbi_iph_sample.png)
 
 
 ## What next?

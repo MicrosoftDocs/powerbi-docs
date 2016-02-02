@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/2016"
+   ms.date="02/01/2016"
    ms.author="maggies"/>
 
 # View SQL Server mobile reports and KPIs in the iPad app (Power BI for iOS)  
 
 The iPad app for Microsoft Power BI for iOS offers live, touch-enabled mobile access to your important on-premises business information. 
 
-![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_SSMRP_Portal.png)
+![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_ssmrp_homeb.png)
 
 Create SQL Server mobile reports for your on-premises data with the SQL Server Mobile Report Publisher, and publish them to your Reporting Services web portal. You can also create KPIs, right on the web portal. Then view the mobile reports and KPIs on the iPad app for Power BI. Read about [creating and publishing SQL Server mobile reports](https://msdn.microsoft.com/library/mt652547.aspx). 
 
@@ -33,19 +33,19 @@ Create SQL Server mobile reports for your on-premises data with the SQL Server M
   
 2.  To view your SQL Server mobile reports and KPIs, tap **Reporting Services**.
 
-    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_GetStartedSm.png)
+    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_getstarted.png)
 
 3. Tap the options icon ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Connect**.
 
-    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_SSMRP_ConnectCrop.png)
+    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_connectsvr.png)
 
 4. Give the server a name, and fill in the server address and your user name and password, in this format:
 
-    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_SSMRP_ConnectContosoGuy.png)
+    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_connectsvrdialog.png)
 
 5.  Now you see the server in the left navigation bar.
 
-    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_SSMRP_LeftNavBiggr.png)
+    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_contosoconnexn.png)
 
 >**Tip**: Tap the options icon ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) anytime to go between your SQL Server mobile reports and your dashboards in the Power BI service. 
 
