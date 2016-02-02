@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="02/01/2016"
    ms.author="maggies"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
@@ -33,7 +33,7 @@ In the iPhone app for Microsoft Power BI for iOS, you see and can interact with 
 
 2.  From the navigation pane, swipe right to see your dashboards.
 
-     ![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPh_Nav.png)
+     ![](media/powerbi-mobile-dashboards-in-the-iphone-app/pbi_iph_mywkspace.png)
 
 3.  Tap a dashboard to open it.  
 

@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2015"
+   ms.date="02/01/2016"
    ms.author="maggies"/>
 
 # Tiles in the iPhone app (Power BI for iOS)
 
 Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You create tiles on a dashboard in Power BI. Then you see and interact with the tiles in your iPhone app for Microsoft Power BI for iOS.
 
->**NOTE**: You can also [create picture tiles with your iPhone app](powerbi-mobile-picture-tiles-in-the-iphone-app) and save them to your dashboards.
+>**Note**: You can also [create picture tiles with your iPhone app](powerbi-mobile-picture-tiles-in-the-iphone-app) and save them to your dashboards.
 
 ## Interact with tiles on a dashboard
 
