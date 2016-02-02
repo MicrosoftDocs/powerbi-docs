@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"
+   ms.date="02/02/2016"
    ms.author="mihart"/>
 
 # Dashboards in Power BI
@@ -36,7 +36,7 @@ Learn how to [create a new dashboard](powerbi-service-create-a-dashboard.md) and
 
 ### Add tiles to a dashboard
 
-[Get data](powerbi-service-get-data.md) and [add tiles](powerbi-service-dashboard-tiles.md) and [images](powerbi-service-add-an-image-to-a-dashboard.md) to your dashboard  from reports, Q&A, SSRS, Excel, and more.
+[Get data](powerbi-service-get-data.md) and [add tiles](powerbi-service-dashboard-tiles.md) and [images, videos, web code, and text boxes](powerbi-service-add-a-widget-to-a-dashboard.md) to your dashboard from reports, Q&A, SSRS, Excel, and more.
 
 ### Share a dashboard
 

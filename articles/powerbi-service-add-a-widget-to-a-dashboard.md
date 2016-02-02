@@ -21,7 +21,7 @@
 
 ## Add a widget
 
-The **Add widget** control lets you add an image, text box, video, or web code to your dashboard.
+The **Add widget** control lets you directly add an image, text box, video, or web code to your dashboard.
 
 1. Select **Add widget** from the menu bar.
 
