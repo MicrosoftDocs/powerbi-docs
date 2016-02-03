@@ -126,7 +126,7 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 
 ## Understanding the embed code status column
 
-When viewing the **Manage embed codes** page for your **Publish to web** embed codes, a status column is provided. Embed codes are active by default, which means the report is available for Internet users to view and interact with. However, if the content of the report violates the [Power BI Terms of Service](https://powerbi.microsoft.com/en-us/terms-of-service), that report or visual may be blocked. In this case, the embed code status will say *blocked*.  
+When viewing the **Manage embed codes** page for your **Publish to web** embed codes, a status column is provided. Embed codes are active by default, which means the report is available for Internet users to view and interact with. However, if the content of the report violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service), that report or visual may be blocked. In this case, the embed code status will say *blocked*.  
 
 ## How to report a concern with Publish to web content
 
