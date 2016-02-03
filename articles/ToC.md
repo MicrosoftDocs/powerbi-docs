@@ -166,6 +166,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Share your work",
           "articles": [
             "powerbi-service-how-should-i-share-my-dashboard",
+            "powerbi-service-publish-to-web",
             "powerbi-service-groups",
             "powerbi-service-create-a-group-in-power-bi",
             "powerbi-service-connect-to-files-on-your-groups-onedrive-for-business",
@@ -179,7 +180,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-share-unshare-dashboard",
             "powerbi-service-share-dashboard-that-links-to-excel"
           ],
-          "numberOfFeaturedArticles": 7
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Reports",
