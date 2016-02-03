@@ -29,7 +29,9 @@ With Power BI **Publish to web** you can easily embed interactive Power BI visua
 You can watch how this feature works in the following *short video*. Then, follow the steps below to try it yourself.
 
 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
+
 
 
 The following steps describe how to use **Publish to web**.
