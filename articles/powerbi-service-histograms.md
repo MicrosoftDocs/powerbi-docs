@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Histograms"
    description="Histograms"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="davidiseminger" 
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/15/2015"
-   ms.author="mihart"/>
+   ms.author="davidi"/>
 
 # Histograms  
 
