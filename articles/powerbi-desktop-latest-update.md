@@ -51,7 +51,9 @@ Want more information about these updates? Take a look at the [blog post](http:/
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ek8dwi33-24" frameborder="0" allowfullscreen></iframe>
+
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
