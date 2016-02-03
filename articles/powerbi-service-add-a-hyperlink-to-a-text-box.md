@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2016"
+   ms.date="02/02/2016"
    ms.author="mihart"/>
 
 # Add a hyperlink to a Text Box in a report
 
-Text boxes can be added to reports, pinned to dashboards from reports, and added directly to dashboards. **This topic covers text boxes in reports. **
+Text boxes can be added to reports, pinned to dashboards from reports, and added directly to dashboards. **This topic covers text boxes in reports.**
 
->**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). For information on adding text boxes to your **dashboard**, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). 
+>**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). For information on adding text boxes to your **dashboard**, see [Dashboard widgets ](powerbi-service-add-a-widget-to-a-dashboard.md). 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
