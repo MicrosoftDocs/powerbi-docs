@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/29/2015"
+   ms.date="02/02/2016"
    ms.author="mihart"/>
 
 # Tutorial: Doughnut charts in Power BI
@@ -37,11 +37,11 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \>
 
  2.  Convert to a Doughnut chart. If Last Year Sales is not in the **Values** area, drag it there.
 
-    ![](media/powerbi-service-tutorial-doughnut-charts/convertDonut.png)
+        ![](media/powerbi-service-tutorial-doughnut-charts/convertDonut.png)
 
  3.  Select **Item** \> **Category** to add it to the Legend area. 
 
-    ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
+        ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
 
 ## Tips and Tricks for Doughnut Charts
 

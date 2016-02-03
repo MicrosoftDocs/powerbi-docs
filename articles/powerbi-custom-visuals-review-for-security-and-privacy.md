@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="12/17/2015"
-   ms.author="mihart"/>
+   ms.author="derrickv"/>
 
 # Review custom visuals for security and privacy  
 
