@@ -26,6 +26,12 @@ With Power BI **Publish to web** you can easily embed interactive Power BI visua
 
 **Publish to web** is available on reports in your personal workspace that you can edit.  You cannot use Publish to web with reports that were shared with you. Please review the **Warning** earlier in this article before using Publish to web.
 
+You can watch how this feature works in the following *short video*. Then, follow the steps below to try it yourself.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
+
+
 The following steps describe how to use **Publish to web**.
 
 
@@ -144,4 +150,4 @@ You need to be a Microsoft Power BI user to use **Publish to web**. Power BI use
 
 When you create an embed code using **Publish to web**, the report is made visible to users on the Internet. It’s publicly available and may be featured in a public gallery (no gallery is in place during our preview). As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This approach ensures the report can be viewed by thousands of concurrent users without any impact on performance.  
 
-The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report viewed by your users. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings. 
+The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report viewed by your users. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings.
