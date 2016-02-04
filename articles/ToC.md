@@ -128,6 +128,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
             "powerbi-pin-a-tile-from-one-dashboard-to-another",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-excel",
+            "powerbi-publisher-for-excel",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
             "powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report",
             "powerbi-service-edit-a-tile-in-a-dashboard",
@@ -261,8 +262,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-reduce-the-size-of-an-excel-workbook",
             "powerbi-service-excel-data",
             "powerbi-service-explore-a-dataset",
-            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi",
-            "powerbi-publisher-for-excel"
+            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
           ],
           "numberOfFeaturedArticles": 5
         },
