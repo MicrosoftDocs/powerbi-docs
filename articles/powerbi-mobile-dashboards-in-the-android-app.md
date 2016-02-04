@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/25/2016"
+   ms.date="02/03/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Android app for Power BI  
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
 
-Power BI brings together data from different types of data sources &#151; for example, SaaS such as Salesforce, organizational content packs, databases, and Excel workbooks.
+Power BI brings together data from different types of data sources &#151; for example, services such as Salesforce, organizational content packs, databases, and Excel workbooks.
 
 You [create and connect to dashboards in the Power BI service](powerbi-service-dashboards.md). Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md), you can explore these same dashboards. Dashboards refresh in real time, automatically, so you don't need to manually refresh them.
 
