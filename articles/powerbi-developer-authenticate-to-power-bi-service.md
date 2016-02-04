@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2016"
+   ms.date="02/03/2016"
    ms.author="derrickv"/>
 
 # Authenticate to Power BI service
@@ -35,7 +35,7 @@ To learn how to register and authenticate a Power BI app:
 
 - **Power BI web app**: See [Register a web app](powerbi-developer-register-a-web-app.md) and [Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md).
 
-- To learn how to use Azure authentication on different platforms: The [Azure Authentication Libraries](https://msdn.microsoft.com/library/azure/dn151135.aspx) are available on different platforms to help developers easily authenticate users to cloud or on premise Active Directory (AD) to obtain access tokens for securing API calls. This topic contains a roadmap to the authentication libraries available on different platforms and to helpful resources for each, including source code and samples.
+- To learn how to use Azure authentication on different platforms: The [Azure Authentication Libraries](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) are available on different platforms to help developers easily authenticate users to cloud or on premise Active Directory (AD) to obtain access tokens for securing API calls. This topic contains a roadmap to the authentication libraries available on different platforms and to helpful resources for each, including source code and samples.
 
 <a name="clientID"/>
 ## Azure app client ID

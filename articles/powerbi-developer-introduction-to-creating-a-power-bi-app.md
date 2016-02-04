@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2016"
+   ms.date="02/03/2016"
    ms.author="derrickv"/>
 
 # Introduction to creating a Power BI app
@@ -28,7 +28,7 @@ With the Power BI REST API, you can create your own business solution to push da
 | [Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) | Power BI apps are integrated with  Azure Active Directory (Azure AD) to provide secure sign in and authorization for your app.|
 |[Register your client app](powerbi-developer-register-a-client-app.md) or [Register your web app](powerbi-developer-register-a-web-app.md) | To allow your application access to the Power BI REST API, you need to register your application with Azure Active Directory.|
 |[Authenticate your app](powerbi-developer-authenticate-to-power-bi-service.md)  | Power BI client apps use Active Directory (AAD) to authenticate users and protect applications. Learn how to [Authenticate a client app](powerbi-developer-authenticate-a-client-app.md) or [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md).|
-|[Call Power BI REST operations](powerbi-developer-rest-api-reference.md)  | With the Power BI REST API, you can: Create and get datasets, get and update table schemas, and add and delete rows. <br/><br/> **Note** You can call any Power BI REST operation on a [Group](https://msdn.microsoft.com/en-us/library/mt243842.aspx).|
+|[Call Power BI REST operations](https://msdn.microsoft.com/en-US/library/mt147898.aspx)  | With the Power BI REST API, you can: Create and get datasets, get and update table schemas, and add and delete rows. <br/><br/> **Note** You can call any Power BI REST operation on a [Group](https://msdn.microsoft.com/en-us/library/mt243842.aspx).|
 
 <a name="QuickStarts"/>
 ### Quick starts to call each Power BI REST operation
