@@ -128,6 +128,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
             "powerbi-pin-a-tile-from-one-dashboard-to-another",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-excel",
+            "powerbi-publisher-for-excel",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
             "powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report",
             "powerbi-service-add-a-widget-to-a-dashboard",
@@ -168,6 +169,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Share your work",
           "articles": [
             "powerbi-service-how-should-i-share-my-dashboard",
+            "powerbi-service-publish-to-web",
             "powerbi-service-groups",
             "powerbi-service-create-a-group-in-power-bi",
             "powerbi-service-connect-to-files-on-your-groups-onedrive-for-business",
@@ -181,7 +183,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-share-unshare-dashboard",
             "powerbi-service-share-dashboard-that-links-to-excel"
           ],
-          "numberOfFeaturedArticles": 7
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Reports",
@@ -261,8 +263,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-reduce-the-size-of-an-excel-workbook",
             "powerbi-service-excel-data",
             "powerbi-service-explore-a-dataset",
-            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi",
-            "powerbi-publisher-for-excel"
+            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
           ],
           "numberOfFeaturedArticles": 5
         },

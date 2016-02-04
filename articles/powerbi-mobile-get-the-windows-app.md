@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="02/02/2016"
    ms.author="maggies"/>
 
 # Get the Power BI for Windows app  
@@ -23,7 +23,7 @@
 [Download the Power BI for Windows app](http://go.microsoft.com/fwlink/?LinkId=526478) from the Windows Store.
 
 ## Supported devices  
-The Microsoft Power BI for Windows app runs on all Windows 8.1 and Windows 10 devices. It doesn't run on Windows phones or on Windows RT devices.
+The Microsoft Power BI for Windows app runs on all Windows 10 devices, including Windows 10 phones. It doesn't run on Windows 8 devices or phones, or Windows RT devices.
 
 ## Sign up and sign in  
 If you haven't signed up yet, go to [Power BI](http://powerbi.com) to sign up for a place to create and store dashboards to bring your data together. Then sign in to Power BI from your Windows device to see your own dashboards from anywhere.

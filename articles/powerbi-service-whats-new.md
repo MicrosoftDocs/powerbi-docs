@@ -29,10 +29,10 @@ Check this page for known issues and recently-released features in Power BI Serv
 
 Updates to reports and visualizations:
 
-- [Add borders to visuals](https://powerbi.microsoft.com/en-us/blog/power-bi-updates-this-week-new-report-authoring-capabilities/#borders)
+- [Add borders to visuals](https://powerbi.microsoft.com/blog/power-bi-updates-this-week-new-report-authoring-capabilities/#borders)
 
 - [Add background images to pages and Cartesian chart plot areas](
-https://powerbi.microsoft.com/en-us/blog/power-bi-updates-this-week-new-report-authoring-capabilities/#background)
+https://powerbi.microsoft.com/blog/power-bi-updates-this-week-new-report-authoring-capabilities/#background)
 
 Performance Improvements for report rendering, cross-highlight, etc.
 

@@ -18,15 +18,21 @@
 
 # Power BI webinars
 
-   The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** the webinar.
+The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** or **watch** the webinar.
 
 ## Upcoming webinars
 
-Nothing on the calendar yet. Check back soon!
-
+[02/05/16 - What’s New and Exciting in Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-04-PowerBIWhatsNew-Registration.html)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
+
+### Latest webinars
+Watch our latest webinars on-demand.
+
+[Power BI for Developers - January 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-01Jan-28-PowerBI-Developers-Registration.html)
+
+[What’s New and Exciting in Power BI - December 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-17Dec15-PowerBIWhatsNew-Registration.html)
 
 ###  Introductory webinars
 [What’s New and Exciting in Power BI - December 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-17Dec15-PowerBIWhatsNew-Registration.html)
@@ -44,6 +50,7 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 [Power BI for the BI Pro](http://w.on24.com/r.htm?e=962016&s=1&k=C884EE5DDACA36C140C527A56281C23C&partnerref=PBIcom)
 
 ### Intermediate webinars
+[Power BI for Developers - January 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-01Jan-28-PowerBI-Developers-Registration.html)
 
 [Power BI Technical Overview - September 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-09Sep-16-PowerBITechnicalOverview-Register.html)
 
