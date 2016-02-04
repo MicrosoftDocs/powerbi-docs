@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2016"
+   ms.date="02/03/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -127,7 +127,7 @@ Learn more about Power BI security, privacy and compliance in this [Power BI Sec
 
 Yes. Government and academic pricing is offered through the MOSP/Direct, EA and Open licensing programs. Government pricing is also available in syndication. Non-profit pricing is only available in MOSP/Direct. Power BI is not available for the US Government Community Cloud (GCC).
 
-**Note:** Work email addresses ending in **.gov** aren’t currently supported.
+**Note:** Work email addresses ending in **.edu** and **.org** are supported. Those ending in **.gov** aren’t currently supported.
 
 ## What is happening to the Power BI for Office 365 experience?
 

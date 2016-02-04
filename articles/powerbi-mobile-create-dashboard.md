@@ -14,21 +14,28 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/02/2016"
+   ms.date="02/03/2016"
    ms.author="maggies"/>
 # Dashboards for mobile Power BI
 
-You can get all of your Power BI dashboards right on your mobile device – iPhone, iPad, Android phone, and Windows 10 devices.
+Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
 
-To get more dashboards on your mobile device, start from your computer. Open a web browser, sign in to Power BI at [https://www.powerbi.com](https://www.powerbi.com), and follow the instructions for [creating a Power BI dashboard](powerbi-service-create-a-dashboard.md).
+Power BI brings together data from different data sources &#151; for example, services such as Salesforce, organizational content packs, databases, and Excel workbooks.
 
+![](media/powerbi-mobile-create-dashboard/pbi_svc_dash.png)
 
-## The Power BI mobile apps
+To get more dashboards on your mobile device, start from your computer. Open a web browser, sign up for Power BI at [https://www.powerbi.com](https://www.powerbi.com), and follow the instructions for [creating a Power BI dashboard](powerbi-service-create-a-dashboard.md) or connecting to [content packs for a variety of services](powerbi-content-packs-services.md).
 
-[iPad app for Power BI for iOS](powerbi-mobile-ipad-app-get-started.md)
+## View dashboards in the Power BI mobile apps
 
-[iPhone app for Power BI for iOS](powerbi-mobile-iphone-app-get-started.md)
+Then in the Power BI mobile apps, explore these same dashboards. Dashboards refresh in real time, automatically, so no need to manually refresh them.
 
-[Power BI mobile app for Windows 10 devices](powerbi-mobile-win10phone-app-get-started.md)
+![](media/powerbi-mobile-create-dashboard/pbi_dash_mobile.png)
 
-[Power BI app for Android phones](powerbi-mobile-android-app-get-started.md)
+[Dashboards in the iPad app for Power BI for iOS](powerbi-mobile-dashboards-on-the-ipad-app.md)
+
+[Dashboards in the iPhone app for Power BI for iOS](powerbi-mobile-dashboards-in-the-iphone-app.md)
+
+[Dashboards in the Power BI mobile app for Windows 10 devices](powerbi-mobile-dashboards-in-the-win10phone-app.md)
+
+[Dashboards in the Power BI app for Android phones](powerbi-mobile-dashboards-in-the-android-app.md)

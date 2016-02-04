@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="02/03/2016"
    ms.author="maggies"/>
 
 # Create picture tiles with your iPhone app (Power BI for iOS)
@@ -31,11 +31,11 @@ You can add any picture on your iPhone to any dashboard you own. Power BI adds t
 
 3.  Tap **Add a picture tile**.
 
-    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashMenu.png)
+    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/pbi_iph_dash_options.png)
 
 4.  Select a picture from your camera roll, or take a new picture.
 
-    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_PicMenu.png)
+    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_PicMenu_nofave.png)
 
 5.  Type a title, if you want one, and tap **Add**.
 
