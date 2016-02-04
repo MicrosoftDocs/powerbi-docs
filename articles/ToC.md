@@ -130,6 +130,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-pin-a-tile-to-a-dashboard-from-excel",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
             "powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report",
+            "powerbi-service-add-a-widget-to-a-dashboard",
             "powerbi-service-edit-a-tile-in-a-dashboard",
             "powerbi-service-tips-for-designing-a-great-dashboard",
             "powerbi-service-auto-insights",
