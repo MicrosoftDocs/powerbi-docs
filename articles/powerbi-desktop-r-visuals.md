@@ -52,9 +52,9 @@ When those steps are complete, you’re ready to begin creating R visuals.
 
 2.   When you add an R Visual to a report, Power BI Desktop does the following:
 
-        a) A placeholder R visual image appears on the report canvas.
+   a) A placeholder R visual image appears on the report canvas.
 
-        b) The **R script editor** appears along the bottom of the center pane.
+   b) The **R script editor** appears along the bottom of the center pane.
 
   ![](media/powerbi-desktop-r-visuals/r-visuals-4.png)
 
