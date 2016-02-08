@@ -502,7 +502,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 5
         },
         {
-          "sectionTitle": "Power BI app for Windows 10 phones",
+          "sectionTitle": "Power BI app for Windows 10 devices",
           "articles": [
             "powerbi-mobile-dashboards-in-the-win10phone-app",
             "powerbi-mobile-tiles-in-the-win10phone-app",
