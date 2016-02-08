@@ -44,7 +44,7 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 
     *fileEncoding = "UTF-8-BOM",*
 
-    Then open the input file in Notepad, select **File > Save As...** and from the **Encoding** drop-down in the **Save As** dialog, and select **UTF-8**.
+   Then open the input file in Notepad, select **File > Save As...** and from the **Encoding** drop-down in the **Save As** dialog, and select **UTF-8**.
 
 
 #### Run your R Script and Import Data
