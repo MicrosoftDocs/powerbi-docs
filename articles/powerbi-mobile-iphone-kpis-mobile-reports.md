@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/01/2016"
+   ms.date="02/08/2016"
    ms.author="maggies"/>
 
 # View SQL Server mobile reports and KPIs in the iPhone app (Power BI for iOS)  
@@ -42,6 +42,8 @@ Create SQL Server mobile reports for your on-premises data with the SQL Server M
 4. Give the server a name, and fill in the server address and your user name and password, in this format:
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_ipad_connectsvrdialog.png)
+
+    >**Note**: Don't include **http** or **https** in front of the connection string. Just *servername*.com/reports_preview.
 
 5.  Now you see the server in the left navigation bar.
 
