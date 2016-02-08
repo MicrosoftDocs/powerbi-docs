@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/28/2016"
    ms.author="davidi"/>
 
 # Data View in Power BI Desktop  
@@ -27,14 +27,14 @@ Let’s take a closer look.
 
 ![](media/powerbi-desktop-data-view/DataView_FullScreen.png)
 
-**A.** Data View icon – Click to enter Data View.
+**1.** Data View icon – Click to enter Data View.
 
-**B.** Data Grid – Shows the selected table and all columns and rows in it. Columns hidden from Report View are greyed out. You can  right-click on a column for options.
+**2.** Data Grid – Shows the selected table and all columns and rows in it. Columns hidden from Report View are greyed out. You can  right-click on a column for options.
 
-**C.** Modeling ribbon – Manage relationships, create calculations, change data type, format, data category for a column.
+**3.** Modeling ribbon – Manage relationships, create calculations, change data type, format, data category for a column.
 
-**D.** Formula bar – Enter DAX formulas for Measures and Calculated columns.
+**4.** Formula bar – Enter DAX formulas for Measures and Calculated columns.
 
-**E.** Search – Search for a table or column in your model.
+**5.** Search – Search for a table or column in your model.
 
-**F.** Fields list – Select a table or column to view in the data grid.
+**6.** Fields list – Select a table or column to view in the data grid.

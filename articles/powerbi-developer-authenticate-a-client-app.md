@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/17/2015"
+   ms.date="02/03/2016"
    ms.author="derrickv"/>
 
 # Authenticate a client app
@@ -48,7 +48,7 @@ To authenticate a Power BI client app and perform a REST web request, you need t
 6. **Assign the dataset Uri for the Power BI API datasets**	- The datasets Uri identifies the Power BI API datasets resource.
 	- In your client app code, assign the **datasetsUri** to "https://api.powerbi.com/v1.0/myorg/datasets".
 
-To make a data request to the Power BI REST service, you need to supply an access token. In a .NET client app, you use the [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/library/azure/jj573266.aspx) to get an access token. Here’s the process. Below is an example **AccessToken()** method.
+To make a data request to the Power BI REST service, you need to supply an access token. In a .NET client app, you use the [Azure AD Authentication Library for .NET nuget package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) to get an access token. Here’s the process. Below is an example **AccessToken()** method.
 
 If you do not have Windows Azure Authentication Library (ADAL), see [How to add Azure Active Directory Authentication Library](#Library).
 
@@ -208,8 +208,8 @@ In a .NET client app, you use **AuthenticationContext** in the **Active Director
 4. Choose **Active Directory Authentication Library** in the list of packages, and click **Install**.
 
 ## Related topics
-- [Azure AD Authentication Library for .NET](https://msdn.microsoft.com/library/azure/jj573266.aspx)
+- [Azure AD Authentication Library for .NET nuget package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - [Active Directory Authentication Library (ADAL) v1 for .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
 - [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx)
 - [Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
-- [Authentication Scenarios for Azure AD](https://msdn.microsoft.com/library/azure/dn499820.aspx)
+- [Authentication Scenarios for Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/)

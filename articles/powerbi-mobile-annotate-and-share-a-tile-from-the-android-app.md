@@ -1,5 +1,5 @@
-﻿<properties 
-   pageTitle="Annotate and share a tile from the Android app for Power BI"
+<properties 
+   pageTitle="Annotate and share a tile from the Android app"
    description="Annotate and share a tile from the Android app for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2015"
+   ms.date="01/26/2016"
    ms.author="maggies"/>
 # Annotate and share a tile from the Android app for Power BI
 
@@ -22,7 +22,7 @@ When you share a snapshot of a tile from the [Android app for Microsoft Power B
 
 You can add annotations — lines, comments, or stickers — to a tile before you share a snapshot.
 
-![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/PBI_Andr_AnnotatedSm.png)
+![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/pbi_and_annotate.png)
 
 1. Open a [dashboard in the Android app](powerbi-mobile-dashboards-in-the-android-app.md) for Power BI.
 
@@ -42,9 +42,9 @@ You can add annotations — lines, comments, or stickers — to a tile before yo
 
 	-   Tap the AA to type comments, then tap **Done**.
 
-5. After annotating, tap **Share **in the upper-right corner, and send, using any sharing app you have on your Android phone.
+5. After annotating, tap **Share** in the upper-right corner and send, using any sharing app you have on your Android phone.
 
-### See Also
+### See also
 
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play
 

@@ -1,4 +1,4 @@
-﻿<properties 
+<properties 
    pageTitle="Supported browsers for Power BI"
    description="Supported browsers for Power BI"
    services="powerbi" 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/15/2015"
+   ms.date="01/26/2016"
    ms.author="maggies"/>
 
 # Supported browsers for Power BI  
@@ -24,8 +24,6 @@ We support Power BI in these browsers:
 -   Microsoft Edge
 
 -   Internet Explorer 11
-
--   Internet Explorer 10
 
 -   Chrome desktop latest version
 

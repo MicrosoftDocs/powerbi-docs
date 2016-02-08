@@ -14,10 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="01/22/2016"
    ms.author="mihart"/>
 
 # Drill down in a visualization in Power BI
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
 
 1.  In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md)or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). Drill requires a visualization with a hierarchy. 
 

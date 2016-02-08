@@ -128,7 +128,10 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
             "powerbi-pin-a-tile-from-one-dashboard-to-another",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-excel",
+            "powerbi-publisher-for-excel",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box",
+            "powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report",
+            "powerbi-service-add-a-widget-to-a-dashboard",
             "powerbi-service-edit-a-tile-in-a-dashboard",
             "powerbi-service-tips-for-designing-a-great-dashboard",
             "powerbi-service-auto-insights",
@@ -138,6 +141,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-dash-and-reports-fullscreen",
             "powerbi-service-display-dash-in-focus-mode",
             "powerbi-service-display-tile-in-full-screen-mode",
+            "powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
             "powerbi-service-add-an-image-to-a-dashboard",
             "powerbi-service-create-a-big-number-tile-for-a-dashboard",
@@ -145,7 +149,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-qr-code-for-tile",
             "powerbi-service-delete-or-remove-a-dashboard"
           ],
-          "numberOfFeaturedArticles": 9
+          "numberOfFeaturedArticles": 10
         },
         {
           "sectionTitle": "Ask questions of your data",
@@ -165,6 +169,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Share your work",
           "articles": [
             "powerbi-service-how-should-i-share-my-dashboard",
+            "powerbi-service-publish-to-web",
             "powerbi-service-groups",
             "powerbi-service-create-a-group-in-power-bi",
             "powerbi-service-connect-to-files-on-your-groups-onedrive-for-business",
@@ -178,7 +183,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-share-unshare-dashboard",
             "powerbi-service-share-dashboard-that-links-to-excel"
           ],
-          "numberOfFeaturedArticles": 7
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Reports",
@@ -190,6 +195,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-save-a-report",
             "powerbi-service-about-filters-and-highlighting-in-reports",
             "powerbi-service-how-to-use-a-report-filter",
+            "powerbi-service-visual-interactions",
             "powerbi-service-converting-your-reports-to-the-new-report-editor",
             "powerbi-service-open-a-report-in-reading-view",
             "powerbi-service-go-from-reading-view-to-editing-view",
@@ -236,6 +242,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-tutorial-customize-visualization-title-background-and-legend",
             "powerbi-service-tutorial-customize-x-axis-and-y-axis-properties",
             "powerbi-service-tutorial-doughnut-charts",
+            "powerbi-service-tutorial-enhancedscatter",
             "powerbi-service-tutorial-filled-maps-choropleths",
             "powerbi-service-tutorial-funnel-charts",
             "powerbi-service-tutorial-radial-gauge-charts",
@@ -422,7 +429,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-pyramid-analytics"
           ],
           "numberOfFeaturedArticles": 5
-        }
+        },
+        {
+          "sectionTitle": "Troubleshooting",
+          "articles": [
+            "powerbi-desktop-access-database-errors",
+            "powerbi-desktop-error-launching-desktop"
+          ],
+          "numberOfFeaturedArticles": 2
+        }   
       ]
     },
     {
@@ -438,8 +453,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-ipad-app-get-started",
             "powerbi-mobile-android-app-get-started",
             "powerbi-mobile-win10phone-app-get-started",
-            "powerbi-mobile-get-the-windows-app",
-            "powerbi-service-windows-app-get-started",
             "powerbi-mobile-create-dashboard"
           ],
           "numberOfFeaturedArticles": 9
@@ -450,7 +463,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-ipad-kpis-mobile-reports",
             "powerbi-mobile-dashboards-on-the-ipad-app",
             "powerbi-mobile-tiles-in-the-ipad-app",
-            "powerbi-mobile-favorites-on-the-ipad-app",
             "powerbi-mobile-share-dashboards-from-the-ipad-app",
             "powerbi-mobile-reports-on-the-ipad-app",
             "powerbi-service-mobile-groups-in-the-ipad-app",
@@ -467,7 +479,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-tiles-in-the-iphone-app",
             "powerbi-mobile-report-page-tiles-in-the-iphone-app",
             "powerbi-mobile-dashboard-smart-order-in-the-iphone-app",
-            "powerbi-mobile-favorites-in-the-iphone-app",
             "powerbi-mobile-share-a-dashboard-from-the-iphone-app",
             "powerbi-mobile-set-data-alerts-in-the-iphone-app",
             "powerbi-mobile-groups-in-the-iphone-app-groups",
@@ -483,7 +494,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-mobile-dashboards-in-the-android-app",
             "powerbi-mobile-tiles-in-the-android-app",
-            "powerbi-mobile-favorites-in-the-android-app",
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app",
@@ -492,7 +502,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 5
         },
         {
-          "sectionTitle": "Power BI app for Windows 10 phones",
+          "sectionTitle": "Power BI app for Windows 10 devices",
           "articles": [
             "powerbi-mobile-dashboards-in-the-win10phone-app",
             "powerbi-mobile-tiles-in-the-win10phone-app",
@@ -501,19 +511,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-share-a-tile-from-the-win10phone-app",
             "powerbi-mobile-groups-in-the-win10phone-app",
             "powerbi-mobile-adjust-settings-for-the-win10phone-app"
-          ],
-          "numberOfFeaturedArticles": 5
-        },
-        {
-          "sectionTitle": "Power BI app for Windows",
-          "articles": [
-            "powerbi-mobile-dashboards-in-the-windows-app",
-            "powerbi-mobile-tiles-in-the-windows-app",
-            "powerbi-mobile-share-dashboards-from-the-windows-app",
-            "powerbi-mobile-reports-in-the-windows-app",
-            "powerbi-mobile-refresh-the-windows-app",
-            "powerbi-mobile-groups-in-the-windows-app",
-            "powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app"
           ],
           "numberOfFeaturedArticles": 5
         }

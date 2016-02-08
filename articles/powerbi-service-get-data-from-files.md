@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2015"
+   ms.date="01/22/2016"
    ms.author="owend"/>
 # Get data from Excel, Power BI Desktop, and CSV files into Power BI
 
@@ -37,9 +37,9 @@ A comma-separated values (CSV) text file can be a dataset for your Power BI dash
 
 ### Import or connect to files 
 
-You can bring in Excel, Power BI Desktop, and CSV files from your computer, or connect to them on OneDrive for Business or OneDrive Personal.
+You can bring in Excel, Power BI Desktop, and CSV files from your computer, or connect to them on OneDrive for Business, OneDrive Personal, or SharePoint - Team Sites.
 
-**Tip**: When you keep your files on OneDrive, if you make changes, for example, add rows to a table, those changes will appear automatically in dashboards and reports in Power BI created from the data, usually in about an hour.
+**Tip**: When you keep your files on OneDrive or SharePoint Team-Sites, if you make changes, for example, add rows to a table, those changes will appear automatically in dashboards and reports in Power BI created from the data, usually in about an hour.
 
 **Important**: The maximum file size is 250 megabytes for any file you upload to your Power BI site.
 
@@ -52,13 +52,15 @@ You can bring in Excel, Power BI Desktop, and CSV files from your computer, or c
 
     ![](media/powerbi-service-get-data-from-files/PBI_GetFiles.png)
 
-3. ** Depending on where your file is, select one of these options:**
+3.  Depending on where your file is, select one of these options:
 
-    ![](media/powerbi-service-get-data-from-files/PBI_GetFilesLocalOneDriveEtc..png)
+    ![](media/powerbi-service-get-data-from-files/pbi_getfiles_local_od_sp.png)
 
     **Local File:** Browse to the file and select Open. Power BI uploads files on your computer to Power BI. 
 
     **OneDrive - Business** and **OneDrive - Personal**: Browse to the file and select **Connect**. Power BI creates a connection to the file. Any changes to files on OneDrive appear automatically in Power BI.
+
+    **SharePoint Team-Sites**: When prompted, enter a site URL and then click **Connect**.
  
 
 

@@ -14,41 +14,35 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/21/2016"
    ms.author="maggies"/>
 # Considerations when connecting to data in Power BI
 
-Connecting to data sources through Power BI is an easy way to get analytics and insights on data that is important to you. Power BI is designed to work well with a variety of data sources:
+Connecting to data sources through Power BI is an easy way to get analytics and insights on data that is important to you. Power BI is designed to work well with a variety of data sources. More about [getting data into Power BI](powerbi-service-get-data.md).
 
--   Data from [Excel and Power BI Desktop files](powerbi-service-get-data-from-files.md).
+When connecting to data sources through Power BI, there are some things to keep in mind across all sources:
 
--   Content packs with ready-made dashboards, reports, and datasets for services such as Salesforce. Connecting to these services requires an existing subscription to that application. In addition to establishing a data connection, Power BI  provides pre-built dashboards and reports for each of these applications.
+### Have a valid account and credentials ready
 
--   Connectors to databases and other datasets, such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services tabular data](powerbi-sql-server-analysis-services-tabular-data.md).
+Power BI connects to data sources on your behalf. These connections require valid accounts that meet the requirements of the specific data source. Check the individual service content pack pages for information on each of the data sources. More about [connecting to services with content packs](powerbi-content-packs-services.md).
 
-When connecting to data sources through Power BI, there are some things to consider across all sources:
+### Turn off the pop-up blocker in your browser
 
-**Ensure you have a valid account and credentials ready**
+Signing in to some data sources requires completing additional dialog boxes. Make sure you have the pop-up blocker disabled before connecting to the sources, so that you can complete the authentication flow correctly.
 
-Power BI connects to these data sources on your behalf. These connections require valid accounts that meet the requirements of the specific data source. Please check the individual Connect to… pages for information on each of the data sources.
+### Performance depends on the data source
 
-**Disable Pop-up blocker in your browser**
+Data sources have different connection methods and therefore different performance. Performance also depends on the size of your account and data. The more data you have, the longer loading and refreshing may take.
 
-Some of the data source log-in flows require popping up additional dialogs. Please ensure you have pop-ups disabled before connecting to the sources, so that you can complete the authentication flow correctly.
+### Data sources have different refresh schedules
 
-**Performance will depend on the data source**
+The refresh schedule is automatically configured for data sources, but many can be reconfigured if necessary. Select **Schedule Refresh** on a dataset to learn about that specific source. More about [data refresh in Power BI](powerbi-refresh-data.md).
 
-Each of the data sources may have different connection methods and therefore different performance. The performance will also depend on the size of your account and data. The more data you have the longer loading and refreshing may take.
-
-**Each source may have a different refresh schedule**
-
-The refresh schedule is automatically configured for these sources but many of them can be reconfigured if necessary. Select schedule refresh on an imported data set to learn more about the refresh schedule for a specific source.
-
-**Each data source is a little different**
+### Each data source is different
 
 Some of the data sources may have additional requirements, please review the individual Connect to… pages for specific details on the data sources you're trying to connect to.
 
-## See also
+### See also
 
 [Get data](powerbi-service-get-data.md)
 

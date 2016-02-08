@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/28/2016"
    ms.author="davidi"/>
 # Connect to data in Power BI Desktop
 
@@ -22,7 +22,7 @@ With Power BI Desktop you can easily connect to the ever expanding world of data
 
 There are *all sorts* of data sources available in Power BI Desktop. The following image shows how to connect to data, by selecting the **File** ribbon, then **Get Data \> More**.
 
-![](media/powerbi-desktop-connect-to-data/GetDataVid_small.gif)
+![](media/powerbi-desktop-connect-to-data/GetDataVid_smallv2.gif)
 
 For this example, we'll connect to a **Web** data source.
 
@@ -42,7 +42,7 @@ When you select **OK**, the **Query** functionality of Power BI Desktop goes to 
 
 At this point we can edit the query before loading the table, by selecting **Edit** from the bottom of the window, or we can load the table.
 
-If we select **Edit**, the table is loaded and the Query Editor is launched. The **Query Settings** pane is displayed (if it’s not, you can select **View** from the ribbon, then **Show \> Query Settings** to display the **Query Settings** pane). Here’s what that looks like.
+If we select **Edit**, the table is loaded and Query Editor is launched. The **Query Settings** pane is displayed (if it’s not, you can select **View** from the ribbon, then **Show \> Query Settings** to display the **Query Settings** pane). Here’s what that looks like.
 
 ![](media/powerbi-desktop-connect-to-data/Designer_GSG_EditQuery.png)
 
@@ -54,7 +54,7 @@ In **Query Settings**, the **Applied Steps** will reflect any changes that were 
 
 ![](media/powerbi-desktop-connect-to-data/Designer_GSG_AppliedSteps_ChangedType.png)
 
-Additional changes to the table can still be made after it’s loaded, but for now this will do. When we're done we select **Close & Load** from the **Home** ribbon, and Power BI Desktop loads our changes and closes Query Editor.
+Additional changes to the table can still be made after it’s loaded, but for now this will do. When we're done we select **Close & Apply** from the **Home** ribbon, and Power BI Desktop applies our changes and closes Query Editor.
 
 ![](media/powerbi-desktop-connect-to-data/ConnectToData_CloseNLoad.png)
 

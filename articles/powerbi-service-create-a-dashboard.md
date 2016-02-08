@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="01/26/2016"
    ms.author="mihart"/>
 
 # Create a Power BI dashboard
@@ -40,7 +40,7 @@ You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now yo
   - [Display the dashboard full-screen](powerbi-service-dash-and-reports-fullscreen.md)
   - [Add an image to the dashboard](powerbi-service-add-an-image-to-a-dashboard)
 
-**TIP**: Dashboards can be wider and longer than the browser window. If so, they have scroll bars. Because you want to show everything important at a glance, we recommend making the dashboard fit the browser window. For more tips, see [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
+**TIP**: Dashboards can be wider and longer than the browser window. If so, they have scroll bars. Because you want to show everything important at a glance, we recommend making the dashboard fit the browser window. For more tips like these, see [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
 
 ## See also
 

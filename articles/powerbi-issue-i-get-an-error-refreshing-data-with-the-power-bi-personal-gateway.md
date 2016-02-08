@@ -3,7 +3,7 @@
    description="I get an error refreshing data with the Power BI Personal Gateway"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="adamw"/>
+   ms.author="asaxton"/>
 
 # I get an error refreshing data with the Power BI Personal Gateway.  
 

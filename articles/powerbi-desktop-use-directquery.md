@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="01/27/2016"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  
@@ -26,7 +26,7 @@ The following data sources are currently supported:
 -   SQL Server
 -   Azure SQL Database
 -   Azure SLQ Data Warehouse
--   [SAP HANA (preview)](powerbi-desktop-sap-hana.md)
+-   [SAP HANA](powerbi-desktop-sap-hana.md)
 
 ### How to Connect using DirectQuery  
 When you use **Get Data** to connect to a data source supported by **DirectQuery**, a dialog window appears that asks how you want to connect.  
@@ -42,17 +42,32 @@ The differences between selecting **Import** and **DirectQuery** are the followi
 Many data modeling and data transformations are available when using **DirectQuery**, though with some limitations. When creating or interacting with a visualization, the underlying source must be queried and the time necessary to refresh the visualization is dependent on the performance of the underlying data source. When the data necessary to service the request has recently been requested, Power BI Desktop uses recent data to reduce the time required to display the visualization. Selecting **Refresh** from the **Home** ribbon will ensure all visualizations are refreshed with current data.
 
 ### Benefits of using DirectQuery  
-There are two primary benefits to using **DirectQuery**:  
+There are two primary benefits to using **DirectQuery**:
+
+
 -   **DirectQuery** lets you build visualizations over very large datasets, where it otherwise would be unfeasible to first import all of the data
+
 -   Underlying data changes can require a refresh of data, and for some reports, the need to display current data can require large data transfers, making re-importing data unfeasible. By contrast, **DirectQuery** reports always use current data
 
-### Limitations of DirectQuery  
-There are currently a few limitations to using **DirectQuery**:  
+
+### Limitations of DirectQuery
+There are currently a few limitations to using **DirectQuery**:
+
+
 -   All tables must come from a single database
+
 -   If the Query Editor query is overly complex an error will occur. To remedy the error you must: delete the problematic step in Query Editor, or Import the data instead of using **DirectQuery**
--   You cannot add calculated measures, columns, or tables
+
+-   You cannot add calculated columns or tables
+
 -   Relationship filtering is limited to a single direction, rather than both directions
+
 -   You cannot change the data type of a column
+
+-   By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph for more information
+
+To ensure that queries sent to the underlying data source have acceptable performance, limitations are imposed on measures by default. Advanced users can choose to bypass this limitation by selecting **File > Options** and then **Settings > Options > DirectQuery**, then selecting the option *Allow unrestricted measures in DirectQuery mode**. When that option is selected, any DAX expression that is valid for a measure can be used. Users must be aware, however, that some expressions that perform very well when the data is imported may result in very slow queries to the backend source when in DirectQuery mode.
+
 
 ### Publish to the Power BI service
 Reports created using **DirectQuery** can be published to the Power BI Service.

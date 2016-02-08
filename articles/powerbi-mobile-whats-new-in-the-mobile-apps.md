@@ -14,10 +14,26 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2016"
+   ms.date="01/07/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## January 2016
+All of the January improvements are already in the new [Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md), released in December 2015. Now they're rolling out to the other Power BI apps for mobile devices. Read the blog post about these improvements.
+
+**Real-time data support** Dashboards refresh in real time, so you don't need to refresh them manually.
+
+**Offline indicators** When you don't have signal, you see an offline indicator at the top of your dashboard.
+
+**Access cached data** Cached data no longer expires, so you have access to your cached data indefinitely while offline.
+
+**R tiles and web widgets** View these new tile types in dashboards on your mobile device.
+
+**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](powerbi-content-pack-bing.md), and view them on your mobile device.
+
+**Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can [view report pages on your mobile device](powerbi-mobile-report-page-tiles-in-the-iphone-app.md).
+
 
 ## December 2015
 The Power BI team ended 2015 strong, with several major additions and updates.
@@ -27,7 +43,7 @@ Now you can view your SQL Server mobile reports in the Power BI app on your iOS 
 
 -   [SQL 16 SSRS on Power BI app for iOS](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx) blog post
 -   View [SQL Server mobile reports and KPIs in the iPad app](powerbi-mobile-ipad-kpis-mobile-reports.md) documentation
--   View [SQL Server mobile reports and KPIs in the iPhone app](powerbi-mobile-iphone-kpis-mobile-reports) documentation
+-   View [SQL Server mobile reports and KPIs in the iPhone app](powerbi-mobile-iphone-kpis-mobile-reports.md) documentation
 
 ### Power BI app for Windows 10 phones
 The new Power BI app for Windows 10 phones is optimized for touch and mobile productivity. Explore dashboards and reports, invite colleagues to view data, and share insights over email to engage your team. Plus you can [pin Power BI dashboards to your Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).

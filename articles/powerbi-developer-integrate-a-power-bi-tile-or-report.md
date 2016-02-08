@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/17/2015"
+   ms.date="02/03/2016"
    ms.author="derrickv"/>
 
 # Integrate a Power BI tile or report into an app
@@ -88,7 +88,7 @@ JSON Response
 
 **Step 3 – Get user’s tile information**
 
-You get the user’s **tiles** with a GET web request using the  REST Uri below. You use the dashboard **id** you got in **Step 2 – Get user’s dashboards** in the **tiles** url (see below). The [Get Tiles](Get+Tiles.md) operation returns a JSON array of the user’s tiles in a dashboard which contains an id, title, and **embedUrl**. You use the **embedUrl** to set the **IFrame** source url. See **Step 4 – Set IFrame source url**. The operation is as follows:
+You get the user’s **tiles** with a GET web request using the  REST Uri below. You use the dashboard **id** you got in **Step 2 – Get user’s dashboards** in the **tiles** url (see below). The [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operation returns a JSON array of the user’s tiles in a dashboard which contains an id, title, and **embedUrl**. You use the **embedUrl** to set the **IFrame** source url. See **Step 4 – Set IFrame source url**. The operation is as follows:
 
 GET REST Uri
 
@@ -293,7 +293,7 @@ You embed a Power BI **report** into an app with an **IFrame** HTML element. Her
 
 |**Name**|**Description**|**REST operation**
 |---|---|---
-|reportId|The id of the user’s **report**.|[Get [Get Reports](Get+ Reports.md)
+|reportId|The id of the user’s **report**.|[Get Reports](https://msdn.microsoft.com/library/mt634543.aspx)
 
 **Step 2 -** Add an onload event handler to submit an Azure authentication token. To learn how to get an Azure authentication token for a web app, see [Authenticate a web app]( powerbi-developer-authenticate-a-web-app.md).
 
@@ -337,4 +337,4 @@ The steps in this article generally describe how to use an **IFrame** to embed a
 -	[Register a web app](powerbi-developer-register-a-web-app.md)
 -	[Azure Active Directory Authentication Libraries](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/).
 -	[Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md)
--	Power BI REST [Get Dashboards](https://msdnstage.redmond.corp.microsoft.com/library/mt465739.aspx) and [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) operations
+-	Power BI REST [Get Dashboards](https://msdnstage.redmond.corp.microsoft.com/library/mt465739.aspx), [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) and [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operations

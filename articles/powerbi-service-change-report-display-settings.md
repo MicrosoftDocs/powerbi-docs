@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="01/23/2016"
    ms.author="mihart"/>
 
 # Page display settings in a Power BI report
@@ -24,6 +24,8 @@ We understand it is critical to keep your report layout pixel perfect. Sometimes
 The default display view is **Fit to page** and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page View*** settings and ***Page Size*** settings.
 
 >**NOTE**: Selecting the default setting in one, resets the other to its default as well.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XPByITauE1g?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## When to use Dynamic view
 

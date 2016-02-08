@@ -13,9 +13,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/01/2015"
+ms.date="01/25/2016"
 ms.author="asaxton"/>
-# Troubleshooting the Power BI Gateway - Enterprise (Preview)
+# Troubleshooting the Power BI Gateway - Enterprise
 
 ## Configuration
 
@@ -77,6 +77,22 @@ Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownEr
 
 You can also look in the Event Logs > **Applications and Services Logs** > **Power BI Enterprise Gateway Service** for more details.
 
+**Error: Unable to Connect. Details: "Data source access error"**
+
+We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
+
+Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**. 
+
+If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-enterprise-manage-ssas.md#add-a-data-source)
+
+    The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
+
+**Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI site**
+
+We haven’t yet integrated data sources from the enterprise gateway into the *Get Data* experience for Analysis Services from Power BI web. This will be coming soon.
+
+To make use of data sources for Analysis Services, you can create a report within Power BI Desktop. Be sure that you select live data for Analysis Services. Then publish it to Power BI and it will make use of the enterprise gateway.
+
 ## Dataset
 
 **Error: Couldn't refresh because your Personal Gateway is offline. Make sure your Personal Gateway is up and running.**
@@ -85,13 +101,22 @@ You may have configured an enterprise gateway, and see this error for a given da
 
 If you have imported data into your file, you will need the Personal Gateway to refresh the dataset.
 
+## Reports
 
-## See Also
+**Report could not access the data source because you do not have access to our data source via an enterprise gateway.**
 
-[Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
+This is usually caused by one of the following. 
 
-[Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
+1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the enterprise gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the enterprise gateway, needs to use an IP Address as well.
 
-[Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage.md)
+2. There is not a data source available on any enterprise gateway within your organization. You can configure the data source on a new, or existing, enterprise gateway.
+
+## See also
+
+[Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
+
+[Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
+
+[Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
 [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)

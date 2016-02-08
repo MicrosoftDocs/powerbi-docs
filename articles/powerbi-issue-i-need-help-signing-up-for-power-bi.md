@@ -3,7 +3,7 @@
    description="I need help signing up for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="guyinacube" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="adamw"/>
+   ms.author="asaxton"/>
 
 # I need help signing up for Power BI.  
 
