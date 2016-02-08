@@ -40,11 +40,7 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 -   Any R script that runs longer than 30 minutes times out
 -   Interactive calls in the R script, such as waiting for user input, halts the script’s execution
 -   When setting the working directory within the R script, you *must* define a full path to the working directory, rather than a relative path
--  Input files for R visuals must be encoded as **UTF-8-BOM** to work properly with the preview version of R in Power BI. To achieve this, first add the following code to the script, directly after the initial path portion of the script:
-
-    *fileEncoding = "UTF-8-BOM",*
-
-   Then open the input file in Notepad, select **File > Save As...** and from the **Encoding** drop-down in the **Save As** dialog, and select **UTF-8**.
+-  Input files for R visuals must be encoded as **UTF-8-BOM** to work properly with the preview version of R in Power BI. To achieve this, first add the following code to the script, directly after the initial path portion of the script: *fileEncoding = "UTF-8-BOM",* Then open the input file in Notepad, select **File > Save As...** and from the **Encoding** drop-down in the **Save As** dialog, and select **UTF-8**.
 
 
 #### Run your R Script and Import Data
