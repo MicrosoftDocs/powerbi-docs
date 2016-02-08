@@ -85,7 +85,7 @@ You can edit the width and height manually to ensure it is precisely how you wan
 
 Once you create a **Publish to web** embed code, you can manage the codes you create from the **Settings** menu of the Power BI service. Managing embed codes includes the ability to remove the destination visual or report for a code (rendering the embed code unusable), or getting the embed code again.
 
-1.  To manage your **Publish to web* embed codes, open the **Settings** gear and select **Manage embed codes**.
+1.  To manage your **Publish to web** embed codes, open the **Settings** gear and select **Manage embed codes**.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web8.png)
 

@@ -52,13 +52,14 @@ When those steps are complete, you’re ready to begin creating R visuals.
 
 2.   When you add an R Visual to a report, Power BI Desktop does the following:
 
-  a) A placeholder R visual image appears on the report canvas.
+        a) A placeholder R visual image appears on the report canvas.
 
-  b) The **R script editor** appears along the bottom of the center pane.
+        b) The **R script editor** appears along the bottom of the center pane.
 
   ![](media/powerbi-desktop-r-visuals/r-visuals-4.png)
 
 3.   Next, add fields you want to consume in your R script to the **Values** section in the **Fields** well, just as you would with any other Power BI Desktop visual. Only fields that have been added to the **Fields** well are available to your R script, and you can add new fields, or remove unneeded fields from the **Fields** well while working on your R script in the Power BI Desktop **R script editor**. Power BI Desktop automatically detects which fields you have added or removed.
+
 > **Note:** The default aggregation type for R visuals is *do not summarize*.
 
 4.   Now you can use the data you selected to create a plot. As you select fields, the **R script editor** generates supporting R script binding code based on your selections in the gray section along the top of the editor pane. As you select or remove additional fields, supporting code in the R script editor is automatically generated or removed accordingly.
@@ -113,6 +114,12 @@ When executing a R script that results in an error, the R visual is not plotted 
 #### Known Limitations
 
 This preview version of R visuals has a few limitations:
+
+-  Input file encoding requirement – Input files for R visuals must be encoded as **UTF-8-BOM** to work properly with the preview version of R in Power BI. To achieve this, first add the following code to the script, directly after the initial path portion of the script: 
+
+    *fileEncoding = "UTF-8-BOM",*
+
+    Then open the input file in Notepad, select **File > Save As...** and from the **Encoding** drop-down in the **Save As** dialog, and select **UTF-8**.
 
 -  Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
 
