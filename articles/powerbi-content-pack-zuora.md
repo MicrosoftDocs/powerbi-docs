@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/01/2016"
+   ms.date="02/08/2016"
    ms.author="tpalmer"/>
 # Zuora content pack for Power&nbsp;BI
 
@@ -61,7 +61,7 @@ Connect to the [Zuora content pack](https://app.powerbi.com/getdata/services/Zuo
 
 ## What's included
 
-The content pack uses the Zuora AQUA API to pull in the following tables:
+The content pack uses the Zuora AQUA API to pull in the following tables:  
 - Account  
 - AccountingCode  
 - AccountingPeriod  
@@ -92,10 +92,10 @@ Access to the Zuora API is required.
 ## Finding parameters
 <a name="FindingParams"></a>
 
-Provide the URL you typically sign into to access your Zuora data. The valid options are:
-- https://www.zuora.com
-- https://www.apisandbox.zuora.com
-- The URL corresponding to your serivce instance
+Provide the URL you typically sign into to access your Zuora data. The valid options are:  
+- https://www.zuora.com  
+- https://www.apisandbox.zuora.com  
+- The URL corresponding to your serivce instance  
 
 ## Troubleshooting
 
