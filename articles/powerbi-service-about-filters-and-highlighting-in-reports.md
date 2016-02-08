@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="01/15/2016"
    ms.author="mihart"/>
 # About filters and highlighting in Power BI reports
 
@@ -22,18 +22,20 @@ Power BI reports provides several ways to filter and highlight data. Because of 
 
 ***Filters*** remove all but the data you want to focus on.  ***Highlighting*** is not filtering since it does not remove data but instead highlights a subset of the visible data; the unhighlighted data remains visible but dimmed.
 
-Filters can be applied to individual visualizations, to report pages, and to an entire report.
+Filters can be applied to individual visualizations, to report pages, and to an entire report. They can be applied using the **Filters** pane or by making selections within a report visualization.  By default, selections you make in one visualization cross-filter and/or cross-highlight the other visualizations on that same report page. But you can change this default behavior using the [Visual Interactions control](powerbi-service-visual-interactions.md).
 
 >**TIP**: You must be in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) to add new filters to a report or to create filters that remain with the report.  In [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md), you (and people you've shared the report with) can interact with those filters but cannot save changes made to those filters.
 
 
-## See also
+### See also
 
 [Interact with filters and highlighting (in Reading View)](powerbi-service-interact-with-a-report-in-reading-view.md)
 
 [Add a filter to a report (in Editing View)](powerbi-service-add-a-filter-to-a-report.md)
 
 [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
+
+[Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 

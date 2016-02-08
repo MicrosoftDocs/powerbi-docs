@@ -3,7 +3,7 @@
    description="IT Spend Analysis sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="mihart"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="11/06/2015"
-   ms.author="mblythe"/>
+   ms.author="mihart"/>
 
 # IT Spend Analysis sample for Power BI: Take a tour
 

@@ -14,8 +14,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/28/2015"
+   ms.date="02/02/2016"
    ms.author="mihart"/>
+
 # Dashboards in Power BI
 
 Dashboards, reports, and datasets are at the heart of Power BI. Create personalized ***dashboards*** to monitor your most important data, at a glance.  A dashboard combines on-premises and cloud-born data in a single pane of glass, providing a consolidated view across the organization regardless of where the data lives. Each metric, or insight, is displayed on the dashboard as a ***tile***. 
@@ -31,7 +32,11 @@ Each tile is a snapshot of information taken from an underlying dataset.  Learn
 
 ### Create a dashboard
 
-Learn how to [create a new dashboard](powerbi-service-create-a-dashboard.md)and add tiles.
+Learn how to [create a new dashboard](powerbi-service-create-a-dashboard.md) and add tiles.
+
+### Add tiles to a dashboard
+
+[Get data](powerbi-service-get-data.md) and [add tiles](powerbi-service-dashboard-tiles.md) and [images, videos, web code, and text boxes](powerbi-service-add-a-widget-to-a-dashboard.md) to your dashboard from reports, Q&A, SSRS, Excel, and more.
 
 ### Share a dashboard
 
@@ -43,15 +48,17 @@ Learn how to [co-own a dashboard among colleagues](powerbi-service-organizationa
 
 Need a more descriptive dashboard name?  [Rename it](powerbi-service-rename-a-dashboard.md).
 
+### Print a dashboard
+
+Want to make hard copies of your dashboard?  [Print it](powerbi-service-print.md).
+
 ### Delete a dashboard
 
 Don't need the dashboard any more?  [Delete it](powerbi-service-delete-or-remove-a-dashboard.md).
 
-### Add tiles to a dashboard
-
-[Get data](powerbi-service-get-data.md) and [add tiles](powerbi-service-dashboard-tiles.md) and [images](powerbi-service-add-an-image-to-a-dashboard.md) to your dashboard  from reports, Q&A, SSRS, Excel, and more.
-
 ### Dashboard size
+
+Display your dashboard without controls and menus using full screen [TV mode](powerbi-service-dash-and-reports-fullscreen.md).
 
 Dashboards can be wider and longer than the browser window. If so, they have scroll bars. Because you want to show everything important at a glance, we recommend making the dashboard fit the browser window. For more tips, see [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/01/2015"
+   ms.date="01/21/2016"
    ms.author="mihart"/>
 
 # Tutorial: Part I, Add visualizations to a Power BI report
@@ -43,7 +43,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
 5.  Select other fields to add to the visualization.  Select **Count of** **Product** to add it to the **Values** well.
 
-    ![](media/powerbi-service-add-visualizations-to-a-report-i/part1table.png)
+    ![](media/powerbi-service-add-visualizations-to-a-report-i/part1table1.png)
 
 6.  Change the visualization to a column chart by selecting the column chart icon.
 
@@ -51,7 +51,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
 7.  When you create visualizations in your report, you can [pin them to your dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md). To pin the visualization, select the pin icon ![](media/powerbi-service-add-visualizations-to-a-report-i/pinNoOutline.png).
 
-    ![](media/powerbi-service-add-visualizations-to-a-report-i/part1Pin.png)
+    ![](media/powerbi-service-add-visualizations-to-a-report-i/part1Pin1.png)
 
 8.  Now you can:
 
@@ -61,7 +61,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
     [Pin the visualization](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) to your dashboard as a tile.
 
-    [Interact with the visualizations](powerbi-service-interact-with-a-report-in-reading-view.md)in the report.
+    [Interact with the visualizations](powerbi-service-interact-with-a-report-in-reading-view.md) in the report.
 
     [Do even more with visualizations](powerbi-service-visualizations-for-reports.md).
 

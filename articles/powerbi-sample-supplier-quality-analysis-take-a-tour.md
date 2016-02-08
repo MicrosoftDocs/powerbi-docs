@@ -14,17 +14,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="01/12/2016"
    ms.author="mihart"/>
 
 # Supplier Quality Analysis sample for Power BI: Take a tour  
 
-This industry sample dashboard and underlying report focus on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives:
+This industry sample dashboard and underlying report focus on one of the typical supply chain challenges — supplier quality analysis. 
+Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives:
 
 -   Understand who the best and worst suppliers are, with respect to quality.
 -   Identify which plants do a better job finding and rejecting defects, to minimize downtime.
 
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
+This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. 
+This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).[](http://www.obvience.com/)
 

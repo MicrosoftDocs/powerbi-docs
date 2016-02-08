@@ -1,6 +1,6 @@
 <properties
    pageTitle="Pin a Power BI dashboard to the Windows Start screen"
-   description="Pin a Power BI dashboard from the Windows 10 phone app to the Windows Start screen"
+   description="Pin a Power BI dashboard to the Windows Start screen  from the Power BI mobile app for Windows 10"
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/28/2015"
+   ms.date="01/13/2016"
    ms.author="maggies"/>
 
-# Pin a Power BI dashboard from the Windows 10 phone app to the Windows Start screen
+# Pin a Power BI dashboard to the Windows Start screen from the Power BI mobile app for Windows 10
 
 You can pin a dashboard to the Windows Start screen in two different ways.
 
@@ -25,7 +25,7 @@ You can pin a dashboard to the Windows Start screen in two different ways.
 
     ![](media/powerbi-mobile-pin-dashboard-from-win10phone-app/pbi_win10ph_dashhomeinvitepin.png)
 
--   On a dashboard, tap the ellipsis at the bottom of the page and tap **Pin to Start**.
+-   On a dashboard, tap the ellipsis and tap **Pin to Start**.
 
     ![](media/powerbi-mobile-pin-dashboard-from-win10phone-app/pbi_win10ph_dashpintostart.png)
 
@@ -34,6 +34,6 @@ The dashboard is pinned to your Start screen.
 ![](media/powerbi-mobile-pin-dashboard-from-win10phone-app/pbi_win10ph_startscrn.png)
 
 ### See also  
-[Download the Windows 10 phone app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Windows Store  
-[Get started with the Windows 10 phone app for Power BI](powerbi-mobile-win10phone-app-get-started.md)  
+[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
+[Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)

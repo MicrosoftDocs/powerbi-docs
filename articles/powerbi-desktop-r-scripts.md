@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="01/28/2016"
    ms.author="davidi"/>
 
 # Running R Scripts in Power BI Desktop (Beta)  
@@ -23,10 +23,10 @@ You can run R scripts directly in Power BI Desktop, and import the resulting dat
 
 ### Installing R
 
-To run R scripts in Power BI Desktop, you need to install **R** on your local machine. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+To run R scripts in Power BI Desktop, you need to install **R** on your local machine. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
 
 ### Running R Scripts
-With just a few steps in Power BI Desktop you can run R scripts and create a data model, from which you can create reports, and share them on the Power BI service.
+With just a few steps in Power BI Desktop you can run R scripts and create a data model, from which you can create reports, and share them on the Power BI service. R scripting in Power BI Desktop now supports number formats that contain decimals (.) and commas (,).
 
 #### Prepare an R Script
 To run an R script in Power BI Desktop, create the script in your local R development environment, and make sure it runs successfully.
@@ -40,6 +40,8 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 -   Any R script that runs longer than 30 minutes times out
 -   Interactive calls in the R script, such as waiting for user input, halts the script’s execution
 -   When setting the working directory within the R script, you *must* define a full path to the working directory, rather than a relative path
+-  Input files for R visuals must be encoded as **UTF-8-BOM** to work properly with the preview version of R in Power BI. To achieve this, first add the following code to the script, directly after the initial path portion of the script: *fileEncoding = "UTF-8-BOM",* Then open the input file in Notepad, select **File > Save As...** and from the **Encoding** drop-down in the **Save As** dialog, and select **UTF-8**.
+
 
 #### Run your R Script and Import Data
 
@@ -56,6 +58,10 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
     ![](media/powerbi-desktop-r-scripts/r-scripts-3.png)
 
     If R is installed is not identified, you can explicitly provide its location in the text box provided when you expand **R Installation Settings**. In the above image, the path *C:\Program Files\R\R-3.2.0* is explicitly provided in the text box.
+
+    R installation settings are centrally located in the R Scripting section of the Options dialog. To specify your R installation settings, select **File > Options and settings** and then **Options > R Scripting**. If multiple installations of R are available, a drop-down menu appears that allows you to  select which installation to use.
+
+    ![](media/powerbi-desktop-r-scripts/r-scripts-4.png)
 
 4.   Select **OK** to run the R Script. When the script runs successfully, you can then choose the resulting data frames to add to the Power BI model.
 

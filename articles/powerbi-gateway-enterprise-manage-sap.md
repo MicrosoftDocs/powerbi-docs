@@ -13,11 +13,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/14/2015"
+ms.date="01/25/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - SAP HANA
 
-Once you have installed the Power BI Gateway - Enterprise (Preview), you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
+Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
 
 ## Add a gateway
 
@@ -71,7 +71,7 @@ On the Administrators tab, for the gateway, you can add, and remove, users that 
 
 ## Manage users
 
-On the Users tab, for the data source, you can add, and remove, users that can use this gateway. You can only add users at this time. Security groups cannot be added.
+On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
 
 > NOTE: The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
 
@@ -79,10 +79,10 @@ On the Users tab, for the data source, you can add, and remove, users that can u
 
 ## See Also
 
-[Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
+[Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
 
-[Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
+[Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
 
 [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)

@@ -14,16 +14,30 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2015"
+   ms.date="02/02/2016"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
 
 Check this page for known issues and recently-released features in Power BI Service.
 
->NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+>NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md) and the [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
 
 ## Recent updates
+
+**January 28, 2016**
+
+Updates to reports and visualizations:
+
+- [Add borders to visuals](https://powerbi.microsoft.com/blog/power-bi-updates-this-week-new-report-authoring-capabilities/#borders)
+
+- [Add background images to pages and Cartesian chart plot areas](
+https://powerbi.microsoft.com/blog/power-bi-updates-this-week-new-report-authoring-capabilities/#background)
+
+Performance Improvements for report rendering, cross-highlight, etc.
+
+- Regardless of the browser version being used, a significant Performance improvement can be noticed by users when loading reports, switching between pages, cross-highlighting data across visuals, etc. with this new update.
+
 
 **January 6, 2016**
 

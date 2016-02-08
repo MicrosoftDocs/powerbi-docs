@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2015"
+   ms.date="02/01/2016"
    ms.author="maggies"/>
 # Share a dashboard from the iPhone app (Power BI for iOS)
 
@@ -24,11 +24,11 @@ Invite colleagues to view your dashboards by sharing links from the iPhone app f
 
 1.  In the upper-right corner of the dashboard, tap the ellipsis to open the dashboard menu.
 
-    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashEllipsis.png)
+    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/PBI_iPh_DashEllipsis.png)
 
 3.  Tap **Invite**.
 
-    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashMenu.png)
+    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/pbi_iph_dash_options.png)
 
 
 2.  Type names and a message to accompany your dashboard invitation.
@@ -47,11 +47,11 @@ You can only unshare a dashboard if you're the dashboard owner.
 
 1.  In the upper-right corner of the dashboard, tap the ellipsis to open the dashboard menu.
 
-    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashEllipsis.png)
+    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/PBI_iPh_DashEllipsis.png)
 
 3.  Tap **Invite**.
 
-    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashMenu.png)
+    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/pbi_iph_dash_options.png)
 
     You see the list of colleagues with whom you've shared this dashboard. Below their names are these words:
 

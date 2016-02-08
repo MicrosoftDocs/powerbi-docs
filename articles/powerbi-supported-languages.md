@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="01/19/2016"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -22,6 +22,8 @@ For countries and regions where Power BI is available, see this [international a
 
 Power BI (in your browser) is available in the following 42 languages:
 
+-   Arabic
+  
 -   Basque - Basque
 
 -   Bulgarian - Български
@@ -53,6 +55,8 @@ Power BI (in your browser) is available in the following 42 languages:
 -   German - Deutsch
 
 -   Greek - Ελληνικά
+
+-   Hebrew
 
 -   Hindi - हिंदी
 

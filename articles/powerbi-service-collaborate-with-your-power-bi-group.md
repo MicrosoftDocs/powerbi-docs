@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="01/21/2016"
    ms.author="maggies"/>
 # Collaborate with your Power BI group
 
@@ -41,7 +41,7 @@ Collaborating in Office 365 starts from the group’s workspace.
 
     This opens the email and conversation site for your group in Outlook for Office 365.
 
-    ![](media/powerbi-service-collaborate-with-your-power-bi-group/PBI_Grps_O365_Convo.png)
+    ![](media/powerbi-service-collaborate-with-your-power-bi-group/pbi_grps_o365convo.png)
 
 2.  Read more about [group conversations in Outlook for Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
@@ -53,13 +53,14 @@ Collaborating in Office 365 starts from the group’s workspace.
 
     ![](media/powerbi-service-collaborate-with-your-power-bi-group/PBI_Grps_O365_Calendar.png)
 
-2.  Read more about [group calendars in Outlook in Office 36](https://support.office.com/Article/Add-edit-and-subscribe-to-group-events-0cf1ad68-1034-4306-b367-d75e9818376a)5.
+2.  Read more about [group calendars in Outlook in Office 365](https://support.office.com/Article/Add-edit-and-subscribe-to-group-events-0cf1ad68-1034-4306-b367-d75e9818376a).
 
 ## Manage a group
 
 If you’re owner or admin for a group, you can also add or remove group members. Read more about [managing your Power BI groups](powerbi-service-manage-your-group-in-power-bi-and-office-365.md).
 
 
-More about [groups in Power BI](powerbi-service-groups.md).
+### See also
+More about [groups in Power BI](powerbi-service-groups.md)
  
 

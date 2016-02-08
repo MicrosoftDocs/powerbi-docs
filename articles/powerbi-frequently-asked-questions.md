@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Frequently Asked Questions"
-   description="Frequently Asked Questions"
+   pageTitle="Frequently asked questions"
+   description="Frequently asked questions about Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -14,9 +14,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/28/2015"
+   ms.date="02/03/2016"
    ms.author="maggies"/>
-# Frequently asked questions
+# Frequently asked questions about Power BI
 
 ## What is Microsoft Power BI?
 
@@ -42,7 +42,11 @@ Just a Web browser and work email address.
 
 ## Does Power BI support mobile devices?
 
-Yes. Power BI has native apps for Android, iOS, and Windows. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store: [App Store](http://go.microsoft.com/fwlink/?LinkId=526218), [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409), and [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478).
+Yes. Power BI has native apps for Android phones, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  
+
+-   [App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
+-   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+-   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## Why do I have to sign up with my work email?
 
@@ -52,13 +56,18 @@ Power BI does not support email addresses provided by consumer email services or
 
 No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Analysis Services Connector](powerbi-analysis-services-connector.md), you can connect live to your on-premises SQL Server Analysis Services Tabular models. And, with the [Power BI Personal Gateway](powerbi-personal-gateway.md), you can refresh data from other on-premises data sources.
 
+You can also view on-premises SQL Server mobile reports with the Power BI iOS apps: 
+
+-   [SQL Server mobile reports on the iPhone](powerbi-mobile-iphone-kpis-mobile-reports.md).
+-   [SQL Server mobile reports on the iPad](powerbi-mobile-ipad-kpis-mobile-reports.md)
+
 ## What data sources can I connect to?
 
 The list of data sources for Power BI is extensive, but it can be grouped into the following:
 
 - Data from [Excel and Power BI Desktop files](powerbi-service-get-data-from-files.md).
 
-- Content packs with ready-made dashboards, reports, and datasets for services such as Salesforce. Connecting to these services requires an existing subscription for that service. In addition to establishing a data connection, Power BI provides pre-built dashboards and reports for each of these services.
+- [Content packs for services](powerbi-content-packs-services.md), with ready-made dashboards, reports, and datasets for services such as Salesforce. In addition to establishing a data connection, Power BI provides pre-built dashboards and reports for each of these services.
 
 - Connectors to databases and other datasets such as [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md) and SQL Server [Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data.
 
@@ -66,9 +75,9 @@ Read more about [getting data](powerbi-service-get-data.md) in Power BI.
 
 ## What are content packs?
 
-Content packs are pre-built solutions for popular services as part of the Power BI experience. A subscriber to a supported service can quickly connect to their account from Power BI and see their data through live dashboards and interactive reports that have been pre-built for them.  We’ve released content packs for popular services such as Salesforce.com, Marketo, Adobe Analytics, Azure Mobile Engagement,  CircuitID, comScore Digital Analytix, Quickbooks Online, SQL Sentry, and tyGraph. Over the coming months, we’ll extend this to include content packs and integrations for Sage, SpaceCurve, Sumo Logic, Zuora, Planview, Insightly, Troux, Inkling, and others.
+[Content packs for services](powerbi-content-packs-services.md) are pre-built solutions for popular services as part of the Power BI experience. A subscriber to a supported service can quickly connect to their account from Power BI and see their data through live dashboards and interactive reports that have been pre-built for them.  We’ve released content packs for popular services such as Salesforce.com, Marketo, Adobe Analytics, Azure Mobile Engagement,  CircuitID, comScore Digital Analytix, Quickbooks Online, SQL Sentry, and tyGraph. Over the coming months, we’ll extend this to include content packs and integrations for Sage, SpaceCurve, Sumo Logic, Zuora, Planview, Insightly, Troux, Inkling, and others.
 
-Organizational content packs provide users, BI professionals, and system integrators the tools to build their own content packs to share purpose-built dashboards, reports, and datasets within their organization.
+[Organizational content packs](powerbi-service-organizational-content-packs-introduction.md) provide users, BI professionals, and system integrators the tools to build their own content packs to share purpose-built dashboards, reports, and datasets within their organization.
 
 ## What do I need to install in order to use Power BI?
 
@@ -76,23 +85,31 @@ To use the Power BI service for free, you just need a Web browser and email.
 
 To explore data and create reports in Power BI Desktop, download [Power BI Desktop](http://powerbi.microsoft.com/designer) for free.
 
-You can download the Power BI mobile apps from their respective stores: [App Store](http://go.microsoft.com/fwlink/?LinkId=526218), [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409), and [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478).
+You can download the Power BI mobile apps from their respective stores:
+
+-   [App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
+-   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+-   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## Where do I get started with Power BI?
 
 The following resources are available to help get your started:
 
-[Power BI Blog](http://blogs.msdn.com/b/powerbi/)
+-  [Power BI Blog](http://blogs.msdn.com/b/powerbi/)
 
-[Webinars](powerbi-webinars.md)
+-  [Webinars](powerbi-webinars.md)
 
-Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
+-  Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 
-[Get started with Power BI](powerbi-service-get-started.md) article
+-  [Get started with Power BI](powerbi-service-get-started.md) article
 
-[Join our community](https://community.powerbi.com/) and ask questions
+-  [Join our community](https://community.powerbi.com/) and ask questions
 
-## What regions/languages does Power BI support?
+## What browsers does Power BI support?
+
+Here's a complete list of [supported browsers for Power BI](powerbi-service-browser-support.md).
+
+## What regions and languages does Power BI support?
 
 Here's a complete list of [regions and languages supported by Power BI](powerbi-supported-languages.md).
 
@@ -104,13 +121,13 @@ You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help 
 
 ## Where can I learn more about security?
 
-You can learn more about Power BI security, privacy and compliance by reading this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
+Learn more about Power BI security, privacy and compliance in this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
 
 ## Is government, academic and non-profit pricing available for Power BI?
 
 Yes. Government and academic pricing is offered through the MOSP/Direct, EA and Open licensing programs. Government pricing is also available in syndication. Non-profit pricing is only available in MOSP/Direct. Power BI is not available for the US Government Community Cloud (GCC).
 
-**Note:** Work email addresses ending in **.gov** aren’t currently supported.
+**Note:** Work email addresses ending in **.edu** and **.org** are supported. Those ending in **.gov** aren’t currently supported.
 
 ## What is happening to the Power BI for Office 365 experience?
 

@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Add a hyperlink to a Text Box in Power BI"
+   pageTitle="Add a hyperlink to a Text Box in a Power BI report"
    description="Add a hyperlink to a Text Box in Power BI"
    services="powerbi"
    documentationCenter=""
@@ -14,11 +14,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="02/02/2016"
    ms.author="mihart"/>
-# Add a hyperlink to a Text Box in Power BI
 
->**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). 
+# Add a hyperlink to a Text Box in a report
+
+Text boxes can be added to reports, pinned to dashboards from reports, and added directly to dashboards. **This topic covers text boxes in reports.**
+
+>**NOTE**: For information on hyperlinks in Power BI tables and matrixes, see [Hyperlinks in tables](powerbi-service-hyperlinks-in-tables.md). For information on adding text boxes to your **dashboard**, see [Dashboard widgets ](powerbi-service-add-a-widget-to-a-dashboard.md). 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
 
 ## To add a hyperlink to a Text Box
 
@@ -40,7 +46,7 @@
 
     -  In the Text Box, select the hyperlink to display the URL
 
-    -  Select the URL to open the page in a new browser window. 
+    -  Select the URL to open the page in a new browser window.
 
 
 ## To remove the hyperlink but leave the text
@@ -55,9 +61,12 @@
 
     Alternately, to remove the hyperlink but leave the text, highlight the entire hyperlink and select Delete.
 
+
 ## See also
 
 [Text Boxes in Power BI reports](powerbi-service-text-boxes-in-reports.md)
+
+[Add a text box widget to a dashboard ](powerbi-service-add-a-widget-to-a-dashboard.md)
 
 [Reports in Power BI](powerbi-service-reports.md)
 

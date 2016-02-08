@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="01/27/2016"
    ms.author="tpalmer"/>
    
 # Microsoft Dynamics CRM content pack for Power&nbsp;BI
@@ -75,7 +75,7 @@ The address of the OData endpoint can be found by navigating to **Microsoft Dyna
 
 ## Troubleshooting
 
-If you see a "Login failed" message when trying to connect to your Dynamics CRM acount, confirm that you're signing into Power BI with the same account you would use to access the CRM Online OData feed. Try logging into the feed in your browser as well, to test it there.
+If you see a "Login failed" message when trying to connect to your Dynamics CRM account, confirm that you're signing into Power BI with the same account you would use to access the CRM Online OData feed. Try logging into the feed in your browser as well, to test it there.
 
 Ask your admin to confirm the correct OData URL, and that the OData endpoint is enabled.
 

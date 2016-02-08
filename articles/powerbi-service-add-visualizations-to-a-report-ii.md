@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/01/2015"
+   ms.date="01/21/2016"
    ms.author="mihart"/>
 
 # Tutorial: Part 2, Add visualizations to a Power BI report  
@@ -31,7 +31,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/RetailAnalySampleReport.png)
 
 3.  Select **Edit Report** to open the report in Editing View.  
-    ![](media/powerbi-service-add-visualizations-to-a-report-ii/EditReport.png)
+    ![](media/powerbi-service-add-visualizations-to-a-report-ii/EditReport1.png)
 
 4.  [Add a new page](powerbi-service-add-a-page-to-a-report.md) by selecting the yellow plus icon at the bottom of the canvas.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_addReportPage.png)
@@ -39,7 +39,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 ### Add a visualization that looks at this year's sales compared to last year.  
 1.  From the **Sales** table, select **This Year Sales** and **Last Year Sales**. Power BI creates a column chart.  This is somewhat interesting, and you want to dig deeper. What do the sales look like by month?  
 
-    ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_4.png)
+    ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_4b.png)
 
 2.  From the Time table, select **FiscalMonth** and drag it into the **Axis** area.  
   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_5new.png)
@@ -50,7 +50,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 
 5.  [Resize the visualization](powerbi-service-move-and-resize-a-visualization.md)by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
 
-    ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7.png)
+    ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7b.png)
 
 6.  [Save the report](powerbi-service-save-a-report.md).
 

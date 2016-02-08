@@ -13,11 +13,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/18/2015"
+ms.date="01/25/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - Analysis Services
 
-Once you have installed the Power BI Gateway - Enterprise (Preview), you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
+Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
 
 ## Add a gateway
 
@@ -57,6 +57,12 @@ You can click **Add** after you have everything filled in.  You can now use this
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4-ssas.png)
 
+## 'Get Data' experience for Analysis Services in Power BI site
+
+We haven’t yet integrated data sources from the enterprise gateway into the *Get Data* experience for Analysis Services from Power BI web. This will be coming soon.
+
+To make use of data sources for Analysis Services, you can create a report within Power BI Desktop. Be sure that you select live data for Analysis Services. Then publish it to Power BI and it will make use of the enterprise gateway.
+
 ### Usernames with Analysis Services
 
 Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [Learn more](https://msdn.microsoft.com/library/ms677605.aspx)
@@ -78,7 +84,7 @@ On the Administrators tab, for the gateway, you can add, and remove, users that 
 
 ## Manage users
 
-On the Users tab, for the data source, you can add, and remove, users that can use this gateway. You can only add users at this time. Security groups cannot be added.
+On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
 
 > NOTE: The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
 
@@ -86,12 +92,12 @@ On the Users tab, for the data source, you can add, and remove, users that can u
 
 ## See Also
 
-[Power BI Gateway – Enterprise (Preview)](powerbi-gateway-enterprise.md)
+[Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
 
-[Power BI Gateway - Enterprise (Preview) in-depth](powerbi-gateway-enterprise-indepth.md)
+[Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
 
-[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-upgrade-as-connector.md)
+[Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
 
 [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)

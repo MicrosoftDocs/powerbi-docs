@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2015"
+   ms.date="01/21/2016"
    ms.author="mihart"/>
 
 # Q&A in Power BI
@@ -44,7 +44,7 @@ Use Q&A in a realistic industry tutorial.
 [Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md):
 Are you the person creating datasets and data models?  Then this topic is for you.
 
-[Use Q&A with Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md): 
+[Use Q&A with Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md):
 How does Q&A communicate with Salesforce.
 
 ## See also

@@ -14,11 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2015"
+   ms.date="01/20/2016"
    ms.author="owend"/>
 
 # Publish to Power BI from Excel  
 In Excel 2016, you can publish your workbooks on OneDrive for Business right to your Power BI site. When you publish to Power BI, you can leverage your exiting Power View reports or create new reports and dashboards based on your workbook data. You can then share your reports and dashboards with others in your organization.
+
+You can also download and install the new Power BI publisher for Excel add-in (Preview) on any Excel 2010 SP1 version or later. By using the add-in, you can select a range, PivotTable, Chart, and many other elements and take snapshot, and then "pin" it to one or more dashboads in Power BI. To learn more, see [Power BI publisher for Excel](powerbi-publisher-for-excel.md).
 
 To publish your Excel workbook to Power BI, **select File** > **Publish**.
 

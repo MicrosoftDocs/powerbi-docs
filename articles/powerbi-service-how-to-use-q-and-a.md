@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2015"
+   ms.date="01/21/2016"
    ms.author="mihart"/>
 
 # How to use Power BI Q&A  
@@ -30,7 +30,7 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
 
 1.  Place your cursor in the question box. Even before you start typing, Q&A displays a dropdown with helpful suggestions.
 
-    ![](media/powerbi-service-how-to-use-q-and-a/PBI_qna_dropdown.jpg)  
+    ![](media/powerbi-service-how-to-use-q-and-a/PBI_qna_dropdown1.jpg)  
 
     This dropdown list contains:  
     - the questions used to create [tiles ](powerbi-service-dashboard-tiles.md)that are already pinned to the dashboard, and  
