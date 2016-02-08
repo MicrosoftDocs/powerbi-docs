@@ -43,7 +43,7 @@ Create SQL Server mobile reports for your on-premises data with the SQL Server M
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_ipad_connectsvrdialog.png)
 
-    >**Note**: Don't include **http** or **https** in front of the connection string. Just *servername*.**com**/reports_preview**.
+    >**Note**: Don't include **http** or **https** in front of the connection string. Just *servername*.com/reports_preview.
 
 5.  Now you see the server in the left navigation bar.
 
