@@ -62,28 +62,28 @@ Connect to the [Zuora content pack](https://app.powerbi.com/getdata/services/Zuo
 ## What's included
 
 The content pack uses the Zuora AQUA API to pull in the following tables:
-- Account
-- AccountingCode
-- AccountingPeriod
-- BillTo
-- DateDim
-- Invoice
-- InvoiceAdjustment
-- InvoiceItem
-- InvoiceItemAdjustment
-- Payment
-- PaymentMethod
-- Product
-- ProductRatePlan
-- ProductRatePlanCharge
-- RatePlan
-- RatePlanCharge
-- Refund
-- RevenueSchedule
-- RevenueScheduleItem
-- Subscription
-- TaxationItem
-- Usage
+- Account  
+- AccountingCode  
+- AccountingPeriod  
+- BillTo  
+- DateDim  
+- Invoice  
+- InvoiceAdjustment  
+- InvoiceItem  
+- InvoiceItemAdjustment  
+- Payment  
+- PaymentMethod  
+- Product  
+- ProductRatePlan  
+- ProductRatePlanCharge  
+- RatePlan  
+- RatePlanCharge  
+- Refund  
+- RevenueSchedule  
+- RevenueScheduleItem  
+- Subscription  
+- TaxationItem  
+- Usage  
 
 ## System requirements
 
