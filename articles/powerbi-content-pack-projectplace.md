@@ -3,7 +3,7 @@
    description="Projectplace content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="tpalmer"
+   authors="theresapalmer"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/12/2015"
+   ms.date="02/08/2016"
    ms.author="tpalmer"/>
 
-# Projectplace by Planview content pack for Power BI  
+# Projectplace by Planview content pack for Power&nbsp;BI  
 
 With the Projectplace by Planview content pack, you can visualize your collaborative project data in entirely new ways directly in Power BI. Use your Projectplace sign-in credentials to interactively view key project statistics, find out who your most active and productive team members are, and identify at-risk cards and activities across projects in your Projectplace account. You can also extend the out-of-the box dashboard and reports to get the insights that are most important to you.
 

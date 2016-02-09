@@ -22,7 +22,7 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[02/05/16 - What’s New and Exciting in Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-04-PowerBIWhatsNew-Registration.html)
+Nothing here yet. Come back soon!
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -30,11 +30,14 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
+[What’s New and Exciting in Power BI- February 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-04-PowerBIWhatsNew-Registration.html)
+
 [Power BI for Developers - January 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-01Jan-28-PowerBI-Developers-Registration.html)
 
-[What’s New and Exciting in Power BI - December 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-17Dec15-PowerBIWhatsNew-Registration.html)
-
 ###  Introductory webinars
+
+[What’s New and Exciting in Power BI- February 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-04-PowerBIWhatsNew-Registration.html)
+
 [What’s New and Exciting in Power BI - December 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-17Dec15-PowerBIWhatsNew-Registration.html)
 
 [What's New and Exciting in Power BI - November 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-12Nov15-PowerBIWhatsNew-Register.html)

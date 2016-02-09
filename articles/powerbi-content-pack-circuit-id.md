@@ -3,7 +3,7 @@
    description="Circuit ID content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,15 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
-   ms.author="maggies"/>
-# Circuit ID content pack for Power BI
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
+# Circuit ID content pack for Power&nbsp;BI
 
-﻿Analyzing your communication data from Circuit ID is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data.
+Analyzing your communication data from Circuit ID is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data. After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
 
-Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/services/circuitid)[ ](https://app.powerbi.com/getdata/services/circuitid)for Power BI.
-
-After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
+Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/services/circuitid) for Power BI.
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 
@@ -40,9 +38,9 @@ After you have created the connection, you can explore your data and customize t
 
 	![](media/powerbi-content-pack-circuit-id/circuitID_login.png)
 
-5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*:
+5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk.
 
-6. Select the Circuit ID dashboard.
+6. Select the Circuit ID dashboard.
 	This is the default dashboard that Power BI creates to display your data. You can modify this dashboard to display your data in any way you want.
 
 ![](media/powerbi-content-pack-circuit-id/circuitID_dashboard_chrome.png)

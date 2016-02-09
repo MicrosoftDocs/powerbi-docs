@@ -3,7 +3,7 @@
    description="SweetIQ content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="theresapalmer"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -14,20 +14,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="02/08/2016"
    ms.author="tpalmer"/>
-# SweetIQ content pack for Power BI
+   
+# SweetIQ content pack for Power&nbsp;BI
 
 The Power BI content pack pulls data from your SweetIQ account and generates set of out of box content allowing you to easily explore your data. Use the SweetIQ content pack to analyze data about your locations, listings, ratings and reviews. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 
 Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/services/sweetiq) for Power BI.
 
 
-1. In the navigation pane on the left, click **﻿Get Data.**﻿
+1. In the navigation pane on the left, click **Get Data.**
 
 	![](media/powerbi-content-pack-sweetiq/GetData.png)
 
-2. Select **﻿SweetIQ**﻿ and click **﻿Connect.**
+2. Select **SweetIQ** and click **Connect.**
 
 	![](media/powerbi-content-pack-sweetiq/Entry.png)
 
@@ -35,7 +36,7 @@ Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/
 
 	![](media/powerbi-content-pack-sweetiq/Parameter.png)
 
-4. Select **﻿Key**﻿ authentication type and provide your Sweet IQ API Key. This is typically an alpha-numeric value. For more details on finding this value, see below.
+4. Select **Key** authentication type and provide your Sweet IQ API Key. This is typically an alpha-numeric value. For more details on finding this value, see below.
 
 	![](media/powerbi-content-pack-sweetiq/Credentials.png)
 

@@ -3,7 +3,7 @@
    description="Webtrends content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,13 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
-   ms.author="maggies"/>
-# Webtrends content pack for Power BI
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
+   
+# Webtrends content pack for Power&nbsp;BI
 
 The Webtrends content pack for Power BI includes a variety of out of box metrics such total page views and visits by traffic source. Visualizing your Webtrends data in Power BI starts by connecting to your Webtrends account. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once per day.
 
-[Connect to the Webtrends content pack for Power BI.](https://app.powerbi.com/getdata/services/webtrends)
+Connect to the [Webtrends content pack for Power BI.](https://app.powerbi.com/getdata/services/webtrends)
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
@@ -52,7 +53,7 @@ You can change this dashboard to display your data the way you want. Click a til
 ### Troubleshooting
 You may hit an issue while the content pack is loading, after you've provided your credentials. If you see the "Oops" message during the loading, please review the troubleshooting suggestions below. If you're still having issues please file a support ticket at https://support.powerbi.com
 
-1. The correct Profile ID is being used (see the ﻿Finding Webtrends Parameters﻿ section below).
+1. The correct Profile ID is being used (see the Finding Webtrends Parameters section below).
 2. The user has access to the following reports:
     - On-Site Searches - 34awBVEP0P6
     - Exit Pages - 7FshY8eP0P6

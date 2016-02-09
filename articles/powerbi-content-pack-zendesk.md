@@ -3,7 +3,7 @@
    description="Zendesk content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,13 +14,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2015"
+   ms.date="02/08/2016"
    ms.author="tpalmer"/>
-# Zendesk content pack for Power BI
+# Zendesk content pack for Power&nbsp;BI
 
-To analyze your Zendesk data in Power BI, you must connect to Zendesk using your Zendesk **admin** account credentials so that Power BI will be able to import  your data.  You will get a Power BI dashboard and a set of Power BI reports that provide insights about your ticket volumes and agent performance. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once a day. 
+The Zendesk content pack offers a Power BI dashboard and a set of Power BI reports that provide insights about your ticket volumes and agent performance. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once a day. 
 
-Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/zendesk) for Power BI.
+Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/zendesk) or read more about the [Zendesk integration](https://powerbi.microsoft.com/integrations/zendesk) with Power BI. 
+
+Note: A Zendesk Admin account is required to connect. More details on requirements below.
+
+##How to connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -34,7 +38,7 @@ Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/z
 
     ![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
 
-4.  Provide the URL associated with your account. This will be in the form **https://company.zendesk.com**.
+4.  Provide the URL associated with your account. This will be in the form **https://company.zendesk.com**, see details on [finding these parameters](#FindingParams) below.
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
 
@@ -50,9 +54,38 @@ Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/z
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskDash.png)
 
-You can change this dashboard to display your data any way you want. It allows you to ask a [question in Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) [change the tiles in the dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md).
+**What Now?**
 
-##See Also:
--  [Get started with Power BI](powerbi-service-get-started.md)
--  [Get Data](powerbi-service-get-data.md)
--  [Power BI blog: Better insights into your Zendesk customer support with Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/03/24/better-insights-into-your-zendesk-customer-support-with-power-bi.aspx)
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## What's included
+
+The Power BI content pack includes data on the following:
+- Users (end users and agents)  
+- Organizations  
+- Groups  
+- Tickets  
+
+There's also a set of measures that have been calculated, such as Average Wait Time and Tickets Solved in the Last 7 days. A full list is included in the content pack. 
+
+## System Requirements
+
+A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](powerbi-desktop-connect-to-data/).
+
+## Finding parameters 
+<a name="FindingParams"></a>
+
+Your Zendesk URL will be the same as the URL you use to sign into your Zendesk account. If you're not sure of your Zendesk URL, you can use the Zendesk [login help](https://www.zendesk.com/login/).
+
+## Troubleshooting
+If you are having issues connecting, please check your Zendesk URL and confirm you're using an Zendesk administrator account.
+
+### See also
+- [Get started with Power BI](powerbi-service-get-started.md)
+- [Get data](powerbi-service-get-data.md)

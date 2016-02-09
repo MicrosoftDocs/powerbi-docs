@@ -3,7 +3,7 @@
    description="Smartsheet content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="tpalmer" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,21 +14,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
-   ms.author="maggies"/>
-# Smartsheet content pack for Power BI
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
+   
+# Smartsheet content pack for Power&nbsp;BI
 
-Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet content pack for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account.
-
-**Important:**
-
--   Smartsheet admin account is preferred to connect and load the Power BI content pack as it has additional access
--   Smartsheet content pack doesn't currently allow you to access individual sheet, stay tuned for more updates
-
+Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet content pack for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account. You can also use the [Power BI Desktop](powerbi-desktop-connect-to-data) to connect directly to individual sheets in your account. 
 
 Connect to the [Smartsheet content pack](https://app.powerbi.com/groups/me/getdata/services/smartsheet) for Power BI.
 
-
+Note: Smartsheet admin account is preferred to connect and load the Power BI content pack as it has additional access. 
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 

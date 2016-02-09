@@ -102,7 +102,7 @@ Here’s a C# code sample to create an Azure AD authorization url with a query s
 <a name="acquire"/>
 ### Step 4 – Acquire an Azure AD access token using authorization code
 
-To make a data request to the Power BI REST service, you need to supply an access token. In a .NET web app, you use the [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/library/azure/jj573266.aspx) to get an access token. If you do not have [Windows Azure Authentication Library (ADAL)](https://msdn.microsoft.com/library/azure/jj573266.aspx), see [How to add Azure Active Directory Authentication Library](#add).
+To make a data request to the Power BI REST service, you need to supply an access token. In a .NET web app, you use the [Azure AD Authentication Library for .NET nuget package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) to get an access token. If you do not have Windows Azure Authentication Library (ADAL), see [How to add Azure Active Directory Authentication Library](#add).
 
 After your app redirects to the Azure AD authority Uri and acquires an authorization code, your app gets a token by authorization code. Here’s how your app can get the authorization code and get an access token:
 **In a Redirect class**:
@@ -281,7 +281,7 @@ In a .NET client app, you use **AuthenticationContext** in the Active Directory 
 4. Choose Active Directory Authentication Library in the list of packages, and click Install.
 
 ## Related topics
-* [Azure AD Authentication Library for .NET](https://msdn.microsoft.com/library/azure/jj573266.aspx)
+* [Azure AD Authentication Library for .NET nuget package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 * [Active Directory Authentication Library (ADAL) v1 for .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
 * [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx)
 * [Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
