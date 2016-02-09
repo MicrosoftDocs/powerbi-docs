@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/25/2016"
+ms.date="02/09/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise in-depth
 
@@ -55,9 +55,9 @@ However, in some cases, it could be an e-mail address like nancyt@contoso.onmicr
 
 Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [Learn more](https://msdn.microsoft.com/library/ms677605.aspx)
 
-### Other DirectQuery data sources
+### Other data sources
 
-For SQL Server, and SAP HANA, the gateway will always connect using the credentials you specified when you setup the data source within Power BI. We will not connect using the individual user trying to run the report.
+For data sources that are using DirectQuery, or are configured for scheduled refresh, the gateway will always connect using the credentials you specified when you setup the data source within Power BI. We will not connect using the individual user trying to run the report.
 
 ## Usernames in Analysis Services
 
@@ -69,7 +69,7 @@ Models provide security based on user roles. Roles are defined for a particular 
 
 ### Row-level security
 
-Models also provide dynamic, row-level security. Unlike having at least one role in which users belong to, dynamic security is not required for any tabular model. At a high-level, dynamic security defines a users read access to data right down to a particular row in a particular table. Similar to roles, dynamic row-level security relies on a user’s Windows username.
+Row-level security is only available with an Analysis Services live connection. Models can provide dynamic, row-level security. Unlike having at least one role in which users belong to, dynamic security is not required for any tabular model. At a high-level, dynamic security defines a users read access to data right down to a particular row in a particular table. Similar to roles, dynamic row-level security relies on a user’s Windows username.
 
 In Power BI, a users ability to query and view model data are determined first by the roles their Windows user account are a member of and second, by dynamic row-level security, if configured.
 
@@ -131,7 +131,7 @@ Sometimes installing the gateway fails. Or, maybe the gateway seems to install o
 
 In other cases, there might be issues with the type of e-mail address users sign in with, or Analysis Services’ inability to resolve an effective username. If you have multiple domains with trusts between them, and your Active Directory server is in one and Analysis Services in another, this sometimes can cause some problems.
 
-Rather than go into troubleshooting gatewa issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md). Hopefully you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
+Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md). Hopefully you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
 ## Ports
 The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://msdn.microsoft.com/library/azure/ee732535.aspx)
@@ -225,6 +225,8 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 [Manage your enterprise data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
+
+[Manage your enterprise data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
 
 [Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-upgrade-as-connector.md)
 

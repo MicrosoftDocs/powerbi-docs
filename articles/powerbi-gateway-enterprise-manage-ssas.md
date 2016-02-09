@@ -13,11 +13,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/25/2016"
+ms.date="02/09/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - Analysis Services
 
-Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
+Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
 
 ## Add a gateway
 
@@ -53,9 +53,15 @@ The **Username** and **Password** that you enter will be used by the gateway to 
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-ssas.png)
 
-You can click **Add** after you have everything filled in.  You can now use this data source for live queries against an Analysis Services instance that is on premises.  You will see *Connection Successful* if it succeeded.
+You can click **Add** after you have everything filled in.  You can now use this data source for scheduled refresh, or live connections, against an Analysis Services instance that is on premises.  You will see *Connection Successful* if it succeeded.
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings4-ssas.png)
+![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
+
+### Advanced settings
+
+You can configure the privacy level for your data source. This controls how data can be mashed up. This is only used for scheduled refresh. It does not apply to live connections. [Learn more](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
+
+![](media/powerbi-gateway-enterprise-manage/datasourcesettings9.png)
 
 ## 'Get Data' experience for Analysis Services in Power BI site
 
@@ -67,14 +73,13 @@ To make use of data sources for Analysis Services, you can create a report withi
 
 Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [Learn more](https://msdn.microsoft.com/library/ms677605.aspx)
 
-
 ## Remove a data source
 
 Removing a data source will break any dashboards or reports that rely on the given data source.  
 
 To remove a Data Source, go to the Data Source > **Remove**.
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings6-ssas.png)
+![](media/powerbi-gateway-enterprise-manage/datasourcesettings6.png)
 
 ## Manage administrators
 

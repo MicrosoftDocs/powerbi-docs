@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2016"
+   ms.date="02/09/2016"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Personal Gateway
 
@@ -90,4 +90,4 @@ If you are receiving an error with dashboard tiles refreshing, please refer to t
 
 [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
