@@ -73,7 +73,7 @@ Note: This content pack requires access to the VSO account which has OAuth enabl
 
 Visual Studio Online in Power BI provides a variety of tables and fields for your reporting. The full list of what is included in the content pack can be found here:  <https://www.visualstudio.com/get-started/report/vso-pbi-whats-available-vs>
 
-## System Requirements
+## System requirements
 
 -   Access to the Visual Studio Online account with permission to collect the data using the REST API.  
 -   Permission granted to the “Power BI for VSO” application during initial connection. To disconnect Power BI and remove its authorization to access your Visual Studio Online account, you can Revoke access in Visual Studio Online. See <https://www.visualstudio.com/get-started/setup/change-application-access-policies-vs>.  
@@ -116,7 +116,7 @@ Connecting with your work or school account (Azure Active Directory / AAD):
 
 If you see this dialog, and you want to connect with your work or school account (Azure Active Directory), make sure to click the link on the left to sign in with that account – do not provide your AAD credentials on the right hand side, as that is expecting a Microsoft account (your personal account).
 
-**Visual Studio Online deployments that do not support oAuth2**
+**Visual Studio Online deployments that do not support oAuth2**  
 Your VSO administrator may have disabled oAuth for your Visual Studio Online deployment.  When this happens you will not be able to use the Visual Studio content pack for Power BI at this time.  
 
 ![](media/powerbi-content-pack-visual-studio-online/oauth.png)
