@@ -3,7 +3,7 @@
    description="Azure Mobile Engagement content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="maggiesMSFT"
+   authors="theresapalmer"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -14,8 +14,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
-   ms.author="maggies"/>
+   ms.date="02/08/2015"
+   ms.author="tpalmer"/>
+   
 # Azure Mobile Engagement content pack for Power&nbsp;BI
 
 The Power BI Azure Mobile Engagement content pack allows to you quickly gain insights into your app data.

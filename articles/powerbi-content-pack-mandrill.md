@@ -3,7 +3,7 @@
    description="Mandrill content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,17 +14,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/02/2015"
-   ms.author="maggies"/>
-# Mandrill content pack for Power BI
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
+   
+# Mandrill content pack for Power&nbsp;BI
 
 The Power BI content pack pulls data from your Mandrill account and generates a dashboard, a set of reports and a dataset to allow you to explore your data. Use Mandrill's analytics to quickly gain insights into your newsletter or marketing campaign. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 
-[Connect to the Mandrill content pack for Power BI.](http://app.powerbi.com/getdata/services/mandrill)
+Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getdata/services/mandrill)
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 
-	![](media/powerbi-content-pack-mandrill/GetData.PNG)﻿
+	![](media/powerbi-content-pack-mandrill/GetData.PNG)
 
 2. In the **Services** box, select **Get**.
 
@@ -54,7 +55,6 @@ You can change this dashboard to display your data the way you want. For example
 
 [Get started in Power BI](powerbi-service-get-started.md)
 
-﻿[Get data in Power BI](powerbi-service-get-data.md)
+[Get data in Power BI](powerbi-service-get-data.md)
 
-﻿
 

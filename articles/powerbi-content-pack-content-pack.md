@@ -3,7 +3,7 @@
    description="comScore Digital Analytix content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,17 +14,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
-   ms.author="maggies"/>
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
+   
 # comScore Digital Analytix content pack for Power&nbsp;BI
 
 Visual and explore your comScore Digital Analytix data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 
-[Connect to the comScore content pack for Power BI.](https://app.powerbi.com/getdata/services/comscore)
+Connect to the [comScore content pack for Power BI.](https://app.powerbi.com/getdata/services/comscore)
 
->**Notes:**
->
->- To connect to the content pack you need a comScore DAx user account and have comScore API access. Please contact your comScore DAx admin to confirm your account.
+Note: To connect to the content pack you need a comScore DAx user account and have comScore API access. Please contact your comScore DAx admin to confirm your account.
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
