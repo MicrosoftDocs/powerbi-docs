@@ -38,9 +38,9 @@ Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/servi
 
 	![](media/powerbi-content-pack-circuit-id/circuitID_login.png)
 
-5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*:
+5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk.
 
-6. Select the Circuit ID dashboard.
+6. Select the Circuit ID dashboard.
 	This is the default dashboard that Power BI creates to display your data. You can modify this dashboard to display your data in any way you want.
 
 ![](media/powerbi-content-pack-circuit-id/circuitID_dashboard_chrome.png)
