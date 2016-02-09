@@ -23,25 +23,25 @@ Visual and explore your Stripe data in Power BI with the Power BI content pack. 
 
 Connect to the [Stripe content pack for Power BI](https://app.powerbi.com/getdata/services/stripe).
 
-1. Select Get Data at the bottom of the left navigation pane.
+1. Select Get Data at the bottom of the left navigation pane.  
 
-   ![](media/powerbi-content-pack-stripe/getdata.png)
+   ![](media/powerbi-content-pack-stripe/getdata.png)
 
-2. In the **Services** box, select **Get**.
- 
+2. In the **Services** box, select **Get**.  
+
    ![](media/powerbi-content-pack-stripe/services.png)  
 
-3. Select **Stripe** &gt; **Connect**.
+3. Select **Stripe** &gt; **Connect**.  
 
-   ![](media/powerbi-content-pack-stripe/GetData1.png)  
+   ![](media/powerbi-content-pack-stripe/GetData1.png)  
 
-4. Provide your Stripe [API key](https://dashboard.stripe.com/account/apikeys) to connect. 
- 
+4. Provide your Stripe [API key](https://dashboard.stripe.com/account/apikeys) to connect.  
+
    ![](media/powerbi-content-pack-stripe/creds.png)
 
 
 5. The import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane, marked with an asterisk. Select the dashboard to view your imported data.
 
-   ![](media/powerbi-content-pack-stripe/dashboard.png)
- 
+   ![](media/powerbi-content-pack-stripe/dashboard.png)
+
 You can change this dashboard to display your data the way you want. Click a tile to open the underlying report and change the tiles in the dashboard.
