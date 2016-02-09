@@ -3,7 +3,7 @@
    description="SendGrid content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
