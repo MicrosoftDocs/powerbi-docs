@@ -65,17 +65,18 @@ Note: A Zendesk Admin account is required to connect. More details on requiremen
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
+
 The Power BI content pack includes data on the following:
 - Users (end users and agents)  
 - Organizations  
 - Groups  
 - Tickets  
 
-There's also a set of measures that have been calculated, such as Average Wait Time and Tickets Solved in the Last 7 days 
+There's also a set of measures that have been calculated, such as Average Wait Time and Tickets Solved in the Last 7 days. A full list is included in the content pack. 
 
 ## System Requirements
 
-A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-connect-to-data/).
+A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](powerbi-desktop-connect-to-data/).
 
 ## Finding parameters 
 <a name="FindingParams"></a>
