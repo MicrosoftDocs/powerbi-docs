@@ -93,7 +93,7 @@ This Month Inbound Messages Count
 This Month Outbound Messages Price  
 This Month Outbound Messages Count
 
-**Known Iusses**
+**Known Issues**
 
 If you have a very large amount of data in the past 30 days (hundreds of thousands of transactions), the data retrieval step might fail. We are aware of the problem and working on solving it. Meanwhile, if you hit this issue please use the support link at the top of your Power BI page to let us know and we'll contact you for further investigations.
 
