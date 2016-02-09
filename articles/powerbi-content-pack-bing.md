@@ -3,7 +3,7 @@
    description="Bing content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="tpalmer"
+   authors="theresapalmer"
    manager="mblythe"
    editor=""
    tags=""/>
@@ -14,19 +14,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="02/08/2016"
    ms.author="tpalmer"/>
 # Bing content pack for Power&nbsp;BI
 
 The Bing content pack will allow you to view analytics around Internet search activity for a term of your choice.
 
-
-Notes:
-
-Bing tiles will automatically update approximately every ~5 minutes and the only tile that can be selected is the News tile, which will take you to the corresponding news article. Tiles from the Bing content pack do not render in the mobile applications, we’re working to resolve this issue.
-
 Connect to the [Bing content pack](https://app.powerbi.com/groups/me/getdata/services/bing) for Power BI.
 
+Notes: Bing tiles will automatically update approximately every ~5 minutes and the only tile that can be selected is the News tile, which will take you to the corresponding news article. Tiles from the Bing content pack do not render in the mobile applications, we’re working to resolve this issue.
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 

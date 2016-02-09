@@ -14,33 +14,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
+   ms.date="02/08/2016"
    ms.author="tpalmer"/>
-# SendGrid content pack for Power BI
+   
+# SendGrid content pack for Power&nbsp;BI
 
 The Power BI content pack for SendGrid allows you to extract insights and statistics from your SendGrid account. Using the SendGrid content pack you can visualize your SendGrid statistics in a dashboard.
-
- 
-
-The following metrics are available in the SendGrid dashboard:
-
--   Overall email statistics - Requests, Delivered, Bounced, Spam Blocked, Spam Report, etc.
-
--   Email statistics by category
-
--   Email statistics by geography
-
--   Email statistics by ISP
-
--   Email statistics by device, client, browser
-
- 
 
 Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/sendgrid) for Power BI.
 
 ### Import data from your SendGrid account
-
- 
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
@@ -63,6 +46,20 @@ Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/
     ![](media/powerbi-content-pack-sendgrid/PBI_SendGridDash.png)
 
 You can change this dashboard to display your data the way you want it. Plus you can ask a [question in ](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard. 
+
+### What's included
+
+The following metrics are available in the SendGrid dashboard:
+
+-   Overall email statistics - Requests, Delivered, Bounced, Spam Blocked, Spam Report, etc.
+
+-   Email statistics by category
+
+-   Email statistics by geography
+
+-   Email statistics by ISP
+
+-   Email statistics by device, client, browser
 
 ### Scheduled Refresh
 

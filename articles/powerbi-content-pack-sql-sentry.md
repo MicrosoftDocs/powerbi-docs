@@ -3,7 +3,7 @@
    description="SQL Sentry content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,20 +14,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
-   ms.author="maggies"/>
-# SQL Sentry content pack for Power BI
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
+   
+# SQL Sentry content pack for Power&nbsp;BI
 
-﻿Analyzing your performance data collected by SQL Sentry is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data.
-
-**Requirements:**
-
--   The SQL Sentry account you use for connecting to http://cloud.sqlsentry.com. 
--   A Database ID you will monitor.  Instructions for where to find the Database ID are below.
+Analyzing your performance data collected by SQL Sentry is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data.
 
 Connect to the [SQL Sentry content pack](https://app.powerbi.com/groups/me/getdata/services/sql-sentry) for Power BI.
 
-After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
+Note: Access to a SQL Sentry account you use for connecting to http://cloud.sqlsentry.com and a Database ID you will monitor is required to connect.  Instructions for where to find the Database ID are below.
+
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 

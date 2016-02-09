@@ -16,6 +16,7 @@
    ms.workload="powerbi"
    ms.date="02/08/2015"
    ms.author="tpalmer"/>
+   
 # Microsoft Azure Enterprise content pack for Power&nbsp;BI
 
 Explore and monitor your Microsoft Azure Enterprise data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.

@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2016"
+   ms.date="02/08/2016"
    ms.author="tpalmer"/>
    
-# Application Insights content pack for Power BI
+# Application Insights content pack for Power&nbsp;BI
 
 Use Power BI to create powerful custom dashboards from [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) telemetry. Envision your app telemetry in new ways. Combine metrics from multiple apps or component services onto one dashboard. This first release of the Power BI content pack for Application Insights includes widgets for common usage-related metrics such as active users, page view, sessions, browser and OS version, and geographic distribution of users in a map.
 
