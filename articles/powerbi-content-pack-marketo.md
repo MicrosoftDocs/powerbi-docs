@@ -21,7 +21,7 @@
 
 The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data. 
 
-Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/marketo)for Power BI.
+Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/marketo) for Power BI.
 
 Requirements:
 
