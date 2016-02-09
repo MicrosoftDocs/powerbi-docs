@@ -86,8 +86,8 @@ The following data is available from GitHub in Power BI:     
 ## System requirements
 
 -   The GitHub account that has access to the repo.  
--   Permission granted to the Power BI for GitHub app during first login. See details below on revoking access.
--   Sufficient API calls available to pull and refresh the data.
+-   Permission granted to the Power BI for GitHub app during first login. See details below on revoking access.  
+-   Sufficient API calls available to pull and refresh the data.  
 
 ### De-authorize Power BI
 
@@ -106,10 +106,10 @@ The first part "Azure" is the owner and the second part "azure-sdk-for-php" is t
     <https://github.com/Azure/azure-sdk-for-php> .
 
 ## Troubleshooting
-If necessary, you can verify your GitHub credentials.
-1. In another browser window, go to the GitHub web site and log in to GitHub. You can see you’re logged in, in the upper-right corner of the GitHub site.  
-2. In GitHub, navigate to the URL of the repo you plan to access in Power BI. For example: https://github.com/dotnet/corefx.
-3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.
+If necessary, you can verify your GitHub credentials.  
+1. In another browser window, go to the GitHub web site and log in to GitHub. You can see you’re logged in, in the upper-right corner of the GitHub site.    
+2. In GitHub, navigate to the URL of the repo you plan to access in Power BI. For example: https://github.com/dotnet/corefx.  
+3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.  
 
 ### See also
 - [Get started with Power BI](powerbi-service-get-started.md)
