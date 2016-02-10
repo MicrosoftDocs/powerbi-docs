@@ -76,7 +76,7 @@ New items are marked with a yellow asterisk ![](media/powerbi-service-get-data-f
 
 ### What's next?
 
-Once you get data and reports from your file into Power BI, it's time to explore. If your file already had reports in it, they'll appear in My Workspace > Reports. If, your file just had data, you can create new reports by [exploring your dataset](powerbi-service-explore-a-dataset.md).
+Once you get data and reports from your file into Power BI, it's time to explore. If your file already had reports in it, they'll appear in **My Workspace** > **Reports**. If, your file just had data, you can create new reports by exploring your dataset. Just right click the new dataset and then click **Explore**.
 
 
 ### More about files in Power BI
