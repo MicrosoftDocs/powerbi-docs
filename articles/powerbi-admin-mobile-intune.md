@@ -45,7 +45,7 @@ To get the app url for iOS, we will need to get it from iTunes.
 
 4. Select the **Get** drop down and select **Copy Link**.
 
-    ![](/media/powerbi-admin-mobile-intune/itunes-url.png)
+    ![](media/powerbi-admin-mobile-intune/itunes-url.png)
 
 It should look similar to the following.
 
@@ -65,7 +65,7 @@ You can create the application, or the policy first. The order in which they are
 
 1. Select **Policy** > **Configuration Policies**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-policy.png)
+    ![](media/powerbi-admin-mobile-intune/intune-policy.png)
 
 2. Select **Add...**.
 
@@ -89,7 +89,7 @@ You can create the application, or the policy first. The order in which they are
 
 2. Enter the app url, that we got from [Step 1](#step-1-get-the-url-for-the-application), and select **Next**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-add-software-ios1.png)
+    ![](media/powerbi-admin-mobile-intune/intune-add-software-ios1.png)
     
 3. Provide a **Publisher**, **Name** and **Description**. You can optionally provide an **Icon**. The **Category** is for the Company Portal app. Once you are done, select **Next**.
 
@@ -99,7 +99,7 @@ You can create the application, or the policy first. The order in which they are
 
 > NOTE: You may not see it show up in the app list until you refresh the page. You can click on **Overview** and back to **Apps** to get the page to reload.
 
-![](/media/powerbi-admin-mobile-intune/intune-add-software-ios2.png)
+![](media/powerbi-admin-mobile-intune/intune-add-software-ios2.png)
 
 ### Android
 
@@ -107,7 +107,7 @@ You can create the application, or the policy first. The order in which they are
 
 2. Enter the app url, that we got from [Step 1](#step-1-get-the-url-for-the-application), and select **Next**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-add-software-android1.png)
+    ![](media/powerbi-admin-mobile-intune/intune-add-software-android1.png)
     
 3. Provide a **Publisher**, **Name** and **Description**. You can optionally provide an **Icon**. The **Category** is for the Company Portal app. Once you are done, select **Next**.
 
@@ -115,7 +115,7 @@ You can create the application, or the policy first. The order in which they are
 
 > NOTE: You may not see it show up in the app list until you refresh the page. You can click on **Overview** and back to **Apps** to get the page to reload.
 
-![](/media/powerbi-admin-mobile-intune/intune-add-software-android2.png)
+![](media/powerbi-admin-mobile-intune/intune-add-software-android2.png)
 
 ## Step 4: Deploy the application
 
@@ -125,17 +125,17 @@ After you have added the application, you will need to deploy it so that it is a
 
 1. On the apps screen, select the app you created. Then select the **Manage Deployment...** link.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-deploy-ios1.png)
+    ![](media/powerbi-admin-mobile-intune/intune-deploy-ios1.png)
 
 2. In the **Select Groups** screen, you can choose which groups you want to deploy this app to. Select **Next**.
 
 3. In the **Deployment Action** screen, you can choose how you want to deploy this app. Selecting **Available Install**, or **Required Install**, will make the app available in the Company Portal for users to install on-demand. After you are done making your selection, select **Next**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-deploy-ios2.png)
+    ![](media/powerbi-admin-mobile-intune/intune-deploy-ios2.png)
 
 4. In the **Mobile App Management** screen, you can select the Mobile App Management policy that we created in [Step 2](#step-2-create-a-mobile-application-management-policy). It will default to the policy you made, if that is the only iOS policy available. Select **Next**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-deploy-ios3.png)
+    ![](media/powerbi-admin-mobile-intune/intune-deploy-ios3.png)
 
 5. In the **VPN Profile** screen, you can select a policy if you have one for your organization. It defaults to **None**. Select **Next**.
 
@@ -147,17 +147,17 @@ After you have deployed the app, it should show **Yes** for deployed, in the app
 
 1. On the apps screen, select the app you created. Then select the **Manage Deployment...** link.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-deploy-android1.png)
+    ![](media/powerbi-admin-mobile-intune/intune-deploy-android1.png)
 
 2. In the **Select Groups** screen, you can choose which groups you want to deploy this app to. Select **Next**.
 
 3. In the **Deployment Action** screen, you can choose how you want to deploy this app. Selecting **Available Install**, or **Required Install**, will make the app available in the Company Portal for users to install on-demand. After you are done making your selection, select **Next**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-deploy-android2.png)
+    ![](media/powerbi-admin-mobile-intune/intune-deploy-android2.png)
 
 4. In the **Mobile App Management** screen, you can select the Mobile App Management policy that we created in [Step 2](#step-2-create-a-mobile-application-management-policy). It will default to the policy you made, if that is the only Android policy available. Select **Finish**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-deploy-android3.png)
+    ![](media/powerbi-admin-mobile-intune/intune-deploy-android3.png)
 
 After you have deployed the app, it should show **Yes** for deployed, in the apps page.
 
@@ -169,23 +169,23 @@ You will install the application through the Company Portal app. If you haven't 
 
 2. If you don't see the Power BI app listed as a featured app, select **Company Apps**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-companyportal1.png)
+    ![](media/powerbi-admin-mobile-intune/intune-companyportal1.png)
 
 3. Select the Power BI app that you deployed.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-companyportal2.png)
+    ![](media/powerbi-admin-mobile-intune/intune-companyportal2.png)
 
 4. Select **Install**.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-companyportal3.png)
+    ![](media/powerbi-admin-mobile-intune/intune-companyportal3.png)
 
 5. If you are on iOS, it will push the app to you. Select **Install** on the push dialog.
 
-    ![](/media/powerbi-admin-mobile-intune/intune-companyportal5.png)
+    ![](media/powerbi-admin-mobile-intune/intune-companyportal5.png)
     
 After it is installed, you will see that it is **Managed by your company**. If you enabled access with a pin, in the policy, you will see the following.
 
-![](/media/powerbi-admin-mobile-intune/intune-powerbi-pin.png)
+![](media/powerbi-admin-mobile-intune/intune-powerbi-pin.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9HF-qsdQvHw?list=PLv2BtOtLblH1nPVPU2etFzTNmpz49dwXm" frameborder="0" allowfullscreen></iframe>
 
