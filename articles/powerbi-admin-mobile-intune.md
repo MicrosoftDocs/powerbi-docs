@@ -1,4 +1,4 @@
-.<properties
+<properties
 pageTitle="Configure mobile apps with Intune"
 description="How to configure the Power BI Mobile apps with Microsoft Intune. This includes how to add, and deploy, the application. And, how to create the mobile application policy to control security."
 services="powerbi"
