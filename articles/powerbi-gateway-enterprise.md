@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/25/2016"
+ms.date="02/09/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise
 
@@ -39,9 +39,22 @@ The *gateway* is different from a *data source*. The gateway is more of the prox
 
 ## Do I need the Power BI Gateway - Enterprise?
 
-Before you install the gateway, it’s important to know whether or not use you really need it.  It really depends on your data source and whether you want to use DirectQuery or not.
+Before you install the gateway, it’s important to know whether or not use you really need it.  It really depends on your data source and your organization needs.
 
-Currently, the gateway allows for the use of DirectQuery to an on-premises SQL Server or SAP HANA, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services.
+The gateway allows for the use of DirectQuery to an on-premises SQL Server or SAP HANA, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services. The enterprise gateway can also be used with scheduled refresh for data that you have imported into Power BI.
+
+### List of available data source types
+
+The following data sources are available for scheduled refresh.
+
+- SQL Server
+- Analysis Services
+- SAP HANA
+- File
+- Folder
+- Oracle
+- Teradata
+- SharePoint list (on-premises)
 
 ## Setting up the Power BI Gateway - Enterprise for the first time
 
@@ -127,6 +140,8 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 [Manage your enterprise data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
 
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
+
+[Manage your enterprise data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
 
 [Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
 
