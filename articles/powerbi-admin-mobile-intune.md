@@ -121,7 +121,7 @@ You can create the application, or the policy first. The order in which they are
 
 After you have added the application, you will need to deploy it so that it is available to your end users. This is the step where you will bind the policy you created with the app.
 
-## iOS
+### iOS
 
 1. On the apps screen, select the app you created. Then select the **Manage Deployment...** link.
 
@@ -143,7 +143,7 @@ After you have added the application, you will need to deploy it so that it is a
 
 After you have deployed the app, it should show **Yes** for deployed, in the apps page.
 
-## Android
+### Android
 
 1. On the apps screen, select the app you created. Then select the **Manage Deployment...** link.
 
