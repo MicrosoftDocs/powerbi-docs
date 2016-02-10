@@ -187,6 +187,8 @@ After it is installed, you will see that it is **Managed by your company**. If y
 
 ![](media/powerbi-admin-mobile-intune/intune-powerbi-pin.png)
 
+## Video
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9HF-qsdQvHw?list=PLv2BtOtLblH1nPVPU2etFzTNmpz49dwXm" frameborder="0" allowfullscreen></iframe>
 
 ## See also
