@@ -324,7 +324,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-migration-faq",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
-            "powerbi-admin-closing-your-account"
+            "powerbi-admin-closing-your-account",
+            "powerbi-admin-mobile-intune"
           ],
           "numberOfFeaturedArticles": 7
         },
