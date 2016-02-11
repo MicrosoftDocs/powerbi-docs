@@ -25,6 +25,41 @@ Check this page for known issues and recently-released features in Power BI Serv
 
 ## Recent updates
 
+**February 10, 2016**
+
+Today we released a long list of top-requested features. [Read the blog post](https://powerbi.microsoft.com/blog/power-bi-february-service-update/).
+
+***Sharing***
+
+- Share with users outside your organization
+
+- Request access to a dashboard
+
+***Admin Portal***
+
+- Easy user management with a link to the O365 Admin Center
+
+- Ability to disable publish to web
+
+- Prevent users from publishing content packs to the entire org
+
+- Ability to disable sharing content to external users
+
+***Quick Insights***
+
+- Quick Insights when you publish Power BI Desktop files
+
+***Dashboard***
+
+- Add Web content to your dashboard (via Widget)
+- Add video content to your dashboard (via Widget)
+- Zoom on dashboards
+
+***Connectivity***
+- Connect to files on your team SharePoint site through a URL
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-february-service-update/)
+
 **January 28, 2016**
 
 Updates to reports and visualizations:
