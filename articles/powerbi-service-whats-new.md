@@ -27,7 +27,7 @@ Check this page for known issues and recently-released features in Power BI Serv
 
 **February 10, 2016**
 
-Today we released a long list of top-requested features. [Read the blog post](https://powerbi.microsoft.com/en-us/blog/power-bi-february-service-update/).
+Today we released a long list of top-requested features. [Read the blog post](https://powerbi.microsoft.com/blog/power-bi-february-service-update/).
 
 ***Sharing***
 
@@ -58,7 +58,7 @@ Today we released a long list of top-requested features. [Read the blog post](ht
 ***Connectivity***
 - Connect to files on your team SharePoint site through a URL
 
-For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/power-bi-february-service-update/)
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-february-service-update/)
 
 **January 28, 2016**
 
