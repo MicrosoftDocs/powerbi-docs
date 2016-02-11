@@ -20,7 +20,7 @@
 
 Visualize and share your Insightly CRM data in Power BI with the Insightly content pack. Connect to Power BI using your Insightly API key to view and build reports and dashboards from your CRM data. With Power BI, you can analyze your data in new ways, create powerful graphs and charts, and display contacts, leads, and organizations on a map.
 
-Connect to the [Insight content pack](https://app.powerbi.com/getdata/services/insightly) for Power BI. 
+Connect to the [Insightly content pack](https://app.powerbi.com/getdata/services/insightly) for Power BI. 
 
 ## How to connect
 

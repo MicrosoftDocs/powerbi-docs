@@ -92,6 +92,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-circuit-id",
             "powerbi-content-pack-content-pack",
             "powerbi-content-pack-github",
+            "powerbi-content-pack-insightly",
             "powerbi-content-pack-lithium",
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
