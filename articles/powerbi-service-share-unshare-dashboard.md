@@ -75,6 +75,7 @@ When you share a dashboard:
 
     https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
 
+
 ## When you share with people outside your organization
 
 When you share with people outside your organization, they get an email with a link to the shared dashboard. They have to sign in to Power BI to see the dashboard. If they don't have a Power BI account, they can create one after clicking the link.
@@ -83,13 +84,21 @@ After they sign in, they see the shared dashboard in its own browser window with
 
 They can't edit any content in this dashboard or report. They can interact with the charts in the report (cross-highlight) and change any filters/slicers available on the reports connected to the dashboard.
 
-Note that only your intended recipient can see the shared dashboard. In the example above, only Vicki@contoso.com can see the dashboard. No-one else can see that dashboard, even if they have the link. Vicki has to use the same email address to access that dashboard – if she signs up with any other email address, she won't have access to the dashboard.
+Only your direct recipients can see the shared dashboard. In the example above, only Vicki@contoso.com can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
+
+People outside your organization can't see any data if role- or row-level security is implemented on Analysis Services tabular models on-premises.
+
+### Licensing requirements for sharing outside your organization
+
+Sharing content outside your organization has the same licensing requirements as sharing content within your organization.
+
+If you created your dashboard  with only free Power BI features, your recipients will just need a free Power BI license to view the content. If you used Power BI Pro features like groups or on-premises connectivity, your recipients will need a Power BI Pro license to view the content.
 
 ## Resharing
 
 Resharing allows your colleagues to forward the email invitation to others in your organization (the invitation expires after one month). Colleagues can also reshare through the Power BI service and mobile apps. As the owner of the dashboard, you can turn off resharing and you can also revoke resharing on an individual basis (see below).
 
-You can share with people outside your organization, but they can't reshare.
+People outside your organization can't reshare.
 
 ## Unshare a dashboard
 

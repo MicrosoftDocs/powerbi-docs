@@ -31,11 +31,12 @@ In any case, your colleagues need to [sign up for Power BI](https://powerbi.micr
 
 Here's a summary of how sharing works, depending on which you do. Details follow below.
 
-| Your colleagues can     | When you: Share a dashboard | When you: Create a dashboard in a group | When you: Publish a content pack |
-|:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|
-| View and interact       | yes                         | yes                                     | yes                              |
-| Edit the original       | no                          | yes                                     | no                               |
-| Create their own copies | no                          | yes                                     | yes                              |
+| Other people can        | When you: Share a dashboard | When you: Create a dashboard in a group | When you: Publish a content pack | When you: Publish to the web |
+|:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|:-----------------------------|
+| View and interact       | yes                         | yes                                     | yes                              | yes                          |
+| Edit the original       | no                          | yes                                     | no                               | no                           |
+| Create their own copies | no                          | yes                                     | yes                              | no                           |
+| Share with others       | colleagues, yes. others, no | yes                                     | no                               | no                           |
 
 ## Publish to the web
 
