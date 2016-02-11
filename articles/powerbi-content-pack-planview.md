@@ -3,7 +3,7 @@
    description="Planview Enterprise content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="jastru" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
-   ms.author="v-jastru"/>
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
 
-# Planview Enterprise content pack for Power BI  
+# Planview Enterprise content pack for Power&nbsp;BI
 
 With the Planview Enterprise content pack, you can visualize your resource and work management data in entirely new ways directly in Power BI. Use your Planview Enterprise sign-in credentials to interactively see your portfolio investment spend, understand where you are over and under budget, and know how well your projects align with your corporate strategic priorities. You can also extend the out-of-the box dashboard and reports to get the insights that are most important to you.
 
-[Connect to the Planview Enterprise content pack in Power BI](https://app.powerbi.com/getdata/services/planview-enterprise)
+Connect to the [Planview Enterprise content pack in Power BI](https://app.powerbi.com/getdata/services/planview-enterprise)
 
 >**Notes:**  
 >

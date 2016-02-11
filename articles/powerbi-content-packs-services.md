@@ -3,7 +3,7 @@
    description="Connect to services with content packs for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""/>
  
@@ -13,10 +13,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/21/2016"
-   ms.author="maggies"/>
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
 
-# Connect to services with content packs for Power BI
+# Connect to services with content packs for Power&nbsp;BI
 
 You can connect to content packs for a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. 
 
@@ -24,7 +24,7 @@ View all of the [content packs for services](https://app.powerbi.com/getdata/ser
 
 ![](media/powerbi-content-packs-services/PBI_contpk_all.png)
 
-Start with the dashboard and reports Power BI creates. Then you can customize them to highlight the information you care most about. The data is refreshed automatically once per day. 
+Start with the dashboard and reports Power BI creates. The content packs include content from the service focused on a specific scenario and do not include all the information from the service. See more on the appropriate documenation for more details. Once imported, you can customize them to highlight the information you care most about. The data is refreshed automatically once per day. 
 
 You can also use [Power BI Desktop](powerbi-desktop-get-the-desktop.md) to connect to some services, such as Google Analytics, and create your own customized dashboards and reports.  
 
@@ -53,5 +53,4 @@ Do you use a service you'd like to suggest for a Power BI content pack? Go to th
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-![](media/powerbi-content-pack-google-analytics/PBIproduct_icon_black_GA.png)
 

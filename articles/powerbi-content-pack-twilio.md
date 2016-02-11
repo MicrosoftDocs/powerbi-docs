@@ -3,7 +3,7 @@
    description="Twilio content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,17 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/06/2015"
-   ms.author="yshoukry"/>
-# Twilio content pack for Power BI
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
+   
+# Twilio content pack for Power&nbsp;BI
 
-The Microsoft Twilio content pack for Power BI allows you to retrieve your Twilio data to Power BI and creates an out of box dashboard and report that shows insights on your data. You can also create your custom reports and dashboard on the dataset Power BI creates.
-
-The data will be refreshed once a day so you are always looking at the latest data.
+The Microsoft Twilio content pack for Power BI allows you to retrieve your Twilio data to Power BI and creates an out of box dashboard and report that shows insights on your data. You can also create your custom reports and dashboard on the dataset Power BI creates. The data will be refreshed once a day so you are always looking at the latest data.
 
 Connect to the [Twilio content pack](https://app.powerbi.com/getdata/services/twilio) for Power BI.
-
-**Get started using the content pack** 
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -96,7 +93,7 @@ This Month Inbound Messages Count
 This Month Outbound Messages Price  
 This Month Outbound Messages Count
 
-**Known Iusses**
+**Known Issues**
 
 If you have a very large amount of data in the past 30 days (hundreds of thousands of transactions), the data retrieval step might fail. We are aware of the problem and working on solving it. Meanwhile, if you hit this issue please use the support link at the top of your Power BI page to let us know and we'll contact you for further investigations.
 

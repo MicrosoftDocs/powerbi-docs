@@ -3,7 +3,7 @@
    description="MailChimp content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,16 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/02/2015"
-   ms.author="yshoukry"/>
-# MailChimp content pack for Power BI
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
+
+# MailChimp content pack for Power&nbsp;BI
 
 The Power BI content pack pulls data from your MailChimp account and generates a dashboard, a set of reports and a dataset to allow you to explore your data. Use MailChimp’s analytics to quickly identify trends within your campaigns, reports, and individual subscribers. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 
-Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services/mailchimp)for Power BI.
-
-
-
+Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services/mailchimp) for Power BI.
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 

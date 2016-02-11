@@ -87,6 +87,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-application-insights",
             "powerbi-content-pack-at-internet",
             "powerbi-content-pack-azure-mobile",
+            "powerbi-content-pack-azure-search",
             "powerbi-content-pack-bing",
             "powerbi-content-pack-circuit-id",
             "powerbi-content-pack-content-pack",
@@ -110,13 +111,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-sql-sentry",
             "powerbi-content-pack-stripe",
             "powerbi-content-pack-sweetiq",
+            "powerbi-content-pack-troux",
             "powerbi-content-pack-twilio",
             "powerbi-content-pack-tygraph",
             "powerbi-content-pack-uservoice",
             "powerbi-content-pack-visual-studio-online",
             "powerbi-content-pack-vmob",
             "powerbi-content-pack-webtrends",
-            "powerbi-content-pack-zendesk"
+            "powerbi-content-pack-zendesk",
+            "powerbi-content-pack-zuora"
           ],
           "numberOfFeaturedArticles": 6
         },
@@ -261,9 +264,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-publish-from-excel",
             "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
             "powerbi-reduce-the-size-of-an-excel-workbook",
-            "powerbi-service-excel-data",
-            "powerbi-service-explore-a-dataset",
-            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
+            "powerbi-service-excel-data"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -321,7 +322,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-migration-faq",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
-            "powerbi-admin-closing-your-account"
+            "powerbi-admin-closing-your-account",
+            "powerbi-admin-mobile-intune"
           ],
           "numberOfFeaturedArticles": 7
         },

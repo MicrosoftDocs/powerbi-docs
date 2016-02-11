@@ -13,11 +13,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/25/2016"
+ms.date="02/09/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - SAP HANA
 
-Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources.
+Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SAP HANA data source either for scheduled refresh or for DirectQuery.
 
 ## Add a gateway
 
@@ -41,7 +41,7 @@ You can add a data source by either selecting a gateway and click **Add data sou
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings1.png)
 
-You can then select the **Data Source Type** from the list. Currently, only SQL Server is available.
+You can then select the **Data Source Type** from the list.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings2-sap.png)
 
@@ -51,9 +51,15 @@ You will then want to fill in the information for the data source which includes
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-sap.png)
 
-You can click **Add** after you have everything filled in.  You can now use this data source for DirectQuery against a SQL Server that is on-premises. You will see *Connection Successful* if it succeeded.
+You can click **Add** after you have everything filled in.  You can now use this data source for scheduled refresh, or DirectQuery, against a SAP HANA server that is on-premises. You will see *Connection Successful* if it succeeded.
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings4-sap.png)
+![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
+
+### Advanced settings
+
+You can configure the privacy level for your data source. This controls how data can be mashed up. This is only used for scheduled refresh. It does not apply to DirectQuery. [Learn more](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
+
+![](media/powerbi-gateway-enterprise-manage/datasourcesettings9.png)
 
 ## Remove a data source
 
@@ -61,7 +67,7 @@ Removing a data source will break any dashboards or reports that rely on the giv
 
 To remove a Data Source, go to the Data Source > **Remove**.
 
-![](media/powerbi-gateway-enterprise-manage/datasourcesettings6-sap.png)
+![](media/powerbi-gateway-enterprise-manage/datasourcesettings6.png)
 
 ## Manage administrators
 

@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/25/2016"
+ms.date="02/09/2016"
 ms.author="asaxton"/>
 # Troubleshooting the Power BI Gateway - Enterprise
 
@@ -117,6 +117,12 @@ This is usually caused by one of the following.
 
 [Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
 
+[Manage your enterprise data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
+
+[Manage your enterprise data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
+
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
+
+[Manage your enterprise data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
 
 [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)

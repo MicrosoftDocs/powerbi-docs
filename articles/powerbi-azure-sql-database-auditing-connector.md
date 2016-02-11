@@ -3,7 +3,7 @@
    description="SQL Database Auditing content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,15 +14,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2015"
+   ms.date="02/08/2016"
    ms.author="tpalmer"/>
 # SQL Database Auditing content pack for Power BI
 
 The Power BI content pack for Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) allows you to understand your database activity and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations. 
 
-The content pack imports data from all tables that contain “AuditLogs” in their name and append it to a single data model table named “AuditLogs”. The last 250k events will be included and the data will be refreshed daily.
-
 Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getdata/services/sql-db-auditing) for Power BI.
+
+Note: The content pack imports data from all tables that contain “AuditLogs” in their name and append it to a single data model table named “AuditLogs”. The last 250k events will be included and the data will be refreshed daily.
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -63,9 +63,13 @@ Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getd
 
 ![](media/powerbi-azure-sql-database-auditing-connector/PBI_SQLdbAuditingNewDash.png)
 
- 
 
-You can change this dashboard to display your data the way you want it. Plus you can ask a [question in ](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard. 
+ **What Now?**
 
- 
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**

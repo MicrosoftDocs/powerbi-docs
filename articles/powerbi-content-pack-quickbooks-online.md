@@ -3,7 +3,7 @@
    description="QuickBooks Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="mgblythe" 
+   authors="theresapalmer" 
    manager="mblythe" 
    editor=""
    tags=""/>
@@ -14,20 +14,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/02/2015"
-   ms.author="fazhu"/>
+   ms.date="02/08/2016"
+   ms.author="tpalmer"/>
 
-# QuickBooks Online content pack for Power BI
+# QuickBooks Online content pack for Power&nbsp;BI
 
 When you connect to your QuickBooks Online data from Power BI you immediately get a Power BI dashboard and Power BI reports that provide insights about your business cash flow, profitability, customers, and more. Use the dashboard and reports as they are, or customize them to highlight the information you care most about. The data is refreshed automatically once a day.
 
 Connect to the [QuickBooks Online content pack](https://dxt.powerbi.com/getdata/services/quickbooks-online) for Power BI.
 
-**Note:** If you're having issues connecting, see the **Troubleshooting** section at the end of this article.
+Note: To import your QuickBooks Online data into Power BI, you need to be an admin on your QuickBooks Online account and sign in with your admin account credentials.
 
-![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_Dash.png)
-
-**Important**: To import your QuickBooks Online data into Power BI, you need to be an admin on your QuickBooks Online account and sign in with your admin account credentials.
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
