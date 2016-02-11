@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/22/2015"
+   ms.date="02/11/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -456,7 +456,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-ipad-app-get-started",
             "powerbi-mobile-android-app-get-started",
             "powerbi-mobile-win10phone-app-get-started",
-            "powerbi-mobile-create-dashboard"
+            "powerbi-mobile-create-dashboard",
+            "powerbi-admin-mobile-intune"
           ],
           "numberOfFeaturedArticles": 9
         },
@@ -497,6 +498,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-mobile-dashboards-in-the-android-app",
             "powerbi-mobile-tiles-in-the-android-app",
+            "powerbi-mobile-report-page-tiles-in-the-android-app",
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app",
@@ -509,7 +511,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-mobile-dashboards-in-the-win10phone-app",
             "powerbi-mobile-tiles-in-the-win10phone-app",
+            "powerbi-mobile-report-page-tiles-in-the-win10phone-app",
             "powerbi-mobile-pin-dashboard-from-win10phone-app",
+            "powerbi-mobile-reports-in-the-windows-app",
             "powerbi-mobile-share-a-dashboard-from-the-win10phone-app",
             "powerbi-mobile-share-a-tile-from-the-win10phone-app",
             "powerbi-mobile-groups-in-the-win10phone-app",
