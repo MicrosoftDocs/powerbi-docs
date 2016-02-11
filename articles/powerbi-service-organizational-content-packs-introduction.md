@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2016"
+   ms.date="02/10/2016"
    ms.author="maggies"/>
 # Organizational content packs: Introduction
 
@@ -54,18 +54,18 @@ The lifecycle looks something like this:
 
   - Julio, another group member, didn't customize the original content pack. The new changes are automatically applied to his version of the content pack.  
 
- - Jane did customize the content pack. She receives a notification that there's a new version.  She can navigate to the content pack library and get the updated content pack without losing her personalized version.  She'll now have two versions: her personalized version and the updated content pack.
+ - Jane did customize the content pack. She receives a notification that there's a new version.  She can navigate to the content pack library and get the updated content pack without losing her personalized version. She'll now have two versions: her personalized version and the updated content pack.
 
 6. Say Nate changes the security settings. Julio and Jane no longer have access to the content. Or say they're removed from the Marketing group.
 
  -  Julio didn't customize the original content pack, so the content is automatically removed. 
  
- -  Jane did customize the content pack. The next time she opens the dashboard all tiles from the original content pack are gone, but tiles she pinned from other reports (that she still has permission to use) still appear. The associated reports and dataset and are no longer be available (and don't appear in her left navigation pane).
+ -  Jane did customize the content pack. The next time she opens the dashboard all tiles from the original content pack are gone, but tiles she pinned from other reports (that she still has permission to use) still appear. The associated reports and dataset are no longer available (and don't appear in her left navigation pane).
 
 8. Or Nate deletes the content pack.
 
  -  Julio didn't customize the original content pack, so the content is automatically removed. 
- -  Jane did customize the content pack. The  next time she opens the dashboard all tiles from the original content pack are gone, but tiles she pinned from other reports still appear. The associated reports and dataset are longer be available (and don't appear in her left navigation pane).
+ -  Jane did customize the content pack. The  next time she opens the dashboard all tiles from the original content pack are gone, but tiles she pinned from other reports still appear. The associated reports and dataset are longer available (and don't appear in her left navigation pane).
 
 ## Data security
 

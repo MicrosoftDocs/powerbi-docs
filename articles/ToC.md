@@ -264,9 +264,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-publish-from-excel",
             "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
             "powerbi-reduce-the-size-of-an-excel-workbook",
-            "powerbi-service-excel-data",
-            "powerbi-service-explore-a-dataset",
-            "powerbi-service-important-considerations-for-connecting-to-data-in-power-bi"
+            "powerbi-service-excel-data"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -324,7 +322,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-migration-faq",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
-            "powerbi-admin-closing-your-account"
+            "powerbi-admin-closing-your-account",
+            "powerbi-admin-mobile-intune"
           ],
           "numberOfFeaturedArticles": 7
         },
