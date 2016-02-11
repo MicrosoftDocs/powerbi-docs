@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How should I share my dashboard?"
-   description="How should I share my Power BI dashboard?"
+   pageTitle="How should I share dashboards and reports?"
+   description="How should I share Power BI dashboards and reports?"
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -14,14 +14,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2016"
+   ms.date="02/10/2016"
    ms.author="maggies"/>
 
-# How should I share my Power BI dashboard?  
+# How should I share Power BI dashboards and reports?  
 
-In Power BI you can share dashboards and tiles in several different ways. Each has its advantages. You can:
+In Power BI you can share dashboards, reports, and tiles in several different ways. Each has its advantages. You can:
 
-- Share a dashboard with your colleagues.
+- Publish a report to the web.
+- Share a dashboard with your colleagues and others.
 - Create a dashboard in a group, then share it with colleagues outside the group.
 - Create a content pack and publish it to your whole organization or to a security or distribution list.
 - Share a snapshot of a tile from a Power BI mobile app.
@@ -30,19 +31,24 @@ In any case, your colleagues need to [sign up for Power BI](https://powerbi.micr
 
 Here's a summary of how sharing works, depending on which you do. Details follow below.
 
-| Your colleagues can     | When you: Share a dashboard | When you: Create a dashboard in a group | When you: Publish a content pack |
-|:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|
-| View and interact       | yes                         | yes                                     | yes                              |
-| Edit the original       | no                          | yes                                     | no                               |
-| Create their own copies | no                          | yes                                     | yes                              |
+| Other people can        | When you: Share a dashboard | When you: Create a dashboard in a group | When you: Publish a content pack | When you: Publish to the web |
+|:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|:-----------------------------|
+| View and interact       | yes                         | yes                                     | yes                              | yes                          |
+| Edit the original       | no                          | yes                                     | no                               | no                           |
+| Create their own copies | no                          | yes                                     | yes                              | no                           |
+| Share with others       | colleagues, yes. others, no | yes                                     | no                               | no                           |
 
-## Share a dashboard with colleagues  
-When you share a dashboard with your colleagues, they can view it and interact with it, but can't edit it. They can see the same data that you see in the dashboard and reports. They can share the dashboard with other colleagues, if you allow them to. More about [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).
+## Publish to the web
+
+When you publish Power BI reports to the web, you can embed interactive visuals in blog posts, websites, social media, and other online communications, on any device. Publishing to web is available on reports in your personal workspace that you can edit. You can't publish to the web reports that were shared with you. More about [publishing to the web](powerbi-service-publish-to-web.md).
+
+## Share a dashboard with colleagues and others 
+When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They can see the same data that you see in the dashboard and reports. Your colleagues can share the dashboard with other colleagues, if you allow them to. Those outside your organization can view and interact with the dashboard, but can't share it. More about [sharing a dashboard](powerbi-service-share-unshare-dashboard.md).
 
 ## Create a dashboard in a group  
 Groups in Power BI are built on Office 365 groups, so you and your colleagues need a Power BI Pro license. When you're a member of a group, you can create a dashboard in the group workspace. Everyone in the group can view, interact with, and edit the dashboard and its reports. They have the same permission you have. More about [groups in Power BI](powerbi-service-groups.md).
 
-### Share a dashboard with coworkers outside the group  
+### Share a dashboard with colleagues outside the group  
 If your group has dashboards, you can share them with colleagues outside the group. It works the same as [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).
 
 ## Create a content pack and publish it  
