@@ -14,11 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/17/2015"
+   ms.date="02/09/2016"
    ms.author="derrickv"/>
 
 # Power BI permissions
 
+## Permission scopes
 Power BI permissions give an application the ability to take certain actions on a user's behalf. All permissions must be approved by a user in order to be valid.
 
 |Display Name|Description|Scope Value|
@@ -30,7 +31,7 @@ Power BI permissions give an application the ability to take certain actions on 
 
 An application can request permissions when it first attempts to log in to a user's page by passing in the requested permissions in the scope parameter of the call. If the permissions are granted, an access token will be returned to the app which can be used on future API calls. The access can only be used by a specific application.
 
-## Requesting Permissions ##
+## Requesting Permissions
 While you can call the API to authenticate with a username and password, in order to take actions on behalf of another user, they will need to request permissions that the user then approves and then send the resulting access token on all future calls. For this process, we will follow the standard [OAuth 2.0](http://oauth.net/2/) protocol. While the actual implementation may vary, the OAuth flow for Power BI has the following elements:
 
 - **Login UI** - This is a UI that the developer can evoke to request permissions. It would require the user to log in if not already. The user would also need to approve the permissions that the application is requesting. The login window will post back either an access code or an error message to a redirect URL that is supplied.
