@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2016"
+   ms.date="02/11/2016"
    ms.author="tpalmer"/>
 # Insightly content pack for Power&nbsp;BI
 
@@ -30,7 +30,7 @@ Connect to the [Insight content pack](https://app.powerbi.com/getdata/services/i
 
 2.  In the **Services** box, select **Get**.
 
-	![](media/powerbi-content-pack-insightly/services.ong)
+	![](media/powerbi-content-pack-insightly/services.png)
 
 3.  Select **Insightly** \>  **Connect**.
 
