@@ -42,7 +42,7 @@ Connect to the [Insight content pack](https://app.powerbi.com/getdata/services/i
 
 5. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
 
-	 ![](media/powerbi-content-pack-insightly/Dashboard.png)
+	 ![](media/powerbi-content-pack-insightly/dashboard.png)
 
 
 **What Now?**
