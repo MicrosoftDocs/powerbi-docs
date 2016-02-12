@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="02/11/2016"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
@@ -91,5 +91,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 -   Interact with [your reports](powerbi-mobile-reports-in-the-windows-app.md).
 -   View your [groups' dashboards and reports](powerbi-mobile-groups-in-the-win10phone-app.md).
 
+## Enterprise support for Power BI mobile apps
 
+-  Enterprises can [configure Power BI mobile apps for iOS and Android with Microsoft Intune](powerbi-admin-mobile-intune.md) to manage devices and applications.
 

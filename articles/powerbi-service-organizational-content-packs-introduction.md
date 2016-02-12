@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/10/2016"
+   ms.date="02/11/2016"
    ms.author="maggies"/>
 # Organizational content packs: Introduction
 
@@ -65,7 +65,7 @@ The lifecycle looks something like this:
 8. Or Nate deletes the content pack.
 
  -  Julio didn't customize the original content pack, so the content is automatically removed. 
- -  Jane did customize the content pack. The  next time she opens the dashboard all tiles from the original content pack are gone, but tiles she pinned from other reports still appear. The associated reports and dataset are longer available (and don't appear in her left navigation pane).
+ -  Jane did customize the content pack. The  next time she opens the dashboard all tiles from the original content pack are gone, but tiles she pinned from other reports still appear. The associated reports and dataset are no longer available (and don't appear in her left navigation pane).
 
 ## Data security
 
