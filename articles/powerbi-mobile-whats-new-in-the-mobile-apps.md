@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/07/2016"
+   ms.date="02/11/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -32,7 +32,10 @@ All of the January improvements are already in the new [Power BI app for Windows
 
 **Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](powerbi-content-pack-bing.md), and view them on your mobile device.
 
-**Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can [view report pages on your mobile device](powerbi-mobile-report-page-tiles-in-the-iphone-app.md).
+**Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the:
+
+-  [Power BI app on your iPhone](powerbi-mobile-report-page-tiles-in-the-iphone-app.md).
+-  [Power BI app on your Android phone](powerbi-mobile-report-page-tiles-in-the-android-app.md).
 
 
 ## December 2015
@@ -66,6 +69,10 @@ Read the [November 2015 Power BI mobile blog post](http://blogs.msdn.com/b/power
 
 - A new welcome experience.
 - Improved chart data capacity.
+
+### iOS and Android mobile apps
+
+-  Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](powerbi-admin-mobile-intune.md) to manage devices and applications.
 
 ### iPhone mobile app
 
