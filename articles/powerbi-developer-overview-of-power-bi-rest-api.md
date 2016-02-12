@@ -29,7 +29,7 @@ Power BI displays dashboards that are interactive, and can be created and update
 
 ### With the API, you can also
 
-- [Add rows to a table](https://msdn.microsoft.com/library/mt203561.aspx) and [delete all rows in a table](https://msdn.microsoft.com/en-us/library/mt238041.aspx).
+- [Add rows to a table](https://msdn.microsoft.com/library/mt203561.aspx) and [delete all rows in a table](https://msdn.microsoft.com/library/mt238041.aspx).
 - [List all tables](https://msdn.microsoft.com/library/mt203556.aspx) and [update table schemas](https://msdn.microsoft.com/library/mt203560.aspx).
 - [Import from an Excel file or PBIX file](https://msdn.microsoft.com/library/mt203560.aspx).
 
