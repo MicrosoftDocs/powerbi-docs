@@ -23,9 +23,9 @@ Power BI displays dashboards that are interactive, and can be created and update
 
 ## What can I do with the Power BI API?
 
-|[Push data into a Dashboard![](media/powerbi-developer-overview-of-power-bi-rest-api/Push.png)](https://msdn.microsoft.com/en-us/library/mt203562.aspx) | [Integrate visuals into an app ![](media/powerbi-developer-overview-of-power-bi-rest-api/Integrate.png)](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+|[Push data into a Dashboard <br/> <br/>![](media/powerbi-developer-overview-of-power-bi-rest-api/Push.png)](https://msdn.microsoft.com/en-us/library/mt203562.aspx) | [Integrate visuals into an app <br/> <br/> ![](media/powerbi-developer-overview-of-power-bi-rest-api/Integrate.png)](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
 |---|---
-|[**Get Dashboard resources**![](media/powerbi-developer-overview-of-power-bi-rest-api/Get.png)](https://msdn.microsoft.com/library/mt465742.aspx)| [**Create custom visuals** ![](media/powerbi-developer-overview-of-power-bi-rest-api/Custom.png)](powerbi-custom-visuals-create-for-the-gallery.md)
+|[ **Get Dashboard resources** <br/> <br/>![](media/powerbi-developer-overview-of-power-bi-rest-api/Get.png)](https://msdn.microsoft.com/library/mt465742.aspx) | [ **Create custom visuals** <br/> <br/> ![](media/powerbi-developer-overview-of-power-bi-rest-api/Custom.png)](powerbi-custom-visuals-create-for-the-gallery.md) 
 
 ### With the API, you can also
 
