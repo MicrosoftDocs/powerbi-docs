@@ -27,10 +27,9 @@ Using any programming language that supports REST calls, you can create apps tha
 
 Here's some of the things you can do with the Power BI API:
 
-
-|To do this| Go here
+|**To do this**| **Go here**
 |---|---
-|Get started with my first app.| [What you need to create an app](powerbi-developer-steps-to-create-a-power-bi-app.md) and [Push data into a Dashboard](powerbi-developer-push-data-into-a-dashboard.md)
+|Get started with your first app.| [What you need to create an app](powerbi-developer-steps-to-create-a-power-bi-app.md) and [Push data into a Dashboard](powerbi-developer-push-data-into-a-dashboard.md)
 |Extend an existing business workflow to push key data into a Power BI Dashboard. |[Push data into a Dashboard](powerbi-developer-push-data-into-a-dashboard.md)
 |Integrate a tile or report into an app.|[Integrate visuals into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
 |Manage a table in a dashboard dataset.|[Manage dashboard tables](powerbi-developer-manage-dashboard-tables.md)
