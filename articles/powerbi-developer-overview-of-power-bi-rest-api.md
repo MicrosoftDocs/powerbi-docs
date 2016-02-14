@@ -35,7 +35,7 @@ Here's some of the things you can do with the Power BI API:
 |Manage a table in a dashboard dataset.|[Manage dashboard tables](powerbi-developer-manage-dashboard-tables.md)
 |Import data from a PBIX or Excel file.| [Import data into a dashboard](powerbi-developer-import-data-into-a-dashboard.md)
 |Create a custom visual.| [ Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
-
+|Create a Power BI web app that authenticates to Power BI.|[Create a Power BI web app](powerbi-developer-create-power-bi-web-app.md)
 
 ### Other things you can do to learn about the Power BI API
 

@@ -20,13 +20,13 @@
 
 # Push data into a Power BI Dashboard
 
-With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your Power BI Dashboard. For example, you want to push a Sales Marketing dataset which has a Product table. To learn how to push a dataset, such as a Product table, into a dashboard, follow the steps in the left navigation page or go to [Walkthrough to push data into a Power BI dashboard](powerbi-developer-push-step-1.md).
+With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table. To learn how to push a dataset, such as a Product table, into a dashboard, follow the steps in the left navigation page or go to [Walkthrough to push data into a Power BI dashboard](powerbi-developer-push-step-1.md).
 
-The next section is a general discussion of Power BI API operations that push data to a dashboard.
+The next section is a general discussion of Power BI API operations that push data.
 
-## API operations to push data to a dashboard
+## Power BI API operations to push data
 
-With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data to a dashboard, you use the **Create Dataset** operation along with the **Add Rows** operation. To find out if a dataset exists, you can use the **Get Datasets** operation. For any of these operations, you can pass a group id to work with a group. Use the Get Groups operation to get a list of group id's.
+With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the **Create Dataset** operation along with the **Add Rows** operation. To find out if a dataset exists, you use the **Get Datasets** operation. For any of these operations, you can pass a group id to work with a group. Use the **Get Groups** operation to get a list of group id's.
 
 For more details about each operation, see the MSDN reference:
 
@@ -37,11 +37,11 @@ For more details about each operation, see the MSDN reference:
 
 You create a dataset in Power BI by passing a JavaScript Object Notation (JSON) string to the Power BI service. To learn more about JSON, see [Introducing JSON](http://json.org/).
 
-The JSON string has the following format:
+The JSON string for a dataset has the following format:
 
 **Power BI Dataset JSON object**
 
-		{"name": "dataset_name", "tables":
+	{"name": "dataset_name", "tables":
 	    [{"name": "", "columns":
 	        [{ "name": "column_name1", "dataType": "data_type"},
 	         { "name": "column_name2", "dataType": "data_type"},
@@ -49,9 +49,9 @@ The JSON string has the following format:
 	        ]
 	      }
 	    ]
-		}
+	}
 
-So, for our Product example, you would pass a JSON string such as the example below. In this example, **SalesMarketing** is the name of the dataset, and **Product** is the name of the table. After you define the table, you define the table schema. In this example, the table schema has six columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
+So, for our Product example, you would pass a JSON string such as the example below. In this example, **SalesMarketing** is the name of the dataset, and **Product** is the name of the table. After you define the table, you define the table schema. For the **SalesMarketing** dataset, the table schema has these columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
 
 **Example dataset object JSON**
 
