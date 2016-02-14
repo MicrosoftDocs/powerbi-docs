@@ -20,7 +20,7 @@
 
 # Push data into a Power BI Dashboard
 
-With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your Power BI Dashboard. For example, you want to push a Sales Marketing dataset which has a Product table. To learn how to push a dataset, such as a Product table, into a dashboard, follow the steps in the left navigation page or go to [Walkthrough to create a dataset](powerbi-developer-push-step-1.md).
+With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your Power BI Dashboard. For example, you want to push a Sales Marketing dataset which has a Product table. To learn how to push a dataset, such as a Product table, into a dashboard, follow the steps in the left navigation page or go to [Walkthrough to push data into a Power BI dashboard](powerbi-developer-push-step-1.md).
 
 The next section is a general discussion of Power BI API operations that push data to a dashboard.
 
@@ -104,7 +104,7 @@ To learn more about how to create a dataset, see the [first step under Push data
 
 ## Learn more about pushing data into Power BI
 
-- [Walkthrough to create a dataset](powerbi-developer-push-step-1.md)
+- [Walkthrough to push data into a Power BI dashboard](powerbi-developer-push-step-1.md)
 
 ## See also
 - [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
