@@ -19,19 +19,24 @@
 
 # Overview of Power BI REST API
 
-Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with your Power BI dashboard in real-time. You can also integrate Power BI visuals, tiles and reports, into apps.
+Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time.
 
 ## What can I do with the Power BI API?
 
-|[Push data into a Dashboard <br/> <br/>![](media/powerbi-developer-overview-of-power-bi-rest-api/Push.png)](https://msdn.microsoft.com/en-us/library/mt203562.aspx) | [Integrate visuals into an app <br/> <br/> ![](media/powerbi-developer-overview-of-power-bi-rest-api/Integrate.png)](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+Using any programming language that supports REST calls, you can create apps that integrate with your Power BI dashboard in real-time. You can also integrate Power BI visuals, tiles and reports, into apps.
+
+Here's some of the things you can do with the Power BI API:
+
+
+|To do this| Go here
 |---|---
-|[ **Get Dashboard resources** <br/> <br/>![](media/powerbi-developer-overview-of-power-bi-rest-api/Get.png)](https://msdn.microsoft.com/library/mt465742.aspx) | [ **Create custom visuals** <br/> <br/> ![](media/powerbi-developer-overview-of-power-bi-rest-api/Custom.png)](powerbi-custom-visuals-create-for-the-gallery.md) 
+|Get started with my first app.| [What you need to create an app](powerbi-developer-steps-to-create-a-power-bi-app.md) and [Push data into a Dashboard](powerbi-developer-push-data-into-a-dashboard.md)
+|Extend an existing business workflow to push key data into a Power BI Dashboard. |[Push data into a Dashboard](powerbi-developer-push-data-into-a-dashboard.md)
+|Integrate a tile or report into an app.|[Integrate visuals into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+|Manage a table in a dashboard dataset.|[Manage dashboard tables](powerbi-developer-manage-dashboard-tables.md)
+|Import data from a PBIX or Excel file.| [Import data into a dashboard](powerbi-developer-import-data-into-a-dashboard.md)
+|Create a custom visual.| [ Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 
-### With the API, you can also
-
-- [Add rows to a table](https://msdn.microsoft.com/library/mt203561.aspx) and [delete all rows in a table](https://msdn.microsoft.com/library/mt238041.aspx).
-- [List all tables](https://msdn.microsoft.com/library/mt203556.aspx) and [update table schemas](https://msdn.microsoft.com/library/mt203560.aspx).
-- [Import from an Excel file or PBIX file](https://msdn.microsoft.com/library/mt203560.aspx).
 
 ### Other things you can do to learn about the Power BI API
 
@@ -47,5 +52,10 @@ Power BI displays dashboards that are interactive, and can be created and update
 In the Apiary interactive API console, you can try all Power BI REST API operations such as [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) and [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx).
 
 ## See also
-- [Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md)
+- [What you need to create an app](powerbi-developer-steps-to-create-a-power-bi-app.md)
+- [Push data into a Dashboard](powerbi-developer-push-data-into-a-dashboard.md)
+- [Integrate visuals into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+- [Manage dashboard tables](powerbi-developer-manage-dashboard-tables.md)
+- [Import data into a dashboard](powerbi-developer-import-data-into-a-dashboard.md)
+- [ Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 - [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
