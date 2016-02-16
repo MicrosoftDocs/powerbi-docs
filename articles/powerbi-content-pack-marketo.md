@@ -1,13 +1,13 @@
-﻿<properties 
+﻿<properties
    pageTitle="Marketo content pack for Power BI"
    description="Marketo content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="theresapalmer"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -16,10 +16,10 @@
    ms.workload="powerbi"
    ms.date="02/08/2016"
    ms.author="tpalmer"/>
-   
+
 # Marketo content pack for Power&nbsp;BI
 
-The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data. 
+The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data.
 
 Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/marketo) for Power BI.
 
@@ -53,7 +53,7 @@ Requirements:
 
     ![](media/powerbi-content-pack-marketo/PBI_MarketoSignIn.png)
 
-    This gives the *Marketo for Power BI *content pack access to your Marketo data and allows you to analyze the data in Power BI. The data is refreshed once a day.
+    This gives the *Marketo for Power BI *content pack access to your [Marketo analytics](https://powerbi.microsoft.com/en-us/integrations/marketo) data and allows you to analyze the data in Power BI. The data is refreshed once a day.
 
 6.  Once connected to your Marketo account, a dashboard with all your data is loaded:
 
@@ -98,9 +98,3 @@ The amount of API calls Power BI makes to Marketo depends on the amount of data 
 [Get Data for Power BI](powerbi-service-get-data.md)
 
 [Power BI blog: Monitor and analyze your Marketo data with Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/03/19/monitor-and-analyze-your-marketo-data-with-power-bi.aspx)
-
-
-
-
- 
-

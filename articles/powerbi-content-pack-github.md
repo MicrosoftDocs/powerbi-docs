@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="GitHub content pack for Power BI"
    description="GitHub content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="theresapalmer"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -20,7 +20,7 @@
 
 The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also known as repo) with data around contributions, issues, pull requests and active users.
 
-Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI. 
+Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
 
 Note: The content pack requires the GitHub account to have access to the repo. More details on requirements below.
 
@@ -34,7 +34,7 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 
     ![](media/powerbi-content-pack-github/pbi_get_services.png) 
 
-3.  Select GitHub \> **Connect**. 
+3.  Select GitHub \> **Connect**.
 
     ![](media/powerbi-content-pack-github/PB_GithubConnect.png)
 
@@ -52,10 +52,10 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 
     This connects Power BI with GitHub and allows Power BI to connect to the data.  The data is refreshed once a day.
 
-8.  After you connect to your GitHub repo, Power BI imports the data. You see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
+8.  After you connect to your repo, Power BI imports the data. You see a new [GitHub dashboard](https://powerbi.microsoft.com/en-us/integrations/github), report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
 
     ![](media/powerbi-content-pack-github/PBI_GithubDash.png)
-	    
+
 
 **What Now?**
 
@@ -71,7 +71,7 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 ## What's included
 
 The following data is available from GitHub in Power BI:     
-	
+
 |Table name|Description|
 |---|---|
 |Contributions|The contributions table gives the total additions, deletions and commits authored by the contributor aggregated per week.|
