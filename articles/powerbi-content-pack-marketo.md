@@ -53,7 +53,7 @@ Requirements:
 
     ![](media/powerbi-content-pack-marketo/PBI_MarketoSignIn.png)
 
-    This gives the *Marketo for Power BI *content pack access to your [Marketo analytics](https://powerbi.microsoft.com/en-us/integrations/marketo) data and allows you to analyze the data in Power BI. The data is refreshed once a day.
+    This gives the *Marketo for Power BI *content pack access to your [Marketo analytics](https://powerbi.microsoft.com/integrations/marketo) data and allows you to analyze the data in Power BI. The data is refreshed once a day.
 
 6.  Once connected to your Marketo account, a dashboard with all your data is loaded:
 

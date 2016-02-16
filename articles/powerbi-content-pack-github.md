@@ -52,7 +52,7 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 
     This connects Power BI with GitHub and allows Power BI to connect to the data.  The data is refreshed once a day.
 
-8.  After you connect to your repo, Power BI imports the data. You see a new [GitHub dashboard](https://powerbi.microsoft.com/en-us/integrations/github), report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
+8.  After you connect to your repo, Power BI imports the data. You see a new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github), report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
 
     ![](media/powerbi-content-pack-github/PBI_GithubDash.png)
 
