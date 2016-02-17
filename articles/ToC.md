@@ -147,7 +147,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-display-tile-in-full-screen-mode",
             "powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
-            "powerbi-service-add-an-image-to-a-dashboard",
             "powerbi-service-create-a-big-number-tile-for-a-dashboard",
             "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
             "powerbi-service-qr-code-for-tile",
