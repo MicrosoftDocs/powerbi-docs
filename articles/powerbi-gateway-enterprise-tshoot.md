@@ -39,7 +39,7 @@ After you walk through the steps, and close the configurator, it will place a zi
 
 **Error: Failed to create gateway. Please try again.**
 
-All of the details are available, but the call to the Power BI service returned an error.  The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs as mentioned above to get more details. 
+All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs as mentioned above to get more details. 
 
 This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You would need to modify the *enterprisegatewayconfigurator.exe.config* with the correct proxy information. [Learn more](https://msdn.microsoft.com/library/kd3cf2ex.aspx)
 
