@@ -28,7 +28,7 @@ The next section is a general discussion of Power BI API operations that push da
 
 With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the **Create Dataset** operation along with the **Add Rows** operation. To find out if a dataset exists, you use the **Get Datasets** operation. For any of these operations, you can pass a group id to work with a group. Use the **Get Groups** operation to get a list of group id's.
 
-For more details about each operation, see the MSDN reference:
+Here are the operations to push data into a dashboard:
 
 - [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
 - [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
