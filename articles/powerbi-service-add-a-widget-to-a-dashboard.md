@@ -95,23 +95,72 @@ When you add a video widget to your dashboard, the video plays right on your das
 
 ## Add web content
 
+Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboard. Enter the embed code by hand or copy/paste from sites such as Twitter, YouTube, embed.ly, and more.
+
 1. Select **Web content**.
 
-2. Add video information to the **Tile details** pane.
+2. Add information to the **Tile details** pane.
 
-  ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-web.png)
+    ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-web_new.png)
 
-  - to display a title above the video tile, select *Display title and subtitle* and type a title and/or subtitle.
+  - to display a title above the tile, select *Display title and subtitle* and type a title and/or subtitle.
 
-  - enter the embed code. In this example we're adding a Twitter feed.
+  - enter the embed code. In this example we're copying and pasting a Twitter feed.
 
   - Select **Apply**.  On the dashboard, resize and move the web content tile as needed.
+
+    ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-code-added.png)
+
+### Tips for embedding web content###
+
+- For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, check to see if you're using **http** for the iframe source.  If so, change it to **https**.
+
+  ```
+  <iframe src="https://xyz.com">
+  ```
+
+- Edit width and height information. This embed code embeds a video and sets the video player to 560 x 315 pixels.  This size will not change as you resize the tile.
+
+  ```
+  <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
+   allowfullscreen></iframe>
+  ```
+
+  If you'd like the player to resize to fit the tile size, set width and height to 100%.
+
+  ```
+  <iframe width="100%" height="100%"
+  src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
+   allowfullscreen></iframe>
+  ```
+
+- This code embeds a tweet and retains, as separate links on the dashboard, links for the **AFK** podcast, **@GuyInACube's Twitter page**, **Follow**, **#analytics**, **reply**, **retweet**, and **like**.  Selecting the tile itself takes you to the podcast on Twitter.
+
+  ```
+  <blockquote class="twitter-tweet" data-partner="tweetdeck">
+  <p lang="en" dir="ltr">Listen to
+  <a href="https://twitter.com/GuyInACube">@GuyInACube</a> talk to
+  us about making videos about Microsoft Business Intelligence
+  platform
+  <a href="https://t.co/TmRgalz7tv">https://t.co/TmRgalz7tv </a>
+  <a href="https://twitter.com/hashtag/analytics?src=hash">
+  #analytics</a></p>&mdash; AFTK Podcast (@aftkpodcast) <a
+  href="https://twitter.com/aftkpodcast/status/693465456531771392">
+  January 30, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js"
+charset="utf-8"></script>
+```
+
+- To make it easier to move the tile on your dashboard, add a title and/or subtitle.
+
+- If you'd like to embed some content from a website, but the website doesn't give you embed code to copy and paste, check out embed.ly for help generating the embed code.
 
 ## Edit a widget
 
 To make changes to a widget...
 
-1. Select the ellipses in the top right corner of the tile.
+1. Hover over the top right corner of the tile and select the ellipses.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi_ellipses.png)
 
@@ -121,4 +170,5 @@ To make changes to a widget...
 
 ## See also  
 
-More about [creating Power BI dashboards](powerbi-service-create-a-dashboard.md).
+[Creating Power BI dashboards](powerbi-service-create-a-dashboard.md)
+[Dashboard tiles](powerbi-service-dashboard-tiles.md)
