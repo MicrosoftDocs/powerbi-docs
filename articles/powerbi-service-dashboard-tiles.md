@@ -55,7 +55,7 @@ Tiles can be pinned to dashboards from reports, Q&A, SSRS, Excel, and more.
 
   -   [Pin a tile to a dashboard from SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
 
-  -   [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md)
+  -   [Add an image to a dashboard](powerbi-service-add-a-widget-to-a-dashboard.md)
 
   -   Add a big number tile [from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md) and [from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
