@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2016"
+   ms.date="02/16/2016"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -134,7 +134,7 @@ For more information, see [Tutorial: Slicers in Power BI](powerbi-service-tutori
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_image.png)
 
-For more information, see [Add an image to a dashboard](powerbi-service-add-an-image-to-a-dashboard.md).
+For more information, see [Add an image widget to a dashboard](powerbi-service-add-a-widget-to-a-dashboard.md).
 
 ### Tables
 

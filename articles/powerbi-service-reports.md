@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="02/16/2016"
    ms.author="mihart"/>
 # Reports in Power BI
 
@@ -26,39 +26,33 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 
 You can [create a report from scratch](powerbi-service-create-a-new-report.md) or [have one shared with you](powerbi-service-share-unshare-dashboard.md). And for some kinds of data, Power BI will [create a report for you as it adds the dataset](powerbi-service-get-data.md).  
 
-## For more information about reports:
-
-[Creating a report](powerbi-service-create-a-new-report.md)  requires a [dataset](powerbi-service-get-data.md).  
-
-View and interact with reports in either [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) or [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). Editing View is only available to a report creator and has many more options for creating and modifying reports.
-
-Did you participate in the Power BI Preview?  [Find out how to upgrade to the new report canvas](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
-
-[Take a tour of the report editor](powerbi-service-the-report-editor-take-a-tour.md) - including the Visualizations pane, Filters pane, and Fields pane.
-
-Modify how your reports display using [page display settings](powerbi-service-change-report-display-settings.md).
-
-[Filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md) -- create them in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and interact with them in [Reading View.](powerbi-service-interact-with-a-report-in-reading-view.md)
-
-[Add a page to a report](powerbi-service-add-a-page-to-a-report.md) if you need more room.
-
-[Reorder report pages](powerbi-service-reorder-pages-in-a-report.md) to put the most-important information first.
-
-[Delete a page from a report](powerbi-service-delete-a-page-from-a-report.md), even if it's not blank.
-
-[Rename a report](powerbi-service-rename-a-report.md), it doesn't change the name of any associated dashboard or dataset.
-
-[View a report in full screen mode](powerbi-service-display-dashboard-report-in-full-screen-mode.md), without the distraction of menus and navigation icons.
-
-[Save a report](powerbi-service-save-a-report.md) so you can use it again and share it with colleagues. The name of the saved report is added to your Power BI navigation pane, under the **Reports** heading.
-
-[Delete a report](powerbi-service-delete-a-report.md) if you don't need it any more. Deleting the report does not remove the dataset.
 
 ## View reports in the navigation pane
 
 Power BI can have more than one report-- as you add reports, their titles are added to the list under the **Reports** heading (see screenshot below). The report you're currently viewing is highlighted. New reports have a yellow asterisk. Only one report can be open at a time.
 
 ![](media/powerbi-service-reports/navigator.png)
+
+## For more information about reports:
+
+From the table of contents (on the left side of this browser page), expand **Reports** to see all the topics related to Power BI reports. 
+
+### Tips and troubleshooting
+
+- Don't forget that [creating a report](powerbi-service-create-a-new-report.md)  requires a [dataset](powerbi-service-get-data.md).  
+
+- Make sure you understand the difference between [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). 
+
+- Did you participate in the Power BI Preview?  [Find out how to upgrade to the new report canvas](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
+
+- Familiarize yourself with the report editor by [Taking a tour](powerbi-service-the-report-editor-take-a-tour.md).
+
+- Modify how your reports display using [page display settings](powerbi-service-change-report-display-settings.md).
+
+- Do you know the difference between filter, highlight, cross-filter, and cross-highlight? If not, see [Filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
+
+- [Focus mode](powerbi-service-move-and-resize-a-visualization.md) and [full screen TV mode](powerbi-service-display-dashboard-report-in-full-screen-mode.md) -- there is a difference.
+
 
 ## See Also
 

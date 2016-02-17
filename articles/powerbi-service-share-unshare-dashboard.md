@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Share (and unshare) a dashboard from Power BI"
+   pageTitle="Share a dashboard with colleagues and others"
    description="Share, unshare, reshare a dashboard from Power BI"
    services="powerbi"
    documentationCenter=""
@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/10/2016"
+   ms.date="02/16/2016"
    ms.author="maggies"/>
 
-# Share (and unshare) a dashboard from Power BI
+# Share a dashboard with colleagues and others
 
-You can share your dashboards with people in and out of your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
+You can share your dashboards with colleagues in and out of your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
 
-Dashboards (and their associated reports) that are shared with you are read-only. You can't save-as to personalize them. On the other hand, you can personalize dashboards and reports in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md). See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
+Dashboards (and their associated reports) that are shared with you are read-only.  You can't save-as to personalize them. On the other hand, you can personalize dashboards and reports in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md).  See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
 
 ## Share a dashboard
 
@@ -32,16 +32,16 @@ Dashboards (and their associated reports) that are shared with you are read-only
     ![](media/powerbi-service-share-unshare-dashboard/pbi_share_invite.png)  
 
     If any of the addresses is outside your organization, you'll see a warning.
- 
+
     ![](media/powerbi-service-share-unshare-dashboard/pbi_share_invite_outside.png)  
 
 3.  To allow your colleagues to reshare your dashboard with others, check **Allow recipients to share your dashboard**.
-   
-    Only colleagues in your organization can reshare your dashboard. People outside your organization can view your dashboard but not reshare it. 
+
+    Only colleagues in your organization can reshare your dashboard. People outside your organization can view your dashboard but not reshare it.
 
 4.  Select **Share.**
 
-	Power BI sends an email invitation with a link to the shared dashboard. Clicking the link adds the dashboard to your colleague's Power BI service. They see this icon ![](media/powerbi-service-share-unshare-dashboard/PBI_SharedWithYouIcon.png) next to the shared dashboard, indicating the dashboard is shared with them. 
+	Power BI sends an email invitation with a link to the shared dashboard. Clicking the link adds the dashboard to your colleague's Power BI service. They see this icon ![](media/powerbi-service-share-unshare-dashboard/PBI_SharedWithYouIcon.png) next to the shared dashboard, indicating the dashboard is shared with them.
 
     If they haven't yet signed up for Power BI, they can create an account after they click the link.
 
@@ -53,7 +53,7 @@ Dashboards (and their associated reports) that are shared with you are read-only
 
     People outside your organization are listed as **Guest**.
 
-## Notes about sharing 
+## Notes about sharing
 
 When you share a dashboard:
 
@@ -62,7 +62,7 @@ When you share a dashboard:
 -   Everyone can even see the changes you make (after you save those changes).
 
 -   No-one can see or download the dataset.
-  
+
 -   Everyone can refresh the data.
 
 ### When you share with colleagues
@@ -80,7 +80,7 @@ When you share a dashboard:
 
 When you share with people outside your organization, they get an email with a link to the shared dashboard. They have to sign in to Power BI to see the dashboard. If they don't have a Power BI account, they can create one after clicking the link.
 
-After they sign in, they see the shared dashboard in its own browser window without the left navigation pane, not in their usual Power BI portal. They have to bookmark the link to access this dashboard in the future. 
+After they sign in, they see the shared dashboard in its own browser window without the left navigation pane, not in their usual Power BI portal. They have to bookmark the link to access this dashboard in the future.
 
 They can't edit any content in this dashboard or report. They can interact with the charts in the report (cross-highlight) and change any filters/slicers available on the reports connected to the dashboard.
 

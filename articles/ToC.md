@@ -147,7 +147,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-display-tile-in-full-screen-mode",
             "powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
-            "powerbi-service-add-an-image-to-a-dashboard",
             "powerbi-service-create-a-big-number-tile-for-a-dashboard",
             "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
             "powerbi-service-qr-code-for-tile",
@@ -173,6 +172,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Share your work",
           "articles": [
             "powerbi-service-how-should-i-share-my-dashboard",
+            "powerbi-service-share-unshare-dashboard",
             "powerbi-service-publish-to-web",
             "powerbi-service-groups",
             "powerbi-service-create-a-group-in-power-bi",
@@ -184,7 +184,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-organizational-content-pack-find-and-open",
             "powerbi-service-organizational-content-packs-use-and-work-with",
             "powerbi-service-organizational-content-pack-delete",
-            "powerbi-service-share-unshare-dashboard",
             "powerbi-service-share-dashboard-that-links-to-excel"
           ],
           "numberOfFeaturedArticles": 8
