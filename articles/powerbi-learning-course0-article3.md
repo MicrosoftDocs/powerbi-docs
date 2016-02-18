@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideo=""/>
+   featuredVideoId="2kAkUjQQD08"/>
 
 <tags
    ms.service="powerbi"
@@ -20,7 +20,7 @@
 
 # Create Out-of-the-Box Dashboards with Cloud Services
 
-[![Create SaaS Dashboards](./media/powerbi-learning-course0-article3/videothumb.jpg)](http://www.youtube.com/watch?v=2kAkUjQQD08)
+[![Create SaaS Dashboards](./media/powerbi-learning-course0-article3/videothumb.jpg)]
 
 With Power BI, connecting to data is easy. From the Power BI service, you can simply select the Get Data button in the bottom left corner of the home screen.
 
