@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="02/18/2016"
    ms.author="maggies"/>
 
 # Refresh the Power BI for Windows app  
