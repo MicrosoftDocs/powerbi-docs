@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/11/2016"
+   ms.date="02/18/2016"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
@@ -40,7 +40,6 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 -   Annotate and [share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) from your iPhone
 -   [Create picture tiles](powerbi-mobile-picture-tiles-in-the-iphone-app.md) with your iPhone app
--   [Turn on smart ordering for tiles](powerbi-mobile-dashboard-smart-order-in-the-iphone-app.md) in the app
 
 ### SQL Server mobile reports and KPIs
 
