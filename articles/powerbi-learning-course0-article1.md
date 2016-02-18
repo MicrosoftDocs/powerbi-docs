@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideo=""/>
+   featuredVideoId="1c01r_pAZdk"/>
 
 <tags
    ms.service="powerbi"
@@ -20,7 +20,7 @@
 
 # An Introduction to using Power BI
 
-[![Welcome to Power BI](./media/powerbi-learning-course0-article1/videothumb.jpg)](http://www.youtube.com/watch?v=1c01r_pAZdk)
+[![Welcome to Power BI](./media/powerbi-learning-course0-article1/videothumb.jpg)]
 
 Now that you know the basic of Power BI, let’s jump into some hands-on experiences and a guided tour. As Will explains all the things you can do with Power BI, keep in mind that all of these activities, and all the analysis you can do with Power BI, are based on those basic building blocks we covered in the previous topic.  
 
