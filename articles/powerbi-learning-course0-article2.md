@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideo=""/>
+   featuredVideoId="meDUu1sFP3Q"/>
 
 <tags
    ms.service="powerbi"
@@ -20,7 +20,7 @@
 
 # Getting Started With Power BI Desktop
 
-[![Welcome to Power BI Desktop](./media/powerbi-learning-course0-article2/videothumb.jpg)](http://www.youtube.com/watch?v=meDUu1sFP3Q)
+[![Welcome to Power BI Desktop](./media/powerbi-learning-course0-article2/videothumb.jpg)]
 
 In this topic of the **Getting Started** course, we take a closer look at how the first two parts of Power BI fit together:
 
