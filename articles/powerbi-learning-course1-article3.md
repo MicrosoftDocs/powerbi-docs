@@ -20,7 +20,7 @@
 
 # Clean and Transform Your Data With the Query Editor
 
-[![Basic transformations](http://img.youtube.com/vi/o-sinon5JYY/0.jpg)](http://www.youtube.com/watch?v=o-sinon5JYY)
+[![Basic transformations](./media/powerbi-learning-course1-article3/videothumb.jpg)](http://www.youtube.com/watch?v=o-sinon5JYY)
 
 *See how the Query Editor tools can get your data ready for modelling*
 

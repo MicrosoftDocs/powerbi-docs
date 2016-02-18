@@ -20,7 +20,7 @@
 
 # Connect to Data Sources in Power BI Desktop
 
-[![Connect to Data Sources](http://img.youtube.com/vi/S6s0osmRCZ4/0.jpg)](http://www.youtube.com/watch?v=S6s0osmRCZ4)
+[![Connect to Data Sources](./media/powerbi-learning-course1-article2/videothumb.jpg)](http://www.youtube.com/watch?v=S6s0osmRCZ4)
 
 *See how to connect Power BI Desktop to almost any data source*
 

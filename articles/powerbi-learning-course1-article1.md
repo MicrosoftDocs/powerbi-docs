@@ -20,7 +20,7 @@
 
 # An Overview of Power BI Desktop
 
-[![Overview of Power BI Desktop](http://img.youtube.com/vi/mdy-eRev6HM/0.jpg)](http://www.youtube.com/watch?v=mdy-eRev6HM)
+[![Overview of Power BI Desktop](./media/powerbi-learning-course1-article1/videothumb.jpg)](http://www.youtube.com/watch?v=mdy-eRev6HM)
 
 *Power BI Desktop is a tool to connect to, clean, and visualize your data*
 

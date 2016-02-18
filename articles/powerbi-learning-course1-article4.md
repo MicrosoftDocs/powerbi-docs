@@ -20,7 +20,7 @@
 
 # More Advanced Data Sources and Transformation
 
-[![Basic transformations](http://img.youtube.com/vi/8WsY0R2V_bw/0.jpg)](http://www.youtube.com/watch?v=8WsY0R2V_bw)
+[![Basic transformations](./media/powerbi-learning-course1-article4/videothumb.jpg)](http://www.youtube.com/watch?v=8WsY0R2V_bw)
 
 *See some advanced data import and cleaning techniques for Power BI Desktop*
 

@@ -20,7 +20,7 @@
 
 # Getting Started With Power BI Desktop
 
-[![Welcome to Power BI Desktop](http://img.youtube.com/vi/meDUu1sFP3Q/0.jpg)](http://www.youtube.com/watch?v=meDUu1sFP3Q)
+[![Welcome to Power BI Desktop](./media/powerbi-learning-course0-article2/videothumb.jpg)](http://www.youtube.com/watch?v=meDUu1sFP3Q)
 
 *Learn how to use Power BI Desktop to get your data, create reports, and publish to online dashboards.*
 

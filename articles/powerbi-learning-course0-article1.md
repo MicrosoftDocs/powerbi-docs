@@ -20,7 +20,7 @@
 
 # An Introduction to Power BI
 
-[![Welcome to Power BI](http://img.youtube.com/vi/1c01r_pAZdk/0.jpg)](http://www.youtube.com/watch?v=1c01r_pAZdk)
+[![Welcome to Power BI](./media/powerbi-learning-course0-article1/videothumb.jpg)](http://www.youtube.com/watch?v=1c01r_pAZdk)
 
 *Get an overview of what Power BI is and what it can do for your organization*
 

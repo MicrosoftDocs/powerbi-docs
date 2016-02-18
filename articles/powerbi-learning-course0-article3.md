@@ -20,7 +20,7 @@
 
 # Create Out-of-the-Box Dashboards with Cloud Services
 
-[![Create SaaS Dashboards](http://img.youtube.com/vi/2kAkUjQQD08/0.jpg)](http://www.youtube.com/watch?v=2kAkUjQQD08)
+[![Create SaaS Dashboards](./media/powerbi-learning-course0-article3/videothumb.jpg)](http://www.youtube.com/watch?v=2kAkUjQQD08)
 
 *Learn how to connect to a cloud service and create an out-of-the-box dashboard in minutes*
 
