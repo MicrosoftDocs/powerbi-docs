@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideo=""/>
+   featuredVideoId="mdy-eRev6HM"/>
 
 <tags
    ms.service="powerbi"
@@ -20,7 +20,7 @@
 
 # An Overview of Power BI Desktop
 
-[![Overview of Power BI Desktop](./media/powerbi-learning-course1-article1/videothumb.jpg)](http://www.youtube.com/watch?v=mdy-eRev6HM)
+[![Overview of Power BI Desktop](./media/powerbi-learning-course1-article1/videothumb.jpg)]
 
 Power BI Desktop is a tool to connect to, clean, and visualize your data. With Power BI Desktop, you can connect to data and then model and visualize it in different ways. Most users who are working on Business Intelligence projects will spend the majority of their time using Power BI Desktop.
 
