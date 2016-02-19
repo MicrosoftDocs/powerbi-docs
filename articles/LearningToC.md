@@ -34,7 +34,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Getting started",
           "articles": [
-            "powerbi-learning-getting-started-1"
+            "powerbi-learning-course0-article0",
+            "powerbi-learning-course0-article0b",
+            "powerbi-learning-course0-article1",
+            "powerbi-learning-course0-article2",
+            "powerbi-learning-course0-article3",
+            "powerbi-learning-course0-article4"
           ]
         }
       ]

@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/09/2016"
+ms.date="02/19/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise
 
@@ -78,7 +78,9 @@ There’s really not much to installing a gateway. You’ll select a location to
 
 ![](media/powerbi-gateway-enterprise/egw-setup2.png)
 
-> NOTE: The enterprise and personal gateways can be installed on the same machine.
+> **Note**: The enterprise and personal gateways can be installed on the same machine. You can also install on either Windows Server or desktop.
+
+> **Note**: Installing the enterprise gateway on a domain controller is not supported.
 
 ## Configure the gateway
 After you install the gateway, it will prompt you to sign in to Power BI.  
@@ -97,7 +99,7 @@ Selecting **Configure** will register the gateway with the Power BI Service for 
 
 You can manage the gateway by going to the Power BI service and selecting the gear icon ![](media/powerbi-gateway-enterprise/pbi_gearicon.png) in the upper-right corner > **Manage gateways**. From here you can delete gateways that you are an administrator for. 
 
-> NOTE: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> **Note**: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
 
 ![](media/powerbi-gateway-enterprise/egw-managegateways.png)
 
@@ -129,6 +131,8 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 |*.core.windows.net|443|HTTPS|
 |login.microsoftonline.com|443|HTTPS|
 |login.windows.net|443|HTTPS|
+
+If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
 
 ## Troubleshooting
 If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the Power BI Gateway - Enterprise].

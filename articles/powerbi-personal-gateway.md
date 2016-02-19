@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2016"
+   ms.date="02/19/2016"
    ms.author="asaxton"/>
 
 # Power BI Personal Gateway
@@ -169,6 +169,8 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 |*.core.windows.net|443|HTTPS|
 |login.microsoftonline.com|443|HTTPS|
 |login.windows.net|443|HTTPS|
+
+If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
 
 ## Troubleshooting
 
