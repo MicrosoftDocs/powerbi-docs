@@ -20,12 +20,21 @@
    ms.date="02/19/2016"
    ms.author="v-jescoo"/>
 
-# How to Use Matrixes and Tables
+# How to Use Tables and Matrixes
 
-*Watch and learn how to create and customize matrixes and tables*
+In addition to an abundance of charts, Power BI Desktop also supports more tabular visualizations. In fact, when you grab a categorical field or text field and drag it onto the report canvas, you get a table of results by default. You can scroll up and down through the table, and initially it will be sorted alphabetically.
 
-As well as charts, Power BI Desktop also supports more tabular visualizations. In fact, if you grab a categorical field or text field and drag it onto the report canvas, you'll get a table of results by default. You can scroll up and down through the table, and initially it will be sorted alphabetically.
+![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_1.png)
 
-If you have numerical information in a table, such as revenue, a total sum will appear at the bottom. You can manually sort by each column by clicking on its header to toggle ascending or descending order. If a column is not wide enough to display all of its contents, click and drag the header sideways to expand it. The order of the fields in the Values bucket on the Visualizations pane determines the order in which they appear in your table.
 
-A matrix is similar to a table, but it has different category headers on the columns and rows. As with tables, numerical information will be automatically totaled along the bottom and right side of the matrix. There are a number of cosmetic options available for matrixes, such as auto-sizing columns.
+If you have numerical information in a table, such as revenue, a total sum will appear at the bottom. You can manually sort by each column by clicking on its header to toggle ascending or descending order. If a column is not wide enough to display all of its contents, click and drag the header sideways to expand it.
+
+The order of the fields in the *Values* bucket in the **Visualizations** pane determines the order in which they appear in your table.
+
+![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_2.png)
+
+A **matrix** is similar to a table, but it has different category headers on the columns and rows. As with tables, numerical information will be automatically totaled along the bottom and right side of the matrix.
+
+![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_3.png)
+
+There are many cosmetic options available for matrixes, such as auto-sizing columns, toggling row and column totals, setting colors, and more.
