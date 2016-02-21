@@ -29,7 +29,7 @@ Here are the steps to configure your environment:
 
 <a name="signup"/>
 ## Sign up for Power BI
-To create a Power BI app, you need to sign up for the Power BI service. See [Sign up for Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-self-service-signup-for-power-bi/). Once you have a Power BI account, you need to register, or configure, your app in **Azure AD**.
+To create a Power BI app, you need to sign up for the Power BI service. See [Sign up for Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-self-service-signup-for-power-bi/). Once you have a Power BI account, you need to register, or configure, your app in **Azure AD**.
 
 <a name="register"/>
 ## Register your app in Azure AD
@@ -72,7 +72,7 @@ Here are the steps to get an authentication security token:
 
 **Step 2** – In Visual Studio, create a **Console Application** project, and follow these steps:
 
-1.	Paste the code below into Program.cs replacing void Main(string[] args).
+1.	Paste the code below into Main(string[] args).
 2.	Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [Step 1 – Register a Native client app](#register_1).
 3.	Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
 
@@ -80,50 +80,47 @@ a.	In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Packa
 
 b.	In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 
-
 4.	After the package is installed, add **using Microsoft.IdentityModel.Clients.ActiveDirectory** to Program.cs.
 5.	Run the Console App, and login to your Power BI account. You should see a long token string that you use to call Power BI operations.
 
 **Sample get authentication security token**
 
-	  using Microsoft.IdentityModel.Clients.ActiveDirectory;
+Paste this code into Main(string[] args).
+
+    using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
     …
 
-    static void Main(string[] args)
-    {
-        //The client id that Azure AD creates when you register your client app.
-        string clientID = "{ClientID}";
+    //The client id that Azure AD creates when you register your client app.
+    string clientID = "{ClientID}";
 
-        //RedirectUri you used when you register your app.
-        //For a client app, a redirect uri gives Azure AD more details on the application that it will authenticate.
-        // You can use this redirect uri for your client app
-        string redirectUri = "https://login.live.com/oauth20_desktop.srf";
+    //RedirectUri you used when you register your app.
+    //For a client app, a redirect uri gives Azure AD more details on the application that it will authenticate.
+    // You can use this redirect uri for your client app
+    string redirectUri = "https://login.live.com/oauth20_desktop.srf";
 
-        //Resource Uri for Power BI API
-        string resourceUri = "https://analysis.windows.net/powerbi/api";
+    //Resource Uri for Power BI API
+    string resourceUri = "https://analysis.windows.net/powerbi/api";
 
-        //OAuth2 authority Uri
-        string authorityUri = "https://login.windows.net/common/oauth2/authorize";
+    //OAuth2 authority Uri
+    string authorityUri = "https://login.windows.net/common/oauth2/authorize";
 
-        string powerBIApiUrl = "https://api.powerbi.com/v1.0/myorg";
+    string powerBIApiUrl = "https://api.powerbi.com/v1.0/myorg";
 
-        //Get access token:
-        // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
-        // AuthenticationContext is part of the Active Directory Authentication Library NuGet package
-        // To install the Active Directory Authentication Library NuGet package in Visual Studio,
-        //  run "Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612" from the nuget Package Manager Console.
+    //Get access token:
+    // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
+    // AuthenticationContext is part of the Active Directory Authentication Library NuGet package
+    // To install the Active Directory Authentication Library NuGet package in Visual Studio,
+    //  run "Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612" from the nuget Package Manager Console.
 
-        // AcquireToken will acquire an Azure access token
-        // Call AcquireToken to get an Azure token from Azure Active Directory token issuance endpoint
-        AuthenticationContext authContext = new AuthenticationContext(authorityUri);
-        string token = authContext.AcquireToken(resourceUri, clientID, new Uri(redirectUri)).AccessToken;
+    // AcquireToken will acquire an Azure access token
+    // Call AcquireToken to get an Azure token from Azure Active Directory token issuance endpoint
+    AuthenticationContext authContext = new AuthenticationContext(authorityUri);
+    string token = authContext.AcquireToken(resourceUri, clientID, new Uri(redirectUri)).AccessToken;
 
+    Console.WriteLine(token);
 
-        Console.WriteLine(token);
-
-        Console.ReadLine();
-    }
+    Console.ReadLine();
 
 Once you have an authentication security token, you can call any Power BI REST operation. To learn how to use a token, see any of these walkthroughs:
 
