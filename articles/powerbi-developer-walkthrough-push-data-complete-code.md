@@ -18,7 +18,7 @@
    ms.author="derrickv"/>
 
 
-# [Walkthrough to push data](powerbi-developer-walkthrough-to-push-data.md) >  Push data to a dashboard complete code listing
+# [Walkthrough to push data](powerbi-developer-walkthrough-push-data.md) >  Push data to a dashboard complete code listing
 
 After you follow Steps 2 to 5 in the **Walkthrough to push data into a Power BI dashboard**, your complete code should look like the following.
 
@@ -231,7 +231,7 @@ After you follow Steps 2 to 5 in the **Walkthrough to push data into a Power BI 
 ## See also
 - [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Push data into a Power BI dashboard](powerbi-developer-push-data-into-a-dashboard.md)
-- [Walkthrough - Push data into a Power BI dashboard](powerbi-developer-walkthrough-to-push-data.md)
+- [Walkthrough - Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
 - [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
 - [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)

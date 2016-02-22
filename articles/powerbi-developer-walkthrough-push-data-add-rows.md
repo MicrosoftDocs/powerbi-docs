@@ -17,18 +17,17 @@
    ms.date="02/21/2016"
    ms.author="derrickv"/>
 
-# Step 5 - [Walkthrough to push data](powerbi-developer-walkthrough-to-push-data.md) > Add rows to a Power BI table
+# Step 5: [Walkthrough to push data](powerbi-developer-walkthrough-push-data.md) > Add rows to a Power BI table
 
 In **step 4** of Walkthrough to push data, [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation to add rows to a Power BI dataset.
 
 When you call the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation, you add rows to a dataset in your dashboard.
 
-![](media/powerbi-developer-walkthrough-to-push-data/powerbi-developer-add-rows.png)
+![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-add-rows.png)
 
 Here's how to add rows to a dataset using the Power BI API.
 
-**NOTE**
-Before you get started, make sure to [setup your app environment in Azure Active Directory (Azure AD)](powerbi-developer-what-you-need-to-create-an-app.md).
+>**NOTE**: Before you get started, make sure to [setup your app environment in Azure Active Directory (Azure AD)](powerbi-developer-what-you-need-to-create-an-app.md).
 
 1. In Program.cs, add the code below.
 2. Run the Console App, and login to your Power BI account. You should see **Rows Added** in the Console Window. You can also login to your Power BI dashboard to see the rows added to the dataset.

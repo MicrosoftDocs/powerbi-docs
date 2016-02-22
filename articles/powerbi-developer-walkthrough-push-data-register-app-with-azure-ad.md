@@ -17,7 +17,7 @@
    ms.date="02/21/2016"
    ms.author="derrickv"/>
 
-# Step 1: [Walkthrough - Push data into a dashboard](powerbi-developer-walkthrough-to-push-data.md) > Register an app with Azure AD
+# Step 1: [Walkthrough - Push data into a dashboard](powerbi-developer-walkthrough-push-data.md) > Register an app with Azure AD
 
 The first step to push data into a Power BI dashboard is to register your app in Azure AD. You need to do this first so that you have a **Client ID** that identifies your app in Azure AD. Without a **Client ID**, Azure AD can not authenticate your app.
 

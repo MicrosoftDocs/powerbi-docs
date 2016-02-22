@@ -17,14 +17,13 @@
    ms.date="02/21/2016"
    ms.author="derrickv"/>
 
-# Step 2: [Walkthrough to push data](powerbi-developer-walkthrough-to-push-data.md) > Get an authentication access token
+# Step 2: [Walkthrough to push data](powerbi-developer-walkthrough-push-data.md) > Get an authentication access token
 
 In **step 1** of Walkthrough to push data, [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
 
 Here's how to get an authentication access token.
 
-**NOTE**
-Before you get started, make sure to [setup your app environment in Azure Active Directory (Azure AD)](powerbi-developer-what-you-need-to-create-an-app.md).
+>**NOTE**: Before you get started, make sure to [setup your app environment in Azure Active Directory (Azure AD)](powerbi-developer-what-you-need-to-create-an-app.md).
 
 1. In Visual Studio 2015, create a **Console Application** project.
 2. Add the code below into class Program {...}.

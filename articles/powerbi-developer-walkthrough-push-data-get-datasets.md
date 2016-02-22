@@ -17,14 +17,13 @@
    ms.date="02/21/2016"
    ms.author="derrickv"/>
 
-# Step 4 - [Walkthrough to push data](powerbi-developer-walkthrough-to-push-data.md) > Get a dataset to add rows into a Power BI table
+# Step 4: [Walkthrough to push data](powerbi-developer-walkthrough-push-data.md) > Get a dataset to add rows into a Power BI table
 
 In **step 3** of Walkthrough to push data, [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md), you called the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset in a dashboard. In the step, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset.
 
 To push data into a Power BI dashboard, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a **Dataset ID**. You get a **Dataset ID** using the [Get Dataset](https://msdn.microsoft.com/library/mt203567.aspx) operation. The **Get Dataset** operation returns a JSON string containing a list of all datasets in a Power BI dashboard. The recommended way to deserialize a JSON string in with [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
-**NOTE**
-To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md) to a request header:
+>**NOTE**: To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md) to a request header:
 
     //Add token to the request header
     request.Headers.Add("Authorization", String.Format("Bearer {0}", token));

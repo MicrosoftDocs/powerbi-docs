@@ -17,7 +17,6 @@
    ms.date="02/22/2016"
    ms.author="derrickv"/>
 
-
 # Push data into a Power BI Dashboard
 
 With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table into a dashboard.

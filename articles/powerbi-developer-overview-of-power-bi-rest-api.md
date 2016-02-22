@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2016"
+   ms.date="02/22/2016"
    ms.author="derrickv"/>
 
 # Overview of Power BI REST API
@@ -23,7 +23,7 @@ Power BI displays dashboards that are interactive, and can be created and update
 
 ## What can I do with the Power BI API?
 
-Using any programming language that supports REST calls, you can create apps that integrate with your Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
+Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
 
 Here are some of the things you can do with the Power BI API:
 

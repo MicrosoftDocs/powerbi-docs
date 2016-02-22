@@ -17,7 +17,7 @@
    ms.date="02/21/2016"
    ms.author="derrickv"/>
 
-# Step 3 - [Walkthrough - Push data into a dashboard](powerbi-developer-walkthrough-to-push-data.md) > Create a dataset in a Power BI dashboard
+# Step 3: [Walkthrough - Push data into a dashboard](powerbi-developer-walkthrough-push-data.md) > Create a dataset in a Power BI dashboard
 
 In **step 2** of Walkthrough - Push data into a dashboard, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
 
@@ -30,12 +30,11 @@ To authenticate a Power BI REST operation, you add the token you got in [Get an 
 
 When you call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation, a new dataset is created in your dashboard.
 
-![](media/powerbi-developer-walkthrough-to-push-data/powerbi-developer-create-dataset.png)
+![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-create-dataset.png)
 
 Here's how to push data into a dashboard using the Power BI API.
 
-**NOTE**
-Before you get started, make sure to [setup your app environment in Azure Active Directory (Azure AD)](powerbi-developer-what-you-need-to-create-an-app.md).
+>**NOTE**: Before you get started, make sure to [setup your app environment in Azure Active Directory (Azure AD)](powerbi-developer-what-you-need-to-create-an-app.md).
 
 1. In the Console Application project you created in [Step 2 - Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), add **using System.Net**, and **using System.IO** to Program.cs.
 2. In Program.cs, add the code below.

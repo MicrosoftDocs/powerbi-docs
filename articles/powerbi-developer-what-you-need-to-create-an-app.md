@@ -52,31 +52,34 @@ The following is a simple C# app that authenticates to Power BI. The sample only
 -	[Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)
 -	[Integrate a Power BI tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
 
-For this sample, you can learn how to authenticate a **Native client app**. To authenticate a web app, see [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md).
+For this sample, you learn how to authenticate a **Native client app**. To authenticate a web app, see [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md).
 
 Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. After you register an app in **Azure AD**, the application outsources authentication to Azure AD, and grants your app access to the Power BI REST API.
 
-Here are the steps to get an authentication security token:
+Here are the steps to get an authentication security token.
+
+**Steps to get an authentication security token**
 
 <a name="register_1"/>
-**Step 1** – Register a **Native client app**.
-1.	Go to dev.powerbi.com/apps.
-2.	Click **Sign in with your existing account**, and sign into your Power BI account.
-3.	Enter an **App Name** such as "Sample Native client app".
-4.	For **App Type**, choose **Native app**.
-5.	Enter a **Redirect URL**. For a **Native client app**, a redirect uri gives **Azure AD** more details on the specific application that it will authenticate. The standard Uri for a client app is https://login.live.com/oauth20_desktop.srf.
-6.	For **Choose APIs to access**, choose **Read All Datasets**. For all Power BI app permissions, see [App permissions](powerbi-developer-app-permissions.md).
-7.	Click **Register app**, and save the **Client ID** that was generated. A **Client ID** identifies the app in Azure AD.
+**Step 1**: Register a **Native client app**.
 
-**Step 2** – In Visual Studio, create a **Console Application** project, and follow these steps:
+1. Go to dev.powerbi.com/apps.
+2. Click **Sign in with your existing account**, and sign into your Power BI account.
+3. Enter an **App Name** such as "Sample Native client app".
+4. For **App Type**, choose **Native app**.
+5. Enter a **Redirect URL**. For a **Native client app**, a redirect uri gives **Azure AD** more details on the specific application that it will authenticate. The standard Uri for a client app is https://login.live.com/oauth20_desktop.srf.
+6. For **Choose APIs to access**, choose **Read All Datasets**. For all Power BI app permissions, see [App permissions](powerbi-developer-app-permissions.md).
+7. Click **Register app**, and save the **Client ID** that was generated. A **Client ID** identifies the app in Azure AD.
+
+**Step 2**: In Visual Studio, create a **Console Application** project, and follow these steps:
 
 1.	Paste the code below into Main(string[] args).
 2.	Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [Step 1 – Register a Native client app](#register_1).
 3.	Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
 
-a.	In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+  a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 
-b.	In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
+  b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 
 4.	After the package is installed, add **using Microsoft.IdentityModel.Clients.ActiveDirectory;** to Program.cs.
 5.	Run the Console App, and login to your Power BI account. You should see a long token string that you use to call Power BI operations.
