@@ -29,7 +29,7 @@ Here are the steps to configure your environment:
 
 <a name="signup"/>
 ## Sign up for Power BI
-To create a Power BI app, you need to sign up for the Power BI service. See [Sign up for Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-self-service-signup-for-power-bi/). Once you have a Power BI account, you need to register, or configure, your app in **Azure AD**.
+To create a Power BI app, you need to sign up for the Power BI service. See [Sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md). Once you have a Power BI account, you need to register, or configure, your app in **Azure AD**.
 
 <a name="register"/>
 ## Register your app in Azure AD
