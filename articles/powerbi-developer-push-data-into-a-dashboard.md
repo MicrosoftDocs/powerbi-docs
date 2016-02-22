@@ -14,13 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/14/2016"
+   ms.date="02/21/2016"
    ms.author="derrickv"/>
 
 
 # Push data into a Power BI Dashboard
 
-With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table. To learn how to push a dataset, such as a Product table, into a dashboard, follow the steps in the left navigation page or go to [Walkthrough to push data into a Power BI dashboard](powerbi-developer-push-step-1.md).
+With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table into a dashboard. To learn how to push a dataset into a dashboard, follow the steps in the left navigation page or go to [Walkthrough to push data into a Power BI dashboard](powerbi-developer-walkthrough-to-push-data.md).
 
 The next section is a general discussion of Power BI API operations that push data.
 
@@ -31,8 +31,8 @@ With the Power BI REST API, you can push data sources to Power BI. When an app a
 Here are the operations to push data into a dashboard:
 
 - [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-- [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
 - [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
+- [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
 - [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)
 
 You create a dataset in Power BI by passing a JavaScript Object Notation (JSON) string to the Power BI service. To learn more about JSON, see [Introducing JSON](http://json.org/).
@@ -100,15 +100,15 @@ For a Power BI table schema, you can use the following data types:
 |Datetime|During data loading we quantize values with day fractions to whole multiples of 1/300 seconds (3.33ms).
 |String|Currently allows up to 128K characters.
 
-To learn more about how to create a dataset, see the [first step under Push data into a Power BI Dashboard](powerbi-developer-push-step-1.md) in the left navigation pane.
+To learn more about how to create a dataset, see the [first step under Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
 
 ## Learn more about pushing data into Power BI
 
-- [Walkthrough to push data into a Power BI dashboard](powerbi-developer-push-step-1.md)
+- [Walkthrough to push data into a Power BI dashboard](powerbi-developer-walkthrough-to-push-data.md)
 
 ## See also
 - [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-- [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
 - [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
+- [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
 - [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)
 - [Introducing JSON](http://json.org/)
