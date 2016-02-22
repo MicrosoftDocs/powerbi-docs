@@ -43,5 +43,6 @@ The **next step** shows you how to [get an authentication access token](powerbi-
 ## See also
 - [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
 - [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
+- [Walkthrough: Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Register a client app](powerbi-developer-register-a-client-app.md)
 - [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
