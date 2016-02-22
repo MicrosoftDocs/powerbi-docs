@@ -17,8 +17,6 @@
    ms.date="02/21/2016"
    ms.author="derrickv"/>
 
-
-<a name="push_step3"/>
 # Step 3 - [Walkthrough - Push data into a dashboard](powerbi-developer-walkthrough-to-push-data.md) > Create a dataset in a Power BI dashboard
 
 In **step 2** of Walkthrough - Push data into a dashboard, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.

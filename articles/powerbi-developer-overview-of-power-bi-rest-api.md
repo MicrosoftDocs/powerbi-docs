@@ -32,7 +32,7 @@ Here are some of the things you can do with the Power BI API:
 |Get started with your first app.| [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md) and [Push data into a Dashboard](powerbi-developer-push-data-into-a-dashboard.md)
 |Extend an existing business workflow to push key data into a Power BI Dashboard. |[Push data into a Dashboard](powerbi-developer-push-data-into-a-dashboard.md)
 |Integrate a tile or report into an app.|[Integrate a tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
-|Create a custom visual.| [ Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
+|Create a custom visual.| [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 |Authenticate a Power BI web app.|[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
 
 ### Other things you can do to learn about the Power BI API

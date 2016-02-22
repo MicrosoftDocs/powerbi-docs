@@ -17,7 +17,6 @@
    ms.date="02/21/2016"
    ms.author="derrickv"/>
 
-<a name="push_step2"/>
 # Step 2: [Walkthrough to push data](powerbi-developer-walkthrough-to-push-data.md) > Get an authentication access token
 
 In **step 1** of Walkthrough to push data, [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
