@@ -21,9 +21,9 @@
 
 With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table into a dashboard.
 
-Before you get started, make sure to [setup your app environment in Azure Active Directory (Azure AD)](powerbi-developer-what-you-need-to-create-an-app.md). Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. After you register an app in **Azure AD**, the application outsources authentication to Azure AD, and grants your app access to the Power BI REST API.
+Before you get started, make sure to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md). Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. After you register an app in **Azure AD**, the application outsources authentication to Azure AD, and grants your app access to the Power BI REST API.
 
-To learn how to push a dataset into a dashboard, follow these steps. In the example, you push a Sales Marketing dataset with a Product table into your dashboard.
+To learn how to push a dataset into a dashboard, follow these steps. In the example, you push a Sales Marketing dataset with a Product table into a dashboard.
 
 ## Steps to push a dataset into a dashboard
 
@@ -62,7 +62,7 @@ The JSON string for a dataset has the following format:
 	    ]
 	}
 
-So, for our Product example, you would pass a JSON string such as the example below. In this example, **SalesMarketing** is the name of the dataset, and **Product** is the name of the table. After you define the table, you define the table schema. For the **SalesMarketing** dataset, the table schema has these columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
+So, for our Sales Marketing dataset example, you would pass a JSON string such as the example below. In this example, **SalesMarketing** is the name of the dataset, and **Product** is the name of the table. After you define the table, you define the table schema. For the **SalesMarketing** dataset, the table schema has these columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
 
 **Example dataset object JSON**
 
@@ -101,9 +101,11 @@ So, for our Product example, you would pass a JSON string such as the example be
 	    ]
 	}
 
-For a Power BI table schema, you can use the following data types:
+For a Power BI table schema, you can use the following data types.
 
-|Data type|Restrictions
+## Power BI table data types
+
+|**Data type**|**Restrictions**
 |---|---
 |Int64|Int64.MaxValue and Int64.MinValue not allowed.
 |Double|Double.MaxValue and Double.MinValue values not allowed. NaN not supported.+Infinity and -Infinity not supported in some functions (e.g. Min, Max).
@@ -114,7 +116,7 @@ For a Power BI table schema, you can use the following data types:
 
 ## Learn more about pushing data into Power BI
 
-To learn more about how to create a dataset, see the [first step under Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
+To get started pushing data into a dashboard, see the [first step under Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
 
 ## See also
 - [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
