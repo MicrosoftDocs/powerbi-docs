@@ -25,12 +25,12 @@ Power BI displays dashboards that are interactive, and can be created and update
 
 Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
 
-Here are some of the things you can do with the Power BI API:
+Here are some of the things you can do with the Power BI API.
 
 |**To do this**| **Go here**
 |---|---
-|Get started with your first app.| [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md) and [Push data into a Dashboard](powerbi-developer-walkthrough-push-data.md)
-|Extend an existing business workflow to push key data into a Power BI Dashboard. |[Push data into a Dashboard](powerbi-developer-walkthrough-push-data.md)
+|Get started with your first app.| [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md) and [Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
+|Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
 |Integrate a tile or report into an app.|[Integrate a tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
 |Create a custom visual.| [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 |Authenticate a Power BI web app.|[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
@@ -49,7 +49,7 @@ In the Apiary interactive API console, you can try all Power BI REST API operati
 
 ## See also
 - [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
-- [Push data into a Dashboard](powerbi-developer-walkthrough-push-data.md)
+- [Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Integrate a tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
 - [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 - [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
