@@ -34,9 +34,9 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
     ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Win10Ph_DashHome.png)
 
-    >**Note:**  Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
+    Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-    >   ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/WPI_Win10Ph_Dash.png)
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/WPI_Win10Ph_Dash.png)
 
 5.  In the dashboard, you can:
 
@@ -49,7 +49,7 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 6.  To go back to the dashboards home page, tap the back arrow or back button.
 
 ## View dashboards horizontally
-You can also view dashboards horizontally, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles as they are in the Power BI service.
+You can also view dashboards horizontally, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
 
 ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_iPh_Landscape.png)
 
