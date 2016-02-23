@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/01/2016"
+   ms.date="02/23/2016"
    ms.author="maggies"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
@@ -39,9 +39,6 @@ In the iPhone app for Microsoft Power BI for iOS, you see and can interact with 
 
     Power BI dashboards look a little different on your iPhone. All the tiles appear the same size, and they're arranged one after another from top to bottom.
 
-    >**NOTE**: You can also view dashboards horizontally, just by turning your phone. Read more about [landscape mode in the iPhone app](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
-
-    ![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPh_Landscape.png)
 4.  Swipe up and down to see all the tiles in the dashboard.
 
     While here, you can:
@@ -57,6 +54,15 @@ In the iPhone app for Microsoft Power BI for iOS, you see and can interact with 
     -  Tap **Invite** to [invite a colleague](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) to view your dashboard.
 
 6.  Tap the back arrow in the upper-left corner to get back to the list of dashboards.
+
+## View dashboards horizontally
+You can also view dashboards horizontally, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles as they are in the Power BI service.
+
+![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPh_Landscape.png)
+
+You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](powerbi-mobile-tiles-in-the-win10phone-app.md) to open the tile in focus mode and interact with your data.
+
+Read more about [landscape mode in the iPhone app](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
 
 ### See also  
 [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/2016"
+   ms.date="02/23/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Power BI mobile app for Windows 10  
@@ -47,6 +47,13 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
     
 
 6.  To go back to the dashboards home page, tap the back arrow or back button.
+
+## View dashboards horizontally
+You can also view dashboards horizontally, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles as they are in the Power BI service.
+
+![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_iPh_Landscape.png)
+
+You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](powerbi-mobile-tiles-in-the-win10phone-app.md) to open the tile in focus mode and interact with your data.
 
 ### See also  
 [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  

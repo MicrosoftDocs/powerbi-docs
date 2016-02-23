@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="02/23/2016"
    ms.author="maggies"/>
 # Reports in the Power BI mobile app for Windows 10
 
@@ -30,7 +30,9 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
     >**Note**: If you [import whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), they have an Excel icon. When you tap them in the app, they open in the [Power BI service](https://powerbi.com) in a browser window.
 
--   Or: On a dashboard, tap a tile, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
+-   Or: On a dashboard, tap the vertical ellipsis on the tile, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
+
+    ![](media/powerbi-mobile-reports-in-the-windows-app/pbi_win10ph_tileellips.png)
 
     >**Notes**:   
     >
@@ -43,6 +45,8 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 -   Tap the tabs at the bottom of the page. 
 
 ## Sort a chart in a Power BI report
+
+>**Note**: Sorting isn't available on Windows 10 phones.
 
 1.  Tap the chart. 
 

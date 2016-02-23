@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="02/23/2016"
    ms.author="maggies"/>
 
 # Tiles in the Power BI mobile app for Windows 10  
@@ -27,17 +27,15 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
 2. Tap the vertical ellipsis on the tile. From here, you can: 
 
-    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/pbi_andr_tileellips_link.png)
+    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/pbi_win10ph_tileellips.png)
 
-    [Share the tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
+    [Share a snapshot of the tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
 
-    [Open the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) inside the Power BI app, if it has a link. Links can go to Power BI dashboards, or to an external URL. If it's an external site, Power BI asks you to allow it.
-    
-    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Andr_OpenLinkMessage.png)
+    Tap **Open Report** ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png) to [view the underlying report](powerbi-mobile-reports-in-the-windows-app.md).
 
-    After you open the link in the Power BI app, you can copy the link or open it in a browser window instead.
+    [Open the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink), if it has a link. Links can go to Power BI dashboards or to an external URL.
 
-3.    Tap **Expand tile**. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
+3.    Tap **Expand Tile**. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
      Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
 
