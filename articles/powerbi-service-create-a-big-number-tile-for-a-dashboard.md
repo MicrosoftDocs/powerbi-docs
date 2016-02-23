@@ -27,7 +27,8 @@ The question box is the easiest way to make a number tile like this.
 
 1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
-2.  At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample. 
+2.  At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
+
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QnABox.png)
 
 3.  For example, type "number of opportunities" in the question box.

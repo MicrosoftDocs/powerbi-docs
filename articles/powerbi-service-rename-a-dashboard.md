@@ -18,6 +18,8 @@
    ms.author="mihart"/>
 # Rename a Power BI dashboard
 
+## Rename the dashboard
+
 Right-click the dashboard name and select **Rename**.
 
 ![](media/powerbi-service-rename-a-dashboard/rename_dataset_new.png)

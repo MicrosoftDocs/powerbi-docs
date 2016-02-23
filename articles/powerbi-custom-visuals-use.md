@@ -21,7 +21,6 @@
 
 You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to 
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
-
     ![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
 
 >**Important**:

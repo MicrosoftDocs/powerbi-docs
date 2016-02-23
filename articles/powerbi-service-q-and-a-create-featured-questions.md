@@ -28,9 +28,10 @@ This article uses the Retail Analysis Sales sample.
 2.  To add to this list, select the gear icon in the top right corner of Power BI.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_gearIcon2.jpg)
 
-4.  Select **Settings** &gt; **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A Questions**.  
+3.  Select **Settings** &gt; **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A Questions**.  
 
-3.  Select **Add a question**.
+4.  Select **Add a question**.
+
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_AddQuestion.jpg)
 
 5.  Type your question in the text box and select **Apply**.   Optionally, add another question by selecting **Add a question**.  
