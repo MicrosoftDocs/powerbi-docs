@@ -22,7 +22,6 @@
 
 XXXX
 
-[![Work with Excel data in Power BI](./media/powerbi-learning-5-1-intro-to-excel-data/videothumb_5_1.png)](https://youtu.be/EKewOxnYkns)
 
 With Power BI, getting your Excel data into Power BI is easy. This lab guides you through uploading an Excel workbook with a simple table into Power BI. We then show how to upload workbooks created with Excel's more advanced BI data modeling and reporting features such as Power Pivot and Power View.
 
