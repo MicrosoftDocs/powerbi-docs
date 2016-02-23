@@ -1,6 +1,6 @@
 <properties
    pageTitle="Summary of the introduction to Power BI"
-   description="Summary of the introduction to Power BI"
+   description="Review what you learned in this introduction to Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"

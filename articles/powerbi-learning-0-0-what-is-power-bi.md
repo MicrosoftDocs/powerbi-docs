@@ -1,6 +1,6 @@
 <properties
-   pageTitle="An Introduction to Power BI"
-   description="An Introduction to Power BI"
+   pageTitle="Introducing Power BI"
+   description="Understand what Power BI is, its software elements, and its flow of work"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -24,7 +24,7 @@ Welcome to the **Guided Learning** collection of courses for Power BI, where you
 
 This course helps you understand Power BI, and shows you how to use its capabilities and features to unlock powerful insights on your own data.
 
-Each **topic** in this course includes a video that provides an overview of what you’ll learn in that topic. Then the content below the video further explains that content, and lets you absorb the information at your own pace.
+After the first couple of topics in this **Getting Started** section, nearly every **topic** in this course includes a video that provides an overview of what you’ll learn in that topic. Then the content below the video further explains that content, and lets you absorb the information at your own pace.
 
 We start with the basics, and then move through topics and features in Power BI in a logical sequence. We hope you enjoy the course, and look forward to including more content in the future.
 
