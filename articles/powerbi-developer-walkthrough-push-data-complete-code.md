@@ -19,9 +19,8 @@
 
 
 # Push data to a dashboard complete code listing
-[Walkthrough to push data](powerbi-developer-walkthrough-push-data.md) >  Push data to a dashboard complete code listing
 
-After you follow Steps 2 to 5 in the **Walkthrough to push data into a Power BI dashboard**, your complete code should look like the following.
+After you follow Steps 2 to 5 in the **Push data into a dashboard**, your complete code should look like the following.
 
 ## Push data to dashboard code
 

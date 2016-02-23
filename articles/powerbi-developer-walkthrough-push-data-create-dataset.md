@@ -19,9 +19,7 @@
 
 # Step 3: Create a dataset in a Power BI dashboard
 
-[Walkthrough - Push data into a dashboard](powerbi-developer-walkthrough-push-data.md) > Create a dataset in a Power BI dashboard
-
-In **step 2** of Walkthrough - Push data into a dashboard, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
+In **step 2** of Push data into a dashboard, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
 
 To make a call to a REST resource, you use a url that locates the resource, and you send a JavaScript Object Notation (JSON) string, which describes the dataset, to the Power BI service resource. A REST resource identifies the part of the Power BI service you want to work with. To push data into the dashboard, the target resource is a **Dashboard Dataset**. The URL that identifies a dataset is https://api.PowerBI.com/v1.0/myorg/datasets. If you are pushing data within a group, the url is https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 

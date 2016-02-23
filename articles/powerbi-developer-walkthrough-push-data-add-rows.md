@@ -18,9 +18,8 @@
    ms.author="derrickv"/>
 
 # Step 5: Add rows to a Power BI table
-[Walkthrough to push data](powerbi-developer-walkthrough-push-data.md) > Add rows to a Power BI table
 
-In **step 4** of Walkthrough to push data, [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation to add rows to a Power BI dataset.
+In **step 4** of Push data into a dashboard, [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation to add rows to a Power BI dataset.
 
 >**NOTE**: To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md) to a request header:
 
