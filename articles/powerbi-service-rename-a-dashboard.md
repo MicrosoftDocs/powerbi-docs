@@ -14,13 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 # Rename a Power BI dashboard
 
 Right-click the dashboard name and select **Rename**.
 
-![](media/powerbi-service-rename-a-dashboard/rename_dataset.png)
+![](media/powerbi-service-rename-a-dashboard/rename_dataset_new.png)
 
 ## Having trouble renaming a dashboard?
 

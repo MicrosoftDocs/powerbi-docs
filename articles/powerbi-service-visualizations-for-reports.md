@@ -23,7 +23,7 @@ Data visualizations allow you to interact with your data to find business insigh
 ![](media/powerbi-service-visualizations-for-reports/PBI_ChoroUSSentiment.png)
 
 ## Add a visualization in Power BI  
-[Create visualizations](powerbi-service-add-visualizations-to-a-report-i.md)on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
+[Create visualizations](powerbi-service-add-visualizations-to-a-report-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
 
 ## Upload a custom visualization and use it in Power BI
 Add a custom visualization that you created yourself or that you found in the [community gallery](http://visuals.powerbi.com). Feeling creative? Dig into our source code and use our developer tools to create a new visualization type and [share it with the community](http://visuals.powerbi.com)
@@ -63,11 +63,15 @@ Learn how to [create and add links to table visualizations](powerbi-service-hype
 
 -   [Doughnut charts](powerbi-service-tutorial-doughnut-charts.md)
 
+- [Enhanced scatter chart](powerbi-service-tutorial-enhancedscatter.md)
+
 -   [Filled Maps](powerbi-service-tutorial-filled-maps-choropleths.md) (Choropleths)
 
 -   [Funnel charts](powerbi-service-tutorial-funnel-charts.md)
 
 -   [Radial Gauge charts](powerbi-service-tutorial-radial-gauge-charts.md)
+
+- [Scatter charts](powerbi-service-tutorial-scatter.md)
 
 - [Slicers](powerbi-service-tutorial-slicers.md)
 

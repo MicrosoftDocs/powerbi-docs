@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 
 # Pin a tile from one dashboard to another dashboard  
