@@ -45,15 +45,13 @@ How would we go about creating this same line chart using Q&A?
 
 2.  Using natural language, type something like this into the question box:
 
-    **what were this year sales and last year sales by month as line chart**
+    **what were this year sales and last year sales by month as area chart**
 
     As you type your question, Q&A picks the best visualization to display your answer; and the visualization changes dynamically as you modify the question. Also, Q&A helps you format your question with suggestions, auto-complete, and spelling corrections.
 
-    When you finish typing your question, the result is the exact same chart\* that we saw in the report.  But creating it this way was much faster!
+    When you finish typing your question, the result is the exact same chart that we saw in the report.  But creating it this way was much faster!
 
-    >**NOTE**:  Area chart is temporarily not supported in Q&A but will be added soon. 
-
-    ![](media/powerbi-service-tutorial-introduction-to-q-and-a/PBI_QnA_LineChart.png)
+    ![](media/powerbi-service-tutorial-introduction-to-q-and-a/PBI_QnA_AreaChart.png)
 
 3.  To pin the chart to your dashboard, select the pin icon ![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png).
 
@@ -68,8 +66,6 @@ How would we go about creating this same line chart using Q&A?
 [Q&A in Power BI](powerbi-service-q-and-a.md)
 
 [Make your data work well with Q&A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
-
-[Ask the right questions of Salesforce data in Power BI](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 
 [preparing a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2015"
+   ms.date="02/22/2016"
    ms.author="mihart"/>
 
 # Create a big number tile for a Power BI dashboard by asking a question  
@@ -27,13 +27,13 @@ The question box is the easiest way to make a number tile like this.
 
 1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
-2.  At the top of your dashboard, start typing what you want to know about your data in the question box.  
+2.  At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample. 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QnABox.png)
 
-3.  For example, as I type "number of opportunities" in the question box on a Sales Rep dashboard.
+3.  For example, type "number of opportunities" in the question box.
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QA_Number.png)
 
-    The question box suggests, auto-completes to **Show number of opportunities**, and displays the total number.  
+    The question box suggests, auto-completes to **Show opportunity count**, and displays the total number.  
 
 4.  Select the pin icon ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_PinTile.png) in the upper-right corner to add the number tile to the dashboard. 
 
@@ -43,7 +43,7 @@ The question box is the easiest way to make a number tile like this.
 
     -   New dashboard: type the name of the new dashboard.
 
-6.  Select Pin.
+6.  Select **Pin**.
 
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.  
 
@@ -56,4 +56,3 @@ The question box is the easiest way to make a number tile like this.
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-[](powerbi-service-dashboards.md)  

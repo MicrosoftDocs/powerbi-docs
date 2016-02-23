@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2015"
+   ms.date="02/22/2016"
    ms.author="mihart"/>
 
 # Make your data work well with Q&A in Power BI  
@@ -47,7 +47,5 @@ Here are some tips for making the most of Q&A in your workbook.
 ## See also  
 [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
-[Ask the right questions of Salesforce data in Power BI](powerbi-service-ask-the-right-questions-of-salesforce-data.md)  
-[Get Data: Salesforce](powerbi-content-pack-salesforce.md)  
 [Get data (for Power BI)](powerbi-service-get-data.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

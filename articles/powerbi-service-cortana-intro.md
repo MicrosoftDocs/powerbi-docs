@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="02/22/2016"
    ms.author="mihart"/>
 
 
@@ -50,6 +50,6 @@ When a Windows 10 (version 1511 or higher) user adds the account he or she uses 
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get started with Power BI Desktop](powerbi-desktop-get-started.md)
+[Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
 
 [Power BI basic concepts](powerbi-service-basic-concepts.md)

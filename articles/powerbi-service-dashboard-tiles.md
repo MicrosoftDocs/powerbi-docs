@@ -35,6 +35,7 @@ Need help understanding the building blocks that make up Power BI?  See [Power 
 ## Pin a tile from...
 
 Tiles can be pinned from:
+
 -   [Power BI Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
 -   [a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
@@ -63,17 +64,17 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
 
 1. Hover over the tile to display the ellipses.
 
-  ![](media/powerbi-service-dashboard-tiles/ellipses_new.png)
+    ![](media/powerbi-service-dashboard-tiles/ellipses_new.png)
 
 2. Select the ellipses to open the tile action menu.
 
-  ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
+    ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
 
   From here you can:
 
     -   [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
 
-    -   [Export the data used in the tile](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/export-icon.png)
+    -   [Export the data used in the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
 
     -   [View in full screen Focus  mode](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="02/22/2016"
    ms.author="mihart"/>
 
 # Change how a chart is sorted in a Power BI report
@@ -40,7 +40,7 @@ Sometimes, you want to sort your visual using a different column or other criter
 to sort by month (and not in alphabetical order) or you might
 want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  Here are several solutions:
 
--   In Power BI Desktop, [use the Data Tools Modeling tab to sort by a different column](powerbi-desktop-sort-by-column). 
+-   In Power BI Desktop, [use the Data Tools Modeling tab to sort by a different column](powerbi-desktop-sort-by-column.md). 
 
 -   In Excel, if you own the dataset, add a new column that concatenates the month name and number. Then refresh or re-import the dataset to see the new column in the Fields area.
 

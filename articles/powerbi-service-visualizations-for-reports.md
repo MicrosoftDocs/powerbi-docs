@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2015"
+   ms.date="02/22/2016"
    ms.author="mihart"/>
 
 # Visualizations in Power BI  
@@ -44,7 +44,7 @@ Organize your report pages by [moving and resizing visualizations](powerbi-servi
 You can [sort a visualization](powerbi-service-change-how-a-chart-is-sorted.md) by the different fields in the visualization, or reverse the order -- A to Z or Z to A.
 
 ## Change the aggregation in a visualization  
-[Change the aggregation in a chart](powerbi-service-change-the-aggregation-in-a-chart.md)(sum, average, maximum, etc.)
+[Change the aggregation in a chart](powerbi-service-aggregates.md)(sum, average, maximum, etc.)
 
 ## Delete a visualization  
 [Remove unwanted visualizations](powerbi-service-delete-a-visualization.md)from your report.
