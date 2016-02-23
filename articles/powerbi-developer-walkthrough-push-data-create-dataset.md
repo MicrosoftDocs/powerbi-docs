@@ -46,69 +46,73 @@ Here's how to create a dataset in a Power BI dashboard.
 2. In Program.cs, add the code below.
 3. Run the Console App, and login to your Power BI account. You should see **Dataset Created** in the Console Window. Also, you can login to your dashboard to see the new dataset.
 
-** Sample push data into a dashboard **
+**Sample push data into a dashboard**
 
 Add this code into Program.cs.
 
 - In static void Main(string[] args):
 
-      static void Main(string[] args)
-      {
-          //Get an authentication access token
-          token = GetToken();
+    ```
+    static void Main(string[] args)
+    {
+        //Get an authentication access token
+        token = GetToken();
 
-          //Create a dataset in a Power BI dashboard
-          CreateDataset();
-      }
+        //Create a dataset in a Power BI dashboard
+        CreateDataset();
+    }
+    ```
 
 - Add a CreateDataset() method:
 
-      #region Create a dataset in a Power BI dashboard
-      private static void CreateDataset()
-      {
-          //TODO: Add using System.Net and using System.IO
+    ```
+    #region Create a dataset in a Power BI dashboard
+    private static void CreateDataset()
+    {
+        //TODO: Add using System.Net and using System.IO
 
-          //Push data into a Power BI dashboard
+        //Push data into a Power BI dashboard
 
-          string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
-          //POST web request to create a dataset.
-          //To create a Dataset in a group, use the Groups uri: https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets
-          HttpWebRequest request = System.Net.WebRequest.Create(powerBIDatasetsApiUrl) as System.Net.HttpWebRequest;
-          request.KeepAlive = true;
-          request.Method = "POST";
-          request.ContentLength = 0;
-          request.ContentType = "application/json";
+        string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
+        //POST web request to create a dataset.
+        //To create a Dataset in a group, use the Groups uri: https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets
+        HttpWebRequest request = System.Net.WebRequest.Create(powerBIDatasetsApiUrl) as System.Net.HttpWebRequest;
+        request.KeepAlive = true;
+        request.Method = "POST";
+        request.ContentLength = 0;
+        request.ContentType = "application/json";
 
-          //Add token to the request header
-          request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
+        //Add token to the request header
+        request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
 
-          //Create dataset JSON for POST request
-          string datasetJson = "{\"name\": \"SalesMarketing\", \"tables\": " +
-              "[{\"name\": \"Product\", \"columns\": " +
-              "[{ \"name\": \"ProductID\", \"dataType\": \"Int64\"}, " +
-              "{ \"name\": \"Name\", \"dataType\": \"string\"}, " +
-              "{ \"name\": \"Category\", \"dataType\": \"string\"}," +
-              "{ \"name\": \"IsCompete\", \"dataType\": \"bool\"}," +
-              "{ \"name\": \"ManufacturedOn\", \"dataType\": \"DateTime\"}" +
-              "]}]}";
+        //Create dataset JSON for POST request
+        string datasetJson = "{\"name\": \"SalesMarketing\", \"tables\": " +
+            "[{\"name\": \"Product\", \"columns\": " +
+            "[{ \"name\": \"ProductID\", \"dataType\": \"Int64\"}, " +
+            "{ \"name\": \"Name\", \"dataType\": \"string\"}, " +
+            "{ \"name\": \"Category\", \"dataType\": \"string\"}," +
+            "{ \"name\": \"IsCompete\", \"dataType\": \"bool\"}," +
+            "{ \"name\": \"ManufacturedOn\", \"dataType\": \"DateTime\"}" +
+            "]}]}";
 
-          //POST web request
-          byte[] byteArray = System.Text.Encoding.UTF8.GetBytes(datasetJson);
-          request.ContentLength = byteArray.Length;
+        //POST web request
+        byte[] byteArray = System.Text.Encoding.UTF8.GetBytes(datasetJson);
+        request.ContentLength = byteArray.Length;
 
-          //Write JSON byte[] into a Stream
-          using (Stream writer = request.GetRequestStream())
-          {
-              writer.Write(byteArray, 0, byteArray.Length);
+        //Write JSON byte[] into a Stream
+        using (Stream writer = request.GetRequestStream())
+        {
+            writer.Write(byteArray, 0, byteArray.Length);
 
-              var response = (HttpWebResponse)request.GetResponse();
+            var response = (HttpWebResponse)request.GetResponse();
 
-              Console.WriteLine(string.Format("Dataset {0}", response.StatusCode.ToString()));
+            Console.WriteLine(string.Format("Dataset {0}", response.StatusCode.ToString()));
 
-              Console.ReadLine();
-          }
-      }
-      #endregion
+            Console.ReadLine();
+        }
+    }
+    #endregion
+    ```
 
 The **next step** shows you how to [get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md).
 

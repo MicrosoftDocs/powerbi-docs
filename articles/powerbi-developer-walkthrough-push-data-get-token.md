@@ -35,7 +35,7 @@ Here's how to get an authentication access token.
    b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 
 3. Add the code below into class Program {...}.
-4. Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [ [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md).
+4. Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md).
 5. After installing the Microsoft.IdentityModel.Clients.ActiveDirectory package, add **using Microsoft.IdentityModel.Clients.ActiveDirectory;** to Program.cs.
 6. Run the Console App, and login to your Power BI account. You should see a token string in the Console Window.
 
@@ -43,24 +43,29 @@ Here's how to get an authentication access token.
 
 Add this code to Program {...}.
 
-- Token variable to call operations:
+- A token variable to call operations:
 
-      private static string token = string.Empty;
+  ```
+  private static string token = string.Empty;
 
-      static void Main(string[] args)
-      {
-      }
+  static void Main(string[] args)
+  {
+  }
+  ```
 
 - In static void Main(string[] args):
 
-      static void Main(string[] args)
-      {
-        //Get an authentication access token
-        token = GetToken();
-      }
+  ```
+  static void Main(string[] args)
+  {
+    //Get an authentication access token
+    token = GetToken();
+  }
+  ```
 
 - Add a GetToken() method:
 
+```
        #region Get an authentication access token
        private static string GetToken()
        {
@@ -99,6 +104,7 @@ Add this code to Program {...}.
        }
 
        #endregion
+```
 
 After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset to push data into a dashboard.
 

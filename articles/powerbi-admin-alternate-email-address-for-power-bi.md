@@ -33,4 +33,4 @@ Here's how to do that:
 
 3.  In the Alternate email field, enter the email address you would like Power BI updates to be sent to.
 
-> [AZURE.NOTE] Changing this setting will not affect what email address is used to send service updates, newsletters, and other promotional communications.  Those will always be sent to the email address you originally used when registering for Power BI.
+>**NOTE**: Changing this setting will not affect what email address is used to send service updates, newsletters, and other promotional communications.  Those will always be sent to the email address you originally used when registering for Power BI.

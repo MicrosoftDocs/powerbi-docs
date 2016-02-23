@@ -37,9 +37,9 @@ Here's how you get a dataset.
 
 1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package.
 
-   a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+     a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 
-   b. In **Package Manager Console**, enter Install-Package Newtonsoft.Json.
+     b. In **Package Manager Console**, enter Install-Package Newtonsoft.Json.
 
 2. After the package is installed, add **using Newtonsoft.Json;** to Program.cs.
 
@@ -53,60 +53,64 @@ Add this code into Program.cs.
 
 - In static void Main(string[] args):
 
-      static void Main(string[] args)
-      {
+  ```
+  static void Main(string[] args)
+  {
 
-          //Get an authentication access token
-          token = GetToken();
+    //Get an authentication access token
+    token = GetToken();
 
-          //Create a dataset in a Power BI dashboard
-          CreateDataset();
+    //Create a dataset in a Power BI dashboard
+    CreateDataset();
 
-          //Get a dataset to add rows into a Power BI table
-          string datasetId = GetDataset();
-      }
+    //Get a dataset to add rows into a Power BI table
+    string datasetId = GetDataset();
+  }
+  ```
 
 - Add a GetDatset() method:
 
-      #region Get a dataset to add rows into a Power BI table
-      private static string GetDataset()
-      {
-          string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
-          //POST web request to create a dataset.
-          //To create a Dataset in a group, use the Groups uri: https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets
-          HttpWebRequest request = System.Net.WebRequest.Create(powerBIDatasetsApiUrl) as System.Net.HttpWebRequest;
-          request.KeepAlive = true;
-          request.Method = "GET";
-          request.ContentLength = 0;
-          request.ContentType = "application/json";
+  ```
+    #region Get a dataset to add rows into a Power BI table
+    private static string GetDataset()
+    {
+        string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
+        //POST web request to create a dataset.
+        //To create a Dataset in a group, use the Groups uri: https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets
+        HttpWebRequest request = System.Net.WebRequest.Create(powerBIDatasetsApiUrl) as System.Net.HttpWebRequest;
+        request.KeepAlive = true;
+        request.Method = "GET";
+        request.ContentLength = 0;
+        request.ContentType = "application/json";
 
-          //Add token to the request header
-          request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
+        //Add token to the request header
+        request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
 
-          string datasetId = string.Empty;
-          //Get HttpWebResponse from GET request
-          using (HttpWebResponse httpResponse = request.GetResponse() as System.Net.HttpWebResponse)
-          {
-              //Get StreamReader that holds the response stream
-              using (StreamReader reader = new System.IO.StreamReader(httpResponse.GetResponseStream()))
-              {
-                  string responseContent = reader.ReadToEnd();
+        string datasetId = string.Empty;
+        //Get HttpWebResponse from GET request
+        using (HttpWebResponse httpResponse = request.GetResponse() as System.Net.HttpWebResponse)
+        {
+            //Get StreamReader that holds the response stream
+            using (StreamReader reader = new System.IO.StreamReader(httpResponse.GetResponseStream()))
+            {
+                string responseContent = reader.ReadToEnd();
 
-                  //TODO: Install NuGet Newtonsoft.Json package: Install-Package Newtonsoft.Json
-                  //and add using Newtonsoft.Json
-                  var results = JsonConvert.DeserializeObject<dynamic>(responseContent);
+                //TODO: Install NuGet Newtonsoft.Json package: Install-Package Newtonsoft.Json
+                //and add using Newtonsoft.Json
+                var results = JsonConvert.DeserializeObject<dynamic>(responseContent);
 
-                  //Get the first id
-                  datasetId = results["value"][0]["id"];
+                //Get the first id
+                datasetId = results["value"][0]["id"];
 
-                  Console.WriteLine(String.Format("Dataset ID: {0}", datasetId));
-                  Console.ReadLine();
+                Console.WriteLine(String.Format("Dataset ID: {0}", datasetId));
+                Console.ReadLine();
 
-                  return datasetId;
-              }
-          }
-      }
-      #endregion
+                return datasetId;
+            }
+        }
+    }
+    #endregion
+```
 
 The **next step** shows you how to [add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md).
 

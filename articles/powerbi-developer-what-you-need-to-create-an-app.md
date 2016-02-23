@@ -76,6 +76,7 @@ Here are the steps to get an authentication security token:
 3.	Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
 
     a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+    
     b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 
 4.	After the package is installed, add **using Microsoft.IdentityModel.Clients.ActiveDirectory;** to Program.cs.
