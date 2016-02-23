@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/16/2016"
+   ms.date="02/22/2016"
    ms.author="mihart"/>
 # Reports in Power BI
 
@@ -51,7 +51,7 @@ From the table of contents (on the left side of this browser page), expand **Rep
 
 - Do you know the difference between filter, highlight, cross-filter, and cross-highlight? If not, see [Filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
-- [Focus mode](powerbi-service-move-and-resize-a-visualization.md) and [full screen TV mode](powerbi-service-display-dashboard-report-in-full-screen-mode.md) -- there is a difference.
+- [Focus mode](powerbi-service-move-and-resize-a-visualization.md) and [full screen TV mode](powerbi-service-dash-and-reports-fullscreen.md) -- there is a difference.
 
 
 ## See Also

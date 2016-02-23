@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="02/22/2016"
    ms.author="mihart"/>
 # Create a big number tile from a Power BI report
 
@@ -32,7 +32,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
 5.  In the Fields list, select the number field you want to display.
 
-    In this example, **Open Store count **in the **Store **table. Power BI creates a column chart with the one number.
+    In this example, **Open Store count** in the **Store** table. Power BI creates a column chart with the one number.
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_RptNumberTileChart.png)
 
@@ -56,7 +56,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/pinSuccess.png)
 
-10. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
+10. From the navigation pane, select the dashboard with the new tile. There, you can [edit and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
 
 
