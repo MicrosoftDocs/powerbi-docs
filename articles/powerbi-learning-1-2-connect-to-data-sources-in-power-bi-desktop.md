@@ -1,6 +1,6 @@
 <properties
    pageTitle="Connect to Data Sources in Power BI Desktop"
-   description="Find out how to connect to data using Power BI Desktop"
+   description="Connect to Data Sources in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"

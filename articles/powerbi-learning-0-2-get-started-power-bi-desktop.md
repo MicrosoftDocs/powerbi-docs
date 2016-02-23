@@ -1,6 +1,6 @@
 <properties
    pageTitle="Getting Started With Power BI Desktop"
-   description="Get a tour of Power BI Desktop, and how its building blocks interact"
+   description="Getting Started With Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,6 +19,8 @@
    ms.author="v-jescoo"/>
 
 # Getting Started With Power BI Desktop
+
+[![Welcome to Power BI Desktop](./media/powerbi-learning-course0-article2/videothumb.jpg)]
 
 In this topic of the **Getting Started** course, we take a closer look at how the first two parts of Power BI fit together:
 
@@ -83,4 +85,4 @@ When we pin a couple of visuals from our report, we can see them in the dashboar
 
 ![](media/powerbi-learning-course0-article2/c0a2_12.png)
 
-There’s a lot more you can do with Power BI, of course, such as sharing the Dashboards you create. We’ll look at those features in an upcoming topic.
+There’s a lot more you can do with Power BI, of course, such as sharing the Dashboards you create. We’ll look at those features in an upcoming topic. 

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="The Building Blocks of Power BI"
-   description="Learn the basic building blocks of Power BI, and how they relate"
+   pageTitle="An Introduction to Power BI"
+   description="An Introduction to Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"

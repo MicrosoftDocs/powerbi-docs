@@ -1,6 +1,6 @@
 <properties
    pageTitle="More Advanced Data Sources and Transformation"
-   description="See advanced data sources and transformations in action"
+   description="More Advanced Data Sources and Transformation"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
