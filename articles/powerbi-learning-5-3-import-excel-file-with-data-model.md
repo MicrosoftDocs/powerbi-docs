@@ -20,6 +20,8 @@
 
 # Import Excel files with data models and Power View sheets
 
+XXXX
+
 [![Import an Excel file with a data model](./media/powerbi-learning-5-3-import-excel-file-with-data-model/videothumb_5_3.png)](https://youtu.be/iM06pSx_iNs)
 
 If you use any of Excel's advanced BI features like **Power Query** (Get & Transform in Excel 2016), to query and load data, **Power Pivot** to create powerful data models, and **Power View** to create dynamic reports, you can import those into Power BI, too.

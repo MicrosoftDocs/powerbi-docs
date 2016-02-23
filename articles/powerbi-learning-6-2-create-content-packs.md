@@ -20,14 +20,30 @@
    ms.date="02/20/2016"
    ms.author="v-jescoo"/>
 
-# Create Content Packs
+# Create a content pack in Power BI
 
-*Watch and learn how to publish a content pack with a bundle of existing dashboards, reports, and datasets*
+In this lesson, we create a *content pack* with existing artifacts we already have in Power BI, and then share those with colleagues.
 
-You can create content packs using existing artifacts in Power BI, such as dashboards, reports, and datasets.
+Here in My Workspace, I have a dashboard, and the report underneath, and the dataset. I want to package them all up and share them with people in my organization so they can reuse them.
 
-To create a content pack, first log in to the Power BI service. Select the **Settings icon** in the top right-hand corner of the screen, and choose **Create content pack** from the menu. This will open the Create Content Pack settings page.
+![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02myworkspacenohilite.png)
 
-From here you can specify who will have access to your content pack (specific groups or everyone in your organization), name your pack, and add a helpful description and image. Finally, use the checkboxes to indicate which dashboards, reports, and datasets you would like to publish as part of your pack. Items dependencies, such as the datasets behind a dashboard, are automatically grouped. When you are finished, select **Publish**.
+Here under the settings icon, I can see how much storage I've used, and I can create a content pack.
 
-Your content pack will be published to your organization's content gallery.
+![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02options.png)
+
+Here I can choose whether to distribute it to specific people or groups. I give it a title. It's a good idea to give it a detailed description, to help when people are browsing for a content pack.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02create_contpktop.png)
+
+I upload an image, and now the important part: I select a dashboard, and Power BI automatically selects the report and dataset that are used in the dashboard. I can't unselect the report and dataset because the dashboard needs them.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02create_contpk2ndhalf.png)
+
+I could select other dashboards, reports, and datasets, but I won't now.
+
+When I publish, the content pack is sent up to the organization's content gallery.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02contpksuccess.png)
+
+On to the next lesson: [Create a content pack in Power BI](powerbi-learning-6-3-use-content-packs.md).

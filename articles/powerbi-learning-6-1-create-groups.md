@@ -20,12 +20,30 @@
    ms.date="02/20/2016"
    ms.author="v-jescoo"/>
 
-# Create Groups in Power BI
+# Create a group in Power BI
 
-*See how to create a new group, set privacy levels, and invite your first members*
+In this lesson, we start by creating a *group*. Groups define a set of users who have access to specific dashboards, reports, and data.
 
-Groups are a way to define a set of users who have access to particular dashboards, reports, and datasets. Groups tie into Office365 groups, so if you already have those set up to manage email and calendars, you can extend that organization to Power BI.
+Groups in Power BI are based on groups in Office 365, so if you've been using Office 365 groups to manage your group's email, calendar, and documents, you'll see Power BI offers the same features, and more. When you create a group in Power BI, you're actually creating an Office 365 group.
 
-To create a group, first log in to the Power BI service. Select **My Workspace** in the left-hand side navigation bar, and then select **Create a Group**. This opens the Create a Group dialog. Create a unique name for your group, set the privacy level as desired, and invite members by adding their email address (including security groups and distribution lists).
+This module uses the scenario of setting up a new finance group. We'll show how to set up the group, share dashboards, reports, and datasets into the group, and add members who'll have access to the items in the group.
 
-As you add people to your group, their email addresses will be listed at the bottom of the dialog. When you have finished adding, select **Save**. Your new group will appear at the top of the left-hand side navigation bar.
+I start here in My Workspace. These are the dashboards, reports, and datasets that I've created or that someone shared with me.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01myworkspace.png)
+
+If I expand My Workspace, I can select **Create a group**.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01expandMyWkspace.png)
+
+Here I can give it a name. We're using the scenario or a finance group, so I'll call it Finance. Power BI makes sure the name doesn't exist on the domain.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01creategroupdialog.png)
+
+I can set the privacy level by deciding whether anyone in my organization can see the contents of the group, or only its members.
+
+I type email addresses, security groups, and distribution lists here. I select **Add** to make them members of the group, and save the group.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01savegroup.png)
+
+On to the next lesson: [Create a content pack in Power BI](powerbi-learning-6-2-create-content-packs.md).
