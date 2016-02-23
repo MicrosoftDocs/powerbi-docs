@@ -501,8 +501,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 11
         },
         {
-          "sectionTitle": "powerbi-developer-walkthrough-push-data",
+          "sectionTitle": "Push data into a Power BI Dashboard",
           "articles": [
+            "powerbi-developer-walkthrough-push-data",
             "powerbi-developer-walkthrough-push-data-register-app-with-azure-ad",
             "powerbi-developer-walkthrough-push-data-get-token",
             "powerbi-developer-walkthrough-push-data-create-dataset",
@@ -510,7 +511,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-developer-walkthrough-push-data-add-rows",
             "powerbi-developer-walkthrough-push-data-complete-code"
           ],
-          "numberOfFeaturedArticles": 1
+          "numberOfFeaturedArticles": 7
         },        
         {
           "sectionTitle": "Integrate a Power BI tile or report",
