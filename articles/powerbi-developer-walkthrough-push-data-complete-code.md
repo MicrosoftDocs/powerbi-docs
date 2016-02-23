@@ -23,7 +23,7 @@
 
 After you follow Steps 2 to 5 in the **Walkthrough to push data into a Power BI dashboard**, your complete code should look like the following.
 
-# Push data to dashboard code
+## Push data to dashboard code
 
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
