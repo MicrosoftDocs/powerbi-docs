@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/25/2016"
+   ms.date="02/22/2016"
    ms.author="maggies"/>
 
 # Tiles in the Android app for Power BI  
@@ -37,16 +37,16 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
     After you open the link in the Power BI app, you can copy the link or open it in a browser window instead.
 
-3.    Tap **Expand tile** to open it in focus mode.
+3.    Tap **Expand tile**. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
-  -  Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
-     ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tilefocus.png)
+    Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
+    ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tilefocus.png)
 
-        In this line chart, the values of the green and black lines are listed under the month, April, where the vertical bar intersects them.
+       *In this line chart, the values of the green and black lines are listed under the month, April, where the vertical bar intersects them.*
 
-   -   Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md) with others.
+     Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md) with others.
 
-   -  [Interact with a live report page tile](powerbi-mobile-report-page-tiles-in-the-android-app.md) in the Android app.
+     [Interact with a live report page tile](powerbi-mobile-report-page-tiles-in-the-android-app.md) in the Android app.
 
 -   Tap the **X** in the upper-left corner to close the tile and return to the dashboard.
 

@@ -14,15 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/14/2016"
+   ms.date="02/22/2016"
    ms.author="maggies"/>
 # Reports in the Power BI mobile app for Windows 10
 
 A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com).
 
 Then you view and interact with those reports in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
-
->**Note**: You can't open reports on a Windows 10 phone.
 
 ## Open a Power BI report
 
@@ -35,9 +33,10 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 -   Or: On a dashboard, tap a tile, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
 
     >**Notes**:   
+    >
     >-   Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them.   
-	>-  To open the sample reports, you need to sign in to Power BI.  
-	>-  Because you can't open reports on a Windows 10 phone,  you don't see the Open Report icon there.
+	>-  To open the sample reports, you need to sign in to Power BI. 
+	>-  You can open reports on Windows 10 phones. Some report features aren't available on phones; see notes below. 
 
 ## See other pages in a Power BI report
 
@@ -65,7 +64,10 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
 You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has [added filters to the page](powerbi-service-add-a-filter-to-a-report.md) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). In the Power BI service, you can also add other fields as filters for a specific visual. 
 
-> **Note**  If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
+> **Notes**  
+> 
+> - If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
+> - Report filtering isn't available on Windows 10 phones.
 
 1. In a report, expand the Filters pane, if it's collapsed.
 
@@ -91,15 +93,17 @@ You can always filter individual visuals in a Power BI report by using the field
 
 ## Drill down and up in a chart
 
-In charts with up and down arrows in the upper corners, you can drill down to see the values that make up one part of the chart. To [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md), edit the report in the Power BI service ([https://powerbi.com](http://powerbi.com/)).
+In charts with up and down arrows in the upper corners, you can drill down to see the values that make up one part of the chart. To [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md), edit the report in the Power BI service ([https://powerbi.com](https://powerbi.com/)).
 
--   Tap the arrow in the upper-right corner to turn on drill-down.
+>**Note**: Drill down and up isn't available on Windows 10 phones.
+
+1.   Tap the arrow in the upper-right corner to turn on drill-down.
    
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_DrillSng1.png)
 
--   Double-tap a bar, column, or other part of a chart to drill into the details for that part — in this case, the OH column for stores in Ohio.
+2.   Double-tap a bar, column, or other part of a chart to drill into the details for that part — in this case, the OH column for stores in Ohio.
 
--   To drill back up, tap and hold or right-click the chart, and tap the up arrow in the upper-right corner.
+3.   To drill back up, tap and hold or right-click the chart, and tap the up arrow in the upper-right corner.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_DrillUp.png)
 
