@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Walkthrough to push data - Get a dataset to add rows into a Power BI table"
+   pageTitle="Get a dataset to add rows"
    description="Walkthrough to push data - Get a dataset to add rows into a Power BI table"
    services="powerbi"
    documentationCenter=""

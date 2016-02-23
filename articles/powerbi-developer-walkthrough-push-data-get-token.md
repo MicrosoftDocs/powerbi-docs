@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Walkthrough to push data - Get an authentication access token"
+   pageTitle="Get an authentication access token"
    description="Walkthrough to push data - Get an authentication access token"
    services="powerbi"
    documentationCenter=""

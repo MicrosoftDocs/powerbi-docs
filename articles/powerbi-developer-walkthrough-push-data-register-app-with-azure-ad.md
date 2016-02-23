@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Walkthrough - Push data into a dashboard- Register an app with Azure AD"
+   pageTitle="Register an app with Azure AD"
    description="Walkthrough - Push data into a dashboard - Register an app with Azure AD"
    services="powerbi"
    documentationCenter=""

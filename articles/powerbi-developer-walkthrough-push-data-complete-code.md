@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Walkthrough to push data - Complete code listing"
+   pageTitle="Complete code listing"
    description="Walkthrough to push data - Complete code listing"
    services="powerbi"
    documentationCenter=""

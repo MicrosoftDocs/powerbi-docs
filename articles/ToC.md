@@ -501,7 +501,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 11
         },
         {
-          "sectionTitle": "Push data into a Power BI Dashboard",
+          "sectionTitle": "Push data into a dashboard",
           "articles": [
             "powerbi-developer-walkthrough-push-data",
             "powerbi-developer-walkthrough-push-data-register-app-with-azure-ad",

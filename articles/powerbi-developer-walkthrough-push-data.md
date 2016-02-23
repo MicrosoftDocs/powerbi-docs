@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Push data into a Power BI Dashboard"
+   pageTitle="Push data into a dashboard"
    description="Push data into a Power BI Dashboard"
    services="powerbi"
    documentationCenter=""

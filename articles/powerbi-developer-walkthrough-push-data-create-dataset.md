@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Walkthrough - Push data into a dashboard - Create a dataset in a Power BI dashboard"
+   pageTitle="Create a dataset"
    description="Walkthrough - Push data into a dashboard - Create a dataset in a Power BI dashboard"
    services="powerbi"
    documentationCenter=""
