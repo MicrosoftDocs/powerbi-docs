@@ -154,7 +154,7 @@ Below is the [complete code listing](#code).
                 // and add using Microsoft.IdentityModel.Clients.ActiveDirectory
 
                 //The client id that Azure AD created when you registered your client app.
-                string clientID = "746f8074-c71a-4622-8442-a927d397a791";
+                string clientID = "{Client_ID}";
 
                 //RedirectUri you used when you register your app.
                 //For a client app, a redirect uri gives Azure AD more details on the application that it will authenticate.
