@@ -29,14 +29,14 @@ Here's how to get an authentication access token.
 >**NOTE**: Before you get started, make sure to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md).
 
 1. In Visual Studio 2015, create a **Console Application** project.
-2. Add the code below into class Program {...}.
-3. Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [ [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md).
-4. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
+2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
 
    a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
    b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 
-5. After the package is installed, add **using Microsoft.IdentityModel.Clients.ActiveDirectory;** to Program.cs.
+3. Add the code below into class Program {...}.
+4. Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [ [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md).
+5. After installing the Microsoft.IdentityModel.Clients.ActiveDirectory package, add **using Microsoft.IdentityModel.Clients.ActiveDirectory;** to Program.cs.
 6. Run the Console App, and login to your Power BI account. You should see a token string in the Console Window.
 
 **Sample code to get authentication security token**
@@ -117,8 +117,8 @@ Below is the [complete code listing](#code).
 <a name="code"/>
 ## Complete code listing
 
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System;
+    using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
     namespace walkthrough_push_data
     {
