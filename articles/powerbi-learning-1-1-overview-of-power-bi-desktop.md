@@ -1,6 +1,6 @@
 <properties
    pageTitle="Overview of Power BI Desktop"
-   description="Overview of Power BI Desktop"
+   description="Get acquainted with Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"

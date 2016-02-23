@@ -1,6 +1,6 @@
 <properties
    pageTitle="Clean and Transform Your Data With the Query Editor"
-   description="Clean and Transform Your Data With the Query Editor"
+   description="Learn how to clean and transform Data With Query Editor"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
