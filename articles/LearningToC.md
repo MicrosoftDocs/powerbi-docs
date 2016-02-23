@@ -112,7 +112,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
                       "powerbi-learning-5-2-upload-excel",
                       "powerbi-learning-5-3-import-powerpivot-powerview",
                       "powerbi-learning-5-4-connect-onedrive-for-business",
-                      "powerbi-learning-4-8-excel-data-summary"
+                      "powerbi-learning-5-8-excel-data-summary"
                     ],
                     },
                     {
@@ -121,8 +121,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
                         "powerbi-learning-6-1-create-groups",
                         "powerbi-learning-6-2-create-content-packs",
                         "powerbi-learning-6-3-use-content-packs",
-                        "powerbi-learning-6-4-update-content-packs",
-                        "powerbi-learning-4-8-excel-data-summary"
+                        "powerbi-learning-6-4-update-content-packs"
                       ],
           ]
         }
