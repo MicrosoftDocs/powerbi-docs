@@ -24,6 +24,6 @@
 
 *Watch an introduction to the ways Excel and the Power BI service work together*
 
-While the Power BI Desktop has many tools to connect to data and build reports and visualizations, you can also just directly use simple data such as an Excel spreadsheet.
+With Power BI, getting your Excel data into Power BI is easy. The following topics guide you through uploading an Excel workbook with a simple table into Power BI. Then you see how to upload workbooks created with Excel's more advanced BI data modeling and reporting features, such as Power Pivot and Power View.
 
-You can upload your Excel files directly into the Power BI service, along with Excel tools like PowerPivot, PowerView, and PowerQuery. You can also refresh your data from within Power BI without ever having to open Excel.
+You'll also learn some benefits of saving your Excel workbook files to OneDrive for Business. When you connect to Excel files on OneDrive from Power BI, your reports and dashboards in Power BI are updated and refreshed automatically when you make changes and save your work.

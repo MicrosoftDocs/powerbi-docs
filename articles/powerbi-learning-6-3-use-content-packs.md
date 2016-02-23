@@ -20,14 +20,40 @@
    ms.date="02/20/2016"
    ms.author="v-jescoo"/>
 
-# Use a Content Pack
+# Connect to a content pack from a group in Power BI
 
-*Learn how to use a content pack and make your own local edits*
+In previous lessons, we already created a content pack and a group. In this lesson, we're going to create an instance of the content pack for everyone in the group.
 
-To use an existing content pack, select **Get Data** and choose to **Get** from the Content Pack Library for My Organization. You will see a list of your organization's content packs. Click on a pack to see additional details about it, and select **Connect** to use one.
+I start in My Workspace, ...
 
-Once the import is complete, the dashboards, reports, and datasets contained in the selected content pack will appear in the navigation bar on the left-hand side of the screen.
+![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03myworkspace.png)
+      
+... and switch back to the Finance group I created in the earlier lesson.
 
-If you want to make changes to items from a content pack, you will be prompted to save your own personal copy. This disconnects these items from the published version of the pack, but creates a copy in your workspace for you to edit and alter. Note that if you create a personal copy, you will no longer be updated with any changes made to the original content pack by its author.
+![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03switch2group.png)
 
-Content packs are a simple way to reuse content across an organization.
+The group doesn't have any dashboards, reports, or datasets yet. I'm going to use the content pack I created. I browse content packs from my organization rather than those from third-party services.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03myorgcontpk.png)
+
+I find the content pack I created a minute ago. I see why it's important to give it a good title, description, and image, so people can find it. I connect to it.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03contgallry.png)
+
+Power BI imports the dashboards, reports, and datasets that are in the content pack.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03added2group.png)
+
+When I select the dataset, Power BI asks if I want to personalize the content pack.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03personalize.png)
+
+I'm creating a copy of the content pack that I can make changes to, and disconnecting it from the published version of the content pack. If the content pack creator makes changes to the published version, I won't automatically get those updates.
+
+But I can edit the dashboard, the report, and even the dataset, if I want.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03editreport.png)
+
+So content packs are a simple way to reuse content created by other people in your organization.
+
+On to the next lesson: [Create a content pack in Power BI](powerbi-learning-6-4-update-content-pack.md).

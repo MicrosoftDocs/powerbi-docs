@@ -26,4 +26,8 @@
 
 So far in these articles, we've connected to a data source, imported the data, and stored a cache of it within Power BI. However, there are other options when managing your data.
 
-For example, if you are connecting to a data store such as an Azure Database or an Azure Data Warehouse, you can connect directly with a live connection. Any changes to the data are automatically detected and processed by Power BI. If you are using a particularly large or unusual data source such as HDInsight or Spark, then you can run queries directly against them so you don't have to deal with quantities of irrelevant information.
+When you import data into Power BI, you are taking that data and creating a cache of it. An example of this would be connecting to a Software as a Service (SaaS) application, importing the data and storing it in Power BI. Another example is using Power BI Desktop to connect to your on-premises data and to cache that data within the Power BI Desktop file. Then you can upload that to the Power BI service.
+
+Another option that Power BI offers is to connect directly to a data source and issue live queries to get the data it needs. One example would be if you are storing data in Azure SQL Database, or HDInsights. Power BI can connect to those data sources and have a live connection. A benefit of a live connection is that when changes to the data are made, those changes are automatically picked up.
+
+There are a variety of ways that you can work with live data sources. This course explores some of those options.

@@ -18,14 +18,14 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="02/20/2016"
-   ms.author="v-jescoo"/>
+   ms.author="owend"/>
 
-# Import PowerView and PowerPivot to Power BI
+# Import Excel files with data models and Power View sheets
 
-*See how to import your PowerView and PowerPivot worksheets into the Power BI service*
+If you use any of Excel's advanced BI features like **Power Query** (Get & Transform in Excel 2016), to query and load data, **Power Pivot** to create powerful data models, and **Power View** to create dynamic reports, you can import those into Power BI, too.
 
-In the previous article we looked at how easy it is to take a simple Excel table and upload it to the Power BI service. If you are familiar with some of the older Excel BI capabilities, such as PowerPivot and PowerView, you can upload that content to Power BI as well.
+Here's one of the really great features of Power BI: If you use Power Query or Power Pivot to connect to, query, and load data from an external data source, once you've imported your workbook into Power BI, you can setup **scheduled refresh**. By using scheduled refresh, Power BI will use the connection information from your workbook to connect directly to the datasource and query and load any data that has changed. Any visualizations in reports will automatically be updated, too.
 
-Perhaps you're using PowerPivot to pull in data from different data sources, or to manage multiple tables that are in your Excel workbook. Maybe you used PowerView to create interactive worksheets. Power BI will detect these things, and translate them into a Power BI model.
+If you use **Power Pivot** to create advanced data models, like those with multiple related tables, measures, calculated columns, and hierarchies, Power BI will import all of that as well.
 
-Uploading advanced Excel worksheets to Power BI is the same process as with the more simple one: select **Get Data**, choose **Files**,  and then use the file browser to indicate the location of your Excel file. Once the Excel file has been uploaded and imported, your data will appear under Datasets (PowerPivot) or Reports (PowerView) as appropriate as fully functional Power BI content.
+If your workbook has **Power View sheets**, no problem. Power BI will re-create them as new **Reports** in Power BI. You can start pinning visualizations to dashboards right away.
