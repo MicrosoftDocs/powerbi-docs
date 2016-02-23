@@ -20,10 +20,14 @@
    ms.date="02/20/2016"
    ms.author="v-jescoo"/>
 
-# Introduction to Content Packs, Security, and Groups
+
+# Share and collaborate with colleagues in Power BI
 
 *Get introduced to the tools that make sharing and collaborating easier with Power BI*
 
-When you're working with Power BI as part of an organization, you often want to share and collaborate on reports, dashboards, and data. Power BI has a number of tools to make this easier.
+In this module, we cover the various ways Power BI offers for sharing and collaborating with your colleagues on your dashboards, reports, and data. For example, you can create:
 
-Content packs allow you to package up dashboards and reports to send to other people, so they can build their own insights on top of your work. Groups allow you to subsets of users and design security policies around them to limit access to dashboards, reports, and datasets.
+-   *Content packs* that package up a dashboard, report, and dataset to send to your colleagues. They can use it as a starting point and further enhance it.
+-   *Groups*, which you can use as a security model to identify a subset of users who have access to dashboards, reports, and datasets you create.
+
+This module uses the scenario of setting up a new finance group. We'll show how to set up the group, share dashboards, reports, and datasets into the group, and add members who'll have access to the items in the group.

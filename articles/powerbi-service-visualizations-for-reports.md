@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2015"
+   ms.date="02/22/2016"
    ms.author="mihart"/>
 
 # Visualizations in Power BI  
@@ -23,7 +23,7 @@ Data visualizations allow you to interact with your data to find business insigh
 ![](media/powerbi-service-visualizations-for-reports/PBI_ChoroUSSentiment.png)
 
 ## Add a visualization in Power BI  
-[Create visualizations](powerbi-service-add-visualizations-to-a-report-i.md)on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
+[Create visualizations](powerbi-service-add-visualizations-to-a-report-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
 
 ## Upload a custom visualization and use it in Power BI
 Add a custom visualization that you created yourself or that you found in the [community gallery](http://visuals.powerbi.com). Feeling creative? Dig into our source code and use our developer tools to create a new visualization type and [share it with the community](http://visuals.powerbi.com)
@@ -44,7 +44,7 @@ Organize your report pages by [moving and resizing visualizations](powerbi-servi
 You can [sort a visualization](powerbi-service-change-how-a-chart-is-sorted.md) by the different fields in the visualization, or reverse the order -- A to Z or Z to A.
 
 ## Change the aggregation in a visualization  
-[Change the aggregation in a chart](powerbi-service-change-the-aggregation-in-a-chart.md)(sum, average, maximum, etc.)
+[Change the aggregation in a chart](powerbi-service-aggregates.md)(sum, average, maximum, etc.)
 
 ## Delete a visualization  
 [Remove unwanted visualizations](powerbi-service-delete-a-visualization.md)from your report.
@@ -63,11 +63,15 @@ Learn how to [create and add links to table visualizations](powerbi-service-hype
 
 -   [Doughnut charts](powerbi-service-tutorial-doughnut-charts.md)
 
+- [Enhanced scatter chart](powerbi-service-tutorial-enhancedscatter.md)
+
 -   [Filled Maps](powerbi-service-tutorial-filled-maps-choropleths.md) (Choropleths)
 
 -   [Funnel charts](powerbi-service-tutorial-funnel-charts.md)
 
 -   [Radial Gauge charts](powerbi-service-tutorial-radial-gauge-charts.md)
+
+- [Scatter charts](powerbi-service-tutorial-scatter.md)
 
 - [Slicers](powerbi-service-tutorial-slicers.md)
 

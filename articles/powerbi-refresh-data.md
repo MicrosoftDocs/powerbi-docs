@@ -1,13 +1,13 @@
-<properties 
+<properties
    pageTitle="Data refresh in Power BI"
    description="Data refresh in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    editor=""
    tags=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -30,10 +30,12 @@ Before we go any further, it’s important to know how data refresh works depend
 
 |**Data Refresh**|**Power BI (free)**|**Power BI Pro**|
 |---|---|---|
-|Datasets scheduled to refresh|Daily|Hourly|
+|Datasets scheduled to refresh|Daily|Hourly*|
 |Streaming data in your dashboards and reports using Microsoft Power BI REST API or Microsoft Stream Analytics.|10k rows/hour|1M rows/hour|
 |Live data sources with full interactivity (Azure SQL Database, Azure SQL Data Warehouse, Spark on HDInsight)| | ![](media/powerbi-refresh-data/checkmark.png)|
 |On-premises data sources requiring a Power BI Personal Gateway and on-premises SQL Server Analysis Services requiring Analysis Services Connector.| | ![](media/powerbi-refresh-data/checkmark.png)|
+
+\* Up to eight times (hours) per day.
 
 ## Understanding data refresh  
 Before setting up refresh, it’s important to understand what it is you’re refreshing and where you’re getting your data.
@@ -75,7 +77,7 @@ This is the probably the most common way of getting your data into Power BI. Dat
 
 ### Power BI Desktop file on a local drive  
 
-|**Data source**|**Automatic refresh**|**User-configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Automatic refresh**|**User-configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|No|Yes|No|
 |Get Data is used to connect to and explore live an Analysis Services database.|Yes|No|Yes|
@@ -86,7 +88,7 @@ For details, see [Refresh a dataset created from a Power BI Desktop file on a lo
 
 ### Excel workbook on a local drive
 
-|**Data source**|**Automatic refresh**|**User-configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Automatic refresh**|**User-configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Tables of data in a worksheet not loaded into the Excel data model.|No|No|N/A|
 |Tables of data in a worksheet linked to a table in the Excel data model (linked tables).|No|No|N/A|
@@ -104,7 +106,7 @@ Keeping your files on OneDrive and connecting to them from Power BI provides a g
 
 ### Power BI Desktop file on OneDrive
 
-|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|No|Yes|No|
 |Get Data is used to connect to and explore live an Analysis Services database.|Yes|No|Yes|
@@ -115,7 +117,7 @@ For details, see [Refresh a dataset created from a Power BI Desktop file on OneD
 
 ### Excel workbook on OneDrive
 
-|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Tables of data in a worksheet not loaded into the Excel data model.|Yes, hourly|Manual only|No|
 |Tables of data in a worksheet linked to a table in the Excel data model (linked tables).|Yes, hourly|Manual only|No|
@@ -130,7 +132,7 @@ For more detailed information, see [Refresh a dataset created from an Excel work
 
 ### Comma separated value (.csv) file on OneDrive
 
-|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Simple comma separated value|Yes, hourly|Manual only|No|
 
@@ -145,7 +147,7 @@ Organizational content packs - created and shared by users in your own organizat
 
 ### Content packs from online services
 
-|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Online services in Get Data &gt; Services|Yes|Yes|No|
 
@@ -153,7 +155,7 @@ Organizational content packs - created and shared by users in your own organizat
 
 ## Organizational content packs
 
-|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Any supported data source|Depends on the data source|Depends on the data source. Only by the content pack creator|Depends on the data source. Only  the content pack creator would require a gateway.|
 
@@ -162,7 +164,7 @@ To learn more, see [Introduction to organizational content packs](powerbi-servic
 ## Databases in the cloud  
 With direct query, there is a live connection between Power BI and the database in the cloud. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. If there is no user interaction in a visualization, like in a dashboard, data is refreshed automatically about every fifteen minutes. Because there is a direct connection between Power BI and the database, there is no need to manually refresh or setup a refresh schedule for the dataset. And, because both the Power BI service and the data source are in the cloud, there is no need for a Personal Gateway.
 
-|**Data source**|**Live with direct connect**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Live with direct connect**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |SQL Azure Database|Yes|No|No|
 |SQL Azure Data Warehouse|Yes|No|No|
@@ -173,7 +175,7 @@ To learn more, see [Azure and Power BI](powerbi-azure-and-power-bi.md).
 ## Analysis Services tabular database live on-premises  
 With the Analysis Services Connector, there is a live connection to an Analysis Services tabular model database located on-premises in your organization. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh.
 
-|**Data source**|**Live with direct connect**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Live with direct connect**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Tabular|Yes|No|No|
 
@@ -184,7 +186,7 @@ To learn more, see [SQL Server Analysis Services data in Power BI](powerbi-sql-s
 ## Real-time dashboards  
 Real-time dashboards use the Microsoft Power BI REST API or Microsoft Stream Analytics to make sure the data is up-to-date. Since real time dashboards do not require users to configure refresh, they are outside the scope of this article.
 
-|**Data source**|**Automatic**|**User configured manual or scheduled refresh**|**Personal Gateway required**|
+|**Data source**|**Automatic**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
 |Custom apps developed with the Power BI Rest API or Microsoft Stream Analytics|Yes, live streaming|No|No|
 
@@ -193,8 +195,8 @@ To learn more, see [Create a real-time dashboard in Power BI](https://msdn.micro
 ## Dataset settings for refresh  
 If your dataset supports user configured refresh by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are Power BI Personal Gateway, Data Source Credentials, and Schedule Refresh. Let’s take a closer look at each.
 
-### Power BI Personal Gateway  
-The Power BI Personal Gateway installs and runs as a service on your computer. It acts as a bridge, providing secure data transfer between the Power BI service and on-premises data sources that support refresh. A gateway is only required if you connect to and upload an Excel workbook file or Power BI Desktop file that connects to an on-premises data source and you want to be able to refresh the dataset manually or setup a refresh schedule.
+### Power BI Gateway - Personal  
+The Power BI personal gateway installs and runs as a service on your computer. It acts as a bridge, providing secure data transfer between the Power BI service and on-premises data sources that support refresh. A gateway is only required if you connect to and upload an Excel workbook file or Power BI Desktop file that connects to an on-premises data source and you want to be able to refresh the dataset manually or setup a refresh schedule.
 
 When Power BI refreshes a dataset with updated data from an on-premises data source, the gateway assures the account you signed into Power BI with has the right permissions to connect to and query data from the data source, which most often require a Windows user account.
 
@@ -208,6 +210,9 @@ A gateway can require two different sets of credentials: If you’re an administ
 The Gateway also has to sign into your Power BI account in order to update the data in your datasets. During installation and setup, you’ll be asked to sign in to Power BI. The gateway then retains your account info in order to sign into Power BI whenever the gateway service starts, like after you restart your computer. If your Power BI account changes, or for some reason the gateway cannot sign in to Power BI, Gateway Status will show that it is offline and refresh for any datasets that use it will fail.
 
 We’ve just covered the most important things to know about the gateway here. If you want to learn more, be sure to see [Power BI Personal Gateway](powerbi-personal-gateway.md). If you’re having trouble with your gateway, be sure to check out [Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md).
+
+### Power BI Gateway - Enterprise
+Power BI Gateway - Enterprise provides IT departments the ability to deploy and manage central gateways to serve large groups of users. Instead of each employee installing and configuring a Power BI Gateway - Personal, IT can configure, manage and maintain a group of gateways to transparently refresh data uploaded to Power BI for users requiring up-to-date data. To learn more, see [Power BI Gateway - Enterprise](powerbi-personal-enterprise.md)
 
 ### Data Source Credentials  
 Each dataset requires credentials in order for Power BI to connect to the data sources on your behalf and query for updated data. In some cases, like when you get data from a content pack from an online service, data source credentials are retained from when you signed into the service to get the content pack. In other cases, like when you connect to and upload an Excel workbook or Power BI Desktop file into Power BI, in order for Power BI to refresh your new dataset, you will need to sign in to any data sources included in the dataset. You only need to sign in to your data sources once, after you’ve uploaded your file, but before you setup refresh. This is because the password you used when you connected to a data source from Excel or Power BI Desktop is not uploaded to the dataset along with the connection settings and data.
@@ -266,7 +271,7 @@ If your dashboards and reports from the content pack aren’t updating, you’ll
 To learn more, see [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md), [Work with organizational content packs](powerbi-service-organizational-content-packs-use-and-work-with.md).
 
 ### Content pack from Salesforce  
-In Power BI you used Get Data to connect to and import your sales data in Salesforce. Well, not much to do here. Your Salesforce data set is automatically scheduled to refresh once a day.  
+In Power BI you used Get Data to connect to and import your sales data in Salesforce. Well, not much to do here. Your Salesforce data set is automatically scheduled to refresh once a day. 
 
 Like most online service providers, Salesforce updates data once a day, usually at night. You can manually refresh your Salesforce dataset, or setup a refresh schedule, but it’s not necessary because Power BI will automatically refresh the dataset and your reports and dashboards will be updated too.
 

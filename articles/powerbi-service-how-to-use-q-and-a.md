@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/21/2016"
+   ms.date="02/18/2016"
    ms.author="mihart"/>
 
 # How to use Power BI Q&A  
@@ -87,4 +87,3 @@ Back to [Q&A in Power BI](powerbi-service-q-and-a.md)
 [Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md)  
 [Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
 [Pin a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)  
-[Ask the right questions of your Salesforce dataset](powerbi-service-ask-the-right-questions-of-salesforce-data.md)  

@@ -22,10 +22,30 @@
 
 # Customize Visuals with Summarization and Category Options
 
-*See how to customize your visualizations with summarization and category options*
+*Learn how to customize how Power BI summarizes and presents your numeric and location data*
 
-Power BI has two properties that you can set on fields in your model to help report and visualize in different ways, such as when you need to aggregate a field rather than create a sum.
+Power BI has properties that you can assign for fields in your model, which can help report and visualize and present data in ways that provide more clarity. For example, sometimes you want to average a list of numbers, but Power BI automatically sums the list. With Power BI, you can adjust how those lists of numbers are summarized.
 
-Select a visualization on your report canvas, and then select a field in the Fields pane that you use in that visual. The Modeling tab will now contain a number of different options for formatting and using that field. For example, you could set the format to currency or percentage. Use the **Default Summarization** drop-down menu to change how a field is summarized, including displaying a sum, a count, or an average.
+## Numeric Control over summarization
 
-You can make similar changes when plotting locations on a map. Select your map, and then select the field in the Fields pane that you use for the Location value. Return to the Modeling tab, and use the **Data Category** drop-down menu to select the type of location on your list, including state, county, or city.
+Let's take an example, and demonstrate how to control the way Power BI summarizes numeric data fields.
+
+Select a visual on your report canvas, and then select a field in the **Fields** pane. The **Modeling** tab appears in the ribbon and displays options for formatting data, and data properties.
+
+![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_1.png)
+
+You can select the type of currency symbol used, by selecting the currency symbol drop down, which is shown in the following image.
+
+![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_2.png)
+
+There are many different options for formatting fields. For example, you can change the format from currency to percentage.
+
+You can change how Powwer BI summarizes the data, too. Select the **Default Summarization** icon to change how a field is summarized, including displaying a sum, a count, or an average.
+
+![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_3.png)
+
+## Manage and clarify your location data
+
+You can make similar changes when plotting locations on a map. Select your map, and then select the field in the **Fields** pane that you use for the *Location* value. On the **Modeling** tab, select **Data Category** and then choose the category that represents your location data from the drop-down menu. For example, select state, county, or city.
+
+![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_4.png)

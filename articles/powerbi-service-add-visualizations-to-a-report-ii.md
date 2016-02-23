@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/21/2016"
+   ms.date="02/21/2016"
    ms.author="mihart"/>
 
 # Tutorial: Part 2, Add visualizations to a Power BI report  
@@ -67,6 +67,6 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 ## See also  
 -   For more information about the Fields pane, see [The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md).   
 -   To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).  
--   To learn about using and changing aggregations, see [Aggregates in reports](powerbi-service-aggregates-in-reports.md).  
+-   To learn about using and changing aggregations, see [Aggregates in reports](powerbi-service-aggregates.md).  
 -   Need help understanding the building blocks that make up Power BI?  [See Power BI - Basic Concepts](powerbi-service-basic-concepts.md).  
 -   More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).  
