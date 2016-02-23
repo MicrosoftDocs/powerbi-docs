@@ -59,8 +59,8 @@ And standalone tiles for images, text boxes, videos, and web content can be crea
 
 Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md). Hover and select the handle ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg) to resize the tile.
 
-
 ### Hover over a tile to change the appearance and behavior
+
 
 1. Hover over the tile to display the ellipses.
 

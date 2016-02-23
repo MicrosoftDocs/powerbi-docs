@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/11/2016"
+   ms.date="02/23/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -147,8 +147,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-display-tile-in-full-screen-mode",
             "powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
-            "powerbi-service-create-a-big-number-tile-for-a-dashboard",
-            "powerbi-service-create-a-big-number-tile-from-a-power-bi-report",
             "powerbi-service-qr-code-for-tile",
             "powerbi-service-delete-or-remove-a-dashboard"
           ],
@@ -252,7 +250,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-tutorial-scatter",
             "powerbi-service-tutorial-slicers",
             "powerbi-service-tutorial-treemaps",
-            "powerbi-service-tutorial-waterfall-charts"
+            "powerbi-service-tutorial-waterfall-charts",
+            "powerbi-service-create-a-big-number-tile-for-a-dashboard",
+            "powerbi-service-create-a-big-number-tile-from-a-power-bi-report"
           ],
           "numberOfFeaturedArticles": 5
         },
