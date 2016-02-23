@@ -14,17 +14,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="02/23/2015"
    ms.author="mihart"/>
 # Tutorial: Customize X-axis and Y-axis properties
 
-In this tutorial you'll learn many different ways to customize the X-axis and Y-axis of your visualizations. Not all visualizations have axes and/or can be customized; Pie charts, for example, don't have axes.  
+In this tutorial you'll learn many different ways to customize the X-axis and Y-axis of your visualizations. Not all visualizations have axes or can be customized; Pie charts, for example, don't have axes.  
 
->**Note**: These customizations available when the **Format** icon is selected are also available in Power BI Desktop.
+>**Note**: This page applies to both Power BI service and Power BI Desktop. These customizations, which are available when the **Format** (the paintbrush icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/paintbrush.png) ) is selected, are also available in Power BI Desktop.  
 
 ## Customizing visualization X-axes in reports
 
-I’ve signed in to the Power BI service and I’m starting with the **Retail Analysis Sample** report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
+Sign in to the Power BI service and open the **Retail Analysis Sample** report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
 
 1.  Create a new column chart that shows this year's sales and last year's sales by month. 
 
@@ -47,11 +47,11 @@ I’ve signed in to the Power BI service and I’m starting with the **Retail An
     >**NOTE**: If the X-axis is string/Boolean, the **Type** option will not display. 
 
 
-To revert all the X-axis customization we've done so far, select **Revert To Default **at the bottom of the **X-axis** customization pane.
+To revert all the X-axis customization you've done so far, select **Revert To Default **at the bottom of the **X-axis** customization pane.
 
 ## Customizing visualization Y-axes in reports
 
-Some visualizations have Y-axes and these too can be customized. There are even some visualizations that have dual Y-axes, and we'll learn how to customize those as well.
+Some visualizations have Y-axes and these too can be customized. There are even some visualizations that have dual Y-axes, and you'll learn how to customize those as well.
 
 1.  From the Retail Analysis Sample report, select the chart "This Year Sales by FiscalMonth and Name."
 
@@ -75,11 +75,11 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizeyaxisnew.png)
 
-    To revert all the Y-axis customization we've done so far, select **Revert To Default**, at the bottom of the **Y-axis** customization pane.
+    To revert all the Y-axis customization you've done so far, select **Revert To Default**, at the bottom of the **Y-axis** customization pane.
 
 ## Customizing visualizations with dual Y-axes
 
-First we'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](powerbi-service-tutorial-combo-chart-merge-visualizations.md). Then we'll format the dual Y-axes.
+First you'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](powerbi-service-tutorial-combo-chart-merge-visualizations.md). Then you'll format the dual Y-axes.
 
 ### Create a chart with two Y-axes
 
@@ -131,6 +131,7 @@ With a visualization this complicated, it helps to add axes titles.  Titles hel
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/yaxissettings.png)
 
 3.  Your Combo chart now displays dual axes, both with titles.
+
 	![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/xyaxistitlesonnew.png)
 
 For more information, see [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md).
