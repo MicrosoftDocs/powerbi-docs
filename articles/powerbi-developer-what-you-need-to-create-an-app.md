@@ -17,7 +17,7 @@
    ms.date="02/21/2016"
    ms.author="derrickv"/>
 
-# What you need to create an app
+# What you need to create a Power BI app
 
 Before you start creating any Power BI app, you need to setup your environment for the app. First, you need a Power BI service account. Also, since Power BI uses **Azure Active Directory (Azure AD)** to authenticate users and protect applications, you need to register, or configure, your app in **Azure AD** so that the active directory can find your app.
 
@@ -37,7 +37,7 @@ You register your app in **Azure AD** so that users can authenticate to the Powe
 
 You can learn more about how to register your app in the following articles:
 
--	[Register a client app](powerbi-developer-register-a-client-app.md) or [Push data into Power BI dashboard](powerbi-developer-push-data-into-a-dashboard.md).
+-	[Register a client app](powerbi-developer-register-a-client-app.md) or [Push data into Power BI dashboard](powerbi-developer-walkthrough-push-data.md).
 -	[Register a web app](powerbi-developer-register-a-web-app.md) or one of the following walkthroughs:
   -	[Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)
   -	[Integrate a Power BI tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
@@ -48,7 +48,7 @@ Once you register your app in **Azure AD**, you can authenticate to the Power BI
 ## Get an authentication security token
 The following is a simple C# app that authenticates to Power BI. The sample only shows you how to get an authentication security token. You use the authentication security token to make calls to Power BI operations. Please follow one of the following walkthroughs to learn how to use a token to call Power BI operations:
 
--	[Push data into Power BI dashboard](powerbi-developer-push-data-into-a-dashboard.md)
+-	[Push data into Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
 -	[Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)
 -	[Integrate a Power BI tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
 
@@ -56,9 +56,7 @@ For this sample, you learn how to authenticate a **Native client app**. To authe
 
 Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. After you register an app in **Azure AD**, the application outsources authentication to Azure AD, and grants your app access to the Power BI REST API.
 
-Here are the steps to get an authentication security token.
-
-**Steps to get an authentication security token**
+Here are the steps to get an authentication security token:
 
 <a name="register_1"/>
 **Step 1**: Register a **Native client app**.
@@ -68,7 +66,7 @@ Here are the steps to get an authentication security token.
 3. Enter an **App Name** such as "Sample Native client app".
 4. For **App Type**, choose **Native app**.
 5. Enter a **Redirect URL**. For a **Native client app**, a redirect uri gives **Azure AD** more details on the specific application that it will authenticate. The standard Uri for a client app is https://login.live.com/oauth20_desktop.srf.
-6. For **Choose APIs to access**, choose **Read All Datasets**. For all Power BI app permissions, see [App permissions](powerbi-developer-app-permissions.md).
+6. For **Choose APIs to access**, choose **Read All Datasets**. For all Power BI app permissions, see [App permissions](powerbi-developer-power-bi-permissions.md).
 7. Click **Register app**, and save the **Client ID** that was generated. A **Client ID** identifies the app in Azure AD.
 
 **Step 2**: In Visual Studio, create a **Console Application** project, and follow these steps:
@@ -77,9 +75,8 @@ Here are the steps to get an authentication security token.
 2.	Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [Step 1 – Register a Native client app](#register_1).
 3.	Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
 
-  a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-
-  b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
+    a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+    b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 
 4.	After the package is installed, add **using Microsoft.IdentityModel.Clients.ActiveDirectory;** to Program.cs.
 5.	Run the Console App, and login to your Power BI account. You should see a long token string that you use to call Power BI operations.
@@ -123,6 +120,6 @@ Paste this code into Main(string[] args).
 
 Once you have an authentication security token, you can call any Power BI REST operation. To learn how to use a token, see any of these walkthroughs:
 
--	[Push data into Power BI dashboard](powerbi-developer-push-data-into-a-dashboard.md)
+-	[Push data into Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
 -	[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
 -	[Integrate a Power BI tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
