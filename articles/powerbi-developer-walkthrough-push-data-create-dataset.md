@@ -119,8 +119,9 @@ Below is the [complete code listing](#code).
 - [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
 - [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
 ## Complete code listing

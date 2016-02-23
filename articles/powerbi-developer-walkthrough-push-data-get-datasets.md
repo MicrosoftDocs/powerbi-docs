@@ -64,7 +64,6 @@ Add this code into Program.cs.
 
           //Get a dataset to add rows into a Power BI table
           string datasetId = GetDataset();
-
       }
 
 - Add a GetDatset() method:
@@ -118,8 +117,9 @@ Below is the [complete code listing](#code).
 - [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Newtonsoft.Json](http://www.newtonsoft.com/json)
 - [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
 ## Complete code listing
