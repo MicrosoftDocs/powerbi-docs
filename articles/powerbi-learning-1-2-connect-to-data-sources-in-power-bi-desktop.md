@@ -7,7 +7,8 @@
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideoId="S6s0osmRCZ4"/>
+   featuredVideoId="S6s0osmRCZ4"
+   courseDuration="8m"/>
 
 <tags
    ms.service="powerbi"
