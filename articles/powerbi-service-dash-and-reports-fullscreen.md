@@ -45,7 +45,7 @@ Some uses for Full Screen mode are:
 
 3. Sometimes dashboards will display in Full screen Mode with scrollbars (see above). To remove scrollbars, move your cursor to an empty area on your screen to reveal the Full screen options menu.  
 
- ![](media/powerbi-service-dash-and-reports-fullscreen/menu-options.png)
+    ![](media/powerbi-service-dash-and-reports-fullscreen/menu-options.png)
 
 4.  Select the **Fit to screen** icon.
 

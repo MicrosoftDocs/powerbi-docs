@@ -32,11 +32,11 @@ Don't like the name of a page in your Power BI report?  A new name is just a cl
 
 4. Double-click the name on the tab to highlight it.  
 
-  ![](media/powerbi-service-rename-a-report-page/hilite-tab.png)
+    ![](media/powerbi-service-rename-a-report-page/hilite-tab.png)
 
 5. Type a new report page name and select ENTER.
 
-  ![](media/powerbi-service-rename-a-report-page/new-name.png)
+    ![](media/powerbi-service-rename-a-report-page/new-name.png)
 
 ##  See also
 
