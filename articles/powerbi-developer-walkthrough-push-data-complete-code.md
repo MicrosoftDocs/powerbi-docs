@@ -20,7 +20,7 @@
 
 # Push data to a dashboard complete code listing
 
-After you follow Steps 2 to 5 in the **Push data into a dashboard**, your complete code should look like the following.
+After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete code should look like the following.
 
 ## Push data to dashboard code
 

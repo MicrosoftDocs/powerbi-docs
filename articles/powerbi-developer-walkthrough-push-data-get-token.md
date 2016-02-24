@@ -30,9 +30,9 @@ Here's how to get an authentication access token.
 1. In Visual Studio 2015, create a **Console Application** project.
 2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
 
-   a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-   
-   b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
+     a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+
+     b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 
 3. Add the code below into class Program {...}.
 4. Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md).
