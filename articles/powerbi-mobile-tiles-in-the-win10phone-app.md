@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="02/24/2016"
    ms.author="maggies"/>
 
 # Tiles in the Power BI mobile app for Windows 10  
@@ -27,7 +27,7 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
 2. Tap the vertical ellipsis on the tile. From here, you can: 
 
-    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/pbi_win10ph_tileellips.png)
+    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/pbi_win10tileellpslink.png)
 
     [Share a snapshot of the tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
 

@@ -64,6 +64,14 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
     Tapping the red "030-Kids" bubble in the bubble chart highlights related values in the other charts. Because the column chart in the upper-right shows percentages, some highlighted values are larger than the total values, and some are smaller. 
 
+## Use slicers to filter the report page
+
+When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), you can [add slicers to a report page](powerbi-service-tutorial-slicers.md). Then when you or your colleagues view your reports on your mobile devices, you can use the slicers to filter the page.
+
+-   Select a value in a slicer on the report page.
+
+    ![](media/powerbi-mobile-reports-in-the-windows-app/pbi_win10_slicer.png)
+
 ## Filter a Power BI report
 
 You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has [added filters to the page](powerbi-service-add-a-filter-to-a-report.md) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). In the Power BI service, you can also add other fields as filters for a specific visual. 
@@ -71,7 +79,7 @@ You can always filter individual visuals in a Power BI report by using the field
 > **Notes**  
 > 
 > - If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
-> - Report filtering isn't available on Windows 10 phones.
+> - Report filtering isn't available on Windows 10 phones. However, slicers are available on phones. See "Use slicers to filter the report page."
 
 1. In a report, expand the Filters pane, if it's collapsed.
 
