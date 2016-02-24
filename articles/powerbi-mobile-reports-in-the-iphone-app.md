@@ -33,10 +33,7 @@ Then you view and interact with those reports in the [iPhone app (Power BI for 
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_rpt_sm.png)
 
->**Notes**:   
->
->-   Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them.   
->-  To open the sample reports, you need to sign in to Power BI. 
+>**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
 
 ## See other pages in a Power BI report
 

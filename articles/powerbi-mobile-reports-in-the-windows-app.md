@@ -79,7 +79,7 @@ You can always filter individual visuals in a Power BI report by using the field
 > **Notes**  
 > 
 > - If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
-> - Report filtering isn't available on Windows 10 phones. However, slicers are available on phones. See "Use slicers to filter the report page."
+> - Report filtering isn't available on Windows 10 phones. However, slicers are available on phones. See [Use slicers to filter the report page](powerbi-mobile-reports-in-the-windows-app.md#use-slicers-to-filter-the-report-page).
 
 1. In a report, expand the Filters pane, if it's collapsed.
 
