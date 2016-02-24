@@ -43,7 +43,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             ]
         },
         {
-          "sectionTitle": "Power BI Desktop Data Transformations",
+          "sectionTitle": "Getting Data",
           "articles": [
             "powerbi-learning-1-1-overview-of-power-bi-desktop",
             "powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop",
@@ -53,7 +53,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ]
         },
         {
-          "sectionTitle": "Power BI Desktop Modelling",
+          "sectionTitle": "Modeling",
           "articles": [
             "powerbi-learning-2-1-intro-modeling-data",
             "powerbi-learning-2-2-manage-data-relationships",
@@ -65,7 +65,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ]
         },
         {
-          "sectionTitle": "Power BI Desktop Visualizations",
+          "sectionTitle": "Visualizations",
           "articles": [
             "powerbi-learning-3-1-intro-visualizations",
             "powerbi-learning-3-2-create-customize-simple-visualizations",
@@ -88,7 +88,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ]
         },
         {
-          "sectionTitle": "Power BI Service",
+          "sectionTitle": "The Power BI Service",
           "articles": [
             "powerbi-learning-4-0-intro-power-bi-service",
             "powerbi-learning-4-1-publish-reports",
@@ -116,7 +116,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ]
         },
         {
-          "sectionTitle": "Organization Packs, Security, and Groups",
+          "sectionTitle": "Publishing Data and Visuals",
           "articles": [
             "powerbi-learning-6-1-create-groups",
             "powerbi-learning-6-2-create-content-packs",
