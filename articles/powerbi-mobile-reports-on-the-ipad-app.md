@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="0223/2106"
    ms.author="maggies"/>
 # Reports on the iPad app (Power BI for iOS)
 
@@ -29,11 +29,11 @@ Then you view and interact with reports on the [iPad app for Microsoft Power BI]
 
 -   Or tap a tile on a dashboard, and tap **Open report**.
 
-    >**NOTE**: Not all tiles can open in a report. For example, tiles created by asking questions with Q&A don't open reports.
+    >**Note**: Not all tiles can open in a report. For example, tiles created by asking questions with Q&A don't open reports.
 
 ## See other pages in the report
 
--   Swipe from side to side.
+-   Tap the tabs at the bottom of the app.
 
 ## Cross-filter a report page
 
