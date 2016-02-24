@@ -34,7 +34,7 @@ Here's how you get a dataset.
 
 >**NOTE**: Before you get started, make sure to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md).
 
-1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package.
+1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
 
      a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 
