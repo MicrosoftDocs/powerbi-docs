@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/03/2016"
+   ms.date="02/22/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -24,7 +24,7 @@
 
 ## What’s the difference between Power BI and Power BI Pro?
 
-Power BI provides all sorts of features to help you get started exploring data in a whole new way. Power BI Pro provides all of the same great features in Power BI, plus additional features like more storage capacity, hourly scheduled refresh, live data sources with full interactivity, groups, and more. Learn more about [the differences between Power BI Pro and the free Power BI](https://powerbi.microsoft.com/pricing).
+Power BI provides all sorts of features to help you get started exploring data in a whole new way. Power BI Pro provides all of the same great features in Power BI, plus additional features like more storage capacity, scheduling data refresh more frequent than daily, live data sources with full interactivity, groups, and more. Learn more about [the differences between Power BI Pro and the free Power BI](https://powerbi.microsoft.com/pricing).
 
 ## How much does Power BI cost?
 
