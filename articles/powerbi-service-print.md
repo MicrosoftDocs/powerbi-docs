@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/21/2015"
+   ms.date="02/23/2015"
    ms.author="mihart"/>
 
 # Printing from Power BI

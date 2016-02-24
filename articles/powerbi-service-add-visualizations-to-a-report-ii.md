@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2016"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 
 # Tutorial: Part 2, Add visualizations to a Power BI report  
@@ -44,7 +44,7 @@ In this tutorial we'll dig into our retail dataset and create a few key visualiz
 2.  From the Time table, select **FiscalMonth** and drag it into the **Axis** area.  
   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_5new.png)
 
-3.  [Change the visualization](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a line chart.
+3.  [Change the visualization](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a line chart.  There are many visualization types to choose from - see [descriptions of each, tips for best practices, and tutorials](powerbi-service-visualization-types-for-reports-and-q-and-a.md) for help deciding which type to use.
 
 4. From the Visualizations pane, select the line chart icon.
 

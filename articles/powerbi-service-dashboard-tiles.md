@@ -65,15 +65,12 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
 1. Hover over the tile to display the ellipses.
 
     ![](media/powerbi-service-dashboard-tiles/ellipses_new.png)
-
 2. Select the ellipses to open the tile action menu.
 
     ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
-
 From here you can:
 
 - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
-
 - [Export the data used in the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
 
 - [View in full screen Focus  mode](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
@@ -105,8 +102,13 @@ When you select a tile, what happens next depends on how the tile was created an
 - If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
 ## See also  
+[Create a big number tile from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
+
+[Create a big number tile from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)
+
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Data refresh](powerbi-refresh-data.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md) 
+ 
 [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)

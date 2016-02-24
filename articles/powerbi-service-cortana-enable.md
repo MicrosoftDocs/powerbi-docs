@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 
 
@@ -51,9 +51,9 @@ For Cortana in Windows 10 to access data in Power BI, you need to add the work o
 1. Ensure you have [Windows 10 version 1511 (Windows 10 November Update) or higher](http://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/).  Check which version you have by selecting **Settings** > **System** > **About**.
 >NOTE: You will only see the version number if you've installed the November update (or later).
 
-2. Select **Settings** > **Accounts**.
+2. Select **Settings** > **Accounts** > **work access** > **add a work or school account**
 
-3. Scroll to the bottom where you'll see **Accounts used by other apps** and select **Add a work or school account**.
+3. Scroll to the bottom where you'll see **Add a Microsoft account**.
 
 4. Sign in with the account you use with Power BI.
 
