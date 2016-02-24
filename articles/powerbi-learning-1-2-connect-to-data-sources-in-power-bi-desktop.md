@@ -1,6 +1,6 @@
 <properties
    pageTitle="Connect to Data Sources in Power BI Desktop"
-   description="Connect to Data Sources in Power BI Desktop"
+   description="Find out how to connect to data using Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,8 +19,6 @@
    ms.author="v-jescoo"/>
 
 # Connect to Data Sources in Power BI Desktop
-
-[![Connect to Data Sources](./media/powerbi-learning-course1-article2/videothumb.jpg)]
 
 **Power BI Desktop** can connect to a whole range of data sources, including on-premises databases, Excel workbooks, and cloud services. Currently, over 59 different cloud services such as GitHub and Marketo have specific connectors, and you can connect to generic sources through XML, CSV, text, and ODBC. Power BI will even scrape tabular data directly from a website URL! But let's start from the beginning, with opening Power BI Desktop and connecting to data.
 

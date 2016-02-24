@@ -19,7 +19,7 @@
 
 # Power BI Pro content - what is it?  
 
-Power BI free and Pro licenses are different based on the kind of content users can consume.  **Power BI Pro content** is a dashboard, report, or dataset that uses a connection or other functionality (such as hourly refresh) that is only available to consume with a Power BI Pro license.
+Power BI free and Pro licenses are different based on the kind of content users can consume.  **Power BI Pro content** is a dashboard, report, or dataset that uses a connection or other functionality (such as up to eight refreshes in one day) that is only available to consume with a Power BI Pro license.
 
 If your content contains any of the following items, it's Power BI Pro content:
 

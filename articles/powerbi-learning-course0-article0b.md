@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideo=""/>
+   featuredVideoId=""/>
 
 <tags
    ms.service="powerbi"
@@ -84,7 +84,7 @@ When you’re *viewing*, or *consuming* a dashboard or report – which means yo
 Those are the basics of Power BI, and its building blocks. Let’s take a moment to review.
 Power BI is a collection of services, apps, and connectors that enables you to connect to your data – wherever it happens to reside – filter it if necessary, then bring it into Power BI where you can create compelling visualizations you can share with others.  
 
-Now that you understand the handful of basic building blocks of Power BI, it becomes clear that you can create datasets that make sense *to you*, and create visually compelling reports that tell your story. Stories told with Power BI don’t have to be complex, or complicated, to be compelling. 
+Now that you understand the handful of basic building blocks of Power BI, it becomes clear that you can create datasets that make sense *to you*, and create visually compelling reports that tell your story. Stories told with Power BI don’t have to be complex, or complicated, to be compelling.
 
 For some people, using a single Excel table in a dataset, then sharing a dashboard with their team, will be an incredibly valuable way to use Power BI.
 

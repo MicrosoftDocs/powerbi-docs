@@ -18,16 +18,25 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="02/20/2016"
-   ms.author="v-jescoo"/>
+   ms.author="owend"/>
 
 # Connect OneDrive for Business to Power BI
 
-*See how to connect your OneDrive for Business workbook to easily import or connect your Excel files*
+Get seamless integration between Power BI and Excel when you save your Excel workbooks to OneDrive.
 
-When you use OneDrive for Business as a place to store Excel files that you have connected to Power BI, it creates a kind of live connection. Any changes that happen to an Excel file will automatically be synchronized to the Power BI service.
+Because OneDrive is in the cloud, just like Power BI, a live connection is made between Power BI and OneDrive. If you make changes to your workbook on OneDrive, those changes are **automatically synchronized** with Power BI. Your visualizations in reports and dashboards are kept up-to-date. If your workbook connects to external data sources like a database or an OData feed, you can use Power BI's **Schedule refresh** features to check for updates. Need to ask questions about data in your workbook? No problem. You can use Power BI's **Q & A** features to do just that.
 
-To connect to a workbook on OneDrive for Business, log into the Power BI service and select **Get Data**. Choose **Files** under Import or Connect to Data, and then select **OneDrive - Business**. Highlight the desired file, and select **Connect**. At this point you can either **Import** the file, which will create connected datasets and reports in Power BI, or **Connect** to the file, which lets you view your Excel content through Power BI without importing and connecting the data.
+There are two ways to connect to your Excel files on OneDrive for Business:
 
-Note that for imported files, any changes in the Excel source file will overwrite changes made in Power BI.
+-   Import Excel data into Power BI
+-   Connect, manage, and view Excel in Power BI
 
-Workbooks that are connected (not imported) will have a small Excel icon next to their name in the Reports list. Select the ellipsis menu next to the connected workbook name to view and edit your data through Excel services, and schedule refreshes.
+### Import Excel data into Power BI
+When you choose this way, table data from your workbook is loaded into a new dataset in Power BI. If you have any **Power View** sheets in your workbook, those are imported and new reports are automatically created in Power BI, too.
+
+Power BI will maintain the connection between it and the workbook file on your OneDrive for Business. If you make any changes to your workbook, when you save, those changes will be **automatically synchronized** with Power BI, usually within an hour. If your workbook connects to external data sources, you can setup scheduled refresh so the dataset in Power BI is lkept up-to-date. Because visualizations in reports and dashboard in Power BI will use the data from the dataset, as you explore, your queries are lightning fast.
+
+### Connect, Manage and View Excel in Power BI
+When you choose this way, you'll get them most seamless way of working with your workbook in Excel and Power BI. You'll see your Excel workbook in Power BI just as you would in **Excel Online**. You can explore and edit your worksheets right in Power BI just as you do in Excel Online. When you make changes, any visualizations you've pinned to dashboards are updated automatically.
+
+No dataset is created in Power BI. All of the data remains in the workbook on OneDrive. So what's the advantage? Well, there are many. You can setup **scheduled refresh** if your workbook connects to external data sources. You can select elements such as PivotTables and charts and **pin** them right to dashboards in Power BI. If you make any changes, they're automatically reflected in Power BI. And, you can use Power BI's awesome **Q & A** features to ask questions about the data in your workbook. How cool is that?  

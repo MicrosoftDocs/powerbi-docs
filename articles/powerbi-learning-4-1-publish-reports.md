@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Publish Reports to the Power BI Service"
-   description="Learn how to publish your completed reports to the Power BI service"
+   pageTitle="Publish Desktop Reports to the Power BI Service"
+   description="Learn how to publish your completed Power BI Desktop reports to the Power BI service"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,8 +20,24 @@
    ms.date="02/19/2016"
    ms.author="v-jescoo"/>
 
-# Publish Reports to the Power BI Service
+# Publish Reports from Power BI Desktop to the Power BI Service
 
-*See how to publish your completed reports to the Power BI service*
+Publishing your reports to the Power BI service is fast and easy.
 
-Publishing your reports to the Power BI service is fast and easy. Once you have completed authoring the report in Power BI Desktop, select the **Publish** button on the Home tab. Your report and data, including visualizations, queries, and custom measures, will be packaged together and uploaded to the service. Once the upload is complete, you'll be given a link to view your report in a web browser.
+Once you've completed authoring your report in **Power BI Desktop**, just select the **Publish** button on the **Home** tab in Power BI Desktop, and the process begins.
+
+![](media/powerbi-learning-4-1-publish-reports/4-1_1.png)
+
+Your report and data, including visualizations, queries, and custom measures, are packaged together and uploaded to the Power BI service.
+
+![](media/powerbi-learning-4-1-publish-reports/4-1_2.png)
+
+>NOTE: It's common to refer to Power BI Desktop reports as **.pbix** files, which is the extension they're given in Windows.
+
+Once the upload is complete, a dialog box tells you the publishing process succeeded and a link is provided in that dialog to take you directly to your report in the Power BI service, in a web browser.
+
+![](media/powerbi-learning-4-1-publish-reports/4-1_3.png)
+
+And that's it - it's easy to publish reports from Power BI Desktop to the Power BI service.
+
+![](media/powerbi-learning-4-1-publish-reports/4-1_4.png)

@@ -1,6 +1,6 @@
 <properties
    pageTitle="Clean and Transform Your Data With the Query Editor"
-   description="Clean and Transform Your Data With the Query Editor"
+   description="Learn how to clean and transform Data With Query Editor"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,8 +19,6 @@
    ms.author="v-jescoo"/>
 
 # Clean and Transform Your Data With the Query Editor
-
-[![Basic transformations](./media/powerbi-learning-course1-article3/videothumb.jpg)]
 
 **Power BI Desktop** includes **Query Editor**, a powerful tool for shaping and transforming data so it's ready for your models and visualizations. When you select Edit from Navigator, Query Editor launches and is populated with the tables or other entities you selected from your data source.
 

@@ -1,6 +1,6 @@
 <properties
    pageTitle="More Advanced Data Sources and Transformation"
-   description="More Advanced Data Sources and Transformation"
+   description="See advanced data sources and transformations in action"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,8 +19,6 @@
    ms.author="v-jescoo"/>
 
 # More Advanced Data Sources and Transformation
-
-[![Basic transformations](./media/powerbi-learning-course1-article4/videothumb.jpg)]
 
 In this article, we investigate some advanced data import and cleaning techniques for **Power BI Desktop**. Once you've shaped your data in **Query Editor** and brought it into **Power BI Desktop**, you can look at it in a few different ways. There are three views in Power BI Desktop: **Report** view, **Data** view, and **Relationships** view. You see each view by selecting its icon in the upper left side of the canvas. In the following image, **Report** view is selected. The yellow bar beside the icon indicates which view is active.
 

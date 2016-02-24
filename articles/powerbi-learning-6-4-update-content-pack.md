@@ -20,16 +20,34 @@
    ms.date="02/20/2016"
    ms.author="v-jescoo"/>
 
-# Update a Content Pack
+# Edit a content pack in Power BI
 
-*See how to update your content packs and push the changes to others in your organization*
+In this lesson, we're going to edit the original content pack we created previously, and see how that updates the other people who've connected to it.
 
-As the author of a content pack, your edits or updates will affect the other people in your organization who are using your pack.
+I'm back in My Workspace, editing my original dashboard. 
 
-When you make a change a dashboard, report, or dataset that has already been published, you'll get a prompt that suggests you update the associated content pack. To do so, select the **Settings** icon in the top right-hand corner of the screen and choose **View content pack** from the menu. You will now see a list of the packs that you have authored. Packs that need updating will have a small icon next to their name.
+![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04myworkspace.png)
 
-Select **edit**, and make any necessary adjustments to the name, description, and contents of your pack. Select **Update** when you're ready.
+Anytime I make any change to the dashboard, I get this reminder that I've changed something that I've shared with others in a content pack, and prompting me to update the shared version.
 
-Once the content pack has been updated, anyone else in your organization who is using the pack will get a notification indicating that the content pack has been updated and asking if they want to accept the changes or create a separate version.
+![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04uvmadechanges.png)
 
-In this way it's easy for a content pack author to manage changes and push them out to other users in their organization.
+I go back to the settings icon and select **View content pack** to see the content packs I've already published.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04viewcontpk.png)
+
+I see the content pack I made. This little icon tells me I've changed something in the content pack, and I need to edit the content pack so others can see my changes.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04updatecontpk.png)
+
+When I select **Edit**, I'm back at the screen where I can edit the title and description, but this time it has an **Update** button, so I select that.
+
+![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04contpksuccess.png)
+
+Power BI takes those changes and publishes the updated content pack to the content pack gallery.
+
+Anybody who has connected to my content pack gets a message that the content pack has changed, and asks if they want to accept the changes or keep the older version.
+
+So as the content pack owner, you can manage the versions that your colleagues are using.
+
+On to the next lesson: [Create a content pack in Power BI](powerbi-learning-6-4-update-content-pack.md).
