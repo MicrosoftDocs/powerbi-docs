@@ -30,7 +30,7 @@ From the top control bar, select the **Duplicate this page** icon.
 
 ![](media/powerbi-service-add-a-page-to-a-report/PBI_duplicate.png)
 
-Your new page is created and becomes the active page. To rename it, double-click the name on the tab to highlight it, and type a new name.
+Your new page is created and becomes the active page. To rename it, double-click the name on the tab to highlight it, and type a new name.  For more information, see [rename a report and report page]()
 
 
 ## See also  
