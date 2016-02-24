@@ -529,21 +529,33 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-developer-overview-of-power-bi-rest-api",
             "powerbi-developer-introduction-to-creating-a-power-bi-app",
-            "powerbi-developer-steps-to-create-a-power-bi-app",
+            "powerbi-developer-what-you-need-to-create-an-app",
             "powerbi-developer-create-an-azure-active-directory-tenant",
-            "powerbi-developer-sign-up-for-power-bi-service",
             "powerbi-developer-register-a-client-app",
             "powerbi-developer-register-a-web-app",
             "powerbi-developer-authenticate-to-power-bi-service",
-            "powerbi-developer-power-bi-permissions",
             "powerbi-developer-authenticate-a-client-app",
             "powerbi-developer-authenticate-a-web-app",
+            "powerbi-developer-power-bi-permissions",
             "powerbi-developer-rest-api-reference"
           ],
-          "numberOfFeaturedArticles": 12
+          "numberOfFeaturedArticles": 11
         },
         {
-          "sectionTitle": "Integrate a Power BI tile",
+          "sectionTitle": "Push data into a dashboard",
+          "articles": [
+            "powerbi-developer-walkthrough-push-data",
+            "powerbi-developer-walkthrough-push-data-register-app-with-azure-ad",
+            "powerbi-developer-walkthrough-push-data-get-token",
+            "powerbi-developer-walkthrough-push-data-create-dataset",
+            "powerbi-developer-walkthrough-push-data-get-datasets",
+            "powerbi-developer-walkthrough-push-data-add-rows",
+            "powerbi-developer-walkthrough-push-data-complete-code"
+          ],
+          "numberOfFeaturedArticles": 7
+        },        
+        {
+          "sectionTitle": "Integrate a Power BI tile or report",
           "articles": [
             "powerbi-developer-integrate-a-power-bi-tile-or-report"
           ],

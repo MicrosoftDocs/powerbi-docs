@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Introduction to creating a Power BI app"
+   pageTitle="Create a Power BI app"
    description="Introduction to creating a Power BI app"
    services="powerbi"
    documentationCenter=""
@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/03/2016"
+   ms.date="02/09/2016"
    ms.author="derrickv"/>
 
-# Introduction to creating a Power BI app
+# Create a Power BI app
 
 With the Power BI REST API, you can create your own business solution to push data into a Power BI dashboard in real-time.  Your dashboards will be updated in real-time when the data changes. You can use your choice of technology, including .NET, JQuery or Ruby, to write your app. The Power BI REST API uses industry standards such as OAuth2, and has REST operations to push data into a Power BI dashboard in real time.
 
