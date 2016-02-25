@@ -14,12 +14,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2016"
+   ms.date="02/25/2016"
    ms.author="derrickv"/>
 
 # What you need to create a Power BI app
 
-Before you start creating any Power BI app, you need to setup your environment for the app. First, you need a Power BI service account. Also, since Power BI uses **Azure Active Directory (Azure AD)** to authenticate users and protect applications, you need to register, or configure, your app in **Azure AD** so that the active directory can find your app.
+Before you start creating a Power BI app, you need to setup your environment for the app. First, you need a Power BI service account. Also, since Power BI uses **Azure Active Directory (Azure AD)** to authenticate users and protect applications, you need to register, or configure, your app in **Azure AD** so that the active directory can find your app.
 
 Here are the steps to configure your environment:
 
@@ -76,7 +76,7 @@ Here are the steps to get an authentication security token:
 3.	Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
 
     a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-    
+
     b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 
 4.	After the package is installed, add **using Microsoft.IdentityModel.Clients.ActiveDirectory;** to Program.cs.
