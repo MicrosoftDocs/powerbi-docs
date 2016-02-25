@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="LF-Ti8FTkpQ"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="powerbi"
@@ -30,7 +30,7 @@ The easiest method to display your entire dashboard in one screen is selecting t
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_1.png)
 
-Selecting the **Full Screen Mode** button puts your browser into full screen mode, removing all chrome elements from around the dashboard, and thereby increasing the amount of viewable space. 
+Selecting the **Full Screen Mode** button puts your browser into full screen mode, removing all chrome elements from around the dashboard, and thereby increasing the amount of viewable space.
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_2.png)
 

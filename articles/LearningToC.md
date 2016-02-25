@@ -35,8 +35,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Getting started",
           "articles": [
             "powerbi-learning-0-0-what-is-power-bi",
-            "powerbi-learning-0-0b-building-blocks-power-bi",
             "powerbi-learning-0-1-intro-using-power-bi",
+            "powerbi-learning-0-0b-building-blocks-power-bi",
             "powerbi-learning-0-2-get-started-power-bi-desktop",
             "powerbi-learning-0-3-dashboards-cloud-services",
             "powerbi-learning-0-4-summary-of-intro-to-power-bi"
@@ -76,6 +76,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-learning-3-7-create-scatter-charts",
             "powerbi-learning-3-8-create-waterfall-funnel-charts",
             "powerbi-learning-3-9-create-gauges-cards",
+            "powerbi-learning-3-9a-modifying-colors",
             "powerbi-learning-3-10-create-shapes-images",
             "powerbi-learning-3-11-page-layout-formatting",
             "powerbi-learning-3-11a-create-interaction-between-visualizations",
@@ -101,6 +102,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-learning-4-4b-display-visuals-tiles-fullscreen",
             "powerbi-learning-4-4d-change-tile-details",
             "powerbi-learning-4-4e-get-more-dashboard-space",
+            "powerbi-learning-4-4g-print-and-export-dashboards-reports",
             "powerbi-learning-4-5-manually-republish-reports",
             "powerbi-learning-4-6-install-configure-personal-gateway"
           ]
@@ -121,7 +123,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-learning-6-1-create-groups",
             "powerbi-learning-6-2-create-content-packs",
             "powerbi-learning-6-3-use-content-packs",
-            "powerbi-learning-6-4-update-content-packs"
+            "powerbi-learning-6-4-update-content-pack"
           ]
         }
       ]

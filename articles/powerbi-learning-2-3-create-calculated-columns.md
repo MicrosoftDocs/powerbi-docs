@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="GarBXef0Vew"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="9m"/>
 
 <tags
    ms.service="powerbi"

@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="yn2bXVQJLx8"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="14m"/>
 
 <tags
    ms.service="powerbi"
@@ -42,4 +42,4 @@ Once you've created a new measure, it will appear in one of the tables the **Fie
 
 You can use a measure like any other table column: just drag and drop it onto the report canvas or visualization fields. Measures also integrate seamlessly with slicers, segmenting your data on the fly, which means you can define a measure once, and use it in many different visualizations.
 
-The **Calculate** DAX function is a powerful function that enables all sorts of useful calculations, which is especially useful for financial reporting and visuals. 
+The **Calculate** DAX function is a powerful function that enables all sorts of useful calculations, which is especially useful for financial reporting and visuals.

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Summary of the introduction to Power BI"
+   pageTitle="Review and What's Next"
    description="Review what you learned in this introduction to Power BI"
    services="powerbi"
    documentationCenter=""
@@ -19,7 +19,7 @@
    ms.date="02/17/2016"
    ms.author="v-jescoo"/>
 
-# Summary of the introduction to Power BI
+# Review the first module, and What's Next
 
 Let’s do a quick review of what we covered in this first module.
 

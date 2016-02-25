@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="fE9R6ydo8yk"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="7m"/>
 
 <tags
    ms.service="powerbi"
@@ -27,7 +27,7 @@ In previous lessons, we already created a content pack and a group. In this less
 I start in My Workspace, ...
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03myworkspace.png)
-      
+
 ... and switch back to the Finance group I created in the earlier lesson.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03switch2group.png)
