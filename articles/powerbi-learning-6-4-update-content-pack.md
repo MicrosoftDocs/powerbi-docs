@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="nem2r4NpTyU"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="4m"/>
 
 <tags
    ms.service="powerbi"
@@ -24,7 +24,7 @@
 
 In this lesson, we're going to edit the original content pack we created previously, and see how that updates the other people who've connected to it.
 
-I'm back in My Workspace, editing my original dashboard. 
+I'm back in My Workspace, editing my original dashboard.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04myworkspace.png)
 

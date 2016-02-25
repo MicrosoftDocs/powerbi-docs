@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="exL0nmguK_4"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="powerbi"
@@ -24,25 +24,25 @@
 
 In this lesson, we create a *content pack* with existing artifacts we already have in Power BI, and then share those with colleagues.
 
-Here in My Workspace, I have a dashboard, and the report underneath, and the dataset. I want to package them all up and share them with people in my organization so they can reuse them.
+In **My Workspace** I have a dashboard, the report underneath, and the dataset. I want to share them as a package with people in my organization, so they can reuse them.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02myworkspacenohilite.png)
 
-Here under the settings icon, I can see how much storage I've used, and I can create a content pack.
+When I select the **Settings** icon (the gear in the top-right of the service), I can see how much storage I've used, and I can create a content pack.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02options.png)
 
-Here I can choose whether to distribute it to specific people or groups. I give it a title. It's a good idea to give it a detailed description, to help when people are browsing for a content pack.
+In the dialog that appears, I can choose whether to distribute it to specific people or groups, and also give it a title. It's also a good idea to provide a detailed description in the **Description** box, to people browsing for a content pack to know what it contains or what it provides.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02create_contpktop.png)
 
-I upload an image, and now the important part: I select a dashboard, and Power BI automatically selects the report and dataset that are used in the dashboard. I can't unselect the report and dataset because the dashboard needs them.
+On the bottom of the dialog, I have an opportunity to upload an image for the content pack, and then the most important step: I select the dashboard I want to include in the content pack, and when I do so, Power BI automatically selects the report and dataset that are used in the dashboard. I cannot unselect the report or dataset, because the dashboard I want to include in the content pack requires them.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02create_contpk2ndhalf.png)
 
-I could select other dashboards, reports, and datasets, but I won't now.
+I could also select other dashboards, reports, and datasets, but I won't now.
 
-When I publish, the content pack is sent up to the organization's content gallery.
+When I publish, the content pack is added to the organization's content gallery.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02contpksuccess.png)
 
