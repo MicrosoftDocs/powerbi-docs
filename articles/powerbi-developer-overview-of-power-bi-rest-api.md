@@ -37,7 +37,7 @@ Here are some of the things you can do with the Power BI API.
 
 ### Other things you can do to learn about the Power BI API
 
-- **Check out the Power BI projects on GitHub and our samples** - GitHub has many Power BI projects: Go to [GitHub](https://github.com/search?utf8=%E2%9C%93&q=Power+BI) and search “Power BI”. Or, take a look at [our samples](http://go.microsoft.com/fwlink/?LinkId=618971). We have these samples:
+- **Check out the Power BI projects on GitHub and our samples** - GitHub has many Power BI projects: Go to [GitHub](https://github.com/search?utf8=%E2%9C%93&q=Power+BI) and search “Power BI”. Or, we have these samples:
 	- [Client app sample](https://msdn.microsoft.com/library/mt186159.aspx): A console app that shows you how to authenticate a client app and call all Power BI operations.
 	- [Web app sample](https://msdn.microsoft.com/library/mt186158.aspx): A web app that shows you how to authenticate a Power BI web app.
   - [Integrate a Power BI tile into an app](https://msdn.microsoft.com/library/mt576402.aspx): A web app that shows you how to integrate a Power BI tile into an app.
