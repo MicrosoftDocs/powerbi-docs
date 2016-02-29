@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Connect to Data Sources in Power BI Desktop

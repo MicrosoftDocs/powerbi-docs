@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Customize Visuals with Summarization and Category Options"
-   description="Define how your visualizations use data with summarization and category options."
+   pageTitle="Summarization and Category options"
+   description="Define how your visuals summarize their data"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"

@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create Calculated Columns"
-   description="Learn what calculated columns are and how to create them in Power BI"
+   description="Calculated columns let you create unique keys, and more"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create Calculated Columns

@@ -1,6 +1,6 @@
 <properties
    pageTitle="More Advanced Data Sources and Transformation"
-   description="See advanced data sources and transformations in action"
+   description="Connect and combine two data sources - it's easy"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # More Advanced Data Sources and Transformation

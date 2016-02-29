@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create and Customize Simple Visualizations"
-   description="See how to create and customize three common types of visuals"
+   description="Customize three common types of visuals"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create and Customize Simple Visualizations

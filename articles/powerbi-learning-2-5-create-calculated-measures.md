@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create Calculated Measures"
-   description="Learn to create defined calculations, or measures, and use them to evaluate time-based functions"
+   description="Define custom calculations to evaluate time-based functions"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create measures and work with time-based functions

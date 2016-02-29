@@ -1,6 +1,6 @@
 <properties
    pageTitle="Clean and Transform Your Data With the Query Editor"
-   description="Learn how to clean and transform Data With Query Editor"
+   description="Get data in shape for use with Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Clean and Transform Your Data With the Query Editor

@@ -1,6 +1,6 @@
 <properties
    pageTitle="The Building Blocks of Power BI"
-   description="Learn the basic building blocks of Power BI, and how they relate"
+   description="See the building blocks of Power BI, and how they relate"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -16,11 +16,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Building Blocks of Power BI
-Everything you do in Power BI can be broken down into a few basic **building blocks**. Once you understand these building blocks, you can expand on each of them, and begin creating elaborate and complex things. But even elaborate things are built from basic building blocks – buildings are created with wood, steel, concrete and glass. Cars are made from metal, fabric, and rubber. Of course, buildings and cars can be basic or elaborate as well – depending on how those basic building blocks are arranged.
+Everything you do in Power BI can be broken down into a few basic **building blocks**. Once you understand these building blocks, you can expand on each of them and begin creating elaborate and complex reports. After all, even seemingly complex things are built from basic building blocks – buildings are created with wood, steel, concrete and glass. Cars are made from metal, fabric, and rubber. Of course, buildings and cars can be basic or elaborate as well – depending on how those basic building blocks are arranged.
 
 Let’s take a look at these basic building blocks, discuss some simple things that can be built with them, then provide a glimpse into how complex things can be created as well.
 
@@ -32,7 +32,8 @@ The basic building blocks in Power BI are the following:
 -   Dashboards
 -   Tiles
 
-##Visualizations
+## Visualizations
+
 A **visualization** (sometimes also referred to as a **visual**) is a visual representation of data, such as a chart, a graph, a color-coded map, or other interesting things you can create to represent your data visually. Power BI has all sorts of different visualization types, and more coming all the time. The following image shows a collection of different visualizations that were created in the Power BI service.
 
 ![](media/powerbi-learning-course0-article0b/c0a0b_1.png)
@@ -94,3 +95,5 @@ For others, using real-time Azure SQL Data Warehouse tables that combine with ot
 For both, the process is the same: create datasets, build compelling visuals, and share them with others. And similarly, the result of both (for each) is the same: harness your ever-expanding world of data, and turn it into actionable insights.
 
 Whether your data insights require straightforward or complex datasets, Power BI helps you get started quickly, and can expand with your needs to be as complex as your world of data requires. And since Power BI is a Microsoft product, you can count on it being robust, extensible, Office-friendly, and enterprise-ready.
+
+Now, let's see how this works. As mentioned earlier, the flow of work often begins in **Power BI Desktop**. So let's start there.

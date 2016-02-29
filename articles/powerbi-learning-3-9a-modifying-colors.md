@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Modify colors used for charts and visuals"
-   description="See how to modify which colors are used in charts and visuals"
+   pageTitle="Modify colors in charts and visuals"
+   description="Color your visual world with colors, shades, and scale"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # How to modify colors in charts and visuals
@@ -48,4 +48,4 @@ Another handy tool for using colors is setting a *reference line*. You can set t
 
 ![](media/powerbi-learning-3-9a-modifying-colors/3-9a_6.png)
 
-Lastly, you can create a border around an individual visualization, and like other controls, you can specify the color of that border as well. 
+Lastly, you can create a border around an individual visualization, and like other controls, you can specify the color of that border as well.

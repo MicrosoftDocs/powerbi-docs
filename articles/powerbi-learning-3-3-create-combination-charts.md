@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to Use Combination Charts"
-   description="See how to create and customize a combination chart"
+   pageTitle="Combination Charts"
+   description="Create your first combination chart"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # How to Use Combination Charts

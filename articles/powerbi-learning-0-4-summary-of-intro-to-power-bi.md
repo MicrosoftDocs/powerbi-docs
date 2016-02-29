@@ -16,12 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
-# Review the first module, and What's Next
+# Review this first section of Guided Learning
 
-Let’s do a quick review of what we covered in this first module.
+Let’s do a quick review of what we covered in this first section.
 
 **Power BI** is a collection of software services, apps, and connectors that work together to turn your data into interactive insights. You can use data from single basic sources, such as an Excel workbook, or pull data in from multiple databases and cloud sources to create complex datasets and reports. Power BI can be as straightforward as you want, or as enterprise-ready as your complex global business requires.
 
@@ -41,8 +41,23 @@ From there, we took a look at Power BI in a video tour with our Tour Guide, **Wi
 
 In **Power BI Desktop**, we connected to a basic Excel file, created visualizations, then published those visualizations to the service. Even if you use Power BI only with your Excel workbooks, you can gain amazing visual insights with those Excel workbooks, and both interact and share it in ways never before possible.
 
-In the **Power BI service**, we created a dashboard with just a few clicks.
+In the **Power BI service**, we created a dashboard with just a few clicks. We continued with our glimpse into the Power BI service and used a **Content Pack** – a ready-made collection of visuals and reports – and connected to a **software service** to populate the content pack and bring that data to life.
 
-We continued in the Power BI service and used a **Content Pack** – a ready-made collection of visuals and reports – and connected to a **software service** to populate the Content Pack, and bring that data to life. We also used natural language queries to ask questions of our answers, and let Power BI create visuals based on those questions. Lastly, we set up a refresh schedule for our data, so we know when we go back to the Power BI service, that data will be fresh.
+We also used natural language queries, called **Q & A**, to ask questions of our answers, and let Power BI create visuals based on those questions. Lastly, we set up a **refresh schedule** for our data, so we know when we go back to the Power BI service, that data will be fresh.
 
-Okay, we’re at the end of the first module. Congratulations! See you in the next module.
+## What's Next
+
+**Congratulations!** You've completed the first section of the **Guided Learning** course for Power BI. You now have a firm foundation of knowledge to move on to the next section, **Getting Data**, which is the next step in the logical flow of work for Power BI.
+
+We mentioned this before, but it's worth restating: this course builds your knowledge by following the common flow of work in Power BI:
+
+-   Bring data into **Power BI Desktop**, and create a report.
+-   **Publish** to the Power BI service, where you create new visualizations or build dashboards
+-   **Share** your dashboards with others, especially people who are on the go
+-   View and interact with shared dashboards and reports in **Power BI Mobile** apps
+
+![](media/powerbi-learning-course0-article1/c0a1_1.png)
+
+You might not do all that work yourself - some people will only view dashboards in the service that were created by someone else. That's fine, but because *you'll* go through all the sections in this course, you'll *understand* how those dashboards were created, and how they connected to the data... and you might even decide to create one of your own.
+
+See you in the next section!
