@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="02/26/2016"
    ms.author="derrickv"/>
 
 # Overview of Power BI REST API
