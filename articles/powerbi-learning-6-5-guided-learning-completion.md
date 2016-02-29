@@ -44,9 +44,9 @@ That's a lot of knowledge, and now that you have all this in your head, you're r
 
 There's more **help and reference** content available, too. Check out the following resources for more empowering information you can use:
 
--   [Power BI Desktop help content](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/)
--   Help for the [Power BI service](https://powerbi.microsoft.com/documentation/powerbi-service-get-started/)
--   Power BI [mobile apps help](https://powerbi.microsoft.com/documentation/powerbi-power-bi-apps-for-mobile-devices/)
--   And for developers, the [Power BI API help](https://powerbi.microsoft.com/documentation/powerbi-developer-overview-of-power-bi-rest-api/)
+-   [Power BI Desktop help content](powerbi-desktop-getting-started.md)
+-   Help for the [Power BI service](powerbi-service-get-started.md)
+-   Power BI [mobile apps help](powerbi-power-bi-apps-for-mobile-devices.md)
+-   And for developers, the [Power BI API help](powerbi-developer-overview-of-power-bi-rest-api.md)
 
 We hope you've enjoyed your journey through this **Power BI Guided Learning** experience. Best of luck to you, and may your Power BI visuals always be immersive and compelling.
