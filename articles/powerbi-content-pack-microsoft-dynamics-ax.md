@@ -20,7 +20,7 @@
 
 Microsoft Dynamics AX has two Power BI content packs targeted at different business users. The Financial Performance content pack, designed specifically for CFOs, provides access to insights about your organization’s financial performance. The Retail Channel Performance content pack is targeted for channel managers focuses on sales performance to predict trends and uncover insights by drawing directly from Retail & Commerce data. 
 
-Connect to the Microsoft Dynamics AX [Retail Channel Performance content pack](https://app.powerbi.com/getdata/services/adobe-analytics) or the [Financial Performance content pack](https://app.powerbi.com/getdata/services/adobe-analytics) for Power BI.
+Connect to the Microsoft Dynamics AX [Retail Channel Performance content pack](https://app.powerbi.com/getdata/services/dynamics-ax-retail-channel-performance) or the [Financial Performance content pack](https://app.powerbi.com/getdata/services/dynamics-ax-financial-performance) for Power BI.
 
 ## How to connect
 
@@ -40,7 +40,7 @@ Connect to the Microsoft Dynamics AX [Retail Channel Performance content pack](h
 
 	![](media/powerbi-content-pack-microsoft-dynamics-ax/params.png)
 
-5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Adobe Analytics credentials. 
+5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Dynamics AX credentials. 
 
 	![](media/powerbi-content-pack-microsoft-dynamics-ax/creds.png)
 
