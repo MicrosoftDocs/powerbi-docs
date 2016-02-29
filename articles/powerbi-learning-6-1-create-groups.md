@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create Groups in Power BI"
-   description="Discover how to create a new group, set privacy levels, and invite your first members."
+   description="Create a new group, set privacy levels, and invite your first members"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create a group in Power BI

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Learn about Quick Insights in the Power BI Service"
-   description="Learn how to use Quick Insights in the Power BI service"
+   pageTitle="Quick Insights in Power BI"
+   description="Learn how to get Quick Insights and visuals in a few clicks"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Use Quick Insights in the Power BI service

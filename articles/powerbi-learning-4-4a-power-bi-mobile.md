@@ -1,6 +1,6 @@
 <properties
    pageTitle="Introducing Power BI Mobile"
-   description="See how the Power BI app lets you keep track of your data from anywhere."
+   description="Power BI mobile apps show insights on nearly any device"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Introducing Power BI Mobile

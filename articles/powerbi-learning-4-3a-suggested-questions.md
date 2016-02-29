@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Custom Q&A Suggestions"
-   description="Learn how to add your own questions to the suggested Q&A (natural language) input box prompts."
+   pageTitle="Create Custom Q & A Suggestions"
+   description="Add your own questions to suggested Q & A dashboard prompts"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"

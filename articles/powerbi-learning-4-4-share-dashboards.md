@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Share Dashboards With Your Organization"
-   description="Share dashboards with others in your organization."
+   pageTitle="Share Dashboards with your organization"
+   description="Let others see your amazing dashboards with ease"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Share Dashboards with your organization

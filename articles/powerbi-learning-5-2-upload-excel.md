@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Upload Excel Data to Power BI Service"
-   description="See how easy it is to upload an Excel spreadsheet to the Power BI service."
+   pageTitle="Upload Excel data to Power BI"
+   description="See how easy it is to upload an Excel workbook to Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="owend"/>
 
 # Import an Excel table into Power BI

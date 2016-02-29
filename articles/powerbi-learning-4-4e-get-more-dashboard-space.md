@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get More Space on Your Dashboard"
-   description="Manage your dashboard space more effectively with Full Screen Mode."
+   pageTitle="Get more space on your dashboard"
+   description="Use Full Screen mode to manage your dashboard space more effectively"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Get More Space on Your Dashboard

@@ -1,6 +1,6 @@
 <properties
    pageTitle="Introduction to the Power BI Service"
-   description="Discover what the Power BI service can do for your organization"
+   description="Explore data and collaborate with the Power BI service"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,10 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
-# Introduction to the Power BI Service
+# Exploring Data
+
+Welcome to the **Exploring Data** section of the **Guided Learning** course for Power BI. Now that you know about Power BI Desktop, and how to get and visualize data, you're ready to explore data in the Power BI service.
+
+![](media/powerbi-learning-4-0-intro-power-bi-service/4-0_2.png)
+
+There are all sorts of things to learn in this section, and the compelling  interactivity and sharing of Power BI really shines here. So get ready for an engaging and interesting section.
+
+
+## Introduction to the Power BI Service
 
 *See what the Power BI service can do for your organization*
 

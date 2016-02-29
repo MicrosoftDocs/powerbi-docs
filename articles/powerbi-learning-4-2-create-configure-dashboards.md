@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create and Configure a Dashboard"
-   description="Configure and customize your Power BI dashboards."
+   description="Customize dashboards in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create and Configure A Dashboard
