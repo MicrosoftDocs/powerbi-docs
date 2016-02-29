@@ -1,6 +1,6 @@
 <properties
    pageTitle="Duplicate a Report Page"
-   description="Duplicate a report page and save time creating similar layouts."
+   description="Save time with similar report page layouts"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Duplicate a Report Page

@@ -1,6 +1,6 @@
 <properties
    pageTitle="Explore Your Time-Based Data"
-   description="Discover Power BI's hierarchical drill-down tools for your date fields"
+   description="Discover hierarchical drill-down tools for date fields"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Explore Time-Based Data

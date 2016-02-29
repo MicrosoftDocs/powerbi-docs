@@ -1,6 +1,6 @@
 <properties
    pageTitle="Cleaning Irregularly Formatted Data"
-   description="Learn how to get your irregularly formatted data ready for modeling"
+   description="You can tackle messy data in Power BI... see how"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Cleaning Irregularly Formatted Data
@@ -51,3 +51,11 @@ With Power BI, you can experiment with these transformations on your data, and d
 Once your data is in a format that Power BI can use, by transforming and cleansing the data, you can begin to create visuals.
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_4.png)
+
+## What's Next
+
+**Congratulations!** You've completed this section of the **Guided Learning** course for Power BI. You now know how to **get data** into Power BI Desktop, and how to *shape* or *transform* that data, so you can create compelling visuals.
+
+The next step in learning how Power BI works, and how to make it work *for you*, is to understand what goes into **modeling**. As you learned, a **dataset** is a basic building block of Power BI, but some datasets can be complex and based on many different sources of data. And sometimes, you need to add your own special touch (or *field*) to the dataset you create.
+
+You'll learn about **modeling**, and a whole lot more, in the next section. See you there!

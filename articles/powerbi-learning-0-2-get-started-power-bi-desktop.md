@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Getting Started With Power BI Desktop"
-   description="Get a tour of Power BI Desktop, and how its building blocks interact"
+   pageTitle="Getting Started with Power BI Desktop"
+   description="Get a tour of Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Getting Started With Power BI Desktop
@@ -84,4 +84,6 @@ When we pin a couple of visuals from our report, we can see them in the dashboar
 
 ![](media/powerbi-learning-course0-article2/c0a2_12.png)
 
-There’s a lot more you can do with Power BI, of course, such as sharing the Dashboards you create. We’ll look at those features in an upcoming topic.
+There’s a lot more you can do with Power BI, of course, such as sharing the dashboards you create. We'll discuss sharing later on in this course.
+
+Next, we look at a feature that can automatically create dashboards for you, just by connecting to a cloud service like Facebook, Salesforce, and many others.

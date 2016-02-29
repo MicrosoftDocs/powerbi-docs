@@ -1,6 +1,6 @@
 <properties
    pageTitle="R integration in Power BI Desktop"
-   description="Learn how to use R visuals in Power BI Desktop."
+   description="Learn how to use R visuals in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # R Visuals in Power BI

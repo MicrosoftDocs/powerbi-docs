@@ -1,6 +1,6 @@
 <properties
    pageTitle="Introduction to Modeling Your Data"
-   description="Get introduced to the modeling abilities of Power BI"
+   description="Get ready to connect many different data sources"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Introduction to Modeling Your Data

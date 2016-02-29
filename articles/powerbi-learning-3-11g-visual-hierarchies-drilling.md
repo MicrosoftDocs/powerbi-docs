@@ -1,6 +1,6 @@
 <properties
    pageTitle="Visual hierarchies and drill-down"
-   description="Learn how to drill into data hierarchies, and how to manage how levels are shared."
+   description="Learn to drill into hierarchies, and manage how levels are shared"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Visual hierarchies and drill-down behavior

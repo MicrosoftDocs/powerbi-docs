@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to Use Scatter Charts"
-   description="Learn how to create and customize scatter charts"
+   pageTitle="Scatter Charts"
+   description="Long live bubbles - see scatter charts in action"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # How to Use Scatter Charts

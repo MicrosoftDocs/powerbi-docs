@@ -1,6 +1,6 @@
 <properties
    pageTitle="Introduction to Visuals in Power BI"
-   description="Discover Power BI's hierarchical viewing tools for your date fields"
+   description="Visuals are at the heart of Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Introduction to Visuals in Power BI
