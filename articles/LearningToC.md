@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="02/29/2016"
    ms.author="v-maleh"/>
 
 <!---
@@ -32,7 +32,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
       "categoryName": "Power BI Guided Learning",
       "subSections": [
         {
-          "sectionTitle": "Getting started",
+          "sectionTitle": "Getting Started",
           "articles": [
             "powerbi-learning-0-0-what-is-power-bi",
             "powerbi-learning-0-1-intro-using-power-bi",
@@ -89,21 +89,17 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ]
         },
         {
-          "sectionTitle": "The Power BI Service",
+          "sectionTitle": "Exploring Data",
           "articles": [
             "powerbi-learning-4-0-intro-power-bi-service",
-            "powerbi-learning-4-1-publish-reports",
             "powerbi-learning-4-1a-quick-insights",
             "powerbi-learning-4-2-create-configure-dashboards",
             "powerbi-learning-4-3-asking-questions-natural-languages",
             "powerbi-learning-4-3a-suggested-questions",
             "powerbi-learning-4-4-share-dashboards",
-            "powerbi-learning-4-4a-power-bi-mobile",
             "powerbi-learning-4-4b-display-visuals-tiles-fullscreen",
             "powerbi-learning-4-4d-change-tile-details",
             "powerbi-learning-4-4e-get-more-dashboard-space",
-            "powerbi-learning-4-4g-print-and-export-dashboards-reports",
-            "powerbi-learning-4-5-manually-republish-reports",
             "powerbi-learning-4-6-install-configure-personal-gateway"
           ]
         },
@@ -118,12 +114,19 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ]
         },
         {
-          "sectionTitle": "Publishing Data and Visuals",
+          "sectionTitle": "Publishing and Sharing",
           "articles": [
+            "powerbi-learning-6-0-intro-content-packs-groups",
+            "powerbi-learning-4-1-publish-reports",
+            "powerbi-learning-4-4g-print-and-export-dashboards-reports",
+            "powerbi-learning-4-5-manually-republish-reports",
+            "powerbi-learning-4-4a-power-bi-mobile",
             "powerbi-learning-6-1-create-groups",
             "powerbi-learning-6-2-create-content-packs",
             "powerbi-learning-6-3-use-content-packs",
-            "powerbi-learning-6-4-update-content-pack"
+            "powerbi-learning-6-4-update-content-pack",
+            "powerbi-learning-6-4a-integrate-onedrive-for-business",
+            "powerbi-learning-6-5-guided-learning-completion"
           ]
         }
       ]

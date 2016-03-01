@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Content Packs"
-   description="Publish a content pack with a bundle of existing dashboards, reports, and datasets."
+   pageTitle="Build Content Packs"
+   description="Publish a content pack with a bundle of pre-designed dashboards, reports, and datasets"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create a content pack in Power BI

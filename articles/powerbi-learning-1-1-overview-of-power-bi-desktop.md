@@ -20,6 +20,7 @@
    ms.author="v-jescoo"/>
 
 # Getting Data
+
 Welcome to the second section in this **Guided Learning** course for Power BI, called **Getting Data**. This section looks at the many data-centric features and tools of Power BI, focusing on Power BI Desktop. Many of these tools also apply to the Power BI service, so you're doing double duty with your learning in this section.
 
 When you get data, sometimes it's not quite as well-formed, or *clean*, as you want it to be. So in this section you learn how to get data, how to clean it up (sometimes called *cleaning* or *transforming* data), and also learn some advanced tricks that can make your data-getting life easier.

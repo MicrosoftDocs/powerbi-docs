@@ -1,6 +1,6 @@
 <properties
    pageTitle="Integrate OneDrive for Business with Power BI"
-   description="Use the advanced collaboration tools of OneDrive for Business with your Power BI files."
+   description="Easily collaborate with OneDrive for Business and Power BI files"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Integrate OneDrive for Business with Power BI

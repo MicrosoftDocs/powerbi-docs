@@ -1,6 +1,6 @@
 <properties
    pageTitle=" Introduction to Using Excel Data in Power BI"
-   description="Get an introduction to the ways Excel and the Power BI service work together."
+   description="Excel and Power BI work beautifully together, and it's easy"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,10 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
-# Introduction to Using Excel Data in Power BI
+# Power BI and Excel
+
+Welcome to the **Power BI and Excel** section of the **Guided Learning** course for Power BI.
+
+Chances are good that you've used **Excel** before. Maybe you used Excel to create or view reports, or to build pie charts or other visuals. Or maybe you used **Power Pivot** or **Power Query** to build solutions that were a bit more technical. If so, you'll be right at home in Power BI, and so will your workbooks.
+
+This section shows you just how easy it is to bring Excel workbooks into Power BI, and demonstrates that Power BI and Excel make a great partnership.
+
+## Introduction to Using Excel Data in Power BI
 
 *Watch an introduction to the ways Excel and the Power BI service work together*
 

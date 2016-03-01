@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Update a Content Pack"
-   description="Update your content packs and push the changes to others in your organization."
+   pageTitle="Update Content Packs"
+   description="Easily push content packs changes to others in your organization"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Edit a content pack in Power BI

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use a Content Pack"
-   description="Install content packs to reuse dashboards, reports, and datasets across your organization."
+   pageTitle="Use Content Packs"
+   description="Quickly reuse dashboards, reports, and datasets across your organization"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Connect to a content pack from a group in Power BI
