@@ -25,6 +25,7 @@
 In this article you learn how to create new bar charts, pie charts, and treemaps, and customize them to suit your reports.
 
 There are two different ways to create a new visualization in Power BI Desktop:
+
 -   You can drag field names from the **Fields** pane, and drop them on the report canvas. By default your visualization appears as a table of data.
 
     ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_1.png)
