@@ -21,7 +21,7 @@
 
 # Using Power BI
 
-Now that you know the basic of Power BI, let’s jump into some hands-on experiences and a guided tour. Your video tour guide is **Will Thompson**, a Program Manager on the Power BI team at Microsoft. There are a few guest guides too, a little later on in the course.
+Now that you know the basics of Power BI, let’s jump into some hands-on experiences and a guided tour. Your video tour guide is **Will Thompson**, a Program Manager on the Power BI team at Microsoft. There are a few guest guides too, a little later on in the course.
 
 As Will explains the many things you can do with Power BI, keep in mind that all of these activities, and all the analysis you can do with Power BI, are generally follow a common flow. The **common flow** of activity in Power BI is the following:
 
