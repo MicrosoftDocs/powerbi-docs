@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Show Categories With No Data"
-   description="See how to display empty columns in your visualizations."
+   pageTitle="Show Categories with no Data"
+   description="Learn how to display empty columns in your visualizations"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="rsUMVJAIH00"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="3m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Show Categories With No Data

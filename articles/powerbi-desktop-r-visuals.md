@@ -115,12 +115,6 @@ When executing a R script that results in an error, the R visual is not plotted 
 
 This preview version of R visuals has a few limitations:
 
--  Input file encoding requirement – Input files for R visuals must be encoded as **UTF-8-BOM** to work properly with the preview version of R in Power BI. To achieve this, first add the following code to the script, directly after the initial path portion of the script: 
-
-    *fileEncoding = "UTF-8-BOM",*
-
-    Then open the input file in Notepad, select **File > Save As...** and from the **Encoding** drop-down in the **Save As** dialog, and select **UTF-8**.
-
 -  Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
 
 -  Calculation time limitation – if an R visual calculation exceeds 5 minutes the execution times out, resulting in an error.

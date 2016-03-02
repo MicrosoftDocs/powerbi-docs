@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Style Your Reports With Shapes, Text Boxes, and Images"
-   description="Learn how to add visual design elements to your reports such as shapes and images."
+   pageTitle="Shapes, text boxes, and images"
+   description="Add a personal touch, and a logo, to reports and dashboards"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="_3q6VEBhGew"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="6m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Style Your Reports With Shapes, Text Boxes, and Images

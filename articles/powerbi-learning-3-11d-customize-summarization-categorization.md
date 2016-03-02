@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Customize Visuals with Summarization and Category Options"
-   description="Define how your visualizations use data with summarization and category options."
+   pageTitle="Summarization and Category options"
+   description="Define how your visuals summarize their data"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="Co2z9b-s_yM"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="9m"/>
 
 <tags
    ms.service="powerbi"

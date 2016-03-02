@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/20/2015"
+   ms.date="02/23/2016"
    ms.author="maggies"/>
 
 # Create a group in Power BI  
@@ -23,7 +23,7 @@ Groups in Power BI bring together people and information, and connect with apps 
 
 >**NOTE:**  Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
-As the creator of the group, you are automatically the admin. As admin, you can add and delete members, and make a member an admin. All admins can create, update, and delete the dashboards, reports, and other content of the group. 
+As the creator of the group, you are automatically an admin. As admin, you can add and delete members, and make a member an admin. All admins can create, update, and delete the dashboards, reports, and other content of the group. 
 
 You can invite peers from your organization to your Power BI group, even if they aren't in Azure Active Directory.  
 
@@ -47,7 +47,11 @@ You can decide if all members of the group can modify the group's content, or if
 
     **Public:** People in your organization can see the group’s contents even if they aren’t explicitly added as members of the group. 
 
-4.  Add members by typing in the **Add group member** box, or copying and pasting multiple email addresses from Outlook. Select **Add**. 
+4.  To limit members to only viewing the group's content, under **Privacy**, select **Members can only view Power BI content**.
+
+     ![](media/powerbi-service-create-a-group-in-power-bi/PBI_GrpAddMembers.png)
+
+5.  Add members by typing in the **Add group member** box, or copying and pasting multiple email addresses from Outlook. Select **Add**. 
 
     >**NOTES**:  
     >
@@ -56,11 +60,7 @@ You can decide if all members of the group can modify the group's content, or if
     > - If some potential members don't already have a Power BI account and aren't in Azure Active Directory, Power BI sends them an email invitation to join Power BI. When they accept, you see them as members of the group. 
 
 5.  Select **Admin** or **Member** for each group member.
-	Admins can modify content in the group. By default, members can modify the content. You can change that in the next step.
-
-6.  To limit  members to just viewing the group's content, under **Privacy**, select **Members can only view Power BI content**.
-
-     ![](media/powerbi-service-create-a-group-in-power-bi/PBI_GrpAddMembers.png)
+	Admins can modify content in the group. By default, members can modify the content, unless you changed that in the previous step.
 
 7.  Select **Save**.
 

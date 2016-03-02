@@ -1,13 +1,14 @@
 <properties
-   pageTitle="Arrange the Z-order of Report Elements"
-   description="Control how your report elements overlap with each other with Z-order."
+   pageTitle="Z-order"
+   description="Control how your report elements overlap with each other"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideoId="MkiiNFI2Ve0"/>
+   featuredVideoId="MkiiNFI2Ve0"
+   courseDuration="3m"/>
 
 <tags
    ms.service="powerbi"
@@ -15,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Arrange the Z-order of Report Elements

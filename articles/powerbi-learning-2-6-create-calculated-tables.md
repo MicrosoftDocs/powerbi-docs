@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create Calculated Tables"
-   description="See how to create new calculated tables based on DAX formulas and expressions"
+   description="Build calculated tables based on DAX formulas and expressions"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="aKX1E3krl4I"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="4m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create Calculated Tables

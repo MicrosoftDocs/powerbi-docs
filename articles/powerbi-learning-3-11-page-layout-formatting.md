@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Style Your Reports With Page Layout and Formatting"
-   description="Learn how to add visual design elements to your reports such as page layout and formatting."
+   pageTitle="Page Layout and Formatting"
+   description="Display your reports and dashboards how you want them"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="XPByITauE1g"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Style Your Reports With page layout and formatting

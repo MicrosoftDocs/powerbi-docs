@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Edit Tile details and add Widgets"
-   description="Change a tile's details, such as title and link behavior, and add widgets."
+   pageTitle="Edit tile details and add widgets"
+   description="Change the title and link behavior, and add widgets"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="E2v3CTSy3BY"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="6m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Edit Tile Details

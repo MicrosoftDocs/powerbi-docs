@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Complex Interactions Between Visualizations"
-   description="Learn how changing the interaction between visualizations can create complex relationships."
+   pageTitle="Group interactions among visualizations"
+   description="Specify which visuals interact on a dashboard, and which do not"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="N_xYsCbyHPw"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="9m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create Complex Interactions Between Visualizations

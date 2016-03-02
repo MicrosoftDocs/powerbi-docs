@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to Use Map Visualizations"
-   description="Learn how to create and customize map visualizations"
+   pageTitle="Map visualizations"
+   description="Bring reports to life with interactive map visuals"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="mGkdiZF8GEM"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="11m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # How to Use Map Visualizations

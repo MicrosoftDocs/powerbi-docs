@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use a Content Pack"
-   description="Install content packs to reuse dashboards, reports, and datasets across your organization."
+   pageTitle="Use Content Packs"
+   description="Quickly reuse dashboards, reports, and datasets across your organization"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="fE9R6ydo8yk"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="7m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Connect to a content pack from a group in Power BI
@@ -27,7 +27,7 @@ In previous lessons, we already created a content pack and a group. In this less
 I start in My Workspace, ...
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03myworkspace.png)
-      
+
 ... and switch back to the Finance group I created in the earlier lesson.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03switch2group.png)

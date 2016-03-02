@@ -1,6 +1,6 @@
 <properties
    pageTitle="Optimizing Data Models"
-   description="Optimize your data to make creating and viewing visuals easier"
+   description="Make creating and viewing visuals easier with optimized models"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="tDcrfnjjlgk"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="8m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Optimizing Data Models for Better Visuals

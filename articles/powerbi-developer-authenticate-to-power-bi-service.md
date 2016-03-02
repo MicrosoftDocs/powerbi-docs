@@ -25,7 +25,7 @@ The Power BI REST API is a REST-based API that provides programmatic access to d
 
 <a name="intro"/>
 ## Introduction to authentication in Power BI
-Power BI apps are integrated with ** Azure Active Directory** (Azure AD) to provide secure sign in and authorization for your app. To integrate a Power BI app with Azure AD, you register the details about your application with Azure AD by using the Azure Management Portal. When you register an app in Azure Active Directory, the application outsources authentication to Azure AD. App registration involves telling Azure AD about your application including the URL where it is located, the URL to send replies after authentication, and the URI to identify your application. When you register a client app or web app in Azure AD, you give your app access to the Power BI REST API.
+Power BI apps are integrated with **Azure Active Directory** (Azure AD) to provide secure sign in and authorization for your app. To integrate a Power BI app with Azure AD, you register the details about your application with Azure AD by using the Azure Management Portal. When you register an app in Azure Active Directory, the application outsources authentication to Azure AD. App registration involves telling Azure AD about your application including the URL where it is located, the URL to send replies after authentication, and the URI to identify your application. When you register a client app or web app in Azure AD, you give your app access to the Power BI REST API.
 
 A Power BI app uses a **Client ID** to identify itself to Azure AD. See [Azure app client ID](#clientID). For a Web app, you also need a client secret key. See [Azure web app client secret key](#clientSecret).
 

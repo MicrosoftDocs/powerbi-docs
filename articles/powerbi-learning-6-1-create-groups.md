@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create Groups in Power BI"
-   description="Discover how to create a new group, set privacy levels, and invite your first members."
+   description="Create a new group, set privacy levels, and invite your first members"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="-MrYLjEwTrg"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create a group in Power BI
 
-In this lesson, we start by creating a *group*. Groups define a set of users who have access to specific dashboards, reports, and data.
+In this lesson, we start by creating a *group*. A **group** defines a set of users who have access to specific dashboards, reports, and data.
 
-Groups in Power BI are based on groups in Office 365, so if you've been using Office 365 groups to manage your group's email, calendar, and documents, you'll see Power BI offers the same features, and more. When you create a group in Power BI, you're actually creating an Office 365 group.
+Groups in Power BI are based on groups in Office 365, so if you've been using Office 365 groups to manage your group's email, calendar, and documents, you'll see that Power BI offers the same features, and more. When you create a group in Power BI, you're actually creating an Office 365 group.
 
 This module uses the scenario of setting up a new finance group. We'll show how to set up the group, share dashboards, reports, and datasets into the group, and add members who'll have access to the items in the group.
 

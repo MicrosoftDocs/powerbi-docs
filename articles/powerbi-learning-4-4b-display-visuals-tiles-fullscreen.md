@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display Visuals and Tiles Full-Screen"
-   description="Discover how to get a full-screen view of select report visuals and dashboard tiles."
+   pageTitle="Display visuals and tiles full-screen"
+   description="Get a big view of select report visuals and dashboard tiles"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="GSKWsDe5jIM"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="4m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Display Visuals and Tiles Full-Screen

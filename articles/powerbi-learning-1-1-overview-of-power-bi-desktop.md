@@ -1,13 +1,14 @@
 <properties
    pageTitle="Overview of Power BI Desktop"
-   description="Get acquainted with Power BI Desktop"
+   description="Get to know Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideoId="mdy-eRev6HM"/>
+   featuredVideoId="mdy-eRev6HM"
+   courseDuration="4m"/>
 
 <tags
    ms.service="powerbi"
@@ -15,10 +16,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
-# An Overview of Power BI Desktop
+# Getting Data
+
+Welcome to the second section in this **Guided Learning** course for Power BI, called **Getting Data**. This section looks at the many data-centric features and tools of Power BI, focusing on Power BI Desktop. Many of these tools also apply to the Power BI service, so you're doing double duty with your learning in this section.
+
+When you get data, sometimes it's not quite as well-formed, or *clean*, as you want it to be. So in this section you learn how to get data, how to clean it up (sometimes called *cleaning* or *transforming* data), and also learn some advanced tricks that can make your data-getting life easier.
+
+As always in this course, your learning journey follows the same path as the flow of work in Power BI. As such, let's check out **Power BI Desktop**, where it often begins.
+
+## An Overview of Power BI Desktop
 
 Power BI Desktop is a tool to connect to, clean, and visualize your data. With Power BI Desktop, you can connect to data and then model and visualize it in different ways. Most users who are working on Business Intelligence projects will spend the majority of their time using Power BI Desktop.
 

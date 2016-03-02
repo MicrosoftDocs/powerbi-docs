@@ -1,15 +1,15 @@
 <properties
    pageTitle="How to Manage Your Data Relationships"
-   description="Learn why data relationships are important and how to manage them in Power BI"
+   description="See and manage data relationships in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideo="qPQ6iXGf0Pc"
+   featuredVideoId="qPQ6iXGf0Pc"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="9m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # How to Manage Your Data Relationships

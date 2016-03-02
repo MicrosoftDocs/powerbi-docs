@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Install and Configure a Personal Gateway"
-   description="Set up a Personal Gateway to automatically update local and on-premises data sources."
+   pageTitle="Install and configure a Personal Gateway"
+   description="Use a Personal Gateway to automatically update on-premises data"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="UwSaTCke5MU"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="11m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Install and Configure a Personal Gateway
@@ -61,3 +61,15 @@ Finally, set the options under **Schedule Refresh** to activate automatic update
 ![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_7.png)
 
 And that's it. On the scheduled times, Power BI will go out to those data sources, using the credentials you provided and the connection to the computer that has your **Personal Gateway** running, and update the reports and datasets according to your schedule. The next time you go to Power BI, those dashboards, reports, and datasets will reflect data as of the most recent scheduled refresh.
+
+## What's Next
+
+**Congratulations!** You've completed this **Exploring Data** section of the **Guided Learning** course for Power BI. The Power BI service is full of interesting ways to explore data, share insights, and interact with visuals. And it's all accessible from a browser, from a service that you can connect to wherever you are.
+
+One powerful and well-known partner of Power BI is **Excel**. Power BI and Excel are designed to work well together; your workbooks will feel at home in Power BI, and it's easy to get them there.
+
+![](media/powerbi-learning-5-1-intro-excel-data/5-1_1.png)
+
+How easy? In the next section, **Power BI and Excel** you learn exactly that.
+
+See you in the next section!

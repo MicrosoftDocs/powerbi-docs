@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to Use Matrixes and Tables"
-   description="See how to create and customize matrixes and tables"
+   pageTitle="Matrixes and tables"
+   description="Sometimes a matrix or table is the visual you need"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="KEPeQ8EQwtw"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="6m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # How to Use Tables and Matrixes

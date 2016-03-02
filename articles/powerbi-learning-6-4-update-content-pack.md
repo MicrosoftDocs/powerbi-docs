@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Update a Content Pack"
-   description="Update your content packs and push the changes to others in your organization."
+   pageTitle="Update Content Packs"
+   description="Easily push content packs changes to others in your organization"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="nem2r4NpTyU"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="4m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Edit a content pack in Power BI
 
 In this lesson, we're going to edit the original content pack we created previously, and see how that updates the other people who've connected to it.
 
-I'm back in My Workspace, editing my original dashboard. 
+I'm back in My Workspace, editing my original dashboard.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04myworkspace.png)
 

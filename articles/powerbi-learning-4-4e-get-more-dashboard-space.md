@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get More Space on Your Dashboard"
-   description="Manage your dashboard space more effectively with Full Screen Mode."
+   pageTitle="Get more space on your dashboard"
+   description="Use Full Screen mode to manage your dashboard space more effectively"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="LF-Ti8FTkpQ"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Get More Space on Your Dashboard
@@ -30,7 +30,7 @@ The easiest method to display your entire dashboard in one screen is selecting t
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_1.png)
 
-Selecting the **Full Screen Mode** button puts your browser into full screen mode, removing all chrome elements from around the dashboard, and thereby increasing the amount of viewable space. 
+Selecting the **Full Screen Mode** button puts your browser into full screen mode, removing all chrome elements from around the dashboard, and thereby increasing the amount of viewable space.
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_2.png)
 

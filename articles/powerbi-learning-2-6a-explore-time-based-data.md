@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Explore Your Time-Based Data"
-   description="Discover Power BI's hierarchical drill-down tools for your date fields"
+   pageTitle="Explore your time-based data"
+   description="Discover hierarchical drill-down tools for date fields"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="MNAaHw4PxzE"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="6m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Explore Time-Based Data
@@ -36,8 +36,25 @@ Now when you click on the bars or lines in your chart, it drills down to the nex
 
 ![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_3.png)
 
-You can also drill down through all of the data shown on the visual, rather than one selected period, by using the **Drill All* double-arrow icon, also in the top right-hand corner of the visual.
+You can also drill down through all of the data shown on the visual, rather than one selected period, by using the **Drill All** double-arrow icon, also in the top right-hand corner of the visual.
 
 ![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_4.png)
 
 As long as your model has a date field, Power BI will automatically generate different views for different time hierarchies.
+
+## What's Next
+
+**Congratulations!** You've completed this section of the **Guided Learning** course for Power BI. Now that you know about *modeling* data, you're ready to learn about the fun stuff waiting in the next section: **Visualizations**.
+
+As mentioned before, this course builds your knowledge by following the common flow of work in Power BI:
+
+-   Bring data into **Power BI Desktop**, and create a report.
+-   Publish to the Power BI service, where you create new **visualizations** and build dashboards
+-   **Share** your dashboards with others, especially people who are on the go
+-   View and interact with shared dashboards and reports in **Power BI Mobile** apps
+
+![](media/powerbi-learning-course0-article1/c0a1_1.png)
+
+While you might not do all that work yourself, you'll *understand* how those dashboards were created, and how they connected to the data... and when you're done with this course, you be able to create one of your own.
+
+See you in the next section!

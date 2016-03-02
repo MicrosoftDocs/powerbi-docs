@@ -1,13 +1,14 @@
 <properties
-   pageTitle="Create Out-of-the-Box Dashboards with Cloud Services"
-   description="Easily create Dashboards with your favorite cloud services"
+   pageTitle="A quick look at the Power BI service"
+   description="Easily create dashboards in Power BI with cloud services"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideoId="2kAkUjQQD08"/>
+   featuredVideoId="2kAkUjQQD08"
+   courseDuration="9m"/>
 
 <tags
    ms.service="powerbi"
@@ -15,20 +16,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
-# Create Out-of-the-Box Dashboards with Cloud Services
+# A quick look at the Power BI service
+The previous topic introduced you to **Power BI Desktop**. As we learned, the common flow of work in Power BI is to create a report in Power BI Desktop, publish it to the Power BI service, then share it with others so they can view it in the service or on a mobile app.
 
-With Power BI, connecting to data is easy. From the Power BI service, you can simply select the Get Data button in the bottom left corner of the home screen.
+Some people begin in the Power BI service, though, so let's take a quick look at the service, and learn about an easy and popular way to quickly create visuals in Power BI: *content packs*.
+
+A **content pack** is a collection of pre-configured, ready-made visuals and reports based on specific data sources, such as Salesforce. Using a content pack is like microwaving a TV dinner or ordering a fast-food value meal: with just a few clicks and comments, you're quickly served up a collection of entrees designed to go well together, all presented in a tidy, ready-to-consume package.
+
+So let's take a quick look at content packs, the service, and how it works. We go into more detail about content packs (and the service) in upcoming sections; think of this as a bit of taste-testing to whet your appetite.
+
+## Create out-of-the-box dashboards with cloud services
+
+With Power BI, connecting to data is easy. From the Power BI service, you can simply select the **Get Data** button in the bottom left corner of the home screen.
 
 ![](media/powerbi-learning-course0-article3/c0a3_1.png)
 
-The *canvas* (the area in the center of the Power BI service) shows you the available sources of data in the Power BI service. In addition to common data sources such as Excel files, databases, or Azure data, Power BI can connect to **software services** (also called SaaS providers) such as Salesforce, Facebook, Google Analytics, and a whole assortment of other SaaS services just as easily.
+The *canvas* (the area in the center of the Power BI service) shows you the available sources of data in the Power BI service. In addition to common data sources such as Excel files, databases, or Azure data, Power BI can connect to **software services** (also called SaaS providers, or cloud services) such as Salesforce, Facebook, Google Analytics, and a whole assortment of other SaaS services just as easily.
 
 ![](media/powerbi-learning-course0-article3/c0a3_2.png)
 
-For these software services, the **Power BI service** provides a collection of ready-made visuals, pre-arranged in dashboards and reports, called **Content Packs**. Content packs get you up and running in Power BI quickly with data from the service that you select. For example, when you use the Salesforce content pack, Power BI connects to your Salesforce account (once you provide your credentials) and then populates a pre-defined collection of visuals and dashboards in Power BI.
+For these software services, the **Power BI service** provides a collection of ready-made visuals, pre-arranged in dashboards and reports called **Content Packs**. Content packs get you up and running in Power BI quickly with data from the service that you select. For example, when you use the Salesforce content pack, Power BI connects to your Salesforce account (once you provide your credentials) and then populates a pre-defined collection of visuals and dashboards in Power BI.
 
 Power BI provides content packs for all sorts of services. The following image shows the first screen of services, in alphabetical order, that is displayed when you select **Get** from the **Services** box (shown in the previous image). As you can see from the image below, there are many to choose from.
 
@@ -67,4 +77,6 @@ Select the **Schedule Refresh** option from the bottom of that menu. The Setting
 
 ![](media/powerbi-learning-course0-article3/c0a3_10.png)
 
-That’s it for now. Remember that there are many different types of data you can connect to, and all sorts of content packs, with more of each coming all the time.
+That enough for our quick look at the Power BI service. There are many more things you can do with the service, which we'll cover later in this course. Remember, too, that there are many different types of data you can connect to, and all sorts of content packs, with more of each coming all the time.
+
+Okay, let's move to the next topic, where we summarize this **Getting Started** section, and get you ready for what's next.

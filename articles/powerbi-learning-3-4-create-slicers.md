@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to Use Slicers"
-   description="See how to create and customize slicers to visually segment your data"
+   pageTitle="Slicers"
+   description="Use slicers to visually segment your data"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="ek03amXuMQw"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="7m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create and format slicers

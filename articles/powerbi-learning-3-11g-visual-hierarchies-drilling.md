@@ -1,13 +1,14 @@
 <properties
    pageTitle="Visual hierarchies and drill-down"
-   description="Learn how to drill into data hierarchies, and how to manage how levels are shared."
+   description="Learn to drill into hierarchies, and manage how levels are shared"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideoId="Fuhe0wo4gUI"/>
+   featuredVideoId="Fuhe0wo4gUI"
+   courseDuration="5m"/>
 
 <tags
    ms.service="powerbi"
@@ -15,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Visual hierarchies and drill-down behavior
@@ -38,6 +39,6 @@ There may be times when you don't want the hierarchy to be used for a visual. Yo
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_4.png)
 
-You can also expand all data elements currently visible at once, rather than selecting a single quarter, or a single year. To do that, select the *Drill all* icon in the top left of the visual, which is a double-down arrow icon. 
+You can also expand all data elements currently visible at once, rather than selecting a single quarter, or a single year. To do that, select the *Drill all* icon in the top left of the visual, which is a double-down arrow icon.
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_5.png)

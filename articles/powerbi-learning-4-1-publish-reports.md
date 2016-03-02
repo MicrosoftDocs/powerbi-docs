@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Publish Desktop Reports to the Power BI Service"
-   description="Learn how to publish your completed Power BI Desktop reports to the Power BI service"
+   pageTitle="Publish Power BI Desktop reports"
+   description="Easily get your Power BI Desktop reports into the service"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="YhkbfiWdIgc"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="2m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Publish Reports from Power BI Desktop to the Power BI Service

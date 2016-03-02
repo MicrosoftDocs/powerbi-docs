@@ -1,15 +1,15 @@
 <properties
    pageTitle="Introduction to Modeling Your Data"
-   description="Get introduced to the modeling abilities of Power BI"
+   description="Get ready to connect many different data sources"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
-   featuredVideo="VM1K15aEnm4"
+   featuredVideoId="VM1K15aEnm4"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="3m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,10 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
-# Introduction to Modeling Your Data
+# Modeling
+Welcome to the **Modeling** section of the **Guided Learning** course for Power BI. This section shows you how to get your connected data ready for use, using Power BI Desktop. Often, you'll connect to more than one data source to create your reports, need all that data to work together. Modeling is how you get it there.
+
+To create a logical connection between different data sources, you create a **relationship**. A relationship between data sources enables Power BI to know how those tables relate to one another, allowing you to create interesting visuals and reports. This section explains *relationships* (only the data-centric ones, though), and even shows you how to create relationships when none exists.
+
+As always in this course, your learning journey follows the same path as the flow of work in Power BI. We'll still be in **Power BI Desktop** for most of this section, but the work done here has direct affect on working in the Power BI service.
+
+
+## Introduction to Modeling Your Data
 
 Now that we've reviewed how to import your data and transform it, it's time to start modeling.
 

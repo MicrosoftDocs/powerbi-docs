@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to Use Gauges and Single Number Cards"
-   description="See how to create and customize gauges and single number cards"
+   pageTitle="Gauges and single-number cards"
+   description="Drive fast dashboard insights with gauges and numbers"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="otRQsFYOHfc"   
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="7m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # How to Use Gauges and Single Number Cards

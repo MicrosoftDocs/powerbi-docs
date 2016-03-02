@@ -14,9 +14,64 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/29/2016"
+   ms.date="02/26/2016"
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
+
+## February 2016 Update (2.32.4307.362)
+
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
+
+We're leaping ahead with more updates this month! February brings 29 days to the month (it's a leap year), and with it, 29 improvements to this monthly update of Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+
+### Report View:
+
+-   See Data Behind a Visual (including *Export Data to CSV*)
+-   Map improvements – plot map with latitude/longitude only
+-   KPI consumption release support (including navigation hierarchy support and KPI trend for SSAS MD)
+-   SSAS Exploration Mode: Support for **Display** folders in the **Fields** pane
+-   Ribbon layout improvements: Contextual ribbon tab for **Report Tools**
+-   New KPI visual
+-   Get reports opened to the same page that was visible when they were saved
+-   **Edit Query** option in table context menu in the Fields pane (**Report** & **Data** views)
+-   **Duplicate Page** from the ribbon
+
+
+### Data Modeling:
+
+-   Ability to define hierarchies
+-   Performance Improvement: Table & Column rename optimizations
+
+### Data Connectivity:
+
+-   **DirectQuery** support for Oracle and Teradata databases
+-   **DirectQuery** – support for creating Calculated Columns
+-   Support for publishing Analysis Services Live reports
+-   JSON File connector
+-   SQL Sentry connector
+-   Support for jagged CSV files
+-   Exchange Connector – OAuth support
+-   SharePoint List Connector – URL validation
+-   Database Connectors – ability to disable Navigation Columns in Query previews (Performance optimization)
+-   Web Connector – fine-grained scoping of Credentials
+-   **Enter Data** dialog UX enhancements
+-   SAP HANA – Support for single sign-on with Windows Authentication (Power BI Desktop only)
+-   SAP HANA – Support for **Field** labels
+-   Alphabetical sort of columns in **Choose Columns** builder
+-   Improved performance of renaming/removing/reordering columns
+-   Virtualized Preview in **Query Editor**
+-   Visual indicator for unloaded queries in **Query Editor**
+-   1-click Percentage transform
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-update-lots-of-new-authoring-features-and-a-new-power-bi-desktop-update/), where you can get more detailed information about each of these new features.
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J5gZ65Wexh4" frameborder="0" allowfullscreen></iframe>
+
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## January 2016 Update (2.31.4280.361)
 
@@ -53,10 +108,6 @@ The following video describes and shows each of these updates. You can also see 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ek8dwi33-24" frameborder="0" allowfullscreen></iframe>
-
-
->NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
-
 
 
 ## December 2015 Update (2.30.4246.181)

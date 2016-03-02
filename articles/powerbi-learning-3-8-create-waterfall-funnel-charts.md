@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to Use Waterfall and Funnel Charts"
-   description="See how to create and customize waterfall and funnel charts"
+   pageTitle="Waterfall and funnel charts"
+   description="Learn about advanced funnel and waterfall charts"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="maTzOJSRB3g"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # How to Use Waterfall and Funnel Charts

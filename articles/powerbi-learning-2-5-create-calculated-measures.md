@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create Calculated Measures"
-   description="Learn to create defined calculations, or measures, and use them to evaluate time-based functions"
+   description="Define custom calculations to evaluate time-based functions"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="yn2bXVQJLx8"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="14m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Create measures and work with time-based functions
@@ -42,4 +42,4 @@ Once you've created a new measure, it will appear in one of the tables the **Fie
 
 You can use a measure like any other table column: just drag and drop it onto the report canvas or visualization fields. Measures also integrate seamlessly with slicers, segmenting your data on the fly, which means you can define a measure once, and use it in many different visualizations.
 
-The **Calculate** DAX function is a powerful function that enables all sorts of useful calculations, which is especially useful for financial reporting and visuals. 
+The **Calculate** DAX function is a powerful function that enables all sorts of useful calculations, which is especially useful for financial reporting and visuals.

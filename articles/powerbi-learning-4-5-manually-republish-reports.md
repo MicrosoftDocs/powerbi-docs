@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Manually Republishing and Refreshing Your Data"
-   description="Learn how to manually republish your dataset and report to the Power BI service."
+   pageTitle="Manually republishing and refreshing your data"
+   description="Manually update your dataset and report"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -9,7 +9,7 @@
    tags=""
    featuredVideoId="O60a1Acdpkc"
    featuredVideoThumb=""
-   courseDuration=""/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Manually Republish and Refresh Your Data
