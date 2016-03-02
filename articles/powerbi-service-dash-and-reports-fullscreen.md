@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2015"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 
-# Display dashboards and reports in Full Screen mode (TV mode) 
+# Display dashboards and reports in Full Screen mode (TV mode)
 
 ## What is Full Screen Mode?
 
