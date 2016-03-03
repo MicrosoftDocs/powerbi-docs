@@ -226,11 +226,15 @@ The formula categories for Query Editor are the following:
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
--   [Getting Started with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471664)
--   [Query Overview with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471646)
--   [Data Sources in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643)
--   [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635)
--   [Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)
+-   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+
+-   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
+
+-   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+
+-   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
+
+-   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 
