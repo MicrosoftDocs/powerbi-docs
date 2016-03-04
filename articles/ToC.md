@@ -373,12 +373,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-sap-hana",
             "powerbi-desktop-analysis-services-tabular-data",
             "powerbi-desktop-use-directquery",
+            "powerbi-desktop-directquery-for-oracle-teradata",
             "powerbi-desktop-privacy-levels",
             "powerbi-service-facebook-connector",
             "powerbi-service-google-analytics-connector",
             "powerbi-desktop-project-online-connect-to-data"
           ],
-          "numberOfFeaturedArticles": 8
+          "numberOfFeaturedArticles": 9
         },
         {
           "sectionTitle": "Transform and shape data",
