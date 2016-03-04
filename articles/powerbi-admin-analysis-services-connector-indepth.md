@@ -14,12 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="03/04/2016"
    ms.author="asaxton"/>
 
 # Power BI Analysis Services Connector in-depth
 
 With Power BI, users in your organization can now see your on-premises SQL Server Analysis Services data and metrics in a whole new way. But before users can connect to your Analysis Services models as a data source, an Analysis Services Connector needs to be installed and configured. The connector helps make the behind-the-scenes communication from a user in Power BI to your on-premises Analysis Services server and back to Power BI quick and secure.
+
+> **Note**: The Analysis Services Connector will only be supported until March 31, 2016. If you are using the Analysis Services Connector, you should migrate to the enterprise gateway. [Learn more](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
 Installing and configuring a connector is usually done by an administrator. It requires special knowledge of your Analysis Services servers and it requires Server Administrator permissions.
 

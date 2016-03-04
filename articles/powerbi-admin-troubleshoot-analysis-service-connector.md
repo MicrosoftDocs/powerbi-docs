@@ -14,11 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="03/04/2016"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Analysis Service Connector
 
 If you're having issues using the Power BI Analysis Services Connector, be sure check out these troubleshooting tips.
+
+> **Note**: The Analysis Services Connector will only be supported until March 31, 2016. If you are using the Analysis Services Connector, you should migrate to the enterprise gateway. [Learn more](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
  **Connector installation fails** - If you run into issues during the connector installation:
 

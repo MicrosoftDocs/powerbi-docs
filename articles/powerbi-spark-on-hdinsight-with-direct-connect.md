@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Spark on HDInsight with direct connect"
-   description="Spark on HDInsight with direct connect"
+   pageTitle="Spark on HDInsight with DirectQuery"
+   description="Spark on HDInsight with DirectQuery"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -14,18 +14,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="03/04/2016"
    ms.author="asaxton"/>
 
-# Spark on HDInsight with direct connect  
+# Spark on HDInsight with DirectQuery
 
-Spark on Azure HDInsight with direct connect allows you to create dynamic reports based on data and metric you already have in your Spark cluster. With direct connect, queries are sent back to your Azure HDInsight Spark cluster as you explore the data in the report view. This experience is suggested for users who are familiar with the entities they connect to.
+Spark on Azure HDInsight with DirectQuery allows you to create dynamic reports based on data and metric you already have in your Spark cluster. With DirectQuery, queries are sent back to your Azure HDInsight Spark cluster as you explore the data in the report view. This experience is suggested for users who are familiar with the entities they connect to.
 
 > NOTE
 >  
 >-   Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
 >-   Tiles are refreshed every 15 mins.
->-   Q&A is not available for direct connect datasets.
+>-   Q&A is not available for DirectQuery datasets.
 >-   Schema changes are not picked up automatically.
 >-   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 

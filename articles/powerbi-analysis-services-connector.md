@@ -14,14 +14,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="03/04/2016"
    ms.author="asaxton"/>
 # Configure a Power BI Analysis Services Connector
 
 
-##  [**Download the Analysis Services Connector now**](http://www.microsoft.com/download/details.aspx?id=45333)
-
 Before users can connect to a SQL Server Analysis Services tabular model, a Power BI Analysis Services connector needs to be configured for the server.  If you have more than one Analysis Services server, you'll need to configure one connector per server. This is done by a server administrator. For more detailed information about how the connector works, be sure to see [Power BI Analysis Services Connector in-depth](powerbi-admin-analysis-services-connector-indepth.md).
+
+> **Note**: The Analysis Services Connector will only be supported until March 31, 2016. If you are using the Analysis Services Connector, you should migrate to the enterprise gateway. [Learn more](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
 Once the connector is configured, tabular model databases on the Analysis Services server instance will appear in the SQL Server Analysis Services page in Power BI. Creating the connection requires a Windows account and password with Server Administrator permissions for the server instance you are connecting to. Once configured, users will need to have at least Read permissions for any tabular model databases they’re connecting to.
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="03/04/2016"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from a comma separated value (.csv) file on OneDrive  
@@ -43,4 +43,7 @@ If you make changes to your .csv file on OneDrive that cannot be synchronized wi
 ## When things go wrong  
 If data in the .csv file on OneDrive is changing and those changes aren’t being reflected in Power BI, it’s most likely because Power BI cannot connect to your OneDrive. Try connecting to the file and importing it again. If you’re prompted to sign in, make sure you select **Keep me signed in**.
 
-For more help, see [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md) and [Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md).
+## See also
+[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)
+
+[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)
