@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="03/05/2016"
    ms.author="mihart"/>
 
 # Reference lines in your report
@@ -26,25 +26,25 @@ Reference lines can be added to Line, Column, Bar, Area, Waterfall, and Scatter 
 
 There are 2 ways to create references lines; one is by reference lines as you need them and the other is by using Desktop to create a reusable field in your dataset.  
 
- ## Reference lines as you need them
- 
- This example uses the Retail Analysis Sample.
- 
+## Reference lines as you need them
+
+This example uses the Retail Analysis Sample.
+
  1. With your chart selected, select the paintbrush icon to open the Formatting pane.
-    
-    ![](media/powerbi-service-reference-lines-in-your-report/formatting-pane.png) 
- 
+
+    ![](media/powerbi-service-reference-lines-in-your-report/formatting-pane.png)
+
  2. Expand the **Reference lines** area and move the slider to **On**.
- 
- 3. Add a reference line at -$75K by entering  **-75000** in the **Value** field. 
- 
+
+ 3. Add a reference line at -$75K by entering  **-75000** in the **Value** field.
+
     ![](media/powerbi-service-reference-lines-in-your-report/reference-lines.png)  
- 
- 
- ## Reusable reference lines in a dataset
- 
- Use Power BI Desktop to create a new field (column) in your dataset. Then use that field over and over again in visuals based on that dataset.
- 
+
+
+## Reusable reference lines in a dataset
+
+Use Power BI Desktop to create a new field (column) in your dataset. Then use that field over and over again in visuals based on that dataset.
+
  In this example you'll add a new field to the [Financial Sample](powerbi-sample-download-the-financial-sample-workbook.md).
 
 1. Open the **financials** table.  This is where you'll create the new field (column).

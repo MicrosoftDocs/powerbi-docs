@@ -55,7 +55,8 @@ These instructions use the Retail Analysis Sample. To follow along,  [downloa
 4.  Drag **Store** > **Chain** to the **Details** well to complete your Treemap. You can now compare last year's sales by category and chain.   
 ![](media/powerbi-service-tutorial-treemaps/treemap_addGroup_new.png)
 
-5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
+5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
+![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
 
 5.  [Add the Treemap as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md). 
 
@@ -64,14 +65,14 @@ These instructions use the Retail Analysis Sample. To follow along,  [downloa
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a Category or Details in a Treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the Treemap to a report page that already has other visuals. 
+Highlighting a Category or Details in a Treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the Treemap to a report page that already has other visuals.
 
 1.  On the Treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
     ![](media/powerbi-service-tutorial-treemaps/treemapHiliting.png)
 
 2.  In the **Last Year Sales by Chain** pie chart, select the **Fashions Direct** slice.  
     ![](media/powerbi-service-tutorial-treemaps/treemapNoOwl.gif)
-    
+
 3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](powerbi-service-visual-interactions.md)
 
 ## See also  

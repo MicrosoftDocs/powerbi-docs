@@ -83,7 +83,7 @@ With the same column chart selected, expand the Background options.
 
 3. Expand **Legend** options.
 
-  ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend.png)
+      ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend.png)
 
 3.  Turn the legend on and off by selecting the On (or Off) slider. For now, leave it **On**.
 
