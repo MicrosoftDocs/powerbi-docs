@@ -148,6 +148,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
             "powerbi-service-qr-code-for-tile",
+            "powerbi-service-add-an-image-to-a-dashboard",
             "powerbi-service-delete-or-remove-a-dashboard"
           ],
           "numberOfFeaturedArticles": 10
@@ -204,6 +205,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-interact-with-a-report-in-reading-view",
             "powerbi-service-aggregates",
             "powerbi-service-rename-a-report",
+            "powerbi-service-rename-a-report-page",
             "powerbi-service-change-report-display-settings",
             "powerbi-service-tutorial-change-report-display-settings",
             "powerbi-service-reorder-pages-in-a-report",
