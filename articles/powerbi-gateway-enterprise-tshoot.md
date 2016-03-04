@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/19/2016"
+ms.date="03/04/2016"
 ms.author="asaxton"/>
 # Troubleshooting the Power BI Gateway - Enterprise
 
@@ -87,7 +87,7 @@ Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownEr
 
 You can also look in the Event Logs > **Applications and Services Logs** > **Power BI Enterprise Gateway Service** for more details.
 
-**Error: Unable to Connect. Details: "Data source access error"**
+**Error: We encountered an error while trying to connect to <server>. Details: "We reached the enterprise gateway, but the gateway can't access the on-premises data source."**
 
 We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
 

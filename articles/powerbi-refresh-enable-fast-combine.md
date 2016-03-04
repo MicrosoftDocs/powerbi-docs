@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/02/2015"
+ms.date="03/04/2016"
 ms.author="asaxton"/>
 # Disable privacy setting in Power BI Gateway - Personal
 
