@@ -14,11 +14,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="03/05/2016"
    ms.author="mihart"/>
 # Power BI Videos
 
-We have a YouTube channel for Power BI! You can visit [our channel](https://www.youtube.com/user/mspowerbi/videos).
+We have a YouTube channel for Power BI! You can visit [our channel](https://www.youtube.com/user/mspowerbi/videos). If you're new to Power BI and good place to start is the [Analyze and Visualize data with Power BI playlist](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
 
 -   This video covers some tips for optimizing your data for Power BI. Learn the best way to format your data before uploading it to the service.
 
@@ -35,5 +35,3 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 ## See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
-
-﻿
