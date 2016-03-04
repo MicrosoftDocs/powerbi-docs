@@ -88,16 +88,6 @@ These instructions use the Opportunity Tracking Sample. To follow along, [downlo
 
 6. [Save the report](powerbi-service-save-a-report.md).
 
-## Create an advanced Funnel Chart
-
-Sometimes it's not the numbers that are important, but the trends.  Let's look at our Opportunity Count funnel chart by month and compare conversion rates (by sales stage).
-
-1.  To make this easier to see, copy the funnel chart to a blank page in the report.
-
-2.  In the **Fields** pane, drag **Fact** \> **Month** to the **Verticle Multiples** well.
-
-Instead of a perfectly-shaped funnel chart each month, we see many different shapes.  A next step might be to compare this to previous years and months to determine whether we need to focus more attention on lead generation and/or sales closure in certain times of the year. 
-
 ## Highlighting and cross-filtering
 
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
@@ -112,7 +102,7 @@ Highlighting a bar in a Funnel cross-filters the other visualizations on the rep
 
 2.  In the "Factored Revenue by Opportunity" chart, highlight the **Large** bar to cross-filter the other visualizations on the page, including the Funnel chart.
 
-3. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-visual-interactions/)
+3. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md)
 
 ## Create a Funnel Chart in Q&A
 
@@ -128,7 +118,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 
 ## See also
 
-[Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
+[Add a visualization to a report](powerbi-custom-visuals-add-to-report.md)
 
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
