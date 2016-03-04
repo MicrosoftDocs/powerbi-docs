@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="03/04/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -330,10 +330,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         		{
           "sectionTitle": "Troubleshooting",
           "articles": [
-            "powerbi-issue-i-get-an-error-refreshing-data-with-the-power-bi-personal-gateway",
-            "powerbi-issue-i-need-help-signing-up-for-power-bi",
-            "powerbi-issue-the-as-connector-wont-install-or-i-cant-connect-to-data",
-            "powerbi-issue-what-if-my-data-isnt-up-to-date",
             "powerbi-admin-forgot-your-password",
             "powerbi-admin-capturing-additional-diagnostic-information-for-power-bi",
             "powerbi-admin-alternate-email-address-for-power-bi",
