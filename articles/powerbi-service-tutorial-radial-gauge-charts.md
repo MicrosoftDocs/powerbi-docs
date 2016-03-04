@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/11/2015"
+   ms.date="03/03/2016"
    ms.author="mihart"/>
 
 # Tutorial: Radial Gauge charts in Power BI
@@ -79,7 +79,7 @@ These instructions use the Financial Sample. To follow along, [download the sam
 
 In Step 2, Power BI used the Value field to automatically set minimum (start) and maximum (end).  But what if you want to set your own maximum value?  Let's say that instead of using double the current value as the maximum possible value, you want to set it to the highest Gross Sales number in your dataset? 
 
-1.  Drag **Gross Sales** from the **Fields** list to the **Maximum Value** well.
+2.  Drag **Gross Sales** from the **Fields** list to the **Maximum Value** well.
 
 2.  Change the aggregation to **Maximum**.
 
@@ -95,7 +95,9 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 ## Use formatting options to manually set Minimum, Maximum, and Target values
 
-1. Open the formatting pane by selecting the paintbrush icon.
+1. Remove **Max of Gross Sales** from the **Maximum value** well.
+
+2.  Open the formatting pane by selecting the paintbrush icon.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_format.png)
 

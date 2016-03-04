@@ -3,7 +3,7 @@
    description="Review custom visuals for security and privacy"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="derrickv"
    manager="mblythe"
    editor=""
    tags="power bi"/>

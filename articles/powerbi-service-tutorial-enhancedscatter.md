@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/15/2015"
+   ms.date="03/03/2016"
    ms.author="mihart"/>
 
 
@@ -26,7 +26,9 @@ The Enhanced Scatter chart is just one of the Microsoft-created custom visuals a
 
 For more information, watch this video about [Enhanced Scatter](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x).
 
-Follow these steps to create an Enhanced Scatter chart that maps page clicks by number and location on a web page. Unfortunately, the dataset used in this tutorial is not available for download.
+The steps below show just one way to use the Enhanced Scatter -- to create a visual that maps page clicks by number and location on a web page. Use your own dataset and discover even more ways to use this new custom visual. 
+
+>**NOTE**: Unfortunately, the dataset used in this tutorial is not available for download.
 
 ## Start by creating a basic Bubble chart
 
@@ -50,7 +52,7 @@ I've created a typical bubble chart. The next steps demonstrate the advanced cap
 
 1. [Download the Enhanced Scatter visualization](powerbi-custom-visuals-download-from-the-gallery.md) and [add it to the report](powerbi-custom-visuals-add-to-report.md).
 
-2. I may receive a message asking me to enable custom visuals. Read the warning and select **Enable custom visuals**.
+2. If you receive a message asking you to enable custom visuals, read the warning and select **Enable custom visuals**.
 
 3. Select the Bubble chart and convert it to an Enhanced Scatter chart by selecting the Enhanced Scatter chart icon    ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg) from the **Visualizations** pane.
 
@@ -61,7 +63,7 @@ I've created a typical bubble chart. The next steps demonstrate the advanced cap
 
 ## Add shapes, images, rotation, and background
 
-The Enhanced Scatter packs even more information into a single visualization. In these steps I'll add shapes, images, rotation, and a background.
+The Enhanced Scatter packs even more information into a single visualization. In these steps, add shapes, images, rotation, and a background.
 
 >**IMPORTANT**  These visualization fields require your dataset to have measures that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this visualization field bucket).
 
@@ -69,17 +71,17 @@ The Enhanced Scatter packs even more information into a single visualization. In
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape_new.png)
 
-    These shapes are meaningful to me, but if I share this report, my colleagues will not understand what each shape represents.  Luckily, my dataset contains another field that has more intuitive graphics.
+    Ensure that your colleagues know what each shape means.  You could do this by adding a text box to the report.  Or, use graphics that are generally universally understood. 
 
 2. Remove **ShapeMeasure** from the **Shape** area and drag **LinkImageMeasure** to **Image**.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape2_new.png)
 
-3. To communicate even more information graphically, I drag **Trend** to **Rotation**.  The rotation of each image indicates whether the number of clicks is trending up or down.
+3. To communicate even more information graphically, drag **Trend** to **Rotation**.  The rotation of each image indicates whether the number of clicks is trending up or down.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_rotation.png)
 
-4. To make this chart even easier to read, I can add an image of the actual web page as a background.  In this example I'm not simply adding a single image, but a measure that controls which web page displays.
+4. To make this chart even easier to read, add an image of the actual web page as a background.  In this example, we're not simply adding a single image, but a measure that controls which web page displays.
 Remove **LinkImageMeasure** and drag **PageLayout** > **ImageMeasure** to **Backdrop**.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_backdrop.png)
@@ -94,7 +96,7 @@ Remove **LinkImageMeasure** and drag **PageLayout** > **ImageMeasure** to **Back
 
 ## Add a slicer
 
-Right now, this visualization is not useful since it's displaying total clicks for all 3 webpages onto a single webpage image.  So I'll add a Slicer to control which webpage (and data) to display.
+Right now, this visualization is not useful since it's displaying total clicks for all 3 webpages onto a single webpage image.  Add a Slicer to control which webpage (and data) to display.
 
 ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last.png)
 

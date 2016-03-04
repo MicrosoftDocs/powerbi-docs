@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="03/04/2016"
    ms.author="mihart"/>
 # Tutorial: Funnel charts in Power BI
 
@@ -102,15 +102,17 @@ Instead of a perfectly-shaped funnel chart each month, we see many different sha
 
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a bar in a Funnel cross-filters the other visualizations on the report page... and vice versa.
+Highlighting a bar in a Funnel cross-filters the other visualizations on the report page... and vice versa. To follow along, add a few more visuals to the report page that contains the Funnel chart.
 
-1.  On the Funnel, select the **Proposal** bar. This highlights the other visualizations on the page. 
+1.  On the Funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. 
 
     ![](media/powerbi-service-tutorial-funnel-charts/FunnelChartNoOwl.gif)
 
     >**TIP**:  Use CTRL to multi-select. 
 
 2.  In the "Factored Revenue by Opportunity" chart, highlight the **Large** bar to cross-filter the other visualizations on the page, including the Funnel chart.
+
+3. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-visual-interactions/)
 
 ## Create a Funnel Chart in Q&A
 

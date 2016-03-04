@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/11/2015"
+   ms.date="03/03/2016"
    ms.author="mihart"/>
 
 # Tutorial: Treemaps in Power BI  
@@ -43,19 +43,16 @@ Treemaps are a great choice:
 ## Create a basic Treemap  
 These instructions use the Retail Analysis Sample. To follow along,  [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
 
->**Note:**  
->This tutorial uses the classic report canvas.  For more information, see [Converting your reports to the new report editor](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
-
 1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
 ![](media/powerbi-service-tutorial-treemaps/treemapFirstValue_new.png)
 
 2.  Convert the chart to a Treemap.  
 ![](media/powerbi-service-tutorial-treemaps/treemapConvertTo_new.png)
 
-3.  Drag **Category** to the **Group** well. Power BI creates a Treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.
+3.  Drag **Item** > **Category** to the **Group** well. Power BI creates a Treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.
   ![](media/powerbi-service-tutorial-treemaps/treemapComplete_new.png)
 
-4.  Drag **Chain** to the **Details** well to complete your Treemap. You can now compare last year's sales by category and chain.   
+4.  Drag **Store** > **Chain** to the **Details** well to complete your Treemap. You can now compare last year's sales by category and chain.   
 ![](media/powerbi-service-tutorial-treemaps/treemap_addGroup_new.png)
 
 5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
@@ -67,16 +64,15 @@ These instructions use the Retail Analysis Sample. To follow along,  [downloa
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a Category or Details in a Treemap filters the other visualizations on the report page... and vice versa.
+Highlighting a Category or Details in a Treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the Treemap to a report page that already has other visuals. 
 
-1.  On the Treemap, select either a Category or a Chain within a Category.  This highlights the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
+1.  On the Treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
     ![](media/powerbi-service-tutorial-treemaps/treemapHiliting.png)
-
-    >**Tip:**  
-    >To multiselect, xyz. 
 
 2.  In the **Last Year Sales by Chain** pie chart, select the **Fashions Direct** slice.  
     ![](media/powerbi-service-tutorial-treemaps/treemapNoOwl.gif)
+    
+3. To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](powerbi-service-visual-interactions.md)
 
 ## See also  
 [Reports in Power BI](powerbi-service-reports.md)  
