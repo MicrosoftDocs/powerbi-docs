@@ -100,7 +100,7 @@ Add a field to the **Details** area to tell Power BI how to group the values. Th
 
       Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
 
-  For more information, see [Aggregates in reports](powerbi-service-aggregates-in-reports.md).
+  For more information, see [Aggregates in reports](powerbi-service-aggregates.md).
 
 ## See also  
  [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
