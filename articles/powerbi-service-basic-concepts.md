@@ -38,7 +38,7 @@ We'll dig into these later, but first let's review some Power BI concepts.
 
 The 3 major building blocks of Power BI are: ***dashboards***, ***reports***, and ***datasets***. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not very useful until they have data), so let's start with **datasets**.
 
-### Datasets
+## Datasets
 
 A *dataset* is something that you *import* or *connect* to. Power BI let's you connect to all sorts of datasets and bring all of it together in one place.  
 
@@ -89,6 +89,8 @@ In the navigation bar, "your" dashboards are listed under the **Dashboards** hea
 
 ![](media/powerbi-service-basic-concepts/Drawing1.png)
 
+### Dig deeper:
+
 **A dashboard can be [created from scratch](powerbi-service-create-a-dashboard.md)** -- create a new blank dashboard and then get some data. 
 
 **You, or a colleague, can create a dashboard and [share it](powerbi-service-share-unshare-dashboard.md)** -  when you accept the invitation, the shared dashboard (and any associated report and dataset) is added to your navigation bar. 
@@ -106,7 +108,9 @@ In the navigation bar, "your" dashboards are listed under the **Dashboards** hea
 ## My Workspace
 We've circled back to your Power BI dashboard and workspace. Let's take a closer look at the pieces that make up the top-level page for Power BI service; we call it **My Workspace**.
 
-## 1. **Navigation bar** (navbar)
+![](media/powerbi-service-basic-concepts/completeNewer.png)
+
+### 1. **Navigation bar** (navbar)
 
 Use the navbar to move between the Power BI building blocks: dashboards, reports, and datasets.  
 
@@ -136,7 +140,7 @@ Single-click
 -   a report to open it in Reading View
 -   a dataset to explore it
 
-## 2. **Dashboard with tiles**
+### 2. **Dashboard with tiles**
 
 Dashboards are composed of [tiles](powerbi-service-dashboard-tiles.md).  Tiles are created either in report Editing View or Q&A. A special type of tile called a [widget](powerbi-service-add-a-widget-to-a-dashboard.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
@@ -144,7 +148,7 @@ Dashboards are composed of [tiles](powerbi-service-dashboard-tiles.md).  Tiles 
 
 For more information, see **[Dashboards]** (above).
 
-## 3. **Q&A question box**
+### 3. **Q&A question box**
 
 One way to explore your data is to ask a question and let Power BI Q&A give you an answer, in the form of a visualization. Q&A cannot be used to add content to a report -- only to add content, in the form of tiles, to dashboards.
 
@@ -154,29 +158,35 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connec
 
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](powerbi-service-q-and-a.md).
 
-## 4. **Full screen, Help, and feedback**
+### 4. **Full screen, Help, and feedback**
 
 The icons in the top right corner are your resources for settings, downloads, getting help, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in **Full screen** m.  
 
 ![](media/powerbi-service-basic-concepts/help-new.png)
 
-## 5. **Dashboard title** (aka What dashboard is active?)
+### 5. **Dashboard title** (aka What dashboard is active?)
 
 It's not always easy to figure out which dashboard is active.  The dashboard title appears on the dashboard view page, on the Q&A page, in report Editing View and report Reading View, and when you open a dataset.   
 
 ![](media/powerbi-service-basic-concepts/dash-title-new.png)
 
-## 6. **Office 365 app launcher**
+### 6. **Office 365 app launcher**
 
 The app launcher is designed to help you get to your Office 365 apps.
 
 ![](media/powerbi-service-basic-concepts/basicconcepts2-newer.png)
 
-## 7. **Power BI home**
+### 7. **Power BI home**
 
 Selecting this returns you to the dashboard that you viewed most recently.
 
-### ![](media/powerbi-service-basic-concepts/version-new.png)
+   ![](media/powerbi-service-basic-concepts/version-new.png)
+   
+### 8. **Options**
+
+This area of the workspace contains icons for interacting with the dashboard.  Besides **add widget** and **share dashboard** selecting the ellipses reveals options for duplicating, printing, and refreshing the dashboard and more.
+
+   ![](media/powerbi-service-basic-concepts/options.png)
 
 ## See also
 
