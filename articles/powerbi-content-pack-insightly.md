@@ -66,7 +66,7 @@ The content pack includes the following tables with fields from the correspondin
 |Events|Opportunity Forecast Date|Projects|Teams/Members|  
 |Leads|Organizations|Tags|Users|  
 
-Many tables and reports also include unique calculated fields, such as:
+Many tables and reports also include unique calculated fields, such as:  
 - Tables with “grouped” opportunity forecast close dates, opportunity actual close dates, project completion dates, and task completion dates for analysis by month, quarter, or year.  
 - A weighted value field for opportunities (opportunity value * probability of winning).  
 - Average and total duration fields for tasks, based on start and completed dates.  
