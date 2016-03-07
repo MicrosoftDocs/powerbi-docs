@@ -527,6 +527,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-developer-overview-of-power-bi-rest-api",
             "powerbi-developer-what-you-need-to-create-an-app",
+            "powerbi-developer-sign-up-for-power-bi-service",
             "powerbi-developer-create-an-azure-active-directory-tenant",
             "powerbi-developer-register-a-client-app",
             "powerbi-developer-register-a-web-app",
