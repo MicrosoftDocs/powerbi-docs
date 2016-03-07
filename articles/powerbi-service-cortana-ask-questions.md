@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="03/04/2016"
    ms.author="mihart"/>
 
 
@@ -51,6 +51,6 @@ Any Power BI user can use Cortana to ask questions about their Power BI datasets
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Get started with Power BI Desktop](powerbi-desktop-get-started.md)
+[Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
 
 [Power BI basic concepts](powerbi-service-basic-concepts.md)

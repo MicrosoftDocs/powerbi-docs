@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"  
+   ms.date="03/05/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -75,7 +75,7 @@ From here you can:
 
 - [View in full screen Focus  mode](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
 
-- [Pin the tile to another dashboard](powerbi-service-pin-a-tile-from-one-dashboard-to-another.md)
+- [Pin the tile to another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
  ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
 
 - [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)

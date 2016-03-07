@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="From Excel workbook to stunning report in no time"
-   description="From Excel workbook to stunning report in no time"
+   pageTitle="Tutorial: From Excel workbook to stunning report in no time"
+   description="Tutorial: From Excel workbook to stunning report in no time"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="03/05/2016"
    ms.author="mihart"/>
 
 # From Excel workbook to stunning report in no time
@@ -25,7 +25,7 @@ No worries. With Power BI, you can create a stunning report in no time.
 
 In this example, we’ll upload an Excel file from a local system, create a new report, and share it with colleagues—all from within Power BI.
 
-## Preparing your data
+## Prepare your data
 
 Let’s take a simple Excel file as an example. Before you can load your Excel file into Power BI, you must organize your data in a flat table. This means that each column contains the same data type--for example, text, date, number, or currency. You should have a header row, but there should not be any column or row that displays totals.
 
@@ -51,7 +51,7 @@ On the Files page, select **Local File**. Navigate to the Excel workbook file on
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_local_file.png)
 
-## Building your report
+## Build your report
 
 After Power BI loads your Excel workbook, start building your report. In the left Navigation Pane, in the **Datasets** section, select the dataset that you just imported. Power BI displays the report canvas. On the right side are the Visualizations and Fields panes.
 
@@ -75,11 +75,11 @@ Pin all of your visuals to your Dashboard. You’re ready to share it with your 
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_report.png)
 
-## Sharing your dashboard
+## Share your dashboard
 
-You want to share your dashboard with your manager, Paula. You can share your dashboard and underlying report with colleagues who have a Power BI account. They can modify your report, but cannot save changes.
+You want to share your dashboard with your manager, Paula. You can share your dashboard and underlying report with any colleague who has a Power BI account. They can interact with your report, but cannot save changes.
 
-To share your report, at the top of the dashboard, select **Share Dashboard**.
+To share your report, at the top of the dashboard, select **Share**.
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_share_dash.png)
 
