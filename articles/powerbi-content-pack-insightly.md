@@ -59,8 +59,8 @@ Connect to the [Insightly content pack](https://app.powerbi.com/getdata/services
 
 The content pack includes the following tables with fields from the corresponding records:
 
-|  Tables | | | |
-|--|--|--|--|
+|Tables | | | |
+|---|---|---|---|
 | Contacts | Opportunities | Pipeline Stages | Task Complete Date |  
 |Custom Fields|Opportunity Close Date|Project Complete Date|Tasks|  
 |Events|Opportunity Forecast Date|Projects|Teams/Members|  
