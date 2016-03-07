@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="03/07/2016"
    ms.author="maggies"/>
 
 # Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)  
