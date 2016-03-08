@@ -198,7 +198,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-about-filters-and-highlighting-in-reports",
             "powerbi-service-how-to-use-a-report-filter",
             "powerbi-service-visual-interactions",
-            "powerbi-service-converting-your-reports-to-the-new-report-editor",
             "powerbi-service-open-a-report-in-reading-view",
             "powerbi-service-go-from-reading-view-to-editing-view",
             "powerbi-service-interact-with-a-report-in-editing-view",
