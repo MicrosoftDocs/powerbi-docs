@@ -26,7 +26,7 @@ The following webinars can help you to understand and use Power BI. After you re
 
 [03/24/16 - What's New for SQL Server 2016 Analysis Services](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-24-PowerBI-SSAS-Registration.html)
 
-[04/14/16 - The Power Of R In Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-14-Power-of-R-in-PowerBI-Registration.html)
+[04/14/16 - The Power of R In Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-14-Power-of-R-in-PowerBI-Registration.html)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
