@@ -35,7 +35,8 @@ Collaborating in Office 365 starts from the group’s workspace.
     ![](media/powerbi-service-collaborate-with-your-power-bi-group/PBI_Grp_LeftNavEllips.png)
 
     >**Note**: The first time you go to your group in Office 365, it may take some time. Give it 15 to 30 minutes, then refresh your browser.
-    >
+
+
 ## Have a group conversation
 
 1.  Select the ellipsis (…) next to your group name \> **Conversations**. 
