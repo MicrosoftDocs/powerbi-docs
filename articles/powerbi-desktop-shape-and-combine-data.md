@@ -200,15 +200,15 @@ To apply changes and close Query Editor, select Close & Apply from the **Home** 
 
 ﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
--   [Getting Started with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471664)
+-   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
 
--   [Query Overview with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471646)
+-   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
 
--   [Data Sources in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643)
+-   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 
--   [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635)
+-   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
 
--   [Common Query Tasks in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471648)  
+-   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 
