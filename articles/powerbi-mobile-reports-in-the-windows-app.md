@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="03/08/2016"
    ms.author="maggies"/>
 # Reports in the Power BI mobile app for Windows 10
 
@@ -26,7 +26,7 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
 -   In **My workspace** or in a group, tap a report.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_ReptHome.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/pbi_win10ph_reptgallry.png)
 
     >**Note**: If you [import whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), they have an Excel icon. When you tap them in the app, they open in the [Power BI service](https://powerbi.com) in a browser window.
 
