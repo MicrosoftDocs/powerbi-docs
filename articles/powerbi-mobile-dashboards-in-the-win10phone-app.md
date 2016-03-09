@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="03/08/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Power BI mobile app for Windows 10  
@@ -32,11 +32,11 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
 2.  Tap a dashboard to open it.   
 
-    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Win10Ph_DashHome.png)
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/pbi_win10ph_dashhome0316.png)
 
     Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/WPI_Win10Ph_Dash.png)
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/pbi_win10ph_dash0316.png)
 
 5.  In the dashboard, you can:
 
@@ -48,8 +48,8 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
 6.  To go back to the dashboards home page, tap the back arrow or back button.
 
-## View dashboards horizontally
-You can also view dashboards horizontally, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
+## View dashboards in landscape mode
+You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
 
 ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_iPh_Landscape.png)
 

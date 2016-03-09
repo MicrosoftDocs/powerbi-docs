@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Import PowerView and PowerPivot to Power BI"
-   description="Learn how to import your PowerView and PowerPivot worksheets into the Power BI service."
+   pageTitle="Import Power View and Power Pivot to Power BI"
+   description="Excel workbooks with Power tools work seamlessly with Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="owend"/>
 
 # Import Excel files with data models and Power View sheets

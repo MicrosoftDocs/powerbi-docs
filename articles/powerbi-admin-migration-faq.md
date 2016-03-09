@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/28/2015"
+ms.date="03/04/2016"
 ms.author="asaxton"/>
 # Power BI for Office 365 migration frequently asked questions (FAQ)
 

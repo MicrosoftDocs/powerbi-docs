@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="03/04/2016"
    ms.author="mihart"/>
 
 # Change how a chart is sorted in a Power BI report
 
-In Power BI, you can sort charts alphabetically by the names of the categories in the chart, or by the numeric 
+In Power BI, you can sort charts alphabetically by the names of the categories in the chart, or by the numeric
 values of each category. For example, this chart is sorted by store name.
 
 ![](media/powerbi-service-change-how-a-chart-is-sorted/PBI_ChartSortCategory.png)
@@ -36,11 +36,11 @@ It's easy to sort it from highest to lowest sales per square feet instead.
 
 ##  Sorting using other criteria
 
-Sometimes, you want to sort your visual using a different column or other criteria.  For example, you might want 
+Sometimes, you want to sort your visual using a different column or other criteria.  For example, you might want
 to sort by month (and not in alphabetical order) or you might
 want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  Here are several solutions:
 
--   In Power BI Desktop, [use the Data Tools Modeling tab to sort by a different column](powerbi-desktop-sort-by-column.md). 
+-   In Power BI Desktop, [use the Data Tools Modeling tab to sort by a different column](powerbi-desktop-sort-by-column.md).
 
 -   In Excel, if you own the dataset, add a new column that concatenates the month name and number. Then refresh or re-import the dataset to see the new column in the Fields area.
 

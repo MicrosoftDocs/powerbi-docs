@@ -14,10 +14,22 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/11/2016"
+   ms.date="03/01/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## February 2016
+
+### Android
+View dashboards in [landscape mode on Android phones](powerbi-mobile-dashboards-in-the-android-app.md#view-dashboards-horizontally). 
+
+### Windows 10 mobile
+View dashboards in [landscape mode in Windows 10 phones](powerbi-mobile-dashboards-in-the-win10phone-app.md#view-dashboards-horizontally).
+
+View [reports on your Windows 10 phone](powerbi-mobile-reports-in-the-windows-app.md).
+
+Faster time to [insights on your Windows 10 mobile dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md): Share a tile snapshot or open a report directly from the dashboard.
 
 ## January 2016
 All of the January improvements are already in the new [Power BI app for Windows 10 phones](powerbi-mobile-win10phone-app-get-started.md), released in December 2015. Now they're rolling out to the other Power BI apps for mobile devices. Read the blog post about these improvements.

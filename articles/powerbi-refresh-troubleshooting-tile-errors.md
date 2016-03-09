@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/02/2015"
+ms.date="03/04/2016"
 ms.author="asaxton"/>
 # Troubleshooting tile errors
 
@@ -67,5 +67,5 @@ If you are still having an issue, please [contact support](https://support.power
 
 [Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise (Preview)](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
 

@@ -1,6 +1,6 @@
 <properties
    pageTitle="Connect OneDrive for Business to Power BI"
-   description="Connect your OneDrive for Business workbook to easily import or connect your Excel files."
+   description="OneDrive for Business and Excel files are a match made in the cloud"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
+   ms.date="02/29/2016"
    ms.author="owend"/>
 
 # Connect OneDrive for Business to Power BI

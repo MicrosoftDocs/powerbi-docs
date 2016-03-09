@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="03/04/2016"
    ms.author="davidi"/>
 # Getting started with Power BI Desktop
 
@@ -25,7 +25,7 @@ Prefer to watch instead of read? Feel free to [take a look at our getting starte
 
 ![](media/powerbi-desktop-getting-started/PBI_GettingStartedSplash_resized.png)
 
-Power BI Desktop lets you create a collection of queries, data connections, and reports that can easily be shared with others. Power BI Desktop integrates proven Microsoft technologies – the powerful Query engine, data modeling, and visualizations – and works seamlessly with the online [**Power BI service**](https://preview.powerbi.com/).
+Power BI Desktop lets you create a collection of queries, data connections, and reports that can easily be shared with others. Power BI Desktop integrates proven Microsoft technologies – the powerful Query engine, data modeling, and visualizations – and works seamlessly with the online [**Power BI service**](https://app.powerbi.com/).
 
 With the combination of **Power BI Desktop** (where analysts and others can create powerful data connections, models and reports) and the [**Power BI service**](https://preview.powerbi.com/) (where Power BI Desktop reports can be shared so users can view and interact with them), new insights from the world of data are easier to model, build, share, and extend.
 
@@ -347,15 +347,15 @@ There are all sorts of compelling data-related mash-ups and visualizations you c
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
--   [Query Overview with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471646)
+-   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
 
--   [Data Sources in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643)
+-   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 
--   [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635)
+-   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
 
--   [Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)
+-   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Common Query Tasks in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471648)   
+-   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 

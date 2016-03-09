@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="03/04/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -88,6 +88,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-at-internet",
             "powerbi-content-pack-azure-mobile",
             "powerbi-content-pack-azure-search",
+            "powerbi-content-pack-azure-security-center",
             "powerbi-content-pack-bing",
             "powerbi-content-pack-circuit-id",
             "powerbi-content-pack-content-pack",
@@ -97,6 +98,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
             "powerbi-content-pack-azure-enterprise",
+            "powerbi-content-pack-microsoft-dynamics-ax",
             "powerbi-content-pack-microsoft-dynamics-crm",
             "powerbi-content-pack-microsoft-dynamics-marketing",
             "powerbi-content-pack-microsoft-dynamics-nav",
@@ -148,6 +150,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
             "powerbi-service-qr-code-for-tile",
+            "powerbi-service-add-an-image-to-a-dashboard",
             "powerbi-service-delete-or-remove-a-dashboard"
           ],
           "numberOfFeaturedArticles": 10
@@ -204,6 +207,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-interact-with-a-report-in-reading-view",
             "powerbi-service-aggregates",
             "powerbi-service-rename-a-report",
+            "powerbi-service-rename-a-report-page",
             "powerbi-service-change-report-display-settings",
             "powerbi-service-tutorial-change-report-display-settings",
             "powerbi-service-reorder-pages-in-a-report",
@@ -330,10 +334,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         		{
           "sectionTitle": "Troubleshooting",
           "articles": [
-            "powerbi-issue-i-get-an-error-refreshing-data-with-the-power-bi-personal-gateway",
-            "powerbi-issue-i-need-help-signing-up-for-power-bi",
-            "powerbi-issue-the-as-connector-wont-install-or-i-cant-connect-to-data",
-            "powerbi-issue-what-if-my-data-isnt-up-to-date",
             "powerbi-admin-forgot-your-password",
             "powerbi-admin-capturing-additional-diagnostic-information-for-power-bi",
             "powerbi-admin-alternate-email-address-for-power-bi",
@@ -377,12 +377,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-sap-hana",
             "powerbi-desktop-analysis-services-tabular-data",
             "powerbi-desktop-use-directquery",
+            "powerbi-desktop-directquery-for-oracle-teradata",
             "powerbi-desktop-privacy-levels",
             "powerbi-service-facebook-connector",
             "powerbi-service-google-analytics-connector",
             "powerbi-desktop-project-online-connect-to-data"
           ],
-          "numberOfFeaturedArticles": 8
+          "numberOfFeaturedArticles": 9
         },
         {
           "sectionTitle": "Transform and shape data",
@@ -530,6 +531,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-developer-overview-of-power-bi-rest-api",
             "powerbi-developer-what-you-need-to-create-an-app",
+            "powerbi-developer-sign-up-for-power-bi-service",
             "powerbi-developer-create-an-azure-active-directory-tenant",
             "powerbi-developer-register-a-client-app",
             "powerbi-developer-register-a-web-app",

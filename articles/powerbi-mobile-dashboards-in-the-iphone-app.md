@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="03/01/2016"
    ms.author="maggies"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
@@ -55,8 +55,8 @@ In the iPhone app for Microsoft Power BI for iOS, you see and can interact with 
 
 6.  Tap the back arrow in the upper-left corner to get back to the list of dashboards.
 
-## View dashboards horizontally
-You can also view dashboards horizontally, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles as they are in the Power BI service.
+## View dashboards in landscape mode
+You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles as they are in the Power BI service.
 
 ![](media/powerbi-mobile-dashboards-in-the-iphone-app/PBI_iPh_Landscape.png)
 

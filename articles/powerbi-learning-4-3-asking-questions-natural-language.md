@@ -1,6 +1,6 @@
 <properties
    pageTitle="Ask Questions of Your Data With Natural Language"
-   description="Ask questions and create new visuals with natural language."
+   description="Use Q & A to get lightning-fast insights and visuals"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/19/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Ask Questions of Your Data With Natural Language

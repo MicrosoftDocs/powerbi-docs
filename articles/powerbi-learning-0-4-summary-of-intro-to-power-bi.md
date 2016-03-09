@@ -27,7 +27,7 @@ Let’s do a quick review of what we covered in this first section.
 
 Power BI consists of three main elements – the **Power BI Desktop**, the **Power BI service**, and **Power BI Mobile** – which all work collectively to let you create, interact with, share, and consume your data how you want it.
 
-![](media/powerbi-learning-course0-article4/c0a4_1.png)
+![](media/powerbi-learning-0-4-summary-of-intro-to-power-bi/c0a4_1.png)
 
 We discussed the basic building blocks in Power BI too, which are:
 
@@ -56,7 +56,7 @@ We mentioned this before, but it's worth restating: this course builds your know
 -   **Share** your dashboards with others, especially people who are on the go
 -   View and interact with shared dashboards and reports in **Power BI Mobile** apps
 
-![](media/powerbi-learning-course0-article1/c0a1_1.png)
+![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
 You might not do all that work yourself - some people will only view dashboards in the service that were created by someone else. That's fine, but because *you'll* go through all the sections in this course, you'll *understand* how those dashboards were created, and how they connected to the data... and you might even decide to create one of your own.
 

@@ -92,7 +92,7 @@ You get the user’s **tiles** with a GET web request using the  REST Uri below.
 
 GET REST Uri
 
-     GET https://api.powerbi.com/beta/myorg/{dashboard_id}/tiles
+     GET https://api.powerbi.com/beta/myorg/dashboards/{dashboard_id}/tiles
 
 JSON Response
 

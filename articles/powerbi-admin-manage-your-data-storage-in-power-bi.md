@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/04/2015"
+   ms.date="03/04/2016"
    ms.author="asaxton"/>
 # Manage your data capacity in Power BI
 

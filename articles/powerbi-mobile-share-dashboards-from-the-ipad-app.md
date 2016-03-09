@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="03/07/2016"
    ms.author="maggies"/>
 
 # Share dashboards from the iPad app (Power BI for iOS)
@@ -23,15 +23,15 @@ Invite colleagues by sharing links to dashboards and [snapshots of tiles](power
 
 ## Share a dashboard with colleagues
 
-1.  Tap the **Share ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/PBI_iPad_ShareIcon.png) **icon in the upper-right corner of your dashboard.
+1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) icon in the upper-right corner of your dashboard.
 
-2.  Type email addresses and a message to accompany your dashboard invitation.
+2.  Tap **Invite a colleague**, then type email addresses and a message to accompany your dashboard invitation.
 
 3.  To allow resharing, leave **Allow recipients to share this dashboard** selected.
 
-    **Note**   Resharing allows your colleagues to forward the email invitation to other colleagues, either through the web or the mobile apps.
+    >**Note**   Resharing allows your colleagues to forward the email invitation to other colleagues, either through the web or the mobile apps. See [Notes about sharing dashboards](powerbi-mobile-share-dashboards-from-the-ipad-app.md#notes-about-sharing-dashboards), below.
 
-4.  Tap the green check mark in the upper-right corner.
+4.  Tap **Send** in the upper-right corner.
 
 Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in one of the mobile apps, it's added to their Power BI.
 
@@ -39,7 +39,7 @@ Your colleagues get an email invitation with a direct link to the dashboard. The
 
 You can only unshare a dashboard if you're the dashboard owner.
 
-1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/PBI_iPad_ShareIcon.png) icon in the upper-right corner of your dashboard.
+1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) icon in the upper-right corner of your dashboard.
 
     You see the list of colleagues with whom you've shared this dashboard. Below their names are these words:
 

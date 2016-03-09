@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/16/2016"
+   ms.date="03/04/2016"
    ms.author="mihart"/>
 
 # Tutorial: Download and start using the Power BI samples  
@@ -62,4 +62,4 @@ the [Tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-
 
 [Samples for Power BI service](powerbi-sample-datasets.md)
 
-[Data sources for Power BI](powerbi-service-get-date.md)
+[Data sources for Power BI](powerbi-service-get-data.md)

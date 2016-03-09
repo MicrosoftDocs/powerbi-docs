@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Tutorial: use Power BI Q&A with the Retail Analysis sample"
-   description="Tutorial: use Power BI Q&A with the Retail Analysis sample"
+   pageTitle="Tutorial: Get started with Power BI Q&A"
+   description="Tutorial: get started with Power BI Q&A with the Retail Analysis sample"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="03/05/2016"
    ms.author="mihart"/>
 # Tutorial: use Power BI Q&A with the Retail Analysis sample
 
@@ -35,13 +35,13 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_2.png)
 
-4. Select the area chart and review the settings in the **Fields** pane.  The report creator built this chart by selecting these 3 values and organizing them in the **Values** and **Axis** wells.
+4. Select the area chart and review the settings in the **Fields** pane.  The report creator built this chart by selecting these 3 values (**FiscalMonth**, **This Year Sales**, **Las Year Sales**) and organizing them in the **Values** and **Axis** wells.
 
 	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_3.png)
 
 How would we go about creating this same line chart using Q&A?
 
-1.  Navigate back to your Power BI workspace.
+1.  Navigate back to your the Retail Analysis Sample dashboard.
 
 2.  Using natural language, type something like this into the question box:
 

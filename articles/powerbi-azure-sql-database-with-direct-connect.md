@@ -14,11 +14,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="03/04/2016"
    ms.author="asaxton"/>
 # Azure SQL Database with DirectQuery
 
-Azure SQL Database with direct connect allows you to create dynamic reports based on data and metrics you already have in your Azure SQL Database. With DirectQuery, queries are sent back to your Azure SQL Database as you explore the data in the report view. This experience is suggested for users who are familiar with the databases and entities they connect to.
+Azure SQL Database with DirectQuery allows you to create dynamic reports based on data and metrics you already have in your Azure SQL Database. With DirectQuery, queries are sent back to your Azure SQL Database as you explore the data in the report view. This experience is suggested for users who are familiar with the databases and entities they connect to.
 
 Notes:
 

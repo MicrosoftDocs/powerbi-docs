@@ -1,6 +1,6 @@
 <properties
    pageTitle="Print and export dashboards and reports"
-   description="Learn how you can print dashboards and reports from Power BI."
+   description="Get your hands on printed reports and dashboards"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="02/29/2016"
    ms.author="v-jescoo"/>
 
 # Print and export Power BI dashboards
@@ -42,4 +42,4 @@ You can also print or export directly from a report. When viewing a report in th
 
 ![](media/powerbi-learning-4-4g-print-and-export-dashboards-reports/4-4g_4.png)
 
-And just like with a dashboard, you can export data from a visual within a report, too, by selecting the export button on a visual. 
+And just like with a dashboard, you can export data from a visual within a report, too, by selecting the export button on a visual.

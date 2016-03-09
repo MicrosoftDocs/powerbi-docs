@@ -14,37 +14,38 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2015"
+   ms.date="03/03/2016"
    ms.author="mihart"/>
 
 # Interact with a report in Reading View in Power BI
 
-Reports in Power BI Reading View are very interactive. When you highlight a value in one visualization, it can change the values in the rest of the page. You can filter values on a page, and change the way values are sorted in a visualization. It's a great way to play with and get to know your data.
+Reading view is not as interactive as Editing view, but it still gives you many options for exploring the data. Which comes in useful when viewing reports [shared with you](powerbi-service-share-unshare-dashboard.md), since these can only be opened in Reading View.
 
-Reports [shared with you](powerbi-service-share-unshare-dashboard.md) can only be opened in Reading View, not Editing View.
+In Reading View you can cross-highlight and cross-filter visuals on a page.  Simply highlight or select  a value in one visuals and instantly see its impact on the other visuals. Use the Filter pane to add and modify filters on a report page, and change the way values are sorted in a visualization. Reading view is a fun and safe way to play with and get to know your data.
 
 
-- **Highlight the related visualizations on a page**.
+**Cross-highlight the related visualizations on a page**
 
-    The visualizations on a single report page are all "connected" to each other.  What this means is that if you select one or more values in one visualization, other visualizations will change based on that selection.
+The visualizations on a single report page are all "connected" to each other.  What this means is that if you select one or more values in one visualization, other visualizations will change based on that selection.
 
-    ![](media/powerbi-service-interact-with-a-report-in-reading-view/pagefilter3b.gif)
+![](media/powerbi-service-interact-with-a-report-in-reading-view/pagefilter3b.gif)
 
-    **NOTE**: To select more than one element in a visualization, hold down the CTRL key.
+>**NOTE**: To select more than one element in a visualization, hold down the CTRL key.
 
-- **Hover over visual elements to see the details**.
+**Hover over visual elements to see the details**.
 
-    ![](media/powerbi-service-interact-with-a-report-in-reading-view/amarillachart.png)
+![](media/powerbi-service-interact-with-a-report-in-reading-view/amarillachart.png)
 
-- **Sort the data in a visualization**  
 
-    Select empty space inside the visualization and right-click to open **Sort by**. Select the dropdown arrow to choose which field to sort by or select the AZ icon to switch between ascending and descending.    
+**Sort the data in a visualization**  
 
-    ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_ChangeChartSort.gif) 
+Select empty space inside the visualization and select the ellipses (...) to open **Sort by**. Select the dropdown arrow to choose which field to sort by or select the AZ icon to switch between ascending and descending.    
 
-- **Interact with filters**
+![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_ChangeChartSort.gif) 
 
-    If the report author added filters to a page in a report, you can interact with them in Reading View.
+**Interact with filters**
+
+If the report author added filters to a page in a report, you can interact with them in Reading View. Changes you make will not be saved with the report.
 
  1.  Select the Filter icon in the upper-right corner.
 
@@ -58,20 +59,23 @@ Reports [shared with you](powerbi-service-share-unshare-dashboard.md) can only b
 
     ![](media/powerbi-service-interact-with-a-report-in-reading-view/IV1980RZ.png)
 
-- **Pop out a visualization**
+4. Make changes to the filters and see how the visuals are impacted.
 
-    Hover over a visualization and select the Pop-out icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PopOutIcon.jpg). When you pop-out a visualization, it expands to fill the entire report canvas.
+**Zoom in on individual visuals**
 
-  ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PoppedOut.jpg)
+Hover over a visualization and select the **Focus mode** icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PopOutIcon.jpg). When you view a visualization in Focus mode, it expands to fill the entire report canvas.
 
-  For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
+![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PoppedOut.jpg)
 
-- **Adjust the display dimensions**  
-   Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  If so, you can do the following:
+For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md) and [About filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
+**Adjust the display dimensions**  
+Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  If so, you can do the following:
+
+ - Dynamic: let Power BI pick the optimal dimensions based on window size
  - Fit to Page: scale content to best fit the page
- - Fit to Width: Scale content to the width of the page
- - Actual Size: Display content at full size  
+ - Fit to Width: scale content to the width of the page
+ - Actual Size: display content at full size  
 
   In Reading View, the display option you select is temporary - it is not saved when you close the report.
 
@@ -82,4 +86,4 @@ Reports [shared with you](powerbi-service-share-unshare-dashboard.md) can only b
 
 [Reports in Power BI](powerbi-service-reports.md)
 
- [About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
+[About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
