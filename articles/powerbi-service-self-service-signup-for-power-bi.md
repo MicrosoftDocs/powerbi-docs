@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/02/2016"
+   ms.date="03/09/2016"
    ms.author="asaxton"/>
 # Self-service sign up for Power BI
 
@@ -69,13 +69,16 @@ To sign up for Power BI, you can do the following.
     
 8.	You will then be taken to https://app.powerbi.com and you can begin using Power BI as a free user.
 
+### What this looks like within the service
+
 When you are in the service, you can verify that you have a free account by going to the **gear** icon and selecting **Manage personal storage**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup7.png)
  
-## Power BI Pro 60 Day Trial
+## Power BI Pro 60 day trial
 
 After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. [Learn more](powerbi-free-trial-for-power-bi-pro.md)
+
 You will get an option to try Pro for free whenever you try to use a Pro feature. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial1.png)
@@ -84,15 +87,17 @@ Then you can select **Start trial**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
  
+### What this looks like within the service
+
 When you are in the service, you can verify that you have a Pro trial account by going to the **gear* icon and selecting **Manage personal storage**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
 
 ## Purchasing Power BI Pro as an individual
 
-You can purchase Power BI Pro from the start, or can choose to upgrade to Pro after your free trial has ended. If your account is part of an organization, you can purchase Power BI Pro as an individual if your organization has not disabled individual sign ups.
+You can purchase Power BI Pro from the start, or can choose to upgrade to Pro after your free trial has ended. If your account is part of an organization, you can purchase Power BI Pro as an individual if your organization has not disabled individual purchases.
 
-To purchase Power BI Pro, you can do the following.
+To purchase Power BI Pro as an individual, you can do the following.
 
 1.	Browse to [powerbi.com](https://www.powerbi.com).
 
@@ -106,11 +111,13 @@ To purchase Power BI Pro, you can do the following.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro2.png)
 
-    > **Note**: If you are interested in the option to purchase for your team or organization, you can read about purchasing Power BI Pro for your organization. [Learn more]()
+    > **Note**: If you are interested in the option to purchase for your team or organization, you can read about purchasing Power BI Pro for your organization. [Learn more](powerbi-admin-purchasing-power-bi-pro.md)
 
 5.	If you aren’t already signed into Power BI, you will need to sign in with your Power BI (free) account.
 
 6.	You will need to provide information to make the purchase.
+
+### What this looks like within the service
 
 When you are in the service, you can verify that you have a Pro account by going to the **gear** icon and selecting **Manage personal storage**.
 
@@ -124,7 +131,7 @@ When trying to sign up for Power BI, you may encounter the following message.
  
 ![](media/powerbi-service-self-service-signup-for-power-bi/allowadhocsubscriptionfalse.png)
 
-This could be because your organization has disabled individual sign ups. It could also be because you purchased Office 365 through a partner. [Learn more](powerbi-admin-syndication-partner).
+This could be because your organization has disabled individual sign ups. It could also be because you purchased Office 365 through a partner. [Learn more](powerbi-admin-syndication-partner.md).
 
 If your organization has disabled individual sign ups, you will need to work with your IT group to get a Power BI license assigned to your account in order to continue.
 
