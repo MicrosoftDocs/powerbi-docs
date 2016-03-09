@@ -59,7 +59,7 @@ If you decide later that you want to add more licenses, you can go back to **Add
 
 ![](media/powerbi-admin-powerbi-free-in-your-organization/change-license-quantity.png)
  
-You can now assign those licenses to your users. [Learn more](working with licenses doc).
+You can now assign those licenses to your users. [Learn more](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
 
 ## Enable, or disable, individual user sign up in Azure Active Directory
 
@@ -85,3 +85,5 @@ The AAD setting that controls this is **AllowAdHocSubscriptions**. Most tenants 
 ## See also
 
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)
+
+[Sign up for Power BI (free) with a custom Azure Active Directory tenant](powerbi-admin-free-with-custom-azure-directory.md)
