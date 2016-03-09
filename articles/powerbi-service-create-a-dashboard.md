@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/16/2016"
+   ms.date="03/07/2016"
    ms.author="mihart"/>
 
 # Create a Power BI dashboard
@@ -35,9 +35,9 @@ This method creates a new, empty, dashboard.
 
 	![](media/powerbi-service-create-a-dashboard/PBI_CreateDashNewName.png)
 
-  The new dashboard is created.  See it listed under **Dashboards** in your left navigation pane.
+    The new dashboard is created.  See it listed under **Dashboards** in your left navigation pane.
 
-  ![](media/powerbi-service-create-a-dashboard/new_dash.png)
+    ![](media/powerbi-service-create-a-dashboard/new_dash.png)
 
 3. Select the new dashboard to make it the active dashboard.  Notice that it's blank -- we haven't added any content yet.
 
