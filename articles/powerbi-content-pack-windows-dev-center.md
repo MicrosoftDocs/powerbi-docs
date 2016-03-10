@@ -71,12 +71,14 @@ The Dev Center Power BI content pack includes analytics data for your app and IA
 ## System requirements
 <a name="Requirements"></a>
 
-This content pack requires at least one at least one app published to the Windows Store and a Windows Dev Center account (more details [here](https://msdn.microsoft.com/en-us/windows/uwp/publish/manage-account-users)).
+This content pack requires at least one at least one app published to the Windows Store and a Windows Dev Center account (more details [here](https://msdn.microsoft.com/windows/uwp/publish/manage-account-users)).
 
 ## Finding parameters
 <a name="FindingParams"></a>
 
-You can find the application ID for an app by going to the App identity page under App management. The application ID is on the end of your URL for Windows 10 Store, https://www.microsoft.com/store/apps/</application Id>/. 
+You can find the application ID for an app by going to the App identity page under App management. 
+
+The application ID is on the end of your URL for Windows 10 Store, https://www.microsoft.com/store/apps/ **{applicationId}** 
 
 ### See also
 
