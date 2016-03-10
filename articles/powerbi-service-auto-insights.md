@@ -24,6 +24,8 @@ Have a new dataset and not quite sure where to start?  Need to build a dashboard
 
 Run Quick Insights to generate interesting interactive visualizations based on your data.  
 
+>**NOTE**: Quick Insights are only available not available in Power BI Desktop.
+
 ## Run Quick Insights on a dataset
 
 1. In the left navigation pane, under **Datasets** select the ellipses (...) and choose **Quick Insights**.
@@ -59,7 +61,7 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 
 ## See also
 
-[Optimize your data for Power BI Auto Insights](powerbi-service-auto-insights-optimize.md)
+[Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

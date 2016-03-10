@@ -40,11 +40,11 @@ Some uses for Full Screen Mode are:
     ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_hoverTile.jpg)
 
 2. Your tile fills the report canvas. Now view the tile in Full Screen Mode by selecting the Full Screen icon.
-
     ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_InFocusFilters.jpg)
 
-3. In Full Screen Mode, the tile fills your entire screen.  
-  ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_tv_mode.png)
+3. In Full Screen Mode, the tile fills your entire screen.
+
+    ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_tv_mode.png)
 
 4. To exit Full Screen Mode, select the **Exit Full Screen** icon located in the bottom right corner of the screen.
 

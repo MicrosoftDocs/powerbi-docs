@@ -61,6 +61,11 @@ To follow along, sign in to Power BI and select **Get Data > Samples > Retail An
 
 6.  When you have the KPI as you want it, [pin it to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md).
 
+
+KPIs are also available on your mobile devices – keeping you always connected to your businesses heartbeat
+
+
+
 ##  See also
 Please read our blog post about KPIs <embed KPI blog link>
 
