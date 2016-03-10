@@ -249,6 +249,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-tutorial-enhancedscatter",
             "powerbi-service-tutorial-filled-maps-choropleths",
             "powerbi-service-tutorial-funnel-charts",
+            "powerbi-service-tutorial-kpi",
             "powerbi-service-tutorial-radial-gauge-charts",
             "powerbi-service-tutorial-scatter",
             "powerbi-service-tutorial-slicers",

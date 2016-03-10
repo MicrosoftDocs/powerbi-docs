@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/07/2016"
+   ms.date="03/10/2016"
    ms.author="mihart"/>
 
 # KPIs in Power BI
@@ -47,7 +47,7 @@ To follow along, sign in to Power BI and select **Get Data > Samples > Retail An
     
 3. Add a goal. Add last years sales as the goal. Drag **Total Units Last Year** to the **Target goals** field. 
 
-    ![](\media\powerbi-service-tutorial-kpi\kpi.png)
+    ![](\media\powerbi-service-tutorial-kpi\kpi-new.png)
 
 4.  Optionally, format the KPI by selecting the paintbrush icon to open the Formatting pane.
  
