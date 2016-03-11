@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="03/10/2016"
    ms.author="mihart"/>
 # Reports in Power BI
 
@@ -42,8 +42,6 @@ From the table of contents (on the left side of this browser page), expand **Rep
 - Don't forget that [creating a report](powerbi-service-create-a-new-report.md)  requires a [dataset](powerbi-service-get-data.md).  
 
 - Make sure you understand the difference between [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). 
-
-- Did you participate in the Power BI Preview?  [Find out how to upgrade to the new report canvas](powerbi-service-converting-your-reports-to-the-new-report-editor.md).
 
 - Familiarize yourself with the report editor by [Taking a tour](powerbi-service-the-report-editor-take-a-tour.md).
 

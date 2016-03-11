@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="03/10/2016"
    ms.author="mihart"/>
 
 # Optimize your data for Power BI Quick Insights
@@ -27,7 +27,7 @@ Want to improve Quick Insights results?  Try these:
 - Avoid columns with duplicate information.  This takes valuable time away from searching for meaningful patterns.  For example, one column with state names spelled out and another column with state name abbreviations.
 
 
-## See also
+### See also
 
 [Power BI Quick Insights](powerbi-service-auto-insights.md)
 

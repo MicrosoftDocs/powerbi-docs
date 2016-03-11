@@ -86,7 +86,7 @@ Slicers are a great choice:
 
     ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sort2.png)
 
-  ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sorted.png)
+    ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sorted.png)
 
 
 ## See also  
