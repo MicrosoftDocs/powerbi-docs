@@ -52,7 +52,7 @@ Content packs contain all of the data and reports you need already prepared for 
 ## Databases
 ![](media/powerbi-service-get-data/pbi_getdata_databases.png)
 
-**Databases in the Cloud** – From the Power BI service, you can connect live to Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight, and SQL Server Analysis Services using DirectQuery. Connections from Power BI to these databases are live, that is, when you’ve connected to say an Azure SQL Database, and you begin exploring its data by creating reports in Power BI, anytime you slice your data or add another field to a visualization. To learn more, see [Azure and Power BI](powerbi-azure-and-power-bi.md).
+**Databases in the Cloud** – From the Power BI service, you can connect live to Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight, and SQL Server Analysis Services using DirectQuery. Connections from Power BI to these databases are live, that is, when you’ve connected to say an Azure SQL Database, and you begin exploring its data by creating reports in Power BI, anytime you slice your data or add another field to a visualization, a query is made right to the database. To learn more, see [Azure and Power BI](powerbi-azure-and-power-bi.md).
 
 **Databases on-premises** – From the Power BI service, you can connect directly to SQL Server Analysis Services Tabular model databases. A Power BI Enterprise Gateway is required. If you’re unsure how to connect to your organization’s tabular model database, check with your administrator or IT department. To learn more, see [SQL Server Analysis Tabular data in Power BI](powerbi-sql-server-analysis-services-tabular-data.md).
 
