@@ -43,11 +43,11 @@ To follow along, sign in to Power BI and select **Get Data > Samples > Retail An
 
 2. Convert the visual to a KPI by selecting the KPI icon from the Visualization pane.
 
-    ![](\media/powerbi-service-tutorial-kpi/kpi-icon.png)
+    ![](media/powerbi-service-tutorial-kpi/kpi-icon.png)
     
 3. Add a goal. Add last years sales as the goal. Drag **Total Units Last Year** to the **Target goals** field. 
 
-    ![](\media/powerbi-service-tutorial-kpi/kpi-new.png)
+    ![](media/powerbi-service-tutorial-kpi/kpi-new.png)
 
 4.  Optionally, format the KPI by selecting the paintbrush icon to open the Formatting pane.
  
