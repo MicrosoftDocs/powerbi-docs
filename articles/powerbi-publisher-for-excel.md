@@ -29,10 +29,9 @@ What you can't pin: You cannot pin 3D Maps or visualizations in Power View sheet
 When you pin an element from Excel, a new tile is added to a new or existing dashboard in Power BI. The new tile is a snapshot, so it's not dynamic, but you can still update it. For example, if you make a change to a PivotTable or Chart you've already pinned, the dashboard tile in Power BI isn't updated automatically, but you can still update your pinned elements by using Pin Manager. You'll learn more about Pin Manager below.
 
 ## Download and install
-Power BI publisher for Excel is an add-in you can download and install on desktop versions of Microsoft Excel 2010 with SP1 and later.
+Power BI publisher for Excel is an add-in you can download and install on desktop versions of Microsoft Excel 2007 and later.
 
--   [Power BI publisher for Excel 64-bit version](http://go.microsoft.com/fwlink/?LinkId=715729)
--   [Power BI publisher for Excel 32-bit (x86) version](http://go.microsoft.com/fwlink/?LinkId=715730)
+[Download Power BI publisher for Excel](http://go.microsoft.com/fwlink/?LinkId=715729)
 
 Once you have the publisher installed, you'll see a new **Power BI**
 ribbon in Excel, where you can sign-in and out of Power BI, pin elements to dashboards, and manage elements you've already pinned.
