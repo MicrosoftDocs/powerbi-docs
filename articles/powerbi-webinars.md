@@ -22,8 +22,6 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[03/10/16 - Power BI Gateways - Connect Power BI to Your On-premised Data](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-10-PowerBI-Gateway-Registration.html)
-
 [03/24/16 - What's New for SQL Server 2016 Analysis Services](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-24-PowerBI-SSAS-Registration.html)
 
 [04/14/16 - The Power of R In Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-14-Power-of-R-in-PowerBI-Registration.html)
@@ -33,6 +31,8 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 
 ### Latest webinars
 Watch our latest webinars on-demand.
+
+[Power BI Gateways - Connect Power BI to Your On-premised Data - March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-10-PowerBI-Gateway-Registration.html)
 
 [What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html)
 
@@ -45,6 +45,9 @@ Watch our latest webinars on-demand.
 [What’s New and Exciting in Power BI- February 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-04-PowerBIWhatsNew-Registration.html)
 
 ### Intermediate webinars
+
+[Power BI Gateways - Connect Power BI to Your On-premised Data - March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-10-PowerBI-Gateway-Registration.html)
+
 [Power BI for Developers - January 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-01Jan-28-PowerBI-Developers-Registration.html)
 
 [Power BI Technical Overview - November 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-11Nov15-PowerBITechnicalOverview-Register.html)
