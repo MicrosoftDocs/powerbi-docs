@@ -307,17 +307,19 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-gateway-enterprise-manage-ssas",
             "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
+            "powerbi-gateway-enterprise-manage-scheduled-refresh",
             "powerbi-gateway-enterprise-upgrade-as-connector",
             "powerbi-analysis-services-connector",
             "powerbi-admin-analysis-services-connector-indepth",
             "powerbi-admin-data-management-gateway-in-office-365"
           ],
-          "numberOfFeaturedArticles": 7
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Administration",
           "articles": [
             "powerbi-admin-administering-power-bi-in-your-organization",
+            "powerbi-admin-powerbi-free-in-your-organization",
             "powerbi-admin-purchasing-power-bi-pro",
             "powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial",
             "powerbi-admin-power-bi-security",
@@ -327,9 +329,10 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
             "powerbi-admin-closing-your-account",
+            "powerbi-admin-free-with-custom-azure-directory",
             "powerbi-admin-mobile-intune"
           ],
-          "numberOfFeaturedArticles": 7
+          "numberOfFeaturedArticles": 8
         },
         		{
           "sectionTitle": "Troubleshooting",
