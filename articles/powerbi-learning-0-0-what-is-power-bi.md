@@ -21,7 +21,7 @@
 
 # Guided Learning for Power BI
 
-Welcome to **Guided Learning** for Power BI. This self-based online course explains Power BI in a sequential way, so you can build your knowledge from the ground up.
+Welcome to **Guided Learning** for Power BI. This self-paced online course explains Power BI in a sequential way, so you can build your knowledge from the ground up.
 
 The course is designed to provide guidance in understandable chunks, with logical flow that helps you absorb concepts, details, and examples. It includes lots of visuals and videos to help you learn, too.
 
