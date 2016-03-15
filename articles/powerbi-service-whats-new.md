@@ -26,11 +26,15 @@ Check this page for known issues and recently-released features in Power BI Serv
 ## Recent updates
 
 **March 11, 2016**
+
 Updates to dashboards Quick Insights, and Q&A [Read the entire blog post](https://powerbi.microsoft.com/blog/power-bi-service-march-update/).
 
 ***Dashboards***
+
 -   Full Screen mode: print without having to exit Full Screen mode first
+
 -   Full Screen mode: expand your tiles to fill the entire canvas and remove excess white space by selecting **Fit to Width**
+
 -   Use Tile Flow to automatically align your tiles to the top left corner of the canvas.
 
 ***Quick Insights***
@@ -38,8 +42,11 @@ Updates to dashboards Quick Insights, and Q&A [Read the entire blog post](https:
 -   The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data. 
 
 ***Q&A***
+
 -   You can now specify Gauge and Area charts in Q&A
+
 -   Improved auto-complete for Q&A - as soon as you type just a few characters, Q&A begins auto completing and suggesting visuals for you.
+
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update/)
 
