@@ -46,4 +46,4 @@ I type email addresses, security groups, and distribution lists here. I select *
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01savegroup.png)
 
-On to the next lesson: [Create a content pack in Power BI](powerbi-learning-6-2-create-content-packs.md).
+On to the next lesson: [Create a content pack in Power BI](guided-learning/powerbi-learning-6-2-create-content-packs.md).
