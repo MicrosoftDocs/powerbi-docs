@@ -27,7 +27,7 @@ When you start **Power BI Desktop** and move past the Start Screen, you can choo
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_1.png)
 
-There are monthly updates to Power BI Desktop, and with each update, the Power BI Desktop What's New page gets updated with information about the updates, links to the blog, and a download link. You can check out the online [What's New page](powerbi-desktop-latest-update.md) each month.
+There are monthly updates to Power BI Desktop, and with each update, the **Power BI Desktop What's New** page gets updated with information about the updates, links to the blog, and a download link.
 
 In Power BI Desktop, there are all sorts of different data sources available. Select a source to establish a connection. Depending on your selection, you will be asked to find the source on your computer or network, or be prompted to log in to a service to authenticate your request.
 
