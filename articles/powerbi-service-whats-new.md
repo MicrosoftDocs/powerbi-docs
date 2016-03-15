@@ -19,15 +19,25 @@
 
 # What's new in the Power BI service  
 
-Check this page for known issues and recently-released features in Power BI Service.
+Check this page for known issues and recently-released features in **Power BI Service**.
 
->NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md) and the [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+>**NOTE**: 
+>
+For related "What's New" information, see: 
+>
+>[What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+>
+>[What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
+>
+>[Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+
+
 
 ## Recent updates
 
 **March 11, 2016**
 
-Updates to dashboards Quick Insights, and Q&A [Read the entire blog post](https://powerbi.microsoft.com/blog/power-bi-service-march-update/).
+This month we made some pdates to dashboards, Quick Insights, and Q&A.
 
 ***Dashboards***
 
@@ -49,6 +59,8 @@ Updates to dashboards Quick Insights, and Q&A [Read the entire blog post](https:
 
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update/)
+
+
 
 
 **February 10, 2016**
