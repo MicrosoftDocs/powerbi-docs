@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2016"
+   ms.date="03/16/2016"
    ms.author="mihart"/>
 
 # KPIs in Power BI
@@ -67,7 +67,6 @@ KPIs are also available on your mobile devices – keeping you always connected 
 
 
 ##  See also
-Please read our blog post about KPIs <embed KPI blog link>
 
 [Reports in Power BI](powerbi-service-reports.md)
 
