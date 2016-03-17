@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="03/16/2016"
    ms.author="tpalmer"/>
    
 # Salesforce content pack for Power&nbsp;BI
@@ -65,7 +65,7 @@ You can change this dashboard to display your data any way you want. You can ask
 
 **What Now?**
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard, see [ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md) for suggestions.
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
 - [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard
 

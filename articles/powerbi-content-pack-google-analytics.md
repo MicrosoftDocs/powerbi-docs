@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="03/16/2016"
    ms.author="tpalmer"/>
    
 # Google Analytics content pack for Power&nbsp;BI
@@ -23,7 +23,7 @@ Connecting to Google Analytics through Power BI starts by connecting to your Goo
 
 Connect to the [Google Analytics content pack](https://app.powerbi.com/getdata/services/google-analytics) for Power BI or read more about the [Google Analytics integration](https://powerbi.microsoft.com/integrations/google_analytics) with Power BI.
 
-In addition to this content pack, customized dashboards and reports can also be created starting from the [Google Analytics connector](powerbi-service-google-analytics-connector/) in Power BI Desktop. Just connect with your Google Analytics account and create your custom reports which can also be published to the Power BI service.
+In addition to this content pack, customized dashboards and reports can also be created starting from the [Google Analytics connector](https://powerbi.microsoft.com/documentation/powerbi-service-google-analytics-connector) in Power BI Desktop. Just connect with your Google Analytics account and create your custom reports which can also be published to the Power BI service.
 
 ## How to connect
 
@@ -66,6 +66,7 @@ In addition to this content pack, customized dashboards and reports can also be 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements
+
 This content pack requires you to have a [Google Analytics](https://www.google.com/analytics/) account. Other Google accounts that do not have a Google Analytics account connected to it will see an authentication error.
 
 ## Troubleshooting 
@@ -77,6 +78,8 @@ If you're getting the message, "We couldn't import data from Google Analytics", 
 ![](media/powerbi-content-pack-google-analytics/PBI_GoogleAnalytics1.png)
 
 If you're getting an error indicating your credentials are invalid however you were able to sign into Google, please confirm you have a [Google Analytics](https://www.google.com/analytics/) account.
+
+Unique names are currently required for the parameters. If you see an error indicating the value you selected is duplicated, please select another value or change the names in Google Analytics to make them unique. We're actively working to improve this. 
 
 Still having issues? Open a support ticket to reach the Power BI team:
 

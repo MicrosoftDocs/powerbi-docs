@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="03/16/2016"
    ms.author="tpalmer"/>
 
 # Microsoft Dynamics NAV content pack for Power&nbsp;BI  
@@ -46,10 +46,10 @@ Note: this content pack requires permissions to the tables where data is retriev
 	An easy way to obtain this URL is in Dynamics NAV to go to Web Services, find the powerbifinance web service and copy the OData URL, but leaving out the “/powerbifinance” from the URL string.  
 	![](media/powerbi-content-pack-microsoft-dynamics-nav/param.PNG)
 
-5. When prompted, enter your Microsoft Dynamics NAV credentials and follow the Microsoft Dynamics NAV authentication process. If you are already signed in to Microsoft Dynamics NAV in your browser, you may not be prompted for credentials.
+5. Select **Basic** and enter your Microsoft Dynamics NAV credentials.
 
 	>**Note:**  
-	>You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  
+	>You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  Only Basic (Username and Password) authentication is currently supported.
 	
 	![](media/powerbi-content-pack-microsoft-dynamics-nav/creds.PNG)
 

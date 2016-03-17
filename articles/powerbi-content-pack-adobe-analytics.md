@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2016"
+   ms.date="03/16/2016"
    ms.author="tpalmer"/>
 # Adobe Analytics content pack for Power&nbsp;BI
 
@@ -106,7 +106,9 @@ From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/refe
 ![](media/powerbi-content-pack-adobe-analytics/ReportSuiteID.PNG)
 
 ## Troubleshooting
-If you're seeing an error after successfully providing credentials and loading for some time, it's possible the reports are taking too long to complete. Please review the "What's included" section and compare to the size of your Adobe instance.
+If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company). 
+
+If you've successfully passed the credentials screen and start the content pack loading before hitting an error, it's possible the reports are taking too long to complete. Please review the "What's included" section and compare to the size of your Adobe instance.
 
 ### See also
 
