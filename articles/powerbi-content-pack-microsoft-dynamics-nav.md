@@ -66,8 +66,9 @@ Note: this content pack requires permissions to the tables where data is retriev
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## System requirements
-- To import your Microsoft Dynamics NAV data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from. All the tables (case sensitive) required for the content pack include:
+## What's included
+
+The content pack includes data from the following tables (case sensitive):  
     - ItemSalesAndProfit
     - ItemSalesByCustomer
     - powerbifinance
@@ -75,6 +76,11 @@ Note: this content pack requires permissions to the tables where data is retriev
     - SalesOpportunities
     - SalesOrdersBySalesPerson
     - TopCustomerOverview
+
+## System requirements
+
+To import your Microsoft Dynamics NAV data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from (listed above). The tables are also required to have some data, empty tables will currently fail to import.
+
 
 ## Troubleshooting  
 The Power BI Microsoft Dynamics NAV content pack uses Microsoft Dynamics NAV's web services to retrieve your data. If you have a lot of data in your Microsoft Dynamics NAV instance, a suggestion to minimize the impact on your web service usage is to change the refresh frequency depending on your needs. Another suggestion is to have one admin create the content pack and share it instead of having every admin create their own.
