@@ -23,7 +23,7 @@ Connecting to Google Analytics through Power BI starts by connecting to your Goo
 
 Connect to the [Google Analytics content pack](https://app.powerbi.com/getdata/services/google-analytics) for Power BI or read more about the [Google Analytics integration](https://powerbi.microsoft.com/integrations/google_analytics) with Power BI.
 
-In addition to this content pack, customized dashboards and reports can also be created starting from the [Google Analytics connector](https://powerbi.microsoft.com/documentation/powerbi-service-google-analytics-connector) in Power BI Desktop. Just connect with your Google Analytics account and create your custom reports which can also be published to the Power BI service.
+In addition to this content pack, customized dashboards and reports can also be created starting from the [Google Analytics connector](powerbi-service-google-analytics-connector.md) in Power BI Desktop. Just connect with your Google Analytics account and create your custom reports which can also be published to the Power BI service.
 
 ## How to connect
 
@@ -93,4 +93,4 @@ Still having issues? Open a support ticket to reach the Power BI team:
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Google Analytics Power BI Desktop connector](powerbi-service-google-analytics-connector/) 
+[Google Analytics Power BI Desktop connector](powerbi-service-google-analytics-connector.md)
