@@ -19,7 +19,7 @@
    
 # Smartsheet content pack for Power&nbsp;BI
 
-Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet content pack for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account. You can also use the [Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-connect-to-data/) to connect directly to individual sheets in your account. 
+Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet content pack for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account. You can also use the [Power BI Desktop](powerbi-desktop-connect-to-data.md) to connect directly to individual sheets in your account. 
 
 Connect to the [Smartsheet content pack](https://app.powerbi.com/groups/me/getdata/services/smartsheet) for Power BI.
 
@@ -66,7 +66,7 @@ Note: Smartsheet admin account is preferred to connect and load the Power BI con
 
 The Smartsheet content pack for Power BI includes an overview of your Smartsheet account, such as the number of workspaces, reports and sheets you have, when they're modified etc. Admin users will also see some information around the users in their system, such as top sheet creators.  
 
-To connect directly to individual sheets in your account, you can use the Smartsheet connector in the [Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-connect-to-data/).  
+To connect directly to individual sheets in your account, you can use the Smartsheet connector in the [Power BI Desktop](powerbi-desktop-connect-to-data.md).  
 
 ### See Also:
 
