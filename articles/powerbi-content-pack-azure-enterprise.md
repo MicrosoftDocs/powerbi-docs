@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="03/16/2016"
    ms.author="tpalmer"/>
    
 # Microsoft Azure Enterprise content pack for Power&nbsp;BI
@@ -70,6 +70,7 @@ The Azure Enterprise content pack includes monthly reporting data for the range 
 The content pack requires access to the Enterprise features within the Azure Portal. 
 
 ## Finding parameters
+<a name="FindingParams"></a>
 
 Power BI reporting is available for EA Direct, Partner and Indirect Customers who are able to view billing information. Please read below for details about finding each of the values the connection flow expects.
 

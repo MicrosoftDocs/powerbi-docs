@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="03/16/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -460,6 +460,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-android-app-get-started",
             "powerbi-mobile-win10phone-app-get-started",
             "powerbi-mobile-create-dashboard",
+            "powerbi-mobile-offline-android",
             "powerbi-admin-mobile-intune"
           ],
           "numberOfFeaturedArticles": 8
@@ -484,6 +485,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-iphone-kpis-mobile-reports",
             "powerbi-mobile-dashboards-in-the-iphone-app",
             "powerbi-mobile-tiles-in-the-iphone-app",
+            "powerbi-mobile-reports-in-the-iphone-app",
             "powerbi-mobile-report-page-tiles-in-the-iphone-app",
             "powerbi-mobile-share-a-dashboard-from-the-iphone-app",
             "powerbi-mobile-set-data-alerts-in-the-iphone-app",

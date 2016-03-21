@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="03/16/2016"
    ms.author="tpalmer"/>
 # Zendesk content pack for Power&nbsp;BI
 
@@ -24,7 +24,7 @@ Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/z
 
 Note: A Zendesk Admin account is required to connect. More details on requirements below.
 
-##How to connect
+## How to Connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -76,7 +76,7 @@ There's also a set of measures that have been calculated, such as Average Wait T
 
 ## System Requirements
 
-A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](powerbi-desktop-connect-to-data/).
+A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](powerbi-desktop-connect-to-data.md).
 
 ## Finding parameters 
 <a name="FindingParams"></a>
