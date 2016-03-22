@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="03/22/2016"
    ms.author="mihart"/>
 
 
@@ -24,7 +24,7 @@ Have a new dataset and not quite sure where to start?  Need to build a dashboard
 
 Run Quick Insights to generate interesting interactive visualizations based on your data.  
 
->**NOTE**: Quick Insights are only available not available in Power BI Desktop.
+>**NOTE**: Quick Insights are not available in Power BI Desktop.
 
 ## Run Quick Insights on a dataset
 
