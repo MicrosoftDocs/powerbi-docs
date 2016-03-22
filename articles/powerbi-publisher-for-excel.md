@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/17/2016"
+   ms.date="03/21/2016"
    ms.author="owend"/>
 
-# Power BI publisher for Excel (Preview)
+# Power BI publisher for Excel
 
 With Microsoft Power BI publisher for Excel, you can take snapshots of your most important insights in Excel, like PivotTables, Charts, and ranges and pin them to dashboards in Power BI.
 
@@ -43,9 +43,11 @@ The Power BI publisher for Excel add-in is enabled by default, but if for some r
 ## Pin a range to a dashboard
 You can select any range of cells from your worksheet and pin a snapshot to any number of existing or new dashboards in Power BI.
 
-1. In your worksheet, select a range, and then click **Pin**. If you're not already signed into Power BI, you'll be prompted to.
-
-2. In **Pin to dashboard**, select an existing dashboard or create a new one, and then click **Pin**.
+1. In Excel, click on the **Power BI** tab to see the Pin ribbon.
+2. In your worksheet, select a range.
+3. Select a workspace in the **Workspace** dropdown list. If you want to pin to your own dashboard, verify **My Workspace** is selected. If you want to pin to a dashboard in a group workspace, select the group from the drop-down list.
+4. Click **Pin**. If you're not already signed into Power BI, you'll be prompted to.
+5. In **Pin to dashboard**, select an existing dashboard in the workspace or create a new one, and then click **Pin**.
 
     ![](media/powerbi-publisher-for-excel/pbi_publisher_pinrange.gif)
 
