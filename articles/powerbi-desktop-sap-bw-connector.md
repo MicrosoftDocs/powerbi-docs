@@ -82,7 +82,7 @@ This section provides troubleshooting situations (and solutions) for working wit
 
     On some occasions, you may see the following error when using the **SAP BW Connector** preview:
 
-    ![](media/powerbi-desktop-sap-bw-connector/sap_bw_7.png)
+    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_7.png)
 
     **Solution:** Make sure you installed the **SAP RFCSDK version 6.4 or greater**; you can check with the SAP Administrator in your organization, or follow these steps:
 
