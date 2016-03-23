@@ -29,11 +29,11 @@ To use the **SAP BW Connector**, go through the following installation steps:
 
 2.  Enable the **SAP BW Connector** Preview feature in Power BI Desktop by going to **File > Options and Settings -> Options -> Global -> Preview Features.** You must restart Power BI Desktop after enabling this feature.
 
-    ![](media/powerbi-desktop-sap-bw-connector/sap_bw_1.png)
+    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_1.png)
 
 3.  After enabling the **SAP BW** Preview feature and restarting Power BI Desktop, the **Get Data** dialog includes an entry for **SAP Business Warehouse Server** in the **Database** category.
 
-    ![](media/powerbi-desktop-sap-bw-connector/sap_bw_2.png)
+    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_2.png)
 
 
 ## SAP BW Connector (Preview) features
@@ -42,11 +42,11 @@ The **SAP BW Connector** preview is currently supported only in Power BI Desktop
 
 The **SAP BW Connector** preview in Power BI Desktop lets users import data from their **SAP Business Warehouse Server** cubes. After selecting **SAP BW Connector** preview from **Get Data**, you must specify a *Server*, *System Number* and *Client ID* to establish the connection.
 
-![](media/powerbi-desktop-sap-bw-connector/sap_bw_3.png)
+![](media/powerbi-desktop-sap-bw-connector/SAP_BW_3.png)
 
 You can also specify two additional **Advanced options**: Command timeout in minutes for connecting to the data source, and a custom MDX statement to run against the specified server.
 
-![](media/powerbi-desktop-sap-bw-connector/sap_bw_4.png)
+![](media/powerbi-desktop-sap-bw-connector/SAP_BW_4.png)
 
 If no MDX statement was specified you are presented with the **Navigator** window, which displays the list of cubes available in the server, the option to drill down and select items from the available cubes, including dimensions and measures.
 
@@ -54,7 +54,7 @@ If no MDX statement was specified you are presented with the **Navigator** windo
 
 When you select one or more items from the server, a preview of the output table is created, based on their selection.
 
-![](media/powerbi-desktop-sap-bw-connector/sap_bw_5.png)
+![](media/powerbi-desktop-sap-bw-connector/SAP_BW_5.png)
 
 The **Navigator** window also provides a few **Display Options** that allow you to do the following:
 
@@ -64,7 +64,7 @@ The **Navigator** window also provides a few **Display Options** that allow you 
 
 -	**Technical Names:** SAP BW supports the notion of *technical names* for objects within a cube. Technical names allow a cube owner to expose *user friendly* names for cube objects, as opposed to only exposing the *physical names* for those objects in the cube. Please note that there are some known issues in this **SAP BW Preview** build with *Technical Names* that cause them to display empty names in some cases. We’re aware of this issue, and we are actively working to address it.
 
-![](media/powerbi-desktop-sap-bw-connector/sap_bw_6.png)
+![](media/powerbi-desktop-sap-bw-connector/SAP_BW_6.png)
 
 After selecting all necessary objects in the **Navigator**, you can decide what to do next, by selecting one of the following buttons on the bottom of the **Navigator** window:
 
