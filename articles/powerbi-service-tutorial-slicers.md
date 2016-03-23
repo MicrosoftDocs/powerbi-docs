@@ -96,7 +96,7 @@ Do you want the Slicer to only filter some of the visuals on the report page?  U
 
 2. Select the Slicer to make it active and highlight **Visual interactions**.
 
-  ![](media/powerbi-service-tutorial-slicers/PBI-slicer-interactions.png)
+  ![](media/powerbi-service-tutorial-slicers/pbi-slicer-interactions.png)
 
 2. Filter controls will appear above all the other visuals on the page. If the Slicer should filter a visual, select the **Filter** icon.  If the Slicer should have no effect on the visual, select the **None** icon.
 
