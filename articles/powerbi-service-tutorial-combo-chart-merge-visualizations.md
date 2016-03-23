@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 # Tutorial: Combo Chart in Power BI
 
@@ -48,19 +48,17 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 4. Create a column chart that displays this year's sales and gross margin by month.
 
-	a.  From the Fields pane, select **Sales** \> **This Year Sales**.
+	a.  From the Fields pane, select **Sales** \> **This Year Sales** > **Value**.
 
 	b.  Drag **Sales** \> **Gross Margin This Year** to the **Value** well.
 
-	c.  Select **Time** \> **Month** to add it to the **Axis** well. 
+	c.  Select **Time** \> **FiscalMonth** to add it to the **Axis** well. 
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combotutorial1.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combotutorial1new.png)
 
-5. Convert the column chart to a Combo chart.
+5. Convert the column chart to a Combo chart. With the column chart selected, from the **Visualizations** pane select the **Line and Clustered Column chart**.
 
-6. With the column chart selected, open the **Visualizations** pane and select the **Line and Clustered Column chart**.
-
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new2.png)
 
 7.  From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line Values** bucket.
 
@@ -68,7 +66,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
     Your combo chart should look like this:
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochartdone.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochartdone-new.png)
 
 
 ## Create a Combo Chart with two axes

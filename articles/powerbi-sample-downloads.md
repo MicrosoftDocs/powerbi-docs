@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/16/2016"
+   ms.date="03/24/2016"
    ms.author="mihart"/>
 
 # Download the Power BI industry samples (Excel workbooks)
@@ -23,7 +23,7 @@ Microsoft has created sample content for you to use with Power BI. Each of these
 
 To learn more about the types of samples available, see [Power BI samples](powerbi-sample-datasets.md).
 
-## Important: usage guidelines for the Power BI sample Excel workbooks
+## Usage guidelines for the Power BI sample Excel workbooks
 
 >**IMPORTANT**
 
@@ -45,7 +45,7 @@ By clicking any of the links below to download the Excel workbook files, you are
 
 ## Download the Power BI sample workbooks
 
-Download the individual samples files using the links below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020).
+Download the individual samples files using the links below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020).  Once downloaded, you can open these in Excel and you can connect to them from Power BI service.
 
 -   [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778)
 
@@ -65,7 +65,7 @@ Download the individual samples files using the links below, or [download a zip 
 
 ## Tips and troubleshooting
 
-When you first open a sample workbook, you may see two warnings.
+When you first open a sample workbook in Excel, you may see two warnings.
 
 -   The first says the workbook is in Protected View. Select **Enable Editing**.
 
