@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2016"
+   ms.date="03/24/2016"
    ms.author="mihart"/>
 
 # Tutorial: Slicers in Power BI  
@@ -88,6 +88,21 @@ Slicers are a great choice:
 
     ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sorted.png)
 
+## Control what effect the slicer has on other visuals on the page
+
+Do you want the Slicer to only filter some of the visuals on the report page?  Use the **Visual interactions** control to set this up.
+
+1. Select the **New Stores** tab to open the "New Stores Analysis" page.
+
+2. Select the Slicer to make it active and highlight **Visual interactions**.
+
+  ![](media/powerbi-service-tutorial-slicers/PBI-slicer-interactions.png)
+
+2. Filter controls will appear above all the other visuals on the page. If the Slicer should filter a visual, select the **Filter** icon.  If the Slicer should have no effect on the visual, select the **None** icon.
+
+  ![](media/powerbi-service-tutorial-slicers/filter-controls.png)
+
+For more information, see [Visual interactions in a Power BI report](documentation/powerbi-service-visual-interactions.md).
 
 ## See also  
  [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  

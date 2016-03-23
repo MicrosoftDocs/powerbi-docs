@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/05/2016"
+   ms.date="03/24/2016"
    ms.author="mihart"/>
 
 # From Excel workbook to stunning report in no time
@@ -49,6 +49,8 @@ At the bottom of the left pane, select **Get Data**. On the Get Data page, under
 
 On the Files page, select **Local File**. Navigate to the Excel workbook file on your computer and select it to load into Power BI.
 
+>**NOTE**: To follow along with the rest of this tutorial, use the [Financial sample workbook](powerbi-sample-download-the-financial-sample-workbook).
+
 ![](media/powerbi-service-from-excel-to-stunning/PBI_local_file.png)
 
 ## Build your report
@@ -63,11 +65,13 @@ Now you can begin to create visualizations. Your manager wants to see profit ove
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_report_pin.png)
 
-Your manager wants to know which countries are the most profitable. Impress her with a map visualization. From the Fields pane, simply drag over the **Country** and **Profit** fields to the report canvas. Power BI creates a map visual with bubbles representing the relative profit of each location.
+>**TIP**: If your chart doesn't look like the one above, check your aggregations. In the **Value** well, right click **Profit** and select **Sum**.
+
+Your manager wants to know which countries are the most profitable. Impress her with a map visualization. Select a blank area on your canvas, and from the Fields pane, simply drag over the **Country** and then **Profit** fields. Power BI creates a map visual with bubbles representing the relative profit of each location.
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_report_map.png)
 
-What about displaying a visual showing sales by product and market segment? Easy. In the Fields pane, select the checkboxes next to the Sales, Product and Segment fields. Power BI creates a bar chart instantly. Change the type of chart by choosing one of the icons in the Visualizations menu.
+What about displaying a visual showing sales by product and market segment? Easy. In the Fields pane, select the checkboxes next to the Sales, Product and Segment fields. Power BI creates a bar chart instantly. Change the type of chart by choosing one of the icons in the Visualizations menu. For instance, change it to a Stacked Bar chart.  To sort the chart, select the ellipses (...) > **Sort by**.
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_barchart.png)
 
