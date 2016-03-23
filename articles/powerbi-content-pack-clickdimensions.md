@@ -66,6 +66,7 @@ To connect to the Power BI content pack, you must provide the data center corres
 
 
 ## Finding parameters
+<a name="FindingParams"></a>
 
 The Account Key is found within CRM Settings \> ClickDimensions Settings. Copy the Account Key from within ClickDimensions Settings and paste it into the User name field.  
 
