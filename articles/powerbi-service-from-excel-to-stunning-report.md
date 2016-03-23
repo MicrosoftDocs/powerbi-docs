@@ -92,6 +92,7 @@ Power BI displays the Share Dashboard page. In the top area, enter the email add
 ![](media/powerbi-service-from-excel-to-stunning/PBI_share_dash2.png)
 
 See also
+
 - [Get started with Power BI service](powerbi-service-get-started.md)
 
 - [Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
