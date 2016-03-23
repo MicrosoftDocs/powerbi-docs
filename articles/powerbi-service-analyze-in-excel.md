@@ -17,7 +17,7 @@
    ms.date="03/22/2016"
    ms.author="owend"/>
 
-# Analyze in Excel (Preview)
+# Analyze in Excel
 Have a great dataset in Power BI, but just have to see it in Excel? With the Analyze in Excel feature, you get all the great PivotTable, Chart, and Slicer features in Excel your used to, all while connected to your data in Power BI.
 
 ## Requirements
