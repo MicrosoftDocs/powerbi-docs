@@ -198,6 +198,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-save-a-report",
             "powerbi-service-about-filters-and-highlighting-in-reports",
             "powerbi-service-how-to-use-a-report-filter",
+            "powerbi-service-analyze-in-excel",
             "powerbi-service-visual-interactions",
             "powerbi-service-open-a-report-in-reading-view",
             "powerbi-service-go-from-reading-view-to-editing-view",
@@ -265,7 +266,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-get-data-from-files",
             "powerbi-bring-in-whole-excel-files",
             "powerbi-service-publish-from-excel",
-            "powerbi-service-analyze-in-excel",
             "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
             "powerbi-reduce-the-size-of-an-excel-workbook",
             "powerbi-service-excel-data"
