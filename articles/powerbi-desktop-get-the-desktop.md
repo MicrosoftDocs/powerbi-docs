@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="03/24/2016"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
@@ -26,7 +26,7 @@ Before you can use some of the more advanced query, modeling, and report feature
 
 -    .NET 4.5
 
--    Internet Explorer 10 or later
+-    Internet Explorer 9 or later
 
 -    **Memory (RAM):** At least 1 GB available, 1.5 GB or more recommended.
 
