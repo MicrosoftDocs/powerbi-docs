@@ -14,9 +14,63 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/26/2016"
+   ms.date="03/23/2016"
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
+
+
+## March 2016 Update (2.33.4337.281)
+
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
+
+March brings all sorts of renewal and freshness, including another round of Power BI Desktop additions. The following enhancements are new to Power BI Desktop this month:
+
+### Report View:
+
+-   Publish reports to a Group Space in the Power BI service
+-   Reports with KPI trends now respect *Do Not Summarize* model settings from SSAS MD
+-   Data Point warnings are now non-intrusive
+
+
+### Data Modeling:
+
+-   You can now change the data type of a column when using DirectQuery mode
+-   Ability to assume Referential Integrity on relationships (for those imported, and created) in DirectQuery
+-   DirectQuery for Oracle and Teradata is now part of Power BI Desktop (no long a preview feature)
+
+### Data Connectivity:
+
+-   A new SAP BW Connector (preview feature)
+-   Support for Command Timeout in the user interface (UI)
+-   There's a setting available to disable Privacy Level prompts at the machine level (including a registry key)
+-   Query Group Management enhancements:
+    -   Expand/Collapse All
+    -   Retain Query Group expansion state
+-   New Transformations:
+    -   Remove Blanks using the Column Filter menu
+    -   Convert Duration values to Years
+    -   Keep Duplicates
+-   Support for whitespace and line feeds in Query Editor preview
+-   Include hints for *sample input values* in the **Change Type with Locale** dialog
+-   Enhancements to the **Navigator** window:
+    -   Add schema information to navigation hierarchy for ODBC sources
+    -   Ability to disable preview from **Navigator**
+    -   Technical name support
+-   Load: Auto-step to disambiguate conflicting column names (case-insensitive comparison)
+-   You can now rename queries directly from the **Queries** pane
+
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-update-feature-summary/), where you can get more detailed information about each of these new features.
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eAayYDF9QzY" frameborder="0" allowfullscreen></iframe>
+
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
+
+
 
 ## February 2016 Update (2.32.4307.362)
 
