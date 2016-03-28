@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/15/2016"
-   ms.author="v-jescoo"/>
+   ms.author="davidi"/>
 
 # Congratulations - and what's next for you
 
