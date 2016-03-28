@@ -56,7 +56,7 @@ You're now ready to head to the cloud and get immersed in the Power BI service, 
 -   **Share** your dashboards with others, especially people who are on the go
 -   View and interact with shared dashboards and reports in **Power BI Mobile** apps
 
-![](media/powerbi-learning-course0-article1/c0a1_1.png)
+![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
 Whether you create reports or just view and interact with them, you now know how all those cool visuals are created, and how they connected to the data. Next we get to see those visuals and reports in action.
 
