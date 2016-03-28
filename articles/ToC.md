@@ -323,6 +323,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-purchasing-power-bi-pro",
             "powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial",
             "powerbi-admin-power-bi-security",
+            "powerbi-admin-rls",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
             "powerbi-admin-migrating-to-the-new-power-bi-experience",
             "powerbi-admin-migration-faq",
@@ -332,7 +333,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-free-with-custom-azure-directory",
             "powerbi-admin-mobile-intune"
           ],
-          "numberOfFeaturedArticles": 8
+          "numberOfFeaturedArticles": 9
         },
         		{
           "sectionTitle": "Troubleshooting",
