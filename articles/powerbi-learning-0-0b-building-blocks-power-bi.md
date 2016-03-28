@@ -16,8 +16,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/29/2016"
-   ms.author="v-jescoo"/>
+   ms.date="03/28/2016"
+   ms.author="davidi"/>
 
 # Building Blocks of Power BI
 Everything you do in Power BI can be broken down into a few basic **building blocks**. Once you understand these building blocks, you can expand on each of them and begin creating elaborate and complex reports. After all, even seemingly complex things are built from basic building blocks – buildings are created with wood, steel, concrete and glass. Cars are made from metal, fabric, and rubber. Of course, buildings and cars can be basic or elaborate as well – depending on how those basic building blocks are arranged.

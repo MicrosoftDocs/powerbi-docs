@@ -16,8 +16,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/29/2016"
-   ms.author="v-jescoo"/>
+   ms.date="03/28/2016"
+   ms.author="davidi"/>
 
 # A quick look at the Power BI service
 The previous topic introduced you to **Power BI Desktop**. As we learned, the common flow of work in Power BI is to create a report in Power BI Desktop, publish it to the Power BI service, then share it with others so they can view it in the service or on a mobile app.
