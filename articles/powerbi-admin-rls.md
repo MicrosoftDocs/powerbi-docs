@@ -30,7 +30,7 @@ To manage security on your data model, you will want to do the following.
 1.	Select the **ellipse (…)** for a dataset.
 2.	Select **Security**.
 
-        ![](media/powerbi-admin-rls/rls-security.png)
+    ![](media/powerbi-admin-rls/rls-security.png)
  
 This will take you to the RLS page for you to create roles and add rules with filters. Only the owners of the dataset will see Security available. 
 
@@ -78,12 +78,12 @@ Rules are defined by using DAX expressions. In a future release, you will have a
 1.	Select the role you want to add a rule to.
 2.	Select **Rules**.
 
-        ![](media/powerbi-admin-rls/rls-rules.png)
+    ![](media/powerbi-admin-rls/rls-rules.png)
 
 3.	Select the table you want to add the filter to.
 4.	Enter your DAX formula, for the selected table, in the **DAX Input** text box.
 
-        ![](media/powerbi-admin-rls/rls-rule-definition.png)
+    ![](media/powerbi-admin-rls/rls-rule-definition.png)
 
 5.	Select **Save**.
 
