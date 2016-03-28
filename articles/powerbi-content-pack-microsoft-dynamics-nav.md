@@ -83,6 +83,7 @@ To import your Microsoft Dynamics NAV data into Power BI, you need to have permi
 
 
 ## Troubleshooting  
+
 The Power BI Microsoft Dynamics NAV content pack uses Microsoft Dynamics NAV's web services to retrieve your data. If you have a lot of data in your Microsoft Dynamics NAV instance, a suggestion to minimize the impact on your web service usage is to change the refresh frequency depending on your needs. Another suggestion is to have one admin create the content pack and share it instead of having every admin create their own.
 
 **"Parameter validation failed, please make sure all parameters are valid"**  

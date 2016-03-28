@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="03/28/2016"
    ms.author="tpalmer"/>
    
 # Google Analytics content pack for Power&nbsp;BI
@@ -76,6 +76,8 @@ If you're getting the message, "We couldn't import data from Google Analytics", 
 **Important:** Parameters are case-sensitive. Enter them exactly as they appear in your Google Analytics account.
 
 ![](media/powerbi-content-pack-google-analytics/PBI_GoogleAnalytics1.png)
+
+If you have multiple Google accounts, please use an incognito or an in-private broswer window during connection to ensure the correct account is used.
 
 If you're getting an error indicating your credentials are invalid however you were able to sign into Google, please confirm you have a [Google Analytics](https://www.google.com/analytics/) account.
 

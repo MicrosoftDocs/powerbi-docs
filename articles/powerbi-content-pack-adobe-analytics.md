@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="03/28/2016"
    ms.author="tpalmer"/>
 # Adobe Analytics content pack for Power&nbsp;BI
 
@@ -83,7 +83,7 @@ The content pack uses the Adobe Analytics Report API to define and run reports f
 |Country and Region Lookup| elements= "geocountry" (Top 200)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units"|
 |Language| elements= "language", "browser" (Top 25)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "pageviews", "cartadditions", "cartremovals", "checkouts", "carts", "cartviews"|
 |Search Engines Look Up| elements= "searchengine" (top 100)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units"|
-|Browser Lookup| elements={[id="browser" (top 25)|
+|Browser Lookup| elements= "browser" (top 25)|
 
 ## System requirements
 Access to [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) is required, including access to the correct parameters as described below.
