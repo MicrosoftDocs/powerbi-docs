@@ -53,7 +53,7 @@ As mentioned before, this course builds your knowledge by following the common f
 -   **Share** your dashboards with others, especially people who are on the go
 -   View and interact with shared dashboards and reports in **Power BI Mobile** apps
 
-![](media/powerbi-learning-course0-article1/c0a1_1.png)
+![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
 While you might not do all that work yourself, you'll *understand* how those dashboards were created, and how they connected to the data... and when you're done with this course, you be able to create one of your own.
 
