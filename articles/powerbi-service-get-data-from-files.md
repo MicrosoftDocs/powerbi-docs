@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get data from Excel, Power BI Desktop, and CSV files into Power BI"
-   description="Get data from Excel, Power BI Desktop, and CSV files into Power BI"
+   pageTitle="Get data from files"
+   description="Learn how to get data from Excel, Power BI Desktop, and CSV files into Power BI"
    services="powerbi"
    documentationCenter=""
    authors="Minewiskan"
@@ -14,73 +14,36 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2016"
+   ms.date="03/29/2016"
    ms.author="owend"/>
-# Get data from Excel, Power BI Desktop, and CSV files into Power BI
 
-**Excel files**
+# Get data from files
+![](media/powerbi-service-get-data-from-files/file_icons.png)
 
-If Excel is your go-to tool for working with data, you can leverage your Excel expertise and investments by using them in Power BI. You have two options:
+In Power BI, you can connect to or import data and reports from three types of files.
+-	Microsoft Excel (.xlsx or .xlsm)
+-	Power BI Desktop (.pbix)
+-	Comma Separated Value (.csv)
 
--   Use an XLSX Excel workbook as a dataset for your Power BI dashboards and reports. Read about [what makes a good Excel workbook](powerbi-service-excel-data.md) for Power BI.  Want a sample Excel file to use as dataset? Download the [Financial Sample Excel file](powerbi-sample-download-the-financial-sample-workbook.md).
+## What does get data from a file really mean?
 
--   Bring a whole Excel workbook into Power BI intact . Explore the whole file, exactly as you would in Excel Online. [Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md)
+In Power BI the data you explore comes from a dataset. To better understand the importance of datasets, let’s look at an automobile. Take a seat in your car and look at the dashboard. That’s just like sitting in front of your computer looking at a dashboard in Power BI. The dashboard shows you all the things the engine and your car is doing; how fast it’s revving, what gear you’re in, your speed, etc.
 
-**Power BI Desktop files**
+In Power BI, a dataset is like the engine in our car. The dataset provides the data, metrics, and information that’s displayed in our dashboard. Of course our engine, or dataset, needs fuel, and in Power BI, that fuel is data. Our car has a fuel tank that provides gas to the engine, and much the same in Power BI, we need a fuel tank that has data we can feed to our dataset. In our case, in Power BI, that fuel tank is a Power BI Desktop file, an Excel workbook file, or a .CSV file.
 
-You can also create reports in Power BI Desktop, a free, downloadable app, and use those reports as datasets for Power BI. [Get Power BI Desktop](powerbi-desktop-get-the-desktop.md).
+We can take it one step further. A fuel tank in a car has to be filled with gas. The gas for our Power BI Desktop, Excel, or .CSV file is data from another data source.  We get data from another data source and put it into a dataset. Then when we get that dataset into Power BI, we can begin exploring and our dashboard begins to show us all sorts of valuable information.
 
+## Where your file is saved makes a difference
 
-**CSV files**
+**Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI (service) you can import your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in Power BI and data and the data model from the Power BI Desktop file are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports. Power BI Desktop and Excel 2016 also have the Publish feature (under the File menu or in the Share group on the ribbon). Using Publish is effectively the same as using Get Data > Files > Local File from Power BI, but is often easier to update your dataset in Power BI if you’re regularly making changes to the file.
 
-A comma-separated values (CSV) text file can be a dataset for your Power BI dashboards and reports, too. For best results, CSV files need to use comma delimiters and have a header row. [Download a sample CSV file](http://go.microsoft.com/fwlink/?LinkID=619356).
+**OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Power BI Desktop and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI connects to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI. Just like if you saved your file to a local drive, you can also use Publish to update your dataset and reports in Power BI immediately, otherwise Power BI will automatically synchronize usually within an hour.
+OneDrive - Personal – If you save your files to your own OneDrive account, you’ll get many of the same benefits as you would with OneDrive for Business. The biggest difference is when you first connect to your file (using Get Data > Files > OneDrive – Personal) you’ll need to sign in to your OneDrive with your Microsoft account, which is usually different from what you use to sign in to Power BI. When signing in with your OneDrive with your Microsoft account, be sure to select the Keep me signed in option. This way, Power BI will be able to connect to your file about every hour and make sure your dataset in Power BI is in-sync.
 
-### Import or connect to files 
+**SharePoint Team-Sites** – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
-You can bring in Excel, Power BI Desktop, and CSV files from your computer, or connect to them on OneDrive for Business, OneDrive Personal, or SharePoint - Team Sites.
-
-**Tip**: When you keep your files on OneDrive or SharePoint Team-Sites, if you make changes, for example, add rows to a table, those changes will appear automatically in dashboards and reports in Power BI created from the data, usually in about an hour.
-
-**Important**: The maximum file size is 250 megabytes for any file you upload to your Power BI site.
-
-1.  Starting from the dashboard to which you want to add the workbook data, select **Get Data** at the bottom of the left navigation pane. 
-
-    ![](media/powerbi-service-get-data-from-files/PBI_GetData.png)
-
-
-2.  In the **Files** box, select **Get**.
-
-    ![](media/powerbi-service-get-data-from-files/PBI_GetFiles.png)
-
-3.  Depending on where your file is, select one of these options:
-
-    ![](media/powerbi-service-get-data-from-files/pbi_getfiles_local_od_sp.png)
-
-    **Local File:** Browse to the file and select Open. Power BI uploads files on your computer to Power BI. 
-
-    **OneDrive - Business** and **OneDrive - Personal**: Browse to the file and select **Connect**. Power BI creates a connection to the file. Any changes to files on OneDrive appear automatically in Power BI.
-
-    **SharePoint Team-Sites**: When prompted, enter a site URL and then click **Connect**.
- 
-
-
-New items are marked with a yellow asterisk ![](media/powerbi-service-get-data-from-files/PBI_YellowAsteriskSm.png).  
-
-**Excel workbooks**: If the workbook has Power View sheets, Power BI combines them to create a report. The report has the same name as the dataset, under the **Reports** heading.﻿ 
-
-**Power BI Desktop files**: Power BI creates a report and a dataset with the same name.
-
-![](media/powerbi-service-get-data-from-files/PBI_NewExcelLeftNav.png)
-
-**Tip**: Any changes you make in Power BI -- for example, add, delete, or change visualizations in reports -- aren't saved in the original Excel or Power BI Desktop file. You can only change an Excel file in Excel, and a Power BI Desktop file in Power BI Desktop. You can change the dataset and report names.  
-
-### What's next?
-
-Once you get data and reports from your file into Power BI, it's time to explore. If your file already had reports in it, they'll appear in **My Workspace** > **Reports**. If, your file just had data, you can create new reports by exploring your dataset. Just right click the new dataset and then click **Explore**.
-
-
-### More about files in Power BI
-
--   [Data refresh in Power BI](powerbi-refresh-data.md)
-
--   [Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md)
+## Ready to get started?
+See the following articles to learn more about getting your file into Power BI.
+- [Get data from Excel workbook files](articles/powerbi-service-excel-workbook-files.md)
+- [Get data from Power BI Desktop files](articles/powerbi-service-powerbi-desktop-files.md)
+- [Get data from Comma Separated Value files](articles/powerbi-service-comma-seperated-value-files.md)
