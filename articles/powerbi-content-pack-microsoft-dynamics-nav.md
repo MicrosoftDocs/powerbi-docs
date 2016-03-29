@@ -69,13 +69,13 @@ Note: this content pack requires permissions to the tables where data is retriev
 ## What's included
 
 The content pack includes data from the following tables (case sensitive):  
-    - ItemSalesAndProfit
-    - ItemSalesByCustomer
-    - powerbifinance
-    - SalesDashboard
-    - SalesOpportunities
-    - SalesOrdersBySalesPerson
-    - TopCustomerOverview
+    - ItemSalesAndProfit  
+    - ItemSalesByCustomer  
+    - powerbifinance  
+    - SalesDashboard  
+    - SalesOpportunities  
+    - SalesOrdersBySalesPerson  
+    - TopCustomerOverview  
 
 ## System requirements
 

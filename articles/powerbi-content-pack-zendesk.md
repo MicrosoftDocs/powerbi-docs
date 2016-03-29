@@ -68,7 +68,7 @@ Note: A Zendesk Admin account is required to connect. More details on requiremen
 
 ## What's included
 
-The Power BI content pack includes data on the following:
+The Power BI content pack includes data on the following:  
 - Users (end users and agents)  
 - Organizations  
 - Groups  

@@ -30,6 +30,8 @@ After connecting to a content pack, you'll see a newly created dashboard, report
 
 You can also use [Power BI Desktop](powerbi-desktop-get-the-desktop.md) to connect to some services, such as Google Analytics, and create your own customized dashboards and reports.  
 
+For more details on a specific content pack, please reference their individual help pages.
+
 ## Get started
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
