@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2016"
+   ms.date="03/29/2016"
    ms.author="maggies"/>
 
 # Reports in the Power BI app for Android phones
@@ -25,13 +25,15 @@ Then you view and interact with those reports in the [Android app](powerbi-mobi
 
 ## Open a Power BI report
 
-1.   On a dashboard, tap a tile to open it in focus mode.
+1.   On a dashboard, tap the ellipsis (**...**) on a tile > **Open Report**.
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_tilefocus_sm.png)
+    ![](media/powerbi-mobile-reports-in-the-android-app/pbi_and_openrept.png)
 
-2. Tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_openreporticon.png).
+    Or tap the tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-android-app/pbi_and_openrpticon.png).
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_rpt_sm.png)
+The report opens in landscape mode.
+
+![](media/powerbi-mobile-reports-in-the-android-app/pbi_and_rept.png)
 
 >**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
 
