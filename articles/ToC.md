@@ -490,6 +490,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-dashboards-in-the-iphone-app",
             "powerbi-mobile-tiles-in-the-iphone-app",
             "powerbi-mobile-reports-in-the-iphone-app",
+            "powerbi-mobile-apple-watch",
             "powerbi-mobile-report-page-tiles-in-the-iphone-app",
             "powerbi-mobile-share-a-dashboard-from-the-iphone-app",
             "powerbi-mobile-set-data-alerts-in-the-iphone-app",
