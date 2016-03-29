@@ -14,31 +14,53 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="03/29/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
 
 ## March 2016
 
-### All the Power BI mobile apps
-
-**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](powerbi-mobile-offline-android.md). 
+Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-march-2016/).
 
 ### iPhone mobile app
 
 **Apple Watch** View your Power BI tiles and KPIs on your [Apple Watch](powerbi-mobile-apple-watch.md).
 
+**iOS 9.0 and later** To accommodate the best possible experience and new features for Power BI, we are now supporting only devices running iOS 9.0 and later.​
+
+**Global search** Added a new “recently viewed” list and global search so you can find the data you need quickly.
+
+**Report gallery** Open your reports directly in the report gallery.​
+
+**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](powerbi-mobile-offline-android.md). 
+
+**Bing and R tiles** Open Bing and R tiles in focus mode.​
+
+
+### Android mobile app
+
+**SQL Server 2016 mobile reports and KPIs** View SQL Server 2016 mobile reports and KPIs, and navigate between SSRS folders.​
+
+**View reports** Open reports from tiles on your dashboards.​
+
+**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](powerbi-mobile-offline-android.md). 
 
 ### Power BI app for Windows 10 devices
 
-**Quick access** Access your dashboards, reports, and groups quickly from anywhere in the Power BI app with search.
+**Quick access** Access your dashboards, reports, and groups quickly with a new “recently viewed” list and global search so you can find the data you need.
+
+**Bing and R tiles** Open Bing and R tiles in focus mode.​
+
+
 
 **More live tiles on your Start screen** Pin KPIs and row cards on your start screen as live tiles, so you can see all of your critical metrics at a glance.
 
 **Pinch to zoom** Use pinch-to-zoom on your tablet to examine dashboards in greater detail.
 
 **Notifications** Get notified when your datasets, reports, and dashboards update with new data.
+
+**Report gallery** Open your reports directly in the report gallery.​
 
 
 
