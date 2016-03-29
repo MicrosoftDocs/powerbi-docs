@@ -14,12 +14,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="03/28/2016"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
 
-Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &#151; be it iOS (iPad or iPhone), Android phone, or Windows 10 device.
+Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &#151; be it iOS (iPad or iPhone), Apple Watch, Android phone, or Windows 10 device.
 
 See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
@@ -36,7 +36,9 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
 -   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
 -   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
+-   View Power BI on your [Apple Watch](powerbi-mobile-apple-watch.md).
 -   Share [Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
+-   Interact with [reports on your iPhone](powerbi-mobile-reports-in-the-iphone-app.md).
 -   Annotate and [share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) from your iPhone
 -   [Create picture tiles](powerbi-mobile-picture-tiles-in-the-iphone-app.md) with your iPhone app
