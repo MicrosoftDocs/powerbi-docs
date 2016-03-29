@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="03/28/2016"
    ms.author="tpalmer"/>
    
 # Webtrends content pack for Power&nbsp;BI
@@ -22,6 +22,8 @@
 The Webtrends content pack for Power BI includes a variety of out of box metrics such total page views and visits by traffic source. Visualizing your Webtrends data in Power BI starts by connecting to your Webtrends account. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once per day.
 
 Connect to the [Webtrends content pack for Power BI.](https://app.powerbi.com/getdata/services/webtrends)
+
+## How to connect
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
@@ -35,11 +37,11 @@ Connect to the [Webtrends content pack for Power BI.](https://app.powerbi.com/ge
 
 	![](media/powerbi-content-pack-webtrends/GetData.PNG)
 
-4.  The content pack connects to a specific Webtrends profile ID. See details on finding the parameter below.
+4.  The content pack connects to a specific Webtrends profile ID. See details on [finding this parameter](#FindingParams) below.
 
 	![](media/powerbi-content-pack-webtrends/parameters.PNG)
 
-5.  Provide your Webtrends credentials to connect. Note that the username field expects your account and username. See details on finding these valuesbelow.
+5.  Provide your Webtrends credentials to connect. Note that the username field expects your account and username. See [details](#FindingParams) below.
 
 	![](media/powerbi-content-pack-webtrends/creds.PNG)
 
@@ -47,31 +49,52 @@ Connect to the [Webtrends content pack for Power BI.](https://app.powerbi.com/ge
 
 	![](media/powerbi-content-pack-webtrends/dashboard.PNG)
 
- 
-You can change this dashboard to display your data the way you want. Click a tile to open the underlying report and change the tiles in the dashboard.
 
-### Troubleshooting
-You may hit an issue while the content pack is loading, after you've provided your credentials. If you see the "Oops" message during the loading, please review the troubleshooting suggestions below. If you're still having issues please file a support ticket at https://support.powerbi.com
+**What Now?**
 
-1. The correct Profile ID is being used (see the Finding Webtrends Parameters section below).
-2. The user has access to the following reports:
-    - On-Site Searches - 34awBVEP0P6
-    - Exit Pages - 7FshY8eP0P6
-    - Next Pages - CTd5rpeP0P6
-    - Previous Pages - aSdOeaUgnP6
-    - Site Pages - oOEWQj3sUo6
-    - Onsite Ads Clickthroughs - 41df19b6d9f
-    - Cities  - aUuHskcP0P6
-    - Countries - JHWXJNcP0P6
-    - Visitors - xPcmTDDP0P6
-    - Visit Duration - U5KAyqdP0P6
-    - Search Phrases - IKYEDxIP0P6
-    - Traffic Sources - JmttAoIP0P6
-    - Search Engines - yGz3gAGP0P6
-    - Entry Pages - i6LrkNVRUo6
-    - Key Metrics 
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
-### Finding Webtrends Parameters and Credentials
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## What's included
+<a name="Included"></a>
+
+The Webtrends content pack pulls data from the following reports:  
+
+|Report Name|Report ID|
+|---|---|
+|Key Metrics| |
+|On-Site Searches|34awBVEP0P6|
+|Exit Pages|7FshY8eP0P6|
+|Next Pages|CTd5rpeP0P6|
+|Previous Pages|aSdOeaUgnP6|
+|Site Pages|oOEWQj3sUo6|
+|Onsite Ads Clickthroughs|41df19b6d9f|
+|Cities|aUuHskcP0P6|
+|Countries|JHWXJNcP0P6|
+|Visitors|xPcmTDDP0P6|
+|Visit Duration|U5KAyqdP0P6|
+|Search Phrases|IKYEDxIP0P6|
+|Traffic Sources|JmttAoIP0P6|
+|Search Engines|yGz3gAGP0P6|
+|Entry Pages|i6LrkNVRUo6|
+
+Note: For SharePoint profiles, the metric names may be a little different than what's show in the Webtrends UI. The following mapping is done to maintain consistency between SharePoint and Web profiles:   
+    - Sessions = Visits  
+    - New Users = New Visitors  
+    - Views per Session = Page Views per Visit  
+    - Avg Daily User Duration = Avg Time on Site per Visitor  
+
+## System requirements
+
+The content pack requires access to a Webtrends profile with the [correct set of reports](#Included) enabled. 
+
+## Finding parameters
+<a name="FindingParams"></a>
 
 Your Webtrends Profile ID can be found in the URL after you've selected a profile:
 
@@ -81,3 +104,9 @@ Your credentials are the same as what you enter when you sign into Webtrends, ho
 
 ![](media/powerbi-content-pack-webtrends/WebtrendsCreds.PNG)
 
+
+## Troubleshooting
+You may hit an issue while the content pack is loading, after you've provided your credentials. If you see the "Oops" message during the loading, please review the troubleshooting suggestions below. If you're still having issues please file a support ticket at https://support.powerbi.com
+
+1. The correct Profile ID is being used, see the [Finding Parameters](FindingParams) for more details.
+2. The user has access to the reports listed in the ["What's included"](#Included) section

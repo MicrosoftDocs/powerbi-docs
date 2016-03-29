@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="03/28/2016"
    ms.author="tpalmer"/>
    
 # Google Analytics content pack for Power&nbsp;BI
@@ -71,15 +71,17 @@ This content pack requires you to have a [Google Analytics](https://www.google.c
 
 ## Troubleshooting 
 
-If you're getting the message, "We couldn't import data from Google Analytics", confirm the parameters and try again. That's the most common issue. Parameters can fail during refresh instead of during the initial connection.
-
-**Important:** Parameters are case-sensitive. Enter them exactly as they appear in your Google Analytics account.
-
-![](media/powerbi-content-pack-google-analytics/PBI_GoogleAnalytics1.png)
+**Credentials**
+If you have multiple Google accounts, please use an incognito or an in-private broswer window during connection to ensure the correct account is used.
 
 If you're getting an error indicating your credentials are invalid however you were able to sign into Google, please confirm you have a [Google Analytics](https://www.google.com/analytics/) account.
 
+**Parameters**
 Unique names are currently required for the parameters. If you see an error indicating the value you selected is duplicated, please select another value or change the names in Google Analytics to make them unique. We're actively working to improve this. 
+
+Note: Parameters are case-sensitive. Enter them exactly as they appear in your Google Analytics account.
+
+![](media/powerbi-content-pack-google-analytics/PBI_GoogleAnalytics1.png)
 
 Still having issues? Open a support ticket to reach the Power BI team:
 

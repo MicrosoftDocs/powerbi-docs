@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="03/28/2016"
    ms.author="tpalmer"/>
 # GitHub content pack for Power BI
 
@@ -74,7 +74,7 @@ The following data is available from GitHub in Power BI:     
 
 |Table name|Description|
 |---|---|
-|Contributions|The contributions table gives the total additions, deletions and commits authored by the contributor aggregated per week.|
+|Contributions|The contributions table gives the total additions, deletions and commits authored by the contributor aggregated per week. The top 100 contributors are included.|
 |Issues|List all issues for the selected repo and it contains calculations like total and average time to close an issue, Total open issues,  Total closed issues. This table will be empty when there are no issues in the repo.|
 |Pull requests|This table contains all the Pull Requests for the repo and who pulled the request. It also contains calculations around how many open, closed and total pull requests, how long it took to pull the requests and how long the average pull request took. This table will be empty when there are no issues in the repo.|
 |Users|This table provides a list of GitHub users or contributors who have made contributions, filed issues or solved Pull requests for the repo selected.|

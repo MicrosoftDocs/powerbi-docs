@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="03/28/2016"
    ms.author="tpalmer"/>
 # Zendesk content pack for Power&nbsp;BI
 
@@ -42,7 +42,9 @@ Note: A Zendesk Admin account is required to connect. More details on requiremen
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
 
-5.  When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. Note that these credentials must be an Admin for your account.  (If you are already signed in to Zendesk in your browser, you may not be prompted for credentials.)
+5.  When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. (If you are already signed in to Zendesk in your browser, you may not be prompted for credentials.)
+
+    >Note: This content pack requires you connect with a Zendesk Admin account.  
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskSignIn.png)
 
@@ -66,7 +68,7 @@ Note: A Zendesk Admin account is required to connect. More details on requiremen
 
 ## What's included
 
-The Power BI content pack includes data on the following:
+The Power BI content pack includes data on the following:  
 - Users (end users and agents)  
 - Organizations  
 - Groups  
