@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2016"
+   ms.date="03/28/2016"
    ms.author="maggies"/>
 
 # Power BI Apple Watch app
@@ -49,6 +49,8 @@ The Power BI Apple Watch app consists of two parts.
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
 
 -   The **in-focus tile**: Click a tile on the index screen for an in-depth view of a specific tile.
+
+    ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_kpi.png)
  
 ## Set a custom Power BI complication
 You can also display a specific Power BI tile directly on the Apple Watch face, so it's visible and accessible at all times.
