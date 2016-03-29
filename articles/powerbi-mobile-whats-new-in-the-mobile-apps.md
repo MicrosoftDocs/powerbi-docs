@@ -14,17 +14,41 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2016"
+   ms.date="03/28/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## March 2016
+
+### All the Power BI mobile apps
+
+**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](powerbi-mobile-offline-android.md). 
+
+### iPhone mobile app
+
+**Apple Watch** View your Power BI tiles and KPIs on your [Apple Watch](powerbi-mobile-apple-watch.md).
+
+
+### Power BI app for Windows 10 devices
+
+**Quick access** Access your dashboards, reports, and groups quickly from anywhere in the Power BI app with search.
+
+**More live tiles on your Start screen** Pin KPIs and row cards on your start screen as live tiles, so you can see all of your critical metrics at a glance.
+
+**Pinch to zoom** Use pinch-to-zoom on your tablet to examine dashboards in greater detail.
+
+**Notifications** Get notified when your datasets, reports, and dashboards update with new data.
+
+
+
 
 ## February 2016
 
 ### Android
 View dashboards in [landscape mode on Android phones](powerbi-mobile-dashboards-in-the-android-app.md#view-dashboards-horizontally). 
 
-### Windows 10 mobile
+### Power BI app for Windows 10 devices
 View dashboards in [landscape mode in Windows 10 phones](powerbi-mobile-dashboards-in-the-win10phone-app.md#view-dashboards-horizontally).
 
 View [reports on your Windows 10 phone](powerbi-mobile-reports-in-the-windows-app.md).
