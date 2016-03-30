@@ -25,13 +25,18 @@ Then you view and interact with those reports in the [iPhone app (Power BI for 
 
 ## Open a Power BI report
 
-1.   On a dashboard, tap a tile to open it in focus mode.
+-   On your iPhone, in **My workspace** or in a group, tap a report.
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_reptgallry.png)
+
+-   Or: on a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_openreporticon.png).
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_tilefocus_sm.png)
 
-2. Tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_openreporticon.png).
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_rpt_sm.png)
+The report opens in landscape mode.
+
+![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_rpt_sm.png)
 
 >**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
 
