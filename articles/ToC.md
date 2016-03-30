@@ -269,7 +269,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-comma-separated-value-files",
             "powerbi-service-publish-from-excel",
             "powerbi-reduce-the-size-of-an-excel-workbook"
-
           ],
           "numberOfFeaturedArticles": 5
         },
