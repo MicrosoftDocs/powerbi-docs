@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2016"
+   ms.date="03/30/2016"
    ms.author="owend"/>
 
 # Get data from Power BI Desktop files
@@ -22,13 +22,13 @@
 
 Power BI Desktop makes connecting to a many different data sources, querying and transforming data, modeling your data, and creating powerful and dynamic reports easier than ever. And best of all, IT’S FREE! Not familiar with Power BI Desktop yet? Be sure to check out [Getting started with Power BI Desktop](articles/powerbi-desktop-getting-started.md).
 
-Once you’ve got some data into Power BI Desktop, and maybe created a few reports, it’s time to get your saved file into Power BI as a dataset. Then you can create some powerful dashboards and share your insights with others.
+Once you’ve got some data into Power BI Desktop, and maybe created a few reports, it’s time to get your saved file into Power BI.
 
 ## Where your file is saved makes a difference
 
-**Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI (service) you can *import* your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in Power BI and data and the data model from the Power BI Desktop file are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports.
+**Local** - If you save your file to a local drive on your computer or another location in your organization, you can *import* your file or you can *publish* from Power BI Desktop to get its data and reports into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really moved into Power BI. What really happens is a new dataset is created in Power BI and data and the data model from the Power BI Desktop file are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports.
 
-**OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Power BI Desktop and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI *connects* to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI. Just like if you saved your file to a local drive, you can also use Publish to update your dataset and reports in Power BI immediately;  otherwise Power BI will automatically synchronize usually within an hour.
+**OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Power BI Desktop and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI *connects* to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
 
 **OneDrive - Personal** – If you save your files to your own OneDrive account, you’ll get many of the same benefits as you would with OneDrive for Business. The biggest difference is when you first connect to your file (using Get Data > Files > OneDrive – Personal) you’ll need to sign in to your OneDrive with your Microsoft account, which is usually different from what you use to sign in to Power BI. When signing in with your OneDrive with your Microsoft account, be sure to select the Keep me signed in option. This way, Power BI will be able to connect to your file about every hour and make sure your dataset in Power BI is in-sync.
 
@@ -51,7 +51,7 @@ Once you’ve got some data into Power BI Desktop, and maybe created a few repor
 
 ## Publish a file from Power BI Desktop to your Power BI site
 
-Using Publish from Power BI Desktop is effectively the same as using Get Data in Power BI to import your file from a local drive or connect to it on OneDrive. If you’ll be regularly working on your file in Power BI Desktop, using Publish can be easier to update your dataset in Power BI. Here’s the quick how to, but you can see [Publish from Power BI Desktop](articles/powerbi-desktop-upload-desktop-files.md) to learn more.
+Using Publish from Power BI Desktop is effectively the same as using Get Data in Power BI to import your file from a local drive or connecting to it on OneDrive.  Here’s the quick how to, but you can see [Publish from Power BI Desktop](articles/powerbi-desktop-upload-desktop-files.md) to learn more.
 
 1.	In Power BI Desktop, click **File** > **Publish** > **Publish to Power BI**, or click **Publish** on the ribbon.
 

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="03/30/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -264,11 +264,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Data from files",
           "articles": [
             "powerbi-service-get-data-from-files",
-            "powerbi-bring-in-whole-excel-files",
+            "powerbi-service-excel-workbook-files",
+            "powerbi-service-powerbi-desktop-files",
+            "powerbi-service-comma-separated-value-files",
             "powerbi-service-publish-from-excel",
-            "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
-            "powerbi-reduce-the-size-of-an-excel-workbook",
-            "powerbi-service-excel-data"
+            "powerbi-reduce-the-size-of-an-excel-workbook"
+
           ],
           "numberOfFeaturedArticles": 5
         },
