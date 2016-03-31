@@ -5,7 +5,10 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
-editor=""/>
+editor=""
+tags=""
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
