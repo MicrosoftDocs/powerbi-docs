@@ -46,6 +46,8 @@ You can pin Power BI tiles and dashboards to the Windows Start screen from the P
 
 ## Pin a dashboard to your Start screen as a live tile
 
+There are two ways to pin a dashboard to your Start screen as a live tile.
+
 -   On the dashboards home page, right-click or press and hold a dashboard, then tap **Pin to Start**.
 
     ![](media/powerbi-mobile-pin-dashboard-from-win10phone-app/pbi_win10ph_dashhomeinvitepin.png)
