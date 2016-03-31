@@ -13,7 +13,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/19/2016"
+ms.date="03/31/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise
 
@@ -41,20 +41,26 @@ The *gateway* is different from a *data source*. The gateway is more of the prox
 
 Before you install the gateway, it’s important to know whether or not use you really need it.  It really depends on your data source and your organization needs.
 
-The gateway allows for the use of DirectQuery to an on-premises SQL Server or SAP HANA, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services. The enterprise gateway can also be used with scheduled refresh for data that you have imported into Power BI.
+The gateway allows for the use of DirectQuery to an on-premises SQL Server, SAP HANA, Oracle or Teradata, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services. The enterprise gateway can also be used with scheduled refresh for data that you have imported into Power BI.
 
 ### List of available data source types
 
-The following data sources are available for scheduled refresh.
-
-- SQL Server
-- Analysis Services
-- SAP HANA
-- File
-- Folder
-- Oracle
-- Teradata
-- SharePoint list (on-premises)
+|**Data source**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|
+|---|---|---|---|
+|Analysis Services Tabular|Yes|Yes|
+|Analysis Services Multidimensional|Yes|Yes|
+|SQL Server|Yes|Yes|
+|SAP HANA|Yes|Yes|
+|Oracle|Yes|Yes|
+|Teradata|Yes|Yes|
+|File|No|Yes|
+|Folder|No|Yes|
+|SharePoint list (on-premises)|No|Yes|
+|Web|No|Yes|
+|OData|No|Yes|
+|IBM DB2|No|Yes|
+|MySQL|No|Yes|
+|Sybase|No|Yes|
 
 ## Setting up the Power BI Gateway - Enterprise for the first time
 
