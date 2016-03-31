@@ -6,7 +6,9 @@
    authors="guyinacube"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
