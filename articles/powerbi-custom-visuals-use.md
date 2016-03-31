@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,18 +16,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="03/23/2016"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
 
-You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to 
+You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
 
 ![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
 
 >**Important**:
-A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well. 
+A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well.
 When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
 
 
@@ -55,6 +57,8 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 5. You will see the icon for the custom visual added to the visualizations available for your use.
 
     ![](media/powerbi-custom-visuals-use/VisualUse.png)
+
+6. Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
 
 ### See also
 

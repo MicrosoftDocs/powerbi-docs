@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/29/2016"
-   ms.author="v-jescoo"/>
+   ms.date="03/28/2016"
+   ms.author="davidi"/>
 
 # Modeling
 Welcome to the **Modeling** section of the **Guided Learning** course for Power BI. This section shows you how to get your connected data ready for use, using Power BI Desktop. Often, you'll connect to more than one data source to create your reports, need all that data to work together. Modeling is how you get it there.

@@ -6,7 +6,9 @@
    authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="03/29/2016"
    ms.author="maggies"/>
 
 # Get started with the iPhone app (Power BI for iOS)
@@ -35,7 +37,7 @@ Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-th
 
 [Download the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app") from the Apple App Store.
 
->**NOTE**: Your iPhone needs to be at least an iPhone 5, running at least iOS 8.0.
+>**NOTE**: Your iPhone needs to be at least an iPhone 5. To accommodate the best possible experience and new features for Power BI, we are now supporting only devices running iOS 9.0 and later.
 
 ## Sign up for the Power BI service
 

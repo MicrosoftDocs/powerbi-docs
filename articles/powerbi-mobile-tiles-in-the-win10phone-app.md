@@ -6,7 +6,9 @@
    authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="03/08/2016"
    ms.author="maggies"/>
 
 # Tiles in the Power BI mobile app for Windows 10  
@@ -39,14 +41,13 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
      Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
 
-     In this line chart, the values of the black and teal lines are listed under the month, August, where the vertical bar intersects them.
+     In this bar chart, the values for the **Decor** bar are shown at the top of the chart.
    
-     ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_LineChtTile.png)
-
+     ![](media/powerbi-mobile-tiles-in-the-win10phone-app/pbi_win10ph_bartile0316.png)
 
     Spin a pie chart to show the values of the slice at the top of the pie.  
 
-     ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10UniPie2Sm.png)
+    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/pbi_win10ph_piechartinteract.png)
 
      Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
 

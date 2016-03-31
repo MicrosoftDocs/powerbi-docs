@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,16 +16,54 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/02/2016"
+   ms.date="03/15/2016"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
 
-Check this page for known issues and recently-released features in Power BI Service.
+Check this page for known issues and recently-released features in **Power BI Service**.
 
->NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md) and the [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+>**NOTE**: 
+>
+For related "What's New" information, see: 
+>
+>[What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+>
+>[What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
+>
+>[Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+
+
 
 ## Recent updates
+
+**March 11, 2016**
+
+This month we made some pdates to dashboards, Quick Insights, and Q&A.
+
+***Dashboards***
+
+-   Full Screen mode: print without having to exit Full Screen mode first
+
+-   Full Screen mode: expand your tiles to fill the entire canvas and remove excess white space by selecting **Fit to Width**
+
+-   Use Tile Flow to automatically align your tiles to the top left corner of the canvas.
+
+***Quick Insights***
+
+-   The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data. 
+
+***Q&A***
+
+-   You can now specify Gauge and Area charts in Q&A
+
+-   Improved auto-complete for Q&A - as soon as you type just a few characters, Q&A begins auto completing and suggesting visuals for you.
+
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update/)
+
+
+
 
 **February 10, 2016**
 

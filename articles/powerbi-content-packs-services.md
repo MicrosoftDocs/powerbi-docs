@@ -5,7 +5,10 @@
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
-   editor=""/>
+   editor=""
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"

@@ -6,7 +6,9 @@
    authors="davidiseminger"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="03/15/2016"
    ms.author="davidi"/>
 
 # Tips and tricks for color formatting in Power BI

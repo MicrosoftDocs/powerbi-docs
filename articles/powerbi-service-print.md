@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="03/23/2016"
    ms.author="mihart"/>
 
 # Printing from Power BI
@@ -39,9 +41,11 @@ Print an entire dashboard or a report page from Power BI.
 
 ## Print a report page
 
+Reports can be printed one page at a time.
+
 1. Open the report in either Reading View or Editing View.
 
-2. Select **File** > **Print page** to print the current report page.
+2. Select **File** > **Print** to print the current report page.
 
     ![](media/powerbi-service-print/pbi_print_report_file.png)
 

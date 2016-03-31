@@ -16,8 +16,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/29/2016"
-   ms.author="v-jescoo"/>
+   ms.date="03/28/2016"
+   ms.author="davidi"/>
 
 # Using Power BI
 
@@ -30,7 +30,7 @@ As Will explains the many things you can do with Power BI, keep in mind that all
 -   Share your dashboards with others, especially people who are on the go
 -   View and interact with shared dashboards and reports in Power BI Mobile apps
 
-![](media/powerbi-learning-course0-article1/c0a1_1.png)
+![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
 As mentioned earlier, you might spend all your time in the **Power BI service**, getting data and creating dashboards – that’s just fine. Someone else on your team might spend all of her time in **Power BI Desktop**, which is fine too. In order to help you understand the full continuum of Power BI and what it can do, we’ll show you all of it… then you can decide how to use it to your best advantage.
 

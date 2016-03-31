@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="03/23/2016"
    ms.author="mihart"/>
 
 # Aggregates in Power BI  
@@ -105,7 +107,7 @@ You can also use a non-aggregated field as a numeric field. For example, if you 
 2.  And if you change the aggregation from the default **Do not summarize** to **Count (Distinct)**, Power BI counts the number of different chains. In this case, there are 2: Fashions Direct and Lindseys.
 
     ![](media/powerbi-service-aggregates/aggregates_count.png)
-   
+
 3.  And if you change the aggregation to **Count**, Power BI counts the total number. In this case, there are 104 entries for **Chain**. By adding **Chain** as a filter, you can see that there are 37 rows for Fashions Direct and 67 rows for Lindseys.  
 
     ![](media/powerbi-service-aggregates/count_of_chain_104.png)

@@ -6,7 +6,9 @@
    authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/25/2016"
+   ms.date="03/28/2016"
    ms.author="maggies"/>
 # Get started with the Power BI for Android app
 
@@ -38,7 +40,7 @@ Bring your own data together and create dashboards and reports on the [Power BI
 
 ## Sign up for the Power BI service on the web
 
-If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android phone to see your own dashboards from anywhere.
+If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)](http://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android phone to see your own dashboards from anywhere.
 
 1.  In the Power BI service, tap [Sign up](http://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
 
@@ -56,7 +58,9 @@ See what else you can do in the Android phone app for Power BI.
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-android-app.md).
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
--   View the dashboards in [your groups](powerbi-mobile-groups-in-the-android-app.md).
+-   View [report page tiles](powerbi-mobile-report-page-tiles-in-the-android-app.md).
+-   Open [Power BI reports](powerbi-mobile-reports-in-the-android-app.md).
+-   View [your groups](powerbi-mobile-groups-in-the-android-app.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone to open a related dashboard. 

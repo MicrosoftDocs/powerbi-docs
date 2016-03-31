@@ -6,7 +6,9 @@
    authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,17 +16,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2016"
+   ms.date="03/11/2016"
    ms.author="maggies"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
 
+You don't create dashboards on your iPhone. In the Power BI service ([https://www.powerbi.com](https://www.powerbi.com)) on your computer, you [create dashboards](powerbi-service-dashboards.md) or [connect to built-in dashboards for services](powerbi-content-packs-services.md) such as Salesforce.
 
-Power BI comes with built-in dashboards for some data sources such as Salesforce, and you can create your own [dashboards in Power BI](powerbi-service-dashboards.md). Your colleagues can also share their dashboards with you.
-
-In the iPhone app for Microsoft Power BI for iOS, you see and can interact with all of these dashboards.
+Then in the iPhone app for Microsoft Power BI for iOS, you see and can interact with all of these dashboards.
 
 ## View dashboards on your iPhone  
 1.  Open the Power BI app on your iPhone and sign in.

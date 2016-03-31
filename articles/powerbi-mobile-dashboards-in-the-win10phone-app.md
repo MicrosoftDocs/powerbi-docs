@@ -6,7 +6,9 @@
    authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2016"
+   ms.date="03/11/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Power BI mobile app for Windows 10  
@@ -23,7 +25,9 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 
 Power BI brings together data from different types of data sources &#151; for example, services such as Salesforce, content packs from your organization, databases, and Excel workbooks.
 
-You [create and connect to dashboards in the Power BI service](powerbi-service-dashboards.md). Then in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md), you can explore these same dashboards.
+You don't create dashboards on your Windows 10 mobile device. In the Power BI service ([https://www.powerbi.com](https://www.powerbi.com)) on your computer, you [create dashboards](powerbi-service-dashboards.md) or [connect to built-in dashboards for services](powerbi-content-packs-services.md) such as Salesforce.
+
+Then in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md), you can explore these same dashboards.
 
 ## View dashboards on your Windows 10 device  
 1.  Open the Power BI app on your Windows 10 device and sign in.
@@ -32,11 +36,11 @@ You [create and connect to dashboards in the Power BI service](powerbi-service-d
 
 2.  Tap a dashboard to open it.   
 
-    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Win10Ph_DashHome.png)
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/pbi_win10ph_dashhome0316.png)
 
     Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/WPI_Win10Ph_Dash.png)
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/pbi_win10ph_dash0316.png)
 
 5.  In the dashboard, you can:
 

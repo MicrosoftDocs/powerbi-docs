@@ -6,7 +6,9 @@
    authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,16 +16,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2016"
+   ms.date="03/11/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Android app for Power BI  
 
-Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
+Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. Power BI brings together data from different types of data sources &#151; for example, services such as Salesforce, organizational content packs, databases, and Excel workbooks.
 
-Power BI brings together data from different types of data sources &#151; for example, services such as Salesforce, organizational content packs, databases, and Excel workbooks.
+You don't create dashboards on your Android phone. In the Power BI service ([https://www.powerbi.com](https://www.powerbi.com)) on your computer, you [create dashboards](powerbi-service-dashboards.md) or [connect to built-in dashboards for services](powerbi-content-packs-services.md) such as Salesforce.
 
-You [create and connect to dashboards in the Power BI service](powerbi-service-dashboards.md). Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md), you can explore these same dashboards. Dashboards refresh in real time, automatically, so you don't need to manually refresh them.
+Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md), you can explore these same dashboards. Dashboards refresh in real time, automatically, so you don't need to manually refresh them.
 
 ## View dashboards on your Android phone  
 1.  Open the Power BI app on your Android phone and sign in.

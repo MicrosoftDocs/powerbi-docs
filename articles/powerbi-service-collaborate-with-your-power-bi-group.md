@@ -6,7 +6,9 @@
    authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,13 +16,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/21/2016"
+   ms.date="03/09/2016"
    ms.author="maggies"/>
 # Collaborate with your Power BI group
 
 Probably the main reason you created a group in Power BI was to share and collaborate on dashboards, reports, and datasets in Power BI. Collaborating on data starts with connecting to files on your group’s OneDrive for Business. [Connect to your group’s files](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md).
 
->NOTE: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+>**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 Collaboration doesn’t end with Power BI. It continues with other Office 365 group services, like sharing files on OneDrive for Business, conversations in Exchange, calendar, tasks, and so on. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1).
 
@@ -33,6 +35,8 @@ Collaborating in Office 365 starts from the group’s workspace.
 2.  Select the ellipsis (**…**) next to your group name.
 
     ![](media/powerbi-service-collaborate-with-your-power-bi-group/PBI_Grp_LeftNavEllips.png)
+
+    >**Note**: The first time you go to your group in Office 365, it may take some time. Give it 15 to 30 minutes, then refresh your browser.
 
 
 ## Have a group conversation

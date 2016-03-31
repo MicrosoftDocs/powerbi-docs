@@ -5,7 +5,10 @@
    documentationCenter=""
    authors="mihart"  
    manager="mblythe"
-   editor=""/>
+   editor=""
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -13,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 
 
@@ -49,7 +52,7 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify.png)
 
-4. Name the page and add alternate names.  Cortana uses these names when it searches for results.
+4. Name the page and add alternate names.  Cortana uses these names when it searches for results. In the **Visualizations** pane, select the paintbrush icon and choose **Page Information**.
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_cortana_names_new.png)
 
@@ -63,7 +66,7 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
       ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
-5. Publish the report to powerbi.com.
+5. Publish the report to Power BI service (powerbi.com).
 
 6. [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 

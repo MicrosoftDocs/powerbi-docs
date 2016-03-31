@@ -1,13 +1,15 @@
-<properties 
+<properties
    pageTitle="Frequently asked questions"
    description="Frequently asked questions about Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggiesMSFT" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="maggiesMSFT"
+   manager="mblythe"
    editor=""
-   tags=""/>
- 
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -56,7 +58,7 @@ Power BI does not support email addresses provided by consumer email services or
 
 No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Analysis Services Connector](powerbi-analysis-services-connector.md), you can connect live to your on-premises SQL Server Analysis Services Tabular models. And, with the [Power BI Personal Gateway](powerbi-personal-gateway.md), you can refresh data from other on-premises data sources.
 
-You can also view on-premises SQL Server mobile reports with the Power BI iOS apps: 
+You can also view on-premises SQL Server mobile reports with the Power BI iOS apps:
 
 -   [SQL Server mobile reports on the iPhone](powerbi-mobile-iphone-kpis-mobile-reports.md).
 -   [SQL Server mobile reports on the iPad](powerbi-mobile-ipad-kpis-mobile-reports.md)
@@ -125,7 +127,7 @@ Learn more about Power BI security, privacy and compliance in this [Power BI Sec
 
 ## Is government, academic and non-profit pricing available for Power BI?
 
-Yes. Government and academic pricing is offered through the MOSP/Direct, EA and Open licensing programs. Government pricing is also available in syndication. Non-profit pricing is only available in MOSP/Direct. Power BI is not available for the US Government Community Cloud (GCC).
+Yes, non-profit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. Power BI is not yet available for the US Government Community Cloud (GCC).
 
 **Note:** Work email addresses ending in **.edu** and **.org** are supported. Those ending in **.gov** aren’t currently supported.
 

@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,13 +16,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2016"
+   ms.date="03/23/2016"
    ms.author="mihart"/>
 
 # Create and submit a visual to the gallery  
 
 Want to create your own visual and add it to the Visuals Gallery for others to use?  Just follow these few steps.
-  
+
 ![](media/powerbi-custom-visuals-create-for-the-gallery/example_viz.png)
 
 1.   [Create a custom visual with the Power BI Developer Tools (Preview)](#devtools)

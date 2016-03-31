@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2016"
-   ms.author="v-jescoo"/>
+   ms.date="03/20/2016"
+   ms.author="davidi"/>
 
 # Create a Direct Connection to Azure SQL
 

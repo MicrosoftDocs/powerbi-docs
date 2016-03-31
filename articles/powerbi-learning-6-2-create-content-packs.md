@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/29/2016"
-   ms.author="v-jescoo"/>
+   ms.date="03/28/2016"
+   ms.author="davidi"/>
 
 # Create a content pack in Power BI
 
@@ -46,4 +46,4 @@ When I publish, the content pack is added to the organization's content gallery.
 
 ![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02contpksuccess.png)
 
-On to the next lesson: [Create a content pack in Power BI](powerbi-learning-6-3-use-content-packs.md).
+On to the next lesson!

@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="03/30/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -147,7 +147,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-dash-and-reports-fullscreen",
             "powerbi-service-display-dash-in-focus-mode",
             "powerbi-service-display-tile-in-full-screen-mode",
-            "powerbi-service-display-dashboard-report-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
             "powerbi-service-qr-code-for-tile",
             "powerbi-service-add-an-image-to-a-dashboard",
@@ -199,8 +198,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-save-a-report",
             "powerbi-service-about-filters-and-highlighting-in-reports",
             "powerbi-service-how-to-use-a-report-filter",
+            "powerbi-service-analyze-in-excel",
             "powerbi-service-visual-interactions",
-            "powerbi-service-converting-your-reports-to-the-new-report-editor",
             "powerbi-service-open-a-report-in-reading-view",
             "powerbi-service-go-from-reading-view-to-editing-view",
             "powerbi-service-interact-with-a-report-in-editing-view",
@@ -250,6 +249,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-tutorial-enhancedscatter",
             "powerbi-service-tutorial-filled-maps-choropleths",
             "powerbi-service-tutorial-funnel-charts",
+            "powerbi-service-tutorial-kpi",
             "powerbi-service-tutorial-radial-gauge-charts",
             "powerbi-service-tutorial-scatter",
             "powerbi-service-tutorial-slicers",
@@ -264,11 +264,11 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Data from files",
           "articles": [
             "powerbi-service-get-data-from-files",
-            "powerbi-bring-in-whole-excel-files",
+            "powerbi-service-excel-workbook-files",
+            "powerbi-service-powerbi-desktop-files",
+            "powerbi-service-comma-separated-value-files",
             "powerbi-service-publish-from-excel",
-            "powerbi-replace-an-excel-power-bi-desktop-or-csv-file",
-            "powerbi-reduce-the-size-of-an-excel-workbook",
-            "powerbi-service-excel-data"
+            "powerbi-reduce-the-size-of-an-excel-workbook"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -307,29 +307,33 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-gateway-enterprise-manage-ssas",
             "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
+            "powerbi-gateway-enterprise-manage-scheduled-refresh",
             "powerbi-gateway-enterprise-upgrade-as-connector",
             "powerbi-analysis-services-connector",
             "powerbi-admin-analysis-services-connector-indepth",
             "powerbi-admin-data-management-gateway-in-office-365"
           ],
-          "numberOfFeaturedArticles": 7
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Administration",
           "articles": [
             "powerbi-admin-administering-power-bi-in-your-organization",
+            "powerbi-admin-powerbi-free-in-your-organization",
             "powerbi-admin-purchasing-power-bi-pro",
             "powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial",
             "powerbi-admin-power-bi-security",
+            "powerbi-admin-rls",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
             "powerbi-admin-migrating-to-the-new-power-bi-experience",
             "powerbi-admin-migration-faq",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
             "powerbi-admin-closing-your-account",
+            "powerbi-admin-free-with-custom-azure-directory",
             "powerbi-admin-mobile-intune"
           ],
-          "numberOfFeaturedArticles": 7
+          "numberOfFeaturedArticles": 9
         },
         		{
           "sectionTitle": "Troubleshooting",
@@ -378,12 +382,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-analysis-services-tabular-data",
             "powerbi-desktop-use-directquery",
             "powerbi-desktop-directquery-for-oracle-teradata",
+            "powerbi-desktop-sap-bw-connector",            
             "powerbi-desktop-privacy-levels",
             "powerbi-service-facebook-connector",
             "powerbi-service-google-analytics-connector",
             "powerbi-desktop-project-online-connect-to-data"
           ],
-          "numberOfFeaturedArticles": 9
+          "numberOfFeaturedArticles": 10
         },
         {
           "sectionTitle": "Transform and shape data",
@@ -430,6 +435,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-tutorial-create-measures",
             "powerbi-desktop-tutorial-create-calculated-columns",
             "powerbi-desktop-tutorial-facebook-analytics",
+            "powerbi-desktop-send-smile-privacy-statement",            
             "powerbi-desktop-pyramid-analytics"
           ],
           "numberOfFeaturedArticles": 5
@@ -458,6 +464,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-android-app-get-started",
             "powerbi-mobile-win10phone-app-get-started",
             "powerbi-mobile-create-dashboard",
+            "powerbi-mobile-offline-android",
             "powerbi-admin-mobile-intune"
           ],
           "numberOfFeaturedArticles": 8
@@ -482,6 +489,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-iphone-kpis-mobile-reports",
             "powerbi-mobile-dashboards-in-the-iphone-app",
             "powerbi-mobile-tiles-in-the-iphone-app",
+            "powerbi-mobile-reports-in-the-iphone-app",
+            "powerbi-mobile-apple-watch",
             "powerbi-mobile-report-page-tiles-in-the-iphone-app",
             "powerbi-mobile-share-a-dashboard-from-the-iphone-app",
             "powerbi-mobile-set-data-alerts-in-the-iphone-app",
@@ -498,6 +507,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-mobile-dashboards-in-the-android-app",
             "powerbi-mobile-tiles-in-the-android-app",
+            "powerbi-mobile-reports-in-the-android-app",
             "powerbi-mobile-report-page-tiles-in-the-android-app",
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",

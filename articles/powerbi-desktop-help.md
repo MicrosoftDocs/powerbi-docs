@@ -6,7 +6,9 @@
    authors="davidiseminger"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/15/2015"
+   ms.date="03/09/2016"
    ms.author="davidi"/>
 # Power BI Desktop Help Links
 This page provides easy links to help topics for Power BI Desktop.

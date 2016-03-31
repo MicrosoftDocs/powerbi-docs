@@ -16,8 +16,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/29/2016"
-   ms.author="v-jescoo"/>
+   ms.date="03/28/2016"
+   ms.author="davidi"/>
 
 # Building Blocks of Power BI
 Everything you do in Power BI can be broken down into a few basic **building blocks**. Once you understand these building blocks, you can expand on each of them and begin creating elaborate and complex reports. After all, even seemingly complex things are built from basic building blocks – buildings are created with wood, steel, concrete and glass. Cars are made from metal, fabric, and rubber. Of course, buildings and cars can be basic or elaborate as well – depending on how those basic building blocks are arranged.
@@ -36,7 +36,7 @@ The basic building blocks in Power BI are the following:
 
 A **visualization** (sometimes also referred to as a **visual**) is a visual representation of data, such as a chart, a graph, a color-coded map, or other interesting things you can create to represent your data visually. Power BI has all sorts of different visualization types, and more coming all the time. The following image shows a collection of different visualizations that were created in the Power BI service.
 
-![](media/powerbi-learning-course0-article0b/c0a0b_1.png)
+![](media/powerbi-learning-0-0b-building-blocks-power-bi/c0a0b_1.png)
 
 Visualizations can be simple – like a single number that represents something significant – or they can be visually complex – like a gradient-colored map that shows voter sentiment toward a certain social issue or concern. The goal of a visual is to present data in a way that provides context and insights, either of which would likely be difficult to discern from a raw table of numbers or text.
 
@@ -45,7 +45,7 @@ A **dataset** is a collection of data that Power BI uses to create its visualiza
 
 You can have a simple dataset based on a single table from Excel workbook, similar to what’s shown in the following image.
 
-![](media/powerbi-learning-course0-article0b/c0a0b_2.png)
+![](media/powerbi-learning-0-0b-building-blocks-power-bi/c0a0b_2.png)
 
 **Datasets** can also be a combination of many different sources, which you can filter and combine to provide a unique collection data (a dataset) for use in Power BI.
 
@@ -61,7 +61,7 @@ Once you have a dataset, you can begin creating visualizations that display diff
 ##Reports
 In Power BI, a **report** is a collection of visualizations that appear together on one or more pages. Just like any other report you might create for a sales presentation, or a report you would write for a school assignment, in Power BI a **report** is a collection of items that are related to one another. The following image shows a **report** in Power BI Desktop – in this case, it’s the fifth page in a six-page report. You can also create reports in the Power BI service.
 
-![](media/powerbi-learning-course0-article0b/c0a0b_3.png)
+![](media/powerbi-learning-0-0b-building-blocks-power-bi/c0a0b_3.png)
 
 Reports let you create many visualizations, on multiple different pages if necessary, and lets you arrange them in whatever way best tells your story.
 
@@ -76,7 +76,7 @@ You can share dashboards with other users or groups, who can then interact with 
 ##Tiles
 In Power BI, a **tile** is a single visualization found in a report or on a dashboard. It’s the rectangular box that contains each individual visual. In the following image, you see one tile (highlighted by a bright box) which is also surrounded by other tiles.
 
-![](media/powerbi-learning-course0-article0b/c0a0b_4.png)
+![](media/powerbi-learning-0-0b-building-blocks-power-bi/c0a0b_4.png)
 
 When you’re *creating* a report or a dashboard in Power BI, you can move or arrange tiles however you want to present your information. You can make them bigger, change their height or width, and snuggle them up to other tiles however you want.
 

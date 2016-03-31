@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,12 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/16/2016"
+   ms.date="03/23/2016"
    ms.author="mihart"/>
 
 # Create a Power BI dashboard
 
-You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard.  This article shows you how to create an empty dashboard using the Power BI left navigation pane. An empty dashboard isn't very useful though -- follow the links below, and at the bottom of the page, to learn how to add content to your dashboard.
+You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard.  This article shows you how to create an empty dashboard using the Power BI service left navigation pane. An empty dashboard isn't very useful though -- follow the links below, and at the bottom of the page, to learn how to add content to your dashboard.
 
 >**NOTE**: Remember that your dashboard will be blank until you [get some data](powerbi-service-get-data.md) and [pin some tiles](powerbi-service-dashboard-tiles.md).
 
@@ -35,9 +37,9 @@ This method creates a new, empty, dashboard.
 
 	![](media/powerbi-service-create-a-dashboard/PBI_CreateDashNewName.png)
 
-  The new dashboard is created.  See it listed under **Dashboards** in your left navigation pane.
+    The new dashboard is created.  See it listed under **Dashboards** in your left navigation pane.
 
-  ![](media/powerbi-service-create-a-dashboard/new_dash.png)
+    ![](media/powerbi-service-create-a-dashboard/new_dash.png)
 
 3. Select the new dashboard to make it the active dashboard.  Notice that it's blank -- we haven't added any content yet.
 

@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/29/2016"
-   ms.author="v-jescoo"/>
+   ms.date="03/28/2016"
+   ms.author="davidi"/>
 
 # Edit a content pack in Power BI
 
@@ -49,5 +49,3 @@ Power BI takes those changes and publishes the updated content pack to the conte
 Anybody who has connected to my content pack gets a message that the content pack has changed, and asks if they want to accept the changes or keep the older version.
 
 So as the content pack owner, you can manage the versions that your colleagues are using.
-
-On to the next lesson: [Create a content pack in Power BI](powerbi-learning-6-4-update-content-pack.md).

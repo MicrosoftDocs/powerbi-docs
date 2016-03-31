@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="03/22/2016"
    ms.author="mihart"/>
 
 
@@ -23,6 +25,8 @@
 Have a new dataset and not quite sure where to start?  Need to build a dashboard fast?  Want to quickly look for insights you may have missed?
 
 Run Quick Insights to generate interesting interactive visualizations based on your data.  
+
+>**NOTE**: Quick Insights are not available in Power BI Desktop.
 
 ## Run Quick Insights on a dataset
 
@@ -59,7 +63,7 @@ Run Quick Insights to generate interesting interactive visualizations based on y
 
 ## See also
 
-[Optimize your data for Power BI Auto Insights](powerbi-service-auto-insights-optimize.md)
+[Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

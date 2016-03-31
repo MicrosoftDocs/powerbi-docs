@@ -6,7 +6,9 @@
    authors="davidiseminger"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/16/2015"
+   ms.date="03/09/2016"
    ms.author="davidi"/>
 # Data sources in Power BI Desktop
 
@@ -47,6 +49,7 @@ The **File** category provides the following data connections:
 -   CSV
 -   XML
 -   Text
+-   JSON
 -   Folder
 
 The following image shows the **Get Data** window for **File**.
@@ -64,7 +67,7 @@ The **Database** category provides the following data connections:
 -   PostgreSQL Database
 -   Sybase Database
 -   Teradata Database
--   SAP HANA Database (Beta)
+-   SAP HANA Database
 
 The following image shows the **Get Data** window for **Database**.
 
@@ -109,6 +112,7 @@ The **Other** category provides the following data connections:
 -   Merketo (Beta)
 -   QuickBooks Online (Beta)
 -   Smartsheet (Beta)
+-   SQL Sentry (Beta)
 -   Stripe (Beta)
 -   SweetIQ (Beta)
 -   Twilio (Beta)

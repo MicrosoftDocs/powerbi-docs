@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,15 +16,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="03/22/2016"
    ms.author="mihart"/>
 # Hyperlinks in tables
 
 This topic teaches you how to create and work with hyperlinks in tables and matrixes.  URLs in Power BI tables (and matrixes) can function as hyperlinks. Underlined text in a table or matrix that changes color as you hover over it, is a hyperlink.  Clicking on it will take you to the linked URL. 
 
-To learn how to add hyperlinks to visualization titles, see xxxx.
-
 ![](media/powerbi-service-hyperlinks-in-tables/hyperlinkedTable.png)
+
+>**NOTE**:
+>Hyperlinks can also be added to [tiles on dashboards](documentation/powerbi-service-edit-a-tile-in-a-dashboard), [text boxes in reports](powerbi-service-add-a-hyperlink-to-a-text-box.md), and [text boxes on dashboards](powerbi-service-add-a-widget-to-a-dashboard).
 
 ## To create a hyperlink in Power BI
 
@@ -30,7 +33,7 @@ Hyperlinks in tables and matrixes can be created in Power BI Desktop but not fr
 
 ## Create a table or matrix hyperlink in Power BI Desktop
 
-1. If the hyperlink doesn't already exist as a column in your dataset, add it as a [custom column](powerbi-desktop-common-query-tasks.md).
+1. If the hyperlink doesn't already exist as a column in your dataset, use Desktop to add it as a [custom column](powerbi-desktop-common-query-tasks.md).
 
 2. Select the column and in the **Modeling** tab choose the dropdown for **Data Category**.
 

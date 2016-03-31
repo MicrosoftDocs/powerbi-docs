@@ -6,7 +6,9 @@
    authors="minewiskan"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -35,6 +37,7 @@ You can get data from any of these data sources in Power BI by clicking **My Wor
 **Power BI Desktop** (.pbi) -  You can use Power BI Desktop to query and load data from external data sources, extend your data model with measures and relationships, and create reports. You can import your Power BI Desktop file into your Power BI site. Power BI Desktop is best for more advanced users who have a good understanding of their data sources, data query and transformation, and data modeling concepts. To learn more, see [Connect to data in Power BI Desktop](powerbi-desktop-connect-to-data.md).
 
 **Comma Separated Value** (.csv) -  Files are simple text files with rows of data. Each row can contain one or more values, each separated by a comma. For example, a .csv containing name and address data can have a number of rows where each row has values for first name, last name, street address, city, state, and so on. You cannot import data into a .csv file, but many applications, like Excel, can save simple table data as a .csv file.
+
 For other file types like XML Table (.xml) or text (.txt) files, you can use Get & Transform to query, transform, and load that data into an Excel or Power BI Desktop file first. You can then import the Excel or Power BI Desktop file into Power BI.
 
 Where you store your files makes a big difference, too. OneDrive for Business provides the greatest amount of flexibility and integration with Power BI. If you keep your files on your local drive, that’s ok, but if you need to refresh your data, a few extra steps are involved. More details are provided in the linked articles.
@@ -51,7 +54,7 @@ Content packs contain all of the data and reports you need already prepared for 
 ## Databases
 ![](media/powerbi-service-get-data/pbi_getdata_databases.png)
 
-**Databases in the Cloud** – From the Power BI service, you can connect live to Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight, and SQL Server Analysis Services using DirectQuery. Connections from Power BI to these databases are live, that is, when you’ve connected to say an Azure SQL Database, and you begin exploring its data by creating reports in Power BI, anytime you slice your data or add another field to a visualization. To learn more, see [Azure and Power BI](powerbi-azure-and-power-bi.md).
+**Databases in the Cloud** – From the Power BI service, you can connect live to Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight, and SQL Server Analysis Services using DirectQuery. Connections from Power BI to these databases are live, that is, when you’ve connected to say an Azure SQL Database, and you begin exploring its data by creating reports in Power BI, anytime you slice your data or add another field to a visualization, a query is made right to the database. To learn more, see [Azure and Power BI](powerbi-azure-and-power-bi.md).
 
 **Databases on-premises** – From the Power BI service, you can connect directly to SQL Server Analysis Services Tabular model databases. A Power BI Enterprise Gateway is required. If you’re unsure how to connect to your organization’s tabular model database, check with your administrator or IT department. To learn more, see [SQL Server Analysis Tabular data in Power BI](powerbi-sql-server-analysis-services-tabular-data.md).
 

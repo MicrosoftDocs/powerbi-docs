@@ -6,7 +6,9 @@
    authors="maggiesMSFT" 
    manager="mblythe" 
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2016"
+   ms.date="03/09/2016"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -150,3 +152,14 @@ Power BI detects your language based on the language preferences on your compute
 
 4.  Under Languages, click the **Language and input settings** button.
 
+5.  Click **Add**, select a language, and click **OK**.
+
+    ![](media/powerbi-supported-languages/pbi_langs_enus.png)
+
+    The new language is at the end of the list. 
+
+6.  Drag the new language to the top of the list, and click **Display Google Chrome in this language**.
+
+    ![](media/powerbi-supported-languages/pbi_langs_eses.png)
+
+    You may need to close and reopen your browser to see the change.

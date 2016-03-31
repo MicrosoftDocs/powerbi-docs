@@ -6,7 +6,9 @@
    authors="mihart"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="03/22/2016"
    ms.author="mihart"/>
 
 # Tutorial: Filled Maps (Choropleths) in Power BI  
@@ -79,7 +81,7 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a Location in a Filled Map filters the other visualizations on the report page... and vice versa.
+Highlighting a Location in a Filled Map cross-filters the other visualizations on the report page... and vice versa.
 
 1.  On the Filled Map, select a state.  This highlights the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 74, Texas is in the Central District \#23, and that most of the sales volume comes from the Moderation and Convenience segments.   
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/img008.png)
@@ -96,6 +98,7 @@ If you do not have access to latitude and longitude data, [follow these instruct
 ## See also  
  [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
  [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+ [Change the type of visualization being used](powerbi-service-change-the-type-of-visualization-in-a-report.md)
  [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Try it out -- it's free!](https://powerbi.com/)  
