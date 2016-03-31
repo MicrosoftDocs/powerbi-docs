@@ -31,7 +31,7 @@ Connect to the [Ziosk Survey Analytics content pack](https://app.powerbi.com/get
 ![](media/powerbi-content-pack-ziosk/getdata.png)
 
 2. In the Services box, select Get.  
-![](media/powerbi-content-pack-ziosk/services.PNG)
+![](media/powerbi-content-pack-ziosk/services.png)
 
 3. Select Ziosk Survey Analytics, then select Connect.  
 ![](media/powerbi-content-pack-ziosk/connect.png)

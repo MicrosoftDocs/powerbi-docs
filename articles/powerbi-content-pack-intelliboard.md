@@ -31,7 +31,7 @@ Connect to the [IntelliBoard content pack](https://app.powerbi.com/getdata/servi
 ![](media/powerbi-content-pack-intelliboard/getdata.png)
 
 2. In the Services box, select Get.  
-![](media/powerbi-content-pack-intelliboard/services.PNG)
+![](media/powerbi-content-pack-intelliboard/services.png)
 
 3. Select IntelliBoard, then select Connect.  
 ![](media/powerbi-content-pack-intelliboard/connect.png)
