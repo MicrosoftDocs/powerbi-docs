@@ -69,6 +69,8 @@ Before we go further, here are some important definitions to understand:
 
 **User configured manual or scheduled refresh** – This means you can manually refresh a dataset by using Refresh Now or setup a refresh schedule by using Schedule Refresh in a dataset’s settings. This type of refresh is required for Power BI Desktop files and Excel workbooks that connect to external online and on-premises data sources.
 
+> **Note**: When you configure a time for scheduled refresh, there can be a delay of up to one hour before it begins.
+
 **Live/DirectQuery** – This means there is a live connection between Power BI and the data source. Admins will need to have an enteprise gateway configured, but user interaction may not be needed.
 
 ## Local files
@@ -162,7 +164,7 @@ To learn more, see [Introduction to organizational content packs](powerbi-servic
 ## Live connections and DirectQuery to on-premises data sources 
 With the enterprise gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh. 
 
-When you configure a data source with the enterprise gateway, you also have the option to configure scheduled refresh for imported datasets.
+When you configure a data source with the enterprise gateway, you also have the option to configure scheduled refresh for imported datasets. [Learn more](powerbi-gateway-enterprise.md)
 
 > **Note**: If your dataset is configured for a live or DirectQuery connection, you will not have the option to use scheduled refresh. Scheduled refresh is only available for imported datasets.
 
@@ -175,9 +177,7 @@ When you configure a data source with the enterprise gateway, you also have the 
 |Oracle|Yes|Yes|Yes|
 |Teradata|Yes|Yes|Yes|
 
-**Important**: In order to connect to an on-premises Analysis Services server, a [Power BI Analysis Services Connector](powerbi-analysis-services-connector.md) must be installed and configured on a server in your organization. This is typically done by an administrator.
-
-To learn more, see [SQL Server Analysis Services data in Power BI](powerbi-sql-server-analysis-services-tabular-data.md).
+To learn more, see [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md)
 
 ## Databases in the cloud  
 With direct query, there is a live connection between Power BI and the database in the cloud. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. If there is no user interaction in a visualization, like in a dashboard, data is refreshed automatically about every fifteen minutes. Because there is a direct connection between Power BI and the database, there is no need to manually refresh or setup a refresh schedule for the dataset. And, because both the Power BI service and the data source are in the cloud, there is no need for a Personal Gateway.
