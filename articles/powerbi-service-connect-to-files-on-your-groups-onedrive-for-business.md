@@ -69,7 +69,7 @@ Now that your files are in your group’s OneDrive for Business, you have a choi
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GetFiles.png)
 
-4. Select **OneDrive - *Your Group Name***.
+4. Select **OneDrive** - *Your Group Name*.
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 
