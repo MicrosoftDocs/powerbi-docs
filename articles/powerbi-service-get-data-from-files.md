@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/30/2016"
+   ms.date="03/31/2016"
    ms.author="owend"/>
 
 # Get data from files
