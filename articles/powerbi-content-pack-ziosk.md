@@ -40,7 +40,7 @@ Connect to the [Ziosk Survey Analytics content pack](https://app.powerbi.com/get
 
 ![](media/powerbi-content-pack-ziosk/creds2.png)
 
-5. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your IntelliBoard account.
+5. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your Ziosk account.
 
 ![](media/powerbi-content-pack-ziosk/dashboard.png)
 
