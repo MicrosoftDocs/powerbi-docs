@@ -8,7 +8,7 @@
    editor=""
    tags=""
    qualityFocus="identified"
-   qualityDate=""/>
+   qualityDate=""
    />
 
 <tags
