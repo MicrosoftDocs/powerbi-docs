@@ -47,7 +47,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-webinars",
             "powerbi-service-from-excel-to-stunning-report",
             "powerbi-frequently-asked-questions",
-            "powerbi-free-trial-for-power-bi-pro",
             "powerbi-power-bi-pro-content-what-is-it",
             "powerbi-service-power-bi-get-started-third-party-apps",
             "powerbi-service-browser-support",
@@ -287,11 +286,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Data refresh",
           "articles": [
             "powerbi-refresh-data",
+            "powerbi-refresh-scheduled-refresh",
+            "powerbi-refresh-desktop-file-local-drive",
+            "powerbi-refresh-desktop-file-onedrive",
             "powerbi-refresh-excel-file-local-drive",
             "powerbi-refresh-excel-file-onedrive",
             "powerbi-refresh-csv-file-onedrive",
-            "powerbi-refresh-desktop-file-local-drive",
-            "powerbi-refresh-desktop-file-onedrive",
             "powerbi-refresh-tools-for-troubleshooting-issues",
             "powerbi-refresh-troubleshooting-refresh-scenarios",
             "powerbi-refresh-enable-fast-combine"
@@ -304,16 +304,13 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-personal-gateway",
             "powerbi-gateway-enterprise",
             "powerbi-gateway-enterprise-indepth",
+            "powerbi-gateway-enterprise-upgrade-as-connector",
             "powerbi-gateway-enterprise-manage-ssas",
             "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
-            "powerbi-gateway-enterprise-manage-scheduled-refresh",
-            "powerbi-gateway-enterprise-upgrade-as-connector",
-            "powerbi-analysis-services-connector",
-            "powerbi-admin-analysis-services-connector-indepth",
-            "powerbi-admin-data-management-gateway-in-office-365"
+            "powerbi-gateway-enterprise-manage-scheduled-refresh"
           ],
-          "numberOfFeaturedArticles": 8
+          "numberOfFeaturedArticles": 4
         },
         {
           "sectionTitle": "Administration",
