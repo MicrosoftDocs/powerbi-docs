@@ -7,6 +7,8 @@
    manager="mblythe"
    editor=""
    tags=""
+   qualityFocus="no"
+   qualityDate=""
    featuredVideoId="N_xYsCbyHPw"
    featuredVideoThumb=""
    courseDuration="9m"/>
