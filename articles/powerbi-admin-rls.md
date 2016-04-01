@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/28/2016"
+ms.date="03/31/2016"
 ms.author="asaxton"/>
 # Row-level security for cloud models
 
@@ -104,4 +104,4 @@ Here is a list of the current limitations for row-level security on cloud models
 - Defining RLS in a group workspace is not supported.
 - You cannot add security groups or distribution lists to the member list. This is planned for a later release.
 - You can’t use RLS with content packs. This is planned for a later release. 
-- Q&A and Cortana is not supported with RLS. You will not see the Q&A input box for dashboards with at least one model that has RLS configured.
+- Q&A and Cortana is not supported with RLS. You will not see the Q&A input box for dashboards if all models have RLS configured.
