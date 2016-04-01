@@ -7,8 +7,8 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/01/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/09/2016"
+   ms.date="04/01/2016"
    ms.author="asaxton"/>
 # Self-service sign up for Power BI
 
@@ -79,15 +79,30 @@ When you are in the service, you can verify that you have a free account by goin
  
 ## Power BI Pro 60 day trial
 
-After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. [Learn more](powerbi-free-trial-for-power-bi-pro.md)
+After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
-You will get an option to try Pro for free whenever you try to use a Pro feature. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
+-   Create and publish customized [content packs](powerbi-service-organizational-content-packs-introduction.md)
+-   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [groups](powerbi-service-groups.md)
+-   Connect to on-premises data using [Personal Gateway](powerbi-personal-gateway.md)
+-   Enable live interactive connectivity to the following sources:
+	-   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
+	-   [Spark on Azure HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md)
+	-   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
+	-   [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md)
+
+When you try any of these features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial1.png)
  
 Then you can select **Start trial**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
+
+> **Notes**
+>
+>-   If you need more time to evaluate Power BI, you can request to extend your trial period for 60 more days.
+>-   Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
+>-   If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO).  You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. [Learn more](powerbi-admin-purchasing-power-bi-pro.md)
  
 ### What this looks like within the service
 
@@ -150,4 +165,8 @@ In many cases, registering for Power BI can be achieved by following the simple 
 
 ## See also
 
+[Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)
+
 [Unable to add Power BI to Office 365 partner subscription](powerbi-admin-syndication-partner.md)
+
+[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)
