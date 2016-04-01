@@ -7,8 +7,8 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/01/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2016"
+   ms.date="04/01/2016"
    ms.author="owend"/>
 
 # Get data from files
@@ -29,7 +29,7 @@ In Power BI, you can connect to or import data and reports from three types of f
 
 ## What does get data from a file really mean?
 
-In Power BI the data you explore comes from a dataset. But in order to have a dataset, you first need to get some data. In Power BI, there are many ways you can get data. For this article, we're going to focus on getting data from files.
+In Power BI the data you explore comes from a dataset. But in order to have a dataset, you first need to get some data. For this article, we're going to focus on getting data from files.
 
 To better understand the importance of datasets, and how we get data for them, let’s look at an automobile. Take a seat in your car and look at the dashboard. That’s a lot like sitting in front of your computer looking at a dashboard in Power BI. The dashboard shows you all the things your car is doing; how fast the engine is revving, temperature, what gear you’re in, your speed, etc.
 
@@ -39,7 +39,7 @@ We can even take it one step further. A fuel tank in a car has to be filled with
 
 ## Where your file is saved makes a difference
 
-**Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can import your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports.
+**Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can *import* your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports.
 
 **OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Excel Power BI Desktop, or a .CSV file and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI connects to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
 
