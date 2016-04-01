@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="complete"
    qualityDate=""/>
 
 <tags
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/17/2016"
+   ms.date="04/01/2016"
    ms.author="owend"/>
 
 # Publish to Power BI from Excel 2016
