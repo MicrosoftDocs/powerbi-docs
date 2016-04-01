@@ -6,7 +6,10 @@
    authors="dvana"
    manager="mblythe"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="yes"
+   qualityDate="04/15/2016"/>
+   />
 
 <tags
    ms.service="powerbi"
