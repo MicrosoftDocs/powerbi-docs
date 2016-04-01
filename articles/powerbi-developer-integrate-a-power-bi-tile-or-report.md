@@ -6,9 +6,7 @@
    authors="dvana"
    manager="mblythe"
    editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   tags=""/>
 
 <tags
    ms.service="powerbi"
@@ -16,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/03/2016"
+   ms.date="04/01/2016"
    ms.author="derrickv"/>
 
 # Integrate a Power BI tile or report into an app
@@ -238,8 +236,8 @@ In a **receiveMessage(event)** function, get message data by parsing the JSON in
 
 There are two steps to integrate a Power BI report into an app.
 
-- [Get a Power BI tile](#getreport)
-- [Embed a Power BI tile into an app](#embedReport)
+- [Get a Power BI report](#getreport)
+- [Embed a Power BI report into an app](#embedReport)
 
 <a name="getreport"/>
 ### Get a Power BI report
@@ -279,7 +277,7 @@ JSON Response
 
 **Step 4 – Set IFrame source url**
 
-Once you have an **embedUrl** for a **report**, you set the **SRC** attribute of an **IFrame** to the **embedUrl**. The next section, [Embed a Power BI tile or report](#embed), describes how to embed a tile or report using an IFrame.
+Once you have an **embedUrl** for a **report**, you set the **SRC** attribute of an **IFrame** to the **embedUrl**. The next section, [Embed a Power BI report ](#embed), describes how to embed a report using an IFrame.
 
 <a name="embedReport"/>
 ### Embed a Power BI report into an app
