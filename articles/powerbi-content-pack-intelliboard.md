@@ -28,23 +28,26 @@ Connect to the [IntelliBoard content pack](https://app.powerbi.com/getdata/servi
 ## How to connect
 
 1. Select Get Data at the bottom of the left navigation pane.  
-![](media/powerbi-content-pack-intelliboard/getdata.png)
+    
+    ![](media/powerbi-content-pack-intelliboard/getdata.png)
 
 2. In the Services box, select Get.  
-![](media/powerbi-content-pack-intelliboard/services.png)
+    
+    ![](media/powerbi-content-pack-intelliboard/services.png)
 
 3. Select IntelliBoard, then select Connect.  
-![](media/powerbi-content-pack-intelliboard/connect.png)
+    
+    ![](media/powerbi-content-pack-intelliboard/connect.png)
 
 4. Select **OAuth 2** and then **Sign In**. When prompted, provide your IntelliBoard credentials.
 
-![](media/powerbi-content-pack-intelliboard/creds.png)
+    ![](media/powerbi-content-pack-intelliboard/creds.png)
 
-![](media/powerbi-content-pack-intelliboard/creds2.png)
+    ![](media/powerbi-content-pack-intelliboard/creds2.png)
 
 5. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your IntelliBoard account.
 
-![](media/powerbi-content-pack-intelliboard/dashboard.png)
+    ![](media/powerbi-content-pack-intelliboard/dashboard.png)
 
 
 **What Now?**
