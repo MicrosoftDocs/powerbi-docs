@@ -45,13 +45,13 @@ The two overall exceptions to Power BI using ExpressRoute are:
 
 -   **Telemetry** data sent over the public Internet
 
-Power BI uses multiple **Content Delivery Networks (CDNs)** or web sites to efficiently distribute the necessary static content and files to users based on geographical locale through the public Internet. These static files include product downloads (such as **Power BI Desktop**, **Enterprise Gateway**, or** Power BI Content Packs** from various independent service providers), browser configuration files that are used to initiate and establish any subsequent connections with Power BI, as well as the initial secure Power BI login page – the actual credentials are only sent over ExpressRoute.   
+Power BI uses multiple **Content Delivery Networks (CDNs)** or web sites to efficiently distribute the necessary static content and files to users based on geographical locale through the public Internet. These static files include product downloads (such as **Power BI Desktop**, **Enterprise Gateway**, or **Power BI Content Packs** from various independent service providers), browser configuration files that are used to initiate and establish any subsequent connections with Power BI, as well as the initial secure Power BI login page – the actual credentials are only sent over ExpressRoute.   
 
 Certain **telemetry data** is also sent over the public Internet and over ExpressRoute. Telemetry data includes usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity.
 
 ### Power BI SaaS Application and ExpressRoute
 
-When a user initiates a connection to the Power BI service (powerbi.com or through Cortana), the Power BI Landing Page, the login page, and static files that prepare the browser to connect and interact with Power BI are retrieved from a CDN, which connects over the public Internet.
+When a user initiates a connection to the Power BI service (powerbi.com or through Cortana), the Power BI Landing Page, the login page, and static files that prepare the browser to connect and interact with Power BI are retrieved from a CDN or websites, which connects over the public Internet.
 
 Once the login is established, subsequent Power BI data interactions occur over ExpressRoute, with the exception of certain features and services that depend on public Internet data:
 
@@ -107,4 +107,4 @@ This document does not cover the use of Power BI Mobile apps.
 
 ### Enterprise Gateway and ExpressRoute
 
-When an **Enterprise Gateway** is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the **Power BI Service data and ExpressRoute** section found earlier in this topic.  
+When an **Enterprise Gateway** is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the **Power BI SaaS Application and ExpressRoute** section found earlier in this topic.  
