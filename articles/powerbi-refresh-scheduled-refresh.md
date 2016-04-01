@@ -15,13 +15,21 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/31/2016"
+ms.date="04/01/2016"
 ms.author="asaxton"/>
 # Configuring scheduled refresh
 
 If your dataset supports scheduled refresh, by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data Source Credentials**, and **Schedule Refresh**. Let’s take a closer look at each.
 
 This will describe the options available for both the [Power BI Gateway – Personal](powerbi-personal-gateway.md) and the [Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md).
+
+To get to the schedule refresh screen, you can do the following.
+
+1. Select the **ellipse (...)** next to a dataset listed under **Datasets**.
+
+2. Select **Schedule Refresh**.
+
+    ![](media/powerbi-refresh-scheduled-refresh/dataset-menu.png)
 
 ## Gateway connection
 You will see different options here depending on whether you have a personal, or enterprise, gateway online and available.
