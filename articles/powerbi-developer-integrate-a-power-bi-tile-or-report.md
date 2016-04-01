@@ -7,8 +7,8 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="yes"
-   qualityDate="04/15/2016"/>
+   qualityFocus="identified"
+   qualityDate=""/>
    />
 
 <tags
