@@ -3,7 +3,7 @@
    description="Learn how to get data and reports from Power BI Desktkop into Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/30/2016"
-   ms.author="owend"/>
+   ms.author="davidi"/>
 
 # Get data from Power BI Desktop files
 ![](media/powerbi-service-powerbi-desktop-files/pbid_file_icon.png)

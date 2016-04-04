@@ -3,7 +3,7 @@
    description="Reduce the size of an Excel workbook to view it in Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="01/20/2016"
-   ms.author="owend"/>
+   ms.author="davidi"/>
 
 # Reduce the size of an Excel workbook to view it in Power BI  
 
