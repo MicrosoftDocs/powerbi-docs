@@ -28,7 +28,7 @@
 
 In an earlier article we reviewed creating groups to help your organization manage and collaborate on content that's in Power BI. You can also use your Power BI / Office365 groups to collaborate and share by using **OneDrive for Business**.
 
-Using OneDrive for Business as a source for your Power BI content gives you access to a number of helpful tools, such as version history. You can also share your files with an Office385 group from within OneDrive for Business to give access and allow many people to work on the same Power BI or Excel files.
+Using OneDrive for Business as a source for your Power BI content gives you access to a number of helpful tools, such as version history. You can also share your files with an Office365 group from within OneDrive for Business to give access and allow many people to work on the same Power BI or Excel files.
 
 ![](media/powerbi-learning-6-4a-integrate-onedrive-for-business/6-4a_1.png)
 
