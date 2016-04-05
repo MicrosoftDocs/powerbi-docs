@@ -90,9 +90,11 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-azure-security-center",
             "powerbi-content-pack-bing",
             "powerbi-content-pack-circuit-id",
+            "powerbi-content-pack-clickdimensions",
             "powerbi-content-pack-content-pack",
             "powerbi-content-pack-github",
             "powerbi-content-pack-insightly",
+            "powerbi-content-pack-intelliboard",
             "powerbi-content-pack-lithium",
             "powerbi-content-pack-mailchimp",
             "powerbi-content-pack-mandrill",
@@ -120,7 +122,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-content-pack-visual-studio-online",
             "powerbi-content-pack-vmob",
             "powerbi-content-pack-webtrends",
+            "powerbi-content-pack-windows-dev-center",
             "powerbi-content-pack-zendesk",
+            "powerbi-content-pack-ziosk",
             "powerbi-content-pack-zuora"
           ],
           "numberOfFeaturedArticles": 6
