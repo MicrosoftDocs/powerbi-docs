@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="completed"
+   qualityFocus="monitoring"
    qualityDate="03/15/2016"/>
 
 <tags
