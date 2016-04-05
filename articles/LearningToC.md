@@ -37,7 +37,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-learning-0-0-what-is-power-bi",
             "powerbi-learning-0-1-intro-using-power-bi",
             "powerbi-learning-0-0b-building-blocks-power-bi",
-            "powerbi-learning-0-2-get-started-power-bi-desktop",
             "powerbi-learning-0-3-dashboards-cloud-services",
             "powerbi-learning-0-4-summary-of-intro-to-power-bi"
             ]
@@ -46,6 +45,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Getting Data",
           "articles": [
             "powerbi-learning-1-1-overview-of-power-bi-desktop",
+            "powerbi-learning-0-2-get-started-power-bi-desktop",            
             "powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop",
             "powerbi-learning-1-3-clean-and-transform-data-with-query-editor",
             "powerbi-learning-1-4-advanced-data-sources-and-transformation",
