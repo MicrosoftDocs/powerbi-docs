@@ -7,8 +7,8 @@
    manager="mblythe" 
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/04/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2016"
+   ms.date="04/04/2016"
    ms.author="maggies"/>
 # Get started with the Power BI for Android app
 
@@ -32,7 +32,7 @@ Bring your own data together and create dashboards and reports on the [Power BI
 
 -   **Get the app**  [Get the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
 
-    >**Note:** Your phone needs to be using Android 4.4.
+    >**Note:** Power BI can run on a number of different Android phones. Your phone needs to be running the Android 4.4 operating system, or later. To check on your phone, go to **Settings** > **About device** > **Android version**. 
 
 -   **Start when you open the app**    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android phone. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can go back to the samples whenever you want from the dashboards home page.
 
