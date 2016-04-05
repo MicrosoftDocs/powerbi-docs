@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2015"
+   ms.date="04/06/2016"
    ms.author="mihart"/>
 
 # Tips for asking questions in Power BI Q&A
@@ -107,15 +107,17 @@ When you have a workbook prepared for Q&A, you are on your way to start asking q
 
     Show employees, where date of birth is after 3/3/1985
 
-* <measure> by \<column name\>
+* \<measure> by \<column name\>
 
-    a. Year over year growth by year
+  Examples:
 
-    b. Total sales by product
+    Year over year growth by year
 
-    c. Number of sales by location
+    Total sales by product
 
-    d. Total profit and total cost by product
+    Number of sales by location
+
+    Total profit and total cost by product
 
 * \<measure\> by \<column name\> for \<specific entity within another column\>
 
@@ -127,11 +129,5 @@ After Q&A displays your results, keep the conversation going! Use the interactiv
 
 ## See also
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
-
-[Tutorial: Introduction to Q&A with Power BI](powerbi-service-tutorial-introduction-to-q-and-a.md)
-
-[Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
-
-[Pin a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
