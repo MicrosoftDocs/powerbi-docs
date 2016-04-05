@@ -7,8 +7,8 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="03/15/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -111,6 +111,6 @@ When you select a tile, what happens next depends on how the tile was created an
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Data refresh](powerbi-refresh-data.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md) 
- 
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
 [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
