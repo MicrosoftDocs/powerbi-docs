@@ -6,8 +6,8 @@ documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
 editor=""
-qualityFocus="no"
-qualityDate=""/>
+qualityFocus="monitoring"
+qualityDate="04/01/2016"/>
 
 <tags
 ms.service="powerbi"

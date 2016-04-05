@@ -7,8 +7,8 @@ authors="guyinacube"
 manager="mblythe"
 editor=""
 tags=""
-qualityFocus="no"
-qualityDate=""/>
+qualityFocus="monitering"
+qualityDate="04/04/2016"/>
 
 <tags
 ms.service="powerbi"
@@ -16,11 +16,13 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/01/2016"
+ms.date="04/04/2016"
 ms.author="asaxton"/>
 # Troubleshooting tile errors
 
-Below are the common errors you can encounter with tiles and an explanation.
+Below are the common errors you may encounter with tiles along with an explanation.
+
+> **Note**: If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 
 ## Errors
 
@@ -64,11 +66,11 @@ If you are still having an issue, please [contact support](https://support.power
 
 ## See also
 
-[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)
-
-[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)
-
 [Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
 [Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
+
+[Power BI Community](http://community.powerbi.com/)
+
+[Power BI Support](http://support.powerbi.com/)
 
