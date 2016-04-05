@@ -7,8 +7,8 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/04/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="04/04/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -40,19 +40,20 @@ Power BI and Power BI Desktop are free. There is a 60-day free trial available f
 
 Just a Web browser and work email address.
 
-**Note:** Work email addresses ending in .gov aren’t currently supported.
-
-## Does Power BI support mobile devices?
-
-Yes. Power BI has native apps for Android phones, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  
-
--   [App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
--   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
--   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
+**Note:** Work email addresses ending in .gov and .mil aren’t currently supported.
 
 ## Why do I have to sign up with my work email?
 
 Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](powerbi-service-self-service-signup-for-power-bi.md).
+
+## Which work email addresses are supported?
+Work email addresses ending in **.edu** and **.org** are supported. 
+
+Those ending in **.gov** and **.mil** aren’t currently supported.
+
+## Is government, academic and non-profit pricing available for Power BI?
+
+Yes, non-profit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. Power BI is not yet available for the US Government Community Cloud (GCC).
 
 ## Is Power BI available on-premises?
 
@@ -62,6 +63,14 @@ You can also view on-premises SQL Server mobile reports with the Power BI iOS ap
 
 -   [SQL Server mobile reports on the iPhone](powerbi-mobile-iphone-kpis-mobile-reports.md).
 -   [SQL Server mobile reports on the iPad](powerbi-mobile-ipad-kpis-mobile-reports.md)
+
+## Does Power BI support mobile devices?
+
+Yes. Power BI has native apps for Android phones, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  
+
+-   [Apple App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
+-   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+-   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## What data sources can I connect to?
 
@@ -125,12 +134,7 @@ You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help 
 
 Learn more about Power BI security, privacy and compliance in this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
 
-## Is government, academic and non-profit pricing available for Power BI?
 
-Yes, non-profit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. Power BI is not yet available for the US Government Community Cloud (GCC).
+## What has happened to the Power BI for Office 365 experience?
 
-**Note:** Work email addresses ending in **.edu** and **.org** are supported. Those ending in **.gov** aren’t currently supported.
-
-## What is happening to the Power BI for Office 365 experience?
-
-The Power BI for Office 365 experience is going into limited support on December 31, 2015, and deprecation of the Power BI for Office 365 experience by March 31, 2016. [Learn more](powerbi-admin-migrating-to-the-new-power-bi-experience.md)
+The Power BI for Office 365 experience has been deprecated. [Learn more about migrating to the new Power BI experience](powerbi-admin-migrating-to-the-new-power-bi-experience.md).
