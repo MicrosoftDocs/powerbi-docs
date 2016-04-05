@@ -3,7 +3,7 @@
    description="Learn how to publish an Excel workbook to your Power BI site."
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="04/01/2016"
-   ms.author="owend"/>
+   ms.author="davidi"/>
 
 # Publish to Power BI from Excel 2016
 With Excel 2016, you can publish your Excel workbooks right to your [Power BI](https://powerbi.microsoft.com) site, where you can create highly interactive reports and dashboards based on your workbook’s data. You can then share your insights with others in your organization.
