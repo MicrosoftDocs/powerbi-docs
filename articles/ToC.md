@@ -336,7 +336,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           ],
           "numberOfFeaturedArticles": 9
         },
-        		{
+        {
           "sectionTitle": "Troubleshooting",
           "articles": [
             "powerbi-admin-forgot-your-password",
