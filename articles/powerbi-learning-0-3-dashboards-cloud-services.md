@@ -79,6 +79,6 @@ Select the **Schedule Refresh** option from the bottom of that menu. The Setting
 
 ![](media/powerbi-learning-0-3-dashboards-cloud-services/c0a3_10.png)
 
-That enough for our quick look at the Power BI service. There are many more things you can do with the service, which we'll cover later in this course. Remember, too, that there are many different types of data you can connect to, and all sorts of content packs, with more of each coming all the time.
+That's enough for our quick look at the Power BI service. There are many more things you can do with the service, which we'll cover later in this course. Remember, too, that there are many different types of data you can connect to, and all sorts of content packs, with more of each coming all the time.
 
 Okay, let's move to the next topic, where we summarize this **Getting Started** section, and get you ready for what's next.
