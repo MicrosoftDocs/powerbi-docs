@@ -25,9 +25,11 @@
 
 These are just some of the words and terms that Q&A automatically recognizes.
 
-* **Aggregations**: such as less than, maximum, number of, count of, average, between, before
+* **Adverb filters**: filter the results by using adverbs such as **where**, **in**, or **with** in your question.  For example, *show stores with name Winchester*. 
 
-* **Date keywords**: such as last month, this year  
+*   **Aggregations**: such as less than, maximum, number of, count of, average, between, before
+
+* **Date keywords**: such as last month, this year, or the actual date itself  
 
 * **Date ranges**: before, after
 
@@ -69,6 +71,9 @@ Q&A does its best to ensure that the answer accurately reflects the question bei
 
 ## Which dataset was used to create the visualization
 Q&A displays the name of the dataset(s) that was used to produce the currently-displayed results. If you're getting strange results, perhaps you need to search in a different dataset.
+
+## Combine results from more than one dataset
+One of Power BI's most powerful features is the ability to combine data from different datasets.  So don't limit your questions to a single dataset -- ask questions that retrieve data from more than one dataset. For example, if my dashboard has tiles from the Retail Analysis Sample and a state population dataset, I can ask *show count of stores by state population as bar chart descending*.
 
 ## Tell Q&A which visualization to use
 
