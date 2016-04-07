@@ -348,7 +348,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-office-365-dedicated-known-issues",
             "powerbi-admin-troubleshooting-power-bi-personal-gateway",
             "powerbi-gateway-enterprise-tshoot",
-            "powerbi-admin-troubleshoot-analysis-service-connector",
             "powerbi-admin-troubleshoot-unsupported-data-source-for-refresh",
             "powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases",
             "powerbi-admin-troubleshoot-excel-workbook-data",
