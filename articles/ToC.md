@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/30/2016"
+   ms.date="04/07/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -34,25 +34,20 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Get started",
           "articles": [
-            "powerbi-service-get-started",
             "powerbi-service-basic-concepts",
+            "powerbi-service-get-started",
             "powerbi-service-self-service-signup-for-power-bi",
             "powerbi-service-get-data",
-            "powerbi-service-reports",
-            "powerbi-service-dashboards",
-            "powerbi-service-q-and-a",
-            "powerbi-service-organizational-content-packs-introduction",
-            "powerbi-service-whats-new",
             "powerbi-videos",
             "powerbi-webinars",
-            "powerbi-service-from-excel-to-stunning-report",
             "powerbi-frequently-asked-questions",
+            "powerbi-service-whats-new",
             "powerbi-power-bi-pro-content-what-is-it",
             "powerbi-service-power-bi-get-started-third-party-apps",
             "powerbi-service-browser-support",
             "powerbi-supported-languages"
           ],
-          "numberOfFeaturedArticles": 13
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Samples",
@@ -132,6 +127,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Dashboards",
           "articles": [
+            "powerbi-service-dashboards",
             "powerbi-service-create-a-dashboard",
             "powerbi-service-dashboard-tiles",
             "powerbi-service-pin-a-tile-to-a-dashboard-from-a-report",
@@ -160,6 +156,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Ask questions of your data",
           "articles": [
+            "powerbi-service-q-and-a",
             "powerbi-service-how-to-use-q-and-a",
             "powerbi-service-tutorial-introduction-to-q-and-a",
             "powerbi-service-make-your-data-work-well-with-q-and-a",
@@ -174,6 +171,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Share your work",
           "articles": [
+            "powerbi-service-organizational-content-packs-introduction",
             "powerbi-service-how-should-i-share-my-dashboard",
             "powerbi-service-share-unshare-dashboard",
             "powerbi-service-publish-to-web",
@@ -194,6 +192,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Reports",
           "articles": [
+            "powerbi-service-reports",
             "powerbi-service-create-a-new-report",
             "powerbi-service-the-report-editor-take-a-tour",
             "powerbi-service-add-a-page-to-a-report",
@@ -267,6 +266,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Data from files",
           "articles": [
             "powerbi-service-get-data-from-files",
+            "powerbi-service-from-excel-to-stunning-report",
             "powerbi-service-excel-workbook-files",
             "powerbi-service-powerbi-desktop-files",
             "powerbi-service-comma-separated-value-files",
@@ -367,8 +367,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-getting-started",
             "powerbi-desktop-upload-desktop-files",
             "powerbi-desktop-videos",
-            "powerbi-desktop-latest-update",
-            "powerbi-desktop-help"
+            "powerbi-desktop-latest-update"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -459,21 +458,23 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Get started",
           "articles": [
             "powerbi-power-bi-apps-for-mobile-devices",
-            "powerbi-mobile-whats-new-in-the-mobile-apps",
+            "powerbi-mobile-whats-new-in-the-mobile-apps"
+          ],
+          "numberOfFeaturedArticles": 2
+        },
+        {
+          "sectionTitle": "All Mobile Apps",
+          "articles": [
             "powerbi-mobile-ipad-iphone-apps",
-            "powerbi-mobile-iphone-app-get-started",
-            "powerbi-mobile-ipad-app-get-started",
-            "powerbi-mobile-android-app-get-started",
-            "powerbi-mobile-win10phone-app-get-started",
             "powerbi-mobile-create-dashboard",
-            "powerbi-mobile-offline-android",
             "powerbi-admin-mobile-intune"
           ],
-          "numberOfFeaturedArticles": 8
+          "numberOfFeaturedArticles": 3
         },
         {
           "sectionTitle": "iPad app (Power BI for iOS)",
           "articles": [
+            "powerbi-mobile-ipad-app-get-started",
             "powerbi-mobile-ipad-kpis-mobile-reports",
             "powerbi-mobile-dashboards-on-the-ipad-app",
             "powerbi-mobile-tiles-in-the-ipad-app",
@@ -488,6 +489,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "iPhone app (Power BI for iOS)",
           "articles": [
+            "powerbi-mobile-iphone-app-get-started",
             "powerbi-mobile-iphone-kpis-mobile-reports",
             "powerbi-mobile-dashboards-in-the-iphone-app",
             "powerbi-mobile-tiles-in-the-iphone-app",
@@ -507,6 +509,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Power BI app for Android phones",
           "articles": [
+            "powerbi-mobile-android-app-get-started",
             "powerbi-mobile-dashboards-in-the-android-app",
             "powerbi-mobile-tiles-in-the-android-app",
             "powerbi-mobile-reports-in-the-android-app",
@@ -514,6 +517,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-mobile-share-a-dashboard-from-the-android-app",
             "powerbi-mobile-groups-in-the-android-app",
             "powerbi-mobile-annotate-and-share-a-tile-from-the-android-app",
+            "powerbi-mobile-offline-android",
             "powerbi-mobile-qr-code-for-android"
           ],
           "numberOfFeaturedArticles": 5
@@ -521,6 +525,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Power BI app for Windows 10 devices",
           "articles": [
+            "powerbi-mobile-win10phone-app-get-started",
             "powerbi-mobile-dashboards-in-the-win10phone-app",
             "powerbi-mobile-tiles-in-the-win10phone-app",
             "powerbi-mobile-report-page-tiles-in-the-win10phone-app",
