@@ -323,7 +323,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-powerbi-free-in-your-organization",
             "powerbi-admin-purchasing-power-bi-pro",
             "powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial",
+            "powerbi-admin-governance",
             "powerbi-admin-power-bi-security",
+            "powerbi-admin-power-bi-expressroute",
             "powerbi-admin-rls",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
             "powerbi-admin-migrating-to-the-new-power-bi-experience",
@@ -334,7 +336,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-free-with-custom-azure-directory",
             "powerbi-admin-mobile-intune"
           ],
-          "numberOfFeaturedArticles": 9
+          "numberOfFeaturedArticles": 10
         },
         {
           "sectionTitle": "Troubleshooting",
@@ -346,7 +348,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-office-365-dedicated-known-issues",
             "powerbi-admin-troubleshooting-power-bi-personal-gateway",
             "powerbi-gateway-enterprise-tshoot",
-            "powerbi-admin-troubleshoot-analysis-service-connector",
             "powerbi-admin-troubleshoot-unsupported-data-source-for-refresh",
             "powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases",
             "powerbi-admin-troubleshoot-excel-workbook-data",
