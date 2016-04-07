@@ -94,7 +94,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-learning-4-0-intro-power-bi-service",
             "powerbi-learning-4-1a-quick-insights",
             "powerbi-learning-4-2-create-configure-dashboards",
-            "powerbi-learning-4-3-asking-questions-natural-languages",
+            "powerbi-learning-4-3-asking-questions-natural-language",
             "powerbi-learning-4-3a-suggested-questions",
             "powerbi-learning-4-4-share-dashboards",
             "powerbi-learning-4-4b-display-visuals-tiles-fullscreen",
