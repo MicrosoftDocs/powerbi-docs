@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="04/07/2016"
    ms.author="davidi"/>
 # Analysis Services Tabular data in Power BI Desktop
 
@@ -28,7 +28,7 @@ Let’s take a closer look.
 
 When connecting live, no data from the Tabular model is imported into Power BI Desktop. Each time you interact with a visualization, Power BI Desktop queries the Tabular model and calculates the results you see. You’re always looking at the latest data. Keep in-mind, Tabular models are highly secure. Items that appear in Power BI Desktop depend on your permissions for the Tabular model you’re connected to.
 
-When you’ve created dynamic reports in Power BI Desktop, you can share them by publishing to your Power BI site. When you publish a Power BI Desktop file with a live connection to a Tabular model to your Power BI site, a Power BI Analysis Services Connector must be installed and configured by an administrator. To learn more, see [Configure a Power BI Analysis Services Connector.](powerbi-analysis-services-connector.md)
+When you’ve created dynamic reports in Power BI Desktop, you can share them by publishing to your Power BI site. When you publish a Power BI Desktop file with a live connection to a Tabular model to your Power BI site, a Power BI Gateway - Enterprise must be installed and configured by an administrator. To learn more, see [Power BI Gateway - Enterprise.](powerbi-gateway-enterprise.md)
 
 **Select items and import into Power BI Desktop** – When you connect with this option, you can select items like tables, columns, and measures in your Tabular model or perspective and load them into a Power BI Desktop model. You can use Power BI Desktop’s advanced Query Editor to further shape what you want. You can use Power BI Desktop’s modeling features to further model the data. No live connection between Power BI Desktop and the Tabular model is maintained. You can then explore your Power BI Desktop model offline or publish to your Power BI site.
 
@@ -57,17 +57,17 @@ When you’ve created dynamic reports in Power BI Desktop, you can share them by
 
 ## Frequently Asked Questions
 
-**Question:** Do I need a Power BI Analysis Services Connector?
+**Question:** Do I need a Power BI Gateway - Enterprise?
 
-**Answer:** It depends. If you use Power BI Desktop to connect live to a Tabular model, but have no intention on publishing to your Power BI site, you do not need a connector. On the other hand, if you do intend on publishing to your Power BI site, a Connector is necessary to ensure secure communication between the Power BI service and your on-premises Analysis Services server. Be sure to talk to your Analysis Services server administrator before installing a Connector.
+**Answer:** It depends. If you use Power BI Desktop to connect live to a Tabular model, but have no intention on publishing to your Power BI site, you do not need a gateway. On the other hand, if you do intend on publishing to your Power BI site, an enterprise gateway is necessary to ensure secure communication between the Power BI service and your on-premises Analysis Services server. Be sure to talk to your Analysis Services server administrator before installing an enterprise gateway.
 
-If you choose select items and get data, you’re importing Tabular model data right into your Power BI Desktop file, so no Analysis Services Connector is necessary.
+If you choose select items and get data, you’re importing Tabular model data right into your Power BI Desktop file, so no enterprise gateway is necessary.
 
  
 
 **Question:** What’s the difference between connecting live to a Tabular model from the Power BI service versus connecting live from Power BI Desktop?
 
-**Answer:** When connecting live to a Tabular model from your site in the Power BI service to an Analysis Services database on-premises in your organization, a Power BI Analysis Services Connector is required to secure communications between them. When connecting live to a Tabular model from Power BI Desktop, a Connector is not required because both Power BI Desktop and the Analysis Services server you’re connecting to are both running on-premises in your organization. However, if you publish your Power BI Desktop file to your Power BI site, a Connector is required.
+**Answer:** When connecting live to a Tabular model from your site in the Power BI service to an Analysis Services database on-premises in your organization, a Power BI Gateway - Enterprise is required to secure communications between them. When connecting live to a Tabular model from Power BI Desktop, a gateway is not required because both Power BI Desktop and the Analysis Services server you’re connecting to are both running on-premises in your organization. However, if you publish your Power BI Desktop file to your Power BI site, an enterprise gateway is required.
 
  
 
@@ -103,7 +103,7 @@ If you choose select items and get data, you’re importing Tabular model data r
 
 Once you create a Power BI Desktop file with an explore live connection, there might be some cases where you want to switch the connection to a different server. For example, if you created your Power BI Desktop file when connecting to a development server, and before publishing to the Power BI service, you want to switch the connection to production server.
 
-1. Select ﻿**Edit Queries** ﻿from the Ribbon.
+1. Select **Edit Queries** from the Ribbon.
 
  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_ChName_EditQuery.png)
 

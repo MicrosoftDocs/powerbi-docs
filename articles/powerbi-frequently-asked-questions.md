@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="04/07/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -57,7 +57,7 @@ Yes, non-profit pricing is available when purchasing directly from Microsoft. Yo
 
 ## Is Power BI available on-premises?
 
-No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Analysis Services Connector](powerbi-analysis-services-connector.md), you can connect live to your on-premises SQL Server Analysis Services Tabular models. And, with the [Power BI Personal Gateway](powerbi-personal-gateway.md), you can refresh data from other on-premises data sources.
+No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md), you can connect live to your on-premises SQL Server Analysis Services server. And, with the [Power BI Gateway - Personal](powerbi-personal-gateway.md), you can refresh data from other on-premises data sources.
 
 You can also view on-premises SQL Server mobile reports with the Power BI iOS apps:
 

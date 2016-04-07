@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/07/2016"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
@@ -29,7 +29,7 @@ If your content contains any of the following items, it's Power BI Pro content:
 
 -   Data from a [dataset that refreshes more frequently than daily](powerbi-refresh-data.md).
 
--   Data from a dataset that connects to on-premises data using the Power BI [Personal Gateway](powerbi-personal-gateway.md) or Power BI [Data Management Gateway](powerbi-admin-data-management-gateway-in-office-365.md).
+-   Data from a dataset that connects to on-premises data using the [Power BI Gateway - Personal ](powerbi-personal-gateway.md) or [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md).
 
 -   A dashboard or report that's installed from an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md).
 
@@ -45,8 +45,8 @@ Conversely, if your content contains only the following items it will be consuma
 
 -   A dashboard or report that contains [R scripts](powerbi-desktop-r-scripts.md) or [R visuals](powerbi-desktop-r-visuals.md). Power BI free users will see a static image of any R visuals, and only Power BI Pro users will be able to refresh, filter, cross-filter, or otherwise interact with R visuals.
 
-For example, if you create a manufacturing dashboard that updates progress multiple times during the day, anyone *consuming* that dashboard would need a Power BI Pro license. Or, if you create a report using the Power BI AS Connector, then another that uses Personal Gateway, anyone *consuming or interacting* with either of those reports would need a Power BI Pro license.
+For example, if you create a manufacturing dashboard that updates progress multiple times during the day, anyone *consuming* that dashboard would need a Power BI Pro license. Or, if you create a report using the Power BI Gateway - Enterprise, then another that uses the personal gateway, anyone *consuming or interacting* with either of those reports would need a Power BI Pro license.
 
-If you want to share your Power BI Pro content with users, they can sign up for a [free trial of Power BI Pro](powerbi-free-trial-for-power-bi-pro.md), and gain access to your content during the trial period.
+If you want to share your Power BI Pro content with users, they can sign up for a [free trial of Power BI Pro](powerbi-service-self-service-signup-for-power-bi.md#power-bi-pro-60-day-trial), and gain access to your content during the trial period.
 
 For a list of Power BI Pro features (and how those features compare to a free Power BI license), take a look at [Power BI Pricing](https://powerbi.microsoft.com/pricing).
