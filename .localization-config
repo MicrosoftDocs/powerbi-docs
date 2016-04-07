@@ -12,7 +12,8 @@
    ],
    "files":[  
       "!**/powerbi-learning*.md",
-      "**/*.md"
+      "articles/*.md",
+      "includes/*.md"
    ],
    "useJavascriptMarkdownTransformer": true,
    "includeDependencies":true,
