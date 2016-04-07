@@ -45,7 +45,7 @@ Connect to the [Alpine Metrics Sales Predictions content pack](https://app.power
 
     ![](media/powerbi-content-pack-alpine-metrics/creds2.png)
 
-5. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your IntelliBoard account.
+5. Once connected, a dashboard, report and dataset will automatically be loaded. When completed, the tiles will update with data from your account.
 
     ![](media/powerbi-content-pack-alpine-metrics/dashboard.png)
 
