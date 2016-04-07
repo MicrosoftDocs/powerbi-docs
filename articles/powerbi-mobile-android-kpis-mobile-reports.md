@@ -23,7 +23,7 @@
 
 The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information. 
 
-![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_iph_ssmrp_tallhomeblc.png)
+![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ssrs_and_foldrs.png)
 
 Create SQL Server mobile reports for your on-premises data with the SQL Server Mobile Report Publisher, and publish them to your Reporting Services web portal. You can also create KPIs, right on the web portal. Then view the mobile reports and KPIs on the Android app for Power BI. Read about [creating and publishing SQL Server mobile reports](https://msdn.microsoft.com/library/mt652547.aspx). 
 
@@ -31,25 +31,23 @@ Create SQL Server mobile reports for your on-premises data with the SQL Server M
 
 1.  In your Android phone, open the Power BI app.
   
-2.  To view your SQL Server mobile reports and KPIs, tap **Reporting Services**.
+3. Tap the options icon ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png) in the upper-left corner, and tap **Connect to SSRS server**.
 
-    ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ipad_getstarted.png)
+4. Fill in the server address and your user name and password, in this format:
 
-3. Tap the options icon ![](media/powerbi-mobile-android-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Connect**.
+    ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ssrs_and_connect.png)
 
-    ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_iph_sample.png)
+    >**Note**: Include **http** or **https** in front of the connection string. For example, http://*servername*.com/reports.
 
-4. Give the server a name, and fill in the server address and your user name and password, in this format:
+    Tap **Advanced option** to give the server a name, if you'd like.
 
-    ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ipad_connectsvrdialog.png)
-
-    >**Note**: Don't include **http** or **https** in front of the connection string. Just *servername*.com/reports_preview.
+3. Tap the check mark in the upper-right corner.
 
 5.  Now you see the server in the left navigation bar.
 
     ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_iph_ssmrp_homelc.png)
 
->**Tip**: Tap the options icon ![](media/powerbi-mobile-android-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) anytime to go between your SQL Server mobile reports and your dashboards in the Power BI service. 
+>**Tip**: Tap the options icon ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png) anytime to go between your SQL Server mobile reports and your dashboards in the Power BI service. 
 
 ## View SQL Server KPIs and mobile reports in the Power BI app
 
@@ -70,7 +68,7 @@ The SQL Server KPIs and mobile reports are displayed in the same folders they're
 You can only be connected to one report server at a time from your Android app. If you want to connect to a different server, you need to disconnect from the current one.
 
 1. At the bottom of the left navigation bar, tap **Settings**.
-2. Tap the server name you don't want to be connected to.
+2. Tap the ellipsis (**...**) next to the server name you don't want to be connected to.
 3. Tap **Remove Connection**.
 
 
