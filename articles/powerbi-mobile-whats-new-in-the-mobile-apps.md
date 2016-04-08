@@ -16,10 +16,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2016"
+   ms.date="04/08/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## April 2016
+
+### Android mobile app
+
+**Report gallery** Open your reports directly in the report gallery.​
+
+### Power BI app for Windows 10 devices
+
+**Presentation mode** Display Power BI dashboards and reports in presentation mode from the Power BI app.
 
 ## March 2016
 
@@ -42,7 +52,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 ### Android mobile app
 
-**SQL Server 2016 mobile reports and KPIs** View SQL Server 2016 mobile reports and KPIs, and navigate between SSRS folders.​
+**SQL Server 2016 mobile reports and KPIs** [View SQL Server 2016 mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md), and navigate between SSRS folders.​
 
 **View reports** Open reports from tiles on your dashboards.​
 
