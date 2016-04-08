@@ -510,6 +510,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Power BI app for Android phones",
           "articles": [
             "powerbi-mobile-android-app-get-started",
+            "powerbi-mobile-android-kpis-mobile-reports",
             "powerbi-mobile-dashboards-in-the-android-app",
             "powerbi-mobile-tiles-in-the-android-app",
             "powerbi-mobile-reports-in-the-android-app",
