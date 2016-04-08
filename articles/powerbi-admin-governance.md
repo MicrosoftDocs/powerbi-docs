@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/07/2016"
+ms.date="04/08/2016"
 ms.author="asaxton"/>
 # Power BI Governance and Deployment Approaches
 
@@ -31,4 +31,4 @@ For these companies, there is an understanding that facts – and fact analysis 
 
 This approach can be useful regardless of if the analysis is done over external or internal business factors. It is first and foremost a perspective, not a process.
 
-Read [Power BI Governance and Deployment Approaches]( http://go.microsoft.com/fwlink/?LinkId=785915&clcid=0x409) to learn about concepts, options and suggestions for governance within the Power BI ecosystem.
+> **Note**: The paper will be released on April 11, 2016. 
