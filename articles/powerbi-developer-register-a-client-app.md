@@ -126,5 +126,5 @@ Here's how to get a client id:
 - [Power BI permissions](powerbi-developer-power-bi-permissions.md)
 - [Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md)
 - [Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md)
-- [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)
+- [Authenticate a client app](powerbi-developer-authenticate-a-client-app.md)
 - [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
