@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/23/2016"
+   ms.date="04/12/2016"
    ms.author="davidi"/>
 
 # Create Power BI visuals using R  
@@ -100,6 +100,8 @@ As a result, the R visual now plots circles, only considers at the upper half, a
 When executing a R script that results in an error, the R visual is not plotted and an error message is displayed on the canvas. For details on the error, select **See details** from the R visual error on the canvas.
 
 ![](media/powerbi-desktop-r-visuals/r-visuals-9.png)
+
+> **R scripts security:** R visuals are created from R scripts, which could contain code with security or privacy risks. When attempting to view or interact with an R visual the first time, a user is presented with a security warning message. Only enable R visuals if you trust the author and source, or after you review and understand the R script.
 
 #### Known Limitations
 
