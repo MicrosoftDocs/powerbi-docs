@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/25/2016"
+   ms.date="04/12/2016"
    ms.author="derrickv"/>
 
 # What you need to create a Power BI app
@@ -126,3 +126,12 @@ Once you have an authentication security token, you can call any Power BI REST o
 -	[Push data into Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
 -	[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
 -	[Integrate a Power BI tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+
+## See also
+- [Sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)
+- [Register a client app](powerbi-developer-register-a-client-app.md)
+- [Register a web app](powerbi-developer-register-a-web-app.md)
+- [Push data into Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
+-	[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
+- [Integrate a Power BI tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+- [App permissions](powerbi-developer-power-bi-permissions.md)
