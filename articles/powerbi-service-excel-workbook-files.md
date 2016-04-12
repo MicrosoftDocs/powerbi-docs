@@ -87,7 +87,7 @@ When choosing this way, no dataset is created in Power BI. Your workbook will ap
 
 Choose this option if you only have data in worksheets, or you have ranges, PivotTables and charts you want to pin to dashboards.
 
-In Excel 2016, you can also use Publish > Upload. It's pretty much the same thing. To learn more, see [Publish to Power BI from Excel 2016](articles/powerbi-service-publish-from-excel).
+In Excel 2016, you can also use Publish > Upload. It's pretty much the same thing. To learn more, see [Publish to Power BI from Excel 2016](articles/powerbi-service-publish-from-excel.md).
 
 ## Import or connect to an Excel workbook from Power BI
 
