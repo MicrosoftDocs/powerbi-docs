@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/31/2016"
+ms.date="04/13/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise
 
@@ -139,7 +139,7 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 |*.frontend.clouddatahub.net|443|HTTPS|
 |*.core.windows.net|443|HTTPS|
 |login.microsoftonline.com|443|HTTPS|
-|login.windows.net|443|HTTPS|
+|*.msftncsi.com|443|Used to test internet connectivity if the gateway is unreachable by the Power BI service.|
 
 If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
 
@@ -161,3 +161,5 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 [Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-upgrade-as-connector.md)
 
 [Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
+
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
