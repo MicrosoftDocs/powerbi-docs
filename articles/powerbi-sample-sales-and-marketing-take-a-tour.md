@@ -17,7 +17,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="mihart"/>
+   ms.author="amac"/>
 
 # Sales & Marketing sample for Power BI: Take a tour  
 
