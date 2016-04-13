@@ -308,13 +308,14 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-personal-gateway",
             "powerbi-gateway-enterprise",
             "powerbi-gateway-enterprise-indepth",
+            "powerbi-gateway-proxy",
             "powerbi-gateway-enterprise-upgrade-as-connector",
             "powerbi-gateway-enterprise-manage-ssas",
             "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
             "powerbi-gateway-enterprise-manage-scheduled-refresh"
           ],
-          "numberOfFeaturedArticles": 4
+          "numberOfFeaturedArticles": 5
         },
         {
           "sectionTitle": "Administration",
