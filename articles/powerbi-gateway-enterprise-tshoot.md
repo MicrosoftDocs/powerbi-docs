@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/04/2016"
+ms.date="04/13/2016"
 ms.author="asaxton"/>
 # Troubleshooting the Power BI Gateway - Enterprise
 
@@ -54,7 +54,7 @@ The enterprise gateway runs as a windows service. You can start and stop it like
 
 All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs as mentioned above to get more details. 
 
-This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You would need to modify the *enterprisegatewayconfigurator.exe.config* with the correct proxy information. [Learn more](https://msdn.microsoft.com/library/kd3cf2ex.aspx)
+This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](powerbi-gateway-proxy.md)
 
 **Error: Failed to update gateway details.  Please try again.**
 
@@ -124,28 +124,42 @@ This is usually caused by one of the following.
 
 2. There is not a data source available on any enterprise gateway within your organization. You can configure the data source on a new, or existing, enterprise gateway.
 
+## Firewall
+
+You can test to see if your firewall may be blocking conections by running the following command from a PowerShell prompt. This will test connectivity to the Azure Service Bus.
+
+    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+
+The results should look similar to the following. The difference will be with TcpTestSucceeded. If **TcpTestSucceeded** is not *true*, then you may be blocked by a firewall.
+
+    ComputerName           : watchdog.servicebus.windows.net
+    RemoteAddress          : 70.37.104.240
+    RemotePort             : 5672
+    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
+    SourceAddress          : 10.120.60.105
+    PingSucceeded          : False
+    PingReplyDetails (RTT) : 0 ms
+    TcpTestSucceeded       : True
+
+If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](powerbi-gateway-enterprise.md/#ports)
+
 ## Tools for troubleshooting
 
-### Update to the latest version  
-A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway.
+### Collecting logs from the gateway configurator
 
-### Collecting logs from the gateway configurator**
+There are several logs you can collect for the enterprise gateway. Always start with the logs!
 
-You can start the configurator in a debug mode which will collect logs which can be used to troubleshoot issues when trying to configure the gateway. From a command prompt, pass */troubleshoot* to the configurator when you launch it. The default path for the configurator is the following.
+**Installer logs**
 
-    C:\Program Files\Power BI Enterprise Gateway
+    %localappdata%\Temp\Power_BI_Gateway_–_Enterprise*.log
 
-The command line would look something like this.
+**Configuration logs**
 
-    EnterpriseGatewayConfigurator.exe /troubleshoot
-	
-On the dialog screen, you will see a gear icon in the upper right.
+    %localappdata%\Microsoft\Power BI Enterprise Gateway\GatewayConfigurator*.log
 
-![](media/powerbi-gateway-enterprise-tshoot/egw-tshoot1.png)
-  
-After you walk through the steps, and close the configurator, it will place a zip file on the desktop. It may take a minute for the zip file to show. This zip file will contain several log files which can be used to diagnose further. The file name will look like the following.
+**Enterprise gateway service logs**
 
-    EnterpriseGatewayLogs 2015-12-01T14_39_32.zip
+    C:\Users\PBIEgwService\AppData\Local\Microsoft\Power BI Enterprise Gateway\EnterpriseGateway*.log
 
 ### Refresh History  
 When using the enterprise gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
@@ -171,6 +185,8 @@ The **Data Management Gateway** and **PowerBIGateway** logs are present under **
 ![](media/powerbi-gateway-enterprise-tshoot/fiddler.png)
 
 ## See also
+
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
 
 [Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
 

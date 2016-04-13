@@ -3,7 +3,7 @@
     description="Learn how to get data from Excel workbook files into Power BI"
     services="powerbi"
     documentationCenter=""
-    authors="davidiseminger"
+    authors="Minewiskan"
     manager="mblythe"
     editor=""
     tags=""
@@ -17,7 +17,7 @@
     ms.tgt_pltfrm="NA"
     ms.workload="powerbi"
     ms.date="03/30/2016"
-    ms.author="davidi"/>
+    ms.author="owend"/>
 
 # Get data from Excel workbook files
 ![](media/powerbi-service-excel-workbook-files/excel_icon.png)
@@ -76,7 +76,7 @@ You can continue editing your workbook. When your changes are saved, they’ll b
 
 Choose this option if you’ve used Get & Transform data or Power Pivot to load data into a data model, or if your workbook has Power View sheets with visualizations you want to see in Power BI.
 
-In Excel 2016, you can also use Publish > Export. It's pretty much the same thing. To learn more, see [Publish to Power BI from Excel 2016](articles/powerbi-service-publish-from-excel).
+In Excel 2016, you can also use Publish > Export. It's pretty much the same thing. To learn more, see [Publish to Power BI from Excel 2016](powerbi-service-publish-from-excel.md).
 
 ### Connect, manage and view Excel in Power BI
 When you choose **Connect**, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some great features to help you pin elements from your worksheets right to your dashboards.

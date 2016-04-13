@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="04/12/2016"
    ms.author="mihart"/>
 
 # KPIs in Power BI
@@ -29,7 +29,7 @@ KPIs are a great choice:
 -   to measure progress (what am I ahead or behind on?)
 
 -   to measure distance to a goal (how far ahead or behind am I?)   
-   
+
 ##  KPI visual requirements
 A Key Performance Indicator (KPI) is based on a specific measure and is designed to help you evaluate the current value and status of a metric against a defined target. Therefore, a KPI visual requires a *base* measure that evaluates to a value and a *target* measure or value, and a threshold or goal.
 
@@ -46,13 +46,13 @@ To follow along, sign in to Power BI and select **Get Data > Samples > Retail An
 2. Convert the visual to a KPI by selecting the KPI icon from the Visualization pane.
 
     ![](media/powerbi-service-tutorial-kpi/kpi-icon.png)
-    
-3. Add a goal. Add last years sales as the goal. Drag **Total Units Last Year** to the **Target goals** field. 
+
+3. Add a goal. Add last years sales as the goal. Drag **Total Units Last Year** to the **Target goals** field.
 
     ![](media/powerbi-service-tutorial-kpi/kpi-new.png)
 
 4.  Optionally, format the KPI by selecting the paintbrush icon to open the Formatting pane.
- 
+
     -   **Indicator** - controls the indicator’s display units and decimal places.
 
     -   **Trend axis** - when set to **On**, the trend axis is displayed as the background of the KPI visual.  
@@ -72,6 +72,6 @@ KPIs are also available on your mobile devices – keeping you always connected 
 
 [Reports in Power BI](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations.md)
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md) 
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

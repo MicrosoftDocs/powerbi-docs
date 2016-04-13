@@ -17,7 +17,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="11/06/2015"
-   ms.author="mihart"/>
+   ms.author="amac"/>
 
 # IT Spend Analysis sample for Power BI: Take a tour
 

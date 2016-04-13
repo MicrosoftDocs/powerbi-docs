@@ -16,13 +16,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="04/13/2016"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Gateway - Personal
 
 The following goes through some common issues you may encounter when using the Power BI Gateway - Personal. 
 
 > **Note**: If you encounter an issue that is not listed below, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+
+## Update to the latest version 
+ 
+A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
 
 ## Installation
 
@@ -33,6 +37,9 @@ The following goes through some common issues you may encounter when using the P
 **Data Management Gateway or Analysis Services Connector cannot be installed on the same computer as personal gateway** - If you already have an Analysis Services Connector or Data Management Gateway installed, you must first uninstall the Connector or the gateway and then try installing the personal gateway.
 
  > **Note**: If you encounter an issue during installation, the setup logs could provide information to help you resolve the issue. See [Setup Logs](#SetupLogs) for more information.
+ 
+ **Proxy configuration**
+ You may encounter issues with configuring the personal gateway if your environment needs the use of a proxy. To learn more about how to configure proxy information, see [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
 
 ## Schedule Refresh
 
@@ -94,9 +101,6 @@ If you are receiving an error with dashboard tiles refreshing, please refer to t
 
 ## Tools for troubleshooting
 
-### Update to the latest version  
-A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway.
-
 ### Refresh History  
 **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
 
@@ -133,6 +137,8 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Logs2.png)
 
 ## See Also
+
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
 
 [Data Refresh](powerbi-refresh-data.md)
 
