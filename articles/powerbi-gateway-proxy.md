@@ -78,7 +78,7 @@ For the *user mode application*, it will be the following.
 
     C:\Users\<user>\AppData\Local\Power BI Gateway - Personal \1.0\Gateway\diawp.exe.config
 
-**Configuring proxy settings**
+## Configuring proxy settings
 
 The default proxy configuration is the following.
 
