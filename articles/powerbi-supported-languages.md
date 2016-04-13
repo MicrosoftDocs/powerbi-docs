@@ -7,8 +7,8 @@
    manager="mblythe" 
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/13/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/09/2016"
+   ms.date="04/13/2016"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -126,7 +126,15 @@ At this time, a few features are available in English only:
 
 Stay tuned as we work to bring additional features to other languages. 
 
-## Choose your language
+## Choose your language in the Power BI service
+
+1. In the Power BI service, select the **Settings** icon ![](media/powerbi-supported-languages/pbi_settings_icon.png) > **Settings**.
+
+2. On the **General** tab > **Language**.
+
+3. Select your language > **Apply**.
+
+## Choose your language in the browser
 
 Power BI detects your language based on the language preferences on your computer. The way you access and change these preferences may vary depending on your operating system and browser. Here's how to access these preferences from Internet Explorer and Google Chrome.
 
@@ -163,3 +171,9 @@ Power BI detects your language based on the language preferences on your compute
     ![](media/powerbi-supported-languages/pbi_langs_eses.png)
 
     You may need to close and reopen your browser to see the change.
+
+## Choose your language when you download Power BI Desktop
+
+You have the option to select a language when you download Power BI Desktop. 
+
+-  Go to the [Power BI Desktop download page](https://www.microsoft.com/download/details.aspx?id=45331).
