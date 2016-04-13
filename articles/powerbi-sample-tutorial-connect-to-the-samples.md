@@ -17,7 +17,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/04/2016"
-   ms.author="mihart"/>
+   ms.author="amac"/>
 
 # Tutorial: Download and start using the Power BI samples  
 

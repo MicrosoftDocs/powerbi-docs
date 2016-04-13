@@ -16,16 +16,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/15/2016"
+   ms.date="04/12/2016"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
 
 Check this page for known issues and recently-released features in **Power BI Service**.
 
->**NOTE**: 
+>**NOTE**:
 >
-For related "What's New" information, see: 
+For related "What's New" information, see:
 >
 >[What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 >
@@ -51,7 +51,7 @@ This month we made some pdates to dashboards, Quick Insights, and Q&A.
 
 ***Quick Insights***
 
--   The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data. 
+-   The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data.
 
 ***Q&A***
 
@@ -286,7 +286,7 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 *   Improved navigation for full screen view
 
-* Better experience when inviting perrs from your organization to Power BI groups
+* Better experience when inviting peers from your organization to Power BI groups
 
 * Improved error messages for tiles
 
@@ -459,7 +459,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 -   We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](powerbi-free-trial-for-power-bi-pro.md). As part of the GA release, we are offering some great new features:
 
--   [A new visualization and report creation experience](powerbi-service-converting-your-reports-to-the-new-report-editor.md): The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
+-   A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
 
 -   [Power BI groups](powerbi-service-groups.md): groups offer a powerful collaborative experience built on Office 365 groups.
 -   [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.

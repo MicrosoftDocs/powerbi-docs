@@ -16,24 +16,24 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="04/06/2016"
    ms.author="mihart"/>
 
 # How to use report filters  
 
 ## Working with filters  
-Report owners can use the **Filters** pane to add filters to a report and those filters are saved with the report.  This is [done in Editing View](powerbi-service-add-a-filter-to-a-report.md).  People viewing the report in [Reading View can interact with the filters](powerbi-service-interact-with-a-report-in-reading-view.md), but cannot save changes to the report.
+Reports can be opened in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) or [Reading View](powerbi-service-open-a-report-in-reading-view.md). In Editing View, report owners can use the **Filters** pane to add filters to a report and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
 
-Filters are displayed in the bottom half of the **Visualization pane**:  
+Filter controls are available in the bottom half of the **Visualization pane**:  
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterList.jpg)
 
-If no visual is selected in the canvas, then the Filters pane displays just the filters that apply to the entire report page and to the entire report. In the example below, no visual is selected and there are no page level filters but there is a report level filter.  
+If no visual is selected in the canvas, then the Filters pane displays just the filters that apply to the entire report page and to the entire report (if any have been set). In the example below, no visual is selected and there are no page level filters but there is a report level filter.  
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterListWithReportFilter.jpg)  
 
 If a visual is selected in the canvas, you will also see the filters that apply to just that visual:  
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterListWithReportAndVIsLevelFilters.jpg)
 
-To display the filter options, select the down arrow next to the filter.  In the example below, the report level filter is set to 2013 and 2014. 
+To display options for a particular filter, select the down arrow next to the filter.  In the example below, the report level filter is set to 2013 and 2014. And this is an example of **basic filtering**.  To display the advanced options, select **Advanced Filtering**.
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterListDropdown.jpg)
 

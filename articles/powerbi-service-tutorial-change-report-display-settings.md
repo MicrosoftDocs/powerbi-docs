@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="04/06/2016"
    ms.author="mihart"/>
 
 # Tutorial: Change the display settings for a page in a Power BI report  
@@ -67,9 +67,9 @@ In the [previous article and video](powerbi-service-change-report-display-settin
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_changeDisplayPageSize4jpg.jpg)
 
 6. Select **16:9** page ratio.  
-        ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_changeDisplayPageSize2.jpg)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_changeDisplayPageSize2.jpg)
 
-        The report page displays using a ratio of 16 wide by 9 high. To see the actual pixel size being used, take a look at the greyed out Width and Height fields (1280x720).  There is a lot of empty space around the report canvas; this is because we previously set **View** to "Fit to Page."6.  Continue exploring the **Page Size** options.
+    The report page displays using a ratio of 16 wide by 9 high. To see the actual pixel size being used, take a look at the greyed out Width and Height fields (1280x720).  There is a lot of empty space around the report canvas; this is because we previously set **View** to "Fit to Page."6.  Continue exploring the **Page Size** options.
 
 ## Using page View and Page Size together  
 Use page View and Page Size together to create a report that can be embedded in another application.  

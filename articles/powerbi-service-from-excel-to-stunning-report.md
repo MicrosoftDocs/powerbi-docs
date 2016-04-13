@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/24/2016"
+   ms.date="04/12/2016"
    ms.author="mihart"/>
 
 # From Excel workbook to stunning report in no time
@@ -51,7 +51,7 @@ At the bottom of the left pane, select **Get Data**. On the Get Data page, under
 
 On the Files page, select **Local File**. Navigate to the Excel workbook file on your computer and select it to load into Power BI.
 
->**NOTE**: To follow along with the rest of this tutorial, use the [Financial sample workbook](powerbi-sample-download-the-financial-sample-workbook).
+>**NOTE**: To follow along with the rest of this tutorial, use the [Financial sample workbook](powerbi-sample-download-the-financial-sample-workbook.md).
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_local_file.png)
 
