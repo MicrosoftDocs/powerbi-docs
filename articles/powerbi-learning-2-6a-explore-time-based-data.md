@@ -57,6 +57,6 @@ As mentioned before, this course builds your knowledge by following the common f
 
 ![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
-While you might not do all that work yourself, you'll *understand* how those dashboards were created, and how they connected to the data... and when you're done with this course, you be able to create one of your own.
+While you might not do all that work yourself, you'll *understand* how those dashboards were created, and how they connected to the data... and when you're done with this course, you'll be able to create one of your own.
 
 See you in the next section!

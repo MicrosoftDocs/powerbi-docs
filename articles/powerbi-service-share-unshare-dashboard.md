@@ -7,8 +7,8 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="identified"
+   qualityDate="04/04/2016"/>
 
 <tags
    ms.service="powerbi"

@@ -22,7 +22,7 @@
    ms.author="davidi"/>
 
 # A quick look at the Power BI service
-The previous topic introduced you to **Power BI Desktop**. As we learned, the common flow of work in Power BI is to create a report in Power BI Desktop, publish it to the Power BI service, then share it with others so they can view it in the service or on a mobile app.
+As we learned, the common flow of work in Power BI is to create a report in Power BI Desktop, publish it to the Power BI service, then share it with others so they can view it in the service or on a mobile app.
 
 Some people begin in the Power BI service, though, so let's take a quick look at the service, and learn about an easy and popular way to quickly create visuals in Power BI: *content packs*.
 
@@ -79,6 +79,6 @@ Select the **Schedule Refresh** option from the bottom of that menu. The Setting
 
 ![](media/powerbi-learning-0-3-dashboards-cloud-services/c0a3_10.png)
 
-That enough for our quick look at the Power BI service. There are many more things you can do with the service, which we'll cover later in this course. Remember, too, that there are many different types of data you can connect to, and all sorts of content packs, with more of each coming all the time.
+That's enough for our quick look at the Power BI service. There are many more things you can do with the service, which we'll cover later in this course. Remember, too, that there are many different types of data you can connect to, and all sorts of content packs, with more of each coming all the time.
 
 Okay, let's move to the next topic, where we summarize this **Getting Started** section, and get you ready for what's next.

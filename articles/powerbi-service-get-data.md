@@ -3,7 +3,7 @@
    description="Data sources for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/03/2016"
-   ms.author="owend"/>
+   ms.author="davidi"/>
 
 # Data sources for Power BI service
 
