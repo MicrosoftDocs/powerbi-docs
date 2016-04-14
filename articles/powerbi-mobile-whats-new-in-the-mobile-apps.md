@@ -23,7 +23,7 @@
 
 ## April 2016
 
-See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/en-us/blog/power-bi-mobile-apps-update-april-2016/) for more details.
+See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/) for more details.
 
 ### Android mobile app
 
