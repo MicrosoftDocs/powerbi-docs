@@ -27,7 +27,7 @@ See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/pow
 
 ### Android mobile app
 
-**SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-android-kpis-mobile-reports.md) now on Android phones.
+**SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-android-kpis-mobile-reports.md)** now on Android phones.
 
 **Report gallery** Open your reports directly in the report gallery.​
 
