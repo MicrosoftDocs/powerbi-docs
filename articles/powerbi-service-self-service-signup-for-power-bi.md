@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/01/2016"
+   ms.date="04/14/2016"
    ms.author="asaxton"/>
 # Self-service sign up for Power BI
 
