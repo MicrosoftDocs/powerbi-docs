@@ -51,17 +51,16 @@ Say you want your company logo on your dashboard, or some other image.
 
   - Select **Apply**.  On the dashboard, resize and move the image as needed.
 
-  ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-image-added.png)
+      ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-image-added.png)
 
 ##  Add a text box or dashboard heading
 
 1. Select **Text box**.
 
       ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-text.png)
-
 >**NOTE**: To add a dashboard heading, type your heading in the text box and increase the font.
 
-3. To add a regular textbox:
+2. To add a regular textbox:
 
   - to display a title above the text box, select **Display title and subtitle** and type a title and/or subtitle.
 
@@ -70,8 +69,7 @@ Say you want your company logo on your dashboard, or some other image.
   - Optionally, set a custom link for the title.  However, in this example we've added hyperlinks within the text box itself, so leave **Set custom link** unchecked.
 
   - Select **Apply**.  On the dashboard, resize and move the text box as needed.
-
-      ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-text-added.png)
+  ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-text-added.png)
 
 ## Add a video
 
@@ -90,7 +88,6 @@ When you add a video tile to your dashboard, the video plays right on your dashb
   - Add a hyperlink for the title and subtitle.  Perhaps after your colleagues watch the embedded video you'd like them to view the entire playlist on YouTube -- add a link to your playlist here.
 
   - Select **Apply**.  On the dashboard, resize and move the video tile as needed.
-
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-video-added2.png)
 
 3. Select the video tile to play the video.
@@ -112,8 +109,7 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
   - enter the embed code. In this example we're copying and pasting a Twitter feed.
 
   - Select **Apply**.  On the dashboard, resize and move the web content tile as needed.
-
-    ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-code-added.png)
+      ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-code-added.png)
 
 ### Tips for embedding web content###
 
