@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2016"
+   ms.date="04/18/2016"
    ms.author="asaxton"/>
 
 # Data refresh in Power BI  
