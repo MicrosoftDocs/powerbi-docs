@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2016"
+   ms.date="04/18/2016"
    ms.author="asaxton"/>
 
 # Data refresh in Power BI  
@@ -56,7 +56,7 @@ A dataset can get data from one or more data sources. For example, you can use P
 
 A dataset contains information about the data sources, data source credentials, and in most cases, a sub-set of data copied from the data source. When you create visualizations in reports and dashboards, you’re looking at data in the dataset, or in the case of a live connection like Azure SQL Database, the dataset defines the data you see right from the data source. For a live connection to Analysis Services, the dataset definition comes from Analysis Services directly.
 
-> *When you refresh data, you are updating the data in the dataset that is stored in Power BI from your data source.* 
+> *When you refresh data, you are updating the data in the dataset that is stored in Power BI from your data source. This refresh is a full refresh and not incremental.* 
 
 Whenever you refresh data in a dataset, whether by using Refresh Now or by setting up a refresh schedule, Power BI uses information in the dataset to connect to the data sources defined for it, query for updated data, and then loads the updated data into the dataset. Any visualizations in your reports or dashboards based on the data are updated automatically.
 
