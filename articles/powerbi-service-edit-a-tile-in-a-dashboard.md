@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/25/2016"
+   ms.date="04/15/2016"
    ms.author="mihart"/>
 
 # Edit a tile -- resize, move, rename, pin, delete, add hyperlink

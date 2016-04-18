@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/05/2016"  
+   ms.date="04/15/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -24,7 +24,7 @@
 
 A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  The screenshot below shows many different tiles pinned to a dashboard.
 
-Besides pinning, standalone tiles can be created directly on the dashboard using [Add widget](powerbi-service-add-a-widget-to-a-dashboard.md). Standalone tiles include: text boxes, images, videos, and web content.
+Besides pinning, standalone tiles can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md). Standalone tiles include: text boxes, images, videos, and web content.
 
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull_new.png)
 
@@ -50,9 +50,9 @@ Tiles can be pinned from:
 
 -   [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
 
-And standalone tiles for images, text boxes, videos, and web content can be created directly on the dashboard using [Add widget](powerbi-service-add-a-widget-to-a-dashboard.md).
+And standalone tiles for images, text boxes, videos, and web content can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md).
 
-  ![](media/powerbi-service-dashboard-tiles/add_widget.png)
+  ![](media/powerbi-service-dashboard-tiles/add_widgetnew.png)
 
 
 ## Interacting with tiles on a dashboard
@@ -88,7 +88,7 @@ From here you can:
 ### Select (click) a tile
 When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report manager page, or Q&A question that was used to create the tile.
 
->**NOTE**: The exception to this is video tiles created using **Add widget**. Selecting a video widget tile causes the video to play right there on the dashboard.   
+>**NOTE**: The exception to this is video tiles created directly on the dashbaord using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
 
 
 ## Tips and troubleshooting  
@@ -97,7 +97,7 @@ When you select a tile, what happens next depends on how the tile was created an
 
 - If the tile was created from a workbook in Excel Online, and you do not have at least Read permissions for that workbook, selecting the tile will not open the workbook in Excel Online.
 
-- For tiles created from **Add widget**, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting a widget tile for an image, web code, or text box produces no action.
+- For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
 
 - If you don't have permissions, selecting a tile created from SSRS produces no action. Otherwise, the [SSRS report manager page opens](https://msdn.microsoft.com/library/mt604784.aspx).
 
