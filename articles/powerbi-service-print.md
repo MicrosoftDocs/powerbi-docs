@@ -7,7 +7,7 @@
    manager="mblythe"
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -16,14 +16,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/23/2016"
+   ms.date="04/15/2016"
    ms.author="mihart"/>
 
 # Printing from Power BI
 
-Print an entire dashboard or a report page from Power BI.  
+Print an entire dashboard or a report page from Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
 
->**NOTE**:  Printing to PDF is one of the supported print options in Edge and Chrome or other browsers if you've already configured the PDF driver.   
+>**NOTE**: Printing is only available in the Power BI service and not Power BI Desktop.
 
 ## Print a dashboard
 
@@ -33,11 +33,13 @@ Print an entire dashboard or a report page from Power BI.
 
     ![](media/powerbi-service-print/pbi_print_dash_ellipses.png)
 
-3. Choose the settings and print destination, and select **Print**.
+3. The Print window for your browser opens. Choose the settings and print destination, and select **Print**.
 
-    ![](media/powerbi-service-print/pbi_print_dash_new2.png)
+    > **NOTE**: The print dialog you see will depend on which browser you are using.
 
-  > **NOTE**: The print dialog you see will depend on which browser you are using.
+   ![](media/powerbi-service-print/pbi_print_dash_new2.png)
+
+
 
 ## Print a report page
 
@@ -49,11 +51,32 @@ Reports can be printed one page at a time.
 
     ![](media/powerbi-service-print/pbi_print_report_file.png)
 
-2. Choose the settings and print destination, and select **Print**.
+2. The Print window for your browser opens. Choose the settings and print destination, and select **Print**.
 
     ![](media/powerbi-service-print/pbi_print_report_new.png)
 
   > **NOTE**: The print dialog you see will depend on which browser you are using.
+
+##  Troubleshooting
+
+*   Q:I cannot find the **Print** button.
+*   A:If you are using Power BI Desktop, printing is not supported.  Printing only works in Power BI service.
+
+
+*   Q:I cannot print all the report pages at once.
+*   A:That is correct. Report pages can only be printed one page at a time.
+
+
+*   Q:I cannot print to PDF.
+*   A:You will only see this option if you've already configured the PDF driver in your browser.    
+
+
+*   Q:What I see when I select **Print** doesn't match what you're showing me here.
+*   A:The Print screens vary by browser and software version.
+
+
+*   Q: My printout isn't scaled correctly.  My dashboard doesn't fit on the page. Other scaling and orientation questions.
+*   A: Things like scaling, margins, orientation, size are not controlled by Power BI. For help with issues like this, refer to the documentation for your specific browser.      
 
 ## See also
 

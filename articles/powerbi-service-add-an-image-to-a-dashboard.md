@@ -16,11 +16,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/22/2016"
+   ms.date="04/18/2016"
    ms.author="mihart"/>
 
 # Add an image to a dashboard
 
-To add an image to a dashboard, see [Add a widget to a Power BI dashboard](powerbi-service-add-a-widget-to-a-dashboard.md)
+To add an image to a dashboard, see [Add dashboard tiles directly from a Power BI dashboard](powerbi-service-add-a-widget-to-a-dashboard.md).
 
 More about [creating Power BI dashboards](powerbi-service-create-a-dashboard.md).
