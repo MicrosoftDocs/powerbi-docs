@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/15/2016"  
+   ms.date="04/20/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -72,15 +72,15 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
     ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
 From here you can:
 
-- [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
-- [Export the data used in the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
+  - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+  - [Export the data used in the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
 
-- [View in full screen Focus  mode](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
+  - [View in Focus mode](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
 
-- [Pin the tile to another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+  - [Pin the tile to another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
  ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
 
-- [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
+  - [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
  ![](media/powerbi-service-dashboard-tiles/trash-icon.png)
 
 3. To close the action menu, select the X icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg).

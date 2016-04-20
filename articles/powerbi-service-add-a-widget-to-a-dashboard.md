@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/14/2016"
+   ms.date="04/19/2016"
    ms.author="mihart"/>
 
 # Add a tile directly from the dashboard itself
@@ -73,7 +73,7 @@ Say you want your company logo on your dashboard, or some other image.
 
 ## Add a video
 
-When you add a video tile to your dashboard, the video plays right on your dashboard.
+When you add a YouTube or Vimeo video tile to your dashboard, the video plays right on your dashboard.
 
 1. Select **Video**.
 
