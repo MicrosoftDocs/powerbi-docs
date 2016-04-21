@@ -39,9 +39,7 @@ One key thing to remember: italics in the data grid do not mean the data type i
 
 ## Reference queries in the Query Editor
 
-In Query Editor's navigator, when you right click one of the queries, an option for "Reference" is available.  This is useful for two reasons:
-
--   When you reference a query you only load the source data once regardless of the number of queries that reference the initial query. 
+In Query Editor's navigator, when you right click one of the queries, an option for "Reference" is available.  This is useful for the following reason:
 
 -   When you use files as the data source for a query, the absolute path to the file is stored in the query. When sharing or moving Power BI Desktop file or Excel workbook, you'll save time when you update the paths by updating it just once rather than the paths.
 
