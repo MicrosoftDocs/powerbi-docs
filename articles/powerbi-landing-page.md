@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Publish from Power BI to the web (preview)"
-   description="Publish from Power BI to the web (preview)"
+   pageTitle="Power BI Documentation"
+   description="Power BI Documentation"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
