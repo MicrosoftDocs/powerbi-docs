@@ -48,8 +48,6 @@ Watch our latest webinars on-demand.
 
 ### Intermediate webinars
 
-[Connecting to SAP data with Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
-
 [How to Design Visually Stunning Reports in Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html?Is=Website)
 
 [The Power of R In Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-14-Power-of-R-in-PowerBI-Registration.html?Is=Website)
@@ -67,6 +65,8 @@ Watch our latest webinars on-demand.
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
 ### Power BI Content Pack and Connector webinars
+
+[Connecting to SAP data with Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
 
 [Power BI Content Pack for appFigures](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Oct15-appFiguresPowerBIContentPack-Register.html?Is=Website)
 
