@@ -39,15 +39,15 @@ The **Featured dashboard** section of your left navpane will be greyed out until
 
 1. From the top-right corner of the dashboard, select the '...' and choose **Set as Featured dashboard**.
 
-  ![](media/powerbi-service-featured-dashboards/featured-dropdown2.png)
+    ![](media/powerbi-service-featured-dashboards/featured-dropdown2.png)
 
 2. Confirm your selection.
 
-  ![](media/powerbi-service-featured-dashboards/confirm-featured.png)
+    ![](media/powerbi-service-featured-dashboards/confirm-featured.png)
 
 3. After you see the Success message, the **Featured dashboard** option is activated in the left navpane.
 
-  ![](media/powerbi-service-featured-dashboards/featured-only2.png)
+    ![](media/powerbi-service-featured-dashboards/featured-only2.png)
 
 
 ## Change the Featured dashboard
@@ -56,11 +56,11 @@ Of course, if you change your mind later you can set a new dashboard as the Feat
 
 1. Select the ‘…’ and choose **Disable Featured dashboard**.
 
-![](media/powerbi-service-featured-dashboards/change-featured.png)
+    ![](media/powerbi-service-featured-dashboards/change-featured.png)
 
 2. Confirm that you no longer want to feature this particular dashboard. Un-featuring a dashboard does not remove it from your workspace.  
 
-![](media/powerbi-service-featured-dashboards/confirm-unfeature.png)
+    ![](media/powerbi-service-featured-dashboards/confirm-unfeature.png)
 
 ## See also
 

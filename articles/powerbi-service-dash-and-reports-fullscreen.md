@@ -55,11 +55,11 @@ Some uses for Full Screen mode are:
 
 1. While in Full Screen mode for a report or a dashboard, select the Focus mode icon ![](media/powerbi-service-display-dash-in-focus-mode/PBI_popOut.jpg)  for a specific tile or specific visual. The tile or visual will display full screen without menus or chrome.
 
-  ![](media/powerbi-service-dash-and-reports-fullscreen/fullscreen-tile.png)
+    ![](media/powerbi-service-dash-and-reports-fullscreen/fullscreen-tile.png)
 
 2. To exit, hover to reveal the options menu and select the Exit icon to return to the dashboard (for tiles) or to the report (for visuals).
 
-  ![](media/powerbi-service-dash-and-reports-fullscreen/viz-fullscreen-menu-new.png)
+    ![](media/powerbi-service-dash-and-reports-fullscreen/viz-fullscreen-menu-new.png)
 
 
 ## Dashboards in Full Screen mode
