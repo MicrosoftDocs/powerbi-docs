@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Print a dashboard, print a report"
-   description="Printing a dashboard or report from Power BI."
+   pageTitle="Print a dashboard, print a dashbaord tile, print a report page"
+   description="Printing a dashboard, tile, or report page from Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -16,18 +16,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/15/2016"
+   ms.date="04/20/2016"
    ms.author="mihart"/>
 
 # Printing from Power BI
 
-Print an entire dashboard or a report page from Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
+Print an entire dashboard, a dashboard tile, a report page, or a report visual from Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
 
 >**NOTE**: Printing is only available in the Power BI service and not Power BI Desktop.
 
 ## Print a dashboard
 
-1. Open the dashboard you'd like to print.
+1. Open the dashboard that you'd like to print.
 
 2. In the top right corner, select the ellipses (...) and choose **Print dashboard**.
 
@@ -40,6 +40,15 @@ Print an entire dashboard or a report page from Power BI service. Reports can on
    ![](media/powerbi-service-print/pbi_print_dash_new2.png)
 
 
+## Print a dashboard tile
+
+1. [Open the tile in Full Screen mode](powerbi-service-display-dash-in-focus-mode.md).
+
+2. Hover over the tile to reveal the Options menu.
+
+  ![](media/powerbi-service-print/menu-options-new.png)
+
+3. Select the Print icon ![](media/powerbi-service-print/print-icon.png).
 
 ## Print a report page
 
@@ -56,6 +65,12 @@ Reports can be printed one page at a time.
     ![](media/powerbi-service-print/pbi_print_report_new.png)
 
   > **NOTE**: The print dialog you see will depend on which browser you are using.
+
+## Print a report visual
+
+1. [Open the visual in Focus mode](powerbi-service-display-dash-in-focus-mode.md).
+
+2. Follow steps 2-3 above.
 
 ##  Troubleshooting
 
