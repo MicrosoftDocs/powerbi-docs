@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/23/2016"
+   ms.date="04/15/2016"
    ms.author="mihart"/>
 
 # Create a Power BI dashboard
@@ -24,6 +24,8 @@
 You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard.  This article shows you how to create an empty dashboard using the Power BI service left navigation pane. An empty dashboard isn't very useful though -- follow the links below, and at the bottom of the page, to learn how to add content to your dashboard.
 
 >**NOTE**: Remember that your dashboard will be blank until you [get some data](powerbi-service-get-data.md) and [pin some tiles](powerbi-service-dashboard-tiles.md).
+
+>**NOTE**: Dashboards are a feature of Power BI service, not Power BI Desktop.
 
 ## Create a dashboard
 ### Create an empty dashboard
@@ -49,7 +51,7 @@ There are many different ways to add content to your dashboard.
 
 -  [Connect to or import at least one dataset](powerbi-service-get-data.md) and [pin content from that dataset to your dashboard](powerbi-service-dashboard-tiles.md).  
 
-- [Add standalone content to your dashboard](powerbi-service-add-a-widget-to-a-dashboard.md). Use **Add widget** to add an image, text box, video, or web content to your dashboard.
+- [Add standalone content to your dashboard](powerbi-service-add-a-widget-to-a-dashboard.md). Use **Add tile** to add an image, text box or heading, video, or web content to your dashboard.
 
 >**TIP**: Need some help getting started adding content?  Check out the [Get started with Power BI tutorial](powerbi-service-get-started.md).
 

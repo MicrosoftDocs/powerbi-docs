@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2016"
+   ms.date="04/19/2016"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
@@ -37,9 +37,68 @@ For related "What's New" information, see:
 
 ## Recent updates
 
+**April 14, 2016**
+
+***Enterprise***
+
+-   [ExpressRoute](powerbi-admin-power-bi-expressroute.md): use to establish a private, managed connection to Power BI.
+
+-   [Content pack support for RLS](powerbi-admin-rls.md) (Preview): If RLS is defined for those dashboards and reports that are distributed as part of a content pack, then the security rules will be respected for those content packs.
+
+***Dashboards***
+
+-   [Vimeo video tile](powerbi-service-add-a-widget-to-a-dashboard.md):  From the dashboard, add a tile that contains an embedded Vimeo player.
+
+***Analyze in Excel***
+
+-   [Analyze in Excel](powerbi-service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users; free and Pro.
+
+-   Improved multi-user account experience: if you have more than 1 Power BI user account, it's now easier to sign-in.
+
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
+
+**March 31, 2016**
+Lots of updates announced at the Microsoft Data Insights Summit.
+
+***Dashboards***
+
+-   Featured dashboard: makes it easier to reach the dashboard you care about most.
+
+-   Filter dashboard list: show all, show content you created, show content shared with you.
+
+
+***Enterprise features***
+
+-   Admin usage reporting: added a usage report to the Power BI admin center.
+
+-   Row-level security: this is a Preview feature that allows you to set permissions on Power BI datasets.
+
+-   Disable exporting data: users in your tenant will no longer be able to export tile and visual data to a .csv file.
+
+***Q&A***
+
+-   Auto complete for "is": Q&A will suggest values if you type column name followed by "is".
+
+***Mobile***
+
+-   KPIs on your Apple watch: monitor your KPI and card tiles without having to open Power BI app.
+
+***Excel***
+
+-   Analyze in Excel: connect your Power BI data model to Excel and do your analysis inside of Excel instead of Power BI.
+
+***Other***
+
+-   Power BI in Australia: now anyone in Australia, individual or through an organization, can go to powerbi.microsoft.com and sign up for Power BI.
+
+-   Language settings: override the automatic language detection and set the language for Power BI.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update-part-two/)
+
 **March 11, 2016**
 
-This month we made some pdates to dashboards, Quick Insights, and Q&A.
+This month we made some updates to dashboards, Quick Insights, and Q&A.
 
 ***Dashboards***
 

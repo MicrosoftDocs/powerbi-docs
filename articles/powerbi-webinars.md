@@ -25,9 +25,8 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[04/14/16 - The Power of R In Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-14-Power-of-R-in-PowerBI-Registration.html?Is=Website)
-
-[04/21/16 - Connecting to SAP data with Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
+Nothing on the calendar yet. Check back soon.
+In the meantime, check our on-demand webinars.
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -35,11 +34,11 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
-[What's New for SQL Server 2016 Analysis Services - March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-24-PowerBI-SSAS-Registration.html?Is=Website)
+[Connecting to SAP data with Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
 
-[Power BI Gateways - Connect Power BI to Your On-premised Data - March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-10-PowerBI-Gateway-Registration.html?Is=Website)
+[How to Design Visually Stunning Reports in Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html?Is=Website)
 
-[What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
+[The Power of R In Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-14-Power-of-R-in-PowerBI-Registration.html?Is=Website)
 
 ###  Introductory webinars
 
@@ -48,6 +47,10 @@ Watch our latest webinars on-demand.
 [What’s New and Exciting in Power BI- February 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-04-PowerBIWhatsNew-Registration.html?Is=Website)
 
 ### Intermediate webinars
+
+[How to Design Visually Stunning Reports in Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html?Is=Website)
+
+[The Power of R In Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-14-Power-of-R-in-PowerBI-Registration.html?Is=Website)
 
 [What's New for SQL Server 2016 Analysis Services - March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-24-PowerBI-SSAS-Registration.html?Is=Website)
 
@@ -62,6 +65,8 @@ Watch our latest webinars on-demand.
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
 ### Power BI Content Pack and Connector webinars
+
+[Connecting to SAP data with Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
 
 [Power BI Content Pack for appFigures](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Oct15-appFiguresPowerBIContentPack-Register.html?Is=Website)
 
