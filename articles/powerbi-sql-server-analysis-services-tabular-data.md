@@ -38,11 +38,11 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_GetDataButton.png)
 
-2.  Select **Databases & More.**
+2.  Select **Databases & More**.
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_GetData_1.png)
 
-3.  Click **SQL Server Analysis Services** connector. \> **Connect**. 
+3.  Click **SQL Server Analysis Services** > **Connect**. 
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_GetData_2.png)
 
