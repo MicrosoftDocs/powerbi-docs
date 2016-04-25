@@ -3,7 +3,7 @@
    description=""We couldn't find any data in your Excel workbook""
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
@@ -16,8 +16,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2016"
-   ms.author="owend"/>
+   ms.date="04/25/2016"
+   ms.author="davidi"/>
 # "We couldn't find any data in your Excel workbook"
 
 ## Problem
