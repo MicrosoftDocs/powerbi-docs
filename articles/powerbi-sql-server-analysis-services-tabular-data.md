@@ -30,7 +30,7 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 
 -   Q&A natural language querying is not currently available for live connections.  Only cloud-based datasets are supported for Q&A.
 
- > **Note**: Working with live Analysis Services servers, along with Groups, are Pro features. [Learn more](powerbi-power-bi-pro-content-what-is-it.md).
+> **Note**: Working with live Analysis Services servers, along with Groups, are Pro features. [Learn more](powerbi-power-bi-pro-content-what-is-it.md)
 
 ## To connect to a model from Get data
 
