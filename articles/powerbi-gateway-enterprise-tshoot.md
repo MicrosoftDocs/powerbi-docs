@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/13/2016"
+ms.date="04/25/2016"
 ms.author="asaxton"/>
 # Troubleshooting the Power BI Gateway - Enterprise
 
@@ -100,11 +100,9 @@ If the underlying error message is similar to the following, this means that the
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
-**Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI site**
+**Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
 
-We haven’t yet integrated data sources from the enterprise gateway into the *Get Data* experience for Analysis Services from Power BI web. This will be coming soon.
-
-To make use of data sources for Analysis Services, you can create a report within Power BI Desktop. Be sure that you select live data for Analysis Services. Then publish it to Power BI and it will make use of the enterprise gateway.
+Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the adminsitrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
 
 ## Dataset
 
