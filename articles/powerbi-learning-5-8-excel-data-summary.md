@@ -3,7 +3,7 @@
    description="Recap how easily Excel and Power BI work together"
    services="powerbi"
    documentationCenter=""
-   authors="minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
    editor=""
    tags=""
