@@ -26,10 +26,9 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 
 -   In order to connect to a live Analysis Services server, a Power BI Gateway - Enterprise must be installed and configured by an administrator. For more information, see [Configure a Power BI Analysis Services Connector](powerbi-gateway-enterprise.md).
 
--   When you use the gateawy, your data remains on-premises.  The reports you create based on that data are saved in the Power BI service. 
+-   When you use the gateway, your data remains on-premises.  The reports you create based on that data are saved in the Power BI service. 
 
 -   Q&A natural language querying is not currently available for live connections.  Only cloud-based datasets are supported for Q&A.
-
 
  > **Note**: Working with live Analysis Services servers, along with Groups, are Pro features. [Learn more](powerbi-power-bi-pro-content-what-is-it.md).
 
@@ -38,7 +37,6 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 1.  In **My Workspace**, click **Get data**. You can also change to a group workspace, if one is available.
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_GetDataButton.png)
-
 
 2.  Select **Databases & More.**
 
@@ -53,7 +51,6 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 5.  Select the model you want to connect to. This could be either Tabular or Multidimensional.
 
 After you connect to the model, it will appear in your Power BI site in **My Workspace/Datasets**. If you were swtiched to a group workspace, then the dataset will appear within the group.
-
 
 ![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_Dataset_5.png)
 
