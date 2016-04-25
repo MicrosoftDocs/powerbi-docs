@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle=""We couldn't find any data in your Excel workbook""
-   description=""We couldn't find any data in your Excel workbook""
+   pageTitle="Error: We couldn't find any data in your Excel workbook"
+   description="Error: We couldn't find any data in your Excel workbook"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
