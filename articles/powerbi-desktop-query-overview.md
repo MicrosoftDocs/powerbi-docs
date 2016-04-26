@@ -16,12 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 
 # Query overview in Power BI Desktop  
 
-Welcome to Power BI Desktop. With Power BI Desktop you can connect to the world of data, create compelling and foundational reports, and share your efforts with others – who can then build on your work, and expand their business intelligence efforts.
+With **Power BI Desktop** you can connect to the world of data, create compelling and foundational reports, and share your efforts with others – who can then build on your work, and expand their business intelligence efforts.
 
 Power BI Desktop has three views:
 

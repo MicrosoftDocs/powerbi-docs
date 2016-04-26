@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 
 # Create and manage relationships in Power BI Desktop
@@ -57,7 +57,7 @@ When you create or edit a relationship, you can configure advanced options.  By
 
 ## Cardinality
 
-**Many to One (\*:1)**** ** - This is the most common, default type. This means the column in one table can have more than one instance of a value, and the other related table, often know as the Lookup table, has only one instance of a value.
+**Many to One (\*:1)** - This is the most common, default type. This means the column in one table can have more than one instance of a value, and the other related table, often know as the Lookup table, has only one instance of a value.
 
 **One to One (1:1)** - This means the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
 
