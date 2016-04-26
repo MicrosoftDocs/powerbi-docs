@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 # Common query tasks in Power BI Desktop
 
