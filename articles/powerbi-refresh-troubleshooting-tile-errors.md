@@ -7,7 +7,7 @@ authors="guyinacube"
 manager="mblythe"
 editor=""
 tags=""
-qualityFocus="monitering"
+qualityFocus="monitoring"
 qualityDate="04/04/2016"/>
 
 <tags
