@@ -16,12 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/21/2016"
+   ms.date="04/27/2016"
    ms.author="maggies"/>
 
 # Connect to files on your group's OneDrive for Business
 
-Now that you have a group in Power BI, you can store your Excel, CSV, and Power BI Desktop files on your group’s OneDrive for Business. When you store files in your OneDrive for Business, you can continue updating them, and those updates are automatically reflected in the reports and dashboards based on the files. 
+Now that you have a group in Power BI, you can store your Excel, CSV, and Power BI Desktop files on your group’s OneDrive for Business. You can continue updating files you store in your OneDrive for Business, and those updates are automatically reflected in the reports and dashboards based on the files. 
 
 >**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
@@ -41,7 +41,7 @@ Adding files to your group’s Power BI workspace is a two-step process: 
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GrpWkspaceFiles.png)
 
-    >**Note**: If you don't see **Files** on the group menu, select **Members** to open the group's OneDrive for Business. There, select **Files**. Office 365 creates a OneDrive storage location.  
+    >**Note**: If you don't see **Files** on the group menu, select **Members** to open the group's OneDrive for Business. There, select **Files**. Office 365 sets up a OneDrive storage location for your group files.  
 
 3.  Here, you can upload your files to your Office 365 group's OneDrive. Select **Upload**, and navigate to your files.
 
@@ -90,7 +90,7 @@ Now that your files are in your group’s OneDrive for Business, you have a choi
 
 
 ### See also
-[Groups in Power BI](powerbi-service-groups.md)
+[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 
 [Import data from Excel workbooks](powerbi-service-get-data-from-files.md)
 
