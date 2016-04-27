@@ -18,7 +18,7 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="02/09/2016"
 ms.author="asaxton"/>
-# Manage your enterprise data source - Folders
+# Manage your enterprise data source - Import/Scheduled Refresh
 
 Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources that are used for scheduled refresh as opposed to DirectQuery or live connections.
 
