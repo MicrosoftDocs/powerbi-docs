@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Power BI Pro content - what is it?"
    description="Power BI Pro content - what is it?"
    services="powerbi"
@@ -33,7 +33,7 @@ If your content contains any of the following items, it's Power BI Pro content:
 
 -   A dashboard or report that's installed from an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md).
 
--   A dashboard, report, or dataset that's contained in a [group workspace](powerbi-service-groups.md).
+-   A dashboard, report, or dataset that's contained in a [group workspace](powerbi-service-create-a-group-in-power-bi.md).
 
 -   A dashboard that contains data streamed at a rate above 10k rows/hour.
 

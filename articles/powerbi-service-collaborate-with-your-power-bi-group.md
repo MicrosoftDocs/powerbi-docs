@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/09/2016"
+   ms.date="04/27/2016"
    ms.author="maggies"/>
 # Collaborate with your Power BI group
 
@@ -65,6 +65,6 @@ If you’re owner or admin for a group, you can also add or remove group members
 
 
 ### See also
-More about [groups in Power BI](powerbi-service-groups.md)
+[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
  
 

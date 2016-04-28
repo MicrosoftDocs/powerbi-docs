@@ -520,7 +520,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 -   A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
 
--   [Power BI groups](powerbi-service-groups.md): groups offer a powerful collaborative experience built on Office 365 groups.
+-   [Power BI groups](powerbi-service-create-a-group-in-power-bi.md): groups offer a powerful collaborative experience built on Office 365 groups.
 -   [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
 
 -   [Bring in whole Excel files](powerbi-bring-in-whole-excel-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.

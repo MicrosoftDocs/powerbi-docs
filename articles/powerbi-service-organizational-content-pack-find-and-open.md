@@ -16,15 +16,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="04/27/2016"
    ms.author="maggies"/>
 
 # Find and open an organizational content pack in Power BI  
 
-When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups you belong to](powerbi-service-groups.md), it appears in your  content gallery.  Browse or search the content gallery to find and open organizational content packs.
+When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups you belong to](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), it appears in your  content pack library.  Browse or search the content pack library to find and open organizational content packs.
 
 ## Open an organizational content pack  
-[Power BI Pro](https://powerbi.microsoft.com/pricing) users all have an organizational content pack library that displays content packs shared with their entire organization, to distribution or security groups, and to [Office 365 groups they belong to](powerbi-service-groups.md).  
+[Power BI Pro](https://powerbi.microsoft.com/pricing) users all have an organizational content pack library that displays content packs shared with their entire organization, to distribution or security groups, and to Office 365 groups they belong to.  
 
 1.  From the left Navigation Pane, select **Get Data \> My Organization** \> **Get**.
 
@@ -52,4 +52,4 @@ If the content pack owner changes the content pack, and:
 [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-[Groups in Power BI](powerbi-service-groups.md)  
+[Create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md)  

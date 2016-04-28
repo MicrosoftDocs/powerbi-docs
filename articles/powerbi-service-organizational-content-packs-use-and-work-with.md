@@ -38,7 +38,7 @@ Editing and saving changes to an organizational content pack creates a personali
 
 This can happen for several reasons:
 
--   **Membership changes**:  Content packs are published to email distribution groups, security groups, and [Power BI groups based on Office 365](powerbi-service-groups.md).  If you are removed from the group, you will no longer have access to the content pack.
+-   **Membership changes**:  Content packs are published to email distribution groups, security groups, and [Power BI groups based on Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1).  If you are removed from the group, you will no longer have access to the content pack.
 
 -   **Distribution changes**: The content pack creator changes the distribution. For example, if the content pack was originally published to the entire organization but the creator republished it to a smaller audience, you may no longer be included.
 
@@ -51,12 +51,8 @@ When the content pack is created, the refresh settings are inherited with the da
 See [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
 ### See also
-
-[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
-
-[Get Started with Power BI](powerbi-service-get-started.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-[Groups in Power BI](powerbi-service-groups.md)
+-  [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
+-  [Get Started with Power BI](powerbi-service-get-started.md)
+-  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+-  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 

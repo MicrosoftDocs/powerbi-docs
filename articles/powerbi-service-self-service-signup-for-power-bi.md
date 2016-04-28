@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Self-Service Sign up for Power BI"
    description="Self-Service Sign up for Power BI. This looks at how an individual can sign up for Power BI (free), a trial or purchase Power BI Pro."
    services="powerbi"
@@ -82,7 +82,7 @@ When you are in the service, you can verify that you have a free account by goin
 After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
 -   Create and publish customized [content packs](powerbi-service-organizational-content-packs-introduction.md)
--   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [groups](powerbi-service-groups.md)
+-   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [groups](powerbi-service-create-a-group-in-power-bi.md)
 -   Connect to on-premises data using [Personal Gateway](powerbi-personal-gateway.md)
 -   Enable live interactive connectivity to the following sources:
 	-   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
