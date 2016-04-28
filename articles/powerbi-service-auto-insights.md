@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/22/2016"
+   ms.date="04/21/2016"
    ms.author="mihart"/>
 
 
@@ -26,7 +26,7 @@ Have a new dataset and not quite sure where to start?  Need to build a dashboard
 
 Run Quick Insights to generate interesting interactive visualizations based on your data.  
 
->**NOTE**: Quick Insights are not available in Power BI Desktop.
+>**NOTE**: Quick Insights are not available in Power BI Desktop. The Quick Insights feature is built on a growing [set of advanced analytical algorithms](powerbi-service-auto-insights-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
 ## Run Quick Insights on a dataset
 
@@ -39,9 +39,11 @@ Run Quick Insights to generate interesting interactive visualizations based on y
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsSearching.png)
 
 3. Within seconds, your insights are ready.  Select **View Insights** to display visualizations.
-![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
+
+    ![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
 
     Or, in the leftnav, select the ellipses (...) and choose **View Insights**.
+    
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate Insight Cards. Each card has a chart or graph plus a short description.

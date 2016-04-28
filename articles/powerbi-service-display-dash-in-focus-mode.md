@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"
+   ms.date="04/20/2016"
    ms.author="mihart"/>
 
 # Display a dashboard tile or report visual in Focus mode
