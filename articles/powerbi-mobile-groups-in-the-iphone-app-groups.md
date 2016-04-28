@@ -16,12 +16,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2016"
+   ms.date="04/28/2016"
    ms.author="maggies"/>
 
 # Groups in the iPhone app (Power BI for iOS)  
 
-Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) and [groups in Power BI](powerbi-service-create-a-group-in-power-bi.md). Groups are available with the paid Power BI experience. You [create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md). Then you see and interact with group dashboards in the Microsoft [Power BI iOS app for the iPhone](powerbi-mobile-ipad-app-get-started.md). 
+Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1). Groups are available with the paid Power BI experience. 
+
+You [create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md). Then you see and interact with group dashboards in the Microsoft [Power BI iOS app for the iPhone](powerbi-mobile-ipad-app-get-started.md). 
 
 Power BI sends a notification to your iPhone whenever someone adds a new dashboard to any group you belong to. 
 
@@ -38,4 +40,5 @@ Power BI sends a notification to your iPhone whenever someone adds a new dashboa
 
 4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-iphone-app.md) to open and view it.
 
+### See also
 More about [the iPhone app](powerbi-mobile-iphone-app-get-started.md) for Power BI.  

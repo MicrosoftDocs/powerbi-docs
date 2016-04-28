@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="04/27/2016"
    ms.author="maggies"/>
 
 # Find and open an organizational content pack in Power BI  

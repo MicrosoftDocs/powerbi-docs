@@ -36,7 +36,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 
 2.  In the **Create Content Pack** window, enter the following information.  Keep in mind that a content pack library could end up with hundreds of content packs published for corporate or group use. Take time to select the right audience, to give your content pack a meaningful name, and to add a good description.  Use words that will make your content pack easy to find via search.
 
-    a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 groups](powerbi-service-groups.md), distribution groups, or security groups. For example:
+    a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 groups](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), distribution groups, or security groups. For example:
 
 	salesmgrs@contoso.com; sales@contoso.com
 
@@ -76,9 +76,9 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 6.  They select **Connect**, and now they can [view and work with your content pack](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
 ### See also  
-[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
-[Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md)  
-[Get Started with Power BI](powerbi-service-get-started.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-[Groups in Power BI](powerbi-service-groups.md)  
-[What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
+-  [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+-  [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md)  
+-  [Get Started with Power BI](powerbi-service-get-started.md)  
+-  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+-  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)  
+-  [What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
