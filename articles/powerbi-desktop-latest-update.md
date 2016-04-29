@@ -16,9 +16,56 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/23/2016"
+   ms.date="04/29/2016"
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
+
+## April 2016 Update (2.34.4372.322)
+
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
+
+In April, we're showering our great Power BI customers with another collection of compelling updates for Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+
+### Report View:
+
+-   Additional styles on a table, matrix, and multi-row card
+-   Trend lines on single visuals
+-   New drill action – **See Records**
+-   Map auto-zoom during drill/filter
+-   In-line hierarchy labels for expanded view (Preview - [see the article](powerbi-desktop-inline-hierarchy-labels.md))
+
+### Data Modeling:
+
+-   Modelling operations are no longer blocked while visuals are refreshing
+-   Time Intelligence with built-in date hierarchy fields (Preview)
+-   Data model synonyms
+
+### Data Connectivity:
+
+-   Query Parameters
+-   Power BI Template files
+-   New *Online Services* category in Get Data dialog
+-   New Connectors:
+    -   SharePoint Folder
+    -   Webtrends
+    -   SparkPost
+    -   tyGraph
+-   Conditional Columns
+-   DirectQuery – Specify DirectQuery vs. Import mode in data source dialogs
+-   Column type indicator in Query Editor preview column headers
+-   Reorder Queries and Query Groups using Drag & Drop gestures
+-   Query Management menu in the ribbon
+
+>NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-update-feature-summary/), where you can get more detailed information about each of these new features.
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7IFZTYJR3Gk" frameborder="0" allowfullscreen></iframe>
+
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## March 2016 Update (2.33.4337.281)
