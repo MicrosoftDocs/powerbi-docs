@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/07/2016"
+   ms.date="04/29/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -175,7 +175,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-how-should-i-share-my-dashboard",
             "powerbi-service-share-unshare-dashboard",
             "powerbi-service-publish-to-web",
-            "powerbi-service-groups",
             "powerbi-service-create-a-group-in-power-bi",
             "powerbi-service-connect-to-files-on-your-groups-onedrive-for-business",
             "powerbi-service-collaborate-with-your-power-bi-group",
