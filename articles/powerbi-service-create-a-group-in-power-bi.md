@@ -21,7 +21,7 @@
 
 # Create a group in Power BI  
 
-Groups in Power BI bring together people and information, and connect with apps across Office 365 to foster communication and collaboration. Power BI groups are built on [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1). You can create a group in Power BI, or in Office 365 -- it has the same characteristics either way. 
+Groups in Power BI bring together people and information, and connect with apps across Office 365 to foster communication and collaboration. Power BI groups are built on [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). You can create a group in Power BI, or in Office 365 -- it has the same characteristics either way. 
 
 As the creator of a group, you are automatically an admin. As admin, you can add and delete members, and make other members admins. All admins can create, update, and delete the dashboards, reports, and other content of the group. 
 

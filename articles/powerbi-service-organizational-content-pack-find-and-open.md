@@ -21,7 +21,7 @@
 
 # Find and open an organizational content pack in Power BI  
 
-When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups you belong to](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), it appears in your  content pack library.  Browse or search the content pack library to find and open organizational content packs.
+When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups you belong to](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), it appears in your  content pack library.  Browse or search the content pack library to find and open organizational content packs.
 
 ## Open an organizational content pack  
 [Power BI Pro](https://powerbi.microsoft.com/pricing) users all have an organizational content pack library that displays content packs shared with their entire organization, to distribution or security groups, and to Office 365 groups they belong to.  

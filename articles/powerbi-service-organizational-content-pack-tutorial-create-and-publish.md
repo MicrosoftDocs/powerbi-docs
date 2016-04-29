@@ -36,7 +36,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 
 2.  In the **Create Content Pack** window, enter the following information.  Keep in mind that a content pack library could end up with hundreds of content packs published for corporate or group use. Take time to select the right audience, to give your content pack a meaningful name, and to add a good description.  Use words that will make your content pack easy to find via search.
 
-    a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 groups](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), distribution groups, or security groups. For example:
+    a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distribution groups, or security groups. For example:
 
 	salesmgrs@contoso.com; sales@contoso.com
 

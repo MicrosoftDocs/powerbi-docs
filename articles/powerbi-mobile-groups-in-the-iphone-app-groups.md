@@ -21,7 +21,7 @@
 
 # Groups in the iPhone app (Power BI for iOS)  
 
-Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1). Groups are available with the paid Power BI experience. 
+Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Groups are available with the paid Power BI experience. 
 
 You [create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md). Then you see and interact with group dashboards in the Microsoft [Power BI iOS app for the iPhone](powerbi-mobile-ipad-app-get-started.md). 
 

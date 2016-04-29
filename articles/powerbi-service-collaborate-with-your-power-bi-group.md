@@ -24,7 +24,7 @@ Probably the main reason you created a group in Power BI was to share and collab
 
 >**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
-Collaboration doesn’t end with Power BI. It continues with other Office 365 group services, like sharing files on OneDrive for Business, conversations in Exchange, calendar, tasks, and so on. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1).
+Collaboration doesn’t end with Power BI. It continues with other Office 365 group services, like sharing files on OneDrive for Business, conversations in Exchange, calendar, tasks, and so on. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
 Collaborating in Office 365 starts from the group’s workspace.
 
