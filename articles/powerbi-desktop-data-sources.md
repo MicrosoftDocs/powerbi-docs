@@ -141,8 +141,6 @@ The following image shows the **Get Data** window for **Other**.
 
 ## Connecting to a Data Source
 
- 
-
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
 ![](media/powerbi-desktop-data-sources/PBID_GetDataOther.png)
@@ -162,7 +160,7 @@ You can either load the data by selecting the **Load** button at the bottom of t
 
 That’s all there is to connecting to data sources in Power BI Desktop! Try connecting to data from our growing list of data sources, and check back often - we continue to add to this list all the time.
 
-# More Information
+## More Information
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
