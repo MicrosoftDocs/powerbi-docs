@@ -423,12 +423,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "articles": [
             "powerbi-desktop-report-view",
             "powerbi-desktop-sort-by-column",
-            "powerbi-desktop-tips-and-tricks-for-creating-reports",
             "powerbi-desktop-r-visuals",
             "powerbi-custom-visuals-use",
+            "powerbi-desktop-inline-hierarchy-labels",
             "powerbi-service-cortana-desktop-entity-cards"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         },
         {
           "sectionTitle": "Learn more",
