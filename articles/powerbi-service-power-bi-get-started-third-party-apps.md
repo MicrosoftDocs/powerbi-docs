@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2015"
+   ms.date="04/20/2016"
    ms.author="derrickv"/>
 
 # Get started with third party apps

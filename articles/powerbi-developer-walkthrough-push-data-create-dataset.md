@@ -16,10 +16,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2016"
+   ms.date="05/02/2016"
    ms.author="derrickv"/>
 
 # Step 3: Create a dataset in a Power BI dashboard
+
+This article is part of a step-by-step walkthrough to push data into a dashboard, see [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md).
 
 In **step 2** of Push data into a dashboard, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
 
@@ -114,9 +116,11 @@ Add this code into Program.cs.
     #endregion
     ```
 
-The **next step** shows you how to [get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md).
+The next step shows you how to [get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md).
 
 Below is the [complete code listing](#code).
+
+[Next Step >](powerbi-developer-walkthrough-push-data-get-datasets.md)
 
 ## See also
 - [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)

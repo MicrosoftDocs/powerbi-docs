@@ -16,12 +16,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2016"
+   ms.date="05/02/2016"
    ms.author="derrickv"/>
 
 # What you need to create a Power BI app
 
-Before you start creating a Power BI app, you need to setup your environment for the app. First, you need a Power BI service account. Also, since Power BI uses **Azure Active Directory (Azure AD)** to authenticate users and protect applications, you need to register, or configure, your app in **Azure AD** so that the active directory can find your app.
+Before you start creating a Power BI app, you need to setup your environment for the app. First, you need a Power BI service account. Also, since Power BI uses **Azure Active Directory (Azure AD)** to authenticate users and protect applications, you need to register, or configure, your app in **Azure AD** so that the active directory can find your app. To access **Power BI** resources, you need an authentication security token.
 
 Here are the steps to configure your environment:
 
@@ -48,7 +48,7 @@ Once you register your app in **Azure AD**, you can authenticate to the Power BI
 
 <a name="token"/>
 ## Get an authentication security token
-The following is a simple C# app that authenticates to Power BI. The sample only shows you how to get an authentication security token. You use the authentication security token to make calls to Power BI operations. Please follow one of the following walkthroughs to learn how to use a token to call Power BI operations:
+An authentication security token is used to access **Power BI** resources. The following is a simple C# app that authenticates to Power BI. The sample only shows you how to get an authentication security token. You use the authentication security token to make calls to Power BI operations. Please follow one of the following walkthroughs to learn how to use a token to call Power BI operations:
 
 -	[Push data into Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
 -	[Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)

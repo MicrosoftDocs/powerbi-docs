@@ -16,13 +16,15 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="05/02/2016"
    ms.author="derrickv"/>
 
 
 # Push data to a dashboard complete code listing
 
-After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete code should look like the following.
+This article is part of a step-by-step walkthrough to push data into a dashboard, see [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md).
+
+After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete source code should look like the following.
 
 ## Push data to dashboard code
 

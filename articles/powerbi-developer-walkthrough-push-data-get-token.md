@@ -16,10 +16,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/25/2016"
+   ms.date="05/02/2016"
    ms.author="derrickv"/>
 
 # Step 2: Get an authentication access token
+
+This article is part of a step-by-step walkthrough to push data into a dashboard, see [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md).
 
 In **step 1** of Push data into a dashboard, [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
 
@@ -110,9 +112,11 @@ Add this code to Program {...}.
 
 After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset to push data into a dashboard.
 
-The **next step** shows you how to [create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md).
+The next step shows you how to [create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md).
 
 Below is the [complete code listing](#code).
+
+[Next Step >](powerbi-developer-walkthrough-push-data-create-dataset.md)
 
 ## See also
 - [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)
