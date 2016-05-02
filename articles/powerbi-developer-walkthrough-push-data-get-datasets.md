@@ -115,9 +115,11 @@ Add this code into Program.cs.
     #endregion
 ```
 
-The **next step** shows you how to [add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md).
+The next step shows you how to [add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md).
 
 Below is the [complete code listing](#code).
+
+[Next Step >](powerbi-developer-walkthrough-push-data-add-rows.md)
 
 ## See also
 - [Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)

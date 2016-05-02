@@ -43,7 +43,9 @@ Here's how your **Register an Application for Power BI** page should look:
 
 ![](media\powerbi-developer-walkthrough-push-data\powerbi-developer-sample-register-app.png)
 
-The **next step** shows you how to [get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md).
+The next step shows you how to [get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md).
+
+[Next Step >](powerbi-developer-walkthrough-push-data-get-token.md)
 
 ## See also
 - [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)

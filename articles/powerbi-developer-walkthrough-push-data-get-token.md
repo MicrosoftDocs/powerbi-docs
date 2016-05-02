@@ -112,9 +112,11 @@ Add this code to Program {...}.
 
 After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset to push data into a dashboard.
 
-The **next step** shows you how to [create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md).
+The next step shows you how to [create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md).
 
 Below is the [complete code listing](#code).
+
+[Next Step >](powerbi-developer-walkthrough-push-data-create-dataset.md)
 
 ## See also
 - [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)
