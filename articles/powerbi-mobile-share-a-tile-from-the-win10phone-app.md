@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/2016"
+   ms.date="05/02/2016"
    ms.author="maggies"/>
 # Share a tile from the Power BI mobile app for Windows 10
 
@@ -28,7 +28,7 @@ When you share a snapshot of a tile from the [Power BI mobile app for Windows 10
 
 2. Tap a tile to open it in focus mode.
 
-3. Tap the share icon ![](media/powerbi-mobile-share-a-tile-from-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) in the bottom-right corner of the tile.
+3. Tap the share icon ![](media/powerbi-mobile-share-a-tile-from-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) in the bar at the top of the tile.
 
 5. Share the tile from any sharing app you have on your Windows 10 device.
 

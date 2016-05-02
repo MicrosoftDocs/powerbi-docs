@@ -8,7 +8,7 @@
    editor=""
    tags=""
    qualityFocus="monitoring"
-   qualityDate="04/13/2016"/>
+   qualityDate="05/02/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/13/2016"
+   ms.date="05/02/2016"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -25,91 +25,48 @@ For countries and regions where Power BI is available, see this [international a
 Power BI (in your browser) is available in the following 42 languages:
 
 -   Arabic
-  
 -   Basque - Basque
-
 -   Bulgarian - Български
-
 -   Catalan - català
-
 -   Chinese (Simplified) - 中文(简体)
-
 -   Chinese (Traditional) - 中文(繁體)
-
 -   Croatian - hrvatski
-
 -   Czech - čeština
-
 -   Danish - dansk
-
 -   Dutch - Nederlands
-
 -   English - English
-
 -   Estonian - eesti
-
 -   Finnish - suomi
-
 -   French - français
-
 -   Galician - galego
-
 -   German - Deutsch
-
 -   Greek - Ελληνικά
-
 -   Hebrew
-
 -   Hindi - हिंदी
-
 -   Hungarian - magyar
-
 -   Indonesian - Bahasa Indonesia
-
 -   Italian - italiano
-
 -   Japanese - 日本語
-
 -   Kazakh - Қазақ
-
 -   Korean - 한국어
-
 -   Latvian - latviešu
-
 -   Lithuanian - lietuvių
-
 -   Malay - Bahasa Melayu
-
 -   Norwegian (Bokmål) - norsk (bokmål)
-
 -   Polish - Polski
-
 -   Portuguese (Brazil) - Português
-
 -   Portuguese (Portugal) - português
-
 -   Romanian - română
-
 -   Russian - Русский
-
 -   Serbian (Cyrillic) - српски
-
 -   Serbian (Latin) - srpski
-
 -   Slovak - slovenčina
-
 -   Slovenian - slovenski
-
 -   Spanish - español
-
 -   Swedish - svenska
-
 -   Thai - ไทย
-
 -   Turkish - Türkçe
-
 -   Ukrainian - українська
-
 -   Vietnamese - Tiếng Việt
 
 ## What's translated
@@ -177,3 +134,19 @@ Power BI detects your language based on the language preferences on your compute
 You have the option to select a language when you download Power BI Desktop. 
 
 -  Go to the [Power BI Desktop download page](https://www.microsoft.com/download/details.aspx?id=45331).
+
+The only way to change the language in Power BI Desktop is to go back to the download page and download it in a different language.
+
+## Choose the locale of a report in Power BI Desktop
+
+You can set the locale (the date and number formats) for a specific report to be something other than the locale in your version of Power BI Desktop. 
+
+1.  Go to **File** > **Options and settings** > **Options**.
+2.  Under **Current file**, select **Data load**.
+3.  In the **Locale** box, select a different locale. 
+
+    ![](media/powerbi-supported-languages/pbi_supptdlangs_locale.png)
+
+### See also 
+Try asking the [Power BI Community](http://community.powerbi.com/).
+
