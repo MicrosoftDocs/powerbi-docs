@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/29/2016"
+   ms.date="05/02/2016"
    ms.author="maggies"/>
 
 # Create a QR code for a tile in Power BI
@@ -39,7 +39,7 @@ Colleagues you've shared the dashboard with can scan the QR code for access to t
 
 3. A dialog box with the QR code appears. 
 
-    ![](media/powerbi-service-qr-code-for-tile/pbi_create_qrcode.png)
+    ![](media/powerbi-service-qr-code-for-tile/pbi_qrcode_oppty.png)
 
 4. From here you can scan the QR code or download and save it so you can: 
 
@@ -48,15 +48,15 @@ Colleagues you've shared the dashboard with can scan the QR code for access to t
 
 ## Print the QR code
 
-Power BI generates the QR code as a PNG file, ready to print. 
+Power BI generates the QR code as a JPG file, ready to print. 
 
-1. Right-click the QR code image, and save the image to a convenient location. 
+1. Select **Download**, then open the JPG file on a computer connected to a printer.  
 
-2. Download or open the PNG file on a computer connected to a printer.  
+    >**Tip:** The JPG file has the same name as the tile. For example, "Opportunity Count - by Month, Sales Stage.jpg".
 
 2. Print the file at 100% or “actual size”.  
 
-3. Cut out the QR code along its gray frame and glue it to a place relevant to the tile. 
+3. Cut out the QR code along its edge and glue it to a place relevant to the tile. 
 
 
 ### See also

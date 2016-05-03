@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"
+   ms.date="05/02/2016"
    ms.author="maggies"/>
 # Annotate and share a tile from the Android app for Power BI
 
@@ -42,7 +42,7 @@ You can add annotations — lines, comments, or stickers — to a tile before yo
 
 	-   Tap the smiley face to add stickers (like emoticons) on the tile, then tap **Done**.
 
-	-   Tap the AA to type comments, then tap **Done**.
+	-   Tap the **AA** to type comments, then tap **Done**.
 
 5. After annotating, tap **Share** in the upper-right corner and send, using any sharing app you have on your Android phone.
 
