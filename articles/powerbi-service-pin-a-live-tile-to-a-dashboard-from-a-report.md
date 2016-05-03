@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/28/2016"
    ms.author="mihart"/>
 
 # Pin an entire report page, as a live tile, to a Power BI dashboard
@@ -27,7 +27,11 @@ Another way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) i
 
 ## Pin a report page
 
-1. From  the menubar, select **Pin Live Page**. ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-pin-live-page.png) 
+1. Open a report in Editing view.
+
+2.  From the menubar, select **Pin Live Page**. 
+
+    ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-pin-live-page.png) 
 
 2.  Pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: *Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.*
 
