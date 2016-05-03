@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="05/02/2016"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -36,7 +36,7 @@ Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-th
 ## Download the iOS app for the iPad  
 [Download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store.
 
->**Note:** Your iPad needs to be running at least iOS 8.0. 
+>**Note:** Your iPad needs to be running at least iOS 9.0. 
 
 ## Sign up for the Power BI service
 
@@ -60,7 +60,7 @@ Even without signing up, you can play with the Power BI samples. After you downl
 
     ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_Samples2.png)
 
-    >**NOTE**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
+    >**Note**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
 
 ## What's next with dashboards and reports in Power BI  
 See what else you can do in the iPad app with dashboards and reports in Power BI, and SQL Server mobile reports and KPIs in the Reporting Services web portal.
@@ -83,3 +83,5 @@ See what else you can do in the iPad app with dashboards and reports in Power BI
 ### See also  
 [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  
+Try asking the [Power BI Community](http://community.powerbi.com/)
+
