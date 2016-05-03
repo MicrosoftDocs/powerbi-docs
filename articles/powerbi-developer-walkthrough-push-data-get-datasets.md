@@ -28,16 +28,11 @@ In **step 3** of Push data into a dashboard, [Create a dataset in a Power BI das
 
 To push data into a Power BI dashboard, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a **Dataset ID**. You get a **Dataset ID** using the [Get Dataset](https://msdn.microsoft.com/library/mt203567.aspx) operation. The **Get Dataset** operation returns a JSON string containing a list of all datasets in a Power BI dashboard. The recommended way to deserialize a JSON string is with [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
->**NOTE**: To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md) to a request header:
-
-    //Add token to the request header
-    request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
-
 Here's how you get a dataset.
 
 ## Get a Power BI dataset
 
->**NOTE**: Before you get started, make sure to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md).
+>**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough.
 
 1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
 
@@ -124,7 +119,6 @@ Below is the [complete code listing](#code).
 
 ## See also
 - [Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)
-- [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Newtonsoft.Json](http://www.newtonsoft.com/json)
 - [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
 - [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)

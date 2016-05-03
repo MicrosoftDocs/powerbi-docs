@@ -30,11 +30,6 @@ To make a call to a REST resource, you use a url that locates the resource, and 
 
 To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md) to a request header:
 
->**NOTE**: To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md) to a request header:
-
-    //Add token to the request header
-    request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
-
 When you call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation, a new dataset is created in your dashboard.
 
 ![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-create-dataset.png)
@@ -43,7 +38,7 @@ Here's how to create a dataset in a Power BI dashboard.
 
 ## Create a dataset in a Power BI dashboard
 
->**NOTE**: Before you get started, make sure to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md).
+>**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough.
 
 1. In the Console Application project you created in [Step 2 - Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), add **using System.Net;**, and **using System.IO;** to Program.cs.
 2. In Program.cs, add the code below.
@@ -125,7 +120,6 @@ Below is the [complete code listing](#code).
 
 ## See also
 - [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)
-- [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
 - [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
 - [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)

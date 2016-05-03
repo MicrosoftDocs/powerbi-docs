@@ -32,7 +32,7 @@ Here are the steps to configure your environment:
 
 <a name="signup"/>
 ## Sign up for Power BI
-To create a Power BI app, you need to sign up for the Power BI service. See [Sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md). Once you have a Power BI account, you need to register, or configure, your app in **Azure AD**.
+To create a Power BI app, you need to sign up for the Power BI service. See [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md). Once you have a Power BI account, you need to register, or configure, your app in **Azure AD**.
 
 <a name="register"/>
 ## Register your app in Azure AD
@@ -129,7 +129,7 @@ Once you have an authentication security token, you can call any Power BI REST o
 -	[Integrate a Power BI tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
 
 ## See also
-- [Sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)
+- [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
 - [Register a client app](powerbi-developer-register-a-client-app.md)
 - [Register a web app](powerbi-developer-register-a-web-app.md)
 - [Push data into Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
