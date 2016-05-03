@@ -22,13 +22,13 @@
 
 # Create an Azure Active Directory tenant
 
-Using the Power BI REST API, you can create a Power BI app in any platform that supports calling REST operations. However, before you get started creating a Power BI app, you need an **Azure Active Directory**, an organizational user, and a [Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md).
+Using the Power BI REST API, you can create a Power BI app in any platform that supports calling REST operations. However, before you get started creating a Power BI app, you need an **Azure Active Directory**, an organizational user, and a [Power BI service account](powerbi-admin-free-with-custom-azure-directory.md).
 
 ## Create an Azure Active Directory tenant for a Power BI app
 
 Power BI apps are integrated with **Azure Active Directory** (Azure AD) to provide secure sign in and authorization for your app. To integrate a Power BI app with Azure AD, you register the details about your application with Azure AD by using the Azure Management Portal.
 
-**Important** To sign up for the **Power BI service**, your **Azure Active Directory** must have at least one organizational user. Use your organizational user to [sign up for the Power BI service](powerbi-developer-sign-up-for-power-bi-service.md).
+**Important** To sign up for the **Power BI service**, your **Azure Active Directory** must have at least one organizational user. Use your organizational user to [sign up for the Power BI service](powerbi-admin-free-with-custom-azure-directory.md).
 
 <a name="setup"></a>
 ### Create an Azure Active Directory tenant

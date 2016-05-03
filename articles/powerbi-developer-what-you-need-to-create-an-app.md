@@ -22,7 +22,7 @@
 
 # What you need to create a Power BI app
 
-Before you start creating a Power BI app, you need to setup your environment for the app. First, you need a Power BI service account. Also, since Power BI uses **Azure Active Directory (Azure AD)** to authenticate users and protect applications, you need to register, or configure, your app in **Azure AD** so that the active directory can find your app. To access **Power BI** resources, you need an authentication security token.
+Before you create a Power BI app, you need to setup your environment for the app. First, you need a Power BI service account. Also, since Power BI uses **Azure Active Directory (Azure AD)** to authenticate users and protect applications, you need to register, or configure, your app in **Azure AD** so that the active directory can find your app. To access **Power BI** resources, you need an authentication security token.
 
 Here are the steps to configure your environment:
 

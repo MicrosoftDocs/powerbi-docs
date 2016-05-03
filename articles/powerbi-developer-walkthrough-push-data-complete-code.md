@@ -23,7 +23,7 @@
 
 # Push data to a dashboard complete code listing
 
-This article is part of a step-by-step walkthrough to push data into a dashboard, see [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
 
 After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete source code should look like the following.
 
