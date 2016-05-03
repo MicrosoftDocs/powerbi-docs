@@ -22,11 +22,11 @@
 
 # Step 1: Register an app with Azure AD
 
-This article is part of a step-by-step walkthrough to push data into a dashboard, see [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
 
 The first step to push data into a Power BI dashboard is to register your app in Azure AD. You need to do this first so that you have a **Client ID** that identifies your app in Azure AD. Without a **Client ID**, Azure AD cannot authenticate your app.
 
->**NOTE**: Before you register an app, you need to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md).
+>**NOTE**: Before you register an app for Power BI, you need to [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md).
 
 Here are the steps to register an app in Azure AD.
 
@@ -49,8 +49,8 @@ The next step shows you how to [get an authentication access token](powerbi-deve
 [Next Step >](powerbi-developer-walkthrough-push-data-get-token.md)
 
 ## See also
+- [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
 - [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
-- [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Walkthrough: Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Register a client app](powerbi-developer-register-a-client-app.md)
 - [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
