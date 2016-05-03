@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Get started with the iPhone app"
-   description="Get started with the iPhone app (Power BI for iOS)"
+   pageTitle="Get started with the Power BI for iOS app on an iPhone"
+   description="The Microsoft Power BI for iOS app, on the iPhone or iPod Touch, is part of the mobile BI experience for Power BI and Reporting Services."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -16,12 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2016"
+   ms.date="05/02/2016"
    ms.author="maggies"/>
 
-# Get started with the iPhone app (Power BI for iOS)
+# Get started with the Power BI for iOS app on an iPhone or iPod Touch
 
-The iPhone app for Microsoft Power BI for iOS is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
+The Microsoft Power BI for iOS app, on the iPhone or iPod Touch, is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
 
 ![](media/powerbi-mobile-iphone-app-get-started/PBI_iPhoneSignIn.png)
 
@@ -35,9 +35,9 @@ Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-th
 
 ## Download the app
 
-[Download the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app") from the Apple App Store.
+[Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPhone or iPod Touch.
 
->**NOTE**: Your iPhone needs to be at least an iPhone 5. To accommodate the best possible experience and new features for Power BI, we are now supporting only devices running iOS 9.0 and later.
+>**Note**: You can run the Power BI for iOS app on iPhone 5 and above, with iOS 9.0 or later. You can also run it on an iPod Touch with iOS 9.0 or later.
 
 ## Sign up for the Power BI service
 
