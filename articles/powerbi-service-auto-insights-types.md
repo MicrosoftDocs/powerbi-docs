@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/21/2016"
+   ms.date="04/30/2016"
    ms.author="mihart"/>
 
 
@@ -25,7 +25,7 @@
 
 ## How does Quick Insights work?
 
-Power BI quickly searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially-interesting insights.Power BI scans as much of a dataset as possible in an allotted amount of time.  In the future, we'll allow you to control what subset of your dataset to search.
+Power BI quickly searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially-interesting insights. Power BI scans as much of a dataset as possible in an allotted amount of time.   
 
 ##  What types of insights can we find?
 These are some of the algorithms we use:
