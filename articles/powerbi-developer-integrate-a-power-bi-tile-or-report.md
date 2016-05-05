@@ -77,17 +77,17 @@ GET REST Uri
 
 JSON Response
 
-
-   {
+~~~
+{
     "@odata.context":"http://api.powerbi.com/beta/myorg/$metadata#dashboards","value":
     [
         {
             "id":"43127a01--e971d4cdc2fb",
             "displayName":"My Dashboard"
-   		 }
+   	}
     ]
-    }
-
+}
+~~~
 **Note** For a complete example of how to get dashboards, see **getDashboardsButton_Click** within the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
 **Step 3 – Get user’s tile information**
@@ -99,8 +99,8 @@ GET REST Uri
      GET https://api.powerbi.com/beta/myorg/dashboards/{dashboard_id}/tiles
 
 JSON Response
-
-	{
+~~~
+{
         "@odata.context":"api.powerbi.com/beta/myorg/$metadata#tiles","value":
         [
     		{
@@ -117,9 +117,9 @@ JSON Response
                 ?dashboardId=43127a01--e971d4cdc2fb
                 &tileId=9ab3925d--4d6c896df0c9"
             }
- 		]
-    }
-
+       ]
+}
+~~~
 **Note** For a complete example of how to get tiles, see **getTilesButton_Click** within the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
 **Step 4 – Set IFrame source url**
