@@ -88,6 +88,7 @@ JSON Response
     ]
 }
 ~~~
+
 **Note** For a complete example of how to get dashboards, see **getDashboardsButton_Click** within the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
 **Step 3 – Get user’s tile information**
@@ -99,6 +100,7 @@ GET REST Uri
      GET https://api.powerbi.com/beta/myorg/dashboards/{dashboard_id}/tiles
 
 JSON Response
+
 ~~~
 {
         "@odata.context":"api.powerbi.com/beta/myorg/$metadata#tiles","value":
@@ -120,6 +122,7 @@ JSON Response
        ]
 }
 ~~~
+
 **Note** For a complete example of how to get tiles, see **getTilesButton_Click** within the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
 **Step 4 – Set IFrame source url**
@@ -132,11 +135,13 @@ Once you have an **embedUrl** for a **tile**, you set the **SRC** attribute of a
 You embed a Power BI **tile** into an app with an **IFrame** HTML element. Here are the steps to embed a **tile** using an IFrame.
 
 **Step 1** - Set an IFrame src element to the **embedUrl** that you get from the **Get Tile** REST operation. To learn how to get **embedUrl**, see [Get a Power BI tile](#gettile).
+
 ~~~
 var iframe = document.getElementById('iFrameEmbedTile');
 iframe.src =  embedTileUrl + "&width=" + width + "&height=" + height;
 iframe.onload = postActionLoadTile;
 ~~~
+
 **Embed Tile URL Parameters**
 
 |**Name**|**Description**|**REST operation**
