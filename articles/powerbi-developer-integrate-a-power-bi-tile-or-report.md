@@ -77,16 +77,17 @@ GET REST Uri
 
 JSON Response
 
-
-	{
+```
+{
     "@odata.context":"http://api.powerbi.com/beta/myorg/$metadata#dashboards","value":
     [
         {
             "id":"43127a01--e971d4cdc2fb",
             "displayName":"My Dashboard"
-   		 }
+   	}
     ]
-    }
+}
+```
 
 **Note** For a complete example of how to get dashboards, see **getDashboardsButton_Click** within the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
@@ -100,7 +101,8 @@ GET REST Uri
 
 JSON Response
 
-	{
+```
+{
         "@odata.context":"api.powerbi.com/beta/myorg/$metadata#tiles","value":
         [
     		{
@@ -117,8 +119,9 @@ JSON Response
                 ?dashboardId=43127a01--e971d4cdc2fb
                 &tileId=9ab3925d--4d6c896df0c9"
             }
- 		]
-    }
+       ]
+}
+```
 
 **Note** For a complete example of how to get tiles, see **getTilesButton_Click** within the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
@@ -133,9 +136,11 @@ You embed a Power BI **tile** into an app with an **IFrame** HTML element. Here 
 
 **Step 1** - Set an IFrame src element to the **embedUrl** that you get from the **Get Tile** REST operation. To learn how to get **embedUrl**, see [Get a Power BI tile](#gettile).
 
-  var iframe = document.getElementById('iFrameEmbedTile');
-  iframe.src =  embedTileUrl + "&width=" + width + "&height=" + height;
-  iframe.onload = postActionLoadTile;
+~~~
+var iframe = document.getElementById('iFrameEmbedTile');
+iframe.src =  embedTileUrl + "&width=" + width + "&height=" + height;
+iframe.onload = postActionLoadTile;
+~~~
 
 **Embed Tile URL Parameters**
 
