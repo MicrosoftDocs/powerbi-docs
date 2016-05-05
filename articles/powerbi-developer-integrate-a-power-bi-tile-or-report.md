@@ -77,7 +77,7 @@ GET REST Uri
 
 JSON Response
 
-~~~
+```
 {
     "@odata.context":"http://api.powerbi.com/beta/myorg/$metadata#dashboards","value":
     [
@@ -87,7 +87,7 @@ JSON Response
    	}
     ]
 }
-~~~
+```
 
 **Note** For a complete example of how to get dashboards, see **getDashboardsButton_Click** within the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
@@ -101,7 +101,7 @@ GET REST Uri
 
 JSON Response
 
-~~~
+```
 {
         "@odata.context":"api.powerbi.com/beta/myorg/$metadata#tiles","value":
         [
@@ -121,7 +121,7 @@ JSON Response
             }
        ]
 }
-~~~
+```
 
 **Note** For a complete example of how to get tiles, see **getTilesButton_Click** within the [Integrate a tile into an app sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-tile-into-an-app).
 
