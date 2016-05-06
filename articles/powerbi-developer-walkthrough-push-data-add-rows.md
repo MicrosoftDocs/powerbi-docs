@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/15/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -34,7 +34,7 @@ Here's how to add rows to a dataset using the Power BI API.
 
 ## Add rows to a Power BI table
 
->**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough. 
+>**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough.
 
 1.  In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), add the code below.
 2. Run the Console App, and login to your Power BI account. You should see **Rows Added** in the Console Window. You can also login to your Power BI dashboard to see the rows added to the dataset.
