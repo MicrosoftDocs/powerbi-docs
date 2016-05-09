@@ -1,6 +1,6 @@
 <properties
    pageTitle="Power BI apps for mobile devices"
-   description="Power BI apps for mobile devices"
+   description="The Power BI mobile apps keep you connected to your data anywhere, anytime. View Power BI dashboards and reports on your mobile device. "
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2016"
+   ms.date="05/09/2016"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
@@ -81,7 +81,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
--   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone.
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) from your Android phone.
 
 ## The Power BI mobile app for Windows 10 devices
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
