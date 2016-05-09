@@ -26,7 +26,7 @@ QR codes in Power BI can connect anything in the real world directly to related 
 
 You can create a QR code in the Power BI service for tiles in any dashboard that you can edit. Then place the QR code in a key location. For example, you could paste it in an email, or print it out and paste it in a specific location. 
 
-Colleagues you've shared the dashboard with can scan the QR code for access to the relevant tile, right from [their phone](powerbi-mobile-qr-code-for-tile.md). They can use either the QR code scanner located in the Power BI app, or any other QR scanner installed on their phone. Read more about [how to share dashboards](powerbi-service-how-should-i-share-my-dashboard.md).
+Colleagues you've shared the dashboard with can [scan the QR code for access to the tile, right from their phone](powerbi-mobile-qr-code-for-tile.md). They can use either the QR code scanner located in the Power BI app, or any other QR scanner installed on their phone. Read more about [how to share dashboards](powerbi-service-how-should-i-share-my-dashboard.md).
 
 ## Add a QR code to a tile in the Power BI service
 

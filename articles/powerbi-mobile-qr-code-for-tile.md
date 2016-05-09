@@ -53,7 +53,7 @@ You can scan the QR code for immediate access to the relevant tile, right from y
 
 1. From any QR scanner installed on your phone, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 
 
-2. If you don’t have the Power BI app installed, you are redirected to 
+2. If you don’t have the Power BI app installed, you are redirected to: 
 
    -  The [Apple App Store to download it](http://go.microsoft.com/fwlink/?LinkId=522062) on your iPhone, or
    -  [Google Play to download it](http://go.microsoft.com/fwlink/?LinkID=544867) on your Android phone. 
