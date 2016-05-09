@@ -111,7 +111,7 @@ To get to the UPN Mapping screen, do the following.
     
 You will then see options to add rules as well as test for a given user.
 
-> **Note**: You may inadvertantly change a user that you didn't intend to. For example, if your original value is *@contoso.com* and your **New name** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if you have an **Original name** of *dave@contoso.com* and your **New name** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.local would be sent as v-dave@contoso.local.
+> **Note**: You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.local would be sent as v-dave*@contoso.local*.
 
 Currently you can only supply rules for **Effective user names**.
 
