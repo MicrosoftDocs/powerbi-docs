@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="identified"
    qualityDate=""/>
 
 <tags
@@ -540,9 +540,7 @@ Take a look at the following video for details:
 
 ## April 2015 Update (2.22.4009.122)
 
-**You can download the latest version of the Power BI Designer from here:**
-
-<https://powerbi.com/dashboards/downloads/designer>
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
 The following features have been added in this update:
 
