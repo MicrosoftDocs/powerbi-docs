@@ -26,8 +26,9 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-Nothing on the calendar yet. Check back soon.
-In the meantime, check our on-demand webinars.
+[What’s New and Exciting in Power BI- 05/10/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-10-Whats-New-in-PowerBI-Registration.html?Is=Website)
+
+[Dashboard Makeover: Learn how to make your data shine- 05/12/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html?Is=Website)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
