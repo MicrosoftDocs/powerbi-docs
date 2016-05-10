@@ -17,13 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
 # Circuit ID content pack for Power&nbsp;BI
 
 Analyzing your communication data from Circuit ID is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data. After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
 
 Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/services/circuitid) for Power BI.
+
+## How to connect
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 
@@ -43,34 +45,20 @@ Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/servi
 
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk.
 
-6. Select the Circuit ID dashboard.
-	This is the default dashboard that Power BI creates to display your data. You can modify this dashboard to display your data in any way you want.
+    ![](media/powerbi-content-pack-circuit-id/circuitID_dashboard_chrome.png)
 
-![](media/powerbi-content-pack-circuit-id/circuitID_dashboard_chrome.png)
+**What Now?**
 
-What can you do now?
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
--   Try asking a question in the Q&A box at the top of the dashboard, such as "show me the number of call by date"
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
-![](media/powerbi-content-pack-circuit-id/circuitID_qna.png)
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
-
--   Change the tiles in the dashboard.
-
--   Select a tile to open the underlying report.
-
--   Rename the dashboard: Select the ellipsis (…) next to the dashboard \> Rename.
-
--   While your dataset will be refreshed automatically, you can also refresh it on demand using Refresh Now.  Scroll to the entry in your datasets list, select the ellipsis (…) and press **Refresh Now**
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 
-
-
-
-This dashboard can be fully customized to how you want to display your data. It allows you to ask a [question in ](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-
-See Also:
-
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
    
 # Application Insights content pack for Power&nbsp;BI
@@ -65,6 +65,7 @@ Note: Access to the Application Insights overview blade for your application in 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
+
 The Application Insights content pack includes the following tables and metrics:  
     - ApplicationDetails  
     - UniqueUsersLast7Days   

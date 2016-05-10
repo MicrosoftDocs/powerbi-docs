@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
 # Troux content pack for Power&nbsp;BI
 
@@ -61,9 +61,6 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
 - [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
-
-## What's included
-The content pack uses the Troux OData feed.
 
 ## System requirements
 Access to the Troux OData feed and Troux 9.5.1 or higher is required.

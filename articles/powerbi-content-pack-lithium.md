@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
 
 # Lithium content pack for Power&nbsp;BI
@@ -67,12 +67,7 @@ Note: The Power BI content pack uses the Lithium API. Excessive calls to the API
 
 ## System requirements
 
-The Lithium content pack requires a Lithium communit v15.9 or greater. Please check with your Lithium admin to confirm.
-
-## Troubleshooting
-
-Customers running in EMEA (mostly Europe and Middle East customers) are not currently supported by the content pack. This feature will be added in a future content pack update, please check back for details.
-
+The Lithium content pack requires a Lithium community v15.9 or greater. Please check with your Lithium admin to confirm.
 
 ### See also
 

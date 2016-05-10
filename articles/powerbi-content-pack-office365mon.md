@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
    
 # Office365Mon content pack for Power&nbsp;BI
@@ -27,6 +27,8 @@ Analyzing your Office 365 outages and health performance data is easy with Power
 Connect to the [Office365Mon content pack](https://app.powerbi.com/groups/me/getdata/services/office365mon) for Power BI.
 
 Note: An Office365Mon admin account is required to connect and load the Power BI content pack.
+
+## How to connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -53,18 +55,15 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
 	![](media/powerbi-content-pack-office365mon/dashboard4.png)
 
 
+**What Now?**
 
-What can you do now?
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
--   Try asking a question in the Q&A box at the top of the dashboard, such as "average request time in the last week"
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
--   Change the tiles in the dashboard.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
--   Select a tile to open the underlying report.
-
--   Rename the dashboard: Select the ellipsis (…) next to the dashboard \> Rename.
-
-
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 
 ## Troubleshooting
@@ -72,8 +71,7 @@ What can you do now?
 If you get a **"login failed"** error after using your Office365Mon subscription credentials to login, then the account you are using doesn't have permissions to retrieve the Office365Mon data from your account. Verify it is an admin account and try again.
 
 
-See Also:
-
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

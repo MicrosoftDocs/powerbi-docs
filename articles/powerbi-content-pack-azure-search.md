@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
 
 # Azure Search content pack for Power&nbsp;BI
