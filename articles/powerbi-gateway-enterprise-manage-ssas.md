@@ -5,6 +5,7 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
+backup=""
 editor=""
 tags=""
 qualityFocus="no"
@@ -16,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/09/2016"
+ms.date="04/25/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - Analysis Services
 
@@ -68,9 +69,19 @@ You can configure the privacy level for your data source. This controls how data
 
 ## 'Get Data' experience for Analysis Services in Power BI site
 
-We haven’t yet integrated data sources from the enterprise gateway into the *Get Data* experience for Analysis Services from Power BI web. This will be coming soon.
+A unique option for Analysis Services is to use Get Data within the Power BI service directly. You can connect to a live Analysis Services data source that is configured within the enterprise gateway without needing Power BI Desktop. Your account needs to be listed in the **Users** tab for the data source, under the gateway, for it to show up in the list. To connect to the data source, you can do the following.
 
-To make use of data sources for Analysis Services, you can create a report within Power BI Desktop. Be sure that you select live data for Analysis Services. Then publish it to Power BI and it will make use of the enterprise gateway.
+1. Within the Power BI service, select **Get Data**.
+
+2. Select **Databases**.
+
+3. Select **SQL Server Analysis Services** > **Connect**.
+
+4. Select a data source from the list. Any Analysis Services data source that you have access to will be listed here.
+
+5. Select the model that you want to connect to. Then select **Connect**.
+
+You will see a dataset show up with the name of the server. You can then select that dataset and begin to create reports on it. This will be working against live data.
 
 ### Usernames with Analysis Services
 

@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2016"
+   ms.date="04/29/2016"
    ms.author="mihart"/>
 
 # Copy and paste a visualization in Power BI  

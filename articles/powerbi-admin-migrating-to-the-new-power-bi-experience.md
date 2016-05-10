@@ -5,6 +5,7 @@
    documentationCenter="" 
    authors="guyinacube" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -31,8 +32,8 @@ This table compares key aspects of the two experiences.
 
 ||Current experience|New experience|More info|
 |---|---|---|---|
-|Collaboration|Power BI team sites based on SharePoint Online|Group workspaces based on Office 365 unified groups|[Groups](powerbi-service-groups.md)|
-|Manage permissions|Manage permissions to folders and workbooks in SharePoint Online|Manage group membership|[Create a group](powerbi-service-create-a-group-in-power-bi.md)|
+|Collaboration|Power BI team sites based on SharePoint Online|Group workspaces based on Office 365 unified groups|[Create a group](powerbi-service-create-a-group-in-power-bi.md)|
+|Manage permissions|Manage permissions to folders and workbooks in SharePoint Online|Manage group membership|[Manage groups](powerbi-service-manage-your-group-in-power-bi-and-office-365.md)|
 |Quick access|Add favorite reports and featured Q&amp;A questions|Pin visuals and Q&amp;A answers to a dashboard|[Pin a tile to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)|
 |Edit Excel workbooks|Edit workbooks from the Power BI team site|Edit workbooks in Excel Online from Power BI, or in the Office 365 group|[Whole Excel workbooks in Power BI](powerbi-bring-in-whole-excel-files.md)|
 |Natural Language Insight Discovery|Q&amp;A|Q&amp;A*|[Q&amp;A in Power BI](powerbi-service-q-and-a.md)|

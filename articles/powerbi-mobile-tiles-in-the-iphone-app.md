@@ -5,6 +5,7 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -26,8 +27,6 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
 
 >**Note**: You can also [create picture tiles with your iPhone app](powerbi-mobile-picture-tiles-in-the-iphone-app.md) and save them to your dashboards.
-
-## Interact with tiles on a dashboard
 
 1.  Open a [dashboard in the iPhone app](powerbi-mobile-dashboards-in-the-iphone-app.md).
 

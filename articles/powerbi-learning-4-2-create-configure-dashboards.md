@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -26,7 +27,7 @@
 
 *Discover how to create, configure and customize your Power BI dashboards*
 
-**Dashboards** in Power BI are one-page collections of visualizations that create within the Power BI service. You create dashboards by **pinning** visualizations from reports that you authored and published using Power BI Desktop, or visualizations you created within the Power BI service itself. **Pinning** a visual to a dashboard is a lot like pinning a picture to a corkboard on a wall - it sticks the visual there, in a particular spot, for others to see. To pin a visual, open its report on the Power BI service. Hover over the visual you want to pin and select the **pin** icon.
+**Dashboards** in Power BI are one-page collections of visualizations that are created from within the Power BI service. You create dashboards by **pinning** visualizations from reports that you authored and published using Power BI Desktop, or visualizations you created within the Power BI service itself. **Pinning** a visual to a dashboard is a lot like pinning a picture to a corkboard on a wall - it sticks the visual there, in a particular spot, for others to see. To pin a visual, open its report on the Power BI service. Hover over the visual you want to pin and select the **pin** icon.
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_1.png)
 

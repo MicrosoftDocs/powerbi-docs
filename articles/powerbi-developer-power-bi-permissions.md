@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2016"
+   ms.date="04/04/2016"
    ms.author="derrickv"/>
 
 # Power BI permissions

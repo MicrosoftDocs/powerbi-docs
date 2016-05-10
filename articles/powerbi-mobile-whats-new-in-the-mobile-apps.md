@@ -5,6 +5,7 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,10 +17,24 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2016"
+   ms.date="04/14/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## April 2016
+
+See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/) for more details.
+
+### Android mobile app
+
+**SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-android-kpis-mobile-reports.md)** now on Android phones.
+
+**Report gallery** Open your reports directly in the report gallery.​
+
+### Power BI app for Windows 10 devices
+
+**Presentation mode** Display Power BI dashboards and reports in presentation mode from the Power BI app.
 
 ## March 2016
 
@@ -42,7 +57,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 ### Android mobile app
 
-**SQL Server 2016 mobile reports and KPIs** View SQL Server 2016 mobile reports and KPIs, and navigate between SSRS folders.​
+**SQL Server 2016 mobile reports and KPIs** [View SQL Server 2016 mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md), and navigate between SSRS folders.​
 
 **View reports** Open reports from tiles on your dashboards.​
 
@@ -54,9 +69,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
-
-
-**More live tiles on your Start screen** Pin KPIs and row cards on your start screen as live tiles, so you can see all of your critical metrics at a glance.
+**More live tiles on your Start screen** [Pin KPIs and row cards to your Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md) as live tiles, so you can see all of your critical metrics at a glance.
 
 **Pinch to zoom** Use pinch-to-zoom on your tablet to examine dashboards in greater detail.
 

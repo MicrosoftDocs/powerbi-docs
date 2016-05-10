@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -36,7 +37,7 @@ When you publish a report that already exists in the Power BI service, you're pr
 
 When you select **Replace**, the datasets and reports in the Power BI service are overwritten with the datasets and reports in the most recent Power BI Desktop version of the file.
 
-And just like any other time **Publish** event from Power BI Desktop, you see a dialog that tells you the publish event was successful, and you get a link to the report in the Power BI service.
+And just like any other **Publish** event from Power BI Desktop, you see a dialog that tells you the publish event was successful, and you get a link to the report in the Power BI service.
 
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_2.png)
 

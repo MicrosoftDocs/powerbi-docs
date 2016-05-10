@@ -5,6 +5,7 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="04/28/2016"
    ms.author="maggies"/>
 # Work with organizational content packs in Power BI
 
@@ -26,7 +27,7 @@ When an organizational content pack is published, all recipients see the same da
 
 Editing and saving changes to an organizational content pack creates a personalized version of the content pack, not visible to others.
 
-1.  Open the content pack and make a change. Power BI lets you know that if you save this change you'll create a personal copy of the content pack. 
+1.  Open the report in the content pack and make a change. Power BI lets you know that if you save this change you'll create a personal copy of the content pack. 
 
      ![](media/powerbi-service-organizational-content-packs-use-and-work-with/personalize.png)
 
@@ -38,7 +39,7 @@ Editing and saving changes to an organizational content pack creates a personali
 
 This can happen for several reasons:
 
--   **Membership changes**:  Content packs are published to email distribution groups, security groups, and [Power BI groups based on Office 365](powerbi-service-groups.md).  If you are removed from the group, you will no longer have access to the content pack.
+-   **Membership changes**:  Content packs are published to email distribution groups, security groups, and [Power BI groups based on Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).  If you are removed from the group, you will no longer have access to the content pack.
 
 -   **Distribution changes**: The content pack creator changes the distribution. For example, if the content pack was originally published to the entire organization but the creator republished it to a smaller audience, you may no longer be included.
 
@@ -51,12 +52,8 @@ When the content pack is created, the refresh settings are inherited with the da
 See [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
 ### See also
-
-[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
-
-[Get Started with Power BI](powerbi-service-get-started.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-[Groups in Power BI](powerbi-service-groups.md)
+-  [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
+-  [Get Started with Power BI](powerbi-service-get-started.md)
+-  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+-  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 

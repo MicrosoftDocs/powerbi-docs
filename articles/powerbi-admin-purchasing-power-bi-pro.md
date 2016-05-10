@@ -1,10 +1,11 @@
-﻿<properties 
+<properties 
    pageTitle="Purchasing Power BI Pro"
    description="Purchasing Power BI Pro"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -28,7 +29,7 @@ You can purchase Power BI Pro directly through the Power BI website, the Office 
 After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
 -   Create and publish customized [content packs](powerbi-service-organizational-content-packs-introduction.md)
--   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [groups](powerbi-service-groups.md)
+-   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [groups](powerbi-service-create-a-group-in-power-bi.md)
 -   Connect to on-premises data using [Personal Gateway](powerbi-personal-gateway.md)
 -   Enable live interactive connectivity to the following sources:
 	-   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)

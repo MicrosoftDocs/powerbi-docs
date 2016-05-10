@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -18,7 +19,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/09/2016"
    ms.author="davidi"/>
 
 # Building Blocks of Power BI
@@ -55,7 +56,7 @@ For example, you could create a dataset from three different database fields, on
 
 Filtering data before bringing it into Power BI lets you focus on the data that matters to you. For example, you could filter your contact database so only customers who received emails from the marketing campaign were included in the dataset. Then you could create visuals based on that subset (that filtered collection) of customers who were included in the campaign. Filtering helps you focus your data, and your efforts.
 
-An important and enabling part of Power BI is the multitude of data **connectors** that are included. Whether the data you want is in Excel or SQL database, in Azure or Oracle, or in a service like Facebook, Salesforce, or MailChimp, Power BI has built-in data connectors that let you easily connect to that data, filter it if necessary, and bring it into your dataset.
+An important and enabling part of Power BI is the multitude of data **connectors** that are included. Whether the data you want is in Excel or an SQL database, in Azure or Oracle, or in a service like Facebook, Salesforce, or MailChimp, Power BI has built-in data connectors that let you easily connect to that data, filter it if necessary, and bring it into your dataset.
 
 Once you have a dataset, you can begin creating visualizations that display different portions of that dataset in different ways, and with what you see, gain insights. That’s where reports come in.
 
@@ -98,4 +99,4 @@ For both, the process is the same: create datasets, build compelling visuals, an
 
 Whether your data insights require straightforward or complex datasets, Power BI helps you get started quickly, and can expand with your needs to be as complex as your world of data requires. And since Power BI is a Microsoft product, you can count on it being robust, extensible, Office-friendly, and enterprise-ready.
 
-Now, let's see how this works. As mentioned earlier, the flow of work often begins in **Power BI Desktop**. So let's start there.
+Now, let's see how this works. We'll start by taking a quick look at the Power BI service.

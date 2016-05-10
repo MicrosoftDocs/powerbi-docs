@@ -1,14 +1,15 @@
 ﻿<properties 
-   pageTitle="Troubleshooting Power BI Personal Gateway"
-   description="Troubleshooting Power BI Personal Gateway"
+   pageTitle="Troubleshooting Power BI Gateway - Personal"
+   description="Troubleshooting Power BI Gateway - Personal"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/04/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -16,23 +17,36 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2016"
+   ms.date="04/13/2016"
    ms.author="asaxton"/>
-# Troubleshooting Power BI Personal Gateway
+# Troubleshooting Power BI Gateway - Personal
+
+The following goes through some common issues you may encounter when using the Power BI Gateway - Personal. 
+
+> **Note**: If you encounter an issue that is not listed below, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+
+## Update to the latest version 
+ 
+A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
 
 ## Installation
 
-**Personal Gateway fails to install as a service even though you are a local administrator for the computer** - Installation can fail if the user is in the computer’s local Administrator group, but group policy does not allow that username to log on as a service.  At the moment, ensure the group policy allows a user to log on as a service. We’re working on a fix for this issue. [Learn more](https://technet.microsoft.com/library/cc739424.aspx)
+**Personal gateway fails to install as a service even though you are a local administrator for the computer** - Installation can fail if the user is in the computer’s local Administrator group, but group policy does not allow that username to log on as a service.  At the moment, ensure the group policy allows a user to log on as a service. We’re working on a fix for this issue. [Learn more](https://technet.microsoft.com/library/cc739424.aspx)
 
-**Operation timed out** - This is common if the computer (physical machine or VM) on which you’re installing the Personal Gateway has a single core processor. Close any applications and turn off any non-essential processes and try installing again.
+**Operation timed out** - This is common if the computer (physical machine or VM) on which you’re installing the personal gateway has a single core processor. Close any applications and turn off any non-essential processes and try installing again.
 
-**Data Management Gateway or Analysis Services Connector cannot be installed on the same computer as Personal Gateway** - If you already have an Analysis Services Connector or Data Management Gateway installed, you must first uninstall the Connector or the Gateway and then try installing the Personal Gateway.
+**Data Management Gateway or Analysis Services Connector cannot be installed on the same computer as personal gateway** - If you already have an Analysis Services Connector or Data Management Gateway installed, you must first uninstall the Connector or the gateway and then try installing the personal gateway.
+
+ > **Note**: If you encounter an issue during installation, the setup logs could provide information to help you resolve the issue. See [Setup Logs](#SetupLogs) for more information.
+ 
+ **Proxy configuration**
+ You may encounter issues with configuring the personal gateway if your environment needs the use of a proxy. To learn more about how to configure proxy information, see [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
 
 ## Schedule Refresh
 
 **Error: The credential stored in the cloud is missing.**
 
-You could get this error in Settings for \<dataset\> if you have a scheduled refresh and then uninstalled and re-installed the Personal Gateway. When you uninstall a Personal Gateway, data source credentials for a dataset that has been configured for refresh are removed from the Power BI service.
+You could get this error in Settings for \<dataset\> if you have a scheduled refresh and then uninstalled and re-installed the personal gateway. When you uninstall a personal gateway, data source credentials for a dataset that has been configured for refresh are removed from the Power BI service.
 
 **Solution:** In Power BI, go to the refresh settings for a dataset. In Manage Data Sources, for any data source with an error, click Edit credentials and sign in to the data source again.
 
@@ -64,11 +78,11 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 
 ## Data sources
 
-**Missing data provider** – Power BI Personal Gateway is 64-bit only. It requires a 64-bit version of the data providers to be installed on the same computer where the Personal Gateway is installed. For example, if the data source in the dataset is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the Personal Gateway.  **Note:** if you have 32 bit Excel, you cannot install a 64-bit ACE provider on the same computer.
+**Missing data provider** – The personal gateway is 64-bit only. It requires a 64-bit version of the data providers to be installed on the same computer where the personal gateway is installed. For example, if the data source in the dataset is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the personal gateway.  **Note:** if you have 32 bit Excel, you cannot install a 64-bit ACE provider on the same computer.
 
-**Windows authentication is not supported for Access database -** Power BI currently only supports anonymous for Access database. We are working on enabling Windows authentication for Access database.
+**Windows authentication is not supported for Access database** - Power BI currently only supports anonymous for Access database. We are working on enabling Windows authentication for Access database.
 
-**Sign in error when entering credentials for a datasource** - If you get an error similar to this when entering Windows credentials for a datasource, you might still be on the preview version of the Personal Gateway. [Install the latest version of Power BI Personal Gateway](http://go.microsoft.com/fwlink/?LinkId=534231) from Downloads in Power BI..
+**Sign in error when entering credentials for a datasource** - If you get an error similar to this when entering Windows credentials for a data source, you might still be on an older version of the personal gateway. [Install the latest version of Power BI Gateway - Personal](https://powerbi.microsoft.com/gateway/).
 
   ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/PBI_PG_CredentialsError.jpg.png)
 
@@ -86,9 +100,50 @@ If you are receiving an error with dashboard tiles refreshing, please refer to t
 
 [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
 
+## Tools for troubleshooting
+
+### Refresh History  
+**Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
+
+1.  In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
+    ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Scheduled-Refresh.png)
+
+2.  In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.  
+    ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Scheduled-Refresh-2.png)
+  
+    ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Refresh-History.png)
+
+### Event Logs  
+There are several event logs that can provide information. The first two, **Data Management Gateway** and **PowerBIGateway**, are present if you are an admin on the machine.  If you are not an admin, and you are using the Personal Gateway, you will see the log entries within the **Application** log.
+
+The **Data Management Gateway** and **PowerBIGateway** logs are present under **Application and Services Logs**.
+
+![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Event-Logs.png)
+
+### Fiddler Trace  
+[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
+
+![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Fiddler.png)
+
+<a name="SetupLogs">
+### Setup Logs
+If the **Personal Gateway**, fails to install, you will see a link to show the setup log. This could show you details about the failure. These are Windows Install logs, or also knows as MSI logs. They can be fairly complex and hard to read. Typically the resulting error will be at the bottom, but determining the cause of the error is not trivial. It could be a result of errors in a different log, or be a result of an error higher up in the log. 
+
+![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Log.png)
+
+Alternatively, you can go to your **Temp folder** (%temp%) and look for files that start with **Power\_BI\_**.
+
+> **Note**: Going to %temp% may take you to a subfolder of temp.  The **Power\_BI\_** files will be in the root of the temp directory.  You may need to go up a level or two.
+
+![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Logs2.png)
+
 ## See Also
 
-[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
+
+[Data Refresh](powerbi-refresh-data.md)
+
+[Power BI Gateway - Personal](powerbi-personal-gateway.md)
 
 [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
 

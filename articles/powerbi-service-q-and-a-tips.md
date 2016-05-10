@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="jastru"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2015"
+   ms.date="04/06/2016"
    ms.author="mihart"/>
 
 # Tips for asking questions in Power BI Q&A
@@ -25,9 +26,11 @@
 
 These are just some of the words and terms that Q&A automatically recognizes.
 
-* **Aggregations**: such as less than, maximum, number of, count of, average, between, before
+* **Adverb filters**: filter the results by using adverbs such as **where**, **in**, or **with** in your question.  For example, *show stores with name Winchester*. 
 
-* **Date keywords**: such as last month, this year  
+*   **Aggregations**: such as less than, maximum, number of, count of, average, between, before
+
+* **Date keywords**: such as last month, this year, or the actual date itself  
 
 * **Date ranges**: before, after
 
@@ -70,6 +73,9 @@ Q&A does its best to ensure that the answer accurately reflects the question bei
 ## Which dataset was used to create the visualization
 Q&A displays the name of the dataset(s) that was used to produce the currently-displayed results. If you're getting strange results, perhaps you need to search in a different dataset.
 
+## Combine results from more than one dataset
+One of Power BI's most powerful features is the ability to combine data from different datasets.  So don't limit your questions to a single dataset -- ask questions that retrieve data from more than one dataset. For example, if my dashboard has tiles from the Retail Analysis Sample and a state population dataset, I can ask *show count of stores by state population as bar chart descending*.
+
 ## Tell Q&A which visualization to use
 
 When typing natural language queries with Q&A, there are some visualization types that you can specify in the query.  For example:
@@ -107,15 +113,17 @@ When you have a workbook prepared for Q&A, you are on your way to start asking q
 
     Show employees, where date of birth is after 3/3/1985
 
-* <measure> by \<column name\>
+* \<measure> by \<column name\>
 
-    a. Year over year growth by year
+    Examples:
 
-    b. Total sales by product
+    Year over year growth by year
 
-    c. Number of sales by location
+    Total sales by product
 
-    d. Total profit and total cost by product
+    Number of sales by location
+
+    Total profit and total cost by product
 
 * \<measure\> by \<column name\> for \<specific entity within another column\>
 
@@ -127,11 +135,5 @@ After Q&A displays your results, keep the conversation going! Use the interactiv
 
 ## See also
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
-
-[Tutorial: Introduction to Q&A with Power BI](powerbi-service-tutorial-introduction-to-q-and-a.md)
-
-[Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
-
-[Pin a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  

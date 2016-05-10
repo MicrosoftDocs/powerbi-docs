@@ -5,10 +5,11 @@
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/15/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -16,17 +17,14 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="05/02/2016"
    ms.author="derrickv"/>
 
 # Step 5: Add rows to a Power BI table
 
-In **step 4** of Push data into a dashboard, [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation to add rows to a Power BI dataset.
+This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
 
->**NOTE**: To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md) to a request header:
-
-    //Add token to the request header
-    request.Headers.Add("Authorization", String.Format("Bearer {0}", token));
+In **step 4** of Push data into a dashboard, [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation to add rows to a **Power BI** dataset.
 
 When you call the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation, you add rows to a dataset in your dashboard.
 
@@ -36,7 +34,7 @@ Here's how to add rows to a dataset using the Power BI API.
 
 ## Add rows to a Power BI table
 
->**NOTE**: Before you get started, make sure to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md).
+>**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough.
 
 1.  In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), add the code below.
 2. Run the Console App, and login to your Power BI account. You should see **Rows Added** in the Console Window. You can also login to your Power BI dashboard to see the rows added to the dataset.
@@ -114,7 +112,6 @@ Add this code into Program.cs.
 Below is the [complete code listing](#code).
 
 ## See also
-- [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
 - [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)

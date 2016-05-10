@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/17/2015"
+   ms.date="04/04/2016"
    ms.author="derrickv"/>
 
 # Power BI REST API Reference

@@ -5,6 +5,7 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -22,7 +23,7 @@
 
 As creator or admin of a group in Power BI or in Office 365, you manage some aspects of your group in Power BI. Other aspects you manage in Office 365. 
 
->NOTE: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+>**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 **In Power BI** you can:
 
@@ -96,5 +97,6 @@ When you create an [organizational content pack](powerbi-service-organizational-
 
     *yourgroupID*@service.microsoft.com. 
 
-More about [groups in Power BI](powerbi-service-groups.md).
+### See also
+[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 

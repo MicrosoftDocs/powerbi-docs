@@ -1,15 +1,16 @@
-﻿<properties 
+﻿<properties
    pageTitle="Supplier Quality Analysis sample for Power BI: Take a tour"
    description="Supplier Quality Analysis sample for Power BI: Take a tour"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -17,17 +18,17 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="01/12/2016"
-   ms.author="mihart"/>
+   ms.author="amac"/>
 
 # Supplier Quality Analysis sample for Power BI: Take a tour  
 
-This industry sample dashboard and underlying report focus on one of the typical supply chain challenges — supplier quality analysis. 
+This industry sample dashboard and underlying report focus on one of the typical supply chain challenges — supplier quality analysis.
 Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives:
 
 -   Understand who the best and worst suppliers are, with respect to quality.
 -   Identify which plants do a better job finding and rejecting defects, to minimize downtime.
 
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. 
+This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards.
 This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).[](http://www.obvience.com/)
@@ -39,7 +40,7 @@ Let’s analyze the downtime caused by defective materials and see which vendors
 
 1.  On the dashboard, select the **Total Defect Quantity** number tile or the **Total Downtime Minutes** number tile.  
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier2.png)  
-    
+
 	The “Supplier Quality Analysis Sample” report opens to the “Downtime Analysis” page. Notice we have 33M total defective pieces, and the total downtime caused by these defective pieces is 77K minutes. Some materials have fewer defective pieces but they can cause a huge delay resulting in larger downtime. Let’s explore them on the report page.  
 2.  Looking at the **Total Downtime Minutes** line in the **Defects and Downtime (min) by Material Type** combo chart, we see corrugate materials cause the most downtime.  
 
@@ -67,7 +68,7 @@ Let’s analyze the downtime caused by defective materials and see which vendors
 Now let’s explore which plant does a better job managing defective material, resulting in less downtime.  
 
 1.  Select the **Total Defect Reports by Plant, Defect Type** map tile.  
-  
+
      The report opens to the “Supplier Quality Analysis” page.  
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier6.png)  
 
@@ -131,7 +132,7 @@ Let’s look at another dashboard tile related to total defective quantity.
 
 2.  In the question box, type “total downtime minutes by month and year as a line chart”.  
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier15.png)
-     
+
 	We do see a jump in downtime minutes during June and Oct, but other than that, the jump in the number of defects didn’t result in significantly more downtime. This shows we’re managing defects well.  
 
 3.  To pin this chart to your dashboard, select the pin icon ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/pin.png) to the right of the question box.  

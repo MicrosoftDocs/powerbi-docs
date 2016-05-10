@@ -3,8 +3,9 @@
    description="Learn how to use the Power BI publisher for Excel"
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="complete"
@@ -17,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/21/2016"
-   ms.author="owend"/>
+   ms.author="davidi"/>
 
 # Power BI publisher for Excel
 

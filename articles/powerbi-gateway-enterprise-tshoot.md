@@ -5,10 +5,11 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
+backup=""
 editor=""
 tags=""
-qualityFocus="no"
-qualityDate=""/>
+qualityFocus="monitoring"
+qualityDate="04/04/2016"/>
 
 <tags
 ms.service="powerbi"
@@ -16,9 +17,13 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/04/2016"
+ms.date="04/25/2016"
 ms.author="asaxton"/>
 # Troubleshooting the Power BI Gateway - Enterprise
+
+The following goes through some common issues you may encounter when using the Power BI Gateway - Enterprise. 
+
+> **Note**: If you encounter an issue that is not listed below, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 
 ## Update to the latest version 
  
@@ -32,29 +37,25 @@ You may receive this error if you are trying to install the enterprise gateway o
 
 ## Configuration
 
-**Collecting logs from the gateway configurator**
+**How to restart the gateway**
 
-You can start the configurator in a debug mode which will collect logs which can be used to troubleshoot issues when trying to configure the gateway. From a command prompt, pass */troubleshoot* to the configurator when you launch it. The default path for the configurator is the following.
+The enterprise gateway runs as a windows service. You can start and stop it like any windows service. There are multiple ways to do this. Here is how you can do it from the command prompt. 
 
-    C:\Program Files\Power BI Enterprise Gateway
+1. On the machine where the enterprise gateway is running, launch an admin command prompt.
 
-The command line would look something like this.
+2. Use the following command to **stop** the service.
 
-    EnterpriseGatewayConfigurator.exe /troubleshoot
-	
-On the dialog screen, you will see a gear icon in the upper right.
+    net stop PBIEgwService
+    
+3. Use the following command to **start** the service.
 
-![](media/powerbi-gateway-enterprise-tshoot/egw-tshoot1.png)
-  
-After you walk through the steps, and close the configurator, it will place a zip file on the desktop. It may take a minute for the zip file to show. This zip file will contain several log files which can be used to diagnose further. The file name will look like the following.
-
-    EnterpriseGatewayLogs 2015-12-01T14_39_32.zip
+    net start PBIEgwService
 
 **Error: Failed to create gateway. Please try again.**
 
 All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs as mentioned above to get more details. 
 
-This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You would need to modify the *enterprisegatewayconfigurator.exe.config* with the correct proxy information. [Learn more](https://msdn.microsoft.com/library/kd3cf2ex.aspx)
+This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](powerbi-gateway-proxy.md)
 
 **Error: Failed to update gateway details.  Please try again.**
 
@@ -100,11 +101,9 @@ If the underlying error message is similar to the following, this means that the
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
-**Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI site**
+**Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
 
-We haven’t yet integrated data sources from the enterprise gateway into the *Get Data* experience for Analysis Services from Power BI web. This will be coming soon.
-
-To make use of data sources for Analysis Services, you can create a report within Power BI Desktop. Be sure that you select live data for Analysis Services. Then publish it to Power BI and it will make use of the enterprise gateway.
+Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the adminsitrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
 
 ## Dataset
 
@@ -124,7 +123,69 @@ This is usually caused by one of the following.
 
 2. There is not a data source available on any enterprise gateway within your organization. You can configure the data source on a new, or existing, enterprise gateway.
 
+## Firewall
+
+You can test to see if your firewall may be blocking conections by running the following command from a PowerShell prompt. This will test connectivity to the Azure Service Bus.
+
+    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+
+The results should look similar to the following. The difference will be with TcpTestSucceeded. If **TcpTestSucceeded** is not *true*, then you may be blocked by a firewall.
+
+    ComputerName           : watchdog.servicebus.windows.net
+    RemoteAddress          : 70.37.104.240
+    RemotePort             : 5672
+    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
+    SourceAddress          : 10.120.60.105
+    PingSucceeded          : False
+    PingReplyDetails (RTT) : 0 ms
+    TcpTestSucceeded       : True
+
+If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](powerbi-gateway-enterprise.md/#ports)
+
+## Tools for troubleshooting
+
+### Collecting logs from the gateway configurator
+
+There are several logs you can collect for the enterprise gateway. Always start with the logs!
+
+**Installer logs**
+
+    %localappdata%\Temp\Power_BI_Gateway_–_Enterprise*.log
+
+**Configuration logs**
+
+    %localappdata%\Microsoft\Power BI Enterprise Gateway\GatewayConfigurator*.log
+
+**Enterprise gateway service logs**
+
+    C:\Users\PBIEgwService\AppData\Local\Microsoft\Power BI Enterprise Gateway\EnterpriseGateway*.log
+
+### Refresh History  
+When using the enterprise gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
+
+1.  In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
+
+    ![](media/powerbi-gateway-enterprise-tshoot/scheduled-refresh.png)
+
+2.  In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.
+
+    ![](media/powerbi-gateway-enterprise-tshoot/scheduled-refresh-2.png)
+
+    ![](media/powerbi-gateway-enterprise-tshoot/refresh-history.png)
+
+### Event Logs  
+The **Data Management Gateway** and **PowerBIGateway** logs are present under **Application and Services Logs**.
+
+![](media/powerbi-gateway-enterprise-tshoot/event-logs.png)
+
+### Fiddler Trace  
+[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
+
+![](media/powerbi-gateway-enterprise-tshoot/fiddler.png)
+
 ## See also
+
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
 
 [Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
 
@@ -137,5 +198,3 @@ This is usually caused by one of the following.
 [Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
 [Manage your enterprise data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
-
-[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)

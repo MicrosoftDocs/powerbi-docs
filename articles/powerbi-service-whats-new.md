@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/15/2016"
+   ms.date="04/19/2016"
    ms.author="mihart"/>
 
 # What's new in the Power BI service  
 
 Check this page for known issues and recently-released features in **Power BI Service**.
 
->**NOTE**: 
+>**NOTE**:
 >
-For related "What's New" information, see: 
+For related "What's New" information, see:
 >
 >[What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 >
@@ -37,9 +38,68 @@ For related "What's New" information, see:
 
 ## Recent updates
 
+**April 14, 2016**
+
+***Enterprise***
+
+-   [ExpressRoute](powerbi-admin-power-bi-expressroute.md): use to establish a private, managed connection to Power BI.
+
+-   [Content pack support for RLS](powerbi-admin-rls.md) (Preview): If RLS is defined for those dashboards and reports that are distributed as part of a content pack, then the security rules will be respected for those content packs.
+
+***Dashboards***
+
+-   [Vimeo video tile](powerbi-service-add-a-widget-to-a-dashboard.md):  From the dashboard, add a tile that contains an embedded Vimeo player.
+
+***Analyze in Excel***
+
+-   [Analyze in Excel](powerbi-service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users; free and Pro.
+
+-   Improved multi-user account experience: if you have more than 1 Power BI user account, it's now easier to sign-in.
+
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
+
+**March 31, 2016**
+Lots of updates announced at the Microsoft Data Insights Summit.
+
+***Dashboards***
+
+-   Featured dashboard: makes it easier to reach the dashboard you care about most.
+
+-   Filter dashboard list: show all, show content you created, show content shared with you.
+
+
+***Enterprise features***
+
+-   Admin usage reporting: added a usage report to the Power BI admin center.
+
+-   Row-level security: this is a Preview feature that allows you to set permissions on Power BI datasets.
+
+-   Disable exporting data: users in your tenant will no longer be able to export tile and visual data to a .csv file.
+
+***Q&A***
+
+-   Auto complete for "is": Q&A will suggest values if you type column name followed by "is".
+
+***Mobile***
+
+-   KPIs on your Apple watch: monitor your KPI and card tiles without having to open Power BI app.
+
+***Excel***
+
+-   Analyze in Excel: connect your Power BI data model to Excel and do your analysis inside of Excel instead of Power BI.
+
+***Other***
+
+-   Power BI in Australia: now anyone in Australia, individual or through an organization, can go to powerbi.microsoft.com and sign up for Power BI.
+
+-   Language settings: override the automatic language detection and set the language for Power BI.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update-part-two/)
+
 **March 11, 2016**
 
-This month we made some pdates to dashboards, Quick Insights, and Q&A.
+This month we made some updates to dashboards, Quick Insights, and Q&A.
 
 ***Dashboards***
 
@@ -51,7 +111,7 @@ This month we made some pdates to dashboards, Quick Insights, and Q&A.
 
 ***Quick Insights***
 
--   The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data. 
+-   The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data.
 
 ***Q&A***
 
@@ -286,7 +346,7 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 *   Improved navigation for full screen view
 
-* Better experience when inviting perrs from your organization to Power BI groups
+* Better experience when inviting peers from your organization to Power BI groups
 
 * Improved error messages for tiles
 
@@ -459,9 +519,9 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 -   We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](powerbi-free-trial-for-power-bi-pro.md). As part of the GA release, we are offering some great new features:
 
--   [A new visualization and report creation experience](powerbi-service-converting-your-reports-to-the-new-report-editor.md): The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
+-   A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
 
--   [Power BI groups](powerbi-service-groups.md): groups offer a powerful collaborative experience built on Office 365 groups.
+-   [Power BI groups](powerbi-service-create-a-group-in-power-bi.md): groups offer a powerful collaborative experience built on Office 365 groups.
 -   [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
 
 -   [Bring in whole Excel files](powerbi-bring-in-whole-excel-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.

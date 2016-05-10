@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 # Power BI Desktop privacy levels
 

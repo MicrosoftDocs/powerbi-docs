@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="maggiesMSFT"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="01/29/2016"
-   ms.author="maggies"/>
+   ms.author="amac"/>
 
 # Procurement Analysis sample for Power BI: Take a tour
 
@@ -31,7 +32,7 @@ This sample is part of a series that illustrates how you can use  Power BI with 
 
 ![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_procanal_dash.png)
 
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample. 
+Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample.
 
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=528592) for this sample.
 
@@ -59,15 +60,15 @@ Notice a few things:
 Let’s explore the spending areas in Mexico.
 
 1.  In the pie chart, select the **Mexico** bubble in the map. Notice that in the “Total Invoice by Sub Category” column chart, most of it is in the **Indirect Goods & Services** sub category.
-  
+
     ![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_procsample_spendmexico.png)
 
 2.  Drill down into the **Indirect Goods & Services** column:
-    -  Select the drill-down arrow ![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_drilldown_icon.png) in the upper-right corner of the chart. 
-    -  Select the **Indirect Goods & Services** column. 
+    -  Select the drill-down arrow ![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_drilldown_icon.png) in the upper-right corner of the chart.
+    -  Select the **Indirect Goods & Services** column.
 
         By far the biggest spend in this category overall is Sales & Marketing.
-    -  Select **Mexico** in the map again. 
+    -  Select **Mexico** in the map again.
 
         The biggest spend in this category in Mexico is Maintenance & Repair.
 

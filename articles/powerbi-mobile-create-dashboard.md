@@ -5,10 +5,11 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="03/11/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -20,7 +21,7 @@
    ms.author="maggies"/>
 # Dashboards for mobile Power BI
 
-Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. In Power BI, you can bring together data from different data sources in a single dashboard &#151; for example, Excel workbooks, databases, content packs with your origanizion's data, and services such as Salesforce.
+Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business.
 
 ## Create dashboards in the Power BI service
 You don't create dashboards in the mobile apps. To have more dashboards on your mobile device, you create or connect to them on your computer. 
@@ -41,6 +42,7 @@ Then in the Power BI mobile apps, explore these same dashboards. Dashboards ref
 ![](media/powerbi-mobile-create-dashboard/pbi_dash_mobile.png)
 
 *The same dashboard in a mobile phone*
+
 
 [Dashboards in the iPad app for Power BI for iOS](powerbi-mobile-dashboards-on-the-ipad-app.md)
 

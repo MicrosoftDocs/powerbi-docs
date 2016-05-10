@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -27,7 +28,7 @@ Welcome to **Guided Learning** for Power BI. This self-paced online course expla
 
 The course is designed to provide guidance in understandable chunks, with logical flow that helps you absorb concepts, details, and examples. It includes lots of visuals and videos to help you learn, too.
 
-This **Guided Learning** course contains many **sections**, and each section has many **topics**. After the first few of topics in this **Getting Started** section, nearly every topic includes a video describing what you’ll learn. The content below the video further explains the concept, letting you review and learn at your own pace.
+This **Guided Learning** course contains many **sections**, and each section has many **topics**. After the first few topics in this **Getting Started** section, nearly every topic includes a video describing what you’ll learn. The content below the video further explains the concept, letting you review and learn at your own pace.
 
 If you're a **beginner** with Power BI this course will get you going, and if you're a Power BI **veteran** this course will tie concepts together, and fill in the gaps. We hope you enjoy the course, and look forward to including more content in the future.
 

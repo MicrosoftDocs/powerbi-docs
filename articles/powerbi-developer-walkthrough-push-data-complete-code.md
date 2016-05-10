@@ -5,10 +5,11 @@
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/15/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -16,13 +17,15 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="05/02/2016"
    ms.author="derrickv"/>
 
 
 # Push data to a dashboard complete code listing
 
-After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete code should look like the following.
+This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
+
+After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete source code should look like the following.
 
 ## Push data to dashboard code
 
@@ -227,7 +230,6 @@ After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete c
 
 
 ## See also
-- [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Push data into a Power BI dashboard](powerbi-developer-push-data-into-a-dashboard.md)
 - [Walkthrough - Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)

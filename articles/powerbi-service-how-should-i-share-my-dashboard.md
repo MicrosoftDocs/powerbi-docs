@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="maggiesMSFT"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/10/2016"
+   ms.date="04/27/2016"
    ms.author="maggies"/>
 
 # How should I share Power BI dashboards and reports?  
@@ -48,7 +49,7 @@ When you publish Power BI reports to the web, you can embed interactive visuals 
 When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They can see the same data that you see in the dashboard and reports. Your colleagues can share the dashboard with other colleagues, if you allow them to. Those outside your organization can view and interact with the dashboard, but can't share it. More about [sharing a dashboard](powerbi-service-share-unshare-dashboard.md).
 
 ## Create a dashboard in a group  
-Groups in Power BI are built on Office 365 groups, so you and your colleagues need a Power BI Pro license. When you're a member of a group, you can create a dashboard in the group workspace. Everyone in the group can view, interact with, and edit the dashboard and its reports. They have the same permission you have. More about [groups in Power BI](powerbi-service-groups.md).
+Groups in Power BI are built on Office 365 groups, so you and your colleagues need a Power BI Pro license. When you're a member of a group, you can create a dashboard in the group workspace. Everyone in the group can view, interact with, and edit the dashboard and its reports. They have the same permission you have. More about [creating groups in Power BI](powerbi-service-create-a-group-in-power-bi.md).
 
 ### Share a dashboard with colleagues outside the group  
 If your group has dashboards, you can share them with colleagues outside the group. It works the same as [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).
@@ -72,6 +73,7 @@ Share a snapshot of a tile from:
 ### See also
 [Share a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md)
 
-[Groups in Power BI](powerbi-service-groups.md)
+[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+
 
 

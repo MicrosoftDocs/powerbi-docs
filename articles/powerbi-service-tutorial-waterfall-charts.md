@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2016"
+   ms.date="04/29/2016"
    ms.author="mihart"/>
 # Tutorial: Waterfall charts in Power BI
 
@@ -60,9 +61,9 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 	- If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
 
-	- Select **Time** \> **Month** to add it to the **Category** well. 
+	- Select **Time** \> **FiscalMonth** to add it to the **Category** well. 
 
-    ![](media/powerbi-service-tutorial-waterfall-charts/first.png)
+    ![](media/powerbi-service-tutorial-waterfall-charts/first_new.png)
 
 ## Highlighting and cross-filtering
 

@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/22/2016"
+   ms.date="04/12/2016"
    ms.author="mihart"/>
 # Hyperlinks in tables
 
@@ -25,7 +26,7 @@ This topic teaches you how to create and work with hyperlinks in tables and matr
 ![](media/powerbi-service-hyperlinks-in-tables/hyperlinkedTable.png)
 
 >**NOTE**:
->Hyperlinks can also be added to [tiles on dashboards](documentation/powerbi-service-edit-a-tile-in-a-dashboard), [text boxes in reports](powerbi-service-add-a-hyperlink-to-a-text-box.md), and [text boxes on dashboards](powerbi-service-add-a-widget-to-a-dashboard).
+>Hyperlinks can also be added to [tiles on dashboards](powerbi-service-edit-a-tile-in-a-dashboard.md), [text boxes in reports](powerbi-service-add-a-hyperlink-to-a-text-box.md), and [text boxes on dashboards](powerbi-service-add-a-widget-to-a-dashboard.md).
 
 ## To create a hyperlink in Power BI
 

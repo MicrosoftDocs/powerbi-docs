@@ -5,6 +5,7 @@
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -20,9 +21,9 @@
    ms.author="tpalmer"/>
 # Microsoft Dynamics AX content pack for Power&nbsp;BI
 
-Microsoft Dynamics AX has two Power BI content packs targeted at different business users. The Financial Performance content pack, designed specifically for CFOs, provides access to insights about your organization’s financial performance. The Retail Channel Performance content pack is targeted for channel managers focuses on sales performance to predict trends and uncover insights by drawing directly from Retail & Commerce data. 
+Microsoft Dynamics AX has three Power BI content packs targeted at different business users. The Financial Performance content pack, designed specifically for CFOs, provides access to insights about your organization’s financial performance. The Retail Channel Performance content pack is targeted for channel managers focuses on sales performance to predict trends and uncover insights by drawing directly from Retail & Commerce data. The Cost Management is designed for COOs and CFOs and provides details on operation performance. 
 
-Connect to the Microsoft Dynamics AX [Retail Channel Performance content pack](https://app.powerbi.com/getdata/services/dynamics-ax-retail-channel-performance) or the [Financial Performance content pack](https://app.powerbi.com/getdata/services/dynamics-ax-financial-performance) for Power BI.
+Connect to the Microsoft Dynamics AX [Retail Channel Performance](https://app.powerbi.com/getdata/services/dynamics-ax-retail-channel-performance), the [Financial Performance](https://app.powerbi.com/getdata/services/dynamics-ax-financial-performance) or the [Cost Management](https://app.powerbi.com/getdata/services/dynamics-ax-cost-management) content pack for Power BI.
 
 ## How to connect
 
@@ -65,7 +66,7 @@ Connect to the Microsoft Dynamics AX [Retail Channel Performance content pack](h
 
 ## What's included
 
-The content pack uses the Dynamics AX 7 OData feed to import data related to Retail Channel and Financial performance respectively.
+The content pack uses the Dynamics AX 7 OData feed to import data related to Retail Channel, Financial, and Cost Management performance respectively.
 
 ## System requirements
 

@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -41,8 +42,9 @@ We discussed the basic building blocks in Power BI too, which are:
 
 From there, we took a look at Power BI in a video tour with our Tour Guide, **Will Thompson**. Will gave us a quick overview of how you can analyze and visualize data with Power BI.
 
+<!---
 In **Power BI Desktop**, we connected to a basic Excel file, created visualizations, then published those visualizations to the service. Even if you use Power BI only with your Excel workbooks, you can gain amazing visual insights with those Excel workbooks, and both interact and share it in ways never before possible.
-
+-->
 In the **Power BI service**, we created a dashboard with just a few clicks. We continued with our glimpse into the Power BI service and used a **Content Pack** – a ready-made collection of visuals and reports – and connected to a **software service** to populate the content pack and bring that data to life.
 
 We also used natural language queries, called **Q & A**, to ask questions of our answers, and let Power BI create visuals based on those questions. Lastly, we set up a **refresh schedule** for our data, so we know when we go back to the Power BI service, that data will be fresh.

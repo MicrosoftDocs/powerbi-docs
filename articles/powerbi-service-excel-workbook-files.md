@@ -3,9 +3,10 @@
     description="Learn how to get data from Excel workbook files into Power BI"
     services="powerbi"
     documentationCenter=""
-    authors="Minewiskan"
+    authors="davidiseminger"
     manager="mblythe"
-    editor=""
+    backup=""
+   editor=""
     tags=""
    qualityFocus="monitoring"
    qualityDate="03/30/2016"/>
@@ -16,8 +17,8 @@
     ms.topic="article"
     ms.tgt_pltfrm="NA"
     ms.workload="powerbi"
-    ms.date="03/30/2016"
-    ms.author="owend"/>
+    ms.date="04/29/2016"
+    ms.author="davidi"/>
 
 # Get data from Excel workbook files
 ![](media/powerbi-service-excel-workbook-files/excel_icon.png)
@@ -56,7 +57,7 @@ Watch this helpful video to learn more about how to make sure your Excel workboo
 
 ## Where your workbook file is saved makes a difference
 
-**Local** - If you save your workbook file to a local drive on your computer or another location in your organization, from Power BI you can *import* your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in Power BI and data and the data model (if any) from the workbook are loaded into the dataset. If your workbook has any Power View sheets, those will appear in your Power BI site under Reports. Excel 2016 also has the Publish feature (under the File menu). Using Publish is effectively the same as using Get Data > Files > Local File from Power BI, but is often easier to update your dataset in Power BI if you’re regularly making changes to the workbook.
+**Local** - If you save your workbook file to a local drive on your computer or another location in your organization, from Power BI you can load your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in Power BI and data and the data model (if any) from the workbook are loaded into the dataset. If your workbook has any Power View sheets, those will appear in your Power BI site under Reports. Excel 2016 also has the **Publish** feature (under the **File** menu). Using **Publish** is effectively the same as using **Get Data > Files > Local File** from Power BI, but is often easier to update your dataset in Power BI if you’re regularly making changes to the workbook.
 
 **OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Excel and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI *connects* to your workbook file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI. Just like if you saved your workbook to a local drive, you can also use Publish to update your dataset and reports in Power BI immediately; otherwise Power BI will automatically synchronize, usually within an hour.
 
@@ -69,6 +70,7 @@ If you save your workbook files to **OneDrive**, you'll have a couple of ways yo
 
 ![](media/powerbi-service-excel-workbook-files/excel_import_connect.png)
 
+
 ### Import Excel data into Power BI
 When you choose **Import**, any supported data in tables and/or a data model are imported into a new dataset in Power BI. If you have any Power View sheets, those will be re-created in Power BI as reports.
 
@@ -76,7 +78,7 @@ You can continue editing your workbook. When your changes are saved, they’ll b
 
 Choose this option if you’ve used Get & Transform data or Power Pivot to load data into a data model, or if your workbook has Power View sheets with visualizations you want to see in Power BI.
 
-In Excel 2016, you can also use Publish > Export. It's pretty much the same thing. To learn more, see [Publish to Power BI from Excel 2016](articles/powerbi-service-publish-from-excel).
+In Excel 2016, you can also use Publish > Export. It's pretty much the same thing. To learn more, see [Publish to Power BI from Excel 2016](powerbi-service-publish-from-excel.md).
 
 ### Connect, manage and view Excel in Power BI
 When you choose **Connect**, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some great features to help you pin elements from your worksheets right to your dashboards.
@@ -106,9 +108,33 @@ In Excel 2016, you can also use Publish > Upload. It's pretty much the same thin
 4.	If your workbook file is on OneDrive or SharePoint - Team Sites, choose **Import** or **Connect**.
 
 
+## Local Excel workbooks
+You can also use a local Excel file and upload it into Power BI. Simply select **Local File** from the previous menu, then navigate to where you have your Excel workbooks saved.
+
+![](media/powerbi-service-excel-workbook-files/excel_import_6.png)
+
+Once selected, choose to Upload your file into Power BI.
+
+![](media/powerbi-service-excel-workbook-files/excel_import_7.png)
+
+Once your workbook is uploaded, you get a notification that the workbook is ready.
+
+![](media/powerbi-service-excel-workbook-files/excel_import_8.png)
+
+Once the workbook is ready, you can find it in the **Reports** section of Power BI.
+
+![](media/powerbi-service-excel-workbook-files/excel_import_9.png)
+
+There are a few limitations to using local Excel workbooks:
+-   Data connections refresh is not supported on local file workbooks
+-   To update an Excel report, you must perform the steps outlined above (to connect a local Excel workbook) again
+
+
 
 ## Publish from Excel 2016 to your Power BI site
-Using the Publish to Power BI feature in Excel 2016 is effectively the same as using Get Data in Power BI to import or connect to your file. We won't go into the details here, but you can see [Publish to Power BI from Excel 2016](articles/powerbi-service-publish-from-excel.md) to learn more.
+Using the **Publish to Power BI** feature in Excel 2016 is effectively the same as using **Get Data** in Power BI to import or connect to your file. We won't go into the details here, but you can see [Publish to Power BI from Excel 2016](articles/powerbi-service-publish-from-excel.md) to learn more.
+
+
 
 ## What's next?
 **Explore your data** - Once you get data and reports from your file into Power BI, it's time to explore. Just right-click the new dataset and then click Explore. If you chose to connect to a workbook file on OneDrive in step 4, your workbook will appear in Reports. When you click on it, it will open in Power BI, just as it would if it were in Excel Online.

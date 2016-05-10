@@ -5,12 +5,13 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""
    featuredVideoId="meDUu1sFP3Q"
-   courseDuration="12m"/>
+   courseDuration="9m"/>
 
 <tags
    ms.service="powerbi"
@@ -23,7 +24,7 @@
 
 # Getting Started With Power BI Desktop
 
-In this topic of the **Getting Started** course, we take a closer look at how the first two parts of Power BI fit together:
+In this topic, we take a closer look at how the first two parts of Power BI fit together:
 
 -   Create a report in **Power BI Desktop**
 -   Publish the report in the **Power BI service**

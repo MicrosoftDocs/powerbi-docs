@@ -1,15 +1,16 @@
-<properties 
+<properties
    pageTitle="Human Resources sample: Take a tour"
    description="Human Resources sample for Power BI: Take a tour"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggies" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="maggies"
+   manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -17,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="02/22/2016"
-   ms.author="mihart"/>
+   ms.author="amac"/>
 
 # Human Resources sample for Power BI: Take a tour  
 
@@ -31,12 +32,12 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_dash.png)
 
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Human Resources Sample > Connect** to get your own copy of the sample. 
+Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Human Resources Sample > Connect** to get your own copy of the sample.
 
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=528592) for this sample.
 
 ## New hires  
-Let’s explore new hires first. 
+Let’s explore new hires first.
 
 1.  In the left navigation pane, select the Human Resources dashboard.
 2.  Select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change** **By Month** tile.  
@@ -90,7 +91,7 @@ Change the pie charts to show Separates data instead of Actives.
 
 4.  Select the **Voluntary** bar in the **Separation Count by Separation Reason** bar chart. This highlights those who left voluntarily in the other visuals in the report.
 
-5.  Click the 50+ slice of the Separation Count by Age Group pie chart. 
+5.  Click the 50+ slice of the Separation Count by Age Group pie chart.
 
     Look at the Separations by Reason line chart in the lower-right corner. This chart is filtered to show voluntary separations.  
     ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_sepsover50.png)
@@ -104,8 +105,8 @@ Change the pie charts to show Separates data instead of Actives.
 ## Bad hires  
 The last area to explore is bad hires. Bad hires are defined as employees who didn’t last for more than 60 days. We’re hiring rapidly. Are we hiring good candidates?
 
-1.  Select the **Bad Hires as % of Actives by Age Group** dashboard tile. This opens the report to page 3, “Bad Hires”. 
-  
+1.  Select the **Bad Hires as % of Actives by Age Group** dashboard tile. This opens the report to page 3, “Bad Hires”.
+
     ![](media/powerbi-sample-human-resources-take-a-tour/hr7.png)  
 
 2.  Select the **Northwest**﻿ check box in the Region slicer on the left and the **Male** slice in the Bad Hire Count by Gender donut chart.  Look at other charts on the “Bad Hires” page. More male bad hires than females and lot of Group A bad hires.
@@ -115,8 +116,8 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 
 4.  Click **Power BI** in the top navigation bar to return to the dashboard.
 
-## Asking a question in the Q&A box 
-The [Q&A question box](powerbi-service-how-to-use-q-and-a.md) is where you type a question using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer. 
+## Asking a question in the Q&A box
+The [Q&A question box](powerbi-service-how-to-use-q-and-a.md) is where you type a question using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
 
 1.  Click in the Q&A question box. Notice before you even start typing, the Q&A box contains suggestions:
 
@@ -131,7 +132,7 @@ The [Q&A question box](powerbi-service-how-to-use-q-and-a.md) is where you type 
     Notice most of the female bad hires are under 30.
 2.  Click the back arrow ![](media/powerbi-sample-human-resources-take-a-tour/backarrow.png) to go back to the dashboard.
 
-This is a safe environment to play in. You can always choose not to save your changes. If you do save them, you can always go to **Get Data** for a new copy of this sample. 
+This is a safe environment to play in. You can always choose not to save your changes. If you do save them, you can always go to **Get Data** for a new copy of this sample.
 
 ## Next steps: Connect to your data  
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into human resources data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](powerbi-service-get-started.md).  

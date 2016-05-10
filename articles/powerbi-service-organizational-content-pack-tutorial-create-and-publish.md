@@ -5,6 +5,7 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
-   ms.author="maggies"/>
+   ms.date="05/02/2016"
+   ms.author="ajayan"/>
 
 # Tutorial: Create and publish an organizational content pack in Power BI 
 
@@ -34,9 +35,9 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 2.  From the top navigation bar, select the cog icon ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/cog.png) > **Create content pack**.    
     ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/pbi_create_contpk.png)
 
-2.  In the **Create Content Pack** window, enter the following information.  Keep in mind that a content pack library could end up with hundreds of content packs published for corporate or group use. Take time to select the right audience, to give your content pack a meaningful name, and to add a good description.  Use words that will make your content pack easy to find via search.
+2.  In the **Create Content Pack** window, enter the following information.  Keep in mind that your organization's content pack library could end up with hundreds of content packs published for the organization or for groups. Take time to select the right audience, to give your content pack a meaningful name, and to add a good description.  Use words that will make your content pack easy to find via search.
 
-    a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 groups](powerbi-service-groups.md), distribution groups, or security groups. For example:
+    a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distribution groups, or security groups. For example:
 
 	salesmgrs@contoso.com; sales@contoso.com
 
@@ -44,7 +45,9 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 
     b.  Name the content pack **Sales Opportunities**.
 
-	c.  Recommended: add a description. This helps coworkers more easily find the content packs that they need. Besides a description, add keywords our coworkers might use to search for this content pack. Include contact information in case your coworkers have a question or need help.
+    >**Tip:** Consider including the name of the dashboard in the name of the content pack. That way, your colleagues will find the dashboard more easily after they connect to your content pack.
+
+	c.  Recommended: Add a description. This helps coworkers more easily find the content packs that they need. Besides a description, add keywords our coworkers might use to search for this content pack. Include contact information in case your coworkers have a question or need help.
 
 	d.  Add a logo to make it easier for group members to find the content pack &#151; it's faster to scan for an image than it is to find text. Below is a screen shot of the Opportunity Count 100% column chart tile.
 
@@ -76,9 +79,9 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 6.  They select **Connect**, and now they can [view and work with your content pack](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
 ### See also  
-[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
-[Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md)  
-[Get Started with Power BI](powerbi-service-get-started.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-[Groups in Power BI](powerbi-service-groups.md)  
-[What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
+-  [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+-  [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md)  
+-  [Get Started with Power BI](powerbi-service-get-started.md)  
+-  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+-  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)  
+-  [What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)

@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -23,7 +24,7 @@
    ms.author="davidi"/>
 
 # Modeling
-Welcome to the **Modeling** section of the **Guided Learning** course for Power BI. This section shows you how to get your connected data ready for use, using Power BI Desktop. Often, you'll connect to more than one data source to create your reports, need all that data to work together. Modeling is how you get it there.
+Welcome to the **Modeling** section of the **Guided Learning** course for Power BI. This section shows you how to get your connected data ready for use, using Power BI Desktop. Often, you'll connect to more than one data source to create your reports, and you'll need all of that data to work together. Modeling is how you get it there.
 
 To create a logical connection between different data sources, you create a **relationship**. A relationship between data sources enables Power BI to know how those tables relate to one another, allowing you to create interesting visuals and reports. This section explains *relationships* (only the data-centric ones, though), and even shows you how to create relationships when none exists.
 

@@ -5,10 +5,11 @@
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/15/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -16,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="05/02/2016"
    ms.author="derrickv"/>
 
 # Push data into a Power BI Dashboard
 
-With the Power BI REST API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table into a dashboard.
+With the Power BI API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table into a dashboard.
 
-Before you get started, make sure to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md). Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. After you register an app in **Azure AD**, the application outsources authentication to Azure AD, and grants your app access to the Power BI REST API.
+Before you get started pushing data into a dashboard, you need an Azure Active Directory (Azure AD) and a [Power BI account](powerbi-admin-free-with-custom-azure-directory.md).
 
 To learn how to push a dataset into a dashboard, follow these steps. In the example, you push a Sales Marketing dataset with a Product table into a dashboard.
 
@@ -120,8 +121,10 @@ For a Power BI table schema, you can use the following data types.
 
 To get started pushing data into a dashboard, see [Step 1: Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
 
+[Next Step >](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
+
 ## See also
-- [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
+- [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
 - [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
 - [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
 - [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)

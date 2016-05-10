@@ -1,15 +1,16 @@
-﻿<properties 
+﻿<properties
    pageTitle="Opportunity Analysis sample for Power BI: Take a tour"
    description="Opportunity Analysis sample for Power BI: Take a tour"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="mihart" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="mihart"
+   manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -17,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="10/16/2015"
-   ms.author="mihart"/>
+   ms.author="amac"/>
 
 # Opportunity Analysis sample for Power BI: Take a tour  
 
@@ -51,7 +52,7 @@ Our Sales Manager has created a dashboard to track those metrics most important 
 
 5.  Partner large deals generate more revenue: $8M on average versus $6M for direst sales. 
 
-Since the effort to land a deal is the same whether the deal is classified as large, medium, or small; our company should dig into the data to learn more about large opportunities.  
+Since the effort to land a deal is the same whether the deal is classified as large, medium, or small; our company should dig into the data to learn more about large opportunities. 
 
 Select the **Opportunity Count by Partner Driven and Sales Stage** tile to open page 1 of the report.  
 ![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity2.png)
@@ -62,7 +63,7 @@ Select the **Opportunity Count by Partner Driven and Sales Stage** tile to open 
 
 -   East is our biggest region in terms of opportunity counts.  
 -   On the pie chart, select each region one at a time to filter the page. For each region, partners are pursuing significantly more large opportunities.   
--   The Opportunity Count by Partner Driven and Opportunity Size column chart clearly shows that most of the large opportunities are partner-driven and more of the small and medium opportunities are not partner-driven.  
+-   The Opportunity Count by Partner Driven and Opportunity Size column chart clearly shows that most of the large opportunities are partner-driven and more of the small and medium opportunities are not partner-driven. 
 -   Select each Sales Stage in the bar chart in the bottom left to see the difference in regional count and notice that even though East is our biggest region in terms of counts, in the Solution, Proposal and Finalize stages all 3 regions have comparable counts. This means we close a higher percent of deals in Central and West. 
 
 ### Page 2 of our report is titled “Revenue Overview.”  

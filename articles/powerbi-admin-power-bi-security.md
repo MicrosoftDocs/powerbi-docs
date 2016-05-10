@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="guyinacube"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="04/07/2016"
    ms.author="asaxton"/>
 
 # Power BI Security
@@ -59,4 +60,4 @@ Platform security for Power BI also includes multi-tenant environment security, 
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using her credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
 
 
-An exception is connections to **SQL Server Analysis Services** using the **Power BI Analysis Services Connector**; dashboards are cached in Power BI, but access to underlying reports or datasets initiate authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [Power BI Analysis Services Connector deep-dive](powerbi-admin-analysis-services-connector-indepth.md).
+An exception is connections to **SQL Server Analysis Services** using the **Power BI Gateway - Enterprise**; dashboards are cached in Power BI, but access to underlying reports or datasets initiate authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [Power BI Gateway - Enterprise deep-dive](powerbi-gateway-enterprise-connector-indepth.md).

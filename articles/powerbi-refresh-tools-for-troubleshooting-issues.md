@@ -5,10 +5,11 @@
    documentationCenter="" 
    authors="guyinacube" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/04/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -16,12 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/01/2016"
+   ms.date="04/04/2016"
    ms.author="asaxton"/>
 
 # Tools for troubleshooting refresh issues  
 
 The following can be used for general troubleshooting when you encounter an issue with performing a refresh within the Power BI service.
+
+> **Note**: If the following tools don't help in determining the resolution to your issue, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 
 ## Update to the latest version  
 A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway.
@@ -63,9 +66,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 
 ## See also
 
-[Data Refresh](powerbi-refresh-data.md)  
-
-[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)
+[Data Refresh](powerbi-refresh-data.md)
 
 [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
 

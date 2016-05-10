@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2016"
+   ms.date="04/29/2016"
    ms.author="mihart"/>
 
 # Duplicate a report page in Power BI  

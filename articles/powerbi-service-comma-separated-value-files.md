@@ -3,8 +3,9 @@
    description="Learn how to get data from CSV files into Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="monitoring"
@@ -17,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/30/2016"
-   ms.author="owend"/>
+   ms.author="davidi"/>
 
 # Get data from Comma Separated Value (.CSV) files
 ![](media/powerbi-service-comma-separated-value-files/csv_icon.png)

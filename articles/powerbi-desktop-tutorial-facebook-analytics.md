@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 # Tutorial: Facebook analytics using Power BI Desktop
 
@@ -242,11 +243,7 @@ In order to create a visualization, we can drag fields from the **Field list** a
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/22.png)
 
-
-
-That's better. And now we have three visualizations on this page, which we can size as we want to fill up the report page
-
-.
+That's better. And now we have three visualizations on this page, which we can size as we want to fill up the report page.
 
 ![](media/powerbi-desktop-tutorial-facebook-analytics/23.png)
 
@@ -256,10 +253,9 @@ You can download the end result of this tutorial [here](http://download.microsof
 
 ### Where else can I get more information?
 
-[Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937).
+-   [Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937)
+-   [Watch Power BI Desktop videos](http://go.microsoft.com/fwlink/?LinkID=519322)
+-   [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
+-   [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
 
-[Watch Power BI Desktop videos.](http://go.microsoft.com/fwlink/?LinkID=519322)
-
-[Visit the Power BI Forum.](http://go.microsoft.com/fwlink/?LinkID=519326)
-
-[Read the Power BI Blog.](http://go.microsoft.com/fwlink/?LinkID=519327)
+﻿

@@ -5,10 +5,11 @@
    documentationCenter=""
    authors="maggiesMSFT"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="identified"
+   qualityDate="04/04/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/16/2016"
+   ms.date="04/14/2016"
    ms.author="maggies"/>
 
 # Share a dashboard with colleagues and others
@@ -65,7 +66,7 @@ When you share a dashboard:
 
 -   No-one can see or download the dataset.
 
--   Everyone can refresh the data.
+-   Everyone can manually [refresh the dashboard data](powerbi-refresh-data.md).
 
 ### When you share with colleagues
 

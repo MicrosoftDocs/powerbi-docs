@@ -5,6 +5,7 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/11/2016"
+   ms.date="04/28/2016"
    ms.author="maggies"/>
 # Organizational content packs: Introduction
 
@@ -24,7 +25,7 @@ Package up and share your own dashboards, reports, Excel workbooks, and datasets
 
 >**Note**:  Organizational content packs are only available when you and your colleagues have [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
-In the Content Pack Library, you can browse or search for content packs published to the entire organization,  to distribution or security groups, and to [Office 365 groups you belong to](powerbi-service-groups.md).  If you aren't a member of a specific group, you won't see that group's content packs. If you aren't a member of a specific group, you won't see content packs shared with that group. All members of the group have the same read-only access to the content pack data, reports, workbooks, and dashboards (unless it's an SSAS data source, in which case your privileges are inherited with the data source).
+In the Content Pack Library, you can browse or search for content packs published to the entire organization,  to distribution or security groups, and to [Office 365 groups you belong to](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).  If you aren't a member of a specific group, you won't see that group's content packs. If you aren't a member of a specific group, you won't see content packs shared with that group. All members of the group have the same read-only access to the content pack data, reports, workbooks, and dashboards (unless it's an SSAS data source, in which case your privileges are inherited with the data source).
 
 The dashboards, reports, and Excel workbooks are read-only, but as a member of the group, you can unlock and use the dashboards and reports as a starting point for customizing your own. After you edit a content pack, you now have a personalized version of the content pack.
 
@@ -73,12 +74,12 @@ The lifecycle looks something like this:
 
 All group members have the same permissions to the data as the content pack creator. The one exception to this is SSAS on-premises tabular datasets.  Because the reports and dashboards are connecting live to the on-premises SSAS model, the credentials of each individual group member are used to determine which data he or she can access.
 
-## See also
+### See also
 
 -   [Create and publish an organizational content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md)
 -   [Find and open an organizational content pack](powerbi-service-organizational-content-pack-find-and-open.md)
 -   [Manage, update, and delete an organizational content pack](powerbi-service-organizational-content-packs-manage-update-delete.md)
--   [What is a Power BI group?](powerbi-service-groups.md)
+-   [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 -   [Get Started with Power BI](powerbi-service-get-started.md)
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

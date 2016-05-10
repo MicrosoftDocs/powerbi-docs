@@ -5,10 +5,11 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="03/11/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -22,8 +23,6 @@
 # Dashboards in the Power BI mobile app for Windows 10  
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
-
-Power BI brings together data from different types of data sources &#151; for example, services such as Salesforce, content packs from your organization, databases, and Excel workbooks.
 
 You don't create dashboards on your Windows 10 mobile device. In the Power BI service ([https://www.powerbi.com](https://www.powerbi.com)) on your computer, you [create dashboards](powerbi-service-dashboards.md) or [connect to built-in dashboards for services](powerbi-content-packs-services.md) such as Salesforce.
 

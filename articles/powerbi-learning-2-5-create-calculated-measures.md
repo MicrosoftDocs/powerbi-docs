@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -38,7 +39,7 @@ If your calculation is particularly long, you can add extra line breaks in the E
 
 ![](media/powerbi-learning-2-5-create-calculated-measures/2-5_3.png)
 
-Once you've created a new measure, it will appear in one of the tables the **Fields** pane, found on the right side of the screen. Power BI inserts the new measure into whichever table you have currently selected, and while it doesn't matter exactly where the measure is in your data, you can easily move it by selecting the measure and using the **Home Table** drop-down menu.
+Once you've created a new measure, it will appear in one of the tables on the **Fields** pane, found on the right side of the screen. Power BI inserts the new measure into whichever table you have currently selected, and while it doesn't matter exactly where the measure is in your data, you can easily move it by selecting the measure and using the **Home Table** drop-down menu.
 
 ![](media/powerbi-learning-2-5-create-calculated-measures/2-5_4.png)
 

@@ -3,8 +3,9 @@
    description="Learn how to get data from Excel, Power BI Desktop, and CSV files into Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="monitoring"
@@ -17,15 +18,15 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="04/01/2016"
-   ms.author="owend"/>
+   ms.author="davidi"/>
 
 # Get data from files
 ![](media/powerbi-service-get-data-from-files/file_icons.png)
 
 In Power BI, you can connect to or import data and reports from three types of files.
-*	Microsoft Excel (.xlsx or .xlsm)
-*	Power BI Desktop (.pbix)
-*	Comma Separated Value (.csv)
+- Microsoft Excel (.xlsx or .xlsm)
+- Power BI Desktop (.pbix)
+- Comma Separated Value (.csv)
 
 ## What does get data from a file really mean?
 
@@ -49,6 +50,6 @@ We can even take it one step further. A fuel tank in a car has to be filled with
 
 ## Ready to get started?
 See the following articles to learn more about getting your file into Power BI.
-* [Get data from Excel workbook files](articles/powerbi-service-excel-workbook-files.md)
-* [Get data from Power BI Desktop files](articles/powerbi-service-powerbi-desktop-files.md)
-* [Get data from Comma Separated Value files](articles/powerbi-service-comma-seperated-value-files.md)
+- [Get data from Excel workbook files](articles/powerbi-service-excel-workbook-files.md)
+- [Get data from Power BI Desktop files](articles/powerbi-service-powerbi-desktop-files.md)
+- [Get data from Comma Separated Value files](articles/powerbi-service-comma-separated-value-files.md)

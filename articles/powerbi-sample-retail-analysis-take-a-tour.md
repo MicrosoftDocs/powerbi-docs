@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="01/15/2016"
-   ms.author="mihart"/>
+   ms.author="amac"/>
 
 # Retail Analysis sample for Power BI: Take a tour
 

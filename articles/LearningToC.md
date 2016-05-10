@@ -5,6 +5,7 @@
    documentationCenter=""
    authors="v-maleh"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""/>
 
@@ -37,7 +38,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-learning-0-0-what-is-power-bi",
             "powerbi-learning-0-1-intro-using-power-bi",
             "powerbi-learning-0-0b-building-blocks-power-bi",
-            "powerbi-learning-0-2-get-started-power-bi-desktop",
             "powerbi-learning-0-3-dashboards-cloud-services",
             "powerbi-learning-0-4-summary-of-intro-to-power-bi"
             ]
@@ -46,6 +46,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Getting Data",
           "articles": [
             "powerbi-learning-1-1-overview-of-power-bi-desktop",
+            "powerbi-learning-0-2-get-started-power-bi-desktop",            
             "powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop",
             "powerbi-learning-1-3-clean-and-transform-data-with-query-editor",
             "powerbi-learning-1-4-advanced-data-sources-and-transformation",
@@ -94,7 +95,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-learning-4-0-intro-power-bi-service",
             "powerbi-learning-4-1a-quick-insights",
             "powerbi-learning-4-2-create-configure-dashboards",
-            "powerbi-learning-4-3-asking-questions-natural-languages",
+            "powerbi-learning-4-3-asking-questions-natural-language",
             "powerbi-learning-4-3a-suggested-questions",
             "powerbi-learning-4-4-share-dashboards",
             "powerbi-learning-4-4b-display-visuals-tiles-fullscreen",

@@ -5,10 +5,11 @@
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="04/15/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -16,10 +17,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/25/2016"
+   ms.date="05/02/2016"
    ms.author="derrickv"/>
 
 # Step 2: Get an authentication access token
+
+This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
 
 In **step 1** of Push data into a dashboard, [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
 
@@ -27,7 +30,7 @@ Here's how to get an authentication access token.
 
 ## Get an authentication access token
 
->**NOTE**: Before you get started, you need to setup your app environment in Azure Active Directory (Azure AD). See [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md).
+>**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough.
 
 1. In Visual Studio 2015, create a **Console Application** project.
 2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
@@ -110,13 +113,14 @@ Add this code to Program {...}.
 
 After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset to push data into a dashboard.
 
-The **next step** shows you how to [create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md).
+The next step shows you how to [create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md).
 
 Below is the [complete code listing](#code).
 
+[Next Step >](powerbi-developer-walkthrough-push-data-create-dataset.md)
+
 ## See also
 - [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)
-- [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
 - [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
