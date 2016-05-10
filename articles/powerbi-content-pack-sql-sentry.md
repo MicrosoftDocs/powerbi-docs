@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
    
 # SQL Sentry content pack for Power&nbsp;BI
@@ -27,6 +27,7 @@ Connect to the [SQL Sentry content pack](https://app.powerbi.com/groups/me/getd
 
 Note: Access to a SQL Sentry account you use for connecting to http://cloud.sqlsentry.com and a Database ID you will monitor is required to connect.  Instructions for where to find the Database ID are below.
 
+## How to connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -73,25 +74,18 @@ Note: Access to a SQL Sentry account you use for connecting to http://cloud.sqls
 
 	![](media/powerbi-content-pack-sql-sentry/img9dashboard800.png)
 
-What can you do now?
+**What Now?**
 
--   Try asking a question in the Q&A box at the top of the dashboard, such as "What is my uptime % by date"
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
-	![](media/powerbi-content-pack-sql-sentry/img10qna800.png)
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
--   Change the tiles in the dashboard.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
--   Select a tile to open the underlying report.
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
--   Rename the dashboard: Select the ellipsis (…) next to the SQL Sentry dashboard \> Rename.
 
--   While your dataset will be refreshed automatically, you can also refresh it on demand using Refresh Now.  Scroll to the SQL Sentry entry in your datasets list, select the ellipsis (…) and press **Refresh Now**
-
-	![](media/powerbi-content-pack-sql-sentry/img11400.png)
-
-This dashboard can be fully customized to how you want to display your data. It allows you to ask a [question in ](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-
- 
+## What's included
 
 The following data is available from SQL Sentry  in Power BI :
 
@@ -110,13 +104,9 @@ The following data is available from SQL Sentry  in Power BI :
 
 If data from some of your apps is not showing up in Power BI, check to make sure that you are using the correct Database ID and that you have the authority to view the data. 
 
-
-
-
 If you are not the owner if the SQL Sentry database that is being synchronized to <https://cloud.sqlsentry.com>, please contact your administrator to make sure you have rights to view the collected data.
 
-See Also:
-
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

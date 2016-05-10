@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
    
 # comScore Digital Analytix content pack for Power&nbsp;BI
@@ -26,6 +26,8 @@ Visual and explore your comScore Digital Analytix data in Power BI with the Powe
 Connect to the [comScore content pack for Power BI.](https://app.powerbi.com/getdata/services/comscore)
 
 Note: To connect to the content pack you need a comScore DAx user account and have comScore API access. Please contact your comScore DAx admin to confirm your account.
+
+## How to connect
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
@@ -48,9 +50,22 @@ Note: To connect to the content pack you need a comScore DAx user account and ha
 
 6.  The import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
 
-You can change this dashboard to display your data the way you want. Click a tile to open the underlying report and change the tiles in the dashboard.
 
-### Finding comScore Parameters and Credentials
+**What Now?**
+
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## System requirements
+
+A comScore DAx user account and access to the comScore DAx API is required to connect. Please contact your comScore DAx admin to confirm your account.
+
+## Finding parameters
 
 Details on how to find each of your comScore parameters is below.
 
@@ -75,4 +90,10 @@ The comScore site determines which site you’d like to see the data from. You c
 ![](media/powerbi-content-pack-content-pack/comscore_sites.PNG)
 
  
+### See also
+
+[Get started in Power BI](powerbi-service-get-started.md)
+
+[Get data in Power BI](powerbi-service-get-data.md)
+
 

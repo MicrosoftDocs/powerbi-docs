@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
    
 # UserVoice content pack for Power&nbsp;BI
@@ -27,6 +27,7 @@ Connect to the [UserVoice content pack](https://app.powerbi.com/getdata/services
 
 Note: An admin account is required to connect to the Power BI content pack. The content pack also leverages the UserVoice API and will contribute usage towards the UserVoice limits. More details below.
 
+## How to connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -40,30 +41,33 @@ Note: An admin account is required to connect to the Power BI content pack. The 
 
 	![](media/powerbi-content-pack-uservoice/Capture1.PNG)
 
-4.  When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name. Note that there is no trailing slash at the end and the connection is in http**s**.
+4.  When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name. 
+
+    **Note:** There is no trailing slash at the end and the connection is in http**s**.
 
 	![](media/powerbi-content-pack-uservoice/Capture.PNG)
 
-
-5.  When prompted, enter your UserVoice credentials and follow the UserVoice authentication process. If you are already signed in to UserVoice in your browser, you may not be prompted for credentials.
+5.  When prompted, enter your UserVoice credentials and follow the UserVoice authentication process. If you are already signed in to UserVoice in your browser, you may not be prompted for credentials. Grant the Power BI application access to your data by clicking "Allow Access".
 
 	**Note:** You need admin credentials for your UserVoice account.
-
-6.  Grant the Power BI application access to your data by clicking "Allow Access".
-
+    
 	![](media/powerbi-content-pack-uservoice/Capture3.PNG)
 
 7.  Power BI will retrieve your UserVoice data and create a ready-to-use dashboard and report for you. Power BI will retrieve the following data: all your suggestions, all your open tickets, all tickets created in the last 30 days including closed ones and all the user satisfaction ratings.
 
 	![](media/powerbi-content-pack-uservoice/Capture4.png)
 
-8.  What can you do now?
-	-   Rename the dashboard: Select the ellipsis (...) next to the UserVoice dashboard \> **Rename**.
-	-   Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard.
-	-   [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-	-   Select a tile to [open the underlying report](powerbi-service-dashboard-tiles.md). 
+**What Now?**
 
-###Troubleshooting
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## Troubleshooting
 
 **"Parameter validation failed, please make sure all parameters are valid"**
 
@@ -89,6 +93,8 @@ If you get this error message while the data is being loaded, make sure your Use
 The Power BI UserVoice content pack uses UserVoice's APIs to retrieve your data. Make sure you monitor your API usage so that you don't exceed your limit. If you have a lot of data in your UserVoice account, a suggestion to minimize the impact on your API usage is to change the refresh frequency from the current default which is once a day to only refresh on weekdays or every other day depending on your needs. Another suggestion is to have one admin create the content pack and share it with the rest of the team instead of having every admin in your organization create their own putting extra unnecessary load on the APIs
 
 ### See also
+
+[Get started in Power BI](powerbi-service-get-started.md)
 
 [Get data in Power BI](powerbi-service-get-data.md)
 

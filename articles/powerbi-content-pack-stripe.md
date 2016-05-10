@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
 
 # Stripe content pack for Power&nbsp;BI
@@ -24,6 +24,8 @@
 Visual and explore your Stripe data in Power BI with the Power BI content pack. The Power BI Stripe content pack pulls in data about your Customers, Charges, Events and Invoices. The data includes the most recent ten thousand events and five thousand charges over the last 30 days. The content will be refreshed automatically once per day at a schedule you control. 
 
 Connect to the [Stripe content pack for Power BI](https://app.powerbi.com/getdata/services/stripe).
+
+## How to connect
 
 1. Select Get Data at the bottom of the left navigation pane.  
 
@@ -46,4 +48,19 @@ Connect to the [Stripe content pack for Power BI](https://app.powerbi.com/getdat
 
    ![](media/powerbi-content-pack-stripe/dashboard.png)
 
-You can change this dashboard to display your data the way you want. Click a tile to open the underlying report and change the tiles in the dashboard.
+**What Now?**
+
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+### See also
+
+[Get started with Power BI](powerbi-service-get-started.md)
+
+[Get Data for Power BI](powerbi-service-get-data.md)
+

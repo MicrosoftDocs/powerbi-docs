@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
 # Troux content pack for Power&nbsp;BI
 

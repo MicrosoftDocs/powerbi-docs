@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
    
 # Microsoft Dynamics CRM content pack for Power&nbsp;BI
@@ -73,7 +73,11 @@ Note: this content pack requires an administrator must enable the OData endpoint
 
 ## Finding parameters
 
-The address of the OData endpoint can be found by navigating to **Microsoft Dynamics CRM \> Settings \> Customizations \> Developer Resources**.  The OData URL is listed under **Service Endpoints**.  It typically has the format: `https://[instance_name].crm.dynamics.com/XRMServices/2011/OrganizationData.svc`
+The address of the OData endpoint can be found by navigating to **Microsoft Dynamics CRM \> Settings \> Customizations \> Developer Resources**.  
+
+The OData URL is listed under **Service Endpoints**.  It typically has the format: `https://[instance_name].crm.dynamics.com/XRMServices/2011/OrganizationData.svc`
+
+Note: the new Dynamics CRM 2016 endpoint is not currently supported in the content pack, check back for updates.
 
 ## Troubleshooting
 

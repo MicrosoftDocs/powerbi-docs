@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
    
 # AT Internet Bridge content pack for Power&nbsp;BI
@@ -62,6 +62,7 @@ Connect to the [AT Internet Bridge content pack](https://app.powerbi.com/getdata
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
+
 This content pack contains data from the last 45 days in the following tables:  
     - Conversion  
     - Devices  

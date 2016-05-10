@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
    
 # tyGraph content pack for Power&nbsp;BI
@@ -24,6 +24,8 @@
 Visualize and explore your tyGraph data in Power BI with the Power BI content pack. Start by connecting to your tyGraph account and loading the dashboard, reports and dataset. The out of box content includes insights such as the Measure of Active Engagement (MAE score) and Top Contributors. Customize it further to highlight the information you care most about.  The data will be refreshed automatically according to a schedule that you set.
 
 Connect to the [tyGraph content pack for Power BI.](https://app.powerbi.com/getdata/services/tygraph)
+
+## How to connect
 
 1.  Select Get Data at the bottom of the left navigation pane.
 
@@ -55,13 +57,22 @@ Connect to the [tyGraph content pack for Power BI.](https://app.powerbi.com/getd
 
 	![](media/powerbi-content-pack-tygraph/dashboard.PNG)
 
-You can change this dashboard to display your data the way you want. Click a tile to open the underlying report and change the tiles in the dashboard.
 
-## Finding tyGraph Parameters and Credentials
+**What Now?**
+
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## Finding parameters
 
 You can bring in data on all the groups you have access to, or you can choose to specify a subset. You can also create a subset of data by date. You can create multiple tyGraph dashboards to monitor specific sets of groups and/or dates. Details on these parameters are below.
 
-### Groups
+**Groups**
 
 The tyGraph API can filter data by specific group ID. These are provided to the content pack in a comma separated list. 
 
@@ -74,7 +85,7 @@ You can Identify the group ID for a particular group in Yammer by navigating to 
 
 In the above example, the Yammer Group ID is 4054844
 
-### From Date
+**From Date**
 
 The From Date allows you to restrict the earliest value for the data returned. Only data created on or after this date will be loaded into the content pack. The format of the From Date is YYYY/MM/DD. 
 
@@ -82,11 +93,15 @@ The From Date allows you to restrict the earliest value for the data returned. O
 
 In the above example, all data from on or after October 29, 2013 will be loaded into the content pack. 
 
-### To Date
-
+**To Date**
 The To Date allows you to restrict the latest value for the data returned. It can be used in conjunction with the From Date to load data from a range of dates. Only data created on or before this date will be loaded into the content pack. The format of the To Date is YYYY/MM/DD. 
 
 	Example: 2014/10/20
 
 In the above example, all data from on or prior to October 20, 2014 will be loaded into the content pack. 
 
+### See also
+
+[Get started in Power BI](powerbi-service-get-started.md)
+
+[Get data in Power BI](powerbi-service-get-data.md)

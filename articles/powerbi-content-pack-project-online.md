@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/09/2016"
    ms.author="tpalmer"/>
 # Project Online content pack for Power BI
 
@@ -24,6 +24,7 @@ Microsoft Project Online is a flexible online solution for project portfolio man
 
 Connect to the [Project Online content pack](https://app.powerbi.com/getdata/services/project-online) for Power BI.
 
+## How to connect
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 
@@ -49,13 +50,15 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 
 	![](media/powerbi-content-pack-project-online/dashboard2.png)
 
-	You can change this dashboard to display your data the way you want it. Plus you can:
+**What Now?**
 
-	- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard, such as "Show total clicks by location on a map"
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
-	- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
-	- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ### See also
 
