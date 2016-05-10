@@ -61,9 +61,6 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## What's included
-The content pack uses the Troux OData feed.
-
 ## System requirements
 Access to the Troux OData feed and Troux 9.5.1 or higher is required.
 
