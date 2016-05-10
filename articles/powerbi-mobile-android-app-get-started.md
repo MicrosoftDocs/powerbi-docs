@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Get started with the Power BI for Android app"
-   description="Get started with the Power BI for Android app"
+   description="The Android app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to business information."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="monitoring"
-   qualityDate="04/04/2016"/>
+   qualityDate="05/09/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="05/09/2016"
    ms.author="maggies"/>
 # Get started with the Power BI for Android app
 
@@ -64,11 +64,10 @@ See what else you can do in the Android phone app for Power BI.
 -   View [your groups](powerbi-mobile-groups-in-the-android-app.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
--   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone to open a related dashboard. 
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) from your Android phone to open a related dashboard. 
 
 ### See also
 
-[Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
-
-[Get started with Power BI](powerbi-service-get-started.md)
+-  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
+-  [Get started with Power BI](powerbi-service-get-started.md)
 
