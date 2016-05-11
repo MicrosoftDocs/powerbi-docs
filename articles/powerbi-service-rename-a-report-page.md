@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Rename a report page in Power BI"
-   description="Rename a report page in Power BI"
+   description="Documentation on how to rename a report page in Microsoft Power BI service."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -17,13 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 # Rename a report page in Power BI
 
 ##  What happens when I rename a report page?
 
 Don't like the name of a page in your Power BI report?  A new name is just a click away. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 1.  Open the report in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 

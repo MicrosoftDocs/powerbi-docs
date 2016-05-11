@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Change how visuals interact in a report"
-   description="Visual interactions in a report"
+   description="Documentation for how to set Visual interactions in a Microsoft Power BI report."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 
 # Visualization interactions in a Power BI report

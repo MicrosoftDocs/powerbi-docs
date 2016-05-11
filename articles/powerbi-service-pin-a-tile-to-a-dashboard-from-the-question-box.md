@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Pin a tile to a Power BI dashboard from the Q&A question box"
-   description="Pin a tile to a Power BI dashboard from the Q&A question box"
+   description="Documentation on how to pin a tile to a Power BI dashboard from the Q&A question box"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/16/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from the Q&A question box  

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="05/11/2016"
    ms.author="mihart"/>
 # Tutorial: Funnel charts in Power BI
 
@@ -61,7 +61,12 @@ Funnel Charts:
 
 ## Create a basic Funnel Chart
 
-We'll create a Funnel Chart that shows the number of opportunities we have in our sales stages.
+Watch this video to see Will create a Funnel chart using the Sales and Marketing sample.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/maTzOJSRB3g" frameborder="0" allowfullscreen></iframe>
+
+
+Now create your own Funnel chart that shows the number of opportunities we have in each of our sales stages.
 
 These instructions use the Opportunity Tracking Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
 

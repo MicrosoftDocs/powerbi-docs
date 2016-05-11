@@ -1,6 +1,6 @@
 <properties
    pageTitle="Tutorial: Combo Chart in Power BI"
-   description="Tutorial: Combo Chart in Power BI."
+   description="This documentation is a tutorial (with video) that shows you why and how to create a Combo Chart in Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 # Tutorial: Combo Chart in Power BI
 
@@ -41,7 +41,12 @@ Combo Charts are a great choice:
 
 ## Create a basic, single-axis, Combo Chart
 
-To follow along, sign in to Power BI and select **Get Data \> Samples \> Retail Analysis Sample**. 
+Watch Will create a Combo Chart using the Sales and Marketing sample. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
+
+To create your own Combo Chart, sign in to Power BI and select **Get Data \> Samples \> Retail Analysis Sample**. 
 
 1. From the "Retail Analysis Sample" dashboard, select the **Total Stores** tile to open the "Retail Analysis Sample" report.
 
