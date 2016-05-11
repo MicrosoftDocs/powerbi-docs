@@ -26,9 +26,17 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[What’s New and Exciting in Power BI- 05/10/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-10-Whats-New-in-PowerBI-Registration.html?Is=Website)
+[Introduction to Power BI for the Excel User by Matt Allington - 05/17/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-17-Intro-to-PowerBI-for-Excel-Registration.html?Is=Website)
 
-[Dashboard Makeover: Learn how to make your data shine- 05/12/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html?Is=Website)
+[Introduction to MicrosoftFlow - 05/17/16](https://info.microsoft.com/CO-MSFTFlow-WBNR-FY16-05May-Intro-to-MicrosoftFLow-CLE-Registration.html?Is=Website)
+
+[Integrating Power BI with your Application - 05/19/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-19-Integrating-PowerBI-with-your-Application-Registration.html?Is=Website)
+
+[Introduction to Microsoft PowerApps - 05/19/16](https://info.microsoft.com/CO-PowerApps-WBNR-FY16-05May-Intro-to-PowerApps-CLE-Registration.html?Is=Website)
+
+[Introduction to MicrosoftFlow - 05/24/16](https://info.microsoft.com/CO-MSFTFlow-WBNR-FY16-05May-Intro-to-MicrosoftFLow-CLE-Registration.html?Is=Website)
+
+[Introduction to Microsoft PowerApps - 05/26/16](https://info.microsoft.com/CO-PowerApps-WBNR-FY16-05May-Intro-to-PowerApps-CLE-Registration.html?Is=Website)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -36,13 +44,17 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
+[Dashboard Makeover: Learn how to make your data shine - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html?Is=Website)
+
+[What’s New and Exciting in Power BI - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-10-Whats-New-in-PowerBI-Registration.html?Is=Website)
+
 [Connecting to SAP data with Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
 
 [How to Design Visually Stunning Reports in Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html?Is=Website)
 
-[The Power of R In Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-14-Power-of-R-in-PowerBI-Registration.html?Is=Website)
-
 ###  Introductory webinars
+
+[What’s New and Exciting in Power BI- May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-10-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
 [What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
 
@@ -66,9 +78,15 @@ Watch our latest webinars on-demand.
 
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
+### Community webinars
+
+[Dashboard Makeover: Learn how to make your data shine - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html?Is=Website)
+
 ### Power BI Content Pack and Connector webinars
 
 [Connecting to SAP data with Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
+
+[Scale BI Across the Enterprise & Get the Most of SQL Investment with Pyramid Analytics and Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-10Dec15-PyramidAnalyticsPowerBI-Registration.html?Is=Website)
 
 [Power BI Content Pack for appFigures](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Oct15-appFiguresPowerBIContentPack-Register.html?Is=Website)
 
@@ -90,7 +108,10 @@ Watch our latest webinars on-demand.
 
 [Power BI Content Pack for Twilio](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05Nov15-TwilioPowerBIContentPack-Register.html?Is=Website)
 
-[Scale BI Across the Enterprise & Get the Most of SQL Investment with Pyramid Analytics and Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-10Dec15-PyramidAnalyticsPowerBI-Registration.html?Is=Website)
+### Other webinars
+
+What's New in SQL Server 2016 Reporting Services
+[What's New in SQL Server 2016 Reporting Services - February 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-25-PowerBI-SQL-Reporting-Registration.html?Is=Website)
 
 ## See also  
 [Get started with Power BI](powerbi-service-get-started.md)  
