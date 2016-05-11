@@ -23,6 +23,7 @@
 # Drill down in a visualization in Power BI
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+  
   >**NOTE**: To learn how to create hierarchies using Power BI Desktop, watch the video [How to create and 
 
 
@@ -30,7 +31,7 @@
 
     A hierarchy is shown below.  The *Profit by Product *visualization has a hierarchy made up of **Product **and **Segment**; each product has one or more segments. By default, the visualization displays only the product data, because *Product *appears in the Axis bucket above *Segment*.
 
-    **NOTE**: The animation below shows using drilldown in Editing View.  Editing View allows us to see the hierarchy -- the two fields in the Axis bucket.
+>   **NOTE**: The animation below shows using drilldown in Editing View.  Editing View allows us to see the hierarchy -- the two fields in the Axis bucket.
 
 2.  To enable drill down, select the arrow icon in the top right corner of the visualization. When the icon is dark, drill is enabled.
 

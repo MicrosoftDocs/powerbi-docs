@@ -53,7 +53,7 @@ The *Page Size* settings control the display ratio and actual size (in pixels). 
 
 -   16:9 ratio (default)
 
--   Dynamic
+-   Cortana
 
 -   Letter
 

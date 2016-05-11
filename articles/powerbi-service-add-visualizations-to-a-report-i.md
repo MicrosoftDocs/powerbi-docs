@@ -27,6 +27,8 @@ This article gives a quick introduction to creating a visualization in a report.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rnMyiA6Nt6Y?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
+Now use the [Sales and Marketing sample](powerbi-sample-datasets.md) to create your own report.
+
 1.  Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the Sales and Marketing sample.
 
 2.  If the Fields pane isn't visible, select the arrow icon to open it. 
