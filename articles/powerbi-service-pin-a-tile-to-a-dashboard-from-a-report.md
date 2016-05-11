@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/16/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from a report
@@ -30,6 +30,11 @@ And entire report pages can be pinned to a dashboard.  This is also known as pin
 **NOTE**:  You can't pin tiles from shared reports or from Power BI Desktop.
 
 ## Pin a tile from a report
+
+Watch Amanda create a dashboard by pinning visuals and images from a Power BI report.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
+
+Now create your own dashboard using one of the Power BI sample reports.
 
 1.  Hover over the visualization you want to pin, and select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png) icon. Power BI opens the **Pin to dashboard** screen.
 

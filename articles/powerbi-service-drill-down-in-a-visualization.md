@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Drill down in a visualization in Power BI"
-   description="Drill down in a visualization in Power BI"
+   description="This document shows how to drill down in a visualization in Microsoft Power BI service and Power BI Desktop."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -17,12 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/24/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 
 # Drill down in a visualization in Power BI
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+  >**NOTE**: To learn how to create hierarchies using Power BI Desktop, watch the video [How to create and 
 
 
 1.  In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). Drill requires a visualization with a hierarchy. 

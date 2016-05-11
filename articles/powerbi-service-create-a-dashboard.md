@@ -17,19 +17,23 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/15/2016"
+   ms.date="05/11/2016"
    ms.author="mihart"/>
 
 # Create a Power BI dashboard
 
-You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard.  This article shows you how to create an empty dashboard using the Power BI service left navigation pane. An empty dashboard isn't very useful though -- follow the links below, and at the bottom of the page, to learn how to add content to your dashboard.
+You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard.  The video shows you how to create a new dashboard by pinning visuals and images from a report. And the step-by-step instructions below the video show you how to create an empty dashboard using the Power BI service left navigation pane. An empty dashboard isn't very useful though -- follow the links below, and at the bottom of the page, to learn how to add content to your dashboard.
 
 >**NOTE**: Remember that your dashboard will be blank until you [get some data](powerbi-service-get-data.md) and [pin some tiles](powerbi-service-dashboard-tiles.md).
 
 >**NOTE**: Dashboards are a feature of Power BI service, not Power BI Desktop.
 
 ## Create a dashboard
-### Create an empty dashboard
+### Create a dashboard by pinning visuals and images from a report
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
+
+### Create an empty dashboard from scratch 
 This method creates a new, empty, dashboard.
 
 1. From the left navigation pane in Power BI Service (not Power BI Desktop), select the plus sign ![](media/powerbi-service-create-a-dashboard/PBI_PlusIcon.png) next to the **Dashboards** heading.
