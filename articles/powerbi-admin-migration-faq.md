@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/04/2016"
+ms.date="05/11/2016"
 ms.author="asaxton"/>
 # Power BI for Office 365 migration frequently asked questions (FAQ)
 
@@ -67,7 +67,7 @@ The data model within the excel workbook is what will could toward your data cap
 
 **Are there any restrictions on a workbook size?**
 
-A data model can be a maximum of 250 MB. [Learn more](powerbi-reduce-the-size-of-an-excel-workbook.md) 
+A data model can be a maximum of 1 GB. [Learn more](powerbi-reduce-the-size-of-an-excel-workbook.md) 
 
 **How do I connect to Excel files that we move to a group’s OneDrive for Business storage?**
 
