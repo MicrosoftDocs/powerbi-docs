@@ -112,5 +112,5 @@ Watch our latest webinars on-demand.
 
 [What's New in SQL Server 2016 Reporting Services - February 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-25-PowerBI-SQL-Reporting-Registration.html?Is=Website)
 
-## See also  
-[Get started with Power BI](powerbi-service-get-started.md)  
+## See also
+[Get started with Power BI](powerbi-service-get-started.md)
