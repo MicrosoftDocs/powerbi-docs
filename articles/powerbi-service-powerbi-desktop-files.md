@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/30/2016"
+   ms.date="05/11/2016"
    ms.author="davidi"/>
 
 # Get data from Power BI Desktop files
@@ -38,7 +38,7 @@ Once you’ve got some data into Power BI Desktop, and maybe created a few repor
 **SharePoint Team-Sites** – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 ## Import or connect to a Power BI Desktop file from Power BI
-**Important:** The maximum file size you can import into Power BI is 250 megabytes.
+**Important:** The maximum file size you can import into Power BI is 1 gigabyte.
 
 1.  In Power BI, in the navigator pane, click ** Get Data**.
 

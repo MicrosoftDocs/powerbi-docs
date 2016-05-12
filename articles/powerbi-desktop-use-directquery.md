@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/26/2016"
+   ms.date="05/11/2016"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  
@@ -25,10 +25,12 @@
 With Power BI Desktop, when you connect to your data source, it is always possible to import a copy of the data into the Power BI Desktop. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
 
 ### Supported Data Sources  
+
 The following data sources are currently supported:  
+
 -   SQL Server
 -   Azure SQL Database
--   Azure SLQ Data Warehouse
+-   Azure SQL Data Warehouse
 -   [SAP HANA](powerbi-desktop-sap-hana.md)
 
 ### How to Connect using DirectQuery  

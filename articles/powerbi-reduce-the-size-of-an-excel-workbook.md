@@ -22,9 +22,9 @@
 
 # Reduce the size of an Excel workbook to view it in Power BI  
 
-You can upload any Excel workbook smaller than 250 MB to Power BI. An Excel workbook can have two parts: a Data Model, and the rest of the report—the core worksheet contents. If the report meets the following size limits, you can save it to **OneDrive for Business**, connect to it from Power BI, and view it in Excel Online:
+You can upload any Excel workbook smaller than 1 GB to Power BI. An Excel workbook can have two parts: a Data Model, and the rest of the report—the core worksheet contents. If the report meets the following size limits, you can save it to **OneDrive for Business**, connect to it from Power BI, and view it in Excel Online:
 
--   The workbook as a whole can be up to 250 MB.
+-   The workbook as a whole can be up to 1 GB.
 
 -   The core worksheet contents can be up to 10 MB.
 
