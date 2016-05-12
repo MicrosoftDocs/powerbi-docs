@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Featured dashboards in Power BI"
-   description="Featured dashboards in Power BI"
+   description="Documentation on how to create a Featured dashboard in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2016"
+   ms.date="05/11/2016"
    ms.author="mihart"/>
 
 # Featured dashboards in Power BI
@@ -36,7 +36,12 @@ The **Featured dashboard** section of your left navpane will be greyed out until
 
 ![](media/powerbi-service-featured-dashboards/featured-on-navpane2.png)
 
-### To set a dashboard as **Featured**:
+### To set a dashboard as **Featured**
+
+Watch Amanda create a featured dashboard and then follow the instructions below the video to try it out yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6aTiAK-oiJ8" frameborder="0" allowfullscreen></iframe>
+
 
 1. From the top-right corner of the dashboard, select the '...' and choose **Set as Featured dashboard**.
 

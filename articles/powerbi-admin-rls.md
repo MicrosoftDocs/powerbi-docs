@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/09/2016"
+ms.date="05/11/2016"
 ms.author="asaxton"/>
 # Row-level security
 
@@ -26,6 +26,8 @@ Row-level security (RLS) can be used to restrict data access for given users. Th
 You can now configure RLS for data models that have been imported into Power BI. These are referred to as cloud models. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS via live connections to Analysis Services on-premises. Row-level security for Analysis Services is still handled at the on-premises server. The security option will not show up for Live connection datasets.
 
 > **Note**: The preview is intended to let users to start trying out the feature. It will also allow us to collect feedback for improvements. It is not intended for operational usage. Rules defined during the preview may not be available when the feature is generally available.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qrlq9sZyjug" frameborder="0" allowfullscreen></iframe>
 
 ## Manage security on your model
 

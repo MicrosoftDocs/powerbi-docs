@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/09/2016"
+ms.date="05/11/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - SAP HANA
 

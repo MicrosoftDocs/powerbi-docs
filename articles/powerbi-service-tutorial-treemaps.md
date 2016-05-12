@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 
 # Tutorial: Treemaps in Power BI  
@@ -44,7 +44,13 @@ Treemaps are a great choice:
 -   to spot patterns, outliers, most-important contributors, and exceptions.
 
 ## Create a basic Treemap  
-These instructions use the Retail Analysis Sample. To follow along,  [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
+
+
+Want to watch someone else create a Treemap first?  Skip to 2:01 in this video to watch Will create a Treemap using the Sales and Marketing sample.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rnMyiA6Nt6Y?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
+Or, create your own Treemap. These instructions use the Retail Analysis Sample. To follow along,  [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
 
 1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
 ![](media/powerbi-service-tutorial-treemaps/treemapFirstValue_new.png)

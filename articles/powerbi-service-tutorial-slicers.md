@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/24/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 
 # Tutorial: Slicers in Power BI  
