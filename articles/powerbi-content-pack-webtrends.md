@@ -111,5 +111,12 @@ Your credentials are the same as what you enter when you sign into Webtrends, ho
 ## Troubleshooting
 You may hit an issue while the content pack is loading, after you've provided your credentials. If you see the "Oops" message during the loading, please review the troubleshooting suggestions below. If you're still having issues please file a support ticket at https://support.powerbi.com
 
-1. The correct Profile ID is being used, see the [Finding Parameters](FindingParams) for more details.
+1. The correct Profile ID is being used, see the [Finding Parameters](#FindingParams) for more details.
 2. The user has access to the reports listed in the ["What's included"](#Included) section
+
+
+### See also
+
+[Get started with Power BI](powerbi-service-get-started.md)
+
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
