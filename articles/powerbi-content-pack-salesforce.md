@@ -92,8 +92,6 @@ If you encounter any errors, please review the requirements above. Also note the
 
 ### See also
 
-[Ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
-
 [Get Started with Power BI](powerbi-service-get-started.md)
 
 [Get Data](powerbi-service-get-data.md)
