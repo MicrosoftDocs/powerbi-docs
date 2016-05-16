@@ -230,7 +230,7 @@ After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete s
 
 
 ## See also
-- [Push data into a Power BI dashboard](powerbi-developer-push-data-into-a-dashboard.md)
+- [Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Walkthrough - Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)
 - [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
 - [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
