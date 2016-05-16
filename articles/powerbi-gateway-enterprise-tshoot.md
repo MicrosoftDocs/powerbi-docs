@@ -140,7 +140,7 @@ The results should look similar to the following. The difference will be with Tc
     PingReplyDetails (RTT) : 0 ms
     TcpTestSucceeded       : True
 
-If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](powerbi-gateway-enterprise.md/#ports)
+If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](powerbi-gateway-enterprise.md#ports)
 
 ## Tools for troubleshooting
 
