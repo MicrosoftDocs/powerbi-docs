@@ -1,16 +1,16 @@
 ﻿<properties 
    pageTitle="Power BI Gateway - Personal"
    description="Power BI Gateway - Personal"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -64,7 +64,7 @@ REFRESH NOW and SCHEDULE REFRESH are supported without a gateway for datasets up
 
 **Question:** What if my Excel workbook or Power BI Desktop file gets data from both online and on-premises data sources?
 
-**Answer:** A gateway *is* required. You will need to install and configure a gateway in order to refresh data from  your on-premises data sources. 
+**Answer:** A gateway *is* required. You will need to install and configure a gateway in order to refresh data from  your on-premises data sources.
 
 **Question:** What if my Excel workbook just has rows of data I typed in?**
 
@@ -159,7 +159,7 @@ From here, you can update your password and check your gateway's connection stat
 
 ## Ports
 
-The gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. 
+The gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports.
 
 |Domain names|Outbound ports|Description|
 |---|---|---|
@@ -184,4 +184,3 @@ If you're having trouble when installing and configuring a personal gateway, be 
 [Troubleshooting Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
-
