@@ -30,9 +30,11 @@ The following webinars can help you to understand and use Power BI. After you re
 
 [Introduction to MicrosoftFlow - 05/17/16](https://info.microsoft.com/CO-MSFTFlow-WBNR-FY16-05May-Intro-to-MicrosoftFLow-CLE-Registration.html?Is=Website)
 
-[Integrating Power BI with your Application - 05/19/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-19-Integrating-PowerBI-with-your-Application-Registration.html?Is=Website)
-
 [Introduction to Microsoft PowerApps - 05/19/16](https://info.microsoft.com/CO-PowerApps-WBNR-FY16-05May-Intro-to-PowerApps-CLE-Registration.html?Is=Website)
+
+[Integrating Power BI with your Application - 05/24/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Integrating-PowerBI-with-your-Application-Registration.html?Is=Website)
+
+[Data Preparation is the Keystone by Reza Rad - 05/24/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Data-Preparation-Registration.html?Is=Website)
 
 [Introduction to MicrosoftFlow - 05/24/16](https://info.microsoft.com/CO-MSFTFlow-WBNR-FY16-05May-Intro-to-MicrosoftFLow-CLE-Registration.html?Is=Website)
 
