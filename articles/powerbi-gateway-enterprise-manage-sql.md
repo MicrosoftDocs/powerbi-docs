@@ -9,7 +9,7 @@ backup=""
 editor=""
 tags=""
 qualityFocus="monitoring"
-qualityDate="05/12/2016"/>
+qualityDate="05/16/2016"/>
 
 <tags
 ms.service="powerbi"
@@ -17,11 +17,19 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/12/2016"
+ms.date="05/16/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - SQL Server
 
 Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.
+
+## Download and install the gateway
+
+Download and install the latest version of the [Power BI Gateway - Enterprise](https://go.microsoft.com/fwlink/?LinkId=698863).
+
+Or, from the Power BI service, select **Downloads** > **Power BI Gateways**.
+
+![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
 
 ## Add a gateway
 

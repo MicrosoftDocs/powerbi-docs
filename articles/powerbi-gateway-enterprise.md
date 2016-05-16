@@ -47,7 +47,7 @@ Before you install the gateway, it’s important to know whether or not use you 
 
 The gateway allows for the use of DirectQuery to an on-premises SQL Server, SAP HANA, Oracle or Teradata, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services. The enterprise gateway can also be used with scheduled refresh for data that you have imported into Power BI.
 
-### List of available data source types
+## List of available data source types
 
 |**Data source**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|
 |---|---|---|---|
@@ -78,9 +78,9 @@ Setting up a gateway for the first time is a three step process.
 
 ## Download and install the Power BI Gateway - Enterprise
 
-To download the gateway, click on Power BI gateways under the Downloads menu. Download the Power BI Gateway – Enterprise.
+To download the gateway, select **Power BI Gateways** under the Downloads menu. Download the [Power BI Gateway - Enterprise](https://go.microsoft.com/fwlink/?LinkId=698863).
 
-![](media/powerbi-gateway-enterprise/egw-download.png)
+![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
 
 It is recommended that you install this gateway on a server that is running the data source you will be connecting to. While you can install it on a different machine, you reduce potential network latency by having it on the same machine.
 
