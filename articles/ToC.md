@@ -349,6 +349,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-alternate-email-address-for-power-bi",
             "powerbi-admin-how-to-use-the-same-account-as-azure",
             "powerbi-admin-office-365-dedicated-known-issues",
+            "powerbi-desktop-troubleshooting-analyze-in-excel",
             "powerbi-admin-troubleshooting-power-bi-personal-gateway",
             "powerbi-gateway-enterprise-tshoot",
             "powerbi-admin-troubleshoot-unsupported-data-source-for-refresh",
@@ -356,7 +357,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-troubleshoot-excel-workbook-data",
             "powerbi-refresh-troubleshooting-tile-errors"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         }
       ]
     },
@@ -381,6 +382,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-connect-to-data",
             "powerbi-desktop-import-excel-workbooks",
             "powerbi-desktop-ssas-multidimensional",
+            "powerbi-desktop-connect-oracle-database",            
             "powerbi-desktop-r-scripts",
             "powerbi-desktop-sap-hana",
             "powerbi-desktop-analysis-services-tabular-data",
@@ -394,7 +396,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-google-analytics-connector",
             "powerbi-desktop-project-online-connect-to-data"
           ],
-          "numberOfFeaturedArticles": 11
+          "numberOfFeaturedArticles": 12
         },
         {
           "sectionTitle": "Transform and shape data",

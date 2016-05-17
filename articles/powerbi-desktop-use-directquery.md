@@ -25,9 +25,7 @@
 With Power BI Desktop, when you connect to your data source, it is always possible to import a copy of the data into the Power BI Desktop. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
 
 ### Supported Data Sources  
-
 The following data sources are currently supported:  
-
 -   SQL Server
 -   Azure SQL Database
 -   Azure SQL Data Warehouse
