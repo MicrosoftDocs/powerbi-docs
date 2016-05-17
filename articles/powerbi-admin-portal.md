@@ -24,7 +24,13 @@ Tenant management of Power BI for your company is done through the Power BI admi
 
 ## How to get to the admin portal
 
-If you are a Global Admin, you will see the option, for the admin portal, under the Settings gear on the top right of the Power BI service.
+To get to the Power BI admin portal, do the following.
+
+1. Select the settings gear in the top right of the Power BI service.
+
+2. Select **Admin Portal**.
+
+> **Note**: Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
 
 ![](media/powerbi-admin-portal/powerbi-admin-settings.png)
 
