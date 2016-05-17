@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/16/2016"
+ms.date="05/17/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - Analysis Services
 
