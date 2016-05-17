@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Microsoft Dynamics CRM content pack for Power&nbsp;BI
@@ -34,13 +34,13 @@ Note: this content pack requires an administrator must enable the OData endpoint
 
     ![](media/powerbi-content-pack-microsoft-dynamics-crm/PBI_GetData.png) 
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
     ![](media/powerbi-content-pack-microsoft-dynamics-crm/PBI_GetServices.png) 
 
-3.  Select **Microsoft Dynamics CRM** and click **Connect**.
+3.  Select **Microsoft Dynamics CRM Online** and click **Get**.
 
-    ![](media/powerbi-content-pack-microsoft-dynamics-crm/PBI_DynamicsCRMConnect.png)
+    ![](media/powerbi-content-pack-microsoft-dynamics-crm/mdcrm.png)
 
 4.  Provide the OData URL associated with your account.  This will be in the form `https://mytenant.crm.dynamics.com/XRMServices/2011/OrganizationData.svc`
 

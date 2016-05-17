@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Webtrends content pack for Power&nbsp;BI
@@ -28,17 +28,17 @@ Connect to the [Webtrends content pack for Power BI.](https://app.powerbi.com/ge
 
 ## How to connect
 
-1.  Select Get Data at the bottom of the left navigation pane.
+1.  Select **Get Data** at the bottom of the left navigation pane.
 
 	![](media/powerbi-content-pack-webtrends/getdata3.png)
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
 	![](media/powerbi-content-pack-webtrends/services.PNG)
 
-3.  Select Webtrends \> Connect.
+3.  Select **Webtrends** \> **Get**.
 
-	![](media/powerbi-content-pack-webtrends/GetData.PNG)
+	![](media/powerbi-content-pack-webtrends/webtrends.png)
 
 4.  The content pack connects to a specific Webtrends profile ID. See details on [finding this parameter](#FindingParams) below.
 
@@ -96,8 +96,8 @@ Note: For SharePoint profiles, the metric names may be a little different than w
 
 The content pack requires access to a Webtrends profile with the [correct set of reports](#Included) enabled. 
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 Your Webtrends Profile ID can be found in the URL after you've selected a profile:
 

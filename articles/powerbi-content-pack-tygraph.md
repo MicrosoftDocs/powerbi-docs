@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # tyGraph content pack for Power&nbsp;BI
@@ -28,18 +28,18 @@ Connect to the [tyGraph content pack for Power BI.](https://app.powerbi.com/getd
 
 ## How to connect
 
-1.  Select Get Data at the bottom of the left navigation pane.
+1.  Select **Get Data** at the bottom of the left navigation pane.
 
 	![](media/powerbi-content-pack-tygraph/getdata.png)
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
 	![](media/powerbi-content-pack-tygraph/services.PNG)
 
-3.  Select tyGraph \> Connect.
+3.  Select **tyGraph** \> **Get**.
 
-	![](media/powerbi-content-pack-tygraph/connect.PNG)
+	![](media/powerbi-content-pack-tygraph/tygraph.png)
 
-4.  Specify the groups and time range you'd like to connect to, otherwise specify "All" to bring in all the data. Note the date format that's expected (YYYY/MM/DD). See details on finding the parameter below.
+4.  Specify the groups and time range you'd like to connect to, otherwise specify "All" to bring in all the data. Note the date format that's expected (YYYY/MM/DD). See details on [finding the parameters](#FindingParams) below.
 
 	![](media/powerbi-content-pack-tygraph/parameters.PNG)
 
@@ -69,6 +69,7 @@ Connect to the [tyGraph content pack for Power BI.](https://app.powerbi.com/getd
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
+<a name="FindingParams"></a>
 ## Finding parameters
 
 You can bring in data on all the groups you have access to, or you can choose to specify a subset. You can also create a subset of data by date. You can create multiple tyGraph dashboards to monitor specific sets of groups and/or dates. Details on these parameters are below.

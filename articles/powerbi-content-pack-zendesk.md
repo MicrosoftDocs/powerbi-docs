@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Zendesk content pack for Power&nbsp;BI
 
@@ -25,7 +25,7 @@ The Zendesk content pack offers a Power BI dashboard and a set of Power BI repor
 
 Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/zendesk) or read more about the [Zendesk integration](https://powerbi.microsoft.com/integrations/zendesk) with Power BI. 
 
-Note: A Zendesk Admin account is required to connect. More details on requirements below.
+Note: A Zendesk Admin account is required to connect. More details on [requirements](#Requirements) below.
 
 ## How to Connect
 
@@ -37,9 +37,9 @@ Note: A Zendesk Admin account is required to connect. More details on requiremen
 
     ![](media/powerbi-content-pack-zendesk/PBI_GetServices.png) 
 
-3.  Select **Zendesk** \> **Connect.**
+3.  Select **Zendesk** \> **Get.**
 
-    ![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
+    ![](media/powerbi-content-pack-zendesk/zendesk.png)
 
 4.  Provide the URL associated with your account. This will be in the form **https://company.zendesk.com**, see details on [finding these parameters](#FindingParams) below.
 
@@ -79,12 +79,13 @@ The Power BI content pack includes data on the following:
 
 There's also a set of measures that have been calculated, such as Average Wait Time and Tickets Solved in the Last 7 days. A full list is included in the content pack. 
 
+<a name="Requirements"></a>
 ## System Requirements
 
 A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](powerbi-desktop-connect-to-data.md).
 
-## Finding parameters 
 <a name="FindingParams"></a>
+## Finding parameters 
 
 Your Zendesk URL will be the same as the URL you use to sign into your Zendesk account. If you're not sure of your Zendesk URL, you can use the Zendesk [login help](https://www.zendesk.com/login/).
 

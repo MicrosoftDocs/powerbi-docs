@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/05/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Alpine Metrics Sales Predictions content pack for Power&nbsp;BI  
@@ -32,13 +32,13 @@ Connect to the [Alpine Metrics Sales Predictions content pack](https://app.power
     
     ![](media/powerbi-content-pack-alpine-metrics/getdata.png)
 
-2. In the Services box, select Get.  
+2. In the **Services** box, select **Get**.  
     
     ![](media/powerbi-content-pack-alpine-metrics/services.png)
 
-3. Select AlpineMetrics Sales Predictions, then select Connect.  
+3. Select **AlpineMetrics Sales Predictions**, then select **Get**.  
     
-    ![](media/powerbi-content-pack-alpine-metrics/connect.png)
+    ![](media/powerbi-content-pack-alpine-metrics/alpine.png)
 
 4. Select **OAuth 2** and then **Sign In**. When prompted, provide your AlpineMetrics credentials.
 

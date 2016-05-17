@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Azure Search content pack for Power&nbsp;BI
@@ -35,9 +35,9 @@ Connect to the [Azure Search content pack](https://app.powerbi.com/getdata/servi
 
     ![](media/powerbi-content-pack-azure-search/PBI_GetServices.png) 
 
-3.  Select **Azure Search** \> **Connect**.
+3.  Select **Azure Search** \> **Get**.
 
-    ![](media/powerbi-content-pack-azure-search/connect.png)
+    ![](media/powerbi-content-pack-azure-search/azuresearch.png)
     
 4.  Provide the name of the table storage account your Azure Search analysis is stored. 
 

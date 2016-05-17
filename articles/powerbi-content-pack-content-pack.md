@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # comScore Digital Analytix content pack for Power&nbsp;BI
@@ -26,7 +26,7 @@ Visual and explore your comScore Digital Analytix data in Power BI with the Powe
 
 Connect to the [comScore content pack for Power BI.](https://app.powerbi.com/getdata/services/comscore)
 
-Note: To connect to the content pack you need a comScore DAx user account and have comScore API access. Please contact your comScore DAx admin to confirm your account.
+Note: To connect to the content pack you need a comScore DAx user account and have comScore API access. More [details](#Requirements) below.
 
 ## How to connect
 
@@ -34,14 +34,14 @@ Note: To connect to the content pack you need a comScore DAx user account and ha
 
 	![](media/powerbi-content-pack-content-pack/getdata.png)
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
 	![](media/powerbi-content-pack-content-pack/services.PNG)
-3.  Select comScore \> Connect.
+3.  Select **comScore Digital Analytix** \> **Get**.
 
-	![](media/powerbi-content-pack-content-pack/connect.PNG)
+	![](media/powerbi-content-pack-content-pack/comscore.png)
 
-4.  Provide the datacenter, comScore Client ID and Site you’d like to connect to. For more details on how to find these values, please see Finding you comScore Parameters below.
+4.  Provide the datacenter, comScore Client ID and Site you’d like to connect to. For more details on how to find these values, please see [Finding your comScore Parameters](#FindingParams) below.
 
 	![](media/powerbi-content-pack-content-pack/parameters.PNG)
 
@@ -62,10 +62,12 @@ Note: To connect to the content pack you need a comScore DAx user account and ha
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
+<a name="Requirements"></a>
 ## System requirements
 
 A comScore DAx user account and access to the comScore DAx API is required to connect. Please contact your comScore DAx admin to confirm your account.
 
+<a name="FindingParams"></a>
 ## Finding parameters
 
 Details on how to find each of your comScore parameters is below.

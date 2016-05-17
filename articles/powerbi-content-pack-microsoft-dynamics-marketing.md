@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Microsoft Dynamics Marketing content pack for Power&nbsp;BI
@@ -34,13 +34,13 @@ Note: You need to specify a valid OData URL for a Dynamics Marketing instance (
 
     ![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_GetData.png) 
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
     ![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_GetServices.png) 
 
-3.  Select **Microsoft Dynamics Marketing** \> **Connect**.
+3.  Select **Microsoft Dynamics Marketing** \> **Get**.
 
-    ![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_DynamicsMktgConnect.png)
+    ![](media/powerbi-content-pack-microsoft-dynamics-marketing/mdmarketing.png)
 
 4.  Provide the OData URL associated with your account.  This will be in the form  "https://[instance\_name].marketing.dynamics.com/analytics."
 

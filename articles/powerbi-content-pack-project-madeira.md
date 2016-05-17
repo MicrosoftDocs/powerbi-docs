@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/13/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Project "Madeira" content pack for Power&nbsp;BI  
@@ -31,14 +31,14 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
 
 ## How to connect
 
-1. Select Get Data at the bottom of the left navigation pane.  
+1. Select **Get Data** at the bottom of the left navigation pane.  
     ![](media/powerbi-content-pack-project-madeira/getdata.png)
 
-2. In the Services box, select Get.  
+2. In the **Services** box, select **Get**.  
     ![](media/powerbi-content-pack-project-madeira/services.png)
 
-3. Select Project "Madeira", then select Connect.  
-    ![](media/powerbi-content-pack-project-madeira/connect.png)
+3. Select **Project "Madeira"**, then select **Get**.  
+    ![](media/powerbi-content-pack-project-madeira/projectmadeira.png)
 
 4. When prompted, enter your Project “Madeira” URL. The URL needs to follow the following pattern exactly https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') with your Project “Madeira” company name. Note that there is no trailing slash at the end, and the connection is must be https. See details on finding this URL [below](#FindingParams).  
 

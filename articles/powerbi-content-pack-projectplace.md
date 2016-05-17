@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Projectplace by Planview content pack for Power&nbsp;BI  
@@ -38,9 +38,9 @@ Note: To import your Projectplace data into Power BI, you must be a Projectplace
 
     ![](media/powerbi-content-pack-projectplace/services.png)
 
-3. On the Power BI page, select **Projectplace by Planview**, then select **Connect**, as shown in the following image:  
+3. On the Power BI page, select **Projectplace by Planview**, then select **Get**:  
 
-	![](media/powerbi-content-pack-projectplace/getdata2.PNG)
+	![](media/powerbi-content-pack-projectplace/projectplace.png)
 
 4. In the OData Feed URL text box, enter the URL for the Projectplace OData feed you want to use, as shown in the following image:
 

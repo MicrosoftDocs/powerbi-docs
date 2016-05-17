@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/29/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Microsoft Dynamics AX content pack for Power&nbsp;BI
 
@@ -35,9 +35,9 @@ Connect to the Microsoft Dynamics AX [Retail Channel Performance](https://app.po
 
 	![](media/powerbi-content-pack-microsoft-dynamics-ax/services.PNG)
 
-3.  Select one of the Dynamics AX content packs and choose  **Connect**.
+3.  Select one of the Dynamics AX content packs and choose **Get**.
 
-	![](media/powerbi-content-pack-microsoft-dynamics-ax/connect.png)
+	![](media/powerbi-content-pack-microsoft-dynamics-ax/mdax.png)
 
 4.  Specify the URL of your Dynamics AX 7 environment. See details on [finding those parameters](#FindingParams) below.
 

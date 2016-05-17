@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Marketo content pack for Power&nbsp;BI
@@ -36,9 +36,9 @@ Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/m
 
     ![](media/powerbi-content-pack-marketo/PBI_GetServices.png) 
 
-3.  Select Marketo \> Connect.
+3.  Select **Marketo** \> **Get**.
 
-    ![](media/powerbi-content-pack-marketo/PBI_GetMarketoDescriptn.png)
+    ![](media/powerbi-content-pack-marketo/marketo.png)
 
 4.  Enter the Marketo REST endpoint supplied to you by Marketo or your Marketo admin, and select Next.
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # UserVoice content pack for Power&nbsp;BI
@@ -38,9 +38,9 @@ Note: An admin account is required to connect to the Power BI content pack. The 
 
 	![](media/powerbi-content-pack-uservoice/PBI_GetServices.png) 
 
-3.  Select **UserVoice**, then select **Connect**.
+3.  Select **UserVoice**, then select **Get**.
 
-	![](media/powerbi-content-pack-uservoice/Capture1.PNG)
+	![](media/powerbi-content-pack-uservoice/uservoice.png)
 
 4.  When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name. 
 

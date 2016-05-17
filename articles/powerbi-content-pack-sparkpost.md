@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # SparkPost content pack for Power&nbsp;BI
@@ -36,9 +36,9 @@ Connect to the [SparkPost content pack for Power BI](https://app.powerbi.com/get
 
 	![](media/powerbi-content-pack-sparkpost/services.PNG)
 
-3.  Select the **SparkPost** content pack and click **Connect**. 
+3.  Select the **SparkPost** content pack and click **Get**. 
 
-	![](media/powerbi-content-pack-sparkpost/getdata-1.PNG)
+	![](media/powerbi-content-pack-sparkpost/sparkpost.png)
 
 4.  When prompted, provide your SparkPost API key and select Sign In. See details on [finding this parameters](#FindingParams) below.
 
@@ -62,8 +62,8 @@ Connect to the [SparkPost content pack for Power BI](https://app.powerbi.com/get
 
 The SparkPost content pack for Power BI includes information including unique clicks, accepted rates, bounce rates, delayed rates, rejection rates and more.
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 The content pack uses an API key to connect your SparkPost account to Power BI. You can find your API key in your account under Account \> API & SMTP (more details [here](https://support.sparkpost.com/customer/portal/articles/1933377-create-api-keys)). We suggest using an API key with permissions for `Message Events: Read-only `and `Metrics: Read-only`
 

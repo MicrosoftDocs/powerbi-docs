@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Mandrill content pack for Power&nbsp;BI
@@ -36,13 +36,11 @@ Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getd
 
 	![](media/powerbi-content-pack-mandrill/Services.PNG)
 
-3. Select **Mandrill** > **Connect**.
+3. Select **Mandrill** > **Get**.
 
-	![](media/powerbi-content-pack-mandrill/connect.PNG)
+	![](media/powerbi-content-pack-mandrill/mandrill.png)
 
-4. For **Authentication Method**, select **Key** and provide your API key. You can find the key on the **Settings** tab of the Mandrill dashboard. 
-
-5. Select **Sign In** to begin the import process, which can take a few minutes depending on the volume of data in your account.
+4. For **Authentication Method**, select **Key** and provide your API key. You can find the key on the **Settings** tab of the Mandrill dashboard. Select **Sign In** to begin the import process, which can take a few minutes depending on the volume of data in your account.
 
 	![](media/powerbi-content-pack-mandrill/auth.PNG)
 

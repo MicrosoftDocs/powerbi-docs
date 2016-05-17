@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Project Online content pack for Power BI
 
@@ -35,9 +35,9 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 
 	![](media/powerbi-content-pack-project-online/services.png)
 
-3.  Select **Microsoft Project Online** \> **Connect**. 
+3.  Select **Microsoft Project Online** \> **Get**. 
 
-	![](media/powerbi-content-pack-project-online/connect.png)
+	![](media/powerbi-content-pack-project-online/mproject.png)
 
 4. In the **Project Web App URL** text box, enter the URL for the Project Web Add (PWA) you want to connect to and hit **Next**. Note this may differ from the example if you have a custom domain.
 

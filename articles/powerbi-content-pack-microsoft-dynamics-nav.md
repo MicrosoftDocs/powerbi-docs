@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Microsoft Dynamics NAV content pack for Power&nbsp;BI  
@@ -33,11 +33,11 @@ Note: this content pack requires permissions to the tables where data is retriev
 1. Select Get Data at the bottom of the left navigation pane.  
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/getdata.png)
 
-2. In the Services box, select Get.  
+2. In the **Services** box, select **Get**.  
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/services.PNG)
 
-3. Select Microsoft Dynamics NAV, then select Connect.  
-![](media/powerbi-content-pack-microsoft-dynamics-nav/getdata1.PNG)
+3. Select **Microsoft Dynamics NAV**, then select **Get**.  
+![](media/powerbi-content-pack-microsoft-dynamics-nav/mdnav.png)
 
 4. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern: 
 

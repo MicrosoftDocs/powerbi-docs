@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # GitHub content pack for Power BI
 
@@ -37,9 +37,9 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 
     ![](media/powerbi-content-pack-github/pbi_get_services.png) 
 
-3.  Select GitHub \> **Connect**.
+3.  Select **GitHub** \> **Get**.
 
-    ![](media/powerbi-content-pack-github/PB_GithubConnect.png)
+    ![](media/powerbi-content-pack-github/github.png)
 
 4.  Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
 
@@ -96,9 +96,8 @@ The following data is available from GitHub in Power BI:     
 
 To de-authorize Power BI from being connected to your GitHub repo you can Revoke access in GitHub. For more details see this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic.
 
-
-## Finding parameters  
 <a name="FindingParams"></a>
+## Finding parameters  
 
 You can determine the owner and repository by looking at the repository in GitHub itself:
 

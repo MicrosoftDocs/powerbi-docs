@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Google Analytics content pack for Power&nbsp;BI
@@ -38,9 +38,9 @@ In addition to this content pack, customized dashboards and reports can also be 
 
     ![](media/powerbi-content-pack-google-analytics/PBI_GetServices.png) 
 
-3.  Select **Google Analytics** \> **Connect**.
+3.  Select **Google Analytics** \> **Get**.
 
-    ![](media/powerbi-content-pack-google-analytics/PBI_GoogleAnalyticsConnect.png)
+    ![](media/powerbi-content-pack-google-analytics/ga.png)
 
 4.  When prompted, enter your Google Analytics credentials. Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Google authentication flow, which may include 2-factor authentication if you have it configured.
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # MailChimp content pack for Power&nbsp;BI
@@ -36,9 +36,9 @@ Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services
 
 	![](media/powerbi-content-pack-mailchimp/PBI_GetServices.png)
 
-3.  Select **MailChimp** \> **Connect**.
+3.  Select **MailChimp** \> **Get**.
 
-	![](media/powerbi-content-pack-mailchimp/PBI_MailChimpConnect.png)
+	![](media/powerbi-content-pack-mailchimp/mailchimp.png)
 
 4. For Authentication Method, select **oAuth2** \> **Sign In**.
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Bing content pack for Power&nbsp;BI
 
@@ -35,9 +35,9 @@ Notes: Bing tiles will automatically update approximately every ~5 minutes and t
 
     ![](media/powerbi-content-pack-bing/services.png)
 
-3. Select **Bing** > **Connect**.
+3. Select **Bing** > **Get**.
 
-    ![](media/powerbi-content-pack-bing/connect.png)
+    ![](media/powerbi-content-pack-bing/bing.png)
 
 4. In the parameters dialog, enter the search term you want to track and hit Add.
 
