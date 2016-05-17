@@ -14,24 +14,26 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2016"
+   ms.date="05/17/2016"
    ms.author="derrickv"/>
 
 # Step 2: Get a Power BI dashboard
 
-In this step of the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md), you use the Power BI API to get a dashboard. After you get a dashboard, you can get a **Power BI** tile.
+## Introduction
+
+In this step of the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md), you use the **Power BI** API to get a dashboard. After you get a dashboard, you can get a **Power BI** tile.
 
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-get-dashboard.png)
 
 To get a **Power BI** dashboard, you use the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation which gets a list of **Power BI** dashboards. From the list of dashboards, you can get a dashboard id. Once you have a dashboard id, you can get a **Power BI** tile.
 
-Before you can call the [Get Dashboards]() operation, or any other **Power BI** operation, you need to get an Azure Active Directory **authentication access token (access token)**. An **access token** is used to allow your app access to certain **Power BI** resources, such as dashboards and tiles. Here is how you get an **access token** in a web app. To learn more about the Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx).
+Before you can call the [Get Dashboards]() operation, or any other **Power BI** operation, you need to get an Azure Active Directory **authentication access token** (access token). An **access token** is used to allow your app access to certain **Power BI** resources, such as dashboards and tiles. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx). The next section shows you how to get an **access token** in a web app.
 
 <a name="get-token"/>
 ## Get an authentication access token
 
-Here's how to get an authentication access token to call a Power BI operation.
+Here's how to get an authentication access token to call a **Power BI** operation.
 
 -	**Step 1:** [Get an authorization code from Azure AD](#auth-code)
 -	**Step 2:** [Get an access token from authorization code](#access-token)
@@ -41,6 +43,8 @@ Here's how to get an authentication access token to call a Power BI operation.
 
 The first step to get an **access token** is to get an authorization code from **Azure AD**. To do this, you construct a query string with the following properties, and redirect to **Azure AD**.
 
+
+**Authorization code query string**
 ```
 var @params = new NameValueCollection
 {
@@ -49,22 +53,24 @@ var @params = new NameValueCollection
 
     //Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
     //You get the client id when you register your Azure app.
-    {"client_id", clientId},
+    {"client_id", Settings.Default.ClientID},
 
     //Resource uri to the Power BI resource to be authorized
-    {"resource", Properties.Settings.Default.PowerBIAPI_Resource},
+    //The resource uri is hard-coded for sample purposes
+    {"resource", "https://analysis.windows.net/powerbi/api"},
 
     //After app authenticates, Azure AD will redirect back to the web app. In this sample, Azure AD redirects back
-    //to Default. See Page_Load
-    {"redirect_uri", redirectUri}
+    //to Default page (Default.aspx).
+    { "redirect_uri", Settings.Default.RedirectUri}
 };
 ```
 After you construct a query string, you redirect to **Azure AD** to get an **authorization code**.  Below is a complete C# method to construct an **authorization code** query string, and redirect to **Azure AD**. In the next step, you get an **access token** using the **authorization code**.
 
 ** Get authorization code**
 ```
-public void GetAuthorizationCode(string clientId, string redirectUri)
+public void GetAuthorizationCode()
 {
+    //NOTE: Values are hard-coded for sample purposes.
     //Create a query string
     //Create a sign-in NameValueCollection for query string
     var @params = new NameValueCollection
@@ -74,14 +80,15 @@ public void GetAuthorizationCode(string clientId, string redirectUri)
 
         //Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
         //You get the client id when you register your Azure app.
-        {"client_id", clientId},
+        {"client_id", Settings.Default.ClientID},
 
         //Resource uri to the Power BI resource to be authorized
-        {"resource", Properties.Settings.Default.PowerBIAPI_Resource},
+        //The resource uri is hard-coded for sample purposes
+        {"resource", "https://analysis.windows.net/powerbi/api"},
 
         //After app authenticates, Azure AD will redirect back to the web app. In this sample, Azure AD redirects back
-        //to Default. See Page_Load
-        {"redirect_uri", redirectUri}
+        //to Default page (Default.aspx).
+        { "redirect_uri", Settings.Default.RedirectUri}
     };
 
     //Create sign-in query string
@@ -91,13 +98,13 @@ public void GetAuthorizationCode(string clientId, string redirectUri)
     //Redirect to Azure AD Authority
     //  Authority Uri is an Azure resource that takes a client id and client secret to get an Access token
     //  QueryString contains
+    //      response_type of "code"
     //      client_id that identifies your app in Azure AD
     //      resource which is the Power BI API resource to be authorized
-    //      redirect_uri which is the url that Azure AD will redirect back to after it authenticates
-    Response.Redirect(
-        String.Format("{0}?{1}",
-        Properties.Settings.Default.AuthorityUri,
-        queryString));
+    //      redirect_uri which is the uri that Azure AD will redirect back to after it authenticates
+
+    //Redirect to Azure AD to get an authorization code
+    Response.Redirect(String.Format("https://login.windows.net/common/oauth2/authorize?{0}", queryString));
 }
 ```
 
@@ -115,17 +122,18 @@ public string GetAccessToken(string authorizationCode, string clientID, string c
     //Note: If you use a redirect back to Default, as in this sample, you need to add a forward slash
     //such as http://localhost:13526/
 
-    // Get auth token from auth code
+    // Get auth token from auth code       
     TokenCache TC = new TokenCache();
 
-    AuthenticationContext AC = new AuthenticationContext(Settings.Default.AuthorityUri, TC);
+    //Values are hard-coded for sample purposes
+    string authority = "https://login.windows.net/common/oauth2/authorize";
+    AuthenticationContext AC = new AuthenticationContext(authority, TC);
     ClientCredential cc = new ClientCredential(clientID, clientSecret);
 
     //Set token from authentication result
     return AC.AcquireTokenByAuthorizationCode(
         authorizationCode,
-        new Uri(redirectUri), cc)
-        .AccessToken;
+        new Uri(redirectUri), cc).AccessToken;
 }
 ```
 

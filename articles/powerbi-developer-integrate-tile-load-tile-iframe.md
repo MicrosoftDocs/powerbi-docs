@@ -14,7 +14,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2016"
+   ms.date="05/17/2016"
    ms.author="derrickv"/>
 
 # Step 4: Load a Power BI tile into an IFrame
@@ -23,7 +23,7 @@ In **step 3** of Integrate a tile into an app, [Get a Power BI tile](powerbi-dev
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-load-tile-iframe.png)
 
-To load a tile into an **IFrame**, you set the **src** attribute of an **IFrame** to the **embedUrl** property of a **tile**, and create an **onload** handler to submit an access token to **Azure AD**.  Below is JavaScript code to load a tile into an **IFrame**.
+To load a tile into an **IFrame**, you set the **src** attribute of an **IFrame** to the **embedUrl** property of a **tile**, and create an **onload** handler to post a message with an **access token** to get access to the tile visual. Below is JavaScript code to load a tile into an **IFrame**.
 
 **Load a tile into an IFrame**
 
@@ -60,8 +60,13 @@ function postActionLoadTile() {
     document.getElementById('iFrameEmbedTile').contentWindow.postMessage(message, "*");;
 }
 ```
+
+If you downloaded and ran the [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app), the sample will look similar to below.
+
+![](media\powerbi-developer-integrate-tile\integrate-tile-sample.png)
+
 ## Conclusion
-In this walkthrough you learn how to integrate a tile into an app by getting the tile in a dashboard, and then loading the tile into an **IFrame**. You can download the complete [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app) sample which shows all the parts working to embed a tile into an ASP.NET web app. You can also view the complete [Integrate a tile into an app code listing](powerbi-developer-integrate-tile-code.md).
+In this walkthrough you learned how to integrate a tile into an app by getting the tile in a dashboard, and then loading the tile into an **IFrame**. You can download the complete [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  which shows all the parts working to embed a tile into an ASP.NET web app. You can also view the complete [Integrate a tile into an app code listing](powerbi-developer-integrate-tile-code.md).
 
 ## See also
 -	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)

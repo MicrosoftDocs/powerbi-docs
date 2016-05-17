@@ -15,7 +15,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2016"
+   ms.date="05/17/2016"
    ms.author="derrickv"/>
 
 # Step 3: Get a Power BI tile
@@ -24,17 +24,17 @@ In **step 2** of Integrate a tile into an app, [Get a Power BI dashboard](powerb
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-get-tile.png)
 
-To get a **Power BI** tile, or any other Power BI resource, you need an authentication **access token**. To learn how to get an **access token**, see [Get an authentication access token](#get-token). You use an access token to authenticate to **Azure AD** to gain access to **Power BI** tiles, or other resource.
+To get a **Power BI** tile, or any other Power BI resource, you need an authentication **access token**. To learn how to get an **access token**, see [Get an authentication access token](#get-token) in Step 2: Get a Power BI dashboard. You use an **access token** to authenticate to **Azure AD** to gain access to **Power BI** tiles, or other resource.
 
 Here are the steps to get a Power BI tile.
 
-- **Step 1: ** Get an authorization code from Azure AD. See [Get an authorization code from Azure AD](#auth-code).
-- **Step 2: ** Get an access token. See [Get an access token from authorization code](#access-token).
+- **Step 1: ** Get an authorization code from Azure AD. See [Get an authorization code from Azure AD](#auth-code) in Step 2: Get a Power BI dashboard.
+- **Step 2: ** Get an access token. See [Get an access token from authorization code](#access-token) Step 2: Get a Power BI dashboard.
 - **Step 3:** [Get a Power BI tile](#get-tile)
 
 <a name="get-tile"/>
-## Get a Power BI tile
-In step 2 of the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md), you get an **access token** to get a dashboard. You can use this **access token** to get a tile. You get a tile with the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx)  operation which returns a list of tiles in a **dashboard**. Below is a C# method to get a tile. Once you have a **tile**, you can load the tile into an **IFrame**. See [Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md).
+## Get a Power BI tile using access token
+In step 2 of the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md), you get an **access token** to get a dashboard. You can use this **access token** to also get a tile. You get a tile with the [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx)  operation which returns a list of tiles in a **dashboard**. Below is a C# method to get a tile. Once you have a **tile**, you can load the tile into an **IFrame**. See [Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md).
 
 **Get tile**
 ```

@@ -14,18 +14,21 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2016"
+   ms.date="05/17/2016"
    ms.author="derrickv"/>
 
 # Integrate a tile into an app code listing
 
+## Introduction
+
 In the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md) you learn how to embed a **tile** using an **IFrame**. You can download the complete [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app) which shows all the parts to embed a tile. Below is the complete source code for **Default.aspx**.
 
--	[Default.aspx – JavaScript to load a tile into an IFrame](#default-aspx)
--	[Default.aspx.cs – C# code to get access token, get dashboard, and get tile](default-code)
+**Sample Source Code**
+- [Sample JavaScript to load a tile into an IFrame (Default.aspx)](#default-aspx)
+- [Sample C# code to get access token, get dashboard, and get tile (Default.aspx.cs)](default-code)
 
 <a name="default-aspx"/>
-## Default.aspx – JavaScript to load a tile into an IFrame
+## Sample JavaScript to load a tile into an IFrame (Default.aspx)
 ```
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <script type="text/javascript">
@@ -73,7 +76,7 @@ In the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-ti
 ```
 
 <a name="default-code"/>
-## Default.aspx.cs – C# code to get access token, get dashboard, and get tile
+## Sample C# code to get access token, get dashboard, and get tile (Default.aspx.cs)
 ```
 public partial class _Default : Page
 {

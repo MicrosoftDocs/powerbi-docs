@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2016"
+   ms.date="05/17/2016"
    ms.author="derrickv"/>
 
 # Integrate a tile into an app walkthrough
@@ -26,7 +26,7 @@ In this walkthrough, you integrate, or embed, a tile into a web app using C# and
 
 >**NOTE**: To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, see [Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md).
 
-To integrate a tile into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard and tile. Then, you load the tile into an **IFrame** using the same access token. The illustration below shows the general flow to integrate a tile.
+To integrate a tile into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard and tile. Then, you load the tile into an **IFrame** using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. See [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx). The illustration below shows the general flow to integrate a tile.
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-flow.png)
 
