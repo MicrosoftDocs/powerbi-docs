@@ -103,6 +103,8 @@ You can also map your Power BI sign in name with a local directory UPN. [Learn m
 
 ## Map user names
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
+
 For Analysis Services data sources, you can configure custom User Principal Name (UPN) rules. This will help you if your Power BI service login names do not match your local directory UPN. For example, if you sign into Power BI with john@contoso.com, but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
 
 To get to the UPN Mapping screen, do the following.
@@ -124,8 +126,6 @@ You will then see options to add rules as well as test for a given user.
 Currently you can only supply rules for **Effective user names**.
 
 ### Working with mapping rules
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
 To create a mapping rule, enter a value for **Original name** and **New Name** and then select **Add**.
 
