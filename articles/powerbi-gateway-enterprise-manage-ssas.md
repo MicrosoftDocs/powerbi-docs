@@ -125,6 +125,8 @@ Currently you can only supply rules for **Effective user names**.
 
 ### Working with mapping rules
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
+
 To create a mapping rule, enter a value for **Original name** and **New Name** and then select **Add**.
 
 |Field|Description
