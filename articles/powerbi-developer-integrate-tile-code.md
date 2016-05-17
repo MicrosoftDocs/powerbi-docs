@@ -21,7 +21,7 @@
 
 ## Introduction
 
-In the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md) you learn how to embed a **tile** using an **IFrame**. You can download the complete [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app) which shows all the parts to embed a tile. Below is the complete source code for **Default.aspx**.
+In the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md) you learn how to embed a **tile** using an **IFrame**. You can download the complete [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app) which shows all the parts to embed a tile. Alternatively, you can view the essential source code below. Please note this is only the essential source code, not an entire web project.
 
 **Sample Source Code**
 
