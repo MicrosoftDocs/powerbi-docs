@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Admin portal"
-   description="Tenant management of Power BI in your organization"
+   description="The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -16,13 +16,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2016"
+   ms.date="05/17/2016"
    ms.author="amac"/>
 # Power BI admin portal
 
 Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365. 
 
-# How to get to the admin portal
+## How to get to the admin portal
 
 If you are a Global Admin, you will see the option, for the admin portal, under the Settings gear on the top right of the Power BI service.
 
