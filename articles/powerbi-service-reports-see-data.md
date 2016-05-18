@@ -1,6 +1,6 @@
-﻿<properties
-   pageTitle="Drill down in a visualization in Power BI"
-   description="This document shows how to drill down in a visualization in Microsoft Power BI service and Power BI Desktop."
+<properties
+   pageTitle="reveal the data used to create the visual"
+   description="This document shows how to view the data and individual records used to create a visual in Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
