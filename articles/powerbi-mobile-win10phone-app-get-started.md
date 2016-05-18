@@ -51,7 +51,9 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) 
 
     ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_AppIconSm.png)
 
-3.  In the Power BI app, tap **Sign in**. Sign in with the same credentials as your Power BI account on the web.
+3.  In the Power BI app, tap **Sign in**. Sign in with the same credentials as your Power BI account on the web. 
+   -  To view your Power BI dashboards, tap Power BI.
+   -  To view your Reporting Services mobile reports and KPIs, tap Reporting Services.
 4.  Tap **Start exploring**  to view your own dashboards.
 
 ## Search for dashboards, reports, and groups
@@ -73,8 +75,9 @@ Find your dashboards, reports, and groups quickly by typing in the search box, a
 
 ## What next?
 
-See what else you can do in the Power BI app for Windows 10 devices.
+See what else you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
 
+### Power BI dashboards
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
 -   [Pin Power BI tiles and dashboards](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen as live tiles.
@@ -83,6 +86,12 @@ See what else you can do in the Power BI app for Windows 10 devices.
 -   [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md).
 -   View your [groups' dashboards and reports](powerbi-mobile-groups-in-the-win10phone-app.md).
+
+### Reporting Services mobile reports and KPIs
+
+- [View Reporting Services mobile reports and KPIs](powerbi-mobile-win10-kpis-mobile-reports.md) in the Power BI app for Windows 10 devices.
+- Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
+- [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 ### See also
 

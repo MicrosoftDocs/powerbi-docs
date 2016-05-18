@@ -26,7 +26,7 @@ The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access 
 
 ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_iph_ssmrp_tallhomeblc.png)
 
-[Create SQL Server mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with the SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
+[Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with the SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
 Then in the Power BI mobile app for Windows 10, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
@@ -34,18 +34,18 @@ Then in the Power BI mobile app for Windows 10, view the mobile reports and KPIs
 
 ## Explore samples without an SSRS server
 
-Even if you don't have access to a Reporting Services web portal, you can still explore the features of SQL Server mobile reports. 
+Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports. 
 
 -  Tap the options icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, scroll down and tap SQL Server RS Samples.
 
 Browse the samples to interact with KPIs and mobile reports.
 
 
-## Connect to a server to view SQL Server mobile reports 
+## Connect to a server to view Reporting Services mobile reports 
 
 1.  In your Windows 10 device, open the Power BI app.
   
-2.  To view your SQL Server mobile reports and KPIs, tap **Reporting Services**.
+2.  To view your Reporting Services mobile reports and KPIs, tap **Reporting Services**.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_ipad_getstarted.png)
 
