@@ -67,7 +67,7 @@ var @params = new NameValueCollection
 
 After you construct a query string, you redirect to **Azure AD** to get an **authorization code**.  Below is a complete C# method to construct an **authorization code** query string, and redirect to **Azure AD**. In the next step, you get an **access token** using the **authorization code**.
 
-** Get authorization code**
+**Get authorization code**
 
 ```
 public void GetAuthorizationCode()
