@@ -44,6 +44,7 @@ The first step to get an **access token** is to get an authorization code from *
 
 
 **Authorization code query string**
+
 ```
 var @params = new NameValueCollection
 {
@@ -63,9 +64,11 @@ var @params = new NameValueCollection
     { "redirect_uri", Settings.Default.RedirectUri}
 };
 ```
+
 After you construct a query string, you redirect to **Azure AD** to get an **authorization code**.  Below is a complete C# method to construct an **authorization code** query string, and redirect to **Azure AD**. In the next step, you get an **access token** using the **authorization code**.
 
 ** Get authorization code**
+
 ```
 public void GetAuthorizationCode()
 {
@@ -141,6 +144,7 @@ public string GetAccessToken(string authorizationCode, string clientID, string c
 Now that you have an **access token**, you can call the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation. The [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation returns a list of dashboards. You can get a dashboard from the list of dashboards. Below is a complete C# method to get a dashboard. Once you have a **dashboard**, you can get a **tile**. See [Step 3: Get a Power BI tile]( powerbi-developer-integrate-tile-get-tile.md).
 
 **Get dashboard**
+
 ```
 //Get a dashbaord id. In this sample, you get the first tile.
 protected string GetDashboard(int index)
