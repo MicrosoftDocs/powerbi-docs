@@ -19,6 +19,8 @@
 
 # Step 4: Load a Power BI tile into an IFrame
 
+## Introduction
+
 In **step 3** of Integrate a tile into an app, [Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md), you get a Power BI tile. In this step, you load a tile into an **IFrame**.
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-load-tile-iframe.png)

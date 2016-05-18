@@ -22,6 +22,8 @@
 
 # Integrate a tile into an app walkthrough
 
+## Introduction
+
 In this walkthrough, you integrate, or embed, a tile into a web app using C# and the **Power BI** API, some JavaScript code, and an IFrame.
 
 >**NOTE**: To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, see [Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md).

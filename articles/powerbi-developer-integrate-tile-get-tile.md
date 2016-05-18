@@ -20,11 +20,13 @@
 
 # Step 3: Get a Power BI tile
 
+## Introduction
+
 In **step 2** of Integrate a tile into an app, [Get a Power BI dashboard](powerbi-developer-integrate-tile-get-dashboard.md), you get a Power BI dashboard. In this step, you get a **Power BI** tile from a dashboard.
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-get-tile.png)
 
-To get a **Power BI** tile, or any other Power BI resource, you need an authentication **access token**. To learn how to get an **access token**, see [Get an authentication access token](#get-token) in Step 2: Get a Power BI dashboard. You use an **access token** to authenticate to **Azure AD** to gain access to **Power BI** tiles, or other resource.
+To get a **Power BI** tile you need an authentication **access token**. To learn how to get an **access token**, see [Get an authentication access token](#get-token) in Step 2: Get a Power BI dashboard. You use an **access token** to authenticate to **Azure AD** to gain access to **Power BI** tiles.
 
 Here are the steps to get a Power BI tile.
 

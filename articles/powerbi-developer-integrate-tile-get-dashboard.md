@@ -23,7 +23,6 @@
 
 In this step of the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md), you use the **Power BI** API to get a dashboard. After you get a dashboard, you can get a **Power BI** tile.
 
-
 ![](media\powerbi-developer-integrate-tile\integrate-tile-get-dashboard.png)
 
 To get a **Power BI** dashboard, you use the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation which gets a list of **Power BI** dashboards. From the list of dashboards, you can get a dashboard id. Once you have a dashboard id, you can get a **Power BI** tile.
