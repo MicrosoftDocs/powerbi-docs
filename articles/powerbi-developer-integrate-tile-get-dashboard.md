@@ -38,7 +38,7 @@ Here's how to get an authentication access token to call a **Power BI** operatio
 -	**Step 2:** [Get an access token from authorization code](#access-token)
 
 <a name="auth-code"/>
-**Step 1:** Get an authorization code from Azure AD
+### Step 1: Get an authorization code from Azure AD
 
 The first step to get an **access token** is to get an authorization code from **Azure AD**. To do this, you construct a query string with the following properties, and redirect to **Azure AD**.
 
@@ -111,7 +111,7 @@ public void GetAuthorizationCode()
 ```
 
 <a name="access-token"/>
-**Step 2:** Get an access token from authorization code
+### Step 2: Get an access token from authorization code
 
 In step 1 to get an authentication access token, you get an **authorization code** from Azure AD. Once **Azure AD** redirects back to your web app with an **authorization code**, you use the **authorization code** to get an access token. Below is a C# method to get an **access token**. In the next section, you get a **dashboard** using an **access token**.
 
