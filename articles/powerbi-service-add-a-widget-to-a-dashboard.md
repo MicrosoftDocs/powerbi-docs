@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="05/18/2016"
    ms.author="mihart"/>
 
 # Add a tile directly from the dashboard itself
@@ -64,8 +64,7 @@ Say you want your company logo on your dashboard, or some other image.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-text.png)
 
-
->**NOTE**: To add a dashboard heading, type your heading in the text box and increase the font.
+    >**NOTE**: To add a dashboard heading, type your heading in the text box and increase the font.
 
 2. To add a regular textbox:
 

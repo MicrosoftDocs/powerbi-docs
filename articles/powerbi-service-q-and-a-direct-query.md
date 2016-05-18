@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="05/18/2016"
    ms.author="mihart"/>
 
 
@@ -46,20 +46,19 @@ For more information, see:
 
 
 ##  Enable Q&A
-
 Once you have the enterprise gateway set up, connect to your data from Power BI.  Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data.  You may also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
 
 1.  In the upper-right corner of Power BI, select the cog icon ![](media/powerbi-service-q-and-a-direct-query/power-bi-cog.png) and choose **Settings**.
 
-  ![](media/powerbi-service-q-and-a-direct-query/powerbi-settings.png)
+    ![](media/powerbi-service-q-and-a-direct-query/powerbi-settings.png)
 
 2.  Select **datasets** and choose the dataset to enable for Q&A.
 
-  ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
+    ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
 
 3. Expand **Q&A and Cortana**, select the checkbox for **Turn on Q&A for this dataset** and choose **Apply**.
 
-  ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+    ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 
 

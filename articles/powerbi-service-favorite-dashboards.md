@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="05/18/2016"
    ms.author="mihart"/>
 
 # Favorite dashboards in Power BI
@@ -32,11 +32,11 @@ Access a few select dashboards that are most important to you. **Favorite** dash
 
 2.  From the top-right corner, select **Favorite**.
 
-  ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-favorite.png)
+    ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-favorite.png)
 
 3. To see all the dashboards that you have added as favorites, in the left navpane, select **Favorites**.
 
-  ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-select-favorite-full.png)
+    ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-select-favorite-full.png)
 
   From here you can select a dashboard to open it, or share a dashboard with colleagues.
 
