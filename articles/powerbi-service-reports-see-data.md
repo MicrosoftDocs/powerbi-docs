@@ -1,4 +1,4 @@
-<properties
+git <properties
    pageTitle="reveal the data used to create the visual"
    description="This document shows how to view the data and individual records used to create a visual in Power BI."
    services="powerbi"
@@ -20,38 +20,34 @@
    ms.date="05/17/2016"
    ms.author="mihart"/>
 
-# Drill down in a visualization in Power BI
+# Reveal the data behind the visual
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
-  
-  >**NOTE**: To learn how to create hierarchies using Power BI Desktop, watch the video [How to create and add hierarchies](https://youtu.be/q8WDUAiTGeU)
+A Power BI visual is contructed using data from your datasets. If you're interested in seeing the behind-the-scenes data, Power BI lets you see both:
+
+-   the data that is being used to create the visual, and
+
+-   the actual records (rows) that are being aggregated to create the visual. 
 
 
-1.  In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). Drill requires a visualization with a hierarchy. 
+1.  In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md), and select a visual.  
 
-    A hierarchy is from the Financial sample is shown below.  The *Profit by Product *visualization has a hierarchy made up of **Product **and **Segment**; each product has one or more segments. By default, the visualization displays only the product data, because *Product *appears in the Axis bucket above *Segment*.
-    
-    ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-menu.png)
+2.  To see the data behind the visual, select **Explore** > **See data**. The yellow bar next to **See data** let's you know it's enabled.  
 
-2.  To enable drill down, select **Explore** > **Drill Down**. The yellow bar next to **Drill Down** let's you know it's enabled.  
+    ![](media/powerbi-service-reports-see-data/power-bi-see-data.png)
 
-    ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-enable-drill.png)
+3.  By default, the data displays below the visual.  To change this, in the top right corner of the visual, select the **Switch to vertical layout** icon ![](media/powerbi-service-reports-see-data/power-bi-vertical-icon.png).
 
-3.  Once enabled, drill down one field at a time by double-clicking one of the chart bars. In this example, I've double-clicked the product named **Velo** to see profit for Velo by Segment.
+    ![](media/powerbi-service-reports-see-data/power-bi-explore-see-data.png)
 
-    ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drilldown.png)
+4.  To hide the data, either de-select **Explore** > **See data** or select the **Hide data** icon ![](media/powerbi-service-reports-see-data/power-bi-hide-data-icon.png) from the top right corner of the visual. 
 
-4.  To drill down all fields at once, select **Expand all**. 
+5.  **See records** doesn't work on all visual types and will appear greyed out. For those visuals that support it, select **Explore** > **See records**.
 
-    ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-expand-all.png)
-
-5.  To drill back up, select **Drill Up**.
-
-    ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-up.png)
+    ![](media/powerbi-service-reports-see-data/power-bi-explore-see-data.png)
     
 6.  To see the data being used to create the visual, select **See data**. The data is displayed in a pane below the visual. This pane remains as you continue drilling through the visual. 
 
-    ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-see-data.png)
+    ![](media/powerbi-service-reports-see-data/power-bi-explore-see-data.png)
 
 
 ### See also
