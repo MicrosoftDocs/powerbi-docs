@@ -38,7 +38,7 @@ Here are the steps to integrate, or embed, a tile into a web page.
 
 ## Steps to integrate a tile into an app
 
-- [Step 1: Register a web app with Azure AD](powerbi-developer-integrate-tile-register.md). You need to register your web app with **Azure Active Directory (AD)** so that Azure AD can identify your application when you need to access certain **Power BI** resources.
+- [Step 1: Register a web app with Azure AD](powerbi-developer-integrate-tile-register.md). You need to register your web app with **Azure Active Directory (AD)** so that Azure AD can identify your application when you need to access **Power BI** tiles.
 - [Step 2: Get a Power BI dashboard](powerbi-developer-integrate-tile-get-dashboard.md)
 - [Step 3: Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md)
 - [Step 4: Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)
