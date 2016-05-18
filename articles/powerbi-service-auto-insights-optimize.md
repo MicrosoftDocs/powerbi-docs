@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/29/2016"
+   ms.date="05/17/2016"
    ms.author="mihart"/>
 
 # Optimize your data for Power BI Quick Insights
-Want to improve Quick Insights results?  Try these:
+Want to improve Quick Insights results?  If you are a datasest owner, try these:
 
 - Hide or unhide columns in your dataset. Power BI Auto Insights doesn't search hidden columns.  So hide duplicate or unnecessary columns and unhide interesting columns.
 

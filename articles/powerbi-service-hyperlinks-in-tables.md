@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="identified"
    qualityDate=""/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2016"
+   ms.date="05/17/2016"
    ms.author="mihart"/>
 # Hyperlinks in tables
 
