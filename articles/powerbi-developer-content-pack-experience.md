@@ -1,6 +1,6 @@
 <properties 
    pageTitle="ISV Content Pack Experiences"
-   description= "ISV Content Pack Experiences"
+   description="ISV Content Pack Experiences"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
