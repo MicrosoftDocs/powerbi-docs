@@ -21,33 +21,33 @@
    ms.author="tpalmer"/>
 
 # ISV Content Pack Experiences 
-This section highlights a typical experience for a user connecting to an ISV content pack. Connect to a released content pack yourself at https://app.powerbi.com/getdata/services 
+This section highlights a typical experience for a user connecting to an ISV [content pack](powerbi-content-packs-services.md). Connect to a released content pack yourself at https://app.powerbi.com/getdata/services (such as the [GitHub content pack](https://app.powerbi.com/getdata/services/github) described below).
 
 ## Connect
-The content pack provides a name, an icon and a descriptive text.
+To get started, a user browsers the content pack gallery and selects a content pack to connect to. The content pack entry provides a name, an icon and a descriptive text providing more information to the user.
 
 ![connect](media/powerbi-developer-content-pack/github_data.png)
 
 ![connect](media/powerbi-developer-content-pack/github_connect.png)
 
 ## Parameters
-The parameters dialog is provided declaratively during the packaging of your content pack.
+Once selected, the user will be prompted to provide parameters (if requried). The parameters dialog is provided declaratively by the author during the creation of the content pack.
 
 Current the parameters UI is very basic – there is no way to enumerate drop down lists and data input validation is constrained to regex.
 
 ![parameters](media/powerbi-developer-content-pack/github_params.png)
 
 ## Credentials
-If login is required, a login window will be generated.  If your service requires OAuth, then your service’s login UI will pop up when the user presses Sign In.  Otherwise, the user can enter their credentials in the provided dialog.
+After parameters, the user will be prompted to login.  If the source supports multiple types of authentication, the user will choose the appropriate option. If the source requires OAuth, then the service’s login UI will pop up when the user presses Sign In.  Otherwise, the user can enter their credentials in the provided dialog.
 
 ![Credentials](media/powerbi-developer-content-pack/github_login.png)
 
 ![connect](media/powerbi-developer-content-pack/github_creds2.png)
 
 ## Instantiation
-When login succeeds, the artifacts you created – model, reports, and dashboard appear in the in the navigation bar.  These artifacts are added to each users’ account.  The data load asynchronously to populate the dataset (model).  The user is then able to consume the dashboard, reports, and model.
+When login succeeds, the artifacts included in the content pack - model, reports, and dashboard - appear in the in the navigation bar.  These artifacts are added to each users’ account.  The data load asynchronously to populate the dataset (model).  The user is then able to consume the dashboard, reports, and model.
 
-By default a daily refresh schedule is configured for the user.  This will call your APIs.  The credential provided to the user must allow them to refresh the data without being present.
+By default a daily refresh schedule is configured for the user, which will re-evaluate the queries in the model.  The credentials provided to the user must allow them to refresh the data without being present.
 
 ![Instantiation](media/powerbi-developer-content-pack/github_dashboard.png)
 
@@ -61,3 +61,4 @@ Typically this includes:
 -	Using the exploration canvas to explore the data in the data model
 
 Consideration should be made for providing natural language modelling (synonyms) and understandable model schema to enable better exploration experiences.
+

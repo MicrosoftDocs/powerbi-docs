@@ -35,23 +35,24 @@ You may be familiar with each piece as existing Power BI features. When building
 
 **Note:** an ISV content pack currently requires a single dashboard, report and dataset per content pack.
 
+<a name="queries"></a>
 ## Queries
-For ISV content packs, the queries are required to return a consistent schema and are supported for Scheduled Data refresh. Create the queries using the Power BI Desktop starting with **Get Data**. If your data source is not currently supported by the Power BI Desktop, please contact the Power BI team.
+For ISV content packs, queries developed in the Power BI Desktop are used to connect to your data source. These queries are required to return a consistent schema and are supported for Scheduled Data refresh. If your data source is not currently supported by the Power BI Desktop, please respond to your Azure Certified nomination.
 
-**Note:** ISV content packs only support one data source per content pack content pack. If your scenario requires more than one data source, please contact the Power BI team.
+**Note:** ISV content packs only support one data source per content pack content pack. If your scenario requires more than one data source, please contact the Power BI team through your Azure Certified nomination.
 
-## Consider your data source
+### Consider the source
 The queries define the data that will be included in the data model. Depending on the size of your system, these queries should also include filters to ensure your customers are dealing with a manageable size that fits your business scenario.
 
 Power BI content packs can execute multiple queries in parallel and for multiple users concurrently.  Plan ahead your throttling and concurrency strategy and ask us how to make your content pack fault tolerant.
 
-## Schema enforcement
+### Schema enforcement
 Ensure your queries are resilient to changes in your system, changes in schema on refresh can break the model. If the source could return null/missing schema result for some queries, consider returning an empty table or throw a custom error messages that is meaningful to your user.
 
-## Parameters
+### Parameters
 Parameters in Power BI Desktop <link> allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
 
-## Additional query tips
+### Additional query tips
 -	Ensure all columns are typed appropriately
 -	Columns have informative names (see Q&A)
 -	For shared logic, consider using functions or queries
@@ -62,10 +63,10 @@ A well-defined data model will ensure your customers can easily and intuitively 
 
 **Note**: Much of the basic modelling (typing, column names) should be done in the query step.
 
-## Q&A
-The modelling will also affect how well Q&A can provide results for your customers. Ensure you add synonyms <link> to commonly used columns and that your columns are properly named in the [queries](onenote:).
+### Q&A
+The modelling will also affect how well Q&A can provide results for your customers. Ensure you add synonyms <link> to commonly used columns and that your columns are properly named in the [queries](#queries).
 
-## Additional data model tips
+### Additional data model tips
 -	All value columns have formatting applied (note: types should bethat applyied in the Query)
 -	All measures have formatting applied
 -	Default Summarization is set. Especially "Do Not Summarize", when applicable (for unique values for example)

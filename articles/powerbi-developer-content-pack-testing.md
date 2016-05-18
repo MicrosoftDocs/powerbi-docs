@@ -56,6 +56,7 @@ We suggest naming your dashboard, report and dataset consistently across your co
 
 ![create](media/powerbi-developer-content-pack/createtemplate.png)
 
+<a name="submission"></a>
 ## Submission
 **Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
 
