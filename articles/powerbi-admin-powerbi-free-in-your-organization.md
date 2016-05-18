@@ -86,6 +86,8 @@ The AAD setting that controls this is **AllowAdHocSubscriptions**. Most tenants 
 
         Set-MsolCompanySettings -AllowAdHocSubscriptions $true
 
+> **Note**: This blocking prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization will still retain their licenses.
+
 ## See also
 
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)
