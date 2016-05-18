@@ -1,4 +1,4 @@
-git <properties
+<properties
    pageTitle="reveal the data used to create the visual"
    description="This document shows how to view the data and individual records used to create a visual in Power BI."
    services="powerbi"
