@@ -150,6 +150,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-display-dash-in-focus-mode",
             "powerbi-service-display-tile-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
+            "powerbi-service-favorite-dashboards",
+            "powerbi-service-featured-dashboards",
             "powerbi-service-qr-code-for-tile",
             "powerbi-service-add-an-image-to-a-dashboard",
             "powerbi-service-delete-or-remove-a-dashboard"
