@@ -24,7 +24,7 @@
 
 A content pack is a set of out-of-box content allowing users to immediately gain insights from a source.  A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow. 
 
-ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs allow offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. These template content packs are intended to eventually become publically available in the Power BI content pack gallery (app.powerbi.com/getdata/services). An example of the public content pack experience can be found [here](powerbi-developer-content-pack-experience.md).
+ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. These template content packs are intended to eventually become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services). An example of the public content pack experience can be found [here](powerbi-developer-content-pack-experience.md).
 
 >**Note:** The Content Pack Certification Program requires access to the preview features and therefore initial approval through the [Microsoft Azure Certified](#Nomination) program to access. If you're interested, please submit a nomination.
 

@@ -35,7 +35,7 @@ To get started, a user browsers the content pack gallery and selects a content p
 ## Parameters
 Once selected, the user will be prompted to provide parameters (if requried). The parameters dialog is provided declaratively by the author during the creation of the content pack.
 
-Current the parameters UI is very basic – there is no way to enumerate drop down lists and data input validation is constrained to regex.
+Currently the parameters UI is very basic – there is no way to enumerate drop down lists and data input validation is constrained to regex.
 
 ![parameters](media/powerbi-developer-content-pack/github_params.png)
 

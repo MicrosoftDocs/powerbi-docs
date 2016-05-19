@@ -24,7 +24,7 @@
 
 >**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
-Authoring a template content pack uses the Power BI Desktop and the PowerBI.com. There are four components to your content pack:
+Authoring a template content pack uses the Power BI Desktop and PowerBI.com. There are four components to your content pack:
 
 -	Queries allow you to [connect](powerbi-desktop-connect-to-data.md) and [transform](powerbi-desktop-query-overview.md) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 -	Data model to create [relationships](powerbi-desktop-create-and-manage-relationships.md), [measures](powerbi-desktop-measures.md), and Q&A improvements  
@@ -69,7 +69,7 @@ A well-defined data model will ensure your customers can easily and intuitively 
 The modelling will also affect how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and that your columns are properly named in the [queries](#queries).
 
 ### Additional data model tips
--	All value columns have formatting applied (note: types should bethat applyied in the Query)
+-	All value columns have formatting applied (note: types should be applied in the Query)
 -	All measures have formatting applied
 -	Default Summarization is set. Especially "Do Not Summarize", when applicable (for unique values for example)
 -	Data Category has been set, when applicable

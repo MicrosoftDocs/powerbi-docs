@@ -27,7 +27,7 @@
 There are multiple ways to test your content pack before submitting it for publishing.  
 
 ## Testing Scheduled Data Refresh
-Template content packs leverage Refresh in PowerBI.com to instantiate a content pack with the customer's data when they connect. Prior to the content pack being publically available, you can test this flow with the Desktop file you've created.
+Template content packs leverage Refresh in PowerBI.com to instantiate a content pack with the customer's data when they connect. Prior to the content pack being publicly available, you can test this flow with the Desktop file you've created.
 
 After uploading the file, select the "…" next to the dataset and select Schedule Refresh. Configure credentials for the source. Make sure that your dataset refreshes successfully, try both "Refresh Now" and "Scheduled Refresh". If your refresh hits any failures, check the error message and validate your queries and your end system.
 
