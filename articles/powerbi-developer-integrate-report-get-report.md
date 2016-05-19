@@ -25,9 +25,9 @@ In **step 1** of Integrate a report into an app, [Register a web app with Azure 
 
 ![](media\powerbi-developer-integrate-report\integrate-report-get-report.png)
 
-To get a **Power BI** report, you use the [Get reports](https://msdn.microsoft.com/library/mt634543.aspx) operation which gets a list of **Power BI** reports. From the list of reports, you can get a report **embedUrl**. Once you have a report **embedUrl**, you can load a report into an **IFrame**.
+To get a **Power BI** report, you use the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation which gets a list of **Power BI** reports. From the list of reports, you can get a report **embedUrl**. Once you have a report **embedUrl**, you can load a report into an **IFrame**.
 
-Before you can call the [Get reports](https://msdn.microsoft.com/library/mt634543.aspx) operation, or any other **Power BI** operation, you need to get an Azure Active Directory **authentication access token** (access token). An **access token** is used to allow your app access to **Power BI** reports. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx). The next section shows you how to get an **access token** in a web app.
+Before you can call the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation, or any other **Power BI** operation, you need to get an Azure Active Directory **authentication access token** (access token). An **access token** is used to allow your app access to **Power BI** reports. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx). The next section shows you how to get an **access token** in a web app.
 
 <a name="get-token"/>
 ## Get an authentication access token
@@ -141,7 +141,7 @@ public string GetAccessToken(string authorizationCode, string clientID, string c
 
 ## Get report using access token
 
-Now that you have an **access token**, you can call the [Get reports](https://msdn.microsoft.com/library/mt634543.aspx) operation. The [Get reports](https://msdn.microsoft.com/library/mt634543.aspx) operation returns a list of reports. You can get a report from the list of reports. Below is a complete C# method to get a report. Once you have a **report**, you can load it into an **IFrame**. See [Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md).
+Now that you have an **access token**, you can call the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation. The [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation returns a list of reports. You can get a report from the list of reports. Below is a complete C# method to get a report. Once you have a **report**, you can load it into an **IFrame**. See [Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md).
 
 **Get report**
 
@@ -201,5 +201,5 @@ To integrate a report into an app, you load a report into an IFrame. In the next
 -	[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)
 -	[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)
 -	[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
--	[Get reports operation](https://msdn.microsoft.com/library/mt634543.aspx)
+-	[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)
 -	[Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md)
