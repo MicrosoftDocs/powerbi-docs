@@ -26,12 +26,12 @@ In **step 2** of Integrate a tile into an app, [Get a Power BI dashboard](powerb
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-get-tile.png)
 
-To get a **Power BI** tile you need an authentication **access token**. To learn how to get an **access token**, see [Get an authentication access token](#get-token) in Step 2: Get a Power BI dashboard. You use an **access token** to authenticate to **Azure AD** to gain access to **Power BI** tiles.
+To get a **Power BI** tile you need an authentication **access token**. To learn how to get an **access token**, see [Get an authentication access token]((powerbi-developer-integrate-tile-get-dashboard.md#get-token) in Step 2: Get a Power BI dashboard. You use an **access token** to authenticate to **Azure AD** to gain access to **Power BI** tiles.
 
 Here are the steps to get a Power BI tile.
 
-- **Step 1:** Get an authorization code from Azure AD. See [Get an authorization code from Azure AD](#auth-code) in Step 2: Get a Power BI dashboard.
-- **Step 2:** Get an access token. See [Get an access token from authorization code](#access-token) Step 2: Get a Power BI dashboard.
+- **Step 1:** Get an authorization code from Azure AD. See [Get an authorization code from Azure AD](powerbi-developer-integrate-tile-get-dashboard.md#auth-code) in Step 2: Get a Power BI dashboard.
+- **Step 2:** Get an access token. See [Get an access token from authorization code](powerbi-developer-integrate-tile-get-dashboard.md#access-token) Step 2: Get a Power BI dashboard.
 - **Step 3:** [Get a Power BI tile](#get-tile)
 
 <a name="get-tile"/>
@@ -85,7 +85,11 @@ public class PBITile
 }
 ```
 
-[Next Step >](powerbi-developer-load-tile-iframe.md)
+## Next step
+
+To integrate a tile into an app, you load a tile into an IFrame. In the next step, you learn how to [Load a tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md).
+
+[Next Step >](powerbi-developer-integrate-tile-load-tile-iframe.md)
 
 ## See also
 -	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
@@ -94,4 +98,4 @@ public class PBITile
 -	[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)
 -	[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)
 -	[Get Tiles operation](https://msdn.microsoft.com/library/mt465741.aspx)
--	[Step 4: Load a Power BI tile into an IFrame](powerbi-developer-load-tile-iframe.md)
+-	[Step 4: Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)

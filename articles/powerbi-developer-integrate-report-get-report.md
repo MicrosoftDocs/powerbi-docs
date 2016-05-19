@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get a Power BI dashboard"
-   description="Walkthrough to Integrate a tile into an app - Get a Power BI dashboard"
+   pageTitle="Get a Power BI report"
+   description="Walkthrough to Integrate a report into an app - Get a Power BI report"
    services="powerbi"
    documentationCenter=""
    authors="dvana"
@@ -14,20 +14,20 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="05/18/2016"
    ms.author="derrickv"/>
 
-# Step 2: Get a Power BI dashboard
+# Step 2: Get a Power BI report
 
 ## Introduction
 
-In **step 1** of Integrate a tile into an app, [Register a web app with Azure AD](powerbi-developer-integrate-tile-register.md), you register a web app so that your app can authenticate to **Azure Active Directory**. In this step, you use an **access token**, and the **Power BI** API to get a dashboard. After you get a dashboard, you can get a **Power BI** tile.
+In **step 1** of Integrate a report into an app, [Register a web app with Azure AD](powerbi-developer-integrate-report-register.md), you register a web app so that your app can authenticate to **Azure Active Directory**. In this step, you use an **access token**, and the **Power BI** API to get a report.
 
-![](media\powerbi-developer-integrate-tile\integrate-tile-get-dashboard.png)
+![](media\powerbi-developer-integrate-report\integrate-report-get-report.png)
 
-To get a **Power BI** dashboard, you use the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation which gets a list of **Power BI** dashboards. From the list of dashboards, you can get a dashboard id. Once you have a dashboard id, you can get a **Power BI** tile.
+To get a **Power BI** report, you use the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation which gets a list of **Power BI** reports. From the list of reports, you can get a report **embedUrl**. Once you have a report **embedUrl**, you can load a report into an **IFrame**.
 
-Before you can call the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation, or any other **Power BI** operation, you need to get an Azure Active Directory **authentication access token** (access token). An **access token** is used to allow your app access to **Power BI** dashboards and tiles. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx). The next section shows you how to get an **access token** in a web app.
+Before you can call the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation, or any other **Power BI** operation, you need to get an Azure Active Directory **authentication access token** (access token). An **access token** is used to allow your app access to **Power BI** reports. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx). The next section shows you how to get an **access token** in a web app.
 
 <a name="get-token"/>
 ## Get an authentication access token
@@ -113,7 +113,7 @@ public void GetAuthorizationCode()
 <a name="access-token"/>
 ### Step 2: Get an access token from authorization code
 
-In step 1 to get an authentication access token, you get an **authorization code** from Azure AD. Once **Azure AD** redirects back to your web app with an **authorization code**, you use the **authorization code** to get an access token. Below is a C# method to get an **access token**. In the next section, you get a **dashboard** using an **access token**.
+In step 1 to get an authentication access token, you get an **authorization code** from Azure AD. Once **Azure AD** redirects back to your web app with an **authorization code**, you use the **authorization code** to get an access token. Below is a C# method to get an **access token**. In the next section, you get a **report** using an **access token**.
 
 **Get access token**
 
@@ -139,69 +139,67 @@ public string GetAccessToken(string authorizationCode, string clientID, string c
 }
 ```
 
-## Get dashboard using access token
+## Get report using access token
 
-Now that you have an **access token**, you can call the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation. The [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation returns a list of dashboards. You can get a dashboard from the list of dashboards. Below is a complete C# method to get a dashboard. Once you have a **dashboard**, you can get a **tile**. See [Step 3: Get a Power BI tile]( powerbi-developer-integrate-tile-get-tile.md).
+Now that you have an **access token**, you can call the [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation. The [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx) operation returns a list of reports. You can get a report from the list of reports. Below is a complete C# method to get a report. Once you have a **report**, you can load it into an **IFrame**. See [Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md).
 
-**Get dashboard**
+**Get report**
 
 ```
-//Get a dashboard id.
-protected string GetDashboard(int index)
+protected void GetReport(int index)
 {
-    string dashboardId = string.Empty;
-
-    //Configure tiles request
+    //Configure Reports request
     System.Net.WebRequest request = System.Net.WebRequest.Create(
-        String.Format("{0}Dashboards",
+        String.Format("{0}/Reports",
         baseUri)) as System.Net.HttpWebRequest;
 
     request.Method = "GET";
     request.ContentLength = 0;
     request.Headers.Add("Authorization", String.Format("Bearer {0}", accessToken.Value));
 
-    //Get dashboards response from request.GetResponse()
+    //Get Reports response from request.GetResponse()
     using (var response = request.GetResponse() as System.Net.HttpWebResponse)
     {
         //Get reader from response stream
         using (var reader = new System.IO.StreamReader(response.GetResponseStream()))
         {
             //Deserialize JSON string
-            PBIDashboards dashboards = JsonConvert.DeserializeObject<PBIDashboards>(reader.ReadToEnd());
+            PBIReports Reports = JsonConvert.DeserializeObject<PBIReports>(reader.ReadToEnd());
 
-            //Sample assumes at least one Dashboard with one Tile.
-            //You could write an app that lists all tiles in a dashboard
-            dashboardId = dashboards.value[index].id;
+            //Sample assumes at least one Report.
+            //You could write an app that lists all Reports
+            if (Reports.value.Length > 0)
+                ReportEmbedUrl.Text = Reports.value[index].embedUrl;
         }
     }
-
-    return dashboardId;
 }
 
-//Power BI Dashboards used to deserialize the Get Dashboards response.
-public class PBIDashboards
+//Power BI Reports used to deserialize the Get Reports response.
+public class PBIReports
 {
-    public PBIDashboard[] value { get; set; }
+    public PBIReport[] value { get; set; }
 }
-public class PBIDashboard
+public class PBIReport
 {
     public string id { get; set; }
-    public string displayName { get; set; }
+    public string name { get; set; }
+    public string webUrl { get; set; }
+    public string embedUrl { get; set; }
 }
 ```
 
 ## Next step
 
-To integrate a tile into an app, you need to get a tile. In the next step, you learn how to [Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md).
+To integrate a report into an app, you load a report into an IFrame. In the next step, you learn how to [Load a report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md).
 
-[Next Step >](powerbi-developer-integrate-tile-get-tile.md)
+[Next Step >](powerbi-developer-integrate-report-load-report-iframe.md)
 
 ## See also
 
 -	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
--	[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)
--	[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)
+-	[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
+-	[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)
+-	[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)
 -	[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
--	[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)
--	[Step 3: Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md)
+-	[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)
+-	[Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md)
