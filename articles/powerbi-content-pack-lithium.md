@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Lithium content pack for Power BI"
+   pageTitle="Lithium content pack"
    description="Lithium content pack for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Lithium content pack for Power&nbsp;BI
@@ -37,9 +37,9 @@ Note: The Power BI content pack uses the Lithium API. Excessive calls to the API
 
     ![](media/powerbi-content-pack-lithium/PBI_GetServices.png) 
 
-3.  Select **Lithium** \> **Connect**.
+3.  Select **Lithium** \> **Get**.
 
-    ![](media/powerbi-content-pack-lithium/connect.png)
+    ![](media/powerbi-content-pack-lithium/lithiumconnect.png)
     
 4.  Provide the URL of your Lithium community. It will be in the form of *https://community.yoursite.com*.
 

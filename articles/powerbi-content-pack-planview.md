@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Planview Enterprise content pack for Power BI"
+   pageTitle="Planview Enterprise content pack"
    description="Planview Enterprise content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Planview Enterprise content pack for Power&nbsp;BI
@@ -39,8 +39,8 @@ Note: To import your Planview Enterprise data into Power BI, you must be a Planv
 
     ![](media/powerbi-content-pack-planview/services.png)
 
-3. On the Power BI page, select **Planview Enterprise**, then select **Connect**, as shown in the following image:  
-	![](media/powerbi-content-pack-planview/getdata.PNG)
+3. On the Power BI page, select **Planview Enterprise**, then select **Get**:  
+	![](media/powerbi-content-pack-planview/planview.png)
 
 4. In the Planview Enterprise URL text box, enter the URL for the Planview Enterprise server you want to use. In the Planview Enterprise Database text box, enter the name of the Planview Enterprise database, then click Next.  
 	![](media/powerbi-content-pack-planview/params.PNG)

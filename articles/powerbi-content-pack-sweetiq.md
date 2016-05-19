@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="SweetIQ content pack for Power BI"
+   pageTitle="SweetIQ content pack"
    description="SweetIQ content pack for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # SweetIQ content pack for Power&nbsp;BI
@@ -32,9 +32,9 @@ Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/
 
 	![](media/powerbi-content-pack-sweetiq/GetData.png)
 
-2. Select **SweetIQ** and click **Connect.**
+2. Select **SweetIQ** and click **Get.**
 
-	![](media/powerbi-content-pack-sweetiq/Entry.png)
+	![](media/powerbi-content-pack-sweetiq/sweetiq.png)
 
 3. Provide your SweetIQ Client ID. This is typically an alpha-numeric value. For more details on finding this value, see below.
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/21/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # ClickDimensions content pack for Power&nbsp;BI
 
@@ -35,9 +35,9 @@ Connect to the [ClickDimensions content pack](https://app.powerbi.com/getdata/se
 
 	![](media/powerbi-content-pack-clickdimensions/services.PNG)
 
-3.  Select **ClickDimensions** \>  **Connect**.
+3.  Select **ClickDimensions** \>  **Get**.
 
-	![](media/powerbi-content-pack-clickdimensions/connect.png)
+	![](media/powerbi-content-pack-clickdimensions/clickdimensions.png)
 
 4.  Provide the location of your data center (US, EU or AU) and select **Next**.
 
@@ -67,9 +67,8 @@ Connect to the [ClickDimensions content pack](https://app.powerbi.com/getdata/se
 
 To connect to the Power BI content pack, you must provide the data center corresponding to your account and log in with your ClickDimensions account. If you're unsure which data center to provide, please check with your admin. 
 
-
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 The Account Key is found within CRM Settings \> ClickDimensions Settings. Copy the Account Key from within ClickDimensions Settings and paste it into the User name field.  
 

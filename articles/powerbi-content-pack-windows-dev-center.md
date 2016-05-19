@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Windows Dev Center content pack for Power&nbsp;BI
 
@@ -35,9 +35,9 @@ Connect to the [Windows Dev Center content pack](https://app.powerbi.com/getdata
 
 	![](media/powerbi-content-pack-windows-dev-center/services.PNG)
 
-3.  Select **Windows Dev Center** \>  **Connect**.
+3.  Select **Windows Dev Center** \>  **Get**.
 
-	![](media/powerbi-content-pack-windows-dev-center/connect.png)
+	![](media/powerbi-content-pack-windows-dev-center/windowsdev.png)
 
 4.  Enter the application ID of an app you own and click Next. See details on [finding those parameters](#FindingParams) below.
 
@@ -71,13 +71,13 @@ Connect to the [Windows Dev Center content pack](https://app.powerbi.com/getdata
 
 The Dev Center Power BI content pack includes analytics data for your app and IAP acquisitions, ratings, reviews and app health. Data is limited to the last 3 months. and is a moving window, so the dates included will update as the dataset refreshes.
 
-## System requirements
 <a name="Requirements"></a>
+## System requirements
 
 This content pack requires at least one at least one app published to the Windows Store and a Windows Dev Center account (more details [here](https://msdn.microsoft.com/windows/uwp/publish/manage-account-users)).
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 You can find the application ID for an app by going to the App identity page under App management. 
 

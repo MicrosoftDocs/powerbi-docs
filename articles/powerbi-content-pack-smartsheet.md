@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Smartsheet content pack for Power BI"
+   pageTitle="Smartsheet content pack"
    description="Smartsheet content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Smartsheet content pack for Power&nbsp;BI
@@ -38,11 +38,11 @@ Note: Smartsheet admin account is preferred to connect and load the Power BI con
 
 	![](media/powerbi-content-pack-smartsheet/PBI_GetServices.png) 
 
-3.  Select **Smartsheet \> Connect**.
+3.  Select **Smartsheet \> Get**.
 
-	![](media/powerbi-content-pack-smartsheet/connect.png)
+	![](media/powerbi-content-pack-smartsheet/smartsheet.png)
 
-4.  For Authentication Method, select oAuth2 \> Sign In.
+4.  For Authentication Method, select **oAuth2 \> Sign In**.
 
 	When prompted, enter your Smartsheet credentials and follow the authentication process.
 

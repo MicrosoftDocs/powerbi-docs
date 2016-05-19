@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Zuora content pack for Power&nbsp;BI
 
@@ -35,9 +35,9 @@ Connect to the [Zuora content pack](https://app.powerbi.com/getdata/services/Zuo
 
 	![](media/powerbi-content-pack-zuora/services.png)
 
-3.  Select **Zuora** \>  **Connect**.
+3.  Select **Zuora** \>  **Get**.
 
-	![](media/powerbi-content-pack-zuora/connect.png)
+	![](media/powerbi-content-pack-zuora/zuora.png)
 
 4.  Specify your Zuora URL. This is typically "https://www.zuora.com", see details on [finding those parameters](#FindingParams) below.
 
@@ -106,8 +106,8 @@ It also includes these calculated measures:
 
 Access to the Zuora API is required.
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 Provide the URL you typically sign into to access your Zuora data. The valid options are:  
 - https://www.zuora.com  

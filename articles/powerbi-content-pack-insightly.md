@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Insightly content pack for Power&nbsp;BI
 
@@ -35,9 +35,9 @@ Connect to the [Insightly content pack](https://app.powerbi.com/getdata/services
 
 	![](media/powerbi-content-pack-insightly/services.png)
 
-3.  Select **Insightly** \>  **Connect**.
+3.  Select **Insightly** \>  **Get**.
 
-	![](media/powerbi-content-pack-insightly/connect.png)
+	![](media/powerbi-content-pack-insightly/insightly.png)
 
 4.  Select **Key** as the Authentication type and provide your Insight API Key then select **Sign In**. See details on [finding this](#FindingParams) below.
 
@@ -79,8 +79,8 @@ Many tables and reports also include unique calculated fields, such as:
 
 An Insightly account with access to the Insightly API is required. Visibility permissions will be based on the API key used to establish the connection to Power BI. Any Insightly records visible to you will also be visible in the Power BI reports and dashboards that you share with others.
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 **API Key**
 

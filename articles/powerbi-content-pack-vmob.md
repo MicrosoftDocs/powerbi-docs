@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="VMob content pack for Power BI"
+   pageTitle="VMob content pack"
    description="VMob content pack for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
-# Microsoft VMob content pack for Power&nbsp;BI
+# VMob content pack for Power&nbsp;BI
 
 Tracking and exploring your VMob data is easy with Power BI and the VMob content pack. Power BI will retrieve the following data: User Statistics for all time and in the last 30 days, Retail KPI for the last 30 days and Campaign Performance for the last 30 days.
 
@@ -36,9 +36,9 @@ Connect to the [VMob content pack](https://app.powerbi.com/getdata/services/vmob
 
 	![](media/powerbi-content-pack-vmob/services.png)
 
-3.  Select **VMob** \> **Connect**.
+3.  Select **VMob** \> **Get**.
 
-	![](media/powerbi-content-pack-vmob/connect.png)
+	![](media/powerbi-content-pack-vmob/vmob.png)
 
 4. When prompted, enter your VMob URL and click on the Next button. This URL is provided by VMob separately.
 

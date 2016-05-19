@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Connect to services with content packs for Power BI"
+   pageTitle="Connect to services with content packs"
    description="Connect to services with content packs for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Connect to services with content packs for Power&nbsp;BI
@@ -26,7 +26,7 @@ You can connect to content packs for a number of services you use to run your bu
 
 View all of the [content packs for services](https://app.powerbi.com/getdata/services) by logging into Power BI. The Power BI team is working with other services to add new content packs every week. 
 
-![](media/powerbi-content-packs-services/51.png)
+![](media/powerbi-content-packs-services/overview.png)
 
 ## What's included
 
@@ -48,7 +48,7 @@ For more details on a specific content pack, please reference their individual h
 
 3.  Browse the content packs, or tap in the search box and type keywords:  
 
-    ![](media/powerbi-content-packs-services/cp_searchbox.png)
+    ![](media/powerbi-content-packs-services/search.png)
 
 After you connect to a content pack, you see the dashboard created with your own data. You can change this dashboard to display your data the way you want. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report and pin other tiles to the dashboard.
 

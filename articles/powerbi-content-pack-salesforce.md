@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Salesforce content pack for Power BI"
+   pageTitle="Salesforce content pack"
    description="Salesforce content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Salesforce content pack for Power&nbsp;BI
@@ -36,9 +36,13 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
 
 	![](media/powerbi-content-pack-salesforce/PBI_GetServices.png) 
 
-3.  Click **Salesforce** and select **Connect**.  
+3.  Click **Salesforce** and select **Get**.  
 
-4.   ![](media/powerbi-content-pack-salesforce/PBI_SalesforceConnect.png)
+    ![](media/powerbi-content-pack-salesforce/salesforce.png)
+
+4. Select **Sign In** to initiate the login flow.
+
+    ![](media/powerbi-content-pack-salesforce/dialog.png)
 
 5.  When prompted, enter your Salesforce credentials. Click **Allow** so Power BI can access your basic Salesforce information and data.
 

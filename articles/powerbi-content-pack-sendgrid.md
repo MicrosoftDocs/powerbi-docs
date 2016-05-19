@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="SendGrid content pack for Power BI"
+   pageTitle="SendGrid content pack"
    description="SendGrid content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # SendGrid content pack for Power&nbsp;BI
@@ -28,17 +28,17 @@ Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/
 
 ## How to connect
 
-1.  Select Get Data at the bottom of the left navigation pane.
+1.  Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-content-pack-sendgrid/PBI_GetData.png) 
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
     ![](media/powerbi-content-pack-sendgrid/PBI_GetServices.png) 
 
-3.  Select the **SendGrid **content pack and click **Connect**.
+3.  Select the **SendGrid** content pack and click **Get**.
 
-    ![](media/powerbi-content-pack-sendgrid/PBI_SendGridConnect.png) 
+    ![](media/powerbi-content-pack-sendgrid/sendgrid.png) 
 
 4.  When prompted, provide your SendGrid user name and password. Select **Sign In**.
 
