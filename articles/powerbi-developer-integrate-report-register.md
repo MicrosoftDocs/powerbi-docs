@@ -36,7 +36,7 @@ Here are the steps to register a web app in Azure AD.
 2. Click **Sign in with your existing account**, and sign into your Power BI account.
 3. Enter an **App Name**. For this walkthrough, enter **Integrate a report sample**.
 4. For **App Type**, choose **Server-side Web app**.
-5. Enter a **Redirect URL**. For this walkthrough, Azure AD redirects back to the default page, so enter http://localhost:13526. Azure Active Directory (AD) will redirect to this page with an **Authorization Code**. To learn how to acquire an **Access Token** to access **Power BI** reports using an **Authorization Code **, see [Get an authentication access token](powerbi-developer-get-dashboard.md#get-token).
+5. Enter a **Redirect URL**. For this walkthrough, Azure AD redirects back to the default page, so enter http://localhost:13526. Azure Active Directory (AD) will redirect to this page with an **Authorization Code**. To learn how to acquire an **Access Token** to access **Power BI** reports using an **Authorization Code**, see [Get an authentication access token](powerbi-developer-integrate-report-get-report.md#get-token).
 6. Enter a **Home Page**. For this walkthrough, enter http://localhost:13526 which is the home page for the sample.
 7. For **Choose APIs to access**, choose **Read All Reports (preview)**. For all Power BI app permissions, see [App permissions](powerbi-developer-power-bi-permissions.md).
 7. Click **Register app**, and save the **Client ID** and **Client Secret** that was generated. A **Client ID** and **Client Secret** identifies the app in Azure AD. To configure the [Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app) to use the **Client ID** and **Client Secret** to authenticate, see [Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample).
@@ -62,10 +62,10 @@ To integrate a report into an app, you need to get a report. In the next step, y
 [Next Step >](powerbi-developer-integrate-report-get-report.md)
 
 ## See also
--	[Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md)
+-	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
 -	[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
 -	[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)
--	[Configure the integrate a report sample](powerbi-developer-register.md#configure-sample)
--	[Get an authentication access token](powerbi-developer-get-dashboard.md#get-token)
+-	[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)
+-	[Get an authentication access token](powerbi-developer-integrate-report-get-report.md#get-token)
 -	[App permissions](powerbi-developer-power-bi-permissions.md)
 -	[Step 2: Get a Power BI report](powerbi-developer-integrate-report-get-report.md)

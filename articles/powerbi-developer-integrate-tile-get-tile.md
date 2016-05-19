@@ -30,8 +30,8 @@ To get a **Power BI** tile you need an authentication **access token**. To learn
 
 Here are the steps to get a Power BI tile.
 
-- **Step 1:** Get an authorization code from Azure AD. See [Get an authorization code from Azure AD](#auth-code) in Step 2: Get a Power BI dashboard.
-- **Step 2:** Get an access token. See [Get an access token from authorization code](#access-token) Step 2: Get a Power BI dashboard.
+- **Step 1:** Get an authorization code from Azure AD. See [Get an authorization code from Azure AD](powerbi-developer-integrate-tile-get-dashboard.md#auth-code) in Step 2: Get a Power BI dashboard.
+- **Step 2:** Get an access token. See [Get an access token from authorization code](powerbi-developer-integrate-tile-get-dashboard.md#access-token) Step 2: Get a Power BI dashboard.
 - **Step 3:** [Get a Power BI tile](#get-tile)
 
 <a name="get-tile"/>
@@ -89,7 +89,7 @@ public class PBITile
 
 To integrate a tile into an app, you load a tile into an IFrame. In the next step, you learn how to [Load a tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md).
 
-[Next Step >](powerbi-developer-load-tile-iframe.md)
+[Next Step >](powerbi-developer-integrate-tile-load-tile-iframe.md)
 
 ## See also
 -	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
@@ -98,4 +98,4 @@ To integrate a tile into an app, you load a tile into an IFrame. In the next ste
 -	[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)
 -	[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)
 -	[Get Tiles operation](https://msdn.microsoft.com/library/mt465741.aspx)
--	[Step 4: Load a Power BI tile into an IFrame](powerbi-developer-load-tile-iframe.md)
+-	[Step 4: Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)
