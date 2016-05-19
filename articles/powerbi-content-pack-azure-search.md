@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Azure Search content pack for Power BI"
+   pageTitle="Azure Search content pack"
    description="Azure Search content pack for Power BI"
    services="powerbi"
    documentationCenter=""

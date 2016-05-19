@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Visual Studio Online content pack for Power BI"
+   pageTitle="Visual Studio Online content pack"
    description="Visual Studio Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="tyGraph content pack for Power BI"
+   pageTitle="tyGraph content pack"
    description="tyGraph content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

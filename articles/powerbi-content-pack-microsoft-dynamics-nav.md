@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Microsoft Dynamics NAV content pack for Power BI"
+   pageTitle="Microsoft Dynamics NAV content pack"
    description="Microsoft Dynamics NAV content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

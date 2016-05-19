@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="SQL Sentry content pack for Power BI"
+   pageTitle="SQL Sentry content pack"
    description="SQL Sentry content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -96,11 +96,11 @@ The following data is available from SQL Sentry  in Power BI :
 
 The **Database ID** can be found by logging into <https://cloud.sqlsentry.com> in a new web browser window.  The **Database ID** is listed on the main overview page:
 
-	![](media/powerbi-content-pack-sql-sentry/img3500.png)
+	![](media/powerbi-content-pack-sql-sentry/database2.png)
 
 The **Database ID** is also shown on the Database Details screen:
 
-	![](media/powerbi-content-pack-sql-sentry/img4.png)
+	![](media/powerbi-content-pack-sql-sentry/database.png)
 
 
 ## Troubleshooting

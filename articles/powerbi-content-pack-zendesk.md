@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Zendesk content pack for Power BI"
+   pageTitle="Zendesk content pack"
    description="Zendesk content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

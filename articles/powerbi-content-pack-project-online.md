@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Project Online content pack for Power BI"
+   pageTitle="Project Online content pack"
    description="Project Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

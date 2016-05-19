@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Azure Mobile Engagement content pack for Power BI"
+   pageTitle="Azure Mobile Engagement content pack"
    description="Azure Mobile Engagement content pack for Power BI"
    services="powerbi"
    documentationCenter=""

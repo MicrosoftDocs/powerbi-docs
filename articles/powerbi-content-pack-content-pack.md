@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="comScore Digital Analytix content pack for Power BI"
+   pageTitle="comScore Digital Analytix content pack"
    description="comScore Digital Analytix content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Microsoft Azure Enterprise content pack for Power BI"
+   pageTitle="Microsoft Azure Enterprise content pack"
    description="Microsoft Azure Enterprise content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

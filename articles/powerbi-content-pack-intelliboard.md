@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="IntelliBoard content pack for Power BI"
+   pageTitle="IntelliBoard content pack"
    description="IntelliBoard content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Marketo content pack for Power BI"
+   pageTitle="Marketo content pack"
    description="Marketo content pack for Power BI"
    services="powerbi"
    documentationCenter=""

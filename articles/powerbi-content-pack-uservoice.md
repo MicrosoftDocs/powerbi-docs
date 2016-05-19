@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="UserVoice content pack for Power BI"
+   pageTitle="UserVoice content pack"
    description="UserVoice content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

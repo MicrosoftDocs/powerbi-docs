@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Webtrends content pack for Power BI"
+   pageTitle="Webtrends content pack"
    description="Webtrends content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

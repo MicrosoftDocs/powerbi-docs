@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Smartsheet content pack for Power BI"
+   pageTitle="Smartsheet content pack"
    description="Smartsheet content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Office365Mon content pack for Power BI"
+   pageTitle="Office365Mon content pack"
    description="Office365Mon content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

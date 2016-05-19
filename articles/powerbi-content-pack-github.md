@@ -1,5 +1,5 @@
 <properties
-   pageTitle="GitHub content pack for Power BI"
+   pageTitle="GitHub content pack"
    description="GitHub content pack for Power BI"
    services="powerbi"
    documentationCenter=""

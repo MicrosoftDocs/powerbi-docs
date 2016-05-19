@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Twilio content pack for Power BI"
+   pageTitle="Twilio content pack"
    description="Twilio content pack for Power BI"
    services="powerbi"
    documentationCenter=""

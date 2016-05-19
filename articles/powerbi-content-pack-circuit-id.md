@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Circuit ID content pack for Power BI"
+   pageTitle="Circuit ID content pack"
    description="Circuit ID content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

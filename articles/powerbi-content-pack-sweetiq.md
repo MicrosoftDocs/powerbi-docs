@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="SweetIQ content pack for Power BI"
+   pageTitle="SweetIQ content pack"
    description="SweetIQ content pack for Power BI"
    services="powerbi"
    documentationCenter=""

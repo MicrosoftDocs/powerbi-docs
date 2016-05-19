@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Azure Audit Logs content pack for Power BI"
+   pageTitle="Azure Audit Logs content pack"
    description="Azure Audit Logs content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

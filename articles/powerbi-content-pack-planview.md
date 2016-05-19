@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Planview Enterprise content pack for Power BI"
+   pageTitle="Planview Enterprise content pack"
    description="Planview Enterprise content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

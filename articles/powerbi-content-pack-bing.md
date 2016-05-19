@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Bing content pack for Power BI"
+   pageTitle="Bing content pack"
    description="Bing content pack for Power BI"
    services="powerbi"
    documentationCenter=""

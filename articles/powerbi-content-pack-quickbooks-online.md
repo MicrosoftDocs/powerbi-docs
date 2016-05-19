@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="QuickBooks Online content pack for Power BI"
+   pageTitle="QuickBooks Online content pack"
    description="QuickBooks Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Project Madeira content pack for Power BI"
+   pageTitle="Project Madeira content pack"
    description="Project Madeira content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -25,7 +25,7 @@
 Getting insights into your Project “Madeira” data is easy with Power BI and the Project “Madeira” content pack. Power BI retrieves your data, both Sales and Financial data then builds an out-of-box dashboard and reports based on that data.
 Connect to the Project "Madeira" for Power BI or read more about the Project "Madeira" integration with Power BI.
 
-Note: this content pack requires permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements [below](#FindingParams). 
+Note: this content pack requires permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements [below](#Requirements). 
 
 Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.com/getdata/services/projec-madeira) for Power BI.
 
@@ -65,8 +65,7 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-       
-
+<a name="Requirements"></a>
 ## System requirements
 
 To import your Project “Madeira” data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from. All the tables (case sensitive) required for the content pack include:  

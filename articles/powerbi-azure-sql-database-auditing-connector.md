@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="SQL Database Auditing content pack for Power BI"
+   pageTitle="SQL Database Auditing content pack"
    description="SQL Database Auditing content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -27,6 +27,8 @@ Connect to the [SQL Database Auditing content pack](https://app.powerbi.com/getd
 
 Note: The content pack imports data from all tables that contain “AuditLogs” in their name and append it to a single data model table named “AuditLogs”. The last 250k events will be included and the data will be refreshed daily.
 
+## How to connect
+
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-azure-sql-database-auditing-connector/PBI_GetData.png) 
@@ -35,9 +37,9 @@ Note: The content pack imports data from all tables that contain “AuditLogs”
 
     ![](media/powerbi-azure-sql-database-auditing-connector/PBI_GetServices.png) 
 
-3.  Select **SQL Database Auditing** \> **Connect**.
+3.  Select **SQL Database Auditing** \> **Get**.
 
-    ![](media/powerbi-azure-sql-database-auditing-connector/PBI_SQLdbAuditing.png)
+    ![](media/powerbi-azure-sql-database-auditing-connector/sqldbaudit.png)
 
 4.  In the Connect to Sql Database Auditing window:
 
@@ -63,8 +65,7 @@ Note: The content pack imports data from all tables that contain “AuditLogs”
 
 6.  After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
 
-
-![](media/powerbi-azure-sql-database-auditing-connector/PBI_SQLdbAuditingNewDash.png)
+    ![](media/powerbi-azure-sql-database-auditing-connector/PBI_SQLdbAuditingNewDash.png)
 
 
  **What Now?**

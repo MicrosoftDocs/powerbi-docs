@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Ziosk content pack for Power BI"
+   pageTitle="Ziosk content pack"
    description="Ziosk content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

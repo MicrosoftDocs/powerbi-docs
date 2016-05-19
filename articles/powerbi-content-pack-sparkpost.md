@@ -1,5 +1,5 @@
 <properties
-   pageTitle="SparkPost content pack for Power BI"
+   pageTitle="SparkPost content pack"
    description="SparkPost content pack for Power BI"
    services="powerbi"
    documentationCenter=""

@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Mandrill content pack for Power BI"
+   pageTitle="Mandrill content pack"
    description="Mandrill content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

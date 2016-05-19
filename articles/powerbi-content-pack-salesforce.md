@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Salesforce content pack for Power BI"
+   pageTitle="Salesforce content pack"
    description="Salesforce content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

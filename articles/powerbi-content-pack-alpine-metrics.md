@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Alpine Metrics Sales Predictions content pack for Power BI"
+   pageTitle="Alpine Metrics Sales Predictions content pack"
    description="Alpine Metrics Sales Predictions content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

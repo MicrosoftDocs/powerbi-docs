@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Google Analytics content pack for Power BI"
+   pageTitle="Google Analytics content pack"
    description="Google Analytics content pack for Power BI"
    services="powerbi"
    documentationCenter=""

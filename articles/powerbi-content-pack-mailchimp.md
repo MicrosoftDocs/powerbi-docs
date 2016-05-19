@@ -1,5 +1,5 @@
 <properties
-   pageTitle="MailChimp content pack for Power BI"
+   pageTitle="MailChimp content pack"
    description="MailChimp content pack for Power BI"
    services="powerbi"
    documentationCenter=""

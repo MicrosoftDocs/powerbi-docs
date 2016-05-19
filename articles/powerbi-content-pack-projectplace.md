@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Projectplace content pack for Power BI"
+   pageTitle="Projectplace content pack"
    description="Projectplace content pack for Power BI"
    services="powerbi"
    documentationCenter=""

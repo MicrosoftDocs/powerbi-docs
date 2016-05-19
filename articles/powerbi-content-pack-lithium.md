@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Lithium content pack for Power BI"
+   pageTitle="Lithium content pack"
    description="Lithium content pack for Power BI"
    services="powerbi"
    documentationCenter=""

@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Connect to services with content packs for Power BI"
+   pageTitle="Connect to services with content packs"
    description="Connect to services with content packs for Power BI"
    services="powerbi" 
    documentationCenter="" 

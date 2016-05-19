@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Microsoft Dynamics CRM content pack for Power BI"
+   pageTitle="Microsoft Dynamics CRM content pack"
    description="Microsoft Dynamics CRM content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 

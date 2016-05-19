@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="AT Internet Bridge content pack for Power BI"
+   pageTitle="AT Internet Bridge content pack"
    description="AT Internet Bridge content pack for Power BI"
    services="powerbi"
    documentationCenter=""

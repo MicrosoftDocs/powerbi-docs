@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Stripe content pack for Power BI"
+   pageTitle="Stripe content pack"
    description="Stripe content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
