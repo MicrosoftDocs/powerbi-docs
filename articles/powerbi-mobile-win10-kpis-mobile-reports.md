@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2016"
+   ms.date="05/19/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10 
 
 The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information. 
 
-![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_iph_ssmrp_tallhomeblc.png)
+![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_ssrs_windows10_report.png)
 
 [Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with the SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
@@ -36,7 +36,7 @@ Then in the Power BI mobile app for Windows 10, view the mobile reports and KPIs
 
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports. 
 
--  Tap the options icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, scroll down and tap SQL Server RS Samples.
+-  Tap the options icon ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_windows10_options_icon.png) in the upper-left corner, scroll down and tap SQL Server RS Samples.
 
 Browse the samples to interact with KPIs and mobile reports.
 
@@ -49,9 +49,7 @@ Browse the samples to interact with KPIs and mobile reports.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_ipad_getstarted.png)
 
-3. Tap the options icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Connect**.
-
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_iph_sample.png)
+3. Tap the options icon ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_windows10_options_icon.png) in the upper-left corner, and tap **Connect**.
 
 4. Fill in the server address and your user name and password.
 
@@ -61,9 +59,9 @@ Browse the samples to interact with KPIs and mobile reports.
 
 5.  Now you see the server in the left navigation bar.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_iph_ssmrp_homelc.png)
+    ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_ssrs_windows10_ssrs_menu.png)
 
->**Tip**: Tap the options icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) anytime to go between your SQL Server mobile reports and your dashboards in the Power BI service. 
+>**Tip**: Tap the options icon ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your SQL Server mobile reports and your dashboards in the Power BI service. 
 
 ## View SQL Server KPIs and mobile reports in the Power BI app
 
@@ -75,7 +73,7 @@ SQL Server KPIs and mobile reports are displayed in the same folders they're in 
 
 - Tap a mobile report to open and interact with it in the Power BI app.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_MobRpt.png)
+    ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_ssrs_windows10_report.png)
 
 ## View your favorite KPIs and reports
 
@@ -83,11 +81,11 @@ You can mark KPIs and favorites on your Reporting Services web portal, and then 
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_and_ssrs_favemenu.png)
+    ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_ssrs_windows10_favorites_menu2.png)
    
     Your favorites from the web portal are all on this page.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_and_ssrs_favepage.png)
+    ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_ssrs_windows10_favorites.png)
 
 ## Remove a connection to a report server
 
