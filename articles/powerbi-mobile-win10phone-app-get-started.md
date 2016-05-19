@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2016"
+   ms.date="05/19/2016"
    ms.author="maggies"/>
 # Get started with the Power BI mobile app for Windows 10
 
@@ -33,7 +33,7 @@ Bring your own data together and create dashboards and reports on the [Power BI 
 
 -   [**Get the Power BI mobile app for Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
 
-    >**Note:** Your device needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
+    >**Note:** Your device needs to be running Windows 10. The app works best on devices with at least 2 GB RAM and 8 GB internal storage. It can run on devices with at least 1 GB RAM.
 
 -   **Start with samples**    Even without signing up or signing in, after you download the app you can view the samples. Or go back to the samples whenever you want from the side pane navigation menu ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_NavIcon30.png).
 
