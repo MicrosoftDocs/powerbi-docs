@@ -38,7 +38,7 @@ Connect to the [appFigures content pack](https://app.powerbi.com/getdata/service
 
 3.  Select **appFigures** \>  **Get**.
 
-	![](media/powerbi-content-pack-appfigures/appfigures.png)
+	![](media/powerbi-content-pack-appfigures/appFigures.png)
 
 4.  For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your appFigures credentials and follow the appFigures authentication process. 
 

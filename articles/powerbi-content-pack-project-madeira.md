@@ -38,7 +38,7 @@ Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.co
     ![](media/powerbi-content-pack-project-madeira/services.png)
 
 3. Select **Project "Madeira"**, then select **Get**.  
-    ![](media/powerbi-content-pack-project-madeira/projectmadeira.png)
+    ![](media/powerbi-content-pack-project-madeira/projectmadeira.PNG)
 
 4. When prompted, enter your Project “Madeira” URL. The URL needs to follow the following pattern exactly https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') with your Project “Madeira” company name. Note that there is no trailing slash at the end, and the connection is must be https. See details on finding this URL [below](#FindingParams).  
 
