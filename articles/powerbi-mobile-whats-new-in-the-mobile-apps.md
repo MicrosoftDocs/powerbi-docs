@@ -17,10 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/14/2016"
+   ms.date="05/18/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## May 2016
+
+### Power BI app for Windows 10 devices
+
+**SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-win10-kpis-mobile-reports.md)** now on Windows 10 devices.
 
 ## April 2016
 

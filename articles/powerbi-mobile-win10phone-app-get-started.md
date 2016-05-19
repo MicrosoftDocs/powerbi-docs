@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Get started with the Power BI mobile app for Windows 10"
-   description="Get started with the Power BI mobile app for Windows 10"
+   description="The Power BI mobile app for Windows 10 brings up-to-date, touch-enabled mobile access to your business information on your tablet or phone."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2016"
+   ms.date="05/19/2016"
    ms.author="maggies"/>
 # Get started with the Power BI mobile app for Windows 10
 
-The Windows 10 mobile app for Microsoft Power BI brings Power BI to your tablet or phone, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere &#151; right on your [Windows Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).
+The Power BI mobile app for Windows 10 brings Power BI to your tablet or phone, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere &#151; right on your [Windows Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).
 
 ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_livetile.gif)
 
@@ -33,7 +33,7 @@ Bring your own data together and create dashboards and reports on the [Power BI 
 
 -   [**Get the Power BI mobile app for Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
 
-    >**Note:** Your device needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
+    >**Note:** Your device needs to be running Windows 10. The app works best on devices with at least 2 GB RAM and 8 GB internal storage. It can run on devices with at least 1 GB RAM.
 
 -   **Start with samples**    Even without signing up or signing in, after you download the app you can view the samples. Or go back to the samples whenever you want from the side pane navigation menu ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_NavIcon30.png).
 
@@ -51,7 +51,9 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) 
 
     ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_AppIconSm.png)
 
-3.  In the Power BI app, tap **Sign in**. Sign in with the same credentials as your Power BI account on the web.
+3.  In the Power BI app, tap **Sign in**. Sign in with the same credentials as your Power BI account on the web. 
+   -  To view your Power BI dashboards, tap Power BI.
+   -  To view your Reporting Services mobile reports and KPIs, tap Reporting Services.
 4.  Tap **Start exploring**  to view your own dashboards.
 
 ## Search for dashboards, reports, and groups
@@ -73,8 +75,9 @@ Find your dashboards, reports, and groups quickly by typing in the search box, a
 
 ## What next?
 
-See what else you can do in the Power BI app for Windows 10 devices.
+See what else you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
 
+### Power BI dashboards
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
 -   [Pin Power BI tiles and dashboards](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen as live tiles.
@@ -83,6 +86,12 @@ See what else you can do in the Power BI app for Windows 10 devices.
 -   [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md).
 -   View your [groups' dashboards and reports](powerbi-mobile-groups-in-the-win10phone-app.md).
+
+### Reporting Services mobile reports and KPIs
+
+- [View Reporting Services mobile reports and KPIs](powerbi-mobile-win10-kpis-mobile-reports.md) in the Power BI app for Windows 10 devices.
+- Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
+- [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 ### See also
 

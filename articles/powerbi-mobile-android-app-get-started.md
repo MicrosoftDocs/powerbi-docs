@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="monitoring"
-   qualityDate="05/09/2016"/>
+   qualityDate="05/18/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -53,9 +53,15 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
 3.  In the Android app, tap **Sign in** to view your dashboards. Sign in with the same credentials as your Power BI account on the web.
 
+   -  To view your Power BI dashboards, tap Power BI.
+   -  To view your Reporting Services mobile reports and KPIs, tap Reporting Services.
+
+
 ## What next?
 
-See what else you can do in the Android phone app for Power BI.
+See what else you can do in the Android phone app for Power BI with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
+
+### Power BI dashboards
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-android-app.md).
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
@@ -65,6 +71,12 @@ See what else you can do in the Android phone app for Power BI.
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) from your Android phone to open a related dashboard. 
+
+### Reporting Services mobile reports and KPIs
+
+- [View Reporting Services mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md) in the Android phone app for Power BI.
+- Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
+- [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 ### See also
 
