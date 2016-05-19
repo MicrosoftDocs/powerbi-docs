@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="ISV Content Pack Experiences"
-   description="ISV Content Pack Experiences"
+   pageTitle="Template Content Pack Experiences"
+   description="Template Content Pack Experiences"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
@@ -20,7 +20,7 @@
    ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
-# ISV Content Pack Experiences 
+# Template Content Pack Experiences 
 This section highlights a typical experience for a user connecting to an ISV [content pack](powerbi-content-packs-services.md). 
 
 Try it yourself by connect to a released content pack at https://app.powerbi.com/getdata/services (such as the [GitHub content pack](https://app.powerbi.com/getdata/services/github) described below).

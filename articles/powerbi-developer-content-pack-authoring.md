@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="ISV Content Pack Authoring"
-   description="ISV Content Pack Authoring"
+   pageTitle="Template Content Pack Authoring"
+   description="Template Content Pack Authoring"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
@@ -20,11 +20,11 @@
    ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
-# ISV Content Pack Authoring
+# Template Content Pack Authoring
 
->**Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
+>**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
 
-Authoring an ISV content pack uses the Power BI Desktop and the PowerBI.com. There are four components to your content pack:
+Authoring a template content pack uses the Power BI Desktop and the PowerBI.com. There are four components to your content pack:
 
 -	Queries allow you to [connect](powerbi-desktop-connect-to-data/) and [transform](powerbi-desktop-query-overview/) the data, as well as define [parameters](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 -	Data model to create [relationships](powerbi-desktop-create-and-manage-relationships), [measures](powerbi-desktop-measures), and Q&A improvements  
@@ -33,13 +33,13 @@ Authoring an ISV content pack uses the Power BI Desktop and the PowerBI.com. The
 
 You may be familiar with each piece as existing Power BI features. When building a content pack, there are additional things to consider for each aspect, see each section below for more details.
 
-**Note:** an ISV content pack currently requires a single dashboard, report and dataset per content pack.
+**Note:** a template content pack currently requires a single dashboard, report and dataset per content pack.
 
 <a name="queries"></a>
 ## Queries
-For ISV content packs, queries developed in the Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (direct query is not supported). If your data source is not currently supported by the Power BI Desktop, please respond to your Azure Certified nomination.
+For template content packs, queries developed in the Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (direct query is not supported). If your data source is not currently supported by the Power BI Desktop, please respond to your Azure Certified nomination.
 
-**Note:** ISV content packs only support one data source per content pack content pack. If your scenario requires more than one data source, please contact the Power BI team through your Azure Certified nomination.
+**Note:** template content packs only support one data source per content pack content pack. If your scenario requires more than one data source, please contact the Power BI team through your Azure Certified nomination.
 
 ### Consider the source
 The queries define the data that will be included in the data model. Depending on the size of your system, these queries should also include filters to ensure your customers are dealing with a manageable size that fits your business scenario.
@@ -52,7 +52,7 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 ### Parameters
 [Parameters](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
 
-**Note:** ISV content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md/#templates) portion all values provided by the users will be literal.
+**Note:** template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md/#templates) portion all values provided by the users will be literal.
 
 ### Additional query tips
 -	Ensure all columns are typed appropriately
@@ -93,9 +93,9 @@ The report pages offer additional insight into the data included in your content
 ## Dashboard
 The dashboard is the main point of interaction with your content pack for your customers. It should include an overview of the content included, especially the important metrics for your business scenario.
 
-To create a dashboard for your ISV content pack, simply upload your PBIX through Get Data > Files or publish directly from the Power BI Desktop.
+To create a dashboard for your template content pack, simply upload your PBIX through Get Data > Files or publish directly from the Power BI Desktop.
 
-**Note:** ISV content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
+**Note:** template content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
 
 ### Additional dashboard tips
 -	Maintain the same theme when pinning so that the tiles on your dashboard are consistent
@@ -104,5 +104,14 @@ To create a dashboard for your ISV content pack, simply upload your PBIX through
 -	All dashboard tiles should have appropriate titles/subtitles
 -	Consider groupings in the dashboard for different scenarios, either vertically or horizontally
 
+<a name="restrictions"></a>
+## Summary of restrictions
+As listed in the above sections, currently the template content packs have a set of restrictions:
+    - built in PBI Desktop (other inputs such as Excel files are not supported)  
+    - data source must be supported for Scheduled Data refresh (direct query is not supported)  
+    - queries handle return consistent schema or errors where appropriate (dynamic schema is not supported)  
+    - one data source per content pack (multiple data sources such as mashups are not supported)  
+    - parameters must be type text, other types and "list of values" is not supported)  
+    - one dashboard, report and dataset (multiple reports, datasetsare not supported)  
 
 Next: [Content Pack Testing](powerbi-developer-content-pack-testing.md)

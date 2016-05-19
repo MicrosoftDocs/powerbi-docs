@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="ISV Content Pack Testing"
-   description="ISV Content Pack Testing"
+   pageTitle="Template Content Pack Testing"
+   description="Template Content Pack Testing"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
@@ -20,14 +20,14 @@
    ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
-# ISV Content Pack Testing
+# Template Content Pack Testing
 
->**Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
+>**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
 
 There are multiple ways to test your content pack before submitting it for publishing.  
 
 ## Testing Scheduled Data Refresh
-ISV content packs leverage Refresh in PowerBI.com to instantiate a content pack with the customer's data when they connect. Prior to the content pack being publically available, you can test this flow with the Desktop file you've created.
+Template content packs leverage Refresh in PowerBI.com to instantiate a content pack with the customer's data when they connect. Prior to the content pack being publically available, you can test this flow with the Desktop file you've created.
 
 After uploading the file, select the "…" next to the dataset and select Schedule Refresh. Configure credentials for the source. Make sure that your dataset refreshes successfully, try both "Refresh Now" and "Scheduled Refresh". If your refresh hits any failures, check the error message and validate your queries and your end system.
 
@@ -39,11 +39,11 @@ After uploading the file, select the "…" next to the dataset and select Schedu
 
 <a name="templates"></a>
 ## Testing Templates
->**Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
+>**Note:** Developing template content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
 
 A template content pack is similar to existing solutions except that it does not include the actual data in the dataset. Instead, when a user consumes or instantiates a template, they are prompted for parameters and credentials in order to connect. Once connected, they'll see their own data in the dashboard, report and datasets.
 
-**Note:** Template content packs can only include 1 dashboard, 1 report and 1 dataset.
+**Note:** Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the (authoring)(powerbi-developer-content-pack-authoring.md/#restrictions)  page. 
 
 ![tips](media/powerbi-developer-content-pack/gear.png)
 

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="IntelliBoard content pack for Power BI"
-   description="IntelliBoard content pack for Power BI"
+   pageTitle="Content Pack Certification Program"
+   description="Content Pack Certification Program"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
@@ -20,16 +20,16 @@
    ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
-# ISV Content Pack Overview
+# Content Pack Certification Program Overview
 
 A content pack is a set of out-of-box content allowing users to immediately gain insights from a source.  A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow. 
 
 ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs allow offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. These template content packs are intended to eventually become publically available in the Power BI content pack gallery (app.powerbi.com/getdata/services). An example of the public content pack experience can be found [here](powerbi-developer-content-pack-experience.md).
 
->**Note:** This requires access to the preview features and therefore initial approval through the [Microsoft Azure Certified](#Nomination) program to access. If you're interested, please submit a nomination.
+>**Note:** The Content Pack Certification Program requires access to the preview features and therefore initial approval through the [Microsoft Azure Certified](#Nomination) program to access. If you're interested, please submit a nomination.
 
 ## Overview
-The general process to develop and submit an ISV content pack is as follows:
+The general process to develop and submit an template content pack is as follows:
 
 1.	Submit nomination through Azure Certified
 2.	Build content in the Power BI Desktop
