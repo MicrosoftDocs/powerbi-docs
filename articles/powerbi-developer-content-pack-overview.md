@@ -60,14 +60,14 @@ Content packs provide insights and metrics focused on a specific business scenar
 ## Nomination
 Submissions to build a public content pack are collected through the Microsoft Azure Certified program. We currently require an individual submission for each artifact you want to build.
 
-[https://azure.microsoft.com/en-us/marketplace/programs/certified/apply/](https://azure.microsoft.com/en-us/marketplace/programs/certified/apply/)
+[https://azure.microsoft.com/marketplace/programs/certified/apply/](https://azure.microsoft.com/marketplace/programs/certified/apply/)
 
 There are multiple steps to complete the nomination.
 -	Submit nomination
 -	Complete secondary form
 -	Returned a signed agreement
 -	Receive approval from Power BI team along with instructions for development
--   Complete pre-requirements in order to publish the content pack (see [submission](powerbi-developer-content-pack-testing.md/#submission)).
+-   Complete pre-requirements in order to publish the content pack (see [submission](powerbi-developer-content-pack-testing.md#submission)).
 
  ![Azure Certification](media/powerbi-developer-content-pack/nomination.png)
 

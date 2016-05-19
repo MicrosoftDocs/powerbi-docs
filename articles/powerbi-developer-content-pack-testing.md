@@ -22,7 +22,7 @@
 
 # Template Content Pack Testing
 
->**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
+>**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
 There are multiple ways to test your content pack before submitting it for publishing.  
 
@@ -40,11 +40,12 @@ After uploading the file, select the "…" next to the dataset and select Schedu
 
 <a name="templates"></a>
 ## Testing Templates
->**Note:** Developing template content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
+
+>**Note:** Developing template content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
 A template content pack is similar to existing solutions except that it does not include the actual data in the dataset. Instead, when a user consumes or instantiates a template, they are prompted for parameters and credentials in order to connect. Once connected, they'll see their own data in the dashboard, report and datasets.
 
-**Note:** Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the (authoring)(powerbi-developer-content-pack-authoring.md/#restrictions)  page. 
+**Note:** Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](powerbi-developer-content-pack-authoring.md#restrictions)  page. 
 
 ![tips](media/powerbi-developer-content-pack/gear.png)
 
@@ -59,7 +60,7 @@ We suggest naming your dashboard, report and dataset consistently across your co
 
 <a name="submission"></a>
 ## Submission
-**Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
+**Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
 The submission process will provide Power BI with access to the template you've created as well as the original PBIX file.
 
