@@ -37,7 +37,7 @@ After uploading the file, select the "…" next to the dataset and select Schedu
 
 ![settings](media/powerbi-developer-content-pack/scheduledrefresh.png)
 
-
+<a name="templates"></a>
 ## Testing Templates
 >**Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
 

@@ -26,10 +26,10 @@
 
 Authoring an ISV content pack uses the Power BI Desktop and the PowerBI.com. There are four components to your content pack:
 
--	Queries allow you to [connect](powerbi-desktop-connect-to-data/) and [transform](powerbi-desktop-query-overview/) the data, as well as define parameters <link>.
--	Data model to create [relationships](powerbi-desktop-create-and-manage-relationships), [measures](powerbi-desktop-measures), and Q&A improvements <link>.
--	Report [pages](powerbi-desktop-report-view) include visuals and filters to provide insights into your data.
--	[Dashboard](powerbi-service-dashboards/) and [tiles](powerbi-service-create-a-dashboard/) offer an overview of the insights included
+-	Queries allow you to [connect](powerbi-desktop-connect-to-data/) and [transform](powerbi-desktop-query-overview/) the data, as well as define [parameters](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
+-	Data model to create [relationships](powerbi-desktop-create-and-manage-relationships), [measures](powerbi-desktop-measures), and Q&A improvements  
+-	Report [pages](powerbi-desktop-report-view) include visuals and filters to provide insights into your data  
+-	[Dashboard](powerbi-service-dashboards/) and [tiles](powerbi-service-create-a-dashboard/) offer an overview of the insights included  
 
 You may be familiar with each piece as existing Power BI features. When building a content pack, there are additional things to consider for each aspect, see each section below for more details.
 
@@ -37,7 +37,7 @@ You may be familiar with each piece as existing Power BI features. When building
 
 <a name="queries"></a>
 ## Queries
-For ISV content packs, queries developed in the Power BI Desktop are used to connect to your data source. These queries are required to return a consistent schema and are supported for Scheduled Data refresh. If your data source is not currently supported by the Power BI Desktop, please respond to your Azure Certified nomination.
+For ISV content packs, queries developed in the Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (direct query is not supported). If your data source is not currently supported by the Power BI Desktop, please respond to your Azure Certified nomination.
 
 **Note:** ISV content packs only support one data source per content pack content pack. If your scenario requires more than one data source, please contact the Power BI team through your Azure Certified nomination.
 
@@ -50,7 +50,9 @@ Power BI content packs can execute multiple queries in parallel and for multiple
 Ensure your queries are resilient to changes in your system, changes in schema on refresh can break the model. If the source could return null/missing schema result for some queries, consider returning an empty table or throw a custom error messages that is meaningful to your user.
 
 ### Parameters
-Parameters in Power BI Desktop <link> allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
+[Parameters](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
+
+**Note:** ISV content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md/#templates) portion all values provided by the users will be literal.
 
 ### Additional query tips
 -	Ensure all columns are typed appropriately
@@ -61,10 +63,10 @@ Parameters in Power BI Desktop <link> allow your users to provide input values t
 ## Data Model
 A well-defined data model will ensure your customers can easily and intuitively interact with the content pack. Create the data model in the Power BI Desktop.
 
-**Note**: Much of the basic modelling (typing, column names) should be done in the query step.
+**Note**: Much of the basic modelling (typing, column names) should be done in the [queries](#queries).
 
 ### Q&A
-The modelling will also affect how well Q&A can provide results for your customers. Ensure you add synonyms <link> to commonly used columns and that your columns are properly named in the [queries](#queries).
+The modelling will also affect how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and that your columns are properly named in the [queries](#queries).
 
 ### Additional data model tips
 -	All value columns have formatting applied (note: types should bethat applyied in the Query)
@@ -77,7 +79,7 @@ The modelling will also affect how well Q&A can provide results for your custome
 ## Reports
 The report pages offer additional insight into the data included in your content pack. Use the pages of the reports to answer the key business questions your content pack is trying to address. Create the report using the Power BI Desktop.
 
-**Note:** Only one report may be included in a content pack, so take advantage of the different pages to call out particular sections of your scenario.
+**Note:** Only one report may be included in a content pack, take advantage of the different pages to call out particular sections of your scenario.
 
 ### Additional report tips
 -	Use more than one visual per page for cross-filtering
@@ -92,6 +94,8 @@ The report pages offer additional insight into the data included in your content
 The dashboard is the main point of interaction with your content pack for your customers. It should include an overview of the content included, especially the important metrics for your business scenario.
 
 To create a dashboard for your ISV content pack, simply upload your PBIX through Get Data > Files or publish directly from the Power BI Desktop.
+
+**Note:** ISV content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
 
 ### Additional dashboard tips
 -	Maintain the same theme when pinning so that the tiles on your dashboard are consistent
