@@ -22,7 +22,7 @@
 
 # Template Content Pack Authoring
 
->**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md/#Nomination) program to access. If you're interested, please submit a nomination.
+>**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
 Authoring a template content pack uses the Power BI Desktop and the PowerBI.com. There are four components to your content pack:
 
@@ -52,7 +52,7 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 ### Parameters
 [Parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
 
-**Note:** template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md/#templates) portion all values provided by the users will be literal.
+**Note:** template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md#templates) portion all values provided by the users will be literal.
 
 ### Additional query tips
 -	Ensure all columns are typed appropriately
