@@ -75,4 +75,4 @@ In this walkthrough you learned how to integrate a report into an app by getting
 -	[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
 -	[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)
 -	[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)
--	[Get reports operation](https://msdn.microsoft.com/library/mt634543.aspx)
+-	[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)

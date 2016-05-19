@@ -26,7 +26,7 @@ In the [Integrate a tile into an app walkthrough](powerbi-developer-integrate-ti
 **Sample Source Code**
 
 - [Sample JavaScript to load a tile into an IFrame (Default.aspx)](#default-aspx)
-- [Sample C# code to get access token, get dashboard, and get tile (Default.aspx.cs)](default-code)
+- [Sample C# code to get access token, get dashboard, and get tile (Default.aspx.cs)](#default-code)
 
 <a name="default-aspx"/>
 ## Sample JavaScript to load a tile into an IFrame (Default.aspx)

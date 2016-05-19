@@ -26,7 +26,7 @@ In the [Integrate a report into an app walkthrough](powerbi-developer-integrate-
 **Sample Source Code**
 
 - [Sample JavaScript to load a report into an IFrame (Default.aspx)](#default-aspx)
-- [Sample C# code to get access token, and get report (Default.aspx.cs)](default-code)
+- [Sample C# code to get access token, and get report (Default.aspx.cs)](#default-code)
 
 <a name="default-aspx"/>
 ## Sample JavaScript to load a report into an IFrame (Default.aspx)
