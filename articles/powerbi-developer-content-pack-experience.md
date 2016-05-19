@@ -23,7 +23,7 @@
 # Template Content Pack Experiences 
 This section highlights a typical experience for a user connecting to an ISV [content pack](powerbi-content-packs-services.md). 
 
-Try it yourself by connect to a released content pack at https://app.powerbi.com/getdata/services (such as the [GitHub content pack](https://app.powerbi.com/getdata/services/github) described below).
+Try the connection experience yourself by connecting to a released content pack at https://app.powerbi.com/getdata/services (such as the [GitHub content pack](https://app.powerbi.com/getdata/services/github) described below).
 
 ## Connect
 To get started, a user browsers the content pack gallery and selects a content pack to connect to. The content pack entry provides a name, an icon and a descriptive text providing more information to the user.

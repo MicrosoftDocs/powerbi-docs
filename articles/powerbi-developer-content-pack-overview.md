@@ -38,7 +38,7 @@ The general process to develop and submit an template content pack is as follows
 5.	Submit the content to Power BI for publishing
 
 ## Requirements
-To build and submit a content pack, you must meet the following requirements:
+To build and submit a content pack, you must meet the following requirements:  
 -	Business user scenarios that fit well with Power BI  
 -	Stable services with an API accessible through public internet  
 -	Signed partner agreement for content pack development  

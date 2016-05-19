@@ -26,7 +26,7 @@
 
 Authoring a template content pack uses the Power BI Desktop and the PowerBI.com. There are four components to your content pack:
 
--	Queries allow you to [connect](powerbi-desktop-connect-to-data/) and [transform](powerbi-desktop-query-overview/) the data, as well as define [parameters](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
+-	Queries allow you to [connect](powerbi-desktop-connect-to-data/) and [transform](powerbi-desktop-query-overview/) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 -	Data model to create [relationships](powerbi-desktop-create-and-manage-relationships), [measures](powerbi-desktop-measures), and Q&A improvements  
 -	Report [pages](powerbi-desktop-report-view) include visuals and filters to provide insights into your data  
 -	[Dashboard](powerbi-service-dashboards/) and [tiles](powerbi-service-create-a-dashboard/) offer an overview of the insights included  
@@ -50,7 +50,7 @@ Power BI content packs can execute multiple queries in parallel and for multiple
 Ensure your queries are resilient to changes in your system, changes in schema on refresh can break the model. If the source could return null/missing schema result for some queries, consider returning an empty table or throw a custom error messages that is meaningful to your user.
 
 ### Parameters
-[Parameters](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
+[Parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
 
 **Note:** template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md/#templates) portion all values provided by the users will be literal.
 
@@ -106,12 +106,15 @@ To create a dashboard for your template content pack, simply upload your PBIX th
 
 <a name="restrictions"></a>
 ## Summary of restrictions
-As listed in the above sections, currently the template content packs have a set of restrictions:
-    - built in PBI Desktop (other inputs such as Excel files are not supported)  
-    - data source must be supported for Scheduled Data refresh (direct query is not supported)  
-    - queries handle return consistent schema or errors where appropriate (dynamic schema is not supported)  
-    - one data source per content pack (multiple data sources such as mashups are not supported)  
-    - parameters must be type text, other types and "list of values" is not supported)  
-    - one dashboard, report and dataset (multiple reports, datasetsare not supported)  
+As listed in the above sections, currently the template content packs have a set of restrictions:  
+
+|Supported | *Not Supported* |
+|---|---|
+|Datasets built in PBI Desktop | *Datasets from  other content packs or inputs such as Excel files*|
+|Data source supported for cloud Scheduled Data refresh | *Direct query or on-prem connecitivty is not supported*| 
+|Queries returning consistent schema or errors where appropriate | *Dynamic or custom schemas* |
+|One data source per dataset | *Multiple data sources such as mashups or URLs that are detected as mutliple data sources*|
+|Parameters of type text | *Other parameter types (such as date) or "list allowed of values"*|
+|One dashboard, report and dataset | *Multiple dashboards, reports or datasets*| 
 
 Next: [Content Pack Testing](powerbi-developer-content-pack-testing.md)

@@ -32,8 +32,9 @@ Template content packs leverage Refresh in PowerBI.com to instantiate a content 
 After uploading the file, select the "…" next to the dataset and select Schedule Refresh. Configure credentials for the source. Make sure that your dataset refreshes successfully, try both "Refresh Now" and "Scheduled Refresh". If your refresh hits any failures, check the error message and validate your queries and your end system.
 
 ### Additional refresh tips
--	Only one data source should be detected when you try to schedule refresh
--	Test connection should indicate that your user will be able to load the content pack. If that's not the case, ensure your queries handle the additional error cases.
+-	Only one data source should be detected when you try to schedule refresh  
+-	Test connection should indicate that your user will be able to load the content pack. If that's not the case, ensure your queries handle the additional error cases.  
+-   Refresh should complete in a reasonable time, ~5mins is suggested  
 
 ![settings](media/powerbi-developer-content-pack/scheduledrefresh.png)
 
