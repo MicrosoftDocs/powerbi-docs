@@ -85,6 +85,10 @@ public class PBITile
 }
 ```
 
+## Next step
+
+To integrate a tile into an app, you load a tile into an IFrame. In the next step, you learn how to [Load a tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md).
+
 [Next Step >](powerbi-developer-load-tile-iframe.md)
 
 ## See also

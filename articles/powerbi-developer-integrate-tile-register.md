@@ -45,17 +45,19 @@ Here's how your **Register an Application for Power BI** page should look:
 
 ![](media\powerbi-developer-integrate-tile\register-app.png)
 
+Now that you have registered your web app with **Azure AD**, you can get an authorization access token from **Azure AD** to access **Power BI** dashboards and tiles.
+
+![](media\powerbi-developer-integrate-tile\integrate-tile-step1b.png)
+
 After you have a **Client ID** and **Client Secret**, you can configure your web app, such as the [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app), to be able to access **Power BI** tiles. The next section shows you how to configure the sample.
 
 <a name="configure-sample"/>
 ## Configure the Integrate a tile sample
 If you downloaded the [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app), you use the **Client ID** and **Client Secret** you get after registration so that the sample can authenticate to Azure AD. To configure the sample, change the **Client ID** and **Client Secret** in web.config. To learn more about how to authenticate to Azure AD, see [Step 2: Get a Power BI dashboard](powerbi-developer-integrate-tile-get-dashboard.md).
 
-Now that you have registered your web app with **Azure AD**, you can get an authorization access token from **Azure AD** to access **Power BI** dashboards and tiles.
+## Next step
 
-![](media\powerbi-developer-integrate-tile\integrate-tile-step1b.png)
-
-To integrate a tile into an app, you need to get a tile which is in a dashboard. In the next step, you learn how to [Get a Power BI dashboard](powerbi-developer-get-dashboard.md). In step 3, you learn how to get a tile from a dashboard.
+To integrate a tile into an app, you need to get a tile which is in a dashboard. In the next step, you learn how to [Get a Power BI dashboard](powerbi-developer-integrate-tile-get-dashboard.md). In step 3, you learn how to get a tile from a dashboard.
 
 [Next Step >](powerbi-developer-get-dashboard.md)
 
@@ -66,4 +68,4 @@ To integrate a tile into an app, you need to get a tile which is in a dashboard.
 -	[Configure the integrate a tile sample](powerbi-developer-register.md#configure-sample)
 -	[Get an authentication access token](powerbi-developer-get-dashboard.md#get-token)
 -	[App permissions](powerbi-developer-power-bi-permissions.md)
--	[Step 2: Get a Power BI dashboard]( powerbi-developer-get-dashboard.md)
+-	[Step 2: Get a Power BI dashboard](powerbi-developer-integrate-tile-get-dashboard.md)

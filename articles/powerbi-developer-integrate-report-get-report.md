@@ -188,6 +188,10 @@ public class PBIReport
 }
 ```
 
+## Next step
+
+To integrate a report into an app, you load a report into an IFrame. In the next step, you learn how to [Load a report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md).
+
 [Next Step >](powerbi-developer-integrate-report-load-report-iframe.md)
 
 ## See also

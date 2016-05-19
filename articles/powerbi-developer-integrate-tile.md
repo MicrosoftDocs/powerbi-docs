@@ -44,6 +44,8 @@ Here are the steps to integrate, or embed, a tile into a web page.
 - [Step 4: Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)
 - [Integrate a tile into an app code listing](powerbi-developer-integrate-tile-code.md)
 
+## Next step
+
 In the next step, you learn how to [Register a web app with Azure AD](powerbi-developer-integrate-tile-register.md) to get a **Client ID** and **Client Secret** to authenticate the web app with **Azure AD**. A Client ID and Client Secret is used to identify your app in Azure AD. After you get a **Client ID** and **Client Secret**, you can configure the [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app). See [Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample).
 
 [Next Step >](powerbi-developer-integrate-tile-register.md)

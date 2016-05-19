@@ -146,7 +146,7 @@ Now that you have an **access token**, you can call the [Get Dashboards](https:/
 **Get dashboard**
 
 ```
-//Get a dashboard id. 
+//Get a dashboard id.
 protected string GetDashboard(int index)
 {
     string dashboardId = string.Empty;
@@ -189,6 +189,10 @@ public class PBIDashboard
     public string displayName { get; set; }
 }
 ```
+
+## Next step
+
+To integrate a tile into an app, you need to get a tile. In the next step, you learn how to [Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md).
 
 [Next Step >](powerbi-developer-integrate-tile-get-tile.md)
 

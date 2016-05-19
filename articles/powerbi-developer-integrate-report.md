@@ -43,6 +43,8 @@ Here are the steps to integrate, or embed, a report into a web page.
 - [Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md)
 - [Integrate a report into an app code listing](powerbi-developer-integrate-report-code.md)
 
+## Next step
+
 In the next step, you learn how to [Register a web app with Azure AD](powerbi-developer-integrate-report-register.md) to get a **Client ID** and **Client Secret** to authenticate the web app with **Azure AD**. A Client ID and Client Secret is used to identify your app in Azure AD. After you get a **Client ID** and **Client Secret**, you can configure the [Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app). See [Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample).
 
 [Next Step >](powerbi-developer-integrate-report-register.md)
