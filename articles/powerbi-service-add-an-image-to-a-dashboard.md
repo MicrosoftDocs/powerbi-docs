@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="_3q6VEBhGew"
    qualityFocus="monitoring"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/10/2016"
+   ms.date="05/20/2016"
    ms.author="mihart"/>
 
 # Add an image to a dashboard

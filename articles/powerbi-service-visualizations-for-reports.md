@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="SYk_gWrtKvM"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/12/2016"
+   ms.date="05/19/2016"
    ms.author="mihart"/>
 
 # Visualizations in Power BI  

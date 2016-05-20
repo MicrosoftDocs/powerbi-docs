@@ -40,6 +40,8 @@ Data can be exported from visuals on a dashboard and in reports.
 3. Open the CSV file in Excel.
 
     ![](media/powerbi-service-export-data/pbi-export-to-excel.png)
+    
+    >**NOTE**: If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine.
 
 
 ## Export a report visual's data
