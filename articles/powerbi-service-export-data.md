@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/06/2016"
+   ms.date="05/20/2016"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
@@ -41,7 +41,10 @@ Data can be exported from visuals on a dashboard and in reports.
 
     ![](media/powerbi-service-export-data/pbi-export-to-excel.png)
     
-    >**NOTE**: If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine.
+    >**NOTE**: If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode are currency symbols and foreign words. the workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
+    
+    1. Open Excel
+    2. From the **Data** tab, select **Get external data** > **From text**.
 
 
 ## Export a report visual's data
