@@ -3,9 +3,9 @@
    description="Tutorial: create and publish an organizational content pack in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="ajayan" 
    manager="mblythe" 
-   backup=""
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -72,7 +72,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 	![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/cp_searchbox.png) 
 
 5.  They see your content pack.  
-	![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/cp_contentpack.png) 
+	![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/powerbi-find-content-pack-organization.png) 
 
 	>**Tip:** The URL displayed in your browser is an unique address for this content pack.  Want to tell your coworkers about this new content pack?  Paste the URL into an email.
 
