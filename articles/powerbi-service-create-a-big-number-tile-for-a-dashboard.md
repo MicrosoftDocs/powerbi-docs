@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="05/22/2016"
    ms.author="mihart"/>
 
 # Create a big number tile for a Power BI dashboard by asking a question  
@@ -37,7 +37,7 @@ The question box is the easiest way to make a number tile like this.
 3.  For example, type "number of opportunities" in the question box.
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QA_Number.png)
 
-    The question box suggests, auto-completes to **Show opportunity count**, and displays the total number.  
+    The question box suggests, restates as **Showing opportunity count**, and displays the total number.  
 
 4.  Select the pin icon ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_PinTile.png) in the upper-right corner to add the number tile to the dashboard. 
 
@@ -55,6 +55,23 @@ The question box is the easiest way to make a number tile like this.
 
 7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.  
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_DashTileTitle.png)
+
+## Troubleshooting
+If you do not see a question box at all, it may be that you have not enabled Q&A for this dataset.  
+
+##  Enable Q&A
+
+1.  In the upper-right corner of Power BI, select the cog icon ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-cog.png) and choose **Settings**.
+
+    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/powerbi-settings.png)
+
+2.  Select **datasets** and choose the dataset to enable for Q&A.
+
+    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-settings.png)
+
+3. Expand **Q&A and Cortana**, select the checkbox for **Turn on Q&A for this dataset** and choose **Apply**.
+
+    ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## See also  
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)  

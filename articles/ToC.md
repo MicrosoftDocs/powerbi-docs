@@ -164,6 +164,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-q-and-a",
             "powerbi-service-how-to-use-q-and-a",
             "powerbi-service-tutorial-introduction-to-q-and-a",
+            "powerbi-service-q-and-a-direct-query",
             "powerbi-service-make-your-data-work-well-with-q-and-a",
             "powerbi-service-cortana-intro",
             "powerbi-service-cortana-ask-questions",
