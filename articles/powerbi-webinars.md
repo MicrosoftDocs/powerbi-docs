@@ -26,17 +26,13 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[Introduction to Microsoft PowerApps - 05/19/16](https://info.microsoft.com/CO-PowerApps-WBNR-FY16-05May-Intro-to-PowerApps-CLE-Registration.html?Is=Website)
-
-[Integrating Power BI with your Application - 05/24/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Integrating-PowerBI-with-your-Application-Registration.html?Is=Website)
-
-[Data Preparation is the Keystone by Reza Rad - 05/24/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Data-Preparation-Registration.html?Is=Website)
-
-[Introduction to MicrosoftFlow - 05/24/16](https://info.microsoft.com/CO-MSFTFlow-WBNR-FY16-05May-Intro-to-MicrosoftFLow-CLE-Registration.html?Is=Website)
-
 [Power BI Sales Management Solution Webinar (Dynamics CRM, Salesforce) - 05/25/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-25-PowerBI-Sales-Management-Registration.html?Is=Website)
 
+[Power BI Q&A - Best Practices - 05/26/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-26-PowerBI-Q-and-A-Registration.html?Is=Website)
+
 [Introduction to Microsoft PowerApps - 05/26/16](https://info.microsoft.com/CO-PowerApps-WBNR-FY16-05May-Intro-to-PowerApps-CLE-Registration.html?Is=Website)
+
+[DAX best practices from the field by Paul Turley - 05/31/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-31-DAX-best-practices-Registration.html?Is=Website)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -44,13 +40,13 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
+[Integrating Power BI with your Application - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Integrating-PowerBI-with-your-Application-Registration.html?Is=Website)
+
+[Data Preparation is the Keystone by Reza Rad - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Data-Preparation-Registration.html?Is=Website)
+
 [Introduction to Power BI for the Excel User by Matt Allington - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-17-Intro-to-PowerBI-for-Excel-Registration.html?Is=Website)
 
 [Dashboard Makeover: Learn how to make your data shine - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html?Is=Website)
-
-[What’s New and Exciting in Power BI - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-10-Whats-New-in-PowerBI-Registration.html?Is=Website)
-
-[Connecting to SAP data with Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
 
 ###  Introductory webinars
 
@@ -58,9 +54,9 @@ Watch our latest webinars on-demand.
 
 [What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
 
-[What’s New and Exciting in Power BI- February 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-04-PowerBIWhatsNew-Registration.html?Is=Website)
-
 ### Intermediate webinars
+
+[Integrating Power BI with your Application - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Integrating-PowerBI-with-your-Application-Registration.html?Is=Website)
 
 [How to Design Visually Stunning Reports in Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html?Is=Website)
 
@@ -79,6 +75,8 @@ Watch our latest webinars on-demand.
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
 ### Community webinars
+
+[Data Preparation is the Keystone by Reza Rad - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Data-Preparation-Registration.html?Is=Website)
 
 [Introduction to Power BI for the Excel User by Matt Allington - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-17-Intro-to-PowerBI-for-Excel-Registration.html?Is=Website)
 
