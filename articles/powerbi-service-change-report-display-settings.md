@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="5tg-OXzxe2g"
    qualityFocus="no"
    qualityDate=""/>
 
