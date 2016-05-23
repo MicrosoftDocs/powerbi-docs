@@ -20,7 +20,7 @@
    ms.date="05/02/2016"
    ms.author="ajayan"/>
 
-# Tutorial: Create and publish an organizational content pack in Power BI 
+# Tutorial: Create and publish an organizational content pack in Power BI
 
 In this tutorial we'll create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI.
 
