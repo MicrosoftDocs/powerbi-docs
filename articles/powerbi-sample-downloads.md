@@ -3,7 +3,7 @@
    description="Download the Power BI industry samples (Excel workbooks)"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="amac"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/24/2016"
+   ms.date="05/24/2016"
    ms.author="mihart"/>
 
 # Download the Power BI industry samples (Excel workbooks)
