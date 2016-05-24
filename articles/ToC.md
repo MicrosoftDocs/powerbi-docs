@@ -614,15 +614,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Power BI API",
           "articles": [
-          "powerbi-developer-overview-of-power-bi-rest-api",
-          "powerbi-developer-create-an-azure-active-directory-tenant",
-          "powerbi-developer-register-a-client-app",
-          "powerbi-developer-register-a-web-app",
-          "powerbi-developer-authenticate-to-power-bi-service",
-          "powerbi-developer-authenticate-a-client-app",
-          "powerbi-developer-authenticate-a-web-app",
-          "powerbi-developer-power-bi-permissions",
-          "powerbi-developer-rest-api-reference"
+            "powerbi-developer-overview-of-power-bi-rest-api",
+            "powerbi-developer-create-an-azure-active-directory-tenant",
+            "powerbi-developer-register-a-client-app",
+            "powerbi-developer-register-a-web-app",
+            "powerbi-developer-authenticate-to-power-bi-service",
+            "powerbi-developer-authenticate-a-client-app",
+            "powerbi-developer-authenticate-a-web-app",
+            "powerbi-developer-power-bi-permissions",
+            "powerbi-developer-rest-api-reference"
           ],
           "numberOfFeaturedArticles": 9
         }
