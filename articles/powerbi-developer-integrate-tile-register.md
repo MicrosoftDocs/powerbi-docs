@@ -15,7 +15,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2016"
+   ms.date="05/24/2016"
    ms.author="derrickv"/>
 
 # Step 1: Register a web app with Azure AD

@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Overview of Power BI REST API"
-   description="Overview of Power BI REST API"
+   pageTitle="Overview of Power BI API"
+   description="Overview of Power BI API"
    services="powerbi"
    documentationCenter=""
    authors="dvana"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Overview of Power BI REST API
+# Overview of Power BI API
 
 Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time.
 
@@ -34,7 +34,8 @@ Here are some of the things you can do with the Power BI API.
 |---|---
 |Get started with your first app.| [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md) and [Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
 |Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
-|Integrate a tile or report into an app.|[Integrate a tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+|Embed tiles into an app.|[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
+|Embed reports into an app.|[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
 |Create a custom visual.| [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 |Authenticate a Power BI web app.|[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
 
