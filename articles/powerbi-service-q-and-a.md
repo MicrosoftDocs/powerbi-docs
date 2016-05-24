@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Q&A in Power BI"
-   description="Q&A in Power BI."
+   description="Documentation overview topic for Power BI Q&A natural language queries."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2016"
+   ms.date="05/25/2016"
    ms.author="mihart"/>
 
 # Q&A in Power BI
@@ -40,6 +40,8 @@ Learn how to talk to Q&A to get the best possible results.
 
 [Add featured questions to your datasets](powerbi-service-q-and-a-create-featured-questions.md)
 and Q&A will suggest these questions to your colleagues.
+
+[Enable Q&A for your on-premises datasets](powerbi-service-q-and-a-direct-query.md)
 
 [Tutorial: Use Power BI Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md):
 Use Q&A in a realistic industry tutorial.

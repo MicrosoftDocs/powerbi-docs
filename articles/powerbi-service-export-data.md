@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/20/2016"
+   ms.date="05/25/2016"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
@@ -56,7 +56,6 @@ Data can be exported from visuals on a dashboard and in reports.
     >**NOTE**: The option to remove a visual is only available in [report Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 2. See step 3 above.
-
 
 ## See also
 
