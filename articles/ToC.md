@@ -587,7 +587,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-developer-integrate-tile-get-dashboard",
             "powerbi-developer-integrate-tile-get-tile",
             "powerbi-developer-integrate-tile-load-tile-iframe",
-            "powerbi-powerbi-developer-integrate-tile-code"
+            "powerbi-developer-integrate-tile-code"
           ],
           "numberOfFeaturedArticles": 6
         },
@@ -598,7 +598,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-developer-integrate-report-register",
             "powerbi-developer-integrate-report-get-report",
             "powerbi-developer-integrate-report-load-report-iframe",
-            "powerbi-powerbi-developer-integrate-report-code"
+            "powerbi-developer-integrate-report-code"
           ],
           "numberOfFeaturedArticles": 5
         },
