@@ -3,7 +3,7 @@
    description="Customer Profitability sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="amac"
    manager="mblythe"
    backup=""
    editor=""
