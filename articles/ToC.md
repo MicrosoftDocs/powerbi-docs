@@ -562,7 +562,6 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-developer-walkthrough-push-data",
             "powerbi-developer-integrate-tile",
             "powerbi-developer-integrate-report"
-
           ],
           "numberOfFeaturedArticles": 5
         },
