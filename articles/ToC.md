@@ -557,11 +557,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Get started",
           "articles": [
-            "powerbi-developer-overview-of-power-bi-rest-api",
-            "powerbi-developer-what-you-need-to-create-an-app",
-            "powerbi-developer-walkthrough-push-data",
-            "powerbi-developer-integrate-tile",
-            "powerbi-developer-integrate-report"
+            "powerbi-developer-overview-of-power-bi-rest-api"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -613,15 +609,14 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Power BI API",
           "articles": [
-            "powerbi-developer-overview-of-power-bi-rest-api",
+            "powerbi-developer-rest-api-reference",
             "powerbi-developer-create-an-azure-active-directory-tenant",
             "powerbi-developer-register-a-client-app",
             "powerbi-developer-register-a-web-app",
             "powerbi-developer-authenticate-to-power-bi-service",
             "powerbi-developer-authenticate-a-client-app",
             "powerbi-developer-authenticate-a-web-app",
-            "powerbi-developer-power-bi-permissions",
-            "powerbi-developer-rest-api-reference"
+            "powerbi-developer-power-bi-permissions"
           ],
           "numberOfFeaturedArticles": 9
         }
