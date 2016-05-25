@@ -4,7 +4,6 @@
    services="powerbi"
    documentationCenter=""
    authors="dvana"
-   backup=""
    manager="mblythe"
    backup=""
    editor=""
