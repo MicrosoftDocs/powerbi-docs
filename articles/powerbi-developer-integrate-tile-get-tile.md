@@ -4,10 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="dvana"
-   backup=""
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="monitoring"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -15,10 +17,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Step 3: Get a Power BI tile
+# Step 3: Get a tile
 
 ## Introduction
 

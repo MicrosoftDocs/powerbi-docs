@@ -557,19 +557,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Get started",
           "articles": [
-            "powerbi-developer-overview-of-power-bi-rest-api",
-            "powerbi-developer-what-you-need-to-create-an-app",
-            "powerbi-developer-sign-up-for-power-bi-service",
-            "powerbi-developer-create-an-azure-active-directory-tenant",
-            "powerbi-developer-register-a-client-app",
-            "powerbi-developer-register-a-web-app",
-            "powerbi-developer-authenticate-to-power-bi-service",
-            "powerbi-developer-authenticate-a-client-app",
-            "powerbi-developer-authenticate-a-web-app",
-            "powerbi-developer-power-bi-permissions",
-            "powerbi-developer-rest-api-reference"
+            "powerbi-developer-overview-of-power-bi-rest-api"
           ],
-          "numberOfFeaturedArticles": 11
+          "numberOfFeaturedArticles": 5
         },
         {
           "sectionTitle": "Push data into a dashboard",
@@ -583,13 +573,29 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-developer-walkthrough-push-data-complete-code"
           ],
           "numberOfFeaturedArticles": 7
-        },        
+        },
         {
-          "sectionTitle": "Integrate a Power BI tile or report",
+          "sectionTitle": "Integrate a tile into an app",
           "articles": [
-            "powerbi-developer-integrate-a-power-bi-tile-or-report"
+            "powerbi-developer-integrate-tile",
+            "powerbi-developer-integrate-tile-register",
+            "powerbi-developer-integrate-tile-get-dashboard",
+            "powerbi-developer-integrate-tile-get-tile",
+            "powerbi-developer-integrate-tile-load-tile-iframe",
+            "powerbi-developer-integrate-tile-code"
           ],
-          "numberOfFeaturedArticles": 1
+          "numberOfFeaturedArticles": 6
+        },
+        {
+          "sectionTitle": "Integrate a report into an app",
+          "articles": [
+            "powerbi-developer-integrate-report",
+            "powerbi-developer-integrate-report-register",
+            "powerbi-developer-integrate-report-get-report",
+            "powerbi-developer-integrate-report-load-report-iframe",
+            "powerbi-developer-integrate-report-code"
+          ],
+          "numberOfFeaturedArticles": 5
         },
         {
           "sectionTitle": "Create a custom visual",
@@ -599,6 +605,30 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-custom-visuals-review-for-security-and-privacy"
           ],
           "numberOfFeaturedArticles": 3
+        },
+        {
+          "sectionTitle": "ISV Content Packs",
+          "articles": [
+            "powerbi-developer-content-pack-overview",
+            "powerbi-developer-content-pack-authoring",
+            "powerbi-developer-content-pack-testing",
+            "powerbi-developer-content-pack-experience"
+         ],
+         "numberOfFeaturedArticles": 4
+        },
+        {
+          "sectionTitle": "Power BI API",
+          "articles": [
+            "powerbi-developer-rest-api-reference",
+            "powerbi-developer-create-an-azure-active-directory-tenant",
+            "powerbi-developer-register-a-client-app",
+            "powerbi-developer-register-a-web-app",
+            "powerbi-developer-authenticate-to-power-bi-service",
+            "powerbi-developer-authenticate-a-client-app",
+            "powerbi-developer-authenticate-a-web-app",
+            "powerbi-developer-power-bi-permissions"
+          ],
+          "numberOfFeaturedArticles": 9
         }
       ]
     }

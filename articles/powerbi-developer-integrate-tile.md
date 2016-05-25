@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Integrate a tile into an app"
+   pageTitle="Integrate a Power BI tile into an app"
    description="Walkthrough to integrate a tile into an app, sample code"
    services="powerbi"
    documentationCenter=""
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -17,10 +17,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Integrate a tile into an app walkthrough
+# Integrate a tile into an app
 
 ## Introduction
 

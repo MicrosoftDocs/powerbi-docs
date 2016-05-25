@@ -1,12 +1,15 @@
 <properties
-   pageTitle=" Integrate a report into an app – Complete code"
+   pageTitle="Integrate a Power BI report into an app code listing"
    description="Walkthrough to Integrate a report into an app - Load a report into an IFrame"
    services="powerbi"
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="monitoring"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2016"
+   ms.date="05/24/2016"
    ms.author="derrickv"/>
 
 # Integrate a report into an app code listing

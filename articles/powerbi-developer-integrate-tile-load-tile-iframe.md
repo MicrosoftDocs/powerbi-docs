@@ -1,12 +1,15 @@
 <properties
-   pageTitle="Load a tile into an IFrame"
+   pageTitle="Load a Power BI tile into an IFrame"
    description="Walkthrough to Integrate a tile into an app - Load a tile into an IFrame"
    services="powerbi"
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="monitoring"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,10 +17,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Step 4: Load a Power BI tile into an IFrame
+# Step 4: Load a tile into an IFrame
 
 ## Introduction
 
