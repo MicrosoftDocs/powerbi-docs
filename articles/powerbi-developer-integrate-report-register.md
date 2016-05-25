@@ -7,7 +7,9 @@
    manager="mblythe"
    backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="monitoring"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
