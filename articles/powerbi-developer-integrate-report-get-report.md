@@ -17,7 +17,7 @@
    ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Step 2: Get a Power BI report
+# Step 2: Get a report
 
 ## Introduction
 

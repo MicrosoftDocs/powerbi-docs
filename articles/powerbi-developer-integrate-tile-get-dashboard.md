@@ -17,7 +17,7 @@
    ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Step 2: Get a Power BI dashboard
+# Step 2: Get a dashboard
 
 ## Introduction
 

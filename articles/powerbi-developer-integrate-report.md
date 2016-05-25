@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Integrate a report into an app"
+   pageTitle="Integrate a Power BI report into an app"
    description="Walkthrough to integrate a report into an app, sample code"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Integrate a report into an app walkthrough
+# Integrate a report into an app
 
 ## Introduction
 

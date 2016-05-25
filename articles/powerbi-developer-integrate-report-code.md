@@ -1,5 +1,5 @@
 <properties
-   pageTitle=" Integrate a report into an app – Complete code"
+   pageTitle="Integrate a Power BI report into an app code listing"
    description="Walkthrough to Integrate a report into an app - Load a report into an IFrame"
    services="powerbi"
    documentationCenter=""

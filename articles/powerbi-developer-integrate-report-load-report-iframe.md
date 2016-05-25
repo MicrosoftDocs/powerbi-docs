@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Load a report into an IFrame"
+   pageTitle="Load a Power BI report into an IFrame"
    description="Walkthrough to Integrate a report into an app - Load a report into an IFrame"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Step 3: Load a Power BI report into an IFrame
+# Step 3: Load a report into an IFrame
 
 ## Introduction
 
