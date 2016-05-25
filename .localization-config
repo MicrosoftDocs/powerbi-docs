@@ -15,7 +15,7 @@
       "articles/*.md",
       "includes/*.md"
    ],
-   "forceHandoff”: true,
+   "forceHandoff": true,
    "useJavascriptMarkdownTransformer": true,
    "includeDependencies":true,
    "autoPush":true,
