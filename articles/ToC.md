@@ -575,7 +575,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 7
         },
         {
-          "sectionTitle": "Integrate a tile into an app walkthrough",
+          "sectionTitle": "Integrate a tile into an app",
           "articles": [
             "powerbi-developer-integrate-tile",
             "powerbi-developer-integrate-tile-register",
@@ -587,7 +587,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 6
         },
         {
-          "sectionTitle": "Integrate a report into an app walkthrough",
+          "sectionTitle": "Integrate a report into an app",
           "articles": [
             "powerbi-developer-integrate-report",
             "powerbi-developer-integrate-report-register",
