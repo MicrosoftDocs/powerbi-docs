@@ -65,6 +65,7 @@ The gateway allows for the use of DirectQuery to an on-premises SQL Server, SAP 
 |IBM DB2|No|Yes|
 |MySQL|No|Yes|
 |Sybase|No|Yes|
+|SAP BW|No|Yes|
 
 ## Setting up the Power BI Gateway - Enterprise for the first time
 
