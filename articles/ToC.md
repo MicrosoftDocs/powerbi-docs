@@ -607,6 +607,16 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "numberOfFeaturedArticles": 3
         },
         {
+          "sectionTitle": "ISV Content Packs",
+          "articles": [
+            "powerbi-developer-content-pack-overview",
+            "powerbi-developer-content-pack-authoring",
+            "powerbi-developer-content-pack-testing",
+            "powerbi-developer-content-pack-experience"
+         ],
+         "numberOfFeaturedArticles": 4
+        },
+        {
           "sectionTitle": "Power BI API",
           "articles": [
             "powerbi-developer-rest-api-reference",
