@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Dashboard tiles in Power BI"
-   description="All about dashboard tiles in Power BI"
+   description="All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS)."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2016"  
+   ms.date="05/26/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -87,7 +87,7 @@ From here you can:
 3. To close the action menu, select the X icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg).
 
 ### Select (click) a tile
-When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report manager page, or Q&A question that was used to create the tile.
+When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
 
 >**NOTE**: The exception to this is video tiles created directly on the dashbaord using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
 
@@ -100,7 +100,9 @@ When you select a tile, what happens next depends on how the tile was created an
 
 - For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
 
-- If you don't have permissions, selecting a tile created from SSRS produces no action. Otherwise, the [SSRS report manager page opens](https://msdn.microsoft.com/library/mt604784.aspx).
+- If you don't have permission to the report within SSRS, selecting a tile created from SSRS will produce a page indicating you don't have access (rsAccessDenied).
+
+- If you don't have access to the network where the SSRS server is located, selecting a tile created from SSRS will product a page that will indicate it cannot locate the server (HTTP 404). Your device needs to have access network access to the report server to view the report.
 
 - If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
@@ -115,3 +117,5 @@ When you select a tile, what happens next depends on how the tile was created an
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+
+[Pin Reporting Services items to Power BI Dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
