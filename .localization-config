@@ -8,14 +8,13 @@
       "ru-ru",
       "es-es",
       "zh-tw",
-      "it-it"
+      "it-it",
+      "zh-cn"
    ],
    "files":[  
-      "!**/powerbi-learning*.md",
       "articles/*.md",
       "includes/*.md"
    ],
-   "forceHandoff": true,
    "useJavascriptMarkdownTransformer": true,
    "includeDependencies":true,
    "autoPush":true,
