@@ -29,43 +29,47 @@ May brings another large collection of compelling updates for Power BI Desktop.
 
 With this month's updates, we're adding video links beside new updates that are featured in the video blog. When you select that **[video]** link beside a new feature, the video opens in a new browser tab and plays from the time when the feature is being discussed. We hope you find the video links useful and helpful.
 
+If an accompanying article describes the new feature in detail, you see an **[article]** link, which will take you to the article. Some new features have additional written information included in the blog post, but don't have their own article - for those, you can read a quick excerpt about the feature by selecting the **[blog]** link.
+
+Lastly, some features are self-explanatory, and don't have a separate article or video segment.
+
 Of course you can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image below.
 
 The following enhancements are new to Power BI Desktop this month:
 
 ### Report View:
 
--   Customizable tooltips [[video]](https://youtu.be/KnDs4amt9-c?t=172)
--   Conditional formatting in tables [[video]](https://youtu.be/KnDs4amt9-c?t=313)
--   Publish to Pyramid server
--   Scrolling loads more data in charts [[video]](https://youtu.be/KnDs4amt9-c?t=426)
--   Keyboard nudging for visuals
+-   Customizable tooltips [[video]](https://youtu.be/KnDs4amt9-c?t=172) [[article]](powerbi-desktop-custom-tooltips.md)
+-   Conditional formatting in tables [[video]](https://youtu.be/KnDs4amt9-c?t=313) [[article]](powerbi-desktop-conditional-table-formatting.md)
+-   Publish to Pyramid server [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Scrolling loads more data in charts [[video]](https://youtu.be/KnDs4amt9-c?t=426) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Keyboard nudging for visuals [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
 ### Analytics
 
--   Quick Calcs - % of grand total
+-   Quick Calcs - % of grand total [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
 ### Data Connectivity:
 
--   New data connectors:
+-   New data connectors: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
     -   Informix
     -   comScore Digital Analytix
     -   Troux
     -   Planview Enterprise
--   Improved DB2 connector
--   Text/CSV connector exposes editable settings in preview dialog
+-   Improved DB2 connector [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Text/CSV connector exposes editable settings in preview dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 -   Improved relational database connectors with Display Schema information
--   Data Source Settings enhancements
--   Advanced **Filter Rows** dialog mode
--   Inline Input controls for Function invocation within **Query Editor**
--   Query Parameters:
+-   Data Source Settings enhancements [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Advanced **Filter Rows** dialog mode [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Inline Input controls for Function invocation within **Query Editor** [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Query Parameters: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
     -   Ability to convert queries to parameters (and vice versa)
     -   Support for URL parameterization and multi-part URLs in **Web** connector
     -   Support for parameterization in **Conditional Columns** dialog
--   Ability to **Save As** a Power BI Template
--   Support for reordering Query Steps using drag-and-drop
--   Date picker support in **Conditional Columns** dialog input Date fields
--   New context menu entry to create new queries from the **Queries** pane
+-   Ability to **Save As** a Power BI Template [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Support for reordering Query Steps using drag-and-drop [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Date picker support in **Conditional Columns** dialog input Date fields [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   New context menu entry to create new queries from the **Queries** pane [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
 
 >NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
