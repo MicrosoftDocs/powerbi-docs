@@ -91,7 +91,7 @@ You may not know what your UPN is, and you may not be a domain administrator. Yo
 
     whoami /upn
 
-The result will look similar to an email address, but this is the UPN that is on your domain account. If you are using an Analysis Services data source for live connections, and If this doesn't match the email address you sign into Power BI with, you may want to look at how to [Map user names](#mapping-user-names).
+The result will look similar to an email address, but this is the UPN that is on your domain account. If you are using an Analysis Services data source for live connections, and if this doesn't match the email address you sign into Power BI with, you may want to look at how to [Map user names](#mapping-user-names).
 
 ## What about Azure Active Directory?
 
