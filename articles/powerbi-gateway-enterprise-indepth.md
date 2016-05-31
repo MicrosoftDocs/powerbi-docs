@@ -85,6 +85,14 @@ Implementing role and dynamic row-level security in models is beyond the scope o
 
 In order for Analysis Services Server to determine if a user connecting to it belongs to a role with permissions to read data, the server needs to convert the effective username passed from Power BI to the gateway and then onto the Analysis Services server. The Analysis Services server passes the effective username to a Windows Active Directory server joined to the same domain. The Active Directory server then validates the effective username is a valid UPN and returns that user’s Windows username back to the Analysis Services server.
 
+### How do I tell what my UPN is?
+
+You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
+
+    whoami /upn
+
+The result will look similar to an email address, but this is the UPN that is on your domain account. If you are using an Analysis Services data source for live connections, and if this doesn't match the email address you sign into Power BI with, you may want to look at how to [Map user names](#mapping-user-names).
+
 ## What about Azure Active Directory?
 
 Because Power BI is a cloud service, it uses [Azure Active Directory](http://azure.microsoft.com/documentation/articles/active-directory-whatis/) to take care of authenticating users.

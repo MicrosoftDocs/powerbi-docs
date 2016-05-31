@@ -101,6 +101,14 @@ You can also map your Power BI sign in name with a local directory UPN. [Learn m
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
+### How do I tell what my UPN is?
+
+You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
+
+    whoami /upn
+
+The result will look similar to an email address, but this is the UPN that is on your domain account. If you are using an Analysis Services data source for live connections, and If this doesn't match the email address you sign into Power BI with, you may want to look at how to [Map user names](#map-user-names).
+
 ## Map user names
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
