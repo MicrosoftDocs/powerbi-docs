@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="05/31/2016"
    ms.author="davidi"/>
 # Tips and tricks for creating reports in Power BI Desktop
 

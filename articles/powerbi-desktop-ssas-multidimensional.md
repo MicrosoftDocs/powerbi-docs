@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/26/2016"
+   ms.date="05/31/2016"
    ms.author="davidi"/>
 
 # Connect to SSAS Multidimensional Models in Power BI Desktop  
@@ -28,7 +28,7 @@ To connect to an **SSAS MD** database, select **Get Data &gt; Database &gt; SQL 
 
 ![](media/powerbi-desktop-ssas-multidimensional/ssas-multidimensional-2.png)
 
-In this release, **SSAS Multidimensional models** in Live connection mode are only supported in Power BI Desktop, and you cannot publish or upload reports that use **SSAS Multidimensional models** in Live mode to the Power BI service.
+**SSAS Multidimensional models** in Live connection mode are supported in both the Power BI service and in Power BI Desktop. You can also publish and upload reports that use **SSAS Multidimensional models** in Live mode to the Power BI service.
 
 ### Capabilities and features of SSAS MD
 The following sections describe features and capabilities of Power BI and SSAS MD connections.
@@ -76,7 +76,7 @@ Multidimensional model expose *calculated members on attribute hierarchies* as v
 The calculated members of user hierarchies are not exposed in Power BI. Rather, you will be able to connect to a cube containing calculated members on user hierarchies, but you won't be able to see calculated members if they do not meet the constraints mentioned in the previous bulleted list.
 
 #### Security
-Multidimensional models support dimension and cell level security by way of *Roles*. When you connect to a cube with Power BI, you are authenticated and evaluated for appropriate permissions. When a user has *dimension security* applied, the respective dimension members are not seen by the user in Power BI. However, when a user has a *cell security* permission defined, where certain cells are restricted, then that user cannot connect to the cube using Power BI. 
+Multidimensional models support dimension and cell level security by way of *Roles*. When you connect to a cube with Power BI, you are authenticated and evaluated for appropriate permissions. When a user has *dimension security* applied, the respective dimension members are not seen by the user in Power BI. However, when a user has a *cell security* permission defined, where certain cells are restricted, then that user cannot connect to the cube using Power BI.
 
 ### Limitations of SSAS Multidimensional Models in Power BI Desktop
 There are certain limitations to using **SSAS MD**:

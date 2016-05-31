@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/29/2016"
+   ms.date="05/31/2016"
    ms.author="davidi"/>
 # Data sources in Power BI Desktop
 
@@ -66,6 +66,7 @@ The **Database** category provides the following data connections:
 -   SQL Server Analysis Services Database
 -   Oracle Database
 -   IBM DB2 Database
+-   IBM Informix Database (Beta)
 -   MySQL Database
 -   PostgreSQL Database
 -   Sybase Database
@@ -104,15 +105,18 @@ The **Online Services** category provides the following data connections:
 -   Salesforce Objects
 -   Salesforce Reports
 -   appFigures (Beta)
+-   comScore Digital Analytix (Beta)
 -   GitHub (Beta)
 -   MailChimp (Beta)
 -   Marketo (Beta)
+-   Planview Enterprise (Beta)
 -   QuickBooks Online (Beta)
 -   SparkPost (Beta)
 -   Smartsheet
 -   SQL Sentry (Beta)
 -   Stripe (Beta)
 -   SweetIQ (Beta)
+-   Troux (Beta)
 -   Twilio (Beta)
 -   tyGraph (Beta)
 -   Webtrends (Beta)
@@ -121,7 +125,7 @@ The **Online Services** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Online Services**.
 
-![](media/powerbi-desktop-data-sources/DataSources_OnlineServices.png)
+![](media/powerbi-desktop-data-sources/DataSources_OnlineServices2.png)
 
 The **Other** category provides the following data connections:
 

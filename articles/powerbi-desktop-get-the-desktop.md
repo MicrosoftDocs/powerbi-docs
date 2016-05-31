@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Get Power BI Desktop"
-   description="Get Power BI Desktop"
+   description="Download and install Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="identified"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="03/31/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -17,56 +17,50 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/24/2016"
+   ms.date="03/31/2016"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
-Before you can use some of the more advanced query, modeling, and report features in Power BI, you'll need to get Power BI Desktop.
+**Power BI Desktop** provides advanced query, modeling, and report creation features that enables you to build data models, create reports, and share your work by publishing to the Power BI service.
 
-## Minimum requirements
-
--    Windows 7 / Windows Server 2008 R2, or later
-
--    .NET 4.5
-
--    Internet Explorer 9 or later
-
--    **Memory (RAM):** At least 1 GB available, 1.5 GB or more recommended.
-
--    **Display:** At least 1440x900 or 1600x900 (16:9) recommended. Lower resolutions such as 1024x768 or 1280x800 are not recommended, as certain controls (such as closing the startup screen) display beyond those resolutions.
-
--    **CPU:** 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
-
-
-
-## To download and install Power BI Desktop
-
-Download and install the latest version of Power BI Desktop [here](http://go.microsoft.com/fwlink/?LinkID=521662).
-
-Or, from Power BI, in Power BI, click the Downloads \> **Power BI Desktop**.
+To download the most recent version of Power BI Desktop, you can select the download icon from the Power BI service, and select **Power BI Desktop**.
 
 ![](media/powerbi-desktop-get-the-desktop/GetPBID_Downloads.png)
 
-## With Power BI Desktop, you can...
+You can also download the latest version of Power BI Desktop directly from [this download link](https://powerbi.microsoft.com/desktop).
 
-### Get data
+Either way, once **Power BI Desktop** is downloaded, you're prompted to run the installation file:
 
-Power BI Desktop makes discovering data easy. You can import data from a wide variety of data sources. After you connect to a data source, you can shape the data before importing to match your analysis and reporting needs.
+![](media/powerbi-desktop-get-the-desktop/GetPBID_3.png)
 
-### Model data
+**Power BI Desktop** is installed as an application, and runs on your desktop.
 
-Power BI Desktop provides advanced data modeling features like autodetect and manual relationships, custom measures, calculated columns, data categorization, and sort by column. [Data View](powerbi-desktop-data-view.md) makes seeing the data in your model easy, and with [Relationship View](powerbi-desktop-relationship-view.md), you get a customizable diagram view of all your tables and the relationships between them.
+![](media/powerbi-desktop-getting-started/Designer_GSG_Install.png)
 
-### Create reports
+When you launch **Power BI Desktop**, a *Welcome* screen is displayed.
 
-Power BI Desktop includes [Report View](powerbi-desktop-report-view.md). Select the fields you want, add filters, choose from dozens of visuals. Report View gives you many of  the same great report and visualization tools just like when creating a report in the Power BI service
+![](media/powerbi-desktop-getting-started/Designer_GSG_StartSplashScreen.png)
 
-### Save
+From there, you can begin creating data models or reports, then share them with others on the Power BI service. Check out the **More information** links at the end of this article for links to guides that can help you get started using **Power BI Desktop**.
 
-With the Power BI Desktop, you can save your work as a Power BI Desktop file.
-> ![](media/powerbi-desktop-get-the-desktop/PBI_GetPBIDesignerPreview_SavedFile.png)
->
+## Minimum requirements
 
-### Publish
+The following list provides the minimum requirements to run **Power BI Desktop**:
 
-In Power BI Desktop, you can publish and share your datasets and reports right to your Power BI site. To learn more, see [Publish from Power BI Desktop.](powerbi-desktop-upload-desktop-files.md).
+-    Windows 7 / Windows Server 2008 R2, or later
+-    .NET 4.5
+-    Internet Explorer 9 or later
+-    **Memory (RAM):** At least 1 GB available, 1.5 GB or more recommended.
+-    **Display:** At least 1440x900 or 1600x900 (16:9) recommended. Lower resolutions such as 1024x768 or 1280x800 are not recommended, as certain controls (such as closing the startup screen) display beyond those resolutions.
+-    **CPU:** 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
+
+## More information
+
+Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:
+
+-   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
+-   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
+-   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
