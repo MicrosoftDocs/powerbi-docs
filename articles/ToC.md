@@ -374,7 +374,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-getting-started",
             "powerbi-desktop-upload-desktop-files",
             "powerbi-desktop-videos",
-            "powerbi-desktop-latest-update"
+            "powerbi-desktop-latest-update",
+            "powerbi-desktop-latest-update-archive"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -430,13 +431,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Create reports",
           "articles": [
             "powerbi-desktop-report-view",
+            "powerbi-desktop-custom-tooltips",
+            "powerbi-desktop-conditional-table-formatting",
             "powerbi-desktop-sort-by-column",
             "powerbi-desktop-r-visuals",
             "powerbi-custom-visuals-use",
             "powerbi-desktop-inline-hierarchy-labels",
             "powerbi-service-cortana-desktop-entity-cards"
           ],
-          "numberOfFeaturedArticles": 6
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Learn more",
