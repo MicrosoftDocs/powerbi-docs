@@ -70,7 +70,7 @@ The following enhancements are new to Power BI Desktop this month:
 
 >NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-may-update-feature-summary/), where you can get more detailed information about each of these new features.
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/), where you can get more detailed information about each of these new features.
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
