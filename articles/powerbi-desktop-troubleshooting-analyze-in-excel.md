@@ -31,14 +31,15 @@ There may be times when using Analyze in Excel that you get an unexpected result
 ## Update Excel libraries for the OLE DB provider
 To use **Analyze in Excel**, your computer must have a current AS OLE DB provider installed. This [community post](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) is a great source to verify your installation of the OLE DB provider, or to download a recent version.
 
-The Excel libraries need to match your version of Excel in terms of its bit-level. If you have 64-bit Excel installed, you need to install the 64-bit OLE DB  provider. To determine which version of Excel you have installed, in Excel select **File > Account** and then select the **About Excel** button, which brings up the following dialog:
+The Excel libraries need to match your version of Windows in terms of its bit-level. If you have 64-bit Windows installed, you need to install the 64-bit OLE DB provider.
 
-![](media/powerbi-desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_1.png)
+To download the latest Excel libraries, visit Power BI and select the **down arrow** in the upper right corner of the Power BI service, then select **Analyze in Excel updates**.
 
-Here are the download links for each version:
+![](media/powerbi-desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
--   [32-bit OLE DB provider](https://go.microsoft.com/fwlink/?LinkId=746282)
--   [64-bit OLE DB provider](https://go.microsoft.com/fwlink/?LinkId=746283)
+In the dialog that appears, select **Download (preview)**.
+
+![](media/powerbi-desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
 
 ## Determining whether you need to update your Excel libraries
 You can download the most recent version of the Excel OLE DB provider libraries from the links in the previous section. Once you download the appropriate OLD DB provider library and begin installation, checks are performed against your current installed version.
@@ -46,6 +47,8 @@ You can download the most recent version of the Excel OLE DB provider libraries 
 If your Excel OLE DB provider client libraries are up to date, you'll be presented with a dialog that looks like the following:
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
+
+C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
 
 Alternatively, if the new version you are installing is newer than the version on your computer, the following dialog appears:
 
