@@ -42,7 +42,7 @@ Note: this content pack requires Microsoft Dynamics CRM Online 2016. More detail
 
     ![](media/powerbi-content-pack-microsoft-dynamics-crm/connect.png)
 
-4.  Provide the Service URL associated with your account.  This will be in the form `https://mytenant.crm.dynamics.com`, see more details [below](#FindingParams).
+4.  Provide the Service URL associated with your account.  This will be in the form `https://company.crm.dynamics.com`, see more details [below](#FindingParams).
 
 	![](media/powerbi-content-pack-microsoft-dynamics-crm/params.png)
 
@@ -83,6 +83,8 @@ Note: only Dynamics CRM 2016 endpoints are supported in the content pack.
 ## Troubleshooting
 
 If you're having trouble connecting, please confirm you're providing the correct instance URL and the instance is CRM Online 2016. Also ask your admin to confirm the correct service URL and that the OData endpoint is enabled.
+
+If you confirm you have Dynamics CRM Online 2016, however you're still hitting issues connecting, please contact your CRM Admin to confirm you have all available updates. 
 
 If you see an error "Data refresh failed as query exceeded the maximum limit of 100000 records.", please consider connecting directly from the Power BI Desktop or leveraging the CRM solution template. 
 
