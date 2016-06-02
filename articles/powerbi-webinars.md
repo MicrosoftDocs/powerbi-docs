@@ -30,7 +30,7 @@ The following webinars can help you to understand and use Power BI. After you re
 
 [Tell Data Stories with Power BI Publish to Web - 06/14/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-PowerBI-Publish-to-Web-Registration.html?Is=Website)
 
-[Going Hardcore on your Business Intelligence with Power BI by Adam Cogan - 06/14/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-07-Advanced-PowerBI-Registration.html?Is=Website)
+[Going Hardcore on your Business Intelligence with Power BI by Adam Cogan - 06/14/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-Hardcore-Business-Intelligence-Registration.html?Is=Website)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
