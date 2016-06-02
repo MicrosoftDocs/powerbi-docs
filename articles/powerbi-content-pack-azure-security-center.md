@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Azure Security Center content pack for Power&nbsp;BI
 
@@ -35,9 +35,9 @@ Connect to the [Azure Security Center content pack](https://app.powerbi.com/getd
 
 	![](media/powerbi-content-pack-azure-security-center/services.PNG)
 
-3.  Select **Azure Security Center** \>  **Connect**.
+3.  Select **Azure Security Center** \>  **Get**.
 
-	![](media/powerbi-content-pack-azure-security-center/connect.png)
+	![](media/powerbi-content-pack-azure-security-center/asc.png)
 
 4.  Specify your Subscription ID. See details on [finding those parameters](#FindingParams) below.
 
@@ -71,8 +71,8 @@ The content pack includes insights around resource security stat, alert analysis
 
 This content pack requires access to a subscription ID with Azure Security Center enabled. See more details in the [Azure Security Center](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityDashboardStartBladeV2) in the Azure Portal.
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 There are two easy ways to find your Subscription Id.
 

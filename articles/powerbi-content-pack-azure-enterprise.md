@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Microsoft Azure Enterprise content pack for Power BI"
+   pageTitle="Microsoft Azure Enterprise content pack"
    description="Microsoft Azure Enterprise content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/16/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Microsoft Azure Enterprise content pack for Power&nbsp;BI
@@ -36,9 +36,9 @@ Connect to the [Microsoft Azure Enterprise content pack](https://app.powerbi.com
 
 	![](media/powerbi-content-pack-azure-enterprise/services.png)
 
-3.  Select **Microsoft Azure Enterprise** \> **Connect**. 
+3.  Select **Microsoft Azure Enterprise** \> **Get**. 
 
-	![](media/powerbi-content-pack-azure-enterprise/connect.png)
+	![](media/powerbi-content-pack-azure-enterprise/mazureenterprise.png)
 
 4. Provide the Azure Environment URL, the number months of data you want to import and your Azure Enterprise enrollment number. Your Azure Environment URL will be `https://ea.azure.com` or `https://ea.windowsazure.cn`. See details on [finding these parameters](#FindingParams) below.
 
@@ -72,8 +72,8 @@ The Azure Enterprise content pack includes monthly reporting data for the range 
 
 The content pack requires access to the Enterprise features within the Azure Portal. 
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 Power BI reporting is available for EA Direct, Partner and Indirect Customers who are able to view billing information. Please read below for details about finding each of the values the connection flow expects.
 

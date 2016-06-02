@@ -65,7 +65,7 @@ The **Navigator** window also provides a few **Display Options** that allow you 
 
 -	**Enable Data Previews (default behavior):** You can also control whether data previews should be displayed in this dialog. Disabling data previews reduces the amount of server calls, since it no longer requests data for the previews.
 
--	**Technical Names:** SAP BW supports the notion of *technical names* for objects within a cube. Technical names allow a cube owner to expose *user friendly* names for cube objects, as opposed to only exposing the *physical names* for those objects in the cube. Please note that there are some known issues in this **SAP BW Preview** build with *Technical Names* that cause them to display empty names in some cases. We’re aware of this issue, and we are actively working to address it.
+-	**Technical Names:** SAP BW supports the notion of *technical names* for objects within a cube. Technical names allow a cube owner to expose *user friendly* names for cube objects, as opposed to only exposing the *physical names* for those objects in the cube.
 
 ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_6.png)
 

@@ -150,6 +150,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-display-dash-in-focus-mode",
             "powerbi-service-display-tile-in-full-screen-mode",
             "powerbi-service-rename-a-dashboard",
+            "powerbi-service-favorite-dashboards",
+            "powerbi-service-featured-dashboards",
             "powerbi-service-qr-code-for-tile",
             "powerbi-service-add-an-image-to-a-dashboard",
             "powerbi-service-delete-or-remove-a-dashboard"
@@ -162,6 +164,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-q-and-a",
             "powerbi-service-how-to-use-q-and-a",
             "powerbi-service-tutorial-introduction-to-q-and-a",
+            "powerbi-service-q-and-a-direct-query",
             "powerbi-service-make-your-data-work-well-with-q-and-a",
             "powerbi-service-cortana-intro",
             "powerbi-service-cortana-ask-questions",
@@ -349,6 +352,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-alternate-email-address-for-power-bi",
             "powerbi-admin-how-to-use-the-same-account-as-azure",
             "powerbi-admin-office-365-dedicated-known-issues",
+            "powerbi-desktop-troubleshooting-analyze-in-excel",
             "powerbi-admin-troubleshooting-power-bi-personal-gateway",
             "powerbi-gateway-enterprise-tshoot",
             "powerbi-admin-troubleshoot-unsupported-data-source-for-refresh",
@@ -356,7 +360,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-troubleshoot-excel-workbook-data",
             "powerbi-refresh-troubleshooting-tile-errors"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 6
         }
       ]
     },
@@ -370,7 +374,8 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-getting-started",
             "powerbi-desktop-upload-desktop-files",
             "powerbi-desktop-videos",
-            "powerbi-desktop-latest-update"
+            "powerbi-desktop-latest-update",
+            "powerbi-desktop-latest-update-archive"
           ],
           "numberOfFeaturedArticles": 5
         },
@@ -381,6 +386,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-connect-to-data",
             "powerbi-desktop-import-excel-workbooks",
             "powerbi-desktop-ssas-multidimensional",
+            "powerbi-desktop-connect-oracle-database",            
             "powerbi-desktop-r-scripts",
             "powerbi-desktop-sap-hana",
             "powerbi-desktop-analysis-services-tabular-data",
@@ -394,7 +400,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-google-analytics-connector",
             "powerbi-desktop-project-online-connect-to-data"
           ],
-          "numberOfFeaturedArticles": 11
+          "numberOfFeaturedArticles": 12
         },
         {
           "sectionTitle": "Transform and shape data",
@@ -425,13 +431,15 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Create reports",
           "articles": [
             "powerbi-desktop-report-view",
+            "powerbi-desktop-custom-tooltips",
+            "powerbi-desktop-conditional-table-formatting",
             "powerbi-desktop-sort-by-column",
             "powerbi-desktop-r-visuals",
             "powerbi-custom-visuals-use",
             "powerbi-desktop-inline-hierarchy-labels",
             "powerbi-service-cortana-desktop-entity-cards"
           ],
-          "numberOfFeaturedArticles": 6
+          "numberOfFeaturedArticles": 8
         },
         {
           "sectionTitle": "Learn more",
@@ -552,19 +560,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
         {
           "sectionTitle": "Get started",
           "articles": [
-            "powerbi-developer-overview-of-power-bi-rest-api",
-            "powerbi-developer-what-you-need-to-create-an-app",
-            "powerbi-developer-sign-up-for-power-bi-service",
-            "powerbi-developer-create-an-azure-active-directory-tenant",
-            "powerbi-developer-register-a-client-app",
-            "powerbi-developer-register-a-web-app",
-            "powerbi-developer-authenticate-to-power-bi-service",
-            "powerbi-developer-authenticate-a-client-app",
-            "powerbi-developer-authenticate-a-web-app",
-            "powerbi-developer-power-bi-permissions",
-            "powerbi-developer-rest-api-reference"
+            "powerbi-developer-overview-of-power-bi-rest-api"
           ],
-          "numberOfFeaturedArticles": 11
+          "numberOfFeaturedArticles": 5
         },
         {
           "sectionTitle": "Push data into a dashboard",
@@ -578,13 +576,29 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-developer-walkthrough-push-data-complete-code"
           ],
           "numberOfFeaturedArticles": 7
-        },        
+        },
         {
-          "sectionTitle": "Integrate a Power BI tile or report",
+          "sectionTitle": "Integrate a tile into an app",
           "articles": [
-            "powerbi-developer-integrate-a-power-bi-tile-or-report"
+            "powerbi-developer-integrate-tile",
+            "powerbi-developer-integrate-tile-register",
+            "powerbi-developer-integrate-tile-get-dashboard",
+            "powerbi-developer-integrate-tile-get-tile",
+            "powerbi-developer-integrate-tile-load-tile-iframe",
+            "powerbi-developer-integrate-tile-code"
           ],
-          "numberOfFeaturedArticles": 1
+          "numberOfFeaturedArticles": 6
+        },
+        {
+          "sectionTitle": "Integrate a report into an app",
+          "articles": [
+            "powerbi-developer-integrate-report",
+            "powerbi-developer-integrate-report-register",
+            "powerbi-developer-integrate-report-get-report",
+            "powerbi-developer-integrate-report-load-report-iframe",
+            "powerbi-developer-integrate-report-code"
+          ],
+          "numberOfFeaturedArticles": 5
         },
         {
           "sectionTitle": "Create a custom visual",
@@ -594,6 +608,30 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-custom-visuals-review-for-security-and-privacy"
           ],
           "numberOfFeaturedArticles": 3
+        },
+        {
+          "sectionTitle": "Content Pack Certification",
+          "articles": [
+            "powerbi-developer-content-pack-overview",
+            "powerbi-developer-content-pack-authoring",
+            "powerbi-developer-content-pack-testing",
+            "powerbi-developer-content-pack-experience"
+         ],
+         "numberOfFeaturedArticles": 4
+        },
+        {
+          "sectionTitle": "Power BI API",
+          "articles": [
+            "powerbi-developer-rest-api-reference",
+            "powerbi-developer-create-an-azure-active-directory-tenant",
+            "powerbi-developer-register-a-client-app",
+            "powerbi-developer-register-a-web-app",
+            "powerbi-developer-authenticate-to-power-bi-service",
+            "powerbi-developer-authenticate-a-client-app",
+            "powerbi-developer-authenticate-a-web-app",
+            "powerbi-developer-power-bi-permissions"
+          ],
+          "numberOfFeaturedArticles": 9
         }
       ]
     }

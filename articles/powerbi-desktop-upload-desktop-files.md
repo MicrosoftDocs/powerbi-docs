@@ -17,17 +17,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="05/31/2016"
    ms.author="davidi"/>
 
 # Publish from Power BI Desktop  
 
-When you publish a Power BI Desktop file to the Power BI service, the data in the model and any reports you created in Report View are published to your Power BI site. You’ll see a new dataset with the same name, and any reports in your Workspace navigator.
+When you publish a **Power BI Desktop** file to the Power BI service, the data in the model and any reports you created in **Report** view are published to your Power BI workspace. You’ll see a new dataset with the same name, and any reports in your Workspace navigator.
 
-Publishing from Power BI Desktop has the same effect as using Get Data in Power BI to connect to and upload a Power BI Desktop file.
+Publishing from Power BI Desktop has the same effect as using **Get Data** in Power BI to connect to and upload a Power BI Desktop file.
 
 >**Note:**  
->Any changes you make in Power BI, for example, add, delete, or change visualizations in reports, will not be saved to the original Power BI Desktop file.
+>Any changes you make in to the report Power BI, for example, add, delete, or change visualizations in reports, will not be saved to the original Power BI Desktop file.
 
 ## To publish a Power BI Desktop dataset and reports  
 1.  In Power BI Desktop \> **File** \> **Publish** \> **Publish to Power BI** or click **Publish** on the ribbon.  

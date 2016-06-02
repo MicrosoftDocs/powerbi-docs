@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="PVcfPoVE3Ys"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/29/2016"
+   ms.date="05/20/2016"
    ms.author="mihart"/>
 
 # Tutorial: Scatter charts and Bubble charts in Power BI  

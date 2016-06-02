@@ -8,7 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   featuredVideoId="ek03amXuMQw"
+   qualityFocus="identified"
    qualityDate=""/>
 
 <tags

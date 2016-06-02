@@ -9,7 +9,7 @@ backup=""
 editor=""
 tags=""
 qualityFocus="monitoring"
-qualityDate="05/12/2016"/>
+qualityDate="05/16/2016"/>
 
 <tags
 ms.service="powerbi"
@@ -17,13 +17,21 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/12/2016"
+ms.date="05/17/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - Analysis Services
 
 Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ownIGbcRAAU" frameborder="0" allowfullscreen></iframe>
+
+## Download and install the gateway
+
+Download and install the latest version of the [Power BI Gateway - Enterprise](https://go.microsoft.com/fwlink/?LinkId=698863).
+
+Or, from the Power BI service, select **Downloads** > **Power BI Gateways**.
+
+![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
 
 ## Add a gateway
 
@@ -93,7 +101,17 @@ You can also map your Power BI sign in name with a local directory UPN. [Learn m
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
+### How do I tell what my UPN is?
+
+You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
+
+    whoami /upn
+
+The result will look similar to an email address, but this is the UPN that is on your domain account. If you are using an Analysis Services data source for live connections, and If this doesn't match the email address you sign into Power BI with, you may want to look at how to [Map user names](#map-user-names).
+
 ## Map user names
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
 For Analysis Services data sources, you can configure custom User Principal Name (UPN) rules. This will help you if your Power BI service login names do not match your local directory UPN. For example, if you sign into Power BI with john@contoso.com, but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
 

@@ -9,7 +9,7 @@
    editor=""
     tags=""
    qualityFocus="monitoring"
-   qualityDate="03/30/2016"/>
+   qualityDate="05/25/2016"/>
 
 <tags
     ms.service="powerbi"
@@ -27,7 +27,7 @@ Microsoft Excel is one of the most widely used business applications around. Itâ
 
 ## What types of workbooks does Power BI support?
 
-Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Workbooks must be saved as .xlsx or .xlsm file type and under 1 GB. Some features described in this article are only available in later versions of Excel.
+Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Workbooks must be saved as .xlsx or .xlsm file type and be under 250 MB. Some features described in this article are only available in later versions of Excel.
 
 #### Workbooks with ranges or tables of data
 

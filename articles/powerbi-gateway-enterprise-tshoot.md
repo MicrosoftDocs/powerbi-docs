@@ -105,6 +105,12 @@ If the underlying error message is similar to the following, this means that the
 
 Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the adminsitrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
 
+**Script error during sign into Power BI**
+
+You may receive a script error when signing into Power BI as part of the enterprise gateway configuration. Installing the following security update should resolve the issue. This can be installed via Windows Update.
+
+[MS16-051: Security update for Internet Explorer: May 10, 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
+
 ## Dataset
 
 **Error: Couldn't refresh because your Personal Gateway is offline. Make sure your Personal Gateway is up and running.**
@@ -140,7 +146,7 @@ The results should look similar to the following. The difference will be with Tc
     PingReplyDetails (RTT) : 0 ms
     TcpTestSucceeded       : True
 
-If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](powerbi-gateway-enterprise.md/#ports)
+If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](powerbi-gateway-enterprise.md#ports)
 
 ## Tools for troubleshooting
 

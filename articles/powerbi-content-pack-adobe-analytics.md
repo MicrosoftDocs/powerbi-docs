@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Adobe Analytics content pack for Power&nbsp;BI
 
@@ -35,9 +35,9 @@ Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/se
 
 	![](media/powerbi-content-pack-adobe-analytics/services.PNG)
 
-3.  Select **Adobe Analytics** \>  **Connect**.
+3.  Select **Adobe Analytics** \>  **Get**.
 
-	![](media/powerbi-content-pack-adobe-analytics/connect.PNG)
+	![](media/powerbi-content-pack-adobe-analytics/adobe.png)
 
 4.  The content pack connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on [finding those parameters](#FindingParams) below.
 
@@ -91,8 +91,8 @@ The content pack uses the Adobe Analytics Report API to define and run reports f
 ## System requirements
 Access to [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) is required, including access to the correct parameters as described below.
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 **Company**
 

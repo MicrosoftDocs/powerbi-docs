@@ -3,13 +3,13 @@
    description="Sample content packs and datasets for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="amac"
    manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="monitoring"
-   qualityDate="03/15/2016"/>
+   qualityDate="05/25/2016"/>
 
 <tags
    ms.service="powerbi"

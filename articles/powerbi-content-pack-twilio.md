@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Twilio content pack for Power BI"
+   pageTitle="Twilio content pack"
    description="Twilio content pack for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Twilio content pack for Power&nbsp;BI
@@ -36,9 +36,9 @@ Connect to the [Twilio content pack](https://app.powerbi.com/getdata/services/tw
 
     ![](media/powerbi-content-pack-twilio/PBI_GetServices.png) 
 
-3.  Select **Twilio** \> **Connect**.
+3.  Select **Twilio** \> **Get**.
 
-    ![](media/powerbi-content-pack-twilio/PBI_TwilioConnect.png)
+    ![](media/powerbi-content-pack-twilio/twilio.png)
 
 4.  For **Authentication Method**, select **oAuth2** \> Sign In. When prompted provide your Twilio credentials and authorize the Power BI application to access your data.
 

@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Stripe content pack for Power BI"
+   pageTitle="Stripe content pack"
    description="Stripe content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Stripe content pack for Power&nbsp;BI
@@ -36,9 +36,9 @@ Connect to the [Stripe content pack for Power BI](https://app.powerbi.com/getdat
 
     ![](media/powerbi-content-pack-stripe/services.png)  
 
-3. Select **Stripe** &gt; **Connect**.  
+3. Select **Stripe** &gt; **Get**.  
 
-    ![](media/powerbi-content-pack-stripe/GetData1.png)  
+    ![](media/powerbi-content-pack-stripe/stripe.png)  
 
 4. Provide your Stripe [API key](https://dashboard.stripe.com/account/apikeys) to connect.  
 

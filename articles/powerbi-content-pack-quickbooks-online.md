@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="QuickBooks Online content pack for Power BI"
+   pageTitle="QuickBooks Online content pack"
    description="QuickBooks Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # QuickBooks Online content pack for Power&nbsp;BI
@@ -30,17 +30,17 @@ Note: To import your QuickBooks Online data into Power BI, you need to be an adm
 
 ## How to connect 
 
-1.  Select Get Data at the bottom of the left navigation pane.
+1.  Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-content-pack-quickbooks-online/PBI_GetData.png) 
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
     ![](media/powerbi-content-pack-quickbooks-online/PBI_GetServices.png) 
 
-3.  Select **QuickBooks Online**, then select **Connect**.
+3.  Select **QuickBooks Online**, then select **Get**.
 
-    ![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_Connect.png)
+    ![](media/powerbi-content-pack-quickbooks-online/qbo.png)
 
 4.  Select **oAuth2** for Authentication Method and select **Sign In**. 
 

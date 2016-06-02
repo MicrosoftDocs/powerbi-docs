@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Overview of Power BI REST API"
-   description="Overview of Power BI REST API"
+   pageTitle="What can I do with the Power BI API"
+   description="What can I do with the Power BI API"
    services="powerbi"
    documentationCenter=""
    authors="dvana"
@@ -17,24 +17,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="05/24/2016"
    ms.author="derrickv"/>
 
-# Overview of Power BI REST API
+# What can I do with the Power BI API?
 
-Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time.
-
-## What can I do with the Power BI API?
-
-Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
+Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
 
 Here are some of the things you can do with the Power BI API.
 
 |**To do this**| **Go here**
 |---|---
-|Get started with your first app.| [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md) and [Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
 |Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
-|Integrate a tile or report into an app.|[Integrate a tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+|Embed tiles into an app.|[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
+|Embed reports into an app.|[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
 |Create a custom visual.| [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 |Authenticate a Power BI web app.|[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
 
@@ -46,13 +42,12 @@ Here are some of the things you can do with the Power BI API.
   - [Integrate a Power BI tile into an app](https://msdn.microsoft.com/library/mt576402.aspx): A web app that shows you how to integrate a Power BI tile into an app.
   - [Integrate a Power BI report into an app](https://msdn.microsoft.com/library/mt631357.aspx): A web app that shows you how to integrate a Power BI report into an app.
 
-
 - [**Try the Power BI REST API**](http://docs.powerbi.apiary.io/) -
 In the Apiary interactive API console, you can try all Power BI REST API operations such as [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) and [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx).
 
 ## See also
-- [What you need to create an app](powerbi-developer-what-you-need-to-create-an-app.md)
 - [Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Integrate a tile or report into an app](powerbi-developer-integrate-a-power-bi-tile-or-report.md)
+- [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
+- [Integrate a report into an app](powerbi-developer-integrate-report.md)
 - [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 - [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)

@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Office365Mon content pack for Power BI"
+   pageTitle="Office365Mon content pack"
    description="Office365Mon content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Office365Mon content pack for Power&nbsp;BI
@@ -38,11 +38,11 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
 
 	![](media/powerbi-content-pack-office365mon/PBI_GetServices.png) 
 
-3.  Select **Office365Mon \> Connect**.
+3.  Select **Office365Mon** \> **Get**.
 
-	![](media/powerbi-content-pack-office365mon/connect.png)
+	![](media/powerbi-content-pack-office365mon/o365mon.png)
 
-4.  For Authentication Method, select oAuth2 \> Sign In.
+4.  For Authentication Method, select **oAuth2** \> **Sign In**.
 
 	When prompted, enter your Office365Mon admin credentials and follow the authentication process.
 

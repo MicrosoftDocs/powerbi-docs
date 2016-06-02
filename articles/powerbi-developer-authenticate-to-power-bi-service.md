@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="05/13/2016"
    ms.author="derrickv"/>
 
 # Authenticate to Power BI service
 
 This article is an introduction to authentication in Power BI, and how to get an access token using a client id. To get started creating a Power BI app, see [Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md).
 
-The Power BI REST API is a REST-based API that provides programmatic access to dashboard resources such as datasets, tables, and rows. For an introduction to the Power BI REST API, see [Introduction to Power BI REST API](powerbi-developer-introduction-to-creating-a-power-bi-app.md). To provide secure sign in and authorization for your app, you authenticate your app with **Azure Active Directory** (Azure AD).
+The Power BI API provides programmatic access to dashboard resources such as datasets, tables, and rows. These resources are protected by **Azure Active Directory** (Azure AD). To gain access to **Power BI** resources, you authenticate your app with **Azure AD**.
 
 <a name="intro"/>
 ## Introduction to authentication in Power BI

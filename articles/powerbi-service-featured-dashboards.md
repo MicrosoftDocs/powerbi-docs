@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="6aTiAK-oiJ8"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2016"
+   ms.date="05/17/2016"
    ms.author="mihart"/>
 
 # Featured dashboards in Power BI
@@ -28,13 +29,15 @@ Many of you have one dashboard that you visit more than any others.  It might be
 
 To make it easier to reach the dashboard you care about most, we added the ability to feature a dashboard in your workspace. This means Power BI will always open to this dashboard (instead of the last dashboard you visited).  And you can reach your Featured dashboard at any time by selecting  **Featured dashboard** in the left navigation pane.
 
+>**NOTE**: You can also select a few dashboards and set them as *favorites*. See [Dashboard favorites](powerbi-service-favorite-dashboards.md).
+
 The first time you log into Power BI you will see a pop-up notification letting you know about Featured dashboard.
 
 ![](media/powerbi-service-featured-dashboards/featureddash.png)
 
 The **Featured dashboard** section of your left navpane will be greyed out until you set a dashboard as featured.
 
-![](media/powerbi-service-featured-dashboards/featured-on-navpane2.png)
+![](media/powerbi-service-featured-dashboards/featured-on-navpane2new.png)
 
 ### To set a dashboard as **Featured**
 
@@ -53,7 +56,7 @@ Watch Amanda create a featured dashboard and then follow the instructions below 
 
 3. After you see the Success message, the **Featured dashboard** option is activated in the left navpane.
 
-    ![](media/powerbi-service-featured-dashboards/featured-only2.png)
+    ![](media/powerbi-service-featured-dashboards/featured-only2new.png)
 
 
 ## Change the Featured dashboard

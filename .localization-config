@@ -8,10 +8,10 @@
       "ru-ru",
       "es-es",
       "zh-tw",
-      "it-it"
+      "it-it",
+      "zh-cn"
    ],
    "files":[  
-      "!**/powerbi-learning*.md",
       "articles/*.md",
       "includes/*.md"
    ],

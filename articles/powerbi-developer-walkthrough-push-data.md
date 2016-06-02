@@ -1,6 +1,6 @@
 <properties
    pageTitle="Push data into a dashboard"
-   description="Push data into a Power BI Dashboard"
+   description="Push data into a Power BI dashboard"
    services="powerbi"
    documentationCenter=""
    authors="dvana"
@@ -20,7 +20,7 @@
    ms.date="05/02/2016"
    ms.author="derrickv"/>
 
-# Push data into a Power BI Dashboard
+# Push data into a Power BI dashboard
 
 With the Power BI API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table into a dashboard.
 

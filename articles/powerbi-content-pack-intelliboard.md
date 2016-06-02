@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="IntelliBoard content pack for Power BI"
+   pageTitle="IntelliBoard content pack"
    description="IntelliBoard content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # IntelliBoard content pack for Power&nbsp;BI  
@@ -28,17 +28,17 @@ Connect to the [IntelliBoard content pack](https://app.powerbi.com/getdata/servi
 
 ## How to connect
 
-1. Select Get Data at the bottom of the left navigation pane.  
+1. Select **Get Data** at the bottom of the left navigation pane.  
     
     ![](media/powerbi-content-pack-intelliboard/getdata.png)
 
-2. In the Services box, select Get.  
+2. In the **Services** box, select **Get**.  
     
     ![](media/powerbi-content-pack-intelliboard/services.png)
 
-3. Select IntelliBoard, then select Connect.  
+3. Select **IntelliBoard**, then select **Get**.  
     
-    ![](media/powerbi-content-pack-intelliboard/connect.png)
+    ![](media/powerbi-content-pack-intelliboard/intelliboard.png)
 
 4. Select **OAuth 2** and then **Sign In**. When prompted, provide your IntelliBoard credentials.
 

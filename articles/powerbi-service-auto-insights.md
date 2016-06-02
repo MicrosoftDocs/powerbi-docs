@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="SCUx47AFNhw"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2016"
+   ms.date="05/21/2016"
    ms.author="mihart"/>
 
 

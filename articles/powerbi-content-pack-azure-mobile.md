@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Azure Mobile Engagement content pack for Power BI"
+   pageTitle="Azure Mobile Engagement content pack"
    description="Azure Mobile Engagement content pack for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Azure Mobile Engagement content pack for Power&nbsp;BI
@@ -28,17 +28,17 @@ Connect to the [Azure Mobile Engagement content pack](https://app.powerbi.com/gr
 
 ## How to connect
 
-1. Select Get Data at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the left navigation pane.
 
 	![](media/powerbi-content-pack-azure-mobile/getdata.png)
 
-2. In the Services box, select Get.
+2. In the **Services** box, select **Get**.
 
 	![](media/powerbi-content-pack-azure-mobile/Services.PNG)
 
-3. Select Azure Mobile Engagement \> Connect.
+3. Select **Azure Mobile Engagement** \> **Get**.
 
-	![](media/powerbi-content-pack-azure-mobile/Connect.PNG) 
+	![](media/powerbi-content-pack-azure-mobile/azme.png) 
 
 4. Specify your App Collection and App Name. This information can be found in your Azure Mobile Engagement account.
 

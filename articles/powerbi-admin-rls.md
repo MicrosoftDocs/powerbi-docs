@@ -38,7 +38,7 @@ To manage security on your data model, you will want to do the following.
 
     ![](media/powerbi-admin-rls/rls-security.png)
  
-This will take you to the RLS page for you to create roles and add rules with filters. Only the owners of the dataset will see Security available. If the dataset is in a Group, only Administrators of the group will see the security option.
+This will take you to the RLS page for you to create roles and add rules with filters. Only the owners of the dataset will see Security available. If the dataset is in a Group, only Administrators of the group will see the security option. There are changes coming for how RLS works within a group.
 
 ## Working with roles
 
@@ -114,6 +114,14 @@ You can test other roles, or combination of roles, by selecting **Now viewing as
 You can choose to view data as a specific person, or you can select a combination of available roles to validate they are working. 
 
 To return to normal viewing, select **Back to Row-Level Security**.
+
+## Using the username() DAX function
+
+You can take advantage of the DAX function *username()* within your dataset. You can use it within expressions in Power BI Desktop. When you publish your model, it will be used within the Power BI service.
+
+> **Note**: Username() will not return the UPN of the user until you configure RLS on the dataset.
+
+When you first publish the model, the value returned from the function will be a GUID. It will return the user's User Principal Name (UPN) after you have configured RLS on the dataset.
 
 ## Limitations
 
