@@ -38,7 +38,7 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
-[DAX best practices from the field by Paul Turley - 05/31/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-31-DAX-best-practices-Registration.html?Is=Website)
+[DAX best practices from the field by Paul Turley - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-31-DAX-best-practices-Registration.html?Is=Website)
 
 [Power BI Sales Management Solution Webinar (Dynamics CRM, Salesforce) - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-25-PowerBI-Sales-Management-Registration.html?Is=Website)
 
