@@ -57,8 +57,10 @@ There are many published articles describing how to define row level dynamic sec
 
 4.  Next we do an _inner join_ with the **DimSalesTerritory** table, which shows the region details associated with the user. The following code performs the _inner join_, and the image that follows shows how the table appears once the _inner join_ is successful.
 
+    ```
     **select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeKey, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryKey]**
-
+    ```
+    
     ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/CreateUserSecurityTable_join_users.png)
 
 5.  Notice that the above image shows information such as which user is responsible for which sales region. That data is displayed because of the relationship that we created in **Step 2**. Also, note that the user **Jon Doe is part of the Australia sales region**. We’ll revisit John Doe in upcoming steps and tasks.
@@ -162,7 +164,7 @@ There are many published articles describing how to define row level dynamic sec
 
 1.  This task assumes you're familiar with SQL Profiler, since you need to capture a SQL Server profiler trace on your on-premises SSAS tabular instance.
 
-2.  The session gets initialized as soon as the user (Jon Doe, in this case) accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **`<EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>`**
+2.  The session gets initialized as soon as the user (Jon Doe, in this case) accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **<EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>**
 
     ```
     <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>jondoe@moonneo.com</EffectiveUserName></PropertyList>
