@@ -3,9 +3,9 @@
    description="What's new in the Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="amac"
    manager="mblythe"
-   backup=""
+   backup="mihart"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/19/2016"
-   ms.author="mihart"/>
+   ms.date="06/06/2016"
+   ms.author="amac"/>
 
 # What's new in the Power BI service  
 
@@ -37,6 +37,61 @@ For related "What's New" information, see:
 
 
 ## Recent updates
+
+**June 1, 2016**
+
+-   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters. 
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/smarter-auto-generated-insights-with-complex-filters/)
+
+**May 16, 2016**
+
+***Get Data***
+
+-   File size limit increase to 1 GB: We increased the file size limit for both Excel workbooks and Power BI Desktop files to 1 GB.
+
+-   Find SSAS servers set up with the Enterprise Gateway and other Gateway updates: Now when you set up an Enterprise Gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
+
+***RLS***
+
+-   AAD group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
+-   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md/#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+-   Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
+
+***Dashboards***
+
+-   Favorite dashboards: To help you reach the dashboards you go to most, we added a way to favorite those dashboard and make them easily accessible from all your workspaces.
+
+***Analyze in Excel***
+-   Improved download experience: Easily download updates to the Analyze in Excel feature through a new dialog experience.
+-   Support for RLS: Once you set up RLS, the rules you apply to the data now flow through when a user analyzes the data in Excel.
+-   Improved error messaging for on-premises Analysis Services databases: Previously, if you selected Analyze in Excel for an unsupported data source, you wouldn't get an error message until after you downloaded the ODC file and tried to connect to Power BI. Now as soon as you select Analyze in Excel for a data source we don't support, you'll see a message letting you know we don't yet support that data source.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
+
+**May 13, 2016**
+
+-   [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](powerbi-service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/en-us/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+
+-   [Local File Support for Excel Reports](powerbi-service-excel-workbook-files.md/#local-excel-workbooks): You can now upload your Excel files from your local drive or other storage services and use that Excel Report just as you would in Excel Online with the added benefits of Power BI. For all the details, [see the blog post](https://powerbi.microsoft.com/en-us/blog/powerbi-upload-excel-reports-from-local-files/)
+
+**April 28, 2016**
+
+-   [Quick Insights on Dashboard Tiles](powerbi-service-auto-insights.md/#run-quick-insights-on-a-dashboard-tile): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
+
+**April 26, 2016**
+
+-   Narratives for Power BI: As you interact with your data and visualizations, this custom visual dynamically delivers insights in narrative form, just like you'd expect an analyst would write. This visual is fueled by [Narrative Science Quill](https://www.narrativescience.com/quill).
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/get-natural-language-narratives-in-power-bi-reports/)
+
+**April 16, 2016**
+
+-   Microsoft Trust Center: Power BI joined the Microsoft Trust Center, a single source for documenting compliance certifications for Microsoft products. Power BI's certifications include ISO 27001, ISO 27018, EU Model Clauses, HIPAA BAA, and UK G-Cloud.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/power-bi-added-to-microsoft-trust-center/)
 
 **April 14, 2016**
 
