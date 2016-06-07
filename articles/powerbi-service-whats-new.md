@@ -42,7 +42,7 @@ For related "What's New" information, see:
 
 -   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters. 
 
-For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/smarter-auto-generated-insights-with-complex-filters/)
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
 
 **May 16, 2016**
 
@@ -55,7 +55,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 ***RLS***
 
 -   AAD group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
--   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md/#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+-   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
 -   Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
 
 ***Dashboards***
@@ -67,31 +67,31 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 -   Support for RLS: Once you set up RLS, the rules you apply to the data now flow through when a user analyzes the data in Excel.
 -   Improved error messaging for on-premises Analysis Services databases: Previously, if you selected Analyze in Excel for an unsupported data source, you wouldn't get an error message until after you downloaded the ODC file and tried to connect to Power BI. Now as soon as you select Analyze in Excel for a data source we don't support, you'll see a message letting you know we don't yet support that data source.
 
-For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
 **May 13, 2016**
 
--   [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](powerbi-service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/en-us/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+-   [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](powerbi-service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 
--   [Local File Support for Excel Reports](powerbi-service-excel-workbook-files.md/#local-excel-workbooks): You can now upload your Excel files from your local drive or other storage services and use that Excel Report just as you would in Excel Online with the added benefits of Power BI. For all the details, [see the blog post](https://powerbi.microsoft.com/en-us/blog/powerbi-upload-excel-reports-from-local-files/)
+-   [Local File Support for Excel Reports](powerbi-service-excel-workbook-files.md#local-excel-workbooks): You can now upload your Excel files from your local drive or other storage services and use that Excel Report just as you would in Excel Online with the added benefits of Power BI. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **April 28, 2016**
 
--   [Quick Insights on Dashboard Tiles](powerbi-service-auto-insights.md/#run-quick-insights-on-a-dashboard-tile): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
+-   [Quick Insights on Dashboard Tiles](powerbi-service-auto-insights.md#run-quick-insights-on-a-dashboard-tile): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
 
-For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
 **April 26, 2016**
 
 -   Narratives for Power BI: As you interact with your data and visualizations, this custom visual dynamically delivers insights in narrative form, just like you'd expect an analyst would write. This visual is fueled by [Narrative Science Quill](https://www.narrativescience.com/quill).
 
-For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/get-natural-language-narratives-in-power-bi-reports/)
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/get-natural-language-narratives-in-power-bi-reports/)
 
 **April 16, 2016**
 
 -   Microsoft Trust Center: Power BI joined the Microsoft Trust Center, a single source for documenting compliance certifications for Microsoft products. Power BI's certifications include ISO 27001, ISO 27018, EU Model Clauses, HIPAA BAA, and UK G-Cloud.
 
-For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/en-us/blog/power-bi-added-to-microsoft-trust-center/)
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-added-to-microsoft-trust-center/)
 
 **April 14, 2016**
 
