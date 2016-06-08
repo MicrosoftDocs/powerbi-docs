@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
+   ms.date="06/08/2016"
    ms.author="derrickv"/>
 
 # What can I do with the Power BI API?
@@ -33,6 +33,7 @@ Here are some of the things you can do with the Power BI API.
 |Embed reports into an app.|[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
 |Create a custom visual.| [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
 |Authenticate a Power BI web app.|[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
+|Learn about the Content Pack certification program.| [Content Pack Certification Program Overview](/powerbi-developer-content-pack-overview.md)
 
 ### Other things you can do to learn about the Power BI API
 
