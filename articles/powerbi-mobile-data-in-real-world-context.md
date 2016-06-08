@@ -24,8 +24,8 @@
 
 Power BI mobile apps can connect items in the real world directly to related BI information, in a number of different ways. 
 
-- QR for Tiles: One metric, Manufacturing scenarios, presentation , Augmented reality (only on iOS ) 
-- QR for reports: More data, analyze, explore ( Currently on iOS coming to Android in 6.1)
+- QR codes for tiles: One metric, Manufacturing scenarios, presentation, augmented reality (only on iOS ) 
+- QR for reports: More data, analyze, explore (Currently on iOS coming to Android in 6.1)
 - Bar codes: Retails scenarios – see documentation 
 
 Say a colleague has [created a QR code in the Power BI service](powerbi-service-qr-code-for-tile.md) for a report or for a tile in a dashboard, shared the dashboard or report with you, and placed the QR code in a key location &#151; for example, in an email or on a specific item. 
