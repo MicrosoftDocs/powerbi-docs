@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="SCUx47AFNhw"
+   featuredVideoId="EOASjs5mj6s"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/21/2016"
+   ms.date="06/07/2016"
    ms.author="mihart"/>
 
 
@@ -28,12 +28,14 @@ Have a new dataset and not quite sure where to start?  Need to build a dashboard
 
 Run Quick Insights to generate interesting interactive visualizations based on your data. Quick Insights can be run on entire dataset (Quick Insights) or on a specific dashboard tile (Scoped Quick Insights).  
 
->**NOTE**: Quick Insights is not available in Power BI Desktop and does not work with direct query - it only works with data uploaded to Power BI. The Quick Insights feature is built on a growing [set of advanced analytical algorithms](powerbi-service-auto-insights-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+>**NOTE**: Quick Insights is not available in Power BI Desktop and does not work with direct query - it only works with data uploaded to Power BI.
+
+The Quick Insights feature is built on a growing [set of advanced analytical algorithms](powerbi-service-auto-insights-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
 ## Run Quick Insights on a dataset
 
-Watch Will run Quick Insights on a sample dataset, pin one of these Quick Insights as a tile on his dashboard, and open a Quick Insight in Focus mode.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SCUx47AFNhw" frameborder="0" allowfullscreen></iframe>
+Watch Amanda run Quick Insights on a sample dataset, pin one of these Quick Insights as a tile on his dashboard, and open a Quick Insight in Focus mode.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EOASjs5mj6s" frameborder="0" allowfullscreen></iframe>
 
 Now it's your turn. Explore Quick Insights using the Supplier Quality Analysis sample.
 
@@ -52,6 +54,8 @@ Now it's your turn. Explore Quick Insights using the Supplier Quality Analysis s
     Or, in the leftnav, select the ellipses (...) and choose **View Insights**.
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
+
+    >**NOTE**: Some datasets can't generate Insights because the data isn't statistically significant.  To learn more, see [Optimize your data for Quick Insights](powerbi-service-auto-insights-optimize.md).
 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate Insight Cards. Each card has a chart or graph plus a short description.
 
