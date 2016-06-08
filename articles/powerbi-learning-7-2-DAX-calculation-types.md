@@ -1,6 +1,6 @@
 <properties
    pageTitle="DAX Calculation Types"
-   description="Create calculated columns and measures in Power BI using DAX forumulas"
+   description="Create calculated columns and measures in Power BI using DAX formulas"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -11,7 +11,7 @@
    qualityFocus="no"
    qualityDate=""
    featuredVideoId=""
-   courseDuration="20m"/>
+   courseDuration="21m"/>
 
 <tags
    ms.service="powerbi"
@@ -19,15 +19,69 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/01/2016"
+   ms.date="06/06/2016"
    ms.author="davidi"/>
 
 # DAX Calculation types
 
-The general format of table names in DAX is 'TableName'[ColumnName]. The quotes around the table name are mandatory if the name contains any spaces. You can also omit the table name completely and just use the column name, but this is poor practice for clear functions. Column names must always include the square brackets.
+There are two primary calculations you can create using DAX:
 
-You can create calculated columns in Power BI using only a DAX formula. The required elements are a mew column name, and at least one function or expression. If you reference a table or column in your calculated column formula, you do not need to specify a row in the table -- Power BI will know to calculate the column for the current row.
+-   **calculated columns**
+-   **calculated measures**
 
-You can also create a measure using only a DAX formula. Again, the required elements are a mew measure name, and at least one function or expression. Measures are usually aggregated data.
+Before digging into creating either of those, it's good to have a firm grasp on DAX syntax for tables and columns, which you will use when creating either **calculated columns** or **calculated measures**.
 
-You should use a calculated column when you want to slice or filter on the value, or if you want a calculation for every row in your table. You should use a measure when you are calculating percentages or ratios, or you need complex aggregations.
+## DAX table and column name syntax
+
+Whether you're creating a new column or measure, it's important to know the general format of table names in DAX:
+
+    'Table Name'[ColumnName]
+
+If there are spaces in the table name (as shown above), the single quotes around the table name are mandatory. If the table name has no spaces, the single quotes can be omitted, so the syntax looks like the following:
+
+    TableName[ColumnName]
+
+The following image shows a DAX formula being created in Power BI:
+
+![](media/powerbi-learning-7-2-DAX-calculation-types/DAX-calc-types_1.png)
+
+You can also omit the table name completely and just use the column name, but this is poor practice for writing clear functions (and thus, for clear DAX code). Column names must always include the square brackets.
+
+It's best practice to *always* do the following:
+
+-   No spaces in table names
+-   Always include the table name in formulas (don't omit it, even though DAX lets you)
+
+## Creating calculated columns
+
+**Calculated columns** are useful when you want to slice or filter on the value, or if you want a calculation for every row in your table.
+
+You can create calculated columns in Power BI Desktop by selecting **New Column** from the **Modeling** tab. It's best to be in **Data** view (rather than **Report** or **Relationships** view), since you can see the new column created and the **Formula Bar** is populated and ready for your DAX formula.
+
+![](media/powerbi-learning-7-2-DAX-calculation-types/DAX-calc-types_2a.png)
+
+Once you select the **New Column** button, the **Formula Bar** is populated with a basic column name (which you change to suit your formula, of course) and the **=** operator, and the new column appears in the data grid, as shown in the following image.
+
+![](media/powerbi-learning-7-2-DAX-calculation-types/DAX-calc-types_3.png)
+
+The required elements for a calculated column are the following:
+
+-   a new column name
+-   at least one function or expression
+
+If you reference a table or column in your calculated column formula, you do not need to specify a row in the table - Power BI calculates the column for the current row for each calculation.
+
+## Creating calculated measures
+
+Use a **calculated measure** when you are calculating percentages or ratios, or you need complex aggregations. To create a measure using a DAX formula, select the **New Measure** button from the **Modeling** tab. Again, it's best to be in the **Data** view of Power BI Desktop since it shows the **Formula Bar** and makes it easy to write your DAX formula.
+
+![](media/powerbi-learning-7-2-DAX-calculation-types/DAX-calc-types_4.png)
+
+With **measures**, you see a new measure icon appear in the **Fields** pane with the name of the measure. The **Formula Bar** is again populated with the name of your DAX formula (this time, with your measure).
+
+![](media/powerbi-learning-7-2-DAX-calculation-types/DAX-calc-types_5.png)
+
+The required elements for a calculated measure are the same as they are for a calculated column:
+
+-   a new measure name
+-   at least one function or expression

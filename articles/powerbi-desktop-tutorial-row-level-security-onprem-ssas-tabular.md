@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2016"
+   ms.date="06/07/2016"
    ms.author="selvar"/>
 
 # Tutorial: Dynamic row level security with Analysis services tabular model
@@ -26,14 +26,14 @@ This tutorial demonstrates the steps necessary to implement **row level security
 
 During this tutorial, the following steps are described in detail, helping you understand what you need to do to implement dynamic row level security with Analysis Services tabular model:
 
-- Create a new security table in the **AdventureworksDW2012** database
-- Build the tabular model with necessary fact and dimension tables
-- Define the roles and permissions for the users
-- Deploy the model to an **Analysis Services tabular** instance
-- Use Power BI Desktop to build a report that displays the data corresponding to the user accessing the report
-- Deploy the report to **Power BI service**
-- Create a new dashboard based on the report, and finally,
-- Share the dashboard with your coworkers
+-   Create a new security table in the **AdventureworksDW2012** database
+-   Build the tabular model with necessary fact and dimension tables
+-   Define the roles and permissions for the users
+-   Deploy the model to an **Analysis Services tabular** instance
+-   Use Power BI Desktop to build a report that displays the data corresponding to the user accessing the report
+-   Deploy the report to **Power BI service**
+-   Create a new dashboard based on the report, and finally,
+-   Share the dashboard with your coworkers
 
 To follow the steps in this tutorial you need the **AdventureworksDW2012** database, which you can download **[here.](http://msftdbprodsamples.codeplex.com/releases/view/55330)**
 
@@ -57,10 +57,8 @@ There are many published articles describing how to define row level dynamic sec
 
 4.  Next we do an _inner join_ with the **DimSalesTerritory** table, which shows the region details associated with the user. The following code performs the _inner join_, and the image that follows shows how the table appears once the _inner join_ is successful.
 
-    ```
-    **select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeKey, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryKey]**
-    ```
-    
+        **select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeKey, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryKey]**
+
     ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/CreateUserSecurityTable_join_users.png)
 
 5.  Notice that the above image shows information such as which user is responsible for which sales region. That data is displayed because of the relationship that we created in **Step 2**. Also, note that the user **Jon Doe is part of the Australia sales region**. We’ll revisit John Doe in upcoming steps and tasks.
@@ -85,17 +83,16 @@ There are many published articles describing how to define row level dynamic sec
 
 6.  In this step, we use the **LOOKUPVALUE** function to return values for a column in which the Windows user name is the same as the user name returned by the **USERNAME** function. Queries can then be restricted where the values returned by **LOOKUPVALUE** match values in the same or related table. In the **DAX Filter** column, type the following formula:
 
-    ```    =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
-    ```
+        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
 
 7.  In this formula, the **LOOKUPVALUE** function returns all values for the **DimUserSecurity[SalesTerritoryID]** column, where the **DimUserSecurity[UserName]** is the same as the current logged on Windows user name, and **DimUserSecurity[SalesTerritoryID]** is the same as the **DimSalesTerritory[SalesTerritoryKey]**.
 
     The set of Sales SalesTerritoryKey's returned by **LOOKUPVALUE** is then used to restrict the rows shown in the **DimSalesTerritory**. Only rows where the **SalesTerritoryKey** for the row is in the set of IDs returned by the **LOOKUPVALUE** function are displayed.
 
 8.  For the **DimUserSecurity** table, in the **DAX Filter** column, type the following formula.
-    ```
-    =FALSE()
-    ```
+
+        =FALSE()
+
 9.  This formula specifies that all columns resolve to the false Boolean condition; therefore, no columns for the **DimUserSecurity** table can be queried.
 
 10.  Now we need to process and deploy the model. You can refer [this article](https://msdn.microsoft.com/library/hh231693.aspx) for assistance in deploying the model.
@@ -166,9 +163,7 @@ There are many published articles describing how to define row level dynamic sec
 
 2.  The session gets initialized as soon as the user (Jon Doe, in this case) accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **<EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>**
 
-    ```
-    <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>jondoe@moonneo.com</EffectiveUserName></PropertyList>
-    ```
+        <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>jondoe@moonneo.com</EffectiveUserName></PropertyList>
 
 3.  Based on the effective user name request, Analysis Services converts the request to the actual moonneo\jondoe credential after querying the local Active Directory. Once **Analysis Services** gets the actual credential from Active Directory, then based on the access the user has permissions for on the data, **Analysis Services** returns the only the data for which he or she has permission.
 
