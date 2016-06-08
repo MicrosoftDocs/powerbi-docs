@@ -42,6 +42,8 @@ When you scan a product barcode with the scanner in the Power BI app on your iPh
 
 4. Point the scanner at a barcode on a product. 
 
+    ![](media/powerbi-mobile-scan-barcode-for-report/power-bi-barcode-scanner.png)
+
     You see a list of reports associated with that barcode.
 
 6. Tap the report name to open it on your iPhone, automatically filtered to that barcode.
