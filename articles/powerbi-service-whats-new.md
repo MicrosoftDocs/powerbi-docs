@@ -3,7 +3,7 @@
    description="What's new in the Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="amac"
+   authors="amandacofsky"
    manager="mblythe"
    backup="mihart"
    editor=""
@@ -52,9 +52,9 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 -   Find SSAS servers set up with the Enterprise Gateway and other Gateway updates: Now when you set up an Enterprise Gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
 
-***RLS***
+***Row-level security (RLS)***
 
--   AAD group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
+-   Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
 
 -   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
 
