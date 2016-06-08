@@ -23,13 +23,13 @@
 
 In Power BI Desktop, you can [categorize data](powerbi-desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as *barcode*. When you or your colleagues scan a barcode with the Power BI mobile app for iOS, you see any report that includes that barcode. When you open the report in the mobile app, Power BI automatically filters it to data related to that barcode. 
 
-1. In Power BI Desktop, switch to Data View ![](media/powerbi-desktop-mobile-geofiltering/pbi_desktop_data_icon.png).
+1. In Power BI Desktop, switch to Data View.
 
 2. Select a column with barcode data &#151; typically a series of 10-digit values.
 
 3. On the **Modeling** tab, select **Data Category** > **Barcode**.
 
-    >Note: You don't need to add a visual with this c
+    >**Note**: You don't need to add this field to a visual on the report. Just having the field in the report is enough.
 
 5. Save the report and publish it to the Power BI service.
 
