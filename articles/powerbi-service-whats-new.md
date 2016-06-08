@@ -55,7 +55,9 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 ***RLS***
 
 -   AAD group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
+
 -   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+
 -   Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
 
 ***Dashboards***
@@ -63,8 +65,11 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 -   Favorite dashboards: To help you reach the dashboards you go to most, we added a way to favorite those dashboard and make them easily accessible from all your workspaces.
 
 ***Analyze in Excel***
+
 -   Improved download experience: Easily download updates to the Analyze in Excel feature through a new dialog experience.
+
 -   Support for RLS: Once you set up RLS, the rules you apply to the data now flow through when a user analyzes the data in Excel.
+
 -   Improved error messaging for on-premises Analysis Services databases: Previously, if you selected Analyze in Excel for an unsupported data source, you wouldn't get an error message until after you downloaded the ODC file and tried to connect to Power BI. Now as soon as you select Analyze in Excel for a data source we don't support, you'll see a message letting you know we don't yet support that data source.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
