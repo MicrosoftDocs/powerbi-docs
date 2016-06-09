@@ -47,6 +47,26 @@ Before you install the gateway, it’s important to know whether or not use you 
 
 The gateway allows for the use of DirectQuery to an on-premises SQL Server, SAP HANA, Oracle or Teradata, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services. The enterprise gateway can also be used with scheduled refresh for data that you have imported into Power BI.
 
+## Requirements
+
+**Minimum Requirements:**
+- .NET 4.5 Framework
+- Windows 7 / Windows Server 2008 R2, or later
+
+**Recommended:**
+- 8 Core CPU
+- 8 GB Memory
+- Windows 2012 R2 or later
+
+### Limitations of Analysis Services live connections
+
+There are certain limitations to using SSAS MD:
+
+- Servers must be running SQL Server 2012 SP1 CU4 or later
+- Only Enterprise and Business Intelligence editions of SQL Server 2012/2014 are supported for MD connectivity. Or, SQL Server 2016 Standard edition.
+- Cell level Formatting and translation features are not supported.
+- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
+
 ## List of available data source types
 
 |**Data source**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|

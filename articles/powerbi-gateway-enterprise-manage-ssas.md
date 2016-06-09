@@ -33,6 +33,15 @@ Or, from the Power BI service, select **Downloads** > **Power BI Gateways**.
 
 ![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
 
+## Limitations of Analysis Services live connections
+
+There are certain limitations to using SSAS MD:
+
+- Servers must be running SQL Server 2012 SP1 CU4 or later
+- Only Enterprise and Business Intelligence editions of SQL Server 2012/2014 are supported for MD connectivity. Or, SQL Server 2016 Standard edition.
+- Cell level Formatting and translation features are not supported.
+- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
+
 ## Add a gateway
 
 To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698863) and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
