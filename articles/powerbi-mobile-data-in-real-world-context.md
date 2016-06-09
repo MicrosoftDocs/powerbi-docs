@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/08/2016"
+   ms.date="06/09/2016"
    ms.author="maggies"/>
 
 # Get Power BI data from the real world with the mobile apps
@@ -33,7 +33,7 @@ More about:
 
 -   [Creating a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
 -   [Scanning a Power BI QR code from your iPhone](powerbi-mobile-qr-code-for-tile.md)
--   [Scan a Power BI QR code from your Android phone](powerbi-mobile-qr-code-for-android.md)
+-   [Scanning a Power BI QR code from your Android phone](powerbi-mobile-qr-code-for-android.md)
 
 ## QR codes for reports
 Create a QR code for a report.  When your colleagues scan the code with their iPhones (Android phones coming soon), they see the report you've associated with that QR code. (More data, analyze, explore)
