@@ -211,6 +211,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-go-from-reading-view-to-editing-view",
             "powerbi-service-interact-with-a-report-in-editing-view",
             "powerbi-service-interact-with-a-report-in-reading-view",
+            "powerbi-service-qr-code-for-report",
             "powerbi-service-aggregates",
             "powerbi-service-rename-a-report",
             "powerbi-service-rename-a-report-page",

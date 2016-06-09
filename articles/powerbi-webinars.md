@@ -26,11 +26,17 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[Advanced Power BI: Solving the Hard Problems by Devin Knight - 06/07/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-07-Advanced-PowerBI-Registration.html?Is=Website)
-
 [Tell Data Stories with Power BI Publish to Web - 06/14/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-PowerBI-Publish-to-Web-Registration.html?Is=Website)
 
 [Going Hardcore on your Business Intelligence with Power BI by Adam Cogan - 06/14/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-Hardcore-Business-Intelligence-Registration.html?Is=Website)
+
+[Best-in-Class On-Premise Business Intelligence for Power BI from Pyramid Analytics - 06/16/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-16-PowerBI-Pyramid-Analytics-Registration.html?Is=Website)
+
+[Amazing Things You Can Do With Power BI by Chris Webb - 06/21/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-21-Amazing-Things-with-Power-BI-Registration.html?Is=Website)
+
+[A Walkthrough of Power BI Security & Administration Considerations - 06/23/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
+
+[DAX in Power BI: why you need to learn it by Marco Russo - 06/28/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-28-DAX-PowerBI-Registration.html?Is=Website)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -38,13 +44,14 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
+[Advanced Power BI: Solving the Hard Problems by Devin Knight - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-07-Advanced-PowerBI-Registration.html?Is=Website)
+
 [DAX best practices from the field by Paul Turley - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-31-DAX-best-practices-Registration.html?Is=Website)
 
 [Power BI Sales Management Solution Webinar (Dynamics CRM, Salesforce) - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-25-PowerBI-Sales-Management-Registration.html?Is=Website)
 
 [Power BI Q&A - Best Practices - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-26-PowerBI-Q-and-A-Registration.html?Is=Website)
 
-[Integrating Power BI with your Application - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Integrating-PowerBI-with-your-Application-Registration.html?Is=Website)
 
 ###  Introductory webinars
 
@@ -75,6 +82,8 @@ Watch our latest webinars on-demand.
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
 ### Community webinars
+
+[Advanced Power BI: Solving the Hard Problems by Devin Knight - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-07-Advanced-PowerBI-Registration.html?Is=Website)
 
 [Data Preparation is the Keystone by Reza Rad - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Data-Preparation-Registration.html?Is=Website)
 
