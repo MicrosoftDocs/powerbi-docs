@@ -19,7 +19,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2016"
+   ms.date="06/09/2016"
    ms.author="davidi"/>
 
 # Introduction to DAX
