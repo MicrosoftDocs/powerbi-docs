@@ -61,3 +61,5 @@ That may be a simple question to answer with a table displayed in front of you, 
 For example, Power BI and DAX includes values that are not properly cross-indexed. If the incoming relationship is broken, DAX adds a new row to the related table that has blanks in every field, and links that new row to the unindexed row to guarantee referential integrity. If your function includes blank rows, such as is often the case when using **ALL**, those blank rows will then be included in the number of values returned for that column.
 
 You can also create entire calculated tables using DAX functions. Calculated tables created using DAX require a **NAME** and a **TABLE** function. Calculated tables can be used like any other table, including establishing relationships.
+
+>   Video content courtesy of [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
