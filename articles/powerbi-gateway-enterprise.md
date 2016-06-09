@@ -49,13 +49,15 @@ The gateway allows for the use of DirectQuery to an on-premises SQL Server, SAP 
 
 ## Requirements
 
-**Minimum Requirements:**  
-- .NET 4.5 Framework  
+**Minimum Requirements:**
+
+- .NET 4.5 Framework
 - Windows 7 / Windows Server 2008 R2, or later
 
-**Recommended:**  
-- 8 Core CPU  
-- 8 GB Memory  
+**Recommended:**
+
+- 8 Core CPU
+- 8 GB Memory
 - Windows 2012 R2 or later
 
 ### Limitations of Analysis Services live connections
