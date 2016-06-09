@@ -125,18 +125,19 @@ These metrics and charts help to understand your support organization performanc
 
 Following table lists the CRM entities available in this content pack and also gives details on the filters applied to each of the entity records. 
 
-| CRM Entity | 	Filters applied| 
+| CRM Entity | Filters applied | 
 |---|---| 
-|Account| 	All accounts which have related cases that have been modified in the last 90 days.| 
-|Activity|	All activities modified in the last 90 days <br> [modifiedon] > today - 90 days | 
-|Case| 	All cases modified in the last 90 days <br> [modifiedon] > today - 90 days | 
-|Case Resolution Activity | 	All case resolution activities modified in the last 90 days <br> [modifiedon] > today - 90 days | 
-|Contact |	All contacts which have related cases that have been modified in the last 90 days. | 
-|Knowledge Article|	All latest version of knowledge articles <br> [islatestversion] = true | 
-|Knowledge Article Incident |All knowledge article incidents which are modified in the last 90 days <br> [modifiedon] > today - 90 days | 
-|Queue| 	All active queues <br> [statecode] = 0 | 
-|Queue Item| 	All case related queue items created on the past 365 days <br> [createdon] > today - 365 days and <br>  [objecttypecode] = 112 |
-|User |	All active users <br>  [isdisabled] = false | 
+|Account | All accounts which have related cases that have been modified in the last 90 days. |
+|Activity | All activities modified in the last 90 days <br> [modifiedon] > today - 90 days |
+|Case | All cases modified in the last 90 days <br> [modifiedon] > today - 90 days |
+|Case Resolution Activity | All case resolution activities modified in the last 90 days <br> [modifiedon] > today - 90 days |
+|Contact | All contacts which have related cases that have been modified in the last 90 days. |
+|Knowledge Article | All latest version of knowledge articles  <br> [islatestversion] = true |
+|Knowledge Article Incident | All knowledge article incidents which are modified in the last 90 days <br> [modifiedon] > today - 90 days |
+|Queue |All active queues  <br> [statecode] = 0 |
+|Queue Item | All case related queue items created on the past 365 days  <br> [createdon] > today - 365 days and <br> [objecttypecode] = 112 |
+|User | All active users <br>  [isdisabled] = false |
+
 
 <a name="Requirements"></a>
 ## System requirements
