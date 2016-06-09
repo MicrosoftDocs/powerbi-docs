@@ -125,8 +125,8 @@ These metrics and charts help to understand your support organization performanc
 
 Following table lists the CRM entities available in this content pack and also gives details on the filters applied to each of the entity records. 
 
-|CRM Entity| 	Filters applied| 
-|---|---|
+| CRM Entity | 	Filters applied| 
+|---|---| 
 |Account| 	All accounts which have related cases that have been modified in the last 90 days.| 
 |Activity|	All activities modified in the last 90 days <br> [modifiedon] > today - 90 days | 
 |Case| 	All cases modified in the last 90 days <br> [modifiedon] > today - 90 days | 
@@ -152,13 +152,13 @@ Following table lists the CRM entities available in this content pack and also g
 
 The address of the instance can be found in the URL bar of your browser. It typically has the format: `https://[instance_name].crm.dynamics.com`. 
 
-Note: only Dynamics CRM 2016 endpoints are supported in the content pack. If you do not have CRM Online 2016 or later, unfortunately the content pack will not work. Please use the Power BI Desktop to connect directly to your account. 
+Note: only Dynamics CRM 2016 endpoints are supported in the content pack. The content pack will not work with earlier versions of CRM Online, please use the Power BI Desktop to connect directly to your account. 
 
 ## Troubleshooting
 
 If you're having trouble connecting, please confirm:  
 - you're providing the correct instance URL (check with your admin)  
-- the instance is CRM Online 2016 
+- the instance is CRM Online 2016  
 - the OData endpoint is enabled  
 
 You may also try connecting directly in the PBI Desktop, with the OData URL https://[instance_name].crm.dynamics.com/api/data/v8.0/`. 
