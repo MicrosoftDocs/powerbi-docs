@@ -10,8 +10,8 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId=""
-   courseDuration="11m"/>
+   featuredVideoId="yec1f5A08mc"
+   courseDuration="13m"/>
 
 <tags
    ms.service="powerbi"

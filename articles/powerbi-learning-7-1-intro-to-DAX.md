@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId=""
+   featuredVideoId="lRhOJP3bZCo"
    courseDuration="9m"/>
 
 <tags
