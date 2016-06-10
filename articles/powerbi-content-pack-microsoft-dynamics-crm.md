@@ -123,11 +123,11 @@ It also contains key charts such as:
   
 These metrics and charts help to understand your support organization performance and analyze active cases workload across your service team and service queues. 
 
-Following table lists the CRM entities available in this content pack and details on the filters applied to each of the entity records. 
+Following table lists the CRM entities available in this content pack as well as details on the filters applied to each of the entity records. 
   
-| CRM Entity | Filters applied |  
-|---|---|   
-|Account | All accounts which have related cases that have been modified in the last 90 days. |  
+| CRM Entity |	Filters applied|
+|---|---| 
+|Account  |	All accounts which have related cases that have been modified in the last 90 days. |
 |Activity | All activities modified in the last 90 days <br> [modifiedon] > today - 90 days |  
 |Case | All cases modified in the last 90 days <br> [modifiedon] > today - 90 days |  
 |Case Resolution Activity | All case resolution activities modified in the last 90 days <br> [modifiedon] > today - 90 days |  
