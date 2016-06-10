@@ -62,8 +62,14 @@ The gateway allows for the use of DirectQuery to an on-premises SQL Server, SAP 
 
 ### Limitations of Analysis Services live connections
 
-- Servers must be running SQL Server 2012 SP1 CU4 or later
-- Only Enterprise and Business Intelligence editions of SQL Server 2012/2014 are supported for MD connectivity. Or, SQL Server 2016 Standard edition.
+You can use a live connection against tabular or multidimensional instances.
+
+|**Server version**|**Required SKU**|
+|---|---|
+|2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
+|2014|Business Intelligence and Enterprise SKU|
+|2016|Standard SKU or higher|
+
 - Cell level Formatting and translation features are not supported.
 - Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
 
