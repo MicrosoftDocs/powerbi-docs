@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/06/2016"
+   ms.date="06/13/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -315,13 +315,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-gateway-enterprise",
             "powerbi-gateway-enterprise-indepth",
             "powerbi-gateway-proxy",
-            "powerbi-gateway-enterprise-upgrade-as-connector",
             "powerbi-gateway-enterprise-manage-ssas",
             "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
             "powerbi-gateway-enterprise-manage-scheduled-refresh"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 4
         },
         {
           "sectionTitle": "Administration",
@@ -333,10 +332,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-governance",
             "powerbi-admin-power-bi-security",
             "powerbi-admin-power-bi-expressroute",
+            "powerbi-admin-portal",
             "powerbi-admin-rls",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
-            "powerbi-admin-migrating-to-the-new-power-bi-experience",
-            "powerbi-admin-migration-faq",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
             "powerbi-admin-closing-your-account",
