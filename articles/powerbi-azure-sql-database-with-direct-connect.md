@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="06/13/2016"
    ms.author="asaxton"/>
 # Azure SQL Database with DirectQuery
 
@@ -68,6 +68,8 @@ Connect to the [Azure SQL Database connector](https://app.powerbi.com/getdata/bi
    
     ![](media/powerbi-azure-sql-database-with-directquery/username.png)
 
+    > **Note**: The username will be a user that is defined in your Azure SQL Database instance.
+
 5.  After you've connected, you see a new dataset with the same name as the database you connected to, and a placeholder tile for the dataset, created on the dashboard.
 
     ![](media/powerbi-azure-sql-database-with-directquery/dataset2.png)
@@ -90,11 +92,3 @@ Your fully qualified server name and database name can be found in the Azure Por
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get Data for Power BI](powerbi-service-get-data.md)
-
-
-
-
-
-
-
-
