@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="06/13/2016"
    ms.author="asaxton"/>
 
 # Spark on HDInsight with DirectQuery
@@ -67,4 +67,4 @@ You can also allocate additional resources in the Resource Manager:
 
 [Get started with Power BI](powerbi-service-get-started.md)  
 
-[Get Data for Power BI](powerbi-service-get-data.md)  
+[Get Data for Power BI](powerbi-service-get-data.md)
