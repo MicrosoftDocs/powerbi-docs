@@ -28,7 +28,7 @@ Sometimes you may want these emails delivered to an alternate email address rath
 
 Here's how to do that:
 
-1.  Go to your Office 365 personal info page at https://portal.office.com/account/#personalinfo.  If you are prompted to, sign in with the email address and password you use for Power BI.
+1.  Go to your [Office 365 personal info page](https://portal.office.com/account/#personalinfo).  If you are prompted to, sign in with the email address and password you use for Power BI.
 
 2.  Slick the edit link in the Contact details section.  
 
