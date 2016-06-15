@@ -24,7 +24,7 @@
 
 The Notification Center brings information related to your Power BI experience right to you, in the Power BI service or on your mobile device. When you open it, you see a sequential feed of messages about new dashboards that have been shared with you, changes to your Group space, information about Power BI events and meetings, and more.
 
-1.  The first time you sign in to the [updated version of the Power BI apps](https://powerbi.microsoft.com/en-us/mobile/) for your mobile device, we ask if you'd like to receive notifications. You can configure how Power BI notifies you by going to **Settings** in the Power BI mobile app. 
+1.  The first time you sign in to the [updated version of the Power BI apps](https://powerbi.microsoft.com/mobile/) for your mobile device, we ask if you'd like to receive notifications. You can configure how Power BI notifies you by going to **Settings** in the Power BI mobile app. 
 2.  
 2.  When you sign in to Power BI on your mobile device, you see any new notifications sent to you while you were offline. If you do have new notifications, Power BI displays a yellow bubble with the number of new items.
 
@@ -41,5 +41,5 @@ The Notification Center brings information related to your Power BI experience r
 4.  To dismiss a notification, select the X icon.
 
 ### See also
-[Download the latest version of the Power BI apps](https://powerbi.microsoft.com/en-us/mobile/) for mobile devices
+[Download the latest version of the Power BI apps](https://powerbi.microsoft.com/mobile/) for mobile devices
 [Power BI Notification Center](powerbi-service-notification-center.md)
