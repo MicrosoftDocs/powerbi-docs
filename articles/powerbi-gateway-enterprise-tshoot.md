@@ -241,7 +241,7 @@ You can find the data center region you are in by doing the following:
 
 3. Your data region will be listed in **Your data is stored in**.
 
-    ![](media/powerbi-gateway-enterprise-tshoot/power-bi-region.png)
+    ![](media/powerbi-gateway-enterprise-tshoot/power-bi-data-region.png)
 
 If you are still not getting anywhere, you could try getting a network trace using a tool like [fiddler](#fiddler) or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact [support](https://support.microsoft.com) for assistance.
 
