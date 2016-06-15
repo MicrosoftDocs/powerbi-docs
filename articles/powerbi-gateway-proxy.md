@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/13/2016"
+ms.date="06/15/2016"
 ms.author="asaxton"/>
 # Configuring proxy settings for the Power BI Gateways
 
@@ -90,3 +90,7 @@ The default proxy configuration is the following.
 The default configuration works with windows authentication. If your proxy uses another form of authentication, you will need to change the settings. If you are not sure, you should contact your network administrator.
 
 To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network Settings)](https://msdn.microsoft.com/library/kd3cf2ex.aspx)
+
+## See also
+
+[Firewall information](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy)
