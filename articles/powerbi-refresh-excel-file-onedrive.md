@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/01/2016"
+   ms.date="06/16/2016"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
