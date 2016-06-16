@@ -32,10 +32,8 @@ When you look at a Power BI report on your iPad, iPhone, or iPod Touch, do you s
     ![](media/powerbi-mobile-geofiltering/power-bi-geofiltered-report-swiss-arrows.png)
 
 
-
 ## Why do only some reports have location tags?
- because the report creator has tagged the geographic data in the report
-When your colleagues create reports in Power BI Desktop, they can categorize geographical data for a column. Then, when you or your colleagues view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where you are.
+When you or your colleagues create reports in Power BI Desktop, you can categorize geographical data for a column. Then, when you view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where you are.
 
 Read more about [categorizing geographical data](powerbi-desktop-mobile-geofiltering.md) in Power BI Desktop.
 
