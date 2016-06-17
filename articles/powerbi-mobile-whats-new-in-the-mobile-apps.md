@@ -17,10 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2016"
+   ms.date="06/16/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## June 2016
+
+### SQL Server 2016 Reporting Services mobile reports
+Now you can drill through from a Reporting Services KPI or a mobile report to another mobile report or to any custom URL.
+
+### Notification center
+The notification center in your Power BI mobile app shows new data or dashboards that are shared with you, or changes to groups you belong to.
 
 ## May 2016
 
