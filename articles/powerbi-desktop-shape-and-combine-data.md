@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="07/20/2016"
    ms.author="davidi"/>
 # Shape and combine data in Power BI Desktop
 
@@ -129,7 +129,11 @@ From the **Home** ribbon in Query Editor, we select **New Source \> Web** and ty
 
  ![](media/powerbi-desktop-shape-and-combine-data/Designer_GSG_USStateAbbreviationsNavigator.png)
 
-We select **Table[edit]** because that includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down to what we want. We take the following steps:
+We select **Table[edit]** because that includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down to what we want.
+
+> **Tip:** Is there a faster or easier way to accomplish the steps below? Yes, we could create a *relationship* between the two tables, and shape the data based on that relationship. The following steps are still good to learn for working with tables, just know that relationships can help you quickly use data from multiple tables.
+
+To get this data into shape, we take the following steps:
 
 -   Remove the top two rows – they’re a result of the way that Web page’s table was created, and we don’t need them. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Top Rows**.
 

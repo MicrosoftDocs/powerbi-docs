@@ -19,12 +19,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # Arrange the Z-order of Report Elements
-
-Learn how to control how your report elements overlap with each other with Z-order.
 
 When you have lots of elements on a report, Power BI lets you manage how they overlap with each other. How items are layered, or arranged on top of one another, is often referred to as the z-order.
 

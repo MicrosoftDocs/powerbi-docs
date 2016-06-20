@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/15/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # Tips and tricks for color formatting in Power BI
