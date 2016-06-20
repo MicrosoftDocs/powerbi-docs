@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 
@@ -27,7 +27,7 @@ Ask natural language questions in Cortana and find answers from data stored in P
 
 ## How do Cortana and Power BI work together?
 
-With the November 2015 update of Windows 10, Cortana can now find answers from data stored in Power BI through the Public Preview of integration between Cortana and Power BI. To use Cortana to get answers from Power BI, all that is required is to add the work or school account you use with Power BI to Windows 10 and have access to a dataset in Power BI that is enabled for Cortana.
+With the November 2015 update of Windows 10, Cortana can now find answers from data stored in Power BI through the Public Preview of integration between Cortana and Power BI. To use Cortana to get answers from Power BI, all that is required is to add the work or school account you use with Power BI to Windows 10 and have access to datasets in Power BI that are enabled for Cortana.
 
 Similar to Power BI Q&A, ask or type your questions using natural language. Cortana will search your Cortana-enabled datasets in Power BI for answers and display results directly in your Windows 10 device.   
 
