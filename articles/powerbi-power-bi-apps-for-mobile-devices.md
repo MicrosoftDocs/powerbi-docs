@@ -17,19 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="06/20/2016"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
 
-Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &#151; be it iOS (iPad or iPhone), Apple Watch, Android phone, or Windows 10 device.
+Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &#151; be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone, or Windows 10 device.
 
 See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 ![](media/powerbi-powerbi-apps-for-mobile-devices/pbi_phone_photo_crop2.png)
 
 
-## The iPhone app (Power BI for iOS)
+## The iPhone and iPod Touch app (Power BI for iOS)
 [Get started with the iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS).
 
 -   Download the [iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS).
@@ -81,7 +81,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
--   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) from your Android phone.
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone.
 
 ## The Power BI mobile app for Windows 10 devices
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
