@@ -16,12 +16,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/16/2016"
+   ms.date="06/20/2016"
    ms.author="maggies"/>
 
 # Filter a report by location in the Power BI mobile apps for iOS
 
 When you look at a Power BI report on your iPad, iPhone, or iPod Touch, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your physical location.
+
+>**Note**: You can only filter by location if the geographic names in the report are in English &#150; for example, "New York City" or "Germany".
 
 ## Filter your report by your location
 
