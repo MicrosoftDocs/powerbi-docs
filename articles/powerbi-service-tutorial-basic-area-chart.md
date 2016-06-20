@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 # Tutorial: Basic Area chart  
@@ -50,8 +50,9 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
     ![](media/powerbi-service-tutorial-basic-area-chart/convertChart.png)
 
 	c.  Select **Time \> Fiscal Month** to add it to the **Axis** well.   
-    ![](media/powerbi-service-tutorial-basic-area-chart/AreachartTutorial.png)
+    ![](media/powerbi-service-tutorial-basic-area-chart/powerbi-area-chart.png)
 
+    d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by month**.
 
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
