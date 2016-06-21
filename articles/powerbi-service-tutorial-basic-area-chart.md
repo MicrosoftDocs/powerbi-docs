@@ -50,7 +50,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
     ![](media/powerbi-service-tutorial-basic-area-chart/convertChart.png)
 
 	c.  Select **Time \> Fiscal Month** to add it to the **Axis** well.   
-    ![](media/powerbi-service-tutorial-basic-area-chart/powerbi-area-chart.png)
+    ![](media/powerbi-service-tutorial-basic-area-chart/powerbi-area-chartnew.png)
 
     d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by month**.
 
