@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  
@@ -61,11 +61,7 @@ There are currently a few limitations to using **DirectQuery**:
 
 -   If the Query Editor query is overly complex an error will occur. To remedy the error you must: delete the problematic step in Query Editor, or Import the data instead of using **DirectQuery**
 
--   You cannot add calculated columns or tables
-
 -   Relationship filtering is limited to a single direction, rather than both directions
-
--   You cannot change the data type of a column
 
 -   By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph for more information
 

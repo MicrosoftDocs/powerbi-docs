@@ -19,7 +19,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # A quick look at the Power BI service

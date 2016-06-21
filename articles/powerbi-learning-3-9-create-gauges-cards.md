@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="otRQsFYOHfc"   
+   featuredVideoId="xmja6EpqaO0"   
    featuredVideoThumb=""
    courseDuration="7m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # How to Use Gauges and Single Number Cards
