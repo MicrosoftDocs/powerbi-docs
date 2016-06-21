@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/11/2016"
+   ms.date="06/20/2016"
    ms.author="maggies"/>
 
 # View report page tiles in the Power BI for Android app
