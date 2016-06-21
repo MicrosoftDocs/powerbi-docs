@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/05/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 # The report editor...Take a tour
 
@@ -38,7 +38,7 @@ The content displayed in the report editor varies by selections you make in the 
 
 ## The Visualizations pane (from top to bottom)
 
-Select visualization type, build your visual by adding and managing fields, and customize the look and feel of your visual.
+Select visual type, build your visual by adding and managing fields, and customize the look and feel of your visual.
 
 ### Change between different visual types by selecting the icon.
 
@@ -66,13 +66,13 @@ Select the paintbrush icon to display customization options. 
 -   [Color formatting](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
 -   [Customizing X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
 
-![](media/powerbi-service-the-report-editor-take-a-tour/vizCustomize.png)
+    ![](media/powerbi-service-the-report-editor-take-a-tour/vizCustomize.png)
 
 ## The Filters pane
 
-View, set, and modify page and visualization-level filters.
+View, set, and modify page, report, and visual-level filters.
 
-![](media/powerbi-service-the-report-editor-take-a-tour/vizFilters.png)
+![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-filter-pane.png)
 
 For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
@@ -109,22 +109,11 @@ The Fields pane displays the tables and fields that exist in your data.  Use th
 -  **![](media/powerbi-service-the-report-editor-take-a-tour/PBI_geo_icon.png) Geography fields**  
 	Location fields can be used to create map visualizations. 
 
+-  **![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-hierarchy-icon.png) Hierarchy**  
+    Select the arrow to reveal the fields that make up the hierarchy. 
+
 ## The top navigation bar
-The actions available from the top navigation bar are covered in separate topics:
-
-- [Save the report](powerbi-service-save-a-report.md)
-
-- [Display settings](powerbi-service-change-report-display-settings.md)
-
-- [Switching from Reading View to Editing View]()
-
-- Shapes (coming soon)
-
-- [Refresh](powerbi-refresh-data.md)
-
-- Reload page (coming soon)
-
-- Pin a live page (coming soon)
+The actions available from the top navigation bar are numerous; with new actions being added all the time. For information about a particular action, use the Power BI Documentation Table of Contents or Search box.
 
 
 ## Next Steps:
@@ -132,7 +121,6 @@ The actions available from the top navigation bar are covered in separate topics
 [Edit a report](powerbi-service-interact-with-a-report-in-editing-view.md)
 
 [Create a report](powerbi-service-create-a-new-report.md)
-
 
 
 ## See also

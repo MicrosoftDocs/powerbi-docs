@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="06/21/2016"
    ms.author="mihart"/>
 
 
@@ -38,7 +38,7 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 
     ![](media/powerbi-service-cortana-enable/PBI_cortana_settings.png)
 
-3. Select **Datasets** > **Cortana** > **Enable Cortana to access this dataset** > **Apply**.
+3. Select **Datasets** > **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.
 
     ![](media/powerbi-service-cortana-enable/PBI_cortana-enable.jpg)
 

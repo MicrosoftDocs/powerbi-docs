@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/23/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
@@ -36,16 +36,17 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
 2.  There are two options to import a custom visual template: from the **File** menu or from the **Visualizations** pane.
 
-    **From the Desktop File menu**  
+    **From the Desktop File menu**
+
   - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
 
-    ![](media/powerbi-custom-visuals-use/InsertFile.png)
+        ![](media/powerbi-custom-visuals-use/InsertFile.png)
 
     **From the Visualization pane**
 
   - In the **Visualizations** pane, choose **Insert (…)**.  
 
-    ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+        ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
 3. **Review the warning**.
 
@@ -53,9 +54,9 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
     ![](media/powerbi-custom-visuals-use/caution.png)
 
-4. Select a .pbiviz file in the **File Open** dialog.
+4. Select a .pbiviz file in the **Open** dialog.
 
-5. You will see the icon for the custom visual added to the visualizations available for your use.
+5. An icon (also called a *template*) is added to your **Visualizations** pane.  
 
     ![](media/powerbi-custom-visuals-use/VisualUse.png)
 

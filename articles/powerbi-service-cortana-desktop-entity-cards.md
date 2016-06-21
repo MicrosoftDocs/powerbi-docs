@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="06/21/2016"
    ms.author="mihart"/>
 
 
@@ -53,9 +53,9 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify.png)
 
-4. Name the page and add alternate names.  Cortana uses these names when it searches for results. In the **Visualizations** pane, select the paintbrush icon and choose **Page Information**.
+4. Name the page and add alternate names.  Cortana uses these names when it searches for results. In the **Visualizations** pane, select the paintbrush icon and choose **Page Information**. Enable Q&A for this visual by moving the slider to **On**.
 
-    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_cortana_names_new.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name.png)
 
 6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.  For example, if you ask Cortana:
 
