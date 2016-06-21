@@ -29,6 +29,8 @@ Before Cortana can look for answers in your Power BI datasets and reports, you'l
 
   - to add the account you use with Power BI to Windows 10.
 
+  >**NOTE**: Cortana for Power BI is currently only available in English. 
+
 ## Enable Cortana to access data in Power BI
 In the Power BI service, you'll need to repeat these steps for each dataset that you want Cortana to be able to access.
 
