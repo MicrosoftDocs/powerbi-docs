@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2016"
+   ms.date="06/20/2016"
    ms.author="maggies"/>
 
 # Reports in the Power BI app for Android phones
@@ -54,7 +54,7 @@ The report opens in landscape mode.
 
 ## Use slicers to filter the report page
 
-When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), you can [add slicers to a report page](powerbi-service-tutorial-slicers.md). Then when you or your colleagues view your reports on your mobile devices, you can use the slicers to filter the page.
+When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), it's good to [add slicers to a report page](powerbi-service-tutorial-slicers.md). Then when you or your colleagues view your reports on your mobile devices, you can use the slicers to filter the page.
 
 -   Select a value in a slicer on the report page.
 
