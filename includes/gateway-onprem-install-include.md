@@ -12,7 +12,7 @@ The first choice you have to make is the mode of the gateway.
 
 > **Note:** If you install the gateway in personal mode, you will not be able to install another gateway on the same machine. 
 
-![](media/powerbi-gateway-onprem/TODO.png)
+<!--![](media/powerbi-gateway-onprem/TODO.png)-->
 
 Here are a few things to consider before installing the gateway.
 
@@ -22,11 +22,11 @@ Here are a few things to consider before installing the gateway.
 
 Once the gateway is installed, you will need to sign in with your work or school account.
 
-![](media/powerbi-gateway-onprem/TODO.png)
+<!--![](media/powerbi-gateway-onprem/TODO.png)-->
 
 After you are signed in, you will have the option to configure a new gateway, or to migrate, restore, or take over an existing gateway.
 
-![](media/powerbi-gateway-onprem/TODO.png)
+<!--![](media/powerbi-gateway-onprem/TODO.png)-->
 
 ## Configure a new gateway
 
@@ -38,7 +38,7 @@ After you are signed in, you will have the option to configure a new gateway, or
 
 > **Note:** The recovery key will be needed if you ever need to migrate, restore or take over a gateway. Be sure to keep this key in a safe place.
 
-![](media/powerbi-gateway-onprem/TODO.png)
+<!--![](media/powerbi-gateway-onprem/TODO.png)-->
 
 ### Migrate, restore or take over an existing gateway
 

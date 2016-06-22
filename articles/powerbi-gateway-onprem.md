@@ -65,7 +65,7 @@ You can use a live connection against tabular or multidimensional instances.
 
 To download the gateway, select **Power BI Gateways** under the Downloads menu. Download the [On-premises data gateway](https://go.microsoft.com/fwlink/?LinkId=698863).
 
-![](media/powerbi-gateway-onprem/TODO.png)
+<!--![](media/powerbi-gateway-onprem/TODO.png)-->
 
 <!-- Shared Install steps Include -->
 [AZURE.INCLUDE [gateway-onprem-install-include](../includes/gateway-onprem-install-include.md)]
@@ -76,11 +76,11 @@ To download the gateway, select **Power BI Gateways** under the Downloads menu. 
 
 During the installation, you will need to sign in to Power BI to register the gateway with the Power BI service.
 
-![](media/powerbi-gateway-onprem/TODO.png)
+<!--![](media/powerbi-gateway-onprem/TODO.png)-->
 
 You will also need to supply the windows user name and password that the windows service will run as. You can specify a different Windows account from your own. The gateway service will run using this account.
 
-![](media/powerbi-gateway-onprem/TODO.png)
+<!--![](media/powerbi-gateway-onprem/TODO.png)-->
 
 After the installation is complete, you will need to go to your datasets within Power BI and make sure credentials are entered for your on-premises data sources.
 
