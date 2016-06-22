@@ -24,7 +24,7 @@
 
 You can share your dashboards with colleagues in and out of your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
 
-What you can share and who you can share it with depends on your and their Power Bi licenses. See [Licensing requirements for sharing](#Licensing-requirements-for-sharing) below for details.
+What you can share and who you can share it with depends on your and their Power Bi licenses. See [Licensing requirements for sharing](powerbi-service-share-unshare-dashboard.md#licensing-requirements-for-sharing) below for details.
 
 Dashboards (and their associated reports) that are shared with you are read-only.  You can't save-as to personalize them. On the other hand, you can personalize dashboards and reports in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md).  See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
 
