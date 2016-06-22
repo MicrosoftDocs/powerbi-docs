@@ -60,7 +60,7 @@ You can use a live connection against tabular or multidimensional instances.
 |MySQL|No|Yes|
 |Sybase|No|Yes|
 |SAP BW|No|Yes|
-
+ 
 ## Download and install the On-premises data gateway
 
 To download the gateway, select **Power BI Gateways** under the Downloads menu. Download the [On-premises data gateway](https://go.microsoft.com/fwlink/?LinkId=698863).
