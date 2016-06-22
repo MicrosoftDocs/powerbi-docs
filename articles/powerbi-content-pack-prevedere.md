@@ -25,7 +25,7 @@ Gain access to exclusive and critical financial information to confidently and p
 
 Connect to the [Prevedere content pack](https://app.powerbi.com/getdata/services/prevedere) for Power BI.
 
-Note: If you are not an existing Prevedere content pack, please find sample connection information here: [https://prevederepowerbiconnector.azurewebsites.net/static/learnmore.html]
+Note: If you are not an existing Prevedere content pack, please use the [sample connection](https://prevederepowerbiconnector.azurewebsites.net/static/learnmore.html) to try it out. 
 
 ## How to connect
 
