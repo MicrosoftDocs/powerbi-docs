@@ -1,6 +1,7 @@
 <properties
    pageTitle="Share a dashboard with colleagues and others"
    description="How to share Power BI dashboards with colleagues in and out of your organization, and what you need to know about sharing."
+   services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
    manager="mblythe"
@@ -100,7 +101,7 @@ If you create your dashboard  with only free Power BI features, your recipients 
 
 See [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md) for a more complete list.
 
-This Power BI pricing page, [Use Power BI for free or buy Power BI Pro](https://powerbi.microsoft.com/en-us/pricing), is also a useful comparison of the two options.
+This Power BI pricing page, [Use Power BI for free or buy Power BI Pro](https://powerbi.microsoft.com/pricing), is also a useful comparison of the two options.
 
 ## Resharing
 
@@ -144,5 +145,5 @@ Only the dashboard owner can turn resharing on and off.
 - [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md)
 - [Share a dashboard that links to an Excel file](powerbi-service-share-dashboard-that-links-to-excel.md)
 - [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md)
-- [Use Power BI for free or buy Power BI Pro](https://powerbi.microsoft.com/en-us/pricing)
+- [Use Power BI for free or buy Power BI Pro](https://powerbi.microsoft.com/pricing)
 - [Get Started with Power BI](powerbi-service-get-started.md)
