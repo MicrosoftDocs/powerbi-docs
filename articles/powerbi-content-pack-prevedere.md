@@ -35,11 +35,11 @@ Note: If you are not an existing Prevedere content pack, please find sample conn
 
 2.  In the **Services** box, select **Get**.
 
-	![](media/powerbi-content-pack-prevedere/services.PNG)
+	![](media/powerbi-content-pack-prevedere/services.png)
 
 3.  Select **Prevedere** and then **Get**.
 
-	![](media/powerbi-content-pack-prevedere/connect.PNG)
+	![](media/powerbi-content-pack-prevedere/connect.png)
 
 4. For **Authentication Method**, select **Key** and enter your Prevedere API key. 
 
