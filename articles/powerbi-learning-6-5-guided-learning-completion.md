@@ -20,7 +20,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Congratulations - and what's next for you
@@ -51,4 +51,6 @@ There's more **help and reference** content available, too. Just go to the top o
 
 We hope you've enjoyed your journey through this **Power BI Guided Learning** experience. Best of luck to you, and may your Power BI visuals always be immersive and compelling.
 
-Still want more? Interested in using **DAX (Data Analysis Expressions)** to create, filter, or use custom columns and tables in Power BI? There's one more section targeted at people inclined to do some code work in Power BI, and it's called Introduction to DAX. Take a look if you're interested - it uses the same friendly approach as the rest of Guided Learning. 
+## One more section for DAX users
+
+Still want more? Interested in using **DAX (Data Analysis Expressions)** to create, filter, or use custom columns and tables in Power BI? There's one more section targeted at people inclined to do some code work in Power BI, and it's called **Introduction to DAX**. Take a look if you're interested - it uses the same friendly approach as the rest of Guided Learning.

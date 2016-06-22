@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="KVYu6iyhTMs"
+   featuredVideoId="0tUwn8DHo3s"
    featuredVideoThumb=""
    courseDuration="7m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Share Dashboards with your organization

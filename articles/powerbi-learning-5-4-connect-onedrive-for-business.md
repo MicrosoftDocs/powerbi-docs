@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="OKyN2L_o0NQ"
+   featuredVideoId="WK7OZF-hVZA"
    featuredVideoThumb=""
    courseDuration="8m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Connect OneDrive for Business to Power BI
