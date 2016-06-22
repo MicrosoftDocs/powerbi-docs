@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 # Tutorial: Radial Gauge charts in Power BI
@@ -46,9 +46,7 @@ These instructions use the Financial Sample. To follow along, [download the sam
 
 ### Step 1: Open the Financial Sample Excel file.
 
-1.  Open the file in Power BI by selecting **Get Data \> Files** and browsing to the location where you saved the file. The Financial Sample is added to your workspace navigation pane under **Datasets**.
-
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/FinancialSampleDataset.png)
+1.  Open the file in Power BI by selecting **Get Data \> Files** and browsing to the location where you saved the file. Select **Import**. The Financial Sample is added to your workspace as a dataset.
 
 2.  Select **Financial Sample** to open it in Explore mode.
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="06/21/2016"
    ms.author="mihart"/>
 
 
@@ -29,6 +29,8 @@ Before Cortana can look for answers in your Power BI datasets and reports, you'l
 
   - to add the account you use with Power BI to Windows 10.
 
+  >**NOTE**: Cortana for Power BI is currently only available in English.
+
 ## Enable Cortana to access data in Power BI
 In the Power BI service, you'll need to repeat these steps for each dataset that you want Cortana to be able to access.
 
@@ -38,11 +40,11 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 
     ![](media/powerbi-service-cortana-enable/PBI_cortana_settings.png)
 
-3. Select **Datasets** > **Cortana** > **Enable Cortana to access this dataset** > **Apply**.
+3. Select **Datasets** > **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.
 
     ![](media/powerbi-service-cortana-enable/PBI_cortana-enable.jpg)
 
-  In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
+    In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
 
   >**NOTE**: When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
 
