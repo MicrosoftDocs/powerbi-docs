@@ -3,7 +3,7 @@
    description="Whatever your role, Power BI brings all your data together"
    services="powerbi"
    documentationCenter=""
-   authors="brpoll"
+   authors="brandonpollett"
    manager="jamescon"
    backup=""
    editor=""
