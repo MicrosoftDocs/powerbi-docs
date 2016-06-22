@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="06/21/2016"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
@@ -45,7 +45,6 @@ When a report with a custom visual is saved using the **Save As** option, a copy
     **From the Visualization pane**
 
   - In the **Visualizations** pane, choose **Insert (…)**.  
-
         ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
 3. **Review the warning**.

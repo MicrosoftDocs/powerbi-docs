@@ -25,7 +25,7 @@
 
 Use the full capabilities of Power BI to create reports designed specifically to answer Cortana questions.
 
-And, if the report has a filter, Cortana will understand questions that specify items in the filters' list, and apply the filter on-the-fly.
+And, if the report has a filter, Cortana will understand questions that specify items in the filter's list, and apply the filter on-the-fly.
 
 ## Before you begin
 

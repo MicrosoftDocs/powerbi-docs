@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="06/21/2016"
    ms.author="mihart"/>
 # The report editor...Take a tour
 
@@ -94,8 +94,8 @@ The Fields pane displays the tables and fields that exist in your data.  Use th
 
 ### What do the field icons mean?
 
-- **∑ Aggregates**
-
+-
+**∑ Aggregates**
   An aggregate is a numeric value that will be summed or averaged, for example. Aggregates are imported with the data (defined in the data model your report is based on).
 
   For more information, see [Aggregates in Power BI reports](powerbi-service-aggregates.md).
