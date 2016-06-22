@@ -1,6 +1,6 @@
 <properties 
    pageTitle="View report page tiles in the iPhone app"
-   description="View report page tiles in the iPhone app (Power BI for iOS)"
+   description="Read about viewing and interacting with live report tiles in a dashboard in the Power BI mobile app for iOS on your iPhone."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/11/2016"
+   ms.date="06/21/2016"
    ms.author="maggies"/>
 
 # View report page tiles in the iPhone app (Power BI for iOS)
@@ -26,11 +26,11 @@ When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI ser
 
 1.  When you open a [dashboard in the iPhone app](powerbi-mobile-dashboards-in-the-iphone-app.md), you see a small image of the report.
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/pbi_iph_livetileindash.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-report-tile.png)
 
-2. Tap the tile. The pinned live report page opens in landscape mode. 
+2. Tap the tile. The pinned live report page opens the report in landscape mode. 
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/pbi_iph_liverpttile.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-report-it-spend.png)
 
 -   Tap the **X** to close the tile and return to the dashboard.
 
