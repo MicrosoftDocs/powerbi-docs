@@ -3,7 +3,7 @@
    description="Power BI webinars."
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="miguem"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,18 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/02/2016"
-   ms.author="mihart"/>
+   ms.date="06/23/2016"
+   ms.author="miguem"/>
 
 # Power BI webinars
 
 The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** or **watch** the webinar.
 
 ## Upcoming webinars
-
-[Introduction to Power BI and M by Chris Webb - 06/21/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-21-Amazing-Things-with-Power-BI-Registration.html?Is=Website)
-
-[A Walkthrough of Power BI Security & Administration Considerations - 06/23/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
 
 [DAX in Power BI: why you need to learn it by Marco Russo - 06/28/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-28-DAX-PowerBI-Registration.html?Is=Website)
 
@@ -42,15 +38,16 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
+[Introduction to Power BI and M by Chris Webb - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-21-Amazing-Things-with-Power-BI-Registration.html?Is=Website)
+
+[A Walkthrough of Power BI Security & Administration Considerations - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
+
 [Best-in-Class On-Premise Business Intelligence for Power BI from Pyramid Analytics - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-16-PowerBI-Pyramid-Analytics-Registration.html?Is=Website)
 
 [Going Hardcore on your Business Intelligence with Power BI by Adam Cogan - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-Hardcore-Business-Intelligence-Registration.html?Is=Website)
 
 [Tell Data Stories with Power BI Publish to Web - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-PowerBI-Publish-to-Web-Registration.html?Is=Website)
 
-[Advanced Power BI: Solving the Hard Problems by Devin Knight - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-07-Advanced-PowerBI-Registration.html?Is=Website)
-
-[DAX best practices from the field by Paul Turley - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-31-DAX-best-practices-Registration.html?Is=Website)
 
 ###  Introductory webinars
 
@@ -59,6 +56,8 @@ Watch our latest webinars on-demand.
 [What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
 
 ### Intermediate webinars
+
+[A Walkthrough of Power BI Security & Administration Considerations - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
 
 [Tell Data Stories with Power BI Publish to Web - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-PowerBI-Publish-to-Web-Registration.html?Is=Website)
 
@@ -84,9 +83,13 @@ Watch our latest webinars on-demand.
 
 ### Community webinars
 
+[Introduction to Power BI and M by Chris Webb - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-21-Amazing-Things-with-Power-BI-Registration.html?Is=Website)
+
 [Going Hardcore on your Business Intelligence with Power BI by Adam Cogan - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-Hardcore-Business-Intelligence-Registration.html?Is=Website)
 
 [Advanced Power BI: Solving the Hard Problems by Devin Knight - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-07-Advanced-PowerBI-Registration.html?Is=Website)
+
+[DAX best practices from the field by Paul Turley - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-31-DAX-best-practices-Registration.html?Is=Website)
 
 [Data Preparation is the Keystone by Reza Rad - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Data-Preparation-Registration.html?Is=Website)
 
