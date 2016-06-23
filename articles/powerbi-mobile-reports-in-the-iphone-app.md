@@ -39,7 +39,7 @@ Then you view and interact with those reports in the [iPhone app (Power BI for 
 
 The report opens in landscape mode.
 
-![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-it-spend.png)
+![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-it-spend-2.png)
 
 >**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
 

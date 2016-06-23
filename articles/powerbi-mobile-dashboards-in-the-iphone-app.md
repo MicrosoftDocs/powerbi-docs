@@ -32,7 +32,7 @@ Then in the iPhone app for Microsoft Power BI for iOS, you can explore these sam
 
     Need to [download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store?
 
-     ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-home.png)
+     ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-home-2.png)
 
 3.  Tap a dashboard to open it.  
 

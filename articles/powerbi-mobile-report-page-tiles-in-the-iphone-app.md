@@ -30,7 +30,7 @@ When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI ser
 
 2. Tap the tile. The pinned live report page opens the report in landscape mode. 
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-report-it-spend.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-report-it-spend-2.png)
 
 -   Tap the **X** to close the tile and return to the dashboard.
 

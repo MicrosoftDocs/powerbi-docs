@@ -34,7 +34,7 @@ Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you op
 
    -   In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
 
-        ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-line-tile.png)
+        ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-line-tile-2.png)
 
         *In this line chart, the selected values are for This Year Sales and Last Year Sales in August.*  
 
