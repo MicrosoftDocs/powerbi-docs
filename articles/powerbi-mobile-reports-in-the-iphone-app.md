@@ -30,7 +30,7 @@ Then you view and interact with those reports in the [iPhone app (Power BI for 
 
 -   On your iPhone, in **My workspace** or in a group, tap Reports.
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-reports-home.png)
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-reports-home-2.png)
 
 -   Or: on a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_openreporticon.png).
 
