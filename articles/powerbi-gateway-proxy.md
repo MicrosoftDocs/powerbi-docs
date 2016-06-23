@@ -17,11 +17,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/15/2016"
+ms.date="06/23/2016"
 ms.author="asaxton"/>
 # Configuring proxy settings for the On-premises Data Gateway
 
-Your work environment may require that you go through a proxy to access the internet. This could prevent the Power BI Gateway from connecting to the service.
+Your work environment may require that you go through a proxy to access the internet. This could prevent the On Premises Data Gateway from connecting to the service.
 
 ## Does your network use a proxy?
 
