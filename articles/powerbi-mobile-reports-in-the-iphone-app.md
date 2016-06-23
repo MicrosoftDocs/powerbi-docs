@@ -22,7 +22,7 @@
 
 # Reports in the iPhone app (Power BI for iOS)
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com).
+A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com). 
 
 Then you view and interact with those reports in the [iPhone app (Power BI for iOS)](powerbi-mobile-iphone-app-get-started.md).
 
