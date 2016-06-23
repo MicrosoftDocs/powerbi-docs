@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="06/22/2016"
    ms.author="mihart"/>
 
 
@@ -35,13 +35,9 @@ Similar to Power BI Q&A, ask or type your questions using natural language. Cort
 
 Cortana can find answers either directly from datasets in Power BI or from report pages published to Power BI and designed specifically for Cortana (called *Answer Pages*).  Interact with the visualizations as you would in Power BI or, to further explore an answer, simply open a result in Power BI.
 
->**NOTE**: For on-premises data, Cortana currently only works with AS Tabular via the enterprise gateway. Other on-premises and streaming data sources will be added in the future.
+>**NOTE**: Cortana now works with on-premises data that has been enabled for Q&A. <add link to Q&A>  
 
 Cortana ranks the answers from Power BI, giving you one or more best matches if there is high confidence a result is a good answer. Other potential answers from Power BI are listed in a Power BI section below any best matches. If you're a dataset owner, you can help Cortana return better answers by creating specialized reports (called *Answer Pages*) for Cortana in Power BI Desktop to answer the most-common questions and by optimizing your model for Power BI Q&A.
-
-## How do I get results?
-
-When a Windows 10 (version 1511 or higher) user adds the account he or she uses with Power BI to Windows 10 in Windows 10 **Settings > Accounts**, Cortana automatically checks to see if any data is available in Power BI. Cortana then checks Power BI for answers to searches, and if any are found, it offers them as results.
 
 ## How do I get started?
 
@@ -82,10 +78,8 @@ Any Power BI user can use Cortana to ask questions about their Power BI datasets
 
 
 ## See also
-[Tips for using Power BI with Cortana](powerbi-service-cortana-ask-questions.md)
+[Enable Cortana for Power BI](powerbi-service-cortana-enable.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
-
-[Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
+[Introduction to Power BI Q&A](powerbi-service-q-and-a.md)
 
 [Power BI basic concepts](powerbi-service-basic-concepts.md)
