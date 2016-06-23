@@ -50,7 +50,7 @@ Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you op
 
 6. Sometimes the report creator has added a link to a tile. If so, it has a link icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon-2.png) when it's in focus mode:
 
-    ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-tile.png)
+    ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-tile-2.png)
 
     Links can go to other Power BI dashboards or to an external URL. You can [tap the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
     

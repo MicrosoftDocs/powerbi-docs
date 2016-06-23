@@ -34,7 +34,7 @@ Then you view and interact with those reports in the [iPhone app (Power BI for 
 
 -   Or: on a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_openreporticon.png).
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-line-tile.png)
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-line-tile-2.png)
 
 
 The report opens in landscape mode.

@@ -1,6 +1,7 @@
 <properties 
    pageTitle="Dashboards in the iPhone app"
    description="Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI for iOS  app on the iPhone." 
+   services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
