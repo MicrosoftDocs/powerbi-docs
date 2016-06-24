@@ -41,7 +41,7 @@ Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get
 
     ![](media/powerbi-mobile-dashboards-in-the-android-app/pbi_andr_dash.png)
 
-     You can just turn your phone sideways to [view dashboards in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
+     Or just turn your phone sideways to [view them in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
 
 5.  While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
 
