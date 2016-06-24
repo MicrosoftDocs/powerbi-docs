@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="06/22/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Android app for Power BI  
