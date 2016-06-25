@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Dashboards in the Power BI mobile app for Windows 10"
-   description="Dashboards in the Power BI mobile app for Windows 10"
+   description="Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI mobile app for Windows 10"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/11/2016"
+   ms.date="06/24/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Power BI mobile app for Windows 10  

@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="03/11/2016"/>
  
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2016"
+   ms.date="06/24/2016"
    ms.author="maggies"/>
 # Dashboards for mobile Power BI
 
@@ -33,6 +33,7 @@ To see more dashboards on your mobile device, you need to create or connect to t
 2. [Create your own Power BI dashboards](powerbi-service-create-a-dashboard.md), or connect to existing [content packs for a variety of services](powerbi-content-packs-services.md).
 
 Here's a Power BI dashboard in the Power BI service:
+
 ![](media/powerbi-mobile-create-dashboard/pbi_svc_dash_sm.png)
 
 
@@ -41,6 +42,7 @@ Here's a Power BI dashboard in the Power BI service:
 Then these same dashboards will appear automatically in your Power BI mobile app. Dashboards refresh in real time, automatically, so no need to manually refresh them.
 
 Here's the same dashboard as seen on a mobile phone:
+
 ![](media/powerbi-mobile-create-dashboard/pbi_dash_mobile.png)
 
 
