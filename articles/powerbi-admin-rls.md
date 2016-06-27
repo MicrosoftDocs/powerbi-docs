@@ -64,27 +64,7 @@ You can remove members by selecting the X next to their name.
  
 ![](media/powerbi-admin-rls/rls-remove-member.png)
 
-## Defining a rule for a role
-
-The way you define what the members will see is via a filter on a table within the data model. Rules are defined by using DAX expressions. In a future release, you will have a more intuitive UI to make it easier for you to define the rule. You can define the filter by doing the following.
-
-1.	Select the role you want to add a rule to.
-2.	Select **Rules**.
-
-    ![](media/powerbi-admin-rls/rls-rules.png)
-
-3.	Select the table you want to add the filter to.
-4.	Enter your DAX formula, for the selected table, in the **DAX Input** text box.
-
-    ![](media/powerbi-admin-rls/rls-rule-definition.png)
-
-5.	Select **Save**.
-
-> **Note**: There is no validation on the DAX expression that is supplied. The rule will still save if the DAX expression is invalid.
-
-When the members, that are defined in the Role, interact with the dataset, report, or dashboard, they will only see data that is allowed based on the rules. If you are assigned to more than one role, you will have access to the data allowed by all roles you belong to.
-
-## Test the role
+## Validating the role within the Power BI service
 
 You can validate that the role you defined is working correctly by testing the role. 
 
@@ -117,16 +97,10 @@ When you first publish the model, the value returned from the function will be a
 
 If you publish your Power BI Desktop report to a group within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the group settings.
 
-## Limitations
+![](media/powerbi-admin-rls/rls-test-role3.png)
 
-Here is a list of the current limitations for row-level security on cloud models.
+[AZURE.INCLUDE [include-short-name](../includes/rls-limitations.md)]
 
-- If you previously had roles/rules defined within the Power BI service, you will need to recreate them within Power BI Desktop.
-- You can define RLS only on the datasets created using Power BI Desktop client. If you want to enable RLS for datasets created with Excel, you will need to convert your files into PBIX files first. [Learn more](powerbi-desktop-import-excel-workbooks.md)
-- Only ETL, and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
-- Q&A and Cortana is not supported with RLS at this time. You will not see the Q&A input box for dashboards if all models have RLS configured. This is on the roadmap, but a timeline is not available.
+[AZURE.INCLUDE [include-short-name](../includes/rls-faq.md)]
 
-## FAQ
-
-**Question:** What if I had previously created 
-**Answer:**
+## See also
