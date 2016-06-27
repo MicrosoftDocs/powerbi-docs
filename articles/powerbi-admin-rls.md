@@ -27,7 +27,7 @@ You can now configure RLS for data models imported into Power BI from Power BI D
 
 > **Note**: The preview is intended to let users start trying out the feature. It will also allow us to collect feedback for improvements. It is not intended for operational usage. Rules defined during the preview may not be available when the feature is generally available.
 
-> **Important**: If you defined roles/rules within the Power BI service, you will need to recreate those roles within Power BI Desktop and publish the report to the service.
+> [AZURE.IMPORTANT] If you defined roles/rules within the Power BI service, you will need to recreate those roles within Power BI Desktop and publish the report to the service.
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
