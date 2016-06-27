@@ -1,5 +1,5 @@
 <properties
-pageTitle="Row-level security with Power BI"
+pageTitle="Row-level security (RLS) with Power BI"
 description="How to configure row-level security for imported datasets, and DirectQuery, within the Power BI service."
 services="powerbi"
 documentationCenter=""
@@ -17,17 +17,21 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/11/2016"
+ms.date="06/27/2016"
 ms.author="asaxton"/>
-# Row-level security
+# Row-level security (RLS) with Power BI
 
-Row-level security (RLS) can be used to restrict data access for given users. This is accomplished by using filters at the row level. Filters are implemented through roles.
+Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data at the row level. You can define filters within roles.
 
-You can now configure RLS for data models that have been imported into Power BI. These are referred to as cloud models. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS via live connections to Analysis Services on-premises. Row-level security for Analysis Services is still handled at the on-premises server. The security option will not show up for Live connection datasets.
+You can now configure RLS for data models imported into Power BI from Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS via live connections to Analysis Services on-premises. For Analysis Services live connections, you configure Row-level security on the on-premises model. The security option will not show up for live connection datasets.
 
-> **Note**: The preview is intended to let users to start trying out the feature. It will also allow us to collect feedback for improvements. It is not intended for operational usage. Rules defined during the preview may not be available when the feature is generally available.
+> **Note**: The preview is intended to let users start trying out the feature. It will also allow us to collect feedback for improvements. It is not intended for operational usage. Rules defined during the preview may not be available when the feature is generally available.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qrlq9sZyjug" frameborder="0" allowfullscreen></iframe>
+> **Important**: If you defined roles/rules within the Power BI service, you will need to recreate those roles within Power BI Desktop and publish the report to the service.
+
+[AZURE.INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
+
+[AZURE.INCLUDE [include-short-name](../includes/rls-desktop-view-as-roles.md)]
 
 ## Manage security on your model
 
@@ -123,11 +127,20 @@ You can take advantage of the DAX function *username()* within your dataset. You
 
 When you first publish the model, the value returned from the function will be a GUID. It will return the user's User Principal Name (UPN) after you have configured RLS on the dataset.
 
+## Using RLS with Groups in Power BI
+
+If you publish your Power BI Desktop report to a group within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the group settings.
+
 ## Limitations
 
 Here is a list of the current limitations for row-level security on cloud models.
 
+- If you previously had roles/rules defined within the Power BI service, you will need to recreate them within Power BI Desktop.
 - You can define RLS only on the datasets created using Power BI Desktop client. If you want to enable RLS for datasets created with Excel, you will need to convert your files into PBIX files first. [Learn more](powerbi-desktop-import-excel-workbooks.md)
 - Only ETL, and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
-- If you make a change to your PBIX file, and republish to the service, you will need to re-create RLS.
-- Q&A and Cortana is not supported with RLS. You will not see the Q&A input box for dashboards if all models have RLS configured.
+- Q&A and Cortana is not supported with RLS at this time. You will not see the Q&A input box for dashboards if all models have RLS configured. This is on the roadmap, but a timeline is not available.
+
+## FAQ
+
+**Question:** What if I had previously created 
+**Answer:**
