@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Reports in the Power BI mobile app for Windows 10"
-   description="Reports in the Power BI mobile app for Windows 10"
+   description="Learn about viewing reports in the Power BI mobile app for Windows 10. You create reports in the Power BI service, then interact with them in the mobile apps. "
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/24/2016"
    ms.author="maggies"/>
 # Reports in the Power BI mobile app for Windows 10
 
@@ -27,26 +27,24 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
 ## Open a Power BI report
 
--   On your Windows 10 phone, in **My workspace** or in a group, tap a report.
+You can open reports in **My workspace** or in a group on your Windows 10 phone in several ways: 
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/pbi_win10ph_reptgallery.png)
+-   Scroll down to your reports, or 
+-   Tap **View all content** > **Reports** 
+    
+    ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-reports-home.png)
 
-    Or on your Windows 10 device: 
+-   Or tap the search icon to see the list of reports you've visited recently or to search for it by name.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/pbi_win10_reptgallry.png)
-
+    ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-search-page.png)
 
     >**Note**: If you [import whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md), they have an Excel icon. When you tap them in the app, they open in the [Power BI service](https://powerbi.com) in a browser window.
 
--   Or: On a dashboard, tap the vertical ellipsis on the tile, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
+-   Or on a dashboard, tap the vertical ellipsis on the tile, then tap the **Open Report** icon ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/pbi_win10ph_tileellips.png)
 
-    >**Notes**:   
-    >
-    >-   Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them.   
-	>-  To open the sample reports, you need to sign in to Power BI. 
-
+    >**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them.   
 ## See other pages in a Power BI report
 
 -   Tap the tabs at the bottom of the page. 
@@ -59,7 +57,7 @@ Then you view and interact with those reports in the [Power BI mobile app for W
 
 2.  Tap the ellipsis (...) in the upper-right corner, tap the **Sort by** arrow, then tap the field name.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_Sort.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-report-sort.png)
 
 3.  To reverse the sort order, tap **A\>Z** or **Z\>A**. 
 
