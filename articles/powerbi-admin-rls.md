@@ -42,23 +42,9 @@ To manage security on your data model, you will want to do the following.
 
     ![](media/powerbi-admin-rls/rls-security.png)
  
-This will take you to the RLS page for you to create roles and add rules with filters. Only the owners of the dataset will see Security available. If the dataset is in a Group, only Administrators of the group will see the security option. There are changes coming for how RLS works within a group.
+This will take you to the RLS page for you to add members to a role you created in Power BI Desktop. Only the owners of the dataset will see Security available. If the dataset is in a Group, only Administrators of the group will see the security option. 
 
-## Working with roles
-
-To create a new role, simply select **Create New Role**.
-
-![](media/powerbi-admin-rls/rls-first-time.png)
- 
-> **Note**: The first time you create a role, you will get a notice indicating that republish is not supported with RLS. Republishing, or overwriting, the dataset will cause you to have to re-create the RLS settings.
-
-![](media/powerbi-admin-rls/rls-not-supported.png)
- 
-> **Note**: OneDrive refresh is not supported with RLS. If you turn that on, then you will lose all RLS configuration you have defined. Scheduled refresh is supported for imported datasets.
-
-You can provide a name for the role when you initially create it. You can rename, or delete, the role by select the **ellipse (…)** for that role and selecting either **Rename** or **Delete**.
-
-![](media/powerbi-admin-rls/rls-rename-delete-role.png)
+You can only create or modify roles within Power BI Desktop.
 
 ## Working with members
 
