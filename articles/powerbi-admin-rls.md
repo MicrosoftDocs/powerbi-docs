@@ -85,19 +85,13 @@ You can choose to view data as a specific person, or you can select a combinatio
 
 To return to normal viewing, select **Back to Row-Level Security**.
 
-## Using the username() DAX function
-
-You can take advantage of the DAX function *username()* within your dataset. You can use it within expressions in Power BI Desktop. When you publish your model, it will be used within the Power BI service.
-
-> **Note**: Username() will not return the UPN of the user until you configure RLS on the dataset.
-
-When you first publish the model, the value returned from the function will be a GUID. It will return the user's User Principal Name (UPN) after you have configured RLS on the dataset.
+[AZURE.INCLUDE [include-short-name](../includes/rls-usernames.md)]
 
 ## Using RLS with Groups in Power BI
 
 If you publish your Power BI Desktop report to a group within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the group settings.
 
-![](media/powerbi-admin-rls/rls-test-role3.png)
+![](media/powerbi-admin-rls/rls-group-settings.png)
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-limitations.md)]
 
