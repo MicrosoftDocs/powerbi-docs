@@ -26,28 +26,29 @@ Connecting to a comma-separated value (*CSV*) file from Power BI Desktop is a lo
 
 To start with, from Power BI Desktop select **Get Data > CSV** from the **Home** ribbon.
 
-![](media/powerbi-desktop-connect-excel/connect_to_excel_1.png)
+![](media/powerbi-desktop-connect-csv/connect-to-csv_1.png)
 
-Select your workbook from the **Open** dialog that appears.
-![](media/powerbi-desktop-connect-excel/connect_to_excel_2.png)
+Select your CSV file from the **Open** dialog that appears.
 
-Power BI Desktop presents the tables on other data elements from the workbook in the **Navigator** window. When you select a table in the left pane, a preview of the data appears in the right pane.
+![](media/powerbi-desktop-connect-csv/connect-to-csv_2.png)
 
-![](media/powerbi-desktop-connect-excel/connect_to_excel_3.png)
+When you select **Open**, Power BI Desktop accesses the file and determines certain file attributes, such as the file origin, delimiter type, and how many rows should be used to detect the data types in the file.
 
-You can select the Load button to import the data, or if you want to edit the data using **Query Editor** before bringing it into Power BI Desktop, select the **Edit** button.
+These file attributes and options are shown in the drop-down selections at the top of the **CSV import** dialog window, shown below. You can change any of these detected settings manually, by choosing another option from any of the drop-down selectors.
 
-When you load the data, Power BI Desktop displays the **Load** window and displays the activity associated with loading the data.  
+![](media/powerbi-desktop-connect-csv/connect-to-csv_3.png)
 
-![](media/powerbi-desktop-connect-excel/connect_to_excel_4.png)
+When you’re satisfied with the selections, you can select **Load** to import the file into Power BI Desktop, or you can select **Edit** to open **Query Editor** and further shape or transform the data before importing it.
 
-When complete, Power BI Desktop displays the tables and fields it imported from your Excel workbook in the **Fields** pane, on the right side of the Desktop.
+Once you load the data into Power BI Desktop, you see the table and its columns (which are presented as Fields in Power BI Desktop) in the **Fields** pane, along the right of the Report view in Power BI Desktop.
 
-![](media/powerbi-desktop-connect-excel/connect_to_excel_5.png)
 
-And that’s it!
+![](media/powerbi-desktop-connect-csv/connect-to-csv_4.png)
 
-You’re now ready to use the imported data from your Excel workbook in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as other Excel workbooks, databases, or any other data source.
+That’s all you have to do – the data from your CSV file is now in Power BI Desktop.
+
+You can use that data in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as Excel workbooks, databases, or any other data source.
+
 
 
 ## More Information

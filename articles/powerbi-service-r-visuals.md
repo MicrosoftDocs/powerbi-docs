@@ -38,7 +38,7 @@ Once the report is created in Power BI Desktop, you can publish the report conta
 
 Note that in the service not all of the R packages are supported. See supported packages at the end of this article for the list of packages currently supported in the Power BI service.
 
-You can download this example of  Power BI Desktop file (.pbix file) that contains a few R visuals from this location.<Add link on publishing pbix file>
+You can download this sample Power BI Desktop file (.pbix file) that contains a few R visuals to see how this works, and to experiment. (link coming soon)
 
 R visuals that are created in Power BI Desktop, and then published to the Power BI service, behave like any other visual in the Power BI service; you can interact, filter, slice, and pin them to a dashboard, or share them with others. For more information about sharing dashboards and visuals, see [share a dashboard with colleagues and others](powerbi-service-share-unshare-dashboard.md).
 
