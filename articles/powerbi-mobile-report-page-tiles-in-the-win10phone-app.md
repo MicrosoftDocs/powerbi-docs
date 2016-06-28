@@ -1,6 +1,6 @@
 <properties 
    pageTitle="View report page tiles in the Power BI mobile app for Windows 10"
-   description="View report page tiles in the Power BI mobile app for Windows 10"
+   description="Read about viewing and interacting with live report tiles in a dashboard in the Power BI mobile app for Windows 10."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="06/24/2016"
    ms.author="maggies"/>
 
 # View report page tiles in the Power BI mobile app for Windows 10

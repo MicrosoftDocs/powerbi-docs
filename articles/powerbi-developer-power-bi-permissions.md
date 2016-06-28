@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="06/24/2016"
    ms.author="derrickv"/>
 
 # Power BI permissions
@@ -31,6 +31,7 @@ Power BI permissions give an application the ability to take certain actions on 
 |Read and Write all Datasets|The app can view and write to all datasets for the signed in user and datasets that the user has access to.|Dataset.ReadWrite.All|
 |View users Groups|The app can view all groups that the signed in user belongs to.|Group.Read.All|
 |View all Dashboards (preview)|The app can view all dashboards for the signed in user and dashboards that the user has access to.|Dashboard.Read.All|
+|View all Reports (preview)|The app can view all reports for the signed in user and reports that the user has access to. The app can also see the data within the reports as well as its structure.|Report.Read.All|
 
 An application can request permissions when it first attempts to log in to a user's page by passing in the requested permissions in the scope parameter of the call. If the permissions are granted, an access token will be returned to the app which can be used on future API calls. The access can only be used by a specific application.
 

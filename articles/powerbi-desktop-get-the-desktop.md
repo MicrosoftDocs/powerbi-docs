@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="06/23/2016"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
