@@ -98,3 +98,5 @@ If you publish your Power BI Desktop report to a group within the Power BI servi
 [AZURE.INCLUDE [include-short-name](../includes/rls-faq.md)]
 
 ## See also
+
+[Row-level security (RLS) with Power BI Desktop (Preview)](powerbi-desktop-rls.md)
