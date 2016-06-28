@@ -3,7 +3,7 @@
    description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
    services="powerbi"
    documentationCenter=""
-   authors="maggies"
+   authors="maggiesMSFT"
    manager="mblythe"
    backup=""
    editor=""
