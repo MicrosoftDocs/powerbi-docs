@@ -6,4 +6,4 @@ A lot of issues can surface when the gateway version is out of date.  It is a g
 
 ### Error: Failed to add user to group.  (-2147463168   PBIEgwService   Performance Log Users   )
 
-You may receive this error if you are trying to install the enterprise gateway on a domain controller. Deploying on a domain controller is not supported. You will need to deploy the enterprise gateway on a machine that is not a domain controller.
+You may receive this error if you are trying to install the gateway on a domain controller. Deploying on a domain controller is not supported. You will need to deploy the gateway on a machine that is not a domain controller.

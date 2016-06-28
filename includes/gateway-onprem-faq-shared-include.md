@@ -1,6 +1,6 @@
 ## General
 
-**Question:** What is the actual windows service called?  
+**Question:** What is the actual Windows service called?  
 **Answer:** The gateway is called Power BI Enterprise Gateway Service in Services
 
 **Question:** What are the requirements for the gateway?  
@@ -29,8 +29,8 @@
 
 You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebsites.net/) to help gauge what your throughput is. 
 
-**Question:** Can the gateway windows service run with an Azure Active Directory account?  
-**Answer:** No. The windows service needs to have a valid windows account. By default it will run with the Service SID, *NT SERVICE\PBIEgwService*.
+**Question:** Can the gateway Windows service run with an Azure Active Directory account?  
+**Answer:** No. The Windows service needs to have a valid Windows account. By default it will run with the Service SID, *NT SERVICE\PBIEgwService*.
 
 **Question:** How are results sent back to the cloud?  
 **Answer:** This is done by way of the Azure Service Bus. For more information, see [how it works](powerbi-gateway-onprem.md#how-the-gateway-works).

@@ -3,7 +3,7 @@
 <a name="logs" />
 ### Collecting logs from the gateway configurator
 
-There are several logs you can collect for the enterprise gateway. Always start with the logs!
+There are several logs you can collect for the gateway. Always start with the logs!
 
 **Installer logs**
 
