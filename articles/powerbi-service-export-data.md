@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,15 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="05/25/2016"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
-Visualization data can be exported from visualizations on a dashboard and from report visualizations.  
+Data can be exported from visuals on a dashboard and in reports.  
 
 >**NOTE**: The maximum number of rows that can be downloaded is 10,000.
 
-## Export data on a dashboard
+## Export a dashboard visual's data
 
 1. Select the ellipses in the top right corner of the visualization.
 
@@ -37,16 +40,22 @@ Visualization data can be exported from visualizations on a dashboard and from r
 3. Open the CSV file in Excel.
 
     ![](media/powerbi-service-export-data/pbi-export-to-excel.png)
+    
+    >**NOTE**: If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode are currency symbols and foreign words. the workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
+    
+    1. Open Excel
+    2. From the **Data** tab, select **Get external data** > **From text**.
 
 
-## Export data in a report
+## Export a report visual's data
 
 1. Select the ellipses in the top right corner of the visualization. Choose  **Export data**.
 
     ![](media/powerbi-service-export-data/pbi_export_dialog.png)
+    
+    >**NOTE**: The option to remove a visual is only available in [report Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 2. See step 3 above.
-
 
 ## See also
 

@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="guyinacube" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/04/2015"
+   ms.date="05/12/2016"
    ms.author="asaxton"/>
 # Manage your data capacity in Power BI
 
@@ -87,7 +90,7 @@ Keep in mind that you or someone else in the group may have reports and dashboar
 
 ## Dataset limits
 
-There is a 250 MB limit per dataset that is imported into Power BI. [Learn more](https://technet.microsoft.com/library/mt282164.aspx)
+There is a 1 GB limit, per dataset, that is imported into Power BI. If you have chosen to keep the Excel experience, instead of importing the data, you will be limited to 250 MB for the dataset.
 
 ## What happens when you hit a limit
 

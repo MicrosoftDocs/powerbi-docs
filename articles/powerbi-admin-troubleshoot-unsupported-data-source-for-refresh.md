@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="guyinacube"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="04/04/2016"
    ms.author="asaxton"/>
 
 # Troubleshooting unsupported data source for refresh  
@@ -43,5 +46,4 @@ If you aren’t sure what data source was used, you can find that using the foll
 5.  Compare the provider with the list of supported data sources found within [Refresh data in Power BI](powerbi-refresh-data.md).  You will find that Active Directory is not a supported data source for refresh.  
 
 ## See Also  
-[Data Refresh](powerbi-refresh-data.md)  
-[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)  
+[Data Refresh](powerbi-refresh-data.md)

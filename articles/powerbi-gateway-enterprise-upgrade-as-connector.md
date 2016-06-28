@@ -5,7 +5,11 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
-editor=""/>
+backup=""
+editor=""
+tags=""
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -13,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/09/2016"
+ms.date="05/11/2016"
 ms.author="asaxton"/>
 # Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise
 

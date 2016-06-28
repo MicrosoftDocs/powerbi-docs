@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"
+   ms.date="05/02/2016"
    ms.author="maggies"/>
 
 # Supported browsers for Power BI  
@@ -31,4 +34,6 @@ We support Power BI in these browsers:
 
 -   Firefox desktop latest version
 
-Now you're ready to [get started with Power BI](powerbi-service-get-started.md).  
+### See also 
+- [Get started with Power BI](powerbi-service-get-started.md) 
+- Try asking the [Power BI Community](http://community.powerbi.com/)

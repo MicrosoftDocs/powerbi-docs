@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,12 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 
 # Get started with Power BI
 
-Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to explore further with ***reports***.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
+##  Getting Started
+
+This tutorial helps you get started with Power BI service.  If you're looking for help with Power BI Desktop, see [Get started with Desktop](powerbi-desktop-getting-started.md).
+
+Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
@@ -32,7 +39,7 @@ Read about all the other ways to [get data for Power BI](powerbi-service-get-dat
 
 Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download this sample CSV file](http://go.microsoft.com/fwlink/?LinkID=619356).
 
-[Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? You can sign up for [Power BI for free](http://www.powerbi.com/ "try out the new Power BI Preview for free").
+1.  [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? You can sign up for [Power BI for free](http://www.powerbi.com/ "try out the new Power BI Preview for free").
 
 1.  If you're in your workspace, select **Get Data** at the bottom of the left navigation pane.
 
@@ -42,7 +49,7 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
     ![](media/powerbi-service-get-started/gs1.png)
 
-3.  ﻿Select **Local File**, browse to the file on your computer, and choose **Open**.
+3.  Select **Local File**, browse to the file on your computer, and choose **Open**.
 
     ![](media/powerbi-service-get-started/gs2.png)
 
@@ -96,12 +103,12 @@ Now that you have connected to data, explore to find insights.  When you've fou
     ![](media/powerbi-service-get-started/gsPinFirstnew.png)
 
     You can select the new tile on your dashboard to return to the report any time.
+    
+##  Step 3: Continue exploring with Q&A (natural language querying)
 
-9.  For a quick exploration of your data, try asking a question in the Q&A box.  For example, try typing "**what segment had the most revenue**".﻿
+1.  For a quick exploration of your data, try asking a question in the Q&A box. The Q&A question box is located at the top of your dashboard. For example, try typing "**what segment had the most revenue**".
 
-    ﻿![](media/powerbi-service-get-started/PBI_GetStartQnA.png)
-
-## Step 3: Continue exploring with Q&A
+    ![](media/powerbi-service-get-started/PBI_GetStartQnA.png)
 
 1. Select the pin icon ![](media/powerbi-service-get-started/PBI_PinIcon.png) to show this visualization on your dashboard too.
 

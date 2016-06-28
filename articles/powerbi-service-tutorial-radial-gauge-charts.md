@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/11/2015"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 # Tutorial: Radial Gauge charts in Power BI
@@ -43,9 +46,7 @@ These instructions use the Financial Sample. To follow along, [download the sam
 
 ### Step 1: Open the Financial Sample Excel file.
 
-1.  Open the file in Power BI by selecting **Get Data \> Files** and browsing to the location where you saved the file. The Financial Sample is added to your workspace navigation pane under **Datasets**.
-
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/FinancialSampleDataset.png)
+1.  Open the file in Power BI by selecting **Get Data \> Files** and browsing to the location where you saved the file. Select **Import**. The Financial Sample is added to your workspace as a dataset.
 
 2.  Select **Financial Sample** to open it in Explore mode.
 
@@ -71,15 +72,16 @@ These instructions use the Financial Sample. To follow along, [download the sam
 
 2.  Change the aggregation to **Average**.
   Power BI adds a needle to represent our target value of **$145.48K**. Notice that we've exceeded our target.
-  ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
 
-    >NOTE: You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
+
+    >**NOTE**: You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
 
 ### Step 4: Set a maximum value
 
 In Step 2, Power BI used the Value field to automatically set minimum (start) and maximum (end).  But what if you want to set your own maximum value?  Let's say that instead of using double the current value as the maximum possible value, you want to set it to the highest Gross Sales number in your dataset? 
 
-1.  Drag **Gross Sales** from the **Fields** list to the **Maximum Value** well.
+2.  Drag **Gross Sales** from the **Fields** list to the **Maximum Value** well.
 
 2.  Change the aggregation to **Maximum**.
 
@@ -95,7 +97,9 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 ## Use formatting options to manually set Minimum, Maximum, and Target values
 
-1. Open the formatting pane by selecting the paintbrush icon.
+1. Remove **Max of Gross Sales** from the **Maximum value** well.
+
+2.  Open the formatting pane by selecting the paintbrush icon.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_format.png)
 

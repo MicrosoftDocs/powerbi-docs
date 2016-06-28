@@ -1,12 +1,15 @@
 <properties 
-   pageTitle="Salesforce content pack for Power BI"
+   pageTitle="Salesforce content pack"
    description="Salesforce content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Salesforce content pack for Power&nbsp;BI
@@ -33,9 +36,13 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
 
 	![](media/powerbi-content-pack-salesforce/PBI_GetServices.png) 
 
-3.  Click **Salesforce** and select **Connect**.  
+3.  Click **Salesforce** and select **Get**.  
 
-4.   ![](media/powerbi-content-pack-salesforce/PBI_SalesforceConnect.png)
+    ![](media/powerbi-content-pack-salesforce/salesforce.png)
+
+4. Select **Sign In** to initiate the login flow.
+
+    ![](media/powerbi-content-pack-salesforce/dialog.png)
 
 5.  When prompted, enter your Salesforce credentials. Click **Allow** so Power BI can access your basic Salesforce information and data.
 
@@ -65,7 +72,7 @@ You can change this dashboard to display your data any way you want. You can ask
 
 **What Now?**
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard, see [ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md) for suggestions.
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
 - [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard
 
@@ -88,8 +95,6 @@ You can change this dashboard to display your data any way you want. You can ask
 If you encounter any errors, please review the requirements above. Also note the ability to login into a custom or sandbox domain is not currently supported.
 
 ### See also
-
-[Ask the right questions of Salesforce data](powerbi-service-ask-the-right-questions-of-salesforce-data.md)
 
 [Get Started with Power BI](powerbi-service-get-started.md)
 

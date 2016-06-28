@@ -1,12 +1,15 @@
 <properties
-   pageTitle="Publish to Power BI from Excel"
+   pageTitle="Publish to Power BI from Excel 2016"
    description="Learn how to publish an Excel workbook to your Power BI site."
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="complete"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,41 +17,57 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2016"
-   ms.author="owend"/>
+   ms.date="06/22/2016"
+   ms.author="davidi"/>
 
-# Publish to Power BI from Excel  
-In Excel 2016, you can publish your workbooks on OneDrive for Business right to your Power BI site. When you publish to Power BI, you can leverage your exiting Power View reports or create new reports and dashboards based on your workbook data. You can then share your reports and dashboards with others in your organization.
+# Publish to Power BI from Excel 2016
+With Excel 2016, you can publish your Excel workbooks right to your [Power BI](https://powerbi.microsoft.com) site, where you can create highly interactive reports and dashboards based on your workbook’s data. You can then share your insights with others in your organization.
 
-You can also download and install the new Power BI publisher for Excel add-in (Preview) on any Excel 2010 SP1 version or later. By using the add-in, you can select a range, PivotTable, Chart, and many other elements and take snapshot, and then "pin" it to one or more dashboads in Power BI. To learn more, see [Power BI publisher for Excel](powerbi-publisher-for-excel.md).
+Before we go any further, there are few things to keep in mind:
 
-To publish your Excel workbook to Power BI, **select File** > **Publish**.
+- Before you can publish to Power BI, your workbook must be saved to OneDrive for Business.
+- The account you use to sign in to Office, OneDrive for Business, and Power BI must be the same account.
+- You cannot publish an empty workbook or a workbook that doesn’t have any Power BI supported content.
+- You cannot publish encrypted or password protected workbooks, or workbooks with Information Protection Management.
+- Publishing to Power BI requires modern authentication be enabled (default). If disabled, the Publish option is not available from the File menu.
 
-![](media/powerbi-service-publish-from-excel/PubToPBI_P1.png)
+## To publish your Excel workbook
+In Excel, click **File** > **Publish**.
 
-Excel displays the progress of publishing to Power BI.
+If your workbook isn’t already saved to OneDrive, you’ll need to save it there first. Click Save to Cloud and choose a location in OneDrive for Business.
 
-![](media/powerbi-service-publish-from-excel/PubToPBI_P2.png)
+![](media/powerbi-service-publish-from-excel/pbi_SaveToOneDrive.png)
 
-When complete, you can go to your report in Power BI right from Excel.
+Once your workbook is saved to OneDrive, when you click **Publish**, you’ll get two options on how to get your workbook into Power BI.
 
-![](media/powerbi-service-publish-from-excel/PubToPBI_P3.png)
+![](media/powerbi-service-publish-from-excel/pbi_UploadExport.png)
+### Upload your workbook to Power BI
+When you choose this option, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some great features to help you pin elements from your worksheets to dashboards.
 
-You can also go to Power BI from the **File** > **Publish screen**.
+You can’t edit your workbook in when open in Power BI, but if you need to make some changes, you can click **Edit**, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
-![](media/powerbi-service-publish-from-excel/PubToPBI_P4.png)
+When you upload, no dataset is created in Power BI. Your workbook will appear in Reports, in your workspace navigation pane. Workbooks uploaded to Power BI have a special Excel icon, identifying them as Excel workbooks that have been uploaded.
 
-When your workbook is published to your Power BI site, any Power View reports you already had will appear in Reports, and a new dataset appears in Datasets.
+Choose this option if you only have data in worksheets, or you have PivotTables and Charts you want to see in Power BI.
+Using Upload from Publish to Power BI in Excel is pretty much the same as using Get Data > File > OneDrive for Business >Connect, Manage and View Excel in Power BI from Power BI in your browser.
 
-![](media/powerbi-service-publish-from-excel/PubToPBI_P5.png)
+### Export workbook data to Power BI
+When you choose this option, any supported data in tables and/or a data model are exported into a new dataset in Power BI. If you have any Power View sheets, those will be re-created in Power BI as reports.
 
-You can continue working in your workbook. When you save, your changes automatically appear in Power BI, usually in about an hour.
+You can continue editing your workbook. When your changes are saved, they’ll be synchronized with the dataset in Power BI, usually within about an hour. If you need more immediate gratification, you can just click Publish again, and your changes are exported right then and there. Any visualizations you have in reports and dashboards will be updated, too.
 
-### Limitations
-There are a few limitations when publishing from Excel to Power BI:
+Choose this option if you’ve used Get & Transform data or Power Pivot to load data into a data model, or if your workbook has Power View sheets with visualizations you want to see in Power BI.
 
--  Publishing to Power BI requires your workbook to be saved on OneDrive for Business. If your workbook isn't saved to a OneDrive for Business account, publishing to Power BI will guide you through the process of uploading to OneDrive for Business, then publishing to Power BI.
--  Your OneDrive for Business account must be associated with the account with which you’re using Excel.
--  You can’t publish an empty workbook, nor a workbook that doesn’t have any Power BI supported content. Get more information about [supported content](powerbi-service-excel-data.md).
--  You can’t publish encrypted workbooks, which are workbooks that are password protected, have Information Protection Management, or IRM.
--  Publishing to Power BI requires modern authentication to be enabled (it is enabled by default). If modern authentication is disabled, the Publish option is not available from the File menu. Contact your administrator to [enable modern authentication](https://support.office.com/en-us/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910?ui=en-US&rs=en-US&ad=US).
+Using Export from Publish to Power BI in Excel is pretty much the same as using Get Data > File > OneDrive for Business >Export Excel data into Power BI from Power BI in your browser.
+
+## Publishing
+When you choose either option, Excel will sign in to Power BI with your current account, and then publish your workbook to your Power BI site. Keep an eye on the status bar in Excel. It shows how things are going.
+
+![](media/powerbi-service-publish-from-excel/pbi_PublishingStatus.png)
+
+When complete, you can go to Power BI right from Excel.
+
+![](media/powerbi-service-publish-from-excel/pbi_GoToPBI.png)
+
+## See also
+[Excel data in Power BI](articles/powerbi-service-excel-data.md)

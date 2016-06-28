@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 
 # Query overview in Power BI Desktop  
 
-Welcome to Power BI Desktop. With Power BI Desktop you can connect to the world of data, create compelling and foundational reports, and share your efforts with others – who can then build on your work, and expand their business intelligence efforts.
+With **Power BI Desktop** you can connect to the world of data, create compelling and foundational reports, and share your efforts with others – who can then build on your work, and expand their business intelligence efforts.
 
 Power BI Desktop has three views:
 
@@ -131,15 +134,17 @@ To save your work, select **File \> Save** (or **File \> Save As**), as shown in
 ## More Information  
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
--   [Getting Started with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471664)
+-   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
 
--   [Data Sources in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643)
+-   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
 
--   [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635)
+-   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
 
--   [Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)
+-   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Common Query Tasks in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471648)  
+-   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+
+
 
 Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!  
 ![](media/powerbi-desktop-query-overview/SendFeedback.png)  

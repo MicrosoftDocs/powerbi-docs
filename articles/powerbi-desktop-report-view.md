@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,24 +17,24 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 
 # Report View in Power BI Desktop
 
 If you’ve been working with Power BI, you know how easy it is to create reports providing dynamic perspectives and insights into your data. Power BI also has more advanced features in Power BI Desktop. With Power BI Desktop, you can create advanced queries, mashup data from multiple sources, create relationships between tables, and more.
 
-Power BI Desktop includes Report View, where you can create any number of report pages with visualizations. Report View in provides pretty much the same design experience as a report’s Editing View in the Power BI service. You can move visualizations around, copy and paste, merge, etc.
+Power BI Desktop includes **Report View**, where you can create any number of report pages with visualizations. Report View in provides pretty much the same design experience as a report’s Editing View in the Power BI service. You can move visualizations around, copy and paste, merge, etc.
 
-The difference is, when using Power BI Desktop, you can work with your queries and model your data to make sure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it be your local drive or to the cloud.
+The difference between them is when using Power BI Desktop, you can work with your queries and model your data to make sure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it's your local drive or to the cloud.
 
 ## Let's take a look!
 
-When you first load data in Power BI Desktop, you’ll see Report View with a blank canvas.
+When you first load data in Power BI Desktop, you’ll see **Report View** with a blank canvas.
 
 ![](media/powerbi-desktop-report-view/PBI_ReportViewInPBIDesigner_ReportView.png)
 
-You can switch between Report View, Data View, and Relationship View by clicking on the icons in the left hand navigation bar:
+You can switch between **Report View**, **Data View**, and **Relationship View** by selecting the icons in the left hand navigation bar:
 
 ![](media/powerbi-desktop-report-view/PBI_ReportViewInPBIDesigner_ChangeView.png)
 
@@ -49,8 +52,8 @@ A report will have at least one blank page to start. Pages appear in the navigat
 
 ![](media/powerbi-desktop-report-view/PBIDesignerReportViewNewPage.png)
 
-To delete a page, click the X on the page's tab at the bottom of the Report View.
+To delete a page, click the **X** on the page's tab at the bottom of the Report View.
 
 ![](media/powerbi-desktop-report-view/PBI_ReportViewInPBIDesigner_DeletePage.png)
 
-**Note:** Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md) to your  Power BI site.
+> **Note:** Reports and visualizations can’t be pinned to a dashboard from Power BI Desktop. To do that, you’ll need to [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md) to your  Power BI site.

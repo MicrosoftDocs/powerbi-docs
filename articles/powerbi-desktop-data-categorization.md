@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,18 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 
 # Data categorization in Power BI Desktop  
 
-In Power BI Desktop, you can specify the Data Category for a column so Power BI Desktop knows how it should treat its values when in a visualization.
+In **Power BI Desktop**, you can specify the Data Category for a column so Power BI Desktop knows how it should treat its values when in a visualization.
 
 When Power BI Desktop imports data, not only does it get the data itself, it also gets information such as the table and column names, whether it’s a primary key, etc.  With that information, Power BI Desktop makes some assumptions about how to give you a good default experience when creating a visualization. 
 
-Here’s an example: When Power BI Desktop knows a column has numeric values, you’ll probably want to aggregate it in some way, so it’s placed in the Values area. Or, for a column with date time values, it assumes you’ll probably use it as a time hierarchy axis on a line chart.
+Here’s an example: When Power BI Desktop detects a column has numeric values, you’ll probably want to aggregate it in some way, so it’s placed in the Values area. Or, for a column with date time values, it assumes you’ll probably use it as a time hierarchy axis on a line chart.
 
-But, there are some cases that are a bit more challenging, like geography. Consider this table from an Excel worksheet:
+But, there are some cases that are a bit more challenging, like geography. Consider the following table from an Excel worksheet:
 
 ![](media/powerbi-desktop-data-categorization/DataCategorizationTable.png)
 

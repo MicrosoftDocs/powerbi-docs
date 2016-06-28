@@ -1,12 +1,16 @@
 ﻿<properties
    pageTitle="Tutorial: Filled Maps (Choropleths) in Power BI"
-   description="Tutorial: Filled Maps (Choropleths) in Power BI"
+   description="Documentation - tutorial on creating Filled Maps (Choropleths) in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   featuredVideoId="Co2z9b-s_yM"
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="05/20/2016"
    ms.author="mihart"/>
 
 # Tutorial: Filled Maps (Choropleths) in Power BI  
@@ -38,13 +42,13 @@ Filled Maps are a great choice:
 
 -   to get an overview of the distribution across the geographic locations.
 
-## Create a basic Filled Map  
-We'll create a Filled Map that shows sentiment data by state.
+## Create a basic Filled Map 
+In this video, Will creates a basic Map and converts it to a Filled Map.
 
-These instructions use the Sales and Marketing Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Files \> Local File** ﻿and upload the Sales and Marketing Sample.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mGkdiZF8GEM" frameborder="0" allowfullscreen></iframe> 
+ 
+To create your own Filled Map, [download the Sales and Marketing sample](powerbi-sample-downloads.md) by signing in to Power BI and selecting **Get Data \> Files \> Local File \> Sales and Marketing**.
 
->**Note:**  
->This tutorial uses the classic report canvas.  For more information, see Power BI classic report canvas vs. new report canvas.
 
 1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) from the Sales and Marketing Sample dataset  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img001.png)
@@ -79,7 +83,7 @@ These instructions use the Sales and Marketing Sample. To follow along, [downlo
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a Location in a Filled Map filters the other visualizations on the report page... and vice versa.
+Highlighting a Location in a Filled Map cross-filters the other visualizations on the report page... and vice versa.
 
 1.  On the Filled Map, select a state.  This highlights the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 74, Texas is in the Central District \#23, and that most of the sales volume comes from the Moderation and Convenience segments.   
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/img008.png)
@@ -91,11 +95,18 @@ Highlighting a Location in a Filled Map filters the other visualizations on the 
 Map data can be ambiguous.  For example, there's a Paris, France, but there's also a Paris, Texas. Your geographic data is probably stored in separate columns – a column for city names, a column for state or province names, etc. – so Bing may not be able to tell which Paris is which. If your dataset already contains latitude and longitude data, Power BI has special fields to help make the map data unambiguous. Just drag the field that contains your latitude data into the Visualizations \> Latitude area.  And do the same for your longitude data.  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/PBI_Latitude.png) 
 
+If you have permissions to edit the dataset in Power BI Desktop, watch this video for help addressing map ambiguity.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
+
 If you do not have access to latitude and longitude data, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+
+For more help with Map visualizations, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations).
 
 ## See also  
  [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
  [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+ [Change the type of visualization being used](powerbi-service-change-the-type-of-visualization-in-a-report.md)
  [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Try it out -- it's free!](https://powerbi.com/)  

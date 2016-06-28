@@ -4,9 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="mblythe" 
+   backup=""
    editor=""
-   tags="power bi"/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="03/03/2016"
    ms.author="mihart"/>
 
 # Custom visualizations in Power BI
 
-The [Power BI Visuals gallery](https://app.powerbi.com/visuals) contains custom visualizations created by members of the community and [by Microsoft](powerbi-custom-visuals-microsoft.md).  These visualizations can be downloaded and added to Power BI Service reports and Power BI Desktop reports. They behave just like the native visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc.
+The [Power BI Visuals gallery](https://app.powerbi.com/visuals) contains custom visualizations created by members of the community and by Microsoft. These visualizations can be downloaded and added to Power BI Service reports and Power BI Desktop reports. They behave just like the native visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc.
 
-Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery?   See [Extend Power BI with custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Power BI visuals gallery](http://app.powerbi.com/visuals?WT.mc_id=Blog_CustomVisuals) to learn how.
+Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery?  See [Extend Power BI with custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Power BI visuals gallery](http://app.powerbi.com/visuals?WT.mc_id=Blog_CustomVisuals) to learn how.
 
 - [Download a custom visualization from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)
 
@@ -36,8 +39,8 @@ Are you a Web developer and interested in creating your own visualizations and a
 
 ## See also
 
+[Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
+
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
 
 [Developer Tools for creating custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md)
-
-[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)

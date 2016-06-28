@@ -1,12 +1,15 @@
 ﻿<properties 
-   pageTitle="Visual Studio Online content pack for Power BI"
+   pageTitle="Visual Studio Online content pack"
    description="Visual Studio Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Visual Studio Online content pack for Power&nbsp;BI
 
@@ -29,11 +32,11 @@ Note: This content pack requires access to the VSO account which has OAuth enabl
 1.  Select **Get Data** at the bottom of the left navigation pane.  
     ![](media/powerbi-content-pack-visual-studio-online/PBI_GetData.png) 
 
-2.  In the Services box, select Get.  
+2.  In the **Services** box, select **Get**.  
     ![](media/powerbi-content-pack-visual-studio-online/PBI_GetServices.png) 
 
-3.  Select the **Visual Studio Online** content pack and click **Connect**.     
-    ![](media/powerbi-content-pack-visual-studio-online/PBI_VSOConnect.png)
+3.  Select the **Visual Studio Online** content pack and click **Get**.     
+    ![](media/powerbi-content-pack-visual-studio-online/vsts.png)
 
 4.  Enter information about your Visual Studio Online account. See details on [finding these parameters](#FindingParams) below.
 
@@ -80,8 +83,8 @@ Visual Studio Online in Power BI provides a variety of tables and fields for you
 
 More details can be found at <https://www.visualstudio.com/en-us/get-started/report/connect-vso-pbi-vs>.
 
-## Finding parameters 
 <a name="FindingParams"></a>
+## Finding parameters 
 
 Your account name is the front of your URL to visualstudio.com:    
     ![](media/powerbi-content-pack-visual-studio-online/URLimage.png)

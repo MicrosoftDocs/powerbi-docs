@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Troux content pack for Power&nbsp;BI
 
@@ -32,9 +35,9 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
 
 	![](media/powerbi-content-pack-troux/services.png)
 
-3.  Select **Troux** \>  **Connect**.
+3.  Select **Troux** \>  **Get**.
 
-	![](media/powerbi-content-pack-troux/connect.png)
+	![](media/powerbi-content-pack-troux/troux.png)
 
 4.  Specify your Troux OData URL. See details on [finding those parameters](#FindingParams) below.
 
@@ -59,14 +62,11 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## What's included
-The content pack uses the Troux OData feed.
-
 ## System requirements
 Access to the Troux OData feed and Troux 9.5.1 or higher is required.
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 Your Customer Care team can provide your unique Troux OData feed URL to you
 

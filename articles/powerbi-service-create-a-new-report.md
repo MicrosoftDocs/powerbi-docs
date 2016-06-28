@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2016"
+   ms.date="02/23/2016"
    ms.author="mihart"/>
 # Create a new Power BI report
 
@@ -61,7 +64,7 @@ This method creates a new report from scratch.
 
 ## Next Steps:
 
-[Create new visualizations](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report)
+[Create new visualizations](powerbi-service-add-visualizations-to-a-report-ii.md)
 
 [Delete visualizations](powerbi-service-delete-a-visualization.md) you don't need
 

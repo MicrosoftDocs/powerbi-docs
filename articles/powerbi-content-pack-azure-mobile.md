@@ -1,12 +1,15 @@
 ﻿<properties
-   pageTitle="Azure Mobile Engagement content pack for Power BI"
+   pageTitle="Azure Mobile Engagement content pack"
    description="Azure Mobile Engagement content pack for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="theresapalmer"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Azure Mobile Engagement content pack for Power&nbsp;BI
@@ -23,19 +26,19 @@ The Power BI Azure Mobile Engagement content pack allows to you quickly gain ins
 
 Connect to the [Azure Mobile Engagement content pack](https://app.powerbi.com/groups/me/getdata/services/azme) for Power BI.
 
-After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
+## How to connect
 
-1. Select Get Data at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the left navigation pane.
 
 	![](media/powerbi-content-pack-azure-mobile/getdata.png)
 
-2. In the Services box, select Get.
+2. In the **Services** box, select **Get**.
 
 	![](media/powerbi-content-pack-azure-mobile/Services.PNG)
 
-3. Select Azure Mobile Engagement \> Connect.
+3. Select **Azure Mobile Engagement** \> **Get**.
 
-	![](media/powerbi-content-pack-azure-mobile/Connect.PNG) 
+	![](media/powerbi-content-pack-azure-mobile/azme.png) 
 
 4. Specify your App Collection and App Name. This information can be found in your Azure Mobile Engagement account.
 
@@ -47,8 +50,22 @@ After you have created the connection, you can explore your data and customize t
 
 6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \* which disappears once selected:
 
-7. Select the Azure Mobile Engagement dashboard. This is the default dashboard that Power BI creates to display your data. You can modify this dashboard to display your data in any way you want.
-
 	![](media/powerbi-content-pack-azure-mobile/Dashboard.png)
 
- 
+
+ **What Now?**
+
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+
+### See also
+
+[Get started in Power BI](powerbi-service-get-started.md)
+
+[Get data in Power BI](powerbi-service-get-data.md)

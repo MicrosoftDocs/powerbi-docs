@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2015"
+   ms.date="05/23/2016"
    ms.author="mihart"/>
 
 # Delete a report from Power BI  
@@ -22,8 +25,8 @@
 Don't worry, deleting a report does not delete the dataset that the report is based on.  And any visualizations that you pinned from the report are also safe -- they remain on the dashboard until you delete them individually.
 
 ## To delete a report:  
-1.  In the left navigation pane, right-click the report to delete and select **Delete**.  
-    ![](media/powerbi-service-delete-a-report/deleteareport1.png)
+1.  In the left navigation pane, right-click the report to delete and select **Remove**.  
+    ![](media/powerbi-service-delete-a-report/deleteareport1_new.png)
 
 2.  Confirm the deletion.
 

@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="identified"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="05/31/2016"
    ms.author="davidi"/>
 # Tips and tricks for creating reports in Power BI Desktop
 
@@ -25,9 +28,9 @@ To get the most out of your data, sometimes you need a little extra help. We’v
 
 Query Editor in Power BI Desktop is similar to the Power Query add-in capability in Excel 2013. While there are several helpful articles in Power BI Support, you might also want to review the Power Query documentation on support.office.com to get started.
 
-[Power Query Resource Center](https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94): https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94
+You can get additional information from the [Power Query Resource Center](https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94).
 
-[Formulas Reference:](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f) https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f
+You can also view the [Formula Reference](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## Data types in Query Editor
 
@@ -37,9 +40,7 @@ One key thing to remember: italics in the data grid do not mean the data type i
 
 ## Reference queries in the Query Editor
 
-In Query Editor's navigator, when you right click one of the queries, an option for "Reference" is available.  This is useful for two reasons:
-
--   When you reference a query you only load the source data once regardless of the number of queries that reference the initial query. 
+In Query Editor's navigator, when you right click one of the queries, an option for "Reference" is available.  This is useful for the following reason:
 
 -   When you use files as the data source for a query, the absolute path to the file is stored in the query. When sharing or moving Power BI Desktop file or Excel workbook, you'll save time when you update the paths by updating it just once rather than the paths.
 

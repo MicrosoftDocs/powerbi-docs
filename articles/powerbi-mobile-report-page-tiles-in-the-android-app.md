@@ -1,12 +1,15 @@
 <properties 
    pageTitle="View report page tiles in the Android app"
-   description="View report page tiles in the Power BI for Android app"
+   description="Read about viewing and interacting with live report tiles in a dashboard in the Power BI mobile app for Android."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/02/2016"
+   ms.date="06/24/2016"
    ms.author="maggies"/>
 
 # View report page tiles in the Power BI for Android app
 
-When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI service, you add individual visuals from Power BI reports as tiles on the dashboard. You can [pin a whole Power BI report page as a live tile](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md), too. You can view these report tiles in the Power BI app for the Android phone.
+When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI service, you add individual visuals from Power BI reports as tiles on the dashboard. You can also [pin a whole Power BI report page as a live tile](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md). You can view these report tiles in the Power BI app for the Android phone.
 
 1.  When you open a [dashboard in the Android app](powerbi-mobile-dashboards-in-the-android-app.md), you see a small image of the report.
 

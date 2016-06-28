@@ -1,26 +1,29 @@
-<properties 
-   pageTitle="GitHub content pack for Power BI"
+<properties
+   pageTitle="GitHub content pack"
    description="GitHub content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="theresapalmer"
+   manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
- 
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # GitHub content pack for Power BI
 
 The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also known as repo) with data around contributions, issues, pull requests and active users.
 
-Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI. 
+Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
 
 Note: The content pack requires the GitHub account to have access to the repo. More details on requirements below.
 
@@ -34,9 +37,9 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 
     ![](media/powerbi-content-pack-github/pbi_get_services.png) 
 
-3.  Select GitHub \> **Connect**. 
+3.  Select **GitHub** \> **Get**.
 
-    ![](media/powerbi-content-pack-github/PB_GithubConnect.png)
+    ![](media/powerbi-content-pack-github/github.png)
 
 4.  Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
 
@@ -52,10 +55,10 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 
     This connects Power BI with GitHub and allows Power BI to connect to the data.  The data is refreshed once a day.
 
-8.  After you connect to your GitHub repo, Power BI imports the data. You see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
+8.  After you connect to your repo, Power BI imports the data. You see a new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github), report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
 
     ![](media/powerbi-content-pack-github/PBI_GithubDash.png)
-	    
+
 
 **What Now?**
 
@@ -71,10 +74,10 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 ## What's included
 
 The following data is available from GitHub in Power BI:     
-	
+
 |Table name|Description|
 |---|---|
-|Contributions|The contributions table gives the total additions, deletions and commits authored by the contributor aggregated per week.|
+|Contributions|The contributions table gives the total additions, deletions and commits authored by the contributor aggregated per week. The top 100 contributors are included.|
 |Issues|List all issues for the selected repo and it contains calculations like total and average time to close an issue, Total open issues,  Total closed issues. This table will be empty when there are no issues in the repo.|
 |Pull requests|This table contains all the Pull Requests for the repo and who pulled the request. It also contains calculations around how many open, closed and total pull requests, how long it took to pull the requests and how long the average pull request took. This table will be empty when there are no issues in the repo.|
 |Users|This table provides a list of GitHub users or contributors who have made contributions, filed issues or solved Pull requests for the repo selected.|
@@ -93,9 +96,8 @@ The following data is available from GitHub in Power BI:     
 
 To de-authorize Power BI from being connected to your GitHub repo you can Revoke access in GitHub. For more details see this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic.
 
-
-## Finding parameters  
 <a name="FindingParams"></a>
+## Finding parameters  
 
 You can determine the owner and repository by looking at the repository in GitHub itself:
 

@@ -1,12 +1,15 @@
 <properties 
    pageTitle="Share dashboards from the iPad app"
-   description="Share dashboards from the iPad app (Power BI for iOS)"
+   description="Read how you can invite colleagues to view your dashboards and snapshots of tiles from the Power BI app for iOS on your iPad."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,24 +17,26 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="06/17/2016"
    ms.author="maggies"/>
 
 # Share dashboards from the iPad app (Power BI for iOS)
 
-Invite colleagues by sharing links to dashboards and [snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) from the [iPad app for Microsoft Power BI](http://go.microsoft.com/fwlink/?LinkId=522062) for iOS. The people you share it with need to sign up for Power BI, too.
+Read how you can invite colleagues to view your dashboards and [snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) from the Power BI app for iOS on your iPad.
 
 ## Share a dashboard with colleagues
 
-1.  Tap the **Share ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/PBI_iPad_ShareIcon.png) **icon in the upper-right corner of your dashboard.
+>Note: The people you share it with need to [sign up for Power BI](https://powerbi.microsoft.com), too.
 
-2.  Type email addresses and a message to accompany your dashboard invitation.
+1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) icon in the upper-right corner of your dashboard.
+
+2.  Tap **Invite a colleague**, then type email addresses and a message to accompany your dashboard invitation.
 
 3.  To allow resharing, leave **Allow recipients to share this dashboard** selected.
 
-    **Note**   Resharing allows your colleagues to forward the email invitation to other colleagues, either through the web or the mobile apps.
+    >**Note**   Resharing allows your colleagues to forward the email invitation to other colleagues, either through the web or the mobile apps. See [Notes about sharing dashboards](powerbi-mobile-share-dashboards-from-the-ipad-app.md#notes-about-sharing-dashboards), below.
 
-4.  Tap the green check mark in the upper-right corner.
+4.  Tap **Send** in the upper-right corner.
 
 Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in one of the mobile apps, it's added to their Power BI.
 
@@ -39,7 +44,7 @@ Your colleagues get an email invitation with a direct link to the dashboard. The
 
 You can only unshare a dashboard if you're the dashboard owner.
 
-1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/PBI_iPad_ShareIcon.png) icon in the upper-right corner of your dashboard.
+1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) icon in the upper-right corner of your dashboard.
 
     You see the list of colleagues with whom you've shared this dashboard. Below their names are these words:
 
@@ -65,8 +70,7 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 ### See also
 
-[Annotate and share a snapshot of a tile from the iPad app](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
-
-[Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
-
-[The iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI for iOS
+- [Dashboards in the iPad app](powerbi-mobile-dashboards-on-the-ipad-app.md)
+- [Annotate and share a snapshot of a tile from the iPad app](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
+- [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
+- [The iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI for iOS

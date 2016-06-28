@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/02/2016"
+   ms.date="05/24/2016"
    ms.author="mihart"/>
 
 # Tutorial: Doughnut charts in Power BI
@@ -33,13 +36,13 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \>
 
 4. Create a Waterfall chart that displays this year's sales by category.
 
- 1.  From the **Fields** pane, select **Sales** \> **Last Year Sales**.
+  - From the **Fields** pane, select **Sales** \> **Last Year Sales**.
 
- 2.  Convert to a Doughnut chart. If Last Year Sales is not in the **Values** area, drag it there.
+  - Convert to a Doughnut chart. If Last Year Sales is not in the **Values** area, drag it there.
 
         ![](media/powerbi-service-tutorial-doughnut-charts/convertDonut.png)
 
- 3.  Select **Item** \> **Category** to add it to the Legend area. 
+  - Select **Item** \> **Category** to add it to the Legend area. 
 
         ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
 

@@ -1,34 +1,32 @@
-﻿<properties 
-   pageTitle="Marketo content pack for Power BI"
+﻿<properties
+   pageTitle="Marketo content pack"
    description="Marketo content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="theresapalmer"
+   manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
- 
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
-   
+
 # Marketo content pack for Power&nbsp;BI
 
-The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data. 
+The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data.
 
 Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/marketo) for Power BI.
 
-Requirements:
-
--   The Marketo account you use for connecting has permission to access leads and activities.
-
--   Sufficient API calls available to connect to the data.  Marketo has an API for each account.  When the limit is reached, you won't be able to load data into Power BI. 
-
+## How to connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -38,9 +36,9 @@ Requirements:
 
     ![](media/powerbi-content-pack-marketo/PBI_GetServices.png) 
 
-3.  Select Marketo \> Connect.
+3.  Select **Marketo** \> **Get**.
 
-    ![](media/powerbi-content-pack-marketo/PBI_GetMarketoDescriptn.png)
+    ![](media/powerbi-content-pack-marketo/marketo.png)
 
 4.  Enter the Marketo REST endpoint supplied to you by Marketo or your Marketo admin, and select Next.
 
@@ -53,14 +51,23 @@ Requirements:
 
     ![](media/powerbi-content-pack-marketo/PBI_MarketoSignIn.png)
 
-    This gives the *Marketo for Power BI *content pack access to your Marketo data and allows you to analyze the data in Power BI. The data is refreshed once a day.
+    This gives the *Marketo for Power BI *content pack access to your [Marketo analytics](https://powerbi.microsoft.com/integrations/marketo) data and allows you to analyze the data in Power BI. The data is refreshed once a day.
 
 6.  Once connected to your Marketo account, a dashboard with all your data is loaded:
 
     ![](media/powerbi-content-pack-marketo/PBI_MarketoDash.png)
+    
+**What Now?**
 
-This dashboard can be fully changed to how you want to display your data. It allows you to ask a [question in](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## What's included 
 
 The following data is available from Marketo in Power BI where the activity occurred between today and one year ago:
 
@@ -75,12 +82,17 @@ The following data is available from Marketo in Power BI where the activity occu
 
 All dates are in UTC. Depending on which time zone your account is in, dates my vary (similar as is seen in the Marketo client)
 
-## API Limit Details
+## System requirements
+
+-   The Marketo account you use for connecting has permission to access leads and activities.
+
+-   Sufficient API calls available to connect to the data.  Marketo has an API for each account.  When the limit is reached, you won't be able to load data into Power BI. 
+
+**API Limit Details**
 
 Importing data from Marketo uses Marketo APIs. Every customer of Marketo has a total limit of 10,000 API calls per day that are shared between all applications that use the Marketo APIs. You may use the APIs for other integrations as well as the Power BI integration. For more information on the APIs see: <http://developers.marketo.com/documentation/rest/>.
 
-The amount of API calls Power BI makes to Marketo depends on the amount of data in your Marketo account. Power BI imports all Leads and Activities for the last year. Here is an example of data from Marketo and the amount of API calls that are used by Power BI when importing:
-
+The amount of API calls Power BI makes to Marketo depends on the amount of data in your Marketo account. Power BI imports all Leads and Activities for the last year. Here is an example of data from Marketo and the amount of API calls that are used by Power BI when importing:  
 
 |Data Type|Number of Rows|API Calls|
 |---|---|---|
@@ -91,16 +103,10 @@ The amount of API calls Power BI makes to Marketo depends on the amount of data 
 |Program changes|7,500|50|
 |**Total API Calls**||**2,200**|
 
-## See Also:
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get Data for Power BI](powerbi-service-get-data.md)
 
 [Power BI blog: Monitor and analyze your Marketo data with Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/03/19/monitor-and-analyze-your-marketo-data-with-power-bi.aspx)
-
-
-
-
- 
-

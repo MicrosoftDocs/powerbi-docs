@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,12 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 # Interact with a report in Editing View in Power BI
 
-In report [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) in Power BI, you have lots of flexibility in designing a report. All the [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) functionality is available -- plus lots more.
+In report [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md), you have lots of flexibility in exploring and designing a report. All the [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) functionality is available -- plus lots more.
 
+>**NOTE**: If you don't see what you need on this page, use the Table of Contents to the left.
 
 ### Add a page
 

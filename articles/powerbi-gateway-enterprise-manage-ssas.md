@@ -5,7 +5,11 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
-editor=""/>
+backup=""
+editor=""
+tags=""
+qualityFocus="monitoring"
+qualityDate="06/09/2016"/>
 
 <tags
 ms.service="powerbi"
@@ -13,11 +17,34 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/09/2016"
+ms.date="05/17/2016"
 ms.author="asaxton"/>
 # Manage your enterprise data source - Analysis Services
 
 Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ownIGbcRAAU" frameborder="0" allowfullscreen></iframe>
+
+## Download and install the gateway
+
+Download and install the latest version of the [Power BI Gateway - Enterprise](https://go.microsoft.com/fwlink/?LinkId=698863).
+
+Or, from the Power BI service, select **Downloads** > **Power BI Gateways**.
+
+![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
+
+## Limitations of Analysis Services live connections
+
+You can use a live connection against tabular or multidimensional instances.
+
+|**Server version**|**Required SKU**|
+|---|---|
+|2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
+|2014|Business Intelligence and Enterprise SKU|
+|2016|Standard SKU or higher|
+
+- Cell level Formatting and translation features are not supported.
+- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
 
 ## Add a gateway
 
@@ -65,13 +92,85 @@ You can configure the privacy level for your data source. This controls how data
 
 ## 'Get Data' experience for Analysis Services in Power BI site
 
-We haven’t yet integrated data sources from the enterprise gateway into the *Get Data* experience for Analysis Services from Power BI web. This will be coming soon.
+A unique option for Analysis Services is to use Get Data within the Power BI service directly. You can connect to a live Analysis Services data source that is configured within the enterprise gateway without needing Power BI Desktop. Your account needs to be listed in the **Users** tab for the data source, under the gateway, for it to show up in the list. To connect to the data source, you can do the following.
 
-To make use of data sources for Analysis Services, you can create a report within Power BI Desktop. Be sure that you select live data for Analysis Services. Then publish it to Power BI and it will make use of the enterprise gateway.
+1. Within the Power BI service, select **Get Data**.
 
-### Usernames with Analysis Services
+2. Select **Databases**.
+
+3. Select **SQL Server Analysis Services** > **Connect**.
+
+4. Select a data source from the list. Any Analysis Services data source that you have access to will be listed here.
+
+5. Select the model that you want to connect to. Then select **Connect**.
+
+You will see a dataset show up with the name of the server. You can then select that dataset and begin to create reports on it. This will be working against live data.
+
+## Usernames with Analysis Services
 
 Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [Learn more](https://msdn.microsoft.com/library/ms677605.aspx)
+
+You can also map your Power BI sign in name with a local directory UPN. [Learn more](powerbi-gateway-enterprise-manage-ssas.md#map-user-names)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
+
+### How do I tell what my UPN is?
+
+You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
+
+    whoami /upn
+
+The result will look similar to an email address, but this is the UPN that is on your domain account. If you are using an Analysis Services data source for live connections, and If this doesn't match the email address you sign into Power BI with, you may want to look at how to [Map user names](#map-user-names).
+
+## Map user names
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
+
+For Analysis Services data sources, you can configure custom User Principal Name (UPN) rules. This will help you if your Power BI service login names do not match your local directory UPN. For example, if you sign into Power BI with john@contoso.com, but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
+
+To get to the UPN Mapping screen, do the following.
+
+1. Go to the **gear icon** and select **Manage Gateways**.
+
+2. Expand the gateway that contains the Analysis Services data source. Of, if you haven't created the Analysis Services data source, you can do that at this point.
+
+3. Select the data source and then select the **Users** tab.
+
+4. Select **Map user names**.
+
+    ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names.png)
+    
+You will then see options to add rules as well as test for a given user.
+
+> **Note**: You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.local would be sent as v-dave*@contoso.local*.
+
+Currently you can only supply rules for **Effective user names**.
+
+### Working with mapping rules
+
+To create a mapping rule, enter a value for **Original name** and **New Name** and then select **Add**.
+
+|Field|Description
+|---|---|
+|Replace (Orignal name)|The email address that you signed into Power BI with.|
+|With (New Name)|The value you want to replace it with. The result of the replacement is what will be passed to the *EffectiveUserName* property for the Analysis Services connection.|
+
+![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-effective-user-names.png)
+
+When you select an item in the list, you can choose to re-order it by using the **chevron icons**, or **Delete** the entry.
+
+![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-entry-selected.png)
+
+### Test a mapping rule
+
+You can validate what an original name will be replaced with by entering a value for **Original name** and selecting **Test rule**.
+
+![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-test-mapping-rule.png)
+
+### Limitations for mapping rules
+
+- Wildcards (\*) are not allowed.
+- Mapping is for the specific data source that is being configured. It is not a global settings. If you have multiple Analysis Services data sources, you will have to map the users for each data source.
 
 ## Remove a data source
 
@@ -94,6 +193,28 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 > NOTE: The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
+
+## Using the data source
+
+After you have created the data source, it will be available to use with either live connections, or through scheduled refresh. 
+
+> **Note**: Server and database name have to match between Power BI Desktop and the data source within the enterprise gateway!
+
+The link between your dataset and the data source within the enterprise gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the enterprise gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the enterprise gateway.
+
+This is the case for both live connections and scheduled refresh.
+
+### Using the data source with live connections
+
+You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the enterprise gateway. You will also need to make sure your user is listed in the **Users** tab of the data source in order to publish live connection datasets. The selection, for live connections, occurs within Power BI Desktop when you first import data.
+
+After you publish, either from Power BI Desktop or **Get Data**, your reports should start working. It may take several minutes, after creating the data source within the enterprise gateway, for the connection to be usable.
+
+### Using the data source with scheduled refresh
+
+If you are listed in the **Users** tab of the data source configured within the enterprise gateway, and the server and database name match, you will see the enterprise gateway as an option to use with scheduled refresh.
+
+![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## See Also
 

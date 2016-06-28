@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/01/2016"
+   ms.date="04/28/2016"
    ms.author="maggies"/>
 # Groups in the iPad app (Power BI for iOS)
 
-Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) and [groups in Power BI](powerbi-service-groups.md). Groups are available with the Power BI Pro experience.
+Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Groups are available with the Power BI Pro experience.
 
 You [create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md).
 
@@ -35,11 +38,11 @@ Then you see and interact with group dashboards and reports in the Microsoft [P
 
 3.  Select a group.
 
-    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/pbi_ipad_groupsnav.png)
+    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/pbi_ipad_groups_nav.png)
 
 4.  Your group page displays the dashboards and reports that have been published to the group workspace.
 
-    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/pbi_ipad_group_home.png)
+    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/pbi_ipad_groups_pagebrdr.png)
 
 5.  [Select a dashboard](powerbi-mobile-dashboards-on-the-ipad-app.md) or [select a report](powerbi-mobile-reports-on-the-ipad-app.md) to open and view it.
 

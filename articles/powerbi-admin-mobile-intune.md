@@ -5,7 +5,11 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
-editor=""/>
+backup=""
+editor=""
+tags=""
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -13,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/10/2016"
+ms.date="04/07/2016"
 ms.author="asaxton"/>
 # Configure Power BI mobile apps with Microsoft Intune
 

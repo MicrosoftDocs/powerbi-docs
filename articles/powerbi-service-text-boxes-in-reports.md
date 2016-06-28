@@ -1,12 +1,15 @@
 ﻿<properties
-   pageTitle="Text Boxes in Power BI reports"
-   description="Text Boxes in Power BI reports"
+   pageTitle="Text boxes in Power BI reports"
+   description="Documentation about adding and creating text boxes in a Microsoft Power BI report."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,15 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2016"
+   ms.date="05/10/2016"
    ms.author="mihart"/>
 # Text Boxes in Power BI reports
 
 In Editing View, add a text box to a report and then pin it to a dashboard. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
-
-
+##  Add a text box to a report
 1.  Place your cursor anywhere on the report canvas and select **Text Box**.
 
     ![](media/powerbi-service-text-boxes-in-reports/PBI_textBox.png)

@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2016"
+   ms.date="04/29/2016"
    ms.author="mihart"/>
 
 # Remove a dashboard  
@@ -31,7 +34,7 @@ Dashboards can be removed. Removing the dashboard does not delete the underlyi
 1.  In the navigation pane, right-click the dashboard to remove.  
     ![](media/powerbi-service-delete-or-remove-a-dashboard/delete_or_remove2.png)
 
-2.  Click **Remove**.  Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
+2.  Select **Remove**.  Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
 
 >**Note:**  
 >Dashboards that are part of an organizational content packs have a different process for deleting.  See [Delete an organizational content pack](powerbi-service-organizational-content-pack-delete.md).

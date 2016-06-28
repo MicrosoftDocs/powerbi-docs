@@ -1,0 +1,22 @@
+{  
+   "locales":[  
+      "pt-br",
+      "de-de",
+      "ko-kr",
+      "fr-fr",
+      "ja-jp",
+      "ru-ru",
+      "es-es",
+      "zh-tw",
+      "it-it",
+      "zh-cn"
+   ],
+   "files":[  
+      "articles/*.md",
+      "includes/*.md"
+   ],
+   "useJavascriptMarkdownTransformer": true,
+   "includeDependencies":true,
+   "autoPush":true,
+   "xliffVersion":"1.2"
+}

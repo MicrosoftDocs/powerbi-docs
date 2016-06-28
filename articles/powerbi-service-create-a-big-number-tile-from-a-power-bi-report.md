@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="05/25/2016"
    ms.author="mihart"/>
 # Create a big number tile from a Power BI report
 
@@ -24,15 +27,13 @@ Sometimes a single number is the most important thing you want to track in your 
 
     If you want data to practice on, try [downloading the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). 
 
-2.  In the left navigation bar, select the report that the dashboard is based on - in this example, the Retail Analysis Sample report.
-
-3.  Select **Edit Report**.
+2.  Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 4.  In the report, find a page with some blank space, or [add a new page to the report](powerbi-service-add-a-page-to-a-report.md).
 
 5.  In the Fields list, select the number field you want to display.
 
-    In this example, **Open Store count **in the **Store **table. Power BI creates a column chart with the one number.
+    In this example, **Open Store count** in the **Store** table. Power BI creates a column chart with the one number.
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_RptNumberTileChart.png)
 
@@ -56,7 +57,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/pinSuccess.png)
 
-10. From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
+10. From the navigation pane, select the dashboard with the new tile. There, you can [edit and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
 
 

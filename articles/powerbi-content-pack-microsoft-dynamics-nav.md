@@ -1,12 +1,15 @@
 ﻿<properties 
-   pageTitle="Microsoft Dynamics NAV content pack for Power BI"
+   pageTitle="Microsoft Dynamics NAV content pack"
    description="Microsoft Dynamics NAV content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Microsoft Dynamics NAV content pack for Power&nbsp;BI  
@@ -30,11 +33,11 @@ Note: this content pack requires permissions to the tables where data is retriev
 1. Select Get Data at the bottom of the left navigation pane.  
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/getdata.png)
 
-2. In the Services box, select Get.  
+2. In the **Services** box, select **Get**.  
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/services.PNG)
 
-3. Select Microsoft Dynamics NAV, then select Connect.  
-![](media/powerbi-content-pack-microsoft-dynamics-nav/getdata1.PNG)
+3. Select **Microsoft Dynamics NAV**, then select **Get**.  
+![](media/powerbi-content-pack-microsoft-dynamics-nav/mdnav.png)
 
 4. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern: 
 
@@ -46,10 +49,10 @@ Note: this content pack requires permissions to the tables where data is retriev
 	An easy way to obtain this URL is in Dynamics NAV to go to Web Services, find the powerbifinance web service and copy the OData URL, but leaving out the “/powerbifinance” from the URL string.  
 	![](media/powerbi-content-pack-microsoft-dynamics-nav/param.PNG)
 
-5. When prompted, enter your Microsoft Dynamics NAV credentials and follow the Microsoft Dynamics NAV authentication process. If you are already signed in to Microsoft Dynamics NAV in your browser, you may not be prompted for credentials.
+5. Select **Basic** and enter your Microsoft Dynamics NAV credentials.
 
 	>**Note:**  
-	>You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  
+	>You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  Only Basic (Username and Password) authentication is currently supported.
 	
 	![](media/powerbi-content-pack-microsoft-dynamics-nav/creds.PNG)
 
@@ -66,17 +69,24 @@ Note: this content pack requires permissions to the tables where data is retriev
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
+## What's included
+
+The content pack includes data from the following tables (case sensitive):  
+    - ItemSalesAndProfit  
+    - ItemSalesByCustomer  
+    - powerbifinance  
+    - SalesDashboard  
+    - SalesOpportunities  
+    - SalesOrdersBySalesPerson  
+    - TopCustomerOverview  
+
 ## System requirements
-- To import your Microsoft Dynamics NAV data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from. All the tables (case sensitive) required for the content pack include:
-    - ItemSalesAndProfit
-    - ItemSalesByCustomer
-    - powerbifinance
-    - SalesDashboard
-    - SalesOpportunities
-    - SalesOrdersBySalesPerson
-    - TopCustomerOverview
+
+To import your Microsoft Dynamics NAV data into Power BI, you need to have permissions to the sales and finance data tables where data is retrieved from (listed above). The tables are also required to have some data, empty tables will currently fail to import.
+
 
 ## Troubleshooting  
+
 The Power BI Microsoft Dynamics NAV content pack uses Microsoft Dynamics NAV's web services to retrieve your data. If you have a lot of data in your Microsoft Dynamics NAV instance, a suggestion to minimize the impact on your web service usage is to change the refresh frequency depending on your needs. Another suggestion is to have one admin create the content pack and share it instead of having every admin create their own.
 
 **"Parameter validation failed, please make sure all parameters are valid"**  

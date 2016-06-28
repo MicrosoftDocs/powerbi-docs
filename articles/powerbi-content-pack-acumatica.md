@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Acumatica content pack for Power&nbsp;BI
@@ -34,9 +37,9 @@ Note: this content pack requires Acumatica v5.2 or higher.
 
 	![](media/powerbi-content-pack-acumatica/getdata2.png)
 
-3.	Select **Acumatica** \> **Connect**.
+3.	Select **Acumatica** \> **Get**.
 
-	![](media/powerbi-content-pack-acumatica/GetData.png)
+	![](media/powerbi-content-pack-acumatica/acumatica.png)
 
 4.	Enter your Acumatica OData endpoint. An OData endpoint allows an external system to request data from Acumatica. Acumatica OData endpoint is formatted as follows and should us HTTPS:
 

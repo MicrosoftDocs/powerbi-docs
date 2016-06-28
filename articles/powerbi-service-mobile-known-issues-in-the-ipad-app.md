@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/23/2015"
+   ms.date="06/27/2016"
    ms.author="maggies"/>
 
 # Known issues in the iPad app (Power BI for iOS)  
@@ -24,6 +27,9 @@ You may see this message if your iPad internet connection requires a mandatory
 
 ### Workaround  
 Switch the iPad to another connection that doesn’t require an explicit HTTP proxy setting (i.e., one configured as HTTP Proxy is Off).  
+
+## Other issues?
+Try asking the [Power BI Community](http://community.powerbi.com/).
 
 ### See also  
 [Get started with the iPad app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS)  

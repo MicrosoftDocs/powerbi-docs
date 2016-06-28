@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/28/2016"
+   ms.date="04/26/2016"
    ms.author="davidi"/>
 # Tutorial: Analyzing sales data from Excel and an OData feed
 
-With Power BI Desktop, you can connect to all sorts of different data sources, then combine and shape them in ways that facilitate making interesting, compelling data analysis and visualizations. In this tutorial, you'll learn how to combine data from two data sources. 
+With **Power BI Desktop**, you can connect to all sorts of different data sources, then combine and shape them in ways that facilitate making interesting, compelling data analysis and visualizations. In this tutorial, you'll learn how to combine data from two data sources. 
 
 It's common to have data spread across multiple data sources, such as product information in one database, and sales information in another. The techniques you'll learn in this document include an Excel workbook and an OData feed, but these techniques can be applied to other data sources too, like SQL Server queries, CSV files, or any data source in Power BI Desktop.
 
@@ -280,12 +283,9 @@ After you perform all these steps, you will have a Sales Report that combines da
 
 ### Where else can I get more information?
 
-[Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937).
-
-·        [Watch Power BI Desktop videos.](http://go.microsoft.com/fwlink/?LinkID=519322)
-
-·        [Visit the Power BI Forum.](http://go.microsoft.com/fwlink/?LinkID=519326)
-
-[Read the Power BI Blog.](http://go.microsoft.com/fwlink/?LinkID=519327)
+-   [Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937)
+-   [Watch Power BI Desktop videos](http://go.microsoft.com/fwlink/?LinkID=519322)
+-   [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
+-   [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
 
 ﻿

@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/05/2015"
+   ms.date="05/31/2016"
    ms.author="davidi"/>
 
 # Third-party service: Google Analytics connector for Power BI Desktop  
@@ -40,7 +43,6 @@ When you click Continue, you're prompted to sign in to Google Analytics.
 ![](media/powerbi-service-google-analytics-connector/TPS_GoogleAnalytics_3.png)
 
 When you enter your credentials, you're prompted that Power BI would like to have offline access. This is how you use Power BI Desktop to access your Google Analytics data.  
-![](media/powerbi-service-google-analytics-connector/TPS_GoogleAnalytics_4.png)
 
 Once you accept, Power BI Desktop shows that you're currently signed in.  
 ![](media/powerbi-service-google-analytics-connector/TPS_GoogleAnalytics_5.png)

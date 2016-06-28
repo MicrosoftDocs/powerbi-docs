@@ -1,12 +1,15 @@
 ﻿<properties 
-   pageTitle="Office365Mon content pack for Power BI"
+   pageTitle="Office365Mon content pack"
    description="Office365Mon content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Office365Mon content pack for Power&nbsp;BI
@@ -25,6 +28,8 @@ Connect to the [Office365Mon content pack](https://app.powerbi.com/groups/me/ge
 
 Note: An Office365Mon admin account is required to connect and load the Power BI content pack.
 
+## How to connect
+
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
 	![](media/powerbi-content-pack-office365mon/PBI_GetData.png)
@@ -33,11 +38,11 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
 
 	![](media/powerbi-content-pack-office365mon/PBI_GetServices.png) 
 
-3.  Select **Office365Mon \> Connect**.
+3.  Select **Office365Mon** \> **Get**.
 
-	![](media/powerbi-content-pack-office365mon/connect.png)
+	![](media/powerbi-content-pack-office365mon/o365mon.png)
 
-4.  For Authentication Method, select oAuth2 \> Sign In.
+4.  For Authentication Method, select **oAuth2** \> **Sign In**.
 
 	When prompted, enter your Office365Mon admin credentials and follow the authentication process.
 
@@ -50,18 +55,15 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
 	![](media/powerbi-content-pack-office365mon/dashboard4.png)
 
 
+**What Now?**
 
-What can you do now?
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
--   Try asking a question in the Q&A box at the top of the dashboard, such as "average request time in the last week"
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
--   Change the tiles in the dashboard.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
 
--   Select a tile to open the underlying report.
-
--   Rename the dashboard: Select the ellipsis (…) next to the dashboard \> Rename.
-
-
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 
 ## Troubleshooting
@@ -69,8 +71,7 @@ What can you do now?
 If you get a **"login failed"** error after using your Office365Mon subscription credentials to login, then the account you are using doesn't have permissions to retrieve the Office365Mon data from your account. Verify it is an admin account and try again.
 
 
-See Also:
-
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

@@ -5,8 +5,12 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   featuredVideoId="maTzOJSRB3g"
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2016"
+   ms.date="05/20/2016"
    ms.author="mihart"/>
 # Tutorial: Waterfall charts in Power BI
 
@@ -50,17 +54,17 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 4. Create a waterfall chart that displays this year's sales and sales goal by month.
 
-	1.  From the **Fields** pane, select **Sales \> Total Sales Variance**.
+  - From the **Fields** pane, select **Sales \> Total Sales Variance**.
 
-	2.  Convert the chart to a **Waterfall**. 
+	- Convert the chart to a **Waterfall**. 
 
         ![](media/powerbi-service-tutorial-waterfall-charts/convertWaterfall.png)
 
-	3.  If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
+	- If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
 
-	4.  Select **Time** \> **Month** to add it to the **Category** well. 
+	- Select **Time** \> **FiscalMonth** to add it to the **Category** well. 
 
-    ![](media/powerbi-service-tutorial-waterfall-charts/first.png)
+    ![](media/powerbi-service-tutorial-waterfall-charts/first_new.png)
 
 ## Highlighting and cross-filtering
 

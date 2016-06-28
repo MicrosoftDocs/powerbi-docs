@@ -5,8 +5,12 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   featuredVideoId="mGkdiZF8GEM"
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="05/20/2016"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations  
@@ -32,6 +36,8 @@ Some designations are ambiguous when considered in the context of multiple count
 **3. Use specific Latitude and Longitude**
 
 You can always provide specific latitude and longitude locations. When you do this, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level. Latitude and Longitude fields must be in *Decimal Number* format, which you can set in the data model.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mGkdiZF8GEM" frameborder="0" allowfullscreen></iframe>
 
 ## Categorizing geographic fields to hint Bing's geocoding  
 In Power BI Desktop, you can ensure fields are correctly geocoded by setting the *Data Category* on the data fields. In Power BI Desktop, select the desired table, go to the **Advanced** ribbon and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **Country**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md).

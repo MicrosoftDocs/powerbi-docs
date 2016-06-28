@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Adobe Analytics content pack for Power&nbsp;BI
 
@@ -32,9 +35,9 @@ Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/se
 
 	![](media/powerbi-content-pack-adobe-analytics/services.PNG)
 
-3.  Select **Adobe Analytics** \>  **Connect**.
+3.  Select **Adobe Analytics** \>  **Get**.
 
-	![](media/powerbi-content-pack-adobe-analytics/connect.PNG)
+	![](media/powerbi-content-pack-adobe-analytics/adobe.png)
 
 4.  The content pack connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on [finding those parameters](#FindingParams) below.
 
@@ -83,13 +86,13 @@ The content pack uses the Adobe Analytics Report API to define and run reports f
 |Country and Region Lookup| elements= "geocountry" (Top 200)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units"|
 |Language| elements= "language", "browser" (Top 25)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "pageviews", "cartadditions", "cartremovals", "checkouts", "carts", "cartviews"|
 |Search Engines Look Up| elements= "searchengine" (top 100)</br>  metrics="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units"|
-|Browser Lookup| elements={[id="browser" (top 25)|
+|Browser Lookup| elements= "browser" (top 25)|
 
 ## System requirements
 Access to [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) is required, including access to the correct parameters as described below.
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 **Company**
 
@@ -106,7 +109,9 @@ From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/refe
 ![](media/powerbi-content-pack-adobe-analytics/ReportSuiteID.PNG)
 
 ## Troubleshooting
-If you're seeing an error after successfully providing credentials and loading for some time, it's possible the reports are taking too long to complete. Please review the "What's included" section and compare to the size of your Adobe instance.
+If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company). 
+
+If you've successfully passed the credentials screen and start the content pack loading before hitting an error, it's possible the reports are taking too long to complete. Please review the "What's included" section and compare to the size of your Adobe instance.
 
 ### See also
 

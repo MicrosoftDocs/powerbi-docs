@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # Application Insights content pack for Power&nbsp;BI
@@ -35,9 +38,9 @@ Note: Access to the Application Insights overview blade for your application in 
 
     ![Get Services button](media/powerbi-content-pack-application-insights/PBI_GetServices.png) 
 
-3. Select **Application Insights** > **Connect**.
+3. Select **Application Insights** > **Get**.
 
-    ![Application Insights content pack](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsightConnect.png)
+    ![Application Insights content pack](media/powerbi-content-pack-application-insights/appinsights.png)
 
 4. Provide the details of the application you want to connect to, including **Application Insights Resource Name**, **Resource Group**, and **Subscription ID**. See [Finding your Application Insights parameters](#FindingAppInsightsParams) below for more details.
 
@@ -62,6 +65,7 @@ Note: Access to the Application Insights overview blade for your application in 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
+
 The Application Insights content pack includes the following tables and metrics:  
     - ApplicationDetails  
     - UniqueUsersLast7Days   
@@ -80,9 +84,8 @@ The Application Insights content pack includes the following tables and metrics:
     - SessionsByCountryLast30Days   
     - PageViewsByCountryDailyLast30Days   
 
-
-## Finding parameters
 <a name="FindingAppInsightsParams"></a>
+## Finding parameters
 
 Your Resource Name, Resource Group and Subscription ID can all be found in the Azure Portal. Selecting the Name will open a detailed view and you can use the Essentials drop-down to find all the values you need.
 

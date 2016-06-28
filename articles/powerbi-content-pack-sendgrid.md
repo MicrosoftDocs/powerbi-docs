@@ -1,12 +1,15 @@
 ﻿<properties 
-   pageTitle="SendGrid content pack for Power BI"
+   pageTitle="SendGrid content pack"
    description="SendGrid content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # SendGrid content pack for Power&nbsp;BI
@@ -23,19 +26,19 @@ The Power BI content pack for SendGrid allows you to extract insights and stat
 
 Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/sendgrid) for Power BI.
 
-### Import data from your SendGrid account
+## How to connect
 
-1.  Select Get Data at the bottom of the left navigation pane.
+1.  Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-content-pack-sendgrid/PBI_GetData.png) 
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
     ![](media/powerbi-content-pack-sendgrid/PBI_GetServices.png) 
 
-3.  Select the **SendGrid **content pack and click **Connect**.
+3.  Select the **SendGrid** content pack and click **Get**.
 
-    ![](media/powerbi-content-pack-sendgrid/PBI_SendGridConnect.png) 
+    ![](media/powerbi-content-pack-sendgrid/sendgrid.png) 
 
 4.  When prompted, provide your SendGrid user name and password. Select **Sign In**.
 
@@ -45,9 +48,18 @@ Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/
 
     ![](media/powerbi-content-pack-sendgrid/PBI_SendGridDash.png)
 
-You can change this dashboard to display your data the way you want it. Plus you can ask a [question in ](powerbi-service-q-and-a.md)[Q&A](powerbi-service-q-and-a.md) or click a tile to [open the underlying report](powerbi-service-dashboard-tiles.md) and [c](powerbi-service-edit-a-tile-in-a-dashboard.md)[](powerbi-service-edit-a-tile-in-a-dashboard.md)[hange the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard. 
+**What Now?**
 
-### What's included
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+
+## What's included
 
 The following metrics are available in the SendGrid dashboard:
 
@@ -61,15 +73,7 @@ The following metrics are available in the SendGrid dashboard:
 
 -   Email statistics by device, client, browser
 
-### Scheduled Refresh
-
-The SendGrid content pack is configured by default to refresh once a day.
-
-### Using Q&A to get insights from your SendGrid data using natural language queries
-
-Within your SendGrid dashboard, you can use Q&A as a way of using natural language to query your SendGrid data. Because of the limitations of the SendGrid data model, keep in mind that you will not be able to get meaningful answers to questions that feature more than one dimension (for example, "total email requests by category and geography").
-
-## See Also:
+### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 

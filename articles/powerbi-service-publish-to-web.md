@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,11 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/02/2016"
+   ms.date="06/02/2016"
    ms.author="davidi"/>
+
 # Publish from Power BI to the web
 
-With Power BI **Publish to web** you can easily embed interactive Power BI visualizations online,such as in blog posts, websites, through emails or social media, and all sorts of other online communications, on any device. You can also easily edit, update, refresh or un-share your published visuals.
+With Power BI **Publish to web** you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, and all sorts of other online communications, on any device. You can also easily edit, update, refresh or un-share your published visuals.
 
 > **Warning:** When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. Do not use Publish to web with sensitive data, data that has financial implications, data that must remain confidential, or data that you do not have the license rights to publish.
 

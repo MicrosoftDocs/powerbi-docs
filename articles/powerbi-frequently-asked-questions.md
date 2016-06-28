@@ -1,20 +1,23 @@
-<properties 
+<properties
    pageTitle="Frequently asked questions"
    description="Frequently asked questions about Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="maggiesMSFT" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="maggiesMSFT"
+   manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
- 
+   tags=""
+   qualityFocus="monitoring"
+   qualityDate="04/04/2016"/>
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/03/2016"
+   ms.date="06/14/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -24,7 +27,7 @@
 
 ## What’s the difference between Power BI and Power BI Pro?
 
-Power BI provides all sorts of features to help you get started exploring data in a whole new way. Power BI Pro provides all of the same great features in Power BI, plus additional features like more storage capacity, hourly scheduled refresh, live data sources with full interactivity, groups, and more. Learn more about [the differences between Power BI Pro and the free Power BI](https://powerbi.microsoft.com/pricing).
+Power BI provides all sorts of features to help you get started exploring data in a whole new way. Power BI Pro provides all of the same great features in Power BI, plus additional features like more storage capacity, scheduling data refresh more frequent than daily, live data sources with full interactivity, groups, and more. Learn more about [the differences between Power BI Pro and the free Power BI](https://powerbi.microsoft.com/pricing).
 
 ## How much does Power BI cost?
 
@@ -38,28 +41,37 @@ Power BI and Power BI Desktop are free. There is a 60-day free trial available f
 
 Just a Web browser and work email address.
 
-**Note:** Work email addresses ending in .gov aren’t currently supported.
-
-## Does Power BI support mobile devices?
-
-Yes. Power BI has native apps for Android phones, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  
-
--   [App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
--   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
--   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
+**Note:** Work email addresses ending in .gov and .mil aren’t currently supported.
 
 ## Why do I have to sign up with my work email?
 
 Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](powerbi-service-self-service-signup-for-power-bi.md).
 
+## Which work email addresses are supported?
+Work email addresses ending in **.edu** and **.org** are supported. 
+
+Those ending in **.gov** and **.mil** aren’t currently supported.
+
+## Is government, academic and non-profit pricing available for Power BI?
+
+Yes, non-profit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. Power BI is not yet available for the US Government Community Cloud (GCC).
+
 ## Is Power BI available on-premises?
 
-No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Analysis Services Connector](powerbi-analysis-services-connector.md), you can connect live to your on-premises SQL Server Analysis Services Tabular models. And, with the [Power BI Personal Gateway](powerbi-personal-gateway.md), you can refresh data from other on-premises data sources.
+No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also scheduled refresh with a centralized enterprise gateway. If an enterprise gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](powerbi-personal-gateway.md).
 
-You can also view on-premises SQL Server mobile reports with the Power BI iOS apps: 
+You can also view on-premises SQL Server mobile reports with the Power BI iOS apps:
 
 -   [SQL Server mobile reports on the iPhone](powerbi-mobile-iphone-kpis-mobile-reports.md).
 -   [SQL Server mobile reports on the iPad](powerbi-mobile-ipad-kpis-mobile-reports.md)
+
+## Does Power BI support mobile devices?
+
+Yes. Power BI has native apps for Android phones, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  
+
+-   [Apple App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
+-   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+-   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## What data sources can I connect to?
 
@@ -119,16 +131,15 @@ You can purchase Power BI Pro licenses directly or chat with a representative at
 
 You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help you with your Power BI implementation.
 
+## Does Power BI meet national, regional, and industry-specific compliance requirements?
+
+Learn more about Power BI compliance, at the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
+
 ## Where can I learn more about security?
 
 Learn more about Power BI security, privacy and compliance in this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
 
-## Is government, academic and non-profit pricing available for Power BI?
 
-Yes. Government and academic pricing is offered through the MOSP/Direct, EA and Open licensing programs. Government pricing is also available in syndication. Non-profit pricing is only available in MOSP/Direct. Power BI is not available for the US Government Community Cloud (GCC).
+## What has happened to the Power BI for Office 365 experience?
 
-**Note:** Work email addresses ending in **.edu** and **.org** are supported. Those ending in **.gov** aren’t currently supported.
-
-## What is happening to the Power BI for Office 365 experience?
-
-The Power BI for Office 365 experience is going into limited support on December 31, 2015, and deprecation of the Power BI for Office 365 experience by March 31, 2016. [Learn more](powerbi-admin-migrating-to-the-new-power-bi-experience.md)
+The Power BI for Office 365 experience has been deprecated.

@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2015"
+   ms.date="03/04/2016"
    ms.author="mihart"/>
 
 # Tutorial: Customize visualization title, background, and legend  
 
-In this tutorial you'll learn many different ways to customize the title of your visualizations. Not all visualizations can be customized, [see the complete list](#list).  Specifically, this tutorial covers customizing (in reports and on dashboards):  
+In this tutorial you'll learn many different ways to customize the title of your visualizations. Not all visualizations can be customized, [see the complete list](#list).  Specifically, this tutorial covers customizing:  
 -   visualization titles  
 -   visualization title backgrounds  
 -   visualization title legends
@@ -28,20 +31,20 @@ In this tutorial you'll learn many different ways to customize the title of you
 I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
 
 >**Note:**  
->When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with new titles and subtitles, hyperlinks, and resized.
+>When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](powerbi-service-edit-a-tile-in-a-dashboard.md).
 
 1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
 
-2.  In the Visualizations and Filters pane, select the paintbrush icon ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) to reveal the customization options.  
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull.png)
+2.  In the Visualizations and Filters pane, select the paintbrush icon ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) to reveal the formatting options.  
+	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull-new.png)
 
-3.  Turn the title on and off by selecting the On (or Off) slider. For now, leave it **On**.  
+3.  Turn  **Title** on and off by selecting the On (or Off) slider. For now, leave it **On**.  
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/onoffslider.png)
 
-4.  Change the title text by typing **Store count by month opened** in the text field.  
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizetext2.png)
+4.  Change **Title Text** by typing **Store count by month opened** in the text field.  
 
-5.  Change the text color to orange and the text background to yellow.
+
+5.  Change **Font color** to orange and **Background Color** to yellow.
 
 	-   Select the dropdown and choose a color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
 
@@ -53,7 +56,7 @@ I’ve signed in to the Power BI service and I’m starting with the Retail Anal
 6.  The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
 ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizealign.png)
 
-	At this point in the tutorial, your column chart should look like this:  
+	At this point in the tutorial, your column chart title should look like this:  
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/tutorialprogress1.png)
 
 	To revert all the title customization we've done so far, select **Revert To Default**, at the bottom of the **Title** customization pane.  
@@ -73,21 +76,25 @@ With the same column chart selected, expand the Background options.
 3.  When you select a background color, Power BI defaults to 50% transparency. Change Transparency to 74%.   
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizebackground.png)
 
-    To revert all the title background customization we've done so far, select **Revert To Default**, at the bottom of the **Background **customization pane.
+    To revert all the title background customization we've done so far, select **Revert To Default**, at the bottom of the **Background** customization pane.
 
 ## Customize visualization legends  
-To customize a legend, select "This Year Sales by FiscalMonth and Name" line chart.  In the Visualization tab, expand the Legend options.
 
-1.  Turn the legend on and off by selecting the On (or Off) slider. For now, leave it **On**.
+1. Open the **Overview** report page and select the "Total Sales Variance by FiscalMonth and District Manager" chart.
 
-2.  Move the legend to the right of the visualization.  Legend position options are: top, bottom, left, right. 
+2. In the Visualization tab, select the paintbrush icon to open the formatting pane.  
 
-    -   Select the dropdown and choose **Right**.
+3. Expand **Legend** options.
 
-    -   Select the dropdown to close the legend position window.
+      ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend.png)
 
-3.  Add a legend title by toggling **Title** to **On **and, in the Text field, typing "Store Name"  
-    ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizelegend.png)
+3.  Turn the legend on and off by selecting the On (or Off) slider. For now, leave it **On**.
+
+4.  Move the legend to the left side of the visualization.  Legend position options are: top, bottom, left, right. 
+
+
+3.  Add a legend title by toggling **Title** to **On** and, in the **Legend name** field, typing **Managers**.
+    ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend-move.png)
 
     To revert all the legend customization we've done so far, select **Revert To Default**, at the bottom of the **Legend** customization pane.
 

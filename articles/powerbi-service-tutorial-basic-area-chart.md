@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2015"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 # Tutorial: Basic Area chart  
@@ -39,15 +42,17 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 3.  Add a new report page.
 
-4.  Create an area chart that displays this year's sales and last year's sales by month.
+4.  Create an Area chart that displays this year's sales and last year's sales by month.
 
-	a.  From the **Fields pane**, select **Sales \> Last Year Sales**, ﻿and **Sales \> This Year Sales**.
+	a.  From the **Fields pane**, select **Sales \> Last Year Sales**, ﻿and **This Year Sales > Value**.
 
-	b.  Convert the chart to a Basic Area chart.    
+	b.  Convert the chart to a basic Area chart.    
     ![](media/powerbi-service-tutorial-basic-area-chart/convertChart.png)
 
-	c.  Select **Time \> Month** to add it to the **Axis** well.   
-    ![](media/powerbi-service-tutorial-basic-area-chart/AreachartTutorial.png)
+	c.  Select **Time \> Fiscal Month** to add it to the **Axis** well.   
+    ![](media/powerbi-service-tutorial-basic-area-chart/powerbi-area-chartnew.png)
+
+    d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by month**.
 
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).

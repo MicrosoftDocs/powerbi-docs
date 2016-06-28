@@ -1,12 +1,15 @@
 <properties 
-   pageTitle="QuickBooks Online content pack for Power BI"
+   pageTitle="QuickBooks Online content pack"
    description="QuickBooks Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # QuickBooks Online content pack for Power&nbsp;BI
@@ -25,18 +28,19 @@ Connect to the [QuickBooks Online content pack](https://dxt.powerbi.com/getdata/
 
 Note: To import your QuickBooks Online data into Power BI, you need to be an admin on your QuickBooks Online account and sign in with your admin account credentials.
 
+## How to connect 
 
-1.  Select Get Data at the bottom of the left navigation pane.
+1.  Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-content-pack-quickbooks-online/PBI_GetData.png) 
 
-2.  In the Services box, select Get.
+2.  In the **Services** box, select **Get**.
 
     ![](media/powerbi-content-pack-quickbooks-online/PBI_GetServices.png) 
 
-3.  Select **QuickBooks Online**, then select **Connect**.
+3.  Select **QuickBooks Online**, then select **Get**.
 
-    ![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_Connect.png)
+    ![](media/powerbi-content-pack-quickbooks-online/qbo.png)
 
 4.  Select **oAuth2** for Authentication Method and select **Sign In**. 
 
@@ -60,13 +64,17 @@ Note: To import your QuickBooks Online data into Power BI, you need to be an adm
 
     ![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_Dash.png)
 
-9.  What can you do now?
-> -   Rename the dashboard: Select the ellipsis (...) next to the QuickBook Online dashboard \> **Rename**.
-> -   Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard.
-> -   [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-> -   Select a tile to [open the underlying report](powerbi-service-dashboard-tiles.md). 
+**What Now?**
 
-### Troubleshooting 
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
+
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## Troubleshooting 
 
 **“Oops! An error has occurred"**
 
@@ -86,7 +94,10 @@ Currently Power BI only supports US editions of QuickBooks Online. 
 
 ![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_CountryNotSupported.png)
 
+
 ### See also
 
-[Get data in Power BI](powerbi-service-get-data.md)
+[Get started with Power BI](powerbi-service-get-started.md)
+
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

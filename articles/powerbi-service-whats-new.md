@@ -3,10 +3,13 @@
    description="What's new in the Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="amandacofsky"
    manager="mblythe"
+   backup="mihart"
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,16 +17,208 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/02/2016"
-   ms.author="mihart"/>
+   ms.date="06/06/2016"
+   ms.author="amac"/>
 
 # What's new in the Power BI service  
 
-Check this page for known issues and recently-released features in Power BI Service.
+Check this page for known issues and recently-released features in **Power BI Service**.
 
->NOTE: For related "What's New" information, see [What's new in the latest Power BI Desktop update?](powerbi-desktop-latest-update.md) and [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md) and the [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+>**NOTE**:
+>
+For related "What's New" information, see:
+>
+>[What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+>
+>[What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
+>
+>[Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+
+
 
 ## Recent updates
+
+**June 1, 2016**
+
+-   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters. 
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
+
+**May 16, 2016**
+
+***Get Data***
+
+-   File size limit increase to 1 GB: We increased the file size limit for both Excel workbooks and Power BI Desktop files to 1 GB.
+
+-   Find SSAS servers set up with the Enterprise Gateway and other Gateway updates: Now when you set up an Enterprise Gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
+
+***Row-level security (RLS)***
+
+-   Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
+
+-   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+
+-   Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
+
+***Dashboards***
+
+-   Favorite dashboards: To help you reach the dashboards you go to most, we added a way to favorite those dashboard and make them easily accessible from all your workspaces.
+
+***Analyze in Excel***
+
+-   Improved download experience: Easily download updates to the Analyze in Excel feature through a new dialog experience.
+
+-   Support for RLS: Once you set up RLS, the rules you apply to the data now flow through when a user analyzes the data in Excel.
+
+-   Improved error messaging for on-premises Analysis Services databases: Previously, if you selected Analyze in Excel for an unsupported data source, you wouldn't get an error message until after you downloaded the ODC file and tried to connect to Power BI. Now as soon as you select Analyze in Excel for a data source we don't support, you'll see a message letting you know we don't yet support that data source.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
+
+**May 13, 2016**
+
+-   [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](powerbi-service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+
+-   [Local File Support for Excel Reports](powerbi-service-excel-workbook-files.md#local-excel-workbooks): You can now upload your Excel files from your local drive or other storage services and use that Excel Report just as you would in Excel Online with the added benefits of Power BI. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
+
+**April 28, 2016**
+
+-   [Quick Insights on Dashboard Tiles](powerbi-service-auto-insights.md#run-quick-insights-on-a-dashboard-tile): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
+
+**April 26, 2016**
+
+-   Narratives for Power BI: As you interact with your data and visualizations, this custom visual dynamically delivers insights in narrative form, just like you'd expect an analyst would write. This visual is fueled by [Narrative Science Quill](https://www.narrativescience.com/quill).
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/get-natural-language-narratives-in-power-bi-reports/)
+
+**April 16, 2016**
+
+-   Microsoft Trust Center: Power BI joined the Microsoft Trust Center, a single source for documenting compliance certifications for Microsoft products. Power BI's certifications include ISO 27001, ISO 27018, EU Model Clauses, HIPAA BAA, and UK G-Cloud.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-added-to-microsoft-trust-center/)
+
+**April 14, 2016**
+
+***Enterprise***
+
+-   [ExpressRoute](powerbi-admin-power-bi-expressroute.md): use to establish a private, managed connection to Power BI.
+
+-   [Content pack support for RLS](powerbi-admin-rls.md) (Preview): If RLS is defined for those dashboards and reports that are distributed as part of a content pack, then the security rules will be respected for those content packs.
+
+***Dashboards***
+
+-   [Vimeo video tile](powerbi-service-add-a-widget-to-a-dashboard.md):  From the dashboard, add a tile that contains an embedded Vimeo player.
+
+***Analyze in Excel***
+
+-   [Analyze in Excel](powerbi-service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users; free and Pro.
+
+-   Improved multi-user account experience: if you have more than 1 Power BI user account, it's now easier to sign-in.
+
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
+
+**March 31, 2016**
+Lots of updates announced at the Microsoft Data Insights Summit.
+
+***Dashboards***
+
+-   Featured dashboard: makes it easier to reach the dashboard you care about most.
+
+-   Filter dashboard list: show all, show content you created, show content shared with you.
+
+
+***Enterprise features***
+
+-   Admin usage reporting: added a usage report to the Power BI admin center.
+
+-   Row-level security: this is a Preview feature that allows you to set permissions on Power BI datasets.
+
+-   Disable exporting data: users in your tenant will no longer be able to export tile and visual data to a .csv file.
+
+***Q&A***
+
+-   Auto complete for "is": Q&A will suggest values if you type column name followed by "is".
+
+***Mobile***
+
+-   KPIs on your Apple watch: monitor your KPI and card tiles without having to open Power BI app.
+
+***Excel***
+
+-   Analyze in Excel: connect your Power BI data model to Excel and do your analysis inside of Excel instead of Power BI.
+
+***Other***
+
+-   Power BI in Australia: now anyone in Australia, individual or through an organization, can go to powerbi.microsoft.com and sign up for Power BI.
+
+-   Language settings: override the automatic language detection and set the language for Power BI.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update-part-two/)
+
+**March 11, 2016**
+
+This month we made some updates to dashboards, Quick Insights, and Q&A.
+
+***Dashboards***
+
+-   Full Screen mode: print without having to exit Full Screen mode first
+
+-   Full Screen mode: expand your tiles to fill the entire canvas and remove excess white space by selecting **Fit to Width**
+
+-   Use Tile Flow to automatically align your tiles to the top left corner of the canvas.
+
+***Quick Insights***
+
+-   The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data.
+
+***Q&A***
+
+-   You can now specify Gauge and Area charts in Q&A
+
+-   Improved auto-complete for Q&A - as soon as you type just a few characters, Q&A begins auto completing and suggesting visuals for you.
+
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-march-update/)
+
+
+
+
+**February 10, 2016**
+
+Today we released a long list of top-requested features. [Read the blog post](https://powerbi.microsoft.com/blog/power-bi-february-service-update/).
+
+***Sharing***
+
+- Share with users outside your organization
+
+- Request access to a dashboard
+
+***Admin Portal***
+
+- Easy user management with a link to the O365 Admin Center
+
+- Ability to disable publish to web
+
+- Prevent users from publishing content packs to the entire org
+
+- Ability to disable sharing content to external users
+
+***Quick Insights***
+
+- Quick Insights when you publish Power BI Desktop files
+
+***Dashboard***
+
+- Add Web content to your dashboard (via Widget)
+- Add video content to your dashboard (via Widget)
+- Zoom on dashboards
+
+***Connectivity***
+- Connect to files on your team SharePoint site through a URL
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-february-service-update/)
 
 **January 28, 2016**
 
@@ -211,7 +406,7 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 
 *   Improved navigation for full screen view
 
-* Better experience when inviting perrs from your organization to Power BI groups
+* Better experience when inviting peers from your organization to Power BI groups
 
 * Improved error messages for tiles
 
@@ -384,9 +579,9 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 -   We're excited to announce our "general availability" (GA) release of Power BI. You can continue to use the free version of Power BI, or sign up for [Power BI Pro](powerbi-free-trial-for-power-bi-pro.md). As part of the GA release, we are offering some great new features:
 
--   [A new visualization and report creation experience](powerbi-service-converting-your-reports-to-the-new-report-editor.md): The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
+-   A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
 
--   [Power BI groups](powerbi-service-groups.md): groups offer a powerful collaborative experience built on Office 365 groups.
+-   [Power BI groups](powerbi-service-create-a-group-in-power-bi.md): groups offer a powerful collaborative experience built on Office 365 groups.
 -   [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
 
 -   [Bring in whole Excel files](powerbi-bring-in-whole-excel-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.

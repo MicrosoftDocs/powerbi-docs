@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="monitoring"
+   qualityDate="04/29/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/16/2015"
+   ms.date="05/31/2016"
    ms.author="davidi"/>
 # Data sources in Power BI Desktop
 
@@ -37,6 +40,7 @@ Data types are organized in the following categories:
 -   File
 -   Database
 -   Azure
+-   Online Services
 -   Other
 
 The **All** category includes all data connection types from all categories.
@@ -47,7 +51,9 @@ The **File** category provides the following data connections:
 -   CSV
 -   XML
 -   Text
+-   JSON
 -   Folder
+-   SharePoint Folder
 
 The following image shows the **Get Data** window for **File**.
 
@@ -60,11 +66,12 @@ The **Database** category provides the following data connections:
 -   SQL Server Analysis Services Database
 -   Oracle Database
 -   IBM DB2 Database
+-   IBM Informix Database (Beta)
 -   MySQL Database
 -   PostgreSQL Database
 -   Sybase Database
 -   Teradata Database
--   SAP HANA Database (Beta)
+-   SAP HANA Database
 
 The following image shows the **Get Data** window for **Database**.
 
@@ -88,6 +95,38 @@ The following image shows the **Get Data** window for **Azure**.
 ![](media/powerbi-desktop-data-sources/DataSources_Azure.png)
 
 
+The **Online Services** category provides the following data connections:
+
+-   SharePoint Online List
+-   Microsoft Exchange Online
+-   Dynamics CRM Online
+-   Facebook
+-   Google Analytics
+-   Salesforce Objects
+-   Salesforce Reports
+-   appFigures (Beta)
+-   comScore Digital Analytix (Beta)
+-   GitHub (Beta)
+-   MailChimp (Beta)
+-   Marketo (Beta)
+-   Planview Enterprise (Beta)
+-   QuickBooks Online (Beta)
+-   SparkPost (Beta)
+-   Smartsheet
+-   SQL Sentry (Beta)
+-   Stripe (Beta)
+-   SweetIQ (Beta)
+-   Troux (Beta)
+-   Twilio (Beta)
+-   tyGraph (Beta)
+-   Webtrends (Beta)
+-   Zendesk (Beta)
+
+
+The following image shows the **Get Data** window for **Online Services**.
+
+![](media/powerbi-desktop-data-sources/DataSources_OnlineServices2.png)
+
 The **Other** category provides the following data connections:
 
 -   Web
@@ -96,23 +135,8 @@ The **Other** category provides the following data connections:
 -   Hadoop File (HDFS)
 -   Active Directory
 -   Microsoft Exchange
--   Dynamics CRM Online
--   Facebook
--   Google Analytics
--   Salesforce Objects
--   Salesforce Reports
 -   ODBC
--   R Script (Beta)
--   appFigures (Beta)
--   GitHub (Beta)
--   MailChimp (Beta)
--   Merketo (Beta)
--   QuickBooks Online (Beta)
--   Smartsheet (Beta)
--   Stripe (Beta)
--   SweetIQ (Beta)
--   Twilio (Beta)
--   ZenDesk (Beta)
+-   R Script
 -   Spark (Beta)
 -   Blank Query
 
@@ -121,8 +145,6 @@ The following image shows the **Get Data** window for **Other**.
 ![](media/powerbi-desktop-data-sources/PBID_GetDataOther.png)
 
 ## Connecting to a Data Source
-
- 
 
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
@@ -141,7 +163,9 @@ When the URL or resource connection information is entered, select **OK**. Power
 
 You can either load the data by selecting the **Load** button at the bottom of the **Navigator** pane, or edit the query before loading data by selecting the **Edit** button.
 
-That’s all there is to connecting to data sources in Power BI Desktop.# More Information
+That’s all there is to connecting to data sources in Power BI Desktop! Try connecting to data from our growing list of data sources, and check back often - we continue to add to this list all the time.
+
+## More Information
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

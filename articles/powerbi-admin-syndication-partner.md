@@ -5,7 +5,11 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
-editor=""/>
+backup=""
+editor=""
+tags=""
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -13,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/29/2016"
+ms.date="05/11/2016"
 ms.author="asaxton"/>
 # Unable to add Power BI to Office 365 partner subscription
 

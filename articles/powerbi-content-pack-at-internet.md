@@ -1,12 +1,15 @@
 ﻿<properties
-   pageTitle="AT Internet Bridge content pack for Power BI"
+   pageTitle="AT Internet Bridge content pack"
    description="AT Internet Bridge content pack for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
    
 # AT Internet Bridge content pack for Power&nbsp;BI
@@ -33,9 +36,9 @@ Connect to the [AT Internet Bridge content pack](https://app.powerbi.com/getdata
 
     ![](media/powerbi-content-pack-at-internet/PBI_GetServices.png) 
 
-3.  Select **AT Internet Bridge** \> **Connect**.
+3.  Select **AT Internet Bridge** \> **Get**.
 
-    ![](media/powerbi-content-pack-at-internet/connect.png)
+    ![](media/powerbi-content-pack-at-internet/atinternet.png)
     
 4.  Specify the AT Internet Website Number you'd like to connect to.
 
@@ -60,6 +63,7 @@ Connect to the [AT Internet Bridge content pack](https://app.powerbi.com/getdata
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
+
 This content pack contains data from the last 45 days in the following tables:  
     - Conversion  
     - Devices  

@@ -3,10 +3,13 @@
    description="Review custom visuals for security and privacy"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
-   manager="mblythe"
+   authors="dvana"
+   manager="mblythe" 
+   backup=""
    editor=""
-   tags="power bi"/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -15,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="12/17/2015"
-   ms.author="derrickv"/>
+   ms.author="mihart"/>
 
 # Review custom visuals for security and privacy  
 

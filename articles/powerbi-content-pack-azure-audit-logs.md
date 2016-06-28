@@ -1,12 +1,15 @@
 ﻿<properties 
-   pageTitle="Azure Audit Logs content pack for Power BI"
+   pageTitle="Azure Audit Logs content pack"
    description="Azure Audit Logs content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Azure Audit Logs content pack for Power&nbsp;BI  
@@ -33,9 +36,9 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 
 	![](media/powerbi-content-pack-azure-audit-logs/services.PNG) 
 
-3.  Select **Azure Audit Logs** > **Connect**.  
+3.  Select **Azure Audit Logs** > **Get**.  
 
-	![](media/powerbi-content-pack-azure-audit-logs/getdata1.png)
+	![](media/powerbi-content-pack-azure-audit-logs/azureauditlogs.png)
 
 4. When prompted, enter your **Azure Subscription ID**. See details on finding your [subscription ID](#FindingParams) below.   
 
@@ -66,8 +69,8 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 ## System requirements
 The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/en-us/documentation/articles/insights-debugging-with-events/). 
 
-## Finding parameters  
 <a name="FindingParams"></a>
+## Finding parameters  
 
 There are two easy ways to find your Subscription Id.
 

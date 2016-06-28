@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="dvana"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="04/12/2016"
    ms.author="derrickv"/>
 
 # Register a web app
@@ -131,6 +134,9 @@ Here's how to get a client app id:
 
 For a web app, you need a client secret **Key**. When you register a web app, Azure AD generates a key (see step 11 above). In the **keys** section, select a duration. The key is displayed after you save it. Make sure you copy the key; otherwise, the key will not be available upon future navigation to the configuration page.
 
-## Next steps to create a Power BI app
-- [Create your Power BI app](powerbi-developer-introduction-to-creating-a-power-bi-app.md)
-- [Learn how to Authenticate with Azure AD](powerbi-developer-authenticate-to-power-bi-service.md)
+## See also
+- [Power BI permissions](powerbi-developer-power-bi-permissions.md)
+- [Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md)
+- [Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md)
+- [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)
+- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)

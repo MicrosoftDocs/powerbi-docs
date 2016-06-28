@@ -1,12 +1,15 @@
 <properties 
    pageTitle="Create picture tiles with your iPhone app"
-   description="Create picture tiles with your iPhone app (Power BI for iOS)"
+   description="You can add any picture on your iPhone to any dashboard you own in the Power BI mobile app for iOS. Learn how."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/03/2016"
+   ms.date="06/21/2016"
    ms.author="maggies"/>
 
 # Create picture tiles with your iPhone app (Power BI for iOS)
 
-You can add any picture on your iPhone to any dashboard you own. Power BI adds the picture as the last tile in the dashboard, on your iPhone, and adds it to the lower-right corner of the dashboard in the Power BI service. Everyone who can see your dashboard can see the picture on the dashboard. In the Power BI service, you can move it anywhere you want on the dashboard.
+You can add any picture on your iPhone to any dashboard you own in the Power BI mobile app for iOS. Power BI adds the picture as the last tile in the dashboard, on your iPhone, and adds it to the lower-right corner of the dashboard in the Power BI service. Everyone who can see your dashboard can see the picture on the dashboard. In the Power BI service, you can move it anywhere you want on the dashboard.
 
 ## Create a picture tile
 
@@ -27,11 +30,11 @@ You can add any picture on your iPhone to any dashboard you own. Power BI adds t
 
 2.  Tap the ellipsis to open the dashboard menu.
 
-    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_DashEllipsis.png)
+    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/power-bi-iphone-dashboard-ellipsis.png)
 
 3.  Tap **Add a picture tile**.
 
-    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/pbi_iph_dash_options.png)
+    ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/power-bi-iphone-add-picture-tile.png)
 
 4.  Select a picture from your camera roll, or take a new picture.
 
@@ -51,6 +54,6 @@ Picture tiles act the same as other tiles on your iPhone. You can:
 
 ### See also
 
-[Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)
+[Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)

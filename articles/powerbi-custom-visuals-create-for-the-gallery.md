@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/17/2015"
+   ms.date="06/21/2016"
    ms.author="mihart"/>
 
 # Create and submit a visual to the gallery  
 
 Want to create your own visual and add it to the Visuals Gallery for others to use?  Just follow these few steps.
-Power BI supports new custom visualization types which help you see data in new, delightful ways. A custom visual can be added to the **Visualization** pane alongside other Power BI visuals.  
+
 ![](media/powerbi-custom-visuals-create-for-the-gallery/example_viz.png)
 
 1.   [Create a custom visual with the Power BI Developer Tools (Preview)](#devtools)
@@ -28,7 +31,7 @@ Power BI supports new custom visualization types which help you see data in new,
 
 ### Create a custom visual with the Power BI Developer Tools (Preview)  
 
-<a name="devtools"></a>You can create a custom visual using the Power BI Developer Tools (Preview). In the Power BI **Developer Tools**, you design and test a custom visual by writing custom visual **TypeScript** code, and creating CSS. Once you have tested your custom visual, you can export it to Power BI, or submit it to the **Power BI visuals** gallery.
+<a name="devtools"></a>You can create a custom visual using the Power BI Developer Tools (Preview). In the Power BI **Developer Tools**, design and test a custom visual by writing custom visual **TypeScript** code, and creating CSS. Once you've tested your custom visual, you can export it to Power BI, or submit it to the **Power BI visuals** gallery.
 
 To learn more about the Developer Tools, see [Get started with Developer Tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md).  
 ![](media/powerbi-custom-visuals-create-for-the-gallery/DevToolsExample.png)

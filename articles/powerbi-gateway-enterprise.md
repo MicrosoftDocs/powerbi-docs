@@ -5,7 +5,11 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
-editor=""/>
+backup=""
+editor=""
+tags=""
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -13,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/09/2016"
+ms.date="06/15/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise
 
@@ -41,20 +45,53 @@ The *gateway* is different from a *data source*. The gateway is more of the prox
 
 Before you install the gateway, it’s important to know whether or not use you really need it.  It really depends on your data source and your organization needs.
 
-The gateway allows for the use of DirectQuery to an on-premises SQL Server or SAP HANA, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services. The enterprise gateway can also be used with scheduled refresh for data that you have imported into Power BI.
+The gateway allows for the use of DirectQuery to an on-premises SQL Server, SAP HANA, Oracle or Teradata, as well as a live connection to Analysis Services. You can use a live connection to either a tabular or multidimensional model in Analysis Services. The enterprise gateway can also be used with scheduled refresh for data that you have imported into Power BI.
 
-### List of available data source types
+## Requirements
 
-The following data sources are available for scheduled refresh.
+**Minimum Requirements:**
 
-- SQL Server
-- Analysis Services
-- SAP HANA
-- File
-- Folder
-- Oracle
-- Teradata
-- SharePoint list (on-premises)
+- .NET 4.5 Framework
+- Windows 7 / Windows Server 2008 R2, or later
+
+**Recommended:**
+
+- 8 Core CPU
+- 8 GB Memory
+- Windows 2012 R2 or later
+
+### Limitations of Analysis Services live connections
+
+You can use a live connection against tabular or multidimensional instances.
+
+|**Server version**|**Required SKU**|
+|---|---|
+|2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
+|2014|Business Intelligence and Enterprise SKU|
+|2016|Standard SKU or higher|
+
+- Cell level Formatting and translation features are not supported.
+- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
+
+## List of available data source types
+
+|**Data source**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|
+|---|---|---|---|
+|Analysis Services Tabular|Yes|Yes|
+|Analysis Services Multidimensional|Yes|Yes|
+|SQL Server|Yes|Yes|
+|SAP HANA|Yes|Yes|
+|Oracle|Yes|Yes|
+|Teradata|Yes|Yes|
+|File|No|Yes|
+|Folder|No|Yes|
+|SharePoint list (on-premises)|No|Yes|
+|Web|No|Yes|
+|OData|No|Yes|
+|IBM DB2|No|Yes|
+|MySQL|No|Yes|
+|Sybase|No|Yes|
+|SAP BW|No|Yes|
 
 ## Setting up the Power BI Gateway - Enterprise for the first time
 
@@ -68,9 +105,9 @@ Setting up a gateway for the first time is a three step process.
 
 ## Download and install the Power BI Gateway - Enterprise
 
-To download the gateway, click on Power BI gateways under the Downloads menu. Download the Power BI Gateway – Enterprise.
+To download the gateway, select **Power BI Gateways** under the Downloads menu. Download the [Power BI Gateway - Enterprise](https://go.microsoft.com/fwlink/?LinkId=698863).
 
-![](media/powerbi-gateway-enterprise/egw-download.png)
+![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
 
 It is recommended that you install this gateway on a server that is running the data source you will be connecting to. While you can install it on a different machine, you reduce potential network latency by having it on the same machine.
 
@@ -78,7 +115,9 @@ There’s really not much to installing a gateway. You’ll select a location to
 
 ![](media/powerbi-gateway-enterprise/egw-setup2.png)
 
-> NOTE: The enterprise and personal gateways can be installed on the same machine.
+> **Note**: The enterprise and personal gateways can be installed on the same machine. You can also install on either Windows Server or desktop.
+
+> **Note**: Installing the enterprise gateway on a domain controller is not supported.
 
 ## Configure the gateway
 After you install the gateway, it will prompt you to sign in to Power BI.  
@@ -97,7 +136,7 @@ Selecting **Configure** will register the gateway with the Power BI Service for 
 
 You can manage the gateway by going to the Power BI service and selecting the gear icon ![](media/powerbi-gateway-enterprise/pbi_gearicon.png) in the upper-right corner > **Manage gateways**. From here you can delete gateways that you are an administrator for. 
 
-> NOTE: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> **Note**: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
 
 ![](media/powerbi-gateway-enterprise/egw-managegateways.png)
 
@@ -128,10 +167,14 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 |*.frontend.clouddatahub.net|443|HTTPS|
 |*.core.windows.net|443|HTTPS|
 |login.microsoftonline.com|443|HTTPS|
-|login.windows.net|443|HTTPS|
+|*.msftncsi.com|443|Used to test internet connectivity if the gateway is unreachable by the Power BI service.|
+
+If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
 
 ## Troubleshooting
-If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the Power BI Gateway - Enterprise].
+If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
+
+If you think you are encountering proxy issues, with the gateway, see [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md).
 
 ## See also
 
@@ -149,4 +192,4 @@ If you’re having trouble when installing and configuring a gateway, be sure to
 
 [Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
 
-[Azure Service Bus Port Settings](https://msdn.microsoft.com/library/azure/ee732535.aspx)
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)

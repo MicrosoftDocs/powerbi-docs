@@ -3,10 +3,13 @@
    description="Learn how to use the Power BI publisher for Excel"
    services="powerbi"
    documentationCenter=""
-   authors="Minewiskan"
+   authors="davidiseminger"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="complete"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/17/2016"
-   ms.author="owend"/>
+   ms.date="06/20/2016"
+   ms.author="davidi"/>
 
-# Power BI publisher for Excel (Preview)
+# Power BI publisher for Excel
 
-With Microsoft Power BI publisher for Excel, you can take snapshots of your most important insights in Excel, like PivotTables, Charts, and ranges and pin them to dashboards in Power BI.
+With Microsoft **Power BI publisher for Excel**, you can take snapshots of your most important insights in Excel, like PivotTables, Charts, and ranges and pin them to dashboards in Power BI.
 
 ![](media/powerbi-publisher-for-excel/pbi_excel_publisher_pinobj_dashboard.png)
 
@@ -29,10 +32,9 @@ What you can't pin: You cannot pin 3D Maps or visualizations in Power View sheet
 When you pin an element from Excel, a new tile is added to a new or existing dashboard in Power BI. The new tile is a snapshot, so it's not dynamic, but you can still update it. For example, if you make a change to a PivotTable or Chart you've already pinned, the dashboard tile in Power BI isn't updated automatically, but you can still update your pinned elements by using Pin Manager. You'll learn more about Pin Manager below.
 
 ## Download and install
-Power BI publisher for Excel is an add-in you can download and install on desktop versions of Microsoft Excel 2010 with SP1 and later.
+Power BI publisher for Excel is an add-in you can download and install on desktop versions of Microsoft Excel 2007 and later.
 
--   [Power BI publisher for Excel 64-bit version](http://go.microsoft.com/fwlink/?LinkId=715729)
--   [Power BI publisher for Excel 32-bit (x86) version](http://go.microsoft.com/fwlink/?LinkId=715730)
+[Download Power BI publisher for Excel](http://go.microsoft.com/fwlink/?LinkId=715729)
 
 Once you have the publisher installed, you'll see a new **Power BI**
 ribbon in Excel, where you can sign-in and out of Power BI, pin elements to dashboards, and manage elements you've already pinned.
@@ -44,9 +46,11 @@ The Power BI publisher for Excel add-in is enabled by default, but if for some r
 ## Pin a range to a dashboard
 You can select any range of cells from your worksheet and pin a snapshot to any number of existing or new dashboards in Power BI.
 
-1. In your worksheet, select a range, and then click **Pin**. If you're not already signed into Power BI, you'll be prompted to.
-
-2. In **Pin to dashboard**, select an existing dashboard or create a new one, and then click **Pin**.
+1. In Excel, click on the **Power BI** tab to see the Pin ribbon.
+2. In your worksheet, select a range.
+3. Select a workspace in the **Workspace** dropdown list. If you want to pin to your own dashboard, verify **My Workspace** is selected. If you want to pin to a dashboard in a group workspace, select the group from the drop-down list.
+4. Click **Pin**. If you're not already signed into Power BI, you'll be prompted to.
+5. In **Pin to dashboard**, select an existing dashboard in the workspace or create a new one, and then click **Pin**.
 
     ![](media/powerbi-publisher-for-excel/pbi_publisher_pinrange.gif)
 

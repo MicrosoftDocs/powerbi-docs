@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="guyinacube" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="06/13/2016"
    ms.author="asaxton"/>
 
 # Azure SQL Data Warehouse with DirectQuery
@@ -75,6 +78,8 @@ SQL Data Warehouse is also listed on the Power BI Get Data page. 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/servernamewithadvanced.png)
    
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/username.png)
+
+    > **Note**: The username will be a user that is defined in your Azure SQL Data Warehouse instance.
 
 5. Drill into the dataset by selecting the new tile or the newly created dataset, indicated by the asterisk. This dataset will have the same name as your database.
 

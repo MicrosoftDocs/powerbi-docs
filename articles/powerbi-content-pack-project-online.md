@@ -1,12 +1,15 @@
 <properties 
-   pageTitle="Project Online content pack for Power BI"
+   pageTitle="Project Online content pack"
    description="Project Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Project Online content pack for Power BI
 
@@ -22,6 +25,7 @@ Microsoft Project Online is a flexible online solution for project portfolio man
 
 Connect to the [Project Online content pack](https://app.powerbi.com/getdata/services/project-online) for Power BI.
 
+## How to connect
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 
@@ -31,9 +35,9 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 
 	![](media/powerbi-content-pack-project-online/services.png)
 
-3.  Select **Microsoft Project Online** \> **Connect**. 
+3.  Select **Microsoft Project Online** \> **Get**. 
 
-	![](media/powerbi-content-pack-project-online/connect.png)
+	![](media/powerbi-content-pack-project-online/mproject.png)
 
 4. In the **Project Web App URL** text box, enter the URL for the Project Web Add (PWA) you want to connect to and hit **Next**. Note this may differ from the example if you have a custom domain.
 
@@ -47,13 +51,15 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 
 	![](media/powerbi-content-pack-project-online/dashboard2.png)
 
-	You can change this dashboard to display your data the way you want it. Plus you can:
+**What Now?**
 
-	- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard, such as "Show total clicks by location on a map"
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
-	- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
-	- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ### See also
 

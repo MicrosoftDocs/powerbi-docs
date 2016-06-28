@@ -5,7 +5,11 @@ services="powerbi"
 documentationCenter=""
 authors="guyinacube"
 manager="mblythe"
-editor=""/>
+backup=""
+editor=""
+tags=""
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -13,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/28/2015"
+ms.date="05/12/2016"
 ms.author="asaxton"/>
 # Power BI for Office 365 migration frequently asked questions (FAQ)
 
@@ -63,7 +67,7 @@ The data model within the excel workbook is what will could toward your data cap
 
 **Are there any restrictions on a workbook size?**
 
-A data model can be a maximum of 250 MB. [Learn more](powerbi-reduce-the-size-of-an-excel-workbook.md) 
+There is a 1 GB limit, per dataset, that is imported into Power BI. If you have chosen to keep the Excel experience, instead of importing the data, you will be limited to 250 MB for the dataset. [Learn more](powerbi-reduce-the-size-of-an-excel-workbook.md) 
 
 **How do I connect to Excel files that we move to a group’s OneDrive for Business storage?**
 

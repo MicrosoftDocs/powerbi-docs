@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="monitoring"
+   qualityDate="03/07/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2015"
+   ms.date="06/27/2016"
    ms.author="maggies"/>
 # Known issues with the iPhone app (Power BI for iOS)
 
@@ -28,4 +31,8 @@ You may see this message if your iPhone internet connection requires a mandato
 ### Workaround
 
 Switch the iPhone to another connection that doesn’t require an explicit HTTP proxy setting (i.e., one configured as HTTP Proxy is Off).
+
+## Other issues?
+Try asking the [Power BI Community](http://community.powerbi.com/).
+
 

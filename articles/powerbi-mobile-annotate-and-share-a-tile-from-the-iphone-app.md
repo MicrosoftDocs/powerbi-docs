@@ -1,12 +1,15 @@
 <properties 
    pageTitle="Annotate and share a tile from the iPhone app"
-   description="Annotate and share a tile from the iPhone app (Power BI for iOS)"
+   description="Learn about annotating and sharing snapshots of tiles from the Power BI mobile app for iOS on your iPhone. Recipients see the tile, but can’t open the dashboard."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2015"
+   ms.date="06/21/2016"
    ms.author="maggies"/>
 # Annotate and share a tile from the iPhone app (Power BI for iOS)
 

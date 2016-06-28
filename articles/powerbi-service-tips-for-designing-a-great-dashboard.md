@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/24/2015"
+   ms.date="04/15/2016"
    ms.author="mihart"/>
 
 # Tips for designing a great Power BI dashboard  
@@ -36,7 +39,7 @@ Because dashboards are meant to show important information at a glance, having a
 Is the dashboard too cluttered?  Remove all but essential information that can be easily read and interpreted.
 
 ### Make use of dashboard TV Mode
-Display your dashboard in [full screen](powerbi-service-dash-and-reports-fullscreen.md) without distractions. 
+Display your dashboard in [full screen](powerbi-service-dash-and-reports-fullscreen.md) without distractions.
 
 ### Make the most important information biggest  
 If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  

@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/11/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Insightly content pack for Power&nbsp;BI
 
 Visualize and share your Insightly CRM data in Power BI with the Insightly content pack. Connect to Power BI using your Insightly API key to view and build reports and dashboards from your CRM data. With Power BI, you can analyze your data in new ways, create powerful graphs and charts, and display contacts, leads, and organizations on a map.
 
-Connect to the [Insight content pack](https://app.powerbi.com/getdata/services/insightly) for Power BI. 
+Connect to the [Insightly content pack](https://app.powerbi.com/getdata/services/insightly) for Power BI. 
 
 ## How to connect
 
@@ -32,9 +35,9 @@ Connect to the [Insight content pack](https://app.powerbi.com/getdata/services/i
 
 	![](media/powerbi-content-pack-insightly/services.png)
 
-3.  Select **Insightly** \>  **Connect**.
+3.  Select **Insightly** \>  **Get**.
 
-	![](media/powerbi-content-pack-insightly/connect.png)
+	![](media/powerbi-content-pack-insightly/insightly.png)
 
 4.  Select **Key** as the Authentication type and provide your Insight API Key then select **Sign In**. See details on [finding this](#FindingParams) below.
 
@@ -57,7 +60,16 @@ Connect to the [Insight content pack](https://app.powerbi.com/getdata/services/i
 
 ## What's included
 
-The content pack includes:  
+The content pack includes the following tables with fields from the corresponding records:
+
+|Tables | | | |
+|---|---|---|---|
+| Contacts | Opportunities | Pipeline Stages | Task Complete Date |  
+|Custom Fields|Opportunity Close Date|Project Complete Date|Tasks|  
+|Events|Opportunity Forecast Date|Projects|Teams/Members|  
+|Leads|Organizations|Tags|Users|  
+
+Many tables and reports also include unique calculated fields, such as:  
 - Tables with “grouped” opportunity forecast close dates, opportunity actual close dates, project completion dates, and task completion dates for analysis by month, quarter, or year.  
 - A weighted value field for opportunities (opportunity value * probability of winning).  
 - Average and total duration fields for tasks, based on start and completed dates.  
@@ -67,8 +79,8 @@ The content pack includes:
 
 An Insightly account with access to the Insightly API is required. Visibility permissions will be based on the API key used to establish the connection to Power BI. Any Insightly records visible to you will also be visible in the Power BI reports and dashboards that you share with others.
 
-## Finding parameters
 <a name="FindingParams"></a>
+## Finding parameters
 
 **API Key**
 

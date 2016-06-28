@@ -1,12 +1,16 @@
 ﻿<properties
    pageTitle="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
-   description="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
+   description="Documentation for how to edit a dashboard tile -- resize, move, rename, pin, delete, add hyperlink."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   featuredVideoId="lJKgWnvl6bQ"
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,12 +18,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2015"
+   ms.date="05/24/2016"
    ms.author="mihart"/>
 
 # Edit a tile -- resize, move, rename, pin, delete, add hyperlink
 
-You can change the look and default behavior of a tile in a dashboard:
+You can change the look and default behavior of a tile in a dashboard.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
+
 
 -   [Pin the tile to a different dashboard](#different)
 
@@ -67,7 +74,7 @@ You can change the look and default behavior of a tile in a dashboard:
 
 You can make tiles many different sizes -- from 1x1 tile units up to 5x5.
 
--   Select and drag the arrow  (in the bottom right corner) to resize the tile.
+-   Select and drag the handle  (in the bottom right corner) to resize the tile.
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBIGIF_ResizeTile4.gif)
 

@@ -5,8 +5,11 @@
    documentationCenter="" 
    authors="guyinacube" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2015"
+   ms.date="06/13/2016"
    ms.author="asaxton"/>
 # Azure SQL Database with DirectQuery
 
-Azure SQL Database with direct connect allows you to create dynamic reports based on data and metrics you already have in your Azure SQL Database. With DirectQuery, queries are sent back to your Azure SQL Database as you explore the data in the report view. This experience is suggested for users who are familiar with the databases and entities they connect to.
+Azure SQL Database with DirectQuery allows you to create dynamic reports based on data and metrics you already have in your Azure SQL Database. With DirectQuery, queries are sent back to your Azure SQL Database as you explore the data in the report view. This experience is suggested for users who are familiar with the databases and entities they connect to.
 
 Notes:
 
@@ -65,6 +68,8 @@ Connect to the [Azure SQL Database connector](https://app.powerbi.com/getdata/bi
    
     ![](media/powerbi-azure-sql-database-with-directquery/username.png)
 
+    > **Note**: The username will be a user that is defined in your Azure SQL Database instance.
+
 5.  After you've connected, you see a new dataset with the same name as the database you connected to, and a placeholder tile for the dataset, created on the dashboard.
 
     ![](media/powerbi-azure-sql-database-with-directquery/dataset2.png)
@@ -87,11 +92,3 @@ Your fully qualified server name and database name can be found in the Azure Por
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get Data for Power BI](powerbi-service-get-data.md)
-
-
-
-
-
-
-
-

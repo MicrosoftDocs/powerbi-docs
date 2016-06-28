@@ -5,8 +5,11 @@
    documentationCenter=""
    authors="mihart"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2015"
+   ms.date="06/21/2016"
    ms.author="mihart"/>
 
 # Aggregates in Power BI  
@@ -34,7 +37,7 @@ Say you have a chart that sums the sales data for different regions, but you'd r
     ![](media/powerbi-service-change-the-aggregation-in-a-chart/aggregate_new.png)
 
 >**NOTE:**   
->**The options available in the dropdown will vary depending on the field selected.**
+>The options available in the dropdown will vary depending on the field selected.
 
 Some of the options that may be available for aggregating a field:
 
@@ -96,7 +99,19 @@ Would give the following results:
 
 ## Use a non-aggregated field as a numeric field
 
-You can also use a non-aggregated field as a numeric field. For example, if you have a Product Name field, you can add it as a value and then set it to **Count**. 
+You can also use a non-aggregated field as a numeric field. For example, if you have a Product Name field, you can add it as a value and then set it to **Count** or **Distinct count**. 
+
+1.  For example, if you select **Store > Chain**.
+
+    ![](media/powerbi-service-aggregates/count-of-chain-do_not_summarize.png)
+
+2.  And if you change the aggregation from the default **Do not summarize** to **Count (Distinct)**, Power BI counts the number of different chains. In this case, there are 2: Fashions Direct and Lindseys.
+
+    ![](media/powerbi-service-aggregates/aggregates_count.png)
+
+3.  And if you change the aggregation to **Count**, Power BI counts the total number. In this case, there are 104 entries for **Chain**. By adding **Chain** as a filter, you can see that there are 37 rows for Fashions Direct and 67 rows for Lindseys.  
+
+    ![](media/powerbi-service-aggregates/count_of_chain_104.png)
 
 ## See also  
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  

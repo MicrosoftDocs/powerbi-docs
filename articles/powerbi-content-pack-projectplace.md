@@ -1,12 +1,15 @@
 <properties
-   pageTitle="Projectplace content pack for Power BI"
+   pageTitle="Projectplace content pack"
    description="Projectplace content pack for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="theresapalmer"
    manager="mblythe"
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 
 # Projectplace by Planview content pack for Power&nbsp;BI  
@@ -23,12 +26,9 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 
 [Connect to the Projectplace content pack in Power BI](https://app.powerbi.com/getdata/services/projectplace)
 
->**Notes:**  
+Note: To import your Projectplace data into Power BI, you must be a Projectplace user. See additional requirements below.
 
->-   To import your Projectplace data into Power BI, you must be a Projectplace user
-
->-   This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, create a new free Power BI account on the Power BI home page, and then click Get Data.
-
+## How to connect
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 
@@ -38,9 +38,9 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 
     ![](media/powerbi-content-pack-projectplace/services.png)
 
-3. On the Power BI page, select **Projectplace by Planview**, then select **Connect**, as shown in the following image:  
+3. On the Power BI page, select **Projectplace by Planview**, then select **Get**:  
 
-	![](media/powerbi-content-pack-projectplace/getdata2.PNG)
+	![](media/powerbi-content-pack-projectplace/projectplace.png)
 
 4. In the OData Feed URL text box, enter the URL for the Projectplace OData feed you want to use, as shown in the following image:
 
@@ -52,16 +52,28 @@ With the Projectplace by Planview content pack, you can visualize your collabora
 
 6. On the left pane, select **Projectplace** from the list of dashboards. Power BI imports Projectplace data into the dashboard. Note that the data may take some time to load.  
 
-The dashboard contains tiles that display data from your Projectplace database. The following image shows an example of the default Projectplace dashboard in Power BI.
+    The dashboard contains tiles that display data from your Projectplace database. The following image shows an example of the default Projectplace dashboard in Power BI.
 
-![](media/powerbi-content-pack-projectplace/dashboard.PNG)
+    ![](media/powerbi-content-pack-projectplace/dashboard.PNG)
 
-You can perform the following tasks with the Projectplace content pack for Power BI:  
 
-- Select a tile on the dashboard to view the underlying report in detail.
+**What Now?**
 
-- Change, resize, and reorder the tiles on the dashboard.
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
 
-- Rename the default Projectplace dashboard, report, or dataset by clicking the ellipsis (…) next to the Projectplace dashboard, report, or dataset, and selecting Rename.
+- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
 
-- Ask a question about your Projectplace data by entering text such as “total cards” in the Q&A box at the top of the dashboard to receive real-time results.
+- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
+
+- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+
+## System requirements
+
+To import your Projectplace data into Power BI, you must be a Projectplace user. This procedure assumes you have already signed in to the Microsoft Power BI home page with a Power BI account. If you do not have a Power BI account, create a new free Power BI account on the Power BI home page, and then click Get Data.
+
+
+### See also
+
+[Get started with Power BI](powerbi-service-get-started.md)
+
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

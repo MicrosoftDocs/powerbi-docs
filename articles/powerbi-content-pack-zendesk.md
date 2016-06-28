@@ -1,12 +1,15 @@
 <properties 
-   pageTitle="Zendesk content pack for Power BI"
+   pageTitle="Zendesk content pack"
    description="Zendesk content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="theresapalmer" 
    manager="mblythe" 
+   backup=""
    editor=""
-   tags=""/>
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -14,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="05/17/2016"
    ms.author="tpalmer"/>
 # Zendesk content pack for Power&nbsp;BI
 
@@ -22,9 +25,9 @@ The Zendesk content pack offers a Power BI dashboard and a set of Power BI repor
 
 Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/zendesk) or read more about the [Zendesk integration](https://powerbi.microsoft.com/integrations/zendesk) with Power BI. 
 
-Note: A Zendesk Admin account is required to connect. More details on requirements below.
+Note: A Zendesk Admin account is required to connect. More details on [requirements](#Requirements) below.
 
-##How to connect
+## How to Connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -34,15 +37,17 @@ Note: A Zendesk Admin account is required to connect. More details on requiremen
 
     ![](media/powerbi-content-pack-zendesk/PBI_GetServices.png) 
 
-3.  Select **Zendesk** \> **Connect.**
+3.  Select **Zendesk** \> **Get.**
 
-    ![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
+    ![](media/powerbi-content-pack-zendesk/zendesk.png)
 
 4.  Provide the URL associated with your account. This will be in the form **https://company.zendesk.com**, see details on [finding these parameters](#FindingParams) below.
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskConnect.png)
 
-5.  When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. Note that these credentials must be an Admin for your account.  (If you are already signed in to Zendesk in your browser, you may not be prompted for credentials.)
+5.  When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. (If you are already signed in to Zendesk in your browser, you may not be prompted for credentials.)
+
+    >Note: This content pack requires you connect with a Zendesk Admin account.  
 
 	![](media/powerbi-content-pack-zendesk/PBI_ZendeskSignIn.png)
 
@@ -66,7 +71,7 @@ Note: A Zendesk Admin account is required to connect. More details on requiremen
 
 ## What's included
 
-The Power BI content pack includes data on the following:
+The Power BI content pack includes data on the following:  
 - Users (end users and agents)  
 - Organizations  
 - Groups  
@@ -74,12 +79,13 @@ The Power BI content pack includes data on the following:
 
 There's also a set of measures that have been calculated, such as Average Wait Time and Tickets Solved in the Last 7 days. A full list is included in the content pack. 
 
+<a name="Requirements"></a>
 ## System Requirements
 
-A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](powerbi-desktop-connect-to-data/).
+A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](powerbi-desktop-connect-to-data.md).
 
-## Finding parameters 
 <a name="FindingParams"></a>
+## Finding parameters 
 
 Your Zendesk URL will be the same as the URL you use to sign into your Zendesk account. If you're not sure of your Zendesk URL, you can use the Zendesk [login help](https://www.zendesk.com/login/).
 
