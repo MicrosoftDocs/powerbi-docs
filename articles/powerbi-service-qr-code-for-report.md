@@ -3,7 +3,7 @@
    description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
    services="powerbi"
    documentationCenter=""
-   authors="maggies"
+   authors="maggiesMSFT"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="06/27/2016"
    ms.author="maggies"/>
 
 # Create a QR code for a report in Power BI
@@ -64,5 +64,6 @@ Power BI generates the QR code as a JPG file, ready to print.
 
 ### See also
 
+-  [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
 -  [Scan a Power BI QR code from your phone](powerbi-mobile-qr-code-for-tile.md)
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
