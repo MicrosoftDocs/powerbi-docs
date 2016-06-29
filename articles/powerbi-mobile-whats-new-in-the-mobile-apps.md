@@ -49,39 +49,29 @@ The notification center in your Power BI mobile app shows new data or dashboards
 -  **QR codes** are now available **for reports**, too. Scan the code with your Power BI app to go directly to a related report, with no navigation or search needed.
 -  **Improved data management** for SQL Server 2016 Reporting Services: Reduced load times and data consumption on your device.
 -  **SQL Server 2016 themed mobile reports**: See themes for mobile reports on your device.
-
-## Late April 2016
-
-### All apps
-
--   Select more than one option in a report slicer.
-
-### iOS apps
-
 -  **Geofiltering**: Filter reports by your current location.
-
-### Power BI app for Windows 10 devices
-
--   **SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-win10-kpis-mobile-reports.md)** now on Windows 10 devices.
--   See **data tooltips** when you hover your mouse over a dashboard tile.
-
-### Android mobile app
-
--   **NTLM authentication** support for mobile reports in SQL Server 2016 Reporting Services.
 
 ## April 2016
 
 See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/) for more details.
 
+### All apps
+
+-   Select more than one option in a report slicer.
+
 ### Android mobile app
 
-**SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-android-kpis-mobile-reports.md)** now on Android phones.
+-   **SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-android-kpis-mobile-reports.md)** now on Android phones.
+-   **Report gallery** Open your reports directly in the report gallery.​
+-   **NTLM authentication** support for mobile reports in SQL Server 2016 Reporting Services.
 
-**Report gallery** Open your reports directly in the report gallery.​
 
 ### Power BI app for Windows 10 devices
 
-**Presentation mode** Display Power BI dashboards and reports in presentation mode from the Power BI app.
+-   **Presentation mode** Display Power BI dashboards and reports in presentation mode from the Power BI app.
+-   **SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-win10-kpis-mobile-reports.md)** now on Windows 10 devices.
+-   See **data tooltips** when you hover your mouse over a dashboard tile.
+
 
 ## March 2016
 
