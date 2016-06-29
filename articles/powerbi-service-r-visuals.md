@@ -20,7 +20,7 @@
    ms.date="06/27/2016"
    ms.author="davidi"/>
 
-# Use R scripts in Power BI to create advanced analytics and visualizations
+# Creating R visuals in the Power BI service
 
 The Power BI service supports viewing and interacting with visuals created with R scripts. Visuals created with R scripts, commonly called *R visuals*, can present advanced data shaping and analytics such as forecasting, using the rich analytics and visualization power of R.
 
@@ -38,7 +38,7 @@ Once the report is created in Power BI Desktop, you can publish the report conta
 
 Note that in the service not all of the R packages are supported. See supported packages at the end of this article for the list of packages currently supported in the Power BI service.
 
-You can download this sample Power BI Desktop file (.pbix file) that contains a few R visuals to see how this works, and to experiment. (link coming soon)
+You can download this [sample Power BI Desktop file](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample SL.pbix) (.pbix file) that contains a few R visuals to see how this works, and to experiment.
 
 R visuals that are created in Power BI Desktop, and then published to the Power BI service, for the most part behave like any other visual in the Power BI service; you can interact, filter, slice, and pin them to a dashboard, or share them with others. For more information about sharing dashboards and visuals, see [share a dashboard with colleagues and others](powerbi-service-share-unshare-dashboard.md). One difference from other visuals is that R visuals cannot show tool tips and cannot be used to filter other visuals.
 
@@ -102,12 +102,14 @@ R visuals in the Power BI service have a few limitations:
 
 ## Supported packages
 
-The following R packages are currently supported in the Power BI service. These packages are grouped into CRAN and RRO packages, and are in alphabetical order in each section.
+The following R packages are currently supported in the Power BI service. These packages are in alphabetical order.
 
 ### Supported Packages:
 
 abc, abc.data, acepack, actuar, ade4, AdMit, aod, ape, aplpack, approximator, arm, arules, arulesViz, assertthat, AzureML, BACCO, BaM, BAS, base64enc, BDA, bayesm, bayesmix, bayesQR, bayesSurv, BayesTree, BayHaz, bbemkr, BCBCSF, BCE, bclust, BenfordTests, bisoreg, bit, bit64, bitops, BMA, Bmix, BMS0, bnlearn,, boa, boot, bootstrap, bqtl, BradleyTerry2, brew, brglm,, bspec, bspmma, BVS, C50, calibrator, car, caret,, catnet, caTools, cclust, class, clue, cluster, clusterSim, coda, coin, CORElearn, corpcor, corrplot, crayon, cslogistic, cubature, cvTools, data.table, date, dclone, deal, Deducer, DeducerExtras, deepnet, deldir, dendextend, DEoptimR, deSolve, devtools, DiagrammeR, dichromat, digest, distrom, dlm, DMwR, doParallel, doSNOW, dplyr, DPpackage, dse, dtw, e1071, earth, EbayesThresh, ebdbNet, ellipse, emulator, ensembleBMA, entropy, EvalEst, evaluate, evdbayes, exactLoglinTest, expm, extremevalues, FactoMineR, factorQR, faoutlier, fBasics, fields, filehash, fitdistrplus, flashClust, FME, foreach, forecast, Formula, fracdiff, fTrading, gam, gamlr, gclus, gdata, gee, gender, genetics, geoRglm, geosphere, GGally, ggdendro, ggmap, ggmcmc, ggplot2, ggthemes, glmmBUGS, glmnet, gmodels, gmp, gnm, GPArotation, , gridBase, gridExtra, growcurves, grpreg, gss, gsubfn, gtable, gtools, haplo.stats, hash, hbsae, hdrcde, heavy, HH, HI, Hmisc, HSAUR, ifultools, igraph, intervals, iplots, ipred, irlba, irr, iterators, jpeg, jsonlite, kernlab, KernSmooth, KFKSDS, kinship2, kknn, klaR, knitr, ks, labeling, lars, lattice, latticeExtra, lava, lavaan, lazyeval, leaps, LearnBayes, LiblineaR, limSolve, lme4, lmm, lmtest, locfit, locpol, LogicReg, longitudinalData, lsa, LSAfun, lubridate, magic, magrittr, mapdata, mapproj, maps, maptree, MASS, MasterBayes, Matrix, matrixcalc, MatrixModels, maxent, maxLik, mboost, MCMCpack, mda, memoise, mi, mice, microbenchmark, mime, miniCRAN, misc3d, miscF, miscTools, mixtools, mlbench, mnormt, MNP, modeltools, mombf, monomvn, MSBVAR, msm, multcomp, munsell, , mvtnorm, ncvreg, nlme, nloptr, NLP, NMF, nnet, nnls, numbers, numDeriv, openNLP, openNLPdata, OutlierDC, pacbpred, party, partykit, PAWL, pbivnorm, pcaPP, pdc, PerformanceAnalytics, plotmo, plotrix, pls, plyr, png, polynom, PottsUtils, predmixcor, PresenceAbsence, profdpm, proto, proxy, pryr, pscl, psych, qap, qdap, qdapRegex, quadprog, quantreg, qvcalc, R.oo, .utils, ramps, RandomFieldsUtils, RColorBrewer, Rcpp, RcppArmadillo, RcppEigen, registry, relimp, reshape, reshape2, rgdal, rgl, RGraphics, rjags, rjson, RJSONIO, Rmpfr, rms, , robustbase, ROCR, rpart.plot, rrcov, rscproxy, RSGHB, RTextTools, rworldmap, SampleSizeMeans, SampleSizeProportions, sbgcop, scales, scatterplot3d, sciplot, segmented, seriation, setRNG, sfsmisc, SimpleTable, SIS, skmeans, slam, smoothSurv, sna, snow, SnowballC, snowFT, sp, spacetime, spam, SparseM, spatial, spBayes, spdep, spikeslab, splancs, spls, spTimer, sqldf, sROC, stabledist, stabs, stepPlr, stringdist, stringr, stsm, stsm.class, survival, tau, tcltk2, tensorA, textcat, textir, tfplot, TH.data, tidyr, timeDate, timeSeries, tm, topicmodels, tree, TSclust, tseries, tsfa, tsoutliers, TSP, TTR, vcd, venneuler, VGAM, VIM, whisker, wordcloud, xgboost, XML, xts, yaml, zipfR, zoo
 
 ### Coming soon:
+
+The following R packages are planned to be supported soon in the Power BI service. These packages are in alphabetical order.
 
 AER, base64, beanplot, broom, calibrate, circlize, corrgram, descr, dynlm, flexclust, flexmix, fpc, futile.options, gdtools, ggm, ggrepel, gstat, lambda.r, lsmeans, MAPA, mixOmics, msm, pixmap, plot3D, pracma, qcc, qgraph, R.rsp, rasterVis, rex, shape, sjPlot, sm, spatstat, statmod, survey, threejs, tibble, tiff, TSA, tsintermittent, vars, VIM, vioplot
