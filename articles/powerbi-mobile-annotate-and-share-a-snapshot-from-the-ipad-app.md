@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Annotate and share a snapshot of a tile from the iPad app"
-   description="Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)"
+   description="Read about sharing snapshots of tiles from the Microsoft Power BI app for iOS on the iPad. You can send tile snapshots to anyone, not just colleagues."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/07/2016"
+   ms.date="06/24/2016"
    ms.author="maggies"/>
 
 # Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)  

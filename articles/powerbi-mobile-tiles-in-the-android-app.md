@@ -54,7 +54,7 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
     ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tileellips_link.png)
 
-    And you can [open the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) inside the Power BI app. Links can go to other Power BI dashboards or to an external URL. If it's an external site, Power BI asks you to allow it.
+    Links can go to other Power BI dashboards or to an external URL. You can [tap the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
     
     ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_OpenLinkMessage.png)
 
