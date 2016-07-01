@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/30/2016"
+   ms.date="07/01/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10 
@@ -26,7 +26,7 @@ The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access 
 
 ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
-[Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with the SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
+[Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
 Then in the Power BI mobile app for Windows 10, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
@@ -57,11 +57,11 @@ Browse the samples to interact with KPIs and mobile reports.
 
     ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
 
->**Tip**: Tap the options icon ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your SQL Server mobile reports and your dashboards in the Power BI service. 
+>**Tip**: Tap the options icon ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
 
-## View SQL Server KPIs and mobile reports in the Power BI app
+## View Reporting Services KPIs and mobile reports in the Power BI app
 
-SQL Server KPIs and mobile reports are displayed in the same folders they're in on the Reporting Services web portal.
+Reporting Services KPIs and mobile reports are displayed in the same folders they're in on the Reporting Services web portal.
 
 ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-ssrs-mobile-report-folders.png)
 
@@ -93,10 +93,12 @@ You can only be connected to one report server at a time from your Power BI mobi
 2. Tap the server name you don't want to be connected to.
 3. Tap **Remove Connection**.
 
-## Create SQL Server mobile reports and KPIs
+## Create Reporting Services mobile reports and KPIs
 
-- [Create your own SQL Server mobile reports](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
-- Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)
+You don't create Reporting Services KPIs and mobile reports in the Power BI mobile app. You create them in SQL Server Mobile Report Publisher and a SQL Server 2016 Reporting Services web portal.
+
+- [Create your own Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to a Reporting Services web portal.
+- Create [KPIs on a Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)
 
 ### See also  
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
