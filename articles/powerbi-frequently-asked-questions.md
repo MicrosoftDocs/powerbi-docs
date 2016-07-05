@@ -103,9 +103,9 @@ You can download the Power BI mobile apps from their respective stores:
 -   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
 -   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
-## Power BI Desktop’s End User License Agreement (EULA) reads "You may install and use one copy of the software on your premises." Does this mean I am limited to one copy of Power BI Desktop for the entire office?
+## Power BI Desktop’s Software License Terms say "You may install and use one copy of the software on your premises." Does this mean I am limited to one copy of Power BI Desktop for the entire company?
 
-Power BI Desktop’s use rights do not limit you to one copy of Power BI Desktop for the entire office. Each individual may install and use one copy on their premises.  
+Power BI Desktop’s use rights do not limit you to one copy of Power BI Desktop for the entire company. Each individual user at the company may install and use one copy on their premises.
 
 ## Where do I get started with Power BI?
 
