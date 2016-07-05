@@ -1,12 +1,14 @@
 ## How the gateway works 
 
-Let’s first look at what happens when a user interacts with an element  connected to an on-premises data source. 
+![on-prem-data-gateway-how-it-works](./media/gateway-onprem-how-it-works-include/on-prem-data-gateway-how-it-works.png)
+
+Let’s first look at what happens when a user interacts with an element connected to an on-premises data source. 
 
 > **Note:** For Power BI, you will need to configure a data source for the gateway.
 
 1.	A query will be created by the cloud service, along with the encrypted credentials for the on-premises data source, and sent to the queue for the gateway to process.
 
-2.	The service will analyze the query and will push the request to the [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/).
+2.	The gateway cloud service will analyze the query and will push the request to the [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/).
 
 3.	The on-premises data gateway polls the [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/) for pending requests.
 

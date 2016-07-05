@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/23/2016"
+ms.date="07/05/2016"
 ms.author="asaxton"/>
 # Configuring proxy settings for the On-premises Data Gateway
 
@@ -33,21 +33,21 @@ The following post on superuser.com discusses how you can try to determine if yo
 
 Proxy information is configured within a .NET configuration file. The location, and file names, will be different depending on the gateway you are using.
 
-### Power BI Gateway - Enterprise
+### On-premises data gateway
 
-There are two main configuration files that are involved with the enterprise gateway.
+There are two main configuration files that are involved with the on-premises data gateway.
 
 **Configuration**
 
 The first is for the configuration screens that actually configure the gateway. If you are having issues configuring the gateway, this is the file you will want to look at.
 
-    C:\Program Files\Power BI Enterprise Gateway\enterprisegatewayconfigurator.exe.config
+    C:\Program Files\On-premises data gateway\enterprisegatewayconfigurator.exe.config
 
 **Windows Service**
 
 The second is for the actual windows service that interacts with the Power BI service, and handles the requests.
 
-    C:\Program Files\Power BI Enterprise Gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
+    C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
 
 ### Power BI Gateway - Personal
 
@@ -93,4 +93,4 @@ To learn more about the configuration of the proxy elements for .NET configurati
 
 ## See also
 
-[Firewall information](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy)
+[Firewall information](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy)

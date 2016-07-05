@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/22/2016"
+ms.date="07/05/2016"
 ms.author="asaxton"/>
 # On-premises data gateway in-depth
 
@@ -27,27 +27,8 @@ Installing and configuring a gateway is usually done by an administrator. It may
 
 This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see [On-premises Data Gateway](powerbi-gateway-onprem.md). This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Azure Active Directory and Analysis Services, and how the cloud service uses the e-mail address a user sign in with, the gateway, and Active Directory to securely connect to and query your on-premises data.
 
-## How the gateway works 
-
-Let’s first look at what happens when a user interacts with an element  connected to an on-premises data source.
-
-**Note:** For Power BI and PowerApps, you will need to configure a data source for the gateway.
-
-1.	A query will be created by the cloud service, along with the encrypted credentials for the on-premises data source, and sent to the queue for the gateway to process.
-
-2.	The service will analyze the query and will push the request to the [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/).
-
-3.	The on-premises data gateway polls the [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/) for pending requests.
-
-4.	The gateway gets the query, decrypts the credentials and connects to the data source(s) with those credentials.
-
-    For Analysis Services, we will also set the EffectiveUserName property with the userPrincipalName value passed from the cloud service. This User Principal Name (UPN) needs to match the UPN on a local Active Directory account. The Analysis Services instance must be joined to a domain.
-
-    For other data sources, the connection will be made using the supplied credentials of the data source. This credential is used regardless of what the end user is.
-
-5.	The gateway sends the query to the data source for execution.
-
-6.	The results are sent from the data source, back to the gateway, and then onto the cloud service. The service then uses the results.
+<!-- Shared Requirements Include -->
+[AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-how-it-works.md)]
 
 ## Sign in account
 

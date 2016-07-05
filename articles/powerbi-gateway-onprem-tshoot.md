@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/23/2016"
+ms.date="07/05/2016"
 ms.author="asaxton"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -85,7 +85,7 @@ To correct this, do the following.
 
 2. Delete the following folder.
 
-        c:\Program Files\Power BI Enterprise Gateway
+        c:\Program Files\on-premises data gateway
 
 3. Reinstall the gateway.
 
@@ -123,7 +123,7 @@ We were unable to connect to the specified data source. Be sure to validate the 
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**. 
 
-If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-enterprise-manage-ssas.md#add-a-data-source)
+If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-onprem-manage-ssas.md#add-a-data-source)
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
@@ -157,15 +157,7 @@ You will need to work with your domain administrators to verify the trust relati
 
 **Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
 
-Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the adminsitrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
-
-## Dataset
-
-### Error: Couldn't refresh because your Personal Gateway is offline. Make sure your Personal Gateway is up and running.
-
-You may have configured an enterprise gateway, and see this error for a given dataset when you try to refresh. The enterprise gateway currently does not support imported data. It supports SQL Server and SAP HANA in DirectQuery mode, or live connections with Analysis Services, either Tabular or Multidimensional.
-
-If you have imported data into your file, you will need the Personal Gateway to refresh the dataset.
+Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
 
 ## Reports
 
@@ -173,9 +165,9 @@ If you have imported data into your file, you will need the Personal Gateway to 
 
 This is usually caused by one of the following. 
 
-1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the enterprise gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the enterprise gateway, needs to use an IP Address as well.
+1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the on-premises data gateway, needs to use an IP Address as well.
 
-2. There is not a data source available on any enterprise gateway within your organization. You can configure the data source on a new, or existing, enterprise gateway.
+2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing, on-premises data gateway.
 
 ### Error: Data source access error. Please contact the gateway administrator.
 

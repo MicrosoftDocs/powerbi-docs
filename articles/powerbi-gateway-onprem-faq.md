@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/22/2016"
+ms.date="07/05/2016"
 ms.author="asaxton"/>
 # On-Premises Data Gateway FAQ
 
@@ -56,6 +56,12 @@ ms.author="asaxton"/>
 **Answer:** No. This is on the roadmap, but we don’t have a timeframe.
 
 ## Power BI
+
+**Question:** If I'm using the current Power BI gateway for enterprise deployments, do I need to upgrade?
+**Answer:** Yes, but it is simple to do so as it just works the same way you upgraded to the latest enterprise gateway. Simple install the new on-premises data gateway to upgrade your existing gateway.
+
+**Question:** Do i need to upgrade the personal gateway?
+**Answer:** No, you can keep using the personal gateway for Power BI.
 
 **Question:** How often are tiles in a dashboard, in Power BI, refreshed when connected through the enterprise gateway?  
 **Answer:** About ten minutes. DirectQuery connections are just that. This doesn’t mean that a tile issues a query to your on-premises server, and shows new data, every ten minutes.

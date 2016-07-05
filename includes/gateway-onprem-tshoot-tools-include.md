@@ -7,20 +7,20 @@ There are several logs you can collect for the gateway. Always start with the lo
 
 **Installer logs**
 
-    %localappdata%\Temp\Power_BI_Gateway_–_Enterprise*.log
+    %localappdata%\Temp\On-premises_data_gateway_*.log
 
 **Configuration logs**
 
-    %localappdata%\Microsoft\Power BI Enterprise Gateway\GatewayConfigurator*.log
+    %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
 **Enterprise gateway service logs**
 
-    C:\Users\PBIEgwService\AppData\Local\Microsoft\Power BI Enterprise Gateway\EnterpriseGateway*.log
+    C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
 ### Event Logs  
-The **Data Management Gateway** and **PowerBIGateway** logs are present under **Application and Services Logs**.
+The **On-premises data gateway service** event logs are present under **Application and Services Logs**.
 
-![](media/powerbi-gateway-enterprise-tshoot/event-logs.png)
+![on-prem-data-gateway-event-logs](./media/gateway-onprem-tshoot-tools-include/on-prem-data-gateway-event-logs.png)
 
 <a name="fiddler" />
 ### Fiddler Trace  

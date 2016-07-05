@@ -4,15 +4,15 @@ The data gateway installs and runs on your computer. It is best to install the g
 
 > **Note:** The gateway is supported only on 64-bit Windows operating systems.
 
-The first choice you have to make is the mode of the gateway.
+For Power BI, the first choice you have to make is the mode of the gateway.
 
 -	**On-premises data gateway:** Multiple users can share and reuse a gateway in this mode. This gateway can be used by Power BI, PowerApps, Flow or Logic Apps. For Power BI, this includes support for both schedule refresh and DirectQuery
 
--	**Personal:** This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh.
+-	**Personal:** This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh. This will launch the installation of the personal gateway.
 
 > **Note:** If you install the gateway in personal mode, you will not be able to install another gateway on the same machine. 
 
-<!--image place holder-->
+![on-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
 
 Here are a few things to consider before installing the gateway.
 
@@ -22,11 +22,11 @@ Here are a few things to consider before installing the gateway.
 
 Once the gateway is installed, you will need to sign in with your work or school account.
 
-<!--image place holder-->
+![on-prem-data-gateway-install-signin](./media/gateway-onprem-install-include/on-prem-data-gateway-install-signin.png)
 
 After you are signed in, you will have the option to configure a new gateway, or to migrate, restore, or take over an existing gateway.
 
-<!--image place holder-->
+![on-prem-data-gateway-install-register-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-register-recovery.png)
 
 ## Configure a new gateway
 
@@ -38,11 +38,11 @@ After you are signed in, you will have the option to configure a new gateway, or
 
 > **Note:** The recovery key will be needed if you ever need to migrate, restore or take over a gateway. Be sure to keep this key in a safe place.
 
-<!--image place holder-->
+![on-prem-data-gateway-install-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
 
 ### Migrate, restore or take over an existing gateway
 
-You will need to supply the recovery key that was used to first create this gateway. 
+You will need to select the gateway you want to recover and supply the recovery key that was used to first create the gateway. 
 
 ### On-premises data gateway connected
 
