@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2016"
+   ms.date="07/06/2016"
    ms.author="davidi"/>
 
 # Analyze in Excel
-There are times when you may want to use Excel to view and interact with a dataset that you have Power BI. With **Analyze in Excel**, you can do just that, and access PivotTable, chart, and slicer features in Excel based on the dataset that exists in Power BI.
+With **Analyze in Excel**, you can view and interact with a dataset you have access to in Power BI, and thereby access PivotTable, chart, and slicer features directly in Excel, based on the dataset that exists in Power BI.
 
 ## Requirements
 There are a few requirements for using **Analyze in Excel**:
@@ -82,8 +82,14 @@ Now that Excel has opened and you have an empty PivotTable, you're ready to do a
 You can save this Power BI dataset connected workbook just like any other workbook. However, you cannot publish or import the workbook back into Power BI because you can only publish or import workbooks into Power BI that have data in tables, or that have a data model. Since the new workbook simply has a connection to the dataset in Power BI, publishing or importing it into Power BI would be going in circles!
 
 ## Share
-Once your workbook is saved, you can share it with other Power BI users in your organization.
+Once your workbook is saved, you can share it with other Power BI users in your organization. In order to share your workbook with other Power BI users, you must share the dataset (the workbook) by doing one of the following:
+
+-   Share the Power BI dashboard that hosts a pinned element from your Power BI report with the user
+-   Share a content pack that contains the dataset with the user
+-   Add the user with whom you want to share to the group that owns the dataset
 
 When a user with whom you’ve shared your workbook opens the workbook, they’ll see your PivotTables and data as they appeared when the workbook was last saved, which may not be the latest version of the data. To get the latest data, users must use the **Refresh** button on the **Data** ribbon. And since the workbook is connecting to a dataset in Power BI, users attempting to refresh the workbook must sign into Power BI and install the Excel updates the first time they attempt to update using this method.
+
+You can also set the workbook file to refresh the data upon opening, which refreshes the data whenever anyone accesses the dataset. To refresh the workbook each time it's opened, in Excel select **Connections** from the **Data** ribbon, select the connection used for the workbook, then select **Properties** and set *Refresh data when opening the file* to **True**, then select **OK**.
 
 Since users will need to refresh the dataset, and refresh for external connections is not supported in Excel Online, it’s recommended that users open the workbook in the desktop version of Excel on their computer.
