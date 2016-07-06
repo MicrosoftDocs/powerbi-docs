@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2016"
+   ms.date="07/06/2016"
    ms.author="maggies"/>
 
 # Scan a barcode from the Power BI app on your iPhone
 
 Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
 
-Say a colleague has [tagged a barcode field in a report Power BI Desktop](powerbi-desktop-mobile-bar-codes.md) and shared the report with you. 
+Say a colleague has [tagged a barcode field in a report Power BI Desktop](powerbi-desktop-mobile-barcodes.md) and shared the report with you. 
 
 When you scan a product barcode with the scanner in the Power BI app on your iPhone, you see the report (or list of reports) with that barcode. You can open that report on your iPhone, filtered to that barcode.
 
