@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/05/2016"
+ms.date="07/06/2016"
 ms.author="asaxton"/>
 # On-premises data gateway
 
@@ -41,25 +41,8 @@ You can use a live connection against tabular or multidimensional instances.
 - Cell level Formatting and translation features are not supported.
 - Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
 
-## List of available data source types
-
-|**Data source**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|
-|---|---|---|---|
-|Analysis Services Tabular|Yes|Yes|
-|Analysis Services Multidimensional|Yes|Yes|
-|SQL Server|Yes|Yes|
-|SAP HANA|Yes|Yes|
-|Oracle|Yes|Yes|
-|Teradata|Yes|Yes|
-|File|No|Yes|
-|Folder|No|Yes|
-|SharePoint list (on-premises)|No|Yes|
-|Web|No|Yes|
-|OData|No|Yes|
-|IBM DB2|No|Yes|
-|MySQL|No|Yes|
-|Sybase|No|Yes|
-|SAP BW|No|Yes|
+<!-- Shared Install steps Include -->
+[AZURE.INCLUDE [gateway-onprem-datasources-include](../includes/gateway-onprem-datasources-include.md)]
  
 ## Download and install the On-premises data gateway
 
@@ -88,11 +71,16 @@ You will also need to supply the windows user name and password that the windows
 
 After the installation is complete, you will need to go to your datasets within Power BI and make sure credentials are entered for your on-premises data sources.
 
-<!-- Shared Requirements Include -->
-[AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-accounts-ports-more.md)]
+<a name="credentials">
+## Storing encrypted credentials in the cloud
+
+When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using asymmetric encryption so that they cannot be decrypted in the cloud, before they are stored in the cloud. The credentials are sent to the machine, running the gateway, on-premises where they are decrypted when the data sources are accessed.
 
 <!-- Shared Requirements Include -->
-[AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-how-it-works-include.md)]
+[AZURE.INCLUDE [gateway-onprem-accounts-ports-more](../includes/gateway-onprem-accounts-ports-more.md)]
+
+<!-- Shared Requirements Include -->
+[AZURE.INCLUDE [gateway-onprem-how-it-works-include](../includes/gateway-onprem-how-it-works-include.md)]
 
 ## Troubleshooting
 
@@ -102,13 +90,13 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 
 ## See also
 
-[Manage your enterprise data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
+[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
 
-[Manage your enterprise data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
+[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
 
-[Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
+[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
-[Manage your enterprise data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
+[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
 
 [On-premises Data Gateway in-depth](powerbi-gateway-onprem-indepth.md)
 

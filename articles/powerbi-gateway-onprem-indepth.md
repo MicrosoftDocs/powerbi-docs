@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/05/2016"
+ms.date="07/06/2016"
 ms.author="asaxton"/>
 # On-premises data gateway in-depth
 
@@ -29,6 +29,9 @@ This article doesn’t provide step-by-step guidance on how to install and confi
 
 <!-- Shared Requirements Include -->
 [AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-how-it-works-include.md)]
+
+<!-- Shared Install steps Include -->
+[AZURE.INCLUDE [gateway-onprem-datasources-include](../includes/gateway-onprem-datasources-include.md)]
 
 ## Sign in account
 
