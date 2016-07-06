@@ -74,7 +74,7 @@ The barcode value you scanned exists in your model but all/Some of the visuals o
 
 This means you don’t have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**.  
 
-Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](powerbi-desktop-mobile-bar-codes.md)
+Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](powerbi-desktop-mobile-barcodes.md)
 
 ### “Couldn’t filter report - Looks like this barcode doesn't exist in the report data.”  
 
@@ -83,6 +83,6 @@ The report you chose to filter is based on a data model that doesn't include thi
 
 ### See also
 
--  [Tag a barcode field in Power BI Desktop](powerbi-desktop-mobile-bar-codes.md)
+-  [Tag a barcode field in Power BI Desktop](powerbi-desktop-mobile-barcodes.md)
 -  [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 -  [Dashboards in Power BI](powerbi-service-dashboards.md)
