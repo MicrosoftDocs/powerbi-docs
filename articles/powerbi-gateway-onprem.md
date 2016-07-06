@@ -92,7 +92,7 @@ After the installation is complete, you will need to go to your datasets within 
 [AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-accounts-ports-more.md)]
 
 <!-- Shared Requirements Include -->
-[AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-how-it-works.md)]
+[AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-how-it-works-include.md)]
 
 ## Troubleshooting
 

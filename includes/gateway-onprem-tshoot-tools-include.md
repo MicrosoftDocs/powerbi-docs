@@ -26,4 +26,4 @@ The **On-premises data gateway service** event logs are present under **Applicat
 ### Fiddler Trace  
 [Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
 
-![](media/powerbi-gateway-enterprise-tshoot/fiddler.png)
+![](media/gateway-onprem-tshoot-tools-include/fiddler.png)
