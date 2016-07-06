@@ -47,11 +47,11 @@ The following steps describe how to use **Publish to web**.
 
 2.  Review the content on the dialog, and select **Create embed code** as shown in the following dialog.
 
-    ![](media/powerbi-service-publish-to-web/Publish_To_Web2_GA.png)
+    ![](media/powerbi-service-publish-to-web/Publish_To_Web2_GA.PNG)
 
 3.  Review the warning, shown in the following dialog, and confirm that the data is okay to embed in a public website. If so, select **Publish**.
 
-    ![](media/powerbi-service-publish-to-web/Publish_To_Web3_GA.png)
+    ![](media/powerbi-service-publish-to-web/Publish_To_Web3_GA.PNG)
 
 4.  A dialog appears that provides a link that can be sent in email, embedded in code (such as an iFrame), or that you can paste directly into your web page or blog.
 
@@ -167,7 +167,7 @@ To report a concern related to **Publish to web** content embedded in a website 
 
 To report a concern, select the **flag** icon in the bottom bar of the Publish to web report you see.
 
-![](media/powerbi-service-publish-to-web/Publish_To_Web12_GA.png)
+![](media/powerbi-service-publish-to-web/Publish_To_Web12_GA.PNG)
 
 ## Licensing and Pricing
 
