@@ -17,13 +17,13 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/14/2016"
+   ms.date="07/07/2016"
    ms.author="asaxton"/>
 # Self-service sign up for Power BI
 
 Signing up for Power BI, as an individual, is easy! You can choose to use a free account, a Pro trial account, or purchase Power BI Pro, even if you are in an existing organization. Once you have determined which you would like to use, this article will walk you through the steps to get up and running.
 
-> **Note:** If you are in an organization, individual sign up may be disabled. See [#individual-sign-up-has-been-turned-off] for more information if you get an error indicating it has been turned off.
+> **Note:** If you are in an organization, individual sign up may be disabled. See [Individual Sign up has been turned off](#individual-sign-up-has-been-turned-off) for more information if you get an error indicating it has been turned off.
 
 ## What email address can be used with Power BI?
 
