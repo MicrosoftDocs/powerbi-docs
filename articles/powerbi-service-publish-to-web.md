@@ -148,6 +148,8 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 
 5.  Reports in a group in which you are not an edit member.
 
+6.  "R" Visuals are not currently supported in Publish to web reports.
+
 
 ## Understanding the embed code status column
 
