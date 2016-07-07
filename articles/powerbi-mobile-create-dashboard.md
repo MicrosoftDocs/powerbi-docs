@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Dashboards for mobile Power BI"
-   description="Dashboards for mobile Power BI"
+   pageTitle="Dashboards in the Power BI mobile apps"
+   description="You create or connect to dashboards in the Power BI service. Then you can view them in the Power BI mobile apps."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/24/2016"
+   ms.date="07/07/2016"
    ms.author="maggies"/>
-# Dashboards for mobile Power BI
+# Dashboards in the Power BI mobile apps
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business.
 
