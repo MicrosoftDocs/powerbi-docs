@@ -1,6 +1,6 @@
 <properties 
    pageTitle="View your data offline in the Power BI mobile apps"
-   description="View your data offline in the Power BI mobile apps"
+   description="Read about an advantage of viewing Power BI in a mobile app rather than in a mobile browser: you can see your data even when you're not connected to a network."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/08/2016"
+   ms.date="07/06/2016"
    ms.author="maggies"/>
 
 # View your data offline in the Power BI mobile apps
 
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. By default, Power BI refreshes the data frequently so you get up-to-date answers to your business questions any time, even while commuting or roaming.
 
-> **Note**: Offline is currently available on iOS devices and Android phones, but not yet on Windows devices.
+> **Note**: Offline is currently available on iOS devices and Android phones, but not yet on Windows 10 devices.
 
 ## Data access while you're offline
 
@@ -41,7 +41,7 @@ You can turn off scheduled refresh, for example to avoid network usage. Check th
 Power BI provides clear indicators when you go in and out of offline mode, as well as indicators for missing dashboards, reports, and tiles that aren't available offline.
 
 ## Limitations
-When you're offline with Power BI on your mobile device, you may encounter a few limitations:
+When you're offline with Power BI on your mobile device, you may encounter these limitations:
 
 -   Power BI can cache up to 250 MB of data offline.
 -   Some tile types require an active server connection, so they aren't available offline &#151; for example, Bing tiles and some custom tiles.

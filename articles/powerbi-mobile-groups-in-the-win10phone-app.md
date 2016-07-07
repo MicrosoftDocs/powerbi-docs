@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Groups in the Power BI mobile app for Windows 10"
-   description="Groups in the Power BI mobile app for Windows 10"
+   description="Power BI groups are built on Office 365 groups. Read about viewing and interacting with group dashboards in the Power BI mobile app for Windows 10."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
