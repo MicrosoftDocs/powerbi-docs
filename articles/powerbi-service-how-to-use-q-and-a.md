@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="07/06/2016"
    ms.author="mihart"/>
 
 # How to use Power BI Q&A  
@@ -29,13 +29,13 @@ The answer to your question is displayed as an interactive visualization and upd
 
 Q&A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue.  
 
-![](media/powerbi-service-how-to-use-q-and-a/Q&A-1.png)
+![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna.png)
 
-1.  Place your cursor in the question box. Even before you start typing, Q&A displays a dropdown with helpful suggestions.
+1.  Place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question.
 
-    ![](media/powerbi-service-how-to-use-q-and-a/PBI_qna_dropdown1.jpg)  
+    ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-cursor.png)  
 
-    This dropdown list contains:  
+    This  list contains:  
     - the questions used to create [tiles ](powerbi-service-dashboard-tiles.md)that are already pinned to the dashboard, and  
 
     - the name of tables in the [underlying dataset(s)](powerbi-service-get-data.md).  
@@ -43,15 +43,14 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
 	You can always choose one of these questions as a starting point and continue to refine the question to find the specific answer you are looking for.  Or, use a table name to help you word a new question.
 
 2.  Select from the dropdown or begin typing your own question.  
-    ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_begin-typing-question.jpg)
+    ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-list.png)
 
 3.  As you type a question, Power BI Q&A picks the best [visualization ](powerbi-service-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question. Q&A also helps you formulate your question with auto-completion, by restating your question, and with other textual and visual aids.  
-    ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_continue-typing-question.jpg)
+    ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-viz.png)
 
 4.  When you type a query, Power BI looks for an answer in any dataset that has a tile on that dashboard.  If all the tiles are from *datasetA*, then your answer will come from *datasetA*.  If there are tiles from *datasetA *and *datasetB*, then Q&A will search for the best answer from those 2 datasets.
 
     The dataset(s) that is used to create the visualization is visible below the visualization.  
-    ![](media/powerbi-service-how-to-use-q-and-a/PBI_qna_which-dataset-used.jpg)
 
     >**Tip:** 
 	>So be careful, if you only have one tile from *datasetA *and you remove it from your dashboard, Q&A will no longer have access to *datasetA*.
@@ -83,6 +82,8 @@ If you have website performance data in Google Analytics, you could ask Q&A abou
 Q&A picks the best visualization based on the data being displayed. Sometimes data in the underlying dataset(s) is defined as a certain type or category and this helps Q&A know how to display it. For example, if data is defined as a date type, it is more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
 
 You can also tell Q&A which visualization to use by adding it to your question. But keep in mind that it may not always be possible for Q&A to display the data in the visualization type you requested.
+
+For information about keywords that Q&A recognizes, see [Tips for asking questions](powerbi-service-q-and-a-tips.md).
 
 ## See also  
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
