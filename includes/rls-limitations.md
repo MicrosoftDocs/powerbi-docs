@@ -8,3 +8,15 @@ Here is a list of the current limitations for row-level security on cloud models
 - Q&A and Cortana is not supported with RLS at this time. You will not see the Q&A input box for dashboards if all models have RLS configured. This is on the roadmap, but a timeline is not available.
 - Analyze in Excel is not currently supported with datasets that use RLS.
 - External sharing is not currently supported with datasets that use RLS.
+
+## Known issues
+
+There is a known issue where you will receive an error message when trying to publish from Power BI Desktop if it was previously published. The scenario is as follows.
+
+1. Anna has a dataset that is publised to the Power BI service and has configured RLS.
+
+2. Anna updates the report in Power BI Desktop and re-publishes.
+
+3. Anna will receive an error.
+
+**Workaround:** Re-publish the Power BI Desktop file from the Power BI service until this issue is resolved. You can do that by select **Get Data** > **Files**.
