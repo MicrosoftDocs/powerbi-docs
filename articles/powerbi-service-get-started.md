@@ -14,10 +14,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="get-started-article"
+   ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="07/07/2016"
    ms.author="mihart"/>
 
 # Get started with Power BI
@@ -62,10 +62,11 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
 Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.
 
-1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading, right-click the dataset name and select **Explore**.
+1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading,click the dataset name to open it.
 
     ![](media/powerbi-service-get-started/gettingstart4.png)
->NOTE: Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](powerbi-service-auto-insights.md)
+
+    >NOTE: Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](powerbi-service-auto-insights.md)
 
 2.  In the **Fields** list on the right side of the page, select fields to build a visualization.  Select the checkbox beside **﻿Gross Sales**﻿ and  **﻿Date**﻿.
 
@@ -102,13 +103,13 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
     ![](media/powerbi-service-get-started/gsPinFirstnew.png)
 
-    You can select the new tile on your dashboard to return to the report any time.
-    
+    Select the new tile on your dashboard to return to the report any time.
+
 ##  Step 3: Continue exploring with Q&A (natural language querying)
 
 1.  For a quick exploration of your data, try asking a question in the Q&A box. The Q&A question box is located at the top of your dashboard. For example, try typing "**what segment had the most revenue**".
 
-    ![](media/powerbi-service-get-started/PBI_GetStartQnA.png)
+    ![](media/powerbi-service-get-started/powerbi-qna.png)
 
 1. Select the pin icon ![](media/powerbi-service-get-started/PBI_PinIcon.png) to show this visualization on your dashboard too.
 
@@ -134,4 +135,5 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 ### Stay in touch with Power BI
 
 -   Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
+-   Subscribe to our [YouTube video channel](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 -   Watch our [Power BI Getting Started webinars](powerbi-webinars.md) on demand
