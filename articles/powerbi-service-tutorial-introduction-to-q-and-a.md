@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -61,10 +61,6 @@ How would we go about creating this same line chart using Q&A?
 3.  To pin the chart to your dashboard, select the pin icon ![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png).
 
 ## See also
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-[Get started with Power BI](powerbi-service-get-started.md)
 
 [What type of questions can I ask Q&A?](powerbi-service-q-and-a.md)
 
