@@ -84,7 +84,9 @@ Let’s take a closer look at each step.
 
 ### Download and install a gateway
 
-You’ll be prompted to install a gateway when you click on REFRESH NOW or SCHEDULE REFRESH for a supported dataset for the first time. Or, if in Power BI, you select **Gateways** in **Downloads**.
+You’ll be prompted to install a gateway when you click on REFRESH NOW or SCHEDULE REFRESH for a supported dataset for the first time. Or, to download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
+
+You will want to select **Personal Gateway** instead of **On-premises data gateway** to have a gateway that is for yourself.
 
 There’s really not much to installing a gateway. You’ll select a location to install to, and read and accept the license agreement just like any other application. There are however some important things to know. In particular, the type of computer you install the gateway on and the type of account you’re logged in to Windows with on that computer.
 
