@@ -3,7 +3,7 @@
    description="Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app."
    services="powerbi"
    documentationCenter=""
-   authors="maggies"
+   authors="maggiesMSFT"
    manager="mblythe"
    backup=""
    editor=""

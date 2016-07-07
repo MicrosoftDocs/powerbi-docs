@@ -16,12 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="06/27/2016"
    ms.author="maggies"/>
 
 # Filter a report by location in the Power BI mobile apps for iOS
 
-When you look at a Power BI report on your iPad, iPhone, or iPod Touch, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your physical location.
+When you look at a Power BI report on your iPad, iPhone, or iPod Touch, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
 
 >**Note**: You can only filter by location if the geographic names in the report are in English &#150; for example, "New York City" or "Germany".
 
@@ -40,6 +40,7 @@ When you or your colleagues create reports in Power BI Desktop, you can categori
 Read more about [categorizing geographical data](powerbi-desktop-mobile-geofiltering.md) in Power BI Desktop.
 
 ### See also  
+- [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
 - [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
 - [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
 - [Get started with Power BI](powerbi-service-get-started.md)  
