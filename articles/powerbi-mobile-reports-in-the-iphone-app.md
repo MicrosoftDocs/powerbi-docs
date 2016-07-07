@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="07/06/2016"
    ms.author="maggies"/>
 
 # Reports in the iPhone app (Power BI for iOS)

@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Groups in the Android app"
-   description="Groups in the Android app for Power BI"
+   description="Power BI groups are built on Office 365 groups. Read about viewing and interacting with group dashboards in the Android mobile app for Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
