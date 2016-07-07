@@ -13,7 +13,7 @@ There are several logs you can collect for the gateway. Always start with the lo
 
     %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
-**Enterprise gateway service logs**
+**On-premises data gateway service logs**
 
     C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
