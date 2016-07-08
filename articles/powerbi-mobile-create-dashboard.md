@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="complete"
-   qualityDate="03/11/2016"/>
+   qualityDate="07/08/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -44,6 +44,14 @@ Then these same dashboards will appear automatically in your Power BI mobile app
 Here's the same dashboard as seen on a mobile phone:
 
 ![](media/powerbi-mobile-create-dashboard/pbi_dash_mobile.png)
+
+## Create a phone view of a dashboard
+
+If you're the dashboard owner, in the Power BI service you can create a view of the dashboard specifically for phones in portrait mode. 
+
+![](media/powerbi-mobile-create-dashboard/power-bi-phone-dashboard-in-progress.png)
+
+Read more about [creating a phone view of a dashboard](powerbi-service-create-dashboard-phone-view.md).
 
 
 ### More about dashboards in the Power BI mobile apps

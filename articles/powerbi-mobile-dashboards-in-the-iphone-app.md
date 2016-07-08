@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2016"
+   ms.date="07/08/2016"
    ms.author="maggies"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
@@ -40,6 +40,8 @@ Then in the iPhone app for Microsoft Power BI for iOS, you can explore these sam
     Power BI dashboards look a little different on your iPhone. All the tiles appear the same size, and they're arranged one after another from top to bottom.
 
      Or just turn your phone sideways to [view them in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
+
+    >**Tip**: If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
 4.  Swipe up and down to see all the tiles in the dashboard.
 
@@ -69,5 +71,6 @@ You can also view dashboards in landscape mode, just by turning your phone. The 
 You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](powerbi-mobile-tiles-in-the-win10phone-app.md) to open the tile in focus mode and interact with your data.
 
 ### See also  
-[Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
-[Get started with Power BI](powerbi-service-get-started.md)  
+- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
+- [Get started with Power BI](powerbi-service-get-started.md) 
+- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md) 
