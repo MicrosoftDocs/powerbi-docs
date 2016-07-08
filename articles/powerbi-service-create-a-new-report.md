@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -23,21 +23,39 @@
 
 There are many different ways to create a new report. This topic shows you two of them.
 
--   From a dataset.
+-   From a dataset
 
 -   From an existing report
 
 ## Create a new report from a dataset
 
-This method creates a new report from scratch.
+This method creates a new report from scratch. To follow along, [download the Retail Analysis sample](powerbi-sample-downloads.md).
 
-1.  Select a dataset to open it.
+1.  Start in Power BI service and select a dataset to open it. Opening a dataset actually opens the report editor.  You'll see a blank canvas and the report editing tools.
 
-2.  Explore your data and [add visualizations](powerbi-service-visualizations-for-reports.md).
+   ![](media/powerbi-service-create-a-new-report/powerbi-select-datasetnew.png)
 
-3.  [Save your report](powerbi-service-save-a-report.md).
+2.  Explore your data and [add visuals](powerbi-service-visualizations-for-reports.md). For this report, let's add a Gauge visual that tracks this year's sales.
+
+   -  In the **Fields** pane, select **Sales** > **This Year Sales** > Value.
+
+      ![](media/powerbi-service-create-a-new-report/powerbi-report-step1.png)
+
+   -  Convert the visual to a Gauge by selecting the Gauge template ![](media/powerbi-service-create-a-new-report/powerbi-gauge-icon.png) from the **VIsualizations** pane.
+
+      ![](media/powerbi-service-create-a-new-report/powerbi-report-step2.png)
+
+   -  Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well.
+
+      ![](media/powerbi-service-create-a-new-report/powerbi-report-step3.png)
+
+3.  Optionally, continue adding visuals, and then [save your report](powerbi-service-save-a-report.md).
+
+   ![](media/powerbi-service-create-a-new-report/powerbi-save.png)
+
 
 ## Create a new report from an existing report
+Maybe you have a report that already connects to your dataset and has some visuals that you'd like to re-use or modify.  Why not simply copy that report as a basis for a new report?  To do that:
 
 1.  [Open a report](powerbi-service-open-a-report-in-reading-view.md).
 
@@ -53,7 +71,7 @@ This method creates a new report from scratch.
 
     ![](media/powerbi-service-create-a-new-report/saveSuccess1.png)
 
-4.  Back in your Power BI navigation pane, select the new report to open it.
+4.  Back in your Power BI navigation pane, select the new report to open it. Optionally, delete visuals you don't want to keep, modify other visuals, and add new ones.
 
     ![](media/powerbi-service-create-a-new-report/newReportNavPane.png)
 
