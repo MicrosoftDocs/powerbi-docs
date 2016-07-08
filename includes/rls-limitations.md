@@ -19,4 +19,4 @@ There is a known issue where you will receive an error message when trying to pu
 
 3. Anna will receive an error.
 
-**Workaround:** Re-publish the Power BI Desktop file from the Power BI service until this issue is resolved. You can do that by select **Get Data** > **Files**.
+**Workaround:** Re-publish the Power BI Desktop file from the Power BI service until this issue is resolved. You can do that by select **Get Data** > **Files**. 

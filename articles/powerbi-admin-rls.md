@@ -17,11 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-<<<<<<< HEAD
-ms.date="07/07/2016"
-=======
-ms.date="07/05/2016"
->>>>>>> 445feeb1afbb1c274b7f48387fffb9aab139a8d9
+ms.date="07/08/2016"
 ms.author="asaxton"/>
 # Row-level security (RLS) with Power BI (Preview)
 
