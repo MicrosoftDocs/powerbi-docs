@@ -71,7 +71,7 @@ When the data being tracked reaches one of the threshholds you've set, several t
 
 
 ## Manage alerts
-There are 2 ways to manage your alerts.  From the dashboard tile itself and from the Power BI Settings menu.
+There are three ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, and [on an individual tile on an iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md).
 
 ###   From the tile itself
 
@@ -99,19 +99,16 @@ There are 2 ways to manage your alerts.  From the dashboard tile itself and from
 3. From here you can turn alerts on and off, open the **Manage alerts** window to make changes, or delete the alert.
 
 
-
-
 ## Tips and troubleshooting
 
--  You will not be able to set alerts for dashboards that have been shared with you.
+-  You can only set alerts for dashboards that you own, not those that have been shared with you.
 
--  Alerts are currently not supported for Bing tiles, card tiles with datetime measures.
+-  Alerts are currently not supported for Bing tiles, or card tiles with date/time measures.
 
 -  Alerts only work with numeric data types.
 
 -  Alerts only work on data that is refreshed. They do not work on static data.
 
 ### See also
-[Set data alerts on your iphone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
-
-[Get started with Power BI](powerbi-service-get-started.md)
+- [Set data alerts on your iphone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
+- [Get started with Power BI](powerbi-service-get-started.md)
