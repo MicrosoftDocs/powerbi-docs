@@ -1,6 +1,6 @@
 <properties
-pageTitle="Troubleshoot the enterprise gateway"
-description="Troubleshooting the enterprise gateway"
+pageTitle="Troubleshooting the On-Premises Data Gateway"
+description="This article provides ways for you to troubleshoot issues you are having with the On-Premises Data Gateway. It provides potential workarounds to known issues, as well as tools to assist you."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -8,8 +8,8 @@ manager="mblythe"
 backup=""
 editor=""
 tags=""
-qualityFocus="identified"
-qualityDate="06/13/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -17,25 +17,17 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/15/2016"
+ms.date="07/05/2016"
 ms.author="asaxton"/>
-# Troubleshooting the Power BI Gateway - Enterprise
+# Troubleshooting the On-Premises Data Gateway
 
-> **Note:** The enterprise gateway has been replaced with the [On-Premises Data Gateway](powerbi-gateway-onprem-tshoot.md).
+The following goes through some common issues you may encounter when using the On-premises Data Gateway. 
 
-The following goes through some common issues you may encounter when using the Power BI Gateway - Enterprise. 
+<!-- Shared Community & support links Include -->
+[AZURE.INCLUDE [gateway-onprem-tshoot-support-links-include](../includes/gateway-onprem-tshoot-support-links-include.md)]
 
-> **Note**: If you encounter an issue that is not listed below, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
-
-## Update to the latest version 
- 
-A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
-
-## Installation
-
-### Error: Failed to add user to group.  (-2147463168   PBIEgwService   Performance Log Users   )
-
-You may receive this error if you are trying to install the enterprise gateway on a domain controller. Deploying on a domain controller is not supported. You will need to deploy the enterprise gateway on a machine that is not a domain controller.
+<!-- Shared Troubleshooting Install Include -->
+[AZURE.INCLUDE [gateway-onprem-tshoot-install-include](../includes/gateway-onprem-tshoot-install-include.md)]
 
 ## Configuration
 
@@ -93,7 +85,7 @@ To correct this, do the following.
 
 2. Delete the following folder.
 
-        c:\Program Files\Power BI Enterprise Gateway
+        c:\Program Files\on-premises data gateway
 
 3. Reinstall the gateway.
 
@@ -131,7 +123,7 @@ We were unable to connect to the specified data source. Be sure to validate the 
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**. 
 
-If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-enterprise-manage-ssas.md#add-a-data-source)
+If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-onprem-manage-ssas.md#add-a-data-source)
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
@@ -165,15 +157,7 @@ You will need to work with your domain administrators to verify the trust relati
 
 **Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
 
-Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the adminsitrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
-
-## Dataset
-
-### Error: Couldn't refresh because your Personal Gateway is offline. Make sure your Personal Gateway is up and running.
-
-You may have configured an enterprise gateway, and see this error for a given dataset when you try to refresh. The enterprise gateway currently does not support imported data. It supports SQL Server and SAP HANA in DirectQuery mode, or live connections with Analysis Services, either Tabular or Multidimensional.
-
-If you have imported data into your file, you will need the Personal Gateway to refresh the dataset.
+Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
 
 ## Reports
 
@@ -181,9 +165,9 @@ If you have imported data into your file, you will need the Personal Gateway to 
 
 This is usually caused by one of the following. 
 
-1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the enterprise gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the enterprise gateway, needs to use an IP Address as well.
+1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the on-premises data gateway, needs to use an IP Address as well.
 
-2. There is not a data source available on any enterprise gateway within your organization. You can configure the data source on a new, or existing, enterprise gateway.
+2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing, on-premises data gateway.
 
 ### Error: Data source access error. Please contact the gateway administrator.
 
@@ -212,28 +196,8 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
 
 If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](powerbi-gateway-enterprise-manage-ssas.md#map-user-names) feature to replace it with a valid value. Or you can work with either your tenant admin, or local Active Directory admin, to get your UPN changed.
 
-## Firewall or Proxy
-
-For information on providing proxy information for your gateway, see [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md).
-
-You can test to see if your firewall, or proxy, may be blocking conections by running the following command from a PowerShell prompt. This will test connectivity to the Azure Service Bus. This only tests network connectivity and doesn't have anything to do with the Power BI service or the gateway. It helps to determine if your machine can actually get out to the internet.
-
-    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
-
-The results should look similar to the following. The difference will be with TcpTestSucceeded. If **TcpTestSucceeded** is not *true*, then you may be blocked by a firewall.
-
-    ComputerName           : watchdog.servicebus.windows.net
-    RemoteAddress          : 70.37.104.240
-    RemotePort             : 5672
-    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
-    SourceAddress          : 10.120.60.105
-    PingSucceeded          : False
-    PingReplyDetails (RTT) : 0 ms
-    TcpTestSucceeded       : True
-
-If you want to be exhaustive, substitute the **ComputerName** and **Port** values with those listed for [ports](powerbi-gateway-enterprise.md#ports)
-
-The firewall may also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that is the case, you will want to whitelist (unblock) all of the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/download/details.aspx?id=41653).
+<!-- Shared Troubleshooting Firewall/Proxy Include -->
+[AZURE.INCLUDE [gateway-onprem-tshoot-firewall-include](../includes/gateway-onprem-tshoot-firewall-include.md)]
 
 You can find the data center region you are in by doing the following:
 
@@ -243,65 +207,38 @@ You can find the data center region you are in by doing the following:
 
 3. Your data region will be listed in **Your data is stored in**.
 
-    ![](media/powerbi-gateway-enterprise-tshoot/power-bi-data-region.png)
+    ![](media/powerbi-gateway-onprem-tshoot/power-bi-data-region.png)
 
 If you are still not getting anywhere, you could try getting a network trace using a tool like [fiddler](#fiddler) or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact [support](https://support.microsoft.com) for assistance.
 
-## Tools for troubleshooting
-
-<a name="logs" />
-### Collecting logs from the gateway configurator
-
-There are several logs you can collect for the enterprise gateway. Always start with the logs!
-
-**Installer logs**
-
-    %localappdata%\Temp\Power_BI_Gateway_–_Enterprise*.log
-
-**Configuration logs**
-
-    %localappdata%\Microsoft\Power BI Enterprise Gateway\GatewayConfigurator*.log
-
-**Enterprise gateway service logs**
-
-    C:\Users\PBIEgwService\AppData\Local\Microsoft\Power BI Enterprise Gateway\EnterpriseGateway*.log
+<!-- Shared Troubleshooting tools Include -->
+[AZURE.INCLUDE [gateway-onprem-tshoot-tools-include](../includes/gateway-onprem-tshoot-tools-include.md)]
 
 ### Refresh History  
 When using the enterprise gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
 
 1.  In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
 
-    ![](media/powerbi-gateway-enterprise-tshoot/scheduled-refresh.png)
+    ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh.png)
 
 2.  In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.
 
-    ![](media/powerbi-gateway-enterprise-tshoot/scheduled-refresh-2.png)
+    ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh-2.png)
 
-    ![](media/powerbi-gateway-enterprise-tshoot/refresh-history.png)
-
-### Event Logs  
-The **Data Management Gateway** and **PowerBIGateway** logs are present under **Application and Services Logs**.
-
-![](media/powerbi-gateway-enterprise-tshoot/event-logs.png)
-
-<a name="fiddler" />
-### Fiddler Trace  
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
-
-![](media/powerbi-gateway-enterprise-tshoot/fiddler.png)
+    ![](media/powerbi-gateway-onprem-tshoot/refresh-history.png)
 
 ## See also
 
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
 
-[Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)
 
-[Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
+[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)
 
-[Manage your enterprise data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
+[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
 
-[Manage your enterprise data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
+[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
 
-[Manage your enterprise data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
+[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
 
-[Manage your enterprise data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
+[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
