@@ -17,9 +17,15 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
+<<<<<<< HEAD
 ms.date="07/07/2016"
+=======
+ms.date="07/05/2016"
+>>>>>>> 445feeb1afbb1c274b7f48387fffb9aab139a8d9
 ms.author="asaxton"/>
 # Row-level security (RLS) with Power BI (Preview)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/67fK0GoVQ80?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data at the row level. You can define filters within roles.
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/05/2016"
+   ms.date="07/05/2016"
    ms.author="mihart"/>
 # Power BI Videos
 
@@ -34,6 +34,16 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 -   Using OneDrive is a great way to connect to your data and make sure it stays up to date at all times
 
 	<iframe width="500" height="281" src="https://www.youtube.com/embed/6cOjiV_klrs" frameborder="0" allowfullscreen></iframe>
+
+## Watch some of our new uploads
+
+-  [Table relationships and DAX](https://www.youtube.com/watch?v=yec1f5A08mc)
+
+-  [Hierarchies](https://www.youtube.com/watch?v=SYPuJu2N45w)
+
+-  [See the data behind the visual](https://www.youtube.com/watch?v=dtdLul6otYE)
+
+
 
 ## See also
 

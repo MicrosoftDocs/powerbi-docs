@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="07/07/2016"
    ms.author="mihart"/>
 # Create a new Power BI report
 
@@ -31,9 +31,7 @@ There are many different ways to create a new report. This topic shows you two o
 
 This method creates a new report from scratch.
 
-1.  Select a dataset to open it or right-click and select **Explore**.
-
-    ![](media/powerbi-service-create-a-new-report/exploreDataset.png) 
+1.  Select a dataset to open it.
 
 2.  Explore your data and [add visualizations](powerbi-service-visualizations-for-reports.md).
 
@@ -45,7 +43,7 @@ This method creates a new report from scratch.
 
 2.  From the **File** menu, select **Save As**.
 
-    ![](media/powerbi-service-create-a-new-report/SaveAs1.png)
+    ![](media/powerbi-service-create-a-new-report/powerbi-save-as.png)
 
 3.  Type a name for the new report and select **Save**.
 
