@@ -17,24 +17,25 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/08/2016"
+   ms.date="06/20/2016"
    ms.author="maggies"/>
 
 # Adjust settings for the Power BI mobile app for Windows 10
 
 You can view and adjust the settings for the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
 
-1. In the Power BI mobile app for Windows 10, tap the navigation icon ![](media/powerbi-mobile-adjust-settings-for-the-win10phone-app/PBI_Win10Ph_NavIcon30.png), then tap **Settings**.
+1. In the Power BI mobile app for Windows 10, tap the navigation icon ![](media/powerbi-mobile-adjust-settings-for-the-win10phone-app/power-bi-windows-10-navigation-pane-icon.png), then tap **Settings**.
 
-    ![](media/powerbi-mobile-adjust-settings-for-the-win10phone-app/pbi_win10ph_settings0316.png)
+    ![](media/powerbi-mobile-adjust-settings-for-the-win10phone-app/power-bi-windows-10-navigation-pane.png)
 
-2. Here you can see and adjust:
+2. Here you can:
 
- -   The version of the app, terms of use, and privacy information. 
- -   Configuration options such as your consent to send Microsoft generic telemetry data (not your personal information).
- -   How to [get help for the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
- -   How to [contact the Power BI mobile apps community](http://community.powerbi.com/t5/Mobile-Apps/bd-p/power-bi-mobile).
- -   Where to [send feedback about the Power BI mobile apps](https://ideas.powerbi.com/forums/265200-power-bi/category/105939-mobile).
+ -   Turn on Microsoft Surface Hub presentation mode.
+ -   See the version of the app, terms of use, and privacy information. 
+ -   Configure options such as your consent to send Microsoft generic telemetry data (not your personal information).
+ -   [Get help for the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
+ -   [Contact the Power BI mobile apps community](http://community.powerbi.com/t5/Mobile-Apps/bd-p/power-bi-mobile).
+ -   [Send feedback about the Power BI mobile apps](https://ideas.powerbi.com/forums/265200-power-bi/category/105939-mobile).
 
 ### See also
 

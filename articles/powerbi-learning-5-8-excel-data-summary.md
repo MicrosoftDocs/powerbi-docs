@@ -19,7 +19,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Excel data in Power BI summary

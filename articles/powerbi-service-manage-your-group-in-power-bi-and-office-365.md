@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/03/2016"
-   ms.author="maggies"/>
+   ms.author="ajayan"/>
 # Manage your group in Power BI and Office 365
 
 As creator or admin of a group in Power BI or in Office 365, you manage some aspects of your group in Power BI. Other aspects you manage in Office 365. 
@@ -65,6 +65,8 @@ As creator or admin of a group in Power BI or in Office 365, you manage some asp
 2.  Select the ellipsis (**…**) next to your group name \> **Members**.
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/PBI_GrpeEllipsMenu.png)
+
+    You may need to sign into your corporate account.
 
     This opens the Outlook for Office 365 view of your group.
 

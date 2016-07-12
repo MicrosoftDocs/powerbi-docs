@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/29/2016"
+   ms.date="06/02/2016"
    ms.author="davidi"/>
 
 # Publish from Power BI to the web

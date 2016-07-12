@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/09/2016"
+ms.date="06/13/2016"
 ms.author="asaxton"/>
 # Sign up for Power BI (free) with a custom Azure Active Directory tenant
 

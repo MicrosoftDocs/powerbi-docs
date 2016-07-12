@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 # Download a custom visual from the gallery  
@@ -33,9 +33,11 @@ It's easy to download, and use a custom visual in your reports.
 2.  On the **Welcome to Power BI custom visuals** page, browse through the gallery and select a visual tile to see more information about that visual and, optionally, to download the visual.
 
 3.  On the tile page, read through the description and choose **Download Visual**.
-    ![](media/powerbi-custom-visuals-download-from-the-gallery/PBI_downloadCustomViz.jpg)
+    ![](media/powerbi-custom-visuals-download-from-the-gallery/PowerBI-DownloadCustomVizNew.png)
 
 4.  On the **This visual is published and is licensed to you by a Power BI community member﻿ ...** page, read the visual agreement. For tips on evaluating custom visuals, see [Review custom visuals for security and privacy](powerbi-custom-visuals-review-for-security-and-privacy.md). When you select **I Agree**, the custom visual is downloaded to your computer.
+
+    >**NOTE**: To try out the custom visual first, select **Download Sample** and save the .pbix file. From Power BI Desktop, open the sample custom visual file.
 
 5.  Save the .pbiviz file.
 

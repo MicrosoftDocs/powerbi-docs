@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="LF-Ti8FTkpQ"
+   featuredVideoId="c31gZkyvC54"
    featuredVideoThumb=""
    courseDuration="5m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Get More Space on Your Dashboard

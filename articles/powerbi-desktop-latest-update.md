@@ -83,4 +83,6 @@ The following video describes and shows each of these updates. You can also see 
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
+## Previous months' updates
+
 Looking for previous months' updates? You can find them in the [Power BI Desktop Monthly Updates archive](powerbi-desktop-latest-update-archive.md) article.

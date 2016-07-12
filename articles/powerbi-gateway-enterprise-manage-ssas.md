@@ -9,7 +9,7 @@ backup=""
 editor=""
 tags=""
 qualityFocus="monitoring"
-qualityDate="05/16/2016"/>
+qualityDate="06/09/2016"/>
 
 <tags
 ms.service="powerbi"
@@ -32,6 +32,19 @@ Download and install the latest version of the [Power BI Gateway - Enterprise](h
 Or, from the Power BI service, select **Downloads** > **Power BI Gateways**.
 
 ![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
+
+## Limitations of Analysis Services live connections
+
+You can use a live connection against tabular or multidimensional instances.
+
+|**Server version**|**Required SKU**|
+|---|---|
+|2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
+|2014|Business Intelligence and Enterprise SKU|
+|2016|Standard SKU or higher|
+
+- Cell level Formatting and translation features are not supported.
+- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
 
 ## Add a gateway
 

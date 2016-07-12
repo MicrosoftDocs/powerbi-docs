@@ -1,6 +1,6 @@
 <properties
    pageTitle="Share a dashboard with colleagues and others"
-   description="Share, unshare, reshare a dashboard from Power BI"
+   description="How to share Power BI dashboards with colleagues in and out of your organization, and what you need to know about sharing."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="identified"
-   qualityDate="04/04/2016"/>
+   qualityDate="06/22/2016"/>
 
 <tags
    ms.service="powerbi"
@@ -17,12 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/14/2016"
+   ms.date="06/22/2016"
    ms.author="maggies"/>
 
 # Share a dashboard with colleagues and others
 
 You can share your dashboards with colleagues in and out of your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
+
+What you can share and who you can share it with depends on your and their Power Bi licenses. See [Licensing requirements for sharing](powerbi-service-share-unshare-dashboard.md#licensing-requirements-for-sharing) below for details.
 
 Dashboards (and their associated reports) that are shared with you are read-only.  You can't save-as to personalize them. On the other hand, you can personalize dashboards and reports in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md).  See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
 
@@ -91,11 +93,15 @@ Only your direct recipients can see the shared dashboard. In the example above, 
 
 People outside your organization can't see any data if role- or row-level security is implemented on Analysis Services tabular models on-premises.
 
-### Licensing requirements for sharing outside your organization
+## Licensing requirements for sharing
 
-Sharing content outside your organization has the same licensing requirements as sharing content within your organization.
+Sharing content inside and outside your organization both have the same licensing requirements.
 
-If you created your dashboard  with only free Power BI features, your recipients will just need a free Power BI license to view the content. If you used Power BI Pro features like groups or on-premises connectivity, your recipients will need a Power BI Pro license to view the content.
+If you create your dashboard  with only free Power BI features, your recipients just need a free Power BI license to view the content. If you use Power BI Pro features like groups or on-premises connectivity, your recipients need a Power BI Pro license to view the content.
+
+See [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md) for a more complete list.
+
+This Power BI pricing page, [Use Power BI for free or buy Power BI Pro](https://powerbi.microsoft.com/pricing), is also a useful comparison of the two options.
 
 ## Resharing
 
@@ -136,12 +142,8 @@ Only the dashboard owner can turn resharing on and off.
 
 ### See also
 
-[How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md)
-
-[Share a dashboard that links to an Excel file](powerbi-service-share-dashboard-that-links-to-excel.md)
-
-[Dashboards in Power BI](powerbi-service-dashboards.md)
-
-[Get Started with Power BI](powerbi-service-get-started.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+- [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md)
+- [Share a dashboard that links to an Excel file](powerbi-service-share-dashboard-that-links-to-excel.md)
+- [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md)
+- [Use Power BI for free or buy Power BI Pro](https://powerbi.microsoft.com/pricing)
+- [Get Started with Power BI](powerbi-service-get-started.md)

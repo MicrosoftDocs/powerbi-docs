@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/14/2016"
+ms.date="06/13/2016"
 ms.author="asaxton"/>
 # Power BI (free) in your organization
 

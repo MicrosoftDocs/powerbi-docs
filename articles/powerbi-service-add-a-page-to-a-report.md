@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 # Add a page to a Power BI report  

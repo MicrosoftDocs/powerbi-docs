@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="E2v3CTSy3BY"
+   featuredVideoId="XhqVbHqd5jQ"
    featuredVideoThumb=""
    courseDuration="6m"/>
 
@@ -20,12 +20,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Edit Tile Details
-
-*Learn how change a tile's details, such as title and link behavior*
 
 Once you've built a dashboard, you can edit its **Tiles* in the Power BI service to make a few formatting changes.
 

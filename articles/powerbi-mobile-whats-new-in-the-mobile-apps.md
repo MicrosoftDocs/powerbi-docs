@@ -17,16 +17,45 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2016"
+   ms.date="06/20/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
 
+## June 2016
+
+### SQL Server 2016 Reporting Services mobile reports
+Now you can drill through from a Reporting Services KPI or a mobile report to another mobile report or to any custom URL.
+
+### Notification center
+The notification center in your Power BI mobile app shows new data or dashboards that are shared with you, or changes to groups you belong to.
+
 ## May 2016
+
+### iOS devices and Android phones
+
+-  **QR codes** are now available **for reports**, too. Scan the code with your Power BI app to go directly to a related report, with no navigation or search needed.
+-  **Improved data management** for SQL Server 2016 Reporting Services: Reduced load times and data consumption on your device.
+-  **SQL Server 2016 themed mobile reports**: See themes for mobile reports on your device.
+
+## Late April 2016
+
+### All apps
+
+-   Select more than one option in a report slicer.
+
+### iOS apps
+
+-  **Geofiltering**: Filter reports by your current location.
 
 ### Power BI app for Windows 10 devices
 
-**SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-win10-kpis-mobile-reports.md)** now on Windows 10 devices.
+-   **SQL Server 2016 [Reporting Services mobile reports](powerbi-mobile-win10-kpis-mobile-reports.md)** now on Windows 10 devices.
+-   See **data tooltips** when you hover your mouse over a dashboard tile.
+
+### Android mobile app
+
+-   **NTLM authentication** support for mobile reports in SQL Server 2016 Reporting Services.
 
 ## April 2016
 

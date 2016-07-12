@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="06/07/2016"
    ms.author="mihart"/>
 
 # Optimize your data for Power BI Quick Insights
@@ -27,7 +27,9 @@ Want to improve Quick Insights results?  If you are a datasest owner, try these:
 
 - Use a mix of data types such as names, times, dates, and numbers.
 
-- Avoid columns with duplicate information.  This takes valuable time away from searching for meaningful patterns.  For example, one column with state names spelled out and another column with state name abbreviations.
+- Avoid (or hide) columns with duplicate information.  This takes valuable time away from searching for meaningful patterns.  For example, one column with state names spelled out and another column with state name abbreviations.
+
+-   Do you get an error message stating that your data isn't statistically significant?  This can happen with models that are very simple, or that don't have much data, or that don't have date or numeric columns. To generate Insights, your dataset needs to have at least one dimension and one measure.
 
 
 ### See also

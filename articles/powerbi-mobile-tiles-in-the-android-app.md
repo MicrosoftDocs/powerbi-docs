@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/23/2016"
+   ms.date="06/20/2016"
    ms.author="maggies"/>
 
 # Tiles in the Android app for Power BI  
@@ -28,30 +28,39 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
     Need to [download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
 
-2. Tap the vertical ellipsis on the tile. From here, you can: 
+2. Tap the vertical ellipsis on the tile.  
 
-    ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tileellips_link.png)
+    ![](media/powerbi-mobile-tiles-in-the-android-app/power-bi-android-tile-ellipsis.png)
 
-    [Annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
+    From here, you can:
 
-    [Open the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) inside the Power BI app, if it has a link. Links can go to Power BI dashboards, or to an external URL. If it's an external site, Power BI asks you to allow it.
-    
-    ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_OpenLinkMessage.png)
+3.   [Annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 
-    After you open the link in the Power BI app, you can copy the link or open it in a browser window instead.
-
-3.    Tap **Expand tile**. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
+4.    Tap **Expand tile**. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
     Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
+
     ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tilefocus.png)
 
        *In this line chart, the values of the green and black lines are listed under the month, April, where the vertical bar intersects them.*
 
-     Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md) with others.
+     Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md) with others.
 
-     [Interact with a live report page tile](powerbi-mobile-report-page-tiles-in-the-android-app.md) in the Android app.
+     If the tile is a [live report page tile](powerbi-mobile-report-page-tiles-in-the-android-app.md), when you tap **Expand tile** it opens the report page in landscape mode in the Android app.
 
--   Tap the **X** in the upper-left corner to close the tile and return to the dashboard.
+5. Tap **Open report** to [view the report](powerbi-mobile-reports-in-the-android-app.md) in the mobile app.
+
+6. Sometimes the report creator has added a link to a tile. If so, when you tap the ellipsis you see **Open link**:
+
+    ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tileellips_link.png)
+
+    Links can go to other Power BI dashboards or to an external URL. You can [tap the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
+    
+    ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_OpenLinkMessage.png)
+
+    After you open the link in the Power BI app, you can copy the link and open it in a browser window instead.
+
+5.   Tap the **X** in the upper-left corner to close the tile and return to the dashboard.
 
 ### See also  
 [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  

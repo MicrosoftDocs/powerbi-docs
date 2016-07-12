@@ -129,7 +129,18 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-learning-6-4a-integrate-onedrive-for-business",
             "powerbi-learning-6-5-guided-learning-completion"
           ]
-        }
+        },
+        {
+          "sectionTitle": "Introduction to DAX",
+          "articles": [
+            "powerbi-learning-7-1-intro-to-DAX",
+            "powerbi-learning-7-2-DAX-calculation-types",
+            "powerbi-learning-7-3-DAX-functions",
+            "powerbi-learning-7-4-DAX-expressions",            
+            "powerbi-learning-7-5-table-relationships-and-DAX",
+            "powerbi-learning-7-6-DAX-tables-and-filtering"
+          ]
+        }    
       ]
     }
   ]

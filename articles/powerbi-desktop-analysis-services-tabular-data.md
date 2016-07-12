@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/07/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 # Analysis Services Tabular data in Power BI Desktop
 
@@ -94,11 +94,6 @@ If you choose select items and get data, you’re importing Tabular model data r
 
 **Answer:** A perspective is a particular view of a Tabular model. It might include only particular tables, columns, or measures depending on a unique data analysis need. A Tabular model always contains at least one perspective, which could include everything in the model. If you’re unsure which you should select, check with your administrator.
 
- 
-
-**Question:** Can I connect live to an Analysis Services Multidimensional model?
-
-**Answer:** No, not at this time.
 
 ## To change the server name after initial connection
 

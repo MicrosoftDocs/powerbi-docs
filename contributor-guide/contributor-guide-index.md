@@ -27,6 +27,8 @@
 
 - [Retire or rename an article](./retire-or-rename-an-article.md)
 
+- [Search page guidance, aka SEO](./powerbi-search-page-guidance.md)
+
 
 ##Authoring articles: markdown
 
