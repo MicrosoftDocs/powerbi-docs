@@ -86,6 +86,7 @@ There are a few things to consider in this release of **Power BI publisher for E
 
 -   **Shared data** - Data that has been shared with you, but isn't directly visible to you in Power BI, is not available in **Connect to Data**.
 -   **SSAS on-premises** - If the dataset you select has elements that originate from an on-premises SQL Server Analysis Services (SSAS) and the dataset in Power BI uses DirectQuery to access the data, **Power BI publisher for Excel** connects to that data through the on-premises network connection, and does *not* go through Power BI to connect to that data. As such, any user trying to connect to such datasets must be connected to the on-premises network, and is authenticated for access to that data using the authentication method employed by the Analysis Services instance where the data is stored.
+-   **Required drivers** - **Power BI publisher for Excel** installs all the necessary drivers for this feature to work, and does so automatically. Among those automatically installed drivers is the Excel OLE DB driver for Analysis Services; if that driver is removed by the user (or for any other reason), the connection to Power BI data will not work.
 
 
 Once you've created compelling charts or other visuals such as a range of data, you can easily pin those to a dashboard in Power BI. The following sections describe how to pin elements from Excel to Power BI.
