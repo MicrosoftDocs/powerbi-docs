@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/01/2016"
+   ms.date="07/12/2016"
    ms.author="davidi"/>
 
 # Shape Maps in Power BI Desktop (Preview)

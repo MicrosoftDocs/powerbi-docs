@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="07/12/2016"
    ms.author="davidi"/>
 
 # Display Visuals and Tiles Full-Screen
