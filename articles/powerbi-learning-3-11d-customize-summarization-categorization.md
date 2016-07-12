@@ -17,15 +17,13 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # Customize Visuals with Summarization and Category Options
-
-*Learn how to customize how Power BI summarizes and presents your numeric and location data*
 
 Power BI has properties that you can assign for fields in your model, which can help report and visualize and present data in ways that provide more clarity. For example, sometimes you want to average a list of numbers, but Power BI automatically sums the list. With Power BI, you can adjust how those lists of numbers are summarized.
 

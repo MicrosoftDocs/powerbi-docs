@@ -17,10 +17,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="05/20/2016"
    ms.author="davidi"/>
 
 # How to Manage Your Data Relationships

@@ -16,10 +16,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # Building Blocks of Power BI
@@ -43,7 +43,8 @@ A **visualization** (sometimes also referred to as a **visual**) is a visual rep
 
 Visualizations can be simple – like a single number that represents something significant – or they can be visually complex – like a gradient-colored map that shows voter sentiment toward a certain social issue or concern. The goal of a visual is to present data in a way that provides context and insights, either of which would likely be difficult to discern from a raw table of numbers or text.
 
-##Datasets
+## Datasets
+
 A **dataset** is a collection of data that Power BI uses to create its visualizations.
 
 You can have a simple dataset based on a single table from Excel workbook, similar to what’s shown in the following image.
@@ -61,7 +62,8 @@ An important and enabling part of Power BI is the multitude of data **connectors
 Once you have a dataset, you can begin creating visualizations that display different portions of that dataset in different ways, and with what you see, gain insights. That’s where reports come in.
 
 
-##Reports
+## Reports
+
 In Power BI, a **report** is a collection of visualizations that appear together on one or more pages. Just like any other report you might create for a sales presentation, or a report you would write for a school assignment, in Power BI a **report** is a collection of items that are related to one another. The following image shows a **report** in Power BI Desktop – in this case, it’s the fifth page in a six-page report. You can also create reports in the Power BI service.
 
 ![](media/powerbi-learning-0-0b-building-blocks-power-bi/c0a0b_3.png)
@@ -70,13 +72,15 @@ Reports let you create many visualizations, on multiple different pages if neces
 
 You might have a report about quarterly sales, a report about product growth in a particular segment, or you might create a report about migration patterns of polar bears. Whatever your subject may be, reports let you gather and organize your visualizations onto one (or more) pages.
 
-##Dashboards
+## Dashboards
+
 When you’re ready to share a single page from a report, or share a collection of visualizations, you create a **dashboard**. Much like the dashboard in a car, a Power BI **dashboard** is a collection of visuals from a single page that you can share with others. Often, it’s a selected group of visuals that provide quick insight into the data or story you’re trying to present.
 
 A dashboard has to fit on a single page, often called a canvas (the canvas is the blank backdrop in Power BI Desktop, or the service, where you place visualizations). Think of it like the canvas that an artist or painter uses – a workspace where you create, combine, and rework interesting and compelling visuals.
 You can share dashboards with other users or groups, who can then interact with your dashboard when they’re in Power BI service, or on their mobile device.
 
-##Tiles
+## Tiles
+
 In Power BI, a **tile** is a single visualization found in a report or on a dashboard. It’s the rectangular box that contains each individual visual. In the following image, you see one tile (highlighted by a bright box) which is also surrounded by other tiles.
 
 ![](media/powerbi-learning-0-0b-building-blocks-power-bi/c0a0b_4.png)
@@ -85,8 +89,10 @@ When you’re *creating* a report or a dashboard in Power BI, you can move or ar
 
 When you’re *viewing*, or *consuming* a dashboard or report – which means you’re not the creator or owner, but it’s been shared with you – you can interact with it, but not change the size of the tiles or change how they’re arranged.
 
-##All together now
+## All together now
+
 Those are the basics of Power BI, and its building blocks. Let’s take a moment to review.
+
 Power BI is a collection of services, apps, and connectors that enables you to connect to your data – wherever it happens to reside – filter it if necessary, then bring it into Power BI where you can create compelling visualizations you can share with others.  
 
 Now that you understand the handful of basic building blocks of Power BI, it becomes clear that you can create datasets that make sense *to you*, and create visually compelling reports that tell your story. Stories told with Power BI don’t have to be complex, or complicated, to be compelling.

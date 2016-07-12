@@ -14,10 +14,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/07/2016"
+   ms.date="07/01/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -58,7 +58,7 @@ Yes, non-profit pricing is available when purchasing directly from Microsoft. Yo
 
 ## Is Power BI available on-premises?
 
-No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md), you can connect live to your on-premises SQL Server Analysis Services server. And, with the [Power BI Gateway - Personal](powerbi-personal-gateway.md), you can refresh data from other on-premises data sources.
+No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also scheduled refresh with a centralized enterprise gateway. If an enterprise gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](powerbi-personal-gateway.md).
 
 You can also view on-premises SQL Server mobile reports with the Power BI iOS apps:
 
@@ -103,6 +103,10 @@ You can download the Power BI mobile apps from their respective stores:
 -   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
 -   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
+## Power BI Desktop’s Software License Terms say "You may install and use one copy of the software on your premises." Does this mean I am limited to one copy of Power BI Desktop for the entire company?
+
+Power BI Desktop’s use rights do not limit you to one copy of Power BI Desktop for the entire company. Each individual user at the company may install and use one copy on their premises.
+
 ## Where do I get started with Power BI?
 
 The following resources are available to help get your started:
@@ -131,6 +135,10 @@ You can purchase Power BI Pro licenses directly or chat with a representative at
 
 You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help you with your Power BI implementation.
 
+## Does Power BI meet national, regional, and industry-specific compliance requirements?
+
+Learn more about Power BI compliance, at the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
+
 ## Where can I learn more about security?
 
 Learn more about Power BI security, privacy and compliance in this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
@@ -138,4 +146,4 @@ Learn more about Power BI security, privacy and compliance in this [Power BI Sec
 
 ## What has happened to the Power BI for Office 365 experience?
 
-The Power BI for Office 365 experience has been deprecated. [Learn more about migrating to the new Power BI experience](powerbi-admin-migrating-to-the-new-power-bi-experience.md).
+The Power BI for Office 365 experience has been deprecated.

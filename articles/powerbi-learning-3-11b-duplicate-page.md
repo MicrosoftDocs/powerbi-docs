@@ -17,15 +17,13 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # Duplicate a Report Page
-
-*See how to duplicate a report page and save time on similar layouts*
 
 Individual pages of a report can be quite complex, with multiple visualizations that interact in specific ways and have precise formatting. Occasionally when building a report, you may want to use the same visuals and layouts for two different page topics. For example, if you've just put together a report page on gross revenue, you may want an almost identical page on net revenue.
 

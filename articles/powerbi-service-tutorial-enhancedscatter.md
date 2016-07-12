@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe" 
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 
@@ -29,7 +29,7 @@ The Enhanced Scatter chart is just one of the Microsoft-created custom visuals a
 
 For more information, watch this video about [Enhanced Scatter](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x).
 
-The steps below show just one way to use the Enhanced Scatter -- to create a visual that maps page clicks by number and location on a web page. Use your own dataset and discover even more ways to use this new custom visual. 
+The steps below show just one way to use the Enhanced Scatter -- to create a visual that maps page clicks by number and location on a web page. Use your own dataset and discover even more ways to use this new custom visual.
 
 >**NOTE**: Unfortunately, the dataset used in this tutorial is not available for download.
 
@@ -74,7 +74,7 @@ The Enhanced Scatter packs even more information into a single visualization. In
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape_new.png)
 
-    Ensure that your colleagues know what each shape means.  You could do this by adding a text box to the report.  Or, use graphics that are generally universally understood. 
+    Ensure that your colleagues know what each shape means.  You could do this by adding a text box to the report.  Or, use graphics that are generally universally understood.
 
 2. Remove **ShapeMeasure** from the **Shape** area and drag **LinkImageMeasure** to **Image**.
 

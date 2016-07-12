@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2016"
+   ms.date="06/27/2016"
    ms.author="davidi"/>
 
 # Create Power BI visuals using R  
 
-With Power BI Desktop, you can now use R to visualize your data. This feature is was previously available as a preview, and now is generally available as part of Power BI Desktop.
+With Power BI Desktop, you can use R to visualize your data. This feature is was previously available as a preview, and now is generally available as part of Power BI Desktop.
 
 ### Installing R
 

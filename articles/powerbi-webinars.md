@@ -3,7 +3,7 @@
    description="Power BI webinars."
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="maikelson"
    manager="mblythe"
    backup=""
    editor=""
@@ -14,11 +14,11 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/02/2016"
-   ms.author="mihart"/>
+   ms.date="06/23/2016"
+   ms.author="maikelson"/>
 
 # Power BI webinars
 
@@ -26,7 +26,11 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[DAX best practices from the field by Paul Turley - 05/31/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-31-DAX-best-practices-Registration.html?Is=Website)
+[What's New and Exciting in Power BI - 07/12/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
+
+[Using Power BI to Track Development by Simon Sabin - 07/19/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-19-PowerBI-Track-Development-Registration.html?Is=Website)
+
+[Power BI Embedded Deep Dive - 08/09/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -34,13 +38,16 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
-[Power BI Sales Management Solution Webinar (Dynamics CRM, Salesforce) - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-25-PowerBI-Sales-Management-Registration.html?Is=Website)
+[Insights to Action: PowerApps & Microsoft Flow - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-30-Leveraging-PowerApps-MicrosoftFlow-Registration.html?Is=Website)
 
-[Power BI Q&A - Best Practices - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-26-PowerBI-Q-and-A-Registration.html?Is=Website)
+[DAX in Power BI: why you need to learn it by Marco Russo - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-28-DAX-PowerBI-Registration.html?Is=Website)
 
-[Integrating Power BI with your Application - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Integrating-PowerBI-with-your-Application-Registration.html?Is=Website)
+[Introduction to Power BI and M by Chris Webb - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-21-Amazing-Things-with-Power-BI-Registration.html?Is=Website)
 
-[Data Preparation is the Keystone by Reza Rad - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Data-Preparation-Registration.html?Is=Website)
+[A Walkthrough of Power BI Security & Administration Considerations - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
+
+[Best-in-Class On-Premise Business Intelligence for Power BI from Pyramid Analytics - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-16-PowerBI-Pyramid-Analytics-Registration.html?Is=Website)
+
 
 ###  Introductory webinars
 
@@ -49,6 +56,10 @@ Watch our latest webinars on-demand.
 [What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
 
 ### Intermediate webinars
+
+[A Walkthrough of Power BI Security & Administration Considerations - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
+
+[Tell Data Stories with Power BI Publish to Web - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-PowerBI-Publish-to-Web-Registration.html?Is=Website)
 
 [Power BI Q&A - Best Practices - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-26-PowerBI-Q-and-A-Registration.html?Is=Website)
 
@@ -72,6 +83,18 @@ Watch our latest webinars on-demand.
 
 ### Community webinars
 
+[Insights to Action: PowerApps & Microsoft Flow - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-30-Leveraging-PowerApps-MicrosoftFlow-Registration.html?Is=Website)
+
+[DAX in Power BI: why you need to learn it by Marco Russo - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-28-DAX-PowerBI-Registration.html?Is=Website)
+
+[Introduction to Power BI and M by Chris Webb - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-21-Amazing-Things-with-Power-BI-Registration.html?Is=Website)
+
+[Going Hardcore on your Business Intelligence with Power BI by Adam Cogan - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-Hardcore-Business-Intelligence-Registration.html?Is=Website)
+
+[Advanced Power BI: Solving the Hard Problems by Devin Knight - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-07-Advanced-PowerBI-Registration.html?Is=Website)
+
+[DAX best practices from the field by Paul Turley - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-31-DAX-best-practices-Registration.html?Is=Website)
+
 [Data Preparation is the Keystone by Reza Rad - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-24-Data-Preparation-Registration.html?Is=Website)
 
 [Introduction to Power BI for the Excel User by Matt Allington - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-17-Intro-to-PowerBI-for-Excel-Registration.html?Is=Website)
@@ -79,6 +102,8 @@ Watch our latest webinars on-demand.
 [Dashboard Makeover: Learn how to make your data shine - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html?Is=Website)
 
 ### Power BI Content Pack and Connector webinars
+
+[Best-in-Class On-Premise Business Intelligence for Power BI from Pyramid Analytics - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-16-PowerBI-Pyramid-Analytics-Registration.html?Is=Website)
 
 [Power BI Sales Management Solution Webinar (Dynamics CRM, Salesforce) - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-25-PowerBI-Sales-Management-Registration.html?Is=Website)
 

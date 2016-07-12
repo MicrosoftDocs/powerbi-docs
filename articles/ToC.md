@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/06/2016"
+   ms.date="07/07/2016"
    ms.author="bewillia"/>
 
 <!---
@@ -211,6 +211,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-go-from-reading-view-to-editing-view",
             "powerbi-service-interact-with-a-report-in-editing-view",
             "powerbi-service-interact-with-a-report-in-reading-view",
+            "powerbi-service-qr-code-for-report",
             "powerbi-service-aggregates",
             "powerbi-service-rename-a-report",
             "powerbi-service-rename-a-report-page",
@@ -314,13 +315,12 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-gateway-enterprise",
             "powerbi-gateway-enterprise-indepth",
             "powerbi-gateway-proxy",
-            "powerbi-gateway-enterprise-upgrade-as-connector",
             "powerbi-gateway-enterprise-manage-ssas",
             "powerbi-gateway-enterprise-manage-sap",
             "powerbi-gateway-enterprise-manage-sql",
             "powerbi-gateway-enterprise-manage-scheduled-refresh"
           ],
-          "numberOfFeaturedArticles": 5
+          "numberOfFeaturedArticles": 4
         },
         {
           "sectionTitle": "Administration",
@@ -332,10 +332,9 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-admin-governance",
             "powerbi-admin-power-bi-security",
             "powerbi-admin-power-bi-expressroute",
+            "powerbi-admin-portal",
             "powerbi-admin-rls",
             "powerbi-admin-manage-your-data-storage-in-power-bi",
-            "powerbi-admin-migrating-to-the-new-power-bi-experience",
-            "powerbi-admin-migration-faq",
             "powerbi-admin-power-bi-archived-workspace",
             "powerbi-admin-syndication-partner",
             "powerbi-admin-closing-your-account",
@@ -391,6 +390,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-desktop-sap-hana",
             "powerbi-desktop-analysis-services-tabular-data",
             "powerbi-desktop-use-directquery",
+            "powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular",
             "powerbi-desktop-directquery-for-oracle-teradata",
             "powerbi-desktop-sap-bw-connector",   
             "powerbi-desktop-use-onedrive-business-links",
@@ -400,7 +400,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
             "powerbi-service-google-analytics-connector",
             "powerbi-desktop-project-online-connect-to-data"
           ],
-          "numberOfFeaturedArticles": 12
+          "numberOfFeaturedArticles": 13
         },
         {
           "sectionTitle": "Transform and shape data",
@@ -540,6 +540,7 @@ Only the categoryName and sectionTitle fields should be translated.  The article
           "sectionTitle": "Power BI app for Windows 10 devices",
           "articles": [
             "powerbi-mobile-win10phone-app-get-started",
+            "powerbi-mobile-win10-kpis-mobile-reports",
             "powerbi-mobile-dashboards-in-the-win10phone-app",
             "powerbi-mobile-tiles-in-the-win10phone-app",
             "powerbi-mobile-report-page-tiles-in-the-win10phone-app",

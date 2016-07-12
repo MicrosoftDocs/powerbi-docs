@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2016"
+   ms.date="06/20/2016"
    ms.author="maggies"/>
 # Share a dashboard from the Android app for Power BI
 
@@ -27,7 +27,7 @@ Invite colleagues to view your dashboards by sharing links from the [Android ap
 
 1.  In the upper-right corner of a dashboard, or on the dashboards home page, tap the ellipsis (...) and tap **Invite a colleague**.
 
-    ![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/PBI_Andr_DashEllipsMenu.png)
+    ![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/power-bi-android-dashboard-ellipsis.png)
 
     If you're the owner of the dashboard, you see the list of colleagues with whom you've shared this dashboard, with these notes:
 

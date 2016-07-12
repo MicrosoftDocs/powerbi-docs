@@ -3,7 +3,7 @@
    description="Sales & Marketing sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="amandacofsky"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="06/16/2016"
    ms.author="amac"/>
 
 # Sales & Marketing sample for Power BI: Take a tour  
@@ -58,8 +58,8 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 
     ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales3.png)
 
-2.  In the question box at the top of the dashboard, type the question to **units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
-    ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales4.png)
+2.  In the question box at the top of the dashboard, type the question to **total units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
+    ![](media/powerbi-sample-sales-and-marketing-take-a-tour/totalUnitsByManufacturerAndCategoryFor2014AsATreemap.png)
 
 3.  To compare the findings, pin the chart to your dashboard. Very interesting; in 2014 VanArsdel only sold products that fall into the **Urban** category.
 
@@ -98,7 +98,7 @@ We’re still looking to find out why our market share dipped so low in June. Le
 -   Sentiment gap would be another area to explore: which districts have the highest sentiment gap, how can management capitalize on this, and discover ways to replicate it in other districts.
 
 #### Page 2 of our report focuses on YTD Category Trend  
-![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales7.png)
+![](media/powerbi-sample-sales-and-marketing-take-a-tour/reportPage2.png)
 
 -   Of all the companies in this category, VanArsdel is the largest and our biggest competitors are Natura, Aliqui, and Pirium. We’ll keep our eyes on them.
 

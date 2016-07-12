@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/12/2016"
+   ms.date="07/06/2016"
    ms.author="davidi"/>
 
 # Troubleshooting Analyze in Excel
@@ -67,13 +67,13 @@ When this occurs, you may  receive an error titled **Forbidden**, which means yo
 If you still run into errors, log into Power BI with the account that has permission, and verify that you can view and access the dataset in Power BI that you're attempting to access in Excel.
 
 ## No data models
-If you encounter an error that states **Can't find OLAP cube model**, then the dataset you're trying to access has no data model, and therefor cannot be analyzed in Excel.
+If you encounter an error that states **Can't find OLAP cube model**, then the dataset you're trying to access has no data model, and therefore cannot be analyzed in Excel.
 
 ## Token expired error
 If you receive a **token expired** error, it means you haven't recently used the **Analyze in Excel** feature on the computer you're using. Simply re-enter your credentials, or reopen the file, and the error should go away.
 
-## System error when attempting to access on-premises Analysis services
-If you're trying to access a dataset that has connections to on-premises Analysis Services data, you may receive a system error. **Analyze in Excel** currently does not support connections to on-premises Analysis Services.
+## Unable to access on-premises Analysis services
+If you're trying to access a dataset that has connections to on-premises Analysis Services data, you may receive an error message. **Analyze in Excel** currently does not support connections to on-premises Analysis Services.
 
 ## See Also  
 

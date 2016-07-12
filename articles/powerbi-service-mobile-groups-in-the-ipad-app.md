@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Groups in the iPad app"
-   description="Groups in the iPad app (Power BI for iOS)"
+   description="Power BI groups are built on Office 365 groups. Read about viewing and interacting with group dashboards in the Power BI iOS mobile app for the iPad."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 

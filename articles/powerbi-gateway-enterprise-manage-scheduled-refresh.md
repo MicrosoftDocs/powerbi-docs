@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your enterprise data source - Import/Scheduled Refresh"
-description="How to manage the enterprise gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh."
+pageTitle="Manage your data source - Import/Scheduled Refresh"
+description="How to manage the on-premises data gateway gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -17,23 +17,21 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/16/2016"
+ms.date="07/06/2016"
 ms.author="asaxton"/>
-# Manage your enterprise data source - Import/Scheduled Refresh
+# Manage your data source - Import/Scheduled Refresh
 
-Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources that are used for scheduled refresh as opposed to DirectQuery or live connections.
+Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources that are used for scheduled refresh as opposed to DirectQuery or live connections.
 
 ## Download and install the gateway
 
-Download and install the latest version of the [Power BI Gateway - Enterprise](https://go.microsoft.com/fwlink/?LinkId=698863).
+You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
 
-Or, from the Power BI service, select **Downloads** > **Power BI Gateways**.
-
-![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
+![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
 ## Add a gateway
 
-To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698863) and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
+To add a gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698863) and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
 > NOTE: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
 
@@ -59,7 +57,7 @@ You can then select the **Data Source Type** from the list. All of the data sour
 
 You will then want to fill in the information for the data source which includes the source information and credentials used to access the data source.
 
-> NOTE: Access to the data source will be made using these credentials. [Learn more](powerbi-gateway-enterprise.md#credentials)
+> NOTE: All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-oracle.png)
 
@@ -67,18 +65,8 @@ You can click **Add** after you have everything filled in.  You can now use this
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
 
-### List of available data source types
-
-The following data sources are available for scheduled refresh.
-
-- SQL Server
-- Analysis Services
-- SAP HANA
-- File
-- Folder
-- Oracle
-- Teradata
-- SharePoint list (on-premises)
+<!-- Shared Install steps Include -->
+[AZURE.INCLUDE [gateway-onprem-datasources-include](../includes/gateway-onprem-datasources-include.md)]
 
 ### Advanced settings
 
@@ -112,20 +100,18 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh. 
 
-> **Note**: Server and database name have to match between Power BI Desktop and the data source within the enterprise gateway!
+> **Note**: Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
 
-The link between your dataset and the data source within the enterprise gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the enterprise gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the enterprise gateway.
+The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
 
-If you are listed in the **Users** tab of the data source configured within the enterprise gateway, and the server and database name match, you will see the enterprise gateway as an option to use with scheduled refresh.
+If you are listed in the **Users** tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
 
 ![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## See Also
 
-[Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)
 
-[Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
+[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
-
-[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)

@@ -17,10 +17,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Import Excel files with data models and Power View sheets

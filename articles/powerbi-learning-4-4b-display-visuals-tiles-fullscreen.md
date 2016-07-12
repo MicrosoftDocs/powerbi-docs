@@ -10,22 +10,20 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="GSKWsDe5jIM"
+   featuredVideoId="LoApjhwTse0"
    featuredVideoThumb=""
    courseDuration="4m"/>
 
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/28/2016"
    ms.author="davidi"/>
 
 # Display Visuals and Tiles Full-Screen
-
-*Learn how to get a full-screen view of select report visuals and dashboard tiles*
 
 When you're looking at Power BI dashboards or reports in the service, it can sometimes be helpful to focus on an individual chart or visualization. You can do that in two different ways.
 

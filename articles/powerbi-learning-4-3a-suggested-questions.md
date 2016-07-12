@@ -17,15 +17,13 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Create Custom Q&A Suggestions
-
-*Discover to add your own questions to the suggested Q&A input box prompts*
 
 With Power BI, you can add your own suggested questions for other users who use the natural language query box for a dashboard, frequently referred to as the **Q&A** box. These suggested questions are what users will see when they click on the input box at the top of a dashboard.
 

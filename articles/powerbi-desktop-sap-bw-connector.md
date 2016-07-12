@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/22/2016"
+   ms.date="06/20/2016"
    ms.author="davidi"/>
 
 # Use the SAP BW Connector (Preview) in Power BI Desktop
@@ -89,11 +89,17 @@ This section provides troubleshooting situations (and solutions) for working wit
 
     **Solution:** Make sure you installed the **SAP RFCSDK version 6.4 or greater**; you can check with the SAP Administrator in your organization, or follow these steps:
 
-    1.	Open the **SAP Support Portal**
-    2.	Go to **Downloads**
+    1.	Open the **[SAP Support Portal](https://support.sap.com/home.html)**
+    2.	Go to **Software Downloads**
     3.	Go to the **SAP Software Distribution Center**
     4.	Select **Support Packages**
     5.	Select **Search for Support Packages and Patches**
     6.	Search for **RFCSDK**
     7.	Find the 6.40 RFCSDK for Windows (32-bit application) and download it
     8.	Copy the file *LIBRFC32.DLL* included with the download to the c:\windows\system32 directory on all workstations that will be running Power BI Desktop
+
+2.  **Connectivity for SAP BEx queries**
+
+    You can perform **BEx** queries in Power BI Desktop by enabling a specific property, as shown in the following image:
+
+    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_8.png)

@@ -17,10 +17,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/15/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Congratulations - and what's next for you
@@ -29,7 +29,7 @@ You did it! **Congratulations!** You've completed the **Guided Learning** course
 
 ![](media/powerbi-learning-0-0-what-is-power-bi/c0a0_2.png)
 
-This is the last section (and the final topic) in the course, so if you went through all of these sections in order, take a moment to pat yourself on the back. Good job! You're now well versed in all these **important concepts**:
+This is the last section (and the final topic, unless you want to learn DAX) in the course, so if you went through all of these sections in order, take a moment to pat yourself on the back. Good job! You're now well versed in all these **important concepts**:
 
 -   What [Power BI is](powerbi-learning-0-0-what-is-power-bi.md)
 -   The [building blocks](powerbi-learning-0b-building-blocks-power-bi.md) of Power BI
@@ -50,3 +50,7 @@ There's more **help and reference** content available, too. Just go to the top o
 ![](media/powerbi-learning-6-5-guided-learning-completion/6-5_1.png)
 
 We hope you've enjoyed your journey through this **Power BI Guided Learning** experience. Best of luck to you, and may your Power BI visuals always be immersive and compelling.
+
+## One more section for DAX users
+
+Still want more? Interested in using **DAX (Data Analysis Expressions)** to create, filter, or use custom columns and tables in Power BI? There's one more section targeted at people inclined to do some code work in Power BI, and it's called **Introduction to DAX**. Take a look if you're interested - it uses the same friendly approach as the rest of Guided Learning.

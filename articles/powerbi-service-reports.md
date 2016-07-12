@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2016"
+   ms.date="07/05/2016"
    ms.author="mihart"/>
 # Reports in Power BI
 
@@ -38,7 +38,7 @@ Power BI can have more than one report-- as you add reports, their titles are ad
 
 ## For more information about reports:
 
-From the table of contents (on the left side of this browser page), expand **Reports** to see all the topics related to Power BI reports. 
+From the table of contents (on the left side of this browser page), expand **Reports** to see all the topics related to Power BI reports.
 
 ### Tips and troubleshooting
 

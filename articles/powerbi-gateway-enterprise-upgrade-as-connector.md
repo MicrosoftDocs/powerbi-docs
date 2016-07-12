@@ -21,6 +21,8 @@ ms.date="05/11/2016"
 ms.author="asaxton"/>
 # Upgrading the Analysis Services Connector to the Power BI Gateway - Enterprise
 
+> **Note:** The enterprise gateway has been replaced with the [On-Premises Data Gateway](powerbi-gateway-onprem.md).
+
 You can now work with live data from Analysis Services with the Power BI Gateway - Enterprise. This includes both tabular and multidimensional models. This also means you can start to moving your existing Analysis Service Connector deployments over to the new enterprise gateway. The following looks at how you can go about moving from the Analysis Services Connector to the enterprise gateway.
 
 ## How to try the enterprise gateway without removing the Analysis Services Connector

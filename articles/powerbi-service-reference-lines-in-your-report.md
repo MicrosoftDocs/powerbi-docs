@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/05/2016"
+   ms.date="06/20/2016"
    ms.author="mihart"/>
 
 # Reference lines in your report
@@ -27,7 +27,7 @@ Many charts are tracking performance against some goal or target, not just a com
 
 Reference lines can be added to Line, Column, Bar, Area, Waterfall, and Scatter charts.
 
-There are 2 ways to create references lines; one is by reference lines as you need them and the other is by using Desktop to create a reusable field in your dataset.  
+There are 2 ways to create references lines; one is by adding reference lines as you need them and the other is by using Power BI Desktop to create a reusable field in your dataset.  
 
 ## Reference lines as you need them
 
@@ -69,6 +69,14 @@ Use Power BI Desktop to create a new field (column) in your dataset. Then use th
 4. Add the Unit Sales target to a line chart to show how any series relates to that specific reference line.    
 
     ![](media/powerbi-service-reference-lines-in-your-report/reference-lines-show.png)
+
+    >**NOTE**: Make sure **Unit Sales target** isn't being aggregated, for example, summed or counted. In the **Visualizations** pane, right-click **Unit Sales target** and select **Average**, **Minimum**, **Maximum**, or **Median**.
+
+    ![](media/powerbi-service-reference-lines-in-your-report/power-bi-reference-lines.png)
+
+##  Troubleshooting
+
+If you're using a field value as a reference line, and it's not displaying correctly, make sure it isn't being aggregated.  Power BI automatically aggregates values, making its best guess of how you want to use the value. For example, if Power BI sums the value, you'll get a sloping line.  See step 4 above for instructions for setting the proper aggregation for your reference line.
 
 ##  See also
 [Learn more about calculated columns](powerbi-desktop-calculated-columns.md)

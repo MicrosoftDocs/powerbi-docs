@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/26/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Data categorization in Power BI Desktop  
@@ -43,3 +43,5 @@ Should Power BI Desktop treat the codes in the GeoCode column as an abbreviation
 ![](media/powerbi-desktop-data-categorization/DataCategorization.gif)
 
 And, that’s it!  Any behavior that normally accrues to a visual will now work automatically.  
+
+You might also be interested in learning about [geographic filtering for Power BI mobile apps](powerbi-desktop-mobile-geofiltering.md).

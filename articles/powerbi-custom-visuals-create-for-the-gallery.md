@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/23/2016"
+   ms.date="06/21/2016"
    ms.author="mihart"/>
 
 # Create and submit a visual to the gallery  

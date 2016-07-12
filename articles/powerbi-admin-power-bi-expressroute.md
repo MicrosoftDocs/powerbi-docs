@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/01/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Power BI and ExpressRoute
@@ -34,7 +34,7 @@ You can get [more information about ExpressRoute](https://azure.microsoft.com/se
 
 ## Power BI ExpressRoute Exceptions
 
-Power BI is compliant with ExpressRoute, with a few exceptions where Power BI gets or sends data over the public Internet. These specific exceptions often include static data, such as browser configuration files that are downloaded from the nearest **Content Deliver Network (CDN)** node. There are some broad exceptions which apply to all of Power BI, and there are some service- or feature-specific exceptions, each of which are documented in the following sections. 
+Power BI is compliant with ExpressRoute, with a few exceptions where Power BI gets or sends data over the public Internet. These specific exceptions often include static data, such as browser configuration files that are downloaded from the nearest **Content Deliver Network (CDN)** node. There are some broad exceptions which apply to all of Power BI, and there are some service- or feature-specific exceptions, each of which are documented in the following sections.
 
 ### Overall Exceptions to Power BI and ExpressRoute
 

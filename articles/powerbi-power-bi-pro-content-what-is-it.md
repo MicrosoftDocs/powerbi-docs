@@ -14,10 +14,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/07/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
