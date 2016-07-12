@@ -96,7 +96,7 @@ The dataset also includes the following tables to customize your reports and das
 
 ## System requirements
 
-Access to the Xero API is required.
+The following roles are required to access the Xero content pack: "Standard + Reports" or "Advisor". 
 
 <a name="FindingParams"></a>
 ## Finding parameters
@@ -105,7 +105,14 @@ Provide a name for your organisation to track in Power BI. This allows you to co
 
 ## Troubleshooting
 
-If your content pack fails to refresh, please check if you have connected to the same organisation more than once in Power BI. Xero only allows a single active connection to an organisation and you may see an error indicating your credentials are invalid if you connect to the same one more than once. 
+-   For issues connecting the Xero content pack for Power BI like error messages or very slow load times, first clear the cache / cookies and restart the browser, then reconnect to Power BI.  
+
+-   Xero users must have the following roles to access the Xero content pack for Power BI: "Standard + Reports" or "Advisor". The content pack relies on the user-based permissions to access reporting data through Power BI.  
+
+-   If your content pack fails to refresh, please check if you have connected to the same organisation more than once in Power BI. Xero only allows a single active connection to an organisation and you may see an error indicating your credentials are invalid if you connect to the same one more than once.  
+
+For other issues, please file a ticket at http://support.powerbi.com if the issue persists.
+
 
 ### See also
 
