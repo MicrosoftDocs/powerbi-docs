@@ -79,7 +79,7 @@ The result will look similar to an email address, but this is the UPN that is on
 
 ## Mapping usernames for Analysis Services data sources
 
-Power BI allows for mapping usernames for Analysis Services data sources. You can configure rules to map a username logged in with Power BI to a name that is passed for EffectiveUserName on the Analysis Services connection. The map user names feature is a great way to work around when your username in AAD doesn't match a UPN in your local Active Directory. For example, if your email address is nancy@contoso.onmicrsoft.com, you could map it to nancy@contoso.com, and that value would be passed to the gateway. You can learn more about how to [map user names](powerbi-gateway-onprem-manage-ssas.md#map-user-names).
+Power BI allows for mapping usernames for Analysis Services data sources. You can configure rules to map a username logged in with Power BI to a name that is passed for EffectiveUserName on the Analysis Services connection. The map user names feature is a great way to work around when your username in AAD doesn't match a UPN in your local Active Directory. For example, if your email address is nancy@contoso.onmicrsoft.com, you could map it to nancy@contoso.com, and that value would be passed to the gateway. You can learn more about how to [map user names](powerbi-gateway-enterprise-manage-ssas.md#map-user-names).
 
 ## Synchronize an on-premises Active Directory with Azure Active Directory
 
