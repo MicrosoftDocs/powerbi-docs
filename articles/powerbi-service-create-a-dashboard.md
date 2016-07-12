@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="lJKgWnvl6bQ"
-   qualityFocus="monitoring"
+   qualityFocus="identified"
    qualityDate="03/15/2016"/>
 
 <tags
@@ -34,7 +34,7 @@ You've read [Dashboards in Power BI](powerbi-service-dashboards.md), and now yo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
-### Create an empty dashboard from scratch 
+### Create an empty dashboard from scratch
 This method creates a new, empty, dashboard.
 
 1. From the left navigation pane in Power BI Service (not Power BI Desktop), select the plus sign ![](media/powerbi-service-create-a-dashboard/PBI_PlusIcon.png) next to the **Dashboards** heading.

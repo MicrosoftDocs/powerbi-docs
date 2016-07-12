@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="06/22/2016"
    ms.author="mihart"/>
 
 
@@ -69,7 +69,7 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
 5. Publish the report to Power BI service (powerbi.com).
 
-6. [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
+6. Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 Now, asking question including the name of a Cortana sized page will return results from Cortana.
 
@@ -81,8 +81,6 @@ Results with high scoring answers (such as a complete match of a specified page 
 
 
 ## See also
-
-[Tips for using Power BI with Cortana](powerbi-service-cortana-ask-questions.md)
 
 [Using Cortana with Power BI](powerbi-service-cortana-intro.md)
 

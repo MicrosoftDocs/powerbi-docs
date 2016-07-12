@@ -21,6 +21,8 @@ ms.date="05/16/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise in-depth
 
+> **Note:** The enterprise gateway has been replaced with the [On-Premises Data Gateway](powerbi-gateway-onprem-indepth.md). 
+
 With Power BI, users in your organization can now see your on-premises data and metrics in a whole new way. But before users can connect to your on-premises data source, a Power BI Gatway - Enterprise needs to be installed and configured. The gateway helps make the behind-the-scenes communication from a user in Power BI to your on-premises Analysis Services server and back to Power BI quick and secure.
 
 Installing and configuring a gateway is usually done by an administrator. It requires special knowledge of your on-premises servers and it in some cases may require Server Administrator permissions.

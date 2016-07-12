@@ -89,8 +89,8 @@ This section provides troubleshooting situations (and solutions) for working wit
 
     **Solution:** Make sure you installed the **SAP RFCSDK version 6.4 or greater**; you can check with the SAP Administrator in your organization, or follow these steps:
 
-    1.	Open the **SAP Support Portal**
-    2.	Go to **Downloads**
+    1.	Open the **[SAP Support Portal](https://support.sap.com/home.html)**
+    2.	Go to **Software Downloads**
     3.	Go to the **SAP Software Distribution Center**
     4.	Select **Support Packages**
     5.	Select **Search for Support Packages and Patches**

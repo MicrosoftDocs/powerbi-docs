@@ -24,14 +24,14 @@
 
 You can run R scripts directly in Power BI Desktop, and import the resulting datasets into a Power BI Desktop data model.
 
-### Installing R
+## Installing R
 
 To run R scripts in Power BI Desktop, you need to install **R** on your local machine. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
 
-### Running R Scripts
+## Running R Scripts
 With just a few steps in Power BI Desktop you can run R scripts and create a data model, from which you can create reports, and share them on the Power BI service. R scripting in Power BI Desktop now supports number formats that contain decimals (.) and commas (,).
 
-#### Prepare an R Script
+### Prepare an R Script
 To run an R script in Power BI Desktop, create the script in your local R development environment, and make sure it runs successfully.
 
 To run the script in Power BI Desktop, make sure the script runs successfully in a new and unmodified workspace. This means that all packages and dependencies must be explicitly loaded and run. You can use *source()* to run dependent scripts.
@@ -45,7 +45,7 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 -   When setting the working directory within the R script, you *must* define a full path to the working directory, rather than a relative path
 
 
-#### Run your R Script and Import Data
+### Run your R Script and Import Data
 
 1.   In Power BI Desktop, the R Script data connector is found in **Get Data**. To run your R Script, select **Get Data &gt; More...**, then select **Other &gt; R Script** as shown in the following image.
 
@@ -67,5 +67,5 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 
 4.   Select **OK** to run the R Script. When the script runs successfully, you can then choose the resulting data frames to add to the Power BI model.
 
-#### Refresh
+### Refresh
 You can refresh an R script in Power BI Desktop. When you refresh an R script, Power BI Desktop runs the R script again in the Power BI Desktop environment.

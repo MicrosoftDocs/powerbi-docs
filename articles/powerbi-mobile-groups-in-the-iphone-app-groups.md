@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Groups in the iPhone app"
-   description="Groups in the iPhone app (Power BI for iOS)"
+   description="Power BI groups are built on Office 365 groups. Read about viewing and interacting with group dashboards in the Power BI iOS mobile app for the iPhone."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/28/2016"
+   ms.date="07/06/2016"
    ms.author="maggies"/>
 
 # Groups in the iPhone app (Power BI for iOS)  
@@ -33,11 +33,13 @@ Power BI sends a notification to your iPhone whenever someone adds a new dashboa
 
     Need to [download and install the iOS app for the iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) first?
 
-2.  Under My Workspace, select a group.  
-    ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/PBI_iPh_Groups.png)
+2.  Under My Workspace, select a group. 
+ 
+    ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/power-bi-iphone-groups.png)
 
 3.  Your group page displays the dashboards that have been published to the group workspace.  
-    ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/PBI_iPh_GroupDashes.png)
+
+    ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/power-bi-iphone-group-dashboards.png)
 
 4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-iphone-app.md) to open and view it.
 

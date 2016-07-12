@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe" 
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2016"
+   ms.date="07/03/2016"
    ms.author="mihart"/>
 
 # Custom visualizations in Power BI

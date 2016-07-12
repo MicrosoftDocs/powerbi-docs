@@ -3,7 +3,7 @@
    description="Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app."
    services="powerbi"
    documentationCenter=""
-   authors="maggies"
+   authors="maggiesMSFT"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2016"
+   ms.date="07/06/2016"
    ms.author="maggies"/>
 
 # Scan a barcode from the Power BI app on your iPhone
 
 Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
 
-Say a colleague has [tagged a barcode field in a report Power BI Desktop](powerbi-desktop-mobile-bar-codes.md) and shared the report with you. 
+Say a colleague has [tagged a barcode field in a report Power BI Desktop](powerbi-desktop-mobile-barcodes.md) and shared the report with you. 
 
 When you scan a product barcode with the scanner in the Power BI app on your iPhone, you see the report (or list of reports) with that barcode. You can open that report on your iPhone, filtered to that barcode.
 
@@ -74,7 +74,7 @@ The barcode value you scanned exists in your model but all/Some of the visuals o
 
 This means you don’t have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**.  
 
-Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](powerbi-desktop-mobile-bar-codes.md)
+Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](powerbi-desktop-mobile-barcodes.md)
 
 ### “Couldn’t filter report - Looks like this barcode doesn't exist in the report data.”  
 
@@ -83,6 +83,6 @@ The report you chose to filter is based on a data model that doesn't include thi
 
 ### See also
 
--  [Tag a barcode field in Power BI Desktop](powerbi-desktop-mobile-bar-codes.md)
+-  [Tag a barcode field in Power BI Desktop](powerbi-desktop-mobile-barcodes.md)
 -  [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 -  [Dashboards in Power BI](powerbi-service-dashboards.md)

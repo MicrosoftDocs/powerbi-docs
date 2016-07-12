@@ -21,6 +21,8 @@ ms.date="06/15/2016"
 ms.author="asaxton"/>
 # Power BI Gateway - Enterprise
 
+> **Note:** The enterprise gateway has been replaced with the [On-Premises Data Gateway](powerbi-gateway-onprem.md). 
+
 The Power BI Gateway - Enterprise enables IT departments to deploy and manage central gateways to serve a large group of users. It is the successor to the Data Management Gateway in Power BI for Office 365. Instead of each employee installing and configuring a Power BI Gateway - Personal, IT can configure, manage and maintain a group of gateways to transparently refresh data uploaded to Power BI for users requiring up-to-date data. 
 
 With the enterprise gateway, IT can centrally manage the set of users who have access to the underlying data sources. IT departments can gain visibility into gateway usage, such as most commonly accessed data sources, and the users accessing them.

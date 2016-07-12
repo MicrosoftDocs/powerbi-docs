@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your enterprise data source - SQL"
-description="How to manage the enterprise gateway and data sources that belong to that gateway."
+pageTitle="Manage your data source - SQL"
+description="How to manage the on-premises data gateway and data sources that belong to that gateway."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -17,23 +17,21 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/16/2016"
+ms.date="07/06/2016"
 ms.author="asaxton"/>
-# Manage your enterprise data source - SQL Server
+# Manage your data source - SQL Server
 
-Once you have installed the Power BI Gateway - Enterprise, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.
+Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.
 
 ## Download and install the gateway
 
-Download and install the latest version of the [Power BI Gateway - Enterprise](https://go.microsoft.com/fwlink/?LinkId=698863).
+You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
 
-Or, from the Power BI service, select **Downloads** > **Power BI Gateways**.
-
-![](media/powerbi-gateway-enterprise/powerbi-gateway-enterprise-download.png)
+![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
 ## Add a gateway
 
-To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698863) and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
+To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
 > NOTE: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
 
@@ -61,7 +59,7 @@ You will then want to fill in the information for the data source which includes
 
 You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use SQL Authentication instead of Windows Authentication. Then enter the credentials that will be used for this data source.
 
-> NOTE: All queries to the data source will run using these credentials. [Learn more](powerbi-gateway-enterprise.md#credentials)
+> NOTE: All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3.png)
 
@@ -101,30 +99,28 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh. 
 
-> **Note**: Server and database name have to match between Power BI Desktop and the data source within the enterprise gateway!
+> **Note**: Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway gateway!
 
-The link between your dataset and the data source within the enterprise gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the enterprise gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the enterprise gateway.
+The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
 
 This is the case for both DirectQuery and scheduled refresh.
 
 ### Using the data source with DirectQuery connections
 
-You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the enterprise gateway. You will also need to make sure your user is listed in the **Users** tab of the data source in order to publish DirectQuery datasets. The selection, for DirectQuery, occurs within Power BI Desktop when you first import data. [Learn more](powerbi-desktop-use-directquery.md)
+You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the gateway. You will also need to make sure your user is listed in the **Users** tab of the data source in order to publish DirectQuery datasets. The selection, for DirectQuery, occurs within Power BI Desktop when you first import data. [Learn more](powerbi-desktop-use-directquery.md)
 
-After you publish, either from Power BI Desktop or **Get Data**, your reports should start working. It may take several minutes, after creating the data source within the enterprise gateway, for the connection to be usable.
+After you publish, either from Power BI Desktop or **Get Data**, your reports should start working. It may take several minutes, after creating the data source within the gateway, for the connection to be usable.
 
 ### Using the data source with scheduled refresh
 
-If you are listed in the **Users** tab of the data source configured within the enterprise gateway, and the server and database name match, you will see the enterprise gateway as an option to use with scheduled refresh.
+If you are listed in the **Users** tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
 
 ![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## See Also
 
-[Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)
 
-[Power BI Gateway - Enterprise in-depth](powerbi-gateway-enterprise-indepth.md)
+[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
-
-[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)

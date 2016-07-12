@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="07/07/2016"
    ms.author="bewillia"/>
 
 <!---
