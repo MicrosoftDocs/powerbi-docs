@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2016"
+   ms.date="06/27/2016"
    ms.author="maggies"/>
 
 # Power BI Apple Watch app

@@ -21,6 +21,8 @@ ms.date="06/15/2016"
 ms.author="asaxton"/>
 # Troubleshooting the Power BI Gateway - Enterprise
 
+> **Note:** The enterprise gateway has been replaced with the [On-Premises Data Gateway](powerbi-gateway-onprem-tshoot.md).
+
 The following goes through some common issues you may encounter when using the Power BI Gateway - Enterprise. 
 
 > **Note**: If you encounter an issue that is not listed below, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).

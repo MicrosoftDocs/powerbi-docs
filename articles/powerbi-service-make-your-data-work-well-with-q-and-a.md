@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="07/05/2016"
    ms.author="mihart"/>
 
 # Make your data work well with Q&A in Power BI  
@@ -26,7 +26,7 @@ If you are a person who creates data models or builds Excel workbooks that will 
 
 In Power BI, Q&A can search structured data and choose the right visualization for your question -- that's what makes it a compelling tool to use.   
 
-Q&A can work on any uploaded Excel file, but the more optimizations and data cleaning you do, the more robust Q&A performance is. 
+Q&A can work on any uploaded Excel file that has tables, ranges, or contains a PowerPivot model, but the more optimizations and data cleaning you do, the more robust Q&A performance is. 
 
 ## How Q&A works  
 Q&A has a set of core natural language understanding abilities that work across your data. It has context-dependent keyword search for your Excel table, column, and calculated field names. Second, it has built-in knowledge for how to filter, sort, aggregate, group, and display data. 

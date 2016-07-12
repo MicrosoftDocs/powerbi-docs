@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Reports in the Android app"
-   description="Reports in the Power BI app for Android phones"
+   description="Learn about viewing reports in the Power BI mobile app for Android phones. You create reports in the Power BI service, then interact with them in the mobile apps."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 

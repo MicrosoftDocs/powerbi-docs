@@ -27,7 +27,7 @@ Connect to the Project "Madeira" for Power BI or read more about the Project "Ma
 
 Note: this content pack requires permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements [below](#Requirements). 
 
-Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.com/getdata/services/projec-madeira) for Power BI.
+Connect to the [Project "Madeira" Analytics content pack](https://app.powerbi.com/getdata/services/project-madeira) for Power BI.
 
 ## How to connect
 

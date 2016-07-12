@@ -126,6 +126,7 @@ Once the workbook is ready, you can find it in the **Reports** section of Power 
 ![](media/powerbi-service-excel-workbook-files/excel_import_9.png)
 
 
+
 ## Publish from Excel 2016 to your Power BI site
 Using the **Publish to Power BI** feature in Excel 2016 is effectively the same as using **Get Data** in Power BI to import or connect to your file. We won't go into the details here, but you can see [Publish to Power BI from Excel 2016](articles/powerbi-service-publish-from-excel.md) to learn more.
 

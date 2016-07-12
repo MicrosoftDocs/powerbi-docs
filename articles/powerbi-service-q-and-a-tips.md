@@ -17,42 +17,66 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/06/2016"
+   ms.date="07/06/2016"
    ms.author="mihart"/>
 
 # Tips for asking questions in Power BI Q&A
 
 ##  Words and terminology that Q&A recognizes
 
-These are just some of the words and terms that Q&A automatically recognizes.
+This list of keywords is not exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI does not recognize it, or doesn’t recognize it in the current context.
 
-* **Adverb filters**: filter the results by using adverbs such as **where**, **in**, or **with** in your question.  For example, *show stores with name Winchester*. 
-
-*   **Aggregations**: such as less than, maximum, number of, count of, average, between, before
-
-* **Date keywords**: such as last month, this year, or the actual date itself  
-
-* **Date ranges**: before, after
-
-* **Display verbs**: show, is, what is, are, what are
-
-* **Equality keywords**:  between, more than, less than, equal
-
-* **Names**: If a column in the dataset contains the phrase "name" (e.g., EmployeeName), Q&A understands the values in that column are names and you can ask questions like "which employees are named robert."
-
-* **Plurals**: for example, both "opportunity" and "opportunities".
-
-* **Possessives**: "what is the total of Jaine's orders"
-
-* **Relationship**: datasets have tables and within tables are columns. Most columns will be related to their containing table with a simple phrasing like "hosts have flags" as well as "flags have hosts." These relationships can be described using words such as: have and of.
-
-* **Sort order**: descending, ascending, alphabetical order, sort
-
-* **Tenses**: for example, both buy" and "bought"
-
-* **Type of visualization**: specify the visualization to use, "show sales by year as a clustered bar chart."
+The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted, sorting, sorted.  Also, PowerBI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
 
 >**NOTE**: If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A results for your customers.
+
+**Aggregates**: total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min
+
+**Articles**: a, an, the
+
+**Blank and Boolean**: blank, empty, null, prefixed with “non” or “non-“, empty string, empty text, true, t, false, f
+
+**Comparisons**: vs, versus, compared to, compared with
+
+**Conjunctions**: and, or, each of, with, versus, &, and, but, nor, along with, in addition to
+
+**Contractions**: Q&A recognizes almost all contractions, try it out.  Here are a few examples: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, where’ll, who’s, won’t, wouldn’t.
+
+**Dates**: Power BI recognizes most date terms (day, week, month, year, quarter, decade, etc…) and dates written in many different formats (see below). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade.
+
+Examples: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months.
+
+**Relative dates**: today, right now, current time, yesterday, tomorrow, the current, next, the coming, last, previous, ago, before now, sooner than, after, later than, from, at, on, from now, after now, in the future, past, last, previous, within, in, over, N days ago, N days from now, next, once, twice.
+
+Example: count of orders in the past 6 days.
+
+**Equality (Range)**: in, equal to, =, after, is more than, in, between, before
+
+Examples: Order year is before 2012? Price equals between 10 and 20? Is the age of John greater than 40? Total sales in 200-300?
+
+**Equality (Value)**:  is, equal, equal to, in, of, for, within, is in, is on
+
+Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that is not equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?
+
+**Names**: If a column in the dataset contains the phrase "name" (e.g., EmployeeName), Q&A understands the values in that column are names and you can ask questions like "which employees are named robert."
+
+**Pronouns**: he, him, himself, his, she, herself, her, hers, it, itself, its, they, their, them, themselves, theirs, this, these, that, those
+
+**Query commands**: sorted, sort by, direction, group, group by, by, show, list, display, give me, name, just, only, arrange, rank, compare, to, with, against, alphabetically, ascending, descending, order
+
+**Range**: greater, more, larger, above, over, >, less, smaller, fewer, below, under, <,  at least, no less than, >=, at most, no more than, <=, in, between, in the range of, from, later, earlier, sooner, after, on, at, later than, after, since, starting with, starting from, ending with
+
+**Times**: am, pm, o'clock, noon, midnight, hour, minute, second, hh:mm:ss
+
+Examples: 10 pm, 10:35 pm, 10:35:15 pm, 10 oclock, noon, midnight, hour, minute, second.
+
+**Top N** (order, ranking): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next
+
+**Visual types**: all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this is [custom visuals](powerbi-custom-visuals.md) that you've manually added to the Visualization pane.
+
+Example: show districts by month and sales total as bar chart
+
+**Wh (relationship, qualified)**: when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what
 
 ## Q&A helps you phrase the question
 
@@ -62,7 +86,7 @@ Q&A does its best to ensure that the answer accurately reflects the question bei
 
 * corrects spelling.
 
-* provides a preview of the answer in the form of a visualization The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
+* provides a preview of the answer in the form of a visualization. The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
 
 * auto-suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
 
@@ -70,64 +94,8 @@ Q&A does its best to ensure that the answer accurately reflects the question bei
 
 * dims words it does not understand.
 
-## Which dataset was used to create the visualization
-Q&A displays the name of the dataset(s) that was used to produce the currently-displayed results. If you're getting strange results, perhaps you need to search in a different dataset.
-
 ## Combine results from more than one dataset
 One of Power BI's most powerful features is the ability to combine data from different datasets.  So don't limit your questions to a single dataset -- ask questions that retrieve data from more than one dataset. For example, if my dashboard has tiles from the Retail Analysis Sample and a state population dataset, I can ask *show count of stores by state population as bar chart descending*.
-
-## Tell Q&A which visualization to use
-
-When typing natural language queries with Q&A, there are some visualization types that you can specify in the query.  For example:
-
-"sales by state as a treemap"
-
-## Question templates
-When you have a workbook prepared for Q&A, you are on your way to start asking questions. Here's a sample of the types of questions you can ask:
-
-* Show \<table\>
-
-    Examples:
-
-    Show sales
-
-    Show orders
-
-* Average \<column\> (if the column has number values)
-
-    Example: Average employee age
-
-* Show \<column\>, where \<column\> is between <range>
-
-    Examples:
-
-    Show products, where price is between $10 and $30
-
-    Show sales, where date is between 2012 and 2014
-
-* Show \<column\>, where \<column\> is before <value>
-
-    Examples:
-
-    Show products, where date sold is before December 9th, 2014
-
-    Show employees, where date of birth is after 3/3/1985
-
-* \<measure> by \<column name\>
-
-    Examples:
-
-    Year over year growth by year
-
-    Total sales by product
-
-    Number of sales by location
-
-    Total profit and total cost by product
-
-* \<measure\> by \<column name\> for \<specific entity within another column\>
-
-    Example: Total sales by sales rep for Surface Pro 3
 
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.

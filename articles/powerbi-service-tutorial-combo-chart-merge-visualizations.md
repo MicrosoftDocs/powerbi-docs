@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="lnv66cTZ5ho"
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -42,7 +42,7 @@ Combo Charts are a great choice:
 
 ## Create a basic, single-axis, Combo Chart
 
-Watch Will create a Combo Chart using the Sales and Marketing sample. 
+Watch Will create a Combo Chart using the Sales and Marketing sample.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
