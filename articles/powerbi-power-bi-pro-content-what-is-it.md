@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/12/2016"
+   ms.date="06/22/2016"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
@@ -44,7 +44,6 @@ Conversely, if your content contains only the following items it will be consuma
 
 -   A dashboard or report with data imported from files such as Excel spreadsheets, Power BI Desktop, and CSV.
 
--   A dataset with [Row-Level Security](powerbi-admin-rls.md) configured.
 
 For example, if you create a manufacturing dashboard that updates progress multiple times during the day, anyone *consuming* that dashboard would need a Power BI Pro license. Or, if you create a report using the Power BI Gateway - Enterprise, then another that uses the personal gateway, anyone *consuming or interacting* with either of those reports would need a Power BI Pro license.
 
