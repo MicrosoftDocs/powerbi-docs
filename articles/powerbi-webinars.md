@@ -26,9 +26,11 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[What's New and Exciting in Power BI - 07/12/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
-
 [Using Power BI to Track Development by Simon Sabin - 07/19/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-19-PowerBI-Track-Development-Registration.html?Is=Website)
+
+[Power BI Mobile - Answering Your Business Questions - 07/21/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-21-PowerBI-Mobile-Registration.html?Is=Website)
+
+[Predictive Analytics in Education and Consumer Goods Using Power BI with Machine Learning - 07/26/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-26-PowerBI-MachineLearning-Registration.html?Is=Website)
 
 [Power BI Embedded Deep Dive - 08/09/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
 
@@ -38,6 +40,8 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
+[What's New and Exciting in Power BI - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
+
 [Insights to Action: PowerApps & Microsoft Flow - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-30-Leveraging-PowerApps-MicrosoftFlow-Registration.html?Is=Website)
 
 [DAX in Power BI: why you need to learn it by Marco Russo - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-28-DAX-PowerBI-Registration.html?Is=Website)
@@ -46,10 +50,10 @@ Watch our latest webinars on-demand.
 
 [A Walkthrough of Power BI Security & Administration Considerations - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
 
-[Best-in-Class On-Premise Business Intelligence for Power BI from Pyramid Analytics - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-16-PowerBI-Pyramid-Analytics-Registration.html?Is=Website)
-
 
 ###  Introductory webinars
+
+[What's New and Exciting in Power BI - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
 [What’s New and Exciting in Power BI- May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-10-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
