@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="07/12/2016"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
@@ -26,11 +26,13 @@ Power BI free and Pro licenses are different based on the kind of content users 
 
 If your content contains any of the following items, it's Power BI Pro content:
 
--   Data from a direct query dataset, such as [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data, [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md), [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md), or Apache [Spark for HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md).
+-   Data from a DirectQuery dataset, such as [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data, [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md), [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md), or Apache [Spark for HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md).
 
 -   Data from a [dataset that refreshes more frequently than daily](powerbi-refresh-data.md).
 
 -   Data from a dataset that connects to on-premises data using the [Power BI Gateway - Personal ](powerbi-personal-gateway.md) or [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md).
+
+-   Data (including reports, dashboards or tiles) from a dataset that uses [Row-level security (RLS)](powerbi-admin-rls.md).
 
 -   A dashboard or report that's installed from an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md).
 
