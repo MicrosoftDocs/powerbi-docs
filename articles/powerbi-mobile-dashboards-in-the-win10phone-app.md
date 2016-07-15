@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/24/2016"
+   ms.date="07/08/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Power BI mobile app for Windows 10  
@@ -43,6 +43,8 @@ Then in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-g
 
      You can also turn your phone sideways to [view dashboards in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
 
+    >**Tip**: If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
+
 5.  In the dashboard, you can:
 
     -   [Tap a tile](powerbi-mobile-tiles-in-the-win10phone-app.md) to open and interact with it.
@@ -61,6 +63,7 @@ You can also view dashboards in landscape mode, just by turning your phone. The 
 You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](powerbi-mobile-tiles-in-the-win10phone-app.md) to open the tile in focus mode and interact with your data.
 
 ### See also  
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
-[Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
-[Get started with Power BI](powerbi-service-get-started.md)  
+- [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
+- [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
+- [Get started with Power BI](powerbi-service-get-started.md)  
+- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)

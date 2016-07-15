@@ -17,10 +17,16 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/29/2016"
+   ms.date="07/08/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## July 2016
+
+### All phones
+
+In the Power BI service you can now [create a view of a dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
 ## June 2016
 
