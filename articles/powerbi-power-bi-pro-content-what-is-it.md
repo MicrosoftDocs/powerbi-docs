@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/12/2016"
+   ms.date="07/14/2016"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
@@ -30,7 +30,7 @@ If your content contains any of the following items, it's Power BI Pro content:
 
 -   Data from a [dataset that refreshes more frequently than daily](powerbi-refresh-data.md).
 
--   Data from a dataset that connects to on-premises data using the [Power BI Gateway - Personal ](powerbi-personal-gateway.md) or [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md).
+-   Data from a dataset that connects to on-premises data using the [Power BI Gateway - Personal ](powerbi-personal-gateway.md) or the [On-premises Data Gateway](powerbi-gateway-onprem.md).
 
 -   Data (including reports, dashboards or tiles) from a dataset that uses [Row-level security (RLS)](powerbi-admin-rls.md).
 
@@ -45,6 +45,8 @@ Conversely, if your content contains only the following items it will be consuma
 -   A dashboard or report connected to content packs for services (e.g. Dynamics CRM, Salesforce, and Google Analytics).
 
 -   A dashboard or report with data imported from files such as Excel spreadsheets, Power BI Desktop, and CSV.
+
+-   [Tiles pinned](https://msdn.microsoft.com/library/mt604784.aspx) from a report in SQL Server Reporting Services.
 
 
 For example, if you create a manufacturing dashboard that updates progress multiple times during the day, anyone *consuming* that dashboard would need a Power BI Pro license. Or, if you create a report using the Power BI Gateway - Enterprise, then another that uses the personal gateway, anyone *consuming or interacting* with either of those reports would need a Power BI Pro license.
