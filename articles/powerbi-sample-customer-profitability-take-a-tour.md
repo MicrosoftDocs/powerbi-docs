@@ -45,7 +45,7 @@ These tiles provide a team scorecard. The CFO needs to keep track of her manager
 
 Annelie’s GM% is the lowest, but we see a steady increase. Valery, on the other hand, has seen her GM% drop significantly. And Andrew had a volatile year. Click on any of the manager-specific tiles to open the underlying report. The report has 3 pages and opens to the “Industry Margin Analysis” page.
 
-## Explore the pages in the report  
+## Explore the pages in the report
 Our report has 3 pages:
 -   “Team Scorecard” focuses on the performance of the 5 managers and their “books of business.”
 -   “Industry Margin Analysis” provides a way to analyze our profitability compared to what’s going on in our entire industry.

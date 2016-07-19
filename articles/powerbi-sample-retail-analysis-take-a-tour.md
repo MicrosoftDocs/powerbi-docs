@@ -38,7 +38,7 @@ You can also [download just the dataset (Excel workbook) for this sample](http:
 
     This takes you to the "Store Sales Overview" page in the report. You see we have 104 total stores, 10 of them new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger on average.
 
-2.  In the doughnut chart, select **Fashions Direct**.
+2.  In the pie chart, select **Fashions Direct**.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail3.png)  
 
@@ -114,7 +114,7 @@ Let’s look at how specific districts are doing.
 
 1.  Select Allan Guinot in the slicer on the top left.
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlAllanAll.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail13.png)
 
     Note that Allan’s district outperformed Last Year in March and June.
 
