@@ -47,9 +47,9 @@ Annelie’s GM% is the lowest, but we see a steady increase. Valery, on the othe
 
 ## Explore the pages in the report
 Our report has 3 pages:
--   “Team Scorecard” focuses on the performance of the 5 managers and their “books of business.”
--   “Industry Margin Analysis” provides a way to analyze our profitability compared to what’s going on in our entire industry.
--   "Executive Scorecard" provides a view of each of our managers formatted to view in Cortana.
+-   "Team Scorecard" focuses on the performance of the 5 managers and their "books of business."
+-   "Industry Margin Analysis" provides a way to analyze our profitability compared to what's going on in our entire industry.
+-   "Executive Scorecard" provides a view of each of our managers formatted for viewing in Cortana.
 
 ### Team Scorecard page  
 ![](media/powerbi-sample-customer-profitability-take-a-tour/customer2.png)
