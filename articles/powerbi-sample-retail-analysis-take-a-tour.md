@@ -3,7 +3,7 @@
    description="Retail Analysis sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="amandacofsky"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/15/2016"
+   ms.date="07/18/2016"
    ms.author="amac"/>
 
 # Retail Analysis sample for Power BI: Take a tour
@@ -28,7 +28,7 @@ This industry sample dashboard and underlying report analyze retail sales data o
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_newDash.png)
+![](media/powerbi-sample-retail-analysis-take-a-tour/retail1.png)
 
 ##  Start on the dashboard and open the report
 
@@ -40,7 +40,7 @@ You can also [download just the dataset (Excel workbook) for this sample](http:
 
 2.  In the doughnut chart, select **Fashions Direct**.
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_donut.png)  
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail3.png)  
 
     Notice the result in the bubble chart:
 
@@ -62,7 +62,7 @@ You can also [download just the dataset (Excel workbook) for this sample](http:
 
     You see this screen:
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_QnA.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail7.png)
 
 ##  Review a tile created with Power BI Q&A
 
@@ -70,7 +70,7 @@ Let’s get more specific.
 
 1.  Add “this year sales **by district**” onto the question. Observe the result: It automatically put the answer in a bar chart and suggests other phrases:
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlQnABar.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail8.png)
 
 2.  Now change the question to “this year sales **by zip and chain**”.
 
@@ -96,13 +96,13 @@ Now let's explore on a more detailed level, looking at the districts' performanc
 
 2.  Select the bubble chart, and choose **020-Mens**.
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlMensXfltr.png)  
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail11.png)  
 
     Observe the men's category wasn't as severely affected in April as the business overall, but January and July were still problem months.
 
 3.  Now, select the **010-Womens’ bubble**.
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlWomensXfilter.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail12.png)
 
     Notice the women's category performed much worse than business overall across all months, and much worse in almost every month compared to the previous year.
 
@@ -120,7 +120,7 @@ Let’s look at how specific districts are doing.
 
 2.  Now, while Allan is still selected, select the Women’s bubble.
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlAllanWomen.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail14.png)
 
     Note that for the Women’s category, his district never met last year’s volume.
 
@@ -134,7 +134,7 @@ The last area we want to explore is our growth – new stores opened this year.
 
 1.  Select the 'Stores Opened This Year’ tile.
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail-analysis-4.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail15.png)
 
     As evident from the tile – more Fashions Direct stores than Lindseys stores opened this year.
 
@@ -144,13 +144,13 @@ The last area we want to explore is our growth – new stores opened this year.
 
      There is quite a bit of difference in Average Sales per SQF across the new stores.
 
-3.  Click on the Fashions Direct legend item in the bottom right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) $21.22 vs $12.86 respectively.
-
+3.  Click on the Fashions Direct legend item in the top right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) $21.22 vs $12.86 respectively.
+	
     ![](media/powerbi-sample-retail-analysis-take-a-tour/17b.png)
 
-4.  In the line chart at the bottom, click Winchester Fashions Direct in the legend. The first sales numbers were reported in February and is a leading store in terms of volume for almost every month.
+4.  Click Winchester Fashions Direct in the slicer and observe the line chart. The first sales numbers were reported in February and is a leading store in terms of volume for almost every month.
 
-5.  Click on Cincinnati 2 Fashions Direct in the line chart and you will see it was opened in June and it seems to be the worst performing store.
+5.  Click on Cincinnati 2 Fashions Direct in the slicer and you will see in the line chart that it was opened in June and it seems to be the worst performing store.
 
 6.  As before, explore by clicking on other bars, lines and bubbles throughout the charts and see what insights you can discover.
 
