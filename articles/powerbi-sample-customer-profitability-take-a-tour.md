@@ -47,6 +47,7 @@ Annelie’s GM% is the lowest, but we see a steady increase. Valery, on the othe
 
 ## Explore the pages in the report
 Our report has 3 pages:
+
 -   "Team Scorecard" focuses on the performance of the 5 managers and their "books of business."
 -   "Industry Margin Analysis" provides a way to analyze our profitability compared to what's going on in our entire industry.
 -   "Executive Scorecard" provides a view of each of our managers formatted for viewing in Cortana.
@@ -55,6 +56,7 @@ Our report has 3 pages:
 ![](media/powerbi-sample-customer-profitability-take-a-tour/customer2.png)
 
 Let’s look at two of the team members in detail and see what insights can be gained. In the slicer on the left, select Andrew's name to filter the report page to display only data about Andrew.
+
 -   For a quick KPI, look at Andrew’s **Revenue Status** - he is green. He’s performing well.
 -   The “Revenue Var % to Budget by Month”  Area chart shows that except for a dip in February, Andrew is doing pretty well overall. His dominant region is East and he handles 49 customers and 5 (out of 7) products. His GM% isn’t the highest or lowest.
 -   The “RevenueTY and Revenue Var % to Budget by Month” shows a steady even profit story.But when you filter by clicking on the square for **Central** in the region treemap, you discover that Andrew has revenue only in March and only in Indiana. Is this intentional or is this something that needs looking into?
