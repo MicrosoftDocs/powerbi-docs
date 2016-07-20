@@ -3,7 +3,7 @@
    description="Procurement Analysis sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="maggiesMSFT"
+   authors="amandacofsky"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/29/2016"
+   ms.date="07/18/2016"
    ms.author="amac"/>
 
 # Procurement Analysis sample for Power BI: Take a tour
@@ -30,7 +30,7 @@ This industry sample dashboard and underlying report analyze a manufacturing com
 
 This sample is part of a series that illustrates how you can use  Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
-![](media/powerbi-sample-procurement-analysis-take-a-tour/pbi_procanal_dash.png)
+![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement1.png)
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample.
 

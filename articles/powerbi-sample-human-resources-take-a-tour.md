@@ -3,7 +3,7 @@
    description="Human Resources sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="maggiesMSFT"
+   authors="amandacofsky"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2016"
+   ms.date="07/18/2016"
    ms.author="amac"/>
 
 # Human Resources sample for Power BI: Take a tour  
@@ -30,7 +30,7 @@ The HR department has the same reporting model across different companies, even 
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
-![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_dash.png)
+![](media/powerbi-sample-human-resources-take-a-tour/hr1.png)
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Human Resources Sample > Connect** to get your own copy of the sample.
 
@@ -130,7 +130,6 @@ The [Q&A question box](powerbi-service-how-to-use-q-and-a.md) is where you type 
     ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_qa_answer.png)
 
     Notice most of the female bad hires are under 30.
-2.  Click the back arrow ![](media/powerbi-sample-human-resources-take-a-tour/backarrow.png) to go back to the dashboard.
 
 This is a safe environment to play in. You can always choose not to save your changes. If you do save them, you can always go to **Get Data** for a new copy of this sample.
 

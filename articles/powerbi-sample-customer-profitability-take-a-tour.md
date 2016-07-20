@@ -3,7 +3,7 @@
    description="Customer Profitability sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="amac"
+   authors="amandacofsky"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/10/2015"
-   ms.author="mihart"/>
+   ms.date="07/18/2016"
+   ms.author="amac"/>
 
 # Customer Profitability sample for Power BI: Take a tour  
 
@@ -34,8 +34,8 @@ You can also [download just the dataset (Excel workbook) for this sample](power
 These tiles give our CFO a view of the high-level company metrics important to her.  When she sees something interesting, she can select a tile to dig into the data.
 
 1.  Our company gross margin is 42.5%.
-2.  We have 83 customers.
-3.  We sell 7 different products.
+2.  We have 80 customers.
+3.  We sell 5 different products.
 4.  We had our lowest revenue variance% to budget in February, followed by our highest in March.
 5.  Most of our revenue comes from the East and North regions. Gross margin has never exceeded budget, with ER-0 and MA-0 requiring some further investigation.
 6.  Total revenue for the year is close to budget.
@@ -43,12 +43,13 @@ These tiles give our CFO a view of the high-level company metrics important to h
 ### Manager-specific dashboard tiles  
 These tiles provide a team scorecard. The CFO needs to keep track of her managers and these tiles give her a high level overview of profit – using GM%. If the GM% trend is unexpected for any manager, then she can investigate further.
 
-Annelie’s GM% is the lowest, but we see a steady increase. Valery, on the other hand, has seen her GM% drop significantly. And Andrew had a volatile year. Click on any of the manager-specific tiles to open the underlying report. The report has 2 pages and opens on the “Team Scorecard” page.
+Annelie’s GM% is the lowest, but we see a steady increase. Valery, on the other hand, has seen her GM% drop significantly. And Andrew had a volatile year. Click on any of the manager-specific tiles to open the underlying report. The report has 3 pages and opens to the “Industry Margin Analysis” page.
 
-## Explore the pages in the report  
-Our report has 2 pages:
--   “Team Scorecard” focuses on the performance of the 5 managers and their “books of business.”
--   “Industry Margin Analysis” provides a way to analyze our profitability compared to what’s going on in our entire industry.
+## Explore the pages in the report
+Our report has 3 pages:
+-   "Team Scorecard" focuses on the performance of the 5 managers and their "books of business."
+-   "Industry Margin Analysis" provides a way to analyze our profitability compared to what's going on in our entire industry.
+-   "Executive Scorecard" provides a view of each of our managers formatted for viewing in Cortana.
 
 ### Team Scorecard page  
 ![](media/powerbi-sample-customer-profitability-take-a-tour/customer2.png)
@@ -108,7 +109,7 @@ Let's take a look at the *Distribution* industry.
 
 4.  Select **﻿Tina**﻿ and then **Valery** in the "Gross Margin by Month and Executive Name" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery. 
 
-5.  To see actual revenue, return to the dashboard and use Q&A to ask **total revenue for distribution by scenario by executive as clustered bar chart**.  
+5.  To see actual revenue, return to the dashboard and use Q&A to ask **total revenue for distribution by scenario by executive**.  
 
     ![](media/powerbi-sample-customer-profitability-take-a-tour/customer8.png)
 
