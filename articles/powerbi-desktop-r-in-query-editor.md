@@ -22,15 +22,15 @@
 
 # Using R in Query Editor
 
-You can use R, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Query Editor**. This integration of R into **Query Editor** lets you perform data cleansing using R, and perform advanced data shaping and completion of missing data in datasets, predictions, and clustering, just to name a few. R is a powerful language, and can be used in Query Editor to get your data ready for data model and report creation.
+You can use **R**, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Query Editor**. This integration of R into **Query Editor** lets you perform data cleansing using R, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. **R** is a powerful language, and can be used in **Query Editor** to prepare your data model and create reports.
 
 ## Installing R
 
-To use R in the Power BI Desktop **Query Editor**, you need to install **R** on your local machine. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+To use **R** in Power BI Desktop's **Query Editor**, you need to install **R** on your local machine. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
 ## Using R in Query Editor
 
-To show how to use R in Query Editor, we'll use an example from a stock market dataset, based on a .CSV file that you can [download from here] and follow along. The steps for this example are the following.
+To show how to use **R** in **Query Editor**, we'll use an example from a stock market dataset, based on a .CSV file that you can [download from here] and follow along. The steps for this example are the following:
 
 1.  First, load your data into **Power BI Desktop**. In this example we'll load the *EuStockMarkets_NA.csv* file. Select **Get Data > CSV** from the **Home** ribbon in **Power BI Desktop**.
 
