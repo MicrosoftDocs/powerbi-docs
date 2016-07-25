@@ -34,7 +34,7 @@ You can set alerts in the Power BI mobile app for Windows 10 and in the Power BI
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-no-alerts-yet.png)
 
-4.  Choose to receive alerts above or below a value, then set the value.
+4.  Choose to receive alerts above or below a value, and type the value.
   
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-set-alert.png)
 
@@ -44,7 +44,7 @@ You can set alerts in the Power BI mobile app for Windows 10 and in the Power BI
     
 6.  You can change the alert title, too.
 
-6.  Tap **Save**.
+6.  Tap the check mark.
 
 7.  A single tile can have alerts for values both above and below thresholds. In **Manage alerts**, tap the plus sign (+).
 
