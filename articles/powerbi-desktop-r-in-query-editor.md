@@ -50,7 +50,7 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
 
 5.  In the **Transform** tab, select **Run R Script** and the **Run R Script** editor appears (shown in the next step).
 
-    ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_5a.png)
+    ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_5d.png)
 
 6.  For this example, we'll enter the following script code:
 
@@ -60,6 +60,8 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
         output <- dataset
         output$completedValues <- completedData$"SMI missing values"
 
+    >**Note:** You'll need to have the *mice* library installed in your R environment for the previous script code to work properly.
+
     When put into the **Run R Script** dialog, the code looks like the following:
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_5b.png)
@@ -68,13 +70,13 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_6.png)
 
-8.  Next, we need to set all data sources to *public*.
+8.  For the R scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](powerbi-desktop-privacy-levels.md).
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_7.png)
 
-    Once we do so, we see a new column in the **Fields** well called *completedValues*.
+    Once we do so, we see a new column in the **Fields** well called *completedValues*. Notice there are a few missing data elements, such as on row 15 and 18. We'll see how R handles that in the next section.
 
-    [I ran into an error here, saying I didn't have mice installed - let me know the steps to do that, I'll install and finish the visuals/images]
+    Notice
 
 With just five lines of R script, **Query Editor** filled in the missing values with a predictive model.
 
@@ -86,17 +88,26 @@ Now we can create a visual to see how the R script code using the *mice* library
 
 Once that visual is complete, and any other visuals we might want to create using **Power BI Desktop**, we can save the **Power BI Desktop** file (which saves as a .pbix file) and then use the data model, including the R scripts that are part of it, in the Power BI service.
 
+Once you've uploaded the .pbix file to the Power BI service, a couple more steps are necessary to enable data refresh (in the service) and to enable visuals to be updated in the service (the data needs access to R for visuals to be updated). The additional steps are the following:
+
+-   **Enable scheduled refresh for the dataset** - to enable scheduled refresh for the workbook that contains your dataset with R scripts, see [Configuring scheduled refresh](powerbi-refresh-scheduled-refresh.md), which also includes information about **Personal Gateway**.
+
+-   **Install the Personal Gateway** - you need a **Personal Gateway** installed on the machine where the file is located, and where R is installed; the Power BI service must access that workbook and re-render any updated visuals. You can get more information on how to [install and configure Personal Gateway](powerbi-personal-gateway.md).
+
+
 
 ## Limitations
 
 There are some limitations to queries that include R scripts created in **Query Editor**:
 
--   All R data source settings must be set to *Public*, and all other steps in a query created in **Query Editor** must also be public. To get to data source settings, in **Power BI Desktop** select **File > Options and settings > Data source settings**
+-   All R data source settings must be set to *Public*, and all other steps in a query created in **Query Editor** must also be public. To get to data source settings, in **Power BI Desktop** select **File > Options and settings > Data source settings**.
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_9.png)
 
     From the **Data Source Settings** dialog, select the the data source(s) and then select **Edit Permissions...** and ensure that the **Privacy Level** is set to *Public*.
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_10.png)    
+
+-   To enable scheduled refresh of your R visuals or dataset, you need to enable **Scheduled refresh** and have a **Personal Gateway** installed on the computer that houses the workbook and the R installation. For more information on both, see the previous section in this article, which provides links to learn more about each.
 
 There are all sorts of things you can do with R and custom queries, so explore and shape your data just the way you want it to appear.
