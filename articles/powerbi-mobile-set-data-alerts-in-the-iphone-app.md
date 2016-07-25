@@ -80,5 +80,5 @@ You can manage individual alerts on your iPhone or [manage all your alerts in th
 
 ### See also  
 - [Manage your alerts in the Power BI service](powerbi-service-set-data-alerts.md) 
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
+- [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
 - [Get started with Power BI](powerbi-service-get-started.md)  
