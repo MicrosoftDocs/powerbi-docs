@@ -10,9 +10,17 @@ The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for
 
 This is not the account used to connect to on-premises data sources.  This is also not your work or school account that you sign into cloud services with.
 
+If you encounter issues with your proxy server, due to authentication, you may want to change the Windows service account to a domain user or managed service account. You can learn how to change the account in [proxy configuration](powerbi-gateway-proxy.md#change-the-on-premises-data-gateway-service-account).
+
 ## Ports
 
 The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/)
+
+It is recommended that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653). This list is updated weekly. 
+
+> **Note:** The IP Addresses listed in the Azure Datacenter IP list are in CIDR notation. For example, 10.0.0.0/24 does not mean 10.0.0.0 thru 10.0.0.24. Learn more about the [CIDR notation](http://whatismyipaddress.com/cidr).
+
+Here is a listing of the fully qualified domain names used by the gateway.
 
 |Domain names|Outbound ports|Description|
 |---|---|---|
@@ -24,8 +32,6 @@ The gateway creates an outbound connection to Azure Service Bus. It communicates
 |*.core.windows.net|443|HTTPS|
 |login.microsoftonline.com|443|HTTPS|
 |*.msftncsi.com|443|Used to test internet connectivity if the gateway is unreachable by the Power BI service.|
-
-If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. In some cases, the Azure Service Bus connections will be made with IP Address instead of the fully qualified domain names. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
 
 ## High Availability
 

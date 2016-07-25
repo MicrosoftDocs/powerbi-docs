@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2016"
+   ms.date="07/25/2016"
    ms.author="asaxton"/>
 # SQL Server Analysis Services live data in Power BI
 
@@ -25,17 +25,17 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 
  ![](media/powerbi-sql-server-analysis-services-tabular-data/importantIcon.png) **Important:**
 
--   In order to connect to a live Analysis Services server, a Power BI Gateway - Enterprise must be installed and configured by an administrator. For more information, see [Configure a Power BI Analysis Services Connector](powerbi-gateway-enterprise.md).
+-   In order to connect to a live Analysis Services server, an On-premises Data Gateway must be installed and configured by an administrator. For more information, see [On-premises Data Gateway](powerbi-gateway-onprem.md).
 
 -   When you use the gateway, your data remains on-premises.  The reports you create based on that data are saved in the Power BI service. 
 
--   Q&A natural language querying is not currently available for live connections.  Only cloud-based datasets are supported for Q&A.
+-   [Q&A natural language querying](powerbi-service-q-and-a-direct-query.md) is in preview for Analysis Services live connections.
 
 > **Note**: Working with live Analysis Services servers, along with Groups, are Pro features. [Learn more](powerbi-power-bi-pro-content-what-is-it.md)
 
 ## To connect to a model from Get data
 
-1.  In **My Workspace**, click **Get data**. You can also change to a group workspace, if one is available.
+1.  In **My Workspace**, select **Get data**. You can also change to a group workspace, if one is available.
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_GetDataButton.png)
 
@@ -43,7 +43,7 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_GetData_1.png)
 
-3.  Click **SQL Server Analysis Services** > **Connect**. 
+3.  Select **SQL Server Analysis Services** > **Connect**. 
 
 	![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_GetData_2.png)
 
@@ -59,8 +59,8 @@ If you pin visuals from a report to the dashboard, the pinned tiles are automati
 
 ## See also
 
-[Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)
 
 [Manage Analysis Services data sources](powerbi-gateway-enterprise-manage-ssas.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)

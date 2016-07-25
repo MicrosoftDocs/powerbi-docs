@@ -16,13 +16,13 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/01/2016"
+ms.date="07/25/2016"
 ms.author="asaxton"/>
 # Configuring scheduled refresh
 
 If your dataset supports scheduled refresh, by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data Source Credentials**, and **Schedule Refresh**. Let’s take a closer look at each.
 
-This will describe the options available for both the [Power BI Gateway – Personal](powerbi-personal-gateway.md) and the [Power BI Gateway – Enterprise](powerbi-gateway-enterprise.md).
+This will describe the options available for both the [Power BI Gateway – Personal](powerbi-personal-gateway.md) and the [On-premises Data Gateway](powerbi-gateway-onprem.md).
 
 To get to the schedule refresh screen, you can do the following.
 
@@ -92,7 +92,7 @@ Certain datasets are supported against different gateways for scheduled refresh.
 -   All online data sources shown in Power Pivot.\*
 -   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
-### Power BI Gateway - Enterprise
+### On-premises Data Gateway
 
 |**Data source**|
 |---|
@@ -110,14 +110,18 @@ Certain datasets are supported against different gateways for scheduled refresh.
 |IBM DB2|
 |MySQL|
 |Sybase|
+|SAP BW|
+|IBM Informix Database|
 
 ## See also
 
 [Data refresh in Power BI](powerbi-refresh-data.md)
 
-[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)
-
 [Power BI Gateway - Personal](powerbi-personal-gateway.md)
 
-[Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)
+
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
