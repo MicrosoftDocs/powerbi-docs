@@ -38,6 +38,9 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 **Question:** Where are my credentials stored?  
 **Answer:** The credentials you enter for a data source are stored encrypted in the gateway cloud service. The credentials are decrypted at the gateway on-premises.
 
+**Question:** Can I place the gateway in a DMZ?
+**Answer:** The gateway requires connectivity to the data source. If the data source is not in your DMZ, the gateway may not be able to connect to it. For example, your SQL Server may not be in your DMZ. And, you cannot connect to your SQL Server from the DMZ. If you placed the gateay in your DMZ, it would not be able to reach the SQL Server.
+
 ## High Availability/Disaster Recovery
 
 **Question:** Are there any plans for enabling high availability scenarios with the gateway?  

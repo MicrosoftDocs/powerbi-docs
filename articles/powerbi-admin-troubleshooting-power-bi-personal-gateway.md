@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="identified"
-   qualityDate="06/13/2016"/>
+   qualityDate="07/25/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -147,4 +147,4 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 
 [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)

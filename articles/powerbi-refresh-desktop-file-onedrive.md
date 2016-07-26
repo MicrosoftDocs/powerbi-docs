@@ -40,7 +40,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 -   All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
 -   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
-### Power BI Gateway - Enterprise
+### On-premises Data Gateway
 
 |**Data source**|
 |---|
@@ -58,6 +58,8 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 |IBM DB2|
 |MySQL|
 |Sybase|
+|SAP BW|
+|IBM Informix Database|
 
 > **Note:** A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
 
@@ -83,4 +85,8 @@ If you’re making changes to the Power BI Desktop file on OneDrive and saving, 
 
 Be sure to leave the **Send refresh failure notification email to me** checked. You’ll want to know right away if a scheduled refresh fails.
 
-To learn more about how to troubleshoot refresh issues, see [Troubleshooting refresh.scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)and [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md).
+## See also
+
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)

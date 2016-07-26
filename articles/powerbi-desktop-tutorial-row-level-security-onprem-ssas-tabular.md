@@ -97,17 +97,17 @@ There are many published articles describing how to define row level dynamic sec
 
 10.  Now we need to process and deploy the model. You can refer [this article](https://msdn.microsoft.com/library/hh231693.aspx) for assistance in deploying the model.
 
-## Task 3: Adding Data Sources with Power BI Enterprise Gateway
+## Task 3: Adding Data Sources within your On-premises Data Gateway
 
 1.  Once your tabular model is deployed and ready for consumption, you need to add a data source connection to your on-premises Analysis Services tabular server with in your Power BI portal.
 
-2.  To allow the **Power BI service** access your on-premises analysis service, you need to have the **[Power BI Enterprise Gateway](powerbi-gateway-enterprise.md)** installed and configured in your environment.
+2.  To allow the **Power BI service** access your on-premises analysis service, you need to have an **[On-premises Data Gateway](powerbi-gateway-onprem.md)** installed and configured in your environment.
 
-3.  Once the **Power BI Enterprise Gateway** is correctly configured, you need to create a data source connection for your **Analysis Services** tabular instance. This article will help you with [adding data source with in the Power BI portal](powerbi-gateway-enterprise-manage-ssas.md).
+3.  Once the gateway is correctly configured, you need to create a data source connection for your **Analysis Services** tabular instance. This article will help you with [adding data source within the Power BI portal](powerbi-gateway-enterprise-manage-ssas.md).
 
     ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/PBI_Gateway.png)
 
-4. With the previous step complete, the **Power BI Enterprise Gateway** is configured and ready interact with your on-premises **Analysis Services** data source.
+4. With the previous step complete, the gateway is configured and ready interact with your on-premises **Analysis Services** data source.
 
 ## Task 4: Creating report based on analysis services tabular model using Power BI desktop
 
@@ -200,6 +200,7 @@ There are many published articles describing how to define row level dynamic sec
 ## Considerations
 
 There are a few considerations to keep in mind when working with row level security, SSAS and Power BI.
+
 1.   On-premise row level security with Power BI is only available with Live Connection.
 
 2.   Any changes in the data after processing the model would be immediately available for the users who are accessing the report is based on **live connection** from the Power BI service.

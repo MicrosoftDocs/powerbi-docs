@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/05/2016"
+ms.date="07/25/2016"
 ms.author="asaxton"/>
 # Configuring proxy settings for the On-premises Data Gateway
 
@@ -90,6 +90,36 @@ The default proxy configuration is the following.
 The default configuration works with windows authentication. If your proxy uses another form of authentication, you will need to change the settings. If you are not sure, you should contact your network administrator.
 
 To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network Settings)](https://msdn.microsoft.com/library/kd3cf2ex.aspx)
+
+## Changing the gateway service account to a domain user
+
+When configuring the proxy settings to use default credentials, as explained above, you may encounter authentication issues with your proxy. This is because the default service account is the Service SID and not an authenticated domain user. You can change the service account of the gateway to allow proper authentication with your proxy.
+
+> **Note**: It is recommended that you use a managed service account to avoid having to reset passwords. Learn how to create a [managed service account](https://technet.microsoft.com/library/dd548356.aspx) within Active Directory.
+
+### Change the On-Premises Data Gateway service account
+
+1. Change the Windows service account for the **On-premises Data Gateway service**. 
+
+    The default account for this service is *NT SERVICE\PBIEgwService*. You will want to change this to a domain user account within your Active Directory domain. Or, you will want to use a managed service account to avoid having to change the password.
+
+    You will want to change the account on the **Log On** tab within the properties of the Windows service.
+
+2. Restart the **On-premises Data Gateway service**.
+
+    From an admin command prompt, issue the following commands.
+
+        net stop PBIEgwService
+
+        net start PBIEgwService
+
+3. Start the **On-premises Data Gateway configurator**. You can select the windows start button and search for *On-premises Data Gateway*.
+
+4. Sign in to Power BI.
+
+5. Restore the gateway using your recovery key.
+
+    This will allow the new service account to be able to decrypt stored credentials for data sources.
 
 ## See also
 

@@ -23,11 +23,11 @@
 
 # Enable Q&A for Direct Query (Preview)
 
-##  What is Power BI Gateway - Enterprise?  What is DirectQuery?
+##  What is On-premises Data Gateway?  What is DirectQuery?
 
-Datasets in Power BI can be imported into Power BI or you can create a live connection to them. Live connection datasets are often referred to as "on-premises". The live connections are managed using a Power BI gateway and data and inquiries are sent back and forth using DirectQuery.
+Datasets in Power BI can be imported into Power BI or you can create a live connection to them. Live connection datasets are often referred to as "on-premises". The live connections are managed using a [gateway](powerbi-gateway-onprem.md) and data and inquiries are sent back and forth using DirectQuery.
 
-##  Q&A for Power BI Gateway - Enterprise datasets
+##  Q&A for On-premises Data Gateway datasets
 
 If you'd like to use Q&A with datasets you access through a gateway, you'll need to enable them first.
 
@@ -40,7 +40,7 @@ Since Power BI Q&A uses the text and schema values from your data source to dete
 
 For more information, see:
 
-- What is [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md)?
+- What is the [On-premises Data Gateway](powerbi-gateway-onprem.md)?
 
 - [Introduction to Power BI Q&A](powerbi-service-q-and-a.md)
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/18/2016"
+   ms.date="07/25/2016"
    ms.author="asaxton"/>
 
 # Data refresh in Power BI  
@@ -36,9 +36,9 @@ Before we go any further, it’s important to know how data refresh works depend
 |---|---|---|
 |Datasets scheduled to refresh|Daily|Hourly*|
 |Streaming data in your dashboards and reports using Microsoft Power BI REST API or Microsoft Stream Analytics.|10k rows/hour|1M rows/hour|
-|Live/DirectQuery on-premises data sources with full interactivity via the Power BI Gateway - Enterprise| | ![](media/powerbi-refresh-data/checkmark.png)|
+|Live/DirectQuery on-premises data sources with full interactivity via the On-premises Data Gateway| | ![](media/powerbi-refresh-data/checkmark.png)|
 |Live cloud data sources with full interactivity (Azure SQL Database, Azure SQL Data Warehouse, Spark on HDInsight)| | ![](media/powerbi-refresh-data/checkmark.png)|
-|On-premises data sources requiring a Power BI Gateway - Personal and/or the Power BI Gateway - Enterprise.| | ![](media/powerbi-refresh-data/checkmark.png)|
+|On-premises data sources requiring a Power BI Gateway - Personal and/or the On-premises Data Gateway.| | ![](media/powerbi-refresh-data/checkmark.png)|
 
 \* Up to eight times (hours) per day.
 
@@ -167,9 +167,9 @@ Refresh capabilities for a dataset included within an organization content pack 
 To learn more, see [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md).
 
 ## Live connections and DirectQuery to on-premises data sources 
-With the enterprise gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh. 
+With the On-premises Data Gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh. 
 
-When you configure a data source with the enterprise gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
+When you configure a data source with the On-premises Data Gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
 
 > **Note**: If your dataset is configured for a live or DirectQuery connection, you will not have the option to use scheduled refresh. Scheduled refresh is only available for imported datasets.
 
@@ -182,7 +182,7 @@ When you configure a data source with the enterprise gateway, you can use that d
 |Oracle|Yes|Yes|Yes|
 |Teradata|Yes|Yes|Yes|
 
-To learn more, see [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md)
+To learn more, see [On-premises Data Gateway](powerbi-gateway-onprem.md)
 
 ## Databases in the cloud  
 With DirectQuery, there is a direct connection between Power BI and the database in the cloud. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. If there is no user interaction in a visualization, like in a dashboard, data is refreshed automatically about every fifteen minutes. Because there is a direct connection between Power BI and the database, there is no need to manually refresh or setup a refresh schedule for the dataset. And, because both the Power BI service and the data source are in the cloud, there is no need for a Personal Gateway.
@@ -229,7 +229,7 @@ In this case, you can manually refresh the data in the SalesReport.xlsx dataset 
 
 > **Note**: This will only update the data within the dataset in the Power BI service. Your local file will not be updated as part of the refresh.
 
-To learn more, see  [Excel data in Power BI](powerbi-service-excel-data.md), [Power BI Gateway - Personal](powerbi-personal-gateway.md), [Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md), [Refresh a dataset created from an Excel workbook on a local drive](powerbi-refresh-excel-file-local-drive.md).
+To learn more, see  [Excel data in Power BI](powerbi-service-excel-data.md), [Power BI Gateway - Personal](powerbi-personal-gateway.md), [On-premises Data Gateway](powerbi-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](powerbi-refresh-excel-file-local-drive.md).
 
 ### Power BI Desktop file with data from an OData feed  
 In this case, you use Get Data in Power BI Desktop to connect to and import census data from an OData feed.  You create several reports in Power BI Desktop, then name the file WACensus and save it on a share in your company. You then publish the file to the Power BI service.
@@ -267,4 +267,4 @@ For more information about troubleshooting, see [Tools for troubleshooting refre
 
 [Power BI Gateway - Personal](powerbi-personal-gateway.md)
 
-[Power BI Gateway - Enterprise](powerbi-gateway-enterprise.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)
