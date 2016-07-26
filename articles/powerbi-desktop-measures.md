@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="07/26/2016"
    ms.author="davidi"/>
 # Measures in Power BI Desktop
 
@@ -47,7 +47,7 @@ She notices that even though she did not specify a calculation herself, one has 
 
 But, Jan needs a measure to calculate sales projections for the coming year, which will be based on last year’s sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, she’ll create her own measure. Using the New Measure feature, she creates a new measure, then enters the following DAX formula:
 
-	Projected Sales = SUM('Sales'[Last Years Sales])\*1.06
+	Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 
 Jan then drags her new Projected Sales measure into the chart.
 
