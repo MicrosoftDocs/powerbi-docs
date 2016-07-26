@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/25/2016"
+   ms.date="07/27/2016"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI mobile app for Windows 10  
@@ -71,6 +71,8 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 3. Tap the alert to change a value or turn it off. 
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-add-another-alert.png)
+
+4. To delete the alert altogether, right-click or tap and hold > **Delete**.
 
 ## Tips and troubleshooting
 - You can't set alerts for dashboards that have been shared with you.
