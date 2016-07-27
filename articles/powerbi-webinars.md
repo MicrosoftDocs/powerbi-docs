@@ -29,9 +29,9 @@ The following webinars can help you to understand and use Power BI. After you re
 
 [Power BI Embedded Deep Dive - 08/09/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
 
-[Using Power BI to build Financial Dashboards by Avi Singh - 8/16/2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
+[Using Power BI to build Financial Dashboards by Avi Singh - 8/16/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
 
-[R for the masses with Power BI - 8/18/2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-18-PowerBI-R-for-Masses-Registration.html?Is=Website)
+[R for the masses with Power BI - 8/18/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-18-PowerBI-R-for-Masses-Registration.html?Is=Website)
 
 
 ## On-Demand webinars
