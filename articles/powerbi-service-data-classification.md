@@ -84,10 +84,11 @@ Once you fill in the form with your classification types, select **Apply** to sa
 At this point, all dashboards will be assigned the default classification, and dashboard owners will now be able to update the classification type to the one appropriate for her content. You can return here in the future to add or remove classification types or change the default.  
 
 >**Note**  
->There are a few important things to remember when you come back to make changes:  
->-   If you turn data classification off, none of the tags are remembered. You will need to start over if you decide to turn it back on later.  
->-   If you remove a classification type, any dashboards assigned the removed classification type will be assigned back to the default until the owner goes and sets it again.  
->-   If you change the default, all dashboards that weren’t already assigned a classification type by the owner will change to the new default. 
+>There are a few important things to remember when you come back to make changes:
+
+>- If you turn data classification off, none of the tags are remembered. You will need to start over if you decide to turn it back on later.  
+>- If you remove a classification type, any dashboards assigned the removed classification type will be assigned back to the default until the owner goes and sets it again.  
+>- If you change the default, all dashboards that weren’t already assigned a classification type by the owner will change to the new default. 
 
 ## Limitations
 Data classification tags are not currently supported for the following. These will be coming soon. 
