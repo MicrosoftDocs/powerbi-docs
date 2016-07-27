@@ -17,8 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="07/26/2016"
    ms.author="davidi"/>
+
+
 # Data sources in Power BI Desktop
 
 With Power BI Desktop, you can connect to data from many different sources. A full list of available data sources is at the bottom of this page.
@@ -72,10 +74,15 @@ The **Database** category provides the following data connections:
 -   Sybase Database
 -   Teradata Database
 -   SAP HANA Database
+-   SAP Business Warehouse
+-   Impala (Beta)
+-   Amazon Redshift (Beta)
+
+> **Note:** Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings.
 
 The following image shows the **Get Data** window for **Database**.
 
-![](media/powerbi-desktop-data-sources/DataSources_Database.png)
+![](media/powerbi-desktop-data-sources/DataSources_Database2.png)
 
 
 The **Azure** category provides the following data connections:
@@ -105,6 +112,7 @@ The **Online Services** category provides the following data connections:
 -   Salesforce Objects
 -   Salesforce Reports
 -   appFigures (Beta)
+-   Azure Enterprise (Beta)
 -   comScore Digital Analytix (Beta)
 -   GitHub (Beta)
 -   MailChimp (Beta)
@@ -125,7 +133,7 @@ The **Online Services** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Online Services**.
 
-![](media/powerbi-desktop-data-sources/DataSources_OnlineServices2.png)
+![](media/powerbi-desktop-data-sources/DataSources_OnlineServices.png)
 
 The **Other** category provides the following data connections:
 
@@ -142,13 +150,13 @@ The **Other** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Other**.
 
-![](media/powerbi-desktop-data-sources/PBID_GetDataOther.png)
+![](media/powerbi-desktop-data-sources/PBID_GetDataOther2.png)
 
 ## Connecting to a Data Source
 
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
-![](media/powerbi-desktop-data-sources/PBID_GetDataOther.png)
+![](media/powerbi-desktop-data-sources/PBID_GetDataOther2.png)
 
 
 A connection window is displayed, specific to the type of data connection. If credentials are required, you’ll be prompted to provide them. The following image shows a URL being entered to connect to a Web data source.
