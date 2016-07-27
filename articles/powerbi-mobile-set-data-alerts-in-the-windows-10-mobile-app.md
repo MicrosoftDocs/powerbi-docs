@@ -22,9 +22,9 @@
 
 # Set data alerts in the Power BI mobile app for Windows 10  
 
-You can set alerts in the Power BI mobile app for Windows 10 and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards, gauges, and KPIs. You can set data alerts in the Power BI mobile app and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+You can set alerts in the Power BI mobile app for Windows 10 and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts in the Power BI mobile app and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
 
-1.  Tap a number, gauge, or KPI tile in a dashboard to open it.  
+1.  Tap a number or gauge tile in a dashboard to open it.  
 
 2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-off.png) to add an alert.  
   
@@ -62,7 +62,7 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 
 ### Manage alerts in the Power BI mobile app
 
-1.  In a dashboard, tap a card, gauge, or KPI tile that has an alert.  
+1.  In a dashboard, tap a card or gauge tile that has an alert.  
 
 2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-on.png).  
   

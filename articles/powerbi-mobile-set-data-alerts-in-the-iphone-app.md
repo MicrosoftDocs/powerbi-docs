@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/25/2016"
+   ms.date="07/27/2016"
    ms.author="maggies"/>
 
 # Set data alerts in the iPhone app (Power BI for iOS)  
 
-You can set alerts in the Power BI mobile app on the iPhone and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards, gauges, and KPIs. You can set data alerts on your iPhone and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+You can set alerts in the Power BI mobile app on the iPhone and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts on your iPhone and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
 
-1.  Tap a number, gauge, or KPI tile in a dashboard to open it.  
+1.  Tap a number or gauge tile in a dashboard to open it.  
 
 2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneBellIconUnselect.png) to add an alert.  
   
@@ -62,7 +62,7 @@ You can manage individual alerts on your iPhone or [manage all your alerts in th
 
 ### Manage alerts on your iPhone
 
-1.  In a dashboard, tap a card, gauge, or KPI tile that has an alert.  
+1.  In a dashboard, tap a number or gauge tile that has an alert.  
 
 2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneBellIconUnselect.png).  
   

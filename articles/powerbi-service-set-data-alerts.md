@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="07/27/2016"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
 
-Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards, gauges, and KPIs. Only you can see the alerts you set, even if you share your dashboard. You can [set data alerts in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) and in the Power BI service, and see them in both places.
+Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards and gauges. Only you can see the alerts you set, even if you share your dashboard. You can [set data alerts in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) and in the Power BI service, and see them in both places.
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types.png)
 
