@@ -50,11 +50,28 @@ You can set alerts in the Power BI mobile app on the iPhone and in the Power BI 
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-add-alert-rule.png)
 
-## View alerts
+## Receiving alerts
 
 You receive alerts in the Power BI [Notification Center](powerbi-mobile-notification-center.md) on your iPhone or in the Power BI service, along with notifications about new dashboards that someone has shared with you.
 
-Data sources are often set to refresh daily, although some refresh more often. When the data in the dashboard is refreshed, you receive an alert if the new value is above or below the number you set.
+Data sources are often set to refresh daily, although some refresh more often. When the data in the dashboard is refreshed, if the data being tracked reaches one of the thresholds you've set, several things will happen.
+
+1.  Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent.
+
+    As long as the data is past the threshold, you'll get an alert every hour or every 24 hours.
+
+2.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
+
+    ![](media/powerbi-service-set-data-alerts/powerbi-alerts-email.png)
+
+3.  Power BI adds a message to your [**Notification center**](powerbi-mobile-notification-center.md) and adds a new alert icon to the applicable tile.
+
+    ![](media/powerbi-service-set-data-alerts/powerbi-alert-notifications.png)
+
+4. Open your Notification center to see the alert details.
+
+>**Note**: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
+
 
 ## Manage alerts
 

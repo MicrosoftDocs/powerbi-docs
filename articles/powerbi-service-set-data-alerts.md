@@ -42,24 +42,25 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-title.png)
 
-4.  Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if the number of total stores goes above 100. Alerts will appear in our [Notification center](powerbi-service-notification-center.md). And we'll have Power BI send us an email as well.
+4.  Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if the number of total stores goes above 100. Alerts will appear in our Notification center. And we'll have Power BI send us an email as well.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-set-alert-details.png)
 
 5. Select **Save**.
 
 
+## Receiving alerts
+When the data being tracked reaches one of the thresholds you've set, several things will happen.
 
-##    Receiving alerts
-When the data being tracked reaches one of the threshholds you've set, several things will happen.
+1.  Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent.
 
-1.  Power BI checks to see if it's been more than 24 hours or more than 1 hour (depending on the option you selected) since the last alert was sent.
+    As long as the data is past the threshold, you'll get an alert every hour or every 24 hours.
 
 2.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alerts-email.png)
 
-3.  Power BI adds a message to your [**Notification center**](powerbi-service-notification-center.md) and adds a new alert icon to the applicable tile.
+3.  Power BI adds a message to your **Notification center** and adds a new alert icon to the applicable tile.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-notifications.png)
 
@@ -67,7 +68,7 @@ When the data being tracked reaches one of the threshholds you've set, several t
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-notfication.png)
 
->**NOTE**: Alerts will only work on data that is being refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
+>**Note**: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
 
 
 ## Manage alerts
