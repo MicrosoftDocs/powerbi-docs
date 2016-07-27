@@ -48,7 +48,7 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_4.png)
 
-5.  In the **Transform** tab, select **Run R Script** and the **Run R Script** editor appears (shown in the next step).
+5.  In the **Transform** tab, select **Run R Script** and the **Run R Script** editor appears (shown in the next step). Notice that rows 15 and 20 suffer from missing data, as do other rows you can't see in the following image. The steps below show how R can (and will) complete those rows for you.
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_5d.png)
 
@@ -60,7 +60,8 @@ To show how to use **R** in **Query Editor**, we'll use an example from a stock 
         output <- dataset
         output$completedValues <- completedData$"SMI missing values"
 
-    >**Note:** You'll need to have the *mice* library installed in your R environment for the previous script code to work properly.
+    >**Note:** You'll need to have the *mice* library installed in your R environment for the previous script code to work properly. To install mice, run the following in your R installation:
+        |      > install.packages('mice')
 
     When put into the **Run R Script** dialog, the code looks like the following:
 
