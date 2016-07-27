@@ -62,11 +62,9 @@ Data sources are often set to refresh daily, although some refresh more often. W
 
 2.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
 
-    ![](media/powerbi-service-set-data-alerts/powerbi-alerts-email.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/powerbi-alerts-email.png)
 
-3.  Power BI adds a message to your [**Notification center**](powerbi-mobile-notification-center.md) and adds a new alert icon to the applicable tile.
-
-    ![](media/powerbi-service-set-data-alerts/powerbi-alert-notifications.png)
+3.  Power BI adds a message to your [**Notification center**](powerbi-mobile-notification-center.md) ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-alert-notifications-icon.png) and adds a new alert icon to the applicable tile ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/powerbi-alert-tile-notification-icon.png).
 
 4. Open your Notification center to see the alert details.
 
