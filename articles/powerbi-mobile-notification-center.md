@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/25/2016"
+   ms.date="07/27/2016"
    ms.author="maggies"/>
 
 # Get notifications in the Power BI mobile apps
@@ -34,9 +34,9 @@ Notifications bring information related to your Power BI experience right to you
 
 2.  If you've received notifications, when you sign in to Power BI on your mobile device you see a yellow dot on main menu icon ![](media/powerbi-mobile-notification-center/power-bi-android-menu-notifications-icon.png) (Android) or on the **Notifications** icon. 
   
-    ![](media/powerbi-mobile-notification-center/power-bi-mobile-notifications-dot.png)
+    ![](media/powerbi-mobile-notification-center/power-bi-windows-10-notifications.png)
 
-3.  Select the Notifications icon ![](media/powerbi-mobile-notification-center/power-bi-windows10-notifications-icon.png) (Windows 10).
+3.  Select the Notifications icon ![](media/powerbi-mobile-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10).
 
      Notifications are displayed with the most recent on top and unread messages highlighted. Notifications are retained for 90 days unless you delete them or reach the maximum limit of 100.
 
