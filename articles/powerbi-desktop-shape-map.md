@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/12/2016"
+   ms.date="07/27/2016"
    ms.author="davidi"/>
 
 # Shape Maps in Power BI Desktop (Preview)
@@ -28,9 +28,11 @@ In Power BI Desktop, you create a **Shape Map** visual to show relative comparis
 
 ## Creating Shape Maps
 
-For now, you can test the **Shape Map** control with the maps that are shipping with this Preview release. The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enabled **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map** checkbox. You'll need to restart Power BI Desktop after you make the selection.
+You can test the **Shape Map** control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use Custom Maps**.
 
-![](media/powerbi-desktop-shape-map/shape-map_1.png)
+The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enabled **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map** checkbox. You'll need to restart Power BI Desktop after you make the selection.
+
+![](media/powerbi-desktop-shape-map/shape-map_1a.png)
 
 Once **Shape Map** is enabled, click the **Shape Map** control from the **Visualizations** pane.
 
@@ -59,6 +61,14 @@ Take the following steps to create a **Shape Map**:
     ![](media/powerbi-desktop-shape-map/shape-map_3d.png)
 
 4.  You can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
+
+## Use Custom Maps
+
+You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](http://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
+
+To use your **TopoJSON** map file, add a ShapeMap visual to your report and add some data to the *Location* and *Values* buckets. Then, in the **Visualizations** pane with the **Format** section selected (the paintbrush icon, shown as (1) in the following image), expand the **Shape** section and select **+ Add Map**.
+
+![](media/powerbi-desktop-shape-map/shape-map_6.png)
 
 
 ## Getting Map Data
