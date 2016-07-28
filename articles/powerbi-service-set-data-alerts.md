@@ -72,7 +72,7 @@ When the data being tracked reaches one of the thresholds you've set, several th
 
 
 ## Manage alerts
-There are three ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, and on an individual tile in the[Power BI mobile app on the iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) or in the [Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md).
+There are three ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, and on an individual tile in the [Power BI mobile app on the iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) or in the [Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md).
 
 ###   From the tile itself
 
