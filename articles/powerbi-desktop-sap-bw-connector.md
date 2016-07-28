@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="07/26/2016"
    ms.author="davidi"/>
 
 # Use the SAP BW Connector (Preview) in Power BI Desktop
@@ -28,32 +28,28 @@ With Power BI Desktop, you can now access **SAP BusinessWarehouse (BW)** data.
 
 To use the **SAP BW Connector**, go through the following installation steps:
 
-1.  Install the **SAP RFCSDK** (version 6.4 or greater) on your local machine. You can get the **SAP RFCSDK** from your SAP administrator, or directly from the SAP Support Portal.
+1.  Install the **SAP NetWeaver** library on your local machine. You can get the **SAP Netweaver** library from your SAP administrator, or directly from the SAP Support Portal. This library is usually included also in the SAP Client Tools installation. Make sure the architecture for the **SAP NetWeaver** library (32-bit or 64-bit) matches your **Power BI Desktop** installation.
 
 2.  Enable the **SAP BW Connector** Preview feature in Power BI Desktop by going to **File > Options and Settings -> Options -> Global -> Preview Features.** You must restart Power BI Desktop after enabling this feature.
 
-    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_1.png)
+    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_1a.png)
 
 3.  After enabling the **SAP BW** Preview feature and restarting Power BI Desktop, the **Get Data** dialog includes an entry for **SAP Business Warehouse Server** in the **Database** category.
 
-    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_2.png)
+    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_2a.png)
 
 
 ## SAP BW Connector (Preview) features
 
-The **SAP BW Connector** preview is currently supported only in Power BI Desktop. In the future, we plan to enable end-to-end support to the Power BI service using the Power BI Gateway, but that support is not available in this Preview.
-
 The **SAP BW Connector** preview in Power BI Desktop lets users import data from their **SAP Business Warehouse Server** cubes. After selecting **SAP BW Connector** preview from **Get Data**, you must specify a *Server*, *System Number* and *Client ID* to establish the connection.
 
-![](media/powerbi-desktop-sap-bw-connector/SAP_BW_3.png)
+![](media/powerbi-desktop-sap-bw-connector/SAP_BW_3a.png)
 
-You can also specify two additional **Advanced options**: Command timeout in minutes for connecting to the data source, and a custom MDX statement to run against the specified server.
+You can also specify two additional **Advanced options**: Language code, and a custom MDX statement to run against the specified server.
 
-![](media/powerbi-desktop-sap-bw-connector/SAP_BW_4.png)
+![](media/powerbi-desktop-sap-bw-connector/SAP_BW_4a.png)
 
 If no MDX statement was specified you are presented with the **Navigator** window, which displays the list of cubes available in the server, the option to drill down and select items from the available cubes, including dimensions and measures.
-
-> **Note:** Hierarchies and variables/parameters are currently not supported in the Preview version of the SAP BW Connector, but we anticipate supporting them in the future.
 
 When you select one or more items from the server, a preview of the output table is created, based on their selection.
 
@@ -81,24 +77,7 @@ In addition to importing data from **SAP BW** cubes, remember that you can also 
 
 This section provides troubleshooting situations (and solutions) for working with this preview version of the **SAP BW** connector.
 
-1.  **Unable to Connect to SAP BW server: Cannot call classic RFC API.**
-
-    On some occasions, you may see the following error when using the **SAP BW Connector** preview:
-
-    ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_7.png)
-
-    **Solution:** Make sure you installed the **SAP RFCSDK version 6.4 or greater**; you can check with the SAP Administrator in your organization, or follow these steps:
-
-    1.	Open the **[SAP Support Portal](https://support.sap.com/home.html)**
-    2.	Go to **Software Downloads**
-    3.	Go to the **SAP Software Distribution Center**
-    4.	Select **Support Packages**
-    5.	Select **Search for Support Packages and Patches**
-    6.	Search for **RFCSDK**
-    7.	Find the 6.40 RFCSDK for Windows (32-bit application) and download it
-    8.	Copy the file *LIBRFC32.DLL* included with the download to the c:\windows\system32 directory on all workstations that will be running Power BI Desktop
-
-2.  **Connectivity for SAP BEx queries**
+1.  **Connectivity for SAP BEx queries**
 
     You can perform **BEx** queries in Power BI Desktop by enabling a specific property, as shown in the following image:
 
