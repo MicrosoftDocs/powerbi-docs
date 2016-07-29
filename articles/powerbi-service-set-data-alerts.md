@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/27/2016"
+   ms.date="07/29/2016"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
@@ -101,8 +101,6 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 
 
 ## Tips and troubleshooting
-
--  You can only set alerts for dashboards that you own, not those that have been shared with you.
 
 -  Alerts are currently not supported for Bing tiles, or card tiles with date/time measures.
 
