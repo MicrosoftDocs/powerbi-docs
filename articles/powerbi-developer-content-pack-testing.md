@@ -43,11 +43,19 @@ After uploading the file, select the "…" next to the dataset and select Schedu
 
 >**Note:** Developing template content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
-A template content pack is similar to existing solutions except that it does not include the actual data in the dataset. Instead, when a user consumes or instantiates a template, they are prompted for parameters and credentials in order to connect. Once connected, they'll see their own data in the dashboard, report and datasets.
+A template content pack is similar to existing solutions except that it does not include the actual data in the dataset. Instead, when a user consumes or instantiates a template, they are prompted for parameters and credentials in order to connect. Once connected, they'll see their own data in the dashboard, report and datasets. 
+
+After a user instantiates the content pack they have access to the dataset settings including scheduled refresh, any RLS settings on the dataset are **not** published with the content pack.  
 
 **Note:** Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](powerbi-developer-content-pack-authoring.md#restrictions)  page. 
 
-![tips](media/powerbi-developer-content-pack/gear.png)
+To enable template creation for your tenant, please work with your Power BI admin to enable the feature switch below. 
+
+![featureswitch](media/powerbi-developer-content-pack/featureswitch.png)
+
+Once enabled, you'll see a checkbox at the bottom of ["Create content pack"](https://app.powerbi.com/groups/me/publish-content/), allowing you to publish a template content pack to your organization. 
+
+![checkbox](media/powerbi-developer-content-pack/checkbox.png)
 
 ### Naming
 We suggest naming your dashboard, report and dataset consistently across your content pack. These names are hardcoded and will be the same for all users, so using your product/scenario name can make it easier for your customers to locate.
@@ -62,7 +70,7 @@ We suggest naming your dashboard, report and dataset consistently across your co
 ## Submission
 **Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
-The submission process will provide Power BI with access to the template you've created as well as the original PBIX file.
+The submission process through [Azure Publishing Portal](https://publish.windowsazure.com/workspace/power-bi-content-pack) will provide Power BI with access to the template you've created as well as the original PBIX file.
 
 ### Before submission
 -	Review the authoring tips for each of the artifacts within the content pack
