@@ -33,9 +33,9 @@ The following webinars can help you to understand and use Power BI. After you re
 
 [R for the masses with Power BI - 8/18/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-18-PowerBI-R-for-Masses-Registration.html?Is=Website)
 
-[Row Level Security by Reza Rad](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-23-PowerBI-Row-Level-Security-Registration.html?Is=Website)
+[Row Level Security by Reza Rad - 8/23/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-23-PowerBI-Row-Level-Security-Registration.html?Is=Website)
 
-[Finding and transforming data with Power Query in Excel and Power BI Desktop by Greg Low](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-25-PowerQuery-PowerBI-Registration.html?Is=Website)
+[Finding and transforming data with Power Query in Excel and Power BI Desktop by Greg Low - 8/25/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-25-PowerQuery-PowerBI-Registration.html?Is=Website)
 
 
 ## On-Demand webinars
