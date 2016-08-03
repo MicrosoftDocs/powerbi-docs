@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Customize visualization title, background, and legend"
+   pageTitle="Tutorial: Customize visual titles, legends, and backgrounds. "
    description="Tutorial: Customize visualization title, background, and legend"
    services="powerbi"
    documentationCenter=""
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -17,15 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="08/01/2016"
    ms.author="mihart"/>
 
-# Tutorial: Customize visualization title, background, and legend  
+# Tutorial: Customize visualization title, background, and legend
 
-In this tutorial you'll learn many different ways to customize the title of your visualizations. Not all visualizations can be customized, [see the complete list](#list).  Specifically, this tutorial covers customizing:  
+In this tutorial you'll learn many different ways to customize your visualizations. Not all visualizations can be customized, [see the complete list](#list).  Specifically, this tutorial covers customizing:  
 -   visualization titles  
--   visualization title backgrounds  
--   visualization title legends
+-   visualization backgrounds  
+-   visualization legends
 
 ## Customize visualization titles in reports    
 I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
@@ -35,14 +35,13 @@ I’ve signed in to the Power BI service and I’m starting with the Retail Anal
 
 1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
 
-2.  In the Visualizations and Filters pane, select the paintbrush icon ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) to reveal the formatting options.  
+2.  In the Visualizations and Filters pane, select the paintbrush icon ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) to reveal the formatting options and select **Title** to expand that section.  
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull-new.png)
 
 3.  Turn  **Title** on and off by selecting the On (or Off) slider. For now, leave it **On**.  
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/onoffslider.png)
 
 4.  Change **Title Text** by typing **Store count by month opened** in the text field.  
-
 
 5.  Change **Font color** to orange and **Background Color** to yellow.
 
@@ -56,7 +55,7 @@ I’ve signed in to the Power BI service and I’m starting with the Retail Anal
 6.  The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
 ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizealign.png)
 
-	At this point in the tutorial, your column chart title should look like this:  
+	At this point in the tutorial, your column chart **title** should look like something like this:  
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/tutorialprogress1.png)
 
 	To revert all the title customization we've done so far, select **Revert To Default**, at the bottom of the **Title** customization pane.  
@@ -67,13 +66,11 @@ With the same column chart selected, expand the Background options.
 
 1.  Turn the background on and off by selecting the On (or Off) slider. For now, leave it **On**.
 
-2.  Change the background color to 75% grey.
+2.  Change the background color to 74% grey.
 
-    -   Select the dropdown and choose a color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
+    -   Select the dropdown and choose a grey color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
 
-    -   Select the dropdown to close the color window.
-
-3.  When you select a background color, Power BI defaults to 50% transparency. Change Transparency to 74%.   
+    -    Change Transparency to 74%.   
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizebackground.png)
 
     To revert all the title background customization we've done so far, select **Revert To Default**, at the bottom of the **Background** customization pane.
@@ -90,8 +87,7 @@ With the same column chart selected, expand the Background options.
 
 3.  Turn the legend on and off by selecting the On (or Off) slider. For now, leave it **On**.
 
-4.  Move the legend to the left side of the visualization.  Legend position options are: top, bottom, left, right. 
-
+4.  Move the legend to the left side of the visualization.    
 
 3.  Add a legend title by toggling **Title** to **On** and, in the **Legend name** field, typing **Managers**.
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend-move.png)
@@ -106,20 +102,20 @@ With the same column chart selected, expand the Background options.
 | area           | yes    | yes        | yes    |
 | bar            | yes    | yes        | yes    |
 | card           | yes    | yes        | n/a    |
-| Multi Row Card | yes    | yes        | n/a    |
-|                | <br /> | <br />     | <br /> |
+| multi row card | yes    | yes        | n/a    |
 | column         | yes    | yes        | yes    |
 | combo          | yes    | yes        | yes    |
 | donut          | yes    | yes        | yes    |
 | filled map     | yes    | yes        | yes    |
 | funnel         | yes    | yes        | n/a    |
 | gauge          | yes    | yes        | n/a    |
-| <br />         | <br /> | <br />     | <br /> |
+| kpi            | yes    | yes        | n/a    |
 | line           | yes    | yes        | yes    |
 | map            | yes    | yes        | yes    |
 | matrix         | yes    | yes        | n/a    |
 | pie            | yes    | yes        | yes    |
 | scatter        | yes    | yes        | yes    |
+| slicer         | yes    | yes        | n/a    |
 | table          | yes    | yes        | n/a    |
 | textbox        | no     | yes        | n/a    |
 | treemap        | yes    | yes        | yes    |

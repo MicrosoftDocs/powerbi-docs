@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2016"
+   ms.date="08/01/2016"
    ms.author="mihart"/>
 
 # From Excel workbook to stunning report in no time
@@ -68,7 +68,7 @@ Now you can begin to create visualizations. Your manager wants to see profit ove
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_report_pin.png)
 
->**TIP**: If your chart doesn't look like the one above, check your aggregations. In the **Value** well, right click **Profit** and select **Sum**.
+>**TIP**: If your chart doesn't look like you expected, check your aggregations. For example, in the **Value** well, right click the field you just added and make sure the data is being aggregated the way you'd like it to be.  In this example, we're using **Sum**.
 
 Your manager wants to know which countries are the most profitable. Impress her with a map visualization. Select a blank area on your canvas, and from the Fields pane, simply drag over the **Country** and then **Profit** fields. Power BI creates a map visual with bubbles representing the relative profit of each location.
 
@@ -88,11 +88,11 @@ You want to share your dashboard with your manager, Paula. You can share your da
 
 To share your report, at the top of the dashboard, select **Share**.
 
-![](media/powerbi-service-from-excel-to-stunning/PBI_share_dash.png)
+![](media/powerbi-service-from-excel-to-stunning/power-bi-share-dashboard.png)
 
 Power BI displays the Share Dashboard page. In the top area, enter the email addresses of the recipients. Add a message in the field below. To allow recipients to share your dashboard with others, select **Allow recipients to share your dashboard**. Select **Share**.
 
-![](media/powerbi-service-from-excel-to-stunning/PBI_share_dash2.png)
+![](media/powerbi-service-from-excel-to-stunning/power-bi-share-dash-new.png)
 
 See also
 

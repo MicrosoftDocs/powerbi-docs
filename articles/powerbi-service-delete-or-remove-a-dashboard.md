@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/29/2016"
+   ms.date="08/01/2016"
    ms.author="mihart"/>
 
 # Remove a dashboard  
