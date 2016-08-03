@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2016"
+   ms.date="08/03/2016"
    ms.author="maikelson"/>
 
 # Power BI webinars
@@ -32,6 +32,10 @@ The following webinars can help you to understand and use Power BI. After you re
 [Using Power BI to build Financial Dashboards by Avi Singh - 8/16/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
 
 [R for the masses with Power BI - 8/18/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-18-PowerBI-R-for-Masses-Registration.html?Is=Website)
+
+[Row Level Security by Reza Rad](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-23-PowerBI-Row-Level-Security-Registration.html?Is=Website)
+
+[Finding and transforming data with Power Query in Excel and Power BI Desktop by Greg Low](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-25-PowerQuery-PowerBI-Registration.html?Is=Website)
 
 
 ## On-Demand webinars
