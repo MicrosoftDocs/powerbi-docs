@@ -40,17 +40,22 @@ For related "What's New" information, see:
 **July 29, 2016**
 
 ***RLS graduates from preview***
+
 - Row Level Security (RLS) lets you restrict data access based on who is accessing it. Recently we streamlined the process of configuring RLS by exposing roles and rules in Power BI Desktop. Today, we are happy to announce that RLS is now generally available for all Power BI Pro users.
 
 ***Data classification***
+
 - You can now tag your dashboards with classifications defined by your company's IT department, raising awareness of those viewing your dashboards about what level of security should be used.
 
 ***Analyze your on-premises data in Excel***
+
 - Analyze in Excel feature has expanded to support on-premises datasets. We establish a secure and direct connection to your on-premises dataset that enables you to analyze it in Excel. We also introduced a setting for admins to turn off the Analyze in Excel feature for on-premises sources.  
 
 For all the details, [visit the Power BI team blog](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/)
 
 **June 1, 2016**
+
+***Quick Insights***
 
 -   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters.
 
