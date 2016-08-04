@@ -37,6 +37,8 @@ For related "What's New" information, see:
 
 
 ## Recent updates
+**July 29, 2016**
+
 ***RLS graduates from preview***
 - Row Level Security (RLS) lets you restrict data access based on who is accessing it. Recently we streamlined the process of configuring RLS by exposing roles and rules in Power BI Desktop. Today, we are happy to announce that RLS is now generally available for all Power BI Pro users.
 
