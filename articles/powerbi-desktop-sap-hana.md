@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/26/2016"
+   ms.date="08/03/2016"
    ms.author="davidi"/>
 
 # Use SAP HANA in Power BI Desktop
@@ -28,7 +28,7 @@ To connect to a **SAP HANA** database, select **Get Data &gt; Database &gt; SAP 
 
 ![](media/powerbi-desktop-sap-hana/sap-hana-1.png)
 
-When connecting to a SAP HANA database, specify the server name and the port in the format *server:port* - the following image shows an example with a server named ServerXYZ and port 30015.
+When connecting to a SAP HANA database, specify the server name and the port in the format *server:port* - the following image shows an example with a server named *ServerXYZ* and port *30015*.
 
 ![](media/powerbi-desktop-sap-hana/sap-hana-2.png)
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2016"
+   ms.date="08/03/2016"
    ms.author="davidi"/>
 
 # Use OneDrive for Business links in Power BI Desktop

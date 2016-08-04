@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2016"
+   ms.date="08/03/2016"
    ms.author="davidi"/>
 
 # Connect to an Oracle database
