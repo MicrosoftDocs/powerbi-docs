@@ -23,7 +23,7 @@
 
 Use the Visual Studio Online content pack for Power BI to gain insights into your git and TFVC team projects. After you make a connection, your data comes to you automatically on a dashboard and in reports. 
 
-Connect to the [Visual Studio Online content pack](https://app.powerbi.com/getdata/services/visual-studio-online) or read more about the [Visual Studio Online integration](https://powerbi.microsoft.com/integrations/visual_studio_online) with Power BI.
+Connect to the [Visual Studio Online content pack](https://app.powerbi.com/getdata/services/visual-studio-online) or read more about the [Visual Studio Online integration](https://powerbi.microsoft.com/integrations/visual-studio-online) with Power BI.
 
 Note: This content pack requires access to the VSO account which has OAuth enabled. More details on requirements below.
 
