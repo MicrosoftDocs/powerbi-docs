@@ -3,7 +3,7 @@
    description="What's new in the Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="fetiyek"
+   authors="fetiyekarabay"
    manager="mblythe"
    backup="mihart"
    editor=""
