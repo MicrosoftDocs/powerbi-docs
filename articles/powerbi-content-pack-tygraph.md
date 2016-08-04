@@ -46,7 +46,7 @@ Connect to the [tyGraph content pack for Power BI.](https://app.powerbi.com/getd
 5. Provide your tyGraph key to connect. See details on finding this value below.
 
 	**If you are a Yammer Verified Admin**  
-	Your API key is sent to you in an email when your tyGraph account is successfully created. If you can no longer find your key, you can request a new one by sending an email to support@unlimitedviz.com. If you do not yet have a tyGraph account, you can start a trial at [http://www.tygraph.com/SignUp.aspx](http://www.tygraph.com/SignUp.aspx). 
+	Your API key is sent to you in an email when your tyGraph account is successfully created. If you can no longer find your key, you can request a new one by sending an email to support@unlimitedviz.com. If you do not yet have a tyGraph account, you can start a trial at [http://www.tygraph.com/](http://www.tygraph.com/). 
 
 	**If you are not a Yammer Verified Admin**
 

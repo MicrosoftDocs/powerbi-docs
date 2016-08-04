@@ -24,7 +24,7 @@
 
 The Microsoft Dynamics CRM Online content packs for Power BI allows you to easily access and analyze your data. The content pack uses the OData feed to create a descriptive model, with all the entities and measures needed such as Accounts, Activities, Opportunities, Product, Leads, Users and more. 
 
-Connect to the Dynamics CRM Online [Sales Manager](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-sales-manager) or [Service Manager](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-customer-service) content packs, or read more about the [Dynamics CRM Online integration](https://powerbi.microsoft.com/integrations/microsoft_dynamicscrm) with Power BI.
+Connect to the Dynamics CRM Online [Sales Manager](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-sales-manager) or [Service Manager](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-customer-service) content packs, or read more about the [Dynamics CRM Online integration](https://powerbi.microsoft.com/integrations/microsoft-dynamicscrm) with Power BI.
 
 Note: this content pack requires **Microsoft Dynamics CRM Online 2016 or later**. More details on [requirements](#Requirements) below.
 
