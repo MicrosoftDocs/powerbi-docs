@@ -48,7 +48,7 @@ For related "What's New" information, see:
 ***Analyze your on-premises data in Excel***
 - Analyze in Excel feature has expanded to support on-premises datasets. We establish a secure and direct connection to your on-premises dataset that enables you to analyze it in Excel. We also introduced a setting for admins to turn off the Analyze in Excel feature for on-premises sources.  
 
-For all the details, [visit the Power BI team blog](https://powerbi.microsoft.com/en-us/blog/power-bi-july-update-for-service-and-mobile/)
+For all the details, [visit the Power BI team blog](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/)
 
 **June 1, 2016**
 
