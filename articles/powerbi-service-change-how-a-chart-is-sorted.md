@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/24/2016"
+   ms.date="07/07/2016"
    ms.author="mihart"/>
 
 # Change how a chart is sorted in a Power BI report
@@ -33,9 +33,9 @@ It's easy to sort it from highest to lowest sales per square feet instead.
 
 2.  If necessary, select the sort icon ![](media/powerbi-service-change-how-a-chart-is-sorted/sortIcon.png) to change to **Descending**.
 
-    ![](media/powerbi-service-change-how-a-chart-is-sorted/PBI_agif_Sort500.gif)
+    ![](media/powerbi-service-change-how-a-chart-is-sorted/sortby.gif)
 
-**NOTE**: Not all visuals can be sorted.  The following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
+    **NOTE**: Not all visuals can be sorted.  The following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
 
 ##  Sorting using other criteria
 

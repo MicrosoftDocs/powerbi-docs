@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/26/2016"
+   ms.date="08/03/2016"
    ms.author="davidi"/>
 
 # Query overview in Power BI Desktop  
@@ -33,6 +33,7 @@ Power BI Desktop has three views:
 -   **Relationships** view – get a graphical representation of the relationships that have been established in your data model, and manage or modify them as needed.
 
 These views are accessed by selecting one of the three icons along the left side of Power BI Desktop. In the following image, Report view is selected, indicated by the yellow band beside the icon.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_ViewIcons.png)
 
 Power BI Desktop also comes with **Query Editor**, where you can connect to one or many data sources, shape and transform the data to meet your needs, then load that model into Power BI Desktop.
@@ -42,18 +43,19 @@ This document provides an overview of the work with data in the **Query Editor*
 But first, let’s see get acquainted with **Query Editor**.
 
 ## The Query Editor  
-To get to Query Editor, select **Edit Queries** from the Home tab of Power BI Desktop.  
+To get to **Query Editor**, select **Edit Queries** from the **Home** tab of Power BI Desktop.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_QueryView.png)
 
+With no data connections, **Query Editor** appears as a blank pane, ready for data.  
 
-With no data connections, the Query Editor appears as a blank pane, ready for data.  
 ![](media/powerbi-desktop-query-overview/QueryOverview_BlankPane.png)
 
-Once a query is loaded, Query Editor view becomes more interesting. If we connect to the following Web data source, Query Editor loads information about the data, which you can then begin to shape.
+Once a query is loaded, **Query Editor** view becomes more interesting. If we connect to the following Web data source, **Query Editor** loads information about the data, which you can then begin to shape.
 
 [*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
-Here’s how Query Editor appears once a data connection is established:
+Here’s how **Query Editor** appears once a data connection is established:
 
 1.  In the ribbon, many buttons are now active to interact with the data in the query
 
@@ -62,55 +64,65 @@ Here’s how Query Editor appears once a data connection is established:
 3.  In the center pane, data from the selected query is displayed and available for shaping
 
 4.  The **Query Settings** window appears, listing the query’s properties and applied steps  
-![](media/powerbi-desktop-query-overview/QueryOverview_WithDataConnection.png)
+
+    ![](media/powerbi-desktop-query-overview/QueryOverview_WithDataConnection.png)
 
 We’ll look at each of these four areas – the ribbon, the queries pane, the data view, and the Query Settings pane – in the following sections.
 
 ## The Query Ribbon  
-The ribbon in Query Editor consists of four tabs – **Home**, **Transform**, **Add Column**, and **View**.
+The ribbon in **Query Editor** consists of four tabs – **Home**, **Transform**, **Add Column**, and **View**.
 
 The **Home** tab contains the common query tasks, including the first step in any query, which is **Get Data.** The following image shows the **Home** ribbon.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_Ribbon.png)
 
 To connect to data and begin the query building process, select the **Get Data** button. A menu appears, providing the most common data sources.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_GetDataMenu.png)
 
 For more information about available data sources, see **Data Sources**. For information about connecting to data, including examples and steps, see **Connect to Data**.
 
 The **Transform** tab provides access to common data transformation tasks, such as adding or removing columns, changing data types, splitting columns, and other data-driven tasks. The following image shows the **Transform** tab.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_TransformRibbon.png)
 
 For more information about transforming data, including examples, see **Combine and Shape Data**.
 
 The **Add Column** tab provides additional tasks associated with adding a column, formatting column data, and adding custom columns. The following image shows the **Add Column** tab.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_AddColumnRibbon.png)
 
 The **View** tab on the ribbon is used to toggle whether certain panes or windows are displayed. It’s also used to display the Advanced Editor. The following image shows the **View** tab.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_ViewRibbon.png)
 
 It’s useful to know that many of the tasks available from the ribbon are also available by right-clicking a column, or other data, in the center pane.
 
 ## The Left Pane  
 The left pane displays the number of active queries, as well as the name of the query. When you select a query from the left pane, its data is displayed in the center pane, where you can shape and transform the data to meet your needs. The following image shows the left pane with multiple queries.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_TheLeftPane.png)
 
 ## The Center (Data) Pane  
 In the center pane, or Data pane, date from the selected query is displayed. This is where much of the work of the Query view is accomplished.
 
 In the following image, the Web data connection established earlier is displayed, the **Overall score** column is selected, and its header is right-clicked to show the available menu items. Notice that many of these right-click menu items are the same as buttons in the ribbon tabs.  
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_TheCenterPane.png)
 
 When you select a right-click menu item (or a ribbon button), Query applies the step to the data, and saves it as part of the query itself. The steps are recorded in the **Query Settings** pane in sequential order, as described in the next section.  
 
 ## The Query Settings Pane  
-The **Query Settings** pane is where all steps associated with a query are displayed. For example, in the following image, the **Applied Steps** section of the **Query Settings** pane reflects the fact that we just changed the type of the **Overall score** column.  
+The **Query Settings** pane is where all steps associated with a query are displayed. For example, in the following image, the **Applied Steps** section of the **Query Settings** pane reflects the fact that we just changed the type of the **Overall score** column.
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_QuerySettingsPane.png)
 
 As additional shaping steps are applied to the query, they are captured in the **Applied Steps** section.
 
 It’s important to know that the underlying data is *not* changed; rather, Query Editor adjusts and shapes its view of the data, and any interaction with the underlying data occurs based on Query Editor’s shaped and modified view of that data.
 
-In the **Query Settings** pane, you can rename steps, delete steps, or reorder the steps as you see fit. To do so, right-click the step in the **Applied Steps** section, and choose from the menu that appears.  
+In the **Query Settings** pane, you can rename steps, delete steps, or reorder the steps as you see fit. To do so, right-click the step in the **Applied Steps** section, and choose from the menu that appears. All query steps are carried out in the order they appear in the **Applied Steps** pane. 
+
 ![](media/powerbi-desktop-query-overview/QueryOverview_QuerySettings_Rename.png)
 
 ## The Advanced Editor  

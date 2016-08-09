@@ -14,23 +14,29 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2016"
+   ms.date="08/03/2016"
    ms.author="maikelson"/>
 
 # Power BI webinars
 
 The following webinars can help you to understand and use Power BI. After you register, to watch the video, select the link to **join** or **watch** the webinar.
 
+
 ## Upcoming webinars
 
-[DAX in Power BI: why you need to learn it by Marco Russo - 06/28/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-28-DAX-PowerBI-Registration.html?Is=Website)
+[Power BI Embedded Deep Dive - 08/09/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
 
-[Insights to Action: PowerApps & Microsoft Flow - 06/30/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-30-Leveraging-PowerApps-MicrosoftFlow-Registration.html?Is=Website)
+[Using Power BI to build Financial Dashboards by Avi Singh - 8/16/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
 
-[Using Power BI to Track Development by Simon Sabin - 07/19/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-19-PowerBI-Track-Development-Registration.html?Is=Website)
+[R for the masses with Power BI - 8/18/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-18-PowerBI-R-for-Masses-Registration.html?Is=Website)
+
+[Row Level Security by Reza Rad - 8/23/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-23-PowerBI-Row-Level-Security-Registration.html?Is=Website)
+
+[Finding and transforming data with Power Query in Excel and Power BI Desktop by Greg Low - 8/25/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-25-PowerQuery-PowerBI-Registration.html?Is=Website)
+
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -38,24 +44,30 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
-[Introduction to Power BI and M by Chris Webb - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-21-Amazing-Things-with-Power-BI-Registration.html?Is=Website)
+[Predictive Analytics in Education and Consumer Goods Using Power BI with Machine Learning - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-26-PowerBI-MachineLearning-Registration.html?Is=Website)
 
-[A Walkthrough of Power BI Security & Administration Considerations - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
+[Power BI Mobile - Answering Your Business Questions - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-21-PowerBI-Mobile-Registration.html?Is=Website)
 
-[Best-in-Class On-Premise Business Intelligence for Power BI from Pyramid Analytics - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-16-PowerBI-Pyramid-Analytics-Registration.html?Is=Website)
+[Using Power BI to Track Development by Simon Sabin - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-19-PowerBI-Track-Development-Registration.html?Is=Website)
 
-[Going Hardcore on your Business Intelligence with Power BI by Adam Cogan - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-Hardcore-Business-Intelligence-Registration.html?Is=Website)
+[What's New and Exciting in Power BI - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
-[Tell Data Stories with Power BI Publish to Web - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-14-PowerBI-Publish-to-Web-Registration.html?Is=Website)
+[Insights to Action: PowerApps & Microsoft Flow - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-30-Leveraging-PowerApps-MicrosoftFlow-Registration.html?Is=Website)
+
+
 
 
 ###  Introductory webinars
+
+[What's New and Exciting in Power BI - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
 [What’s New and Exciting in Power BI- May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-10-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
 [What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
 
 ### Intermediate webinars
+
+[Power BI Mobile - Answering Your Business Questions - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-21-PowerBI-Mobile-Registration.html?Is=Website)
 
 [A Walkthrough of Power BI Security & Administration Considerations - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-23-PowerBI-Security-Registration.html?Is=Website)
 
@@ -82,6 +94,14 @@ Watch our latest webinars on-demand.
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
 ### Community webinars
+
+[Predictive Analytics in Education and Consumer Goods Using Power BI with Machine Learning - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-26-PowerBI-MachineLearning-Registration.html?Is=Website)
+
+[Using Power BI to Track Development by Simon Sabin - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-19-PowerBI-Track-Development-Registration.html?Is=Website)
+
+[Insights to Action: PowerApps & Microsoft Flow - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-30-Leveraging-PowerApps-MicrosoftFlow-Registration.html?Is=Website)
+
+[DAX in Power BI: why you need to learn it by Marco Russo - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-28-DAX-PowerBI-Registration.html?Is=Website)
 
 [Introduction to Power BI and M by Chris Webb - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-21-Amazing-Things-with-Power-BI-Registration.html?Is=Website)
 

@@ -33,7 +33,7 @@ The general process to develop and submit an template content pack involves mult
 
  ![Process](media/powerbi-developer-content-pack/overview.png)
 
-1.	[Submit nomination](#Nomination) through Azure Certified
+1.	[Complete a nomination](#Nomination) through Azure Certified
 2.	[Build content](powerbi-developer-content-pack-authoring.md#queries) in the Power BI Desktop
 3.	[Create a dashboard](powerbi-developer-content-pack-authoring.md#dashboard) in PowerBI.com
 4.	[Test the content pack](powerbi-developer-content-pack-testing.md) yourself within your organization
@@ -60,7 +60,7 @@ Content packs provide insights and metrics focused on a specific business scenar
 
 <a name="Nomination"></a>
 ## Nomination
-Submissions to build a public content pack are collected through the Microsoft Azure Certified program. We currently require an individual submission for each artifact you want to build.
+Nominations to build a public content pack are collected through the Microsoft Azure Certified program. We currently require an individual submission for each artifact you want to build.
 
 [https://azure.microsoft.com/marketplace/programs/certified/apply/](https://azure.microsoft.com/marketplace/programs/certified/apply/)
 

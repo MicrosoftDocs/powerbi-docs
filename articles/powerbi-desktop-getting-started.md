@@ -14,10 +14,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="07/06/2016"
    ms.author="davidi"/>
 # Getting started with Power BI Desktop
 
@@ -106,7 +106,7 @@ When we select **Edit**, Query Editor launches and a representative view of the
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_EditQuery.png)
 
-For more information about connecting to data, see [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635).
+For more information about connecting to data, see [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md).
 
 In the next section, we adjust the data so it meets our needs. The process of adjusting connected data is called *shaping* data.
 
@@ -255,7 +255,7 @@ Notice that in the **Visualizations** pane, I can select different types of visu
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_VisualizationTypes.png)
 
-Let’s fast-forward a bit, and see what the **Report** view looks like after a handful of visualizations have been added, as well as a few new Report pages. For more information about reports, see **[Report View in Power BI Desktop](powerbi-desktop-report-view.md)**.
+Let’s fast-forward a bit, and see what the **Report** view looks like after a handful of visualizations have been added, as well as a few new Report pages. For more information about reports, see [Report View in Power BI Desktop](powerbi-desktop-report-view.md).
 
 The first Report page provides a perspective of the data based on *Overall rank*. When we select one of the visualizations, the **Fields and Filters** pane shows which fields are selected, and the structure of the visualization (which fields are applied to the **Shared Axis**, **Column Values**, and **Line Values**).
 
@@ -342,7 +342,7 @@ From here, you can send an email to colleagues with whom you’d like to share t
 
  ![](media/powerbi-desktop-getting-started/GSG_Share7.png)
 
-For more information about creating, sharing, and modifying dashboards, see **[Share a dashboard](powerbi-service-share-unshare-dashboard.md)**.
+For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](powerbi-service-share-unshare-dashboard.md).
 
 There are all sorts of compelling data-related mash-ups and visualizations you can do with Power BI Desktop, and with the Power BI service. Check out the next section for more information.
 

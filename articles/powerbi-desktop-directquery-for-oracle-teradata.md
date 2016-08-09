@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="07/12/2016"
    ms.author="davidi"/>
 
 # DirectQuery for Oracle and Teradata Databases
@@ -30,4 +30,4 @@ In this release, you can choose to connect to Oracle or Teradata databases using
 
 -   If you connect with **Import**, data is imported into Power BI Desktop upon connection to the database, and interaction with the data is based on what was imported.
 
-In this release, this DirectQuery for Oracle and Teradata databases feature is provided only for Power BI Desktop. It is not possible to publish the report to the Power BI service and have the report refresh. The ability to publish and share reports using DirectQuery using Oracle and Teradata is planned for a future release.
+DirectQuery for Oracle and Teradata databases is available for Power BI Desktop and for the Power BI service.

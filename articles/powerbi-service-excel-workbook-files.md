@@ -17,7 +17,7 @@
     ms.topic="article"
     ms.tgt_pltfrm="NA"
     ms.workload="powerbi"
-    ms.date="04/29/2016"
+    ms.date="07/12/2016"
     ms.author="davidi"/>
 
 # Get data from Excel workbook files
@@ -124,10 +124,6 @@ Once your workbook is uploaded, you get a notification that the workbook is read
 Once the workbook is ready, you can find it in the **Reports** section of Power BI.
 
 ![](media/powerbi-service-excel-workbook-files/excel_import_9.png)
-
-There are a few limitations to using local Excel workbooks:
--   Data connections refresh is not supported on local file workbooks
--   To update an Excel report, you must perform the steps outlined above (to connect a local Excel workbook) again
 
 
 

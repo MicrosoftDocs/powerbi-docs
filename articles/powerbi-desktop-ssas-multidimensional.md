@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="07/12/2016"
    ms.author="davidi"/>
 
 # Connect to SSAS Multidimensional Models in Power BI Desktop  
@@ -30,10 +30,10 @@ To connect to an **SSAS MD** database, select **Get Data &gt; Database &gt; SQL 
 
 **SSAS Multidimensional models** in Live connection mode are supported in both the Power BI service and in Power BI Desktop. You can also publish and upload reports that use **SSAS Multidimensional models** in Live mode to the Power BI service.
 
-### Capabilities and features of SSAS MD
+## Capabilities and features of SSAS MD
 The following sections describe features and capabilities of Power BI and SSAS MD connections.
 
-#### Tabular metadata of multidimensional models
+### Tabular metadata of multidimensional models
 The following table shows the correspondence between multidimensional objects and the tabular metadata that's returned to Power BI Desktop. Power BI queries the model for tabular metadata, and based on the returned metadata, runs appropriate DAX queries against Analysis Services when you create a visualization such as a table, matrix, chart or slicer.
 
 |BISM-Multidimentional object |Tabular Metadata|
@@ -49,20 +49,20 @@ The following table shows the correspondence between multidimensional objects an
 |KPI | KPI |
 |User/Parent-Child hierarchies | Hierarchies |
 
-#### Measures, measure groups and KPIs
+### Measures, measure groups and KPIs
 Measure groups in a multidimensional cube are exposed in Power BI as tables with the ∑ sign beside them in the **Fields** pane. Calculated measures that don't have an associated measure group are grouped under a special table called *Measures* in the tabular metadata.
 
 In a multidimensional model, you can define a set of measures or KPIs in a cube to be located within a *Display folder*, which can help simplify complex models. Power BI recognizes Display folders in tabular metadata, and shows measures and KPIs within the Display folders. KPIs in multidimensional databases support *Value*, *Goal*, *Status Graphic* and *Trend Graphic*.
 
-#### Dimension attribute type
+### Dimension attribute type
 Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *Country* and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You'll recognize these associations by the *map* icon next to element in the **Field** pane in Power BI.
 
 Power BI can also render images when you provide a field containing URLs (Uniform Resource Locator) of the images. You can specify these fields as *ImageURL* type in SQL Server Data Tools (or subsequently in Power BI), and its type information is provided to Power BI in the tabular metadata. Power BI can then retrieve those images from the URL, and display them in visuals.
 
-#### Parent-child hierarchies
+### Parent-child hierarchies
 Multidimensional models support Parent-child hierarchies, which are presented as a *hierarchy* in the tabular metadata. Each level of the Parent-child hierarchy is exposed as a hidden column in the tabular metadata. The key attribute of the Parent-child dimension is not exposed in the tabular metadata.
 
-#### Dimension calculated members
+### Dimension calculated members
 Multidimensional models support creation of various types of *calculated members*. The two most common types of calculated members are the following:
 
 -   Calculated members on attribute hierarchies and not sibling of *All*
@@ -75,20 +75,19 @@ Multidimensional model expose *calculated members on attribute hierarchies* as v
 
 The calculated members of user hierarchies are not exposed in Power BI. Rather, you will be able to connect to a cube containing calculated members on user hierarchies, but you won't be able to see calculated members if they do not meet the constraints mentioned in the previous bulleted list.
 
-#### Security
+### Security
 Multidimensional models support dimension and cell level security by way of *Roles*. When you connect to a cube with Power BI, you are authenticated and evaluated for appropriate permissions. When a user has *dimension security* applied, the respective dimension members are not seen by the user in Power BI. However, when a user has a *cell security* permission defined, where certain cells are restricted, then that user cannot connect to the cube using Power BI.
 
-### Limitations of SSAS Multidimensional Models in Power BI Desktop
+## Limitations of SSAS Multidimensional Models in Power BI Desktop
 There are certain limitations to using **SSAS MD**:
 
 -   Servers must be running SQL Server 2012 SP1 CU4 or later versions of Analysis Services for the Power BI Desktop SSAS MD connector to work properly
--   Only Enterprise and Business Intelligence editions of SQL Server are supported for MD connectivity
 -   Cell level Formatting and translation features are not supported in this release of SSAS MD. These features will be enabled in upcoming releases of Power BI Desktop.
 -   *Actions* and *Named Sets* are not exposed to Power BI, but you can still connect to cubes that also contain *Actions* or *Named sets* and create visuals and reports.
 
-In addition, as mentioned earlier you cannot publish a report created with this version of **SSAS MD** to the Power BI Service.
+In addition, as mentioned earlier you cannot publish a report created with this version of **SSAS MD** to the Power BI service.
 
-### Supported Features of SSAS MD in Power BI Desktop
+## Supported Features of SSAS MD in Power BI Desktop
 The following features of SSAS MD are supported in Power BI Desktop:
 
 -   Consumption of the following elements are supported in this release of **SSAS MD** (you can get [more information](https://msdn.microsoft.com/library/jj969574.aspx) about these features):

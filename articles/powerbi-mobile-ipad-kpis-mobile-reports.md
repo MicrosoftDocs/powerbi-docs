@@ -26,7 +26,7 @@ The iPad app for Microsoft Power BI for iOS offers live, touch-enabled mobile ac
 
 ![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_ssmrp_homeb.png)
 
-[Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with the SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
+[Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
 Then in the iPad app for Power BI, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
@@ -44,11 +44,7 @@ Browse the samples to interact with KPIs and mobile reports.
 
 1.  In the iPad, open the Power BI app.
   
-2.  To view your Reporting Services mobile reports and KPIs, tap **Reporting Services**.
-
-    ![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_getstarted.png)
-
-3. Tap the options icon ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Connect**.
+2.  Tap the options icon ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Connect Server**.
 
     ![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_connectsvr.png)
 
@@ -58,7 +54,9 @@ Browse the samples to interact with KPIs and mobile reports.
 
     Tap **Advanced option** to give the server a name, if you'd like.
 
-5.  Now you see the server in the left navigation bar.
+5.  Tap **Connect**. 
+
+6.  Now you see the server in the left navigation bar.
 
     ![](media/powerbi-mobile-ipad-kpis-mobile-reports/pbi_ipad_contosoconnexn.png)
 
@@ -87,6 +85,8 @@ You can only be connected to one report server at a time from your iPad app. If 
 
 
 ## Create Reporting Services mobile reports and KPIs
+
+You don't create Reporting Services KPIs and mobile reports in the Power BI mobile app. You create them in SQL Server Mobile Report Publisher and a SQL Server 2016 Reporting Services web portal.
 
 - [Create your own Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)

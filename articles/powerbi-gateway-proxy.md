@@ -1,6 +1,6 @@
 <properties
-pageTitle="Configurating proxy settings"
-description="Information regarding configuration of proxy settings for the personal and enterprise gateways."
+pageTitle="Configuring proxy settings for the On-premises Data Gateway"
+description="Information regarding configuration of proxy settings for the on-premises data gateway."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -17,11 +17,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/15/2016"
+ms.date="07/25/2016"
 ms.author="asaxton"/>
-# Configuring proxy settings for the Power BI Gateways
+# Configuring proxy settings for the On-premises Data Gateway
 
-Your work environment may require that you go through a proxy to access the internet. This could prevent the Power BI Gateway from connecting to the service.
+Your work environment may require that you go through a proxy to access the internet. This could prevent the On Premises Data Gateway from connecting to the service.
 
 ## Does your network use a proxy?
 
@@ -33,21 +33,21 @@ The following post on superuser.com discusses how you can try to determine if yo
 
 Proxy information is configured within a .NET configuration file. The location, and file names, will be different depending on the gateway you are using.
 
-### Power BI Gateway - Enterprise
+### On-premises data gateway
 
-There are two main configuration files that are involved with the enterprise gateway.
+There are two main configuration files that are involved with the on-premises data gateway.
 
 **Configuration**
 
 The first is for the configuration screens that actually configure the gateway. If you are having issues configuring the gateway, this is the file you will want to look at.
 
-    C:\Program Files\Power BI Enterprise Gateway\enterprisegatewayconfigurator.exe.config
+    C:\Program Files\On-premises data gateway\enterprisegatewayconfigurator.exe.config
 
 **Windows Service**
 
 The second is for the actual windows service that interacts with the Power BI service, and handles the requests.
 
-    C:\Program Files\Power BI Enterprise Gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
+    C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
 
 ### Power BI Gateway - Personal
 
@@ -91,6 +91,36 @@ The default configuration works with windows authentication. If your proxy uses 
 
 To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network Settings)](https://msdn.microsoft.com/library/kd3cf2ex.aspx)
 
+## Changing the gateway service account to a domain user
+
+When configuring the proxy settings to use default credentials, as explained above, you may encounter authentication issues with your proxy. This is because the default service account is the Service SID and not an authenticated domain user. You can change the service account of the gateway to allow proper authentication with your proxy.
+
+> **Note**: It is recommended that you use a managed service account to avoid having to reset passwords. Learn how to create a [managed service account](https://technet.microsoft.com/library/dd548356.aspx) within Active Directory.
+
+### Change the On-Premises Data Gateway service account
+
+1. Change the Windows service account for the **On-premises Data Gateway service**. 
+
+    The default account for this service is *NT SERVICE\PBIEgwService*. You will want to change this to a domain user account within your Active Directory domain. Or, you will want to use a managed service account to avoid having to change the password.
+
+    You will want to change the account on the **Log On** tab within the properties of the Windows service.
+
+2. Restart the **On-premises Data Gateway service**.
+
+    From an admin command prompt, issue the following commands.
+
+        net stop PBIEgwService
+
+        net start PBIEgwService
+
+3. Start the **On-premises Data Gateway configurator**. You can select the windows start button and search for *On-premises Data Gateway*.
+
+4. Sign in to Power BI.
+
+5. Restore the gateway using your recovery key.
+
+    This will allow the new service account to be able to decrypt stored credentials for data sources.
+
 ## See also
 
-[Firewall information](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy)
+[Firewall information](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy)

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/16/2016"
+   ms.date="07/25/2016"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
@@ -28,6 +28,36 @@ Importing files from OneDrive, or SharePoint Online, is a great way to make sure
 When you import an Excel workbook from your personal OneDrive, any data in the workbook, like tables in worksheets and/or data that is loaded into the Excel data model and the structure of the data model, are imported into a new dataset in Power BI. Any Power View visualizations are re-created in Reports. Power BI automatically connects to the workbook on OneDrive, or SharePoint Online, about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in the Power BI service.
 
 You can refresh on the dataset in the Power BI service. When you manually refresh, or schedule refresh, on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive, or SharePoint Online. 
+
+## What’s supported?  
+In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
+
+### Power BI Gateway - Personal
+-   All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
+-   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+
+### On-premises Data Gateway
+
+|**Data source**|
+|---|
+|Analysis Services Tabular|
+|Analysis Services Multidimensional|
+|SQL Server|
+|SAP HANA|
+|Oracle|
+|Teradata|
+|File|
+|Folder|
+|SharePoint list (on-premises)|
+|Web|
+|OData|
+|IBM DB2|
+|MySQL|
+|Sybase|
+|SAP BW|
+|IBM Informix Database|
+
+> **Note:** A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
 
 ## OneDrive or OneDrive for Business. What’s the difference?  
 If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
@@ -78,7 +108,11 @@ When things go wrong, it’s usually because Power BI can’t sign into data sou
 
 Be sure to leave the **Send refresh failure notification email to me checked**. You’ll want to know right away if a scheduled refresh fails.
 
-To learn more about how to troubleshoot refresh issues, see [Troubleshooting refresh.scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)and [Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md).
-
 ## Important notes  
 \* Refresh is not supported for OData feeds connected to and queried from Power Pivot. When using an OData feed as a data source, use Power Query.
+
+## See also
+
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)

@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="identified"
    qualityDate=""/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2016"
+   ms.date="07/07/2016"
    ms.author="mihart"/>
 
 # Display dashboards and reports in Full Screen mode (TV mode)

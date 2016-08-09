@@ -3,7 +3,7 @@
    description="Opportunity Analysis sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="amandacofsky"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/16/2015"
+   ms.date="07/18/2016"
    ms.author="amac"/>
 
 # Opportunity Analysis sample for Power BI: Take a tour  

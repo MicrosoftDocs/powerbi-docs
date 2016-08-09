@@ -10,17 +10,17 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="qPQ6iXGf0Pc"
+   featuredVideoId="MqNX5olPGGI"
    featuredVideoThumb=""
    courseDuration="9m"/>
 
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/20/2016"
+   ms.date="08/03/2016"
    ms.author="davidi"/>
 
 # How to Manage Your Data Relationships

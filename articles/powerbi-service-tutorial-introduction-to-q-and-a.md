@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/05/2016"
+   ms.date="07/05/2016"
    ms.author="mihart"/>
 # Tutorial: use Power BI Q&A with the Retail Analysis sample
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this tutorial we'll look at 2 different ways of creating the same visualization: building it in a report and asking a question with Q&A.  
 
 
-1. From your Power BI workspace, select **Get Data** \> **Samples** \> **Retail Analysis Sample**.
+1. From your Power BI workspace, select **Get Data** \> **Samples** \> **Retail Analysis Sample** > **Connect**.
 
 	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_1.png)
 
@@ -38,7 +38,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_2.png)
 
-4. Select the area chart and review the settings in the **Fields** pane.  The report creator built this chart by selecting these 3 values (**FiscalMonth**, **This Year Sales**, **Las Year Sales**) and organizing them in the **Values** and **Axis** wells.
+4. Select the area chart and review the settings in the **Fields** pane.  The report creator built this chart by selecting these 3 values (**Time > FiscalMonth**, **Sales > This Year Sales**, **Sales >Last Year Sales >Value**) and organizing them in the **Axis** and **Values** wells.
 
 	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_3.png)
 
@@ -54,15 +54,13 @@ How would we go about creating this same line chart using Q&A?
 
     When you finish typing your question, the result is the exact same chart that we saw in the report.  But creating it this way was much faster!
 
-    ![](media/powerbi-service-tutorial-introduction-to-q-and-a/PBI_QnA_AreaChart.png)
+    ![](media/powerbi-service-tutorial-introduction-to-q-and-a/powerbi-qna-areachart.png)
+
+4. Similar to working with reports, within Q&A you have access to the Visualizations, Filters and Fields panes.  Open these panes to further explore and modify your visual.
 
 3.  To pin the chart to your dashboard, select the pin icon ![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png).
 
 ## See also
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-[Get started with Power BI](powerbi-service-get-started.md)
 
 [What type of questions can I ask Q&A?](powerbi-service-q-and-a.md)
 
@@ -71,5 +69,3 @@ How would we go about creating this same line chart using Q&A?
 [Make your data work well with Q&A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
 [preparing a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
-
-[pinning a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)

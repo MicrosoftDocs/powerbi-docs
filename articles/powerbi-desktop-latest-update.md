@@ -14,74 +14,68 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="07/29/2016"
    ms.author="davidi"/>
 # What's new in the latest Power BI Desktop update?
 
-## May 2016 Update (2.35.4399.381)
+## July 2016 Update (2.37.4464.321)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-May brings another large collection of compelling updates for Power BI Desktop.
+July brings another great collection of new features and highly anticipated data connectors to Power BI Desktop. With this month's updates, we're continuing to add links beside new updates:
+-   **[video]** excerpts play in a new browser tab, when the feature is being discussed.
+-   Some features have an **[article]** that provide more detail.
+-   Most features are explained in the monthly update **[blog]** post.
+-   Lastly, some features are self-explanatory and don't need and article or video.
 
-With this month's updates, we're adding video links beside new updates that are featured in the video blog. When you select that **[video]** link beside a new feature, the video opens in a new browser tab and plays from the time when the feature is being discussed. We hope you find the video links useful and helpful.
-
-If an accompanying article describes the new feature in detail, you see an **[article]** link, which will take you to the article. Some new features have additional written information included in the blog post, but don't have their own article - for those, you can read a quick excerpt about the feature by selecting the **[blog]** link.
-
-Lastly, some features are self-explanatory, and don't have a separate article or video segment.
-
-Of course you can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image below.
+You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image below.
 
 The following enhancements are new to Power BI Desktop this month:
 
 ### Report View:
 
--   Customizable tooltips [[video]](https://youtu.be/KnDs4amt9-c?t=172) [[article]](powerbi-desktop-custom-tooltips.md)
--   Conditional formatting in tables [[video]](https://youtu.be/KnDs4amt9-c?t=313) [[article]](powerbi-desktop-conditional-table-formatting.md)
--   Publish to Pyramid server [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Scrolling loads more data in charts [[video]](https://youtu.be/KnDs4amt9-c?t=426) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Keyboard nudging for visuals [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Predefined table styles [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[video]](https://youtu.be/g8ccfjffWmw?t=1m25s)
+-   Shape Maps update - use custom maps [[article]](powerbi-desktop-shape-map.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)  [[video]](https://youtu.be/g8ccfjffWmw?t=2m21s)
 
-### Analytics
+### Data Connectors:
 
--   Quick Calcs - % of grand total [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   New data connectors:
+    -   Amazon Redshift [[article]](powerbi-desktop-connect-redshift.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   Impala [[article]](powerbi-desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   Improvements to existing connectors:
+    -   Web connector - support for specifying a connection timeout  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   CSV and Text - support for fixed-width delimited files [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   Improvements and changes to the SAP Business Warehouse connector [[article]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
-### Data Connectivity:
 
--   New data connectors: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
-    -   Informix
-    -   comScore Digital Analytix
-    -   Troux
-    -   Planview Enterprise
--   Improved DB2 connector [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Text/CSV connector exposes editable settings in preview dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Improved relational database connectors with Display Schema information
--   Data Source Settings enhancements [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Advanced **Filter Rows** dialog mode [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Inline Input controls for Function invocation within **Query Editor** [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Query Parameters: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
-    -   Ability to convert queries to parameters (and vice versa)
-    -   Support for URL parameterization and multi-part URLs in **Web** connector
-    -   Support for parameterization in **Conditional Columns** dialog
--   Ability to **Save As** a Power BI Template [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Support for reordering Query Steps using drag-and-drop [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   Date picker support in **Conditional Columns** dialog input Date fields [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
--   New context menu entry to create new queries from the **Queries** pane [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+### Query Editor improvements:
+
+-   Use **R** script in Query Editor [[article]](powerbi-desktop-r-in-query-editor.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   Query parameter enhancements:
+    -   List query output as *allowed values* for a parameter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   Overwrite existing user-defined functions [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
 
 >NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/), where you can get more detailed information about each of these new features.
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KnDs4amt9-c" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g8ccfjffWmw" frameborder="0" allowfullscreen></iframe>
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
+## More videos
+
+Like learning about Power BI through videos and other engaging content? Check out the following collection of video sources and content.
+
+-   [Power BI channel](https://www.youtube.com/user/mspowerbi) - Power BI on YouTube
+-   [Guy in a Cube channel](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) - fresh videos on Power BI features and capabilities
+-   [Guided Learning for Power BI](https://powerbi.microsoft.com/guided-learning/) - a sequential learning tour of Power BI, in bite-size pieces
 
 ## Previous months' updates
 
