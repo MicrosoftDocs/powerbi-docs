@@ -89,7 +89,7 @@ More details can be found at <https://www.visualstudio.com/en-us/get-started/rep
 Your account name is the front of your URL to visualstudio.com:    
     ![](media/powerbi-content-pack-visual-studio/URLimage.png)
 
-Your Project name is the name you see at the top of every page in VSO:  
+Your Project name is the name you see at the top of every page in VSTS:  
 	![](media/powerbi-content-pack-visual-studio/Projectimage.png)
 
 You can also use wildcards to select multiple projects. For example, you can select all projects by entering just “\*”, or all projects that start with “Azure” by entering “Azure\*”.
