@@ -25,7 +25,7 @@ Use the Visual Studio Team Services content pack for Power BI to gain insights i
 
 Connect to the [Visual Studio Team Services content pack](https://app.powerbi.com/getdata/services/visual-studio-online) or read more about the [Visual Studio Team Services integration](https://powerbi.microsoft.com/integrations/visual_studio_online) with Power BI.
 
-Note: This content pack requires access to the VSO account which has OAuth enabled. More details on requirements below.
+Note: This content pack requires access to an account which has OAuth enabled. More details on requirements below.
 
 ## How to connect
 
@@ -45,10 +45,10 @@ Note: This content pack requires access to the VSO account which has OAuth enabl
     Your account name is the front of your URL to visualstudio.com:    
     ![](media/powerbi-content-pack-visual-studio/URLimage.png)
 
-    Your Project name is the name you see at the top of every page in VSO:  
+    Your Project name is the name you see at the top of every page in Visual Studio Team Services:  
 	![](media/powerbi-content-pack-visual-studio/Projectimage.png)
 
-5.  Authenticate with Visual Studio Team Services using oAuth2. You may see a VSO sign-in dialog box as a result.  
+5.  Authenticate with Visual Studio Team Services using oAuth2. You may see a VSTS sign-in dialog box as a result.  
 
 	>**Important:** Some Visual Studio Team Services deployments don't support oAuth2.  Follow the guidance in the Troubleshooting section if sign-in fails.
 
@@ -96,8 +96,7 @@ You can also use wildcards to select multiple projects. For example, you can sel
 
 ## Troubleshooting
   
-When you attempt to login to your Visual Studio Team Services, you may receive a Login failed message.  
-![](media/powerbi-content-pack-visual-studio/loginerror.png)
+When you attempt to login to your Visual Studio Team Services, you may receive a Login failed message. 
 
 There are two common reasons why you may not be able to authenticate successfully:
 
