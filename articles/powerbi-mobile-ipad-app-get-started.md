@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/08/2016"
+   ms.date="08/09/2016"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -47,14 +47,13 @@ Go to [Power BI to sign up](http://go.microsoft.com/fwlink/?LinkID=513879) for t
 
 1.  In the iPad, open the Power BI app.
   
-2.  To view your Power BI dashboards and reports, tap **Power BI**.  
-   To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
+2.  To view your Power BI dashboards and reports, tap **Power BI**. Sign in with the same credentials as your Power BI account on the web. 
+
+    To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**. Sign in with your SQL Server Reporting Services credentials.
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-connect-to.png)
 
-3.  Sign in.
-
-    >**Tip**: When you're in the app, tap the options icon ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two. 
+    >**Tip**: When you're in the app, tap the options icon ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two services. 
 
 ## Try the Power BI and Reporting Services samples  
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
@@ -73,7 +72,7 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 
 1.   Tap the options icon ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner.
 
-2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to see their explore the KPIs and mobile reports.
+2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-reporting-services-samples.png)
 
