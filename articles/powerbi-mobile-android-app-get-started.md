@@ -27,7 +27,8 @@ The Android app for Microsoft Power BI brings Power BI to your pocket, with up-t
 
 You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
 
-Then interact with your dashboards and reports, explore the data, and share them, all from the iPad app for Power BI.
+Then interact with your dashboards and reports, explore the data, and share them, all from the Android app for Power BI.
+
 ## First things first
 
 -   **Get the app**  [Get the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
