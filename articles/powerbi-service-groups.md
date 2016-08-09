@@ -3,7 +3,7 @@
    description="Groups in Power BI offer a powerful collaborative experience built on Office 365 groups, and available only with Power BI Pro."
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="ajayan" 
    manager="mblythe" 
    backup=""
    editor=""

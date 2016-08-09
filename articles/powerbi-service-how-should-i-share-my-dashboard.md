@@ -3,7 +3,7 @@
    description="How should I share Power BI dashboards and reports?"
    services="powerbi"
    documentationCenter=""
-   authors="maggiesMSFT"
+   authors="ajayan"
    manager="mblythe"
    backup=""
    editor=""

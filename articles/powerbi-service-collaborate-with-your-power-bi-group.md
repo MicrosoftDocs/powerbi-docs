@@ -3,7 +3,7 @@
    description="Collaborate with your Power BI group"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="ajayan" 
    manager="mblythe" 
    backup=""
    editor=""
