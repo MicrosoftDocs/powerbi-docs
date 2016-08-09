@@ -3,7 +3,7 @@
    description="What's new in the Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="amandacofsky"
+   authors="fetiyekarabay"
    manager="mblythe"
    backup="mihart"
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2016"
-   ms.author="amac"/>
+   ms.date="08/03/2016"
+   ms.author="fetiyek"/>
 
 # What's new in the Power BI service  
 
@@ -37,10 +37,63 @@ For related "What's New" information, see:
 
 
 ## Recent updates
+**July 29, 2016**
+
+***RLS graduates from preview***
+
+- Row Level Security (RLS) lets you restrict data access based on who is accessing it. Recently we streamlined the process of configuring RLS by exposing roles and rules in Power BI Desktop. Today, we are happy to announce that RLS is now generally available for all Power BI Pro users.
+
+***Data classification***
+
+- You can now tag your dashboards with classifications defined by your company's IT department, raising awareness of those viewing your dashboards about what level of security should be used.
+
+***Analyze your on-premises data in Excel***
+
+- Analyze in Excel feature has expanded to support on-premises datasets. We establish a secure and direct connection to your on-premises dataset that enables you to analyze it in Excel. We also introduced a setting for admins to turn off the Analyze in Excel feature for on-premises sources.  
+
+For all the details, [visit the Power BI team blog](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/)
 
 **June 1, 2016**
 
--   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters. 
+***Quick Insights***
+
+-   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
+
+**May 16, 2016**
+
+***Get Data***
+
+-   File size limit increase to 1 GB: We increased the file size limit for both Excel workbooks and Power BI Desktop files to 1 GB.
+
+-   Find SSAS servers set up with the Enterprise Gateway and other Gateway updates: Now when you set up an Enterprise Gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
+
+***Row-level security (RLS)***
+
+-   Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
+
+-   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+
+-   Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
+
+***Dashboards***
+
+-   Favorite dashboards: To help you reach the dashboards you go to most, we added a way to favorite those dashboard and make them easily accessible from all your workspaces.
+
+***Analyze in Excel***
+
+-   Improved download experience: Easily download updates to the Analyze in Excel feature through a new dialog experience.
+
+-   Support for RLS: Once you set up RLS, the rules you apply to the data now flow through when a user analyzes the data in Excel.
+
+-   Improved error messaging for on-premises Analysis Services databases: Previously, if you selected Analyze in Excel for an unsupported data source, you wouldn't get an error message until after you downloaded the ODC file and tried to connect to Power BI. Now as soon as you select Analyze in Excel for a data source we don't support, you'll see a message letting you know we don't yet support that data source.
+
+For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
+
+**June 1, 2016**
+
+-   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
 
