@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/27/2016"
+   ms.date="08/08/2016"
    ms.author="maggies"/>
 
 # Get notifications in the Power BI mobile apps
@@ -29,6 +29,10 @@ Notifications bring information related to your Power BI experience right to you
 1.  When you receive notifications on your mobile device, by default Power BI makes a sound and shows a notification banner.
 
     ![](media/powerbi-mobile-notification-center/power-bi-mobile-notification-banner.png)
+
+    Or on an iPad:
+
+    ![](media/powerbi-mobile-notification-center/power-bi-ipad-notifications.png)
 
     You can [change how Power BI notifies you](powerbi-mobile-notification-center.md#change-or-turn-off-notifications-on-your-mobile-device).
 
