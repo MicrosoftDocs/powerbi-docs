@@ -3,7 +3,7 @@
    description="How to share Power BI dashboards with colleagues in and out of your organization, and what you need to know about sharing."
    services="powerbi"
    documentationCenter=""
-   authors="maggiesMSFT"
+   authors="ajayan"
    manager="mblythe"
    backup=""
    editor=""

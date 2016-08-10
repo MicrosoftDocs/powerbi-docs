@@ -3,7 +3,7 @@
    description="Share a dashboard that has links to an Excel workbook on OneDrive for Business."
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="ajayan"
    manager="mblythe"
    backup=""
    editor=""

@@ -3,7 +3,7 @@
    description="Organizational content packs: Introduction"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="ajayan" 
    manager="mblythe" 
    backup=""
    editor=""
