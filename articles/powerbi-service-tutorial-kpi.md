@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2016"
+   ms.date="08/10/2016"
    ms.author="mihart"/>
 
 # KPIs in Power BI

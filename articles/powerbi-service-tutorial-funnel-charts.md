@@ -18,19 +18,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/20/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
-# Tutorial: Funnel charts in Power BI
+# Tutorial: funnel charts in Power BI
 
-A Funnel Chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
+A funnel chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
-Each funnel stage represents a percentage of the total. So, in most cases, a Funnel Chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
+Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
 
 ![](media/powerbi-service-tutorial-funnel-charts/funnelplain.png)
 
-## When to use a Funnel Chart
+## When to use a funnel chart
 
-Funnel Charts are a great choice:
+Funnel charts are a great choice:
 
 -   when the data is sequential and moves through at least 4 stages.
 
@@ -46,9 +46,8 @@ Funnel Charts are a great choice:
 
 -   to track the progress and success of click-through advertising/marketing campaigns.
 
-## Working with Funnel Charts
-
-Funnel Charts:
+## Working with funnel charts
+funnel charts:
 
 -   Can be pinned from reports and from Q&A.
 
@@ -60,14 +59,14 @@ Funnel Charts:
 
 -   Can be used to highlight and cross-filter other visualizations on the same report page.
 
-## Create a basic Funnel Chart
+## Create a basic funnel chart
 
 Watch this video to see Will create a Funnel chart using the Sales and Marketing sample.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/maTzOJSRB3g" frameborder="0" allowfullscreen></iframe>
 
 
-Now create your own Funnel chart that shows the number of opportunities we have in each of our sales stages.
+Now create your own funnel chart that shows the number of opportunities we have in each of our sales stages.
 
 These instructions use the Opportunity Tracking Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
 
@@ -75,7 +74,7 @@ These instructions use the Opportunity Tracking Sample. To follow along, [downlo
 
 	![](media/powerbi-service-tutorial-funnel-charts/FunnelSelectField_new.png)
 
-2. [Convert the chart](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a Funnel. Notice that **Sales Stage** is in the **Group** well. 
+2. [Convert the chart](powerbi-service-change-the-type-of-visualization-in-a-report.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
 
 3. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
 
@@ -101,19 +100,19 @@ These instructions use the Opportunity Tracking Sample. To follow along, [downlo
 
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a bar in a Funnel cross-filters the other visualizations on the report page... and vice versa. To follow along, add a few more visuals to the report page that contains the Funnel chart.
+Highlighting a bar in a funnel cross-filters the other visualizations on the report page... and vice versa. To follow along, add a few more visuals to the report page that contains the funnel chart.
 
-1.  On the Funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. 
+1.  On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. 
 
     ![](media/powerbi-service-tutorial-funnel-charts/FunnelChartNoOwl.gif)
 
     >**TIP**:  Use CTRL to multi-select. 
 
-2.  In the "Factored Revenue by Opportunity" chart, highlight the **Large** bar to cross-filter the other visualizations on the page, including the Funnel chart.
+2.  In the "Factored Revenue by Opportunity" chart, highlight the **Large** bar to cross-filter the other visualizations on the page, including the funnel chart.
 
 3. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md)
 
-## Create a Funnel Chart in Q&A
+## Create a funnel chart in Q&A
 
 Highlight the dashboard that has at least one visualization pinned from the "Opportunity Tracking" dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](powerbi-service-basic-concepts.md).
 
