@@ -105,11 +105,15 @@ Provide a name for your organisation to track in Power BI. This allows you to co
 
 ## Troubleshooting
 
--   For issues connecting the Xero content pack for Power BI like error messages or very slow load times, first clear the cache / cookies and restart the browser, then reconnect to Power BI.  
-
 -   Xero users must have the following roles to access the Xero content pack for Power BI: "Standard + Reports" or "Advisor". The content pack relies on the user-based permissions to access reporting data through Power BI.  
 
+-   If you receieve a failure after loading for some time, verify how long it took to see that error message. Note that the access token provided by Xero is only valid for 30min so accounts with more data than can be loaded in that timeframe will fail. We're actively working to improve this. 
+
+-   During the load the tiles on the dashboard will be in a generic loading state. This is not expected to change until the full load completes. If you receive a notification that your load completed but the tiles are still loading, try refreshing the dashboard tiles using the ... in the top right of your dashboard. 
+
 -   If your content pack fails to refresh, please check if you have connected to the same organisation more than once in Power BI. Xero only allows a single active connection to an organisation and you may see an error indicating your credentials are invalid if you connect to the same one more than once.  
+
+-   For issues connecting the Xero content pack for Power BI like error messages or very slow load times, first clear the cache / cookies and restart the browser, then reconnect to Power BI.  
 
 For other issues, please file a ticket at http://support.powerbi.com if the issue persists.
 
