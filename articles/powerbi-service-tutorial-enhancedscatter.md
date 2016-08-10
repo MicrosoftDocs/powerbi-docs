@@ -17,29 +17,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 
 
-# Tutorial: Enhanced Scatter charts in Power BI
+# Tutorial: enhanced scatter charts in Power BI
 
 ![](media/powerbi-service-tutorial-enhancedscatter/ES.png)
 
-The Enhanced Scatter chart is just one of the Microsoft-created custom visuals available for download from the [Power BI Visuals gallery](https://app.powerbi.com/visuals).  An Enchanced Scatter chart is similar to a standard Scatter or Bubble chart in that it displays the relationship between 2 to 3 variables. The  difference is that you are not limited to circles (bubbles). You can display shapes, images, add images to the background, and much more.
+The enhanced scatter chart is just one of the Microsoft-created custom visuals available for download from the [Power BI Visuals gallery](https://app.powerbi.com/visuals).  An enhanced scatter chart is similar to a standard scatter or bubble chart in that it displays the relationship between 2 to 3 variables. The  difference is that you are not limited to circles (bubbles). You can display shapes, images, add images to the background, and much more.
 
 For more information, watch this video about [Enhanced Scatter](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x).
 
-The steps below show just one way to use the Enhanced Scatter -- to create a visual that maps page clicks by number and location on a web page. Use your own dataset and discover even more ways to use this new custom visual.
+The steps below show just one way to use the enhanced scatter -- to create a visual that maps page clicks by number and location on a web page. Use your own dataset and discover even more ways to use this new custom visual.
 
 >**NOTE**: Unfortunately, the dataset used in this tutorial is not available for download.
 
-## Start by creating a basic Bubble chart
+## Start by creating a basic bubble chart
 
-The Bubble chart will display website traffic details.
+The bubble chart will display website traffic details.
 
 1. Open a report in Editing View and add a blank page.
 
-2. Add an empty Scatter chart to the canvas by selecting the Scatter chart icon.
+2. Add an empty scatter chart to the canvas by selecting the scatter chart icon.
 
 3. From the Fields pane, select **Page Usage** \> **PageNum** to add it to  **Details**.
 
@@ -49,15 +49,15 @@ The Bubble chart will display website traffic details.
 
       ![](media/powerbi-service-tutorial-enhancedscatter/pbi_bubble_convert.png)
 
-I've created a typical bubble chart. The next steps demonstrate the advanced capabilities of the Enhanced Scatter.  
+I've created a typical bubble chart. The next steps demonstrate the advanced capabilities of the enhanced scatter.  
 
-## Convert the Bubble chart to an Enhanced Scatter chart
+## Convert the bubble chart to an enhanced scatter chart
 
-1. [Download the Enhanced Scatter visualization](powerbi-custom-visuals-download-from-the-gallery.md) and [add it to the report](powerbi-custom-visuals-add-to-report.md).
+1. [Download the enhanced scatter visualization](powerbi-custom-visuals-download-from-the-gallery.md) and [add it to the report](powerbi-custom-visuals-add-to-report.md).
 
 2. If you receive a message asking you to enable custom visuals, read the warning and select **Enable custom visuals**.
 
-3. Select the Bubble chart and convert it to an Enhanced Scatter chart by selecting the Enhanced Scatter chart icon    ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg) from the **Visualizations** pane.
+3. Select the bubble chart and convert it to an enhanced scatter chart by selecting the enhanced scatter chart icon    ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg) from the **Visualizations** pane.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_bubble_convert.png)
 
@@ -66,7 +66,7 @@ I've created a typical bubble chart. The next steps demonstrate the advanced cap
 
 ## Add shapes, images, rotation, and background
 
-The Enhanced Scatter packs even more information into a single visualization. In these steps, add shapes, images, rotation, and a background.
+The enhanced scatter packs even more information into a single visualization. In these steps, add shapes, images, rotation, and a background.
 
 >**IMPORTANT**  These visualization fields require your dataset to have measures that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this visualization field bucket).
 
@@ -99,11 +99,11 @@ Remove **LinkImageMeasure** and drag **PageLayout** > **ImageMeasure** to **Back
 
 ## Add a slicer
 
-Right now, this visualization is not useful since it's displaying total clicks for all 3 webpages onto a single webpage image.  Add a Slicer to control which webpage (and data) to display.
+Right now, this visualization is not useful since it's displaying total clicks for all 3 webpages onto a single webpage image.  Add a slicer to control which webpage (and data) to display.
 
 ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last.png)
 
-1. Add a Slicer to a blank area of the report canvas by selecting the Slicer icon ![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer_icon.png).
+1. Add a slicer to a blank area of the report canvas by selecting the slicer icon ![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer_icon.png).
 
 2. Select **PageName** to add it to the **Field** area.
 
@@ -111,7 +111,7 @@ Right now, this visualization is not useful since it's displaying total clicks f
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
 
-3. Slice the Enhanced Scatter chart to display click data for each web page -- one at a time.
+3. Slice the enhanced scatter chart to display click data for each web page -- one at a time.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
 

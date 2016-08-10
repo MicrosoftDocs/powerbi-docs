@@ -18,17 +18,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/10/2016"
+   ms.date="08/10/2016"
    ms.author="mihart"/>
 # Tutorial: Combo Chart in Power BI
 
-In Power BI, a Combo Chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.
+In Power BI, a combo chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.
 
 Combo charts can have one or two Y axes.
 
 ## When to use a Combo Chart
 
-Combo Charts are a great choice:
+Combo charts are a great choice:
 
 -   when you have a line chart and a column chart with the same X axis.
 
@@ -42,12 +42,12 @@ Combo Charts are a great choice:
 
 ## Create a basic, single-axis, Combo Chart
 
-Watch Will create a Combo Chart using the Sales and Marketing sample.
+Watch Will create a combo chart using the Sales and Marketing sample.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
-To create your own Combo Chart, sign in to Power BI and select **Get Data \> Samples \> Retail Analysis Sample**. 
+To create your own combo chart, sign in to Power BI and select **Get Data \> Samples \> Retail Analysis Sample**. 
 
 1. From the "Retail Analysis Sample" dashboard, select the **Total Stores** tile to open the "Retail Analysis Sample" report.
 
@@ -65,7 +65,7 @@ To create your own Combo Chart, sign in to Power BI and select **Get Data \> S
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combotutorial1new.png)
 
-5. Convert the column chart to a Combo chart. With the column chart selected, from the **Visualizations** pane select the **Line and Clustered Column chart**.
+5. Convert the column chart to a combo chart. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new2.png)
 
@@ -78,7 +78,7 @@ To create your own Combo Chart, sign in to Power BI and select **Get Data \> S
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochartdone-new.png)
 
 
-## Create a Combo Chart with two axes
+## Create a combo chart with two axes
 
 
 In this task, we'll compare gross margin and sales.
@@ -132,11 +132,11 @@ In this task, we'll compare gross margin and sales.
 
 8.  Set **Style** to **Show title only**.
 
-    Your Combo chart now displays dual axes, switched to opposite sides, both with titles.
+    Your combo chart now displays dual axes, switched to opposite sides, both with titles.
 
 	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/PBI_newComboChart.png)
 
-	[Add the Combo Chart as a dashboard tile](powerbi-service-dashboard-tiles.md).
+	[Add the combo chart as a dashboard tile](powerbi-service-dashboard-tiles.md).
 
 	[Save the report](powerbi-service-save-a-report.md).
 
@@ -144,7 +144,7 @@ In this task, we'll compare gross margin and sales.
 
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a column or line in a Combo Chart cross-filters the other visualizations on the report page... and vice versa.
+Highlighting a column or line in a combo chart cross-filters the other visualizations on the report page... and vice versa.
 
 
 
