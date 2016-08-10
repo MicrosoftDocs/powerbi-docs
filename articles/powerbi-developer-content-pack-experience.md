@@ -26,7 +26,7 @@ This section highlights a typical experience for a user connecting to an ISV [co
 Try the connection experience yourself by connecting to a released content pack at https://app.powerbi.com/getdata/services (such as the [GitHub content pack](https://app.powerbi.com/getdata/services/github) described below).
 
 ## Connect
-To get started, a user browsers the content pack gallery and selects a content pack to connect to. The content pack entry provides a name, an icon and a descriptive text providing more information to the user.
+To get started, a user browses the content pack gallery and selects a content pack to connect to. The content pack entry provides a name, an icon and a descriptive text providing more information to the user.
 
 ![connect](media/powerbi-developer-content-pack/github_data.png)
 
@@ -47,7 +47,7 @@ After parameters, the user will be prompted to login.  If the source supports mu
 ![connect](media/powerbi-developer-content-pack/github_creds2.png)
 
 ## Instantiation
-When login succeeds, the artifacts included in the content pack - model, reports, and dashboard - appear in the in the navigation bar.  These artifacts are added to each users’ account.  The data load asynchronously to populate the dataset (model).  The user is then able to consume the dashboard, reports, and model.
+When login succeeds, the artifacts included in the content pack - model, reports, and dashboard - appear in the navigation bar.  These artifacts are added to each users’ account.  The data load asynchronously to populate the dataset (model).  The user is then able to consume the dashboard, reports, and model.
 
 By default a daily refresh schedule is configured for the user, which will re-evaluate the queries in the model.  The credentials provided to the user must allow them to refresh the data without being present.
 

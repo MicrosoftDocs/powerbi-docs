@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/08/2016"
+   ms.date="08/04/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -27,6 +27,70 @@
 ### All phones
 
 In the Power BI service you can now [create a view of a dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
+
+### Android phones
+
+**New data-driven alerts**
+Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
+ 
+**Favorite dashboard management**
+Manage your list of favorite dashboards from your mobile device.
+ 
+**Improved security management**
+Select a risk classification for the business data presented in a specific dashboard.
+
+**Improved manual refresh**
+You can now manually refresh your dashboard tiles. For tiles based on Direct Query, this retrieves the latest data from the data model.
+ 
+**Improved warning and banners**
+We’ve improved warnings and banners for the mobile app.
+ 
+**QR codes for report pages**
+A QR code generated in the service will link to a specific page rather than the entire report.
+ 
+**Improved alerts**
+Data-driven alerts are now formatted based on your device’s locale.
+ 
+### iOS on iPhones and iPads
+  
+**Improved data-driven alerts**
+Threshold-based notifications are now formatted based on your device’s locale.
+
+**Improved security management**
+Select a risk classification for the business data presented in a specific dashboard.
+ 
+**Intune MAM**
+The iOS app now supports Intune MAM (MDM-less) capabilities.
+ 
+**Mobile insights**
+View summary data (max, min, and all) on clustered column chart tiles.
+ 
+**Improved manual refresh**
+You can now manually refresh your dashboard tiles. For tiles based on Direct Query, this retrieves the latest data from the data model.
+ 
+**Improved warning and banners**
+We’ve improved warnings and banners for the mobile app.
+
+**QR codes for report pages**
+A QR code generated in the service will link to a specific page rather than the entire report.
+
+**General improvements**
+We’ve improved error messages for tiles in the mobile app.
+
+
+### Windows 10 devices
+ 
+**Improved manual refresh**
+You can now manually refresh your dashboard tiles. For tiles based on Direct Query, this retrieves the latest data from the data model.
+
+**Improved security management**
+Select a risk classification for the business data presented in a specific dashboard.
+
+**Improved warning and banners**
+We’ve improved warnings and banners for the mobile app.
+
+**Improved alerts**
+New data-driven alerts are now formatted based on your device’s locale.
 
 ## June 2016
 

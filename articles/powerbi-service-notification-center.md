@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Power BI Unified Notification Center"
    description="The Unified Notification Center is a sequential feed of information related to your Power BI experience."
    services="powerbi"
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/28/2016"
+   ms.date="08/05/2016"
    ms.author="mihart"/>
 
 # Power BI Unified Notification Center
 
-The Unified Notification Center is a sequential feed of information related to your Power BI experience. Open it to see messages about new dashboards that have been shared with you, changes to your Group space, information about Power BI events and meetings, and more.
+The Unified Notification Center is a sequential feed of information related to your Power BI experience. Open it to see messages about new dashboards that have been shared with you, changes to your Group space, information about Power BI events and meetings, alerts you've set, and more. You can [set alerts in the Power BI service](powerbi-service-set-data-alerts.md) and also in the Power BI mobile apps.
 
 1.  When you log in to Power BI, any new notifications that were sent to you while you were offline are added to your feed. If you do have new notifications, Power BI displays a yellow bubble with the number of new items.
 
@@ -37,3 +37,9 @@ The Unified Notification Center is a sequential feed of information related to y
     ![](media/powerbi-service-notification-center/power-bi-notifications.png)
 
 4.  To dismiss a notification, select the X icon.
+
+### See also
+- [Data alerts in Power BI service](powerbi-service-set-data-alerts.md)
+- [Set data alerts in the iPhone app (Power BI for iOS)](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
+- [Set data alerts in the Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md)
+
