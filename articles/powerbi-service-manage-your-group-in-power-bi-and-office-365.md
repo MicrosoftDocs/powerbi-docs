@@ -3,7 +3,7 @@
    description="Groups in Power BI are a collaborative experience built on Office 365 groups. Manage your groups in Power BI and also in Office 365."
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="ajayan" 
    manager="mblythe" 
    backup=""
    editor=""

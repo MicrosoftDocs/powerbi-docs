@@ -3,7 +3,7 @@
    description="Create a group in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="ajayan" 
    manager="mblythe" 
    backup=""
    editor=""

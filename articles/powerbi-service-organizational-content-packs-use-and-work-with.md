@@ -3,7 +3,7 @@
    description="Work with organizational content packs in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="ajayan" 
    manager="mblythe" 
    backup=""
    editor=""
