@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/26/2016"
+   ms.date="08/10/2016"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  
@@ -36,9 +36,9 @@ The following data sources are currently supported:
 -   [Amazon Redshift (Preview)](powerbi-desktop-connect-redshift.md)
 
 ## How to Connect using DirectQuery  
-When you use **Get Data** to connect to a data source supported by **DirectQuery**, a dialog window appears that asks how you want to connect.  
+When you use **Get Data** to connect to a data source supported by **DirectQuery**, the connection window lets you select how you want to connect.  
 
-![](media/powerbi-dekstop-use-directquery/DirectQuery_2.png)
+![](media/powerbi-dekstop-use-directquery/DirectQuery_2a.png)
 
 The differences between selecting **Import** and **DirectQuery** are the following:
 
@@ -47,6 +47,8 @@ The differences between selecting **Import** and **DirectQuery** are the followi
 **DirectQuery** – no data is imported or copied into Power BI Desktop. The selected tables and columns appear in your Power BI Desktop **Fields** list. As you create or interact with a visualization, Power BI Desktop queries the underlying data source, which means you’re always viewing current data.
 
 Many data modeling and data transformations are available when using **DirectQuery**, though with some limitations. When creating or interacting with a visualization, the underlying source must be queried and the time necessary to refresh the visualization is dependent on the performance of the underlying data source. When the data necessary to service the request has recently been requested, Power BI Desktop uses recent data to reduce the time required to display the visualization. Selecting **Refresh** from the **Home** ribbon will ensure all visualizations are refreshed with current data.
+
+See the following sections for more information about benefits, limitations, and important considerations when using **DirectQuery**.
 
 ## Benefits of using DirectQuery  
 There are two primary benefits to using **DirectQuery**:
@@ -63,13 +65,34 @@ There are currently a few limitations to using **DirectQuery**:
 
 -   All tables must come from a single database
 
--   If the Query Editor query is overly complex an error will occur. To remedy the error you must: delete the problematic step in Query Editor, or Import the data instead of using **DirectQuery**
+-   If the **Query Editor** query is overly complex, an error will occur. To remedy the error you must either delete the problematic step in **Query Editor**, or *Import* the data instead of using **DirectQuery**
 
 -   Relationship filtering is limited to a single direction, rather than both directions
+
+-   Time intelligence capabilities are not available in **DirectQuery**. For example, special treatment of date columns (year, quarter, month, day, so on) are not supported in **DirectQuery** mode.
 
 -   By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph for more information
 
 To ensure that queries sent to the underlying data source have acceptable performance, limitations are imposed on measures by default. Advanced users can choose to bypass this limitation by selecting **File > Options** and then **Settings > Options > DirectQuery**, then selecting the option *Allow unrestricted measures in DirectQuery mode**. When that option is selected, any DAX expression that is valid for a measure can be used. Users must be aware, however, that some expressions that perform very well when the data is imported may result in very slow queries to the backend source when in DirectQuery mode.
+
+## Important considerations when using DirectQuery
+
+The following three points should be taken into consideration when using **DirectQuery**:
+
+-   **Performance and load** - All **DirectQuery** requests are sent to the source database, so the time required to refresh a visual is dependent on how long that back-end source takes to respond with the results from the query (or queries). The recommended response time (with requested data being returned) for using **DirectQuery** for visuals is five seconds or less, with a maximum recommended results response time of 30 seconds. Any longer, and the experience of a user consuming the report becomes unacceptably poor. In addition, once a report is published to the Power BI service, any query that takes longer than a few minutes will timeout, and the user will receive an error.
+
+    Load on the source database should also be considered, based on the number of Power BI users who will consume the published report. Using *Row Level Security* (RLS) can have a significant impact as well; a non-RLS dashboard tile shared by multiple users results in a single query to the database, but using RLS on a dashboard tile usually means the refresh of a tile requires one query *per user*, thus significantly increasing load on the source database and potentially impacting performance.
+
+    Power BI creates queries that are as efficient as possible. Under certain situations however, the generated query may not be efficient enough to avoid refresh that would fail. One example of this situation is when a generated query would retrieve an excessively large number of rows (more than 1 million) from the back-end data source, in which case the following error occurs:
+
+        The resultset of a query to external data source has exceeded
+        the maximum allowed size of '1000000' rows.
+
+    This situation can occur with a simple chart that includes a very high cardinality column, with the aggregation option set to *Don’t Summarize*. The visual needs to only have columns with a cardinality below 1 million, or must have appropriate filters applied.
+
+-   **Security** - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source.
+
+-   **Supported features** - Not all features in **Power BI Desktop** are supported in **DirectQuery** mode, or have some limitations. In addition, there are some capabilities in the Power BI service (such as *Quick Insights*) that are not available for datasets using **DirectQuery**. As such, the limitation of such features when using **DirectQuery** should be taken into consideration when determining whether to use **DirectQuery**.   
 
 
 ## Publish to the Power BI service
