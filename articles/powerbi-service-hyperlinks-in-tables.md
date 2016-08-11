@@ -42,7 +42,7 @@ Hyperlinks in tables and matrixes can be created in Power BI Desktop but not fr
 
 3. Select **Web URL**.
 
-4. [Publish the report from Desktop to Power BI service](https://powerbi.microsoft.com/documentation/powerbi-learning-4-1-publish-reports.md) and open the report in Power BI service.
+4. [Publish the report from Desktop to Power BI service](powerbi-learning-4-1-publish-reports.md) and open the report in Power BI service.
 
 5. Add the new column to a table or matrix.
 
