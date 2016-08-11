@@ -111,7 +111,7 @@ From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/refe
 ## Troubleshooting
 If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company). 
 
-If you've successfully passed the credentials screen and start the content pack loading before hitting an error, it's possible the reports are taking too long to complete. Please review the "What's included" section and compare to the size of your Adobe instance.
+If you've successfully passed the credentials screen and start the content pack loading before hitting an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Please review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today however we're considering updates to better support larger instances, please provide feedback to the Power BI team at https://ideas.powerbi.com
 
 ### See also
 
