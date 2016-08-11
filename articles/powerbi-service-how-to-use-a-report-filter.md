@@ -17,13 +17,33 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/06/2016"
+   ms.date="08/02/2016"
    ms.author="mihart"/>
 
-# How to use report filters  
+# How to use report filters
+This article explains how to use filters when you're creating or viewing a report.
+
+There are many different ways to filter data in Power BI and we recommend reading [About filters and highlighting](powerbi-service-about-filters-and-highlighting-in-reports) first.
 
 ## Working with filters  
 Reports can be opened in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) or [Reading View](powerbi-service-open-a-report-in-reading-view.md). In Editing View, report owners can use the **Filters** pane to add filters to a report and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
+
+## Working with filters in Reading viewing
+You can find the **Filters** pane in the top right corner.  If it's collapsed, just select the arrow to expand it.
+
+![](media/powerbi-service-how-to-use-a-report-filter/power-bi-filter-pane-new.png)
+
+In this example, we've selected a visual that has filters: FiscalMonth and Total Sales Variance.  The report page also has filters, listed under the **Page level filters** heading. And the entire report has a filter too:  FiscalYear is 2013 or 2014.  
+
+Anyone viewing this report can interact with these filters.
+-  view the details of the filter by hovering and selecting the arrow next to the filter.
+
+-  change the filter, for example, xxxx.
+
+-  delete the filter by selecting the **x** next to the filter name.
+
+
+## Working with filters in Editing view
 
 Filter controls are available in the bottom half of the **Visualization pane**:  
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterList.jpg)

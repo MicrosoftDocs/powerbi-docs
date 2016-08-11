@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/02/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 
-# Tutorial: Treemaps in Power BI  
+# Tutorial: treemaps in Power BI  
 
 Treemaps display hierarchical data as a set of nested rectangles.  Each level of the hierarchy is represented by a colored rectangle (often called a "branch") containing other rectangles ("leaves").  The space inside each rectangle is allocated based on the quantitative value being measured, with the rectangles arranged in size from top left (largest) to bottom right (smallest).
 
@@ -29,7 +29,7 @@ Treemaps display hierarchical data as a set of nested rectangles.  Each level o
 
 For example, if I'm analyzing my sales, I might have top-level rectangles (branches) for the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**.  My category rectangles would contain smaller rectangles (leaves) for the clothing manufacturers within that category, and these smaller rectangles would be sized and shaded based on the number sold.  In the **Urban** branch above, lots of Maximus clothing was sold, less Natura and Fama, and very little Leo.  So, the **Urban** branch of my Treemap would have the largest rectangle for Maximus (in the top left corner), slightly-smaller rectangles for Natura and Fama, lots of other rectangles representing all the other clothing sold, and a tiny rectangle for Leo.  And I could compare the number of items sold across the other clothing categories by comparing the size and shading of each leaf node; the larger the rectangle and the darker the shading, the higher the value.
 
-## When to use a Treemap  
+## When to use a treemap  
 Treemaps are a great choice:
 
 -   to display large amounts of hierarchical data.
@@ -44,40 +44,40 @@ Treemaps are a great choice:
 
 -   to spot patterns, outliers, most-important contributors, and exceptions.
 
-## Create a basic Treemap  
+## Create a basic treemap  
 
 
-Want to watch someone else create a Treemap first?  Skip to 2:01 in this video to watch Will create a Treemap using the Sales and Marketing sample.
+Want to watch someone else create a treemap first?  Skip to 2:01 in this video to watch Will create a treemap using the Sales and Marketing sample.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rnMyiA6Nt6Y?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-Or, create your own Treemap. These instructions use the Retail Analysis Sample. To follow along,  [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
+Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along,  [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Excel Workbook \>  Connect \> Retail Analysis Sample**.**xlsx**.
 
 1.  Start in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   
 ![](media/powerbi-service-tutorial-treemaps/treemapFirstValue_new.png)
 
-2.  Convert the chart to a Treemap.  
+2.  Convert the chart to a treemap.  
 ![](media/powerbi-service-tutorial-treemaps/treemapConvertTo_new.png)
 
-3.  Drag **Item** > **Category** to the **Group** well. Power BI creates a Treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.
+3.  Drag **Item** > **Category** to the **Group** well. Power BI creates a treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The **Mens** category has the highest sales and the **Hosiery** category has the lowest.
   ![](media/powerbi-service-tutorial-treemaps/treemapComplete_new.png)
 
-4.  Drag **Store** > **Chain** to the **Details** well to complete your Treemap. You can now compare last year's sales by category and chain.   
+4.  Drag **Store** > **Chain** to the **Details** well to complete your treemap. You can now compare last year's sales by category and chain.   
 ![](media/powerbi-service-tutorial-treemaps/treemap_addGroup_new.png)
 
 5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
 ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
 
-5.  [Add the Treemap as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md). 
+5.  [Add the treemap as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md). 
 
 6.  [Save the report](powerbi-service-save-a-report.md).
 
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a Category or Details in a Treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the Treemap to a report page that already has other visuals.
+Highlighting a Category or Details in a treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the treemap to a report page that already has other visuals.
 
-1.  On the Treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
+1.  On the treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
     ![](media/powerbi-service-tutorial-treemaps/treemapHiliting.png)
 
 2.  In the **Last Year Sales by Chain** pie chart, select the **Fashions Direct** slice.  

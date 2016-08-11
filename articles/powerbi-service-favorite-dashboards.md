@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 
 # Favorite dashboards in Power BI
 
-Access a few select dashboards that are most important to you. **Favorite** dashboards are accessible from all of your workspaces.
+When you make a dashboard a *favorite*,  you'll be able to access it from all of your workspaces.  Favorite dashboards are typically those that you visit most often.
 
 >**NOTE**: You can also select a single dashboard as a [Featured dashboard](powerbi-service-featured-dashboards.md) in Power BI.
 

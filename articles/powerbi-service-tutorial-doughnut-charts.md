@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 
 # Tutorial: Doughnut charts in Power BI
 
 A  doughnut chart is similar to a pie chart in that it shows the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
-## Create a Doughnut Chart
+## Create a doughnut chart
 
 To follow along, sign in to Power BI and select **Get Data** \> **Samples** \> **Retail Analysis Sample**. 
 
@@ -38,7 +38,7 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \>
 
   - From the **Fields** pane, select **Sales** \> **Last Year Sales**.
 
-  - Convert to a Doughnut chart. If Last Year Sales is not in the **Values** area, drag it there.
+  - Convert to a doughnut chart. If Last Year Sales is not in the **Values** area, drag it there.
 
         ![](media/powerbi-service-tutorial-doughnut-charts/convertDonut.png)
 
@@ -46,7 +46,7 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \>
 
         ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
 
-## Tips and Tricks for Doughnut Charts
+## Tips and Tricks for doughnut charts
 
 -   The sum of the doughnut chart values must add up to 100%.
 

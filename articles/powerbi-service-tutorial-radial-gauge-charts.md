@@ -17,20 +17,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 
-# Tutorial: Radial Gauge charts in Power BI
+# Tutorial: radial gauge charts in Power BI
 
-A Radial Gauge chart has a circular arc and displays a single value that measures progress toward a goal/KPI.  The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading.  And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal/KPI.  The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading.  And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
 In the example below, we are a car retailer, tracking our Sales team's average sales per month. Our goal is 140 and represented by the black needle.  The minimum possible average sales is 0 and we've set the maximum as 200.  The blue shading shows that we're currently averaging approximately 120 sales this month. Luckily, we still have another week to reach our goal.
 
 ![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_m.PNG)
 
-## When to use a Radial Gauge
+## When to use a radial gauge
 
-Radial Gauges are a great choice to:
+Radial gauges are a great choice to:
 
 -   show progress toward a goal.
 
@@ -40,7 +40,7 @@ Radial Gauges are a great choice to:
 
 -   display information that can be quickly scanned and understood.
 
-## Create a basic Radial Gauge
+## Create a basic radial gauge
 
 These instructions use the Financial Sample. To follow along, [download the sample](http://go.microsoft.com/fwlink/?LinkID=521962) to your computer, sign in to Power BI and select **Get Data \> Files \>  Local File > Open**. 
 
@@ -50,7 +50,7 @@ These instructions use the Financial Sample. To follow along, [download the sam
 
 2.  Select **Financial Sample** to open it in Explore mode.
 
-### Step 2: Create a Gauge to track Gross Sales
+### Step 2: Create a gauge to track Gross Sales
 
 1.  In the **Fields** pane, select **Gross Sales**.
 
@@ -60,7 +60,7 @@ These instructions use the Financial Sample. To follow along, [download the sam
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/changeToAverage_new.png)
 
-3.  Select the Gauge icon ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeIcon_new.png) to convert the Column Chart to a Gauge.
+3.  Select the gauge icon ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeIcon_new.png) to convert the Column Chart to a gauge.
 
   By default, Power BI creates a Gauge chart where the current value (in this case, Average of Gross Sales) is assumed to be at the halfway point on the gauge. Since the Average Gross Sales is $182.76K, the start value (Minimum) is set to 0 and the end value (Maximum) is set to double the current value.
 
@@ -87,13 +87,13 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/SetMaximum_new.png)
 
-    The Gauge is redrawn with a new end value, 1.21 million in gross sales.
+    The gauge is redrawn with a new end value, 1.21 million in gross sales.
 
 ### Step 5: Save your report
 
 6.  [Save the report](powerbi-service-save-a-report.md).
 
-7. [Add the Gauge chart as a dashboard tile](powerbi-service-dashboard-tiles.md). 
+7. [Add the gauge chart as a dashboard tile](powerbi-service-dashboard-tiles.md). 
 
 ## Use formatting options to manually set Minimum, Maximum, and Target values
 
@@ -115,7 +115,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_new_target.png)
 
-5. Optionally, continue formatting your Gauge chart.
+5. Optionally, continue formatting your gauge chart.
 
 
 ## See also

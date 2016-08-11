@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/16/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 
 # Dashboards in Power BI
@@ -61,7 +61,7 @@ Don't need the dashboard any more?  [Delete it](powerbi-service-delete-or-remov
 
 ### Dashboard size
 
-Display your dashboard without controls and menus using full screen [TV mode](powerbi-service-dash-and-reports-fullscreen.md).
+Display your dashboard without controls and menus using [full screen mode](powerbi-service-dash-and-reports-fullscreen.md).
 
 Dashboards can be wider and longer than the browser window. If so, they have scroll bars. Because you want to show everything important at a glance, we recommend making the dashboard fit the browser window. For more tips, see [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
 

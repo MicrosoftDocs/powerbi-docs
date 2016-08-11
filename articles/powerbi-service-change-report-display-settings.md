@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="5tg-OXzxe2g"
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/10/2016"
+   ms.date="08/10/2016"
    ms.author="mihart"/>
 
 # Page display settings in a Power BI report

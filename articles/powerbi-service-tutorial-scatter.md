@@ -18,21 +18,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/20/2016"
+   ms.date="08/10/2016"
    ms.author="mihart"/>
 
-# Tutorial: Scatter charts and Bubble charts in Power BI  
+# Tutorial: scatter charts and bubble charts in Power BI  
 
-A Scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
+A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
-A Bubble chart replaces the data points with bubbles, with the bubble *size* representing an additional dimension of the data.
+A bubble chart replaces the data points with bubbles, with the bubble *size* representing an additional dimension of the data.
 
 
-## When to use a Scatter chart or Bubble chart
+## When to use a scatter chart or bubble chart
 
 ### Scatter charts are a great choice:
 
--   to show relationships between 2 (scatter) or 3 (bubble) **numerical** values.
+-  to show relationships between 2 (scatter) or 3 (bubble) **numerical** values.
 
 -  To plot two groups of numbers as one series of xy coordinates.
 
@@ -54,7 +54,7 @@ A Bubble chart replaces the data points with bubbles, with the bubble *size* rep
 
 - to use with quadrants.
 
-## Create a Scatter chart
+## Create a scatter chart
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -66,16 +66,16 @@ A Bubble chart replaces the data points with bubbles, with the bubble *size* rep
 
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_pre_convert.png)
 
-4. Convert to a Scatter chart. In the Visualization pane, select the Scatter chart icon.
+4. Convert to a scatter chart. In the Visualization pane, select the Scatter chart icon.
  ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_icon.png).
 
 5. Drag **District** from **Details** to **Legend**.
-  
+
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_new.png)
 
-We now have a Scatter chart that plots Total Sales Variance % along the Y axis, and plots Sales Per Square Feet along the X axis.  The data point colors represent districts.  Now let's add a third dimension.
+We now have a scatter chart that plots Total Sales Variance % along the Y axis, and plots Sales Per Square Feet along the X axis.  The data point colors represent districts.  Now let's add a third dimension.
 
-## Create a Bubble chart
+## Create a bubble chart
 
 1.  From the Fields pane, drag **Sales** > **This Year Sales** > **Value** to the **Size** area. 
 
@@ -89,7 +89,7 @@ We now have a Scatter chart that plots Total Sales Variance % along the Y axis, 
 
 ## Troubleshooting
 
-### **Your Scatter chart has only one data point**  
+### **Your scatter chart has only one data point**  
 
 Does your scatter chart have only one data point that aggregates all the values on the X and Y axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
 
