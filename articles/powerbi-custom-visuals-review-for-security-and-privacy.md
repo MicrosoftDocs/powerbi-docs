@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="dvana"
-   manager="mblythe" 
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="12/17/2015"
-   ms.author="mihart"/>
+   ms.author="mblythe"/>
 
 # Review custom visuals for security and privacy  
 

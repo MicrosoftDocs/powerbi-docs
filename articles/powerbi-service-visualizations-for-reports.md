@@ -18,13 +18,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/19/2016"
+   ms.date="08/12/2016"
    ms.author="mihart"/>
 
 # Visualizations in Power BI  
 
-Data visualizations allow you to interact with your data to find business insights. Create and modify visualizations in your reports, and then pin them to your dashboards.   
+Data visualizations (aka visuals) allow you to interact with your data to find business insights. Create and modify visualizations in your reports, and then pin them to your dashboards.   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
+
+#####  If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
 
 ## Add a visualization in Power BI  
 [Create visualizations](powerbi-service-add-visualizations-to-a-report-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
@@ -38,50 +41,14 @@ Try [changing the type of visualization](powerbi-service-change-the-type-of-vis
 ## Pin the visualization  
 When you have the visualization the way you want it, you can [pin it to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) as a tile. If you change the visualization in the report after you pin it, the tile on the dashboard doesn't change.
 
-## Move and resize a visualization  
-Organize your report pages by [moving and resizing visualizations](powerbi-service-move-and-resize-a-visualization.md).
-
 ## Copy and paste a visualization  
 [Copy and paste visualizations](powerbi-service-copy-and-paste-a-visualization.md)on the same report page or on new report pages. 
 
 ## Change how a visualization is sorted  
 You can [sort a visualization](powerbi-service-change-how-a-chart-is-sorted.md) by the different fields in the visualization, or reverse the order -- A to Z or Z to A.
 
-## Change the aggregation in a visualization  
-[Change the aggregation in a chart](powerbi-service-aggregates.md)(sum, average, maximum, etc.)
-
 ## Delete a visualization  
 [Remove unwanted visualizations](powerbi-service-delete-a-visualization.md)from your report.
-
-## Add a hyperlink to a table  
-Learn how to [create and add links to table visualizations](powerbi-service-hyperlinks-in-tables.md).
-
-## Tutorials  
--   [Customize visualization title, background, and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
-
--   [Customize X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
-
--   [Basic Area charts](powerbi-service-tutorial-basic-area-chart.md)
-
--   [Combo charts](powerbi-service-tutorial-combo-chart-merge-visualizations.md)
-
--   [Doughnut charts](powerbi-service-tutorial-doughnut-charts.md)
-
-- [Enhanced scatter chart](powerbi-service-tutorial-enhancedscatter.md)
-
--   [Filled Maps](powerbi-service-tutorial-filled-maps-choropleths.md) (Choropleths)
-
--   [Funnel charts](powerbi-service-tutorial-funnel-charts.md)
-
--   [Radial Gauge charts](powerbi-service-tutorial-radial-gauge-charts.md)
-
-- [Scatter charts](powerbi-service-tutorial-scatter.md)
-
-- [Slicers](powerbi-service-tutorial-slicers.md)
-
--   [Treemaps](powerbi-service-tutorial-treemaps.md)
-
--   [Waterfall charts](powerbi-service-tutorial-waterfall-charts.md)
 
 ## See also  
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)

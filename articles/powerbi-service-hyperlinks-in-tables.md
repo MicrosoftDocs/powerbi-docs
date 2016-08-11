@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="08/12/2016"
    ms.author="mihart"/>
 # Hyperlinks in tables
 
@@ -28,7 +28,7 @@ This topic teaches you how to create and work with hyperlinks in tables and matr
 >**NOTE**:
 >Hyperlinks can also be added to [tiles on dashboards](powerbi-service-edit-a-tile-in-a-dashboard.md), [text boxes in reports](powerbi-service-add-a-hyperlink-to-a-text-box.md), and [text boxes on dashboards](powerbi-service-add-a-widget-to-a-dashboard.md).
 
-## To create a hyperlink in Power BI
+## To create a hyperlink in Power BI table or matrix
 
 Hyperlinks in tables and matrixes can be created in Power BI Desktop but not from Power BI Service. Hyperlinks can also be created in Excel Power Pivot before the workbook is imported into Power BI. Both methods are described below.
 
@@ -42,7 +42,7 @@ Hyperlinks in tables and matrixes can be created in Power BI Desktop but not fr
 
 3. Select **Web URL**.
 
-4. Publish and open the report in Power BI Service.
+4. [Publish the report from Desktop to Power BI service](https://powerbi.microsoft.com/en-us/documentation/powerbi-learning-4-1-publish-reports.md) and open the report in Power BI service.
 
 5. Add the new column to a table or matrix.
 

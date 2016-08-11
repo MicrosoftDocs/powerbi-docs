@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 # Rename a report in Power BI
 
