@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/27/2016"
+   ms.date="08/11/2016"
    ms.author="davidi"/>
 
 # Connect to an Amazon Redshift database in Power BI Desktop (Preview)
@@ -42,7 +42,7 @@ Once you've enabled to preview feature, to connect to an **Amazon Redshift** dat
 
 ![](media/powerbi-desktop-connect-redshift/connect_redshift_3.png)
 
-In the **Amazon Redshift** window that appears, type or paste the name of your **Amazon Redshift** server and database into the box, and select **OK**.
+In the **Amazon Redshift** window that appears, type or paste the name of your **Amazon Redshift** server and database into the box. As part of the *Server* field, users can specify a ort in the following format: *ServerURL:Port*
 
 ![](media/powerbi-desktop-connect-redshift/connect_redshift_4.png)
 
