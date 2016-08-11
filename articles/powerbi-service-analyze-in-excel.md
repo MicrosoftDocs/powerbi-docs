@@ -64,9 +64,11 @@ Although you’re signed in to Power BI in your browser, the first time you open
 ### Users with multiple Power BI accounts
 Some users have multiple Power BI accounts, and those users may encounter a situation where they're logged into Power BI with one account, but the account that has access to the dataset being used in Analyze in Excel is a different account. In those situations, you may get a **Forbidden** error or a sign-in failure when attempting to access a dataset that's being used in an Analyze in Excel workbook.
 
-You'll be provided an opportunity to sign in again, at which time you can sign in with the Power BI account that has access to the dataset being accessed by Analyze in Excel. You can also select **Profile** from the **Power BI** ribbon tab in Excel, which identifies which account you're currently logged in with, and provides a link that lets you sign out (and subsequently, sign in with a different account). Note that the **Power BI** ribbon is only available if you have installed the **Power BI publisher** add-on.
+You'll be provided an opportunity to sign in again, at which time you can sign in with the Power BI account that has access to the dataset being accessed by Analyze in Excel.
 
-![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_profile.png)
+![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_AADlogin.png)
+
+For other errors you might encounter, take a look at the [Troubleshooting Analyze in Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md) article.
 
 ### Enable data connections
 In order to analyze your Power BI data in Excel, you are prompted to verify the file name and path for the .odc file, and then select **Enable**.

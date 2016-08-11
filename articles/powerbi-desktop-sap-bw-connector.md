@@ -49,7 +49,7 @@ You can also specify two additional **Advanced options**: Language code, and a c
 
 ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_4a.png)
 
-If no MDX statement was specified you are presented with the **Navigator** window, which displays the list of cubes available in the server, the option to drill down and select items from the available cubes, including dimensions and measures.
+If no MDX statement was specified you are presented with the **Navigator** window, which displays the list of cubes available in the server, the option to drill down and select items from the available cubes, including dimensions and measures. Power BI exposes queries and cubes exposed by the [BW Open Analysis Interface OLAP BAPIs](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
 
 When you select one or more items from the server, a preview of the output table is created, based on their selection.
 
