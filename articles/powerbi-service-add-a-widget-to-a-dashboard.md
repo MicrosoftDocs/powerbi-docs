@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2016"
+   ms.date="08/12/2016"
    ms.author="mihart"/>
 
 # Add a tile directly from the dashboard itself
