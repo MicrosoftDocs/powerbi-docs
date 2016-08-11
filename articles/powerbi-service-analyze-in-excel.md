@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="08/11/2016"
    ms.author="davidi"/>
 
 # Analyze in Excel
@@ -95,3 +95,7 @@ When a user with whom you’ve shared your workbook opens the workbook, they’l
 You can also set the workbook file to refresh the data upon opening, which refreshes the data whenever anyone accesses the dataset. To refresh the workbook each time it's opened, in Excel select **Connections** from the **Data** ribbon, select the connection used for the workbook, then select **Properties** and set *Refresh data when opening the file* to **True**, then select **OK**.
 
 Since users will need to refresh the dataset, and refresh for external connections is not supported in Excel Online, it’s recommended that users open the workbook in the desktop version of Excel on their computer.
+
+## See Also  
+
+[Troubleshooting Analyze in Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md)
