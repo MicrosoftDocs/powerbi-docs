@@ -91,6 +91,8 @@ Remember in the previous step we saw that our report page is currently displayin
 
 1. Resize and move the visuals so that they fit in less than half of the current canvas area.
 
+   ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom-view.gif)
+
 2. Select **Page Size** &gt; **Custom**.
 
 2.  Set Width to 500 and set Height to 750.
@@ -101,7 +103,8 @@ Remember in the previous step we saw that our report page is currently displayin
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-final.png)
 
-## See Also  
+## See also  
+[Create reports for Cortana](powerbi-service-cortana-desktop-entity-cards.md)
 Back to [Page display settings in a Power BI report](powerbi-service-change-report-display-settings.md)  
 Read more about  [reports in Power B ](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
