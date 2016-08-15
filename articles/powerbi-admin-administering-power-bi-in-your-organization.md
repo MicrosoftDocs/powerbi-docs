@@ -17,12 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2016"
+   ms.date="08/15/2016"
    ms.author="asaxton"/>
 
 # Administering Power BI in your organization  
 
 Microsoft Power BI enables users to visualize data, share discoveries, and collaborate in intuitive new ways. To learn more, see [Get started with Power BI](powerbi-service-get-started.md).
+
+Adminsitration of Power BI can occur in several locations. Here are two common locations.
+
+> **Note**: Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
+
+- [Power BI Admin portal](https://app.powerbi.com/admin-portal)
+- [Office 365 Admin Center](https://portal.office.com/adminportal/home)
 
 ## What's in this article
 
@@ -147,9 +154,11 @@ If your organization does not have an Office 365 environment connected to your e
 
 ### How do we manage Power BI?
 
-Power BI provides an admin portal that allows you to view usage statistics, provides a link to the Office 365 admin center to manage users and groups, and the ability to control tenant wide settings. [Learn more](powerbi-admin-portal.md)
+Power BI provides an admin portal that allows you to view usage statistics, provides a link to the Office 365 admin center to manage users and groups, and the ability to control tenant wide settings. 
 
 > **Note**: Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
+
+For more information, see [Power BI Admin Portal](powerbi-admin-portal.md).
 
 ### What is the process to manage a tenant created by Microsoft for my users?
 

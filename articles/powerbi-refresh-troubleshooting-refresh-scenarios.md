@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="04/04/2016"/>
  
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="08/15/2016"
    ms.author="asaxton"/>
 
 # Troubleshooting refresh scenarios  
@@ -46,9 +46,9 @@ For a list of errors you may encounter with dashboard tiles, and explanations, s
 
 [Data Refresh](powerbi-refresh-data.md)
 
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
 [Power BI Community](http://community.powerbi.com/)
 
