@@ -25,7 +25,7 @@ If you are a developer, using Microsoft Azure, and are looking to create a Power
 
 There is an extra step you need to perform to actually do the Power BI sign up due to the fact that you won’t have access to an email server for your custom domain with your AAD tenant.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/97IfXEWZMfU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/97IfXEWZMfU?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Creating the custom directory and new users
 
