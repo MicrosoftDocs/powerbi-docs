@@ -7,7 +7,7 @@ authors="guyinacube"
 manager="mblythe"
 backup=""
 editor=""
-qualityFocus="monitoring"
+qualityFocus="complete"
 qualityDate="04/01/2016"/>
 
 <tags
@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/25/2016"
+ms.date="08/15/2016"
 ms.author="asaxton"/>
 # Configuring scheduled refresh
 
@@ -92,26 +92,16 @@ Certain datasets are supported against different gateways for scheduled refresh.
 -   All online data sources shown in Power Pivot.\*
 -   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
-### On-premises Data Gateway
+<!-- Refresh Data sources-->
+[AZURE.INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
-|**Data source**|
-|---|
-|Analysis Services Tabular|
-|Analysis Services Multidimensional|
-|SQL Server|
-|SAP HANA|
-|Oracle|
-|Teradata|
-|File|
-|Folder|
-|SharePoint list (on-premises)|
-|Web|
-|OData|
-|IBM DB2|
-|MySQL|
-|Sybase|
-|SAP BW|
-|IBM Informix Database|
+## Troubleshooting
+
+Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
+
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## See also
 

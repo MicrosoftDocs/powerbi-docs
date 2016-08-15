@@ -8,7 +8,7 @@ manager="mblythe"
 backup=""
 editor=""
 tags=""
-qualityFocus="monitoring"
+qualityFocus="complete"
 qualityDate="04/01/2016"/>
 
 <tags
@@ -17,11 +17,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/01/2016"
+ms.date="08/15/2016"
 ms.author="asaxton"/>
 # Disable privacy setting in Power BI Gateway - Personal
 
-You may receive the following error based on the privacy settings for your data sources.
+You may receive the following error based on the privacy settings for your data sources when used with the personal gateway.
 
 > *An error occurred while processing the data in the dataset.*
 >
@@ -39,7 +39,7 @@ Turning Fast Combine on will ignore the private setting and allow the execution 
 
 ## Turn on Fast Combine
 
-You can use the following steps to enable Fast Combine for your gateway.
+You can use the following steps to enable Fast Combine for your personal gateway. The On-Premises Data Gateway does not have this setting.
 
 1. Open **ConnectorConfig.xml**.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
 
