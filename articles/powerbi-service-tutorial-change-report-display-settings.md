@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2016"
+   ms.date="08/15/2016"
    ms.author="mihart"/>
 
 # Tutorial: Change the display settings for a page in a Power BI report  
@@ -46,15 +46,12 @@ In the [previous article and video](powerbi-service-change-report-display-settin
 All Power BI reports default to **Fit to page** view. But what if you want this report page to always open in **Actual size** view?
 
 1. On the **New stores** page of the report, switch back to **Actual size** view.
-
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actual-size.png)
 
 2. Save the report with a different name by selecting **File > Save as**. You now have 2 copies of this report; in the original report, **New stores** will continue to open in the default view but in the new report it will open in **Actual size** view. Let's go see.
-
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-save-as.png)
 
 3.  Return to the **Retail Analysis Sample** dashboard by selecting it in the navigation pane. Scroll down to the **Reports** section and find the new report (it will have a yellow asterisk).
-
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-new-report.png)
 
 4.  Select the report to open it and choose the **New stores** page. It opens in **Actual size** view!   
@@ -90,13 +87,11 @@ Remember in the previous step we saw that our report page is currently displayin
 
 
 1. Resize and move the visuals so that they fit in less than half of the current canvas area.
-
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom-view.gif)
 
 2. Select **Page Size** &gt; **Custom**.
 
 2.  Set Width to 500 and set Height to 750.
-
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom.png)
 
 3.  Tweak the report page so that it looks its best. Switch between **View > Actual size** and **View > Fit to page** to make adjustments.
