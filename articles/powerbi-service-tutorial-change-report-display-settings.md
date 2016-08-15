@@ -25,19 +25,19 @@
 In the [previous article and video](powerbi-service-change-report-display-settings.md) you learned about two different ways to control page display in Power BI reports: **View** and **Page Size**. Now let's try it ourselves.
 
 ## First, let's change the page View setting.  
-1.  Open a report in Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  By default, pages display using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.    
-    ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_fit_to_page.png)
+1.  Open a report in Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  By default, pages display using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
+   ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_fit_to_page.png)
 
-2.  Make sure that no visualizations are selected on the canvas. Select **View** and review the display options.  
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-change-page-view.png)
+2.  Make sure that no visualizations are selected on the canvas. Select **View** and review the display options.
+   ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-change-page-view.png)
 
-3.  Let's see how the page looks using the **Actual size** setting.  
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
+3.  Let's see how the page looks using the **Actual size** setting.
+   ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
     Not great, the dashboard now has double scrollbars.
 
-4.  Switch to **Fit to Width**.  
-    ![](media/powerbi-service-tutorial-change-report-display-settings/pbi_fit_to_width.png)
+4.  Switch to **Fit to Width**.
+   ![](media/powerbi-service-tutorial-change-report-display-settings/pbi_fit_to_width.png)
 
     Looks better, we now have scrollbars but it's easier to read the detail.   
 
@@ -46,19 +46,22 @@ In the [previous article and video](powerbi-service-change-report-display-settin
 All Power BI reports default to **Fit to page** view. But what if you want this report page to always open in **Actual size** view?
 
 1. On the **New stores** page of the report, switch back to **Actual size** view.
+
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actual-size.png)
 
 2. Save the report with a different name by selecting **File > Save as**. You now have 2 copies of this report; in the original report, **New stores** will continue to open in the default view but in the new report it will open in **Actual size** view. Let's go see.
+
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-save-as.png)
 
-3.  Return to the **Retail Analysis Sample** dashboard by selecting it in the navigation pane. Scroll down to the **Reports** section and find the new report (it will have a yellow asterisk).
+3.  Return to the **Retail Analysis Sample** dashboard by selecting it in the navigation pane. Scroll down to the **Reports** section and find the new report (it will have a yellow asterisk).  
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-new-report.png)
 
-4.  Select the report to open it and choose the **New stores** page. It opens in **Actual size** view!   
+4.  Select the report to open it and choose the **New stores** page. It opens in **Actual size** view!
+
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
 ## Now, let's explore the *page size* setting  
-1.  Open the "District monthly sales" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md) in Editing View.    
+1.  Open the "District monthly sales" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md) in Editing View.   
 
 2.  Make sure that no visualizations are selected on the canvas.  In the **Visualizations** pane, select the paintbrush icon ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_paintbrush.jpg).    
 
