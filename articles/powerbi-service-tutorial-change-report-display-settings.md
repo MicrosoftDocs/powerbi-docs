@@ -53,7 +53,8 @@ All Power BI reports default to **Fit to page** view. But what if you want this 
 
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-save-as.png)
 
-3.  Return to the **Retail Analysis Sample** dashboard by selecting it in the navigation pane. Scroll down to the **Reports** section and find the new report (it will have a yellow asterisk).  
+3.  Return to the **Retail Analysis Sample** dashboard by selecting it in the navigation pane. Scroll down to the **Reports** section and find the new report (it will have a yellow asterisk).
+
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-new-report.png)
 
 4.  Select the report to open it and choose the **New stores** page. It opens in **Actual size** view!
