@@ -27,21 +27,17 @@ In the [previous article and video](powerbi-service-change-report-display-settin
 ## First, let's change the page View setting
 
 1. Open a report in Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  By default, pages display using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
-
    ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_fit_to_page.png)
 
 2. Make sure that no visualizations are selected on the canvas. Select **View** and review the display options.
-
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-change-page-view.png)
 
 3. Let's see how the page looks using the **Actual size** setting.
-
    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
     Not great, the dashboard now has double scrollbars.
 
 4. Switch to **Fit to Width**.
-
    ![](media/powerbi-service-tutorial-change-report-display-settings/pbi_fit_to_width.png)
 
    Looks better, we now have scrollbars but it's easier to read the detail.
