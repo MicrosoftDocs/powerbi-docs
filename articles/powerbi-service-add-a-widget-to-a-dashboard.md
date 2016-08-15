@@ -57,7 +57,6 @@ Say you want your company logo on your dashboard, or some other image.
 
   - Select **Apply**.  On the dashboard, resize and move the image as needed.
 
-
         ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-image-added.png)
 
 ##  Add a text box or dashboard heading
@@ -119,7 +118,7 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
   - enter the embed code. In this example we're copying and pasting a Twitter feed.
 
   - Select **Apply**.  On the dashboard, resize and move the web content tile as needed.
-  
+
       ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-code-added.png)
 
 ### Tips for embedding web content###
