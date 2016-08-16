@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="08/16/2016"
    ms.author="maggies"/>
 
 # View Power BI in presentation mode on Surface Hub and in the Power BI mobile app for Windows 10
@@ -52,7 +52,7 @@ You can also [display dashboards and reports in full-screen mode from the Power 
 
 ## Turn on presentation mode for Surface Hub
 
-Before you can show Power BI reports in presentation mode on Surface Hub, you need to turn it on.
+Presentation mode is turned on by default in Surface Hub, but if it's turned off, you can turn it back on.
 
 1. Tap the Settings icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-settings-icon.png) at the bottom of the left navigation bar.
 
@@ -64,12 +64,24 @@ Before you can show Power BI reports in presentation mode on Surface Hub, you ne
 
 1. In a report, tap the **Full screen** icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-full-screen-icon.png) to go to Surface Hub presentation mode.
 
-2. Tap the pen in the left or right action bar to change the ink color and draw on the report.
+    You see a collapsible action bar on both sides of the screen. 
+
+     -    To open it, swipe in or tap the handle.
+     -    To close it, swipe out or tap the X at the top.
+
+     >**Note**: Currently when you enable Microsoft Surface Hub presentation mode on a laptop, the action bars are always open and can't collapsed. This is temporary.
+
+2. On devices that support writing with a pen, you can start writing immediately. 
+
+3. To change the ink color, tap the pen in the left or right action bar.
 
     ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-surface-hub-ink.png)
 
-3. Tap the eraser or the unto arrow to remove some or all of the ink.
-4. Tap the arrows to go to other pages in the report.
+3. Tap the eraser or the undo arrow to remove some or all of the ink.
+
+4. Tap the circular arrow to refresh the report content.
+
+4. Tap the sideways arrows to go to other pages in the report.
 
     ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-surface-hub-arrows.png)
 
