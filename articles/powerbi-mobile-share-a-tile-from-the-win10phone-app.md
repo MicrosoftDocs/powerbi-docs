@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Share a tile from the Power BI mobile app for Windows 10"
-   description="Share a tile from the Power BI mobile app for Windows 10"
+   description="Learn how to share snapshots of tiles from the Power BI mobile app for Windows 10. You can share snapshots of tiles with anyone, not just your colleagues."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2016"
+   ms.date="08/15/2016"
    ms.author="maggies"/>
 # Share a tile from the Power BI mobile app for Windows 10
 
@@ -38,6 +38,5 @@ When you share a snapshot of a tile from the [Power BI mobile app for Windows 10
 [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Share a dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) from Power BI mobile app for Windows 10  
 [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
-[Get started with Power BI](powerbi-service-get-started.md)
 
 

@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Share a dashboard from the Power BI mobile app for Windows 10"
-   description="Share a dashboard from the Power BI mobile app for Windows 10"
+   description="Learn how to share dashboards with colleagues from the Power BI mobile app for Windows 10. You can only share dashboards if you have permission to invite others."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2016"
+   ms.date="08/15/2016"
    ms.author="maggies"/>
 # Share a dashboard from the Power BI mobile app for Windows 10
 
@@ -33,15 +33,15 @@ Invite colleagues to view your dashboards by sharing links from the [Power BI mo
 
     If you're the owner of the dashboard, you see the list of colleagues with whom you've shared this dashboard, with these notes:
 
-    -   **Pending**: They haven't yet accepted the invitation to view the dashboard.
+    **Read only**: They have viewed the dashboard but can't share it.
 
-    -   **Read only**: They have viewed the dashboard but can't share it.
-
-    -   **Read and reshare**: They have viewed the dashboard and can share it with other colleagues.
+    **Read and reshare**: They have viewed the dashboard and can share it with other colleagues.
 
 2.  Type email addresses, and a message to accompany your dashboard invitation. Otherwise Power BI sends a default message.
 
-3.  To allow resharing, leave **Allow recipients to share your dashboard** selected.
+    ![](media/powerbi-mobile-share-a-dashboard-from-the-win10phone-app/power-bi-windows-10-share-dashboard.png)
+
+3.  To allow resharing, leave **Allow recipients to share this dashboard** selected.
 
     >**Note**:  Resharing allows your coworkers to share this dashboard with others in your organization, either through the browser or the mobile apps.
 
@@ -64,8 +64,6 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) from the Power BI mobile app for Windows 10  
-[Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)  
-[Get started with Power BI](powerbi-service-get-started.md)
 
 
