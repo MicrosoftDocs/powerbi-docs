@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="08/15/2016"
    ms.author="asaxton"/>
 
 # Troubleshooting unsupported data source for refresh  
@@ -45,5 +45,14 @@ If you aren’t sure what data source was used, you can find that using the foll
 
 5.  Compare the provider with the list of supported data sources found within [Refresh data in Power BI](powerbi-refresh-data.md).  You will find that Active Directory is not a supported data source for refresh.  
 
-## See Also  
+## See Also
+
 [Data Refresh](powerbi-refresh-data.md)
+
+[Power BI Gateway - Personal](powerbi-personal-gateway.md)
+
+[On-premises Data Gateway](powerbi-gateway-onprem.md)
+
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)

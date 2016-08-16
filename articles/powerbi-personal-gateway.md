@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/13/2016"
+   ms.date="08/15/2016"
    ms.author="asaxton"/>
 
 # Power BI Gateway - Personal
@@ -35,6 +35,8 @@ Before we go into details about the gateway, let’s look at some terms used in 
 A *dataset* is data uploaded into the Power BI service from an online or on-premises data source. You create a dataset when you use Get Data to connect to and upload data. Datasets appear in the My Workspace pane of your Power BI Workspace in your browser. When you create reports and pin tiles to your dashboards, you’re looking at data from your datasets.
 
 A *data source* is where the data you upload into a dataset really comes from. It can be just about anything; a database,  Excel worksheet, Web service, etc. With Excel workbooks, you can create a simple worksheet with rows of data, and that is considered a data source. You can also use Power Query or Power Pivot in Excel to connect to and query data from both online and on-premises data sources, all in the same workbook. With Power BI Desktop, you use Get Data to connect to and query data from both online and on-premises data sources.
+
+The personal gateway is installed through the On-Premises Data Gateay. You can download it on the [Power BI Gateway page](https://powerbi.microsoft.com/gateway/).
 
 ## Do I need a gateway?
 
@@ -89,6 +91,8 @@ You’ll be prompted to install a gateway when you click on REFRESH NOW or SCHED
 You will want to select **Personal Gateway** instead of **On-premises data gateway** to have a gateway that is for yourself.
 
 There’s really not much to installing a gateway. You’ll select a location to install to, and read and accept the license agreement just like any other application. There are however some important things to know. In particular, the type of computer you install the gateway on and the type of account you’re logged in to Windows with on that computer.
+
+> **Note**: The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an [On-premises Data Gateway](powerbi-gateway-onprem.md) on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the On-Premises Data Gateway on the VM instead, and configure the a data source within the Power BI service.
 
 ### Computer type
 

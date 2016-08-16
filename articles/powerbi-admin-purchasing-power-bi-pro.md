@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="08/15/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -17,16 +17,22 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/01/2016"
+   ms.date="08/15/2016"
    ms.author="asaxton"/>
    
 # Purchasing Power BI Pro
 
+Power BI Pro provides access to features that a free user does not have. This includes use of the On-Premises Data Gateway for on-premises data refresh to data sources such as SQL Server, Groups and other features. For more information, see [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md).
+
 You can purchase Power BI Pro directly through the Power BI website, the Office 365 admin center or through your Microsoft representative or partner. This article will look at the two trial options available for Power BI Pro, and then how to purchase Power BI Pro as an individual, or as an organization.
+
+## Pricing
+
+For the latest pricing information of Power BI Pro and a table listing of included features, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
 
 ## Power BI Pro 60 day trial
 
-After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
+After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
 -   Create and publish customized [content packs](powerbi-service-organizational-content-packs-introduction.md)
 -   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [groups](powerbi-service-create-a-group-in-power-bi.md)
@@ -37,7 +43,7 @@ After you have signed up for your free account, you can optionally choose to try
 	-   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
 	-   [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md)
 
-When you try any of these features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
+When you try any of the above features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
 
 ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro-trial1.png)
  
