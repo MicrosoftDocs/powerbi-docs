@@ -110,9 +110,9 @@ Remember in the previous step we saw that our report page is currently displayin
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom.png)
 
-3. Tweak the report page so that it looks its best. Switch between **View > Actual size** and **View > Fit to page** to make adjustments.
+4. Tweak the report page so that it looks its best. Switch between **View > Actual size** and **View > Fit to page** to make adjustments.
 
-   ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-final.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-final.png)
 
 ## See also
 [Create reports for Cortana](powerbi-service-cortana-desktop-entity-cards.md)
