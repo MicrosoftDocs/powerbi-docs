@@ -3,9 +3,9 @@
    description="The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings."
    services="powerbi"
    documentationCenter=""
-   authors="amandacofsky"
+   authors="guyinacube"
    manager="mblythe"
-   backup="guyinacube"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,8 +16,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/19/2016"
-   ms.author="amac"/>
+   ms.date="08/15/2016"
+   ms.author="asaxton"/>
 # Power BI admin portal
 
 Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365. 
@@ -37,6 +37,7 @@ To get to the Power BI admin portal, do the following.
 Within the portal, there are 3 tabs. These are described below.
 -	[Usage metrics](#usage-metrics)
 -	[Manage Users](#manage-users)
+-	[Audit logs](#audit-logs)
 -	[Tenant settings](#tenant-settings)
 
 ![](media/powerbi-admin-portal/powerbi-admin-landing-page.png)
@@ -85,6 +86,12 @@ When you click **Go to O365 Admin Center**, you go directly to the Office 365 ad
 
 ![](media/powerbi-admin-portal/powerbi-admin-o365-admin-center.png)
 
+## Audit logs
+
+The third tab, in the admin portal, is **Audit logs**. The logs are located within the Office 365 Security & Compliance center. This section allows you to quickly access that area within Office 365. 
+
+For more information about audit logs, see [Auditing Power BI in your organization](powerbi-admin-auditing.md)
+
 ## Tenant settings
 
 The third tab, in the admin portal, is **Tenant settings**. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization. If this is the case, you can switch it off in your tenant.
@@ -122,5 +129,7 @@ This setting determines whether you can export data from a tile or visualization
 ![](media/powerbi-admin-portal/powerbi-admin-export-data.png)
 
 ## See also
+
+[Auditing Power BI in your organization](powerbi-admin-auditing.md)
 
 [Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)
