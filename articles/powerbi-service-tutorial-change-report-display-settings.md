@@ -35,7 +35,7 @@ In the [previous article and video](powerbi-service-change-report-display-settin
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-change-page-view.png)
 
 3.  Let's see how the page looks using the **Actual size** setting.
-    
+
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
     Not great, the dashboard now has double scrollbars.
@@ -107,7 +107,7 @@ Remember in the previous step we saw that our report page is currently displayin
 2. Select **Page Size** &gt; **Custom**.
 
 3. Set Width to 500 and set Height to 750.
-    
+
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom.png)
 
 3. Tweak the report page so that it looks its best. Switch between **View > Actual size** and **View > Fit to page** to make adjustments.
