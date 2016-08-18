@@ -25,9 +25,9 @@ Power BI offers two licenses, Power BI (free) and Power BI Pro, with different d
 
 -   Free users have a maximum 1 GB data capacity.
 
--   Pro users of Power BI Pro have 10 GB maximum capacity.
+-   Pro users of Power BI Pro have 20 GB maximum capacity.
 
--   Pro users can create groups, with a maximum 10 GB data capacity each.
+-   Pro users can create groups, with a maximum 20 GB data capacity each.
 
 At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and groups in the tenant. 
 
