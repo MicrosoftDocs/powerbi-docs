@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/09/2016"
+   ms.date="08/19/2016"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
 
-Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards and gauges. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), [Power BI mobile app for Windows](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) and in the Power BI service.
+Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards and gauges. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), [Power BI mobile app for Windows](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) and in the Power BI service. They are not available for Power BI Desktop.
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -30,7 +30,7 @@ Set alerts to notify you when data in your dashboards changes beyond limits you 
 
 This example uses a card tile from the Retail Analysis sample dashboard.
 
-1.  From a dashboard tile, select the ellipses.
+1.  Start on a dashboard. From a dashboard tile, select the ellipses.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-card.png)
 
