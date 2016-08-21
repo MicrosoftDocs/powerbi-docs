@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="How to use report filters"
+   pageTitle="Take a tour of the Filters pane"
    description="How to use report filters"
    services="powerbi"
    documentationCenter=""
@@ -17,31 +17,40 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/02/2016"
+   ms.date="08/20/2016"
    ms.author="mihart"/>
 
 # How to use report filters
 This article explains how to use filters when you're creating or viewing a report.
 
-There are many different ways to filter data in Power BI and we recommend reading [About filters and highlighting](powerbi-service-about-filters-and-highlighting-in-reports) first.
+There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](powerbi-service-about-filters-and-highlighting-in-reports).
 
 ## Working with filters  
-Reports can be opened in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) or [Reading View](powerbi-service-open-a-report-in-reading-view.md). In Editing View, report owners can use the **Filters** pane to add filters to a report and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
+Reports can be opened in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) or [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). In Editing View, report owners can [add filters to a report](powerbi-service-add-a-filter-to-a-report) and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
 
 ## Working with filters in Reading viewing
-You can find the **Filters** pane in the top right corner.  If it's collapsed, just select the arrow to expand it.
 
-![](media/powerbi-service-how-to-use-a-report-filter/power-bi-filter-pane-new.png)
 
-In this example, we've selected a visual that has filters: FiscalMonth and Total Sales Variance.  The report page also has filters, listed under the **Page level filters** heading. And the entire report has a filter too:  FiscalYear is 2013 or 2014.  
+In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the **Page level filters** heading. And the entire report has a filter too:  **FiscalYear** is 2013 or 2014.  
+
+![](media/powerbi-service-how-to-use-a-report-filter/power-bi-filter-visual-level.png)
+
+>**TIP**:   If the filter has the word **All** next to it, that means that entire field is being included as a filter.  For example, **Chain(All)** in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
 
 Anyone viewing this report can interact with these filters.
 -  view the details of the filter by hovering and selecting the arrow next to the filter.
 
--  change the filter, for example, xxxx.
+   ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-expan-filter.png)
+
+-  change the filter, for example, change **Lindseys** to **Fashions Direct**.
+
+   ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-filter-chain.png)
 
 -  delete the filter by selecting the **x** next to the filter name.
 
+   >**NOTE**:  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will not longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png).
+
+   ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
 
 ## Working with filters in Editing view
 
