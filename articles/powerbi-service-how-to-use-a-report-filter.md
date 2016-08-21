@@ -54,7 +54,7 @@ Anyone viewing this report can interact with these filters.
 
    >**NOTE**:  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will not longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png).
 
-      ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
+    ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
 
 ## Filters in Editing View
 
@@ -83,9 +83,9 @@ To display options for a particular filter, select the down arrow next to the fi
 
 -  One way to add a filter to a visual is by using the fields that are being used to create that visual. First, select a visual to make it active. The fields that are being used in the visual are listed in the Visualizations pane and in the Filters pane under the **Visual level filters** heading.
 
-        ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-visual-filter.png)  
+    ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-visual-filter.png)  
 
-   Fine-tune any of these fields using the Basic filtering and Advanced filtering controls (described below).
+    Fine-tune any of these fields using the Basic filtering and Advanced filtering controls (described below).
 
 -  Another way to add a filter to a visual is to drag-and-drop a field into the **Visual level filters** bucket. Dragging a new field here does not add that field to the visual, but it does allow you to filter that visual with this new field. In the example below, **Chain** is added as a new filter to the visual. Notice that simply adding **Chain** as a filter does not alter the visual until you use the Basic or Advanced filtering controls.
 
