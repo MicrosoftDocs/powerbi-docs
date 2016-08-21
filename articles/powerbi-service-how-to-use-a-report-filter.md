@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/20/2016"
+   ms.date="08/21/2016"
    ms.author="mihart"/>
 
 # Take a tour of the report Filters pane
@@ -41,21 +41,22 @@ In this example, we've selected a visual that has 6 filters. The report page als
 Some of the filters have the word **All** next to them and this means that the entire field is being included as a filter.  For example, **Chain(All)** in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
 
 Anyone viewing this report can interact with these filters.
+
 -  view the details of the filter by hovering and selecting the arrow next to the filter.
 
-   ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-expan-filter.png)
+    ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-expan-filter.png)
 
 -  change the filter, for example, change **Lindseys** to **Fashions Direct**.
 
-   ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-filter-chain.png)
+    ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-filter-chain.png)
 
 -  delete the filter by selecting the **x** next to the filter name.
 
    >**NOTE**:  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will not longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png).
 
-   ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
+    ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
 
-## Filters in Editing view
+## Filters in Editing View
 
 When a report is open in Editing View, the Filters pane displays along the right side of the report canvas in the bottom half of the **Visualization pane**.
 
@@ -81,7 +82,8 @@ To display options for a particular filter, select the down arrow next to the fi
 -  To add a filter to a page or report, select a field from the Fields pane and drag it below the **Report level filters**  or **Page level filters** heading, where you see the words **Drag data fields here**. Once a field has been added as a filter, fine-tune it using the Basic filtering and Advanced filtering controls (described below).
 
 -  One way to add a filter to a visual is by using the fields that are being used to create that visual. First, select a visual to make it active. The fields that are being used in the visual are listed in the Visualizations pane and in the Filters pane under the **Visual level filters** heading.
-    ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-visual-filter.png)  
+
+    ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-visual-filter.png)  
 
    Fine-tune any of these fields using the Basic filtering and Advanced filtering controls (described below).
 
@@ -96,7 +98,7 @@ Ticking a checkbox either selects or deselects the value. The **All** checkbox c
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_restatement.png)
 
--   Note how the restatement now says "is Amarilla or Carretera"
+Note how the restatement now says "is Amarilla or Carretera"
 
 ### Advanced mode  
 Select **Advanced Filtering** to switch to advanced mode. Use the dropdown controls and text boxes to identify which fields to include. By choosing between **And** and **Or**, you can build complex filter expressions. Click the **Apply Filter** button when you've set the values you want.  

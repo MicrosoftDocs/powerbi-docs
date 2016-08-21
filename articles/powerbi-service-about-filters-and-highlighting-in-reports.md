@@ -31,7 +31,7 @@ There are a lot of different ways you can filter and highlight reports in Power 
 
 -   The ways you can [use filters and highlighting in a report shared with you or in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
 
--   [A detailed tour of the filter and highlighting controls available in Editing View](powerbi-service-how-to-use-report-filters.md) including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
+-   [A detailed tour of the filter and highlighting controls available in Editing View](powerbi-service-how-to-use-a-report-filter.md) including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
 
 -   Now that you've learned how filers and highlighting work by default, [learn how to change the way visualizations on a page filter and highlight each other](powerbi-service-visual-interactions.md)
 
