@@ -27,9 +27,9 @@ There are a lot of different ways you can filter and highlight reports in Power 
 
 -   Introduction to filters and highlighting (the article you're reading now)
 
--   The ways you can [create and use filters and highlighting in Editing View/reports that you own](powerbi-service-add-a-filter-to-a-report.md). When you have editing permissions for a report, you can create, modify, and delete filters and highlighting for visualizations, report pages, and entire reports.
+-   The ways you can [create and use filters and highlighting in Editing View/reports that you own](powerbi-service-add-a-filter-to-a-report.md). When you have editing permissions for a report, you can create, modify, and delete filters and highlighting in reports.
 
--   [The ways you can use filters and highlighting in a report shared with you or in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
+-   The ways you can [use filters and highlighting in a report shared with you or in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
 
 -   [A detailed tour of the filter and highlighting controls available in Editing View](powerbi-service-how-to-use-report-filters.md) including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
 
@@ -49,14 +49,13 @@ Filters and highlighting can be applied using the **Filters** pane or by making 
 >**TIP**:   If the filter has the word **All** next to it, that means that entire field is being included as a filter.  For example, **Chain(All)** in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
 
 
-##  Filters in Reading view verus Editing View
+##  Filters in Reading View verus Editing View
 
 There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
--   In Editing View, you can add page and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
+-   In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
 
 -   In Reading View, you can interact with any page and visual filters that already exist in the report, but you won't be able to save your filter changes.
-
 
 
 ### The Filters pane in Reading View
@@ -83,7 +82,7 @@ When you have owner permissions for a report and open it in Editing View, you se
 
 As in Reading View (above) we see that this page of the report has 6 page level filters and 1 report level filter. And by selecting the bubble chart, we'd see it has 6 visual level filters applied.
 
-But in Reading View, there is so much more that we can do with filters and highlighting. The main difference being that we can add new filters. Learn how to do this and so much more in the article [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md)
+But in Editing View, there is so much more that we can do with filters and highlighting. The main difference being that we can add new filters. Learn how to do this and so much more in the article [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md)
 
 ##  Ad-hoc filterting and highlighting
 Select a field on the report canvas to filter and highlight the rest of the page. Select any empty space in the same visual to remove it. This type of filtering and highlighting is not saved with the report but is fun way to quickly explore data impacts. To fine-tune how this type of cross-filtering and cross-highlighting works, see [Visual interactions](powerbi-service-visual-interactions.md)

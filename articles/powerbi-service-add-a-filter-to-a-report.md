@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/20/2016"
+   ms.date="08/21/2016"
    ms.author="mihart"/>
 
 # Add a filter to a Power BI report (in Editing view)
@@ -29,7 +29,7 @@
 
 There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
--   In Editing View, you can add page and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
+-   In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
 
 -   In Reading View, you can interact with any page and visual filters that already exist in the report, but you won't be able to save your filter changes.
 
