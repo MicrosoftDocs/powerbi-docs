@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="8/20/2016"
+   ms.date="08/20/2016"
    ms.author="mihart"/>
 
 # Add a filter to a Power BI report (in Editing view)

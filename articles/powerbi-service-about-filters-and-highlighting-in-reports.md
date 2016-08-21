@@ -27,9 +27,9 @@ There are a lot of different ways you can filter and highlight reports in Power 
 
 -   Introduction to filters and highlighting (the article you're reading now)
 
--   The ways you can [create and use filters and highlighting in Editing View/reports that you own](https://powerbi.microsoft.com/documentation/powerbi-service-add-a-filter-to-a-report.md). When you have editing permissions for a report, you can create, modify, and delete filters and highlighting for visualizations, report pages, and entire reports.
+-   The ways you can [create and use filters and highlighting in Editing View/reports that you own](powerbi-service-add-a-filter-to-a-report.md). When you have editing permissions for a report, you can create, modify, and delete filters and highlighting for visualizations, report pages, and entire reports.
 
--   [The ways you can use filters and highlighting in a report shared with you or in report Reading View](https://powerbi.microsoft.com/documentation/powerbi-service-interact-with-a-report-in-reading-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
+-   [The ways you can use filters and highlighting in a report shared with you or in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
 
 -   [A detailed tour of the filter and highlighting controls available in Editing View](powerbi-service-how-to-use-report-filters.md) including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
 
@@ -44,7 +44,7 @@ There are a lot of different ways you can filter and highlight reports in Power 
 
 ![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-add-filter-reading-view.png)
 
-Filters and highlighting can be applied using the **Filters** pane or by making selections directly on the report itself (ad-hoc, see bottom of page). The Filters pane shows the tables and fields used in the report and the filters that have been applied, if any. The filters are divided up into **Page level filters**, **Report level filters**, and **Visual level filters**.  You'll only see visual level filters if you've selected a visualization on the report canvas. 
+Filters and highlighting can be applied using the **Filters** pane or by making selections directly on the report itself (ad-hoc, see bottom of page). The Filters pane shows the tables and fields used in the report and the filters that have been applied, if any. The filters are divided up into **Page level filters**, **Report level filters**, and **Visual level filters**.  You'll only see visual level filters if you've selected a visualization on the report canvas.
 
 >**TIP**:   If the filter has the word **All** next to it, that means that entire field is being included as a filter.  For example, **Chain(All)** in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
 
@@ -77,7 +77,7 @@ In Reading View, explore the data by modifying the existing filters. Learn how i
 
 ### The Filters pane in Editing View
 
-When you have owner permissions for a report and open it in Editing View, you see that **Filters** is just one of several editing panes available. 
+When you have owner permissions for a report and open it in Editing View, you see that **Filters** is just one of several editing panes available.
 
 ![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-add-filter-editing-view.png)
 

@@ -67,38 +67,38 @@ To display options for a particular filter, select the down arrow next to the fi
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterListDropdown.jpg)
 
-### Clear a filter  
+## Clear a filter  
  In either advanced or basic filtering mode, select the eraser icon  ![](media/powerbi-service-how-to-use-a-report-filter/PBI_eraserIcon.jpg). 
 
-### Types of filters: text field filters  
-#### List mode  
+## Types of filters: text field filters  
+### List mode  
 Ticking a checkbox either selects or deselects the value. The **All** checkbox can be used to toggle the state of all checkboxes on or off. The checkboxes represent all the available values for that field.  As you adjust the filter, the restatement updates to reflect your choices. 
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_restatement.png)
 
 -   Note how the restatement now says "is Amarilla or Carretera"
 
-#### Advanced mode  
+### Advanced mode  
 Select **Advanced Filtering** to switch to advanced mode. Use the dropdown controls and text boxes to identify which fields to include. By choosing between **And** and **Or**, you can build complex filter expressions. Click the **Apply Filter** button when you've set the values you want.  
 
 ![](media/powerbi-service-how-to-use-a-report-filter/aboutFilters.png)
 
-### Types of filters: numeric field filters  
+## Types of filters: numeric field filters  
 #### List mode  
 If the values are finite, selecting the field name displays a list.  See **Text field filters** &gt; **List mode** above for help using checkboxes.   
 
-#### Advanced mode  
+### Advanced mode  
 If the values are infinite or represent a range, selecting the field name opens the advanced filter mode. Use the dropdown and text boxes to specify a range of values that you want to see. 
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_dropdown-and-text.png)
 
 By choosing between **And** and **Or**, you can build complex filter expressions. Select the **Apply Filter** button when you've set the values you want.
 
-### Types of filters: date and time  
-#### List mode  
+## Types of filters: date and time  
+### List mode  
 If the values are finite, selecting the field name displays a list.  See **Text field filters** &gt; **List mode** above for help using checkboxes.   
 
-#### Advanced mode  
+### Advanced mode  
 If the field values represent date or time, you can specify a start/end time when using Date/Time filters.  
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_date-time-filters.png)
