@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -17,24 +17,28 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="08/21/2016"
    ms.author="mihart"/>
 
-# Add a filter to a report in Power BI
+# Add a filter to a Power BI report (in Editing view)
 
-The **Filters** pane is used to apply [filters and highlighting](powerbi-service-about-filters-and-highlighting-in-reports.md) to Power BI reports, report pages, and to individual report visuals. A **page filter** applies to all the visuals on the report page.  A **visual filter** applies to a single visual on a report page. And a **report filter** applies to all pages in the report.
+>**TIP**:   We recommend first reading [About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
 
->**NOTE**: Cross-filtering (and cross-highlighting) is when a selection made *within* one visualization impacts the other visualizations on that same page. For information on cross-filtering and cross-highlighting, see [Visual interactions](powerbi-service-visual-interactions.md).
-
+##  What is the difference between report filters in Editing View versus Reading View
 
 There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
--   In Editing View, you can add page and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
+-   In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
 
 -   In Reading View, you can interact with any page and visual filters that already exist in the report, but you won't be able to save your filter changes.
 
-**NOTE:**  This article describes how to create filters in report **Editing View**.  For more information on filters, see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md) and [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
+**NOTE:**  This article describes how to create filters in report **Editing View**.  For more information on filters in Reading VIew, see [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
+
+##  Visual filters, page filters, and report filters
+A **page filter** applies to all the visuals on the report page. A **visual filter** applies to a single visual on a report page. And a **report filter** applies to all pages in the report.
+
+![](media/powerbi-service-add-a-filter-to-a-report/power-bi-add-filter-reading-view.png)
 
 ## Add a filter to a specific visualization (aka visual filter)
 

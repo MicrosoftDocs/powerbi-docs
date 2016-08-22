@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="08/20/2016"
    ms.author="mihart"/>
 
 # Interact with a report in Reading View in Power BI
@@ -56,13 +56,23 @@ If the report author added filters to a page in a report, you can interact with 
 
 2.  You'll see all filters that have been applied to the visual you have selected (Visual level filters), across the whole report page (Page level filters), and across the entire report (Report level filters).
 
-    ![](media/powerbi-service-interact-with-a-report-in-reading-view/filtersmenu.png)
+    ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-reading-filters.png)
 
 3.  Hover over a filter and expand it by selecting the down arrow.
 
-    ![](media/powerbi-service-interact-with-a-report-in-reading-view/IV1980RZ.png)
+    ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-expan-filter.png)
 
-4.  Make changes to the filters and see how the visuals are impacted.
+4.  Make changes to the filters and see how the visuals are impacted. Here are a few to try:
+
+    -   Filter on **Fashions Direct** instead of **Lindseys** by removing the checkmark from one and adding it to the other. 
+
+        ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-filter-chain.png)
+
+    -   Or completely removing filtering on **Chain** by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png) or by adding a checkmark to the **Fashions Direct** box.
+
+    -   Select the **District** page level filter and switch to **Advanced filtering**. Filter to show only districts that start with **FD** and don't contain the number 4.
+
+        ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-advanced-filter.png)
 
 
 **Zoom in on individual visuals**
