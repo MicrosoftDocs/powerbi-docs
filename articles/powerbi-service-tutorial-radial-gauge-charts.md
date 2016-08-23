@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="xmja6Epqa"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2016"
+   ms.date="08/22/2016"
    ms.author="mihart"/>
 
 # Tutorial: radial gauge charts in Power BI
@@ -43,6 +44,9 @@ Radial gauges are a great choice to:
 ## Create a basic radial gauge
 
 These instructions use the Financial Sample. To follow along, [download the sample](http://go.microsoft.com/fwlink/?LinkID=521962) to your computer, sign in to Power BI and select **Get Data \> Files \>  Local File > Open**. 
+
+Or watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ### Step 1: Open the Financial Sample Excel file.
 

@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="zcAFP9U3d30"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # Reference lines in your report
@@ -27,7 +28,10 @@ Many charts are tracking performance against some goal or target, not just a com
 
 Reference lines can be added to Line, Column, Bar, Area, Waterfall, and Scatter charts.
 
-There are 2 ways to create references lines; one is by adding reference lines as you need them and the other is by using Power BI Desktop to create a reusable field in your dataset.  
+There are 2 ways to create references lines; one is by adding reference lines as you need them and the other is by using Power BI Desktop to create a reusable field in your dataset.
+
+Scroll to the end to see Will create a reference line in Power BI service.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zcAFP9U3d30?#t-2m30s" frameborder="0" allowfullscreen></iframe>
 
 ## Reference lines as you need them
 
