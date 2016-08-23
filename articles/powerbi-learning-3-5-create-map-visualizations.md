@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="mGkdiZF8GEM"
+   featuredVideoId="ajTPGNpthcg"
    featuredVideoThumb=""
    courseDuration="11m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="08/23/2016"
    ms.author="davidi"/>
 
 # How to Use Map Visualizations

@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="r6_i3O0km8o"
+   featuredVideoId="E1mIAyEXuF4"
    featuredVideoThumb=""
    courseDuration="4m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="08/22/2016"
    ms.author="davidi"/>
 
 # Create Custom Q&A Suggestions
