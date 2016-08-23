@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="Y4sRWbo8JcE"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,14 +18,15 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
-# Power BI - basic concepts
+# Power BI - basic concepts for Power BI service
 
-When you first open a Power BI dashboard, you'll see your ***workspace***:
+When you first open Power BI service, you'll see your workspace. Prominently displayed will be your ***dashboard***, which is something that differentiates Power BI service from Power BI Desktop.
 
 ![](media/powerbi-service-basic-concepts/completeNewer.png)
+Your Power BI service workspace is made up of:
 
 1.  navigation bar
 2.  dashboard with tiles
@@ -36,6 +38,10 @@ When you first open a Power BI dashboard, you'll see your ***workspace***:
 8. Additional dashboard actions
 
 We'll dig into these later, but first let's review some Power BI concepts.
+
+Or, you might want to watch this video first before reading the rest of this article.  In the video, Will reviews the basic concepts and gives a tour of Power BI service.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y4sRWbo8JcE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## Power BI concepts
 
@@ -184,7 +190,7 @@ The app launcher is designed to help you get to your Office 365 apps.
 Selecting this returns you to the dashboard that you viewed most recently.
 
    ![](media/powerbi-service-basic-concepts/version-new.png)
-   
+
 ### 8. **Options**
 
 This area of the workspace contains icons for interacting with the dashboard.  Besides **add widget** and **share dashboard** selecting the ellipses reveals options for duplicating, printing, and refreshing the dashboard and more.

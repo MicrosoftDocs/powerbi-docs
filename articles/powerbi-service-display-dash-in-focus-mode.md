@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="8F2-wm8a_e4"
+   featuredVideoId="ek03amXuMQw"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,12 +18,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # Display a dashboard tile or report visual in Focus mode
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ek03amXuMQw" frameborder="0" allowfullscreen></iframe>
 
 
 ## What is Focus mode?  

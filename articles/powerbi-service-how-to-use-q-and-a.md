@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="qMf7OLJfCz8"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # How to use Power BI Q&A  
@@ -25,11 +26,15 @@
 ## Ask questions of your data using natural language  
 The Q&A question box is where you type your question using natural language. Q&A recognizes the words you type and figures out where (which dataset) to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
 
+![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna.png)
+
 The answer to your question is displayed as an interactive visualization and updates as you modify the question.
 
-Q&A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue.  
+Q&A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&A to create visuals, dig into those visuals, and pin them to dashboards.
 
-![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qMf7OLJfCz8?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
+## Use natural language to ask questions about your data
 
 1.  Place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question.
 
@@ -59,7 +64,7 @@ Q&A is interactive and even fun, and, more often than not, one question will lea
 
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_finish-typing-question.jpg)
 
-### Tell Q&A which visualization to use.  
+## Tell Q&A which visualization to use.  
 With Q&A, not only can you ask your data to speak for itself, you can tell it how you want it displayed. Just add "as a &lt;visualization type&gt;" to the end of your question.  For example, "show inventory volume by plant as a map" and "show total inventory as a card".  Try it for yourself.
 
 

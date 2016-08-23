@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="JbL2-HJ8clE"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/19/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
@@ -27,6 +28,9 @@ Set alerts to notify you when data in your dashboards changes beyond limits you 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
 ## Set data alerts in Power BI service
+Watch Amanda add some alerts to tiles on her dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
 This example uses a card tile from the Retail Analysis sample dashboard.
 

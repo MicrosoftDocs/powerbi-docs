@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="Co2z9b-s_yM"
+   featuredVideoId="ajTPGNpthcg"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # Tutorial: filled maps (choropleths) in Power BI  
@@ -45,7 +45,8 @@ Filled maps are a great choice:
 ## Create a basic filled map
 In this video, Will creates a basic Map and converts it to a filled map.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mGkdiZF8GEM" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
+
 
 To create your own filled map, [download the Sales and Marketing sample](powerbi-sample-downloads.md) by signing in to Power BI and selecting **Get Data \> Files \> Local File \> Sales and Marketing**.
 
