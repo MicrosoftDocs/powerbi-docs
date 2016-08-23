@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="ek03amXuMQw"
+   featuredVideoId="dtdLul6otYE"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -23,7 +23,7 @@
 
 # Display a dashboard tile or report visual in Focus mode
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ek03amXuMQw" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
 
 ## What is Focus mode?  

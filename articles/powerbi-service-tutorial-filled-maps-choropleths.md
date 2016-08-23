@@ -43,7 +43,7 @@ Filled maps are a great choice:
 -   to get an overview of the distribution across the geographic locations.
 
 ## Create a basic filled map
-In this video, Will creates a basic Map and converts it to a filled map.
+In this video, Kim creates a basic map and converts it to a filled map.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
