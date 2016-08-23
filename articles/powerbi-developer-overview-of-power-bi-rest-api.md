@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="08/23/2016"
    ms.author="derrickv"/>
 
 # What can developers do with Power BI?

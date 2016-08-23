@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/24/2016"
+   ms.date="08/23/2016"
    ms.author="derrickv"/>
 
 # Power BI permissions

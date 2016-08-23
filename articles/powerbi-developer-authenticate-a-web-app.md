@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2016"
+   ms.date="08/23/2016"
    ms.author="derrickv"/>
 
 # Authenticate a web app

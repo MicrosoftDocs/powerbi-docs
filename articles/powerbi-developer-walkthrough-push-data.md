@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2016"
+   ms.date="08/23/2016"
    ms.author="derrickv"/>
 
 # Push data into a Power BI dashboard

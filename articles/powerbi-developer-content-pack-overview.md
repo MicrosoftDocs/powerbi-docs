@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="08/23/2016"
    ms.author="tpalmer"/>
 
 # Content Pack Certification Program Overview
