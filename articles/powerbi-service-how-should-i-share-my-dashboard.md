@@ -17,18 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 
 # How should I share Power BI dashboards and reports?  
 
 In Power BI you can share dashboards, reports, and tiles in several different ways. Each has its advantages. You can:
 
-- Publish a report to the web.
-- Share a dashboard with your colleagues and others.
-- Create a dashboard in a group, then share it with colleagues outside the group.
-- Create a content pack and publish it to your whole organization or to a security or distribution list.
-- Share a snapshot of a tile from a Power BI mobile app.
+- [Publish a report](powerbi-service-how-should-i-share-my-dashboard.md#publish-to-the-web) to the web.
+- [Share a dashboard](powerbi-service-how-should-i-share-my-dashboard.md#share-a-dashboard-with-colleagues-and-others) with your colleagues and others.
+- [Create a dashboard in a group](powerbi-service-how-should-i-share-my-dashboard.md#create-a-dashboard-in-a-group), which you can then share with colleagues outside the group.
+- [Create a content pack and publish it](powerbi-service-how-should-i-share-my-dashboard.md#create-a-content-pack-and-publish-it) to your whole organization or to a security or distribution list.
+- [Share a snapshot of a tile](powerbi-service-how-should-i-share-my-dashboard.md#share-a-snapshot-of-a-tile-from-a-power-bi-mobile-app) from a Power BI mobile app.
+- [Print or save as PDF ](powerbi-service-how-should-i-share-my-dashboard.md#print-or-save-as-PDF-or-other-static-file)or other static file format.
 
 In any case, your colleagues need to [sign up for Power BI](https://powerbi.microsoft.com/) before they can see your dashboards.
 
@@ -69,11 +70,14 @@ Share a snapshot of a tile from:
 - The [Power BI app for Android phones](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md)
 - The [Power BI app for Windows 10 devices](powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app.md)
 
+## Print or save as PDF or other static file
+
+You can also print or save as PDF (or other static file format) an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](powerbi-service-print.md).
 
 ### See also
-[Share a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md)
-
-[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+-   [Share a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md)
+-   [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+-   More questions? [Try the Power BI Community](http://community.powerbi.com/).
 
 
 
