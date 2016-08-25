@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Power BI webinars"
    description="Power BI webinars."
    services="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/03/2016"
+   ms.date="08/17/2016"
    ms.author="maikelson"/>
 
 # Power BI webinars
@@ -26,10 +26,6 @@ The following webinars can help you to understand and use Power BI. After you re
 
 
 ## Upcoming webinars
-
-[Power BI Embedded Deep Dive - 08/09/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
-
-[Using Power BI to build Financial Dashboards by Avi Singh - 8/16/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
 
 [R for the masses with Power BI - 8/18/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-18-PowerBI-R-for-Masses-Registration.html?Is=Website)
 
@@ -44,17 +40,15 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
+[Power BI Embedded Deep Dive - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
+
+[Using Power BI to build Financial Dashboards by Avi Singh - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
+
 [Predictive Analytics in Education and Consumer Goods Using Power BI with Machine Learning - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-26-PowerBI-MachineLearning-Registration.html?Is=Website)
 
 [Power BI Mobile - Answering Your Business Questions - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-21-PowerBI-Mobile-Registration.html?Is=Website)
 
 [Using Power BI to Track Development by Simon Sabin - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-19-PowerBI-Track-Development-Registration.html?Is=Website)
-
-[What's New and Exciting in Power BI - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
-
-[Insights to Action: PowerApps & Microsoft Flow - June 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-06Jun-30-Leveraging-PowerApps-MicrosoftFlow-Registration.html?Is=Website)
-
-
 
 
 ###  Introductory webinars
@@ -66,6 +60,8 @@ Watch our latest webinars on-demand.
 [What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
 
 ### Intermediate webinars
+
+[Power BI Embedded Deep Dive - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
 
 [Power BI Mobile - Answering Your Business Questions - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-21-PowerBI-Mobile-Registration.html?Is=Website)
 
@@ -94,6 +90,8 @@ Watch our latest webinars on-demand.
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
 ### Community webinars
+
+[Using Power BI to build Financial Dashboards by Avi Singh - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
 
 [Predictive Analytics in Education and Consumer Goods Using Power BI with Machine Learning - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-26-PowerBI-MachineLearning-Registration.html?Is=Website)
 

@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="ek03amXuMQw"
+   featuredVideoId="7rrvpa6KUto"
    qualityFocus="identified"
    qualityDate=""/>
 
@@ -18,12 +18,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/10/2016"
+   ms.date="08/22/2016"
    ms.author="mihart"/>
 
-# Tutorial: Slicers in Power BI  
+# Tutorial: slicers in Power BI  
 
-A Slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.  
+A slicers narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.  
 
   ![](media/powerbi-service-tutorial-slicers/PBI_slicer.png)
 
@@ -40,8 +40,7 @@ Slicers are a great choice:
 
 ## Create a slicer
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ek03amXuMQw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7rrvpa6KUto" frameborder="0" allowfullscreen></iframe>
 
 1.  Open the Retail Analysis Sample in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).
 
@@ -94,15 +93,15 @@ Slicers are a great choice:
 
 ## Control what effect the slicer has on other visuals on the page
 
-Do you want the Slicer to only filter some of the visuals on the report page?  Use the **Visual interactions** control to set this up.
+Do you want the slicer to only filter some of the visuals on the report page?  Use the **Visual interactions** control to set this up.
 
 1. Select the **New Stores** tab to open the "New Stores Analysis" page.
 
-2. Select the Slicer to make it active and highlight **Visual interactions**.
+2. Select the slicer to make it active and highlight **Visual interactions**.
 
     ![](media/powerbi-service-tutorial-slicers/pbi-slicer-interactions.png)
 
-2. Filter controls will appear above all the other visuals on the page. If the Slicer should filter a visual, select the **Filter** icon.  If the Slicer should have no effect on the visual, select the **None** icon.
+2. Filter controls will appear above all the other visuals on the page. If the slicer should filter a visual, select the **Filter** icon.  If the slicer should have no effect on the visual, select the **None** icon.
 
     ![](media/powerbi-service-tutorial-slicers/filter-controls.png)
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/15/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 
 # Tips for designing a great Power BI dashboard  
@@ -38,7 +38,7 @@ Because dashboards are meant to show important information at a glance, having a
 
 Is the dashboard too cluttered?  Remove all but essential information that can be easily read and interpreted.
 
-### Make use of dashboard TV Mode
+### Make use of full screen mode
 Display your dashboard in [full screen](powerbi-service-dash-and-reports-fullscreen.md) without distractions.
 
 ### Make the most important information biggest  
@@ -52,7 +52,7 @@ Read about [creating a tile with just a number](powerbi-service-create-a-big-num
 ### Put the most important information in the upper corner
 Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
 
-### Use the right visualization for the data  
+### Use the right visualization for the data and format it for easy reading  
 Avoid visualization variety for the sake of variety.  Visualizations should paint a picture and be easy to "read" and interpret.  For some data and visualizations, a simple graphic visualization is enough. But other data may call for a more-complex visualization - be sure to make use of titles and labels and other customization to help the reader.  
 
 - [Choose appropriate data visualizations](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Be careful using charts that distort reality i.e. 3-D charts. Keep in mind that it is difficult for the human brain to interpret circular shapes. Pie charts, donut charts, gauges and other circular chart types may look pretty but they are not a data visualization best practice.

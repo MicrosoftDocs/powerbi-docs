@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="xmja6EpqaO0"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # KPIs in Power BI
@@ -39,6 +40,9 @@ A Key Performance Indicator (KPI) is based on a specific measure and is designed
 ##  How to create a KPI  
 
 To follow along, sign in to Power BI and select **Get Data > Samples > Retail Analysis Sample**. We'll create a KPI that measures the progress we've made toward a sales goal.
+
+Or watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 1.  Select **Sales > Total Units This Year**.  This will be the indicator.
 

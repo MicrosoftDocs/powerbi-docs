@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="JbL2-HJ8clE"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,20 +18,23 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/30/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
 
-Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards and gauges. Only you can see the alerts you set, even if you share your dashboard. You can [set data alerts in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), [Power BI mobile app for Windows](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) and in the Power BI service, and see them in both places.
+Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards and gauges. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), [Power BI mobile app for Windows](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) and in the Power BI service. They are not available for Power BI Desktop.
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
 ## Set data alerts in Power BI service
+Watch Amanda add some alerts to tiles on her dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
 This example uses a card tile from the Retail Analysis sample dashboard.
 
-1.  From a dashboard tile, select the ellipses.
+1.  Start on a dashboard. From a dashboard tile, select the ellipses.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-card.png)
 
@@ -38,7 +42,7 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-set-alert.png)
 
-3.  To start, ensure the slider is set to **On**, and give your alert a title.
+3.  To start, ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-title.png)
 
@@ -50,17 +54,15 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
 
 ## Receiving alerts
-When the data being tracked reaches one of the thresholds you've set, several things will happen.
+When the data being tracked reaches one of the thresholds you've set, several things will happen. First, Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent. As long as the data is past the threshold, you'll get an alert.
 
-1.  Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent.
+Next, Power BI sends an alert to your notification center and, optionally, in email. Each alert contains a direct link to your data. Select the link to see the relevant tile where you can explore, share, and learn more.  
 
-    As long as the data is past the threshold, you'll get an alert every hour or every 24 hours.
-
-2.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
+1.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alerts-email.png)
 
-3.  Power BI adds a message to your **Notification center** and adds a new alert icon to the applicable tile.
+2.  Power BI adds a message to your **Notification center** and adds a new alert icon to the applicable tile.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-notifications.png)
 

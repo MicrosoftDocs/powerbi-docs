@@ -3,11 +3,12 @@
    description="How to share Power BI dashboards with colleagues in and out of your organization, and what you need to know about sharing."
    services="powerbi"
    documentationCenter=""
-   authors="maggiesMSFT"
+   authors="ajayan"
    manager="mblythe"
    backup=""
    editor=""
    tags=""
+   featuredVideoId="0tUwn8DHo3s"
    qualityFocus="identified"
    qualityDate="06/22/2016"/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="08/23/2016"
    ms.author="maggies"/>
 
 # Share a dashboard with colleagues and others
@@ -28,17 +29,21 @@ What you can share and who you can share it with depends on your and their Power
 
 Dashboards (and their associated reports) that are shared with you are read-only.  You can't save-as to personalize them. On the other hand, you can personalize dashboards and reports in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md).  See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
 
+Watch Amanda share her dashboard with colleagues inside and outside her company. Then follow the step-by-step instructions below the video to try it out yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
 ## Share a dashboard
 
 1.   Open the dashboard and select **Share** ![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png).
 
 2.  Select **In﻿vite** and type the email addresses in the top box and, optionally, modify the message.
 
-    ![](media/powerbi-service-share-unshare-dashboard/pbi_share_invite.png)  
+    ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-dashboard.png)  
 
-    If any of the addresses is outside your organization, you'll see a warning.
+    You can share with people whose addresses are outside your organization, but you'll see a warning.
 
-    ![](media/powerbi-service-share-unshare-dashboard/pbi_share_invite_outside.png)  
+    ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-outside-organization.png)  
 
 3.  To allow your colleagues to reshare your dashboard with others, check **Allow recipients to share your dashboard**.
 
@@ -54,7 +59,7 @@ Dashboards (and their associated reports) that are shared with you are read-only
 
 5.  To see who you've already shared the dashboard with, select **Shared With**.
 
-    ![](media/powerbi-service-share-unshare-dashboard/pbi_share_sharedwith.png)
+    ![](media/powerbi-service-share-unshare-dashboard/power-bi-shared-with.png)
 
     People outside your organization are listed as **Guest**.
 
@@ -64,7 +69,7 @@ When you share a dashboard:
 
 -   Everyone you share it with can see your dashboard and interact with your reports in [Reading View](powerbi-service-open-a-report-in-reading-view.md). They can't create new reports or save changes to existing reports.
 
--   Everyone can even see the changes you make (after you save those changes).
+-   Everyone can even see the changes you make.
 
 -   No-one can see or download the dataset.
 
@@ -72,7 +77,7 @@ When you share a dashboard:
 
 ### When you share with colleagues
 
--   If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group. However, you can't share with distribution groups with more than 500 members.
+-   If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
 
 -   Colleagues who have the same email domain as you, and colleagues whose domain is different but registered within the tenant, can reshare the dashboard. For example, say the domains contoso.com and contoso2.com are registered in the tenant. If your email address is konrads@contoso.com, then both ravali@contoso.com and gustav@contoso2.com can reshare.
 
@@ -115,7 +120,7 @@ People outside your organization can't reshare.
 
 2.  Select **Shared With** to see the complete list of people.
 
-    ![](media/powerbi-service-share-unshare-dashboard/pbi_share_sharedwith.png)
+    ![](media/powerbi-service-share-unshare-dashboard/power-bi-shared-with.png)
 
 3.  Select the ellipsis (**...**) next to **Can view** and select:
 

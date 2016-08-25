@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Tiles in the Power BI mobile app for Windows 10"
-   description="Tiles in the Power BI mobile app for Windows 10"
+   description="You create tiles on a dashboard in the Power BI service. Read about opening tiles and interacting with them in the Power BI mobile app for Windows 10."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/07/2016"
+   ms.date="08/15/2016"
    ms.author="maggies"/>
 
 # Tiles in the Power BI mobile app for Windows 10  
@@ -36,11 +36,15 @@ Then in [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-
 
     [Share a snapshot of the tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
 
-    Tap **Open Report** ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png) to [view the underlying report](powerbi-mobile-reports-in-the-windows-app.md).
+    Tap **Open Report** ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10app_OpenRptIcon.png) to [view the underlying report](powerbi-mobile-reports-in-the-windows-app.md).
 
     [Open the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink), if it has a link. Links can go to Power BI dashboards or to an external URL.
 
-3.    Tap **Expand Tile**. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
+3.    Tap **Expand Tile** ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-focus-mode-icon.png). It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
+
+    Spin a pie chart to show the values of the slice at the top of the pie.  
+
+    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-pie-focus-mode.png)
 
      Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
 
@@ -48,9 +52,11 @@ Then in [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-
    
      ![](media/powerbi-mobile-tiles-in-the-win10phone-app/pbi_win10ph_bartile0316.png)
 
-    Spin a pie chart to show the values of the slice at the top of the pie.  
+    Tap the **Full screen** icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-full-screen-icon.png) to open the tile in full-screen mode, without the navigation and menu bars.
 
-    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/pbi_win10ph_piechartinteract.png)
+    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-tile-full-screen-mode.png)
+
+    >**Note**: You can also [view dashboards and reports in full-screen mode](powerbi-mobile-win10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
 
      Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
 

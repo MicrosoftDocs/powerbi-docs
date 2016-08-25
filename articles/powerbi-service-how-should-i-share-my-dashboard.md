@@ -1,9 +1,9 @@
 <properties
    pageTitle="How should I share dashboards and reports?"
-   description="How should I share Power BI dashboards and reports?"
+   description="In Power BI you can share dashboards, reports, and tiles in several different ways. Each has its advantages."
    services="powerbi"
    documentationCenter=""
-   authors="maggiesMSFT"
+   authors="ajayan"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2016"
+   ms.date="08/23/2016"
    ms.author="maggies"/>
 
 # How should I share Power BI dashboards and reports?  

@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="04/01/2016"/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/01/2016"
+   ms.date="08/15/2016"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from a comma separated value (.csv) file on OneDrive or SharePoint Online

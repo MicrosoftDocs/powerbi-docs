@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Tiles in the Android app"
-   description="Tiles in the Android app for Power BI"
+   description="You create tiles on a dashboard in the Power BI service. Read about opening tiles and interacting with them in the Power BI mobile app for Android phones."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="08/15/2016"
    ms.author="maggies"/>
 
 # Tiles in the Android app for Power BI  

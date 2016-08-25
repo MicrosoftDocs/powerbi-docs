@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="r6_i3O0km8o"
+   featuredVideoId="E1mIAyEXuF4"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,15 +18,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # Create featured questions for Power BI Q&A  
 
 If you own a dataset, you can add your own featured questions to that dataset.  And Power BI Q&A will show those questions to colleagues who use your dataset.  Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you -- add popular questions, questions that display interesting results, or questions that may be hard to phrase.
 
-Watch Will add some Featured Questions to Power BI Q&A and then use those Featured Questions to explore his dataset. Then follow the step-by-step instructions below the video to try it out yourself.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r6_i3O0km8o" frameborder="0" allowfullscreen></iframe>
+Watch Will add some featured questions to Power BI Q&A and then use those featured questions to explore his dataset. Then follow the step-by-step instructions below the video to try it out yourself.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
+
 
 
 This article uses the [Retail Analysis Sales sample](powerbi-sample-datasets.md).
@@ -40,17 +41,18 @@ This article uses the [Retail Analysis Sales sample](powerbi-sample-datasets.md)
 
 4.  Select **Add a question**.
 
-    ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_AddQuestion.jpg)
+    ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-settings.png)
 
 5.  Type your question in the text box and select **Apply**.   Optionally, add another question by selecting **Add a question**.  
-    ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_typeQuestion.jpg)
-6.  Navigate back to the Power BI dashboard for Retail Analysis Sample, and select the **How to ask** link.  
-    ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_QnA_HowToAsk.jpg)
+    ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
 
-7.  The new featured question, **Sales by territory**, is first in the list. Select it.  
-    ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_QnA_NewQuestionAppears.jpg)
-8.  The answer displays as a map visualization.  
-    ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_QnA_MapViz.jpg)
+6.  Navigate back to the Power BI dashboard for Retail Analysis Sample, and place your cursor in the Q&A question box.   
+    ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-featured-q.png)
+
+7.  The new featured question, **Sales by territory as a map**, is first in the list. Select it.  
+
+8.  The answer displays as a filled map visualization.  
+    ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ## See Also
 [Q&A in Power BI](powerbi-service-q-and-a.md)  

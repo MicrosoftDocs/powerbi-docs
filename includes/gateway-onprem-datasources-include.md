@@ -18,3 +18,4 @@
 |Sybase|No|Yes|
 |SAP BW|No|Yes|
 |IBM Informix Database|No|Yes|
+|ODBC|No|Yes|

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="08/11/2016"
    ms.author="davidi"/>
 
 # Analyze in Excel
@@ -64,9 +64,11 @@ Although you’re signed in to Power BI in your browser, the first time you open
 ### Users with multiple Power BI accounts
 Some users have multiple Power BI accounts, and those users may encounter a situation where they're logged into Power BI with one account, but the account that has access to the dataset being used in Analyze in Excel is a different account. In those situations, you may get a **Forbidden** error or a sign-in failure when attempting to access a dataset that's being used in an Analyze in Excel workbook.
 
-You'll be provided an opportunity to sign in again, at which time you can sign in with the Power BI account that has access to the dataset being accessed by Analyze in Excel. You can also select **Profile** from the **Power BI** ribbon tab in Excel, which identifies which account you're currently logged in with, and provides a link that lets you sign out (and subsequently, sign in with a different account). Note that the **Power BI** ribbon is only available if you have installed the **Power BI publisher** add-on.
+You'll be provided an opportunity to sign in again, at which time you can sign in with the Power BI account that has access to the dataset being accessed by Analyze in Excel.
 
-![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_profile.png)
+![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_AADlogin.png)
+
+For other errors you might encounter, take a look at the [Troubleshooting Analyze in Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md) article.
 
 ### Enable data connections
 In order to analyze your Power BI data in Excel, you are prompted to verify the file name and path for the .odc file, and then select **Enable**.
@@ -95,3 +97,7 @@ When a user with whom you’ve shared your workbook opens the workbook, they’l
 You can also set the workbook file to refresh the data upon opening, which refreshes the data whenever anyone accesses the dataset. To refresh the workbook each time it's opened, in Excel select **Connections** from the **Data** ribbon, select the connection used for the workbook, then select **Properties** and set *Refresh data when opening the file* to **True**, then select **OK**.
 
 Since users will need to refresh the dataset, and refresh for external connections is not supported in Excel Online, it’s recommended that users open the workbook in the desktop version of Excel on their computer.
+
+## See Also  
+
+[Troubleshooting Analyze in Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md)

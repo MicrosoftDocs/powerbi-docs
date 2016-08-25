@@ -71,6 +71,8 @@ The content pack includes insights around resource security stat, alert analysis
 
 This content pack requires access to a subscription ID with Azure Security Center enabled. See more details in the [Azure Security Center](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityDashboardStartBladeV2) in the Azure Portal.
 
+The content pack also requires the user to connect with an organizational account (not a personal account). 
+
 <a name="FindingParams"></a>
 ## Finding parameters
 
@@ -83,6 +85,8 @@ Your subscription ID will be long set of numbers and characters, similar to the 
 
 ## Troubleshooting
 The data may take some time to load depending on the size of your account. If you hit an error during login, please confirm your parameters and the account has Azure Security Center enabled. 
+
+If the content pack loads but doesn't show any data, please confirm you're connecting with an organizational account. Although personal accounts are supported by Azure Security Center, the API (and therefore the content pack) does not return the expected values if the user connects with a non-organizational account. Please provide access to an organizational account and try connecting again. 
 
 ### See also
 

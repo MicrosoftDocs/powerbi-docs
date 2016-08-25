@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2016"
+   ms.date="08/11/2016"
    ms.author="mihart"/>
 
 # Pin an entire report page, as a live tile, to a Power BI dashboard
@@ -36,7 +36,7 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 
 1. Open a report in Editing view.
 
-2.  From the menubar, select **Pin Live Page**. 
+2.  From the menubar, select **Pin Live Page**.
 
     ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-pin-live-page.png) 
 

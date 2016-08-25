@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/12/2016"
+   ms.date="08/15/2016"
    ms.author="asaxton"/>
 # Manage your data capacity in Power BI
 
@@ -40,6 +40,8 @@ Included in your data capacity are your own datasets and Excel reports, and thos
 -   Reporting Services on-premises visualizations pinned to a Power BI dashboard.
 
 -   Uploaded images.
+
+The size of a dashboard that you share will vary depending on what is pinned to it. For example, if you pin items from two reports that are part of two different datasets, the size will include both datasets.
 
 <a name="manage"/>
 ## Manage items owned by you

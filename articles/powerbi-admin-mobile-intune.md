@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/07/2016"
+ms.date="08/15/2016"
 ms.author="asaxton"/>
 # Configure Power BI mobile apps with Microsoft Intune
 

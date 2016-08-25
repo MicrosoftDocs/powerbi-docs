@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="dvana"
-   manager="mblythe" 
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
@@ -17,15 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/17/2015"
-   ms.author="mihart"/>
+   ms.date="08/15/2015"
+   ms.author="mblythe"/>
 
 # Review custom visuals for security and privacy  
 
-Power BI supports new visualization types through custom visuals. When you open a report that contains a custom visual, you will see the following warning: This report contains a custom visual not provided by Microsoft. Custom visuals could contain code with security or privacy risks. Learn more here.  
-
-![](media/powerbi-custom-visuals-review-for-security-and-privacy/Enable.png)  
-
+Power BI supports new visualization types through custom visuals. 
 Before you enable a custom visual, you should review the custom visual for security and privacy.
 
 -   [Enable a custom visual](#enable)

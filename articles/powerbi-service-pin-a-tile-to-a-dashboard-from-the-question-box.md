@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/10/2016"
+   ms.date="08/10/2016"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from the Q&A question box  
@@ -30,11 +30,11 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnAQuestionBoxNew.png)
 
 3.  For example, as you type "last year sales by month and territory"...  
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnARetailSampleNew.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-type-q-and-a.png)
 
-    the question box restates your question as "Show month, territory that stores are in, and last year sales..."
+    the question box gives you suggestions "
 
-4.  To add the chart to your dashboard as a tile, select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_PinTile.png) on the right side of the question box.
+4.  To add the chart to your dashboard as a tile, select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_PinTile.png) on the top-right side of the canvas.
 
 5.  Pin the tile to an existing dashboard or to a new dashboard. 
 
@@ -42,12 +42,12 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 
     -   New dashboard: type the name of the new dashboard.
 
-6.  Select Pin.
+6.  Select **Pin**.
 
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.  
+    A success message (near the top-right corner) lets you know the visualization was added, as a tile, to your dashboard.  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/pinSuccess.png)
 
-7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
+7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
 
 ## Tips for using Q&A  
 -   When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard highlighted in the navigation pane.

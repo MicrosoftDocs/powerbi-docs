@@ -3,7 +3,7 @@
    description="Connect to files on your group's OneDrive for Business"
    services="powerbi" 
    documentationCenter="" 
-   authors="maggiesMSFT" 
+   authors="ajayan" 
    manager="mblythe" 
    backup=""
    editor=""

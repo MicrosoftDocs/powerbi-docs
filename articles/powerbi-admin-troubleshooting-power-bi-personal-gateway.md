@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="identified"
+   qualityFocus="monitoring"
    qualityDate="07/25/2016"/>
  
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/13/2016"
+   ms.date="08/15/2016"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Gateway - Personal
 
@@ -30,6 +30,8 @@ The following goes through some common issues you may encounter when using the P
 A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
 
 ## Installation
+
+**Personal gateway is 64bit** - If your machine is 32bit, you will not be able to install the personal gateway. Your operating system needs to be 64bit. You will need to install a 64bit version of Windows, or install the personal gateway on a 64bit machine.
 
 **Personal gateway fails to install as a service even though you are a local administrator for the computer** - Installation can fail if the user is in the computer’s local Administrator group, but group policy does not allow that username to log on as a service.  At the moment, ensure the group policy allows a user to log on as a service. We’re working on a fix for this issue. [Learn more](https://technet.microsoft.com/library/cc739424.aspx)
 

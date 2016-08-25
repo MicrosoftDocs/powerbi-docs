@@ -8,7 +8,7 @@ manager="mblythe"
 backup=""
 editor=""
 tags=""
-qualityFocus="identified"
+qualityFocus="monitoring"
 qualityDate="06/13/2016"/>
 
 <tags
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/04/2016"
+ms.date="08/15/2016"
 ms.author="asaxton"/>
 # Troubleshooting tile errors
 
@@ -67,9 +67,9 @@ If you are still having an issue, please [contact support](https://support.power
 
 ## See also
 
-[Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md)
+[Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
 [Power BI Community](http://community.powerbi.com/)
 

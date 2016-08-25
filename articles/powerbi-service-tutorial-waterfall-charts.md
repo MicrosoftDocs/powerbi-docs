@@ -18,9 +18,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/20/2016"
+   ms.date="08/10/2016"
    ms.author="mihart"/>
-# Tutorial: Waterfall charts in Power BI
+# Tutorial: waterfall charts in Power BI
 
 A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how an initial value (for example, net income) is affected by a series of positive and negative changes.
 
@@ -28,9 +28,9 @@ The columns are color coded so you can quickly tell increases and decreases. The
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/maTzOJSRB3g?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-## When to use a Waterfall Chart
+## When to use a waterfall chart
 
-Waterfall Charts are a great choice:
+Waterfall charts are a great choice:
 
 -   when you have changes for the measure across time series or different categories
 
@@ -42,7 +42,7 @@ Waterfall Charts are a great choice:
 
 -   to visualize how much money you make and spend each month, and the running balance for your account. 
 
-## Create a Waterfall Chart
+## Create a waterfall chart
 
 To follow along, sign in to Power BI and select **Get Data \> Samples \> Retail Analysis Sample**. 
 
@@ -70,7 +70,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a column in a Waterfall Chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
+Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
 
 ## See also
 
