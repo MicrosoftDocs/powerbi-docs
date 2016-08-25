@@ -26,6 +26,7 @@
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
 August introduces a full harvest of new features for Power BI Desktop. With this month's updates, we're continuing to add links beside new updates:
+
 -   **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 -   Some features have an **[article]** that provides more detail.
 -   Most features are explained in the monthly update **[blog]** post.
