@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Manage, update, and delete organizational content packs"
-   description="Manage, update, and delete organizational content packs in Power BI"
+   description="Read about managing, updating, and deleting organizational content packs in Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/28/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 # Manage, update, and delete organizational content packs in Power BI
 
@@ -96,4 +96,5 @@ You can only delete a content pack from the content pack library if you're the c
 -  [Get Started with Power BI](powerbi-service-get-started.md)
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 -  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

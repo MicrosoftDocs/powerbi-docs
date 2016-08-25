@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Create a group in Power BI "
-   description="Create a group in Power BI"
+   description="Read about creating groups in Power BI to bring together people and information, and connect with apps across Office 365, fostering communication and collaboration."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 
 # Create a group in Power BI  
@@ -93,7 +93,9 @@ Collaboration doesn’t end with Power BI. It continues with other Office 365 gr
 You can also share dashboards, reports, and datasets read-only with people outside your group. The process is the same as [sharing dashboards in your own workspace.](powerbi-service-share-unshare-dashboard.md)
 
 ### See also
-[Connect to files on your group's OneDrive for Business](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md)  
-[Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md)  
-[Manage your group](powerbi-service-manage-your-group-in-power-bi-and-office-365.md) 
-[How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) 
+- [Connect to files on your group's OneDrive for Business](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md)  
+- [Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md)  
+- [Manage your group](powerbi-service-manage-your-group-in-power-bi-and-office-365.md) 
+- [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) 
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)
+ 

@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Organizational content packs: Introduction"
-   description="Organizational content packs: Introduction"
+   description="Read about packaging up your dashboards, reports, Excel workbooks, and datasets into organizational content packs you can share with your coworkers."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/28/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 # Organizational content packs: Introduction
 
@@ -46,6 +46,8 @@ Any Power BI Pro user can create, publish, and access organizational content pac
 The lifecycle looks something like this:
 
 1. In Power BI Pro, Nate creates a content pack and publishes it to the Marketing group. The refresh settings are inherited with the dataset and can only be changed by Nate.
+
+    >Note: If Nate creates the content pack from within a [Power BI group](powerbi-service-create-a-group-in-power-bi.md) he belongs to, then even if he leaves the group, others in the Power BI group can take over ownership.
 
 2. Nate sends mail to the group, telling them about the new content pack.
 
@@ -82,5 +84,6 @@ All group members have the same permissions to the data as the content pack crea
 -   [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 -   [Get Started with Power BI](powerbi-service-get-started.md)
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
 

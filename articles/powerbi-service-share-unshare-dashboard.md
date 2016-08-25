@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 
 # Share a dashboard with colleagues and others
@@ -27,7 +27,9 @@ You can share your dashboards with colleagues in and out of your organization. I
 
 What you can share and who you can share it with depends on your and their Power Bi licenses. See [Licensing requirements for sharing](powerbi-service-share-unshare-dashboard.md#licensing-requirements-for-sharing) below for details.
 
-Dashboards (and their associated reports) that are shared with you are read-only.  You can't save-as to personalize them. On the other hand, you can personalize dashboards and reports in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md).  See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
+Dashboards (and their associated reports) that are shared with you are read-only.  You can't save-as to personalize them. On the other hand, you can make your own copy of dashboards and reports in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md).  See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
+
+>**Note**: You share dashboards from the Power BI service or the Power BI mobile apps, but not from Power BI Desktop.
 
 Watch Amanda share her dashboard with colleagues inside and outside her company. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -57,7 +59,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
     >**Note**: The sharing experience is different for people outside your organization. See [When you share with people outside your organization](powerbi-service-share-unshare-dashboard.md#when-you-share-with-people-outside-your-organization) below for details.
 
-5.  To see who you've already shared the dashboard with, select **Shared With**.
+5.  To see who you've already shared the dashboard with, select **Access**.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-shared-with.png)
 
@@ -118,7 +120,7 @@ People outside your organization can't reshare.
 
 1.  Open the dashboard and select **Share** ![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png).
 
-2.  Select **Shared With** to see the complete list of people.
+2.  Select **Access** to see the complete list of people.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-shared-with.png)
 
@@ -140,7 +142,7 @@ Only the dashboard owner can turn resharing on and off.
 
 -   If colleagues haven't accepted your sharing invitation yet, cancel the invitation and invite them again without selecting **Allow recipients to share your dashboard**.
 
--   If they have accepted your sharing invitation, select **Shared With**, select the ellipsis (**...**) next to **Can view** and click **Stop sharing**.
+-   If they have accepted your sharing invitation, select **Access**, select the ellipsis (**...**) next to **Can view** and click **Stop sharing**.
 
     ![](media/powerbi-service-share-unshare-dashboard/pbi_stop_sharing.png)
 
@@ -152,3 +154,5 @@ Only the dashboard owner can turn resharing on and off.
 - [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md)
 - [Use Power BI for free or buy Power BI Pro](https://powerbi.microsoft.com/pricing)
 - [Get Started with Power BI](powerbi-service-get-started.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/).
+

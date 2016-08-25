@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Connect to files on your group's OneDrive for Business"
-   description="Connect to files on your group's OneDrive for Business"
+   description="Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on your group’s OneDrive for Business."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/28/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 
 # Connect to files on your group's OneDrive for Business
@@ -82,7 +82,6 @@ Now that your files are in your group’s OneDrive for Business, you have a choi
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_ImportExcelDataOrWholeCrop.png)
 
-
     New items are marked with a yellow asterisk.  
 
     Excel files have an Excel icon and are under **Reports**.
@@ -91,8 +90,7 @@ Now that your files are in your group’s OneDrive for Business, you have a choi
 
 
 ### See also
-[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
-
-[Import data from Excel workbooks](powerbi-service-get-data-from-files.md)
-
-[Connect to whole Excel workbooks](powerbi-bring-in-whole-excel-files.md)
+- [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+- [Import data from Excel workbooks](powerbi-service-get-data-from-files.md)
+- [Connect to whole Excel workbooks](powerbi-bring-in-whole-excel-files.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)

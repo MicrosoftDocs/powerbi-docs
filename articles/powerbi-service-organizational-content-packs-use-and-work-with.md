@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Work with organizational content packs"
-   description="Work with organizational content packs in Power BI"
+   description="Read about creating copies of and troubleshooting access to organizational content packs in Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,19 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/28/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 # Work with organizational content packs in Power BI
 
-When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's an SSAS data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can customize the dashboards and reports, and when they save their changes, a new *personalized* version of the content pack replaces the original.
+When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's an SSAS data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can save a copy of the content pack that can live alongside the original.
 
-## Edit an organizational content pack
+## Create a copy of an organizational content pack
 
-Editing and saving changes to an organizational content pack creates a personalized version of the content pack, not visible to others.
+Create your own copy of the content pack, not visible to others.
 
-1.  Open the report in the content pack and make a change. Power BI lets you know that if you save this change you'll create a personal copy of the content pack. 
+1.  Select the ellipsis (...) next to the content pack dashboard > Make a copy.
 
-     ![](media/powerbi-service-organizational-content-packs-use-and-work-with/personalize.png)
+     ![](media/powerbi-service-organizational-content-packs-use-and-work-with/power-bi-create-copy-organizational-content-pack.png)
 
 2.  Select **Save**.  
 
@@ -47,7 +47,7 @@ This can happen for several reasons:
 
 ## How are organizational content packs refreshed?
 
-When the content pack is created, the refresh settings are inherited with the dataset.  When a group member creates a new personal version of the content pack, the new version retains its link to the original dataset and its refresh schedule. 
+When the content pack is created, the refresh settings are inherited with the dataset.  When a group member creates a copy of the content pack, the new version retains its link to the original dataset and its refresh schedule. 
 
 See [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
@@ -56,4 +56,5 @@ See [Manage, update, and delete organizational content packs](powerbi-service-or
 -  [Get Started with Power BI](powerbi-service-get-started.md)
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 -  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
