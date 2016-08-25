@@ -1,6 +1,6 @@
 <properties
    pageTitle="Get data from Power BI Desktop files"
-   description="Learn how to get data and reports from Power BI Desktkop into Power BI"
+   description="Learn how to get data and reports from Power BI Desktop into Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/03/2016"
+   ms.date="08/25/2016"
    ms.author="davidi"/>
 
 # Get data from Power BI Desktop files
