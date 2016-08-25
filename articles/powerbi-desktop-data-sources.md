@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/26/2016"
+   ms.date="08/24/2016"
    ms.author="davidi"/>
 
 
@@ -59,7 +59,7 @@ The **File** category provides the following data connections:
 
 The following image shows the **Get Data** window for **File**.
 
-![](media/powerbi-desktop-data-sources/DataSources_File.png) 
+![](media/powerbi-desktop-data-sources/DataSources_File2.png) 
 
 The **Database** category provides the following data connections:
 
@@ -75,14 +75,16 @@ The **Database** category provides the following data connections:
 -   Teradata Database
 -   SAP HANA Database
 -   SAP Business Warehouse
--   Impala (Beta)
 -   Amazon Redshift (Beta)
+-   Impala (Beta)
+-   Snowflake (Beta)
+
 
 > **Note:** Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings.
 
 The following image shows the **Get Data** window for **Database**.
 
-![](media/powerbi-desktop-data-sources/DataSources_Database2.png)
+![](media/powerbi-desktop-data-sources/DataSources_Database3.png)
 
 
 The **Azure** category provides the following data connections:

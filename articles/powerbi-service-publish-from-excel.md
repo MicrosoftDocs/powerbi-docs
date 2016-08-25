@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="08/11/2016"
    ms.author="davidi"/>
 
 # Publish to Power BI from Excel 2016
@@ -36,11 +36,11 @@ In Excel, click **File** > **Publish**.
 
 If your workbook isn’t already saved to OneDrive, you’ll need to save it there first. Click Save to Cloud and choose a location in OneDrive for Business.
 
-![](media/powerbi-service-publish-from-excel/pbi_SaveToOneDrive.png)
+![](media/powerbi-service-publish-from-excel/pbi_SaveToOneDrive2.png)
 
 Once your workbook is saved to OneDrive, when you click **Publish**, you’ll get two options on how to get your workbook into Power BI.
 
-![](media/powerbi-service-publish-from-excel/pbi_UploadExport.png)
+![](media/powerbi-service-publish-from-excel/pbi_UploadExport2.png)
 ### Upload your workbook to Power BI
 When you choose this option, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some great features to help you pin elements from your worksheets to dashboards.
 

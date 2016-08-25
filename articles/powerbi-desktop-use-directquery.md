@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="08/24/2016"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  
@@ -34,6 +34,7 @@ The following data sources are currently supported:
 -   [Oracle Database](powerbi-desktop-directquery-for-oracle-teradata.md)
 -   [Teradata Database](powerbi-desktop-directquery-for-oracle-teradata.md)
 -   [Amazon Redshift (Preview)](powerbi-desktop-connect-redshift.md)
+-   [Impala (Preview)](powerbi-desktop-connect-impala.md)
 
 ## How to Connect using DirectQuery  
 When you use **Get Data** to connect to a data source supported by **DirectQuery**, the connection window lets you select how you want to connect.  
