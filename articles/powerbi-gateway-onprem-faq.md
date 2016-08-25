@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/17/2016"
+ms.date="08/24/2016"
 ms.author="asaxton"/>
 # On-Premises Data Gateway FAQ
 
@@ -77,6 +77,9 @@ ms.author="asaxton"/>
 
 **Question:** Is a Pro license required for users when interacting with a dashboard or report that makes use of the gateway?  
 **Answer:** Yes.
+
+**Question:** Why can't I connect to my Oracle server?  
+**Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the Gateway. For more information, see [Installing the Oracle Client](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
 
 ## See also
 [On-premises data gateway](powerbi-gateway-onprem.md)
