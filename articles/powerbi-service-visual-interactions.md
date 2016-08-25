@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/20/2016"
+   ms.date="08/25/2016"
    ms.author="mihart"/>
 
 # Visualization interactions in a Power BI report
