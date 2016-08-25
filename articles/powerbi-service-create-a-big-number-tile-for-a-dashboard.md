@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/22/2016"
+   ms.date="08/25/2016"
    ms.author="mihart"/>
 
 # Create a big number tile for a Power BI dashboard by asking a question  
@@ -28,18 +28,20 @@ Sometimes a single number is the most important thing you want to track in your 
 
 The question box is the easiest way to make a number tile like this.
 
-1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
+1.    Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
-2.  At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
+2.    At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
 
-    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QnABox.png)
+    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-box.png)
 
-3.  For example, type "number of opportunities" in the question box.
-    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_QA_Number.png)
+3.    For example, type "number of opportunities" in the question box.
+    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-ask.png)
 
     The question box suggests, restates as **Showing opportunity count**, and displays the total number.  
 
 4.  Select the pin icon ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_PinTile.png) in the upper-right corner to add the number tile to the dashboard. 
+
+    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-pin.png)
 
 5.  Pin the tile to an existing dashboard or to a new dashboard. 
 

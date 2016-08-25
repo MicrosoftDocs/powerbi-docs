@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="lJKgWnvl6bQ"
-   qualityFocus="identified"
+   qualityFocus="monitoring"
    qualityDate="03/15/2016"/>
 
 <tags
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/21/2016"
+   ms.date="08/25/2016"
    ms.author="mihart"/>
 
 # Create a Power BI dashboard

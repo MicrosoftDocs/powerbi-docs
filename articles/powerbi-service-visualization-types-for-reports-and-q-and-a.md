@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
+   ms.date="08/24/2016"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -102,6 +102,8 @@ For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi-Nancy_viz_map.png)
 
 **Ti﻿p**: are used to associate both categorical and quantitative information with spatial locations.
+
+For more information, see [Tips and tricks for map visuals](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
 
 ### Filled Maps (Choropleth)
 

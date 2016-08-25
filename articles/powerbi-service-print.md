@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="jtlLGRKBvXY"
    qualityFocus="monitoring"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2016"
+   ms.date="08/25/2016"
    ms.author="mihart"/>
 
 # Printing from Power BI
@@ -25,6 +26,10 @@
 Print an entire dashboard, a dashboard tile, a report page, or a report visual from Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
 
 >**NOTE**: Printing is only available in Power BI service and not Power BI Desktop.
+
+Watch Amanda print from her dashboard and report. Then follow the step-by-step instructions below the video to try it out yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jtlLGRKBvXY" frameborder="0" allowfullscreen></iframe>
 
 ## Print a dashboard
 
@@ -51,7 +56,8 @@ Print an entire dashboard, a dashboard tile, a report page, or a report visual f
 
   ![](media/powerbi-service-print/menu-options-new.png)
 
-3. Select the Print icon ![](media/powerbi-service-print/print-icon.png). Continue with step 3 above.
+3. Select the Print icon
+    ![](media/powerbi-service-print/print-icon.png). Continue with step 3 above.
 
 ## Print a report page
 

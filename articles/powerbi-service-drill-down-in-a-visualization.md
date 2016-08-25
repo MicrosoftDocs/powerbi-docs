@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
+   ms.date="08/24/2016"
    ms.author="mihart"/>
 
 # Drill down in a visualization in Power BI
@@ -29,7 +29,7 @@
 ##  2 methods to drill down
 There are 2 different way to drill down (and up) in your visualization.  Both are described in this document. Both methods accomplish the same thing, so use whichever one you enjoy most.
 
-### Method 1 for drill down
+## Method 1 for drill down
 
 1.  In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). Drill requires a visualization with a hierarchy. 
 
@@ -54,7 +54,7 @@ There are 2 different way to drill down (and up) in your visualization.  Both ar
     ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drillup2.png)
     
 
-### Method 2 for drill down
+## Method 2 for drill down
 
 
 1.  In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). Drill requires a visualization with a hierarchy. 

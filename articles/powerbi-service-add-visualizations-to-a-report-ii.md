@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/23/2016"
+   ms.date="08/25/2016"
    ms.author="mihart"/>
 
 # Tutorial: Part 2, Add visualizations to a Power BI report  

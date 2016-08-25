@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="02/16/2016"
-   ms.author="mihart"/>
+   ms.author="amac"/>
 
 # Samples for Power BI service
 

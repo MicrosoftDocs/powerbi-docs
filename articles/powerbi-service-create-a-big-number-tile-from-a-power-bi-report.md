@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/25/2016"
+   ms.date="08/25/2016"
    ms.author="mihart"/>
 # Create a big number tile from a Power BI report
 
