@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Tutorial: create and publish an organizational content pack"
-   description="Tutorial: create and publish an organizational content pack in Power BI"
+   description="In this tutorial you create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="08/24/2016"
    ms.author="ajayan"/>
 
 # Tutorial: Create and publish an organizational content pack in Power BI
 
-In this tutorial we'll create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI.
+In this tutorial you create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI.
 
 >**Note:** Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
 
@@ -85,3 +85,4 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 -  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)  
 -  [What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)

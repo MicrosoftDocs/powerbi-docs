@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Collaborate with your Power BI group"
-   description="Collaborate with your Power BI group"
+   description="Read about ways you can collaborate with your Power BI group by using Office 365 group services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 # Collaborate with your Power BI group
 
@@ -66,6 +66,8 @@ If you’re owner or admin for a group, you can also add or remove group members
 
 
 ### See also
-[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+
+- [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)
  
 

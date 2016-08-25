@@ -1,6 +1,6 @@
 <properties
    pageTitle="Share a dashboard that links to an Excel workbook on OneDrive for Business"
-   description="Share a dashboard that has links to an Excel workbook on OneDrive for Business."
+   description="Read about sharing dashboards connected to an Excel workbook on OneDrive for Business, with tiles pinned from that workbook."
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
+   ms.date="08/24/2016"
    ms.author="maggies"/>
 
 # Share a dashboard that has links to an Excel workbook
@@ -71,10 +71,8 @@ Sharing a dashboard from a Power BI group is similar to sharing a dashboard from
 
 ### See also
 
-[Pin a tile to a Power BI dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
-
-[Dashboards in Power BI](powerbi-service-dashboards.md)
-
-[Get Started with Power BI](powerbi-service-get-started.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+- [Pin a tile to a Power BI dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+- [Dashboards in Power BI](powerbi-service-dashboards.md)
+- [Get Started with Power BI](powerbi-service-get-started.md)
+- [Power BI Basic Concepts](powerbi-service-basic-concepts.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)
