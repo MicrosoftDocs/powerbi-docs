@@ -65,9 +65,9 @@ Data sources are often set to refresh daily, although some refresh more often. W
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/powerbi-alerts-email.png)
 
-3.  Power BI adds a message to your [**Notification center**](powerbi-mobile-notification-center.md) ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/powerbi-alert-tile-notification-icon.png) .
+3.  Power BI adds a message to your [**Notification center**](powerbi-mobile-notification-center.md).
 
-4. Open your Notification center to see the alert details.
+4. Tap the main menu icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-notification-icon-border.png) to open the Notification center and see the alert details.
 
 >**Note**: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
 
