@@ -28,13 +28,13 @@ Sometimes a single number is the most important thing you want to track in your 
 
 The question box is the easiest way to make a number tile like this.
 
-1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
+1.    Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
-2.  At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
+2.    At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-box.png)
 
-3.  For example, type "number of opportunities" in the question box.
+3.    For example, type "number of opportunities" in the question box.
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-ask.png)
 
     The question box suggests, restates as **Showing opportunity count**, and displays the total number.  

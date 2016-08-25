@@ -56,7 +56,8 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
 
   ![](media/powerbi-service-print/menu-options-new.png)
 
-3. Select the Print icon ![](media/powerbi-service-print/print-icon.png). Continue with step 3 above.
+3. Select the Print icon
+    ![](media/powerbi-service-print/print-icon.png). Continue with step 3 above.
 
 ## Print a report page
 

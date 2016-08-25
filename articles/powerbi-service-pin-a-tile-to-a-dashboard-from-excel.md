@@ -23,10 +23,6 @@
 
 # Pin a tile to a Power BI dashboard from Excel
 
-## Pin a range from an Excel workbook to a dashboard
-
-One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is from within an Excel workbook. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
-
 Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks.Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l8JoB7w0zJA" frameborder="0" allowfullscreen></iframe>
@@ -49,6 +45,7 @@ Watch Will demonstrate several ways to import data from, and connect to, Excel w
 
 
 ## Pin a range to a dashboard
+One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is from within an Excel workbook. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
 
 1. Highlight the cells that you'd like to pin to a dashboard.
 

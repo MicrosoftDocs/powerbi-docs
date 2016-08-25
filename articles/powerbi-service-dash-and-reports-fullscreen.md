@@ -80,9 +80,7 @@ Sometimes dashboards will display in Full Screen mode with scrollbars (see above
     ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-screen-new.png)
 
 ### Fit to width
-And sometimes you don't care about scrollbars, but want the dashboard or report to fill the entire width of the available space.  Select the **Fit to width** icon.
-
-  ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-width.png)
+And sometimes you don't care about scrollbars, but want the dashboard or report to fill the entire width of the available space.  Select the **Fit to width** icon. ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-width.png)
 
 ### Printing
 To print a dashboard from Full Screen mode, select the Print icon.

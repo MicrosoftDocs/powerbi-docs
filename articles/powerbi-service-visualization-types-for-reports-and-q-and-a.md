@@ -103,7 +103,7 @@ For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-
 
 **Ti﻿p**: are used to associate both categorical and quantitative information with spatial locations.
 
-For more information, see [Tutorial: Combo charts in Power BI](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
+For more information, see [Tips and tricks for map visuals](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
 
 ### Filled Maps (Choropleth)
 

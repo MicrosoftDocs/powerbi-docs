@@ -47,7 +47,6 @@ Watch Amanda export the data used in her dashboard and save it as a .csv file. T
     ![](media/powerbi-service-export-data/pbi-export-to-excel.png)
 
     >**NOTE**: If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode are currency symbols and foreign words. the workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
-
     1. Open Excel
     2. From the **Data** tab, select **Get external data** > **From text**.
 
