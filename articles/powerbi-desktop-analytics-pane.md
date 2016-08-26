@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Analytics pane in Power BI Desktop"
-   description="Create dynamic reference lines to visuals in Power BI Desktop"
+   description="Create dynamic reference lines for visuals in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -29,7 +29,7 @@ With features available in the **Analytics** pane in **Power BI Desktop**, you c
 
 >   Note: The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
 
-With the **Analytics** pane, you can create the following types of dynamic lines (not all lines are available for all visual types):
+With the **Analytics** pane, you can create the following types of dynamic reference lines (not all lines are available for all visual types):
 
 -   X-Axis constant line
 -   Y-Axis constant line
@@ -63,18 +63,18 @@ To view the available dynamic reference lines for a visual, follow these steps:
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_5.png)
 
-5.  Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dyanmic lines you currently have on your visual, and of which type. If we add a **Max line** for *Cost of Living*, you can see that the **Analytics** pane shows that we now also have a **Max line** dynamic line applied to this visual.
+5.  Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dyanmic lines you currently have on your visual, and of which type. If we add a **Max line** for *Cost of Living*, you can see that the **Analytics** pane shows that we now also have a **Max line** dynamic reference line applied to this visual.
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_6.png)
 
-If the visual you've selected can't have dynamic lines applied to it (in this case, a **Map** visual), you'll see the following when you select the **Analytics** pane.
+If the visual you've selected can't have dynamic reference lines applied to it (in this case, a **Map** visual), you'll see the following when you select the **Analytics** pane.
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_7.png)
 
 
-There are all sorts of interesting insights you can highlight by creating dynamic lines with the **Analytics** pane.
+There are all sorts of interesting insights you can highlight by creating dynamic reference lines with the **Analytics** pane.
 
-We're planning more features and capabilities, including expanding which visuals can have dynamic lines applied to them, so check back often for what's new.
+We're planning more features and capabilities, including expanding which visuals can have dynamic reference lines applied to them, so check back often for what's new.
 
 
 
