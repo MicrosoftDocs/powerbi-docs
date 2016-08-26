@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
+   ms.date="08/26/2016"
    ms.author="tpalmer"/>
 
 # Alpine Metrics Sales Predictions content pack for Power&nbsp;BI  
