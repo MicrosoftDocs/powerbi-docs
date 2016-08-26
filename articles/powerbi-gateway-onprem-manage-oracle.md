@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/24/2016"
+ms.date="08/26/2016"
 ms.author="asaxton"/>
 # Manage your data source - Oracle
 
@@ -102,7 +102,7 @@ You will also need to choose an **Authentication Method**.  This can either be *
 
 ![](media/powerbi-gateway-enterprise-manage/data-source-oracle2.png)
 
-You can click **Add** after you have everything filled in.  You can now use this data source for scheduled refresh, or DirectQuery, against a SQL Server that is on-premises. You will see *Connection Successful* if it succeeded.
+You can click **Add** after you have everything filled in.  You can now use this data source for scheduled refresh, or DirectQuery, against an Oracle server that is on-premises. You will see *Connection Successful* if it succeeded.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
 
