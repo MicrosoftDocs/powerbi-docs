@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="008/29/2016"
+   ms.date="08/29/2016"
    ms.author="yshoukry"/>
 # Zuora content pack for Power&nbsp;BI
 
