@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/25/2016"
+   ms.date="08/29/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -147,3 +147,7 @@ Learn more about Power BI security, privacy and compliance in this [Power BI Sec
 ## What has happened to the Power BI for Office 365 experience?
 
 The Power BI for Office 365 experience has been deprecated.
+
+## See also
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
