@@ -95,7 +95,7 @@ In this task, we'll compare gross margin and sales.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
 
-4.  Drag **Gross Margin% Last Year** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the data sets to be scaled differently; the left measures dollars and the right measures percentage.
+4.  Drag **Gross Margin% Last Year** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures dollars and the right measures percentage.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-combochart.png)    
 
@@ -114,10 +114,11 @@ In this task, we'll compare gross margin and sales.
 
 5.  For **Y-Axis (Line)**, leave **Position** as **Right**, turn **Title** to **On**, and set **Style** to **Show title only**.
 
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-titles-on.png)
+    Your combo chart now displays dual axes, both with titles.
 
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-titles-on.png)
 
-Your combo chart now displays dual axes, both with titles. From here you might want to:
+From here you might want to:
 
 -  [Add the combo chart as a dashboard tile](powerbi-service-dashboard-tiles.md).
 
