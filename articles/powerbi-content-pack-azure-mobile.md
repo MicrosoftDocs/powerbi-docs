@@ -3,7 +3,7 @@
    description="Azure Mobile Engagement content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors=”joeshoukry”
+   authors="joeshoukry"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/26/2016"
-   ms.author=”yshoukry”/>
+   ms.author="yshoukry"/>
    
 # Azure Mobile Engagement content pack for Power&nbsp;BI
 

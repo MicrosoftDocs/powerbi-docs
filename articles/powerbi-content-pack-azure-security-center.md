@@ -3,7 +3,7 @@
    description="Azure Security Center content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors=”joeshoukry” 
+   authors="joeshoukry" 
    manager="mblythe" 
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/26/2016"
-   ms.author=”yshoukry”/>
+   ms.author="yshoukry"/>
 # Azure Security Center content pack for Power&nbsp;BI
 
 Get insights into your Azure workload security by connecting your Azure Security Data with Power BI. Power BI automatically creates a dashboard and report on top of your Azure Security Center data enabling you to analyze and explore the data.

@@ -3,7 +3,7 @@
    description="Microsoft Dynamics AX content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors=”joeshoukry” 
+   authors="joeshoukry" 
    manager="mblythe" 
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/26/2016"
-   ms.author=”yshoukry”/>
+   ms.author="yshoukry"/>
 # Microsoft Dynamics AX content pack for Power&nbsp;BI
 
 Microsoft Dynamics AX has three Power BI content packs targeted at different business users. The Financial Performance content pack, designed specifically for CFOs, provides access to insights about your organization’s financial performance. The Retail Channel Performance content pack is targeted for channel managers focuses on sales performance to predict trends and uncover insights by drawing directly from Retail & Commerce data. The Cost Management is designed for COOs and CFOs and provides details on operation performance. 

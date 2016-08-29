@@ -3,7 +3,7 @@
    description="GitHub content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors=”joeshoukry”
+   authors="joeshoukry"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/26/2016"
-   ms.author=”yshoukry”/>
+   ms.author="yshoukry"/>
 # GitHub content pack for Power BI
 
 The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also known as repo) with data around contributions, issues, pull requests and active users.
