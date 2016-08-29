@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="08/29/2016"
    ms.author="mihart"/>
 
 # Tutorial: scatter charts and bubble charts in Power BI  
@@ -104,7 +104,7 @@ Add a field to the **Details** area to tell Power BI how to group the values. Th
 * Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
 
-      Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
+   Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
 
   For more information, see [Aggregates in reports](powerbi-service-aggregates.md).
 
