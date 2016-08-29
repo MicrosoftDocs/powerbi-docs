@@ -3,7 +3,7 @@
    description="Project Online content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="theresapalmer" 
+   authors="joeshoukry" 
    manager="mblythe" 
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="08/29/2016"
+   ms.author="yshoukry"/>
 # Project Online content pack for Power BI
 
 Microsoft Project Online is a flexible online solution for project portfolio management (PPM) and everyday work. Project Online enables organizations to get started, prioritize project portfolio investments and deliver the intended business value. The Project Online content pack for Power BI allows you to explore your project data with out-of-box metrics such as portfolio status and project compliance.

@@ -3,7 +3,7 @@
    description="Prevedere content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="theresapalmer" 
+   authors="joeshoukry" 
    manager="mblythe" 
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
-   ms.author="tpalmer"/>
+   ms.date="08/29/2016"
+   ms.author="yshoukry"/>
 # Prevedere content pack for Power&nbsp;BI
 
 Gain access to exclusive and critical financial information to confidently and proactively drive your business forward.

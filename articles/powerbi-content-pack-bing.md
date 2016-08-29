@@ -3,7 +3,7 @@
    description="Bing content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="theresapalmer"
+   authors="joeshoukry"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="08/26/2016"
+   ms.author="yshoukry"/>
 # Bing content pack for Power&nbsp;BI
 
 The Bing content pack will allow you to view analytics around Internet search activity for a term of your choice.
