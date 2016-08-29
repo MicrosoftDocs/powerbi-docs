@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="08/29/2016"
    ms.author="mihart"/>
 # Tutorial: Combo Chart in Power BI
 
@@ -87,7 +87,7 @@ In this task, we'll compare gross margin and sales.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo1_new.png)
 
-2.  Add **This Year Sales** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** is much smaller than the scale of **Sales** which makes it difficult to compare.      
+2.  Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** is much smaller than the scale of **Sales** which makes it difficult to compare.      
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/flatline_new.png)
 
@@ -95,50 +95,34 @@ In this task, we'll compare gross margin and sales.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
 
-4.  Drag **Gross Margin% Last Year** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the data sets to be scaled differently; the left measures dollars and the right measures percentage.
+4.  Drag **Gross Margin% Last Year** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures dollars and the right measures percentage.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochart2done_new.png)
-
-      
-
-## Optionally, turn off the second axis.
-
-1.  In the **Visualizations** pane, select the paintbrush icon to display the customization options.
-
-2.  Expand the Y-Axis options by selecting the down arrow.
-
-3.  Select the slider for **Show Secondary** and turn it **Off**.
-
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo3.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-combochart.png)    
 
 
 ## Add titles to the axes
 
 1.  Select the down arrow to expand the **Y-axis** options.
 
-2.  Set **Show Secondary** to **On**. This reveals additional settings.
+2.  For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display** as **Millions**.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/yaxissettings_new.png)
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-y-axis-column.png)
 
-3.  Set **Position** to **Left**.
+4.  Under **Y-Axis (Column)** also ensure that **Show Secondary** is set to **On**. This displays options for formatting the line chart portion of the combo chart.
 
-4.  Set **Title** to **On**.
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-show-secondary.png)
 
-5.  Set **Style** to **Show title only**.
+5.  For **Y-Axis (Line)**, leave **Position** as **Right**, turn **Title** to **On**, and set **Style** to **Show title only**.
 
-6.  Select the down arrow to expand the X-axis options.
+    Your combo chart now displays dual axes, both with titles.
 
-7.  Set **Title** to **On**.
+    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-titles-on.png)
 
-8.  Set **Style** to **Show title only**.
+From here you might want to:
 
-    Your combo chart now displays dual axes, switched to opposite sides, both with titles.
+-  [Add the combo chart as a dashboard tile](powerbi-service-dashboard-tiles.md).
 
-	![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/PBI_newComboChart.png)
-
-	[Add the combo chart as a dashboard tile](powerbi-service-dashboard-tiles.md).
-
-	[Save the report](powerbi-service-save-a-report.md).
+-  [Save the report](powerbi-service-save-a-report.md).
 
 ## Highlighting and cross-filtering
 

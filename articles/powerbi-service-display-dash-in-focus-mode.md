@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="08/29/2016"
    ms.author="mihart"/>
 
 # Display a dashboard tile or report visual in Focus mode
@@ -33,7 +33,7 @@
 >**NOTE**: Currently, Focus mode is not available for tiles created from Q&A or for map tiles. 
 
 >**NOTE**:
->Focus is different from Full Screen mode.  Full Screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
+>Focus is different from full screen mode.  Full screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
 
 1.  Hover over the tile or visual and select the **Focus mode** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
 
