@@ -3,7 +3,7 @@
    description="Zendesk content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="theresapalmer" 
+   authors=”joeshoukry” 
    manager="mblythe" 
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/29/2016"
-   ms.author="tpalmer"/>
+   ms.author=”yshoukry”/>
 # Zendesk content pack for Power&nbsp;BI
 
 The Zendesk content pack offers a Power BI dashboard and a set of Power BI reports that provide insights about your ticket volumes and agent performance. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once a day. 

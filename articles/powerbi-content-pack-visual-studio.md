@@ -3,7 +3,7 @@
    description="Visual Studio Team Services content pack for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="theresapalmer" 
+   authors=”joeshoukry” 
    manager="mblythe" 
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/29/2016"
-   ms.author="tpalmer"/>
+   ms.author=”yshoukry”/>
 # Visual Studio Team Services content pack for Power&nbsp;BI
 
 Use the Visual Studio Team Services content pack for Power BI to gain insights into your git and TFVC team projects. After you make a connection, your data comes to you automatically on a dashboard and in reports. 
