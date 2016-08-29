@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/04/2016"
+   ms.date="08/29/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -58,9 +58,6 @@ Threshold-based notifications are now formatted based on your device’s locale.
 
 **Improved security management**
 Select a risk classification for the business data presented in a specific dashboard.
- 
-**Intune MAM**
-The iOS app now supports Intune MAM (MDM-less) capabilities.
  
 **Mobile insights**
 View summary data (max, min, and all) on clustered column chart tiles.
