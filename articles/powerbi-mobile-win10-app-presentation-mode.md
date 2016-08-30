@@ -1,6 +1,6 @@
 <properties 
    pageTitle="View Power BI in presentation mode on Surface Hub and in the Power BI mobile app for Windows 10"
-   description="Read about viewing Power BI reports in Surface Hub, and viewing Power BI dashboards, reports, and tiles in presentation mode on Windows 10 devices."
+   description="Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in full-screen mode on Windows 10 devices."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,28 +17,28 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/16/2016"
+   ms.date="08/30/2016"
    ms.author="maggies"/>
 
 # View Power BI in presentation mode on Surface Hub and in the Power BI mobile app for Windows 10
 
-You can display reports in presentation mode in the Power BI app on Surface Hub, and display dashboards, reports, and tiles in presentation mode in the Power BI mobile app for Windows 10 devices. 
+You can display reports in presentation mode on Surface Hub, and display dashboards, reports, and tiles in full-screen mode on Windows 10 devices. 
 
 ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-presentation-mode.png)
 
-Presentation mode is useful for displaying Power BI at a meeting or conference, or on a dedicated projector in an office, or even just for maximizing space on a small screen. 
+Presentation and full-screen modes are useful for displaying Power BI at a meeting or conference, or on a dedicated projector in an office, or even just for maximizing space on a small screen. 
 
-In presentation mode in the Power BI mobile app, all the "chrome" such as the navigation and menu bars is removed, except the page tabs and filter pane in reports.
+In full-screen mode in the Power BI mobile app, all the "chrome" such as the navigation and menu bars is removed, except the page tabs and filter pane in reports.
 
-When you display a report on Surface Hub, you can draw on the pages with different colors of ink and navigate between the pages of the report.
+When you display a report in presentation mode on Surface Hub, you can draw on the pages with different colors of ink and navigate between the pages of the report.
 
 You can also [display dashboards and reports in full-screen mode from the Power BI service](powerbi-service-dash-and-reports-fullscreen.md) on the web.
 
 **Note**: Presentation mode is different from [focus mode for tiles](powerbi-mobile-tiles-in-the-win10phone-app.md).
 
-## Display dashboards, reports, and tiles in presentation mode
+## Display dashboards, reports, and tiles in full-screen mode
 
-1. In a dashboard, report, or tile, tap the **Full screen** icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-full-screen-icon.png) to go to presentation mode.
+1. In the Power BI mobile app on a dashboard, report, or tile, tap the **Full screen** icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-full-screen-icon.png) to go to full-screen mode.
 
 2. Tap the search icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) to look for other dashboards.
 
