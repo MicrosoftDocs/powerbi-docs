@@ -17,10 +17,33 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="08/30/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## August 2016
+
+### Android phones
+
+**New data-driven alerts**
+Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
+
+### iOS on iPhones and iPads
+  
+**Data-driven alerts on your iPad**
+Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
+
+**Tiles full-screen in focus mode on iPad**
+When you tap a tile on your iPad, the tile will now open full-screen in focus mode, taking advantage of the entire iPad screen size.
+
+### Windows 10 devices
+ 
+**Data-driven alerts**
+Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
+
+**Full-screen and presentation modes**
+Display reports in presentation mode on Surface Hub, and display dashboards, reports, and tiles in full-screen mode on Windows 10 devices.
 
 ## July 2016
 
@@ -29,18 +52,12 @@
 In the Power BI service you can now [create a view of a dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
 ### Android phones
-
-**New data-driven alerts**
-Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
  
-**Favorite dashboard management**
-Manage your list of favorite dashboards from your mobile device.
+**Favorites tab**
+Access all your favorite dashboards from a single location.
  
 **Improved security management**
 Select a risk classification for the business data presented in a specific dashboard.
-
-**Improved manual refresh**
-You can now manually refresh your dashboard tiles. For tiles based on Direct Query, this retrieves the latest data from the data model.
  
 **Improved warning and banners**
 We’ve improved warnings and banners for the mobile app.
@@ -53,9 +70,6 @@ Data-driven alerts are now formatted based on your device’s locale.
  
 ### iOS on iPhones and iPads
   
-**Improved data-driven alerts**
-Threshold-based notifications are now formatted based on your device’s locale.
-
 **Improved security management**
 Select a risk classification for the business data presented in a specific dashboard.
  
@@ -77,17 +91,11 @@ We’ve improved error messages for tiles in the mobile app.
 
 ### Windows 10 devices
  
-**Improved manual refresh**
-You can now manually refresh your dashboard tiles. For tiles based on Direct Query, this retrieves the latest data from the data model.
-
 **Improved security management**
 Select a risk classification for the business data presented in a specific dashboard.
 
 **Improved warning and banners**
 We’ve improved warnings and banners for the mobile app.
-
-**Improved alerts**
-New data-driven alerts are now formatted based on your device’s locale.
 
 ## June 2016
 
