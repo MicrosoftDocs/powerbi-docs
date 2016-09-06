@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="09/06/2016"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Gateway - Personal
 
@@ -77,6 +77,10 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 **Error: Data source error: We cannot convert the value "\[Table\]" to type Table.**
 
 **Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](powerbi-refresh-enable-fast-combine.md)
+
+**Error: There is not enough space for this row.**
+
+This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
 
 ## Data sources
 

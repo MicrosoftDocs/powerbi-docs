@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/05/2016"
+ms.date="09/06/2016"
 ms.author="asaxton"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -158,6 +158,12 @@ You will need to work with your domain administrators to verify the trust relati
 **Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
 
 Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
+
+## Datasets
+
+### Error: There is not enough space for this row.
+
+This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
 
 ## Reports
 

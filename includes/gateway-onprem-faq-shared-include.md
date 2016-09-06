@@ -41,6 +41,15 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 **Question:** Can I place the gateway in a perimeter network (also known as DMZ, demilitarized zone, and screened subnet)?  
 **Answer:** The gateway requires connectivity to the data source. If the data source is not accessable in your perimeter network, the gateway may not be able to connect to it. For example, your SQL Server may not be in your perimeter network. And, you cannot connect to your SQL Server from the perimeter network. If you placed the gateway in your perimeter network, it would not be able to reach the SQL Server.
 
+**Question:** Is it possible to force the gateway to use HTTPS traffic with Azure Service Bus instead of TCP?  
+**Answer:** Yes. Although, this will greatly reduce performance. You will want to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file. You will want to change the value from `AutoDetect` to `Https`. This file is located, by default, at *C:\Program Files\On-premises data gateway*.
+
+```
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
 ## High Availability/Disaster Recovery
 
 **Question:** Are there any plans for enabling high availability scenarios with the gateway?  
