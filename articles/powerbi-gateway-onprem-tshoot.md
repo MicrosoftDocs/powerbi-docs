@@ -47,7 +47,7 @@ The enterprise gateway runs as a windows service. You can start and stop it like
 
 ### Error: Failed to create gateway. Please try again.
 
-All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs as mentioned above to get more details. 
+All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details. 
 
 This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](powerbi-gateway-proxy.md)
 
@@ -57,7 +57,7 @@ Information was received from the Power BI service, to the gateway. The informat
 
 ### Error: Power BI service reported local gateway as unreachable. Please restart the gateway and try again.
 
-At the end of configuration, the Power BI service will be called again to validate the gateway. The Power BI service does not report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs as mentioned above to get more details. 
+At the end of configuration, the Power BI service will be called again to validate the gateway. The Power BI service does not report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs, as mentioned below, to get more details. 
 
 ### Script error during sign into Power BI
 
