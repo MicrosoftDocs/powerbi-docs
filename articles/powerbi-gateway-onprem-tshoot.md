@@ -53,7 +53,7 @@ This could also be due to proxy configuration issues. The user interface does no
 
 ### Error: Failed to update gateway details.  Please try again.
 
-Information was received from the Power BI service, to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception will be displayed under **Show details**. You can collect, and review, the logs as mentioned above to get more details. 
+Information was received from the Power BI service, to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception will be displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details. 
 
 ### Error: Power BI service reported local gateway as unreachable. Please restart the gateway and try again.
 
