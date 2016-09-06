@@ -14,5 +14,5 @@ You can also select Other user and supply a given user. It is best to supply the
 
 ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
  
-> **Note:** Within Power BI Desktop, this will only display different results if you are using dynamic security based on your DAX expressions.
+> [AZURE.NOTE] Within Power BI Desktop, this will only display different results if you are using dynamic security based on your DAX expressions.
 
