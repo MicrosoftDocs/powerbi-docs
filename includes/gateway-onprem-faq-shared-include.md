@@ -1,7 +1,7 @@
 ## General
 
 **Question:** What is the actual Windows service called?  
-**Answer:** The gateway is called Power BI Enterprise Gateway Service in Services
+**Answer:** The gateway is called On-premises data gateway service in Services
 
 **Question:** What are the requirements for the gateway?  
 **Answer:** Take a look at the requirements section of the main [gateway article](powerbi-gateway-onprem.md).
