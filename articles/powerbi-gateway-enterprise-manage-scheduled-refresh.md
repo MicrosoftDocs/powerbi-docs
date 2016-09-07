@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/06/2016"
+ms.date="09/06/2016"
 ms.author="asaxton"/>
 # Manage your data source - Import/Scheduled Refresh
 
@@ -33,7 +33,7 @@ You can download the gateway from the Power BI service. Select **Downloads** > *
 
 To add a gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698863) and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
-> NOTE: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> [AZURE.NOTE] **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
 
 ## Remove a gateway
 
@@ -57,7 +57,7 @@ You can then select the **Data Source Type** from the list. All of the data sour
 
 You will then want to fill in the information for the data source which includes the source information and credentials used to access the data source.
 
-> NOTE: All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
+> [AZURE.NOTE] All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-oracle.png)
 
@@ -92,7 +92,7 @@ On the Administrators tab, for the gateway, you can add, and remove, users that 
 
 On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
 
-> NOTE: The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
+> [AZURE.NOTE] The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
 
@@ -100,13 +100,19 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 
 After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh. 
 
-> **Note**: Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
+> [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
 
 The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
 
 If you are listed in the **Users** tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
 
 ![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
+
+> [AZURE.WARNING] If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources are not added to the gateway, you will not see the gateway as available for scheduled refresh.
+
+## Limitations
+
+- OAuth is not a supported authentication scheme with the On-Premises Data Gateway. You cannot add data sources that require OAuth. If your dataset has a data source requiring OAuth, you will not be able to use the gateway for scheduled refresh.
 
 ## See Also
 

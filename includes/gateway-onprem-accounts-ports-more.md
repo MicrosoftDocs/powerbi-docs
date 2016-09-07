@@ -32,6 +32,17 @@ Here is a listing of the fully qualified domain names used by the gateway.
 |*.core.windows.net|443|HTTPS|
 |login.microsoftonline.com|443|HTTPS|
 |*.msftncsi.com|443|Used to test internet connectivity if the gateway is unreachable by the Power BI service.|
+|*.microsoftonline-p.com|443|Used for authentication depending on configuration.|
+
+### Forcing HTTPS communication with Azure Service Bus
+
+You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP. Although, this will greatly reduce performance. You will need to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file. Change the value from `AutoDetect` to `Https`. This file is located, by default, at *C:\Program Files\On-premises data gateway*.
+
+```
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
 
 ## High Availability
 
