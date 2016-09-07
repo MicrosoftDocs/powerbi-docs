@@ -10,7 +10,7 @@ To define security roles, you can do the following.
 
 1.	Import data into your Power BI Desktop report, or configure a DirectQuery connection.
 
-    > **Note:** You cannot define roles within Power BI Desktop for Analysis Services live connections. You will need to do that within the Analysis Services model.
+    > [AZURE.NOTE] You cannot define roles within Power BI Desktop for Analysis Services live connections. You will need to do that within the Analysis Services model.
 
 2.	Select the **Modeling** tab.
 
@@ -26,7 +26,7 @@ To define security roles, you can do the following.
 6.	Select the table that you want to apply a DAX rule.
 7.	Enter the DAX expressions. This expression should return a true or false. For example: [Entity ID] = “Value”.
 
-    > **Note:** You can use *username()* within this expression. Be aware that *username()* will have the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service, it will be in the format of the user's UPN.
+    > [AZURE.NOTE] You can use *username()* within this expression. Be aware that *username()* will have the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service, it will be in the format of the user's UPN.
 
     ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 
