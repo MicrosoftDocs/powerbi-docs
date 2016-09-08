@@ -63,9 +63,9 @@ Connect to the Power BI content pack for [ServiceNow Incidents](https://app.powe
 
 ## System requirements
 
-To connect you will need:
--	An account that can access yourorganization.service-now.com with Basic authentication (Single Sign-On is not supported in this version)
--	The account must have rest_service role and read access to incident table
+To connect you will need:  
+-	An account that can access yourorganization.service-now.com with Basic authentication (Single Sign-On is not supported in this version)  
+-	The account must have rest_service role and read access to incident table  
 
 ## Troubleshooting
 
