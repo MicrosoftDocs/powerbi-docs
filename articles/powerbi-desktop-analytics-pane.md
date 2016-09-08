@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
+   ms.date="09/08/2016"
    ms.author="davidi"/>
 
 
@@ -76,6 +76,37 @@ There are all sorts of interesting insights you can highlight by creating dynami
 
 We're planning more features and capabilities, including expanding which visuals can have dynamic reference lines applied to them, so check back often for what's new.
 
+## Limitations
+
+The ability to use dynamic reference lines is based on the type of visual being used. The following list shows which dynamic lines are currently available for which visuals:
+
+Full use of dynamic lines are available on the following visuals:
+
+-   Area chart
+-   Line chart
+-   Scatter chart
+-   Clustered Column chart
+-   Clustered Bar chart
+
+The following visuals can use only a *constant line* from the **Analytics** pane:
+
+-   Stacked Area
+-   Stacked Bar
+-   Stacked Column
+-   100% Stacked Bar
+-   100% Stacked Column
+
+For the following visuals, a *trend line* is currently the only option:
+
+-   Non-stacked Line
+-   Clustered Column chart
+
+Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the **Analytics** pane, such as:
+
+-   Matrix
+-   Pie chart
+-   Donut
+-   Table
 
 
 ## More Information

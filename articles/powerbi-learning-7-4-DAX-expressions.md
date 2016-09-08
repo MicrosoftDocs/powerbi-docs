@@ -19,7 +19,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2016"
+   ms.date="09/09/2016"
    ms.author="davidi"/>
 
 # Using variables in DAX expressions

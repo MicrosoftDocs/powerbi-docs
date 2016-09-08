@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/02/2016"
+   ms.date="09/08/2016"
    ms.author="davidi"/>
 
 # Publish from Power BI to the web
@@ -84,7 +84,7 @@ The embed code you receive after you Publish to web will look like the following
 
 You can edit the width and height manually to ensure it is precisely how you want it to fit onto the page into which you're embedding it.
 
-To achieve a more perfect fit, you can try adding 56 pixels to the height dimension of the iFrame. This accomodates the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing. 
+To achieve a more perfect fit, you can try adding 56 pixels to the height dimension of the iFrame. This accomodates the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
 
 |Ratio|Size|Dimension (Width x Height)|
 |---|---|---|
@@ -109,7 +109,7 @@ Once you create a **Publish to web** embed code, you can manage the codes you cr
     ![](media/powerbi-service-publish-to-web/Publish_To_Web9.png)
 
 3.  For each **Publish to web** embed code in the list, you can either retrieve the embed code, or delete the embed code and thus make any links to that report or visual no longer work.
-    
+
     ![](media/powerbi-service-publish-to-web/Publish_To_Web10.png)
 
 4.  If you select **Delete**, you’re asked if you’re sure you want to delete the embed code.
@@ -173,7 +173,7 @@ To report a concern, select the **flag** icon in the bottom bar of the Publish t
 
 ## Licensing and Pricing
 
-You need to be a Microsoft Power BI user to use **Publish to web**. The consumers of your report (the readers, viewers) do not need to be Power BI users. 
+You need to be a Microsoft Power BI user to use **Publish to web**. The consumers of your report (the readers, viewers) do not need to be Power BI users.
 
 ## How it works (technical details)
 
