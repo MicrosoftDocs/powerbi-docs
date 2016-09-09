@@ -17,20 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="09/09/2016"
    ms.author="asaxton"/>
 
 # Spark on HDInsight with DirectQuery
 
 Spark on Azure HDInsight with DirectQuery allows you to create dynamic reports based on data and metric you already have in your Spark cluster. With DirectQuery, queries are sent back to your Azure HDInsight Spark cluster as you explore the data in the report view. This experience is suggested for users who are familiar with the entities they connect to.
 
-> NOTE
->  
->-   Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
->-   Tiles are refreshed every 15 mins.
->-   Q&A is not available for DirectQuery datasets.
->-   Schema changes are not picked up automatically.
->-   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+> [AZURE.WARNING] Automatic tile refresh has been disabled for dashboard tiles built on Spark based datasets. You can select **Refresh Dashboard Tiles** to refresh manually. Reports are not impacted and should remain up-to-date. 
+
+-   Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
+-   Q&A is not available for DirectQuery datasets.
+-   Schema changes are not picked up automatically.
+-   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.  Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
 
