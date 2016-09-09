@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="09/08/2016"
    ms.author="davidi"/>
 
 # Histograms  
@@ -29,13 +29,10 @@ There are several ways to build histograms in Power BI. We'll start with the sim
 To get started, determine which query has the field you want to build a histogram on.  Use the *Reference* option for the query to create a new query and name it *FieldName Histogram*. Use the **Group by** option in the **Transform** ribbon and select the **count rows** aggregate. Ensure the data type is a number for the resulting aggregate column. Then you can visualize this data on the reports page. This approach is fast and easy to build, but doesn't work well if you have many data points and does not allow brushing across visuals.
 
 ## Defining buckets to build a histogram
-Determine which query has the field you want to build a histogram on. Use the *Reference* option for the query to create a new query and name it *FieldName*.  Now define the buckets with a rule. Use the **Add Custom Column** option on the **Add Column** ribbon and build a custom rule. A simple bucketing rule might look like this:  
+Determine which query has the field you want to build a histogram on. Use the *Reference* option for the query to create a new query and name it *FieldName*.  Now define the buckets with a rule. Use the **Add Custom Column** option on the **Add Column** ribbon and build a custom rule.
 
-    if([FieldName] \< 2) then "\<2 min" else  
-    if([FieldName] \< 5) then "\<5 min" else  
-    if([FieldName] \< 10) then "\<10 min" else  
-    if([FieldName] \< 30) then "\<30 min" else  
-    "longer")  
+![](media/powerbi-service-histograms/powerbi-service-histograms_1.png)
+
 
 Ensure the data type is a number for the resulting aggregate column. Now you can use the group by technique described in **Simple Histograms** (earlier in this article) to achieve the histogram. This option handles more data points but still does not help with brushing.
 

@@ -34,6 +34,8 @@ Selecting **More…** from the **Most Common** menu displays the **Get Data** wi
 
 ![](media/powerbi-desktop-data-sources/DataSources_GetData.png)
 
+
+
 ## Data Sources
 
 Data types are organized in the following categories:
@@ -153,6 +155,8 @@ The **Other** category provides the following data connections:
 The following image shows the **Get Data** window for **Other**.
 
 ![](media/powerbi-desktop-data-sources/PBID_GetDataOther2.png)
+
+> **Note:** At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
 
 ## Connecting to a Data Source
 

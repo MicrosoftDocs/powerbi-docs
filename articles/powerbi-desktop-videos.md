@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="09/08/2016"
    ms.author="davidi"/>
 # Power BI Desktop videos
 

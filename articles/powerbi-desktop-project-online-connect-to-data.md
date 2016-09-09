@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="09/08/2016"
    ms.author="davidi"/>
 
 # Project Online: connect to data through Power BI Desktop
@@ -26,14 +26,14 @@ You can connect to data in Project Online through Power BI Desktop.
 
 ### Step 1: Download Power BI Desktop
 
-1.  [Download Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521662), and run the installer to get Power BI Desktop installed on your computer.
+1.  [Download Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521662), then run the installer to get **Power BI Desktop** on your computer.
 
 
 ### Step 2: Connect to Project Online with OData
 
-1.  Open **Power BI Desktop** on your computer.
+1.  Open **Power BI Desktop**.
 
-2.  On the Welcome screen, select **﻿Get Data.**﻿
+2.  On the *Welcome* screen, select **﻿Get Data.**﻿
 
 3.  Choose **﻿OData feed**﻿ and select **﻿Connect**﻿.
 
