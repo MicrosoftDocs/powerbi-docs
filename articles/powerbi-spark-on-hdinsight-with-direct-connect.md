@@ -26,8 +26,7 @@ Spark on Azure HDInsight with DirectQuery allows you to create dynamic reports b
 
 > [AZURE.WARNING] Automatic tile refresh has been disabled for dashboard tiles built on Spark based datasets. You can select **Refresh Dashboard Tiles** to refresh manually. Reports are not impacted and should remain up-to-date. 
 
-> [AZURE.NOTE]  
->-   Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
+> [AZURE.NOTE]  -   Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
 >-   Tiles are refreshed every 15 mins.
 >-   Q&A is not available for DirectQuery datasets.
 >-   Schema changes are not picked up automatically.
