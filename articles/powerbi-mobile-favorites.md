@@ -22,7 +22,9 @@
 
 # Favorite Power BI dashboards and Reporting Services mobile reports in the Power BI apps 
 
-When you make a dashboard a *favorite* in the Power BI mobile apps, you can access it from all of your workspaces. You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page.
+When you make a dashboard a *favorite* in the Power BI mobile apps, you can access it from all of your workspaces. You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps.
+
+You can also [make a Power BI dashboard a favorite in the Power BI service](powerbi-service-favorite-dashboards.md). Then you see it on the Favorites page in the mobile app.
 
 > **Note**: The Favorites page is available in the Power BI mobile app for iOS and Windows 10 devices.
  
