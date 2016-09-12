@@ -31,16 +31,15 @@ View your favorite dashboards from all Power BI mobile apps, and manage the list
 
 **Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](powerbi-service-data-classification.md).
 
-### Android phones
-
 **Data-driven alerts**
-Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
+Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more about:
+
+* [Alerts on the Power BI app for Android phones](powerbi-mobile-set-data-alerts-in-the-android-app.md). 
+* [Alerts on the Power BI apps for iOS](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). 
+* [Alerts on the Power BI app for Windows 10 devices](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md).
 
 ### iOS on iPhones and iPads
   
-**Data-driven alerts on your iPad**
-Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
-
 **Tiles full-screen in focus mode on iPad**
 When you tap a tile on your iPad, the tile will now open full-screen in focus mode, taking advantage of the entire iPad screen size.
 
@@ -48,9 +47,6 @@ When you tap a tile on your iPad, the tile will now open full-screen in focus mo
 Manually refresh your tiles by opening the dashboard in the Power BI mobile app for iOS and pulling down from the top of the screen. 
 
 ### Windows 10 devices
- 
-**Data-driven alerts**
-Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
 
 **Full-screen and presentation modes**
 Display reports in presentation mode on Surface Hub, and display dashboards, reports, and tiles in full-screen mode on Windows 10 devices.
