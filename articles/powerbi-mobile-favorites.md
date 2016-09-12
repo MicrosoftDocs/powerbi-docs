@@ -22,16 +22,16 @@
 
 # Favorite Power BI dashboards and Reporting Services mobile reports in the Power BI apps 
 
-When you make a dashboard a *favorite* in the Power BI mobile apps, you can access it from all of your workspaces. You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps.
+When you make a dashboard a *favorite* in the Power BI mobile apps, you can access it from all of your devices, including the Power BI service. You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps.
 
 You can also [make a Power BI dashboard a favorite in the Power BI service](powerbi-service-favorite-dashboards.md). Then you see it on the Favorites page in the mobile app.
 
-> **Note**: The Favorites page is available in the Power BI mobile app for iOS and Windows 10 devices.
+> **Note**: The Favorites page is available in all the Power BI mobile apps, and you can manage your favorites in the Power BI mobile apps for iOS and Windows 10 devices.
  
 ![](media/powerbi-mobile-favorites/power-bi-mobile-favorites-no-callouts.png)
 
 ## Make a Power BI dashboard a favorite in the mobile apps
-You can make a dashboard a favorite from the list of dashboards or from the dashboard itself.
+You can make a dashboard a favorite from the list of dashboards or from the dashboard itself, in the Power BI mobile app for iOS and Windows 10 devices.
 
 * In the list of dashboards in the mobile app, tap the empty star next to the dashboard name ![](media/powerbi-mobile-favorites/power-bi-mobile-not-favorite-icon.png). The star turns yellow ![](media/powerbi-mobile-favorites/power-bi-mobile-yes-favorite-icon.png).
 
@@ -43,9 +43,9 @@ You can make a dashboard a favorite from the list of dashboards or from the dash
 
 ## View your favorite Power BI dashboards, and Reporting Services mobile reports and KPIs
 
-*   Tap the star in the left navigation bar.
+*   Tap the top navigation menu ![](media/powerbi-mobile-favorites/power-bi-windows-10-navigation-pane-icon.png), then tap **Favorites**.
 
-    ![](media/powerbi-mobile-favorites/power-bi-mobile-favorite-pane.png)
+    ![](media/powerbi-mobile-favorites/power-bi-favorites-menu.png)
 
     Now you see all your favorite Power BI dashboards, plus your favorite Reporting Services mobile reports and KPIs, together in one place.
 

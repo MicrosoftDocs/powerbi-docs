@@ -17,16 +17,23 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/30/2016"
+   ms.date="09/12/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
 
 ## August 2016
 
+### All phones
+
+**Favorites** 
+View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
+
+**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](powerbi-service-data-classification.md).
+
 ### Android phones
 
-**New data-driven alerts**
+**Data-driven alerts**
 Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
 
 ### iOS on iPhones and iPads
@@ -36,6 +43,9 @@ Get notified by an alert when your data changes in pre-set ways for KPI, gauge, 
 
 **Tiles full-screen in focus mode on iPad**
 When you tap a tile on your iPad, the tile will now open full-screen in focus mode, taking advantage of the entire iPad screen size.
+
+**Manually refresh tiles**
+Manually refresh your tiles by opening the dashboard in the Power BI mobile app for iOS and pulling down from the top of the screen. 
 
 ### Windows 10 devices
  
