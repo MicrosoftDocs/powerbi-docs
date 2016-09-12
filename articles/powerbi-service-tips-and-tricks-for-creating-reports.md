@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/17/2016"
+   ms.date="09/12/2016"
    ms.author="mihart"/>
 # Tips and tricks for creating reports in Power BI service
 
