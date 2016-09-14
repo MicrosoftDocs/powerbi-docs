@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/24/2016"
+   ms.date="09/12/2016"
    ms.author="maggies"/>
 
 # Interact with tiles in the Power BI mobile app for iOS on the iPad
@@ -31,12 +31,12 @@ Then in [the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062), you open
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
    -   In a line, bar, or column chart, drag the bar to view the values for specific parts of the visualization.  
-      ![](media/powerbi-mobile-tiles-in-the-ipad-app/pbi_ipad_tile.png)
+      ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile-focus-mode.png)
 
-        In this line chart, the values of the lines are listed for March, where the vertical bar intersects them.
+        In this column chart, the values of the columns are listed for July, where the vertical bar intersects the chart.
 
   -   In a pie chart, tap a slice of the pie to show the value of the slice at the top of the pie.  
-      ![](media/powerbi-mobile-tiles-in-the-ipad-app/pbi_ipad_tilepie.png)
+      ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile-pie.png)
 
   -   [Share a snapshot of the tile](powerbi-mobile-share-dashboards-from-the-ipad-app.md) with others.
 
