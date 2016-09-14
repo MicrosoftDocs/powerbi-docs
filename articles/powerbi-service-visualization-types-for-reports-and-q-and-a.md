@@ -93,7 +93,7 @@ For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-
 
 ###   KPIs
 
-![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-kpi.PNG)
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
 **Tip**: Displays progress toward a measurable goal.
 
