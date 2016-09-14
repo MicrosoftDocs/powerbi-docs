@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/03/2016"
+   ms.date="09/14/2016"
    ms.author="davidi"/>
 
 # Connect to an Oracle database
@@ -38,7 +38,7 @@ For **32-bit** versions of Power BI Desktop, use the following link to download 
 
 For **64-bit** versions of Power BI Desktop, use the following link to download and install the **64-bit** Oracle client:
 
--   [64-bit ODAC 12c Release 4 (12.1.0.2.4) Xcopy for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+-   [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 ## Connect to an Oracle database
 
