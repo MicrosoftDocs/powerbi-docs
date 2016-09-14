@@ -3,7 +3,7 @@
    description="What can I do with the Power BI API"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
+   authors="mgblythe"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="derrickv"/>
+   ms.author="mblythe"/>
 
 # What can developers do with Power BI?
 

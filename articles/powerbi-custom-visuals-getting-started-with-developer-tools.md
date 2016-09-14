@@ -3,7 +3,7 @@
    description="Getting Started with Developer Tools (Preview)"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
+   authors="mgblythe"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="12/17/2015"
-   ms.author="derrickv"/>
+   ms.author="mblythe"/>
 
 # Create a custom visual with the Developer Tools (Preview)
 
