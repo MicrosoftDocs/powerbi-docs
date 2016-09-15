@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2016"
+   ms.date="09/15/2016"
    ms.author="mihart"/>
 
 
@@ -89,14 +89,13 @@ Now it's your turn. Explore Quick Insights using the Supplier Quality Analysis s
 Instead of searching for insights against an entire dataset, narrow your search to the data used to create a single dashboard tile. This is referred to as **Scoped Quick Insights**.
 
 1. [Open the tile in Focus mode](/powerbi-service-display-dash-in-focus-mode.md).
-
 2. In the top right corner, select **Get Insights**.
 
-  ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
+    ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
 
 3. Power BI displays the insight cards along the right side of the tile.
 
-  ![](media/powerbi-service-auto-insights/pbi-insights-tile.png)
+    ![](media/powerbi-service-auto-insights/pbi-insights-tile.png)
 
 4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.
 
