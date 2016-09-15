@@ -3,7 +3,7 @@
    description="Power BI get started with third party apps"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
+   authors="mgblythe"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="04/20/2016"
-   ms.author="derrickv"/>
+   ms.author="mblythe"/>
 
 # Get started with third party apps
 

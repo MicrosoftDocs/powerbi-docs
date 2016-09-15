@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/24/2016"
+   ms.date="09/12/2016"
    ms.author="maggies"/>
 
 # Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)  
@@ -26,26 +26,29 @@ When you share a tile from the [iPad app for Microsoft Power BI](http://go.micr
 
 You can add annotations — lines, text, or stamps — to a tile before you share a snapshot.
 
-1.  Tap a tile to interact with it.
+1.  Tap a tile to open it in focus mode.
 
-2.  Tap  **Annotate & Share** in the lower-left corner of the tile.
+    ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-bubble-tile-focus-mode.png)
+
+
+2.  Tap the yellow box ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_AnnotSend.png) in the upper-right corner of the tile.
 
 3.  To annotate the tile, in the Edit window:  
     ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_AnnotateIcons.png)
 
-    -   Tap the pencil icon to draw lines of different colors and thicknesses, then tap the arrow in the lower-left corner.  
-        ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_AnnotPaint.png)
+    -   To draw lines of different colors and thicknesses, tap the paintbrush icon, then tap the arrow in the lower-left corner.  
+        ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-tile-scribble.png)
 
-    -   Tap the **A** to type comments, then tap the arrow in the black bar at the center.  
-        ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_AnnotWrite.png)
+    -   To type comments, tap the **A**, then tap the arrow on the left end of the black bar at the center.  
+        ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-tile-comment.png)
 
-    -   Tap the smiley face to paste stamps (like emoticons) on the tile, then tap the arrow in the lower-left corner.   
-        ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_AnnotSmiley.png)
+    -   To paste stamps (like emoticons) on the tile, tap the smiley face, then tap the arrow in the lower-left corner.   
+        ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-tile-stamp.png)
 
     -   After annotating, tap the yellow box ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_AnnotSend.png) in the upper-right corner to send.
 
 4.  Tap the Mail icon, type the recipients' names, and modify the message, if you want.  
-    ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_SendSnapTile.png)
+    ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-tile-mail.png)
 
 5.  Tap **Send**.
 
