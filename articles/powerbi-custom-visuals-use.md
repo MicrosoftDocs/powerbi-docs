@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="09/12/2016"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
@@ -59,7 +59,9 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
     ![](media/powerbi-custom-visuals-use/VisualUse.png)
 
-6. Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
+6. Select the custom visual template to add it to your report as you would with any of the other templates in the Visualizations pane. Add fields and filters and build your visual.
+
+7.  Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
 
 ### See also
 

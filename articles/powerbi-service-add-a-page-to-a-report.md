@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="09/12/2016"
    ms.author="mihart"/>
 
 # Add a page to a Power BI report  
@@ -29,7 +29,7 @@ Select the yellow plus icon and then type a new name for the page.
 ![](media/powerbi-service-add-a-page-to-a-report/reorderPages2.gif)
 
 ## Duplicate a page
-From the top control bar, select the **Duplicate this page** icon.
+From the top control bar, in [Editing mode](powerbi-service-interact-with-a-report-in-editing-view.md), select the **Duplicate this page** icon.
 
 ![](media/powerbi-service-add-a-page-to-a-report/PBI_duplicate.png)
 
