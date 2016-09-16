@@ -3,7 +3,7 @@
    description="Template Content Pack Experiences"
    services="powerbi" 
    documentationCenter="" 
-   authors="theresapalmer" 
+   authors="guyinacube" 
    manager="mblythe" 
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="tpalmer"/>
+   ms.author="asaxton"/>
 
 # Template Content Pack Experiences 
 This section highlights a typical experience for a user connecting to an ISV [content pack](powerbi-content-packs-services.md). 
