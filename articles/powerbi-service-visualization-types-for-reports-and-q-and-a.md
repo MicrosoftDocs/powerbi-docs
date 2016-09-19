@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2016"
+   ms.date="09/17/2016"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
