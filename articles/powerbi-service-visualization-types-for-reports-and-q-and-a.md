@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
+   ms.date="09/17/2016"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -38,6 +38,7 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 
  ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_col.png)
 
+**Tip**: Bar charts are the standard for looking at a specific value across different categories.
 
 ### Basic (Layered) and Stacked Area charts
 
@@ -90,6 +91,13 @@ For more information, see [Tutorial: Funnel Charts in Power BI](powerbi-service-
 
 For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-tutorial-radial-gauge-charts.md).
 
+###   KPIs
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
+
+**Tip**: Displays progress toward a measurable goal.
+
+For more information, see [Tutorial: KPIs in Power BI](powerbi-service-tutorial-kpi.md).
 
 ### Line charts
 

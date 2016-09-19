@@ -1,6 +1,6 @@
 <properties
    pageTitle="Auditing Power BI in your organization"
-   description="Auditing Power BI enables you to achieve increased transparency by monitoring and investigating actions taken on all the Power BI artifacts in your organization. Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, such as meeting regulatory compliance and records management."
+   description="Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,15 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="09/16/2016"
    ms.author="asaxton"/>
 # Auditing Power BI in your organization
 
-Auditing Power BI enables you to achieve increased transparency by monitoring and investigating actions taken on all the Power BI artifacts in your organization. Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, such as meeting regulatory compliance and records management.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell.
+
+Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, such as meeting regulatory compliance and records management.
 
 You can filter the audit data by date range, user, dashboard, report, dataset and activity type. You can also download the activities in a csv (comma separated value) file to analyze offline.
 
-> **Note**: The auditing feature in Power BI is in preview and is only available in the United States currently.
+> [AZURE.NOTE] The auditing feature in Power BI is in preview and is only available in the United States currently.
 
 ## Enabling auditing functionality in the Power BI admin portal
 
@@ -49,13 +53,13 @@ Power BI will start logging various activities that your users perform in Power 
 
 ## Licensing requirements
 
-Auditing is a Power BI Pro feature and auditing events are only available for Power BI Pro users.  Users with Power BI free licenses will not appear in auditing logs. 
+Auditing is a Power BI Pro feature and auditing events are only available for Power BI Pro users.  Users with Power BI (free) licenses will be displayed as **Free User**.
 
 For more information on how you can acquire and assign Power BI Pro licenses to users in your organization, see [Purchasing Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md).
 
 For more information on how to restrict free users from signing up, see [Enable, or disable, individual user sign up in Azure Active Directory](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory).
 
-> **Note**: To enable licensing for Power BI in your tenant, you need at least one exchange mailbox license in your tenant.
+> [AZURE.NOTE] To enable auditing for Power BI in your tenant, you need at least one exchange mailbox license in your tenant.
 
 ## Accessing your audit logs
 
@@ -75,6 +79,8 @@ To audit your Power BI logs, you must visit the O365 Security & Compliance Cente
 
 Alternatively, you can browse to [Office 365 | Security & Compliance](https://protection.office.com/#/unifiedauditlog).
 
+> [AZURE.NOTE] To provide non-administrator accounts with access to the audit log, you will need to assign permissions within the Exchange Online Admin Center. For example, you could assign a user to an existing role group, such as Organization Management, or you could create a new role group with the Audit Logs role. For more information, see [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+
 ## Search only Power BI activities
 
 You can restrict results to only Power BI activities by doing the following.
@@ -93,7 +99,7 @@ Your searches will now be filtered to only Power BI activities.
 
 You can search the logs by date range using the “Start date” and “End date” field. The last seven days are selected by default. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
 
-> **Note**: If you're using the maximum date range of 90 days, select the current time for the Start date. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the maximum date range can't start before the date that auditing was turned on.
+> [AZURE.NOTE] If you're using the maximum date range of 90 days, select the current time for the Start date. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the maximum date range can't start before the date that auditing was turned on.
 
 ![](media/powerbi-admin-auditing/search-audit-log-by-date.png)
 
@@ -108,7 +114,7 @@ Leave this box blank to return entries for all users (and service accounts) in y
 
 Once you hit the search button, the search results are loaded and after a few moments they are displayed under Results. When the search is finished, the number of results found is displayed. 
 
-> **Note**: A maximum of 1000 events will be displayed; if more than 1000 events meet the search criteria, the newest 1000 events are displayed.
+> [AZURE.NOTE] A maximum of 1000 events will be displayed; if more than 1000 events meet the search criteria, the newest 1000 events are displayed.
 
 The results contain the following information about each event returned by the search.
 
@@ -121,7 +127,7 @@ The results contain the following information about each event returned by the s
 |Item|The object that was created or modified as a result of the corresponding activity. For example, the file that was viewed or modified or the user account that was updated. Not all activities have a value in this column.|
 |Detail|Additional detail about an activity. Again, not all activities will have a value.|
 
-> **Note**: Select a column header under Results to sort the results. You can sort the results from A to Z or Z to A. Click the Date header to sort the results from oldest to newest or newest to oldest.
+> [AZURE.NOTE] Select a column header under Results to sort the results. You can sort the results from A to Z or Z to A. Click the Date header to sort the results from oldest to newest or newest to oldest.
 
 ## View the details for an event
 
@@ -143,78 +149,24 @@ Here are some possible details that are displayed.
 |UserId|The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, my_name@my_domain_name. Note that records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included.|
 |ClientIp|The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.|
 
-## List of activities audited by Power BI
+## Using PowerShell to search
 
-### CreateGroup
-This activity is fired every time a group is created. 
+You can use PowerShell to access the audit logs based on your login. This is done by accessing Exchange Online. Here is an example of a command to pull Power BI audit log entries.
 
-|**Parameter**|**Definition**|
-|---|---|
-|ItemName|Name of the group that was created.|
+```
+Set-ExecutionPolicy RemoteSigned
+ 
+$UserCredential = Get-Credential
+ 
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+ 
+Import-PSSession $Session
+Search-UnifiedAuditLog -StartDate 9/11/2016 -EndDate 9/15/2016 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
+```
 
-### AddGroupMembers
+For more information on connecting to Exchange Online, see [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx).
 
-This activity is logged every time a member is added to a Power BI group workspace.
-
-|**Parameter**|**Definition**|
-|---|---|
-|ItemName|Name of the group to which members were added.|
-|AddedMembers|Email addresses of the members who were added.|
-
-### CreateDashboard
-
-This activity is logged every time a new dashboard is created.
-
-|**Parameter**|**Definition**|
-|---|---|
-|ItemName|Name of the dashboard that was created.|
-
-### EditDashboard
-
-This activity is logged every time a dashboard is renamed.
-
-|**Parameter**|**Definition**|
-|---|---|
-|ItemName|Name of the dashboard which was renamed.|
-
-### DeleteDashboard
-
-This activity is logged every time a dashboard is deleted.
-
-|**Parameter**|**Definition**|
-|---|---|
-|ItemName|Name of the dashboard that was deleted.|
-
-### ShareDashboard
-
-This activity is logged every time a dashboard is shared.
-
-|**Parameter**|**Definition**|
-|---|---|
-|ItemName|Name of the dashboard that was shared.|
-|RecipientEmail|Email addresses of the recipients of the dashboard.<br><br>**Note**: This would also contain email addresses of any external recipients that the dashboard was shared with.|
-|DatasetName|Names of the datasets associated with this shared dashboard.|
-|ResharePermission|Denotes whether the dashboard was shared with re-share permissions.|
-|UserAgent|UserAgent of the device from which the dashboard was shared.|
-
-### DeleteReport
-
-This activity is logged every time a report is deleted.
-
-|**Parameter**|**Definition**|
-|---|---|
-|ItemName|Name of the dataset that was deleted.|
-
-### CreateOrgApp
-
-This activity is logged every time an organizational content pack is created.
-
-|**Parameter**|**Definition**|
-|---|---|
-|ItemName|Name of the organizational content pack that was created.|
-|DashboardName|Names of the dashboards that were included in the organizational content pack.|
-|ReportName|Names of the reports that were included in the organizational content pack.|
-|DatasetName|Names of the datasets that were included in the organizational content pack.|
+For more information about parameters and usage of the Search-UnifiedAuditLog command, see [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx).
 
 ## Export the Power BI audit log
 
@@ -226,8 +178,41 @@ You can export the Power BI audit log to a csv file.
 
     ![](media/powerbi-admin-auditing/export-auditing-results.png)
 
+## Record and user types
+
+Audit log entries will have a RecordType and UserType as part of the details for the entry. All Power BI entries will have a RecordType of 20.
+
+For a full listing, see [Detailed properties in the Office 365 audit log](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+
+## List of activities audited by Power BI
+
+|Activity|Description|Additional details|
+|---|---|---|
+|CreateDashboard|This activity is logged every time a new dashboard is created.|- Dashboard name.|
+|EditDashboard|This activity is logged every time a dashboard is renamed.|- Dashboard name.|
+|DeleteDashboard|This activity is logged every time a dashboard is deleted.|- Dashboard name.|
+|PrintDashboard|This event is logged every time that a dashboard is printed.|- Dashboard name.<br/>- Dataset name|
+|ShareDashboard|This activity is logged every time a dashboard is shared.|- Dashboard name.<br/>-Recipient Email.<br/>- Dataset name.<br>- Reshare permissions.|
+|ViewDashboard|This activity is logged every time a dashboard is viewed.|- Dashboard name.|
+|ExportTile|This event is logged every time data is exported from a dashboard tile.|- Tile name.<br/>- Dataset name.|
+|DeleteReport|This activity is logged every time a report is deleted.|- Report name.|
+|ExportReport|This event is logged every time data is exported from a report tile.|- Report name.<br/>- Dataset name.|
+|PrintReport|This event is logged every time that a report is printed.|- Report name.<br/>- Dataset name.|
+|PublishToWebReport|This event is logged every time that a report is Published To Web.|- Report Name.<br/>- Dataset name.|
+|ViewReport|This activity is logged every time a report is viewed.|- Report name.|
+|ExploreDataset|This event is logged every time you explore a dataset by selected it.|- Dataset name|
+|DeleteDataset|This event is logged every time a dataset is deleted.|- Dataset name.|
+|CreateOrgApp|This activity is logged every time an organizational content pack is created.|- Organizational Content Pack name.<br/>- Dashbaord names.<br/>- Report names.<br/>- Dataset names.|
+|CreateGroup|This activity is fired every time a group is created.|- Group name.|
+|AddGroupMembers|This activity is logged every time a member is added to a Power BI group workspace.|- Group name.<br/>- Email addresses.|
+|UpdatedAdminFeatureSwitch|This event is logged every time an admin feature switch is changed.|- Switch name.<br/>- New switch state.|
+
 ## See also
 
-[Power BI Admin Portal](powerbi-admin-portal.md)
-
-[Purchasing Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md)
+[Power BI Admin Portal](powerbi-admin-portal.md)  
+[Purchasing Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md)  
+[Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx)  
+[Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)  
+[Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx)  
+[Detailed properties in the Office 365 audit log](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

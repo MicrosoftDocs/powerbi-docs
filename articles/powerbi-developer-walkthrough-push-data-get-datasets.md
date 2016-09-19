@@ -3,7 +3,7 @@
    description="Walkthrough to push data - Get a dataset to add rows into a Power BI table"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="derrickv"/>
+   ms.author="asaxton"/>
 
 # Step 4: Get a dataset to add rows into a Power BI table
 

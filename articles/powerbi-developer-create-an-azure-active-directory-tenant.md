@@ -3,7 +3,7 @@
    description="Create an Azure Active Directory tenant"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="derrickv"/>
+   ms.author="asaxton"/>
 
 # Create an Azure Active Directory tenant
 
