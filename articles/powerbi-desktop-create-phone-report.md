@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Create reports optimized for the Power BI phone apps"
-   description="Learn how to create a special report layout in Power BI Desktop for the Power BI phone apps."
+   description="Learn how to optimize report pages in Power BI Desktop for the Power BI phone apps."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/16/2016"
+   ms.date="09/19/2016"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
 
-When you [create a report in Power BI Desktop](powerbi-desktop-report-view.md), you can improve how it looks on phones by creating a special phone version of the report. You can adapt your report for the phone, rearranging and resizing visuals, maybe not including all of them, for an optimal experience on a phone.  
+When you [create a report in Power BI Desktop](powerbi-desktop-report-view.md), you can improve how it looks on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience.  
 
 ![](media/powerbi-desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -71,7 +71,7 @@ After you [create a report in Power BI Desktop](powerbi-desktop-report-view.md),
     
     ![](media/powerbi-desktop-create-phone-report/05_Removing_a_vis.gif)
 
-## Slicers 
+## Enhance slicers to to work well in phone reports
 Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in phone reports:
 
 - Decide if report readers can select only one or more than one item.
@@ -80,12 +80,12 @@ Slicers offer on-canvas filtering of report data. When designing slicers in the 
 
 Read more about [creating slicers in the Power BI service](powerbi-learning-3-4-create-slicers.md).
 
-## Publishing a phone report
-- To expose the phone version of the report in the Power BI mobile app, [publish your report from Power BI Desktop to the Power BI service](powerbi-desktop-upload-desktop-files.md).
+## Publish a phone report
+- To publish the phone version of a report, you [publish the main report from Power BI Desktop to the Power BI service](powerbi-desktop-upload-desktop-files.md), and the phone version publishes at the same time.
 
-Read more about [sharing and permissions in Power BI](powerbi-service-how-should-i-share-my-dashboard.md).
+    Read more about [sharing and permissions in Power BI](powerbi-service-how-should-i-share-my-dashboard.md).
 
-## Optimized and non-optimized reports on a phone 
+## View optimized and non-optimized reports on a phone 
 
 In the mobile apps on phones, Power BI automatically detects optimized and non-optimized phone reports. If a phone-optimized report exists, the Power BI phone app automatically opens the report in phone report mode.
 
@@ -97,43 +97,21 @@ If you only optimize some pages, readers will see a message in portrait view, in
 
 ![](media/powerbi-desktop-create-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 
-They can turn their phones sideways to see the page in landscape mode.
+Report readers can turn their phones sideways to see the page in landscape mode.
 
 ## Interact with optimized phone reports on a phone
 
-### Scroll in a report
-You can scroll to view the entire report. When you scroll, the top bar and action menu collapse to make more room for content.
+You can scroll in a phone report, cross-highlight and select visuals, and open visuals in focus mode. Read more about what it's like to [interact with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md).
 
-### Cross-highlight
-Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
-
-Read more about [filtering and highlighting in Power BI](powerbi-service-about-filters-and-highlighting-in-reports.md).
-
-### Select visuals
-In phone reports when you select a visual, the phone report highlights that visual and focuses on it, neutralizing canvas gestures.
-
-With the visual selected, you can do things like scroll within the visual. To de-select a visual, just touch anywhere outside the visual area.
-
-### Open visuals in focus mode
-Phone reports offer a focus mode, so you can focus on a single visual to get a bigger view of the visual and explore the visual and the report.
-
-What you do in focus mode carries over to the report canvas and vice versa, for a seamless exploration experience.
-
-Some actions are only possible in focus mode, due to screen size constraints:
-
-- **Drill down**, then back up into the information displayed in the visual, if hierarchy levels are defined.
-    Read more about [drilling down and up](powerbi-service-drill-down-in-a-visualization.md) in Power BI.
-- **Sort** the values in the visual.
-- **Revert**: Clear exploration steps you've taken on a visual and revert to the definition set when the report was created.
-
-    Revert is available at the report level, clear all exploration from all visuals, or at the visual level, clearing all exploration from the specific visual selected.  
-
-
-## Scaling the report
-Power BI phone reports uses a concept called “virtual pixels” to ensure an optimized experience across various devices, screen sizes, and form factors.  
+## How visuals scale in a phone report
+Power BI phone reports use a concept called “virtual pixels” to ensure an optimized experience across various devices, screen sizes, and form factors.  
 
 When creating a phone report, visuals are aligned to a grid. In the grid, some aspects such as square size are relative to the size of the screen, and other aspects such as side spacing are constant.
 This allows the grid to scale correctly across different screen sizes.
 
-For example, the size of a grid “square” on an iPhone SE will be ~xx pixels. The same square on an iPhone 6s Plus will be ~YY pixels. This means that the phone report you create will scale well on all modern phones.    
+For example, the size of a grid “square” on an iPhone SE will be ~xx pixels. The same square on an iPhone 6s Plus will be ~YY pixels. Thus, the phone report you create will scale well on all modern phones.    
+
+### See also
+- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+- [View Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
 
