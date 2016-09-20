@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2016"
+   ms.date="09/19/2016"
    ms.author="mihart"/>
 
 
@@ -25,11 +25,11 @@
 
 Ask natural language questions in Cortana and find answers from data stored in Power BI.
 
->**NOTE**: Cortana for Power BI is currently only available in English.
+>**NOTE**: Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
 
 ## How do Cortana and Power BI work together?
 
-With the November 2015 update of Windows 10, Cortana can now find answers from data stored in Power BI through the integration between Cortana and Power BI. To use Cortana to get answers from Power BI, all that is required is to add the work or school account you use with Power BI to Windows 10 and you'll have access to datasets in Power BI that are enabled for Cortana.
+With the November 2015 update of Windows 10, Cortana can now find answers from data stored in Power BI through the integration between Cortana and Power BI.
 
 Similar to Power BI Q&A, ask or type your questions using natural language. Cortana will search your Cortana-enabled datasets in Power BI for answers and display results directly in your Windows 10 device.   
 
@@ -37,21 +37,17 @@ Cortana can find answers either directly from datasets in Power BI or from repor
 
 >**NOTE**: Cortana now works with on-premises data that has been [enabled for Q&A](powerbi-service-q-and-a-direct-query.md).
 
-Cortana ranks the answers from Power BI, giving you one or more best matches if there is high confidence a result is a good answer. Other potential answers from Power BI are listed in a Power BI section below any best matches. If you're a dataset owner, you can help Cortana return better answers by creating specialized reports (called *Answer Pages*) for Cortana in Power BI Desktop to answer the most-common questions and by optimizing your model for Power BI Q&A.
+Cortana ranks the answers from Power BI, giving you one or more best matches if there is high confidence a result is a good answer. Other potential answers from Power BI are listed in a Power BI section below any best matches. If you're a dataset owner, you can help Cortana return better answers by [creating specialized reports (called *Answer Pages*) for Cortana](powerbi-service-cortana-desktop-entity-cards.md) in Power BI to answer the most-common questions and by optimizing your model for Power BI Q&A.
 
 ## How do I get started?
 
 - Cortana looks for answers in Power BI datasets that you have access to. If you are a dataset owner, [enable Cortana to access the dataset (and its reports)](powerbi-service-cortana-enable.md).  
-
-- Answers from Power BI in Cortana need to be [enabled in Windows 10](powerbi-service-cortana-enable.md).
 
 - If you are a dataset owner, [create Answer Pages designed specifically for Cortana](powerbi-service-cortana-desktop-entity-cards.md).
 
 ## Tips for using Power BI with Cortana
 
 ### Before you begin
-
-In order to ask questions about your Power BI data, you'll need to [activate Cortana on Windows 10](powerbi-service-cortana-enable.md).  
 
 In Power BI, you can work with datasets that you own or that have been shared with you. To access those same datasets in Cortana, a dataset owner must [enable each  dataset for Cortana](powerbi-service-cortana-enable.md).  
 
@@ -71,11 +67,11 @@ Any Power BI user can use Cortana to ask questions about their Power BI datasets
 
 ### Other Tips
 
+-  If the report has a filter, Cortana will understand questions that specify items in the filter's list, and apply the filter on-the-fly.
+
 - Cortana will only search for answers in Power BI if the question has 2 or more words.
 
 - If you add the word "my" to your question, Cortana searches available datasets for answers that contain information found in your Windows 10 profile (the information you see when you click on your picture).
-
-
 
 ## See also
 [Enable Cortana for Power BI](powerbi-service-cortana-enable.md)
