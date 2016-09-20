@@ -54,14 +54,14 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
   ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
-    For example, if you ask Cortana:
+  For example, if you ask Cortana:
 
   - "show sales by store name," this Answer Page will not appear because you did not include any of the items in the required page level filter.
 
   - "show sales for Cary Lindseys and Charlotte Lindseys," this Answer Page will not appear because you specified more than one item from the required page level filter.
 
   - "show sales for Charlotte Lindseys," this Answer Page will display.
-
+  
 7. Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 Now, asking a question including the name of a Cortana-sized page will return results from Cortana.

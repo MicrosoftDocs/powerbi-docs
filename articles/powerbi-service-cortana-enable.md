@@ -50,9 +50,9 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 
     In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
 
-  >**NOTE**: When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+    >**NOTE**: When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
 
-  >**IMPORTANT**: If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you will need to re-publish for your colleagues to also be able to use it with Cortana.
+    >**IMPORTANT**: If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you will need to re-publish for your colleagues to also be able to use it with Cortana.
 
 5. Determine which Windows 10 version you are running. Check which version you have by selecting **Settings** > **System** > **About**.
 
@@ -63,11 +63,11 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 6. Add your work or school account for Cortana.
    -  Open Windows Settings > Accounts.
 
-       ![](media/powerbi-service-cortana-enable/power-bi-windows-accounts.png)
+         ![](media/powerbi-service-cortana-enable/power-bi-windows-accounts.png)
 
    -  Scroll to the bottom and select **Add a work or school account**.
 
-      ![](media/powerbi-service-cortana-enable/power-bi-add-work-account.png)
+         ![](media/powerbi-service-cortana-enable/power-bi-add-work-account.png)
 
 7. On the **Accounts** page, scroll to the bottom where you'll see **Add a Microsoft account**.
       ![](media/powerbi-service-cortana-enable/power-bi-add-microsoft-account.png)
