@@ -51,7 +51,6 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
     >TIP: To improve results, avoid using words that are also column names.
 
 6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.  
-
   ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
   For example, if you ask Cortana:
 
@@ -61,9 +60,9 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
   - "show sales for Charlotte Lindseys," this Answer Page will display.
 
-7. Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
-
 Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
+
+>IMPORTANT:Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 ## How does Cortana order the results?
 
