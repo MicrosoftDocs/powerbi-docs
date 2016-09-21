@@ -41,7 +41,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 <!-- Refresh Data sources-->
 [AZURE.INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
-> **Note:** A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
+> [AZURE.NOTE] A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
 
 ## OneDrive or OneDrive for Business. What’s the difference?  
 If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
@@ -68,7 +68,7 @@ When you setup a refresh schedule this way, the only difference is refreshed dat
 ## How do I make sure data is loaded to the Excel data model?  
 When you use Power Query (Get & Transform data in Excel 2016) to connect to a data source, you have several options where to load the data. To make sure you load data into the data model, you must select the **Add this data to the Data Model** option in the **Load To** dialog box.
 
-> **Note**: The images here show Excel 2016.
+> [AZURE.NOTE] The images here show Excel 2016.
 
 In **Navigator**, click **Load To…**  
 	![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_1.png)
@@ -102,3 +102,5 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
 
 [Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

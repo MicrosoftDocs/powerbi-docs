@@ -286,5 +286,8 @@ public class PBITile
     public string embedUrl { get; set; }
 }
 ```
+
 ## See also
-[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
+
+[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

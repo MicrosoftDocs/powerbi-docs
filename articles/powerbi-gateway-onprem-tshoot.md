@@ -282,16 +282,11 @@ GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 
 ## See also
 
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
-
-[On-premises Data Gateway](powerbi-gateway-onprem.md)
-
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)
-
-[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
-
-[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
-
-[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
-
-[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
+[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

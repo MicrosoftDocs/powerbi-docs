@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/13/2016"
+ms.date="09/21/2016"
 ms.author="asaxton"/>
 # Power BI (free) in your organization
 
@@ -53,7 +53,7 @@ Once the Power BI (free) license block is available, you can assign those licens
 
 5.	Enter the number of licenses you would like to add and select **Check out now** or **Add to cart**.
 
-    > **Note**: You can add more at a later date if needed.
+    > [AZURE.NOTE] You can add more at a later date if needed.
 
 6.	Enter the needed information in the check out flow.
 
@@ -86,10 +86,10 @@ The AAD setting that controls this is **AllowAdHocSubscriptions**. Most tenants 
 
         Set-MsolCompanySettings -AllowAdHocSubscriptions $true
 
-> **Note**: This blocking prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization will still retain their licenses.
+> [AZURE.NOTE] This blocking prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization will still retain their licenses.
 
 ## See also
 
-[Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)
-
-[Sign up for Power BI (free) with a custom Azure Active Directory tenant](powerbi-admin-free-with-custom-azure-directory.md)
+[Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
+[Sign up for Power BI (free) with a custom Azure Active Directory tenant](powerbi-admin-free-with-custom-azure-directory.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

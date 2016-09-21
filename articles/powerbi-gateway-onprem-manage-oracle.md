@@ -174,8 +174,7 @@ For additional troubleshooting information relating to the gateway, see [Trouble
 
 ## See Also
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)
-
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

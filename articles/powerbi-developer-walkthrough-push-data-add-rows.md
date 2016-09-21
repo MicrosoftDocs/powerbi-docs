@@ -318,3 +318,5 @@ Below is the [complete code listing](#code).
             #endregion
         }
     }
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

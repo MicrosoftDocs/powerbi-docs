@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/25/2016"
+   ms.date="09/21/2016"
    ms.author="asaxton"/>
 
 # Power BI Security
@@ -38,7 +38,7 @@ The **Back End** cluster is how authenticated clients interact with the Power BI
 
 ![](media/powerbi-admin-power-bi-security/PBI_Security_v2_BackEnd_updated.png)
 
->**Important**: It is imperative to note that only **Azure API Management** (APIM) and **Gateway** (GW) roles are accessible through the public Internet. They provide authentication, authorization, DDoS protection, Throttling, Load Balancing, Routing, and other capabilities.
+> [AZURE.IMPORTANT] It is imperative to note that only **Azure API Management** (APIM) and **Gateway** (GW) roles are accessible through the public Internet. They provide authentication, authorization, DDoS protection, Throttling, Load Balancing, Routing, and other capabilities.
 
 ## Data Storage Security
 Power BI uses two primary repositories for storing and managing data: data that is uploaded from users is typically sent to **Azure BLOB** storage, and all metadata as well as artifacts for the system itself are stored in **Azure SQL Database**.

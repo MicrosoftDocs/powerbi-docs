@@ -210,9 +210,11 @@ In a .NET client app, you use **AuthenticationContext** in the **Active Director
 
 4. Choose **Active Directory Authentication Library** in the list of packages, and click **Install**.
 
-## Related topics
-- [Azure AD Authentication Library for .NET nuget package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
-- [Active Directory Authentication Library (ADAL) v1 for .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)
-- [OAuth 2.0 in Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx)
-- [Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
-- [Authentication Scenarios for Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/)
+## See also
+
+[Azure AD Authentication Library for .NET nuget package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
+[Active Directory Authentication Library (ADAL) v1 for .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)  
+[OAuth 2.0 in Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx)  
+[Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
+[Authentication Scenarios for Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

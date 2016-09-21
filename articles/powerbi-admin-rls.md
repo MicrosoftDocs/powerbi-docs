@@ -101,4 +101,5 @@ If you publish your Power BI Desktop report to a group within the Power BI servi
 
 ## See also
 
-[Row-level security (RLS) with Power BI Desktop](powerbi-desktop-rls.md)
+[Row-level security (RLS) with Power BI Desktop](powerbi-desktop-rls.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

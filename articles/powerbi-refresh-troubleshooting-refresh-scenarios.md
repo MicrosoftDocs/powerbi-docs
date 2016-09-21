@@ -24,7 +24,7 @@
 
 Here you can find information regarding different scenarios you may face when refreshing data within the Power BI service. 
 
-> **Note**: If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> [AZURE.NOTE] If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 
 ## Unsupported data source for refresh
 When configuring a dataset, you may get an error indicating the dataset uses an unsupported data source for refresh. For details, see 
@@ -44,12 +44,7 @@ For a list of errors you may encounter with dashboard tiles, and explanations, s
 
 ## See Also  
 
-[Data Refresh](powerbi-refresh-data.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
-
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
-
-[Power BI Community](http://community.powerbi.com/)
-
-[Power BI Support](http://support.powerbi.com/)
+[Data Refresh](powerbi-refresh-data.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

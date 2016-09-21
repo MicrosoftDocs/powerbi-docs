@@ -55,4 +55,4 @@ You will need to contact your tenant admin and ask them to unassign the license 
 
 ![](media/powerbi-admin-closing-your-account/closeaccountmanaged.png)
 
-
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

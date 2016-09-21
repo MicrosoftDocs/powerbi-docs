@@ -188,3 +188,5 @@ Below is the [complete code listing](#code).
 
         }
     }
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
