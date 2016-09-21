@@ -94,10 +94,12 @@ To integrate a tile into an app, you load a tile into an IFrame. In the next ste
 [Next Step >](powerbi-developer-integrate-tile-load-tile-iframe.md)
 
 ## See also
--	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
--	[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)
--	[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)
--	[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)
--	[Get Tiles operation](https://msdn.microsoft.com/library/mt465741.aspx)
--	[Step 4: Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)
+
+[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
+[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)  
+[Get Tiles operation](https://msdn.microsoft.com/library/mt465741.aspx)  
+[Step 4: Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

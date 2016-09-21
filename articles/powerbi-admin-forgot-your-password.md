@@ -32,3 +32,5 @@ If you are still having issues accessing your account you can try contacting the
 *1-866-807-5850 or o365dpesc@microsoft.com*
 
 > [AZURE.NOTE] Please note, support is provided during the eastern standard time (EST) time zone. Support is provided during business hours and currently only supported in English.
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

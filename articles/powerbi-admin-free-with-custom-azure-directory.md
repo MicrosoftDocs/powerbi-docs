@@ -115,12 +115,8 @@ You should now be able to sign into [Power BI](https://app.powerbi.com) with the
 
 ## See also
 
-[Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)
-
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)
-
-[What is an Azure AD directory?](https://msdn.microsoft.com/library/azure/jj573650.aspx)
-
-[How to get an Azure Active Directory tenant](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)
-
-
+[Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[What is an Azure AD directory?](https://msdn.microsoft.com/library/azure/jj573650.aspx)  
+[How to get an Azure Active Directory tenant](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

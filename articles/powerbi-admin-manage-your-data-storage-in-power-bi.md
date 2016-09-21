@@ -115,3 +115,5 @@ You will also see this indicated within **Manage personal storage**.
  **Pro dialog** 
  
  ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+
+ More questions? [Try the Power BI Community](http://community.powerbi.com/)

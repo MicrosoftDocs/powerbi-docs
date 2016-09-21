@@ -43,3 +43,5 @@ While you can call the API to authenticate with a username and password, in orde
 - **Authorization Code** - Authorization Codes are returned to web applications after login via URL parameters in the redirect URL. Since they are in parameters there is some security risk. Web applications will have to exchange the authorization code for an Authorization Token
 - **Authorization Token** - Are used to authenticate API calls on another user's behalf. They will be scoped to a specific application. Tokens have a set lifespan and when they expire they will need to be refreshed.
 - **Refresh Token** - When tokens expire there will be a process of refreshing them.
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

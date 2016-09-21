@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/06/2016"
+ms.date="09/21/2016"
 ms.author="asaxton"/>
 # On-Premises Data Gateway FAQ
 
@@ -82,8 +82,7 @@ ms.author="asaxton"/>
 **Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the Gateway. For more information, see [Installing the Oracle Client](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
 
 ## See also
-[On-premises data gateway](powerbi-gateway-onprem.md)
-
-[On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[On-premises data gateway](powerbi-gateway-onprem.md)  
+[On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

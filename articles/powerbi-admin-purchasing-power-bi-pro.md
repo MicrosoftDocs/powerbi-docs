@@ -81,7 +81,7 @@ To purchase Power BI Pro as an individual, you can do the following.
 
     ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro2.png)
 
-    > **Note**: If you are interested in the option to purchase for your team or organization, you can read about purchasing Power BI Pro for your organization. [Learn more]()
+    > [AZURE.NOTE] If you are interested in the option to purchase for your team or organization, you can read about purchasing Power BI Pro for your organization. [Learn more]()
 
 5.	If you aren’t already signed into Power BI, you will need to sign in with your Power BI (free) account.
 
@@ -128,11 +128,11 @@ You can purchase Power BI Pro for your organization through the Office 365 admin
 
 5.	Enter the number of licenses you would like to add and select Check out now or Add to cart.
 
-    > **Note**: You can add more at a later date if needed.
+    > [AZURE.NOTE] You can add more at a later date if needed.
 
 6.	Enter the needed information in the check out flow.
 
-> **Note**: If you already had the Power BI Pro Trial, it will go directly to the checkout screen asking to input the number of licenses you want.
+> [AZURE.NOTE] If you already had the Power BI Pro Trial, it will go directly to the checkout screen asking to input the number of licenses you want.
 
 Under **Billing** > **Subscriptions**, you will see **Power BI Pro** listed. If you decide later that you want to add more licenses, you can go back to **Add subscriptions**, and select **Change license quantity**.
 
@@ -144,6 +144,6 @@ When you are in the service, you can verify that you have a Pro account by going
 
 ## See also
 
-[Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)
-
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)
+[Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
+[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

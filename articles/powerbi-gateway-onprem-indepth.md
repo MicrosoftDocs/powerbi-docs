@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/06/2016"
+ms.date="09/21/2016"
 ms.author="asaxton"/>
 # On-premises data gateway in-depth
 
@@ -101,7 +101,7 @@ The cloud services only know about accounts within Azure Active Directory. It do
 
 Using Azure AD Connect ensures that the UPN will match between AAD and your local Active Directory.
 
-> **Note:** Synchronizing accounts with the Azure AD Connect tool will create new accounts within your AAD tenant.
+> [AZURE.NOTE] Synchronizing accounts with the Azure AD Connect tool will create new accounts within your AAD tenant.
 
 ## Now, this is where the gateway comes in
 
@@ -119,27 +119,12 @@ In other cases, there might be issues with the type of e-mail address users sign
 
 Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md). Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
-## Ports
-
-The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports. [Learn more](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/)
-
-|Domain names|Outbound ports|Description|
-|---|---|---|
-|*.analysis.windows.net|443|HTTPS|
-|*.login.windows.net|443|HTTPS|
-|*.servicebus.windows.net|5671-5672|Advanced Message Queuing Protocol (AMQP)|
-|*.servicebus.windows.net|443, 9350-9354|Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition)|
-|*.frontend.clouddatahub.net|443|HTTPS|
-|*.core.windows.net|443|HTTPS|
-|login.microsoftonline.com|443|HTTPS|
-|*.msftncsi.com|443|Used to test internet connectivity if the gateway is unreachable by the Power BI service.|
-
-If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. In some cases, the Azure Service Bus connections will be made with IP Address instead of the fully qualified domain names. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
+<!-- Account and Port information -->
+[AZURE.INCLUDE [gateway-onprem-accounts-ports-more](../includes/gateway-onprem-accounts-ports-more.md)]
 
 ## See also
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
-
-[Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)
-
-[Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
+[Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

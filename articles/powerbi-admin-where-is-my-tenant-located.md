@@ -47,6 +47,5 @@ This selection is what drives the location of where your data will be stored. Po
 
 > [AZURE.WARNING] This selection cannot be changed!
 
-## See also
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/06/2016"
+ms.date="09/21/2016"
 ms.author="asaxton"/>
 # On-premises data gateway
 
@@ -55,7 +55,7 @@ To download the gateway, select **Data Gateway** under the Downloads menu. Downl
 
 ## Install the gateway in personal mode 
 
-> **Note:** Personal will only work with Power BI.
+> [AZURE.NOTE] Personal will only work with Power BI.
 
 After the personal gateway is installed, you will need to launch the **Power BI Gateway - Personal Configuration Wizard**.
 
@@ -76,10 +76,10 @@ After the installation is complete, you will need to go to your datasets within 
 
 When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using asymmetric encryption so that they cannot be decrypted in the cloud, before they are stored in the cloud. The credentials are sent to the machine, running the gateway, on-premises where they are decrypted when the data sources are accessed.
 
-<!-- Shared Requirements Include -->
+<!-- Account and Port information -->
 [AZURE.INCLUDE [gateway-onprem-accounts-ports-more](../includes/gateway-onprem-accounts-ports-more.md)]
 
-<!-- Shared Requirements Include -->
+<!-- How the gateway works -->
 [AZURE.INCLUDE [gateway-onprem-how-it-works-include](../includes/gateway-onprem-how-it-works-include.md)]
 
 ## Troubleshooting
@@ -90,18 +90,12 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 
 ## See also
 
-[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
-
-[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
-
-[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
-
-[Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)
-
-[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
-
-[On-premises Data Gateway in-depth](powerbi-gateway-onprem-indepth.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
-
-[Configuring proxy settings for the On-Premises Data Gateway](powerbi-gateway-proxy.md)
+[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
+[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
+[On-premises Data Gateway in-depth](powerbi-gateway-onprem-indepth.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Configuring proxy settings for the On-Premises Data Gateway](powerbi-gateway-proxy.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

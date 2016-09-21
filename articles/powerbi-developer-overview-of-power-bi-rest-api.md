@@ -49,9 +49,11 @@ Here are some of the things you can do with the Power BI APIs.
 In the Apiary interactive API console, you can try all Power BI REST API operations such as [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) and [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx).
 
 ## See also
-- [Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
-- [Integrate a report into an app](powerbi-developer-integrate-report.md)
-- [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Power BI Embedded Service](https://azure.microsoft.com/services/power-bi-embedded/)
+
+[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)  
+[Integrate a tile into an app](powerbi-developer-integrate-tile.md)  
+[Integrate a report into an app](powerbi-developer-integrate-report.md)  
+[Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)  
+[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI Embedded Service](https://azure.microsoft.com/services/power-bi-embedded/)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

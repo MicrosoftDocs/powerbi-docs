@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/06/2016"
+ms.date="09/21/2016"
 ms.author="asaxton"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -33,17 +33,19 @@ The following goes through some common issues you may encounter when using the O
 
 ### How to restart the gateway
 
-The enterprise gateway runs as a windows service. You can start and stop it like any windows service. There are multiple ways to do this. Here is how you can do it from the command prompt. 
+The gateway runs as a Windows service, so you can start and stop it in multiple ways. For example, you can open a command prompt with elevated permissions on the machine where the gateway is running and then run either of these commands:
 
-1. On the machine where the enterprise gateway is running, launch an admin command prompt.
+- To stop the service, run this command:
 
-2. Use the following command to **stop** the service.
-
+    '''
     net stop PBIEgwService
+    '''
     
-3. Use the following command to **start** the service.
+- To start the service, run this command:
 
+    '''
     net start PBIEgwService
+    '''
 
 ### Error: Failed to create gateway. Please try again.
 
@@ -217,6 +219,51 @@ You can find the data center region you are in by doing the following:
 
 If you are still not getting anywhere, you could try getting a network trace using a tool like [fiddler](#fiddler) or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact [support](https://support.microsoft.com) for assistance.
 
+## Performance
+
+### Reviewing slow performing queries
+
+You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can email additional logging to output queries and their timings to help understand what is performing slow. This may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
+
+You will need to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file. Change the value from `False` to `True`. This file is located, by default, at *C:\Program Files\On-premises data gateway*.
+
+> [AZURE.IMPORTANT] Enabling EmitQueryTraces could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set EmitQueryTraces to False. It is not recommended to leave this setting enabled long term.
+
+```
+<setting name="EmitQueryTraces" serializeAs="String">
+    <value>True</value>
+</setting>
+```
+
+Within the log, you will see entries similar to the following. The **timeout** value is the length it took to execute the query.
+
+```
+DM.EnterpriseGateway Information: 0 : 2016-09-15T16:09:27.2664967Z DM.EnterpriseGateway	4af2c279-1f91-4c33-ae5e-b3c863946c41	d1c77e9e-3858-4b21-3e62-1b6eaf28b176	MGEQ	c32f15e3-699c-4360-9e61-2cc03e8c8f4c	FF59BC20 [DM.GatewayCore] Executing query (timeout=224) "<pi>
+SELECT 
+TOP (1000001) [t0].[ProductCategoryName],[t0].[FiscalYear],SUM([t0].[Amount])
+ AS [a0]
+FROM 
+(
+(select [$Table].[ProductCategoryName] as [ProductCategoryName],
+    [$Table].[ProductSubcategory] as [ProductSubcategory],
+    [$Table].[Product] as [Product],
+    [$Table].[CustomerKey] as [CustomerKey],
+    [$Table].[Region] as [Region],
+    [$Table].[Age] as [Age],
+    [$Table].[IncomeGroup] as [IncomeGroup],
+    [$Table].[CalendarYear] as [CalendarYear],
+    [$Table].[FiscalYear] as [FiscalYear],
+    [$Table].[Month] as [Month],
+    [$Table].[OrderNumber] as [OrderNumber],
+    [$Table].[LineNumber] as [LineNumber],
+    [$Table].[Quantity] as [Quantity],
+    [$Table].[Amount] as [Amount]
+from [dbo].[V_CustomerOrders] as [$Table])
+)
+ AS [t0]
+GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
+```
+
 <!-- Shared Troubleshooting tools Include -->
 [AZURE.INCLUDE [gateway-onprem-tshoot-tools-include](../includes/gateway-onprem-tshoot-tools-include.md)]
 
@@ -235,16 +282,11 @@ When using the enterprise gateway for scheduled refresh, **Refresh History** can
 
 ## See also
 
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
-
-[On-premises Data Gateway](powerbi-gateway-onprem.md)
-
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)
-
-[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
-
-[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
-
-[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
-
-[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
+[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

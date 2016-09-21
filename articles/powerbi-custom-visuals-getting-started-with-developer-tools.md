@@ -116,8 +116,7 @@ After you design your custom visual, you export it to share it with others or up
 
 ## See also
 
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
-
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)
-
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
+[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
+[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
