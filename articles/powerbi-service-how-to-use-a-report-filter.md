@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/21/2016"
+   ms.date="09/21/2016"
    ms.author="mihart"/>
 
 # Take a tour of the report Filters pane
@@ -54,7 +54,7 @@ Anyone viewing this report can interact with these filters.
 
    >**NOTE**:  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will not longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png).
 
-    ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
+   ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
 
 ## Filters in Editing View
 
