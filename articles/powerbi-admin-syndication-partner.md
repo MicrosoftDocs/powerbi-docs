@@ -74,4 +74,5 @@ This video looks at Office 365 syndication and purchasing Power BI:
 
 ## See also
 
-[Manage Azure AD using Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)
+[Manage Azure AD using Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

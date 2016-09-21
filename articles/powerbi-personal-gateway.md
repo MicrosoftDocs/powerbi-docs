@@ -92,13 +92,13 @@ You will want to select **Personal Gateway** instead of **On-premises data gatew
 
 There’s really not much to installing a gateway. You’ll select a location to install to, and read and accept the license agreement just like any other application. There are however some important things to know. In particular, the type of computer you install the gateway on and the type of account you’re logged in to Windows with on that computer.
 
-> **Note**: The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an [On-premises Data Gateway](powerbi-gateway-onprem.md) on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the On-Premises Data Gateway on the VM instead, and configure the a data source within the Power BI service.
+> [AZURE.NOTE] The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an [On-premises Data Gateway](powerbi-gateway-onprem.md) on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the On-Premises Data Gateway on the VM instead, and configure the a data source within the Power BI service.
 
 ### Computer type
 
 The type of computer you install the gateway on is important.
 
-**Note:** The personal gateway is supported only on 64-bit Windows operating systems.
+> [AZURE.NOTE] The personal gateway is supported only on 64-bit Windows operating systems.
 
 On a laptop computer - In order for a scheduled refresh to occur, the gateway needs to be up and running. Laptop computers are usually shut down or asleep more than they’re running. If you install your gateway on a laptop, be sure to set your scheduled refresh times for when the laptop will be running. If it isn’t, the refresh will not be attempted again until the next scheduled refresh time.
 
@@ -106,14 +106,13 @@ On a desktop computer – Not many issues here. Just make sure the computer and 
 
 Once you install a gateway, you won’t have to install another. One gateway will work for any number of supported datasets. You also don’t have to install the gateway on the same computer you upload your workbook and Power BI Desktop files from. Here’s an example: Let’s say you have an Excel workbook that connects to a SQL Server data source in your organization. You used Get Data in Power BI to upload the workbook from your laptop computer. You also have a desktop computer you leave running all the time, and you’ve installed and configured a gateway on that computer. In Power BI, you’ve signed in to your data sources, and you’ve setup a refresh schedule for the dataset.  When a scheduled refresh time comes, Power BI makes a secure connection to the gateway installed on your desktop computer. It then securely connects to the data sources to get updates. For refresh, there’s no communication with the original workbook you uploaded from your laptop computer.
 
-> **Note**: You can install the personal and enterprise gateways on the same computer.
+> [AZURE.NOTE] You can install the personal and enterprise gateways on the same computer.
 
 ### Windows account
 
 When you install the gateway, you’ll be logged in to your computer using your Windows account. The type of permissions your Windows account has will have an effect on how the gateway is installed and how it is run in Windows.
 
 When you’re logged into Windows:
-
 
 ||With Administrator permissions|Without Administrator permissions|
 |---|---|---|
@@ -187,6 +186,6 @@ If you're having trouble when installing and configuring a personal gateway, be 
 
 ## See also
 
-[Troubleshooting Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
-
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
+[Troubleshooting Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -241,5 +241,8 @@ public class PBIReport
     public string embedUrl { get; set; }
 }
 ```
+
 ## See also
-[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
+
+[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

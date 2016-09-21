@@ -82,5 +82,7 @@ Once you have an **Azure Active Directory** tenant, and an organizational user, 
 **Note** When you sign up for the Power BI service, use your organizational user. Once you login to the **Power BI service** for the first time, you will see the **Power BI service** added to your Azure AD.
 
 ## See Also
-- [What is an Azure AD directory?](https://msdn.microsoft.com/library/azure/jj573650.aspx)
-- [How to get an Azure Active Directory tenant](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)
+
+[What is an Azure AD directory?](https://msdn.microsoft.com/library/azure/jj573650.aspx)  
+[How to get an Azure Active Directory tenant](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

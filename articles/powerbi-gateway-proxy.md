@@ -123,4 +123,5 @@ When configuring the proxy settings to use default credentials, as explained abo
 
 ## See also
 
-[Firewall information](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy)
+[Firewall information](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

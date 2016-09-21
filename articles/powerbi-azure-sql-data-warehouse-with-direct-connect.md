@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="09/21/2016"
    ms.author="asaxton"/>
 
 # Azure SQL Data Warehouse with DirectQuery
@@ -37,7 +37,6 @@ NOTES: When using the SQL Data Warehouse connector:
 -   Q&A is not available for DirectQuery datasets
 
 -   schema changes are not picked up automatically
-
 
 These restrictions and notes may change as we continue to improve the experiences. The step to connect are detailed below.
 
@@ -97,8 +96,7 @@ Your fully qualified server name and database name can be found in the Azure Pre
 
 ## See also
 
-[Get started with Power BI](powerbi-service-get-started.md)
-
-[Get Data for Power BI](powerbi-service-get-data.md)
-
-[Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)
+[Get started with Power BI](powerbi-service-get-started.md)  
+[Get Data for Power BI](powerbi-service-get-data.md)  
+[Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

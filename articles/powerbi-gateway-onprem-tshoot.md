@@ -219,22 +219,6 @@ You can find the data center region you are in by doing the following:
 
 If you are still not getting anywhere, you could try getting a network trace using a tool like [fiddler](#fiddler) or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact [support](https://support.microsoft.com) for assistance.
 
-<!-- Shared Troubleshooting tools Include -->
-[AZURE.INCLUDE [gateway-onprem-tshoot-tools-include](../includes/gateway-onprem-tshoot-tools-include.md)]
-
-### Refresh History  
-When using the enterprise gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
-
-1.  In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
-
-    ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh.png)
-
-2.  In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.
-
-    ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh-2.png)
-
-    ![](media/powerbi-gateway-onprem-tshoot/refresh-history.png)
-
 ## Performance
 
 ### Reviewing slow performing queries
@@ -280,18 +264,29 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
+<!-- Shared Troubleshooting tools Include -->
+[AZURE.INCLUDE [gateway-onprem-tshoot-tools-include](../includes/gateway-onprem-tshoot-tools-include.md)]
+
+### Refresh History  
+When using the enterprise gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
+
+1.  In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
+
+    ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh.png)
+
+2.  In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.
+
+    ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh-2.png)
+
+    ![](media/powerbi-gateway-onprem-tshoot/refresh-history.png)
+
 ## See also
 
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
-
-[On-premises Data Gateway](powerbi-gateway-onprem.md)
-
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)
-
-[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)
-
-[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)
-
-[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)
-
-[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
+[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

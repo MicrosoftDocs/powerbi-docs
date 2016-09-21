@@ -197,6 +197,6 @@ After it is installed, you will see that it is **Managed by your company**. If y
 
 ## See also
 
-[Configure and deploy mobile application management policies in the Microsoft Intune console](https://technet.microsoft.com/library/dn878026.aspx)
-
-[Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md)
+[Configure and deploy mobile application management policies in the Microsoft Intune console](https://technet.microsoft.com/library/dn878026.aspx)  
+[Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -30,7 +30,7 @@ To get to the Power BI admin portal, do the following.
 
 2. Select **Admin Portal**.
 
-> **Note**: Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
+> [AZURE.NOTE] Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
 
 ![](media/powerbi-admin-portal/powerbi-admin-settings.png)
 
@@ -46,7 +46,7 @@ Within the portal, there are 3 tabs. These are described below.
 
 The first tab, in the admin portal, is **Usage metrics**. The usage metrics report gives you the ability to monitor usage within Power BI for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization.
 
-> **Note**: The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
+> [AZURE.NOTE] The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
 
 Once the dashboard loads, you will see two sections of tiles. The first section includes usage data for individual users and the second section has similar information for groups in your organization.
 
@@ -96,7 +96,7 @@ For more information about audit logs, see [Auditing Power BI in your organizati
 
 The third tab, in the admin portal, is **Tenant settings**. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization. If this is the case, you can switch it off in your tenant.
 
-> **Important**: These are global settings. Turning them off will affect all users, using Power BI, in your organization!
+> [AZURE.IMPORTANT] These are global settings. Turning them off will affect all users, using Power BI, in your organization!
 
 ![](media/powerbi-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -130,6 +130,6 @@ This setting determines whether you can export data from a tile or visualization
 
 ## See also
 
-[Auditing Power BI in your organization](powerbi-admin-auditing.md)
-
-[Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)
+[Auditing Power BI in your organization](powerbi-admin-auditing.md)  
+[Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="09/21/2016"
    ms.author="asaxton"/>
 
 # Troubleshooting scheduled refresh for Azure SQL Databases in Power BI  
@@ -33,3 +33,5 @@ While setting up scheduled refresh for Azure SQL Database, if you get an error w
 3.  Turn on 'Windows Azure Services' in the allowed services section
 
 ![](media/powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases/Azurerefresh.png)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

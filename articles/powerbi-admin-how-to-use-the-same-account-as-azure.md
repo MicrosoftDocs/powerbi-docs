@@ -42,3 +42,4 @@ You can add your organizational account as a co-administrator in Azure.  Here's
 
 Next time you sign in to the Azure Management Portal, use your organizational email address.
 
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
