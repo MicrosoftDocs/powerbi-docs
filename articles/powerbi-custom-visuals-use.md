@@ -44,7 +44,8 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
     **From the Visualization pane**
 
-  - In the **Visualizations** pane, choose **Insert (…)**.  
+    - In the **Visualizations** pane, choose **Insert (…)**.
+
         ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
   - Select **Import a custom visual**.  
