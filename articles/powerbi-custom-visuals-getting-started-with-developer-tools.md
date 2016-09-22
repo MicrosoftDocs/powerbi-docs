@@ -86,7 +86,25 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
 
 ### Server Certificate setup
 
-To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. This is a one-time setup for your developer workstation.
+To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. 
+
+> [AZURE.NOTE] This is a one-time setup for your developer workstation.
+
+To *add* a certificate, follow these steps.
+
+1. Run the following command to open the certificate.
+
+        pbiviz --install-cert
+
+2. Install the certificate.
+
+    On a Windows OS, select **Install Certificate...***
+
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
+
+    On a Mac OS, if the lock in the upper left is locked, select it to unlock. Search for *localhost* and double click on the certificate.
+
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 
 
 
