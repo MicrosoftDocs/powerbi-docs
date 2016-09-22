@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a custom visual with the Developer Tools (Preview)"
-   description="Getting Started with Developer Tools (Preview)"
+   pageTitle="Create a custom visual with the custom visual developer tools"
+   description="Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,12 +17,76 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/17/2015"
+   ms.date="09/22/2016"
    ms.author="asaxton"/>
 
-# Create a custom visual with the Developer Tools (Preview)
+# Create a custom visual with the custom visual developer tools
 
-We’re excited to share the first preview of **Developer Tools** available in Power BI which allow you to build and test custom visuals for use in Power BI. This article provides steps to enable the preview **Developer Tools**, provides usage instructions, and identifies supported scenarios.
+Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
+
+## Requirements
+
+- NodeJS 4.0+ Required (5.0 or later recommended) [Download NodeJS](https://nodejs.org)
+
+## Install NodeJS and the Power BI tools
+
+In order to create a custom visual, you will need to install NodeJS. NodeJS is required to run the command line tools.
+
+1. Download and install [NodeJS](https://nodejs.org). Version 4.0 or later is required but it is recommended to have 5.0 or later.
+
+2. Install the command line tools. Run the following command from a command prompt.
+
+        npm install -g powerbi-visuals-tools
+
+3. You can confirm that the tools are installed by running the following command without any parameters.
+
+        pbiviz
+
+    You should see the help output.
+
+    <pre><code>
+         +syyso+/
+    oms/+osyhdhyso/
+    ym/       /+oshddhys+/
+    ym/              /+oyhddhyo+/
+    ym/                     /osyhdho
+    ym/                           sm+
+    ym/               yddy        om+
+    ym/         shho /mmmm/       om+
+     /    oys/ +mmmm /mmmm/       om+
+    oso  ommmh +mmmm /mmmm/       om+
+   ymmmy smmmh +mmmm /mmmm/       om+
+   ymmmy smmmh +mmmm /mmmm/       om+
+   ymmmy smmmh +mmmm /mmmm/       om+
+   +dmd+ smmmh +mmmm /mmmm/       om+
+         /hmdo +mmmm /mmmm/ /so+//ym/
+               /dmmh /mmmm/ /osyhhy/
+                 //   dmmd
+                       ++
+
+       PowerBI Custom Visual Tool
+
+  Usage: pbiviz [options] [command]
+
+  Commands:
+
+    new [name]        Create a new visual
+    info              Display info about the current visual
+    start             Start the current visual
+    package           Package the current visual into a pbiviz file
+    update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
+    help [cmd]        display help for [cmd]
+
+  Options:
+
+    -h, --help      output usage information
+    -V, --version   output the version number
+    --install-cert  Install localhost certificate
+    </code></pre>
+
+*************************************
+OLD STUFF BELOW!!!!!!!!!!!!!!!
+*************************************
 
 ## Building your first custom visual for Power BI
 
