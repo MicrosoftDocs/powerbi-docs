@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/19/2016"
+   ms.date="09/21/2016"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
 
-When you [create a report in Power BI Desktop](powerbi-desktop-report-view.md), you can improve how it looks on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience.  
+When you [create a report in Power BI Desktop](powerbi-desktop-report-view.md), you can improve the experience of using it on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience.  
 
 ![](media/powerbi-desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -56,8 +56,7 @@ After you [create a report in Power BI Desktop](powerbi-desktop-report-view.md),
 
 ## Notes about creating phone report layouts
 - For reports with multiple pages, you can optimize all the pages or only a few. 
-- On a phone, you still move between pages as you normally would, using the page tabs.
-- Phone reports can scroll vertically up to 20 rows.
+- On a phone, you move between pages by swiping from the side or tapping the page menu.
 - You can’t modify formatting settings for just the phone. Formatting is consistent between master and mobile layouts. For example, font sizes will be the same.
 - To change a visual, such as changing its formatting, dataset, filters, or any other attribute, return to the regular report authoring mode.
 
