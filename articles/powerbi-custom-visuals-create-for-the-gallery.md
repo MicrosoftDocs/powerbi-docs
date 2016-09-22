@@ -3,7 +3,7 @@
    description="Create and submit a visual to the gallery "
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="asaxton"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="06/21/2016"
-   ms.author="mihart"/>
+   ms.author="asaxton"/>
 
 # Create and submit a visual to the gallery  
 
