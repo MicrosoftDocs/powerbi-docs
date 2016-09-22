@@ -90,23 +90,47 @@ To enable a live preview of your visual, a trusted https server is needed. Befor
 
 > [AZURE.NOTE] This is a one-time setup for your developer workstation.
 
-To *add* a certificate, follow these steps.
+To *add* a certificate, run the following command.
 
-1. Run the following command to open the certificate.
+    pbiviz --install-cert
 
-        pbiviz --install-cert
+**Windows OS**
 
-2. Install the certificate.
-
-    On a Windows OS, select **Install Certificate...***
+1. Select **Install Certificate...***.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 
-    On a Mac OS, if the lock in the upper left is locked, select it to unlock. Search for *localhost* and double click on the certificate.
+2. Select **Current User** and then select **Next**.
+
+3. Select **Place all certificate in the following store** and select **Browse...**.
+
+4. Select **Trusted Root Certification Authorities** and then select **OK**. Select **Next**.
+
+5. Select **Finish**.
+
+6. Select **Yes** on the security warning dialog.
+
+7. Close any browsers that you have open.
+
+> [AZURE.NOTE] If the certificate is not recognized, you may need to restart your computer.
+
+**OSX**
+
+1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double click on the certificate.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 
+2. Select **Always Trust** and close the window.
 
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
+
+3. Enter your username and password. Select **Update Settings**.
+
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
+
+4. Close any browsers that you have open.
+
+> [AZURE.NOTE] If the certificate is not recognized, you may need to restart your computer.
 
 *************************************
 OLD STUFF BELOW!!!!!!!!!!!!!!!
