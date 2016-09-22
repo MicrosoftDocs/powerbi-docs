@@ -66,9 +66,9 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
 
        PowerBI Custom Visual Tool
 
-  Usage: pbiviz [options] [command]
+    Usage: pbiviz [options] [command]
 
-  Commands:
+    Commands:
 
     new [name]        Create a new visual
     info              Display info about the current visual
@@ -77,12 +77,18 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
     update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
     help [cmd]        display help for [cmd]
 
-  Options:
+    Options:
 
     -h, --help      output usage information
     -V, --version   output the version number
     --install-cert  Install localhost certificate
     </code></pre>
+
+### Server Certificate setup
+
+To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. This is a one-time setup for your developer workstation.
+
+
 
 *************************************
 OLD STUFF BELOW!!!!!!!!!!!!!!!
