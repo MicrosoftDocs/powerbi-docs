@@ -360,6 +360,10 @@ Learn more about [Less](http://lesscss.org/).
 
 For tips about debugging your custom visual, see the [debugging guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
+## Submit your visual to the Power BI custom visual gallery
+
+You can [submit your visual](https://app.powerbi.com/visuals/info#submit) to be included in the Power BI visuals gallery. This involves sending an email with your pbiviz file attached.
+
 ## Troubleshooting
 
 **Pbiviz command not found (or similar errors)**

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/22/2016"
+   ms.date="09/23/2016"
    ms.author="asaxton"/>
 
 # Create and submit a visual to the gallery
@@ -32,11 +32,9 @@ You can create a custom visual using the Power BI Developer Tools. In the Power 
 
 To learn more about the Developer Tools, see [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md).
 
-![](media/powerbi-custom-visuals-create-for-the-gallery/DevToolsExample.png)
+## Submit your custom visual to the Power BI custom visuals gallery
 
-## Submit your custom visual to the Power BI visuals gallery
-
-Submit your custom visual to the Power BI visuals gallery via email. To learn how, see [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md).
+Submit your custom visual to the Power BI visuals gallery via email. To learn how, see [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md#submit-your-visual-to-the-power-bi-custom-visual-gallery).
 
 ## See also
 
