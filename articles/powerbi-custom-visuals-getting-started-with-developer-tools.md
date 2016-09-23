@@ -102,13 +102,21 @@ To *add* a certificate, run the following command.
 
 2. Select **Current User** and then select **Next**.
 
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
+
 3. Select **Place all certificate in the following store** and select **Browse...**.
 
 4. Select **Trusted Root Certification Authorities** and then select **OK**. Select **Next**.
 
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
+
 5. Select **Finish**.
 
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
+
 6. Select **Yes** on the security warning dialog.
+
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 
 7. Close any browsers that you have open.
 
@@ -119,6 +127,7 @@ To *add* a certificate, run the following command.
 1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double click on the certificate.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
+
 
 2. Select **Always Trust** and close the window.
 
@@ -131,6 +140,78 @@ To *add* a certificate, run the following command.
 4. Close any browsers that you have open.
 
 > [AZURE.NOTE] If the certificate is not recognized, you may need to restart your computer.
+
+### Enable live preview of developer visual
+
+To enable a live preview of your custom visual, follow these steps. This allows the visual to be used within the Power BI service when editing reports.
+
+1. Browse and sign into [app.powerbi.com](https://app.powerbi.com).
+
+2. Select the **gear icon** and then select **Settings**.
+
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
+
+3. Select **Developer** and then select **Enable developer visual for testing**.
+
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
+
+4. Select the **Developer Visual** in the **Visualization** pane.
+
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+
+    > [AZURE.NOTE] This requires that you have run `pbiviz start` from the visual folder on your development machine. For more information on creating your visual, see [Placeholder](#placeholder) in this article.
+
+5. Select the visual in the report canvas. You can bind data in the same way you do other visuals.
+
+You can now begin developing your visual.
+
+## Create a new visual
+
+You can create a new visual project by running the following command.
+
+```
+pbiviz new My Visual name
+```
+
+You can replace *My Visual Name* with the name you want to give the visual. This can be changed later by modifying the `name` and `displayName` fields within the generated `pbiviz.json` file.
+
+This command will create a new folder in the direct where the command was run. It will generate a basic starter template for your visual. Once the command completes, you can open the directory and use your favorite editor to start working on your new visual.
+
+## Testing your visual in Power BI
+
+You can test your visual within the Power BI service within reports and dashboards.
+
+### Running your visual
+
+You can run your visual by doing the following.
+
+1. Open a prompt.
+
+2. Change your directory to be your visual folder. This is the folder that contains the `pbiviz.json` file.
+
+3. Run the following command.
+
+    ```
+    pbiviz start
+    ```
+
+    ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
+
+If you are in the wrong location, you will see an error similar to the following.
+
+```
+    error  LOAD ERROR Error: pbiviz.json not found. You must be in the root of a visual project to run this command.
+        at e (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:67:35)
+        at Function.loadVisualPackage (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:62:16)
+        at Object.<anonymous> (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\bin\pbiviz-start.js:43:15)
+        at Module._compile (module.js:556:32)
+        at Object.Module._extensions..js (module.js:565:10)
+        at Module.load (module.js:473:32)
+        at tryModuleLoad (module.js:432:12)
+        at Function.Module._load (module.js:424:3)
+        at Module.runMain (module.js:590:10)
+        at run (bootstrap_node.js:394:7)
+```
 
 *************************************
 OLD STUFF BELOW!!!!!!!!!!!!!!!
