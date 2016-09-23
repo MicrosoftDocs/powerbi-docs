@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/22/2016"
+   ms.date="09/23/2016"
    ms.author="asaxton"/>
 
 # Create a custom visual with the custom visual developer tools
@@ -84,6 +84,7 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
     --install-cert  Install localhost certificate
     </code></pre>
 
+<a name"ssl-setup"></a>
 ### Server Certificate setup
 
 To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. 
@@ -141,7 +142,7 @@ To *add* a certificate, run the following command.
 
 > [AZURE.NOTE] If the certificate is not recognized, you may need to restart your computer.
 
-### Enable live preview of developer visual
+## Enable live preview of developer visual
 
 To enable a live preview of your custom visual, follow these steps. This allows the visual to be used within the Power BI service when editing reports.
 
@@ -181,6 +182,7 @@ This command will create a new folder in the direct where the command was run. I
 
 You can test your visual within the Power BI service within reports and dashboards.
 
+<a name="running-your-visual"></a>
 ### Running your visual
 
 You can run your visual by doing the following.
@@ -213,99 +215,126 @@ If you are in the wrong location, you will see an error similar to the following
         at run (bootstrap_node.js:394:7)
 ```
 
-*************************************
-OLD STUFF BELOW!!!!!!!!!!!!!!!
-*************************************
+### Viewing your visual in Power BI
 
-## Building your first custom visual for Power BI
+To view your visual in a report, go to that report and select the visual within the **Visualizations** pane.
 
-As a first step, familiarized yourself with how to build a custom visual using our IVisual interface. You can find resources and examples on how to do this in our open source project [Microsoft/PowerBI-visuals](http://www.github.com/Microsoft/PowerBI-visuals) on GitHub. The easiest way to get started is to fork the GitHub repo, follow the instructions in [Readme.md](https://github.com/Microsoft/PowerBI-visuals/blob/master/README.md) to build it, and follow the documentation in the [Wiki](https://github.com/Microsoft/PowerBI-visuals/wiki). Once you have the visual working in your copy of the GitHub repo, you’re ready to try it in the Developer Tools.
+> [AZURE.NOTE] You must run the `pbiviz start` command before doing this as discribed in the [Running your visual](#running-your-visual) section.
 
-### Using the Developer Tools
+![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-Before using the **Developer Tools**, please note that the **Developer Tools** feature is in preview, so there are many features that we are still working on to enable in the future.
+You will then see the starter template for the visual.
 
-Here's how to use the **Power BI Custom Visuals Developer Tools**.
+![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-visual.png)
 
-**Step 1: Open the developer tools**
-1. Under the settings icon, choose **Developer Tools**.
+|Toolbar item|Description|
+|---|---|
+|Refresh visual|Manually refresh the visual if auto reload is disabled.|
+|Toggle auto reload|When turned on, the visual will automatically update every time you save your visual file.|
+|Show dataview|Shows the visual's underlying data view for debugging|
+|Get help|Documentation within GitHub|
+|Send feedback|Let us know if there is anyway we can improve the experience! (Requires GitHub account)|
 
-  ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/DevToolsMenu.png)
+## Package your visual for use in Power BI Desktop and distribution
 
-  A new tab will open that represents the **Developer Tools**. Here’s an example of the Developer Tools page:  
+Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/), or share it with the community in the [Power BI Visual gallery](https://visuals.powerbi.com), you'll need to generate a `pbiviz` file.
 
-  ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/DevToolsExample.png)
+You can package your visual by doing the following.
 
-**Step 2: Create your custom visual**
+1. Open a prompt.
 
-The diagram below shows the major parts of using the developer tools. You write your [TypeScript](http://www.typescriptlang.org/) code in the **TypeScript code pane** and any CSS styles in the **CSS pane**.
+2. Change your directory to be your visual folder. This is the folder that contains the `pbiviz.json` file.
 
-**To run your custom visual**
-1.  Choose **Compile + Run** to see a preview of your visual. If your visual is not shown, you may see errors highlighted in red in the code window. You may also check your browser debugging tools for JavaScript errors.
+3. Run the following command.
 
-  ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/DevToolParts.png)
+    ```
+    pbiviz package
+    ```
 
-The developer tools allow you to also specify an Icon, work with multiple visuals and delete visuals. The **Data Preview** option allows you to select from sample data views to test your visual’s behavior. To test with additional data, see [Testing your custom visual in Reports and Dashboards](#testing).
+This command will create a `pbiviz` in the `dist/` directory of your visual project. If there is already a `pbiviz` file present, it will be overwritten.
 
-**Step 3: Debug your custom visual**
+## Updating the visuals API version
 
-You can debug your custom visual using your web browser’s debugger. For most browsers, you can press **F12** to launch the browser’s debugger.
+When you create a visual using `pbiviz new`, a copy of the appropriate API type definitions and json schemas are copied into your visual's directory. You can use the `pbiviz update` command to update these files if needed. This can be useful if we release a fix for a past API version or if you want to update to the latest API version.
 
->**Note:**
->The code you write is [TypeScript](http://www.typescriptlang.org/) which is ‘typed’ JavaScript. Before debugging, your TypeScript code is compiled into JavaScript. You debug the resulting JavaScript code in your browser. To make fixes to your code, you’ll need to make them in your TypeScript and then choose **Compile + Run** again.
+### Updating your existing API version
 
-**Locating your code in the Browser Debugger**
+If we release an update to an existing API, you can get the latest version by doing the following.
 
-**Internet Explorer**
+```
+#Update your version of pbiviz
+npm install -g powerbi-visuals-tools
 
-The code you write will be located under **File** &gt; **Dynamic Scripts** in IE’s debugger.
+#Run update from the root of your visual project, where pbiviz.json is located
+pbiviz update
+```
 
-  ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/ie.png)
+This will download the latest tools from npm which include the updated type definitions and schemas. Using `pbiviz update` will overwrite the `apiVersion` property in your *pbiviz.json* fiel with the latest version.
 
-**Chrome**
+### Upgrading to a different API version
 
-It will be located under (no domain) within Sources in Chrome’s debugger.
+You can update to a different API version by using the same steps as mentioned above. You can explicitly specify the API version you want to use.
 
-  ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/chrome.png)
+```
+#Update your version of pbiviz
+npm install -g powerbi-visuals-tools
 
-**To set a break point**
+#Run update from the root of your visual project, where pbiviz.json is located
+pbiviz update 1.2.0
+```
 
-To set a break point, open your browser’s debugger (typically press **F12**), find the JavaScript line of code, and set a break point there. You cannot set a breakpoint directly within Power BI’s developer tools.
+This would update yoru visual to API version 1.2.0. You can replace `1.2.0` with whatever version your wanting to use.
 
-**Step 4: Iterating on your custom visual code**
+> [AZURE.WARNING] The default API version used by the tools will always be the stable version of the API. Any versions later than the default API version are unstable and subject to change. They may have unexpected behaviors and behave differently between the Power BI service and Power BI Desktop. For the current stable API version, see the [change log](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md). For more information about pre-release versions, see the [roadmap](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md).
 
-You can work in two browser windows or two tabs one with the **Developer Tools** open to edit your visual code and a second open with the report or dashboard you are testing with. As you make changes in the **Developer Tools** and choose **Compile + Run**, you need to remember to refresh the tab in which you have your report or dashboard for testing. To refresh the tab, press **CTRL + F5** in most browsers.
+## Inside the visual project
 
->**Note:**
->When testing your custom visual in a Report or Dashboard, press **CTRL+F5** to ensure the latest version of your custom visual code is used. Repeat this each time you choose **Compile + Run** in the Developer Tools. Otherwise, you may be using an older version of your code.
+Your visual project is the folder that gets created when you run the `pbiviz new` command. 
 
-<a name ="testing"></a>
-**Step 5: Testing your custom visual in Reports and Dashboards**
+### File structure
 
-After you test your visual and get it working in the Developer Tools, you should test that it is working in Reports and Dashboards in Power BI. Here’s how to do this:
+|Item|Description|
+|---|---|
+|assets/|Used to store visual assets (icon, screenshots, etc).|
+|dist/|When you run `pbiviz package`, the pbiviz file will be generated here.|
+|src/|Typescript code for your visual.|
+|style/|Less styles for your visual.|
+|.gitignore|Tells git to ignore files that shouldn't be tracked in the repository.|
+|capabilities.json|Used to define the [capabilities](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/Capabilities.md) of your visual.|
+|package.json|Used by [npm](https://www.npmjs.com/) to manage modules.|
+|pbiviz.json|Main configuration file.|
+|tsconfig.json|Typescript compiler settings. Learn more about [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).|
 
-1.  If you’re using a browser tab you already have open press **Ctrl+F5** to refresh the page.
-2.  Open the report you wish to edit.
-3.  Choose **Edit Report**.
-4.  If you specified a custom icon for your custom visual, you will see the icon for your custom visual in the visualizations pane.
+## Debugging
 
-**Notes and Caveats**
+For tips about debugging your custom visual, see the [debugging guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
-The Developer Tools are in an early preview, as such there are some caveats to be aware. As we bring Developer Tools into broader previews, we will remove these limitations.
+## Troubleshooting
 
-1.  You can test your custom visual in IE, Edge, Chrome, or Firefox. You will need to re-load your custom visual code for each browser you wish to test on. To re-load your custom visual, follow steps 1 through 5 above in each browser.
-2.  There may be times when due to a service change, your code will no longer work. We will try to minimize this as much as possible.
-3.  Ensure you keep a copy of your code in your own source control to ensure you do not lose it in such cases.
-4.  The custom visual you test using the Developer tools is only visible to you in the browser you loaded it into.
+**Pbiviz command not found (or similar errors)**
 
-## Export a custom visual
-After you design your custom visual, you export it to share it with others or upload it to the community gallery.
+If you run `pbiviz` in your terminal / command line, you should see the help screen. If not, it is not installed correctly. Make sure you have at least the 4.0 version of NodeJS installed.
 
-### To export a custom visual
-1.  In **Developer Tools**, choose **Export**.
-2.  In **Visuals Settings**, enter your custom visual settings.
-     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/DevToolVisualSettings.png)
-3.  Choose **Export**.
+For more information, see [Install NodeJS and the Power BI tools](#install-nodejs-and-the-power-bi-tools)...
+
+**Cannot find the debug visual in the Visualizations tab**
+
+The debug visual looks like a prompt icon within the **Visualizations** tab.
+
+![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+
+If you don't see it, make sure you have enabled it within the Power BI settings. 
+
+> [AZURE.NOTE] The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will still work everywhere.
+
+For more information, see [Enable live preview of developer visual](#enable-live-preview-of-developer-visual)...
+
+**Can't contact visual server**
+
+Run the visual server with the command `pbiviz start` in your terminal / command line from the root of your visual project. If the server is running, it is likely that your SSL vertificates weren't installed correctly.
+
+For more information, see [Running your visual](#running-your-visual) or [Server certificate setup](#ssl-setup).
+
 
 ## See also
 
