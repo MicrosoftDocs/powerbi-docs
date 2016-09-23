@@ -69,12 +69,9 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
 ### See also
 
-[Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)
-
-[Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md)
-
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
-
-Back to [Custom Visualizations in Power BI](powerbi-custom-visuals.md)
-
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
+[Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  
+[Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md)  
+[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
+Back to [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
