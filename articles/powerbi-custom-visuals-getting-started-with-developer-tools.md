@@ -24,7 +24,7 @@
 
 Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
 
-> [AZURE.NOTE] You can use this document to get up and running. For more depth information, see the reference information within the [Power BI Visuals git repo](https://github.com/Microsoft/PowerBI-visuals).
+> [AZURE.NOTE] You can use this document to get up and running. For more in-depth information, see the reference information within the [Power BI Visuals git repo](https://github.com/Microsoft/PowerBI-visuals).
 
 ## Requirements
 
