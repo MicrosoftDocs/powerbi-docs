@@ -24,6 +24,8 @@
 
 Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
 
+> [AZURE.NOTE] You can use this document to get up and running. For more depth information, see the reference information within the [Power BI Visuals git repo](https://github.com/Microsoft/PowerBI-visuals).
+
 ## Requirements
 
 - NodeJS 4.0+ Required (5.0 or later recommended) [Download NodeJS](https://nodejs.org)
@@ -305,6 +307,55 @@ Your visual project is the folder that gets created when you run the `pbiviz new
 |pbiviz.json|Main configuration file.|
 |tsconfig.json|Typescript compiler settings. Learn more about [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).|
 
+### pbiviz.json
+
+This file is the main configuration file for your visual. It contains metadata, as well as information about your files, needed to build your visual.
+
+```
+{
+    "visual": {
+        "name": "myVisual", // internal visual name (should not contain spaces)
+        "displayName": "My Visual!", // visual name displayed to user (used in gallery)
+        "guid": "PBI_CV_xxxxxxx", // a unique id for this visual MUST BE UNIQUE
+        "visualClassName": "Visual" // the entry class for your visual
+        "version": "1.0.0", // visual version. Should be semantic version (increment if you update the visual)
+        "description": "", // description used in gallery
+        "supportUrl": "", // url to where users can get support for this visual
+        "gitHubUrl": "" // url to the source in github (if applicable)
+    },
+    "apiVersion": "1.0.0", //API version this visual was created with
+    "author": {
+        "name": "", // your name
+        "email": "" // your e-mail
+    },
+    "assets": {
+        "icon": "assets/icon.png" // relative path to your icon file (20x20 png)
+    },
+    "style": "style/visual.less", // relative path to your less file
+    "capabilities": "capabilities.json" // relative path to your capabilities definition 
+}
+```
+
+### Visual source (TypeScript)
+
+Visual code should be written in TypeScript, which is a superset of JavaScript that support more advanced features and early access to ES6/ES7 functionality.
+
+All TypeScript files should be stored in the `src/` directory and added to the `files` array in `tsconfig.json`. This allows the TypeScript compiler to load them and in what order.
+
+When your visual is built, all of the TypeScript will be compiled into a single JavaScript file. This allows you to reference exported elements from other files without needing to manually `require` them as long as both files are listed in the tsconfig.
+
+You can create as many files and classes as you need to create your visual.
+
+Learn more about [TypeScript](http://www.typescriptlang.org/).
+
+### Visual style (Less)
+
+Visual styling is handled using cascading style sheets (CSS). For your convience, we use the Less pre-compiler which supports some advanced features such as nesting, variables, mixins, conditions, loops, etc. If you don't want to use any of these features, you can just write plain CSS in the Less file.
+
+All Less files should be stored in the `style/` directory. The file specified under the `style` field within your `pbiviz.json` file will be loaded. Any additional files should be loaded using `@import`.
+
+Learn more about [Less](http://lesscss.org/).
+
 ## Debugging
 
 For tips about debugging your custom visual, see the [debugging guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
@@ -341,4 +392,6 @@ For more information, see [Running your visual](#running-your-visual) or [Server
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
 [The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
+[TypeScript](http://www.typescriptlang.org/)  
+[Less CSS](http://lesscss.org/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
