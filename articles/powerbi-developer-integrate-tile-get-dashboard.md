@@ -3,7 +3,7 @@
    description="Walkthrough to Integrate a tile into an app - Get a Power BI dashboard"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Step 2: Get a dashboard
 
@@ -201,10 +201,11 @@ To integrate a tile into an app, you need to get a tile. In the next step, you l
 
 ## See also
 
--	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
--	[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)
--	[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)
--	[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
--	[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)
--	[Step 3: Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md)
+[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
+[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
+[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)  
+[Step 3: Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

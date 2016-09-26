@@ -3,7 +3,7 @@
    description="Walkthrough to integrate a report into an app, sample code"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Integrate a report into an app
 
@@ -51,7 +51,8 @@ In the next step, you learn how to [Register a web app with Azure AD](powerbi-de
 
 ## See also
 
--	[Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)
--	[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)
--	[Step 1: Register a web app with Azure AD](powerbi-developer-integrate-report-register.md)
+[Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
+[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)  
+[Step 1: Register a web app with Azure AD](powerbi-developer-integrate-report-register.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

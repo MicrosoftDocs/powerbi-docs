@@ -3,7 +3,7 @@
    description="Walkthrough to integrate a tile into an app, sample code"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Integrate a tile into an app
 
@@ -52,7 +52,8 @@ In the next step, you learn how to [Register a web app with Azure AD](powerbi-de
 
 ## See also
 
--	[Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)
--	[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)
--	[Step 1: Register a web app with Azure AD](powerbi-developer-integrate-tile-register.md)
+[Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[Step 1: Register a web app with Azure AD](powerbi-developer-integrate-tile-register.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

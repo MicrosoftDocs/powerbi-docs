@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/06/2016"
+ms.date="09/21/2016"
 ms.author="asaxton"/>
 # Row-level security (RLS) with Power BI Desktop
 
@@ -41,4 +41,5 @@ Learn more about options for [RLS within the Power BI Service](powerbi-admin-rls
 
 ## See also
 
-[Row-level security (RLS) with the Power BI service](powerbi-admin-rls.md)
+[Row-level security (RLS) with the Power BI service](powerbi-admin-rls.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

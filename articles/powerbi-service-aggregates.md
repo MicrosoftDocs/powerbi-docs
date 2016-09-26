@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="09/21/2016"
    ms.author="mihart"/>
 
 # Aggregates in Power BI  
@@ -30,7 +30,7 @@ A numeric field is a value that will be aggregated (summed or averaged, for exam
 
 Say you have a chart that sums the sales data for different regions, but you'd rather have the average. 
 
-1.  Add the measure to a visualization.
+1.  In report Editing view, add the measure to a visualization.
 
 2.  Find that field in the Visualizations pane, right-click, and select the aggregate type you need.
 

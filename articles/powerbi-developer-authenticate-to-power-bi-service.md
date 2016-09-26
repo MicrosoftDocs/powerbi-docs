@@ -3,7 +3,7 @@
    description="Authenticate to Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Authenticate to Power BI service
 
@@ -84,9 +84,11 @@ When you register a web app, you receive a client secret **Key**. The client sec
 
 For a complete sample of how to use an Azure **Client ID** and client secret **Key** to authenticate a web app, see [Authenticate a web app](powerbi-developer-authenticate-a-web-app.md).
 
-## Related topics
-- [Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md)
-- [How to get an Azure Active Directory tenant](https://azure.microsoft.com/en-us/documentation/articles/active-directory-howto-tenant/)
-- [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)
-- [Register a client app](powerbi-developer-register-a-client-app.md)
-- [Register a web app](powerbi-developer-register-a-web-app.md)
+## See also
+
+[Get started creating a Power BI app](powerbi-developer-steps-to-create-a-power-bi-app.md)  
+[How to get an Azure Active Directory tenant](https://azure.microsoft.com/en-us/documentation/articles/active-directory-howto-tenant/)  
+[Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+[Register a client app](powerbi-developer-register-a-client-app.md)  
+[Register a web app](powerbi-developer-register-a-web-app.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

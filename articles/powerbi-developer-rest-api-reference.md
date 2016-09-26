@@ -3,7 +3,7 @@
    description="Power BI REST API Reference"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Power BI REST API Reference
 
@@ -32,3 +32,5 @@ The Power BI REST API has the following operations:
 - Group operations: Get Groups.
 
 To learn more about the Power BI REST API, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx).
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

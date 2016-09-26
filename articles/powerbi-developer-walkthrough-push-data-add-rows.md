@@ -3,7 +3,7 @@
    description="Walkthrough to push data - Add rows to a Power BI table"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Step 5: Add rows to a Power BI table
 
@@ -318,3 +318,5 @@ Below is the [complete code listing](#code).
             #endregion
         }
     }
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="09/21/2016"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
@@ -40,11 +40,15 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
   - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
 
-        ![](media/powerbi-custom-visuals-use/InsertFile.png)
+        ![](media/powerbi-custom-visuals-use/power-bi-import.png)
 
     **From the Visualization pane**
 
-  - In the **Visualizations** pane, choose **Insert (…)**.  
+    - In the **Visualizations** pane, choose **Insert (…)**.
+
+        ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+
+  - Select **Import a custom visual**.  
         ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
 3. **Review the warning**.
@@ -59,16 +63,15 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
     ![](media/powerbi-custom-visuals-use/VisualUse.png)
 
-6. Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
+6. Select the custom visual template to add it to your report as you would with any of the other templates in the Visualizations pane. Add fields and filters and build your visual.
+
+7.  Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
 
 ### See also
 
-[Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)
-
-[Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md)
-
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
-
-Back to [Custom Visualizations in Power BI](powerbi-custom-visuals.md)
-
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
+[Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  
+[Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md)  
+[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
+Back to [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

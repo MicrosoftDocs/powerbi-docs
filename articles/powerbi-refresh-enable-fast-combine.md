@@ -29,7 +29,7 @@ You may receive the following error based on the privacy settings for your data 
 
 To work around this error, you can turn on **Fast Combine**. **Fast Combine** will ignore the privacy settings allowing the different data sources to be combined. 
 
-> **Note:** Privacy levels are not considered when combining data. This could expose sensitive or confidential data to another data source when combining data.
+> [AZURE.NOTE] Privacy levels are not considered when combining data. This could expose sensitive or confidential data to another data source when combining data.
 
 ## What is Fast Combine?
 
@@ -79,6 +79,7 @@ You can use the following steps to enable Fast Combine for your personal gateway
 
 
 ## See also
-[Privacy Levels](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-[Common query tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)
+[Privacy Levels](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
+[Common query tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

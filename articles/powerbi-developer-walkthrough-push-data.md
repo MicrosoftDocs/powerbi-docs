@@ -3,7 +3,7 @@
    description="Push data into a Power BI dashboard"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Push data into a Power BI dashboard
 
@@ -124,10 +124,12 @@ To get started pushing data into a dashboard, see [Step 1: Register an app with 
 [Next Step >](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## See also
-- [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
-- [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-- [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
-- [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
-- [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)
-- [Introducing JSON](http://json.org/)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
+
+[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
+[Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  
+[Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)  
+[Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)  
+[Introducing JSON](http://json.org/)  
+[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

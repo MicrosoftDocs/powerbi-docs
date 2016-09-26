@@ -117,8 +117,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 
 ## See Also
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)
-
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

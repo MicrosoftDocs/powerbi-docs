@@ -3,7 +3,7 @@
    description="Walkthrough to Integrate a tile into an app - Load a tile into an IFrame"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Step 4: Load a tile into an IFrame
 
@@ -74,9 +74,11 @@ If you downloaded and ran the [Integrate a tile sample](https://github.com/Micro
 In this walkthrough you learned how to integrate a tile into an app by getting the tile in a dashboard, and then loading the tile into an **IFrame**. You can download the complete [Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  which shows all the parts working to embed a tile into an ASP.NET web app. You can also view the complete [Integrate a tile into an app code listing](powerbi-developer-integrate-tile-code.md).
 
 ## See also
--	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
--	[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)
--	[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)
--	[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)
--	[Get Tiles operation](https://msdn.microsoft.com/library/mt465741.aspx)
+
+[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
+[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)  
+[Get Tiles operation](https://msdn.microsoft.com/library/mt465741.aspx)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

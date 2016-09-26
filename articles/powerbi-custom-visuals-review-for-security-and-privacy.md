@@ -3,7 +3,7 @@
    description="Review custom visuals for security and privacy"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/15/2015"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Review custom visuals for security and privacy  
 
@@ -102,20 +102,13 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 
 ## See also
 
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
-
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)
-
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
-
-[Add a custom visualizations to a report (Power BI Desktop)](powerbi-custom-visuals-use.md)
-
-[Add a custom visualization to a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)
-
-[Download custom visualizations from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)
-
-[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)
-
-[Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)
-
-[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)
+[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
+[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
+[Add a custom visualizations to a report (Power BI Desktop)](powerbi-custom-visuals-use.md)  
+[Add a custom visualization to a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  
+[Download custom visualizations from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)  
+[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)  
+[Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
+[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

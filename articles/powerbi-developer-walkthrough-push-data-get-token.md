@@ -3,7 +3,7 @@
    description="Walkthrough to push data - Get an authentication access token"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Step 2: Get an authentication access token
 
@@ -188,3 +188,5 @@ Below is the [complete code listing](#code).
 
         }
     }
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -43,7 +43,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 <!-- Refresh Data sources-->
 [AZURE.INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
-> **Note:** A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
+> [AZURE.NOTE] A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
 
 ## OneDrive or OneDrive for Business. What’s the difference?  
 If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
@@ -74,3 +74,5 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
 
 [Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -3,7 +3,7 @@
    description="Walkthrough - Push data into a dashboard - Register an app with Azure AD"
    services="powerbi"
    documentationCenter=""
-   authors="mgblythe"
+   authors="guyinacube"
    manager="mblythe"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/23/2016"
-   ms.author="mblythe"/>
+   ms.author="asaxton"/>
 
 # Step 1: Register an app with Azure AD
 
@@ -49,8 +49,10 @@ The next step shows you how to [get an authentication access token](powerbi-deve
 [Next Step >](powerbi-developer-walkthrough-push-data-get-token.md)
 
 ## See also
-- [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
-- [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
-- [Walkthrough: Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Register a client app](powerbi-developer-register-a-client-app.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
+
+[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
+[Walkthrough: Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)  
+[Register a client app](powerbi-developer-register-a-client-app.md)  
+[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
