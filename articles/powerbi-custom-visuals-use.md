@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/21/2016"
+   ms.date="09/26/2016"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
@@ -40,16 +40,16 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
   - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
 
-        ![](media/powerbi-custom-visuals-use/power-bi-import.png)
+    ![](media/powerbi-custom-visuals-use/power-bi-import.png)
 
     **From the Visualization pane**
 
-    - In the **Visualizations** pane, choose **Insert (…)**.
+  - In the **Visualizations** pane, choose **Insert (…)**.
 
-        ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+    ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
   - Select **Import a custom visual**.  
-        ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+    ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
 3. **Review the warning**.
 
