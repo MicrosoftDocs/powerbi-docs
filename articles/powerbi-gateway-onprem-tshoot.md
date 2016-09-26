@@ -235,7 +235,13 @@ You will need to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore
 </setting>
 ```
 
-Within the log, you will see entries similar to the following. The **timeout** value is the length it took to execute the query.
+Within the log, you will see entries similar to the following.
+
+|Trace ID|Activity|Description|
+|---|---|---|
+|MGEQ|GatewayTransferServicePipelineExecuteAdoQuery|Query execution for ADO.NET.|
+|MEGO|GatewayTransferServicePipelineExecuteOleDbQuery|Query execution for OLEDB.|
+|MGEM|GatewayTransferServicePipelineExecuteMashupDbQuery|Query execution for the Mashup engine.|
 
 ```
 DM.EnterpriseGateway Information: 0 : 2016-09-15T16:09:27.2664967Z DM.EnterpriseGateway	4af2c279-1f91-4c33-ae5e-b3c863946c41	d1c77e9e-3858-4b21-3e62-1b6eaf28b176	MGEQ	c32f15e3-699c-4360-9e61-2cc03e8c8f4c	FF59BC20 [DM.GatewayCore] Executing query (timeout=224) "<pi>
@@ -263,6 +269,12 @@ from [dbo].[V_CustomerOrders] as [$Table])
  AS [t0]
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
+
+To determine the time it took to query the data source, you can do the following.
+
+1. Open the gateway log.
+
+2. Filter using the Request ID.
 
 <!-- Shared Troubleshooting tools Include -->
 [AZURE.INCLUDE [gateway-onprem-tshoot-tools-include](../includes/gateway-onprem-tshoot-tools-include.md)]
