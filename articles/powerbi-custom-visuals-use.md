@@ -27,7 +27,7 @@ import that visual template into a report so that it is added, as an option, to 
 
 ![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
 
->**Important**:
+>[AZURE.IMPORTANT] 
 A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well.
 When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
 
