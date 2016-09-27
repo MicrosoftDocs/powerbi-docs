@@ -48,10 +48,11 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name.png)
 
-    >[azure.tip] To improve results, avoid using words that are also column names.
+    >TIP: To improve results, avoid using words that are also column names.
 
 6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
-  ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
+
+    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
   For example, if you ask Cortana:
 
