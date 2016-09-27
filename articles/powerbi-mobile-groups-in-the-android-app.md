@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/28/2016"
+   ms.date="09/26/2016"
    ms.author="maggies"/>
 
 # Groups in the Android app for Power BI  
@@ -47,3 +47,4 @@ Then you see and interact with group dashboards in the Microsoft [Power BI for 
 -  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 -  [Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)  
 -  [Get started with Power BI](powerbi-service-get-started.md)  
+-  Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
