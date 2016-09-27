@@ -160,7 +160,7 @@ ArcGIS Maps for Power BI allows three selection modes.
 
 Change the selection mode using switch:
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
 
 <table>
 <tr><th>Option</th><th>Description</th>
