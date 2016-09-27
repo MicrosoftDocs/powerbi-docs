@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/21/2016"
+   ms.date="09/27/2016"
    ms.author="maggies"/>
 
 # View and interact with Power BI reports optimized for your phone 
@@ -43,7 +43,8 @@ all the other features of Power BI reports still work in phone-optimized reports
 *   [Reports on Android phones](powerbi-mobile-reports-in-the-android-app.md).
 
 ## View other pages in the report
-View other pages in the report by swiping from the side or tapping the page menu.
+
+- View other pages in the report by swiping from the side or tapping the pages icon ![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-page-icon.png).
 
 ## Cross-highlight visuals
 Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
@@ -58,8 +59,6 @@ With the visual selected, you can do things like scroll within the visual. To de
 ## Open visuals in focus mode
 Phone reports offer a focus mode, so you can focus on a single visual to get a bigger view of the visual and explore the visual and the report.
 
-
-
 What you do in focus mode carries over to the report canvas and vice versa, for a seamless exploration experience. For example, if you highlight a value in a visual, then return to the whole report, the report as a whole will be filtered to the value you highlighted in the visual.
 
 Some actions are only possible in focus mode, due to screen size constraints:
@@ -72,5 +71,6 @@ Some actions are only possible in focus mode, due to screen size constraints:
     Revert is available at the report level, clear all exploration from all visuals, or at the visual level, clearing all exploration from the specific visual selected.   
 
 ### See also
-[Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
-[Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+- [Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
+- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/21/2016"
+   ms.date="09/27/2016"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
@@ -113,4 +113,4 @@ For example, the size of a grid “square” on an iPhone SE will be ~xx pixels.
 ### See also
 - [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
 - [View Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
-
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
