@@ -49,7 +49,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 ### SQL Server mobile reports and KPIs
 
 - [View SQL Server mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) on the Reporting Services web portal.
-- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/en-US/library/mt683632.aspx).
+- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 ## The iPad app (Power BI for iOS)
@@ -69,7 +69,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 ### Mobile reports and KPIs in the Reporting Services web portal
 
 - [View SQL Server mobile reports and KPIs](powerbi-mobile-ipad-kpis-mobile-reports.md) on the Reporting Services web portal.
-- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/en-US/library/mt683632.aspx).
+- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 ## The Power BI app for Android phones
@@ -89,7 +89,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 ### SQL Server mobile reports and KPIs
 
 - [View SQL Server mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md) on the Reporting Services web portal.
-- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/en-US/library/mt683632.aspx).
+- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 ## The Power BI mobile app for Windows 10 devices
@@ -110,7 +110,7 @@ See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mob
 ### SQL Server mobile reports and KPIs
 
 - [View SQL Server mobile reports and KPIs](powerbi-mobile-win10-kpis-mobile-reports.md) on the Reporting Services web portal.
-- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/en-US/library/mt683632.aspx).
+- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 
