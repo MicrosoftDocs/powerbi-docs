@@ -221,11 +221,66 @@ If you are still not getting anywhere, you could try getting a network trace usi
 
 ## Performance
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_DJ30VNk4?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+### Performance Counters
+
+There are a number of performance counters that can be used to gauge the activities for the gateway. These can be helfup to understanding if we have a large load of activity and may need to make a new gateway. These counters will not reflect how long something takes.
+
+These counters can be access through the Windows Performance Monitor tool.
+
+![](media/powerbi-gateway-onprem-tshoot/gateway-perfmon.png)
+
+There are general groupings of these counters.
+
+|Counter Type|Description|
+|---|---|
+|ADO.NET|This is used for any DirectQuery connection.|
+|ADOMD|This is used for Analysis Services 2014 and earlier.|
+|OLEDB|This is used by certain data sources. This includes SAP HANA and Analysis Service 2016 or later.|
+|Mashup|This includes any imported data source. If you are scheduling refresh or doing an on-demand refresh, it will go through the mashup engine.|
+
+Here is a listing of the available performance counters.
+
+|Counter|Description|
+|---|---|
+|# of ADO.NET open connection executed / sec|Number of ADO.NET open connection actions executed per second (succeeded or failed).|
+|# of ADO.NET open connection failed / sec|Number of ADO.NET open connections actions failed per second.|
+|# of ADO.NET queries executed / sec|Number of ADO.NET queries executed per second (succeeded or failed).|
+|# of ADO.NET queries failed / sec|Number of ADO.NET failed queries executed per second.|
+|# of ADOMD open connection executed / sec|Number of ADOMD open connection actions executed per second (succeeded or failed).|
+|# of ADOMD open connection failed / sec|Number of ADOMD open connection actions failed per second.|
+|# of ADOMD queries executed / sec|Number of ADOMD queries executed per second (succeeded or failed).|
+|# of ADOMD queries failed / sec|Number of ADOMD failed queries executed per second.|
+|# of all open connection executed / sec|Number of open connection actions executed per second (succeeded or failed).|
+|# of all open connection failed / sec|Number of failed open connection actions executed per second.|
+|# of all queries executed / sec|Number of queries executed per second (succeeded or failed).|
+|# of items in the ADO.NET connection pool|Number of items in the ADO.NET connection pool.|
+|# of items in the OLEDB connection pool|Number of items in the OLEDB connection pool.|
+|# of items in the Service Bus pool|Number of items in the Service Bus pool.|
+|# of Mashup open connection executed / sec|Number of Mashup open connection actions executed per second (succeeded or failed).|
+|# of Mashup open connection failed / sec|Number of Mashup open connection actions failed per second.|
+|# of Mashup queries executed / sec|Number of Mashup queries executed per second (succeeded or failed).|
+|# of Mashup queries failed / sec|Number of Mashup failed queries executed per second|
+|# of multiple result set OLEDB queries failed / sec|Number of multiple resultset OLEDB failed queries executed per second.|
+|# of OLEDB multiple resultset queries executed / sec|Number of OLEDB multiple resultset queries executed per second (succeeded or failed).|
+|# of OLEDB open connection executed / sec|Number of OLEDB open connection actions executed per second (succeeded or failed).|
+|# of OLEDB open connection failed / sec|Number of OLEDB open connection actions failed per second.|
+|# of OLEDB queries executed / sec|Number of OLEDB multiple resultset queries executed per second (succeeded or failed).|
+|# of OLEDB queries failed / sec|Number of OLEDB mutiple resultset failed queries executed per second.|
+|# of OLEDB single resultset queries executed / sec|Number of OLEDB single resultset queries executed per second (succeeded or failed).|
+|# of queries failed / sec|Number of failed queries executed per second.|
+|# of single result set OLEDB queries failed / sec|Number of single resultset OLEDB failed queries executed per second.|
+
 ### Reviewing slow performing queries
 
-You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can email additional logging to output queries and their timings to help understand what is performing slow. This may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
+You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can enable additional logging to output queries and their timings to help understand what is performing slow. When you find a long running query, it may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
 
-You will need to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file. Change the value from `False` to `True`. This file is located, by default, at *C:\Program Files\On-premises data gateway*.
+You will need to modify two configuration files to determine the duration of a query. 
+
+#### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+
+Within the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file, change the `EmitQueryTraces` value from `False` to `True`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Enabling `EmitQueryTraces` will begin to log queries that are sent from the gateway to a data source.
 
 > [AZURE.IMPORTANT] Enabling EmitQueryTraces could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set EmitQueryTraces to False. It is not recommended to leave this setting enabled long term.
 
@@ -235,7 +290,7 @@ You will need to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore
 </setting>
 ```
 
-Within the log, you will see entries similar to the following. The **timeout** value is the length it took to execute the query.
+**Example query entry**
 
 ```
 DM.EnterpriseGateway Information: 0 : 2016-09-15T16:09:27.2664967Z DM.EnterpriseGateway	4af2c279-1f91-4c33-ae5e-b3c863946c41	d1c77e9e-3858-4b21-3e62-1b6eaf28b176	MGEQ	c32f15e3-699c-4360-9e61-2cc03e8c8f4c	FF59BC20 [DM.GatewayCore] Executing query (timeout=224) "<pi>
@@ -264,17 +319,55 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
+#### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+
+Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TraceVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration.
+
+> [AZURE.IMPORTANT] Enabling TraceVerbosity 5 could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set EmitQueryTraces to `4`. It is not recommended to leave this setting enabled long term.
+
+```
+<setting name="TracingVerbosity" serializeAs="String">
+    <value>5</value>
+</setting>
+```
+
+<a name="activities"></a>
+#### Activity Types
+
+|Activty Type|Description|
+|---|---|
+|MGEQ|Queries executed over ADO.NET. This includes DirectQuery data sources.|
+|MGEO|Queries executed over OLEDB. This includes SAB HANA and Analysis Services 2016.|
+|MGEM|Queries executed from the Mashup engine. This is used with imported datasets that use scheduled refresh or refresh on-demand.|
+
+#### Determine the duration of a query
+
+To determine the time it took to query the data source, you can do the following.
+
+1. Open the gateway log.
+
+2. Search for an [Activity Type](#activities) to find the query. An example of this would be MGEQ.
+
+3. Make note of the second GUID as this is the request id. 
+
+4. Continue to search for MGEQ until you find the FireActivityCompletedSuccessfullyEvent entry with the duration. You can verify the entry has the same request id. Duration will be in milliseconds.
+
+        DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway	baf40f21-2eb4-4af1-9c59-0950ef11ec4a	5f99f566-106d-c8ac-c864-c0808c41a606	MGEQ	21f96cc4-7496-bfdd-748c-b4915cb4b70c	B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
+    
+    > [AZURE.NOTE] FireActivityCompletedSuccessfullyEvent is a verbose entry. This entry will not be logged unless TraceVerbosity is at level 5.
+
 <!-- Shared Troubleshooting tools Include -->
 [AZURE.INCLUDE [gateway-onprem-tshoot-tools-include](../includes/gateway-onprem-tshoot-tools-include.md)]
 
-### Refresh History  
-When using the enterprise gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
+### Refresh History
 
-1.  In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
+When using the gateway for scheduled refresh, **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
+
+1. In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
 
     ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh.png)
 
-2.  In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.
+2. In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.
 
     ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh-2.png)
 
