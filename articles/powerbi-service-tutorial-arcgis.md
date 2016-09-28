@@ -51,11 +51,11 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 4. Power BI displays the user consent dialog, select **OK** to continue.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-consent.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-consent2.png)
 
 5. Power BI adds an empty ArcGIS map template to the report canvas.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2.png)
 
 # Create an AcrGIS map visual
 Take the following steps to create a **ArcGIS Maps for Power BI**.
@@ -74,7 +74,7 @@ Take the following steps to create a **ArcGIS Maps for Power BI**.
 To access **ArcGIS Maps for Power BI** formatting features:
 
 1. Select the In-Focus edit mode icon within the visual.
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-edit-modeicon.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-edit-mode-icon2.png)
 
 2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options.png)
@@ -169,11 +169,11 @@ Change the selection mode using switch:
 <td>Select individual data points.</td>
 </tr>
 <tr>
-<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee.png)</td>
+<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png)</td>
 <td>Draws a rectangle on the map and selects the contained data points.</td>
 </tr>
 <tr>
-<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer.png)</td>
+<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png)</td>
 <td>Allows boundaries or polygons within reference layers to be used to select contained data points.</td>
 </tr>
 </table>
@@ -194,16 +194,16 @@ Power BI provides the ability for users, tenant administrators, and IT administr
 **User options**
 In Power BI Desktop, users can stop using ArcGIS Maps for Power BI by disabling it on the security tab in options. When disabled, ArcGIS Maps will not load by default.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-desktop-security-dialog.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-desktop-security-dialog2.png)
 
 In Power BI service, users can stop using ArcGIS Maps for Power BI by disabling it on the ArcGIS Maps for Power BI (Preview) tab in user Settings. When disabled, ArcGIS Maps will not load by default.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-service-user-settings.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-service-user-settings2.png)
 
 **Tenant admin options**
 In PowerBI.com, tenant administrators can prevent all tenant users from using ArcGIS Maps for Power BI by disabling. When this happens, Power BI will no longer see the ArcGIS Maps for Power BI icon in the visualizations pane.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-arcgis-admin-portal.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-arcgis-admin-portal2.png)
 
 **IT Administrator options**
 Power BI Desktop supports using **Group Policy** to disable ArcGIS Maps for Power BI across an organization's deployed computers.
