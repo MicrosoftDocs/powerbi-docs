@@ -1,6 +1,6 @@
 <properties
    pageTitle="Frequently asked questions"
-   description="Frequently asked questions about Power BI"
+   description="Browse a list of frequently asked questions and answers about the Power BI service, Power BI Desktop, and the Power BI mobile apps."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="09/26/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -149,5 +149,5 @@ Learn more about Power BI security, privacy and compliance in this [Power BI Sec
 The Power BI for Office 365 experience has been deprecated.
 
 ## See also
-- More questions? [Try the Power BI Community](http://community.powerbi.com/)
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
