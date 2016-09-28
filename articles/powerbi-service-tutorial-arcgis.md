@@ -243,7 +243,7 @@ The ArcGIS Map for Power BI (Preview) is available to all Power BI users at no a
 
 **Does ArcGIS Maps for Power BI support Esri Shapefiles?**
 
-ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes you can do so using the [Shape Maps for Power BI Desktop (Preview)](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-shape-map/).
+ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes you can do so using the [Shape Maps for Power BI Desktop (Preview)](powerbi-desktop-shape-map.md).
 
 **Can I connect to my ArcGIS Online account from Power BI?**
 
