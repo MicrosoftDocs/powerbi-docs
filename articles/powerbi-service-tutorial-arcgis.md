@@ -28,12 +28,13 @@ ArcGIS Maps for Power BI (Preview) by [Esri](https://www.Esri.com/powerbi) geo-e
 ## User consent
 ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com). Your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visual, need to accept the consent dialog.
 
-<table>
-<tr><th>Resources</th></tr>
-<tr><td>[Terms](https://go.microsoft.com/fwlink/?LinkID=826322)</td></tr>
-<tr><td>[Privacy Policy](https://go.microsoft.com/fwlink/?LinkID=826323)</td></tr>
-<tr><td>[ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)</td></tr>
-</table>
+**Resources**
+
+[Terms](https://go.microsoft.com/fwlink/?LinkID=826322)
+
+[Privacy Policy](https://go.microsoft.com/fwlink/?LinkID=826323)
+
+[ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
 
 ## Enable the ArcGIS map preview
 
@@ -43,30 +44,30 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 2. Select the **ArcGIS Maps for Power BI** checkbox. You'll need to restart Power BI after you make the selection.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-preview-dialog2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-preview-dialog2.png)
 
 3. Open a report in Editing view and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane2.png)
 
 4. Power BI displays the user consent dialog, select **OK** to continue.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-consent2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-consent2.png)
 
 5. Power BI adds an empty ArcGIS map template to the report canvas.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2.png)
 
 ## Create an AcrGIS map visual
 Take the following steps to create a **ArcGIS Maps for Power BI**.
 
 1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and **Longitude** buckets.
 
-   >[AZURE.NOTE]  Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
+    >NOTE Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane2.png)
 
-2. From the **Fields** pane, drag a measure to the **Size** or **Color** buckets to adjust how the data is shown.
+2.  From the **Fields** pane, drag a measure to the **Size** or **Color** buckets to adjust how the data is shown.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size2.png)
 
 
@@ -76,10 +77,9 @@ To access **ArcGIS Maps for Power BI** formatting features:
 1. Select the In-Focus edit mode icon within the visual.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-edit-mode-icon2.png)
 
-2. Access additional features through the ribbon contained within the visual. Each feature
-, when selected, opens a task pane that provides detailed options.
+2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options2.png)
-   >[AZURE.NOTE]  For more information about the settings and features, see **Detailed documentation** below.
+   >NOTE  For more information about the settings and features, see **Detailed documentation** below.
 
 3. To return to the report, select **Back to Report** from the top-left corner of your report canvas.
 
@@ -135,6 +135,7 @@ Symbol styles enable you to fine tune how data is presented on the map. Symbol s
 ### Reference Layer
 ####  Reference layer - Demographics
 ArcGIS Maps for Power BI provides a selection of demographic layers that help contextualize data from Power BI.
+
 1. Select the **Reference layer** tab and choose **Demographics**.
 
 2. Each layer listed has a checkbox. Add a checkmark to add that layer to the map.  In this example we've added average household income.
@@ -151,8 +152,7 @@ ArcGIS Online provides the ability for organizations to publish public web maps.
 
 2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri2.png)   
-
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri2.png)   
 3. To see the details, select a shaded area to open the
 _Select from reference layer_: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
 
@@ -162,7 +162,6 @@ ArcGIS Maps for Power BI allows three selection modes.
 Change the selection mode using switch:
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
-
 <table>
 <tr><th>Option</th><th>Description</th>
 <tr>
@@ -228,13 +227,11 @@ A value of 0 (decimal) disable ArcGIS Maps for Power BI.
 
 You can use the provided **Group Policy** templates to quickly add the required configuration to your **Group Policy**.
 
-<table>
-<tr>
-<th>Template</th>
-</tr>
-<tr><td> [PowerBIEsri.adml](./groupPolicyTemplates/PowerBIEsri.adml) </td></tr>
-<tr><td> [PowerBIEsri.admx](./groupPolicyTemplates/PowerBIEsri.admx) </td></tr>
-</table>
+**Template**
+
+[PowerBIEsri.adml](./groupPolicyTemplates/PowerBIEsri.adml)
+
+[PowerBIEsri.admx](./groupPolicyTemplates/PowerBIEsri.admx)
 
 ## Common questions
 **Is there any charge for using ArcGIS Maps for Power BI?**
