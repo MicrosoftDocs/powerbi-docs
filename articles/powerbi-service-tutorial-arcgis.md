@@ -76,7 +76,8 @@ To access **ArcGIS Maps for Power BI** formatting features:
 1. Select the In-Focus edit mode icon within the visual.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-edit-mode-icon2.png)
 
-2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
+2. Access additional features through the ribbon contained within the visual. Each feature
+, when selected, opens a task pane that provides detailed options.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options.png)
    >[AZURE.NOTE]  For more information about the settings and features, see **Detailed documentation** below.
 
@@ -92,7 +93,7 @@ Four base maps are provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap,
 
 To apply a base map select it in the task pane.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps2.png)
 
 ### Location type
 ArgGIS Maps for Power BI automatically detects the best way to show data on the map. It selects from Points or Boundaries. The Location type options allow you to fine tune these selections.
@@ -129,7 +130,7 @@ Four map themes are provided. Location only and Size themes are automatically ch
 ### Symbol style
 Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-symbol-style.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-symbol-style2.png)
 
 ### Reference Layer
 ####  Reference layer - Demographics
@@ -165,7 +166,7 @@ Change the selection mode using switch:
 <table>
 <tr><th>Option</th><th>Description</th>
 <tr>
-<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single.png)</td>
+<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png)</td>
 <td>Select individual data points.</td>
 </tr>
 <tr>
