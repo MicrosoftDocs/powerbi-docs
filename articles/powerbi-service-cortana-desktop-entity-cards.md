@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/27/2016"
+   ms.date="09/28/2016"
    ms.author="mihart"/>
 
 
@@ -48,23 +48,23 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name.png)
 
-    >TIP: To improve results, avoid using words that are also column names.
+>[AZURE.TIP] To improve results, avoid using words that are also column names.
 
 6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
-  For example, if you ask Cortana:
+      For example, if you ask Cortana:
 
-  - "show sales by store name," this Answer Page will not appear because you did not include any of the items in the required page level filter.
+      - "show sales by store name," this Answer Page will not appear because you did not include any of the items in the required page level filter.
 
-  - "show sales for Cary Lindseys and Charlotte Lindseys," this Answer Page will not appear because you specified more than one item from the required page level filter.
+      - "show sales for Cary Lindseys and Charlotte Lindseys," this Answer Page will not appear because you specified more than one item from the required page level filter.
 
-  - "show sales for Charlotte Lindseys," this Answer Page will display.
+      - "show sales for Charlotte Lindseys," this Answer Page will display.
 
-Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
+    Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
 
->[AZURE:IMPORTANT}  Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
+    >[AZURE.IMPORTANT]  Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 ## How does Cortana order the results?
 
