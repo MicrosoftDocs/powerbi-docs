@@ -43,7 +43,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 2. Select the **ArcGIS Maps for Power BI** checkbox. You'll need to restart Power BI after you make the selection.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-preview-dialog.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-preview-dialog2.png)
 
 3. Open a report in Editing view and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
 
@@ -78,7 +78,7 @@ To access **ArcGIS Maps for Power BI** formatting features:
 
 2. Access additional features through the ribbon contained within the visual. Each feature
 , when selected, opens a task pane that provides detailed options.
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options2.png)
    >[AZURE.NOTE]  For more information about the settings and features, see **Detailed documentation** below.
 
 3. To return to the report, select **Back to Report** from the top-left corner of your report canvas.
@@ -98,14 +98,14 @@ To apply a base map select it in the task pane.
 ### Location type
 ArgGIS Maps for Power BI automatically detects the best way to show data on the map. It selects from Points or Boundaries. The Location type options allow you to fine tune these selections.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-location-types.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-location-types2.png)
 
 **Boundaries** will only work if your data contains standard geographic values. Esri automatically figures out the shape to show on the map. Standard geographic values include countries, provinces, zip codes, etc. But just like with GeoCoding, Power BI may not detect the field should be a boundary by default, or it may not have a boundary for your data.  
 
 ### Map theme
 Four map themes are provided. Location only and Size themes are automatically chosen based on the fields you bind to the location and size buckets in the Fields pane. We're currently using **Size**, so let's change to **Heat map**.  
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-map-theme.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-map-theme2.png)
 
 <table>
 <tr><th>Theme</th><th>Description</th>
@@ -141,7 +141,7 @@ ArcGIS Maps for Power BI provides a selection of demographic layers that help co
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics1.png)
 
 2. Each layer is interactive as well. Just as you can hover over a bubble to see the details, you can click a shaded area on the map to see the details.
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics2.png)
 
 
 #### Reference layer - ArcGIS
@@ -151,7 +151,7 @@ ArcGIS Online provides the ability for organizations to publish public web maps.
 
 2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri.png)   
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri2.png)   
 
 3. To see the details, select a shaded area to open the
 _Select from reference layer_: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
