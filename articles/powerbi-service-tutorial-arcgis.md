@@ -164,21 +164,11 @@ Change the selection mode using switch:
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
 
-<table>
-<tr><th>Option</th><th>Description</th>
-<tr>
-<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png)</td>
-<td>Select individual data points.</td>
-</tr>
-<tr>
-<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png)</td>
-<td>Draws a rectangle on the map and selects the contained data points.</td>
-</tr>
-<tr>
-<td>![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png)</td>
-<td>Allows boundaries or polygons within reference layers to be used to select contained data points.</td>
-</tr>
-</table>
+|Option|Description|
+|---|---|
+|![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png)|Select individual data points.|
+|![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png)|Draws a rectangle on the map and selects the contained data points.|
+|![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png)|Allows boundaries or polygons within reference layers to be used to select contained data points.|
 
 **Note:** a maximum of 250 data points can be selected at a time.
 
