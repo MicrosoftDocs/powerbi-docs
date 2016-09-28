@@ -36,18 +36,18 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
 2.  There are two options to import a custom visual template: from the **File** menu or from the **Visualizations** pane.
 
-**From the Desktop File menu**
+    **From the Desktop File menu**
 
-- On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
-  ![](media/powerbi-custom-visuals-use/power-bi-import.png)
+    - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
+      ![](media/powerbi-custom-visuals-use/power-bi-import.png)
 
-**From the Visualization pane**
+    **From the Visualization pane**
 
-- In the **Visualizations** pane, choose **Insert (…)**.
-  ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+    - In the **Visualizations** pane, choose **Insert (…)**.
+      ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
-- Select **Import a custom visual**.  
-  ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+    - Select **Import a custom visual**.  
+      ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
 3. **Review the warning**.
 
