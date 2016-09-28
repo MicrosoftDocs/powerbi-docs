@@ -96,6 +96,8 @@ When you are in the service, you can verify that you have a Pro account by going
 ## Subscription trial in Office 365
 
 You can get Power BI Pro as a trial for your organization. Once you have the subscription, you can assign Power BI Pro licenses to your users. [Learn more](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
+
+> [AZURE.NOTE] There is a limit of one organizational trial per tenant. This means that if someone has already applied the Power BI Pro Trial to your tenant, you cannot do it again. If you need assistance with this, you can contact [Office 365 Billing support](https://support.office.microsoft.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671&ui=en-US&rs=en-US&ad=US#BKMK_call_support).
  
 1.	Navigate to the [Office 365 admin center](https://portal.office.com/admin/default.aspx).
 2.	On the left navigation pane, select Billing > Subscriptions.
