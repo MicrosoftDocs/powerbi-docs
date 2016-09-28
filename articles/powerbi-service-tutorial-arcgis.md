@@ -47,7 +47,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 3. Open a report in Editing view and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane2.png)
 
 4. Power BI displays the user consent dialog, select **OK** to continue.
 
