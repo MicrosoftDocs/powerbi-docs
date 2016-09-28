@@ -79,6 +79,7 @@ To access **ArcGIS Maps for Power BI** formatting features:
 
 2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options2.png)
+
    >NOTE  For more information about the settings and features, see **Detailed documentation** below.
 
 3. To return to the report, select **Back to Report** from the top-left corner of your report canvas.
@@ -162,6 +163,7 @@ ArcGIS Maps for Power BI allows three selection modes.
 Change the selection mode using switch:
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
+
 <table>
 <tr><th>Option</th><th>Description</th>
 <tr>
