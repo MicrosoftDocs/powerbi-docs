@@ -67,7 +67,7 @@ Take the following steps to create a **ArcGIS Maps for Power BI**.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane2.png)
 
 2. From the **Fields** pane, drag a measure to the **Size** or **Color** buckets to adjust how the data is shown.
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size2.png)
 
 
 # Settings and formatting for AcrGIS maps
