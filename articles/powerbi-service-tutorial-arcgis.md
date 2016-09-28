@@ -64,7 +64,7 @@ Take the following steps to create a **ArcGIS Maps for Power BI**.
 
    >[AZURE.NOTE]  Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane.png)
+   ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane2.png)
 
 2. From the **Fields** pane, drag a measure to the **Size** or **Color** buckets to adjust how the data is shown.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size.png)
