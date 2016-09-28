@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/21/2016"
+   ms.date="09/26/2016"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
@@ -27,7 +27,7 @@ import that visual template into a report so that it is added, as an option, to 
 
 ![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
 
->**Important**:
+>[AZURE.IMPORTANT]
 A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well.
 When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
 
@@ -36,20 +36,18 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
 2.  There are two options to import a custom visual template: from the **File** menu or from the **Visualizations** pane.
 
-    **From the Desktop File menu**
+**From the Desktop File menu**
 
-  - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
+- On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
+  ![](media/powerbi-custom-visuals-use/power-bi-import.png)
 
-        ![](media/powerbi-custom-visuals-use/power-bi-import.png)
+**From the Visualization pane**
 
-    **From the Visualization pane**
+- In the **Visualizations** pane, choose **Insert (…)**.
+  ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
-    - In the **Visualizations** pane, choose **Insert (…)**.
-
-        ![](media/powerbi-custom-visuals-use/InsertPane.png)  
-
-  - Select **Import a custom visual**.  
-        ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+- Select **Import a custom visual**.  
+  ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
 3. **Review the warning**.
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/21/2016"
+   ms.date="09/26/2016"
    ms.author="mihart"/>
 
 # Take a tour of the report Filters pane

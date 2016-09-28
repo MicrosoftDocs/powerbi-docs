@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/22/2016"
+   ms.date="09/27/2016"
    ms.author="mihart"/>
 
 
@@ -50,7 +50,8 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
     >TIP: To improve results, avoid using words that are also column names.
 
-6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.  
+6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
+
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
   For example, if you ask Cortana:
@@ -63,13 +64,13 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
 Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
 
->IMPORTANT:Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
+>[AZURE:IMPORTANT}  Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 ## How does Cortana order the results?
 
 Results with high scoring answers (such as a complete match of a specified page name) will appear first as a *best match* in Cortana. Multiple best matches can appear if there are multiple answers in Power BI. Medium or lower scoring answers, such as answers not based on a named page for Cortana or a question with words not understood by Power BI, are listed as links below best matches in Cortana.
 
->**NOTE**: When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+>[AZURE.NOTE] When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
 
 
 ## See also
