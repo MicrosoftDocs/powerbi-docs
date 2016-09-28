@@ -80,7 +80,7 @@ To access **ArcGIS Maps for Power BI** formatting features:
 2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options2.png)
 
-   >NOTE  For more information about the settings and features, see **Detailed documentation** below.
+   >  NOTE:  For more information about the settings and features, see **Detailed documentation** below.
 
 3. To return to the report, select **Back to Report** from the top-left corner of your report canvas.
 
@@ -164,11 +164,11 @@ Change the selection mode using switch:
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
 
-|Option|Description|
-|---|---|
-|![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png)|Select individual data points.|
-|![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png)|Draws a rectangle on the map and selects the contained data points.|
-|![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png)|Allows boundaries or polygons within reference layers to be used to select contained data points.|
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
+
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points.
+
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
 
 **Note:** a maximum of 250 data points can be selected at a time.
 
