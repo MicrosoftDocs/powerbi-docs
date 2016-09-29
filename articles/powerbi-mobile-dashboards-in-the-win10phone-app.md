@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
-   qualityDate="03/11/2016"/>
+   qualityFocus="complete"
+   qualityDate="09/28/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/08/2016"
+   ms.date="09/28/2016"
    ms.author="maggies"/>
 
-# Dashboards in the Power BI mobile app for Windows 10  
+# View, explore, and share dashboards in the Power BI mobile app for Windows 10  
 
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
 
@@ -35,11 +35,11 @@ Then in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-g
 
 2.  Tap a dashboard to open it.   
 
-    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-home.png)
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-device-dashboard-home.png)
 
     Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-dashboard.png)
+    ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-dashboard-0928.png)
 
      You can also turn your phone sideways to [view dashboards in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
 
@@ -50,10 +50,13 @@ Then in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-g
     -   [Tap a tile](powerbi-mobile-tiles-in-the-win10phone-app.md) to open and interact with it.
     -   Tap the **Full Screen** icon ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-full-screen-icon.png) to present your Power BI dashboard without borders or menus, like **Slide Show** view in PowerPoint.
     -   Tap the **Invite** icon ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIcon.png) to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) with a colleague.
+    -   Tap the star ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-mobile-not-favorite-icon.png) to [make the dashboard a favorite](powerbi-mobile-favorites.md).
     -   Tap the **Pin to Start** icon to [pin the dashboard to your Windows Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md). 
     
 
-6.  To go back to the dashboards home page, tap the back arrow or back button.
+6.  To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap **My Workspace**:
+   
+     ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-dashboard-breadcrumb.png)
 
 ## View dashboards in landscape mode
 You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
@@ -65,5 +68,5 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 ### See also  
 - [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 - [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
-- [Get started with Power BI](powerbi-service-get-started.md)  
 - [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
