@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2016"
+   ms.date="09/26/2016"
    ms.author="maggies"/>
 # Annotate and share a tile from the Android app for Power BI
 
@@ -37,7 +37,7 @@ You can add annotations — lines, comments, or stickers — to a tile before yo
 
 4. To annotate the tile, tap an icon in the lower bar in the Edit window.
 
-	![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/PBI_Andr_AnnotateBar.png)
+	![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/power-bi-android-annotate-bar.png)
 
 	-   Tap the paintbrush to draw lines of different colors and thicknesses, then tap **Done**.
 
@@ -45,15 +45,14 @@ You can add annotations — lines, comments, or stickers — to a tile before yo
 
 	-   Tap the **AA** to type comments, then tap **Done**.
 
+	-   Tap the microphone to record a message, which is displayed as text on your tile. Then tap **Done**.
+
 5. After annotating, tap **Share** in the upper-right corner and send, using any sharing app you have on your Android phone.
 
 ### See also
 
-[Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play
-
-[Share a dashboard from the Android app](powerbi-mobile-share-a-dashboard-from-the-android-app.md)
-
-[Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)
-
-[Get started with Power BI](powerbi-service-get-started.md)
-
+-  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play
+-  [Share a dashboard from the Android app](powerbi-mobile-share-a-dashboard-from-the-android-app.md)
+-  [Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)
+-  [Get started with Power BI](powerbi-service-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

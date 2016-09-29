@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2016"
+   ms.date="09/26/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs in the Android app for Power BI 
@@ -73,7 +73,7 @@ Reporting Services KPIs and mobile reports are displayed in the same folders the
 
 ## View your favorite KPIs and reports
 
-You can mark KPIs and favorites on your Reporting Services web portal, and then view them in one convenient folder on your phone.
+You can mark KPIs and mobile reports as favorites on your Reporting Services web portal, and then view them in one convenient folder on your phone, along with your Power BI favorite dashboards and reports.
 
 -  Tap **Favorites**.
 
@@ -81,7 +81,7 @@ You can mark KPIs and favorites on your Reporting Services web portal, and then 
    
     Your favorites from the web portal are all on this page.
 
-    ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_ssrs_favepage.png)
+    ![](media/powerbi-mobile-android-kpis-mobile-reports/power-bi-android-ssrs-favorites.png)
 
 ## Remove a connection to a report server
 
@@ -100,5 +100,6 @@ You don't create Reporting Services KPIs and mobile reports in the Power BI mobi
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)
 
 ### See also  
-[Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)  
-[Get started with Power BI](powerbi-service-get-started.md)  
+- [Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)  
+- [Get started with Power BI](powerbi-service-get-started.md)  
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
