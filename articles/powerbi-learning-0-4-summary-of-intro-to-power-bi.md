@@ -19,7 +19,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="09/29/2016"
    ms.author="davidi"/>
 
 # Review this first section of Guided Learning

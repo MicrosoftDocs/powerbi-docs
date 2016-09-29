@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="09/29/2016"
    ms.author="davidi"/>
 # Getting started with Power BI Desktop
 

@@ -20,12 +20,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="09/29/2016"
    ms.author="davidi"/>
 
 # Create and format slicers
 
-Slicers are one of the most powerful types of visualizations, particularly as part of a busy report. A **slicer** is an on-canvas visual filter that lets anyone looking at a report segment the data by a particular value, such as by year or by geographical location.
+Slicers are one of the most powerful types of visualizations, particularly as part of a busy report. A **slicer** is an on-canvas visual filter in **Power BI Desktop** that lets anyone looking at a report segment the data by a particular value, such as by year or by geographical location.
 
 To add a slicer to your report, select **Slicer** from the **Visualizations** pane.
 

@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/12/2016"
+   ms.date="09/29/2016"
    ms.author="davidi"/>
 
 # How to Use Tables and Matrixes
@@ -40,4 +40,4 @@ A **matrix** is similar to a table, but it has different category headers on the
 
 ![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_3.png)
 
-There are many cosmetic options available for matrixes, such as auto-sizing columns, toggling row and column totals, setting colors, and more.
+There are many cosmetic options available for matrixes, such as auto-sizing columns, toggling row and column totals, setting colors, and more. When creating a matrix, make sure your categorical data (the non-number data) is on the left of the matrix, and the numeric files on the right to ensure the horizontal scroll bar appears, and to make sure that scrolling behavior works properly.

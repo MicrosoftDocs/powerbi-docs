@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="09/29/2016"
    ms.author="davidi"/>
 
 # Exploring Data
