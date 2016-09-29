@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2016"
+   ms.date="09/27/2016"
    ms.author="maggies"/>
 
 # Create a phone view of a dashboard in Power BI
@@ -60,3 +60,4 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
 
 - [Get started with Power BI](powerbi-service-get-started.md)
 - [Dashboards in the Power BI mobile apps](powerbi-mobile-create-dashboard.md)
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
