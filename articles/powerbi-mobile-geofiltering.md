@@ -41,6 +41,7 @@ Read more about [categorizing geographical data](powerbi-desktop-mobile-geofilte
 
 ### See also  
 - [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
-- [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
+- [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md 
 - [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
 - [Get started with Power BI](powerbi-service-get-started.md)  
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

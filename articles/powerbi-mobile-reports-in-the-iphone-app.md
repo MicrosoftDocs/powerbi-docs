@@ -32,7 +32,9 @@ Then you view and interact with those reports in the [iPhone app (Power BI for 
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-reports-home-2.png)
 
--   Or: on a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_openreporticon.png).
+    You see Power BI report and Excel workbooks together.
+
+-   Or: On a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_openreporticon.png).
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-line-tile-2.png)
 
@@ -45,7 +47,7 @@ The report opens in landscape mode.
 
 ## See other pages in a Power BI report
 
--   Tap the tabs at the bottom of the page. 
+-   Swipe side to side, or tap the pages icon > tap a page. 
 
 ## Cross-filter and highlight a Power BI report page
 
@@ -66,5 +68,5 @@ When designing a report in the Power BI service [(https://powerbi.com)](https://
 
 ### See also
 
-[Get started with the iPhone app (Power BI for iOS)](powerbi-mobile-iphone-app-get-started.md)
-
+- [Get started with the iPhone app (Power BI for iOS)](powerbi-mobile-iphone-app-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

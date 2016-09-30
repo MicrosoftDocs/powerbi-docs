@@ -57,8 +57,7 @@ You can scan the QR code for immediate access to the relevant tile, right from y
 
 ### See also
 
-[Create a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
-
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
-
-[Get started with the Power BI for Android app](powerbi-mobile-android-app-get-started.md)
+- [Create a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
+- [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+- [Get started with the Power BI for Android app](powerbi-mobile-android-app-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -36,6 +36,8 @@ You can add any picture on your iPhone to any dashboard you own in the Power BI 
 
     ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/power-bi-iphone-add-picture-tile.png)
 
+4.  Allow Power BI to access the camera or your camera roll. 
+
 4.  Select a picture from your camera roll, or take a new picture.
 
     ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_PicMenu_nofave.png)
@@ -54,6 +56,6 @@ Picture tiles act the same as other tiles on your iPhone. You can:
 
 ### See also
 
-[Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
-
-[Get started with Power BI](powerbi-service-get-started.md)
+- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
+- [Get started with Power BI](powerbi-service-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

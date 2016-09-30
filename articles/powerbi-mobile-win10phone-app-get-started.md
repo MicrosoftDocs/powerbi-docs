@@ -65,6 +65,8 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 
 ### Power BI samples
 
+You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
+
 1.   Tap the global navigation button ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
   
 2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
@@ -75,7 +77,7 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 
 ### Reporting Services mobile report samples
 
-1.   Tap the global navigation button  icon ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
+1.   Tap the global navigation button ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
 
 2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 

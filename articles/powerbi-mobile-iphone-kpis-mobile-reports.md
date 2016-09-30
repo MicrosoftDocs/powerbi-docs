@@ -96,7 +96,7 @@ You can only be connected to one report server at a time from your iPhone app. I
 
 1. At the bottom of the left navigation bar, tap **Settings**.
 2. Tap the server name you don't want to be connected to.
-3. Tap **Remove Connection**.
+3. Tap **Remove Server**.
 
 ## Create Reporting Services mobile reports and KPIs
 
