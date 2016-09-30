@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2016"
+   ms.date="09/27/2016"
    ms.author="davidi"/>
 
 # Analyze in Excel
