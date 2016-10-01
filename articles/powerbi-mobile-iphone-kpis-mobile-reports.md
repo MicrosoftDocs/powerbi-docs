@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2016"
+   ms.date="09/30/2016"
    ms.author="maggies"/>
 
-# View Reporting Services mobile reports and KPIs in the iPhone app (Power BI for iOS)  
+# View SQL Server Reporting Services mobile reports and KPIs in the iPhone app (Power BI for iOS)  
 
 The iPhone app for Microsoft Power BI for iOS offers live, touch-enabled mobile access to your important on-premises business information. 
 
-![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_iph_ssmrp_tallhomeblc.png)
+ ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_MobRpt.png)
 
 [Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
@@ -36,23 +36,23 @@ Then in the iPhone app for Power BI, view the mobile reports and KPIs, organized
 
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports. 
 
--  Tap the options icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, scroll down and tap 
--  SQL Server RS Samples.
+1. Tap the global navigation button ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) in the upper-left corner, scroll down and tap **Reporting Services samples**.
 
-Browse the samples to interact with KPIs and mobile reports.
+2.  Browse to interact with the sample KPIs and mobile reports.
 
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-ssrs-samples.png)
 
 ## Connect to a server to view Reporting Services mobile reports 
 
 1.  In the iPhone, open the Power BI app.
   
-2.  To view your Reporting Services mobile reports and KPIs, tap **Reporting Services**.
+2.  To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_ipad_getstarted.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-connect-ssrs-server.png)
 
-3. Tap the options icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Connect**.
+    If you're already in the Power BI app, tap the global navigation button ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) in the upper-left corner, and tap **Connect Server**.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_iph_sample.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-connect-ssrs.png)
 
 4. Fill in the server address and your user name and password.
 
@@ -60,11 +60,11 @@ Browse the samples to interact with KPIs and mobile reports.
 
     Tap **Advanced option** to give the server a name, if you'd like.
 
-5.  Now you see the server in the left navigation bar.
+5.  Now you see the server in the left navigation bar--in this example, called "work server."
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_iph_ssmrp_homelc.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-ssrs-server.png)
 
->**Tip**: Tap the options icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
+>**Tip**: Tap the global navigation button ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
 
 ## View Reporting Services KPIs and mobile reports in the Power BI app
 
@@ -84,11 +84,11 @@ You can mark KPIs and mobile reports as favorites on your Reporting Services web
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_and_ssrs_favemenu.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-favorite-menu.png)
    
     Your favorites from the web portal are all on this page.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/pbi_and_ssrs_favepage.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-favorites.png)
 
 ## Remove a connection to a report server
 
