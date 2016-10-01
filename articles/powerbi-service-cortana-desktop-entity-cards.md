@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2016"
+   ms.date="09/30/2016"
    ms.author="mihart"/>
 
 
@@ -48,7 +48,7 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name.png)
 
->[AZURE.TIP] To improve results, avoid using words that are also column names.
+    >[AZURE.TIP] To improve results, avoid using words that are also column names.
 
 6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
 
