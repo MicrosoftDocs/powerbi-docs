@@ -121,3 +121,11 @@ R visuals in Power BI Desktop has a few limitations:
 -  Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
 
 -  In this release, RRO installations are not automatically identified by the 32-bit version of Power BI Desktop, so you must manually provide the path to the R installation directory in **Options and settings > Options > R Scripting**.
+
+### More Information
+
+Take a look at the following additional information about R in Power BI.
+
+-   [Running R Scripts in Power BI Desktop](powerbi-desktop-r-scripts.md)
+
+-   [Use an external R IDE with Power BI](powerbi-desktop-r-ide.md)

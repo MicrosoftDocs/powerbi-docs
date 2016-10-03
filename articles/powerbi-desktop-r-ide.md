@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Use an external R IDE with Power BI (Preview)"
+   pageTitle="Use an external R IDE with Power BI"
    description="You can launch and use an external IDE with Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,32 +20,41 @@
    ms.date="09/15/2016"
    ms.author="davidi"/>
 
-# Use an external R IDE with Power BI (Preview)
+# Use an external R IDE with Power BI
 
-With **Power BI Desktop**, you can use an external R IDE (Integrated Development Environment) to create and refine R scripts, then use those scripts in Power BI.
+With **Power BI Desktop**, you can use your external R IDE (Integrated Development Environment) to create and refine R scripts, then use those scripts in Power BI.
+
+![](media/powerbi-desktop-r-ide/r-ide_1a.png)
 
 ### Enabling an external R IDE
 
-Prior to release of this feature, you had to use the R script editor in **Power BI Desktop** to create and run R scripts. With this release, you can launch your external R IDE from **Power BI Desktop** and have your data automatically imported and displayed in the R IDE. From there, you can modify the script in that external R IDE, then paste it back into **Power BI Desktop** to create Power BI visuals and reports.
+Previously, you had to use the R script editor in **Power BI Desktop** to create and run R scripts. With this release, you can launch your external R IDE from **Power BI Desktop** and have your data automatically imported and displayed in the R IDE. From there, you can modify the script in that external R IDE, then paste it back into **Power BI Desktop** to create Power BI visuals and reports.
+
+Beginning with the September 2016 release of **Power BI Desktop** (version 2.39.4526.362), you can specify which R IDE you would like to use, and have it launch automatically from within **Power BI Desktop**.
 
 ### Requirements
 
-To use this preview feature, you need to enable it as a preview feature. In **Power BI Desktop** go to **File > Options and settings > Options**, then from the left pane select **Preview Features**, then select *Enable launching an external R IDE for script editing*. You'll need to restart **Power BI Desktop** for the change to take effect.
+To use this feature, you need to install an **R IDE** on your local computer. **Power BI Desktop** does not include, deploy or install the R engine, so you must separately install **R** on your local computer. You can choose which R IDE to use, with the following options:
 
-![](media/powerbi-desktop-r-ide/r-ide_1.png)
+-   You can install your favorite R IDE, many of which are available for free, such as the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
-You also must make sure that **.R** files are associated with the external IDE you want **Power BI Desktop** to launch. If no association is defined, **Power BI Desktop** attempts to locate and launch [R Studio](https://www.rstudio.com/) as the default external R IDE.
+-   **Power BI Desktop** also supports [R Studio](https://www.rstudio.com/) and **Visual Studio 2015** with [*R Tools for Visual Studio*](https://beta.visualstudio.com/vs/rtvs/) editors.
 
-You must also install an R IDE for **Power BI Desktop** to launch. **Power BI Desktop** does not include, deploy or install the R engine, so you must separately install **R** on your local computer. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+-   You can also install a different R IDE and have **Power BI Desktop** launch that **R IDE** by doing one of the following:
+    -   You can associate **.R** files with the external IDE you want **Power BI Desktop** to launch.
+    -   You can specify the .exe that **Power BI Desktop** should launch by selecting *Other* from the **R Script Options** section of the **Options** dialog. You can bring up the **Options** dialog by going to **File > Options and settings > Options**.
 
-You can specify R script options, including the R IDE that **Power BI Desktop** will launch, by going to **File > Options and settings > Options**, and in the **Options** page that appears, select the R installation in the **R Scripting** section of the **Options** window, as shown in the following image. In the following image, the path local installation of R is **C:\Program Files\R\R-3.2.0**. Make sure the path it displays properly reflects the local R installation you want **Power BI Desktop** to use.
+        ![](media/powerbi-desktop-r-ide/r-ide_1b.png)
 
-![](media/powerbi-desktop-r-ide/r-ide_2.png)
+If you have multiple R IDEs installed, you can specify which will be launched by selecting it from the *Detected R IDEs* drop-down in the **Options** dialog.
 
+By default, **Power BI Desktop** will launch **R Studio** as the external R IDE if it's installed on your local computer; if **R Studio** is not installed and you have **Visual Studio 2015** with **R Tools for Visual Studio**, that will be launched instead. If neither of those R IDEs is installed, the application associated with **.R** files is launched.
+
+And if no **.R** file association exists, it's possible to specify a path to a custom IDE in the *Browse to your preferred R IDE* section of the **Options** dialog. You can also launch a different R IDE by selecting the **Settings** gear icon beside the **Launch R IDE** arrow icon, in **Power BI Desktop**.
 
 ### Launching an R IDE from Power BI Desktop
 
-To launch an R IDE from *Power BI Desktop, take the following steps.
+To launch an R IDE from **Power BI Desktop**, take the following steps.
 
 1.   Load data into **Power BI Desktop**.
 
