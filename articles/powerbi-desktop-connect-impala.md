@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
+   ms.date="10/03/2016"
    ms.author="davidi"/>
 
 # Connect to an Impala database in Power BI Desktop (Preview)
@@ -30,7 +30,7 @@ To get access to the **Impala** connector, you first need to enable this preview
 
 ![](media/powerbi-desktop-connect-impala/connect_impala_1.png)
 
-When you check that box, you turn on the **Impala** preview feature. You'll need to restart Power BI Desktop for the change to take effect. Once you do, the preview features is available.
+When you check that box, you turn on the **Impala** preview feature. You'll need to restart Power BI Desktop for the change to take effect. Once you do, the preview feature is available.
 
 ## Connect to an Impala database
 

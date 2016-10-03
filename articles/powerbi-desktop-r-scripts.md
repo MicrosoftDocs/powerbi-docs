@@ -69,3 +69,11 @@ When preparing and running an R script in Power BI Desktop, there are a few limi
 
 ### Refresh
 You can refresh an R script in Power BI Desktop. When you refresh an R script, Power BI Desktop runs the R script again in the Power BI Desktop environment.
+
+### More Information
+
+Take a look at the following additional information about R in Power BI.
+
+-   [Create R Visuals in Power BI Desktop](powerbi-desktop-r-visuals.md)
+
+-   [Use an external R IDE with Power BI](powerbi-desktop-r-ide.md)
