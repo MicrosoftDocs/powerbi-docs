@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/30/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 # View dashboards in the Power BI mobile apps
 
@@ -53,7 +53,7 @@ From here, you can:
 
     ![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard-breadcrumb.png)
 
-## Create a phone view of a dashboard
+## Create a phone view of a dashboard in the Power BI service
 
 If you're the dashboard owner, *in the Power BI service* you can create a view of the dashboard specifically for phones in portrait mode. 
 

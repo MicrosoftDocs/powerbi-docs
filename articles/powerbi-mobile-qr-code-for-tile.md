@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 
 # Scan a Power BI QR code from your iPhone
@@ -30,7 +30,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
 ## Scan a Power BI QR code with the Power BI scanner
 
-1. In the Power BI mobile app open the main navigation menu ![](media/powerbi-mobile-qr-code-for-tile/PBI_iPh_NavMenu.png) in the upper left. 
+1. In the Power BI mobile app open the global navigation menu ![](media/powerbi-mobile-qr-code-for-tile/power-bi-iphone-global-nav-button.png) in the upper left. 
 
 2. Scroll down to **Scanner** and select it. 
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/30/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI app for iOS on an iPhone or iPod Touch
@@ -49,7 +49,7 @@ Go to [Power BI to sign up](http://go.microsoft.com/fwlink/?LinkID=513879) for t
 1.  In the iPhone, open the Power BI app.
   
 2.  To view your Power BI dashboards, tap **Power BI**.  
-   To view your Reporting Services mobile reports and KPIs, tap **Reporting Services**.
+   To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
 
     ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-connect-powerbi-ssrs.png)
 

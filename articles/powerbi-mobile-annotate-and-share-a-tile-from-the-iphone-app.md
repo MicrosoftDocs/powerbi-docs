@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 # Annotate and share a tile from the iPhone app (Power BI for iOS)
 
@@ -29,7 +29,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
 1.  In a [dashboard](powerbi-mobile-dashboards-in-the-iphone-app.md) in the iPhone app, tap a tile to open it in focus mode.
 
-2.  Tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_ShareIcon.png) in the upper-right corner of the tile.
+2.  Tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-iphone-share-icon.png) in the upper-right corner of the tile.
 
 3.  To annotate the tile, tap an icon in the lower bar in the Edit window:
 
@@ -41,7 +41,7 @@ You can add annotations — lines, text, or stamps — to a tile before you shar
 
     -   Tap the smiley face to paste stamps (like emoticons) on the tile.
 
-4.  After annotating, tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_ShareIcon.png) in the upper-right corner.
+4.  After annotating, tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-iphone-share-icon.png) in the upper-right corner.
 
 5.  Type the recipients' names in the mail app of your choice, modify the message if you want, and send.
 

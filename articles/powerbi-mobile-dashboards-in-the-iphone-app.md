@@ -62,7 +62,7 @@ Then in the iPhone app for Microsoft Power BI for iOS, you can explore these sam
 
         ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-ellipsis-menu.png)
 
-    -  Then tap to [add a picture tile](powerbi-mobile-picture-tiles-in-the-iphone-app.md) to your dashboard.
+        Then tap to [add a picture tile](powerbi-mobile-picture-tiles-in-the-iphone-app.md) to your dashboard.
 
         ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-picture-tile-menu.png)
 
