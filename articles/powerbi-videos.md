@@ -37,11 +37,11 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 
 ## Watch some of our new uploads
 
--  [Table relationships and DAX](https://www.youtube.com/watch?v=yec1f5A08mc)
+-  [DAX expressions and variables](https://www.youtube.com/watch?v=kd4tgKxhRTU)
 
--  [Hierarchies](https://www.youtube.com/watch?v=SYPuJu2N45w)
+-  [Taking your content offline](https://www.youtube.com/watch?v=u7cnpupfVnE)
 
--  [See the data behind the visual](https://www.youtube.com/watch?v=dtdLul6otYE)
+-  [Introduction to Power BI mobile](https://www.youtube.com/watch?v=07uBWhaCo78)
 
 
 
