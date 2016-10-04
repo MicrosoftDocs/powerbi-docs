@@ -63,7 +63,8 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/linechart2new.png)
 
-3.  In the Visualizations and Filters pane, select **Format** (the paint roller icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) to reveal the customization options.
+3.  In the Visualizations and Filters pane, select **Format** (the paint roller icon.
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) to reveal the customization options.
 
 4. Expand the Y-Axis options and ensure that the Y-Axis slider is toggled to **On**.
 
@@ -125,7 +126,6 @@ First you'll create a Combo chart that looks at the impact store count has on sa
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-dual-axes.png)
 
 4.  (Optional) Customize the two axes. If you switch **Position** for either the column axis or the line axis, then the two axes switch sides.
-
    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-y-axes-options.png)
 
 ### Add titles to both axes
@@ -140,7 +140,7 @@ With a visualization this complicated, it helps to add axes titles.  Titles hel
 
 3.  Your Combo chart now displays dual axes, both with titles.
 
-   ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-dual-titles.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-dual-titles.png)
 
 
 For more information, see [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md).
