@@ -27,7 +27,9 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[Power BI and Azure ML - 9/20/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-20-PowerBI-Azure-ML_Registration.html?Is=Website)
+[Getting started using R in Power BI by Stacia Varga - 10/04/16](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-04-Getting-started-using-R-in-Power-BI-by-Stacia-Varga-257924.html?Is=Website)
+
+[Leveraging SharePoint Data with PowerApps Webinar by James Oleinik - 10/06/16](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-06-Leveraging-SharePoint-Data-with-PowerApps-257924.html?Is=Website)
 
 
 ## On-Demand webinars
@@ -35,6 +37,8 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 
 ### Latest webinars
 Watch our latest webinars on-demand.
+
+[Power BI and Azure ML - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-20-PowerBI-Azure-ML_Registration.html?Is=Website)
 
 [Adam and Chuck Show the Best of Power BI - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-15-Real-Sociedad-Registration.html?Is=Website)
 
@@ -89,6 +93,8 @@ Watch our latest webinars on-demand.
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
 ### Community webinars
+
+[Power BI and Azure ML - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-20-PowerBI-Azure-ML_Registration.html?Is=Website)
 
 [Getting Started with Custom Visuals by Kevin Feasel - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-13-Getting-Started-with-Custom-Visuals-Registration.html?Is=Website)
 
