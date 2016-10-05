@@ -126,6 +126,7 @@ First you'll create a Combo chart that looks at the impact store count has on sa
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-dual-axes.png)
 
 4.  (Optional) Customize the two axes. If you switch **Position** for either the column axis or the line axis, then the two axes switch sides.
+
    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-y-axes-options.png)
 
 ### Add titles to both axes

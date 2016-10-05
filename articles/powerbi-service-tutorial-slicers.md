@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="7rrvpa6KUto"
-   qualityFocus="identified"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -18,12 +18,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/22/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 
 # Tutorial: slicers in Power BI  
 
-A slicers narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.  
+A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.  
 
   ![](media/powerbi-service-tutorial-slicers/PBI_slicer.png)
 
@@ -48,13 +48,13 @@ Slicers are a great choice:
 
     ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_chartFirst.png)
 
-3.  Convert the visualization to a slicer. In the Visualizations pane, select the slicer icon
+3.  Convert the visualization to a slicer. In the Visualizations pane, select the slicer icon.
 
-    ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_select.png).
+    ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_select.png)
 
-## Format the slicer.
+## Format the slicer
 
-1. With the slicer selected, in the Visualizations pane, select the paint brush icon ![](media/powerbi-service-tutorial-slicers/PBI_paintbrush.png) to display the Format options.
+1. With the slicer selected, in the Visualizations pane, select the paint roller icon ![](media/powerbi-service-tutorial-slicers/power-bi-paintroller.png) to display the Format options.
 
 2. Select **General > Outline color** and choose dark blue and change the **Weight** to **6**.
 
@@ -74,16 +74,17 @@ Slicers are a great choice:
 
     ![](media/powerbi-service-tutorial-slicers/PBI_slicer_font2.png)
 
+6. Have fun exploring the other options available for slicers.
 
 ## Use the slicer in a report
 
-1. Add some additional visualizations to the report page.
+1. Add some additional visualizations to the report page or open the [Retail Analysis sample report](powerbi-sample-retail-analysis-take-a-tour.md) and select the **District Monthly Sales** tab.
 
-    ![](media/powerbi-service-tutorial-slicers/PBI_slicers_added.png)
+    ![](media/powerbi-service-tutorial-slicers/power-bi-retail-sample.png)
 
-2. Slice the report page for Allan and Brad. Notice how the other visualizations update to reflect these selections.
+2. Slice the report page for Carlos. Notice how the other visualizations update to reflect these selections.
 
-    ![](media/powerbi-service-tutorial-slicers/PBI_slicers_sliced.png)
+    ![](media/powerbi-service-tutorial-slicers/slicer2.gif)
 
 3. Sort the slicer alphabetically by District Manager last name.  Select the ellipses (...) in the top right corner of the slicer and choose **District Manager**.
 
@@ -95,9 +96,7 @@ Slicers are a great choice:
 
 Do you want the slicer to only filter some of the visuals on the report page?  Use the **Visual interactions** control to set this up.
 
-1. Select the **New Stores** tab to open the "New Stores Analysis" page.
-
-2. Select the slicer to make it active and highlight **Visual interactions**.
+1. Select the slicer to make it active and, from the menu bar, choose **Visual interactions**.
 
     ![](media/powerbi-service-tutorial-slicers/pbi-slicer-interactions.png)
 
