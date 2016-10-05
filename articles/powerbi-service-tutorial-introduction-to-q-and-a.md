@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/05/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 # Tutorial: use Power BI Q&A with the Retail Analysis sample
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this tutorial we'll look at 2 different ways of creating the same visualization: building it in a report and asking a question with Q&A.  
 
-
+## Method 1: using the report editor
 1. From your Power BI workspace, select **Get Data** \> **Samples** \> **Retail Analysis Sample** > **Connect**.
 
 	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_1.png)
@@ -42,7 +42,9 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_3.png)
 
+## Method 2: using Q&A
 How would we go about creating this same line chart using Q&A?
+	![](media/powerbi-service-tutorial-introduction-to-q-and-a/power-bi-questionbox.png)
 
 1.  Navigate back to your the Retail Analysis Sample dashboard.
 

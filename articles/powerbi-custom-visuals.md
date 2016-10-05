@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/03/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 
 # Custom visualizations in Power BI

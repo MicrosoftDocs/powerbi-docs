@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 # Create a new Power BI report
 

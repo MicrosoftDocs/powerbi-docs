@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 
 # Change how a chart is sorted in a Power BI report
@@ -29,7 +29,7 @@ values of each category. For example, this chart is sorted by store name.
 
 It's easy to sort it from highest to lowest sales per square feet instead.
 
-1.  Select the ellipses (...) and choose **Sort by** \> **Sales Per Sq Ft**.
+1.  Select the ellipses (...) and choose **Sort by Sales Per Sq Ft**.
 
 2.  If necessary, select the sort icon ![](media/powerbi-service-change-how-a-chart-is-sorted/sortIcon.png) to change to **Descending**.
 

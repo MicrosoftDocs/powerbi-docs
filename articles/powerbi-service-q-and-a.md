@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/04/2016"
+   ms.date="10/04/2016"
    ms.author="mihart"/>
 
 # Q&A in Power BI

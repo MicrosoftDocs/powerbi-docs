@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 
 # Get started with Power BI
@@ -41,7 +41,7 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
 1.  [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? You can sign up for [Power BI for free](http://www.powerbi.com/ "try out the new Power BI Preview for free").
 
-1.  If you're in your workspace, select **Get Data** at the bottom of the left navigation pane.
+1.  Power BI opens with a dashboard displayed. Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-service-get-started/getdata3.png)
 
@@ -62,7 +62,7 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
 Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.
 
-1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading,click the dataset name to open it.
+1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading, select the dataset name to open it. This opens the dataset as a blank report.
 
     ![](media/powerbi-service-get-started/gettingstart4.png)
 
@@ -99,7 +99,7 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
     ![](media/powerbi-service-get-started/pinSuccess.png)
 
-8.  Back on your dashboard, you can see your new visualization. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
+8.  Open the dashboard you just created. To do this, select the name under the **Dashboards** heading in the left navigation pane. Because the dashboard is new, it will have a yellow asterisk. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
 
     ![](media/powerbi-service-get-started/gsPinFirstnew.png)
 
