@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2016"
+   ms.date="09/28/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10 
@@ -90,6 +90,9 @@ You can mark KPIs and mobile reports as favorites on your Reporting Services web
     Your favorites from the web portal are all on this page.
 
     ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-windows-10-ssrs-favorites.png)
+
+Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
+
 
 ## Remove a connection to a report server
 

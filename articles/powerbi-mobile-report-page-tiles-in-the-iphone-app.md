@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 
 # View report page tiles in the iPhone app (Power BI for iOS)
@@ -26,18 +26,20 @@ When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI ser
 
 1.  When you open a [dashboard in the iPhone app](powerbi-mobile-dashboards-in-the-iphone-app.md), you see a small image of the report.
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-report-tile.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-dashboard-report-page.png)
 
 2. Tap the tile. The pinned live report page opens the report in landscape mode. 
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-report-it-spend-2.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-dashboard-report-page-landscape.png)
 
--   Tap the **X** to close the tile and return to the dashboard.
+6.  To get back to the list of dashboards, tap the arrow next to the report page title, then tap **My Workspace**.
+
+    ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-report-breadcrumb.png)
+
 
 ### See also
 
-[Tiles in the iPhone app](powerbi-mobile-tiles-in-the-iphone-app.md)
-
-[Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
-
-[Get started with Power BI](powerbi-service-get-started.md)
+- [Tiles in the iPhone app](powerbi-mobile-tiles-in-the-iphone-app.md)
+- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
+- [Get started with Power BI](powerbi-service-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

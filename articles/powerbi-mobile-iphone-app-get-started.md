@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/08/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI app for iOS on an iPhone or iPod Touch
 
 The Microsoft Power BI for iOS app, on the iPhone or iPod Touch, is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages. And keep up to date with your most timely data on your [Apple Watch](powerbi-mobile-apple-watch.md).  
 
-![](media/powerbi-mobile-iphone-app-get-started/PBI_iPhoneSignIn.png)
+![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-dashboard-landscape.png)
 
 You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
 
@@ -49,20 +49,34 @@ Go to [Power BI to sign up](http://go.microsoft.com/fwlink/?LinkID=513879) for t
 1.  In the iPhone, open the Power BI app.
   
 2.  To view your Power BI dashboards, tap **Power BI**.  
-   To view your Reporting Services mobile reports and KPIs, tap **Reporting Services**.
+   To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
 
-    ![](media/powerbi-mobile-iphone-app-get-started/pbi_ipad_getstarted.png)
+    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-connect-powerbi-ssrs.png)
 
-    >**Tip**: When you're in the app, tap the options icon ![](media/powerbi-mobile-iphone-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two. 
+    >**Tip**: When you're in the app, tap the global navigation button ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner to go between the two. 
 
-## Start with samples
+## Try the Power BI and Reporting Services samples  
+Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the global navigation.
 
-Even without signing up, you can play with the Power BI samples. After you download the app you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
+### Power BI samples
 
--   Tap **Samples**, then pick a role and explore the sample dashboard for that role.  
+You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
 
-    ![](media/powerbi-mobile-iphone-app-get-started/pbi_iph_sample.png)
+1.   Tap the global navigation button ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner.
+  
+2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
 
+    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-powerbi-samples.png)
+
+    >**Note**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
+
+### Reporting Services mobile report samples
+
+1.   Tap the global navigation button ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner.
+
+2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
+
+    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-ssrs-samples.png)
 
 ## What next?
 
@@ -90,4 +104,5 @@ See what else you can do in the iPhone app with dashboards in Power BI, and Repo
 
 ### See also
 
-[Get started with Power BI](powerbi-service-get-started.md)
+- [Get started with Power BI](powerbi-service-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

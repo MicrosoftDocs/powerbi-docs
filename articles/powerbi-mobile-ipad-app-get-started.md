@@ -53,14 +53,16 @@ Go to [Power BI to sign up](http://go.microsoft.com/fwlink/?LinkID=513879) for t
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-connect-to.png)
 
-    >**Tip**: When you're in the app, tap the options icon ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two services. 
+    >**Tip**: When you're in the app, tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two services. 
 
 ## Try the Power BI and Reporting Services samples  
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
 
 ### Power BI samples
 
-1.   Tap the options icon ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner.
+You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
+
+1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner.
   
 2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
 
@@ -96,7 +98,7 @@ See what else you can do in the iPad app with dashboards and reports in Power BI
 - [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 ### See also  
-[Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
-[Get started with Power BI](powerbi-service-get-started.md)  
-Try asking the [Power BI Community](http://community.powerbi.com/)
+- [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
+- [Get started with Power BI](powerbi-service-get-started.md)  
+- Questions? Try asking the [Power BI Community](http://community.powerbi.com/)
 
