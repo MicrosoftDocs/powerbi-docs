@@ -57,3 +57,4 @@ Once in Focus mode, the tile or visual can then be [viewed in full screen (TV Mo
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

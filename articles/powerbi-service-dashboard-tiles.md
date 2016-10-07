@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"  
+   ms.date="10/07/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -119,3 +119,5 @@ When you select a tile, what happens next depends on how the tile was created an
 [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 
 [Pin Reporting Services items to Power BI Dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

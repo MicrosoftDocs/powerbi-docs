@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="10/08/2016"
    ms.author="mihart"/>
 
 # Duplicate a report page in Power BI  
@@ -36,5 +36,8 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## See also  
-More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

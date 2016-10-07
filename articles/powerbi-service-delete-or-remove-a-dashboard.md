@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/01/2016"
+   ms.date="10/01/2016"
    ms.author="mihart"/>
 
 # Remove a dashboard  
@@ -42,4 +42,5 @@ Dashboards can be removed. Removing the dashboard does not delete the underlyi
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+More questions? [Try the Power BI Community](http://community.powerbi.com/) 

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/15/2016"
+   ms.date="10/09/2016"
    ms.author="mihart"/>
 
 
@@ -111,3 +111,5 @@ Instead of searching for insights against an entire dataset, narrow your search 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
