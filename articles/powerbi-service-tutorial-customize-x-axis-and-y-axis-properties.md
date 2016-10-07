@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/05/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 # Tutorial: Customize X-axis and Y-axis properties
 
@@ -56,8 +56,7 @@ To revert all the X-axis customization you've done so far, select **Revert To De
 Some visualizations have Y-axes and these too can be customized. There are even some visualizations that have dual Y-axes, and you'll learn how to customize those as well.
 
 1.  From the **New Stores** tab of the Retail Analysis Sample report, select the chart "This Year Sales by FiscalMonth."
-
-   ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/powerbi-chart.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/powerbi-chart.png)
 
 2. From the Fields pane, select **Store** > **Name** to add it as a **Legend**.
 
