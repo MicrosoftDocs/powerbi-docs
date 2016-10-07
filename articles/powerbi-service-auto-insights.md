@@ -101,7 +101,7 @@ Instead of searching for insights against an entire dataset, narrow your search 
 
 5. Continue digging into your data, and when you find an interesting insight, pin its visual to your dashboard by selecting **Pin visual** from the top-right corner. Also, you can send feedback to let the dataset owner know if a particular insight was helpful or not.
 
-  ![](media/powerbi-service-auto-insights/useful.png)
+    ![](media/powerbi-service-auto-insights/useful.png)
 
 
 ## See also
