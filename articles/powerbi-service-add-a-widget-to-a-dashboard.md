@@ -182,3 +182,5 @@ To make changes to a tile...
 
 [Creating Power BI dashboards](powerbi-service-create-a-dashboard.md)
 [Dashboard tiles](powerbi-service-dashboard-tiles.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/).

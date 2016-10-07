@@ -106,7 +106,7 @@ We've seen that when you share a dashboard that has tiles that link to reports, 
 See [When you share with colleagues, above](powerbi-service-share-unshare-dashboard#When-you-share-your-dashboard-with-colleagues).
 
 ### Share a filtered version of a report
-What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. This can be done by creating a custom URL. 
+What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. This can be done by creating a custom URL.
 
 1.   Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md) and apply the filter. In this example we're filtering the [Retail Analysis sample](power-bi-sample-tutorial-connect-to-the-samples.md) to show only District FD-01.
 
