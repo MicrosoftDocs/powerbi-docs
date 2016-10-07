@@ -116,3 +116,5 @@ Add a field to the **Details** area to tell Power BI how to group the values. Th
  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 
 [Try it out -- it's free!](https://powerbi.com/)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

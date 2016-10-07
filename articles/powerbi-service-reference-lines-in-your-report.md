@@ -74,7 +74,7 @@ Use Power BI Desktop to create a new field (column) in your dataset. Then use th
 
     ![](media/powerbi-service-reference-lines-in-your-report/reference-lines-show.png)
 
-    >**NOTE**: Make sure **Unit Sales target** isn't being aggregated, for example, summed or counted. In the **Visualizations** pane, right-click **Unit Sales target** and select **Average**, **Minimum**, **Maximum**, or **Median**.
+    >[AZURE.NOTE] Make sure **Unit Sales target** isn't being aggregated, for example, summed or counted. In the **Visualizations** pane, right-click **Unit Sales target** and select **Average**, **Minimum**, **Maximum**, or **Median**.
 
     ![](media/powerbi-service-reference-lines-in-your-report/power-bi-reference-lines.png)
 
@@ -84,3 +84,5 @@ If you're using a field value as a reference line, and it's not displaying corre
 
 ##  See also
 [Learn more about calculated columns](powerbi-desktop-calculated-columns.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

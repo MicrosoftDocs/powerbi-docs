@@ -95,3 +95,5 @@ You won't be able to create a new column in DirectQuery mode.  But if your data 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

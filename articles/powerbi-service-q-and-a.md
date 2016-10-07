@@ -58,3 +58,5 @@ Are you the person creating datasets and data models?  Then this topic is for yo
 [Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
 
 [Make your data work well with Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -751,3 +751,5 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 ## See also  
 [Get started with Power BI](powerbi-service-get-started.md)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

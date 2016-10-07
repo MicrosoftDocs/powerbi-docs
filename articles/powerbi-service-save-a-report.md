@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/01/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 # Save a report in Power BI
 
@@ -27,7 +27,7 @@ After you change a report in Power BI, you can save it, save it with a new name,
 
 1.  If the file name in the top navigation bar has an asterisk next to it, you know the report has changed.
 
-    >**NOTE**: You cannot use Save As on a read-only report.
+    >[AZURE.NOTE] You cannot use Save As on a read-only report.
 
     ![](media/powerbi-service-save-a-report/savereport1.png)
 
@@ -42,4 +42,6 @@ After you change a report in Power BI, you can save it, save it with a new name,
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*﻿*
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

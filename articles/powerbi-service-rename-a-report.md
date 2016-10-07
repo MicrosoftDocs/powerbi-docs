@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 # Rename a report in Power BI
 
@@ -38,4 +38,6 @@ Don't like the default name of a report in Power BI?  A new name is just a clic
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*﻿*
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

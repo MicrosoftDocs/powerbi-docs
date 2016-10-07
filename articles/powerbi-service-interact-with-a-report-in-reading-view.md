@@ -64,7 +64,7 @@ If the report author added filters to a page in a report, you can interact with 
 
 4.  Make changes to the filters and see how the visuals are impacted. Here are a few to try:
 
-    -   Filter on **Fashions Direct** instead of **Lindseys** by removing the checkmark from one and adding it to the other. 
+    -   Filter on **Fashions Direct** instead of **Lindseys** by removing the checkmark from one and adding it to the other.
 
         ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-filter-chain.png)
 
@@ -100,3 +100,5 @@ Reports are viewed on many different devices, with varying screen sizes and aspe
 [Reports in Power BI](powerbi-service-reports.md)
 
 [About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

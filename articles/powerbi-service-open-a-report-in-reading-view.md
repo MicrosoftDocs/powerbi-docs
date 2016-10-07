@@ -41,4 +41,5 @@ Reading View is a great way to explore the data in a Power BI report, without wo
 ## See also  
  Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Get started with Power BI](powerbi-service-get-started.md)  
-[Power BI - Basic Concepts ](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts ](powerbi-service-basic-concepts.md)
+More questions? [Try the Power BI Community](http://community.powerbi.com/)  

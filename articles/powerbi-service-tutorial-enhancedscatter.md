@@ -31,7 +31,7 @@ For more information, watch this video about [Enhanced Scatter](https://youtu.be
 
 The steps below show just one way to use the enhanced scatter -- to create a visual that maps page clicks by number and location on a web page. Use your own dataset and discover even more ways to use this new custom visual.
 
->**NOTE**: Unfortunately, the dataset used in this tutorial is not available for download.
+>[AZURE.NOTE] Unfortunately, the dataset used in this tutorial is not available for download.
 
 ## Start by creating a basic bubble chart
 
@@ -68,7 +68,7 @@ I've created a typical bubble chart. The next steps demonstrate the advanced cap
 
 The enhanced scatter packs even more information into a single visualization. In these steps, add shapes, images, rotation, and a background.
 
->**IMPORTANT**  These visualization fields require your dataset to have measures that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this visualization field bucket).
+>[AZURE.IMPORTANT]  These visualization fields require your dataset to have measures that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this visualization field bucket).
 
 1. Add shapes that visually identifies the type of link: Download, Learn More, Pricing, Homepage, etc. Drag **ShapeMeasure** to **Shape**.  Power BI allows: circle, cross, diamond, square, triangle-up, triangle-down, star, hexagon, x, up arrow, and down arrow. These values must already exist in (or be added to) your dataset.
 
@@ -129,3 +129,5 @@ Right now, this visualization is not useful since it's displaying total clicks f
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

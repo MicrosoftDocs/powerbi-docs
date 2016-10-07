@@ -143,3 +143,5 @@ Highlighting a column or line in a combo chart cross-filters the other visualiza
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Try it out -- it's free!](https://powerbi.com/)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

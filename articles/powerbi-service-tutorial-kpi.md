@@ -35,7 +35,7 @@ KPIs are a great choice:
 ##  KPI visual requirements
 A Key Performance Indicator (KPI) is based on a specific measure and is designed to help you evaluate the current value and status of a metric against a defined target. Therefore, a KPI visual requires a *base* measure that evaluates to a value and a *target* measure or value, and a threshold or goal.
 
->**NOTE**: Currently, a KPI dataset needs to contain goal values for a KPI. This can be done by adding an excel sheet with goals to your data model or PBIX file.
+>[AZURE.NOTE] Currently, a KPI dataset needs to contain goal values for a KPI. This can be done by adding an excel sheet with goals to your data model or PBIX file.
 
 ##  How to create a KPI  
 
@@ -80,3 +80,5 @@ KPIs are also available on your mobile devices – keeping you always connected 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

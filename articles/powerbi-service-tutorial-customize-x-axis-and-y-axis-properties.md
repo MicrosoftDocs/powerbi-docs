@@ -23,7 +23,7 @@
 
 In this tutorial you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes or can be customized; Pie charts, for example, don't have axes. And customization options vary from visual to visual, too many options to cover in a single article. So we'll take a look at some of the most-used axes customizations and get you comfortable using the visual formatting tab in the Power BI report canvas.  
 
->**Note**: This page applies to both Power BI service and Power BI Desktop. These customizations, which are available when the **Format** (the paint roller icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) is selected, are also available in Power BI Desktop.  
+>[AZURE.NOTE] This page applies to both Power BI service and Power BI Desktop. These customizations, which are available when the **Format** (the paint roller icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) is selected, are also available in Power BI Desktop.  
 
 ## Customizing visualization X-axes in reports
 
@@ -47,7 +47,7 @@ Sign in to the Power BI service and open the **Retail Analysis Sample** report i
 
      ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-customizexaxisnew.png)
 
-    >**NOTE**: If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical. 
+    >[AZURE.NOTE] If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical. 
 
 To revert all the X-axis customization you've done so far, select **Revert To Default **at the bottom of the **X-axis** customization pane.
 
