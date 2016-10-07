@@ -23,26 +23,25 @@
 
 # Tutorial: slicers in Power BI  
 
-A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.  
-
-  ![](media/powerbi-service-tutorial-slicers/PBI_slicer.png)
+Your VP or Sales wants to be able to look at a number of metrics, for the entire division and for each individual District Manager. She could create a separate report page for each manager, or she could use a slicer. A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.  
+  ![](media/powerbi-service-tutorial-slicers/slicer2.gif)
 
 ## When to use a slicer  
-Slicers are a great choice:
+Slicers are a great choice in the following situations.
 
--   to display commonly-used or important filters on the report canvas for easier access.
+-   To display commonly-used or important filters on the report canvas for easier access.
 
--   to make it easier to see the current filtered state without having to open a drop-down list to find the filtering details.
+-   To make it easier to see the current filtered state without having to open a drop-down list to find the filtering details.
 
 - When you want to hide columns you don't need but still be able to use them to filter - this makes for narrower, cleaner tables.
 
-- to create more focused reports - since slicers are floating objects you can put them next to the interesting part of the report you want your users to focus on.
+- To create more focused reports - since slicers are floating objects you can put them next to the interesting part of the report you want your users to focus on.
 
 ## Create a slicer
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7rrvpa6KUto" frameborder="0" allowfullscreen></iframe>
 
-1.  Open the Retail Analysis Sample in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).
+1.  Open the [Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).
 
 2. From the Fields pane, select **District > District Manager**. 
 
@@ -105,6 +104,18 @@ Do you want the slicer to only filter some of the visuals on the report page?  U
     ![](media/powerbi-service-tutorial-slicers/filter-controls.png)
 
 For more information, see [Visual interactions in a Power BI report](documentation/powerbi-service-visual-interactions.md).
+
+##  Limitations of slicers in Power BI
+There are a few limitations to using slicers in Power BI, which are the following:
+1.  Slicers do not support input fields.
+
+2.  A single slicer cannot be used across an entire report. A slicer only impacts the current page.
+
+3.  Slicers cannot be pinned to a dashboard.
+
+4.  Drilldown is not supported for slicers.
+
+Do you have ideas for how to improve Power BI? [Submit an idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 
 ## See also  
  [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
