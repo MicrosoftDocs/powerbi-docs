@@ -23,7 +23,7 @@
 
 # Pin a tile to a Power BI dashboard from Excel
 
-Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks.Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks. Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l8JoB7w0zJA" frameborder="0" allowfullscreen></iframe>
 
@@ -39,7 +39,7 @@ Watch Will demonstrate several ways to import data from, and connect to, Excel w
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_pinnedFromExcel.png)
 
-    Open the workbook in Power BI by selecting the report name.
+4.  Open the workbook in Power BI by selecting the report name.
 
 >[AZURE.NOTE]  Changes you make to the workbook in Power BI are not saved and do not affect the original workbook on OneDrive for Business. If you sort, filter, or change values in Power BI, those changes cannot be saved or pinned. To update the workbook, open it in Excel Online by selecting the ellipses and choosing **Edit**. Changes to the workbook may take a few minutes to be updated in the tiles.     
 

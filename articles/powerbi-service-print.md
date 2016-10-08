@@ -43,7 +43,7 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
 
     > [AZURE.NOTE] The print dialog you see will depend on which browser you are using.
 
-   ![](media/powerbi-service-print/pbi_print_dash_new2.png)
+    ![](media/powerbi-service-print/pbi_print_dash_new2.png)
 
 
 ## Print a dashboard tile
@@ -54,7 +54,7 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
 
 2. Hover over the tile to reveal the Options menu.
 
-  ![](media/powerbi-service-print/menu-options-new.png)
+    ![](media/powerbi-service-print/menu-options-new.png)
 
 3. Select the Print icon
     ![](media/powerbi-service-print/print-icon.png). Continue with step 3 above.

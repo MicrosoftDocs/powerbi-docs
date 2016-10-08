@@ -95,4 +95,5 @@ Full Screen reports don't have the option to print or the options for **Fit to s
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

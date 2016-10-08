@@ -21,7 +21,7 @@
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from the Q&A question box  
-
+## How to pin a tile from Q&A
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
 1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).

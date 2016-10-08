@@ -21,11 +21,10 @@
    ms.author="mihart"/>
 
 # Open a Power BI report in Reading View  
-
+##   Reading View
 Reading View is a great way to explore the data in a Power BI report, without worrying that you'll break something.  You can browse the report, interact with the visualizations, and pin any of the visualizations to your dashboard. 
 
->**Note:**  
->To edit the report and save your changes, [open it in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
+>[AZURE.NOTE] To edit the report and save your changes, [open it in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 1.  [Create a report](powerbi-service-create-a-new-report.md) and open it in Reading View.
 
@@ -39,7 +38,10 @@ Reading View is a great way to explore the data in a Power BI report, without wo
 3.  There's so much you can do in Reading View.  Start by browsing the report by clicking the arrows at the bottom of the screen.  This sample report has multiple pages. Now start [interacting with your report](powerbi-service-interact-with-a-report-in-reading-view.md)
 
 ## See also  
- Read more about [reports in Power BI](powerbi-service-reports.md)  
-[Get started with Power BI](powerbi-service-get-started.md)  
+Read more about [reports in Power BI](powerbi-service-reports.md)
+
+[Get started with Power BI](powerbi-service-get-started.md)
+
 [Power BI - Basic Concepts ](powerbi-service-basic-concepts.md)
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)  

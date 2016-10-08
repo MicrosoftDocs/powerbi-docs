@@ -106,7 +106,7 @@ Select **Advanced Filtering** to switch to advanced mode. Use the dropdown contr
 ![](media/powerbi-service-how-to-use-a-report-filter/aboutFilters.png)
 
 ## Types of filters: numeric field filters  
-#### List mode  
+### List mode  
 If the values are finite, selecting the field name displays a list.  See **Text field filters** &gt; **List mode** above for help using checkboxes.   
 
 ### Advanced mode  

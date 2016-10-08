@@ -36,11 +36,11 @@ Dashboards can be removed. Removing the dashboard does not delete the underlyi
 
 2.  Select **Remove**.  Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
 
->**Note:**  
->Dashboards that are part of an organizational content packs have a different process for deleting.  See [Delete an organizational content pack](powerbi-service-organizational-content-pack-delete.md).
+>[AZURE.NOTE]  Dashboards that are part of an organizational content packs have a different process for deleting.  See [Delete an organizational content pack](powerbi-service-organizational-content-pack-delete.md).
 
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Get Started with Power BI](powerbi-service-get-started.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/) 
