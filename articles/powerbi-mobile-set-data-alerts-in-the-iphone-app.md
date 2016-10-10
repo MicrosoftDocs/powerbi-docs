@@ -24,6 +24,12 @@
 
 You can set alerts in the Power BI mobile app on the iPhone and iPad, and in the Power BI service, to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts on your iPhone or iPad and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
 
+> [AZURE.WARNING] Data-driven alert notifications provide information about your data. If your device gets stolen, we recommend going to the Power BI service to turn off all data-driven alert rules. 
+> 
+> Learn more about [managing data alerts in the Power BI service](powerbi-service-set-data-alerts.md).
+
+## Set an alert
+
 1.  Tap a number or gauge tile in a dashboard to open it in focus mode.  
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-card-visual.png)
@@ -73,12 +79,9 @@ Data sources are often set to refresh daily, although some refresh more often. W
 
 >**Note**: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
 
-
-## Manage alerts
+## Manage alerts on your iPhone or iPad
 
 You can manage individual alerts on your mobile device or [manage all your alerts in the Power BI service](powerbi-service-set-data-alerts.md).
-
-### Manage alerts on your iPhone or iPad
 
 1.  In a dashboard, tap a number or gauge tile that has an alert.  
 
