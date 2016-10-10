@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/10/2015"
+   ms.date="10/10/2016"
    ms.author="asaxton"/>
 
 # Review custom visuals for security and privacy
