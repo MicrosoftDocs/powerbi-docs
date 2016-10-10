@@ -1,10 +1,10 @@
 ﻿<properties
-   pageTitle="Publish from Power BI to the web"
-   description="Publish from Power BI to the web"
+   pageTitle="Publish to web from Power BI"
+   description="With Power BI Publish to web, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device."
    services="powerbi"
    documentationCenter=""
-   authors="davidiseminger"
-   manager="mblythe"
+   authors="guyinacube"
+   manager="ericre"
    backup=""
    editor=""
    tags=""
@@ -17,14 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/08/2016"
-   ms.author="davidi"/>
+   ms.date="10/10/2016"
+   ms.author="asaxton"/>
 
-# Publish from Power BI to the web
+# Publish to web from Power BI
 
-With Power BI **Publish to web** you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, and all sorts of other online communications, on any device. You can also easily edit, update, refresh or un-share your published visuals.
+With Power BI **Publish to web**, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
 
-> **Warning:** When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
+You can also easily edit, update, refresh or un-share your published visuals.
+
+> [AZURE.WARNING] When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
 
 ## How to use Publish to Web
 
@@ -33,9 +35,7 @@ With Power BI **Publish to web** you can easily embed interactive Power BI visua
 You can watch how this feature works in the following *short video*. Then, follow the steps below to try it yourself.
 
 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
-
 
 
 The following steps describe how to use **Publish to web**.
@@ -60,7 +60,6 @@ The following steps describe how to use **Publish to web**.
 5.  If you’ve previously created an embed code for the report, the embed code quickly appears. You can only create one embed code for each report.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web5.png)
-
 
 
 ## Tips and Tricks for View modes
@@ -162,7 +161,6 @@ When viewing the **Manage embed codes** page for your **Publish to web** embed c
 |**Not supported**|The report's data set is using row level security, or another unsupported configuration. See the **Limitations** section for a complete list.|
 
 
-
 ## How to report a concern with Publish to web content
 
 To report a concern related to **Publish to web** content embedded in a website or blog, use the **Flag** icon in the bottom bar, shown in the following image. You’ll be asked to send an email to Microsoft explaining the concern. Microsoft will evaluate the content based on the Power BI Terms of Service, and take appropriate action.
@@ -180,3 +178,5 @@ You need to be a Microsoft Power BI user to use **Publish to web**. The consumer
 When you create an embed code using **Publish to web**, the report is made visible to users on the Internet. It’s publicly available so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This approach ensures the report can be viewed by thousands of concurrent users without any impact on performance.  
 
 The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report viewed by your users. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings.
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
