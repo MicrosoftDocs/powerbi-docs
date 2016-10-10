@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/30/2016"
+   ms.date="10/10/2016"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI app for iOS on the iPhone and iPad
@@ -32,11 +32,11 @@ You can set alerts in the Power BI mobile app on the iPhone and iPad, and in the
 
 3.  Tap **Add alert rule**.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-no-alert-rules-yet.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-add-alert-rule.png)
 
 4.  Choose to receive alerts above or below a value, then set the value.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-set-alert-rule.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-set-alert-threshold.png)
 
 4.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
 
@@ -48,7 +48,7 @@ You can set alerts in the Power BI mobile app on the iPhone and iPad, and in the
 
 7.  A single tile can have alerts for values both above and below thresholds. In **Manage alerts**, tap **Add alert rule**.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-add-alert-rule.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-add-another-alert-rule.png)
 
 ## Receiving alerts
 
@@ -66,9 +66,10 @@ Data sources are often set to refresh daily, although some refresh more often. W
 
 3.  Power BI adds a message to your **Notification center** and adds a new alert icon to the applicable tile ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/powerbi-alert-tile-notification-icon.png).
 
-     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-notifications.png) 
 
-4. [Open your **Notification center**](powerbi-mobile-notification-center.md)  to see the alert details.
+4. Tap the global navigation button ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-alert-global-nav-button.png) to [open your **Notification center**](powerbi-mobile-notification-center.md) and see the alert details.
+
+     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-notifications.png) 
 
 >**Note**: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
 
@@ -83,11 +84,11 @@ You can manage individual alerts on your mobile device or [manage all your alert
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-card-visual.png)
 
-2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-alert-icon.png).  
+2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-has-alert-icon.png).  
 
-3. Tap the alert to change a value, turn it off, or delete it.
+3. Tap the name of the alert to edit it, tap the slider to turn off email alerts, or tap the garbage can to delete the alert.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-add-alert-rule.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-edit-delete-alert.png)
 
 ## Tips and troubleshooting
 - Alerts currently aren't supported for Bing tiles or card tiles with date/time measures.
