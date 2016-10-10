@@ -4,7 +4,7 @@ description="How to manage the on-premises data gateway and data sources that be
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/06/2016"
+ms.date="10/01/2016"
 ms.author="asaxton"/>
 # Manage your data source - Analysis Services
 
@@ -48,7 +48,7 @@ You can use a live connection against tabular or multidimensional instances.
 
 To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
-> NOTE: **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> [AZURE.NOTE] **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
 
 ## Remove a gateway
 
@@ -74,7 +74,7 @@ You will then want to fill in the information for the data source which includes
 
 The **Username** and **Password** that you enter will be used by the gateway to connect to the Analysis Services instance. 
 
-> NOTE: The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
+> [AZURE.NOTE] The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-ssas.png)
 
@@ -140,7 +140,7 @@ To get to the UPN Mapping screen, do the following.
     
 You will then see options to add rules as well as test for a given user.
 
-> **Note**: You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.local would be sent as v-dave*@contoso.local*.
+> [AZURE.NOTE] You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.local would be sent as v-dave*@contoso.local*.
 
 Currently you can only supply rules for **Effective user names**.
 
@@ -188,7 +188,7 @@ On the Administrators tab, for the gateway, you can add, and remove, users that 
 
 On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
 
-> NOTE: The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
+> [AZURE.NOTE] The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
 
@@ -196,7 +196,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 
 After you have created the data source, it will be available to use with either live connections, or through scheduled refresh. 
 
-> **Note**: Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
+> [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
 
 The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
 
