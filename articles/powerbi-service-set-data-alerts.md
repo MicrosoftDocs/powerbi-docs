@@ -27,7 +27,7 @@ Set alerts to notify you when data in your dashboards changes beyond limits you 
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
-> [AZURE.WARNING] Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all data-driven alert rules. 
+> [AZURE.WARNING] Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
 
 ## Set data alerts in Power BI service
 Watch Amanda add some alerts to tiles on her dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
@@ -72,7 +72,7 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-notfication.png)
 
->**Note**: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
+>[AZURE.NOTE] Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
 
 
 ## Manage alerts
@@ -115,3 +115,4 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 ### See also
 - [Set data alerts on your iphone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
 - [Get started with Power BI](powerbi-service-get-started.md)
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

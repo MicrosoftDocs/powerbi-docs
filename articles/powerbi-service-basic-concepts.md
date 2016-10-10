@@ -202,3 +202,5 @@ This area of the workspace contains icons for interacting with the dashboard.  B
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI videos](powerbi-videos.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

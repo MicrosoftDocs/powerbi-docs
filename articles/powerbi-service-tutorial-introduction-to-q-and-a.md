@@ -71,3 +71,5 @@ How would we go about creating this same line chart using Q&A?
 [Make your data work well with Q&A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
 [preparing a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

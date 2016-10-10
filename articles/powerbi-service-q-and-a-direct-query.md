@@ -84,3 +84,5 @@ During the Preview phase of this feature, there are several limitations:
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

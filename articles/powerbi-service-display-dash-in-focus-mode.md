@@ -30,10 +30,9 @@
 
 ***Focus*** mode lets you expand (pop out) a dashboard tile or report visual to see more detail.  While in Focus mode for a dashboard tile, you can view and modify the filters that were applied when this visual was created.  And while in Focus mode for a report visual, you can view and modify the Visual level and Page level filters.
 
->**NOTE**: Currently, Focus mode is not available for tiles created from Q&A or for map tiles. 
+>[AZURE.NOTE] Currently, Focus mode is not available for tiles created from Q&A or for map tiles. 
 
->**NOTE**:
->Focus is different from full screen mode.  Full screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
+>[AZURE.NOTE]  >Focus is different from full screen mode.  Full screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
 
 1.  Hover over the tile or visual and select the **Focus mode** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
 
@@ -57,3 +56,5 @@ Once in Focus mode, the tile or visual can then be [viewed in full screen (TV Mo
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

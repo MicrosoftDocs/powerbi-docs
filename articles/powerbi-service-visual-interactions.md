@@ -29,7 +29,7 @@ See [About filtering and highlighting](powerbi-service-about-filters-and-highlig
 
 To change this default behavior, use the **Visuals Interaction** control.
 
->**NOTE**: The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to filter and highlight visualizations.  
+>[AZURE.NOTE] The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to filter and highlight visualizations.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N_xYsCbyHPw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -55,4 +55,6 @@ To change this default behavior, use the **Visuals Interaction** control.
 
 [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*﻿*
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

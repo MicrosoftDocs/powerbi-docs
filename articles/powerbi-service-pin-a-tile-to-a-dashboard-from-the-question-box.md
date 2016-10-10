@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="10/08/2016"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from the Q&A question box  
-
+## How to pin a tile from Q&A
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
 1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
@@ -58,3 +58,4 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

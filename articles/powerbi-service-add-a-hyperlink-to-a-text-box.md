@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="10/08/2016"
    ms.author="mihart"/>
 
 # Add a hyperlink to a text box in a report
@@ -77,3 +77,5 @@ Text boxes can be added to reports, pinned to dashboards from reports, and added
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -21,7 +21,7 @@
    ms.author="mihart"/>
 # Tips and tricks for creating reports in Power BI service
 
->**NOTE**: This topic gives suggestions for improving the look and feel of your reports. All of these suggestions can be applied whether you are using Power BI service or Power BI Desktop.  For more technical tips & tricks for creating reports, see [Tips and Tricks for creating reports in Power BI Desktop](powerbi-desktop-tips-and-tricks-for-creating-reports).
+>[AZURE.NOTE] This topic gives suggestions for improving the look and feel of your reports. All of these suggestions can be applied whether you are using Power BI service or Power BI Desktop.  For more technical tips & tricks for creating reports, see [Tips and Tricks for creating reports in Power BI Desktop](powerbi-desktop-tips-and-tricks-for-creating-reports).
 
 
 ### Watch the Dashboard Makeover webinar
@@ -42,3 +42,5 @@ Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Reports in Power BI](powerbi-service-reports.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

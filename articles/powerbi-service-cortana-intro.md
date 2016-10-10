@@ -79,3 +79,5 @@ Any Power BI user can use Cortana to ask questions about their Power BI datasets
 [Introduction to Power BI Q&A](powerbi-service-q-and-a.md)
 
 [Power BI basic concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

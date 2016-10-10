@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="10/09/2016"
    ms.author="mihart"/>
 
 # Tutorial: Part I, Add visualizations to a Power BI report
@@ -82,3 +82,5 @@ More about [Visualizations in Power BI reports](powerbi-service-visualizations-f
 [Reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

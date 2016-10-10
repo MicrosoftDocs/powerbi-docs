@@ -115,4 +115,7 @@ You can also use a non-aggregated field as a numeric field. For example, if you 
 
 ## See also  
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
+
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

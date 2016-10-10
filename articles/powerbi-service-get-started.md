@@ -137,3 +137,4 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 -   Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
 -   Subscribe to our [YouTube video channel](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 -   Watch our [Power BI Getting Started webinars](powerbi-webinars.md) on demand
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)
