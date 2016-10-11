@@ -34,7 +34,7 @@ After you are signed in, you will have the option to configure a new gateway, or
 
 2.	Enter a **recovery key**. This has to be a minimum of 8 characters.
 
-3.	Select **Confgure**.
+3.	Select **Configure**.
 
 > [AZURE.NOTE] The recovery key will be needed if you ever need to migrate, restore or take over a gateway. Be sure to keep this key in a safe place.
 
