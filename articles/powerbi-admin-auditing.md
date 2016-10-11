@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/16/2016"
+   ms.date="10/11/2016"
    ms.author="asaxton"/>
 # Auditing Power BI in your organization
 
@@ -29,7 +29,7 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 
 You can filter the audit data by date range, user, dashboard, report, dataset and activity type. You can also download the activities in a csv (comma separated value) file to analyze offline.
 
-> [AZURE.NOTE] The auditing feature in Power BI is in preview and is only available in the United States currently.
+> [AZURE.NOTE] The auditing feature in Power BI is in preview and is available in all data regions except those in Austrailia and Europe.
 
 ## Enabling auditing functionality in the Power BI admin portal
 
