@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/21/2016"
+ms.date="10/12/2016"
 ms.author="asaxton"/>
 # On-premises data gateway in-depth
 

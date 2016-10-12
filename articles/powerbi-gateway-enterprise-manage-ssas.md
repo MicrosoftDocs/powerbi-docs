@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="10/01/2016"
+ms.date="10/12/2016"
 ms.author="asaxton"/>
 # Manage your data source - Analysis Services
 
@@ -140,7 +140,7 @@ To get to the UPN Mapping screen, do the following.
     
 You will then see options to add rules as well as test for a given user.
 
-> [AZURE.NOTE] You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.local would be sent as v-dave*@contoso.local*.
+> [AZURE.NOTE] You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.com would be sent as v-dave*@contoso.local*.
 
 Currently you can only supply rules for **Effective user names**.
 
@@ -159,15 +159,20 @@ When you select an item in the list, you can choose to re-order it by using the 
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-entry-selected.png)
 
+### Using Wildcard(*)
+
+You can use a wildcard for your **Replace (Original name)** string. It can only be used on its own and not with any other string part. This will allow you to take all users and pass a single value to the data source. This is useful when you want all users in your organization to use the same user in your local environment.
+
 ### Test a mapping rule
 
 You can validate what an original name will be replaced with by entering a value for **Original name** and selecting **Test rule**.
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-test-mapping-rule.png)
 
+> [AZURE.NOTE] Rules that are saved will take a few minutes for the service to start using them. Within the browser, the rule will work immediately.
+
 ### Limitations for mapping rules
 
-- Wildcards (\*) are not allowed.
 - Mapping is for the specific data source that is being configured. It is not a global settings. If you have multiple Analysis Services data sources, you will have to map the users for each data source.
 
 ## Remove a data source
