@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/09/2016"
+   ms.date="10/12/2016"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
 
 The iPad app for Microsoft Power BI for iOS is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards and reports easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
 
-![](media/powerbi-mobile-ipad-app-get-started/pbi_ipad_dashhomepop.png)
+![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-sample-dashboard.png)
 
 You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
 
@@ -53,7 +53,7 @@ Go to [Power BI to sign up](http://go.microsoft.com/fwlink/?LinkID=513879) for t
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-connect-to.png)
 
-    >**Tip**: When you're in the app, tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner to go between the two services. 
+    >**Tip**: When you're in the app, tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner to go between the two services. 
 
 ## Try the Power BI and Reporting Services samples  
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
@@ -62,7 +62,7 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 
 You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
 
-1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner.
+1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner.
   
 2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
 
@@ -72,13 +72,22 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 ### Reporting Services mobile report samples
 
-1.   Tap the options icon ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_OptionsIcon.png) in the upper-left corner.
+1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner.
 
 2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-reporting-services-samples.png)
 
-## More with dashboards and reports in Power BI  
+## Search for a dashboard or report
+
+* Tap the magnifying glass in the upper-right corner ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-search-icon.png), then type the term to find.
+
+    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-search.png)
+
+    By default it searches all dashboards and reports, but you can search just one or the other.
+
+
+## More with Power BI dashboards and reports in the mobile apps 
 See what else you can do in the iPad app with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-on-the-ipad-app.md).
@@ -87,6 +96,7 @@ See what else you can do in the iPad app with dashboards and reports in Power BI
 -   [Share Power BI dashboards](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
 -   [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
 -   View your [groups' Power BI dashboards and reports](powerbi-service-mobile-groups-in-the-ipad-app.md).
+-   [Set data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to get notifications when your data changes.
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
    
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-notifications.png)

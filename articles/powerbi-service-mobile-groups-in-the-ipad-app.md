@@ -34,15 +34,20 @@ Then you see and interact with group dashboards and reports in the Microsoft [P
 
     Need to [download and install the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062) first?
 
-2.  Tap the **Options** icon ![](media/powerbi-service-mobile-groups-in-the-ipad-app/PBI_iPad_OptionsIcon.png) in the upper-left corner.
+2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) in the upper-left corner.
 
 3.  Select a group.
 
-    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-groups-menu.png)
+    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group-menu.png)
 
 4.  Your group page displays the dashboards and reports that have been published to the group workspace.
 
-    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group.png)
+    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group-home.png)
+
+     -     Yellow stars ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-mobile-yes-favorite-icon.png) show which dashboards are your favorites. 
+
+     -     The notation below each dashboard name ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
+
 
 5.  [Select a dashboard](powerbi-mobile-dashboards-on-the-ipad-app.md) or [select a report](powerbi-mobile-reports-on-the-ipad-app.md) to open and view it.
 
