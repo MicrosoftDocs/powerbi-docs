@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/11/2016"
+   ms.date="10/12/2016"
    ms.author="maggies"/>
 
 # Share dashboards from the iPad app (Power BI for iOS)
@@ -26,7 +26,7 @@ You can invite colleagues to view and interact with your dashboards from the Pow
 
 ## Share a dashboard with colleagues
 
->Note: The people you share dashboards with need to [sign up for Power BI](https://powerbi.microsoft.com), too.
+> [AZURE.NOTE]  The people you share dashboards with need to [sign up for Power BI](https://powerbi.microsoft.com), too.
 
 1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) icon in the upper-right corner of your dashboard.
 
@@ -34,7 +34,7 @@ You can invite colleagues to view and interact with your dashboards from the Pow
 
 3.  To allow resharing, leave **Allow recipients to share this dashboard** selected.
 
-    >**Note**   Resharing allows your colleagues to forward the email invitation to other colleagues, either through the web or the mobile apps. See [Notes about sharing dashboards](powerbi-mobile-share-dashboards-from-the-ipad-app.md#notes-about-sharing-dashboards), below.
+    > [AZURE.NOTE]    Allowing your colleagues to reshare means they can forward the email invitation to other colleagues, either through the web or the mobile apps. See [Notes about sharing dashboards](powerbi-mobile-share-dashboards-from-the-ipad-app.md#notes-about-sharing-dashboards), below.
 
 4.  Tap **Send** in the upper-right corner.
 
