@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/17/2016"
+   ms.date="10/11/2016"
    ms.author="maggies"/>
 
 # Share dashboards from the iPad app (Power BI for iOS)
 
-Read how you can invite colleagues to view your dashboards and [snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) from the Power BI app for iOS on your iPad.
+You can invite colleagues to view and interact with your dashboards from the Power BI app for iOS on your iPad. You can also share [snapshots of tiles](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) with anyone, in or out of your email domain.
 
 ## Share a dashboard with colleagues
 
->Note: The people you share it with need to [sign up for Power BI](https://powerbi.microsoft.com), too.
+>Note: The people you share dashboards with need to [sign up for Power BI](https://powerbi.microsoft.com), too.
 
 1.  Tap the **Share** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) icon in the upper-right corner of your dashboard.
 
@@ -66,7 +66,7 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 -   Your colleagues can see your dashboard and even see changes you make in the Power BI service online, after you save those changes.
 
--   You can share snapshots of tiles with anyone, in or out of your email domain.You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
+-   You can share snapshots of tiles with anyone, in or out of your email domain. You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
 
 ### See also
 
@@ -74,3 +74,4 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 - [Annotate and share a snapshot of a tile from the iPad app](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
 - [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
 - [The iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI for iOS
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

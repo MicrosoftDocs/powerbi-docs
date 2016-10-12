@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/24/2016"
+   ms.date="10/11/2016"
    ms.author="maggies"/>
 # Reports in the Power BI mobile app for Windows 10
 
@@ -34,7 +34,7 @@ You can open reports in **My workspace** or in a group on your Windows 10 phone 
     
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-reports-home.png)
 
--   Or tap the search icon to see the list of reports you've visited recently or to search for it by name.
+-   Or tap the search icon ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-ipad-search-icon.png) to see the list of reports you've visited recently or to search for it by name.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-search-page.png)
 
@@ -59,7 +59,7 @@ You can open reports in **My workspace** or in a group on your Windows 10 phone 
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-report-sort.png)
 
-3.  To reverse the sort order, tap **A\>Z** or **Z\>A**. 
+3.  To reverse the sort order, tap the **Sort by** arrow, then tap the same field name again. 
 
 ## Cross-filter and highlight a Power BI report page
 
@@ -86,25 +86,25 @@ You can always filter individual visuals in a Power BI report by using the field
 > - If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
 > - Report filtering isn't available on Windows 10 phones. However, slicers are available on phones. See [Use slicers to filter the report page](powerbi-mobile-reports-in-the-windows-app.md#use-slicers-to-filter-the-report-page).
 
-1. In a report, expand the Filters pane, if it's collapsed.
+1. In a report, expand the Filters pane.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppCollapsFilter.png)
 
-    If the report creator has set page-level filters, when you select a visual you see filters for the page and the visual.
+    If the report creator has set page-level filters, when you select a visual you see *visual-level filters* for that visual, and *page-level filters* for the whole page.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinApp_PgVizFilter.png)
+    ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-filter-pane-visual.png)
 
 2. Select check boxes for the values you want.
 
-    ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinApp_PageFilter.png)
+3. Or you can switch the filtering mode. Tap **Basic filtering** and select **Advanced filtering** to select values using expressions instead.
 
-3. Or you can switch the filtering mode. Tap **Advanced filtering** ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppAdvFilter.png) at the end of the list of values, to select values using expressions instead.
+    ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-filter-type.png)
 
- -   Number fields offer expressions such as **is less than**, **is greater than**, **is not**, and **is blank**.
+    Number fields offer expressions such as **is less than**, **is greater than**, **is not**, and **is blank**.
 
-        ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppAdvFilterOptions.png)
+       ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppAdvFilterOptions.png)
 
- -   Text fields offer expressions such as **contains**, **doesn't start with**, and **is not**.
+    Text fields offer expressions such as **contains**, **doesn't start with**, and **is not**.
 
 4.  To add other fields to the Filters pane, go to the Power BI service ([https://powerbi.com](http://powerbi.com/)), [add filters to the page](powerbi-service-add-a-filter-to-a-report.md), and save the report.
 
@@ -124,7 +124,14 @@ In charts with up and down arrows in the upper corners, you can drill down to se
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_DrillUp.png)
 
+## Go back to My Workspace
+
+-  Tap the back arrow, or tap the report name > **My Workspace**.
+
+    ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-report-breadcrumb.png)
+
 ### See also
 
-[Get started with the Power BI app for Windows 10 devices](powerbi-service-windows-app-get-started.md).
+- [Get started with the Power BI app for Windows 10 devices](powerbi-service-windows-app-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
