@@ -106,6 +106,6 @@ Some **custom visuals** are created by third-parties, some are created by Micros
 This document does not cover the use of Power BI Mobile apps.  
 
 
-### On-premises Gateway and ExpressRoute
+### On-premises Data Gateway and ExpressRoute
 
-When an **On-premises Gateway** is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the **Power BI SaaS Application and ExpressRoute** section found earlier in this topic.  
+When an **On-premises Data Gateway** is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the **Power BI SaaS Application and ExpressRoute** section found earlier in this topic.  
