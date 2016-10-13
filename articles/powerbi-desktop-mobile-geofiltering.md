@@ -49,13 +49,19 @@ For example, say you're a sales manager traveling to meet customers, and you'd l
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-report.png)
 
+    In this example, the model also contains a calculated column that brings city and state together in one column. Read about [creating calculated columns in Power BI Desktop](powerbi-desktop-calculated-columns.md).
+
+    ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-city-state-column.png)
+
 6. Publish the report to the Power BI service.
 
 ## View the report in Power BI app for iOS
 
-When you view the report in the [Power BI app for iOS](powerbi-mobile-ipad-iphone-apps.md), if you're in a geographic location with data in the report, you can filter it automatically to your location.
+1. Open the report in the [Power BI app for iOS](powerbi-mobile-ipad-iphone-apps.md).
 
-![](media/powerbi-desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
+2. If you're in a geographic location with data in the report, you can filter it automatically to your location.
+
+    ![](media/powerbi-desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
 Read more about [filtering a report by location in the Power BI mobile apps for iOS](powerbi-mobile-geofiltering.md).
 
