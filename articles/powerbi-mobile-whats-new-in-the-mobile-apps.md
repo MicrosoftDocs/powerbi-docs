@@ -17,10 +17,62 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2016"
+   ms.date="10/14/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## September/October 2016
+
+### All phones
+
+**Improved navigation**
+The main navigation has a new look, and groups navigation has moved to the groups catalog. 
+ 
+**Improved warnings and banners**
+Warnings in the mobile app are now more noticeable for tiles, visuals, and application banners.
+
+**Report and dashboard performance improvements**
+Improved the experience of loading reports and dashboards in the Power BI mobile apps
+ 
+**Enhanced alert notifications**
+Notifications for your data-driven alerts now contain more information on what triggered the alert and why.
+
+**Conditional access**
+When returning to your trusted network you no longer need to sign in again with your Power BI account.
+ 
+### iOS on iPhones and iPads
+
+**Apple Watch refresh improvements**
+The Apple Watch mobile app has been improved for Watch OS3
+
+**Request access to dashboards directly from your mobile **
+When you click a link or scan a QR code for a dashboard tile that hasn't been shared with you, now you can ask the dashboard owner for access right from the Power BI app.
+ 
+**Improved tile annotations**
+We've improved the experience of annotating and sharing a snapshot of a tile.
+
+## Android phones
+
+**Added manual tile refresh**
+You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the dataset.
+ 
+**Geographic filtering**
+You can now filter your report based on your current location, and see only the data you need.
+
+## Windows 10 devices
+
+**Geographic filtering**
+You can now filter your report based on your current location, and see only the data you need.
+
+**Support for Intune MAM**
+Added support for Intune MAM (MDM-less) capabilities.
+ 
+**Support for Intune MDM**
+Added support for Intune Mobile Device Management (MDM) capabilities.
+
+Read more about [Microsoft Intune on Power BI mobile apps](powerbi-admin-mobile-intune.md).
+
 
 ## August 2016
 
