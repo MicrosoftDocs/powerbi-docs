@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -37,7 +37,7 @@ Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-th
 ## Download the iOS app for the iPad  
 [Download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store.
 
->**Note:** Your iPad needs to be running at least iOS 9.0. 
+> [AZURE.NOTE]  Your iPad needs to be running at least iOS 9.0. 
 
 ## Sign up for the Power BI service
 

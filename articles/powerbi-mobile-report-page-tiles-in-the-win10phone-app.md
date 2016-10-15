@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/24/2016"
+   ms.date="10/14/2016"
    ms.author="maggies"/>
 
 # View report page tiles in the Power BI mobile app for Windows 10
@@ -26,18 +26,16 @@ When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI ser
 
 1.  When you open a [dashboard in the Power BI mobile app for Windows 10](powerbi-mobile-dashboards-in-the-win10phone-app.md), you see a small image of the report.
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-win10phone-app/pbi_iph_livetileindash.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-win10phone-app/power-bi-windows-10-report-tile.png)
 
 2. Tap the tile. The pinned report page opens in landscape mode. 
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-win10phone-app/pbi_iph_liverpttilenox.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-win10phone-app/power-bi-windows-10-report-tile-open.png)
 
 3.   Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ### See also
 
-[Tiles in the Power BI mobile app for Windows 10](powerbi-mobile-tiles-in-the-win10phone-app.md)
+- [Tiles in the Power BI mobile app for Windows 10](powerbi-mobile-tiles-in-the-win10phone-app.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
-[Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)
-
-[Get started with Power BI](powerbi-service-get-started.md)
