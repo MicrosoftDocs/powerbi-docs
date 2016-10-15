@@ -133,4 +133,5 @@ If the field values represent date or time, you can specify a start/end time wh
 
 Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

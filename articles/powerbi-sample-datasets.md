@@ -26,7 +26,7 @@
 
 Want to try the Power BI service with industry-specific sample data?  
 
->**NOTE**: These samples are for use in the Power BI service...not Power BI Desktop.
+>[AZURE.NOTE] These samples are for use in the Power BI service...not Power BI Desktop.
 
 Microsoft has created sample content for you to use with Power BI. Each of these samples is available as a **content pack** and as a separate Excel workbook. A *content pack* is a type of sample where the dataset is bundled with a dashboard and/or report. The sample content packs are available from within Power BI service, using **Get Data**.   
 
@@ -37,7 +37,7 @@ The Excel workbooks that were used to create the content packs can be downloaded
 The following samples are available for the Power BI service. The samples use real data from
 obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
->**TIP**: To learn how to connect to the samples,
+>[AZURE.TIP]  To learn how to connect to the samples,
  see [Tutorial: Using the sample content packs](powerbi-sample-tutorial-connect-to-the-samples.md).
 
 
@@ -96,3 +96,4 @@ This industry sample dashboard and underlying dataset and report focus on one of
 -   [Take a tour of the Supplier Quality sample](powerbi-sample-supplier-quality-analysis-take-a-tour.md).
 -   Learn how to connect to the [Power BI samples](powerbi-sample-tutorial-connect-to-the-samples.md).
 -   [Read the disclaimer and download the Excel workbook for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)

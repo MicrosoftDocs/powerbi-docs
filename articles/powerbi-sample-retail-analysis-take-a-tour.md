@@ -145,7 +145,7 @@ The last area we want to explore is our growth – new stores opened this year.
      There is quite a bit of difference in Average Sales per SQF across the new stores.
 
 3.  Click on the Fashions Direct legend item in the top right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) $21.22 vs $12.86 respectively.
-	
+
     ![](media/powerbi-sample-retail-analysis-take-a-tour/17b.png)
 
 4.  Click Winchester Fashions Direct in the slicer and observe the line chart. The first sales numbers were reported in February and is a leading store in terms of volume for almost every month.
@@ -166,3 +166,4 @@ We hope this tour has shown how Power BI dashboards, Q&A, and reports can provid
 -   [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=528592)
 -   [Get data (for Power BI)](powerbi-service-get-data.md)
 -   [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)
