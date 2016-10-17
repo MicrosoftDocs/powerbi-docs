@@ -41,7 +41,7 @@ When the report you want to export to PowerPoint is displayed on the canvas, sel
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_1.png)
 
-You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint.
+You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint. This might take a few minutes, and you can continue to work in Power BI while the report is being exported.
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_2.png)
 
@@ -76,10 +76,12 @@ What you do with your PowerPoint deck from there, or any of the high resolution 
 ## Limitations
 There are a few considerations and limitations to keep in mind when working with the **Export to PowerPoint** feature.
 
+-   **Custom visuals**, and **R visuals**, are not currently supported. Any such visuals are exported as a blank image into PowerPoint.
 -   Reports with more than 15 report pages can't currently be exported.
--   Custom visuals, and R visuals, are not currently supported. Any such visuals are exported as a blank image into PowerPoint.
 -   The process of exporting the report to PowerPoint may take a few minutes to complete, so please be patient. Factors that can impact the time required include the structure of the report, and the current load on the Power BI service.
 -   If the **Export to PowerPoint (Preview)** menu item isn't available in the Power BI service, it's likely because your tenant administrator has disabled the feature. Please contact your tenant administrator for details.
+-   Background images will be cropped with the chart's bounding area. It's highly recommended that you remove background images before exporting to PowerPoint.
+-   **In-session interactivity** such as highlighting and filtering, drill-down, and so on, are not yet supported when exporting to PowerPoint. The exported PowerPoint shows the original visuals as they were saved in the report.
 
 
 
