@@ -79,4 +79,5 @@ If you do not see a question box at all, it may be that you have not enabled Q&A
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-More questions? [Try the Power BI Community](http://community.powerbi.com/) 
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -28,9 +28,7 @@ To learn more about the types of samples available, see [Power BI samples](power
 
 ## Usage guidelines for the Power BI sample Excel workbooks
 
->**IMPORTANT**
-
->Please read this information before [downloading the Power BI sample Excel workbooks](#Download-the-Power-BI-sample-workbooks).
+>[AZURE.IMPORTANT]   Please read this information before [downloading the Power BI sample Excel workbooks](#Download-the-Power-BI-sample-workbooks).
 
  ©2015 Microsoft Corporation. All rights reserved. The documents and workbooks are provided "as-is." Information and views expressed in the workbooks, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
@@ -91,3 +89,5 @@ The workbook contains the actual data, but it's in the data model, not in worksh
 [Sample datasets](powerbi-sample-datasets.md)
 
 [Get data for Power BI](powerbi-service-get-data.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/08/2016"
+   ms.date="10/13/2016"
    ms.author="maggies"/>
 
 # Share a dashboard and reports with colleagues and others
@@ -57,7 +57,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
     If they haven't yet signed up for Power BI, they can create an account after they click the link.
 
-    >**Note**: The sharing experience is different for people outside your organization. See [When you share with people outside your organization](powerbi-service-share-unshare-dashboard.md#when-you-share-with-people-outside-your-organization) below for details.
+    >**Note**: The sharing experience is different for people outside your organization. See [When you share with people outside your organization](powerbi-service-share-unshare-dashboard.md#when-you-share-your-dashboard-with-people-outside-your-organization) below for details.
 
 5.  To see who you've already shared the dashboard with, select **Access**.
 
@@ -103,12 +103,12 @@ People outside your organization can't see any data if role- or row-level securi
 ## Share just a report
 We've seen that when you share a dashboard that has tiles that link to reports, those reports are also shared at the same time. But what if you want to share just a report? Simply send the report page URL to your colleagues. As long as they are members of the same distribution group, in the same email domain as you, or have at least one dashboard that links to that same report (the dashboard has tiles that were pinned from that report), they'll be able to open the report.
 
-See [When you share with colleagues, above](powerbi-service-share-unshare-dashboard#When-you-share-your-dashboard-with-colleagues).
+See [When you share with colleagues, above](powerbi-service-share-unshare-dashboard.md#when-you-share-your-dashboard-with-colleagues).
 
 ### Share a filtered version of a report
 What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. This can be done by creating a custom URL.
 
-1.   Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md) and apply the filter. In this example we're filtering the [Retail Analysis sample](power-bi-sample-tutorial-connect-to-the-samples.md) to show only District FD-01.
+1.   Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md) and apply the filter. In this example we're filtering the [Retail Analysis sample](powerbi-sample-tutorial-connect-to-the-samples.md) to show only District FD-01.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-filter-report2.png)
 
@@ -118,7 +118,7 @@ What if you want to share a filtered version of a report? Maybe a report that on
 
     In our example, the name of the table is **Store**, the name of the field is **Territory**, and the value we want to filter on is **NC**.
 
-    ![](media/powerbi-service-share-unshare-dashboard/power-bi-filter-url2.png)
+    ![](media/powerbi-service-share-unshare-dashboard/power-bi-filter-url3.png)
 
     Your browser adds some special characters to represent slashes and spaces, so you end up with:
 
