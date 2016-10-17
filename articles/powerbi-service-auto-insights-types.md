@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="10/09/2016"
    ms.author="mihart"/>
 
 
@@ -81,3 +81,5 @@ Highlights when there are significant changes in trends in a time series of data
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

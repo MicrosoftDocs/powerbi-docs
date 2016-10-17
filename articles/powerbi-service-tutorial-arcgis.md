@@ -63,7 +63,7 @@ Take the following steps to create a **ArcGIS Maps for Power BI**.
 
 1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and **Longitude** buckets.
 
-    >NOTE Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
+    >[AZURE.NOTE] Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane2.png)
 
@@ -80,7 +80,7 @@ To access **ArcGIS Maps for Power BI** formatting features:
 2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options2.png)
 
-   >  NOTE:  For more information about the settings and features, see **Detailed documentation** below.
+   >  [AZURE.NOTE]  For more information about the settings and features, see **Detailed documentation** below.
 
 3. To return to the report, select **Back to Report** from the top-left corner of your report canvas.
 
@@ -237,3 +237,5 @@ ArcGIS Maps for Power BI automatically detects standard boundaries like countrie
 **Can I connect to my ArcGIS Online account from Power BI?**
 
 Not yet. [Vote for this idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases ) and we'll send you an email when we start working on this feature.  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

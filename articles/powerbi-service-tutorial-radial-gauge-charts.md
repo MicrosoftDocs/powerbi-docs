@@ -79,7 +79,7 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
 
-    >**NOTE**: You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
+    >[AZURE.NOTE] You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
 
 ### Step 4: Set a maximum value
 
@@ -133,3 +133,5 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
 [ Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

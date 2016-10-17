@@ -33,3 +33,5 @@ Need some data to try with Power BI service? We have a simple Excel workbook ofÂ
 [How to import Excel data](powerbi-service-excel-data.md)
 
 [Other data you can try with Power BI -- Sample datasets and content packs](powerbi-sample-datasets.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

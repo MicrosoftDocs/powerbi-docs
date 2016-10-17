@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 
 # Create a QR code for a report in Power BI
@@ -38,7 +38,7 @@ Colleagues you've shared the report with can scan the QR code for access to the 
 
 2. Select the ellipsis (...) in the top-right corner and select **Generate QR code**. 
 
-    ![](media/powerbi-service-qr-code-for-report/powerbi_service_qrcode_report.png)
+    ![](media/powerbi-service-qr-code-for-report/power-bi-service-report-qr-menu.png)
 
 3. A dialog box with the QR code appears. 
 
@@ -67,3 +67,4 @@ Power BI generates the QR code as a JPG file, ready to print.
 -  [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
 -  [Scan a Power BI QR code from your phone](powerbi-mobile-qr-code-for-tile.md)
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

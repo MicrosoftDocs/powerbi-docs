@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="10/08/2016"
    ms.author="mihart"/>
 
 # Add an image to a Power BI dashboard
@@ -29,3 +29,5 @@ There are several ways to a a standalone image to a dashboard: one way is to pin
 -   [Pin images from a Power BI report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md).
 
 More about [creating Power BI dashboards](powerbi-service-create-a-dashboard.md).
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

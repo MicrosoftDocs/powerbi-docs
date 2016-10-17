@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="10/10/2016"
    ms.author="asaxton"/>
 
 # Capturing additional diagnostic information for Power BI  

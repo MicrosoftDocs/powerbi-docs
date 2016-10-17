@@ -4,7 +4,7 @@ description="Information regarding configuration of proxy settings for the on-pr
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/25/2016"
+ms.date="10/01/2016"
 ms.author="asaxton"/>
 # Configuring proxy settings for the On-premises Data Gateway
 

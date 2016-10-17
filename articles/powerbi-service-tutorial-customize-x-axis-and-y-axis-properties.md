@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/05/2016"
+   ms.date="10/08/2016"
    ms.author="mihart"/>
 # Tutorial: Customize X-axis and Y-axis properties
 
 In this tutorial you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes or can be customized; Pie charts, for example, don't have axes. And customization options vary from visual to visual, too many options to cover in a single article. So we'll take a look at some of the most-used axes customizations and get you comfortable using the visual formatting tab in the Power BI report canvas.  
 
->**Note**: This page applies to both Power BI service and Power BI Desktop. These customizations, which are available when the **Format** (the paint roller icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) is selected, are also available in Power BI Desktop.  
+>[AZURE.NOTE] This page applies to both Power BI service and Power BI Desktop. These customizations, which are available when the **Format** (the paint roller icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) is selected, are also available in Power BI Desktop.  
 
 ## Customizing visualization X-axes in reports
 
@@ -47,7 +47,7 @@ Sign in to the Power BI service and open the **Retail Analysis Sample** report i
 
      ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-customizexaxisnew.png)
 
-    >**NOTE**: If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical. 
+    >[AZURE.NOTE] If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical. 
 
 To revert all the X-axis customization you've done so far, select **Revert To Default **at the bottom of the **X-axis** customization pane.
 
@@ -57,7 +57,7 @@ Some visualizations have Y-axes and these too can be customized. There are even 
 
 1.  From the **New Stores** tab of the Retail Analysis Sample report, select the chart "This Year Sales by FiscalMonth."
 
-   ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/powerbi-chart.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/powerbi-chart.png)
 
 2. From the Fields pane, select **Store** > **Name** to add it as a **Legend**.
 
@@ -127,7 +127,7 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 
 4.  (Optional) Customize the two axes. If you switch **Position** for either the column axis or the line axis, then the two axes switch sides.
 
-   ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-y-axes-options.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-y-axes-options.png)
 
 ### Add titles to both axes
 
@@ -157,3 +157,5 @@ More about [Visualizations in Power BI reports](powerbi-service-visualizations-
 [Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

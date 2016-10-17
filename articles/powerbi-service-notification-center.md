@@ -48,3 +48,4 @@ Watch Amanda review notifications she's received, manager her notifications, and
 - [Data alerts in Power BI service](powerbi-service-set-data-alerts.md)
 - [Set data alerts in the iPhone app (Power BI for iOS)](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
 - [Set data alerts in the Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md)
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)

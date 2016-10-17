@@ -73,3 +73,5 @@ Of course, if you change your mind later you can set a new dashboard as the Feat
 [Get Started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

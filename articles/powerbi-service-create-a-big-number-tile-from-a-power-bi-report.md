@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 # Create a big number tile from a Power BI report
 
@@ -70,3 +70,5 @@ Sometimes a single number is the most important thing you want to track in your 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [](powerbi-service-dashboards.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

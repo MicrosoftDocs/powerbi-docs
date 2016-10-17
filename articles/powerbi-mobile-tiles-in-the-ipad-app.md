@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2016"
+   ms.date="10/11/2016"
    ms.author="maggies"/>
 
 # Interact with tiles in the Power BI mobile app for iOS on the iPad
@@ -28,18 +28,26 @@ Then in [the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062), you open
 
 1.  Open a [dashboard in the iPad app](powerbi-mobile-dashboards-on-the-ipad-app.md).
 
-2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
+2.  Tap a tile. It opens in focus mode, where you can interact with the tile data:
 
    -   In a line, bar, or column chart, drag the bar to view the values for specific parts of the visualization.  
-      ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile-focus-mode.png)
 
-        In this column chart, the values of the columns are listed for July, where the vertical bar intersects the chart.
+         ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile.png)
+
+        In this 100% column chart, the values are listed for March, where the vertical bar intersects the chart.
 
   -   In a pie chart, tap a slice of the pie to show the value of the slice at the top of the pie.  
       ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile-pie.png)
 
-  -   [Share a snapshot of the tile](powerbi-mobile-share-dashboards-from-the-ipad-app.md) with others.
+  -   [Share a snapshot of the tile](powerbi-mobile-share-dashboards-from-the-ipad-app.md) ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-share-tile.png) with others.
 
-  -   [Open the report](powerbi-mobile-reports-on-the-ipad-app.md) that the tile is based on.
+  -   [Open the report](powerbi-mobile-reports-on-the-ipad-app.md) ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-open-report-icon.png) that the tile is based on.
 
-More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
+3. To leave tile focus mode, tap the tile name, then tap the dashboard name or **My Workspace**.
+
+    ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile-breadcrumb.png)
+
+
+### See also
+-  [Get started with the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

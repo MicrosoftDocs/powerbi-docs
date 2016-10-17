@@ -22,16 +22,18 @@
 
 # Move and resize a visualization in a Power BI report  
 
+##   Open the report
+
 In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) and [create a visualization](powerbi-service-add-visualizations-to-a-report-i.md) if your report doesn't already have one.
 
-### Move the visualization﻿  
+## Move the visualization﻿  
 -   Select (left-click) any area of the visualization and drag to the new location. 
 
-### Resize the visualization  
+## Resize the visualization  
 -   Select the visualization to display the border and click and drag the dark frame handles to resize.  
     ![](media/powerbi-service-move-and-resize-a-visualization/Untitled.gif)
 
-### Select Focus mode to see more detail.
+## Select Focus mode to see more detail.
 - Hover over the visualization and select the Focus mode icon.
  ![](media/powerbi-service-move-and-resize-a-visualization/PBI_PopOutIcon.jpg)
 
@@ -45,3 +47,5 @@ In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-vie
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

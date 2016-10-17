@@ -37,6 +37,9 @@ If your workbook has simple worksheets with ranges of data, to get the most out 
 
 Workbooks can contain a data model with one or more tables of data loaded into it by using linked tables, Power Query (Get & Transform in Excel 2016), or Power Pivot. Power BI supports all data model properties such as relationships, measures, hierarchies, and KPIs.
 
+>   Note: Workbooks with data models cannot be shared across Power BI tenants. For example, a user who logs in to Power BI using a *contoso.com* account cannot share an Excel workbook with a user who logs in using a Power BI login account from *woodgrovebank.com*.
+
+
 #### Workbooks with connections to external data sources
 
 If you use Excel to connect to an external data source, once your workbook is in Power BI, you can create reports and dashboards based on data from that connected data source. You can also setup Scheduled Refresh to automatically connect right to the data source and get updates. You’ll no longer need to refresh manually from the Data ribbon in Excel. Any visualizations in reports and tiles in dashboards based on data from that data source are updated automatically. To learn more, see [Data refresh in Power BI](articles/powerbi-refresh-data.md).

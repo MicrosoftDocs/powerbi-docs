@@ -45,3 +45,5 @@ A Power BI visual is constructed using data from your datasets. If you're intere
 [Power BI reports](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

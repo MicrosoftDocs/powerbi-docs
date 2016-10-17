@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2016"
+   ms.date="09/29/2016"
    ms.author="maggies"/>
 
-# Create a QR code for a tile in Power BI
+# Create a QR code for a tile in the Power BI service
 
 QR codes in Power BI can connect anything in the real world directly to related BI information &#151; no navigation or search needed.
 
@@ -66,3 +66,4 @@ Power BI generates the QR code as a JPG file, ready to print.
 -  [Scan a Power BI QR code from your phone](powerbi-mobile-qr-code-for-tile.md)
 -  [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 -  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

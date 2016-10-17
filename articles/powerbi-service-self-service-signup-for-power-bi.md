@@ -4,12 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="04/01/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -17,13 +17,13 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2016"
+   ms.date="10/10/2016"
    ms.author="asaxton"/>
 # Self-service sign up for Power BI
 
 Signing up for Power BI, as an individual, is easy! You can choose to use a free account, a Pro trial account, or purchase Power BI Pro, even if you are in an existing organization. Once you have determined which you would like to use, this article will walk you through the steps to get up and running.
 
-> **Note:** If you are in an organization, individual sign up may be disabled. See [Individual Sign up has been turned off](#individual-sign-up-has-been-turned-off) for more information if you get an error indicating it has been turned off.
+> [AZURE.NOTE] If you are in an organization, individual sign up may be disabled. See [Individual Sign up has been turned off](#individual-sign-up-has-been-turned-off) for more information if you get an error indicating it has been turned off.
 
 ## What email address can be used with Power BI?
 
@@ -31,11 +31,13 @@ Power BI requires that you use a work, or school, email address to sign up. Powe
 
 If you try to sign up with a personal email address, you will get a message indicating to use a work or school email address.
 
-> **Note:** Power BI does not support self-service sign-up for .gov or .mil addresses at this time. Please contact your O365 admin.
+> [AZURE.NOTE] Power BI does not support self-service sign-up for .gov or .mil addresses at this time. Please contact your O365 admin.
 
 ## Signing up for Power BI (free) as an individual
 
 The quickest way to sign up for Power BI is to sign up for a Power BI (free) account. There is no cost to this account, and it allows you to use many of the features available in the service. [Learn more](https://powerbi.microsoft.com/pricing/)
+
+> [AZURE.NOTE] If you receive a message that we already know you, try navigating to https://app.powerbi.com and signing in.
 
 To sign up for Power BI, you can do the following.
 
@@ -166,8 +168,7 @@ In many cases, registering for Power BI can be achieved by following the simple 
 
 ## See also
 
-[Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)
-
-[Unable to add Power BI to Office 365 partner subscription](powerbi-admin-syndication-partner.md)
-
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)
+[Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
+[Unable to add Power BI to Office 365 partner subscription](powerbi-admin-syndication-partner.md)  
+[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

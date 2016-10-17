@@ -85,3 +85,4 @@ To master the art of excellent dashboard design, consider learning basic Gestalt
 ## See Also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

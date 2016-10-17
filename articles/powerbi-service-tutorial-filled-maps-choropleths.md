@@ -111,3 +111,4 @@ For more help with Map visualizations, see [Tips and tricks for map visualizatio
  [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Try it out -- it's free!](https://powerbi.com/)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

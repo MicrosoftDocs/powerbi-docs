@@ -61,3 +61,5 @@ Some uses for full screen mode are:
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

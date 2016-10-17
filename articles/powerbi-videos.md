@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/05/2016"
+   ms.date="10/14/2016"
    ms.author="mihart"/>
 # Power BI Videos
 
@@ -48,3 +48,5 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 ## See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

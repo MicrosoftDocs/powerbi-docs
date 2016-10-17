@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 # Tutorial: waterfall charts in Power BI
 
@@ -81,3 +81,5 @@ Highlighting a column in a waterfall chart cross-filters the other visualization
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

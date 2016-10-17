@@ -36,3 +36,4 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
 ## See also  
 Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

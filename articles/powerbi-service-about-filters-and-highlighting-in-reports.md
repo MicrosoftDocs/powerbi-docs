@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/21/2016"
+   ms.date="10/14/2016"
    ms.author="mihart"/>
 # About filters and highlighting in Power BI reports
 
@@ -46,7 +46,7 @@ There are a lot of different ways you can filter and highlight reports in Power 
 
 Filters and highlighting can be applied using the **Filters** pane or by making selections directly on the report itself (ad-hoc, see bottom of page). The Filters pane shows the tables and fields used in the report and the filters that have been applied, if any. The filters are divided up into **Page level filters**, **Report level filters**, and **Visual level filters**.  You'll only see visual level filters if you've selected a visualization on the report canvas.
 
->**TIP**:   If the filter has the word **All** next to it, that means that entire field is being included as a filter.  For example, **Chain(All)** in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
+>[AZURE.TIP]   If the filter has the word **All** next to it, that means that entire field is being included as a filter.  For example, **Chain(All)** in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
 
 
 ##  Filters in Reading View verus Editing View
@@ -100,3 +100,5 @@ Select a field on the report canvas to filter and highlight the rest of the page
 [Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

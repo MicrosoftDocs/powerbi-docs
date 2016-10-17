@@ -54,3 +54,5 @@ want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/21/2016"
+ms.date="10/12/2016"
 ms.author="asaxton"/>
 # On-Premises Data Gateway FAQ
 
@@ -80,6 +80,9 @@ ms.author="asaxton"/>
 
 **Question:** Why can't I connect to my Oracle server?  
 **Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the Gateway. For more information, see [Installing the Oracle Client](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+
+**Question:** Will the gateway work with ExpressRoute?  
+**Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](powerbi-admin-power-bi-expressroute.md).
 
 ## See also
 [On-premises data gateway](powerbi-gateway-onprem.md)  

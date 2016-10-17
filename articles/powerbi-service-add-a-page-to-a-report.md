@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2016"
+   ms.date="10/08/2016"
    ms.author="mihart"/>
 
 # Add a page to a Power BI report  
@@ -39,3 +39,5 @@ Your new page is created and becomes the active page. To rename it, double-click
 ## See also  
 Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

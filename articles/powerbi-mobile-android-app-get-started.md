@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Get started with the Power BI for Android app"
-   description="The Android app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to business information."
+   pageTitle="Get started with the Power BI for Android mobile app"
+   description="The Android mobile app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to business information."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,13 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/09/2016"
+   ms.date="09/30/2016"
    ms.author="maggies"/>
-# Get started with the Power BI for Android app
+
+# Get started with the Power BI for Android mobile app
 
 The Android app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere.
 
-![](media/powerbi-mobile-android-app-get-started/PBI_AndrStartSm.png)
+![](media/powerbi-mobile-android-app-get-started/power-bi-android-dashboard-optimized.png)
 
 You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
 
@@ -51,7 +52,7 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
 2.  On your Android phone, from the start screen open the Power BI for Android app.
 
-    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-icon.png)
+    ![](media/powerbi-mobile-android-app-get-started/power-bi-logo-android.png)
 
 3.  To view your Power BI dashboards and reports, tap **Power BI**.  
    To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
@@ -63,7 +64,9 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 
 ### Power BI samples
 
-1.   Tap the options icon ![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png) in the upper-left corner.
+You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
+
+1.   Tap the global navigation button ![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png) in the upper-left corner.
   
 2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
 
@@ -73,7 +76,7 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 
 ### Reporting Services mobile report samples
 
-1.   Tap the options icon ![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png) in the upper-left corner.
+1.   Tap the global navigation button ![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png) in the upper-left corner.
 
 2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 
@@ -107,4 +110,4 @@ See what else you can do in the Android phone app for Power BI with dashboards a
 
 -  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 -  [Get started with Power BI](powerbi-service-get-started.md)
-
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

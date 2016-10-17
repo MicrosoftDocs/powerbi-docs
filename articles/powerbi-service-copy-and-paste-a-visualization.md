@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/01/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 
 # Copy and paste a visualization in Power BI  
@@ -28,5 +28,8 @@
     ![](media/powerbi-service-copy-and-paste-a-visualization/copypasteVizNew.gif)
 
 ## See also  
-More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).  
+More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

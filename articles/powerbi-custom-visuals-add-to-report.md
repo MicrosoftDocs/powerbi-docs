@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-  featuredVideoId="gido6wr5pvE" 
+  featuredVideoId="gido6wr5pvE"
   qualityFocus="no"
    qualityDate=""/>
 
@@ -87,3 +87,5 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 [Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)
 
 [Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

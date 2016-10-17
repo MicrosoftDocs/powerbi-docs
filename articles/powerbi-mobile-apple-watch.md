@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2016"
+   ms.date="10/14/2016"
    ms.author="maggies"/>
 
 # Power BI Apple Watch app
@@ -39,11 +39,9 @@ You can only sync one dashboard at a time with the watch.
 > **Tip**: To view tiles from multiple dashboards on your watch, create a new dashboard in the Power BI service, and pin all the relevant tiles to it.
 
 ## Use the Power BI app on the Apple Watch
-Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI *complication* (if configured) directly from the watch face.
+Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI widget (if configured) directly from the watch face.
 
 ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png)
-
-*On the Apple Watch, complications are the tiny widgets near the time.* 
 
 The Power BI Apple Watch app consists of two parts.
 
@@ -55,24 +53,24 @@ The Power BI Apple Watch app consists of two parts.
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_kpi.png)
  
-## Set a custom Power BI complication
+## Set a custom Power BI widget
 You can also display a specific Power BI tile directly on the Apple Watch face, so it's visible and accessible at all times.
 
-The Power BI Apple Watch complication updates close to the time your data updates, keeping your needed information always up to date.
+The Power BI Apple Watch widget updates close to the time your data updates, keeping your needed information always up to date.
 
-### Add a Power BI complication to your watch face
+### Add a Power BI widget to your watch face
 
 See [Customize your Apple Watch face](https://support.apple.com/en-us/HT205536) in the Apple Guide.
 
-### Change the text on the complication
-Given the small space on the Apple Watch face, the Power BI Apple Watch app lets you change the title of the complication to fit the small space.
+### Change the text on the widget
+Given the small space on the Apple Watch face, the Power BI Apple Watch app lets you change the title of the widget to fit the small space.
 
--   On your iPhone, go to the Apple Watch control app, select Power BI, navigate to the complication name field, and type a new name.
+-   On your iPhone, go to the Apple Watch control app, select Power BI, navigate to the widget name field, and type a new name.
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_oniphone.png)
 
  
-> **Note**: If you don't change the name, the Power BI complication will shorten the name to the number of characters that fit the small space on the watch face. 
+> [AZURE.NOTE]  If you don't change the name, the Power BI widget will shorten the name to the number of characters that fit the small space on the watch face. 
 
 ### See also
 
@@ -84,4 +82,4 @@ Your feedback will help us decide what to implement in the future, so please don
 
 [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+

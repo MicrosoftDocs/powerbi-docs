@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 
 # Page display settings in a Power BI report
@@ -69,3 +69,5 @@ The *Page Size* settings control the display ratio and actual size (in pixels). 
 Read more about [reports in Power B](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

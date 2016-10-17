@@ -54,3 +54,5 @@ Then use the resulting field in the map visualizations. This approach is very us
 ## See also
 
 [Power Bi visualizations](powerbi-service-visualizations-for-reports.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
