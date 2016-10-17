@@ -52,7 +52,7 @@ When you click a link or scan a QR code for a dashboard tile that hasn't been sh
 **Improved tile annotations**
 We've improved the experience of annotating and sharing a snapshot of a tile.
 
-## Android phones
+### Android phones
 
 **Added manual tile refresh**
 You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the dataset.
@@ -60,7 +60,7 @@ You can now manually refresh your dashboard tiles. For tiles based on DirectQuer
 **Geographic filtering**
 You can now filter your report based on your current location, and see only the data you need.
 
-## Windows 10 devices
+### Windows 10 devices
 
 **Geographic filtering**
 You can now filter your report based on your current location, and see only the data you need.
