@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="10/17/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -46,7 +46,7 @@ When returning to your trusted network you no longer need to sign in again with 
 **Apple Watch refresh improvements**
 The Apple Watch mobile app has been improved for Watch OS3
 
-**Request access to dashboards directly from your mobile **
+**Request access to dashboards directly from your mobile**
 When you click a link or scan a QR code for a dashboard tile that hasn't been shared with you, now you can ask the dashboard owner for access right from the Power BI app.
  
 **Improved tile annotations**
@@ -64,15 +64,6 @@ You can now filter your report based on your current location, and see only the 
 
 **Geographic filtering**
 You can now filter your report based on your current location, and see only the data you need.
-
-**Support for Intune MAM**
-Added support for Intune MAM (MDM-less) capabilities.
- 
-**Support for Intune MDM**
-Added support for Intune Mobile Device Management (MDM) capabilities.
-
-Read more about [Microsoft Intune on Power BI mobile apps](powerbi-admin-mobile-intune.md).
-
 
 ## August 2016
 
@@ -97,6 +88,12 @@ When you tap a tile on your iPad, the tile will now open full-screen in focus mo
 
 **Manually refresh tiles**
 Manually refresh your tiles by opening the dashboard in the Power BI mobile app for iOS and pulling down from the top of the screen. 
+
+**Support for Intune MAM**
+Added support for Microsoft Intune mobile application management (MAM) capabilities.
+
+Read more about [Microsoft Intune on Power BI mobile apps](powerbi-admin-mobile-intune.md).
+
 
 ### Windows 10 devices
 
