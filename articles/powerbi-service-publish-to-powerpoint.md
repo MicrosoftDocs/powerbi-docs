@@ -17,58 +17,76 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/16/2016"
+   ms.date="10/04/2016"
    ms.author="davidi"/>
 
-# Export reports from Power BI from PowerPoint
+# Export reports from Power BI to PowerPoint (Preview)
 
-With Excel 2016, you can publish your Excel workbooks right to your [Power BI](https://powerbi.microsoft.com) site, where you can create highly interactive reports and dashboards based on your workbook’s data. You can then share your insights with others in your organization.
+With Power BI, you can now publish your report to **Microsoft PowerPoint**, and easily create a slide deck based on your Power BI report. When you **export to PowerPoint**, the following occurs:
 
-Before we go any further, there are few things to keep in mind:
+-   Each page in the Power BI report becomes an individual slide in PowerPoint
+-   Each visual in the Power BI report is exported as a high resolution image in PowerPoint
+-   Text boxes in the Power BI report become editable text boxes in PowerPoint
+-   A link is created in PowerPoint that links to the Power BI report
 
-- Before you can publish to Power BI, your workbook must be saved to OneDrive for Business.
-- The account you use to sign in to Office, OneDrive for Business, and Power BI must be the same account.
-- You cannot publish an empty workbook or a workbook that doesn’t have any Power BI supported content.
-- You cannot publish encrypted or password protected workbooks, or workbooks with Information Protection Management.
-- Publishing to Power BI requires modern authentication be enabled (default). If disabled, the Publish option is not available from the File menu.
+Getting your **Power BI report** exported into **PowerPoint** is easy. Just follow the steps outlined in the next section.
 
-## To publish your Excel workbook
-In Excel, click **File** > **Publish**.
+## How to export your Power BI report to PowerPoint
 
-If your workbook isn’t already saved to OneDrive, you’ll need to save it there first. Click Save to Cloud and choose a location in OneDrive for Business.
+In the Power BI service, select the **Reports** section in the left navigation pane to expand that section, then select your report to display it on the canvas. You can also select a report from your **My Workspace** section, or your **Favorites**, if the report is in either of those locations.
 
-![](media/powerbi-service-publish-from-excel/pbi_SaveToOneDrive2.png)
+![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_0.png)
 
-Once your workbook is saved to OneDrive, when you click **Publish**, you’ll get two options on how to get your workbook into Power BI.
+When the report you want to export to PowerPoint is displayed on the canvas, select **File > Export to PowerPoint (Preview)** from the menu bar in the Power BI service, as shown in the following image.
 
-![](media/powerbi-service-publish-from-excel/pbi_UploadExport2.png)
-### Upload your workbook to Power BI
-When you choose this option, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some great features to help you pin elements from your worksheets to dashboards.
+![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_1.png)
 
-You can’t edit your workbook in when open in Power BI, but if you need to make some changes, you can click **Edit**, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
+You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint. This might take a few minutes, and you can continue to work in Power BI while the report is being exported.
 
-When you upload, no dataset is created in Power BI. Your workbook will appear in Reports, in your workspace navigation pane. Workbooks uploaded to Power BI have a special Excel icon, identifying them as Excel workbooks that have been uploaded.
+![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_2.png)
 
-Choose this option if you only have data in worksheets, or you have PivotTables and Charts you want to see in Power BI.
-Using Upload from Publish to Power BI in Excel is pretty much the same as using Get Data > File > OneDrive for Business >Connect, Manage and View Excel in Power BI from Power BI in your browser.
+Once complete, the notification banner changes to let you know that the Power BI service has finished the export process.
 
-### Export workbook data to Power BI
-When you choose this option, any supported data in tables and/or a data model are exported into a new dataset in Power BI. If you have any Power View sheets, those will be re-created in Power BI as reports.
+![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_3.png)
 
-You can continue editing your workbook. When your changes are saved, they’ll be synchronized with the dataset in Power BI, usually within about an hour. If you need more immediate gratification, you can just click Publish again, and your changes are exported right then and there. Any visualizations you have in reports and dashboards will be updated, too.
+Your file is then available where your browser displays downloaded files. In the following image, it's shown as a download banner along the bottom of the browser window.
 
-Choose this option if you’ve used Get & Transform data or Power Pivot to load data into a data model, or if your workbook has Power View sheets with visualizations you want to see in Power BI.
+![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_4.png)
 
-Using Export from Publish to Power BI in Excel is pretty much the same as using Get Data > File > OneDrive for Business >Export Excel data into Power BI from Power BI in your browser.
+And that's all there is to it. You can download the file, open it with PowerPoint, and then modify or enhance it just like you would any other PowerPoint deck.
 
-## Publishing
-When you choose either option, Excel will sign in to Power BI with your current account, and then publish your workbook to your Power BI site. Keep an eye on the status bar in Excel. It shows how things are going.
+## Checking out your exported PowerPoint file
 
-![](media/powerbi-service-publish-from-excel/pbi_PublishingStatus.png)
+When you open the PowerPoint file that Power BI exported, you find a few cool and useful elements. Take a look at the following image, then check out the numbered elements below that describe some of those cool features.
 
-When complete, you can go to Power BI right from Excel.
+![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_5.png)
 
-![](media/powerbi-service-publish-from-excel/pbi_GoToPBI.png)
+1.  The first page of the slide deck includes the name of your report, and a link so that you can **View in Power BI** the report on which the slide deck is based.
+
+2.  You get some useful information about the report, too, including the *last data refresh* on which the exported report is based, and the *downloaded at* time and date, which is the time and date when the Power BI report was exported into a PowerPoint file.
+
+3.  Each report page is a separate slide, as shown in the left navigation pane.
+
+When you go into an individual slide, you'll notice that each visual is an independent image (as mentioned before). That way you can copy that image, and paste it into another slide, or anywhere else you would like.
+
+![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_6.png)
+
+What you do with your PowerPoint deck from there, or any of the high resolution images, is up to you!
+
+## Limitations
+There are a few considerations and limitations to keep in mind when working with the **Export to PowerPoint** feature.
+
+-   **Custom visuals**, and **R visuals**, are not currently supported. Any such visuals are exported as a blank image into PowerPoint.
+-   Reports with more than 15 report pages can't currently be exported.
+-   The process of exporting the report to PowerPoint may take a few minutes to complete, so please be patient. Factors that can impact the time required include the structure of the report, and the current load on the Power BI service.
+-   If the **Export to PowerPoint (Preview)** menu item isn't available in the Power BI service, it's likely because your tenant administrator has disabled the feature. Please contact your tenant administrator for details.
+-   Background images will be cropped with the chart's bounding area. It's highly recommended that you remove background images before exporting to PowerPoint.
+-   **In-session interactivity** such as highlighting and filtering, drill-down, and so on, are not yet supported when exporting to PowerPoint. The exported PowerPoint shows the original visuals as they were saved in the report.
+
+
 
 ## See also
+
+[Analyze in Excel](articles/powerbi-service-analyze-in-excel.md)
+
 [Excel data in Power BI](articles/powerbi-service-excel-data.md)
