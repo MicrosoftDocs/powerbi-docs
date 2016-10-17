@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -33,7 +33,7 @@ First things first:
 
 Then in the iPad app for Power BI, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
->**Note:** Your iPad needs to be running at least iOS 8.0. 
+> [AZURE.NOTE]  Your iPad needs to be running at least iOS 8.0. 
 
 ## Explore samples without an SSRS server
 

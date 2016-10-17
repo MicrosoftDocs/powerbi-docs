@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -31,7 +31,7 @@ Then you view and interact with reports on the [iPad app for Microsoft Power BI]
 
 -   Or tap a tile on a dashboard, and tap the report icon ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-open-report-icon.png).
 
-    >**Note**: Not all tiles can open in a report. For example, tiles created by asking questions with Q&A don't open reports.
+    > [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles created by asking questions with Q&A don't open reports.
 
 -   Or tap the search icon ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-search-icon.png) in the upper-right corner to search for it by name, or see the list of reports you've visited recently.
 
@@ -64,7 +64,7 @@ Then you view and interact with reports on the [iPad app for Microsoft Power BI]
 
 Sometimes you can drill down in charts to see the values that make up one part of the chart. You can drill up and down in the iPad app, but you can't add it to a visualization. You can only [add drill down to a visualization](powerbi-service-drill-down-in-a-visualization.md) in a report in Power BI. 
 
->**Note:** Currently, drill-down doesn't work on maps in the iPad.
+> [AZURE.NOTE]  Currently, drill-down doesn't work on maps in the iPad.
 
 -   Tap a visual. If it has a down arrow in the upper-right corner, then you can drill down. Tap the arrow, then tap a value in the visual &#151; in this case, the **Oct** column.
 
@@ -78,7 +78,7 @@ Sometimes you can drill down in charts to see the values that make up one part o
 
 You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has [added filters to the page](powerbi-service-add-a-filter-to-a-report.md) in the Power BI service ([https://powerbi.com](http://powerbi.com/)). In the Power BI service, you can also add other fields as filters for a specific visual. 
 
-> **Note** If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
+> [AZURE.NOTE]  If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
 
 1. In a report, expand the Filters pane.
 
