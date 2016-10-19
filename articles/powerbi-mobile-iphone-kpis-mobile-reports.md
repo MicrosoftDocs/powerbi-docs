@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/30/2016"
+   ms.date="10/18/2016"
    ms.author="maggies"/>
 
 # View SQL Server Reporting Services mobile reports and KPIs in the iPhone app (Power BI for iOS)  
@@ -30,7 +30,7 @@ The iPhone app for Microsoft Power BI for iOS offers live, touch-enabled mobile 
 
 Then in the iPhone app for Power BI, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
->**Note**: Your iPhone needs to be at least an iPhone 5, running at least iOS 8.0.
+>**Note**: Your iPhone needs to be at least an iPhone 5, running at least iOS 9.0.
 
 ## Explore samples without an SSRS server
 
