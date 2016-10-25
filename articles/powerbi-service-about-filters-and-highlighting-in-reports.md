@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="10/24/2016"
    ms.author="mihart"/>
 # About filters and highlighting in Power BI reports
 
@@ -36,7 +36,7 @@ There are a lot of different ways you can filter and highlight reports in Power 
 -   Now that you've learned how filers and highlighting work by default, [learn how to change the way visualizations on a page filter and highlight each other](powerbi-service-visual-interactions.md)
 
 
->**TIP**:   How does Power BI knows how data is related?  It uses the relationships between the different tables and fields in the underlying [data model](https://support.office.com/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US) to make items on a report page interact with each other.
+>[AZURE.TIP] How does Power BI knows how data is related?  It uses the relationships between the different tables and fields in the underlying [data model](https://support.office.com/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US) to make items on a report page interact with each other.
 
 
 ##  Introduction to filters and highlighting in reports using the Filters pane

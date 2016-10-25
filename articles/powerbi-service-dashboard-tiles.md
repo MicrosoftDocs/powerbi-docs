@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"  
+   ms.date="10/24/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -74,7 +74,7 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
 
     ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
 
-From here you can:
+    From here you can:
 
   - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
   - [Export the data used in the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)

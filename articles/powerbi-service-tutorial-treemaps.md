@@ -65,7 +65,7 @@ Or, create your own treemap. These instructions use the Retail Analysis Sample.�
 4.  Drag **Store** > **Chain** to the **Details** well to complete your treemap. You can now compare last year's sales by category and chain.   
 ![](media/powerbi-service-tutorial-treemaps/treemap_addGroup_new.png)
 
->[AZURE.NOTE] Color Saturation and Details cannot be used at the same time.
+    >[AZURE.NOTE] Color Saturation and Details cannot be used at the same time.
 
 5. Hover over a **Chain** area to reveal the tooltip for that portion of the **Category**.  For example, hovering over **Lindseys** in the **040-Juniors** rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
 ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
