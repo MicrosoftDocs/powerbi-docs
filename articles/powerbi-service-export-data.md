@@ -24,7 +24,7 @@
 # Export data from Power BI visualizations
 Data can be exported from visuals on a dashboard and in reports.  
 
->**NOTE**: The maximum number of rows that can be downloaded is 10,000.
+>[AZURE.NOTE] The maximum number of rows that can be downloaded is 10,000.
 
 Watch Amanda export the data used in her dashboard and save it as a .csv file. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -46,7 +46,7 @@ Watch Amanda export the data used in her dashboard and save it as a .csv file. T
 
     ![](media/powerbi-service-export-data/pbi-export-to-excel.png)
 
-    >**NOTE**: If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode are currency symbols and foreign words. the workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
+    >[AZURE.NOTE] If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode are currency symbols and foreign words. the workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
     1. Open Excel
     2. From the **Data** tab, select **Get external data** > **From text**.
 
@@ -57,7 +57,7 @@ Watch Amanda export the data used in her dashboard and save it as a .csv file. T
 
     ![](media/powerbi-service-export-data/pbi_export_dialog.png)
 
-    >**NOTE**: The option to remove a visual is only available in [report Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
+    >[AZURE.NOTE] The option to remove a visual is only available in [report Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 2. See step 3 above.
 
@@ -68,3 +68,5 @@ Watch Amanda export the data used in her dashboard and save it as a .csv file. T
 [Reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

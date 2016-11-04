@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2016"
+   ms.date="10/10/2016"
    ms.author="maggies"/>
 
 # Known issues in the iPad app (Power BI for iOS)  

@@ -18,7 +18,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 
 # Power BI - basic concepts for Power BI service
@@ -49,7 +49,7 @@ The 3 major building blocks of Power BI are: ***dashboards***, ***reports***, an
 
 ## Datasets
 
-A *dataset* is something that you *import* or *connect* to. Power BI let's you connect to all sorts of datasets and bring all of it together in one place.  
+A *dataset* is something that you *import* or *connect* to. Power BI lets you connect to all sorts of datasets and bring all of it together in one place.  
 
 In the navigation bar, the datasets you've connected to are listed under the **Datasets** heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. [See the list of dataset types that can be used with Power BI](powerbi-service-get-data.md).
 
@@ -202,3 +202,5 @@ This area of the workspace contains icons for interacting with the dashboard.  B
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI videos](powerbi-videos.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

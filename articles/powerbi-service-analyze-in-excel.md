@@ -101,3 +101,5 @@ Since users will need to refresh the dataset, and refresh for external connectio
 ## See Also  
 
 [Troubleshooting Analyze in Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -4,7 +4,7 @@ description="How to manage the on-premises data gateway gateway and data sources
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/06/2016"
+ms.date="10/01/2016"
 ms.author="asaxton"/>
 # Manage your data source - Import/Scheduled Refresh
 

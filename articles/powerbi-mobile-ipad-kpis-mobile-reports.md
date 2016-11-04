@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2016"
+   ms.date="10/11/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs in the iPad app (Power BI for iOS)  
@@ -33,13 +33,13 @@ First things first:
 
 Then in the iPad app for Power BI, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
->**Note:** Your iPad needs to be running at least iOS 8.0. 
+> [AZURE.NOTE]  Your iPad needs to be running at least iOS 8.0. 
 
 ## Explore samples without an SSRS server
 
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports. 
 
--  Tap the options icon ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, scroll down and tap **Reporting Services samples**.
+-  Tap the global navigation button ![](media/powerbi-mobile-ipad-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) in the upper-left corner, scroll down and tap **Reporting Services samples**.
 
     ![](media/powerbi-mobile-ipad-kpis-mobile-reports/power-bi-ipad-ssrs-samples.png)
 
@@ -50,7 +50,7 @@ Browse the samples to interact with KPIs and mobile reports.
 
 1.  In the iPad, open the Power BI app.
   
-2.  Tap the options icon ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) in the upper-left corner, and tap **Connect Server**.
+2.  Tap the global navigation button ![](media/powerbi-mobile-ipad-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) in the upper-left corner, and tap **Connect Server**.
 
     ![](media/powerbi-mobile-ipad-kpis-mobile-reports/power-bi-ipad-ssrs-connect-server.png)
 
@@ -66,7 +66,7 @@ Browse the samples to interact with KPIs and mobile reports.
 
     ![](media/powerbi-mobile-ipad-kpis-mobile-reports/power-bi-ipad-ssrs-menu.png)
 
->**Tip**: Tap the options icon ![](media/powerbi-mobile-ipad-kpis-mobile-reports/PBI_iPad_OptionsIcon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
+>**Tip**: Tap the global navigation button ![](media/powerbi-mobile-ipad-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
 
 ## View Reporting Services KPIs and mobile reports in the Power BI app
 

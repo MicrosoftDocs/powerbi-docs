@@ -17,15 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="10/14/2016"
    ms.author="mihart"/>
 
 # Pin a tile from one dashboard to another dashboard  
 
 ﻿One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is by copying it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&A or a report. 
 
->**Note:**  
->You cannot pin tiles from shared dashboards.
+>[AZURE.NOTE] You cannot pin tiles from shared dashboards.
 
 1.  [Get data](powerbi-service-get-data.md). This example uses the [IT Spend Analysis sample](powerbi-sample-it-spend-analysis-take-a-tour.md).
 2.  Open a [dashboard](powerbi-service-dashboards.md).
@@ -50,3 +49,5 @@
 [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Dashboards in Power BI Preview](powerbi-service-dashboards.md)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

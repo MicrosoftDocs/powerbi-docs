@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2016"
+   ms.date="10/24/2016"
    ms.author="mihart"/>
 
 # Take a tour of the report Filters pane
@@ -32,7 +32,7 @@ Reports can be opened in [Editing View](powerbi-service-interact-with-a-report-i
 
 When a report is open in Reading View, the Filters pane displays along the right side of the report canvas.  
 
->**NOTE**: If you don't see the pane, select the arrow in the top-right corner to expand it.
+>[AZURE.NOTE] If you don't see the pane, select the arrow in the top-right corner to expand it.
 
 In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the **Page level filters** heading. And the entire report has a filter too:  **FiscalYear** is 2013 or 2014.  
 
@@ -52,7 +52,7 @@ Anyone viewing this report can interact with these filters.
 
 -  delete the filter by selecting the **x** next to the filter name.
 
-   >**NOTE**:  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will not longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png).
+   >[AZURE.NOTE]  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the **FiscalYear is 2013 or 2014** filter, fiscal year data will still remain in the report but it will not longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png).
 
    ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
 
@@ -62,7 +62,7 @@ When a report is open in Editing View, the Filters pane displays along the right
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterList.jpg).  
 
->**NOTE**: If you don't see the pane, select the arrow in the top-right corner to expand it.
+>[AZURE.NOTE] If you don't see the pane, select the arrow in the top-right corner to expand it.
 
 
 If no visual is selected in the canvas, then the Filters pane displays just the filters that apply to the entire report page and to the entire report (if any have been set). In the example below, no visual is selected and there are no page level filters but there is a report level filter.  
@@ -106,7 +106,7 @@ Select **Advanced Filtering** to switch to advanced mode. Use the dropdown contr
 ![](media/powerbi-service-how-to-use-a-report-filter/aboutFilters.png)
 
 ## Types of filters: numeric field filters  
-#### List mode  
+### List mode  
 If the values are finite, selecting the field name displays a list.  See **Text field filters** &gt; **List mode** above for help using checkboxes.   
 
 ### Advanced mode  
@@ -133,3 +133,5 @@ If the field values represent date or time, you can specify a start/end time wh
 
 Read more about [reports in Power BI](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

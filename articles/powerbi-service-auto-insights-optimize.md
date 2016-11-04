@@ -39,3 +39,5 @@ Want to improve Quick Insights results?  If you are a datasest owner, try these:
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

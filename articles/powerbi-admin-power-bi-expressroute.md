@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2016"
+   ms.date="10/10/2016"
    ms.author="davidi"/>
 
 # Power BI and ExpressRoute
@@ -46,7 +46,7 @@ The two overall exceptions to Power BI using ExpressRoute are:
 
 -   **Telemetry** data sent over the public Internet
 
-Power BI uses multiple **Content Delivery Networks (CDNs)** or web sites to efficiently distribute the necessary static content and files to users based on geographical locale through the public Internet. These static files include product downloads (such as **Power BI Desktop**, **Enterprise Gateway**, or **Power BI Content Packs** from various independent service providers), browser configuration files that are used to initiate and establish any subsequent connections with Power BI, as well as the initial secure Power BI login page – the actual credentials are only sent over ExpressRoute.   
+Power BI uses multiple **Content Delivery Networks (CDNs)** or web sites to efficiently distribute the necessary static content and files to users based on geographical locale through the public Internet. These static files include product downloads (such as **Power BI Desktop**, **On-premises Data Gateway**, or **Power BI Content Packs** from various independent service providers), browser configuration files that are used to initiate and establish any subsequent connections with Power BI, as well as the initial secure Power BI login page – the actual credentials are only sent over ExpressRoute.   
 
 Certain **telemetry data** is also sent over the public Internet and over ExpressRoute. Telemetry data includes usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity.
 
@@ -73,7 +73,7 @@ Once the login is established, subsequent Power BI data interactions occur over 
 |---|---|
 |Landing page (prior to login)| `maxcdn.bootstrapcdn.com ; ajax.aspnetcdn.com ; netdna.bootstrapcdn.com ; cdn.optimizely.com; google-analytics.com ` |
 |Login | `*.mktoresp.com ; *.aadcdn.microsoftonline-p.com ; *.msecnd.com ; *.localytics.com ; ajax.aspnetcdn.com`  |
-|Dashboard, report, dataset management (includes maps and geocoding)| `*.localytics.com ; *.virtualearch.net ; platform.bing.com `  |
+|Dashboard, report, dataset management (includes maps and geocoding)| `*.localytics.com ; *.virtualearch.net ; platform.bing.com; powerbi.microsoft.com; c.microsoft.com; app.powerbi.com; *.powerbi.com; dc.services.visualstudio.com `  |
 |Support| `support.powerbi.com ; powerbi.uservoice.com ; go.microsoft.com `|
 
 
@@ -106,6 +106,6 @@ Some **custom visuals** are created by third-parties, some are created by Micros
 This document does not cover the use of Power BI Mobile apps.  
 
 
-### Enterprise Gateway and ExpressRoute
+### On-premises Data Gateway and ExpressRoute
 
-When an **Enterprise Gateway** is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the **Power BI SaaS Application and ExpressRoute** section found earlier in this topic.  
+When an **On-premises Data Gateway** is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the **Power BI SaaS Application and ExpressRoute** section found earlier in this topic.  

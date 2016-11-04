@@ -24,6 +24,7 @@ Here is a listing of the fully qualified domain names used by the gateway.
 
 |Domain names|Outbound ports|Description|
 |---|---|---|
+|*.powerbi.com|80|HTTP used to download the installer.|
 |*.powerbi.com|443|HTTPS|
 |*.analysis.windows.net|443|HTTPS|
 |*.login.windows.net|443|HTTPS|

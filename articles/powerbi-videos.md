@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/05/2016"
+   ms.date="10/14/2016"
    ms.author="mihart"/>
 # Power BI Videos
 
@@ -37,14 +37,16 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 
 ## Watch some of our new uploads
 
--  [Table relationships and DAX](https://www.youtube.com/watch?v=yec1f5A08mc)
+-  [DAX expressions and variables](https://www.youtube.com/watch?v=kd4tgKxhRTU)
 
--  [Hierarchies](https://www.youtube.com/watch?v=SYPuJu2N45w)
+-  [Taking your content offline](https://www.youtube.com/watch?v=u7cnpupfVnE)
 
--  [See the data behind the visual](https://www.youtube.com/watch?v=dtdLul6otYE)
+-  [Introduction to Power BI mobile](https://www.youtube.com/watch?v=07uBWhaCo78)
 
 
 
 ## See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

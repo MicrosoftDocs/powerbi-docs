@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/01/2016"
+   ms.date="10/01/2016"
    ms.author="mihart"/>
 
 # From Excel workbook to stunning report in no time
@@ -100,4 +100,6 @@ See also
 
 - [Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
 
-- [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+- [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/) 

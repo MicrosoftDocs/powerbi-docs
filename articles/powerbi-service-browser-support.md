@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2016"
+   ms.date="10/14/2016"
    ms.author="maggies"/>
 
 # Supported browsers for Power BI  
@@ -25,13 +25,9 @@
 We support Power BI in these browsers:
 
 -   Microsoft Edge
-
 -   Internet Explorer 11
-
 -   Chrome desktop latest version
-
 -   Safari Mac latest version
-
 -   Firefox desktop latest version
 
 ### See also 

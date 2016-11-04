@@ -25,7 +25,7 @@
 
 Ask natural language questions in Cortana and find answers from data stored in Power BI.
 
->**NOTE**: Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
+>[AZURE.NOTE]  Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
 
 ## How do Cortana and Power BI work together?
 
@@ -35,7 +35,7 @@ Similar to Power BI Q&A, ask or type your questions using natural language. Cort
 
 Cortana can find answers either directly from datasets in Power BI or from report pages published to Power BI and designed specifically for Cortana (called *Answer Pages*).  Interact with the visualizations as you would in Power BI or, to further explore an answer, simply open a result in Power BI.
 
->**NOTE**: Cortana now works with on-premises data that has been [enabled for Q&A](powerbi-service-q-and-a-direct-query.md).
+>[AZURE.NOTE]  Cortana now works with on-premises data that has been [enabled for Q&A](powerbi-service-q-and-a-direct-query.md).
 
 Cortana ranks the answers from Power BI, giving you one or more best matches if there is high confidence a result is a good answer. Other potential answers from Power BI are listed in a Power BI section below any best matches. If you're a dataset owner, you can help Cortana return better answers by [creating specialized reports (called *Answer Pages*) for Cortana](powerbi-service-cortana-desktop-entity-cards.md) in Power BI to answer the most-common questions and by optimizing your model for Power BI Q&A.
 
@@ -60,7 +60,7 @@ Any Power BI user can use Cortana to ask questions about their Power BI datasets
 2. Cortana looks for answers in the Power BI reports and datasets available to you, and displays them under the heading **Power BI** and marked with the Power BI icon.
 
 3. Power BI first looks for answers in [Answer Pages](powerbi-service-cortana-desktop-entity-cards.md) and then searches your datasets and reports for other answers and displays them in the form of visualizations.  The highest-scoring results display first as *best matches*, followed by links to other possible answers and applications. Best matches come from Power BI Answer Pages or Power BI reports.
-  >NOTE: If you speak your question, Cortana will only display **Power BI** answers if it finds a best match.  
+  >[AZURE.NOTE] If you speak your question, Cortana will only display **Power BI** answers if it finds a best match.  
 
 4. To open an answer in Power BI, select the link.
 
@@ -79,3 +79,5 @@ Any Power BI user can use Cortana to ask questions about their Power BI datasets
 [Introduction to Power BI Q&A](powerbi-service-q-and-a.md)
 
 [Power BI basic concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -23,11 +23,19 @@
 
 # Analytics pane in Power BI Desktop
 
-With features available in the **Analytics** pane in **Power BI Desktop**, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** pane is found in the **Visualizations** area of Power BI Desktop, beginning with the August 2016 release (version 2.37.4464.321 or later), as shown below.
+With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** pane is found in the **Visualizations** area of Power BI Desktop, beginning with the August 2016 release (version 2.37.4464.321 or later), as shown below.
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_1.png)
 
 >   Note: The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
+
+## Enable Forecasting (Preview)
+
+In addition, with the September 2016 release of **Power BI Desktop** (version 2.39.4526.362 or later), you can also perform *forecasting* from the **Analytics** pane. You must enable this preview feature, by going to **File > Options and settings > Options** then selecting **Preview Features** from the left pane. Select the checkbox next to **Forecasting** to enable the feature, as shown in the following image. You'll need to restart **Power BI Desktop** for your changes to take effect.
+
+![](media/powerbi-desktop-analytics-pane/Analytics-pane_1b.png)
+
+## Using the Analytics pane
 
 With the **Analytics** pane, you can create the following types of dynamic reference lines (not all lines are available for all visual types):
 
@@ -40,8 +48,6 @@ With the **Analytics** pane, you can create the following types of dynamic refer
 -   Percentile line
 
 The following sections show how you can use the **Analytics** pane and dynamic reference lines in your visualizations.
-
-## Using the Analytics pane
 
 To view the available dynamic reference lines for a visual, follow these steps:
 
@@ -75,6 +81,12 @@ If the visual you've selected can't have dynamic reference lines applied to it (
 There are all sorts of interesting insights you can highlight by creating dynamic reference lines with the **Analytics** pane.
 
 We're planning more features and capabilities, including expanding which visuals can have dynamic reference lines applied to them, so check back often for what's new.
+
+## Apply Forecasting
+
+You can use the **Forecast** feature by selecting a visual, then expanding the **Forecast** section of the **Analytics** pane. You can specify many inputs to modify the forecast, such as the *Forecast length*, the *Confidence interval*, and others. The following image shows a basic line visual with forecasting applied, but you can use your imagination (and play around with the *forecasting* feature) to see how it can apply to your models.
+
+![](media/powerbi-desktop-analytics-pane/Analytics-pane_8.png)
 
 ## Limitations
 

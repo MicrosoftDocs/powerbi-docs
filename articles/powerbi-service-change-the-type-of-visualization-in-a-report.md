@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2016"
+   ms.date="10/08/2016"
    ms.author="mihart"/>
 
 # Change the type of visualization in a Power BI report
@@ -42,3 +42,5 @@ If you changed the visualization type in the report after you pinned it to your
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

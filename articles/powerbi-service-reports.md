@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/05/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 # Reports in Power BI
 
@@ -60,3 +60,5 @@ From the table of contents (on the left side of this browser page), expand **Rep
 [Get Started with Power BI](powerbi-service-get-started.md) 
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

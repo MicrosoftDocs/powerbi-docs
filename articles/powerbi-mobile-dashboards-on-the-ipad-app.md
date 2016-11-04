@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,14 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/17/2016"
+   ms.date="10/11/2016"
    ms.author="maggies"/>
 # Dashboards on the iPad app (Power BI for iOS)
 
 Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI app for iOS on your iPad.
 
-![](media/powerbi-mobile-dashboards-on-the-ipad-app/pbi_ipad_dash_re_anl.png)
-
+![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-sample-dashboard.png)
 
 You don't create dashboards on your iPad. In the Power BI service ([https://www.powerbi.com](https://www.powerbi.com)) on your computer, you [create dashboards](powerbi-service-dashboards.md) or [connect to built-in dashboards for services](powerbi-content-packs-services.md) such as Salesforce.
 
@@ -40,23 +39,31 @@ Then you see these same dashboards in the iPad app for Microsoft Power BI for 
 
     ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-dashboard-home.png)
 
+     -     The yellow stars ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
+
+     -     The notation below each dashboard name ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
+
 3.  You can share a dashboard from your workspace. Tap the ellipsis (...) in the lower-right corner of the dashboard tile, and tap **Invite Others**.
 
-    ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-invite-dashboard.png)
+    ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-tile-invite-others.png)
 
-4.  You can also tap a dashboard to open it and see the tiles in that dashboard.
+4.  You can also tap a dashboard to open it and see the tiles in that dashboard. While on the dashboard you can interact with it:
 
-4.  While on the dashboard you can:
-
-    - [Tap a tile to interact](powerbi-mobile-tiles-in-the-ipad-app.md) with it.
+    - [Tap a tile to interact](powerbi-mobile-tiles-in-the-ipad-app.md) with the tile.
 
     - [Open the reports](powerbi-mobile-reports-on-the-ipad-app.md) behind the tiles.
 
-    - [Share the dashboard](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
+    - [Invite others to view the dashboard](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
 
     - [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
 
-4.  Click the back arrow in the upper-left corner or tap **Dashboards** in the bottom bar.
+4.  To go back to My Workspace, tap the name of the dashboard in the upper-left corner, then tap **My Workspace**.
 
-More about [the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
+    ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-dashboard-breadcrumb.png)
+
+### See also
+
+-   [Get started with the iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI.
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
 

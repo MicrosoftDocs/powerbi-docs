@@ -31,7 +31,7 @@ Before Cortana can look for answers in your Power BI datasets and reports, you'l
 
 -  to add the account you use with Power BI for Windows.
 
-  >**NOTE**: Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
+  >[AZURE.NOTE] Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
 
 ## Enable Cortana to access data in Power BI
 In the Power BI service, you'll need to repeat these steps for each dataset that you want Cortana to be able to access.
@@ -50,9 +50,9 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 
     In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
 
-    >**NOTE**: When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+    >[AZURE.NOTE] When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
 
-    >**IMPORTANT**: If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you will need to re-publish for your colleagues to also be able to use it with Cortana.
+    >[AZURE.IMPORTANT]If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you will need to re-publish for your colleagues to also be able to use it with Cortana.
 
 5. Determine which Windows 10 version you are running. Check which version you have by selecting **Settings** > **System** > **About**.
 
@@ -84,3 +84,5 @@ Cortana will use this work or school account to check Power BI for potential ans
 [Q&A in Power BI](powerbi-service-q-and-a.md)
 
 [Power BI basic concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

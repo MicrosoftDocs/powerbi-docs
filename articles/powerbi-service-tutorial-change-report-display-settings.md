@@ -119,3 +119,4 @@ Remember in the previous step we saw that our report page is currently displayin
 Back to [Page display settings in a Power BI report](powerbi-service-change-report-display-settings.md)
 Read more about  [reports in Power B ](powerbi-service-reports.md)
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

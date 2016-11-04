@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from a report
@@ -75,3 +75,5 @@ For more information, see [Pin an entire report page](powerbi-service-pin-a-live
 [Data refresh in Power BI](powerbi-refresh-data.md)
 
 [Power BI Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

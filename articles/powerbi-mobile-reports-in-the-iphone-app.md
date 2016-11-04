@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 
 # Reports in the iPhone app (Power BI for iOS)
@@ -30,22 +30,24 @@ Then you view and interact with those reports in the [iPhone app (Power BI for 
 
 -   On your iPhone, in **My workspace** or in a group, tap Reports.
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-reports-home-2.png)
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-reports-home.png)
 
--   Or: on a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_openreporticon.png).
+    You see Power BI reports and Excel workbooks together.
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-line-tile-2.png)
+-   Or: On a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-open-report-icon.png).
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-line-tile-open-report.png)
 
 
 The report opens in landscape mode.
 
-![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-it-spend-2.png)
+![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-landscape.png)
 
 >**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
 
 ## See other pages in a Power BI report
 
--   Tap the tabs at the bottom of the page. 
+-   Swipe side to side, or tap the pages icon ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-pages-icon.png) > tap a page. 
 
 ## Cross-filter and highlight a Power BI report page
 
@@ -64,7 +66,13 @@ When designing a report in the Power BI service [(https://powerbi.com)](https://
     ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_rptslice.png)
 
 
+## Go back to My Workspace
+
+*   Tap the arrow next to the tile name and tap **My Workspace**.
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-breadcrumb.png)
+
 ### See also
 
-[Get started with the iPhone app (Power BI for iOS)](powerbi-mobile-iphone-app-get-started.md)
-
+- [Get started with the iPhone app (Power BI for iOS)](powerbi-mobile-iphone-app-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

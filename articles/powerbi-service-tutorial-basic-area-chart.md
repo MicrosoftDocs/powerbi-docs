@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 
 # Tutorial: Basic Area chart  
@@ -66,3 +66,4 @@ To select an area, click inside that area or along the top line.  Basic area ch
 [Reports in Power BI](powerbi-service-reports.md)  
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
