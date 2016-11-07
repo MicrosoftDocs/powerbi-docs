@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/04/2016"
+   ms.date="11/07/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -38,7 +38,7 @@ Improved the experience of loading reports and dashboards in the Power BI mobile
 **Enhanced alert notifications**
 Notifications for your data-driven alerts now contain more information on what triggered the alert and why.
 
-### iOS on iPhones and iPads
+### iOS on iPhones
 
 **Apple Watch refresh improvements**
 The Apple Watch mobile app has been improved for Watch OS3
@@ -50,7 +50,7 @@ The Apple Watch mobile app has been improved for Watch OS3
 You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the dataset.
  
 
-### Windows 10 devices
+### Windows 10 phones
 
 **Geographic filtering**
 On your Windows 10 phone you can now filter your report based on your current location, and see only the data you need.
