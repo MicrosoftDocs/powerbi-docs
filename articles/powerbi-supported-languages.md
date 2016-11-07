@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="05/02/2016"/>
  
 <tags
@@ -17,14 +17,14 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="11/04/2016"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
-For countries and regions where Power BI is available, see this [international availability list](https://products.office.com/business/international-availability). 
+## Countries and regions where Power BI is available
+For a list of countries and regions where Power BI is available, see the [international availability list](https://products.office.com/business/international-availability). 
 
 ## Languages for the Power BI service
-
 The Power BI service (in the browser) is available in the following 42 languages:
 
 -   Arabic
@@ -143,10 +143,12 @@ The only way to change the language in Power BI Desktop is to go back to the dow
 You can set the locale (the date and number formats) for a specific report to be something other than the locale in your version of Power BI Desktop. 
 
 1.  Go to **File** > **Options and settings** > **Options**.
-2.  Under **Current file**, select **Data load**.
+2.  Under **Current file**, select **Regional Settings**.
 3.  In the **Locale** box, select a different locale. 
 
     ![](media/powerbi-supported-languages/pbi_supptdlangs_locale.png)
+
+4.  Select **OK**.
 
 ## Languages for the help documentation
 
@@ -164,5 +166,5 @@ Help is localized in these 10 languages:
 -   Spanish - español
 
 ### See also 
-Try asking the [Power BI Community](http://community.powerbi.com/).
+* Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 
