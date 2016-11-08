@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/26/2016"
+   ms.date="11/08/2016"
    ms.author="mihart"/>
 
 
@@ -32,11 +32,11 @@ To make it easier to reach the dashboard you care about most, we added the abili
 
 The first time you log into Power BI you will see a pop-up notification letting you know about featured dashboard.
 
-![](media/powerbi-service-new-featured-dashboards/featureddash.png)
+![](media/powerbi-service-featured-dashboards/featureddash.png)
 
 The **Featured dashboard** section of your left navpane will be greyed out until you set a dashboard as featured.
 
-![](media/powerbi-service-new-featured-dashboards/power-bi-featured-grey.png)
+![](media/powerbi-service-featured-dashboards/power-bi-featured-grey.png)
 
 ## To set a dashboard as **Featured**
 Watch Amanda create a featured dashboard and then follow the instructions below the video to try it out yourself.
@@ -46,15 +46,15 @@ Watch Amanda create a featured dashboard and then follow the instructions below 
 
 2.  From the top-right corner of the dashboard, select the ellipses (...), and choose **Set as featured dashboard**.
 
-    ![](media/powerbi-service-new-featured-dashboards/power-bi-set-as-featured.png)
+    ![](media/powerbi-service-featured-dashboards/power-bi-set-as-featured.png)
 
 3.  Confirm your selection.
 
-    ![](media/powerbi-service-new-featured-dashboards/power-bi-confirmation-featured2.png)
+    ![](media/powerbi-service-featured-dashboards/power-bi-confirmation-featured2.png)
 
 4.  After you see the Success message, the **Featured dashboard** option is activated in the left navpane.
 
-    ![](media/powerbi-service-new-featured-dashboards/power-bi-featured-on.png)
+    ![](media/powerbi-service-featured-dashboards/power-bi-featured-on.png)
 
 
 ##  Change the Featured dashboard
@@ -62,11 +62,11 @@ Of course, if you change your mind later you can set a new dashboard as the feat
 
 1.  From the leftnav, select the ‘…’ next to **Featured dashboard** and choose **Disable featured dashboard**.
 
-    ![](media/powerbi-service-new-featured-dashboards/power-bi-disable-featured.png)
+    ![](media/powerbi-service-featured-dashboards/power-bi-disable-featured.png)
 
 2.  Confirm that you no longer want to feature this particular dashboard. Un-featuring a dashboard does not remove it from your workspace.  
 
-    ![](media/powerbi-service-new-featured-dashboards/power-bi-disable-message.png)
+    ![](media/powerbi-service-featured-dashboards/power-bi-disable-message.png)
 
 
 ##  See also
