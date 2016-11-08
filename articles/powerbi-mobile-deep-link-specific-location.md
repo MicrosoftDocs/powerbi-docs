@@ -35,7 +35,7 @@ Use this URI to open the Power BI mobile app on any device:
     mspbi://app/
 
 
-## Open a dashboard
+## Open to a specific dashboard
 
 This URI opens the Power BI mobile app to a specific dashboard:
 
@@ -51,13 +51,13 @@ mspbi://app/OpenDashboard?DashboardObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60
 
 Note the ampersand (&) between the two.
 
-## Open the Power BI mobile app to a specific tile in focus
+## Open to a specific tile in focus
 
 This URI opens a specific tile in focus in the Power BI mobile app:
 
     mspbi://app/OpenTile?DashboardObjectId=<36-character-dashboard-id>&TileObjectId=<36-character-tile-id>
 
-To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service (https://powerbi.com) and open the tile in focus mode. For example, see the highlighted section of this URL:
+To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service (https://powerbi.com) and open the tile in focus mode. For example, see the highlighted sections of this URL:
 
 https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
 
@@ -69,7 +69,7 @@ Note the ampersand (&) between the two.
 
 If the dashboard is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>`
 
-## Open the Power BI mobile app to a specific report
+## Open to a specific report
 
 This URI opens a specific report in the Power BI mobile app:
 
@@ -79,7 +79,7 @@ To find the 36-character report object id, navigate to the specific report in th
 
 https://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
 
-## Open the Power BI mobile app to a specific report page
+## Open to a specific report page
 
 This URI opens a specific report page in the Power BI mobile app:
 
