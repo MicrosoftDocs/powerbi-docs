@@ -17,46 +17,72 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/04/2016"
+   ms.date="11/07/2016"
    ms.author="maggies"/>
 
 # Create a deep link that goes to a specific location in the Power BI mobile apps
 
-You can now create and use a uniform resource identifier (URI) to link to a specific location within the Power BI mobile app on all the mobile platforms: iOS, Android devices, and Windows 10.
+You can create and use a uniform resource identifier (URI) to link to a specific location (a *deep link*) within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows 10.
 
 URI links can point directly to tiles, dashboards, and reports.
 
-To create the deep-link you should follow this guidelines:
+The destination of the deep link determines the format of the URI. Follow these steps to create deep links to different locations. 
 
-## To open the app
+## To open the Power BI mobile app
 
-Use this URI:
-
+Use this URI to open the Power BI mobile app on any device:
 
     mspbi://app/
 
-## To open a report
+## Open a dashboard
+
+This URI opens the Power BI mobile app to a specific dashboard:
+
+    mspbi://app/OpenDashboard?DashboardObjectId=<36-character-dashboard-id>
+
+To find the 36-character dashboard object id, navigate to the specific dashboard in the Power BI service (https://powerbi.com). For example, see the highlighted section of this URL:
+
+https://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**
+
+If the dashboard is in a group other than My Workspace, just add `&GroupObjectId=<36-character-group-id>`
+
+## Open the Power BI mobile app to a specific tile in focus
+
+This URI opens a specific tile in focus in the Power BI mobile app:
+
+    mspbi://app/OpenTile?DashboardObjectId=????&TileObjectId=<36-character-dashboard-id>????
+
+To find the 36-character dashboard object id, navigate to the specific dashboard in the Power BI service (https://powerbi.com). For example, see the highlighted section of this URL:
+
+If the dashboard is in a group other than My Workspace, just add `&GroupObjectId=<36-character-group-id>`
 
 
-    mspbi://app/OpenReport?ReportObjectId=<36-character-object-id>
 
-The report object id can be found in the PowerBI.com website in the website url when you navigate to the specific report. See the highlighted:
+## Open the Power BI mobile app to a specific report
 
-## To open a report page
-    mspbi://app/OpenReport?ReportObjectId=????&reportPage=????
+This URI opens a specific report in the Power BI mobile app:
 
-## To open a dashboard
+    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>
+
+To find the 36-character report object id, navigate to the specific report in the Power BI service (https://powerbi.com). For example, see the highlighted section of this URL:
+
+https://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+
+## Open the Power BI mobile app to a specific report page
+
+This URI opens a specific report page in the Power BI mobile app:
+
+    mspbi://app/OpenReport?ReportObjectId=/ReportSection11
+
+The report page is called "ReportSection" followed by a number. Again, open the report in the Power BI service (https://powerbi.com) and navigate to the specific report page. 
+
+For example, see the highlighted section of this URL:
+
+https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**ReportSection11**
 
 
-    mspbi://app/OpenDashboard?DashboardObjectId=????
+## Open the Power BI mobile app to a specific group
 
-## To open an in-focus tile
-
-
-    mspbi://app/OpenTile?DashboardObjectId=????&TileObjectId=????
-
-
-If the dashboard is not in My Workspace but rather in another group, just add `&GroupObjectId=????`
 
 
 ## See also
