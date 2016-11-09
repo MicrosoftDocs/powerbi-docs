@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="11/02/2016"
    ms.author="mihart"/>
 
 # Visualizations in Power BI  
@@ -27,7 +27,7 @@ Data visualizations (aka visuals) allow you to interact with your data to find b
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
-#####  If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
+  If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
 
 ## Add a visualization in Power BI  
 [Create visualizations](powerbi-service-add-visualizations-to-a-report-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
@@ -40,15 +40,6 @@ Try [changing the type of visualization](powerbi-service-change-the-type-of-vis
 
 ## Pin the visualization  
 When you have the visualization the way you want it, you can [pin it to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) as a tile. If you change the visualization in the report after you pin it, the tile on the dashboard doesn't change.
-
-## Copy and paste a visualization  
-[Copy and paste visualizations](powerbi-service-copy-and-paste-a-visualization.md)on the same report page or on new report pages. 
-
-## Change how a visualization is sorted  
-You can [sort a visualization](powerbi-service-change-how-a-chart-is-sorted.md) by the different fields in the visualization, or reverse the order -- A to Z or Z to A.
-
-## Delete a visualization  
-[Remove unwanted visualizations](powerbi-service-delete-a-visualization.md)from your report.
 
 ## See also  
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
