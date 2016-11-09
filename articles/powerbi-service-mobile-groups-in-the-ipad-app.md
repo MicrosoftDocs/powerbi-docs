@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2016"
+   ms.date="11/08/2016"
    ms.author="maggies"/>
 # Groups in the iPad app (Power BI for iOS)
 
@@ -34,15 +34,15 @@ Then you see and interact with group dashboards and reports in the Microsoft [P
 
     Need to [download and install the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062) first?
 
-2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) in the upper-left corner.
+2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap Workspaces ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon.png).
 
 3.  Select a group.
 
-    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group-menu.png)
+    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-workspaces.png)
 
-4.  Your group page displays the dashboards and reports that have been published to the group workspace.
+4.  Your group workspace displays the dashboards and reports that have been published to that workspace.
 
-    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group-home.png)
+    ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-workspace-dashboards.png)
 
      -     Yellow stars ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-mobile-yes-favorite-icon.png) show which dashboards are your favorites. 
 
