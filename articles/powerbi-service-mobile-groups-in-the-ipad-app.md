@@ -34,7 +34,7 @@ Then you see and interact with group dashboards and reports in the Microsoft [P
 
     Need to [download and install the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062) first?
 
-2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap Workspaces ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon.png).
+2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap Workspaces ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon-lc.png).
 
 3.  Select a group.
 
