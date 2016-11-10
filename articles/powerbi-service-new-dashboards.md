@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/26/2016"
+   ms.date="11/10/2016"
    ms.author="mihart"/>
 
 # Dashboards in Power BI
