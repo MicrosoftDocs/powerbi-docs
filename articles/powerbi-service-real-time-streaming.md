@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11//2016"
+   ms.date="11/10/2016"
    ms.author="davidi"/>
 
 # Real-time streaming in Power BI (Preview)
