@@ -22,7 +22,7 @@
 
 # **Recent** content in Power BI service
 
-![](media/powerbi-service-search-filter-sort/power-bi-recent.png)
+![](media/powerbi-service-recents/power-bi-recent3.png)
 
 ## What is recent content
 Recent content is the last 20 items you visited.  This includes: dashboards, reports, and workbooks.

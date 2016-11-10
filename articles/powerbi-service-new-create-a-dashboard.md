@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Dashboards in Power BI"
-   description="Dashboards in Power BI"
+   pageTitle="Create a Power BI dashboard"
+   description="Create a Power BI dashboard"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -8,7 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   featuredVideoId=""
+   qualityFocus=""
    qualityDate=""/>
 
 <tags
@@ -17,68 +18,72 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/26/2016"
+   ms.date="11/10/2016"
    ms.author="mihart"/>
 
-# Dashboards in Power BI
-## Introduction to dashboards
+# Create a Power BI dashboard
 
-Dashboards, reports, and datasets are at the heart of Power BI service. Create personalized ***dashboards*** to monitor your most important data, at a glance.  A dashboard combines on-premises and cloud-born data in a single pane of glass, providing a consolidated view across the organization regardless of where the data lives. Each metric, or insight, is displayed on the dashboard as a ***tile***. 
+You've read [Dashboards in Power BI](powerbi-service-new-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard.  You could import a dashboard, [have one shared with you](powerbi-service-share-unshare-dashboard.md), [create a new dashboard by pinning visuals and images from a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md), or create an empty dashboard.
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
+>[AZURE.NOTE] To add content to an empty dashboard, [get some data](powerbi-service-get-data.md) and [pin some tiles](powerbi-service-dashboard-tiles.md).
 
-There are samples available for you to use with Power BI. Below shows the Retail Analysis Sample. For detailed information about the sample, see [Sample datasets](powerbi-sample-datasets.md).
+>[AZURE.NOTE] Dashboards are a feature of Power BI service, not Power BI Desktop.
 
-![](media/powerbi-service-new-dashboards/dashboard.png)
+## Import a dashboard
 
-Each tile is a snapshot of information taken from an underlying dataset.  Learn how to [add tiles to a dashboard](powerbi-service-dashboard-tiles.md). The tiles on a dashboard can be [resized, moved, deleted, linked, and renamed](powerbi-service-edit-a-tile-in-a-dashboard.md). 
+In this example we'll use one of the [Power BI samples](powerbi-sample-datasets.md) to create a dashboard.
 
-##  Working with dashboards in Power BI service
+1. [Open a workspace](powerbi-service-workspaces.md).
 
-You can have more than one dashboard but only one can be open at a time. There are many different ways to open or manage a dashboard:  from a workspace, **Recent**, **Shared with me**, [**Favorites**](powerbi-service-new-favorite-dashboards.md) (open only), and [**Featured dashboard**](powerbi-service-new-featured-dashboards.md) (open only).  
+2. From the leftnav, select **Get Data**.
 
-###   Dashboards, workspaces, and "Shared with me"
+    ![](media/powerbi-service-new-create-a-dashboard/power-bi-get-data.png)
 
-When you create a new dashboard, its title is added to the current workspace; either **My workspace** or a [group workspace](powerbi-service-workspaces.md). The dashboard is not accessible from any other workspace. When a dashboard is shared with you, its title is added to the **Shared with me** list and, in this case, the dashboard is not available from a workspace.
+3.  From the bottom left corner, select **Samples**.
 
-Say I'm in my ***Sales 2016*** workspace and I create a new dashboard and name it ***Projections***. If I want to open or modify settings for that dashboard, I start in the ***Sales 2016*** workspace and select **Projections**.  
+    ![](media/powerbi-service-new-create-a-dashboard/power-bi-samples.png)
 
-To see the list of dashboards for a given workspace, open the workspace and select the **Dashboards** tab.
+4.  Select one of the samples and choose **Connect**.
 
-![](media/powerbi-service-new-dashboards/power-bi-workspace3.png)
+    ![](media/powerbi-service-new-create-a-dashboard/power-bi-sample-connect.png)
 
-To see the list of dashboards that have been shared with you, select **Shared with me**.
+5. Power BI adds the dashboard to your active workspace. A yellow asterisk to the right of the dashboard name lets you know that it's new.
 
-From either of these locations, you can open, review, and manage settings for your dashboards.
+    ![](media/powerbi-service-new-create-a-dashboard/power-bi-new-dashboard2.png)
 
--  Hover over and select a dashboard to open it.
+## Create an empty dashboard from scratch
+This method creates a new, empty, dashboard.
 
--  If you own a dashboard, you can review and edit dashboard settings (including renaming)  ![](media/powerbi-service-new-dashboards/power-bi-settings-icon.png) and you can [share it](powerbi-service-new-share-unshare-dashboard.md)  ![](media/powerbi-service-new-dashboards/power-bi-share-icon.png).
+1. Open the workspace where you'd like to add the dashboard.
 
--  Certain types of dashboards can be copied ![](media/powerbi-service-new-dashboards/power-bi-copy-icon.png)
+2.  Near the top right corner of the workspace, select **Create** > **Dashboard**.
 
--  [Delete a dashboard](powerbi-service-delete.md)  ![](media/powerbi-service-new-dashboards/power-bi-delete-icon.png)
+	![](media/powerbi-service-new-create-a-dashboard/power-bi-dashboard2.png)
 
-   Additionally, if your lists of dashboards or recent items get long, [use the search field and sorting to find what you need](powerbi-service-search-filter-sort.md).
+3. Type a name for your new dashboard and select **Create** .
 
-   >[AZURE.NOTE] For information about EGRC classifications, select the classification button or [visit Dashboard data classification ](powerbi-service-data-classification.md).
+	![](media/powerbi-service-new-create-a-dashboard/power-bi-create-dashboard2.png)
 
-## For more information about dashboards
+4. The new dashboard opens. It's blank since you haven't added any tiles yet.
 
-From the table of contents (on the left side of this browser page), expand **Dashboards** to see all the topics related to Power BI dashboards.
+    ![](media/powerbi-service-new-create-a-dashboard/power-bi-new-dash2.png)
 
+5. Navigate back to active workspace and select the **Dashboards** tab to see your new dashboard listed.
 
-## Next steps
+    ![](media/powerbi-service-new-create-a-dashboard/power-bi-my-workspace2.png)
 
--   [Get data](powerbi-service-get-data.md) and [add tiles](powerbi-service-dashboard-tiles.md) and [images, videos, web code, and text boxes](powerbi-service-add-a-widget-to-a-dashboard.md) to your dashboard from reports, Q&A, SSRS, Excel, and more.
+## Add some content to the dashboard
 
--   Want to make hard copies of your dashboard?  [Print it](powerbi-service-print.md).
+There are many different ways to add content to your dashboard.
 
--   Display your dashboard without controls and menus using full screen [TV mode](powerbi-service-dash-and-reports-fullscreen.md).
+-  [Connect to or import at least one dataset](powerbi-service-get-data.md) and [pin content from that dataset to your dashboard](powerbi-service-dashboard-tiles.md).
 
--   Dashboards can be wider and longer than the browser window. If so, they have scroll bars. Because you want to show everything important at a glance, we recommend making the dashboard fit the browser window. For more tips, see [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md).
+- [Add standalone content to your dashboard](powerbi-service-add-a-widget-to-a-dashboard.md). Use **Add tile** to add an image, text box or heading, video, or web content to your dashboard.
+
+>[AURE.TIP] Need some help getting started adding content?  Check out the [Get started with Power BI tutorial](powerbi-service-get-started.md).
 
 ## See also
+[Power BI dashboards](powerbi-service-new-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

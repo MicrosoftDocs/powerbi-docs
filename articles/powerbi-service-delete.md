@@ -103,7 +103,7 @@ Group workspaces can be deleted by editing the group name.
 
 2. In the top-right corner, select the ellipses (...) and choose **Edit group**.  
 
-   ![](media/powerbi-service-rename/power-bi-edit-group.png)
+   ![](media/powerbi-service-delete/power-bi-edit-group.png)
 
 3.  At the bottom of the **Edit group** window, select **Delete group**.
 

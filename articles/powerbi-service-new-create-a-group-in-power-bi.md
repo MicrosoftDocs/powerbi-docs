@@ -27,7 +27,7 @@ Power BI content is made up of dashboards, reports, workbooks, and datasets. And
 
 When you open Power BI for the first time, you'll have one top-level workspace named **My Workspace**. You can [create and add new workspaces](powerbi-service-workspaces.md), and those will be organized as **Group workspaces**.
 
-![](media/powerbi-service-workspaces/power-bi-group-workspaces.png)
+![](media/powerbi-service-new-create-a-group-in-power-bi/power-bi-group-workspaces.png)
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-new-basic-concepts.md).
 
