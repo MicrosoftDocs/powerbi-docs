@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="11/14/2016"
    ms.author="maggies"/>
 
 # View your data offline in the Power BI mobile apps
@@ -32,7 +32,9 @@ While you're offline, you can access and interact with all of the dashboards in 
 
 You also have read-only access to any Power BI reports you've accessed previously from the mobile app. You can see the full report, but not filter, cross-filter, sort, or use slicers on it.
 
-Power BI runs a scheduled refresh process every two hours while you're online. That way, when you view it offline the data is as up-to-date as possible, even if you didn't manually refresh it or view it before going offline. 
+On iOS, background refresh updates your favorite dashboards, plus dashboards and reports you've viewed in the last two weeks. If you're connected to wi-fi, background refresh updates every 2 hours. Otherwise, if you’re on a 3G network, Power BI updates the content every 24 hours.
+
+On Android and Windows, Power BI runs a scheduled refresh process every two hours while you're online, on all your dashboards and reports, whether you have a wi-fi connection or not. 
 
 You can turn off scheduled refresh, for example to avoid network usage. Check the settings on your device.
 
