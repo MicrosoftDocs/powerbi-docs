@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2016"
+   ms.date="11/14/2016"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -85,6 +85,20 @@ You can view and interact with the Power BI dashboard samples, but there are a f
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-search.png)
 
     By default it searches all dashboards and reports, but you can search just one or the other.
+
+## View your favorite dashboards, KPIs, and reports
+
+You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
+
+-  Tap **Favorites**.
+
+    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-favorites-menu.png)
+   
+    Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
+
+    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-favorites-page.png)
+
+Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
 
 ## More with Power BI dashboards and reports in the mobile apps 
