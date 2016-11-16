@@ -25,9 +25,9 @@ Ask questions and get answers in the form of Cortana report pages.
 
 Similar to Power BI Q&A, ask your questions using natural language and Cortana will look in your Power BI-enabled datasets for answers and display them on your desktop or Windows 10 mobile device. You'll be able to interact with the visualizations as you would in Power BI -- drilling, filtering, highlighting, sharing, and much more.  
 
-Dataset owners who use Power BI Desktop create Cortana report pages which are called *entity cards*. Create entity cards to answer the most-common questions and present those answers in a format designed for display by Cortana. 
+The "answers" are actually a special type of report called a *Cortana report page* that are designed specifically for display by Cortana. Dataset owners can [create the Cortana report pages in Power BI](powerbi-service-cortana-desktop-entity-cards.md). These report pages should be designed to answer the most-common questions.   
 
-Colleagues can even ask questions with filters and the entity card that Cortana displays will have those filters applied. For example, if you have an entity card named "2016 sales data", you can ask for:
+Colleagues can even ask questions with filters and the report page that Cortana displays will have those filters applied. For example, if you have a report page named "2016 sales data", you can ask for:
 -    "2016 sales data" and see the complete unfiltered entity card
 -    "2016 sales data for Surface" and see the entity card filtered to show only sales data for Surface.
 
@@ -35,7 +35,7 @@ Colleagues can even ask questions with filters and the entity card that Cortana 
 
 -    Before Cortana can look for answers in your Power BI datasets and reports, you'll need to [enable this feature in both the Power BI service and on your mobile devices](powerbi-service-Cortana-enable.md).  
 
-- If you are a dataset owner, use Desktop to [create special reports designed specifically for Cortana](powerbi-service-Cortana-Desktop-entity-cards.md).
+- If you are a dataset owner, use Power BI to [create special reports designed specifically for Cortana](powerbi-service-Cortana-Desktop-entity-cards.md).
 
 - Any Power BI user can [use Cortana to ask questions about their data](powerbi-service-Cortana-ask-questions.md).
 
