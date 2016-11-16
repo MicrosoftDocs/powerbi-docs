@@ -32,7 +32,7 @@ There are a few requirements for using **Analyze in Excel**:
 ## How does it work?
 When you select **Analyze in Excel** from the ellipses menu (the ...) associated with a dataset or report in **Power BI**, Power BI creates an .ODC file and downloads it from the browser to your computer.
 
-![](media/powerbi-service-new-analyze-in-excel/power-bi-analyze-in-excel.png)
+![](media/powerbi-service-analyze-in-excel/power-bi-analyze-in-excel.png)
 
 When you open the file in Excel, an empty **PivotTable** and **Fields** list appears with the tables, fields, and measures from the Power BI dataset. You can create PivotTables, charts, and analyze that dataset just as you would work with a local dataset in Excel.
 
@@ -44,7 +44,7 @@ The .ODC file has an MSOLAP connection string that connects to your dataset in P
 
 In Power BI, select the ellipses menu beside a report or dataset (the ... beside the report or dataset name), and from the menu that appears, select **Analyze in Excel**.
 
-![](media/powerbi-service-new-analyze-in-excel/power-bi-analyze-menu.png)
+![](media/powerbi-service-analyze-in-excel/power-bi-analyze-menu.png)
 
 
 ### Install Excel updates

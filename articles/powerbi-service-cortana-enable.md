@@ -71,7 +71,7 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana. 
 
 
-# See also
+## See also
 [Create Cortana *answer cards* in Power BI](powerbi-service-cortana-desktop-entity-cards.md)
 
 [Q&A in Power BI](powerbi-service-q-and-a.md)
