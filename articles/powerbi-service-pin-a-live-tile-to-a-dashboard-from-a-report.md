@@ -40,19 +40,19 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 
     ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-pin-live-page.png) 
 
-2.  Pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: *Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.*
+3.  Pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: *Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.*
 
   -   Existing dashboard: select the name of the dashboard from the dropdown. Dashboards that have been shared with you will not appear in the dropdown.
 
   -   New dashboard: type the name of the new dashboard.
 
-         ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-pin-live-page-dialog.png)
+        ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-pin-live-page-dialog.png)
 
-3.  Select **Pin live**. A Success message (near the top right corner) lets you know the page was added, as a tile, to your dashboard.
+4.  Select **Pin live**. A Success message (near the top right corner) lets you know the page was added, as a tile, to your dashboard.
 
-4.  From the navigation pane, select the dashboard with the new live tile. There, you can do things like [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned report page.  
+5.  From the navigation pane, select the dashboard with the new live tile. There, you can do things like [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned report page.  
 
-5. Interact with the live tile.  In the screenshot below, selecting a bar on the column chart has cross-filtered and cross-highlighted the other visualizations on the tile.
+6. Interact with the live tile.  In the screenshot below, selecting a bar on the column chart has cross-filtered and cross-highlighted the other visualizations on the tile.
 
     ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-live-tile.png)
 

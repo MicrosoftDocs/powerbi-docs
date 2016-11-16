@@ -26,7 +26,7 @@ A  doughnut chart is similar to a pie chart in that it shows the relationship o
 
 ## Create a doughnut chart
 
-To follow along, sign in to Power BI and select **Get Data** \> **Samples** \> **Retail Analysis Sample** . **Connect**. 
+To follow along, sign in to Power BI and select **Get Data** \> **Samples** \> **Retail Analysis Sample** \> **Connect**. 
 
 1. From the dashboard, select the **Total Stores** tile to open the "Retail Analysis Sample" report.
 

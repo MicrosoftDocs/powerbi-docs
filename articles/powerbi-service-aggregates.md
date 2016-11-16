@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="modifying"
    qualityDate=""/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/21/2016"
+   ms.date="11/15/2016"
    ms.author="mihart"/>
 
 # Aggregates in Power BI  
@@ -32,11 +32,11 @@ Say you have a chart that sums the sales data for different regions, but you'd r
 
 1.  In report Editing view, add the measure to a visualization.
 
-2.  Find that field in the Visualizations pane, right-click, and select the aggregate type you need.
+2.  Find that field in the Visualizations pane, right-click, and select the aggregate type you need. If you don't see the aggregation you need, contact the dataset owner. It could be an issue with how the field was categorized by the owner.  
 
     ![](media/powerbi-service-change-the-aggregation-in-a-chart/aggregate_new.png)
 
->[AZURE.NOTE] The options available in the dropdown will vary depending on the field selected.
+>[AZURE.NOTE] The options available in the dropdown will vary depending on 1) the field selected and 2) the way that field was categorized by the dataset owner.
 
 Some of the options that may be available for aggregating a field:
 
@@ -112,9 +112,16 @@ You can also use a non-aggregated field as a numeric field. For example, if you 
 
     ![](media/powerbi-service-aggregates/count_of_chain_104.png)
 
-## See also  
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
+##  Tips and Troubleshooting
+-   If your dropdown only lists **count** and/or **distinct count**, that means the data is not a numeric field.  This could be because it is actually non-numeric or because the dataset owner did not "categorize" the field as numeric (on purpose or as an oversight). For example, if a dataset has a **year** field, the dataset owner may categorize that as text because it is more likely that the **year** field will be counted (i.e., number of people born in 1974) and not that it will be summed or averaged.
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+-   You cannot re-categorize fields in Power BI service. 
+
+-   You can re-categorize fields in Power BI Desktop.
+
+-   To remove an aggregation, from the dropdown select a different aggregation.  If "Do not sum" is not an option, try removing the field and adding it back in. 
+
+
+
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

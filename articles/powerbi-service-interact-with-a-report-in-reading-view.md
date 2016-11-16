@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/20/2016"
+   ms.date="11/15/2016"
    ms.author="mihart"/>
 
 # Interact with a report in Reading View in Power BI
@@ -31,7 +31,7 @@ In Reading View you can cross-highlight and cross-filter visuals on a page.  Sim
 
 ##  Cross-highlight the related visualizations on a page
 
-The visualizations on a single report page are all "connected" to each other.  What this means is that if you select one or more values in one visualization, other visualizations will change based on that selection.
+The visualizations on a single report page are all "connected" to each other.  What this means is that if you select one or more values in one visualization, other visualizations that use that same value will change based on that selection.
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/pagefilter3b.gif)
 
@@ -44,13 +44,13 @@ The visualizations on a single report page are all "connected" to each other.  
 
 ##  Sort the data in a visualization
 
-Select the ellipses (...) to open **Sort by**. Select the dropdown arrow to choose which field to sort by or select the AZ icon to switch between ascending and descending.    
+Select the ellipses (...) to open **Sort by**. Select the dropdown arrow to choose which field to sort by or select the AZ icon to switch between ascending and descending. 
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_ChangeChartSort.gif) 
 
 ##  Interact with filters
 
-If the report author added filters to a page in a report, you can interact with them in Reading View. Changes you make will not be saved with the report.
+If the report author added filters to a page in a report, you can interact with them in Reading View. Changes you make will not be saved with the report. 
 
 1.  Select the Filter icon in the upper-right corner.
 
@@ -64,7 +64,7 @@ If the report author added filters to a page in a report, you can interact with 
 
     ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-expan-filter.png)
 
-4.  Make changes to the filters and see how the visuals are impacted. Here are a few to try:
+4.  Make changes to the filters and see how the visuals are impacted.  
 
     -   Filter on **Fashions Direct** instead of **Lindseys** by removing the checkmark from one and adding it to the other.
 

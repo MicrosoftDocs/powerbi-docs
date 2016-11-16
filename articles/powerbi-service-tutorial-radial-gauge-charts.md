@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/22/2016"
+   ms.date="11/15/2016"
    ms.author="mihart"/>
 
 # Tutorial: radial gauge charts in Power BI
@@ -50,7 +50,9 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 
 ### Step 1: Open the Financial Sample Excel file.
 
-1.  Open the file in Power BI by selecting **Get Data \> Files** and browsing to the location where you saved the file. Select **Import**. The Financial Sample is added to your workspace as a dataset.
+1.  [Download the sample Financial Excel file](powerbi-sample-download-the-financial-sample-workbook.md).
+
+2.  Open the file in Power BI by selecting **Get Data \> Files** and browsing to the location where you saved the file. Select **Import**. The Financial Sample is added to your workspace as a dataset.
 
 2.  Select **Financial Sample** to open it in Explore mode.
 
@@ -93,6 +95,9 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
     The gauge is redrawn with a new end value, 1.21 million in gross sales.
 
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-final-gauge.png)
+    
+
 ### Step 5: Save your report
 
 6.  [Save the report](powerbi-service-save-a-report.md).
@@ -103,28 +108,26 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 1. Remove **Max of Gross Sales** from the **Maximum value** well.
 
-2.  Open the formatting pane by selecting the paintbrush icon.
+2.  Open the formatting pane by selecting the paint roller icon.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_format.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-roller.png)
 
-2. Expand the **Gauge axis** and enter values for **Min** and **Max**.
+3. Expand the **Gauge axis** and enter values for **Min** and **Max**.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_gauge_axis.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-gauge_axis.png)
 
-3. Remove the current target value by removing the checkmark next to **COGS**.
+4. Remove the current target value by removing the checkmark next to **COGS**.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_remove_target.png)
 
 4. When the **Target** field appears under **Gauge axis**, enter a value.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_new_target.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-gauge-target.png)
 
 5. Optionally, continue formatting your gauge chart.
 
 
 ## See also
-
-[Reports in Power BI](powerbi-service-reports.md)
 
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
