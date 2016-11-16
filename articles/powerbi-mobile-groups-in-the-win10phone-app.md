@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="11/09/2016"
    ms.author="maggies"/>
 
 # Groups in the Power BI mobile app for Windows 10  
@@ -31,13 +31,13 @@ You [create a group in the Power BI service](powerbi-service-create-a-group-in-p
 
     Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=526478) first?
 
-2.  Tap the navigation icon ![](media/powerbi-mobile-groups-in-the-win10phone-app/power-bi-windows-10-navigation-pane-icon.png), then under My Workspace, select a group.  
+2.  Tap the Workspaces icon ![](media/powerbi-mobile-groups-in-the-win10phone-app/power-bi-iphone-workspaces-icon-lc.png) on the left, select a group.  
 
-    ![](media/powerbi-mobile-groups-in-the-win10phone-app/power-bi-windows-10-navigation-pane-groups.png)
+    ![](media/powerbi-mobile-groups-in-the-win10phone-app/power-bi-windows-10-workspace-home.png)
 
 3.  Your group page displays the dashboards that have been published to the group workspace.  
 
-    ![](media/powerbi-mobile-groups-in-the-win10phone-app/power-bi-windows-10-group.png)
+    ![](media/powerbi-mobile-groups-in-the-win10phone-app/power-bi-windows-10-workspace.png)
 
 4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-win10phone-app.md) or a report to open and view it.  
 
