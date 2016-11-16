@@ -114,7 +114,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 3. Expand the **Gauge axis** and enter values for **Min** and **Max**.
 
-    ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-gauge_axis.png)
+    ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-gauge-axis.png)
 
 4. Remove the current target value by removing the checkmark next to **COGS**.
 

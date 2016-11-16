@@ -32,13 +32,13 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 
 2. In the upper right corner, select the cog icon and choose **Settings**.
 
-    ![](media/powerbi-service-Cortana-enable/PBI_cortana_settings.png)
+    ![](media/powerbi-service-cortana-enable/power-bi-cortana-settings.png)
 
 3. Select the **Datasets** tab and choose the dataset from the list on the left.
 
 4.  Select **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.
 
-    ![](media/powerbi-service-Cortana-enable/PBI_cortana-enable.jpg)
+    ![](media/powerbi-service-cortana-enable/PBI_cortana-enable.jpg)
 
     In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
 
