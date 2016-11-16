@@ -97,10 +97,11 @@ Does your scatter chart have only one data point that aggregates all the values 
 
 Add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot.  
 
--   Like a simple row number or ID field:
-    ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
+   -  Like a simple row number or ID field:
 
--   Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:
+      ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
+
+   -  Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:
 
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
 
