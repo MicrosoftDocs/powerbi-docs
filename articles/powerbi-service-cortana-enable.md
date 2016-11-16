@@ -1,11 +1,11 @@
-﻿<properties
-   pageTitle="Enable Cortana for Power BI"
-   description="Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from mobile devices."
+<properties
+   pageTitle="Enable Q&A for your Power BI dataset"
+   description="Documentation for using Power BI Q&A natural language queries with your datasets."
    services="powerbi"
    documentationCenter=""
-   authors="mihart"  
+   authors="mihart"
    manager="mblythe"
-   backup=""
+   backup="fetiye"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,72 +17,31 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/20/2016"
+   ms.date="10/25/2016"
    ms.author="mihart"/>
 
 
-# Enable Cortana for Power BI
+# Enable Power BI Q&A for a dashboard
 
-Ask natural language questions in Cortana and find answers from data stored in Power BI.
+Q&A can be turned on and off on a dashboard by dashboard basis. When it's turned on, you can ask questions using natural language and Power BI searches through the datasets associated with that dashboard and presents the answer in the form of a visual.
 
-Before Cortana can look for answers in your Power BI datasets and reports, you'll need:
+>**NOTE**: Q&A isn't currently supported for data stored outside of Power BI (streaming data).
 
--  a dataset in Power BI enabled for Cortana to access
+1.  Hover over the dashboard and select the gear icon ![](media/powerbi-service-new-enable-q-and-a/powerbi-cog-icon.png).
 
--  to add the account you use with Power BI for Windows.
+    If the dashboard is being shared wth you, you may not see a cog icon and won't be able to enable Q&A.
 
-  >[AZURE.NOTE] Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
+2.  Move the Q&A slider to the right to turn it on, and select **Save**.
 
-## Enable Cortana to access data in Power BI
-In the Power BI service, you'll need to repeat these steps for each dataset that you want Cortana to be able to access.
+    ![](media/powerbi-service-new-enable-q-and-a/power-bi-enable-q-and-a2.png)
 
-1.  Sign-in to Power BI service.
+3. Select the dashboard to open it, and type a question in the **Ask a question about your data** field.
 
-2. In the upper right corner, select the cog icon and choose **Settings**.
-
-    ![](media/powerbi-service-cortana-enable/PBI_cortana_settings.png)
-
-3. Select the **Datasets** tab and select the dataset from the list on the left.
-
-4.  Select **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.
-
-    ![](media/powerbi-service-cortana-enable/PBI_cortana-enable-new.png)
-
-    In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
-
-    >[AZURE.NOTE] When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
-
-    >[AZURE.IMPORTANT]If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you will need to re-publish for your colleagues to also be able to use it with Cortana.
-
-5. Determine which Windows 10 version you are running. Check which version you have by selecting **Settings** > **System** > **About**.
-
-   -  If you have [Windows 10 version 1511 (Windows 10 November Update) up until 1607](http://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/), add your work or school account and Microsoft account (complete steps 6 and 7 below).
-
-   -  If you have [Windows 10 version 1607 (Windows 10 July 2016 update) or later](https://support.microsoft.com/en-us/kb/3176929), add your work or school account (complete only step 6 below).
-
-6. Add your work or school account for Cortana.
-   -  Open Windows Settings > Accounts.
-
-         ![](media/powerbi-service-cortana-enable/power-bi-windows-accounts.png)
-
-   -  Scroll to the bottom and select **Add a work or school account**.
-
-         ![](media/powerbi-service-cortana-enable/power-bi-add-work-account.png)
-
-7. On the **Accounts** page, scroll to the bottom where you'll see **Add a Microsoft account**.
-      ![](media/powerbi-service-cortana-enable/power-bi-add-microsoft-account.png)
-
-   -  Sign in with the account you use with Power BI.
-
-Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana.
+    ![](media/powerbi-service-new-enable-q-and-a/power-bi-ask-question.png)
 
 ## See also
-[Using Cortana with Power BI](powerbi-service-cortana-intro.md)
+[Power BI Q&A](powerbi-service-q-and-a.md)
 
-[Create Cortana *Answer pages* in Power BI](powerbi-service-cortana-desktop-entity-cards.md)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-[Q&A in Power BI](powerbi-service-q-and-a.md)
-
-[Power BI basic concepts](powerbi-service-basic-concepts.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](http://community.powerbi.com/) 
