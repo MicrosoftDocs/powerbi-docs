@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/08/2016"
+   ms.date="11/14/2016"
    ms.author="mihart"/>
 
 # Tutorial: slicers in Power BI  
@@ -42,7 +42,7 @@ Slicers are a great choice in the following situations.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7rrvpa6KUto" frameborder="0" allowfullscreen></iframe>
 
-1.  Open the [Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).
+1.  Open the [Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).
 
 2. From the Fields pane, select **District > District Manager**. 
 
