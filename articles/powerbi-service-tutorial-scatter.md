@@ -101,6 +101,7 @@ Add a field to the **Details** area to tell Power BI how to group the values. Th
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
 
 -   Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:
+
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
 
    Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.

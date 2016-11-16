@@ -52,7 +52,7 @@ A **page filter** applies to all the visuals on the report page. A **visual fil
 
 4.  At this point you can either add a filter to a field already being used by the visualization, or you can use a different field as a filter. 
 
-    **Add a filter to a field already being used by the visualization.**
+5.  Add a filter to a field already being used by the visualization.
 
     1.  Add a filter to a field already being used by the visual. Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter.
    
@@ -62,7 +62,7 @@ A **page filter** applies to all the visuals on the report page. A **visual fil
 
     3.  The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
-    **Add a new field as a filter.**
+6.  Add a new field as a filter.
 
     1.  From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  
 
