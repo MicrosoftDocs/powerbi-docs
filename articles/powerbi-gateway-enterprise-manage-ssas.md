@@ -8,8 +8,8 @@ manager="erikre"
 backup=""
 editor=""
 tags=""
-qualityFocus="monitoring"
-qualityDate="06/09/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="10/12/2016"
+ms.date="11/16/2016"
 ms.author="asaxton"/>
 # Manage your data source - Analysis Services
 
@@ -46,7 +46,7 @@ You can use a live connection against tabular or multidimensional instances.
 
 ## Add a gateway
 
-To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
+To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
 > [AZURE.NOTE] **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
 
