@@ -50,7 +50,7 @@ Then use the resulting field in Power BI to create the map visualizations. This 
 
 Similar to #3 above, but using DAX in Excel or Excel Power Pivot. You can increase the accuracy of geo-coding by building columns that concatenate multiple fields together and use those for plotting data locations. For example, if you have a column for "state" and another for "countryregion", create a concatenated column for "city-countryregion". This way, Instead of passing only *Southampton*, you can pass *Southampton, England* to get a more accurate geo-coding result. 
 
-= CONCATENATE('Products'[city],'Products'[state])
+    = CONCATENATE('Products'[city],'Products'[state])
 
 For more information, including a video, see [Maps in Power View](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7) and scroll down to the section "**make Map data unambiguous**".
 

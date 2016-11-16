@@ -22,7 +22,7 @@
 
 # Add a filter to a Power BI report (in Editing view)
 
->[AZURE.TIP]We recommend first reading [About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
+>[AZURE.TIP] We recommend first reading [About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
 
 ##  What is the difference between report filters in Editing View versus Reading View
@@ -33,7 +33,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
 -   In Reading View, you can interact with any report, page and visual filters that already exist in the report, but you won't be able to save your filter changes.
 
->[AZURE.NOTE]  This article describes how to create filters in report **Editing View**.  For more information on filters in Reading VIew, see [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
+>[AZURE.NOTE]This article describes how to create filters in report **Editing View**.  For more information on filters in Reading VIew, see [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
 
 ##  Visual filters, page filters, and report filters
 A **page filter** applies to all the visuals on the report page. A **visual filter** applies to a single visual on a report page. And a **report filter** applies to all pages in the report.

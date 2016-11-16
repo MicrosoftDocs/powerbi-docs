@@ -36,7 +36,7 @@ Say you have a chart that sums the sales data for different regions, but you'd r
 
     ![](media/powerbi-service-change-the-aggregation-in-a-chart/aggregate_new.png)
 
->[AZURE.NOTE] The options available in the dropdown will vary depending on 1) the field selected and 2) the way that field was categorized by the dataset owner.
+    >[AZURE.NOTE]   The options available in the dropdown will vary depending on 1) the field selected and 2) the way that field was categorized by the dataset owner.
 
 Some of the options that may be available for aggregating a field:
 
