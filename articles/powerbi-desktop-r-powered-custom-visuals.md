@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2016"
+   ms.date="11/15/2016"
    ms.author="davidi"/>
 
 # Use R-powered custom visuals in Power BI
@@ -64,7 +64,7 @@ To use R-powered custom visuals, you need to download each visual from the **cus
 
     ![](media/powerbi-desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_7.png)
 
-7.   When you import the new visual (or open a report that contains a R-powered custom visual), **Power BI Desktop** installs the required R packages. 
+7.   When you import the new visual (or open a report that contains a R-powered custom visual), **Power BI Desktop** installs the required R packages.
 
     ![](media/powerbi-desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_8.png)
 
@@ -76,11 +76,63 @@ Like any other **Power BI Desktop** visual, you can publish this report with its
 
 Check the [R-powered custom visuals](http://app.powerbi.com/visuals) library often, since new visuals are being added all the time.
 
+
 ### Contributing R-powered custom visuals
 
 If you create your own R visuals for use in your reports, you can share those visual with the world by contributing your custom visual to the **custom visuals gallery**. Contributions are made through GitHub, and the process is outlined in the following location:
 
 -   [Contributing to the R-powered custom visuals gallery](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
+
+
+### Troubleshooting R-powered custom visuals
+
+R-powered custom visuals have certain dependencies that must be met for the visuals to work properly. When R-powered custom visuals don't run or load properly, the problem is usually one of the following:
+
+-   The R engine is missing
+-   Errors in the R script on which the visual is based
+-   R packages are missing or out of date
+
+The following section describes troubleshooting steps you can take to help address trouble you run into.
+
+#### Missing or outdated R packages
+
+When attempting to install an R-powered custom visual, you can run into errors when there are missing or outdated R packages; this is usually due to one of the following reasons:
+
+-   The R installation is incompatible with the R package,
+-   A firewall, anti-virus software, or proxy settings are preventing R from connecting to the Internet
+-   The Internet connection is slow, or there's an Internet connection problem
+
+The Power BI team is actively working on mitigating these issues before they reach you, and the next Power BI Desktop will incorporate updates to address these problems. Until then, you can take one or more of the following steps to mitigate the issues:
+
+1.  Remove the custom visual, then install it again. This initiates a re-installation of the R packages.
+2.  If your installation of R is not current, upgrade your R installation, then remove/re-install the custom visual as described in the previous step.
+    -   Supported R versions are listed in the description of each R-powered custom visual, as shown in the following image.
+        ![](media/powerbi-desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_11.png)
+    > **Note:** You can keep the original R installation, and only associate Power BI Desktop with the current version you install. Go to **File > Options and settings > Options > R scripting**.
+
+3.  Install R packages manually, using any R console. The steps for this approach are the following:
+
+    a.  Download the R-powered visual installation script, and save that file to a local drive.
+
+    b.  From the R console, run the following:
+
+        > source(“C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R”)    
+
+    Typical default installation locations are the following:
+
+        c:\Program Files\R\R-3.3.x\bin\x64\Rterm.exe (for CRAN-R)
+        c:\Program Files\R\R-3.3.x\bin\x64\Rgui.exe (for CRAN-R)
+        c:\Program Files\R\R-3.3.x\bin\R.exe (for CRAN-R)
+        c:\Program Files\Microsoft\MRO-3.3.x\bin\R.exe (for MRO)
+        c:\Program Files\Microsoft\MRO-3.3.x\bin\x64\Rgui.exe (for MRO)
+        c:\Program Files\RStudio\bin\rstudio.exe (for RStudio)
+
+4.  If the previous steps don't work, try the following:
+
+    a. Use **R Studio** and follow the step outlined in 3.b. above (run the script line from the R console).
+
+    b. If the previous step doesn't work, change **Tools > Global Options > Packages** in **R Studio**, and enable the checkbox for **Use Internet Explorer library/proxy for HTTP**, then repeat step 3.b. from the above steps.
+
 
 
 ### More Information

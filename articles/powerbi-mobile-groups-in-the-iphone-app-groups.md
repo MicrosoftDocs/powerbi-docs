@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/03/2016"
+   ms.date="11/08/2016"
    ms.author="maggies"/>
 
 # Groups in the iPhone app (Power BI for iOS)  
@@ -33,9 +33,9 @@ Power BI sends a notification to your iPhone whenever someone adds a new dashboa
 
     Need to [download and install the iOS app for the iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) first?
 
-2.  Under My Workspace, select a group. 
+2.  Tap the global navigation button ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/power-bi-iphone-global-nav-button.png), tap Workspaces ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/power-bi-iphone-workspaces-icon-lc.png), and select a group. 
  
-    ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/power-bi-iphone-group.png)
+    ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/power-bi-iphone-workspaces.png)
 
 3.  Your group page displays the dashboards that have been published to the group workspace.  
 

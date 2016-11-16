@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="10/12/2016"
+ms.date="11/16/2016"
 ms.author="asaxton"/>
 # On-premises data gateway in-depth
 
@@ -110,6 +110,16 @@ The gateway acts as a bridge between the cloud and your on-premises server. Data
 If you have an Analysis Services data source, you’ll need to install the gateway on a computer joined to the same forest/domain as your Analysis Services server.
 
 The closer the gateway is to the server, the faster the connection will be. If you can get the gateway on the same server as the data source, that is best to avoid network latency between the gateway and the server.
+
+## What to do next?
+
+After you get the gateway installed, you will want to create data sources for that gateway. You can add data sources within the **Manage gateways** screen. For more information, see the manage data sources articles.
+
+[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
+[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
 
 ## Where things can go wrong
 

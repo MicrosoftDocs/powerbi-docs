@@ -44,6 +44,9 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 **Question:** Is it possible to force the gateway to use HTTPS traffic with Azure Service Bus instead of TCP?  
 **Answer:** Yes. Although, this will greatly reduce performance. You will want to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file. You will want to change the value from `AutoDetect` to `Https`. This file is located, by default, at *C:\Program Files\On-premises data gateway*.
 
+**Question:** Do I need to whitelist the Azure Datacenter IP list? Where do I get the list?  
+**Answer:** If you are blocking outbound IP traffic, you may need to whitelist the Azure Datacenter IP list. Currently, the gateway will communicate with Azure Service Bus using the IP address in addition to the fully qualified domain name. The Azure Datacenter IP list is updated weekly. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653).
+
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
     <value>Https</value>

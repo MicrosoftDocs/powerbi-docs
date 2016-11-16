@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,10 +17,43 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2016"
+   ms.date="11/07/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+## September/October 2016
+
+### All devices
+
+**Favorites as landing page**
+If you’ve marked any of your dashboards as favorites, then your landing page will be your Favorites entry. 
+
+**Improved navigation**
+The main navigation has a new look, and groups navigation has moved to the groups catalog. 
+ 
+**Report and dashboard performance improvements**
+Improved the experience of loading reports and dashboards in the Power BI mobile apps
+ 
+**Enhanced alert notifications**
+Notifications for your data-driven alerts now contain more information on what triggered the alert and why.
+
+### iOS on iPhones
+
+**Apple Watch refresh improvements**
+The Apple Watch mobile app has been improved for Watch OS3
+
+
+### Android phones
+
+**Added manual tile refresh**
+You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the dataset.
+ 
+
+### Windows 10 phones
+
+**Geographic filtering**
+On your Windows 10 phone you can now filter your report based on your current location, and see only the data you need.
 
 ## August 2016
 
@@ -45,6 +78,12 @@ When you tap a tile on your iPad, the tile will now open full-screen in focus mo
 
 **Manually refresh tiles**
 Manually refresh your tiles by opening the dashboard in the Power BI mobile app for iOS and pulling down from the top of the screen. 
+
+**Support for Intune MAM**
+Added support for Microsoft Intune mobile application management (MAM) capabilities.
+
+Read more about [Microsoft Intune on Power BI mobile apps](powerbi-admin-mobile-intune.md).
+
 
 ### Windows 10 devices
 

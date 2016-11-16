@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="10/12/2016"
+ms.date="11/16/2016"
 ms.author="asaxton"/>
 # On-premises data gateway
 
@@ -84,7 +84,7 @@ When you add a data source to the gateway, you need to provide credentials for t
 
 ## Troubleshooting
 
-If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the Power BI Gateway - Enterprise](powerbi-gateway-enterprise-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
+If you’re having trouble when installing and configuring a gateway, be sure to see [Troubleshooting the On-Premises Data Gateway](powerbi-gateway-onprem-tshoot.md). If you think you are having an issue with your firewall, see the [firewall or proxy](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy) section in the troubleshooting article.
 
 If you think you are encountering proxy issues, with the gateway, see [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md).
 
