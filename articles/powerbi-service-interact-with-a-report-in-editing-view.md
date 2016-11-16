@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/20/2016"
+   ms.date="11/15/2016"
    ms.author="mihart"/>
 # Interact with a report in Editing View in Power BI
 
