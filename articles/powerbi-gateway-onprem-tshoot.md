@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/21/2016"
+ms.date="11/16/2016"
 ms.author="asaxton"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -63,7 +63,7 @@ At the end of configuration, the Power BI service will be called again to valida
 
 ### Script error during sign into Power BI
 
-You may receive a script error when signing into Power BI as part of the enterprise gateway configuration. Installing the following security update should resolve the issue. This can be installed via Windows Update.
+You may receive a script error when signing into Power BI as part of the on-premises data gateway configuration. Installing the following security update should resolve the issue. This can be installed via Windows Update.
 
 [MS16-051: Security update for Internet Explorer: May 10, 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
@@ -111,15 +111,15 @@ Within **Show details**, it should display the error message received from the d
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
-### Error: Unable to Connect. Details: "Unknown error in enterprise gateway"
+### Error: Unable to Connect. Details: "Unknown error in data gateway"
 
 This error could occur for different reasons. Be sure to validate that you can connect to the data source from the machine hosting the gateway. This could be the result of the server not being accessible.
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_UnknownError**.
 
-You can also look in the Event Logs > **Applications and Services Logs** > **Power BI Enterprise Gateway Service** for more details.
+You can also look in the Event Logs > **Applications and Services Logs** > **On-premises Data Gateway Service** for more details.
 
-### Error: We encountered an error while trying to connect to <server>. Details: "We reached the enterprise gateway, but the gateway can't access the on-premises data source."
+### Error: We encountered an error while trying to connect to <server>. Details: "We reached the data gateway, but the gateway can't access the on-premises data source."
 
 We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
 
@@ -157,7 +157,7 @@ This error could also be caused if the Analysis Services server is in a differen
 
 You will need to work with your domain administrators to verify the trust relationship between domains.
 
-**Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
+**Unable to see the data gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
 
 Make sure that your account is listed in the **Users** tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the **Users** list will see the data source listed in the Analysis Services list.
 
@@ -167,9 +167,25 @@ Make sure that your account is listed in the **Users** tab of the data source wi
 
 This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
 
+### Error: The server name provided doesn't match the server name on the SQL Server SSL Certificate.
+
+This can occur when the certificate CN is for the servers fully qualified domain name (FQDN) but you only supplied the netbios name for the server. This will cause a mismatch for the certificate. To resolve this issue, you will need to make the server name within the gateway data source, and the PBIX file, to use the FQDN of the server.
+
+### I don't see the On-Premises Data Gateway persent when configuring scheduled refresh.
+
+This could be because of a few different scenarios.
+
+1. The server and database name don't match between what was entered in Power BI Desktop and the data source configured for the gateway. These need to be the same values. They are not case sensitive.
+
+2. Your account is not listed in the **Users** tab of the data source within the gateway configuration. You will need to get with the administrator of the gateway to be added to that list.
+
+3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You will need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
+
+> [AZURE.WARNING] If one of your data sources requires OAuth authentication, you will not be able to configure it with the On-Premises Data Gateway. OAuth authentication is not currently supported with the On-Premises Data Gateway. You will need to remove the data source that requires OAuth authentication from Power BI Desktop in order to configured scheduled refresh. 
+
 ## Reports
 
-### Report could not access the data source because you do not have access to our data source via an enterprise gateway.
+### Report could not access the data source because you do not have access to our data source via an On-Premises Data Gateway.
 
 This is usually caused by one of the following. 
 

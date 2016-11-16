@@ -48,6 +48,6 @@ You will need to select the gateway you want to recover and supply the recovery 
 
 Once the gateway is configured, you will be able to make use of it to connect to on-premises data sources. 
 
-If the gateway is for Power BI, you will need to add your data sources to the gateway within the Power BI service. For PowerApps, you will need to select a gateway for a defined connection for supported data sources.
+If the gateway is for Power BI, you will need to add your data sources to the gateway within the Power BI service. This is done within the **Manage gateways** area. You can refer to the manage data sources articles for more information. 
 
-For Flow and Logic Apps, this gateway is ready to be used with your on-premises connections 
+For PowerApps, you will need to select a gateway for a defined connection for supported data sources. For Flow and Logic Apps, this gateway is ready to be used with your on-premises connections.
