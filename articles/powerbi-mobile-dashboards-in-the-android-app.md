@@ -38,7 +38,7 @@ Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get
     ![](media/powerbi-mobile-dashboards-in-the-android-app/power-bi-android-dashboards.png)
 
 
-     -     Yellow stars ![](media/powerbi-mobile-dashboards-in-the-android-app//power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
+     -     Yellow stars ![](media/powerbi-mobile-dashboards-in-the-android-app/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
 
      -     A notation below a dashboard name ![](media/powerbi-mobile-dashboards-in-the-android-app/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
 

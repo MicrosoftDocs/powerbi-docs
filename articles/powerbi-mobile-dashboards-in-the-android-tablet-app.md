@@ -39,7 +39,7 @@ Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-tablet-
 
     ![](media/powerbi-mobile-dashboards-in-the-android-tablet-app/power-bi-android-tablet-dashboard-home.png)
 
-     -     The yellow stars ![](media/powerbi-mobile-dashboards-in-the-android-tablet-app//power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
+     -     The yellow stars ![](media/powerbi-mobile-dashboards-in-the-android-tablet-app/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
 
      -     The notation below each dashboard name ![](media/powerbi-mobile-dashboards-in-the-android-tablet-app/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
 
