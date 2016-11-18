@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2016"
+   ms.date="11/17/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI for Android mobile app
@@ -81,6 +81,14 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-android-reporting-services-samples.png)
+
+## Search for a dashboard or report
+
+* Tap the magnifying glass in the upper-right corner ![](media/powerbi-mobile-android-app-get-started/power-bi-ipad-search-icon.png), then type the term to find.
+
+    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-tablet-search.png)
+
+    By default it searches all dashboards and reports, but you can search just one or the other.
 
 ## View your favorite dashboards, KPIs, and reports
 

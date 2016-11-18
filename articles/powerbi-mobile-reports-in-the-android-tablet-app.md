@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports in the Android app"
-   description="Learn about viewing reports in the Power BI mobile app for Android phones. You create reports in the Power BI service, then interact with them in the mobile apps."
+   pageTitle="Reports in the Power BI app for Android tablets"
+   description="Learn about viewing reports in the Power BI mobile app for Android tablets. You create reports in the Power BI service, then interact with them in the mobile apps."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,44 +17,40 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="11/17/2016"
    ms.author="maggies"/>
 
-# Reports in the Power BI app for Android phones
+# Reports in the Power BI mobile app for Android tablets
 
 A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com).
 
-Then you view and interact with those reports in the [Android app](powerbi-mobile-android-app-get-started.md).
+Then you view and interact with those reports in the [Android app](powerbi-mobile-android-tablet-app-get-started.md).
 
 ## Open a Power BI report
 
 - On the main page of the Power BI mobile app, tap Reports, then the report you want to open. 
 
-     ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report-home.png)
+     ![](media/powerbi-mobile-reports-in-the-android-tablet-app/power-bi-android-report-home.png)
 
-    Here you see the same Power BI reports ![](media/powerbi-mobile-reports-in-the-android-app/pbi_and_openrpticon.png) and Excel workbooks that you have in the Power BI service.
+    Here you see the same Power BI reports ![](media/powerbi-mobile-reports-in-the-android-tablet-app/pbi_and_openrpticon.png) and Excel workbooks that you have in the Power BI service.
 
 - On a dashboard, tap the ellipsis (**...**) on a tile > **Open Report**.
 
-    ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-open-report-tile.png)
+    ![](media/powerbi-mobile-reports-in-the-android-tablet-app/power-bi-android-open-report-tile.png)
 
     The report opens in landscape mode.
 
-    ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report.png)
+    ![](media/powerbi-mobile-reports-in-the-android-tablet-app/power-bi-android-tablet-report.png)
 
      > [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
 
-## See other pages in a Power BI report
-
--   Swipe from one side or the other, or 
-
--   Tap the Pages icon ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-pages-icon.png) in the lower-right corner, then tap a page name. 
+    To see other pages, tap the report page names along the bottom of the report.
 
 ## Cross-filter and highlight a Power BI report page
 
 -   Tap a value in a chart.
 
-    ![](media/powerbi-mobile-reports-in-the-android-app/PBI_Win10Uni_XFltrRptSm.png)
+    ![](media/powerbi-mobile-reports-in-the-android-tablet-app/PBI_Win10Uni_XFltrRptSm.png)
 
     Tapping the red "030-Kids" bubble in the bubble chart highlights related values in the other charts. Because the column chart in the upper-right shows percentages, some highlighted values are larger than the total values, and some are smaller. 
 
@@ -64,10 +60,10 @@ When designing a report in the Power BI service [(https://powerbi.com)](https://
 
 -   Select a value in a slicer on the report page.
 
-    ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report-slicer.png)
+    ![](media/powerbi-mobile-reports-in-the-android-tablet-app/power-bi-android-report-slicer.png)
 
 
-### See also
+## See also
 
-- [Get started with the Android app](powerbi-mobile-android-app-get-started.md)
+- [Get started with the Android app](powerbi-mobile-android-tablet-app-get-started.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

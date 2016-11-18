@@ -1,10 +1,10 @@
 <properties
-   pageTitle="Set data alerts in the Power BI app for Android phones"
-   description="Learn to set alerts to notify you when data in a dashboard changes beyond limits you set in the Power BI app for Android phones and in the Power BI service."
+   pageTitle="Set data alerts in the Power BI app for Android tablets"
+   description="Learn to set alerts to notify you when data in a dashboard changes beyond limits you set in the Power BI app for Android tablets and in the Power BI service."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/04/2016"
+   ms.date="11/17/2016"
    ms.author="maggies"/>
 
-# Set data alerts in the Power BI app for Android phones
+# Set data alerts in the Power BI mobile app for Android tablets
 
-You can set alerts in the Power BI mobile app for Android phones and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts in the Power BI mobile app and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+You can set alerts in the Power BI mobile app for Android tablets and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts in the Power BI mobile app and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
 
 > [AZURE.WARNING] Data-driven alert notifications provide information about your data. If your device gets stolen, we recommend going to the Power BI service to turn off all data-driven alert rules. 
 > 
@@ -32,23 +32,23 @@ You can set alerts in the Power BI mobile app for Android phones and in the Powe
 
 1.  Tap a number or gauge tile in a dashboard to open it.  
 
-2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-alert-icon.png) to add an alert.  
+2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-alert-icon.png) to add an alert.  
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-number-tile.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-number-tile.png)
 
 3.  Tap the plus icon (+).
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-no-alerts-yet.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-no-alerts-yet.png)
 
 4.  Choose to receive alerts above or below a value, and type the value.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-set-alert-condition.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-set-alert-condition.png)
 
 4.  Tap **Done**.
 
 5.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-set-alert-frequency.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-set-alert-frequency.png)
 
     >**Note**: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
 
@@ -69,11 +69,11 @@ Data sources are often set to refresh daily, although some refresh more often. W
 
 2.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/powerbi-alerts-email.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/powerbi-alerts-email.png)
 
 3.  Power BI adds a message to your [**Notification center**](powerbi-mobile-notification-center.md).
 
-4. Tap the main menu icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-notification-icon-border.png) to open the Notification center and see the alert details.
+4. Tap the main menu icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-notification-icon-border.png) to open the Notification center and see the alert details.
 
 >**Note**: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
 
@@ -85,22 +85,22 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 
 1.  In a dashboard, tap a card or gauge tile that has an alert.  
 
-2.  Tap the solid bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-alert-yes-icon.png).  
+2.  Tap the solid bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-alert-yes-icon.png).  
 
 3. Tap the alert to change a value or turn it off.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-manage-alerts.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-manage-alerts.png)
 
 4. Tap the plus icon (+) to add another alert to the same tile.
 
-4. To delete the alert altogether, tap the garbage can icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-delete-alert-icon.png).
+4. To delete the alert altogether, tap the garbage can icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-delete-alert-icon.png).
 
 ## Tips and troubleshooting
 - Alerts currently aren't supported for Bing tiles or card tiles with date/time measures.
 - Alerts only work with numeric data.
 - Alerts only work on data that is refreshed. They don't work on static data.
 
-### See also  
+## See also  
 - [Manage your alerts in the Power BI service](powerbi-service-set-data-alerts.md)
 - [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
 - [Get started with Power BI](powerbi-service-get-started.md)  

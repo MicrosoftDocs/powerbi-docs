@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/18/2016"
+   ms.date="11/17/2016"
    ms.author="maggies"/>
 
 # View SQL Server Reporting Services mobile reports and KPIs in the iPhone app (Power BI for iOS)  
@@ -26,7 +26,10 @@ The iPhone app for Microsoft Power BI for iOS offers live, touch-enabled mobile 
 
  ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_MobRpt.png)
 
-[Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
+First things first:
+
+-  You [create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). You can even [create a special mobile report layout for phones](https://msdn.microsoft.com/library/mt703702.aspx). 
+-   You can also create KPIs right in the web portal, and organize them all in folders and mark your favorites, so you can find them easily. 
 
 Then in the iPhone app for Power BI, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
@@ -54,9 +57,13 @@ Even if you don't have access to a Reporting Services web portal, you can still 
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-connect-ssrs.png)
 
-4. Fill in the server address and your user name and password.
+4. Fill in the server address and your user name and password. Use this format for the server address:
 
-    >**Note**: Include **http** or **https** in front of the connection string. For example, http://*servername*.com/reports.
+     `http://<servername>/reports`
+     OR
+     `https://<servername>/reports`
+     
+     >**Note**: Include **http** or **https** in front of the connection string.
 
     Tap **Advanced option** to give the server a name, if you'd like.
 
@@ -100,9 +107,10 @@ You can only be connected to one report server at a time from your iPhone app. I
 
 ## Create Reporting Services mobile reports and KPIs
 
-You don't create Reporting Services KPIs and mobile reports in the Power BI mobile app. You create them in SQL Server Mobile Report Publisher and a SQL Server 2016 Reporting Services web portal.
+You don't create Reporting Services KPIs and mobile reports in the Power BI mobile app. You create them in SQL Server 2016 Enterprise Edition Mobile Report Publisher and a SQL Server 2016 Reporting Services web portal.
 
-- [Create your own Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
+- [Create your own Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) and publish them to the Reporting Services web portal.
+- [Create a special mobile report layout for phones](https://msdn.microsoft.com/library/mt703702.aspx).
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)
 
 ### See also  
