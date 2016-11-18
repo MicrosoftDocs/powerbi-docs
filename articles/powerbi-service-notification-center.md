@@ -18,14 +18,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="11/15/2016"
    ms.author="mihart"/>
 
-# Power BI Unified Notification Center
+# Power BI Notifications
 
-The Unified Notification Center is a sequential feed of information related to your Power BI experience. Open it to see messages about new dashboards that have been shared with you, changes to your Group space, information about Power BI events and meetings, alerts you've set, and more. You can [set alerts in the Power BI service](powerbi-service-set-data-alerts.md) and also in the Power BI mobile apps.
+The Notification Center is a sequential feed of information related to your Power BI experience. Open it to see messages about new dashboards that have been shared with you, changes to your Group space, information about Power BI events and meetings, alerts you've set, and more. You can [set alerts in the Power BI service](powerbi-service-set-data-alerts.md) and also in the Power BI mobile apps.
 
-Watch Amanda review notifications she's received, manager her notifications, and respond to them. Then follow the instructions below the video to try it out yourself.
+Watch Amanda review notifications she's received, manage her notifications, and respond to them. Then follow the instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bZMSv5KAlcE" frameborder="0" allowfullscreen></iframe>
 
@@ -34,7 +34,7 @@ Watch Amanda review notifications she's received, manager her notifications, and
 
     ![](media/powerbi-service-notification-center/power-bi-new-notification.png)
 
-2.  In the Power BI menubar, select the Notification icon.
+2.  In the Power BI menubar, select the Notifications icon.
 
     ![](media/powerbi-service-notification-center/power-bi-notifications-icon.png)
 
