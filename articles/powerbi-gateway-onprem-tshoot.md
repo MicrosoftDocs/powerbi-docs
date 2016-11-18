@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="11/16/2016"
+ms.date="11/18/2016"
 ms.author="asaxton"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -241,7 +241,7 @@ If you are still not getting anywhere, you could try getting a network trace usi
 
 ### Performance Counters
 
-There are a number of performance counters that can be used to gauge the activities for the gateway. These can be helfup to understanding if we have a large load of activity and may need to make a new gateway. These counters will not reflect how long something takes.
+There are a number of performance counters that can be used to gauge the activities for the gateway. These can be helpful to understanding if we have a large load of activity and may need to make a new gateway. These counters will not reflect how long something takes.
 
 These counters can be access through the Windows Performance Monitor tool.
 
@@ -339,7 +339,7 @@ GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 
 Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TraceVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration.
 
-> [AZURE.IMPORTANT] Enabling TraceVerbosity 5 could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set EmitQueryTraces to `4`. It is not recommended to leave this setting enabled long term.
+> [AZURE.IMPORTANT] Enabling TraceVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
 
 ```
 <setting name="TracingVerbosity" serializeAs="String">
