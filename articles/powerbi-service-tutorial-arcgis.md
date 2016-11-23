@@ -225,6 +225,41 @@ You can use the provided **Group Policy** templates to quickly add the required 
 
 [PowerBIEsri.admx](./groupPolicyTemplates/PowerBIEsri.admx)
 
+## Limitations
+ArcGIS Maps for Power BI (Preview) is available in the following services and applications:
+
+<table>
+<tr><th>Service/App</th><th>Availability</th></tr>
+<tr>
+<td>Power BI Desktop</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Power BI service (PowerBI.com)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Power BI mobile applications</td>
+<td>Coming soon</td>
+</tr>
+<tr>
+<td>Power BI publish to web</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Power BI Embedded</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Power BI service embedding (PowerBI.com)</td>
+<td>No</td>
+</tr>
+</table>
+
+In services or applications where ArcGIS Maps for Power BI (Preview) is not available, the visualization will show as an empty visual with the Power BI logo.
+
+When geocoding street addresses, only the first 1500 addresses are geocoded. Geocoding place names or countries is not subject to the 1500 address limit.
+
 ## Common questions
 **Is there any charge for using ArcGIS Maps for Power BI?**
 
