@@ -80,7 +80,7 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 
 ###   From the tile itself
 
-1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneBellIconUnselect.png). All the alerts that you've set for that tile are displayed.
+1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![](media/powerbi-service-set-data-alerts/power-bi-bell-icon.png). All the alerts that you've set for that tile are displayed.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-see-alerts.png).
 
