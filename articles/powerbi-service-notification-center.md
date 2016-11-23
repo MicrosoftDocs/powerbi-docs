@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2016"
+   ms.date="11/21/2016"
    ms.author="mihart"/>
 
 # Power BI Notifications
@@ -46,6 +46,7 @@ Watch Amanda review notifications she's received, manage her notifications, and 
 
 ### See also
 - [Data alerts in Power BI service](powerbi-service-set-data-alerts.md)
+- [Create a Microsoft Flow that is triggered by a Power BI data alert](powerbi-service-flow-integration.md)
 - [Set data alerts in the iPhone app (Power BI for iOS)](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
 - [Set data alerts in the Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md)
 -  More questions? [Try the Power BI Community](http://community.powerbi.com/)

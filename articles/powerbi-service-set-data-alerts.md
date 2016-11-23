@@ -18,12 +18,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/04/2016"
+   ms.date="11/21/2016"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
 
-Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards and gauges. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), [Power BI mobile app for Windows](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) and in the Power BI service. They are not available for Power BI Desktop.
+Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards and gauges. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), [Power BI mobile app for Windows](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](powerbi-service-flow-integration.md). 
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -113,6 +113,7 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 -  Alerts only work on data that is refreshed. They do not work on static data.
 
 ### See also
+- [Create a Microsoft Flow that includes a data alert](powerbi-service-flow-integration.md)
 - [Set data alerts on your iphone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
 - [Get started with Power BI](powerbi-service-get-started.md)
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
