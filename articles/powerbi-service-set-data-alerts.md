@@ -40,7 +40,7 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-card.png)
 
-2.  Select the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneBellIconUnselect.png) to add one or more alerts for **Total stores**.
+2.  Select the bell icon ![](media/powerbi-service-set-data-alerts/power-bi-bell-icon.png) to add one or more alerts for **Total stores**.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-set-alert.png)
 
