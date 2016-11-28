@@ -25,6 +25,8 @@
 ####    November 2016
 We are excited to announce a better way for you to navigate Power BI, quickly get to the dashboards that you access most often, and easily browse through all of your content. During this Preview phase, you'll be able to try it out and [switch back and forth between the old and new navigation experiences](powerbi-service-preview-features.md).
 
+>[AZURE.TIP] Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
+
 We've redesigned the navigation experience to make it easier for you to find and navigate your Power BI content.
 -  streamlined the lists for dashboards, reports, workbooks, and datasets
 
@@ -77,3 +79,5 @@ You can also filter to display only content that you own.  Power BI also lets yo
 ##  Switching between the 2 experiences
 You can go back to the old experience any time by selecting the gear icon, and choosing **Settings>Preview Features**. You can also turn it back on anytime later, by visiting the same screen.
 To learn how, see [Switch between the new and old Power BI navigation experiences](powerbi-service-preview-features.md).
+
+Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview)

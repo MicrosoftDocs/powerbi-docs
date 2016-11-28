@@ -23,13 +23,13 @@
 
 Ask questions and get answers in the form of Cortana report pages.
 
-You can search for your COrtana-enabled Power BI report pages through Cortana and view them in COrtana without navigating to Power BI.  You can use natural language to apply filters and retrieve a filtered view of the Cortana reports. You'll be able to interact with the visualizations as you would in Power BI --  filtering, highlighting, opening in Power BI, and much more.  
+You can search for your Cortana-enabled Power BI report pages through Cortana and view them in Cortana without navigating to Power BI.  You can use natural language to apply filters and retrieve a filtered view of the Cortana reports. You'll be able to interact with the visualizations as you would in Power BI --  filtering, highlighting, opening in Power BI, and much more.  
 
 The "answers" are actually a special type of report called a *Cortana report page* that are designed specifically for display by Cortana. Dataset owners can [create the Cortana report pages in Power BI](powerbi-service-cortana-desktop-entity-cards.md). These report pages should be designed to answer the most-common questions.   
 
 Colleagues can even ask questions with filters and the report page that Cortana displays will have those filters applied. For example, if you have a report page named "2016 sales data", you can ask for:
--    "2016 sales data" and see the complete unfiltered entity card
--    "2016 sales data for Surface" and see the entity card filtered to show only sales data for Surface.
+-    "2016 sales data" and see the complete unfiltered report page
+-    "2016 sales data for Surface" and see the report page filtered to show only sales data for Surface.
 
 ##  Next steps
 

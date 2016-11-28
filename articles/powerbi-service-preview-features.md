@@ -26,7 +26,7 @@
 
 As we make improvements to Power BI, we'll release some new functionality as *preview features*. Preview features can be turned on and off, giving you the opportunity to try them out.
 
->[AZURE.IMPORTANT] At the current time, [the only preview feature available is the **new navigation**](powerbi-service-the-new-power-bi-experience.md).
+>[AZURE.TIP] Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 
 ##    Current previews available
 **Navigation preview**: Starting in November 2016, we're previewing a [new Power BI navigation experience](powerbi-service-the-new-power-bi-experience.md). You'll be able to try it out for yourself, switching back and forth between the two experiences.
@@ -48,4 +48,4 @@ As we make improvements to Power BI, we'll release some new functionality as *pr
 ## See also
 [New Power BI navigation experience](powerbi-service-the-new-power-bi-experience.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
