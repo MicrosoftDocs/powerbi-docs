@@ -22,11 +22,11 @@
 
 # What's new in the latest Power BI Desktop update?
 
-## October 2016 Update (2.40.4554.361)
+## November 2016 Update (2.41.4581.301)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-October brings another scary-good collection of updates to Power BI Desktop. The links beside each update mean the following:
+We're especially thankful for our customers this month, and in November, we bring another compelling collection of updates to Power BI Desktop. The links beside each update mean the following:
 
 -   **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 -   Some features have an **[article]** that provides more detail.
@@ -37,49 +37,46 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 
 The following updates are new to Power BI Desktop this month:
 
-
 ### Report View:
 
--   Improved date axis range formatting [[video]](https://youtu.be/UXEYSvgvMaQ?t=26s)
--   Date slicer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateSlicer) [[video]](https://youtu.be/UXEYSvgvMaQ?t=2m9s)
--   Report gridlines and snap to grid (Preview) [[article]](powerbi-desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#snapToGrid) [[video]](https://youtu.be/UXEYSvgvMaQ?t=4m3s)
--   Data label improvements [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateLabels) [[video]](https://youtu.be/UXEYSvgvMaQ?t=5m30s)
--   Map formatting options [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#mapFormatting) [[video]](https://youtu.be/UXEYSvgvMaQ?t=7m22s)
--   Improved date axis range formatting [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateAxisRange)
+-   Hierarchical axis [[video]](https://youtu.be/kERJ_WOLuLk?t=36s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#hierarchicalAxis)
+-   Axis label and title color control [[video]](https://youtu.be/kERJ_WOLuLk?t=1m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#axisColor)
+-   Matrix conditional formatting [[video]](https://youtu.be/kERJ_WOLuLk?t=2m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#matrixConditionalFormatting)
+-   Table and matrix column formatting [[video]](https://youtu.be/kERJ_WOLuLk?t=4m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#columnFormatting)
+-   Drop-down slicer [[video]](https://youtu.be/kERJ_WOLuLk?t=5m54s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#dropdownSlicer)
+-   Mobile reports scrolling [[video]](https://youtu.be/kERJ_WOLuLk?t=7m7s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#mobileReports)
 
 
 ### Analytics
 
--   Grouping [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#grouping) [[video]](https://youtu.be/UXEYSvgvMaQ?t=9m42s)
--   Binning [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#binning) [[video]](https://youtu.be/UXEYSvgvMaQ?t=12m17s)
--   Top-N filter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#topN) [[video]](https://youtu.be/UXEYSvgvMaQ?t=13m55s)
--   Include/exclude data points [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#includeExclude) [[video]](https://youtu.be/UXEYSvgvMaQ?t=15m36s)
--   R-powered custom visuals[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#rCustomVisuals)
+-   Clustering (preview) [[video]](https://youtu.be/kERJ_WOLuLk?t=8m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#clustering)
+-   Forecasting (now in the **Power BI service**) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#forecasting)
+-   Groups (now on the ribbon) [[video]](https://youtu.be/kERJ_WOLuLk?t=13m29s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#groups)
+
 
 
 ### Data Connectors:
 
--   New data connectors [[video]](https://youtu.be/UXEYSvgvMaQ?t=17m30s):
-    -   Microsoft Dynamics 365 for Financials (Beta) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dynamics365Financials)
-    -   OLE DB [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#oledb)
-    -   Mixpanel [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#mixpanel)
+-   New data connectors [[video]](https://youtu.be/kERJ_WOLuLk?t=14m10s):
+    -   Spark DirectQuery [[video]](https://youtu.be/kERJ_WOLuLk?t=14m12s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#spark)
+    -   OData connector improvements [[video]](https://youtu.be/kERJ_WOLuLk?t=15m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#oData)
+    -   Enhanced *combine binaries* experience [[video]](https://youtu.be/kERJ_WOLuLk?t=15m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#combineBinaries)
+    -   Azure Analysis Services [[video]](https://youtu.be/kERJ_WOLuLk?t=17m3s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#azureAnalysisServices)
 
 ### Query Editing improvements
 
--   Support for *table parameters* in the **Invoke Function** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#invokeFunction) [[video]](https://youtu.be/UXEYSvgvMaQ?t=18m12s)
-
-### Other improvements
-
--   Diagnostics information in the **About** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#diagnostics) [[video]](https://youtu.be/UXEYSvgvMaQ?t=19m16s)
+-   Improved *function authoring* experience [[video]](https://youtu.be/kERJ_WOLuLk?t=18m3s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#functionAuthoring)
+-   Support for *percentage* data type [[video]](https://youtu.be/kERJ_WOLuLk?t=18m36s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#percentage)
+-   Added **Maximize** and **Restore** buttons in **Navigator** and **Query Dependencies** [[video]](https://youtu.be/kERJ_WOLuLk?t=19m16s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#maximize)
 
 
 >NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UXEYSvgvMaQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kERJ_WOLuLk" frameborder="0" allowfullscreen></iframe>
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
