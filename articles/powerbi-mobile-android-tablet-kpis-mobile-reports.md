@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="11/28/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs in the Power BI mobile app for Android tablets 
 The Power BI mobile app for Android tablets offers live, touch-enabled mobile access to your important on-premises business information. 
 
-![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/pbi_ssrs_and_foldrs.png)
+![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/power-bi-android-tablet-ssrs-home.png)
 
 First things first:
 
@@ -87,11 +87,11 @@ You can mark KPIs and mobile reports as favorites on your Reporting Services web
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/pbi_and_ssrs_favemenu.png)
+    ![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/power-bi-android-tablet-left-nav-favorites.png)
    
     Your favorites from the web portal are all on this page.
 
-    ![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/power-bi-android-ssrs-favorites.png)
+    ![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/power-bi-android-tablet-ssrs-favorites.png)
 
 ## Remove a connection to a report server
 

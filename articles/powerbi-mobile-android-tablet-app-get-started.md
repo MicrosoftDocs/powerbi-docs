@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="11/28/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Android tablets
@@ -96,11 +96,11 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/pbi_and_ssrs_favemenu.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-left-nav-favorites.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-ssrs-favorites.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-ssrs-favorites.png)
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
@@ -119,7 +119,7 @@ See what else you can do in the Android tablet app for Power BI with dashboards 
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-tablet-app.md).
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-notifications.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-left-nav-notifications.png)
 
 ### Reporting Services mobile reports and KPIs
 

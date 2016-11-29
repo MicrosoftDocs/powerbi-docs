@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="11/28/2016"
    ms.author="maggies"/>
 
 # Groups in the Power BI app for Android tablets 
@@ -43,7 +43,7 @@ Then you see and interact with group dashboards in the Microsoft [Power BI for 
 
 4.  Your group page displays the dashboards and reports that have been published to the group workspace.  
 
-    ![](media/powerbi-mobile-groups-in-the-android-tablet-app/power-bi-android-groups-dashboards.png)
+    ![](media/powerbi-mobile-groups-in-the-android-tablet-app/power-bi-android-tablet-group-home.png)
 
 4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-android-tablet-app.md) to open and view it in the group workspace.  
 

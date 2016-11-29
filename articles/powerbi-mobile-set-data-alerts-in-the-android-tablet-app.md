@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="11/28/2016"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI mobile app for Android tablets
@@ -42,13 +42,11 @@ You can set alerts in the Power BI mobile app for Android tablets and in the Pow
 
 4.  Choose to receive alerts above or below a value, and type the value.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-set-alert-condition.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-tablet-set-alert-condition.png)
 
 4.  Tap **Done**.
 
 5.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
-
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-set-alert-frequency.png)
 
     >**Note**: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
 
@@ -89,7 +87,7 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 
 3. Tap the alert to change a value or turn it off.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-manage-alerts.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-tablet-manage-alert.png)
 
 4. Tap the plus icon (+) to add another alert to the same tile.
 
