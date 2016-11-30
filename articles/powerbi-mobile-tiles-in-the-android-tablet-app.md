@@ -34,9 +34,9 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
      From here, you can:
 
-     -   Tap the Share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-tablet-app.md) with others.
+    -   Tap the Share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-tablet-app.md) with others.
 
-    -   Tap the Open report icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/power-bi-android-tablet-open-report-icon.png) to [view the report](powerbi-mobile-reports-in-the-android-tablet-app.md) in the mobile app.
+   -   Tap the Open report icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/power-bi-android-tablet-open-report-icon.png) to [view the report](powerbi-mobile-reports-in-the-android-tablet-app.md) in the mobile app.
 
 6. Sometimes the report creator has added a link to a tile. If so, when you tap the tile, the URL opens.
 
