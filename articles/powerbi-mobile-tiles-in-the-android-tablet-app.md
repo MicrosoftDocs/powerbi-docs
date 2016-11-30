@@ -32,9 +32,11 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
     ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/power-bi-android-tablet-tile.png)
 
-     Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-tablet-app.md) with others.
+     From here, you can:
 
-    Tap **Open report** to [view the report](powerbi-mobile-reports-in-the-android-tablet-app.md) in the mobile app.
+     -   Tap the Share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-tablet-app.md) with others.
+
+    -   Tap the Open report icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/power-bi-android-tablet-open-report-icon.png) to [view the report](powerbi-mobile-reports-in-the-android-tablet-app.md) in the mobile app.
 
 6. Sometimes the report creator has added a link to a tile. If so, when you tap the tile, the URL opens.
 
@@ -47,6 +49,6 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 5.   Tap the **X** in the upper-left corner to close the tile and return to the dashboard.
 
 ## See also  
-[Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
-[Get started with the Android app for Power BI](powerbi-mobile-android-tablet-app-get-started.md)  
-[Get started with Power BI](powerbi-service-get-started.md)  
+- [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
+- [Get started with the Android app for Power BI](powerbi-mobile-android-tablet-app-get-started.md)  
+- [Get started with Power BI](powerbi-service-get-started.md)  
