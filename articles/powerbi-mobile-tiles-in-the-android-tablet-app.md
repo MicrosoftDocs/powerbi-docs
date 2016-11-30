@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/29/2016"
+   ms.date="11/30/2016"
    ms.author="maggies"/>
 
 # Tiles in the Power BI app for Android tablets
@@ -38,7 +38,7 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
    -   Tap the Open report icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/power-bi-android-tablet-open-report-icon.png) to [view the report](powerbi-mobile-reports-in-the-android-tablet-app.md) in the mobile app.
 
-6. Sometimes the report creator has added a link to a tile. If so, when you tap the tile, the URL opens.
+6. Sometimes the dashboard creator has added a link to a tile. If so, when you tap the tile, the URL opens.
 
     Links can go to other Power BI dashboards or to an external URL. You can [tap the link](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
     
