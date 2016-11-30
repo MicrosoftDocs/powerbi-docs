@@ -58,7 +58,7 @@ You can view the **Guy in a Cube** one-minute video about this feature:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWqU5jiUl0" frameborder="0" allowfullscreen></iframe>
 
-Here are some additional links to using features in the **Power BI service**:
+Also, here are some additional articles that can help you learn to use the **Power BI service**:
 
 -   [Dashboards in Power BI](powerbi-service-dashboards.md)
 -   [Reports in Power BI](powerbi-service-reports.md)
