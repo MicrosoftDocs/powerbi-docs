@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/28/2016"
+   ms.date="11/29/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs in the Power BI mobile app for Android tablets 
@@ -73,13 +73,13 @@ Browse the samples to interact with KPIs and mobile reports.
 
 Reporting Services KPIs and mobile reports are displayed in the same folders they're in on the Reporting Services web portal. 
 
-- Tap a KPI to see it in focus mode &#151. (Tip your tablet to see it in landscape mode.)
+- Tap a KPI to see it in focus mode. (Tip your tablet to see it in landscape mode.)
 
-    ![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/pbi_and_ssrs_tilelndscpbrdr.png)
+    ![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/power-bi-android-tablet-ssrs-kpi.png)
 
 - Tap a mobile report to open and interact with it in the Power BI app.
 
-    ![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/pbi_and_ssrs_rpt.png)
+    ![](media/powerbi-mobile-android-tablet-kpis-mobile-reports/power-bi-android-tablet-ssrs-sample-report.png)
 
 ## View your favorite KPIs and reports
 

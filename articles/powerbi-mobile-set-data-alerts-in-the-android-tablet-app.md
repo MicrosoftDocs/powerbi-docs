@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/28/2016"
+   ms.date="11/29/2016"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI mobile app for Android tablets
@@ -34,11 +34,11 @@ You can set alerts in the Power BI mobile app for Android tablets and in the Pow
 
 2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-alert-icon.png) to add an alert.  
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-number-tile.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-tablet-number-tile.png)
 
 3.  Tap the plus icon (+).
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-no-alerts-yet.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-tablet-mobile-app/power-bi-android-tablet-no-alerts-yet.png)
 
 4.  Choose to receive alerts above or below a value, and type the value.
 

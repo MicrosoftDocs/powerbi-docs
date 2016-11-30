@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/28/2016"
+   ms.date="11/29/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Android tablets
@@ -59,6 +59,9 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
     ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-connect.png)
 
+    Give your SSRS server sign-in information to [view Reporting Services mobile reports and KPIs](powerbi-mobile-android-tablet-kpis-mobile-reports.md) in the Android tablet app for Power BI.
+
+
 ## Try the Power BI and Reporting Services samples  
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
 
@@ -70,7 +73,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
   
 2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-power-bi-samples.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-samples.png)
 
     >**Note**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
 
@@ -80,7 +83,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-reporting-services-samples.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-ssrs-samples.png)
 
 ## Search for a dashboard or report
 
@@ -112,11 +115,11 @@ See what else you can do in the Android tablet app for Power BI with dashboards 
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-android-tablet-app.md).
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-tablet-app.md).
--   View [report page tiles](powerbi-mobile-report-page-tiles-in-the-android-tablet-app.md).
 -   Open [Power BI reports](powerbi-mobile-reports-in-the-android-tablet-app.md).
 -   View [your groups](powerbi-mobile-groups-in-the-android-tablet-app.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-tablet-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-tablet-app.md).
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android-tablet.md) from your Android tablet.
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
     ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-left-nav-notifications.png)

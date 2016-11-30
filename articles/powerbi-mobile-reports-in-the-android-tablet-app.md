@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="11/29/2016"
    ms.author="maggies"/>
 
 # Reports in the Power BI mobile app for Android tablets
@@ -28,16 +28,13 @@ Then you view and interact with those reports in the [Android app](powerbi-mobi
 
 ## Open a Power BI report
 
-- On the main page of the Power BI mobile app, tap Reports, then the report you want to open. 
+1. On the main page of the Power BI mobile app, tap Reports. 
 
      ![](media/powerbi-mobile-reports-in-the-android-tablet-app/power-bi-android-tablet-report-home.png)
 
     Here you see the same Power BI reports ![](media/powerbi-mobile-reports-in-the-android-tablet-app/pbi_and_openrpticon.png) and Excel workbooks that you have in the Power BI service.
 
-- Or on a dashboard, tap the ellipsis (**...**) on a tile > **Open Report**.
-
-    ![](media/powerbi-mobile-reports-in-the-android-tablet-app/power-bi-android-open-report-tile.png)
-
+2. Tap the report you want to open.
     The report opens in landscape mode.
 
     ![](media/powerbi-mobile-reports-in-the-android-tablet-app/power-bi-android-tablet-report.png)
