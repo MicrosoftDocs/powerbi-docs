@@ -3,7 +3,7 @@
    description="Download a report from the Power BI service to a Power BI Desktop file"
    services="powerbi"
    documentationCenter=""
-   authors="davidi"
+   authors="davidiseminger"
    manager="mblythe"
    backup=""
    editor=""
@@ -23,7 +23,7 @@
 # Export (download) a Power BI service report for use in Power BI Desktop
 In the **Power BI** service, you can easily export a report (also referred to as *downloading a report*) so you can open (and modify, if you want) the report in **Power BI Desktop**. The file extension used for **Power BI Desktop** files is *.pbix*. There are a few limitations and considerations to keep in mind, which are discussed later in this article.
 
-![](media/powerbi-service-export-to-excel/export-to-excel_1.png)
+![](media/powerbi-service-export-to-pbix/export-to-pbix_1a.png)
 
 To download the .pbix file, follow these steps:
 

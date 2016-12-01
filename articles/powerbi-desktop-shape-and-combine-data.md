@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 # Shape and combine data in Power BI Desktop
 
@@ -216,9 +216,3 @@ To apply changes and close Query Editor, select Close & Apply from the **Home** 
 -   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
 
 -   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
-
-Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
-
-![](media/powerbi-desktop-shape-and-combine-data/SendFeedback.png)
-
- 
