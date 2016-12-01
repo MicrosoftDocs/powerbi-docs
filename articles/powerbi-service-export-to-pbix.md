@@ -3,7 +3,7 @@
    description="Download a report from the Power BI service to a Power BI Desktop file"
    services="powerbi"
    documentationCenter=""
-   authors="davidi"
+   authors="davidiseminger"
    manager="mblythe"
    backup=""
    editor=""
