@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2016"
+   ms.date="11/17/2016"
    ms.author="maggies"/>
 
 # View, explore, and share dashboards in the Power BI mobile app for Windows 10  
@@ -36,6 +36,10 @@ Then in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-g
 2.  Tap a dashboard to open it.   
 
     ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-device-dashboard-home.png)
+
+     -     The black stars show which dashboards are favorites. 
+
+     -     The notation below each dashboard name (in this example, **MBI**) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
 
     Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 

@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/03/2016"
+   ms.date="11/30/2016"
    ms.author="maggies"/>
 
 # Interact with tiles in the iPhone app (Power BI for iOS)
@@ -48,7 +48,7 @@ Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you op
 
 5.   [Add an alert to the tile](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). If the values go above or below targets, Power BI will notify you.
 
-6. Sometimes the report creator has added a link to a tile. If so, it has a link icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon.png) when it's in focus mode:
+6. Sometimes the dashboard creator has added a link to a tile. If so, it has a link icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon.png) when it's in focus mode:
 
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-tile-link.png)
 
