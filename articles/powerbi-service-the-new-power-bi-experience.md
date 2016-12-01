@@ -23,11 +23,13 @@
 # The new Power BI navigation experience
 
 ####    November 2016
+
 We are excited to announce a better way for you to navigate Power BI, quickly get to the dashboards that you access most often, and easily browse through all of your content. During this Preview phase, you'll be able to try it out and [switch back and forth between the old and new navigation experiences](powerbi-service-preview-features.md).
 
 >[AZURE.TIP] Have questions or feedback? [Visit the Power BI community forum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 
 We've redesigned the navigation experience to make it easier for you to find and navigate your Power BI content.
+
 -  streamlined the lists for dashboards, reports, workbooks, and datasets
 
 -  added a separate content area for workbooks
@@ -41,6 +43,7 @@ We've redesigned the navigation experience to make it easier for you to find and
 -   reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen
 
 ##  Favorite dashboards
+
 We heard from many users that you want to quickly access a few select dashboards that are most important to you. To help you reach the dashboards you go to most, we added a way to favorite those dashboards and make them easily accessible from all your workspaces.
 
 1.  With the dashboard open, select **Favorite** from the top-right corner.
@@ -63,9 +66,20 @@ We heard from many users that you want to quickly access a few select dashboards
 
 
 ##  Content View
+
 We've also improved the way you navigate and access all your Power BI content. Before this, all of your dashboards, reports, and datasets were listed on the left navigation pane. Now, all that content doesn't appear in the navigation pane and instead displays within the context of a workspace. Select a workspace from the left navigation pane and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-dashboards-tab.png)
+
+## Working with groups
+
+We have also made improvements to way that content appears in your 'My workspace' or Group Workspaces. The content shows up on the main canvas area, with separate tabs for dashboards, reports, workbooks and datasets. Authors also get quick access to the top actions they might want to perform – for example, on the datasets tab, you can now refresh the dataset with one click and see the last refresh and next refresh times right in the list.
+
+![](media/powerbi-service-the-new-power-bi-experience/powerbi-new-experience-groups1.png)
+
+You can switch workspaces by clicking on the arrow next to the current workspace name.
+
+![](media/powerbi-service-the-new-power-bi-experience/powerbi-new-experience-groups2.png)
 
 ##  Search, filter and sort content
 The new content view makes it easier to search, filter and sort your content. To search for a dashboard, report or workbook, type in the search area. Power BI filters to only the content that has your search string as part of the name. 
