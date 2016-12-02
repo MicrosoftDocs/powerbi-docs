@@ -104,7 +104,7 @@ Read more about [configuring Power BI mobile apps for Android with Microsoft Int
 
 See what else you can do in the iPhone app with dashboards in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
-### Power BI dashboards
+### Power BI dashboards and reports
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
 -   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.

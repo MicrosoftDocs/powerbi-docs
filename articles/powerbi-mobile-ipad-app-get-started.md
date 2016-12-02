@@ -108,8 +108,11 @@ Microsoft Intune lets organizations with Power BI Pro licenses control items lik
 
 Read more about [configuring Power BI mobile apps for Android with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
-## More with Power BI dashboards and reports in the mobile apps 
-See what else you can do in the iPad app with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
+## What next?
+
+See what else you can do in the iPad app with dashboards in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
+
+### Power BI dashboards and reports
 
 -   View your [Power BI dashboards](powerbi-mobile-dashboards-on-the-ipad-app.md).
 -   Interact with [tiles on your Power BI dashboards](powerbi-mobile-tiles-in-the-ipad-app.md).
@@ -122,7 +125,7 @@ See what else you can do in the iPad app with dashboards and reports in Power BI
    
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-notifications.png)
 
-## More with Reporting Services mobile reports and KPIs
+### Reporting Services mobile reports and KPIs
 
 - [View Reporting Services mobile reports and KPIs](powerbi-mobile-ipad-kpis-mobile-reports.md) on the Reporting Services web portal.
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
