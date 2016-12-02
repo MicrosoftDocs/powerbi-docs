@@ -3,7 +3,7 @@
    description="Export data or visuals from Power BI to Excel"
    services="powerbi"
    documentationCenter=""
-   authors="davidi"
+   authors="davidiseminger"
    manager="mblythe"
    backup=""
    editor=""

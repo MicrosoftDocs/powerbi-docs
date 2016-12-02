@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="11/17/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10 
@@ -26,7 +26,7 @@ The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access 
 
 ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
-[Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
+[Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
 Then in the Power BI mobile app for Windows 10, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
@@ -51,9 +51,13 @@ Browse the samples to interact with KPIs and mobile reports.
     ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-windows-10-ssrs-connect-server-menu.png)
 
 
-4. Fill in the server address and your user name and password.
+4. Fill in the server address and your user name and password. Use this format for the server address:
 
-    >**Note**: Include **http** or **https** in front of the connection string. For example, http://*servername*/reports.
+     `http://<servername>/reports`
+     OR
+     `https://<servername>/reports`
+     
+     >**Note**: Include **http** or **https** in front of the connection string.
 
     Tap **Advanced option** to give the server a name, if you'd like.
 

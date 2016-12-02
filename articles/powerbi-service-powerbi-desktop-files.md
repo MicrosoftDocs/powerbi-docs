@@ -17,15 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Get data from Power BI Desktop files
 ![](media/powerbi-service-powerbi-desktop-files/pbid_file_icon.png)
 
-Power BI Desktop makes connecting to a many different data sources, querying and transforming data, modeling your data, and creating powerful and dynamic reports easier than ever. And best of all, IT’S FREE! Not familiar with Power BI Desktop yet? Be sure to check out [Getting started with Power BI Desktop](articles/powerbi-desktop-getting-started.md).
+**Power BI Desktop** makes business intelligence and reporting easy. Whether you're connecting to a many different data sources, querying and transforming data, modeling your data, and creating powerful and dynamic reports, **Power BI Desktop** makes business intelligence tasks intuitive and fast. If you're not familiar with **Power BI Desktop**, check out [Getting started with Power BI Desktop](articles/powerbi-desktop-getting-started.md).
 
-Once you’ve got some data into Power BI Desktop, and maybe created a few reports, it’s time to get your saved file into Power BI.
+Once you bring data into **Power BI Desktop** and create a few reports, it’s time to get your saved file into the **Power BI service**.
 
 ## Where your file is saved makes a difference
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/30/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Connect to a Snowflake computing warehouse in Power BI Desktop (Preview)
