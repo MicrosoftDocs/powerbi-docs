@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2016"
+   ms.date="12/01/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI app for iOS on an iPhone or iPod Touch
@@ -91,6 +91,14 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
     ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-favorites.png)
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
+
+## Enterprise support for the Power BI mobile apps
+
+Organizations can use Microsoft Intune to manage devices and applications, including the Power BI mobile apps for Android and iOS.
+
+Microsoft Intune lets organizations with Power BI Pro licenses control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
+
+Read more about [configuring Power BI mobile apps for Android with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
 ## What next?
 

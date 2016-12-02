@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2016"
+   ms.date="12/01/2016"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -100,6 +100,13 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
+## Enterprise support for the Power BI mobile apps
+
+Organizations can use Microsoft Intune to manage devices and applications, including the Power BI mobile apps for Android and iOS.
+
+Microsoft Intune lets organizations with Power BI Pro licenses control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
+
+Read more about [configuring Power BI mobile apps for Android with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
 ## More with Power BI dashboards and reports in the mobile apps 
 See what else you can do in the iPad app with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
@@ -121,7 +128,7 @@ See what else you can do in the iPad app with dashboards and reports in Power BI
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
-### See also  
+## See also  
 - [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
 - [Get started with Power BI](powerbi-service-get-started.md)  
 - Questions? Try asking the [Power BI Community](http://community.powerbi.com/)
