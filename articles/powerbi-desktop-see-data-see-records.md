@@ -83,7 +83,7 @@ There are a few limitations to consider when using **See Data** or **See Records
 
 ## More Information
 
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+﻿There are all sorts of report formatting and data management features in **Power BI Desktop**. Check out the following resources for a few examples:
 
 -   [Use grouping and binning in Power BI Desktop](powerbi-desktop-grouping-and-binning.md)
 
