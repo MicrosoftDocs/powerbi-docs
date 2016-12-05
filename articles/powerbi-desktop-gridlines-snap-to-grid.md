@@ -30,7 +30,7 @@ In **Power BI Desktop** you can also adjust the z-order (bring forward, send bac
 
 ### Enabling gridlines and snap-to-grid
 
-To enable gridlines and snap-to-grid,select the **View** ribbon, then enable the checkboxes for **Show gridlines** and **Snap objects to grid.** You can select one or both boxes; they operate independently.
+To enable gridlines and snap-to-grid, select the **View** ribbon, then enable the checkboxes for **Show gridlines** and **Snap objects to grid.** You can select one or both boxes; they operate independently.
 
 ![](media/powerbi-desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
 
