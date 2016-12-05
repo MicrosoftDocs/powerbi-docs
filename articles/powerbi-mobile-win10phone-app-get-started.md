@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2016"
+   ms.date="12/01/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Windows 10
@@ -113,11 +113,11 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
-## What more?
+## What next?
 
 See what more you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
 
-### Power BI dashboards
+### Power BI dashboards and reports
 
 -   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
 -   [Pin Power BI tiles and dashboards](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen as live tiles.
