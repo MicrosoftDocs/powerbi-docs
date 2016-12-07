@@ -30,7 +30,7 @@ Power BI free and Pro licenses are different based on the kind of content users 
 
 -   Data from a dataset that connects to on-premises data using the [Power BI Gateway - Personal ](powerbi-personal-gateway.md) or the [On-premises Data Gateway](powerbi-gateway-onprem.md).
 
--   Data from Azure Analysis Services.
+-   Data from a live connection to Azure Analysis Services.
 
 -   Data (including reports, dashboards or tiles) from a dataset that uses [Row-level security (RLS)](powerbi-admin-rls.md).
 
