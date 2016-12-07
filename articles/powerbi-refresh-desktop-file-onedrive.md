@@ -4,12 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="04/01/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="12/07/2016"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online
