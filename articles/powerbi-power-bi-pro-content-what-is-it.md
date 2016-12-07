@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="12/07/2016"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
@@ -29,6 +29,8 @@ Power BI free and Pro licenses are different based on the kind of content users 
 -   Data from a [dataset that refreshes more frequently than daily](powerbi-refresh-data.md).
 
 -   Data from a dataset that connects to on-premises data using the [Power BI Gateway - Personal ](powerbi-personal-gateway.md) or the [On-premises Data Gateway](powerbi-gateway-onprem.md).
+
+-   Data from Azure Analysis Services.
 
 -   Data (including reports, dashboards or tiles) from a dataset that uses [Row-level security (RLS)](powerbi-admin-rls.md).
 
