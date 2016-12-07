@@ -4,11 +4,11 @@ description="This covers the steps to select a gateway and configure scheduled r
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
-qualityFocus="complete"
-qualityDate="04/01/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/15/2016"
+ms.date="12/07/2016"
 ms.author="asaxton"/>
 # Configuring scheduled refresh
 
