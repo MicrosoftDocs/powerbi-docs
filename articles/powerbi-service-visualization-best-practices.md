@@ -440,7 +440,7 @@ To keep your report page from looking too confusing or too busy, be consistent i
 ####    Sorting
 A really simple opportunity to provide faster insight is to set the sorting of visuals. For example, sorting bar charts in descending or ascending order based on the value in the bars enables you to quickly show significant incremental information without using more real estate.
 
-To sort a chart, select the ellipses (…) in the top right of the chart, select **Sort** and choose the field you want to sort by and the direction. For more information, see [Change how a visual is sorted](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-change-how-a-chart-is-sorted/).
+To sort a chart, select the ellipses (…) in the top right of the chart, select **Sort** and choose the field you want to sort by and the direction. For more information, see [Change how a visual is sorted](https://powerbi.microsoft.com/documentation/powerbi-service-change-how-a-chart-is-sorted/).
 
 ####    Chart interaction and interplay
 One of the most compelling feature of Power BI is the ability to edit the way charts interact with each other.  By default, charts are cross-highlighted: when you select a data point, the related data of other charts light up and the unrelated data dims. You can override this behavior to use any chart as a true filter which saves you real estate on your page. To do this, select **Visual Interactions** from the menubar.
@@ -602,7 +602,7 @@ The example below shows the trends in the number of medals awarded and the numbe
    **Figure 50:	Line charts with matching y-axes**
 
 For more information, see:
--  [Customize the X and Y axes](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/)
+-  [Customize the X and Y axes](https://powerbi.microsoft.com/documentation/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/)
 
 -  [Line charts and irregular intervals](http://www.perceptualedge.com/articles/visual_business_intelligence/line_graphs_and_irregular_intervals.pdf)
 
