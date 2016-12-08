@@ -1,28 +1,28 @@
-<properties 
+<properties
    pageTitle="Acumatica content pack"
    description="Acumatica content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
-   
+
 # Acumatica content pack for Power&nbsp;BI
 
-The Power BI Acumatica content pack allows to you quickly gain insights into your opportunity data. Power BI retrieves your data, including opportunities, accounts, and customers, then builds a default dashboard and related reports based on that data. 
+The Power BI Acumatica content pack allows to you quickly gain insights into your opportunity data. Power BI retrieves your data, including opportunities, accounts, and customers, then builds a default dashboard and related reports based on that data.
 
 Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services/acumatica) or read more about the [Acumatica integration](https://powerbi.microsoft.com/integrations/acumatica) with Power BI.
 
@@ -56,7 +56,7 @@ Note: this content pack requires Acumatica v5.2 or higher.
 6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \* which disappears once selected, chosing the dashboard will show a similar layout to the one below:
 
 	![](media/powerbi-content-pack-acumatica/dashboard.png)
-    
+
 
 **What Now?**
 
@@ -92,7 +92,7 @@ The Company Name is only required if you have a multi-company deployment. You ca
 
 ## Troubleshooting
 
-If you’re not able to login, verify the Acumatica OData endpoint you provided is formatted correctly. 
+If you’re not able to login, verify the Acumatica OData endpoint you provided is formatted correctly.
 
 	https://<application site domain>/odata/<company name>
 
@@ -107,4 +107,3 @@ If you're having trouble connecting, please confirm with your admin your versio
 
 
  
-

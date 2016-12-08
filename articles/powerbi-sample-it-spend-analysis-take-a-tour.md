@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2016"
+   ms.date="12/08/2016"
    ms.author="amac"/>
 
 # IT Spend Analysis sample for Power BI: Take a tour
@@ -97,13 +97,13 @@ Notice on the “Var plan% by Month and Business Area” chart that infrastructu
 
 Click **Edit Report** in the upper-left corner and explore in Editing View.
 
--   See how the pages are made – the fields in each chart, filters on the pages .
+-   See how the pages are made – the fields in each chart, filters on the pages
 
--   Add pages and charts based on the same data.
+-   Add pages and charts based on the same data
 
--   Change the visualization type for each chart.
+-   Change the visualization type for each chart
 
--   Pin them to your dashboard.
+-   Pin them to your dashboard
 
 This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to Get Data for a new copy of this sample.
 

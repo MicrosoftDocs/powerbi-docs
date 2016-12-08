@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/16/2015"
+   ms.date="12/08/2016"
    ms.author="mihart"/>
 
 
@@ -69,7 +69,7 @@ In the Power BI service, you'll need to repeat these steps for each dataset that
 
     Sign in with the account you use with Power BI.
 
-Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana. 
+Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana.
 
 
 ## See also

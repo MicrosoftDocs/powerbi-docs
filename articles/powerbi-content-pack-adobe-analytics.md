@@ -1,29 +1,29 @@
-<properties 
+<properties
    pageTitle="Adobe Analytics content pack"
    description="Adobe Analytics content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 # Adobe Analytics content pack for Power&nbsp;BI
 
 Connecting to Adobe Analytics through Power BI starts by connecting to your Adobe Analytics Marketing Cloud account. You will get a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once per day.
 
-Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/services/adobe-analytics) or read more about the [Adobe Analytics integration](https://powerbi.microsoft.com/integrations/adobe-analytics) with Power BI. 
+Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/services/adobe-analytics) or read more about the [Adobe Analytics integration](https://powerbi.microsoft.com/integrations/adobe-analytics) with Power BI.
 
 ## How to connect
 
@@ -109,7 +109,7 @@ From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/refe
 ![](media/powerbi-content-pack-adobe-analytics/ReportSuiteID.PNG)
 
 ## Troubleshooting
-If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company). 
+If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company).
 
 If you've successfully passed the credentials screen and start the content pack loading before hitting an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Please review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today however we're considering updates to better support larger instances, please provide feedback to the Power BI team at https://ideas.powerbi.com
 

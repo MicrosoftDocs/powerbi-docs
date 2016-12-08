@@ -1,23 +1,23 @@
-﻿<properties 
+﻿<properties
    pageTitle="IntelliBoard content pack"
    description="IntelliBoard content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 
 # IntelliBoard content pack for Power&nbsp;BI  
@@ -29,15 +29,15 @@ Connect to the [IntelliBoard content pack](https://app.powerbi.com/getdata/servi
 ## How to connect
 
 1. Select **Get Data** at the bottom of the left navigation pane.  
-    
+
     ![](media/powerbi-content-pack-intelliboard/getdata.png)
 
 2. In the **Services** box, select **Get**.  
-    
+
     ![](media/powerbi-content-pack-intelliboard/services.png)
 
 3. Select **IntelliBoard**, then select **Get**.  
-    
+
     ![](media/powerbi-content-pack-intelliboard/intelliboard.png)
 
 4. Select **OAuth 2** and then **Sign In**. When prompted, provide your IntelliBoard credentials.
@@ -78,10 +78,9 @@ The content pack includes data from the following tables:
 ## System requirements
 
 An IntelliBoard account with permissions to the above tables is required in order to instantiate this content pack.
-    
+
 ### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
