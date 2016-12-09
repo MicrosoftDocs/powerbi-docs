@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="fetiyekarabay"
-   manager="mblythe"
+   manager="erikre"
    backup="mihart"
    editor=""
    tags=""
@@ -17,27 +17,47 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/03/2016"
+   ms.date="12/09/2016"
    ms.author="fetiyek"/>
 
 # What's new in the Power BI service  
 
-Check this page for known issues and recently-released features in **Power BI Service**.
+Check this page for known issues and recently released features in **Power BI Service**.
 
->**NOTE**:
+>**Note**: For related "What's New" information, see:
 >
-For related "What's New" information, see:
->
->[What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
->
->[What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
->
->[Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
-
+>* [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+>* [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
+>* [Power BI team blog](https://powerbi.microsoft.com/blog/)
+>* [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
 
 
 ## Recent updates
-**July 29, 2016**
+
+### November 2016
+- Preview: Try out the [new navigation for the Power BI service, powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/)
+- Preview: [Export a Power BI report to PowerPoint](https://powerbi.microsoft.com/blog/export-power-bi-report-to-powerpoint-preview/).
+- Preview: [Download Power BI reports (PBIX files)](https://powerbi.microsoft.com/blog/announcing-preview-of-download-power-bi-desktop-files-from-the-web/) from the Power BI service so you can edit them in Power BI Desktop.
+- Create a [liquid fill gauge](https://powerbi.microsoft.com/blog/visual-awesomeness-unlocked-liquid-fill-gauge/), a circle gauge that represents a percentage value with animated liquid waves.
+- Explore your [Jira project-management data](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) with this Power BI content pack
+- Explore your [Insightcentr data](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) with this Power BI content pack
+- Create infographics quickly with the [infographic designer custom visual](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
+- Private preview: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) outputs Power BI streaming datasets, with which you can create streaming tiles.
+- Preview: Add [ESRI ArcGIS Maps Visualizations](https://powerbi.microsoft.com/en-us/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) to your reports and dashboards
+
+
+
+### October 2016
+- Take advantage of [Power BI integration with the new Microsoft Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/).
+- Design [R visualizations](https://powerbi.microsoft.com/blog/r-powered-custom-visuals/) in Power BI without understanding R.
+- Preview: With [Azure Analysis Services](https://powerbi.microsoft.com/blog/introducing-azure-analysis-services/), BI professionals can create BI semantic models based on data that resides in the cloud or on premises, to provide business users with a simplified view of their data.
+- The new [Power BI Service Administrator Role](https://powerbi.microsoft.com/blog/making-it-easier-to-administer-power-bi/) can be assigned to users who should have access to the Power BI Admin Portal but not other Office 365 administrative access.
+- Explore your [MYOB Advanced data with Power BI](https://powerbi.microsoft.com/blog/explore-your-myob-advanced-data-with-power-bi/).
+- How a non-administrator can review the [Power BI audit log](https://powerbi.microsoft.com/en-us/blog/tech-tip-thursday-power-bi-auditing-for-a-non-administrator/)
+- Display [text columns as ToolTips](https://powerbi.microsoft.com/blog/tech-tip-thursday-displaying-text-columns-in-tool-tips/).
+
+
+### July 29, 2016
 
 ***RLS graduates from preview***
 
@@ -53,7 +73,7 @@ For related "What's New" information, see:
 
 For all the details, [visit the Power BI team blog](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/)
 
-**June 1, 2016**
+### June 1, 2016
 
 ***Quick Insights***
 
@@ -61,7 +81,7 @@ For all the details, [visit the Power BI team blog](https://powerbi.microsoft.co
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
 
-**May 16, 2016**
+### May 16, 2016
 
 ***Get Data***
 
@@ -91,13 +111,13 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-**June 1, 2016**
+### June 1, 2016
 
 -   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
 
-**May 16, 2016**
+### May 16, 2016
 
 ***Get Data***
 
@@ -127,7 +147,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-**May 13, 2016**
+### May 13, 2016
 
 -   [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](powerbi-service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 
