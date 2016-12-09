@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/07/2016"
+   ms.date="12/09/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -54,6 +54,8 @@ You can now manually refresh your dashboard tiles. For tiles based on DirectQuer
 
 **Geographic filtering**
 On your Windows 10 phone you can now filter your report based on your current location, and see only the data you need.
+
+**SandDance visualization on Surface Hub**
 
 ## August 2016
 

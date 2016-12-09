@@ -43,7 +43,7 @@ Check this page for known issues and recently released features in **Power BI Se
 - Explore your [Insightcentr data](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) with this Power BI content pack
 - Create infographics quickly with the [infographic designer custom visual](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
 - Private preview: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) outputs Power BI streaming datasets, with which you can create streaming tiles.
-- Preview: Add [ESRI ArcGIS Maps Visualizations](https://powerbi.microsoft.com/en-us/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) to your reports and dashboards
+- Preview: Add [ESRI ArcGIS Maps Visualizations](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) to your reports and dashboards
 
 
 
@@ -53,7 +53,7 @@ Check this page for known issues and recently released features in **Power BI Se
 - Preview: With [Azure Analysis Services](https://powerbi.microsoft.com/blog/introducing-azure-analysis-services/), BI professionals can create BI semantic models based on data that resides in the cloud or on premises, to provide business users with a simplified view of their data.
 - The new [Power BI Service Administrator Role](https://powerbi.microsoft.com/blog/making-it-easier-to-administer-power-bi/) can be assigned to users who should have access to the Power BI Admin Portal but not other Office 365 administrative access.
 - Explore your [MYOB Advanced data with Power BI](https://powerbi.microsoft.com/blog/explore-your-myob-advanced-data-with-power-bi/).
-- How a non-administrator can review the [Power BI audit log](https://powerbi.microsoft.com/en-us/blog/tech-tip-thursday-power-bi-auditing-for-a-non-administrator/)
+- How a non-administrator can review the [Power BI audit log](https://powerbi.microsoft.com/blog/tech-tip-thursday-power-bi-auditing-for-a-non-administrator/)
 - Display [text columns as ToolTips](https://powerbi.microsoft.com/blog/tech-tip-thursday-displaying-text-columns-in-tool-tips/).
 
 
