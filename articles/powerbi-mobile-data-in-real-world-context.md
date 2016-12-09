@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2016"
+   ms.date="12/08/2016"
    ms.author="maggies"/>
 
 # Get Power BI data from the real world with the mobile apps
