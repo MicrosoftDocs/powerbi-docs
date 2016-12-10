@@ -66,7 +66,9 @@ Then in [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-
 
 4.   Tap the back arrow or the back button to close the tile and return to the dashboard.
 
-### See also  
+## See also  
 [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Get started with the Power BI mobile app](powerbi-mobile-win10phone-app-get-started.md) for Windows 10  
 [Get started with Power BI](powerbi-service-get-started.md)  
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
