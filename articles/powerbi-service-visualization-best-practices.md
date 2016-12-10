@@ -313,13 +313,13 @@ It’s possible to build a visual that distorts the truth. There’s a website w
 
 So create visuals that don’t intentionally distort reality and that aren’t manipulated to tell the story you want them to tell.  Here is an example:
 
-![](media/powerbi-service-visualization-best-practices/corp success distorted.png)
+![](media/powerbi-service-visualization-best-practices/corp-success-distorted.png)
 
 **Figure 22:	Distorted reality chart**
 
 In this example, it appears as if there is a big difference between the 4 companies, and that CorpB is way more successful than the other 3.  But notice that the X axis doesn’t start at zero and that the differences between the companies is likely within the margin of error.  Here’s the same data with an X axis that does start at zero.
 
-![](media/powerbi-service-visualization-best-practices/corp success.png)
+![](media/powerbi-service-visualization-best-practices/corp-success.png)
 
 **Figure 23:	Realistic chart**
 
@@ -587,21 +587,22 @@ The example below shows the trends in the number of medals awarded and the numbe
 
 -	Make full use of the space.  If it makes sense for your data, set the start and end points for the Y-axis to eliminate empty space at the top and bottom of your chart and to focus in on the actual data points. To do this, select the paint roller icon to open the Formatting pane. Expand the **Y-Axis** area and set the **Start** and **End** points.
 
-   ![](media/powerbi-service-visualization-best-practices/power-bi-start-end.png)
+    ![](media/powerbi-service-visualization-best-practices/power-bi-start-end.png)
 
-   **Figure 48: Set the start and end points**
+    **Figure 48: Set the start and end points**
 
 -	Another reason to explicitly set the Start and End points is if you’re comparing two or more charts on the same page using the same Y-axis field.  For example, if you’re looking at cumulative event counts, and the United Kingdom has counts that range from 1 to 70 and Australia has counts that range from 1 to 12, the 2 line charts will display very different Y-axes (Figure x). This makes it difficult to compare at a glance. Instead, set the charts to use the same Y-axis range (Figure x).
 
-   ![](media/powerbi-service-visualization-best-practices/power-bi-line-chart2.png)
+    ![](media/powerbi-service-visualization-best-practices/power-bi-line-chart2.png)
 
-   **Figure 49:	Line charts with different y-axes**
+    **Figure 49:Line charts with different y-axes**
 
-   ![](media/powerbi-service-visualization-best-practices/power-bi-line-chart3.png)
+    ![](media/powerbi-service-visualization-best-practices/power-bi-line-chart3.png)
 
-   **Figure 50:	Line charts with matching y-axes**
+    **Figure 50:Line charts with matching y-axes**
 
 For more information, see:
+
 -  [Customize the X and Y axes](hpowerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
 
 -  [Line charts and irregular intervals](http://www.perceptualedge.com/articles/visual_business_intelligence/line_graphs_and_irregular_intervals.pdf)
@@ -622,7 +623,7 @@ If line charts are the standard for looking at data over time, bar charts are th
 
    ![](media/powerbi-service-visualization-best-practices/power-bi-data-labels.png)
 
-   **Figure 52: Turn on data labels**
+    **Figure 52: Turn on data labels**
 
 -	The bar chart above is really useful to compare one measure against many **at a single point in time**.  While the line chart above showed us the trend over time, the bar chart shows us the trend for a single category at a specific point in time.  At a glance, our bar chart shows us Spain has one of the worst unemployment rates in the world, at 25%.
 
@@ -632,9 +633,9 @@ If line charts are the standard for looking at data over time, bar charts are th
 
 -	Bar/Column charts can be drilled down (and back up again).  This is a great way to pack more information into a visual without taking up more real estate.  The example below has a hierarchy for Regions > Countries.  Double-clicking a region bar drills down to the countries that make up that region.  For more information on drill, see [Drill down in a visualization](powerbi-service-drill-down-in-a-visualization.md).
 
-   ![](media/powerbi-service-visualization-best-practices/power-bi-drill.png)
+    ![](media/powerbi-service-visualization-best-practices/power-bi-drill.png)
 
-   **Figure 53: Drill down**
+    **Figure 53: Drill down**
 
 For more details on Bar and Column charts:
 
@@ -672,9 +673,9 @@ In this line chart it is easier to see how commercial revenue has grown the most
 
 -	100% Stacked charts are a good choice when using percentages that add up to 100.  In the example below, we see the category distribution by team.  The percentages are relative and allows us to, at a glance, see patterns. For example,  Everton’s revenue comes primarily from Broadcasting (over 70%) while PSG only derives 20% of its revenue from Broadcasting.  The choice of a horizontal display makes it easier to fit the team labels and to see the impact of revenue type.
 
-   ![](media/powerbi-service-visualization-best-practices/power-bi-deloite3.png)
+    ![](media/powerbi-service-visualization-best-practices/power-bi-deloite3.png)
 
-   **Figure x: Horizontal stacked chart**
+    **Figure 56: Horizontal stacked chart**
 
 For more information on stacked charts:
 
@@ -695,11 +696,11 @@ The new report page has a single visual: a line and stacked column chart. We cou
 
 ![](media/powerbi-service-visualization-best-practices/power-bi-spain-line.png)
 
- **Figure x: As two separate charts**
+ **Figure 57: As two separate charts**
 
 ![](media/powerbi-service-visualization-best-practices/power-bi-spain-combo.png)
 
- **Figure x: As a single combo chart**
+ **Figure 58: As a single combo chart**
 
 
 ####    Best practices
@@ -709,7 +710,7 @@ Watch your axes! Is your Combo chart easy to read and interpret?  Or does it use
 
    ![](media/powerbi-service-visualization-best-practices/power-bi-dual-line.png)
 
-   **Figure x: An unsuccessful line chart**
+   **Figure 59: An unsuccessful line chart**
 
 So too, your combo chart won’t be meaningful if your column chart and line chart use 2 different measures and you don’t create dual axes.  For example, dollars versus percent. Be sure to include both axes to help the reader understand the chart and consider adding axes labels as well.
 
@@ -718,16 +719,17 @@ To do this, open the Formatting pane, expand **Y-Axis** and set **Show Secondary
 
 ![](media/powerbi-service-visualization-best-practices/power-bi-show-secondary-new.png)
 
-**Figure x: Show secondary axis**
+**Figure 60: Show secondary axis**
 
 ![](media/powerbi-service-visualization-best-practices/power-bi-combo-chart.png)
 
-**Figure x: Create a combo chart instead**
+**Figure 61: Create a combo chart instead**
 
 
 -	Take advantage of dual axes. It’s a great way to compare multiple measures with different value ranges. And it’s a great way to illustrate the correlation between two measures in one visual.
 
 For more information:
+
 -  [Tutorial: Combo chart in Power BI](powerbi-service-tutorial-combo-chart-merge-visualizations.md)
 
 -  [The danger of dual-scaled Axes in visuals](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf)
@@ -743,7 +745,7 @@ The bubble chart below looks at South America and compares GDP per capita (Y-Axi
 
 ![](media/powerbi-service-visualization-best-practices/power-bi-bubble.png)
 
-**Figure x: South America GDP and population as a bubble chart**
+**Figure 62: South America GDP and population as a bubble chart**
 
 If you add a play axis, you can pretend you are Hans Rosling and tell the story over time (https://www.youtube.com/watch?v=PbaDBJWCeD4). To add a play axis, drag a datetime field into the **Play Axis** well.
 
@@ -773,16 +775,17 @@ For example, the first tree map gives a broad indication of the order of the GDP
 
 ![](media/powerbi-service-visualization-best-practices/power-bi-treemap3.png)
 
-**Figure x: South America GDP comparison as a tree map**
+**Figure 63: South America GDP comparison as a tree map**
 
 Here we’ve added another level of data, region, and we can see the overall contribution to GDP by regions, as well as the relative impact within the regions. Beware that doing this with non-summative measure (such as averages) that the sum of the details might not represent the actual value at the aggregate level.
 
 ![](media/powerbi-service-visualization-best-practices/power-bi-treemap2.png)
 
-**Figure x: GDP by region and country as a tree map**
+**Figure 64: GDP by region and country as a tree map**
 
 
 For more information on tree maps, feel free to click on links below.
+
 -  [Treemaps overview](http://www.perceptualedge.com/articles/b-eye/treemaps.pdf)
 
 -  [Data Visualization Catalogue: Tree maps](http://www.datavizcatalogue.com/methods/treemap.html#.VYhylI3bL7Y)
@@ -812,6 +815,7 @@ A good alternative is a simple KPI visual
 KPIs show the value, status, goal, variance from the goal and trend in the same amount of space. The green coloring turns red if the target isn’t being met and can be yellow if some intermediate target is hit. It’s much simpler to read and interpret than the gauge.
 
 For more information, see:
+
 -  [Tutorial: Radial gauge charts in Power BI](powerbi-service-tutorial-radial-gauge-charts.md)
 
 -  [Tutorial: KPIs in Power BI](powerbi-service-tutorial-kpi.md)
