@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/21/2016"
+   ms.date="12/11/2016"
    ms.author="mihart"/>
 
 # Microsoft Flow and Power BI
@@ -68,6 +68,8 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
     ![](media/powerbi-service-flow-integration/power-bi-trigger-flow.png)
 
 2.  To post to Slack, enter a channel name and message text. Notice the dynamic content that we've included in the message text field.
+
+    >[AZURE.NOTE] Include "@" at the beginning of your channel name.  For example, if the Slack channel is named "channelA", in Flow enter "@channelA".
 
     ![](media/powerbi-service-flow-integration/power-bi-flow-slacker.png) 
 

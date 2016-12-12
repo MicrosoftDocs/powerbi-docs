@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/28/2016"
+   ms.date="12/11/2016"
    ms.author="mihart"/>
 
 # The new Power BI navigation experience
@@ -71,18 +71,18 @@ We've also improved the way you navigate and access all your Power BI content. B
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-dashboards-tab.png)
 
-## Working with groups
+## Working with groups and workspaces
 
-We have also made improvements to way that content appears in your 'My workspace' or Group Workspaces. The content shows up on the main canvas area, with separate tabs for dashboards, reports, workbooks and datasets. Authors also get quick access to the top actions they might want to perform – for example, on the datasets tab, you can now refresh the dataset with one click and see the last refresh and next refresh times right in the list.
+We have also made improvements to way that content appears in your 'My workspace' or Group Workspaces. The content shows up on the main canvas area, with separate tabs for dashboards, reports, workbooks and datasets. Authors also get quick access to the top actions they might want to perform – for example, on the Reports tab, you can now run [Insights](powerbi-service-auto-insights.md) with one click and see the owner for each report.
 
-![](media/powerbi-service-the-new-power-bi-experience/powerbi-new-experience-groups1.png)
+![](media/powerbi-service-the-new-power-bi-experience/power-bi-reports-tab.png)
 
-You can switch workspaces by clicking on the arrow next to the current workspace name.
+You can switch workspaces by selecting the arrow next to the current workspace name.
 
-![](media/powerbi-service-the-new-power-bi-experience/powerbi-new-experience-groups2.png)
+![](media/powerbi-service-the-new-power-bi-experience/power-bi-select-group.png)
 
 ##  Search, filter and sort content
-The new content view makes it easier to search, filter and sort your content. To search for a dashboard, report or workbook, type in the search area. Power BI filters to only the content that has your search string as part of the name. 
+The new content view makes it easier to search, filter and sort your content. To search for a dashboard, report or workbook, type in the search area. Power BI filters to only the content that has your search string as part of the name.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-search-sort.png)
 
