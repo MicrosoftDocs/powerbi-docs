@@ -1,23 +1,23 @@
-﻿<properties 
+﻿<properties
    pageTitle="Ziosk content pack"
    description="Ziosk content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 
 # Ziosk Survey Analytics content pack for Power&nbsp;BI  
@@ -78,15 +78,14 @@ The content pack includes data from the following tables:
     - Store  
     - Surveys  
     - Weekday  
-       
+
 
 ## System requirements
 
 A Ziosk account with permissions to the above tables is required in order to instantiate this content pack.
-    
+
 ### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-

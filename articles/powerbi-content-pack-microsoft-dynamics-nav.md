@@ -1,23 +1,23 @@
-﻿<properties 
+﻿<properties
    pageTitle="Microsoft Dynamics NAV content pack"
    description="Microsoft Dynamics NAV content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 
 # Microsoft Dynamics NAV content pack for Power&nbsp;BI  
@@ -39,7 +39,7 @@ Note: this content pack requires permissions to the tables where data is retriev
 3. Select **Microsoft Dynamics NAV**, then select **Get**.  
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/mdnav.png)
 
-4. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern: 
+4. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern:
 
     	https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')
 	- "instance.navserver.com" with your NAV Server name
@@ -53,7 +53,7 @@ Note: this content pack requires permissions to the tables where data is retriev
 
 	>**Note:**  
 	>You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  Only Basic (Username and Password) authentication is currently supported.
-	
+
 	![](media/powerbi-content-pack-microsoft-dynamics-nav/creds.PNG)
 
 6. Power BI will retrieve your Microsoft Dynamics NAV data and create a ready-to-use dashboard and report for you.   
@@ -92,7 +92,7 @@ The Power BI Microsoft Dynamics NAV content pack uses Microsoft Dynamics NAV's w
 **"Parameter validation failed, please make sure all parameters are valid"**  
 If you see this error after typing your Microsoft Dynamics NAV URL. Make sure the following requirements are satisfied:
 
-- The URL follows exactly this pattern 
+- The URL follows exactly this pattern
 
     	https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')
     - "instance.navserver.com" with your NAV Server name
@@ -105,24 +105,23 @@ If you see this error after typing your Microsoft Dynamics NAV URL. Make sure th
 **"Login failed"**  
 If you get a "login failed" error after using your Microsoft Dynamics NAV credentials to login, then you may be hitting one of the following issues:
 
-- The account you are using doesn't have permissions to retrieve the Microsoft Dynamics NAV data from your account. Verify it is an admin account and try again. 
- 
+- The account you are using doesn't have permissions to retrieve the Microsoft Dynamics NAV data from your account. Verify it is an admin account and try again.
+
 - The Dynamics NAV instance you're trying to connect to doesn't have a valid SSL certificate. In this case you'll see a more detailed error message ("unable to establish trusted SSL relationship"). Note that self-signed certs are not supported.
 
 **"Oops"**  
-If you see an "Oops" error dialog after you pass the authentication dialog, we're hitting an issue while loading the data for the content pack. 
+If you see an "Oops" error dialog after you pass the authentication dialog, we're hitting an issue while loading the data for the content pack.
 
-- Verify the URL follows the pattern specified above. A common mistake is to specify 
+- Verify the URL follows the pattern specified above. A common mistake is to specify
 
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData` 
-    
+    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
+
     however the 'Company('CRONUS%20International%20Ltd.')' section with your NAV Company name needs to be included:
-    
+
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
-    
+
 ### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-

@@ -1,23 +1,23 @@
-<properties 
+<properties
    pageTitle="Prevedere content pack"
    description="Prevedere content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 # Prevedere content pack for Power&nbsp;BI
 
@@ -25,7 +25,7 @@ Gain access to exclusive and critical financial information to confidently and p
 
 Connect to the [Prevedere content pack](https://app.powerbi.com/getdata/services/prevedere) for Power BI.
 
-Note: If you are not an existing Prevedere user, please use the [sample key](https://prevederepowerbiconnector.azurewebsites.net/static/learnmore.html) to try it out. 
+Note: If you are not an existing Prevedere user, please use the [sample key](https://prevederepowerbiconnector.azurewebsites.net/static/learnmore.html) to try it out.
 
 ## How to connect
 
@@ -41,7 +41,7 @@ Note: If you are not an existing Prevedere user, please use the [sample key](htt
 
 	![](media/powerbi-content-pack-prevedere/connect.png)
 
-4. For **Authentication Method**, select **Key** and enter your Prevedere API key. 
+4. For **Authentication Method**, select **Key** and enter your Prevedere API key.
 
 	![](media/powerbi-content-pack-prevedere/creds.png)
 
@@ -75,7 +75,7 @@ This content pack requires access to a Prevedere API key or the sample key (see 
 Existing customers can access their data using their API key. If you are not yet a customer, you can see a sample of the data and analyses using the [sample key](https://prevederepowerbiconnector.azurewebsites.net/static/learnmore.html).
 
 ## Troubleshooting
-The data may take some time to load depending on the size of your instance. 
+The data may take some time to load depending on the size of your instance.
 
 ### See also
 

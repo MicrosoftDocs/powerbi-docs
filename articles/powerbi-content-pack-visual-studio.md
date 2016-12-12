@@ -1,23 +1,23 @@
-﻿<properties 
+﻿<properties
    pageTitle="Visual Studio Team Services content pack"
    description="Visual Studio Team Services content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 # Visual Studio Team Services content pack for Power&nbsp;BI
 
@@ -48,7 +48,7 @@ Note: This content pack requires access to an account which has OAuth enabled. M
     Your Project name is the name you see at the top of every page in Visual Studio Team Services:  
 	![](media/powerbi-content-pack-visual-studio/Projectimage.png)
 
-5.  Authenticate with Visual Studio Team Services using oAuth2. You may see a VSTS sign-in dialog box as a result.  
+5.  Authenticate with Visual Studio Team Services using oAuth2. You may see a VSTS sign-in dialog box as a result. 
 
 	>**Important:** Some Visual Studio Team Services deployments don't support oAuth2.  Follow the guidance in the Troubleshooting section if sign-in fails.
 
@@ -84,7 +84,7 @@ Visual Studio Team Services in Power BI provides a variety of tables and fields 
 More details can be found at <https://www.visualstudio.com/en-us/get-started/report/connect-vso-pbi-vs>.
 
 <a name="FindingParams"></a>
-## Finding parameters 
+## Finding parameters
 
 Your account name is the front of your URL to visualstudio.com:    
     ![](media/powerbi-content-pack-visual-studio/URLimage.png)
@@ -95,8 +95,8 @@ Your Project name is the name you see at the top of every page in VSTS:
 You can also use wildcards to select multiple projects. For example, you can select all projects by entering just “\*”, or all projects that start with “Azure” by entering “Azure\*”.
 
 ## Troubleshooting
-  
-When you attempt to login to your Visual Studio Team Services, you may receive a Login failed message. 
+
+When you attempt to login to your Visual Studio Team Services, you may receive a Login failed message.
 
 There are two common reasons why you may not be able to authenticate successfully:
 
@@ -111,7 +111,7 @@ To resolve this:
 -   Cancel out of the configuration dialog  
 -   Sign out of Visual Studio Team Services under your personal account  
 -   Sign into Visual Studio Online using your work or school account  
--   Restart the “Get data” process above  
+-   Restart the “Get data” process above 
 
 Connecting with your work or school account (Azure Active Directory / AAD):  
     ![](media/powerbi-content-pack-visual-studio/vsologinscreen.png)
@@ -119,7 +119,7 @@ Connecting with your work or school account (Azure Active Directory / AAD):
 If you see this dialog, and you want to connect with your work or school account (Azure Active Directory), make sure to click the link on the left to sign in with that account – do not provide your AAD credentials on the right hand side, as that is expecting a Microsoft account (your personal account).
 
 **Visual Studio Team Services deployments that do not support oAuth2**  
-Your VSTS administrator may have disabled oAuth for your Visual Studio Team Services deployment.  When this happens you will not be able to use the Visual Studio content pack for Power BI at this time.  
+Your VSTS administrator may have disabled oAuth for your Visual Studio Team Services deployment.  When this happens you will not be able to use the Visual Studio content pack for Power BI at this time. 
 
 ![](media/powerbi-content-pack-visual-studio/oauth.png)
 

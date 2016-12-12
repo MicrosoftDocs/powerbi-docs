@@ -1,23 +1,23 @@
-﻿<properties 
+﻿<properties
    pageTitle="Circuit ID content pack"
    description="Circuit ID content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 # Circuit ID content pack for Power&nbsp;BI
 
@@ -63,4 +63,3 @@ Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/servi
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get Data for Power BI](powerbi-service-get-data.md)
-

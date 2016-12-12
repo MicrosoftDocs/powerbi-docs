@@ -1,25 +1,25 @@
-﻿<properties 
+﻿<properties
    pageTitle="Office365Mon content pack"
    description="Office365Mon content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
-   
+
 # Office365Mon content pack for Power&nbsp;BI
 
 Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon content pack. Power BI retrieves your data, including outages and health probes, then builds an out-of-box dashboard and reports based on that data.
@@ -47,7 +47,7 @@ Note: An Office365Mon admin account is required to connect and load the Power BI
 	When prompted, enter your Office365Mon admin credentials and follow the authentication process.
 
 	![](media/powerbi-content-pack-office365mon/creds.png)
-    
+
     ![](media/powerbi-content-pack-office365mon/creds2.png)
 
 6.  After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the Office365Mon entry.
@@ -76,4 +76,3 @@ If you get a **"login failed"** error after using your Office365Mon subscription
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get Data for Power BI](powerbi-service-get-data.md)
-
