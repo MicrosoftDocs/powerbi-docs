@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # Tutorial: filled maps (choropleths) in Power BI  
@@ -48,7 +48,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 
-To create your own filled map, [download the Sales and Marketing sample](powerbi-sample-downloads.md) by signing in to Power BI and selecting **Get Data \> Files \> Local File \> Sales and Marketing**.
+To create your own filled map, [download the Sales and Marketing sample](powerbi-sample-downloads.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing**.
 
 
 1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) from the Sales and Marketing Sample dataset  

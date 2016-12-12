@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # Edit a tile -- resize, move, rename, pin, delete, add hyperlink
@@ -49,7 +49,7 @@ This article covers the following.
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_DashTile.png)
 
-2.  Hover over a dashboard tile, select the ellipses to display the options.
+2.  Hover over a dashboard tile and select the ellipses to display the options.
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/power-bi-tile-menu.png)
 
