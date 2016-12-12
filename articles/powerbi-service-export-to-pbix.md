@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2016"
+   ms.date="12/11/2016"
    ms.author="mihart"/>
 
 # Export (download) a Power BI service report for use in Power BI Desktop (Preview)
@@ -49,9 +49,9 @@ Once you download the file, you can open it in **Power BI Desktop** and work on 
 There are a few important considerations and limitations associated with downloading (exporting) a *.pbix* file from Power BI service.
 
 -   To download the file, you must have edit access to the report
--   The report must have originated from **Power BI Desktop**, and been *published* to the **Power BI service** or the .pbix *uploaded* to the service.
+-   The report must have originated from **Power BI Desktop** and been *published* to the **Power BI service**, or the .pbix must have been *uploaded* to the service.
+-   Reports must be published or updated after November 23, 2016. Reports published prior to then are not downloadable.
 -   This feature will not work with reports originally created in the **Power BI service**, including content packs.
--   Reports must be published or updated after November 24, 2016. Reports published prior to then are not downloadable.
 -   You should always be using the latest version of **Power BI Desktop** when opening downloaded files. Downloaded *.pbix* files may not open in non-current versions of **Power BI Desktop**.
 -   If your administrator has turned off the ability to export data, this feature will not be visible in the **Power BI service**.
 
