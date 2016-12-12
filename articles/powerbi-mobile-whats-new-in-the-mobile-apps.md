@@ -17,12 +17,48 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/07/2016"
+   ms.date="12/09/2016"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
 
+For related "What's New" information, see:
+
+* [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+* [What's new in the Power BI service](powerbi-service-whats-new.md)  
+* [Power BI team blog](https://powerbi.microsoft.com/blog/)
+* [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+
+## November 2016
+
+Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-november-2016/).
+
+### Android tablets
+
+**Power BI mobile app for Android tablets** Yes, the preview is here.
+
+- Experience [Power BI on your Android tablet](powerbi-mobile-android-tablet-app-get-started.md)
+- Explore [Reporting Services mobile reports and KPIs on your Android tablet](powerbi-mobile-android-tablet-kpis-mobile-reports.md)
+
+### Android devices
+
+**Preview: Intune Mobile Application Management** Power BI support for Microsoft Intune Mobile Application Manager (MAM) is now in preview for Power BI Pro users on Android devices. 
+
+**Favorites** Tag your favorite dashboards on your Android device, and see all your [favorite Power BI dashboards and Reporting Services mobile reports and KPIs](powerbi-mobile-android-tablet-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) collected in one convenient location. 
+
+### iOS devices
+
+**Links** URLs in tiles and visualizations are now clickable, and open in a browser.
+
+### Windows devices
+
+**Center a map** to focus on data near you in your location
+
+
+
 ## September/October 2016
+
+Read the [October 2016 Power BI mobile apps feature summary](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-october-2016/).
 
 ### All devices
 
@@ -54,6 +90,9 @@ You can now manually refresh your dashboard tiles. For tiles based on DirectQuer
 
 **Geographic filtering**
 On your Windows 10 phone you can now filter your report based on your current location, and see only the data you need.
+
+**SandDance visualization**
+This custom visualization is now available on the Surface Hub
 
 ## August 2016
 
