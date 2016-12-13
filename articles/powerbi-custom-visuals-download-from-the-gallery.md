@@ -18,14 +18,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # Download a custom visual from the gallery  
 
 Power BI has a **[visuals gallery](http://visuals.powerbi.com/)** which contains many useful visualizations created by the community and [created by Microsoft](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) that you can download, and use in your Power BI reports. There is an active developer community creating a wide range of custom visuals. To learn more about how to create a Power BI visual, see [Extend Power BI with custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md) or [Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md).
 
-![](media/powerbi-custom-visuals-download-from-the-gallery/PowerBI-VisualsGallery.png)
+![](media/powerbi-custom-visuals-download-from-the-gallery/power-bi-custom-visuals-gallery.png)
 
 It's easy to download, and use a custom visual in your reports. Watch Will do it or skip to the step-by-step instructions below the video.
 
