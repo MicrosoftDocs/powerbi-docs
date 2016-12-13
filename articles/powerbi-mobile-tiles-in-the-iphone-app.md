@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 
 # Interact with tiles in the iPhone app (Power BI for iOS)
@@ -42,7 +42,7 @@ Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you op
 
         ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-pie-tile.png)
 
-3.     In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-center-map-icon.png) to center the map to your current location.
+3.     In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-center-map-icon.png) to center the map to your current location.
 
 3.   Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
 
