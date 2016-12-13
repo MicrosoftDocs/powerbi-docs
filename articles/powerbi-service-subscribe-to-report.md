@@ -20,14 +20,13 @@
    ms.date="12/09/2016"
    ms.author="mihart"/>
 # Subscribe to a Power BI report
-When you subscribe yourself or others to a report page, Power BI emails a snapshot of that page after the report refreshes -- but no more than once a day.
+When you subscribe to a report page, Power BI emails a snapshot of that page after the report refreshes -- but no more than once a day.
 
 ##  Requirements
 -   **Creating** a subscriptions is a Power BI Pro feature
--   However, Power BI Pro users can create subscriptions for free users of Power BI
 -   To create a subscription you must be the owner of the report
 -   Subscriptions can only be set up any reports whose datasets have scheduled refresh set up, including:
-    -   Direct Query (on-prem and cloud) 
+    -   Direct Query (on-prem and cloud)
     -   Live connection
     -   Scheduled refresh (aka import)
 

@@ -18,11 +18,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
-Data can be exported from visuals on a dashboard and in reports.  
+Data can be exported from visualizations on a dashboard and in reports.  
 
 >[AZURE.NOTE] The maximum number of rows that can be downloaded is 10,000.
 
