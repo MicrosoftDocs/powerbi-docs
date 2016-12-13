@@ -39,6 +39,8 @@ In Power BI, a dataset is like the engine in your car. The dataset provides the 
 
 We can even take it one step further. A fuel tank in a car has to be filled with gas. The gas for our Power BI Desktop, Excel, or .CSV file is data from another data source. We get data from another data source and put it into an Excel, Power BI Desktop, or .CSV file. If it's an Excel workbook or .CSV file, we can manually enter rows of data. Or, we can connect to an external data source to query and load data into our file. Once we have a file with some data, we can get it into Power BI as a dataset.
 
+> **Note:** Data in Excel workbooks must be in a table, or in the data model, to be imported by Power BI.
+
 ## Where your file is saved makes a difference
 
 **Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can *import* your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports.
