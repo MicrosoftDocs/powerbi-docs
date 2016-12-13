@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
-   qualityDate="05/18/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2016"
+   ms.date="12/12/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Android tablets
@@ -50,12 +50,15 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
 ## Get started with the Power BI app on your tablet
 
-2.  On your Android tablet, from the start screen open the Power BI for Android app.
+1.  On your Android tablet, from the start screen open the Power BI for Android app.
 
     ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-logo-android.png)
 
 3.  To view your Power BI dashboards and reports, tap **Power BI**.  
-   To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
+
+    >**Important**: If you see a message that Power BI can't sign you in, you may need to install a new Android System Webview. See  [We could not sign you in](powerbi-mobile-android-could-not-sign-you-in.md) for more details.
+
+    To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
 
     ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-connect.png)
 

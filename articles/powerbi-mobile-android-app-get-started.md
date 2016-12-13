@@ -55,7 +55,10 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
     ![](media/powerbi-mobile-android-app-get-started/power-bi-logo-android.png)
 
 3.  To view your Power BI dashboards and reports, tap **Power BI**.  
-   To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
+
+    >**Important**: If you see a message that Power BI can't sign you in, you may need to install a new Android System Webview. See  [We could not sign you in](powerbi-mobile-android-could-not-sign-you-in.md) for more details.
+
+    To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-android-connect.png)
 
