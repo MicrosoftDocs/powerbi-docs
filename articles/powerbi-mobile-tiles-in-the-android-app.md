@@ -44,6 +44,9 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
        *In this line chart, the values of the green and black lines are listed under the month, April, where the vertical bar intersects them.*
 
+    In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-center-map-icon.png) to center the map to your current location.
+
+
      Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md) with others.
 
      If the tile is a [live report page tile](powerbi-mobile-report-page-tiles-in-the-android-app.md), when you tap **Expand tile** it opens the report page in landscape mode in the Android app.

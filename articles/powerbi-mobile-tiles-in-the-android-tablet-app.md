@@ -36,6 +36,9 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
     -   Tap the Share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-tablet-app.md) with others.
 
+    -   In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-center-map-icon.png) to center the map to your current location.
+
+
    -   Tap the Open report icon ![](media/powerbi-mobile-tiles-in-the-android-tablet-app/power-bi-android-tablet-open-report-icon.png) to [view the report](powerbi-mobile-reports-in-the-android-tablet-app.md) in the mobile app.
 
 6. Sometimes the dashboard creator has added a link to a tile. If so, when you tap the tile, the URL opens.

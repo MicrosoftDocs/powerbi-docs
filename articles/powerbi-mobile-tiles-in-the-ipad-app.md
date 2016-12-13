@@ -41,6 +41,8 @@ Then in [the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062), you open
 
   -   [Share a snapshot of the tile](powerbi-mobile-share-dashboards-from-the-ipad-app.md) ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-share-tile.png) with others.
 
+  -       In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-center-map-icon.png) to center the map to your current location.
+
   -   [Open the report](powerbi-mobile-reports-on-the-ipad-app.md) ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-open-report-icon.png) that the tile is based on.
 
 3. To leave tile focus mode, tap the tile name, then tap the dashboard name or **My Workspace**.
