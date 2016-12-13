@@ -27,6 +27,10 @@ A filled map uses shading or tinting or patterns to display how a value differs 
 
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/large_map.png)
 
+> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+
+> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations. 
+
 ## When to use a filled map  
 Filled maps are a great choice:
 

@@ -33,11 +33,15 @@ If you have access to the dataset that is being used to create the map visualiza
 
 When columns in the dataset are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as *California* and *Washington*, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of *Washington, DC* instead of Washington state for the word *Washington*. Naming that column *State* will improve the geocoding. The same is true for columns named *Country*, *State*, *Province*, and *City*.   
 
-**2. Categorize geographic fields in Power BI Desktop** 
+> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+
+> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
+
+**2. Categorize geographic fields in Power BI Desktop**
 
 In Power BI Desktop, you can ensure fields are correctly geocoded by setting the *Data Category* on the data fields. Select the desired table, go to the **Advanced** ribbon and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **Country**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md).
 
-**3.  Use Power BI Query Editor to create more-specific locations** 
+**3.  Use Power BI Query Editor to create more-specific locations**
 
 Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Some designations are ambiguous because the location exists in multiple countries or regions. For example, there's a ***Southampton*** in England, Pennsylvania, and New York. Use Power BI Desktop Query Editor to build a more-specific location like a street address.  Use the **Add Column** feature to build a custom column, then build the desired location as follows: 
 
@@ -64,8 +68,8 @@ Add latitude and longitude values to your dataset. This removes any ambiguity. L
 ##  In Power BI: tips to get better results when using map visualizations
 
 **1.    Use latitude and longitude fields (if they exist)**
-    
-In Power BI, if the dataset you are using has fields for longitude and latitude -- use them!  Power BI has special fields to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area.  And do the same for your longitude data. When you do this, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level. 
+
+In Power BI, if the dataset you are using has fields for longitude and latitude -- use them!  Power BI has special fields to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area.  And do the same for your longitude data. When you do this, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level.
 
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/PBI_Latitude.png) 
 

@@ -29,6 +29,10 @@ Power BI has two different types of map visualizations: a bubble map that places
 
 ![](media/powerbi-learning-3-5-create-map-visualizations/3-5_1.png)
 
+> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+
+> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
+
 ## Create bubble maps
 
 To create a bubble map, select the **Map** option in the **Visualization** pane. You must add a value to the *Location* bucket in the **Visualizations** options to use a map visual.
