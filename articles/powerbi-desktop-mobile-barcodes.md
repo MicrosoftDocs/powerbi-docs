@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 
 # Tag barcodes in Power BI Desktop for the Power BI mobile apps

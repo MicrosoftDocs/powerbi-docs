@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2016"
+   ms.date="12/12/2016"
    ms.author="maggies"/>
 
 # Pin a Power BI tile or dashboard to the Windows 10 Start screen from the Power BI mobile app
