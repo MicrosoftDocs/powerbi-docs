@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Supported languages and countries/regions for Power BI"
-   description="Supported languages and countries/regions for Power BI"
+   description="See the lists of supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/04/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -167,4 +167,6 @@ Help is localized in these 10 languages:
 
 ### See also 
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+* Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+
 

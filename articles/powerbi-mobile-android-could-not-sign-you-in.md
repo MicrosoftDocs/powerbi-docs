@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Getting a "We could not sign you in" message
-   description="When signing in to the Android mobile app for Microsoft Power BI, you may see a message that Power BI can't sign you in."
+   pageTitle="Getting a "Could not authenticate because your corporate SSL certificate is untrusted" message
+   description="When signing in to the Android app for Power BI, you may see the message, “Could not authenticate because your corporate SSL certificate is untrusted"."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,20 +17,42 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/12/2016"
+   ms.date="12/14/2016"
    ms.author="maggies"/>
 
 # Getting a "We could not sign you in" message
 
-When signing in to the Android mobile app for Microsoft Power BI, you may see a message that Power BI can't sign you in. Try updating your Android System webview app to fix it.
+When signing in to the Android mobile app for Microsoft Power BI, you may see the message, “Could not authenticate because your corporate SSL certificate is untrusted by this device. Please contact your company IT admin.” 
+
+What you need to do usually depends on the operating system on your Android device, but there are a couple of other issues that may cause this error.
+
+## On Android 7 or later
+
+Look for an update for an app named **Chrome**, and install the update.
+
+## On Android 6 and earlier
+
+Your device may need a updated version of System Webview. It may be installed on your device, and you may just need to click **Update**.
+
+If System Webview isn't installed on your device:
 
 1. On your Android device, close Power BI.
 
-3. Open the Google Play Store and search for "System Webview", by Google Inc.
+3. Open the Google Play Store and search for **System Webview** by Google Inc.
 
 3. Install it.
 
 4. Restart the Power BI app and sign in.
+
+## Time-zone settings
+
+Time-zone settings on your device may be wrong. 
+
+Go to **Settings** > **System** > **Date and time** to check them.
+
+## Custom authentication server
+
+If you're using a custom authentication server, the SSL certificate in the corporate authentication server may not be valid. Check it in Chrome, as it’s stricter than other browsers on SSL certificate validation.
 
 ## See also
 

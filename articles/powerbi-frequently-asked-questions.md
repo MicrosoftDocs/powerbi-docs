@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,9 +17,14 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
+
+- If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
+- Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+- Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
+
 
 ## What is Microsoft Power BI?
 
@@ -150,3 +155,5 @@ The Power BI for Office 365 experience has been deprecated.
 
 ## See also
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
+- Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
