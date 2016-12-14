@@ -30,7 +30,7 @@ We support Power BI in these browsers:
 -   Safari Mac latest version
 -   Firefox desktop latest version
 
-### See also 
+## See also 
 - [Get started with Power BI](powerbi-service-get-started.md) 
 - Try asking the [Power BI Community](http://community.powerbi.com/)
 - Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)

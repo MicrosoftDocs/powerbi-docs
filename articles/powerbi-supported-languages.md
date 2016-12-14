@@ -165,7 +165,7 @@ Help is localized in these 10 languages:
 -   Russian - Русский
 -   Spanish - español
 
-### See also 
+## See also 
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
