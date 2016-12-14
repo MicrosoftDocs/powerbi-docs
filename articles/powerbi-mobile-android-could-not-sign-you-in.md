@@ -20,7 +20,7 @@
    ms.date="12/14/2016"
    ms.author="maggies"/>
 
-# Getting a "We could not sign you in" message
+# Getting a "Could not authenticate because your corporate SSL certificate is untrusted" message
 
 When signing in to the Android mobile app for Microsoft Power BI, you may see the message, “Could not authenticate because your corporate SSL certificate is untrusted by this device. Please contact your company IT admin.” 
 
