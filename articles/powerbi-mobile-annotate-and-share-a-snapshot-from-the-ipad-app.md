@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS"
-   description="Read about sharing tiles, reports, and visualizations from the Microsoft Power BI app for iOS. You can send snapshots to anyone, not just colleagues."
+   pageTitle="Annotate and share a snapshot of a tile from the iPad app"
+   description="Read about sharing snapshots of tiles from the Microsoft Power BI app for iOS on the iPad. You can send tile snapshots to anyone, not just colleagues."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,22 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2016"
+   ms.date="10/11/2016"
    ms.author="maggies"/>
 
-# Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS
+# Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)  
 
-When you share a tile, report, or visualization from the Power BI mobile app for iOS, you're sharing a snapshot of it. Your recipients see it exactly as it was when you sent the mail, plus a link. You can send snapshots of tiles to anyone — not just colleagues in the same email domain. If you've already shared the dashboard or report with them, then they can click the link and go straight to that tile, report, or visualization. 
+When you share a tile from the [iPad app for Microsoft Power BI](http://go.microsoft.com/fwlink/?LinkId=522062) for iOS, you're sharing a snapshot of the tile. Your recipients see the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
-You can add annotations — lines, text, or stamps — before you share it.
+You can add annotations — lines, text, or stamps — to a tile before you share a snapshot.
 
-1.  To send a tile, tap the tile to open it in focus mode.
-
-    To send a report, tap the tile again to open the report. 
+1.  Tap a tile to open it in focus mode.
 
     ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-bubble-tile-focus-mode.png)
 
-2.  Tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ios-annotate-icon.png) in the upper-right corner of the tile.
+
+2.  Tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-share-tile.png) in the upper-right corner of the tile.
 
 3.  To annotate the tile, in the Edit window:  
     ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_AnnotateIcons.png)
