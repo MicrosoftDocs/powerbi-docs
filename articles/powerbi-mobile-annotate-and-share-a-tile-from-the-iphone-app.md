@@ -23,7 +23,7 @@
 
 When you share a snapshot of a tile from the iPhone app for Microsoft Power BI for iOS, your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
-You can add annotations — lines, text, or stamps — to a tile before you share a snapshot.
+You can add annotations — lines, text, or stamps — to a tile before you share a snapshot. 
 
 ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_AnnotateSmiley.png)
 

@@ -19,7 +19,7 @@
    ms.workload="powerbi"
    ms.date="11/17/2016"
    ms.author="maggies"/>
-# Annotate and share a tile from the Power BI app for Android tablets
+# Annotate and share a tile from the Power BI app for Android tablets 
 
 When you share a snapshot of a tile from the [Android app for Microsoft Power BI](powerbi-mobile-android-tablet-app-get-started.md), the snapshot shows the tile exactly as it was when you sent the mail. The recipients can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
