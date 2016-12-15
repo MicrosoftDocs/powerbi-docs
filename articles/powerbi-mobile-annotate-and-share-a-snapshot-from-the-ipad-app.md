@@ -20,7 +20,7 @@
    ms.date="10/11/2016"
    ms.author="maggies"/>
 
-# Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)  
+# Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS) 
 
 When you share a tile from the [iPad app for Microsoft Power BI](http://go.microsoft.com/fwlink/?LinkId=522062) for iOS, you're sharing a snapshot of the tile. Your recipients see the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
