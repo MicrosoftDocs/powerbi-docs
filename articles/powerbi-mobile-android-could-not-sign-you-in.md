@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Getting a "Could not authenticate because your corporate SSL certificate is untrusted" message
+   pageTitle=""Could not authenticate because your corporate SSL certificate is untrusted"
    description="When signing in to the Android app for Power BI, you may see the message, “Could not authenticate because your corporate SSL certificate is untrusted"."
    services="powerbi" 
    documentationCenter="" 
@@ -20,7 +20,7 @@
    ms.date="12/14/2016"
    ms.author="maggies"/>
 
-# Getting a "Could not authenticate because your corporate SSL certificate is untrusted" message
+# "Could not authenticate because your corporate SSL certificate is untrusted"
 
 When signing in to the Android mobile app for Microsoft Power BI, you may see the message, “Could not authenticate because your corporate SSL certificate is untrusted by this device. Please contact your company IT admin.” 
 
