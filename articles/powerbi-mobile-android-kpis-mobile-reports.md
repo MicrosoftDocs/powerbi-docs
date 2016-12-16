@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="12/16/2016"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs in the Android app for Power BI 
