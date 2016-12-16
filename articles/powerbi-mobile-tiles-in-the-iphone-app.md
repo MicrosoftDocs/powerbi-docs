@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 
 # Interact with tiles in the iPhone app (Power BI for iOS)
@@ -32,19 +32,21 @@ Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you op
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
-   -   In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
+    In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
 
-        ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-line-tile-values.png)
+     ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-line-tile-values.png)
 
-        *For example, in this line chart, the selected values are for This Year Sales and Last Year Sales in August.*  
+    *For example, in this line chart, the selected values are for This Year Sales and Last Year Sales in August.*  
 
-  -   In a pie chart, spin the pie to show the values of the slice at the top of the pie.
+    In a pie chart, spin the pie to show the values of the slice at the top of the pie.
 
-        ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-pie-tile.png)
+    ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-pie-tile.png)
 
-3.   Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
+3. In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-center-map-icon.png) to center the map to your current location.
 
-4.   [Interact with a report page tile](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) in the iPhone app.
+3. Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
+
+4. [Interact with a report page tile](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) in the iPhone app.
 
 5.   [Add an alert to the tile](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). If the values go above or below targets, Power BI will notify you.
 

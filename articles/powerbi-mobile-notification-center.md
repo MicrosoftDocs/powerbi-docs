@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
+   ms.date="12/12/2016"
    ms.author="maggies"/>
 
 # Get notifications in the Power BI mobile apps

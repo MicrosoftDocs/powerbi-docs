@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="12/12/2016"
    ms.author="maggies"/>
 # Share a dashboard from the Power BI mobile app for Windows 10
 
@@ -60,10 +60,11 @@ You and your colleagues see the same data in the dashboard. Thus, if you have pe
 
 -   See more [notes about sharing dashboards in Power BI](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
 
-### See also
+## See also
 
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
-[Share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) from the Power BI mobile app for Windows 10  
-[Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)  
+- [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
+- [Share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) from the Power BI mobile app for Windows 10  
+- [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)  - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
 
 

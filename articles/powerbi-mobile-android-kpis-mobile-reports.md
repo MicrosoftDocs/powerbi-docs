@@ -46,21 +46,23 @@ Browse the samples to interact with KPIs and mobile reports.
   
 3. Tap the options icon ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png) in the upper-left corner, and tap **Settings**.
 
+<<<<<<< HEAD
      ![](media/powerbi-mobile-android-kpis-mobile-reports/power-bi-android-settings-menu.png)
 
 4.  Tap **Connect to server**.
 
 5. Fill in the server address and your user name and password. Use this format for the server address:
+=======
+4. Fill in the server address and your user name and password. Use a fully qualified domain name for both the server and your user name,  in this format:
+>>>>>>> 386647de97b795baf58f4a36dada7a2865b94bb3
 
-     `http://<servername>/reports`
+     `http://<servername>.<domainname>/reports`
 
      Or
 
-     `https://<servername>/reports`
+     `https://<servername>.<domainname>/reports`
      
      >**Note**: Include **http** or **https** in front of the connection string.
-
-    ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ssrs_and_connect.png)
 
     Tap **Advanced option** to give the server a name, if you'd like.
 

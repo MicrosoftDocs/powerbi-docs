@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/04/2016"
+   ms.date="12/12/2016"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI mobile app for Windows 10  
@@ -99,7 +99,8 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 - Alerts only work with numeric data.
 - Alerts only work on data that is refreshed. They don't work on static data.
 
-### See also  
+## See also  
 - [Manage your alerts in the Power BI service](powerbi-service-set-data-alerts.md)
 - [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
 - [Get started with Power BI](powerbi-service-get-started.md)  
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
