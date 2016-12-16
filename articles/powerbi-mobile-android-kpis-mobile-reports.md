@@ -44,9 +44,13 @@ Browse the samples to interact with KPIs and mobile reports.
 
 1.  In your Android phone, open the Power BI app.
   
-3. Tap the options icon ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png) in the upper-left corner, and tap **Connect to SSRS server**.
+3. Tap the options icon ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png) in the upper-left corner, and tap **Settings**.
 
-4. Fill in the server address and your user name and password. Use this format for the server address:
+     ![](media/powerbi-mobile-android-kpis-mobile-reports/power-bi-android-settings-menu.png)
+
+4.  Tap **Connect to server**.
+
+5. Fill in the server address and your user name and password. Use this format for the server address:
 
      `http://<servername>/reports`
 

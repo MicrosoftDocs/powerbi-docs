@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/06/2016"
+   ms.date="12/15/2016"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -30,7 +30,7 @@ You [create dashboards and reports in the Power BI service](powerbi-service-get-
 
 Then interact with your dashboards and reports, explore the data, and share them, all from the iPad app for Power BI.
 
-You can also [view Reporting Services KPIs and mobile reports for your on-premises data](powerbi-mobile-ipad-kpis-mobile-reports.md) in the iPad app for Power BI. You [create those KPIs and mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx).
+You can also [view Reporting Services KPIs and mobile reports for your on-premises data](powerbi-mobile-iphone-kpis-mobile-reports.md) in the iPad app for Power BI. You [create those KPIs and mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx).
 
 Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
@@ -92,7 +92,7 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-favorites-menu.png)
+    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ios-favorites.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
@@ -129,7 +129,7 @@ See what else you can do in the iPad app with dashboards in Power BI, and Report
 
 ### Reporting Services mobile reports and KPIs
 
-- [View Reporting Services mobile reports and KPIs](powerbi-mobile-ipad-kpis-mobile-reports.md) on the Reporting Services web portal.
+- [View Reporting Services mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) on your iPad.
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
