@@ -1,25 +1,25 @@
-<properties 
+<properties
    pageTitle="appFigures content pack"
    description="appFigures content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
-   
+
 # appFigures content pack for Power&nbsp;BI
 
 Tracking important statistics about your apps is easy with Power BI and the appFigures content pack. Power BI retrieves your data, including app sales, downloads, and ad statistics, then builds a default dashboard and related reports based on that data.
@@ -40,11 +40,11 @@ Connect to the [appFigures content pack](https://app.powerbi.com/getdata/service
 
 	![](media/powerbi-content-pack-appfigures/appFigures.png)
 
-4.  For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your appFigures credentials and follow the appFigures authentication process. 
+4.  For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your appFigures credentials and follow the appFigures authentication process.
 
     The first time you connect, Power BI prompts you to allow read-only access to your account. Select **Allow** to begin the import process. This can take a few minutes depending on the volume of data in your account.
 
-    ![](media/powerbi-content-pack-appfigures/appFiguresDoc_06.png) 
+    ![](media/powerbi-content-pack-appfigures/appFiguresDoc_06.png)
 
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*:
 
@@ -89,4 +89,3 @@ If data from some of your apps is not showing up in Power BI, check to make sure
 
 -  [Get started in Power BI](powerbi-service-get-started.md)
 -  [Get data in Power BI](powerbi-service-get-data.md)
-

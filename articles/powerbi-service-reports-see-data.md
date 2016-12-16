@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # Reveal the data behind the visual
@@ -32,11 +32,13 @@ A Power BI visual is constructed using data from your datasets. If you're intere
 
     ![](media/powerbi-service-reports-see-data/power-bi-explore-see-data.png)
 
-4.  To export the data to a .csv file, select **Export data**.
+4.  To export the data to a .csv file, select the ellipses and choose **Export data**.
 
     ![](media/powerbi-service-reports-see-data/power-bi-export-data.png)
 
-5. To hide the data, either de-select **Explore** > **See data** or select the **Hide data** icon ![](media/powerbi-service-reports-see-data/power-bi-hide-data-icon.png) from the top right corner of the visual.
+5.  To change the display to a vertical orientation, select the **Switch to vertical layout** icon  ![](media/powerbi-service-reports-see-data/power-bi-vertical-icon.png) .
+
+6.  To hide the data, de-select **Explore** > **See data**.
 
 ### See also
 

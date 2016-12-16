@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 
 # Azure Search content pack for Power&nbsp;BI
@@ -38,8 +38,8 @@ Connect to the [Azure Search content pack](https://app.powerbi.com/getdata/servi
 3.  Select **Azure Search** \> **Get**.
 
     ![](media/powerbi-content-pack-azure-search/azuresearch.png)
-    
-4.  Provide the name of the table storage account your Azure Search analysis is stored. 
+
+4.  Provide the name of the table storage account your Azure Search analysis is stored.
 
     ![](media/powerbi-content-pack-azure-search/params.png)
 
@@ -63,7 +63,7 @@ Connect to the [Azure Search content pack](https://app.powerbi.com/getdata/servi
 
 ## System requirements
 
-The Azure Search content pack requires Azure Search Traffic Analytics to be enabled on the account. 
+The Azure Search content pack requires Azure Search Traffic Analytics to be enabled on the account.
 
 ## Troubleshooting
 

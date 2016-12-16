@@ -1,32 +1,32 @@
-﻿<properties 
+﻿<properties
    pageTitle="Smartsheet content pack"
    description="Smartsheet content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
-   
+
 # Smartsheet content pack for Power&nbsp;BI
 
 Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet content pack for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account. You can also use the [Power BI Desktop](powerbi-desktop-connect-to-data.md) to connect directly to individual sheets in your account. 
 
 Connect to the [Smartsheet content pack](https://app.powerbi.com/groups/me/getdata/services/smartsheet) for Power BI.
 
-Note: Smartsheet admin account is preferred to connect and load the Power BI content pack as it has additional access. 
+Note: Smartsheet admin account is preferred to connect and load the Power BI content pack as it has additional access.
 
 ## How to Connect
 
@@ -47,7 +47,7 @@ Note: Smartsheet admin account is preferred to connect and load the Power BI con
 	When prompted, enter your Smartsheet credentials and follow the authentication process.
 
 	![](media/powerbi-content-pack-smartsheet/creds.png)
-    
+
     ![](media/powerbi-content-pack-smartsheet/creds2.png)
 
 6.  After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the Smartsheet entry.
@@ -76,4 +76,3 @@ To connect directly to individual sheets in your account, you can use the Smarts
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get Data for Power BI](powerbi-service-get-data.md)
-

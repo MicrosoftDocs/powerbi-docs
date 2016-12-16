@@ -1,23 +1,23 @@
-﻿<properties 
+﻿<properties
    pageTitle="SQL Database Auditing content pack"
    description="SQL Database Auditing content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="theresapalmer"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2016"
+   ms.date="12/08/2016"
    ms.author="tpalmer"/>
 # SQL Database Auditing content pack for Power BI
 

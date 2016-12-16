@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2016"
+   ms.date="12/08/2016"
    ms.author="amac"/>
 
 # Tutorial: Download and start using the Power BI samples  

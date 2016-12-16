@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2016"
+   ms.date="12/07/2016"
    ms.author="maikelson"/>
 
 # Power BI webinars

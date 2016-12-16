@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
-   
+
 # Google Analytics content pack for Power&nbsp;BI
 
 Connecting to Google Analytics through Power BI starts by connecting to your Google Analytics account. You will get a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. You can use the dashboard and reports provided, or customize them to highlight the information you care most about. The data will be refreshed automatically once per day.
@@ -57,7 +57,7 @@ In addition to this content pack, customized dashboards and reports can also be 
 7.  Click **Connect** to begin the import process. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
 
      ![](media/powerbi-content-pack-google-analytics/googleanalytics2.png)
-    
+
 **What Now?**
 
 - Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
@@ -80,7 +80,7 @@ If you have multiple Google accounts, please use an incognito or an in-private b
 If you're getting an error indicating your credentials are invalid however you were able to sign into Google, please confirm you have a [Google Analytics](https://www.google.com/analytics/) account.
 
 **Parameters**
-Unique names are currently required for the parameters. If you see an error indicating the value you selected is duplicated, please select another value or change the names in Google Analytics to make them unique. We're actively working to improve this. 
+Unique names are currently required for the parameters. If you see an error indicating the value you selected is duplicated, please select another value or change the names in Google Analytics to make them unique. We're actively working to improve this.
 
 Note: Parameters are case-sensitive. Enter them exactly as they appear in your Google Analytics account.
 

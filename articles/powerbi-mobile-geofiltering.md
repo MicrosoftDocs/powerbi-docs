@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Filter a report by location in the Power BI mobile apps for iOS"
-   description="Learn how you can filter a report by your location in the Microsoft Power BI  mobile apps for iOS, if the report owner set geographic tags."
+   pageTitle="Filter a report by location in the Power BI mobile apps"
+   description="Learn how you can filter a report by your location in the Microsoft Power BI  mobile apps, if the report owner set geographic tags."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -16,25 +16,25 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 
-# Filter a report by location in the Power BI mobile apps for iOS
+# Filter a report by location in the Power BI mobile apps
 
-When you look at a Power BI report on your iPad, iPhone, or iPod Touch, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
+When you look at a Power BI report on your mobile device, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
 
 > [AZURE.NOTE] You can only filter by location if the geographic names in the report are in English&#150;for example, "New York City" or "Germany".
 
 ## Filter your report by your location
 
-1. Open a report in the Power BI mobile app on your iOS device.
+1. Open a report in the Power BI mobile app on your mobile device.
 
 3. Tap the push pin ![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-icon.png) in the upper-right corner. You can filter on either city, state/province, or country/region, depending on how the report creator set up the report. The filter only lists options that match your current location.
 
     ![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
 ## Why do only some reports have location tags?
-When you or your colleagues create reports in Power BI Desktop, you can categorize geographical data for a column. Then, when you view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where you are.
+When you or your colleagues create reports in Power BI Desktop, you can categorize geographical data for a column. Then, when you view that report in a Power BI mobile app, Power BI automatically provides geographical filters that match where you are.
 
 Read more about [setting up geographic filtering](powerbi-desktop-mobile-geofiltering.md) in Power BI Desktop.
 

@@ -1,25 +1,25 @@
-﻿<properties 
+﻿<properties
    pageTitle="Microsoft Azure Enterprise content pack"
    description="Microsoft Azure Enterprise content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
-   
+
 # Microsoft Azure Enterprise content pack for Power&nbsp;BI
 
 Explore and monitor your Microsoft Azure Enterprise data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
@@ -36,7 +36,7 @@ Connect to the [Microsoft Azure Enterprise content pack](https://app.powerbi.com
 
 	![](media/powerbi-content-pack-azure-enterprise/services.png)
 
-3.  Select **Microsoft Azure Enterprise** \> **Get**. 
+3.  Select **Microsoft Azure Enterprise** \> **Get**.
 
 	![](media/powerbi-content-pack-azure-enterprise/mazureenterprise.png)
 
@@ -44,7 +44,7 @@ Connect to the [Microsoft Azure Enterprise content pack](https://app.powerbi.com
 
     ![](media/powerbi-content-pack-azure-enterprise/params.png)
 
-5. Provide your Access key to connect. The key for your enrollment can be found in your Azure EA Portal. 
+5. Provide your Access key to connect. The key for your enrollment can be found in your Azure EA Portal.
 
 	![](media/powerbi-content-pack-azure-enterprise/creds.png)
 
@@ -70,7 +70,7 @@ The Azure Enterprise content pack includes monthly reporting data for the range 
 
 ## System Requirements
 
-The content pack requires access to the Enterprise features within the Azure Portal. 
+The content pack requires access to the Enterprise features within the Azure Portal.
 
 <a name="FindingParams"></a>
 ## Finding parameters
@@ -101,12 +101,10 @@ Power BI reporting is available for EA Direct, Partner and Indirect Customers wh
 
 **Additional Help**
 
-- For additional help setting up the Azure Enterprise Power BI Pack, log in to the Azure Enterprise Portal to view the API Help File under “Help” and additional instructions under Reports -> Download Usage -> API Access Key. 
+- For additional help setting up the Azure Enterprise Power BI Pack, log in to the Azure Enterprise Portal to view the API Help File under “Help” and additional instructions under Reports -> Download Usage -> API Access Key.
 
 ### See also
 
 [Get started in Power BI](powerbi-service-get-started.md)
 
 [Get data in Power BI](powerbi-service-get-data.md)
-
-

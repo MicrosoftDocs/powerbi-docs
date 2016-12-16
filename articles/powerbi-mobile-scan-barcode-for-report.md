@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="12/08/2016"
    ms.author="maggies"/>
 
 # Scan a barcode from the Power BI app on your iPhone
@@ -36,7 +36,7 @@ When you scan a product barcode with the scanner in the Power BI app on your iPh
 
 2. Scroll down to **Scanner** and select it. 
 
-    ![](media/powerbi-mobile-scan-barcode-for-report/power-bi-open-scanner.png)
+    ![](media/powerbi-mobile-scan-barcode-for-report/power-bi-scanner.png)
 
 3. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
 
