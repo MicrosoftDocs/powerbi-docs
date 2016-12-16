@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/14/2016"
+   ms.date="12/16/2016"
    ms.author="maggies"/>
 
 # "Could not authenticate because your corporate SSL certificate is untrusted"
@@ -52,7 +52,7 @@ Go to **Settings** > **System** > **Date and time** to check them.
 
 ## Custom authentication server
 
-If you're using a custom authentication server, the SSL certificate in the corporate authentication server may not be valid. Check it in Chrome, as it’s stricter than other browsers on SSL certificate validation.
+If you're using a custom authentication server, the SSL certificate in the corporate authentication server may not be valid. Please contact your organization's IT admin to help you.
 
 ## See also
 

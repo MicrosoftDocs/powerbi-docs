@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/12/2016"
+   ms.date="12/16/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Android tablets
@@ -62,7 +62,7 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
     ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-connect.png)
 
-    Give your SSRS server sign-in information to [view Reporting Services mobile reports and KPIs](powerbi-mobile-android-tablet-kpis-mobile-reports.md) in the Android tablet app for Power BI.
+    Give your SSRS server sign-in information to [view Reporting Services mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md) in the Android tablet app for Power BI.
 
 
 ## Try the Power BI and Reporting Services samples  
@@ -137,7 +137,7 @@ See what else you can do in the Android tablet app for Power BI with dashboards 
 
 ### Reporting Services mobile reports and KPIs
 
-- [View Reporting Services mobile reports and KPIs](powerbi-mobile-android-tablet-kpis-mobile-reports.md) in the Android tablet app for Power BI.
+- [View Reporting Services mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md) in the Power BI mobile app for Android devices.
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 

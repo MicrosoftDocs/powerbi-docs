@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/15/2016"
+   ms.date="12/16/2016"
    ms.author="maggies"/>
 
 # View SQL Server Reporting Services mobile reports and KPIs in the Power BI mobile app for iOS 
@@ -62,6 +62,8 @@ Even if you don't have access to a Reporting Services web portal, you can still 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ios-connect-to-ssrs-server.png)
 
 4. Fill in the server address and your user name and password. Use this format for the server address:
+
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ios-connect-to-server-dialog.png)
 
      `http://<servername>/reports`
      OR
@@ -118,6 +120,7 @@ You don't create Reporting Services KPIs and mobile reports in the Power BI mobi
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)
 
 ### See also  
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
+- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md) 
+- [Get started with the iPad app for Power BI](powerbi-mobile-ipad-app-get-started.md) 
 - [Get started with Power BI](powerbi-service-get-started.md)  
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
