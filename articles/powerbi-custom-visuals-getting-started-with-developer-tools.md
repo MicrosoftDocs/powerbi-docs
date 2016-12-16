@@ -162,9 +162,7 @@ To enable a live preview of your custom visual, follow these steps. This allows 
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-    > [AZURE.NOTE] This requires that you have run `pbiviz start` from the visual folder on your development machine. For more information on creating your visual, see [Placeholder](#placeholder) in this article.
-
-<!-- Loc Comment: The bookmark link above for "Placeholder" does not work, because there is no heading for "Placeholder" in this article. Please help to fix as intended.  -->
+    > [AZURE.NOTE] This requires that you have run `pbiviz start` from the visual folder on your development machine. For more information on creating your visual, see [Create a new visual](#create-a-new-visual) in this article.
 
 5. Select the visual in the report canvas. You can bind data in the same way you do other visuals.
 
