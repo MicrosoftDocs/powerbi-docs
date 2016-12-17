@@ -102,7 +102,7 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-left-nav-favorites.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-favorite-menu.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
@@ -133,7 +133,7 @@ See what else you can do in the Android tablet app for Power BI with dashboards 
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android-tablet.md) from your Android tablet.
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-left-nav-notifications.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-notification-menu.png)
 
 ### Reporting Services mobile reports and KPIs
 
