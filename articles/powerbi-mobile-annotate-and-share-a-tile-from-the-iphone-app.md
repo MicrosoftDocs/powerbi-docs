@@ -35,7 +35,7 @@ You can add annotations — lines, text, or stamps — before you share it.
 
 2.  Tap the annotate icon ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ios-annotate-icon.png) in the upper-right corner of the tile.
 
-3.  You're ready to annotate and share the tile.
+3.  You're ready to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md#annotate-and-share-the-tile-report-or-visualization).
 
 ## Open a report for annotating
 
@@ -43,7 +43,7 @@ You can add annotations — lines, text, or stamps — before you share it.
 
 2.  Tap the annotate icon ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ios-annotate-icon.png) in the upper-right corner of the report.
 
-3.  You're ready to annotate and share the report.
+3.  You're ready to [annotate and share the report](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md#annotate-and-share-the-tile-report-or-visualization).
 
 ## Open a visualization for annotating
 
@@ -53,7 +53,7 @@ You can add annotations — lines, text, or stamps — before you share it.
 
 2.  Tap the annotate icon ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ios-annotate-icon.png) in the upper-right corner of the visualization.
 
-3.  You're ready to annotate and share the visualization.
+3.  You're ready to [annotate and share the visualization](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md#annotate-and-share-the-tile-report-or-visualization).
 
 ## Annotate and share the tile, report, or visualization
 
