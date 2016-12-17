@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS"
-   description="Read about sharing tiles, reports, and visualizations from the Microsoft Power BI app for iOS. You can send snapshots to anyone, not just colleagues."
+   pageTitle="Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS on the iPhone"
+   description="Read about annotating and sharing tiles, reports, and visualizations from the Microsoft Power BI app for iOS on the iPhone. "
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,7 +20,7 @@
    ms.date="12/16/2016"
    ms.author="maggies"/>
 
-# Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS
+# Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS on the iPhone
 
 You can share a snapshot of a tile, report, or visualization from the Power BI mobile app for iOS. Your recipients see it exactly as it was when you sent the mail, plus a link. You can send snapshots of tiles to anyone — not just colleagues in the same email domain. If they have permissions and you've already shared the dashboard or report with them, then they can click the link and go straight to that tile, report, or visualization. 
 You can add annotations — lines, text, or stamps — before you share it.
