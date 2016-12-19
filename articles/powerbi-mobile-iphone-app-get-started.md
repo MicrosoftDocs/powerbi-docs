@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/06/2016"
+   ms.date="12/15/2016"
    ms.author="maggies"/>
 
 # Get started with the Power BI app for iOS on an iPhone or iPod Touch
@@ -84,7 +84,7 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-favorite-menu.png)
+    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-ios-favorites.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
@@ -121,7 +121,7 @@ See what else you can do in the iPhone app with dashboards in Power BI, and Repo
 
 ### Reporting Services mobile reports and KPIs
 
-- [View Reporting Services mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) on the Reporting Services web portal.
+- [View Reporting Services mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) on your iPhone.
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - Create [your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 

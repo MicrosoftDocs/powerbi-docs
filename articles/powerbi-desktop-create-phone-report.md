@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/27/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
@@ -34,7 +34,7 @@ After you [create a report in Power BI Desktop](powerbi-desktop-report-view.md),
 
     ![](media/powerbi-desktop-create-phone-report/PBI_ReportViewInPBIDesigner_ChangeView.png)
 
-2. On the **Home** tab, select **Change Layout**.  
+2. On the **View** tab, select **Change Layout**.  
 
     ![](media/powerbi-desktop-create-phone-report/01_change_form_factor.gif)
 
