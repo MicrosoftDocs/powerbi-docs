@@ -124,7 +124,7 @@ Let’s look at how specific districts are doing.
 
     Note that for the Women’s category, his district never met last year’s volume.
 
-3.  3.Explore the other district managers and categories – what other insights can you find?
+3.  Explore the other district managers and categories – what other insights can you find?
 
 4.  When you are ready – return to the dashboard.
 
