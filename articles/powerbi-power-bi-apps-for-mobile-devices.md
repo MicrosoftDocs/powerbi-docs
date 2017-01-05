@@ -17,21 +17,26 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/02/2016"
+   ms.date="01/04/2017"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
 
-Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &#151; be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone or tablet, or Windows 10 device.
+You've created Power BI reports in Power BI Desktop, and Power BI dashboards in the Power BI service. Now it's time to connect to your data anywhere and anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards and reports on your mobile device &#151; be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone or tablet, or Windows 10 device.
 
 ![](media/powerbi-powerbi-apps-for-mobile-devices/pbi_phone_photo_crop2.png)
 
-
-## Know what's new in the Power BI mobile apps
+## See what's new in the Power BI mobile apps
 
 - Read the [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/tag/mobile/) for new features in the mobile apps.
 - See the list of [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
+## The Power BI apps
+
+| **Device** | **Highlights** |
+|---|---|
+|[![](media/powerbi-landing-page/pbi-landing_02.jpg)](powerbi-service-get-started.md)| The **Power BI service** is the online software service where users spend most of their time. Here you'll find [dashboards](powerbi-service-dashboards.md), [content packs](powerbi-content-packs-services.md), and all sorts of [visualizations](powerbi-service-visualizations-for-reports.md). If you're new to the Power BI service, start with its [Getting Started](powerbi-service-get-started.md) topic. |
+|[![](media/powerbi-landing-page/pbi-landing_03.jpg)](powerbi-desktop-getting-started.md)| With **Power BI Desktop**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md).|
 
 ## The iPhone and iPod Touch app (Power BI for iOS)
 - [Get started with the iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS).
