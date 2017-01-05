@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2016"
+   ms.date="01/04/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -28,6 +28,43 @@ For related "What's New" information, see:
 * [What's new in the Power BI service](powerbi-service-whats-new.md)  
 * [Power BI team blog](https://powerbi.microsoft.com/blog/)
 * [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+
+## December 2016
+
+### All devices
+
+**Offline background refresh**
+
+To make sure you can access your latest data while offline, we perform a refresh in the background of the app so your business information is up to date, even if you haven’t accessed it for a while. To make sure certain dashboards are always up to date, just mark them as favorites. Learn more about [offline capabilities in the Power BI mobile apps](powerbi-mobile-offline-android.md).
+
+### iOS devices
+
+**Annotate and share**
+
+Now you can annotate and share a tile, report, or visualization from the Power BI mobile app for iOS. 
+
+-  [On the iPhone](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
+-  [On the iPad](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
+
+**Request access to dashboards**
+
+If you scan a QR code for a dashboard that you don't have access to, now you can submit a request for access right from the mobile app.
+
+**Custom URL on image tile**
+
+If an image tile has a custom URL defined by the dashboard owner, when you tap the tile you go directly to that URL without opening the tile in focus mode. 
+
+### iPhone
+
+**Apple watch improvements**
+
+You can now refresh Apple Watch data directly from the Watch app. In the dashboard index page, deep press to refresh your data. (The Power BI mobile app must be running in the background on your iPhone for this to work).
+
+### Android
+
+**Custom URL on image tile**
+
+If an image tile has a custom URL defined by the dashboard owner, when you tap the tile you go directly to that URL without opening the tile in focus mode. Also, dashboard tiles containing predefined custom URLs can now redirect readers to reports within the app.
 
 ## November 2016
 
