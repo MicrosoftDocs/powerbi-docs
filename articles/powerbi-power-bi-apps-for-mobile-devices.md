@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/04/2017"
+   ms.date="01/05/2017"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
@@ -41,6 +41,19 @@ You've created Power BI reports in Power BI Desktop, and Power BI dashboards in 
 |[![](media/powerbi-powerbi-apps-for-mobile-devices/android-logo-50-px.png)](powerbi-desktop-getting-started.md) Android tablet| With **Power BI Desktop**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md).|
 |[![](media/powerbi-powerbi-apps-for-mobile-devices/win-10-logo-50-px.png)](powerbi-desktop-getting-started.md)| With **Power BI Desktop**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md).|
 
+## Or
+
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/iphone-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| Your iPhone goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. | 
+
+Besides viewing your Power BI dashboards and reports, you can also add [Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and view your [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPhone. 
+
+You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report. 
+
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/iphone-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| Your iPhone goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. | 
+
+Besides viewing your Power BI dashboards and reports, you can also add [Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and view your [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPhone. 
+
+You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report. 
 
 ## The iPhone and iPod Touch app (Power BI for iOS)
 - [Get started with the iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS).
