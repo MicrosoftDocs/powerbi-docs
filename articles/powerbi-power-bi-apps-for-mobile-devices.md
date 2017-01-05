@@ -37,27 +37,20 @@ You've created Power BI reports in Power BI Desktop, and Power BI dashboards in 
 |---|---|
 |[![](media/powerbi-powerbi-apps-for-mobile-devices/iphone-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| Your **iPhone** goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. Besides viewing your Power BI dashboards and reports, you can also add [Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and view your [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPhone. You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report.  |
 |[![](media/powerbi-powerbi-apps-for-mobile-devices/ipad-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| On the **iPad**, the Power BI mobile app displays dashboards and reports the way they were designed for the Power BI service. You can [set data alerts in the Power BI mobile app for iOS](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to notify you when data in a dashboard changes beyond limits you set. Plus you can [filter a report by your geographic location](powerbi-mobile-geofiltering.md). |
-|[![](media/powerbi-powerbi-apps-for-mobile-devices/android-phone-logo-50-px.png)](powerbi-desktop-getting-started.md) | With **Power BI Desktop**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md). You can mark your favorite dashboards and reports, so you can get to them quickly. Plus you can add annotations to your dashboards and reports, and then share them with your colleagues. |
-|[![](media/powerbi-powerbi-apps-for-mobile-devices/android-tablet-logo-50-px.png)](powerbi-desktop-getting-started.md)| With **Power BI Desktop**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md).|
-|[![](media/powerbi-powerbi-apps-for-mobile-devices/win-10-logo-50-px.png)](powerbi-desktop-getting-started.md)| With **Power BI Desktop**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md).|
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/android-phone-logo-50-px.png)](powerbi-mobile-android-app-get-started.md) | With **Android phone**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md). You can mark your favorite dashboards and reports, so you can get to them quickly. Plus you can add annotations to your dashboards and reports, and then share them with your colleagues. |
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/android-tablet-logo-50-px.png)](powerbi-mobile-android-tablet-app-get-started.md)| With **Android tablet**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md).|
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/win-10-logo-50-px.png)](powerbi-desktop-getting-started.md)| With **Windows 10 devices**, you get a powerful [report-creating](powerbi-desktop-report-view.md) Windows desktop app that jump-starts your analytics. You can [import Excel workbooks](powerbi-desktop-import-excel-workbooks.md), upload reports to the service, and much more. Begin with the [Getting Started Guide](powerbi-desktop-getting-started.md).|
 
 ## Or
 
 |  |  |
 |---|---|
 |[![](media/powerbi-powerbi-apps-for-mobile-devices/iphone-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| Your iPhone goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. | 
-
-Besides viewing your Power BI dashboards and reports, you can also add [Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and view your [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPhone. 
-
-You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report. 
-
-|  |  |
-|---|---|
+|   | Besides viewing your Power BI dashboards and reports, you can also add [Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and view your [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPhone.| 
+|    | You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report. |
 |[![](media/powerbi-powerbi-apps-for-mobile-devices/iphone-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| Your iPhone goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. | 
-
-Besides viewing your Power BI dashboards and reports, you can also add [Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and view your [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPhone. 
-
-You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report. 
+|   | Besides viewing your Power BI dashboards and reports, you can also add [Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and view your [Reporting Services mobile reports](powerbi-mobile-iphone-kpis-mobile-reports.md) right on your iPhone. |
+|   | You can even [scan a QR code with your iPhone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report. |
 
 ## The iPhone and iPod Touch app (Power BI for iOS)
 - [Get started with the iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS).
