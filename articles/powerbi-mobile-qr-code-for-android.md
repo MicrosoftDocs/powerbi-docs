@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Scan a Power BI QR code from your Android phone"
+   pageTitle="Scan a Power BI QR code from your Android device"
    description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
    services="powerbi"
    documentationCenter=""
@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/03/2016"
+   ms.date="01/05/2017"
    ms.author="maggies"/>
 
-# Scan a Power BI QR code from your Android phone
+# Scan a Power BI QR code from your Android device
 
 QR codes in Power BI can connect any item in the real world directly to related BI information &#151; no navigation or search needed.
 
 Say a colleague has [created a QR code in the Power BI service](powerbi-service-qr-code-for-tile.md) for a report or for a tile in a dashboard, shared the dashboard or report with you, and placed the QR code in a key location &#151; for example, in an email or on a specific item. 
 
-You can scan the QR code for immediate access to the relevant tile, right from your Android phone, using either the scanner in the Power BI app, or any other scanner installed on your Android phone.
+You can scan the QR code for immediate access to the relevant tile, right from your Android device, using either the scanner in the Power BI app, or any other scanner installed on your Android device.
 
 ## Scan a Power BI QR code with the Power BI scanner
 
@@ -45,9 +45,9 @@ You can scan the QR code for immediate access to the relevant tile, right from y
     ![](media/powerbi-mobile-qr-code-for-android/power-bi-android-tile.png)
 
 
-## Scan a QR code from an external scanner on your Android phone
+## Scan a QR code from an external scanner on your Android device
 
-1. From any scanner installed on your Android phone, point the scanner to the relevant Power BI QR code for immediate access to the tile. 
+1. From any scanner installed on your Android device, point the scanner to the relevant Power BI QR code for immediate access to the tile. 
 
 2. If you don’t have the Power BI app installed, you are redirected to [Google Play to download it](http://go.microsoft.com/fwlink/?LinkID=544867). 
 
