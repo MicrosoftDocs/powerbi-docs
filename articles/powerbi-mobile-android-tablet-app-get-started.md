@@ -130,7 +130,7 @@ See what else you can do in the Android tablet app for Power BI with dashboards 
 -   View [your groups](powerbi-mobile-groups-in-the-android-tablet-app.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-tablet-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-tablet-app.md).
--   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android-tablet.md) to open a related dashboard tile or report.
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) to open a related dashboard tile or report.
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
     ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-notification-menu.png)
