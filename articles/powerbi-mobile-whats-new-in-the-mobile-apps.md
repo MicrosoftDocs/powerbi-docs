@@ -17,19 +17,21 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/04/2017"
+   ms.date="01/05/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
 
 For related "What's New" information, see:
 
+* [Power BI mobile team blog](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 * [What's new in the Power BI service](powerbi-service-whats-new.md)  
-* [Power BI team blog](https://powerbi.microsoft.com/blog/)
-* [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+* [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/)
 
 ## December 2016
+
+Read the [December 2016 mobile apps blog feature summary](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-december-2016).
 
 ### All devices
 

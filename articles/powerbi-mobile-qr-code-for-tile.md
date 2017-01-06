@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Scan a Power BI QR code from your iPhone"
+   pageTitle="Scan a Power BI QR code from your iPhone or iPad"
    description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
    services="powerbi"
    documentationCenter=""
@@ -17,16 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/03/2016"
+   ms.date="01/05/2017"
    ms.author="maggies"/>
 
-# Scan a Power BI QR code from your iPhone
+# Scan a Power BI QR code from your iPhone or iPad
 
 QR codes in Power BI can connect any item in the real world directly to related BI information &#151; no navigation or search needed.
 
 Say a colleague has [created a QR code in the Power BI service](powerbi-service-qr-code-for-tile.md) for a report or for a tile in a dashboard, shared the dashboard or report with you, and placed the QR code in a key location &#151; for example, in an email or on a specific item. 
 
-You can scan the QR code for immediate access to the relevant tile or report, right from your phone, using either the scanner in the Power BI app, or any other scanner installed on your phone.
+You can scan the QR code for immediate access to the relevant tile or report, right from your phone, using either the scanner in the Power BI app, or any other scanner installed on your phone. 
+
+> [AZURE.NOTE] If your colleague hasn't shared the dashboard or report with you, you can submit a request for access directly from the mobile app.
 
 ## Scan a Power BI QR code with the Power BI scanner
 
@@ -52,13 +54,11 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
 1. From any scanner installed on your phone, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 
 
-2. If you don’t have the Power BI app installed, you are redirected to the [Apple App Store to download it](http://go.microsoft.com/fwlink/?LinkId=522062) on your iPhone.
+2. If you don’t have the Power BI app installed, you are redirected to the [Apple App Store to download it](http://go.microsoft.com/fwlink/?LinkId=522062) on your iPhone or iPad.
 
-### See also
+## See also
 
 -  [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
--  [Create a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
--  [Create a QR code for a report in Power BI](powerbi-service-qr-code-for-report.md)
--  [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
--  [Dashboards in Power BI](powerbi-service-dashboards.md)
+-  [Create a QR code for a tile in the Power BI service](powerbi-service-qr-code-for-tile.md)
+-  [Create a QR code for a report in the Power BI service](powerbi-service-qr-code-for-report.md)
 -  Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
