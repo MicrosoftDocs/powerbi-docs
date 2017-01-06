@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/15/2016"
+   ms.date="01/05/2017"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -120,7 +120,8 @@ See what else you can do in the iPad app with dashboards in Power BI, and Report
 -   Interact with [tiles on your Power BI dashboards](powerbi-mobile-tiles-in-the-ipad-app.md).
 -   Open [Power BI reports](powerbi-mobile-reports-on-the-ipad-app.md) from your dashboard.
 -   [Share Power BI dashboards](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
--   [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
+-   [Annotate and share](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) a tile, report, or visualization.
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md)  to open a related dashboard tile or report.
 -   View your [groups' Power BI dashboards and reports](powerbi-service-mobile-groups-in-the-ipad-app.md).
 -   [Set data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to get notifications when your data changes.
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
