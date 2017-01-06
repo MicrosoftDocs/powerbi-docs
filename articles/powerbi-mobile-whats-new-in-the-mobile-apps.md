@@ -24,7 +24,7 @@
 
 For related "What's New" information, see:
 
-* [Power BI mobile team blog](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+* [Power BI mobile team blog](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 * [What's new in the Power BI service](powerbi-service-whats-new.md)  
 * [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/)
