@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/08/2016"
+   ms.date="01/06/2017"
    ms.author="maggies"/>
 
 # Create a deep link that goes to a specific location in the Power BI mobile apps
@@ -91,6 +91,13 @@ For example, see the highlighted section of this URL:
 
 https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**ReportSection11**
 
+## Add context (optional)
+ 
+You can also add context in the string. Then if you need to contact us, we can use that context to filter our data to your app. Add `&context=<app-name>` to the link
+
+For example, see the highlighted section of this URL: 
+
+https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**&context=SlackDeepLink**
 
 ## See also
 

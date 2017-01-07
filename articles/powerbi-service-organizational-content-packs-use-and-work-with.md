@@ -4,8 +4,8 @@
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
-   backup=""
+   manager="erikre" 
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 # Work with organizational content packs in Power BI
 
-When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's an SSAS data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can save a copy of the content pack that can live alongside the original.
+When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's a SQL Server Analysis Services (SSAS) data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can save a copy of the content pack that can live alongside the original.
 
 ## Create a copy of an organizational content pack
 
@@ -33,7 +33,7 @@ Create your own copy of the content pack, not visible to others.
 
 2.  Select **Save**.  
 
-
+Now you have a copy that you can change. Nobody else will see changes you make.
 
 ## Help!  I can no longer access the content pack
 
@@ -47,14 +47,12 @@ This can happen for several reasons:
 
 ## How are organizational content packs refreshed?
 
-When the content pack is created, the refresh settings are inherited with the dataset.  When a group member creates a copy of the content pack, the new version retains its link to the original dataset and its refresh schedule. 
+When the content pack is created, the refresh settings are inherited with the dataset.  When you create a copy of the content pack, the new version retains its link to the original dataset and its refresh schedule. 
 
 See [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
-### See also
+## See also
 -  [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
--  [Get Started with Power BI](powerbi-service-get-started.md)
--  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 -  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 - More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

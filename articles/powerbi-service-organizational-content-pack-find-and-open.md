@@ -4,8 +4,8 @@
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
-   backup=""
+   manager="erikre" 
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
 # Find and open an organizational content pack in Power BI  
 
@@ -34,9 +34,9 @@ When anyone publishes an organizational content pack to your organization, to di
 
 3.  Select a content pack to reveal additional details.
 
-4.  Select **Connect** to add the content pack to your active workspace. New dashboards, reports, Excel workbooks, and datasets are starred with a yellow asterisk.
+4.  Select **Get it now** to add the content pack to your active workspace. New dashboards, reports, Excel workbooks, and datasets are starred with a yellow asterisk.
 
-You may see a warning that you don’t have permissions to view the Excel workbook. If so, ask the content pack owner to [share the workbook with you in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+If the content pack has an Excel workbook, you may see a warning that you don’t have permissions to view the workbook. If so, ask the content pack owner to [share the workbook with you in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 The content pack is locked. You can [save your own copy of the dashboard and reports](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
@@ -47,8 +47,9 @@ If the content pack owner changes the content pack, and:
 
 - **You have made a copy** Your copy won't be updated. 
 
-### See also  
-[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
-[Get Started with Power BI](powerbi-service-get-started.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-[Create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md)  
+## See also  
+- [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+- [Get Started with Power BI](powerbi-service-get-started.md)  
+- [Power BI Basic Concepts](powerbi-service-basic-concepts.md)  
+- [Create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md)  
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
