@@ -60,7 +60,7 @@ If you have **Power BI** Free licenses assigned to your account, you may encount
 
 -   Users experience that **Power BI Desktop** only works when offline; *sign-in* and *Publish from Desktop* features are not currently supported.
 
-To resolve this issue, please contact [Power BI support](https://powerbi.microsoft.com/en-us/support/).
+To resolve this issue, please contact [Power BI support](https://powerbi.microsoft.com/support/).
 
 ## Frequently Asked Questions (FAQ) for the US Government version of the Power BI service
 

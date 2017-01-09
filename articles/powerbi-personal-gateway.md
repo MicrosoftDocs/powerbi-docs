@@ -54,9 +54,9 @@ With a gateway, REFRESH NOW and SCHEDULE REFRESH are supported for datasets uplo
 
 ### Online data sources
 
-A gateway *is only required* if you are using the [**Web.Page**](https://msdn.microsoft.com/en-us/library/mt260924.aspx) function. In other cases, a gateway is *not* required in order to refresh datasets that get data only from an online data source.
+A gateway *is only required* if you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function. In other cases, a gateway is *not* required in order to refresh datasets that get data only from an online data source.
 
-> Note: If you are using the [**Web.Page**](https://msdn.microsoft.com/en-us/library/mt260924.aspx) function, you only need a gateway if you have republished the dataset or your report after November 18th, 2016.
+> Note: If you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, you only need a gateway if you have republished the dataset or your report after November 18th, 2016.
 
 REFRESH NOW and SCHEDULE REFRESH are supported without a gateway for datasets uploaded from:
 

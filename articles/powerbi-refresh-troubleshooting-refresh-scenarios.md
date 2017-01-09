@@ -27,7 +27,7 @@ Here you can find information regarding different scenarios you may face when re
 > [AZURE.NOTE] If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 
 ## Refresh using Web connector doesn't work properly
-If you have a web connector script that's using the [**Web.Page**](https://msdn.microsoft.com/en-us/library/mt260924.aspx) function, and you have updated your dataset or report after  November 18th, 2016, you need to use a gateway in order for refresh to work properly.
+If you have a web connector script that's using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, and you have updated your dataset or report after  November 18th, 2016, you need to use a gateway in order for refresh to work properly.
 
 ## Unsupported data source for refresh
 When configuring a dataset, you may get an error indicating the dataset uses an unsupported data source for refresh. For details, see
