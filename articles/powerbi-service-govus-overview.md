@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/16/2016"
+   ms.date="01/09/2017"
    ms.author="davidi"/>
 
-# Power BI for United States Government customers
+# Power BI for US Government customers
 
 The **Power BI service** has a version available for United States Government customers as part of the **Office 365 US Government Community** subscriptions. The **Power BI service** version discussed in this article is specifically designed for US Government customers, and is separate and different from the commercial version of the **Power BI service**.
 
@@ -29,9 +29,9 @@ The **Power BI service** has a version available for United States Government cu
 The following sections describe the *features* available to the US Government version of the **Power BI service**, clarifies some of the *limitations*, lists Frequently Asked Questions (**FAQ**) and answers (including how to sign up), and provides links for more information.
 
 
-## Features of the US Government version of the Power BI service
+## Features of Power BI US Government
 
-The following features are available in the **Power BI service** version for US Government:
+The following features are available in **Power BI US Government**:
 
 -   Create and view dashboards and reports
 -   [Data capacity limits](powerbi-admin-manage-your-data-storage-in-power-bi.md)
@@ -45,19 +45,22 @@ The following features are available in the **Power BI service** version for US 
 
 
 
-## Limitations of the US Government version of the Power BI service
+## Limitations of Power BI US Government
 
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
 -   Office Online integration - you can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit data
 -   Power BI mobile apps - mobile apps for **Power BI** are not currently available
 -   Email notification - email notification does not work when sharing dashboards. Users with whom a dashboard is being shared can still view the dashboard, and receive notification about the dashboard when logged in to Power BI
+-   The **Power BI** tile in Office view doesn’t point to **Power BI US Government** – users must access it through https://app.powerbigov.us/  
+•	ESRI Power BI integration isn't available in Power BI at this time
+•	The **Publish to Web** feature is not available at this time in **Power BI US Government**
 
 If you have **Power BI** Free licenses assigned to your account, you may encounter the following issue when using **Power BI Desktop**:
 
 -   Users experience that **Power BI Desktop** only works when offline; *sign-in* and *Publish from Desktop* features are not currently supported.
 
-To resolve this issue, please contact Power BI support.
+To resolve this issue, please contact [Power BI support](https://powerbi.microsoft.com/support/).
 
 ## Frequently Asked Questions (FAQ) for the US Government version of the Power BI service
 
@@ -77,7 +80,7 @@ The following questions (and answers) are provided to help you quickly get infor
 
 **Question:** I'm interested in getting **Power BI** for my US Government organization. How do I get started?
 
-**Answer:** Signing up (often called *onboarding*) might differ based on your existing license and subscription. See the [Sign Up for Power BI for US Government](powerbi-service-govus-signup.md) article for more information.
+**Answer:** Signing up (often called *onboarding*) might differ based on your existing license and subscription. See the [Sign Up for Power BI US Government](powerbi-service-govus-signup.md) article for more information.
 
 
 **Question:** Is the URL for connecting to **Power BI** for US Government different than the commercial **Power BI** URL?

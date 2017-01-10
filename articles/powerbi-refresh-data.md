@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="01/09/2017"
    ms.author="asaxton"/>
 
 # Data refresh in Power BI  
@@ -28,8 +28,8 @@ In many cases, you don’t need to do anything at all. Some data, like from a Sa
 
 This article, along with a few others, are meant to help you understand how data refresh in Power BI really works, whether or not you need to setup a refresh schedule, and what needs to be in-place to refresh your data successfully.
 
-## Data refresh by subscription type 
- 
+## Data refresh by subscription type
+
 Before we go any further, it’s important to know how data refresh works depending on your Power BI subscription type. There are two different types of user subscriptions, Power BI (free) and Power BI Pro. Power BI Pro provides additional refresh frequency and capacity.
 
 |**Data Refresh**|**Power BI (free)**|**Power BI Pro**|
@@ -50,18 +50,18 @@ A *data source* is where the data you explore in your reports and dashboards rea
 A *dataset* is automatically created in Power BI when you use Get Data to connect to and upload data from a content pack, file, or you connect to a live data source. In Power BI Desktop and Excel 2016, you can also publish your file right to the Power BI service, which is just like using Get Data.
 
 In each case, a dataset is created and appears in the My Workspace, or Group, containers in the Power BI service. When you select the **ellipse (...)** for a dataset, you can explore the data in a report, edit settings, and setup refresh.
-  
+
 ![](media/powerbi-refresh-data/dataset-menu.png)
 
 A dataset can get data from one or more data sources. For example, you can use Power BI Desktop to get data from a SQL Database in your organization, and get other data from an OData feed online. Then, when you publish the file to Power BI, a single dataset is created, but it will have data sources for both the SQL Database and the OData feed.
 
 A dataset contains information about the data sources, data source credentials, and in most cases, a sub-set of data copied from the data source. When you create visualizations in reports and dashboards, you’re looking at data in the dataset, or in the case of a live connection like Azure SQL Database, the dataset defines the data you see right from the data source. For a live connection to Analysis Services, the dataset definition comes from Analysis Services directly.
 
-> *When you refresh data, you are updating the data in the dataset that is stored in Power BI from your data source. This refresh is a full refresh and not incremental.* 
+> *When you refresh data, you are updating the data in the dataset that is stored in Power BI from your data source. This refresh is a full refresh and not incremental.*
 
 Whenever you refresh data in a dataset, whether by using Refresh Now or by setting up a refresh schedule, Power BI uses information in the dataset to connect to the data sources defined for it, query for updated data, and then loads the updated data into the dataset. Any visualizations in your reports or dashboards based on the data are updated automatically.
 
-Before we go any further, there’s something else that's very important to understand: 
+Before we go any further, there’s something else that's very important to understand:
 
 > *Regardless of how often you refresh the dataset, or how often you look at live data, it is the data at the data source that must be up-to-date first.*
 
@@ -117,11 +117,13 @@ Keeping your files on OneDrive, or SharePoint Online, and connecting to them fro
 
 |**Data source**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
-|Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|No|Yes|No|
+|Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|No|Yes|No (see below)|
 |Get Data is used to connect to and explore a live Analysis Services database.|Yes|No|Yes|
 |Get Data is used to connect to and explore a supported on-premises DirectQuery data source.|Yes|No|Yes|
 |Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark.|Yes (hourly)|Yes|No|
 |Get Data is used to connect to and query data from any listed  on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange.|No|Yes|Yes|
+
+> [AZURE.NOTE] If you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, you do need a gateway if you have republished the dataset or your report after  November 18th, 2016.
 
 For details, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](powerbi-refresh-desktop-file-onedrive.md).
 
@@ -167,8 +169,8 @@ Refresh capabilities for a dataset included within an organization content pack 
 
 To learn more, see [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md).
 
-## Live connections and DirectQuery to on-premises data sources 
-With the On-premises Data Gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh. 
+## Live connections and DirectQuery to on-premises data sources
+With the On-premises Data Gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh.
 
 When you configure a data source with the On-premises Data Gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
 

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Refresh a dataset created from a Power BI Desktop file - cloud"
+   pageTitle="Refresh a dataset created from a Power BI Desktop file on OneDrive or SharePoint Online"
    description="Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="01/09/2017"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online
