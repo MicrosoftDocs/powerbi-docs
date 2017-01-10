@@ -18,15 +18,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="01/09/2017"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
 If you'd like to see the data that is used to create a visualization, you can [display that data in Power BI](powerbi-service-reports-see-data.md) or export that data to Excel as a .xlsx or .csv file.   
 
-Watch Amanda export the data used in her dashboard and save it as a .csv file. Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Will export the data from one of the visualizations in his report, save it as an .xlsx file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jtlLGRKBvXY?start=61" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
 
 ## From a visualization on a Power BI dashboard
 
@@ -51,7 +51,7 @@ Watch Amanda export the data used in her dashboard and save it as a .csv file. T
 
     ![](media/powerbi-service-export-data/power-bi-export-data2.png)
 
-   ![](media/powerbi-service-export-data/power-bi-export-data.png)
+    ![](media/powerbi-service-export-data/power-bi-export-data.png)
 
 2. If your visualization has an aggregate, you'll have two options: **Summarized data** and **Underlying data**. For help understanding aggregates, see [Aggregates in Power BI](powerbi-service-aggregates.md).
 
