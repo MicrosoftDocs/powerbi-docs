@@ -17,11 +17,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/07/2016"
+ms.date="01/11/2017"
 ms.author="asaxton"/>
 # Troubleshooting the On-Premises Data Gateway
 
-The following goes through some common issues you may encounter when using the On-premises Data Gateway. 
+This article discusses some common issues you may encounter when using the **On-premises Data Gateway**.
 
 <!-- Shared Community & support links Include -->
 [AZURE.INCLUDE [gateway-onprem-tshoot-support-links-include](../includes/gateway-onprem-tshoot-support-links-include.md)]
@@ -40,7 +40,7 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
     '''
     net stop PBIEgwService
     '''
-    
+
 - To start the service, run this command:
 
     '''
@@ -49,17 +49,17 @@ The gateway runs as a Windows service, so you can start and stop it in multiple 
 
 ### Error: Failed to create gateway. Please try again.
 
-All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details. 
+All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details.
 
 This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making [proxy configuration changes](powerbi-gateway-proxy.md)
 
 ### Error: Failed to update gateway details.  Please try again.
 
-Information was received from the Power BI service, to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception will be displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details. 
+Information was received from the Power BI service, to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception will be displayed under **Show details**. You can collect, and review, the logs, as mentioned below, to get more details.
 
 ### Error: Power BI service reported local gateway as unreachable. Please restart the gateway and try again.
 
-At the end of configuration, the Power BI service will be called again to validate the gateway. The Power BI service does not report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs, as mentioned below, to get more details. 
+At the end of configuration, the Power BI service will be called again to validate the gateway. The Power BI service does not report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs, as mentioned below, to get more details.
 
 ### Script error during sign into Power BI
 
@@ -123,7 +123,7 @@ You can also look in the Event Logs > **Applications and Services Logs** > **On-
 
 We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
 
-Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**. 
+Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**.
 
 If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-onprem-manage-ssas.md#add-a-data-source)
 
@@ -142,7 +142,7 @@ You can confirm this by doing the following.
 2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is tool is normally found on a domain controller. You will need to know what the distinguished domain name is for the account and pass that to the tool.
 
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
-    
+
     You want to see something similar to the following in the results.
 
         	Allow BUILTIN\Windows Authorization Access Group
@@ -181,13 +181,13 @@ This could be because of a few different scenarios.
 
 3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You will need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
 
-> [AZURE.WARNING] If one of your data sources requires OAuth authentication, you will not be able to configure it with the On-Premises Data Gateway. OAuth authentication is not currently supported with the On-Premises Data Gateway. You will need to remove the data source that requires OAuth authentication from Power BI Desktop in order to configured scheduled refresh. 
+> [AZURE.WARNING] If one of your data sources requires OAuth authentication, you will not be able to configure it with the On-Premises Data Gateway. OAuth authentication is not currently supported with the On-Premises Data Gateway. You will need to remove the data source that requires OAuth authentication from Power BI Desktop in order to configured scheduled refresh.
 
 ## Reports
 
 ### Report could not access the data source because you do not have access to our data source via an On-Premises Data Gateway.
 
-This is usually caused by one of the following. 
+This is usually caused by one of the following.
 
 1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the on-premises data gateway, needs to use an IP Address as well.
 
@@ -215,7 +215,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
 
         https://graph.windows.net/me?api-version=1.5
 
-4. Look for **userPrincipalName**. 
+4. Look for **userPrincipalName**.
 
 
 If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](powerbi-gateway-enterprise-manage-ssas.md#map-user-names) feature to replace it with a valid value. Or you can work with either your tenant admin, or local Active Directory admin, to get your UPN changed.
@@ -292,7 +292,7 @@ Here is a listing of the available performance counters.
 
 You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can enable additional logging to output queries and their timings to help understand what is performing slow. When you find a long running query, it may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
 
-You will need to modify two configuration files to determine the duration of a query. 
+You will need to modify two configuration files to determine the duration of a query.
 
 #### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
 
@@ -310,10 +310,10 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file
 
 ```
 DM.EnterpriseGateway Information: 0 : 2016-09-15T16:09:27.2664967Z DM.EnterpriseGateway	4af2c279-1f91-4c33-ae5e-b3c863946c41	d1c77e9e-3858-4b21-3e62-1b6eaf28b176	MGEQ	c32f15e3-699c-4360-9e61-2cc03e8c8f4c	FF59BC20 [DM.GatewayCore] Executing query (timeout=224) "<pi>
-SELECT 
+SELECT
 TOP (1000001) [t0].[ProductCategoryName],[t0].[FiscalYear],SUM([t0].[Amount])
  AS [a0]
-FROM 
+FROM
 (
 (select [$Table].[ProductCategoryName] as [ProductCategoryName],
     [$Table].[ProductSubcategory] as [ProductSubcategory],
@@ -364,12 +364,12 @@ To determine the time it took to query the data source, you can do the following
 
 2. Search for an [Activity Type](#activities) to find the query. An example of this would be MGEQ.
 
-3. Make note of the second GUID as this is the request id. 
+3. Make note of the second GUID as this is the request id.
 
 4. Continue to search for MGEQ until you find the FireActivityCompletedSuccessfullyEvent entry with the duration. You can verify the entry has the same request id. Duration will be in milliseconds.
 
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway	baf40f21-2eb4-4af1-9c59-0950ef11ec4a	5f99f566-106d-c8ac-c864-c0808c41a606	MGEQ	21f96cc4-7496-bfdd-748c-b4915cb4b70c	B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
-    
+
     > [AZURE.NOTE] FireActivityCompletedSuccessfullyEvent is a verbose entry. This entry will not be logged unless TraceVerbosity is at level 5.
 
 <!-- Shared Troubleshooting tools Include -->
@@ -388,6 +388,8 @@ When using the gateway for scheduled refresh, **Refresh History** can help you s
     ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh-2.png)
 
     ![](media/powerbi-gateway-onprem-tshoot/refresh-history.png)
+
+For additional information about troubleshooting refresh scenarios, take a look at the [Troubleshooting Refresh Scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md) article.
 
 ## See also
 

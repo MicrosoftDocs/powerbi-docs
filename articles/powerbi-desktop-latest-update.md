@@ -17,16 +17,16 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/31/2016"
+   ms.date="01/10/2017"
    ms.author="davidi"/>
 
 # What's new in the latest Power BI Desktop update?
 
-## November 2016 Update (2.41.4581.301)
+## January 2017 Update (2.42.4611.482)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-We're especially thankful for our customers this month, and in November, we bring another compelling collection of updates to Power BI Desktop. The links beside each update mean the following:
+We're excited about the fresh new features we're launching this month, as the first update of the new year. The links beside each update mean the following:
 
 -   **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 -   Some features have an **[article]** that provides more detail.
@@ -39,44 +39,30 @@ The following updates are new to Power BI Desktop this month:
 
 ### Report View:
 
--   Hierarchical axis [[video]](https://youtu.be/kERJ_WOLuLk?t=36s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#hierarchicalAxis)
--   Axis label and title color control [[video]](https://youtu.be/kERJ_WOLuLk?t=1m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#axisColor)
--   Matrix conditional formatting [[video]](https://youtu.be/kERJ_WOLuLk?t=2m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#matrixConditionalFormatting)
--   Table and matrix column formatting [[video]](https://youtu.be/kERJ_WOLuLk?t=4m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#columnFormatting)
--   Drop-down slicer [[video]](https://youtu.be/kERJ_WOLuLk?t=5m54s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#dropdownSlicer)
--   Mobile reports scrolling [[video]](https://youtu.be/kERJ_WOLuLk?t=7m7s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#mobileReports)
-
-
-### Analytics
-
--   Clustering (preview) [[video]](https://youtu.be/kERJ_WOLuLk?t=8m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#clustering)
--   Forecasting (now in the **Power BI service**) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#forecasting)
--   Groups (now on the ribbon) [[video]](https://youtu.be/kERJ_WOLuLk?t=13m29s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#groups)
-
+-   Table and matrix conditional formatting improvement - blank formatting [[video]](https://youtu.be/C1-f0T8vZ7M?t=37s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/#conditionalFormatting)
+-   New aggregations for string and dateTime columns [[video]](https://youtu.be/C1-f0T8vZ7M?t=2m50s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/#aggregations)
+-   Table header word wrap [[video]](https://youtu.be/C1-f0T8vZ7M?t=6m38s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/#wordWrap)
+-   General Availability (GA) of Phone reports [[video]](https://youtu.be/C1-f0T8vZ7M?t=7m53s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/#phoneReports)
 
 
 ### Data Connectors:
 
--   New data connectors [[video]](https://youtu.be/kERJ_WOLuLk?t=14m10s):
-    -   Spark DirectQuery [[video]](https://youtu.be/kERJ_WOLuLk?t=14m12s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#spark)
-    -   OData connector improvements [[video]](https://youtu.be/kERJ_WOLuLk?t=15m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#oData)
-    -   Enhanced *combine binaries* experience [[video]](https://youtu.be/kERJ_WOLuLk?t=15m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#combineBinaries)
-    -   Azure Analysis Services [[video]](https://youtu.be/kERJ_WOLuLk?t=17m3s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#azureAnalysisServices)
+-   New or enhanced data connectors [[video]](https://youtu.be/C1-f0T8vZ7M?t=8m47s):
+    -   Visual Studio Team Services connector (Beta) [[video]](https://youtu.be/C1-f0T8vZ7M?t=8m47s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/#visualStudioTeamServices)
+    -   Enhanced SQL Server connector - support for SQL Failover option [[video]](https://youtu.be/C1-f0T8vZ7M?t=9m28s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/#SQLFailover)
 
 ### Query Editing improvements
 
--   Improved *function authoring* experience [[video]](https://youtu.be/kERJ_WOLuLk?t=18m3s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#functionAuthoring)
--   Support for *percentage* data type [[video]](https://youtu.be/kERJ_WOLuLk?t=18m36s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#percentage)
--   Added **Maximize** and **Restore** buttons in **Navigator** and **Query Dependencies** [[video]](https://youtu.be/kERJ_WOLuLk?t=19m16s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#maximize)
+-   New transform: extract values from a nested list [[video]](https://youtu.be/C1-f0T8vZ7M?t=10m19s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/#extractValues)
 
 
 >NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-january-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kERJ_WOLuLk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C1-f0T8vZ7M" frameborder="0" allowfullscreen></iframe>
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
