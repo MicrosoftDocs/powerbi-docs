@@ -1,11 +1,11 @@
 <properties
-   pageTitle="How should I share dashboards and reports?"
+   pageTitle="How should I share dashboards, reports, and tiles?"
    description="In Power BI you can share dashboards, reports, and tiles in several different ways. Each has its advantages."
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
-   manager="mblythe"
-   backup=""
+   manager="erikre"
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
-# How should I share Power BI dashboards and reports?  
+# How should I share Power BI dashboards, reports, and tiles?  
 
 In Power BI you can share dashboards, reports, and tiles in several different ways. Each has its advantages. You can:
 
@@ -31,20 +31,21 @@ In Power BI you can share dashboards, reports, and tiles in several different wa
 - [Share a snapshot of a tile](powerbi-service-how-should-i-share-my-dashboard.md#share-a-snapshot-of-a-tile-from-a-power-bi-mobile-app) from a Power BI mobile app.
 - [Print or save as PDF ](powerbi-service-how-should-i-share-my-dashboard.md#print-or-save-as-PDF-or-other-static-file)or other static file format.
 
-In any case, your colleagues need to [sign up for Power BI](https://powerbi.microsoft.com/) before they can see your dashboards.
-
+In most cases, your colleagues need to [sign up for Power BI](https://powerbi.microsoft.com/) before they can see your dashboards. Depending on the content you want to share, you and they may need Power BI free or Pro licenses.
 Here's a summary of how sharing works, depending on which you do. Details follow below.
 
-| Other people can        | When you: Share a dashboard | When you: Create a dashboard in a group | When you: Publish a content pack | When you: Publish to the web |
-|:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|:-----------------------------|
-| View and interact       | yes                         | yes                                     | yes                              | yes                          |
-| Edit the original       | no                          | yes                                     | no                               | no                           |
-| Create their own copies | no                          | yes                                     | yes                              | no                           |
-| Share with others       | colleagues, yes. others, no | yes                                     | no                               | no                           |
+|        | When you: |  |  |  |  |  |
+|:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|:-----------------------------|:-----------------------------|:-----------------------------|
+| Other people         | Share a dashboard | Create a dashboard in a group | Publish a content pack | Publish to the web | Share a snapshot of a tile | Save as PDF |
+| Can view and interact       | yes                         | yes                                     | yes                              | yes                          | View, not interact | View, not interact |
+| Can edit the original       | no                          | yes                                     | no                               | no                           | no | no |
+| Can create their own copies | no                          | yes                                     | yes                              | no                           | yes | yes |
+| Can share with others       | colleagues, yes. others, no | yes                                     | no                               | no                           | yes | yes |
+| Need a Power BI license       | free or Pro | Pro   | Pro  | none  | none | none |
 
 ## Publish to the web
 
-When you publish Power BI reports to the web, you can embed interactive visuals in blog posts, websites, social media, and other online communications, on any device. Publishing to web is available on reports in your personal workspace that you can edit. You can't publish to the web reports that were shared with you. More about [publishing to the web](powerbi-service-publish-to-web.md).
+When you publish Power BI reports to the web, you can embed interactive visualizations in blog posts, websites, social media, and other online communications, on any device. Publishing to web is available on reports in your personal workspace that you can edit. You can't publish to the web reports that were shared with you, and anyone on the Internet can view your reports. They don't need a Power BI license, but you have no control over who can see your reports. More about [publishing to the web](powerbi-service-publish-to-web.md).
 
 ## Share a dashboard with colleagues and others 
 When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They can see the same data that you see in the dashboard and reports. Your colleagues can share the dashboard with other colleagues, if you allow them to. Those outside your organization can view and interact with the dashboard, but can't share it. More about [sharing a dashboard](powerbi-service-share-unshare-dashboard.md).
@@ -72,9 +73,9 @@ Share a snapshot of a tile from:
 
 ## Print or save as PDF or other static file
 
-You can also print or save as PDF (or other static file format) an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](powerbi-service-print.md).
+You can also print or save as PDF (or other static file format) an entire dashboard, a dashboard tile, a report page, or a report visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](powerbi-service-print.md).
 
-### See also
+## See also
 -   [Share a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md)
 -   [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 -   More questions? [Try the Power BI Community](http://community.powerbi.com/).

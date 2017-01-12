@@ -4,12 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="01/06/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/05/2017"
+   ms.date="01/06/2017"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  

@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="01/06/2017"
    ms.author="maggies"/>
 # Share a tile from the Power BI mobile app for Windows 10
 
@@ -33,10 +33,11 @@ When you share a snapshot of a tile from the [Power BI mobile app for Windows 10
 
 5. Share the tile from any sharing app you have on your Windows 10 device.
 
-### See also
+## See also
 
-[Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
-[Share a dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) from Power BI mobile app for Windows 10  
-[Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
+- [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
+- [Share a dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) from Power BI mobile app for Windows 10  
+- [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
 

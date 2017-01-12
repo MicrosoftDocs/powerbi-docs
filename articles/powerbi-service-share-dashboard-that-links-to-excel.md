@@ -5,7 +5,7 @@
    documentationCenter=""
    authors="ajayan"
    manager="mblythe"
-   backup=""
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
 # Share a dashboard that has links to an Excel workbook
 
@@ -48,7 +48,7 @@ To share a dashboard that links back to an Excel workbook on OneDrive for Busine
 
 
 ## Create a content pack with a dashboard that contains workbook tiles
-When you [publish a content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md) you give access to individual colleagues or groups. The steps for publishing a content pack that contains workbook links is that you'll have the option to modify the permissions for the linked Excel workbook before publishing.
+When you [publish a content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md) you give access to individual colleagues or groups. When you publish a content pack that contains workbook links, you'll have the option to modify the permissions for the linked Excel workbook before publishing.
 
 1. In the **Create content pack** screen, enter email addresses, give the content pack a title and description, and upload an image.
 
