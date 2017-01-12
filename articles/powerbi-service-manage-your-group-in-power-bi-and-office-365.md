@@ -4,8 +4,8 @@
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
-   backup=""
+   manager="erikre" 
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/28/2016"
+   ms.date="01/06/2017"
    ms.author="ajayan"/>
 # Manage your group in Power BI and Office 365
 
@@ -27,14 +27,14 @@ As creator or admin of a group in Power BI or in Office 365, you manage some asp
 
 **In Power BI** you can:
 
--   Add or remove a group member, including making a group member an admin.
+-   Add or remove group members, including making a group member an admin.
 -   Edit the group name.
 -   Make it so group members can only read and not edit content in the group.
 -   Delete the group.
 
 **In Office 365** you can:
 
--   Add or remove members, including making a member an admin.
+-   Add or remove group members, including making a member an admin.
 -   Edit the group name, image, description, and other settings.
 -   See the group email address.
 -   Delete the group.
@@ -102,8 +102,10 @@ When you create an [organizational content pack](powerbi-service-organizational-
 
 3.  Now when you create an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md), select **Specific groups** and paste your group's email address in the box.  
 
-    When the group members can go **Get Data** > **My organization**, they'll find your content pack there.
+    When the group members go to **Get Data** > **My organization**, they'll find your content pack there.
 
-### See also
-[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+## See also
 
+
+- [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)
