@@ -21,6 +21,12 @@
    ms.author="maggies"/>
 # View dashboards in the Power BI mobile apps
 
+Applies to:
+
+| ![iPhone](media/powerbi-mobile-create-dashboard/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-create-dashboard/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-create-dashboard/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-create-dashboard/android-tablet-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-create-dashboard/win-10-logo-50-px.png) |
+|:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
+| iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
+
 Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business.
 
 ## Create dashboards in the Power BI service
@@ -244,7 +250,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    
      ![](media/powerbi-mobile-create-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
 
-## View dashboards in landscape mode
+### View dashboards in landscape mode on your Windows 10 phone
 You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
 
 ![](media/powerbi-mobile-create-dashboard/PBI_iPh_Landscape.png)
