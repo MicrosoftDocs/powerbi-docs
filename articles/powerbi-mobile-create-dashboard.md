@@ -244,7 +244,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    
      ![](media/powerbi-mobile-create-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
 
-## View dashboards in landscape mode
+### View dashboards in landscape mode on your Windows 10 phone
 You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
 
 ![](media/powerbi-mobile-create-dashboard/PBI_iPh_Landscape.png)
