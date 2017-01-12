@@ -17,20 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="01/09/2017"
    ms.author="mihart"/>
 
 # Reveal the data behind the visual
 
-## Using *See Data* in Power BI service
+## See Data
 
-A Power BI visual is constructed using data from your datasets. If you're interested in seeing behind-the-scenes, Power BI lets you display the data that is being used to create the visual.   
+A Power BI visualization is constructed using data from your datasets. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **See Data**, Power BI displays the data below (or next to) the visualization.
 
-## Using *Export data* in Power BI service
 You can also export the data that is being used to create the visualization as an .xlsx or .csv file and view it in Excel. For more information, see [Export data from Power BI visualizations](powerbi-service-export-data.md).
 
-[AZURE.NOTE] *See Data* and *Export Data* are both available in Power BI service and Power BI Desktop. However, Power BI Desktop provides one additional layer of detail; [*See Records* displays the actual rows from the dataset](powerbi-desktop-see-data-see-records.md).
+>  [AZURE.NOTE] *See Data* and *Export Data* are both available in Power BI service and Power BI Desktop. However, Power BI Desktop provides one additional layer of detail; [*See Records* displays the actual rows from the dataset](powerbi-desktop-see-data-see-records.md).
 
+
+## Using *See Data* in Power BI service
 1.  In Power BI service, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md), and select a visual.  In Power BI Desktop, open Report view.
 
 2.  To see the data behind the visual, select **Explore** > **See data**.
