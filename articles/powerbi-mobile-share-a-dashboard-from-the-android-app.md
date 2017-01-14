@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="01/13/2017"
    ms.author="maggies"/>
 # Share a dashboard from the Android mobile phone app for Power BI
 
@@ -60,7 +60,7 @@ Only the dashboard owner can unshare a dashboard.
 
 2.   To stop sharing the dashboard with a colleague, tap the **X** next to a name \> **Remove**.
 
-### See also
+## See also
 
 - [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play
 - [Annotate and share a tile from the Android app](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md)
