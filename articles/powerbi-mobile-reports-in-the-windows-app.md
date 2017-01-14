@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Reports in the Power BI mobile app for Windows 10"
-   description="Learn about viewing reports in the Power BI mobile app for Windows 10. You create reports in the Power BI service, then interact with them in the mobile apps. "
+   description="Learn about viewing reports in the Power BI mobile app for Windows 10. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps. "
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2016"
+   ms.date="01/13/2017"
    ms.author="maggies"/>
 # Reports in the Power BI mobile app for Windows 10
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com).
+A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com)or in [Power BI Desktop](powerbi-desktop-report-view.md). When you create reports in Power BI Desktop, you can create [a version of the report optimized for phones](powerbi-mobile-view-phone-report.md).
 
 Then you view and interact with those reports in the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
 
@@ -131,8 +131,9 @@ In charts with up and down arrows in the upper corners, you can drill down to se
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-report-breadcrumb.png)
 
-### See also
+## See also
 
-- [Get started with the Power BI app for Windows 10 devices](powerbi-service-windows-app-get-started.md)
+- [View and interact with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
+- [Create a version of a report optimized for phones](powerbi-desktop-create-phone-report.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
