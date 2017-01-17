@@ -217,6 +217,10 @@ After you select **Sign in**, you will see the elements from your Reporting Serv
 
 ![](media/powerbi-mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
+## Multi-factor authentication
+
+You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Secure your cloud and on-premises resources using Azure Multi-Factor Authentication Server with AD FS in Windows Server 2012 R2](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-adfs-w2k12)
+
 ## Troubleshooting
 
 **You receive the error Failed to login to SSRS server. Please verify server configuration.**
