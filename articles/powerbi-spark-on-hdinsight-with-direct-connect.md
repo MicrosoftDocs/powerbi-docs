@@ -53,7 +53,7 @@ These restrictions and notes may change as we continue to improve the experience
 
 5. Once connected, you'll see a new dataset with named “SparkDataset”. You can also access the dataset through the placeholder tile that is created.
 
- 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-dataset.PNG)
+ 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-dataset.png)
 
 6. Drilling into the dataset, you can explore all of the tables and columns in your database. Selecting a column will send a query back to the source, dynamically creating your visual. These visuals can be saved in a new report, and pinned back to your dashboard.
 
