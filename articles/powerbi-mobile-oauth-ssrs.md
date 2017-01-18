@@ -17,11 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/17/2017"
+   ms.date="01/18/2017"
    ms.author="asaxton"/>
 # Using OAuth to connect to Reporting Services
 
 Learn how to configure your environment to support OAuth authentication with the Power BI mobile app in order to connect to Reporting Services 2016 or later.
+
+![](media/powerbi-mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
 In the past, the Power BI mobile app only supported basic authentication, over HTTPS, to Reporting Services in order to display Mobile Reports or KPIs. Many organizations do not allow this type of configuration due to security concerns. With an update to the Power BI mobile app, you can now use OAuth to connect to Reporting Services. Windows Server 2016 provides some improvements to the Web Application Proxy role to allow this type of authentication.
 
