@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2017"
+   ms.date="01/18/2017"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
@@ -55,10 +55,9 @@ Watch Will export the data from one of the visualizations in his report, save it
 2. If your visualization has an aggregate, you'll have two options: **Summarized data** and **Underlying data**. For help understanding aggregates, see [Aggregates in Power BI](powerbi-service-aggregates.md).
 
     -  **Summarized data**: select this option if you don't have an aggregate or if you do have an aggregate but don't want to see the complete breakdown. Summarized data is available as .xlsx and .csv. When you select  **Export**, the data is exported to either an .xlsx or .csv file and your browser prompts you to save the file. Once saved, open the file in Excel.
+       In this example, our Excel export shows one total per month.
 
-    In this example, our Excel export shows one total per month.
-
-    ![](media/powerbi-service-export-data/power-bi-export-summarized.png)
+       ![](media/powerbi-service-export-data/power-bi-export-summarized.png)
 
     -  **Underlying data**: select this option if your visualization does have an aggregate and you'd like to see all the underlying details. In the example below, our visualization is using the **sum** of **Profit**. Underlying data is available as .xlsx. When you select **Export**, the data is exported to an .xlsx file and your browser prompts you to save the file. Once saved, open the file in Excel.
 
