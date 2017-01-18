@@ -17,7 +17,7 @@
     ms.topic="article"
     ms.tgt_pltfrm="NA"
     ms.workload="powerbi"
-    ms.date="07/12/2016"
+    ms.date="01/11/2017"
     ms.author="davidi"/>
 
 # Get data from Excel workbook files
@@ -27,7 +27,7 @@ Microsoft Excel is one of the most widely used business applications around. Itâ
 
 ## What types of workbooks does Power BI support?
 
-Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Workbooks must be saved as .xlsx or .xlsm file type and be under 250 MB. Some features described in this article are only available in later versions of Excel.
+Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Workbooks must be saved as .xlsx or .xlsm file type and be under 1 GB. Some features described in this article are only available in later versions of Excel.
 
 #### Workbooks with ranges or tables of data
 
@@ -36,6 +36,9 @@ If your workbook has simple worksheets with ranges of data, to get the most out 
 #### Workbooks with data models
 
 Workbooks can contain a data model with one or more tables of data loaded into it by using linked tables, Power Query (Get & Transform in Excel 2016), or Power Pivot. Power BI supports all data model properties such as relationships, measures, hierarchies, and KPIs.
+
+>   Note: Workbooks with data models cannot be shared across Power BI tenants. For example, a user who logs in to Power BI using a *contoso.com* account cannot share an Excel workbook with a user who logs in using a Power BI login account from *woodgrovebank.com*.
+
 
 #### Workbooks with connections to external data sources
 

@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="11/15/2016"
    ms.author="mihart"/>
 # Interact with a report in Editing View in Power BI
 
@@ -80,3 +80,5 @@ Go back to Power BI [report Reading View](powerbi-service-interact-with-a-report
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

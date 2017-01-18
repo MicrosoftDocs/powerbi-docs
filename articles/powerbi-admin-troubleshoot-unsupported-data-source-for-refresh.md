@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="12/07/2016"
    ms.author="asaxton"/>
 
 # Troubleshooting unsupported data source for refresh  
@@ -47,12 +47,9 @@ If you aren’t sure what data source was used, you can find that using the foll
 
 ## See Also
 
-[Data Refresh](powerbi-refresh-data.md)
-
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)
-
-[On-premises Data Gateway](powerbi-gateway-onprem.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
-
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[Data Refresh](powerbi-refresh-data.md)  
+[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
+[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

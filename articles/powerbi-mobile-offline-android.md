@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,24 +17,28 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="12/02/2016"
    ms.author="maggies"/>
 
 # View your data offline in the Power BI mobile apps
 
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. By default, Power BI refreshes the data frequently so you get up-to-date answers to your business questions any time, even while commuting or roaming.
 
-> **Note**: Offline is currently available on iOS devices and Android phones, but not yet on Windows 10 devices.
-
 ## Data access while you're offline
 
-While you're offline, you can access and interact with all of the dashboards in your **My Workspace**, as well as any dashboard you've accessed previously from the mobile app.
+While you're offline, you can access and interact with dashboards you've accessed previously from the mobile app.
 
 You also have read-only access to any Power BI reports you've accessed previously from the mobile app. You can see the full report, but not filter, cross-filter, sort, or use slicers on it.
 
-Power BI runs a scheduled refresh process every two hours while you're online. That way, when you view it offline the data is as up-to-date as possible, even if you didn't manually refresh it or view it before going offline. 
+## Background data refresh
 
-You can turn off scheduled refresh, for example to avoid network usage. Check the settings on your device.
+Background refresh updates your favorite dashboards, plus dashboards and reports you've viewed in the last two weeks, with the data on the Power BI service (not the data source). If you're connected to wi-fi, background refresh updates every 2 hours. Otherwise, if you’re on a 3G network, Power BI updates the content every 24 hours.
+
+You can turn off background refresh, for example to avoid network usage. Check the settings on your device.
+
+>**Note**: If you use the Power BI mobile app on an iOS device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
+>
+>Read more about [configuring Power BI mobile apps with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
 ## Offline indicators
 

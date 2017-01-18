@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/24/2016"
+   ms.date="01/13/2017"
    ms.author="maggies"/>
 
 # View report page tiles in the Power BI for Android app
@@ -26,18 +26,14 @@ When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI ser
 
 1.  When you open a [dashboard in the Android app](powerbi-mobile-dashboards-in-the-android-app.md), you see a small image of the report.
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-android-app/pbi_and_livetile.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-android-app/power-bi-android-report-tile.png)
 
 2. Tap the tile. The pinned live report page opens in landscape mode. 
 
-    ![](media/powerbi-mobile-report-page-tiles-in-the-android-app/pbi_and_livetile_open.png)
+    ![](media/powerbi-mobile-report-page-tiles-in-the-android-app/power-bi-android-report-tile-open-report.png)
 
--   Tap the **X** to close the tile and return to the dashboard.
+## See also
 
-### See also
+- [Tiles in the Android app](powerbi-mobile-tiles-in-the-android-app.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
-[Tiles in the Android app](powerbi-mobile-tiles-in-the-android-app.md)
-
-[Get started with the Power BI for Android app](powerbi-mobile-android-app-get-started.md)
-
-[Get started with Power BI](powerbi-service-get-started.md)

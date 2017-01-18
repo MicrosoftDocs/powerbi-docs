@@ -1,11 +1,11 @@
 <properties
    pageTitle="Share a dashboard that links to an Excel workbook on OneDrive for Business"
-   description="Share a dashboard that has links to an Excel workbook on OneDrive for Business."
+   description="Read about sharing dashboards connected to an Excel workbook on OneDrive for Business, with tiles pinned from that workbook."
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
    manager="mblythe"
-   backup=""
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/18/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
 # Share a dashboard that has links to an Excel workbook
 
@@ -48,7 +48,7 @@ To share a dashboard that links back to an Excel workbook on OneDrive for Busine
 
 
 ## Create a content pack with a dashboard that contains workbook tiles
-When you [publish a content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md) you give access to individual colleagues or groups. The steps for publishing a content pack that contains workbook links is that you'll have the option to modify the permissions for the linked Excel workbook before publishing.
+When you [publish a content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md) you give access to individual colleagues or groups. When you publish a content pack that contains workbook links, you'll have the option to modify the permissions for the linked Excel workbook before publishing.
 
 1. In the **Create content pack** screen, enter email addresses, give the content pack a title and description, and upload an image.
 
@@ -71,10 +71,8 @@ Sharing a dashboard from a Power BI group is similar to sharing a dashboard from
 
 ### See also
 
-[Pin a tile to a Power BI dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
-
-[Dashboards in Power BI](powerbi-service-dashboards.md)
-
-[Get Started with Power BI](powerbi-service-get-started.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+- [Pin a tile to a Power BI dashboard from Excel](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+- [Dashboards in Power BI](powerbi-service-dashboards.md)
+- [Get Started with Power BI](powerbi-service-get-started.md)
+- [Power BI Basic Concepts](powerbi-service-basic-concepts.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)

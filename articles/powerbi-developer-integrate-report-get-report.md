@@ -3,12 +3,12 @@
    description="Walkthrough to Integrate a report into an app - Get a Power BI report"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
-   manager="mblythe"
+   authors="guyinacube"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="no"
    qualityDate=""/>
 
 <tags
@@ -17,8 +17,8 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
-   ms.author="derrickv"/>
+   ms.date="12/07/2016"
+   ms.author="asaxton"/>
 
 # Step 2: Get a report
 
@@ -199,10 +199,11 @@ To integrate a report into an app, you load a report into an IFrame. In the next
 
 ## See also
 
--	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
--	[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)
--	[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)
--	[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)
--	[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)
--	[Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md)
+[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
+[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
+[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)  
+[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
+[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)  
+[Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

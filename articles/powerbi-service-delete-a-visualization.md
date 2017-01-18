@@ -17,9 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/25/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 # Delete a visualization in Power BI
+
+## Delete a visualization
 
 1.  In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) and [create a visualization](powerbi-service-add-visualizations-to-a-report-i.md) if your report doesn't already have one. 
 
@@ -34,3 +36,5 @@
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

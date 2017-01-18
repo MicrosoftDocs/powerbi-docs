@@ -1,25 +1,25 @@
-﻿<properties 
+﻿<properties
    pageTitle="Microsoft Dynamics CRM content pack"
    description="Microsoft Dynamics CRM content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2016"
-   ms.author="tpalmer"/>
-   
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
+
 # Microsoft Dynamics CRM content pack for Power&nbsp;BI
 
 The Microsoft Dynamics CRM Online content packs for Power BI allows you to easily access and analyze your data. The content pack uses the OData feed to create a descriptive model, with all the entities and measures needed such as Accounts, Activities, Opportunities, Product, Leads, Users and more. 
@@ -65,11 +65,11 @@ Note: this content pack requires **Microsoft Dynamics CRM Online 2016 or later**
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
-The sections below detail what's included for the [Sales Manager](#Sales) and [Service Manager](#Service) content packs. 
+The sections below detail what's included for the [Sales Manager](#Sales) and [Service Manager](#Service) content packs.
 
-Note that data in addition is limited based on the security role assigned to the Dynamics CRM Online user . 
- 
-The content pack is meant to provide operational reporting on near term data with focus on a team or group. Each query is limited to retrieve a maximum of 100K records from Dynamics CRM Online. If this limit is exceeded due to high volume of data in your organization, content pack provisioning will fail as data refresh Dynamics CRM online will be terminated. If your account is too large, please consider connecting through the Power BI Desktop to build a custom solution. 
+Note that data in addition is limited based on the security role assigned to the Dynamics CRM Online user .
+
+The content pack is meant to provide operational reporting on near term data with focus on a team or group. Each query is limited to retrieve a maximum of 100K records from Dynamics CRM Online. If this limit is exceeded due to high volume of data in your organization, content pack provisioning will fail as data refresh Dynamics CRM online will be terminated. If your account is too large, please consider connecting through the Power BI Desktop to build a custom solution.
 
 <a name="Sales"></a>
 ### Sales Manager
@@ -80,28 +80,28 @@ This content pack contains key metrics such as:
 -   Lost revenue   
 -   Expected Revenue  
 -   Average Deal Size and more.  
- 
+
 It also contains key charts such as:  
 -   Won and Lost Revenue Trend, Won Revenue Vs Estimated Revenue Trend  
 -   Won Revenue by various dimensions such as Industry, Region, Territory   
 -   Sales Leaders By Revenue, Activities,   
 -   Top Accounts, Top Won/Lost Deals,    
 -   New Leads Trend, Sales Pipeline and more.   
- 
-These metrics and charts help to understand your sales organization performance and analyze sales pipeline across your sales team. 
 
-Following table lists the CRM entities available in this content pack and also gives details on the filters applied to each of the entity records. 
+These metrics and charts help to understand your sales organization performance and analyze sales pipeline across your sales team.
+
+Following table lists the CRM entities available in this content pack and also gives details on the filters applied to each of the entity records.
 
 | CRM Entity |	Filters applied|
-|---|---| 
+|---|---|
 |Account  |	All accounts which have related opportunities that have been modified in the last 365 days. |
 |Activity |	All activities modified in the last 90 days <br> [modifiedon] > today - 90 days |
-|Business Unit |	All business units which are not disabled <br> [isdisabled] = false | 
-|Lead | 	All leads modified in the last 180 days <br> [modifiedon] > today - 180 days | 
-|Opportunity | 	All opportunities modified in last 365 days <br> [modifiedon] > today - 365 days | 
-|Opportunity Product | 	All opportunity products modified in last 365 days <br> [modifiedon] > today - 365 days | 
-|Product |	All active products <br> [statecode] <> 1 | 
-|Territory |	All territories | 
+|Business Unit |	All business units which are not disabled <br> [isdisabled] = false |
+|Lead | 	All leads modified in the last 180 days <br> [modifiedon] > today - 180 days |
+|Opportunity | 	All opportunities modified in last 365 days <br> [modifiedon] > today - 365 days |
+|Opportunity Product | 	All opportunity products modified in last 365 days <br> [modifiedon] > today - 365 days |
+|Product |	All active products <br> [statecode] <> 1 |
+|Territory |	All territories |
 | User | 	All active users and not delegated admins <br>  [isdisabled] = false and [accessmode] <> 4 |
 
 <a name="Service"></a>
@@ -114,19 +114,19 @@ This content pack contains key metrics such as:
 -   Total Resolved Cases  
 -   Total Active Cases  
 -   Number of Times KB Article Used in cases and more.    
- 
+
 It also contains key charts such as:   
 -   Case Volume Trends for Incoming Cases, Resolved Cases, Escalated Cases   
 -   Case Volume by various dimensions such as Origin, Location, Priority, Type  
 -   Leaders by CSAT percentage, SLA met percentage, Activities, Resolved cases  
 -   Most Used and Most viewed KB Articles and more.  
-  
-These metrics and charts help to understand your support organization performance and analyze active cases workload across your service team and service queues. 
+ 
+These metrics and charts help to understand your support organization performance and analyze active cases workload across your service team and service queues.
 
-Following table lists the CRM entities available in this content pack as well as details on the filters applied to each of the entity records. 
-  
+Following table lists the CRM entities available in this content pack as well as details on the filters applied to each of the entity records.
+
 | CRM Entity |	Filters applied|
-|---|---| 
+|---|---|
 |Account  |	All accounts which have related cases that have been modified in the last 90 days. |
 |Activity | All activities modified in the last 90 days <br> [modifiedon] > today - 90 days |  
 |Case | All cases modified in the last 90 days <br> [modifiedon] > today - 90 days |  
@@ -137,23 +137,23 @@ Following table lists the CRM entities available in this content pack as well as
 |Queue |All active queues  <br> [statecode] = 0 |  
 |Queue Item | All case related queue items created on the past 365 days  <br> [createdon] > today - 365 days and <br> [objecttypecode] = 112 |  
 |User | All active users <br>  [isdisabled] = false |  
-  
+
 
 <a name="Requirements"></a>
 ## System requirements
 
 -   A valid Dynamics CRM Online 2016 or later instance (the content pack will not work with an on-premises CRM version). If you do not have 2016 or later
 
--   An administrator must enable the OData endpoint in the site settings. 
+-   An administrator must enable the OData endpoint in the site settings.
 
--   An account with less than 100k records in any of the tables. Note if the account has access to more than 100k records the import will fail. 
+-   An account with less than 100k records in any of the tables. Note if the account has access to more than 100k records the import will fail.
 
 <a name="FindingParams"></a>
 ## Finding parameters
 
-The address of the instance can be found in the URL bar of your browser. It typically has the format: `https://[instance_name].crm.dynamics.com`. 
+The address of the instance can be found in the URL bar of your browser. It typically has the format: `https://[instance_name].crm.dynamics.com`.
 
-Note: only Dynamics CRM 2016 endpoints are supported in the content pack. The content pack will not work with earlier versions of CRM Online, please use the Power BI Desktop to connect directly to your account. 
+Note: only Dynamics CRM 2016 endpoints are supported in the content pack. The content pack will not work with earlier versions of CRM Online, please use the Power BI Desktop to connect directly to your account.
 
 ## Troubleshooting
 
@@ -162,13 +162,13 @@ If you're having trouble connecting, please confirm:
 - the instance is CRM Online 2016  
 - the OData endpoint is enabled  
 
-You may also try connecting directly in the PBI Desktop, with the OData URL https://[instance_name].crm.dynamics.com/api/data/v8.0/`. 
+You may also try connecting directly in the PBI Desktop, with the OData URL https://[instance_name].crm.dynamics.com/api/data/v8.0/`.
 
 If you confirm you have Dynamics CRM Online 2016, however you're still hitting issues connecting, please contact your CRM Admin to confirm you have all available updates.
 
-If you do not have CRM Online 2016 or later, please use the Power BI Desktop to connect directly to your account. 
+If you do not have CRM Online 2016 or later, please use the Power BI Desktop to connect directly to your account.
 
-If you see an error "Data refresh failed as query exceeded the maximum limit of 100000 records.", please consider connecting directly from the Power BI Desktop or leveraging the CRM solution template. 
+If you see an error "Data refresh failed as query exceeded the maximum limit of 100000 records.", please consider connecting directly from the Power BI Desktop or leveraging the CRM solution template.
 
 
 ### See also
@@ -176,7 +176,3 @@ If you see an error "Data refresh failed as query exceeded the maximum limit of 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-
-
-

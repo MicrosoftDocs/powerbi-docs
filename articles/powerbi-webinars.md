@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2016"
+   ms.date="12/07/2016"
    ms.author="maikelson"/>
 
 # Power BI webinars
@@ -27,12 +27,9 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[R for the masses with Power BI - 8/18/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-18-PowerBI-R-for-Masses-Registration.html?Is=Website)
+[Managing data and applications just got easier with PowerApps Environments by James Oleinik - 10/27/16](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-27-Managing-data-and-applications-just-got-easier-267380_Registration.html?Is=Website)
 
-[Row Level Security by Reza Rad - 8/23/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-23-PowerBI-Row-Level-Security-Registration.html?Is=Website)
-
-[Finding and transforming data with Power Query in Excel and Power BI Desktop by Greg Low - 8/25/16](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-25-PowerQuery-PowerBI-Registration.html?Is=Website)
-
+[Big Data with Power BI, HDInsight and Datameer by Andrew Brust - 11/01/16](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-01-Big-Data-with-Power-BI-HDInsight-and-Datameer-265554.html?Is=Website)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -40,18 +37,21 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
-[Power BI Embedded Deep Dive - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
+[Creating and Customizing your Application with PowerApps by Laura Onu - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-20-Creating-and-Customizing-your-Application-with-PowerApps-265168_Registration.html?Is=Website)
 
-[Using Power BI to build Financial Dashboards by Avi Singh - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
+[Dashboard Makeover - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-13-Dashboard-Makeover-262061_Registration.html?Is=Website)
 
-[Predictive Analytics in Education and Consumer Goods Using Power BI with Machine Learning - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-26-PowerBI-MachineLearning-Registration.html?Is=Website)
+[Getting Started with Microsoft Flow by Sunay Vaishnav - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-11-Getting-Started-with-Microsoft-Flow-262061.html?Is=Website)
 
-[Power BI Mobile - Answering Your Business Questions - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-21-PowerBI-Mobile-Registration.html?Is=Website)
+[Leveraging SharePoint Data with PowerApps Webinar by James Oleinik - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-06-Leveraging-SharePoint-Data-with-PowerApps-257924.html?Is=Website)
 
-[Using Power BI to Track Development by Simon Sabin - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-07Jul-19-PowerBI-Track-Development-Registration.html?Is=Website)
+[Getting started using R in Power BI by Stacia Varga - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-04-Getting-started-using-R-in-Power-BI-by-Stacia-Varga-257924.html?Is=Website)
 
+[What's New and Exciting in Power BI - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-08-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
 ###  Introductory webinars
+
+[What's New and Exciting in Power BI - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-08-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
 [What's New and Exciting in Power BI - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
@@ -60,6 +60,10 @@ Watch our latest webinars on-demand.
 [What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
 
 ### Intermediate webinars
+
+[Adam and Chuck Show the Best of Power BI - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-15-Real-Sociedad-Registration.html?Is=Website)
+
+[R for the masses with Power BI - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-18-PowerBI-R-for-Masses-Registration.html?Is=Website)
 
 [Power BI Embedded Deep Dive - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Aug-09-PowerBI-Embedded-Deep-Dive-Registration.html?Is=Website)
 
@@ -90,6 +94,18 @@ Watch our latest webinars on-demand.
 [Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
 
 ### Community webinars
+
+[Dashboard Makeover - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-13-Dashboard-Makeover-262061_Registration.html?Is=Website)
+
+[Getting started using R in Power BI by Stacia Varga - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-04-Getting-started-using-R-in-Power-BI-by-Stacia-Varga-257924.html?Is=Website)
+
+[Power BI and Azure ML - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-20-PowerBI-Azure-ML_Registration.html?Is=Website)
+
+[Getting Started with Custom Visuals by Kevin Feasel - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-13-Getting-Started-with-Custom-Visuals-Registration.html?Is=Website)
+
+[Finding and transforming data with Power Query in Excel and Power BI Desktop by Greg Low - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-25-PowerQuery-PowerBI-Registration.html?Is=Website)
+
+[Row Level Security by Reza Rad - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-23-PowerBI-Row-Level-Security-Registration.html?Is=Website)
 
 [Using Power BI to build Financial Dashboards by Avi Singh - August 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-08Aug-16-PowerBI-Financial-Dashboards-Registration.html?Is=Website)
 
@@ -146,6 +162,14 @@ Watch our latest webinars on-demand.
 [Power BI Content Pack for Twilio](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05Nov15-TwilioPowerBIContentPack-Register.html?Is=Website)
 
 ### Other webinars
+
+[Creating and Customizing your Application with PowerApps by Laura Onu - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-20-Creating-and-Customizing-your-Application-with-PowerApps-265168_Registration.html?Is=Website)
+
+[Getting Started with Microsoft Flow by Sunay Vaishnav - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-11-Getting-Started-with-Microsoft-Flow-262061.html?Is=Website)
+
+[Leveraging SharePoint Data with PowerApps Webinar by James Oleinik - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-06-Leveraging-SharePoint-Data-with-PowerApps-257924.html?Is=Website)
+
+[Increase operational performance and data visibility using the Common Data Model and PowerApps - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-14-PowerApps-Registration.html?Is=Website)
 
 [Introduction to Microsoft PowerApps - May 2016](https://info.microsoft.com/CO-PowerApps-WBNR-FY16-05May-Intro-to-PowerApps-CLE-Registration.html?Is=Website)
 

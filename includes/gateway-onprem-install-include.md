@@ -2,7 +2,7 @@
 
 The data gateway installs and runs on your computer. It is best to install the gateway on a machine that can be left running all the time.
 
-> **Note:** The gateway is supported only on 64-bit Windows operating systems.
+> [AZURE.NOTE] The gateway is supported only on 64-bit Windows operating systems.
 
 For Power BI, the first choice you have to make is the mode of the gateway.
 
@@ -10,7 +10,7 @@ For Power BI, the first choice you have to make is the mode of the gateway.
 
 -	**Personal:** This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh. This will launch the installation of the personal gateway.
 
-> **Note:** If you install the gateway in personal mode, you will not be able to install another gateway on the same machine. 
+> [AZURE.NOTE] If you install the gateway in personal mode, you will not be able to install another gateway on the same machine. 
 
 ![on-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
 
@@ -34,9 +34,9 @@ After you are signed in, you will have the option to configure a new gateway, or
 
 2.	Enter a **recovery key**. This has to be a minimum of 8 characters.
 
-3.	Select **Confgure**.
+3.	Select **Configure**.
 
-> **Note:** The recovery key will be needed if you ever need to migrate, restore or take over a gateway. Be sure to keep this key in a safe place.
+> [AZURE.NOTE] The recovery key will be needed if you ever need to migrate, restore or take over a gateway. Be sure to keep this key in a safe place.
 
 ![on-prem-data-gateway-install-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
 
@@ -48,6 +48,6 @@ You will need to select the gateway you want to recover and supply the recovery 
 
 Once the gateway is configured, you will be able to make use of it to connect to on-premises data sources. 
 
-If the gateway is for Power BI, you will need to add your data sources to the gateway within the Power BI service. For PowerApps, you will need to select a gateway for a defined connection for supported data sources.
+If the gateway is for Power BI, you will need to add your data sources to the gateway within the Power BI service. This is done within the **Manage gateways** area. You can refer to the manage data sources articles for more information. 
 
-For Flow and Logic Apps, this gateway is ready to be used with your on-premises connections 
+For PowerApps, you will need to select a gateway for a defined connection for supported data sources. For Flow and Logic Apps, this gateway is ready to be used with your on-premises connections.

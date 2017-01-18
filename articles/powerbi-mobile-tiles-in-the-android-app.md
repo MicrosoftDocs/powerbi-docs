@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="11/30/2016"
    ms.author="maggies"/>
 
 # Tiles in the Android app for Power BI  
@@ -50,7 +50,7 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
 5. Tap **Open report** to [view the report](powerbi-mobile-reports-in-the-android-app.md) in the mobile app.
 
-6. Sometimes the report creator has added a link to a tile. If so, when you tap the ellipsis you see **Open link**:
+6. Sometimes the dashboard creator has added a link to a tile. If so, when you tap the ellipsis you see **Open link**:
 
     ![](media/powerbi-mobile-tiles-in-the-android-app/pbi_andr_tileellips_link.png)
 

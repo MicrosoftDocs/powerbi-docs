@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="10/10/2016"
    ms.author="asaxton"/>
 
 # Capturing additional diagnostic information for Power BI  
@@ -53,3 +53,5 @@ These instructions provide two potential options for manually collecting additio
     The HAR file will contain all the information about network requests between the browser window and Power BI.  This will include the activity IDs for each request, the precise timestamp for each request, and any error information returned to the client.  This trace will also contain the data used to populate the visuals shown on the screen.
 
 9. You can provide the HAR file to support for review.
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

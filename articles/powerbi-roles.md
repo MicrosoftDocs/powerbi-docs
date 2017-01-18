@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="12/07/2016"
    ms.author="brpoll"/>
    
 # Whatever your role, Power BI brings all your data together

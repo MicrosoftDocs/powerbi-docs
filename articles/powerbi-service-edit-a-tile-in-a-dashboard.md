@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # Edit a tile -- resize, move, rename, pin, delete, add hyperlink
@@ -27,31 +27,36 @@ You can change the look and default behavior of a tile in a dashboard.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
+This article covers the following.
 
--   [Pin the tile to a different dashboard](#different)
+-   [Pin a tile to a different dashboard](#different)
 
--   [Rename the tile](#rename)
+-   [Rename a tile](#rename)
 
--   [Move the tile](#move)
+-   [Move a tile](#move)
 
--   [Resize the tile](#resize)
+-   [Resize a tile](#resize)
 
 -   [Add a hyperlink to a tile](#hyperlink)
 
--   [Delete the tile](#delete)
+-   [Delete a tile](#delete)
 
->**Note**: To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](powerbi-service-dashboard-tiles.md).
+    >[AZURE.NOTE] To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](powerbi-service-dashboard-tiles.md).
 
-1. In a [dashboard](powerbi-service-dashboards.md), [get data ](powerbi-service-get-data.md)and add a tile. 
+##  How to begin   
 
-	![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_DashTile.png)
+1.  In a [dashboard](powerbi-service-dashboards.md), [get data ](powerbi-service-get-data.md), and add a tile. 
 
-2. Hover over a dashboard tile and:
+    ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_DashTile.png)
+
+2.  Hover over a dashboard tile and select the ellipses to display the options.
+
+    ![](media/powerbi-service-edit-a-tile-in-a-dashboard/power-bi-tile-menu.png)
 
 <a name="different"></a>
-### Pin the tile to a different dashboard
+## Pin the tile to a different dashboard
 
-1.  Select the pin icon ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pinNoOutline.png) .
+1.    Select the pin icon ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pinNoOutline.png) .
 
 2.  Decide whether to pin to an existing dashboard or to a new dashboard. 
 
@@ -59,43 +64,45 @@ You can change the look and default behavior of a tile in a dashboard.
 
 3.  Select **Pin**.
 
+****
 <a name="rename"></a>
-### Rename the tile
+## Rename the tile
 
 -   Select the pencil icon   ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)  to edit the tile title.
 
+****
 <a name="move"></a>
-### Move the tile
+## Move the tile
 
 -   Select and hold the tile to drag it to a new location on the dashboard canvas.
 
+****
 <a name="resize"></a>
-### Resize the tile
+## Resize the tile
 
 You can make tiles many different sizes -- from 1x1 tile units up to 5x5.
 
--   Select and drag the handle  (in the bottom right corner) to resize the tile.
-
+-    Select and drag the handle  (in the bottom right corner) to resize the tile.
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBIGIF_ResizeTile4.gif)
-
 
 
 ****
 <a name="hyperlink"></a>
-### Add a hyperlink to a dashboard tile
+## Add a hyperlink to a dashboard tile
 
 By default, clicking a tile takes you to the report where the tile was created or to Q&A (if the tile was created in Q&A). To link to a webpage, another dashboard, an SSRS report, or other online content - add a custom link:
 
-1.  Select the pencil icon ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)  to edit the tile.
+1.    Select the pencil icon ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)  to edit the tile.
 
-2.  Place a checkmark in **Set custom link** and enter a URL.
+2.    Place a checkmark in **Set custom link** and enter a URL.
 
+****
 <a name="delete"></a>
-### Delete the tile
+## Delete the tile
 
 -   Select the X icon ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_X_icon.png) to delete the tile. Deleting a tile does not delete the underlying report.
 
-
+****
 
 ## See also
 
@@ -104,3 +111,5 @@ By default, clicking a tile takes you to the report where the tile was created o
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

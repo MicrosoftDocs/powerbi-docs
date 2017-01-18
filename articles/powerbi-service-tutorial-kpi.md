@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="xmja6EpqaO0"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # KPIs in Power BI
@@ -34,11 +35,14 @@ KPIs are a great choice:
 ##  KPI visual requirements
 A Key Performance Indicator (KPI) is based on a specific measure and is designed to help you evaluate the current value and status of a metric against a defined target. Therefore, a KPI visual requires a *base* measure that evaluates to a value and a *target* measure or value, and a threshold or goal.
 
->**NOTE**: Currently, a KPI dataset needs to contain goal values for a KPI. This can be done by adding an excel sheet with goals to your data model or PBIX file.
+>[AZURE.NOTE] Currently, a KPI dataset needs to contain goal values for a KPI. This can be done by adding an excel sheet with goals to your data model or PBIX file.
 
 ##  How to create a KPI  
 
 To follow along, sign in to Power BI and select **Get Data > Samples > Retail Analysis Sample**. We'll create a KPI that measures the progress we've made toward a sales goal.
+
+Or watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 1.  Select **Sales > Total Units This Year**.  This will be the indicator.
 
@@ -76,3 +80,5 @@ KPIs are also available on your mobile devices – keeping you always connected 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

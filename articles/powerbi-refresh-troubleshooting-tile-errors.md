@@ -4,12 +4,12 @@ description="Common errors that may be encountered when a tile tries to refresh"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
 tags=""
-qualityFocus="monitoring"
-qualityDate="06/13/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -17,13 +17,13 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/15/2016"
+ms.date="12/07/2016"
 ms.author="asaxton"/>
 # Troubleshooting tile errors
 
 Below are the common errors you may encounter with tiles along with an explanation.
 
-> **Note**: If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> [AZURE.NOTE] If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 
 ## Errors
 
@@ -67,11 +67,6 @@ If you are still having an issue, please [contact support](https://support.power
 
 ## See also
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
-
-[Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
-
-[Power BI Community](http://community.powerbi.com/)
-
-[Power BI Support](http://support.powerbi.com/)
-
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

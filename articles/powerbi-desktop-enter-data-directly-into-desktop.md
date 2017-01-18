@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/26/2016"
+   ms.date="01/11/2017"
    ms.author="davidi"/>
 
 # Enter data directly into Power BI Desktop

@@ -3,8 +3,8 @@
    description="Template Content Pack Authoring"
    services="powerbi"
    documentationCenter=""
-   authors="theresapalmer"
-   manager="mblythe"
+   authors="guyinacube"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2016"
-   ms.author="tpalmer"/>
+   ms.date="12/07/2016"
+   ms.author="asaxton"/>
 
 # Template Content Pack Authoring
 

@@ -17,20 +17,20 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/14/2016"
+   ms.date="12/07/2016"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
 
-Power BI free and Pro licenses are different based on the kind of content users can consume.  **Power BI Pro content** is a dashboard, report, or dataset that uses a connection or other functionality (such as up to eight refreshes in one day) that is only available to consume with a Power BI Pro license.
-
-If your content contains any of the following items, it's Power BI Pro content:
+Power BI free and Pro licenses are different based on the kind of content users can consume. If your content contains any of the following items, it's Power BI Pro content:
 
 -   Data from a DirectQuery dataset, such as [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) tabular data, [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md), [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md), or Apache [Spark for HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md).
 
 -   Data from a [dataset that refreshes more frequently than daily](powerbi-refresh-data.md).
 
 -   Data from a dataset that connects to on-premises data using the [Power BI Gateway - Personal ](powerbi-personal-gateway.md) or the [On-premises Data Gateway](powerbi-gateway-onprem.md).
+
+-   Data from a live connection to Azure Analysis Services.
 
 -   Data (including reports, dashboards or tiles) from a dataset that uses [Row-level security (RLS)](powerbi-admin-rls.md).
 

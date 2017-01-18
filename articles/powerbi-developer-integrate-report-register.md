@@ -3,12 +3,12 @@
    description="Register a web app with Azure AD"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
-   manager="mblythe"
+   authors="guyinacube"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="no"
    qualityDate=""/>
 
 <tags
@@ -17,8 +17,8 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
-   ms.author="derrickv"/>
+   ms.date="12/07/2016"
+   ms.author="asaxton"/>
 
 # Step 1: Register a web app with Azure AD
 
@@ -64,10 +64,12 @@ To integrate a report into an app, you need to get a report. In the next step, y
 [Next Step >](powerbi-developer-integrate-report-get-report.md)
 
 ## See also
--	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
--	[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)
--	[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)
--	[Get an authentication access token](powerbi-developer-integrate-report-get-report.md#get-token)
--	[App permissions](powerbi-developer-power-bi-permissions.md)
--	[Step 2: Get a Power BI report](powerbi-developer-integrate-report-get-report.md)
+
+[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
+[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
+[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)  
+[Get an authentication access token](powerbi-developer-integrate-report-get-report.md#get-token)  
+[App permissions](powerbi-developer-power-bi-permissions.md)  
+[Step 2: Get a Power BI report](powerbi-developer-integrate-report-get-report.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

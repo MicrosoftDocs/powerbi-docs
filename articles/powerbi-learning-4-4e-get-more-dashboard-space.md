@@ -20,12 +20,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Get More Space on Your Dashboard
-
-*See how to display your entire dashboard with Full Screen Mode*
 
 You may find that occasionally when you create your dashboards, you have more content than what can fit on your canvas. There are a few solutions that help you manage how your dashboard space is displayed, so you can get a full view of your dashboard content.
 

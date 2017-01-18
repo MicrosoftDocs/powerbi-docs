@@ -3,7 +3,7 @@
    description="Twilio content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="theresapalmer"
+   authors="joeshoukry"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
 
 # Twilio content pack for Power&nbsp;BI
 
@@ -58,9 +58,9 @@ Connect to the [Twilio content pack](https://app.powerbi.com/getdata/services/tw
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## What's included 
+## What's included
 
-The details for all calls and messages transactions for the last 30 days. You can do all sorts of analysis and aggregation on this data. 
+The details for all calls and messages transactions for the last 30 days. You can do all sorts of analysis and aggregation on this data.
 
 A set of already aggregated stats that you may want to keep an eye on. This set includes:
 

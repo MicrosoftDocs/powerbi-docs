@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,10 +17,156 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/04/2016"
+   ms.date="01/05/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
+
+For related "What's New" information, see:
+
+* [Power BI mobile team blog](https://powerbi.microsoft.com/blog/tag/mobile/)
+* [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+* [What's new in the Power BI service](powerbi-service-whats-new.md)  
+* [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/)
+
+## December 2016
+
+Read the [December 2016 mobile apps blog feature summary](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-december-2016).
+
+### All devices
+
+**Offline background refresh**
+
+To make sure you can access your latest data while offline, we perform a refresh in the background of the app so your business information is up to date, even if you haven’t accessed it for a while. To make sure certain dashboards are always up to date, just mark them as favorites. Learn more about [offline capabilities in the Power BI mobile apps](powerbi-mobile-offline-android.md).
+
+### iOS devices
+
+**Annotate and share**
+
+Now you can annotate and share a tile, report, or visualization from the Power BI mobile app for iOS. 
+
+-  [On the iPhone](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
+-  [On the iPad](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
+
+**Request access to dashboards**
+
+If you scan a QR code for a dashboard that you don't have access to, now you can submit a request for access right from the mobile app.
+
+**Custom URL on image tile**
+
+If an image tile has a custom URL defined by the dashboard owner, when you tap the tile you go directly to that URL without opening the tile in focus mode. 
+
+### iPhone
+
+**Apple watch improvements**
+
+You can now refresh Apple Watch data directly from the Watch app. In the dashboard index page, deep press to refresh your data. (The Power BI mobile app must be running in the background on your iPhone for this to work).
+
+### Android
+
+**Custom URL on image tile**
+
+If an image tile has a custom URL defined by the dashboard owner, when you tap the tile you go directly to that URL without opening the tile in focus mode. Also, dashboard tiles containing predefined custom URLs can now redirect readers to reports within the app.
+
+## November 2016
+
+Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-november-2016/).
+
+### Android tablets
+
+**Power BI mobile app for Android tablets** Yes, the preview is here.
+
+- Experience [Power BI on your Android tablet](powerbi-mobile-android-tablet-app-get-started.md)
+- Explore [Reporting Services mobile reports and KPIs on your Android tablet](powerbi-mobile-android-tablet-kpis-mobile-reports.md)
+
+### Android devices
+
+**Preview: Intune Mobile Application Management** Power BI support for Microsoft Intune Mobile Application Manager (MAM) is now in preview for Power BI Pro users on Android devices. 
+
+**Favorites** Tag your favorite dashboards on your Android device, and see all your [favorite Power BI dashboards and Reporting Services mobile reports and KPIs](powerbi-mobile-android-tablet-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) collected in one convenient location. 
+
+### iOS devices
+
+**Links** URLs in tiles and visualizations are now clickable, and open in a browser.
+
+### Windows devices
+
+**Center a map** to focus on data near you in your location
+
+
+
+## September/October 2016
+
+Read the [October 2016 Power BI mobile apps feature summary](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-october-2016/).
+
+### All devices
+
+**Favorites as landing page**
+If you’ve marked any of your dashboards as favorites, then your landing page will be your Favorites entry. 
+
+**Improved navigation**
+The main navigation has a new look, and groups navigation has moved to the groups catalog. 
+ 
+**Report and dashboard performance improvements**
+Improved the experience of loading reports and dashboards in the Power BI mobile apps
+ 
+**Enhanced alert notifications**
+Notifications for your data-driven alerts now contain more information on what triggered the alert and why.
+
+### iOS on iPhones
+
+**Apple Watch refresh improvements**
+The Apple Watch mobile app has been improved for Watch OS3
+
+
+### Android phones
+
+**Added manual tile refresh**
+You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the dataset.
+ 
+
+### Windows 10 phones
+
+**Geographic filtering**
+On your Windows 10 phone you can now filter your report based on your current location, and see only the data you need.
+
+**SandDance visualization**
+This custom visualization is now available on the Surface Hub
+
+## August 2016
+
+### All phones
+
+**Favorites** 
+View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
+
+**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](powerbi-service-data-classification.md).
+
+**Data-driven alerts**
+Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more about:
+
+* [Alerts on the Power BI app for Android phones](powerbi-mobile-set-data-alerts-in-the-android-app.md). 
+* [Alerts on the Power BI apps for iOS](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). 
+* [Alerts on the Power BI app for Windows 10 devices](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md).
+
+### iOS on iPhones and iPads
+  
+**Tiles full-screen in focus mode on iPad**
+When you tap a tile on your iPad, the tile will now open full-screen in focus mode, taking advantage of the entire iPad screen size.
+
+**Manually refresh tiles**
+Manually refresh your tiles by opening the dashboard in the Power BI mobile app for iOS and pulling down from the top of the screen. 
+
+**Support for Intune MAM**
+Added support for Microsoft Intune mobile application management (MAM) capabilities.
+
+Read more about [Microsoft Intune on Power BI mobile apps](powerbi-admin-mobile-intune.md).
+
+
+### Windows 10 devices
+
+**Full-screen and presentation modes**
+Display reports in presentation mode on Surface Hub, and display dashboards, reports, and tiles in full-screen mode on Windows 10 devices.
 
 ## July 2016
 
@@ -29,18 +175,12 @@
 In the Power BI service you can now [create a view of a dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
 ### Android phones
-
-**New data-driven alerts**
-Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more. 
  
-**Favorite dashboard management**
-Manage your list of favorite dashboards from your mobile device.
+**Favorites tab**
+Access all your favorite dashboards from a single location.
  
 **Improved security management**
 Select a risk classification for the business data presented in a specific dashboard.
-
-**Improved manual refresh**
-You can now manually refresh your dashboard tiles. For tiles based on Direct Query, this retrieves the latest data from the data model.
  
 **Improved warning and banners**
 We’ve improved warnings and banners for the mobile app.
@@ -53,14 +193,8 @@ Data-driven alerts are now formatted based on your device’s locale.
  
 ### iOS on iPhones and iPads
   
-**Improved data-driven alerts**
-Threshold-based notifications are now formatted based on your device’s locale.
-
 **Improved security management**
 Select a risk classification for the business data presented in a specific dashboard.
- 
-**Intune MAM**
-The iOS app now supports Intune MAM (MDM-less) capabilities.
  
 **Mobile insights**
 View summary data (max, min, and all) on clustered column chart tiles.
@@ -80,17 +214,11 @@ We’ve improved error messages for tiles in the mobile app.
 
 ### Windows 10 devices
  
-**Improved manual refresh**
-You can now manually refresh your dashboard tiles. For tiles based on Direct Query, this retrieves the latest data from the data model.
-
 **Improved security management**
 Select a risk classification for the business data presented in a specific dashboard.
 
 **Improved warning and banners**
 We’ve improved warnings and banners for the mobile app.
-
-**Improved alerts**
-New data-driven alerts are now formatted based on your device’s locale.
 
 ## June 2016
 

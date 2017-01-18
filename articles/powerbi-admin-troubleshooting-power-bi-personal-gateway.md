@@ -4,12 +4,12 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
-   qualityDate="07/25/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="12/07/2016"
    ms.author="asaxton"/>
 # Troubleshooting Power BI Gateway - Personal
 
 The following goes through some common issues you may encounter when using the Power BI Gateway - Personal. 
 
-> **Note**: If you encounter an issue that is not listed below, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> [AZURE.NOTE] If you encounter an issue that is not listed below, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 
 ## Update to the latest version 
  
@@ -39,7 +39,7 @@ A lot of issues can surface when the gateway version is out of date.  It is a g
 
 **Data Management Gateway or Analysis Services Connector cannot be installed on the same computer as personal gateway** - If you already have an Analysis Services Connector or Data Management Gateway installed, you must first uninstall the Connector or the gateway and then try installing the personal gateway.
 
- > **Note**: If you encounter an issue during installation, the setup logs could provide information to help you resolve the issue. See [Setup Logs](#SetupLogs) for more information.
+ > [AZURE.NOTE] If you encounter an issue during installation, the setup logs could provide information to help you resolve the issue. See [Setup Logs](#SetupLogs) for more information.
  
  **Proxy configuration**
  You may encounter issues with configuring the personal gateway if your environment needs the use of a proxy. To learn more about how to configure proxy information, see [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
@@ -77,6 +77,10 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 **Error: Data source error: We cannot convert the value "\[Table\]" to type Table.**
 
 **Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](powerbi-refresh-enable-fast-combine.md)
+
+**Error: There is not enough space for this row.**
+
+This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
 
 ## Data sources
 
@@ -135,18 +139,15 @@ If the **Personal Gateway**, fails to install, you will see a link to show the s
 
 Alternatively, you can go to your **Temp folder** (%temp%) and look for files that start with **Power\_BI\_**.
 
-> **Note**: Going to %temp% may take you to a subfolder of temp.  The **Power\_BI\_** files will be in the root of the temp directory.  You may need to go up a level or two.
+> [AZURE.NOTE] Going to %temp% may take you to a subfolder of temp.  The **Power\_BI\_** files will be in the root of the temp directory.  You may need to go up a level or two.
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Logs2.png)
 
 ## See Also
 
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)
-
-[Data Refresh](powerbi-refresh-data.md)
-
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)
-
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+[Data Refresh](powerbi-refresh-data.md)  
+[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
+[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -20,12 +20,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Manually Republish and Refresh Your Data
-
-*See how to manually republish your dataset and report to the Power BI service*
 
 You can update reports and datasets that you've already published from Power BI Desktop to the Power BI service. To do so, select **Publish** from the **Home** tab in the ribbon.
 

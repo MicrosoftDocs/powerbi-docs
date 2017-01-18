@@ -4,7 +4,7 @@ description="Information regarding configuration of proxy settings for the on-pr
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/25/2016"
+ms.date="12/07/2016"
 ms.author="asaxton"/>
 # Configuring proxy settings for the On-premises Data Gateway
 
@@ -123,4 +123,5 @@ When configuring the proxy settings to use default credentials, as explained abo
 
 ## See also
 
-[Firewall information](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy)
+[Firewall information](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

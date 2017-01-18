@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="10/10/2016"
    ms.author="asaxton"/>
 # Closing your Power BI Account
 
@@ -55,4 +55,4 @@ You will need to contact your tenant admin and ask them to unassign the license 
 
 ![](media/powerbi-admin-closing-your-account/closeaccountmanaged.png)
 
-
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

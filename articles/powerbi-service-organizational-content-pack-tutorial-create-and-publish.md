@@ -1,10 +1,10 @@
 <properties 
    pageTitle="Tutorial: create and publish an organizational content pack"
-   description="Tutorial: create and publish an organizational content pack in Power BI"
+   description="In this tutorial you create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
+   manager="erikre" 
    backup="maggiesMSFT"
    editor=""
    tags=""
@@ -17,25 +17,27 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2016"
+   ms.date="01/06/2017"
    ms.author="ajayan"/>
 
 # Tutorial: Create and publish an organizational content pack in Power BI
 
-In this tutorial we'll create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI.
+In this tutorial you create an organizational content pack, give access to a specific group, and publish it to your organization's content pack library on Power BI.
 
 >**Note:** Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
 
-Imagine you're the Release Manager at Contoso and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share with the other employees managing the launch. You could [share your dashboard](powerbi-service-share-unshare-dashboard.md), but then your coworkers will have read-only permissions for the dashboard.  Instead, you want your coworkers to be able to make their own personalized version of your dashboard and reports. 
+Imagine you're the Release Manager at Contoso and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share with the other employees managing the launch. You want a way to package up the dashboard and reports as a solution for your colleagues to use. 
 
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Opportunity Analysis Sample** > **Connect** to get your own copy of the sample. 
+Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Opportunity Analysis Sample** > **Connect** to get your own copy. 
 
 1.  In the left navigation pane, select the **Opportunity Analysis Sample** dashboard.
 
 2.  From the top navigation bar, select the cog icon ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/cog.png) > **Create content pack**.    
     ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/pbi_create_contpk.png)
 
-2.  In the **Create Content Pack** window, enter the following information.  Keep in mind that your organization's content pack library could end up with hundreds of content packs published for the organization or for groups. Take time to select the right audience, to give your content pack a meaningful name, and to add a good description.  Use words that will make your content pack easy to find via search.
+2.  In the **Create Content Pack** window, enter the following information.  
+ 
+    Keep in mind that your organization's content pack library could end up with hundreds of content packs published for the organization or for groups. Take time to give your content pack a meaningful name, to add a good description, and to select the right audience.  Use words that will make your content pack easy to find via search.
 
     a.  Select **Specific Groups** and enter the full email addresses for individuals, [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distribution groups, or security groups. For example:
 
@@ -47,13 +49,13 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 
     >**Tip:** Consider including the name of the dashboard in the name of the content pack. That way, your colleagues will find the dashboard more easily after they connect to your content pack.
 
-	c.  Recommended: Add a description. This helps coworkers more easily find the content packs that they need. Besides a description, add keywords our coworkers might use to search for this content pack. Include contact information in case your coworkers have a question or need help.
+	c.  Recommended: Add a **description**. This helps coworkers more easily find the content packs that they need. Besides a description, add keywords your coworkers might use to search for this content pack. Include contact information in case your coworkers have a question or need help.
 
-	d.  Add a logo to make it easier for group members to find the content pack &#151; it's faster to scan for an image than it is to find text. Below is a screen shot of the Opportunity Count 100% column chart tile.
+	d.  **Upload an image or logo** to make it easier for group members to find the content pack &#151; it's faster to scan for an image than it is to find text. We used an image of the Opportunity Count 100% column chart tile in the screen shot below.
 
-	e.  Select the **Opportunity Analysis Sample** dashboard to add it to the content pack.  Power BI automatically adds the associated report and dataset. 
+	e.  Select the **Opportunity Analysis Sample** dashboard to add it to the content pack.  Power BI automatically adds the associated report and dataset. You can add others, if you want.
 
-	>**Note:**  Only dashboards, reports, datasets, and workbooks that you can edit are listed. Thus, any that were shared with you aren't in the list.
+	>**Note:**  Only the dashboards, reports, datasets, and workbooks that you can edit are listed. Thus, any that were shared with you aren't in the list.
 
        ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/cpwindow.png) 
 
@@ -61,7 +63,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 		
       ![](media/powerbi-service-organizational-content-pack-tutorial-create-and-publish/PBI_OrgContPkExcel.png)
 
-	>**Note**: If members of the group can't view the workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
+	>**Note**: If members of the group can't view the Excel workbook, you may need to [share the workbook with them in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
 
 3.  Select **Publish** to add the content pack to the group's organizational content pack library.  
 
@@ -78,10 +80,9 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 
 6.  They select **Connect**, and now they can [view and work with your content pack](powerbi-service-organizational-content-packs-use-and-work-with.md). 
 
-### See also  
--  [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+## See also  
+-  [Intro to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
 -  [Manage, update, and delete organizational content packs](powerbi-service-organizational-content-packs-manage-update-delete.md)  
--  [Get Started with Power BI](powerbi-service-get-started.md)  
--  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 -  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)  
 -  [What is OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)

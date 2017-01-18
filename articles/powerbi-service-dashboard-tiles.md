@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/26/2016"  
+   ms.date="10/24/2016"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -31,8 +31,7 @@ Besides pinning, standalone tiles can be created directly on the dashboard using
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
->**Note**  
->If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
+>[AZURE.NOTE] If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
 
 ## Pin a tile from...
@@ -46,6 +45,9 @@ Tiles can be pinned from:
 -   [another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 
 - [Excel workbook on OneDrive for Business](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+
+- [Power BI publisher for Excel](powerbi-publisher-for-excel.md)
+
 
 - [Quick Insights](powerbi-service-auto-insights.md)
 
@@ -71,7 +73,8 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
 2. Select the ellipses to open the tile action menu.
 
     ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
-From here you can:
+
+    From here you can:
 
   - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
   - [Export the data used in the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
@@ -89,7 +92,7 @@ From here you can:
 ### Select (click) a tile
 When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
 
->**NOTE**: The exception to this is video tiles created directly on the dashbaord using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
+>[AZURE.NOTE] The exception to this is video tiles created directly on the dashbaord using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
 
 
 ## Tips and troubleshooting  
@@ -119,3 +122,5 @@ When you select a tile, what happens next depends on how the tile was created an
 [Export a tile to Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 
 [Pin Reporting Services items to Power BI Dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

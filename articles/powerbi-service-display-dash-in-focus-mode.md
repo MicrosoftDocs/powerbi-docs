@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="8F2-wm8a_e4"
+   featuredVideoId="dtdLul6otYE"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="12/13/2016"
    ms.author="mihart"/>
 
 # Display a dashboard tile or report visual in Focus mode
@@ -30,10 +30,7 @@
 
 ***Focus*** mode lets you expand (pop out) a dashboard tile or report visual to see more detail.  While in Focus mode for a dashboard tile, you can view and modify the filters that were applied when this visual was created.  And while in Focus mode for a report visual, you can view and modify the Visual level and Page level filters.
 
->**NOTE**: Currently, Focus mode is not available for tiles created from Q&A or for map tiles. 
-
->**NOTE**:
->Focus is different from Full Screen mode.  Full Screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
+>[AZURE.NOTE]  Focus is different from full screen mode.  Full screen mode is available for [dashboards and reports ](powerbi-service-dash-and-reports-fullscreen.md) and [tiles](powerbi-service-display-tile-in-full-screen-mode.md).
 
 1.  Hover over the tile or visual and select the **Focus mode** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
 
@@ -41,14 +38,15 @@
 
 2.  It opens and fills the entire canvas. 
 
-    ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocus-new3.jpg)
+    ![](media/powerbi-service-display-dash-in-focus-mode/power-bi-display-focus.png)
 
-3.  Expand the Filters pane to see all filters applied to this visual.  
-    ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilters-new2.jpg)
+3.  Expand the Filters pane to see all filters applied to this visual.
+
+    ![](media/powerbi-service-display-dash-in-focus-mode/power-bi-display-focus-filters.png)
 
 4.  Explore further by modifying the filters and, if you discover something interesting, pin the visual to a dashboard.   
 
-6.  Leave Focus mode and return to the dashboard by selecting the Focus mode icon (in the top left corner of the visual).
+6.  Leave Focus mode and return to the dashboard by selecting **< Exit Focus mode** (in the top left corner of the visual).
 
 ## Go from Focus mode to Full Screen mode
 Once in Focus mode, the tile or visual can then be [viewed in full screen (TV Mode.)](powerbi-service-display-tile-in-full-screen-mode.md) Full Screen Mode displays without the distraction of menus and navigation buttons.
@@ -57,3 +55,5 @@ Once in Focus mode, the tile or visual can then be [viewed in full screen (TV Mo
 ## See also  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

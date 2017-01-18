@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
+   ms.date="12/13/2016"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -32,14 +32,7 @@ And check out the community site, visuals.powerbi.com, where you'll find a growi
 
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.
 
-### Bar and column charts
-
-![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bar.png) 
-
- ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_col.png)
-
-
-### Basic (Layered) and Stacked Area charts
+### Area charts: Basic (Layered) and Stacked
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
@@ -47,15 +40,24 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 
 For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md).
 
-### Single number cards
+### Bar and column charts
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bar.png) 
+
+ ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_col.png)
+
+**Tip**: Bar charts are the standard for looking at a specific value across different categories.
+
+
+### Cards: Multi row
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
+
+### Cards: Single number
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_card.png)
 
 For more information, see [Create a big number tile for a dashboard](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
-
-### Multi row cards
-
-![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 
 ### Combo charts
@@ -90,6 +92,13 @@ For more information, see [Tutorial: Funnel Charts in Power BI](powerbi-service-
 
 For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-tutorial-radial-gauge-charts.md).
 
+###   KPIs
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
+
+**Tip**: Displays progress toward a measurable goal.
+
+For more information, see [Tutorial: KPIs in Power BI](powerbi-service-tutorial-kpi.md).
 
 ### Line charts
 
@@ -97,13 +106,21 @@ For more information, see [Tutorial: Gauge Charts in Power BI](powerbi-service-
 
 **Tip**: emphasize the overall shape of an entire series of values, usually over time.
 
-### Maps (basic)
+### Maps: Basic maps
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi-Nancy_viz_map.png)
 
-**Ti﻿p**: are used to associate both categorical and quantitative information with spatial locations.
+**Tip**: are used to associate both categorical and quantitative information with spatial locations.
 
-### Filled Maps (Choropleth)
+For more information, see [Tips and tricks for map visuals](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
+
+### Maps: ArcGIS maps
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
+
+For more information, see [Tutorial: ArcGIS maps in Power BI](/powerbi-service-tutorial-arcgis.md).
+
+### Maps: Filled maps (Choropleth)
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_FilledMap.png)
 
@@ -126,6 +143,7 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 **Tip**: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which order, etc.
 
 For more information, see [Tutorial: Scatter charts in Power BI](powerbi-service-tutorial-scatter.md).
+
 
 ### Slicers
 
@@ -179,3 +197,5 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 [Reports in Power BI](powerbi-service-reports.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

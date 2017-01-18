@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="2kAkUjQQD08"
+   featuredVideoId="jz9fW4e8GRE"
    courseDuration="9m"/>
 
 <tags
@@ -19,7 +19,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # A quick look at the Power BI service

@@ -1,36 +1,36 @@
-<properties 
+<properties
    pageTitle="Connect to services with content packs"
    description="Connect to services with content packs for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
 
 # Connect to services with content packs for Power&nbsp;BI
 
 You can connect to content packs for a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. 
 
-View all of the [content packs for services](https://app.powerbi.com/getdata/services) by logging into Power BI. The Power BI team is working with other services to add new content packs every week. 
+View all of the [content packs for services](https://app.powerbi.com/getdata/services) by logging into Power BI. The Power BI team is working with other services to add new content packs every week.
 
 ![](media/powerbi-content-packs-services/overview.png)
 
 ## What's included
 
-After connecting to a content pack, you'll see a newly created dashboard, report and dataset. The content packs include content from the service focused on a specific scenario and do not include all the information from the service. Once imported, you can customize them to highlight the information you care most about. The data is schedule to refresh automatically once per day, you can control the schedule by selecting the dataset. 
+After connecting to a content pack, you'll see a newly created dashboard, report and dataset. The content packs include content from the service focused on a specific scenario and do not include all the information from the service. Once imported, you can customize them to highlight the information you care most about. The data is schedule to refresh automatically once per day, you can control the schedule by selecting the dataset.
 
 You can also use [Power BI Desktop](powerbi-desktop-get-the-desktop.md) to connect to some services, such as Google Analytics, and create your own customized dashboards and reports.  
 
@@ -74,5 +74,3 @@ Do you use have a service you'd like to build a content pack for? [Submit your n
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-

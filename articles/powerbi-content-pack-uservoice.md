@@ -1,25 +1,25 @@
-<properties 
+<properties
    pageTitle="UserVoice content pack"
    description="UserVoice content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
-   
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
+
 # UserVoice content pack for Power&nbsp;BI
 
 Tracking and exploring your UserVoice data is easy with Power BI and the UserVoice content pack. Power BI retrieves your data, including tickets, suggestions and satisfaction ratings, then builds an out-of-box dashboard and reports based on that data.
@@ -42,7 +42,7 @@ Note: An admin account is required to connect to the Power BI content pack. The 
 
 	![](media/powerbi-content-pack-uservoice/uservoice.png)
 
-4.  When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name. 
+4.  When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name.
 
     **Note:** There is no trailing slash at the end and the connection is in http**s**.
 
@@ -51,7 +51,7 @@ Note: An admin account is required to connect to the Power BI content pack. The 
 5.  When prompted, enter your UserVoice credentials and follow the UserVoice authentication process. If you are already signed in to UserVoice in your browser, you may not be prompted for credentials. Grant the Power BI application access to your data by clicking "Allow Access".
 
 	**Note:** You need admin credentials for your UserVoice account.
-    
+
 	![](media/powerbi-content-pack-uservoice/Capture3.PNG)
 
 7.  Power BI will retrieve your UserVoice data and create a ready-to-use dashboard and report for you. Power BI will retrieve the following data: all your suggestions, all your open tickets, all tickets created in the last 30 days including closed ones and all the user satisfaction ratings.
@@ -99,6 +99,3 @@ The Power BI UserVoice content pack uses UserVoice's APIs to retrieve your data.
 [Get started in Power BI](powerbi-service-get-started.md)
 
 [Get data in Power BI](powerbi-service-get-data.md)
-
-
-

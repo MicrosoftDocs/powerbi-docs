@@ -20,38 +20,36 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Install and Configure a Personal Gateway
 
-*Watch and learn how to set up and configure a Personal Gateway, and automatically update your local data sources*
-
 In previous topics we've looked at how you can use Power BI to connect to data sources, and how to manually refresh your datasets on the Power BI service. However, you're not going to want to manually refresh things every time your data changes, so you can use Power BI to set up a scheduled refresh that will connect to your data sources and publish them into the Power BI Service automatically. This also gives you a way to connect the service with any on-premises data sources, including Excel files, Access databases, SQL databases, and more.
 
-The system that lets you connect your on-premises data sources to the Power BI service is called the **Personal Gateway**. It's a small application that runs on your computer, and uses a prearranged schedule to connect to your data, gather any updates, and push them up to the Power BI service.
+The system that lets you connect your on-premises data sources to the Power BI service is called the **Data Gateway**. It's a small application that runs on your computer, and uses a prearranged schedule to connect to your data, gather any updates, and push them up to the Power BI service. The **Personal Gateway** is a version of the **Data Gateway** that can be used without any administrator configuration.
 
 > Note: The computer  that is running the Power BI Personal Gateway *must* be on and connected to the Internet for **Personal Gateway** to work properly.
 
-To set up your Personal Gateway, first login to the Power BI service. Select the **Download** icon in the top right-hand corner of the screen, and then select **Power BI Gateways** from the menu.
+To set up your **Personal Gateway**, first login to the Power BI service. Select the **Download** icon in the top right-hand corner of the screen, and then select **Data Gateways** from the menu.
 
-![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_1.png)
+![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_1b.png)
 
 From there you'll be taken to a web page where you can select the **Power BI Gateway - Personal**, as shown below.
 
-![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_2.png)
+![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_2b.png)
 
 Run the application once it finishes downloading, and complete the installation wizard.
 
-![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_3.png)
+![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_3a.png)
 
-You'll see a few warnings, including the following warning that the computer must be turned on, and have an Internet connection, for the **Gateway** to properly refresh your data.
+You'll then be prompted to launch the configuration wizard to set up your gateway.
 
-![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_4.png)
+![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_3b.png)
 
-Once the installation process is complete, you'll be asked first to login to your Power BI service account, and then to login to the machine's Windows account.
+You'll be asked first to login to your Power BI service account, and then to login to the machine's Windows account, since the Gateway service runs under your account.
 
-![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_5.png)
+![](media/powerbi-learning-4-6-install-configure-personal-gateway/4-6_3c.png)
 
 Return to the Power BI service. Select the ellipsis (three dots) menu next to the dataset you want to refresh, and then select **Schedule Refresh**. This opens the **Refresh Settings** page. Power BI detects that you've installed a **Personal Gateway**, and lets you know its status.
 

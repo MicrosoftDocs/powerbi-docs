@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Use inline hierarchy labels in Power BI Desktop (preview)"
-   description="Use inline hierarchy labels in Power BI Desktop (preview)"
+   pageTitle="Use inline hierarchy labels in Power BI Desktop"
+   description="Use inline hierarchy labels in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,29 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/03/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
-# Use inline hierarchy labels in Power BI Desktop (preview)
+# Use inline hierarchy labels in Power BI Desktop
 
-**Power BI Desktop** now supports the use of **inline hierarchy labels**, which is the first of two features intended to enhance hierarchical drilling. The second feature, which is currently in development, is the ability to use nested hierarchy labels (stay tuned for that - our updates happen frequently). When inline and nested hierarchical labels are ready for general availability, they will be released together - but to provide an opportunity for customers to preview, inline hierarchy labels are now released as a preview feature.   
-
-## How to use enable inline hierarchy labels
-
-The following steps describe how to enable this preview of **inline hierarchy labels**:
-
-1.  In Power BI Desktop, select **File > Options and settings > Options**.
-
-    ![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_1.png)
-
-2.  Select **Preview Features** from the **Global** section, in the left side of the **Options** window.
-
-    ![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_2.png)
-
-3.  Select the checkbox next to **Inline hierarchy labels** to enable the feature. Note that *you must restart Power BI Desktop* for the feature to be available. To disable the feature, uncheck the box and restart Power BI Desktop.
-
-    ![](media/powerbi-desktop-inline-hierarchy-labels/InlineHierarchy_3.png)
-
+**Power BI Desktop** supports the use of **inline hierarchy labels**, which is the first of two features intended to enhance hierarchical drilling. The second feature, which is currently in development, is the ability to use nested hierarchy labels (stay tuned for that - our updates happen frequently).   
 
 ## How inline hierarchy labels work
 

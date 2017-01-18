@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/23/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 # Rename a Power BI dashboard
 
@@ -46,3 +46,5 @@ Read more [tips for designing your dashboard](powerbi-service-tips-for-designing
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

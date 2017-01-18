@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="12/09/2016"
    ms.author="maggies"/>
 
 # Tiles in the Power BI mobile app for Windows 10  
@@ -54,9 +54,11 @@ Then in [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-
 
     Tap the **Full screen** icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-full-screen-icon.png) to open the tile in full-screen mode, without the navigation and menu bars.
 
-    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-tile-full-screen-mode.png)
-
     >**Note**: You can also [view dashboards and reports in full-screen mode](powerbi-mobile-win10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
+
+    In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-center-map-icon.png) to center the map to your current location.
+
+    ![](media/powerbi-mobile-tiles-in-the-win10phone-app/power-bi-windows-10-center-map.png)
 
      Tap the Share Snapshot icon ![](media/powerbi-mobile-tiles-in-the-win10phone-app/PBI_Win10Ph_ShareIcon.png) to [share a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) with others.   
 
@@ -64,7 +66,9 @@ Then in [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-
 
 4.   Tap the back arrow or the back button to close the tile and return to the dashboard.
 
-### See also  
+## See also  
 [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 [Get started with the Power BI mobile app](powerbi-mobile-win10phone-app-get-started.md) for Windows 10  
 [Get started with Power BI](powerbi-service-get-started.md)  
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+

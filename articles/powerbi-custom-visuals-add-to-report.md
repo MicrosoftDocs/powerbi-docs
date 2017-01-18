@@ -8,7 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+  featuredVideoId="gido6wr5pvE"
+  qualityFocus="no"
    qualityDate=""/>
 
 <tags
@@ -17,13 +18,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 # Add a custom visualization to a Power BI report
 
 You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
     ![](media/powerbi-custom-visuals-add-to-report/pbi-custom-viz-icon.png)
+
+Watch Will download a custom visual and add it to his report. Then follow the step-by-step instructions below the video to try it yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gido6wr5pvE" frameborder="0" allowfullscreen></iframe>
 
 >**Important**:
 A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well.
@@ -82,3 +87,5 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 [Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)
 
 [Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -4,12 +4,12 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
-   qualityFocus="Monitoring"
-   qualityDate="08/15/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="12/07/2016"
    ms.author="asaxton"/>
 # Signing up for Power BI with a new Office 365 Trial
 
@@ -25,7 +25,7 @@
 
 If you are having problems signing up for Power BI with your work email address, one potential workaround is to sign up for an Office 365 trial first and then signing up for Power BI.  You will be able to use Power BI even after the Office 365 trial expires. 
 
-> **Note**: You cannot use personal email addresses such as @live.com or @gmail.com with Office 365 or Power BI. For more information, see [](powerbi-service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi).
+> [AZURE.NOTE] You cannot use personal email addresses such as @live.com or @gmail.com with Office 365 or Power BI. For more information, see [](powerbi-service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi).
 
 1.  Sign up for an Office 365 trial [on the Office 365 web site](https://go.microsoft.com/fwlink/p/?LinkID=403802).
 
@@ -33,7 +33,7 @@ If you are having problems signing up for Power BI with your work email address,
 
 3.  Sign up for Power BI [using this link](https://portal.office.com/Start/Confirm?Sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&ru=https%3A%2F%2Fapp.powerbi.com%3FredirectedFromSignup%3D1%26noSignUpCheck%3D1).  If you are prompted, sign in using the sign in name and password you selected for Office 365 in Step 1.
 
-    > **Note**: If you already sign into Power BI or Office 365 with an organization login, you may want to use an InPrivate browser session to log in with the new account you created.
+    > [AZURE.NOTE] If you already sign into Power BI or Office 365 with an organization login, you may want to use an InPrivate browser session to log in with the new account you created.
 
 4.  That's it!  When you're finished, you will be redirected to Power BI.
 
@@ -43,4 +43,5 @@ If you are having problems signing up for Power BI with your work email address,
 
 ## See also
 
-[Administering Power BI in your organization](powerbi-admin-administering-power-bi-in-your-organization.md)
+[Administering Power BI in your organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

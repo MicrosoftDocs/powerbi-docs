@@ -3,9 +3,9 @@
    description="Documentation for using Power BI Q&A natural language queries with Direct Query data and Enterprise Gateway data."
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="mihart, fetiye"
    manager="mblythe"
-   backup="fetiye"
+   backup="mihart"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2016"
-   ms.author="mihart"/>
+   ms.date="12/07/2016"
+   ms.author="fetiye"/>
 
 
 # Enable Q&A for Direct Query (Preview)
@@ -84,3 +84,5 @@ During the Preview phase of this feature, there are several limitations:
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

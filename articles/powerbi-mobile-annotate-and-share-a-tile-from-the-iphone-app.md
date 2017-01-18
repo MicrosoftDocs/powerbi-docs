@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Annotate and share a tile from the iPhone app"
-   description="Learn about annotating and sharing snapshots of tiles from the Power BI mobile app for iOS on your iPhone. Recipients see the tile, but can’t open the dashboard."
+   pageTitle="Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS on the iPhone"
+   description="Read about annotating and sharing tiles, reports, and visualizations from the Microsoft Power BI app for iOS on the iPhone. "
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,39 +17,67 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="12/19/2016"
    ms.author="maggies"/>
-# Annotate and share a tile from the iPhone app (Power BI for iOS)
 
-When you share a snapshot of a tile from the iPhone app for Microsoft Power BI for iOS, your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
+# Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS on the iPhone
 
-You can add annotations — lines, text, or stamps — to a tile before you share a snapshot.
+You can share a snapshot of a tile, report, or visualization from the Power BI mobile app for iOS. Your recipients see it exactly as it was when you sent the mail, plus a link. You can send snapshots of tiles to anyone — not just colleagues in the same email domain. If they have permissions and you've already shared the dashboard or report with them, then they can click the link and go straight to that tile, report, or visualization. 
+You can add annotations — lines, text, or stamps — before you share it.
 
-![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_AnnotateSmiley.png)
+![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-iphone-annotate.png)
 
-1.  In a [dashboard](powerbi-mobile-dashboards-in-the-iphone-app.md) in the iPhone app, tap a tile to open it in focus mode.
+*A report with annotations*
 
-2.  Tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_ShareIcon.png) in the upper-right corner of the tile.
+## Open a tile for annotating
 
-3.  To annotate the tile, tap an icon in the lower bar in the Edit window:
+1.  Tap the tile to open it in focus mode.
 
-    ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_AnnotateBar.png)
+2.  Tap the annotate icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-ios-annotate-icon.png) in the upper-right corner of the tile.
 
-    -   Tap the pencil icon to draw lines of different colors and thicknesses.
+3.  You're ready to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md#annotate-and-share-the-tile-report-or-visualization).
 
-    -   Tap the text balloon to type comments.
+## Open a report for annotating
 
-    -   Tap the smiley face to paste stamps (like emoticons) on the tile.
+1. Open a report. 
 
-4.  After annotating, tap the share icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_ShareIcon.png) in the upper-right corner.
+2.  Tap the annotate icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-ios-annotate-icon.png) in the upper-right corner of the report.
 
-5.  Type the recipients' names and modify the message if you want.
+3.  You're ready to [annotate and share the report](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md#annotate-and-share-the-tile-report-or-visualization).
 
-6.  Tap **Send**.
+## Open a visualization for annotating
 
-### See also
+1. In a report, tap a visualization, then tap the expand icon to open it in focus mode. 
 
-[Share a dashboard from the iPhone app \(Power BI for iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
+    ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-ios-visual-focus-mode.png)
 
-[Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
+2.  Tap the annotate icon ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-ios-annotate-icon.png) in the upper-right corner of the visualization.
 
+3.  You're ready to [annotate and share the visualization](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md#annotate-and-share-the-tile-report-or-visualization).
+
+## Annotate and share the tile, report, or visualization
+
+3.  Here's how you annotate:  
+
+    ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-ios-annotation-menu.png)
+
+    -   To draw lines of different colors and thicknesses, tap the squiggly-line icon, choose a width and color, and draw.  
+
+    -   To type comments, tap the **AA**, choose the text size and color, and type.  
+
+    -   To paste stamps (like emoticons) on the tile, tap the smiley face, choose a color, and tap where you want them.   
+
+4. After annotating, tap **Share** in the upper-right corner.
+
+4.  Tap the Mail icon, type the recipients' names, and modify the message, if you want.  
+
+    ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-iphone-annotate-send.png)
+
+    The mail has a link to the specific tile, report, or visualization. If your recipients have permissions and you've already shared the dashboard or report with them, then they can click the link and go straight to that tile, report, or visualization.
+
+5.  Tap **Send**.
+
+## See also
+
+- [Share a dashboard from the iPhone app \(Power BI for iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

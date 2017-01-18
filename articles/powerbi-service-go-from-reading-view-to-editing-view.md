@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/22/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # Go from Reading View to Editing View in Power BI
 
-In Editing View in Power BI (compared to [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)) you can dig even deeper into your data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report.  To edit a report, you must be the owner of the report.
+In Editing View in Power BI (compared to [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)) you can dig even deeper into your data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report.  To edit a report, you must be an owner of the report.
 
 1.  In Reading View, select **Edit Report**. 
 
@@ -43,4 +43,6 @@ Read more about [reports in Power BI](powerbi-service-reports.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md) 
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/) 

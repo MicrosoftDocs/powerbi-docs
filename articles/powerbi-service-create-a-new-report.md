@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 # Create a new Power BI report
 
@@ -33,25 +33,25 @@ This method creates a new report from scratch. To follow along, [download the Re
 
 1.  Start in Power BI service and select a dataset to open it. Opening a dataset actually opens the report editor.  You'll see a blank canvas and the report editing tools.
 
-   ![](media/powerbi-service-create-a-new-report/powerbi-select-datasetnew.png)
+    ![](media/powerbi-service-create-a-new-report/powerbi-select-datasetnew.png)
 
 2.  Explore your data and [add visuals](powerbi-service-visualizations-for-reports.md). For this report, let's add a Gauge visual that tracks this year's sales.
 
    -  In the **Fields** pane, select **Sales** > **This Year Sales** > Value.
 
-      ![](media/powerbi-service-create-a-new-report/powerbi-report-step1.png)
+        ![](media/powerbi-service-create-a-new-report/powerbi-report-step1.png)
 
    -  Convert the visual to a Gauge by selecting the Gauge template ![](media/powerbi-service-create-a-new-report/powerbi-gauge-icon.png) from the **VIsualizations** pane.
 
-      ![](media/powerbi-service-create-a-new-report/powerbi-report-step2.png)
+        ![](media/powerbi-service-create-a-new-report/powerbi-report-step2.png)
 
    -  Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well.
 
-      ![](media/powerbi-service-create-a-new-report/powerbi-report-step3.png)
+        ![](media/powerbi-service-create-a-new-report/powerbi-report-step3.png)
 
 3.  Optionally, continue adding visuals, and then [save your report](powerbi-service-save-a-report.md).
 
-   ![](media/powerbi-service-create-a-new-report/powerbi-save.png)
+    ![](media/powerbi-service-create-a-new-report/powerbi-save.png)
 
 
 ## Create a new report from an existing report
@@ -91,3 +91,5 @@ Read more about [reports in Power BI](powerbi-service-reports.md)
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

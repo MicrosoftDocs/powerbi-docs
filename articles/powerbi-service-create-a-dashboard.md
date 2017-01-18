@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="lJKgWnvl6bQ"
-   qualityFocus="identified"
+   qualityFocus="monitoring"
    qualityDate="03/15/2016"/>
 
 <tags
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/21/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 
 # Create a Power BI dashboard
@@ -69,3 +69,5 @@ There are many different ways to add content to your dashboard.
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

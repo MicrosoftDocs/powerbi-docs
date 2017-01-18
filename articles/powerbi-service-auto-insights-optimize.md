@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/07/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
 # Optimize your data for Power BI Quick Insights
@@ -39,3 +39,5 @@ Want to improve Quick Insights results?  If you are a datasest owner, try these:
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

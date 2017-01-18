@@ -1,25 +1,25 @@
-﻿<properties 
+﻿<properties
    pageTitle="SendGrid content pack"
    description="SendGrid content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
-   
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
+
 # SendGrid content pack for Power&nbsp;BI
 
 The Power BI content pack for SendGrid allows you to extract insights and statistics from your SendGrid account. Using the SendGrid content pack you can visualize your SendGrid statistics in a dashboard.
@@ -78,4 +78,3 @@ The following metrics are available in the SendGrid dashboard:
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get Data](powerbi-service-get-data.md)
-

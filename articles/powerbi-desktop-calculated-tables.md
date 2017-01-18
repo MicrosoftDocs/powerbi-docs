@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Calculated tables in Power BI Desktop

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="12/07/2016"
    ms.author="asaxton"/>
 
 # Alternate Email Address for Power BI
@@ -32,10 +32,12 @@ Here's how to do that:
 
 2.  Slick the edit link in the Contact details section.  
 
-    > **Note**: If you do not see an Edit link, this means your email address is managed by your Office 365 administrator and you will need to contact them to update your email address.
+    > [AZURE.NOTE] If you do not see an Edit link, this means your email address is managed by your Office 365 administrator and you will need to contact them to update your email address.
 
     ![](media/powerbi-admin-alternate-email-address-for-power-bi/contact-details.png)
 
 3.  In the Alternate email field, enter the email address you would like Power BI updates to be sent to.
 
-> **NOTE**: Changing this setting will not affect what email address is used to send service updates, newsletters, and other promotional communications.  Those will always be sent to the email address you originally used when registering for Power BI.
+> [AZURE.NOTE] Changing this setting will not affect what email address is used to send service updates, newsletters, and other promotional communications.  Those will always be sent to the email address you originally used when registering for Power BI.
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

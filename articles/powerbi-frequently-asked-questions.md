@@ -1,10 +1,10 @@
 <properties
    pageTitle="Frequently asked questions"
-   description="Frequently asked questions about Power BI"
+   description="Browse a list of frequently asked questions and answers about the Power BI service, Power BI Desktop, and the Power BI mobile apps."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,9 +17,14 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/25/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
+
+- If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
+- Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+- Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
+
 
 ## What is Microsoft Power BI?
 
@@ -48,7 +53,7 @@ Just a Web browser and work email address.
 Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](powerbi-service-self-service-signup-for-power-bi.md).
 
 ## Which work email addresses are supported?
-Work email addresses ending in **.edu** and **.org** are supported. 
+Work email addresses ending in **.edu** and **.org** are supported.
 
 Those ending in **.gov** and **.mil** aren’t currently supported.
 
@@ -141,9 +146,14 @@ Learn more about Power BI compliance, at the [Microsoft Trust Center](http://go.
 
 ## Where can I learn more about security?
 
-Learn more about Power BI security, privacy and compliance in this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=619090) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
+Learn more about Power BI security, privacy and compliance in this [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=829185) whitepaper and our [Power BI security support article](powerbi-admin-power-bi-security.md).
 
 
 ## What has happened to the Power BI for Office 365 experience?
 
 The Power BI for Office 365 experience has been deprecated.
+
+## See also
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
+- Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.

@@ -1,24 +1,24 @@
-﻿<properties 
+﻿<properties
    pageTitle="Azure Audit Logs content pack"
    description="Azure Audit Logs content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
 
 # Azure Audit Logs content pack for Power&nbsp;BI  
 
@@ -44,7 +44,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 
 	![](media/powerbi-content-pack-azure-audit-logs/parameters.png)
 
-5. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
+5. For **Authentication Method**, select **oAuth2** \> **Sign In**.
 
 	![](media/powerbi-content-pack-azure-audit-logs/creds.png)
 
@@ -52,10 +52,10 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 
 	![](media/powerbi-content-pack-azure-audit-logs/login.png)
 
-7. Power BI will retrieve your Azure Audit Log data and create a ready-to-use dashboard and report.  
- 
+7. Power BI will retrieve your Azure Audit Log data and create a ready-to-use dashboard and report. 
+
 	![](media/powerbi-content-pack-azure-audit-logs/dashboard.png)
-    
+
 **What Now?**
 
 - Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
@@ -67,7 +67,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements
-The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/en-us/documentation/articles/insights-debugging-with-events/). 
+The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/en-us/documentation/articles/insights-debugging-with-events/).
 
 <a name="FindingParams"></a>
 ## Finding parameters  
@@ -80,7 +80,7 @@ There are two easy ways to find your Subscription Id.
 Your subscription ID will be long set of numbers and characters, similar to the example in Step \#4 above. 
 
 ## Troubleshooting
-If you're seeing a credentials error or an error trying to refresh due to invalid credentials, please try deleting all instances of the Azure Audit logs content pack and reconnecting. 
+If you're seeing a credentials error or an error trying to refresh due to invalid credentials, please try deleting all instances of the Azure Audit logs content pack and reconnecting.
 
 ### See Also  
 [Get started with Power BI](powerbi-service-get-started.md)  

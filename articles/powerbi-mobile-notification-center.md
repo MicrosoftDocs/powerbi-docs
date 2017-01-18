@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"  
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/08/2016"
+   ms.date="12/12/2016"
    ms.author="maggies"/>
 
 # Get notifications in the Power BI mobile apps
@@ -52,7 +52,7 @@ Notifications bring information related to your Power BI experience right to you
 
 You can change how Power BI notifies you.
 
-1. On an iPhone, go to **Settings** > **Notifications**. 
+1. On an iOS device, go to **Settings** > **Notifications**. 
 
     On an Android phone, go to **Notification Settings**.
 

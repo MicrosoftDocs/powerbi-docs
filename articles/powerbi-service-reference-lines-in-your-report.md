@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="zcAFP9U3d30"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="08/23/2016"
    ms.author="mihart"/>
 
 # Reference lines in your report
@@ -27,7 +28,10 @@ Many charts are tracking performance against some goal or target, not just a com
 
 Reference lines can be added to Line, Column, Bar, Area, Waterfall, and Scatter charts.
 
-There are 2 ways to create references lines; one is by adding reference lines as you need them and the other is by using Power BI Desktop to create a reusable field in your dataset.  
+There are 2 ways to create references lines; one is by adding reference lines as you need them and the other is by using Power BI Desktop to create a reusable field in your dataset.
+
+Scroll to the end to see Will create a reference line in Power BI service.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zcAFP9U3d30?#t-2m30s" frameborder="0" allowfullscreen></iframe>
 
 ## Reference lines as you need them
 
@@ -70,7 +74,7 @@ Use Power BI Desktop to create a new field (column) in your dataset. Then use th
 
     ![](media/powerbi-service-reference-lines-in-your-report/reference-lines-show.png)
 
-    >**NOTE**: Make sure **Unit Sales target** isn't being aggregated, for example, summed or counted. In the **Visualizations** pane, right-click **Unit Sales target** and select **Average**, **Minimum**, **Maximum**, or **Median**.
+    >[AZURE.NOTE] Make sure **Unit Sales target** isn't being aggregated, for example, summed or counted. In the **Visualizations** pane, right-click **Unit Sales target** and select **Average**, **Minimum**, **Maximum**, or **Median**.
 
     ![](media/powerbi-service-reference-lines-in-your-report/power-bi-reference-lines.png)
 
@@ -80,3 +84,5 @@ If you're using a field value as a reference line, and it's not displaying corre
 
 ##  See also
 [Learn more about calculated columns](powerbi-desktop-calculated-columns.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

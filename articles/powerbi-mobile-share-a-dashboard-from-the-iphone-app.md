@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2016"
+   ms.date="10/03/2016"
    ms.author="maggies"/>
 # Share a dashboard from the iPhone app (Power BI for iOS)
 
@@ -25,14 +25,11 @@ Invite colleagues to view your dashboards by sharing links from the iPhone app f
 
 ## Share a dashboard
 
-1.  In the upper-right corner of the dashboard, tap the ellipsis to open the dashboard menu.
+1.  In the actions bar at the bottom of the dashboard, tap the share icon ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-share-dashboard-icon.png).
 
-    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-dashboard-ellipsis.png)
+    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-dashboard-invite.png)
 
-3.  Tap **Invite**.
-
-    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-invite.png)
-
+3.  Tap **Invite a colleague**.
 
 2.  Type names, separated by commas, and a message to accompany your dashboard invitation.
 
@@ -51,23 +48,19 @@ Invite colleagues to view your dashboards by sharing links from the iPhone app f
 
 You can only unshare a dashboard if you're the dashboard owner.
 
-1.  In the upper-right corner of the dashboard, tap the ellipsis to open the dashboard menu.
+1.  In the actions bar at the bottom of the dashboard, tap the share icon ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-share-dashboard-icon.png).
 
-    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-dashboard-ellipsis.png)
-
-3.  Tap **Invite**.
-
-    ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-invite.png)
+3.  Tap **Invite a colleague**.
 
     You see the list of colleagues with whom you've shared this dashboard, with these phrases:
-
-    -   **Pending**: They haven't viewed the dashboard yet.
 
     -   **Can View**: They can view the dashboard but not share it.
 
     -   **Can View & Invite**: They can view the dashboard and share it with other colleagues.
 
 2.  Tap **Edit**.
+
+     ![](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-edit-invite-dashboard.png)
 
 3.  To unshare, tap the red circle next to a name and tap **Delete**.
 
@@ -76,4 +69,4 @@ You can only unshare a dashboard if you're the dashboard owner.
 - [Annotate and share a tile from the iPhone app for Power BI](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
 - [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
 - [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
-
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

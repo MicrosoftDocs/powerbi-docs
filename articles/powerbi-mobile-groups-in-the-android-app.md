@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/28/2016"
+   ms.date="11/08/2016"
    ms.author="maggies"/>
 
 # Groups in the Android app for Power BI  
@@ -33,17 +33,22 @@ Then you see and interact with group dashboards in the Microsoft [Power BI for 
 
     Need to [download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
 
-2.  Under My Workspace, select a group.  
+2.  Tap the global navigation button ![](media/powerbi-mobile-groups-in-the-android-app/power-bi-android-options-icon.png), then tap Workspaces ![](media/powerbi-mobile-groups-in-the-android-app/power-bi-android-workspaces-icon.png).  
 
-    ![](media/powerbi-mobile-groups-in-the-android-app/pbi_andr_grouphome.png)
+    ![](media/powerbi-mobile-groups-in-the-android-app/power-bi-android-workspaces.png)
 
-3.  Your group page displays the dashboards and reports that have been published to the group workspace.  
+3.  Select a group workspace.
 
-    ![](media/powerbi-mobile-groups-in-the-android-app/pbi_and_dashes.png)
+    ![](media/powerbi-mobile-groups-in-the-android-app/power-bi-android-workspaces-space.png)
 
-4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-android-app.md) to open and view it.  
+4.  Your group page displays the dashboards and reports that have been published to the group workspace.  
+
+    ![](media/powerbi-mobile-groups-in-the-android-app/power-bi-android-groups-dashboards.png)
+
+4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-android-app.md) to open and view it in the group workspace.  
 
 ### See also  
 -  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 -  [Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)  
 -  [Get started with Power BI](powerbi-service-get-started.md)  
+-  Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

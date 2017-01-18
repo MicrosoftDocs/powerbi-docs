@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/12/2016"
+   ms.date="10/07/2016"
    ms.author="mihart"/>
 
 # Add a tile directly from the dashboard itself
@@ -77,7 +77,7 @@ Say you want your company logo on your dashboard, or some other image.
 
 3.  Select **Apply**.  On the dashboard, resize and move the text box as needed.
 
-  ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-text-added.png)
+    ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-text-added.png)
 
 ## Add a video
 
@@ -182,3 +182,5 @@ To make changes to a tile...
 
 [Creating Power BI dashboards](powerbi-service-create-a-dashboard.md)
 [Dashboard tiles](powerbi-service-dashboard-tiles.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/).

@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/13/2016"
+   ms.date="10/10/2016"
    ms.author="asaxton"/>
 
 # How to use the same account login for Power BI and Azure
@@ -42,3 +42,4 @@ You can add your organizational account as a co-administrator in Azure.  Here's
 
 Next time you sign in to the Azure Management Portal, use your organizational email address.
 
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

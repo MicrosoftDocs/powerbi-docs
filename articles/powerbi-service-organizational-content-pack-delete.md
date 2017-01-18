@@ -1,11 +1,11 @@
 <properties 
    pageTitle="Remove your connection to an organizational content pack"
-   description="Remove your connection to an organizational content pack in Power BI"
+   description="Read about deleting the dataset for an organizational content pack in Power BI so you can remove your connection to the content pack."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
-   backup=""
+   manager="erikre" 
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
 # Remove your connection to an organizational content pack in Power BI 
 
@@ -28,7 +28,7 @@ To remove a content pack, you remove its dataset.  
 
 -   In the left Navigation pane, select the ellipsis to the right of the dataset and select **Remove \> Yes**.  
 
-    ![](media/powerbi-service-organizational-content-pack-delete/pbi_remove_contpk.png)
+    ![](media/powerbi-service-organizational-content-pack-delete/power-bi-remove-organizational-content-pack-dataset.png)
 
 Removing the dataset also removes all associated reports and dashboards.
 
@@ -38,9 +38,10 @@ Removing the dataset also removes all associated reports and dashboards.
 > -  If you create a content pack, you (and only you) can [delete it from the content pack library](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
 
-### See also  
-[Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
-[Get started with Power BI](powerbi-service-get-started.md)  
-[Power BI - basic concepts](powerbi-service-basic-concepts.md)  
-[Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+## See also  
+- [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+- [Get started with Power BI](powerbi-service-get-started.md)  
+- [Power BI basic concepts](powerbi-service-basic-concepts.md)  
+- [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)
   

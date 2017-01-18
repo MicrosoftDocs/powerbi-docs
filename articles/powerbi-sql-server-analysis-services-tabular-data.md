@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/25/2016"
+   ms.date="09/21/2016"
    ms.author="asaxton"/>
 # SQL Server Analysis Services live data in Power BI
 
@@ -31,7 +31,7 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 
 -   [Q&A natural language querying](powerbi-service-q-and-a-direct-query.md) is in preview for Analysis Services live connections.
 
-> **Note**: Working with live Analysis Services servers, along with Groups, are Pro features. [Learn more](powerbi-power-bi-pro-content-what-is-it.md)
+> [AZURE.NOTE] Working with live Analysis Services servers, along with Groups, are Pro features. [Learn more](powerbi-power-bi-pro-content-what-is-it.md)
 
 ## To connect to a model from Get data
 
@@ -59,8 +59,7 @@ If you pin visuals from a report to the dashboard, the pinned tiles are automati
 
 ## See also
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)
-
-[Manage Analysis Services data sources](powerbi-gateway-enterprise-manage-ssas.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[Manage Analysis Services data sources](powerbi-gateway-enterprise-manage-ssas.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -1,24 +1,24 @@
-<properties 
+<properties
    pageTitle="Zuora content pack"
    description="Zuora content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
 # Zuora content pack for Power&nbsp;BI
 
 The Zuora content pack for Power BI allows you to visualize important revenue, billing, and subscription data. Use the default dashboard and reports to analyze usage trends, track billings and payments, and monitor recurring revenue, or customize them to meet your own unique dashboard and reporting needs. 
@@ -64,7 +64,7 @@ Connect to the [Zuora content pack](https://app.powerbi.com/getdata/services/Zuo
 
 ## What's included
 
-The content pack uses the Zuora AQUA API to pull in the following tables: 
+The content pack uses the Zuora AQUA API to pull in the following tables:
 
 |Tables| | |
 |---|---|---|
@@ -72,7 +72,7 @@ The content pack uses the Zuora AQUA API to pull in the following tables:
 |AccountingCode  |Payment | RevenueSchedule|
 |AccountingPeriod  |PaymentMethod| RevenueScheduleItem|
 |BillTo  | Product|Subscription |
-|DateDim  |ProductRatePlan|TaxationItem  | 
+|DateDim  |ProductRatePlan|TaxationItem  |
 |Invoice  | ProductRatePlanCharge |Usage |
 |InvoiceAdjustment  |RatePlan | |
 |InvoiceItem|RatePlanCharge | |

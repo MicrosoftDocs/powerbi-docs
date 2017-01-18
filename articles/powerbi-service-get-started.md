@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
+   qualityFocus="monitoring"
    qualityDate=""/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2016"
+   ms.date="12/10/2016"
    ms.author="mihart"/>
 
 # Get started with Power BI
@@ -27,6 +27,8 @@
 This tutorial helps you get started with Power BI service.  If you're looking for help with Power BI Desktop, see [Get started with Desktop](powerbi-desktop-getting-started.md).
 
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
+
+Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi).
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
@@ -41,7 +43,7 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
 1.  [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? You can sign up for [Power BI for free](http://www.powerbi.com/ "try out the new Power BI Preview for free").
 
-1.  If you're in your workspace, select **Get Data** at the bottom of the left navigation pane.
+1.  Power BI opens with a dashboard displayed. Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-service-get-started/getdata3.png)
 
@@ -62,7 +64,7 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
 Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.
 
-1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading,click the dataset name to open it.
+1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading, select the dataset name to open it. This opens the dataset as a blank report.
 
     ![](media/powerbi-service-get-started/gettingstart4.png)
 
@@ -99,7 +101,7 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
     ![](media/powerbi-service-get-started/pinSuccess.png)
 
-8.  Back on your dashboard, you can see your new visualization. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
+8.  Open the dashboard you just created. To do this, select the name under the **Dashboards** heading in the left navigation pane. Because the dashboard is new, it will have a yellow asterisk. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
 
     ![](media/powerbi-service-get-started/gsPinFirstnew.png)
 
@@ -137,3 +139,4 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 -   Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
 -   Subscribe to our [YouTube video channel](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 -   Watch our [Power BI Getting Started webinars](powerbi-webinars.md) on demand
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)

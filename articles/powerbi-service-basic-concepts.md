@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="Y4sRWbo8JcE"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,14 +18,15 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Power BI - basic concepts
+# Power BI - basic concepts for Power BI service
 
-When you first open a Power BI dashboard, you'll see your ***workspace***:
+When you first open Power BI service, you'll see your workspace. Prominently displayed will be your ***dashboard***, which is something that differentiates Power BI service from Power BI Desktop.
 
 ![](media/powerbi-service-basic-concepts/completeNewer.png)
+Your Power BI service workspace is made up of:
 
 1.  navigation bar
 2.  dashboard with tiles
@@ -37,13 +39,17 @@ When you first open a Power BI dashboard, you'll see your ***workspace***:
 
 We'll dig into these later, but first let's review some Power BI concepts.
 
+Or, you might want to watch this video first before reading the rest of this article.  In the video, Will reviews the basic concepts and gives a tour of Power BI service.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y4sRWbo8JcE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
 ## Power BI concepts
 
 The 3 major building blocks of Power BI are: ***dashboards***, ***reports***, and ***datasets***. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not very useful until they have data), so let's start with **datasets**.
 
 ## Datasets
 
-A *dataset* is something that you *import* or *connect* to. Power BI let's you connect to all sorts of datasets and bring all of it together in one place.  
+A *dataset* is something that you *import* or *connect* to. Power BI lets you connect to all sorts of datasets and bring all of it together in one place.  
 
 In the navigation bar, the datasets you've connected to are listed under the **Datasets** heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. [See the list of dataset types that can be used with Power BI](powerbi-service-get-data.md).
 
@@ -184,7 +190,7 @@ The app launcher is designed to help you get to your Office 365 apps.
 Selecting this returns you to the dashboard that you viewed most recently.
 
    ![](media/powerbi-service-basic-concepts/version-new.png)
-   
+
 ### 8. **Options**
 
 This area of the workspace contains icons for interacting with the dashboard.  Besides **add widget** and **share dashboard** selecting the ellipses reveals options for duplicating, printing, and refreshing the dashboard and more.
@@ -196,3 +202,5 @@ This area of the workspace contains icons for interacting with the dashboard.  B
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI videos](powerbi-videos.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

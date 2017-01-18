@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Resolve Issues Importing Access Databases and .XLS spreadsheets in Power BI Desktop and Power Query  
 
-In Power BI Desktop, both Access databases and early versions of Excel workbooks (.XLS files of type Excel 2007-2003) use the Access Database Engine. There are two common situations that can prevent the Access Database Engine from working properly:
+In **Power BI Desktop**, both **Access databases** and early versions of **Excel workbooks** (.XLS files of type Excel 2007-2003) use the *Access Database Engine*. There are two common situations that can prevent the Access Database Engine from working properly:
 
 ### Situation 1: No Access Database Engine Installed
 When the Power BI Desktop error message indicates the Access Database Engine in not installed, you must install the Access Database Engine version, either 32-bit or 64-bit, that matches your Power BI Desktop version. You can install the Access Database Engine from [this location](http://www.microsoft.com/en-us/download/details.aspx?id=13255).

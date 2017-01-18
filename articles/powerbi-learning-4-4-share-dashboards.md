@@ -20,12 +20,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Share Dashboards with your organization
-
-*Discover how to share dashboards with others in your organization*
 
 We've already seen how Power BI helps you find data, collect it in a data model, and build reports and visualizations on using that data. We've also seen how you can publish those reports to the Power BI service, and create dashboards that help you monitor your information over time. All these features are even more powerful when you share your insights with others in your organization. Fortunately, sharing your dashboards is easy.
 

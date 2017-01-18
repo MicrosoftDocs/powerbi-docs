@@ -1,24 +1,24 @@
-<properties 
+<properties
    pageTitle="Project Online content pack"
    description="Project Online content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
 # Project Online content pack for Power BI
 
 Microsoft Project Online is a flexible online solution for project portfolio management (PPM) and everyday work. Project Online enables organizations to get started, prioritize project portfolio investments and deliver the intended business value. The Project Online content pack for Power BI allows you to explore your project data with out-of-box metrics such as portfolio status and project compliance.
@@ -35,7 +35,7 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 
 	![](media/powerbi-content-pack-project-online/services.png)
 
-3.  Select **Microsoft Project Online** \> **Get**. 
+3.  Select **Microsoft Project Online** \> **Get**.
 
 	![](media/powerbi-content-pack-project-online/mproject.png)
 
@@ -66,5 +66,3 @@ Connect to the [Project Online content pack](https://app.powerbi.com/getdata/ser
 [Get started in Power BI](powerbi-service-get-started.md)
 
 [Get data in Power BI](powerbi-service-get-data.md)
-
-

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/03/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 # Common query tasks in Power BI Desktop
 
@@ -238,7 +238,3 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 -   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
 
 -   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
-
-Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
-
-﻿﻿![](media/powerbi-desktop-common-query-tasks/SendFeedback.png)

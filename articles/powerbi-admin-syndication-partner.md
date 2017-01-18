@@ -4,7 +4,7 @@ description="Unable to add Power BI to an Office 365 syndication partner. The sy
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/15/2016"
+ms.date="12/07/2016"
 ms.author="asaxton"/>
 # Unable to add Power BI to Office 365 partner subscription
 
@@ -74,4 +74,5 @@ This video looks at Office 365 syndication and purchasing Power BI:
 
 ## See also
 
-[Manage Azure AD using Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)
+[Manage Azure AD using Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

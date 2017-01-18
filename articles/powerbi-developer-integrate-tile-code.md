@@ -3,12 +3,12 @@
    description="Walkthrough to Integrate a tile into an app - Load a tile into an IFrame"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
-   manager="mblythe"
+   authors="guyinacube"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="no"
    qualityDate=""/>
 
 <tags
@@ -17,8 +17,8 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
-   ms.author="derrickv"/>
+   ms.date="12/07/2016"
+   ms.author="asaxton"/>
 
 # Integrate a tile into an app code listing
 
@@ -286,5 +286,8 @@ public class PBITile
     public string embedUrl { get; set; }
 }
 ```
+
 ## See also
-[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
+
+[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

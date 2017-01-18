@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/27/2016"
+   ms.date="01/11/2017"
    ms.author="davidi"/>
 
 # Shape Maps in Power BI Desktop (Preview)
@@ -82,6 +82,10 @@ You can then paste the table into Power BI Desktop. The top row is automatically
 ![](media/powerbi-desktop-shape-map/shape-map_5.png)
 
 You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
+
+> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+
+> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 
 
 ## Preview Behavior and Requirements

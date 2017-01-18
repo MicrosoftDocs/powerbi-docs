@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/03/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Query overview in Power BI Desktop  
@@ -121,7 +121,7 @@ As additional shaping steps are applied to the query, they are captured in the *
 
 It’s important to know that the underlying data is *not* changed; rather, Query Editor adjusts and shapes its view of the data, and any interaction with the underlying data occurs based on Query Editor’s shaped and modified view of that data.
 
-In the **Query Settings** pane, you can rename steps, delete steps, or reorder the steps as you see fit. To do so, right-click the step in the **Applied Steps** section, and choose from the menu that appears. All query steps are carried out in the order they appear in the **Applied Steps** pane. 
+In the **Query Settings** pane, you can rename steps, delete steps, or reorder the steps as you see fit. To do so, right-click the step in the **Applied Steps** section, and choose from the menu that appears. All query steps are carried out in the order they appear in the **Applied Steps** pane.
 
 ![](media/powerbi-desktop-query-overview/QueryOverview_QuerySettings_Rename.png)
 
@@ -155,8 +155,3 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 -   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
 -   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
-
-
-
-Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!  
-![](media/powerbi-desktop-query-overview/SendFeedback.png)  

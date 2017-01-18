@@ -3,13 +3,13 @@
    description="Walkthrough - Push data into a dashboard - Create a dataset in a Power BI dashboard"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
-   manager="mblythe"
+   authors="guyinacube"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
-   qualityDate="04/15/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -17,8 +17,8 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2016"
-   ms.author="derrickv"/>
+   ms.date="12/07/2016"
+   ms.author="asaxton"/>
 
 # Step 3: Create a dataset in a Power BI dashboard
 
@@ -239,3 +239,5 @@ Below is the [complete code listing](#code).
             #endregion
         }
     }
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

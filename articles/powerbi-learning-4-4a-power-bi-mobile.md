@@ -20,12 +20,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Introducing Power BI Mobile
-
-*See how the Power BI app lets you keep track of your data from anywhere*
 
 If you want to keep track of your data while you're on the move, you can use one of Power BI's mobile applications for iOS, Android, and Windows devices.
 

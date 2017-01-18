@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/17/2016"
+ms.date="11/16/2016"
 ms.author="asaxton"/>
 # On-Premises Data Gateway FAQ
 
@@ -30,7 +30,7 @@ ms.author="asaxton"/>
 **Answer:** No. This is not supported at this time.
 
 **Question:** Can I use the gateway to connect to a multidimensional (OLAP) instance.  
-**Answer:** Yes! The enterprise gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
+**Answer:** Yes! The On-Premises Data Gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
 
 **Question:** What if I install the gateway on a computer in a different domain from my on-premises server that uses Windows authentication?  
 **Answer:** No guarantees here. It all depends on the trust relationship between the two domains. If the two different domains are in a trusted domain model, then the gateway might be able to connect to the Analysis Services server and the effective user name can be resolved. If not, you may encounter a login failure. 
@@ -57,13 +57,10 @@ ms.author="asaxton"/>
 
 ## Power BI
 
-**Question:** If I'm using the current Power BI gateway for enterprise deployments, do I need to upgrade?
-**Answer:** Yes, but it is simple to do so as it just works the same way you upgraded to the latest enterprise gateway. Simple install the new on-premises data gateway to upgrade your existing gateway.
-
 **Question:** Do i need to upgrade the personal gateway?
 **Answer:** No, you can keep using the personal gateway for Power BI.
 
-**Question:** How often are tiles in a dashboard, in Power BI, refreshed when connected through the enterprise gateway?  
+**Question:** How often are tiles in a dashboard, in Power BI, refreshed when connected through the On-Premises Data Gateway?  
 **Answer:** About ten minutes. DirectQuery connections are just that. This doesn’t mean that a tile issues a query to your on-premises server, and shows new data, every ten minutes.
 
 **Question:** Can I upload Excel workbooks with Power Pivot data models that connect to on-premises data sources? Do I need a gateway for this scenario?  
@@ -78,9 +75,14 @@ ms.author="asaxton"/>
 **Question:** Is a Pro license required for users when interacting with a dashboard or report that makes use of the gateway?  
 **Answer:** Yes.
 
+**Question:** Why can't I connect to my Oracle server?  
+**Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the Gateway. For more information, see [Installing the Oracle Client](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+
+**Question:** Will the gateway work with ExpressRoute?  
+**Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](powerbi-admin-power-bi-expressroute.md).
+
 ## See also
-[On-premises data gateway](powerbi-gateway-onprem.md)
-
-[On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[On-premises data gateway](powerbi-gateway-onprem.md)  
+[On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

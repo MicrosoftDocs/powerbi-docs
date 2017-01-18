@@ -3,23 +3,23 @@
    description="AT Internet Bridge content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="theresapalmer" 
-   manager="mblythe" 
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
-   
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
+
 # AT Internet Bridge content pack for Power&nbsp;BI
 
 AT Internet helps you to extract immediate value from your data using its unified digital analytics platform, the Analytics Suite. The AT Internet Bridge content pack for Power BI includes data around visits, sources, localization and devices for your site.
@@ -39,12 +39,12 @@ Connect to the [AT Internet Bridge content pack](https://app.powerbi.com/getdata
 3.  Select **AT Internet Bridge** \> **Get**.
 
     ![](media/powerbi-content-pack-at-internet/atinternet.png)
-    
+
 4.  Specify the AT Internet Website Number you'd like to connect to.
 
     ![](media/powerbi-content-pack-at-internet/params.png)
 
-5.  Select **Basic** as the Authentication Mechanism, provide your AT Internet username and password, and click **Sign In**. 
+5.  Select **Basic** as the Authentication Mechanism, provide your AT Internet username and password, and click **Sign In**.
 
     ![](media/powerbi-content-pack-at-internet/creds.png)
 
@@ -76,4 +76,3 @@ This content pack contains data from the last 45 days in the following tables:
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-

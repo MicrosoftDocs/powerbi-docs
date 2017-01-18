@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 
 # Tag barcodes in Power BI Desktop for the Power BI mobile apps
@@ -57,3 +57,4 @@ These are the barcodes Power BI recognizes if you can tag them in a Power BI rep
 - [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
 - [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
 - [Get started with Power BI](powerbi-service-get-started.md)  
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

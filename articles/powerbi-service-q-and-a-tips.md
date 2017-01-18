@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2016"
+   ms.date="10/05/2016"
    ms.author="mihart"/>
 
 # Tips for asking questions in Power BI Q&A
@@ -26,7 +26,7 @@
 
 This list of keywords is not exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI does not recognize it, or doesn’t recognize it in the current context.
 
-The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted, sorting, sorted.  Also, PowerBI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
+The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted and sorting.  Also, PowerBI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
 
 >**NOTE**: If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A results for your customers.
 
@@ -105,3 +105,5 @@ After Q&A displays your results, keep the conversation going! Use the interactiv
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

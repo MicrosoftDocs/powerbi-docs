@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2016"
+   ms.date="08/25/2016"
    ms.author="mihart"/>
 
 # Featured dashboards in Power BI
@@ -31,9 +31,6 @@ To make it easier to reach the dashboard you care about most, we added the abili
 
 >**NOTE**: You can also select a few dashboards and set them as *favorites*. See [Dashboard favorites](powerbi-service-favorite-dashboards.md).
 
-The first time you log into Power BI you will see a pop-up notification letting you know about Featured dashboard.
-
-![](media/powerbi-service-featured-dashboards/featureddash.png)
 
 The **Featured dashboard** section of your left navpane will be greyed out until you set a dashboard as featured.
 
@@ -76,3 +73,5 @@ Of course, if you change your mind later you can set a new dashboard as the Feat
 [Get Started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

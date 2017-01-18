@@ -3,12 +3,12 @@
    description="Register a web app with Azure AD"
    services="powerbi"
    documentationCenter=""
-   authors="dvana"
-   manager="mblythe"
+   authors="guyinacube"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="no"
    qualityDate=""/>
 
 <tags
@@ -17,8 +17,8 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
-   ms.author="derrickv"/>
+   ms.date="12/07/2016"
+   ms.author="asaxton"/>
 
 # Step 1: Register a web app with Azure AD
 
@@ -64,10 +64,12 @@ To integrate a tile into an app, you need to get a tile which is in a dashboard.
 [Next Step >](powerbi-developer-integrate-tile-get-dashboard.md)
 
 ## See also
--	[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)
--	[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
--	[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)
--	[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)
--	[Get an authentication access token](powerbi-developer-integrate-tile-get-dashboard.md#get-token)
--	[App permissions](powerbi-developer-power-bi-permissions.md)
--	[Step 2: Get a Power BI dashboard](powerbi-developer-integrate-tile-get-dashboard.md)
+
+[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
+[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[Get an authentication access token](powerbi-developer-integrate-tile-get-dashboard.md#get-token)  
+[App permissions](powerbi-developer-power-bi-permissions.md)  
+[Step 2: Get a Power BI dashboard](powerbi-developer-integrate-tile-get-dashboard.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

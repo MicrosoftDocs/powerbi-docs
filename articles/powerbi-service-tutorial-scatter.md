@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="PVcfPoVE3Ys"
-   qualityFocus="no"
+   qualityFocus="identified"
    qualityDate=""/>
 
 <tags
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2016"
+   ms.date="11/15/2016"
    ms.author="mihart"/>
 
 # Tutorial: scatter charts and bubble charts in Power BI  
@@ -97,14 +97,15 @@ Does your scatter chart have only one data point that aggregates all the values 
 
 Add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot.  
 
-* Like a simple row number or ID field:
+   -  Like a simple row number or ID field:
 
-    ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
+      ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
 
-* Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:
+   -  Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:
+
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
 
-      Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
+   Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
 
   For more information, see [Aggregates in reports](powerbi-service-aggregates.md).
 
@@ -116,3 +117,5 @@ Add a field to the **Details** area to tell Power BI how to group the values. Th
  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 
 [Try it out -- it's free!](https://powerbi.com/)  
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

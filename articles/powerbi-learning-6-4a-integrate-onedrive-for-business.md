@@ -20,12 +20,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Integrate OneDrive for Business with Power BI
-
-*Discover how to use the advanced collaboration tools of OneDrive for Business with your Power BI files*
 
 In an earlier article we reviewed creating groups to help your organization manage and collaborate on content that's in Power BI. You can also use your Power BI / Office365 groups to collaborate and share by using **OneDrive for Business**.
 

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Display a dashboard tile in Full Screen mode (TV mode)"
+   pageTitle="Display a dashboard tile in full screen mode (TV mode)"
    description="Display a dashboard tile in full screen TV mode"
    services="powerbi"
    documentationCenter=""
@@ -17,18 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 
-# Display a dashboard tile in Full Screen Mode
+# Display a dashboard tile in full screen mode
 
-Tiles must first be [popped out](powerbi-service-display-dash-in-focus-mode.md) before they can be displayed in Full Screen Mode.
+Tiles must first be in [Focus mode](powerbi-service-display-dash-in-focus-mode.md) before they can be displayed in full screen mode.
 
 ## What is Full Screen Mode?
 
 Display your [dashboards, reports](powerbi-service-dash-and-reports-fullscreen.md), and tiles without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is sometimes referred to as TV Mode.
 
-Some uses for Full Screen Mode are:
+Some uses for full screen mode are:
 
 - presenting your tile at a meeting or conference
 - displaying your tile in an office on a dedicated large screen or projector
@@ -36,23 +36,23 @@ Some uses for Full Screen Mode are:
 - reviewing your tile in locked mode -- you can touch the screen or mouse over the tile without opening the underlying report
 
 
-## To turn Full Screen Mode on (and off)
+## To turn full screen mode on (and off)
 
 1. [Pop out the tile and display it in Focus mode](powerbi-service-display-dash-in-focus-mode.md).
 
-    ![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen.png)
+    ![](media/powerbi-service-display-tile-in-full-screen-mode/power-bi-focus.png)
 
-    Your tile fills the report canvas.
+    Your tile fills the canvas.
 
-    ![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen2.png)
+    ![](media/powerbi-service-display-tile-in-full-screen-mode/power-bi-focus2.png)
 
 3. From the top menubar, select this icon    ![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen-icon.png) to display the tile in Full Screen mode.
 
-4.  In Full Screen mode, the tile fills your entire screen.
+4.  In full screen mode, the tile fills your entire screen.
 
-    ![](media/powerbi-service-display-tile-in-full-screen-mode/power-bi-full-screen4.png)
+    ![](media/powerbi-service-display-tile-in-full-screen-mode/power-bi-fullscreen.png)
 
-4. To exit Full Screen mode, select the **Exit Full Screen** icon located in the bottom right corner of the screen.
+5. To exit full screen mode, select the **Exit Full Screen** icon located in the bottom right corner of the screen.
 
     ![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen-close.png)
 
@@ -61,3 +61,5 @@ Some uses for Full Screen Mode are:
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

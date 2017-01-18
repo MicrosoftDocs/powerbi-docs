@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/26/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 
@@ -27,12 +27,11 @@ With Power BI Desktop, you can connect to data from many different sources. A fu
 
 To connect to data, select **Get Data** from the **Home** ribbon. Selecting the down arrow, or the **Get Data** text on the button, shows the **Most Common** data types menu shown in the following image.
 
-![](media/powerbi-desktop-data-sources/QueryOverview_GetDataMenu.png)
-
+![](media/powerbi-desktop-data-sources/data-sources_1.png)
 
 Selecting **More…** from the **Most Common** menu displays the **Get Data** window. You can also bring up the **Get Data** window (and bypass the **Most Common** menu) by selecting the **Get Data** **icon button** directly.
 
-![](media/powerbi-desktop-data-sources/DataSources_GetData.png)
+![](media/powerbi-desktop-data-sources/data-sources_2.png)
 
 ## Data Sources
 
@@ -59,7 +58,7 @@ The **File** category provides the following data connections:
 
 The following image shows the **Get Data** window for **File**.
 
-![](media/powerbi-desktop-data-sources/DataSources_File.png) 
+![](media/powerbi-desktop-data-sources/data-sources_3.png)
 
 The **Database** category provides the following data connections:
 
@@ -68,21 +67,23 @@ The **Database** category provides the following data connections:
 -   SQL Server Analysis Services Database
 -   Oracle Database
 -   IBM DB2 Database
--   IBM Informix Database (Beta)
 -   MySQL Database
 -   PostgreSQL Database
 -   Sybase Database
 -   Teradata Database
 -   SAP HANA Database
+-   IBM Informix Database (Beta)
 -   SAP Business Warehouse
--   Impala (Beta)
 -   Amazon Redshift (Beta)
+-   Impala (Beta)
+-   Snowflake (Beta)
+
 
 > **Note:** Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings.
 
 The following image shows the **Get Data** window for **Database**.
 
-![](media/powerbi-desktop-data-sources/DataSources_Database2.png)
+![](media/powerbi-desktop-data-sources/data-sources_4.png)
 
 
 The **Azure** category provides the following data connections:
@@ -93,31 +94,35 @@ The **Azure** category provides the following data connections:
 -   Microsoft Azure HDInsight
 -   Microsoft Azure Blob Storage
 -   Microsoft Azure Table Storage
--   Azure HDInsight Spark (Beta)
+-   Microsoft Azure HDInsight Spark (Beta)
 -   Microsoft Azure DocumentDB (Beta)
 -   Microsoft Azure Data Lake Store (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
-![](media/powerbi-desktop-data-sources/DataSources_Azure.png)
+![](media/powerbi-desktop-data-sources/data-sources_5.png)
 
 
 The **Online Services** category provides the following data connections:
 
 -   SharePoint Online List
 -   Microsoft Exchange Online
--   Dynamics CRM Online
+-   Dynamics 365
+-   PowerApps Common Data Service (Beta)
 -   Facebook
--   Google Analytics
 -   Salesforce Objects
 -   Salesforce Reports
+-   Google Analytics
 -   appFigures (Beta)
 -   Azure Enterprise (Beta)
 -   comScore Digital Analytix (Beta)
 -   GitHub (Beta)
 -   MailChimp (Beta)
 -   Marketo (Beta)
+-   Dynamics 365 for Financials (Beta)
+-   Mixpanel (Beta)
 -   Planview Enterprise (Beta)
+-   Projectplace (Beta)
 -   QuickBooks Online (Beta)
 -   SparkPost (Beta)
 -   Smartsheet
@@ -133,7 +138,7 @@ The **Online Services** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Online Services**.
 
-![](media/powerbi-desktop-data-sources/DataSources_OnlineServices.png)
+![](media/powerbi-desktop-data-sources/data-sources_6.png)
 
 The **Other** category provides the following data connections:
 
@@ -144,13 +149,16 @@ The **Other** category provides the following data connections:
 -   Active Directory
 -   Microsoft Exchange
 -   ODBC
+-   OLE DB
 -   R Script
 -   Spark (Beta)
 -   Blank Query
 
 The following image shows the **Get Data** window for **Other**.
 
-![](media/powerbi-desktop-data-sources/PBID_GetDataOther2.png)
+![](media/powerbi-desktop-data-sources/data-sources_7.png)
+
+> **Note:** At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
 
 ## Connecting to a Data Source
 
@@ -183,9 +191,7 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 -   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 -   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)    
 
-Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
 
-![](media/powerbi-desktop-data-sources/SendFeedback.png)
 
 
  

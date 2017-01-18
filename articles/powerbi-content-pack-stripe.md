@@ -1,24 +1,24 @@
-﻿<properties 
+﻿<properties
    pageTitle="Stripe content pack"
    description="Stripe content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
 
 # Stripe content pack for Power&nbsp;BI
 
@@ -63,4 +63,3 @@ Connect to the [Stripe content pack for Power BI](https://app.powerbi.com/getdat
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Get Data for Power BI](powerbi-service-get-data.md)
-

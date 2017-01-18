@@ -4,12 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="04/01/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="12/07/2016"
    ms.author="asaxton"/>
 
 # Refresh a dataset created from an Excel workbook on a local drive
@@ -47,7 +47,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created
 ## How do I make sure data is loaded to the Excel data model?  
 When you use Power Query (Get & Transform data in Excel 2016) to connect to a data source, you have several options where to load the data. To make sure you load data into the data model, you must select the **Add this data to the Data Model** option in the **Load To** dialog box.
 
-> **Note**: The images here show Excel 2016.
+> [AZURE.NOTE] The images here show Excel 2016.
 
 In **Navigator**, click **Load To…**  
 	![](media/powerbi-refresh-excel-file-local-drive/Refresh_LoadToDM_1.png)
@@ -81,3 +81,5 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
 
 [Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

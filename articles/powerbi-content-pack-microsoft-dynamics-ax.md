@@ -1,27 +1,27 @@
-<properties 
+<properties
    pageTitle="Microsoft Dynamics AX content pack"
    description="Microsoft Dynamics AX content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="theresapalmer" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2016"
-   ms.author="tpalmer"/>
+   ms.date="12/08/2016"
+   ms.author="yshoukry"/>
 # Microsoft Dynamics AX content pack for Power&nbsp;BI
 
-Microsoft Dynamics AX has three Power BI content packs targeted at different business users. The Financial Performance content pack, designed specifically for CFOs, provides access to insights about your organization’s financial performance. The Retail Channel Performance content pack is targeted for channel managers focuses on sales performance to predict trends and uncover insights by drawing directly from Retail & Commerce data. The Cost Management is designed for COOs and CFOs and provides details on operation performance. 
+Microsoft Dynamics AX has three Power BI content packs targeted at different business users. The Financial Performance content pack, designed specifically for CFOs, provides access to insights about your organization’s financial performance. The Retail Channel Performance content pack is targeted for channel managers focuses on sales performance to predict trends and uncover insights by drawing directly from Retail & Commerce data. The Cost Management is designed for COOs and CFOs and provides details on operation performance.
 
 Connect to the Microsoft Dynamics AX [Retail Channel Performance](https://app.powerbi.com/getdata/services/dynamics-ax-retail-channel-performance), the [Financial Performance](https://app.powerbi.com/getdata/services/dynamics-ax-financial-performance) or the [Cost Management](https://app.powerbi.com/getdata/services/dynamics-ax-cost-management) content pack for Power BI.
 
@@ -43,7 +43,7 @@ Connect to the Microsoft Dynamics AX [Retail Channel Performance](https://app.po
 
 	![](media/powerbi-content-pack-microsoft-dynamics-ax/params.png)
 
-5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Dynamics AX credentials. 
+5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Dynamics AX credentials.
 
 	![](media/powerbi-content-pack-microsoft-dynamics-ax/creds.png)
 

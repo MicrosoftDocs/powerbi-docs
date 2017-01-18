@@ -4,11 +4,11 @@ description="This covers the steps to select a gateway and configure scheduled r
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
-qualityFocus="complete"
-qualityDate="04/01/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/15/2016"
+ms.date="12/07/2016"
 ms.author="asaxton"/>
 # Configuring scheduled refresh
 
@@ -55,7 +55,7 @@ If you are using the personal gateway to refresh data, you will need to supply t
 
 You’re only required to sign in to data sources the first time you use refresh on that dataset. Once entered, those credentials are retained with the dataset. 
 
-> **Note**: For some authentication methods, if the password you use to sign into a data source expires or is changed, you'll need to change it for the data source in Data Source Credentials too.
+> [AZURE.NOTE] For some authentication methods, if the password you use to sign into a data source expires or is changed, you'll need to change it for the data source in Data Source Credentials too.
 
 When things go wrong, the problem usually has something to do with either the gateway being offline because it could not sign in to Windows and start the service, or Power BI could not sign in to the data sources in order to query for updated data. If refresh fails, check the dataset’s settings. If the gateway service is offline, Gateway Status is where you’ll see the error. If Power BI cannot sign into the data sources, you’ll see an error in Data Source Credentials.
 
@@ -85,7 +85,7 @@ Certain datasets are supported against different gateways for scheduled refresh.
 
 **Excel**
 
-> **Note**: In Excel 2016, and later, Power Query is now listed on the Data section of the ribbon, under Get & Transform data.
+> [AZURE.NOTE] In Excel 2016, and later, Power Query is now listed on the Data section of the ribbon, under Get & Transform data.
 
 -   All online data sources shown in Power Query.
 -   All on-premises data sources shown in Power Query except for Hadoop file (HDFS) and Microsoft Exchange.
@@ -105,13 +105,9 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 
 ## See also
 
-[Data refresh in Power BI](powerbi-refresh-data.md)
-
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)
-
-[On-premises Data Gateway](powerbi-gateway-onprem.md)
-
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
-
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
-
+[Data refresh in Power BI](powerbi-refresh-data.md)  
+[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
+[On-premises Data Gateway](powerbi-gateway-onprem.md)  
+[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+More questions? [Try the Power BI Community](http://community.powerbi.com/)

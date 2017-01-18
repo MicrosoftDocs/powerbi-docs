@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/27/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Connect to an Impala database in Power BI Desktop (Preview)
@@ -30,7 +30,7 @@ To get access to the **Impala** connector, you first need to enable this preview
 
 ![](media/powerbi-desktop-connect-impala/connect_impala_1.png)
 
-When you check that box, you turn on the **Impala** preview feature. You'll need to restart Power BI Desktop for the change to take effect. Once you do, the preview features is available.
+When you check that box, you turn on the **Impala** preview feature. You'll need to restart Power BI Desktop for the change to take effect. Once you do, the preview feature is available.
 
 ## Connect to an Impala database
 
@@ -38,9 +38,9 @@ Once you've enabled to preview feature, to connect to an **Impala** database sel
 
 ![](media/powerbi-desktop-connect-impala/connect_impala_2.png)
 
-In the **Impala** window that appears, type or paste the name of your Impala server into the box, and select **OK**.
+In the **Impala** window that appears, type or paste the name of your Impala server into the box, and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](powerbi-desktop-use-directquery.md).
 
-![](media/powerbi-desktop-connect-impala/connect_impala_3.png)
+![](media/powerbi-desktop-connect-impala/connect_impala_3a.png)
 
 When prompted, put in your username and password, or connect anonymously - either is supported.
 
@@ -56,7 +56,7 @@ Once you successfully connect, a **Navigator** window appears and displays the d
 
 There are a few limits and considerations to keep in mind in this preview version of the **Impala** connector:
 
--   The connector currently only supports *Import* mode, which requires downloading the query output data to the local data model. Future plans include enabling *DirectQuery* as well as refresh support using the **Power BI Gateway**.
+-   Future plans include enabling refresh support using the **Power BI Gateway**.
 
 ## More Information
 
