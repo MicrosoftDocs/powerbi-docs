@@ -132,7 +132,7 @@ When completed, you should see the properties of your application group look sim
 
 ## Web Application Proxy (WAP) Configuration
 
-You will want to enable the Web Application Proxy (Role) Windows role on a server in your environment. This must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) and [Configure extranet access for AD FS on Windows Server 2012 R2](https://msdn.microsoft.com/library/azure/dn528859.aspx).
+You will want to enable the Web Application Proxy (Role) Windows role on a server in your environment. This must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### Constrained delegation configuration
 
@@ -219,7 +219,7 @@ After you select **Sign in**, you will see the elements from your Reporting Serv
 
 ## Multi-factor authentication
 
-You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Secure your cloud and on-premises resources using Azure Multi-Factor Authentication Server with AD FS in Windows Server 2012 R2](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-adfs-w2k12)
+You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Configure AD FS 2016 and Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
 
 ## Troubleshooting
 
@@ -238,5 +238,6 @@ If the sign in works successfully when using Fiddler, you may have a certificate
 [Configure Windows Authentication on a Report Server](https://msdn.microsoft.com/library/cc281253.aspx)  
 [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services)  
 [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
-[Configure extranet access for AD FS on Windows Server 2012 R2](https://msdn.microsoft.com/library/azure/dn528859.aspx)
+[Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
+[Configure AD FS 2016 and Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
