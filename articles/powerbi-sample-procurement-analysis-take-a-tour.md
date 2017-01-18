@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2016"
+   ms.date="12/08/2016"
    ms.author="amac"/>
 
 # Procurement Analysis sample for Power BI: Take a tour
 
 This industry sample dashboard and underlying report analyze a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
 
--   Who the top vendors are.
--   What categories we spend most on.
--   Which vendors give us the highest discount and when.
+-   Who the top vendors are
+-   What categories we spend most on
+-   Which vendors give us the highest discount and when
 
 This sample is part of a series that illustrates how you can use  Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
@@ -125,10 +125,10 @@ Another area to explore is discount by city. Select each city in the treemap and
 
 Select **Edit report** in the upper-left corner and explore in Editing View.
 
--   See how the pages are made.
--   Add pages and charts based on the same data.
--   Change the visualization type for a chart – for example, change the treemap to a donut chart.
--   Pin them to your dashboard.
+-   See how the pages are made
+-   Add pages and charts based on the same data
+-   Change the visualization type for a chart – for example, change the treemap to a donut chart
+-   Pin them to your dashboard
 
 This is a safe environment to play in. You can always choose not to save your changes. If you do save them, you can always go to **Get Data** for a new copy of this sample.
 

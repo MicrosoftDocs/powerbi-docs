@@ -1,25 +1,25 @@
-﻿<properties 
+﻿<properties
    pageTitle="Webtrends content pack"
    description="Webtrends content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
-   
+
 # Webtrends content pack for Power&nbsp;BI
 
 The Webtrends content pack for Power BI includes a variety of out of box metrics such total page views and visits by traffic source. Visualizing your Webtrends data in Power BI starts by connecting to your Webtrends account. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once per day.
@@ -94,7 +94,7 @@ Note: For SharePoint profiles, the metric names may be a little different than w
 
 ## System requirements
 
-The content pack requires access to a Webtrends profile with the [correct set of reports](#Included) enabled. 
+The content pack requires access to a Webtrends profile with the [correct set of reports](#Included) enabled.
 
 <a name="FindingParams"></a>
 ## Finding parameters

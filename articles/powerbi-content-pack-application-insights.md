@@ -3,30 +3,30 @@
    description="Application Insights content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="joeshoukry" 
-   manager="mblythe" 
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
-   
+
 # Application Insights content pack for Power&nbsp;BI
 
 Use Power BI to create powerful custom dashboards from [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) telemetry. Envision your app telemetry in new ways. Combine metrics from multiple apps or component services onto one dashboard. This first release of the Power BI content pack for Application Insights includes widgets for common usage-related metrics such as active users, page view, sessions, browser and OS version, and geographic distribution of users in a map.
 
 Connect to the [Application Insights content pack for Power BI](https://app.powerbi.com/getdata/services/application-insights).
 
-Note: Access to the Application Insights overview blade for your application in the Azure Preview Portal is required to connect. More details on requirements below. 
+Note: Access to the Application Insights overview blade for your application in the Azure Preview Portal is required to connect. More details on requirements below.
 
 ## How to connect
 
@@ -36,7 +36,7 @@ Note: Access to the Application Insights overview blade for your application in 
 
 2. In the **Services** box, select **Get**.
 
-    ![Get Services button](media/powerbi-content-pack-application-insights/PBI_GetServices.png) 
+    ![Get Services button](media/powerbi-content-pack-application-insights/PBI_GetServices.png)
 
 3. Select **Application Insights** > **Get**.
 
@@ -46,7 +46,7 @@ Note: Access to the Application Insights overview blade for your application in 
 
     ![Application Insights connection dialog box](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitConnectnDialog.png)    
 
-5. Select **Sign In** and follow the screens to connect. 
+5. Select **Sign In** and follow the screens to connect.
 
     ![Application Insights connection sign-in](media/powerbi-content-pack-application-insights/PBI_ContPkAppInsitConnectn2.png)
 
@@ -100,4 +100,3 @@ Copy and paste these into the fields into Power BI:
 [Get started in Power BI](powerbi-service-get-started.md)
 
 [Get data in Power BI](powerbi-service-get-data.md)
-

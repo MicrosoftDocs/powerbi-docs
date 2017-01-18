@@ -1,23 +1,23 @@
-﻿<properties 
+﻿<properties
    pageTitle="comScore Digital Analytix content pack"
    description="comScore Digital Analytix content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
    
 # comScore Digital Analytix content pack for Power&nbsp;BI
@@ -98,5 +98,3 @@ The comScore site determines which site you’d like to see the data from. You c
 [Get started in Power BI](powerbi-service-get-started.md)
 
 [Get data in Power BI](powerbi-service-get-data.md)
-
-

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/12/2016"
+   ms.date="12/02/2016"
    ms.author="davidi"/>
 
 # Use grouping and binning in Power BI Desktop
@@ -40,7 +40,11 @@ Once you have a group, you can easily edit the members of that group by right-cl
 
 ![](media/powerbi-desktop-grouping-and-binning/grouping-binning_3.png)
 
-In the **Groups** window that appears, you can create new groups or modify existing groups. You can also select whether ungrouped categories should be placed into the **Other** group, or should remain ungrouped.
+In the **Groups** window that appears you can create new groups, or modify existing groups. You can also *rename* any group by double-clicking on the **Group** title in the **Groups and members** box, and typing a new name.
+
+There are all sorts of things you can do with groups in this window. You can add items from the **Ungrouped values** list into a new group, or into one of the existing groups. To create a new group, select two or more items (using CTRL+click) from the **Ungrouped values** box and then click the **Group** button below that box.
+
+You can add an ungrouped value into an existing group: just select the Ungrouped value, then select the existing group to which you want to add it, and click the **Group** button. To remove an item from a group, select it from the **Groups and members** box and then click **Ungroup**. You can also select whether ungrouped categories should be placed into the **Other** group, or should remain ungrouped.
 
 ![](media/powerbi-desktop-grouping-and-binning/grouping-binning_4.png)
 

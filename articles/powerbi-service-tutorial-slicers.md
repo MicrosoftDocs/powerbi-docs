@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="7rrvpa6KUto"
+   featuredVideoId="zHUjz_0iZf0"
    qualityFocus="monitoring"
    qualityDate=""/>
 
@@ -18,14 +18,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/08/2016"
+   ms.date="01/06/2017"
    ms.author="mihart"/>
 
 # Tutorial: slicers in Power BI  
 
 Your VP of Sales wants to be able to look at a number of metrics, for the entire division and for each individual District Manager. She could create a separate report page for each manager, or she could use a slicer. A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.
 
-    ![](media/powerbi-service-tutorial-slicers/slicer2.gif)
+![](media/powerbi-service-tutorial-slicers/slicer2.gif)
 
 ## When to use a slicer  
 Slicers are a great choice in the following situations.
@@ -40,9 +40,9 @@ Slicers are a great choice in the following situations.
 
 ## Create a slicer
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7rrvpa6KUto" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zHUjz_0iZf0" frameborder="0" allowfullscreen></iframe>
 
-1.  Open the [Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).
+1.  Open the [Retail Analysis Sample](powerbi-sample-retail-analysis-take-a-tour.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and [add a new report page](powerbi-service-add-a-page-to-a-report.md).
 
 2. From the Fields pane, select **District > District Manager**. 
 

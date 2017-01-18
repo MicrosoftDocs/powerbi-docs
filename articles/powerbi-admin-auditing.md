@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/11/2016"
+   ms.date="01/06/2017"
    ms.author="asaxton"/>
 # Auditing Power BI in your organization
 
@@ -206,6 +206,7 @@ For a full listing, see [Detailed properties in the Office 365 audit log](https:
 |CreateGroup|This activity is fired every time a group is created.|- Group name.|
 |AddGroupMembers|This activity is logged every time a member is added to a Power BI group workspace.|- Group name.<br/>- Email addresses.|
 |UpdatedAdminFeatureSwitch|This event is logged every time an admin feature switch is changed.|- Switch name.<br/>- New switch state.|
+|OptInForProTrial|This event is logged when a user choses to try Power BI Pro within the service.|- email address|
 
 ## See also
 

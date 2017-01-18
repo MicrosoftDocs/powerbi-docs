@@ -4,8 +4,8 @@
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
-   manager="mblythe"
-   backup=""
+   manager="erikre"
+   backup="maggiesMSFT"
    editor=""
    tags=""
    featuredVideoId="0tUwn8DHo3s"
@@ -18,8 +18,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/13/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
 # Share a dashboard and reports with colleagues and others
 
@@ -99,6 +99,10 @@ They can't edit any content in this dashboard or report. They can interact with 
 Only your direct recipients can see the shared dashboard. In the example above, only Vicki@contoso.com can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
 
 People outside your organization can't see any data if role- or row-level security is implemented on Analysis Services tabular models on-premises.
+
+### Publish to the web
+
+On the other hand, you can share with people outside your organization by publishing a report to the web. However, you can't control who you're sharing with. Anyone on the Internet can see it. Read more about [publishing to the web](powerbi-service-publish-to-web.md).
 
 ## Share just a report
 We've seen that when you share a dashboard that has tiles that link to reports, those reports are also shared at the same time. But what if you want to share just a report? Simply send the report page URL to your colleagues. As long as they are members of the same distribution group, in the same email domain as you, or have at least one dashboard that links to that same report (the dashboard has tiles that were pinned from that report), they'll be able to open the report.

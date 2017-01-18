@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="12/11/2016"
    ms.author="mihart"/>
 
 # Delete a report from Power BI  

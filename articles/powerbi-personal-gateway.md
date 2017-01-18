@@ -1,10 +1,10 @@
-﻿<properties 
+﻿<properties
    pageTitle="Power BI Gateway - Personal"
    description="Power BI Gateway - Personal"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="01/09/2017"
    ms.author="asaxton"/>
 
 # Power BI Gateway - Personal
 
-Power BI Gatway - Personal acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support [refresh](powerbi-refresh-data.md). This article is meant to provide you with an in-depth understanding of how the gateway works and whether or not a gateway is necessary for you. We've also put together this [helpful video](https://www.youtube.com/watch?v=de58vROLqZI) about the personal gateway. 
+The **Power BI Gateway - Personal** acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support [refresh](powerbi-refresh-data.md). This article is meant to provide you with an in-depth understanding of how the gateway works and whether or not a gateway is necessary for you. We've also put together this [helpful video](https://www.youtube.com/watch?v=de58vROLqZI) about the personal gateway. 
 
 The personal gateway is only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md). It installs and runs as a service on your computer. As a service, it runs using a Windows account you  specify during configuration. In some cases, the Gateway runs as an application. We'll go into more about that later.
 
@@ -54,7 +54,9 @@ With a gateway, REFRESH NOW and SCHEDULE REFRESH are supported for datasets uplo
 
 ### Online data sources
 
-A personal gateway *is not required* in order to refresh datasets that get data only from an online data source.
+A gateway *is only required* if you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function. In other cases, a gateway is *not* required in order to refresh datasets that get data only from an online data source.
+
+> Note: If you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, you only need a gateway if you have republished the dataset or your report after November 18th, 2016.
 
 REFRESH NOW and SCHEDULE REFRESH are supported without a gateway for datasets uploaded from:
 

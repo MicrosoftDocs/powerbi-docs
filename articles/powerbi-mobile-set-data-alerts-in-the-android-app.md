@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/04/2016"
+   ms.date="12/13/2016"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI app for Android phones
@@ -30,25 +30,23 @@ You can set alerts in the Power BI mobile app for Android phones and in the Powe
 
 ## Set an alert
 
-1.  Tap a number or gauge tile in a dashboard to open it.  
+1.  In a Power BI dashboard, tap a number or gauge tile to open it.  
 
 2.  Tap the bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-alert-icon.png) to add an alert.  
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-number-tile.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-tap-alert.png)
 
 3.  Tap the plus icon (+).
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-no-alerts-yet.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-plus-alert.png)
 
 4.  Choose to receive alerts above or below a value, and type the value.
 
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-set-alert-condition.png)
+    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-set-alert-rule.png)
 
 4.  Tap **Done**.
 
 5.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
-
-    ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-set-alert-frequency.png)
 
     >**Note**: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
 
@@ -85,7 +83,7 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 
 1.  In a dashboard, tap a card or gauge tile that has an alert.  
 
-2.  Tap the solid bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-alert-yes-icon.png).  
+2.  Tap the solid bell icon ![](media/powerbi-mobile-set-data-alerts-in-the-android-mobile-app/power-bi-android-filled-alert-bell.png).  
 
 3. Tap the alert to change a value or turn it off.
 

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="12/12/2016"
    ms.author="mihart"/>
 # Add a custom visualization to a Power BI report
 

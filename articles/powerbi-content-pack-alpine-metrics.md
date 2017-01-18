@@ -1,23 +1,23 @@
-<properties 
+<properties
    pageTitle="Alpine Metrics Sales Predictions content pack"
    description="Alpine Metrics Sales Predictions content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 
 # Alpine Metrics Sales Predictions content pack for Power&nbsp;BI  
@@ -29,15 +29,15 @@ Connect to the [Alpine Metrics Sales Predictions content pack](https://app.power
 ## How to connect
 
 1. Select Get Data at the bottom of the left navigation pane.  
-    
+
     ![](media/powerbi-content-pack-alpine-metrics/getdata.png)
 
 2. In the **Services** box, select **Get**.  
-    
+
     ![](media/powerbi-content-pack-alpine-metrics/services.png)
 
 3. Select **AlpineMetrics Sales Predictions**, then select **Get**.  
-    
+
     ![](media/powerbi-content-pack-alpine-metrics/alpine.png)
 
 4. Select **OAuth 2** and then **Sign In**. When prompted, provide your AlpineMetrics credentials.
@@ -78,10 +78,9 @@ The content pack includes data from the following tables:
 ## System requirements
 
 An Alpine Metrics account with permissions to the above tables is required in order to instantiate this content pack.
-    
+
 ### See also
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-

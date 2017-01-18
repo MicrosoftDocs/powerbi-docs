@@ -1,29 +1,29 @@
-<properties 
+<properties
    pageTitle="Xero content pack"
    description="Xero content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 # Xero content pack for Power&nbsp;BI
 
 Xero is easy to use online accounting software that’s designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI content pack. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days and return on investment.
 
-Connect to the [Xero content pack](https://app.powerbi.com/getdata/services/xero) for Power BI or learn more about the [Xero and Power BI](https://help.xero.com/Power-BI) integration. 
+Connect to the [Xero content pack](https://app.powerbi.com/getdata/services/xero) for Power BI or learn more about the [Xero and Power BI](https://help.xero.com/Power-BI) integration.
 
 ## How to connect
 
@@ -46,7 +46,7 @@ Connect to the [Xero content pack](https://app.powerbi.com/getdata/services/xero
 5. For **Authentication Method** and select **OAuth**, when prompted sign into your Xero account and select the organisation to connect to. Once the login completes, select **Sign In** to start the loading process.
 
 	![](media/powerbi-content-pack-xero/creds.png)
-    
+
     ![](media/powerbi-content-pack-xero/creds2.png)
 
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
@@ -96,7 +96,7 @@ The dataset also includes the following tables to customize your reports and das
 
 ## System requirements
 
-The following roles are required to access the Xero content pack: "Standard + Reports" or "Advisor". 
+The following roles are required to access the Xero content pack: "Standard + Reports" or "Advisor".
 
 <a name="FindingParams"></a>
 ## Finding parameters
@@ -107,9 +107,9 @@ Provide a name for your organisation to track in Power BI. This allows you to co
 
 -   Xero users must have the following roles to access the Xero content pack for Power BI: "Standard + Reports" or "Advisor". The content pack relies on the user-based permissions to access reporting data through Power BI.  
 
--   If you receieve a failure after loading for some time, verify how long it took to see that error message. Note that the access token provided by Xero is only valid for 30min so accounts with more data than can be loaded in that timeframe will fail. We're actively working to improve this. 
+-   If you receieve a failure after loading for some time, verify how long it took to see that error message. Note that the access token provided by Xero is only valid for 30min so accounts with more data than can be loaded in that timeframe will fail. We're actively working to improve this.
 
--   During the load the tiles on the dashboard will be in a generic loading state. This is not expected to change until the full load completes. If you receive a notification that your load completed but the tiles are still loading, try refreshing the dashboard tiles using the ... in the top right of your dashboard. 
+-   During the load the tiles on the dashboard will be in a generic loading state. This is not expected to change until the full load completes. If you receive a notification that your load completed but the tiles are still loading, try refreshing the dashboard tiles using the ... in the top right of your dashboard.
 
 -   If your content pack fails to refresh, please check if you have connected to the same organisation more than once in Power BI. Xero only allows a single active connection to an organisation and you may see an error indicating your credentials are invalid if you connect to the same one more than once.  
 

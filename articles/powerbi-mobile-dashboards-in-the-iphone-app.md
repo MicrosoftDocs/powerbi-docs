@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/30/2016"
+   ms.date="11/17/2016"
    ms.author="maggies"/>
 
 # Dashboards in the iPhone app (Power BI for iOS)  
@@ -36,6 +36,10 @@ Then in the iPhone app for Microsoft Power BI for iOS, you can explore these sam
 3.  Tap a dashboard to open it.  
 
      ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-home.png)
+
+     -     The yellow stars ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
+
+     -     The notation below each dashboard name ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
 
     By default, Power BI dashboards look a little different on your iPhone. All the tiles appear the same size, and they're arranged one after another from top to bottom.
 

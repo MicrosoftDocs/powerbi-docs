@@ -4,8 +4,8 @@
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
-   backup=""
+   manager="erikre" 
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="monitoring"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
 # Create a group in Power BI  
 
@@ -30,8 +30,8 @@ You can invite colleagues from your organization to your Power BI group, even if
 
 There are other ways to share in Power BI. See [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) for more information. 
 
->**Notes:**  
-
+> [AZURE.NOTE] 
+> 
 > -   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 > -  You can't publish reports to the web from a group.
 
@@ -40,12 +40,12 @@ There are other ways to share in Power BI. See [How should I share my dashboard?
 1.  In Power BI, select the down arrow next to My Workspace, then select the plus sign (+) next to **Group Workspaces**.   
     ![](media/powerbi-service-create-a-group-in-power-bi/PBI_GrpCreate.png)
 
-2.  In the **Create a Group** pane on the right, fill in a name.  
+2.  In the **Create a Group** pane on the right, give your group a name.  
     ![](media/powerbi-service-create-a-group-in-power-bi/PBI_GrpCreateDialog.png)
 
     Power BI suggests a Group ID and lets you know if it's available. If it's not, select the pencil to the right of the **Group ID** box to modify it.  
 
-    >**Note:**  The group ID will be the group's email address:  
+    > [AZURE.NOTE]  The group ID will be the group's email address:  
     >*yourgroupID*@service.microsoft.com.  
     >If you forget the group ID, you can see it by going to the group's Office 365 Outlook account.
 
@@ -53,9 +53,9 @@ There are other ways to share in Power BI. See [How should I share my dashboard?
 
     **Private:** Only group members can see the group’s contents. People in your organization can request membership in your group. You or another admin can accept or reject their request.
 
-    **Public:** People in your organization can make themselves members of the group, without needing permission from an admin. As soon as they're members, they have the same permissions that other group members have.
+    **Public:** People in your organization can make themselves members of the group, without needing permission from an admin. As soon as they're members, they have the same permissions as other group members.
 
-    You can't change the Public/Private setting after you've created the group.
+    > [AZURE.NOTE]  You can't change the Public/Private setting after you've created the group.
 
 4.  Decide whether all members of the group can modify the group's content, or if only the admins can modify the content, and members can only read it. Select either:
      
@@ -67,16 +67,19 @@ There are other ways to share in Power BI. See [How should I share my dashboard?
 
     You can change the edit/view-only setting later, after you've created the group. 
 
-5.  Add members by typing in the **Add group member** box, or copying and pasting multiple email addresses from Outlook. Select **Add**. 
+5.  Add members by typing in the **Add group member** box, or copying and pasting multiple email addresses from Outlook. 
 
-    >**Notes**:  
+    > [AZURE.NOTE] 
     >
     > - Currently you can't add team or security group distribution lists to groups. 
     >  
     > - If some potential members don't already have a Power BI account and aren't in Azure Active Directory, Power BI sends them an email invitation to join Power BI. When they accept, you see them as members of the group. 
 
+6.  Select **Add**. 
+
 5.  Select **Admin** or **Member** for each group member.
-	Admins can modify content in the group. By default, members can modify the content, unless you changed that in the previous step.
+
+    All admins can modify content in the group. By default, members can modify the content, unless you changed that in the previous step.
 
 7.  Select **Save**.
 
@@ -84,15 +87,15 @@ Now you have a group where you can store files, and everyone in the group can wo
 
 ## More about groups in Power BI  
 
-Groups in Power BI bring you and your colleagues together to collaborate, communicate, and connect with your data across Office 365. Create a group in either Power BI or Office 365. Then invite co-workers into this group workspace where you can collaborate on your organization’s shared dashboards, reports, and datasets.  
+Groups in Power BI bring you and your colleagues together to collaborate, communicate, and connect with your data across Office 365. 
 
 Groups and [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) complement each other. When you create dashboards, reports, or content packs in the group workspace, you can decide that everyone in that group can edit the group's content, or you can let some members edit, and others just read. See [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) for more about other ways to share.  
 
-Collaboration doesn’t end with Power BI. It continues with other Office 365 group services, like sharing files on OneDrive for Business, conversations in Exchange, calendar, tasks, and so on. [Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md).
+Collaboration doesn’t end with Power BI. Office 365 offers other group services, like sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. [Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md).
 
-You can also share dashboards, reports, and datasets read-only with people outside your group. The process is the same as [sharing dashboards in your own workspace.](powerbi-service-share-unshare-dashboard.md)
+You can also share the group's dashboards, reports, and datasets read-only with people outside the group. The process is the same as [sharing the dashboards in your own workspace.](powerbi-service-share-unshare-dashboard.md)
 
-### See also
+## See also
 - [Connect to files on your group's OneDrive for Business](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md)  
 - [Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md)  
 - [Manage your group](powerbi-service-manage-your-group-in-power-bi-and-office-365.md) 

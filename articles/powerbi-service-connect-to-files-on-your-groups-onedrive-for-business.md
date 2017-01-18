@@ -1,11 +1,11 @@
 <properties 
-   pageTitle="Connect to files on your group's OneDrive for Business"
+   pageTitle="Connect to files on your Power BI group's OneDrive for Business"
    description="Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on your group’s OneDrive for Business."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
-   backup=""
+   manager="erikre" 
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
-# Connect to files on your group's OneDrive for Business
+# Connect to files on your Power BI group's OneDrive for Business
 
-Now that you've [created a group in Power BI](powerbi-service-create-a-group-in-power-bi.md), you can store your Excel, CSV, and Power BI Desktop files on your group’s OneDrive for Business. You can continue updating files you store in your OneDrive for Business, and those updates are automatically reflected in the reports and dashboards based on the files. 
+Now that you've [created a group in Power BI](powerbi-service-create-a-group-in-power-bi.md), you can store your Excel, CSV, and Power BI Desktop files on your Power BI group’s OneDrive for Business. You can continue updating files you store in OneDrive for Business, and those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
 
 >**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
@@ -42,7 +42,7 @@ Adding files to your group’s Power BI workspace is a two-step process: 
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GrpWkspaceFiles.png)
 
-    >**Note**: If you don't see **Files** on the group menu, select **Members** to open the group's OneDrive for Business. There, select **Files**. Office 365 sets up a OneDrive storage location for your group files.  
+    >**Note**: If you don't see **Files** on the group menu, select **Members** to open the group's OneDrive for Business. There, select **Files**. Office 365 sets up a OneDrive storage location for your group files. This process may take some time. 
 
 3.  Here, you can upload your files to your Office 365 group's OneDrive. Select **Upload**, and navigate to your files.
 
@@ -53,9 +53,9 @@ Adding files to your group’s Power BI workspace is a two-step process: 
 
 Now that your files are in your group’s OneDrive for Business, you have a choice. You can: 
 
--   [Import data from the Excel workbook as datasets](powerbi-service-get-data-from-files.md), and use the data to build reports and dashboards you can view in a web browser and on mobile devices.
+-   [Import the data from the Excel workbook as a dataset](powerbi-service-get-data-from-files.md), and use the data to build reports and dashboards you can view in a web browser and on mobile devices.
 
--   Or [connect to whole Excel workbooks in Power BI](powerbi-bring-in-whole-excel-files.md) and display them exactly as they appear in Excel Online.
+-   Or [connect to a whole Excel workbook in Power BI](powerbi-bring-in-whole-excel-files.md) and display it exactly as it appears in Excel Online.
 
 ### Import or connect to your group's files
 
@@ -82,14 +82,13 @@ Now that your files are in your group’s OneDrive for Business, you have a choi
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_ImportExcelDataOrWholeCrop.png)
 
-    New items are marked with a yellow asterisk.  
+8. After you import or connect, these new items are marked with a yellow asterisk.  
 
     Excel files have an Excel icon and are under **Reports**.
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/pbi_excel_file.png)
 
-
-### See also
+## See also
 - [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
 - [Import data from Excel workbooks](powerbi-service-get-data-from-files.md)
 - [Connect to whole Excel workbooks](powerbi-bring-in-whole-excel-files.md)

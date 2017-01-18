@@ -1,15 +1,11 @@
 ﻿<properties
    pageTitle="Introduction to Cortana for Power BI"
-   description="Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from mobile devices."
+   description="Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset."
    services="powerbi"
    documentationCenter=""
-   authors="mihart"  
+   authors="fetiye"  
    manager="mblythe"
-   backup=""
-   editor=""
-   tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   editor=""/>
 
 <tags
    ms.service="powerbi"
@@ -17,67 +13,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/19/2016"
+   ms.date="11/22/2016"
    ms.author="mihart"/>
 
 
 # Introduction to Cortana for Power BI
 
-Ask natural language questions in Cortana and find answers from data stored in Power BI.
-
->[AZURE.NOTE]  Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
-
 ## How do Cortana and Power BI work together?
 
-With the November 2015 update of Windows 10, Cortana can now find answers from data stored in Power BI through the integration between Cortana and Power BI.
+Ask questions and get answers in the form of Cortana report pages.
 
-Similar to Power BI Q&A, ask or type your questions using natural language. Cortana will search your Cortana-enabled datasets in Power BI for answers and display results directly in your Windows 10 device.   
+You can search for your Cortana-enabled Power BI report pages through Cortana and view them in Cortana without navigating to Power BI.  You can use natural language to apply filters and retrieve a filtered view of the Cortana reports. You'll be able to interact with the visualizations as you would in Power BI --  filtering, highlighting, opening in Power BI, and much more.  
 
-Cortana can find answers either directly from datasets in Power BI or from report pages published to Power BI and designed specifically for Cortana (called *Answer Pages*).  Interact with the visualizations as you would in Power BI or, to further explore an answer, simply open a result in Power BI.
+The "answers" are actually a special type of report called a *Cortana report page* that are designed specifically for display by Cortana. Dataset owners can [create the Cortana report pages in Power BI](powerbi-service-cortana-desktop-entity-cards.md). These report pages should be designed to answer the most-common questions.   
 
->[AZURE.NOTE]  Cortana now works with on-premises data that has been [enabled for Q&A](powerbi-service-q-and-a-direct-query.md).
+Colleagues can even ask questions with filters and the report page that Cortana displays will have those filters applied. For example, if you have a report page named "2016 sales data", you can ask for:
+-    "2016 sales data" and see the complete unfiltered report page
+-    "2016 sales data for Surface" and see the report page filtered to show only sales data for Surface.
 
-Cortana ranks the answers from Power BI, giving you one or more best matches if there is high confidence a result is a good answer. Other potential answers from Power BI are listed in a Power BI section below any best matches. If you're a dataset owner, you can help Cortana return better answers by [creating specialized reports (called *Answer Pages*) for Cortana](powerbi-service-cortana-desktop-entity-cards.md) in Power BI to answer the most-common questions and by optimizing your model for Power BI Q&A.
+##  Next steps
 
-## How do I get started?
+-    Before Cortana can look for answers in your Power BI datasets and reports, you'll need to [enable this feature in the Power BI service](powerbi-service-Cortana-enable.md).  
 
-- Cortana looks for answers in Power BI datasets that you have access to. If you are a dataset owner, [enable Cortana to access the dataset (and its reports)](powerbi-service-cortana-enable.md).  
-
-- If you are a dataset owner, [create Answer Pages designed specifically for Cortana](powerbi-service-cortana-desktop-entity-cards.md).
-
-## Tips for using Power BI with Cortana
-
-### Before you begin
-
-In Power BI, you can work with datasets that you own or that have been shared with you. To access those same datasets in Cortana, a dataset owner must [enable each  dataset for Cortana](powerbi-service-cortana-enable.md).  
-
-### Asking questions
-
-Any Power BI user can use Cortana to ask questions about their Power BI datasets.  Dataset owners can [improve answers by creating Answer Pages in Power BI](powerbi-service-cortana-desktop-entity-cards.md).  
-
-1. Using Cortana, ask or type a question.  For example, ask "how many new stores opened in March?"
-
-2. Cortana looks for answers in the Power BI reports and datasets available to you, and displays them under the heading **Power BI** and marked with the Power BI icon.
-
-3. Power BI first looks for answers in [Answer Pages](powerbi-service-cortana-desktop-entity-cards.md) and then searches your datasets and reports for other answers and displays them in the form of visualizations.  The highest-scoring results display first as *best matches*, followed by links to other possible answers and applications. Best matches come from Power BI Answer Pages or Power BI reports.
-  >[AZURE.NOTE] If you speak your question, Cortana will only display **Power BI** answers if it finds a best match.  
-
-4. To open an answer in Power BI, select the link.
-
-
-### Other Tips
-
--  If the report has a filter, Cortana will understand questions that specify items in the filter's list, and apply the filter on-the-fly.
-
-- Cortana will only search for answers in Power BI if the question has 2 or more words.
-
-- If you add the word "my" to your question, Cortana searches available datasets for answers that contain information found in your Windows 10 profile (the information you see when you click on your picture).
-
-## See also
-[Enable Cortana for Power BI](powerbi-service-cortana-enable.md)
-
-[Introduction to Power BI Q&A](powerbi-service-q-and-a.md)
-
-[Power BI basic concepts](powerbi-service-basic-concepts.md)
+- If you are a dataset owner, use Power BI to [create special reports designed specifically for Cortana](powerbi-service-Cortana-Desktop-entity-cards.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+

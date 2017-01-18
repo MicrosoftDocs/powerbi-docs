@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="01/13/2017"
    ms.author="maggies"/>
 
 # View report page tiles in the Power BI for Android app
@@ -32,7 +32,7 @@ When you [create a dashboard](powerbi-service-dashboards.md) in the Power BI ser
 
     ![](media/powerbi-mobile-report-page-tiles-in-the-android-app/power-bi-android-report-tile-open-report.png)
 
-### See also
+## See also
 
 - [Tiles in the Android app](powerbi-mobile-tiles-in-the-android-app.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

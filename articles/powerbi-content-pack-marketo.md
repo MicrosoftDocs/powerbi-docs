@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/26/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 
 # Marketo content pack for Power&nbsp;BI
@@ -56,7 +56,7 @@ Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/m
 6.  Once connected to your Marketo account, a dashboard with all your data is loaded:
 
     ![](media/powerbi-content-pack-marketo/PBI_MarketoDash.png)
-    
+
 **What Now?**
 
 - Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
@@ -67,7 +67,7 @@ Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/m
 
 - While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
-## What's included 
+## What's included
 
 The following data is available from Marketo in Power BI where the activity occurred between today and one year ago:
 
