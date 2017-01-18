@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/21/2016"
+   ms.date="01/18/2017"
    ms.author="asaxton"/>
 # SQL Server Analysis Services live data in Power BI
 
