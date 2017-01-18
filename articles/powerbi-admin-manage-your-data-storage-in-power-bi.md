@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="12/07/2016"
    ms.author="asaxton"/>
 # Manage your data capacity in Power BI
 
@@ -25,9 +25,9 @@ Power BI offers two licenses, Power BI (free) and Power BI Pro, with different d
 
 -   Free users have a maximum 1 GB data capacity.
 
--   Pro users of Power BI Pro have 20 GB maximum capacity.
+-   Pro users of Power BI Pro have 10 GB maximum capacity.
 
--   Pro users can create groups, with a maximum 20 GB data capacity each.
+-   Pro users can create groups, with a maximum 10 GB data capacity each.
 
 At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and groups in the tenant. 
 
@@ -115,3 +115,5 @@ You will also see this indicated within **Manage personal storage**.
  **Pro dialog** 
  
  ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+
+ More questions? [Try the Power BI Community](http://community.powerbi.com/)
