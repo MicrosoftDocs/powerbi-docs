@@ -3,7 +3,7 @@ pageTitle="Troubleshooting the On-Premises Data Gateway"
 description="This article provides ways for you to troubleshoot issues you are having with the On-Premises Data Gateway. It provides potential workarounds to known issues, as well as tools to assist you."
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
+authors="davidiseminger"
 manager="erikre"
 backup=""
 editor=""
@@ -17,8 +17,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/11/2017"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # Troubleshooting the On-Premises Data Gateway
 
 This article discusses some common issues you may encounter when using the **On-premises Data Gateway**.

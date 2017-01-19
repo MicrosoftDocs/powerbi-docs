@@ -3,7 +3,7 @@ pageTitle="Manage your data source - Analysis Services"
 description="How to manage the on-premises data gateway and data sources that belong to that gateway. This is for Analysis Services in both Multidimensional and Tabular mode."
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
+authors="davidiseminger"
 manager="erikre"
 backup=""
 editor=""
@@ -17,8 +17,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="11/16/2016"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # Manage your data source - Analysis Services
 
 Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.

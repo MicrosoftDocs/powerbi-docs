@@ -3,8 +3,8 @@ pageTitle="On-premises data gateway"
 description="This is an overview of the On-premises data gateway for Power BI. You can use this gateway to work with DirectQuery data sources. You can also use this gateway to refresh cloud datasets with on-premises data."
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
-manager="mblythe"
+authors="davidiseminger"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,8 +17,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="11/16/2016"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # On-premises data gateway
 
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
