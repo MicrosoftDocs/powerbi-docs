@@ -30,8 +30,7 @@ In this tutorial you'll learn many different ways to customize your visualizati
 ## Customize visualization titles in reports    
 I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
 
->[AZURE.NOTE]  
->When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](powerbi-service-edit-a-tile-in-a-dashboard.md).
+>[AZURE.NOTE] When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](powerbi-service-edit-a-tile-in-a-dashboard.md).
 
 1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
 
