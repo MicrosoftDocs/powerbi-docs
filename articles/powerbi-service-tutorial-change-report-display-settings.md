@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
+   ms.date="01/19/2017"
    ms.author="mihart"/>
 
 # Tutorial: Change the display settings for a page in a Power BI report
@@ -26,7 +26,7 @@ In the [previous article and video](powerbi-service-change-report-display-settin
 
 ## First, let's change the page View setting
 
-1.  Open a report in Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  By default, pages display using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
+1.  Open a report in Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  This page is displayed using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_fit_to_page.png)
 
@@ -70,23 +70,23 @@ All Power BI reports default to **Fit to page** view. But what if you want this 
 
 1.  Open the "District monthly sales" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md) in Editing View.
 
-2.  Make sure that no visualizations are selected on the canvas.  In the **Visualizations** pane, select the paintbrush icon ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_paintbrush.jpg).
+2.  Make sure that no visualizations are selected on the canvas.  In the **Visualizations** pane, select the paint roller icon ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-paintroller.png).
 
 3.  Select **Page Size** &gt; **Type** to display the page size options.
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-page-size-menu.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-page-size-menu-new.png)
 
 4.  Select **Letter**.  On the canvas, only the contents that fit within 816 x 1056 pixels (Letter size) remain on the white portion of the canvas.
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-letter.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-letter-new.png)
 
 5.  If we change **View** to "Fit to Width," our canvas now displays only the page contents that fit into the letter size.
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-fit-to-width.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-fit-to-width-new.png)
 
 6.  Select **16:9** page ratio.
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-16-to-9.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-16-to-9-new.png)
 
     The report page displays using a ratio of 16 wide by 9 high. To see the actual pixel size being used, take a look at the greyed out Width and Height fields (1280x720). There is a lot of empty space around the report canvas; this is because we previously set **View** to "Fit to width".
 
@@ -108,15 +108,19 @@ Remember in the previous step we saw that our report page is currently displayin
 
 3. Set Width to 500 and set Height to 750.
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom-new.png)
 
 4. Tweak the report page so that it looks its best. Switch between **View > Actual size** and **View > Fit to page** to make adjustments.
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-final.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-final-new.png)
 
 ## See also
 [Create reports for Cortana](powerbi-service-cortana-desktop-entity-cards.md)
+
 Back to [Page display settings in a Power BI report](powerbi-service-change-report-display-settings.md)
+
 Read more about  [reports in Power B ](powerbi-service-reports.md)
+
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

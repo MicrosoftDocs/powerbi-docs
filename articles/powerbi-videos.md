@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="01/19/2017"
    ms.author="mihart"/>
 # Power BI Videos
 
@@ -37,11 +37,11 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 
 ## Watch some of our new uploads
 
--  [DAX expressions and variables](https://www.youtube.com/watch?v=kd4tgKxhRTU)
+-  [Time intelligence](https://youtu.be/MNAaHw4PxzE)
 
--  [Taking your content offline](https://www.youtube.com/watch?v=u7cnpupfVnE)
+-  [Grouping and binning](https://youtu.be/51n2itS7K5I)
 
--  [Introduction to Power BI mobile](https://www.youtube.com/watch?v=07uBWhaCo78)
+-  [SAP HANA](https://youtu.be/FOjJLvsIACc)
 
 
 
