@@ -1,6 +1,7 @@
 <properties 
    pageTitle="Known issue with 'communication failures' in iOS mobile apps"
    description="This article may help if you see this message, 'We encountered communication failures. The failures might be related to proxy settings on your Wi-Fi connection.'" 
+   services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="erikre" 
