@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2016"
+   ms.date="01/19/2017"
    ms.author="mihart"/>
 
 # Featured dashboards in Power BI
@@ -27,7 +27,7 @@
 
 Many of you have one dashboard that you visit more than any others.  It might be the dashboard you use to run your business, or it might contain an aggregation of tiles from many different dashboards and reports.
 
-To make it easier to reach the dashboard you care about most, we added the ability to feature a dashboard in your workspace. This means Power BI will always open to this dashboard (instead of the last dashboard you visited).  And you can reach your Featured dashboard at any time by selecting  **Featured dashboard** in the left navigation pane.
+To make it easier to reach the dashboard you care about most, we added the ability to feature a dashboard in your workspace. This means Power BI will always open to this dashboard (instead of the last dashboard you visited).  And you can reach your featured dashboard at any time by selecting  **Featured dashboard** in the left navigation pane.
 
 >**NOTE**: You can also select a few dashboards and set them as *favorites*. See [Dashboard favorites](powerbi-service-favorite-dashboards.md).
 
@@ -58,7 +58,7 @@ Watch Amanda create a featured dashboard and then follow the instructions below 
 
 ## Change the Featured dashboard
 
-Of course, if you change your mind later you can set a new dashboard as the Featured dashboard, or you can remove the Featured dashboard altogether.
+Of course, if you change your mind later you can set a new dashboard as the featured dashboard, or you can remove the featured dashboard altogether.
 
 1. Select the ‘…’ and choose **Disable Featured dashboard**.
 

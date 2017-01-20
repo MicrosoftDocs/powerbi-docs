@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/01/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 
 # Tutorial: Customize visualization title, background, and legend
@@ -36,9 +36,11 @@ I’ve signed in to the Power BI service and I’m starting with the Retail Anal
 1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
 
 2.  In the Visualizations and Filters pane, select the paintbrush icon ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) to reveal the formatting options and select **Title** to expand that section.  
+
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull-new.png)
 
 3.  Turn  **Title** on and off by selecting the On (or Off) slider. For now, leave it **On**.  
+
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/onoffslider.png)
 
 4.  Change **Title Text** by typing **Store count by month opened** in the text field.  

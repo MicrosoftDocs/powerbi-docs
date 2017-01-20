@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 # Tutorial: Combo Chart in Power BI
 
@@ -65,7 +65,9 @@ To create your own combo chart, sign in to Power BI and select **Get Data \> S
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combotutorial1new.png)
 
-5. Convert the column chart to a combo chart. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
+5. Select the ellipses (...) in the upper-right corner of the visualization, and select **Sort by FiscalMonth**.
+
+6. Convert the column chart to a combo chart. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new2.png)
 
@@ -73,7 +75,7 @@ To create your own combo chart, sign in to Power BI and select **Get Data \> S
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/linevaluebucket.png)
 
-    Your combo chart should look like this:
+    Your combo chart should look something like this:
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochartdone-new.png)
 
@@ -102,9 +104,11 @@ In this task, we'll compare gross margin and sales.
 
 ## Add titles to the axes
 
-1.  Select the down arrow to expand the **Y-axis** options.
+1.  Select the paint roller icon ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-paintroller.png) to open the Formatting pane.
 
-2.  For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display** as **Millions**.
+2. Select the down arrow to expand the **Y-axis** options.
+
+3.  For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display** as **Millions**.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-y-axis-column.png)
 

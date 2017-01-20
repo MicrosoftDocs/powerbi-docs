@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/07/2017"
    ms.author="mihart"/>
 
 # Add a tile directly from the dashboard itself
@@ -102,6 +102,10 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 3. Select the video tile to play the video.
 
 4. Select the subtitle to visit the playlist on YouTube.
+
+##  Add streaming data
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
 ## Add web content
 
