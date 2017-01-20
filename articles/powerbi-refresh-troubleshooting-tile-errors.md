@@ -3,7 +3,7 @@ pageTitle="Troubleshooting tile errors"
 description="Common errors that may be encountered when a tile tries to refresh"
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
+authors="davidiseminger"
 manager="erikre"
 backup=""
 editor=""
@@ -17,8 +17,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="12/07/2016"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # Troubleshooting tile errors
 
 Below are the common errors you may encounter with tiles along with an explanation.

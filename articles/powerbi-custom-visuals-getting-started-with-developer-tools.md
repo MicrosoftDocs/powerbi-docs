@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/23/2016"
+   ms.date="01/18/2017"
    ms.author="asaxton"/>
 
 # Create a custom visual with the custom visual developer tools
