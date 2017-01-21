@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2016"
+   ms.date="01/20/2017"
    ms.author="maggies"/>
 
 # Share dashboards from the iPad app (Power BI for iOS)
@@ -58,20 +58,10 @@ You can only unshare a dashboard if you're the dashboard owner.
 
 3.  To unshare, tap the red circle next to a name and tap **Delete**.
 
-## Notes about sharing dashboards
-
-You and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard.
-
--   If your colleagues haven't signed up for Power BI yet, they need to do so to see your dashboard.
-
--   Your colleagues can see your dashboard and even see changes you make in the Power BI service online, after you save those changes.
-
--   You can share snapshots of tiles with anyone, in or out of your email domain. You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
 
 ### See also
 
 - [Dashboards in the iPad app](powerbi-mobile-dashboards-on-the-ipad-app.md)
 - [Annotate and share a snapshot of a tile from the iPad app](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
 - [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
-- [The iPad app](powerbi-mobile-iphone-app-get-started.md) for Power BI for iOS
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
