@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 # Tutorial: funnel charts in Power BI
 
@@ -107,8 +107,6 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
     ![](media/powerbi-service-tutorial-funnel-charts/FunnelChartNoOwl.gif)
 
     >[AZURE.TIP]  Use CTRL to multi-select. 
-
-2.  In the "Factored Revenue by Opportunity" chart, highlight the **Large** bar to cross-filter the other visualizations on the page, including the funnel chart.
 
 3. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md)
 
