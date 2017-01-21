@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 # Rename a Power BI dashboard
 
