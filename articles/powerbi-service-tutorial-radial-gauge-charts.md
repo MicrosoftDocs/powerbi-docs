@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Radial Gauge charts in Power BI"
+   pageTitle="Radial gauge charts in Power BI (Tutorial)"
    description="Tutorial: Radial Gauge charts in Power BI"
    services="powerbi"
    documentationCenter=""
@@ -21,7 +21,7 @@
    ms.date="11/15/2016"
    ms.author="mihart"/>
 
-# Tutorial: radial gauge charts in Power BI
+# Radial gauge charts in Power BI (Tutorial)
 
 A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal/KPI.  The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading.  And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
@@ -96,7 +96,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
     The gauge is redrawn with a new end value, 1.21 million in gross sales.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/power-bi-final-gauge.png)
-    
+
 
 ### Step 5: Save your report
 

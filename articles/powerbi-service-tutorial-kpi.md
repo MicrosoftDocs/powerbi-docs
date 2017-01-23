@@ -1,5 +1,5 @@
 <properties
-   pageTitle="KPI visuals"
+   pageTitle="KPI visuals (Tutorial)"
    description="create KPI in power bi"
    services="powerbi"
    documentationCenter=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/12/2016"
+   ms.date="02/22/2017"
    ms.author="mihart"/>
 
-# KPIs in Power BI
+# KPI visuals (Tutorial)
 
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more information about KPIs, see [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
