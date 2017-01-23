@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2017"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
 # KPI visuals (Tutorial)
