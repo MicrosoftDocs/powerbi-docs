@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2016"
+   ms.date="01/23/2017"
    ms.author="davidi"/>
 
-# Third-party service: Google Analytics connector for Power BI Desktop  
+# Google Analytics connector for Power BI Desktop  
 
 >**Note:** The Google Analytics content pack and the connector in Power BI Desktop rely on the Google Analytics Core Reporting API. As such, features and availability may vary over time.
 
