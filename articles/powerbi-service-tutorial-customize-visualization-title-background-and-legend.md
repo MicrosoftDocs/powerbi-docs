@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Customize visual titles, legends, and backgrounds. "
+   pageTitle="Customize visual titles, legends, and backgrounds (Tutorial)"
    description="Tutorial: Customize visualization title, background, and legend"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Tutorial: Customize visualization title, background, and legend
+# Customize visual titles, legends, and backgrounds (Tutorial)
 
 In this tutorial you'll learn many different ways to customize your visualizations. Not all visualizations can be customized, [see the complete list](#list).  Specifically, this tutorial covers customizing:  
 -   visualization titles  

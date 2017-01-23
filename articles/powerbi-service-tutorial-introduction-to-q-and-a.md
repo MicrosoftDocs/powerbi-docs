@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Get started with Power BI Q&A"
+   pageTitle="Get started with Power BI Q&A (Tutorial)"
    description="Tutorial: get started with Power BI Q&A with the Retail Analysis sample"
    services="powerbi"
    documentationCenter=""
@@ -17,9 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
-# Tutorial: use Power BI Q&A with the Retail Analysis sample
+
+#  Get started with Power BI Q&A (Tutorial)
+## Tutorial: use Power BI Q&A with the Retail Analysis sample
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this tutorial we'll look at 2 different ways of creating the same visualization: building it in a report and asking a question with Q&A.  
 

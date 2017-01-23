@@ -1,10 +1,10 @@
 ﻿<properties
-   pageTitle="Tutorial: Funnel charts in Power BI"
+   pageTitle="Funnel charts (Tutorial)"
    description="Tutorial: Funnel charts in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,9 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
-# Tutorial: funnel charts in Power BI
+
+# Funnel charts (Tutorial)
 
 A funnel chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
@@ -47,7 +48,7 @@ Funnel charts are a great choice:
 -   to track the progress and success of click-through advertising/marketing campaigns.
 
 ## Working with funnel charts
-funnel charts:
+Funnel charts:
 
 -   Can be pinned from reports and from Q&A.
 
@@ -106,7 +107,7 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 
     ![](media/powerbi-service-tutorial-funnel-charts/FunnelChartNoOwl.gif)
 
-    >[AZURE.TIP]  Use CTRL to multi-select. 
+    >[AZURE.TIP]Use CTRL to multi-select. 
 
 3. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md)
 

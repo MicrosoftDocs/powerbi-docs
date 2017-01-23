@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Whitepaper: Best design practices for Power BI reports and visualizations"
+   pageTitle="Best design practices for reports and visuals"
    description="best practices for designing reports in Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/10/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
 
 
-#   Principles for Designing Power BI reports
+#   Best design practices for reports and visuals
 
 ##  Introduction
 This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report.  Many of these best practices apply to dashboard design as well.

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Tips and tricks for creating visually stunning reports in Power BI service"
+   pageTitle="Tips for creating stunning reports"
    description="Tips and tricks for creating reports in Power BI service"
    services="powerbi"
    documentationCenter=""
@@ -17,11 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
-# Tips and tricks for creating reports in Power BI service
 
-Creating and working with reports in Power BI service and in Power BI Desktop is very similar, so most of these links apply to either. 
+# Tips for creating stunning reports
+
+Creating and working with reports in Power BI service and in Power BI Desktop is very similar, so most of these links apply to either.
 
 For more technical tips & tricks for creating reports in Power BI Desktop, see [Tips and Tricks for creating reports in Power BI Desktop](powerbi-desktop-tips-and-tricks-for-creating-reports).
 ##  Read the whitepaper: [Principles for designing Power BI reports](powerbi-service-visualization-best-practices)

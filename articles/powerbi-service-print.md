@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Print a dashboard, print a dashbaord tile, print a report page"
+   pageTitle="Printing from Power BI service"
    description="Printing a dashboard, tile, or report page from Power BI."
    services="powerbi"
    documentationCenter=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Printing from Power BI
+# Printing from Power BI service
 
 Print an entire dashboard, a dashboard tile, a report page, or a report visual from Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
 
