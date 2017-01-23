@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Manage your data capacity in Power BI test"
+   pageTitle="Manage your data capacity in Power BI"
    description="Manage your data capacity and storage in Power BI"
    services="powerbi" 
    documentationCenter="" 
