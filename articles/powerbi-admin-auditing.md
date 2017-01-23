@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Auditing Power BI in your organization"
+   pageTitle="Using auditing within your organization"
    description="Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell."
    services="powerbi"
    documentationCenter=""
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2017"
+   ms.date="01/23/2017"
    ms.author="asaxton"/>
-# Auditing Power BI in your organization
+# Using auditing within your organization
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 

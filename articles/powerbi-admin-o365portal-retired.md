@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Power BI for Office 365 is transitioned to Power BI"
+   pageTitle="Power BI for Office 365 is retired"
    description="Power BI for Office 365 is retired, learn how to use and administer today's Power BI."
    services="powerbi"
    documentationCenter=""

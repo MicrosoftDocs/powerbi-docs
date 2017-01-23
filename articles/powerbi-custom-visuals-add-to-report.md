@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Add a custom visualization to a Power BI report"
+   pageTitle="Add a custom visualization to a report"
    description="Add a custom visual to a Power BI report"
    services="powerbi"
    documentationCenter=""
@@ -18,9 +18,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/12/2016"
+   ms.date="01/24/2017"
    ms.author="mihart"/>
-# Add a custom visualization to a Power BI report
+# Add a custom visualization to a report
 
 You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
