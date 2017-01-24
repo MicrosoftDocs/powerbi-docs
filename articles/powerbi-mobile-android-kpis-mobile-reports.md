@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View Reporting Services mobile reports and KPIs in the Android app"
+   pageTitle="View SSRS mobile reports and KPIs in the Android app"
    description="The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information."
    services="powerbi" 
    documentationCenter="" 
@@ -17,17 +17,27 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/16/2016"
+   ms.date="01/23/2017"
    ms.author="maggies"/>
 
-# View Reporting Services mobile reports and KPIs in the Android app for Power BI 
+# View SSRS mobile reports and KPIs in the Android app
+
+Applies to:
+
+| ![Android phone](media/powerbi-mobile-android-kpis-mobile-reports/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-android-kpis-mobile-reports/android-tablet-logo-50-px.png) |
+|:------------------------|:----------------------------|
+| Android phones | Android tablets |
+
 The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information on Android phones and tablets. 
 
-![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ssrs_and_foldrs.png)
+![](media/powerbi-mobile-android-kpis-mobile-reports/power-bi-android-tablet-ssrs-home.png)
 
-First things first:
+*Reporting Service KPIs and mobile reports in the Power BI app on an Android tablet*
 
--  You [create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). You can even [create a special mobile report layout for phones](https://msdn.microsoft.com/library/mt703702.aspx). 
+
+## First things first
+
+-  You [create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). You can even [create special mobile report layouts for phones and tablets](https://msdn.microsoft.com/library/mt703702.aspx). 
 -   You can also create KPIs right in the web portal, and organize them all in folders and mark your favorites, so you can find them easily. 
 
 Then in the Android app for Power BI, view the mobile reports and KPIs, organized in folders or collected as favorites. 
@@ -80,7 +90,8 @@ Reporting Services KPIs and mobile reports are displayed in the same folders the
 
 - Tap a mobile report to open and interact with it in the Power BI app.
 
-    ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_ssrs_rpt.png)
+
+    ![](media/powerbi-mobile-android-kpis-mobile-reports/power-bi-android-tablet-ssrs-sample-report.png)
 
 ## View your favorite KPIs and reports
 
@@ -108,10 +119,10 @@ You can only be connected to one report server at a time from your Android app. 
 You don't create Reporting Services KPIs and mobile reports in the Power BI mobile app. You create them in SQL Server 2016 Enterprise Edition Mobile Report Publisher and a SQL Server 2016 Reporting Services web portal.
 
 - [Create your own Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) and publish them to the Reporting Services web portal.
-- [Create a special mobile report layout for phones or tablets](https://msdn.microsoft.com/library/mt703702.aspx).
+- [Create special mobile report layouts for phones and tablets](https://msdn.microsoft.com/library/mt703702.aspx).
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)
 
-### See also  
+## See also  
 - [Get started with the Power BI app for Android phones](powerbi-mobile-android-app-get-started.md)  
 - [Get started with the Power BI app for Android tablets](powerbi-mobile-android-tablet-app-get-started.md)
 - [Get started with Power BI](powerbi-service-get-started.md)  

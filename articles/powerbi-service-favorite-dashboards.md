@@ -1,10 +1,10 @@
-﻿<properties
-   pageTitle="Favorite dashboards in Power BI"
+<properties
+   pageTitle="Favorite dashboards in the Power BI service"
    description="Documentation on how to dashboards as favorites in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/23/2017"
    ms.author="mihart"/>
 
-# Favorite dashboards in Power BI
+# Favorite dashboards in the Power BI service
 
 When you make a dashboard a *favorite*,  you'll be able to access it from all of your workspaces.  Favorite dashboards are typically those that you visit most often.
 

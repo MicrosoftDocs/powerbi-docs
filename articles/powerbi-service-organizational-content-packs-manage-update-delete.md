@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Manage, update, and delete organizational content packs in Power BI"
+   pageTitle="Manage, update, and delete organizational content packs"
    description="Read about managing, updating, and deleting organizational content packs in Power BI."
    services="powerbi" 
    documentationCenter="" 
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="01/23/2017"
    ms.author="ajayan"/>
-# Manage, update, and delete organizational content packs in Power BI
+# Manage, update, and delete organizational content packs
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](powerbi-service-organizational-content-packs-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
 

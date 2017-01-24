@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="01/23/2017"
    ms.author="maggies"/>
 # Annotate and share a tile from the Power BI app for Android tablets 
 

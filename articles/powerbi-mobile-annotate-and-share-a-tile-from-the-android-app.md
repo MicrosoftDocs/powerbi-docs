@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Annotate and share a tile from the Power BI app for Android phones"
+   pageTitle="Annotate and share a tile from the mobile app for Android"
    description="Read about sharing snapshots of tiles from the Android app for Microsoft Power BI. The snapshot shows the tile exactly as it was when you sent the mail."
    services="powerbi" 
    documentationCenter="" 
@@ -17,9 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="01/23/2017"
    ms.author="maggies"/>
-# Annotate and share a tile from the Android app for Power BI
+# Annotate and share a tile from the mobile app for Android
+
+Applies to:
+
+| ![Android phone](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/android-tablet-logo-50-px.png) |
+|:------------------------|:----------------------------|
+| Android phones | Android tablets |
 
 When you share a snapshot of a tile from the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md), the snapshot shows the tile exactly as it was when you sent the mail. Your recipients can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
 
@@ -47,9 +53,9 @@ You can add annotations — lines, comments, or stickers — to a tile before yo
 
 	-   Tap the microphone to record a message, which is displayed as text on your tile. Then tap **Done**.
 
-5. After annotating, tap **Share** in the upper-right corner and send, using any sharing app you have on your Android phone.
+5. After annotating, tap **Share** in the upper-right corner and send, using any sharing app you have on your Android device.
 
-### See also
+## See also
 
 -  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play
 -  [Share a dashboard from the Android app](powerbi-mobile-share-a-dashboard-from-the-android-app.md)
