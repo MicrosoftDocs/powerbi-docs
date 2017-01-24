@@ -1,6 +1,6 @@
 ﻿<properties 
-   pageTitle="Capturing additional diagnostic information for Power BI"
-   description="Capturing additional diagnostic information for Power BI"
+   pageTitle="Capturing additional diagnostic information"
+   description="Capturing additional diagnostic information"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,7 +20,7 @@
    ms.date="01/18/2017"
    ms.author="asaxton"/>
 
-# Capturing additional diagnostic information for Power BI  
+# Capturing additional diagnostic information
 
 ## Capturing Additional Diagnostic Information for Power BI  
 These instructions provide two potential options for manually collecting additional diagnostic information from the Power BI web client.  Only one of these options needs to be followed.

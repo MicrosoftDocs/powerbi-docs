@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Create a custom visual with the custom visual developer tools"
+   pageTitle="Use developer tools to create custom visuals"
    description="Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2017"
+   ms.date="01/23/2017"
    ms.author="asaxton"/>
 
-# Create a custom visual with the custom visual developer tools
+# Use developer tools to create custom visuals
 
 Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
 
