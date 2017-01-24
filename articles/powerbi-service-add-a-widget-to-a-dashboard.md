@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Add an image, text box, video, or web code to your dashboard"
+   pageTitle="Add image, text, video, and more to your dashboard"
    description="Documentation on how to add an image, video, text box, web code tile to a dashboard."
    services="powerbi"
    documentationCenter=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/07/2017"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Add a tile directly from the dashboard itself
+# Add image, text, video, and more to your dashboard
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HivEJ5lN3l4" frameborder="0" allowfullscreen></iframe>
 

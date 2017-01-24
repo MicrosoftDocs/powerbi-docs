@@ -1,10 +1,10 @@
 <properties
-   pageTitle="Tutorial: Combo Chart in Power BI"
+   pageTitle="Combo Chart in Power BI (Tutorial)"
    description="This documentation is a tutorial (with video) that shows you why and how to create a Combo Chart in Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,9 +18,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
-# Tutorial: Combo Chart in Power BI
+# Combo Chart in Power  (Tutorial)
 
 In Power BI, a combo chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.
 

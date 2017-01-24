@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Create a big number tile for a Power BI dashboard by asking a question"
+   pageTitle="Create a big number tile from Q&A"
    description="Create a big number tile for a Power BI dashboard by asking a question"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Create a big number tile for a Power BI dashboard by asking a question  
+# Create a big number tile from Q&A  
 
 Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can [create a big number tile in a Power BI report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md) or by asking a question in the Q&A box. This article explains how to create one in Q&A.
 

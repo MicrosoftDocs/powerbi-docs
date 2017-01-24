@@ -1,5 +1,5 @@
 <properties
-   pageTitle="See the data used to create the visual using *See data* and *Export data*"
+   pageTitle="See the data used to create the visual"
    description="This document shows how to view the data used to create a visual in Power BI and how to export that data to a .csv file."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/09/2017"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Reveal the data behind the visual
+# See data used to create the visual
 
 ## See Data
 
