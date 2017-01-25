@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Part 2, Add visualizations to a Power BI report"
+   pageTitle="Part 2, Add visualizations to a Power BI report (Tutorial)"
    description="Tutorial: Part 2, Add visualizations to a Power BI report"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="01/26/2017"
    ms.author="mihart"/>
 
-# Tutorial: Part 2, Add visualizations to a Power BI report  
+# Part 2, Add visualizations to a Power BI report (Tutorial)
 
 In [Part 1](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report), you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
 
