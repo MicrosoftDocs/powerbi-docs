@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/25/2017"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from a report
