@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View Reporting Services mobile reports and KPIs in the Power BI app for iOS"
+   pageTitle="View SSRS mobile reports and KPIs in the iOS mobile app"
    description="The Power BI mobile app for iOS offers live, touch-enabled mobile access to your important on-premises business information."
    services="powerbi" 
    documentationCenter="" 
@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/16/2016"
+   ms.date="01/25/2017"
    ms.author="maggies"/>
 
-# View SQL Server Reporting Services mobile reports and KPIs in the Power BI mobile app for iOS 
+# View SSRS mobile reports and KPIs in the iOS mobile app
 
-The Power BI mobile app for iOS offers live, touch-enabled mobile access to your important on-premises business information. 
+The Power BI mobile app for iOS offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 
 
  ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_MobRpt.png)
 
-First things first:
+## First things first
 
 -  You [create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). You can even [create a special mobile report layout for phones](https://msdn.microsoft.com/library/mt703702.aspx). 
 -   You can also create KPIs right in the web portal, and organize them all in folders and mark your favorites, so you can find them easily. 

@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10"
+   pageTitle="View SSRS mobile reports and KPIs in the Windows 10 mobile app"
    description="The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information."
    services="powerbi" 
    documentationCenter="" 
@@ -17,14 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="01/25/2017"
    ms.author="maggies"/>
 
-# View Reporting Services mobile reports and KPIs on the Power BI mobile app for Windows 10 
+# View SSRS mobile reports and KPIs in the Windows 10 mobile app
 
-The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information. 
+The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 
 
 ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
+
+## First things first
 
 [Create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
