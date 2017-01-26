@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/24/2016"  
+   ms.date="01/27/2017"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -25,7 +25,7 @@
 
 A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  The screenshot below shows many different tiles pinned to a dashboard.
 
-Besides pinning, standalone tiles can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md). Standalone tiles include: text boxes, images, videos, and web content.
+Besides pinning, standalone tiles can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md). Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull_new.png)
 
@@ -40,20 +40,20 @@ Tiles can be pinned from:
 
 -   [Power BI Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
--   [a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+- [a report](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
--   [another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+- [another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
 
 - [Excel workbook on OneDrive for Business](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
 
-- [Power BI publisher for Excel](powerbi-publisher-for-excel.md)
+- [Power BI Publisher for Excel](powerbi-publisher-for-excel.md)
 
 
 - [Quick Insights](powerbi-service-auto-insights.md)
 
--   [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+- [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
 
-And standalone tiles for images, text boxes, videos, and web content can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md).
+And standalone tiles for images, text boxes, videos, streaming data, and web content can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md).
 
   ![](media/powerbi-service-dashboard-tiles/add_widgetnew.png)
 
