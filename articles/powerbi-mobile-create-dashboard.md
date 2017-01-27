@@ -23,7 +23,7 @@
 
 Applies to:
 
-| ![iPhone](media/powerbi-mobile-create-dashboard/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-create-dashboard/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-create-dashboard/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-create-dashboard/android-tablet-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-create-dashboard/win-10-logo-50-px.png) |
+| ![iPhone](media/powerbi-mobile-create-dashboard/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-create-dashboard/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-create-dashboard/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-create-dashboard/android-tablet-logo-50-px.png) | ![Windows 10 devices](media/powerbi-mobile-create-dashboard/win-10-logo-50-px.png) |
 |:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
 | [iPhones](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-iphone) | [iPads](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-ipad) | [Android phones](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-android-phone) | [Android tablets](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-android-tablet) | [Windows 10 devices](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-windows-10-device) |
 
