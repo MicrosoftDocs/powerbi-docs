@@ -14,10 +14,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2017"
+   ms.date="01/25/2017"
    ms.author="mihart"/>
 # Power BI Videos
 

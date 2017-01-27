@@ -14,10 +14,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/10/2016"
+   ms.date="01/25/2016"
    ms.author="mihart"/>
 
 # Get started with Power BI
