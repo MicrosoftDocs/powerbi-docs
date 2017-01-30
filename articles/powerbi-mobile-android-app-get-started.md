@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/05/2017"
+   ms.date="01/25/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI for Android mobile app
@@ -36,7 +36,7 @@ Then interact with your dashboards and reports, explore the data, and share them
 
     >**Note:** Power BI can run on a number of different Android phones. Your phone needs to be running the Android 5.0 operating system, or later. To check on your phone, go to **Settings** > **About device** > **Android version**. 
 
--   **Start when you open the app**    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android phone. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can go back to the samples whenever you want from the dashboards home page.
+-   **Start when you open the app**    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android phone. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](powerbi-mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.
 
 -   Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
@@ -71,11 +71,9 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 1.   Tap the global navigation button ![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png) in the upper-left corner.
   
-2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
+2.   Tap **Settings** > **Discover our samples**, then pick a role and explore the sample dashboard for that role.  
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-android-power-bi-samples.png)
-
-    >**Note**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
 
 ### Reporting Services mobile report samples
 

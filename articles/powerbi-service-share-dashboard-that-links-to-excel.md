@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Share a dashboard that links to an Excel workbook on OneDrive for Business"
+   pageTitle="Share a dashboard that links to an Excel file in OneDrive"
    description="Read about sharing dashboards connected to an Excel workbook on OneDrive for Business, with tiles pinned from that workbook."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="01/23/2017"
    ms.author="ajayan"/>
 
-# Share a dashboard that has links to an Excel workbook
+# Share a dashboard that links to an Excel file in OneDrive
 
 ## Use Power BI to connect to an Excel workbook on OneDrive for Business
 

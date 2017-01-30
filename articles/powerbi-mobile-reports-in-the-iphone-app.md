@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Reports in the iPhone app"
+   pageTitle="Reports in the iPhone mobile app"
    description="Learn about viewing and interacting with reports in the Power BI mobile app for iOS on your iPhone. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps. "
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/2017"
+   ms.date="01/19/2017"
    ms.author="maggies"/>
 
-# Reports in the iPhone app (Power BI for iOS)
+# Reports in the iPhone mobile app
 
 A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com) or in [Power BI Desktop](powerbi-desktop-report-view.md). When you create reports in Power BI Desktop, you can create [a version of the report optimized for phones](powerbi-mobile-view-phone-report.md). 
 

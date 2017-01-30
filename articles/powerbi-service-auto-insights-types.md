@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/09/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 
 

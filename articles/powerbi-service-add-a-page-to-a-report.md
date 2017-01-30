@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/08/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 
 # Add a page to a Power BI report  
@@ -26,6 +26,7 @@
 No reason to crowd up a report page -- just add a new blank page.
 
 Select the yellow plus icon and then type a new name for the page.  
+
 ![](media/powerbi-service-add-a-page-to-a-report/reorderPages2.gif)
 
 ## Duplicate a page
@@ -37,7 +38,8 @@ Your new page is created and becomes the active page. To rename it, double-click
 
 
 ## See also  
-Read more about [reports in Power BI](powerbi-service-reports.md)  
+Read more about [reports in Power BI](powerbi-service-reports.md)
+ 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

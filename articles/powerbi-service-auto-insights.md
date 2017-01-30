@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/09/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 
 
@@ -28,16 +28,16 @@ Have a new dataset and not quite sure where to start?  Need to build a dashboard
 
 Run Quick Insights to generate interesting interactive visualizations based on your data. Quick Insights can be run on an entire dataset (Quick Insights) or on a specific dashboard tile (Scoped Quick Insights). You can even run Quick Insights on a Quick Insight!
 
->**NOTE**: Quick Insights is not available in Power BI Desktop and does not work with direct query - it only works with data uploaded to Power BI.
+>**NOTE**: Quick Insights is not available in Power BI Desktop and does not work with DirectQuery - it only works with data uploaded to Power BI.
 
 The Quick Insights feature is built on a growing [set of advanced analytical algorithms](powerbi-service-auto-insights-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
 ## Run Quick Insights on a dataset
 
-Watch Amanda run Quick Insights on a sample dataset, pin one of these Quick Insights as a tile on his dashboard, and open a Quick Insight in Focus mode.
+Watch Amanda run Quick Insights on a sample dataset, pin one of these Quick Insights as a tile on her dashboard, and open a Quick Insight in Focus mode.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EOASjs5mj6s" frameborder="0" allowfullscreen></iframe>
 
-Now it's your turn. Explore Quick Insights using the Supplier Quality Analysis sample.
+Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis sample](powerbi-sample-supplier-quality-analysis-take-a-tour.md).
 
 1. In the left navigation pane, under **Datasets** select the ellipses (...) and choose **Quick Insights**.
 

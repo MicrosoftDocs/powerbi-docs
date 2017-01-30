@@ -1,10 +1,10 @@
 <properties 
-   pageTitle="Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS on the iPhone"
-   description="Read about annotating and sharing tiles, reports, and visualizations from the Microsoft Power BI app for iOS on the iPhone. "
+   pageTitle="Annotate & share a tile, report, or visual on the iOS mobile apps"
+   description="Read about annotating and sharing tiles, reports, and visualizations from the Microsoft Power BI app for iOS. "
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,10 +17,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/19/2016"
+   ms.date="01/23/2017"
    ms.author="maggies"/>
 
-# Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS on the iPhone
+# Annotate & share a tile, report, or visual on the iOS mobile apps
+
+Applies to:
+
+| ![iPhone](media/powerbi-mobile-create-dashboard/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-create-dashboard/ipad-logo-50-px.png) |
+|:------------------------|:----------------------------|
+| iPhones | iPads |
+
 
 You can share a snapshot of a tile, report, or visualization from the Power BI mobile app for iOS. Your recipients see it exactly as it was when you sent the mail, plus a link. You can send snapshots of tiles to anyone — not just colleagues in the same email domain. If they have permissions and you've already shared the dashboard or report with them, then they can click the link and go straight to that tile, report, or visualization. 
 You can add annotations — lines, text, or stamps — before you share it.
@@ -79,5 +86,5 @@ You can add annotations — lines, text, or stamps — before you share it.
 
 ## See also
 
-- [Share a dashboard from the iPhone app \(Power BI for iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
+- [Share a dashboard from the Power BI mobile app \(Power BI for iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

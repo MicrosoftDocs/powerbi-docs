@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Scatter Charts in Power BI"
+   pageTitle="Scatter charts in Power BI (Tutorial)"
    description="Tutorial: Scatter Charts in Power BI"
    services="powerbi"
    documentationCenter=""
@@ -21,7 +21,7 @@
    ms.date="11/15/2016"
    ms.author="mihart"/>
 
-# Tutorial: scatter charts and bubble charts in Power BI  
+# Scatter charts and bubble charts in Power BI (Tutorial)
 
 A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 

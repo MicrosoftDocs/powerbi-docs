@@ -1,10 +1,10 @@
 ﻿<properties
-   pageTitle="Tutorial: Filled Maps (Choropleths) in Power BI"
+   pageTitle="Filled Maps (Choropleths) in Power BI (Tutorial)"
    description="Documentation - tutorial on creating Filled Maps (Choropleths) in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/12/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Tutorial: filled maps (choropleths) in Power BI  
+# Filled maps (choropleths) in Power BI (Tutorial)
 
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
@@ -29,7 +29,7 @@ A filled map uses shading or tinting or patterns to display how a value differs 
 
 > **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
 
-> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations. 
+> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 
 ## When to use a filled map  
 Filled maps are a great choice:

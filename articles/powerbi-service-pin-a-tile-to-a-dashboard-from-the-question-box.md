@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Pin a tile to a Power BI dashboard from the Q&A question box"
+   pageTitle="Pin a tile to a Power BI dashboard from Q&A"
    description="Documentation on how to pin a tile to a Power BI dashboard from the Q&A question box"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/08/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Pin a tile to a Power BI dashboard from the Q&A question box  
+# Pin a tile to a dashboard from Q&A  
 ## How to pin a tile from Q&A
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 

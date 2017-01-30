@@ -1,5 +1,5 @@
 <properties
-pageTitle="Sign up with a custom Azure directory"
+pageTitle="Sign up with a custom Azure Active Directory tenant"
 description="You may be a developer and looking to test your Power BI application that uses the REST API. Creating a custom directory in your Azure subscription can allow you to try an isolated environment. There are a few things you need to do to get Power BI to work with that custom directory."
 services="powerbi"
 documentationCenter=""
@@ -8,8 +8,8 @@ manager="erikre"
 backup=""
 editor=""
 tags=""
-qualityFocus="monitoring"
-qualityDate="8/15/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -17,9 +17,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="10/10/2016"
+ms.date="01/23/2017"
 ms.author="asaxton"/>
-# Sign up for Power BI (free) with a custom Azure Active Directory tenant
+# Sign up with a custom Azure Active Directory tenant
 
 If you are a developer, using Microsoft Azure, and are looking to create a Power BI application using the REST API’s, you will probably want to use Power BI with a custom Azure Active Directory (AAD) tenant for testing purposes.  There are a few things you will need to do to get up and running. This is all about creating an Azure Active Directory tenant for use with testing Power BI. 
 

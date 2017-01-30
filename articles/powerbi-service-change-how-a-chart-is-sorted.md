@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/05/2016"
+   ms.date="01/17/2017"
    ms.author="mihart"/>
 
 # Change how a chart is sorted in a Power BI report
@@ -39,9 +39,11 @@ It's easy to sort it from highest to lowest sales per square feet instead.
 
 ##  Sorting using other criteria
 
-Sometimes, you want to sort your visual using a different column or other criteria.  For example, you might want
+Sometimes, you want to sort your visual using a different field or other criteria.  For example, you might want
 to sort by month (and not in alphabetical order) or you might
-want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  Here are several solutions:
+want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  
+
+In some cases, you may be able to sort the visual the way you'd like, for example, by month.  But if not, it may be because dataset behind the report needs some tweaking. Here are several solutions:
 
 -   In Power BI Desktop, [use the Data Tools Modeling tab to sort by a different column](powerbi-desktop-sort-by-column.md).
 

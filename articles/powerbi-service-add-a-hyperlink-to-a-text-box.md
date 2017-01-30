@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/08/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 
 # Add a hyperlink to a text box in a report

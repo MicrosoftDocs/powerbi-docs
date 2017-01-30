@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Power BI Apple Watch app"
+   pageTitle="Power BI mobile app on your Apple Watch"
    description="Power BI Apple Watch app"
    services="powerbi" 
    documentationCenter="" 
@@ -17,26 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="01/27/2017"
    ms.author="maggies"/>
 
-# Power BI Apple Watch app
+# Power BI mobile app on your Apple Watch
 
-With the Power BI Apple Watch app, you can view KPIs and card tiles from your Power BI dashboards, right on your watch. KPIs and card tiles are best suited to providing a heartbeat measure on the small screen. Check the blog post.
+With the Power BI Apple Watch app, you can view KPIs and card tiles from your Power BI dashboards, right on your watch. KPIs and card tiles are best suited to providing a heartbeat measure on the small screen. You can refresh a dashboard from your iPhone or from the Watch itself.
  
 ## Install the Apple Watch app
 The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when you [download the Power BI app to your iPhone](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app") from the Apple App Store, you're automatically also downloading the Power BI Watch app. The Apple guide explains how to [install Apple Watch applications](https://support.apple.com/en-us/HT204784).
-
-## Sync your dashboard with Power BI on your Apple Watch
-1. In Power BI on your iPhone, open the dashboard you want to sync with the Apple Watch. 
-
-2. Select the ellipsis (...) > **Sync with Watch**.
-
-Power BI shows an indicator that the dashboard is synced with the watch.
-
-You can only sync one dashboard at a time with the watch.
-
-> **Tip**: To view tiles from multiple dashboards on your watch, create a new dashboard in the Power BI service, and pin all the relevant tiles to it.
 
 ## Use the Power BI app on the Apple Watch
 Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI widget (if configured) directly from the watch face.
@@ -52,7 +41,30 @@ The Power BI Apple Watch app consists of two parts.
 -   The **in-focus tile**: Click a tile on the index screen for an in-depth view of a specific tile.
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_kpi.png)
- 
+
+## Refresh a dashboard from your Apple Watch
+You can refresh a synced dashboard directly from your watch.
+
+-   While in the dashboard view on the watch app, deep press your screen and select **refresh**.
+
+Your watch app will now sync your dashboard with data from the Power BI service.
+
+> [AZURE.NOTE] The watch app communicates with Power BI via Power BI mobile app on the iPhone. Therefore, the Power BI app must be running on your iPhone, at least in the background, for the dashboard on the watch app to refresh.
+
+
+## Refresh a dashboard on your Apple Watch from your iPhone
+You can also refresh a dashboard that's on your Apple Watch from your iPhone.
+
+1. In Power BI on your iPhone, open the dashboard you want to sync with the Apple Watch. 
+
+2. Select the ellipsis (...) > **Sync with Watch**.
+
+Power BI shows an indicator that the dashboard is synced with the watch.
+
+You can only sync one dashboard at a time with the watch.
+
+> **Tip**: To view tiles from multiple dashboards on your watch, create a new dashboard in the Power BI service, and pin all the relevant tiles to it.
+
 ## Set a custom Power BI widget
 You can also display a specific Power BI tile directly on the Apple Watch face, so it's visible and accessible at all times.
 
@@ -72,7 +84,7 @@ Given the small space on the Apple Watch face, the Power BI Apple Watch app lets
  
 > [AZURE.NOTE]  If you don't change the name, the Power BI widget will shorten the name to the number of characters that fit the small space on the watch face. 
 
-### See also
+## See also
 
 Your feedback will help us decide what to implement in the future, so please don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
 

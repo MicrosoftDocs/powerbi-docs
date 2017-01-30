@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/30/2016"
+   ms.date="01/17/2017"
    ms.author="mihart"/>
 
 
@@ -34,25 +34,25 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
 1. We recommend starting with a [blank report page](powerbi-service-add-a-page-to-a-report.md).
 
-2. In the **Visualizations** pane, select the paintbrush icon and choose **Page Size > Cortana**.
+2. In the **Visualizations** pane, select the paint roller icon and choose **Page Size > Cortana**.
 
-    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size-new.png)
 
 3. Create a visual or a set of visuals that you want to appear in Cortana in response to a particular question (or set of questions).
 
 4. Ensure that all visuals fit within the page borders.  Optionally, modify display settings, data labels, colors, and backgrounds.  
 
-    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify-new.png)
 
 5. Name the page and add alternate names.  Cortana uses these names when it searches for results. In the **Visualizations** pane, select the paintbrush icon and choose **Page Information**. Enable Q&A for this visual by moving the slider to **On**.
 
-    ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name-new.png)
 
     >[AZURE.TIP] To improve results, avoid using words that are also column names.
 
 6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
 
-    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection-new.png)
 
       For example, if you ask Cortana:
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2016"
+   ms.date="01/25/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Windows 10
@@ -69,7 +69,13 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 1.   Tap the global navigation button ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
   
-2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
+2.   Tap **Settings**, then tap your name.
+
+    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-settings-samples.png)
+   
+4.   Tap **View samples**. 
+
+3.   Pick a role and explore the sample dashboard for that role.  
 
     ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-power-bi-samples.png)
 

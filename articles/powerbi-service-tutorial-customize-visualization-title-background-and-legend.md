@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Customize visual titles, legends, and backgrounds. "
+   pageTitle="Customize visual titles, legends, and backgrounds (Tutorial)"
    description="Tutorial: Customize visualization title, background, and legend"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/01/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Tutorial: Customize visualization title, background, and legend
+# Customize visual titles, legends, and backgrounds (Tutorial)
 
 In this tutorial you'll learn many different ways to customize your visualizations. Not all visualizations can be customized, [see the complete list](#list).  Specifically, this tutorial covers customizing:  
 -   visualization titles  
@@ -30,15 +30,16 @@ In this tutorial you'll learn many different ways to customize your visualizati
 ## Customize visualization titles in reports    
 I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
 
->[AZURE.NOTE]  
->When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](powerbi-service-edit-a-tile-in-a-dashboard.md).
+>[AZURE.NOTE] When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](powerbi-service-edit-a-tile-in-a-dashboard.md).
 
 1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
 
 2.  In the Visualizations and Filters pane, select the paintbrush icon ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) to reveal the formatting options and select **Title** to expand that section.  
+
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull-new.png)
 
 3.  Turn  **Title** on and off by selecting the On (or Off) slider. For now, leave it **On**.  
+
 	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/onoffslider.png)
 
 4.  Change **Title Text** by typing **Store count by month opened** in the text field.  

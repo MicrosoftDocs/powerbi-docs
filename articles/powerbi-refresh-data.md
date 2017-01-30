@@ -3,7 +3,7 @@
    description="Data refresh in Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="guyinacube"
+   authors="davidiseminger"
    manager="erikre"
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/09/2017"
-   ms.author="asaxton"/>
+   ms.date="01/18/2017"
+   ms.author="davidi"/>
 
 # Data refresh in Power BI  
 
@@ -120,7 +120,7 @@ Keeping your files on OneDrive, or SharePoint Online, and connecting to them fro
 |Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|No|Yes|No (see below)|
 |Get Data is used to connect to and explore a live Analysis Services database.|Yes|No|Yes|
 |Get Data is used to connect to and explore a supported on-premises DirectQuery data source.|Yes|No|Yes|
-|Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark.|Yes (hourly)|Yes|No|
+|Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark.|Yes (hourly)|No|No|
 |Get Data is used to connect to and query data from any listed  on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange.|No|Yes|Yes|
 
 > [AZURE.NOTE] If you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, you do need a gateway if you have republished the dataset or your report after  November 18th, 2016.

@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Display dashboards and reports in Full Screen mode (TV mode)"
+   pageTitle="Display dashboards and reports in Full Screen mode"
    description="Display dashboards and reports in TV mode, aka Full Screen Mode."
    services="powerbi"
    documentationCenter=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Display dashboards and reports in Full Screen mode (TV mode)
+# Display dashboards and reports in Full Screen mode
 
 ## What is Full Screen mode?
 
@@ -37,7 +37,7 @@ Some uses for Full Screen mode are:
 >**NOTE**:
 >Full Screen mode is different than [Focus (Pop out) mode](powerbi-service-display-dash-in-focus-mode.md).
 
-Watch Amanda open and navigate her dashboard in fullscreen mode and then apply some URL parameters to control the default display. Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Amanda open and navigate her dashboard in Full Screen mode and then apply some URL parameters to control the default display. Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c31gZkyvC54" frameborder="0" allowfullscreen></iframe>
 

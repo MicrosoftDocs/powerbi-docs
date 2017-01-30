@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/21/2017"
    ms.author="mihart"/>
 
 # Dashboards in Power BI
@@ -26,7 +26,7 @@ Dashboards, reports, and datasets are at the heart of Power BI service. Create p
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
-There are samples available for you to use with Power BI. Below shows the Retail Analysis Sample. For detailed information about the sample, see [Sample datasets](powerbi-sample-datasets.md).
+There are samples available for you to use with Power BI. Below shows the Retail Analysis Sample dashboards. For detailed information about the samples, see [Sample datasets](powerbi-sample-datasets.md).
 
 ![](media/powerbi-service-dashboards/dashboard.png)
 

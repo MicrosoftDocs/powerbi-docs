@@ -1,5 +1,5 @@
 ﻿<properties 
-   pageTitle="Manage your data capacity in Power BI"
+   pageTitle="Manage your data capacity (storage)"
    description="Manage your data capacity and storage in Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,9 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="01/23/2017"
    ms.author="asaxton"/>
-# Manage your data capacity in Power BI
+# Manage your data capacity (storage)
+
+
 
 Power BI offers two licenses, Power BI (free) and Power BI Pro, with different data capacity limits:
 

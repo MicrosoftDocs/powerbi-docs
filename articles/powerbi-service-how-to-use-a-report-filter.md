@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/24/2016"
+   ms.date="01/26/2017"
    ms.author="mihart"/>
 
 # Take a tour of the report Filters pane
@@ -30,11 +30,11 @@ Reports can be opened in [Editing View](powerbi-service-interact-with-a-report-i
 
 ## Filters in Reading View
 
-When a report is open in Reading View, the Filters pane displays along the right side of the report canvas.  
+When a report is open in Reading View, the Filters pane displays along the right side of the report canvas.
 
 >[AZURE.NOTE] If you don't see the pane, select the arrow in the top-right corner to expand it.
 
-In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the **Page level filters** heading. And the entire report has a filter too:  **FiscalYear** is 2013 or 2014.  
+In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the **Page level filters** heading. And the entire report has a filter too:  **FiscalYear** is 2013 or 2014.
 
 ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-filter-visual-level.png)
 

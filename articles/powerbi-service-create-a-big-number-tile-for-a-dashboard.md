@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Create a big number tile for a Power BI dashboard by asking a question"
+   pageTitle="Create a big number tile from Q&A"
    description="Create a big number tile for a Power BI dashboard by asking a question"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Create a big number tile for a Power BI dashboard by asking a question  
+# Create a big number tile from Q&A  
 
 Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can [create a big number tile in a Power BI report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md) or by asking a question in the Q&A box. This article explains how to create one in Q&A.
 
@@ -28,7 +28,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
 The question box is the easiest way to make a number tile like this.
 
-1.    Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
+1.    Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md). This example uses the [Opportunity Analysis sample](powerbi-sample-opportunity-analysis-take-a-tour.md).
 
 2.    At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
 
@@ -69,7 +69,7 @@ If you do not see a question box at all, it may be that you have not enabled Q&A
 
 2.  Select **datasets** and choose the dataset to enable for Q&A.
 
-    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-settings.png)
+    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-settings-new.png)
 
 3. Expand **Q&A and Cortana**, select the checkbox for **Turn on Q&A for this dataset** and choose **Apply**.
 

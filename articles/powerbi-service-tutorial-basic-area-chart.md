@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Basic Area chart"
+   pageTitle="Basic Area chart (Tutorial)"
    description="Tutorial: Basic Area chart."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Tutorial: Basic Area chart  
+# Basic Area chart (Tutorial)
 
 The basic area chart (aka layered area chart.) is based on the line chart. The area between axis and line is filled with colors to indicate volume. 
 

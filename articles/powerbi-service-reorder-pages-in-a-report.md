@@ -17,12 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/07/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 
 # Reorder pages in a report in Power BI  
 
-In Power BI, drag the tab where you want it in the report and let go.  
+In Power BI, a report is made up of one or more pages.  Each page has a tab along the bottom.  To reorder a report, simply select and drag the tab to its new location.
+  
 ![](media/powerbi-service-reorder-pages-in-a-report/reorder.gif)
 
 ## See Also  

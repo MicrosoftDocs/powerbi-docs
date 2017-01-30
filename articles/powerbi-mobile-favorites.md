@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Favorite Power BI dashboards and Reporting Services mobile reports in the Power BI apps"
+   pageTitle="Favorite dashboards & SSRS mobile reports in the mobile apps"
    description="Read about making and viewing your favorite Power BI dashboards, along with Reporting Services KPIs and mobile reports, in the Power BI mobile apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/2017"
+   ms.date="01/23/2017"
    ms.author="maggies"/>
 
-# Favorite Power BI dashboards, and Reporting Services KPIs and mobile reports in the Power BI mobile apps 
+# Favorite dashboards & SSRS mobile reports in the mobile apps 
 
 Applies to:
 
