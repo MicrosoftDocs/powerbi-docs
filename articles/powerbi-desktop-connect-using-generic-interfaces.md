@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/03/2016"
+   ms.date="01/23/2017"
    ms.author="davidi"/>
 
-# Connect other data sources using generic interfaces in Power BI Desktop
+# Connect to data using generic interfaces in Power BI Desktop
 
 You can connect to a multitude of different data sources in **Power BI Desktop**, using built-in data connectors that range from **Access databases** to **Zendesk** resources, as shown in the **Get Data** window. You can also connect to all sorts of *other* data sources, which even further expands your connectivity options, by using the generic interfaces (such as **ODBC** or **REST APIs**) built into **Power BI Desktop**.
 
