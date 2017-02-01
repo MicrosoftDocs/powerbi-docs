@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Real-time streaming in Power BI (Preview)"
+   pageTitle="Real-time streaming in Power BI"
    description="Get real-time data streaming and visuals in Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2016"
+   ms.date="01/31/2017"
    ms.author="davidi"/>
 
-# Real-time streaming in Power BI (Preview)
+# Real-time streaming in Power BI
 
 With Power BI real-time streaming, you can stream data and update dashboards in real-time. Any visual or dashboard that can be created in Power BI can also be created to display and update real-time data and visuals. The devices and sources of streaming data can be factory sensors, social media sources, service usage metrics, and anything else from which time-sensitive data can be collected or transmitted.
 
