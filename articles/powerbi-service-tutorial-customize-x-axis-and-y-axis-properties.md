@@ -3,8 +3,8 @@
    description="Tutorial: Customize X-axis and Y-axis properties"
    services="powerbi"
    documentationCenter=""
-   authors="erikre"
-   manager="mblythe"
+   authors="mihart"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="01/31/2017"
    ms.author="mihart"/>
 # Customize X-axis and Y-axis properties (Tutorial)
 
