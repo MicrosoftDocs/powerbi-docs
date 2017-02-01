@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2016"
+   ms.date="01/29/2017"
    ms.author="mihart"/>
 
 # Add a filter to a Power BI report (in Editing view)
@@ -46,27 +46,33 @@ A **page filter** applies to all the visuals on the report page. A **visual fil
 
 1.  Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
+    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-edit-view.png)
+
 2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 
+    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-display-filters.png)
+
 3.  Select a visual to make it active. All the fields being used by the visual are identified in the **Fields** pane and also listed in the **Filters** pane, under the **Visual Level Filters** heading.
+
+    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visual-filter.png)
 
 4.  At this point you can either add a filter to a field already being used by the visualization, or you can use a different field as a filter. 
 
 5.  Add a filter to a field already being used by the visualization.
 
-    1.  Add a filter to a field already being used by the visual. Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter.
-   
-    2.  Set either **Basic** or **Advanced** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
+    -  Add a filter to a field already being used by the visual. Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter.
+
+    -  Set either **Basic** or **Advanced** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
 
         ![](media/powerbi-service-add-a-filter-to-a-report/vizFilter.png) 
 
-    3.  The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
+    -  The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
 6.  Add a new field as a filter.
 
-    1.  From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  
+    -  From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  
 
-    2.  Follow steps 2-3 above.
+    -  Follow steps 2-3 above.
 
 
 
