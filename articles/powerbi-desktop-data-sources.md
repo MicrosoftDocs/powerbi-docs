@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2016"
+   ms.date="02/01/2017"
    ms.author="davidi"/>
 
 
@@ -132,6 +132,7 @@ The **Online Services** category provides the following data connections:
 -   Troux (Beta)
 -   Twilio (Beta)
 -   tyGraph (Beta)
+-   Visual Studio Team Services (Beta)
 -   Webtrends (Beta)
 -   Zendesk (Beta)
 
