@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Ask questions about your data with Q&A in the iOS mobile apps"
-   description="Learn how you can ask questions of your data in your own words on your iPad, iPhone, and iPod Touch."
+   pageTitle="Ask questions about your data in the iOS mobile apps (Tutorial)"
+   description="Try asking questions of sample data in your own words with Q&A on your iPad, iPhone, and iPod Touch."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="02/02/2017"
    ms.author="maggies"/>
 
-# Ask questions about your data with Q&A in the iOS mobile apps
+# Ask questions about your data in the iOS mobile apps (Tutorial)
 
-The easiest way to learn about your data in to ask questions about it in your own words. You can already do that in the Power BI service at [https://powerbi.com](http://powerbi.com) by typing a question in the box at the top of a dashboard. Now you can do the same in the Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices. 
+The easiest way to learn about your data in to ask questions about it in your own words. You can already do that in the Power BI service at [https://powerbi.com](http://powerbi.com) by typing a question in the Q&A box at the top of a dashboard. Now you can do the same in the Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices. In this tutorial, you can ask questions with sample data.
 
 ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale.png)
 
@@ -37,17 +37,17 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
 
 1. On your iPhone or iPad, open the Power BI app and navigate to the Retail Analysis Sample dashboard.
 2. Tap the Q&A icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
-3. Tap **show** from the keywords at the bottom of the screen, then tap **sales** from the suggestion list.
+3. Tap **show** from the keywords at the bottom of the screen, tap **sales** from the suggestion list > **Send**.
 
-    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale.png)
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-show-sales.png)
 
-4. Tap **by** from the keywords, then tap **item** from the suggestion list.
+4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send**.
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
 
 5. Tap **as** from the keywords, tap the column chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), then tap **Send**.
 
-6. Tap the resulting chart, then tap **Expand**.
+6. Long-tap the resulting chart, then tap **Expand**.
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-tap-expand.png)
 
@@ -59,25 +59,22 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
  
 9. Tap the start over icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-new-icon.png) to clear the text box and start over.
 
-8. Try a new question: tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send**.
+8. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send**.
 9. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send**.
-10. Type as and pick the line chart icon from the suggestion list > Send.
+10. Type **as**, pick the line chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) from the suggestion list > **Send**.
 
 Need help? Just say "Hi" or "Help", and you'll get assistance with starting a new question.
 
 ## Enhance your Q&A results
 
-You can improve the results you and your customers get when they use Q&A on a dataset, either by asking more targeted questions, by adding featured questions, or adding synonyms. 
+You can improve the results you and your customers get when they use Q&A on a dataset, either by asking more targeted questions or by enhancing the dataset. 
 
 ### How to ask questions
 - Follow these [tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md), in the Power BI service or in your iOS mobile app.
 
-### Power BI service dataset improvements
-- Add [featured questions to a dataset](powerbi-service-q-and-a-create-featured-questions.md)
-- Enable [Q&A for on-premises datasets](powerbi-service-q-and-a-direct-query.md)
-- [Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+### How to enhance the dataset  
+- Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md). 
 
-### Power BI Desktop dataset improvements
 
 ## See also
 
