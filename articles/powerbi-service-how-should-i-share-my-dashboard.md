@@ -37,10 +37,10 @@ Here's a summary of how sharing works, depending on which you do. Details follow
 |        | When you: |  |  |  |  |  |
 |:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|:-----------------------------|:-----------------------------|:-----------------------------|
 | Other people         | Share a dashboard | Create a dashboard in a group | Publish a content pack | Publish to the web | Share a snapshot of a tile | Save as PDF |
-| Can view and interact       | yes                         | yes                                     | yes                              | yes                          | View, not interact | View, not interact |
-| Can edit the original       | no                          | yes                                     | no                               | no                           | no | no |
-| Can create their own copies | no                          | yes                                     | yes                              | no                           | yes | yes |
-| Can share with others       | colleagues, yes. others, no | yes                                     | no                               | no                           | yes | yes |
+| Can view and interact       | yes                         | colleagues, yes. others, no   | yes                              | yes                          | View, not interact | View, not interact |
+| Can edit the original       | no                          | colleagues, yes. others, no  | no                               | no                           | no | no |
+| Can create their own copies | no                          | colleagues, yes. others, no  | yes                              | no                           | yes | yes |
+| Can share with others       | colleagues, yes. others, no | colleagues, yes. others, no  | no                               | no                           | yes | yes |
 | Need a Power BI license       | free or Pro | Pro   | Pro  | none  | none | none |
 
 ## Publish to the web
@@ -51,7 +51,11 @@ When you publish Power BI reports to the web, you can embed interactive visualiz
 When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They can see the same data that you see in the dashboard and reports. Your colleagues can share the dashboard with other colleagues, if you allow them to. Those outside your organization can view and interact with the dashboard, but can't share it. More about [sharing a dashboard](powerbi-service-share-unshare-dashboard.md).
 
 ## Create a dashboard in a group  
-Groups in Power BI are built on Office 365 groups, so you and your colleagues need a Power BI Pro license. When you're a member of a group, you can create a dashboard in the group workspace. Everyone in the group can view, interact with, and edit the dashboard and its reports. They have the same permission you have. More about [creating groups in Power BI](powerbi-service-create-a-group-in-power-bi.md).
+Groups in Power BI are built on Office 365 groups. Think of these groups as group workspaces, where you and your colleagues can collaborate on your Power BI dashboards and reports. When you're a member of a group, you can create a dashboard in the group workspace. Everyone in the group can view, interact with, and edit the dashboard and its reports. They have the same permission you have. 
+
+If you just want to share a finished dashboard with colleagues, don't add those colleagues to the group -- instead, share the dashboard with them, or create a content pack and publish it. 
+
+To use groups in Power BI, you and your colleagues need a Power BI Pro license. More about [creating groups in Power BI](powerbi-service-create-a-group-in-power-bi.md).
 
 ### Share a dashboard with colleagues outside the group  
 If your group has dashboards, you can share them with colleagues outside the group. It works the same as [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).
