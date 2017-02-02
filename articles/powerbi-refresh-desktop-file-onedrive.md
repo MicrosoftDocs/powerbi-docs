@@ -20,10 +20,13 @@
    ms.date="01/18/2017"
    ms.author="davidi"/>
 
-# Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online
+# Refresh a dataset stored on OneDrive or SharePoint Online
 
-## What are the advantages?  
-Importing files from OneDrive, or SharePoint Online, is a great way to make sure the work you’re doing in Power BI Desktop stays in-sync with the Power BI service. Any data you’ve loaded into your file’s model is imported into the dataset and any reports you’ve created in the file are loaded into Reports in Power BI. If you make changes to your file on OneDrive, or SharePoint Online, like add new measures, change column names, or edit visualizations, once you save, those changes will be updated in Power BI too, usually within about an hour.
+Importing files from OneDrive, or SharePoint Online, into the Power BI service is a great way to make sure the work you’re doing in **Power BI Desktop** stays in sync with the Power BI service. 
+
+## Advantages of storing a Power BI Desktop file on OneDrive or SharePoint Online
+
+When you store a **Power BI Desktop** file on OneDrive or SharePoint Online, any data you’ve loaded into your file’s model is imported into the dataset, and any reports you’ve created in the file are loaded into **Reports** in the Power BI serviced. When you make changes to your file on OneDrive or SharePoint Online, such as adding new measures, changing column names, or editing visualizations, once you save the file those changes will be updated in the Power BI service too, usually within about an hour.
 
 You can perform a one-time, manual refresh right in Power BI Desktop by selecting Refresh on the Home ribbon. When you select Refresh here, the data in the *file’s* model is refreshed with updated data from the original data source. This kind of refresh, entirely from within the Power BI Desktop application itself, is different from manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 

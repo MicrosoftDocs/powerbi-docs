@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/16/2016"
+   ms.date="01/31/2017"
    ms.author="davidi"/>
 
 # Enroll your US Government organization in the Power BI service
@@ -41,13 +41,7 @@ If your organization is a new **Office Government Cloud** customer, follow these
 
 > **Note:** These steps should be performed by the portal administrator.
 
-1.  In your browser, go to the [**Office 365** portal](https://portal.office.com/Signup/Signup.aspx?OfferId=68580a5c-f23a-4aa6-93cc-ebb54fc8c394&dl=POWERBI_PRO_GOV).
-
-2.  Complete the steps to purchase a **Power BI** subscription. The first page in the steps to purchase a **Power BI** subscription will look similar to the following:
-
-    ![](media/powerbi-service-govus-signup/service_govus_signup_2.png)
-
-3.  Once you complete the steps, log in using the following URL:  [https://app.powerbigov.us/](https://app.powerbigov.us/)
+1.  Please contact your account representative.
 
 ### Existing Office Government Cloud customers who are new to Power BI
 
@@ -55,29 +49,7 @@ If your organization is an existing **Office Government Cloud** customer, but yo
 
 > **Note:** These steps should be performed by the portal administrator.
 
-1.  Go to [https://portal.office.com](https://portal.office.com)
-
-2.  Select **Billing**.
-
-3.  Select **Purchase Service**.
-
-4.  Select **POWERBI_PRO_GOV**.
-
-5.  Select **Trial** or **Buy**.
-
-    ![](media/powerbi-service-govus-signup/service_govus_signup_3.png)
-
-6.  Complete the checkout process.
-
-7.  Add the new **Power BI Pro for Government** license to your account.
-
-    ![](media/powerbi-service-govus-signup/service_govus_signup_4.png)
-
-8.  Assign users to the account.
-
-    ![](media/powerbi-service-govus-signup/service_govus_signup_5.png)
-
-9. Log in to the **Power BI service** for US Government customers at [https://app.powerbigov.us](https://app.powerbigov.us)
+1.  Please contact your account representative.
 
 ### Existing Office Government Cloud customers who are currently using Power BI Free
 
