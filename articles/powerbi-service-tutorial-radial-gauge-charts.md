@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2016"
+   ms.date="01/31/2017"
    ms.author="mihart"/>
 
 # Radial gauge charts in Power BI (Tutorial)
