@@ -85,7 +85,7 @@ To access **ArcGIS Maps for Power BI** formatting features:
 
    ![](media/powerbi-service-tutorial-arcgis/power-bi-edit-mode-icon2.png)
 
-2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
+2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.<br/>
 
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options2.png)
 
