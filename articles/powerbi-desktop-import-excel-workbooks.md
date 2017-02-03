@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2016"
+   ms.date="02/01/2017"
    ms.author="davidi"/>
 # Import Excel workbooks into Power BI Desktop
 
@@ -84,8 +84,6 @@ There are a few limitations to importing a workbook into Power BI Desktop, which
 
 5.  **Unsupported Power View elements:** There are a few features in Power View that are not yet available in Power BI Desktop, such as Themes or certain types of visualizations (Scatter Chart with Play Axis, Drill-Down behaviors, etc.). These unsupported visualizations result in *Unsupported Visualization* messages on their corresponding locations in the Power BI Desktop report, which you can delete or reconfigure as needed.
 
-6.  **Synonyms:** If you have defined Synonyms in your Excel workbook Data Model for use with Power Q&A, those items are not reflected in your new Power BI Desktop file, since Synonyms is not currently an available feature in Power BI Desktop.
+6.  **Named Ranges using** ***From Table*** **in Power Query, or using** ***Excel.CurrentWorkbook*** **in M:** Importing this named range data into Power BI Desktop is not currently supported, but it is a planned update for Power BI Desktop. Currently, these named ranges are loaded into Power BI Desktop as a connection to the external Excel workbook.
 
-7.  **Named Ranges using** ***From Table*** **in Power Query, or using** ***Excel.CurrentWorkbook*** **in M:** Importing this named range data into Power BI Desktop is not currently supported, but it is a planned update for Power BI Desktop. Currently, these named ranges are loaded into Power BI Desktop as a connection to the external Excel workbook.
-
-8.  **PowerPivot to SSRS:** PowerPivot external connections to SQL Server Reporting Services (SSRS) are not currently supported, since that data source is not currently available in Power BI Desktop.
+7.  **PowerPivot to SSRS:** PowerPivot external connections to SQL Server Reporting Services (SSRS) are not currently supported, since that data source is not currently available in Power BI Desktop.
