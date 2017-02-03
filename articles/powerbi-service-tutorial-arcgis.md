@@ -65,7 +65,7 @@ Watch Will create a few different ArcGIS map visualizations and then use the ste
 
 1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and **Longitude** buckets.
 
-    >[AZURE.NOTE] Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
+    >[AZURE.NOTE] ArcGIS Maps for Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane2.png)
 
@@ -242,7 +242,7 @@ ArcGIS Maps for Power BI (Preview) is available in the following services and ap
 </tr>
 <tr>
 <td>Power BI mobile applications</td>
-<td>Coming soon</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>Power BI publish to web</td>
