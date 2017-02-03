@@ -20,7 +20,7 @@
    ms.date="02/02/2017"
    ms.author="ajayan"/>
 
-# How should I share Power BI dashboards, reports, and tiles?  
+# How should I share dashboards, reports, and tiles?  
 
 In Power BI you can collaborate on, share, and distribute dashboards, reports, and tiles in several different ways. Each has its advantages. You can:
 
@@ -41,7 +41,7 @@ Here's a summary of how sharing and collaborating works, depending on which you 
 
 |        | When you: |  |  |  |  |  |
 |:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|:-----------------------------|:-----------------------------|:-----------------------------|
-| Other people         | Create a dashboard in a group | Share a dashboard | Publish a content pack | Publish to the web | Share a snapshot of a tile | Save as PDF |
+| Other people:         | Create a dashboard in a group | Share a dashboard | Publish a content pack | Publish to the web | Share a snapshot of a tile | Save as PDF |
 | Can view and interact       | group members, yes   | yes                         | yes                              | yes                          | View, not interact | View, not interact |
 | Can edit the original       | group members, yes  | no                          | no                               | no                           | no | no |
 | Can create their own copies | group members, yes  | no                          | yes                              | no                           | yes | yes |
@@ -51,7 +51,7 @@ Here's a summary of how sharing and collaborating works, depending on which you 
 ## Collaborate on a dashboard in a group  
 Groups in Power BI are built on Office 365 groups. Think of a group as a workspace where you and your colleagues can collaborate together on your Power BI dashboards and reports. When you're a member of a group, you can create a dashboard in the group workspace. Everyone in the group can view, interact with, and edit the dashboard and its reports. They have the same permission you have. 
 
-If you just want to share a finished dashboard with colleagues, don't add those colleagues to the group. Instead, [share the dashboard](powerbi-service-how-should-i-share-my-dashboard.md#share-a-dashboard-with-colleagues-and-others) with them, or [create a content pack](powerbi-service-how-should-i-share-my-dashboard.md#create-a-content-pack-and-publish-it) and publish it. 
+If you just want to share a finished dashboard with colleagues, don't add those colleagues to the group. Instead, [share the dashboard](powerbi-service-how-should-i-share-my-dashboard.md#share-a-dashboard-with-colleagues-and-others) with them, or [create an organizational content pack](powerbi-service-how-should-i-share-my-dashboard.md##create-an-organizational-content-pack-and-publish-it) and publish it. 
 
 To use groups in Power BI, you and your colleagues need a Power BI Pro license. More about [creating groups in Power BI](powerbi-service-create-a-group-in-power-bi.md).
 

@@ -28,7 +28,8 @@ Power BI groups are built on [groups in Office 365](https://support.office.com/a
 
 As the creator of a group, you are automatically an admin. As admin, you can add and delete members, and make other members admins. All admins can create, update, and delete the dashboards, reports, and other content of the group. You can invite colleagues from your organization to your Power BI group, even if they aren't in Azure Active Directory.  
 
-> [AZURE.NOTE]  
+> **Notes:**  
+> 
 > -   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 > -  You can't publish reports to the web from a group.
 
@@ -66,7 +67,8 @@ As the creator of a group, you are automatically an admin. As admin, you can add
 
 5.  Add members by typing in the **Add group member** box, or copying and pasting multiple email addresses from Outlook. 
 
-    > [AZURE.NOTE] 
+    > **Notes:**
+    > 
     > - Currently you can't add team or security group distribution lists to groups. 
     > - If some potential members don't already have a Power BI account and aren't in Azure Active Directory, Power BI sends them an email invitation to join Power BI. When they accept, you see them as members of the group. 
 
@@ -86,11 +88,11 @@ Groups in Power BI are a place for you and your colleagues to collaborate, commu
 
 Groups and [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) complement each other. If you just want to share a finished dashboard with colleagues, don't add those colleagues to the group. Instead, [share the dashboard](powerbi-service-share-unshare-dashboard.md) with them, or [create an organizational content pack](powerbi-service-organizational-content-packs-introduction.md) and publish it. See [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) for more about other ways to share.  
 
-Collaboration doesn’t end with Power BI. Office 365 offers other group services, like sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. [Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md).
+Collaboration doesn’t end with Power BI. Office 365 offers other group services, like sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. [Collaborate in Office 365 with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md).
 
 ## See also
 - [Connect to files on your group's OneDrive for Business](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md)  
-- [Collaborate with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md)  
+- [Collaborate in Office 365 with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md)  
 - [Manage your group](powerbi-service-manage-your-group-in-power-bi-and-office-365.md) 
 - [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) 
 - More questions? [Try the Power BI Community](http://community.powerbi.com/)
