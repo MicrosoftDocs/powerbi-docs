@@ -24,7 +24,7 @@
 
 The easiest way to learn about your data in to ask questions about it in your own words. You can already do that in the Power BI service at [https://powerbi.com](http://powerbi.com) by typing a question in the Q&A box at the top of a dashboard. Now you can do the same in the Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices. In this tutorial, you can ask questions with sample data.
 
-![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale.png)
+![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
 ## Download the Retail Analysis sample
 
