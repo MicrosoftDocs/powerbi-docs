@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/02/2017"
+   ms.date="02/03/2017"
    ms.author="maggies"/>
 
 # Ask questions about your data in the iOS mobile apps (Tutorial)
@@ -37,15 +37,15 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
 
 1. On your iPhone or iPad, open the Power BI app and navigate to the Retail Analysis Sample dashboard.
 2. Tap the Q&A icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
-3. Tap **show** from the keywords at the bottom of the screen, tap **sales** from the suggestion list > **Send**.
+3. Tap **show** from the keywords at the bottom of the screen, tap **sales** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-show-sales.png)
 
-4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send**.
+4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
 
-5. Tap **as** from the keywords, tap the column chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), then tap **Send**.
+5. Tap **as** from the keywords, tap the column chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), then tap **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
 
 6. Long-tap the resulting chart, then tap **Expand**.
 
@@ -59,9 +59,17 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
  
 9. Tap the start over icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-new-icon.png) to clear the text box and start over.
 
-8. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send**.
-9. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send**.
-10. Type **as**, pick the line chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) from the suggestion list > **Send**.
+8. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-start-over-top-sale.png)
+
+9. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
+
+10. Type **as**, pick the line chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 
 Need help? Just say "Hi" or "Help", and you'll get assistance with starting a new question.
 
