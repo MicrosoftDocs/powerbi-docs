@@ -157,9 +157,11 @@ ArcGIS Maps for Power BI provides a selection of demographic layers that help co
 1. Select the **Reference layer** tab and choose **Demographics**.
 
 2. Each layer listed has a checkbox. Add a checkmark to add that layer to the map.  In this example we've added average household income.
+
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics1.png)
 
 2. Each layer is interactive as well. Just as you can hover over a bubble to see the details, you can click a shaded area on the map to see the details.
+
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics2.png)
 
 
