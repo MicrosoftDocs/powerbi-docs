@@ -1,10 +1,10 @@
 ﻿<properties
-   pageTitle="Tutorial: Filled Maps (Choropleths) in Power BI"
+   pageTitle="Filled Maps (Choropleths) in Power BI (Tutorial)"
    description="Documentation - tutorial on creating Filled Maps (Choropleths) in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,14 +18,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Tutorial: filled maps (choropleths) in Power BI  
+# Filled maps (choropleths) in Power BI (Tutorial)
 
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/large_map.png)
+
+> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+
+> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 
 ## When to use a filled map  
 Filled maps are a great choice:
@@ -48,7 +52,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 
-To create your own filled map, [download the Sales and Marketing sample](powerbi-sample-downloads.md) by signing in to Power BI and selecting **Get Data \> Files \> Local File \> Sales and Marketing**.
+To create your own filled map, [download the Sales and Marketing sample](powerbi-sample-downloads.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing**.
 
 
 1.  Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md) in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) from the Sales and Marketing Sample dataset  

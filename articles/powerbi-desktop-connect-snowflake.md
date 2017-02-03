@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/30/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
-# Connect to a Snowflake computing warehouse in Power BI Desktop (Preview)
+# Connect to Snowflake in Power BI Desktop (Preview)
 
 In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and use the underlying data just like any other data source in Power BI Desktop. This release of the **Snowflake** connector is in Preview, and is subject to change.
 

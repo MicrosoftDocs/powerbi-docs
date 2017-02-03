@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/24/2016"
+   ms.date="01/27/2017"
    ms.author="mihart"/>
 # About filters and highlighting in Power BI reports
 
@@ -49,7 +49,7 @@ Filters and highlighting can be applied using the **Filters** pane or by making 
 >[AZURE.TIP]   If the filter has the word **All** next to it, that means that entire field is being included as a filter.  For example, **Chain(All)** in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of **FiscalYear is 2013 or 2014** tells us that the report only includes data for the fiscal years of 2013 and 2014.
 
 
-##  Filters in Reading View verus Editing View
+##  Filters in Reading View versus Editing View
 
 There are two modes for interacting with reports: [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).  And the filtering capabilities available to you depend on which mode you're in.
 
@@ -60,7 +60,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
 ### The Filters pane in Reading View
 
-If you only have access to a report in Reading View, the Filters pane looks like this:
+If you only have access to a report in Reading View, the Filters pane looks similar to this:
 
 
 

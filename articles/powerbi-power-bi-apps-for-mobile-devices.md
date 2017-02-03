@@ -4,12 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="01/06/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -17,106 +17,37 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2016"
+   ms.date="01/19/2017"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
 
-Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &#151; be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone, or Windows 10 device.
+You've created Power BI reports in Power BI Desktop, and Power BI dashboards in the Power BI service. Now it's time to connect to your data anywhere and anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards and reports on your mobile device &#151; be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone or tablet, or Windows 10 device.
 
-See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+![](media/powerbi-powerbi-apps-for-mobile-devices/power-bi-mobile-apps-all-up.png)
 
-![](media/powerbi-powerbi-apps-for-mobile-devices/pbi_phone_photo_crop2.png)
+## See what's new in the Power BI mobile apps
 
+- Read the [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/tag/mobile/) for new features in the mobile apps.
+- See the list of [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
-## The iPhone and iPod Touch app (Power BI for iOS)
-[Get started with the iPhone app](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS).
+## The Power BI mobile apps
 
--   Download the [iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS).
+| **Device** | **Highlights** |
+|---|---|
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/iphone-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| Your **iPhone** goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. Besides viewing your Power BI dashboards and reports, you can also [add Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and [annotate and share a tile, report, or visualization](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md). Get started with the [Power BI mobile app for the iPhone](powerbi-mobile-iphone-app-get-started.md). |
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/ipad-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| On the **iPad**, the Power BI mobile app displays dashboards and reports the way they were designed for the Power BI service. You can [set data alerts in the Power BI mobile app](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to notify you when data in a dashboard changes beyond limits you set. Plus you can [filter a report by your geographic location](powerbi-mobile-geofiltering.md). Get started with the [Power BI mobile app for iPads](powerbi-mobile-ipad-app-get-started.md). |
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/android-phone-logo-50-px.png)](powerbi-mobile-android-app-get-started.md) | The Power BI mobile app for the **Android phone** brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information.  Plus you can view your [Reporting Services KPIs and mobile reports](powerbi-mobile-android-kpis-mobile-reports.md) right on your phone. You can even [scan a QR code with your Android phone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report. Get started with the [Power BI mobile app for Android phones](powerbi-mobile-android-app-get-started.md). |
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/android-tablet-logo-50-px.png)](powerbi-mobile-android-tablet-app-get-started.md)| The newest Power BI mobile app runs on a number of different **Android tablets**, bringing you up-to-date, touch-enabled mobile access to your business information. On the Android tablet, the Power BI mobile app displays dashboards and reports the way they were designed for the Power BI service. You can [mark your favorite dashboards and reports](powerbi-mobile-favorites/.md), so you can get to them quickly, along with your favorite Reporting Services KPIs and mobile reports. Get started with the [Power BI mobile app for Android tablets](powerbi-mobile-android-tablet-app-get-started.md). |
+|[![](media/powerbi-powerbi-apps-for-mobile-devices/win-10-logo-50-px.png)](powerbi-desktop-getting-started.md)| The Power BI mobile app for **Windows 10** runs on any Windows 10 device, including Windows 10 phones. Along with all the features of the other mobile apps, the Power BI mobile app for **Windows 10** offers some special functionality. For example, you can [pin a Power BI tile or dashboard to the Windows 10 Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md) from the Power BI mobile app. Plus you can [run Power BI in presentation mode on Surface Hub](powerbi-mobile-win10-app-presentation-mode.md) and in the Power BI mobile app for Windows 10. Get started with the [Power BI mobile app for Windows 10 devices](powerbi-mobile-win10phone-app-get-started.md). |
 
-### Power BI dashboards
+## Enterprise support for the Power BI mobile apps
 
--   View your [Power BI dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
--   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
--   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
--   View Power BI on your [Apple Watch](powerbi-mobile-apple-watch.md).
--   Share [Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
--   Interact with [reports on your iPhone](powerbi-mobile-reports-in-the-iphone-app.md).
--   Annotate and [share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
--   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) from your iPhone
--   [Create picture tiles](powerbi-mobile-picture-tiles-in-the-iphone-app.md) with your iPhone app
+Organizations can use Microsoft Intune to manage devices and applications, including Power BI mobile apps for Android and iOS.
 
-### SQL Server mobile reports and KPIs
+Microsoft Intune lets organizations control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
 
-- [View SQL Server mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) on the Reporting Services web portal.
-- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
-- [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
-
-## The iPad app (Power BI for iOS)
-[Get started with the iPad app](powerbi-mobile-ipad-app-get-started.md) (Power BI for iOS).
-
--   Download the [iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) (Power BI for iOS).
-
-### Power BI dashboards and reports
-
--   View your [Power BI dashboards](powerbi-mobile-dashboards-on-the-ipad-app.md).
--   Interact with [tiles on your Power BI dashboards](powerbi-mobile-tiles-in-the-ipad-app.md).
--   Open [Power BI reports](powerbi-mobile-reports-on-the-ipad-app.md) from your dashboard.
--   [Share Power BI dashboards](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
--   [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
--   View your [groups' Power BI dashboards and reports](powerbi-service-mobile-groups-in-the-ipad-app.md).
-
-### Mobile reports and KPIs in the Reporting Services web portal
-
-- [View SQL Server mobile reports and KPIs](powerbi-mobile-ipad-kpis-mobile-reports.md) on the Reporting Services web portal.
-- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
-- [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
-
-## The Power BI app for Android phones
-[Get started with the Power BI app for Android phones](powerbi-mobile-android-app-get-started.md).
-
--   Download the [Power BI app for Android phones](http://go.microsoft.com/fwlink/?LinkID=544867).
-
-### Power BI dashboards and reports
-
--   View your [dashboards](powerbi-mobile-dashboards-in-the-android-app.md).
--   View your [Power BI groups](powerbi-mobile-groups-in-the-android-app.md).
--   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
--   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
--   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-android-app.md).
--   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-android.md) from your Android phone.
-
-### SQL Server mobile reports and KPIs
-
-- [View SQL Server mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md) on the Reporting Services web portal.
-- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
-- [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
-
-## The Power BI mobile app for Windows 10 devices
-[Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
-
--   Download the [Power BI app for Windows 10 devices](http://go.microsoft.com/fwlink/?LinkId=526478)
-
-### Power BI dashboards and reports
-
--   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
--   [Pin Power BI tiles and dashboards](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen as live tiles.
--   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md).
--   [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
--   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md).
--   Interact with [your reports](powerbi-mobile-reports-in-the-windows-app.md).
--   View your [groups' dashboards and reports](powerbi-mobile-groups-in-the-win10phone-app.md).
-
-### SQL Server mobile reports and KPIs
-
-- [View SQL Server mobile reports and KPIs](powerbi-mobile-win10-kpis-mobile-reports.md) on the Reporting Services web portal.
-- [Create KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
-- [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
-
-
-## Enterprise support for Power BI mobile apps
-
--  Enterprises can [configure Power BI mobile apps for iOS and Android with Microsoft Intune](powerbi-admin-mobile-intune.md) to manage devices and applications.
+Read more about [configuring Power BI mobile apps for Android and iOS with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
 ## See also
 

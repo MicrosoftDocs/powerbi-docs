@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Part I, Add visualizations to a Power BI report"
+   pageTitle="Part I, Add visualizations to a Power BI report (Tutorial)"
    description="Tutorial: Part I, Add visualizations to a Power BI report"
    services="powerbi"
    documentationCenter=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/09/2016"
+   ms.date="01/26/2017"
    ms.author="mihart"/>
 
-# Tutorial: Part I, Add visualizations to a Power BI report
+# Part I, Add visualizations to a Power BI report (Tutorial)
 
 This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](powerbi-service-add-visualizations-to-a-report-ii.md). In the video below, Will shows you a few different ways to create, edit, and format visuals on the report canvas.
 
@@ -30,7 +30,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
 Now use the [Sales and Marketing sample](powerbi-sample-datasets.md) to create your own report.
 
-1.  Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the Sales and Marketing sample.
+1.  Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the [Sales and Marketing sample](powerbi-sample-datasets.md).
 
 2.  If the Fields pane isn't visible, select the arrow icon to open it. 
 
@@ -40,7 +40,7 @@ Now use the [Sales and Marketing sample](powerbi-sample-datasets.md) to create y
 
 4.  Create a visualization by selecting a field from the **Fields** pane.  
 
-    **Start with a numeric field: Power BI creates a column chart with a single column**.
+    **Start with a numeric field**: Power BI creates a column chart with a single column.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/PBI_OneColChart.png)
 

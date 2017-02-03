@@ -1,10 +1,10 @@
 <properties
-pageTitle="Configure mobile apps with Intune"
+pageTitle="Configure mobile apps with Microsoft Intune"
 description="How to configure the Power BI Mobile apps with Microsoft Intune. This includes how to add, and deploy, the application. And, how to create the mobile application policy to control security."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,9 +17,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/15/2016"
+ms.date="01/23/2017"
 ms.author="asaxton"/>
-# Configure Power BI mobile apps with Microsoft Intune
+# Configure mobile apps with Microsoft Intune
 
 Microsoft Intune enables organizations to manage devices and applications. The Power BI mobile applications, for iOS and Android, integrate with Intune to allow you to manage the application on your devices, and to control security. Through configuration policies, you can control items like requiring an access pin, controlling how data is handled by the application and even encrypting application data when the app is not in use.
 
@@ -30,6 +30,8 @@ This article is not meant as full configuration guide for Microsoft Intune. If y
 Microsoft Intune can co-exist with Mobile Device Management (MDM) within Office 365. [Learn more](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365/)
 
 This article assumes that Intune is configured properly and you have devices enrolled with Intune. If you are co-existing with MDM, the device will show enrolled within MDM, but is available to manage within Intune.
+
+>**Note**: After your organization has configured Microsoft Intune MAM, if you use the Power BI mobile app on an iOS device, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 
 ## Step 1: Get the url for the application
 

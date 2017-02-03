@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/08/2016"
+   ms.date="11/17/2016"
    ms.author="maggies"/>
 
 # Dashboards in the Android app for Power BI  
@@ -37,6 +37,12 @@ Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get
 
     ![](media/powerbi-mobile-dashboards-in-the-android-app/power-bi-android-dashboards.png)
 
+
+     -     Yellow stars ![](media/powerbi-mobile-dashboards-in-the-android-app/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
+
+     -     A notation below a dashboard name ![](media/powerbi-mobile-dashboards-in-the-android-app/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
+
+
     Power BI dashboards look a little different on your Android phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
     ![](media/powerbi-mobile-dashboards-in-the-android-app/pbi_andr_dash.png)
@@ -50,7 +56,9 @@ Then in the [Android app for Microsoft Power BI](powerbi-mobile-android-app-get
     ![](media/powerbi-mobile-dashboards-in-the-android-app/pbi_andr_dashellipsis.png)
 
 6.  Swipe up and down to see all the [tiles in the dashboard](powerbi-mobile-tiles-in-the-android-app.md). 
-7.  To go back to the dashboards home page, tap the back arrow ![](media/powerbi-mobile-dashboards-in-the-android-app/PBI_Andr_BackArrow.png) in the upper bar.
+
+6.  To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap **My Workspace**.   
+
 
 ## View dashboards in landscape mode
 You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.

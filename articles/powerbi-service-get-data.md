@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="01/11/2017"
    ms.author="davidi"/>
 
 # Data sources for Power BI service
@@ -33,7 +33,7 @@ You can get data from any of these data sources in Power BI by clicking **My Wor
 ## Files
 ![](media/powerbi-service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) – Excel is unique in that a workbook can have both data you’ve typed into worksheets yourself or you can query and load data from external data sources by using Power Query (Get & Transform in Excel 2016) or Power Pivot. Data can be in simple worksheets or loaded into a data model. To learn more, see [Get data from Excel](powerbi-service-get-data-from-files.md).
+**Excel** (.xlsx, xlxm) – Excel is unique in that a workbook can have both data you’ve entered into worksheets yourself, and you can query and load data from external data sources by using Power Query (Get & Transform in Excel 2016) or Power Pivot. You can import data that is in tables in worksheets (the data *must* be in a table), or import data that is loaded into a data model. To learn more, see [Get data from Excel](powerbi-service-get-data-from-files.md).
 
 **Power BI Desktop** (.pbi) -  You can use Power BI Desktop to query and load data from external data sources, extend your data model with measures and relationships, and create reports. You can import your Power BI Desktop file into your Power BI site. Power BI Desktop is best for more advanced users who have a good understanding of their data sources, data query and transformation, and data modeling concepts. To learn more, see [Connect to data in Power BI Desktop](powerbi-desktop-connect-to-data.md).
 

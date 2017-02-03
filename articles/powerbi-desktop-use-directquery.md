@@ -1,6 +1,6 @@
 <properties
    pageTitle="Use DirectQuery in Power BI Desktop"
-   description="Use DirectQuery in Power BI Desktop"
+   description="Use DirectQuery, also called a Live connection, in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,7 +22,7 @@
 
 # Use DirectQuery in Power BI Desktop  
 
-With Power BI Desktop, when you connect to your data source, it is always possible to import a copy of the data into the Power BI Desktop. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
+With **Power BI Desktop**, when you connect to your data source, it is always possible to import a copy of the data into the **Power BI Desktop**. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
 
 ## Supported Data Sources  
 The following data sources are currently supported:  
@@ -44,21 +44,22 @@ When you use **Get Data** to connect to a data source supported by **DirectQuery
 
 The differences between selecting **Import** and **DirectQuery** are the following:
 
-**Import** – the selected tables and columns are imported into Power BI Desktop. As you create or interact with a visualization, Power BI Desktop uses the imported data. You must refresh the data, which imports the full data set again, to see any changes that occurred to the underlying data since the initial import or the most recent refresh.
+**Import** – the selected tables and columns are imported into **Power BI Desktop**. As you create or interact with a visualization, **Power BI Desktop** uses the imported data. You must refresh the data, which imports the full data set again, to see any changes that occurred to the underlying data since the initial import or the most recent refresh.
 
-**DirectQuery** – no data is imported or copied into Power BI Desktop. The selected tables and columns appear in your Power BI Desktop **Fields** list. As you create or interact with a visualization, Power BI Desktop queries the underlying data source, which means you’re always viewing current data.
+**DirectQuery** – no data is imported or copied into **Power BI Desktop**. The selected tables and columns appear in the **Fields** list. As you create or interact with a visualization, **Power BI Desktop** queries the underlying data source, which means you’re always viewing current data.
 
 Many data modeling and data transformations are available when using **DirectQuery**, though with some limitations. When creating or interacting with a visualization, the underlying source must be queried and the time necessary to refresh the visualization is dependent on the performance of the underlying data source. When the data necessary to service the request has recently been requested, Power BI Desktop uses recent data to reduce the time required to display the visualization. Selecting **Refresh** from the **Home** ribbon will ensure all visualizations are refreshed with current data.
 
 See the following sections for more information about benefits, limitations, and important considerations when using **DirectQuery**.
 
 ## Benefits of using DirectQuery  
-There are two primary benefits to using **DirectQuery**:
-
+There are a few benefits to using **DirectQuery**:
 
 -   **DirectQuery** lets you build visualizations over very large datasets, where it otherwise would be unfeasible to first import all of the data
 
 -   Underlying data changes can require a refresh of data, and for some reports, the need to display current data can require large data transfers, making re-importing data unfeasible. By contrast, **DirectQuery** reports always use current data
+
+-   The 1 GB dataset limitation does *not* apply to **DirectQuery**
 
 
 ## Limitations of DirectQuery

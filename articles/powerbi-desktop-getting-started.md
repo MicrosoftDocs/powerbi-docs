@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 # Getting started with Power BI Desktop
 
@@ -359,7 +359,3 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 -   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
 -   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
-
-Want to give us feedback? Great – use the **Send Feedback** menu item in Power BI Desktop. We look forward to hearing from you!
-
-![](media/powerbi-desktop-getting-started/SendFeedback.png)

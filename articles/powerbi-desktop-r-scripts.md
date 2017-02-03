@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="01/11/2017"
    ms.author="davidi"/>
 
 # Running R Scripts in Power BI Desktop
 
-You can run R scripts directly in Power BI Desktop, and import the resulting datasets into a Power BI Desktop data model.
+You can run R scripts directly in **Power BI Desktop**, and import the resulting datasets into a Power BI Desktop data model.
 
 ## Installing R
 

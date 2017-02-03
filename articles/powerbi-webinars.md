@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2016"
+   ms.date="12/07/2016"
    ms.author="maikelson"/>
 
 # Power BI webinars
@@ -27,9 +27,7 @@ The following webinars can help you to understand and use Power BI. After you re
 
 ## Upcoming webinars
 
-[Managing data and applications just got easier with PowerApps Environments by James Oleinik - 10/27/16](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-27-Managing-data-and-applications-just-got-easier-267380_Registration.html?Is=Website)
-
-[Big Data with Power BI, HDInsight and Datameer by Andrew Brust - 11/01/16](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-01-Big-Data-with-Power-BI-HDInsight-and-Datameer-265554.html?Is=Website)
+[Accelerate your Retail Business with Analytics by Hitachi Solutions - 02/02/17](https://info.microsoft.com/US-PowerBI-WBNR-FY17-02Feb-02-AccelerateyourBusinessIntelligencePractices290297_01Registration-ForminBody.html?Is=Website)
 
 ## On-Demand webinars
 Webinars are available on-demand after the live broadcast.  Click below to register to view an on-demand webinar.
@@ -37,29 +35,25 @@ Webinars are available on-demand after the live broadcast.  Click below to regis
 ### Latest webinars
 Watch our latest webinars on-demand.
 
-[Creating and Customizing your Application with PowerApps by Laura Onu - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-20-Creating-and-Customizing-your-Application-with-PowerApps-265168_Registration.html?Is=Website)
+[What is new and exciting in Power BI - December 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-newandexciting274899_01Registration-ForminBody.html?Is=Website)
 
-[Dashboard Makeover - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-13-Dashboard-Makeover-262061_Registration.html?Is=Website)
+[Extending Power BI with R Visuals by Ginger Grant - December 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-Rvisuals274893_01Registration-ForminBody.html?Is=Website)
 
-[Getting Started with Microsoft Flow by Sunay Vaishnav - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-11-Getting-Started-with-Microsoft-Flow-262061.html?Is=Website)
-
-[Leveraging SharePoint Data with PowerApps Webinar by James Oleinik - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-06-Leveraging-SharePoint-Data-with-PowerApps-257924.html?Is=Website)
-
-[Getting started using R in Power BI by Stacia Varga - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-04-Getting-started-using-R-in-Power-BI-by-Stacia-Varga-257924.html?Is=Website)
-
-[What's New and Exciting in Power BI - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-08-Whats-New-in-PowerBI-Registration.html?Is=Website)
+[Dashboard Makeover - November 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-17-Dashboard-Makeover-264436.html?Is=Website)
 
 ###  Introductory webinars
+
+[What is new and exciting in Power BI - December 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-newandexciting274899_01Registration-ForminBody.html?Is=Website)
+
+[How Microsoft does Power BI - November 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
 
 [What's New and Exciting in Power BI - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-08-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
 [What's New and Exciting in Power BI - July 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-07Jul-12-Whats-New-in-PowerBI-Registration.html?Is=Website)
 
-[What’s New and Exciting in Power BI- May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-10-Whats-New-in-PowerBI-Registration.html?Is=Website)
-
-[What’s New and Exciting in Power BI- March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-01-PowerBIWhatsNew-Registration.html?Is=Website)
-
 ### Intermediate webinars
+
+[Walking through the development process for creating custom visuals for Power BI - January 2017](https://info.microsoft.com/US-PowerBI-WBNR-FY17-01Jan-10-Walkingthroughtthedevelopmentprocess288895_02OnDemandRegistration.html?Is=Website)
 
 [Adam and Chuck Show the Best of Power BI - September 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY17-09Sep-15-Real-Sociedad-Registration.html?Is=Website)
 
@@ -85,15 +79,15 @@ Watch our latest webinars on-demand.
 
 [Power BI Gateways - Connect Power BI to Your On-premised Data - March 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Mar-10-PowerBI-Gateway-Registration.html?Is=Website)
 
-[Power BI for Developers - January 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-01Jan-28-PowerBI-Developers-Registration.html?Is=Website)
-
-[Power BI Technical Overview - November 2015](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-11Nov15-PowerBITechnicalOverview-Register.html?Is=Website)
-
-[Visualizing Your Data Effectively in Power BI Dashboards](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-01Oct15-VisualizingDataPowerBIDashboard-Register.html?Is=Website)
-
-[Migrating from Power BI for O365 to PowerBI.com + Power BI and Excel: better together](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-15Dec15-PowerBI-Excel-Registration.html?Is=Website)
-
 ### Community webinars
+
+[PowerApps (and Flow) Custom APIs, Gateways and Data sources - January 2017](https://info.microsoft.com/US-EAD-WBNR-FY17-01Jan-12-PowerAppsandFlowCustomAPIsGatewaysandDatasources288880_01Registration.html?Is=Website)
+
+[Extending Power BI with R Visuals by Ginger Grant - December 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-Rvisuals274893_01Registration-ForminBody.html?Is=Website)
+
+[Dashboard Makeover - November 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-17-Dashboard-Makeover-264436.html?Is=Website)
+
+[Big Data with Power BI, HDInsight and Datameer by Andrew Brust - November 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-01-Big-Data-with-Power-BI-HDInsight-and-Datameer-265554.html?Is=Website)
 
 [Dashboard Makeover - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-13-Dashboard-Makeover-262061_Registration.html?Is=Website)
 
@@ -137,31 +131,19 @@ Watch our latest webinars on-demand.
 
 [Power BI Sales Management Solution Webinar (Dynamics CRM, Salesforce) - May 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-25-PowerBI-Sales-Management-Registration.html?Is=Website)
 
-[Connecting to SAP data with Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
-
-[Scale BI Across the Enterprise & Get the Most of SQL Investment with Pyramid Analytics and Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-10Dec15-PyramidAnalyticsPowerBI-Registration.html?Is=Website)
-
-[Power BI Content Pack for appFigures](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Oct15-appFiguresPowerBIContentPack-Register.html?Is=Website)
-
-[Power BI Content Pack for Acumatica Webinar](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-10Dec15-AcumaticaPowerBI-Registration.html?Is=Website)
-
-[Power BI Content Pack for Circuit ID](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-01Dec15-PowerBICircuitID-Register.html?Is=Website)
-
-[Accelerate Data Blending and Advanced Analytics Consumption with Alteryx and Microsoft Power BI](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-03Nov15-AlteryxPowerBI-Register.html?Is=Website)
-
-[Power BI Content Packs and Direct Query](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-27Aug15-DeepDiveContentPacks-Register.html?Is=Website)
-
-[Leveraging Power BI and Hive](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-08Dec15-SimbaPowerBI-Registration.html?Is=Website)
-
-[Power BI Content Pack for Marketo](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-17Nov15-MarketoPowerBIContentPack-Register.html?Is=Website)
-
-[Power BI Content Pack for Mailchimp](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-18Nov15-PowerBIMailchimp-Register.html?Is=Website)
-
-[Power BI Content Pack for SQL Sentry](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-10Nov15-SQLSentry-Register.html?Is=Website)
-
-[Power BI Content Pack for Twilio](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05Nov15-TwilioPowerBIContentPack-Register.html?Is=Website)
+[Connecting to SAP data with Power BI - April 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-21-Connecting-SAP-PowerBI-Registration.html?Is=Website)
 
 ### Other webinars
+
+[PowerApps (and Flow) Custom APIs, Gateways and Data sources - January 2017](https://info.microsoft.com/US-EAD-WBNR-FY17-01Jan-12-PowerAppsandFlowCustomAPIsGatewaysandDatasources288880_01Registration.html?Is=Website)
+
+[Microsoft Flow administration, SharePoint Integration and best practices by Merwan Hade - January 2017](https://info.microsoft.com/US-EAD-WBNR-FY17-01Jan-11-MicrosoftFlowadministrationandbestpracticesbyMerwanHade288879_02OnDemandRegistration-ForminBody.html?Is=Website)
+
+[How to build production ready event application in less than a week with Power Apps - January 2017](https://info.microsoft.com/US-EAD-WBNR-FY17-01Jan-17-Howtobuildproductionreadyeventapplication288881_01Registration-ForminBody.html?Is=Website)
+
+[Announcing PowerApps general availability - November 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-03-AnnouncingPowerAppsgeneralavailability271671.html?Is=Website)
+
+[Managing data and applications just got easier with PowerApps Environments by James Oleinik - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-27-Managing-data-and-applications-just-got-easier-267380_Registration.html?Is=Website)
 
 [Creating and Customizing your Application with PowerApps by Laura Onu - October 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-10Oct-20-Creating-and-Customizing-your-Application-with-PowerApps-265168_Registration.html?Is=Website)
 
@@ -174,8 +156,6 @@ Watch our latest webinars on-demand.
 [Introduction to Microsoft PowerApps - May 2016](https://info.microsoft.com/CO-PowerApps-WBNR-FY16-05May-Intro-to-PowerApps-CLE-Registration.html?Is=Website)
 
 [Introduction to MicrosoftFlow - May 2016](https://info.microsoft.com/CO-MSFTFlow-WBNR-FY16-05May-Intro-to-MicrosoftFLow-CLE-Registration.html?Is=Website)
-
-[What's New in SQL Server 2016 Reporting Services - February 2016](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-02Feb-25-PowerBI-SQL-Reporting-Registration.html?Is=Website)
 
 ## See also
 [Get started with Power BI](powerbi-service-get-started.md)

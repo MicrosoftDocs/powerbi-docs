@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/23/2016"
+   ms.date="01/18/2017"
    ms.author="asaxton"/>
 
 # Create and submit a visual to the gallery
@@ -32,6 +32,8 @@ You can create a custom visual using the Power BI Developer Tools. In the Power 
 
 To learn more about the Developer Tools, see [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md).
 
+For information on how to develop your first visual, see [Developing your first Power BI visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Readme.md).
+
 ## Submit your custom visual to the Power BI custom visuals gallery
 
 Submit your custom visual to the Power BI visuals gallery via email. To learn how, see [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md#submit-your-visual-to-the-power-bi-custom-visual-gallery).
@@ -39,6 +41,7 @@ Submit your custom visual to the Power BI visuals gallery via email. To learn ho
 ## See also
 
 [Custom visuals in Power BI](powerbi-custom-visuals.md)  
+[Developing your first Power BI visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Readme.md)  
 [Download a custom visual from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)  
 [Use a custom visual in a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  
 [Use a custom visual in a report (Power BI Desktop)](powerbi-custom-visuals-use.md)  

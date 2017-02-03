@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/17/2016"
+   ms.date="12/13/2016"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -32,6 +32,14 @@ And check out the community site, visuals.powerbi.com, where you'll find a growi
 
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.
 
+### Area charts: Basic (Layered) and Stacked
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
+
+**Tip**: The Basic Area chart is based on the line chart with the area between the axis and line filled in.
+
+For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md).
+
 ### Bar and column charts
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bar.png) 
@@ -40,23 +48,16 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 
 **Tip**: Bar charts are the standard for looking at a specific value across different categories.
 
-### Basic (Layered) and Stacked Area charts
 
-![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
+### Cards: Multi row
 
-**Tip**: The Basic Area chart is based on the line chart with the area between the axis and line filled in.
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
-For more information, see [Tutorial: Basic Area chart](powerbi-service-tutorial-basic-area-chart.md).
-
-### Single number cards
+### Cards: Single number
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_card.png)
 
 For more information, see [Create a big number tile for a dashboard](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
-
-### Multi row cards
-
-![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 
 ### Combo charts
@@ -105,15 +106,21 @@ For more information, see [Tutorial: KPIs in Power BI](powerbi-service-tutorial
 
 **Tip**: emphasize the overall shape of an entire series of values, usually over time.
 
-### Maps (basic)
+### Maps: Basic maps
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi-Nancy_viz_map.png)
 
-**Ti﻿p**: are used to associate both categorical and quantitative information with spatial locations.
+**Tip**: are used to associate both categorical and quantitative information with spatial locations.
 
 For more information, see [Tips and tricks for map visuals](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
 
-### Filled Maps (Choropleth)
+### Maps: ArcGIS maps
+
+![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
+
+For more information, see [Tutorial: ArcGIS maps in Power BI](/powerbi-service-tutorial-arcgis.md).
+
+### Maps: Filled maps (Choropleth)
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_FilledMap.png)
 
@@ -136,6 +143,7 @@ For more information, see [Tutorial: Filled Maps in Power BI](powerbi-service-tu
 **Tip**: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which order, etc.
 
 For more information, see [Tutorial: Scatter charts in Power BI](powerbi-service-tutorial-scatter.md).
+
 
 ### Slicers
 

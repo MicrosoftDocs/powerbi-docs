@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Resolve Issues Importing Access Databases and .XLS spreadsheets in Power BI Desktop and Power Query"
-   description="Resolve Issues Importing Access Databases and .XLS spreadsheets in Power BI Desktop and Power Query"
+   pageTitle="Resolve issues importing Access and .XLS files in Power BI Desktop"
+   description="Resolve issues importing Access databases and .XLS spreadsheets in Power BI Desktop and Power Query"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/08/2016"
+   ms.date="02/01/2017"
    ms.author="davidi"/>
 
-# Resolve Issues Importing Access Databases and .XLS spreadsheets in Power BI Desktop and Power Query  
+# Resolve issues importing Access and .XLS files in Power BI Desktop
 
-In Power BI Desktop, both Access databases and early versions of Excel workbooks (.XLS files of type Excel 2007-2003) use the Access Database Engine. There are two common situations that can prevent the Access Database Engine from working properly:
+In **Power BI Desktop**, both **Access databases** and early versions of **Excel workbooks** (.XLS files of type Excel 2007-2003) use the *Access Database Engine*. There are three common situations that can prevent the Access Database Engine from working properly:
 
 ### Situation 1: No Access Database Engine Installed
 When the Power BI Desktop error message indicates the Access Database Engine in not installed, you must install the Access Database Engine version, either 32-bit or 64-bit, that matches your Power BI Desktop version. You can install the Access Database Engine from [this location](http://www.microsoft.com/en-us/download/details.aspx?id=13255).
@@ -31,7 +31,7 @@ When the Power BI Desktop error message indicates the Access Database Engine in 
 
 
 ### Situation 2: The Access Database Engine bit version (32-bit or 64-bit) is different from your Power BI Desktop bit version
-This situation often occurs when the installed version of Microsoft Office is 32-bit, and the version of Power BI Desktop installed is 64-bit. The opposite can occur as well, and the bit-version mismatch with occur in either case. Any of the following solutions remedy this error:
+This situation often occurs when the installed version of Microsoft Office is 32-bit, and the version of Power BI Desktop installed is 64-bit. The opposite can occur as well, and the bit-version mismatch with occur in either case (if you're using an Office 365 subscription, see **Situation 3** for a different issue and resolution). Any of the following solutions can remedy this bit-version mismatch error:
 
 1.  Change the version of Power BI Desktop to match the bit-version of your Microsoft Office installation. To change the bit-version of Power BI Desktop, uninstall Power BI Desktop, and then install the version of Power BI Desktop that matches your Office installation. To select a version of Power BI Desktop, on the download page for desktop select **Advanced download options**.
 
@@ -53,3 +53,16 @@ This situation often occurs when the installed version of Microsoft Office is 32
         c:\users\joe\downloads\AccessDatabaseEngine.exe /passive
 
         c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
+
+### Situation 3: Trouble using Access or .XLS files with an Office 365 subscription
+
+If you are using an Office 365 subscription, whether **Office 2013** or **Office 2016**, the Access Database Engine provider is registered in a virtual registry location that is *only* accessible to Office processes. As a result, the Mashup Engine (which is responsible for running non-Office 365 Excel and Power BI Desktop) which is not an Office process,  cannot use the Access Database Engine provider.
+
+To remedy this situation, you can download and install the Access Database Engine redistributable that matches the bit version of your Power BI Desktop installation (see earlier sections for more information about bit-versions).
+
+Download link: [Access Database Engine download](http://www.microsoft.com/en-us/download/details.aspx?id=13255).
+
+
+### Other situations that cause import issues
+
+We strive to cover as many issues that occur with Access or .XLS files as possible. If you encounter an issue that isn't covered in this article, please submit a question about the issue to [Power BI Support](https://powerbi.microsoft.com/support/). We regularly look at issues that may be affecting many customers, and include them in our articles.

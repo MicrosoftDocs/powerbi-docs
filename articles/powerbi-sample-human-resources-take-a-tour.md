@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2016"
+   ms.date="12/08/2016"
    ms.author="amac"/>
 
 # Human Resources sample for Power BI: Take a tour  
 
 The HR department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who left and tries to uncover any trends in the hiring strategy. Our main objectives are to understand:
 
-- Who we hire.
-- Biases in our hiring strategy.
-- Trends in voluntary separations.
+- Who we hire
+- Biases in our hiring strategy
+- Trends in voluntary separations
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
@@ -70,7 +70,7 @@ On the dashboard, select the **Active Employee Count by Age Group** tile.
 The Human Resources Sample report opens to the **Active Employees vs. Separations** page.  
 ![](media/powerbi-sample-human-resources-take-a-tour/hr5.png)
 
-Items of interest:
+**Items of interest**:
 
 - Combo charts on the left show year-over-year change for active employees and separates. We have more actives this year due to rapid hiring, but also more separates than last year.
 

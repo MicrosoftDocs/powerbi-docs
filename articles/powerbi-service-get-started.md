@@ -14,10 +14,10 @@
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
-   ms.topic="article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/05/2016"
+   ms.date="01/25/2016"
    ms.author="mihart"/>
 
 # Get started with Power BI
@@ -27,6 +27,8 @@
 This tutorial helps you get started with Power BI service.  If you're looking for help with Power BI Desktop, see [Get started with Desktop](powerbi-desktop-getting-started.md).
 
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
+
+Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi).
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 

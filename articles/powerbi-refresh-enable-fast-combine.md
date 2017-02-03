@@ -3,13 +3,13 @@ pageTitle="Disable privacy settings"
 description="How to enable Fast Combine within the Personal Gateway to disable privacy settings for refresh."
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
-manager="mblythe"
+authors="davidiseminger"
+manager="erikre"
 backup=""
 editor=""
 tags=""
-qualityFocus="complete"
-qualityDate="04/01/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -17,8 +17,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/15/2016"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # Disable privacy setting in Power BI Gateway - Personal
 
 You may receive the following error based on the privacy settings for your data sources when used with the personal gateway.

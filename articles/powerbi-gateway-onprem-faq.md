@@ -3,8 +3,8 @@ pageTitle="On-premises data gateway FAQ"
 description="This is the on-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway."
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
-manager="mblythe"
+authors="davidiseminger"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,8 +17,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="11/16/2016"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # On-Premises Data Gateway FAQ
 
 <!-- Shared FAQ shared Include -->

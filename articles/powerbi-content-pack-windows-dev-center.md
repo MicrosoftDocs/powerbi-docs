@@ -1,23 +1,23 @@
-<properties 
+<properties
    pageTitle="Windows Dev Center content pack"
    description="Windows Dev Center content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 # Windows Dev Center content pack for Power&nbsp;BI
 
@@ -43,17 +43,17 @@ Connect to the [Windows Dev Center content pack](https://app.powerbi.com/getdata
 
 	![](media/powerbi-content-pack-windows-dev-center/params.png)
 
-5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Azure Active Directory credentials associated with your Windows Dev Center account (more details in [System Requirements](#Requirements)). 
+5. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your Azure Active Directory credentials associated with your Windows Dev Center account (more details in [System Requirements](#Requirements)).
 
 	![](media/powerbi-content-pack-windows-dev-center/creds.png)
-    
+
     ![](media/powerbi-content-pack-windows-dev-center/creds2.png)
 
 6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data and choose a tile to navigate to the underlying reports.
 
 	![](media/powerbi-content-pack-windows-dev-center/dashboard.png)
-    
-    ![](media/powerbi-content-pack-windows-dev-center/report.png) 
+
+    ![](media/powerbi-content-pack-windows-dev-center/report.png)
 
 
 **What Now?**
@@ -79,9 +79,9 @@ This content pack requires at least one at least one app published to the Window
 <a name="FindingParams"></a>
 ## Finding parameters
 
-You can find the application ID for an app by going to the App identity page under App management. 
+You can find the application ID for an app by going to the App identity page under App management.
 
-The application ID is on the end of your URL for Windows 10 Store, https://www.microsoft.com/store/apps/ **{applicationId}** 
+The application ID is on the end of your URL for Windows 10 Store, https://www.microsoft.com/store/apps/ **{applicationId}**
 
 ### See also
 

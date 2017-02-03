@@ -1,10 +1,10 @@
 ﻿<properties
-   pageTitle="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
+   pageTitle="Edit or remove a dashboard tile"
    description="Documentation for how to edit a dashboard tile -- resize, move, rename, pin, delete, add hyperlink."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
+   ms.date="01/22/2017"
    ms.author="mihart"/>
 
-# Edit a tile -- resize, move, rename, pin, delete, add hyperlink
+# Edit or remove a dashboard tile
 
 You can change the look and default behavior of a tile in a dashboard.
 
@@ -49,7 +49,7 @@ This article covers the following.
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_DashTile.png)
 
-2.  Hover over a dashboard tile, select the ellipses to display the options.
+2.  Hover over a dashboard tile and select the ellipses to display the options.
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/power-bi-tile-menu.png)
 

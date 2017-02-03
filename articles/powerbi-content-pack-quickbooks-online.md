@@ -1,23 +1,23 @@
-<properties 
+<properties
    pageTitle="QuickBooks Online content pack"
    description="QuickBooks Online content pack for Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="joeshoukry" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="joeshoukry"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2016"
+   ms.date="12/08/2016"
    ms.author="yshoukry"/>
 
 # QuickBooks Online content pack for Power&nbsp;BI
@@ -28,7 +28,7 @@ Connect to the [QuickBooks Online content pack](https://dxt.powerbi.com/getdata/
 
 Note: To import your QuickBooks Online data into Power BI, you need to be an admin on your QuickBooks Online account and sign in with your admin account credentials.
 
-## How to connect 
+## How to connect
 
 1.  Select **Get Data** at the bottom of the left navigation pane.
 
@@ -100,4 +100,3 @@ Currently Power BI only supports US editions of QuickBooks Online. 
 [Get started with Power BI](powerbi-service-get-started.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-

@@ -1,10 +1,10 @@
 <properties 
-   pageTitle="Create picture tiles with your iPhone app"
+   pageTitle="Create picture tiles with your iPhone mobile app"
    description="You can add any picture on your iPhone to any dashboard you own in the Power BI mobile app for iOS. Learn how."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/03/2016"
+   ms.date="01/19/2017"
    ms.author="maggies"/>
 
-# Create picture tiles with your iPhone app (Power BI for iOS)
+# Create picture tiles with your iPhone mobile app
 
 You can add any picture on your iPhone to any dashboard you own in the Power BI mobile app for iOS. Power BI adds the picture as the last tile in the dashboard, on your iPhone, and adds it to the lower-right corner of the dashboard in the Power BI service. Everyone who can see your dashboard can see the picture on the dashboard. In the Power BI service, you can move it anywhere you want on the dashboard.
 

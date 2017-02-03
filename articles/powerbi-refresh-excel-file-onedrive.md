@@ -3,13 +3,13 @@
    description="Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online"
    services="powerbi"
    documentationCenter=""
-   authors="guyinacube"
-   manager="mblythe"
+   authors="davidiseminger"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="04/01/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
-   ms.author="asaxton"/>
+   ms.date="01/18/2017"
+   ms.author="davidi"/>
 
 # Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
 

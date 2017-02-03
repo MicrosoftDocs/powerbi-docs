@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/26/2016"  
+   ms.date="12/08/2016"  
    ms.author="amac"/>
 # Dashboard data classification
 
@@ -39,15 +39,15 @@ When you hover over the tag, you will see the full name of the classification.
 
 ![](media/powerbi-service-data-classification/tag_tooltip.png)
 
-Admins can also set an URL for a tag to provide additional information. 
+Admins can also set an URL for a tag to provide additional information.
 
->**Note:** Depending the classification settings set by your admin, some classification types may not show as a tag on the dashboard. If you are a dashboard owner, you can always check your dashboard classification type under the dashboard settings. 
+>**Note:** Depending the classification settings set by your admin, some classification types may not show as a tag on the dashboard. If you are a dashboard owner, you can always check your dashboard classification type under the dashboard settings.
 
-## Setting a dashboard’s classification 
+## Setting a dashboard’s classification
 
-If data classification is turned on for your company, all dashboards start out with a default classification type, but as a dashboard owner, you can change the classification to match your dashboards security level. 
+If data classification is turned on for your company, all dashboards start out with a default classification type, but as a dashboard owner, you can change the classification to match your dashboards security level.
 
-To change the classification type, do the following. 
+To change the classification type, do the following.
 
 1. Go to the dashboard settings by selecting the **ellipsis** next to the dashboard name and select **Settings**.
 
@@ -57,13 +57,13 @@ To change the classification type, do the following.
 
     ![](media/powerbi-service-data-classification/classification_setting_dropdown.png)
 
-3. Select **Apply** when finished. 
+3. Select **Apply** when finished.
 
-After you apply the change, anyone you shared with will see the update the next time they reload the dashboard. 
+After you apply the change, anyone you shared with will see the update the next time they reload the dashboard.
 
-## Working with data classification tags as an admin 
+## Working with data classification tags as an admin
 
-Data classification is set up by the global admin for your organization. To turn data classification on, do the following. 
+Data classification is set up by the global admin for your organization. To turn data classification on, do the following.
 
 1. Select the Settings gear and select **Admin Portal**.
 
@@ -91,5 +91,4 @@ At this point, all dashboards will be assigned the default classification, and d
 >
 >- If you turn data classification off, none of the tags are remembered. You will need to start over if you decide to turn it back on later.  
 >- If you remove a classification type, any dashboards assigned the removed classification type will be assigned back to the default until the owner goes and sets it again.  
->- If you change the default, all dashboards that weren’t already assigned a classification type by the owner will change to the new default. 
-
+>- If you change the default, all dashboards that weren’t already assigned a classification type by the owner will change to the new default.

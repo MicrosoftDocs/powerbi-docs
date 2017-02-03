@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Reports on the iPad app"
+   pageTitle="Reports on the iPad mobile app"
    description="Learn about viewing reports in the Power BI mobile app for iOS on the iPad. You create reports in the Power BI service, then interact with them in the mobile apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/10/2016"
+   ms.date="01/19/2017"
    ms.author="maggies"/>
-# Reports on the iPad app (Power BI for iOS)
+# Reports on the iPad mobile app
 
 A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com).
 

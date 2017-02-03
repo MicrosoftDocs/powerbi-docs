@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/08/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Use the SAP BW Connector in Power BI Desktop
@@ -28,9 +28,9 @@ With Power BI Desktop, you can access **SAP BusinessWarehouse (BW)** data.
 
 To use the **SAP BW Connector**, go through the following installation steps:
 
-1.  Install the **SAP NetWeaver** library on your local machine. You can get the **SAP Netweaver** library from your SAP administrator, or directly from the SAP Support Portal. This library is usually included also in the SAP Client Tools installation.
+1.  Install the **SAP NetWeaver** library on your local machine. You can get the **SAP Netweaver** library from your SAP administrator, or directly from the [SAP Software Download Center](https://support.sap.com/swdc). Since the **SAP Software Download Center** changes its structure frequently, more specific guidance for navigating that site is not available. The **SAP NetWeaver** library is usually included also in the SAP Client Tools installation.
 
-    You can search for *SAP Note #1025361* to get the download location for the most recent version. Make sure the architecture for the **SAP NetWeaver** library (32-bit or 64-bit) matches your **Power BI Desktop** installation, then install all files included in the **SAP NetWeaver RFC SDK** according to the SAP Note.
+    You may be able to search for *SAP Note #1025361* to get the download location for the most recent version. Make sure the architecture for the **SAP NetWeaver** library (32-bit or 64-bit) matches your **Power BI Desktop** installation, then install all files included in the **SAP NetWeaver RFC SDK** according to the SAP Note.
 
 2.  The **Get Data** dialog includes an entry for **SAP Business Warehouse Server** in the **Database** category.
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2016"
+   ms.date="12/08/2016"
    ms.author="amac"/>
 
 # Download the Power BI industry samples (Excel workbooks)

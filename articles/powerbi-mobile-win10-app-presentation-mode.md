@@ -1,10 +1,10 @@
 <properties 
-   pageTitle="View Power BI in presentation mode on Surface Hub and in the Power BI mobile app for Windows 10"
+   pageTitle="View Power BI presentation mode on Surface Hub & Windows 10"
    description="Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in full-screen mode on Windows 10 devices."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/30/2016"
+   ms.date="01/23/2017"
    ms.author="maggies"/>
 
-# View Power BI in presentation mode on Surface Hub and in the Power BI mobile app for Windows 10
+# View Power BI presentation mode on Surface Hub & Windows 100
 
 You can display reports in presentation mode on Surface Hub, and display dashboards, reports, and tiles in full-screen mode on Windows 10 devices. 
 
@@ -40,19 +40,21 @@ You can also [display dashboards and reports in full-screen mode from the Power 
 
 1. In the Power BI mobile app on a dashboard, report, or tile, tap the **Full screen** icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-full-screen-icon.png) to go to full-screen mode.
 
-2. Tap the search icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) to look for other dashboards.
+2. In presentation mode, you can filter a report, or search for other dashboards and reports.
 
-    ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-search.png)
-
-3. Expand the Filters pane to set or remove filters.
+    Expand the Filters pane to set or remove filters.
 
     ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-presentation-filter.png)
+
+     Tap the search icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) to look for other dashboards.
+
+    ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-search.png)
 
 4. To exit full-screen mode, tap the icon with two inward-facing arrows ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) on the toolbar, or swipe down from the top and tap the two inward-facing arrows ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
 ## Turn on presentation mode for Surface Hub
 
-Presentation mode is turned on by default in Surface Hub, but if it's turned off, you can turn it back on.
+Presentation mode is on by default in Surface Hub, but if it's turned off, you can turn it back on.
 
 1. Tap the Settings icon ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-settings-icon.png) at the bottom of the left navigation bar.
 
@@ -87,10 +89,11 @@ Presentation mode is turned on by default in Surface Hub, but if it's turned off
 
 2. To exit full-screen mode, swipe down from the top and tap the two inward-facing arrows ![](media/powerbi-mobile-win10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
-### See also
+## See also
 
-[Display dashboards and reports in full-screen mode from the Power BI service](powerbi-service-dash-and-reports-fullscreen.md)
-[Download the Power BI app](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
-[Get started with Power BI](powerbi-service-get-started.md)
+- [Display dashboards and reports in full-screen mode from the Power BI service](powerbi-service-dash-and-reports-fullscreen.md)
+- [Download the Power BI app](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
+- [Get started with Power BI](powerbi-service-get-started.md)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
 

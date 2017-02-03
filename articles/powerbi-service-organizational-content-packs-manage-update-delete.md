@@ -1,11 +1,11 @@
 <properties 
    pageTitle="Manage, update, and delete organizational content packs"
-   description="Read about managing, updating, and deleting organizational content packs in Power BI"
+   description="Read about managing, updating, and deleting organizational content packs in Power BI."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
-   backup=""
+   manager="erikre" 
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
-   ms.author="maggies"/>
-# Manage, update, and delete organizational content packs in Power BI
+   ms.date="01/23/2017"
+   ms.author="ajayan"/>
+# Manage, update, and delete organizational content packs
 
-You can package up and share your own dashboards, reports, Excel workbooks, and datasets with your colleagues in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
+You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](powerbi-service-organizational-content-packs-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
 
 Only the content pack creator can do some organizational content pack tasks:
 
@@ -35,9 +35,9 @@ If you make changes to the original content pack dashboard, report, or Excel wor
 
 ## Republish with new content
 
-When you make and save a change to the dashboard that you used to create the content pack, Power BI reminds you to update it so others can see the changes. For example, if you pin a new tile or just change the name of the dashboard.
+When you make and save a change to the dashboard that you included in a content pack, Power BI reminds you to update it so others can see the changes. For example, if you pin a new tile or just change the name of the dashboard.
 
-1.  Select **View Content Packs** in the message:
+1.  Select **View Content Packs** in the message.
   
     ![](media/powerbi-service-organizational-content-packs-manage-update-delete/PBI_ContPkChangesMessage.png)
 2.  Or select the cog icon in the upper-right corner ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and select **View Content Pack**.

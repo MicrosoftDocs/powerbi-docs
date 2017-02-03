@@ -1,14 +1,14 @@
 ﻿<properties
-   pageTitle="Tutorial: ArcGIS in Power BI"
+   pageTitle="ArcGIS in Power BI (Tutorial)"
    description="Tutorial: ArcGIS in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   featuredVideoId=""
+   featuredVideoId="EKVvOZmxg9s"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2016"
+   ms.date="01/31/2017"
    ms.author="mihart"/>
 
 # Tutorial: ArcGIS maps in Power BI (Preview)
@@ -59,7 +59,9 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2.png)
 
 ## Create an AcrGIS map visual
-Take the following steps to create a **ArcGIS Maps for Power BI**.
+Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 
 1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and **Longitude** buckets.
 

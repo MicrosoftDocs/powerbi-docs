@@ -4,8 +4,8 @@
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
-   manager="mblythe" 
-   backup=""
+   manager="erikre" 
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2016"
-   ms.author="maggies"/>
+   ms.date="01/06/2017"
+   ms.author="ajayan"/>
 
 # Remove your connection to an organizational content pack in Power BI 
 
@@ -38,7 +38,7 @@ Removing the dataset also removes all associated reports and dashboards.
 > -  If you create a content pack, you (and only you) can [delete it from the content pack library](powerbi-service-organizational-content-packs-manage-update-delete.md).
 
 
-### See also  
+## See also  
 - [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
 - [Get started with Power BI](powerbi-service-get-started.md)  
 - [Power BI basic concepts](powerbi-service-basic-concepts.md)  

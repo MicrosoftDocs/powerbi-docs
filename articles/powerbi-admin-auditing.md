@@ -1,10 +1,10 @@
 <properties
-   pageTitle="Auditing Power BI in your organization"
+   pageTitle="Using auditing within your organization"
    description="Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="ericre"
    backup=""
    editor=""
    tags=""
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/11/2016"
+   ms.date="02/03/2017"
    ms.author="asaxton"/>
-# Auditing Power BI in your organization
+# Using auditing within your organization
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -29,7 +29,7 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 
 You can filter the audit data by date range, user, dashboard, report, dataset and activity type. You can also download the activities in a csv (comma separated value) file to analyze offline.
 
-> [AZURE.NOTE] The auditing feature in Power BI is in preview and is available in all data regions except those in Austrailia and Europe.
+> [AZURE.NOTE] The auditing feature in Power BI is in preview and is available in all data regions.
 
 ## Enabling auditing functionality in the Power BI admin portal
 
@@ -153,6 +153,8 @@ Here are some possible details that are displayed.
 
 You can use PowerShell to access the audit logs based on your login. This is done by accessing Exchange Online. Here is an example of a command to pull Power BI audit log entries.
 
+> [AZURE.NOTE] In order to use the New-PSSession command, your account needs to have an Exchange Online license assigned to it and you need access to the audit log for your tenant.
+
 ```
 Set-ExecutionPolicy RemoteSigned
  
@@ -167,6 +169,8 @@ Search-UnifiedAuditLog -StartDate 9/11/2016 -EndDate 9/15/2016 -RecordType Power
 For more information on connecting to Exchange Online, see [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx).
 
 For more information about parameters and usage of the Search-UnifiedAuditLog command, see [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx).
+
+To see an example of using PowerShell to search the audit log and then assign Power BI Pro licenses based on entries, see [Using Power BI audit log and PowerShell to assign Power BI Pro licenses](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## Export the Power BI audit log
 
@@ -206,6 +210,7 @@ For a full listing, see [Detailed properties in the Office 365 audit log](https:
 |CreateGroup|This activity is fired every time a group is created.|- Group name.|
 |AddGroupMembers|This activity is logged every time a member is added to a Power BI group workspace.|- Group name.<br/>- Email addresses.|
 |UpdatedAdminFeatureSwitch|This event is logged every time an admin feature switch is changed.|- Switch name.<br/>- New switch state.|
+|OptInForProTrial|This event is logged when a user choses to try Power BI Pro within the service.|- email address|
 
 ## See also
 

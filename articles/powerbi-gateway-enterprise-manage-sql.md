@@ -3,13 +3,13 @@ pageTitle="Manage your data source - SQL"
 description="How to manage the on-premises data gateway and data sources that belong to that gateway."
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
+authors="davidiseminger"
 manager="erikre"
 backup=""
 editor=""
 tags=""
-qualityFocus="monitoring"
-qualityDate="05/16/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -17,8 +17,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="10/01/2016"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # Manage your data source - SQL Server
 
 Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.

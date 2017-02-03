@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2016"
+   ms.date="12/08/2016"
    ms.author="amac"/>
 
 # Retail Analysis sample for Power BI: Take a tour

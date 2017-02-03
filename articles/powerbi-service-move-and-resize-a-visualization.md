@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Move, resize, and pop out a visualization in a Power BI report"
+   pageTitle="Move, resize, and pop out a visualization"
    description="Move and resize a visualization in a Power BI report"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/05/2016"
+   ms.date="01/19/2017"
    ms.author="mihart"/>
 
-# Move and resize a visualization in a Power BI report  
+# Move and resize a visualization in a report  
 
 ##   Open the report
 

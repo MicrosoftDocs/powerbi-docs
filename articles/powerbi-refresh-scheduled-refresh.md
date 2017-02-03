@@ -3,12 +3,12 @@ pageTitle="Configure scheduled refresh"
 description="This covers the steps to select a gateway and configure scheduled refresh."
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
-manager="mblythe"
+authors="davidiseminger"
+manager="erikre"
 backup=""
 editor=""
-qualityFocus="complete"
-qualityDate="04/01/2016"/>
+qualityFocus="no"
+qualityDate=""/>
 
 <tags
 ms.service="powerbi"
@@ -16,8 +16,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/15/2016"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # Configuring scheduled refresh
 
 If your dataset supports scheduled refresh, by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data Source Credentials**, and **Schedule Refresh**. Let’s take a closer look at each.

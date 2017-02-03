@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/09/2016"
+   ms.date="12/07/2016"
    ms.author="asaxton"/>
 
 # Spark on HDInsight with DirectQuery
@@ -33,37 +33,49 @@ Spark on Azure HDInsight with DirectQuery allows you to create dynamic reports b
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.  Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
 
-1. Select **Get Data** at the bottom of the left navigation pane.  
- 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/getdata3.png)  
+1. Select **Get Data** at the bottom of the left navigation pane.
 
-2. Select **Databases & More**.  
- 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/GetData.png)
+ 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-getdata.png)
 
-3. Select the **Spark on HDInsight** connector and choose **Connect**.  
- 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/Connect.png)  
+2. Select **Databases & More**.
 
-4. Enter the name of the **server** you want to connect to, as well as your **username** and **password**. The server is always in the form \<clustername\>.azurehdinsight.net, see more details about finding these values below.  
- 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/parameters.png)  
+ 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-getdata-databases.png)
 
-5. Once connected, you'll see a new dataset with named “SparkDataset”. You can also access the dataset through the placeholder tile that is created.  
- 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/tile.PNG)  
+3. Select the **Spark on HDInsight** connector and choose **Connect**.
+
+ 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-getdata-databases-connect.png)
+
+4. Enter the name of the **server** you want to connect to, as well as your **username** and **password**. The server is always in the form \<clustername\>.azurehdinsight.net, see more details about finding these values below.
+
+ 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-server-name.png)
+
+     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-username.png)
+
+5. Once connected, you'll see a new dataset with named “SparkDataset”. You can also access the dataset through the placeholder tile that is created.
+
+ 	![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-dataset.png)
 
 6. Drilling into the dataset, you can explore all of the tables and columns in your database. Selecting a column will send a query back to the source, dynamically creating your visual. These visuals can be saved in a new report, and pinned back to your dashboard.
 
-## Finding your Spark on HDInsight parameters  
-The server is always in the form \<clustername\>.azurehdinsight.net, and can be found in your portal:  
-	![](media/powerbi-spark-on-hdinsight-with-direct-connect/ParametersFull.png)
+## Finding your Spark on HDInsight parameters
 
-The username and password can also be found in the portal.
+The server is always in the form \<clustername\>.azurehdinsight.net, and can be found in the Azure portal.
 
-## Troubleshooting  
+![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-server-name-parameter.png)
+
+The username and password can also be found in the Azure portal.
+
+## Troubleshooting
+
 If you're hitting issues executing queries against your cluster, verify the application is still running and restart if necessary.
 
-You can also allocate additional resources in the Resource Manager:  
-	![](media/powerbi-spark-on-hdinsight-with-direct-connect/ResourceManager.png)
+You can also allocate additional resources within the Azure portal under **Configuration** > **Scale Cluster**:
+
+![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-scale.png)
 
 ## See also  
 
+[Get started: Create Apache Spark cluster on HDInsight Linux and run interactive queries using Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
 [Get started with Power BI](powerbi-service-get-started.md)  
 [Get Data for Power BI](powerbi-service-get-data.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

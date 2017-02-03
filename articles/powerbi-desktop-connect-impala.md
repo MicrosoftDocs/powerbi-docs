@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/03/2016"
+   ms.date="12/01/2016"
    ms.author="davidi"/>
 
 # Connect to an Impala database in Power BI Desktop (Preview)

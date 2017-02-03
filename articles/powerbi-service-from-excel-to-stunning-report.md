@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/01/2016"
+   ms.date="01/20/2017"
    ms.author="mihart"/>
 
 # From Excel workbook to stunning report in no time
@@ -66,17 +66,17 @@ Notice that your Excel workbook table data appears in the Fields pane. Under the
 
 Now you can begin to create visualizations. Your manager wants to see profit over time. In the Fields pane, drag **Profit** to the report canvas. Power BI displays a bar chart by default. Next, drag **Date** to the report canvas. Power BI updates the bar chart to show profit by date.
 
-![](media/powerbi-service-from-excel-to-stunning/PBI_report_pin.png)
+![](media/powerbi-service-from-excel-to-stunning/PBI_report_pin-new.png)
 
 >**TIP**: If your chart doesn't look like you expected, check your aggregations. For example, in the **Value** well, right click the field you just added and make sure the data is being aggregated the way you'd like it to be.  In this example, we're using **Sum**.
 
 Your manager wants to know which countries are the most profitable. Impress her with a map visualization. Select a blank area on your canvas, and from the Fields pane, simply drag over the **Country** and then **Profit** fields. Power BI creates a map visual with bubbles representing the relative profit of each location.
 
-![](media/powerbi-service-from-excel-to-stunning/PBI_report_map.png)
+![](media/powerbi-service-from-excel-to-stunning/PBI_report_map-new.png)
 
 What about displaying a visual showing sales by product and market segment? Easy. In the Fields pane, select the checkboxes next to the Sales, Product and Segment fields. Power BI creates a bar chart instantly. Change the type of chart by choosing one of the icons in the Visualizations menu. For instance, change it to a Stacked Bar chart.  To sort the chart, select the ellipses (...) > **Sort by**.
 
-![](media/powerbi-service-from-excel-to-stunning/PBI_barchart.png)
+![](media/powerbi-service-from-excel-to-stunning/PBI_barchart-new.png)
 
 Pin all of your visuals to your Dashboard. You’re ready to share it with your colleagues.
 
@@ -102,4 +102,4 @@ See also
 
 - [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
--  More questions? [Try the Power BI Community](http://community.powerbi.com/) 
+-  More questions? [Try the Power BI Community](http://community.powerbi.com/)

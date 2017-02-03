@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/07/2016"
+   ms.date="12/08/2016"
    ms.author="tpalmer"/>
 
 # Power&nbsp;BI content pack for ServiceNow incidents
@@ -38,12 +38,12 @@ Connect to the Power BI content pack for [ServiceNow Incidents](https://app.powe
 3.  Select **ServiceNow Incidents** \> **Get**.
 
     ![](media/powerbi-content-pack-servicenow/connect.png)
-    
+
 4.  Provide the URL of your ServiceNow instance and the range of days/records to bring in. Note as soon as one limit is hit the import will stop.
 
     ![](media/powerbi-content-pack-servicenow/params.png)
 
-5.  When prompted, enter your ServiceNow **Basic** credentials. Note single sign on is not supported today, more details on the system requirements below. 
+5.  When prompted, enter your ServiceNow **Basic** credentials. Note single sign on is not supported today, more details on the system requirements below.
 
     ![](media/powerbi-content-pack-servicenow/creds.png)
 
@@ -71,7 +71,7 @@ To connect you will need:
 
 If you're hitting a credential error during load, please review the access requirements above. If you have the correct permissions and are still hitting issues, please work with your ServiceNow admin to ensure you have any additional permissions that may be required for your custom instance.
 
-If you're seeing long load times, please review the number of incidents and number of days you specified during connection and consider reducing it. 
+If you're seeing long load times, please review the number of incidents and number of days you specified during connection and consider reducing it.
 
 ### See also
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2016"
+   ms.date="12/08/2016"
    ms.author="amac"/>
 
 # Supplier Quality Analysis sample for Power BI: Take a tour  
@@ -25,8 +25,8 @@
 This industry sample dashboard and underlying report focus on one of the typical supply chain challenges — supplier quality analysis.
 Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives:
 
--   Understand who the best and worst suppliers are, with respect to quality.
--   Identify which plants do a better job finding and rejecting defects, to minimize downtime.
+-   Understand who the best and worst suppliers are, with respect to quality
+-   Identify which plants do a better job finding and rejecting defects, to minimize downtime
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards.
 This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
@@ -39,12 +39,14 @@ You can also [download just the dataset (Excel workbook) for this sample](http:
 Let’s analyze the downtime caused by defective materials and see which vendors are responsible.  
 
 1.  On the dashboard, select the **Total Defect Quantity** number tile or the **Total Downtime Minutes** number tile.  
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier2.png)  
 
 	The “Supplier Quality Analysis Sample” report opens to the “Downtime Analysis” page. Notice we have 33M total defective pieces, and the total downtime caused by these defective pieces is 77K minutes. Some materials have fewer defective pieces but they can cause a huge delay resulting in larger downtime. Let’s explore them on the report page.  
 2.  Looking at the **Total Downtime Minutes** line in the **Defects and Downtime (min) by Material Type** combo chart, we see corrugate materials cause the most downtime.  
 
 3.  Select the **Corrugate** column in the same combo chart to see which plants are impacted most by this defect and which vendor is responsible.  
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier3.png)  
 
 4.  Select individual plants in the map to see which vendor or material is responsible for the downtime at that plant.
@@ -55,11 +57,13 @@ Let’s analyze the downtime caused by defective materials and see which vendors
 1.  On page 3 of the report, “Downtime Analysis,” select **Edit Report** in the upper-left corner.  
 
 2.  Select the **Downtime (min) by Vendor** area chart, and in the Visualizations pane select Treemap.  
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier4.png)  
 
      The treemap automatically puts the **Vendor** field as the **Group**.  
 
      ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier5.png)  
+
     From this tree map, we can see the top eight vendors are the eight blocks on the left of the tree map. We can also see they account for about 50% of all downtime minutes.  
 
 3.  Select **Power BI** in the top navigation bar to go back to the dashboard.
@@ -70,14 +74,17 @@ Now let’s explore which plant does a better job managing defective material, r
 1.  Select the **Total Defect Reports by Plant, Defect Type** map tile.  
 
      The report opens to the “Supplier Quality Analysis” page.  
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier6.png)  
 
 2.  In the map legend, select the **Impact** circle.  
+
      ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier7.png)  
 
      Notice in the bubble chart that **Logistics** is the most troubled category – it’s the largest in terms of total defect quantity, total defect reports, and total downtime minutes. Let’s explore this category more.  
 
 3.  Select the Logistics bubble in the bubble chart and observe the plants in Springfield, IL and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield’s large number for impacts.  
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier8.png)  
 
 4.  Select **Power BI** in the top navigation bar to return to the dashboard.
@@ -85,6 +92,7 @@ Now let’s explore which plant does a better job managing defective material, r
 ## Which material type is best managed?  
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
 -   In the dashboard, look at the **Total Defect Quantity by Material Type, Defect Type** tile.
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier9.png)
 
 Notice that **Raw Materials** have a lot of total defects, but most of the defects are either rejected or have no impact.
@@ -92,6 +100,7 @@ Notice that **Raw Materials** have a lot of total defects, but most of the defec
 Let’s verify that raw materials don’t cause a lot of downtime, despite high defect quantity.
 
 -   In the dashboard, look at the **Total Defect Qty, Total Downtime Minutes by Material Type** tile.
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier10.png)
 
 Apparently raw materials are well managed: they have more defects, but lower total downtime minutes.
@@ -100,6 +109,7 @@ Apparently raw materials are well managed: they have more defects, but lower tot
 1.  Select the **Total Defect Reports by Plant, Defect Type** map tile to open the report to the first report page, Supplier Quality Analysis.
 
 2.  Notice that **Defect Qty** is higher in 2014 than in 2013.  
+
      ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier11.png)  
 
 3.  Do more defects translate into more downtime? We can ask questions in the Q&A box to find out.  
@@ -113,6 +123,7 @@ Apparently raw materials are well managed: they have more defects, but lower tot
      ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier12.png)  
 
 6.  Now change the question to “show material types, year and total downtime minutes”.  
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier13.png)
 
 Raw materials downtime was about the same in 2013 and 2014, even though there were many more raw materials defects in 2014.
@@ -131,6 +142,7 @@ Let’s look at another dashboard tile related to total defective quantity.
      Let’s see if this increase in defect quantity led to an equal increase in downtime minutes.  
 
 2.  In the question box, type “total downtime minutes by month and year as a line chart”.  
+
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier15.png)
 
 	We do see a jump in downtime minutes during June and Oct, but other than that, the jump in the number of defects didn’t result in significantly more downtime. This shows we’re managing defects well.  

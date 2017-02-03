@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports in the Android app"
-   description="Learn about viewing reports in the Power BI mobile app for Android phones. You create reports in the Power BI service, then interact with them in the mobile apps."
+   pageTitle="Reports in the Power BI app for Android phones"
+   description="Learn about viewing reports in the Power BI mobile app for Android phones. You create reports in the Power BI service and Power BI Desktop, then interact with them in the mobile apps."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="01/13/2017"
    ms.author="maggies"/>
 
 # Reports in the Power BI app for Android phones
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com).
+A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com) or in [Power BI Desktop](powerbi-desktop-report-view.md). When you create reports in Power BI Desktop, you can create [a version of the report optimized for phones](powerbi-mobile-view-phone-report.md).
 
 Then you view and interact with those reports in the [Android app](powerbi-mobile-android-app-get-started.md).
 
@@ -67,7 +67,8 @@ When designing a report in the Power BI service [(https://powerbi.com)](https://
     ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report-slicer.png)
 
 
-### See also
+## See also
 
-- [Get started with the Android app](powerbi-mobile-android-app-get-started.md)
+- [View and interact with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
+- [Create a version of a report optimized for phones](powerbi-desktop-create-phone-report.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

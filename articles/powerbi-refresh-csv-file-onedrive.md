@@ -3,13 +3,13 @@
    description="Refresh a dataset created from a comma separated value (.csv) file on OneDrive"
    services="powerbi"
    documentationCenter=""
-   authors="guyinacube"
-   manager="mblythe"
+   authors="davidiseminger"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="04/01/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
 
 <tags
    ms.service="powerbi"
@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2016"
-   ms.author="asaxton"/>
+   ms.date="01/18/2017"
+   ms.author="davidi"/>
 
-# Refresh a dataset created from a comma separated value (.csv) file on OneDrive or SharePoint Online
+# Refresh a dataset created from a .CSV file on OneDrive or SharePoint Online
 
 ## What are the advantages?  
-When you connect to a .csv file on OneDrive, or SharePoint Online, a dataset is created in Power BI. Data from the .csv file is then imported into the dataset in Power BI. Power BI then automatically connects to the file and refreshes any changes with the dataset in Power BI. If you edit the .csv file in OneDrive, or SharePoint Online, once you save, those changes will appear in Power BI, usually within about an hour. Any visualizations in Power BI based on the dataset are automatically updated too.
+When you connect to a .csv file on OneDrive or SharePoint Online, a dataset is created in Power BI. Data from the .csv file is then imported into the dataset in Power BI. Power BI then automatically connects to the file and refreshes any changes with the dataset in Power BI. If you edit the .csv file in OneDrive, or SharePoint Online, once you save, those changes will appear in Power BI, usually within about an hour. Any visualizations in Power BI based on the dataset are automatically updated too.
 
 If your files are in a shared folder on OneDrive for Business, or SharePoint Online, other users can work on the same file. Once saved, any changes made are automatically updated in Power BI, usually within an hour.
 

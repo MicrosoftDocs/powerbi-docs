@@ -3,8 +3,8 @@ pageTitle="On-premises data gateway in-depth"
 description="This article looks at the On-premises gateway in-depth. This looks at how the service works with Azure Active Directory and your local Active Directory when working with Analysis Services"
 services="powerbi"
 documentationCenter=""
-authors="guyinacube"
-manager="mblythe"
+authors="davidiseminger"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,8 +17,8 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="11/16/2016"
-ms.author="asaxton"/>
+ms.date="01/18/2017"
+ms.author="davidi"/>
 # On-premises data gateway in-depth
 
 Users in your organization can see your on-premises data, but before users can connect to your on-premises data source, an on-premises data gateway needs to be installed and configured. The gateway helps make the behind-the-scenes communication from a user in the cloud to your on-premises data source and back to the cloud quick and secure.

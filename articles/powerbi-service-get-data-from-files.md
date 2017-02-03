@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="01/11/2017"
    ms.author="davidi"/>
 
 # Get data from files
@@ -38,6 +38,8 @@ To better understand the importance of datasets, and how we get data for them, l
 In Power BI, a dataset is like the engine in your car. The dataset provides the data, metrics, and information that’s displayed in your Power BI dashboard. Of course your engine, or dataset, needs fuel, and in Power BI, that fuel is data. Your car has a fuel tank that provides gas to the engine. Much the same in Power BI, you need a fuel tank that has data you can feed to your dataset. In our case, that fuel tank is a Power BI Desktop file, an Excel workbook file, or a .CSV file.
 
 We can even take it one step further. A fuel tank in a car has to be filled with gas. The gas for our Power BI Desktop, Excel, or .CSV file is data from another data source. We get data from another data source and put it into an Excel, Power BI Desktop, or .CSV file. If it's an Excel workbook or .CSV file, we can manually enter rows of data. Or, we can connect to an external data source to query and load data into our file. Once we have a file with some data, we can get it into Power BI as a dataset.
+
+> **Note:** Data in Excel workbooks must be in a table, or in the data model, to be imported by Power BI.
 
 ## Where your file is saved makes a difference
 

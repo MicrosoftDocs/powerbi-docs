@@ -1,10 +1,10 @@
 <properties 
-   pageTitle="Tag a barcode field in Power BI Desktop for the Power BI mobile apps"
+   pageTitle="Tag a barcode field in Power BI Desktop for the mobile apps"
    description="When you tag a barcode field in your model in Power BI Desktop, you can filter data for barcodes automatically in the Power BI app on your iPhone."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    editor=""
    tags=""
    qualityFocus="no"
@@ -16,10 +16,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/29/2016"
+   ms.date="01/23/2017"
    ms.author="maggies"/>
 
-# Tag barcodes in Power BI Desktop for the Power BI mobile apps
+# Tag barcodes in Power BI Desktop for the mobile apps
 
 In Power BI Desktop, you can [categorize data](powerbi-desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. When you or your colleagues [scan a barcode on a product with the Power BI app](powerbi-mobile-scan-barcode-for-report.md) on the iPhone, you see any report that includes that barcode. When you open the report in the mobile app, Power BI automatically filters the report to data related to that barcode.
 
