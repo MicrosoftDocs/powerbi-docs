@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Filter a report by location in the Power BI mobile apps"
-   description="Learn how you can filter a report by your location in the Microsoft Power BI  mobile apps, if the report owner set geographic tags."
+   pageTitle="Filter a report by geographic location in the mobile apps"
+   description="Learn how you can filter a report by your geographic location in the Microsoft Power BI mobile apps, if the report owner set geographic tags."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -16,16 +16,25 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="01/20/2017"
    ms.author="maggies"/>
 
-# Filter a report by location in the Power BI mobile apps
+# Filter a report by geographic location in the mobile apps
+
+Applies to:
+
+| ![iPhone](media/powerbi-mobile-geofiltering/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-geofiltering/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-geofiltering/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-geofiltering/android-tablet-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-geofiltering/win-10-logo-50-px.png) |
+|:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
+| iPhones | iPads | Android phones | Android tablets | Windows 10 phones |
 
 When you look at a Power BI report on your mobile device, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
 
-> [AZURE.NOTE] You can only filter by location if the geographic names in the report are in English&#150;for example, "New York City" or "Germany".
+> **Notes** 
+> 
+> -   You can only filter by location if the geographic names in the report are in English&#150;for example, "New York City" or "Germany".
+> -   Windows 10 tablets and PCs don't support geographic filtering, but Windows 10 phones do.
 
-## Filter your report by your location
+## Filter your report by your geographic location
 
 1. Open a report in the Power BI mobile app on your mobile device.
 
@@ -33,8 +42,16 @@ When you look at a Power BI report on your mobile device, do you see a little pu
 
     ![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
-## Why do only some reports have location tags?
-When you or your colleagues create reports in Power BI Desktop, you can categorize geographical data for a column. Then, when you view that report in a Power BI mobile app, Power BI automatically provides geographical filters that match where you are.
+## Why don't I see location tags on a report?
+You need to meet all three of these conditions to see location tags. 
+
+-    The person who created the report in Power BI Desktop [categorized geographical data](powerbi-desktop-mobile-geofiltering.md) for at least one column, such as City, State, or Country/Region.
+-    You are in one of the locations that has data in that column.
+-    You're using one of these mobile devices:
+     -    iOS (iPad, iPhone, iPod).
+     -    Android phone or tablet.
+     -    Windows 10 phone (other Windows 10 devices such as PCs and tablets don't support geographic filtering).
+ 
 
 Read more about [setting up geographic filtering](powerbi-desktop-mobile-geofiltering.md) in Power BI Desktop.
 
