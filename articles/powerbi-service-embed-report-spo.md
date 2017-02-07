@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/06/2017"
+   ms.date="02/07/2017"
    ms.author="asaxton"/>
 # Embed with report web part in SharePoint Online
 
@@ -112,7 +112,7 @@ Below is a description of the settings that can be adjusted for the Power BI web
 
 If your Power BI environment requires you to sign-in using multi-factor authentication, you may be asked to sign-in with a security device to verify your identity. This will occur if you did not sign-in to SharePoint Online using multi-factor authentication but your Power BI environment requires an account validated by a security device.
 
-> [AZURE.NOTE] Multi-factor authentication is not yet supported with Azure Active Directory 2.0.
+> [AZURE.NOTE] Multi-factor authentication is not yet supported with Azure Active Directory 2.0. Users will receive a message saying *error*. If the user signs-in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Reports that do not load
 
@@ -129,6 +129,10 @@ There are two common reasons for this message.
 2. The report was deleted.
 
 You should contact the owner of the SharePoint Online page to help you resolve the issue.
+
+## Known issues and limitations
+
+- The Power BI (preview) web part for SharePoint Online does not support screen readers or keyboard navigation.
 
 ## See also
 
