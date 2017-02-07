@@ -26,7 +26,7 @@ Applies to:
 
 | ![iPhone](media/powerbi-service-mobile-groups-in-the-ipad-app/iphone-logo-50-px.png) | ![iPad](media/powerbi-service-mobile-groups-in-the-ipad-app/ipad-logo-50-px.png) | ![Android phone](media/powerbi-service-mobile-groups-in-the-ipad-app/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-service-mobile-groups-in-the-ipad-app/android-tablet-logo-50-px.png) | ![Android tablet](media/powerbi-service-mobile-groups-in-the-ipad-app/win-10-logo-50-px.png) |
 |:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
-| iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
+| [iPhones](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-iphone-app) | [iPads](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-ipad-app) | [Android phones](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-android-app) | [Android tablets](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-android-app) | [Windows 10 devices](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-windows-10-app) |
 
 
 Power BI group workspaces offer a great space to collaborate with your colleagues. They're built on Office 365 groups.
