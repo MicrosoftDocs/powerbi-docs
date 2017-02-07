@@ -34,6 +34,9 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
 
 2. Select the ellipsis (...) in the upper-right corner > under **Edit View**, select **Phone**.
 
+
+    ![](media/powerbi-service-create-dashboard-phone-view/power-bi-mobile-edit-phone-view-menu.png)
+
     >**Note**: If you aren't the dashboard owner, you won't see this option on the menu.
 
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
@@ -50,6 +53,8 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
 
 4. If you change your mind, select **Reset phone view** ![](media/powerbi-service-create-dashboard-phone-view/power-bi-mobile-reset-phone-view-icon.png) to put them back in the size and order they were before.
+
+    ![](media/powerbi-service-create-dashboard-phone-view/power-bi-mobile-reset-phone-view-menu.png)
 
     >**Note**: Just opening Phone Edit view in the Power BI service slightly changes the size and shape of the tiles on a phone. So to return the dashboard to its exact state before you opened it in Phone Edit view, select **Reset phone view**.
 
