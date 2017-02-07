@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/28/2016"
+   ms.date="02/02/2017"
    ms.author="maggies"/>
 
 # Groups in the Power BI app for Android tablets 
