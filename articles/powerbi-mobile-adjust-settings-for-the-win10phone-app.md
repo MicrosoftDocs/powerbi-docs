@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="02/06/2017"
    ms.author="maggies"/>
 
 # Adjust settings for the Power BI mobile app for Windows 10
@@ -25,8 +25,6 @@
 You can view and adjust the settings for the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md).
 
 1. In the Power BI mobile app for Windows 10, tap **Settings** in the lower-left corner ![](media/powerbi-mobile-adjust-settings-for-the-win10phone-app/power-bi-settings-icon.png).
-
-    ![](media/powerbi-mobile-adjust-settings-for-the-win10phone-app/power-bi-settings.png)
 
 2. Here you can:
 

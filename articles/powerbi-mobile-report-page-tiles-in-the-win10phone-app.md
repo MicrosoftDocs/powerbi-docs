@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/14/2016"
+   ms.date="02/06/2017"
    ms.author="maggies"/>
 
 # View report page tiles in the Power BI mobile app for Windows 10
