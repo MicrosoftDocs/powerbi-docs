@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/08/2016"
+   ms.date="02/06/2017"
    ms.author="maggies"/>
 
 # Groups in the Android app for Power BI  

@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/05/2017"
+   ms.date="02/06/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -28,6 +28,32 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 * [What's new in the Power BI service](powerbi-service-whats-new.md)  
 * [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/)
+
+## January 2017
+
+Read the [January 2017 mobile apps blog feature summary](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-january-2017).
+
+### All devices
+
+**Load more than 100 rows in tables and matrices**
+Now, if you have a large table or matrix on your dashboard or report, we show as much data as possible in the tile. Then in focus mode, you can scroll down to load additional rows.
+
+**Phone report - general availability**
+Power BI phone reports are now generally available. In Power BI Desktop, you can tailor a portrait view of an existing report for mobile viewers. Learn more about [authoring phone reports in Power BI Desktop](powerbi-desktop-create-phone-report.md) and the [report experience on phones](powerbi-mobile-view-phone-report.md).
+
+### iOS
+
+**SSRS Authentication using Active Directory Federation Services (ADFS) Preview**
+Now you can sign in to on-premises SQL Server Reporting Services servers from your mobile device with your organizational account. Read more about [using OAuth to connect to SSRS servers](powerbi-mobile-oauth-ssrs.md).
+
+### Android
+
+**SSRS Authentication using Active Directory Federation Services (ADFS) Preview**
+Now you can sign in to on-premises SQL Server Reporting Services servers from your mobile device with your organizational account. Read more about [using OAuth to connect to SSRS servers](powerbi-mobile-oauth-ssrs.md).
+
+**New and improved: Annotate and share insights quickly**
+Sharing and annotating are now fully functional on Android devices. The improved menu makes it easier and quicker to annotate and share insights, and you can also share an annotated report or directly from the Power BI app.
+
 
 ## December 2016
 
