@@ -78,7 +78,7 @@ From here, you can:
 
     >**Tip**: If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
-     Or just turn your phone sideways to [view the dashboard in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
+     Or just turn your phone sideways to view the dashboard in landscape mode on your phone.
 
      ![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard-landscape.png)
 
@@ -168,7 +168,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     ![](media/powerbi-mobile-create-dashboard/pbi_andr_dash.png)
 
-     Or just turn your phone sideways to [view them in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
+     Or just turn your phone sideways to view them in landscape mode on your phone.
 
     >**Tip**: If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
@@ -233,7 +233,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     ![](media/powerbi-mobile-create-dashboard/power-bi-windows-10-dashboard-0928.png)
 
-     You can also turn your phone sideways to [view dashboards in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
+     You can also turn your phone sideways to view dashboards in landscape mode on your phone.
 
     >**Tip**: If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
