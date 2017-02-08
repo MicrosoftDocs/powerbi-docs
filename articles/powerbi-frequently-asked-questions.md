@@ -72,7 +72,7 @@ You can also view on-premises SQL Server mobile reports with the Power BI iOS ap
 
 ## Does Power BI support mobile devices?
 
-Yes. Power BI has native apps for Android phones, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  
+Yes. Power BI has native apps for Android phones and tablets, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  
 
 -   [Apple App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
 -   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
