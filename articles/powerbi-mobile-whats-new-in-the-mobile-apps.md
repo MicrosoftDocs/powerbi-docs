@@ -103,7 +103,7 @@ Read the [November 2016 Power BI mobile apps feature summary](https://powerbi.mi
 **Power BI mobile app for Android tablets** Yes, the preview is here.
 
 - Experience [Power BI on your Android tablet](powerbi-mobile-android-tablet-app-get-started.md)
-- Explore [Reporting Services mobile reports and KPIs on your Android tablet](powerbi-mobile-android-tablet-kpis-mobile-reports.md)
+- Explore [Reporting Services mobile reports and KPIs on your Android tablet](powerbi-mobile-android-kpis-mobile-reports.md)
 
 ### Android devices
 
@@ -344,10 +344,10 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 ## February 2016
 
 ### Android
-View dashboards in [landscape mode on Android phones](powerbi-mobile-dashboards-in-the-android-app.md#view-dashboards-horizontally). 
+View dashboards in [landscape mode on Android phones](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-android-phone). 
 
 ### Power BI app for Windows 10 devices
-View dashboards in [landscape mode in Windows 10 phones](powerbi-mobile-dashboards-in-the-win10phone-app.md#view-dashboards-horizontally).
+View dashboards in [landscape mode in Windows 10 phones](powerbi-mobile-create-dashboard.md#view-dashboards-on-your-windows-10-device).
 
 View [reports on your Windows 10 phone](powerbi-mobile-reports-in-the-windows-app.md).
 
@@ -379,8 +379,7 @@ The Power BI team ended 2015 strong, with several major additions and updates.
 Now you can view your SQL Server mobile reports in the Power BI app on your iOS device, be it iPad or iPhone. Read more:
 
 -   [SQL 16 SSRS on Power BI app for iOS](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx) blog post
--   View [SQL Server mobile reports and KPIs in the iPad app](powerbi-mobile-ipad-kpis-mobile-reports.md) documentation
--   View [SQL Server mobile reports and KPIs in the iPhone app](powerbi-mobile-iphone-kpis-mobile-reports.md) documentation
+-   View [SQL Server mobile reports and KPIs in the iPhone and iPad apps](powerbi-mobile-iphone-kpis-mobile-reports.md) documentation
 
 ### Power BI app for Windows 10 phones
 The new Power BI app for Windows 10 phones is optimized for touch and mobile productivity. Explore dashboards and reports, invite colleagues to view data, and share insights over email to engage your team. Plus you can [pin Power BI dashboards to your Windows phone Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).

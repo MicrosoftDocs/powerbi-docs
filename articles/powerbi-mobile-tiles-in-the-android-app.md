@@ -24,7 +24,7 @@
 
 Tiles are live snapshots of your data, displayed on a dashboard. Their values change as the data changes. You create tiles on a dashboard on your [Power BI](http://powerbi.com/) site. Then you see and interact with the tiles in your [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md).
 
-1.  Open a [dashboard in the Android app](powerbi-mobile-dashboards-in-the-android-app.md) for Power BI.
+1.  Open a [dashboard in the Android app](powerbi-mobile-create-dashboard.md) for Power BI.
 
     Need to [download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
 

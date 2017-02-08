@@ -26,7 +26,7 @@ You can add any picture on your iPhone to any dashboard you own in the Power BI 
 
 ## Create a picture tile
 
-1.  Open a [dashboard in the iPhone app](powerbi-mobile-dashboards-in-the-iphone-app.md). You need to have Edit permissions for this dashboard.
+1.  Open a [dashboard in the iPhone app](powerbi-mobile-create-dashboard.md). You need to have Edit permissions for this dashboard.
 
 2.  Tap the ellipsis to open the dashboard menu.
 

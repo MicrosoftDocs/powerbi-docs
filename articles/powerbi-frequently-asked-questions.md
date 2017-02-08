@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="02/07/2017"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -67,8 +67,8 @@ No, Power BI is not available as a private, internal cloud service. However, wit
 
 You can also view on-premises SQL Server mobile reports with the Power BI iOS apps:
 
--   [SQL Server mobile reports on the iPhone](powerbi-mobile-iphone-kpis-mobile-reports.md).
--   [SQL Server mobile reports on the iPad](powerbi-mobile-ipad-kpis-mobile-reports.md)
+-   [SQL Server mobile reports on iPad and iPhone](powerbi-mobile-iphone-kpis-mobile-reports.md).
+
 
 ## Does Power BI support mobile devices?
 
