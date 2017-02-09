@@ -95,8 +95,7 @@ You don't make Reporting Services mobile reports or KPIs favorites in the Power 
 
 View Reporting Services mobile reports and KPIs in: 
 
-* [The iPad app (Power BI for iOS)](powerbi-mobile-ipad-kpis-mobile-reports.md)
-* [The iPhone app (Power BI for iOS)](powerbi-mobile-iphone-kpis-mobile-reports.md)
+* [The iPhone and iPad apps (Power BI for iOS)](powerbi-mobile-iphone-kpis-mobile-reports.md)
 * [The Android app for Power BI](powerbi-mobile-android-kpis-mobile-reports.md)
 * [The Power BI mobile app for Windows 10](powerbi-mobile-win10-kpis-mobile-reports.md)
 

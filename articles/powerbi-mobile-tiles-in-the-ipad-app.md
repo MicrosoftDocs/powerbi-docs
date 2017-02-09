@@ -26,7 +26,7 @@ Tiles are live snapshots of your data, pinned to a dashboard. Their values chang
 
 Then in [the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062), you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
 
-1.  Open a [dashboard in the iPad app](powerbi-mobile-dashboards-on-the-ipad-app.md).
+1.  Open a [dashboard in the iPad app](powerbi-mobile-create-dashboard.md).
 
 2.  Tap a tile. It opens in focus mode, where you can interact with the tile data:
 
@@ -40,7 +40,7 @@ Then in [the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062), you open
 
     ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile-pie.png)
 
-    [Share a snapshot of the tile](powerbi-mobile-share-dashboards-from-the-ipad-app.md) ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-share-tile.png) with others.
+    [Share a snapshot of the tile](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-share-tile.png) with others.
 
       In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-center-map-icon.png) to center the map to your current location.
 

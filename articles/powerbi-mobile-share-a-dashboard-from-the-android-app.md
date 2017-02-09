@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/13/2017"
+   ms.date="01/20/2017"
    ms.author="maggies"/>
 # Share a dashboard from the Android mobile phone app for Power BI
 

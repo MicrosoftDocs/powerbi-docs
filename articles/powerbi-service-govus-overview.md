@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/09/2017"
+   ms.date="02/01/2017"
    ms.author="davidi"/>
 
 # Power BI for US Government customers
@@ -49,18 +49,20 @@ The following features are available in **Power BI US Government**:
 
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
--   Office Online integration - you can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit data
--   Power BI mobile apps - mobile apps for **Power BI** are not currently available
--   Email notification - email notification does not work when sharing dashboards. Users with whom a dashboard is being shared can still view the dashboard, and receive notification about the dashboard when logged in to Power BI
+-   Office Online integration
+    -   you can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit or publish
+-   Email notification will not work when sharing dashboards – users with whom a dashboard is shared can still view the dashboard and get notification when they are logged in
 -   The **Power BI** tile in Office view doesn’t point to **Power BI US Government** – users must access it through https://app.powerbigov.us/  
-•	ESRI Power BI integration isn't available in Power BI at this time
-•	The **Publish to Web** feature is not available at this time in **Power BI US Government**
+-   ESRI Power BI integration isn't available in Power BI at this time
+-   The **Publish to Web** feature is not available at this time
 
-If you have **Power BI** Free licenses assigned to your account, you may encounter the following issue when using **Power BI Desktop**:
+If you have **Power BI** Free licenses assigned to your account, you may encounter the following issues:
+-   Gateway, Mobile, and Desktop can’t authenticate
+-   You cannot access Azure commercial data sources
+-   PBIX files must be manually uploaded from commercial
+-   Power BI mobile apps are not available
 
--   Users experience that **Power BI Desktop** only works when offline; *sign-in* and *Publish from Desktop* features are not currently supported.
-
-To resolve this issue, please contact [Power BI support](https://powerbi.microsoft.com/support/).
+To resolve issues, please contact your account representative.
 
 ## Frequently Asked Questions (FAQ) for the US Government version of the Power BI service
 

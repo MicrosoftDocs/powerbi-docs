@@ -78,7 +78,7 @@ From here, you can:
 
     >**Tip**: If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
-     Or just turn your phone sideways to [view the dashboard in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
+     Or just turn your phone sideways to view the dashboard in landscape mode on your phone.
 
      ![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard-landscape.png)
 
@@ -86,8 +86,6 @@ From here, you can:
 4.  Swipe up and down to see all the tiles in the dashboard. You can:
 
     -   [Tap a tile](powerbi-mobile-tiles-in-the-iphone-app.md) to open it in focus mode and interact with it.
-
-    -   [Interact with a report page tile](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) in the iPhone app.
 
     -   Tap the star ![](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png) to [make it a favorite](powerbi-mobile-favorites.md).
 
@@ -130,7 +128,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
      -     The notation below each dashboard name ![](media/powerbi-mobile-create-dashboard/power-bi-dashboard-ios-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
 
-3.  You can share a dashboard from your workspace. Tap the ellipsis (...) in the lower-right corner of the dashboard tile, and tap **Invite Others**.
+3.  You can share a dashboard from your workspace. Tap the ellipsis (**...**) in the lower-right corner of the dashboard tile, and tap **Invite Others**.
 
     ![](media/powerbi-mobile-create-dashboard/power-bi-ipad-tile-invite-others.png)
 
@@ -140,9 +138,9 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     - [Open the reports](powerbi-mobile-reports-on-the-ipad-app.md) behind the tiles.
 
-    - [Invite others to view the dashboard](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
+    - [Invite others to view the dashboard](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 
-    - [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) of a tile.
+    - [Annotate and share a snapshot](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) of a tile.
 
 4.  To go back to My Workspace, tap the name of the dashboard in the upper-left corner, then tap **My Workspace**.
 
@@ -168,7 +166,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     ![](media/powerbi-mobile-create-dashboard/pbi_andr_dash.png)
 
-     Or just turn your phone sideways to [view them in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
+     Or just turn your phone sideways to view them in landscape mode on your phone.
 
     >**Tip**: If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
@@ -233,7 +231,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     ![](media/powerbi-mobile-create-dashboard/power-bi-windows-10-dashboard-0928.png)
 
-     You can also turn your phone sideways to [view dashboards in landscape mode](#view-dashboards-in-landscape-mode) on your phone.
+     You can also turn your phone sideways to view dashboards in landscape mode on your phone.
 
     >**Tip**: If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](powerbi-service-create-dashboard-phone-view.md) in portrait mode. 
 
@@ -241,7 +239,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     -   [Tap a tile](powerbi-mobile-tiles-in-the-win10phone-app.md) to open and interact with it.
     -   Tap the **Full Screen** icon ![](media/powerbi-mobile-create-dashboard/power-bi-windows-10-full-screen-icon.png) to present your Power BI dashboard without borders or menus, like **Slide Show** view in PowerPoint.
-    -   Tap the **Invite** icon ![](media/powerbi-mobile-create-dashboard/PBI_Andr_InviteIcon.png) to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) with a colleague.
+    -   Tap the **Invite** icon ![](media/powerbi-mobile-create-dashboard/PBI_Andr_InviteIcon.png) to [share your dashboard](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) with a colleague.
     -   Tap the star ![](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png) to [make the dashboard a favorite](powerbi-mobile-favorites.md).
     -   Tap the **Pin to Start** icon to [pin the dashboard to your Windows Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md). 
     

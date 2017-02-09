@@ -17,12 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="02/07/2017"
    ms.author="ajayan"/>
 
 # Tutorial: Create and publish an organizational content pack in Power BI
 
 In this tutorial you create an organizational content pack, give access to a specific group, and publish it to your organization's content pack library on Power BI.
+
+Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) to decide on the best option for your situation.
 
 >**Note:** Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
 

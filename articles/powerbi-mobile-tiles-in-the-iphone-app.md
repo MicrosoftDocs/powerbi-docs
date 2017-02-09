@@ -28,7 +28,7 @@ Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you op
 
 >**Note**: You can also [create picture tiles with your iPhone app](powerbi-mobile-picture-tiles-in-the-iphone-app.md) and save them to your dashboards.
 
-1.  Open a [dashboard in the iPhone app](powerbi-mobile-dashboards-in-the-iphone-app.md).
+1.  Open a [dashboard in the iPhone app](powerbi-mobile-create-dashboard.md).
 
 2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
 
@@ -45,8 +45,6 @@ Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you op
 3. In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-center-map-icon.png) to center the map to your current location.
 
 3. Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
-
-4. [Interact with a report page tile](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) in the iPhone app.
 
 5.   [Add an alert to the tile](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). If the values go above or below targets, Power BI will notify you.
 

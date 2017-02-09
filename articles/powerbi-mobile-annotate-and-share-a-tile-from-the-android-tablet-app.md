@@ -52,7 +52,7 @@ You can add annotations — lines, comments, or stickers — to a tile before yo
 ## See also
 
 -  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play
--  [Share a dashboard from the Android app](powerbi-mobile-share-a-dashboard-from-the-android-tablet-app.md)
+-  [Share a dashboard from the mobile apps](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
 -  [Get started with the Android app for Power BI](powerbi-mobile-android-tablet-app-get-started.md)
 -  [Get started with Power BI](powerbi-service-get-started.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

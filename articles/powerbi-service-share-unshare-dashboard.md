@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="01/20/2017"
    ms.author="ajayan"/>
 
 # Share a dashboard and reports with colleagues and others
@@ -67,11 +67,13 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 ## Notes about sharing a dashboard
 
-When you share a dashboard:
+You and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard. When you share a dashboard:
+
+-   If your colleagues haven't signed up for Power BI yet, they need to do so to see your dashboard.
 
 -   Everyone you share it with can see your dashboard and interact with your reports in [Reading View](powerbi-service-open-a-report-in-reading-view.md). They can't create new reports or save changes to existing reports.
 
--   Everyone can even see the changes you make.
+-   Everyone can see the changes you make.
 
 -   No-one can see or download the dataset.
 

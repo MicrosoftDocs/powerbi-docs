@@ -125,13 +125,13 @@ See what more you can do in the Power BI app for Windows 10 devices with dashboa
 
 ### Power BI dashboards and reports
 
--   View your [dashboards](powerbi-mobile-dashboards-in-the-win10phone-app.md).
+-   View your [dashboards](powerbi-mobile-create-dashboard.md).
 -   [Pin Power BI tiles and dashboards](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen as live tiles.
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md).
 -   Explore your [reports](powerbi-mobile-reports-in-the-windows-app.md).
 -   [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
--   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md).
--   View your [groups' dashboards and reports](powerbi-mobile-groups-in-the-win10phone-app.md).
+-   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
+-   View your [groups' dashboards and reports](powerbi-service-mobile-groups-in-the-ipad-app.md).
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
      ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-notifications.png)

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/05/2017"
+   ms.date="02/07/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI app for iOS on an iPhone or iPod Touch
@@ -30,7 +30,7 @@ You [create dashboards and reports in the Power BI service](powerbi-service-get-
 
 Then interact with your dashboards and reports, explore the data, and share them, all from the iPhone app for Power BI.
 
-You can also [view Reporting Services KPIs and mobile reports for your on-premises data](powerbi-mobile-ipad-kpis-mobile-reports.md) in the iPhone app for Power BI. You [create those KPIs and mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx).
+You can also [view Reporting Services KPIs and mobile reports for your on-premises data](powerbi-mobile-iphone-kpis-mobile-reports.md) in the iPhone app for Power BI. You [create those KPIs and mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx).
 
 Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
@@ -108,7 +108,7 @@ See what else you can do in the iPhone app with dashboards in Power BI, and Repo
 
 ### Power BI dashboards and reports
 
--   View your [Power BI dashboards](powerbi-mobile-dashboards-in-the-iphone-app.md).
+-   View your [Power BI dashboards](powerbi-mobile-create-dashboard.md).
 -   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
 -   View your Power BI tiles on your [Apple Watch](powerbi-mobile-apple-watch.md).
 -   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.

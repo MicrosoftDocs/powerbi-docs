@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="02/01/2017"
    ms.author="davidi"/>
 
 # Connect to data using generic interfaces in Power BI Desktop
@@ -63,7 +63,8 @@ The following list details a few examples of data sources to which **Power BI De
 |ODBC|Hive|[Hive ODBC driver](http://www.simba.com/drivers/hive-odbc-jdbc/)|
 |ODBC|IBM Netezza|[IBM Netezza information](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html)|
 |ODBC|Presto|[Presto ODBC driver](http://www.simba.com/drivers/presto-odbc-jdbc/)|
-
+|ODBC|Project Online| [Project Online article](powerbi-desktop-project-online-connect-to-data.md) |
+|ODBC|Progress OpenEdge|[Progress OpenEdge ODBC driver blog post](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.progress.com%2Fblogs%2Fconnect-microsoft-power-bi-to-openedge-via-odbc-driver&data=02%7C01%7CMatt.Masson%40microsoft.com%7C5e63742e6c454308b58a08d4034b5923%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636137069555329811&sdata=gSu2Rq3vZ0uBVOgjaXxd8Y3uBf%2B8DidX6PG33jwAduY%3D&reserved=0) |
 
 
 ## Data sources accessible through OLE DB
@@ -77,7 +78,8 @@ The following list details a few examples of the data sources to which **Power B
 
 |Power BI Desktop generic connector|External data source|Link for more information|
 |---|---|---|
-|OLE DB|Coming soon|Check back soon for OLE DB data sources|
+|OLE DB|SAS OLE DB|[SAS provider for OLE DB](https://support.sas.com/downloads/package.htm?pid=648)|
+|OLE DB|Sybase OLE DB|[Sybase provider for OLE DB](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc35888.1550/doc/html/jon1256941734395.html)|
 
 
 ## Data sources accessible through OData
