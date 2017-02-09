@@ -49,16 +49,18 @@ The **All** category includes all data connection types from all categories.
 The **File** category provides the following data connections:
 
 -   Excel
--   CSV
+-   Text/CSV
 -   XML
--   Text
 -   JSON
 -   Folder
 -   SharePoint Folder
 
+
 The following image shows the **Get Data** window for **File**.
 
 ![](media/powerbi-desktop-data-sources/data-sources_3.png)
+> Note: In previous versions of Power BI Desktop, **CSV** and **Text** were separate data connection types. Those data connectors have been combined into **CSV/Text**.
+
 
 The **Database** category provides the following data connections:
 
@@ -165,7 +167,7 @@ The following image shows the **Get Data** window for **Other**.
 
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
-![](media/powerbi-desktop-data-sources/PBID_GetDataOther2.png)
+![](media/powerbi-desktop-data-sources/data-sources_7.png)
 
 
 A connection window is displayed, specific to the type of data connection. If credentials are required, you’ll be prompted to provide them. The following image shows a URL being entered to connect to a Web data source.
