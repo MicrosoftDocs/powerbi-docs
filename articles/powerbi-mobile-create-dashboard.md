@@ -87,8 +87,6 @@ From here, you can:
 
     -   [Tap a tile](powerbi-mobile-tiles-in-the-iphone-app.md) to open it in focus mode and interact with it.
 
-    -   [Interact with a report page tile](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) in the iPhone app.
-
     -   Tap the star ![](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png) to [make it a favorite](powerbi-mobile-favorites.md).
 
     -  Tap **Invite** ![](media/powerbi-mobile-create-dashboard/pbi_ipad_shareiconblk.png) to [invite a colleague](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) to view your dashboard.

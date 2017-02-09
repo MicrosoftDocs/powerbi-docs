@@ -46,8 +46,6 @@ Then in [the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062), you op
 
 3. Tap the share icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png) to [annotate and share a tile](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) with others.
 
-4. [Interact with a report page tile](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) in the iPhone app.
-
 5.   [Add an alert to the tile](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). If the values go above or below targets, Power BI will notify you.
 
 6. Sometimes the dashboard creator has added a link to a tile. If so, it has a link icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon.png) when it's in focus mode:

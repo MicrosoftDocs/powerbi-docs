@@ -366,10 +366,7 @@ All of the January improvements are already in the new [Power BI app for Windows
 
 **Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](powerbi-content-pack-bing.md), and view them on your mobile device.
 
-**Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the:
-
--  [Power BI app on your iPhone](powerbi-mobile-report-page-tiles-in-the-iphone-app.md).
--  [Power BI app on your Android phone](powerbi-mobile-report-page-tiles-in-the-android-app.md).
+**Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the Power BI app on your iPhone or on your Android phone.
 
 
 ## December 2015
@@ -391,7 +388,7 @@ The new Power BI app for Windows 10 phones is optimized for touch and mobile pro
 Read the [Power BI mobile apps December blog post](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx) for more details.
 
 -   Receive notifications when a colleague shares a dashboard with you. (iOS)
--   View entire [pinned report pages in your dashboards](powerbi-mobile-report-page-tiles-in-the-iphone-app.md). (iOS and Android)
+-   View entire pinned report pages in your dashboards. (iOS and Android)
 -   [Scan a QR code](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) and go directly to a relevant tile on your Android phone.
 
 ## November 2015
