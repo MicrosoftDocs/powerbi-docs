@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Engage with dashboards in group workspaces in the mobile apps"
+   pageTitle="Work with dashboards in group workspaces in the mobile apps"
    description="Power BI group workspaces are built on Office 365 groups. Read about viewing and interacting with dashboards in the Power BI mobile apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/06/2017"
+   ms.date="02/07/2017"
    ms.author="maggies"/>
 
-# Engage with dashboards in group workspaces in the mobile apps
+# Work with dashboards in group workspaces in the mobile apps
 
 Applies to:
 
@@ -48,7 +48,7 @@ Groups are available with the Power BI Pro experience.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-groups-dashboards.png)
 
-4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-iphone-app.md) to open and view it.
+4.  [Select a dashboard](powerbi-mobile-create-dashboard.md) to open and view it.
 
 
 ## Group workspaces in the iPad app
@@ -72,7 +72,7 @@ Groups are available with the Power BI Pro experience.
      -     The notation below each dashboard name ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](powerbi-service-data-classification.md).
 
 
-5.  [Select a dashboard](powerbi-mobile-dashboards-on-the-ipad-app.md) or [select a report](powerbi-mobile-reports-on-the-ipad-app.md) to open and view it.
+5.  [Select a dashboard](powerbi-mobile-create-dashboard.md) or [select a report](powerbi-mobile-reports-on-the-ipad-app.md) to open and view it.
 
 ## Group workspaces in the Android app 
 
@@ -92,7 +92,7 @@ Groups are available with the Power BI Pro experience.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-android-groups-dashboards.png)
 
-4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-android-app.md) to open and view it in the group workspace.  
+4.  [Select a dashboard](powerbi-mobile-create-dashboard.md) to open and view it in the group workspace.  
 
 
 ## Group workspaces in the Windows 10 app
@@ -109,7 +109,7 @@ Groups are available with the Power BI Pro experience.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-windows-10-workspace.png)
 
-4.  [Select a dashboard](powerbi-mobile-dashboards-in-the-win10phone-app.md) or a report to open and view it.  
+4.  [Select a dashboard](powerbi-mobile-create-dashboard.md) or a report to open and view it.  
 
 
 ## See also

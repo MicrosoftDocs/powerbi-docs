@@ -24,7 +24,7 @@
 
 Tiles are live snapshots of your data, displayed on a dashboard. Their values change as the data changes. You create tiles on a dashboard on your [Power BI](http://powerbi.com/) site. Then you see and interact with the tiles in your [Android app for Microsoft Power BI](powerbi-mobile-android-app-get-started.md).
 
-1.  Open a [dashboard in the Android app](powerbi-mobile-dashboards-in-the-android-app.md) for Power BI.
+1.  Open a [dashboard in the Android app](powerbi-mobile-create-dashboard.md) for Power BI.
 
     Need to [download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
 
@@ -46,7 +46,7 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 
      Tap the share snapshot icon ![](media/powerbi-mobile-tiles-in-the-android-app/PBI_Andr_ShareSnapIcon.png) to [annotate and share the tile](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md) with others.
 
-     If the tile is a [live report page tile](powerbi-mobile-report-page-tiles-in-the-android-app.md), when you tap **Expand tile** it opens the report page in landscape mode in the Android app.
+     If the tile is a live report page tile, when you tap **Expand tile** it opens the report page in landscape mode in the Android app.
 
 5. Tap **Open report** to [view the report](powerbi-mobile-reports-in-the-android-app.md) in the mobile app.
 

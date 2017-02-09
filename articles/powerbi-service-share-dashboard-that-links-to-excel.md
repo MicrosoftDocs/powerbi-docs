@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="02/07/2017"
    ms.author="ajayan"/>
 
 # Share a dashboard that links to an Excel file in OneDrive
@@ -44,10 +44,10 @@ To share a dashboard that links back to an Excel workbook on OneDrive for Busine
 
 4. Select **Share**.
 
->**NOTE**: Your colleagues will not be able to pin additional tiles from that workbook and they will not be able to make changes to the Excel workbook from Power BI.
+>**Note**: Your colleagues won't be able to pin additional tiles from that workbook, or make changes to the Excel workbook from Power BI.
 
 
-## Create a content pack with a dashboard that contains workbook tiles
+## Create an organizational content pack with a dashboard that contains workbook tiles
 When you [publish a content pack](powerbi-service-organizational-content-pack-tutorial-create-and-publish.md) you give access to individual colleagues or groups. When you publish a content pack that contains workbook links, you'll have the option to modify the permissions for the linked Excel workbook before publishing.
 
 1. In the **Create content pack** screen, enter email addresses, give the content pack a title and description, and upload an image.

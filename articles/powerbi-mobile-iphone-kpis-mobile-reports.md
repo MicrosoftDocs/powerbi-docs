@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View SSRS mobile reports and KPIs in the iOS mobile app"
+   pageTitle="View SSRS mobile reports and KPIs in the iOS mobile apps"
    description="The Power BI mobile app for iOS offers live, touch-enabled mobile access to your important on-premises business information."
    services="powerbi" 
    documentationCenter="" 
@@ -20,7 +20,7 @@
    ms.date="01/25/2017"
    ms.author="maggies"/>
 
-# View SSRS mobile reports and KPIs in the iOS mobile app
+# View SSRS mobile reports and KPIs in the iOS mobile apps
 
 The Power BI mobile app for iOS offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 
 
