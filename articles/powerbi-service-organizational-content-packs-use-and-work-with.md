@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Work with organizational content packs"
+   pageTitle="Organizational content packs: Copy, refresh, & get access"
    description="Read about creating copies of and troubleshooting access to organizational content packs in Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/07/2017"
+   ms.date="02/09/2017"
    ms.author="ajayan"/>
 
-# Work with organizational content packs in Power BI
+# Organizational content packs: Copy, refresh, & get access
 
 When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's a SQL Server Analysis Services (SSAS) data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can save a copy of the content pack that can live alongside the original.
 
