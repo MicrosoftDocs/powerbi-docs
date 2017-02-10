@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="02/09/2017"
    ms.author="mihart"/>
 
 # Tips for asking questions in Power BI Q&A
@@ -28,7 +28,10 @@ This list of keywords is not exhaustive.  The best way to see if Power BI recogn
 
 The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted and sorting.  Also, PowerBI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
 
->**NOTE**: If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A results for your customers.
+>[AZURE.NOTE]
+Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](powerbi-mobile-ios-qna.md).
+
+If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A results for your customers.
 
 **Aggregates**: total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min
 

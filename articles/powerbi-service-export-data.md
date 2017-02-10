@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2017"
+   ms.date="02/09/2017"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
@@ -69,7 +69,9 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 ## Limitations and considerations
 
--  The maximum number of rows that can be exported is 30,000 (for Power BI Free users) and 150,000 (for Power BI Pro users).
+-  The maximum number of rows that can be exported to .csv is 30,000.
+
+- The maximum number of rows that can be exported to .xlsx is 30,000 (for Power BI Free users) and 150,000 (for Power BI Pro users).
 
 -  Custom visuals, and R visuals, are not currently supported.
 
