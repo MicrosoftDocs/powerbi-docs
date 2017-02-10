@@ -134,13 +134,13 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
 - The Power BI (preview) web part for SharePoint Online does not support screen readers or keyboard navigation.
 
-**Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"**
+- **Error: "An error occurred, please try logging out and back in and then revisiting this page. Correlation id: undefined, http response status: 400, server error code 10001, message: Missing refresh token"**
 
-If you receive this error, please try one of the following.
+    If you receive this error, please try one of the following.
 
-1. Sign-out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
+    1. Sign-out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
  
-2. If your user account requires multi-factor authentication (MFA), ensure you sign-in to SharePoint using your multi-factor authenticaiton device (phone app, smart card, etc.)
+    2. If your user account requires multi-factor authentication (MFA), ensure you sign-in to SharePoint using your multi-factor authenticaiton device (phone app, smart card, etc.)
 
 
 
