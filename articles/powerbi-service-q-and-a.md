@@ -25,7 +25,7 @@
 
 Sometimes the fastest way to get an answer from your data, is to ask a question using natural language.  For example, "what were total sales last year."  Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
-[AZURE.NOTE]
+>[AZURE.NOTE]
 Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](powerbi-mobile-ios-qna.md).
 
 ![](media/powerbi-service-q-and-a/PBI_QA_BoxSalesSqFt.png)

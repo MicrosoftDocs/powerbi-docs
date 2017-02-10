@@ -28,7 +28,7 @@ This list of keywords is not exhaustive.  The best way to see if Power BI recogn
 
 The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted and sorting.  Also, PowerBI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
 
-[AZURE.NOTE]
+>[AZURE.NOTE]
 Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](powerbi-mobile-ios-qna.md).
 
 If you are the owner of a dataset, add phrasings and synonyms to improve the Q&A results for your customers.

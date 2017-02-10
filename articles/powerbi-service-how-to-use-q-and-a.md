@@ -28,7 +28,7 @@ The answer to your question is displayed as an interactive visualization and upd
 
 Q&A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&A to create visuals, dig into those visuals, and pin them to dashboards.
 
-[AZURE.NOTE]
+>[AZURE.NOTE]
 Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](powerbi-mobile-ios-qna.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qMf7OLJfCz8?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
