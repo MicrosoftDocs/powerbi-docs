@@ -50,13 +50,13 @@ The following features are available in **Power BI US Government**:
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
 -   Office Online integration
-    -   you can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit or publish
--   Email notification will not work when sharing dashboards – users with whom a dashboard is shared can still view the dashboard and get notification when they are logged in
--   The **Power BI** tile in Office view doesn’t point to **Power BI US Government** – users must access it through https://app.powerbigov.us/  
+    -   You can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit or publish
+-   Email notification will not work when sharing dashboards – users with whom a dashboard is shared can still view the dashboard and get notification when they are logged in  
 -   ESRI Power BI integration isn't available in Power BI at this time
 -   The **Publish to Web** feature is not available at this time
 
 If you have **Power BI** Free licenses assigned to your account, you may encounter the following issues:
+
 -   Gateway, Mobile, and Desktop can’t authenticate
 -   You cannot access Azure commercial data sources
 -   PBIX files must be manually uploaded from commercial
@@ -69,24 +69,16 @@ To resolve issues, please contact your account representative.
 The following questions (and answers) are provided to help you quickly get information you need about the service.
 
 **Question:** How do I migrate my commercial **Power BI** data to the **Power BI service** for US Government?
-
 **Answer:** Your admin must create a new instance of **Power BI** under a separate, US Government-specific subscription. You can then replicate your commercial data in the **Power BI service** for US Government, remove your commercial license, and associate your existing domain to the new US Government-specific service.
 
-**Question:** I don't see a **Power BI** title in my apps. How do I log in?
-
-**Answer:** The **Power BI** title isn't currently available. To access your **Power BI** for US Government subscription, use the following link: [https://app.powerbigov.us/](https://app.powerbigov.us/).
-
 **Question:** Why can't I connect to a specific content pack?
-
 **Answer:** You need to ensure your subscription is enabled before connecting to that content pack.
 
 **Question:** I'm interested in getting **Power BI** for my US Government organization. How do I get started?
-
 **Answer:** Signing up (often called *onboarding*) might differ based on your existing license and subscription. See the [Sign Up for Power BI US Government](powerbi-service-govus-signup.md) article for more information.
 
 
 **Question:** Is the URL for connecting to **Power BI** for US Government different than the commercial **Power BI** URL?
-
 **Answer:** Yes, the URLs are different. The following table shows each URL:
 
 | Commercial version URL | US Government version URL |
@@ -98,6 +90,8 @@ The following questions (and answers) are provided to help you quickly get infor
 ﻿There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 -   [Sign up for Power BI for US Government](powerbi-service-govus-signup.md)
+
+-   <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
 
 -   [Guided Learning for Power BI](powerbi-learning-0-0-what-is-power-bi/.md)
 

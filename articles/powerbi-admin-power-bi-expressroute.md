@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/11/2017"
+   ms.date="02/09/2017"
    ms.author="davidi"/>
 
 # Power BI and ExpressRoute
@@ -31,6 +31,7 @@ With **Power BI** and **ExpressRoute**, you can create a private network connect
 
 You can get [more information about ExpressRoute](https://azure.microsoft.com/services/expressroute/) or learn [how to sign up](https://azure.microsoft.com/pricing/details/expressroute/).
 
+> Note: Power BI requires public peering in order to use ExpressRoute.
 
 ## Power BI ExpressRoute Exceptions
 
