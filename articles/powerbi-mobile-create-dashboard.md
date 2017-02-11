@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2017"
+   ms.date="02/10/2017"
    ms.author="maggies"/>
 # View dashboards in the Power BI mobile apps
 
@@ -41,23 +41,6 @@ To see more dashboards on your mobile device, you need to create or connect to t
 Here's a Power BI dashboard in the Power BI service:
 
 ![](media/powerbi-mobile-create-dashboard/power-bi-service-dashboard-sm.png)
-
-
-## View dashboards in the Power BI mobile apps
-
-Then these same dashboards will appear automatically in your Power BI mobile app. Dashboards refresh in real time, automatically, so no need to manually refresh them.
-
-Here's the same dashboard as seen on a mobile phone:
-
-![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard.png)
-
-From here, you can:
-
-- Share the dashboard with colleagues ![](media/powerbi-mobile-create-dashboard/PBI_Andr_InviteIcon.png).
-- [Make the dashboard one of your favorites](powerbi-mobile-favorites.md) ![](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png).
-- Tap the arrow next to the dashboard name to go back to My Workspace.
-
-    ![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard-breadcrumb.png)
 
 ## View dashboards on your iPhone  
 1.  Open the Power BI app on your iPhone and sign in.

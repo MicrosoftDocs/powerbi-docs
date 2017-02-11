@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Tutorial: create and publish an organizational content pack"
+   pageTitle="Create and publish an organizational content pack (tutorial)"
    description="In this tutorial you create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/07/2017"
+   ms.date="02/09/2017"
    ms.author="ajayan"/>
 
-# Tutorial: Create and publish an organizational content pack in Power BI
+# Create and publish an organizational content pack (tutorial)
 
 In this tutorial you create an organizational content pack, give access to a specific group, and publish it to your organization's content pack library on Power BI.
 

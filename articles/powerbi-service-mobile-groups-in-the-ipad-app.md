@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Work with dashboards in group workspaces in the mobile apps"
+   pageTitle="Work in group workspaces in the mobile apps"
    description="Power BI group workspaces are built on Office 365 groups. Read about viewing and interacting with dashboards in the Power BI mobile apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/07/2017"
+   ms.date="02/09/2017"
    ms.author="maggies"/>
 
-# Work with dashboards in group workspaces in the mobile apps
+# Work in group workspaces in the mobile apps
 
 Applies to:
 

@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/07/2017"
+   ms.date="02/09/2017"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -63,7 +63,7 @@ Yes, non-profit pricing is available when purchasing directly from Microsoft. Yo
 
 ## Is Power BI available on-premises?
 
-No, Power BI is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises Data Gateway](powerbi-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](powerbi-personal-gateway.md).
+No, the Power BI service is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises Data Gateway](powerbi-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](powerbi-personal-gateway.md).
 
 You can also view on-premises SQL Server mobile reports with the Power BI iOS apps:
 
@@ -92,7 +92,7 @@ Read more about [getting data](powerbi-service-get-data.md) in Power BI.
 
 ## What are content packs?
 
-[Content packs for services](powerbi-content-packs-services.md) are pre-built solutions for popular services as part of the Power BI experience. A subscriber to a supported service can quickly connect to their account from Power BI and see their data through live dashboards and interactive reports that have been pre-built for them.  We’ve released content packs for popular services such as Salesforce.com, Marketo, Adobe Analytics, Azure Mobile Engagement,  CircuitID, comScore Digital Analytix, Quickbooks Online, SQL Sentry, and tyGraph. Over the coming months, we’ll extend this to include content packs and integrations for Sage, SpaceCurve, Sumo Logic, Zuora, Planview, Insightly, Troux, Inkling, and others.
+[Content packs for services](powerbi-content-packs-services.md) are pre-built solutions for popular services as part of the Power BI experience. A subscriber to a supported service can quickly connect to their account from Power BI and see their data through live dashboards and interactive reports that have been pre-built for them.  We’ve released content packs for popular services such as Salesforce.com, Marketo, and Adobe Analytics. Read more about [connecting to services with content packs](documentation/powerbi-content-packs-services.md).
 
 [Organizational content packs](powerbi-service-organizational-content-packs-introduction.md) provide users, BI professionals, and system integrators the tools to build their own content packs to share purpose-built dashboards, reports, and datasets within their organization.
 
@@ -102,13 +102,15 @@ To use the Power BI service for free, you just need a Web browser and email.
 
 To explore data and create reports in Power BI Desktop, download [Power BI Desktop](http://powerbi.microsoft.com/designer) for free.
 
-You can download the Power BI mobile apps from their respective stores:
+You can download the Power BI mobile apps from their respective stores, also for free:
 
 -   [App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
 -   [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
 -   [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
-## Power BI Desktop’s Software License Terms say "You may install and use one copy of the software on your premises." Does this mean I am limited to one copy of Power BI Desktop for the entire company?
+## Power BI Desktop’s Software License Terms say "You may install and use one copy of the software on your premises." 
+
+### Does this mean I am limited to one copy of Power BI Desktop for the entire company?
 
 Power BI Desktop’s use rights do not limit you to one copy of Power BI Desktop for the entire company. Each individual user at the company may install and use one copy on their premises.
 
@@ -152,6 +154,13 @@ Learn more about Power BI security, privacy and compliance in this [Power BI Sec
 ## What has happened to the Power BI for Office 365 experience?
 
 The Power BI for Office 365 experience has been deprecated.
+
+## How do I undo in Power BI?
+
+Like many other Microsoft services and software, Power BI provides an easy way to undo your last command. 
+
+- To **undo** your last action, or last few actions, press CTRL+Z.
+
 
 ## See also
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
