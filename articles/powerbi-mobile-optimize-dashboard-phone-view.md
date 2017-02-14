@@ -24,10 +24,9 @@
 
 ### Anytime is the right time to create a great dashboard
 
-|: **Go from this...**  :|: **... to this in just a few minutes** :|
-|:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
-| ![](media/powerbi-mobile-optimize-dashboard-phone-view/power-bi-phone-dashboard-not-optimized.png)
- | ![](media/powerbi-mobile-optimize-dashboard-phone-view/power-bi-phone-dashboard-optimized.png) |
+| **Go from this...**  | **... to this in just a few minutes**  |
+|:------------------------:|:----------------------------:|
+| ![](media/powerbi-mobile-optimize-dashboard-phone-view/power-bi-phone-dashboard-not-optimized.png) | ![](media/powerbi-mobile-optimize-dashboard-phone-view/power-bi-phone-dashboard-optimized.png) |
 
 ### Book some time on your calendar, or [start optimizing now](powerbi-service-create-dashboard-phone-view.md).
 
