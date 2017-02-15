@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Get started with the iPad app"
+   pageTitle="Get started with the iPad mobile app"
    description="The Microsoft Power BI for iOS app on the iPad is a key part of the mobile BI experience for Power BI and Reporting Services."
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/05/2017"
+   ms.date="02/13/2017"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -62,7 +62,9 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 
 You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
 
-1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner.
+1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap the Settings icon ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ios-settings-gear.png).
+
+    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ios-settings-gear-menu.png)
   
 2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
 
@@ -72,7 +74,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 ### Reporting Services mobile report samples
 
-1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner.
+1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap the Settings icon ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ios-settings-gear.png).
 
 2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 
