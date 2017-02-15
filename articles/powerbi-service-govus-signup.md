@@ -34,7 +34,7 @@ For more information about the **Power BI service** for US Government, including
 
 Your US Government organization might be new to the **Office Government Cloud**, or might already have a subscription. The following sections detail the sign-up steps based on where you are with the Office Government Cloud and Power BI, and are different based on your existing subscription. 
 
-Once you have signed up for Power BI US Government some features may not work until your sales or support representative completes your onboarding process. To find out about these features see the [Power BI for United States Government customers - Overview](powerbi-service-govus-overview.md). To complete the onboarding process to enable these features, please reach out to your sales or support representative.
+Once you have signed up for Power BI US Government some features may not work until your sales or support representative completes your onboarding process. To find out about these features see the [Power BI for United States Government customers - Overview](powerbi-service-govus-overview.md). To complete the onboarding process to enable these features, contact your sales or support representative.
 
 
 ### US Government organizations that are new Office Cloud customers
@@ -43,7 +43,7 @@ If your organization is a new **Office Government Cloud** customer, follow these
 
 > **Note:** These steps should be performed by the portal administrator.
 
-1.  Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). Note: if you don't wish to sign up for Office Government Cloud at this time, please reach out to your sales representative. 
+1.  Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). Note: if you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative. 
 
 2.  Select Office G3 and complete the form for an Office trial
 
@@ -61,7 +61,7 @@ If your organization is an existing **Office Government Cloud** customer, but yo
 
 3.  Select **Purchase Service**.
 
-4.  Select the Power BI Pro Government Option and choose between "Try" and "Buy Now"
+4.  Select the Power BI Pro Government Option and choose between **Try** and **Buy Now**
 
 5.  Complete your order
 
