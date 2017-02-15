@@ -18,12 +18,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/14/2017"
+   ms.date="02/15/2017"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
 
-If you'd like to see the data that is used to create a visualization, you can [display that data in Power BI](powerbi-service-reports-see-data.md) or export that data to Excel as a .xlsx or .csv file.   
+If you'd like to see the data that is used to create a visualization, you can [display that data in Power BI](powerbi-service-reports-see-data.md) or export that data to Excel as an .xlsx or .csv file.   
 
 Watch Will export the data from one of the visualizations in his report, save it as an .xlsx file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -50,27 +50,27 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
 
 1. Create a new column chart.  From the Fields pane, select **Location > City** and **Invoice > Discount Percent**.   
 
-  ![](media/powerbi-service-export-data/power-bi-export-data3.png)
+    ![](media/powerbi-service-export-data/power-bi-export-data3.png)
 
-2. Change the aggregation for **Discount Percent** from **Count** to **Average**.
+2. Change the aggregation for **Discount Percent** from **Count** to **Average**. In the Value well, select the arrow to the right of **Discount Percent** (it may say **Count of Discount Percent**), and choose **Average**.
 
-  ![](media/powerbi-service-export-data/power-bi-export-data6.png)
+    ![](media/powerbi-service-export-data/power-bi-export-data6.png)
 
 3.  Add a filter to **City** to remove **Atlanta**.
 
-  ![](media/powerbi-service-export-data/power-bi-export-data4.png)
+    ![](media/powerbi-service-export-data/power-bi-export-data4.png)
 
-  Now we're ready to try out both options for exporting data.
+    Now we're ready to try out both options for exporting data.
 
 4.  Select the ellipses in the top right corner of the visualization. Choose  **Export data**.
 
     ![](media/powerbi-service-export-data/power-bi-export-data2.png)
 
-5. If your visualization has an aggregate (for example, *sum*, *average*, *minimum*),  you'll have two options: **Summarized data** and **Underlying data**. For help understanding aggregates, see [Aggregates in Power BI](powerbi-service-aggregates.md).
+5. If your visualization has an aggregate (one example would be if you changed **Count** to *average*, **sum** or *minimum*),  you'll have two options: **Summarized data** and **Underlying data**. For help understanding aggregates, see [Aggregates in Power BI](powerbi-service-aggregates.md).
 
     ![](media/powerbi-service-export-data/power-bi-export-data5.png)
 
-6.  Select **Summarized data** > **Export** and choose either .xlsx or .csv. Power BI exports the data.  If you had applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+6.  Select **Summarized data** > **Export** and choose either .xlsx or .csv. Power BI exports the data.  If you have applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
 
     **Summarized data**: select this option if you don't have an aggregate or if you do have an aggregate but don't want to see the complete breakdown. For example, if you have a bar chart showing 4 bars, you will get 4 rows of data. Summarized data is available as .xlsx and .csv.
 
@@ -78,7 +78,7 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
 
     ![](media/powerbi-service-export-data/power-bi-export-data7.png)
 
-7.  Select **Underlying data** > **Export** and choose .xlsx. Power BI exports the data. If you had applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+7.  Now try selecting **Underlying data** > **Export** and choosing .xlsx. Power BI exports the data. If you had applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
 
     **Underlying data**: select this option if your visualization does have an aggregate and you'd like to see all the underlying details. Basically, selecting *Underlying data* removes the aggregate. When you select **Export**, the data is exported to an .xlsx file and your browser prompts you to save the file. Once saved, open the file in Excel.
 

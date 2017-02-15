@@ -23,16 +23,14 @@
 
 # Working with tables in Power BI reports and dashboards (Tutorial)
 
-A table is a grid that typically contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons among items where there are many categories. For example, this table displays 5 different measures for **Category**.
+A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays 5 different measures for **Category**.
 
 ![](media/powerbi-service-tutorial-tables/table.png)
 
 ##  When to use a table
 Tables are a great choice:
 
--  to see detailed data and exact values
-
-- to compare actual values
+-  to see and compare detailed data and exact values (instead of visual representations)
 
 -  to display data in a tabular format
 
@@ -46,7 +44,7 @@ To follow along, sign in to Power BI and select **Get Data > Samples > Retail An
 
 1.  Select **Item** > **Category**.  Power BI automatically creates a table that lists all the categories.
 
-  ![](media/powerbi-service-tutorial-tables/power-bi-table1.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-table1.png)
 
 2.  Select **Sales > Average Unit Price** and **Sales > Last Year Sales** and **Sales > This Year Sales** and choose all 3 options (Value, Goal, Status).   
 
@@ -54,7 +52,9 @@ To follow along, sign in to Power BI and select **Get Data > Samples > Retail An
 
     ![](media/powerbi-service-tutorial-tables/power-bi-table2.png)
 
-4. Pin the table to the dashboard by selecting the pin icon  ![](media/powerbi-service-tutorial-tables/PBI_PinTile.png)
+4. Pin the table to the dashboard by selecting the pin icon  
+
+     ![](media/powerbi-service-tutorial-tables/PBI_PinTile.png)
 
 ##  Adjust the column width of a table
 Sometimes Power BI will truncate a column heading in a report and on a dashboard. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows, select and drag.
