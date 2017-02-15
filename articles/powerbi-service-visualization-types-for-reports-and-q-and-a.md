@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="02/13/2017"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -162,6 +162,8 @@ For more information, see [Add an image widget to a dashboard](powerbi-service-a
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/tableType.png)
 
 **Tip**: work well with quantitative comparisons among items where there are many categories.
+
+For more information, see [Working with tables in Power BI](powerbi-service-tutorial-tables.md).
 
 ### Tree Maps
 

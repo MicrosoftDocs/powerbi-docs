@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2017"  
+   ms.date="02/15/2017"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -88,6 +88,11 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
  ![](media/powerbi-service-dashboard-tiles/trash-icon.png)
 
 3. To close the action menu, select the X icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg).
+
+### Resize column widths on a tile
+Sometimes Power BI will truncate a column heading on a dashboard or in a report. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows, select and drag.
+
+![](media/powerbi-service-tutorial-tables/resizetable.gif)
 
 ### Select (click) a tile
 When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
