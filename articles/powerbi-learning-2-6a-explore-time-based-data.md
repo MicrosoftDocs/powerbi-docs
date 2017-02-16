@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2016"
+   ms.date="02/15/2017"
    ms.author="davidi"/>
 
 # Explore Time-Based Data
@@ -44,6 +44,10 @@ You can also drill down through all of the data shown on the visual, rather than
 ![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_4.png)
 
 As long as your model has a date field, Power BI will automatically generate different views for different time hierarchies.
+
+To get back to individual dates rather than using the date hierarchy, simply right-click the column name in the **Fields** well (in the following image, the name of the column is *InvoiceDate*), then select the column name from the menu that appears, rather than **Date Hierarchy**. Your visual then shows the data based on that column data, without using the date hierarchy. Need to go back to using the date hierarchy? No problem - just right-click again and select **Date Hierarchy** from the menu.
+
+![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_5.png)
 
 ## What's Next
 

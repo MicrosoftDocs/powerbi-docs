@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/05/2016"
+   ms.date="02/15/2017"
    ms.author="davidi"/>
 
 # Use See Data and See Records in Power BI Desktop
@@ -79,7 +79,8 @@ There are a few limitations to consider when using **See Data** or **See Records
     -   **Pie**
     -   **Donut**
     -   **Funnel**
--   You can't use **See Records** when your visual uses a calculated measure.
+-   You can't use **See Records** when your visual uses a calculated measure
+-   You can't use **See Records** when connected to a live multidimensional (MD) model
 
 
 ## More Information
