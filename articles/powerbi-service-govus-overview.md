@@ -69,16 +69,22 @@ To resolve issues, please contact your account representative.
 The following questions (and answers) are provided to help you quickly get information you need about the service.
 
 **Question:** How do I migrate my commercial **Power BI** data to the **Power BI service** for US Government?
+
 **Answer:** Your admin must create a new instance of **Power BI** under a separate, US Government-specific subscription. You can then replicate your commercial data in the **Power BI service** for US Government, remove your commercial license, and associate your existing domain to the new US Government-specific service.
 
+
 **Question:** Why can't I connect to a specific content pack?
+
 **Answer:** You need to ensure your subscription is enabled before connecting to that content pack.
 
+
 **Question:** I'm interested in getting **Power BI** for my US Government organization. How do I get started?
+
 **Answer:** Signing up (often called *onboarding*) might differ based on your existing license and subscription. See the [Sign Up for Power BI US Government](powerbi-service-govus-signup.md) article for more information.
 
 
 **Question:** Is the URL for connecting to **Power BI** for US Government different than the commercial **Power BI** URL?
+
 **Answer:** Yes, the URLs are different. The following table shows each URL:
 
 | Commercial version URL | US Government version URL |
