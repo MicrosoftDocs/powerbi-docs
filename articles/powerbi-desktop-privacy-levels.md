@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2016"
+   ms.date="02/17/2017"
    ms.author="davidi"/>
 # Power BI Desktop privacy levels
 
-In Power BI Desktop, privacy levels specify an isolation level that defines the degree that one data source will be isolated from other data sources. Although a restrictive isolation level blocks information from being exchanged between data sources, it may reduce functionality and impact performance.
+In **Power BI Desktop**, privacy levels specify an isolation level that defines the degree that one data source will be isolated from other data sources. Although a restrictive isolation level blocks information from being exchanged between data sources, it may reduce functionality and impact performance.
 
-The **Fast Combine** setting, found in **File > Options and settings > Options** and then **Current File > Privacy** determines whether Power BI Desktop uses your Privacy Level settings while combining data. This dialog includes a link to Power BI Desktop documentation about Privacy Levels and Fast Combine (this article).
+The **Privacy Levels** setting, found in **File > Options and settings > Options** and then **Current File > Privacy** determines whether Power BI Desktop uses your Privacy Level settings while combining data. This dialog includes a link to Power BI Desktop documentation about Privacy Levels and Privacy Levels (this article).
 
 ![](media/powerbi-desktop-privacy-levels/desktop_PrivacyLevels1.png)
 
@@ -57,18 +57,18 @@ To configure a data source privacy level, select the data source, then select **
 
 > **Caution:** You should configure a data source containing highly sensitive or confidential data as **Private**.
 
-## Configure Fast Combine
+## Configure Privacy Levels
 
-**Fast Combine** is a setting that is set to **Combine data according to your Privacy Level settings for each source** by default, which means that **Fast Combine** is not enabled.
+**Privacy Levels** is a setting that is set to **Combine data according to your Privacy Level settings for each source** by default, which means that **Privacy Levels** is not enabled.
 
 |Setting|Description|
 |---|---|
 |**Combine data according to your Privacy Level settings for each source** (on, and the default setting)|Privacy level settings are used to determine the level of isolation between data sources when combining data.|
 |**Ignore the Privacy levels and potentially improve performance** (off)| Privacy levels are not considered when combining data, however; performance and functionality of the data may increase.
 
- > **Security Note:** Enabling **Fast Combine** by selecting **Ignore the Privacy levels and potentially improve performance** in the **Fast Combine** dialog could expose sensitive or confidential data to an unauthorized person. Do not enable **Fast Combine** unless you are confident that the data source does not contain sensitive or confidential data.
+ > **Security Note:** Enabling **Privacy Levels** by selecting **Ignore the Privacy levels and potentially improve performance** in the **Privacy Levels** dialog could expose sensitive or confidential data to an unauthorized person. Do not enable **Privacy Levels** unless you are confident that the data source does not contain sensitive or confidential data.
 
-**Configure Fast Combine**
+**Configure Privacy Levels**
 
 In Power BI Desktop or in Query Editor, select **File > Options and settings > Options** and then **Current File > Privacy**.
 
