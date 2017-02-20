@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/10/2016"
+   ms.date="02/17/2017"
    ms.author="davidi"/>
 
 # Sort by column in Power BI Desktop  
