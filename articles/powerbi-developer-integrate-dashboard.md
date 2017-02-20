@@ -290,6 +290,14 @@ If you downloaded and ran the [Integrate a dashboard sample](https://github.com/
 
 ![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
 
+## Limitations
+
+- The end users who access the embedded dashboards must have Power BI accounts and the dashboards should be shared with them.
+
+- Currently Q&A is not supported in embedded dashboards.
+
+- As a temporary limitation, when sharing a dashboard with security groups, user have to first access the dashboards in PowerBI.com before they can see it embedded.
+
 ## See also
 
 [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
