@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="02/20/2017"
    ms.author="asaxton"/>
 
 # What can developers do with Power BI?
@@ -31,6 +31,7 @@ Here are some of the things you can do with the Power BI APIs.
 |**To do this**| **Go here**
 |---|---
 |Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
+|Embed dashboards into an app.|[Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
 |Embed tiles into an app.|[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
 |Embed reports into an app.|[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
 |Import a Power BI Desktop file| [Import PBIX File](https://msdn.microsoft.com/library/mt243837.aspx)
@@ -51,6 +52,7 @@ In the Apiary interactive API console, you can try all Power BI REST API operati
 ## See also
 
 [Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)  
+[Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)  
 [Integrate a tile into an app](powerbi-developer-integrate-tile.md)  
 [Integrate a report into an app](powerbi-developer-integrate-report.md)  
 [Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)  
