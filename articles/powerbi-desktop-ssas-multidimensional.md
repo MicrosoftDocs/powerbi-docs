@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/14/2016"
+   ms.date="02/21/2017"
    ms.author="davidi"/>
 
 # Connect to SSAS Multidimensional Models in Power BI Desktop  
@@ -82,7 +82,7 @@ Multidimensional models support dimension and cell level security by way of *Rol
 There are certain limitations to using **SSAS MD**:
 
 -   Servers must be running SQL Server 2012 SP1 CU4 or later versions of Analysis Services for the Power BI Desktop SSAS MD connector to work properly
--   Cell level Formatting and translation features are not supported in this release of SSAS MD. These features will be enabled in upcoming releases of Power BI Desktop.
+-   Cell level Formatting and translation features are not supported in this release of SSAS MD.
 -   *Actions* and *Named Sets* are not exposed to Power BI, but you can still connect to cubes that also contain *Actions* or *Named sets* and create visuals and reports.
 
 ## Supported Features of SSAS MD in Power BI Desktop
