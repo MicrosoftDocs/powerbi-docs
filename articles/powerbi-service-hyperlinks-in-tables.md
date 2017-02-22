@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="02/21/2017"
    ms.author="mihart"/>
 # Hyperlinks in tables
 
-This topic teaches you how to create and work with hyperlinks in tables and matrixes.  URLs in Power BI tables (and matrixes) can function as hyperlinks. Underlined text in a table or matrix that changes color as you hover over it, is a hyperlink.  Clicking on it will take you to the linked URL. 
+This topic teaches you how to use Power BI Desktop to create hyperlinks. Once created, use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes. 
 
 ![](media/powerbi-service-hyperlinks-in-tables/hyperlinkedTable.png)
 
 >**NOTE**:
->Hyperlinks can also be added to [tiles on dashboards](powerbi-service-edit-a-tile-in-a-dashboard.md), [text boxes in reports](powerbi-service-add-a-hyperlink-to-a-text-box.md), and [text boxes on dashboards](powerbi-service-add-a-widget-to-a-dashboard.md).
+>Hyperlinks in [tiles on dashboards](powerbi-service-edit-a-tile-in-a-dashboard.md) and [text boxes on dashboards](powerbi-service-add-a-widget-to-a-dashboard.md) can be created on-the-fly using Power BI service. Hyperlinks in [text boxes in reports](powerbi-service-add-a-hyperlink-to-a-text-box.md) can be created on-the-fly using Power BI service and Power BI Desktop.
 
 ## To create a hyperlink in Power BI table or matrix
 
@@ -47,9 +47,17 @@ The procedure for adding a hyperlink depends on whether you've imported the data
 
 4. Switch to Report view and create a table or matrix using the field categorized as a Web URL. The hyperlinks will be blue and underlined.
 
-    ![](media/powerbi-service-hyperlinks-in-tables/power-bi-table-with-hyperlinks.png)
+    ![](media/powerbi-service-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
 
-4. [Publish the report from Desktop to Power BI service](powerbi-learning-4-1-publish-reports.md) and open the report in Power BI service. The hyperlinks will work there as well.
+5.  If you don't want to display a long URL, you can display a hyperlink icon  ![](media/powerbi-service-hyperlinks-in-tables/power-bi-hyperlink-icon.png) instead.
+
+  a.  Select the chart or matrix to make it active.
+
+  b.  Select the paint roller icon ![](media/powerbi-service-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
+
+  c.  Expand **Values**, locate **URL icon** and turn it to **On.**
+
+6. (Optional) [Publish the report from Desktop to Power BI service](powerbi-learning-4-1-publish-reports.md) and open the report in Power BI service. The hyperlinks will work there as well.
 
 ### For data connected with DirectQuery
 
@@ -61,9 +69,10 @@ You won't be able to create a new column in DirectQuery mode.  But if your data 
 
 3. Select **Web URL**. The hyperlinks will be blue and underlined.
 
-4. [Publish the report from Desktop to Power BI service](powerbi-learning-4-1-publish-reports.md) and open the report in Power BI service. The hyperlinks will work there as well.
+4. (Optional) [Publish the report from Desktop to Power BI service](powerbi-learning-4-1-publish-reports.md) and open the report in Power BI service. The hyperlinks will work there as well.
 
 ## Create a table or matrix hyperlink in Excel Power Pivot
+Another way to add hyperlinks to your Power BI tables and matrixes is to create the hyperlinks in the dataset before you import/connect to that dataset from Power BI. This example uses an Excel workbook.
 
 1.  Open the workbook in Excel.
 
@@ -71,19 +80,19 @@ You won't be able to create a new column in DirectQuery mode.  But if your data 
 
     ![](media/powerbi-service-hyperlinks-in-tables/createHyperlinkInPowerPivot2.png)
 
-3.  When Power Pivot opens, select the **Advanced **tab.
+3.  When PowerPivot opens, select the **Advanced** tab.
 
     ![](media/powerbi-service-hyperlinks-in-tables/createHyperlinkInPowerPivot3.png)
 
 4.  Place your cursor in the column that contains the URLs that you'd like to turn into hyperlinks in Power BI tables.
 
-    >**NOTE**: The URLS must start with either **http:// , https://** or **www**.
+    >**NOTE**: The URLS must start with **http:// , https://** or **www**.
 
 5.  In the **Reporting Properties** group, select the **Data Category** dropdown and choose **Web URL**. 
 
     ![](media/powerbi-service-hyperlinks-in-tables/createHyperlinksNew.png)
 
-6.  From the Power BI service, connect to this workbook.
+6.  From the Power BI service or Power BI Desktop, connect to or import this workbook.
 
 7.  Create a table visualization that includes the URL field.
 

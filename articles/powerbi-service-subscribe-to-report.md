@@ -4,10 +4,11 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
+   featuredVideoId="saQx7G0pxhc"
    qualityFocus="monitoring"
    qualityDate=""/>
 
@@ -17,10 +18,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/03/2017"
+   ms.date="02/21/2017"
    ms.author="mihart"/>
+
 # Subscribe to a Power BI report
 It's never been easier to stay up-to-date on your most important reports. Subscribe to report pages that matter most to you, and Power BI will email a snapshot of that page to your inbox. You tell Power BI how often you want to receive the emails: from once a day, to once a week, or never.
+
+Watch Sirui set up an email subscription. Then follow the step-by-step instructions below the video to try it out yourself.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/saQx7G0pxhc" frameborder="0" allowfullscreen></iframe>
+
 
 ##  Requirements
 **Creating** a subscriptions is a Power BI Pro feature.

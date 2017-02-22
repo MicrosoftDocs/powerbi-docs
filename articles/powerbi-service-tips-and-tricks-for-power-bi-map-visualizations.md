@@ -21,9 +21,9 @@
    ms.date="11/15/2016"
    ms.author="mihart"/>
 
-# Tips and Tricks for Power BI Map visualizations  
+# Tips and Tricks for Power BI Map visualizations
 
-Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, you can use the following tips.
+Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, use the following tips. The first set of tips are for you to use if you have access to the dataset itself. And the second set of tips are things you can do in Power BI.
 
 ##  In the dataset: tips to improve the underlying dataset
 
@@ -31,9 +31,11 @@ If you have access to the dataset that is being used to create the map visualiza
 
 **1. Use Geo Location Terms**
 
-When columns in the dataset are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as *California* and *Washington*, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of *Washington, DC* instead of Washington state for the word *Washington*. Naming that column *State* will improve the geocoding. The same is true for columns named *Country*, *State*, *Province*, and *City*.   
+When columns in the dataset are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as *California* and *Washington*, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of *Washington, DC* instead of Washington state for the word *Washington*. Naming that column *State* will improve the geocoding. The same is true for columns named *Country*, *State*, *Province*, and *City*.
 
-> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+![](media/)
+
+> [AZURE.NOTE] When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
 
 > If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 
