@@ -290,6 +290,20 @@ If you downloaded and ran the [Integrate a dashboard sample](https://github.com/
 
 ![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
 
+## Working with groups
+
+For embedding a dashboard from a group, you will want to get the list of all available dashboards within a group using the following REST API call. To find more information about this REST API call, see [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx).
+
+```
+https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards
+```
+
+The above API returns the list of the available dashboards. Each dashboard has an EmbedUrl property which is already constructed to support group embedding.
+
+```
+https://app.powerbi.com/dashboardEmbed?dashboardId={dashboardId}&groupId={groupId}
+```
+
 ## Limitations
 
 - The end users who access the embedded dashboards must have Power BI accounts and the dashboards should be shared with them.
