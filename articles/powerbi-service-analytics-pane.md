@@ -66,9 +66,9 @@ To view the available dynamic reference lines for a visual, follow these steps:
 
     ![](media/powerbi-service-analytics-pane/power-bi-reference-lines.png)
 
-If the visual you've selected can't have dynamic reference lines applied to it (in this case, a **Map** visual), you'll see the following when you select the **Analytics** pane.
+    If the visual you've selected can't have dynamic reference lines applied to it (in this case, a **Map** visual), you'll see the following when you select the **Analytics** pane.
 
-![](media/powerbi-service-analytics-pane/power-bi-no-lines.png)
+    ![](media/powerbi-service-analytics-pane/power-bi-no-lines.png)
 
 
 There are all sorts of interesting insights you can highlight by creating dynamic reference lines with the **Analytics** pane.
