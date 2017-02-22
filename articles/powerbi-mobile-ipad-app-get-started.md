@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/13/2017"
+   ms.date="02/21/2017"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -41,7 +41,7 @@ Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-th
 
 ## Sign up for the Power BI service
 
-Go to [Power BI to sign up](http://go.microsoft.com/fwlink/?LinkID=513879) for the service, if you haven't already. It's free.
+Go to Power BI (https://powerbi.com) to sign up for the service, if you haven't already. It's free.
 
 ## Get started with the Power BI app 
 
