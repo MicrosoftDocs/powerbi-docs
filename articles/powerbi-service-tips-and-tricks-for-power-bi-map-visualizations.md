@@ -33,8 +33,6 @@ If you have access to the dataset that is being used to create the map visualiza
 
 When columns in the dataset are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as *California* and *Washington*, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of *Washington, DC* instead of Washington state for the word *Washington*. Naming that column *State* will improve the geocoding. The same is true for columns named *Country*, *State*, *Province*, and *City*.
 
-![](media/)
-
 > [AZURE.NOTE] When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
 
 > If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
