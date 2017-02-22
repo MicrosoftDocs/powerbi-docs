@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/30git ad/2016"
+   ms.date="01/30/2017"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations
