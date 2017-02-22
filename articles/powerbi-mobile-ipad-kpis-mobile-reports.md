@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/17/2016"
+   ms.date="02/21/2017"
    ms.author="maggies"/>
 
 # View Reporting Services mobile reports and KPIs in the iPad app (Power BI for iOS)  
@@ -25,8 +25,6 @@
 The iPad app for Microsoft Power BI for iOS offers live, touch-enabled mobile access to your important on-premises business information. 
 
 ![](media/powerbi-mobile-ipad-kpis-mobile-reports/power-bi-ipad-ssrs-home.png)
-
-First things first:
 
 First things first:
 
