@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="02/22/2017"
    ms.author="mihart"/>
 
 # Add image, text, video, and more to your dashboard
@@ -41,7 +41,7 @@ The **Add tile** control lets you directly add an image, text box, video, stream
 
 
 ## Add an image
-Say you want your company logo on your dashboard, or some other image.
+Say you want your company logo on your dashboard, or some other image. You'll need to save the image file online and link to it. Make sure special credentials aren't required to access the image file. For example, OneDrive and SharePoint require authentication, so images stored there can't be added to a dashboard this way.  
 
 1. Select **Image** > **Next**.
 

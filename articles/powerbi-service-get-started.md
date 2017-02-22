@@ -1,13 +1,14 @@
 ﻿<properties
-   pageTitle="Get started with Power BI"
-   description="Get started with Power BI"
+   pageTitle="Get started with Power BI service"
+   description="Get started with Power BI service"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
+   featuredVideoId="1c01r_pAZdk"
    qualityFocus="monitoring"
    qualityDate=""/>
 
@@ -17,23 +18,26 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/25/2016"
+   ms.date="02/22/2017"
    ms.author="mihart"/>
 
-# Get started with Power BI
+# Get started with Power BI service
 
 ##  Getting Started
 
-This tutorial helps you get started with Power BI service.  If you're looking for help with Power BI Desktop, see [Get started with Desktop](powerbi-desktop-getting-started.md).
+This tutorial helps you get started with ***Power BI service***. Power BI service has a free version and a Pro version. No matter which version you're using, open a browser and type www.powerbi.com to get started. If you've already signed up, select the **Sign in** link that you'll see in the top right corner. If you haven't yet signed up for Power BI service, select the **Sign up free** link instead.
 
-Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place.
+![](media/powerbi-service-get-started/power-bi-sign-up.png)
 
-Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi).
+If you're looking for help with Power BI Desktop, see [Get started with Desktop](powerbi-desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md).
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
+>[AZURE:TIP] Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi) or visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). A good video to start with is [Introduction to Power BI]:
+
+> <iframe width="560" height="315" src="https://www.youtube.com/embed/1c01r_pAZdk?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+
+Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
 If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](powerbi-service-get-data.md) you can connect to. If you are part of an organization, see if any [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) have been published for you.
-
 
 Read about all the other ways to [get data for Power BI](powerbi-service-get-data.md).
 
@@ -41,7 +45,7 @@ Read about all the other ways to [get data for Power BI](powerbi-service-get-dat
 
 Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download this sample CSV file](http://go.microsoft.com/fwlink/?LinkID=619356).
 
-1.  [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? You can sign up for [Power BI for free](http://www.powerbi.com/ "try out the new Power BI Preview for free").
+1.  [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for free.
 
 1.  Power BI opens with a dashboard displayed. Select **Get Data** at the bottom of the left navigation pane.
 
@@ -140,3 +144,4 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 -   Subscribe to our [YouTube video channel](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 -   Watch our [Power BI Getting Started webinars](powerbi-webinars.md) on demand
 -  More questions? [Try the Power BI Community](http://community.powerbi.com/)
+- Not sure where to go for help? See our [10 tips for getting help](powerbi-service-tips-for-getting-help) page
