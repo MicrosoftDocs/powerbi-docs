@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/07/2017"
+   ms.date="02/21/2017"
    ms.author="maggies"/>
 
 # Power BI mobile app for iOS: Your data on your iOS device
@@ -26,7 +26,7 @@ The Microsoft Power BI app for iOS delivers the mobile BI experience on iPad, iP
 
 ![](media/powerbi-mobile-ipad-iphone-apps/PBI_iPad_iPhoneDevices.png)
 
-Go to [Power BI](http://go.microsoft.com/fwlink/?LinkID=513879) to sign up for the Power BI service.
+Go to Power BI (https://powerbi.com) to sign up for the Power BI service.
 
 See [what's new in the Power BI mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 

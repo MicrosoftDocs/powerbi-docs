@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/25/2017"
+   ms.date="02/21/2017"
    ms.author="maggies"/>
 
 # View SSRS mobile reports and KPIs in the iOS mobile apps
 
-The Power BI mobile app for iOS offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 
+The Power BI mobile app for iPad and iPhone offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 
 
- ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_MobRpt.png)
+ ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_SSMRP_MobRpt.png)
 
 ## First things first
 
@@ -33,7 +33,7 @@ The Power BI mobile app for iOS offers live, touch-enabled mobile access to your
 
 Then in the Power BI mobile app for iOS, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
->**Note**: Your iPhone needs to be at least an iPhone 5, running at least iOS 9.0. Your iPad needs to be running at least iOS 8.0.
+>**Note**: Your iPhone needs to be at least an iPhone 5. Both iPhones and iPads need to be running at least iOS 9.0.
 
 ## Explore samples without an SSRS server
 
@@ -85,7 +85,7 @@ Reporting Services KPIs and mobile reports are displayed in the same folders the
 
 - Tap a KPI to see it in focus mode.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_Tile.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_SSMRP_Tile.png)
 
 - Tap a mobile report to open and interact with it in the Power BI app.
 
@@ -101,7 +101,7 @@ You can mark KPIs and mobile reports as favorites on your Reporting Services web
    
     Your favorites from the web portal are all on this page.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-favorites.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ipad-favorites-page.png)
 
 ## Remove a connection to a report server
 
