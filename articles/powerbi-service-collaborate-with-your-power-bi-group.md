@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Collaborate in Office 365 with your Power BI group"
-   description="Read about collaborating in a Power BI group with Office 365 services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks."
+   pageTitle="Collaborate in your Power BI group workspace"
+   description="Read about collaborating on Power BI Desktop files in your group, and with Office 365 services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,15 +17,28 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/07/2017"
+   ms.date="02/22/2017"
    ms.author="ajayan"/>
-# Collaborate in Office 365 with your Power BI group
+# Collaborate in Office 365 with your Power BI group workspace
 
-Probably the main reason you created a group in Power BI was to collaborate on dashboards, reports, and datasets in Power BI. That's what groups are designed for -- collaboration. If you just want to distribute a finished dashboard with colleagues, then you're better off sharing it with them, or creating an organizational content pack. Read [How should I share dashboards, reports, and tiles](powerbi-service-how-should-i-share-my-dashboard.md) first, if you haven't done so yet. 
+Power BI group workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets. That's what groups are designed for -- collaboration. If you just want to distribute a finished dashboard with colleagues, then you're better off sharing it with them, or creating an organizational content pack. Read [How should I share dashboards, reports, and tiles](powerbi-service-how-should-i-share-my-dashboard.md) first, if you haven't done so yet. 
 
-But collaboration doesn’t end with groups in Power BI. Office 365 offers other group services such as sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
+Collaboration doesn’t end with groups in Power BI. Office 365 offers other group services such as sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
 >**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+
+## Collaborate on Power BI Desktop files in your group
+
+After you create a Power BI Desktop file, you just publish it to your Power BI group, and then everyone in your group can collaborate on it.
+
+1. In Power BI Desktop, select **Publish** on the **Home** ribbon, then in the **Select a destination** box, select your group workspace.
+
+    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-group-publish-pbix.png)
+
+2. In the Power BI service, select the double arrows next to My Workspace > select your group workspace.
+
+    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-go-to-group.png)
+
 
 ## Collaborate in Office 365
 
