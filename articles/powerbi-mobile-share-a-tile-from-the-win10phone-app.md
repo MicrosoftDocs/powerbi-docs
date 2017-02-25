@@ -17,11 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="02/24/2017"
    ms.author="maggies"/>
 # Share a tile from the Power BI mobile app for Windows 10
 
 When you share a snapshot of a tile from the [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md), your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
+
+## Share a snapshot of a tile
 
 1. Open a [dashboard in the Power BI mobile app for Windows 10](powerbi-mobile-create-dashboard.md).
 
