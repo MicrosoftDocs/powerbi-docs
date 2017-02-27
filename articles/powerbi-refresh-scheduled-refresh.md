@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/18/2017"
+ms.date="02/24/2017"
 ms.author="davidi"/>
 # Configuring scheduled refresh
 
@@ -53,7 +53,7 @@ If you are using the personal gateway to refresh data, you will need to supply t
 
 ![](media/powerbi-refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
-You’re only required to sign in to data sources the first time you use refresh on that dataset. Once entered, those credentials are retained with the dataset. 
+You’re only required to sign in to data sources the first time you use refresh on that dataset. Once entered, those credentials are retained with the dataset.
 
 > [AZURE.NOTE] For some authentication methods, if the password you use to sign into a data source expires or is changed, you'll need to change it for the data source in Data Source Credentials too.
 
@@ -68,10 +68,12 @@ If you are using the enterprise gateway to refresh data, you do not need to supp
 ## Schedule refresh
 
 The scheduled refresh section is where you define the frequency and time slots to refresh the dataset. Some data sources do not require a gateway present in order to be available to configure. Others will require a gateway.
- 
+
 You will need to change **Keep your data up to date** to Yes in order to configure the settings.
 
 ![](media/powerbi-refresh-scheduled-refresh/scheduled-refresh.png)
+
+> **Note**: The Power BI service targets initiating the refresh of your data within **15 minutes** of your scheduled refresh time.
 
 ## What’s supported?  
 Certain datasets are supported against different gateways for scheduled refresh. Here is a reference to understand what is available.

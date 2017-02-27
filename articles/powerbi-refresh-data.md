@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2017"
+   ms.date="02/24/2017"
    ms.author="davidi"/>
 
 # Data refresh in Power BI  
@@ -105,7 +105,9 @@ Before we go further, here are some important definitions to understand:
 
 > [AZURE.NOTE] When you configure a time for scheduled refresh, there can be a delay of up to one hour before it begins.
 
-**Live/DirectQuery** – This means there is a live connection between Power BI and the data source. For on-premises data sources, Admins will need to have a data source configured within an enteprise gateway, but user interaction may not be needed.
+**Live/DirectQuery** – This means there is a live connection between Power BI and the data source. For on-premises data sources, Admins will need to have a data source configured within an enterprise gateway, but user interaction may not be needed.
+
+> [AZURE.NOTE] To enhance performance, dashboards with data connected using DirectQuery are automatically updated. You can also manually refresh a tile at any time, by using the **More** menu on the tile.
 
 ## Local files and files on OneDrive or SharePoint Online
 
