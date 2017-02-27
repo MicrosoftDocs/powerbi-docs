@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/18/2017"
+ms.date="02/24/2017"
 ms.author="davidi"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -288,13 +288,13 @@ Here is a listing of the available performance counters.
 |# of queries failed / sec|Number of failed queries executed per second.|
 |# of single result set OLEDB queries failed / sec|Number of single resultset OLEDB failed queries executed per second.|
 
-### Reviewing slow performing queries
+## Reviewing slow performing queries
 
 You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can enable additional logging to output queries and their timings to help understand what is performing slow. When you find a long running query, it may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
 
 You will need to modify two configuration files to determine the duration of a query.
 
-#### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
 
 Within the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file, change the `EmitQueryTraces` value from `False` to `True`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Enabling `EmitQueryTraces` will begin to log queries that are sent from the gateway to a data source.
 
@@ -335,7 +335,7 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
-#### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
 
 Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file, change the `TraceVerbosity` value from `4` to `5`. This file is located, by default, at *C:\Program Files\On-premises data gateway*. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration.
 
@@ -348,7 +348,7 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file
 ```
 
 <a name="activities"></a>
-#### Activity Types
+### Activity Types
 
 |Activty Type|Description|
 |---|---|
@@ -356,7 +356,7 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file
 |MGEO|Queries executed over OLEDB. This includes SAB HANA and Analysis Services 2016.|
 |MGEM|Queries executed from the Mashup engine. This is used with imported datasets that use scheduled refresh or refresh on-demand.|
 
-#### Determine the duration of a query
+### Determine the duration of a query
 
 To determine the time it took to query the data source, you can do the following.
 
