@@ -4,7 +4,7 @@ Users will sign in with either a work or school account. This is your organizati
 
 ## Windows Service account
 
-The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for the windows service logon credential. By default, it has the right of Log on as a service. This is in the context of the machine that you are installing the gateway on. 
+The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for the windows service logon credential. By default, it has the right of Log on as a service. This is in the context of the machine that you are installing the gateway on.
 
 > [AZURE.NOTE]  If you selected personal mode, you configure the windows service account separately.
 
@@ -24,7 +24,7 @@ Here is a listing of the fully qualified domain names used by the gateway.
 
 |Domain names|Outbound ports|Description|
 |---|---|---|
-|*.powerbi.com|80|HTTP used to download the installer.|
+|*.download.microsoft.com|80|HTTP used to download the installer.|
 |*.powerbi.com|443|HTTPS|
 |*.analysis.windows.net|443|HTTPS|
 |*.login.windows.net|443|HTTPS|
@@ -60,7 +60,7 @@ The gateway runs as a windows service. You can start and stop it like any window
 
 2.	Use the following command to stop the service.
 
-    net stop PBIEgwService 
+    net stop PBIEgwService
 
 3.	Use the following command to start the service.
 

@@ -17,11 +17,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/18/2017"
+ms.date="02/24/2017"
 ms.author="davidi"/>
 # On-premises data gateway in-depth
 
-Users in your organization can see your on-premises data, but before users can connect to your on-premises data source, an on-premises data gateway needs to be installed and configured. The gateway helps make the behind-the-scenes communication from a user in the cloud to your on-premises data source and back to the cloud quick and secure.
+It's possible for users in your organization to access on-premises data (to which they already have access authorization), but before those users can connect to your on-premises data source, an on-premises data gateway needs to be installed and configured. The gateway facilitates quick and secure behind-the-scenes communication between a user in the cloud, to your on-premises data source, and then back to the cloud.
 
 Installing and configuring a gateway is usually done by an administrator. It may require special knowledge of your on-premises servers and in some cases may require Server Administrator permissions.
 
@@ -39,9 +39,9 @@ Users will sign in with either a work or school account. This is your organizati
 
 ## Authentication to on-premises data sources
 
-A stored credential will be used to connect to on-premises data sources from the gateway except Analysis Services. Regardless of the individual user, the gateway uses the stored credential to connect. 
+A stored credential will be used to connect to on-premises data sources from the gateway except Analysis Services. Regardless of the individual user, the gateway uses the stored credential to connect.
 
-## Authentication to a live Analysis Services data source 
+## Authentication to a live Analysis Services data source
 
 Each time a user interacts with Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The user principal name (UPN), typically the email address you sign into the cloud with, is what we will pass to Analysis Services as the effective user. The UPN is passed in the connection property EffectiveUserName. This email address should match a defined UPN within the local Active Directory domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role to have access to the server. The login will not be successful if no match is found in Active Directory.
 
@@ -57,7 +57,7 @@ Row-level security is specific to Analysis Services row-level security. Models c
 
 A user’s ability to query and view model data are determined first by the roles their Windows user account are a member of and second, by dynamic row-level security, if configured.
 
-Implementing role and dynamic row-level security in models are beyond the scope of this article.  You can learn more at [Roles (SSAS Tabular)](https://msdn.microsoft.com/library/hh213165.aspx) and [Security Roles (Analysis Services - Multidimensional Data)](https://msdn.microsoft.com/library/ms174840.aspx) on MSDN. And, for the most in-depth understanding of tabular model security, download and read the Securing the [Tabular BI Semantic Model whitepaper](https://msdn.microsoft.com/library/jj127437.aspx). 
+Implementing role and dynamic row-level security in models are beyond the scope of this article.  You can learn more at [Roles (SSAS Tabular)](https://msdn.microsoft.com/library/hh213165.aspx) and [Security Roles (Analysis Services - Multidimensional Data)](https://msdn.microsoft.com/library/ms174840.aspx) on MSDN. And, for the most in-depth understanding of tabular model security, download and read the Securing the [Tabular BI Semantic Model whitepaper](https://msdn.microsoft.com/library/jj127437.aspx).
 
 ## What about Azure Active Directory?
 
