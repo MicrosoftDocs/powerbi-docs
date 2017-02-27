@@ -22,13 +22,13 @@
 
 # Integrate a dashboard into an app
 
-Learn how to integrate, or embed, a dashboard into a web app using C# and the **Power BI** API, some JavaScript code, and an IFrame.
+Learn how to integrate, or embed, a dashboard into a web app using C# and the **Power BI** API along with some JavaScript code.
 
 ![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
 
 To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, see [Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md).
 
-To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard and tile. Then, you load the tile into an **IFrame** using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. See [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx). 
+To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard and tile. Then, you load the tile into a **div** element using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
 
 ## Download the sample
 
@@ -229,8 +229,6 @@ public class PBIDashboard
 
 You can use JavaScript to load a dashboard into a div element on your web page.
 
-**Load a dashboard into an IFrame**
-
 ```
 <input type="text" id="tb_EmbedURL" style="width: 1024px;" />
 <input type="button" id="bEmbedDashboardAction" value="Embed Dashboard" />
@@ -364,4 +362,5 @@ https://app.powerbi.com/dashboardEmbed?dashboardId={dashboardId}&groupId={groupI
 [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
 [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app)  
 [App permissions](powerbi-developer-power-bi-permissions.md)  
+[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
