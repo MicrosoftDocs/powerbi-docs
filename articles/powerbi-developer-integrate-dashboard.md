@@ -17,26 +17,26 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2017"
+   ms.date="02/27/2017"
    ms.author="asaxton"/>
 
 # Integrate a dashboard into an app
 
-Learn how to integrate, or embed, a dashboard into a web app using C# and the **Power BI** API, some JavaScript code, and an IFrame.
+Learn how to integrate, or embed, a dashboard into a web app using C# and the **Power BI** API along with some JavaScript code.
 
 ![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
 
 To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, see [Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md).
 
-To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard and tile. Then, you load the tile into an **IFrame** using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. See [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx). 
+To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard and tile. Then, you load the tile into a **div** element using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
 
 ## Download the sample
 
-This article shows the code used in the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-dashboard-into-an-app) on GitHub. To follow along with this walkthrough, you should download the sample.
+This article shows the code used in the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app) on GitHub. To follow along with this walkthrough, you should download the sample.
 
 ## Step 1 - register an app in Azure AD
 
-In order to use the Power BI API, you will have to register an app with your Azure Active Directory tenant. You need to do this first so that you have a **Client ID** and **Client Secret** that identifies your web app in Azure AD. Without a **Client ID** and **Client Secret**, Azure AD cannot authenticate your web app. If you downloaded the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-dashboard-into-an-app), you use the **Client ID** and **Client Secret** you get after registration to configure the sample so that the sample can authenticate to Azure AD.
+In order to use the Power BI API, you will have to register an app with your Azure Active Directory tenant. You need to do this first so that you have a **Client ID** and **Client Secret** that identifies your web app in Azure AD. Without a **Client ID** and **Client Secret**, Azure AD cannot authenticate your web app. If you downloaded the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app), you use the **Client ID** and **Client Secret** you get after registration to configure the sample so that the sample can authenticate to Azure AD.
 
 We have created a page to help you with the registration. You can browse to [dev.powerbi.com/apps](https://dev.powerbi.com/apps) to perform this step.
 
@@ -64,7 +64,7 @@ We have created a page to help you with the registration. You can browse to [dev
 
 ### Configure the sample application
 
-If you downloaded the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-dashboard-into-an-app), you use the **Client ID** and **Client Secret** you get after registration so that the sample can authenticate to Azure AD. To configure the sample, change the **Client ID** and **Client Secret** in web.config.
+If you downloaded the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app), you use the **Client ID** and **Client Secret** you get after registration so that the sample can authenticate to Azure AD. To configure the sample, change the **Client ID** and **Client Secret** in web.config.
 
 ![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard-register-app4.png)
 
@@ -109,73 +109,64 @@ After you construct a query string, you redirect to **Azure AD** to get an **aut
 **Get authorization code**
 
 ```
-public void GetAuthorizationCode()
+protected void signInButton_Click(object sender, EventArgs e)
 {
-    //NOTE: Values are hard-coded for sample purposes.
     //Create a query string
     //Create a sign-in NameValueCollection for query string
     var @params = new NameValueCollection
     {
-        //Azure AD will return an authorization code.
+        //Azure AD will return an authorization code. 
+        //See the Redirect class to see how "code" is used to AcquireTokenByAuthorizationCode
         {"response_type", "code"},
 
-        //Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
+        //Client ID is used by the application to identify themselves to the users that they are requesting permissions from. 
         //You get the client id when you register your Azure app.
-        {"client_id", Settings.Default.ClientID},
+        {"client_id", Properties.Settings.Default.ClientID},
 
         //Resource uri to the Power BI resource to be authorized
-        //The resource uri is hard-coded for sample purposes
-        {"resource", "https://analysis.windows.net/powerbi/api"},
+        {"resource", Properties.Settings.Default.PowerBiAPI},
 
-        //After app authenticates, Azure AD will redirect back to the web app. In this sample, Azure AD redirects back
-        //to Default page (Default.aspx).
-        { "redirect_uri", Settings.Default.RedirectUri}
+        //After user authenticates, Azure AD will redirect back to the web app
+        {"redirect_uri", "http://localhost:13526/Redirect"}
     };
 
     //Create sign-in query string
     var queryString = HttpUtility.ParseQueryString(string.Empty);
     queryString.Add(@params);
 
-    //Redirect to Azure AD Authority
-    //  Authority Uri is an Azure resource that takes a client id and client secret to get an Access token
-    //  QueryString contains
-    //      response_type of "code"
-    //      client_id that identifies your app in Azure AD
-    //      resource which is the Power BI API resource to be authorized
-    //      redirect_uri which is the uri that Azure AD will redirect back to after it authenticates
-
-    //Redirect to Azure AD to get an authorization code
-    Response.Redirect(String.Format("https://login.windows.net/common/oauth2/authorize?{0}", queryString));
+    //Redirect authority
+    //Authority Uri is an Azure resource that takes a client id to get an Access token
+    string authorityUri = Properties.Settings.Default.AADAuthorityUri;
+    var authUri = String.Format("{0}?{1}", authorityUri, queryString);
+    Response.Redirect(authUri);
 }
 ```
 
 #### Get an access token from authorization code
 
-You should now have an authorization code from Azure AD. Once **Azure AD** redirects back to your web app with an **authorization code**, you use the **authorization code** to get an access token. Below is a C# method to get an **access token**.
-
-**Get access token**
+You should now have an authorization code from Azure AD. Once **Azure AD** redirects back to your web app with an **authorization code**, you use the **authorization code** to get an access token. Below is a C# sample that you could use in your Page_Load event.
 
 ```
-public string GetAccessToken(string authorizationCode, string clientID, string clientSecret, string redirectUri)
+protected void Page_Load(object sender, EventArgs e)
 {
-    //Redirect uri must match the redirect_uri used when requesting Authorization code.
-    //Note: If you use a redirect back to Default, as in this sample, you need to add a forward slash
-    //such as http://localhost:13526/
 
-    // Get auth token from auth code       
-    TokenCache TC = new TokenCache();
+    //Test for AuthenticationResult
+    if (Session[authResultString] != null)
+    {
+        //Get the authentication result from the session
+        authResult = (AuthenticationResult)Session[authResultString];
 
-    //Values are hard-coded for sample purposes
-    string authority = "https://login.windows.net/common/oauth2/authorize";
-    AuthenticationContext AC = new AuthenticationContext(authority, TC);
-    ClientCredential cc = new ClientCredential(clientID, clientSecret);
+        //Show Power BI Panel
+        signInStatus.Visible = true;
+        signInButton.Visible = false;
 
-    //Set token from authentication result
-    return AC.AcquireTokenByAuthorizationCode(
-        authorizationCode,
-        new Uri(redirectUri), cc).AccessToken;
+        //Set user and token from authentication result
+        userLabel.Text = authResult.UserInfo.DisplayableId;
+        accessTokenTextbox.Text = authResult.AccessToken;
+    }
 }
 ```
+
 
 ### Get dashboard using access token
 
@@ -184,7 +175,7 @@ Now that you have an **access token**, you can call the [Get Dashboards](https:/
 **Get dashboard**
 
 ```
-protected void GetDashboards
+protected void getDashboardsButton_Click(object sender, EventArgs e)
 {
     string responseContent = string.Empty;
 
@@ -204,29 +195,17 @@ protected void GetDashboards
 
             //Deserialize JSON string
             PBIDashboards PBIDashboards = JsonConvert.DeserializeObject<PBIDashboards>(responseContent);
-            Table1.Visible = true;
-            Control myControl1 = FindControl("TableDiv");
-            //Get each dashboard 
-            foreach (PBIDashboard dsb in PBIDashboards.value)
+
+            if (PBIDashboards != null)
             {
-                TableRow tRow = new TableRow();
-                Table1.Rows.Add(tRow);
+                var gridViewDashboards = PBIDashboards.value.Select(dashboard => new {
+                    Id = dashboard.id,
+                    DisplayName = dashboard.displayName,
+                    EmbedUrl = dashboard.embedUrl
+                });
 
-                TableCell idCell = new TableCell();
-                idCell.Text = dsb.id;
-                tRow.Cells.Add(idCell);
-
-                TableCell nameCell = new TableCell();
-                nameCell.Text = dsb.displayName;
-                tRow.Cells.Add(nameCell);
-
-                TableCell isReadOnlyCell = new TableCell();
-                isReadOnlyCell.Text = dsb.isReadOnly.ToString();
-                tRow.Cells.Add(isReadOnlyCell);
-
-                TableCell embedUrlCell = new TableCell();
-                embedUrlCell.Text = dsb.embedUrl;
-                tRow.Cells.Add(embedUrlCell);
+                this.GridView1.DataSource = gridViewDashboards;
+                this.GridView1.DataBind();
             }
         }
     }
@@ -246,49 +225,115 @@ public class PBIDashboard
 }
 ```
 
-## Step 3 - load a dashboard into an IFrame
+## Step 3 - load a dashboard using JavaScript
 
-To load a dashboard into an **IFrame**, you set the **src** attribute of an **IFrame** to the **embedUrl** property of a **dashboard**, and create an **onload** handler to post a message with an **access token** to get access to the dashboard. Below is JavaScript code to load a report into an **IFrame**.
-
-**Load a dashboard into an IFrame**
+You can use JavaScript to load a dashboard into a div element on your web page.
 
 ```
-//Configure IFrame for the dashboard after you have an Access Token. See Default.aspx.cs to learn how to get an Access Token
+<input type="text" id="tb_EmbedURL" style="width: 1024px;" />
+<input type="button" id="bEmbedDashboardAction" value="Embed Dashboard" />
+<div id="dashboardContainer"></div>
+
+
 window.onload = function () {
-    if ("" != document.getElementById('MainContent_accessToken').value)
-    {
-        var iframe = document.getElementById('iFrameEmbedDashboard');
+    // client side click to embed a selected dashboard.
+    var el = document.getElementById("bEmbedDashboardAction");
+    if (el.addEventListener) {
+        el.addEventListener("click", updateEmbedDashboard, false);
+    } else {
+        el.attachEvent('onclick', updateEmbedDashboard);
+    }
 
-        // To load a Report do the following:
-        // Set the IFrame source to the EmbedUrl from the Get Dashboards operation
-        iframe.src = document.getElementById('MainContent_DashboardEmbedUrl').value;
-
-        // Add an onload handler to submit the access token
-        iframe.onload = postActionLoadDashboard;
+    // handle server side post backs, optimize for reload scenarios
+    // show embedded dashboard if all fields were filled in.
+    var accessTokenElement = document.getElementById('MainContent_accessTokenTextbox');
+    if (accessTokenElement !== null) {
+        var accessToken = accessTokenElement.value;
+        if (accessToken !== "")
+            updateEmbedDashboard();
     }
 };
 
-// Post the access token to the IFrame
-function postActionLoadDashboard() {
+// update embed dashboard
+function updateEmbedDashboard() {
 
-    // Construct the push message structure
-    // this structure also supports setting the dashboardId, groupId, height, and width.
-    // when using a dashboard in a group, you must provide the groupId on the iFrame SRC
-    var m = {
-        action: "loadDashboard",
-        accessToken: document.getElementById('MainContent_accessToken').value
+    // check if the embed url was selected
+    var embedUrl = document.getElementById('tb_EmbedURL').value;
+    if (embedUrl === "")
+        return;
+
+    // get the access token.
+    accessToken = document.getElementById('MainContent_accessTokenTextbox').value;
+
+    // Embed configuration used to describe the what and how to embed.
+    // This object is used when calling powerbi.embed.
+    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
+    var config = {
+        type: 'dashboard',
+        accessToken: accessToken,
+        embedUrl: embedUrl
     };
-    message = JSON.stringify(m);
 
-    // push the message.
-    iframe = document.getElementById('iFrameEmbedDashboard');
-    iframe.contentWindow.postMessage(message, "*");;
+    // Grab the reference to the div HTML element that will host the dashboard.
+    var dashboardContainer = document.getElementById('dashboardContainer');
+
+    // Embed the dashboard and display it within the div container.
+    var dashboard = powerbi.embed(dashboardContainer, config);
+
+    // dashboard.on will add an event handler which prints to Log window.
+    dashboard.on("tileClicked", function (event) {
+        var logView = document.getElementById('logView');
+        logView.innerHTML = logView.innerHTML + "Tile Clicked<br/>";
+        logView.innerHTML = logView.innerHTML + JSON.stringify(event.detail, null, "  ") + "<br/>";
+        logView.innerHTML = logView.innerHTML + "---------<br/>";
+    });
+
+    // dashboard.on will add an event handler which prints to Log window.
+    dashboard.on("error", function (event) {
+        var logView = document.getElementById('logView');
+        logView.innerHTML = logView.innerHTML + "Error<br/>";
+        logView.innerHTML = logView.innerHTML + JSON.stringify(event.detail, null, "  ") + "<br/>";
+        logView.innerHTML = logView.innerHTML + "---------<br/>";
+    });
 }
 ```
 
-If you downloaded and ran the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-dashboard-into-an-app), the sample will look similar to below.
+If you downloaded and ran the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app), the sample will look similar to below.
 
 ![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
+
+## Tile clicked events
+
+In the sample above, you may have noticed that you can handle events when the tile is clicked on the dashboard. For more information about events, see [Handling Events within the JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Handling-Events).
+
+```
+// dashboard.on will add an event handler which prints to Log window.
+dashboard.on("tileClicked", function (event) {
+    var logView = document.getElementById('logView');
+    logView.innerHTML = logView.innerHTML + "Tile Clicked<br/>";
+    logView.innerHTML = logView.innerHTML + JSON.stringify(event.detail, null, "  ") + "<br/>";
+    logView.innerHTML = logView.innerHTML + "---------<br/>";
+});
+
+// dashboard.on will add an event handler which prints to Log window.
+dashboard.on("error", function (event) {
+    var logView = document.getElementById('logView');
+    logView.innerHTML = logView.innerHTML + "Error<br/>";
+    logView.innerHTML = logView.innerHTML + JSON.stringify(event.detail, null, "  ") + "<br/>";
+    logView.innerHTML = logView.innerHTML + "---------<br/>";
+});
+```
+
+If you downloaded and ran the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app), clicking on a tile will output text below the dashboard. The text will look similar to the following. This would allow you to log that a tile was clicked, and then navigate the user to the 
+
+```
+Tile Clicked
+{ "event": "TileClick", "reportEmbedUrl": "", "navigationUrl": "https://app.powerbi.com/dashboards/fcff76f9-15ff-4a8e-8242-275ac9c25b90/qna?q=count%20of%20new%20hires%20from%20July%202014%20to%20December%202014", "tileId": "0e99b45c-9b53-4920-b239-cee7d37d2369" }
+---------
+Tile Clicked
+{ "event": "TileClick", "reportEmbedUrl": "https://app.powerbi.com/reportEmbed?reportId=ab199308-80b1-4626-9823-43a84623bd9c", "navigationUrl": "https://app.powerbi.com/reports/ab199308-80b1-4626-9823-43a84623bd9c/ReportSection1", "tileId": "ffc30447-674a-4511-944f-79e182d719de", "pageName": "ReportSection1" }
+---------
+```
 
 ## Working with groups
 
@@ -315,6 +360,7 @@ https://app.powerbi.com/dashboardEmbed?dashboardId={dashboardId}&groupId={groupI
 ## See also
 
 [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/embed-a-dashboard-into-an-app)  
+[Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app)  
 [App permissions](powerbi-developer-power-bi-permissions.md)  
+[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
