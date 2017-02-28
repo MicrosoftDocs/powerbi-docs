@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="2/28/2017"
+   ms.date="02/28/2017"
    ms.author="asaxton"/>
 
 # Step 5: Add rows to a Power BI table
