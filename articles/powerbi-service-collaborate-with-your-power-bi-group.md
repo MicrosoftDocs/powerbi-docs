@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2017"
+   ms.date="02/28/2017"
    ms.author="ajayan"/>
 # Collaborate in Office 365 with your Power BI group workspace
 
-Power BI group workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets. That's what groups are designed for -- collaboration. If you just want to distribute a finished dashboard with colleagues, then you're better off sharing it with them, or creating an organizational content pack. Read [How should I share dashboards, reports, and tiles](powerbi-service-how-should-i-share-my-dashboard.md) first, if you haven't done so yet. 
+Power BI group workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets. That's what groups are designed for -- collaboration. If you just want to distribute a finished dashboard with colleagues, then you're better off *sharing* it with them, or creating an *organizational content pack*. Read [How should I share dashboards, reports, and tiles](powerbi-service-how-should-i-share-my-dashboard.md) first, if you haven't done so yet. 
 
 Collaboration doesn’t end with groups in Power BI. Office 365 offers other group services such as sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
@@ -29,7 +29,7 @@ Collaboration doesn’t end with groups in Power BI. Office 365 offers other gro
 
 ## Collaborate on Power BI Desktop files in your group
 
-After you create a Power BI Desktop file, you just publish it to your Power BI group, and then everyone in your group can collaborate on it.
+After you create a Power BI Desktop file, if you publish it to your Power BI group, then everyone in your group can collaborate on it.
 
 1. In Power BI Desktop, select **Publish** on the **Home** ribbon, then in the **Select a destination** box, select your group workspace.
 
@@ -38,6 +38,16 @@ After you create a Power BI Desktop file, you just publish it to your Power BI g
 2. In the Power BI service, select the double arrows next to My Workspace > select your group workspace.
 
     ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-go-to-group.png)
+
+3. Select the Reports tab and find your report.
+
+    Notice that the owner is the name of the group, not your name.
+
+    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-group-pbix-report.png)
+
+4. Select your report. 
+
+    From here, it's like any other report. You and others in your group can [modify the report](powerbi-service-reports.md) and save tiles to a dashboard of your choosing.
 
 
 ## Collaborate in Office 365

@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="monitoring"
-   qualityDate="02/24/2017"/>
+   qualityDate="02/28/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/27/2017"
+   ms.date="02/28/2017"
    ms.author="ajayan"/>
 
 # How should I collaborate on & share dashboards and reports?  
@@ -52,7 +52,7 @@ Let's say you've finalized a dashboard in your own My Workspace or in a group wo
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-service-share.png)
 
-When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless row-level security (RLS) is applied. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. You can share with people outside your organization. They can view and interact with the dashboard too, but can't share it. More about [sharing a dashboard from the Power BI service](powerbi-service-share-unshare-dashboard.md).
+When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless row-level security (RLS) is applied to the underlying dataset. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. You can share with people outside your organization. They can view and interact with the dashboard too, but can't share it. More about [sharing a dashboard from the Power BI service](powerbi-service-share-unshare-dashboard.md).
 
 You can also [share a dashboard from any of the Power BI mobile apps](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md). 
 
@@ -79,7 +79,7 @@ You can also share a snapshot of a tile from the [Power BI app for Windows 10 de
 
 ## Publish to the web
 
-You can publish Power BI reports to the whole worldwide web by embedding interactive visualizations in blog posts, websites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports in your My Workspace that you can edit. If someone shares a report with you, you can't publish it to the web. More about [publishing to the web](powerbi-service-publish-to-web.md).
+You can publish Power BI reports to the whole Internet by embedding interactive visualizations in blog posts, websites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports in your My Workspace that you can edit. If someone shares a report with you, you can't publish it to the web. More about [publishing to the web](powerbi-service-publish-to-web.md).
 
 
 ## Print or save as PDF or other static file

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="02/28/2017"
    ms.author="maggies"/>
 
 # Annotate and share a tile, report, or visualization from the Power BI mobile app for iOS on the iPad

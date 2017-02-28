@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="02/28/2017"
    ms.author="ajayan"/>
 # Intro to organizational content packs in Power BI
 
@@ -74,7 +74,7 @@ The lifecycle looks something like this:
 
 ## Data security
 
-All group members have the same permissions to the data as the content pack creator. The one exception to this is SSAS on-premises tabular datasets. Because the reports and dashboards are connecting live to the on-premises SSAS model, the credentials of each individual group member are used to determine which data he or she can access.
+All group members have the same permissions to the data as the content pack creator. The one exception to this is SQL Server Analysis Services (SSAS) on-premises tabular datasets. Because the reports and dashboards are connecting live to the on-premises SSAS model, the credentials of each individual group member are used to determine the data he or she can access.
 
 ## See also
 
