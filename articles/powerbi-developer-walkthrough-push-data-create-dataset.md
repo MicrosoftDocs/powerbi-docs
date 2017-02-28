@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create a dataset"
-   description="Walkthrough - Push data into a dashboard - Create a dataset in a Power BI dashboard"
+   description="Walkthrough - Push data into a dataset - Create a dataset in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,34 +17,34 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="02/28/2017"
    ms.author="asaxton"/>
 
-# Step 3: Create a dataset in a Power BI dashboard
+# Step 3: Create a dataset in Power BI
 
-This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
 
-In **step 2** of Push data into a dashboard, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
+In **step 2** of Push data into a dataset, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), you got a token to authenticate to **Azure AD**. In this step, you use the token to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation.
 
-To make a call to a REST resource, you use a url that locates the resource, and you send a JavaScript Object Notation (JSON) string, which describes the dataset, to the Power BI service resource. A REST resource identifies the part of the Power BI service you want to work with. To push data into the dashboard, the target resource is a **Dashboard Dataset**. The URL that identifies a dataset is https://api.PowerBI.com/v1.0/myorg/datasets. If you are pushing data within a group, the url is https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
+To make a call to a REST resource, you use a url that locates the resource, and you send a JavaScript Object Notation (JSON) string, which describes the dataset, to the Power BI service resource. A REST resource identifies the part of the Power BI service you want to work with. To push data into the dataset, the target resource is a **Dataset**. The URL that identifies a dataset is https://api.PowerBI.com/v1.0/myorg/datasets. If you are pushing data within a group, the url is https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 
 To authenticate a Power BI REST operation, you add the token you got in [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md) to a request header:
 
-When you call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation, a new dataset is created in your dashboard.
+When you call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation, a new dataset is created. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
 
 ![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-create-dataset.png)
 
-Here's how to create a dataset in a Power BI dashboard.
+Here's how to create a dataset in Power BI.
 
-## Create a dataset in a Power BI dashboard
+## Create a dataset in Power BI
 
->**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough.
+> [AZURE.NOTE] Before you get started, make sure you have followed the previous steps in the [push data into a dataset](powerbi-developer-walkthrough-push-data.md) walkthrough.
 
 1. In the Console Application project you created in [Step 2 - Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), add **using System.Net;**, and **using System.IO;** to Program.cs.
 2. In Program.cs, add the code below.
-3. Run the Console App, and login to your Power BI account. You should see **Dataset Created** in the Console Window. Also, you can login to your dashboard to see the new dataset.
+3. Run the Console App, and login to your Power BI account. You should see **Dataset Created** in the Console Window. Also, you can login to Power BI to see the new dataset.
 
-**Sample push data into a dashboard**
+**Sample push data into a dataset**
 
 Add this code into Program.cs.
 
@@ -56,7 +56,7 @@ Add this code into Program.cs.
         //Get an authentication access token
         token = GetToken();
 
-        //Create a dataset in a Power BI dashboard
+        //Create a dataset in Power BI
         CreateDataset();
     }
     ```
@@ -64,12 +64,10 @@ Add this code into Program.cs.
 - Add a CreateDataset() method:
 
     ```
-    #region Create a dataset in a Power BI dashboard
+    #region Create a dataset in Power BI
     private static void CreateDataset()
     {
         //TODO: Add using System.Net and using System.IO
-
-        //Push data into a Power BI dashboard
 
         string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
         //POST web request to create a dataset.
@@ -116,16 +114,6 @@ The next step shows you how to [get a dataset to add rows into a Power BI table]
 
 Below is the [complete code listing](#code).
 
-[Next Step >](powerbi-developer-walkthrough-push-data-get-datasets.md)
-
-## See also
-- [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)
-- [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
-- [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
-
 <a name="code"/>
 ## Complete code listing
 
@@ -146,7 +134,7 @@ Below is the [complete code listing](#code).
                 //Get an authentication access token
                 token = GetToken();
 
-                //Create a dataset in a Power BI dashboard
+                //Create a dataset in Power BI
                 CreateDataset();
 
             }
@@ -191,12 +179,10 @@ Below is the [complete code listing](#code).
             #endregion
 
 
-            #region Create a dataset in a Power BI dashboard
+            #region Create a dataset in Power BI
             private static void CreateDataset()
             {
                 //TODO: Add using System.Net and using System.IO
-
-                //Push data into a Power BI dashboard
 
                 string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
                 //POST web request to create a dataset.
@@ -240,4 +226,16 @@ Below is the [complete code listing](#code).
         }
     }
 
+
+[Next Step >](powerbi-developer-walkthrough-push-data-get-datasets.md)
+
+## See also
+
+[Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)  
+[Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
+[Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
+[Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)  
+[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

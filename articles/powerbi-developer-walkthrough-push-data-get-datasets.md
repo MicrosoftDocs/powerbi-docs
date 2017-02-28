@@ -17,22 +17,22 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="02/28/2017"
    ms.author="asaxton"/>
 
 # Step 4: Get a dataset to add rows into a Power BI table
 
-This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
 
-In **step 3** of Push data into a dashboard, [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md), you called the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset in a dashboard. In this step, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset.
+In **step 3** of Push data into a dataset, [Create a dataset in Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md), you called the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset in Power BI. In this step, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
 
-To push data into a Power BI dashboard, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a **Dataset ID**. You get a **Dataset ID** using the [Get Dataset](https://msdn.microsoft.com/library/mt203567.aspx) operation. The **Get Dataset** operation returns a JSON string containing a list of all datasets in a Power BI dashboard. The recommended way to deserialize a JSON string is with [Newtonsoft.Json](http://www.newtonsoft.com/json).
+To push data into a Power BI dataset, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a **Dataset ID**. You get a **Dataset ID** using the [Get Dataset](https://msdn.microsoft.com/library/mt203567.aspx) operation. The **Get Dataset** operation returns a JSON string containing a list of all datasets in Power BI. The recommended way to deserialize a JSON string is with [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
 Here's how you get a dataset.
 
 ## Get a Power BI dataset
 
->**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough.
+>**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](powerbi-developer-walkthrough-push-data.md) walkthrough.
 
 1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
 
@@ -59,7 +59,7 @@ Add this code into Program.cs.
     //Get an authentication access token
     token = GetToken();
 
-    //Create a dataset in a Power BI dashboard
+    //Create a dataset in Power BI
     CreateDataset();
 
     //Get a dataset to add rows into a Power BI table
@@ -115,16 +115,6 @@ The next step shows you how to [add rows to a Power BI table](powerbi-developer-
 
 Below is the [complete code listing](#code).
 
-[Next Step >](powerbi-developer-walkthrough-push-data-add-rows.md)
-
-## See also
-- [Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)
-- [Newtonsoft.Json](http://www.newtonsoft.com/json)
-- [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
-
 <a name="code"/>
 ## Complete code listing
 
@@ -146,7 +136,7 @@ Below is the [complete code listing](#code).
                 //Get an authentication access token
                 token = GetToken();
 
-                //Create a dataset in a Power BI dashboard
+                //Create a dataset in Power BI
                 CreateDataset();
 
                 //Get a dataset to add rows into a Power BI table
@@ -193,12 +183,10 @@ Below is the [complete code listing](#code).
 
             #endregion
 
-            #region Create a dataset in a Power BI dashboard
+            #region Create a dataset in Power BI
             private static void CreateDataset()
             {
                 //TODO: Add using System.Net and using System.IO
-
-                //Push data into a Power BI dashboard
 
                 string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
                 //POST web request to create a dataset.
@@ -282,4 +270,15 @@ Below is the [complete code listing](#code).
         }
     }
 
+[Next Step >](powerbi-developer-walkthrough-push-data-add-rows.md)
+
+## See also
+
+[Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)  
+[Newtonsoft.Json](http://www.newtonsoft.com/json)  
+[Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  
+[Push data into Power BI](powerbi-developer-walkthrough-push-data.md)  
+[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
