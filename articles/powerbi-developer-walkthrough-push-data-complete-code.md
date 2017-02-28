@@ -17,17 +17,17 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="02/28/2017"
    ms.author="asaxton"/>
 
 
-# Push data to a dashboard complete code listing
+# Push data to a dataset complete code listing
 
-This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
 
-After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete source code should look like the following.
+After you follow Steps 2 to 5 in **Push data into a dataset**, your complete source code should look like the following.
 
-## Push data to dashboard code
+## Push data to dataset code
 
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -47,7 +47,7 @@ After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete s
                   //Get an authentication access token
                   token = GetToken();
 
-                  //Create a dataset in a Power BI dashboard
+                  //Create a dataset in Power BI
                   CreateDataset();
 
                   //Get a dataset to add rows into a Power BI table
@@ -97,12 +97,10 @@ After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete s
 
               #endregion
 
-              #region Create a dataset in a Power BI dashboard
+              #region Create a dataset in Power BI
               private static void CreateDataset()
               {
                   //TODO: Add using System.Net and using System.IO
-
-                  //Push data into a Power BI dashboard
 
                   string powerBIDatasetsApiUrl = "https://api.powerbi.com/v1.0/myorg/datasets";
                   //POST web request to create a dataset.
@@ -231,13 +229,14 @@ After you follow Steps 2 to 5 in **Push data into a dashboard**, your complete s
 
 ## See also
 
-[Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Walkthrough - Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)  
+[Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md)  
+[Walkthrough - Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md)  
 [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
 [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
-[Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)  
+[Create a dataset in Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md)  
 [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)  
 [Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
