@@ -18,18 +18,23 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="02/27/2017"
    ms.author="ajayan"/>
 
 # Share a dashboard and reports with colleagues and others
 
-You can share your dashboards and reports with colleagues in and out of your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
+*Sharing* is one way to give other people access to your dashboards and reports. Sharing has a specific meaning in Power BI. Power BI offers other ways to collaborate and distribute your dashboards. See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to compare them. 
+
+![](media/powerbi-service-share-unshare-dashboard/power-bi-service-share.png)
+
+You can share a dashboard from your own My Workspace, or from a group workspace. When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless row-level security (RLS) is applied. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. You can share with people outside your organization. They can view and interact with the dashboard too, but can't share it. 
 
 What you can share and who you can share it with depends on your and their Power BI licenses. See [Licensing requirements for sharing](powerbi-service-share-unshare-dashboard.md#licensing-requirements-for-sharing) below for details.
 
-Dashboards and reports that are shared with you are read-only.  You can't save-as to personalize them. On the other hand, you can make your own copy of dashboards and reports in [organizational content packs](powerbi-service-organizational-content-packs-introduction.md).  See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to decide which is best for your situation.
+>**Note**: You can also [share a dashboard from any of the Power BI mobile apps](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md). You share dashboards and reports from the Power BI service or the Power BI mobile apps, but not from Power BI Desktop.
 
->**Note**: You share dashboards and reports from the Power BI service or the Power BI mobile apps, but not from Power BI Desktop.
+## Share a dashboard with colleagues outside a group workspace 
+If you're part of a group workspace in Power BI, you can share the group's dashboards with colleagues outside the group. It's the same as [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).You can share your dashboards and reports with colleagues in and out of your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
 
 Watch Amanda share her dashboard with colleagues inside and outside her company. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -67,9 +72,11 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 ## Notes about sharing a dashboard
 
-You and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard. When you share a dashboard:
+Here are some things to keep in mind about sharing dashboards:
 
 -   If your colleagues haven't signed up for Power BI yet, they need to do so to see your dashboard.
+
+-   In general, you and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard. However, if row-level security (RLS) is applied to a dashboard, 
 
 -   Everyone you share it with can see your dashboard and interact with your reports in [Reading View](powerbi-service-open-a-report-in-reading-view.md). They can't create new reports or save changes to existing reports.
 
