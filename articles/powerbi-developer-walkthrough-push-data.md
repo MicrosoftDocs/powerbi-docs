@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Push data into a dashboard"
-   description="Push data into a Power BI dashboard"
+   pageTitle="Push data into a dataset"
+   description="Push data into a Power BI dataset"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,22 +17,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="02/28/2017"
    ms.author="asaxton"/>
 
-# Push data into a Power BI dashboard
+# Push data into a Power BI dataset
 
-With the Power BI API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table into a dashboard.
+With the Power BI API, you can push data into a Power BI dataset. For example, you want to extend an existing business workflow to push key data into your dataset. In this case, you want to push a Sales Marketing dataset which has a Product table into a dataset.
 
-Before you get started pushing data into a dashboard, you need an Azure Active Directory (Azure AD) and a [Power BI account](powerbi-admin-free-with-custom-azure-directory.md).
+Before you get started pushing data into a dataset, you need an Azure Active Directory (Azure AD) and a [Power BI account](powerbi-admin-free-with-custom-azure-directory.md).
 
-To learn how to push a dataset into a dashboard, follow these steps. In the example, you push a Sales Marketing dataset with a Product table into a dashboard.
-
-## Steps to push a dataset into a dashboard
+## Steps to push data into a dataset
 
 - Step 1: [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
 - Step 2: [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
-- Step 3: [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)
+- Step 3: [Create a dataset in Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md)
 - Step 4: [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)
 - Step 5: [Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)
 
@@ -40,9 +38,9 @@ The next section is a general discussion of Power BI API operations that push da
 
 ## Power BI API operations to push data
 
-With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation along with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation. To find a dataset, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation. For any of these operations, you can pass a group id to work with a group. Use the [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) operation to get a list of group id's.
+With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation along with the [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx) operation. To find a dataset, you use the [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) operation. For any of these operations, you can pass a group id to work with a group. Use the [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) operation to get a list of group id's. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
 
-Here are the operations to push data into a dashboard:
+Here are the operations to push data into a dataset:
 
 - [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
 - [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
@@ -119,7 +117,7 @@ For a Power BI table schema, you can use the following data types.
 
 ## Learn more about pushing data into Power BI
 
-To get started pushing data into a dashboard, see [Step 1: Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
+To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
 
 [Next Step >](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
 
@@ -132,4 +130,5 @@ To get started pushing data into a dashboard, see [Step 1: Register an app with 
 [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introducing JSON](http://json.org/)  
 [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

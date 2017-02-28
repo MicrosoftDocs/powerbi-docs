@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/20/2017"
+   ms.date="02/28/2017"
    ms.author="asaxton"/>
 
 # What can developers do with Power BI?
@@ -51,7 +51,7 @@ In the Apiary interactive API console, you can try all Power BI REST API operati
 
 ## See also
 
-[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)  
+[Push data into a dataset](powerbi-developer-walkthrough-push-data.md)  
 [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)  
 [Integrate a tile into an app](powerbi-developer-integrate-tile.md)  
 [Integrate a report into an app](powerbi-developer-integrate-report.md)  

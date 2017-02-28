@@ -1,6 +1,6 @@
 <properties
    pageTitle="Register an app with Azure AD"
-   description="Walkthrough - Push data into a dashboard - Register an app with Azure AD"
+   description="Walkthrough - Push data into a dataset - Register an app with Azure AD"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,14 +17,14 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="02/28/2017"
    ms.author="asaxton"/>
 
 # Step 1: Register an app with Azure AD
 
-This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
 
-The first step to push data into a Power BI dashboard is to register your app in Azure AD. You need to do this first so that you have a **Client ID** that identifies your app in Azure AD. Without a **Client ID**, Azure AD cannot authenticate your app.
+The first step to push data into a Power BI dataset is to register your app in Azure AD. You need to do this first so that you have a **Client ID** that identifies your app in Azure AD. Without a **Client ID**, Azure AD cannot authenticate your app.
 
 >**NOTE**: Before you register an app for Power BI, you need to [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md).
 
@@ -52,7 +52,7 @@ The next step shows you how to [get an authentication access token](powerbi-deve
 
 [Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
 [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
-[Walkthrough: Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)  
+[Walkthrough: Push data into a dataset](powerbi-developer-walkthrough-push-data.md)  
 [Register a client app](powerbi-developer-register-a-client-app.md)  
 [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

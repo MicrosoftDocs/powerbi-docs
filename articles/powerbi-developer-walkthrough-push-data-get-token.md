@@ -17,20 +17,20 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="02/28/2017"
    ms.author="asaxton"/>
 
 # Step 2: Get an authentication access token
 
-This article is part of a step-by-step walkthrough to [push data into a dashboard](powerbi-developer-walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](powerbi-developer-walkthrough-push-data.md).
 
-In **step 1** of Push data into a dashboard, [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
+In **step 1** of Push data into a dataset, [Register the app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
 
 Here's how to get an authentication access token.
 
 ## Get an authentication access token
 
->**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dashboard](powerbi-developer-walkthrough-push-data.md) walkthrough.
+>**NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](powerbi-developer-walkthrough-push-data.md) walkthrough.
 
 1. In Visual Studio 2015, create a **Console Application** project.
 2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
@@ -113,19 +113,9 @@ Add this code to Program {...}.
 
 After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) operation to create a dataset to push data into a dashboard.
 
-The next step shows you how to [create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md).
+The next step shows you how to [create a dataset in Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md).
 
 Below is the [complete code listing](#code).
-
-[Next Step >](powerbi-developer-walkthrough-push-data-create-dataset.md)
-
-## See also
-- [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)
-- [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
-- [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
 ## Complete code listing
@@ -189,4 +179,15 @@ Below is the [complete code listing](#code).
         }
     }
 
+
+[Next Step >](powerbi-developer-walkthrough-push-data-create-dataset.md)
+
+## See also
+
+[Create a dataset in Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md)  
+[Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
+[Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
+[Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md)  
+[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
+[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
