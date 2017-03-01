@@ -41,7 +41,7 @@ Once you create your graph, map, or chart, you can begin dragging data fields on
 
 ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_3.png)
 
-You can resize your visualization by selecting it and then dragging the handles in or out. You can also move your visualization anywhere on the canvas by clicking and dragging it. If you want to convert between different types of visualizations, select the visual you want to change and simply select a different visual from the icons in the **Visualization** pane. Power BI attempts to convert your selected fields to the new visual type as closely as possible.
+You can resize your visualization by selecting it and then dragging the handles in or out. You can also move your visualization anywhere on the canvas by clicking and then dragging it. If you want to convert between different types of visualizations, select the visual you want to change and simply select a different visual from the icons in the **Visualization** pane. Power BI attempts to convert your selected fields to the new visual type as closely as possible.
 
 As you hover over parts of your visualizations, you'll get a tooltip that contains details about that segment, such as labels and total value.
 

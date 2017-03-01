@@ -27,7 +27,7 @@
 
 In previous topics we've looked at how you can use Power BI to connect to data sources, and how to manually refresh your datasets on the Power BI service. However, you're not going to want to manually refresh things every time your data changes, so you can use Power BI to set up a scheduled refresh that will connect to your data sources and publish them into the Power BI Service automatically. This also gives you a way to connect the service with any on-premises data sources, including Excel files, Access databases, SQL databases, and more.
 
-The system that lets you connect your on-premises data sources to the Power BI service is called the **Data Gateway**. It's a small application that runs on your computer, and uses a prearranged schedule to connect to your data, gather any updates, and push them up to the Power BI service. The **Personal Gateway** is a version of the **Data Gateway** that can be used without any administrator configuration.
+The system that lets you connect your on-premises data sources to the Power BI service is called the **Data Gateway**. It's a small application that runs on your computer, and uses a pre-arranged schedule to connect to your data, gather any updates, and push them up to the Power BI service. The **Personal Gateway** is a version of the **Data Gateway** that can be used without any administrator configuration.
 
 > Note: The computer  that is running the Power BI Personal Gateway *must* be on and connected to the Internet for **Personal Gateway** to work properly.
 
