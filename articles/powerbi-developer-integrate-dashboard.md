@@ -26,6 +26,8 @@ Learn how to integrate, or embed, a dashboard into a web app using C# and the **
 
 ![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/XSAHwE21Buk?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
 To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, see [Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md).
 
 To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard into a **div** element using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
