@@ -33,14 +33,15 @@ What you can share and who you can share it with depends on your and their Power
 
 >**Note**: You can also [share a dashboard from any of the Power BI mobile apps](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md). You share dashboards and reports from the Power BI service or the Power BI mobile apps, but not from Power BI Desktop.
 
-## Share a dashboard with colleagues outside a group workspace 
+### Share a dashboard with colleagues outside a group workspace 
 If you're part of a group workspace in Power BI, you can share the group's dashboards with colleagues outside the group. It's the same as [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).You can share your dashboards and reports with colleagues in and out of your organization. If they haven't signed up for [Power BI](http://powerbi.com), they'll need to do so to see your dashboard.
 
+## Video: Share a dashboard
 Watch Amanda share her dashboard with colleagues inside and outside her company. Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-## Share a dashboard
+## Step by step: Share a dashboard
 
 1.   Open the dashboard and select **Share** ![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png).
 
@@ -127,7 +128,7 @@ What if you want to share a filtered version of a report? Maybe a report that on
 
 2.  Add the following to the end of the report page URL:
 
-    ?filter=<tablename>/<fieldname> eq <value>
+    ?filter='<tablename>'/'<fieldname>' eq '<value>'
 
     In our example, the name of the table is **Store**, the name of the field is **Territory**, and the value we want to filter on is **NC**:
 
