@@ -23,7 +23,7 @@
 
 # Share a dashboard and reports with colleagues and others
 
-*Sharing* is one way to give other people access to your dashboards and reports. Sharing has a specific meaning in Power BI. Power BI offers other ways to collaborate and distribute your dashboards. See [How should I share my dashboard](powerbi-service-how-should-i-share-my-dashboard.md)? to compare them. 
+*Sharing* is one way to give other people access to your dashboards and reports. Sharing has a specific meaning in Power BI. Power BI offers other ways to collaborate and distribute your dashboards. See [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to compare them. 
 
 ![](media/powerbi-service-share-unshare-dashboard/power-bi-service-share.png)
 
@@ -192,7 +192,7 @@ Only the dashboard owner can turn resharing on and off.
 
 ## See also
 
-- [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md)
+- [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md)
 - [Share a dashboard that links to an Excel file](powerbi-service-share-dashboard-that-links-to-excel.md)
 - [Get Started with Power BI](powerbi-service-get-started.md)
 - More questions? [Try the Power BI Community](http://community.powerbi.com/).

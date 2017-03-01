@@ -86,7 +86,7 @@ Now you have a group where you can store files, and everyone in the group can wo
 
 Groups in Power BI are a place for you and your colleagues to collaborate, communicate, and connect with your data across Office 365. 
 
-Groups and [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) complement each other. If you just want to share a finished dashboard with colleagues, don't add those colleagues to the group. Instead, [share the dashboard](powerbi-service-share-unshare-dashboard.md) with them, or [create an organizational content pack](powerbi-service-organizational-content-packs-introduction.md) and publish it. See [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) for more about other ways to share.  
+Groups and [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) complement each other. If you just want to share a finished dashboard with colleagues, don't add those colleagues to the group. Instead, [share the dashboard](powerbi-service-share-unshare-dashboard.md) with them, or [create an organizational content pack](powerbi-service-organizational-content-packs-introduction.md) and publish it. See [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) for more about other ways to share.  
 
 Collaboration doesn’t end with Power BI. Office 365 offers other group services, like sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. [Collaborate in Office 365 with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md).
 
@@ -94,6 +94,6 @@ Collaboration doesn’t end with Power BI. Office 365 offers other group service
 - [Connect to files on your group's OneDrive for Business](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md)  
 - [Collaborate in Office 365 with your Power BI group](powerbi-service-collaborate-with-your-power-bi-group.md)  
 - [Manage your group](powerbi-service-manage-your-group-in-power-bi-and-office-365.md) 
-- [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) 
+- [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) 
 - More questions? [Try the Power BI Community](http://community.powerbi.com/)
  

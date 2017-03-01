@@ -28,13 +28,13 @@ In this article, we'll talk about collaborating and sharing in Power BI as a pro
 
 *Group workspaces in the Power BI service*
 
-When the reports and dashboards are ready, if you want other people to access them you have options for how to do that. 
+When the reports and dashboards are ready, if you want other people to access them you have options for how to do that. For example:
 
 - You can *share* them, either from the Power BI service or from one of the Power BI mobile apps. 
 - You can bundle them into an *organizational content pack* and publish them to a large group or to your whole organization. 
 - You can even publish them to the web, where anyone can interact with them. 
 
-This article compares and contrasts these different activities.
+This article compares these and other activities.
 
 > [AZURE.NOTE] In most cases, the people you collaborate and share with need [Power BI free or Pro](https://powerbi.microsoft.com/) licenses before they can see your dashboards and reports. 
 
