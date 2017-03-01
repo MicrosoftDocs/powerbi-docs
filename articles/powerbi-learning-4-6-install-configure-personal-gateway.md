@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="UwSaTCke5MU"
+   featuredVideoId="xjcO5tNvjGs"
    featuredVideoThumb=""
    courseDuration="11m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2016"
+   ms.date="03/01/2017"
    ms.author="davidi"/>
 
 # Install and Configure a Personal Gateway
