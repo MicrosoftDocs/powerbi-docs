@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2016"
+   ms.date="03/01/2017"
    ms.author="davidi"/>
 
 # Use R-powered custom visuals in Power BI
