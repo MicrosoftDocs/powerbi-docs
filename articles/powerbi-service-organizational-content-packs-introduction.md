@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="02/28/2017"
    ms.author="ajayan"/>
 # Intro to organizational content packs in Power BI
 
 Do you regularly distribute reports by email to your team? Try this instead: Package up your dashboards, reports, Excel workbooks, and datasets and publish them to your team as an *organizational content pack*. Content packs you create are easy for your team to find &#151; they are all in the content pack library. Because they're part of Power BI, they leverage all the features of Power BI, including interactive data exploration, new visuals, Q&A, integration with other data sources, data refresh, and more.
 
-Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) to decide on the best option for your situation. 
+Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to decide on the best option for your situation. 
 
 In the Content Pack Library, you can browse or search for content packs published to the entire organization, to distribution or security groups, and to [Office 365 groups you belong to](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). If you aren't a member of a specific group, you won't see content packs shared with that group. All members of the group have the same read-only access to the content pack data, reports, workbooks, and dashboards (unless it's a SQL Server Analysis Services (SSAS) data source, in which case your privileges are inherited with the data source).
 
@@ -74,7 +74,7 @@ The lifecycle looks something like this:
 
 ## Data security
 
-All group members have the same permissions to the data as the content pack creator. The one exception to this is SSAS on-premises tabular datasets. Because the reports and dashboards are connecting live to the on-premises SSAS model, the credentials of each individual group member are used to determine which data he or she can access.
+All group members have the same permissions to the data as the content pack creator. The one exception to this is SQL Server Analysis Services (SSAS) on-premises tabular datasets. Because the reports and dashboards are connecting live to the on-premises SSAS model, the credentials of each individual group member are used to determine the data he or she can access.
 
 ## See also
 

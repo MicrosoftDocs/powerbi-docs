@@ -23,7 +23,7 @@
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](powerbi-service-organizational-content-packs-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
 
-Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I share my dashboard?](powerbi-service-how-should-i-share-my-dashboard.md) to decide on the best option for your situation.
+Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to decide on the best option for your situation.
 
 Only the content pack creator can do some organizational content pack tasks:
 

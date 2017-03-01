@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="02/24/2017"
    ms.author="maggies"/>
 # Share a dashboard from the Power BI mobile apps
 
@@ -30,7 +30,10 @@ Applies to:
 
 Invite colleagues to view your dashboards by sharing links from the iPhone app for Power BI. You can only share dashboards with colleagues in the same email domain as you.
 
-> [AZURE.NOTE]  The people you share dashboards with need to [sign up for Power BI](https://powerbi.microsoft.com), too.
+> [AZURE.NOTE]  
+> 
+> - You can also [annotate and share tiles, reports, and visuals](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) from the iOS and Android mobile apps.
+> - The people you share dashboards with need to [sign up for Power BI](https://powerbi.microsoft.com), too.
 
 ## Share a dashboard from your iPhone
 
@@ -50,7 +53,7 @@ Invite colleagues to view your dashboards by sharing links from the iPhone app f
 
     Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in the iPhone or iPad app, it's added to their Power BI.
 
-    > [AZURE.NOTE]  Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
+    > [AZURE.NOTE]  Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md#notes-about-sharing-a-dashboard).
 
 
 ### Unshare a dashboard from your iPhone
@@ -176,5 +179,6 @@ Only the dashboard owner can unshare a dashboard.
 
 ## See also
 
+- [Annotate & share a tile, report, or visual in the mobile apps](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
 - [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
