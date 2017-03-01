@@ -128,7 +128,7 @@ What if you want to share a filtered version of a report? Maybe a report that on
 
 2.  Add the following to the end of the report page URL:
 
-    ?filter='<tablename>'/'<fieldname>' eq '<value>'
+    ?filter=*tablename*/*fieldname* eq *value*
 
     In our example, the name of the table is **Store**, the name of the field is **Territory**, and the value we want to filter on is **NC**:
 
