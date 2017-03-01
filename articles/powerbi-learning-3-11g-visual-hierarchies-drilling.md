@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="Fuhe0wo4gUI"
+   featuredVideoId="q8WDUAiTGeU"
    courseDuration="5m"/>
 
 <tags
@@ -19,7 +19,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2016"
+   ms.date="03/01/2017"
    ms.author="davidi"/>
 
 # Visual hierarchies and drill-down behavior

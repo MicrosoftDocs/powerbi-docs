@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="bk_TSwIzVnI"
+   featuredVideoId="EOASjs5mj6s"
    featuredVideoThumb=""
    courseDuration="5m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2016"
+   ms.date="03/01/2017"
    ms.author="davidi"/>
 
 # Use Quick Insights in the Power BI service
