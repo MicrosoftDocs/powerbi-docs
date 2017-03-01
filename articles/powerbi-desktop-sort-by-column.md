@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/17/2017"
+   ms.date="03/01/2017"
    ms.author="davidi"/>
 
 # Sort by column in Power BI Desktop  
@@ -65,6 +65,31 @@ Here's our same visual, this time after tapping the **Z/A** icon on the **Sort B
 You can sort by any column included in the visual - we could easily select Weather as the column by which we want to sort, and select **Z/A** from the **Sort By** menu, to show the states with the most sun first (highest value - Weather equates to days of sunshine in this data model), and still retain the other columns in the visual however they happen to apply to that state. Here's a look at the visual with those settings.
 
 ![](media/powerbi-desktop-sort-by-column/SortByColumn_6.png)
+
+## Sort using the Sort by Column button
+
+There's another way to sort your data, and that's by using the **Sort by Column** button in the **Modeling** ribbon.
+
+![](media/powerbi-desktop-sort-by-column/SortByColumn_8.png)
+
+This approach to sorting requires that you select a column from the **Fields** pane, and then select the **Sort by Column** button to choose how (by which column) you want to sort your visual. You have to select the column (field) you want to sort from the **Fields** pane in order to enable the **Sort by Column** button - otherwise the button is inactive. 
+
+Let's look at a common example: you have data from each day of the week, and you want to sort it based on chronological order. The following steps show you how.
+
+1.  First, notice that when the visual is selected but no column is selected in the **Fields** pane, the **Sort by Column** button is inactive (grayed out).
+
+    ![](media/powerbi-desktop-sort-by-column/SortByColumn_9a.png)
+
+2.  When we select the column by which we want to sort, in the **Fields** pane, the **Sort by Column** button becomes active.
+
+    ![](media/powerbi-desktop-sort-by-column/SortByColumn_10.png)
+
+3.  Now, with the visual selected, we can select *Day of Week*, instead of the default (*Name of Day*), and the visual now sorts in the order we want: by the day of the week.
+
+    ![](media/powerbi-desktop-sort-by-column/SortByColumn_11.png)
+
+And that's it. Remember that you must select a column in the **Fields** pane for the **Sort by Column** button to become active.
+
 
 ## Getting back to default column for sorting
 

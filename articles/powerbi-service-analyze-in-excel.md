@@ -3,7 +3,7 @@
    description="Learn about how to analyze Power BI datasets in Excel"
    services="powerbi"
    documentationCenter=""
-   authors="davidiseminger"
+   authors="mihart"
    manager="mblythe"
    backup=""
    editor=""
