@@ -82,7 +82,7 @@ Some actions are only possible in focus mode, due to screen size constraints:
 
 If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You add drill-down to a visual either in the Power BI service or in Power BI Desktop. Read more about [adding drill-down](powerbi-service-drill-down-in-a-visualization.md).
 
-1. In a report, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
+1. In a report on a phone, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
 
     ![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-focus-mode.png)
 
@@ -94,11 +94,11 @@ If hierarchy levels are defined in a visual, you can drill down into the detaile
 
 3. Tap **Show next level** or **Expand to next level**.
 
-    ![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-expanded-levels.png)
+    ![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-expand-levels.png)
 
     Now the bars show the values for cities.
 
-    ![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-expand-levels.png)
+    ![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-expanded-levels.png)
 
 4. If you tap the arrow in the upper-left corner, you return to the phone report with the values still expanded to the lower level.
 
