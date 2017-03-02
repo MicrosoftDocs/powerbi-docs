@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="7rrvpa6KUto"
+   featuredVideoId="zHUjz_0iZf0"
    featuredVideoThumb=""
    courseDuration="7m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/01/2016"
+   ms.date="03/01/2017"
    ms.author="davidi"/>
 
 # Create and format slicers
