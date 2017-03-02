@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="03/02/2017"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
@@ -101,6 +101,17 @@ Report readers can turn their phones sideways to see the page in landscape mode.
 ## Interact with optimized phone reports on a phone
 
 You can scroll in a phone report, cross-highlight and select visuals, and open visuals in focus mode. Read more about what it's like to [interact with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md).
+
+### Drill down in an optimized phone report
+
+If hierarchy levels are defined in a visual, when you view it in the Power BI service you can drill down into the detailed information displayed in the visual, then back up. 
+
+![](media/powerbi-desktop-create-phone-report/power-bi-drill-icon.png)
+
+In general, you can't drill down in visuals when you view them on a phone. Another advantage of creating a phone report is that drill-down works. You [add drill-down to a visual](powerbi-service-drill-down-in-a-visualization.md), then add that visual to the phone report layout. Now when you view that visual on a phone, you can drill down.
+
+![](media/powerbi-desktop-create-phone-report/power-bi-phone-report-expand-levels.png)
+
 
 ## How visuals scale in a phone report
 Power BI phone reports use a concept called “virtual pixels” to ensure an optimized experience across various devices, screen sizes, and form factors.  
