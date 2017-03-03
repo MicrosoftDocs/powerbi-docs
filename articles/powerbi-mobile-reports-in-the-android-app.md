@@ -46,7 +46,7 @@ Then you view and interact with those reports in the [Android app](powerbi-mobi
 
 ## View reports optimized for your phone 
 
-Some Power BI report authors create a report layout optimized for phones. If a report page has a phone layout, then when you to that page, it opens in portrait view.
+Some Power BI report authors create a report layout optimized for phones. If a report page has a phone layout, then when you go to that page, it opens in portrait view.
 
 ![](media/powerbi-mobile-reports-in-the-android-app/07-power-bi-phone-report-portrait.png)
 

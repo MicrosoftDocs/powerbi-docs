@@ -47,7 +47,7 @@ The report opens in landscape mode.
 
 ## View reports optimized for your phone 
 
-Some Power BI report authors create a report layout optimized for phones. If a report page has a phone layout, then when you to that page, it opens in portrait view.
+Some Power BI report authors create a report layout optimized for phones. If a report page has a phone layout, then when you go to that page, it opens in portrait view.
 
 ![](media/powerbi-mobile-reports-in-the-iphone-app/07-power-bi-phone-report-portrait.png)
 
