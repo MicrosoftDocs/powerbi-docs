@@ -3,8 +3,8 @@
    description="Create custom answer cards for Cortana in Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"  
-   manager="mblythe"
+   authors="yaron"  
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,24 +17,26 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/17/2017"
+   ms.date="03/06/2017"
    ms.author="mihart"/>
 
 
 # Use Power BI to create a custom Answer Page for Cortana
 
-Use the full capabilities of Power BI to create reports designed specifically to answer Cortana questions.
+Use the full capabilities of Power BI to create special report pages, called *answer cards*  designed specifically to answer Cortana questions.
+
+![](media/powerbi-service-cortana-desktop-entity-cards/power-bi-cortana.png)
 
 ## Before you begin
 
-Before you can begin creating custom Answer Pages for Cortana, [enable Cortana for Power BI](powerbi-service-cortana-enable.md).  
+Before you can begin using answer cards for Cortana, [enable Cortana for Power BI](powerbi-service-cortana-enable.md).  
 
-## Create an Answer Page for Cortana
-An *Answer Page* in a report is sized specifically for Cortana so that Cortana can show it as an answer to a question.  To create an Answer Page for Cortana:
+## Create an answer card designed specifically for Cortana
+An *answer card* in a report is sized specifically for Cortana so that Cortana can display it in-screen as an answer to a question.  To create an answer card for Cortana:
 
 1. We recommend starting with a [blank report page](powerbi-service-add-a-page-to-a-report.md).
 
-2. In the **Visualizations** pane, select the paint roller icon and choose **Page Size > Cortana**.
+2. In the **Visualizations** pane, select the paint roller icon and choose **Page Size > Type > Cortana**.
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size-new.png)
 
@@ -62,21 +64,21 @@ An *Answer Page* in a report is sized specifically for Cortana so that Cortana c
 
       - "show sales for Charlotte Lindseys," this Answer Page will display.
 
-    Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
+  Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
 
-    >[AZURE.IMPORTANT]  Before your Answer Page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
+    >[AZURE.IMPORTANT]  Before your answer card can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 ## How does Cortana order the results?
 
-Results with high scoring answers (such as a complete match of a specified page name) will appear first as a *best match* in Cortana. Multiple best matches can appear if there are multiple answers in Power BI. Medium or lower scoring answers, such as answers not based on a named page for Cortana or a question with words not understood by Power BI, are listed as links below best matches in Cortana.
+Results with high scoring answers (such as a complete match of a specified page name) will appear first as a *best match* in Cortana. Multiple best matches can appear if there are multiple answer cards in Power BI. Medium or lower scoring answers, such as answers not based on the name of an answer card or a question with words not understood by Power BI, are listed as links below best matches in Cortana.
 
->[AZURE.NOTE] When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+>[AZURE.NOTE] When a new dataset or custom answer card is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
 
 
 ## See also
 
 [Using Cortana with Power BI](powerbi-service-cortana-intro.md)
 
-[Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
+- Still can't get Cortana to work with Power BI?  Try the [Cortana troubleshooter](powerbi-service-cortana-troubleshoot.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

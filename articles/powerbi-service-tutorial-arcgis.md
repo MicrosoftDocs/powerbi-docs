@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="ArcGIS maps by ESRI in Power BI service(Tutorial)"
+   pageTitle="ArcGIS maps by ESRI in Power BI service(Take a tour)"
    description="Tutorial: ArcGIS in Power BI service"
    services="powerbi"
    documentationCenter=""
@@ -21,7 +21,7 @@
    ms.date="03/04/2017"
    ms.author="mihart"/>
 
-# Tutorial: ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
+# Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
 
 The combination of ArcGIS Maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
@@ -356,6 +356,6 @@ Not yet. [Vote for this idea](https://ideas.powerbi.com/forums/265200-power-bi-i
 
 ##  See also
 
-[Blog post announcing availability of ArcGIS maps for Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
+[Blog post announcing availability of ArcGIS maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
