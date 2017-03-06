@@ -16,11 +16,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="03/03/2017"
    ms.author="asaxton"/>
 # Power BI admin portal
 
-Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365. 
+Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
 
 ## How to get to the admin portal
 
@@ -30,7 +30,7 @@ To get to the Power BI admin portal, do the following.
 
 2. Select **Admin Portal**.
 
-> [AZURE.NOTE] Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
+> [AZURE.NOTE] Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
 
 ![](media/powerbi-admin-portal/powerbi-admin-settings.png)
 
@@ -130,6 +130,7 @@ This setting determines whether you can export data from a tile or visualization
 
 ## See also
 
+[Understanding the Power BI admin role](powerbi-admin-role.md)  
 [Auditing Power BI in your organization](powerbi-admin-auditing.md)  
 [Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
