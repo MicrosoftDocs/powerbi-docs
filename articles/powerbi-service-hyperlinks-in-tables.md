@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2017"
+   ms.date="03/05/2017"
    ms.author="mihart"/>
 # Hyperlinks in tables
 
@@ -49,7 +49,7 @@ The procedure for adding a hyperlink depends on whether you've imported the data
 
     ![](media/powerbi-service-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
 
-5.  If you don't want to display a long URL, you can display a hyperlink icon  ![](media/powerbi-service-hyperlinks-in-tables/power-bi-hyperlink-icon.png) instead.
+5.  If you don't want to display a long URL in a table, you can display a hyperlink icon  ![](media/powerbi-service-hyperlinks-in-tables/power-bi-hyperlink-icon.png) instead. Note that you can't display icons in matrixes.
 
   a.  Select the chart or matrix to make it active.
 
