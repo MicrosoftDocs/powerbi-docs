@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/02/2017"
+   ms.date="03/06/2017"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
@@ -108,7 +108,7 @@ If hierarchy levels are defined in a visual, when you view it in the Power BI se
 
 ![](media/powerbi-desktop-create-phone-report/power-bi-drill-icon.png)
 
-In general, you can't drill down in visuals when you view them on a phone, so another advantage of creating a phone report is that drill-down works. You [add drill-down to a visual](powerbi-service-drill-down-in-a-visualization.md), then add that visual to the phone report layout. Now when you view that visual on a phone, you can drill down.
+Drill-down also works in your visuals in phone reports. Drill-down doesn't work in regular Power BI reports when you view them on a phone. You [add drill-down to a visual](powerbi-service-drill-down-in-a-visualization.md) in Power BI Desktop or the Power BI service, then add that visual to the phone report layout. Now when you view that visual on a phone, you can drill down.
 
 ![](media/powerbi-desktop-create-phone-report/power-bi-phone-report-expand-levels.png)
 
