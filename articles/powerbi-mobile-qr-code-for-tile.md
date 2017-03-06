@@ -1,6 +1,6 @@
 <properties
    pageTitle="Scan a Power BI QR code from your mobile device"
-   description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
+   description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app for iPhones and Android devices."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/12/2017"
+   ms.date="03/6/2017"
    ms.author="maggies"/>
 
 # Scan a Power BI QR code from your mobile device
 
 Applies to:
 
-| ![iPhone](media/powerbi-mobile-qr-code-for-tile/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-qr-code-for-tile/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-qr-code-for-tile/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-qr-code-for-tile/android-tablet-logo-50-px.png) |
+| ![iPhone](media/powerbi-mobile-qr-code-for-tile/iphone-logo-50-px.png) | ![Android phone](media/powerbi-mobile-qr-code-for-tile/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-qr-code-for-tile/android-tablet-logo-50-px.png) |
 |:------------------------|:----------------------------|:----------------------------|:----------------------------------------|
-| iPhones | iPads | Android phones | Android tablets |
+| iPhones | Android phones | Android tablets |
 
 
 
@@ -38,7 +38,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
 > [AZURE.NOTE] If your colleague hasn't shared the dashboard or report with you, you can submit a request for access directly from the mobile app.
 
-## Scan a Power BI QR code on your iPhone or iPad with the Power BI scanner
+## Scan a Power BI QR code on your iPhone with the Power BI scanner
 
 1. In the Power BI mobile app open the global navigation menu ![](media/powerbi-mobile-qr-code-for-tile/power-bi-iphone-global-nav-button.png) in the upper left. 
 
@@ -58,11 +58,11 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
 6.Tap the report or the tile to open it in focus mode, or go back to the scanner.
 
-### Scan a QR code from an external scanner on your iPhone or iPad
+### Scan a QR code from an external scanner on your iPhone
 
 1. From any scanner installed on your phone, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 
 
-2. If you don’t have the Power BI app installed, you are redirected to the [Apple App Store to download it](http://go.microsoft.com/fwlink/?LinkId=522062) on your iPhone or iPad.
+2. If you don’t have the Power BI app installed, you are redirected to the [Apple App Store to download it](http://go.microsoft.com/fwlink/?LinkId=522062) on your iPhone.
 
 ## Scan a Power BI QR code on your Android device with the Power BI scanner
 
