@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/6/2017"
+   ms.date="03/06/2017"
    ms.author="maggies"/>
 
 # Scan a Power BI QR code from your mobile device
