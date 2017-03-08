@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="03/06/2017"
    ms.author="davidi"/>
 
 # Power BI and ExpressRoute
@@ -74,7 +74,7 @@ Once the login is established, subsequent Power BI data interactions occur over 
 |---|---|
 |Landing page (prior to login)| `maxcdn.bootstrapcdn.com ; ajax.aspnetcdn.com ; netdna.bootstrapcdn.com ; cdn.optimizely.com; google-analytics.com ` |
 |Login | `*.mktoresp.com ; *.aadcdn.microsoftonline-p.com ; *.msecnd.com ; *.localytics.com ; ajax.aspnetcdn.com`  |
-|Dashboard, report, dataset management (includes maps and geocoding)| `*.localytics.com ; *.virtualearch.net ; platform.bing.com; powerbi.microsoft.com; c.microsoft.com; app.powerbi.com; *.powerbi.com; dc.services.visualstudio.com `  |
+|Dashboard, report, dataset management (includes maps and geocoding)| `*.localytics.com ; *.virtualearth.net ; platform.bing.com; powerbi.microsoft.com; c.microsoft.com; app.powerbi.com; *.powerbi.com; dc.services.visualstudio.com `  |
 |Support| `support.powerbi.com ; powerbi.uservoice.com ; go.microsoft.com `|
 
 
