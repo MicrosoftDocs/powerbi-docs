@@ -31,7 +31,7 @@ Each of these samples is available in several formats: as a content pack, as an 
 
 But before we get started, please read through these legal guidelines for using the samples. When you're done we'll introduce the samples and show you how to use them.   
 
-# Usage guidelines for the Power BI sample Excel workbooks
+## Usage guidelines for the Power BI sample Excel workbooks
 Please read this information before using the Power BI samples.
 
 ©2015 Microsoft Corporation. All rights reserved. The documents and workbooks are provided "as-is." Information and views expressed in the workbooks, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. Microsoft makes no warranties, express or implied, with respect to the information provided here.
