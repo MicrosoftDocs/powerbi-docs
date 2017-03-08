@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2017"
+   ms.date="03/07/2017"
    ms.author="mihart"/>
 
 
@@ -61,11 +61,11 @@ You'll need to be running Windows 10 version 1511 or higher.
 
 1.  Determine which Windows 10 version you are running. Open **Windows Settings** > **System** > **About**.
 
-    - If you have Windows 10 version 1511 (Windows 10 November 2015 Update) up until 1607, add your work or school account and Microsoft account (complete steps 6 and 7 below).
+    - If you have Windows 10 version 1511 (Windows 10 November 2015 Update) up until 1607, add your work or school account and Microsoft account (complete steps 2 and 3 below).
 
-    - If you have Windows 10 version 1607 (Windows 10 July 2016 update) or later, add your work or school account (complete only step 6 below).
+    - If you have Windows 10 version 1607 (Windows 10 July 2016 update) or later, add your work or school account (complete only step 2 below).
 
-6.  Add your work or school account for Cortana.
+2.  Add your work or school account for Cortana.
 
     - Open **Windows Settings** > **Accounts**.
 
@@ -73,11 +73,11 @@ You'll need to be running Windows 10 version 1511 or higher.
 
     -   Scroll to the bottom and select **Add a work or school account**.
 
-        ![](media/powerbi-service-cortana-enable/power-bi-add-work-account.png)
+        ![](media/powerbi-service-cortana-enable/power-bi-add-work-account2.png)
 
-7.  On the **Accounts** page, scroll to the bottom where you'll see **Add a Microsoft account**
+3.  On the **Accounts** page, scroll to the bottom where you'll see **Add a Microsoft account**
 
-    ![](media/powerbi-service-cortana-enable/power-bi-add-microsoft-account.png)
+    ![](media/powerbi-service-cortana-enable/power-bi-add-microsoft-account2.png)
 
     Sign in with the account you use with Power BI.
 
