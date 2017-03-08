@@ -23,7 +23,7 @@
 #  What sample data is available to use with Power BI?
 Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you have a dataset, but because you don't understand (yet) how Power BI works, you worry that you might somehow damage your dataset?
 
-No need to stress out! obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft have created samples for you to use until you feel more comfortable with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. And as you read through our online documentation you'll discover tutorials and examples that use these same samples and that means that you'll be able to follow along.      
+No need to stress out! obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft have created samples for you to use until you feel more comfortable with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. And as you read through our online documentation you'll discover tutorials and examples that use these same samples which means that you'll be able to follow along.      
 
    ![](media/powerbi-sample-datasets/power-bi-samples.png)
 
@@ -105,7 +105,7 @@ Content packs are the only sample format that is available from within Power BI;
 
 2. In the bottom left corner select **Get data**.
 
-  ![](media/powerbi-sample-datasets/power-bi-get-data.png)
+    ![](media/powerbi-sample-datasets/power-bi-get-data.png)
 
 3.  On the Get Data page that appears, select the **Samples** icon.
 
@@ -113,18 +113,18 @@ Content packs are the only sample format that is available from within Power BI;
 
 4.  Select one of the samples to open a description of that sample. Then choose **Connect**.  
 
-  ![](media/powerbi-sample-datasets/power-bi-connect.png)
+    ![](media/powerbi-sample-datasets/power-bi-connect.png)
 
 5.  Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. Use the samples to take Power BI for a test run.  
 
-  ![](media/powerbi-sample-datasets/power-bi-asterisk.png)
+    ![](media/powerbi-sample-datasets/power-bi-asterisk.png)
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the sample content packs or just open Power BI service and explore.
 
 ### The Power BI samples as Excel files
 Each of the sample content packs is also available as an Excel workbook. The Excel workbooks are designed to be used with Power BI service.  
 
-1.  Download the files individually using the links below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020). Advanced users may want to download the Excel workbooks to explore or edit the data models.
+1.  Download the files individually using the links below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
 
   -   [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778)
 
@@ -180,7 +180,7 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
 8. When the **Your dataset is ready!** screen appears, select **View dataset** or **Get Quick Insights** or simply use your Power BI left navbar to locate and open the associated report or dashboard.  
 
-  ![](media/powerbi-sample-datasets/power-bi-ready.png)
+    ![](media/powerbi-sample-datasets/power-bi-ready.png)
 
 #### (Optional) Take a look at the Excel samples from inside Excel itself
 Want to understand how the data in an Excel workbook gets converted to Power BI datasets and reports? Opening the Excel samples ***in Excel*** and exploring the worksheets provides some of the answers.
