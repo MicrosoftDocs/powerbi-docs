@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="monitoring"
-   qualityDate="03/07/2017"/>
+   qualityDate="03/08/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -43,7 +43,7 @@ To familiarize yourself with this particular content pack and its scenario, you 
 
 3.  Name it **Retail analysis sample**.
 
-   ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-name-dashboard.png)
+    ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-name-dashboard.png)
 
 4.  Select **Get Data** at the bottom of the left navigation pane. If you don't see **Get Data**, expand the nav pane by selecting ![](media/powerbi-sample-tutorial-connect-to-the-samples/expand-nav.png).
 
@@ -53,7 +53,7 @@ To familiarize yourself with this particular content pack and its scenario, you 
 
     ![](media/powerbi-sample-tutorial-connect-to-the-samples/PBI_SamplesDownload.png)
 
-6.  Select the *Retail Analysis sample*, and choose **Connect**.   
+6.  Select the *Retail Analysis Sample*, and choose **Connect**.   
 
     ![](media/powerbi-sample-tutorial-connect-to-the-samples/PBI_RetailAnalysisSampleConnect.png)
 
@@ -64,7 +64,7 @@ With the sample content packs, when you select **Connect**, Power BI is actually
 
     ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
 
-2.  Open the **Reports** tab.  Here you'll see a new report named *Retail Analysis sample*.
+2.  Open the **Reports** tab.  Here you'll see a new report named *Retail Analysis Sample*.
 
     ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
 
@@ -95,13 +95,13 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
     ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
 
-      - One way of exploring the dataset is by creating your own visualizations and reports from scratch.  Select the chart icon ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
+        - One way of exploring the dataset is by creating your own visualizations and reports from scratch.  Select the chart icon ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
 
-      ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+        ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-      - Another way of exploring the dataset is to run [Quick Insights](powerbi-service-auto-insights.md). Select the ellipses (...) and choose **Get insights**. When the insights are ready, select **View insights**.
+        - Another way of exploring the dataset is to run [Quick Insights](powerbi-service-auto-insights.md). Select the ellipses (...) and choose **Get insights**. When the insights are ready, select **View insights**.
 
-      ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-insights.png)
+        ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
 ## See also
 

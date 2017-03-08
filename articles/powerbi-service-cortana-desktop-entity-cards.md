@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2017"
+   ms.date="03/08/2017"
    ms.author="mihart"/>
 
 
@@ -64,9 +64,9 @@ An *answer card* in a report is sized specifically for Cortana so that Cortana c
 
       - "show sales for Charlotte Lindseys," this Answer Page will display.
 
-  Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
+Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
 
-    >[AZURE.IMPORTANT]  Before your answer card can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
+>[AZURE.IMPORTANT]  Before your answer card can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 ## How does Cortana order the results?
 
@@ -79,6 +79,6 @@ Results with high scoring answers (such as a complete match of a specified page 
 
 [Using Cortana with Power BI](powerbi-service-cortana-intro.md)
 
-- Still can't get Cortana to work with Power BI?  Try the [Cortana troubleshooter](powerbi-service-cortana-troubleshoot.md).
+Still can't get Cortana to work with Power BI?  Try the [Cortana troubleshooter](powerbi-service-cortana-troubleshoot.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

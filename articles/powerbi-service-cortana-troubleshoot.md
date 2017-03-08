@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2017"
+   ms.date="03/08/2017"
    ms.author="mihart"/>
 
 
@@ -45,7 +45,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
 
 4.  Do you have any reports with Cortana **answer cards**? Answer cards are the only way Cortana can find answers in your Power BI data.  Learn how to create an answer card by reading [Create Cortana answer cards in Power BI service and Power BI Desktop](powerbi-service-cortana-desktop-entity-cards.md).
 
-5.  Is Cortana configured for English?  The current Cortana-Power BI integration only supports English. Open Cortana and select the cog icon to display Settings. Scroll down to **Cortana language** and ensure it's set to oen of the **English** options.
+5.  Is Cortana configured for English?  The current Cortana-Power BI integration only supports English. Open Cortana and select the cog icon to display Settings. Scroll down to **Cortana language** and ensure it's set to one of the English options.
 
     ![](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-language.png)
 

@@ -50,8 +50,7 @@ You'll need to sign in to Power BI service (not Power BI Desktop) and repeat the
 
     In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
 
-    >[AZURE.NOTE]  
-    > When a new dataset or Cortana answer card is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+    >[AZURE.NOTE]  When a new dataset or Cortana answer card is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
 
     >If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you will need to re-publish for your colleagues to also be able to use it with Cortana.
 

@@ -46,13 +46,13 @@ When you ask a question in Cortana, Power BI answers can range from simple numer
 
 2.  Type your question into the Cortana search bar. Cortana displays the available results. If there is a Power BI answer card that matches the question, it shows up under **Best Match** or **Power BI**.  And in this example the .pbix file (and backup) that I used to create the answer cards also display under **Documents**.
 
-  ![](media/powerbi-service-cortana-intro/power-bi-cortana-search.png)
+    ![](media/powerbi-service-cortana-intro/power-bi-cortana-search.png)
 
 3.  Otherwise, select the **Cortana stores** *answer card* to display it in the Cortana window.
 
-  ![](media/powerbi-service-cortana-intro/power-bi-cortana.png)   
+    ![](media/powerbi-service-cortana-intro/power-bi-cortana.png)   
 
-  Remember, an *answer card* is a special type of Power BI report page that was created by a dataset owner.  For more information, see [Create a Cortana answer card](powerbi-service-cortana-desktop-entity-cards.md).
+    Remember, an *answer card* is a special type of Power BI report page that was created by a dataset owner.  For more information, see [Create a Cortana answer card](powerbi-service-cortana-desktop-entity-cards.md).
 
 ##  Interact with the answer card without leaving Cortana
 
@@ -60,17 +60,17 @@ But that's not all. Interact with the visualizations on the answer card as you w
 
 -   For example, select an element on one visualization to cross-filter and highlight the other visualizations on the answer card.
 
-  ![](media/powerbi-service-cortana-intro/power-bi-cortana-cross-filter.png)
+    ![](media/powerbi-service-cortana-intro/power-bi-cortana-cross-filter.png)
 
 -   Or, use natural language to filter the results instead.  For example, ask **Cortana stores for Lindseys** and see the card filtered to only show data for the Lindseys chain.
 
-  ![](media/powerbi-service-cortana-intro/power-bi-cortana-filtered.png)
+    ![](media/powerbi-service-cortana-intro/power-bi-cortana-filtered.png)
 
 -    Continue exploring. Scroll to the bottom of the Cortana window and select **Open in Power BI**.
 
-  ![](media/powerbi-service-cortana-intro/power-bi-cortana-open.png)
+    ![](media/powerbi-service-cortana-intro/power-bi-cortana-open.png)
 
-  The entire report opens in Power BI service.
+    The entire report opens in Power BI service.
 
 ##  Create a Cortana card
 

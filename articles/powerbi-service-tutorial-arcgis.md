@@ -18,14 +18,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/04/2017"
+   ms.date="03/07/2017"
    ms.author="mihart"/>
 
 # Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
 
 The combination of ArcGIS Maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
->[AZURE:INFO] GIS stands for Global Information Services
+>[AZURE.INFO] GIS stands for Global Information Services
 
 The example below uses a dark gray canvas to show regional sales as a heatmap against a demographic layer of 2016 median disposable income. As you'll see as you read on, using  ArcGIS maps offer almost limitless enhanced mapping capability, demographic data, and even-more compelling map visualizations so you can tell your best story.
 
@@ -63,7 +63,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-use-arcgis.png)
 
-3. Open a report in Editing view and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
+3. Open a report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md) and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane2.png)
 
@@ -77,13 +77,13 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). To follow along, [download the Excel samples](power-bi-sample-downloads).  Then load the Retail Analysis sample into Desktop by selecting **File > Import > Excel workbook contents**.
 
-1. Select **File > Options and Settings > Options > Preview Features.
+1. Select **File > Options and Settings > Options > Preview Features**.
 
 2. Select the **ArcGIS Maps for Power BI** checkbox. You'll need to restart Power BI after you make the selection.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-preview-dialog2.png)
 
-3. Open a report in Editing view and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
+3. Open a report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md) and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane2.png)
 
@@ -100,28 +100,27 @@ Watch Will create a few different ArcGIS map visualizations and then use the ste
 
 1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and/or **Longitude** buckets. In this example we're using **Store > City**.
 
-    >[AZURE.NOTE] ArcGIS Maps for Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
+    >**NOTE**: ArcGIS Maps for Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane3new.png)
 
 2.  From the **Fields** pane, drag a measure to the **Size** or **Color** buckets to adjust how the data is shown. In this example we're using **Sales > Last Year Sales**.
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size2new.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size2new.png)
 
-<br/>
 
 ## Settings and formatting for AcrGIS maps
 To access **ArcGIS Maps for Power BI** formatting features:
 
 1.  Access additional features by selecting the ellipses in the top right corner of the visualization and choosing **Edit**,
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-edit.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-edit.png)
 
-   The available features display across the top of the visualization. Each feature, when selected, opens a task pane that provides detailed options.<br/>
+    The available features display across the top of the visualization. Each feature, when selected, opens a task pane that provides detailed options.<br/>
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-features.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-features.png)
 
-   >  [AZURE.NOTE]  For more information about the settings and features, see **Detailed documentation** below.
+    > **NOTE**:  For more information about the settings and features, see **Detailed documentation** below.
 
 3. To return to the report, select **Back to Report** from the top-left corner of your report canvas.
 
@@ -186,15 +185,15 @@ Call attention to points on your map by adding pins.
 
 2.  Type a location in the search box and select from the dropdown.
 
-  ![](media/powerbi-service-tutorial-arcgis/power-bi-pin-arcgis.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin-arcgis.png)
 
 3.  Power BI adds a pin to that location and you can change the color of the pin.
 
-  ![](media/powerbi-service-tutorial-arcgis/power-bi-pin-color.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin-color.png)
 
 4.  Add and delete pins.
 
-  ![](media/powerbi-service-tutorial-arcgis/power-bi-pin.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin.png)
 
 ### Reference Layer
 
@@ -246,9 +245,9 @@ Change the selection mode using switch:
 ## Getting help
 **Esri** provides [comprehensive documentation](https://go.microsoft.com/fwlink/?LinkID=828772) on the feature set of **ArcGIS Maps for Power BI**.
 
-You can ask questions and find answers on the Power BI [community thread related to **ArcGIS Maps for Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771) to find the latest information or to report issues.
+You can ask questions, find the latest information, report issues, and find answers on the Power BI [community thread related to **ArcGIS Maps for Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
 
-If you have a suggestion for an improvement, please submit them to [Power BI's ideas list](https://ideas.powerbi.com).
+If you have a suggestion for an improvement, please submit it to [Power BI's ideas list](https://ideas.powerbi.com).
 
 <br/>
 
