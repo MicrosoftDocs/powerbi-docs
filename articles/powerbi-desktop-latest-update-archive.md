@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,9 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="03/07/2017"
    ms.author="davidi"/>
+
 # Previous monthly updates to Power BI Desktop
 
 This article describes previous updates to **Power BI Desktop**. For the most current month's release, check out [**Power BI Desktop** latest updates](powerbi-desktop-latest-update.md).
@@ -26,6 +27,51 @@ This article describes previous updates to **Power BI Desktop**. For the most cu
 The following sections describe previous months' updates to **Power BI Desktop**.
 
 You can always [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
+
+## February 2017 Update (2.43.4647.541)
+
+The following updates are new to Power BI Desktop in February:
+
+### Report View:
+
+-   Word wrap on matrix row headers [[video]](https://youtu.be/mn75-LOPxMA?t=21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#wordWrap)
+-   X- and Y-axis font size control [[video]](https://youtu.be/mn75-LOPxMA?t=2m3s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#fontSize)
+-   Cartesian chart minimum category width [[video]](https://youtu.be/mn75-LOPxMA?t=4m) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#categoryWidth)
+-   Line chart line thickness and join type controls [[video]](https://youtu.be/mn75-LOPxMA?t=5m55s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#lineThickness)
+
+### Analytics:
+
+-   Two new Quick Calcs: Percent of row total, and percent of column total [[video]](https://youtu.be/mn75-LOPxMA?t=7m46s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#quickCalcs)
+
+### Data Connectivity:
+
+-   New or enhanced data connectors [[video]](https://youtu.be/mn75-LOPxMA?t=9m23s):
+    -   ODBC and OLE DB connectors - support for *Select related tables* [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#relatedTables)
+    -   Enhanced Folder connector - support for combining binaries from the Preview dialog [[video]](https://youtu.be/mn75-LOPxMA?t=10m1s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#folder)
+    -   Unified Text and CSV connectors [[video]](https://youtu.be/mn75-LOPxMA?t=11m9s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#textConnector)
+    -   **New** - PowerApps Common Data Service connector [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#cds)
+
+
+### Query Editing improvements
+
+-   Quickly change a column's data type and locale with the new *Using locale* option in the *Column headers type* menu [[video]](https://youtu.be/mn75-LOPxMA?t=11m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#columnType)
+-   Easily insert steps into existing queries, using the new *Insert Step After* option  [[video]](https://youtu.be/mn75-LOPxMA?t=12m36s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#stepsPane)
+
+### Other improvements
+
+-   Solutions Templates and Partner Showcase quick access  [[video]](https://youtu.be/mn75-LOPxMA?t=13m33s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#resources)
+
+
+>NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mn75-LOPxMA" frameborder="0" allowfullscreen></iframe>
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## January 2017 Update (2.42.4611.482)
 
@@ -161,8 +207,6 @@ The following video describes and shows each of these updates. You can also see 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UXEYSvgvMaQ" frameborder="0" allowfullscreen></iframe>
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
-
-
 
 
 ## September 2016 Update (2.39.4526.362)
