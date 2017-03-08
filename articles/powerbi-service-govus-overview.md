@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/01/2017"
+   ms.date="03/08/2017"
    ms.author="davidi"/>
 
 # Power BI for US Government customers
@@ -53,7 +53,6 @@ Some of the features that are available in the commercial version of the **Power
     -   You can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit or publish
 -   Email notification will not work when sharing dashboards – users with whom a dashboard is shared can still view the dashboard and get notification when they are logged in  
 -   ESRI Power BI integration isn't available in Power BI at this time
--   The **Publish to Web** feature is not available at this time
 
 If you have **Power BI** Free licenses assigned to your account, you may encounter the following issues:
 
