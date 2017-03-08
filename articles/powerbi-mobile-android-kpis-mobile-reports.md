@@ -1,6 +1,6 @@
 <properties 
    pageTitle="View SSRS mobile reports and KPIs in the Android app"
-   description="The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information."
+   description="The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information in SQL Server Reporting Services."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="03/08/2017"
    ms.author="maggies"/>
 
 # View SSRS mobile reports and KPIs in the Android app
@@ -28,7 +28,7 @@ Applies to:
 |:------------------------|:----------------------------|
 | Android phones | Android tablets |
 
-The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information on Android phones and tablets. 
+The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information on SQL Server Reporting Services servers. 
 
 ![](media/powerbi-mobile-android-kpis-mobile-reports/power-bi-android-tablet-ssrs-home.png)
 
