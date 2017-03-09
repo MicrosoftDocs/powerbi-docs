@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/13/2017"
+   ms.date="03/08/2017"
    ms.author="maggies"/>
 
 # Optimize your dashboard for phones
@@ -30,5 +30,5 @@
 
 ### Book some time on your calendar, or [start optimizing now](powerbi-service-create-dashboard-phone-view.md).
 
-> **Note**: You can only create a phone view for a dashboard if you're the dashboard owner.
+> [AZURE.NOTE]  Only dashboard owners can create a phone view for a dashboard. If you’re not the owner, let the owner know how they can make a great dashboard.
 
