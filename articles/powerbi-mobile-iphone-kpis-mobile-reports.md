@@ -1,6 +1,6 @@
 <properties 
    pageTitle="View SSRS mobile reports and KPIs in the iOS mobile apps"
-   description="The Power BI mobile app for iOS offers live, touch-enabled mobile access to your important on-premises business information."
+   description="The Power BI mobile app for iOS offers live, touch-enabled mobile access to your important on-premises business information in SQL Server Reporting Services."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,21 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2017"
+   ms.date="03/08/2017"
    ms.author="maggies"/>
 
 # View SSRS mobile reports and KPIs in the iOS mobile apps
 
-The Power BI mobile app for iPad and iPhone offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 
+The Power BI mobile app for iPad and iPhone offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services (SSRS). 
 
  ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_SSMRP_MobRpt.png)
 
 ## First things first
 
 -  You [create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx). You can even [create a special mobile report layout for phones](https://msdn.microsoft.com/library/mt703702.aspx). 
--   You can also create KPIs right in the web portal, and organize them all in folders and mark your favorites, so you can find them easily. 
+-   You can also create [KPIs right in the web portal](https://msdn.microsoft.com/library/mt683632.aspx), organize them all in folders, and mark your favorites so you can find them easily. 
 
-Then in the Power BI mobile app for iOS, view the mobile reports and KPIs, organized in folders or collected as favorites. 
+Then in the Power BI mobile app for iOS, connect to up to five SSRS report servers to view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
 >**Note**: Your iPhone needs to be at least an iPhone 5. Both iPhones and iPads need to be running at least iOS 9.0.
 
