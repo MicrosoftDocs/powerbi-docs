@@ -25,14 +25,14 @@
 
 The combination of ArcGIS Maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
->[AZURE.INFO] GIS stands for Global Information Services
+>**INFO**: GIS stands for Global Information Services
 
 The example below uses a dark gray canvas to show regional sales as a heatmap against a demographic layer of 2016 median disposable income. As you'll see as you read on, using  ArcGIS maps offer almost limitless enhanced mapping capability, demographic data, and even-more compelling map visualizations so you can tell your best story.
 
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-intro-arcgis.png)
 
-[AZURE.TIP] Visit [esri's page on Power BI](www.esri.com/powerbi) to see many examples and read testimonials. And then see Esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+**TIP**: Visit [esri's page on Power BI](www.esri.com/powerbi) to see many examples and read testimonials. And then see Esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
 
 
 ## User consent
@@ -181,6 +181,7 @@ Symbol styles enable you to fine tune how data is presented on the map. Symbol s
 
 ####  Pins
 Call attention to points on your map by adding pins.  
+
 1.  Select the **Pins** tab.
 
 2.  Type a location in the search box and select from the dropdown.
@@ -220,8 +221,7 @@ ArcGIS Online provides the ability for organizations to publish public web maps.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri2.png)
 
-3. To see the details, select a shaded area to open the
-_Select from reference layer_: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
+3. To see the details, select a shaded area to open the _Select from reference layer_: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
 
 <br/>
 
@@ -238,7 +238,7 @@ Change the selection mode using switch:
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
 
-**Note:** a maximum of 250 data points can be selected at a time.
+>**Note:** a maximum of 250 data points can be selected at a time.
 
 <br/>
 

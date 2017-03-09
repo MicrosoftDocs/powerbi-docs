@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/07/2017"
+   ms.date="03/09/2017"
    ms.author="mihart"/>
 
 # The Power BI samples, a tutorial
@@ -95,11 +95,11 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
     ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
 
-        - One way of exploring the dataset is by creating your own visualizations and reports from scratch.  Select the chart icon ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
+    - One way of exploring the dataset is by creating your own visualizations and reports from scratch.  Select the chart icon ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
 
-        ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+    ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-        - Another way of exploring the dataset is to run [Quick Insights](powerbi-service-auto-insights.md). Select the ellipses (...) and choose **Get insights**. When the insights are ready, select **View insights**.
+    - Another way of exploring the dataset is to run [Quick Insights](powerbi-service-auto-insights.md). Select the ellipses (...) and choose **Get insights**. When the insights are ready, select **View insights**.
 
         ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
