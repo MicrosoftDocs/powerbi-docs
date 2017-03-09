@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="03/09/2017"
    ms.author="ajayan"/>
-# Collaborate in Office 365 with your Power BI group workspace
+# Collaborate in your Power BI group workspace
 
 Power BI group workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets. That's what groups are designed for -- collaboration. If you just want to distribute a finished dashboard with colleagues, then you're better off *sharing* it with them, or creating an *organizational content pack*. Read [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) first, if you haven't done so yet. 
 
