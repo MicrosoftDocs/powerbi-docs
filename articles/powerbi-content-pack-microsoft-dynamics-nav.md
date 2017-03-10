@@ -1,11 +1,11 @@
-﻿<properties
+<properties
    pageTitle="Microsoft Dynamics NAV content pack"
    description="Microsoft Dynamics NAV content pack for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="joeshoukry"
-   manager="mblythe"
-   backup=""
+   manager="erikre"
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
+   ms.date="03/10/2017"
    ms.author="yshoukry"/>
 
 # Microsoft Dynamics NAV content pack for Power&nbsp;BI  
