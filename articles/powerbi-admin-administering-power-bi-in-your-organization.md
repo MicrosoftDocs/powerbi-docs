@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2017"
+   ms.date="03/06/2017"
    ms.author="asaxton"/>
 
 # Administering Power BI in your organization
@@ -26,7 +26,7 @@ Microsoft Power BI enables users to visualize data, share discoveries, and colla
 
 Administration of Power BI can occur in several locations. Here are two common locations.
 
-> [AZURE.NOTE] Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
+> [AZURE.NOTE] Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
 
 - [Power BI Admin portal](https://app.powerbi.com/admin-portal)
 - [Understanding the Power BI admin role](powerbi-admin-role.md) 
