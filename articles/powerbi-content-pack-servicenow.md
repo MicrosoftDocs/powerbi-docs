@@ -3,7 +3,7 @@
    description="ServiceNow content pack"
    services="powerbi"
    documentationCenter=""
-   authors="theresapalmer"
+   authors="joeshoukry"
    manager="erikre"
    backup="maggiesMSFT"
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="03/10/2017"
-   ms.author="tpalmer"/>
+   ms.author="yshoukry"/>
 
 # Power&nbsp;BI content pack for ServiceNow incidents
 
