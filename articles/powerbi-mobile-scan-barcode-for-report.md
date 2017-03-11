@@ -17,18 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
+   ms.date="03/10/2017"
    ms.author="maggies"/>
 
 # Scan a barcode from the Power BI app on your iPhone
 
 Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
 
+![](media/powerbi-mobile-scan-barcode-for-report/power-bi-barcode-scanner.png)
+
 Say a colleague has [tagged a barcode field in a report Power BI Desktop](powerbi-desktop-mobile-barcodes.md) and shared the report with you. 
 
 When you scan a product barcode with the scanner in the Power BI app on your iPhone, you see the report (or list of reports) with that barcode. You can open that report on your iPhone, filtered to that barcode.
-
->**Note**: The scanner is available starting with Power BI app version 5.3. To see the version of Power BI on your phone, open open the main navigation menu ![](media/powerbi-mobile-scan-barcode-for-report/PBI_iPh_NavMenu.png) in the upper left > **Settings** > **Version**.
 
 ## Scan a barcode with the Power BI scanner
 
@@ -41,8 +41,6 @@ When you scan a product barcode with the scanner in the Power BI app on your iPh
 3. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
 
 4. Point the scanner at a barcode on a product. 
-
-    ![](media/powerbi-mobile-scan-barcode-for-report/power-bi-barcode-scanner.png)
 
     You see a list of reports associated with that barcode.
 
@@ -70,7 +68,7 @@ The report you choose to filter is based on a data model that does not include t
 ### All/some of the visuals in the report don’t contain any value  
 The barcode value you scanned exists in your model but all/Some of the visuals on your report don’t contain this value and therefore filtering will return an empty state. Try looking into other report pages or edit your reports in Power BI desktop to contain this value 
 
-### “Couldn’t get data - Looks like you don’t have any reports that can be filtered by barcodes.”  
+### “Looks like you don’t have any reports that can be filtered by barcodes.”  
 
 This means you don’t have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**.  
 
