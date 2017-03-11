@@ -34,7 +34,7 @@ You can set alerts in the Power BI mobile apps and in the Power BI service to no
 > 
 > Learn more about [managing data alerts in the Power BI service](powerbi-service-set-data-alerts.md).
 
-## Alerts on an iPhone or iPad
+## Data alerts on an iPhone or iPad
 
 ### Set an alert on an iPhone or iPad
 
@@ -78,7 +78,7 @@ You can manage individual alerts on your mobile device or [manage all your alert
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-edit-delete-alert.png)
 
-## Alerts on an Android device
+## Data alerts on an Android device
 
 ### Set an alert on an Android device
 

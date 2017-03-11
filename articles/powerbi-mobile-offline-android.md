@@ -22,7 +22,12 @@
 
 # View your data offline in the Power BI mobile apps
 
-One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. By default, Power BI refreshes the data frequently so you get up-to-date answers to your business questions any time, even while commuting or roaming.
+One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. 
+
+![](media/powerbi-mobile-offline-android/power-bi-iphone-no-network.png)
+
+
+By default, Power BI refreshes the data frequently so you get up-to-date answers to your business questions any time, even while commuting or roaming.
 
 ## Data access while you're offline
 
