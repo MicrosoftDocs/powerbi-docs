@@ -17,10 +17,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="03/13/2017"
    ms.author="maggies"/>
 
 # View your data offline in the Power BI mobile apps
+
+Applies to:
+
+| ![iPhone](media/powerbi-mobile-offline-android/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-offline-android/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-offline-android/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-offline-android/android-tablet-logo-50-px.png) | ![Windows 10](media/powerbi-mobile-offline-android/win-10-logo-50-px.png) |
+|:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
+| iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
+
 
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. 
 

@@ -23,7 +23,7 @@
 
 Applies to:
 
-| ![iPhone](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/android-tablet-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/win-10-logo-50-px.png) |
+| ![iPhone](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/android-tablet-logo-50-px.png) | ![Windows 10](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/win-10-logo-50-px.png) |
 |:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
 | iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
 
