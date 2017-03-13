@@ -52,7 +52,9 @@ Let's say you've finalized a dashboard in your own My Workspace or in a group wo
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-service-share.png)
 
-When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless row-level security (RLS) is applied to the underlying dataset. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. You can share with people outside your organization. They can view and interact with the dashboard too, but can't share it. More about [sharing a dashboard from the Power BI service](powerbi-service-share-unshare-dashboard.md).
+When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless row-level security (RLS) is applied to the underlying dataset. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. 
+
+You can share dashboards to Active Directory security groups, or to your entire organization, and you can share with people outside your organization. They can view and interact with the dashboard too, but can't share it. More about [sharing a dashboard from the Power BI service](powerbi-service-share-unshare-dashboard.md).
 
 You can also [share a dashboard from any of the Power BI mobile apps](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md). 
 
@@ -60,7 +62,7 @@ You can also [share a dashboard from any of the Power BI mobile apps](powerbi-mo
 If you're part of a group workspace in Power BI, you can share the group's dashboards with colleagues outside the group. It's the same as [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).
 
 ## Create an organizational content pack and publish it  
-Another way to distribute your Power BI insights with your colleagues is to create an *organizational content pack*. You've created and refined a dashboard with its reports and datasets, either in your own My Workspace or in a group workspace. Now you bundle them together as a content pack and distribute them &#151; either to members of a specific security group or distribution list, or to your whole organization. 
+Another way to distribute your Power BI insights with your colleagues is to create an *organizational content pack*. You've created and refined a dashboard with its reports and datasets, either in your own My Workspace or in a group workspace. Now you bundle them together as a content pack and distribute them &#151; either to members of an Active Directory security group or distribution list, or to your whole organization. 
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/cpwindow.png)
 
