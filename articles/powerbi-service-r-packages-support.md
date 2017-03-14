@@ -26,10 +26,28 @@ You can use the powerful [R programming language](https://www.r-project.org/) to
 
 The following sections provide an alphabetical table of which R packages are supported in Power BI, and which are not. For more information about R in Power BI, see the [R visuals](powerbi-service-r-visuals.md) article.
 
-## R scripts that are supported in Power BI
+
+## Request support for a new R package
+
+Supported R packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of an R package not found in that list, you can send an email with your request to the [R in Power BI Feedback Team](mailto:rinpbifb@microsoft.com).
+
+## Requirements and Limitations of R packages
+
+There are a handful of requirements and limitations for R packages:
+
+-   The Power BI service, for the most part, supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
+-   The Power BI service supports packages published in CRAN. The service does not support private or custom R packages. We encourage users to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
+
+-   For **Power BI Desktop** has two variations for R packages:
+    -   For R visuals, you can install any package, including custom R packages
+    -   For Custom R visuals, only public CRAN packages are supported for auto-installation of the packages
+-   For security and privacy reasons, we currently don't support R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
+-   The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service cannot be supported.
+
+
+## R packages that are supported in Power BI
 
 The following table shows which packages **are supported** in the Power BI service.
-
 
 |Package|Version|Link|
 |---|---|---|
