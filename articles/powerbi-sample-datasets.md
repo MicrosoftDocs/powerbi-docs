@@ -3,7 +3,7 @@
    description="Sample content packs, PBIX files, and Excel datasets for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="amac"
+   authors="mihart"
    manager="erikre"
    backup=""
    editor=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/08/2017"
+   ms.date="03/13/2017"
    ms.author="mihart"/>
 
 #  What sample data is available to use with Power BI?
@@ -154,7 +154,7 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
 3. Open Power BI service (app.powerbi.com) and log in.
 
-  >[AZURE.TIP] At this point you may want to create a new dashboard and name it after the file you plan on importing.  Otherwise, when you import the Excel dataset, Power BI won't create a new dashboard named after the sample but instead will add a tile to the dashboard that you currently have open. Selecting that tile will take you to the dataset's report. This isn't a major big deal as you can always create a new dashboard later, but starting with a new dashboard saves you a step or two.
+    >[AZURE.TIP] At this point you may want to create a new dashboard and name it after the file you plan on importing.  Otherwise, when you import the Excel dataset, Power BI won't create a new dashboard named after the sample but instead will add a tile to the dashboard that you currently have open. Selecting that tile will take you to the dataset's report. This isn't a major big deal as you can always create a new dashboard later, but starting with a new dashboard saves you a step or two.
 
 2. In the bottom left corner select **Get data**.
 

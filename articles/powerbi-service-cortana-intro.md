@@ -3,7 +3,7 @@
    description="Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset."
    services="powerbi"
    documentationCenter=""
-   authors="yaron"  
+   authors="mihart"  
    manager="erikre"
    editor=""/>
 
@@ -13,8 +13,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2017"
-   ms.author="mihart"/>
+   ms.date="03/13/2017"
+   ms.author="yaron"/>
 
 
 # Introduction to Cortana for Power BI
