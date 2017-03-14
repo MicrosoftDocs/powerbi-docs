@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="03/13/2017"
    ms.author="mihart"/>
 
-# Slicers in Power BI (Tutorial)
+# Slicers in Power BI service (Tutorial)
 
 Your VP of Sales wants to be able to look at a number of metrics, for the entire division and for each individual District Manager. She could create a separate report page for each manager, or she could use a slicer. A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.
 
@@ -96,6 +96,8 @@ Slicers are a great choice in the following situations.
 ## Control what effect the slicer has on other visuals on the page
 
 Do you want the slicer to only filter some of the visuals on the report page?  Use the **Visual interactions** control to set this up.
+
+**NOTE**: If you don't see **Visual Interactions**, look for its icon instead ![](media/powerbi-service-tutorial-slicers/power-bi-slicer-visual-interactions.png). If you don't see either, make sure you are in report [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 1. Select the slicer to make it active and, from the menu bar, choose **Visual interactions**.
 
