@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="03/13/2017"
    ms.author="mihart"/>
 
 # Filled maps (choropleths) in Power BI (Tutorial)
@@ -75,8 +75,8 @@ To create your own filled map, [download the Sales and Marketing sample](powerb
 
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/img005.png)
 
-5.  Select **SalesFact** \> **Sentiment** to add it to the **Values** well. The field in the **Values** well controls the map shading.  
-![](media/powerbi-service-tutorial-filled-maps-choropleths/img006.png)
+5.  Select **SalesFact** \> **Sentiment** to add it to the **Color saturation** well. The field in the **Color saturation** well controls the map shading.  
+![](media/powerbi-service-tutorial-filled-maps-choropleths/power-bi-color-saturation.png)
 
 6.  The filled map is shaded in blue, with light blue representing the lower sentiment numbers and dark blue representing the higher, more-positive sentiment.  Here I've highlighted the state of Wyoming (WY) and see that Sentiment is very good, 74.  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img007.png)

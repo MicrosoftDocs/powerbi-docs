@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2016"
+   ms.date="03/13/2017"
    ms.author="mihart"/>
 
 # Tips for designing a great Power BI dashboard  

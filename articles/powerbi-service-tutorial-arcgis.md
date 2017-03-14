@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="ArcGIS maps by ESRI in Power BI service(Take a tour)"
-   description="Tutorial: ArcGIS in Power BI service"
+   description="Take a tour of ArcGIS maps by ESRI in Power BI service"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -18,21 +18,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/07/2017"
+   ms.date="03/13/2017"
    ms.author="mihart"/>
 
 # Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
 
 The combination of ArcGIS Maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
->**INFO**: GIS stands for Global Information Services
+>**TIP**: GIS stands for Global Information Services
 
-The example below uses a dark gray canvas to show regional sales as a heatmap against a demographic layer of 2016 median disposable income. As you'll see as you read on, using  ArcGIS maps offer almost limitless enhanced mapping capability, demographic data, and even-more compelling map visualizations so you can tell your best story.
+The example below uses a dark gray canvas to show regional sales as a heatmap against a demographic layer of 2016 median disposable income. As you'll see as you read on, using  ArcGIS maps offers almost limitless enhanced mapping capability, demographic data, and even-more compelling map visualizations so you can tell your best story.
 
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-intro-arcgis.png)
 
-**TIP**: Visit [esri's page on Power BI](www.esri.com/powerbi) to see many examples and read testimonials. And then see Esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+**TIP**: Visit [esri's page on Power BI](www.esri.com/powerbi) to see many examples and read testimonials. And then see esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
 
 
 ## User consent
@@ -205,11 +205,11 @@ ArcGIS Maps for Power BI provides a selection of demographic layers that help co
 
 2. Each layer listed has a checkbox. Add a checkmark to add that layer to the map.  In this example we've added average household income.<br/>
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics1.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics1.png)
 
 2. Each layer is interactive as well. Just as you can hover over a bubble to see the details, you can click a shaded area on the map to see the details.<br/>
 
-   ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics2.png)
 
 
 #### Reference layer - ArcGIS

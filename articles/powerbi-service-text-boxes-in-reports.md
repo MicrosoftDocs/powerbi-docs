@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="03/13/2017"
    ms.author="mihart"/>
 # Text Boxes in Power BI reports
 
@@ -30,7 +30,7 @@ In Editing View, add a text box to a report and then pin it to a dashboard. 
 
 2.  Type your text into the text box and, optionally, format font, color, and text alignment. 
 
-    ![](media/powerbi-service-text-boxes-in-reports/PBI_textBox2.png)
+    ![](media/powerbi-service-text-boxes-in-reports/PBI_textBox2new.png)
 
 3.  To position the text box, select the grey area at the top and drag. And to resize the Text Box, select and drag any of the outline handles. 
 

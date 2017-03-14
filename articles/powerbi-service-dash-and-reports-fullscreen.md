@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="03/13/2017"
    ms.author="mihart"/>
 
 # Display dashboards and reports in Full Screen mode
@@ -51,7 +51,13 @@ Watch Amanda open and navigate her dashboard in Full Screen mode and then apply 
 
       ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TVMode.jpg)
 
-3. Use the **Back** button to navigate to the previous page in your browser. If the previous page was a Power BI service page, it will display in Full Screen mode.  Full Screen mode will persist until you close Full Screen.
+3. When you move the mouse, a menu appears.
+
+    ![](media/powerbi-service-dash-and-reports-fullscreen/menu-options-new.png)
+
+    Use the **Back** button to navigate to the previous page in your browser. If the previous page was a Power BI service page, it will display in Full Screen mode.  Full Screen mode will persist until you close Full Screen.
+
+    >**NOTE**: The menu will remain in the bottom right-hand corner until you exit full screen mode. If it disappears, simply move your cursor or tap the screen.
 
 3. To exit Full Screen mode, select the **Close Full Screen** icon.
 
