@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/03/2017"
+ms.date="03/14/2017"
 ms.author="asaxton"/>
 # Understanding the Power BI admin role
 
@@ -49,7 +49,7 @@ To assign users to the Power BI Administrator role within the Office 365 Admin C
 
 6. Select **Save**.
 
-You should see **Power BI service administrator** listed for the role of that user. They will not have access to the [Power BI admin portal](powerbi-admin-portal.md).
+You should see **Power BI service administrator** listed for the role of that user. They will now have access to the [Power BI admin portal](powerbi-admin-portal.md).
 
 ![](media/powerbi-admin-role/powerbi-admin-role-set.png)
 
