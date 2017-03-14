@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/18/2017"
+ms.date="03/14/2017"
 ms.author="davidi"/>
 # On-Premises Data Gateway FAQ
 
@@ -33,7 +33,7 @@ ms.author="davidi"/>
 **Answer:** Yes! The On-Premises Data Gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
 
 **Question:** What if I install the gateway on a computer in a different domain from my on-premises server that uses Windows authentication?  
-**Answer:** No guarantees here. It all depends on the trust relationship between the two domains. If the two different domains are in a trusted domain model, then the gateway might be able to connect to the Analysis Services server and the effective user name can be resolved. If not, you may encounter a login failure. 
+**Answer:** No guarantees here. It all depends on the trust relationship between the two domains. If the two different domains are in a trusted domain model, then the gateway might be able to connect to the Analysis Services server and the effective user name can be resolved. If not, you may encounter a login failure.
 
 **Question:** How can I find out what effective username is being passed to my on-premises Analysis Services server?  
 **Answer:** We answer this in the [troubleshooting article](powerbi-gateway-onprem-tshoot.md).
@@ -47,7 +47,7 @@ ms.author="davidi"/>
 **Answer:** Yes! When you manage a gateway, you can go to the administrator’s tab to add additional admins.
 
 **Question:** Does the gateway admin need to be an admin on the machine where the gateway is installed?  
-**Answer:** No. The gateway admin is used to manage the gateway from within the service. 
+**Answer:** No. The gateway admin is used to manage the gateway from within the service.
 
 **Question:** Can I prevent users in my organization from creating a gateway?  
 **Answer:** No. This is on the roadmap, but we don’t have a timeframe.
