@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/12/2016"
+   ms.date="03/10/2017"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI mobile app for Windows 10  
