@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2016"
+   ms.date="03/14/2017"
    ms.author="mihart"/>
 
 # Interact with a report in Reading View in Power BI
 
 ##  Reading view
 
-Reading view is not as interactive as Editing view, but it still gives you many options for exploring the data. Which comes in useful when viewing reports [shared with you](powerbi-service-share-unshare-dashboard.md), since these can only be opened in Reading View.
+Reading view is not as interactive as Editing view, but it still gives you many options for exploring the data. Which comes in useful when viewing reports [shared with you](powerbi-service-share-unshare-dashboard.md), that can only be opened in Reading View.
 
 In Reading View you can cross-highlight and cross-filter visuals on a page.  Simply highlight or select  a value in one visual and instantly see its impact on the other visuals. Use the Filter pane to add and modify filters on a report page, and change the way values are sorted in a visualization. Reading view is a fun and safe way to play with and get to know your data.
 
@@ -50,7 +50,7 @@ Select the ellipses (...) to open **Sort by**. Select the dropdown arrow to choo
 
 ##  Interact with filters
 
-If the report author added filters to a page in a report, you can interact with them in Reading View. Changes you make will not be saved with the report. 
+If the report author added filters to a page in a report, you can interact with them in Reading View. Changes you make will not be saved with the report.
 
 1.  Select the Filter icon in the upper-right corner.
 

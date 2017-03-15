@@ -23,7 +23,7 @@
 
 After you make changes to a report in Power BI, you can save it, save it with a new name, or just close it without saving your changes. Say you open the report, create a visualization, and pin it to your dashboard. If you close it now without saving your changes, the tile remains on the dashboard, but the visualization isn't saved in the report. When you click that tile on the dashboard, the report opens, but the visualization is gone.
 
->**TIP**: If you are using the [new navigation preview](powerbi-service-the-new-power-bi-experience.md) pay attention to which workspace is active so you can find the saved report. The report is saved to the active workspace.
+>[AZURE.TIP] If you are using the [new navigation preview](powerbi-service-the-new-power-bi-experience.md) pay attention to which workspace is active so you can find the saved report. The report is saved to the active workspace.
 
 ### To save a report:
 
@@ -33,7 +33,7 @@ After you make changes to a report in Power BI, you can save it, save it with a 
 
 2.  Another way to save the report is to select **FILE** \> **Save** or **Save As**.
 
-   ![](media/powerbi-service-save-a-report/power-bi-save.png)
+    ![](media/powerbi-service-save-a-report/power-bi-save.png)
 
 3. If this is a new report, give it a descriptive name.  That name will appear under **Reports** in your left navbar. A yellow asterisk lets you know it's new.
 
