@@ -97,9 +97,10 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
     - One way of exploring the dataset is by creating your own visualizations and reports from scratch.  Select the chart icon ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
 
-    ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+        ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
     - Another way of exploring the dataset is to run [Quick Insights](powerbi-service-auto-insights.md). Select the ellipses (...) and choose **Get insights**. When the insights are ready, select **View insights**.
+
         ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
 ## See also

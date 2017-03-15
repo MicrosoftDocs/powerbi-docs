@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,15 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/15/2016"
+   ms.date="03/14/2017"
    ms.author="mihart"/>
 # Interact with a report in Editing View in Power BI
 
 In report [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md), you have lots of flexibility in exploring and designing a report. All the [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) functionality is available -- plus lots more.
 
->**NOTE**: If you don't see what you need on this page, use the Table of Contents to the left.
+>**NOTE**: If you don't see what you need on this page, use the **Reports** section of the Table of Contents to the left.
 
-### Add a page
+### Add a page  ![](media/powerbi-service-interact-with-a-report-in-editing-view/power-bi-add-page.png)
 
 No need to crowd your report pages.  If you need more room, [add a new page](powerbi-service-add-a-page-to-a-report.md).
 
@@ -34,19 +34,19 @@ No need to crowd your report pages.  If you need more room, [add a new page](po
 
 [How do you want your report pages to be viewed?](powerbi-service-change-report-display-settings.md)  Set rendering rules, display ratios, and absolute page sizes (in pixels).
 
-### Add visualizations
+### Add visualizations ![](media/powerbi-service-interact-with-a-report-in-editing-view/power-bi-viz.png)
 
 [Create visualizations](powerbi-service-visualizations-for-reports.md) on the pages of your report.
 
-### Filtering and highlighting in reports
+### Filtering and highlighting in reports ![](media/powerbi-service-interact-with-a-report-in-editing-view/power-bi-filter.png)
 
 There are many ways to [filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md). In Editing View, you can [add filters to a page](powerbi-service-add-a-filter-to-a-report.md) and when you [share your dashboard](powerbi-service-share-unshare-dashboard.md), your viewers can [interact with the filters in Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
 
-### Delete a page
+### Delete a page ![](media/powerbi-service-interact-with-a-report-in-editing-view/power-bi-delete.png)
 
 [Report pages can be deleted](powerbi-service-delete-a-page-from-a-report.md), even if they're not blank.
 
-### Create a new report
+### Create a new report  ![](media/powerbi-service-interact-with-a-report-in-editing-view/power-bi-add-report.png)
 
 [Create a brand new report](powerbi-service-create-a-new-report.md).
 
@@ -58,15 +58,15 @@ There are many ways to [filter and highlight data in reports](powerbi-service-ab
 
 Don't like the name of the report? [Rename it](powerbi-service-rename-a-report.md). 
 
-### Save a report
+### Save a report  ![](media/powerbi-service-interact-with-a-report-in-editing-view/power-bi-save.png)
 
 [Save your report](powerbi-service-save-a-report.md) so you can use it again and share it with colleagues. The name of the saved report is added to your Power BI navigation pane.
 
-### Share a report
+### Share a report  ![](media/powerbi-service-interact-with-a-report-in-editing-view/power-bi-share.png)
 
 See [share a dashboard](powerbi-service-share-unshare-dashboard.md).
 
-### Delete a report
+### Delete a report  ![](media/powerbi-service-interact-with-a-report-in-editing-view/power-bi-delete.png)
 
 Don't need the report any more?  [Delete it](powerbi-service-delete-a-report.md).
 

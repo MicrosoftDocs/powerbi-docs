@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/28/2016"
+   ms.date="03/14/2017"
    ms.author="mihart"/>
 
 # Opt-in for Power BI preview features
@@ -31,7 +31,11 @@ As we make improvements to Power BI, we'll release some new functionality as *pr
 ##    Current previews available
 **Navigation preview**: Starting in November 2016, we're previewing a [new Power BI navigation experience](powerbi-service-the-new-power-bi-experience.md). You'll be able to try it out for yourself, switching back and forth between the two experiences.
 
-##  Turn a preview feature on (and off)
+**ArcGIS Maps for Power BI preview**
+The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level.
+[Take a tour of ArcGIS maps by esri in Power BI service and Power BI Desktop](powerbi-service-tutorial-arcgis.md).
+
+##  Turn the new navigation preview feature on (and off)
 
 1.  Open your Settings menu by selecting the gear icon in the top right corner of your Power BI screen and choosing **Settings**.
 
@@ -39,7 +43,21 @@ As we make improvements to Power BI, we'll release some new functionality as *pr
 
 2.  Select the **General** tab and choose **Preview features**.
 
-    ![](media/powerbi-service-preview-features/power-bi-general.png)
+    ![](media/powerbi-service-preview-features/power-bi-generalnew2.png)
+
+3.  Select the **On** radio button to try out the new experience. Click **Apply**.
+
+4. To turn preview features off, follow steps 1-2 above, and in step 3, select **Off** > **Apply**.
+
+##  Turn the ArcGIS preview feature on (and off)
+
+1.  Open your Settings menu by selecting the gear icon in the top right corner of your Power BI screen and choosing **Settings**.
+
+    ![](media/powerbi-service-preview-features/power-bi-settings.png).
+
+2.  Select the **General** tab and choose **Preview features**.
+
+    ![](media/powerbi-service-preview-features/power-bi-preview-arcgis.png)
 
 3.  Select the **On** radio button to try out the new experience. Click **Apply**.
 

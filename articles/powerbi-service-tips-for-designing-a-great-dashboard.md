@@ -26,6 +26,8 @@ Now that you've created a dashboard and added some tiles, think about how to mak
 
 Here are a few tips.
 
+>[AZURE.TIP] Many of the design principles for reports apply to dashboards as well.  Read our whitepaper [Best design principles for reports and visualizations](powerbi-service-visualization-best-practices).
+
 ### Consider your audience  
 What are the key metrics that will help them make decisions? How will the dashboard be used? What learned or cultural assumptions may affect design choices? What information does your audience need to be successful?
 

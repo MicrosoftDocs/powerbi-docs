@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/08/2017"
+   ms.date="03/15/2017"
    ms.author="mihart"/>
 
 
@@ -62,7 +62,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
     ![](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-O365.png)
 
 ### Try the Cortana troubleshooting tool to narrow down the issue
-Now is a good time to run the Cortana troubleshooting tool.
+Now is a good time to run the Cortana troubleshooting tool. Before running the troubleshooting tool, make sure to set the **Page level** filters on your Cortana answer cards to **Require single selection**. For help doing this see [Create Cortana answer cards](powerbi-service-cortana-desktop-entity-cards.md).
 
 1.  Open the troubleshooting tool by adding "/cortana/test" to the end of your Power BI service URL. Your URL should look similar to this:
 
@@ -86,7 +86,9 @@ Now is a good time to run the Cortana troubleshooting tool.
 
 ####  Troubleshooting tool known issues
 
--	If the tool doesn’t always fetch the results the first time. Instead, paste the query into the Utterance text box.
+
+
+- If the tool doesn’t always fetch the results the first time. Instead, paste the query into the Utterance text box.
 
 - The query must be 2 or more words, by design.  If your query is too short, add the word "show".
 

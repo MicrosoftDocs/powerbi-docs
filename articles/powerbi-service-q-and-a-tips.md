@@ -3,8 +3,8 @@
    description="Tips and tricks for asking questions with Q&A in Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="jastru"
-   manager="mblythe"
+   authors="mihart"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
-   ms.author="mihart"/>
+   ms.date="03/14/2017"
+   ms.author="jastru"/>
 
 # Tips for asking questions in Power BI Q&A
 
