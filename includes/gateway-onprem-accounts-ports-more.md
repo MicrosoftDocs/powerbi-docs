@@ -52,7 +52,9 @@ Alternatively, you can force the Gateway to adopt this behavior using the Gatewa
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
 
-Once changed, select **Apply** (which only appears when you make a change). You must then  restart the gateway Windows service for the change to take effect, which you can do from the same user interface dialog by selecting **Service Settings** then select *Restart Now*.
+Once changed, when you select **Apply** (a button that only appears when you make a change), the *gateway Windows service* restarts automatically, so the change can take effect. 
+
+For future reference, you can restart the *gateway Windows service* from the user interface dialog by selecting **Service Settings** then select *Restart Now*.
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
