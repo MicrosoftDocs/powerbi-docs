@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="03/14/2017"
    ms.author="davidi"/>
 
 # Troubleshooting Analyze in Excel
@@ -86,8 +86,6 @@ If you receive a **token expired** error, it means you haven't recently used the
 
 ## Unable to access on-premises Analysis Services
 If you're trying to access a dataset that has connections to on-premises Analysis Services data, you may receive an error message. **Analyze in Excel** does support connecting to datasets and reports on on-premises **Analysis Services** with a connection string, as long as your computer is on the same domain as the **Analysis Services** server, and your account has access to that **Analysis Services** server.
-
-currently does not support connections to on-premises Analysis Services.
 
 ## Can't drag anything to the PivotTable Values area (no measures)
 
