@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/017"
+   ms.date="03/14/2017"
    ms.author="mihart"/>
 
 # Pin an entire report page, as a live tile, to a Power BI dashboard
