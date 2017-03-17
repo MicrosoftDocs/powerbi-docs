@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="03/17/2017"
    ms.author="ajayan"/>
 
 # How should I collaborate on & share dashboards and reports?  
 
 In this article, we'll talk about collaborating and sharing in Power BI as a process. First, when you want to collaborate with your colleagues to create meaningful reports and dashboards, you save them to a *group workspace*. 
 
-![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-share-groups.png)
+![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-old-groups-left-nav.png)
 
 *Group workspaces in the Power BI service*
 
