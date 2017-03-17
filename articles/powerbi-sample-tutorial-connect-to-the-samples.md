@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/09/2017"
+   ms.date="03/13/2017"
    ms.author="mihart"/>
 
 # The Power BI samples, a tutorial
@@ -26,7 +26,7 @@ We recommend starting with the article [Take a tour of the Power BI samples](pow
 ## About this tutorial
 This tutorial teaches you how to import the sample content packs, add them to Power BI service, and open the content. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. The sample content packs are available from within Power BI, using **Get Data**.
 
->**NOTE**: This tutorial applies to Power BI Service and not Power BI Desktop.
+>[AZURE.NOTE] This tutorial applies to Power BI Service and not Power BI Desktop.
 
 The *Retail Analysis* sample content pack used in this tutorial consists of a dashboard, report, and dataset.
 To familiarize yourself with this particular content pack and its scenario, you may want to
@@ -75,7 +75,7 @@ With the sample content packs, when you select **Connect**, Power BI is actually
 ##  Explore your new content
 Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets, and just one of those many ways is described below.  
 
->**Tip**: Want a little hand-holding first?  Try the [Tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md) for a step-by-step walkthrough of this sample.
+>[AZURE.TIP] Want a little hand-holding first?  Try the [Tour of the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md) for a step-by-step walkthrough of this sample.
 
 1.  Navigate back to your **Dashboards** tab and select the *Retail Analysis Sample* dashboard to open it.    
 
@@ -89,7 +89,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
     ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report.png)
 
-    >**NOTE**: if the tile had been created using [Power BI Q&A](powerbi-service-q-and-a.md), the Q&A page would've opened instead.
+    >[AZURE.NOTE] if the tile had been created using [Power BI Q&A](powerbi-service-q-and-a.md), the Q&A page would've opened instead.
 
 4.  Back on your **Datasets** tab, you have several options for exploring your dataset.  You won't be able to open it and see all the rows and columns (as you can in Power BI Desktop or Excel).  When someone shares a content pack with colleagues, they typically want to share the insights, not give their colleagues direct access to the data. But that doesn't mean you can't explore the dataset.  
 
@@ -97,7 +97,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
     - One way of exploring the dataset is by creating your own visualizations and reports from scratch.  Select the chart icon ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
 
-    ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+        ![](media/powerbi-sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
     - Another way of exploring the dataset is to run [Quick Insights](powerbi-service-auto-insights.md). Select the ellipses (...) and choose **Get insights**. When the insights are ready, select **View insights**.
 

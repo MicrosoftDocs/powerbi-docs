@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/29/2016"
+   ms.date="03/10/2017"
    ms.author="maggies"/>
 
 # Reports in the Power BI mobile app for Android tablets
@@ -38,8 +38,6 @@ Then you view and interact with those reports in the [Android app](powerbi-mobi
     The report opens in landscape mode.
 
     ![](media/powerbi-mobile-reports-in-the-android-tablet-app/power-bi-android-tablet-report.png)
-
-     > [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
 
     To see other pages, tap the report page names along the bottom of the report.
 

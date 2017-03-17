@@ -3,8 +3,8 @@
    description="Sales & Marketing sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="amandacofsky"
-   manager="mblythe"
+   authors="mihart"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
-   ms.author="amac"/>
+   ms.date="03/14/2017"
+   ms.author="mihart"/>
 
 # Sales & Marketing sample for Power BI: Take a tour  
 
