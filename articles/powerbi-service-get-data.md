@@ -17,10 +17,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/11/2017"
+   ms.date="03/20/2017"
    ms.author="davidi"/>
 
-# Data sources for Power BI service
+# Data sources for the Power BI service
 
 Data is at the heart of Power BI. Whenever you’re exploring data, creating charts and dashboards, asking questions with Q&A, all of those visualizations and answers you see are really getting their underlying data from a dataset. But where does that dataset come from? Well, from a data source.
 
@@ -73,7 +73,7 @@ You’re probably thinking “But that logistics data on that database changes e
 You see, just because you cannot connect to your data source right from the Power BI service doesn’t mean you can’t get that data into Power BI. It just might take a few more steps and maybe some help from your IT department. See [Data sources in Power BI Desktop](powerbi-desktop-data-sources.md) to learn more.
 
 ## Some more details
-You’ll see the terms dataset and datasource used a lot in Power BI. They’re often use synonymously, but they really are two different things, albeit related.
+You’ll see the terms dataset and data source used a lot in Power BI. They’re often use synonymously, but they really are two different things, albeit related.
 
 A ***dataset*** is automatically created in Power BI when you use Get Data to connect to and import data from a content pack, file, or you connect to a live data source. A dataset contains information about the data source, data source credentials, and in many cases, a sub-set of data copied from the data source. In most cases, when you create visualizations in reports and dashboards, you’re looking at data in the dataset.
 
@@ -91,3 +91,11 @@ Azure SQL Database, Azure SQL Data Warehouse, and Spark on Azure HDInsight are u
 SQL Server Analysis Services is unique in that when you connect to it from Power BI, it’s a live connection just like an Azure database in the cloud, but the database itself is on a server in your organization. This type of connection requires a Power BI Gateway, which is usually configured by an IT department.
 
 Data refresh is a super important part of Power BI, and much too deep to cover here. If you want to get a thorough understanding, be sure to checkout [Data Refresh in Power BI](powerbi-refresh-data.md).
+
+## Considerations and Limitations
+
+For all data sources used in the Power BI service, the following considerations and limitations apply. There are other limitations that apply to specific features, but the following list apply to the Power BI service overall:
+
+-   **Dataset size limit** - there is a 1 GB limit for each dataset in the Power BI service.
+-   **Row limit** - the maximum number of rows in your dataset cannot exceed 1 million rows when using DirectQuery.
+-   **Column limit** - the maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This applies to the Power BI service and to datasets used in Power BI Desktop. Power BI uses an internal row number column per table included in the dataset, which means the maximum number of columns is 16,000 minus one for each table used in the dataset.
