@@ -3,8 +3,8 @@
    description="IT Spend Analysis sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="amandacofsky"
-   manager="mblythe"
+   authors="mihart"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
+   ms.date="03/20/2017"
    ms.author="amac"/>
 
 # IT Spend Analysis sample for Power BI: Take a tour
@@ -27,7 +27,7 @@ The IT Spend Analysis [content pack](powerbi-service-organizational-content-pack
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (<http://obvience.com/>) that has been anonymized.
 
 -   [get the IT Spend Analysis content pack](powerbi-sample-tutorial-connect-to-the-samples.md)
--   [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
+-   [download just the dataset (Excel workbook) for this sample](powerbi-service-sample-datasets.md).
 
 ![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT1.png)
 

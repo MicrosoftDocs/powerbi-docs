@@ -34,7 +34,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Human Resources Sample > Connect** to get your own copy of the sample.
 
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=528592) for this sample.
+You can also [download just the dataset (Excel workbook)](powerbi-service-sample-datasets.md) for this sample.
 
 ## New hires  
 Let’s explore new hires first.

@@ -20,7 +20,7 @@
    ms.date="01/23/2017"
    ms.author="maggies"/>
 
-# View Power BI presentation mode on Surface Hub & Windows 100
+# View Power BI presentation mode on Surface Hub & Windows 10
 
 You can display reports in presentation mode on Surface Hub, and display dashboards, reports, and tiles in full-screen mode on Windows 10 devices. 
 
