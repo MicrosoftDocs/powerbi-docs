@@ -3,8 +3,8 @@
    description="Retail Analysis sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="amandacofsky"
-   manager="mblythe"
+   authors="mihart"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
+   ms.date="03/20/2017"
    ms.author="amac"/>
 
 # Retail Analysis sample for Power BI: Take a tour
@@ -26,7 +26,7 @@
 
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).
+You can also [download just the dataset (Excel workbook) for this sample](powerbi-service-sample-datasets.md).
 
 ![](media/powerbi-sample-retail-analysis-take-a-tour/retail1.png)
 
@@ -163,7 +163,7 @@ We hope this tour has shown how Power BI dashboards, Q&A, and reports can provid
 ## See also
 
 -   [Download the Retail Analysis sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md)
--   [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=528592)
+-   [Download the Excel workbook for this Power BI sample](powerbi-service-sample-datasets.md)
 -   [Get data (for Power BI)](powerbi-service-get-data.md)
 -   [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 -  More questions? [Try the Power BI Community](http://community.powerbi.com/)
