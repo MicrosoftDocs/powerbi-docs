@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/15/2017"
+   ms.date="03/20/2017"
    ms.author="asaxton"/>
 
 # Spark on HDInsight with DirectQuery
@@ -64,7 +64,7 @@ The username and password can also be found in the Azure portal.
 
 These restrictions and notes may change as we continue to improve the experiences. Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
 
-- The Power BI service only supports a configuration of Spark 2.0 and HDInsights 3.5.
+- The Power BI service only supports a configuration of Spark 2.0 and HDInsight 3.5.
 
 - Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
 
