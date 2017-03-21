@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/24/2017"
+   ms.date="03/08/2017"
    ms.author="davidi"/>
 
 # Data refresh in Power BI  
@@ -176,7 +176,7 @@ With the On-premises Data Gateway, you can issue queries from Power BI to your o
 
 When you configure a data source with the On-premises Data Gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
 
-> [AZURE.NOTE] If your dataset is configured for a live or DirectQuery connection, you will not have the option to use scheduled refresh. Scheduled refresh is only available for imported datasets.
+> [AZURE.NOTE] If your dataset is configured for a live or DirectQuery connection, datasets are refreshed approximately each hour or when interaction with the data occurs. You can manually adjust the *refresh frequency* in the *Scheduled cache refresh* option in the Power BI service.
 
 |**Data source**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
@@ -191,12 +191,27 @@ To learn more, see [On-premises Data Gateway](powerbi-gateway-onprem.md)
 
 ## Databases in the cloud  
 
-With DirectQuery, there is a direct connection between Power BI and the database in the cloud. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. If there is no user interaction in a visualization, like in a dashboard, data is refreshed automatically about every fifteen minutes. Because there is a direct connection between Power BI and the database, there is no need to manually refresh or setup a refresh schedule for the dataset. And, because both the Power BI service and the data source are in the cloud, there is no need for a Personal Gateway.
+With DirectQuery, there is a direct connection between Power BI and the database in the cloud. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. And, because both the Power BI service and the data source are in the cloud, there is no need for a Personal Gateway.
+
+If there is no user interaction in a visualization, data is refreshed automatically approximately every hour. You can change that refresh frequency using the *Scheduled cache refresh* option, and set the refresh frequency.
+
+To set the frequency, select the **gear** icon in the upper right corner of the Power BI service, then select **Settings**.
+
+![](media/powerbi-refresh-data/refresh-data_2.png)
+
+The **Settings** page appears, where you can select the dataset for which you want to adjust the frequency. On that page, select the **Datasets** tab along the top.
+
+![](media/powerbi-refresh-data/refresh-data_3.png)
+
+Select the dataset, and in the right pane you'll see a collection of options for that dataset. For the DirectQuery/Live connection, you can set the refresh frequency from 15 minutes to weekly using the associated drop-down menu, as shown in the following image.
+
+![](media/powerbi-refresh-data/refresh-data_1.png)
+
 
 |**Data source**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|**Gateway required**|
 |---|---|---|---|
-|SQL Azure Data Warehouse|Yes|No|No|
-|Spark on HDInsight|Yes|No|No|
+|SQL Azure Data Warehouse|Yes|Yes|No|
+|Spark on HDInsight|Yes|Yes|No|
 
 To learn more, see [Azure and Power BI](powerbi-azure-and-power-bi.md).
 
