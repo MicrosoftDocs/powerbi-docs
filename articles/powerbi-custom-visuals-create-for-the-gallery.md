@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2017"
+   ms.date="03/10/2017"
    ms.author="asaxton"/>
 
 # Create and submit a visual to the gallery
@@ -34,15 +34,16 @@ To learn more about the Developer Tools, see [Get started with Developer Tools](
 
 For information on how to develop your first visual, see [Developing your first Power BI visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Readme.md).
 
-## Submit your custom visual to the Power BI custom visuals gallery
+## Submit your custom visual to the Office store
 
-Submit your custom visual to the Power BI visuals gallery via email. To learn how, see [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md#submit-your-visual-to-the-power-bi-custom-visual-gallery).
+To learn how to submit your custom visual to the Office store, see [Publish custom visuals to the Office store](powerbi-developer-office-store.md).
 
 ## See also
 
 [Custom visuals in Power BI](powerbi-custom-visuals.md)  
 [Developing your first Power BI visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Readme.md)  
-[Download a custom visual from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)  
+[Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
+[Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [Use a custom visual in a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  
 [Use a custom visual in a report (Power BI Desktop)](powerbi-custom-visuals-use.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

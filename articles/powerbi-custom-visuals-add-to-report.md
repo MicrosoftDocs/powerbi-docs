@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,11 +18,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/24/2017"
+   ms.date="03/10/2017"
    ms.author="mihart"/>
 # Add a custom visualization to a report
 
-You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to
+You've [downloaded a custom visual template](powerbi-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
 
 ![](media/powerbi-custom-visuals-add-to-report/pbi-custom-viz-icon.png)
@@ -31,9 +31,7 @@ Watch Will download a custom visual and add it to his report. Then follow the st
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gido6wr5pvE" frameborder="0" allowfullscreen></iframe>
 
->**Important**:
-A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well.
-When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
+> [AZURE.IMPORTANT] A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
 
 1. Open [Power BI](http://app.powerbi.com) and select the report where you want to add the custom visualization.  
 
@@ -73,20 +71,13 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 
 ### See also
 
-[Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
-
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)
-
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)
-
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)
-
-[Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)
-
-[Review custom visuals for security and privacy](powerbi-custom-visuals-review-for-security-and-privacy.md)
-
-[Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)
-
-[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)
-
+[Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
+[Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
+[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
+[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)  
+[Review custom visuals for security and privacy](powerbi-custom-visuals-review-for-security-and-privacy.md)  
+[Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
+[Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
+[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

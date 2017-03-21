@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="03/10/2017"
    ms.author="asaxton"/>
 
 # Use developer tools to create custom visuals
@@ -360,9 +360,9 @@ Learn more about [Less](http://lesscss.org/).
 
 For tips about debugging your custom visual, see the [debugging guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
-## Submit your visual to the Power BI custom visual gallery
+## Submit your visual to the Office store
 
-You can [submit your visual](https://app.powerbi.com/visuals/info#submit) to be included in the Power BI visuals gallery. This involves sending an email with your pbiviz file attached.
+You can to be included in the Office store. For more information on this process, see [Publish custom visuals to the Office store](powerbi-developer-office-store.md).
 
 ## Troubleshooting
 
@@ -395,7 +395,8 @@ For more information, see [Running your visual](#running-your-visual) or [Server
 
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
+[Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
+[Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  
 [Less CSS](http://lesscss.org/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
