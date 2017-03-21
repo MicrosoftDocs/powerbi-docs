@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,20 +17,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2017"
+   ms.date="03/10/2017"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
 
-You've [downloaded a custom visual template](powerbi-custom-visuals-download-from-the-gallery.md) and saved it to your computer or another location.  The next step is to
+You've [downloaded a custom visual template](powerbi-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to
 import that visual template into a report so that it is added, as an option, to your Visualization pane.
 
 ![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
 
->[AZURE.IMPORTANT]
-A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well.
-When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
-
+> [AZURE.IMPORTANT] A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well. When a report with a custom visual is saved using the **Save As** option, a copy of the custom visual template is saved with the new report.
 
 1. Open Power BI Desktop and select the report where you want to add the custom visualization.  Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
 
@@ -63,13 +60,14 @@ When a report with a custom visual is saved using the **Save As** option, a copy
 
 6. Select the custom visual template to add it to your report as you would with any of the other templates in the Visualizations pane. Add fields and filters and build your visual.
 
-7.  Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
+7. Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
 
 ### See also
 
+[Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  
-[Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md)  
+[Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-Back to [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
+[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
 [The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

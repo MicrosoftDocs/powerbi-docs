@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="03/10/2017"
    ms.author="asaxton"/>
 
 # What can developers do with Power BI?
@@ -55,7 +55,7 @@ In the Apiary interactive API console, you can try all Power BI REST API operati
 [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)  
 [Integrate a tile into an app](powerbi-developer-integrate-tile.md)  
 [Integrate a report into an app](powerbi-developer-integrate-report.md)  
-[Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)  
+[Getting started with custom visuals developer tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) 
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 [Power BI Embedded Service](https://azure.microsoft.com/services/power-bi-embedded/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

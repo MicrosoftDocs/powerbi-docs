@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="03/20/2017"
    ms.author="asaxton"/>
 
 # Spark on HDInsight with DirectQuery
@@ -26,12 +26,7 @@ Spark on Azure HDInsight with DirectQuery allows you to create dynamic reports b
 
 > [AZURE.WARNING] Automatic tile refresh has been disabled for dashboard tiles built on Spark based datasets. You can select **Refresh Dashboard Tiles** to refresh manually. Reports are not impacted and should remain up-to-date. 
 
--   Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
--   Q&A is not available for DirectQuery datasets.
--   Schema changes are not picked up automatically.
--   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
-
-These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.  Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
+You can use the following steps to connect to your Spark on Azure HDInsight data source using DirectQuery within the Power BI service.
 
 1. Select **Get Data** at the bottom of the left navigation pane.
 
@@ -64,6 +59,20 @@ The server is always in the form \<clustername\>.azurehdinsight.net, and can be 
 ![](media/powerbi-spark-on-hdinsight-with-direct-connect/spark-server-name-parameter.png)
 
 The username and password can also be found in the Azure portal.
+
+## Limitations
+
+These restrictions and notes may change as we continue to improve the experiences. Additional documentation can be found at [Use BI tools with Apache Spark on Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
+
+- The Power BI service only supports a configuration of Spark 2.0 and HDInsight 3.5.
+
+- Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
+
+- Q&A is not available for DirectQuery datasets.
+
+- Schema changes are not picked up automatically.
+
+- Power BI supports 16,000 columns **across all tables** within a dataset. Power BI also includes an internal row number column per table. This means if you have 100 tables in the dataset, the available number of columns would be 15,900. Depending on the amount of data you are working with from your Spark data source, you may encounter this limitation.
 
 ## Troubleshooting
 

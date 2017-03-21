@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2017"
+   ms.date="03/20/2017"
    ms.author="mihart"/>
 
 # Opportunity Analysis sample for Power BI: Take a tour  
@@ -36,7 +36,7 @@ The Sales Manager relies on 2 measures of revenue:
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).  
+You can also [download just the dataset (Excel workbook) for this sample](powerbi-sample-datasets.md).  
 ![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity1.png)
 
 ## What is our dashboard telling us?  
@@ -100,4 +100,4 @@ This is a safe environment to play in. You can always choose not to save your ch
 ## Next steps: Connect to your data  
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
 
-[Download samples](http://go.microsoft.com/fwlink/?LinkId=528592)  
+[Download samples](powerbi-service-sample-datasets.md)  
