@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="03/21/2017"
    ms.author="davidi"/>
 
 # Data sources for the Power BI service
@@ -97,5 +97,5 @@ Data refresh is a super important part of Power BI, and much too deep to cover h
 For all data sources used in the Power BI service, the following considerations and limitations apply. There are other limitations that apply to specific features, but the following list apply to the Power BI service overall:
 
 -   **Dataset size limit** - there is a 1 GB limit for each dataset in the Power BI service.
--   **Row limit** - the maximum number of rows in your dataset cannot exceed 1 million rows when using DirectQuery.
+-   **Row limit** - the maximum number of rows in your dataset (when not using DirectQuery) is 2 billion, with three of those rows reserved (resulting in a usable maximum of 1,999,999,997 rows); the maximum number of rows when using DirectQuery is 1 million rows.
 -   **Column limit** - the maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This applies to the Power BI service and to datasets used in Power BI Desktop. Power BI uses an internal row number column per table included in the dataset, which means the maximum number of columns is 16,000 minus one for each table used in the dataset.
