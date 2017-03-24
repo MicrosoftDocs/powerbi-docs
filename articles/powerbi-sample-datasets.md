@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="03/23/2017"
    ms.author="mihart"/>
 
 #  What sample data is available to use with Power BI?
@@ -97,10 +97,10 @@ Now you know what's available. Time to learn how to get ahold of these samples.
 ## How to get the samples
 As you read above, the samples are available in several formats: content packs, Excel workbooks, and .pbix files. We'll describe how to use each of these, starting with content packs.
 
-### The Power BI samples as content packs
+## The Power BI samples as content packs
 Content packs are the only sample format that is available from within Power BI; you don't have to leave Power BI to find them. A content pack is essentially a bundle of one or more dashboard, dataset, and report that someone creates and that can be used with Power BI service. People create content packs to share with colleagues. Each of the Power BI sample content packs contains a dataset, report, and dashboard.  Content packs are not available for Power BI Desktop. If you'd like to learn more about content packs, read [Intro to content packs in Power BI](powerbi-service-organizational-content-packs-introduction/).
 
-####  Get and open a sample content pack in Power BI service
+###  Get and open a sample content pack in Power BI service
 1. Open Power BI service (app.powerbi.com) and log in.
 
 2. In the bottom left corner select **Get data**.
@@ -121,7 +121,7 @@ Content packs are the only sample format that is available from within Power BI;
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the sample content packs or just open Power BI service and explore.
 
-### The Power BI samples as Excel files
+## The Power BI samples as Excel files
 Each of the sample content packs is also available as an Excel workbook. The Excel workbooks are designed to be used with Power BI service.  
 
 1.  Download the files individually using the links below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
@@ -182,7 +182,7 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
     ![](media/powerbi-sample-datasets/power-bi-ready.png)
 
-#### (Optional) Take a look at the Excel samples from inside Excel itself
+### (Optional) Take a look at the Excel samples from inside Excel itself
 Want to understand how the data in an Excel workbook gets converted to Power BI datasets and reports? Opening the Excel samples ***in Excel*** and exploring the worksheets provides some of the answers.
 
 - When you first open a sample workbook in Excel, you may see two warnings. The first says the workbook is in Protected View. Select **Enable Editing**. The second may say that the workbook has external data connections. Select **Enable Content**.
@@ -199,10 +199,25 @@ Want to understand how the data in an Excel workbook gets converted to Power BI 
 
 
 
-### The Power BI samples as .pbix files
+## The Power BI samples as .pbix files
 Each of the sample content packs is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
 
-1.  Download the files individually using the links below (coming soon).
+1.  Download the files individually using the links below.
+        -  [Retail Analysis Sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail Analysis Sample PBIX.pbix)
+
+        -   [Supplier Quality Analysis Sample](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+
+        -   [Human Resources Sample](coming soon)
+
+        -   [Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+
+        -   [Opportunity Tracking Sample](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity Analysis Sample PBIX.pbix)
+
+        -   [IT Spend Analysis Sample](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT Spend Analysis Sample PBIX.pbix)
+
+        -   [Procurement Analysis Sample](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement Analysis Sample PBIX.pbix)
+
+        -   [Sales and Marketing Sample](coming soon)
 
 2. Save the downloaded file.
 

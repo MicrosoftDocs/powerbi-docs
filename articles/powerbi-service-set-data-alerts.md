@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,12 +18,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/21/2016"
+   ms.date="03/22/2017"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
 
-Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards, KPIs, and gauges. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), [Power BI mobile app for Windows](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](powerbi-service-flow-integration.md).
+Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts can only be set up on tiles pinned from report visuals, and only on gauges, KPIs and cards. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile app for iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), [Power BI mobile app for Windows](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](powerbi-service-flow-integration.md).
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -36,7 +36,7 @@ Watch Amanda add some alerts to tiles on her dashboard. Then follow the step-by-
 
 This example uses a card tile from the Retail Analysis sample dashboard.
 
-1.  Start on a dashboard. From a dashboard tile, select the ellipses.
+1.  Start on a dashboard. From a dashboard gauge, KPI, or card tile, select the ellipses.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-card.png)
 
