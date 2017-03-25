@@ -37,8 +37,8 @@ URL?filter=***Table***/***Field*** eq '***value***'
 - **Table** and **Field** names are case sensitive, **value** is not.
 - Fields that are hidden from report view can still be filtered.
 - **Value** has to be enclosed with single quotes.
-- Field type has to be string
-- Table and field names cannot have any spaces
+- Field type has to be .
+- Table and field names cannot have any spaces.
 
 If it's still confusing, continue reading and we'll break it down.  
 
@@ -47,7 +47,7 @@ Let’s assume that the URL to our report is the following.
 
 ![](media/powerbi-service-url-filters/power-bi-filter-urls6.png)
 
-And we see in our map visualization that we have stores in North Carolina.
+And we see in our map visualization (above) that we have stores in North Carolina.
 
 >**Note**: This example is based on the [Retail Analysis sample](powerbi-sample-datasets.md).
 
@@ -59,6 +59,8 @@ To filter the report to show data only for stores in "NC" (North Carolina), appe
 
 >**Note**: *NC* is a value stored in the **Territory** field of the **Store** table.
 
+Our report is filtered for North Carolina; all the visualizations on the report page show data for only North Carolina.
+
 ![](media/powerbi-service-url-filters/power-bi-report4.png)
  
  
@@ -69,9 +71,9 @@ For example, we have two fields: Territory and Chain. In Power BI Desktop, [crea
 
 TerritoryChain = [Territory] & " - " & [Chain]
 
-Publish the report to Power BI service and then filter to display data for only Lindseys stores in NC. The underlines in the URL below are actually spaces.
+Publish the report to Power BI service and then use the URL query string to filter to display data for only Lindseys stores in NC.
 
-https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain_eq_'NC__–__Lindseys'__
+https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
 ##  Pin a tile from a filtered report
 Once we've filtered the report using query string parameters, we can pin visualizations from that report to our dashboard. The tile on the dashboard will display the filtered data and selecting that dashboard tile will open the report that was used to create it.  However, the filtering we did using the URL is not saved with the report and when the dashboard tile is selected, the report opens in its unfiltered state.  This means that the data displayed in the dashboard tile will not match the data displayed in the report visualization.
@@ -82,8 +84,8 @@ There may be some cases where this will be helpful from an end user experience w
 
 There are a couple of things to be aware of when using the query string parameters.
 - Query string filtering does not work with [Publish to web](powerbi-service-publish-to-web) URLs.
-- Field type has to be string.
-- Table and field names cannot have any spaces.
+- Field type has to be string.  
+- Table and field names cannot have any spaces.  
 
 ## See also  
 [Reports in Power BI](powerbi-service-reports.md)  
