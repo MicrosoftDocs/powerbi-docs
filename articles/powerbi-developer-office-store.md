@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="03/28/2017"
    ms.author="asaxton"/>
 # Publish custom visuals to the Office store
 
@@ -112,7 +112,7 @@ Follow the below steps to complete the submission.
 
     - *App name (for this language):* Enter the title of your app as it should appear in the storefront.
     - *Short description:* Enter the short description of your app, up to 100 characters, as it should appear in the storefront. This description will show up in the top level pages along with the logo. You can use the description from the pbiviz package.
-    - *Long description:* Provide a more detailed description of your app that customers will see on your app details page.
+    - *Long description:* Provide a more detailed description of your app that customers will see on your app details page. If you'd like to let the community improve your visual by making it open source, provide the link to the public repository, such as GitHub, here.
 
 11. Upload at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 512px (width) x 384px (height). It can be no larger than 300kb for the file size. *For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot.*
 

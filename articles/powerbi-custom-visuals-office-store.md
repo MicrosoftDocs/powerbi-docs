@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="03/28/2017"
    ms.author="asaxton"/>
 # Download and use custom visuals from the Office store
 
@@ -26,6 +26,8 @@ Learn how you can discover and use custom visuals from the Office store for use 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-visual-store.png)
 
 What is the Office store? Simply put, it is the place to find apps (add-in) for your Office 365 software. The [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) connects millions of users of Office 365 to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
+
+> [AZURE.NOTE] The [custom visual gallery](https://visuals.powerbi.com) is still available while we are moving existing visuals over to the Office store. 
 
 ## Power BI visualizations
 

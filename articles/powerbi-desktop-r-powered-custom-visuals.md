@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="03/28/2017"
    ms.author="davidi"/>
 
 # Use R-powered custom visuals in Power BI
@@ -74,7 +74,7 @@ From there, you can add data to the visual just as you would any other **Power B
 
 Like any other **Power BI Desktop** visual, you can publish this report with its R-powered visuals to the **Power BI service** and share it with others.
 
-Check the [R-powered custom visuals](http://app.powerbi.com/visuals) library often, since new visuals are being added all the time.
+Check the [R-powered custom visuals](https://app.powerbi.com/visuals/R-powered) library often, since new visuals are being added all the time.
 
 
 ### Contributing R-powered custom visuals
