@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2017"
+   ms.date="03/29/2017"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
@@ -118,4 +118,4 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 - [Create a Microsoft Flow that includes a data alert](powerbi-service-flow-integration.md)
 - [Set data alerts on your iphone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
 - [Get started with Power BI](powerbi-service-get-started.md)
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+- More questions? [Try the Power BI Community](http://community.powerbi.com/)

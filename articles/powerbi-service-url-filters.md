@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2017"
+   ms.date="03/29/2017"
    ms.author="mihart"/>
 
 # Filter a report using query string parameters in the URL
@@ -76,9 +76,9 @@ Publish the report to Power BI service and then use the URL query string to filt
 https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
 ##  Pin a tile from a filtered report
-Once we've filtered the report using query string parameters, we can pin visualizations from that report to our dashboard. The tile on the dashboard will display the filtered data and selecting that dashboard tile will open the report that was used to create it.  However, the filtering we did using the URL is not saved with the report and when the dashboard tile is selected, the report opens in its unfiltered state.  This means that the data displayed in the dashboard tile will not match the data displayed in the report visualization.
+Once you've filtered the report using query string parameters, you can pin visualizations from that report to your dashboard. The tile on the dashboard will display the filtered data and selecting that dashboard tile will open the report that was used to create it.  However, the filtering you did using the URL is not saved with the report and when the dashboard tile is selected, the report opens in its unfiltered state.  This means that the data displayed in the dashboard tile will not match the data displayed in the report visualization.
 
-There may be some cases where this will be helpful from an end user experience when interacting between the dashboard and reports.
+There may be some cases where this will be helpful when you'd like to see different results; filtered on the dashboard and unfiltered in the report.
 
 ##  Limitations and troubleshooting
 
