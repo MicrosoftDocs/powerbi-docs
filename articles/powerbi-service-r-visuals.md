@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2017"
+   ms.date="03/29/2017"
    ms.author="davidi"/>
 
 # Creating R visuals in the Power BI service
@@ -99,6 +99,8 @@ R visuals in the Power BI service have a few limitations:
 -   R visuals currently do not print with dashboard and reports printing
 
 -   R visuals are currently not supported in the DirectQuery mode of Analysis Services
+
+-   Chinese and Japanese fonts are not currently supported in R in the Power BI service. The Power BI team is actively working to include support for these fonts.
 
 
 ## Overview of R packages
