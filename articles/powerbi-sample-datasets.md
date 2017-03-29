@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/23/2017"
+   ms.date="03/29/2017"
    ms.author="mihart"/>
 
 #  What sample data is available to use with Power BI?
@@ -207,7 +207,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 
         -   [Supplier Quality Analysis Sample](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
 
-        -   [Human Resources Sample](coming soon)
+        -   [Human Resources Sample](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix)
 
         -   [Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
 
@@ -217,7 +217,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 
         -   [Procurement Analysis Sample](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement Analysis Sample PBIX.pbix)
 
-        -   [Sales and Marketing Sample](coming soon)
+        -   [Sales and Marketing Sample](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales and Marketing Sample PBIX.pbix)
 
 2. Save the downloaded file.
 

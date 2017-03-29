@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/23/2017"
+   ms.date="03/28/2017"
    ms.author="mihart"/>
 
 # Filter a report using query string parameters in the URL
@@ -37,7 +37,7 @@ URL?filter=***Table***/***Field*** eq '***value***'
 - **Table** and **Field** names are case sensitive, **value** is not.
 - Fields that are hidden from report view can still be filtered.
 - **Value** has to be enclosed with single quotes.
-- Field type has to be .
+- Field type has to be string.
 - Table and field names cannot have any spaces.
 
 If it's still confusing, continue reading and we'll break it down.  
@@ -84,7 +84,9 @@ There may be some cases where this will be helpful from an end user experience w
 
 There are a couple of things to be aware of when using the query string parameters.
 - Query string filtering does not work with [Publish to web](powerbi-service-publish-to-web) URLs.
+
 - Field type has to be string.  
+
 - Table and field names cannot have any spaces.  
 
 ## See also  
