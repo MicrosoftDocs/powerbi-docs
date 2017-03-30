@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="03/29/2017"
    ms.author="davidi"/>
 # Tutorial: Create your own measures in Power BI Desktop
 
@@ -73,7 +73,7 @@ With Power BI Desktop, you create your own measures with the Data Analysis Expre
 
 There are over 200 DAX functions that do everything from simple aggregations like Sum and Average to more complex statistical and filtering functions. We’re not going to go into too much detail on the DAX language here, but there are many resources to help you learn more. After you've gone through this tutorial, be sure to see [DAX basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md).
 
-When we create our own measures, they’re added to the Fields list for the table we want. This is known as an *explicit* measure, and it will remain in our table as a field. Some of the great advantages to explicit measures are that we can name them what we want, making them more identifiable. We can also use them as an argument in other DAX expressions, and we can create measures that perform complex calculations very quickly.
+When we create our own measures, they’re added to the Fields list for the table we want. This is known as a *model* measure, and it will remain in our table as a field. Some of the great advantages of model measures are that we can name them what we want, making them more identifiable. We can also use them as an argument in other DAX expressions, and we can create measures that perform complex calculations very quickly.
 
 ## Let’s create our own measure
 

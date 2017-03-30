@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/11/2017"
+   ms.date="03/29/2017"
    ms.author="davidi"/>
 
 # Power BI publisher for Excel
@@ -125,7 +125,7 @@ There are a few things to consider in this release of **Power BI publisher for E
 -   **Shared data** - Data that has been shared with you, but isn't directly visible to you in Power BI, is not available in **Connect to Data**.
 -   **SSAS on-premises** - If the dataset you select originates from an on-premises SQL Server Analysis Services (SSAS) and the dataset in Power BI uses DirectQuery to access the data, **Power BI publisher for Excel** connects to that data through the on-premises network connection, and does *not* go through Power BI to connect to that data. As such, any user trying to connect to such datasets must be connected to the on-premises network, and is authenticated for access to that data using the authentication method employed by the Analysis Services instance where the data is stored.
 -   **Required drivers** - **Power BI publisher for Excel** installs all the necessary drivers for this feature to work, and does so automatically. Among those automatically installed drivers is the Excel OLE DB driver for Analysis Services; if that driver is removed by the user (or for any other reason), the connection to Power BI data will not work.
--   **Dataset must have Measures** - The dataset must have explicit Measures defined in order for Excel to treat the Measures as values in PivotTables, and to correctly analyze the data. Learn more about [Measures](powerbi-desktop-measures.md).
+-   **Dataset must have measures** - The dataset must have model measures defined in order for Excel to treat the measures as values in PivotTables, and to correctly analyze the data. Learn more about [measures](powerbi-desktop-measures.md).
 -   **Support for Groups** - Datasets shared with people outside the specified group are not supported, and cannot be connected to.
 -   **Free versus Pro subscriptions** - Activities associated with groups are not supported for free users of Power BI, and thus won't see any datasets or reports shared with a group in their own workspace.
 -   **Shared reports or datasets** - Reports or datasets that were shared with you cannot be connected to.
