@@ -1,6 +1,6 @@
 <properties
    pageTitle="Set data alerts in the Power BI mobile apps"
-   description="Learn to set alerts to notify you when data in a dashboard changes beyond limits you set in the Power BI mobile apps and in the Power BI service."
+   description="Learn to set alerts in the Power BI mobile apps and in the Power BI service to notify you when data in a dashboard changes beyond limits you set."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="03/31/2017"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI mobile apps
@@ -28,7 +28,7 @@ Applies to:
 |:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
 | iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
 
-You can set alerts in the Power BI mobile apps and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts on your mobile device and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+You can set alerts in the Power BI mobile apps and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges, but not with streaming data. You can set data alerts on your mobile device and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
 
 > [AZURE.WARNING] Data-driven alert notifications provide information about your data. If your device gets stolen, we recommend going to the Power BI service to turn off all data-driven alert rules. 
 > 
@@ -196,8 +196,9 @@ Data sources are often set to refresh daily, although some refresh more often. W
 - Alerts currently aren't supported for Bing tiles or card tiles with date/time measures.
 - Alerts only work with numeric data.
 - Alerts only work on data that is refreshed. They don't work on static data.
+- Alerts don't work with tiles that contain streaming data.
 
-### See also  
+## See also  
 - [Manage your alerts in the Power BI service](powerbi-service-set-data-alerts.md)
 - [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
 - [Get started with Power BI](powerbi-service-get-started.md)  

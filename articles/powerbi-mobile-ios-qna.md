@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="03/31/2017"
    ms.author="maggies"/>
 
 # Ask questions about your data in the iOS mobile apps (Tutorial)
@@ -68,7 +68,7 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
 
 8. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
 
-    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale.png)
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
 
 9. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
 
