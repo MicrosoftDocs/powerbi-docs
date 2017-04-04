@@ -20,17 +20,17 @@
    ms.date="04/04/2017"
    ms.author="davidi"/>
 
-# Frequently Asked Questions for Power BI for German government customers
+# Frequently Asked Questions for Power BI for Germany Cloud customers
 
-The **Power BI service** has a version available for German government customers, often referred to as Microsoft Cloud Deutschland (MCD). The **Power BI service** version discussed in this article is specific to German government customers, and is separate and different from the commercial version of the **Power BI service**, or Power BI services provided to other government customers.
+The **Power BI service** has a version available for European Union/European Free Trade Agreement (EU/EFTA) customers, often referred to as Microsoft Cloud Deutschland (MCD). The **Power BI service** version discussed in this article is specific to EU/EFTA customers, and is separate and different from the commercial version of the **Power BI service**, or Power BI services provided to government customers.
 
 ![](media/powerbi-service-govde-faq/govde-faq_01.png)
 
-The following questions and answers provide important information for Power BI Pro Service in Microsoft Cloud Deutschland (MCD), which is the Power BI service cloud specifically provided for German government customers.
+The following questions and answers provide important information for Power BI Pro Service in Microsoft Cloud Deutschland (MCD), which is the Power BI service cloud specifically provided for EU/EFTA customers.
 
 1.	**What is the Power BI service for Germany Cloud?**
 
-    The Power BI service for German government customers, also referred to as Microsoft Cloud Deutschland (MCD), is an EU/EFTA compliant cloud with the Power BI service delivered from German datacenters. All customer data in the Power BI service for Germany cloud is stored at rest in Germany with T-Systems working as the independent German data trustee, and with physical and logical access to data controlled by German law. The Power BI service for Germany cloud requires a distinct and separate account from the commercial version of the Power BI service. Learn more about Microsoft Cloud Deutschland [here](https://azure.microsoft.com/overview/clouds/germany/).
+    The Power BI service for EU/EFTA customers, also referred to as Microsoft Cloud Deutschland (MCD), is an EU/EFTA compliant cloud with the Power BI service delivered from German datacenters. All customer data in the Power BI service for EU/EFTA cloud is stored at rest in Germany with T-Systems working as the independent German data trustee, and with physical and logical access to data controlled by German law. The Power BI service for EU/EFTA cloud requires a distinct and separate account from the commercial version of the Power BI service. Learn more about Microsoft Cloud Deutschland [here](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud).
 
 2.	**Where can I find pricing and sign up information for the Power BI Germany Cloud?**
 
@@ -63,13 +63,9 @@ The following questions and answers provide important information for Power BI P
     -	Power BI Embedded (separate metered ISV licensing, will be offered through [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) in the future)
 
 
-7.	**When will be Power BI Embedded be available in Microsoft Azure Germany Cloud?**
+7.	**Where can I find the Power BI service for Germany cloud specific configuration information for use and integration in my applications?**
 
-    Power BI Embedded is separate, metered licensing service that will be offered through [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/). We're working on making Power BI Embedded available in the Germany Cloud. A limited private preview is available now. Please contact your Microsoft representative or Microsoft Azure Germany customer support if you're interested in preview of the Power BI Embedded service.
-
-8.	**Where can I find the Power BI service for Germany cloud specific configuration information for use and integration in my applications?**
-
-    We updated our [SaaS Embedding developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples) and [PaaS Embedding developer samples](https://github.com/Azure-Samples/power-bi-embedded-integrate-report-into-web-app/) with Germany and other Power BI clouds specific configuration information. Please look at the **Cloud Configs** folder in samples for cloud specific configuration end points. The following table lists  various configuration end points for the Power BI service for Germany cloud (and Public Cloud for cross-reference).
+    We updated our [SaaS Embedding developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples) with Germany and other Power BI clouds specific configuration information. Please look at the **Cloud Configs** folder in samples for cloud specific configuration end points. The following table lists  various configuration end points for the Power BI service for Germany cloud (and Public Cloud for cross-reference).
 
 |**Endpoint name and/or Usage**|**Power BI service for Germany cloud URL**|**Equivalent URL in Public Cloud (for cross-reference)**|
 |---|---|---|
@@ -83,9 +79,6 @@ The following questions and answers provide important information for Power BI P
 |Register an Application for Power BI (For Embedded)|[https://app.powerbi.de/apps](https://app.powerbi.de/apps)|[https://app.powerbi.com/apps](https://app.powerbi.com/apps)|
 |Azure Portal (For Embedded)|[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/)|[https://portal.azure.com/](https://portal.azure.com/)|
 |Community|[https://community.powerbi.com/](https://community.powerbi.com/)|[https://community.powerbi.com/](https://community.powerbi.com/)|
-
-
-We hope you find this information useful.
 
 
 ## More Information

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/03/2017"
+   ms.date="04/04/2017"
    ms.author="davidi"/>
 
 # Connect to datasets in the Power BI service from Power BI Desktop (Preview)
@@ -120,5 +120,7 @@ In this preview release of the **Power BI service live connection**, there are a
 -   Since this is a live connection, RLS (row- and role-level security), OneDrive for Business, and other such connection behaviors are enforced, just as they are when connected to **SQL Server Analysis Services**.
 -   When selecting which dataset to connect to in the **Power BI service**, the search box only applies to workspaces that have been expanded.
 -   If you modify the original shared .pbix file, the dataset and report that is shared in the **Power BI service** is overwritten.
+-   You cannot replace the originally shared report. Attempts to do so result in a warning that prompts you to rename the file, and publish.
 -   If you delete the shared dataset in the **Power BI service**, then other **Power BI Desktop** (.pbix files) will no longer work properly or display their visuals.
 -   For Content Packs, you must first create a copy of a content pack before using it as a basis for sharing a .pbix report and dataset to the **Power BI service**.
+-   For Content Packs from *My Organization*, once copied, you cannot replace the report created on the service and/or a report created as part of copying a Content Pack with a live connection. Attempts to do so result in a warning that prompts you to rename the file, and publish. In this situation, you can only replace published live connected reports.

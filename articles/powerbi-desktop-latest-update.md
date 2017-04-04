@@ -44,7 +44,7 @@ The following updates are new to Power BI Desktop this month:
 
 ### Analytics:
 
--   Quick measures [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures) [[article]](powerbi-desktop-quick-measures.md)
+-   Quick measures [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures) [[in-depth blog]](https://powerbi.microsoft.com/blog/quick-measures-preview/) [[article]](powerbi-desktop-quick-measures.md)
 -   Show value as [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures)
 -   Q&A in Spanish (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=10m31s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#QandA)
 
