@@ -73,16 +73,16 @@ The following questions and answers provide important information for Power BI P
 
 |**Endpoint name and/or Usage**|**Power BI service for Germany cloud URL**|**Equivalent URL in Public Cloud (for cross-reference)**|
 |---|---|---|
-|Home Page, Sign Up and Sign In|https://powerbi.microsoft.com/power-bi-germany/|https://powerbi.microsoft.com/|
-|Power BI Service direct sign in|https://app.powerbi.de/?noSignUpCheck=1|https://app.powerbi.com/?noSignUpCheck=1|
-|Service API|https://api.powerbi.de/|https://api.powerbi.com/|
-|Office Portal for user license management, service health status and support requests by administrators|https://portal.office.de/|https://portal.office.com/|
-|AAD Authority Uri|https://login.microsoftonline.de/common/oauth2/authorize/|https://login.microsoftonline.com/common/oauth2/authorize/|
-|Power BI Service Resource Uri|https://analysis.cloudapi.de/powerbi/api|https://analysis.windows.net/powerbi/api|
-|Custom Visuals Library|https://app.powerbi.de/visuals/|https://app.powerbi.com/visuals/|
-|Register an Application for Power BI (For Embedded)|https://app.powerbi.de/apps|https://app.powerbi.com/apps|
-|Azure Portal (For Embedded)|https://portal.microsoftazure.de/|https://portal.azure.com/|
-|Community|https://community.powerbi.com/|https://community.powerbi.com/|
+|Home Page, Sign Up and Sign In|[https://powerbi.microsoft.com/power-bi-germany/](https://powerbi.microsoft.com/power-bi-germany/)|[https://powerbi.microsoft.com/](https://powerbi.microsoft.com/)|
+|Power BI Service direct sign in|[https://app.powerbi.de/?noSignUpCheck=1](https://app.powerbi.de/?noSignUpCheck=1)|[https://app.powerbi.com/?noSignUpCheck=1](https://app.powerbi.com/?noSignUpCheck=1)|
+|Service API|[https://api.powerbi.de/](https://api.powerbi.de/)|[https://api.powerbi.com/](https://api.powerbi.com/)|
+|Office Portal for user license management, service health status and support requests by administrators|[https://portal.office.de/](https://portal.office.de/)|[https://portal.office.com/](https://portal.office.com/)|
+|AAD Authority Uri|[https://login.microsoftonline.de/common/oauth2/authorize/](https://login.microsoftonline.de/common/oauth2/authorize/)|[https://login.microsoftonline.com/common/oauth2/authorize/](https://login.microsoftonline.com/common/oauth2/authorize/)|
+|Power BI Service Resource Uri|[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api)|[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api)|
+|Custom Visuals Library|[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/)|[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/)|
+|Register an Application for Power BI (For Embedded)|[https://app.powerbi.de/apps](https://app.powerbi.de/apps)|[https://app.powerbi.com/apps](https://app.powerbi.com/apps)|
+|Azure Portal (For Embedded)|[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/)|[https://portal.azure.com/](https://portal.azure.com/)|
+|Community|[https://community.powerbi.com/](https://community.powerbi.com/)|[https://community.powerbi.com/](https://community.powerbi.com/)|
 
 
 We hope you find this information useful.
