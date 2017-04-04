@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2017"
+   ms.date="03/28/2017"
    ms.author="davidi"/>
 
 # R packages in the Power BI service
@@ -180,7 +180,6 @@ The following table shows which packages **are supported** in the Power BI servi
 |ggmap |2.6.1 |[https://cran.r-project.org/web/packages/ggmap/index.html ](https://cran.r-project.org/web/packages/ggmap/index.html )|
 |ggmcmc  |0.8 |[ https://cran.r-project.org/web/packages/ggmcmc/index.html  ]( https://cran.r-project.org/web/packages/ggmcmc/index.html  )|
 |ggplot2  | 2.1.0  |[ https://cran.r-project.org/web/packages/ggplot2/index.html  ]( https://cran.r-project.org/web/packages/ggplot2/index.html  )|
-|ggrepel |0.5 |[https://cran.r-project.org/web/packages/ggrepel/index.html ](https://cran.r-project.org/web/packages/ggrepel/index.html )|
 |ggthemes  | 3.0.2  |[ https://cran.r-project.org/web/packages/ggthemes/index.html  ]( https://cran.r-project.org/web/packages/ggthemes/index.html  )|
 |glmmBUGS  |2.3 |[ https://cran.r-project.org/web/packages/glmmBUGS/index.html  ]( https://cran.r-project.org/web/packages/glmmBUGS/index.html  )|
 |glmnet  | 2.0-5  |[ https://cran.r-project.org/web/packages/glmnet/index.html  ]( https://cran.r-project.org/web/packages/glmnet/index.html  )|
