@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/08/2017"
+   ms.date="04/03/2017"
    ms.author="davidi"/>
 
 # Use the new Matrix visual in Power BI Desktop (Preview)
@@ -132,10 +132,8 @@ In this preview release of the **Matrix Preview** visual, there are a few limita
 -   Drill on columns can only be done by using the right-click menu, and there's currently no indication on the visual that you can drill into row or column groups
 -   You can only expand all items in a level at once, rather than expanding one category at a time
 -   **See Records** may appear on a menu when right-clicking a column headers, but it is not operational
--   You cannot sort by clicking on column headers (expected to be enabled for General Availability)
 -   There currently is no *Grand total* row
 -   Turning off the subtotal row in stepped layout doesn't have any effect
--   Resizing of columns is not available (expected to be enabled for General Availability)
 -   Column headers may be truncated if inner groups have shorter text than the outer group
 -   Changing the stepped layout indentation shouldn't indent the outermost row group's indent
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/08/2017"
+   ms.date="04/03/2017"
    ms.author="davidi"/>
 
 
@@ -90,16 +90,16 @@ The following image shows the **Get Data** window for **Database**.
 
 The **Azure** category provides the following data connections:
 
--   Microsoft Azure SQL Database
--   Microsoft Azure SQL Data Warehouse
--   Microsoft Azure Analysis Services database (Beta)
--   Microsoft Azure Data Marketplace
--   Microsoft Azure Blob Storage
--   Microsoft Azure Table Storage
--   Microsoft Azure DocumentDB (Beta)
--   Microsoft Azure Data Lake Store
--   Microsoft Azure HDInsight
--   Microsoft Azure HDInsight Spark (Beta)
+-   Azure SQL Database
+-   Azure SQL Data Warehouse
+-   Azure Analysis Services database (Beta)
+-   Azure Data Marketplace
+-   Azure Blob Storage
+-   Azure Table Storage
+-   Azure DocumentDB (Beta)
+-   Azure Data Lake Store
+-   Azure HDInsight
+-   Azure HDInsight Spark (Beta)
 
 
 
@@ -110,6 +110,7 @@ The following image shows the **Get Data** window for **Azure**.
 
 The **Online Services** category provides the following data connections:
 
+-   Power BI service
 -   SharePoint Online List
 -   Microsoft Exchange Online
 -   Dynamics 365 (online)
@@ -124,6 +125,7 @@ The **Online Services** category provides the following data connections:
 -   comScore Digital Analytix (Beta)
 -   Facebook
 -   GitHub (Beta)
+-   Kusto (Beta)
 -   MailChimp (Beta)
 -   Marketo (Beta)
 -   Mixpanel (Beta)
