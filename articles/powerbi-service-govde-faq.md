@@ -67,11 +67,11 @@ The following questions and answers provide important information for Power BI P
 
     Power BI Embedded is separate, metered licensing service that will be offered through [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/). We're working on making Power BI Embedded available in the Germany Cloud. A limited private preview is available now. Please contact your Microsoft representative or Microsoft Azure Germany customer support if you're interested in preview of the Power BI Embedded service.
 
-8.	Where can I find the Power BI service for Germany cloud specific configuration information for use and integration in my applications?
+8.	**Where can I find the Power BI service for Germany cloud specific configuration information for use and integration in my applications?**
 
     We updated our [SaaS Embedding developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples) and [PaaS Embedding developer samples](https://github.com/Azure-Samples/power-bi-embedded-integrate-report-into-web-app/) with Germany and other Power BI clouds specific configuration information. Please look at the **Cloud Configs** folder in samples for cloud specific configuration end points. The following table lists  various configuration end points for the Power BI service for Germany cloud (and Public Cloud for cross-reference).
 
-|Endpoint name and/or Usage|Power BI service for Germany cloud URL|Equivalent URL in Public Cloud (for cross-reference)|
+|**Endpoint name and/or Usage**|**Power BI service for Germany cloud URL**|**Equivalent URL in Public Cloud (for cross-reference)**|
 |---|---|---|
 |Home Page, Sign Up and Sign In|https://powerbi.microsoft.com/power-bi-germany/|https://powerbi.microsoft.com/|
 |Power BI Service direct sign in|https://app.powerbi.de/?noSignUpCheck=1|https://app.powerbi.com/?noSignUpCheck=1|
