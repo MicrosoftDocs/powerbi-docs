@@ -17,16 +17,16 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/07/2017"
+   ms.date="04/03/2017"
    ms.author="davidi"/>
 
 # What's new in the latest Power BI Desktop update?
 
-## March 2017 Update (2.44.4675.422)
+## April 2017 Update (2.45.4704.442)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-We feel lucky as a four-leaf clover to announce all the new features in the March update of **Power BI Desktop**. The links beside each update mean the following:
+We're not fooling when we say we're excited to announce a whole swath of new features in the April 2017 update of **Power BI Desktop**. The links beside each update mean the following:
 
 -   **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 -   Some features have an **[article]** that provides more detail.
@@ -39,37 +39,37 @@ The following updates are new to Power BI Desktop this month:
 
 ### Report View:
 
--   New matrix visual (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=18s) [[article]](powerbi-desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
--   Numeric range slicer (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=8m20s) [[article]](powerbi-desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#rangeSlicer)
--   Data labels on pie and donut visuals - percent of total [[video]](https://youtu.be/CaRTON3lJqw?t=10m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#dataLabels)
--   Cross-highlight using multiple series [[video]](https://youtu.be/CaRTON3lJqw?t=11m57s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#crossHighlight)
--   Textbox - ability to choose font color [[video]](https://youtu.be/CaRTON3lJqw?t=13m17s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#textbox)
--   Report theming (Preview) [[video]](https://youtu.be/CaRTON3lJqw?t=15m8s) [[article]](powerbi-desktop-report-themes.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#theme)
+-   Rename axis titles [[video]](https://youtu.be/AWMaIaI8G2Y?t=25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#renameAxisTitles)
+-   New matrix visual enhancements: column sorting, column resizing, and word wrap (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[article]](powerbi-desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
 
 ### Analytics:
 
--   Clustering - now generally available [[video]](https://youtu.be/CaRTON3lJqw?t=19m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#clustering)
+-   Quick measures [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures) [[article]](powerbi-desktop-quick-measures.md)
+-   Show value as [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures)
+-   Q&A in Spanish (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=10m31s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#QandA)
 
 ### Data Connectivity:
 
--   New or enhanced data connectors [[video]](https://youtu.be/CaRTON3lJqw?t=21m14s):
-    -   Azure Analysis Services database (Beta) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#azureAnalysisServices)
-    -   Azure Data Lake Store - now generally available [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#azureDataLakeStore)
-    -   DB2 connector - option to specify package collection [[video]](https://youtu.be/CaRTON3lJqw?t=22m) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#db2)
-    -   Combine binaries - specify a sample file to use [[video]](https://youtu.be/CaRTON3lJqw?t=22m41s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#combineBinaries)
+-   Connect to datasets in the Power BI service (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=12m39s) [[article]](powerbi-desktop-report-lifecycle-datasets.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#powerBIservice)
+-   New or enhanced data connectors:
+    -  Redshift Connector: beta support, and Publish to Power BI service  [[video]](https://youtu.be/AWMaIaI8G2Y?t=14m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#redshift)
+    -   SAP HANA and BW: enhancements to parameter input experience [[video]](https://youtu.be/AWMaIaI8G2Y?t=15m17s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#SAP)
 
-### Query Editing improvements
+### Query Editing:
 
--   Split column by delimiter - automatic detection of delimiter character [[video]](https://youtu.be/CaRTON3lJqw?t=23m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#splitColumn)
+-   Add Column from Example [[video]](https://youtu.be/-ykbVW9wQfw) [[article]](powerbi-desktop-add-column-from-example.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#addColumnByExample) [[another blog]](https://powerbi.microsoft.com/blog/a-sneak-preview-of-the-new-add-column-from-examples-data-transformation/)
+-   Split column (by delimiter/number of characters) into rows [[video]](https://youtu.be/AWMaIaI8G2Y?t=16m39s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#splitColumnIntoRows)
+-   Group by: basic mode [[video]](https://youtu.be/AWMaIaI8G2Y?t=17m51s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#basicGroupBy)
+-   Go to column [[video]](https://youtu.be/AWMaIaI8G2Y?t=18m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#goToColumn)
 
 
 >NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaRTON3lJqw" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" frameborder="0" allowfullscreen></iframe>
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 

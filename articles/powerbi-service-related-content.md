@@ -29,6 +29,8 @@ As you've probably already discovered, reports are built on datasets, report vis
 
 ![](media/powerbi-service-related-content/power-bi-view-related-dashboard.png)
 
+>**NOTE**: The Related content feature does not work for streaming datasets.
+
 ## Enable the new navigation preview
 
 1.  To get started, make sure you’ve enabled the new navigation preview. From Power BI service, select the cog icon ![](media/powerbi-service-related-content/power-bi-settings-icon.png) and choose **Settings**.
@@ -109,6 +111,8 @@ From here, you can take direct action on the related content.  For example, sele
 - To open Related content for a report, you need to be in [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md).
 
 - Related content is not available in Power BI Desktop.
+
+- The Related content feature does not work for streaming datasets.
 
 ### See also
 
