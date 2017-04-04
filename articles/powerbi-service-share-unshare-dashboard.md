@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="03/17/2017"
    ms.author="ajayan"/>
 
 # Share a dashboard and reports with colleagues and others
@@ -109,6 +109,8 @@ They can't edit any content in this dashboard or report. They can interact with 
 Only your direct recipients can see the shared dashboard. In the example above, only Vicki@contoso.com can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
 
 People outside your organization can't see any data if role- or row-level security is implemented on Analysis Services tabular models on-premises.
+
+> [AZURE.NOTE] You can’t share dashboards that contain Power BI Pro content with external users who have a Power BI Pro trial license. They need regular Power BI Pro licenses to access those dashboards. [What is Power BI Pro content?](powerbi-power-bi-pro-content-what-is-it.md)
 
 ### Publish to the web
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2017"
+   ms.date="03/10/2017"
    ms.author="asaxton"/>
 
 # Administering Power BI in your organization
@@ -26,7 +26,7 @@ Microsoft Power BI enables users to visualize data, share discoveries, and colla
 
 Administration of Power BI can occur in several locations. Here are two common locations.
 
-> [AZURE.NOTE] Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
+> [AZURE.NOTE] Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
 
 - [Power BI Admin portal](https://app.powerbi.com/admin-portal)
 - [Understanding the Power BI admin role](powerbi-admin-role.md) 
@@ -113,9 +113,15 @@ After you select the link, select **Run** to run the installer package.
 
 - To disable automatic tenant join for new users:
 
+    $msolcred = get-credential
+    connect-msolservice -credential $msolcred
+
     Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 - To enable automatic tenant join for new users:
+
+    $msolcred = get-credential
+    connect-msolservice -credential $msolcred
 
     Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
@@ -123,13 +129,23 @@ After you select the link, select **Run** to run the installer package.
 
 ### How can I allow users to join my existing Office 365 tenant?
 
-To allow users to join your tenant, run the opposite command as described in the question above:
+To allow users to join your tenant, run the opposite command as described in the question above.
+
+To perform the following steps, you must install the latest 64-bit version of the [Azure Active Directory Module for Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
+
+    $msolcred = get-credential
+    connect-msolservice -credential $msolcred
 
     Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### How do I verify if I have the block on in the tenant?
 
-Use the following PowerShell script:
+Use the following PowerShell script.
+
+To perform the following steps, you must install the latest 64-bit version of the [Azure Active Directory Module for Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
+
+    $msolcred = get-credential
+    connect-msolservice -credential $msolcred
 
     Get-MsolCompanyInformation | fl allow*
 
@@ -137,11 +153,45 @@ Use the following PowerShell script:
 
 There are steps you can take, as an admin, to prevent users from signing up for Power BI. If you do block this, users’ attempts to sign up will fail and they will be directed to contact their organization’s admin. You do not need to repeat this process if you have already disabled automatic license distribution (e.g. Office 365 for Education for Students, Faculty, and Staff). [Learn more](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-Azure-Active-Directory)
 
+The AAD setting that controls this is **AllowAdHocSubscriptions**. Most tenants will have this setting set to true, which means it is enabled. If you acquired Power BI through a partner, this may be set to false by default, which means it is disabled.
+
+To perform the following steps, you must install the latest 64-bit version of the [Azure Active Directory Module for Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
+
+1.	You need to first sign into Azure Active Directory using your Office 365 credential. The first line will prompt you for your credentials. The second line connects to Azure Active Directory.
+
+        $msolcred = get-credential
+        connect-msolservice -credential $msolcred
+
+2.	Once you are signed in, you can issue the following command to see what your tenant is currently configured for.
+
+        Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+
+3.	You can this command to enable ($true) or disable ($false) AllowAdHocSubscriptions.
+
+        Set-MsolCompanySettings -AllowAdHocSubscriptions $true
+
 > [AZURE.NOTE] The AllowAdHocSubscriptions flag is used to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag will affect all of these capabilities.
 
 ### How can I allow my existing users to sign up for Power BI?
 
-To allow your existing users to sign up for Power BI, run the command listed for the above question, but pass true instead of false. [Learn more](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-Azure-Active-Directory)
+To allow your existing users to sign up for Power BI, run the command listed for the above question, but pass true instead of false.
+
+To perform the following steps, you must install the latest 64-bit version of the [Azure Active Directory Module for Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
+
+1.	You need to first sign into Azure Active Directory using your Office 365 credential. The first line will prompt you for your credentials. The second line connects to Azure Active Directory.
+
+        $msolcred = get-credential
+        connect-msolservice -credential $msolcred
+
+2.	Once you are signed in, you can issue the following command to see what your tenant is currently configured for.
+
+        Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+
+3.	You can this command to enable ($true) or disable ($false) AllowAdHocSubscriptions.
+
+        Set-MsolCompanySettings -AllowAdHocSubscriptions $true
+
+> [AZURE.NOTE] The AllowAdHocSubscriptions flag is used to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag will affect all of these capabilities.
 
 ## Administration of Power BI
 

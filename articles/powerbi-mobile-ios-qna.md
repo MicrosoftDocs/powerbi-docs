@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/03/2017"
+   ms.date="03/31/2017"
    ms.author="maggies"/>
 
 # Ask questions about your data in the iOS mobile apps (Tutorial)
@@ -56,7 +56,7 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
 
 6. Long-tap the resulting chart, then tap **Expand**.
 
-    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-tap-expand.png)
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
 
     The chart opens in focus mode in the app.
 
@@ -64,11 +64,11 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
 
 7. Tap the arrow in the upper-left corner to go back to the Q&A chat window. 
  
-9. Tap the start over icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-new-icon.png) to clear the text box and start over.
+9. Tap the X at the right of the text box to delete the text and start over.
 
 8. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
 
-    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale.png)
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
 
 9. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
 
@@ -78,7 +78,16 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 
-Need help? Just say "Hi" or "Help", and you'll get assistance with starting a new question.
+## Help and feedback
+
+- Need help? Just say "Hi" or "Help", and you'll get assistance with starting a new question.
+
+- Care to provide feedback on the results? Long-tap a chart or other result, then tap the smiley or frowny face.
+
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-tap-feedback.png)
+
+    Your feedback is anonymous, and helps us improve our answers to questions.
+
 
 ## Enhance your Q&A results
 

@@ -3,7 +3,7 @@
    description="Learn about how to analyze Power BI datasets in Excel"
    services="powerbi"
    documentationCenter=""
-   authors="mihart"
+   authors="davidiseminger"
    manager="mblythe"
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
-   ms.author="mihart"/>
+   ms.date="03/29/2017"
+   ms.author="davidi"/>
 
 # Analyze in Excel
 There are times when you may want to use Excel to view and interact with a dataset that you have Power BI. With **Analyze in Excel**, you can do just that, and access PivotTable, chart, and slicer features in Excel based on the dataset that exists in Power BI.
@@ -38,7 +38,7 @@ When you open the file in Excel, an empty **PivotTable** and **Fields** list app
 
 The .ODC file has an MSOLAP connection string that connects to your dataset in Power BI. When you analyze or work with the data, Excel queries that dataset in Power BI and returns the results to Excel. If that dataset connects to a live data source using DirectQuery, Power BI queries the data source and returns the result to Excel.
 
-**Analyze in Excel** is very useful for datasets and reports that connect to *Analysis Services Tabular* or *Multidimensional* databases, or from Power BI Desktop files or Excel workbooks with data models that have explicit measures created using Data Analysis Expressions (DAX).
+**Analyze in Excel** is very useful for datasets and reports that connect to *Analysis Services Tabular* or *Multidimensional* databases, or from Power BI Desktop files or Excel workbooks with data models that have model measures created using Data Analysis Expressions (DAX).
 
 ## Get started with Analyze in Excel
 
@@ -72,6 +72,8 @@ You'll be provided an opportunity to sign in again, at which time you can sign i
 In order to analyze your Power BI data in Excel, you are prompted to verify the file name and path for the .odc file, and then select **Enable**.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_enable.png)
+
+> **Note:** Administrators for Power BI tenants can use the *Power BI Admin Portal* to disable the use of **Analyze in Excel** with on-premises datasets housed in Analysis Services (AS) databases. When that option is disabled, **Analyze in Excel** is disabled for AS databases, but continues to be available for use with other datasets.
 
 ## Analyze away
 Now that Excel has opened and you have an empty PivotTable, you're ready to do all sorts of analysis with your Power BI dataset. Just as with other local workbooks, with Analyze with Excel you can create PivotTables, charts, add data from other sources, and so on. And of course, you can create different worksheets with all sorts of views into your data.

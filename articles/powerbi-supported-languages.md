@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="05/02/2016"/>
+   qualityFocus="no"
+   qualityDate=""/>
  
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="03/31/2017"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -166,6 +166,7 @@ Help is localized in these 10 languages:
 -   Spanish - español
 
 ## See also 
+* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](powerbi-mobile-supported-languages.md) for details.
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 

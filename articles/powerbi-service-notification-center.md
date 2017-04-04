@@ -1,10 +1,10 @@
 <properties
-   pageTitle="Power BI Unified Notification Center"
-   description="The Unified Notification Center is a sequential feed of information related to your Power BI experience."
+   pageTitle="Power BI Notification Center"
+   description="The Notification Center is a sequential feed of information related to your Power BI experience."
    services="powerbi"
    documentationCenter=""
    authors="mihart"  
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/21/2016"
+   ms.date="03/14/2017"
    ms.author="mihart"/>
 
 # Power BI Notifications

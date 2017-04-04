@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
+   ms.date="03/20/2017"
    ms.author="amac"/>
 # Download the Financial Sample workbook for Power BI
 
 Need some data to try with Power BI service? We have a simple Excel workbook of sample financial data available for download.  Here's how to download it:
 
--   Financial sample Excel workbook: [download the sample directly](http://go.microsoft.com/fwlink/?LinkID=521962).
+-   Financial sample Excel workbook: [download the sample directly](powerbi-service-sample-datasets.md).
 	This workbook has one table of data of sales and profit data by market segment and country/region.
 
 ### See also

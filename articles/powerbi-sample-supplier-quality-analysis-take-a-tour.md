@@ -3,8 +3,8 @@
    description="Supplier Quality Analysis sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="amandacofsky"
-   manager="mblythe"
+   authors="mihart"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
+   ms.date="03/20/2017"
    ms.author="amac"/>
 
 # Supplier Quality Analysis sample for Power BI: Take a tour  
@@ -31,7 +31,7 @@ Two primary metrics are at play in this analysis: total number of defects and th
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards.
 This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=528592).[](http://www.obvience.com/)
+You can also [download just the dataset (Excel workbook) for this sample](powerbi-service-sample-datasets.md).[](http://www.obvience.com/)
 
 ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier1.png)
 

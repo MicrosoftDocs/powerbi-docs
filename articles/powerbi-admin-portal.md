@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Admin portal"
+   pageTitle="Power BI admin portal"
    description="The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings."
    services="powerbi"
    documentationCenter=""
@@ -16,9 +16,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2017"
+   ms.date="03/06/2017"
    ms.author="asaxton"/>
 # Power BI admin portal
+
+The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
 
 Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
 
@@ -94,39 +96,129 @@ For more information about audit logs, see [Auditing Power BI in your organizati
 
 ## Tenant settings
 
-The third tab, in the admin portal, is **Tenant settings**. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization. If this is the case, you can switch it off in your tenant.
-
-> [AZURE.IMPORTANT] These are global settings. Turning them off will affect all users, using Power BI, in your organization!
+The third tab, in the admin portal, is **Tenant settings**. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a given feature to be available to a specific group. If this is the case, you can switch it off in your tenant.
 
 ![](media/powerbi-admin-portal/powerbi-admin-tenant-settings.png)
 
-When you turning settings on and off, you will see a notification letting you know it was successful. It can take up to 10 minutes for the setting to take effect for everyone in your tenant.
+> [AZURE.NOTE] It can take up to 10 minutes for the setting to take effect for everyone in your tenant.
 
-![](media/powerbi-admin-portal/powerbi-admin-tenant-settings-notification.png)
+Settings can have three states based on the settings that you supplied.
 
-### Publish content packs to the entire organization
+### Disabled for the entire organization
 
-This setting controls whether users of your tenant can publish content packs to the entire organization.
+You can disable a feature and make it so users will not be able to use it.
 
-![](media/powerbi-admin-portal/powerbi-admin-publish-entire-org.png)
+![](media/powerbi-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-### Allow sharing content to external users
+### Enabled for the entire organization
 
-This setting determines whether you can share a dashboard with users outside of your oganization.
+You can enable a feature for the entire organization which will let all users have access to that feature.
+
+![](media/powerbi-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+
+### Enabled for a subset of the organization
+
+You can also enable a feature for a portion of your organization. This can happen in a few different ways. You can enable it for your entire organization except for a specific group of users.
+
+![](media/powerbi-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+
+You could also enable the feature only for a specific group of users and also disable it for a group of users. This would make sure that certain users do not have access to the feature even if they are in the allowed group.
+
+![](media/powerbi-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+
+## Export and sharing settings
+
+### Share content to external users
+
+Users in the organization can share dashboards with users outside the organization.
 
 ![](media/powerbi-admin-portal/powerbi-admin-sharing-external.png)
 
 ### Publish to web
 
-This setting determines whether you can use the **Publish to web** feature for reports. [Learn more](powerbi-service-publish-to-web.md)
+Users in the organization can publish reports to the web. [Learn more](powerbi-service-publish-to-web.md)
 
 ![](media/powerbi-admin-portal/powerbi-admin-publish-to-web.png)
 
+> [AZURE.NOTE] This settings applies to the entire organization and cannot be limited to specific groups.
+
 ### Export data
 
-This setting determines whether you can export data from a tile or visualization. [Learn more](powerbi-service-export-data.md)
+Users in the organization can export data from a tile or visualization. [Learn more](powerbi-service-export-data.md)
 
 ![](media/powerbi-admin-portal/powerbi-admin-export-data.png)
+
+> [AZURE.NOTE] Disabling **Export Data** will also prevent users from using the **Analyze in Excel** feature.
+
+### Export reports as PowerPoint presentations
+
+Users in the organization can export Power BI reports as PowerPoint files. [Learn more](powerbi-service-publish-to-powerpoint.md)
+
+![](media/powerbi-admin-portal/powerbi-admin-powerpoint.png)
+
+### Print dashboards and reports
+
+Users in the organization can print dashboards and reports. [Learn more](powerbi-service-print.md)
+
+![](media/powerbi-admin-portal/powerbi-admin-print-dashboard.png)
+
+![](media/powerbi-admin-portal/powerbi-admin-print-report.png)
+
+## Content pack settings
+
+### Publish content packs to the entire organization
+
+Users in the organization can publish content packs to the entire organization.
+
+![](media/powerbi-admin-portal/powerbi-admin-publish-entire-org.png)
+
+### Create template organizational content packs
+
+Users in the organization can create template content packs that use datasets built on one data source in Power BI Desktop.
+
+## Integration settings
+
+### Ask questions about data using Cortana
+
+Users in the organization can ask questions about their data using Cortana.
+
+> [AZURE.NOTE] This settings applies to the entire organization and cannot be limited to specific groups.
+
+### Use Analyze in Excel with on-premises datasets
+
+Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](powerbi-service-analyze-in-excel.md)
+
+> [AZURE.NOTE] Disabling **Export Data** will also prevent users from using the **Analyze in Excel** feature.
+
+### User ArcGIS Maps for Power BI (Preview)
+
+Users in the organization can use the ArcGIS Maps for Power BI (Preview) visualization provided by Esri. [Learn more](powerbi-service-tutorial-arcgis.md)
+
+## R visuals settings
+
+### Interact with an dshare R visuals
+
+Users in the organization can interact with and share visuals created with R scripts. [Learn more](powerbi-service-r-visuals.md)
+
+> [AZURE.NOTE] This settings applies to the entire organization and cannot be limited to specific groups.
+
+## Audit settings
+
+### Create audit logs for internal activity auditing and compliance
+
+Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](powerbi-admin-auditing.md)
+
+This setting needs to be enabled for audit log entries to be recorded.
+
+> [AZURE.NOTE] This settings applies to the entire organization and cannot be limited to specific groups.
+
+## Dashboard settings
+
+### Data classification for dashboards
+
+Users in the organization can tag dashboards with classifications indicating dashboard security levels. [Learn more](powerbi-service-data-classification.md)
+
+> [AZURE.NOTE] This settings applies to the entire organization and cannot be limited to specific groups.
 
 ## See also
 

@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="03/06/2017"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
 
-When you [create a report in Power BI Desktop](powerbi-desktop-report-view.md), you can improve the experience of using it on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience.  
+When you [create a report in Power BI Desktop](powerbi-desktop-report-view.md), you can improve the experience of using it in the mobile apps on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience.  
 
 ![](media/powerbi-desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -84,13 +84,13 @@ Read more about [creating slicers in the Power BI service](powerbi-learning-3-4-
 
     Read more about [sharing and permissions in Power BI](powerbi-service-how-should-i-share-my-dashboard.md).
 
-## View optimized and non-optimized reports on a phone 
+## View optimized and unoptimized reports on a phone 
 
-In the mobile apps on phones, Power BI automatically detects optimized and non-optimized phone reports. If a phone-optimized report exists, the Power BI phone app automatically opens the report in phone report mode.
+In the mobile apps on phones, Power BI automatically detects optimized and unoptimized phone reports. If a phone-optimized report exists, the Power BI phone app automatically opens the report in phone report mode.
 
-If a phone-optimized report doesn’t exist, the report will open in the non-optimized, landscape view.  
+If a phone-optimized report doesn’t exist, the report will open in the unoptimized, landscape view.  
 
-When in a phone report, changing the phone’s orientation to landscape will open the report in the non-optimized view with the original report layout, whether you optimize the report or not.
+When in a phone report, changing the phone’s orientation to landscape will open the report in the unoptimized view with the original report layout, whether you optimize the report or not.
 
 If you only optimize some pages, readers will see a message in portrait view, indicating the report is available in landscape.
 
@@ -101,6 +101,19 @@ Report readers can turn their phones sideways to see the page in landscape mode.
 ## Interact with optimized phone reports on a phone
 
 You can scroll in a phone report, cross-highlight and select visuals, and open visuals in focus mode. Read more about what it's like to [interact with Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md).
+
+### Drill down in an optimized phone report
+
+If hierarchy levels are defined in a visual, when you view it in the Power BI service you can drill down into the detailed information displayed in the visual, then back up. 
+
+![](media/powerbi-desktop-create-phone-report/power-bi-drill-icon.png)
+
+Drill-down also works in your visuals in phone reports. Drill-down doesn't work in regular Power BI reports when you view them on a phone. You [add drill-down to a visual](powerbi-service-drill-down-in-a-visualization.md) in Power BI Desktop or the Power BI service, then add that visual to the phone report layout. Now when you view that visual on a phone, you can drill down.
+
+![](media/powerbi-desktop-create-phone-report/power-bi-phone-report-expand-levels.png)
+
+Read more about engaging with a [phone report in a mobile app on a phone](powerbi-mobile-view-phone-report.md).
+
 
 ## How visuals scale in a phone report
 Power BI phone reports use a concept called “virtual pixels” to ensure an optimized experience across various devices, screen sizes, and form factors.  

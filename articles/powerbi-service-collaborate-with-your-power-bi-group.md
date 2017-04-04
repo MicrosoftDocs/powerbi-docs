@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="03/17/2017"
    ms.author="ajayan"/>
-# Collaborate in Office 365 with your Power BI group workspace
+# Collaborate in your Power BI group workspace
 
 Power BI group workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets. That's what groups are designed for -- collaboration. If you just want to distribute a finished dashboard with colleagues, then you're better off *sharing* it with them, or creating an *organizational content pack*. Read [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) first, if you haven't done so yet. 
 
@@ -35,15 +35,13 @@ After you create a Power BI Desktop file, if you publish it to your Power BI gro
 
     ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-group-publish-pbix.png)
 
-2. In the Power BI service, select the double arrows next to My Workspace > select your group workspace.
+2. In the Power BI service, select the arrow next to My Workspace > select your group workspace.
 
-    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-go-to-group.png)
+    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-old-group-left-nav.png)
 
-3. Select the Reports tab and find your report.
+3. Scroll to your report.
 
-    Notice that the owner is the name of the group, not your name.
-
-    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-group-pbix-report.png)
+    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-old-scroll-report.png)
 
 4. Select your report. 
 

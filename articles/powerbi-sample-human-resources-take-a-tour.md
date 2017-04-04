@@ -3,8 +3,8 @@
    description="Human Resources sample for Power BI: Take a tour"
    services="powerbi"
    documentationCenter=""
-   authors="amandacofsky"
-   manager="mblythe"
+   authors="mihart"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
-   ms.author="amac"/>
+   ms.date="03/14/2017"
+   ms.author="mihart"/>
 
 # Human Resources sample for Power BI: Take a tour  
 
@@ -34,7 +34,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Human Resources Sample > Connect** to get your own copy of the sample.
 
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=528592) for this sample.
+You can also [download just the dataset (Excel workbook)](powerbi-service-sample-datasets.md) for this sample.
 
 ## New hires  
 Let’s explore new hires first.

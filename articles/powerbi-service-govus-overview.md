@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/01/2017"
+   ms.date="03/09/2017"
    ms.author="davidi"/>
 
 # Power BI for US Government customers
@@ -49,11 +49,14 @@ The following features are available in **Power BI US Government**:
 
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
--   Office Online integration
-    -   You can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit or publish
--   Email notification will not work when sharing dashboards – users with whom a dashboard is shared can still view the dashboard and get notification when they are logged in  
--   ESRI Power BI integration isn't available in Power BI at this time
--   The **Publish to Web** feature is not available at this time
+-   **Office Online integration** - you can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit or publish.
+-   **Email notification** - these notifications do not work when sharing dashboards. Users with whom a dashboard is shared can still view the dashboard and get notification when they are logged in.
+-   **ESRI Power BI integration** - not available in Power BI at this time.
+-   **Data-driven alerts** - you can set up alerts and receive notifications when your alert condition occurs in the Power BI Notification Center, and by push notifications to the Power BI app on your mobile device. However, you will not receive emails when your alert condition occurs.
+-   **Refresh from Project Online** - you can create **Power BI Desktop** reports using the Project Online OData feed, however, datasets based on this feed will not refresh in the **Power BI service**.  As a workaround, you can manually refresh the Power BI Desktop file and republish it to the Power BI service.
+-   **Invitation emails for dashboard sharing or Office 365 group membership** - when you share a dashboard or add a member to a Power BI group workspace, users who are not currently set up in your tenant will not be added. To ensure sharing works as expected, you can add these users to your tenant before you share, either by [adding them manually through the Office 365 Portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-US&ad=US&fromAR=1) or by [setting up directory synchronization](https://support.office.com/article/Set-up-directory-synchronization-for-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846?ui=en-US&rs=en-US&ad=US&fromAR=1).
+-   **Refresh failure emails** - when a refresh failure occurs, you will not receive an email. You should check your list of datasets to see if refreshes have succeeded and, if not, take necessary steps to correct the problems.
+
 
 If you have **Power BI** Free licenses assigned to your account, you may encounter the following issues:
 

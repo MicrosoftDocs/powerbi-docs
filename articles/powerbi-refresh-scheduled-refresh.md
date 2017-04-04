@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="02/24/2017"
+ms.date="03/29/2017"
 ms.author="davidi"/>
 # Configuring scheduled refresh
 
@@ -69,11 +69,12 @@ If you are using the enterprise gateway to refresh data, you do not need to supp
 
 The scheduled refresh section is where you define the frequency and time slots to refresh the dataset. Some data sources do not require a gateway present in order to be available to configure. Others will require a gateway.
 
-You will need to change **Keep your data up to date** to Yes in order to configure the settings.
+You must set the **Keep your data up to date** slider to **Yes** in order to configure the settings.
+
+> **Note**: The Power BI service targets initiating the refresh of your data within **15 minutes** of your scheduled refresh time.
 
 ![](media/powerbi-refresh-scheduled-refresh/scheduled-refresh.png)
 
-> **Note**: The Power BI service targets initiating the refresh of your data within **15 minutes** of your scheduled refresh time.
 
 ## What’s supported?  
 Certain datasets are supported against different gateways for scheduled refresh. Here is a reference to understand what is available.

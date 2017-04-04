@@ -18,20 +18,24 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2017"
+   ms.date="03/05/2017"
    ms.author="mihart"/>
 
 # Get started with Power BI service
 
 ##  Getting Started
 
-This tutorial helps you get started with ***Power BI service***. Power BI service has a free version and a Pro version. No matter which version you're using, open a browser and type www.powerbi.com to get started. If you've already signed up, select the **Sign in** link that you'll see in the top right corner. If you haven't yet signed up for Power BI service, select the **Sign up free** link instead.
+This tutorial helps you get started with ***Power BI service***. For an understanding of how Power BI service fits in with the other Power BI offerings, we highly recommend that you start by reading [What is Power BI](powerbi-learning-0-0-what-is-power-bi.md).
+
+![](media/powerbi-service-get-started/power-bi-components.png)
+
+Power BI service has a free version and a Pro version. No matter which version you're using, open a browser and type www.powerbi.com to get started. If you've already signed up, select the **Sign in** link that you'll see in the top right corner. If you haven't yet signed up for Power BI service, select the **Sign up free** link instead.
 
 ![](media/powerbi-service-get-started/power-bi-sign-up.png)
 
 If you're looking for help with Power BI Desktop, see [Get started with Desktop](powerbi-desktop-getting-started.md). If you're looking for help with Power BI mobile, see [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md).
 
->[AZURE:TIP] Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi) or visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). A good video to start with is [Introduction to Power BI]:
+>**TIP**: Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi) or visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). A good video to start with is Introduction to Power BI:
 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/1c01r_pAZdk?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 

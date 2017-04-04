@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/15/2017"
+   ms.date="03/29/2017"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
@@ -92,7 +92,7 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
 
 - The maximum number of rows that can be exported to .xlsx is 30,000 (for Power BI Free users) and 150,000 (for Power BI Pro users).
 
-- Power BI only supports export of visualizations that use implicit measures (no support for calculated (explicit) measures as aggregates).
+- Power BI only supports export in visuals that use basic aggregates. Export is not available for visuals using model or report measures.
 
 -  Custom visuals, and R visuals, are not currently supported.
 

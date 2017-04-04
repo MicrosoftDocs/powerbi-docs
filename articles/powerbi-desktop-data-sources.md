@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/01/2017"
+   ms.date="03/08/2017"
    ms.author="davidi"/>
 
 
@@ -69,13 +69,13 @@ The **Database** category provides the following data connections:
 -   SQL Server Analysis Services Database
 -   Oracle Database
 -   IBM DB2 Database
+-   IBM Informix database (Beta)
 -   MySQL Database
 -   PostgreSQL Database
 -   Sybase Database
 -   Teradata Database
 -   SAP HANA Database
--   IBM Informix Database (Beta)
--   SAP Business Warehouse
+-   SAP Business Warehouse server
 -   Amazon Redshift (Beta)
 -   Impala (Beta)
 -   Snowflake (Beta)
@@ -92,13 +92,16 @@ The **Azure** category provides the following data connections:
 
 -   Microsoft Azure SQL Database
 -   Microsoft Azure SQL Data Warehouse
--   Microsoft Azure Marketplace
--   Microsoft Azure HDInsight
+-   Microsoft Azure Analysis Services database (Beta)
+-   Microsoft Azure Data Marketplace
 -   Microsoft Azure Blob Storage
 -   Microsoft Azure Table Storage
--   Microsoft Azure HDInsight Spark (Beta)
 -   Microsoft Azure DocumentDB (Beta)
--   Microsoft Azure Data Lake Store (Beta)
+-   Microsoft Azure Data Lake Store
+-   Microsoft Azure HDInsight
+-   Microsoft Azure HDInsight Spark (Beta)
+
+
 
 The following image shows the **Get Data** window for **Azure**.
 
@@ -109,35 +112,38 @@ The **Online Services** category provides the following data connections:
 
 -   SharePoint Online List
 -   Microsoft Exchange Online
--   Dynamics 365
--   PowerApps Common Data Service (Beta)
--   Facebook
+-   Dynamics 365 (online)
+-   Dynamics 365 for Financials (Beta)
+-   Common Data Service (Beta)
+-   Azure Enterprise (Beta)
+-   Visual Studio Team Services (Beta)
 -   Salesforce Objects
 -   Salesforce Reports
 -   Google Analytics
 -   appFigures (Beta)
--   Azure Enterprise (Beta)
 -   comScore Digital Analytix (Beta)
+-   Facebook
 -   GitHub (Beta)
 -   MailChimp (Beta)
 -   Marketo (Beta)
--   Dynamics 365 for Financials (Beta)
 -   Mixpanel (Beta)
 -   Planview Enterprise (Beta)
 -   Projectplace (Beta)
 -   QuickBooks Online (Beta)
--   SparkPost (Beta)
 -   Smartsheet
+-   SparkPost (Beta)
 -   SQL Sentry (Beta)
 -   Stripe (Beta)
 -   SweetIQ (Beta)
 -   Troux (Beta)
 -   Twilio (Beta)
 -   tyGraph (Beta)
--   Visual Studio Team Services (Beta)
 -   Webtrends (Beta)
 -   Zendesk (Beta)
 
+
+-   PowerApps Common Data Service (Beta)
+-   Facebook
 
 The following image shows the **Get Data** window for **Online Services**.
 
@@ -148,13 +154,13 @@ The **Other** category provides the following data connections:
 -   Web
 -   SharePoint List
 -   OData Feed
--   Hadoop File (HDFS)
 -   Active Directory
 -   Microsoft Exchange
+-   Hadoop File (HDFS)
+-   Spark (Beta)
+-   R Script
 -   ODBC
 -   OLE DB
--   R Script
--   Spark (Beta)
 -   Blank Query
 
 The following image shows the **Get Data** window for **Other**.

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2017"
+   ms.date="03/02/2017"
    ms.author="maggies"/>
 
 # Reports in the iPhone mobile app
@@ -43,7 +43,15 @@ The report opens in landscape mode.
 
 ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-landscape.png)
 
->**Note**: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
+> [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
+
+## View reports optimized for your phone 
+
+Some Power BI report authors create a report layout optimized for phones. If a report page has a phone layout, then when you go to that page, it opens in portrait view.
+
+![](media/powerbi-mobile-reports-in-the-iphone-app/07-power-bi-phone-report-portrait.png)
+
+Read more about [reports optimized for phone view](powerbi-mobile-view-phone-report.md).
 
 ## See other pages in a Power BI report
 

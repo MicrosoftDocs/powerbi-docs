@@ -1,10 +1,10 @@
 <properties
-   pageTitle="Best design practices for reports and visuals"
-   description="best practices for designing reports in Power BI"
+   pageTitle="Best design practices for reports and visuals (whitepaper)"
+   description="Whitepaper: best practices for designing reports in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="03/14/2017"
    ms.author="mihart"/>
 
 

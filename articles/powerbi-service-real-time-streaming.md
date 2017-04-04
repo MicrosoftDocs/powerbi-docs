@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/27/2017"
+   ms.date="03/06/2017"
    ms.author="davidi"/>
 
 # Real-time streaming in Power BI
@@ -163,6 +163,8 @@ The next sections look at each option in turn.
 If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](https://msdn.microsoft.com/library/dn877544.aspx).
 
 Once you successfully create your data stream, you're provided with a REST API URL endpoint, which you application can call using *POST* requests to push your data to Power BI **streaming data** dataset you created.
+
+When making *POST* requests, you should ensure the request body matches the sample JSON provided by the Power BI user interface. For example, wrap your JSON objects in an array.
 
 ### Using PubNub
 

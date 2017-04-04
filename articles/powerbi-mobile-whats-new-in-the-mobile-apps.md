@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/06/2017"
+   ms.date="03/31/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -28,6 +28,67 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 * [What's new in the Power BI service](powerbi-service-whats-new.md)  
 * [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/)
+
+## March 2017
+
+Read the [mobile apps feature summary for March 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-2017/).
+
+### All devices
+
+**Slicer interactions**
+
+We've improved touch interaction for time slicers.
+
+### iOS devices
+
+**Ask questions of your data with Q&A - and give us feedback** 
+
+Try asking questions of your data with Q&A, and then give us a smiley or frowny face to let us know how we did.
+
+**Use 3D touch for common actions** 
+
+Deep-press the Power BI app icon on the home screen of your iPhone 6s or later to access notifications, search, and recently used dashboards.
+
+**Support for right-to-left languages**
+
+If you have a device configured to Hebrew or Arabic, you'll see the Power BI app in the right direction. See the list of [Supported languages in the Power BI mobile apps](powerbi-mobile-supported-languages.md).
+
+### Android devices
+
+**Connect to more than one SSRS server** 
+
+Now you can have connections to up to five SQL Server Reporting Services (SSRS) servers at the same time.
+
+**Request access to dashboards** 
+
+If you scan a QR code for a dashboard that you don't have access to, now you can submit a request for access right from the mobile app.
+
+
+## February 2017
+
+### All devices
+**Scrolling made easier** 
+
+Now you can scroll in bar and column charts in a report by touching the chart itself, rather than touching the scroll bar on the side.
+
+### iOS devices
+
+**Ask questions of your data with a preview of Q&A** 
+
+With Q&A, you ask questions about your data in your own words, and Power BI provides the answers. Q&A is already in the Power BI service on http://powerbi.com. Now it's also [available in the mobile app on your iPhone or iPad](powerbi-mobile-ios-qna.md).
+
+**Connect to more than one SSRS server** 
+
+Now you can have connections to up to five SQL Server Reporting Services (SSRS) servers at the same time.
+
+### Android tablets
+**The Power BI mobile app** for Android tablets is now available globally. Get started with the [Power BI mobile app for Android tablets](powerbi-mobile-android-tablet-app-get-started).
+
+### iOS and Android devices
+
+**New menu for dashboard tiles** Navigate to the underlying report, expand the tile, or manage an alert, all directly from a menu on the tile on a dashboard. 
+
+This menu is new for iOS, Android phones in landscape mode, and Android tablets. It was already in Windows and Android phones in portrait modes.
 
 ## January 2017
 

@@ -1,11 +1,11 @@
-﻿<properties
+<properties
    pageTitle="ServiceNow content pack"
    description="ServiceNow content pack"
    services="powerbi"
    documentationCenter=""
-   authors="theresapalmer"
-   manager="mblythe"
-   backup=""
+   authors="joeshoukry"
+   manager="erikre"
+   backup="maggiesMSFT"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
-   ms.author="tpalmer"/>
+   ms.date="03/10/2017"
+   ms.author="yshoukry"/>
 
 # Power&nbsp;BI content pack for ServiceNow incidents
 
