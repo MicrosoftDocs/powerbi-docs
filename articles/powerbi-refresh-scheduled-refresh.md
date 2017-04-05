@@ -16,7 +16,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/29/2017"
+ms.date="04/06/2017"
 ms.author="davidi"/>
 # Configuring scheduled refresh
 
@@ -64,6 +64,9 @@ When things go wrong, the problem usually has something to do with either the ga
 If you are using the enterprise gateway to refresh data, you do not need to supply credentials as they are defined for the data source by the gateway administrator.
 
 ![](media/powerbi-refresh-scheduled-refresh/data-source-credentials-egw.png)
+
+> **Note:** When connecting to on-premises SharePoint for data refresh, Power BI supports only *Anonymous*, *Basic*, and *Windows (NTLM/Kerberos)* authentication mechanisms. Power BI does not support *ADFS* or any *Forms-Based Authentication* mechanisms for data refresh of on-premises SharePoint data sources.
+
 
 ## Schedule refresh
 
