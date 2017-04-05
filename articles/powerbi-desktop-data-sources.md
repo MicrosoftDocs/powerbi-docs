@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Data sources in Power BI Desktop"
    description="Data sources in Power BI Desktop"
    services="powerbi"
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="04/29/2016"/>
 
 <tags

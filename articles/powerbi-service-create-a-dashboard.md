@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Create a Power BI dashboard"
    description="Create a Power BI dashboard"
    services="powerbi"
@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="lJKgWnvl6bQ"
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="03/15/2016"/>
 
 <tags

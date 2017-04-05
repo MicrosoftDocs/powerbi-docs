@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="About filters and highlighting in Power BI reports"
    description="About filters and highlighting in Power BI reports"
    services="powerbi"

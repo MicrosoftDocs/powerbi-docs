@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Dashboard tiles in Power BI"
    description="All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS)."
    services="powerbi"
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="03/15/2016"/>
 
 <tags
