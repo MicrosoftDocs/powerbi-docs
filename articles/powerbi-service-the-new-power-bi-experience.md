@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/11/2016"
+   ms.date="04/04/2017"
    ms.author="mihart"/>
 
 # The new Power BI navigation experience
@@ -54,9 +54,15 @@ We heard from many users that you want to quickly access a few select dashboards
 
     ![](media/powerbi-service-the-new-power-bi-experience/power-bi-unfavorite2.png)
 
-2. To see all the dashboards that you have added as favorites, in the left navpane, select **Favorites** or select the Favorites icon ![](media/powerbi-service-the-new-power-bi-experience/powerbi-star-icon.png).
+2. To display a list of all the dashboards that you have added as favorites, in the left navpane, select the arrow to the right of **Favorites**. The advantage of this is that you can display this list from just about any page in Power BI service.
 
-    ![](media/powerbi-service-the-new-power-bi-experience/power-bi-open-favorites.png)
+    ![](media/powerbi-service-the-new-power-bi-experience/power-bi-show-favoritesnew.png)
+
+    From here you can select a dashboard to open it.
+
+2.  To open the **Favorites** pane, in the left navpane, select **Favorites** or select the Favorites icon ![](media/powerbi-service-the-new-power-bi-experience/powerbi-star-icon.png).
+
+    ![](media/powerbi-service-the-new-power-bi-experience/power-bi-favorites-pane.png)
 
     From here you can select a dashboard to open it, or share a dashboard with colleagues.
 
@@ -65,19 +71,31 @@ We heard from many users that you want to quickly access a few select dashboards
     ![](media/powerbi-service-the-new-power-bi-experience/power-bi-favorite-dashboard.png)
 
 
+##  Recents
+You can quickly get to the reports and dashboards that you’ve most recently accessed by visiting the recents section. This includes content from across all of your workspaces
+
+  ![](media/powerbi-service-the-new-power-bi-experience/power-bi-recentnew.png)
+
+Similar to Favorites, you can quickly access your recents from anywhere by clicking on the carot next to Recents.
+
+  ![](media/powerbi-service-the-new-power-bi-experience/power-bi-recent2.png)
+
+##  Shared with me
+Shared with me is the location for all dashboards that are shared with you by others.  You can filter by the owner of the dashboard or search to find what’s relevant. You can also sort the items by the date it was shared with you.  And for shared content you visit frequently, it is even easier to favorite it right from the Shared with me view.
+
 ##  Content View
 
 We've also improved the way you navigate and access all your Power BI content. Before this, all of your dashboards, reports, and datasets were listed on the left navigation pane. Now, all that content doesn't appear in the navigation pane and instead displays within the context of a workspace. Select a workspace from the left navigation pane and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-dashboards-tab.png)
 
-## Working with groups and workspaces
+## Working with workspaces
 
 We have also made improvements to way that content appears in your 'My workspace' or Group Workspaces. The content shows up on the main canvas area, with separate tabs for dashboards, reports, workbooks and datasets. Authors also get quick access to the top actions they might want to perform – for example, on the Reports tab, you can now run [Insights](powerbi-service-auto-insights.md) with one click and see the owner for each report.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-reports-tab.png)
 
-You can switch workspaces by selecting the arrow next to the current workspace name.
+You can switch workspaces by selecting the arrow next to the current **Workspaces**.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-select-group.png)
 
