@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2017"
+   ms.date="04/05/2017"
    ms.author="mihart"/>
 
 # Filter a report using query string parameters in the URL
@@ -83,7 +83,7 @@ There may be some cases where this will be helpful when you'd like to see differ
 ##  Limitations and troubleshooting
 
 There are a couple of things to be aware of when using the query string parameters.
-- Query string filtering does not work with [Publish to web](powerbi-service-publish-to-web) URLs.
+- Query string filtering does not work with [Publish to web](powerbi-service-publish-to-web.md) URLs.
 
 - Field type has to be string.  
 
