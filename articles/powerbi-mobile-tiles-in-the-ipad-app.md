@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/13/2016"
+   ms.date="04/04/2017"
    ms.author="maggies"/>
 
 # Interact with tiles in the Power BI mobile app for iOS on the iPad
