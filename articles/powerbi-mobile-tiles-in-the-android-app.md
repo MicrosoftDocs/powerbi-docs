@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Tiles in the mobile apps"
+   pageTitle="Tiles in the mobile apps for Android devices"
    description="You create tiles on a dashboard in the Power BI service. Read about opening tiles and interacting with them in the Power BI mobile apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,21 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/03/2017"
+   ms.date="04/04/2017"
    ms.author="maggies"/>
 
-# Tiles in the mobile apps 
-
-Applies to:
-
-| ![iPhone](media/powerbi-mobile-tiles-in-the-android-app/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-tiles-in-the-android-app/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-tiles-in-the-android-app/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-tiles-in-the-android-app/android-tablet-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-tiles-in-the-android-app/win-10-logo-50-px.png) |
-|:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
-| iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
-
+# Tiles in the mobile apps for Android devices 
 
 Tiles are live snapshots of your data, displayed on a dashboard. Their values change as the data changes. You create tiles on a dashboard on the [Power BI](http://powerbi.com/) service. Then you see and interact with the tiles in the [Microsoft Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices/.md).
-
-## Tiles in the Android app
 
 1.  Open a [dashboard in the mobile app](powerbi-mobile-create-dashboard.md) for Power BI.
 

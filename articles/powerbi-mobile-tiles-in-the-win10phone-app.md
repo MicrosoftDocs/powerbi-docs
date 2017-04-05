@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2016"
+   ms.date="04/04/2017"
    ms.author="maggies"/>
 
 # Tiles in the Power BI mobile app for Windows 10  
@@ -27,8 +27,6 @@ Tiles are live snapshots of your data, displayed on a dashboard. Their values ch
 Then in [Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md), you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
 
 1.  Open a [dashboard in the Power BI mobile app](powerbi-mobile-create-dashboard.md) for Windows 10.
-
-    Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=526478) first?
 
 2. Tap the vertical ellipsis on the tile. From here, you can: 
 
