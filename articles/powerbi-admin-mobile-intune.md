@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/23/2017"
+ms.date="04/07/2017"
 ms.author="asaxton"/>
 # Configure mobile apps with Microsoft Intune
 
@@ -31,7 +31,7 @@ Microsoft Intune can co-exist with Mobile Device Management (MDM) within Office 
 
 This article assumes that Intune is configured properly and you have devices enrolled with Intune. If you are co-existing with MDM, the device will show enrolled within MDM, but is available to manage within Intune.
 
->**Note**: After your organization has configured Microsoft Intune MAM, if you use the Power BI mobile app on an iOS device, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
+>**Note**: After your organization has configured Microsoft Intune MAM, if you use the Power BI mobile app on an iOS or Android device, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 
 ## Step 1: Get the url for the application
 
