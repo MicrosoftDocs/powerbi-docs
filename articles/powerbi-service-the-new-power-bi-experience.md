@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2017"
+   ms.date="04/05/2017"
    ms.author="mihart"/>
 
 # The new Power BI navigation experience
@@ -99,8 +99,7 @@ We have also made improvements to the way that content appears in your 'My works
 
 Switch workspaces by selecting the arrow next to the current Workspace.
 
-![](media/powerbi-service-the-new-power-bi-experience/power-bi-workspacesnew
-.png)
+![](media/powerbi-service-the-new-power-bi-experience/power-bi-workspacesnew.png)
 
 ##  Search, filter and sort content
 The new content view makes it easier to search, filter and sort your content. To search for a dashboard, report or workbook, type in the search area. Power BI filters to only the content that has your search string as part of the name.
