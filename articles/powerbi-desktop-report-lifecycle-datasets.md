@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2017"
+   ms.date="04/07/2017"
    ms.author="davidi"/>
 
 # Connect to datasets in the Power BI service from Power BI Desktop (Preview)
@@ -111,6 +111,8 @@ When you select **Load** from the window, you establish a live connection to the
 
 Now you (and others) can create and share custom reports and share them, all from the same dataset. This is a great way to have one knowledgeable person create a well-formed dataset (such as what Anna does), and allow many teammates use that shared dataset to create their own reports.
 
+> **Note:** When you create reports based on dataset using a live connection to the **Power BI service**, you can only publish that report to the same Power BI service workspace that contains the dataset being used.
+
 ## Limitations and considerations
 
 In this preview release of the **Power BI service live connection**, there are a few limitations and considerations to keep in mind.
@@ -124,3 +126,5 @@ In this preview release of the **Power BI service live connection**, there are a
 -   If you delete the shared dataset in the **Power BI service**, then other **Power BI Desktop** (.pbix files) will no longer work properly or display their visuals.
 -   For Content Packs, you must first create a copy of a content pack before using it as a basis for sharing a .pbix report and dataset to the **Power BI service**.
 -   For Content Packs from *My Organization*, once copied, you cannot replace the report created on the service and/or a report created as part of copying a Content Pack with a live connection. Attempts to do so result in a warning that prompts you to rename the file, and publish. In this situation, you can only replace published live connected reports.
+-   When you create a report based on dataset using a live connection to the **Power BI service**, you can only publish that report to the same Power BI service workspace that contains the dataset being used.
+-   Deleting a shared dataset in the **Power BI service** means you can no longer access that dataset from **Power BI Desktop**.
