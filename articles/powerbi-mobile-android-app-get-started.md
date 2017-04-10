@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/07/2017"
+   ms.date="04/10/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI for Android mobile app
@@ -26,7 +26,7 @@ The Android app for Microsoft Power BI brings Power BI to your pocket, with up-t
 
 ![](media/powerbi-mobile-android-app-get-started/power-bi-android-dashboard-optimized.png)
 
-You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
+You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data.
 
 Then interact with your dashboards and reports, explore the data, and share them, all from the Android app for Power BI.
 

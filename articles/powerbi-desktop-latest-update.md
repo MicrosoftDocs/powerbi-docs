@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="What's new in the latest Power BI Desktop update?"
    description="What's new in the latest Power BI Desktop update?"
    services="powerbi"
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="05/31/2016"/>
 
 <tags

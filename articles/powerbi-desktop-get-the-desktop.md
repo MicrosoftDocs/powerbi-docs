@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Get Power BI Desktop"
    description="Download and install Power BI Desktop"
    services="powerbi"
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="03/31/2016"/>
 
 <tags

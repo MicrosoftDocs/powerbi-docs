@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Dashboards in Power BI"
    description="Dashboards in Power BI"
    services="powerbi"
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="03/15/2016"/>
 
 <tags

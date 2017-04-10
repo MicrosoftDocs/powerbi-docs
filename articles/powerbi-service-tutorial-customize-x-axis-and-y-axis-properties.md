@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Customize X-axis and Y-axis properties (Tutorial)"
    description="Tutorial: Customize X-axis and Y-axis properties"
    services="powerbi"
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="05/23/2016"/>
 
 <tags
