@@ -3,7 +3,7 @@
    description="Troubleshooting Power BI Gateway - Personal"
    services="powerbi" 
    documentationCenter="" 
-   authors="guyinacube" 
+   authors="davidiseminger" 
    manager="erikre" 
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
-   ms.author="asaxton"/>
+   ms.date="04/12/2017"
+   ms.author="davidi"/>
 # Troubleshooting Power BI Gateway - Personal
 
 The following goes through some common issues you may encounter when using the Power BI Gateway - Personal. 
