@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/03/2017"
+   ms.date="04/12/2017"
    ms.author="asaxton"/>
 # Using auditing within your organization
 
@@ -216,7 +216,7 @@ For a full listing, see [Detailed properties in the Office 365 audit log](https:
 
 [Power BI Admin Portal](powerbi-admin-portal.md)  
 [Purchasing Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md)  
-[Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx)  
+[Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx)  
 [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)  
 [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx)  
 [Detailed properties in the Office 365 audit log](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)  
