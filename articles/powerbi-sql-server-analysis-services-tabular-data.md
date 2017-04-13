@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -54,6 +54,8 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 After you connect to the model, it will appear in your Power BI site in **My Workspace/Datasets**. If you were swtiched to a group workspace, then the dataset will appear within the group.
 
 ![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_Dataset_5.png)
+
+## Dashboard tiles
 
 If you pin visuals from a report to the dashboard, the pinned tiles are automatically refreshed every 10 minutes. If the data in your on-premises Analysis Services server is updated, the tiles will get auto-updated after 10 minutes.
 
