@@ -16,9 +16,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/06/2017"
+ms.date="04/13/2017"
 ms.author="davidi"/>
 # Configuring scheduled refresh
+
+> **Note**: After two months of inactivity, scheduled refresh on your dataset is paused. See the [*Schedule refresh*](#schedule-refresh) section later in this article for more information.
 
 If your dataset supports scheduled refresh, by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data Source Credentials**, and **Schedule Refresh**. Let’s take a closer look at each.
 
@@ -78,6 +80,7 @@ You must set the **Keep your data up to date** slider to **Yes** in order to con
 
 ![](media/powerbi-refresh-scheduled-refresh/scheduled-refresh.png)
 
+> **Note**: After two months of inactivity, scheduled refresh on your dataset is paused. A dataset is considered inactive when no user has visited any dashboard or report built on the dataset. At that time, the dataset owner is sent an email indicating the scheduled refresh is paused, and the refresh schedule for the dataset is displayed as **disabled**. To resume scheduled refresh, simply revisit any dashboard or report built on the dataset.
 
 ## What’s supported?  
 Certain datasets are supported against different gateways for scheduled refresh. Here is a reference to understand what is available.
