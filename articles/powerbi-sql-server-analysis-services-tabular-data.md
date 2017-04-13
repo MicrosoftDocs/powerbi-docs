@@ -55,6 +55,8 @@ After you connect to the model, it will appear in your Power BI site in **My Wor
 
 ![](media/powerbi-sql-server-analysis-services-tabular-data/ConnectToAS_Dataset_5.png)
 
+## Dashboard tiles
+
 If you pin visuals from a report to the dashboard, the pinned tiles are automatically refreshed every 10 minutes. If the data in your on-premises Analysis Services server is updated, the tiles will get auto-updated after 10 minutes.
 
 ## See also
