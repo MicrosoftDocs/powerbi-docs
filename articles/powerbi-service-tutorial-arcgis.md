@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/13/2017"
+   ms.date="04/13/2017"
    ms.author="mihart"/>
 
 # Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
@@ -94,7 +94,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 <br/>
 
 ## Create an AcrGIS map visual
-Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](power-bi-sample-downloads.md).
+Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](power-bi-sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 
