@@ -38,7 +38,7 @@ The visualizations on a dashboard come from reports and each report is based on 
 
 ##    Advantages of dashboards
 
-Dashboards are a wonderful way to monitor your business, to look for answers, and to see all of your most-important metrics at a glance. The visualizations on a dashboard may come from one underlying dataset or many, one underlying report or many. A dashboard combines on-premises and cloud-born data, providing a consolidated view regardless of where the data lives.
+Dashboards are a wonderful way to monitor your business, to look for answers, and to see all of your most-important metrics at a glance. The visualizations on a dashboard may come from one underlying dataset or many, and from one underlying report or many. A dashboard combines on-premises and cloud-born data, providing a consolidated view regardless of where the data lives.
 
 A dashboard isn't just a pretty picture; it's highly interactive and highly customizable and the tiles update as the underlying data changes.
 
@@ -47,11 +47,11 @@ A dashboard isn't just a pretty picture; it's highly interactive and highly cust
 [Reports](powerbi-service-reports.md) are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences.  
 
 
-|Capability  |Dashboards  |Reports  |
+|**Capability**  |**Dashboards**  |**Reports**  |
 |---------|---------|---------|
 |Pages       |  One page       | One or more pages        |
-|Data sources     | One or more reports and 1 or more datasets per dashboard       | A single dataset per report       |
-|Available in Power BI Desktop  | No  | Yes, can create and view reports in Desktop.
+|Data sources     | One or more reports and one or more datasets per dashboard       | A single dataset per report       |
+|Available in Power BI Desktop  | No  | Yes, can create and view reports in Desktop
 |Pinning   | Can pin existing visualizations (tiles) only from current dashboard to your other dashboards  | Can pin visualizations (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards.| |Subscribe    | Can't subscribe to a dashboard        | Can subscribe to report pages        |
 |Filtering     | Can't filter or slice       | Many different ways to filter, highlight, and slice        |
 |Set alerts     | Can create alerts to email you when certain conditions are met     |  No       |
@@ -59,8 +59,8 @@ A dashboard isn't just a pretty picture; it's highly interactive and highly cust
 |Natural language queries     | Available from dashboard        | Not available from reports        |
 |Can change visualization type     | No. In fact, if a report owner changes the visualization type in the report, the pinned visualization on the dashboard does not update        | Yes        |
 |Can see underlying dataset tables and fields | No. Can export data but can't see tables and fields in the dashboard itself.        | Yes. Can see dataset tables and fields and values.
-|Can create visualizations  | Limited to adding widgets to dashboard using "Add tile"   | Can create many different types of visuals, add custom visuals, edit visuals and more with Editing permissions.   |
-|Customization  | Can do things with the visualizations (tiles) like move and arrange, resize, add links, rename, delete, and display full screen. But the data and visualizations themselves are read-only. | In Reading view you can publish, embed, filter,export, download as .pbix, view related content, generate QR codes, analyze in Excel, and more.  In Editing view can do everything mentioned so far and so much more.
+|Can create visualizations  | Limited to adding widgets to dashboard using "Add tile"   | Can create many different types of visuals, add custom visuals, edit visuals and more with Editing permissions   |
+|Customization  | Can do things with the visualizations (tiles) like move and arrange, resize, add links, rename, delete, and display full screen. But the data and visualizations themselves are read-only. | In Reading view you can publish, embed, filter,export, download as .pbix, view related content, generate QR codes, analyze in Excel, and more.  In Editing view you can do everything mentioned so far and so much more.
 
 
 
@@ -71,9 +71,9 @@ Here are some topics, by role, to help you get started.
 
 ###    If you will be creating and sharing dashboards
 -  Use one of our samples to [create a dashboard from a report](powerbi-service-create-a-dashboard.md). 
--  Learn about [dashboard tiles](powerbi-service-dashboard-tiles.md) and all the different ways to pin tiles to a dashboard.
-- Help your dashboard consumers by creating dashboards that [work well with Q&A natural language queries] (powerbi-service-make-your-data-work-well-with-q-and-a.md) and with [Quick insights](powerbi-service-auto-insights-optimize.md)
-- Discover all the different ways you can [share a dashboard with colleagues](powerbi-service-how-should-i-share-my-dashboard.md)
+-  Learn about [dashboard tiles](powerbi-service-dashboard-tiles.md) and all the different ways to pin them to a dashboard.
+- Help your dashboard consumers by creating dashboards that [work well with Q&A natural language queries] (powerbi-service-make-your-data-work-well-with-q-and-a.md) and with [Quick insights](powerbi-service-auto-insights-optimize.md).
+- Discover all the different ways you can [share a dashboard with colleagues](powerbi-service-how-should-i-share-my-dashboard.md).
 
 ###    If you will be receiving and consuming dashboards
 -  Get comfortable with dashboards by taking a tour of one of our [sample dashboards](powerbi-sample-tutorial-connect-to-the-samples.md). 
@@ -82,7 +82,7 @@ Here are some topics, by role, to help you get started.
 - Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create alerts on tiles](powerbi-service-set-data-alerts.md).
 - Have fun asking your dashboard questions. Learn how to use [Power BI Q&A](powerbi-service-how-to-use-q-and-a) to ask a question about your data and get the answer in the form of a visualization.
 
->[AZURE.TIP].  If you didn’t find what you’re looking for here, use the Table of Contents to the left.
+>[AZURE.TIP]If you didn’t find what you’re looking for here, use the Table of Contents to the left.
 
 
 
