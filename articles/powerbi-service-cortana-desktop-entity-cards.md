@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/08/2017"
+   ms.date="04/17/2017"
    ms.author="mihart"/>
 
 
@@ -48,7 +48,7 @@ An *answer card* in a report is sized specifically for Cortana so that Cortana c
 
 5. Name the page and add alternate names.  Cortana uses these names when it searches for results. In the **Visualizations** pane, select the paintbrush icon and choose **Page Information**. Enable Q&A for this visual by moving the slider to **On**.
 
-    ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name-new.png)
+    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_cortana_names-newer.png)
 
     >[AZURE.TIP] To improve results, avoid using words that are also column names.
 
