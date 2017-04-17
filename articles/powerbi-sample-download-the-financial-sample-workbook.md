@@ -23,7 +23,7 @@
 
 Need some data to try with Power BI service? We have a simple Excel workbook of sample financial data available for download.  Here's how to download it:
 
--   Financial sample Excel workbook: [download the sample directly](powerbi-service-sample-datasets.md).
+-   Financial sample Excel workbook: [download the sample directly](http://go.microsoft.com/fwlink/?LinkID=521962).
 	This workbook has one table of data of sales and profit data by market segment and country/region.
 
 ### See also
