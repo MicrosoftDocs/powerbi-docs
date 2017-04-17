@@ -1,6 +1,6 @@
-﻿<properties
-   pageTitle="Create a Power BI dashboard"
-   description="Create a Power BI dashboard"
+<properties
+   pageTitle="Create a Power BI dashboard from a report"
+   description="Create a Power BI dashboard from a report"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -114,44 +114,3 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
-
-
-
-
-## Create an empty dashboard from scratch
-This method creates a new, empty, dashboard.
-
-1. Open the workspace where you'd like to add the dashboard.
-
-2.  Near the top right corner of the workspace, select **Create** > **Dashboard**.
-
-	![](media/powerbi-service-new-create-a-dashboard/power-bi-dashboard2.png)
-
-3. Type a name for your new dashboard and select **Create** .
-
-	![](media/powerbi-service-new-create-a-dashboard/power-bi-create-dashboard2.png)
-
-4. The new dashboard opens. It's blank since you haven't added any tiles yet.
-
-    ![](media/powerbi-service-new-create-a-dashboard/power-bi-new-dash2.png)
-
-5. Navigate back to active workspace and select the **Dashboards** tab to see your new dashboard listed.
-
-    ![](media/powerbi-service-new-create-a-dashboard/power-bi-my-workspace2.png)
-
-## Add some content to the dashboard
-
-There are many different ways to add content to your dashboard.
-
--  [Connect to or import at least one dataset](powerbi-service-get-data.md) and [pin content from that dataset to your dashboard](powerbi-service-dashboard-tiles.md).
-
-- [Add standalone content to your dashboard](powerbi-service-add-a-widget-to-a-dashboard.md). Use **Add tile** to add an image, text box or heading, video, or web content to your dashboard.
-
->[AURE.TIP] Need some help getting started adding content?  Check out the [Get started with Power BI tutorial](powerbi-service-get-started.md).
-
-## See also
-[Power BI dashboards](powerbi-service-new-dashboards.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
