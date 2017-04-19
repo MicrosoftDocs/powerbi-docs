@@ -30,7 +30,7 @@ You can also select a single dashboard as a [Featured dashboard](powerbi-service
 
 ## Add a dashboard as a *favorite*
 
-1.  Open a dashboard that you use often.
+1.  Open a dashboard that you use often. Even dashboards that have been shared with you can be a *favorite*.
 
 2.  From the top-right corner of Power BI service, select **Favorite** or the star ![](media/powerbi-service-favorite-dashboards/power-bi-favorite-icon.png)  icon.
 

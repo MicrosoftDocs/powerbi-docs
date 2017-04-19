@@ -24,7 +24,7 @@
 
 ##  What is a dashboard?
 
-A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story. 
+A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story.
 
 ![](media/powerbi-service-dashboards/power-bi-dashboard2.png)
 
@@ -52,7 +52,8 @@ A dashboard isn't just a pretty picture; it's highly interactive and highly cust
 |Pages       |  One page       | One or more pages        |
 |Data sources     | One or more reports and one or more datasets per dashboard       | A single dataset per report       |
 |Available in Power BI Desktop  | No  | Yes, can create and view reports in Desktop
-|Pinning   | Can pin existing visualizations (tiles) only from current dashboard to your other dashboards  | Can pin visualizations (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards.| |Subscribe    | Can't subscribe to a dashboard        | Can subscribe to report pages        |
+|Pinning   | Can pin existing visualizations (tiles) only from current dashboard to your other dashboards  | Can pin visualizations (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards.|
+|Subscribe    | Can't subscribe to a dashboard        | Can subscribe to report pages        |
 |Filtering     | Can't filter or slice       | Many different ways to filter, highlight, and slice        |
 |Set alerts     | Can create alerts to email you when certain conditions are met     |  No       |
 |Feature    | Can set one dashboard as your "featured" dashboard        | Cannot create a featured report        |
@@ -67,16 +68,16 @@ A dashboard isn't just a pretty picture; it's highly interactive and highly cust
 ##  Dashboard ***creators*** and dashboard ***consumers***  
 Depending on your role, you may be someone who creates dashboards for your own use or to share with colleagues. You want to learn how to create and share dashboards. Or, you may be someone who receives dashboards from others. You want to learn how to understand and interact with the dashboard.
 
-Here are some topics, by role, to help you get started. 
+Here are some topics, by role, to help you get started.
 
 ###    If you will be creating and sharing dashboards
--  Use one of our samples to [create a dashboard from a report](powerbi-service-create-a-dashboard.md). 
+-  Use one of our samples to [create a dashboard from a report](powerbi-service-create-a-dashboard.md).
 -  Learn about [dashboard tiles](powerbi-service-dashboard-tiles.md) and all the different ways to pin them to a dashboard.
 - Help your dashboard consumers by creating dashboards that [work well with Q&A natural language queries] (powerbi-service-make-your-data-work-well-with-q-and-a.md) and with [Quick insights](powerbi-service-auto-insights-optimize.md).
 - Discover all the different ways you can [share a dashboard with colleagues](powerbi-service-how-should-i-share-my-dashboard.md).
 
 ###    If you will be receiving and consuming dashboards
--  Get comfortable with dashboards by taking a tour of one of our [sample dashboards](powerbi-sample-tutorial-connect-to-the-samples.md). 
+-  Get comfortable with dashboards by taking a tour of one of our [sample dashboards](powerbi-sample-tutorial-connect-to-the-samples.md).
 -  Learn about [dashboard tiles](powerbi-service-dashboard-tiles.md) and what will happen when you select one.
 -  Don't like the look of a dashboard?  You can [resize, move, and rename the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).
 - Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create alerts on tiles](powerbi-service-set-data-alerts.md).

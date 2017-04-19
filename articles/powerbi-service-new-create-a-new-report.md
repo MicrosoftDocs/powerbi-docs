@@ -25,7 +25,7 @@ You've read [Reports in Power BI](powerbi-service-new-reports.md) and now you wa
 
 ## Import a report
 
-In this example we'll use one of the [Power BI samples](powerbi-sample-datasets.md) to add a dashboard to our workspace.
+In this example we'll use one of the [Power BI samples](powerbi-sample-datasets.md) to add a report to a workspace.
 
 1. [Open a workspace](powerbi-service-new-workspace.md).
 
