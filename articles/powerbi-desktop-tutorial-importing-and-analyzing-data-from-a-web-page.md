@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="04/20/2017"
    ms.author="davidi"/>
 
 # Analyzing Web page data using Power BI Desktop (tutorial)

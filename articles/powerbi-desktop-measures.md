@@ -17,19 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/11/2017"
+   ms.date="04/20/2017"
    ms.author="davidi"/>
 # Measures in Power BI Desktop
 
-Power BI Desktop helps you create insights into your data with just a few clicks. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
+**Power BI Desktop** helps you create insights into your data with just a few clicks. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
 
 Measures are used in some of the most common data analysis; for example, sums, averages, minimum or maximum values, counts, or more advanced calculations you create yourself using a DAX formula. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look.
 
 ## Understanding measures
 
-In Power BI Desktop, measures are created and used in Report View or Data View. Measures you create yourself appear in the Fields list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
+In **Power BI Desktop**, measures are created and used in **Report View** or **Data View**. Measures you create yourself appear in the Fields list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
 
 ![](media/powerbi-desktop-measures/MeasuresInPBID_MeasInFieldList.png)
+
+> **Note:** You might also be interested in **quick measures**, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn DAX syntax, since their automatically created DAX formulas are available to review. Check out the article: [quick measures](powerbi-desktop-quick-measures.md).
 
 ## Data Analysis Expressions
 
