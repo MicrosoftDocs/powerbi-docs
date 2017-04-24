@@ -47,7 +47,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 2.  Select **In﻿vite**. In the top box, enter the full email addresses for individuals, Office 365 groups, distribution groups, or security groups. Optionally, you can modify the message.
 
-> [AZURE.NOTE] You can't share with dynamic distribution lists. 
+    > [AZURE.NOTE] You can't share with dynamic distribution lists. 
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-dashboard.png)  
 
