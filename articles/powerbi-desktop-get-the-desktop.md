@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/11/2017"
+   ms.date="04/20/2017"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
@@ -27,9 +27,11 @@ To download the most recent version of **Power BI Desktop**, you can select the 
 
 ![](media/powerbi-desktop-get-the-desktop/GetPBID_Downloads.png)
 
-You can also download the latest version of Power BI Desktop from [this download page](https://powerbi.microsoft.com/desktop).
+You can also download the latest version of Power BI Desktop from the following download page:
 
-Either way, once **Power BI Desktop** is downloaded, you're prompted to run the installation file:
+-   [**Power BI Desktop download** (both 32- and 64-bit versions)](https://powerbi.microsoft.com/desktop).
+
+Regardless of which way you choose to download, once **Power BI Desktop** is downloaded you're prompted to run the installation file:
 
 ![](media/powerbi-desktop-get-the-desktop/GetPBID_3.png)
 
