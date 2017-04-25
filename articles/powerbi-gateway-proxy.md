@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/18/2017"
+ms.date="04/20/2017"
 ms.author="davidi"/>
 # Configuring proxy settings for the On-premises Data Gateway
 
@@ -99,7 +99,7 @@ When configuring the proxy settings to use default credentials, as explained abo
 
 ### Change the On-Premises Data Gateway service account
 
-1. Change the Windows service account for the **On-premises Data Gateway service**. 
+1. Change the Windows service account for the **On-premises Data Gateway service**.
 
     The default account for this service is *NT SERVICE\PBIEgwService*. You will want to change this to a domain user account within your Active Directory domain. Or, you will want to use a managed service account to avoid having to change the password.
 

@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="04/12/2017"
    ms.author="asaxton"/>
 
 # Step 4: Load a tile into an IFrame

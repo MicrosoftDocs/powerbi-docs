@@ -17,11 +17,13 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/14/2017"
+ms.date="04/11/2017"
 ms.author="asaxton"/>
 # Understanding the Power BI admin role
 
 Learn how you can use the Power BI admin role within your organization.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/PQRbdJgEm3k?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 The Power BI Service Administrator role can be assigned to users who should have access to the Power BI Admin Portal without also granting them other Office 365 administrative access. For example, the Global Admin role. It is meant for those tasked with administering Power BI for their organization.
 
@@ -114,6 +116,13 @@ To add a member to a role using the Azure AD v1 cmdlets, you will want to run th
 ```
 Add-MsolRoleMember -RoleMemberEmailAddress "tim@contoso.com" -RoleName "Power BI Service Administrator"
 ```
+
+## Limitations and considerations
+
+The Power BI service administrator role does not provide access to the following.
+
+- Ability to modify users and licenses within the Office 365 Admin Center
+- Access to the audit logs. For more information, see [Using auditing within your organization](powerbi-admin-auditing.md).
 
 ## See also
 

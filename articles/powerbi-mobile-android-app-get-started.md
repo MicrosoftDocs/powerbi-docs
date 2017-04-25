@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus="complete"
    qualityDate="05/18/2016"/>
  
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/25/2017"
+   ms.date="04/10/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI for Android mobile app
@@ -26,7 +26,7 @@ The Android app for Microsoft Power BI brings Power BI to your pocket, with up-t
 
 ![](media/powerbi-mobile-android-app-get-started/power-bi-android-dashboard-optimized.png)
 
-You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
+You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data.
 
 Then interact with your dashboards and reports, explore the data, and share them, all from the Android app for Power BI.
 
@@ -110,6 +110,8 @@ Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites
 Organizations can use Microsoft Intune to manage devices and applications, including the Power BI mobile apps for Android and iOS.
 
 Microsoft Intune lets organizations control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
+
+>**Note**: If you use the Power BI mobile app on your Android device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 
 Read more about [configuring Power BI mobile apps for Android with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 

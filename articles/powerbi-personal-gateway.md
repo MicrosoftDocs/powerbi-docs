@@ -3,7 +3,7 @@
    description="Power BI Gateway - Personal"
    services="powerbi"
    documentationCenter=""
-   authors="guyinacube"
+   authors="davidiseminger"
    manager="erikre"
    backup=""
    editor=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/09/2017"
-   ms.author="asaxton"/>
+   ms.date="04/12/2017"
+   ms.author="davidi"/>
 
 # Power BI Gateway - Personal
 

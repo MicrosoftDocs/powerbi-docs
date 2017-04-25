@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2017"
+   ms.date="04/12/2017"
    ms.author="asaxton"/>
 
 # Get started with third party apps
@@ -28,11 +28,11 @@ Here are the types of access an application can request.
 
 ## Power BI App permissions
 
--	**View all Dashboards (preview)**
+-	**View all Dashboards**
 
   - This permission gives an application the ability to view all dashboards you have access to. This includes dashboards that you own, have gotten from content packs, and have been shared to you and are in groups that you belong to. The application cannot make any modifications to the dashboard. Among other things, this permission can be used by an application to embed your dashboard content into its experiences.
 
--	**View all Reports (preview)**
+-	**View all Reports**
 
   - This permission gives an application the ability to view all reports you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. Part of viewing the report, means that the application can also see the data within it. The application cannot make any modifications to the reports themselves. Among other things, this permission can be used by an application to embed your report content into its experiences.
 

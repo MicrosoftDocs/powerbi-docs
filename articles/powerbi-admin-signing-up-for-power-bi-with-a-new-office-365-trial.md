@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="04/12/2017"
    ms.author="asaxton"/>
 # Signing up for Power BI with a new Office 365 Trial
 

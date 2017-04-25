@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
-   ms.author="amac"/>
+   ms.date="04/13/2017"
+   ms.author="mihart"/>
 
 # Retail Analysis sample for Power BI: Take a tour
 
@@ -26,7 +26,7 @@
 
 This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](powerbi-service-sample-datasets.md).
+You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529778).
 
 ![](media/powerbi-sample-retail-analysis-take-a-tour/retail1.png)
 
