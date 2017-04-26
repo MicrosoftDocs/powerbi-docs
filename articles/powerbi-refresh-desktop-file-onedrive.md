@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2017"
+   ms.date="04/20/2017"
    ms.author="davidi"/>
 
 # Refresh a dataset stored on OneDrive or SharePoint Online
 
-Importing files from OneDrive, or SharePoint Online, into the Power BI service is a great way to make sure the work you’re doing in **Power BI Desktop** stays in sync with the Power BI service. 
+Importing files from OneDrive, or SharePoint Online, into the Power BI service is a great way to make sure the work you’re doing in **Power BI Desktop** stays in sync with the Power BI service.
 
 ## Advantages of storing a Power BI Desktop file on OneDrive or SharePoint Online
 

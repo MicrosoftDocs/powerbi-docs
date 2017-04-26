@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/17/2017"
+   ms.date="04/19/2017"
    ms.author="mihart"/>
 
 
@@ -65,6 +65,8 @@ An *answer card* in a report is sized specifically for Cortana so that Cortana c
       - "show sales for Charlotte Lindseys," this Answer Page will display.
 
 Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
+
+>[AZURE.NOTE] You don't have to set **Require single selection** to ask Cortana to display a report with page level filters.  For example “show sales for Charlotte Lindseys” will get answer page regardless Require Single Selection status.
 
 >[AZURE.IMPORTANT]  Before your answer card can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 

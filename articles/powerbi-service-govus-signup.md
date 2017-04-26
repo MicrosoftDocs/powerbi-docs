@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="04/20/2017"
    ms.author="davidi"/>
 
 # Enroll your US Government organization in the Power BI service
@@ -32,7 +32,7 @@ For more information about the **Power BI service** for US Government, including
 
 ## Select the right sign-up process for your US Government organization
 
-Your US Government organization might be new to the **Office Government Cloud**, or might already have a subscription. The following sections detail the sign-up steps based on where you are with the Office Government Cloud and Power BI, and are different based on your existing subscription. 
+Your US Government organization might be new to the **Office Government Cloud**, or might already have a subscription. The following sections detail the sign-up steps based on where you are with the Office Government Cloud and Power BI, and are different based on your existing subscription.
 
 Once you have signed up for Power BI US Government some features may not work until your sales or support representative completes your onboarding process. To find out about these features see the [Power BI for United States Government customers - Overview](powerbi-service-govus-overview.md). To complete the onboarding process to enable these features, contact your sales or support representative.
 
@@ -43,7 +43,7 @@ If your organization is a new **Office Government Cloud** customer, follow these
 
 > **Note:** These steps should be performed by the portal administrator.
 
-1.  Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). Note: if you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative. 
+1.  Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). Note: if you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative.
 
 2.  Select Office G3 and complete the form for an Office trial
 
@@ -99,18 +99,18 @@ If the tenant has Power BI Free in their tenancy, both the Free and Gov Pro lice
 To get “whitelisted”, fill out the intake form [here](http://www.surveygizmo.com/s3/3289410/ca030551f535). Once complete the Power BI team will include the your domain information into their payload. ETA for completion is 2-3 weeks from submission.
 
 ### Mixed Power BI Free to Pro Customer Onboarding
-In the case where a customer has users leveraging the Power BI ‘free’ SKU and then purchases Pro licenses for some but not all of their users. 
+In the case where a customer has users leveraging the Power BI ‘free’ SKU and then purchases Pro licenses for some but not all of their users.
 
-Before “whitelisting” 
--  The 500 ‘free’ users running in commercial can continue to run as is. 
--  The 100 Power BI Pro Gov licenses will show up in the portal and the administrator can assign them to users. The assigned users can then leverage Power BI Pro, understanding that the [gaps solved by “whitelisting”](#gaps-solved-by-whitelisting) will exist until they are “whitelisted”. The Pro user will not lose data from their ‘free’ license once the admin assigns them the Pro license. 
+Before “whitelisting”
+-  The 500 ‘free’ users running in commercial can continue to run as is.
+-  The 100 Power BI Pro Gov licenses will show up in the portal and the administrator can assign them to users. The assigned users can then leverage Power BI Pro, understanding that the [gaps solved by “whitelisting”](#gaps-solved-by-whitelisting) will exist until they are “whitelisted”. The Pro user will not lose data from their ‘free’ license once the admin assigns them the Pro license.
 
-After “whitelisting” 
--  The 500 ‘free’ users running in commercial can continue to run, but the client app will stop authenticating as expected. 
--  The 100 Pro users running in government are good to go and all tools function as expected. 
- 
-Identifying users running Power BI 'free' 
--  To identify users running Power BI ‘free’ within a tenant, admins can run the licensing report and ‘free’ users will show up for “Power BI Standard” 
+After “whitelisting”
+-  The 500 ‘free’ users running in commercial can continue to run, but the client app will stop authenticating as expected.
+-  The 100 Pro users running in government are good to go and all tools function as expected.
+
+Identifying users running Power BI 'free'
+-  To identify users running Power BI ‘free’ within a tenant, admins can run the licensing report and ‘free’ users will show up for “Power BI Standard”
 
 ### Gaps solved by “whitelisting”
 -  Gateway, Mobile, and Desktop can’t authenticate

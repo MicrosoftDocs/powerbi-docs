@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/18/2017"
+ms.date="04/20/2017"
 ms.author="davidi"/>
 # Manage your data source - Analysis Services
 
@@ -72,7 +72,7 @@ You can then select the **Data Source Type** from the list. Select Analysis Serv
 
 You will then want to fill in the information for the data source which includes the **Server** and the **Database**.  
 
-The **Username** and **Password** that you enter will be used by the gateway to connect to the Analysis Services instance. 
+The **Username** and **Password** that you enter will be used by the gateway to connect to the Analysis Services instance.
 
 > [AZURE.NOTE] The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
 
@@ -137,7 +137,7 @@ To get to the UPN Mapping screen, do the following.
 4. Select **Map user names**.
 
     ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names.png)
-    
+
 You will then see options to add rules as well as test for a given user.
 
 > [AZURE.NOTE] You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.com would be sent as v-dave*@contoso.local*.
@@ -199,7 +199,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 
 ## Using the data source
 
-After you have created the data source, it will be available to use with either live connections, or through scheduled refresh. 
+After you have created the data source, it will be available to use with either live connections, or through scheduled refresh.
 
 > [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/18/2017"
+   ms.date="04/20/2017"
    ms.author="davidi"/>
 
 # Refresh a dataset created from a Power BI Desktop file on a local drive  
@@ -40,7 +40,7 @@ You can perform a one-time, manual refresh right in Power BI Desktop by selectin
 
 When you import your Power BI Desktop file from a local drive, data, along with other information about the model is loaded into a dataset in the Power BI service. In the Power BI service, not Power BI Desktop, you want to refresh data in the dataset because that is what your reports, in the Power BI service, are based on. Because the data sources are external, you can manually refresh the dataset by using **Refresh now** or you can setup a refresh schedule by using **Schedule Refresh**.
 
-When you refresh the dataset, Power BI does not connect to the file on the local drive to query for updated data. It uses information in the dataset to connect directly to the data sources to query for updated data it then loads into the dataset. 
+When you refresh the dataset, Power BI does not connect to the file on the local drive to query for updated data. It uses information in the dataset to connect directly to the data sources to query for updated data it then loads into the dataset.
 
 > [AZURE.NOTE] Refreshed data in the dataset is not synchronized back to the file on the local drive.
 

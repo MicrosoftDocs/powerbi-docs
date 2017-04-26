@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="0tUwn8DHo3s"
-   qualityFocus="identified"
+   qualityFocus="complete"
    qualityDate="06/22/2016"/>
 
 <tags
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/17/2017"
+   ms.date="04/24/2017"
    ms.author="ajayan"/>
 
 # Share a dashboard and reports with colleagues and others
@@ -45,7 +45,9 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 1.   Open the dashboard and select **Share** ![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png).
 
-2.  Select **In﻿vite** and type the email addresses in the top box and, optionally, modify the message.
+2.  Select **In﻿vite**. In the top box, enter the full email addresses for individuals, Office 365 groups, distribution groups, or security groups. Optionally, you can modify the message.
+
+    > [AZURE.NOTE] You can't share with dynamic distribution lists. 
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-dashboard.png)  
 
