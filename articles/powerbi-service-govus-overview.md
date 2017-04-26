@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/09/2017"
+   ms.date="04/25/2017"
    ms.author="davidi"/>
 
 # Power BI for US Government customers
@@ -50,6 +50,7 @@ The following features are available in **Power BI US Government**:
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
 -   **Office Online integration** - you can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit or publish.
+-   **Auditing** - auditing is not available through the Office 365 Security and Compliance portal.
 -   **Email notification** - these notifications do not work when sharing dashboards. Users with whom a dashboard is shared can still view the dashboard and get notification when they are logged in.
 -   **ESRI Power BI integration** - not available in Power BI at this time.
 -   **Data-driven alerts** - you can set up alerts and receive notifications when your alert condition occurs in the Power BI Notification Center, and by push notifications to the Power BI app on your mobile device. However, you will not receive emails when your alert condition occurs.
