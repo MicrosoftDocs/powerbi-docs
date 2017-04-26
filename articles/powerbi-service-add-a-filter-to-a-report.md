@@ -1,10 +1,10 @@
 ﻿<properties
-   pageTitle="Add a filter to a report in Power BI"
-   description="Add a filter to a report in Power BI"
+   pageTitle="Add a visualization or page or report filter to a report"
+   description="Add a page filter, visualization filter, or report filter to a report in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/29/2017"
+   ms.date="04/23/2017"
    ms.author="mihart"/>
 
 # Add a filter to a Power BI report (in Editing view)
@@ -33,7 +33,7 @@ There are two modes for interacting with reports: [Reading View](powerbi-servi
 
 -   In Reading View, you can interact with any report, page and visual filters that already exist in the report, but you won't be able to save your filter changes.
 
->[AZURE.NOTE]This article describes how to create filters in report **Editing View**.  For more information on filters in Reading VIew, see [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
+>[AZURE.NOTE] This article describes how to create filters in report **Editing View**.  For more information on filters in Reading VIew, see [interacting with filters in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md).
 
 ##  Visual filters, page filters, and report filters
 A **page filter** applies to all the visuals on the report page. A **visual filter** applies to a single visual on a report page. And a **report filter** applies to all pages in the report.
@@ -41,8 +41,12 @@ A **page filter** applies to all the visuals on the report page. A **visual fil
 ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-add-filter-reading-view.png)
 
 ## Add a filter to a specific visualization (aka visual filter)
+There are 2 ways to do this: 
+-    by filtering a field that is already being used by the visualization
 
-### By filtering the fields already in the chart
+-    by identifying a field that is not already being used by the visualization, and adding that field directly to the **Visual level filters** bucket.
+
+### By filtering the fields already in the visualization
 
 1.  Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
@@ -50,31 +54,40 @@ A **page filter** applies to all the visuals on the report page. A **visual fil
 
 2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 
-    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-display-filters.png)
+    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-display-panes.png)
 
-3.  Select a visual to make it active. All the fields being used by the visual are identified in the **Fields** pane and also listed in the **Filters** pane, under the **Visual Level Filters** heading.
+3.  Select a visual to make it active. All the fields being used by the visual are identified in the **Fields** pane and also listed in the **Filters** pane, under the **Visual level filters** heading.
 
-    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visual-filter.png)
+    ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-default-visual-filter.png)
 
-4.  At this point you can either add a filter to a field already being used by the visualization, or you can use a different field as a filter. 
+4.  At this point we'll add a filter to a field already being used by the visualization. 
 
-5.  Add a filter to a field already being used by the visualization.
+    -  Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example we'll filter **StoreNumberName**
 
-    -  Add a filter to a field already being used by the visual. Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter.
+       ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visual-level-filter.png) 
 
-    -  Set either **Basic** or **Advanced** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
+    -  Set either **Basic**, **Advanced**, or **Top N** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)). In this example we'll select Basic filtering and place checkmarks next to numbers 10, 11, 15, and 18.
 
-        ![](media/powerbi-service-add-a-filter-to-a-report/vizFilter.png) 
+        ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-basic-filters.png) 
 
     -  The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
-6.  Add a new field as a filter.
+        ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-filter-effect.png)
 
-    -  From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  
+6.  Now let's add a totally new field, as a Visual level filter, to our visualization.
 
-    -  Follow steps 2-3 above.
+    -  From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  In this example we'll drag **District Manager** into the **Visual level filters** bucket and select only Andrew Ma. 
+
+       ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-andrew.png)
 
 
+    -  Notice that **District Manager** is *not* added to the visualization itself. The visualization is still composed of **StoreNumberName** as the Axis and **This Year Sales** as the Value.  
+    
+          ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visualization.png)
+    
+    -    And, the visualization itself is now filtered to show only Andrew's sales this year for the specified stores.
+
+          ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-filtered-andrew.png)
 
 ## Add a filter to an entire page (aka page view filter)
 
@@ -82,11 +95,11 @@ A **page filter** applies to all the visuals on the report page. A **visual fil
 
 2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 
-3.  From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Page level filters area**.  
+3.  From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Page level filters** area.  
 
 4.  Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
 
-    The visualization changes to reflect the new filter. 
+    All the visualization on the page, impacted by this filter, are re-drawn to reflect the change. 
 
     ![](media/powerbi-service-add-a-filter-to-a-report/filterPage.gif)
 
@@ -98,11 +111,11 @@ If you save your report with the filter, report readers can interact with the fi
 
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 
-3. From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Report level filters area**.  
+3. From the Fields pane, select the field you want to add as a new report level filter, and drag it into the **Report level filters** area.  
 
 4. Select the values you want to filter (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)).
 
-The visuals on the active page, and on all pages in the report, changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
+The visuals on the active page, and on all pages in the report, change to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
 
 ##  Troubleshooting
 
@@ -112,8 +125,10 @@ When you add a visual level filter, Power BI filters on the aggregated results. 
 
 When you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visuals which can each utilize different aggregation types.  So the filter is applied on each data row.
 
+If you do not see the Fields pane, make sure you're in report [Editing view](powerbi-service-interact-with-a-report-in-editig-view.md)
 
-## See also
+
+## Next steps
 
  [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
 
@@ -122,9 +137,5 @@ When you add a page level filter, Power BI filters without aggregating.  It does
 [Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)
 
 [Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
-
-Read more about [reports in Power BI](powerbi-service-reports.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

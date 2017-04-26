@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,44 +17,55 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/11/2016"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 # The report editor...Take a tour
 
-[Open a Power BI report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
+The report editor in Power BI service and the report editor in Power BI Desktop are very similar. However, this tour takes place in Power BI service.
 
-The Power BI report editor is made up of 3 panes:  **Fields**, **Visualizations**, and **Filters**, plus the top navigation bar and the report canvas.  
+In Power BI service, the *report editor* is only available in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). To open a report in Editing view, you must be a report owner.
 
-## The report editor panes
+The Power BI report editor is made up of 3 sections:  
 
-The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering.  And the pane on the right side, Fields, control the underlying data being used in the visualizations. 
+1. **Fields**, **Visualizations**, and **Filters** panes
+2. top navigation bars    
+3. report canvas     
+
+![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-report-canvas.png)
+
+
+## 1. The report editor panes
+
+![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-report-panes.png)
+
+There are 3 panes visible when you first open a report: Visualizations, Filters, and Fields. The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering, formatting.  And the pane on the right side, Fields, manages the underlying data being used in the visualizations. 
 
 The content displayed in the report editor varies by selections you make in the report canvas.  For example, when you select an individual visual, 
 
--   the top of the Visualization pane identifies the type of visual in use, 
--   the bottom of the Visualization pane displays the fields being used in the visual,
--   the Filters pane displays any filters that have been applied, and
--   the Fields list identifies tables (and fields if the table is already expanded) in use.
 
-![](media/powerbi-service-the-report-editor-take-a-tour/PBI_report_canvas.png)
+|                                                             |         |
+|---------------------------------------------- |---------|
+|![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-panes.png)    | <ul><li>The top of the Visualization pane identifies <br>the type of visual in use; in this example,<br> a Clustered column chart.<br><br></li> <li>The bottom of the Visualization pane<br> (you may have to scroll down) displays the <br>fields being used in the visual. This chart is <br>using FiscalMonth, DistrictManager, and <br>Total Sales Variance. <br><br></li><li>The Filters pane (you may have to scroll down)<br> displays any filters that have been applied. <br><br></li><li>The Fields pane lists the tables available and, <br>if you expand a table's name, the fields that<br> make up that table. Yellow font lets you know<br> that at least one field from that table is being <br>used in the visualization.<br><br></li><li>![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) To display the formatting pane, for <br>the selected visualization, select the <br>paint roller icon.<br><br></li><li>![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) To display the Analystics pane, select the magnifying glass icon.</ul>       |
+|          |          |
+
 
 ## The Visualizations pane (from top to bottom)
 
-Select visual type, build your visual by adding and managing fields, and customize the look and feel of your visual.
-
-### Change between different visual types by selecting the icon.
-
 ![](media/powerbi-service-the-report-editor-take-a-tour/selectViz.png)
 
-### Control the fields used in your visual.
+Here is where you select a visualization type. The small pictures are called *templates*. In the image above, the Clustered bar chart is selected. If you don't select a visualization type first, but instead start building a visualization by selecting fields, Power BI will pick the visualization type for you. Yuo can keep Power BI's selection, or change the type by clicking a different template. Switch as many times as you need to find the visualization type that best represents your data.
 
-The buckets shown in this pane vary depending on what type of visualization you have selected.  For example, if you've selected a bar chart, you'll see buckets for: Values, Axis, and Legend. When you select a field, or drag it onto the canvas, Power BI adds that field to one of the buckets.  You can also drag fields from the Fields list directly into the Visualizations buckets.  Some buckets are limited to certain types of data.  For example, **Values** won't accept non-numeric fields. So if you drag an **employeename** field into the **Values** bucket, Power BI changes it to **count of employeename**.
+### Manage the fields used in your visual.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-field-list.png)
 
+The buckets (sometimes called *wells*) shown in this pane vary depending on what type of visualization you have selected.  For example, if you've selected a bar chart, you'll see buckets for: Values, Axis, and Legend. When you select a field, or drag it onto the canvas, Power BI adds that field to one of the buckets.  You can also drag fields from the Fields list directly into the buckets.  Some buckets are limited to certain types of data.  For example, **Values** won't accept non-numeric fields. So if you drag an **employeename** field into the **Values** bucket, Power BI changes it to **count of employeename**.
+
+
+
 ### Remove a field
 
-To remove a field from the visualization, select the field and click the **X**.
+To remove a field from the visualization, select the **X** to the right of the field name.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/deleteField.png)
 
@@ -62,13 +73,25 @@ For more information, see [Add visualizations to a Power BI report](powerbi-serv
 
 ### Format your visuals
 
-Select the paintbrush icon to display customization options. 
+Select the paint roller icon to display the Format pane. 
+
+![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-formatting.png)
+
+The formatting possibilities are almost endless.  To learn more, explore on your own, or visit these articles:
 
 -   [Customizing  visualization title, background and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 -   [Color formatting](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
 -   [Customizing X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
 
-    ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-formatting.png)
+###   Add analytics to your visualizations
+
+Select the magnifying glass icon to display the Analytics pane. 
+
+![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-analytics.png)    
+With the Analytics pane in Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in Power BI service](powerbi-service-analytics-pane.md) of [Analytics pane in Power BI Desktop](powerbi-desktop-analytics-pane.md).
+
+
+* * *
 
 ## The Filters pane
 
@@ -78,21 +101,22 @@ View, set, and modify page, report, and visual-level filters.
 
 For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
+* * *
+
 ## The Fields pane 
 
-The Fields pane displays the tables and fields that exist in your data.  Use these fields to create visualizations.
+The Fields pane displays the tables and fields that exist in your data and are available for you to use to create visualizations.
 
--   Drag a field onto the page to start a new visualization.  You can also drag a field onto an existing visualization to add the field.
+|                                                             |         |
+|---------------------------------------------- |---------|
+|![](media/powerbi-service-the-report-editor-take-a-tour/reportFields.png)    | <ul><li>Drag a field onto the page to start a new <br>visualization.  You can also drag a field onto <br>an existing visualization to add the field to <br>that visualization.<br><br></li> <li>When you add a checkmark next to a field,<br> Power BI adds that field to the active (or new) <br>visualization. And it also decides which bucket <br>to place that field into.  For example, should <br>the field be used a legend, axis,or value? <br>Power BI makes a best-guess and you can move<br> it from that bucket to another if necessary. <br><br></li><li>Either way, each selected field is added to the Visualizations pane in the report editor.</li></ul>       |
 
--   Or, select the checkbox next to a field.  If a visualization is selected on the canvas, then the new field is added to that visualization.
 
--   Either way, each selected field is added to the Visualizations pane in the report editor.
 
-![](media/powerbi-service-the-report-editor-take-a-tour/reportFields.png)
 
-**NOTE**: If you're using Power BI Desktop, you can reach options to show/hide fields, add calculations etc, from here as well:
 
-![](media/powerbi-service-the-report-editor-take-a-tour/reportFieldsDesigner.png)
+
+**NOTE**: If you're using Power BI Desktop, you'll also have options to show/hide fields, add calculations etc.
 
 ### What do the field icons mean?
 
@@ -112,18 +136,17 @@ The Fields pane displays the tables and fields that exist in your data.  Use th
 -  **![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-hierarchy-icon.png) Hierarchy**  
     Select the arrow to reveal the fields that make up the hierarchy. 
 
+* * *
+
 ## The top navigation bar
 The actions available from the top navigation bar are numerous; with new actions being added all the time. For information about a particular action, use the Power BI Documentation Table of Contents or Search box.
 
 
 ## Next Steps:
 
-[Edit a report](powerbi-service-interact-with-a-report-in-editing-view.md)
-
 [Create a report](powerbi-service-create-a-new-report.md)
 
-
-## See also
+[Edit a report](powerbi-service-interact-with-a-report-in-editing-view.md)
 
 Read more about [reports in Power BI](powerbi-service-reports.md)
 

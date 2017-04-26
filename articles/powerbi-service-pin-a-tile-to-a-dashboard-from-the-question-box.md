@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,17 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
 # Pin a tile to a dashboard from Q&A  
 ## How to pin a tile from Q&A
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
-1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
+>**NOTE**: To follow along, open the [Retail Analysis sample](powerbi-samples-retail-analysis-take-a-tour.md).
+
+1.  Open a [dashboard](powerbi-service-dashboards.md) that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.  To learn more, see [get data](powerbi-service-get-data.md).
 
 2.  In the question box at the top of your dashboard, start typing what you want to know about your data.  
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnAQuestionBoxNew.png)
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-question-box.png)
 
 3.  For example, as you type "last year sales by month and territory"...  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-type-q-and-a.png)
@@ -38,24 +40,30 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 
 5.  Pin the tile to an existing dashboard or to a new dashboard. 
 
-    -   Existing dashboard: select the name of the dashboard from the dropdown.
+    -   Existing dashboard: select the name of the dashboard from the dropdown. Your choices will be limited to only those dashboards withing the current workspace.
 
-    -   New dashboard: type the name of the new dashboard.
+    -   New dashboard: type the name of the new dashboard and it will be added to your current workspace.
 
 6.  Select **Pin**.
 
     A success message (near the top-right corner) lets you know the visualization was added, as a tile, to your dashboard.  
-    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/pinSuccess.png)
 
-7.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-pin.png)
 
-## Tips for using Q&A  
--   When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard highlighted in the navigation pane.
+7.  Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
+
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-pinned.png)
+
+## Considerations and troubleshooting
+ 
+-   When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is dashboard listed in the top navigation bar. For example, this question is being asked in the **Retail Analysis Sample** dashboard that is part of the **mihart** app workspace.
+
+    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-navbar.png)
 
 -   **How does Q&A know which datasets to use**?  Q&A has access to all datasets that have visualizations pinned to that dashboard.
 
-## See Also  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Q&A in Power BI](powerbi-service-q-and-a.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+## Next steps  
+[Rename, resize, add a hyperlink, reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md)
+[Display your dashboard tile in Focus mode](powerbi-service-display-dash-in-focus-mode.md)  
+[Back to Q&A in Power BI](powerbi-service-q-and-a.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

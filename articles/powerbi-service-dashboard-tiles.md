@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Dashboard tiles in Power BI"
+   pageTitle="Dashboard tiles in Power BI service"
    description="All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS)."
    services="powerbi"
    documentationCenter=""
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
+   qualityFocus=""
    qualityDate="03/15/2016"/>
 
 <tags
@@ -17,26 +17,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/15/2017"  
+   ms.date="04/26/2017"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
+Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](powerbi-mobile-tiles-in-the-iphone-app.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](powerbi-mobile-picture-tiles-in-the-iphone-app.md).
+
 ## Dashboard tiles
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  The screenshot below shows many different tiles pinned to a dashboard.
+![](media/powerbi-service-dashboard-tiles/power-bi-dashboard.png)
+
+A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
 
 Besides pinning, standalone tiles can be created directly on the dashboard using [Add tile](powerbi-service-add-a-widget-to-a-dashboard.md). Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
-![](media/powerbi-service-dashboard-tiles/PBI_DashFull_new.png)
+
 
 Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
->[AZURE.NOTE] If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
+>[AZURE.NOTE] If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
 
 ## Pin a tile from...
-
-Tiles can be pinned from:
+There are many different ways to add (pin) a tile to a dashboard. Tiles can be pinned from:
 
 -   [Power BI Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
 
@@ -72,19 +75,25 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
     ![](media/powerbi-service-dashboard-tiles/ellipses_new.png)
 2. Select the ellipses to open the tile action menu.
 
-    ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
+    ![](media/powerbi-service-dashboard-tiles/power-bi-menu.png)
 
     From here you can:
 
-  - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
-  - [Export the data used in the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
+      - [View in Focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)  
+  
+   - [Run Quick Insights ](powerbi-service-auto-insights.md) ![](media/powerbi-service-dashboard-tiles/power-bi-insights.png) 
 
-  - [View in Focus mode](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
-
-  - [Pin the tile to another dashboard](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+    - [Pin the tile to another dashboard ](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
  ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
 
-  - [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
+ 
+     - [Export the data used in the tile ](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
+
+   
+    - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+ 
+
+    - [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
  ![](media/powerbi-service-dashboard-tiles/trash-icon.png)
 
 3. To close the action menu, select the X icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg).
@@ -100,7 +109,7 @@ When you select a tile, what happens next depends on how the tile was created an
 >[AZURE.NOTE] The exception to this is video tiles created directly on the dashbaord using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
 
 
-## Tips and troubleshooting  
+## Considerations and troubleshooting  
 
 - If the report that was used to create the visualization was not saved, then selecting the tile produces no action.
 
@@ -114,12 +123,13 @@ When you select a tile, what happens next depends on how the tile was created an
 
 - If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
-## See also  
+## Next steps  
 [Create a big number tile from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
 [Create a big number tile from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
+
 [Data refresh](powerbi-refresh-data.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)

@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 
@@ -72,14 +72,10 @@ Highlights when there are significant changes in trends in a time series of data
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_changepoint.png)
 
-## See also
+## Next steps
 
 [Power BI Quick Insights](powerbi-service-auto-insights.md)
 
-[Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+If you own a dataset, [optimize it for Quick Insights](powerbi-service-auto-insights-optimize.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

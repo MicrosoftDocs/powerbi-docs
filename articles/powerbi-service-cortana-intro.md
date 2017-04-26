@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/13/2017"
+   ms.date="05/25/2017"
    ms.author="yaron"/>
 
 
@@ -68,9 +68,9 @@ But that's not all. Interact with the visualizations on the answer card as you w
 
 -    Continue exploring. Scroll to the bottom of the Cortana window and select **Open in Power BI**.
 
-    ![](media/powerbi-service-cortana-intro/power-bi-cortana-open.png)
+     ![](media/powerbi-service-cortana-intro/power-bi-cortana-open.png)
 
-    The entire report opens in Power BI service.
+     The entire report opens in Power BI service.
 
 ##  Create a Cortana card
 

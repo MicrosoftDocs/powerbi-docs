@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
 # See data used to create the visual
@@ -38,7 +38,7 @@ You can also export the data that is being used to create the visualization as a
 
     ![](media/powerbi-service-reports-see-data/power-bi-export.png)
 
-3.  By default, the data displays below the visual.  To change this, in the top right corner of the visual, select the **Switch to vertical layout** icon ![](media/powerbi-service-reports-see-data/power-bi-vertical-icon.png).
+3.  By default, the data displays below the visual.   (media/powerbi-service-reports-see-data/power-bi-vertical-icon.png).
 
     ![](media/powerbi-service-reports-see-data/power-bi-explore-see-data.png)
 
@@ -52,12 +52,10 @@ You can also export the data that is being used to create the visualization as a
 
 6.  To hide the data, de-select **Explore** > **See data**.
 
-### See also
+### Next steps
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
-
-[Power BI reports](powerbi-service-reports.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
+[Export data from Power BI visualizations](powerbi-service-export-data.md)    
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)    
+[Power BI reports](powerbi-service-reports.md)    
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)    
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

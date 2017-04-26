@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
 # Part I, Add visualizations to a Power BI report (Tutorial)
@@ -74,12 +74,10 @@ Now use the [Sales and Marketing sample](powerbi-sample-datasets.md) to create y
     [Save your report](powerbi-service-save-a-report.md).
 
 
-## See also
+## Next steps
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).
 
 [Reports in Power BI](powerbi-service-reports.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
