@@ -16,14 +16,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/26/2017"
+   ms.date="04/27/2017"
    ms.author="maggies"/>
 
 # What are apps in Power BI?
 
 An app is a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions. In the Power BI service ([https://powerbi.com](https://powerbi.com)), apps are easy to find and install. After you install them, you can view them from any device. 
 
-![](media/powerbi-what-are-apps/power-bi-apps-home.png)
+![](media/powerbi-what-are-apps/power-bi-apps-home-480.png)
 
 With apps you automatically get all the updates the app author makes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping up-to-date with the author’s changes.
 
@@ -37,11 +37,11 @@ The easiest way to install a new app is to get a direct link from the app author
 
 *     In the Power BI service ([https://powerbi.com](https://powerbi.com)), you confirm you want to install the app, and it opens to the app landing page.
 
-     ![](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity.png)
+     ![](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity-480.png)
 
 *     In the Power BI mobile apps, when you click the link, the app installs automatically and opens the app index page. 
 
-     ![](media/powerbi-what-are-apps/power-bi-app-mobile-index-it-spend.png)
+     ![](media/powerbi-what-are-apps/power-bi-app-index-it-spend-360.png)
 
 ### Get the app from Microsoft AppSource
 
