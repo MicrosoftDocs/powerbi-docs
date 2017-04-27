@@ -1,0 +1,52 @@
+<properties 
+   pageTitle="What are apps in Power BI?"
+   description="Apps are a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster data-driven decisions."
+   services="powerbi" 
+   documentationCenter="" 
+   authors="maggiesMSFT" 
+   manager="erikre" 
+   editor=""
+   tags=""
+   qualityFocus="no"
+   qualityDate=""/>
+ 
+<tags
+   ms.service="powerbi"
+   ms.devlang="NA"
+   ms.topic="article"
+   ms.tgt_pltfrm="NA"
+   ms.workload="powerbi"
+   ms.date="04/26/2017"
+   ms.author="maggies"/>
+
+# What are apps in Power BI?
+
+An app is a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions. In the Power BI service ([https://powerbi.com](https://powerbi.com)), apps are easy to find and install. After you install them, you can view them from any device. 
+
+![](media/powerbi-what-are-apps/power-bi-apps-home.png)
+
+With apps you automatically get all the updates the app author makes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping up-to-date with the author’s changes.
+
+## Install an app
+
+You can find and install apps two different ways.
+
+### Get a direct link to an app
+
+The easiest way to install a new app is to get a direct link from the app author. Power BI creates an installation link, which the author can then send to you.
+
+*     In the Power BI service ([https://powerbi.com](https://powerbi.com)), you confirm you want to install the app, and it opens to the app landing page.
+
+     ![](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity.png)
+
+*     In the Power BI mobile apps, when you click the link, the app installs automatically and opens the app index page. 
+
+     ![](media/powerbi-what-are-apps/power-bi-app-mobile-index-it-spend.png)
+
+### Get the app from Microsoft AppSource
+
+You can also find and install apps that you have access to from Microsoft Appsource. From Get data, under Microsoft AppSource, click Get for My organization.
+
+## Next steps
+
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
