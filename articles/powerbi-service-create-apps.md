@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="What are apps in Power BI?"
+   pageTitle="Create and distribute an app in Power BI"
    description="Apps are a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster data-driven decisions."
    services="powerbi" 
    documentationCenter="" 
@@ -19,7 +19,7 @@
    ms.date="04/27/2017"
    ms.author="maggies"/>
 
-# What are apps in Power BI?
+# Create and distribute an app in Power BI
 
 An app is a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device. 
 
