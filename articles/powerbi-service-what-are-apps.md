@@ -55,7 +55,7 @@ You can also find and install apps that you have access to from Microsoft Appsou
 
 3. You can search to narrow the results and find the app you're looking for.
 
-     ![](media/powerbi-service-what-are-apps/power-bi-appsource-my-org.png)
+     ![](media/powerbi-what-are-apps/power-bi-appsource-my-org.png)
 
 2. Select **Get it now** to add it to your Apps page. 
 
