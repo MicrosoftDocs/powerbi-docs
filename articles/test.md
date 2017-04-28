@@ -23,7 +23,8 @@
 
 # Subscribe to a Power BI report
 
-#include "includes/newnavbydefault.md"
+<!-- Shared newnav Include -->
+[AZURE.INCLUDE [newnavbydefault](../includes/newnavbydefault.md)]
 
 It's never been easier to stay up-to-date on your most important reports. Subscribe to report pages that matter most to you, and Power BI will email a snapshot of that page to your inbox. You tell Power BI how often you want to receive the emails: from once a day, to once a week, or never.
 
