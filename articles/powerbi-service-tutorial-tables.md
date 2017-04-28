@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/14/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Working with tables in Power BI reports and dashboards (Tutorial)
@@ -61,12 +61,5 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 
 ![](media/powerbi-service-tutorial-tables/resizetable.gif)
 
-## See also
-
-[Dashboards in Power BI service](powerbi-service-dashboards.md)
-
-[Power BI reports](powerbi-service-reports.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

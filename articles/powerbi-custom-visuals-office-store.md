@@ -17,17 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/28/2017"
+   ms.date="04/25/2017"
    ms.author="asaxton"/>
 # Download and use custom visuals from the Office store
 
-Learn how you can discover and use custom visuals from the Office store for use in your reports in Power BI.
+The Office store has many useful custom visuals created by the community and [created by Microsoft](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) that you can download and use in your Power BI reports.
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-visual-store.png)
 
 What is the Office store? Simply put, it is the place to find apps (add-in) for your Office 365 software. The [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) connects millions of users of Office 365 to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
-
-> [AZURE.NOTE] The [custom visual gallery](https://visuals.powerbi.com) is still available while we are moving existing visuals over to the Office store. 
 
 ## Power BI visualizations
 
@@ -71,15 +69,14 @@ The page also include instructions on how to import the custom visual into Power
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-download.png)
 
-Users can also download a sample report that include the custom visual and showcases its capabilities.
+You can also download a sample report that includes the custom visual and showcases its capabilities.
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-try-sample.png)
 
-## See also
+## Next steps
 
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

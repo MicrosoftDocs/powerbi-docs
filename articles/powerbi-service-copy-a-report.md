@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/18/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 ## Create a new report from an existing report
@@ -34,13 +34,13 @@ Maybe you have a report that already connects to your dataset and has some visua
 
     ![](media/powerbi-service-create-a-new-report/SaveReport.png)
 
-    A Success message lets you know that the new report was saved to Power BI.
+    A Success message lets you know that the new report was saved to your current workspace in Power BI.
 
     ![](media/powerbi-service-create-a-new-report/saveSuccess1.png)
 
-4.  Back in your Power BI navigation pane, select the new report to open it. Optionally, delete visuals you don't want to keep, modify other visuals, and add new ones.
+4.  Open the **Reports** tab of your workspace and select the new report to open it. Optionally, delete visuals you don't want to keep, modify other visuals, and add new ones.
 
-    ![](media/powerbi-service-create-a-new-report/newReportNavPane.png)
+    ![](media/powerbi-service-copy-a-report/power-bi-workspace.png)
 
 5.  Have fun updating and editing your new report.
 

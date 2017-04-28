@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Sales & Marketing sample for Power BI: Take a tour  
@@ -51,7 +51,7 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 
 3.  Our share in the **Moderation** and **Convenience** categories is very high; these are the segments where we compete.
 
-4.  Navigate back to the dashboard by clicking **Power BI** in the top navigation bar.
+4.  Navigate back to the dashboard by selecting the dashboard name in the top navbar (breadcrumbs).
 
 #### What does total unit market share look like for category (versus region)?  
 1.  Notice “Total Units YTD by Manufacturer, Region” tile. I wonder how the total unit market share looks like by category? 
@@ -124,4 +124,4 @@ By filtering the visualizations by VanArsdel, by segment, by month, and by regio
 This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to **Get Data** for a new copy of this sample.
 
 ## Next steps: Connect to your data  
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sales and marketing data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).  
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sales and marketing data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](powerbi-service-get-started.md).  

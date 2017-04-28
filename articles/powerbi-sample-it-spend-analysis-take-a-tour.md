@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="04/27/2017"
    ms.author="amac"/>
 
 # IT Spend Analysis sample for Power BI: Take a tour
@@ -53,7 +53,7 @@ But just looking at this chart and drawing conclusions can be misleading. We nee
 
 ## Ask questions of the data
 
-1.  Select **Power BI** in the top navigation bar to return to the dashboard.
+1.  Select **Power BI** in the top navigation bar to return to the **Dashboards** tab of your workspace.
 
 2.  In the question box, type “show IT areas, var plan % and var le3 % bar chart”.
 
