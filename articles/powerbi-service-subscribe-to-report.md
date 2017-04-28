@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Subscribe to a Power BI report
@@ -78,13 +78,13 @@ The particular subscriptions displayed will depend on which workspace is current
 ![](media/powerbi-service-subscribe-to-report/power-bi-subscriptions.png)
 
 
-##  Limitations
+##  Considerations and troubleshooting
 
 -    At the current time, subscribe is not available for reports that come from content packs. But there is a workaround...make a copy of the report and add subscriptions to that report instead.
 
 -    For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
 
--  Email subscriptions do not support custom visuals - they will be blank in the subscription email.
+-  Email subscriptions do not support most custom visuals  - they will be blank in the subscription email.  The one exception is those custom visuals that have been *certified*.  
 
 -  Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before subscribing will not show up in the email.
 
