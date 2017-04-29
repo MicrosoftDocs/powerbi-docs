@@ -42,7 +42,7 @@ You need a Power BI Pro license to distribute apps, and business users need Powe
 
 Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps.
 
-Now that you’ve got an overview of apps, let’s talk about *app workspaces*, where you create apps. 
+Now that you have an overview of apps, let’s talk about *app workspaces*, where you create apps. 
 
 ## App Workspaces 
 
@@ -60,36 +60,82 @@ Now that you understand apps and app workspaces, let's start creating and publis
 
 ## Create an app in an app workspace
 
-1. Start by creating the workspace. 
+1. Start by creating the workspace. Select **Workspaces** > **Create a workspace**.
 
      ![](media/powerbi-service-create-apps/power-bi-create-app-workspace.png)
 
-    This will be the place to put content that other people can access and work on.
+    This will be the place to put content that you and your colleagues collaborate on.
 
-2. Give the workspace a name. If the workspace ID already exists, edit it to come up with a unique ID.
+2. Give the workspace a name. If the corresponding **Workspace ID** isn't available, edit it to come up with a unique ID.
 
+     ![](media/powerbi-service-create-apps/power-bi-apps-create-workspace-name.png)
 
-3. You have a few options to set. If you choose Public, anyone in your organization can see what’s in the workspace. Private, on the other hand, means only members of the workspace can see its contents.
+3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private**, on the other hand, means only members of the workspace can see its contents.
 
+     ![](media/powerbi-service-create-apps/power-bi-apps-create-workspace-private-public.png)
 
-4. You can also choose if members can edit or have view-only access.
+    > [AZURE.NOTE]  You can't change the Public/Private setting after you've created the group.
 
+4. You can also choose if members can **edit** or have **view-only** access.
 
-5. Now add email addresses of people you want to have access to the workspace. You can’t add group aliases, just individuals.
-6. Decide whether each person is a member or an admin, and save.
+     ![](media/powerbi-service-create-apps/power-bi-apps-create-workspace-members-edit.png)
 
-Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can click the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
+    You can change the edit/view-only setting later, after you've created the group. 
+
+5. Add email addresses of people you want to have access to the workspace, and select **Add**. You can’t add group aliases, just individuals.
+
+6. Decide whether each person is a member or an admin.
+
+     ![](media/powerbi-service-create-apps/power-bi-apps-create-workspace-admin.png)
+
+    Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace, unless they have view-only access. Both can publish the app.
+
+7. Select **Save**.
+
+Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
+
+![](media/powerbi-service-create-apps/power-bi-apps-edit-workspace-ellipsis.png)
 
 It’s empty, so now you add content to it. Adding content is just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. Another difference is that when you get done, you can distribute the content as an app. While in the app workspace, you can upload or connect to files, or connect to third-party services, just as you would in your own My Workspace. For example:
 
-• [Connect to services](powerbi-content-packs-services.md) such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
+- [Connect to services](powerbi-content-packs-services.md) such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
 
-• [Get data from files](powerbi-service-get-data-from-files.md) such as Excel, CSV, or Power BI Desktop (PBIX) files.
+- [Get data from files](powerbi-service-get-data-from-files.md) such as Excel, CSV, or Power BI Desktop (PBIX) files.
+
+## Add an image to your app (optional)
+
+By default, Power BI creates a little colored circle for your app, with the app's initials. But maybe you want to customize it with an image.
+
+1. Select **Workspaces**, select the ellipsis (...) next to the name of the workspace, then **Members**. 
+
+     ![](media/powerbi-service-create-apps/power-bi-apps-workspace-members.png)
+
+    The Office 365 Outlook account for the workspace opens in a new browser window.
+
+2. When you hover over the colored circle in the upper left, it turns into a pencil icon. Select it.
+
+     ![](media/powerbi-service-create-apps/power-bi-apps-workspace-edit-image.png)
+
+3. Select the pencil icon again, and find the image you want to use.
+
+     ![](media/powerbi-service-create-apps/power-bi-apps-workspace-edit-group.png)
+
+4. Select **Save**.
+
+     ![](media/powerbi-service-create-apps/power-bi-apps-workspace-save-image.png)
+
+    The image replaces the colored circle in the Office 365 Outlook window. 
+
+     ![](media/powerbi-service-create-apps/power-bi-apps-workspace-image-in-office-365.png)
+
+    In a few minutes, it will appear in the app in Power BI, too.
+
+     ![](media/powerbi-service-create-apps/power-bi-apps-image.png)
 
 ## Distribute an app
 When you’ve finished creating and perfecting the dashboards and reports in your app workspace, you package it all up as an app and distribute it.
 
-1. In the workspace, click the **Publish app** button in the upper right to start the process of sharing all the content in that workspace.
+1. In the workspace, select the **Publish app** button in the upper right to start the process of sharing all the content in that workspace.
 
      ![](media/powerbi-service-create-apps/power-bi-app-publish-600.png)
 
@@ -97,7 +143,7 @@ When you’ve finished creating and perfecting the dashboards and reports in you
 
      ![](media/powerbi-service-create-apps/power-bi-app-details-600.png)
 
-3. Next, on **Content**, you see the content that’s going to be published as part of the app – everything that’s in that workspace. You can also set the landing page – the dashboard or report people will see first when they go to your app. You can choose None. Then they’ll land on a list of all the content in the app. 
+3. Next, on **Content**, you see the content that’s going to be published as part of the app – everything that’s in that workspace. You can also set the landing page – the dashboard or report people will see first when they go to your app. You can choose **None**. Then they’ll land on a list of all the content in the app. 
 
      ![](media/powerbi-service-create-apps/power-bi-app-content-600.png)
 
@@ -105,7 +151,7 @@ When you’ve finished creating and perfecting the dashboards and reports in you
 
      ![](media/powerbi-service-create-apps/power-bi-app-access-finish-600.png)
 
-5. When you click **Finish**, you see a message confirming it’s ready to publish.
+5. When you select **Finish**, you see a message confirming it’s ready to publish.
 6. In the success dialog box, you can copy the URL that’s a direct link to this app and send it to the people you’ve shared it with.
 
      ![](media/powerbi-service-create-apps/power-bi-app-successful-publish.png)
@@ -126,11 +172,11 @@ But it’s easy to update it if you’re an admin of the app workspace, or membe
      ![](media/powerbi-service-create-apps/power-bi-apps-open-workspace.png)
 
 2. Open the dashboard or the report. You see that you can make any changes you want.
-3. Go back to the app workspace list of contents and click **Publish app**.
+3. Go back to the app workspace list of contents and select **Publish app**.
 
      ![](media/powerbi-service-create-apps/power-bi-app-publish-600.png)
 
-4. Update **Details**, **Content**, and **Access**, if you need to, then click **Update app**.
+4. Update **Details**, **Content**, and **Access**, if you need to, then select **Update app**.
 
      ![](media/powerbi-service-create-apps/power-bi-app-update.png)
 
