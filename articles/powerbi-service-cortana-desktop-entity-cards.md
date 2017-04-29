@@ -54,6 +54,8 @@ An *answer card* in a report is sized specifically for Cortana so that Cortana c
 
 6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
 
+>[AZURE.NOTE] You don't have to set **Require single selection** to ask Cortana to display a report with page level filters.  For example “show sales for Charlotte Lindseys” will display the answer page regardless of the Require Single Selection setting.
+
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection-new.png)
 
       For example, if you ask Cortana:
@@ -64,9 +66,8 @@ An *answer card* in a report is sized specifically for Cortana so that Cortana c
 
       - "show sales for Charlotte Lindseys," this Answer Page will display.
 
-Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
+      = "show sales" this Answer Page will not appear because you didn't include any of the items in the required page level filter.
 
->[AZURE.NOTE] You don't have to set **Require single selection** to ask Cortana to display a report with page level filters.  For example “show sales for Charlotte Lindseys” will get answer page regardless Require Single Selection status.
 
 >[AZURE.IMPORTANT]  Before your answer card can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 

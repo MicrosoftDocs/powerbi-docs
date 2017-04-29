@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 
 # Add a custom visual to a report (Desktop)  
@@ -62,7 +62,12 @@ import that visual template into a report so that it is added, as an option, to 
 
 7. Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
 
-### See also
+##    Consideratios and troubleshooting
+
+-    Most custom visuals are not supported for exporting to PDF, exporting to PowerPoint, or displaying in Subscribe to report emails. The exception is *registered custom visuals* that have passed the Microsoft custom visual review process.  To see the list of *registered custom visuals* and to learn how to submit your own custom visuals for registration, see [Registered custom visuals](powerbi-custom-visuals-register.md)
+
+
+## Next steps
 
 [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  

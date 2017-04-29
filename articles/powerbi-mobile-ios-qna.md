@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2017"
+   ms.date="04/21/2017"
    ms.author="maggies"/>
 
-# Ask questions about your data in the iOS mobile apps (Tutorial)
+# Ask questions about your data with Q&A in the iOS mobile apps (Tutorial)
 
 Applies to:
 
@@ -29,7 +29,7 @@ Applies to:
 | iPhones | iPads |
 
 
-The easiest way to learn about your data in to ask questions about it in your own words. You can already do that in the Power BI service at [https://powerbi.com](http://powerbi.com) by typing a question in the Q&A box at the top of a dashboard. Now you can do the same in the Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices. In this tutorial, you can ask questions with sample data.
+The easiest way to learn about your data in to ask questions about it in your own words. You can already do that in the Power BI service at [https://powerbi.com](http://powerbi.com) by typing a question in the Q&A box at the top of a dashboard. Now in the Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices, you can type or say your questions. In this tutorial, you can ask questions with sample data.
 
 ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
@@ -44,15 +44,15 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
 
 1. On your iPhone or iPad, open the Power BI app and navigate to the Retail Analysis Sample dashboard.
 2. Tap the Q&A icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
-3. Tap **show** from the keywords at the bottom of the screen, tap **sales** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+3. Tap **show** from the keywords at the bottom of the screen, tap **sales** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-show-sales.png)
 
-4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
 
-5. Tap **as** from the keywords, tap the column chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), then tap **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+5. Tap **as** from the keywords, tap the column chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), then tap **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
 6. Long-tap the resulting chart, then tap **Expand**.
 
@@ -66,17 +66,37 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
  
 9. Tap the X at the right of the text box to delete the text and start over.
 
-8. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+8. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
 
-9. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+9. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
 
-10. Type **as**, pick the line chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-send-icon.png).
+10. Type **as**, pick the line chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
+
+## Try saying your questions
+
+You can now ask questions about your data in the Power BI mobile app by speaking instead of typing. 
+
+1. Tap the Q&A icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+
+2. Tap the microphone icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-mic-icon.png).
+
+
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-mic-on.png)
+
+4. When the microphone icon is active, start speaking. For example, say "average unit price by time", then tap **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
+
+    ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-speech-complete.png)
+
+
+### Questions about privacy when using speech-to-text? 
+
+See the Speech Recognition section of [What's New in iOS](https://go.microsoft.com/fwlink/?linkid=845624) in the Apple iOS Developer Guides.
 
 ## Help and feedback
 
@@ -87,7 +107,6 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-tap-feedback.png)
 
     Your feedback is anonymous, and helps us improve our answers to questions.
-
 
 ## Enhance your Q&A results
 
