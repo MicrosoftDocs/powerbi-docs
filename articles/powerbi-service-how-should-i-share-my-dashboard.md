@@ -17,38 +17,43 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/24/2017"
+   ms.date="04/28/2017"
    ms.author="ajayan"/>
 
 # How should I collaborate on & share dashboards and reports?  
 
-In this article, we'll talk about collaborating and sharing in Power BI as a process. First, when you want to collaborate with your colleagues to create meaningful reports and dashboards, you save them to a *group workspace*. 
+You create dashboards and reports yourself. Sometimes you want to collaborate on them with your colleagues, and then you want others to have access to them, too. What's the best way to distribute them?
 
-![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-old-groups-left-nav.png)
+In this article, we'll talk about options for collaborating and sharing in Power BI: collaborating with colleagues to create meaningful reports and dashboards; distributing them to a larger group or your whole organization; sharing dashboards from the service or the Power BI mobile apps; publishing to the web; and printing. 
 
-*Group workspaces in the Power BI service*
+![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-home-blog.png)
+
+*Apps in the Power BI service*
 
 When the reports and dashboards are ready, if you want other people to access them you have options for how to do that. For example:
 
 - You can *share* them, either from the Power BI service or from one of the Power BI mobile apps. 
-- You can bundle them into an *organizational content pack* and publish them to a large group or to your whole organization. 
+- You can bundle them into an *app* and publish them to a large group or to your whole organization. 
 - You can even publish them to the web, where anyone can interact with them. 
 
 This article compares these and other activities.
 
 > [AZURE.NOTE] In most cases, the people you collaborate and share with need [Power BI free or Pro](https://powerbi.microsoft.com/) licenses before they can see your dashboards and reports. 
 
-## Collaborate on dashboards and reports in a group workspace 
-Say you and your teammates want to create and edit dashboards and reports together. In that case, you need a *group workspace*, with your teammates as members. Think of the group workspace as a place where you and they can collaborate on your Power BI dashboards and reports. All of you can also create reports in Power BI Desktop and publish those reports to the group workspace. Group workspaces in Power BI are built on Office 365 groups, so you can save Excel workbooks and other files to the workspace, too. You can give everyone in the group the same permissions, or you can give some members just read-only permissions. 
+## Collaborate with colleagues to create an app, with dashboards and reports
 
-**If you just want to share a finished dashboard with colleagues, don't add those colleagues to the group workspace.** 
+Say you and your teammates want to create a collection of dashboards and reports for your organization. The best way to do that is to create an *app*. An app is a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device.
 
-Instead, [share the dashboard](powerbi-service-how-should-i-share-my-dashboard.md#share-a-dashboard-with-others) with them, or [create an organizational content pack](powerbi-service-how-should-i-share-my-dashboard.md#create-an-organizational-content-pack-and-publish-it) and publish it. You can't add security groups to Power BI group workspaces, so you have to manage individual users. By sharing dashboards or creating organizational content packs instead, you can distribute to Active Directory security groups, or to your entire organization.
+To create an app, you need a *app workspace*, with your teammates as members. Think of the app workspace as a place where you and they can collaborate on your Power BI dashboards and reports. All of you can create reports in Power BI Desktop and publish those reports to the app workspace. You can give everyone in the workspace the same permissions, or you can give some members just read-only permissions.
 
-Everyone in your Power BI group workspace needs a Power BI Pro license. More about [group workspaces in Power BI](powerbi-service-create-a-group-in-power-bi.md).
+![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-workspaces.png)
+
+**If you just want to share a finished dashboard with colleagues, don't add those colleagues to the app workspace.** 
+
+Instead, [create the app in an app workspace, and distribute it](powerbi-service-create-apps.md). 
 
 ## Share a dashboard with others 
-Let's say you've finalized a dashboard in your own My Workspace or in a group workspace and you want others have access to it. One way to get it to them is to *share* it. Sharing has a specific meaning in Power BI. 
+Let's say you've finalized a dashboard in your own My Workspace or in an app workspace and you want others have access to it. One way to get it to them is to *share* it. Sharing has a specific meaning in Power BI. 
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-service-share.png)
 
@@ -60,17 +65,17 @@ You can share dashboards to Active Directory security groups, or to your entire 
 
 You can also [share a dashboard from any of the Power BI mobile apps](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md). 
 
-### Share a dashboard with colleagues outside a group workspace 
-If you're part of a group workspace in Power BI, you can share the group's dashboards with colleagues outside the group. It's the same as [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).
+### Share a dashboard with colleagues outside an app workspace 
+If you're part of an app workspace in Power BI, you can share the dashboards with colleagues outside the app workspace. It's the same as [sharing a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md).
 
-## Create an organizational content pack and publish it  
-Another way to distribute your Power BI insights with your colleagues is to create an *organizational content pack*. You've created and refined a dashboard with its reports and datasets, either in your own My Workspace or in a group workspace. Now you bundle them together as a content pack and distribute them &#151; either to members of an Active Directory security group or distribution list, or to your whole organization. 
+## Create an app and publish it  
+Another way to distribute your Power BI insights with your colleagues is to create an *app*. You've created and refined a dashboard with its reports and datasets, either in your own My Workspace or in an app workspace. Now you bundle them together as an app and distribute them &#151; either to members of an Active Directory security group or distribution list, or to your whole organization. 
 
 > [AZURE.NOTE] You can't share with dynamic distribution lists.
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/cpwindow.png)
 
-When those colleagues go to the Content Pack Library for your organization, they see your content pack along with any others that have been distributed to them. More about [organizational content packs](powerbi-service-organizational-content-packs-introduction.md).  
+When those colleagues go to the Microsoft AppSource for your organization, they see your app along with any others that have been distributed to them. More about [apps](powerbi-service-what-are-apps.md).  
 
 ## Annotate and share from the Power BI mobile apps
 In the Power BI mobile apps for iOS and Android devices, you can annotate a tile, report, or visual and then share it with anyone via email. 
@@ -92,23 +97,9 @@ You can publish Power BI reports to the whole Internet by embedding interactive 
 
 You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](powerbi-service-print.md).
 
-## Table summarizing collaboration and sharing options
-
-Here's a summary of how sharing and collaborating works, depending on which you do. Details follow below.
-
-|        | When you: |  |  |  |  |  |
-|:------------------------|:----------------------------|:----------------------------------------|:---------------------------------|:-----------------------------|:-----------------------------|:-----------------------------|
-| Other people:         | Create a dashboard in a group | Share a dashboard | Publish a content pack | Publish to the web | Share a snapshot of a tile | Save as PDF |
-| Can view and interact       | group members, yes   | yes                         | yes                              | yes                          | View, not interact | View, not interact |
-| Can edit the original       | group members, yes  | no                          | no                               | no                           | no | no |
-| Can create their own copies | group members, yes  | no                          | yes                              | no                           | yes | yes |
-| Can share with others       | group members, yes  | colleagues, yes. others, no | no                               | no                           | yes | yes |
-| Need a Power BI license       | Pro   | free or Pro | Pro  | none  | none | none |
-
-
-## See also
+## Next steps
 -   [Share a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md)
--   [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+-   [Create and distribute an app in Power BI](powerbi-service-create-apps.md)
 -   More questions? [Try the Power BI Community](http://community.powerbi.com/).
 
 
