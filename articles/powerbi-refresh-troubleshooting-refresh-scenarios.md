@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="05/01/2017"
    ms.author="davidi"/>
 
 # Troubleshooting refresh scenarios  
@@ -45,10 +45,13 @@ This could be an issue with your M script within your Power BI Desktop file or E
 ## Tile refresh errors
 For a list of errors you may encounter with dashboard tiles, and explanations, see [Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md).
 
-## Refresh fails when updating data from Microsoft Dynamics CRM Online
-The Microsoft Dynamics CRM Online tokens expire in approximately one hour. You can run into situations where loading data takes longer than the token expiration (more than one hour), since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
+## Refresh fails when updating data from sources that use AAD OAuth
+The Azure Active Director (**AAD**) OAuth token, used by many different data sources, expires in approximately one hour. You can run into situations where loading data takes longer than the token expiration (more than one hour), since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
 
-Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online instance is so large that it could run into the two-hour data-load threshold, you may experience a data load timeout from the Power BI service as well.
+Data sources that use AAD OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, this may be the reason.
+
+Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance (or other AAD OAuth data source) is so large that it could run into the two-hour data-load threshold, you may experience a data load timeout from the Power BI service as well.
+
 
 ## See Also  
 
