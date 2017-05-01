@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Migrate items from the Power BI Embedded Azure service"
+   pageTitle="Migrate content from the Power BI Embedded Azure service"
    description="Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content."
    services="powerbi"
    documentationCenter=""
@@ -19,7 +19,7 @@
    ms.workload="powerbi"
    ms.date="05/01/2017"
    ms.author="asaxton"/>
-# Migrate items from the Power BI Embedded Azure service
+# Migrate content from the Power BI Embedded Azure service
 
 Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content. 
 

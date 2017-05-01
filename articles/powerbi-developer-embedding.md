@@ -39,5 +39,5 @@ The following is a look at what the flow looks like to accomplish this.
 
 ## Next steps
 
-[Migrate items from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md)
+[Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md)
 
