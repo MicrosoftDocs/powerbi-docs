@@ -206,4 +206,7 @@ You should do some cleanup within Azure.
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
+[JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
+[Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
+[JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
