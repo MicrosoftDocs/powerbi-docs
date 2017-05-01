@@ -100,7 +100,12 @@ R visuals in the Power BI service have a few limitations:
 
 -   R visuals are currently not supported in the DirectQuery mode of Analysis Services
 
--   Chinese and Japanese fonts are not currently supported in R in the Power BI service. The Power BI team is actively working to include support for these fonts.
+-   Chinese, Japanese and Korean fonts require all of the additional following steps to work properly in the Power BI service:
+    -   First, install the R package *showtext* and all of its dependencies. You can do this by running the following script:
+            *install.packages("showtext")*
+
+    -   Next, add the following line at the beginning of the R script:
+            powerbi_rEnableShowTextForCJKLanguages =  1
 
 
 ## Overview of R packages
