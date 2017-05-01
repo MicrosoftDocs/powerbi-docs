@@ -1,6 +1,6 @@
 <properties
    pageTitle="Migrate content from the Power BI Embedded Azure service"
-   description="Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content."
+   description="Learn how to migrate from Power BI Embedded to the Power BI service and leverage advances for embedding in apps."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
