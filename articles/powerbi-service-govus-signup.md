@@ -95,6 +95,7 @@ The below is additional information for signing up for **Power BI US Government*
 To have your tenant *whitelisted* for the US Government cloud, fill out the form located at the following link:
 
 -   [*Whitelisting* online request form](http://www.surveygizmo.com/s3/3289410/ca030551f535)
+-   Make sure you include the domain to be *whitelisted*, and the email for the Microsoft representative who is working with you on the process.
 
 The process for *whitelisting* takes approximately three weeks, during which the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US Government cloud.
 
