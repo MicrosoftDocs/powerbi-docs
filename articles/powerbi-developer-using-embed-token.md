@@ -23,7 +23,11 @@
 
 Learn how you can create application that makes use of an embed token so your users can view Power BI content.
 
-You can use an embed token with the Power BI REST APIs to embed reports by using a single Power BI user. The embed token is then used with requests made by users in your application to view content within Power BI by way of that single Power BI user. The users within your application do not need to exist within your Power BI organization. The embed token is what makes it possible.
+Microsoft recently [announced Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance to the Power BI service.
+
+With the introduction of Power BI Premium, Power BI Embedded and the Power BI service are converging to advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium, which will be generally available late in the second quarter of 2017.
+
+You can use an embed token with the Power BI REST APIs to embed reports by using a single Power BI user. The embed token is then used with requests made by users in your application to view content within Power BI by way of a single Power BI user. The users within your application do not need to exist within your Power BI organization. The embed token is what makes it possible.
 
 There are a few steps you have to do with your application to make this possible. We will go through the steps needed to allow you to create and use an embed token within your application.  Here is a look at the overall flow for embedding when using an embed token.
 
@@ -190,6 +194,7 @@ When you are ready to move to production, you will need to do the following.
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
 [Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

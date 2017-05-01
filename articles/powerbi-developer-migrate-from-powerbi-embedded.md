@@ -21,17 +21,19 @@
    ms.author="asaxton"/>
 # Migrate content from the Power BI Embedded Azure service
 
-Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content.
+Learn how to migrate from Power BI Embedded to the Power BI service and leverage advances for embedding in apps.
 
-Merging with the Power BI service allows you to maintain your content within Power BI and to embed into your own application by using an embed token similarly to how the Azure service worked. You can now take advantage of all of the Power BI service features such as dashboards, gateways and App workspaces.
+Microsoft recently [announced Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance to the Power BI service.
 
-This article will provide some guidance for migrating from the Azure service to the Power BI service and what to expect for changes in your application.
+With the introduction of Power BI Premium, Power BI Embedded and the Power BI service are converging to advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium, which will be generally available late in the second quarter of 2017.
+
+The current Power BI Embedded service will continue to be available for a limited time following general availability of the converged offering: customers under an Enterprise Agreement will have access to through the expiration of their existing agreements; customers that acquired Power BI Embedded through Direct or CSP channels will enjoy access for one year from General Availability of Power BI Premium.  This article will provide some guidance for migrating from the Azure service to the Power BI service and what to expect for changes in your application.
 
 ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-flow.png)
 
 ## Prepare for the migration
 
-There are a few things you need to do to prepare for migrating from Power BI Embedded Azure service over to the Power BI service. You will nee a tenant available, along with a user that has a Power BI Pro license.
+There are a few things you need to do to prepare for migrating from Power BI Embedded Azure service over to the Power BI service. You will need a tenant available, along with a user that has a Power BI Pro license.
 
 1. Make sure you have access to an Azure Active Directory (Azure AD) tenant.
 
@@ -206,6 +208,7 @@ You should do some cleanup within Azure.
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
+[Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

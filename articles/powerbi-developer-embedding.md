@@ -23,11 +23,11 @@
 
 The Power BI service and Power BI Embedded in Azure are coming together to offer a single API for embedding your dashboards and reports.
 
-This will allow you flexibility in how you embed your dashboards and reports.
+This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content.
 
 ## A single API
 
-The Power BI REST APIs are being updated to allow for the use of an embed token. This will allow you to embed dashboards and reports into your customer application and give you the control of managing your users and mapping them to a Power BI service user. 
+The Power BI REST APIs are being updated to allow for the use of an embed token. This will allow you to embed dashboards and reports into your customer application and give you the control of managing your users and mapping them to a Power BI service user.
 
 You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 

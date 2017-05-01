@@ -25,7 +25,7 @@ Power BI offers a wide range of options for developers. This ranges from embeddi
 
 ## Embedding
 
-The Power BI service and Power BI Embedded in Azure are coming together to offer a single API for embedding your dashboards and reports. This will allow you flexibility in how you embed your dashboards and reports. For more information, see [Embedding with Power BI](powerbi-developer-embedding.md).
+The Power BI service and Power BI Embedded in Azure are coming together to offer a single API for embedding your dashboards and reports. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. For more information, see [Embedding with Power BI](powerbi-developer-embedding.md).
 
 ![](media/powerbi-developer-what-can-you-do/powerbi-embed-sample.png)
 
