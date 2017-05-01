@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Migrate content from the Power BI Embedded Azure service"
-   description="Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content."
+   pageTitle="What can developers do with Power BI?"
+   description="Learn how you can create application that makes use of an embed token so your users can view Power BI content."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -19,49 +19,39 @@
    ms.workload="powerbi"
    ms.date="05/01/2017"
    ms.author="asaxton"/>
-# Migrate content from the Power BI Embedded Azure service
+# Use an embed token when embedding dashboards and reports
 
-Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content.
+Learn how you can create application that makes use of an embed token so your users can view Power BI content.
 
-Merging with the Power BI service allows you to maintain your content within Power BI and to embed into your own application by using an embed token similarly to how the Azure service worked. You can now take advantage of all of the Power BI service features such as dashboards, gateways and App workspaces.
+You can use an embed token with the Power BI REST APIs to embed reports by using a single Power BI user. The embed token is then used with requests made by users in your application to view content within Power BI by way of that single Power BI user. The users within your application do not need to exist within your Power BI organization. The embed token is what makes it possible.
 
-This article will provide some guidance for migrating from the Azure service to the Power BI service and what to expect for changes in your application.
+There are a few steps you have to do with your application to make this possible. We will go through the steps needed to allow you to create and use an embed token within your application.  Here is a look at the overall flow for embedding when using an embed token.
 
-![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-flow.png)
+![](media\powerbi-developer-using-embed-token\powerbi-embedded-flow.png)
 
-## Prepare for the migration
+## Step 1: Create a Power BI account
 
-There are a few things you need to do to prepare for migrating from Power BI Embedded Azure service over to the Power BI service. You will nee a tenant available, along with a user that has a Power BI Pro license.
-
-1. Make sure you have access to an Azure Active Directory (Azure AD) tenant.
-
-    Your organization may already have a tenant available that you are currently using Power BI with. If this is not available, you will need to create a new tenant. You can make use of an existing tenant for your organization. For more information you can see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
-
-2. Make sure your user account has a Power BI license. This can be Free or Pro.
-
-    In order to take advantage of certain features, such as App workspaces, you will need to have a Pro license. This will be needed for the developer, or other users that are publishing content that requires use of Pro features. You can make this work with a free user, however, all content would be within that user's *My Workspace* instead of taking advantage of App workspaces.
-
-## Accounts within Azure AD
+You only need a single Power BI account for use with the embed token. However, there may other users you may want to consider for use within your organization. Let's have a look at the possible users.
 
 The following accounts will need to exist within your tenant and have a license for Power BI.
 
-1. A tenant admin user.
-
-    It is recommended that this user be a member of all App workspaces created for the purpose of embedding.
-
-2. Accounts for analysts that will create content. 
-
-    These users should be assigned to App workspaces as needed.
-
-3. An application *master* user account.
-
-    The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI APIs. This account will be used to generate the embed token for the application. This account should also be a member of the App workspaces created for embedding.
-
 > [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces and to create content that makes use of Pro features such as the On-Premises Data Gateway.
 
-## App registration and permissions
+### An organization/tenant admin user
 
-You will need to register an application within Azure AD and grant certain permissions.
+It is recommended that your organization/tenant admin user should not be used as the account your application uses. This is minimize access that the application account has within your organization. It is recommended that the admin user be a member of all App workspaces created for the purpose of embedding.
+
+### Accounts for analysts that will create content
+
+You may have multiple users that create content for Power BI. You may need a Power BI account for each analyst.
+
+### An application *master* user account.
+
+This is the account your application will use when creating the embed token. This is really the only required account you need within your organization. It can also be used as the admin and analyst account, but it is not recommended. The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI APIs. This account will be used to generate the embed token for the application. You will also want this account to be a member of the App workspaces created for embedding.
+
+## Step 2: App registration and permissions
+
+You will need to register an application within Azure AD and grant permissions to that application for use with Power BI.
 
 ### Register an application
 
@@ -77,29 +67,29 @@ You will need to enable additional permissions to your application in addition t
 
 1. Browse to the [App registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions01.png)
+    ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions01.png)
 
 2. Select **Required permissions** under **API Access**.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions02.png)
+    ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions02.png)
 
 3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions03.png)
+    ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions03.png)
 
 4. Within **Required permissions**, select **Power BI Service (Power BI)**.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions05.png)
+    ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions05.png)
 
 5. Select all permissions under **Delegated Permissions**. You will need to select them one by one in order to save the selections. Select **Save** when done.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions06.png)
+    ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions06.png)
 
 6. Within **Required permissions**, select **Grant Permissions**.
 
     This will give the app permissions on behalf of all users in the tenant/organization. If you don't want this, you will need to sign in internactively with your app ID to Azure AD at least once.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions07.png)
+    ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions07.png)
 
 #### Applying permissions programmatically
 
@@ -154,7 +144,7 @@ You will need to enable additional permissions to your application in addition t
     }
     ```
 
-## Create App workspaces (Optional)
+## Step 3: Create App workspaces (optional)
 
 You can take advantage of App workspaces to provide better isoliation if your application is servicing multiple customers. Dashboards and reports would be isolated between your customers. You could then use a Power BI account per App workspace to further isolate application experiences between your customers.
 
@@ -162,27 +152,27 @@ You will need a user that has a Pro license in order to create an App workspace 
 
 You do not need an app workspace to embed reports into your application. If you do not use an App workspace, your dashboards and reports will be in the *My workspace* for the Power BI account you use with your application.
 
-## Create and upload your reports
+## Step 4: Create and upload your reports
 
 You can create your reports and datasets using Power BI Desktop and then publish those reports to a Power BI workspace. It is recommended to publish your reports to an App workspace to provide better isolation if your application is servicing multiple customers.
 
-> [AZURE.NOTE] We will have an import/export tool for you to accomplish this step to assist with moving content from the Power BI Embedded Azure service to the Power BI service. This tool is coming soon.
+## Step 5: Embed your content
 
-## Rebuild your application
+Within your application, you will need to authenticate with Power BI using the Power BI account for your application. This will require you to store the credentials for this account within your application.
 
-1. You will need to modify your application to use the Power BI REST APIs and the report location inside powerbi.com.
-
-2. Rebuild your AuthN/AuthZ authentication using the *master* account for your application. You can take advantage of using an embed token to allow this user to act on behalf of other users.
+1. Add AuthN/AuthZ authentication to Power BI using the *master* account for your application. This will allow you to generate the embed token. You can take advantage of using an embed token to allow this user to act on behalf of other users.
 
     > [AZURE.NOTE] More information regarding the embed token will be made available soon.
 
-3. Embed your reports from powerbi.com into your application.
+2. Use the Power BI and JavaScript APIs to embed dashboards and reports into your application. For more information, see the following.
 
-## Map your users to a Power BI user
+    > [AZURE.NOTE] These examples will be updated with information about using the embed token soon.
 
-Within your application, you will map users that you manage within the application to a *master* Power BI credential for the purposes of your application. The credentials for this Power BI *master* account will be stored within your application and be used to creating embed tokens.
+    - [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
+    - [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
+    - [Integrate a report into an app](powerbi-developer-integrate-report.md)
 
-## What to do when you are ready for production
+## Licensing
 
 When you are ready to move to production, you will need to do the following.
 
@@ -196,16 +186,10 @@ When you are ready to move to production, you will need to do the following.
 
 3. Deploy your updated application to production and begin embedding reports from the Power BI service.
 
-## After migration
-
-You should do some cleanup within Azure.
-
-- Remove all workspaces off of the deployed solution within the Azure service of Power BI Embedded.
-- Delete any Workspace Collections that exist within Azure.
-
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
+[Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
