@@ -1,6 +1,6 @@
 <properties
    pageTitle="Migrate items from the Power BI Embedded Azure service"
-   description="Walkthrough to integrate a tile into an app, sample code"
+   description="Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -21,7 +21,9 @@
    ms.author="asaxton"/>
 # Migrate items from the Power BI Embedded Azure service
 
-Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content. Merging with the Power BI service allows you to maintain your content within Power BI and to embed into your own application by using an embed token similarly to how the Azure service worked. You can now take advantage of all of the Power BI service features such as dashboards, gateways and App workspaces.
+Power BI Embedded is being merged from an Azure service into the Power BI service. This means you will have one set of APIs for embeding your content. 
+
+Merging with the Power BI service allows you to maintain your content within Power BI and to embed into your own application by using an embed token similarly to how the Azure service worked. You can now take advantage of all of the Power BI service features such as dashboards, gateways and App workspaces.
 
 This article will provide some guidance for migrating from the Azure service to the Power BI service and what to expect for changes in your application.
 
@@ -201,5 +203,7 @@ You should do some cleanup within Azure.
 - Remove all workspaces off of the deployed solution within the Azure service of Power BI Embedded.
 - Delete any Workspace Collections that exist within Azure.
 
+## Next steps
 
+[Embedding with Power BI](powerbi-developer-embedding.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
