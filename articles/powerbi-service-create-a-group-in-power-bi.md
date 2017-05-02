@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Create a group to collaborate in Power BI"
-   description="Read about creating groups in Power BI where you and your team can collaborate on team dashboards and connect with apps across Office 365."
+   pageTitle="Create an app workspace to collaborate in Power BI"
+   description="Read about creating app workspaces in Power BI where you and your team can collaborate on team dashboards and connect with apps across Office 365."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,31 +17,33 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/02/2017"
+   ms.date="05/01/2017"
    ms.author="ajayan"/>
 
-# Create a group to collaborate in Power BI
+# Create a app workspace to collaborate in Power BI
 
-Groups in Power BI are workspaces where you and your colleagues can collaborate on your Power BI dashboards and reports. When you're a member of a group, you can create a dashboard in the group workspace. Everyone in the group can view, interact with, and edit the dashboard and its reports. They have the same permission you have. 
+> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
-Power BI groups are built on [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). You can create a group in Power BI, or in Office 365 -- it has the same characteristics either way. 
+App workspaces in Power BI are workspaces where you and your colleagues can collaborate on your Power BI dashboards and reports. When you're a member of a app workspace, you can create a dashboard in the app workspace. Everyone in the app workspace can view, interact with, and edit the dashboard and its reports. They have the same permission you have. 
 
-As the creator of a group, you are automatically an admin. As admin, you can add and delete members, and make other members admins. All admins can create, update, and delete the dashboards, reports, and other content of the group. You can invite colleagues from your organization to your Power BI group, even if they aren't in Azure Active Directory.  
+Power BI app workspaces are built on [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). You can create a app workspace in Power BI, or in Office 365 -- it has the same characteristics either way. 
+
+As the creator of a app workspace, you are automatically an admin. As admin, you can add and delete members, and make other members admins. All admins can create, update, and delete the dashboards, reports, and other content of the app workspace. You can invite colleagues from your organization to your Power BI app workspace, even if they aren't in Azure Active Directory.  
 
 > **Notes:**  
 > 
-> -   Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
-> -  You can't publish reports to the web from a group.
+> -   App workspaces are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+> -  You can't publish reports to the web from a app workspace.
 
-## Create a group and add members
+## Create a app workspace and add members
 
-1.  In Power BI, select the down arrow next to My Workspace, then select the plus sign (+) next to **Group Workspaces**.   
+1.  In Power BI, select the down arrow next to My Workspace, then select the plus sign (+) next to **App Workspaces**.   
     ![](media/powerbi-service-create-a-group-in-power-bi/PBI_GrpCreate.png)
 
-2.  In the **Create a Group** pane on the right, give your group a name.  
+2.  In the **Create a app workspace** pane on the right, give your app workspace a name.  
     ![](media/powerbi-service-create-a-group-in-power-bi/PBI_GrpCreateDialog.png)
 
-    Power BI suggests a Group ID and lets you know if it's available. If it's not, select the pencil to the right of the **Group ID** box to modify it.  
+    Power BI suggests a Workspace ID and lets you know if it's available. If it's not, select the pencil to the right of the **Group ID** box to modify it.  
 
     > [AZURE.NOTE]  The group ID will be the group's email address:  
     >*yourgroupID*@service.microsoft.com.  
