@@ -128,7 +128,7 @@ Apps and app workspaces are a feature of Power BI Pro. If you are someone who au
 
 As with **My Workspace**, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
 
-![](media/powerbi-service-the-new-power-bi-experience/power-bi-app-workspace.png)
+![](media/powerbi-service-the-new-power-bi-experience/power-bi-apps-workspaces.png)
 
 Switch workspaces by selecting **Workspaces** in the left navbar.
 
