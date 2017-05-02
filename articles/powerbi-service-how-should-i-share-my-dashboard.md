@@ -38,7 +38,7 @@ In this article, we'll talk about options for collaborating and sharing in Power
 
 This article compares these and other activities.
 
-> [AZURE.NOTE] In most cases, the people you collaborate and share with need [Power BI free or Pro](https://powerbi.microsoft.com/) licenses before they can see your dashboards and reports. Read more about [Power BI Premium](https://powerbi.microsoft.com/en-us/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/).
+> [AZURE.NOTE] In most cases, the people you collaborate and share with need [Power BI free or Pro](https://powerbi.microsoft.com/) licenses before they can see your dashboards and reports. Read more about [Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/).
 
 ## Collaborate with colleagues to create an app, with dashboards and reports
 
