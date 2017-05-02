@@ -17,11 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
+   ms.date="02/07/2017"
    ms.author="ajayan"/>
 # Manage, update, and delete organizational content packs
-
-> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](powerbi-service-organizational-content-packs-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
 

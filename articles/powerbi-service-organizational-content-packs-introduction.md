@@ -17,11 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
+   ms.date="03/13/2017"
    ms.author="ajayan"/>
 # Intro to organizational content packs in Power BI
-
-> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
 Do you regularly distribute reports by email to your team? Try this instead: Package up your dashboards, reports, Excel workbooks, and datasets and publish them to your team as an *organizational content pack*. Content packs you create are easy for your team to find &#151; they are all in the content pack library. Because they're part of Power BI, they leverage all the features of Power BI, including interactive data exploration, new visuals, Q&A, integration with other data sources, data refresh, and more.
 

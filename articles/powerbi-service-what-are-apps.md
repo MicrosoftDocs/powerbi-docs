@@ -47,13 +47,13 @@ The easiest way to install a new app is to get a direct link from the app author
 
 ### Get the app from Microsoft AppSource
 
-You can also find and install apps that you have access to from Microsoft AppSource. 
+You can also find and install apps that you have access to from Microsoft Appsource. 
 
-1. Select **Apps** ![](media/powerbi-what-are-apps/power-bi-apps-bar.png), then select **Download and explore more apps from AppSource**. 
+1. Select **Get data**, then under **Microsoft AppSource**, select **Get** for **My organization**. 
 
-     ![](media/powerbi-what-are-apps/power-bi-apps-download-from-appsource.png)
+     ![](media/powerbi-what-are-apps/power-bi-apps-get-data.png)
 
-3. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
+3. You can search to narrow the results and find the app you're looking for.
 
      ![](media/powerbi-what-are-apps/power-bi-appsource-my-org.png)
 
