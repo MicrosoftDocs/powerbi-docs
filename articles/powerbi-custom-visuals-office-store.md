@@ -17,9 +17,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
+<<<<<<< HEAD
    ms.date="04/25/2017"
+=======
+   ms.date="04/26/2017"
+>>>>>>> 1aa68355dc42e5cbc82192d035d0592636ccbfa6
    ms.author="asaxton"/>
 # Download and use custom visuals from the Office store
+
+The Office store has many useful custom visuals created by the community and [created by Microsoft](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) that you can download and use in your Power BI reports.
 
 The Office store has many useful custom visuals created by the community and [created by Microsoft](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x) that you can download and use in your Power BI reports.
 
@@ -69,10 +75,19 @@ The page also include instructions on how to import the custom visual into Power
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-download.png)
 
+<<<<<<< HEAD
 You can also download a sample report that includes the custom visual and showcases its capabilities.
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-try-sample.png)
 
+=======
+You can also download a sample report that include the custom visual and showcases its capabilities.
+
+![](media/powerbi-custom-visuals-office-store/powerbi-custom-try-sample.png)
+
+> [AZURE.NOTE] Some custom visuals have passed rigorous testing and are *registered* for server-side usage. Registered custom visuals are supported for exporting to PowerPoint, exporting to PDF, and will display in the emails received when a user subscribes to report pages.
+
+>>>>>>> 1aa68355dc42e5cbc82192d035d0592636ccbfa6
 ## Next steps
 
 [Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  

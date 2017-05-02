@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="04/29/2016"/>
+   qualityFocus="monitoring"
+   qualityDate="05/01/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -17,14 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="05/01/2017"
    ms.author="davidi"/>
 
 # Sort by column in Power BI Desktop  
 
-In **Power BI Desktop**, you can easily choose which column is used to sort data in your visualizations. Whether you're using numeric data (such as sales figures) or text data (such as state names), you can sort your visualizations however you want, and make them look like you want them to.
+In **Power BI Desktop** and the **Power BI service**, you can change how a visual looks by sorting it by different data fields. By changing how you sort a visual, you can highlight the information you want to convey, and ensure the visual reflects whatever trend (or emphasis) you want to convey. 
 
-Let's take an example. The following visualization list the top 15 states in terms of weather (most sunny days, ranked from 1 to 50, with 1 having the most sunny days). Here's the visualization as it looks before we do any sorting.
+Whether you're using numeric data (such as sales figures) or text data (such as state names), you can sort your visualizations however you want, and make them look like you want them to.  **Power BI** provides lots of flexibility for sorting, and quick menus for you to use. On any visual, select the ellipses menu (...) and then **Sort By**, then select the field by which you want to sort, as shown in the following image.
+
+![](media/powerbi-desktop-sort-by-column/SortByColumn_2.png)
+
+## More depth, and an example
+Let's take an example that has more depth, and see how it works in **Power BI Desktop**.
+
+The following visualization list the top 15 states in terms of weather (most sunny days, ranked from 1 to 50, with 1 having the most sunny days). Here's the visualization as it looks before we do any sorting.
 
 ![](media/powerbi-desktop-sort-by-column/SortByColumn_1.png)
 
@@ -33,6 +40,7 @@ The visual is currently sorted by **Cost of living** - we can tell that by match
 ![](media/powerbi-desktop-sort-by-column/SortByColumn_2.png)
 
 There are a couple items to notice in the menu that appears when you select the ellipses:
+
 -   The yellow bar next to **Cost of living**, and the fact that **Cost of living** is in bold
 -   The little icon beside the words **Sort By**, which shows **Z/A** (Z above A) and a down arrow.
 
@@ -46,7 +54,7 @@ In the following image, we selected **Community well-being** as the column by wh
 
 ![](media/powerbi-desktop-sort-by-column/SortByColumn_3.png)
 
-Notice how the visual has changed. The values now are ordered from highest **Community well-being" value (in this case RI for Rhode Island) for those states included in this visual, down to AZ (for Arizona) which has the lowest value. Remember that the overall chart still only includes the 15 states with the most sunny days - we've just ordered them based on another column included in the visual.
+Notice how the visual has changed. The values now are ordered from highest "Community well-being" value (in this case RI for Rhode Island) for those states included in this visual, down to AZ (for Arizona) which has the lowest value. Remember that the overall chart still only includes the 15 states with the most sunny days - we've just ordered them based on another column included in the visual.
 
 But what if we want to sort ascending, instead of descending? The next section shows just how easy that is.
 
@@ -72,7 +80,7 @@ There's another way to sort your data, and that's by using the **Sort by Column*
 
 ![](media/powerbi-desktop-sort-by-column/SortByColumn_8.png)
 
-This approach to sorting requires that you select a column from the **Fields** pane, and then select the **Sort by Column** button to choose how (by which column) you want to sort your visual. You have to select the column (field) you want to sort from the **Fields** pane in order to enable the **Sort by Column** button - otherwise the button is inactive. 
+This approach to sorting requires that you select a column from the **Fields** pane, and then select the **Sort by Column** button to choose how (by which column) you want to sort your visual. You have to select the column (field) you want to sort from the **Fields** pane in order to enable the **Sort by Column** button - otherwise the button is inactive.
 
 Let's look at a common example: you have data from each day of the week, and you want to sort it based on chronological order. The following steps show you how.
 
@@ -99,7 +107,7 @@ For example, here's our previous chart:
 
 ![](media/powerbi-desktop-sort-by-column/SortByColumn_6.png)
 
-When we go back to the menu an select **Weather** again, the visual defaults to being ordered alphabetically by **State Code**, as shown in the following image.
+When we go back to the menu and select **Weather** again, the visual defaults to being ordered alphabetically by **State Code**, as shown in the following image.
 
 ![](media/powerbi-desktop-sort-by-column/SortByColumn_7.png)
 

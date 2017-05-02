@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 # Add a custom visualization to a report
 
@@ -69,7 +69,11 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 
 8. Continue to work with and explore this visualization as you would any other (native) visualization in Power BI.
 
-### See also
+##    Considerations and troubleshooting
+
+-    Most custom visuals are not supported for exporting to PDF, exporting to PowerPoint, or displaying in Subscribe to report emails. The exception is *registered custom visuals* that have passed the Microsoft custom visual review process.  To see the list of *registered custom visuals* and to learn how to submit your own custom visuals for registration, see [Registered custom visuals](powerbi-custom-visuals-register.md)
+
+## Next steps
 
 [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
 [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
