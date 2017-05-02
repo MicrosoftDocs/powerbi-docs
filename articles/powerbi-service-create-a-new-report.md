@@ -28,15 +28,15 @@ You've read [Reports in Power BI](powerbi-service-reports.md) and now you want t
 
 This method of creating a report starts with a dataset and a blank report canvas. To follow along, [download the Retail Analysis sample Excel dataset](http://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business (preferred) or locally.
 
-1.  We'll create the report in a Power BI service [workspace](powerbi-service-workspaces.md), so select an existing workspace or create a new one. 
+1.  We'll create the report in a Power BI service [workspace](powerbi-service-workspaces.md), so select an existing workspace or create a new one.
 
     ![](media/powerbi-service-create-a-new-report/power-bi-workspaces2.png)
 
-2.  From the bottom of the left navbar, select **Get data**. 
+2.  From the bottom of the left navbar, select **Get data**.
 
     ![](media/powerbi-service-create-a-new-report/power-bi-get-data3.png)
 
-1. Select **Files** and navigate to the location where you saved the Retail Analysis sample. 
+1. Select **Files** and navigate to the location where you saved the Retail Analysis sample.
 
     ![](media/powerbi-service-create-a-new-report/power-bi-select-files.png)
 
@@ -52,11 +52,11 @@ This method of creating a report starts with a dataset and a blank report canvas
 
       ![](media/powerbi-service-create-a-new-report/power-bi-blank-report.png)
 
-> **TIP**: If you're unfamiliar with the report editing canvas, or need a refresher, [Take a tour of the report editor](powerbi-service-the-report-editor-take-a-tour.md) before continuing.
+> **TIP**: If you're unfamiliar with the report editing canvas, or need a refresher, [Take a tour of the report editor ](powerbi-service-the-report-editor-take-a-tour.md) before continuing.
 
 ##    Add a Radial Gauge to the report
 
-Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](powerbi-service-visualization-types-for-reports.md) for displaying this type of information. 
+Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](powerbi-service-visualization-types-for-reports.md) for displaying this type of information.
 
 1.    In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
 
@@ -70,22 +70,22 @@ Now that our dataset is imported, let's start answering some questions.  Our Chi
 
         ![](media/powerbi-service-create-a-new-report/power-bi-report-step3.png)
 
-3.  Now would be a good time to [save your report](powerbi-service-save-a-report.md). 
+3.  Now would be a good time to [save your report](powerbi-service-save-a-report.md).
 
     ![](media/powerbi-service-create-a-new-report/powerbi-save.png)
- 
+
 
 ##    Add an area chart and slicer to the report
 Our CMO has some additional questions for us to answer. She'd like to know how sales this year compare to last year. And, she'd like to see the findings by district.
 
-1.    First, let's make some room on our canvas. Select the Gauge and move it into the top-right corner. Then grab and drag one of the corners and make it smaller. 
+1.    First, let's make some room on our canvas. Select the Gauge and move it into the top-right corner. Then grab and drag one of the corners and make it smaller.
 
 
 2. Deselect the gauge. In the Fields pane, select **Sales** > **This Year Sales** > **Value** and select **Sales** > **Last Year Sales**.
 
       ![](media/powerbi-service-create-a-new-report/power-bi-report-step4.png)
 
-2.    Convert the visual to an Area chart by selecting the Area chart template ![](media/powerbi-service-create-a-new-report/power-bi-areachart-icon.png) from the **VIsualizations** pane. 
+2.    Convert the visual to an Area chart by selecting the Area chart template ![](media/powerbi-service-create-a-new-report/power-bi-areachart-icon.png) from the **VIsualizations** pane.
 
 3.    Select **Time** > **Period** to add it to the **Axis** well.
 
@@ -105,11 +105,11 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 
 6. Optionally, continue adding visualizations.
 
-    
+
 
 ##    Next steps
 
-- [Save the report](powerbi-service-save-a-report.md) 
+- [Save the report](powerbi-service-save-a-report.md)
 - [Add a new page to the report](powerbi-service-add-a-page-to-a-report.md)  
-- Learn how to [pin visualizations to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) 
+- Learn how to [pin visualizations to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 - More questions? [Try the Power BI Community](http://community.powerbi.com/)

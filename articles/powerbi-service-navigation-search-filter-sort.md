@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/17/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
-# Searching, and sorting content in Power BI
+# Searching and sorting content in Power BI
 A combination of Power BI automated organization, user tagging, searching, and sorting allows you to quickly find what you need in Power BI service.
 
 ## How Power BI helps you navigate your content
@@ -29,7 +29,7 @@ Power BI service organizes your content in several ways.  First, it separates yo
 
 ![](media/powerbi-service-navigation-search-filter-sort/power-bi-newnav.png)
 
-Content that you create is available in **My workspace**, content associated with a group is available in an **app workspace**, content that you want to access quickly is saved in **Favorites**, content that is shared with you is available in **Shared with me**, and your last-viewed content is also available in **Recent**.
+Content that you create for your own use is available in **My workspace**, content that you create and share with a group is available in an **app workspace**, content that you want to access quickly is saved in **Favorites**, content that is shared with you is available in **Shared with me**, and your last-viewed content is also available in **Recent**.
 
 For more information, see [How content is organized in Power BI service](powerbi-service-how-content-organized.md)
 
@@ -38,7 +38,7 @@ For more information, see [How content is organized in Power BI service](powerbi
 
 ## Favorite dashboards and apps
 
-Do you have a number of dashboards and apps that you visit often? By [setting them as *favorites*](powerbi-service-favorite-dashboards.md), they'll always be available from your left navbar. 
+Do you have a number of dashboards and apps that you visit often? By [setting them as *favorites*](powerbi-service-favorite-dashboards.md), they'll always be available from your left navbar.
 
 ![](media/powerbi-service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
 

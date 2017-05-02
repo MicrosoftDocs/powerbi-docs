@@ -56,7 +56,7 @@ Watch Amanda create a featured dashboard and then follow the instructions below 
 
 ## Change the Featured dashboard
 
-Of course, if you change your mind later you can set a new dashboard as the featured dashboardr.
+Of course, if you change your mind later you can set a new dashboard as the featured dashboard.
 
 1. Follow steps 1 and 2 from above.
 
@@ -66,6 +66,17 @@ Of course, if you change your mind later you can set a new dashboard as the feat
 
     ![](media/powerbi-service-featured-dashboards/power-bi-success.png)
 
-## See also
+##  Remove the Featured dashboard
+If you decide that you don't want any dashboard to be designated as featured, here's how to un-feature a dashboard.
+
+1.    Open the currently-featured dashboard.
+
+2. In the top menubar, select **Disable featured**.
+
+    ![](media/powerbi-service-featured-dashboards/power-bi-unfeature.png)
+
+## Next steps
+
+[Favorite a dashboard](powerbi-service-favorite-dashboard.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

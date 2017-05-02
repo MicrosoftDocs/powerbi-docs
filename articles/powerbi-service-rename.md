@@ -24,22 +24,23 @@
 This article teaches you how to rename a dashboard, report, report page, workbook, dataset, app, and workspace in Power BI service.
 
 **Can I change the name?**
+
 |Content type  |I'm the author or creator  |Shared with me  |
 |---------|---------|---------|
-|Dashboard     |   yes      |   If the group owner has given you Admin or edit permissions in the app workspace     |
-|Report     |   yes      |         |
-|Workbook     |    yes     |         |
-|Dataset     |   yes      |   not if ...      |
-|App workspace    |    Yes, if you have Admin permissions     |    no, it's the name of the Office 365 group     |
-|App itself    |    not from the App screen, but the app name can be changed from the app workspace if you have Admin permissions    |    no    |
-|Report page    |  yes  |    |
-|Content in **Shared with me**    | na    | no    |
+|Dashboard in a workspace     |   Yes      |   No     |
+|Report in a workspace     |   Yes      |    No     |
+|Workbook in a workspace     |    Yes     |   No      |
+|Dataset in a workspace    |   Yes      |   No    |
+|App workspace    |    Yes, if you are the owner or have Admin permissions     |    No     |
+|Published Apps    |    Not from the App screen, but the App name can be changed from the App workspace and re-published with a new name if you have Admin permissions    |    No    |
+|App content (dashboard, report, workbook, dataset) | Not from the App screen, but the App's content can be renamed from the App workspace and re-published with a new name if you have Admin permissions  |  No |
+|Content in **Shared with me**    | No    | No    |
 
 
 ## Rename a dashboard, report, or workbook
 
 1.  Start in a workspace and select the **Dashboards**, **Reports**, or **Workbooks** tab. Hover over the item to rename, and select the gear icon ![](media/powerbi-service-rename/powerbi-cog-icon.png).
- 
+
     ![](media/powerbi-service-rename/power-bi-workspace-dashboards.png)
 
 2.  On the Settings page, type the new name and select **Save**.
@@ -56,30 +57,27 @@ This article teaches you how to rename a dashboard, report, report page, workboo
 
       ![](media/powerbi-service-rename/power-bi-rename-datasets.png)
 
-      >[AZURE.NOTE] The options in the dropdown will vary. 
+      >[AZURE.NOTE] The options in the dropdown will vary.
 
 3.  On the Settings page, type a new name and select **Save**.
 
       ![](media/powerbi-service-rename/power-bi-rename.png)
 
 ## Rename an App workspace
-App workspaces can be renamed by editing the group name.
+Anyone with Admin permissions can rename an App workspace.
 
 1.  Start in the workspace you'd like to rename.
 
-2. In the top-right corner, select the ellipses (...) and choose **Edit group**.  
+2. In the top-right corner, select the ellipses (...) and choose **Edit workspace**.  
 
-   ![](media/powerbi-service-rename/power-bi-edit-group.png)
+   ![](media/powerbi-service-rename/power-bi-edit-workspace.png)
 
-3.  Type a new dataset name and select **Save**.
+3.  Type a new workspae name and select **Save**.
 
-      ![](media/powerbi-service-rename/power-bi-rename-group.png)
+      ![](media/powerbi-service-rename/power-bi-workspace-rename.png)
 
-## Rename page in a report
+## Rename a page in a report
 Don't like the name of a page in your Power BI report?  A new name is just a click away. Pages can be renamed in [report Editing view ](powerbi-service-interact-with-a-report-in-editing-view.md).
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 1.  Open the report in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
 
