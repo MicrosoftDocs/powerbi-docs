@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Migrate content from the Power BI Embedded Azure service"
+   pageTitle="How to migrate Power BI Embedded workspace collection content to Power BI"
    description="Learn how to migrate from Power BI Embedded to the Power BI service and leverage advances for embedding in apps."
    services="powerbi"
    documentationCenter=""
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
+   ms.date="05/02/2017"
    ms.author="asaxton"/>
-# Migrate content from the Power BI Embedded Azure service
+# How to migrate Power BI Embedded workspace collection content to Power BI
 
 Learn how to migrate from Power BI Embedded to the Power BI service and leverage advances for embedding in apps.
 
@@ -29,7 +29,9 @@ With the introduction of Power BI Premium, Power BI Embedded and the Power BI se
 
 The current Power BI Embedded service will continue to be available for a limited time following general availability of the converged offering: customers under an Enterprise Agreement will have access to through the expiration of their existing agreements; customers that acquired Power BI Embedded through Direct or CSP channels will enjoy access for one year from General Availability of Power BI Premium.  This article will provide some guidance for migrating from the Azure service to the Power BI service and what to expect for changes in your application.
 
-![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-flow.png)
+> [AZURE.IMPORTANT] While the migration will take a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application.
+
+![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embed-flow.png)
 
 ## Prepare for the migration
 

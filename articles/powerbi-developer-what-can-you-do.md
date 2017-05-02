@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
+   ms.date="05/02/2017"
    ms.author="asaxton"/>
 # What can developers do with Power BI?
 
@@ -46,7 +46,7 @@ For more information, see [Push data into a dashboard](powerbi-developer-walkthr
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
-[Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  

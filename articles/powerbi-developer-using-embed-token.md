@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
+   ms.date="05/02/2017"
    ms.author="asaxton"/>
 # Use an embed token when embedding dashboards and reports
 
@@ -29,9 +29,11 @@ With the introduction of Power BI Premium, Power BI Embedded and the Power BI se
 
 You can use an embed token with the Power BI REST APIs to embed reports by using a single Power BI user. The embed token is then used with requests made by users in your application to view content within Power BI by way of a single Power BI user. The users within your application do not need to exist within your Power BI organization. The embed token is what makes it possible.
 
+> [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application.
+
 There are a few steps you have to do with your application to make this possible. We will go through the steps needed to allow you to create and use an embed token within your application.  Here is a look at the overall flow for embedding when using an embed token.
 
-![](media\powerbi-developer-using-embed-token\powerbi-embedded-flow.png)
+![](media\powerbi-developer-using-embed-token\powerbi-embed-flow.png)
 
 ## Step 1: Create a Power BI account
 
@@ -49,7 +51,7 @@ It is recommended that your organization/tenant admin user should not be used as
 
 You may have multiple users that create content for Power BI. You may need a Power BI account for each analyst.
 
-### An application *master* user account.
+### An application *master* user account
 
 This is the account your application will use when creating the embed token. This is really the only required account you need within your organization. It can also be used as the admin and analyst account, but it is not recommended. The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI APIs. This account will be used to generate the embed token for the application. You will also want this account to be a member of the App workspaces created for embedding.
 
@@ -193,7 +195,7 @@ When you are ready to move to production, you will need to do the following.
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
-[Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  

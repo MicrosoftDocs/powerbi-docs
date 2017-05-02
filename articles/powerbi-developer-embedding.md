@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
+   ms.date="05/02/2017"
    ms.author="asaxton"/>
 # Embedding with Power BI
 
@@ -51,6 +51,8 @@ To embed dashboards, reports and tiles, you would use the same APIs that you did
 
 Using an embed token allows you to use a single Power BI user with your application. The embed token is generated based on authentication of that single Power BI user and you can then use that token with multiple users within your application. Those users within your application to not need to be represented within your Power BI organization or have any licenses.
 
+> [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application.
+
 For details on how to take advantage of an embed token, see [Use an embed token when embedding dashboards and reports](powerbi-developer-using-embed-token.md).
 
 If you were using the Power BI Embedded service within Azure, see [Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md) for information on how to migrate your content over. If you never used Power BI Embedded, you can get started with using the embed token when it becomes available!
@@ -58,7 +60,7 @@ If you were using the Power BI Embedded service within Azure, see [Migrate conte
 ## Next steps
 
 [Use an embed token when embedding](powerbi-developer-using-embed-token.md)  
-[Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
