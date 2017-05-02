@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
-## Create a new report from an existing report
+# Create a new report from an existing report
 Maybe you have a report that already connects to your dataset and has some visuals that you'd like to re-use or modify.  Why not simply copy that report as a basis for a new report?  To do that:
 
 1.  [Open a report](powerbi-service-open-a-report-in-reading-view.md).
