@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/03/2017"
    ms.author="asaxton"/>
 # How to migrate Power BI Embedded workspace collection content to Power BI
 
@@ -214,4 +214,5 @@ You should do some cleanup within Azure.
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
+[Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

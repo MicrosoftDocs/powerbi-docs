@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/03/2017"
    ms.author="asaxton"/>
 # What can developers do with Power BI?
 
@@ -53,4 +53,5 @@ For more information, see [Push data into a dashboard](powerbi-developer-walkthr
 [Power BI Visuals Git repo](https://github.com/Microsoft/PowerBI-visuals)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI API on Apiary](http://docs.powerbi.apiary.io/#)  
+[Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
