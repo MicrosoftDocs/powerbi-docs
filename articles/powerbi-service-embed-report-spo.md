@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/10/2017"
+   ms.date="05/03/2017"
    ms.author="asaxton"/>
 # Embed with report web part in SharePoint Online
 
@@ -88,7 +88,7 @@ Embedding a report in SharePoint Online does not automatically give users permis
 
 > [AZURE.IMPORTANT] Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the group workspace within the Power BI service. This will make sure that users can view the contents of that group. For more information, see [Creating groups in Power BI](powerbi-service-create-a-group-in-power-bi.md).
+There are two ways to provide access to the report within the Power BI service. If you are using an Office 365 Group to build your SharePoint Online team site, you list the user as a member of the app workspace within the Power BI service. This will make sure that users can view the contents of that group. For more information, see [Create and distribute an app in Power BI](powerbi-service-create-apps.md).
 
 Alternatively, you can grant users access to your report by doing the following.
 
@@ -156,6 +156,6 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
 [Set up the Standard or First Release options in Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)  
 [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Creating groups in Power BI](powerbi-service-create-a-group-in-power-bi.md)  
+[Create and distribute an app in Power BI](powerbi-service-create-apps.md)  
 [Share a dashboard with colleagues and others](powerbi-service-share-unshare-dashboard.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="05/03/2017"
    ms.author="asaxton"/>
 # Self-service sign up for Power BI
 
@@ -84,8 +84,8 @@ When you are in the service, you can verify that you have a free account by goin
 
 After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
--   Create and publish customized [content packs](powerbi-service-organizational-content-packs-introduction.md)
--   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [groups](powerbi-service-create-a-group-in-power-bi.md)
+-   Create and publish customized [apps](powerbi-service-what-are-apps.md)
+-   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [apps](powerbi-service-create-apps.md)
 -   Connect to on-premises data using [Personal Gateway](powerbi-personal-gateway.md)
 -   Enable live interactive connectivity to the following sources:
 	-   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
@@ -171,4 +171,5 @@ In many cases, registering for Power BI can be achieved by following the simple 
 [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
 [Unable to add Power BI to Office 365 partner subscription](powerbi-admin-syndication-partner.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

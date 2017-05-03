@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/12/2017"
+ms.date="05/03/2017"
 ms.author="asaxton"/>
 # Power BI (free) in your organization
 
@@ -92,4 +92,5 @@ The AAD setting that controls this is **AllowAdHocSubscriptions**. Most tenants 
 
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
 [Sign up for Power BI (free) with a custom Azure Active Directory tenant](powerbi-admin-free-with-custom-azure-directory.md)  
+[Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
