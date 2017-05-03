@@ -71,7 +71,7 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 
 ##    Considerations and troubleshooting
 
--    In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified](powerbi-custom-visuals-register.md)
+-    In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](powerbi-custom-visuals-register.md).
 
 ## Next steps
 

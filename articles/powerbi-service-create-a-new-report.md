@@ -60,17 +60,17 @@ This method of creating a report starts with a dataset and a blank report canvas
 
 Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](powerbi-service-visualization-types-for-reports.md) for displaying this type of information.
 
-1.    In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
+1. In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
 
-        ![](media/powerbi-service-create-a-new-report/power-bi-report-step1.png)
+    ![](media/powerbi-service-create-a-new-report/power-bi-report-step1.png)
 
-2.    Convert the visual to a Gauge by selecting the Gauge template ![](media/powerbi-service-create-a-new-report/powerbi-gauge-icon.png) from the **VIsualizations** pane.
+2. Convert the visual to a Gauge by selecting the Gauge template ![](media/powerbi-service-create-a-new-report/powerbi-gauge-icon.png) from the **VIsualizations** pane.
 
-        ![](media/powerbi-service-create-a-new-report/power-bi-report-step2.png)
+    ![](media/powerbi-service-create-a-new-report/power-bi-report-step2.png)
 
-3.    Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well.
+3. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well.
 
-        ![](media/powerbi-service-create-a-new-report/power-bi-report-step3.png)
+    ![](media/powerbi-service-create-a-new-report/power-bi-report-step3.png)
 
 3.  Now would be a good time to [save your report](powerbi-service-save-a-report.md).
 
@@ -85,21 +85,21 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 
 2. Deselect the gauge. In the Fields pane, select **Sales** > **This Year Sales** > **Value** and select **Sales** > **Last Year Sales**.
 
-      ![](media/powerbi-service-create-a-new-report/power-bi-report-step4.png)
+    ![](media/powerbi-service-create-a-new-report/power-bi-report-step4.png)
 
-2.    Convert the visual to an Area chart by selecting the Area chart template ![](media/powerbi-service-create-a-new-report/power-bi-areachart-icon.png) from the **VIsualizations** pane.
+2. Convert the visual to an Area chart by selecting the Area chart template ![](media/powerbi-service-create-a-new-report/power-bi-areachart-icon.png) from the **VIsualizations** pane.
 
-3.    Select **Time** > **Period** to add it to the **Axis** well.
+3. Select **Time** > **Period** to add it to the **Axis** well.
 
-        ![](media/powerbi-service-create-a-new-report/power-bi-report-step5.png)
+    ![](media/powerbi-service-create-a-new-report/power-bi-report-step5.png)
 
-3.    Now let's add the slicer. Select an empty area on the canvas and choose the Slicer ![](media/powerbi-service-create-a-new-report/power-bi-slicer-icon.png)    template. This adds an empty slicer to our canvas.
+3. Now let's add the slicer. Select an empty area on the canvas and choose the Slicer ![](media/powerbi-service-create-a-new-report/power-bi-slicer-icon.png)    template. This adds an empty slicer to our canvas.
 
-        ![](media/powerbi-service-create-a-new-report/power-bi-report-step6.png)    
+    ![](media/powerbi-service-create-a-new-report/power-bi-report-step6.png)    
 
-4.    From the Fields pane, select **District** > **District**. Move and resize the slicer.
+4. From the Fields pane, select **District** > **District**. Move and resize the slicer.
 
-      ![](media/powerbi-service-create-a-new-report/power-bi-report-step7.png)  
+    ![](media/powerbi-service-create-a-new-report/power-bi-report-step7.png)  
 
 5.  Use the slicer to look for patterns and insights by District.
 

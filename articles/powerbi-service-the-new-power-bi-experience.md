@@ -114,7 +114,7 @@ Apps are collections of dashboards and reports purpose-built by your organizatio
 
 Next in the left nav is *workspaces*. Workspaces can be thought of as *containers* used by people authoring Apps and creating dashboards and reports and other Power BI content. There are two types of workspaces: **My Workspace** and App workspaces.
 
->**NOTE**: If you are not a member or an admin, you may not see any workspaces in your left nav.
+>**NOTE**: If you are not a member or an admin, you may not see any app workspaces in your left nav.
 
 ### My Workspace
 **My Workspace** stores all the content that you own. Think of it as your personal sandbox or work area for your own content. You can share content from My Workspace with colleagues. Within My Workspace, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.

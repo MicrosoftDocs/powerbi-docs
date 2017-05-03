@@ -51,7 +51,7 @@ Text boxes can be added to reports, pinned to dashboards from reports, and added
 
     -  In the text box, select the hyperlink to display the URL
 
-       ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/power-bi-hyperlink-edit.png)
+        ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/power-bi-hyperlink-edit.png)
 
     -  Select the URL to open the page in a new browser window.
 
@@ -62,7 +62,7 @@ Text boxes can be added to reports, pinned to dashboards from reports, and added
 
       ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/power-bi-hyperlink-remove.png)
 
-3.  choose **Remove**. 
+3.  Choose **Remove**. 
 
 
 

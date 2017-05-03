@@ -79,18 +79,18 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
 
     From here you can:
 
-      - [View in Focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)  
+    - [View in Focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)  
 
-   - [Run Quick Insights ](powerbi-service-auto-insights.md) ![](media/powerbi-service-dashboard-tiles/power-bi-insights.png)
+    - [Run Quick Insights ](powerbi-service-auto-insights.md) ![](media/powerbi-service-dashboard-tiles/power-bi-insights.png)
 
-  - [Pin the tile to another dashboard ](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+    - [Pin the tile to another dashboard ](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
  ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
 
-  - [Export the data used in the tile ](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
+    - [Export the data used in the tile ](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
 
-   - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+    - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
 
-  - [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
+   - [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
  ![](media/powerbi-service-dashboard-tiles/trash-icon.png)
 
 3. To close the action menu, select the X icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg).

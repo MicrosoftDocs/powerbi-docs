@@ -79,11 +79,11 @@ Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis 
 
   - Run Quick Insights on the card itself. This is referred to as **Scoped Quick Insights**. In the top-right corner, select the lightbulb icon ![](media/powerbi-service-auto-insights/power-bi-bulb-icon.png)  or **Get Insights**.
 
-    ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
+       ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
 
     The insight displays on the left and new insight cards, based solely on the data in that single insight, display along the right.
 
-    ![](media/powerbi-service-auto-insights/power-bi-insights-on-insights-new.png)
+       ![](media/powerbi-service-auto-insights/power-bi-insights-on-insights-new.png)
 
 4.  To return to the original Quick Insights canvas, in the top-left corner, select **Exit Focus mode**.
 

@@ -1,6 +1,6 @@
 
 <properties
-   pageTitle="Tour, navigate"
+   pageTitle="Take a tour of Power BI service"
    description="tour navigate pbis"
    services="powerbi"
    documentationCenter=""
@@ -18,10 +18,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Take a tour of Power BI service (app.powerbi.com)
+<!-- Shared newnav Include -->
+[AZURE.INCLUDE [newnavbydefault](../includes/newnavbydefault.md)]
 
 
 
