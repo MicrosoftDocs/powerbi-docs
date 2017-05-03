@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/19/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Featured dashboards in Power BI
@@ -77,6 +77,6 @@ If you decide that you don't want any dashboard to be designated as featured, he
 
 ## Next steps
 
-[Favorite a dashboard](powerbi-service-favorite-dashboard.md)
+[Favorite a dashboard](powerbi-service-favorite-dashboards.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
