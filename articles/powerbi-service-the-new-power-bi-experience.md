@@ -82,7 +82,7 @@ Let's start by looking at how the basic content (dashboards, reports, datasets, 
 
     ![](media/powerbi-service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
->**TIP**  To learn more, see [Favorite a dashboard](powerbi-service-new-favorite-dashboards.md)
+>**TIP**  To learn more, see [Favorite a dashboard](powerbi-service-favorite-dashboards.md)
 
 ##  Recents
 Quickly get to the reports and dashboards that you’ve most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
@@ -93,7 +93,7 @@ Similar to Favorites, you can quickly access your recents from anywhere by selec
 
   ![](media/powerbi-service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
->**TIP**  To learn more, see [Recents in Power BI](powerbi-service-recents.md)
+>**TIP**  To learn more, see [Recents in Power BI](powerbi-service-recent.md)
 
 ##  Apps
 
@@ -121,12 +121,10 @@ Next in the left nav is *workspaces*. Workspaces can be thought of as *container
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-my-workspace2.png)
 
->**TIP**  To learn more, see [My Workspace](powerbi-service-workspaces.md)
-
 ### App workspaces
 Apps and app workspaces are a feature of Power BI Pro. If you are someone who authors dashboards and reports for others, you'll use app workspaces to do this. An app workspace is the place where you'll create the app, so to create an app, you'll first need to create the app workspace. They’re the evolution of group workspaces – staging areas and containers for the content in the app.  You and your colleagues can collaborate on dashboards, reports, and other content that you plan to distribute to a wider audience, or even your entire organization.
 
->**TIP**: To learn more, visit [Create and distribute an a pp in Power BI](powerbi-service-create-apps#app-workspaces.md).
+>**TIP**: To learn more, visit [Create and distribute an app in Power BI](powerbi-service-create-apps#app-workspaces.md).
 
 As with **My Workspace**, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
 
