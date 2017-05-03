@@ -17,10 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="05/01/2017"
    ms.author="ajayan"/>
 
 # Find and connect to an organizational content pack  
+
+> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
 When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9) that you belong to, it appears in your  content pack library.  Browse or search the content pack library to find and open organizational content packs.
 

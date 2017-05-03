@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Manage your group in Power BI and Office 365"
-   description="Groups in Power BI are a collaborative experience built on Office 365 groups. Manage your groups in Power BI and also in Office 365."
+   pageTitle="Manage your app workspace in Power BI and Office 365"
+   description="App workspaces in Power BI are a collaborative experience built on Office 365 groups. Manage your app workspaces in Power BI and also in Office 365."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,20 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="05/02/2017"
    ms.author="ajayan"/>
-# Manage your group in Power BI and Office 365
+# Manage your app workspace in Power BI and Office 365
 
-As creator or admin of a group in Power BI or in Office 365, you manage some aspects of your group in Power BI. Other aspects you manage in Office 365. 
+> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
->**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+As creator or admin of a app workspace in Power BI or in Office 365, you manage some aspects of your app workspace in Power BI. Other aspects you manage in Office 365. 
+
+> [AZURE.NOTE] App workspaces are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 **In Power BI** you can:
 
--   Add or remove group members, including making a group member an admin.
--   Edit the group name.
--   Make it so group members can only read and not edit content in the group.
--   Delete the group.
+-   Add or remove app workspace members, including making a workspace member an admin.
+-   Edit the app workspace name.
+-   Delete the app workspace.
 
 **In Office 365** you can:
 
@@ -39,46 +40,46 @@ As creator or admin of a group in Power BI or in Office 365, you manage some asp
 -   See the group email address.
 -   Delete the group.
 
-## Edit your group in Power BI
+## Edit your app workspace in Power BI
 
-1.  In Power BI, switch to the group’s workspace, so the group name is in the top-left corner.  
+1.  In Power BI, switch to the app workspace, so the app workspace name is in the top-left corner.  
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/PBI_GroupWorkspaces.png)
 
-2.  Select the ellipsis (**…**) next to your group name \> **Edit Group**.
+2.  Select the ellipsis (**…**) next to your app workspace name \> **Edit workspace**.
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/PBI_GrpeEllipsMenu.png)
 
-    >**NOTE**: You only see **Edit Group** if you’re a group admin.
+    > [AZURE.NOTE] You only see **Edit workspace** if you’re an app workspace admin.
 
-3.  Here you can add or remove members, rename, or delete the group. You can also set it so members can view the content in the group, but not edit it. In that case, only admins can edit the group's content.
+3.  Here you can add or remove members, rename, or delete the app workspace. 
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/PBI_GrpEdit.png)
 
 4.  Select **Save** or **Cancel**.
 
-## Edit Power BI group properties in Office 365 
+## Edit Power BI app workspace properties in Office 365 
 
-1.  In Power BI, switch to the group’s workspace, so the group name is in the top-left corner. 
+1.  In Power BI, switch to the app workspace, so the app workspace name is in the top-left corner. 
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/PBI_GroupWorkspaces.png)
 
-2.  Select the ellipsis (**…**) next to your group name \> **Members**.
+2.  Select the ellipsis (**…**) next to your app workspace name \> **Members**.
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/PBI_GrpeEllipsMenu.png)
 
     You may need to sign into your corporate account.
 
-    This opens the Outlook for Office 365 view of your group.
+    This opens the Outlook for Office 365 group view of your app workspace.
 
-3.  Tap the ellipsis (**…**) next to a member's name to make the member an admin, or delete the member from the group. 
+3.  Tap the ellipsis (**…**) next to a member's name to make the member an admin, or delete the member from the app workspace. 
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/pbi_managegroupo365.png)
 
 
-## Add an image and set other group properties in Office 365
+## Add an image and set other group workspace properties in Office 365
 
-1.  In the Outlook for Office 365 view of your group, select the group image to edit group properties.
+1.  In the Outlook for Office 365 view of your group workspace, select the group workspace image to edit group workspace properties.
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/pbi_editgroupo365.png)
 
@@ -88,11 +89,11 @@ As creator or admin of a group in Power BI or in Office 365, you manage some asp
 
 3.  Select **Save** or **Discard**.
 
-## Find the email address for your group
+## Find the email address for your app workspace
 
-When you create an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md), you can give your whole organization access to it, or just specific people or groups. With the email address for the group, you can easily give all the members of your group access to your content pack. 
+When you create an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md), you can give your whole organization access to it, or just specific people or groups. With the email address for the app workspace, you can easily give all the members of your app workspace access to your content pack. 
 
-1.  In the Outlook for Office 365 view of your group, under **Groups** in the left navigation pane, right-click the group name \> **Copy email address**.
+1.  In the Outlook for Office 365 view of your group app workspace, under **Groups** in the left navigation pane, right-click the group app workspace name \> **Copy email address**.
 
     ![](media/powerbi-service-manage-your-group-in-power-bi-and-office-365/power-bi-groups-email.png)
 
@@ -104,8 +105,7 @@ When you create an [organizational content pack](powerbi-service-organizational-
 
     When the group members go to **Get Data** > **My organization**, they'll find your content pack there.
 
-## See also
+## Next steps
 
-
-- [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+- [Create apps and app workspaces in Power BI](powerbi-service-create-apps.md)
 - More questions? [Try the Power BI Community](http://community.powerbi.com/)

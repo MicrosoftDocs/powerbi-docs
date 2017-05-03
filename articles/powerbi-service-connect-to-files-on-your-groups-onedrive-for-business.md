@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Connect to files on your Power BI group's OneDrive"
-   description="Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on your group’s OneDrive for Business."
+   pageTitle="Connect to files stored in the OneDrive for your app workspace"
+   description="Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on the OneDrive for your Power BI app workspace."
    services="powerbi" 
    documentationCenter="" 
    authors="ajayan" 
@@ -17,49 +17,51 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="05/02/2017"
    ms.author="ajayan"/>
 
-# Connect to files on your Power BI group's OneDrive
+# Connect to files stored in the OneDrive for your app workspace
 
-Now that you've [created a group in Power BI](powerbi-service-create-a-group-in-power-bi.md), you can store your Excel, CSV, and Power BI Desktop files on your Power BI group’s OneDrive for Business. You can continue updating files you store in OneDrive for Business, and those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
+> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
->**Note**: Groups are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+Now that you've [created an app workspace in Power BI](powerbi-service-create-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI app workspace. You can continue updating the files you store in OneDrive, and those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
 
-Adding files to your group’s Power BI workspace is a two-step process: 
+Adding files to your app workspace is a two-step process: 
 
--    First you upload files to your group’s OneDrive for Business.
+1. First you upload files to the OneDrive for Business for your app workspace.
 
--   Then you connect to those files from Power BI.
+2. Then you connect to those files from Power BI.
 
-## Upload files to your group’s OneDrive for Business
+> [AZURE.NOTE]  App workspaces are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
-1.  In Power BI, switch to the group’s workspace, so the group name is in the top-left corner. 
+## 1 Upload files to the OneDrive for Business for your app workspace
+
+1.  In Power BI, switch to the app workspace, so the workspace name is in the top-left corner. 
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GrpWkspaceAdmin.png)
 
-2.  Select the ellipsis (**…**) next to the group name \> **Files** to open the group’s OneDrive for Business on Office 365.
+2.  Select the ellipsis (**…**) next to the app workspace name \> **Files** to open the OneDrive for Business for your app workspace on Office 365.
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GrpWkspaceFiles.png)
 
-    >**Note**: If you don't see **Files** on the group menu, select **Members** to open the group's OneDrive for Business. There, select **Files**. Office 365 sets up a OneDrive storage location for your group files. This process may take some time. 
+    > [AZURE.NOTE] If you don't see **Files** on the app workspace menu, select **Members** to open the OneDrive for Business for your app workspace. There, select **Files**. Office 365 sets up a OneDrive storage location for your group workspace files. This process may take some time. 
 
-3.  Here, you can upload your files to your Office 365 group's OneDrive. Select **Upload**, and navigate to your files.
+3.  Here, you can upload your files to the OneDrive for Business for your app workspace. Select **Upload**, and navigate to your files.
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GrpFilesOneDrive.png)
 
 
-## Import Excel files as datasets or as Excel Online workbooks
+## 2 Import Excel files as datasets or as Excel Online workbooks
 
-Now that your files are in your group’s OneDrive for Business, you have a choice. You can: 
+Now that your files are in the OneDrive for Business for your app workspace, you have a choice. You can: 
 
 -   [Import the data from the Excel workbook as a dataset](powerbi-service-get-data-from-files.md), and use the data to build reports and dashboards you can view in a web browser and on mobile devices.
 
 -   Or [connect to a whole Excel workbook in Power BI](powerbi-bring-in-whole-excel-files.md) and display it exactly as it appears in Excel Online.
 
-### Import or connect to your group's files
+### Import or connect to the files in your app workspace
 
-1.  In Power BI, switch to the group’s workspace, so the group name is in the top-left corner. 
+1.  In Power BI, switch to the app workspace, so the app workspace name is in the top-left corner. 
 
 2.  Select **Get Data** at the bottom of the left navigation pane. 
 
@@ -70,7 +72,7 @@ Now that your files are in your group’s OneDrive for Business, you have a choi
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GetFiles.png)
 
-4. Select **OneDrive** - *Your Group Name*.
+4. Select **OneDrive** - *Your App Workspace Name*.
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 
@@ -88,8 +90,8 @@ Now that your files are in your group’s OneDrive for Business, you have a choi
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/pbi_excel_file.png)
 
-## See also
-- [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+## Next steps
+- [Create apps and app workspaces in Power BI](powerbi-service-create-apps.md)
 - [Import data from Excel workbooks](powerbi-service-get-data-from-files.md)
 - [Connect to whole Excel workbooks](powerbi-bring-in-whole-excel-files.md)
 - More questions? [Try the Power BI Community](http://community.powerbi.com/)
