@@ -93,7 +93,7 @@ Similar to Favorites, you can quickly access your recents from anywhere by selec
 
   ![](media/powerbi-service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
->**TIP**  To learn more, see [Recents in Power BI](powerbi-service-recents.md)
+>**TIP**  To learn more, see [Recents in Power BI](powerbi-service-recent.md)
 
 ##  Apps
 
