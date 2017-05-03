@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/13/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
@@ -262,7 +262,7 @@ In Power BI Desktop, users can stop using ArcGIS Maps for Power BI by disabling 
 
 In Power BI service, users can stop using ArcGIS Maps for Power BI by disabling it on the ArcGIS Maps for Power BI (Preview) tab in user Settings. When disabled, ArcGIS Maps will not load by default.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-service-user-settings2.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-service-user-settings3.png)
 
 **Tenant admin options**
 In PowerBI.com, tenant administrators can prevent all tenant users from using ArcGIS Maps for Power BI by disabling. When this happens, Power BI will no longer see the ArcGIS Maps for Power BI icon in the visualizations pane.
@@ -353,7 +353,7 @@ No, Power BI needs network connectivity to display the maps.
 Not yet. [Vote for this idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases ) and we'll send you an email when we start working on this feature.  
 
 
-##  See also
+##  Next steps
 
 [Blog post announcing availability of ArcGIS maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 

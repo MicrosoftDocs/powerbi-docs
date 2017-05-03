@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 # Add a custom visualization to a report
 
@@ -71,7 +71,7 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 
 ##    Considerations and troubleshooting
 
--    Most custom visuals are not supported for exporting to PDF, exporting to PowerPoint, or displaying in Subscribe to report emails. The exception is *registered custom visuals* that have passed the Microsoft custom visual review process.  To see the list of *registered custom visuals* and to learn how to submit your own custom visuals for registration, see [Registered custom visuals](powerbi-custom-visuals-register.md)
+-    In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](powerbi-custom-visuals-register.md).
 
 ## Next steps
 

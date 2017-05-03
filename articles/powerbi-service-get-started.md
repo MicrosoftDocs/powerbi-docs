@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="1c01r_pAZdk"
+   featuredVideoId=""
    qualityFocus="monitoring"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/05/2017"
+   ms.date="05/01/2017"
    ms.author="mihart"/>
 
 # Get started with Power BI service
@@ -29,7 +29,7 @@ This tutorial helps you get started with ***Power BI service***. For an understa
 
 ![](media/powerbi-service-get-started/power-bi-components.png)
 
-Power BI service has a free version and a Pro version. No matter which version you're using, open a browser and type www.powerbi.com to get started. If you've already signed up, select the **Sign in** link that you'll see in the top right corner. If you haven't yet signed up for Power BI service, select the **Sign up free** link instead.
+Power BI service has a free Basic version and a Pro version. No matter which version you're using, open a browser and type www.powerbi.com to get started. If you've already signed up, select the **Sign in** link that you'll see in the top right corner. If you haven't yet signed up for Power BI service, select the **Sign up free** link instead.
 
 ![](media/powerbi-service-get-started/power-bi-sign-up.png)
 
@@ -41,17 +41,17 @@ If you're looking for help with Power BI Desktop, see [Get started with Desktop]
 
 Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
 
-If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](powerbi-service-get-data.md) you can connect to. If you are part of an organization, see if any [organizational content packs](powerbi-service-organizational-content-packs-introduction.md) have been published for you.
+If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by [connecting to Salesforce](powerbi-content-pack-salesforce.md) to automatically create a dashboard from that data, or [check out all the other SaaS apps](powerbi-service-get-data.md) you can connect to. If you are part of an organization, see if any [apps](powerbi-service-create-an-app.md) have been published for you.
 
 Read about all the other ways to [get data for Power BI](powerbi-service-get-data.md).
 
 ## Step 1: Get data
 
-Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download this sample CSV file](http://go.microsoft.com/fwlink/?LinkID=619356).
+Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download this sample CSV file]((http://go.microsoft.com/fwlink/?LinkID=521962).
 
 1.  [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for free.
 
-1.  Power BI opens with a dashboard displayed. Select **Get Data** at the bottom of the left navigation pane.
+1.  Power BI opens in your browser. Select **Get Data** at the bottom of the left navigation pane.
 
     ![](media/powerbi-service-get-started/getdata3.png)
 
@@ -63,10 +63,15 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
     ![](media/powerbi-service-get-started/gs2.png)
 
-4.  Power BI uploads the CSV file and adds it as a new dataset (the yellow asterisk indicates a new item).  Since we did not already have a dashboard, Power BI also created a new dashboard for us.  In the left navigation pane, the new dashboard is listed under the **Dashboards** heading, and the new dataset appears under the **Datasets** heading. 
+4.  For this tutorial we're going to select **Import** to add the Excel file as a dataset that we can then use to create reports and dashboards.  
 
-    ![](media/powerbi-service-get-started/gs4.png)
+    > **NOTE**: If you select **Upload**, the entire Excel workbook is uploaded to Power BI where you can open and edit it in Excel online.
 
+    ![](media/powerbi-service-get-started/power-bi-import.png)
+
+5.  When your dataset is ready, select **View dataset** to open it in the report editor. ![](media/powerbi-service-get-started/power-bi-gs.png).
+
+    >**TIP**: A great way to get familiar with the report editor is to [take a tour](powerbi-service-the-report-editor-take-a-tour.md)
 
 ## Step 2: Start exploring your dataset
 
@@ -74,7 +79,7 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
 1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the **Datasets** heading, select the dataset name to open it. This opens the dataset as a blank report.
 
-    ![](media/powerbi-service-get-started/gettingstart4.png)
+    ![](media/powerbi-service-get-started/power-bi-report-editor.png)
 
     >NOTE: Another way to explore your data is **Quick Insights**.  For more information, see [Introduction to Quick Insights](powerbi-service-auto-insights.md)
 
@@ -98,7 +103,7 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
 6.  Pin the tile to an existing dashboard or to a new dashboard. 
 
-    ![](media/powerbi-service-get-started/PBI_GS_PinDialognew.png)
+    ![](media/powerbi-service-get-started/power-bi-pin.png)
 
     -   **Existing dashboard**: select the name of the dashboard from the dropdown.
     -   **New dashboard**: type the name of the new dashboard.
@@ -107,11 +112,11 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
 
-    ![](media/powerbi-service-get-started/pinSuccess.png)
+    ![](media/powerbi-service-get-started/power-bi-pin-success.png)
 
-8.  Open the dashboard you just created. To do this, select the name under the **Dashboards** heading in the left navigation pane. Because the dashboard is new, it will have a yellow asterisk. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
+8.  Select **Go to dashboard** to see your new dashboard with the pinned til. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
 
-    ![](media/powerbi-service-get-started/gsPinFirstnew.png)
+    ![](media/powerbi-service-get-started/power-bi-new-dashboard.png)
 
     Select the new tile on your dashboard to return to the report any time.
 
@@ -125,9 +130,9 @@ Now that you have connected to data, explore to find insights.  When you've fou
 
 2. Pin the visualization to the Financial Sample dashboard.
 
-    ![](media/powerbi-service-get-started/gsPinWithQnA.png)
+    ![](media/powerbi-service-get-started/power-bi-pin2.png)
 
-3. Select the back arrow ![](media/powerbi-service-get-started/PBI_QABackArrow.png) to return to your dashboard where you'll see the new tile.
+3. Select the back arrow for **Exit Q&A** ![](media/powerbi-service-get-started/PBI_QABackArrow.png) to return to your dashboard where you'll see the new tile.
 
 Ready to try more?  Here are some great ways to explore more of Power BI.
 

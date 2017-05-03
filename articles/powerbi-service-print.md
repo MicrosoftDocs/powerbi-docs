@@ -4,12 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   featuredVideoId="jtlLGRKBvXY"
-   qualityFocus="monitoring"
+   featuredVideoId=""
+   qualityFocus=""
    qualityDate=""/>
 
 <tags
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/13/2017"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 
 # Printing from Power BI service
@@ -48,16 +48,18 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
 
 ## Print a dashboard tile
 
-1. [Open the tile in Focus mode](powerbi-service-display-dash-in-focus-mode.md).
+1. [Open the tile in Focus mode](powerbi-service-display-dash-in-focus-mode.md) by hovering over the tile and selecting the Focus icon ![](media/powerbi-service-print/power-bi-focus-icon.png) from the top-right corner.
 
-2. Open the tile in [full screen mode](powerbi-service-display-tile-in-full-screen-mode.md).
+2. Open the tile in [full screen mode](powerbi-service-display-tile-in-full-screen-mode.md) by selecting the full screen icon ![](media/powerbi-service-print/power-bi-full-screen-icon.png) from the top navbar.
 
 2. Hover over the tile to reveal the Options menu.
 
     ![](media/powerbi-service-print/menu-options-new.png)
 
 3. Select the Print icon
-    ![](media/powerbi-service-print/print-icon.png). Continue with step 3 above.
+    ![](media/powerbi-service-print/print-icon.png) .     
+
+     > [AZURE.NOTE] The print dialog you see will depend on which browser you are using.
 
 ## Print a report page
 
@@ -67,45 +69,41 @@ Reports can be printed one page at a time.
 
 2. Select **File** > **Print** to print the current report page.
 
-    ![](media/powerbi-service-print/pbi_print_report_file.png)
+    ![](media/powerbi-service-print/power-bi-print.png)
 
-2. The Print window for your browser opens. Choose the settings and print destination, and select **Print**.
+2. The Print window for your browser opens. 
 
-    ![](media/powerbi-service-print/pbi_print_report_new.png)
-
-  > [AZURE.NOTE] The print dialog you see will depend on which browser you are using.
+    > [AZURE.NOTE] The print dialog you see will depend on which browser you are using.
 
 ## Print a report visual
 
-1. [Open the visual in Focus mode](powerbi-service-display-dash-in-focus-mode.md).
+1. [Open the visual in Focus mode](powerbi-service-display-dash-in-focus-mode.md) by hovering over the tile and selecting the Focus icon ![](media/powerbi-service-print/power-bi-focus-icon.png) from the top-right corner.
 
 2. Follow steps 2-3 under *Print a report page* above.
 
-##  Troubleshooting
+##  Considerations and troubleshooting
 
-*   Q: I cannot find the **Print** button.
+*   Q: I cannot find the **Print** button.    
 *   A: If you are using Power BI Desktop, printing is not supported.  Printing only works in Power BI service.
 
 
-*   Q: I cannot print all the report pages at once.
+*   Q: I cannot print all the report pages at once.    
 *   A: That is correct. Report pages can only be printed one page at a time.
 
 
-*   Q: I cannot print to PDF.
+*   Q: I cannot print to PDF.    
 *   A: You will only see this option if you've already configured the PDF driver in your browser.    
 
 
-*   Q: What I see when I select **Print** doesn't match what you're showing me here.
+*   Q: What I see when I select **Print** doesn't match what you're showing me here.    
 *   A: The Print screens vary by browser and software version.
 
 
-*   Q: My printout isn't scaled correctly.  My dashboard doesn't fit on the page. Other scaling and orientation questions.
+*   Q: My printout isn't scaled correctly.  My dashboard doesn't fit on the page. Other scaling and orientation questions.    
 *   A: Things like scaling, margins, orientation, size are not controlled by Power BI. For help with issues like this, refer to the documentation for your specific browser.      
 
-## See also
+##    Next steps
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Share dashboards and reports with colleagues and others](powerbi-service-share-unshare-dashboard.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

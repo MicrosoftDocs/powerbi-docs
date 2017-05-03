@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="04/26/2017"
    ms.author="mihart"/>
 
 # From Excel workbook to stunning report in no time
@@ -42,15 +42,19 @@ Next, format your data as a table. In Excel, on the Home tab, in the Styles grou
 
 Power BI connects to many data sources, including Excel files that live on your computer. To get started, sign in to Power BI. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 
-You want to create a new dashboard. In the left Navigation Pane, next to **Dashboards**, select the plus symbol. Enter a name for your new dashboard.
+You want to create a new dashboard. Open **My workspace** and select the **+ Create** icon.
 
-![](media/powerbi-service-from-excel-to-stunning/PBI_add_dash.png)
+![](media/powerbi-service-from-excel-to-stunning/power-bi-new-dash.png)
 
-At the bottom of the left pane, select **Get Data**. On the Get Data page, under Import or Connect to Data, in the Files box, select **Get**.
+Select **Dashboard**, enter a name, and select **Create**. The new dashboard displays -- with no data.
+
+![](media/powerbi-service-from-excel-to-stunning/power-bi-create-dash.png)
+
+At the bottom of the left navigation pane, select **Get Data**. On the Get Data page, under Import or Connect to Data, in the Files box, select **Get**.
 
 ![](media/powerbi-service-from-excel-to-stunning/PBI_get_files.png)
 
-On the Files page, select **Local File**. Navigate to the Excel workbook file on your computer and select it to load into Power BI.
+On the Files page, select **Local File**. Navigate to the Excel workbook file on your computer and select it to load into Power BI. Select **Import**.
 
 >**NOTE**: To follow along with the rest of this tutorial, use the [Financial sample workbook](powerbi-sample-download-the-financial-sample-workbook.md).
 
@@ -58,7 +62,7 @@ On the Files page, select **Local File**. Navigate to the Excel workbook file on
 
 ## Build your report
 
-After Power BI loads your Excel workbook, start building your report. In the left Navigation Pane, in the **Datasets** section, select the dataset that you just imported. Power BI displays the report canvas. On the right side are the Visualizations and Fields panes.
+After Power BI imports your Excel file, start building your report. When the **Your dataset is ready** message appears, select **View dataset**.  Power BI opens in Editing view and displays the report canvas. On the right side are the Visualizations, Filters, and Fields panes.
 
 Notice that your Excel workbook table data appears in the Fields pane. Under the name of the table, Power BI lists the column headings as individual fields.
 
@@ -88,13 +92,13 @@ You want to share your dashboard with your manager, Paula. You can share your da
 
 To share your report, at the top of the dashboard, select **Share**.
 
-![](media/powerbi-service-from-excel-to-stunning/power-bi-share-dashboard.png)
+![](media/powerbi-service-from-excel-to-stunning/power-bi-share.png)
 
 Power BI displays the Share Dashboard page. In the top area, enter the email addresses of the recipients. Add a message in the field below. To allow recipients to share your dashboard with others, select **Allow recipients to share your dashboard**. Select **Share**.
 
 ![](media/powerbi-service-from-excel-to-stunning/power-bi-share-dash-new.png)
 
-See also
+Next steps
 
 - [Get started with Power BI service](powerbi-service-get-started.md)
 

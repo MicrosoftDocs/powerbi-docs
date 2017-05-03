@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Human Resources sample for Power BI: Take a tour  
@@ -39,8 +39,8 @@ You can also [download just the dataset (Excel workbook)](powerbi-service-sampl
 ## New hires  
 Let’s explore new hires first.
 
-1.  In the left navigation pane, select the Human Resources dashboard.
-2.  Select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change** **By Month** tile.  
+1.  In your workspace, select the **Dashboards** tab, and open the Human Resources dashboard.
+2.  On the dashboard, select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change** **By Month** tile.  
     ![](media/powerbi-sample-human-resources-take-a-tour/hr2.png)  
 
     The Human Resources Sample report opens to the **New Hires** page.  
@@ -57,9 +57,11 @@ Notice the following:
 
 - The **New Hire Count by Gender** pie chart shows a pretty even split.
 
-Can you find more insights &#151; for example, a region where the gender split is not even? Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
+Can you find more insights; for example, a region where the gender split is not even? Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
 
-Select **Power BI** in the top navigation bar to return to the dashboard.
+Select the name of the dashboard from the top navbar to return to the dashboard.
+
+![](media/powerbi-sample-human-resources-take-a-tour/power-bi-breadcrumbs.png)
 
 ## Compare current active and former employees  
 Let’s explore data for current active employees and employees who no longer work for the company.
@@ -114,7 +116,7 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 
 3.  Looking at the **Bad Hires by Gender** donut chart and clicking through the **Region** slicer we notice that East is the only region with more female than male bad hires.  
 
-4.  Click **Power BI** in the top navigation bar to return to the dashboard.
+4.  Select the name of the dashboard from the top navbar to return to the dashboard.
 
 ## Asking a question in the Q&A box
 The [Q&A question box](powerbi-service-how-to-use-q-and-a.md) is where you type a question using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.

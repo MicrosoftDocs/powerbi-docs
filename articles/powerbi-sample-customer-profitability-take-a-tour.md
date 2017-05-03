@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="amandacofsky"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
-   ms.author="amac"/>
+   ms.date="05/03/2017"
+   ms.author="mihart"/>
 
 # Customer Profitability sample for Power BI: Take a tour  
 
@@ -27,7 +27,7 @@ The “Customer Profitability Sample” content pack contains a dashboard, repo
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
 You can also [download just the dataset (Excel workbook) for this sample](powerbi-sample-downloads.md).  
-![](media/powerbi-sample-customer-profitability-take-a-tour/customer1.png)
+![](media/powerbi-sample-customer-profitability-take-a-tour/power-bi-dash.png)
 
 ## What is our dashboard telling us?  
 ### Company-wide dashboard tiles  
@@ -43,7 +43,7 @@ These tiles give our CFO a view of the high-level company metrics important to h
 ### Manager-specific dashboard tiles  
 These tiles provide a team scorecard. The CFO needs to keep track of her managers and these tiles give her a high level overview of profit – using GM%. If the GM% trend is unexpected for any manager, then she can investigate further.
 
-Annelie’s GM% is the lowest, but we see a steady increase. Valery, on the other hand, has seen her GM% drop significantly. And Andrew had a volatile year. Click on any of the manager-specific tiles to open the underlying report. The report has 3 pages and opens to the “Industry Margin Analysis” page.
+Annelie’s GM% is the lowest, but we see a steady increase since March. Valery, on the other hand, has seen her GM% drop significantly. And Andrew had a volatile year. Click on any of the manager-specific tiles to open the underlying report. The report has 3 pages and opens to the “Industry Margin Analysis” page.
 
 ## Explore the pages in the report
 Our report has 3 pages:
@@ -86,6 +86,10 @@ On the bubble chart, the CFO looks for the largest bubbles since these are the o
 -   Tina works with a handful of segments and has the highest GM%, but the mostly small size of her bubbles shows that her impact on the company's bottom line is minimal. 
 -   Valery, who is responsible for only one product, works in only 5 industry segments. Her industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Does industry explain her negative performance?
 
+###    Executive Scorecard
+This page is formatted as an Answer Card for Cortana. To learn more, see [create Answer Cards for Cortana](powerbi-service-desktop-entity-cards.md)
+
+
 ## Dig into the data by asking questions with Q&A  
 For our analysis, it would be helpful to determine which industry generates the most revenue for Valery. Let’s use Q&A.
 
@@ -93,19 +97,24 @@ For our analysis, it would be helpful to determine which industry generates the 
 2.  Select the Q&A question box at the top of the dashboard.
 
      ![](media/powerbi-sample-customer-profitability-take-a-tour/customer4.png)
-3.  Type **total revenue by industry for Valery**. Notice how the visualization updates as you type the question.
+3.  Type **total sales by store for Valery**. Notice how the visualization updates as you type the question.
+     
      ![](media/powerbi-sample-customer-profitability-take-a-tour/customer5.png)
 
-Distribution is the biggest revenue area for Valery.
+    Distribution is the biggest revenue area for Valery.
 
 ### Dig deeper by adding filters  
 Let's take a look at the *Distribution* industry.  
 
 1.  Return to the dashboard and select the area chart with Andrew's Gross Margin Trend. This opens the report to the "Industry Margin Analysis" page.
 
-2.  Expand the filter pane on the right and add a page filter for the Distribution industry. Select **Industry** &gt; **All** to clear the existing selections and then select **Distribution.**  
+2.  Without selecting any visualizations on the report page, expand the filter pane on the right. The Filters pane should display only Page level filters.  
 
-    ![](media/powerbi-sample-customer-profitability-take-a-tour/customer7.png)
+    ![](media/powerbi-sample-customer-profitability-take-a-tour/power-bi-filters.png)
+
+3.    Locate the filter for **Industry** and select the arrow to expand the list. Let's add a page filter for the Distribution industry. First, clear all selections by clearing the **Select All** checkbox. Then select **Distribution.**  
+
+      ![](media/powerbi-sample-customer-profitability-take-a-tour/customer7.png)
 
 3.  The "Gross margin by Month and Executive Name" area chart tells us that only Valery and Tina have customers in this industry and Valery only worked with this industry from June to November.   
 
@@ -122,6 +131,5 @@ This is a safe environment to play in. You can always choose not to save your ch
 ## Next steps: Connect to your data  
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI Preview](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
 
-## See also  
 [Take a tour of another industry sample](powerbi-sample-downloads.md)  
 [Back to Samples in Power BI](powerbi-sample-datasets.md)  

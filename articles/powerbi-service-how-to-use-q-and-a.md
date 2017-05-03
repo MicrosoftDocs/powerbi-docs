@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    editor=""
    tags=""/>
 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 
 # How to use Power BI Q&A  
@@ -87,7 +87,7 @@ You can also tell Q&A which visualization to use by adding it to your question. 
 
 For information about keywords that Q&A recognizes, see [Tips for asking questions](powerbi-service-q-and-a-tips.md).
 
-## See also  
+## Next steps  
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Use Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)  
 [Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md)  

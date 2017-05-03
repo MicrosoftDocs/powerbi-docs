@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="c31gZkyvC54"
-   qualityFocus="identified"
+   featuredVideoId=""
+   qualityFocus=""
    qualityDate=""/>
 
 <tags
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/13/2017"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 
 # Display dashboards and reports in Full Screen mode
@@ -57,9 +57,9 @@ Watch Amanda open and navigate her dashboard in Full Screen mode and then apply 
 
     Use the **Back** button to navigate to the previous page in your browser. If the previous page was a Power BI service page, it will display in Full Screen mode.  Full Screen mode will persist until you close Full Screen.
 
-    >**NOTE**: The menu will remain in the bottom right-hand corner until you exit full screen mode. If it disappears, simply move your cursor or tap the screen.
+    >**NOTE**: The menu will remain in the bottom right-hand corner until you exit Full Screen mode. If it disappears, simply move your cursor or tap the screen.
 
-3. To exit Full Screen mode, select the **Close Full Screen** icon.
+3. To exit Full Screen mode, select the **Exit Full Screen** icon.
 
       ![](media/powerbi-service-dash-and-reports-fullscreen/exit-fullscreen-new.png)
 
@@ -74,7 +74,7 @@ Watch Amanda open and navigate her dashboard in Full Screen mode and then apply 
     ![](media/powerbi-service-dash-and-reports-fullscreen/viz-fullscreen-menu-new.png)
 
 
-## Dashboards in Full Screen mode
+## Dashboards and dashboard tiles in Full Screen mode
 
 ### Fit to screen
 Full Screen mode for dashboards offers some display options that are not available for reports.
@@ -94,12 +94,12 @@ To print a dashboard from Full Screen mode, select the Print icon.
 
 ## Reports in Full Screen mode
 ### Display report pages
-Full Screen reports don't have the option to print or the options for **Fit to screen** or **Fit to width**.  However, when a report is in Full Screen mode, you can use the forward and reverse arrows to move through the report pages.
+Full Screen reports don't have the options for **Fit to screen** or **Fit to width**.  However, when a report is in Full Screen mode, you can use the forward and reverse arrows to move through the report pages.
 
   ![](media/powerbi-service-dash-and-reports-fullscreen/menu-options-reports.png).
 
-## See also  
+## Next steps  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Focus mode for dashboards and dashboard tiles](powerbi-service-display-dash-in-focus-mode.md)    
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

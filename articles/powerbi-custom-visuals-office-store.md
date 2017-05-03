@@ -71,11 +71,15 @@ The page also include instructions on how to import the custom visual into Power
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-download.png)
 
+You can also download a sample report that includes the custom visual and showcases its capabilities.
+
+![](media/powerbi-custom-visuals-office-store/powerbi-custom-try-sample.png)
+
 You can also download a sample report that include the custom visual and showcases its capabilities.
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-try-sample.png)
 
-> [AZURE.NOTE] Some custom visuals have passed rigorous testing and are *registered* for server-side usage. Registered custom visuals are supported for exporting to PowerPoint, exporting to PDF, and will display in the emails received when a user subscribes to report pages.
+> [AZURE.NOTE] Some custom visuals have passed rigorous testing and are *registered* for server-side usage. Registered custom visuals are supported for exporting to PowerPoint and will display in the emails received when a user subscribes to report pages.
 
 ## Next steps
 
@@ -84,4 +88,3 @@ You can also download a sample report that include the custom visual and showcas
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

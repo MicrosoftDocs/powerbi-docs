@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/26/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
 # Part 2, Add visualizations to a Power BI report (Tutorial)
@@ -28,11 +28,9 @@ In [Part 1](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-a
 In this tutorial we'll dig into our Retail Analysis dataset and create a few key visualizations.
 
 ### Open a report and add a new blank page.  
-1.  Expand the left navigation pane, if it isn't already expanded.
+1.  Open the workspace where you saved the Retail Analysis sample. Select **Retail Analysis Sample** to open the report in Reading View.
 
-2.  Under **Reports**, select **Retail Analysis Sample** to open the report in Reading View.
-
-    ![](media/powerbi-service-add-visualizations-to-a-report-ii/RetailAnalySampleReport.png)
+    ![](media/powerbi-service-add-visualizations-to-a-report-ii/power-bi-open-report.png)
 
 3.  Select **Edit Report** to open the report in Editing View.
 
@@ -68,7 +66,7 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 3.  Add a legend.  To see the data by store name, drag **Chain** into the Legend area.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/power-bi-add-visual-to-a-report-3new.png)
 
-## See also  
+## Next steps  
 -   For more information about the Fields pane, see [The report editor... take a tour](powerbi-service-the-report-editor-take-a-tour.md).   
 -   To learn how to filter and highlight your visualizations, see [Filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md).  
 -   To learn about using and changing aggregations, see [Aggregates in reports](powerbi-service-aggregates.md).  

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/13/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Retail Analysis sample for Power BI: Take a tour
@@ -50,9 +50,9 @@ You can also [download just the dataset (Excel workbook) for this sample](http:
 
 3.  Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
 
-4.  Select Power BI in the top navigation bar to return to the dashboard.
+4.  To return to the dashboard, select its name from the top navbar (breadcrumbs). 
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail-analysis.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/power-bi-breadcrumbs.png)
 
 5.  On the dashboard, select the tile that has "This Year’s Sales."
 
@@ -158,9 +158,9 @@ This is a safe environment to play in. You can always choose not to save your ch
 
 ## Next steps: Connect to your data
 
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](powerbi-service-get-started.md).
 
-## See also
+## Next steps
 
 -   [Download the Retail Analysis sample content pack](powerbi-sample-tutorial-connect-to-the-samples.md)
 -   [Download the Excel workbook for this Power BI sample](powerbi-service-sample-datasets.md)

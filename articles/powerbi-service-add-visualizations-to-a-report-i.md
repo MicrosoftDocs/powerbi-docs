@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,16 +18,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
 # Part I, Add visualizations to a Power BI report (Tutorial)
 
-This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](powerbi-service-add-visualizations-to-a-report-ii.md). In the video below, Will shows you a few different ways to create, edit, and format visuals on the report canvas.
+This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please [see Part II](powerbi-service-add-visualizations-to-a-report-ii.md). Watch Amanda demonstrate a few different ways to create, edit, and format visuals on the report canvas. Then try it out yourself using the [Sales and Marketing sample](powerbi-sample-datasets.md) to create your own report.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Now use the [Sales and Marketing sample](powerbi-sample-datasets.md) to create your own report.
+
+##   Open a report and add a new page 
 
 1.  Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the [Sales and Marketing sample](powerbi-sample-datasets.md).
 
@@ -37,7 +38,10 @@ Now use the [Sales and Marketing sample](powerbi-sample-datasets.md) to create y
 
 3.  [Add a blank page to the report](powerbi-service-add-a-page-to-a-report.md).
 
-4.  Create a visualization by selecting a field from the **Fields** pane.  
+
+##    Add visualizations to the report
+
+1.  Create a visualization by selecting a field from the **Fields** pane.  
 
     **Start with a numeric field**: Power BI creates a column chart with a single column.
 
@@ -74,12 +78,10 @@ Now use the [Sales and Marketing sample](powerbi-sample-datasets.md) to create y
     [Save your report](powerbi-service-save-a-report.md).
 
 
-## See also
+## Next steps
 
 More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md).
 
 [Reports in Power BI](powerbi-service-reports.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -24,6 +24,9 @@
 
 #   Best design practices for reports and visuals
 
+<!-- Shared newnav Include -->
+[AZURE.INCLUDE [newnavbydefault](../includes/newnavbydefault.md)]
+
 ##  Introduction
 This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report.  Many of these best practices apply to dashboard design as well.
 

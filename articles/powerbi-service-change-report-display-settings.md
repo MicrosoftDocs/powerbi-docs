@@ -4,12 +4,12 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
-   featuredVideoId="5tg-OXzxe2g"
-   qualityFocus="monitoring"
+   featuredVideoId=""
+   qualityFocus=""
    qualityDate=""/>
 
 <tags
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Page display settings in a Power BI report
@@ -32,7 +32,7 @@ The default display view is **Fit to page** and the default display size is **16
 
 ## Page View settings
 
-![](media/powerbi-service-change-report-display-settings/pbi-change-page-view.png)
+![](media/powerbi-service-change-report-display-settings/power-bi-change-page-view.png)
 
 
 
@@ -60,11 +60,9 @@ The *Page Size* settings control the display ratio and actual size (in pixels). 
 
 -   Custom (height and width in pixels)
 
-## Next Step
+## Next Steps
 
 [Learn how to use Page View and Page Size settings in your own Power BI reports](powerbi-service-tutorial-change-report-display-settings.md).
-
-## See also
 
 Read more about [reports in Power B](powerbi-service-reports.md)
 
