@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="05/02/2017"
    ms.author="maggies"/>
 
 # What are apps in Power BI?

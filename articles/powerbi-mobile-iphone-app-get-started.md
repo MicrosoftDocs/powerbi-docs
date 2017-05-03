@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2017"
+   ms.date="05/02/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI app for iOS on an iPhone or iPod Touch
@@ -112,6 +112,7 @@ See what else you can do in the iPhone app with dashboards in Power BI, and Repo
 -   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
 -   View your Power BI tiles on your [Apple Watch](powerbi-mobile-apple-watch.md).
 -   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
+-   View [your apps](powerbi-service-what-are-apps.md).
 -   Share [Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 -   [Annotate and share](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) a tile, report, or visualization.
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md)  to open a related dashboard tile or report.

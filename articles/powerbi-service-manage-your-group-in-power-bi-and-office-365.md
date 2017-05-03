@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/06/2017"
+   ms.date="05/02/2017"
    ms.author="ajayan"/>
 # Manage your app workspace in Power BI and Office 365
 
-> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in app workspaces, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
+> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
 As creator or admin of a app workspace in Power BI or in Office 365, you manage some aspects of your app workspace in Power BI. Other aspects you manage in Office 365. 
 

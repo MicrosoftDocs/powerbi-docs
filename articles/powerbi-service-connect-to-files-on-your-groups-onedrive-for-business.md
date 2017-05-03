@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Connect to files on the OneDrive for your Power BI app workspace"
+   pageTitle="Connect to files stored in the OneDrive for your app workspace"
    description="Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on the OneDrive for your Power BI app workspace."
    services="powerbi" 
    documentationCenter="" 
@@ -17,22 +17,22 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="05/02/2017"
    ms.author="ajayan"/>
 
-# Connect to files on the OneDrive for your Power BI app workspace
+# Connect to files stored in the OneDrive for your app workspace
 
-> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in app workspaces, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
+> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
-Now that you've [created an app workspace in Power BI](powerbi-service-create-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI app workspace. You can continue updating the files you store in OneDrive for Business, and those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
-
-> [AZURE.NOTE]  App workspaces are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+Now that you've [created an app workspace in Power BI](powerbi-service-create-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI app workspace. You can continue updating the files you store in OneDrive, and those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
 
 Adding files to your app workspace is a two-step process: 
 
 1. First you upload files to the OneDrive for Business for your app workspace.
 
 2. Then you connect to those files from Power BI.
+
+> [AZURE.NOTE]  App workspaces are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 ## 1 Upload files to the OneDrive for Business for your app workspace
 

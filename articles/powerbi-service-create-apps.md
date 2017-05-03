@@ -44,7 +44,7 @@ Apps are the evolution of organizational content packs. If you have organization
 
 Now that you have an overview of apps, let’s talk about *app workspaces*, where you create apps. 
 
-## App Workspaces 
+## App workspaces 
 
 *App workspaces* are the places where you create apps, so to create an app, you first need to create the app workspace. If you’ve ever worked in a group workspaces in Power BI, then app workspaces will be familiar. They’re the evolution of group workspaces – staging areas and containers for the content in the app. 
 
@@ -156,7 +156,7 @@ When you’ve finished creating and perfecting the dashboards and reports in you
 
      ![](media/powerbi-service-create-apps/power-bi-app-successful-publish.png)
 
-The business users that you've distributed the app to can find it in two different ways. You can send them the direct link to the app, or they can search for it in AppSource, where they see all the apps that they can access. Either way, after that whenever they go to Apps, they’ll see this app in their list.
+The business users that you've distributed the app to can find it in two different ways. You can send them the direct link to the app, or they can search for it in Microsoft AppSource, where they see all the apps that they can access. Either way, after that whenever they go to Apps, they’ll see this app in their list.
 
 Read more about the [app experience for business users](powerbi-service-what-are-apps.md).
 

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Work in group workspaces in the mobile apps"
-   description="Power BI group workspaces are built on Office 365 groups. Read about viewing and interacting with dashboards in the Power BI mobile apps."
+   pageTitle="Work in app workspaces in the mobile apps"
+   description="Power BI app workspaces are built on Office 365 groups. Read about viewing and interacting with dashboards in the Power BI mobile apps."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="05/02/2017"
    ms.author="maggies"/>
 
-# Work in group workspaces in the mobile apps
+# Work in app workspaces in the mobile apps
 
 Applies to:
 
@@ -29,41 +29,41 @@ Applies to:
 | [iPhones](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-iphone-app) | [iPads](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-ipad-app) | [Android phones](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-android-app) | [Android tablets](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-android-app) | [Windows 10 devices](powerbi-service-mobile-groups-in-the-ipad-app.md#group-workspaces-in-the-windows-10-app) |
 
 
-Power BI group workspaces offer a great space to collaborate with your colleagues. They're built on Office 365 groups.
+Power BI apps are collections of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions.
 
-You [create a group workspace in the Power BI service](powerbi-service-create-a-group-in-power-bi.md). Then you see and interact with the dashboards and reports in that workspace in the Microsoft [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md). 
+You [create an app workspace in the Power BI service](powerbi-service-create-apps.md). Then you see and interact with the dashboards and reports in that workspace in the Microsoft [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md). 
 
-Groups are available with the Power BI Pro experience.
+App workspaces are available with the Power BI Pro experience.
 
-## Group workspaces in the iPhone app
+## App workspaces in the iPhone app
 1.  Open the Power BI for iOS app for the iPhone. 
 
     Need to [download and install the iOS app for the iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) first?
 
-2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png), tap Workspaces ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon-lc.png), and select a group. 
+2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png), tap Workspaces ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon-lc.png), and select an app workspace. 
  
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces.png)
 
-3.  Your group page displays the dashboards that have been published to the group workspace.  
+3.  Your app workspace page displays the dashboards that have been published to the app workspace.  
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-groups-dashboards.png)
 
 4.  [Select a dashboard](powerbi-mobile-create-dashboard.md) to open and view it.
 
 
-## Group workspaces in the iPad app
+## App workspaces in the iPad app
 
 1.  Open the Power BI for iOS app for the iPad. 
 
     Need to [download and install the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062) first?
 
-2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap Workspaces ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon-lc.png).
+2.  Tap the global navigation button ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap **Workspaces** ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon-lc.png).
 
-3.  Select a group.
+3.  Select an app workspace.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-workspaces.png)
 
-4.  Your group workspace displays the dashboards and reports that have been published to that workspace.
+4.  Your app workspace displays the dashboards and reports that have been published to that workspace.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-workspace-dashboards.png)
 
@@ -74,7 +74,7 @@ Groups are available with the Power BI Pro experience.
 
 5.  [Select a dashboard](powerbi-mobile-create-dashboard.md) or [select a report](powerbi-mobile-reports-on-the-ipad-app.md) to open and view it.
 
-## Group workspaces in the Android app 
+## App workspaces in the Android app 
 
 1.  Open the Android app for Power BI.
 
@@ -84,33 +84,34 @@ Groups are available with the Power BI Pro experience.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-android-workspaces.png)
 
-3.  Select a group workspace.
+3.  Select an app workspace.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-android-workspaces-space.png)
 
-4.  Your group page displays the dashboards and reports that have been published to the group workspace.  
+4.  Your app workspace page displays the dashboards and reports that have been published to the app workspace.  
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-android-groups-dashboards.png)
 
-4.  [Select a dashboard](powerbi-mobile-create-dashboard.md) to open and view it in the group workspace.  
+4.  [Select a dashboard](powerbi-mobile-create-dashboard.md) to open and view it in the app workspace.  
 
 
-## Group workspaces in the Windows 10 app
+## App workspaces in the Windows 10 app
 
 1.  Open the Power BI mobile app for Windows 10.
 
     Need to [download the app](http://go.microsoft.com/fwlink/?LinkID=526478) first?
 
-2.  Tap the Workspaces icon ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon-lc.png) on the left, select a group.  
+2.  Tap the Workspaces icon ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-workspaces-icon-lc.png) on the left, select an app workspace.  
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-windows-10-workspace-home.png)
 
-3.  Your group page displays the dashboards that have been published to the group workspace.  
+3.  Your app workspace page displays the dashboards that have been published to the app workspace.  
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-windows-10-workspace.png)
 
 4.  [Select a dashboard](powerbi-mobile-create-dashboard.md) or a report to open and view it.  
 
 
-## See also
-- [Create a group workspace in the Power BI service](powerbi-service-create-a-group-in-power-bi.md)
+## Next steps
+- [What are apps in Power BI?](powerbi-service-what-are-apps.md)
+- [Create and distribute an app in the Power BI service](powerbi-service-create-apps.md)

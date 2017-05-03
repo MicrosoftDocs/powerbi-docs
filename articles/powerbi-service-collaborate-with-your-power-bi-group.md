@@ -21,10 +21,9 @@
    ms.author="ajayan"/>
 # Collaborate in your Power BI app workspace
 
-> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in app workspaces, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
+> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
-
-Power BI app workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets to create *apps*. That's what workspaces are designed for -- collaboration. After you've finished collaborating on your dashboards and reports with colleagues, then you distribute it as an app. Read more about [creating apps and app workspaces in Power BI](powerbi-service-create-apps.md). 
+Power BI app workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets to create *apps*. That's what workspaces are designed for -- collaboration. After you finish collaborating on your dashboards and reports with colleagues, then you package it as an app and distribute it. Read more about [creating apps and app workspaces in Power BI](powerbi-service-create-apps.md). 
 
 Collaboration doesn’t end with workspaces in Power BI. Office 365 offers other group services such as sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
