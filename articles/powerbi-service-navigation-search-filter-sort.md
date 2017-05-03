@@ -31,7 +31,7 @@ Power BI service organizes your content in several ways.  First, it separates yo
 
 Content that you create for your own use is available in **My workspace**, content that you create and share with a group is available in an **app workspace**, content that you want to access quickly is saved in **Favorites**, content that is shared with you is available in **Shared with me**, and your last-viewed content is also available in **Recent**.
 
-For more information, see [How content is organized in Power BI service](powerbi-service-how-content-organized.md)
+For more information, see [How content is organized in Power BI service](powerbi-service-basic-concepts.md)
 
 
 >**NOTE**: One additional way to organize your content is to pick the one dashboard that you expect to view most often, and set it as your *featured* dashboard. Each time you open Power BI service, this is the dashboard that will display first. To learn more, see [Featured dashboard](powerbi-service-featured-dashboards.md).
@@ -62,7 +62,6 @@ A workspace has four content tabs: Dashboards, Reports, Workbooks, and Datasets.
 -    For datasets, **Sort by** is not available by owner.
 
 ##  See also
-[Workspaces in Power BI](powerbi-service-workspaces.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
