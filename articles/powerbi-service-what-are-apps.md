@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/03/2017"
    ms.author="maggies"/>
 
 # What are apps in Power BI?
@@ -28,6 +28,8 @@ With apps you automatically get all the updates the app author makes. The author
 ![](media/powerbi-what-are-apps/power-bi-apps-home-360.png)
 
 Planning to author an app? See [Create and distribute apps in Power BI](powerbi-service-create-apps.md) for more information.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Install an app
 
