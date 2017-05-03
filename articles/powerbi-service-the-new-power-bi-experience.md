@@ -82,7 +82,7 @@ Let's start by looking at how the basic content (dashboards, reports, datasets, 
 
     ![](media/powerbi-service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
->**TIP**  To learn more, see [Favorite a dashboard](powerbi-service-new-favorite-dashboards.md)
+>**TIP**  To learn more, see [Favorite a dashboard](powerbi-service-favorite-dashboards.md)
 
 ##  Recents
 Quickly get to the reports and dashboards that you’ve most recently accessed by visiting the **Recents** pane. This includes content from across all of your workspaces.
