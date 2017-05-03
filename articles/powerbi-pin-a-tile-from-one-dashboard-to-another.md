@@ -26,6 +26,8 @@
 
 >[AZURE.NOTE] You cannot pin tiles from shared dashboards.
 
+##  Pin a tile to another dashboard
+
 1.  [Get data](powerbi-service-get-data.md). This example uses the [IT Spend Analysis sample](powerbi-sample-it-spend-analysis-take-a-tour.md).
 2.  Open a [dashboard](powerbi-service-dashboards.md).
 3.  Hover over the tile you want to pin, select the ellipses (...) and choose the pin ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/PBI_PinTile.png) icon.  

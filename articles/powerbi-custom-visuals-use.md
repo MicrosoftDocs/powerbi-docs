@@ -64,7 +64,7 @@ import that visual template into a report so that it is added, as an option, to 
 
 ##    Consideratios and troubleshooting
 
--    Most custom visuals are not supported for exporting to PDF, exporting to PowerPoint, or displaying in Subscribe to report emails. The exception is *registered custom visuals* that have passed the Microsoft custom visual review process.  To see the list of *registered custom visuals* and to learn how to submit your own custom visuals for registration, see [Registered custom visuals](powerbi-custom-visuals-register.md)
+- In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Registered custom visuals](powerbi-custom-visuals-register.md)
 
 
 ## Next steps

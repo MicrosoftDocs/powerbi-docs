@@ -34,7 +34,7 @@ We've redesigned the navigation experience to make it easier for you to find and
 
 - added quick access flyout menus for favorites, most-recent, and workspace selection
 
-- identify related content for dashboards, reports, and datasets
+- added a way to identify related content for dashboards, reports, and datasets
 
 -  added a separate content area for workbooks
 
@@ -44,11 +44,13 @@ We've redesigned the navigation experience to make it easier for you to find and
 
 -  created a separate area for your most-recent content
 
--   reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen. For example, switching between dashboards and reports
+-   reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen. For example, switching between dashboards and reports.
 
 ##  Content View
 
-Let's start by looking at how the basic content (dashboards, reports, datasets, workbooks) is organized. Before this, all of your content was listed in the left navigation pane. Now, you still have that option, but the default is to display by content type within the context of a workspace. Select a workspace from the left navigation pane and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
+Let's start by looking at how the basic content (dashboards, reports, datasets, workbooks) is organized. Before this, all of your content was listed in the left navigation pane. Now, you still have that option, but the default is to display by content type within the context of a workspace. Select a workspace from the left navigation pane (left nav) and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
+
+>**NOTE**: If you have Power BI Basic, you'll only see one workspace -- **My Workspace**.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
@@ -70,7 +72,7 @@ Let's start by looking at how the basic content (dashboards, reports, datasets, 
 
     From here you can select a dashboard to open it.
 
-2.  To open the **Favorites** pane, in the left navpane, select **Favorites** or select the Favorites icon ![](media/powerbi-service-the-new-power-bi-experience/powerbi-star-icon.png).
+2.  To open the **Favorites** pane, in the left nav, select **Favorites** or select the Favorites icon ![](media/powerbi-service-the-new-power-bi-experience/powerbi-star-icon.png).
 
     ![](media/powerbi-service-the-new-power-bi-experience/power-bi-favorites-screen.png)
 
@@ -110,9 +112,9 @@ Apps are collections of dashboards and reports purpose-built by your organizatio
 
 ## Working with workspaces
 
-Next in the left navbar is *workspaces*. Workspaces can be thought of as *containers* used by people authoring Apps and creating dashboards and reports and other Power BI content. There are two types of workspaces: **My Workspace** and App workspaces.
+Next in the left nav is *workspaces*. Workspaces can be thought of as *containers* used by people authoring Apps and creating dashboards and reports and other Power BI content. There are two types of workspaces: **My Workspace** and App workspaces.
 
->**NOTE**: If you are not a member or an admin, you may not see any workspaces in your left navbar.
+>**NOTE**: If you are not a member or an admin, you may not see any workspaces in your left nav.
 
 ### My Workspace
 **My Workspace** stores all the content that you own. Think of it as your personal sandbox or work area for your own content. You can share content from My Workspace with colleagues. Within My Workspace, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
@@ -130,7 +132,7 @@ As with **My Workspace**, your content is organized into 4 tabs: Dashboards, Rep
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-apps-workspaces.png)
 
-Switch workspaces by selecting **Workspaces** in the left navbar.
+Switch workspaces by selecting **Workspaces** in the left nav.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/23/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Add a filter to a Power BI report (in Editing view)
@@ -64,7 +64,7 @@ There are 2 ways to do this:
 
     -  Scroll down to the **Visual level filters** area and select the arrow to expand the field you'd like to filter. In this example we'll filter **StoreNumberName**
 
-       ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visual-level-filter.png) 
+        ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visual-level-filter.png) 
 
     -  Set either **Basic**, **Advanced**, or **Top N** filtering controls (see [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)). In this example we'll select Basic filtering and place checkmarks next to numbers 10, 11, 15, and 18.
 
@@ -78,16 +78,15 @@ There are 2 ways to do this:
 
     -  From the Fields pane, select the field you want to add as a new visual level filter, and drag it into the **Visual level filters area**.  In this example we'll drag **District Manager** into the **Visual level filters** bucket and select only Andrew Ma. 
 
-       ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-andrew.png)
-
+        ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-andrew.png)
 
     -  Notice that **District Manager** is *not* added to the visualization itself. The visualization is still composed of **StoreNumberName** as the Axis and **This Year Sales** as the Value.  
     
-          ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visualization.png)
+        ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-visualization.png)
     
     -    And, the visualization itself is now filtered to show only Andrew's sales this year for the specified stores.
 
-          ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-filtered-andrew.png)
+        ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-filtered-andrew.png)
 
 ## Add a filter to an entire page (aka page view filter)
 

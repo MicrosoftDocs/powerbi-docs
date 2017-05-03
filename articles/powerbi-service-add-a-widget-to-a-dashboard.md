@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/24/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Add image, text, video, and more to your dashboard
@@ -171,7 +171,7 @@ To make changes to a tile...
 
 1. Hover over the top right corner of the tile and select the ellipses.
 
-   ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi_ellipses.png)
+    ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi_ellipses.png)
 
 2. Select the edit icon to re-open the **Tile details** pane and make changes.
 

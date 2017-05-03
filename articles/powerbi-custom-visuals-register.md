@@ -18,54 +18,50 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 # Approving and registering a custom visualization
 
-## What is meant by *registered*?
-A *registered custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been approved, it can be run on the server side. Registered custom visuals are supported for exporting to PowerPoint, exporting to PDF, and will display in the emails received when a user subscribes to report pages. 
+## What is meant by *certified*?
+A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be run inside the Power BI service. Certified custom visuals are supported for [exporting to PowerPoint](powerbi-service-publish-to-powerpoint) and will display in the emails received when a user subscribes to report pages.
 
-##  API and code requirements
--    written in Versioned API 1.2 or higher
--    iframed
-- code repository available for review (e.g., Visual Code available to us through GitHub)
-- uses only public reviewable OSS components    
-- Arbitrary js packages downloading & execution
--    Data exfiltration prevention
-- Does not access external resources 
-- Pass SDL for TSLINT scan
-- Network access
--    User-input validation
--    Static analysis tools – deployed to GitHug
--    TsLint - MS SDL recommended rules + custom: 
- 
--    recommend that you use EsLint – default security ruleset -- when writing your code (or do we run our own customized eslint rules against their code?)
+- Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery? See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools) and visit the [Office store](powerbi-custom-visuals-office-store) to learn how.
 
-##    Process for submitting a custom visual for approval
-To submit a custom visual for approval:
-1. Send an email to Power BI Custom Visuals Support (pbicvsupport@microsoft.com).  In the email, include the following information.
-    a. x
-    b. y
-    c. z
-2. -    [GitHub repository](https://github.com/Microsoft/tslint-microsoft-contrib)
-3. Adhere to the requirements (see above)
-4. Pass the review
-5. Sign some papers
-Depending on volume of submissions, the entire review process should take approximately xxxxxx weeks. 
+- Is there an Office store visual that you use regularly? Ask the visual developer to <certify the visual with Microsoft>.  The developer’s contact information is on the visual’s **Learn more** page and listed as **Provider** ,
 
-## Custom visual code review process
-The Power BI Custom Visual team will review the submission and then run customized [tslint](https://www.npmjs.com/package/tslint) to check the code. The Visual Code must pass a security review. 
 
-If the custom visual is approved, xyz.  If the custom visual does not meet the requirements, it xyz.  The Custom Visuals team at Microsoft will notify you when your custom visual is approved and added to the registry list (below).
+##  Certification requirements
+- Office Store approved    
+- Custom visual is written with Versioned API 1.2 or higher    
+- Code repository available for review (e.g., Visual Code available to us through GitHub)    
+- Uses only public reviewable OSS components    
+- Does not access external services or resources    
+
+
+>**TIP**: We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
+
+##    Process for submitting a custom visual for Certification
+
+To submit a custom visual for certification:
+1. Send an email to Power BI Custom Visuals Support (pbicvsupport@microsoft.com). In the email, include the following information:
+  - Title: Visual Certification Request
+  - Link to GitHub repository where the visual source code is hosted
+  - Adhere to the requirements (see above)
+  - Pass the code and security review
+
+The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
+
+##  Removal of Power BI Certified custom visuals
+Microsoft, at its discretion, can remove a visual from the Certified list.  
+
 
 ##    List of custom visuals that are registered
 
 |Name  |
 |---------|
 |[Chiclet slicer ](https://store.office.com/chiclet-slicer-WA104380756.aspx?assetid=WA104380756&sourcecorrid=83cc564f-4d8f-40f7-85bc-5488c1309a58&searchapppos=0)    |
-|Cards with states     | 
-|[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx?assetid=WA104380786&sourcecorrid=a21a11dd-be97-4758-879c-0d6dc56d5657&searchapppos=0)    | 
-|[Dual KPI](https://store.office.com/dual-kpi-WA104380774.aspx?assetid=WA104380774&sourcecorrid=b76ac0d1-a367-46f3-bc56-677102c9b784&searchapppos=0)     | 
+|[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx?assetid=WA104380786&sourcecorrid=a21a11dd-be97-4758-879c-0d6dc56d5657&searchapppos=0)    |
+|[Dual KPI](https://store.office.com/dual-kpi-WA104380774.aspx?assetid=WA104380774&sourcecorrid=b76ac0d1-a367-46f3-bc56-677102c9b784&searchapppos=0)     |
 
 
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/16/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Favorite dashboards in the Power BI service
@@ -65,11 +65,6 @@ No longer use a dashboard as often as you used to?  You can unfavorite it. When 
 2. Select the yellow star next to the dashboard to unfavorite.
 
 >**NOTE**: You can also unfavorite a dashboard from the dashboard itself. In the top-right corner of the dashboard you'll see a yellow star and the word **Unfavorite**. Select either to remove that dashboard from your favorites list. 
- 
-##    Considerations and troubleshooting
-
-- tbd
-- tbd
 
 ## Next steps
 

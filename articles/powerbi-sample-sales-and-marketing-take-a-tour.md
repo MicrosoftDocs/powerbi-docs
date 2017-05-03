@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Sales & Marketing sample for Power BI: Take a tour  
@@ -59,7 +59,7 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
     ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales3.png)
 
 2.  In the question box at the top of the dashboard, type the question to **total units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
-    ![](media/powerbi-sample-sales-and-marketing-take-a-tour/totalUnitsByManufacturerAndCategoryFor2014AsATreemap.png)
+    ![](media/powerbi-sample-sales-and-marketing-take-a-tour/totalUnitsByManufacturerAndCategoryFor2014AsATreemap-new.png)
 
 3.  To compare the findings, pin the chart to your dashboard. Very interesting; in 2014 VanArsdel only sold products that fall into the **Urban** category.
 

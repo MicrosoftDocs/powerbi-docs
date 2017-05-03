@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Supplier Quality Analysis sample for Power BI: Take a tour  
@@ -91,6 +91,7 @@ Now let’s explore which plant does a better job managing defective material, r
 
 ## Which material type is best managed?  
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
+
 -   In the dashboard, look at the **Total Defect Quantity by Material Type, Defect Type** tile.
 
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier9.png)

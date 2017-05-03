@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/24/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Add a hyperlink to a text box in a report
@@ -36,7 +36,7 @@ Text boxes can be added to reports, pinned to dashboards from reports, and added
 
 2.  Highlight existing text, or add new text to use as a hyperlink.
 
-    ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/power-bi-hyperlink.png)
+    ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/power-bi-hyperlink-new.png)
 
 3.  Select the hyperlink icon  ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/power-bi-hyperlink-icon.png) .
 

@@ -17,16 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Custom visualizations in Power BI
 
 The [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) contains custom visualizations created by members of the community and by Microsoft. These visualizations can be downloaded and added to Power BI Service reports and Power BI Desktop reports. They behave just like the native visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc. To learn how to use these visualizations, see [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md).
 
-Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery?  See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) to learn how.
+The custom visuals in the Office store fall into 2 categories: **Office store approved** and **Power BI certified**. *Office store approved* visuals can be run in browsers, reports, and dashboards.  *Power BI certified* visuals have passed rigorous testing, and are supported in additional scenarios, such as email subscriptions, and export to PowerPoint.
 
-Some custom visuals have passed rigorous testing and are *registered* for server-side usage. Registered custom visuals are supported for exporting to PowerPoint, exporting to PDF, and will display in the emails received when a user subscribes to report pages. To see the list of registered custom visuals or to submit your own, see [Registered custom visuals](powerbi-custom-visuals-register.md).
+- Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery?  See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) to learn how.
+
+- Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s details page, listed as **Provider**.
 
 <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/321/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 

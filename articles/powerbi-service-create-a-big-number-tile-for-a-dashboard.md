@@ -46,7 +46,7 @@ The question box is the easiest way to make a number tile like this.
 
 5.  Pin the tile to an existing dashboard or to a new dashboard. 
 
-     -   Existing dashboard: select the name of the dashboard from the dropdown. Your choices will be limited to only those dashboards withing the current workspace.
+    -   Existing dashboard: select the name of the dashboard from the dropdown. Your choices will be limited to only those dashboards withing the current workspace.
 
     -   New dashboard: type the name of the new dashboard and it will be added to your current workspace.
 

@@ -56,7 +56,7 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
 
     ![](media/powerbi-service-delete/power-bi-delete-report.png)
 
-> [AZURE.NOTE] If the report is part of a [content pack](powerbi-service-organizational-content-packs-introduction.md), you will not be able to delete it using this method.  See [Remove your connection to an organizational content pack](powerbi-service-organizational-content-pack-delete.md).
+    > [AZURE.NOTE] If the report is part of a [content pack](powerbi-service-organizational-content-packs-introduction.md), you will not be able to delete it using this method.  See [Remove your connection to an organizational content pack](powerbi-service-organizational-content-pack-delete.md).
 
 ## Delete a workbook  
 
@@ -106,15 +106,15 @@ As the app workspace author, you can delete it. When you delete it, the associat
 
 1. From the left nav, select **Workspaces**
 
-  ![](media/powerbi-service-delete/power-bi-delete-workspace.png)
+    ![](media/powerbi-service-delete/power-bi-delete-workspace.png)
 
 2.  Select the ellipses (...) to the right of the workspace to be deleted and choose **Edit workspace**.
 
-  ![](media/powerbi-service-delete/power-bi-edit-workspace.png)
+    ![](media/powerbi-service-delete/power-bi-edit-workspace.png)
 
 3. In the **Edit workspace** window, select **Delete workspace** > **Delete**.
 
-  ![](media/powerbi-service-delete/power-bi-delete-workspace2.png)
+    ![](media/powerbi-service-delete/power-bi-delete-workspace2.png)
 
 ### To remove an app workspace from your list
 If you no longer want to be a member of an app workspace, you can ***leave*** it and it will be removed from your list. Leaving a workspace leaves it in place for all other workspace members.  
@@ -130,12 +130,12 @@ If you no longer want to be a member of an app workspace, you can ***leave*** it
       >**NOTE**: The options you see in the dropdown depend on whether you are an Admin or Member of that app workspace.
 
 ##  Delete or remove an App
-Apps can be easily removed from your apps canvas. But only an app Admin can permanently delete an app.
+Apps can be easily removed from your apps list page. But only an app Admin can permanently delete an app.
 
-### Remove an app from your app canvas
-Deleting an app from your app canvas does not delete the app for other members.
+### Remove an app from your app list page
+Deleting an app from your app list page does not delete the app for other members.
 
-1.  In your left nav, select **Apps** to open the apps canvas.
+1.  In your left nav, select **Apps** to open the apps list page.
 
 2.    Hover over the app to delete, and select the Delete ![](media/powerbi-service-delete/power-bi-delete-report2.png)  icon.
 

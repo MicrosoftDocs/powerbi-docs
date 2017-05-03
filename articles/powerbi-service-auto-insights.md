@@ -70,9 +70,10 @@ Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis 
     ![](media/powerbi-service-auto-insights/power-bi-insight-focus.png)
 
 3. In Focus mode you can:
+
   - [filter](powerbi-service-interact-with-a-report-in-reading-view.md) the visualizations.  To display the filters, in the top right corner, select the arrow to expand the Filters pane.
 
-       ![](media/powerbi-service-auto-insights/power-bi-insights-filter.png)
+        ![](media/powerbi-service-auto-insights/power-bi-insights-filter-new.png)
 
   - Pin the insight card to a dashboard by selecting the pin ![](media/powerbi-service-auto-insights/power-bi-pin-icon.png)  icon or **Pin visual**.
 

@@ -25,7 +25,7 @@ A combination of Power BI automated organization, user tagging, searching, and s
 
 ## How Power BI helps you navigate your content
 
-Power BI service organizes your content in several ways.  First, it separates your content into dashboards, reports, workbooks, and datasets. You'll see this organization on many of the Power BI screens. Next, Power BI service classifies your content in ways that make it even easier to find what you need, quickly. Take a look at your left navbar.
+Power BI service organizes your content in several ways.  First, it separates your content into dashboards, reports, workbooks, and datasets. You'll see this organization on many of the Power BI screens. Next, Power BI service classifies your content in ways that make it even easier to find what you need, quickly. Take a look at your left nav.
 
 ![](media/powerbi-service-navigation-search-filter-sort/power-bi-newnav.png)
 

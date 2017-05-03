@@ -50,7 +50,9 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 
 4.  Select **Pin live**. A Success message (near the top right corner) lets you know the page was added, as a tile, to your dashboard.
 
-5.  From the navigation pane, select the dashboard with the new live tile. There, you can do things like [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned report page.  
+##  Open the dashboard to see the pinned live tile
+
+1.  From the navigation pane, select the dashboard with the new live tile. There, you can do things like [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned report page.  
 
 6. Interact with the live tile.  In the screenshot below, selecting a bar on the column chart has cross-filtered and cross-highlighted the other visualizations on the tile.
 

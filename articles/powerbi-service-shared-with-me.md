@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/29/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Display the Power BI dashboards that have been shared with me
@@ -40,8 +40,6 @@ You'll have many options for interacting with the dashboard and underlying repor
 -  [Remove a dashboard](powerbi-service-delete.md)  ![](media/powerbi-service-new-dashboards/power-bi-delete-icon.png)
 
 -   Some dashboards can be re-shared  ![](media/powerbi-service-shared-with-me/power-bi-share-icon-new.png)
-
--  Certain types of dashboards can be copied ![](media/powerbi-service-new-dashboards/power-bi-copy-icon.png)
 
 - Additionally, if your lists of dashboards gets long, [use the search field and sorting to find what you need](powerbi-service-search-filter-sort.md).
 

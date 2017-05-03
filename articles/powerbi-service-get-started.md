@@ -65,13 +65,13 @@ Here's an example of getting data from a CSV file. Want to follow along with th
 
 4.  For this tutorial we're going to select **Import** to add the Excel file as a dataset that we can then use to create reports and dashboards.  
 
-  > **NOTE**: If you select **Upload**, the entire Excel workbook is uploaded to Power BI where you can open and edit it in Excel online.
+    > **NOTE**: If you select **Upload**, the entire Excel workbook is uploaded to Power BI where you can open and edit it in Excel online.
 
-  ![](media/powerbi-service-get-started/power-bi-import.png)
+    ![](media/powerbi-service-get-started/power-bi-import.png)
 
 5.  When your dataset is ready, select **View dataset** to open it in the report editor. ![](media/powerbi-service-get-started/power-bi-gs.png).
 
-  >**TiP**: A great way to get familiar with the report editor is to [take a tour](powerbi-service-the-report-editor-take-a-tour.md)
+    >**TIP**: A great way to get familiar with the report editor is to [take a tour](powerbi-service-the-report-editor-take-a-tour.md)
 
 ## Step 2: Start exploring your dataset
 

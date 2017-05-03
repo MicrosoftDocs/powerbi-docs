@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 # The report editor...Take a tour
 
@@ -138,8 +138,12 @@ The Fields pane displays the tables and fields that exist in your data and are a
 
 * * *
 
-## The top navigation bar
+## 2. The top navigation bar
 The actions available from the top navigation bar are numerous; with new actions being added all the time. For information about a particular action, use the Power BI Documentation Table of Contents or Search box.
+
+##    3. The report canvas
+
+The report canvas is where your work displays. When you use the Fields, Filters, and Visualizations panes to create visuals, they are built and displayed on your report canvas. Each tab at the bottom of the canva represents a page in the report. Select a tab to open that page. 
 
 
 ## Next Steps:

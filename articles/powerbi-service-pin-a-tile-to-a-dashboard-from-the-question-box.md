@@ -55,7 +55,7 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-pinned.png)
 
 ## Considerations and troubleshooting
- 
+
 -   When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is dashboard listed in the top navigation bar. For example, this question is being asked in the **Retail Analysis Sample** dashboard that is part of the **mihart** app workspace.
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-navbar.png)
@@ -63,7 +63,7 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 -   **How does Q&A know which datasets to use**?  Q&A has access to all datasets that have visualizations pinned to that dashboard.
 
 ## Next steps  
-[Rename, resize, add a hyperlink, reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md)
-[Display your dashboard tile in Focus mode](powerbi-service-display-dash-in-focus-mode.md)  
+[Rename, resize, add a hyperlink, reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md)    
+[Display your dashboard tile in Focus mode](powerbi-service-display-dash-in-focus-mode.md)     
 [Back to Q&A in Power BI](powerbi-service-q-and-a.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
