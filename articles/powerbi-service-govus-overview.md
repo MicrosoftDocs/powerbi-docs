@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/09/2017"
+   ms.date="05/01/2017"
    ms.author="davidi"/>
 
 # Power BI for US Government customers
@@ -30,8 +30,9 @@ The following sections describe the *features* available to the US Government ve
 
 
 ## Features of Power BI US Government
+It's important to note that **Power BI US Government** is only available as a **Pro license**, and is not available as a Free license. Certain features of the Power BI service are available in the **Power BI US Government** version of the service.
 
-The following features are available in **Power BI US Government**:
+The following features are available to **Power BI US Government** customers, as they apply to **Pro** license functionality:
 
 -   Create and view dashboards and reports
 -   [Data capacity limits](powerbi-admin-manage-your-data-storage-in-power-bi.md)
@@ -49,7 +50,9 @@ The following features are available in **Power BI US Government**:
 
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
+-   **Power BI US Government** is only available as a **Pro** license. Any references to Power BI (Free) licenses in an admin portal (or as users) are running in a commercial Power BI service cloud.
 -   **Office Online integration** - you can import data from **OneDrive for Business**, **SharePoint Online**, and **Excel Online** but you cannot edit or publish.
+-   **Auditing** - auditing is not available through the Office 365 Security and Compliance portal.
 -   **Email notification** - these notifications do not work when sharing dashboards. Users with whom a dashboard is shared can still view the dashboard and get notification when they are logged in.
 -   **ESRI Power BI integration** - not available in Power BI at this time.
 -   **Data-driven alerts** - you can set up alerts and receive notifications when your alert condition occurs in the Power BI Notification Center, and by push notifications to the Power BI app on your mobile device. However, you will not receive emails when your alert condition occurs.
@@ -58,7 +61,7 @@ Some of the features that are available in the commercial version of the **Power
 -   **Refresh failure emails** - when a refresh failure occurs, you will not receive an email. You should check your list of datasets to see if refreshes have succeeded and, if not, take necessary steps to correct the problems.
 
 
-If you have **Power BI** Free licenses assigned to your account, you may encounter the following issues:
+If you have **Power BI** Free licenses assigned to your account, those accounts are running in a commercial version of the **Power BI** service, and are not part of the **Power BI US Government** offering. For those Free accounts, you may encounter the following issues:
 
 -   Gateway, Mobile, and Desktop can’t authenticate
 -   You cannot access Azure commercial data sources

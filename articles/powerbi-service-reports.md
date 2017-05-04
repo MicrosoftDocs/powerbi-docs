@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,42 +17,75 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="04/18/2017"
    ms.author="mihart"/>
 # Reports in Power BI
 
-Dashboards, reports, and datasets are at the heart of Power BI. A **report** is a multi-perspective view into your data, with visualizations that represent different findings and insights from that data.  A report may have a single visualization or pages full of visualizations.
+##  What is a Power BI report?
+
+A Power BI ***report*** is a multi-perspective view into a dataset, with visualizations that represent different findings and insights from that dataset.  A report can have a single visualization or pages full of visualizations. Depending on your job role, you may be someone who *creates* reports and/or you may be someone who *consumes* or uses reports.
 
 ![](media/powerbi-service-reports/reportview.png)
 
-Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](powerbi-service-basic-concepts.md).
+This report has 3 pages (or tabs) and we're currently viewing the Store Sales Overview page. On this page are 6 different visualizations and a page title. Visualizations can be *pinned* to dashboards and when that pinned visualization is selected, it opens the report it was pinned from.
 
-You can [create a report from scratch](powerbi-service-create-a-new-report.md) or [have one shared with you](powerbi-service-share-unshare-dashboard.md). And for some kinds of data, Power BI will [create a report for you as it adds the dataset](powerbi-service-get-data.md).  
+If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](powerbi-service-basic-concepts.md)
+
+>**NOTE**: Reports are a feature of Power BI service and Power BI Desktop. The experience of working with reports is almost identical. However, for mobile, you can't create reports but you can [view, share, and annotate reports](powerbi-mobile-reports-in-the-iphone-app.md).
+
+##    Advantages of reports
+
+Reports are based on a single dataset. The visualizations in a report each represent a nugget of information. And the visualizations aren't static; you can add and remove data, change visualization types, and apply filters and slicers as you dig into the data to discover insights and look for answers. Like a dashboard, but more-so, a report is highly interactive and highly customizable and the visualizations update as the underlying data changes.
+
+##    Dashboards versus reports
+
+[Dashboards](powerbi-service-dashboards.md) are often confused with reports since they too are canvases filled with visualizations. But there are some major differences.  
 
 
-## View reports in the navigation pane
+|**Capability**  |**Dashboards**  |**Reports**  |
+|---------|---------|---------|
+|Pages       |  One page       | One or more pages        |
+|Data sources     | One or more reports and one or more datasets per dashboard       | A single dataset per report       |
+|Available in Power BI Desktop  | No  | Yes, can create and view reports in Desktop  |
+|Pinning   | Can pin existing visualizations (tiles) only from current dashboard to your other dashboards  | Can pin visualizations (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards.|
+|Subscribe    | Can't subscribe to a dashboard        | Can subscribe to report pages        |
+|Filtering     | Can't filter or slice       | Many different ways to filter, highlight, and slice        |
+|Set alerts     | Can create alerts to email you when certain conditions are met     |  No       |
+|Feature    | Can set one dashboard as your "featured" dashboard        | Cannot create a featured report        |
+|Natural language queries     | Available from dashboard        | Not available from reports        |
+|Can change visualization type     | No. In fact, if a report owner changes the visualization type in the report, the pinned visualization on the dashboard does not update        | Yes        |
+|Can see underlying dataset tables and fields | No. Can export data but can't see tables and fields in the dashboard itself.        | Yes. Can see dataset tables and fields and values.
+|Can create visualizations  | Limited to adding widgets to dashboard using "Add tile"   | Can create many different types of visuals, add custom visuals, edit visuals and more with Editing permissions   |
+|Customization  | Can do things with the visualizations (tiles) like move and arrange, resize, add links, rename, delete, and display full screen. But the data and visualizations themselves are read-only. | In Reading view you can publish, embed, filter,export, download as .pbix, view related content, generate QR codes, analyze in Excel, and more.  In Editing view you can do everything mentioned so far and so much more.
 
-Power BI can have more than one report-- as you add reports, their titles are added to the list under the **Reports** heading (see screenshot below). The report you're currently viewing is highlighted. New reports have a yellow asterisk. Only one report can be open at a time.
 
-![](media/powerbi-service-reports/navigator.png)
 
-## For more information about reports:
+##  Report ***creators*** and report ***consumers***  
+Depending on your role, you may be someone who creates reports for your own use or to share with colleagues. You want to learn how to create and share reports. Or, you may be someone who receives reports from others. You want to learn how to understand and interact with the reports.
 
-From the table of contents (on the left side of this browser page), expand **Reports** to see all the topics related to Power BI reports.
+Here are some topics, by role, to help you get started.
 
-### Tips and troubleshooting
+###    If you will be creating and sharing reports
+- Start with a [tour of Power BI service](powerbi-service-take-a-tour.md) so you know where to find reports and report tools.
+- Take a tour of the [report editor](powerbi-service-the-report-editor-take-a-tour.md).
+-  Learn how to [create a report from a dataset](powerbi-service-create-a-new-report.md).
+- [Learn how to use visualization, page, and report-level filters](powerbi-service-how-to-use-a-report-filter)
+- Discover all the different ways you can [share a report with colleagues](powerbi-service-share-unshare-dashboard.md).
 
-- Don't forget that [creating a report](powerbi-service-create-a-new-report.md)  requires a [dataset](powerbi-service-get-data.md).  
+###    If you will be receiving and consuming reports
+- Start with a [tour of Power BI service](powerbi-service-take-a-tour.md) so you know where to find reports and report tools.
+-  Learn how to [open a report](powerbi-service-open-a-report-in-reading-view) and all the interaction available in [Reading view](powerbi-service-dashboard-tiles.md).
+- Get comfortable with reports by taking a tour of one of our [samples](powerbi-sample-tutorial-connect-to-the-samples.md).  
+-  Don't need the report any more? You can [remove it](powerbi-service-delete-a-report).
+- To see which dataset the report is using and which dashboards have tiles pinned from the report, [view related content](powerbi-service-related-content.md).
 
-- Make sure you understand the difference between [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md) and [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). 
 
-- Familiarize yourself with the report editor by [Taking a tour](powerbi-service-the-report-editor-take-a-tour.md).
+>[AZURE.TIP]If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *report* topics.
 
-- Modify how your reports display using [page display settings](powerbi-service-change-report-display-settings.md).
 
-- Do you know the difference between filter, highlight, cross-filter, and cross-highlight? If not, see [Filter and highlight data in reports](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
-- [Focus mode](powerbi-service-move-and-resize-a-visualization.md) and [full screen TV mode](powerbi-service-dash-and-reports-fullscreen.md) -- there is a difference.
+
+
 
 
 ## See Also

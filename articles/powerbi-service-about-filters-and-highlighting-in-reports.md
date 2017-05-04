@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2017"
+   ms.date="04/24/2017"
    ms.author="mihart"/>
 # About filters and highlighting in Power BI reports
 

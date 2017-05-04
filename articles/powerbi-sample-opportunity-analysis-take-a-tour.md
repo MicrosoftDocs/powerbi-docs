@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Opportunity Analysis sample for Power BI: Take a tour  

@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="05/03/2017"
    ms.author="mihart"/>
 
 # Pin a tile from one dashboard to another dashboard  
@@ -25,6 +25,8 @@
 ﻿One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is by copying it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&A or a report. 
 
 >[AZURE.NOTE] You cannot pin tiles from shared dashboards.
+
+##  Pin a tile to another dashboard
 
 1.  [Get data](powerbi-service-get-data.md). This example uses the [IT Spend Analysis sample](powerbi-sample-it-spend-analysis-take-a-tour.md).
 2.  Open a [dashboard](powerbi-service-dashboards.md).
@@ -42,13 +44,11 @@
 5.  Select Pin.
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to the selected dashboard.
 
-    ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/pinSuccess.png)
-6.  From the navigation pane, select the dashboard with the new tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
+    ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/power-bi-pin-success.png)
 
-## See Also  
-[Reports in Power BI](powerbi-service-reports.md)  
-[Q&A in Power BI](powerbi-service-q-and-a.md)  
-[Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)  
-[Dashboards in Power BI Preview](powerbi-service-dashboards.md)  
+6.  Select **Go to dashboard** to see the pinned tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
+## Next steps  
+[Tiles in Power BI](powerbi-service-dashboard-tiles.md)  
+[Dashboards in Power BI](powerbi-service-dashboards.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

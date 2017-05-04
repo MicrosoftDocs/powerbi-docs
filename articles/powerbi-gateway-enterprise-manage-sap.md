@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/18/2017"
+ms.date="04/20/2017"
 ms.author="davidi"/>
 # Manage your SAP HANA data source
 
@@ -55,7 +55,7 @@ You can then select the **Data Source Type** from the list.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings2-sap.png)
 
-You will then want to fill in the information for the data source which includes the **Server**, **Username** and **Password**. 
+You will then want to fill in the information for the data source which includes the **Server**, **Username** and **Password**.
 
 > [AZURE.NOTE] All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
 
@@ -95,7 +95,7 @@ On the Users tab, for the data source, you can add, and remove, users, or securi
 
 ## Using the data source
 
-After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh. 
+After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh.
 
 > [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
 

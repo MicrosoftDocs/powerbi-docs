@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Tutorial: Dynamic row level security with Analysis services tabular model"
    description="Tutorial: Dynamic row level security with Analysis services tabular model"
    services="powerbi"
@@ -67,7 +67,7 @@ There are many published articles describing how to define row level dynamic sec
 
 1.  Once your relational data warehouse is in place, it’s time to define your tabular model. The model can be created using **SQL Server Data Tools (SSDT)**. To get more information about how to define a tabular model, please [refer this article](https://msdn.microsoft.com/library/hh231689.aspx).
 
-2.  Import all the necessary tables in to the model as shown below.
+2. Import all the necessary tables in to the model as shown below.
 
     ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/SSDT_Model.png)
 
@@ -77,7 +77,7 @@ There are many published articles describing how to define row level dynamic sec
 
     ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/RoleManager.png)
 
-5. 	Next, add the proper functions for both **DimSalesTerritory** and **DimUserSecurity** tables, as shown below under **Row Filters** tab.
+5. Next, add the proper functions for both **DimSalesTerritory** and **DimUserSecurity** tables, as shown below under **Row Filters** tab.
 
     ![](media/powerbi-desktop-tutorial-row-level-security-onprem-ssas-tabular/RoleManager_complete.png)
 
@@ -111,7 +111,7 @@ There are many published articles describing how to define row level dynamic sec
 
 ## Task 4: Creating report based on analysis services tabular model using Power BI desktop
 
-1. 	Launch **Power BI Desktop** and select **Get Data > Database**.
+1.  Launch **Power BI Desktop** and select **Get Data > Database**.
 
 2.  From the list of data sources, select the **SQL Server Analysis Services Database** and select **connect**.
 

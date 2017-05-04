@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="05/03/2017"
    ms.author="amac"/>
 
 # IT Spend Analysis sample for Power BI: Take a tour
 
-The IT Spend Analysis [content pack](powerbi-service-organizational-content-packs-introduction.md)(dashboard, report, and dataset) analyze the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
+The IT Spend Analysis [content pack](powerbi-service-organizational-content-packs-introduction.md) (dashboard, report, and dataset) analyze the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (<http://obvience.com/>) that has been anonymized.
 
@@ -53,7 +53,7 @@ But just looking at this chart and drawing conclusions can be misleading. We nee
 
 ## Ask questions of the data
 
-1.  Select **Power BI** in the top navigation bar to return to the dashboard.
+1.  Select **Power BI** in the top navigation bar to return to the **Dashboards** tab of your workspace.
 
 2.  In the question box, type “show IT areas, var plan % and var le3 % bar chart”.
 

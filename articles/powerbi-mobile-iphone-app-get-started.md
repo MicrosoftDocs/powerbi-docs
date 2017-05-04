@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2017"
+   ms.date="05/03/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI app for iOS on an iPhone or iPod Touch
 
 The Microsoft Power BI for iOS app, on the iPhone or iPod Touch, is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages. And keep up to date with your most timely data on your [Apple Watch](powerbi-mobile-apple-watch.md).  
 
-![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-dashboard-landscape.png)
+![](media/powerbi-mobile-iphone-app-get-started/power-bi-mobile-get-started-dash.png)
 
 You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
 
@@ -38,7 +38,7 @@ Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-th
 
 [Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPhone or iPod Touch.
 
->**Note**: You can run the Power BI for iOS app on iPhone 5 and above, with iOS 9.0 or later. You can also run it on an iPod Touch with iOS 9.0 or later.
+> [AZURE.NOTE] You can run the Power BI for iOS app on iPhone 5 and above, with iOS 9.0 or later. You can also run it on an iPod Touch with iOS 9.0 or later.
 
 ## Sign up for the Power BI service
 
@@ -64,19 +64,31 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 1.   Tap the global navigation button ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner.
   
-2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
+2.   Tap the gear icon in the upper-right ![](media/powerbi-mobile-iphone-app-get-started/power-bi-ios-gear-icon.png), then tap **Power BI samples**.
+
+5.  Pick a role and explore the sample dashboard for that role.  
 
     ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-powerbi-samples.png)
 
-    >**Note**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
+    > [AZURE.NOTE] Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
 
 ### Reporting Services mobile report samples
 
 1.   Tap the global navigation button ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner.
 
-2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
+2.  Tap the gear icon in the upper-right ![](media/powerbi-mobile-iphone-app-get-started/power-bi-ios-gear-icon.png), then tap **Reporting Services samples**.
+
+3.  Open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 
     ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-ssrs-samples.png)
+
+## Find your content in the Power BI mobile apps
+
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. This article explains what you'll find where. Plus you can always search for anything you have in the Power BI mobile apps. 
+
+![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
+
+Read more about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md).
 
 ## View your favorite dashboards, KPIs, and reports
 
@@ -84,7 +96,7 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-ios-favorites.png)
+    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
@@ -98,16 +110,17 @@ Organizations can use Microsoft Intune to manage devices and applications, inclu
 
 Microsoft Intune lets organizations control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
 
->**Note**: If you use the Power BI mobile app on your iPhone and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
+> [AZURE.NOTE] If you use the Power BI mobile app on your iPhone and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 
 Read more about [configuring Power BI mobile apps with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
-## What next?
+## Next steps
 
 See what else you can do in the iPhone app with dashboards in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
 ### Power BI dashboards and reports
 
+-   View [your apps](powerbi-service-what-are-apps.md).
 -   View your [Power BI dashboards](powerbi-mobile-create-dashboard.md).
 -   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
 -   View your Power BI tiles on your [Apple Watch](powerbi-mobile-apple-watch.md).
@@ -126,7 +139,7 @@ See what else you can do in the iPhone app with dashboards in Power BI, and Repo
 - Create [your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 
-## See also
+### See also
 
 - [Get started with Power BI](powerbi-service-get-started.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

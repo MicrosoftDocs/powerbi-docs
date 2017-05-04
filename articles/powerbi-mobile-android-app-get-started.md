@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/10/2017"
+   ms.date="05/03/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI for Android mobile app
@@ -34,7 +34,7 @@ Then interact with your dashboards and reports, explore the data, and share them
 
 -   **Get the app**  [Get the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
 
-    >**Note:** Power BI can run on a number of different Android phones. Your phone needs to be running the Android 5.0 operating system, or later. To check on your phone, go to **Settings** > **About device** > **Android version**. 
+    > [AZURE.NOTE] Power BI can run on a number of different Android phones. Your phone needs to be running the Android 5.0 operating system, or later. To check on your phone, go to **Settings** > **About device** > **Android version**. 
 
 -   **Start when you open the app**    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android phone. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](powerbi-mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.
 
@@ -56,7 +56,7 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
 3.  To view your Power BI dashboards and reports, tap **Power BI**.  
 
-    >**Important**: If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](powerbi-mobile-android-could-not-sign-you-in.md) for details on how to resolve the issue.
+    > [AZURE.IMPORTANT] If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](powerbi-mobile-android-could-not-sign-you-in.md) for details on how to resolve the issue.
 
     To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
 
@@ -91,13 +91,21 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
     By default it searches all dashboards and reports, but you can search just one or the other.
 
+## Find your content in the Power BI mobile apps
+
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. This article explains what you'll find where. Plus you can always search for anything you have in the Power BI mobile apps. 
+
+![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-left-nav.png)
+
+Read more about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md).
+
 ## View your favorite dashboards, KPIs, and reports
 
 You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-favorite-menu.png)
+    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-favorites-left-nav.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
@@ -111,7 +119,7 @@ Organizations can use Microsoft Intune to manage devices and applications, inclu
 
 Microsoft Intune lets organizations control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
 
->**Note**: If you use the Power BI mobile app on your Android device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
+> [AZURE.NOTE] If you use the Power BI mobile app on your Android device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 
 Read more about [configuring Power BI mobile apps for Android with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
@@ -124,7 +132,7 @@ See what else you can do in the Android phone app for Power BI with dashboards a
 -   View your [dashboards](powerbi-mobile-create-dashboard.md).
 -   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-app.md).
 -   Open [Power BI reports](powerbi-mobile-reports-in-the-android-app.md).
--   View [your groups](powerbi-service-mobile-groups-in-the-ipad-app.md).
+-   View [your apps](powerbi-service-what-are-apps.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) to open a related dashboard tile or report. 

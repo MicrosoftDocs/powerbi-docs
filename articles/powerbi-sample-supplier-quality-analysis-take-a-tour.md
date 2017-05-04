@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
-   ms.author="amac"/>
+   ms.date="05/03/2017"
+   ms.author="mihart"/>
 
 # Supplier Quality Analysis sample for Power BI: Take a tour  
 
@@ -31,7 +31,7 @@ Two primary metrics are at play in this analysis: total number of defects and th
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards.
 This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](powerbi-service-sample-datasets.md).[](http://www.obvience.com/)
+You can also [download just the dataset (Excel workbook) for this sample](powerbi-service-sample-datasets.md). 
 
 ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier1.png)
 
@@ -87,10 +87,11 @@ Now let’s explore which plant does a better job managing defective material, r
 
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier8.png)  
 
-4.  Select **Power BI** in the top navigation bar to return to the dashboard.
+4.  Select **Power BI** in the top navigation bar to return to your active workspace.
 
 ## Which material type is best managed?  
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
+
 -   In the dashboard, look at the **Total Defect Quantity by Material Type, Defect Type** tile.
 
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier9.png)

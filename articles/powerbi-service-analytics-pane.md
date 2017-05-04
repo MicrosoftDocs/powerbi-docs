@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
 
@@ -62,7 +62,7 @@ To view the available dynamic reference lines for a visual, follow these steps:
 
 4.  If you want to have a data label appear, move the **Data label** slider on. When you do so, you get a whole host of additional options for your data label.
 
-5.  Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dyanmic lines you currently have on your visual, and of which type. If we add a **Constant line** as a store count goal, you can see that the **Analytics** pane shows that we now also have a **Constant line** reference line applied to this visual.
+5.  Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dyanmic lines you currently have on your visual, and of which type. If we add a **Constant line** as a store count goal of 9, you can see that the **Analytics** pane shows that we now also have a **Constant line** reference line applied to this visual.
 
     ![](media/powerbi-service-analytics-pane/power-bi-reference-lines.png)
 
@@ -109,12 +109,8 @@ Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the **An
 -   Table
 
 
-## See also
+## Next steps
 
 [Analytics pane in Power BI Desktop](powerbi-desktop-analytics-pane.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-[Reports in Power BI](powerbi-service-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

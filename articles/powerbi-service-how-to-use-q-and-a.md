@@ -1,10 +1,10 @@
-﻿<properties
+<properties
    pageTitle="How to use Power BI Q&A"
    description="How to use Power BI Q&A"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    editor=""
    tags=""/>
 
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 
 # How to use Power BI Q&A  
@@ -43,7 +43,7 @@ Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, 
     a.  the questions used to create [tiles ](powerbi-service-dashboard-tiles.md)that are already pinned to the dashboard, and  
     b.  the name of tables in the [underlying dataset(s)](powerbi-service-get-data.md).  
 
-	You can always choose one of these questions as a starting point and continue to refine the question to find the specific answer you are looking for.  Or, use a table name to help you word a new question.
+	You can always choose one of these questions as a starting point and continue to refine the question to find the specific answer you are looking for. Or, use a table name to help you word a new question.
 
 2.  Select from the dropdown or begin typing your own question.  
 
@@ -74,9 +74,9 @@ For example, suppose you had an Excel table named “Sales”, with columns tit
 
 Q&A can answer questions that are based on how your dataset is organized. How would this work for data in Salesforce? When you connect to your salesforce.com account, Power BI generates a dashboard automatically.  Before you start asking questions with Q&A, take a look at the data displayed in the dashboard visualizations and also at the data displayed in the Q&A dropdown.
 
--   If the visualizations' axis labels and values include "sales",  "account", "month", and “opportunities”, then you can confidently ask questions such as: “Which *account *has the highest *opportunity*”, or “show *sales *by month as a bar chart”.
+-   If the visualizations' axis labels and values include "sales",  "account", "month", and “opportunities”, then you can confidently ask questions such as: “Which *account* has the highest *opportunity*”, or “show *sales* by month as a bar chart”.
  
--   If the dropdown includes "salesperson", "state", and "year", then you can confidently ask questions such as: "which *salesperson *had the lowest *sales *in *Florida* in *2013*."
+-   If the dropdown includes "salesperson", "state", and "year", then you can confidently ask questions such as: "which *salesperson* had the lowest *sales* in *Florida* in *2013*."
 
 If you have website performance data in Google Analytics, you could ask Q&A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you’re querying demographic data, you might ask questions about age and household income by location.
 
@@ -87,7 +87,7 @@ You can also tell Q&A which visualization to use by adding it to your question. 
 
 For information about keywords that Q&A recognizes, see [Tips for asking questions](powerbi-service-q-and-a-tips.md).
 
-## See also  
+## Next steps  
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Use Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)  
 [Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md)  

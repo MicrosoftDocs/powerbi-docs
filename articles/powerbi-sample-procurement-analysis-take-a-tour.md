@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/17/2017"
+   ms.date="04/27/2017"
    ms.author="amac"/>
 
 # Procurement Analysis sample for Power BI: Take a tour
@@ -41,7 +41,7 @@ You can also [download just the dataset (Excel workbook)](powerbi-sample-datase
 
 Let’s first look for trends in spending by category and location.  
 
-1. In the left navigation pane, select the Procurement Analysis dashboard.
+1. From your workspace, open the **Dashboards** tab and select the Procurement Analysis dashboard.
 
 2. Select the dashboard tile **Total Invoice by Country/Region**. It opens to the "Spend Overview" page of the “Procurement Analysis Sample” report.
 
@@ -79,8 +79,7 @@ Let’s explore the spending areas in Mexico.
 
 4.  Select the arrow again to turn drill down off.  
 
-5.  Select **Power BI** in the top navigation bar to go back to
-    the dashboard.
+5.  Select **Power BI** in the top navigation bar to return to your workspace.
 
 
 ## Evaluate different cities
