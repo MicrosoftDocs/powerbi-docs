@@ -89,15 +89,15 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
     ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-reporting-services-samples.png)
 
-## Search for dashboards, reports, and groups
+## Search for dashboards, reports, and apps
 
-Find your dashboards, reports, and groups quickly by typing in the search box, always at the top of the app.
+Find your dashboards, reports, and apps quickly by typing in the search box, always at the top of the app.
 
 1.  Tap the search icon in the upper-right corner.
 
     ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10ph_searchbarbrdr.png)
 
-    Power BI displays your most recent dashboards, reports, and groups.
+    Power BI displays your most recent dashboards, reports, and apps.
 
     ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_searchrecent.png)
 

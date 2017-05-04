@@ -39,11 +39,11 @@ You can find and install apps two different ways. The app author can send you a 
 
 The easiest way to install a new app is to get a direct link from the app author. Power BI creates an installation link, which the author can then send to you.
 
-- When you click the link in email, the Power BI service ([https://powerbi.com](https://powerbi.com)) opens. You confirm you want to install the app and it opens to the app landing page.
+- When you click the link in email, the Power BI service ([https://powerbi.com](https://powerbi.com)) opens. You confirm you want to install the app and it opens to the app content list.
 
      ![](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity-480.png)
 
-- On your iOS or Android mobile device, when you click the link in email, the app installs automatically and opens the app index page. 
+- On your iOS or Android mobile device, when you click the link in email, the app installs automatically and opens the app content list. 
 
      ![](media/powerbi-what-are-apps/power-bi-app-index-it-spend-360.png)
 
