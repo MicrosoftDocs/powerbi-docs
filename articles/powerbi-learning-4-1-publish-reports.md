@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="i0zAvCRLScI"
+   featuredVideoId="et_MLSL2sA8"
    featuredVideoThumb=""
    courseDuration="2m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="05/04/2017"
    ms.author="davidi"/>
 
 # Publish Reports from Power BI Desktop to the Power BI Service
