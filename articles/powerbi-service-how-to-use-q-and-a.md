@@ -74,7 +74,7 @@ For example, suppose you had an Excel table named “Sales”, with columns tit
 
 Q&A can answer questions that are based on how your dataset is organized. How would this work for data in Salesforce? When you connect to your salesforce.com account, Power BI generates a dashboard automatically.  Before you start asking questions with Q&A, take a look at the data displayed in the dashboard visualizations and also at the data displayed in the Q&A dropdown.
 
--   If the visualizations' axis labels and values include "sales",  "account", "month", and “opportunities”, then you can confidently ask questions such as: “Which *account* has the highest *opportunity*”, or “show *sales* by month as a bar chart”.
+-   If the visualizations' axis labels and values include "sales",  "account", "month", and "opportunities", then you can confidently ask questions such as: "Which *account* has the highest *opportunity*, or show *sales* by month as a bar chart."
  
 -   If the dropdown includes "salesperson", "state", and "year", then you can confidently ask questions such as: "which *salesperson* had the lowest *sales* in *Florida* in *2013*."
 
