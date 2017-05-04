@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="DAX basics in Power BI Desktop"
    description="DAX basics in Power BI Desktop"
    services="powerbi"
@@ -98,18 +98,18 @@ To complete this task, you’ll need to open the Contoso Sales Sample Power BI D
 
 **5.**  Between the parenthesis **()** for the **CALCULATE** function, type **Sales[SalesAmount]**. This is the first expression argument for our CALCULATE function.
 
-**6. ** Type a comma (**,**) to specify the first filter, then type **PREVIOUSQUARTER** followed by an opening parenthesis..
+**6.** Type a comma (**,**) to specify the first filter, then type **PREVIOUSQUARTER** followed by an opening parenthesis..
 > You’ll use the PREVIOUSQUARTER time intelligence function to filter our SUM results by the previous quarter.
 
-**7. ** Between the parenthesis **()** for the PREVIOUSQUARTER function, type **Calendar[DateKey]**.
+**7.** Between the parenthesis **()** for the PREVIOUSQUARTER function, type **Calendar[DateKey]**.
 > The PREVIOUSQUARTER function has one argument, a column containing a contiguous range of dates.
 
-**8. ** Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by two closing parentheses **))**.
+**8.** Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by two closing parentheses **))**.
 
 Your formula should now look like this:
 > **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
 
-**9. ** Click the checkmark ![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_Syntax_TaskCheckmark.png) in the formula bar or press Enter to validate the formula and add it to the model.
+**9.** Click the checkmark ![](media/powerbi-desktop-quickstart-learn-dax-basics/QSDAX_Syntax_TaskCheckmark.png) in the formula bar or press Enter to validate the formula and add it to the model.
 
  
 
@@ -225,7 +225,7 @@ Now that you have a basic understanding of the most important concepts in DAX, y
 
 DAX has been around for several years in other Microsoft BI tools such as Power Pivot and Analysis Services Tabular models, so there’s a lot of great information out there. You can find more information in books, whitepapers, and blogs from both Microsoft and leading BI professionals. The [DAX Resource Center Wiki on TechNet](http://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) is also a great place to start.
 
-### ﻿﻿﻿QuickQuiz Answers
+### QuickQuiz Answers
 
 Syntax:
 
@@ -241,5 +241,5 @@ Functions:
 Context:
 
 1.  Row context and filter context.
-2.  ﻿One or more filters in a calculation that determines a single value.
+2.  One or more filters in a calculation that determines a single value.
 3.  The current row.
