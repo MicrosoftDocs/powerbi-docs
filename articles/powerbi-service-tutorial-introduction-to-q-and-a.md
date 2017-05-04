@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Get started with Power BI Q&A (Tutorial)"
-   description="Tutorial: get started with Power BI Q&A with the Retail Analysis sample"
+   description="Tutorial: get started with Q&A in Power BI service using the Retail Analysis sample"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="monitoring"
+   qualityFocus=""
    qualityDate=""/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 
 #  Get started with Power BI Q&A (Tutorial)
@@ -28,7 +28,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 ## Method 1: using the report editor
 1. From your Power BI workspace, select **Get Data** \> **Samples** \> **Retail Analysis Sample** > **Connect**.
 
-	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_1.png)
+	![](media/powerbi-service-tutorial-introduction-to-q-and-a/power-bi-dashboard.png)
 
 2. The dashboard contains an area chart tile for "Last Year Sales and This Year Sales."  Select this tile. 
 
@@ -38,7 +38,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 3. Open the report in Editing View by selecting **Edit Report**.
 
-	![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_2.png)
+	![](media/powerbi-service-tutorial-introduction-to-q-and-a/power-bi-edit-report.png)
 
 4. Select the area chart and review the settings in the **Fields** pane.  The report creator built this chart by selecting these 3 values (**Time > FiscalMonth**, **Sales > This Year Sales**, **Sales >Last Year Sales >Value**) and organizing them in the **Axis** and **Values** wells.
 
@@ -46,9 +46,10 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 ## Method 2: using Q&A
 How would we go about creating this same line chart using Q&A?
-	![](media/powerbi-service-tutorial-introduction-to-q-and-a/power-bi-questionbox.png)
 
-1.  Navigate back to your the Retail Analysis Sample dashboard.
+![](media/powerbi-service-tutorial-introduction-to-q-and-a/power-bi-qna.png)
+
+1.  Navigate back to the Retail Analysis Sample dashboard.
 
 2.  Using natural language, type something like this into the question box:
 
@@ -64,7 +65,7 @@ How would we go about creating this same line chart using Q&A?
 
 3.  To pin the chart to your dashboard, select the pin icon ![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png).
 
-## See also
+## Next steps
 
 [What type of questions can I ask Q&A?](powerbi-service-q-and-a.md)
 

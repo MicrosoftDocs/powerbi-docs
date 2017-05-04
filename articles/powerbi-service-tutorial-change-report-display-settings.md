@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="04/25/2017"
    ms.author="mihart"/>
 
 # Change the size of a report page (Tutorial)
@@ -26,13 +26,13 @@ In the [previous article and video](powerbi-service-change-report-display-settin
 
 ## First, let's change the page View setting
 
-1.  Open a report in Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  This page is displayed using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
+1.  Open a report in Reading View or Editing View. This example uses the "New Stores" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).  This page is displayed using the **Fit to Page** setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_fit_to_page.png)
 
 2.  Make sure that no visualizations are selected on the canvas. Select **View** and review the display options.
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-change-page-view.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-page-view-menu.png)
 
 3.  Let's see how the page looks using the **Actual size** setting.
 
@@ -58,15 +58,20 @@ All Power BI reports default to **Fit to page** view. But what if you want this 
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-save-as.png)
 
-3.  Return to the **Retail Analysis Sample** dashboard by selecting it in the navigation pane. Scroll down to the **Reports** section and find the new report (it will have a yellow asterisk).  
+3.  Select the name of the current workspace from the top navbar to return to that workspace.  
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-new-report.png)
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-my-workspace.png)
 
-4.  Select the report to open it and choose the **New stores** page. It opens in **Actual size** view!
+4. Select the **Reports** tab and choose the new report you just created (it will have a yellow asterisk).
+
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-new-report2.png)
+
+4.  The report opens in **Actual size** view!
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
 ## Now, let's explore the *page size* setting
+The page size settings are only available in [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md). To open a report in Editing view you must have owner permissions for the report. If you've connected to any of our [samples](powerbi-sample-datasets.md), you'll have owner permissions to those reports.
 
 1.  Open the "District monthly sales" page of the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md) in Editing View.
 
@@ -114,13 +119,11 @@ Remember in the previous step we saw that our report page is currently displayin
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-final-new.png)
 
-## See also
+## Next steps
 [Create reports for Cortana](powerbi-service-cortana-desktop-entity-cards.md)
 
 Back to [Page display settings in a Power BI report](powerbi-service-change-report-display-settings.md)
 
-Read more about  [reports in Power B ](powerbi-service-reports.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+Read more about  [reports in Power BI ](powerbi-service-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

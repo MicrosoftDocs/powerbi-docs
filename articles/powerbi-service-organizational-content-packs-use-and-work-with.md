@@ -17,10 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="05/01/2017"
    ms.author="ajayan"/>
 
 # Organizational content packs: Copy, refresh, & get access
+
+> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
 When an organizational content pack is published, all recipients see the same dashboard, reports, Excel workbooks, datasets, and data (unless it's a SQL Server Analysis Services (SSAS) data source).  [Only the content pack creator can edit and republish](powerbi-service-organizational-content-packs-manage-update-delete.md) the content pack.  However, all recipients can save a copy of the content pack that can live alongside the original.
 

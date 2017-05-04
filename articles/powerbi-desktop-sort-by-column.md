@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="04/29/2016"/>
+   qualityFocus="monitoring"
+   qualityDate="05/01/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -17,14 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="05/01/2017"
    ms.author="davidi"/>
 
 # Sort by column in Power BI Desktop  
 
-In **Power BI Desktop**, you can easily choose which column is used to sort data in your visualizations. Whether you're using numeric data (such as sales figures) or text data (such as state names), you can sort your visualizations however you want, and make them look like you want them to.
+In **Power BI Desktop** and the **Power BI service**, you can change how a visual looks by sorting it by different data fields. By changing how you sort a visual, you can highlight the information you want to convey, and ensure the visual reflects whatever trend (or emphasis) you want to convey. 
 
-Let's take an example. The following visualization list the top 15 states in terms of weather (most sunny days, ranked from 1 to 50, with 1 having the most sunny days). Here's the visualization as it looks before we do any sorting.
+Whether you're using numeric data (such as sales figures) or text data (such as state names), you can sort your visualizations however you want, and make them look like you want them to.  **Power BI** provides lots of flexibility for sorting, and quick menus for you to use. On any visual, select the ellipses menu (...) and then **Sort By**, then select the field by which you want to sort, as shown in the following image.
+
+![](media/powerbi-desktop-sort-by-column/SortByColumn_2.png)
+
+## More depth, and an example
+Let's take an example that has more depth, and see how it works in **Power BI Desktop**.
+
+The following visualization list the top 15 states in terms of weather (most sunny days, ranked from 1 to 50, with 1 having the most sunny days). Here's the visualization as it looks before we do any sorting.
 
 ![](media/powerbi-desktop-sort-by-column/SortByColumn_1.png)
 

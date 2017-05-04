@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="05/02/2017"
    ms.author="mihart"/>
 
 # See data used to create the visual
@@ -38,26 +38,26 @@ You can also export the data that is being used to create the visualization as a
 
     ![](media/powerbi-service-reports-see-data/power-bi-export.png)
 
-3.  By default, the data displays below the visual.  To change this, in the top right corner of the visual, select the **Switch to vertical layout** icon ![](media/powerbi-service-reports-see-data/power-bi-vertical-icon.png).
+3.  By default, the data displays below the visual.
 
     ![](media/powerbi-service-reports-see-data/power-bi-explore-see-data.png)
 
-4.  To export the data to a .csv file, select the ellipses and choose **Export data**.
+4.  To change the orientation, select vertical layout ![](media/powerbi-service-reports-see-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
 
-    ![](media/powerbi-service-reports-see-data/power-bi-export-data.png)
+    ![](media/powerbi-service-reports-see-data/power-bi-explore-see-data2.png)
+
+5. To export the data to a .csv file, select the ellipses and choose **Export data**.
+
+    ![](media/powerbi-service-reports-see-data/power-bi-export-data-new.png)
 
     For more information on exporting the data to Excel, see [Export data from Power BI visualizations](powerbi-service-export-data.md).
 
-5.  To change the display to a vertical orientation, select the **Switch to vertical layout** icon  ![](media/powerbi-service-reports-see-data/power-bi-vertical-icon.png) .
-
 6.  To hide the data, de-select **Explore** > **See data**.
 
-### See also
+### Next steps
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
-
-[Power BI reports](powerbi-service-reports.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
+[Export data from Power BI visualizations](powerbi-service-export-data.md)    
+[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)    
+[Power BI reports](powerbi-service-reports.md)    
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)    
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

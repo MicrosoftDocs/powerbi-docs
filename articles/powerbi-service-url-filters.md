@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/05/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Filter a report using query string parameters in the URL
@@ -89,12 +89,8 @@ There are a couple of things to be aware of when using the query string paramete
 
 - Table and field names cannot have any spaces.  
 
-## See also  
-[Reports in Power BI](powerbi-service-reports.md)  
-[Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+## Next steps  
 [ Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 [Try it out -- it's free!](https://powerbi.com/)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)  

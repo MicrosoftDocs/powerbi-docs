@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="05/03/2017"
    ms.author="asaxton"/>
    
 # Purchasing Power BI Pro
@@ -34,8 +34,8 @@ For the latest pricing information of Power BI Pro and a table listing of includ
 
 After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
--   Create and publish customized [content packs](powerbi-service-organizational-content-packs-introduction.md)
--   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [groups](powerbi-service-create-a-group-in-power-bi.md)
+-   Create and publish customized [apps](powerbi-service-what-are-apps.md)
+-   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [app workspaces](powerbi-service-create-apps.md)
 -   Connect to on-premises data using [Personal Gateway](powerbi-personal-gateway.md)
 -   Enable live interactive connectivity to the following sources:
 	-   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
@@ -148,4 +148,5 @@ When you are in the service, you can verify that you have a Pro account by going
 
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

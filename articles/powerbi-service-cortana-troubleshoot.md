@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/15/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 
@@ -72,7 +72,7 @@ Now is a good time to run the Cortana troubleshooting tool. Before running the t
 
 2.  In the **Utterance** field, type the name of a Cortana answer card ***exactly as it appears in the Power BI tab***.
 
-    ![](media/powerbi-service-cortana-troubleshoot/power-bi-answer-card.png)
+    ![](media/powerbi-service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
     </br>
 

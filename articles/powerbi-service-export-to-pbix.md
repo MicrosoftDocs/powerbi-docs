@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/15/2017"
+   ms.date="04/27/2017"
    ms.author="mihart"/>
 
 # Export a report from Power BI service to Desktop (Preview)
@@ -25,7 +25,7 @@ In Power BI Desktop, you can export (also referred to as *download*) a report to
 
 There are a few limitations and considerations to keep in mind, which are discussed later in this article.
 
-![](media/powerbi-service-export-to-pbix/export-to-pbix_1a.png)
+![](media/powerbi-service-export-to-pbix/power-bi-file-export.png)
 
 ##  Download the report as a .pbix
 
@@ -34,8 +34,6 @@ To download the .pbix file, follow these steps:
 1. In **Power BI service**, open the report you want to download in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
 
 2.  From the menubar, select **File > Download report**.
-
-    ![](media/powerbi-service-export-to-pbix/power-bi-export-to-pbix_1.png)
 
     > [AZURE.NOTE] The report must have been [created using Power BI Desktop](powerbi-learning-4-1-publish-reports.md) after November 23, 2016 - or updated since then - to be able to download the report. If it hasn't, the *Download Report* menu option in Power BI service is grayed out.
 
@@ -52,7 +50,7 @@ To download the .pbix file, follow these steps:
 >[AZURE.TIP] There are several different ways you can [get Power BI Desktop](powerbi-desktop-get-the-desktop.md).
 
 
-## Limitations and Considerations
+## Considerations and troubleshooting
 
 There are a few important considerations and limitations associated with downloading (exporting) a *.pbix* file from Power BI service.
 
@@ -64,9 +62,9 @@ There are a few important considerations and limitations associated with downloa
 -   If your administrator has turned off the ability to export data, this feature will not be visible in the **Power BI service**.
 
 
-## See also
+## Next steps
 
-You can view the **Guy in a Cube** one-minute video about this feature:
+View the **Guy in a Cube** one-minute video about this feature:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWqU5jiUl0" frameborder="0" allowfullscreen></iframe>
 
