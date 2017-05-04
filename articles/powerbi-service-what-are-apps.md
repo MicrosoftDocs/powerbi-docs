@@ -43,7 +43,7 @@ The easiest way to install a new app is to get a direct link from the app author
 
      ![](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity-480.png)
 
-- On your iOS or Android mobile device, when you click the link in email, the app installs automatically and opens the app index page. 
+- On your iOS or Android mobile device, when you click the link in email, the app installs automatically and opens the app content list. 
 
      ![](media/powerbi-what-are-apps/power-bi-app-index-it-spend-360.png)
 

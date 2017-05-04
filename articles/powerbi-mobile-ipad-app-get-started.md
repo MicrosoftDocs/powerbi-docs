@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/03/2017"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
@@ -53,7 +53,7 @@ Go to Power BI (https://powerbi.com) to sign up for the service, if you haven't 
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-connect-to.png)
 
-    >**Tip**: When you're in the app, tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner to go between the two services. 
+    > [AZURE.TIP] When you're in the app, tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner to go between the two services. 
 
 ## Try the Power BI and Reporting Services samples  
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
@@ -70,7 +70,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
     ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_Samples2.png)
 
-    >**Note**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
+    > [AZURE.NOTE] Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
 
 ### Reporting Services mobile report samples
 
@@ -79,6 +79,14 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-reporting-services-samples.png)
+
+## Find your content in the Power BI mobile apps
+
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. This article explains what you'll find where. Plus you can always search for anything you have in the Power BI mobile apps. 
+
+![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-left-nav.png)
+
+Read more about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md).
 
 ## Search for a dashboard or report
 
@@ -94,7 +102,7 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ios-favorites.png)
+    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-favorites-nav.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
@@ -108,7 +116,7 @@ Organizations can use Microsoft Intune to manage devices and applications, inclu
 
 Microsoft Intune lets organizations control items like requiring an access pin, controlling how data is handled by the application, and even encrypting application data when the app isn't in use.
 
->**Note**: If you use the Power BI mobile app on your iPad and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
+> [AZURE.NOTE] If you use the Power BI mobile app on your iPad and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 
 Read more about [configuring Power BI mobile apps with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
