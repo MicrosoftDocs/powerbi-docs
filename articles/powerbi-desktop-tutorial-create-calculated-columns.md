@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="Tutorial: Create calculated columns in Power BI Desktop"
    description="Tutorial: Create calculated columns in Power BI Desktop"
    services="powerbi"
@@ -51,7 +51,7 @@ The formula bar appears along the top of the Report canvas or Data grid. This is
 
 By default a new calculated column is simply named Column. If we don’t rename it, when we create another, it will be named Column 2, Column 3, and so on. We want our columns to be more identifiable, so we’ll give our new column a new name.
 
-**2. ** Since the **Column** name is already highlighted in the formula bar, just type **ProductFullCategory**.
+**2.** Since the **Column** name is already highlighted in the formula bar, just type **ProductFullCategory**.
 
 Now we can begin entering our formula. We want the values in our new column to start with the ProductCategory name from the ProductCategory table. Because this column is in a different, but related table, we’re going to use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help us get it.
 
@@ -72,13 +72,13 @@ Select **ProductCategory[ProductCategory]**, and then type a closing parenthesis
 ![](media/powerbi-desktop-tutorial-create-calculated-columns/CalcCol_Fileds_PFC_3.png)
 
 
-**4. ** We want to add a dash symbol to separate each value, so after the closing parenthesis of the first expression, type a space, ampersand (&), quote, space, dash (-), another space, a closing quote, and then another ampersand. Your formula should now look like this:
+**4.** We want to add a dash symbol to separate each value, so after the closing parenthesis of the first expression, type a space, ampersand (&), quote, space, dash (-), another space, a closing quote, and then another ampersand. Your formula should now look like this:
 
  **ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &**
 
 > **Tip:** Click the down chevron on the right side of the formula bar to expand the formula editor. Click Alt & Enter to move down a line, and Tab to move things over.
 
-**5. ** Finally, enter another opening bracket and then select the **[ProductSubcategory]** column to finish the formula. Your formula should look like this:
+**5.** Finally, enter another opening bracket and then select the **[ProductSubcategory]** column to finish the formula. Your formula should look like this:
 
 ![](media/powerbi-desktop-tutorial-create-calculated-columns/CalcCol_Fileds_PFC_5.png)
 
