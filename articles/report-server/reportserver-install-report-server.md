@@ -29,6 +29,8 @@ To download Power BI Report Server, go to the [Microsoft download center](https:
 
 ![tip](media/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
+[!INCLUDE [ssrs-documentation](../../includes/ssrs-documentation.md)]
+
 ## Requirements
 
 Power BI Report Server will install default values to configure the core settings required to make a report server operational. It has the following requirements:
@@ -80,9 +82,9 @@ Installing Power BI Report Server is straight forward. There are only a few step
 
 ## Configuration your report server
 
-After you select **Configure Report Server** in the setup, you will be presented with Reporting Services Configuration Manager. For more information, see [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com").
+After you select **Configure Report Server** in the setup, you will be presented with Reporting Services Configuration Manager. For more information, see [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
-You will need to [create a report server database](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com") in order to complete the initial configuration of Reporting Services. A SQL Server Database server is required to complete this step.
+You will need to [create a report server database](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) in order to complete the initial configuration of Reporting Services. A SQL Server Database server is required to complete this step.
 
 ### Creating a database on a different server
 
@@ -96,7 +98,7 @@ To work around this, you can change the service account to either Network Servic
 
 ![Configure report server service account](media/install-report-server/pbireportserver-configure-account.png)
 
-For more information, see [Configure the report server service sccount](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com").
+For more information, see [Configure the report server service sccount](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager).
 
 ## Windows Service
 
@@ -131,20 +133,20 @@ You will need to open up the TCP port that you have configured for your Web Serv
 
 ## Additional configuration
 
-- To configure integration with the Power BI service so you can pin report items to a Power BI dashboard, see [Integrate with the Power BI service](https://docs.microsoft.com/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com").
+- To configure integration with the Power BI service so you can pin report items to a Power BI dashboard, see [Integrate with the Power BI service](https://docs.microsoft.com/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager).
 
-- To configure email for subscriptions processing, see [E-Mail settings](https://docs.microsoft.com/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com") and [E-Mail delivery in a report server](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com").
+- To configure email for subscriptions processing, see [E-Mail settings](https://docs.microsoft.com/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) and [E-Mail delivery in a report server](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services).
 
-- To configure the web portal so you can access it on a report computer to view and manage reports, see [Configure a firewall for report server access](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com") and [Configure a report server for remote administration](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com").
+- To configure the web portal so you can access it on a report computer to view and manage reports, see [Configure a firewall for report server access](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) and [Configure a report server for remote administration](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
 
 ## Next steps
 
 [Administrator handbook]  
-[Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
-[Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
-[Configure report server URLs](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
-[Configure a report server database connection](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")    
-[Initialize a report server](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
-[Configure SSL connections on a report server](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
-[Configure windows service accounts and permissions](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
+[Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)   
+[Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)   
+[Configure report server URLs](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)   
+[Configure a report server database connection](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)    
+[Initialize a report server](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)   
+[Configure SSL connections on a report server](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)   
+[Configure windows service accounts and permissions](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)   
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
