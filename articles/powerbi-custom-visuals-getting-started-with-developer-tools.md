@@ -99,7 +99,7 @@ To *add* a certificate, run the following command.
 
 **Windows OS**
 
-1. Select **Install Certificate...***.
+1. Select **Install Certificate...**.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 
