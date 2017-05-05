@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/04/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Android tablets
@@ -94,13 +94,19 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
     By default it searches all dashboards and reports, but you can search just one or the other.
 
+## Find your content in the Power BI mobile apps
+
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
+
+![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
+
 ## View your favorite dashboards, KPIs, and reports
 
 You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-favorite-menu.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-favorites-left-nav.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
@@ -118,22 +124,18 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 
 Read more about [configuring Power BI mobile apps for Android with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
-## What next?
+## Next steps
 
-See what else you can do in the Android tablet app for Power BI with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
+Here are some other things you can do in the Android tablet app for Power BI with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
 
 ### Power BI dashboards and reports
 
--   View your [dashboards](powerbi-mobile-create-dashboard.md).
--   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-android-tablet-app.md).
--   Open [Power BI reports](powerbi-mobile-reports-in-the-android-tablet-app.md).
 -   View [your apps](powerbi-service-what-are-apps.md).
+-   View your [dashboards](powerbi-mobile-create-dashboard.md).
 -   [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) to open a related dashboard tile or report.
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
-
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-notification-menu.png)
 
 ### Reporting Services mobile reports and KPIs
 
@@ -141,7 +143,7 @@ See what else you can do in the Android tablet app for Power BI with dashboards 
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
-## See also
+### See also
 
 -  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 -  [Get started with Power BI](powerbi-service-get-started.md)
