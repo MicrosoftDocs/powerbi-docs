@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Install Power BI Report Server"
-   description="Administering Power BI in your organization"
+   pageTitle="Installing a Power BI Report Server"
+   description="Learn how to install Power BI Report Server. "
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -137,8 +137,9 @@ You will need to open up the TCP port that you have configured for your Web Serv
 
 - To configure the web portal so you can access it on a report computer to view and manage reports, see [Configure a firewall for report server access](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com") and [Configure a report server for remote administration](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com").
 
-## See Also
+## Next steps
 
+[Administrator handbook]  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
 [Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
 [Configure report server URLs](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager) ![Link out to docs.microsoft.com](media/docs-icon.png "Link out to docs.microsoft.com")   
