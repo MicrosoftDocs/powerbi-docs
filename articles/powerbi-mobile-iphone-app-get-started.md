@@ -92,7 +92,7 @@ Read more about [finding your content in the mobile apps](powerbi-mobile-find-co
 
 ## View your favorite dashboards, KPIs, and reports
 
-You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
+You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites list page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
 
 -  Tap **Favorites**.
 

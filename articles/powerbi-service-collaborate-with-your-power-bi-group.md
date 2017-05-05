@@ -3,9 +3,9 @@
    description="Read about collaborating on Power BI Desktop files in your app workspace, and with Office 365 services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks."
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="maggiesMSFT" 
    manager="erikre" 
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="no"
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="05/01/2017"
-   ms.author="ajayan"/>
+   ms.author="maggies"/>
 # Collaborate in your Power BI app workspace
 
 > [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
@@ -39,7 +39,7 @@ After you create a Power BI Desktop file, if you publish it to your Power BI app
 
 2. In the Power BI service, select the arrow next to My Workspace > select your app workspace.
 
-    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-old-group-left-nav.png)
+    ![](media/powerbi-service-collaborate-with-your-power-bi-group/power-bi-workspace-nav.png)
 
 3. Scroll to your report.
 
