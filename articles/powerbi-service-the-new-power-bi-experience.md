@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/04/2017"
    ms.author="mihart"/>
 
 # The new Power BI navigation experience
@@ -50,7 +50,7 @@ We've redesigned the navigation experience to make it easier for you to find and
 
 Let's start by looking at how the basic content (dashboards, reports, datasets, workbooks) is organized. Before this, all of your content was listed in the left navigation pane. Now, you still have that option, but the default is to display by content type within the context of a workspace. Select a workspace from the left navigation pane (left nav) and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
 
->**NOTE**: If you have Power BI Basic, you'll only see one workspace -- **My Workspace**.
+>**NOTE**: If you have Power BI Free, you'll only see one workspace -- **My Workspace**.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
@@ -120,6 +120,8 @@ Next in the left nav is *workspaces*. Workspaces can be thought of as *container
 **My Workspace** stores all the content that you own. Think of it as your personal sandbox or work area for your own content. You can share content from My Workspace with colleagues. Within My Workspace, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-my-workspace2.png)
+
+>**TIP**  To learn more, see [My Workspace](powerbi-service-workspaces.md)
 
 ### App workspaces
 Apps and app workspaces are a feature of Power BI Pro. If you are someone who authors dashboards and reports for others, you'll use app workspaces to do this. An app workspace is the place where you'll create the app, so to create an app, you'll first need to create the app workspace. They’re the evolution of group workspaces – staging areas and containers for the content in the app.  You and your colleagues can collaborate on dashboards, reports, and other content that you plan to distribute to a wider audience, or even your entire organization.
