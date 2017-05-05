@@ -34,7 +34,7 @@ Then interact with your dashboards and reports, explore the data, and share them
 
 -   [**Get the Power BI mobile app for Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
 
-    >**Note:** Your device needs to be running Windows 10. The app works best on devices with at least 2 GB RAM and 8 GB internal storage. It can run on devices with at least 1 GB RAM.
+    > [AZURE.NOTE] Your device needs to be running Windows 10. The app works best on devices with at least 2 GB RAM and 8 GB internal storage. It can run on devices with at least 1 GB RAM.
 
 -   Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
@@ -69,25 +69,25 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 1.   Tap the global navigation button ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
   
-2.   Tap **Settings**, then tap your name.
+2.   Tap **Settings** icon ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-settings-icon.png), tap your name, then tap **View samples**.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-settings-samples.png)
-   
-4.   Tap **View samples**. 
+    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-view-samples.png)
 
 3.   Pick a role and explore the sample dashboard for that role.  
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-power-bi-samples.png)
-
-    >**Note**:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
+    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-samples.png)
 
 ### Reporting Services mobile report samples
 
 1.   Tap the global navigation button ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
 
-2.  Tap **Reporting Services samples**, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
+2.  Tap **Settings** icon ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-settings-icon.png), tap **Reporting Services**, then tap **View samples**.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-reporting-services-samples.png)
+    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-ssrs-samples.png)
+
+3.  Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile reports.
+
+    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-ssrs-sample-kpis.png)
 
 ## Search for dashboards, reports, and apps
 
@@ -105,43 +105,45 @@ Find your dashboards, reports, and apps quickly by typing in the search box, alw
 
     ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_search_m.png)
 
+## Find your content in the Power BI mobile apps
+
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
+
+![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-left-nav.png)
+
 ## View your favorite dashboards, KPIs, and reports
 
 You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-ssrs-mobile-report-favorite-menu.png)
+    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-favorite-menu.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-ssrs-favorites.png)
+    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-favorites.png)
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
-## What next?
+## Next steps
 
-See what more you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
+Here are some other things you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
 
 ### Power BI dashboards and reports
 
+-   View [your apps](powerbi-service-what-are-apps.md).
 -   View your [dashboards](powerbi-mobile-create-dashboard.md).
 -   [Pin Power BI tiles and dashboards](powerbi-mobile-pin-dashboard-from-win10phone-app.md) to your device's Start screen as live tiles.
--   Explore the [tiles on your dashboards](powerbi-mobile-tiles-in-the-win10phone-app.md).
--   Explore your [reports](powerbi-mobile-reports-in-the-windows-app.md).
 -   [Share tiles](powerbi-mobile-share-a-tile-from-the-win10phone-app.md).
 -   Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
 -   View [your apps](powerbi-service-what-are-apps.md).
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
-
-     ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-notifications.png)
 
 ### Reporting Services mobile reports and KPIs
 
 - [View Reporting Services mobile reports and KPIs](powerbi-mobile-win10-kpis-mobile-reports.md) in the Power BI app for Windows 10 devices.
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
-
 
 ### See also
 

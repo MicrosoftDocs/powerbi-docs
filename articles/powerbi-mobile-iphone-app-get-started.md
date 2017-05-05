@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="complete"
-   qualityDate="05/02/2016"/>
+   qualityDate="05/04/2016"/>
  
 <tags
    ms.service="powerbi"
@@ -84,7 +84,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 ## Find your content in the Power BI mobile apps
 
-Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. This article explains what you'll find where. Plus you can always search for anything you have in the Power BI mobile apps. 
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
 ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
 
@@ -116,13 +116,13 @@ Read more about [configuring Power BI mobile apps with Microsoft Intune](powerbi
 
 ## Next steps
 
-See what else you can do in the iPhone app with dashboards in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
+Here are some other things you can do in the iPhone app with dashboards in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
 ### Power BI dashboards and reports
 
 -   View [your apps](powerbi-service-what-are-apps.md).
 -   View your [Power BI dashboards](powerbi-mobile-create-dashboard.md).
--   Interact with [tiles](powerbi-mobile-tiles-in-the-iphone-app.md) on your dashboards.
+-   [Ask questions of your data](powerbi-mobile-ios-qna.md) in your own words with Q&A
 -   View your Power BI tiles on your [Apple Watch](powerbi-mobile-apple-watch.md).
 -   Set [data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) for your data.
 -   Share [Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
