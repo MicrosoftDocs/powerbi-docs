@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Installing a Power BI Report Server"
+   pageTitle="Install Power BI Report Server"
    description="Learn how to install Power BI Report Server. "
    services="powerbi"
    documentationCenter=""
@@ -19,9 +19,9 @@
    ms.workload="powerbi"
    ms.date="05/05/2017"
    ms.author="asaxton"/>
-# Installing a Power BI Report Server
+# Install Power BI Report Server
 
-Learn how to install Power BI Report Server. 
+Learn how to install Power BI Report Server.
 
  **Download** ![download](media/download.png "download")
 
