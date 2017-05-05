@@ -17,16 +17,18 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/03/2017"
+   ms.date="05/04/2017"
    ms.author="davidi"/>
 
 # What's new in the latest Power BI Desktop update?
 
-## April 2017 Update (2.45.4704.442)
+## May 2017 Update (2.46.4732.461)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-We're not fooling when we say we're excited to announce a whole swath of new features in the April 2017 update of **Power BI Desktop**. The links beside each update mean the following:
+We MAY be more excited about this month's May 2017 updates than in any previous month. There are all sorts of improvements to existing features, which are direct reflections of your feedback and our continuous drive to make **Power BI Desktop** the best it can be.
+
+The links beside each update mean the following:
 
 -   **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 -   Some features have an **[article]** that provides more detail.
@@ -39,37 +41,38 @@ The following updates are new to Power BI Desktop this month:
 
 ### Report View:
 
--   Rename axis titles [[video]](https://youtu.be/AWMaIaI8G2Y?t=25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#renameAxisTitles)
--   New matrix visual enhancements: column sorting, column resizing, and word wrap (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[article]](powerbi-desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
+-   Relative date slicer (Preview) [[video]](https://youtu.be/CKISVNHcHVA?t=8m5s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#relativeDateSlicer)
+-   New table visual (Preview) [[video]](https://youtu.be/CKISVNHcHVA?t=20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#table)
+-   Combo chart data label enhancements [[video]](https://youtu.be/CKISVNHcHVA?t=5m49s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#comboChart)
+-   More URL support in table and matrix visuals  [[video]](https://youtu.be/CKISVNHcHVA?t=3m8s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#urlTables)
+-   mailto links in textbox [[video]](https://youtu.be/CKISVNHcHVA?t=11m34s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#mailtoTextbox)
 
 ### Analytics:
 
--   Quick measures [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures) [[in-depth blog]](https://powerbi.microsoft.com/blog/quick-measures-preview/) [[article]](powerbi-desktop-quick-measures.md)
--   Show value as [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures)
--   Q&A in Spanish (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=10m31s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#QandA)
+-   Report level measures for live connections to Analysis Services tabular models and Power BI service datasets [[video]](https://youtu.be/CKISVNHcHVA?t=12m48s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#reportLevelMeasures)
+-   Two new quick measures (Preview) [[video]](https://youtu.be/CKISVNHcHVA?t=15m39s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#quickMeasures)
+-   Bin by count [[video]](https://youtu.be/CKISVNHcHVA?t=18m22s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#binByCount)
 
 ### Data Connectivity:
 
--   Connect to datasets in the Power BI service (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=12m39s) [[article]](powerbi-desktop-report-lifecycle-datasets.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#powerBIservice)
--   New or enhanced data connectors:
-    -  Redshift Connector: beta support, and Publish to Power BI service  [[video]](https://youtu.be/AWMaIaI8G2Y?t=14m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#redshift)
-    -   SAP HANA and BW: enhancements to parameter input experience [[video]](https://youtu.be/AWMaIaI8G2Y?t=15m17s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#SAP)
+-   Combine files - ability to reference *First File* as example [[video]](https://youtu.be/CKISVNHcHVA?t=21m30s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#combineFiles)
+-   New data connectors:
+    -  Dynamics 365 for Customer Insights [[video]](https://youtu.be/CKISVNHcHVA?t=21m2s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#customerInsights)
 
 ### Query Editing:
 
--   Add Column from Example [[video]](https://youtu.be/-ykbVW9wQfw) [[article]](powerbi-desktop-add-column-from-example.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#addColumnByExample) [[another blog]](https://powerbi.microsoft.com/blog/a-sneak-preview-of-the-new-add-column-from-examples-data-transformation/)
--   Split column (by delimiter/number of characters) into rows [[video]](https://youtu.be/AWMaIaI8G2Y?t=16m39s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#splitColumnIntoRows)
--   Group by: basic mode [[video]](https://youtu.be/AWMaIaI8G2Y?t=17m51s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#basicGroupBy)
--   Go to column [[video]](https://youtu.be/AWMaIaI8G2Y?t=18m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#goToColumn)
+-   Two new transforms:
+    -   Extract text before/after/between delimiters [[video]](https://youtu.be/CKISVNHcHVA?t=22m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#extractText)
+    -   Unpivot only selected columns [[video]](https://youtu.be/CKISVNHcHVA?t=24m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#unpivot)
 
 
 >NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CKISVNHcHVA" frameborder="0" allowfullscreen></iframe>
 
 >NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 

@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/03/2017"
+   ms.date="05/04/2017"
    ms.author="davidi"/>
 
 # Previous monthly updates to Power BI Desktop
@@ -27,6 +27,47 @@ This article describes previous updates to **Power BI Desktop**. For the most cu
 The following sections describe previous months' updates to **Power BI Desktop**.
 
 You can always [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
+
+## April 2017 Update (2.45.4704.442)
+
+The following updates were new to Power BI Desktop in April 2017:
+
+### Report View:
+
+-   Rename axis titles [[video]](https://youtu.be/AWMaIaI8G2Y?t=25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#renameAxisTitles)
+-   New matrix visual enhancements: column sorting, column resizing, and word wrap (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[article]](powerbi-desktop-matrix-visual.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
+
+### Analytics:
+
+-   Quick measures [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures) [[in-depth blog]](https://powerbi.microsoft.com/blog/quick-measures-preview/) [[article]](powerbi-desktop-quick-measures.md)
+-   Show value as [[video]](https://youtu.be/AWMaIaI8G2Y?t=3m43s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#quickMeasures)
+-   Q&A in Spanish (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=10m31s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#QandA)
+
+### Data Connectivity:
+
+-   Connect to datasets in the Power BI service (Preview) [[video]](https://youtu.be/AWMaIaI8G2Y?t=12m39s) [[article]](powerbi-desktop-report-lifecycle-datasets.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#powerBIservice)
+-   New or enhanced data connectors:
+    -  Redshift Connector: beta support, and Publish to Power BI service  [[video]](https://youtu.be/AWMaIaI8G2Y?t=14m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#redshift)
+    -   SAP HANA and BW: enhancements to parameter input experience [[video]](https://youtu.be/AWMaIaI8G2Y?t=15m17s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#SAP)
+
+### Query Editing:
+
+-   Add Column from Example [[video]](https://youtu.be/-ykbVW9wQfw) [[article]](powerbi-desktop-add-column-from-example.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#addColumnByExample) [[another blog]](https://powerbi.microsoft.com/blog/a-sneak-preview-of-the-new-add-column-from-examples-data-transformation/)
+-   Split column (by delimiter/number of characters) into rows [[video]](https://youtu.be/AWMaIaI8G2Y?t=16m39s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#splitColumnIntoRows)
+-   Group by: basic mode [[video]](https://youtu.be/AWMaIaI8G2Y?t=17m51s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#basicGroupBy)
+-   Go to column [[video]](https://youtu.be/AWMaIaI8G2Y?t=18m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#goToColumn)
+
+
+>NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" frameborder="0" allowfullscreen></iframe>
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## March 2017 Update (2.44.4675.422)
 

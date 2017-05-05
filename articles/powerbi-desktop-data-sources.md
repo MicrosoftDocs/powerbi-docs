@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/03/2017"
+   ms.date="05/03/2017"
    ms.author="davidi"/>
 
 
@@ -32,6 +32,8 @@ To connect to data, select **Get Data** from the **Home** ribbon. Selecting the 
 Selecting **More…** from the **Most Common** menu displays the **Get Data** window. You can also bring up the **Get Data** window (and bypass the **Most Common** menu) by selecting the **Get Data** **icon button** directly.
 
 ![](media/powerbi-desktop-data-sources/data-sources_2.png)
+
+> **Note:** The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
 
 ## Data Sources
 
@@ -81,7 +83,7 @@ The **Database** category provides the following data connections:
 -   Snowflake (Beta)
 
 
-> **Note:** Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings.
+> **Note:** Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
 
 The following image shows the **Get Data** window for **Database**.
 
@@ -142,8 +144,6 @@ The **Online Services** category provides the following data connections:
 -   tyGraph (Beta)
 -   Webtrends (Beta)
 -   Zendesk (Beta)
-
-
 -   PowerApps Common Data Service (Beta)
 -   Facebook
 

@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="Wz9f7VjXGdE"
+   featuredVideoId="B2vd4MQrz4M"
    featuredVideoThumb=""
    courseDuration="2m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="05/04/2017"
    ms.author="davidi"/>
 
 # Exploring Data
