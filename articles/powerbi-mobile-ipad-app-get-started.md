@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/04/2017"
    ms.author="maggies"/>
 
 # Get started with the iPad app (Power BI for iOS)  
 
 The iPad app for Microsoft Power BI for iOS is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards and reports easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
 
-![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-sample-dashboard.png)
+![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-dashboard-sales-and-marketing.png)
 
 You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
 
@@ -63,8 +63,6 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
 
 1.   Tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap the Settings icon ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ios-settings-gear.png).
-
-    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ios-settings-gear-menu.png)
   
 2.   Tap **Power BI samples**, then pick a role and explore the sample dashboard for that role.  
 
@@ -82,11 +80,9 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 
 ## Find your content in the Power BI mobile apps
 
-Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. This article explains what you'll find where. Plus you can always search for anything you have in the Power BI mobile apps. 
+Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
 ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-left-nav.png)
-
-Read more about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md).
 
 ## Search for a dashboard or report
 
@@ -120,19 +116,16 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 
 Read more about [configuring Power BI mobile apps with Microsoft Intune](powerbi-admin-mobile-intune.md). 
 
-## What next?
+## Next steps
 
-See what else you can do in the iPad app with dashboards in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
+Here are some other things you can do in the iPad app with dashboards in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
 ### Power BI dashboards and reports
 
--   View your [Power BI dashboards](powerbi-mobile-create-dashboard.md).
--   Interact with [tiles on your Power BI dashboards](powerbi-mobile-tiles-in-the-ipad-app.md).
--   Open [Power BI reports](powerbi-mobile-reports-on-the-ipad-app.md) from your dashboard.
--   [Share Power BI dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
--   [Annotate and share](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) a tile, report, or visualization.
--   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md)  to open a related dashboard tile or report.
 -   View [your apps](powerbi-service-what-are-apps.md).
+-   View your [Power BI dashboards](powerbi-mobile-create-dashboard.md).
+-   [Ask questions of your data](powerbi-mobile-ios-qna.md) in your own words with Q&A
+-   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md)  to open a related dashboard tile or report.
 -   [Set data alerts](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to get notifications when your data changes.
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
    
@@ -144,7 +137,7 @@ See what else you can do in the iPad app with dashboards in Power BI, and Report
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
-## See also  
+### See also  
 - [Get started with the iPhone app for Power BI](powerbi-mobile-ipad-app-get-started.md)  
 - [Get started with Power BI](powerbi-service-get-started.md)  
 - Questions? Try asking the [Power BI Community](http://community.powerbi.com/)
