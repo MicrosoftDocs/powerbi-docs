@@ -96,7 +96,7 @@ By default, the report server uses the virtual service account. If you try to cr
 
 To work around this, you can change the service account to either Network Service or a domain account. Changing the service account to Network Service will apply rights in the context of the machine account for the report server.
 
-![Configure report server service account](media/install-report-server/pbireportserver-configure-account.png)
+![Configure report server service account](media/reportserver-install-report-server/pbireportserver-configure-account.png)
 
 For more information, see [Configure the report server service sccount](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager).
 

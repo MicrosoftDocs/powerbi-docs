@@ -43,7 +43,7 @@ Read on for more about each.
 These sources will keep you up-to-date on new features in Power BI Report Server.
 
 * [What's New in Power BI Report Server](reportserver-whats-new.md)
-* [Microsoft Power BI Blog](https://powerbi.microsoft.com/en-us/blog/)
+* [Microsoft Power BI Blog](https://powerbi.microsoft.com/blog/)
 * [SQL Server Reporting Services Team Blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
 * The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
 
