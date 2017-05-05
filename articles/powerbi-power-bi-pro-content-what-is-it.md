@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="05/04/2017"
    ms.author="davidi"/>
 
 # Power BI Pro content - what is it?  
@@ -34,9 +34,9 @@ Power BI free and Pro licenses are different based on the kind of content users 
 
 -   Data (including reports, dashboards or tiles) from a dataset that uses [Row-level security (RLS)](powerbi-admin-rls.md).
 
--   A dashboard or report that's installed from an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md).
+-   A dashboard or report that's installed from [an app](powerbi-service-what-are-apps.md) or an [organizational content pack](powerbi-service-organizational-content-packs-introduction.md).
 
--   A dashboard, report, or dataset that's contained in a [group workspace](powerbi-service-create-a-group-in-power-bi.md).
+-   A dashboard, report, or dataset that's contained in an [app workspace](powerbi-service-create-apps.md).
 
 -   A dashboard that contains data streamed at a rate above 10k rows/hour.
 
