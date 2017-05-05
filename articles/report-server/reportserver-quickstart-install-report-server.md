@@ -29,28 +29,28 @@ This is a quick look at how to install a report server if you just want to get u
 
 Download the install files, for Power BI Report Server, locally. To download Power BI Report Server, go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=839351).
 
-![Download Power BI Report Server](media/quickstart-install-report-server/pbireportserver-install.png)
+![Download Power BI Report Server](media/reportserver-quickstart-install-report-server/pbireportserver-install.png)
 
 ## Step 2: Run installer
 
 Run the PowerBIReportServer.exe file that was download and step through the installation screens. You will have the opportunity to select the the installation path as well as select the edition you want to install. You can choose between an evaluation that expires within 180 days, a developer edition or the ability to provide a product key.
 
-![Install Power BI Report Server](media/quickstart-install-report-server/pbireportserver-install.png)
+![Install Power BI Report Server](media/reportserver-quickstart-install-report-server/pbireportserver-install.png)
 
 ## Step 3: Configure the server
 
 After you are done installing, you will run the configuration manager to finish setting up your server. You will need to create a ReportServer catalog database as well as confirm the web portal and web service URLs.
 
-![Configure Power BI Report Server](media/quickstart-install-report-server/pbireportserver-configure.png)
+![Configure Power BI Report Server](media/reportserver-quickstart-install-report-server/pbireportserver-configure.png)
 
 ## Step 4: Browse to web portal
 
 Now that you are configured, you should be able to browser to the web portal of your server. By default this will be `http://localhost/reports`. You will also be able to browse using the machine name, instead of using localhost, by default assuming you are not being blocked by any type of firewall.
 
-![Power BI Report Server web portal](media/quickstart-install-report-server/web-portal.png)
+![Power BI Report Server web portal](media/reportserver-quickstart-install-report-server/web-portal.png)
 
 ## Next steps
 
 [Administrator handbook]  
-[Installing a Power BI Report Server](install-report-server.md)  
+[Installing a Power BI Report Server](reportserver-install-report-server.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
