@@ -3,7 +3,7 @@
    description="Template Content Pack Testing"
    services="powerbi" 
    documentationCenter="" 
-   authors="joeshoukry" 
+   authors="guyinacube" 
    manager="erikre" 
    backup="asaxton"
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="05/08/2017"
-   ms.author="yshoukry"/>
+   ms.author="asaxton"/>
 
 # Template Content Pack Testing
 

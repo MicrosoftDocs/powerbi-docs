@@ -3,7 +3,7 @@
    description="Content Pack Certification Program"
    services="powerbi" 
    documentationCenter="" 
-   authors="joeshoukry" 
+   authors="guyinacube" 
    manager="erikre" 
    backup="asaxton"
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="05/08/2017"
-   ms.author="yshoukry"/>
+   ms.author="asaxton"/>
 
 # Service Content Packs Certification Program Overview
 
