@@ -5,7 +5,7 @@
    documentationCenter=""
    authors="guyinacube"
    manager="erikre"
-   backup="asaxton"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -42,7 +42,7 @@ To get started, you will need to connect to your API from Power BI Desktop to st
 
 You can use the Data Connectors that are available out of the box in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed. Please note that these connectors will work out of the box only if your API supports Basic Authentication.
 
-> [AZURE.NOTE] If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you will need to develop your own Data Connector to allow Power BI Desktop to successfully connects and authenticates to your API. For details on how to develop your own Data Connector for your Content Pack, check the [Data Connectors documentation](https://aka.ms/DataConnectors). 
+> [AZURE.NOTE] If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you will need to develop your own Data Connector to allow Power BI Desktop to successfully connects and authenticates to your API. For details on how to develop your own Data Connector for your Content Pack, check the Data Connectors documentation [here](https://aka.ms/DataConnectors). 
 
 ### Consider the source
 The queries define the data that will be included in the data model. Depending on the size of your system, these queries should also include filters to ensure your customers are dealing with a manageable size that fits your business scenario.
@@ -55,7 +55,7 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 ### Parameters
 [Parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
 
-> [AZURE.NOTE] template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md#templates) portion all values provided by the users will be literal.
+> [AZURE.NOTE] Template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md#templates) portion all values provided by the users will be literal.
 
 ### Additional query tips
 -	Ensure all columns are typed appropriately  
@@ -99,7 +99,7 @@ The dashboard is the main point of interaction with your content pack for your c
 
 To create a dashboard for your template content pack, simply upload your PBIX through Get Data > Files or publish directly from the Power BI Desktop.
 
-> [AZURE.NOTE] Template content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
+> [AZURE.NOTE] template content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
 
 ### Additional dashboard tips
 -	Maintain the same theme when pinning so that the tiles on your dashboard are consistent  
@@ -121,5 +121,5 @@ As listed in the above sections, currently the template content packs have a set
 |Parameters of type text | *Other parameter types (such as date) or "list allowed of values"*|
 |One dashboard, report and dataset | *Multiple dashboards, reports or datasets*|
 
-## Next steps
+## Next
 [Content Pack Testing and Submission](powerbi-developer-content-pack-testing.md)

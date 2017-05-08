@@ -5,7 +5,7 @@
    documentationCenter="" 
    authors="guyinacube" 
    manager="erikre" 
-   backup="asaxton"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -26,7 +26,7 @@ A content pack is a set of out-of-box content allowing users to immediately gain
 
 ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. 
 
-These ISV built template content packs can be submitted to the Power BI team to become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's an example of the [public content pack experience](powerbi-developer-content-pack-experience.md).
+These ISV built template content packs can be submitted to the Power BI team to become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). An example of the public content pack experience can be found [here](powerbi-developer-content-pack-experience.md).
 
 ## Overview
 The general process to develop and submit an template content pack involves multiple steps.
@@ -40,6 +40,7 @@ The general process to develop and submit an template content pack involves mult
 5.	[Submit](powerbi-developer-content-pack-testing.md#submission) the content to Power BI for publishing
 
 <a name="requirements"></a>
+
 ## Requirements
 To build and submit a content pack to be published in the PowerBI service and AppSource, you must meet the following requirements:
 
@@ -57,22 +58,22 @@ Content packs provide insights and metrics focused on a specific business scenar
 -	Identify your audience and the task they're trying to accomplish  
 -	Focus on a certain time period (last 90 days) or the last N results  
 -	Only import the tables/columns related to your scenario  
--	Consider offering more than one content pack for separate unique scenarios
+-	Consider offering more than one content pack for separate unique scenarios  
 
 ## Frequently Asked Questions
-### Can I build a Power BI Service content pack for a third-party SaaS application that I don’t own?
+**Can I build a Power BI Service content pack for a third-party SaaS application that I don’t own?**
 
 No, we currently require signing a partner agreement with the owner of the SaaS application prior to publishing the content pack in the service.
 
-### I don’t have a public developer API for my service. Can I still build a Power BI service content pack that pulls the data directly from the data storage?
+**I don’t have a public developer API for my service. Can I still build a Power BI service content pack that pulls the data directly from the data storage?**
 
 No, Power BI service content packs require a developer API that is accessible through public Internet.
 
-### What kind of APIs are supported by service content packs and what authentication types can they work with?
+**What kind of APIs are supported by service content packs and what authentication types can they work with?**
 
 Power BI service content packs support any REST API or OData feed. Power BI can work with multiple authentication types including Basic Authentication, OAuth2.0 and Web API Key. More details on the technical requirements in the [Authoring](powerbi-developer-content-pack-authoring.md#dashboard) article.
 
-### I have more questions about service Content Packs. How can I contact you?
+**I have more questions about service Content Packs. How can I contact you?**
 
 Feel free to email us your questions at pbiservicesapps@microsoft.com
 
@@ -80,5 +81,5 @@ Feel free to email us your questions at pbiservicesapps@microsoft.com
 ## Support
 For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.
 
-## Next steps
+## Next
 [Authoring](powerbi-developer-content-pack-authoring.md)

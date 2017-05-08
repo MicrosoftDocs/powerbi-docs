@@ -5,7 +5,7 @@
    documentationCenter="" 
    authors="guyinacube" 
    manager="erikre" 
-   backup="asaxton"
+   backup=""
    editor=""
    tags=""
    qualityFocus="no"
@@ -22,7 +22,7 @@
 
 # Template Content Pack Testing
 
-There are multiple ways to test your content pack before submitting it for publishing. 
+There are multiple ways to test your content pack before submitting it for publishing.  
 
 > [AZURE.NOTE] If your content pack uses a custom [Data Connector](https://aka.ms/DataConnectors) that you developed, you will not be able to test the data refresh or the template content pack as described below. If that is the case, please proceed to [submit](#submission) your content pack and the Power BI team will work with you on testing your content pack.
 
