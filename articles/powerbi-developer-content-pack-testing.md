@@ -3,9 +3,9 @@
    description="Template Content Pack Testing"
    services="powerbi" 
    documentationCenter="" 
-   authors="guyinacube" 
+   authors="joeshoukry" 
    manager="erikre" 
-   backup=""
+   backup="asaxton"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
-   ms.author="asaxton"/>
+   ms.date="05/08/2017"
+   ms.author="yshoukry"/>
 
 # Template Content Pack Testing
 
->**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
+There are multiple ways to test your content pack before submitting it for publishing. 
 
-There are multiple ways to test your content pack before submitting it for publishing.  
+> [AZURE.NOTE] If your content pack uses a custom [Data Connector](https://aka.ms/DataConnectors) that you developed, you will not be able to test the data refresh or the template content pack as described below. If that is the case, please proceed to [submit](#submission) your content pack and the Power BI team will work with you on testing your content pack.
 
 ## Testing Scheduled Data Refresh
 Template content packs leverage Refresh in PowerBI.com to instantiate a content pack with the customer's data when they connect. Prior to the content pack being publicly available, you can test this flow with the Desktop file you've created.
@@ -41,13 +41,11 @@ After uploading the file, select the "…" next to the dataset and select Schedu
 <a name="templates"></a>
 ## Testing Templates
 
->**Note:** Developing template content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
-
 A template content pack is similar to existing solutions except that it does not include the actual data in the dataset. Instead, when a user consumes or instantiates a template, they are prompted for parameters and credentials in order to connect. Once connected, they'll see their own data in the dashboard, report and datasets. 
 
 After a user instantiates the content pack they have access to the dataset settings including scheduled refresh, any RLS settings on the dataset are **not** published with the content pack.  
 
-**Note:** Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](powerbi-developer-content-pack-authoring.md#restrictions)  page. 
+> [AZURE.NOTE] Template content packs can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](powerbi-developer-content-pack-authoring.md#restrictions)  page. 
 
 To enable template creation for your tenant, please work with your Power BI admin to enable the feature switch below. 
 
@@ -68,22 +66,21 @@ We suggest naming your dashboard, report and dataset consistently across your co
 
 <a name="submission"></a>
 ## Submission
-**Note:** Developing ISV content packs is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
-The submission process through [Azure Publishing Portal](https://publish.windowsazure.com/workspace/power-bi-content-pack) will provide Power BI with access to the template you've created as well as the original PBIX file.
+The submission process through [Microsoft AppSource](https://appsource.microsoft.com/en-us/partners/list-an-app) will allow you to publish your template content pack in the service content packs gallery in PowerBI.com as well as list your content pack in [Microsoft AppSource](http://appsource.microsoft.com).
 
 ### Before submission
 -	Review the authoring tips for each of the artifacts within the content pack
--	Test and connect with various accounts and data conditions
+-	Test and connect with various accounts and data conditions. (Skip this step if you developed your own custom [Data Connector](https://aka.ms/DataConnectors))
 -	Review all visuals, look carefully for misspelled items
--	Ensure the content pack responds well to Q&A, we suggest testing at least 30 varied questions across the data model
+-	Ensure the content pack responds well to Q&A, we suggest testing at least 30 varied questions across the data model. (Skip this step if you developed your own custom [Data Connector](https://aka.ms/DataConnectors))
 
 ### Submission
-Provide all the artifacts required in the publishing portal. Review your Azure Certified nomination for more details. 
+Once ready to submit, visit the [Apps submission page](https://appsource.microsoft.com/en-us/partners/list-an-app) on AppSource and submit your information. Please make sure to select Power BI from the available list of products
 
-The Power BI team will review your submission and ensure all the artifacts meets the submission requirements. In addition to being complete, we'll also validate the quality of the dashboard and reports provided ensuring they meet the business scenario described in the application.
+The Power BI team will review your submission and will reach out to you to ensure all the artifacts meets the submission requirements. In addition to being complete, we'll also validate the quality of the dashboard and reports provided ensuring they meet the business scenario described in the application.
 
 ### Updates
-Updating your content pack follows a similar flow to the original submission. Return to your offer in the Publishing Portal, provide the new artifacts and submit for staging.
+Updating your content pack follows a similar flow to the original submission. 
 
 

@@ -3,9 +3,9 @@
    description="Content Pack Certification Program"
    services="powerbi" 
    documentationCenter="" 
-   authors="guyinacube" 
+   authors="joeshoukry" 
    manager="erikre" 
-   backup=""
+   backup="asaxton"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,64 +17,68 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
-   ms.author="asaxton"/>
+   ms.date="05/08/2017"
+   ms.author="yshoukry"/>
 
-# Content Pack Certification Program Overview
+# Service Content Packs Certification Program Overview
 
-A content pack is a set of out-of-box content allowing users to immediately gain insights from a source.  A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow. 
+A content pack is a set of out-of-box content allowing users to immediately gain insights from a source. A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow.
 
-ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. These template content packs are intended to eventually become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services). An example of the public content pack experience can be found [here](powerbi-developer-content-pack-experience.md).
+ISVs can build template content packs that allow customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that is easily consumable by a business users. The content packs offer adhoc monitoring and analysis to your customers without investing heavily in reporting infrastructure. 
 
->**Note:** The Content Pack Certification Program requires access to the preview features and therefore initial approval through the [Microsoft Azure Certified](#Nomination) program to access. If you're interested, please submit a nomination.
+These ISV built template content packs can be submitted to the Power BI team to become publicly available in the Power BI content pack gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's an example of the [public content pack experience](powerbi-developer-content-pack-experience.md).
 
 ## Overview
 The general process to develop and submit an template content pack involves multiple steps.
 
- ![Process](media/powerbi-developer-content-pack/overview.png)
+ ![Process](media/powerbi-developer-content-pack/developer-content-pack-overview.png)
 
-1.	[Complete a nomination](#Nomination) through Azure Certified
+1.	[Review the requirements](#requirements) and make sure you meet them
 2.	[Build content](powerbi-developer-content-pack-authoring.md#queries) in the Power BI Desktop
 3.	[Create a dashboard](powerbi-developer-content-pack-authoring.md#dashboard) in PowerBI.com
 4.	[Test the content pack](powerbi-developer-content-pack-testing.md) yourself within your organization
 5.	[Submit](powerbi-developer-content-pack-testing.md#submission) the content to Power BI for publishing
 
+<a name="requirements"></a>
 ## Requirements
-To build and submit a content pack, you must meet the following requirements:  
--	Business user scenarios that fit well with Power BI  
--	Stable services with an API accessible through public internet  
--	Signed partner agreement for content pack development  
+To build and submit a content pack to be published in the PowerBI service and AppSource, you must meet the following requirements:
 
-Please review the [authoring](powerbi-developer-content-pack-authoring.md) section for more details on the technical requirements. 
+- You have a SaaS application used by business users.
+- Your SaaS application has user data that can be visualized in Power BI.
+- Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
+- Signed partner agreement. You will do that in the [submission step](powerbi-developer-content-pack-testing.md#submission).
 
-**Note:** If connectivity is not possible to your service through the Power BI Desktop today, please respond to your Azure Certified nomination.
+Please review the [authoring](powerbi-developer-content-pack-authoring.md) section for more details on the technical requirements.
 
 ## Business Scenario
 Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they'll receive from the content pack will help ensure your users are successfully with the content you provide.
 
-### Tips:  
+### Tips  
 -	Identify your audience and the task they're trying to accomplish  
 -	Focus on a certain time period (last 90 days) or the last N results  
 -	Only import the tables/columns related to your scenario  
--	Consider offering more than one content pack for separate unique scenarios  
+-	Consider offering more than one content pack for separate unique scenarios
 
-<a name="Nomination"></a>
-## Nomination
-Nominations to build a public content pack are collected through the Microsoft Azure Certified program. We currently require an individual submission for each artifact you want to build.
+## Frequently Asked Questions
+### Can I build a Power BI Service content pack for a third-party SaaS application that I don’t own?
 
-[https://azure.microsoft.com/marketplace/programs/certified/apply/](https://azure.microsoft.com/marketplace/programs/certified/apply/)
+No, we currently require signing a partner agreement with the owner of the SaaS application prior to publishing the content pack in the service.
 
-There are multiple steps to complete the nomination:  
--	Submit nomination  
--	Complete secondary form  
--	Returned a signed agreement  
--	Receive approval from Power BI team along with instructions for development  
--   Complete pre-requirements in order to publish the content pack (see [submission](powerbi-developer-content-pack-testing.md#submission))  
+### I don’t have a public developer API for my service. Can I still build a Power BI service content pack that pulls the data directly from the data storage?
 
- ![Azure Certification](media/powerbi-developer-content-pack/nomination.png)
+No, Power BI service content packs require a developer API that is accessible through public Internet.
 
-### Support
+### What kind of APIs are supported by service content packs and what authentication types can they work with?
+
+Power BI service content packs support any REST API or OData feed. Power BI can work with multiple authentication types including Basic Authentication, OAuth2.0 and Web API Key. More details on the technical requirements in the [Authoring](powerbi-developer-content-pack-authoring.md#dashboard) article.
+
+### I have more questions about service Content Packs. How can I contact you?
+
+Feel free to email us your questions at pbiservicesapps@microsoft.com
+
+
+## Support
 For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.
 
-## Next
+## Next steps
 [Authoring](powerbi-developer-content-pack-authoring.md)
