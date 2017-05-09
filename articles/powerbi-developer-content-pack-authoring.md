@@ -17,10 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/08/2017"
+   ms.date="04/12/2017"
    ms.author="asaxton"/>
 
 # Template Content Pack Authoring
+
+>**Note:** The Content Pack Certification Program is currently in preview and requires initial approval through the [Microsoft Azure Certified](powerbi-developer-content-pack-overview.md#Nomination) program to access. If you're interested, please submit a nomination.
 
 Authoring a template content pack uses the Power BI Desktop and PowerBI.com. There are four components to your content pack:
 
@@ -33,16 +35,9 @@ You may be familiar with each piece as existing Power BI features. When building
 
 <a name="queries"></a>
 ## Queries
-For template content packs, queries developed in the Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (direct query is not supported).
+For template content packs, queries developed in the Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (direct query is not supported). Template content packs only support one data source per content pack content pack so define your queries carefully. If your scenario requires more than one data source, please contact the Power BI team through your Azure Certified nomination.
 
-Template content packs only support one data source per content pack so define your queries carefully. A single data source is defined as a source that requires the same authentication. You can make multiple API calls in different queries if all the calls are to the same API endpoint and use the same authentication. Power BI content packs do not support multiple sources that require different authentications.
-
-### Connect to your API
-To get started, you will need to connect to your API from Power BI Desktop to start building your queries.
-
-You can use the Data Connectors that are available out of the box in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed. Please note that these connectors will work out of the box only if your API supports Basic Authentication.
-
-> [AZURE.NOTE] If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you will need to develop your own Data Connector to allow Power BI Desktop to successfully connects and authenticates to your API. For details on how to develop your own Data Connector for your Content Pack, check the Data Connectors documentation [here](https://aka.ms/DataConnectors). 
+**Note:** If your data source is not currently supported by the Power BI Desktop, please respond to your Azure Certified nomination.
 
 ### Consider the source
 The queries define the data that will be included in the data model. Depending on the size of your system, these queries should also include filters to ensure your customers are dealing with a manageable size that fits your business scenario.
@@ -55,7 +50,7 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 ### Parameters
 [Parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters upfront to avoid rework after investing time to build detailed queries or reports.
 
-> [AZURE.NOTE] Template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md#templates) portion all values provided by the users will be literal.
+**Note:** template content packs only support text parameters currently. Other parameter types can be used during development but during the [testing](powerbi-developer-content-pack-testing.md#templates) portion all values provided by the users will be literal.
 
 ### Additional query tips
 -	Ensure all columns are typed appropriately  
@@ -66,13 +61,13 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 ## Data Model
 A well-defined data model will ensure your customers can easily and intuitively interact with the content pack. Create the data model in the Power BI Desktop.
 
-> [AZURE.NOTE] Much of the basic modelling (typing, column names) should be done in the [queries](#queries).
+**Note**: Much of the basic modelling (typing, column names) should be done in the [queries](#queries).
 
 ### Q&A
 The modelling will also affect how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and that your columns are properly named in the [queries](#queries).
 
 ### Additional data model tips
--	All value columns have formatting applied (Note: types should be applied in the Query)  
+-	All value columns have formatting applied (note: types should be applied in the Query)  
 -	All measures have formatting applied  
 -	Default Summarization is set. Especially "Do Not Summarize", when applicable (for unique values for example)  
 -	Data Category has been set, when applicable  
@@ -82,7 +77,7 @@ The modelling will also affect how well Q&A can provide results for your custome
 ## Reports
 The report pages offer additional insight into the data included in your content pack. Use the pages of the reports to answer the key business questions your content pack is trying to address. Create the report using the Power BI Desktop.
 
-> [AZURE.NOTE] Only one report may be included in a content pack, take advantage of the different pages to call out particular sections of your scenario.
+**Note:** Only one report may be included in a content pack, take advantage of the different pages to call out particular sections of your scenario.
 
 ### Additional report tips
 -	Use more than one visual per page for cross-filtering  
@@ -99,7 +94,7 @@ The dashboard is the main point of interaction with your content pack for your c
 
 To create a dashboard for your template content pack, simply upload your PBIX through Get Data > Files or publish directly from the Power BI Desktop.
 
-> [AZURE.NOTE] template content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
+**Note:** template content packs currently require a single report and dataset per content pack. Do not pin content from multiple reports/datasets onto the dashboard used in the content pack.
 
 ### Additional dashboard tips
 -	Maintain the same theme when pinning so that the tiles on your dashboard are consistent  
@@ -122,4 +117,4 @@ As listed in the above sections, currently the template content packs have a set
 |One dashboard, report and dataset | *Multiple dashboards, reports or datasets*|
 
 ## Next
-[Content Pack Testing and Submission](powerbi-developer-content-pack-testing.md)
+[Content Pack Testing](powerbi-developer-content-pack-testing.md)
