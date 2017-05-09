@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2017"
+   ms.date="05/05/2017"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
@@ -56,11 +56,12 @@ After you [create a report in Power BI Desktop](powerbi-desktop-report-view.md),
 
 ## Notes about creating phone report layouts
 - For reports with multiple pages, you can optimize all the pages or only a few. 
+- If you've defined a background color for a report page, the phone report will have the same background color.
 - On a phone, you move between pages by swiping from the side or tapping the page menu.
 - You can’t modify formatting settings for just the phone. Formatting is consistent between master and mobile layouts. For example, font sizes will be the same.
 - To change a visual, such as changing its formatting, dataset, filters, or any other attribute, return to the regular report authoring mode.
 
-    > **Tip**: By default, Power BI provides titles and page names for phone reports in the mobile app. If you’ve created text visuals for titles and page names in your report, consider not adding them to your phone reports.     
+    > [AZURE.TIP] By default, Power BI provides titles and page names for phone reports in the mobile app. If you’ve created text visuals for titles and page names in your report, consider not adding them to your phone reports.     
 
 ## Remove a visual from the phone layout
 
