@@ -1,6 +1,6 @@
 <properties
    pageTitle="Support timeline for Power BI Report Server"
-   description="Power BI Report Server will be released a few times per year. Security and critical updates will available until the next release becomes generally available (GA)."
+   description="A list of the versions and availability of Power BI Report Server."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -25,7 +25,14 @@ Power BI Report Server will be released a few times per year. Security and criti
 
 This support policy allows us to deliver innovation to customers at a rapid rate while providing flexibility for customers to adopt the innovation at their pace.
 
-![](media/reportserver-support-timeline/reportserver-support-example.png "Power BI Report Server example supported lifecycle")
+* Security and Critical Updates servicing phase - When running the latest current version of Power BI Report Server, you will receive both Security and Critical updates.
+* Security Updates (Only) servicing phase - After a new version is released, support for older versions will reduce to Security updates only for the remainder of the twelve (12) month support lifecycle (shown in figure 1).
+
+    ![](media/reportserver-support-timeline/reportserver-support-example.png "Power BI Report Server example supported lifecycle")
+
+    *Figure 1. Example of current servicing support.*
+
+> [AZURE.NOTE] The above information refers to actual updates and fixes. You can still engage with support for assistance using the appropriate support channels. For more information, see [Power BI Support](https://support.powerbi.com).
 
 ## Version history
 
