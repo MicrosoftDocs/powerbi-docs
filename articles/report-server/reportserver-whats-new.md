@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/08/2017"
+   ms.date="05/09/2017"
    ms.author="asaxton"/>
 # What's new in Power BI Report Server
 
@@ -38,6 +38,9 @@ To download Power BI Report Server, go to the [Microsoft download center](https:
 
 ## May 2017
 
+* Power BI Report Server Preview made available
+* Added support for custom visuals
+* Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

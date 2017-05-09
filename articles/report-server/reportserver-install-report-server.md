@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/05/2017"
+   ms.date="05/09/2017"
    ms.author="asaxton"/>
 # Install Power BI Report Server
 
