@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2017"
+   ms.date="05/05/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -28,6 +28,35 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 * [What's new in the Power BI service](powerbi-service-whats-new.md)  
 * [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/)
+
+## May 2017
+
+### All devices
+
+**New menu: Shared with me**
+Go to Shared with me in the mobile app menu to see all the content that's been shared with you.
+
+**New menu: Apps**
+An app is a collection of dashboards and reports built by your organization to deliver key metrics for faster and easier data-driven decisions.
+
+Read more about the [new way your Power BI content is organized](powerbi-mobile-find-content-mobile-devices.md).
+
+## April 2017
+
+Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-april-2017/)
+
+### All devices
+
+**Background color for phone reports**
+When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](powerbi-desktop-create-phone-report.md).
+
+**Develop mobile-friendly custom visuals**
+Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating custom visuals that look good and work well on mobile devices.
+
+### iOS devices
+
+**Talk to your data: ask questions by speaking**
+Now you can [ask questions of your data with Q&A](powerbi-mobile-ios-qna.md) by talking rather than typing. 
 
 ## March 2017
 
@@ -42,16 +71,13 @@ We've improved touch interaction for time slicers.
 ### iOS devices
 
 **Ask questions of your data with Q&A - and give us feedback** 
-
 Try asking questions of your data with Q&A, and then give us a smiley or frowny face to let us know how we did.
 
 **Use 3D touch for common actions** 
-
 Deep-press the Power BI app icon on the home screen of your iPhone 6s or later to access notifications, search, and recently used dashboards.
 
 **Support for right-to-left languages**
-
-If you have a device configured to Hebrew or Arabic, you'll see the Power BI app in the right direction. See the list of [Supported languages in the Power BI mobile apps](powerbi-mobile-supported-languages.md).
+Power BI mobile apps now support right-to-left languages. In this context, "right-to-left languages" refers to Hebrew and Arabic writing systems, which are written from right to left and require contextual shaping. See the list of [Supported languages in the Power BI mobile apps](powerbi-mobile-supported-languages.md).
 
 ### Android devices
 

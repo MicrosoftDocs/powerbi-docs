@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/08/2017"
+   ms.date="05/05/2017"
    ms.author="maggies"/>
 
 # View SSRS mobile reports and KPIs in the iOS mobile apps
@@ -33,7 +33,7 @@ The Power BI mobile app for iPad and iPhone offers live, touch-enabled mobile ac
 
 Then in the Power BI mobile app for iOS, connect to up to five SSRS report servers to view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
->**Note**: Your iPhone needs to be at least an iPhone 5. Both iPhones and iPads need to be running at least iOS 9.0.
+> [AZURE.NOTE] Your iPhone needs to be at least an iPhone 5. Both iPhones and iPads need to be running at least iOS 9.0.
 
 ## Explore samples without an SSRS server
 
@@ -53,9 +53,7 @@ Even if you don't have access to a Reporting Services web portal, you can still 
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-connect-ssrs-server.png)
 
-2.  If you've already signed in to the Power BI app, tap the global navigation button ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png), then tap the **Settings** icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ios-settings-icon.png).
-
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ios-settings.png)
+2.  If you've already signed in to the Power BI app, tap the global navigation button ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png), then tap the gear icon ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ios-settings-icon.png) in the upper-right.
 
     Tap **Connect to server**.
 
@@ -69,13 +67,13 @@ Even if you don't have access to a Reporting Services web portal, you can still 
      OR
      `https://<servername>/reports`
      
-     >**Note**: Include **http** or **https** in front of the connection string.
+     > [AZURE.NOTE] Include **http** or **https** in front of the connection string.
 
 5.    (Optional) Under **Advanced options**, you can give the server a name, if you'd like.
 
 5.  Now you see the server in the left navigation bar--in this example, called "work server."
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-ssrs-server.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ios-ssrs-left-nav.png)
 
 >**Tip**: Tap the global navigation button ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
 
@@ -97,7 +95,7 @@ You can mark KPIs and mobile reports as favorites on your Reporting Services web
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ios-favorites.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-favorites-nav.png)
    
     Your favorites from the web portal are all on this page.
 

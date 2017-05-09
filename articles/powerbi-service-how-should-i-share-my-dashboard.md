@@ -3,9 +3,9 @@
    description="In Power BI you can collaborate on and share dashboards, reports, and tiles in several different ways. Each has its advantages."
    services="powerbi"
    documentationCenter=""
-   authors="ajayan"
+   authors="maggiesMSFT"
    manager="erikre"
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="monitoring"
@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
-   ms.author="ajayan"/>
+   ms.date="05/05/2017"
+   ms.author="maggies"/>
 
 # How should I collaborate on & share dashboards and reports?  
 
-You create dashboards and reports yourself. Sometimes you want to collaborate on them with your colleagues, and then you want others to have access to them, too. What's the best way to distribute them?
+You create dashboards and reports, and sometimes you collaborate on them with your colleagues. Then you want others to have access to them, too. What's the best way to distribute them?
 
 In this article, we'll talk about options for collaborating and sharing in Power BI: 
 
@@ -30,19 +30,19 @@ In this article, we'll talk about options for collaborating and sharing in Power
 - Bundling the finished dashboards and reports into *apps*, and distributing them to a larger group or your whole organization.
 - Sharing dashboards from the service or the Power BI mobile apps.
 - Publishing to the web, where anyone can interact with them. 
-- printing. 
+- Printing. 
+
+This article compares these and other activities.
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-home-blog.png)
 
 *Apps in the Power BI service*
 
-This article compares these and other activities.
-
 > [AZURE.NOTE] In most cases, the people you collaborate and share with need [Power BI free or Pro](https://powerbi.microsoft.com/) licenses before they can see your dashboards and reports. Read more about [Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/).
 
-## Collaborate with colleagues to create an app, with dashboards and reports
+## Collaborate with colleagues to create an app with dashboards and reports
 
-Say you and your teammates want to cdistribute your Power BI insights to your organization. The best way to do that is to create an *app*. An app is a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device.
+Say you and your teammates want to distribute your Power BI insights to your organization. The best way to do that is to create an *app*. An app is a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device.
 
 To create an app, you need a *app workspace*, with your teammates as members. Think of the app workspace as a staging area where you and they can collaborate on your Power BI dashboards and reports. All of you can create reports in Power BI Desktop and publish those reports to the app workspace. 
 
@@ -50,18 +50,18 @@ To create an app, you need a *app workspace*, with your teammates as members. Th
 
 **If you just want to share a finished dashboard with colleagues, don't add those colleagues to the app workspace.** Instead, [create the app in an app workspace, and distribute it](powerbi-service-create-apps.md) to them. 
 
-### Distribute your app
+## Distribute your app to a broad audience
 
-You and your colleagues have created an *app workspace*, then created and refined a dashboard with its reports and datasets in the app workspace. Now you bundle them together as an app and distribute them &#151; either to members of a security group or distribution list, or to your whole organization. 
+Say you want to distribute your dashboard to a broad audience. You and your colleagues have created an *app workspace*, then created and refined a dashboard with its reports and datasets in the app workspace. Now you bundle them together as an app and distribute them &#151; either to members of a security group or distribution list, or to your whole organization. 
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-app-publish-600.png)
 
 You can send your business users a direct link to the app, or they can search for it in AppSource. Read more about [distributing your apps](powerbi-service-what-are-apps.md#distribute-an-app).  
 
-## Share a dashboard with others 
+## Share a dashboard
 Let's say you've finalized a dashboard in your own My Workspace or in an app workspace and you want others have access to it. One way to get it to them is to *share* it. 
 
-![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-service-share.png)
+![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-share-in-situ.png)
 
 When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports unless row-level security (RLS) is applied to the underlying dataset. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. 
 
