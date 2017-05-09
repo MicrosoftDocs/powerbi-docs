@@ -21,19 +21,19 @@
    ms.author="asaxton"/>
 # Quickstart: Install Power BI Report Server
 
-Installing Power BI Reports Server itself is very quick. From downloading, to installing and configuring, you should be up and running within a few minutes.
+Installing Power BI Report Server itself is very quick. From downloading, to installing and configuring, you should be up and running within a few minutes.
 
 This is a quick look at how to install a report server if you just want to get up and running with a new server. For more detail information on installing a report server, see [Installing a Power BI Report Server](install-report-server.md).
 
 ## Step 1: Download
 
-Download the install files, for Power BI Report Server, locally. To download Power BI Report Server, go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=839351).
+Download the installation files, for Power BI Report Server, locally. To download Power BI Report Server, go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=839351).
 
 ![Download Power BI Report Server](media/reportserver-quickstart-install-report-server/download-pbireportserver.png)
 
 ## Step 2: Run installer
 
-Run the PowerBIReportServer.exe file that was download and step through the installation screens. You will have the opportunity to select the the installation path as well as select the edition you want to install. You can choose between an evaluation that expires within 180 days, a developer edition or the ability to provide a product key.
+Run the PowerBIReportServer.exe file that you downloaded and step through the installation screens. You will have the opportunity to select the the installation path as well as select the edition you want to install. You can choose between an evaluation that expires within 180 days, a developer edition or to provide a product key.
 
 ![Install Power BI Report Server](media/reportserver-quickstart-install-report-server/pbireportserver-install.png)
 
@@ -45,7 +45,7 @@ After you are done installing, you will run the configuration manager to finish 
 
 ## Step 4: Browse to web portal
 
-Now that you are configured, you should be able to browser to the web portal of your server. By default this will be `http://localhost/reports`. You will also be able to browse using the machine name, instead of using localhost, by default assuming you are not being blocked by any type of firewall.
+Now that you are configured, you should be able to open a browser to the web portal of your server. By default, this will be `http://localhost/reports`. You will also be able to browse using the machine name instead of using localhost by default, assuming you are not being blocked by any type of firewall.
 
 ![Power BI Report Server web portal](media/reportserver-quickstart-install-report-server/web-portal.png)
 
