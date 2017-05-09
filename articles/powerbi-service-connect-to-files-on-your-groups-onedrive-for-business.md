@@ -3,9 +3,9 @@
    description="Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on the OneDrive for your Power BI app workspace."
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="maggiesMSFT" 
    manager="erikre" 
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
-   ms.author="ajayan"/>
+   ms.date="05/08/2017"
+   ms.author="maggies"/>
 
 # Connect to files stored in the OneDrive for your app workspace
 
@@ -28,23 +28,21 @@ Now that you've [created an app workspace in Power BI](powerbi-service-create-ap
 
 Adding files to your app workspace is a two-step process: 
 
-1. First you upload files to the OneDrive for Business for your app workspace.
+1. First you [upload files to the OneDrive for Business](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md#1-upload-files-to-the-onedrive-for-business-for-your-app-workspace) for your app workspace.
 
-2. Then you connect to those files from Power BI.
+2. Then you [connect to those files from Power BI](powerbi-service-connect-to-files-on-your-groups-onedrive-for-business.md#2-import-excel-files-as-datasets-or-as-excel-online-workbooks).
 
 > [AZURE.NOTE]  App workspaces are only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
 ## 1 Upload files to the OneDrive for Business for your app workspace
 
-1.  In Power BI, switch to the app workspace, so the workspace name is in the top-left corner. 
+1.  In the Power BI service, select the arrow next to Workspaces > select the ellipsis (**…**) next to your workspace name. 
 
-    ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GrpWkspaceAdmin.png)
+    ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/power-bi-app-ellipsis.png)
 
-2.  Select the ellipsis (**…**) next to the app workspace name \> **Files** to open the OneDrive for Business for your app workspace on Office 365.
+2.  Select **Files** to open the OneDrive for Business for your app workspace on Office 365.
 
-    ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GrpWkspaceFiles.png)
-
-    > [AZURE.NOTE] If you don't see **Files** on the app workspace menu, select **Members** to open the OneDrive for Business for your app workspace. There, select **Files**. Office 365 sets up a OneDrive storage location for your group workspace files. This process may take some time. 
+    > [AZURE.NOTE] If you don't see **Files** on the app workspace menu, select **Members** to open the OneDrive for Business for your app workspace. There, select **Files**. Office 365 sets up a OneDrive storage location for your app's group workspace files. This process may take some time. 
 
 3.  Here, you can upload your files to the OneDrive for Business for your app workspace. Select **Upload**, and navigate to your files.
 
@@ -65,7 +63,7 @@ Now that your files are in the OneDrive for Business for your app workspace, you
 
 2.  Select **Get Data** at the bottom of the left navigation pane. 
 
-    ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_GetData.png)
+    ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/power-bi-app-get-data-button.png)
 
 
 3.  In the **Files** box, select **Get**.
@@ -84,11 +82,13 @@ Now that your files are in the OneDrive for Business for your app workspace, you
 
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_ImportExcelDataOrWholeCrop.png)
 
-8. After you import or connect, these new items are marked with a yellow asterisk.  
+8. If you select **Import**, then the workbook appears on the **Datasets** tab. 
 
-    Excel files have an Excel icon and are under **Reports**.
+    ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/power-bi-app-excel-file-import.png)
 
-    ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/pbi_excel_file.png)
+    If you select **Connect**, then the workbook is on the **Workbooks** tab.
+
+    ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
 ## Next steps
 - [Create apps and app workspaces in Power BI](powerbi-service-create-apps.md)

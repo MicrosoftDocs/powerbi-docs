@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/04/2017"
+   ms.date="05/08/2017"
    ms.author="maggies"/>
 
 # Share dashboards and reports with colleagues and others
@@ -63,7 +63,9 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 4.  Select **Share.**
 
-	Power BI sends an email invitation with a link to the shared dashboard. Clicking the link adds the dashboard to your colleague's Power BI service. They see this icon ![](media/powerbi-service-share-unshare-dashboard/PBI_SharedWithYouIcon.png) next to the shared dashboard, indicating the dashboard is shared with them.
+	Power BI sends an email invitation with a link to the shared dashboard. Clicking the link adds the dashboard to your colleague's Power BI service. They go to the Shared with me list page to see all the dashboards shared with them. They can select your name to see the ones you've shared. 
+
+    ![](media/powerbi-service-share-unshare-dashboard/power-bi-shared-with-me-list-page.png)
 
     If they haven't yet signed up for Power BI, they'll need to create an account after they click the link.
 
@@ -97,7 +99,7 @@ Here are some things to keep in mind about sharing dashboards:
 
 -   Colleagues who have the same email domain as you, and colleagues whose domain is different but registered within the tenant, can reshare the dashboard. For example, say the domains contoso.com and contoso2.com are registered in the tenant. If your email address is konrads@contoso.com, then both ravali@contoso.com and gustav@contoso2.com can reshare.
 
-    **Tip:** If your colleagues already have access to a specific dashboard, you can send a direct link to that dashboard just by copying the URL when you're on the dashboard. For example:   
+    > [AZURE.TIP] If your colleagues already have access to a specific dashboard, you can send a direct link to that dashboard just by copying the URL when you're on the dashboard. For example:   
 
     https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
 
