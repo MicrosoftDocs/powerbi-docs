@@ -84,7 +84,7 @@ More [Report Server developer documentation](https://docs.microsoft.com/sql/repo
 ## Next steps
 
 [User handbook](reportserver-user-handbook-overview.md)  
-[Administrator handbook]  
+[Administrator handbook](reportserver-admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 [Install Power BI Desktop]  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

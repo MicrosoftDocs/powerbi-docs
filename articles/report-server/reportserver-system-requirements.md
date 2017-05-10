@@ -19,7 +19,7 @@
    ms.workload="powerbi"
    ms.date="05/10/2017"
    ms.author="asaxton"/>
-# Hardware and Software Requirements for installing Power BI Report Server
+# Hardware and software requirements for installing Power BI Report Server
 
 Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.
 
@@ -55,7 +55,7 @@ Power BI Report Server will install default values to configure the core setting
 ## Next steps
 
 [User handbook](reportserver-user-handbook-overview.md)  
-[Administrator handbook]  
+[Administrator handbook](reportserver-admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 [Install Power BI Desktop]  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

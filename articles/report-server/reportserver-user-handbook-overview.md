@@ -21,7 +21,7 @@
 
 # User handbook overview, Power BI Report Server
 
-Welcome to the user handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports. 
+Welcome to the user handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
 
 ![](media/reportserver-get-started/web-portal.png)
 
@@ -42,7 +42,7 @@ The front door of Power BI Report Server is a modern web portal you can view in 
 
 The web portal may feature your organization's custom branding and display KPIs right in the web portal. KPIs can surface key business metrics at a glance in the browser, so you don't have to open a report.
 
-The content on the web portal is organized into folders, and within each folder, it's organized by type: Power BI reports, mobile reports, paginated reports and KPIs, plus Excel workbooks. You can tag your favorite reports and KPIs. They're all collected in the Favorites folder so you can find them fast.
+The content on the web portal is organized into folders, and within each folder, it's organized by type: Power BI reports, mobile reports, paginated reports, and KPIs, plus Excel workbooks. You can tag your favorite reports and KPIs. They're all collected in the Favorites folder so you can find them fast.
 
 ## Power BI reports
 
@@ -52,8 +52,9 @@ A Power BI report is a multi-perspective view into a dataset, with visualization
 
 Reports are based on a single dataset. The visualizations in a report each represent a nugget of information. And the visualizations aren't static: Like a dashboard but more so, a report is interactive and customizable, and the visualizations update as the underlying data changes.
 
--  If you're a report creator you can add and remove data, add or rearrange visualizations, or change visualization types. 
--  If you're a report viewer, you can sort and apply filters and slicers as you dig into the data to discover insights and look for answers. 
+- If you're a report creator you can add and remove data, add or rearrange visualizations, or change visualization types.
+
+- If you're a report viewer, you can sort and apply filters and slicers as you dig into the data to discover insights and look for answers.
 
 You create Power BI reports with a special edition of Power BI Desktop. [Download Power BI Desktop].
 

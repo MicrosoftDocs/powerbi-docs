@@ -48,7 +48,7 @@ To download Power BI Report Server, and Power BI Desktop (Report Server), go to 
 [What's new in Power BI Report Server](reportserver-whats-new.md)  
 [Power BI Report Server release notes](reportserver-release-notes.md)  
 [User handbook](reportserver-user-handbook-overview.md)  
-[Administrator handbook]  
+[Administrator handbook](reportserver-admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
