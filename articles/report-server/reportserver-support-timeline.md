@@ -28,6 +28,7 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 * Security and Critical Updates servicing phase - When running the latest current version of Power BI Report Server, you will receive both Security and Critical updates.
 * Security Updates (Only) servicing phase - After a new version is released, support for older versions will reduce to Security updates only for the remainder of the twelve (12) month support lifecycle (shown in figure 1).
 
+
     ![](media/reportserver-support-timeline/reportserver-support-example.png "Power BI Report Server example supported lifecycle")
 
     *Figure 1. Example of current servicing support.*
