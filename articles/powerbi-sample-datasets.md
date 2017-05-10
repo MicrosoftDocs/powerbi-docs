@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 #  What sample data is available to use with Power BI?
@@ -98,7 +98,7 @@ Now you know what's available. Time to learn how to get ahold of these samples.
 As you read above, the samples are available in several formats: content packs, Excel workbooks, and .pbix files. We'll describe how to use each of these, starting with content packs.
 
 ## The Power BI samples as content packs
-Content packs are the only sample format that is available from within Power BI; you don't have to leave Power BI to find them. A content pack is essentially a bundle of one or more dashboard, dataset, and report that someone creates and that can be used with Power BI service. People create content packs to share with colleagues. Each of the Power BI sample content packs contains a dataset, report, and dashboard.  Content packs are not available for Power BI Desktop. If you'd like to learn more about content packs, read [Intro to content packs in Power BI](powerbi-service-organizational-content-packs-introduction/).
+Content packs are the only sample format that is available from within Power BI; you don't have to leave Power BI to find them. A content pack is essentially a bundle of one or more dashboard, dataset, and report that someone creates and that can be used with Power BI service. People create content packs to share with colleagues. Each of the Power BI sample content packs contains a dataset, report, and dashboard.  Content packs are not available for Power BI Desktop. If you'd like to learn more about content packs, read [Intro to content packs in Power BI](powerbi-service-organizational-content-packs-introduction.md).
 
 ###  Get and open a sample content pack in Power BI service
 1. Open Power BI service (app.powerbi.com) and log in.

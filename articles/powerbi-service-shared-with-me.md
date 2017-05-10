@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 # Display the Power BI dashboards that have been shared with me
@@ -30,8 +30,7 @@ When a colleague shares a dashboard with you, its title is added to your **Share
 
 ![](media/powerbi-service-shared-with-me/power-bi-shared-with-me-new.png)
 
-You'll have many options for interacting with the dashboard and underlying report, depending on the permissions the owner gives you. These include being able to make copies of the dashboard, open the report [in Reading view](powerbi-service-interact-with-a-report-in-reading-view), and re-share with other colleagues.
-
+You'll have many options for interacting with the dashboard and underlying report, depending on the permissions the owner gives you. These include being able to make copies of the dashboard, open the report [in Reading view](powerbi-service-interact-with-a-report-in-reading-view.md), and re-share with other colleagues.
 
 ##  Actions available from the **Shared with me** screen
 
