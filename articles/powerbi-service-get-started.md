@@ -47,7 +47,7 @@ Read about all the other ways to [get data for Power BI](powerbi-service-get-dat
 
 ## Step 1: Get data
 
-Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download this sample CSV file]((http://go.microsoft.com/fwlink/?LinkID=521962).
+Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download this sample CSV file](http://go.microsoft.com/fwlink/?LinkID=521962).
 
 1.  [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for free.
 
@@ -153,4 +153,4 @@ Not quite ready to jump right in? Start with these topics designed to help you f
 -   Subscribe to our [YouTube video channel](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 -   Watch our [Power BI Getting Started webinars](powerbi-webinars.md) on demand
 -  More questions? [Try the Power BI Community](http://community.powerbi.com/)
-- Not sure where to go for help? See our [10 tips for getting help](powerbi-service-tips-for-getting-help) page
+- Not sure where to go for help? See our [10 tips for getting help](powerbi-service-tips-for-getting-help.md) page

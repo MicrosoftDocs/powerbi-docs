@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="05/09/2017"
    ms.author="amac"/>
 
 # Procurement Analysis sample for Power BI: Take a tour
@@ -34,7 +34,7 @@ This sample is part of a series that illustrates how you can use  Power BI with 
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data > Samples > Procurement Analysis Sample > Connect** to get your own copy of the sample.
 
-You can also [download just the dataset (Excel workbook)](powerbi-sample-datasets.md) for this sample.
+You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529784) for this sample.
 
 
 ## Spending trends

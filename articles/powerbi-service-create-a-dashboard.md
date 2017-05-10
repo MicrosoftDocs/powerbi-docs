@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/16/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 
@@ -42,9 +42,9 @@ We'll import one of the Power BI sample datasets and use it to create our new da
 
 2. Open Power BI service in your browser (app.powerbi.com).
 
-3. Select an existing [workspace](powerbi-service-workspaces.md) or [create a new app workspace](xxxx).
+3. Select an existing workspace or create a new app workspace.
 
-2. From the leftnav, select **Get Data**.
+2. From the left nav, select **Get Data**.
 
     ![](media/powerbi-service-create-a-dashboard/power-bi-get-data3.png)
 
@@ -102,7 +102,7 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 
 -    [Resize and move tiles](powerbi-service-edit-a-tile-in-a-dashboard.md)
 - [All about dashboard tiles](powerbi-service-dashboard-tiles.md)
-- [Share your dashboard by creating an app](.md)
+- [Share your dashboard by creating an app](powerbi-service-create-apps.md)
 
 ## See also
 
