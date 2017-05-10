@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="05/10/2017"
    ms.author="asaxton"/>
 # What's new in Power BI Report Server
 
@@ -45,11 +45,11 @@ To download Power BI Report Server, and Power BI Desktop (Report Server), go to 
 ## Next steps
 
 [Power BI Report Server release notes](reportserver-release-notes.md)  
-[User handbook]  
+[User handbook](reportserver-user-handbook-overview.md)  
 [Administrator handbook]  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 [Install Power BI Desktop]  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

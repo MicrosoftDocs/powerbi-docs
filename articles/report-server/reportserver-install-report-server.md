@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="05/10/2017"
    ms.author="asaxton"/>
 # Install Power BI Report Server
 
@@ -29,21 +29,9 @@ To download Power BI Report Server, and Power BI Desktop (Report Server), go to 
 
 ![tip](media/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
-[!INCLUDE [ssrs-documentation](../../includes/ssrs-documentation.md)]
+## Before you begin
 
-## Requirements
-
-Power BI Report Server will install default values to configure the core settings required to make a report server operational. It has the following requirements:
-
-- A SQL Server Database Engine must be available after setup and before you configure the database for the report server. The Database Engine instance hosts the report server database that Reporting Services Configuration Manager will create. The Database Engine is not required for the actual setup experience.
-
-- The user account used to run Setup must be a member of the local Administrators group.
-
-- The user account used for Reporting Services Configuration Manager must have permission to access and create databases on the Database Engine instance that hosts the report server databases.
-
-- Setup must be able to use the default values to reserve the URLs that provide access to the report server and the web portal. These values are port 80, a strong wildcard, and the virtual directory names in the format **ReportServer** and **Reports**.
-
- > [AZURE.IMPORTANT] While the report server can be installed in an environment that has a Read-Only Domain Controller (RODC), Reporting Services needs access to a Read-Write Domain Controller to function properly. If Reporting Services only has access to a RODC, you may encounter errors when trying to administer the service.
+Before you install Power BI Report Server, it is recommended that you review the [Hardware and Software Requirements for installing Power BI Report Server](reportserver-system-requirements.md).
 
 ## Install Reporting Services Standalone
 
@@ -150,4 +138,4 @@ You will need to open up the TCP port that you have configured for your Web Serv
 [Configure SSL connections on a report server](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
 [Configure windows service accounts and permissions](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

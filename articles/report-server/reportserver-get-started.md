@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="05/10/2017"
    ms.author="asaxton"/>
 # Get started with Power BI Report Server
 
@@ -75,16 +75,6 @@ Paginated reports are paginated document-style reports, in which the more data y
 
 You can create modern-looking reports using [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
-## Mobile reports
-
-![](media/reportserver-get-started/mobile-reports.png)
-
-Mobile computing has shifted the devices we need to work, meaning people today have a different reporting need. The fixed-layout report experience doesn’t work well when you introduce tablets and phones. Something designed for a wide PC screen isn’t the optimal experience on a small phone screen that’s not just smaller but a portrait or landscape orientation.
-
-What you need with these widely different screen form factors is not a fixed layout, but a responsive layout that adapts to these different devices and the different ways you hold them. For that we’ve added a new report type: mobile reports, based on the Datazen technology we acquired about a year ago and integrated into the product.
-
-You create these mobile reports in the new [Mobile Report Publisher](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) app. Then in the native [Power BI apps for mobile devices](./powerbi-power-bi-apps-for-mobile-devices) for Windows 10, iOS, Android, and HTML5, you can access the data you have in Power BI the cloud, plus your on-premises Power BI Report Server or SQL Server Reporting Services data. As you create visualizations, Mobile Report Publisher automatically generates sample data for each, so you see how the visualization will look with your data, and what kind of data works well in each visualization.
-
 ## Report Server programming features
 
 Take advantage of Power BI Report Server programming features so you can extend and customize your reporting functionality, with APIs to integrate or extend data and report processing in custom applications.
@@ -93,11 +83,11 @@ More [Report Server developer documentation](https://docs.microsoft.com/sql/repo
 
 ## Next steps
 
-[User handbook]  
+[User handbook](reportserver-user-handbook-overview.md)  
 [Administrator handbook]  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 [Install Power BI Desktop]  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

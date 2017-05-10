@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="05/10/2017"
    ms.author="asaxton"/>
 # Support timeline for Power BI Report Server
 
@@ -33,8 +33,6 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
     *Figure 1. Example of current servicing support.*
 
-> [AZURE.NOTE] The above information refers to actual updates and fixes. You can still engage with support for assistance using the appropriate support channels. For more information, see [Power BI Support](https://support.powerbi.com).
-
 ## Version history
 
 As we release new updates, we will list the versions, availability and support end dates here.
@@ -49,8 +47,8 @@ To download Power BI Report Server, and Power BI Desktop (Report Server), go to 
 
 [What's new in Power BI Report Server](reportserver-whats-new.md)  
 [Power BI Report Server release notes](reportserver-release-notes.md)  
-[User handbook]  
+[User handbook](reportserver-user-handbook-overview.md)  
 [Administrator handbook]  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
