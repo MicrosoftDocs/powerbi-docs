@@ -231,6 +231,5 @@ While this configuration should work in most cases, with Kerberos, there can be 
 
 [Administrator handbook](reportserver-admin-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
-[Install Power BI Desktop]  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
