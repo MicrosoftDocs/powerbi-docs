@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/11/2017"
    ms.author="asaxton"/>
 # How to migrate Power BI Embedded workspace collection content to Power BI
 
@@ -41,27 +41,27 @@ There are a few things you need to do to prepare for migrating from Power BI Emb
 
     Your organization may already have a tenant available that you are currently using Power BI with. If this is not available, you will need to create a new tenant. You can make use of an existing tenant for your organization. For more information you can see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 
-2. Make sure your user account has a Power BI license. This can be Free or Pro.
-
-    In order to take advantage of certain features, such as App workspaces, you will need to have a Pro license. This will be needed for the developer, or other users that are publishing content that requires use of Pro features. You can make this work with a free user, however, all content would be within that user's *My Workspace* instead of taking advantage of App workspaces.
+2. Make sure your application "master" account has a Power BI Pro license.
 
 ## Accounts within Azure AD
 
-The following accounts will need to exist within your tenant and have a license for Power BI.
+The following accounts will need to exist within your tenant. 
+
+> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces and to create content that makes use of Pro features such as the On-Premises Data Gateway. 
 
 1. A tenant admin user.
 
     It is recommended that this user be a member of all App workspaces created for the purpose of embedding.
 
-2. Accounts for analysts that will create content. 
+2. Accounts for analysts that will create content.
 
     These users should be assigned to App workspaces as needed.
 
 3. An application *master* user account.
 
-    The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI APIs. This account will be used to generate the embed token for the application. This account should also be a member of the App workspaces created for embedding.
+    The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI APIs. This account will be used to generate the embed token for the application. This account needs to be an admin of the App workspaces created for embedding.
 
-> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces and to create content that makes use of Pro features such as the On-Premises Data Gateway.
+    > [AZURE.NOTE] This is just a regular user account in your organziation that will be used for the purposes of embedding.
 
 ## App registration and permissions
 
@@ -69,13 +69,15 @@ You will need to register an application within Azure AD and grant certain permi
 
 ### Register an application
 
+> [AZURE.NOTE] You should register the application using the application *master* account.
+
 You can need to register an application as a native Azure application witn your Azure AD tenant. You can either register your application from the Power BI app registration tool, or directly within the Azure AD portal. For more information, see [Register a client app](powerbi-developer-register-a-client-app.md). Make sure that you select **Native App** for the **App type**.
 
 ### Apply permissions to your application
 
 You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure AD portal, or programmatically.
 
-> [AZURE.NOTE] You will need to perform these steps with an admin account that has access to the Azure portal and to your tenant.
+> [AZURE.NOTE] It is recommended you perform these steps using the application *master* account. It should be able to modify the app permissions within the Azure portal without admin rights. It will be the owner of the app.
 
 #### Using the Azure AD Portal
 
@@ -158,13 +160,15 @@ You will need to enable additional permissions to your application in addition t
     }
     ```
 
-## Create App workspaces (Optional)
+## Create App workspaces (Required)
 
 You can take advantage of App workspaces to provide better isoliation if your application is servicing multiple customers. Dashboards and reports would be isolated between your customers. You could then use a Power BI account per App workspace to further isolate application experiences between your customers.
 
+> [AZURE.IMPORTANT] You cannot use a personal workspace to take advantage of embedding
+
 You will need a user that has a Pro license in order to create an App workspace within Power BI. The Power BI user that creates the App workspace will be an admin of that workspace by default.
 
-You do not need an app workspace to embed reports into your application. If you do not use an App workspace, your dashboards and reports will be in the *My workspace* for the Power BI account you use with your application.
+> [AZURE.NOTE] The application *master* account needs to be an admin of the workspace.
 
 ## Create and upload your reports
 
