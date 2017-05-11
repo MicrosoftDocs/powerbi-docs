@@ -1,6 +1,6 @@
 <properties
    pageTitle="Administrator handbook overview, Power BI Report Server"
-   description="Learn how to install Power BI Report Server. "
+   description="Welcome to the administrator handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -59,7 +59,6 @@ Security and protection are important to every organization. You can learn about
 
 ## Next steps
 
-[User handbook](reportserver-user-handbook-overview.md)  
 [Quickstart: Install Power BI Report Server](reportserver-quickstart-install-report-server.md)  
 [Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
