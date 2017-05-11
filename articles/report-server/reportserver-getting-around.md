@@ -198,7 +198,7 @@ You can switch to List view, where it's easy to move or delete multiple items at
 ## Next steps
 
 [User handbook](reportserver-user-handbook-overview.md)  
-[Quickstart: Paginated reports](reportserver-quickstart-create-paginated-report.md)  
-[Quickstart: Power BI reports](reportserver-quickstart-create-power-bi-report.md)
+[Quickstart: Paginated reports](reportserver-quickstart-paginated-report.md)  
+[Quickstart: Power BI reports](reportserver-quickstart-powerbi-report)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
