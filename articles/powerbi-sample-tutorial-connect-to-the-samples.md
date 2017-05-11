@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 # The Power BI samples, a tutorial
@@ -25,7 +25,7 @@
 <!-- Shared newnav Include -->
 [AZURE.INCLUDE [newnavbydefault](../includes/newnavbydefault.md)]
 
-We recommend starting with the article [Take a tour of the Power BI samples](powerbi-sample-datasets.md). In that article you'll learn all about the samples; how to get them, where to save them, how to use them, and some of the stories each sample can tell. Then, when you have a grasp of the basics, come back to this Tutorial.   
+We recommend starting with the article [Sample datasets for Power BI](powerbi-sample-datasets.md). In that article you'll learn all about the samples; how to get them, where to save them, how to use them, and some of the stories each sample can tell. Then, when you have a grasp of the basics, come back to this Tutorial.   
 
 ## About this tutorial
 This tutorial teaches you how to import the sample content packs, add them to Power BI service, and open the content. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. The sample content packs are available from within Power BI, using **Get Data**.

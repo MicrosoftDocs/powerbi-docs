@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
-   ms.author="amac"/>
+   ms.date="05/09/2017"
+   ms.author="mihart"/>
 
 # IT Spend Analysis sample for Power BI: Take a tour
 
@@ -27,7 +27,7 @@ The IT Spend Analysis [content pack](powerbi-service-organizational-content-pack
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (<http://obvience.com/>) that has been anonymized.
 
 -   [get the IT Spend Analysis content pack](powerbi-sample-tutorial-connect-to-the-samples.md)
--   [download just the dataset (Excel workbook) for this sample](powerbi-service-sample-datasets.md).
+-   [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529783).
 
 ![](media/powerbi-sample-it-spend-analysis-take-a-tour/IT1.png)
 
@@ -109,4 +109,4 @@ This is a safe environment to play in. You can always choose not to save your ch
 
 ## Next steps: Connect to your data
 
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into IT spend data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about getting started with Power BI.
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into IT spend data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](powerbi-service-get-started.md).

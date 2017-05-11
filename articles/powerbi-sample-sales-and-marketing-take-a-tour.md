@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 # Sales & Marketing sample for Power BI: Take a tour  
@@ -28,7 +28,7 @@ VanArsdel has many competitors but is the market leader in its industry. The CMO
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (www.obvience.com) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](powerbi.service.sample,datasets.md).
+You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529785).
 
 ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales1.png)
 

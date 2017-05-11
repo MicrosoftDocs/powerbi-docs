@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 # Customer Profitability sample for Power BI: Take a tour  
@@ -26,7 +26,7 @@ The “Customer Profitability Sample” content pack contains a dashboard, repo
 
 This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized.
 
-You can also [download just the dataset (Excel workbook) for this sample](powerbi-sample-downloads.md).  
+You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529781).  
 ![](media/powerbi-sample-customer-profitability-take-a-tour/power-bi-dash.png)
 
 ## What is our dashboard telling us?  
@@ -98,7 +98,7 @@ For our analysis, it would be helpful to determine which industry generates the 
 
      ![](media/powerbi-sample-customer-profitability-take-a-tour/customer4.png)
 3.  Type **total sales by store for Valery**. Notice how the visualization updates as you type the question.
-     
+
      ![](media/powerbi-sample-customer-profitability-take-a-tour/customer5.png)
 
     Distribution is the biggest revenue area for Valery.
@@ -129,7 +129,6 @@ We can similarly explore other industries and even add customers to our visuals 
 This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to **Get Data** for a new copy of this sample.
 
 ## Next steps: Connect to your data  
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI Preview](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it is your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](powerbi-service-get-started.md).
 
-[Take a tour of another industry sample](powerbi-sample-downloads.md)  
 [Back to Samples in Power BI](powerbi-sample-datasets.md)  

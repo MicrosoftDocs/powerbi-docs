@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/14/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 # Dashboards in Power BI service
@@ -81,7 +81,7 @@ Here are some topics, by role, to help you get started.
 -  Learn about [dashboard tiles](powerbi-service-dashboard-tiles.md) and what will happen when you select one.
 -  Don't like the look of a dashboard?  You can [resize, move, and rename the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).
 - Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create alerts on tiles](powerbi-service-set-data-alerts.md).
-- Have fun asking your dashboard questions. Learn how to use [Power BI Q&A](powerbi-service-how-to-use-q-and-a) to ask a question about your data and get the answer in the form of a visualization.
+- Have fun asking your dashboard questions. Learn how to use [Power BI Q&A](powerbi-service-how-to-use-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.
 
 >[AZURE.TIP]If you didn’t find what you’re looking for here, use the Table of Contents to the left.
 

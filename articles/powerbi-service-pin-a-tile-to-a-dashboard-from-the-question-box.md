@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 # Pin a tile to a dashboard from Q&A  
 ## How to pin a tile from Q&A
 Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
->**NOTE**: To follow along, open the [Retail Analysis sample](powerbi-samples-retail-analysis-take-a-tour.md).
+>**NOTE**: To follow along, open the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md).
 
 1.  Open a [dashboard](powerbi-service-dashboards.md) that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.  To learn more, see [get data](powerbi-service-get-data.md).
 

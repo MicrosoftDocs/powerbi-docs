@@ -37,7 +37,7 @@ One you're done coding and testing your custom visual and have packaged it into 
 |---|---|---|
 |Pbiviz package contains all the required metadata|Yes|Visual name<br>Display name<br>GUID<br>Version<br>Description<br>Author name and email|
 |Sample .pbix report file|Yes|To showcase your visual, you should help users to get acquainted with the visual. You should emphasize on the value the visual brings to the user and give examples of usage, formatting options, etc. You can also add a *"hints"* page at the end with some tips and tricks, things to avoid and the like.|
-|Icon|Yes|You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 96px (width) x 96px (height). It can be no larger than 250kb for the file size.|
+|Icon|Yes|You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300px (width) x 300px (height). It can be no larger than 512kb for the file size.|
 |Screenshots|Yes|You must provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 1366px (width) x 768px (height). It can be no larger than 1024kb for the file size. *For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot.*|
 |Support download link|Yes|Provide the URL to support customers who have issues with your visual. The format of your URL should include https:// or http://.|
 |Privacy document link|Yes|Provide a link to the privacy policy for customers who use your visual. The format of your link should include https:// or http://.|
@@ -89,7 +89,7 @@ Follow the below steps to complete the submission.
     - *My app calls, supports, contains, or uses cryptography or encryption:* leave unchecked
     - *Make this add-in available in the Office add-in catalog on iPad:* leave unchecked
 
-6. Upload your visual's logo by selecting the **+** under **App logo**. Then select the icon file in the open file dialog. The file must be .png, .jpg, .jpeg or .gif. It must be exactly 96px (width) x 96px (height) and no larger than 250kb in size.
+6. Upload your visual's logo by selecting the **+** under **App logo**. Then select the icon file in the open file dialog. The file must be .png, .jpg, .jpeg or .gif. It must be exactly 300px (width) x 300px (height) and no larger than 512kb in size.
 
     ![](media/powerbi-developer-office-store/powerbi-custom-visual-app-logo.png)
 

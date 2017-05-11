@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/09/2017"
    ms.author="mihart"/>
 
 #  Delete almost anything in Power BI service
@@ -146,14 +146,14 @@ Deleting an app from your app list page does not delete the app for other member
 ## Considerations and troubleshooting
 This article covered how to delete the major building blocks of Power BI service. But there are more things that you can delete in Power BI.  
 
--    [Remove your Featured dashboard](powerbi-service-featured-dashboards#change-the-featured-dashboard.md)
+- [Remove your Featured dashboard](powerbi-service-featured-dashboards#change-the-featured-dashboard.md)
 
--    [Remove (unfavorite) a dashboard](powerbi-service-favorite-dashboards#unfavorite-a-dashboard.md)
+- [Remove (unfavorite) a dashboard](powerbi-service-favorite-dashboards#unfavorite-a-dashboard.md)
 
--    [Delete a report page](powerbi-service-delete-a-page-from-a-report.md)
+- [Delete a report page](powerbi-service-delete-a-page-from-a-report.md)
 
--    [Delete a dashboard tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
+- [Delete a dashboard tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
 
--    [Delete a report visualization](powerbi-service-delete-a-visualization.md)
+- [Delete a report visualization](powerbi-service-delete-a-visualization.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/) 
