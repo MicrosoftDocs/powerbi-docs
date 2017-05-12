@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/10/2017"
+   ms.date="05/12/2017"
    ms.author="asaxton"/>
 # What's new in Power BI Report Server
 
@@ -39,8 +39,11 @@ To download Power BI Report Server, and Power BI Desktop (Report Server), go to 
 ## May 2017
 
 * Power BI Report Server Preview made available
-* Added support for custom visuals
-* Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
+* Ability to publish Power BI reports on-premises
+    * Suppport for custom visuals
+    * Support for Analysis Services live connections only with more data sources to come.
+    * Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
+* Enhanced collaboration in reports with comments
 
 ## Next steps
 

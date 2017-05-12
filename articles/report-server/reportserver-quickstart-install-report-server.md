@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/10/2017"
+   ms.date="05/12/2017"
    ms.author="asaxton"/>
 
 # Quickstart: Install Power BI Report Server
@@ -25,6 +25,12 @@
 Installing Power BI Report Server itself is very quick. From downloading, to installing and configuring, you should be up and running within a few minutes.
 
 This is a quick look at how to install a report server if you just want to get up and running with a new server. For more detail information on installing a report server, see [Install Power BI Report Server](reportserver-install-report-server.md).
+
+ **Download** ![download](media/download.png "download")
+
+To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=839351).
+
+![tip](media/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
 ## Before you begin
 

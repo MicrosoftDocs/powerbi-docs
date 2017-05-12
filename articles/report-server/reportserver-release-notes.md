@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2017"
+   ms.date="05/12/2017"
    ms.author="asaxton"/>
 # Power BI Report Server release notes
 
@@ -25,7 +25,7 @@ This topic describes limitations and issues with Power BI Report Server.
 
  **Download** ![download](media/download.png "download")
 
-To download Power BI Report Server, and Power BI Desktop (Report Server), go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=839351).
+To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=839351).
 
 ## May 2017
 
