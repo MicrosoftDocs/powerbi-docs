@@ -48,6 +48,6 @@ To see the list of certified custom visuals or to submit your own, see [Certifie
 
 
 -    [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
--    [Submit a custom visual for certification](powerbi-custom-visual-certified.md)
+-    [Submit a custom visual for certification](powerbi-custom-visuals-certified.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
