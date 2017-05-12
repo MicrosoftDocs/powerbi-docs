@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="05/10/2017"
    ms.author="asaxton"/>
 
 # Review custom visuals for security and privacy
@@ -119,5 +119,6 @@ After you extract the pbiviz file, you can evaluate the code. Here are some best
 [Add a custom visualization to a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
 [Getting started with custom visuals developer tools](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
+[How to certify a custom visual](powerbi-custom-visuals-certified.md)    
 [Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

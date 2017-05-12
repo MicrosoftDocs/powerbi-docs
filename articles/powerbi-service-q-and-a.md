@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2017"
+   ms.date="05/10/2017"
    ms.author="mihart"/>
 
 # Q&A in Power BI
@@ -61,9 +61,5 @@ Are you the person creating datasets and data models?  Then this topic is for yo
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 [Get started with Power BI](powerbi-service-get-started.md)
-
-[Tutorial: Introduction to Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
-
-[Make your data work well with Power BI Q&A](powerbi-service-tutorial-introduction-to-q-and-a.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
