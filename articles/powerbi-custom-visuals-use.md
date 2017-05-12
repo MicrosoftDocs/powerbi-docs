@@ -10,7 +10,6 @@
    tags=""
    qualityFocus="complete"
    qualityDate="03/15/2016"/>
-
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -20,10 +19,9 @@
    ms.date="05/11/2017"
    ms.author="mihart"/>
 
-# Add a custom visual to a report (Desktop)  
+# Add a custom visual to a report (Desktop)
 
-You've [downloaded a custom visual template](powerbi-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to
-import that visual template into a report so that it is added, as an option, to your Visualization pane.
+You've [downloaded a custom visual template](powerbi-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to import that visual template into a report so that it is added, as an option, to your Visualization pane.
 
 ![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
 
@@ -31,41 +29,40 @@ import that visual template into a report so that it is added, as an option, to 
 
 1. Open Power BI Desktop and select the report where you want to add the custom visualization.  Open the report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
 
-2.  There are two options to import a custom visual template: from the **File** menu or from the **Visualizations** pane.
+2. There are two options to import a custom visual template: from the **File** menu or from the **Visualizations** pane.
 
     **From the Desktop File menu**
 
-    - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.  
+    - On the report **File** menu, choose **Import** &gt; **Power BI Custom Visual**. You must be in the editing view.
       ![](media/powerbi-custom-visuals-use/power-bi-import.png)
 
     **From the Visualization pane**
 
     - In the **Visualizations** pane, choose **Insert (…)**.
-      ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+      ![](media/powerbi-custom-visuals-use/InsertPane.png)
 
     - Select **Import a custom visual**.  
-      ![](media/powerbi-custom-visuals-use/InsertPane.png)  
+      ![](media/powerbi-custom-visuals-use/InsertPane.png)
 
 3. **Review the warning**.
 
-    A custom visual has access to the data in the report you use in the custom visual, and can perform actions on your behalf. If you share the report with others, when they view the report the custom visual can do the same, but for your co-workers. Take care to review the custom visual to ensure it comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to use a specific Custom Visual you obtained from the Power BI visuals gallery, through email, or from some other source.  
+    A custom visual has access to the data in the report you use in the custom visual, and can perform actions on your behalf. If you share the report with others, when they view the report the custom visual can do the same, but for your co-workers. Take care to review the custom visual to ensure it comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to use a specific Custom Visual you obtained from the Power BI visuals gallery, through email, or from some other source.
 
     ![](media/powerbi-custom-visuals-use/caution.png)
 
 4. Select a .pbiviz file in the **Open** dialog.
 
-5. An icon (also called a *template*) is added to your **Visualizations** pane.  
+5. An icon (also called a *template*) is added to your **Visualizations** pane.
 
     ![](media/powerbi-custom-visuals-use/VisualUse.png)
 
 6. Select the custom visual template to add it to your report as you would with any of the other templates in the Visualizations pane. Add fields and filters and build your visual.
 
-7. Format the custom visual as you would any other visual.  From the ** Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
+7. Format the custom visual as you would any other visual.  From the **Visualizations** pane, select the paintbrush icon. The formatting options available will vary by visual type.
 
-##    Consideratios and troubleshooting
+## Considerations and troubleshooting
 
 - In order to enable custom visuals to be supported in [export to PowerPoint](powerbi-service-publish-to-powerpoint.md), or [displayed in emails received when a customer subscribes to report pages](powerbi-service-subscribe-to-report.md), they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](powerbi-custom-visuals-certified.md)
-
 
 ## Next steps
 
