@@ -25,7 +25,9 @@ Learn about what data sources you can connect to within Power BI Report Server.
 
 ## Power BI Reports
 
-Currently, the only data source supported for Power BI reports are a live connection to Analysis Services (tabular or multidimensional). More data sources will be added in future releases.
+Currently, the only data source supported for Power BI reports are a **live connection to Analysis Services (tabular or multidimensional)**. More data sources will be added in future releases.
+
+### Cannot upload imported or DirectQuery sources
 
 If you try to publish a Power BI Desktop file that contains anything other than an Analysis Services live connection, you will see the following error.
 
