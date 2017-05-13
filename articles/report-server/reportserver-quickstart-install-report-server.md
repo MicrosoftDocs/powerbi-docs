@@ -63,7 +63,8 @@ Now that you are configured, you should be able to open a browser to the web por
 ## Next steps
 
 [Administrator handbook](reportserver-admin-handbook-overview.md)  
-[Installing a Power BI Report Server](reportserver-install-report-server.md)  
+[Install Power BI Report Server](reportserver-install-report-server.md)  
+[Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
 [Browser support for Power BI Report Server](reportserver-browser-support.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

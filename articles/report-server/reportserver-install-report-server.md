@@ -10,7 +10,6 @@
    tags=""
    qualityFocus="no"
    qualityDate=""/>
-
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
@@ -19,6 +18,7 @@
    ms.workload="powerbi"
    ms.date="05/15/2017"
    ms.author="asaxton"/>
+
 # Install Power BI Report Server
 
 Learn how to install Power BI Report Server.
@@ -130,6 +130,7 @@ You need to open up the TCP port that you have configured for your Web Service U
 ## Next steps
 
 [Administrator handbook](reportserver-admin-handbook-overview.md)  
+[Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Configure report server URLs](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
