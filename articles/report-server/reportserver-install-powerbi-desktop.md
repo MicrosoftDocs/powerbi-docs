@@ -29,7 +29,7 @@ You will need to download and install Power BI Desktop optimized for Power BI Re
 
 ## Download and install
 
-You can download Power BI Desktop from the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=839351) or from within the web portal of your report server.
+You can download Power BI Desktop from the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=837581) or from within the web portal of your report server.
 
 After you download the installer, you can install Power BI Desktop.
 
