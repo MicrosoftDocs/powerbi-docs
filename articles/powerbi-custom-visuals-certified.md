@@ -18,14 +18,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2017"
+   ms.date="05/12/2017"
    ms.author="mihart"/>
-# Approving and registering a custom visualization
+# Getting a custom visual *certified*
 
 ## What is meant by *certified*?
-A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be run inside the Power BI service. Certified custom visuals are supported for [exporting to PowerPoint](powerbi-service-publish-to-powerpoint) and will display in the emails received when a user [subscribes to report pages](powerbi-service-subscribe-to-report.md).
+A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be run inside the Power BI service. Certified custom visuals are supported for [exporting to PowerPoint](powerbi-service-publish-to-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](powerbi-service-subscribe-to-report.md).
 
-- Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery? See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools) and visit the [Office store](powerbi-custom-visuals-office-store) to learn how.
+- Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery? See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Office store](powerbi-custom-visuals-office-store.md) to learn how.
 
 - Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s **Learn more** page and listed as **Provider**.
 
@@ -43,11 +43,12 @@ A *certified custom visual* is one that has met a set of code requirements and h
 ##    Process for submitting a custom visual for Certification
 
 To submit a custom visual for certification:
-1. Send an email to Power BI Custom Visuals Support (pbicvsupport@microsoft.com). In the email, include the following information:
-  - Title: Visual Certification Request
-  - Link to GitHub repository where the visual source code is hosted
-  - Adhere to the requirements (see above)
-  - Pass the code and security review
+
+1. Send an email to Power BI Custom Visuals Support (pbicvsupport@microsoft.com). In the email, include the following information:    
+  - Title: Visual Certification Request    
+  - Link to GitHub repository where the visual source code is hosted    
+  - Adhere to the requirements (see above)    
+  - Pass the code and security review    
 
 The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
 
@@ -55,7 +56,7 @@ The Custom Visuals team at Microsoft will notify you when your custom visual is 
 Microsoft, at its discretion, may remove a visual from the Certified list.  
 
 
-##    List of custom visuals that are registered
+##    List of custom visuals that have been certified
 
 |Name  |
 |---------|
