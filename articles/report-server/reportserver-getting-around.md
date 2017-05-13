@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2017"
+   ms.date="05/15/2017"
    ms.author="maggies"/>
 
 # Work in the Power BI Report Server web portal
