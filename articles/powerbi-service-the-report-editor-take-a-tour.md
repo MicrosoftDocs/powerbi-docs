@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/14/2017"
    ms.author="mihart"/>
 # The report editor...Take a tour
 
@@ -88,7 +88,7 @@ The formatting possibilities are almost endless.  To learn more, explore on your
 Select the magnifying glass icon to display the Analytics pane. 
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-analytics.png)    
-With the Analytics pane in Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in Power BI service](powerbi-service-analytics-pane.md) of [Analytics pane in Power BI Desktop](powerbi-desktop-analytics-pane.md).
+With the Analytics pane in Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in Power BI service](powerbi-service-analytics-pane.md) or [Analytics pane in Power BI Desktop](powerbi-desktop-analytics-pane.md).
 
 
 * * *
