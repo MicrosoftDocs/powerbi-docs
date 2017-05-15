@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Get started with the iPad mobile app"
-   description="The Microsoft Power BI for iOS app on the iPad is a key part of the mobile BI experience for Power BI and Reporting Services."
+   description="Learn how the Microsoft Power BI for iOS app on the iPad brings Power BI to your pocket, with mobile access to business information on premises and in the cloud."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,20 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/04/2017"
+   ms.date="05/14/2017"
    ms.author="maggies"/>
 
-# Get started with the iPad app (Power BI for iOS)  
+# Get started with Power BI for iOS on the iPad  
 
-The iPad app for Microsoft Power BI for iOS is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards and reports easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
+The Microsoft Power BI for iOS on the iPad delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. 
 
 ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-dashboard-sales-and-marketing.png)
 
-You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
+You create Power BI reports in Power BI Desktop, and publish them:
 
-Then interact with your dashboards and reports, explore the data, and share them, all from the iPad app for Power BI.
+- Publish them to the [Power BI service](powerbi-service-get-started.md), and create dashboards.
+- Publish them on-premises to Power BI Report Server.
 
-You can also [view Reporting Services KPIs and mobile reports for your on-premises data](powerbi-mobile-iphone-kpis-mobile-reports.md) in the iPad app for Power BI. You [create those KPIs and mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx).
+Then in the Power BI app for the iPad, you interact with your dashboards and reports, whether on-premises or in the cloud.
 
 Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
