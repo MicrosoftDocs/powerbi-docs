@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Get started with the Power BI app for iOS on an iPhone"
-   description="The Microsoft Power BI app for iOS on the iPhone or iPod Touch is part of the mobile BI experience for Power BI and Reporting Services."
+   description="Learn how the Microsoft Power BI for iOS app on the iPhone brings Power BI to your pocket, with mobile access to business information on premises and in the cloud.""
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,20 +17,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/14/2017"
    ms.author="maggies"/>
 
-# Get started with the Power BI app for iOS on an iPhone or iPod Touch
+# Get started with the Power BI app for iOS on an iPhone or iPod Touch 
 
-The Microsoft Power BI for iOS app, on the iPhone or iPod Touch, is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages. And keep up to date with your most timely data on your [Apple Watch](powerbi-mobile-apple-watch.md).  
+The Microsoft Power BI for iOS app on the iPhone or iPod Touch delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. And keep up to date with your most timely data on your [Apple Watch](powerbi-mobile-apple-watch.md).  
 
 ![](media/powerbi-mobile-iphone-app-get-started/power-bi-mobile-get-started-dash.png)
 
-You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
+You create Power BI reports in Power BI Desktop, and publish them:
 
-Then interact with your dashboards and reports, explore the data, and share them, all from the iPhone app for Power BI.
+- Publish them to the [Power BI service](powerbi-service-get-started.md), and create dashboards.
+- Publish them on-premises to Power BI Report Server.
 
-You can also [view Reporting Services KPIs and mobile reports for your on-premises data](powerbi-mobile-iphone-kpis-mobile-reports.md) in the iPhone app for Power BI. You [create those KPIs and mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx).
+Then in the Power BI app for the iPhone, you interact with your dashboards and reports, whether on-premises or in the cloud.
 
 Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 

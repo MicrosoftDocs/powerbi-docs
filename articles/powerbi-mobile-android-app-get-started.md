@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Get started with the Power BI for Android mobile app"
-   description="The Android mobile app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to business information."
+   description="Learn how the Android mobile app for Microsoft Power BI brings Power BI to your pocket, with mobile access to business information on premises and in the cloud."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,18 +17,23 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/04/2017"
+   ms.date="05/14/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI for Android mobile app
 
-The Android app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere.
+The Android app for Microsoft Power BI delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. 
 
 ![](media/powerbi-mobile-android-app-get-started/power-bi-android-dashboard-optimized.png)
 
-You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data.
+You create Power BI reports in Power BI Desktop, and publish them:
 
-Then interact with your dashboards and reports, explore the data, and share them, all from the Android app for Power BI.
+- Publish them to the [Power BI service](powerbi-service-get-started.md), and create dashboards.
+- Publish them on-premises to Power BI Report Server.
+
+Then in the Power BI app for Android phones, you interact with your dashboards and reports, whether on-premises or in the cloud.
+
+Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 ## First things first
 
