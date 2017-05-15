@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2017"
+   ms.date="05/15/2017"
    ms.author="asaxton"/>
+
 # How to migrate Power BI Embedded workspace collection content to Power BI
 
 Learn how to migrate from Power BI Embedded to the Power BI service and leverage advances for embedding in apps.
@@ -71,7 +72,7 @@ You will need to register an application within Azure AD and grant certain permi
 
 > [AZURE.NOTE] You should register the application using the application *master* account.
 
-You can need to register an application as a native Azure application witn your Azure AD tenant. You can either register your application from the Power BI app registration tool, or directly within the Azure AD portal. For more information, see [Register a client app](powerbi-developer-register-a-client-app.md). Make sure that you select **Native App** for the **App type**.
+You will need to register an application as a native Azure application witn your Azure AD tenant. You can either register your application from the Power BI app registration tool, or directly within the Azure AD portal. For more information, see [Register a client app](powerbi-developer-register-a-client-app.md). Make sure that you select **Native App** for the **App type**.
 
 ### Apply permissions to your application
 
@@ -219,4 +220,5 @@ You should do some cleanup within Azure.
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
