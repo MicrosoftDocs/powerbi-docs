@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/13/2017"
+   ms.date="05/13/2017"
    ms.author="mihart"/>
 
 # Take a tour of the report Filters pane
@@ -26,7 +26,7 @@ This article takes a deep look at the report Filters pane. You'll see the pane i
 There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
 ## Working with filters  
-Reports can be opened in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) or [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). In Editing View, report owners can [add filters to a report](powerbi-service-add-a-filter-to-a-report) and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
+Reports can be opened in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) or [Reading View](powerbi-service-interact-with-a-report-in-reading-view.md). In Editing View, report owners can [add filters to a report](powerbi-service-add-a-filter-to-a-report.md) and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
 
 ## Filters in Reading View
 

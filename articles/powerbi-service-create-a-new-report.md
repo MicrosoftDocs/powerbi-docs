@@ -17,20 +17,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/13/2017"
    ms.author="mihart"/>
 
 # Create a new Power BI report by importing a dataset
 
 You've read [Reports in Power BI](powerbi-service-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  
 
->**TIP**: To create a report by copying an existing report, see [Copy a report](powerbi-service-copy-report.md)
+>**TIP**: To create a report by copying an existing report, see [Copy a report](powerbi-service-copy-a-report.md)
 
 ##    Import the dataset
 
 This method of creating a report starts with a dataset and a blank report canvas. To follow along, [download the Retail Analysis sample Excel dataset](http://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business (preferred) or locally.
 
-1.  We'll create the report in a Power BI service [workspace](powerbi-service-workspaces.md), so select an existing workspace or create a new one.
+1.  We'll create the report in a Power BI service workspace, so select an existing workspace or create a new one.
 
     ![](media/powerbi-service-create-a-new-report/power-bi-workspaces2.png)
 
@@ -111,7 +111,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 
 ##    Next steps
 
-- [Create a copy of a report](powerbi-service-copy-report.md)
+- [Create a copy of a report](powerbi-service-copy-a-report.md)
 - [Save the report](powerbi-service-save-a-report.md)    
 - [Add a new page to the report](powerbi-service-add-a-page-to-a-report.md)  
 - Learn how to [pin visualizations to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)    

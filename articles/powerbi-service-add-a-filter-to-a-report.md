@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/14/2017"
    ms.author="mihart"/>
 
 # Add a filter to a Power BI report (in Editing view)
@@ -124,7 +124,7 @@ When you add a visual level filter, Power BI filters on the aggregated results. 
 
 When you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visuals which can each utilize different aggregation types.  So the filter is applied on each data row.
 
-If you do not see the Fields pane, make sure you're in report [Editing view](powerbi-service-interact-with-a-report-in-editig-view.md)
+If you do not see the Fields pane, make sure you're in report [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md)
 
 
 ## Next steps
