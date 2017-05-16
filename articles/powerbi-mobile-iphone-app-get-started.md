@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Get started with the Power BI app for iOS on an iPhone"
-   description="Learn how the Microsoft Power BI for iOS app on the iPhone brings Power BI to your pocket, with mobile access to business information on premises and in the cloud.""
+   description="Learn how the Microsoft Power BI for iOS app on the iPhone brings Power BI to your pocket, with mobile access to business information on premises and in the cloud."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -98,10 +98,14 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 -  Tap **Favorites**.
 
     ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
-   
-    Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
-    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-favorites.png)
+    You see all your favorites together on this page:
+
+    1. Power BI reports on the Power BI service
+    2. KPIs on Power BI Report Server
+    3. Power BI reports on Power BI Report Server
+
+    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-faves-report-server-number-callouts.png)
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
@@ -133,12 +137,11 @@ Here are some other things you can do in the iPhone app with dashboards in Power
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
 
-### Reporting Services mobile reports and KPIs
+### Reports and KPIs on the Power BI Report Server and Reporting Services web portals
 
-- [View Reporting Services mobile reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) on your iPhone.
-- Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
-- Create [your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
-
+- [View reports and KPIs on the web portal](powerbi-mobile-iphone-kpis-mobile-reportss.md) in the Power BI mobile app for Android devices.
+- Create [KPIs on the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
+- Create [reports in Power BI Desktop and publish them on the Power BI Report Server](reportserver-quickstart-powerbi-report.md) web portal
 
 ### See also
 

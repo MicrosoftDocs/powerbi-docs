@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="05/15/2017"
    ms.author="maggies"/>
 
 # Create a link to a specific location in the mobile apps
@@ -90,6 +90,16 @@ The report page is called "ReportSection" followed by a number. Again, open the 
 For example, see the highlighted section of this URL:
 
 https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**ReportSection11**
+
+## Open in full-screen mode
+
+Add the parameter in bold to open to a specific report in full-screen mode:
+
+    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>**&openFullScreen=true**
+
+For example: 
+
+mspbi://app/OpenReport?ReportObjectId=500217de-50f0-4af1-b345-b81027224033&openFullScreen=true
 
 ## Add context (optional)
  

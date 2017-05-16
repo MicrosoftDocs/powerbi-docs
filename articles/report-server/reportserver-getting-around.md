@@ -153,6 +153,22 @@ Power BI Report Server offers detailed control of the items you store on the web
 
 Read more about [working with subscriptions in the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
 
+## Tag your favorite reports and KPIs
+
+You can tag the reports and KPIs that you want to be favorites. They're easier to find because they're all gathered in a single Favorites folder, both in the web portal and in the Power BI mobile apps. 
+
+1. Select the ellipsis (**…**) in the upper-right corner of the KPI or report that you want to make a favorite, and select **Add to Favorites**.
+
+    ![](media/reportserver-getting-around/report-server-web-portal-favorite-ellipsis.png)
+
+2. Select **Favorites** on the web portal ribbon to see it along with your other favorites on the Favorites page in the web portal.
+
+    ![](media/reportserver-getting-around/report-server-web-portal-favorites.png)
+
+    Now in the Power BI mobile apps you see these favorites along with your favorite dashboards from the Power BI service.
+
+    ![](media/reportserver-getting-around/power-bi-iphone-faves-report-server.png)
+
 ## Hide or view items in the web portal
 
 You can hide items in the web portal, and you can choose to view hidden items.

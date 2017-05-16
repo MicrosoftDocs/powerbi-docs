@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/14/2017"
+   ms.date="05/15/2017"
    ms.author="maggies"/>
 
 # View on-premises reports and KPIs in the Power BI mobile apps
