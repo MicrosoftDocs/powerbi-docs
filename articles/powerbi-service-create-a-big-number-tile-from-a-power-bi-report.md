@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/20/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 # Create a big number tile from a Power BI report
 
@@ -25,7 +25,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
 1.  Create a [dashboard](powerbi-service-dashboards.md) and [get data](powerbi-service-get-data.md).
 
-    If you want data to practice on, try [downloading the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). 
+    If you want data to practice on, [download the Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). 
 
 2.  Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
 

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 # Combo Chart in Power  (Tutorial)
 
@@ -138,7 +138,7 @@ Highlighting a column or line in a combo chart cross-filters the other visualiza
 
 ## See also
 
-[Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
+[Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)
 
 [Visualizations in Power BI  reports](powerbi-service-visualizations-for-reports.md)
 

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/23/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 
 # Filled maps (choropleths) in Power BI (Tutorial)
@@ -111,11 +111,11 @@ If you have permissions to edit the dataset in Power BI Desktop, watch this vide
 
 If you do not have access to latitude and longitude data, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
-For more help with Map visualizations, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations).
+For more help with Map visualizations, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
 
 ## Next steps 
 [Add the filled map as a dashboard tile (pin the visual)](powerbi-service-dashboard-tiles.md)    
- [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
+ [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
  [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)    
  [Change the type of visualization being used](powerbi-service-change-the-type-of-visualization-in-a-report.md)      
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

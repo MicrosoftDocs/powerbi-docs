@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/22/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 
 # Drill down in a visualization in Power BI
@@ -108,8 +108,8 @@ This method uses the **Explore** dropdown from the top Power BI menubar.
 
 [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
 
-[Power BI Preview reports](powerbi-service-reports.md)
+[Power BI reports](powerbi-service-reports.md)
 
-[Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

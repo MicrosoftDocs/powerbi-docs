@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 
 # Part 2, Add visualizations to a Power BI report (Tutorial)
 
-In [Part 1](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report), you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
+In [Part 1](powerbi-service-add-visualizations-to-a-report-ii.md), you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
 
 ## Create a new visualization  
 In this tutorial we'll dig into our Retail Analysis dataset and create a few key visualizations.

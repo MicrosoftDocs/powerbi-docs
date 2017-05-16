@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/13/2017"
+   ms.date="05/15/2017"
    ms.author="mihart"/>
 
 # Create a new Power BI report by importing a dataset
@@ -58,7 +58,7 @@ This method of creating a report starts with a dataset and a blank report canvas
 
 ##    Add a Radial Gauge to the report
 
-Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](powerbi-service-visualization-types-for-reports.md) for displaying this type of information.
+Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](powerbi-service-visualizations-for-reports.md) for displaying this type of information.
 
 1. In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
 
