@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 
 # Radial gauge charts in Power BI (Tutorial)
@@ -131,7 +131,7 @@ In Step 2, Power BI used the Value field to automatically set minimum (start) an
 
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
+[Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)
 
 [Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 

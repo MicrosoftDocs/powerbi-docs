@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 
 # Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
@@ -32,7 +32,7 @@ The example below uses a dark gray canvas to show regional sales as a heatmap ag
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-intro-arcgis.png)
 
-**TIP**: Visit [esri's page on Power BI](www.esri.com/powerbi) to see many examples and read testimonials. And then see esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+**TIP**: Visit [esri's page on Power BI](https://www.esri.com/powerbi) to see many examples and read testimonials. And then see esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
 
 
 ## User consent
@@ -75,7 +75,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 ### Enable the ArcGIS map preview ***in Power BI Desktop***
 
-The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). To follow along, [download the Excel samples](power-bi-sample-downloads).  Then load the Retail Analysis sample into Desktop by selecting **File > Import > Excel workbook contents**.
+The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). To follow along, [download the Excel samples](powerbi-sample-datasets.md).  Then load the Retail Analysis sample into Desktop by selecting **File > Import > Excel workbook contents**.
 
 1. Select **File > Options and Settings > Options > Preview Features**.
 
@@ -94,7 +94,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 <br/>
 
 ## Create an AcrGIS map visual
-Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](power-bi-sample-datasets.md).
+Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](powerbi-sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 

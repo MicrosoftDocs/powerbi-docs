@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/15/2017"
    ms.author="mihart"/>
 
 # Custom visualizations in Power BI
@@ -28,11 +28,9 @@ The custom visuals in the Office store fall into 2 categories: **Office store ap
 
 To see the list of certified custom visuals or to submit your own, see [Certified custom visuals](powerbi-custom-visuals-certified.md).
 
-- Are you a Web developer and interested in creating your own visualizations and adding them to the store?  See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) and learn how to [publish custom visuals to the Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) to learn how.
+- Are you a Web developer and interested in creating your own visualizations and adding them to the store?  See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) and learn how to [publish custom visuals to the Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI).
 
 - Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s details page, listed as **Provider**.
-
-<iframe src="https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/321/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 ##    Next steps
 
