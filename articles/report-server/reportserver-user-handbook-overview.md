@@ -70,6 +70,6 @@ You create these paginated reports with [Report Builder](https://docs.microsoft.
 
 [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
 [Quickstart: Paginated reports](reportserver-quickstart-paginated-report.md)  
-[Quickstart: Power BI reports](reportserver-quickstart-powerbi-report)
+[Quickstart: Power BI reports](reportserver-quickstart-powerbi-report.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
