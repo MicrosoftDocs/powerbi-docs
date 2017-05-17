@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="05/16/2017"
    ms.author="maggies"/>
 
 # View on-premises reports and KPIs in the Power BI mobile apps
@@ -37,11 +37,11 @@ The Power BI mobile apps deliver live, touch-enabled mobile access to your on-pr
 
 **The mobile apps are where you view Power BI content, not where you create it.**
 
--  You and other report creators in your organization create Power BI reports with Power BI Desktop, then publish them to the Power BI Report Server web portal. 
+-  You and other report creators in your organization [create Power BI reports with Power BI Desktop, then publish them to the Power BI Report Server](reportserver-quickstart-powerbi-report.md) web portal. 
 -  You [create Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](https://msdn.microsoft.com/library/mt637133.aspx).  
 -   You create [KPIs right in the web portal](https://msdn.microsoft.com/library/mt683632.aspx), organize them in folders, and mark your favorites so you can find them easily. 
 
-Then in the Power BI mobile apps, connect to up to five Power BI Report Server report servers to view the Power BI reports and KPIs, organized in folders or collected as favorites. 
+Then in the Power BI mobile apps, connect to up to five report servers to view the Power BI reports and KPIs, organized in folders or collected as favorites. 
 
 ## Explore samples in the mobile apps without a server connection
 
@@ -55,7 +55,7 @@ Even if you don't have access to a Reporting Services web portal, you can still 
 
 ## Connect to an on-premises server
 
-You can view on-premises Power BI reports, Reporting Services mobile reports, and KPIs. 
+You can view on-premises Power BI reports, Reporting Services mobile reports, and KPIs in the Power BI mobile apps. 
 
 1.  On your mobile device, open the Power BI app.
 
@@ -88,35 +88,29 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-left-nav-report-server.png)
 
-## View Power BI reports, Reporting Services mobile reports, and KPIs in the Power BI app
+## View Power BI reports and KPIs in the Power BI app
 
 Power BI reports, Reporting Services mobile reports, and KPIs are displayed in the same folders they're in on the Reporting Services web portal. 
-
-- Tap a Power BI report to interact with it in the Power BI app.
-
-
-- Tap a KPI to see it in focus mode.
-
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_SSMRP_Tile.png)
 
 - Tap a Power BI report to open and interact with it in the Power BI app.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-report-server-report.png)
 
+- Tap a KPI to see it in focus mode.
+
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPad_SSMRP_Tile.png)
+
 ## View your favorite KPIs and reports
 
-You can mark KPIs and reports as favorites on the web portal, and then view them in one convenient folder on your mobile device, along with your Power BI favorite dashboards and reports.
+You can mark KPIs and reports as favorites on the web portal, and then view them in one convenient folder on your mobile device, along with your Power BI favorite dashboards.
 
 -  Tap **Favorites**.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ipad-faves-pbi-report-server.png)
    
-    Your favorites from the web portal are all on this page:
-    1. Power BI reports on the Power BI service
-    2. KPIs on Power BI Report Server
-    3. Power BI reports on Power BI Report Server
+    Your favorite KPIs and reports from the web portal are all on this page, along with Power BI dashboards in the Power BI service:
 
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-faves-report-server-number-callouts.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ipad-favorites.png)
 
 ## Remove a connection to a report server
 

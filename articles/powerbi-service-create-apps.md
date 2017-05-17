@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/16/2017"
    ms.author="maggies"/>
 
 # Create and distribute an app in Power BI
@@ -186,6 +186,17 @@ But it’s easy to update it if you’re an admin or member of the app workspace
      ![](media/powerbi-service-create-apps/power-bi-app-update.png)
 
 The people you’ve distributed the app to will automatically see the updated version of the app. 
+
+## Unpublish an app
+
+Any member of an app workspace can unpublish the app.
+
+- In an app workspace, select the ellipsis (**...**) in the upper-right corner > **Unpublish app**.
+
+     ![](media/powerbi-service-create-apps/power-bi-mobile-app-unpublish.png)
+
+This action uninstalls the app for everyone you've distributed it to, and they no longer have access to it. It doesn't delete the app workspace or its contents.
+
 
 ## Power BI apps FAQ 
 

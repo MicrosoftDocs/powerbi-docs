@@ -93,7 +93,7 @@ Read more about [finding your content in the mobile apps](powerbi-mobile-find-co
 
 ## View your favorite dashboards, KPIs, and reports
 
-You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites list page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
+On the Favorites page in the mobile apps, you see all of your favorite Power BI dashboards, together with Power BI Report Server and Reporting Services KPIs and reports. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
 
 -  Tap **Favorites**.
 
@@ -101,11 +101,11 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
     You see all your favorites together on this page:
 
-    1. Power BI reports on the Power BI service
+    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-faves-report-server-number-callouts.png)
+
+    1. Dashboards on the Power BI service
     2. KPIs on Power BI Report Server
     3. Power BI reports on Power BI Report Server
-
-    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-faves-report-server-number-callouts.png)
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
@@ -121,7 +121,7 @@ Read more about [configuring Power BI mobile apps with Microsoft Intune](powerbi
 
 ## Next steps
 
-Here are some other things you can do in the iPhone app with dashboards in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
+Here are some other things you can do in the iPhone app with dashboards and reports in Power BI, and reports and KPIs in the Power BI Report Server or Reporting Services web portal.
 
 ### Power BI dashboards and reports
 
@@ -137,9 +137,9 @@ Here are some other things you can do in the iPhone app with dashboards in Power
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
 
-### Reports and KPIs on the Power BI Report Server and Reporting Services web portals
+### Reports and KPIs on the report server web portals
 
-- [View reports and KPIs on the web portal](powerbi-mobile-iphone-kpis-mobile-reportss.md) in the Power BI mobile app for Android devices.
+- [View reports and KPIs on the web portal](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Power BI mobile app for iOS devices.
 - Create [KPIs on the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
 - Create [reports in Power BI Desktop and publish them on the Power BI Report Server](reportserver-quickstart-powerbi-report.md) web portal
 

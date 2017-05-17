@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="05/16/2017"
    ms.author="maggies"/>
 
 # Favorite dashboards and on-premises reports in the mobile apps 
@@ -42,11 +42,7 @@ You can mark KPIs and reports as favorites on a Power BI Report Server or Report
 
     You see all your favorites together on this page:
 
-    1. Power BI reports on the Power BI service
-    2. KPIs on Power BI Report Server
-    3. Power BI reports on Power BI Report Server
-
-    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-faves-report-server-number-callouts.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-ipad-favorites.png)
 
 ## Make a Power BI dashboard a favorite in the iOS and Windows 10 mobile apps
 You can make a dashboard a favorite from the list of dashboards or from the dashboard itself.
