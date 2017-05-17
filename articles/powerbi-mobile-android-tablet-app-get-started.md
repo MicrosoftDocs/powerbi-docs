@@ -28,8 +28,8 @@ The Power BI mobile app for Android tablets delivers the mobile BI experience fo
 
 You create Power BI reports in Power BI Desktop, and publish them:
 
-- Publish them to the [Power BI service](powerbi-service-get-started.md), and create dashboards.
-- Publish them on-premises to Power BI Report Server.
+- [Publish them to the Power BI service](powerbi-service-get-started.md), and create dashboards.
+- [Publish them on-premises to Power BI Report Server](reportserver-quickstart-powerbi-report.md).
 
 Then in the Power BI app for Android tablets, you interact with your dashboards and reports, whether on-premises or in the cloud. 
 Find out [what's new in the Power Bi mobile apps](powerbi-mobile-whats-new-in-the-mobile-apps.md).
