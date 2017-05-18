@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId=""
+   featuredVideoId="G26dr2PsEpk"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # Featured dashboards in Power BI
@@ -40,7 +40,8 @@ If you haven't yet set a Featured dashboard, Power BI will open to the last dash
 
 Watch Amanda create a featured dashboard and then follow the instructions below the video to try it out yourself.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7-gQWhUZSsk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
+
 
 
 1. Open the dashboard that you'd like to set as *Featured*. 
