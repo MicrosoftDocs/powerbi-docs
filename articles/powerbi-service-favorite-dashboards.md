@@ -7,6 +7,7 @@
    manager="erikre"
    backup=""
    editor=""
+   featuredVideoId="G26dr2PsEpk"
    tags=""
    qualityFocus="no"
    qualityDate=""/>
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # Favorite dashboards in the Power BI service
@@ -29,6 +30,10 @@ When you make a dashboard a *favorite*,  you'll be able to access it from all of
 You can also select a single dashboard as a [Featured dashboard](powerbi-service-featured-dashboards.md) in Power BI.
 
 ## Add a dashboard as a *favorite*
+Watch Amanda add favorites to her workspace, then follow the step-by-step instructions below the video to try it out yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
+
 
 1.  Open a dashboard that you use often. Even dashboards that have been shared with you can be a *favorite*.
 

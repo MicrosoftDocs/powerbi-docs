@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2017"
+   ms.date="05/14/2017"
    ms.author="mihart"/>
 
 # Visualizations in Power BI  
@@ -33,7 +33,7 @@ Data visualizations (aka visuals) allow you to interact with your data to find b
 [Create visualizations](powerbi-service-add-visualizations-to-a-report-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
 
 ## Upload a custom visualization and use it in Power BI
-Add a custom visualization that you created yourself or that you found in the [community gallery](http://visuals.powerbi.com). Feeling creative? Dig into our source code and use our developer tools to create a new visualization type and [share it with the community](http://visuals.powerbi.com)
+Add a custom visualization that you created yourself or that you found in the [Office store](https://store.office.com/en-us/appshome.aspx?productgroup=PowerBI). Feeling creative? Dig into our source code and use our developer tools to create a new visualization type and [share it with the community](http://visuals.powerbi.com)
 
 ## Change the visualization type  
 Try [changing the type of visualization](powerbi-service-change-the-type-of-visualization-in-a-report.md) to see which works best with your data.

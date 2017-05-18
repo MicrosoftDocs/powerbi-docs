@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/17/2017"
+   ms.date="05/15/2017"
    ms.author="mihart"/>
 
 # Visualization interactions in a Power BI report
@@ -49,7 +49,7 @@ To change this default behavior, use the **Visuals Interaction** control.
 
 3.  Repeat for all other visualizations on the report page.
 
-## See also
+### See also
 
  [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
 

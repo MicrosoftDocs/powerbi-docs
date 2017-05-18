@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="HivEJ5lN3l4"
+   featuredVideoId="e2PD8m1Q0vU"
    qualityFocus="identified"
    qualityDate=""/>
 
@@ -18,12 +18,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # Add image, text, video, and more to your dashboard
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HivEJ5lN3l4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
+
 
 >**NOTE**: The "Add widget" feature has been renamed "Add tile".
 

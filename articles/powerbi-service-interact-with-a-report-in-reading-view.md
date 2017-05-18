@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="05/15/2017"
    ms.author="mihart"/>
 
 # Interact with a report in Reading View in Power BI
@@ -88,7 +88,7 @@ To display that same visualization without the distraction of menubars, filter p
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-full-screen.png)
 
-To learn more, see [Focus mode for reports](powerbi-service-display-dash-in-focus-mode.md) and [Full Screen mode for reports](powerbi-service-display-dash-and-reports-fullscreen.md)
+To learn more, see [Focus mode for reports](powerbi-service-display-dash-in-focus-mode.md) and [Full Screen mode for reports](powerbi-service-dash-and-reports-fullscreen.md)
 
 ##  Adjust the display dimensions
 Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  To adjust, select **View** and choose:

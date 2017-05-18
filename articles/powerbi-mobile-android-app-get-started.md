@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/14/2017"
+   ms.date="05/16/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI for Android mobile app
@@ -28,8 +28,8 @@ The Android app for Microsoft Power BI delivers the mobile BI experience for Pow
 
 You create Power BI reports in Power BI Desktop, and publish them:
 
-- Publish them to the [Power BI service](powerbi-service-get-started.md), and create dashboards.
-- Publish them on-premises to Power BI Report Server.
+- [Publish them to the Power BI service](powerbi-service-get-started.md), and create dashboards.
+- [Publish them on-premises to Power BI Report Server](reportserver-quickstart-powerbi-report.md).
 
 Then in the Power BI app for Android phones, you interact with your dashboards and reports, whether on-premises or in the cloud.
 
@@ -63,7 +63,7 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
     > [AZURE.IMPORTANT] If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](powerbi-mobile-android-could-not-sign-you-in.md) for details on how to resolve the issue.
 
-    To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
+    To view your Power BI Report Server and Reporting Services reports and KPIs, tap **SQL Server Reporting Services**.
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-android-connect.png)
 
@@ -104,15 +104,15 @@ Your dashboards and reports are stored in different locations in the Power BI mo
 
 ## View your favorite dashboards, KPIs, and reports
 
-You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
+On the Favorites page in the mobile apps, you see all of your favorite Power BI dashboards, together with Power BI Report Server and Reporting Services KPIs and reports. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-favorites-left-nav.png)
+    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
    
-    Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
+    Your Power BI favorites and your favorites from the Power BI Report Server and Reporting Services web portal are all on this page.
 
-    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-ssrs-favorites.png)
+    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-favorites-callouts.png)
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
@@ -128,7 +128,7 @@ Read more about [configuring Power BI mobile apps for Android with Microsoft Int
 
 ## Next steps
 
-Here are some other things you can do in the Android phone app for Power BI with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
+Here are some other things you can do in the Android phone app for Power BI with dashboards and reports in Power BI, and reports and KPIs in the Power BI Report Server or Reporting Services web portal.
 
 ### Power BI dashboards and reports
 
@@ -142,11 +142,11 @@ Here are some other things you can do in the Android phone app for Power BI with
 -   [Scan a Power BI QR code](powerbi-mobile-qr-code-for-tile.md) to open a related dashboard tile or report. 
 -   View [notifications about updates to your Power BI account](powerbi-mobile-notification-center.md), such as dashboards that colleagues share with you.
 
-### Reporting Services mobile reports and KPIs
+### Reports and KPIs on the Power BI Report Server and Reporting Services web portals
 
-- [View Reporting Services mobile reports and KPIs](powerbi-mobile-android-kpis-mobile-reports.md) in the Android phone app for Power BI.
-- Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
-- [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
+- [View reports and KPIs on the web portal](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Power BI mobile app for Android devices.
+- Create [KPIs on the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
+- Create [reports in Power BI Desktop and publish them on the Power BI Report Server](reportserver-quickstart-powerbi-report.md) web portal
 
 ### See also
 

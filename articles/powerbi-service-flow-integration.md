@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/21/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # Microsoft Flow and Power BI
