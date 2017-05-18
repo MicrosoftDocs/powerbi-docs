@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17s/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # Add an image to a Power BI dashboard
