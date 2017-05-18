@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId=""
+   featuredVideoId="B2vd4MQrz4M"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # View related content in Power BI service
@@ -37,16 +37,21 @@ As you've probably already discovered, reports are built on datasets, report vis
 
 ## Enable the new navigation preview
 
-1.  To get started, make sure you’ve enabled the new navigation preview. From Power BI service, select the cog icon ![](media/powerbi-service-related-content/power-bi-settings-icon.png) and choose **Settings**.
+1. To get started, make sure you’ve enabled the new navigation preview. From Power BI service, select the cog icon ![](media/powerbi-service-related-content/power-bi-settings-icon.png) and choose **Settings**.
 
     ![](media/powerbi-service-related-content/power-bi-settings-menu.png)
 
-2.   Select the **General** tab and choose **Preview features**. Turn **On** the New navigation preview and select **Apply**.
+2. Select the **General** tab and choose **Preview features**. Turn **On** the New navigation preview and select **Apply**.
 
     ![](media/powerbi-service-related-content/power-bi-preview-features.png)
 
 ##   View related content for a dashboard         
  
+Watch Will view related content for a dashboard. Then follow the step-by-step instructions below the video to try it out yourself with the Procurement Analysis sample dataset.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
+
+
 You'll need at least *view* permissions to a dashboard to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis.md).
 
 **Method 1**
@@ -56,6 +61,7 @@ In a workspace, select the **Dashboards** tab and then select the **View related
 ![](media/powerbi-service-related-content/power-bi-view-related-dash.png)
 
 <br>
+
 **Method 2**
 
 With a dashboard open, select   ![](media/powerbi-service-related-content/power-bi-view-related.png) from the top menubar.

@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="Y4sRWbo8JcE"
+   featuredVideoId="B2vd4MQrz4M"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # Power BI - basic concepts for Power BI service
@@ -47,7 +47,8 @@ We'll dig into these later, but first let's review some Power BI concepts.
 
 Or, you might want to watch this video first before reading the rest of this article.  In the video, Will reviews the basic concepts and gives a tour of Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Y4sRWbo8JcE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
+
 
 ## Power BI concepts
 

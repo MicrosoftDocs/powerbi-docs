@@ -7,6 +7,7 @@
    manager="erikre"
    backup=""
    editor=""
+   featuredVideoId="G26dr2PsEpk"
    tags=""
    qualityFocus="no"
    qualityDate=""/>
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/04/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # The new Power BI navigation experience
@@ -27,8 +28,6 @@
 We've redesigned the navigation experience to make it easier for you to find and navigate your Power BI content.  
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-navbar.png)
-
-
 
 -  streamlined the lists for dashboards, reports, workbooks, and datasets
 
@@ -45,6 +44,10 @@ We've redesigned the navigation experience to make it easier for you to find and
 -  created a separate area for your most-recent content
 
 -   reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen. For example, switching between dashboards and reports.
+
+Watch Amanda take you on a tour of the new navigation experience, explaining and demonstrating the improvements.  Then follow the step-by-step instructions below the video to explore for yourself.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 ##  Content View
 

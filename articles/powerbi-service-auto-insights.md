@@ -8,7 +8,7 @@
    backup=""
    editor=""
    tags=""
-   featuredVideoId="EOASjs5mj6s"
+   featuredVideoId="et_MLSL2sA8"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 
@@ -34,8 +34,9 @@ The Insights feature is built on a growing [set of advanced analytical algorithm
 
 ## Run Quick Insights on a dataset
 
-Watch Amanda run Insights on a sample dataset, pin one of these Insights as a tile on her dashboard, and open an Insight in Focus mode.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EOASjs5mj6s" frameborder="0" allowfullscreen></iframe>
+Watch Amanda run Insights on a dataset, open an Insight in Focus mode, pin one of these Insights as a tile on her dashboard, and then get Insights for a visual.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
+
 
 Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis sample](powerbi-sample-supplier-quality-analysis-take-a-tour.md).
 

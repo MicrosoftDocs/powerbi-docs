@@ -8,6 +8,7 @@
    backup=""
    editor=""
    tags=""
+   featuredVideoId="G26dr2PsEpk"
    qualityFocus="no"
    qualityDate=""/>
 
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="05/17/2017"
    ms.author="mihart"/>
 
 # Display the Power BI dashboards that have been shared with me
@@ -27,8 +28,10 @@
 
 When a colleague shares a dashboard with you, its title is added to your **Shared with me** list. The dashboard is only available from **Shared with me** and not available from a workspace or from **Apps**.
 
+Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself.
 
-![](media/powerbi-service-shared-with-me/power-bi-shared-with-me-new.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
+
 
 You'll have many options for interacting with the dashboard and underlying report, depending on the permissions the owner gives you. These include being able to make copies of the dashboard, open the report [in Reading view](powerbi-service-interact-with-a-report-in-reading-view.md), and re-share with other colleagues.
 

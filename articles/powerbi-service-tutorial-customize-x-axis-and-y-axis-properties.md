@@ -6,10 +6,11 @@
    authors="mihart"
    manager="erikre"
    backup=""
+   featuredVideoID="9DeAKM4SNJM"
    editor=""
    tags=""
    qualityFocus="complete"
-   qualityDate="05/23/2016"/>
+   qualityDate="05/16/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -17,13 +18,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 # Customize X-axis and Y-axis properties (Tutorial)
 
 In this tutorial you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes or can be customized; Pie charts, for example, don't have axes. And customization options vary from visual to visual, too many options to cover in a single article. So we'll take a look at some of the most-used axes customizations and get you comfortable using the visual formatting tab in the Power BI report canvas.  
 
 >[AZURE.NOTE] This page applies to both Power BI service and Power BI Desktop. These customizations, which are available when the **Format** (the paint roller icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) is selected, are also available in Power BI Desktop.  
+
+Watch Amanda customize her X and Y axes and demonstrate the various ways to control concatenation when using drill-up and drill-down. Then follow the step-by-step instructions below the video to try it out yourself using the Retail Analysis sample.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9DeAKM4SNJM" frameborder="0" allowfullscreen></iframe>
+
 
 ## Customizing visualization X-axes in reports
 

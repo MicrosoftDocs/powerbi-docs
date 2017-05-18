@@ -7,6 +7,7 @@
    manager="erikre"
    backup=""
    editor=""
+   featuredVideoId="IkJda4O7oGs"
    tags=""
    qualityFocus="monitoring"
    qualityDate=""/>
@@ -17,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="05/16/2017"
    ms.author="mihart"/>
 
 # Customize visual titles, legends, and backgrounds (Tutorial)
@@ -26,6 +27,11 @@ In this tutorial you'll learn many different ways to customize your visualizati
 -   visualization titles  
 -   visualization backgrounds  
 -   visualization legends
+
+Watch Amanda customize visualizations in her report (fast-forward to 4:50 in the video). Then follow the instructions below the video to try it out yourself with your own data.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
+
 
 ## Customize visualization titles in reports    
 I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
