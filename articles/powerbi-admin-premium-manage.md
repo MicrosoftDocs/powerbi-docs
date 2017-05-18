@@ -55,11 +55,11 @@ After you have purchased Power BI Premium, you will then need to manage your cap
 **Capacity admins only:**  
 ![](media/powerbi-admin-premium-manage/admin-portal-capacity-admin.png "Premium settings within the admin portal for capacity admins")
 
-Selecting **Premium settings** will take you to the Premium capacity management screen.
+Selecting **Premium settings** will take you to the premium capacity management screen.
 
 ### Setting up a new capacity
 
-When you add a new capacity, either seeing one listed in the Premium capacities list, or selecting **Purchase more**, you will see the capacity listed and the status will show **Set up new capacity**.
+When you add a new capacity, either seeing one listed in the premium capacities list, or selecting **Purchase more**, you will see the capacity listed and the status will show **Set up new capacity**.
 
 ![](media/powerbi-admin-premium-manage/new-capacity.png "Set up new capacity")
 
@@ -81,7 +81,7 @@ Capacity admins, as well as Power BI admins and Office 365 Global Admins, will t
 
 Within the Premium capacity management screen, you can select the **gear icon (settings)** under actions. This will allow you to rename or delete a capacity. It will also indicate who the service admins are, the SKU/size of the capacity and what region the capacity is in.
 
-![](media/powerbi-admin-premium-manage/capacity-actions.png "Capacity actions within the Premium capacity management area")
+![](media/powerbi-admin-premium-manage/capacity-actions.png "Capacity actions within the premium capacity management area")
 
 ![](media/powerbi-admin-premium-manage/capacity-settings.png "Capacity settings")
 
@@ -97,19 +97,27 @@ If no workspaces have been assigned to the capacity, you will see a message allo
 
 #### User permissions
 
-You assign addition **Capacity admins** as well as assign users that will have **capacity assignment permissions**. Users that have assignment permissions can actually assign a workspace to the capacity in addition to the admins. Users with assignment permissions will not have access to the admin portal.
+You assign addition **Capacity admins** as well as assign users that will have **capacity assignment permissions**. Users that have assignment permissions can assign an App workspace to the capacity. Users with assignment permissions will not have access to the admin portal.
+
+> [AZURE.NOTE] Even if you are listed as a **Capacity admin**, you will not see the capacity in the advaced dropdown of an App workspace unless you are listed as a user with assignment permissions.
 
 ![](media/powerbi-admin-premium-manage/capacity-user-permissions.png)
 
 ![](media/powerbi-admin-premium-manage/capacity-user-permissions2.png)
 
-## Assign a workspace to a Premium capacity
+## Usage measurements
 
-There are a few ways that a workspace could be assigned to a Premium capacity.
+For each capacity, you will be able to use usage measurements for CPU, memory and Direct Query. Each KPI has three indications, **Good**, **Marginal** and **Critical**.
+
+![](media/powerbi-admin-premium-manage/usage-metrics-critical.png "Capacity usage metrics - critical")
+
+## Assign a workspace to a premium capacity
+
+There are a few ways that a workspace could be assigned to a premium capacity.
 
 ### Premium capacity management in admin portal
 
-Capacity admins, along with Power BI admins and Office 365 global admins, can assign workspaces within the Premium capacity management section of the admin portal. When you manage a capacity, you will see a Workspaces section that allows you to assign workspaces.
+Capacity admins, along with Power BI admins and Office 365 global admins, can assign workspaces within the premium capacity management section of the admin portal. When you manage a capacity, you will see a **Workspaces** section that allows you to assign workspaces.
 
 ![](media/powerbi-admin-premium-manage/capacity-manage-workspaces.png)
 
@@ -118,8 +126,8 @@ Capacity admins, along with Power BI admins and Office 365 global admins, can as
 
     |Selection|Description|
     |---|---|
-    |**The entire organization's workspaces**|Assigning the entire organization's workspaces to Premium capacity gives all current and future users the permission to reassign individual workspaces to this capacity. This dedicated capacity will become the organization's default capacity.|
-    |**Specific workspaces by user**|When you assign workspaces by user, all of the workspaces that the user belongs to become part of Premium capacity, including the user's personal workspace. The user automatically gets workspace assignment permissions.|
+    |**The entire organization's workspaces**|Assigning the entire organization's workspaces to premium capacity gives all current and future users the permission to reassign individual workspaces to this capacity. This dedicated capacity will become the organization's default capacity.|
+    |**Specific workspaces by user**|When you assign workspaces by user, all of the workspaces that the user belongs to become part of premium capacity, including the user's personal workspace. The user automatically gets workspace assignment permissions.<br>If a workspace is already assigned to a capacity, it stay in its currently assigned capacity.|
 
 3. Select **Apply**.
 
@@ -127,6 +135,21 @@ Capacity admins, along with Power BI admins and Office 365 global admins, can as
 
 ### App workspace settings
 
+You can also assign an App Workspace to a premium capacity from the settings of that workspace. To assign an App workspace to a premium capacity, do the following.
+
+1. Edit an app workspace by selecting the **ellipsis (...)** and selecting **Edit workspace**.
+
+    ![](media/powerbi-admin-premium-manage/edit-app-workspace.png)
+
+2. Within **Edit workspace**, expand **Advanced**.
+3. If you have been given capacity assignment permissions to any capacity, you will have the option to turn **Premium** on for this workspace.
+4. Select the capacity that you want to assign this App workspace to.
+
+    ![](media/powerbi-admin-premium-manage/app-workspace-advanced.png)
+
+5. Select **Save**.
+
+> [AZURE.NOTE] Even if you are listed as a **Capacity admin**, you will not see the capacity in the advaced dropdown of an App workspace unless you are listed as a user with assignment permissions.
 
 ## What Premium looks like for users
 

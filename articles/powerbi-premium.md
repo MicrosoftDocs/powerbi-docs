@@ -46,8 +46,6 @@ You can assign workspaces to your dedicated capacity. When a workspace is backed
 *<sup>2</sup> EM3 SKU only allows consumption through embedded APIs and controls, NOT Apps or Email subscriptions*  
 *<sup>3</sup> Future enhancements coming to Power BI Premium post GA*
 
-
-
 If an App workspace is backed by dedicated capacity, the published app can then be used by any user in your organization regardless of the license they are assigned. This means that even Power BI Free users can use those published apps.
 
 Here is a look at some of the benefits of Premium.
