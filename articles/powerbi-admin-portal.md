@@ -220,9 +220,10 @@ Users in the organization can tag dashboards with classifications indicating das
 
 > [AZURE.NOTE] This settings applies to the entire organization and cannot be limited to specific groups.
 
-## See also
+## Next steps
 
 [Understanding the Power BI admin role](powerbi-admin-role.md)  
 [Auditing Power BI in your organization](powerbi-admin-auditing.md)  
 [Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
