@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="05/18/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI for Android mobile app
@@ -63,9 +63,9 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
     > [AZURE.IMPORTANT] If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](powerbi-mobile-android-could-not-sign-you-in.md) for details on how to resolve the issue.
 
-    To view your Power BI Report Server and Reporting Services reports and KPIs, tap **SQL Server Reporting Services**.
+    To view your Power BI Report Server and Reporting Services reports and KPIs, tap **Report Server**.
 
-    ![](media/powerbi-mobile-android-app-get-started/power-bi-android-connect.png)
+    ![](media/powerbi-mobile-android-app-get-started/power-bi-connect-to-login.png)
 
 ## Try the Power BI and Reporting Services samples  
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
