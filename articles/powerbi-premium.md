@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/11/2017"
+   ms.date="05/19/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium - what is it?
@@ -39,9 +39,11 @@ You can assign workspaces to your dedicated capacity. When a workspace is backed
 - Huge dataset storage with no user quotas
 - Higher dataset refresh rates
 
+![](media/powerbi-premium/powerbi-capacity-tiers.png)
+
 If an App workspace is backed by dedicated capacity, the published app can then be used by any user in your organization regardless of the license they are assigned. This means that even Power BI Basic users can use those published apps.
 
-Here is a look at some
+Here is a look at some of the benefits of Premium.
 
 - Large datasets
 - Incremental refresh
@@ -52,14 +54,14 @@ Here is a look at some
 
 ### Capacity nodes
 
-Power BI Premium is available in node configurations with different v-cor capacities. For more information about specific SKU offereings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available.
+Power BI Premium is available in node configurations with different v-core capacities. For more information about specific SKU offereings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available.
 
 - P nodes can be used for embedded (Platform as a Service - PaaS) or service (Software as a Service - SaaS) deployments
 - EM nodes can only be used for embedded deployments and do not allow for App distribution to Basic users.
 
 ## Power BI Report Server
 
-Power BI Premium includes the right to run Power BI Report Server on-premises. For more infomation, see Get started with Power BI Report Server.
+Power BI Premium includes the right to run Power BI Report Server on-premises. For more infomation, see [Get started with Power BI Report Server](report-server/reportserver-get-started.md).
 
 ## Next steps
 
