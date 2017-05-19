@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/05/2017"
+   ms.date="05/18/2017"
    ms.author="maggies"/>
 
 # Find your dashboards and reports on your mobile device
@@ -33,7 +33,7 @@ Your dashboards and reports are stored in different locations in the Power BI mo
 ![Power BI new navigation](media/powerbi-mobile-find-content-mobile-devices/power-bi-mobile-find-content.png)
 
 1. [Favorites](powerbi-mobile-find-content-mobile-devices.md#1-favorites)
-2. [SQL Server Reporting Services servers](powerbi-mobile-find-content-mobile-devices.md#2-sql-server-reporting-services-servers) (optional)
+2. [Report servers](powerbi-mobile-find-content-mobile-devices.md#2-report-servers) (optional)
 2. [Apps](powerbi-mobile-find-content-mobile-devices.md#3-apps)
 3. [Shared with me](powerbi-mobile-find-content-mobile-devices.md#4-shared-with-me)
 4. [Workspaces](powerbi-mobile-find-content-mobile-devices.md#5-workspaces)
@@ -42,9 +42,9 @@ Your dashboards and reports are stored in different locations in the Power BI mo
 
 Collect the dashboards and apps you view most often by tagging them as favorites. Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
-## 2 SQL Server Reporting Services servers
+## 2 Report servers
 
-You may have connections to one or more Reporting Services servers. If you do, the KPIs and mobile reports on the server show up here. If you've made any of them favorites on the server, they also show up in your Favorites list. Read more about [Reporting Services KPIs and reports in the Power BI mobile apps](powerbi-mobile-iphone-kpis-mobile-reports.md).
+You may have connections to one or more on-premises Power BI Report Server or SQL Server Reporting Services servers. If you do, the KPIs, Power BI reports, and paginated reports on the server show up here. If you've made any of them favorites on the server, they also show up in your Favorites list. Read more about [viewing on-premises KPIs and reports in the Power BI mobile apps](powerbi-mobile-iphone-kpis-mobile-reports.md).
 
 ## 3 Apps
 

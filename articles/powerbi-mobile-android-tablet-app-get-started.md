@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="05/18/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Android tablets
 
 The Power BI mobile app for Android tablets delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. 
 
-![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-dashboard.png)
+![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-report.png)
 
 You create Power BI reports in Power BI Desktop, and publish them:
 
@@ -62,11 +62,11 @@ If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)
 
     >**Important**: If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](powerbi-mobile-android-could-not-sign-you-in.md) for details on how to resolve the issue.
 
-    To view your Power BI Report Server and Reporting Services reports and KPIs, tap **SQL Server Reporting Services**.
+    To view your on-premises Power BI Report Server and Reporting Services reports and KPIs, tap **Report Server**.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-connect.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-connect-to-login.png)
 
-    Give your SSRS server sign-in information to [view Power BI Report Server and Reporting Services reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Android tablet app for Power BI.
+    Give your report server sign-in information to [view Power BI Report Server and Reporting Services reports and KPIs](powerbi-mobile-iphone-kpis-mobile-reports.md) in the Android tablet app for Power BI.
 
 
 ## Try the Power BI and Reporting Services samples  
@@ -114,7 +114,7 @@ On the Favorites page in the mobile apps, you can view all of your favorite Powe
    
     Your Power BI favorites and your favorites from the Power BI Report Server and Reporting Services web portal are all on this page.
 
-    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-ssrs-favorites.png)
+    ![](media/powerbi-mobile-android-tablet-app-get-started/power-bi-android-tablet-favorites.png)
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 

@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/05/2017"
+   ms.date="05/18/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -39,7 +39,12 @@ Go to Shared with me in the mobile app menu to see all the content that's been s
 **New menu: Apps**
 An app is a collection of dashboards and reports built by your organization to deliver key metrics for faster and easier data-driven decisions.
 
-Read more about the [new way your Power BI content is organized](powerbi-mobile-find-content-mobile-devices.md).
+Read more about [how your Power BI content is organized](powerbi-mobile-find-content-mobile-devices.md).
+
+### iOS and Android devices
+
+**Power BI Report Server preview**
+Create and publish Power BI reports on premises. Then [view and interact with them in your iOS or Android](powerbi-mobile-iphone-kpis-mobile-reports.md) mobile device. 
 
 ## April 2017
 
