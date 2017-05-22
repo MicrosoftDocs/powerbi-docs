@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="05/22/2017"
    ms.author="maggies"/>
 
 # Get started with Power BI for iOS on the iPad  
@@ -52,7 +52,7 @@ Go to Power BI (https://powerbi.com) to sign up for the service, if you haven't 
 
     To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**. Sign in with your SQL Server Reporting Services credentials.
 
-    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-connect-to.png)
+    ![](media/powerbi-mobile-ipad-app-get-started/power-bi-connect-to-login.png)
 
     > [AZURE.TIP] When you're in the app, tap the global navigation button ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner to go between the two services. 
 

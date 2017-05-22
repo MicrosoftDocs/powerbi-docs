@@ -52,9 +52,9 @@ Go to Power BI (https://powerbi.com) for the service, if you haven't already. It
 2.  To view your Power BI dashboards, tap **Power BI**.  
    To view your Reporting Services mobile reports and KPIs, tap **SQL Server Reporting Services**.
 
-    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-connect-powerbi-ssrs.png)
+    ![](media/powerbi-mobile-iphone-app-get-started/power-bi-connect-to-login.png)
 
-    >**Tip**: When you're in the app, tap the global navigation button ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner to go between the two. 
+    > [AZURE.TIP] When you're in the app, tap the global navigation button ![](media/powerbi-mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) in the upper-left corner to go between the two. 
 
 ## Try the Power BI and Reporting Services samples  
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the global navigation.
