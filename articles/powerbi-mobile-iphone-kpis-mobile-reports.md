@@ -93,13 +93,13 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 
 Power BI reports, Reporting Services mobile reports, and KPIs are displayed in the same folders they're in on the Reporting Services web portal. 
 
-- Tap a Power BI report ![](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-report-icon.png). It opens in landscape mode, and you can interact with it in the Power BI app.
+- Tap a Power BI report ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-rs-mobile-report-icon.png). It opens in landscape mode, and you can interact with it in the Power BI app.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-report-server-report.png)
 
-- In Power BI Desktop, report owners can [optimize a report](powerbi-desktop-create-phone-report.md) for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-icon.png), and layout.
+- In Power BI Desktop, report owners can [optimize a report](powerbi-desktop-create-phone-report.md) for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-rs-mobile-optimized-icon.png), and layout.
 
-    ![](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-report.png)
+    ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-rs-mobile-optimized-report.png)
 
 - Tap a KPI to see it in focus mode.
 
