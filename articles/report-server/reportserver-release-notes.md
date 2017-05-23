@@ -25,7 +25,7 @@ This topic describes limitations and issues with Power BI Report Server.
 
  **Download** ![download](media/download.png "download")
 
-To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=837581).
+To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=55253).
 
 ## May 2017
 
