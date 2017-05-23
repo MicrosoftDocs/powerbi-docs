@@ -17,16 +17,14 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/07/2016"
+   ms.date="05/23/2017"
    ms.author="maikelson"/>
 
 # Power BI webinars
 
-The following webinars can help you to understand and use Power BI. To watch the video, select the link to **register** or **watch** the webinar.
+The following webinars can help you to understand and use Power BI. To watch the webinars, click the link to **register** or **watch**.
 
 ## Upcoming webinars
-
-[Power BI security deep dive by Kasper de Jonge - 5/23/17](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
 [Dashboard in an Hour Webinar with Reid Havens - 5/24/17](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Dashboard-in-an-Hour-Webinar-with-Reid-Havens-5-24-17/m-p/175975?Is=Website)
 
@@ -42,15 +40,17 @@ The following webinars can help you to understand and use Power BI. To watch the
 
 [Unleash the Power of Power BI – tips and tricks by Philip Seamark - 6/22/17](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/6-22-2017-Unleash-the-Power-of-Power-BI-tips-and-tricks-by/m-p/161490?Is=Website)
 
-Find more upcoming and on-demand webinars at the [Power BI Community Video Gallery](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&Is=Website)
+Find more upcoming webinars at the [Power BI Community Video Gallery](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&Is=Website)
 
 ## On-Demand webinars
-Webinars are available on-demand after the live broadcast. You can also find more on-demand webinars at the [**Power BI Community Video Gallery**](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&Is=Website)
+Webinars are available on-demand after the live broadcast. You can also find more on-demand webinars at the [Power BI Community Video Gallery](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&Is=Website)
 
 ### Latest webinars
 Watch our latest webinars on-demand.
 
 [Accelerating modern BI adoption with Power BI Premium - May 2017](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
+
+[Power BI security deep dive by Kasper de Jonge - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
 [Ask a Partner: Developing Custom Visuals for Power BI - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
@@ -72,8 +72,6 @@ Watch our latest webinars on-demand.
 
 ### Community webinars
 
-[Ask a Partner: Developing Custom Visuals for Power BI - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
-
 [Deep dive into data modeling using Power BI desktop and SQL Server Analysis Services - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Deep-dive-into-data-modeling-using-Power-BI-desktop-and-SQL/m-p/158625?Is=Website)
 
 [Accelerate your Retail Business with Analytics by Hitachi Solutions - Feb 2016](https://info.microsoft.com/US-PowerBI-WBNR-FY17-02Feb-02-AccelerateyourBusinessIntelligencePractices290297_01Registration-ForminBody.html?Is=Website)
@@ -93,4 +91,5 @@ Watch our latest webinars on-demand.
 [How to build production ready event application in less than a week with Power Apps - January 2017](https://info.microsoft.com/US-EAD-WBNR-FY17-01Jan-17-Howtobuildproductionreadyeventapplication288881_01Registration-ForminBody.html?Is=Website)
 
 ## See also
+[Power BI whitepapers](powerbi-whitepapers.md)
 [Get started with Power BI](powerbi-service-get-started.md)
