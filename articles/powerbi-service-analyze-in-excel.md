@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2017"
+   ms.date="05/24/2017"
    ms.author="davidi"/>
 
 # Analyze in Excel
@@ -79,6 +79,8 @@ In order to analyze your Power BI data in Excel, you are prompted to verify the 
 Now that Excel has opened and you have an empty PivotTable, you're ready to do all sorts of analysis with your Power BI dataset. Just as with other local workbooks, with Analyze with Excel you can create PivotTables, charts, add data from other sources, and so on. And of course, you can create different worksheets with all sorts of views into your data.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_chart.png)
+
+> **Note:** It's important to know that using **Analyze in Excel** exposes all detail-level data to any users with permission to the dataset.
 
 ## Save
 You can save this Power BI dataset connected workbook just like any other workbook. However, you cannot publish or import the workbook back into Power BI because you can only publish or import workbooks into Power BI that have data in tables, or that have a data model. Since the new workbook simply has a connection to the dataset in Power BI, publishing or importing it into Power BI would be going in circles!
