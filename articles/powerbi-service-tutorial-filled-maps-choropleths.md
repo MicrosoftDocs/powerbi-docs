@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="05/24/2017"
    ms.author="mihart"/>
 
 # Filled maps (choropleths) in Power BI (Tutorial)
@@ -27,9 +27,13 @@ A filled map uses shading or tinting or patterns to display how a value differs 
 
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/large_map.png)
 
-> **Note:** When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+##    What is sent to Bing
 
-> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
+>**Important**: Power BI sends Bing all the data that is used to create the visualization.
+
+Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, **all** the data in all the fields being used to create that visualization are sent to Bing.
+
+For more information about the data being sent to Bing, and for tips to increase your geocoding success, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
 
 ## When to use a filled map  
 Filled maps are a great choice:

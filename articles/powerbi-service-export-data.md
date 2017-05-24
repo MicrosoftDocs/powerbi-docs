@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/29/2017"
+   ms.date="05/23/2017"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
@@ -79,6 +79,8 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
     ![](media/powerbi-service-export-data/power-bi-export-data7.png)
 
 7.  Now try selecting **Underlying data** > **Export** and choosing .xlsx. Power BI exports the data. If you had applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+
+    >**Warning**: Exporting underlying data allows users to see all the detailed data -- every column in the data. If you are a dataset owner, you can [turn this off for your tenant](xxx) or you can set proprietary columns to "hidden".
 
     **Underlying data**: select this option if your visualization does have an aggregate and you'd like to see all the underlying details. Basically, selecting *Underlying data* removes the aggregate. When you select **Export**, the data is exported to an .xlsx file and your browser prompts you to save the file. Once saved, open the file in Excel.
 
