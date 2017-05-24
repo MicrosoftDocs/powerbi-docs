@@ -69,7 +69,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 4.  Power BI adds an empty ArcGIS map template to the report canvas.
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2new.png)
 
 <br/>
 
