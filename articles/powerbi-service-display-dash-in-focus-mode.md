@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="05/25/2017"
    ms.author="mihart"/>
 
 # Display a dashboard tile or report visual in Focus mode
@@ -51,9 +51,5 @@
 ## Go from Focus mode to Full Screen mode
 Once in Focus mode, the tile or visual can then be [viewed in full screen (TV Mode.)](powerbi-service-display-tile-in-full-screen-mode.md) Full Screen Mode displays without the distraction of menus and navigation buttons.
 
-
-## Next steps  
-[Go from Focus mode to Full screen mode](powerbi-service-display-tile-in-full-screen-mode.md)    
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
