@@ -18,12 +18,30 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/13/2017"
+   ms.date="05/24/2017"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations
 
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, use the following tips. The first set of tips are for you to use if you have access to the dataset itself. And the second set of tips are things you can do in Power BI.
+
+##    What is sent to Bing
+
+>**Important**: Power BI sends Bing all the data that is used to create the visualization.
+
+When you create a map visualization in Power BI service or Power BI Desktop, **all** the data in all the fields being used to create that visualization are sent to Bing. 
+
+In the example below, the field **Plant** is being used for geocoding, but data in the fields **Total Downtime Minutes** and **Total Downtime Minutes Goal** are also sent to Bing. 
+
+![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-sent-to-bing.png)
+
+
+And if your visualization uses additional filters for the visual, page, or report, that data is also sent to Bing.
+
+In the example below, that includes data for **Category**, **Vendor**, and **Material Type**.
+
+![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-bing-filters.png)
+ 
 
 ##  In the dataset: tips to improve the underlying dataset
 
@@ -61,7 +79,7 @@ For more information, including a video, see [Maps in Power View](https://suppor
 
 **5. Use specific Latitude and Longitude**
 
-Add latitude and longitude values to your dataset. This removes any ambiguity. Latitude and Longitude fields must be in *Decimal Number* format, which you can set in the data model.
+Add latitude and longitude values to your dataset. This removes any ambiguity and returns results more quickly. Latitude and Longitude fields must be in *Decimal Number* format, which you can set in the data model.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 

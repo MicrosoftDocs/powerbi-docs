@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="ArcGIS maps by ESRI in Power BI service(Take a tour)"
+   pageTitle="ArcGIS maps by ESRI in Power BI service (Take a tour)"
    description="Take a tour of ArcGIS maps by ESRI in Power BI service"
    services="powerbi"
    documentationCenter=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="05/23/2017"
    ms.author="mihart"/>
 
 # Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
@@ -89,7 +89,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 4.  Power BI adds an empty ArcGIS map template to the report canvas.
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2new.png)
 
 <br/>
 
@@ -98,13 +98,19 @@ Watch Will create a few different ArcGIS map visualizations and then use the ste
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 
+>**Important**: Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, **all** the data in all the fields being used to create that visualization are sent to Bing.
+
+   For more information about the data being sent to Bing, and for tips to increase your geocoding success, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
+
 1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and/or **Longitude** buckets. In this example we're using **Store > City**.
 
     >**NOTE**: ArcGIS Maps for Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane3new.png)
 
-2.  From the **Fields** pane, drag a measure to the **Size** or **Color** buckets to adjust how the data is shown. In this example we're using **Sales > Last Year Sales**.
+2.  Convert the visualization to an ArcGIS map by selecting the template from the Visualizations pane ![](media/powerbi-service-tutorial-arcgis/power-bi-arcgis-template.png).
+
+3. From the **Fields** pane, drag a measure to the **Size** bucket to adjust how the data is shown. In this example we're using **Sales > Last Year Sales**.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size2new.png)
 
@@ -114,11 +120,11 @@ To access **ArcGIS Maps for Power BI** formatting features:
 
 1.  Access additional features by selecting the ellipses in the top right corner of the visualization and choosing **Edit**,
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-edit.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-edit2.png)
 
     The available features display across the top of the visualization. Each feature, when selected, opens a task pane that provides detailed options.<br/>
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-features.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-features-new.png)
 
     > **NOTE**:  For more information about the settings and features, see **Detailed documentation** below.
 
@@ -136,7 +142,7 @@ Four base maps are provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap,
 
 To apply a base map select it in the task pane.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps2.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps.png)
 
 
 #### Location type
