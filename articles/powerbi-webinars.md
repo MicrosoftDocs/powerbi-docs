@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/23/2017"
+   ms.date="05/26/2017"
    ms.author="maikelson"/>
 
 # Power BI webinars
@@ -25,10 +25,6 @@
 The following webinars can help you to understand and use Power BI. To watch the webinars, click the link to **register** or **watch**.
 
 ## Upcoming webinars
-
-[Dashboard in an Hour Webinar with Reid Havens - 5/24/17](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Dashboard-in-an-Hour-Webinar-with-Reid-Havens-5-24-17/m-p/175975?Is=Website)
-
-[Deploying your PowerApps applications by James Oleinik - 5/25/17](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-25-2017-Deploying-your-PowerApps-applications-by-James-Oleinik/m-p/161478?Is=Website)
 
 [Power BI visualization best practices by Marco Russo - 5/31/17](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-31-2017-Power-BI-visualization-best-practices-by-Marco-Russo/m-p/161482?Is=Website)
 
@@ -50,13 +46,11 @@ Watch our latest webinars on-demand.
 
 [Accelerating modern BI adoption with Power BI Premium - May 2017](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
 
+[Dashboard in an Hour Webinar with Reid Havens - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Dashboard-in-an-Hour-Webinar-with-Reid-Havens-5-24-17/m-p/175975?Is=Website)
+
+[Deploying your PowerApps applications by James Oleinik - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-25-2017-Deploying-your-PowerApps-applications-by-James-Oleinik/m-p/161478?Is=Website)
+
 [Power BI security deep dive by Kasper de Jonge - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
-
-[Ask a Partner: Developing Custom Visuals for Power BI - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
-
-[Connecting to On-Premises data from PowerApps by Archana Nair And Dimah Zaidalkilani - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-16-2017-Connecting-to-On-Premises-data-from-PowerApps-by/m-p/161475?Is=Website)
-
-[Deep dive into data modeling using Power BI desktop and SQL Server Analysis Services - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Deep-dive-into-data-modeling-using-Power-BI-desktop-and-SQL/m-p/158625?Is=Website)
 
 ###  Introductory webinars
 
@@ -71,6 +65,12 @@ Watch our latest webinars on-demand.
 [Walking through the development process for creating custom visuals for Power BI - January 2017](https://info.microsoft.com/US-PowerBI-WBNR-FY17-01Jan-10-Walkingthroughtthedevelopmentprocess288895_02OnDemandRegistration.html?Is=Website)
 
 ### Community webinars
+
+[Ask a Partner: Developing Custom Visuals for Power BI - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
+
+[Connecting to On-Premises data from PowerApps by Archana Nair And Dimah Zaidalkilani - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-16-2017-Connecting-to-On-Premises-data-from-PowerApps-by/m-p/161475?Is=Website)
+
+[Deep dive into data modeling using Power BI desktop and SQL Server Analysis Services - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Deep-dive-into-data-modeling-using-Power-BI-desktop-and-SQL/m-p/158625?Is=Website)
 
 [Deep dive into data modeling using Power BI desktop and SQL Server Analysis Services - May 2017](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Deep-dive-into-data-modeling-using-Power-BI-desktop-and-SQL/m-p/158625?Is=Website)
 
@@ -92,4 +92,5 @@ Watch our latest webinars on-demand.
 
 ## See also
 [Power BI whitepapers](powerbi-whitepapers.md)
+
 [Get started with Power BI](powerbi-service-get-started.md)
