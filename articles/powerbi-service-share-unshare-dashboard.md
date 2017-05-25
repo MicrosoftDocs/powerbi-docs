@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2017"
+   ms.date="05/25/2017"
    ms.author="maggies"/>
 
 # Share dashboards and reports with colleagues and others
@@ -27,11 +27,11 @@
 
 ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-in-situ.png)
 
-You can share a dashboard from your own My Workspace, or from an app workspace. When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless row-level security (RLS) is applied. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. You can also share with people outside your organization. They can view and interact with the dashboard too, but can't share it. 
+Whether you share content inside or outside your organization, you and your recipients need a Power BI Pro license. See [What is Power BI Pro?](powerbi-power-bi-pro-content-what-is-it.md) for more information.
+
+You can share a dashboard from your own My Workspace, or from an app workspace. When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless row-level security (RLS) is applied. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. The people outside your organization can view and interact with the dashboard too, but can't share it. 
 
 You can also [share a dashboard from any of the Power BI mobile apps](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md). You can share dashboards from the Power BI service and the Power BI mobile apps, but not from Power BI Desktop.
-
-> [AZURE.NOTE] Whether you share content inside or outside your organization, you and your recipients need a Power BI Pro license. See [Power BI Pro content - What is it?](powerbi-power-bi-pro-content-what-is-it.md) for more information.
 
 ## Video: Share a dashboard
 Watch Amanda share her dashboard with colleagues inside and outside her company. Then follow the step-by-step instructions below the video to try it out yourself.
@@ -56,15 +56,13 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 3.  To let your colleagues reshare your dashboard with others, check **Allow recipients to share your dashboard**.
 
-    Only colleagues in your organization can reshare your dashboard. People outside your organization can view your dashboard but not reshare it.
-
 4.  Select **Share.**
 
 	Power BI sends an email invitation with a link to the shared dashboard. Clicking the link adds the dashboard to your recipients' **Shared with me** list page. They can select your name to see all the dashboards you've shared. 
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-shared-with-me-list-page.png)
 
-    > [AZURE.NOTE]  The sharing experience is different for people outside your organization. See [When you share with people outside your organization](powerbi-service-share-unshare-dashboard.md#when-you-share-your-dashboard-with-people-outside-your-organization) below for details.
+    > [AZURE.NOTE]  The sharing experience is different for people outside your organization. See [When you share with people outside your organization](powerbi-service-share-unshare-dashboard.md#sharing-your-dashboard-with-people-outside-your-organization) below for details.
 
 5.  To see who you've already shared the dashboard with, in the **Share dashboard** dialog box select **Access**.
 
@@ -111,7 +109,7 @@ Only your direct recipients can see the shared dashboard. In the example above, 
 
 People outside your organization can't see any data if role- or row-level security is implemented on on-premises Analysis Services tabular models.
 
-> [AZURE.NOTE] You can’t share dashboards with external users who have a Power BI Pro trial license. They need regular Power BI Pro licenses to access those dashboards. [What is Power BI Pro content?](powerbi-power-bi-pro-content-what-is-it.md)
+> [AZURE.NOTE] You can’t share dashboards with external users who have a Power BI Pro trial license. They need regular Power BI Pro licenses to access those dashboards. 
 
 ## Sharing just a report
 We've seen that when you share a dashboard with tiles that link to reports, those reports are also shared at the same time. But what if you want to share just a report? Just send the report page URL to your colleagues. As long as they have Power BI Pro licenses, are members of the same distribution group, in the same email domain as you, or have at least one dashboard that links to that same report (the dashboard has tiles that were pinned from that report), they'll be able to open the report.
@@ -121,7 +119,7 @@ What if you want to share a filtered version of a report? Maybe a report that on
 
 1.   Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md), apply the filter, and save the report. 
 
-    In this example we're filtering the [Retail Analysis sample](powerbi-sample-tutorial-connect-to-the-samples.md) to show only **Territory NC**.
+    In this example we're filtering the [Retail Analysis sample](powerbi-sample-tutorial-connect-to-the-samples.md) to only show values where **Territory** equals **NC**.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-filter-report2.png)
 
@@ -151,7 +149,7 @@ People outside your organization can't reshare.
 
 ## Unshare a dashboard
 
-1.  Open the dashboard and select **Share** ![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png).
+1.  Open the dashboard and select **Share** ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-icon.png).
 
 2.  Select **Access** to see the complete list of people.
 
