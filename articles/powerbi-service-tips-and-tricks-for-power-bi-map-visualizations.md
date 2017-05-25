@@ -27,16 +27,16 @@ Power BI integrates with Bing to provide default map coordinates (a process call
 
 ##    What is sent to Bing
 
->**Important**: Power BI sends Bing all the data that is used to create the visualization.
+>**Important**: Power BI sends Bing the data it needs to create the visualization.
 
-When you create a map visualization in Power BI service or Power BI Desktop, **all** the data in all the fields being used to create that visualization are sent to Bing. 
+When you create a map visualization in Power BI service or Power BI Desktop, **all** the data in the location, latitude, and longitude buckets being used to create that visualization are sent to Bing. 
 
-In the example below, the field **Plant** is being used for geocoding, but data in the fields **Total Downtime Minutes** and **Total Downtime Minutes Goal** are also sent to Bing. 
+In the example below, the field **Plant** is being used for geocoding, so all Plant data is sent to Bing. 
 
 ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-sent-to-bing.png)
 
 
-And if your visualization uses additional filters for the visual, page, or report, that data is also sent to Bing.
+And if your visualization uses additional location filters for the visual, page, or report, that data is also sent to Bing.
 
 In the example below, that includes data for **Category**, **Vendor**, and **Material Type**.
 
