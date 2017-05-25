@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/03/2017"
+   ms.date="05/24/2017"
    ms.author="davidi"/>
 
 # Use Quick measures to easily perform common and powerful calculations (Preview)
@@ -134,6 +134,10 @@ In this preview release of the **Quick measures**, there are a few limitations a
 -   **Quick measures** are only available if you can modify the model, which isn't the case when you're working with DirectQuery or Live connections.
 -   The measure that's added to the **Fields** well can be used with any visual in the report.
 -   You can always see the DAX associated with a **Quick measure** by selecting the created measure in the **Fields** well, then looking at the formula in the **Formula bar**.
+
+
+>   **Warning:** Quick measures currently *only* generate DAX statements with commas for argument separators. If your version of **Power BI Desktop** is localized to a language that uses commas as decimal separators, quick measures will not operate properly.
+
 
 We anticipate providing examples and guidance for each of the **Quick measures** calculations, so please check back soon for updates on that focused article.
 

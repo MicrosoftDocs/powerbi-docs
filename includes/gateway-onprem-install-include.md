@@ -10,7 +10,7 @@ For Power BI, the first choice you have to make is the mode of the gateway.
 
 -	**Personal:** This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh. This will launch the installation of the personal gateway.
 
-> [AZURE.NOTE] If you install the gateway in personal mode, you will not be able to install another gateway on the same machine. 
+> [AZURE.NOTE] Regardless of which mode of gateway you select, you can only install one gateway on a computer.
 
 ![on-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
 
@@ -42,12 +42,12 @@ After you are signed in, you will have the option to configure a new gateway, or
 
 ### Migrate, restore or take over an existing gateway
 
-You will need to select the gateway you want to recover and supply the recovery key that was used to first create the gateway. 
+You will need to select the gateway you want to recover and supply the recovery key that was used to first create the gateway.
 
 ### On-premises data gateway connected
 
-Once the gateway is configured, you will be able to make use of it to connect to on-premises data sources. 
+Once the gateway is configured, you will be able to make use of it to connect to on-premises data sources.
 
-If the gateway is for Power BI, you will need to add your data sources to the gateway within the Power BI service. This is done within the **Manage gateways** area. You can refer to the manage data sources articles for more information. 
+If the gateway is for Power BI, you will need to add your data sources to the gateway within the Power BI service. This is done within the **Manage gateways** area. You can refer to the manage data sources articles for more information.
 
 For PowerApps, you will need to select a gateway for a defined connection for supported data sources. For Flow and Logic Apps, this gateway is ready to be used with your on-premises connections.
