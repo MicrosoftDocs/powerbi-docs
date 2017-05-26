@@ -18,12 +18,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/25/2017"
+   ms.date="05/26/2017"
    ms.author="maggies"/>
 
 # Share dashboards and reports with colleagues and others
 
-*Sharing* is one way to give other people access to your dashboards and reports. Sharing is useful if you only want a few other people to access your work. Power BI offers several ways to collaborate and distribute your dashboards, and sharing is just one. See [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to compare them. 
+*Sharing* is one way to give other people access to your dashboards and reports. Sharing is useful if you want some other people to access your work. Power BI offers several ways to collaborate and distribute your dashboards, and sharing is just one. See [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to compare them. 
 
 ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-in-situ.png)
 
@@ -48,7 +48,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-dialog.png)  
 
-    You can share with people whose addresses are outside your organization, but you'll see a warning.
+    If you share with people whose addresses are outside your organization, you'll see a warning.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-outside-organization.png)  
 
@@ -72,7 +72,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 ## Notes about sharing a dashboard
 
-Here are things to keep in mind about sharing dashboards:
+Things to keep in mind about sharing dashboards:
 
 -   Your colleagues need a Power BI Pro license to see your dashboard.
 
@@ -108,8 +108,6 @@ They can't edit any content in this dashboard or report. They can interact with 
 Only your direct recipients can see the shared dashboard. In the example above, only Vicki@contoso.com can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
 
 People outside your organization can't see any data if role- or row-level security is implemented on on-premises Analysis Services tabular models.
-
-> [AZURE.NOTE] You can’t share dashboards with external users who have a Power BI Pro trial license. They need regular Power BI Pro licenses to access those dashboards. 
 
 ## Sharing just a report
 We've seen that when you share a dashboard with tiles that link to reports, those reports are also shared at the same time. But what if you want to share just a report? Just send the report page URL to your colleagues. As long as they have Power BI Pro licenses, are members of the same distribution group, in the same email domain as you, or have at least one dashboard that links to that same report (the dashboard has tiles that were pinned from that report), they'll be able to open the report.

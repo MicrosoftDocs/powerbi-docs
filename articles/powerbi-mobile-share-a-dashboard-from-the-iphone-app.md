@@ -182,7 +182,7 @@ Only the dashboard owner can unshare a dashboard.
     > [AZURE.NOTE]  Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
 
 
-## See also
+## Next steps
 
 - [Annotate & share a snapshot of a tile, report, or visual in the mobile apps](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)
 - [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
