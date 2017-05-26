@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="05/25/2017"
    ms.author="mihart"/>
 
 # Printing from Power BI service
@@ -100,7 +100,7 @@ Reports can be printed one page at a time.
 
 
 *   Q: My printout isn't scaled correctly.  My dashboard doesn't fit on the page. Other scaling and orientation questions.    
-*   A: Things like scaling, margins, orientation, size are not controlled by Power BI. For help with issues like this, refer to the documentation for your specific browser.      
+*   A: We cannot guarantee that the printed copy will be exactly the same as it appears in Power BI service. Things like scaling, margins, visual details,orientation, and size are not controlled by Power BI. For help with issues like this, refer to the documentation for your specific browser.      
 
 ##    Next steps
 

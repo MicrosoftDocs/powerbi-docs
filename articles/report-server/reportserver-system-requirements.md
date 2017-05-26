@@ -36,6 +36,18 @@ Here you will find the minimum hardware and software requirements to install and
 
 > [AZURE.NOTE Installation of Power BI Report Server is supported on x64 processors only.
 
+## Database server version requirements
+
+SQL Server is used to host the report server databases. The SQL Server Database Engine instance can be a local or remote instance. The following are the supported versions of SQL Server Database Engine that can be used to host the report server databases:
+
+* SQL Server 2016
+* SQL Server 2014
+* SQL Server 2012
+* SQL Server 2008 R2
+* SQL Server 2008
+
+Creating the report server database on a remote computer requires that you configure the connection to use a domain user account or a service account that has network access. If you decide to use a remote SQL Server instance, consider carefully which credentials the report server should use to connect to the SQL Server instance. For more information, see [Configure a Report Server Database Connection](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
+
 ## Considerations
 
 Power BI Report Server will install default values to configure the core settings required to make a report server operational. It has the following requirements:
