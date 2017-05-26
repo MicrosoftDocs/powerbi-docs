@@ -68,7 +68,7 @@ Within the Activity screen, you can select **Download** in the toolbar. This wil
 
 You can use PowerShell to export the sign-in data. A [sample](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script) is available within the Azure AD documentation.
 
-> [AZURE.NOTE] For the PowerShell sample to work, you have to following the [pre-requisites to access the Azure AD reporting API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-prerequisites).
+> [AZURE.NOTE] For the PowerShell sample to work, be sure to follow the [pre-requisites to access the Azure AD reporting API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-prerequisites).
 
 ## Data retention
 
