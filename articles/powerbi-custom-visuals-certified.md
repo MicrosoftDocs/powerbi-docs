@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/12/2017"
+   ms.date="05/23/2017"
    ms.author="mihart"/>
 # Getting a custom visual *certified*
 
@@ -60,10 +60,13 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 
 |Name  |
 |---------|
+|[Bullet Chart](https://store.office.com/en-us/app.aspx?assetid=WA104380755&sourcecorrid=48334e83-53cf-4bc0-a022-1da4d06618b9&searchapppos=0)   |
+|Card with States by OKViz - coming soon |
 |[Chiclet slicer ](https://store.office.com/chiclet-slicer-WA104380756.aspx?assetid=WA104380756&sourcecorrid=83cc564f-4d8f-40f7-85bc-5488c1309a58&searchapppos=0)    |
-|[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx?assetid=WA104380786&sourcecorrid=a21a11dd-be97-4758-879c-0d6dc56d5657&searchapppos=0)    |
 |[Dual KPI](https://store.office.com/dual-kpi-WA104380774.aspx?assetid=WA104380774&sourcecorrid=b76ac0d1-a367-46f3-bc56-677102c9b784&searchapppos=0)     |
-
+|KPI Status With History / KPI Indicator - coming soon   |
+|Tachometer-coming soon   |
+|[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx?assetid=WA104380786&sourcecorrid=a21a11dd-be97-4758-879c-0d6dc56d5657&searchapppos=0)    |
 
 
 
@@ -76,5 +79,4 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
 [Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
-[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

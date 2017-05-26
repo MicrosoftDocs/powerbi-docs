@@ -1,5 +1,5 @@
 <properties
-   pageTitle="How should I collaborate on & share dashboards and reports?"
+   pageTitle="How should I collaborate and share dashboards and reports?"
    description="In Power BI you can collaborate on and share dashboards, reports, and tiles in several different ways. Each has its advantages."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/05/2017"
+   ms.date="05/18/2017"
    ms.author="maggies"/>
 
-# How should I collaborate on & share dashboards and reports?  
+# How should I collaborate and share dashboards and reports?  
 
 You create dashboards and reports, and sometimes you collaborate on them with your colleagues. Then you want others to have access to them, too. What's the best way to distribute them?
 
@@ -29,7 +29,7 @@ In this article, we'll talk about options for collaborating and sharing in Power
 - Collaborating with colleagues to create meaningful reports and dashboards in *app workspaces*.
 - Bundling the finished dashboards and reports into *apps*, and distributing them to a larger group or your whole organization.
 - Sharing dashboards from the service or the Power BI mobile apps.
-- Publishing to the web, where anyone can interact with them. 
+- Publishing to the web, where anyone can interact with them.
 - Printing. 
 
 This article compares these and other activities.
@@ -38,7 +38,7 @@ This article compares these and other activities.
 
 *Apps in the Power BI service*
 
-> [AZURE.NOTE] In most cases, the people you collaborate and share with need [Power BI free or Pro](https://powerbi.microsoft.com/) licenses before they can see your dashboards and reports. Read more about [Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/).
+> [AZURE.NOTE] In most cases, the people you collaborate and share with need [Power BI free or Pro](https://powerbi.microsoft.com/pricing/) licenses before they can see your dashboards and reports. Read more about [Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/).
 
 ## Collaborate with colleagues to create an app with dashboards and reports
 

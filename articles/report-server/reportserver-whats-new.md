@@ -25,7 +25,7 @@ Learn about what's new in Power BI Report Server. This covers the major feature 
 
  **Download** ![download](media/download.png "download")
 
-To download Power BI Report Server, and Power BI Desktop (Report Server), go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=837581).
+To download Power BI Report Server, and Power BI Desktop (Report Server), go to the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=55253).
 
 ![tip](media/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
