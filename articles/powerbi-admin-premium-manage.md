@@ -16,32 +16,38 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/19/2017"
+   ms.date="05/26/2017"
    ms.author="asaxton"/>
 
 # Manage Power BI Premium
 
 Learn how you can manage Power BI Premium and enable access to content for your entire organization.
 
-The Power BI Premium offering introduces the concept of dedicated capacity, and it is the heart of the offering.
+The Power BI Premium offering introduces the concept of premium capacity, and it is the heart of the offering.
 
 ![](media/powerbi-admin-premium-manage/premium-capacity-management.png)
 
-## What is dedicated capacity?
+## What is Power BI Premium capacity?
 
-Power BI Premium enables dedicated capacity, a set of resources reserved for the excludive use by you. Having your own dedicated capacity allows you to publish BI content to users throughout your organization without having to purchase licenses for them. This is all transparent to your report users. Report users will continue to use Power BI as usual. They don't have to ever be aware that some (or all) of the BI content is hosted in your dedicated capacity. For your users, everything works exactly as before.
+Power BI Premium enables premium capacity, a set of resources reserved for the exclusive use by you. Having your own premium capacity allows you to publish BI content to users throughout your organization without having to purchase licenses for them. It also guarantees dependable, consistent performance for the contents hosted in capacity.
+
+This is all transparent to your report users. Report users will continue to use Power BI as usual. They don't have to ever be aware that some (or all) of the BI content is hosted in your dedicated capacity. For your users, everything works exactly as before.
+
+For more information, see [What is Power BI Premium?](powerbi-premium.md).
 
 ## Purchase Power BI Premium
 
-In order to take advantage of Power BI Premium and dedicated capacity, you will need to purchase a subscription for Power BI Premium within the Office 365 admin center. For more information, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
+To take advantage of Power BI Premium and dedicated capacity, you will need to purchase a subscription for Power BI Premium within the Office 365 admin center. For more information, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
 
 ## Capacity admins
 
-Power BI Premium capacity admins can access the capacity admin portal. From there, they can add more capacity admins or give users capacity assignment permissions. They can bulk assign workspaces to a capacity and view usage metrics on a capacity.
+When a you are assigned as a capacity admin to a premium capacity, you have full control over the capacity and its administrative features. 
+
+Power BI Premium capacity admins can access the capacity admin portal. From there, you can add more capacity admins or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics on a capacity.
 
 For each capacity, you can define capacity admins. Each capacity has its own admins. Defining a capacity admin to one capacity does not give them access to all capacities within your organization.
 
-Capacity admins will be able to manage the capacity through the admin portal. They will only be able to see the capacity items of the admin portal. They will not have access to other areas such as usage metrics, audit logs or tenant settings.
+Capacity admins will be able to manage the capacity through the admin portal. As a capacity admin, you will only be able to see the capacity items of the admin portal for the capacities that you are an admin of. You will not have access to other areas such as usage metrics, audit logs or tenant settings.
 
 > [AZURE.NOTE] All Office 365 Global Admins and Power BI admins are automatically capacity admins.
 
