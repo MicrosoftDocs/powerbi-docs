@@ -28,8 +28,8 @@ In this article, we'll talk about options for collaborating and sharing in Power
 
 - Collaborating with colleagues to create meaningful reports and dashboards in *app workspaces*.
 - Bundling those dashboards and reports into *apps* and distributing them to a larger group or your whole organization.
-- *Sharing* dashboards with a few people, from the service or the Power BI mobile apps.
-- *Publishing to the web*, where anyone can interact with them.
+- Sharing dashboards with a few people, from the service or the Power BI mobile apps.
+- Publishing to the web, where anyone can interact with them.
 - Printing. 
 
 This article compares these and other activities.
@@ -42,7 +42,7 @@ This article compares these and other activities.
 
 ## Collaborate with colleagues to create an app
 
-Say you and your teammates want to distribute your Power BI insights to your organization. The best way to do that is to create an *app*. An app is a collection of dashboards and reports built for your organization, to deliver key metrics. 
+Say you and your teammates want to distribute your Power BI insights to your organization. The best way to do that is to create an *app*. An app is a collection of dashboards and reports built to deliver key metrics for your organization. 
 
 To create an app, you need a *app workspace*, with your teammates as members. Think of the app workspace as a staging area where you and they can collaborate on your Power BI dashboards and reports. All of you can create reports in Power BI Desktop and publish those reports to the app workspace, and all of you need Power BI Pro licenses.
 
