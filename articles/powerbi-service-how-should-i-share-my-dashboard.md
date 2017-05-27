@@ -38,7 +38,7 @@ This article compares these and other activities.
 
 *Apps in the Power BI service*
 
-> [AZURE.NOTE] In most cases, the people you collaborate and share with need [Power BI free or Pro](https://powerbi.microsoft.com/pricing/) licenses before they can see your dashboards and reports. 
+> [AZURE.NOTE] The people you collaborate with need [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md) licenses. In most cases the people you want to see your dashboards need free or Pro licenses. 
 
 ## Collaborate with colleagues to create an app
 
@@ -60,7 +60,7 @@ Apps are easy to find and install in the Power BI service ([https://powerbi.com]
 
 After they install an app, they can view it in their browser or mobile device.
 
-For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium](https://aka.ms/changethislink) for details.
+For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
 
 ## Share a dashboard
 Let's say you've finalized a dashboard in your own My Workspace or in an app workspace and you want some other people to have access to it. One way to get it to them is to *share* it. 

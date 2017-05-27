@@ -32,6 +32,12 @@ With Power BI apps, now in preview, you can create collections of dashboards and
 
 Business users install these apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](powerbi-service-what-are-apps.md).
 
+### Apps and organizational content packs
+
+Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps.
+
+Now that you have an overview of apps, let’s talk about *app workspaces*, where you create apps. 
+
 ## Video: Apps and app workspaces 
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -41,13 +47,7 @@ Business users install these apps from Microsoft AppSource, or you can send them
 There are two licensing scenarios for apps. In either case, as the app creator you need a Power BI Pro license. For your app users, there are two options.
 
 * Option 1: All business users need **Power BI Pro** licenses to view your apps. 
-* Option 2: If your organization has a **Premium subscription** and your app workspace resides in the Power BI Premium capacity, then business users can access the content without a Power BI Pro license. Read more about [What is Power BI Premium?](https://aka.ms/changethislink). 
-
-### Apps and organizational content packs
-
-Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps.
-
-Now that you have an overview of apps, let’s talk about *app workspaces*, where you create apps. 
+* Option 2: If your organization has a **Premium subscription** and your app workspace resides in the Power BI Premium capacity, then business users can access the content without a Power BI Pro license. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
 
 ## App workspaces 
 

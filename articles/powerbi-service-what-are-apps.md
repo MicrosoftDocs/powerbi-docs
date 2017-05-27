@@ -38,7 +38,7 @@ Planning to author an app? See [Create and distribute apps in Power BI](powerbi-
 There are two licensing options for viewing apps.
 
 * Option 1: All business users in your organization need Power BI Pro licenses to view apps. 
-* Option 2: If your organization has a Premium subscription and an app workspace resides in the Power BI Premium capacity, then all business users can access the content without a Power BI Pro license. Read more about [What is Power BI Premium?](https://aka.ms/changethislink). 
+* Option 2: If your organization has a Premium subscription and an app workspace resides in the Power BI Premium capacity, then all business users can access the content without a Power BI Pro license. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
 
 ## Install an app
 
