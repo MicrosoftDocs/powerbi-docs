@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/26/2017"
+   ms.date="05/27/2017"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 

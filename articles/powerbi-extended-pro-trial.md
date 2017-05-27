@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/26/2017"
+   ms.date="05/27/2017"
    ms.author="asaxton"/>
 
 # Extended Pro Trial activation
@@ -26,23 +26,25 @@ Beginning on June 1, 2017, all eligible users will be able to opt-in to the Exte
 
 ![](media/powerbi-extended-pro-trial/extended-pro-trial-activate-pop-up.png "Extended Pro Trial pop-up at sign in")
 
-As part of the [May 3, 2017 Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), Microsoft communicated changes to the free Power BI service effective June 1,2017. These changes include extending access to all data sources, higher workspace storage limits, and higher refresh and streaming rates to the free service, making it equivalent to Power BI Pro.
+<iframe width="640" height="360" src="https://www.youtube.com/embed/tPsNoPyY9aA?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Also announced was that sharing and collaboration features will be exclusive to Power BI Pro users, including peer-to-peer dashboard sharing, group workspaces (now called app workspaces), export to PowerPoint and analyze in Excel with Power BI apps. Note export to CSV/Excel was identified in the May 3 communication as a capability limited to Power BI Pro, but after receiving feedback from the broad user community the strategy has evolved to make the capability available to users of the free service as well.
+As part of the [May 3, 2017 Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), Microsoft communicated changes to the free Power BI service effective June 1,2017. These changes include extending access to all data sources, higher workspace storage limits, and higher refresh and streaming rates to the Free service, making it equivalent to Power BI Pro.
 
-Beginning June 1, 2017 existing users of the free service who have been active within the past year (on or before May 2, 2017) will be eligible for a free, 12-month extended trial of Power BI Pro. The offer will let users take advantage of the full capabilities of Power BI Pro for the next year as a sign of appreciation to the community and to provide users with time to adjust to the changes.
+Also announced was that sharing and collaboration features will be exclusive to Power BI Pro users, including peer-to-peer dashboard sharing, group workspaces (now called app workspaces), export to PowerPoint and analyze in Excel with Power BI apps. Note export to CSV/Excel was identified in the May 3 communication as a capability limited to Power BI Pro, but after receiving feedback from the broad user community the strategy has evolved to make the capability available to users of the Free service as well.
 
-Eligible users received an email from Microsoft on May 3, 2017 along with an in-product notification communicating the pending changes to the free Power BI service and the extended Power BI Pro trial offer. On June 1, 2017 eligible users will receive another notification when they sign into the service letting them know the changes have gone into effect with a prompt to register for the Extended Power BI Pro trial offer. A user’s IT admin does not control the in-product notifications, nor does the IT admin have the ability to register for the extended Power BI Pro trial on behalf of a user. Each eligible user must individually take action to complete this process.
+Beginning June 1, 2017 existing users of the Free service who have been active within the past year (on or before May 2, 2017) will be eligible for a free, 12-month extended trial of Power BI Pro. The offer will let users take advantage of the full capabilities of Power BI Pro for the next year as a sign of appreciation to the community and to provide users with time to adjust to the changes.
 
-Users can opt to register for the offer at any time during the 12-month period, but the extended Power BI Pro trial will conclude for all users on May 31, 2018 regardless of when they accept the offer. At this time users will have the option to purchase Power BI Pro or be converted to the free version of Power BI, without the sharing and collaboration capabilities, if they elect not to take action and purchase Power BI Pro.
+Eligible users received an email from Microsoft on May 3, 2017 along with an in-product notification communicating the pending changes to the Free Power BI service and the extended Power BI Pro trial offer. On June 1, 2017 eligible users will receive another notification when they sign into the service letting them know the changes have gone into effect with a prompt to register for the Extended Power BI Pro trial offer. A user’s IT admin does not control the in-product notifications, nor does the IT admin have the ability to register for the extended Power BI Pro trial on behalf of a user. Each eligible user must individually take action to complete this process.
 
-No changes are being made to Power BI Pro. These users are not impacted and will not receive notifications when signing into the service on June 1, 2017 or after. Users who decline the extended Power BI Pro trial offer or are ineligible for the offer will continue using the free version of Power BI without the sharing and collaboration capabilities. They can register at any time for a standard 60-day Power BI Pro trial by visiting the Power BI [website](https://powerbi.microsoft.com/get-started/).
+Users can opt to register for the offer at any time during the 12-month period, but the extended Power BI Pro trial will conclude for all users on May 31, 2018 regardless of when they accept the offer. At this time users will have the option to purchase Power BI Pro or be converted to the Free version of Power BI, without the sharing and collaboration capabilities, if they elect not to take action and purchase Power BI Pro.
+
+No changes are being made to Power BI Pro. These users are not impacted and will not receive notifications when signing into the service on June 1, 2017 or after. Users who decline the extended Power BI Pro trial offer or are ineligible for the offer will continue using the Free version of Power BI without the sharing and collaboration capabilities. They can register at any time for a standard 60-day Power BI Pro trial by visiting the Power BI [website](https://powerbi.microsoft.com/get-started/).
 
 ## Eligibility for Extended Pro Trial
 
 Your account must meet the following requirements in order to be eligible for the Extended Pro Trial offer.
 
-* Power BI free users active between May 3, 2016 and May 2, 2017 are eligible for an Extended Pro Trial.
+* Power BI Free users active between May 3, 2016 and May 2, 2017 are eligible for an Extended Pro Trial.
 * The Extended Pro Trial runs through May 31, 2018 for all eligible users.
 * Users that have previously used or are currently on the *60-day in-product Pro trial* are still eligible for the Extended Pro Trial.
 
@@ -88,7 +90,7 @@ This notification will have a link to the [Extended Pro Trial offer terms and co
 
 **What happens to new users who signed up after May 3, 2017?**
 
-Users who signed up to Power BI (free) on or after May 3, 2017 are not eligible for the Extended Pro Trial. However, they are eligible for the standard 60-day Pro Trial.
+Users who signed up to Power BI Free on or after May 3, 2017 are not eligible for the Extended Pro Trial. However, they are eligible for the standard 60-day Pro Trial.
 
 **How do I find out who in my organization is eligible for the Extended Pro Trial?**
 
@@ -100,5 +102,6 @@ While there is not a direct way to discover this, you can view the Azure Active 
 
 [Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial)  
 [Power BI Premium announcement](https://aka.ms/pbipremium-announcement)  
+[Find Power BI users that have signed in](powerbi-admin-access-usage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
