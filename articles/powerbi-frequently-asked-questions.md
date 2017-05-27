@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/09/2017"
+   ms.date="05/27/2017"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -37,6 +37,16 @@ Power BI provides all sorts of features to help you get started exploring data i
 ## How much does Power BI cost?
 
 Power BI and Power BI Desktop are free. There is a 60-day free trial available for Power BI Pro. After that, Power BI Pro is $9.99/User/Month. Learn more about our pricing [Power BI pricing](https://powerbi.microsoft.com/pricing).
+
+## Are users who signed up after May 3, 2017 eligible for the Extended Pro Trial?
+
+Users who signed up to Power BI (free) on or after May 3, 2017 are not eligible for the Extended Pro Trial. However, they are eligible for the standard 60-day Pro Trial.
+
+## How do I find out who in my organization is eligible for the Extended Pro Trial?
+
+While there is not a direct way to discover this, you can view the Azure Active Directory Integrated Applications report for Power BI to see who are active users within your organization. Those active users in the eligibility period, and who are on free licenses, will receive the pop-up notification. For more information, see [Find Power BI users that have signed in](powerbi-admin-access-usage.md).
+
+> [AZURE.NOTE] The Azure AD report does not indicate if a user is Free of Pro within Power BI. It only reports which users have signed in to Power BI and when they logged in. If a user is listed in this report, it does not necessarily mean that they are eligible for the Extended Pro Trial.
 
 ## What is Power BI Desktop?
 
