@@ -167,10 +167,23 @@ For the most part, users will not even need to know they are in a Premium capaci
 
 ![](media/powerbi-admin-premium-manage/premium-workspace.png "Diamond showing workspace is backed by Premium capacity")
 
+## Power BI Report Server product key
+
+Withing the **Premium settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
+
+![](media/powerbi-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
+
+Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
+
+![](media/powerbi-admin-premium-manage/pbirs-product-key-dialog.png "Power BI Report Server product key")
+
+For more information, see [Install Power BI Report Server](report-server/reportserver-install-report-server.md).
+
 ## Next steps
 
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
+[Power BI Premium FAQ](powerbi-premium-faq.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Power BI admin portal](powerbi-admin-portal.md)  
 [Understanding the Power BI admin role](powerbi-admin-role.md)  

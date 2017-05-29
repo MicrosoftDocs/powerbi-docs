@@ -83,6 +83,7 @@ You can now manage this capacity within the Power BI admin center. For more info
 [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [Manage Power BI Premium](powerbi-admin-premium-manage.md)  
+[Power BI Premium FAQ](powerbi-premium-faq.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Power BI admin portal](powerbi-admin-portal.md)  
 [Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  

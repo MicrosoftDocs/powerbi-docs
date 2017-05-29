@@ -16,13 +16,15 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2017"
+   ms.date="05/31/2017"
    ms.author="asaxton"/>
 # Power BI admin portal
 
 The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
 
 Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
+
+All users will see **Admin portal** under the gear icon. If they are not an admin, they will only see the **Premium settings** section, and they will only see the capacities they have rights to manage.
 
 ## How to get to the admin portal
 
@@ -36,11 +38,12 @@ To get to the Power BI admin portal, do the following.
 
 ![](media/powerbi-admin-portal/powerbi-admin-settings.png)
 
-Within the portal, there are 3 tabs. These are described below.
--	[Usage metrics](#usage-metrics)
--	[Manage Users](#manage-users)
--	[Audit logs](#audit-logs)
--	[Tenant settings](#tenant-settings)
+Within the portal, there are five tabs. These are described below.
+- [Usage metrics](#usage-metrics)
+- [Users](#users)
+- [Audit logs](#audit-logs)
+- [Tenant settings](#tenant-settings)
+- [Premium settings](#premium-settings)
 
 ![](media/powerbi-admin-portal/powerbi-admin-landing-page.png)
 
@@ -78,7 +81,7 @@ The second section shows the same type of information, but based on groups. This
 
 With this information, you will be able to get real insights into how people are using Power BI across your organization, and be able to recognize those users, and groups, who are very active in your organization.
 
-## Manage users
+## Users
 
 The second tab, in the admin portal, is **Manage Users**. User management, for Power BI, is done in the Office 365 admin center, so this section allows you to quickly reach the area to manage users, admins, and groups within Office 365.
 
@@ -220,10 +223,19 @@ Users in the organization can tag dashboards with classifications indicating das
 
 > [AZURE.NOTE] This settings applies to the entire organization and cannot be limited to specific groups.
 
+## Premium settings
+
+The Premium settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization will see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
+
+![](media/powerbi-admin-portal/premium-settings-no-access.png "No access to Premium settings")
+
+For more information about to manage Premium settings, see [Manage Power BI Premium](powerbi-admin-premium-manage.md).
+
 ## Next steps
 
 [Understanding the Power BI admin role](powerbi-admin-role.md)  
 [Auditing Power BI in your organization](powerbi-admin-auditing.md)  
+[Manage Power BI Premium](powerbi-admin-premium-manage.md)  
 [Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
