@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Purchasing Power BI Pro"
-   description="Purchasing Power BI Pro"
+   description="Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities."
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -17,14 +17,23 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/31/2017"
    ms.author="asaxton"/>
    
 # Purchasing Power BI Pro
 
-Power BI Pro provides access to features that a free user does not have. This includes use of the On-Premises Data Gateway for on-premises data refresh to data sources such as SQL Server, Groups and other features. For more information, see [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md).
+Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities – such as the ability to:
+
+* Edit and save customized views
+* Create personal dashboards (pin to new dashboard)
+* Analyze data in Excel or Power BI Desktop
+* Share with Excel Web App support
+* Share dashboards and collaborate with Office 365 Groups
+* Integrate content with Microsoft Teams
 
 You can purchase Power BI Pro directly through the Power BI website, the Office 365 admin center or through your Microsoft representative or partner. This article will look at the two trial options available for Power BI Pro, and then how to purchase Power BI Pro as an individual, or as an organization.
+
+For more information about Power BI Premium, and how Power BI Pro fits into the Premium offering, see [Power BI Premium - what is it?](powerbi-premium.md).
 
 ## Pricing
 
@@ -32,16 +41,12 @@ For the latest pricing information of Power BI Pro and a table listing of includ
 
 ## Power BI Pro 60 day trial
 
-After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
+You can opt into a free 60 day, in-service, Pro trial as a Free user. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional sharing and collaboration. For more information about capabilities between Free and Pro offerings, see [Free vs. Pro tiers](powerbi-premium.md#free-vs-pro-tiers). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
 
--   Create and publish customized [apps](powerbi-service-what-are-apps.md)
--   Share [refreshable](powerbi-refresh-data.md) team dashboards and reports using [app workspaces](powerbi-service-create-apps.md)
--   Connect to on-premises data using [Personal Gateway](powerbi-personal-gateway.md)
--   Enable live interactive connectivity to the following sources:
-	-   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
-	-   [Spark on Azure HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md)
-	-   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
-	-   [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md)
+* Create and publish customized [apps](powerbi-service-what-are-apps.md)
+* Share team dashboards and reports using [app workspaces](powerbi-service-create-apps.md)
+* [Share dashboards and reports with colleagues and others](powerbi-service-share-unshare-dashboard.md)
+* [Analyze a dataset in Excel](powerbi-service-analyze-in-excel.md)
 
 When you try any of the above features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
 
@@ -56,6 +61,8 @@ Then you can select **Start trial**.
 >-   If you need more time to evaluate Power BI, you can request to extend your trial period for 60 more days.
 >-   Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
 >-   If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO).  You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. [Learn more](powerbi-admin-purchasing-power-bi-pro.md)
+
+> [AZURE.NOTE] With the availability of Power BI Premium, and the changes to the Power BI Free offering on June 1, 2017, you may be eligible for an Extended Pro Trial. For more information, see [Extended Pro Trial activation](powerbi-extended-pro-trial.md).
 
 ### What this looks like within the service
 
@@ -144,9 +151,13 @@ When you are in the service, you can verify that you have a Pro account by going
  
 ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro3.png)
 
-## See also
+## Next steps
 
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[Extended Pro Trial activation](powerbi-extended-pro-trial.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
+[How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
