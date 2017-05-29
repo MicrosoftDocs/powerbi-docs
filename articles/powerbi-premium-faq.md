@@ -179,9 +179,8 @@ Power BI Premium is a capacity-based offering that runs on dedicated hardware an
 **Do I need to migrate my existing app built on Power BI Embedded?**  
 Power BI Embedded will continue to be available for existing apps per the following schedule:
 
-|Scenario 1|Scenario 2|
-|---------|---------|
 |Licensing agreement|Availability of Power BI Embedded|
+|---------|---------|
 |Enterprise Agreement|Until expiration of existing agreement|
 |Direct and CSP|One year from General Availability of Power BI Premium|
 
