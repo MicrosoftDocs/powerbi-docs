@@ -35,12 +35,11 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 |**Isolation with dedicated hardware**|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
 |**Enterprise Distribution to** ***all users***|||
 |Apps|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")<sup>1</sup>|
-|Embedded API and controls|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")<sup>2,3</sup>|
+|Embedded API and controls|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")<sup>2</sup>|
 |**Publish Power BI reports on-premises**|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
 
 *<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights and Cortana.*  
-*<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*  
-*<sup>3</sup> Embedded SKU only allow consumption through embedded APIs and controls, NOT Apps.*
+*<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
 
 ### Premium capacity
 
@@ -63,7 +62,6 @@ By default, your workspace will be in shared capacity. This includes your person
 Power BI Premium is available in node configurations with different v-core capacities. For more information about specific SKU offereings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available.
 
 - P nodes can be used for embedded (Platform as a Service - PaaS) or service (Software as a Service - SaaS) deployments
-- EM nodes can only be used for embedded deployments and do not allow for App distribution to Free users.
 
 |Capacity Node|Cores|Backend Cores|Frontend Cores|
 |---------|---------|---------|---------|
@@ -74,6 +72,8 @@ Power BI Premium is available in node configurations with different v-core capac
 * The frontend cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience.
 
 * The backend cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
+
+> [AZURE.NOTE] The current cost calculator will be updated soon to reflect ISV pricing.
 
 ## Free vs. Pro tiers
 
@@ -86,7 +86,7 @@ Power BI Premium is available in node configurations with different v-core capac
 |**Peer-to-peer sharing**|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
 |**Enterprise distribution**|||
 |Apps|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
-|Export to PowerPoint, Excel, CSV|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
+|Export to PowerPoint, Excel, CSV|![](media/common/available.png "Available")|![](media/common/available.png "Available")|
 |Email subscriptions|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
 |Embed APIs and controls|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
 |**Collaboration**|||
