@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/26/2017"
+   ms.date="05/30/2017"
    ms.author="maggies"/>
 
 # Create and distribute an app in Power BI
@@ -44,18 +44,18 @@ Now that you have an overview of apps, let’s talk about *app workspaces*, wher
 
 ## Licenses for apps
 
-There are two licensing scenarios for apps. In either case, as the app creator you need a Power BI Pro license. For your app users, there are two options.
+As an app creator you need a Power BI Pro license. For your app users, there are two options.
 
-* Option 1: All business users need **Power BI Pro** licenses to view your apps. 
-* Option 2: If your organization has a **Premium subscription** and your app workspace resides in the Power BI Premium capacity, then business users can access the content without a Power BI Pro license. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
+* Option 1: All business users need **Power BI Pro** licenses to view your app. 
+* Option 2: If your organization has a **Premium subscription** and your app workspace is in the Power BI Premium capacity, then business users can access your app with a Power BI free license instead. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
 
 ## App workspaces 
 
-*App workspaces* are the places where you create apps, so to create an app, you first need to create the app workspace. If you’ve ever worked in a group workspaces in Power BI, then app workspaces will be familiar. They’re the evolution of group workspaces – staging areas and containers for the content in the app. 
+*App workspaces* are the places where you create apps, so to create an app, you first need to create the app workspace. If you’ve ever worked in a group workspace in Power BI, then app workspaces will be familiar. They’re the evolution of group workspaces – staging areas and containers for the content in the app. 
 
-You can add others to these workspaces as members or admins. All the app workspace members need Power BI Pro licenses. In the workspace you can all collaborate on dashboards, reports, and other articles that you plan to distribute to a wider audience, or even your entire organization. 
+You can add colleagues to these workspaces as members or admins. All app workspace members and admins need Power BI Pro licenses. In the workspace you can all collaborate on dashboards, reports, and other articles that you plan to distribute to a wider audience, or even your entire organization. 
 
-When the content is ready, you distribute the app. You can send a direct link to  that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. Those people can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. 
+When the content is ready, you distribute the app. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. Those people can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. 
 
 ### How are app workspaces different from group workspaces? 
 
@@ -73,6 +73,8 @@ Now that you understand apps and app workspaces, let's start creating and publis
 
 2. Give the workspace a name. If the corresponding **Workspace ID** isn't available, edit it to come up with a unique ID.
 
+     This will be the name of the app, too.
+
      ![](media/powerbi-service-create-apps/power-bi-apps-create-workspace-name.png)
 
 3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private**, on the other hand, means only members of the workspace can see its contents.
@@ -85,7 +87,7 @@ Now that you understand apps and app workspaces, let's start creating and publis
 
      ![](media/powerbi-service-create-apps/power-bi-apps-create-workspace-members-edit.png)
 
-     > [AZURE.TIP]  If you're adding someone to the group, it should be so they can edit the content. If they're only going to view the content, then they can view it in the app.
+     > [AZURE.TIP]  If you're adding someone to the app workspace, it should be so they can edit the content. If they're only going to view the content, don't add them to the workspace. You can include them when you publish the app.
 
 5. Add email addresses of people you want to have access to the workspace, and select **Add**. You can’t add group aliases, just individuals.
 
@@ -101,7 +103,7 @@ Power BI creates the workspace and opens it. It appears in the list of workspace
 
 ![](media/powerbi-service-create-apps/power-bi-apps-edit-workspace-ellipsis.png)
 
-It’s empty, so now you add content to it. Adding content is just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. Another difference is that when you get done, you can distribute the content as an app. While in the app workspace, you can upload or connect to files, or connect to third-party services, just as you would in your own My Workspace. For example:
+It’s empty, so now you add content to it. Adding content is just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. A big difference is that when you get done, you can distribute the content as an app. While in the app workspace, you can upload or connect to files, or connect to third-party services, just as you would in your own My Workspace. For example:
 
 - [Connect to services](powerbi-content-packs-services.md) such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
 
