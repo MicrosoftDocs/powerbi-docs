@@ -101,6 +101,10 @@ Those active users in the eligibility period, and who are on free licenses, will
 
 > [AZURE.NOTE] The Azure AD report does not indicate if a user is Free or Pro within Power BI. It only reports which users have signed in to Power BI and when they logged in. If a user is listed in this report, it does not necessarily mean that they are eligible for the Extended Pro Trial.
 
+**Can admins restrict a user from activating the Extended Pro Trial?**
+
+No. Admins do not have a way to restrict users from activating the Extended Pro Trial or the in-service 60 day trial of Power BI Pro.
+
 ## Next steps
 
 [Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial)  
