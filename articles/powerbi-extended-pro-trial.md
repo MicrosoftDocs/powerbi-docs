@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/27/2017"
+   ms.date="05/30/2017"
    ms.author="asaxton"/>
 
 # Extended Pro Trial activation
@@ -34,9 +34,9 @@ Beginning June 1, 2017 existing users of the Free service who have been active w
 
 ![](media/powerbi-extended-pro-trial/extended-pro-trial-activate-pop-up.png "Extended Pro Trial pop-up at sign in")
 
-Eligible users received an email from Microsoft on May 3, 2017 along with an in-product notification communicating the pending changes to the Free Power BI service and the extended Power BI Pro trial offer. On June 1, 2017 eligible users will receive another notification when they sign into the service letting them know the changes have gone into effect with a prompt to register for the Extended Power BI Pro trial offer. A user’s IT admin does not control the in-product notifications, nor does the IT admin have the ability to register for the extended Power BI Pro trial on behalf of a user. Each eligible user must individually take action to complete this process.
+On June 1, 2017 eligible users will receive a notification when they sign into the service letting them know the changes have gone into effect with a prompt to register for the Extended Power BI Pro trial offer. A user’s IT admin does not control the in-product notifications, nor does the IT admin have the ability to register for the extended Power BI Pro trial on behalf of a user. Each eligible user must individually take action to complete this process.
 
-Users can opt to register for the offer at any time during the 12-month period, but the extended Power BI Pro trial will conclude for all users on May 31, 2018 regardless of when they accept the offer. At this time users will have the option to purchase Power BI Pro or be converted to the Free version of Power BI, without the sharing and collaboration capabilities, if they elect not to take action and purchase Power BI Pro.
+Users can opt to register for the offer at any time during the 12-month period, but the Extended Pro trial will conclude for all users on May 31, 2018 regardless of when they accept the offer. At this time users will have the option to purchase Power BI Pro or be converted to the Free version of Power BI, without the sharing and collaboration capabilities, if they elect not to take action and purchase Power BI Pro.
 
 No changes are being made to Power BI Pro. These users are not impacted and will not receive notifications when signing into the service on June 1, 2017 or after. Users who decline the extended Power BI Pro trial offer or are ineligible for the offer will continue using the Free version of Power BI without the sharing and collaboration capabilities. They can register at any time for a standard 60-day Power BI Pro trial by visiting the Power BI [website](https://powerbi.microsoft.com/get-started/).
 
@@ -45,7 +45,6 @@ No changes are being made to Power BI Pro. These users are not impacted and will
 Your account must meet the following requirements in order to be eligible for the Extended Pro Trial offer.
 
 * Power BI Free users active between May 3, 2016 and May 2, 2017 are eligible for an Extended Pro Trial.
-* The Extended Pro Trial runs through May 31, 2018 for all eligible users.
 * Users that have previously used or are currently on the *60-day in-product Pro trial* are still eligible for the Extended Pro Trial.
 
 > [AZURE.NOTE] Users that have licenses assigned from the Power BI Pro or Power BI Pro Trial subscriptions, within Office 365, are excluded from this offer.
@@ -86,6 +85,8 @@ After activation, you will receive a confirmation in the **Notification center**
 
 This notification will have a link to the [Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial).
 
+The Extended Pro Trial runs through May 31, 2018 for all eligible users.
+
 ## Frequently Asked Questions
 
 **What happens to new users who signed up after May 3, 2017?**
@@ -94,9 +95,11 @@ Users who signed up to Power BI Free on or after May 3, 2017 are not eligible fo
 
 **How do I find out who in my organization is eligible for the Extended Pro Trial?**
 
-While there is not a direct way to discover this, you can view the Azure Active Directory Integrated Applications report for Power BI to see who are active users within your organization. Those active users in the eligibility period, and who are on free licenses, will receive the pop-up notification. For more information, see [Find Power BI users that have signed in](powerbi-admin-access-usage.md).
+While there is not a direct way to discover this, you can view the Azure Active Directory Integrated Applications report for Power BI to see who are active users within your organization within the last 30 days. This may give you an idea of who may be eligible. For more information, see [Find Power BI users that have signed in](powerbi-admin-access-usage.md).
 
-> [AZURE.NOTE] The Azure AD report does not indicate if a user is Free of Pro within Power BI. It only reports which users have signed in to Power BI and when they logged in. If a user is listed in this report, it does not necessarily mean that they are eligible for the Extended Pro Trial.
+Those active users in the eligibility period, and who are on free licenses, will receive the pop-up notification. 
+
+> [AZURE.NOTE] The Azure AD report does not indicate if a user is Free or Pro within Power BI. It only reports which users have signed in to Power BI and when they logged in. If a user is listed in this report, it does not necessarily mean that they are eligible for the Extended Pro Trial.
 
 ## Next steps
 
