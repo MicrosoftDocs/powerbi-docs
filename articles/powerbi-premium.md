@@ -23,7 +23,9 @@
 
 Power BI Premium is a dedicated resource for your organization or team, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
 
-You can take advantage of Power BI Premium by assigning workspaces to a premium capacity. This is a dedicated resource for your organization. For workspaces that are not assigned to a premium capacity, these will be in a shared capacity. Shared capacity is the experience you are used to with Power BI, where your workloads run on computational resources shared by other customers.
+You can take advantage of Power BI Premium by assigning workspaces to a Premium capacity. *Premium capacity* is a dedicated resource for your organization. For workspaces that are not assigned to a premium capacity, these will be in a shared capacity.
+
+*Shared capacity* is the experience you are used to with Power BI, where your workloads run on computational resources shared by other customers.
 
 ## Capacity tiers
 
@@ -63,7 +65,7 @@ Power BI Premium is available in node configurations with different v-core capac
 
 - P nodes can be used for embedded (Platform as a Service - PaaS) or service (Software as a Service - SaaS) deployments
 
-|Capacity Node|Cores|Backend Cores|Frontend Cores|
+|Capacity Node|Total cores<br/>*(Backend + frontend)*|Backend Cores|Frontend Cores|
 |---------|---------|---------|---------|
 |P1|8 v-cores|4 cores, 25GB RAM|4 cores|
 |P2|16 v-cores|8 cores, 50GB RAM|8 cores|
@@ -77,7 +79,7 @@ Power BI Premium is available in node configurations with different v-core capac
 
 ## Free vs. Pro tiers
 
-*All users* in the service are either Free or Pro. Pro users are required to publish content to a premium capacity. Free users can now connect to all data sources through all connectivity options such as DirectQuery, live connection and the use of the data gateway.
+*All users* in the service are either Free or Pro. While Pro users can publish content to both shared and Premium capacity, only Pro users can publish content to Premium capacity. Free users can now connect to all data sources through all connectivity options such as DirectQuery, live connection and the use of the data gateway.
 
 ||Free|Pro|
 |---------|---------|---------|
