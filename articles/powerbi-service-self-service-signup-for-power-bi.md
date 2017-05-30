@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Self-Service Sign up for Power BI"
-   description="Self-Service Sign up for Power BI. This looks at how an individual can sign up for Power BI (free), a trial or purchase Power BI Pro."
+   pageTitle="Signing up for Power BI as an individual"
+   description="Learn how to sign up for Power BI and begin using it for your personal report and visualization needs."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,15 +17,32 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/31/2017"
    ms.author="asaxton"/>
-# Self-service sign up for Power BI
 
-Signing up for Power BI, as an individual, is easy! You can choose to use a free account, a Pro trial account, or purchase Power BI Pro, even if you are in an existing organization. Once you have determined which you would like to use, this article will walk you through the steps to get up and running.
+# Signing up for Power BI as an individual
+
+Learn how to sign up for Power BI and begin using it for your personal report and visualization needs.
+
+![](media/powerbi-service-self-service-signup-for-power-bi/dashboard-report.png "Power BI dashboard and report")
+
+Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations.
+
+This article will walk you through your options on how to sign up and begin using the Power BI service.
+
+## You have a few options
+
+As an individual you have several options to sign up and begin using Power BI. You can choose to sign up for free or you can purchase a Power BI Pro subscription. If you sign up for a free account, once you are in the service, you can opt into a free 60 day trial of Power BI Pro.
+
+If you are part of an existing organization, that uses Office 365, you can still sign up for a free account. Your IT Admin also has some options to purchase Power BI Pro and assign licenses. For more information about what options are available as an IT Admin, see [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md).
 
 > [AZURE.NOTE] If you are in an organization, individual sign up may be disabled. See [Individual Sign up has been turned off](#individual-sign-up-has-been-turned-off) for more information if you get an error indicating it has been turned off.
 
-## What email address can be used with Power BI?
+## What you need to sign up
+
+In order to sign up for Power BI, you need an email address. 
+
+### What email address can be used with Power BI?
 
 Power BI requires that you use a work, or school, email address to sign up. Power BI does not support email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com and others.
 
