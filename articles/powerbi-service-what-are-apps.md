@@ -16,20 +16,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/30/2017"
    ms.author="maggies"/>
 
 # What are apps in Power BI?
 
-An app is a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster and easier data-driven decisions. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device. 
+An app is a collection of dashboards and reports built to deliver key metrics for your organization. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device. 
 
-With apps you automatically get all the updates the app author makes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping up-to-date with the author’s changes.
+With apps you automatically get all the updates the app author makes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping up to date.
 
 ![](media/powerbi-what-are-apps/power-bi-apps-home-360.png)
 
 Planning to author an app? See [Create and distribute apps in Power BI](powerbi-service-create-apps.md) for more information.
 
+## Video: What are apps?
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+## Licenses for apps
+
+There are two licensing options for viewing apps.
+
+* Option 1: All business users in your organization need Power BI Pro licenses to view apps. 
+* Option 2: Free users in your organization can view app content if the app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
 
 ## Install an app
 
