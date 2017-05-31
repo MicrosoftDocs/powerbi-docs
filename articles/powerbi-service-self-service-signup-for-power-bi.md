@@ -40,8 +40,9 @@ If you are part of an existing organization, that uses Office 365, you can still
 
 ## What you need to sign up
 
-In order to sign up for Power BI, you need an email address. 
+In order to sign up for Power BI, you need aa work email address. A personal email address won't work with the Power BI service.
 
+<a name="what-email-address-can-be-used-with-power-bi"/>
 ### What email address can be used with Power BI?
 
 Power BI requires that you use a work, or school, email address to sign up. Power BI does not support email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com and others.
@@ -50,29 +51,31 @@ If you try to sign up with a personal email address, you will get a message indi
 
 > [AZURE.NOTE] Power BI does not support self-service sign-up for .gov or .mil addresses at this time. Please contact your O365 admin.
 
+## Which one do I need
+
+You can determine which one you need by reviewing what comes with each license type. Free users have most of the functionality of the services with the exception of sharing and collaboration features. Power BI Pro users can make use of all features in the service, but is not free. If you don't have a need to share any content, Free may be the route for you. You can learn more on the [Power BI Pricing page](https://powerbi.microsoft.com//pricing/).
+
+The remainder of this article will look at how to sign up for each option.
+
 ## Signing up for Power BI (free) as an individual
 
-The quickest way to sign up for Power BI is to sign up for a Power BI (free) account. There is no cost to this account, and it allows you to use many of the features available in the service. [Learn more](https://powerbi.microsoft.com/pricing/)
+The quickest way to sign up for Power BI is to sign up for a Power BI (free) account. There is no cost to this account, and it allows you to use many of the features available in the service.
 
 > [AZURE.NOTE] If you receive a message that we already know you, try navigating to https://app.powerbi.com and signing in.
 
 To sign up for Power BI, you can do the following.
 
-1.	Browse to powerbi.com.
+1.	Browse to [powerbi.com](https://powerbi.microsoft.com).
 
-2.	Select **Get started free**.
+2.	Select **Start Free** or **Sign up free**.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup1.png)
 
-    Or you can go to **Products** > **Pricing** and select **Sign up**.
-    
-    ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup1a.png)
-
-3.	In the dialog to choose how to get started, select **Sign up** under Power BI.
+3. On the get started page, select **Try Free >** under Power BI.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup2.png)
 
-4.	Enter the email address you are signing up with, and then select **Sign up**. Be sure your email address is allowed for sign up. [Learn more](#what-email-address-can-be-used-with-power-bi)
+4.	Enter the email address you are signing up with, and then select **Sign up**. Be sure your email address is allowed for sign up. For more information about what email address you can use, see [What email address can be used with Power BI](#what-email-address-can-be-used-with-power-bi).
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup3.png)
 

@@ -81,20 +81,6 @@ Power BI Premium is available in node configurations with different v-core capac
 
 *All users* in the service are either Free or Pro. While Pro users can publish content to both shared and Premium capacity, only Pro users can publish content to Premium capacity. Free users can now connect to all data sources through all connectivity options such as DirectQuery, live connection and the use of the data gateway.
 
-||Free|Pro|
-|---------|---------|---------|
-|**Connect to 70+ data sources**|![](media/common/available.png "Available")|![](media/common/available.png "Available")|
-|**Publish to Web**|![](media/common/available.png "Available")|![](media/common/available.png "Available")|
-|**Peer-to-peer sharing**|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
-|**Enterprise distribution**|||
-|Apps|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
-|Export to PowerPoint, Excel, CSV|![](media/common/available.png "Available")|![](media/common/available.png "Available")|
-|Email subscriptions|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
-|Embed APIs and controls|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
-|**Collaboration**|||
-|App workspaces|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
-|Analyze in Excel, analyze in Power BI Desktop|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
-
 ## Power BI Report Server
 
 Power BI Premium includes the right to run Power BI Report Server on-premises. For more infomation, see [Get started with Power BI Report Server](report-server/reportserver-get-started.md).
