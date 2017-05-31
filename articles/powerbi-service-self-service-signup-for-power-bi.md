@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="05/31/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -124,55 +124,17 @@ Then you can select **Start trial**.
 >- Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
 >- If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md).
 
+> [AZURE.NOTE] With the availability of Power BI Premium, and the changes to the Power BI Free offering on June 1, 2017, you may be eligible for an Extended Pro Trial. For more information, see [Extended Pro Trial activation](powerbi-extended-pro-trial.md).
+
 ### What this looks like within the service
 
 When you are in the service, you can verify that you have a Pro trial account by going to the **gear* icon and selecting **Manage personal storage**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
 
-## Purchasing Power BI Pro as an individual
+## What if you want the full Power BI Pro
 
-You can purchase Power BI Pro from the start, or can choose to upgrade to Pro after your free trial has ended.
-
-To purchase Power BI Pro as an individual, you can do the following.
-
-1. Sign in to Power BI with your free account.
-
-2. Select the gear icon and select **Manage personal storage**. Then select **Upgrade account** on the right.
-
-    ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-upgrade.png)
-
-3.	Select **Purchase**.
-
-    ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro1.png)
-
-4.	Answer the questions that are presented to guide the purchase. As an individual, there will be an option to select **Myself**. 
-
-    ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro2.png)
-
-    > **Note**: If you are interested in the option to purchase for your team or organization, you can read about purchasing Power BI Pro for your organization. [Learn more](powerbi-admin-purchasing-power-bi-pro.md)
-
-5.	If you aren’t already signed into Power BI, you will need to sign in with your Power BI (free) account.
-
-6.	You will need to provide information to make the purchase.
-
-### What this looks like within the service
-
-When you are in the service, you can verify that you have a Pro account by going to the **gear** icon and selecting **Manage personal storage**.
-
-![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro3.png)
-
-## Individual Sign up has been turned off
-
-When trying to sign up for Power BI, you may encounter the following message.
-
-    Your IT department has turned off signup for Microsoft Power BI.
- 
-![](media/powerbi-service-self-service-signup-for-power-bi/allowadhocsubscriptionfalse.png)
-
-This could be because your organization has disabled individual sign ups. It could also be because you purchased Office 365 through a partner. [Learn more](powerbi-admin-syndication-partner.md).
-
-If your organization has disabled individual sign ups, you will need to work with your IT group to get a Power BI license assigned to your account in order to continue.
+There is not a way to get the Power BI Pro license as an individual. You will need to speak to your IT Admin to purchase and assign the license to your account. For more information, see [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md).
 
 ## Troubleshooting
 
@@ -181,14 +143,14 @@ In many cases, registering for Power BI can be achieved by following the simple 
 | **Symptom / Error Message** | **Cause and Workaround** |
 |---|---|
 | **Personal email addresses (e.g. nancy@gmail.com)** You receive a message like the following during signup: <br /><br /> *You entered a personal email address: Please enter your work email address so we can securely store your company's data.* <br /><br /> or <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* | Power BI does not support email addresses provided by consumer email services or telecommunications providers. <br /><br /> To complete signup, try again using an email address assigned by your work or school. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
-| **.gov or .mil email addresses** You receive a message like the following during signup: <br /><br /> *Power BI unavailable: Power BI is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.* <br /><br /> or <br /><br /> *We can't finish signing you up. It looks like Microsoft Power BI isn't currently available for your work or school.* | Power BI does not support self-service sign-up for .gov or .mil addresses at this time. Please contact your O365 admin. |
 | **Self-service signup disabled** You receive a message like the following during signup: <br /><br /> *We can't finish signing you up. Your IT department has turned off signup for Microsoft Power BI. Contact them to complete signup.* <br /><br /> or <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* | Your organization’s IT administrator has disabled self-service signup for Power BI. <br /><br /> To complete signup, contact your IT administrator and ask them to follow the instructions on the page below to allow existing users to sign up for Power BI and to allow new users to join your existing tenant. <br/><br/> You may also experience this problem if you signed up for Office 365 through a partner. [Learn more](powerbi-admin-syndication-partner.md) <br /><br /> [Power BI in Your Organization](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
 | **Email address is not an Office 365 ID** You receive a message like the following during signup: <br /><br /> *We can't find you at contoso.com.  Do you use a different ID at work or school? <br /><br /> Try signing in with that, and if it doesn't work, contact your IT department.* | Your organization uses IDs to sign in to Office 365 and other Microsoft services that are different than your email address.  For example, your email address might be Nancy.Smith@contoso.com but your ID is nancys@contoso.com. <br /><br /> To complete signup, use the ID that your organization has assigned to for signing in to Office 365 or other Microsoft services.  If you don't know what this is, contact your IT administrator. <br /><br /> If you still can't sign up and are able to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
-## See also
+## Next steps
 
-[Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
-[Unable to add Power BI to Office 365 partner subscription](powerbi-admin-syndication-partner.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
