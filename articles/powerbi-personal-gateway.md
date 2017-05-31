@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="06/01/2017"
    ms.author="davidi"/>
 
 # Power BI Gateway - Personal
@@ -190,4 +190,6 @@ If you're having trouble when installing and configuring a personal gateway, be 
 
 [Troubleshooting Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
+[Power BI Premium](powerbi-premium.md)
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
