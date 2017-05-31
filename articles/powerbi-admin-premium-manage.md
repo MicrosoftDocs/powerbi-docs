@@ -115,9 +115,21 @@ You can assign additional **Capacity admins** as well as assign users that will 
 
 ## Usage measurements
 
-For each capacity, you will be able to use usage measurements for CPU, memory and Direct Query. Each KPI has three indications, **Good**, **Marginal** and **Critical**. We suggest monitoring these metrics to ensure that your users see good performance while using Premium content.
+For each capacity, you will be able to use usage measurements for CPU, memory and Direct Query. Each KPI has three indications, **Good (green)**, **Marginal (yellow)** and **Critical (red)**. We suggest monitoring these metrics to ensure that your users see good performance while using Premium content.
 
 ![](media/powerbi-admin-premium-manage/usage-metrics-critical.png "Capacity usage metrics - critical")
+
+|Metric|Description|
+|---------|---------|
+|CPU|CPU usage of your cores.|
+|Memory|Represents the memory pressure of your backend cores. Specifically, this is a metric of how often models are evicted from memory due to memory pressure from usage of multiple models.|
+|DQ/s|* We limit the total number of DirectQuery and live connection queries per second.<br/>* The limits are 30/s for P1, 60/s for P2 and 120/s for P3.<br/>* DirectQuery and live connection queries count equally to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle.<br/>* This applies equally to on-premises and cloud connections.|
+
+When these metrics are marginal/critical, your users may see degradation of report and refresh performance, especially during peak load times.
+
+Metrics reflect utilization over the past week, and are designed to count instances when the capacity is overloaded, and is therefore providing less-than-optimal performance for your users.
+
+Each occurrence of *utilization over 80%* should be considered a potential case of performance degradation. Too many cases is a good indicator of significant performance problems for users.
 
 ## Assign a workspace to a premium capacity
 

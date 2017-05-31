@@ -288,7 +288,7 @@ To learn more about Power BI compliance, see the [Microsoft Trust Center](http:/
 
 Power BI is built on the foundation of Office 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](powerbi-admin-power-bi-security.md). 
 
-## See also
+## Next steps
 
 [Power BI admin portal](powerbi-admin-portal.md)  
 [Understanding the Power BI admin role](powerbi-admin-role.md)  
@@ -301,4 +301,5 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 [Office 365 group management](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1)  
 [Manage your group in Power BI and Office 365](powerbi-service-manage-your-group-in-power-bi-and-office-365.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
