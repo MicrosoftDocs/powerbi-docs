@@ -121,16 +121,16 @@ Support for Spark and R script is planned, and currently under development.
     -   **Answer**: Many situations can trigger a request for credentials. The most common is that you've re-installed the **On-premises data gateway (personal mode)** on a different machine than your **Power BI - personal** gateway. It could also be an issue in the data source, and Power BI failed to perform a test connection, or a timeout or a system error occurred. You can update your credentials in the **Power BI service** by going to the **gear icon** and selecting **Settings** then **Datasets**, and finding the dataset in question and clicking on *update credentials*.
 
 -   How much time will my previous personal gateway be offline during the upgrade?
-    -   Upgrading the personal gateway to the new version should only take few minutes. 
+    -   **Answer**: Upgrading the personal gateway to the new version should only take few minutes. 
 
 -   What happens if I don't migrate to the new personal gateway by July 31st, 2017?
-    -   If you’re refreshing your reports with the current gateway, your refreshes will stop. The only way to set up a new refresh schedule will be by installing and configuring the new gateway.
+    -   **Answer**: If you’re refreshing your reports with the current gateway, your refreshes will stop. The only way to set up a new refresh schedule will be by installing and configuring the new gateway.
 
 -   I'm using R script. Is that supported?
-    -   We anticipating adding support for R scripts soon.​
+    -   **Answer**: We anticipating adding support for R scripts soon.​
 
 -   Why am I not seeing the message to update my gateway in the **Power BI service**?
-    -   Most likely, this is because you have one or more datasets that include a data source that is still currently not supported.
+    -   **Answer**: Most likely, this is because you have one or more datasets that include a data source that is still currently not supported.
 
 
 ## See also
