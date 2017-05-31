@@ -92,14 +92,16 @@ There are a few things to consider when using the **On-premises data gateway (pe
     -   *The user account you selected does not match the requirements of the application. Please use a different account.*
     -   To remedy that error, select *Use a different account* and sign in again. 
 
-The following data sources are currently supported for the **On-premises data gateway (personal mode)**:
+The following data sources are currently not supported for the **On-premises data gateway (personal mode)**:
 
 -   Active Directory
 -   ADO.NET 
 -   CurrentWorkbook
 -   FTP
 -   HDFS
+-   R script
 -   SAP BusinessObjects         
+-   Spark
 
 Support for Spark and R script is planned, and currently under development.
 
