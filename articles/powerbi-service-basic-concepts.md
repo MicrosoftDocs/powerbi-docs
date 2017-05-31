@@ -18,7 +18,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2017"
+   ms.date="05/31/2017"
    ms.author="mihart"/>
 
 # Power BI - basic concepts for Power BI service
@@ -26,9 +26,9 @@
 <!-- Shared newnav Include -->
 [AZURE.INCLUDE [newnavbydefault](../includes/newnavbydefault.md)]
 
-This article assumes that you've already [signed up for Power BI](powerbi-service-self-service-signup-for-power-bi.md) and [added some data](powerbi-service-get-data.md).  
+This article assumes that you've already [signed up for Power BI](powerbi-service-self-service-signup-for-power-bi.md) and [added some data](powerbi-service-get-data.md).
 
-When you open Power BI service, you'll see a ***dashboard*** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
+When you open the Power BI service, you'll see a ***dashboard*** displayed. Dashboards are something that differentiates Power BI service from Power BI Desktop.
 
 ![](media/powerbi-service-basic-concepts/completeNewer.png)
 
@@ -69,15 +69,15 @@ In the navigation bar, the datasets you've connected to or imported are listed u
 
 To [connect to or import a dataset](powerbi-service-get-data.md), select **Get Data** (at the bottom of the navigation bar) or select the plus icon next to the **Datasets** heading. Follow the instructions to connect to or import the specific source and add the dataset to your workspace. New datasets are listed in the left navigation bar and marked with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
 
-If you're [part of a ***group***](powerbi-service-collaborate-with-your-power-bi-group.md), datasets added by one group member are available to the other group members.     
+If you're [part of an ***app workspace***](powerbi-service-collaborate-with-your-power-bi-group.md), datasets added by one workspace member are available to the other workspace members.
 
-Datasets can be refreshed, renamed, explored, used to create reports, and removed. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports. 
+Datasets can be refreshed, renamed, explored, used to create reports, and removed. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports.
 
 ### Dig deeper:
 
--   [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md)
--   [Get data for Power BI](powerbi-service-get-data.md)
--   [Sample datasets and content packs for Power BI](powerbi-sample-datasets.md)
+* [Power BI Premium - what is it?](powerbi-premium.md)
+* [Get data for Power BI](powerbi-service-get-data.md)
+* [Sample datasets and content packs for Power BI](powerbi-sample-datasets.md)
 
 ## Reports
 
@@ -99,7 +99,7 @@ A *dashboard* is something you create or something a colleague creates and share
 
 In the navigation bar, "your" dashboards are listed under the **Dashboards** heading. "Your" means that you have access to them, not necessarily that you created them. Each dashboard represents a customized view of some subset of the underlying datasets.  If you own the dashboard, you'll also have access to the underlying dataset(s) and they'll appear in the navbar under **Datasets**.  If the dashboard was shared with you, it has a sharing icon ![](media/powerbi-service-basic-concepts/sharing-icon.png) next to it, and depending on how it was shared, you may or may not see the underlying datasets listed in your navbar.
 
->**NOTE**: Pinning and tiles are covered in more detail below under the heading "Dashboard tiles."
+> [AZURE.NOTE] Pinning and tiles are covered in more detail below under the heading "Dashboard with tiles."
 
 **ONE** dashboard...
 - can display visualizations from many different datasets
@@ -112,7 +112,7 @@ In the navigation bar, "your" dashboards are listed under the **Dashboards** hea
 
 **A dashboard can be [created from scratch](powerbi-service-create-a-dashboard.md)** -- create a new blank dashboard and then get some data. 
 
-**You, or a colleague, can create a dashboard and [share it](powerbi-service-share-unshare-dashboard.md)** -  when you accept the invitation, the shared dashboard (and any associated report and dataset) is added to your navigation bar. 
+**You, or a colleague, can create a dashboard and [share it](powerbi-service-share-unshare-dashboard.md)** -  when you accept the invitation, the shared dashboard (and any associated report and dataset) is added to your navigation bar. Power BI Pro is required for both sharing a dashboard and viewing a shared dashboard.
 
 **Sometimes dashboards are imported with the dataset or are created as you connect to the dataset**. For example, the **Get Data** wizard for Salesforce asks you if you'd like a dashboard and/or report to be created from the dataset. 
 
@@ -125,6 +125,7 @@ In the navigation bar, "your" dashboards are listed under the **Dashboards** hea
 -   to create a personalized view of a larger dashboard -- all the metrics that matter to me
 
 ## My Workspace
+
 We've circled back to your Power BI dashboard and workspace. Let's take a closer look at the pieces that make up the landing page for Power BI service.
 
 ![](media/powerbi-service-basic-concepts/completeNewer.png)
@@ -161,7 +162,7 @@ Single-click
 
 ### 2. **Dashboard with tiles**
 
-Dashboards are composed of [tiles](powerbi-service-dashboard-tiles.md).  Tiles are created  in report Editing View, Q&A, other dashboards and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](powerbi-service-add-a-widget-to-a-dashboard.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
+Dashboards are composed of [tiles](powerbi-service-dashboard-tiles.md).  Tiles are created in report Editing View, Q&A, other dashboards and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](powerbi-service-add-a-widget-to-a-dashboard.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
 ![](media/powerbi-service-basic-concepts/canvas.png)
 
@@ -207,10 +208,10 @@ This area of the workspace contains icons for interacting with the dashboard.  B
 
    ![](media/powerbi-service-basic-concepts/options.png)
 
-## See also
+## Next steps
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Get started with Power BI](powerbi-service-get-started.md)  
+[Power BI videos](powerbi-videos.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)
 
-[Power BI videos](powerbi-videos.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

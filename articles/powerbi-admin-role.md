@@ -17,8 +17,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/11/2017"
+ms.date="05/31/2017"
 ms.author="asaxton"/>
+
 # Understanding the Power BI admin role
 
 Learn how you can use the Power BI admin role within your organization.
@@ -124,13 +125,14 @@ The Power BI service administrator role does not provide access to the following
 - Ability to modify users and licenses within the Office 365 Admin Center
 - Access to the audit logs. For more information, see [Using auditing within your organization](powerbi-admin-auditing.md).
 
-## See also
+## Next steps
 
 [Power BI admin portal](powerbi-admin-portal.md)  
 [Add-AzureADDirectoryRoleMember](https://docs.microsoft.com/powershell/azuread/v2/add-azureaddirectoryrolemember)  
 [Add-MsolRoleMember](https://docs.microsoft.com/powershell/msonline/v1/add-msolrolemember)  
 [Auditing Power BI in your organization](powerbi-admin-auditing.md)  
 [Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
 
