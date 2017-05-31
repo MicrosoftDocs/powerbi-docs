@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="05/31/2017"
    ms.author="asaxton"/>
+
 # Using auditing within your organization
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -212,12 +213,14 @@ For a full listing, see [Detailed properties in the Office 365 audit log](https:
 |UpdatedAdminFeatureSwitch|This event is logged every time an admin feature switch is changed.|- Switch name.<br/>- New switch state.|
 |OptInForProTrial|This event is logged when a user choses to try Power BI Pro within the service.|- email address|
 
-## See also
+## Next steps
 
 [Power BI Admin Portal](powerbi-admin-portal.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
 [Purchasing Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md)  
 [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx)  
 [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)  
 [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx)  
 [Detailed properties in the Office 365 audit log](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
