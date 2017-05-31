@@ -17,15 +17,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2017"
+   ms.date="05/31/2017"
    ms.author="davidi"/>
 
-# Refresh a dataset created from a Power BI Desktop file on a local drive  
+# Refresh a dataset created from a Power BI Desktop file on a local drive
 
-## What’s supported?  
-In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
+## What’s supported?
+
+In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:
 
 ### Power BI Gateway - Personal
+
 -   All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
 -   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
@@ -62,4 +64,4 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 
 [Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
