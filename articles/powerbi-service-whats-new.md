@@ -41,12 +41,12 @@ Check this page for known issues and recently released features in the **Power B
 ## March 2017
 
 - Fine-tune how Power BI used in your organization with [granular admin controls](https://powerbi.microsoft.com/blog/announcing-granular-tenant-settings-in-power-bi/).
-- Get more done in less time with the [view related content pane](https://powerbi.microsoft.com/blog/announcing-the-view-related-content-pane-navigation-made-even-easier/preview/).
+- Get more done in less time with the [View Related Content pane](https://powerbi.microsoft.com/blog/announcing-the-view-related-content-pane-navigation-made-even-easier/preview/).
 - Improved [troubleshooting messages for DAX queries](https://powerbi.microsoft.com/blog/power-bi-service-march-feature-summary/#DAXtroubleshooting).
 - Exercise more control over your datasets with [custom cache refresh schedules](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 - Connect to [Amazon Redshift](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
 - Browse [Power BI custom visuals in the Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
-- Preview: [subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
+- Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
 - Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
 
 ## February 2017
@@ -62,7 +62,7 @@ Check this page for known issues and recently released features in the **Power B
 - Version 1.4 of [developer tools and custom visuals APIs](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) released.
 - [Real-time streaming feature set](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) released to general availability.
 - [Push data to Power BI using Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
-- Preview: [subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
+- Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
 - Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
 
 ## Previous updates
