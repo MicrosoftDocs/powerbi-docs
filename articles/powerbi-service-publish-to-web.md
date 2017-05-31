@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/01/2017"
+   ms.date="05/31/2017"
    ms.author="asaxton"/>
 
 # Publish to web from Power BI
@@ -28,7 +28,7 @@ You can also easily edit, update, refresh or un-share your published visuals.
 
 > [AZURE.WARNING] When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
 
-> [AZURE.IMPORTANT] You can disable the ability for users to use Publish to Web from the Admin portal. Within **Tenant settings**, turn **Publish to Web** to **Off**. This is a tenant wide setting.
+> [AZURE.IMPORTANT] Power BI admins can disable the ability for users to use Publish to Web from the Admin portal. Within **Tenant settings**, turn **Publish to Web** to **Off**. This is a tenant wide setting. For more information, see [Power BI admin portal](powerbi-admin-portal.md).
 
 ## How to use Publish to Web
 
