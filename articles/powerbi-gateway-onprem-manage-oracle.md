@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/20/2017"
+ms.date="06/01/2017"
 ms.author="davidi"/>
 # Manage your data source - Oracle
 
@@ -177,4 +177,5 @@ For additional troubleshooting information relating to the gateway, see [Trouble
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Power BI Premium](powerbi-premium.md)
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
