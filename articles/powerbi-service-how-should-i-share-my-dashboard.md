@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/26/2017"
+   ms.date="05/31/2017"
    ms.author="maggies"/>
 
 # How should I collaborate and share dashboards and reports?  
@@ -34,7 +34,7 @@ In this article, we'll talk about options for collaborating and sharing in Power
 
 This article compares these and other activities.
 
-> [AZURE.NOTE] The people you collaborate with need [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md) licenses. In most cases the people you want to see your dashboards need free or Pro licenses, depending on how you distribute them. Each section spells out details. 
+> [AZURE.NOTE] The people you collaborate with need [Power BI Pro](powerbi-premium.md#free-vs-pro-tiers) licenses. In most cases the people you want to see your dashboards need free or Pro licenses, depending on how you distribute them. Each section spells out details. 
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-home-blog.png)
 
@@ -60,7 +60,7 @@ Apps are easy to find and install in the Power BI service ([https://powerbi.com]
 
 After they install an app, they can view it in their browser or mobile device.
 
-For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
+For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](powerbi-premium.md) for details.
 
 ## Share a dashboard
 Let's say you've finalized a dashboard in your own My Workspace or in an app workspace and you want some other people to have access to it. One way to get it to them is to *share* it. 

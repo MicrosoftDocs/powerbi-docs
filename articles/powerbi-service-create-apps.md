@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/30/2017"
+   ms.date="05/31/2017"
    ms.author="maggies"/>
 
 # Create and distribute an app in Power BI
@@ -47,7 +47,7 @@ Now that you have an overview of apps, let’s talk about *app workspaces*, wher
 As an app creator you need a Power BI Pro license. For your app users, there are two options.
 
 * Option 1: All business users need **Power BI Pro** licenses to view your app. 
-* Option 2: Free users in your organization can view app content if your app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
+* Option 2: Free users in your organization can view app content if your app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](powerbi-premium.md) for details.
 
 ## App workspaces 
 

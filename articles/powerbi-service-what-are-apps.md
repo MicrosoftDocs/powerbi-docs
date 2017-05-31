@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/30/2017"
+   ms.date="05/31/2017"
    ms.author="maggies"/>
 
 # What are apps in Power BI?
@@ -38,7 +38,7 @@ Planning to author an app? See [Create and distribute apps in Power BI](powerbi-
 There are two licensing options for viewing apps.
 
 * Option 1: All business users in your organization need Power BI Pro licenses to view apps. 
-* Option 2: Free users in your organization can view app content if the app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](https://aka.ms/changethislink) for details.
+* Option 2: Free users in your organization can view app content if the app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](powerbi-premium.md) for details.
 
 ## Install an app
 
