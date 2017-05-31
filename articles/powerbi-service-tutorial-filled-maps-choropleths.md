@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2017"
+   ms.date="05/30/2017"
    ms.author="mihart"/>
 
 # Filled maps (choropleths) in Power BI (Tutorial)
@@ -29,11 +29,9 @@ A filled map uses shading or tinting or patterns to display how a value differs 
 
 ##    What is sent to Bing
 
->**Important**: Power BI sends Bing all the data that is used to create the visualization.
+Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, the data in the **Location**, **Latitude**, and **Longitude** buckets (that is being used to create that visualization) is sent to Bing.
 
-Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, **all** the data in all the fields being used to create that visualization are sent to Bing.
-
-For more information about the data being sent to Bing, and for tips to increase your geocoding success, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
+For more information about the data being sent to Bing, and for tips to increase your geo-coding success, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
 
 ## When to use a filled map  
 Filled maps are a great choice:
