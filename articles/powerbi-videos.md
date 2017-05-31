@@ -17,9 +17,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/25/2017"
+   ms.date="05/31/2017"
    ms.author="mihart"/>
-# Power BI Videos
+
+# Power BI videos
 
 We have a YouTube channel for Power BI! You can visit [our channel](https://www.youtube.com/user/mspowerbi/videos) and, if you're new to Power BI a good place to start is the [Analyze and Visualize data with Power BI playlist](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
 
@@ -43,10 +44,15 @@ We have a YouTube channel for Power BI! You can visit [our channel](https://ww
 
 -  [SAP HANA](https://youtu.be/FOjJLvsIACc)
 
+## More videos
 
+Check out the following collection of sources and content for more videos.
 
-## See also
+- [Guided Learning for Power BI](https://powerbi.microsoft.com/guided-learning/) - a sequential learning tour of Power BI, in bite-size pieces
+- [Guy in a Cube channel](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) - fresh videos on Power BI features and capabilities
+
+## Next steps
 
 [Get started with Power BI](powerbi-service-get-started.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

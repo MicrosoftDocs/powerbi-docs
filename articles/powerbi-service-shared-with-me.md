@@ -18,20 +18,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2017"
+   ms.date="05/31/2017"
    ms.author="mihart"/>
 
 # Display the Power BI dashboards that have been shared with me
+
 ## Shared with me
 
 ![](media/powerbi-service-shared-with-me/power-bi-share-dash.png)
 
 When a colleague shares a dashboard with you, its title is added to your **Shared with me** list. The dashboard is only available from **Shared with me** and not available from a workspace or from **Apps**.
 
-Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [What is Power BI Premium?](powerbi-premium.md) for details.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
-
 
 You'll have many options for interacting with the dashboard and underlying report, depending on the permissions the owner gives you. These include being able to make copies of the dashboard, open the report [in Reading view](powerbi-service-interact-with-a-report-in-reading-view.md), and re-share with other colleagues.
 
@@ -56,8 +56,9 @@ The content in the **Shared with me** screen can be further filtered by content 
 ![](media/powerbi-service-shared-with-me/power-bi-owner.png)
 
 
-##  See also
+## Next steps
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
