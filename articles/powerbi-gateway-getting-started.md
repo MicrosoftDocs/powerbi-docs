@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/01/2017"
+ms.date="06/01/2017"
 ms.author="davidi"/>
 
 # Getting started with Power BI Gateways
@@ -39,10 +39,10 @@ Other times, you might be in an organization with all sorts of databases from di
 
 Fortunately, Power BI offers two gateways, fitting each of those scenarios well. These two gateway offerings from Power BI are the following:
 
--   **Personal gateway** – allows one user to connect to sources, and can’t be shared with others. Can only be used with Power BI.
+-   **On-premises data gateway (personal mode)** – allows one user to connect to sources, and can’t be shared with others. Can only be used with Power BI.
 -   **On-premises data gateway** – allows multiple users to connect to multiple on-premises data sources, and can be used by Power BI, **PowerApps**, Flow and Azure Logic apps, all with a single gateway installation.
 
-Both gateways perform a similar function – they facilitate access to data residing on a private on-premises network, so that data can be used in cloud-based services like Power BI. The **Personal gateway** can be used by one person and only by Power BI, the **On-premises gateway** can be used by many users, and many services.
+Both gateways perform a similar function – they facilitate access to data residing on a private on-premises network, so that data can be used in cloud-based services like Power BI. The personal gateway can be used by one person and only by Power BI, the **On-premises data gateway** can be used by many users, and many services.
 
 There are three parts, or stages, to putting a gateway to work:
 
@@ -76,14 +76,13 @@ When you’re ready, select **Next** to continue with the setup.
 
 ![](media/powerbi-gateway-getting-started/gw_gettingstarted_03.png)
 
-Here’s where you decide which gateway you’ll install – on-premises gateway, or a personal gateway. In this guide, we’ll install the **On-premises gateway**.
+Here’s where you decide which gateway you’ll install – on-premises gateway, or a personal gateway. In this guide, we’ll install the **On-premises data gateway**.
 
 There are a few things to note at this decision point:
 
 -   both gateways require 64-bit Windows operating systems
 -   gateways can’t be installed on a domain controller
--   if you install a personal gateway, you cannot install other gateways on the same computer
--   you *can* install multiple on-premises gateways on the same computer, and you can install multiple on-premises gateways on different computers, and manage them all from the same Power BI gateway management interface
+-   you can install multiple on-premises data gateways on the same computer, and you can install multiple on-premises gateways on different computers, and manage them all from the same Power BI gateway management interface
 
 When we select **Next**, the gateway installation begins. You need to specify where it will be installed, and the default location is usually best.
 
@@ -160,7 +159,8 @@ Okay, you now have a gateway installed, and you’re ready to add data sources. 
 
 ## See also
 [Using the on-premises data gateway](powerbi-gateway-onprem.md)  
-[Using the personal gateway](powerbi-personal-gateway.md)  
 [On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)  
+[On-premises data gateway (personal mode)](powerbi-gateway-personal-mode.md)
+
 [Troubleshooting the on-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

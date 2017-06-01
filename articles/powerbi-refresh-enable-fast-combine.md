@@ -17,9 +17,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/20/2017"
+ms.date="06/01/2017"
 ms.author="davidi"/>
 # Disable privacy setting in Power BI Gateway - Personal
+
+>   **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](powerbi-gateway-personal-mode.md). Fast combine is also available in the new version of the personal gateway, and is described in that article, too.
 
 You may receive the following error based on the privacy settings for your data sources when used with the personal gateway.
 
@@ -80,6 +82,7 @@ You can use the following steps to enable Fast Combine for your personal gateway
 
 ## See also
 
+[On-premises data gateway (personal mode) - the new version of the personal gateway](powerbi-gateway-personal-mode.md)
 [Privacy Levels](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
 [Common query tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
