@@ -42,7 +42,7 @@ You can also check out the YouTube channels for information about "What's new" a
 - Navigate to reports with multiple URL filter parameters.
 - Preview: [Use Power BI Apps](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/) to widely distribute your dashboards and reports to large audiences.
 
-## Previous months
+## Previous months (2017)
 
 ### March 2017
 
@@ -70,6 +70,8 @@ You can also check out the YouTube channels for information about "What's new" a
 - [Push data to Power BI using Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
 - Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
 - Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
+
+## 2016
 
 ### November 2016
 
@@ -353,6 +355,7 @@ The Power BI team has been busy over the holiday break. For all the details, [vi
 
 For all the details, [visit the Power BI Team blog](http://blogs.msdn.com/b/powerbi/archive/2016/01/06/power-bi-service-update-0106.aspx)
 
+## 2015
 
 **December 16, 2015**
 
@@ -679,7 +682,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **July 7, 2015**
 
--   ﻿One of the most awaited and requested feature is now available in Power BI. Starting today, in Power BI you can [refresh datasets](http://blogs.msdn.com/b/powerbi/archive/2015/07/07/refresh-for-on-premises-sources-is-here.aspx) connecting to your on-premises sources such as SQL Server. You can refresh a dataset that has been created from a Power BI Designer file or an Excel workbook with data imported into the workbook using Power Query or Power Pivot. 
+-   One of the most awaited and requested feature is now available in Power BI. Starting today, in Power BI you can [refresh datasets](http://blogs.msdn.com/b/powerbi/archive/2015/07/07/refresh-for-on-premises-sources-is-here.aspx) connecting to your on-premises sources such as SQL Server. You can refresh a dataset that has been created from a Power BI Designer file or an Excel workbook with data imported into the workbook using Power Query or Power Pivot. 
 
 **June 30, 2015**
 
@@ -733,7 +736,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **April 23, 2015**
 
--   You can now visualize and explore your **Microsoft Dynamics Marketing** data with our new content pack! You can read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) and [documentation](powerbi-content-pack-microsoft-dynamics-marketing.md) for more information.﻿
+-   You can now visualize and explore your **Microsoft Dynamics Marketing** data with our new content pack! You can read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) and [documentation](powerbi-content-pack-microsoft-dynamics-marketing.md) for more information.
 
 **April 15, 2015**
 
@@ -761,9 +764,11 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **January 26, 2015**
 
--   Service usability and reliability has been improved through various bug fixes. ﻿
+-   Service usability and reliability has been improved through various bug fixes.
 
-**﻿December 11, 2014**
+## 2014
+
+**December 11, 2014**
 
 -   Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
