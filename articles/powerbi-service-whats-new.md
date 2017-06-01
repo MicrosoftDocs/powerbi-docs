@@ -3,9 +3,9 @@
    description="What's new in the Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="sirsu"
+   authors="mihart"
    manager="erikre"
-   backup="mihart"
+   backup="sirsu"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,16 +17,21 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/01/2017"
    ms.author="sirsu"/>
 
-# What's new in the Power BI service  
+# What's new in the Power BI service
 
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
-- [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
-- [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
-- [Power BI team blog](https://powerbi.microsoft.com/blog/)
+* [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+* [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
+* [Power BI team blog](https://powerbi.microsoft.com/blog/)
+
+You can also check out the YouTube channels for information about "What's new" and features.
+
+* [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
+* [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 ## April and May 2017
 
@@ -55,7 +60,7 @@ Check this page for known issues and recently released features in the **Power B
 - [Navigation Preview improvements](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) – more easily switch between workspaces, and take action on content within the current workspace. 
 - [Embed Power BI dashboards](https://powerbi.microsoft.com/blog/embed-dashboard/) into your custom application.
 - Preview: [Integrate Power BI reports in SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
- 
+
 ### January 2017
 
 - Administer Power BI using the [Power BI admin role](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
@@ -67,6 +72,7 @@ Check this page for known issues and recently released features in the **Power B
 - Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
 
 ### November 2016
+
 - Preview: Try out the [new navigation for the Power BI service, powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/)
 - Preview: [Export a Power BI report to PowerPoint](https://powerbi.microsoft.com/blog/export-power-bi-report-to-powerpoint-preview/).
 - Preview: [Download Power BI reports (PBIX files)](https://powerbi.microsoft.com/blog/announcing-preview-of-download-power-bi-desktop-files-from-the-web/) from the Power BI service so you can edit them in Power BI Desktop.
@@ -77,9 +83,8 @@ Check this page for known issues and recently released features in the **Power B
 - Private preview: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) outputs Power BI streaming datasets, with which you can create streaming tiles.
 - Preview: Add [ESRI ArcGIS Maps Visualizations](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) to your reports and dashboards
 
-
-
 ### October 2016
+
 - Take advantage of [Power BI integration with the new Microsoft Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/).
 - Design [R visualizations](https://powerbi.microsoft.com/blog/r-powered-custom-visuals/) in Power BI without understanding R.
 - Preview: With [Azure Analysis Services](https://powerbi.microsoft.com/blog/introducing-azure-analysis-services/), BI professionals can create BI semantic models based on data that resides in the cloud or on premises, to provide business users with a simplified view of their data.
@@ -88,8 +93,7 @@ Check this page for known issues and recently released features in the **Power B
 - How a non-administrator can review the [Power BI audit log](https://powerbi.microsoft.com/blog/tech-tip-thursday-power-bi-auditing-for-a-non-administrator/)
 - Display [text columns as ToolTips](https://powerbi.microsoft.com/blog/tech-tip-thursday-displaying-text-columns-in-tool-tips/).
 
-
-### July, 2016
+### July 2016
 
 ***RLS graduates from preview***
 
@@ -105,7 +109,7 @@ Check this page for known issues and recently released features in the **Power B
 
 For all the details, [visit the Power BI team blog](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/)
 
-### June, 2016
+### June 2016
 
 ***Quick Insights***
 
@@ -113,7 +117,7 @@ For all the details, [visit the Power BI team blog](https://powerbi.microsoft.co
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
 
-### May, 2016
+### May 2016
 
 ***Get Data***
 
@@ -142,44 +146,6 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 -   Improved error messaging for on-premises Analysis Services databases: Previously, if you selected Analyze in Excel for an unsupported data source, you wouldn't get an error message until after you downloaded the ODC file and tried to connect to Power BI. Now as soon as you select Analyze in Excel for a data source we don't support, you'll see a message letting you know we don't yet support that data source.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
-
-### June 1, 2016
-
--   Quick Insights work with Complex Filters: We are happy to announce that Quick Insights scoped to a single tile now understand complex filters.
-
-For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
-
-### May 16, 2016
-
-***Get Data***
-
--   File size limit increase to 1 GB: We increased the file size limit for both Excel workbooks and Power BI Desktop files to 1 GB.
-
--   Find SSAS servers set up with the Enterprise Gateway and other Gateway updates: Now when you set up an Enterprise Gateway, users in your company will be able to access these servers in the Power BI service through the Get Data page. We also added support for refreshing datasets that include data from SAP Business Warehouse Server using the gateway and creating UPN mapping rules when you are using Analysis Services with the gateway.
-
-***Row-level security (RLS)***
-
--   Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
-
--   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
-
--   Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
-
-***Dashboards***
-
--   Favorite dashboards: To help you reach the dashboards you go to most, we added a way to favorite those dashboard and make them easily accessible from all your workspaces.
-
-***Analyze in Excel***
-
--   Improved download experience: Easily download updates to the Analyze in Excel feature through a new dialog experience.
-
--   Support for RLS: Once you set up RLS, the rules you apply to the data now flow through when a user analyzes the data in Excel.
-
--   Improved error messaging for on-premises Analysis Services databases: Previously, if you selected Analyze in Excel for an unsupported data source, you wouldn't get an error message until after you downloaded the ODC file and tried to connect to Power BI. Now as soon as you select Analyze in Excel for a data source we don't support, you'll see a message letting you know we don't yet support that data source.
-
-For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
-
-### May 13, 2016
 
 -   [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](powerbi-service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 
@@ -801,7 +767,8 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 -   Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
-## See also  
+## Next steps
+
 [Get started with Power BI](powerbi-service-get-started.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
