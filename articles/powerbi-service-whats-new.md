@@ -27,7 +27,6 @@ Check this page for known issues and recently released features in the **Power B
 - [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 - [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI team blog](https://powerbi.microsoft.com/blog/)
-- [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/)
 
 ## April and May 2017
 
@@ -38,7 +37,9 @@ Check this page for known issues and recently released features in the **Power B
 - Navigate to reports with multiple URL filter parameters.
 - Preview: [Use Power BI Apps](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/) to widely distribute your dashboards and reports to large audiences.
 
-## March 2017
+## Previous months
+
+### March 2017
 
 - Fine-tune how Power BI used in your organization with [granular admin controls](https://powerbi.microsoft.com/blog/announcing-granular-tenant-settings-in-power-bi/).
 - Get more done in less time with the [View Related Content pane](https://powerbi.microsoft.com/blog/announcing-the-view-related-content-pane-navigation-made-even-easier/preview/).
@@ -49,13 +50,13 @@ Check this page for known issues and recently released features in the **Power B
 - Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
 - Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
 
-## February 2017
+### February 2017
 
 - [Navigation Preview improvements](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) – more easily switch between workspaces, and take action on content within the current workspace. 
 - [Embed Power BI dashboards](https://powerbi.microsoft.com/blog/embed-dashboard/) into your custom application.
 - Preview: [Integrate Power BI reports in SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
  
-## January 2017
+### January 2017
 
 - Administer Power BI using the [Power BI admin role](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
 - [Power BI audit logs ](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) in the Office 365 auditing portal are globally available.
@@ -64,8 +65,6 @@ Check this page for known issues and recently released features in the **Power B
 - [Push data to Power BI using Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
 - Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
 - Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
-
-## Previous updates
 
 ### November 2016
 - Preview: Try out the [new navigation for the Power BI service, powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/)
