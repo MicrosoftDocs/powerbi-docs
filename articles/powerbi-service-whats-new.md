@@ -3,7 +3,7 @@
    description="What's new in the Power BI service"
    services="powerbi"
    documentationCenter=""
-   authors="fetiyekarabay"
+   authors="sirsu"
    manager="erikre"
    backup="mihart"
    editor=""
@@ -17,22 +17,54 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/09/2016"
-   ms.author="fetiyek"/>
+   ms.date="05/31/2017"
+   ms.author="sirsu"/>
 
 # What's new in the Power BI service  
 
-Check this page for known issues and recently released features in **Power BI Service**.
+Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
->**Note**: For related "What's New" information, see:
->
->* [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
->* [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
->* [Power BI team blog](https://powerbi.microsoft.com/blog/)
->* [Power BI Developer blog](http://blogs.msdn.com/b/powerbidev/).
+- [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
+- [What's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md)  
+- [Power BI team blog](https://powerbi.microsoft.com/blog/)
 
+## April and May 2017
 
-## Recent updates
+- Measure and magnify your impact with [usage metrics for dashboard and report creators](powerbi-service-usage-metrics.md).
+- Connect to PostgreSQL with the on-premises data gateway.
+- Power BI SharePoint Web Part made available for all users.
+- Connect Power BI to any data source using the [Data Connector SDK](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
+- Navigate to reports with multiple URL filter parameters.
+- Preview: [Use Power BI Apps](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/) to widely distribute your dashboards and reports to large audiences.
+
+## Previous months
+
+### March 2017
+
+- Fine-tune how Power BI used in your organization with [granular admin controls](https://powerbi.microsoft.com/blog/announcing-granular-tenant-settings-in-power-bi/).
+- Get more done in less time with the [View Related Content pane](https://powerbi.microsoft.com/blog/announcing-the-view-related-content-pane-navigation-made-even-easier/preview/).
+- Improved [troubleshooting messages for DAX queries](https://powerbi.microsoft.com/blog/power-bi-service-march-feature-summary/#DAXtroubleshooting).
+- Exercise more control over your datasets with [custom cache refresh schedules](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
+- Connect to [Amazon Redshift](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
+- Browse [Power BI custom visuals in the Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
+- Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
+- Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
+
+### February 2017
+
+- [Navigation Preview improvements](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) – more easily switch between workspaces, and take action on content within the current workspace. 
+- [Embed Power BI dashboards](https://powerbi.microsoft.com/blog/embed-dashboard/) into your custom application.
+- Preview: [Integrate Power BI reports in SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
+ 
+### January 2017
+
+- Administer Power BI using the [Power BI admin role](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
+- [Power BI audit logs ](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) in the Office 365 auditing portal are globally available.
+- Version 1.4 of [developer tools and custom visuals APIs](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) released.
+- [Real-time streaming feature set](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) released to general availability.
+- [Push data to Power BI using Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
+- Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
+- Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
 
 ### November 2016
 - Preview: Try out the [new navigation for the Power BI service, powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/)
@@ -57,7 +89,7 @@ Check this page for known issues and recently released features in **Power BI Se
 - Display [text columns as ToolTips](https://powerbi.microsoft.com/blog/tech-tip-thursday-displaying-text-columns-in-tool-tips/).
 
 
-### July 29, 2016
+### July, 2016
 
 ***RLS graduates from preview***
 
@@ -73,7 +105,7 @@ Check this page for known issues and recently released features in **Power BI Se
 
 For all the details, [visit the Power BI team blog](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/)
 
-### June 1, 2016
+### June, 2016
 
 ***Quick Insights***
 
@@ -81,7 +113,7 @@ For all the details, [visit the Power BI team blog](https://powerbi.microsoft.co
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
 
-### May 16, 2016
+### May, 2016
 
 ***Get Data***
 
