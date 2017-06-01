@@ -31,9 +31,9 @@ The Power BI Premium offering introduces the concept of premium capacity, and it
 
 ## What is Power BI Premium capacity?
 
-Power BI Premium enables premium capacity, a set of resources reserved for the exclusive use by you. Having your own premium capacity allows you to publish BI content to users throughout your organization without having to purchase licenses for them. It also guarantees dependable, consistent performance for the contents hosted in capacity.
+Power BI Premium enables Premium capacity, a set of resources reserved for the exclusive use by you. Having your own Premium capacity allows you to publish BI content to users throughout your organization without having to purchase licenses for them. It also guarantees dependable, consistent performance for the contents hosted in capacity.
 
-This is all transparent to your report users. Report users will continue to use Power BI as usual. They don't have to ever be aware that some (or all) of the BI content is hosted in your dedicated capacity. For your users, everything works exactly as before.
+This is all transparent to your end users. They will continue to use Power BI as usual. They don't have to ever be aware that some (or all) of the BI content is hosted in your dedicated capacity. For your users, everything works exactly as before.
 
 For more information, see [What is Power BI Premium?](powerbi-premium.md).
 
@@ -47,7 +47,7 @@ When a you are assigned as a capacity admin to a premium capacity, you have full
 
 Power BI Premium capacity admins can access the capacity admin portal. From there, you can add more capacity admins or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics on a capacity.
 
-For each capacity, you can define capacity admins. Each capacity has its own admins. Defining a capacity admin to one capacity does not give them access to all capacities within your organization.
+For each capacity, the Office 365 Global admin, or Power BI service administrator, can define capacity admins. Each capacity has its own admins. Defining a capacity admin to one capacity does not give them access to all capacities within your organization.
 
 Capacity admins can manage the capacity through the admin portal. As a capacity admin, you will only be able to see the capacity items of the admin portal for the capacities that you are an admin of. You will not have access to other areas such as usage metrics, audit logs or tenant settings.
 
@@ -105,7 +105,7 @@ If no workspaces have been assigned to the capacity, you will see a message allo
 
 #### User permissions
 
-You can assign additional **Capacity admins** as well as assign users that will have **capacity assignment permissions**. Users that have assignment permissions can assign an App workspace to the capacity. Users with assignment permissions will not have access to the admin portal.
+You can assign additional **Capacity admins** as well as assign users that will have **capacity assignment permissions**. Users that have assignment permissions can assign an app workspace to the capacity if they are an admin of that workspace. They can also assign their personal My Workspace to the capacity. Users with assignment permissions will not have access to the admin portal.
 
 > [AZURE.NOTE] Even if you are listed as a **Capacity admin**, you will not see the capacity in the advaced dropdown of an App workspace unless you are listed as a user with assignment permissions.
 
@@ -137,7 +137,7 @@ There are a few ways that a workspace could be assigned to a premium capacity.
 
 ### Premium capacity management in admin portal
 
-Capacity admins, along with Power BI admins and Office 365 global admins, can assign workspaces within the premium capacity management section of the admin portal. When you manage a capacity, you will see a **Workspaces** section that allows you to assign workspaces.
+Capacity admins, along with Power BI admins and Office 365 global admins, can bulk assign workspaces within the premium capacity management section of the admin portal. When you manage a capacity, you will see a **Workspaces** section that allows you to assign workspaces.
 
 ![](media/powerbi-admin-premium-manage/capacity-manage-workspaces.png)
 
@@ -183,7 +183,7 @@ For the most part, users will not even need to know they are in a Premium capaci
 
 ## Power BI Report Server product key
 
-Withing the **Premium settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
+Within the **Premium settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
 
 ![](media/powerbi-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
