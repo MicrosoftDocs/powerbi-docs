@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/01/2017"
    ms.author="asaxton"/>
 
 # Signing up for Power BI as an individual

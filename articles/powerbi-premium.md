@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/01/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium - what is it?
@@ -36,11 +36,11 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 ||Shared capacity|Power BI Premium capacity|
 |---------|---------|---------|
 |**Refresh rate**|8/day|Not restricted|
-|**Isolation with dedicated hardware**|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
+|**Isolation with dedicated hardware**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png)|
 |**Enterprise Distribution to** ***all users***|||
-|Apps|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")<sup>1</sup>|
-|Embedded API and controls|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")<sup>2</sup>|
-|**Publish Power BI reports on-premises**|![](media/common/not-available.png "Not available")|![](media/common/available.png "Available")|
+|Apps|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png)<sup>1</sup>|
+|Embedded API and controls|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png)<sup>2</sup>|
+|**Publish Power BI reports on-premises**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png)|
 
 *<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights and Cortana.*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
