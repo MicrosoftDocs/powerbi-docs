@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Add comments to a report on a report server"
-   description="Learn how to add comments to a paginated or a Power BI report on Power BI Report Server or SQL Server Reporting Serices report server."
+    pageTitle="Add comments to a report in the web portal of a report server"
+   description="Learn how to add comments to a Power BI or a paginated report on a Power BI Report Server or SQL Server Reporting Services report server."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -16,23 +16,40 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/30/2017"
+   ms.date="06/02/2017"
    ms.author="maggies"/>
 
-# Add comments to a report on a report server
+# Add comments to a report in the web portal of a report server
 
-As the name suggests, paginated reports can run to many pages. They're great for reports laid out in a fixed format, and offer precise customization.
+You can add comments to reports, including Power BI reports, within the web portal of a report server. The comments live with the report, and anyone with the right permission can see the comments for the report.
 
-You can store and manage paginated reports in the Power BI Report Server web portal, just as you can in the SQL Server Reporting Services (SSRS) web portal. You create and edit them in Report Builder, and then publish them to the web portal just the same. Then report readers in your organization can view them in a browser or in a Power BI mobile app on their mobile device.
+## Add or view comments
 
-![](media/reportserver-quickstart-paginated-report/reportserver-paginated-report.png)
+1. Open a paginated or Power BI report on a report server.
+
+2. In the upper-right corner, select **Comments**.
+
+    ![](media/reportserver-add-comments/report-server-web-portal-comments-button.png)
+
+    In the Comments pane, you can see any existing comments.
+
+3. Write your comment, then select **Post Comment**.
+
+    ![](media/reportserver-add-comments/report-server-web-portal-comments-pane.png)
+
+    Your comment shows in the pane on the web portal, along with any previous comments. They don't appear with the report on in the Power BI mobile apps.
+
+    > [AZURE.TIP] Did you know? You can [annotate Power BI reports in the Power BI mobile apps](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) and share the annotated reports with others.
+
+## Notes
+
+Depending on your permissions, you can:
+- Not see comments.
+- See all comments, and post and delete your own.
+- See all comments, post and delete your own, and delete other people’s.
 
 ## Next steps
 
-There are many great resources for designing reports in Report Builder and in Report Designer in SQL Server Data Tools. The Report Builder tutorials are a good place to start.
-
-- [Report Builder tutorials](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
-
-[User handbook](reportserver-user-handbook-overview.md)  
+- [Power BI Report Server user handbook](reportserver-user-handbook-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
