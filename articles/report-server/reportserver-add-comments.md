@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Add comments to a report on a report server"
+    pageTitle="Add comments to a report in the web portal of a report server"
    description="Learn how to add comments to a Power BI or a paginated report on a Power BI Report Server or SQL Server Reporting Services report server."
    services="powerbi"
    documentationCenter=""
@@ -16,12 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/01/2017"
+   ms.date="06/02/2017"
    ms.author="maggies"/>
 
-# Add or view comments for a report on a report server
+# Add comments to a report in the web portal of a report server
 
-You can add comments to reports, including Power BI reports, within the web portal of a report server. The comments live with the report, and anyone who can see the report can see the comments.
+You can add comments to reports, including Power BI reports, within the web portal of a report server. The comments live with the report, and anyone with the right permission can see the comments for the report.
 
 ## Add or view comments
 
@@ -41,6 +41,12 @@ You can add comments to reports, including Power BI reports, within the web port
 
     > [AZURE.TIP] Did you know? You can [annotate Power BI reports in the Power BI mobile apps](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) and share the annotated reports with others.
 
+## Notes
+
+Depending on your permissions, you can:
+- Not see comments.
+- See all comments, and post and delete your own.
+- See all comments, post and delete your own, and delete other people’s.
 
 ## Next steps
 
