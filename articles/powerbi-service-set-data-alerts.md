@@ -18,18 +18,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2017"
+   ms.date="05/31/2017"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
 
-Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts can only be set up on tiles pinned from report visuals (not on streaming tiles), and only on gauges, KPIs and cards. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](powerbi-service-flow-integration.md).
+Set alerts to notify you when data in your dashboards changes beyond limits you set. Alerts can only be set up on tiles pinned from report visuals (not on streaming tiles), and only on gauges, KPIs and cards. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) and in the Power BI service. They are not available for Power BI Desktop. Alerts can even be [automated and integrated with Microsoft Flow](https://flow.microsoft.com) - [try it out yourself](powerbi-service-flow-integration.md).
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
->[AZURE.WARNING]Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
+> [AZURE.WARNING]Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
 
 ## Set data alerts in Power BI service
+
 Watch Amanda add some alerts to tiles on her dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
@@ -54,8 +55,8 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
 5. Select **Save**.
 
-
 ## Receiving alerts
+
 When the data being tracked reaches one of the thresholds you've set, several things will happen. First, Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent. As long as the data is past the threshold, you'll get an alert.
 
 Next, Power BI sends an alert to your notification center and, optionally, in email. Each alert contains a direct link to your data. Select the link to see the relevant tile where you can explore, share, and learn more.  
@@ -76,9 +77,10 @@ Next, Power BI sends an alert to your notification center and, optionally, in em
 
 
 ## Managing alerts
+
 There are three ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, and on an individual tile in the [Power BI mobile app on the iPhone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) or in the [Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md).
 
-###   From the tile itself
+### From the tile itself
 
 1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![](media/powerbi-service-set-data-alerts/power-bi-bell-icon.png). All the alerts that you've set for that tile are displayed.
 
@@ -92,7 +94,8 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 
       ![](media/powerbi-service-set-data-alerts/powerbi-see-alerts-delete.png)
 
-###   From the Power BI settings menu
+### From the Power BI settings menu
+
 1. Select the gear icon from the Power BI menubar.
 
     ![](media/powerbi-service-set-data-alerts/powerbi-gear-icon.png).
@@ -102,7 +105,6 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-settings.png)
 
 3. From here you can turn alerts on and off, open the **Manage alerts** window to make changes, or delete the alert.
-
 
 ## Tips and troubleshooting
 
@@ -114,8 +116,10 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 
 - Alerts do not work with tiles that contain streaming data.
 
-### See also
-- [Create a Microsoft Flow that includes a data alert](powerbi-service-flow-integration.md)
-- [Set data alerts on your mobile device](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
-- [Get started with Power BI](powerbi-service-get-started.md)
-- More questions? [Try the Power BI Community](http://community.powerbi.com/)
+## Next steps
+
+[Create a Microsoft Flow that includes a data alert](powerbi-service-flow-integration.md)
+[Set data alerts on your mobile device](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
+[Get started with Power BI](powerbi-service-get-started.md)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

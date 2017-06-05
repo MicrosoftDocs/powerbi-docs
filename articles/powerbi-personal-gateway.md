@@ -17,14 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="06/01/2017"
    ms.author="davidi"/>
 
 # Power BI Gateway - Personal
 
+>   **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. The following article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](powerbi-gateway-personal-mode.md).
+
 The **Power BI Gateway - Personal** acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support [refresh](powerbi-refresh-data.md). This article is meant to provide you with an in-depth understanding of how the gateway works and whether or not a gateway is necessary for you. We've also put together this [helpful video](https://www.youtube.com/watch?v=de58vROLqZI) about the personal gateway. 
 
-The personal gateway is only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md). It installs and runs as a service on your computer. As a service, it runs using a Windows account you  specify during configuration. In some cases, the Gateway runs as an application. We'll go into more about that later.
+It installs and runs as a service on your computer. As a service, it runs using a Windows account you  specify during configuration. In some cases, the Gateway runs as an application. We'll go into more about that later.
 
 When Power BI refreshes data from an on-premises data source, the gateway assures your Power BI account has the right permissions to connect to and query data from the source.
 
@@ -87,6 +89,8 @@ Setting up a gateway for the first time is a three step process:
 Let’s take a closer look at each step.
 
 ### Download and install a gateway
+
+>   **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](powerbi-gateway-personal-mode.md).
 
 You’ll be prompted to install a gateway when you click on REFRESH NOW or SCHEDULE REFRESH for a supported dataset for the first time. Or, to download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
 
@@ -182,12 +186,11 @@ The gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 
 
 If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [Download](https://www.microsoft.com/download/details.aspx?id=41653)
 
-## Troubleshooting
-
-If you're having trouble when installing and configuring a personal gateway, be sure to see [Troubleshooting Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md).
-
 ## See also
 
-[Troubleshooting Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+[On-premises data gateway (personal mode) - the new version of the personal gateway](powerbi-gateway-personal-mode.md)
+
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Power BI Premium](powerbi-premium.md)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -17,8 +17,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/23/2017"
+ms.date="05/31/2017"
 ms.author="asaxton"/>
+
 # Sign up with a custom Azure Active Directory tenant
 
 If you are a developer, using Microsoft Azure, and are looking to create a Power BI application using the REST API’s, you will probably want to use Power BI with a custom Azure Active Directory (AAD) tenant for testing purposes.  There are a few things you will need to do to get up and running. This is all about creating an Azure Active Directory tenant for use with testing Power BI. 
@@ -131,10 +132,12 @@ You can verify if the user has a license assigned to the account by going to **U
 
 You should now be able to sign into [Power BI](https://app.powerbi.com) with the user you created in your custom directory.
 
-## See also
+## Next steps
 
 [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)  
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
 [What is an Azure AD directory?](https://msdn.microsoft.com/library/azure/jj573650.aspx)  
 [How to get an Azure Active Directory tenant](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)  
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

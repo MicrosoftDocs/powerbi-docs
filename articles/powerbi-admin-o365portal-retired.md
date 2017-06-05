@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="05/31/2017"
    ms.author="davidi"/>
 
 # Power BI for Office 365 is retired
@@ -28,6 +28,8 @@ Power BI for Office 365, a previous version of Power BI, has been transitioned t
 Access to the **Power BI for Office 365** Admin portal is no longer available. Administrators can use the new [Admin portal](https://app.powerbi.com/admin-portal) to manage their organization's Power BI subscription.
 
 ![](media/powerbi-admin-portal/powerbi-admin-landing-page.png)
+
+For more information, see [Power BI admin portal](powerbi-admin-portal.md).
 
 ## See also
 

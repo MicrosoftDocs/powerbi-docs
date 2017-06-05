@@ -17,13 +17,12 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/18/2017"
+ms.date="05/31/2017"
 ms.author="asaxton"/>
+
 # Row-level security (RLS) with Power BI Desktop
 
 Row-level security (RLS) with Power BI Desktop can be used to restrict data access for given users. Filters restrict data at the row level. You can define filters within roles.
-
-> [AZURE.NOTE] RLS is a Pro feature. You can read more about what [Pro content](powerbi-power-bi-pro-content-what-is-it.md) is.
 
 You can now configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS within on-premises Analysis Services models outside of Power BI. For Analysis Services live connections, you configure Row-level security on the on-premises model. The security option will not show up for live connection datasets.
 
@@ -39,7 +38,8 @@ Learn more about options for [RLS within the Power BI Service](powerbi-admin-rls
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-faq.md)]
 
-## See also
+## Next steps
 
 [Row-level security (RLS) with the Power BI service](powerbi-admin-rls.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

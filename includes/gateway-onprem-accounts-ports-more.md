@@ -52,7 +52,7 @@ Alternatively, you can force the Gateway to adopt this behavior using the Gatewa
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
 
-Once changed, when you select **Apply** (a button that only appears when you make a change), the *gateway Windows service* restarts automatically, so the change can take effect. 
+Once changed, when you select **Apply** (a button that only appears when you make a change), the *gateway Windows service* restarts automatically, so the change can take effect.
 
 For future reference, you can restart the *gateway Windows service* from the user interface dialog by selecting **Service Settings** then select *Restart Now*.
 
@@ -60,7 +60,7 @@ For future reference, you can restart the *gateway Windows service* from the use
 
 ## High Availability
 
-High availability options are in the roadmap for the gateway. Stay tuned for more updates.
+High availability options are available with the **Power BI** Premium offering. See [Power BI Premium](powerbi-premium.md) for more details.
 
 ## How to restart the gateway
 

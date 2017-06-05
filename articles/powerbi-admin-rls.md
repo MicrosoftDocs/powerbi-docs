@@ -17,17 +17,16 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/12/2017"
+ms.date="05/31/2017"
 ms.author="asaxton"/>
+
 # Row-level security (RLS) with Power BI
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/67fK0GoVQ80?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data at the row level. You can define filters within roles.
 
-> [AZURE.NOTE] RLS is a Pro feature. You can read more about what [Pro content](powerbi-power-bi-pro-content-what-is-it.md) is.
-
-You can now configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS within on-premises Analysis Services models outside of Power BI. For Analysis Services live connections, you configure Row-level security on the on-premises model. The security option will not show up for live connection datasets.
+You can configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS within on-premises Analysis Services models outside of Power BI. For Analysis Services live connections, you configure Row-level security on the on-premises model. The security option will not show up for live connection datasets.
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
@@ -68,7 +67,7 @@ You can remove members by selecting the X next to their name.
 
 You can validate that the role you defined is working correctly by testing the role. 
 
-1. Select the **ellipse (...)** next to the role.
+1. Select the **ellipsis (...)** next to the role.
 2. Select **Test data as role**
 
 ![](media/powerbi-admin-rls/rls-test-role.png)
@@ -87,11 +86,11 @@ To return to normal viewing, select **Back to Row-Level Security**.
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-usernames.md)]
 
-## Using RLS with Groups in Power BI
+## Using RLS with app workspaces in Power BI
 
-If you publish your Power BI Desktop report to a group within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the group settings.
+If you publish your Power BI Desktop report to an app workspace within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the app workspace settings.
 
-> [AZURE.WARNING] If you have configured the Group so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
+> [AZURE.WARNING] If you have configured the app workspace so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
 
 ![](media/powerbi-admin-rls/rls-group-settings.png)
 
@@ -99,7 +98,8 @@ If you publish your Power BI Desktop report to a group within the Power BI servi
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-faq.md)]
 
-## See also
+## Next steps
 
 [Row-level security (RLS) with Power BI Desktop](powerbi-desktop-rls.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

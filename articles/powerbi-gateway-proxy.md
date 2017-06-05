@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/20/2017"
+ms.date="06/01/2017"
 ms.author="davidi"/>
 # Configuring proxy settings for the On-premises Data Gateway
 
@@ -50,6 +50,8 @@ The second is for the actual windows service that interacts with the Power BI se
     C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
 
 ### Power BI Gateway - Personal
+
+>   **Note:** There is a new version of the personal gateway for Power BI, called the **On-premises data gateway (personal mode)**. This section of this article describes the previous version of the personal gateway, called **Power BI Gateway - Personal**, which will be retired and stop working after July 31, 2017. For information about the new version of the personal gateway, including how to install the new version, see the [**On-premises data gateway (personal mode)** article](powerbi-gateway-personal-mode.md).
 
 The personal gateway can be installed in one of two ways. As a windows service (admin) or as a user mode application. This is determined during installation. As a result, your configuration files may be in one of two locations depending on how the gateway was installed. You will want to check both locations.
 
@@ -123,5 +125,6 @@ When configuring the proxy settings to use default credentials, as explained abo
 
 ## See also
 
+[On-premises data gateway (personal mode)](powerbi-gateway-personal-mode.md)
 [Firewall information](powerbi-gateway-onprem-tshoot.md#firewall-or-proxy)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

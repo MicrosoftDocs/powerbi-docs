@@ -17,8 +17,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/12/2017"
+ms.date="05/31/2017"
 ms.author="asaxton"/>
+
 # Unable to add Power BI to Office 365 partner subscription
 
 Office 365 allows companies to resell Office 365 bundled and integrated with their own solutions, providing end-customers with a single point of contact for purchasing, billing, and support.
@@ -37,7 +38,7 @@ If you are not able to purchase Power BI directly, and depending on what type of
 
 [Power BI (free)](#power-bi-free)
 
-[Power BI Pro](#power-bi-pro)
+[Power BI Pro and Premium](#power-bi-pro)
 
 ## Power BI (free)
 
@@ -61,9 +62,9 @@ To enable ad-hoc subscriptions, you can contact your partner and request that th
         Set-MsolCompanySettings -AllowAdHocSubscriptions $true
 
 
-## Power BI Pro
+## Power BI Pro and Premium
 
-If you want to buy a subscription to Power BI Pro, you will have to work with your partner to consider what options you have.
+If you want to buy a subscription to Power BI Pro or Power BI Premium, you will have to work with your partner to consider what options you have.
 
 - Your partner agrees to add Power BI to their portfolio so that you can purchase from them.
 - Your partner is able to transition you to a model where you can buy Power BI directly from Microsoft or another partner who offers Power BI.
@@ -72,7 +73,9 @@ This video looks at Office 365 syndication and purchasing Power BI:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C357phT94A8" frameborder="0" allowfullscreen></iframe>
 
-## See also
+## Next steps
 
 [Manage Azure AD using Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Power BI Premium - what is it?](powerbi-premium.md)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

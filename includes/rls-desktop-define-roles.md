@@ -26,7 +26,7 @@ To define security roles, you can do the following.
 6.	Select the table that you want to apply a DAX rule.
 7.	Enter the DAX expressions. This expression should return a true or false. For example: [Entity ID] = “Value”.
 
-    > [AZURE.NOTE] You can use *username()* within this expression. Be aware that *username()* will have the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service, it will be in the format of the user's UPN.
+    > [AZURE.NOTE] You can use *username()* within this expression. Be aware that *username()* will have the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service, it will be in the format of the user's UPN. Alternatively, you can use *userprincipalname()* which will always return the user in the format of their user principal name.
 
     ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 
@@ -36,4 +36,4 @@ To define security roles, you can do the following.
 
 9.	Select **Save**.
 
-You cannot assign users to a role within Power BI Desktop. This is done within the Power BI service. You can enable dynamic security within Power BI Desktop by making use of the *username()* DAX functions and having the proper relationships configured.
+You cannot assign users to a role within Power BI Desktop. This is done within the Power BI service. You can enable dynamic security within Power BI Desktop by making use of the *username()* or *userprincipalname()* DAX functions and having the proper relationships configured.

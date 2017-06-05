@@ -27,7 +27,7 @@
 **Question:** Are there any requirements for network bandwidth?  
 **Answer:** It is recommended to have good throughput for your network connection. Every environment is different and this is also dependent on the amount of data being sent. Using ExpressRoute could help to guarantee a level of throughput between on-premises and the Azure data centers.
 
-You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebsites.net/) to help gauge what your throughput is. 
+You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebsites.net/) to help gauge what your throughput is.
 
 **Question:** Can the gateway Windows service run with an Azure Active Directory account?  
 **Answer:** No. The Windows service needs to have a valid Windows account. By default it will run with the Service SID, *NT SERVICE\PBIEgwService*.
@@ -56,7 +56,7 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 ## High Availability/Disaster Recovery
 
 **Question:** Are there any plans for enabling high availability scenarios with the gateway?  
-**Answer:** Yes. This is on the roadmap, but we don’t have a timeline yet.
+**Answer:** Yes. This is available with the Power BI Premium offering. For more information see [Power BI Premium](powerbi-premium.md).
 
 **Question:** What options are available for disaster recovery?  
 **Answer:** You can use the recovery key to restore or move a gateway. When you install the gateway, supply the recovery key.

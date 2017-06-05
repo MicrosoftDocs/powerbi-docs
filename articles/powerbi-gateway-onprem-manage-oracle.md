@@ -17,8 +17,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/20/2017"
+ms.date="06/01/2017"
 ms.author="davidi"/>
+
 # Manage your data source - Oracle
 
 Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Oracle data source either for scheduled refresh or for DirectQuery.
@@ -177,4 +178,6 @@ For additional troubleshooting information relating to the gateway, see [Trouble
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Power BI Premium](powerbi-premium.md)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

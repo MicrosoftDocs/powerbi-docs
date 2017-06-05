@@ -3,7 +3,7 @@
    description="Troubleshooting unsupported data source for refresh"
    services="powerbi"
    documentationCenter=""
-   authors="guyinacube"
+   authors="davidiseminger"
    manager="erikre"
    backup=""
    editor=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
-   ms.author="asaxton"/>
+   ms.date="05/31/2017"
+   ms.author="davidi"/>
 
-# Troubleshooting unsupported data source for refresh  
+# Troubleshooting unsupported data source for refresh
 
 You may see an error when trying to configured a dataset for scheduled refresh.
 
@@ -52,4 +52,5 @@ If you aren’t sure what data source was used, you can find that using the foll
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/29/2017"
+   ms.date="05/31/2017"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
@@ -46,6 +46,7 @@ Watch Will export the data from one of the visualizations in his report, save it
     ![](media/powerbi-service-export-data/pbi-export-to-excel.png)
 
 ## From a visualization in a report
+
 To follow along, open the [Procurement analysis sample report](powerbi-sample-procurement-analysis-take-a-tour.md) in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md). [Add a new blank report page](powerbi-service-add-a-page-to-a-report.md). Then follow the steps below to add an aggregation and a visualization-level filter.
 
 1. Create a new column chart.  From the Fields pane, select **Location > City** and **Invoice > Discount Percent**.   
@@ -104,12 +105,10 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
 
    2. From the **Data** tab, select **Get external data** > **From text**.
 
-## See also
+## Next steps
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
-
-[Reports in Power BI](powerbi-service-reports.md)
-
+[Dashboards in Power BI](powerbi-service-dashboards.md)  
+[Reports in Power BI](powerbi-service-reports.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

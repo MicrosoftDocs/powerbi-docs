@@ -17,8 +17,9 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/24/2017"
+ms.date="06/01/2017"
 ms.author="davidi"/>
+
 # On-premises data gateway
 
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
@@ -98,6 +99,6 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 [Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
 [Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
 [On-premises Data Gateway in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[On-premises data gateway (personal mode) - the new version of the personal gateway](powerbi-gateway-personal-mode.md)
 [Configuring proxy settings for the On-Premises Data Gateway](powerbi-gateway-proxy.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

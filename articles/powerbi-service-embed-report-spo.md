@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="05/31/2017"
    ms.author="asaxton"/>
 # Embed with report web part in SharePoint Online
 
@@ -26,7 +26,7 @@ With Power BI's new report web part for SharePoint Online, you can easily embed 
 
 When using the new **Embed in SharePoint Online** option, the embedded reports are fully secure so you can easily create secure internal portals.
 
-> [AZURE.NOTE] **Embed in SharePoint Online** is only available with [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md). Each user that views the report mush have a Power BI Pro license. If they do not have a Pro license, they will be prompted to sign-up to view the report.
+> [AZURE.NOTE] **Embed in SharePoint Online** is only available with [Power BI Pro](powerbi-premium.md). Each user that views the report mush have a Power BI Pro license. If they do not have a Pro license, they will be prompted to sign-up to view the report.
 
 ## Requirements
 
@@ -150,12 +150,12 @@ You should contact the owner of the SharePoint Online page to help you resolve t
 
     To resolve this issue, ensure your tenant is set to *First release for everyone* as described in the **Requirements** section earlier in this article. To enable Single Sign On (SSO), the Power BI web part relies on *Authentication APIs* that are provided by SharePoint, which are only available when *First release for everyone* is selected.
 
-
-
-## See also
+## Next steps
 
 [Set up the Standard or First Release options in Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)  
 [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 [Create and distribute an app in Power BI](powerbi-service-create-apps.md)  
 [Share a dashboard with colleagues and others](powerbi-service-share-unshare-dashboard.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Power BI Premium - what is it?](powerbi-premium.md)  
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

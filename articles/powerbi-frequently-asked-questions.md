@@ -17,14 +17,13 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/27/2017"
+   ms.date="05/31/2017"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
 - If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
 - Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 - Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.
-
 
 ## What is Microsoft Power BI?
 
@@ -37,6 +36,10 @@ Power BI provides all sorts of features to help you get started exploring data i
 ## How much does Power BI cost?
 
 Power BI and Power BI Desktop are free. There is a 60-day free trial available for Power BI Pro. After that, Power BI Pro is $9.99/User/Month. Learn more about our pricing [Power BI pricing](https://powerbi.microsoft.com/pricing).
+
+## What if I have questions about Power BI Premium?
+
+For questions related to Power BI Premium, see [Power BI Premium FAQ](powerbi-premium-faq.md).
 
 ## Are users who signed up after May 3, 2017 eligible for the Extended Pro Trial?
 
@@ -171,8 +174,8 @@ Like many other Microsoft services and software, Power BI provides an easy way t
 
 - To **undo** your last action, or last few actions, press CTRL+Z.
 
+## Next steps
 
-## See also
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 - Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
 - Or click the **Contact Me** icon ![](media/powerbi-frequently-asked-questions/power-bi-contact-me-icon.png) in the lower-right corner of this browser window.

@@ -3,8 +3,8 @@
    description="Power BI Pro content - what is it?"
    services="powerbi"
    documentationCenter=""
-   authors="davidiseminger"
-   manager="mblythe"
+   authors="guyinacube"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,10 +17,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/04/2017"
-   ms.author="davidi"/>
+   ms.date="05/31/2017"
+   ms.author="asaxton"/>
 
 # Power BI Pro content - what is it?  
+
+> [AZURE.IMPORTANT] This article has been replaced by [Power BI Premium - what is it?](powerbi-premium.md).
 
 Power BI free and Pro licenses are different based on the kind of content users can consume. If your content contains any of the following items, it's Power BI Pro content:
 
