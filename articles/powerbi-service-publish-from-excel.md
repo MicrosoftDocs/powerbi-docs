@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/02/2017"
+   ms.date="06/06/2017"
    ms.author="davidi"/>
 
 # Publish to Power BI from Excel 2016

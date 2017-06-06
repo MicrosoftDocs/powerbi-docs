@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/07/2017"
+   ms.date="06/06/2017"
    ms.author="davidi"/>
 
 # Use the numeric range slicer in Power BI Desktop (Preview)

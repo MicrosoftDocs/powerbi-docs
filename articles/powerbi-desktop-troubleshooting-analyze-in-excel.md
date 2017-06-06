@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2017"
+   ms.date="06/06/2017"
    ms.author="davidi"/>
 
 # Troubleshooting Analyze in Excel
