@@ -35,7 +35,7 @@ Power BI Premium enables Premium capacity, a set of resources reserved for the e
 
 This is all transparent to your end users. They will continue to use Power BI as usual. They don't have to ever be aware that some (or all) of the BI content is hosted in your dedicated capacity. For your users, everything works exactly as before.
 
-[!INCLUDE [powerbi-premium-illustration](../includes/powerbi-premium-illustration.md)]
+[AZURE.INCLUDE [powerbi-premium-illustration](../includes/powerbi-premium-illustration.md)]
 
 For more information, see [What is Power BI Premium?](powerbi-premium.md).
 

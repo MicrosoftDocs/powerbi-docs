@@ -29,7 +29,7 @@ You can take advantage of Power BI Premium by assigning workspaces to a Premium 
 
 *Shared capacity* is the experience you are used to with Power BI, where your workloads run on computational resources shared by other customers. In shared capacity, more limits are placed on individual users to ensure quality of the experience for all users.
 
-[!INCLUDE [powerbi-premium-illustration](../includes/powerbi-premium-illustration.md)]
+[AZURE.INCLUDE [powerbi-premium-illustration](../includes/powerbi-premium-illustration.md)]
 
 ## Capacity tiers
 
