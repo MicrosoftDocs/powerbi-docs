@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/15/2017"
+   ms.date="06/06/2017"
    ms.author="davidi"/>
 
 # Use See Data and See Records in Power BI Desktop
