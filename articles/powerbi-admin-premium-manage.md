@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/01/2017"
+   ms.date="06/06/2017"
    ms.author="asaxton"/>
 
 # Manage Power BI Premium
@@ -27,13 +27,15 @@ Learn how you can manage Power BI Premium and enable access to content for your 
 
 ![](media/powerbi-admin-premium-manage/premium-capacity-management.png)
 
-The Power BI Premium offering introduces the concept of premium capacity, and it is the heart of the offering.
+The Power BI Premium offering introduces the concept of Premium capacity, and it is the heart of the offering.
 
 ## What is Power BI Premium capacity?
 
 Power BI Premium enables Premium capacity, a set of resources reserved for the exclusive use by you. Having your own Premium capacity allows you to publish BI content to users throughout your organization without having to purchase licenses for them. It also guarantees dependable, consistent performance for the contents hosted in capacity.
 
 This is all transparent to your end users. They will continue to use Power BI as usual. They don't have to ever be aware that some (or all) of the BI content is hosted in your dedicated capacity. For your users, everything works exactly as before.
+
+[!INCLUDE [powerbi-premium-illustration](../includes/powerbi-premium-illustration.md)]
 
 For more information, see [What is Power BI Premium?](powerbi-premium.md).
 
