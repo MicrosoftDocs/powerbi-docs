@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/06/2017"
    ms.author="asaxton"/>
 # Power BI admin portal
 
@@ -151,7 +151,7 @@ Users in the organization can export data from a tile or visualization. [Learn m
 
 ![](media/powerbi-admin-portal/powerbi-admin-export-data.png)
 
-> [AZURE.NOTE] Disabling **Export Data** will also prevent users from using the **Analyze in Excel** feature.
+> [AZURE.NOTE] Disabling **Export Data** will also prevent users from using the **Analyze in Excel** feature, as well as using the Power BI service live connection.
 
 ### Export reports as PowerPoint presentations
 

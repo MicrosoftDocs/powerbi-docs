@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="06/06/2017"
    ms.author="asaxton"/>
 
 # Administrator handbook overview, Power BI Report Server
@@ -30,7 +30,7 @@ This handbook will help you understand concepts on planning, deploying and manag
 
 ## Installing and migration
 
-You will need to install Power BI Report Server to start using it. We have infomration that will allow you to handle this task.
+You will need to install Power BI Report Server to start using it. We have information that will allow you to handle this task.
 
 Before you start to install, upgrade or migrate to Power BI Report Server, take a look at the [system requirements](reportserver-system-requirements.md) for the report server.
 
@@ -43,7 +43,7 @@ If you are deploying a new Power BI Report Server, you use the following documen
 
 ### Migration
 
-There is no in place upgrade for SQL Server Reporting Services. If you have an existing SQL Server Reporting Services instance that you want to make a Power BI Reprot Server, you will need to migrate it. There are other reasons that you may want to perform a migration as well. Review the migration document for more details.
+There is no in place upgrade for SQL Server Reporting Services. If you have an existing SQL Server Reporting Services instance that you want to make a Power BI Report Server, you will need to migrate it. There are other reasons that you may want to perform a migration as well. Review the migration document for more details.
 
 [Migrate a report server installation](reportserver-migrate-report-server.md)
 

@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/01/2017"
+   ms.date="06/06/2017"
    ms.author="asaxton"/>
 
 # How to purchase Power BI Premium
@@ -30,6 +30,8 @@ Learn how to purchase Power BI Premium capacity for your organization.
 You can purchase a Power BI Premium capacity node through the Office 365 Admin center. You can also have any combination of Premium capacity SKUs (P1 through P3) within your organization. They provide different resource capabilities.
 
 For more information about what Power BI Premium is, see [Power BI Premium - what is it?](powerbi-premium.md). To see the current pricing for Power BI, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). You can also plan your costs for Power BI Premium by using the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/).
+
+> [AZURE.IMPORTANT] Authors of content will still need a Power BI Pro license, even if you purchase Power BI Premium.
 
 ## Purchase a Power BI Premium capacity
 
