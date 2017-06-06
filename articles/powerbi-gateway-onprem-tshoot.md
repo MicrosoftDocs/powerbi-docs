@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/01/2017"
+ms.date="06/06/2017"
 ms.author="davidi"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -353,7 +353,7 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file
 |Activty Type|Description|
 |---|---|
 |MGEQ|Queries executed over ADO.NET. This includes DirectQuery data sources.|
-|MGEO|Queries executed over OLEDB. This includes SAB HANA and Analysis Services 2016.|
+|MGEO|Queries executed over OLEDB. This includes SAP HANA and Analysis Services 2016.|
 |MGEM|Queries executed from the Mashup engine. This is used with imported datasets that use scheduled refresh or refresh on-demand.|
 
 ### Determine the duration of a query
