@@ -81,7 +81,7 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
 
 7.  Now try selecting **Underlying data** > **Export** and choosing .xlsx. Power BI exports the data. If you had applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
 
-    >**Warning**: Exporting underlying data allows users to see all the detailed data -- every column in the data. If you are a dataset owner, you can [turn this off for your tenant](xxx) or you can set proprietary columns to "hidden".
+    >**Warning**: Exporting underlying data allows users to see all the detailed data -- every column in the data. Power BI service administrators can turn this off for their organization. If you are a dataset owner, you can set proprietary columns to "hidden" so that they don't show up in the Field list in Desktop or Power BI service.
 
     **Underlying data**: select this option if your visualization does have an aggregate and you'd like to see all the underlying details. Basically, selecting *Underlying data* removes the aggregate. When you select **Export**, the data is exported to an .xlsx file and your browser prompts you to save the file. Once saved, open the file in Excel.
 

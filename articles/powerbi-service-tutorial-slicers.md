@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="05/30/2017"
    ms.author="mihart"/>
 
 # Slicers in Power BI service (Tutorial)
@@ -110,7 +110,7 @@ Do you want the slicer to only filter some of the visuals on the report page?  U
 
 For more information, see [Visual interactions in a Power BI report](documentation/powerbi-service-visual-interactions.md).
 
-## Limitations of slicers in Power BI
+## Considerations and troubleshooting slicers in Power BI
 
 There are a few limitations to using slicers in Power BI, which are the following:
 
@@ -120,7 +120,8 @@ There are a few limitations to using slicers in Power BI, which are the followin
 
 3. Slicers cannot be pinned to a dashboard.
 
-4. Drilldown is not supported for slicers.
+4. Drilldown is not supported for slicers.    
+5. Slicers do not support Visual level filters.
 
 Do you have ideas for how to improve Power BI? [Submit an idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 

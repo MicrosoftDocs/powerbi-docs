@@ -18,29 +18,27 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2017"
+   ms.date="05/30/2017"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations
 
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, use the following tips. The first set of tips are for you to use if you have access to the dataset itself. And the second set of tips are things you can do in Power BI.
 
-##    What is sent to Bing
+>**IMPORTANT**    What is sent to Bing?
 
->**Important**: Power BI sends Bing the data it needs to create the visualization.
+Power BI sends Bing the data it needs to create the visualization. This includes the data in the **Location**, **Latitude**, and **Longitude** buckets that is being used to create that visualization.
 
-When you create a map visualization in Power BI service or Power BI Desktop, **all** the data in the location, latitude, and longitude buckets being used to create that visualization are sent to Bing. 
+In the example below, the field **Vendor** is being used for geo-coding, so all vendor data is sent to Bing. Data from the **Size** and **Color saturation** buckets is not sent to Bing.
 
-In the example below, the field **Plant** is being used for geocoding, so all Plant data is sent to Bing. 
-
-![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-sent-to-bing.png)
+![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-sent-to-bing-new.png)
 
 
 And if your visualization uses additional location filters for the visual, page, or report, that data is also sent to Bing.
 
-In the example below, that includes data for **Category**, **Vendor**, and **Material Type**.
+In the example below, that includes data from the Page level filter for **Plant**.
 
-![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-bing-filters.png)
+![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-bing-filters-new.png)
  
 
 ##  In the dataset: tips to improve the underlying dataset
@@ -49,15 +47,15 @@ If you have access to the dataset that is being used to create the map visualiza
 
 **1. Use Geo Location Terms**
 
-When columns in the dataset are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as *California* and *Washington*, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of *Washington, DC* instead of Washington state for the word *Washington*. Naming that column *State* will improve the geocoding. The same is true for columns named *Country*, *State*, *Province*, and *City*.
+When columns in the dataset are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as *California* and *Washington*, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of *Washington, DC* instead of Washington state for the word *Washington*. Naming that column *State* will improve the geo-coding. The same is true for columns named *Country*, *State*, *Province*, and *City*.
 
-> [AZURE.NOTE] When working with countries or regions, use the three-letter abbreviation to ensure that geocoding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
+> [AZURE.NOTE] When working with countries or regions, use the three-letter abbreviation to ensure that geo-coding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
 
 > If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 
 **2. Categorize geographic fields in Power BI Desktop**
 
-In Power BI Desktop, you can ensure fields are correctly geocoded by setting the *Data Category* on the data fields. Select the desired table, go to the **Advanced** ribbon and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **Country**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md).
+In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. Select the desired table, go to the **Advanced** ribbon and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **Country**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md).
 
 **3.  Use Power BI Query Editor to create more-specific locations**
 
