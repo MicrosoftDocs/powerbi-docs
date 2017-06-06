@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/01/2017"
+   ms.date="06/06/2017"
    ms.author="davidi"/>
 
 # On-premises data gateway (personal mode)
 
 You can use on-premises data sources, and create Power BI reports and dashboards, using a gateway. A **gateway** is software that facilitates access to data that is stored on a private, on-premises network, then enables you to use that data in online services like the **Power BI service**. The **On-premises data gateway (personal mode)** is a recently released update to the Power BI gateway that allows individuals to install a gateway on their own computer, and gain access to on-premises data.
 
-![](media/powerbi-gateway-personal-mode/gateway-personal-mode_01.png)
+![](media/powerbi-gateway-personal-mode/gateway-personal-mode_00.png)
 
 > Note: The **On-premises data gateway (personal mode)** replaces the previously supported version of the personal gateway, which is called **Power BI Gateway - Personal**. The previous personal gateway will continue working only until July 31, 2017. See the sections below for information on how to update to the new version.
 
@@ -67,7 +67,7 @@ Here's the last step. Once the new personal gateway is installed (and the last i
 
 ![](media/powerbi-gateway-personal-mode/gateway-personal-mode_06.png)
 
-If you've updated the personal gateway on the same machine as the previous gateway is installed, your credentials will update automatically, and all refresh activities will go through the new gateway. If the previous gateway was installed on a different machine, you'll be asked to update your credentials on certain datasets. In the previous image, notice the list of datasets in the window; the list will show datasets that might require updated credentials. Each dataset listed is a direct link that you simply click on to easily update your credentials. 
+If you've updated the personal gateway on the same machine as the previous gateway is installed, your credentials will update automatically, and all refresh activities will go through the new gateway. If the previous gateway was installed on a different machine, you'll be asked to update your credentials on certain datasets. In the previous image, notice the list of datasets in the window; the list will show datasets that might require updated credentials. Each dataset listed is a direct link that you simply click on to easily update your credentials.
 
 That's it - almost. With the new gateway installed, you no longer need to previous version installed on your machine, so you should uninstall it. You can do this by searching for **Power BI Gateway - personal** on your machine, and uninstalling it.
 
