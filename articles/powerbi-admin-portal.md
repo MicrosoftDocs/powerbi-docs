@@ -223,6 +223,12 @@ Users in the organization can tag dashboards with classifications indicating das
 
 > [AZURE.NOTE] This settings applies to the entire organization and cannot be limited to specific groups.
 
+## Developer settings
+
+### Embed content in apps
+
+Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting will prevent users from being able to use the REST APIs to embed Power BI content within their application.
+
 ## Premium settings
 
 The Premium settings tab allows you to manage any Power BI Premium capacity that has been purchased for your organization. All users within your organization will see the Premium settings tab, but will only see contents within it, if they are assigned as either **Capacity admin** or a user that has assignment permissions. If a user does not have any permissions, they will see the following message.
