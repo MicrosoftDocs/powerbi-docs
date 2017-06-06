@@ -81,7 +81,7 @@ If you choose select items and get data, you’re importing Tabular model data r
 
 **Question:** If I created a live connection, can I edit the model or query in Power BI Desktop?
 
-**Answer:** No. All of the query and modeling features in Power BI Desktop are disabled when exploring live data.
+**Answer:** You can create report level measures in the Power BI Desktop, but all other query and modelling features are disabled when exploring live data.
 
  
 
@@ -94,6 +94,7 @@ If you choose select items and get data, you’re importing Tabular model data r
 **Question:** In Navigator, I see a model and a perspective. What’s the difference?
 
 **Answer:** A perspective is a particular view of a Tabular model. It might include only particular tables, columns, or measures depending on a unique data analysis need. A Tabular model always contains at least one perspective, which could include everything in the model. If you’re unsure which you should select, check with your administrator.
+
 
 
 ## To change the server name after initial connection
