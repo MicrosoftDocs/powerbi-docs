@@ -85,12 +85,14 @@ You can go to **Add/Remove Programs** and see whether **Power BI Gateway - Perso
 If you were using **Fast Combine** with the previous gateway, you'll need to take the following steps to re-enable **Fast Combine** to work with the **On-premises data gateway (personal mode)**:
 
 1.  Using File Explorer, open the following file:
-    ```xml
+
+    ```
     %localappdata%\Microsoft\on-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
     ```
 
 2.  At the bottom of the file, add the following text:
-        ```xml
+
+        ```
         <setting name="EnableFastCombine" serializeAs="String">```
         <value>true</value>
         </setting>
