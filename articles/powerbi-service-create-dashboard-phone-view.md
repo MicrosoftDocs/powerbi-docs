@@ -26,9 +26,9 @@ When you view dashboards in the Power BI mobile app on a phone, you notice the d
 
 When you turn the phone sideways, then you see the dashboard as it's laid out in the service, not as you designed it for the phone.
 
-> [AZURE.NOTE] As you edit the phone view, anyone viewing the dashboard on a phone can see the changes you make in real time. 
-> 
-> For example, if you unpin all tiles on the dashboard phone view, the dashboard on the phone will suddenly have no tiles. 
+> [AZURE.NOTE] As you edit the phone view, anyone viewing the dashboard on a phone can see the changes you make in real time. For example, if you unpin all tiles on the dashboard phone view, the dashboard on the phone will suddenly have no tiles. 
+
+## Create a phone view of a dashboard
 
 1. In the Power BI service, open a dashboard.
 

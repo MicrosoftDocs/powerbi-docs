@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports in the iPhone mobile app"
-   description="Learn about viewing and interacting with reports in the Power BI mobile app for iOS on your iPhone. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps. "
+   pageTitle="Reports in the Power BI mobile apps"
+   description="Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps. "
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,37 +17,39 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/02/2017"
+   ms.date="06/07/2017"
    ms.author="maggies"/>
 
 # Reports in the iPhone mobile app
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in the Power BI service [(https://powerbi.com)](https://powerbi.com) or in [Power BI Desktop](powerbi-desktop-report-view.md). When you create reports in Power BI Desktop, you can create [a version of the report optimized for phones](powerbi-mobile-view-phone-report.md). 
+Applies to:
 
-Then you view and interact with those reports in the [iPhone app (Power BI for iOS)](powerbi-mobile-iphone-app-get-started.md).
-
-## Open a Power BI report
-
--   On your iPhone, in **My workspace** or in a group, tap Reports.
-
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-reports-home.png)
-
-    You see Power BI reports and Excel workbooks together.
-
--   Or: On a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-open-report-icon.png).
-
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-line-tile-open-report.png)
+| ![iPhone](media/powerbi-mobile-reports-in-the-iphone-app/ios-logo-40-px.png) | ![iPad](media/powerbi-mobile-reports-in-the-iphone-app/ios-logo-40-px.png) | ![Android phone](media/powerbi-mobile-reports-in-the-iphone-app/android-logo-40-px.png) | ![Android tablet](media/powerbi-mobile-reports-in-the-iphone-app/android-logo-40-px.png) | ![Windows 10 devices](media/powerbi-mobile-reports-in-the-iphone-app/win-10-logo-40-px.png) |
+|:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
+| iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
 
 
-The report opens in landscape mode.
+A Power BI report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in [Power BI Desktop](powerbi-desktop-report-view.md). You can even create [a version of the report optimized for phones](powerbi-mobile-view-phone-report.md) in Power BI Desktop. You publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](powerbi-mobile-iphone-kpis-mobile-reports.md).  
 
-![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-landscape.png)
+Then you interact with those reports in the Power BI mobile apps.
 
-> [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&A box don't open reports when you tap them. 
+## Open a Power BI report in the mobile app
 
-## View reports optimized for your phone 
+Power BI reports are stored in different places in the mobile app, depending on where you got them. They can be in Apps, Shared with me, Workspaces (including My Workspace), or on a report server. Sometimes you go through a related dashboard to get to a report, and sometimes they're listed.
 
-Some Power BI report authors create a report layout optimized for phones. If a report page has a phone layout, then when you go to that page, it opens in portrait view.
+-   From a dashboard, tap the ellipsis (...) in the upper-right corner of  a tile > **Open report**.
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-open-report-tile.png)
+
+    The report opens in landscape mode.
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-landscape.png)
+
+    > [AZURE.NOTE]  Not all tiles have the option to open in a report. For example, tiles created by asking a question in the Q&A box don't open reports when you tap them. 
+
+## View reports optimized for phones 
+
+Power BI report authors can create a report layout specifically optimized for phones ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-phone-report-icon.png). If you're viewing a report on a phone, when you go to a report page with a phone layout it opens in portrait view.
 
 ![](media/powerbi-mobile-reports-in-the-iphone-app/07-power-bi-phone-report-portrait.png)
 
