@@ -21,9 +21,11 @@
 
 # Power BI Premium release notes
 
-These are the June release notes for Power BI Premium, a dedicated capacity giving your organization or team more dependable performance, larger data volumes and the ability to distribute content without per-user licenses for viewers.
+These are the June release notes for Power BI Premium, a dedicated capacity giving your organization or team more dependable performance, larger data volumes, and the ability to distribute content without per-user licenses for viewers.
 
 > [AZURE.NOTE] Power BI Premium is not available yet, but coming soon. These documents are being made available ahead of the release of the offering.
+
+## June release notes
 
 - Usage metrics for the capacity admin portal may under-report usage in the capacity. Work is in progress to enable this.
 - Dynamic row-level security (RLS) is not yet available for embedded use cases. Work is in progress to enable this.
