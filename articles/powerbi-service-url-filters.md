@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="06/08/2017"
    ms.author="mihart"/>
 
 # Filter a report using query string parameters in the URL
@@ -27,10 +27,14 @@ When you open a report in Power BI service, each page of the report has its own 
 
 ![](media/powerbi-service-url-filters/power-bi-report2.png)
 
-##  Query string parameter syntax for filtering
+<iframe width="640" height="360" src="https://www.youtube.com/embed/WQFtN8nvM4A?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+## Query string parameter syntax for filtering
+
 The syntax is fairly straightforward; start with the report URL, add a question mark, and then add your filter syntax.
 
 URL?filter=***Table***/***Field*** eq '***value***'
+
 
 ![](media/powerbi-service-url-filters/power-bi-filter-urls7b.png)
 
@@ -63,9 +67,27 @@ Our report is filtered for North Carolina; all the visualizations on the report 
 
 ![](media/powerbi-service-url-filters/power-bi-report4.png)
  
- 
-##  Filter on multiple fields
-By default, you can only filter on a single field with the query string. But you may have situations where you want to filter on multiple fields. One way to do this is by creating a calculated column that concatenates two fields to a single value. Then you can filter on that value.
+
+## Filter on multiple fields
+
+You can also filter on multiple fields by adding additional parameters to your URL. Let's go back to our original filter parameter.
+
+```
+?filter=Store/Territory eq 'NC'
+```
+
+To filter on additional fields, add an `and` and another field in the same format as above. Here is an example.
+
+```
+?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
+```
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+### Using DAX to filter on multiple values
+
+Another way to filter on multiple fields is by creating a calculated column that concatenates two fields to a single value. Then you can filter on that value.
 
 For example, we have two fields: Territory and Chain. In Power BI Desktop, [create a new Calculated column](powerbi-desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name cannot have any spaces. Here is the DAX formula for that column.
 
@@ -75,22 +97,25 @@ Publish the report to Power BI service and then use the URL query string to filt
 
 https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
-##  Pin a tile from a filtered report
+## Pin a tile from a filtered report
+
 Once you've filtered the report using query string parameters, you can pin visualizations from that report to your dashboard. The tile on the dashboard will display the filtered data and selecting that dashboard tile will open the report that was used to create it.  However, the filtering you did using the URL is not saved with the report and when the dashboard tile is selected, the report opens in its unfiltered state.  This means that the data displayed in the dashboard tile will not match the data displayed in the report visualization.
 
 There may be some cases where this will be helpful when you'd like to see different results; filtered on the dashboard and unfiltered in the report.
 
-##  Limitations and troubleshooting
+## Limitations and troubleshooting
 
 There are a couple of things to be aware of when using the query string parameters.
+
 - Query string filtering does not work with [Publish to web](powerbi-service-publish-to-web.md) URLs.
 
-- Field type has to be string.  
+- Field type has to be string.
 
-- Table and field names cannot have any spaces.  
+- Table and field names cannot have any spaces.
 
-## Next steps  
-[ Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
+## Next steps
+
+[Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
 [Try it out -- it's free!](https://powerbi.com/)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)  
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
