@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/08/2017"
    ms.author="davidi"/>
 
 # Add a column from an example in Power BI Desktop
@@ -114,9 +114,29 @@ There are many transformations that are available when using **Add column from E
     -   Date.Year
 
 
+-   The following supported **Date transformations** are available beginning with the June 2017 **Power BI Desktop** release:
+    -   Date -> Age
+    -   Date -> Year -> Start of Year
+    -   Date -> Year -> End of Year
+    -   Date -> Month -> Start of Month
+    -   Date -> Month -> End of Month
+    -   Date -> Quarter -> Start of Quarter
+    -   Date -> Month -> Days in Month
+    -   Date -> Quarter -> End of Quarter
+    -   Date -> Week -> Start of Week
+    -   Date -> Week -> End of Week
+    -   Date -> Day -> Day of Month
+    -   Date -> Day -> Start of Day
+    -   Date -> Day -> End of Day
+
+
 -   **Time transformations**
     -   Time.Hour
     -   Time.Minute
     -   Time.Second
 
     > **Note:** All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
+
+    -   **Other transformations** (added with the June 2017 **Power BI Desktop** release)
+        -   Format -> Clean
+        -   Extract -> Length
