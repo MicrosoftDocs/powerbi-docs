@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/19/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 # Whitepapers for Power BI
 
@@ -26,6 +26,7 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 |Whitepaper|Description|
 |---|---|
 |[Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)|Describes Power BI Premium, both as it exists when launched and also how it will evolve.|
+|[Planning a Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy)|This is a technical whitepaper outlining considerations for a well-performing and secure organizational Power BI deployment.|
 |[Best design practices for reports and visuals](powerbi-service-visualization-best-practices.md)|Provides best practices for designing reports in Power BI.|
 |[Advanced Analytics with Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website)|Describes the advanced analytics capabilities of Power BI, including predictive analytics, custom visualizations, R integration, and data analysis expressions.|
 |[Bidirectional filtering](powerbi-desktop-bidirectional-filtering.md)|Explains bidirectional cross-filtering in Power BI Desktop (the whitepaper also covers SQL Server Analysis Services 2016, both have the same behavior).|
