@@ -18,62 +18,60 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/30/2017"
+   ms.date="06/07/2017"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations
 
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, use the following tips. The first set of tips are for you to use if you have access to the dataset itself. And the second set of tips are things you can do in Power BI.
 
->**IMPORTANT**    What is sent to Bing?
+##    What is sent to Bing?
+Power BI service and Power BI Desktop send Bing the data it needs to create the visualization. This may include the data in the **Location**, **Latitude**, and **Longitude** buckets and geo fields in any of the **Report level**, **Page level**, or **Visual level** filter buckets. Exactly what is sent varies by map type.  
 
-Power BI sends Bing the data it needs to create the visualization. This includes the data in the **Location**, **Latitude**, and **Longitude** buckets that is being used to create that visualization.
+-    For maps (bubble maps), if latitude and longitude are provided then no data is sent to Bing. Otherwise, any data in the Location and filter buckets is sent to Bing.     
+- For filled maps, if latitude and longitude are provided then that is the only geo data sent to Bing. Otherwise, **Location** type is sent (determined by the column name or the data category set).
 
 In the example below, the field **Vendor** is being used for geo-coding, so all vendor data is sent to Bing. Data from the **Size** and **Color saturation** buckets is not sent to Bing.
 
 ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-sent-to-bing-new.png)
 
 
-And if your visualization uses additional location filters for the visual, page, or report, that data is also sent to Bing.
-
-In the example below, that includes data from the Page level filter for **Plant**.
-
-![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-bing-filters-new.png)
- 
-
 ##  In the dataset: tips to improve the underlying dataset
 
 If you have access to the dataset that is being used to create the map visualization, there are a few things you can do to increase the likelihood of correct geo-coding.
 
-**1. Use Geo Location Terms**
+
+**1. Use Geo Location Terms** 
 
 When columns in the dataset are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as *California* and *Washington*, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of *Washington, DC* instead of Washington state for the word *Washington*. Naming that column *State* will improve the geo-coding. The same is true for columns named *Country*, *State*, *Province*, and *City*.
 
-> [AZURE.NOTE] When working with countries or regions, use the three-letter abbreviation to ensure that geo-coding works properly in map visualizations. Do *not* use two-letter abbreviations, as some countries or regions may not be properly recognized.
-
-> If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 
 **2. Categorize geographic fields in Power BI Desktop**
 
 In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. Select the desired table, go to the **Advanced** ribbon and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **Country**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md).
 
-**3.  Use Power BI Query Editor to create more-specific locations**
+**3.  Use geo-hierarchies to create more-specific locations**
 
-Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Some designations are ambiguous because the location exists in multiple countries or regions. For example, there's a ***Southampton*** in England, Pennsylvania, and New York. Use Power BI Desktop Query Editor to build a more-specific location like a street address.  Use the **Add Column** feature to build a custom column, then build the desired location as follows: 
+Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Some designations are ambiguous because the location exists in multiple countries or regions. For example, there's a ***Southampton*** in England, Pennsylvania, and New York. 
+
+Power BI uses Bing's [unstructured URL template service](https://msdn.microsoft.com/library/ff701714.aspx) to get the latitude and longitude coordinates based on a set of address values for any country. If your data doesn't contain enough location data, add those columns and categorize them appropriately.
+
+
+
+**4. Use Power BI Query Editor to create more-specific locations**
+Use Power BI Desktop Query Editor to build a more-specific location like a street address.  Use the **Add Column** feature to build a custom column, then build the desired location as follows: 
 
 
     = [Field1] & " " & [Field2]
 
 Then use the resulting field in Power BI to create the map visualizations. This approach is very useful for building Street addresses from Shipping Address fields, which are common in data sets. Note that concatenation only works with text fields. If necessary, convert the street number to a *text* data type before using it to build an address.  
 
-**4. Use a comma to add more context to the geo field**
+**5. Use a comma to add more context to the geo field**
+Similar to #3 above, but using DAX in Excel or Excel Power Pivot. You can increase the accuracy of geo-coding by building columns that concatenate multiple fields together and use those for plotting data locations. For example, if you have a column for "state" and another for "countryregion", create a concatenated column for "city-countryregion". This way, Instead of passing only Southampton, you can pass Southampton, England to get a more accurate geo-coding result.
 
-Similar to #3 above, but using DAX in Excel or Excel Power Pivot. You can increase the accuracy of geo-coding by building columns that concatenate multiple fields together and use those for plotting data locations. For example, if you have a column for "state" and another for "countryregion", create a concatenated column for "city-countryregion". This way, Instead of passing only *Southampton*, you can pass *Southampton, England* to get a more accurate geo-coding result. 
+= CONCATENATE('Products'[city],'Products'[state])
 
-
-    = CONCATENATE('Products'[city],'Products'[state])
-
-For more information, including a video, see [Maps in Power View](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7) and scroll down to the section "**make Map data unambiguous**".
+For more information, including a video, see [Maps in Power View](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7) and scroll down to the section "make Map data unambiguous".
 
 **5. Use specific Latitude and Longitude**
 

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/23/2017"
+   ms.date="06/07/2017"
    ms.author="mihart"/>
 
 # Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
@@ -97,10 +97,6 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](powerbi-sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
-
->**Important**: Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, **all** the data in all the fields being used to create that visualization are sent to Bing.
-
-   For more information about the data being sent to Bing, and for tips to increase your geocoding success, see [Tips and tricks for map visualizations](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
 
 1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and/or **Longitude** buckets. In this example we're using **Store > City**.
 
