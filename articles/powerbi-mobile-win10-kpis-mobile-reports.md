@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/25/2017"
+   ms.date="06/09/2017"
    ms.author="maggies"/>
 
 # View SSRS mobile reports and KPIs in the Windows 10 mobile app
@@ -33,16 +33,6 @@ The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access 
 Then in the Power BI mobile app for Windows 10, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
 > [AZURE.NOTE]  Your device needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
-
-## Explore samples without a SQL Server 2016 Reporting Services server
-
-Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports. 
-
--  Tap the global navigation button ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_windows10_options_icon.png) in the upper-left corner, scroll down and tap **Reporting Services samples**.
-
-    ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-windows-10-ssrs-samples-menu.png)
-
-Browse the samples to interact with KPIs and mobile reports.
 
 ## Connect to a server to view Reporting Services mobile reports 
 
