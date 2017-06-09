@@ -1,6 +1,6 @@
 <properties
    pageTitle="What can developers do with Power BI?"
-   description="Learn how you can create application that makes use of an embed token so your users can view Power BI content."
+   description="Learn how you can create an application that allows non-Power BI users the ability to view Power BI dashbaords and reports."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,17 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
-# Use an embed token when embedding dashboards and reports
 
-Learn how you can create application that makes use of an embed token so your users can view Power BI content.
+# Embed Power BI content for non-Power BI users
+
+Learn how you can create an application that allows non-Power BI users the ability to view Power BI dashbaords and reports.
 
 Microsoft recently [announced Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance to the Power BI service.
 
 With the introduction of Power BI Premium, Power BI Embedded and the Power BI service are converging to advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium, which will be generally available late in the second quarter of 2017.
 
-You can use an embed token with the Power BI REST APIs to embed reports by using a single Power BI user. The embed token is then used with requests made by users in your application to view content within Power BI by way of a single Power BI user. The users within your application do not need to exist within your Power BI organization. The embed token is what makes it possible.
+You can use an embed token with the Power BI REST APIs to embed reports by using a single Power BI Pro user. The embed token is then used with requests made by users in your application to view content within Power BI by way of a single Power BI user. The users within your application do not need to exist within your Power BI organization. The embed token is what makes it possible.
 
 > [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application.
 
@@ -35,41 +36,67 @@ There are a few steps you have to do with your application to make this possible
 
 ![](media\powerbi-developer-using-embed-token\powerbi-embed-flow.png)
 
-## Step 1: Create a Power BI account
+## Step 1: Setup your embedded analytics development environment
 
-You only need a single Power BI account for use with the embed token. However, there may other users you may want to consider for use within your organization. Let's have a look at the possible users.
+Before you start embedding dashboards and reports into your application, you need to make sure your environment is setup to allow for embedding. As part of the setup, you will need to do the following.
+
+* [Define your Azure Active Directory tenant](powerbi-developer-using-embed-token.md#azureadtenant)
+* [Create your Power BI Pro account](powerbi-developer-using-embed-token.md#proaccount)
+* [Register your Azure Active Directory application and permissions](powerbi-developer-using-embed-token.md#appreg)
+
+### <a name="azureadtenant"></a>Azure Active Directory tenant
+
+You will need an Azure Active Directory (Azure AD) tenant in order to embed items from Power BI. This tenant must have at least one user that is Power BI Pro. You will also need to define an Azure AD app within the tenant. You can make use of an existing Azure AD tenant or create a new one specifically for embedding purposes.
+
+#### Use an existing tenant
+
+If your organization is already using Power BI, you have an existing tenant that you could use as part of your application. If you choose to use an existing tenant, you will just need to make sure you have one user in that tenant that can be used for your application.
+
+Using an existing tenant reduces some of the work that is needed to get up and running. You can still isolate your customers' reports and data by using different app workspaces for each customer and using the security of the app workspace to control access within the Power BI service.
+
+#### Create a new tenant
+
+If you would like your embedded application to be isolated from your organization's tenant, or you just don't have any tenant available to you, you can create a new directory within Azure AD. For information on how to create a tenant, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md).
+
+A benefit of creating a new tenant is that you can make sure that data from your customers doesn't interact in any way to your organization's tenant and data. You will need to purchase a Power BI Pro license for this new tenant though. Whereas, with an existing tenant, you may already have a Power BI Pro license that you can use.
+
+### <a name="proaccount"></a>Create a Power BI Pro account
+
+You only need a single Power BI Pro account to embed content. However, you may want to have a few different users that have specific access to items. Here is a look at possible users to consider within your tenant.
 
 The following accounts will need to exist within your tenant and have a license for Power BI.
 
 > [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces and to create content that makes use of Pro features such as the On-Premises Data Gateway.
 
-### An organization/tenant admin user
+#### An organization/tenant admin user
 
-It is recommended that your organization/tenant admin user should not be used as the account your application uses. This is minimize access that the application account has within your organization. It is recommended that the admin user be a member of all App workspaces created for the purpose of embedding.
+It is recommended that your organization/tenant Global Admin user should not be used as the account your application uses. This is to minimize access that the application account has within your organization. It is recommended that the admin user be an admin of all App workspaces created for the purpose of embedding.
 
-### Accounts for analysts that will create content
+#### Accounts for analysts that will create content
 
-You may have multiple users that create content for Power BI. You may need a Power BI account for each analyst.
+You may have multiple users that create content for Power BI. You will need a Power BI Pro account for each analyst that is creating and deploying content to Power BI.
 
-### An application *master* user account
+#### An application *master* user account
 
-This is the account your application will use when creating the embed token. This is really the only required account you need within your organization. It can also be used as the admin and analyst account, but it is not recommended. The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI APIs. This account will be used to generate the embed token for the application. You will also want this account to be a member of the App workspaces created for embedding.
+This is the account your application will use when embedding content. This is really the only required account you need within your organization. It can also be used as the admin and analyst account, but it is not recommended. Your application's backend will store the credentials for this account and use it for acquiring an Azure AD auth token for use with the Power BI APIs. This account will be used to generate the embed token for the application.
 
-## Step 2: App registration and permissions
+This account must be an admin of the app workspace that is being used for embedding.
 
-You will need to register an application within Azure AD and grant permissions to that application for use with Power BI.
+### <a name="appreg"></a> App registration and permissions
 
-### Register an application
+You will need to register an application within Azure AD and grant permissions to that application for use with embedding content from Power BI.
 
-You can need to register an application as a native Azure application witn your Azure AD tenant. You can either register your application from the Power BI app registration tool, or directly within the Azure AD portal. For more information, see [Register a client app](powerbi-developer-register-a-client-app.md). Make sure that you select **Native App** for the **App type**.
+#### Register an application
 
-### Apply permissions to your application
+You need to register an application as a native Azure application within your Azure AD tenant. You can either register your application from the Power BI app registration tool, or directly within the Azure AD portal. For more information, see [Register a client app](powerbi-developer-register-a-client-app.md). Make sure that you select **Native App** for the **App type**.
+
+#### Apply permissions to your application
 
 You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure AD portal, or programmatically.
 
 > [AZURE.NOTE] You will need to perform these steps with an admin account that has access to the Azure portal and to your tenant.
 
-#### Using the Azure AD Portal
+##### Using the Azure AD Portal
 
 1. Browse to the [App registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
 
@@ -87,6 +114,8 @@ You will need to enable additional permissions to your application in addition t
 
     ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions05.png)
 
+    > [AZURE.NOTE] If you created the app directly in the Azure AD portal, **Power BI Servcie (Power BI)** may not be present. If it is not, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**. You can then continue to step 5.
+
 5. Select all permissions under **Delegated Permissions**. You will need to select them one by one in order to save the selections. Select **Save** when done.
 
     ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions06.png)
@@ -97,7 +126,7 @@ You will need to enable additional permissions to your application in addition t
 
     ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions07.png)
 
-#### Applying permissions programmatically
+##### Applying permissions programmatically
 
 1. You will need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
@@ -201,4 +230,5 @@ When you are ready to move to production, you will need to do the following.
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

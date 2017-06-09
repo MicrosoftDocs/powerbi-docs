@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Register a client app"
-   description="Register a client app"
+   pageTitle="Register a client app to embed Power BI content"
+   description="Learn how to register an application within Azure Active Directory for use with embedding Power BI content."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,58 +17,51 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
-# Register a client app
+# Register a client app to embed Power BI content
 
-This article shows you how to register a Power BI client app in **Azure Active Directory (Azure AD)**. You register your client app with Azure AD to allow your application access to the Power BI REST API. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources. For a list of Power BI permissions, see [Power BI permissions](powerbi-developer-power-bi-permissions.md).
+Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
 
-**Important** Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md), and a [Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md).
+You register your client app with Azure AD to allow your application access to the Power BI REST APIs. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources.
 
-There are two ways to register your client app: with the Power BI App Registration Tool or on Azure Management Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to you app, this can be done through the Azure Management Portal.
+> [AZURE.IMPORTANT] Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the App registration will not complete successfully.
 
-### In this article
+There are two ways to register your client app. The first is with the Power BI App Registration Tool or you can do it directly within the Azure Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to you app, this can be done through the Azure Portal.
 
-- [Register a client app with Power BI App Registration Tool](#clientTool)
-- [Register a client app with Azure Management Portal](#client)
-- [How to get a client id in Azure Management Portal](#clientID)
-
-<a name="clientTool"></a>
 ## Register a client app with Power BI App Registration Tool
+
 You need to register your client app in **Azure Active Directory** to establish an identity for your application and specify permissions to Power BI REST resources. When you register a client app, such as a console app, you receive a **Client ID**.  The **Client ID** is used by the application to identify themselves to the users that they are requesting permissions from.
+
 Here's how to register your client app with the Power BI App Registration Tool:
 
-1.	Go to dev.powerbi.com/apps.
-2.	In the Power BI App Registration Tool, follow these four steps:
+1. Go to [dev.powerbi.com/apps](https://dev.powerbi.com/apps).
 
-**Step 1** - Choose **Login in** to login to your Azure AD account. You will see your name in the Welcome line.
+2. Select **Sign in with your existing account**.
 
-**Step 2** – Enter information about your app.
+3. Provide an **App Name**.
 
-  * **App Name**: The name of your app.
-  * **App Type**: Choose Native app.
-  * **Redirect URI**: For a native client app, a redirect uri gives AAD more details on the specific application that it will authenticate. Any valid Uri will work such as https://login.live.com/oauth20_desktop.srf.
+4. Select **Native app** from the **App Type** drop down.
 
-**Step 3** – Choose APIs to access. For more information about Power BI access permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
+5. Enter a value for **Redirect URL**. Any valid URL will work.
 
-![](media/powerbi-developer-register-a-client-app/register-app-tool-step-3.png)
+6. Choose the APIs that this application will have access to. For more information about Power BI access permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
 
-**Step 4** - To register your app, click **Register App**. After the app is registered in Azure AD, you will get a **Client ID**. Make sure you copy the Client ID. You can get the Client ID later in the **Azure Management Portal**. See [How to get a client id in Azure Management Portal](#clientID).
+    ![](media/powerbi-developer-register-a-client-app/app-registration-apis.png)
 
-You can now use your Client ID for your app. The next section shows how to register a client app with Azure Management Portal.
+7. Select **Register App**. You will then be provided with a **Client ID**. You can also get the **Client ID** later from the Azure portal. 
 
-<a name="client"></a>
-## Register a client app with Azure Management Portal
-You need to register your client app in **Azure Active Directory** to establish an identity for your application and specify permissions to Power BI REST resources. When you register a client app, such as a console app, you receive a **Client ID**.  The **Client ID** is used by the application to identify themselves to the users that they are requesting permissions from.
+You can now use your Client ID for your app.
 
-To learn how to authenticate a client app using an Azure AD **Client ID**, see [Authenticate a client app](powerbi-developer-authenticate-a-client-app.md).
+## Register a client app with Azure portal
 
-### Register a client app
+Your other option for registering a client application is to do so directly in the Azure portal. To register your application, follow these steps.
 
-Here's how to register a client app:
 1. Accept the [Microsoft Power BI API Terms](https://powerbi.microsoft.com/api-terms).
-2. Sign into your Microsoft Azure subscription at https://manage.windowsazure.com.
+
+2. Sign into your Microsoft Azure subscription at [portal.azure.com](https://portal.azure.com).
+
 3. In the left service panel, choose **ACTIVE DIRECTORY**.
 4. Click the active directory that you belong to.
 
@@ -123,11 +116,11 @@ Here's how to get a client id:
 
     ![](media/powerbi-developer-register-a-client-app/register-app-clientid.png)
 
-## See also
+## Next steps
 
+[Embedding with Power BI](powerbi-developer-embedding.md)  
+[Embed Power BI content for non-Power BI users](powerbi-developer-using-embed-token.md)  
 [Power BI permissions](powerbi-developer-power-bi-permissions.md)  
-[Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md)  
-[Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md)  
-[Authenticate a client app](powerbi-developer-authenticate-a-client-app.md)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
