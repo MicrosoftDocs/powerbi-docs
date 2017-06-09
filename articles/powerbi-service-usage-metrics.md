@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/07/2017"
+   ms.date="06/08/2017"
    ms.author="mihart"/>
 
 # Measure and magnify your impact with dashboard and report Usage Metrics for content creators
@@ -117,7 +117,7 @@ When Power BI creates the full-featured report, it also creates a new dataset **
 
 When you create a copy using "Save as" (personalize), Power BI converts the read-only pre-built report to a full-featured report.  At first glance, it looks exactly the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so much more. Power BI also creates a brand new dataset that contains usage metrics for all dashboards or all reports in that workspace. 
 
->**TIP**: To allow Power BI to access usage metrics for all dashboards or all reports in the workspace, [remove the **Page level** filter](#remove-the-filter-to-see-all-the-usage-metrics data-in-the-workspace).
+>**TIP**: To allow Power BI to access usage metrics for all dashboards or all reports in the workspace, [remove the Page level filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace).
 
 1. From the pre-built usage metrics report, select **File > Save As**. Power BI converts the usage metrics report into a full-featured Power BI report. This is called a *personalized* usage metrics report.
 
@@ -144,7 +144,7 @@ If, for example, you used the dashboard named "European sales" to create this ne
 
 1. Open the personalized report in Editing view.
 
-   ![](media/powerbi-service-usage-metrics/power-bi-editing-view.png)
+    ![](media/powerbi-service-usage-metrics/power-bi-editing-view.png)
 
 2. In the Filters pane, locate the **Report level filters** bucket and remove the filter by selecting the "x".
 
