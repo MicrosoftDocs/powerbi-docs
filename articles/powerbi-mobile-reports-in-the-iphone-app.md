@@ -29,9 +29,11 @@ Applies to:
 | iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
 
 
-A Power BI report is an interactive view of your data, with visuals representing different findings and insights from that data. You [create and customize reports](powerbi-service-create-a-new-report.md) in [Power BI Desktop](powerbi-desktop-report-view.md). You can even create [a version of the report optimized for phones](powerbi-mobile-view-phone-report.md) in Power BI Desktop. You publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](powerbi-mobile-iphone-kpis-mobile-reports.md).  
+A Power BI report is an interactive view of your data, with visuals representing different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process.
 
-Then you interact with those reports in the Power BI mobile apps.
+1. [Create reports in Power BI Desktop](powerbi-desktop-report-view.md). You can even [optimize a report for phones](powerbi-mobile-view-phone-report.md) in Power BI Desktop. 
+2. Publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](powerbi-mobile-iphone-kpis-mobile-reports.md).  
+3. Then interact with those reports in the Power BI mobile apps.
 
 ## Open a Power BI report in the mobile app
 
@@ -49,20 +51,17 @@ Power BI reports are stored in different places in the mobile app, depending on 
 
 ## View reports optimized for phones 
 
-Power BI report authors can create a report layout specifically optimized for phones ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-phone-report-icon.png). If you're viewing a report on a phone, when you go to a report page with a phone layout it opens in portrait view.
+Power BI report authors can create a report layout specifically optimized for phones. In a list of reports, an optimized report has a special icon ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-phone-report-icon.png):
+
+![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-phone-report.png)
+
+When you view that report on a phone, it opens in portrait view.
 
 ![](media/powerbi-mobile-reports-in-the-iphone-app/07-power-bi-phone-report-portrait.png)
 
+> [AZURE.NOTE]  A report may have a mix of pages that are and aren't optimized for phones. If so, when you flip through the report the view will switch from portrait to landscape for each page.
+
 Read more about [reports optimized for phone view](powerbi-mobile-view-phone-report.md).
-
-## See other pages in a Power BI report
-
-- On a tablet, you can see the tabs for the pages along the bottom of the report, as in the Power BI service.
-
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-tablet-report-page-tabs.png)
-
--   On a phone, swipe side to side or tap the pages icon ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-pages-icon.png) > tap a page. 
-
 
 ## Use slicers to filter a report page
 
