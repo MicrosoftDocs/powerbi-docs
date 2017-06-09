@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/07/2017"
+   ms.date="06/08/2017"
    ms.author="maggies"/>
 
-# Reports in the iPhone mobile app
+# Reports in the Power BI mobile apps
 
 Applies to:
 
@@ -57,30 +57,60 @@ Read more about [reports optimized for phone view](powerbi-mobile-view-phone-rep
 
 ## See other pages in a Power BI report
 
--   Swipe side to side, or tap the pages icon ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-pages-icon.png) > tap a page. 
+- On a tablet, you can see the tabs for the pages along the bottom of the report, as in the Power BI service.
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-tablet-report-page-tabs.png)
+
+-   On a phone, swipe side to side or tap the pages icon ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-pages-icon.png) > tap a page. 
+
+
+## Use slicers to filter a report page
+
+When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), keep in mind that on a phone, you can't see the Filters pane, but you can [see slicers on a report page](powerbi-service-tutorial-slicers.md). Add slicers to a report so you and your colleagues can use the slicers to filter the page on a phone.
+
+-   When you select a value in a slicer on the report page, it filters the other visuals on the page.
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-tablet-report-slicer.png)
+
+    In this illustration, the slicer is filtering the column chart to show only July values.
 
 ## Cross-filter and highlight a Power BI report page
 
--   Tap a value in a chart.
+When you select a value in a visual, it doesn't filter the other visuals. It highlights the related values in the other visuals.
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/PBI_Win10Uni_XFltrRptSm.png)
+-   Tap a value in a visual.
 
-    Tapping the red "030-Kids" bubble in the bubble chart highlights related values in the other charts. Because the column chart in the upper-right shows percentages, some highlighted values are larger than the total values, and some are smaller. 
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-tablet-report-highlight.png)
 
-## Use slicers to filter the report page
+    Tapping the Large column in one visual highlights related values in the other visuals. 
 
-When designing a report in the Power BI service [(https://powerbi.com)](https://powerbi.com), you can [add slicers to a report page](powerbi-service-tutorial-slicers.md). Then when you or your colleagues view your reports on your mobile devices, you can use the slicers to filter the page.
+## Sort a visual in a tablet or iPad
 
--   Select a value in a slicer on the report page.
+-  Tap the chart, tap the ellipsis (**...**) and tap the field name.
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_rptslice.png)
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-tablet-report-sort.png)
 
+-   To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
+
+## Drill down and up in a visual in a tablet or iPad
+
+If a report author has added this capability to a visual, in an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md) in Power BI Desktop or the Power BI service. 
+
+> [AZURE.NOTE]  Currently, drill-down doesn't work on maps in the iPad.
+
+-   Tap a visual. If it has up and down arrows in the upper corners ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-mobile-drill-up-down.png), then you can drill down. To drill down on one value, tap the arrow in the upper-right corner, then tap a value in the visual &#151; in this case, the dark-blue FD-04 bubble.
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-mobile-drill-down-one.png)
+
+-   To drill back up, tap the up arrow in the upper-left corner.
+
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-mobile-drill-up.png)
 
 ## Go back to My Workspace
 
-*   Tap the arrow next to the tile name and tap **My Workspace**.
+*   Tap the arrow next to the report name > tap **My Workspace**.
 
-    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-breadcrumb.png)
+    ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-back.png)
 
 ## See also
 
