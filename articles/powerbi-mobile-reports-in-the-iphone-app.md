@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/08/2017"
+   ms.date="06/09/2017"
    ms.author="maggies"/>
 
 # Reports in the Power BI mobile apps
@@ -37,15 +37,15 @@ Then you interact with those reports in the Power BI mobile apps.
 
 Power BI reports are stored in different places in the mobile app, depending on where you got them. They can be in Apps, Shared with me, Workspaces (including My Workspace), or on a report server. Sometimes you go through a related dashboard to get to a report, and sometimes they're listed.
 
--   From a dashboard, tap the ellipsis (...) in the upper-right corner of  a tile > **Open report**.
+-   In a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-android-open-report-tile.png)
 
-    The report opens in landscape mode.
+    > [AZURE.NOTE]  Not all tiles have the option to open in a report. For example, tiles created by asking a question in the Q&A box don't open reports when you tap them. 
+
+    On a phone, the report opens in landscape mode, unless it's [optimized for viewing on a phone](powerbi-mobile-reports-in-the-iphone-app.md#view-reports-optimized-for-phones).
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-landscape.png)
-
-    > [AZURE.NOTE]  Not all tiles have the option to open in a report. For example, tiles created by asking a question in the Q&A box don't open reports when you tap them. 
 
 ## View reports optimized for phones 
 
@@ -84,7 +84,7 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
 
     Tapping the Large column in one visual highlights related values in the other visuals. 
 
-## Sort a visual in a tablet or iPad
+## Sort a visual on an iPad or a tablet
 
 -  Tap the chart, tap the ellipsis (**...**) and tap the field name.
 
@@ -92,11 +92,11 @@ When you select a value in a visual, it doesn't filter the other visuals. It hig
 
 -   To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
 
-## Drill down and up in a visual in a tablet or iPad
+## Drill down and up in a visual on an iPad or a tablet
 
-If a report author has added this capability to a visual, in an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md) in Power BI Desktop or the Power BI service. 
+If a report author has added this capability to a visual, on an iPad or a tablet you can drill down in a visual to see the values that make up one part of it. You [add drill down to a visual](powerbi-service-drill-down-in-a-visualization.md) in Power BI Desktop or the Power BI service. 
 
-> [AZURE.NOTE]  Currently, drill-down doesn't work on maps in the iPad.
+> [AZURE.NOTE]  Currently, drill-down doesn't work on maps in the iPad or tablet.
 
 -   Tap a visual. If it has up and down arrows in the upper corners ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-mobile-drill-up-down.png), then you can drill down. To drill down on one value, tap the arrow in the upper-right corner, then tap a value in the visual &#151; in this case, the dark-blue FD-04 bubble.
 
