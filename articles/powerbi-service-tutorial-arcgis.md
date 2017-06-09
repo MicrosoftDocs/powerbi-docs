@@ -18,14 +18,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/07/2017"
+   ms.date="06/09/2017"
    ms.author="mihart"/>
 
 # Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
 
 The combination of ArcGIS Maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
->**TIP**: GIS stands for Global Information Services
+>**TIP**: GIS stands for Geographic Information Science.
 
 The example below uses a dark gray canvas to show regional sales as a heatmap against a demographic layer of 2016 median disposable income. As you'll see as you read on, using  ArcGIS maps offers almost limitless enhanced mapping capability, demographic data, and even-more compelling map visualizations so you can tell your best story.
 
@@ -354,9 +354,8 @@ No, Power BI needs network connectivity to display the maps.
 
 Not yet. [Vote for this idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases ) and we'll send you an email when we start working on this feature.  
 
-
-##  Next steps
+## Next steps
 
 [Blog post announcing availability of ArcGIS maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
