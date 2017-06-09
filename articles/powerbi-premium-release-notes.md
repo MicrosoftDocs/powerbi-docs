@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/08/2017"
+   ms.date="06/09/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium release notes
@@ -35,6 +35,7 @@ These are the June release notes for Power BI Premium, a dedicated capacity givi
 - Users must log in at least once to the Power BI service before they can be assigned as capacity admins or given workspace assignment permissions.
 - When you republish an existing dataset to Premium capacity, Q&A may take 1-2 hours to reflect the changes. This also applies to scheduled refreshes for datasets in Premium capacity. We are working on improving this.
 - Quick Insights are not yet available for datasets in workspaces assigned to a Premium capacity. We are working on enabling this.
+- You may see transient cases where you achieve more Direct Query/live connection queries per second than what is included in your capacity SKU. You shouldn't rely on throughput above what is included in your capacity SKU.
 
 
 ## Next steps
