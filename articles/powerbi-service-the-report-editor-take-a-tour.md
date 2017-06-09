@@ -1,4 +1,4 @@
-﻿<properties
+<properties
    pageTitle="The report editor...Take a tour"
    description="The report editor...Take a tour."
    services="powerbi"
@@ -48,7 +48,7 @@ The content displayed in the report editor varies by selections you make in the 
 
 |                                                             |         |
 |---------------------------------------------- |---------|
-|![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-panes.png)    | <ul><li>The top of the Visualization pane identifies <br>the type of visual in use; in this example,<br> a Clustered column chart.<br><br></li> <li>The bottom of the Visualization pane<br> (you may have to scroll down) displays the <br>fields being used in the visual. This chart is <br>using FiscalMonth, DistrictManager, and <br>Total Sales Variance. <br><br></li><li>The Filters pane (you may have to scroll down)<br> displays any filters that have been applied. <br><br></li><li>The Fields pane lists the tables available and, <br>if you expand a table's name, the fields that<br> make up that table. Yellow font lets you know<br> that at least one field from that table is being <br>used in the visualization.<br><br></li><li>![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) To display the formatting pane, for <br>the selected visualization, select the <br>paint roller icon.<br><br></li><li>![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) To display the Analystics pane, select the magnifying glass icon.</ul>       |
+|![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-panes.png)    | <ul><li>The top of the Visualization pane identifies the type of visual in use; in this example, a Clustered column chart.<br><br></li> <li>The bottom of the Visualization pane (you may have to scroll down) displays the fields being used in the visual. This chart is using FiscalMonth, DistrictManager, and Total Sales Variance. <br><br></li><li>The Filters pane (you may have to scroll down) displays any filters that have been applied. <br><br></li><li>The Fields pane lists the tables available and, if you expand a table's name, the fields that make up that table. Yellow font lets you know  that at least one field from that table is being used in the visualization.<br><br></li><li>![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) To display the formatting pane, for the selected visualization, select the paint roller icon.<br><br></li><li>![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) To display the Analystics pane, select the magnifying glass icon.</ul>       |
 |          |          |
 
 
@@ -112,7 +112,7 @@ The Fields pane displays the tables and fields that exist in your data and are a
 
 |                                                             |         |
 |---------------------------------------------- |---------|
-|![](media/powerbi-service-the-report-editor-take-a-tour/reportFields.png)    | <ul><li>Drag a field onto the page to start a new <br>visualization.  You can also drag a field onto <br>an existing visualization to add the field to <br>that visualization.<br><br></li> <li>When you add a checkmark next to a field,<br> Power BI adds that field to the active (or new) <br>visualization. And it also decides which bucket <br>to place that field into.  For example, should <br>the field be used a legend, axis,or value? <br>Power BI makes a best-guess and you can move<br> it from that bucket to another if necessary. <br><br></li><li>Either way, each selected field is added to the Visualizations pane in the report editor.</li></ul>       |
+|![](media/powerbi-service-the-report-editor-take-a-tour/reportFields.png)    | <ul><li>Drag a field onto the page to start a new visualization.  You can also drag a field onto an existing visualization to add the field to that visualization.<br><br></li> <li>When you add a checkmark next to a field, Power BI adds that field to the active (or new) visualization. And it also decides which bucket to place that field into.  For example, should the field be used a legend, axis,or value? Power BI makes a best-guess and you can move it from that bucket to another if necessary. <br><br></li><li>Either way, each selected field is added to the Visualizations pane in the report editor.</li></ul>       |
 
 
 
