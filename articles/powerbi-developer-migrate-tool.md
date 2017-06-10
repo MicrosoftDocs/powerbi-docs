@@ -160,7 +160,7 @@ You have two options.
 
 For a successful download, you will see a status of *Done* and it will reflect that the PBIX file exists.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-download done.png)
+![](media/powerbi-developer-migrate-tool/migrate-tool-download-done.png)
 
 After the download is completed, select the **Create Groups** tab.
 
