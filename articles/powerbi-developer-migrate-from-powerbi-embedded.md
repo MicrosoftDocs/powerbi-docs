@@ -40,7 +40,7 @@ There are a few things you need to do to prepare for migrating from Power BI Emb
 
 1. Make sure you have access to an Azure Active Directory (Azure AD) tenant.
 
-    You will need to determine what tenant setup to use. 
+    You will need to determine what tenant setup to use.
     
     * Use your existing corporate Power BI tenant?
     * Use a separate tenant for your application?
@@ -54,7 +54,7 @@ There are a few things you need to do to prepare for migrating from Power BI Emb
 
 The following accounts will need to exist within your tenant.
 
-> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces and to create content that makes use of Pro features such as the On-Premises Data Gateway.
+> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces.
 
 1. A tenant admin user.
 

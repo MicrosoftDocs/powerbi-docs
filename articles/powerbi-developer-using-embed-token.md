@@ -46,27 +46,23 @@ Before you start embedding dashboards and reports into your application, you nee
 
 ### <a name="azureadtenant"></a>Azure Active Directory tenant
 
-You will need an Azure Active Directory (Azure AD) tenant in order to embed items from Power BI. This tenant must have at least one user that is Power BI Pro. You will also need to define an Azure AD app within the tenant. You can make use of an existing Azure AD tenant or create a new one specifically for embedding purposes.
+You will need an Azure Active Directory (Azure AD) tenant in order to embed items from Power BI. This tenant must have at least one Power BI Pro user. You will also need to define an Azure AD app within the tenant. You can make use of an existing Azure AD tenant or create a new one specifically for embedding purposes.
 
-#### Use an existing tenant
+You will need to determine what tenant setup to use.
 
-If your organization is already using Power BI, you have an existing tenant that you could use as part of your application. If you choose to use an existing tenant, you will just need to make sure you have one user in that tenant that can be used for your application.
+* Use your existing corporate Power BI tenant?
+* Use a separate tenant for your application?
+* Use a separate tenant for each customer?
 
-Using an existing tenant reduces some of the work that is needed to get up and running. You can still isolate your customers' reports and data by using different app workspaces for each customer and using the security of the app workspace to control access within the Power BI service.
+If you decide to create a new tenant for your application, or one for each customer, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 
-#### Create a new tenant
-
-If you would like your embedded application to be isolated from your organization's tenant, or you just don't have any tenant available to you, you can create a new directory within Azure AD. For information on how to create a tenant, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md).
-
-A benefit of creating a new tenant is that you can make sure that data from your customers doesn't interact in any way to your organization's tenant and data. You will need to purchase a Power BI Pro license for this new tenant though. Whereas, with an existing tenant, you may already have a Power BI Pro license that you can use.
-
-### <a name="proaccount"></a>Create a Power BI Pro account
+### <a name="proaccount"></a>Create a Power BI Pro user account
 
 You only need a single Power BI Pro account to embed content. However, you may want to have a few different users that have specific access to items. Here is a look at possible users to consider within your tenant.
 
-The following accounts will need to exist within your tenant and have a license for Power BI.
+The following accounts will need to exist within your tenant and have a Power BI Pro license assigned to them.
 
-> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces and to create content that makes use of Pro features such as the On-Premises Data Gateway.
+> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces.
 
 #### An organization/tenant admin user
 
