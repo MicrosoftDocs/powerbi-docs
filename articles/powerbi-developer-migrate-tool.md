@@ -206,31 +206,31 @@ You will need to close the migration tool to make the change and then re-open th
 
 In the above example, one of the cloned reports failed indicating a report with the same name existed. If we go look at the migration plan XML, we will see the following.
 
-    ```
-    <ReportMigrationData>
-      <PaaSWorkspaceCollectionName>SageBugBashWC</PaaSWorkspaceCollectionName>
-      <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
-      <PaaSReportId>525a8328-b8cc-4f0d-b2cb-c3a9b4ba2efe</PaaSReportId>
-      <PaaSReportLastImportTime>1/3/2017 2:10:19 PM</PaaSReportLastImportTime>
-      <PaaSReportName>cloned</PaaSReportName>
-      <IsPushDataset>false</IsPushDataset>
-      <IsBoundToOldDataset>false</IsBoundToOldDataset>
-      <PbixPath>C:\MigrationData\SageResourceGroup\SageBugBashWC\4c04147b-d8fc-478b-8dcb-bcf687149823\cloned-525a8328-b8cc-4f0d-b2cb-c3a9b4ba2efe.pbix</PbixPath>
-      <ExportState>Done</ExportState>
-      <LastExportStatus>OK</LastExportStatus>
-      <SaaSTargetGroupName>SampleMigrate</SaaSTargetGroupName>
-      <SaaSTargetGroupId>6da6f072-0135-4e6c-bc92-0886d8aeb79d</SaaSTargetGroupId>
-      <SaaSTargetReportName>cloned</SaaSTargetReportName>
-      <SaaSImportState>Failed</SaaSImportState>
-      <SaaSImportError>Report with the same name already exists</SaaSImportError>
-    </ReportMigrationData>
-    ```
+```
+<ReportMigrationData>
+    <PaaSWorkspaceCollectionName>SageBugBashWC</PaaSWorkspaceCollectionName>
+    <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
+    <PaaSReportId>525a8328-b8cc-4f0d-b2cb-c3a9b4ba2efe</PaaSReportId>
+    <PaaSReportLastImportTime>1/3/2017 2:10:19 PM</PaaSReportLastImportTime>
+    <PaaSReportName>cloned</PaaSReportName>
+    <IsPushDataset>false</IsPushDataset>
+    <IsBoundToOldDataset>false</IsBoundToOldDataset>
+    <PbixPath>C:\MigrationData\SageResourceGroup\SageBugBashWC\4c04147b-d8fc-478b-8dcb-bcf687149823\cloned-525a8328-b8cc-4f0d-b2cb-c3a9b4ba2efe.pbix</PbixPath>
+    <ExportState>Done</ExportState>
+    <LastExportStatus>OK</LastExportStatus>
+    <SaaSTargetGroupName>SampleMigrate</SaaSTargetGroupName>
+    <SaaSTargetGroupId>6da6f072-0135-4e6c-bc92-0886d8aeb79d</SaaSTargetGroupId>
+    <SaaSTargetReportName>cloned</SaaSTargetReportName>
+    <SaaSImportState>Failed</SaaSImportState>
+    <SaaSImportError>Report with the same name already exists</SaaSImportError>
+</ReportMigrationData>
+```
 
 For the failed item, we can change the name of the SaaSTargetReportName.
 
-    ```
-    <SaaSTargetReportName>cloned2</SaaSTargetReportName>
-    ```
+```
+<SaaSTargetReportName>cloned2</SaaSTargetReportName>
+```
 
 We can then re-open the plan, in the migration tool, and upload the failed report.
 
