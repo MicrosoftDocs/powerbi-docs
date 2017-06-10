@@ -221,11 +221,75 @@ You will need a user that has a Pro license in order to create an App workspace 
 
 > [AZURE.NOTE] The application *master* account needs to be an admin of the workspace.
 
-## Create and upload your reports
+## Content migration
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to a Power BI workspace. It is recommended to publish your reports to an App workspace to provide better isolation if your application is servicing multiple customers.
+Migrating your content from your workspace collections to the Power BI service can be done in parallel to your current solution and doesn’t require any downtime.
 
-> [AZURE.NOTE] We will have an import/export tool for you to accomplish this step to assist with moving content from the Power BI Embedded Azure service to the Power BI service. This tool is coming soon.
+A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded to the Power BI service. Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md).
+
+Content migration relies mainly on two APIs.
+
+1. Download PBIX - this API can download PBIX files which were uploaded to Power BI after October 2016.
+2. Import PBIX - this API uploads any PBIX to Power BI.
+
+For some related code snippets, see [Code snippets for migrating content from Power BI Embedded](powerbi-developer-migrate-code-snippets.md).
+
+### Report types
+
+There are several types of reports, each requiring a somewhat different migration flow.
+
+#### Cached dataset & report
+
+Cached datasets refer to PBIX files that had imported data as opposed to a live connection or DirectQuery connection.
+
+**Flow**
+
+1. Call Download PBIX API from PaaS workspace.
+2. Save PBIX.
+3. Call Import PBIX to SaaS workspace.
+
+#### Direct query dataset & report
+
+**Flow**
+
+1. Call GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}datasets/dataset_id/Default.GetBoundGatewayDataSources and save connection string received.
+2. Call Download PBIX API from PaaS workspace.
+3. Save PBIX.
+4. Call Import PBIX to SaaS workspace.
+5. Update connection string by calling - POST  https://api.powerbi.com/v1.0/myorg/datasets/dataset_id/Default.SetAllConnections
+6. Get GW id and datasource id by calling - GET https://api.powerbi.com/v1.0/myorg/datasets/dataset_id/Default.GetBoundGatewayDataSources
+7. Update user's credentials by calling - PATCH https://api.powerbi.com/v1.0/myorg/gateways/gateway_id/datasources/datasource_id
+
+#### Old dataset & reports
+
+These are datasets/reports created before October 2016. Download PBIX doesn't support PBIXs which were uploaded before October 2016
+
+**Flow**
+
+1. Get PBIX from your development environment (your internal source control).
+2. Call Import PBIX to SaaS workspace.
+
+#### Push Dataset & report
+
+Download PBIX doesn't support *Push API* datasets. Push API dataset data can't be ported from PaaS to SaaS.
+
+**Flow**
+
+1. Call "Create dataset" API with dataset Json to create dataset in SaaS workspace.
+2. Rebuild report for the created dataset*.
+
+It is possible using some workarounds to migrate the push api report from PaaS to SaaS by trying the following.
+
+1. Uploading some dummy PBIX to PaaS workspace.
+2. Clone the push api report and bind it to the dummy PBIX from step 1.
+3. Download push API report with the dummy PBIX.
+4. Upload dummy PBIX to your SaaS workspace.
+5. Create push dataset in your SaaS workspace.
+6. Rebind report to push api dataset.
+
+## Create and upload new reports
+
+You can create new reports and datasets using Power BI Desktop and then publish those reports to a Power BI app workspace.
 
 ## Rebuild your application
 
@@ -265,7 +329,8 @@ You should do some cleanup within Azure.
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
-[Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)
+[Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
+[Code snippets for migrating content from Power BI Embedded](powerbi-developer-migrate-code-snippets.md)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
