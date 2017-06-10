@@ -32,16 +32,31 @@ The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access 
 
 Then in the Power BI mobile app for Windows 10, view the mobile reports and KPIs, organized in folders or collected as favorites. 
 
-> [AZURE.NOTE]  Your device needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
+> [AZURE.NOTE] Your device needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
 
-## Connect to a server to view Reporting Services mobile reports 
+## Explore samples without a SQL Server 2016 Reporting Services server
 
-1.  In your Windows 10 device, open the Power BI app.
+Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports.
+
+1. In your Windows 10 device, open the Power BI app.
   
-2.  Tap the global navigation button ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_windows10_options_icon.png) in the upper-left corner, and tap **Connect to server**.
+1. Tap the global navigation button ![](media/powerbi-mobile-win10-kpis-mobile-reports/powerbi_windows10_options_icon.png) in the upper-left corner.
 
-    ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-windows-10-ssrs-connect-server-menu.png)
+2.  Tap **Settings** icon ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-settings-icon.png), right-click or tap and hold **Connect to server**, then tap **View samples**.
 
+    ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-win10-connect-ssrs-samples.png)
+
+3.  Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile reports.
+
+    ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-win10-ssrs-sample-kpis.png)
+
+Browse the samples to interact with KPIs and mobile reports.
+
+## Connect to a Reporting Services report server
+
+2.  At the bottom of the left navigation bar, tap **Settings** ![](media/powerbi-mobile-win10-kpis-mobile-reports/power-bi-settings-icon.png)
+
+3.  Tap **Connect to server**.
 
 4. Fill in the server address and your user name and password. Use this format for the server address:
 
@@ -49,11 +64,11 @@ Then in the Power BI mobile app for Windows 10, view the mobile reports and KPIs
      OR
      `https://<servername>/reports`
      
-     >**Note**: Include **http** or **https** in front of the connection string.
+     >**Note**: Include **http** or **https** at the beginning of the connection string.
 
     Tap **Advanced option** to give the server a name, if you'd like.
 
-5.  Tap the **Next** check mark to connect. 
+5.  Tap the check mark to connect. 
 
     Now you see the server in the left navigation bar.
 
@@ -108,7 +123,7 @@ You don't create Reporting Services KPIs and mobile reports in the Power BI mobi
 - [Create your own Reporting Services mobile reports](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to a Reporting Services web portal.
 - Create [KPIs on a Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx)
 
-### See also  
+## Next steps
 - [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
 - [Get started with Power BI](powerbi-service-get-started.md)  
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
