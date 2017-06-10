@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/08/2017"
    ms.author="mihart"/>
 
 # Subscribe to a Power BI report
@@ -86,6 +86,7 @@ The particular subscriptions displayed will depend on which workspace is current
 
 -  Email subscriptions do not support most [custom visuals](powerbi-custom-visuals.md)  - they will be blank in the subscription email.  The one exception is those custom visuals that have been [certified](powerbi-custom-visuals-certified.md).  
 
--  Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before subscribing will not show up in the email.
+-  Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before subscribing will not show up in the email.    
+- E-mail subscriptions are not yet supported on reports pages created by the Power BI Desktop live connect to service feature.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
