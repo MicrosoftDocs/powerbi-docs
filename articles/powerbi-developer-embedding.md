@@ -28,9 +28,9 @@ This means you will have one API surface, a consistent set of capabilities and a
 
 ## A single API
 
-There are two main scenarios when embedding Power BI content. Embedding with Power BI users and embedding to non-Power BI users. Previously, the Azure Power BI Embedded service was used to service non-Power BI users. This meant that the users of your application didn't need access to Power BI directly. They didn't have an account with the Power BI service. 
+There are two main scenarios when embedding Power BI content. Embedding with Power BI users and embedding to non-Power BI users. Previously, the Azure Power BI Embedded service was used to service non-Power BI users. This meant that the users of your application didn't need access to Power BI directly, or have any Power BI licenses assigned to them. They didn't have an account with the Power BI service. 
 
-The Power BI REST APIs are being updated to allow for both scenarios against the Power BI service. This will allow you to embed dashboards and reports into your custom application, using the same API to either service Power BI users or non-Power BI users.
+The Power BI REST APIs have been updated to allow for both scenarios against the Power BI service. This will allow you to embed dashboards and reports into your custom application, using the same API to either service Power BI users or non-Power BI users.
 
 You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 
@@ -50,6 +50,8 @@ To embed dashboards, reports and tiles, you would use the same APIs that you wou
 
 > [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application.
 
+When you are ready to move to production, your app workspace must be assigned to a Premium capacity. 
+
 For details on how to embed with non-Power BI users, see [Embed Power BI content for non-Power BI users](powerbi-developer-using-embed-token.md).
 
 If you were using the Power BI Embedded service within Azure, see [Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md) for information on how to migrate your content over.
@@ -58,6 +60,7 @@ If you were using the Power BI Embedded service within Azure, see [Migrate conte
 
 [Embed Power BI content for non-Power BI users](powerbi-developer-using-embed-token.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

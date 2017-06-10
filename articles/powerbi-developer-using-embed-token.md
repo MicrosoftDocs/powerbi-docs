@@ -44,6 +44,8 @@ Before you start embedding dashboards and reports into your application, you nee
 * [Create your Power BI Pro account](powerbi-developer-using-embed-token.md#proaccount)
 * [Register your Azure Active Directory application and permissions](powerbi-developer-using-embed-token.md#appreg)
 
+> [AZURE.NOTE] Power BI Premium is not required for development of your application. The developers of the application will need to have a Power BI Pro license.
+
 ### <a name="azureadtenant"></a>Azure Active Directory tenant
 
 You will need an Azure Active Directory (Azure AD) tenant in order to embed items from Power BI. This tenant must have at least one Power BI Pro user. You will also need to define an Azure AD app within the tenant. You can make use of an existing Azure AD tenant or create a new one specifically for embedding purposes.
@@ -177,19 +179,17 @@ You will need to enable additional permissions to your application in addition t
     }
     ```
 
-## Step 3: Create App workspaces (optional)
+### Create app workspaces
 
-You can take advantage of App workspaces to provide better isoliation if your application is servicing multiple customers. Dashboards and reports would be isolated between your customers. You could then use a Power BI account per App workspace to further isolate application experiences between your customers.
+If you are embedding dashboards and reports to non-Power BI users, those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create and distribute an app in Power BI](powerbi-service-create-apps.md).
 
-You will need a user that has a Pro license in order to create an App workspace within Power BI. The Power BI user that creates the App workspace will be an admin of that workspace by default.
+> [AZURE.IMPORTANT] The *master* account, that was mentioned above, needs to be an admin of the app workspace.
 
-You do not need an app workspace to embed reports into your application. If you do not use an App workspace, your dashboards and reports will be in the *My workspace* for the Power BI account you use with your application.
+### Create and upload your reports
 
-## Step 4: Create and upload your reports
+You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to a Power BI workspace. It is recommended to publish your reports to an App workspace to provide better isolation if your application is servicing multiple customers.
-
-## Step 5: Embed your content
+## Step 2: Embed your content
 
 Within your application, you will need to authenticate with Power BI using the Power BI account for your application. This will require you to store the credentials for this account within your application.
 
@@ -205,19 +205,19 @@ Within your application, you will need to authenticate with Power BI using the P
     - [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
     - [Integrate a report into an app](powerbi-developer-integrate-report.md)
 
-## Licensing
+## Step 3: Promote your solution to production
 
 When you are ready to move to production, you will need to do the following.
 
-1. Purchase a capacity that fits your needs. We will have a calculator to estimate the required capacity size.
+- If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
 
-2. Go to the Admin portal, within Power BI, and within **Manage capacity** section assign the workspace to the purchased capacity. This can be done with an admin account or a user with capacity assignment permissions.
+- Purchase a capacity that fits your needs. You can use the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/) to help understand what you may need.
 
-    If you are using an App workspace to store your content, you can edit the App workspace and assign it to a Premium capacity under advanced.
+- Edit the App workspace and assign it to a Premium capacity under advanced.
 
     ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png)
 
-3. Deploy your updated application to production and begin embedding reports from the Power BI service.
+- Deploy your updated application to production and begin embedding reports from the Power BI service.
 
 ## Next steps
 

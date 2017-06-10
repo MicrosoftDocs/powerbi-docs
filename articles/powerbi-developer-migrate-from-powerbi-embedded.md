@@ -289,7 +289,7 @@ It is possible using some workarounds to migrate the push api report from PaaS t
 
 ## Create and upload new reports
 
-You can create new reports and datasets using Power BI Desktop and then publish those reports to a Power BI app workspace.
+In addition to the content you migrated from the Power BI Embedded Azure service, you can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
 
 ## Rebuild your application
 
@@ -309,15 +309,15 @@ Within your application, you will map users that you manage within the applicati
 
 When you are ready to move to production, you will need to do the following.
 
-1. Purchase a capacity that fits your needs. We will have a calculator to estimate the required capacity size.
+- If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
 
-2. Go to the Admin portal, within Power BI, and within **Manage capacity** section assign the workspace to the purchased capacity. This can be done with an admin account or a user with capacity assignment permissions.
+- Purchase a capacity that fits your needs. You can use the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/) to help understand what you may need.
 
-    If you are using an App workspace to store your content, you can edit the App workspace and assign it to a Premium capacity under advanced.
+- Edit the App workspace and assign it to a Premium capacity under advanced.
 
     ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png)
 
-3. Deploy your updated application to production and begin embedding reports from the Power BI service.
+- Deploy your updated application to production and begin embedding reports from the Power BI service.
 
 ## After migration
 
