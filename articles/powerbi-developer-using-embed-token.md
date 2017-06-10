@@ -84,7 +84,7 @@ This account must be an admin of the app workspace that is being used for embedd
 
 ### <a name="appreg"></a> App registration and permissions
 
-You will need to register an application within Azure AD and grant permissions to that application for use with embedding content from Power BI.
+You will need to register an application within Azure AD and grant permissions to that application for use with embedding content from Power BI. You will want to register the app using the *master* account that you created in the last step.
 
 #### Register an application
 
@@ -94,7 +94,7 @@ You need to register an application as a native Azure application within your Az
 
 You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure AD portal, or programmatically.
 
-> [AZURE.NOTE] You will need to perform these steps with an admin account that has access to the Azure portal and to your tenant.
+> [AZURE.NOTE] You will want to perform these steps with a tenant/organization admin. This would be a user in the Global admin role.
 
 ##### Using the Azure AD Portal
 
@@ -124,11 +124,13 @@ You will need to enable additional permissions to your application in addition t
 
     This will give the app permissions on behalf of all users in the tenant/organization. If you don't want this, you will need to sign in internactively with your app ID to Azure AD at least once.
 
+    > [AZURE.NOTE] In order to give permission to all users in the tenant, this operation should be made by an account in the Global admin role. Otherwise the permission is only granted to the user that performed the step.
+
     ![](media\powerbi-developer-using-embed-token\powerbi-embedded-azuread-app-permissions07.png)
 
 ##### Applying permissions programmatically
 
-1. You will need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. You will need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
     > [AZURE.NOTE] You can call the *Get servicePrincipal* api without {id} and it will get you all of the service principals within the tenant.
 

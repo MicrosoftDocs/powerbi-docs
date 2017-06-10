@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # How to migrate Power BI Embedded workspace collection content to Power BI
@@ -30,7 +30,7 @@ With the introduction of Power BI Premium, Power BI Embedded and the Power BI se
 
 The current Power BI Embedded service will continue to be available for a limited time following general availability of the converged offering: customers under an Enterprise Agreement will have access to through the expiration of their existing agreements; customers that acquired Power BI Embedded through Direct or CSP channels will enjoy access for one year from General Availability of Power BI Premium.  This article will provide some guidance for migrating from the Azure service to the Power BI service and what to expect for changes in your application.
 
-> [AZURE.IMPORTANT] While the migration will take a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application.
+> [AZURE.IMPORTANT] While the migration will take a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application. You can use this embedding approach to service non-Power BI users.
 
 ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embed-flow.png)
 
@@ -40,15 +40,21 @@ There are a few things you need to do to prepare for migrating from Power BI Emb
 
 1. Make sure you have access to an Azure Active Directory (Azure AD) tenant.
 
-    Your organization may already have a tenant available that you are currently using Power BI with. If this is not available, you will need to create a new tenant. You can make use of an existing tenant for your organization. For more information you can see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+    You will need to determine what tenant setup to use. 
+    
+    * Use your existing corporate Power BI tenant?
+    * Use a separate tenant for your application?
+    * Use a separate tenant for each customer?
 
-2. Make sure your application "master" account has a Power BI Pro license.
+    If you decide to create a new tenant for your application, or each customer, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+
+2. Create a user within this new tenant that will act as your application "master" account. That account needs to sign up for Power BI and needs to have a Power BI Pro license assigned to it.
 
 ## Accounts within Azure AD
 
-The following accounts will need to exist within your tenant. 
+The following accounts will need to exist within your tenant.
 
-> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces and to create content that makes use of Pro features such as the On-Premises Data Gateway. 
+> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces and to create content that makes use of Pro features such as the On-Premises Data Gateway.
 
 1. A tenant admin user.
 
@@ -58,9 +64,9 @@ The following accounts will need to exist within your tenant.
 
     These users should be assigned to App workspaces as needed.
 
-3. An application *master* user account.
+3. An application *master* user account, or service account.
 
-    The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI APIs. This account will be used to generate the embed token for the application. This account needs to be an admin of the App workspaces created for embedding.
+    The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI REST APIs. This account will be used to generate the embed token for the application. This account also needs to be an admin of the App workspaces created for embedding.
 
     > [AZURE.NOTE] This is just a regular user account in your organziation that will be used for the purposes of embedding.
 
@@ -104,17 +110,19 @@ You will need to enable additional permissions to your application in addition t
 
 6. Within **Required permissions**, select **Grant Permissions**.
 
-    This will give the app permissions on behalf of all users in the tenant/organization. If you don't want this, you will need to sign in internactively with your app ID to Azure AD at least once.
+    This will give the app permissions on behalf of all users in the tenant/organization. If you don't want this, you will need to sign in interactively with your app ID to Azure AD at least once.
+
+    > [AZURE.NOTE] In order to give permission to all users in the tenant, this operation should be made by an account in the Global admin role. Otherwise the permission is only granted to the user that performed the step.
 
     ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions07.png)
 
 #### Applying permissions programmatically
 
-1. You will need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. You will need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
     > [AZURE.NOTE] You can call the *Get servicePrincipal* api without {id} and it will get you all of the service principals within the tenant.
 
-2. Check for a service principal with you app client id as **appId** property.
+2. Check for a service principal with your app client id as **appId** property.
 
 3. Create a new service plan if missing for your app.
 
@@ -131,6 +139,8 @@ You will need to enable additional permissions to your application in addition t
 
 4. Grant App Permission to PowerBI API
 
+    If you would like to grant permisions on behalf of all tenant users, you can run the following.
+
     ```
     Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
     Authorization: Bearer ey..qw
@@ -145,7 +155,28 @@ You will need to enable additional permissions to your application in addition t
     }
     ```
 
+    If you are using an existing tenant, and are not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by using the following.
+
+    ```
+    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
+    Authorization: Bearer ey..qw
+    Content-Type: application/json
+    { 
+    "clientId":"{Service_Plan_ID}",
+    "consentType":"Principal",
+    "principalId"= "{User_ObjectId}",
+    "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
+    "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
+    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
+    "startTime":"2017-03-29T14:35:32.4933413+03:00"
+    }
+    ```
+
+    To get a list of users, you can use [List users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list).
+
 5. Grant App Permission to AAD
+
+    If you would like to grant permisions on behalf of all tenant users, you can run the following.
 
     ```
     Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
@@ -160,6 +191,25 @@ You will need to enable additional permissions to your application in addition t
     "startTime":"2017-03-29T14:35:32.4933413+03:00"
     }
     ```
+
+    If you are using an existing tenant, and are not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by using the following.
+
+    ```
+    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
+    Authorization: Bearer ey..qw
+    Content-Type: application/json
+    { 
+    "clientId":"{Service_Plan_ID}",
+    "consentType":"Principal",
+    "principalId"= "{User_ObjectId}",
+    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
+    "scope":"User.Read Directory.AccessAsUser.All",
+    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
+    "startTime":"2017-03-29T14:35:32.4933413+03:00"
+    }
+    ```
+
+    To get a list of users, you can use [List users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list).
 
 ## Create App workspaces (Required)
 
@@ -215,7 +265,8 @@ You should do some cleanup within Azure.
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
-[Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/)  
+[Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)
+[Power BI Premium - what is it?](powerbi-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
