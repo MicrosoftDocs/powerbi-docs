@@ -236,6 +236,28 @@ We can then re-open the plan, in the migration tool, and upload the failed repor
 
 Going back to Power BI, we can see that the reports and datasets have been uploaded in the app workspace.
 
+![](media/powerbi-developer-migrate-tool/migrate-tool-upload-app-workspace.png)
+
+<a name="">upload-local-file</a>
+### Upload a local PBIX file
+
+You can upload a local version of a Power BI Desktop file. You will have to close the tool, edit the XML and put the full path to your local PBIX in the **PbixPath** property.
+
+```
+<PbixPath>[Full Path to PBIX file]</PbixPath>
+```
+
+After you have edited the xml, re-open the plan within the migration tool and upload the report.
+
+### DirectQuery reports
+
+After uploading a report that uses DirectQuery, you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](powerbi-developer-migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+
+You can then update the connection string for the dataset within the Power BI service (Saas) and set the credentials for the data source. You can look at the following examples to see how to do this.
+
+* [Update DirectQuery connection string is SaaS workspace](powerbi-developer-migrate-code-snippets.md#update-directquery-connection-string-is-saas-workspace)
+* [Set DirectQuery credentials in SaaS workspace](powerbi-developer-migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
+
 ## Embedding
 
 Now that your reports have been migrated from the Power BI Embedded Azure service to the Power BI service, you can now update your application and begin embedding the reports in this app workspace.

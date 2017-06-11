@@ -24,9 +24,11 @@
 
 Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md#content-migration).
 
-A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded to the Power BI service. Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md).
+A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded (PaaS) to the Power BI service (SaaS). Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md).
 
-For the code below please include following namespace.
+The code below are examples using C# and the [Power BI .NET SDK](https://www.nuget.org/profiles/powerbi).
+
+Make sure you are using the following namespaces to execute the code snippets below.
 
 ```
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -89,12 +91,12 @@ using System.Threading.Tasks;
     }
 ```
 
-## Extract direct query connection string from PaaS report
+## Extract DirectQuery connection string from PaaS report
 
 This is for updating the PBIX after migrating to SaaS.
 
 ```
-    // Extract connection string from PaaS - direct Q report
+    // Extract connection string from PaaS - DirectQuery report
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
 
@@ -110,7 +112,7 @@ This is for updating the PBIX after migrating to SaaS.
     var datasource = client.Datasets.GetDatasources(<myWorkspaceCollectionName>, <myWorkspaceId>, report.DatasetId);
 ```
 
-## Update direct query connection string is SaaS workspace
+## Update DirectQuery connection string is SaaS workspace
 
 ```
     public class ConnectionString
@@ -155,7 +157,7 @@ In this snippet, we are using unencrypted credentials for simplicity, sending en
     var url = string.Format("https://api.powerbi.com/v1.0/myorg/gateways/{0}/datasources/{1}", <gateway_id>, <datasource_id>);
     var request = new HttpRequestMessage(new HttpMethod("PATCH"), url);
     // Set authorization header from you acquired Azure AD token
-AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
+    AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myclient_id>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", PBISaaSAuthResult.AccessToken);
@@ -166,67 +168,80 @@ AuthenticationContext authContext = new AuthenticationContext("https://login.win
     var response = await simpleClient.SendAsync(request);
 ```
 
-## Push Dataset & report
+## Push dataset & report
 
 You will need to rebuild the report for the created dataset.
 
-In this snippet, we assume that the pushable dataset is already in SaaS an app workspace. For information about the push API, see [Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md).
+In this snippet, we assume that the pushable dataset is already in an app workspace within the SaaS environment. For information about the push API, see [Push data into a Power BI dataset](powerbi-developer-walkthrough-push-data.md).
 
 ```
-            var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
+    var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
 
-            // Instantiate your Power BI client passing in the required credentials
-            var client = new Microsoft.PowerBI.Api.V1.PowerBIClient(credentials);
-            client.BaseUri = new Uri("https://api.powerbi.com");
+    // Instantiate your Power BI client passing in the required credentials
+    var client = new Microsoft.PowerBI.Api.V1.PowerBIClient(credentials);
+    client.BaseUri = new Uri("https://api.powerbi.com");
 
-             // step 1 -> create dummy dataset at PaaS worksapce
-            var fileStream = File.OpenRead(<Path to your dummy dataset>);
-            var import = client.Imports.PostImportWithFileAsync(<Your WSC NAME>, <Your workspace ID>, fileStream, "dummyDataset");
-            while (import.Result.ImportState != "Succeeded" && import.Result.ImportState != "Failed")
-            {
-                import = client.Imports.GetImportByIdAsync(<Your WSC NAME>, <Your workspace ID>, import.Result.Id);
-                Thread.Sleep(1000);
-            }
-            var dummyDatasetID = import.Result.Datasets[0].Id;
+    // step 1 -> create dummy dataset at PaaS worksapce
+    var fileStream = File.OpenRead(<Path to your dummy dataset>);
+    var import = client.Imports.PostImportWithFileAsync(<Your WSC NAME>, <Your workspace ID>, fileStream, "dummyDataset");
+    while (import.Result.ImportState != "Succeeded" && import.Result.ImportState != "Failed")
+    {
+        import = client.Imports.GetImportByIdAsync(<Your WSC NAME>, <Your workspace ID>, import.Result.Id);
+        Thread.Sleep(1000);
+    }
+    var dummyDatasetID = import.Result.Datasets[0].Id;
 
 	// step 2 -> clone the pushable dataset and rebind to dummy dataset
-            var cloneInfo = new Microsoft.PowerBI.Api.V1.Models.CloneReportRequest("pushableReportClone",null, dummyDatasetID);
-            var clone = client.Reports.CloneReportAsync(<Your WSC NAME>, <Your workspace ID>, <Your pushable report ID>, cloneInfo);
-            var pushableReportCloneID = clone.Result.Id;
+    var cloneInfo = new Microsoft.PowerBI.Api.V1.Models.CloneReportRequest("pushableReportClone",null, dummyDatasetID);
+    var clone = client.Reports.CloneReportAsync(<Your WSC NAME>, <Your workspace ID>, <Your pushable report ID>, cloneInfo);
+    var pushableReportCloneID = clone.Result.Id;
 
 
-            // step 3 -> Download the push API clone report with the dummy dataset
-            var response = client.Reports.ExportReportWithHttpMessagesAsync(<Your WSC NAME>, <Your workspace ID>, pushableReportCloneID);
-            if (response.Result.Response.StatusCode == HttpStatusCode.OK)
-            {
-                var stream = response.Result.Response.Content.ReadAsStreamAsync();
-                using (fileStream = File.Create(@"C:\Migration\PushAPIReport.pbix"))
-                {
-                    stream.Result.CopyTo(fileStream);
-                    fileStream.Close();
-                }
-            }
+    // step 3 -> Download the push API clone report with the dummy dataset
+    var response = client.Reports.ExportReportWithHttpMessagesAsync(<Your WSC NAME>, <Your workspace ID>, pushableReportCloneID);
+    if (response.Result.Response.StatusCode == HttpStatusCode.OK)
+    {
+        var stream = response.Result.Response.Content.ReadAsStreamAsync();
+        using (fileStream = File.Create(@"C:\Migration\PushAPIReport.pbix"))
+        {
+            stream.Result.CopyTo(fileStream);
+            fileStream.Close();
+        }
+    }
             
-            // step 4 -> Upload dummy PBIX to SaaS workspace
-            AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
-            var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <Your client ID>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
-            var credentialsSaaS = new TokenCredentials(PBISaaSAuthResult.AccessToken);
-            var clientSaaS = new Microsoft.PowerBI.Api.V2.PowerBIClient(new Uri($"{"https://api.powerbi.com"}"), credentialsSaaS);
-            using (var file = File.Open(@"C:\Migration\PushAPIReport.pbix", FileMode.Open))
-            {
-				
-                var importSaaS = clientSaaS.Imports.PostImportWithFileAsyncInGroup(<Your GroupID>, file, "importedreport1", "Abort");
-                while (importSaaS.Result.ImportState != "Succeeded" && importSaaS.Result.ImportState != "Failed")
-                {
-                    importSaaS = clientSaaS.Imports.GetImportByIdAsync(importSaaS.Result.Id);
-                    Thread.Sleep(1000);
-                }
-                var importedreport1ID = importSaaS.Result.Reports[0].Id; 
+    // step 4 -> Upload dummy PBIX to SaaS workspace
+    AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
+    var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <Your client ID>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
+    var credentialsSaaS = new TokenCredentials(PBISaaSAuthResult.AccessToken);
+    var clientSaaS = new Microsoft.PowerBI.Api.V2.PowerBIClient(new Uri($"{"https://api.powerbi.com"}"), credentialsSaaS);
+    using (var file = File.Open(@"C:\Migration\PushAPIReport.pbix", FileMode.Open))
+    {
+        
+        var importSaaS = clientSaaS.Imports.PostImportWithFileAsyncInGroup(<Your GroupID>, file, "importedreport1", "Abort");
+        while (importSaaS.Result.ImportState != "Succeeded" && importSaaS.Result.ImportState != "Failed")
+        {
+            importSaaS = clientSaaS.Imports.GetImportByIdAsync(importSaaS.Result.Id);
+            Thread.Sleep(1000);
+        }
+        var importedreport1ID = importSaaS.Result.Reports[0].Id;
 
 
-                // step 5 -> Rebind report to "real" push api dataset
-                var rebindInfoSaaS = new Microsoft.PowerBI.Api.V2.Models.RebindReportRequest(<Your pushable dataset  ID at power bi>);
-                var rebindSaaS = clientSaaS.Reports.RebindReportInGroupWithHttpMessagesAsync(<Your GroupID>, importedreport1ID, rebindInfoSaaS);
+        // step 5 -> Rebind report to "real" push api dataset
+        var rebindInfoSaaS = new Microsoft.PowerBI.Api.V2.Models.RebindReportRequest(<Your pushable dataset  ID at power bi>);
+        var rebindSaaS = clientSaaS.Reports.RebindReportInGroupWithHttpMessagesAsync(<Your GroupID>, importedreport1ID, rebindInfoSaaS);
 
-            }
+    }
 ```
+
+## Next steps
+
+[Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
+[Embedding with Power BI](powerbi-developer-embedding.md)  
+[How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
+[JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
+[Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
+[JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
+[Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
