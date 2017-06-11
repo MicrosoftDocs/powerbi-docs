@@ -202,9 +202,9 @@ Within your application, you will need to authenticate with Power BI. If you are
 
 Use the Power BI and JavaScript APIs to embed dashboards and reports into your application. For more information, see the following.
 
-    - [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
-    - [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
-    - [Integrate a report into an app](powerbi-developer-integrate-report.md)
+- [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
+- [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
+- [Integrate a report into an app](powerbi-developer-integrate-report.md)
 
 ## Step 3: Promote your solution to production
 
