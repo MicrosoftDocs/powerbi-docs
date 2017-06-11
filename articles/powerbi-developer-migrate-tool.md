@@ -238,8 +238,8 @@ Going back to Power BI, we can see that the reports and datasets have been uploa
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-upload-app-workspace.png)
 
-
-### <a name="upload-local-file"></a> Upload a local PBIX file
+<a name="upload-local-file"></a>
+### Upload a local PBIX file
 
 You can upload a local version of a Power BI Desktop file. You will have to close the tool, edit the XML and put the full path to your local PBIX in the **PbixPath** property.
 
@@ -249,7 +249,8 @@ You can upload a local version of a Power BI Desktop file. You will have to clos
 
 After you have edited the xml, re-open the plan within the migration tool and upload the report.
 
-### <a name="directquery-reports"></a>DirectQuery reports
+<a name="directquery-reports"></a>
+### DirectQuery reports
 
 After uploading a report that uses DirectQuery, you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](powerbi-developer-migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
