@@ -249,7 +249,7 @@ You can upload a local version of a Power BI Desktop file. You will have to clos
 
 After you have edited the xml, re-open the plan within the migration tool and upload the report.
 
-### DirectQuery reports
+### <a name="directquery-reports"></a>DirectQuery reports
 
 After uploading a report that uses DirectQuery, you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](powerbi-developer-migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
