@@ -42,13 +42,15 @@ Embedding for Power BI users is the functionality that has been available with t
 - [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
 - [Integrate a report into an app](powerbi-developer-integrate-report.md)
 
+Self-service capabilities, such as edit, save and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
+
 ## Embedding with non-Power BI users
 
 Embedding for non-Power BI users provides the ability to embed dashboards and reports to users that don't have an account for Power BI. They don't need to know anything about Power BI. This is the scenario that is similar to the Azure Power BI Embedded service and what it offered. You will need at least one Power BI user with a Pro license. That account will act as a master account for your application. Think of this as a proxy account. This account allows you to generate tokens that provide access to dashboards and reports within the Power BI service.
 
 To embed dashboards, reports and tiles, you would use the same APIs that you would use for embedding with Power BI users.
 
-> [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application.
+> [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application. They do not need to sign up for Power BI to view the embedded content in your application.
 
 When you are ready to move to production, your app workspace must be assigned to a Premium capacity. 
 
@@ -58,7 +60,7 @@ If you were using the Power BI Embedded service within Azure, see [Migrate conte
 
 ## Next steps
 
-[Embed Power BI content for non-Power BI users](powerbi-developer-using-embed-token.md)  
+[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  

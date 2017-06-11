@@ -78,7 +78,7 @@ You will need to register an application within Azure AD and grant certain permi
 
 > [AZURE.NOTE] You should register the application using the application *master* account.
 
-You will need to register an application as a native Azure application witn your Azure AD tenant. You can either register your application from the Power BI app registration tool, or directly within the Azure AD portal. For more information, see [Register a client app](powerbi-developer-register-a-client-app.md). Make sure that you select **Native App** for the **App type**.
+You will need to register an application as a native Azure application witn your Azure AD tenant. You can either register your application from the Power BI app registration tool, or directly within the Azure AD portal. For more information, see [Register an application](powerbi-developer-register-app.md). Make sure that you select **Native App** for the **App type**.
 
 ### Apply permissions to your application
 
@@ -331,6 +331,7 @@ You should do some cleanup within Azure.
 [Embedding with Power BI](powerbi-developer-embedding.md)  
 [Power BI Embedded migration tool](powerbi-developer-migrate-tool.md)  
 [Code snippets for migrating content from Power BI Embedded](powerbi-developer-migrate-code-snippets.md)  
+[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
