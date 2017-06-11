@@ -34,6 +34,8 @@ The Power BI REST APIs have been updated to allow for both scenarios against the
 
 You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 
+To view a sample of how embedding works, see [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/code-demo).
+
 ## Embedding with Power BI users
 
 Embedding for Power BI users is the functionality that has been available with the Power BI service. You can continue to embed content from the Power BI service into your applications using the REST API. This requires that the end user of your application sign into the Power BI service when you want to view your content in the application. Once your end user signs in, they will only have access to dashboards and reports that have been shared with them in the Power BI service. For more information on how to do this, see the following.
