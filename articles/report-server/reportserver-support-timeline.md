@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
+
 # Support timeline for Power BI Report Server
 
 Power BI Report Server will be released a few times per year. Security and critical updates will available until the next release becomes generally available (GA). After the next release, the previous release will continue to receive security updates for the remainder of the 12 month release lifespan.
@@ -39,7 +40,7 @@ As we release new updates, we will list the versions, availability and support e
 
  **Download** ![download](media/download.png "download")
 
-To download Power BI Report Server, and Power BI Desktop (Report Server), go to the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=837581).
+To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 ![tip](media/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 

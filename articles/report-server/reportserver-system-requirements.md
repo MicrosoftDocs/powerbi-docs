@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
+
 # Hardware and software requirements for installing Power BI Report Server
 
 Here you will find the minimum hardware and software requirements to install and run Power BI Report Server.

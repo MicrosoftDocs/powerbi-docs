@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/02/2017"
+   ms.date="06/12/2017"
    ms.author="maggies"/>
 
 # Add comments to a report in the web portal of a report server
