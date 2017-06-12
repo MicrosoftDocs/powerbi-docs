@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium FAQ
@@ -216,7 +216,9 @@ Power BI Report Server is available to SQL Server customers with EE + SA license
 ## Next steps
 
 [Power BI Premium - what is it?](powerbi-premium.md)  
+[Power BI Premium release notes](powerbi-premium-release-notes.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
+[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
 [Extended Pro Trial activation](powerbi-extended-pro-trial.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

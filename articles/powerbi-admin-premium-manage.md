@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # Manage Power BI Premium
@@ -200,7 +200,9 @@ For more information, see [Install Power BI Report Server](report-server/reports
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Power BI Premium FAQ](powerbi-premium-faq.md)  
+[Power BI Premium release notes](powerbi-premium-release-notes.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
+[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
 [Power BI admin portal](powerbi-admin-portal.md)  
 [Understanding the Power BI admin role](powerbi-admin-role.md)  
 [Auditing Power BI in your organization](powerbi-admin-auditing.md)  

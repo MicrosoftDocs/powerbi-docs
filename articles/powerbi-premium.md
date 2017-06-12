@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium - what is it?
@@ -38,11 +38,11 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 ||Shared capacity|Power BI Premium capacity|
 |---------|---------|---------|
 |**Refresh rate**|8/day|Not restricted|
-|**Isolation with dedicated hardware**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png)|
+|**Isolation with dedicated hardware**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
 |**Enterprise Distribution to** ***all users***|||
-|Apps|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png)<sup>1</sup>|
-|Embedded API and controls|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png)<sup>2</sup>|
-|**Publish Power BI reports on-premises**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png)|
+|Apps|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")<sup>1</sup>|
+|Embedded API and controls|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")<sup>2</sup>|
+|**Publish Power BI reports on-premises**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
 
 *<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights and Cortana.*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
@@ -85,6 +85,20 @@ Power BI Premium is available in node configurations with different v-core capac
 
 *All users* in the service are either Free or Pro. While Pro users can publish content to both shared and Premium capacity, only Pro users can publish content to Premium capacity. Free users can now connect to all data sources through all connectivity options such as DirectQuery, live connection and the use of the data gateway.
 
+||Free|Pro|
+|---------|---------|---------|
+|**Connect to 70+ data sources**|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
+|**Publish to Web**|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
+|**Peer-to-peer sharing**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
+|**Enterprise distribution**|||
+|Apps|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
+|Export to PowerPoint, Excel, CSV|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
+|Email subscriptions|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
+|Embed APIs and controls|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
+|**Collaboration**|||
+|App workspaces|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
+|Analyze in Excel, analyze in Power BI Desktop|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
+
 ## Power BI Report Server
 
 Power BI Premium includes the right to run Power BI Report Server on-premises. For more infomation, see [Get started with Power BI Report Server](report-server/reportserver-get-started.md).
@@ -92,9 +106,11 @@ Power BI Premium includes the right to run Power BI Report Server on-premises. F
 ## Next steps
 
 [Power BI Premium FAQ](powerbi-premium-faq.md)  
+[Power BI Premium release notes](powerbi-premium-release-notes.md)  
 [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [Managing Power BI Premium](powerbi-admin-premium-manage.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
+[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
 [Administering Power BI in your organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
