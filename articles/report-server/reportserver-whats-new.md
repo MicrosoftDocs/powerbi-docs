@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
+
 # What's new in Power BI Report Server
 
 Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
@@ -35,6 +36,10 @@ To download Power BI Report Server, and Power BI Desktop (Report Server), go to 
 - [What's new in Power BI Desktop](../powerbi-desktop-latest-update.md)
 - [What's new in the mobile apps for Power BI](../powerbi-mobile-whats-new-in-the-mobile-apps.md)
 - [Power BI team blog](https://powerbi.microsoft.com/blog/)
+
+## June 2017
+
+* Power BI Report Server made generally available (GA).
 
 ## May 2017
 
