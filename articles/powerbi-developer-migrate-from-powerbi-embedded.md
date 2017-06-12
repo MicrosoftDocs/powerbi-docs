@@ -248,17 +248,17 @@ Cached datasets refer to PBIX files that had imported data as opposed to a live 
 2. Save PBIX.
 3. Call Import PBIX to SaaS workspace.
 
-#### Direct query dataset & report
+#### DirectQuery dataset & report
 
 **Flow**
 
-1. Call GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}datasets/dataset_id/Default.GetBoundGatewayDataSources and save connection string received.
+1. Call GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources and save connection string received.
 2. Call Download PBIX API from PaaS workspace.
 3. Save PBIX.
 4. Call Import PBIX to SaaS workspace.
-5. Update connection string by calling - POST  https://api.powerbi.com/v1.0/myorg/datasets/dataset_id/Default.SetAllConnections
-6. Get GW id and datasource id by calling - GET https://api.powerbi.com/v1.0/myorg/datasets/dataset_id/Default.GetBoundGatewayDataSources
-7. Update user's credentials by calling - PATCH https://api.powerbi.com/v1.0/myorg/gateways/gateway_id/datasources/datasource_id
+5. Update connection string by calling - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
+6. Get GW id and datasource id by calling - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+7. Update user's credentials by calling - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### Old dataset & reports
 
