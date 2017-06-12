@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/26/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
+
 # Download and use custom visuals from the Office store
 
 Learn how you can discover and use custom visuals from the Office store for use in your reports in Power BI.
@@ -87,4 +88,5 @@ You can also download a sample report that include the custom visual and showcas
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
 [Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

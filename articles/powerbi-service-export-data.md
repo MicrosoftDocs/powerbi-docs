@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="mihart"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/10/2017"
    ms.author="mihart"/>
 
 # Export data from Power BI visualizations
@@ -91,19 +91,21 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
 
 ## Limitations and considerations
 
--  The maximum number of rows that can be exported to .csv is 30,000.
+- The maximum number of rows that can be exported to .csv is 30,000.
 
-- The maximum number of rows that can be exported to .xlsx is 30,000 (for Power BI Free users) and 150,000 (for Power BI Pro users).
+- The maximum number of rows that can be exported to .xlsx is 150,000.
 
 - Power BI only supports export in visuals that use basic aggregates. Export is not available for visuals using model or report measures.
 
--  Custom visuals, and R visuals, are not currently supported.
+- Custom visuals, and R visuals, are not currently supported.
 
--  If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode are currency symbols and foreign words. the workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
+-  If there is unicode character in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode characters are currency symbols and foreign words. The workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
 
    1. Open Excel
 
    2. From the **Data** tab, select **Get external data** > **From text**.
+
+- Power BI admins have the ability to disable the export of data.
 
 ## Next steps
 
