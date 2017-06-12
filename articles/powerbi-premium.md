@@ -44,7 +44,7 @@ There are two types of capacity within Power BI. Shared capacity and Power BI Pr
 |Embedded API and controls|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")<sup>2</sup>|
 |**Publish Power BI reports on-premises**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
 
-*<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights and Cortana.*  
+*<sup>1</sup> Free user consumption in apps includes viewing content in web and mobile, using Q&A, Quick Insights, Cortana, export to CSV, Excel and PowerPoint.*  
 *<sup>2</sup> Future enhancements coming to Power BI Premium post GA.*
 
 ### Premium capacity
