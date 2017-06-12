@@ -23,8 +23,6 @@
 
 Learn how you can manage Power BI Premium and enable access to content for your entire organization.
 
-> [AZURE.NOTE] Power BI Premium is not available yet, but coming soon. These documents are being made available ahead of the release of the offering.
-
 ![](media/powerbi-admin-premium-manage/premium-capacity-management.png)
 
 The Power BI Premium offering introduces the concept of Premium capacity, and it is the heart of the offering.
