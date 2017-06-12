@@ -35,7 +35,7 @@ To download Power BI Report Server, and Power BI Desktop optimized for Power BI 
 
 Before you install Power BI Report Server, it is recommended that you review the [Hardware and Software Requirements for installing Power BI Report Server](reportserver-system-requirements.md).
 
-## Install Reporting Services Standalone
+## Install your report server
 
 Installing Power BI Report Server is straight forward. There are only a few steps to install the files.
 
