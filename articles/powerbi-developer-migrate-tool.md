@@ -29,7 +29,11 @@ Migrating your content from your workspace collections to the Power BI service c
 ## Limitations
 
 * Pushed datasets cannot be downloaded and will need to be recreated using the Power BI REST APIs for the Power BI service.
-* PBIX files imported before November 26, 2016 will not be downloadable. 
+* PBIX files imported before November 26, 2016 will not be downloadable.
+
+## Download
+
+You can download the migration tool sample from [GitHub](https://github.com/Microsoft/powerbi-migration-sample). You can either download a zip of the repository, or you can clone it locally. Once downloaded, you can open *powerbi-migration-sample.sln* within Visual Studio to build and run the migration tool.
 
 ## Migration Plans
 
@@ -45,7 +49,7 @@ You will want to start by creating a new migration plan. To create a new migrati
 
     ![](media/powerbi-developer-migrate-tool/migrate-tool-plan.png)
 
-2. In the SelectResourceGroup dialog, you will want to select the Environment dropdown and select prod.
+2. In the **Select Power BI Embedded Resource Group**  dialog, you will want to select the Environment dropdown and select prod.
 
 3. You will be prompted to sign in. You will use your Azure subscription login.
 
@@ -59,7 +63,7 @@ You will want to start by creating a new migration plan. To create a new migrati
 
     ![](media/powerbi-developer-migrate-tool/migrate-tool-select-resource-group2.png)
 
-6. Select **Analyze Resource Group**. This will get an inventory of the items within your Azure subscription for you to being your plan.
+6. Select **Analyze Resource Group**. This will get an inventory of the items within your Azure subscription for you to begin your plan.
 
     ![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-group.png)
 
@@ -108,7 +112,7 @@ This is a listing of your *Resource Group > Workspace collections > Workspaces*.
 ![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-paas-topology.png)
 
 The items in the list will also display a color and a number in the format of (#/#). This indicates the number of reports that can be downloaded. 
-A green color means that all reports can be downloaded.
+A black color means that all reports can be downloaded.
 
 A red color means that some reports cannot be downloaded. The left number will indicate the total number of reports that can be downloaded. The number on the right indicates the total number of reports within the grouping.
 
@@ -139,11 +143,13 @@ Here you can specify a prefix to be used for the App Workspaces that will be cre
 
 > [AZURE.NOTE] This does not actually create the groups within the Power BI service. This only defines the naming structure for the groups.
 
-If you change the prefix, you will need to select **Generate Group Names**.
+If you change the prefix, you will need to select **Generate Upload Plan**.
 
 You can right click on a group and choose to rename the group within the Upload plan directly, if desired.
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-rename-group.png)
+
+> [AZURE.NOTE] The name of the *group* must not contain spaces or invalid characters.
 
 ## Step 2: Download
 
@@ -252,7 +258,7 @@ After you have edited the xml, re-open the plan within the migration tool and up
 <a name="directquery-reports"></a>
 ### DirectQuery reports
 
-After uploading a report that uses DirectQuery, you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](powerbi-developer-migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+You will need to update to update the connection string for DirectQuery reports. This can be done within *powerbi.com*, or you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](powerbi-developer-migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
 You can then update the connection string for the dataset within the Power BI service (Saas) and set the credentials for the data source. You can look at the following examples to see how to do this.
 
