@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/30/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # Extended Pro Trial activation
@@ -28,7 +28,7 @@ Beginning on June 1, 2017, all eligible users will be able to opt-in to the Exte
 
 As part of the [May 3, 2017 Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), Microsoft communicated changes to the free Power BI service effective June 1,2017. These changes include extending access to all data sources, higher workspace storage limits, and higher refresh and streaming rates to the Free service, making it equivalent to Power BI Pro.
 
-Also announced was that sharing and collaboration features will be exclusive to Power BI Pro users, including peer-to-peer dashboard sharing, group workspaces (now called app workspaces), export to PowerPoint and analyze in Excel with Power BI apps.
+Also announced was that sharing and collaboration features will be exclusive to Power BI Pro users, including peer-to-peer dashboard sharing, group workspaces (now called app workspaces), export to PowerPoint and analyze in Excel with Power BI apps. Export to CSV/Excel and PowerPoint were identified in the May 3 communication as a capability limited to Power BI Pro, but after receiving feedback from the broad user community the strategy has evolved to make the capability available to users of the Free service as well.
 
 Beginning June 1, 2017 existing users of the Free service who have been active within the past year (on or before May 2, 2017) will be eligible for a free, 12-month extended trial of Power BI Pro. The offer will let users take advantage of the full capabilities of Power BI Pro for the next year as a sign of appreciation to the community and to provide users with time to adjust to the changes.
 

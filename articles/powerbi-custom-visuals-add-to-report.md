@@ -20,6 +20,7 @@
    ms.workload="powerbi"
    ms.date="05/03/2017"
    ms.author="mihart"/>
+
 # Add a custom visualization to a report
 
 You've [downloaded a custom visual template](powerbi-custom-visuals-office-store.md) and saved it to your computer or another location.  The next step is to
@@ -69,9 +70,9 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 
 8. Continue to work with and explore this visualization as you would any other (native) visualization in Power BI.
 
-##    Considerations and troubleshooting
+## Considerations and troubleshooting
 
--    In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](powerbi-custom-visuals-register.md).
+- In order to enable custom visuals to be supported in export to PowerPoint, or displaying in emails received when a customer subscribes to report pages, they need to be defined as *Certified custom visuals* that have passed the Microsoft custom visual certification process.  To see the list of *Certified custom visuals* and to learn more about the certification process, see [Certified custom visuals](powerbi-custom-visuals-register.md).
 
 ## Next steps
 
@@ -84,4 +85,5 @@ See [Review custom visuals for security and privacy](powerbi-custom-visuals-revi
 [Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
 [Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

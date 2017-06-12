@@ -28,7 +28,7 @@ This article shows you how to authenticate a Power BI client app. It includes ex
 
 For a complete C# sample that shows how to authenticate a Power BI client app, see [Client app sample](https://msdn.microsoft.com/library/mt186159.aspx).
 
-Power BI client apps use **Azure Active Directory** (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your client app in AAD, you register your app with AAD. When you register a client app in AAD, you give your app access to the Power BI APIs. To learn how to register your Power BI client app, see [Register a client app](powerbi-developer-register-a-client-app.md).
+Power BI client apps use **Azure Active Directory** (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your client app in AAD, you register your app with AAD. When you register a client app in AAD, you give your app access to the Power BI APIs. To learn how to register your Power BI client app, see [Register an application](powerbi-developer-register-app.md).
 
 Power BI REST API calls are made on behalf of an authenticated user by passing a token in the "Authorization" header of the request. The token is acquired through Azure Active Directory.
 
@@ -38,8 +38,8 @@ Power BI REST API calls are made on behalf of an authenticated user by passing a
 ## What you need to authenticate a Power BI client app
 To authenticate a Power BI client app and perform a REST web request, you need to:
 
-1. **Register your client app** - To register a Power BI client app, see [Register a client app](powerbi-developer-register-a-client-app.md).	When you register a client app in **Azure Active Directory**, you give your app access to the Power BI APIs.
-2. **Assign the client id for your app** - To get the client id for your app, see [How to get a client app id](powerbi-developer-register-a-client-app.md#clientID). The Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
+1. **Register your client app** - To register a Power BI client app, see [Register an application](powerbi-developer-register-app.md). When you register a client app in **Azure Active Directory**, you give your app access to the Power BI APIs.
+2. **Assign the client id for your app** - To get the client id for your app, see [Register an application](powerbi-developer-register-app.md). The Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
 	- In your client app code, assign the **clientID** variable to the client id of your Azure application.
 3. **Assign the redirect Uri** - For a client app, a redirect uri gives AAD more details about the specific application it will authenticate. A uniform resource identifier (URI) is a value to identify a name of a resource.
 	- In your client app code, assign the **redirectUri** to "https://login.live.com/oauth20_desktop.srf". Since a client app does not have an external service to redirect to, this URI is the standard placeholder for client apps.

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # Power BI REST API Reference
@@ -33,4 +33,4 @@ The Power BI REST API has the following operations:
 
 To learn more about the Power BI REST API, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
