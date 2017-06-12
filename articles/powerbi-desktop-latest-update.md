@@ -22,7 +22,7 @@
 
 # What's new in the latest Power BI Desktop update?
 
-## June 2017 Update (2.47.4766.421)
+## June 2017 Update (2.47.4766.542)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
@@ -41,35 +41,35 @@ The following updates are new to Power BI Desktop this month:
 
 ### Report View:
 
--   Data bars for new table and matrix visuals (Preview) [[video]](https://youtu.be/YlNVE5dgcSI?t=1m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   Markers on line, area, and combo visuals (Preview) [[video]](https://youtu.be/YlNVE5dgcSI?t=4m4s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   Visual font family setting [[video]](https://youtu.be/YlNVE5dgcSI?t=6m59s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   Horizontal image slicer [[video]](https://youtu.be/YlNVE5dgcSI?t=8m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   Combo chart formatting updates [[video]](https://youtu.be/YlNVE5dgcSI?t=9m58s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   Bing maps improvements [[video]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[article]](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   High density line sampling [[video]](https://youtu.be/YlNVE5dgcSI?t=16m53s) [[article]](powerbi-desktop-high-density-sampling.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   Accessible reports [[video]](https://youtu.be/YlNVE5dgcSI?t=19m23s) [[article]](powerbi-desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
+-   Data bars for new table and matrix visuals (Preview) [[video]](https://youtu.be/YlNVE5dgcSI?t=1m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#dataBars)
+-   Markers on line, area, and combo visuals (Preview) [[video]](https://youtu.be/YlNVE5dgcSI?t=4m4s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#markers)
+-   Visual font family setting [[video]](https://youtu.be/YlNVE5dgcSI?t=6m59s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#fonts)
+-   Horizontal image slicer [[video]](https://youtu.be/YlNVE5dgcSI?t=8m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#imageSlicer)
+-   Combo chart formatting updates [[video]](https://youtu.be/YlNVE5dgcSI?t=9m58s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#comboChart)
+-   Bing maps improvements [[video]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[article]](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
+-   High density line sampling [[video]](https://youtu.be/YlNVE5dgcSI?t=16m53s) [[article]](powerbi-desktop-high-density-sampling.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#highDensityLine)
+-   Accessible reports [[video]](https://youtu.be/YlNVE5dgcSI?t=19m23s) [[article]](powerbi-desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#accessibility)
 
 
 ### Data Connectivity:
 
--   Custom Data Connectors support [[video]](https://youtu.be/YlNVE5dgcSI?t=25m53s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   **Power BI service** Live Connect to On-premises and Push streaming datasets [[video]](https://youtu.be/YlNVE5dgcSI?t=26m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   Impala connector is now generally available [[video]](https://youtu.be/YlNVE5dgcSI?t=27m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   Amazon Redshift connector is now generally available [[video]](https://youtu.be/YlNVE5dgcSI?t=27m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   SAP BW connector - DirectQuery support [[video]](https://youtu.be/YlNVE5dgcSI?t=27m45s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
--   IBM Netezza connector (beta) [[video]](https://youtu.be/YlNVE5dgcSI?t=28m15s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
+-   Custom Data Connectors support [[video]](https://youtu.be/YlNVE5dgcSI?t=25m53s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#customConnectors)
+-   **Power BI service** Live Connect to On-premises and Push streaming datasets [[video]](https://youtu.be/YlNVE5dgcSI?t=26m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#liveConnect)
+-   Impala connector is now generally available [[video]](https://youtu.be/YlNVE5dgcSI?t=27m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala)
+-   Amazon Redshift connector is now generally available [[video]](https://youtu.be/YlNVE5dgcSI?t=27m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#redshift)
+-   SAP BW connector - DirectQuery support [[video]](https://youtu.be/YlNVE5dgcSI?t=27m45s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#sapBW)
+-   IBM Netezza connector (beta) [[video]](https://youtu.be/YlNVE5dgcSI?t=28m15s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#netezza)
 
 
 ### Query Editing:
 
--   *Add Column from Examples* enhancements [[video]](https://youtu.be/YlNVE5dgcSI?t=28m38s) [[article]](powerbi-desktop-add-column-from-example.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary)
+-   *Add Column from Examples* enhancements [[video]](https://youtu.be/YlNVE5dgcSI?t=28m38s) [[article]](powerbi-desktop-add-column-from-example.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#addColumn)
 
 
 
 >NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
