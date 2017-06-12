@@ -23,8 +23,6 @@
 
 Learn how to purchase Power BI Premium capacity for your organization.
 
-> [AZURE.NOTE] Power BI Premium is not available yet, but coming soon. These documents are being made available ahead of the release of the offering.
-
 ![](media/powerbi-admin-premium-purchase/premium-purchased.png)
 
 You can purchase a Power BI Premium capacity node through the Office 365 Admin center. You can also have any combination of Premium capacity SKUs (P1 through P3) within your organization. They provide different resource capabilities.
