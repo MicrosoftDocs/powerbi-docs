@@ -50,6 +50,8 @@ Self-service capabilities, such as edit, save and more, are available through th
 
 Embedding for non-Power BI users provides the ability to embed dashboards and reports to users that don't have an account for Power BI. They don't need to know anything about Power BI. This is the scenario that is similar to the Azure Power BI Embedded service and what it offered. You will need at least one Power BI user with a Pro license. That account will act as a master account for your application. Think of this as a proxy account. This account allows you to generate tokens that provide access to dashboards and reports within the Power BI service.
 
+![](media/powerbi-developer-embedding/powerbi-embed-flow.png "Embedding flow for non-Power BI users")
+
 To embed dashboards, reports and tiles, you would use the same APIs that you would use for embedding with Power BI users.
 
 > [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application. They do not need to sign up for Power BI to view the embedded content in your application.
