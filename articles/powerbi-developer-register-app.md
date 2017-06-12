@@ -101,7 +101,7 @@ Here's how to get a client id:
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
-[Embed Power BI content for non-Power BI users](powerbi-developer-using-embed-token.md)  
+[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)  
 [Power BI permissions](powerbi-developer-power-bi-permissions.md)  
 [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)  
 
