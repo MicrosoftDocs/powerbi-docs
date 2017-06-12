@@ -215,9 +215,9 @@ You will need to enable additional permissions to your application in addition t
 
 You can take advantage of App workspaces to provide better isoliation if your application is servicing multiple customers. Dashboards and reports would be isolated between your customers. You could then use a Power BI account per App workspace to further isolate application experiences between your customers.
 
-> [AZURE.IMPORTANT] You cannot use a personal workspace to take advantage of embedding
+> [AZURE.IMPORTANT] You cannot use a personal workspace to take advantage of embedding to non-Power BI users.
 
-You will need a user that has a Pro license in order to create an App workspace within Power BI. The Power BI user that creates the App workspace will be an admin of that workspace by default.
+You will need a user that has a Pro license in order to create an app workspace within Power BI. The Power BI user that creates the App workspace will be an admin of that workspace by default.
 
 > [AZURE.NOTE] The application *master* account needs to be an admin of the workspace.
 
@@ -295,9 +295,7 @@ In addition to the content you migrated from the Power BI Embedded Azure service
 
 1. You will need to modify your application to use the Power BI REST APIs and the report location inside powerbi.com.
 
-2. Rebuild your AuthN/AuthZ authentication using the *master* account for your application. You can take advantage of using an embed token to allow this user to act on behalf of other users.
-
-    > [AZURE.NOTE] More information regarding the embed token will be made available soon.
+2. Rebuild your AuthN/AuthZ authentication using the *master* account for your application. You can take advantage of using an [embed token](https://msdn.microsoft.com/library/mt784614.aspx) to allow this user to act on behalf of other users.
 
 3. Embed your reports from powerbi.com into your application.
 

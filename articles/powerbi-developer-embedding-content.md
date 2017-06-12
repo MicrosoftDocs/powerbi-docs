@@ -208,7 +208,7 @@ Use the Power BI and JavaScript APIs to embed dashboards and reports into your a
 - [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
 - [Integrate a report into an app](powerbi-developer-integrate-report.md)
 
-When embedding for non-Power BI users, an embed token is required. To learn more see, [GenerateToken](https://msdn.microsoft.com/en-us/library/mt784614.aspx).
+When embedding for non-Power BI users, an embed token is required. To learn more see, [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
 
 ## Step 3: Promote your solution to production
 
