@@ -19,6 +19,7 @@
    ms.workload="powerbi"
    ms.date="06/12/2017"
    ms.author="asaxton"/>
+
 # Publish custom visuals to the Office store
 
 Learn how you can publish your custom visual to the Office store for others to discover and use.

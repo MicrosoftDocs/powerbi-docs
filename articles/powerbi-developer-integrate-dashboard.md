@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # Integrate a dashboard into an app
@@ -28,13 +28,15 @@ Learn how to integrate, or embed, a dashboard into a web app using C# and the **
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/XSAHwE21Buk?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, see [Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md).
+To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, you can [sign up for a free Power BI account](powerbi-service-self-service-signup-for-power-bi.md), or you can create your own [Azure Active Directory tenant ](powerbi-developer-create-an-azure-active-directory-tenant.md)for testing purposes.
 
 To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard into a **div** element using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
 
 ## Download the sample
 
 This article shows the code used in the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app) on GitHub. To follow along with this walkthrough, you should download the sample.
+
+If you are looking for a sample that involves embedding items for non-Power BI users, you can see [Embedding for non-Power BI users](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
 ## Step 1 - register an app in Azure AD
 
@@ -361,9 +363,10 @@ https://app.powerbi.com/dashboardEmbed?dashboardId={dashboardId}&groupId={groupI
 
 ## See also
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
 [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/PowerBI.com%20Integrate/integrate-dashboard-web-app)  
+[Embed sample for non-Power BI users](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)  
 [App permissions](powerbi-developer-power-bi-permissions.md)  
 [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

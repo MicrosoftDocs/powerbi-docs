@@ -32,6 +32,8 @@ This article will look at embedding your Power BI content for both users of Powe
 
 There are a few steps you have to do with your application to make this possible. We will go through the steps needed to allow you to create and use embedded content within your application.
 
+> [AZURE.NOTE] The Power BI APIs still refer to app workspaces as groups. Any references to groups mean that you are working with app workspaces.
+
 ## Step 1: Setup your embedded analytics development environment
 
 Before you start embedding dashboards and reports into your application, you need to make sure your environment is setup to allow for embedding. As part of the setup, you will need to do the following.
@@ -84,7 +86,7 @@ You will need to register an application within Azure AD and grant permissions t
 
 #### Register an application
 
-You will first need to register the application with Azure AD. While this can be done with the Azure AD portal, we have created an web page you can use to quickly register the app. Depending on who you are embedding content for will determine what items you want to select for the application. If you will be embedding for non-Power BI users, the app type must by **Native**.
+You will first need to register the application with Azure AD. While this can be done with the Azure AD portal, we have created a web page you can use to quickly register the app. Depending on who you are embedding content for will determine what items you want to select for the application. If you will be embedding for non-Power BI users, the app type must by **Native**.
 
 |Embedding for|Application type|
 |---------|---------|---------|
@@ -205,6 +207,8 @@ Use the Power BI and JavaScript APIs to embed dashboards and reports into your a
 - [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
 - [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
 - [Integrate a report into an app](powerbi-developer-integrate-report.md)
+
+When embedding for non-Power BI users, an embed token is required. To learn more see, [GenerateToken](https://msdn.microsoft.com/en-us/library/mt784614.aspx).
 
 ## Step 3: Promote your solution to production
 
