@@ -58,7 +58,7 @@ To embed dashboards, reports and tiles, you would use the same APIs that you wou
 
 When you are ready to move to production, your app workspace must be assigned to a Premium capacity. 
 
-For details on how to embed with non-Power BI users, see [Embed Power BI content for non-Power BI users](powerbi-developer-using-embed-token.md).
+For details on how to embed, see [How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md).
 
 If you were using the Power BI Embedded service within Azure, see [Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md) for information on how to migrate your content over.
 
