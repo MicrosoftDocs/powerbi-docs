@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/06/2017"
+   ms.date="06/15/2017"
    ms.author="maggies"/>
 
 # Scan a Power BI QR code from your mobile device
 
 Applies to:
 
-| ![iPhone](media/powerbi-mobile-qr-code-for-tile/iphone-logo-50-px.png) | ![Android phone](media/powerbi-mobile-qr-code-for-tile/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-qr-code-for-tile/android-tablet-logo-50-px.png) |
+| ![iPhone](media/powerbi-mobile-qr-code-for-tile/ios-logo-40-px.png) | ![Android phone](media/powerbi-mobile-qr-code-for-tile/android-logo-40-px.png) | ![Android tablet](media/powerbi-mobile-qr-code-for-tile/android-logo-40-px.png) |
 |:------------------------|:----------------------------|:----------------------------|:----------------------------------------|
 | iPhones | Android phones | Android tablets |
 
@@ -36,7 +36,7 @@ Say a colleague has [created a QR code in the Power BI service](powerbi-service-
 
 You can scan the QR code for immediate access to the relevant tile or report, right from your phone, using either the scanner in the Power BI app, or any other scanner installed on your phone. 
 
-> [AZURE.NOTE] If your colleague hasn't shared the dashboard or report with you, you can submit a request for access directly from the mobile app.
+> [AZURE.NOTE] If your colleague hasn't shared the dashboard or report with you, you can request access directly from the mobile app.
 
 ## Scan a Power BI QR code on your iPhone with the Power BI scanner
 
@@ -44,7 +44,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
 2. Scroll down to **Scanner** and select it. 
 
-    ![](media/powerbi-mobile-qr-code-for-tile/power-bi-scanner-menu.png)
+    ![](media/powerbi-mobile-qr-code-for-tile/power-bi-iphone-scanner-menu.png)
 
 3. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
 
@@ -68,7 +68,9 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
 1. In the Power BI mobile app open the global navigation button ![](media/powerbi-mobile-qr-code-for-tile/power-bi-android-global-nav-icon.png) in the upper left. 
 
-2. Scroll down to **QR Scanner** ![](media/powerbi-mobile-qr-code-for-tile/power-bi-android-scanner-icon.png) and select it.
+2. Scroll down to **QR Scanner** and select it.
+
+    ![](media/powerbi-mobile-qr-code-for-tile/power-bi-android-scanner-menu.png)
 
 3. If your camera isn't enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
 
