@@ -32,11 +32,11 @@ Colleagues you've shared the dashboard with can [scan the QR code for access to 
 
 1. Open a dashboard in the Power BI service.
 
-2. Select the ellipsis (...) in the top-right corner of the tile and select **Focus mode** ![](media/power-bi-create-qr-code-tile.jpg).
+2. Select the ellipsis (...) in the top-right corner of the tile and select **Focus mode** ![](media/powerbi-service-qr-code-for-tile/fullscreen-icon.jpg).
 
 2. Select the ellipsis (...) in the top-right corner and select **Generate QR code**. 
 
-    ![](media/powerbi-service-qr-code-for-tile/powerbi_generate_qrcode.png)
+    ![](media/powerbi-service-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 
 3. A dialog box with the QR code appears. 
 
