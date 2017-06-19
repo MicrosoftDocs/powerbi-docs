@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2017"
+   ms.date="06/15/2017"
    ms.author="davidi"/>
 
 # High Density Line Sampling in Power BI
@@ -61,13 +61,13 @@ The algorithm creates as many bins as possible to create the greatest granularit
 
 As mentioned previously, the minimum granularity for each series is 350 points, the maximum is 3,500.
 
-Each bin is represented by two data points, which become the bin's representative data points in the visual. The data points are simply the high and low value for that bin, and by selecting the high and low, the binning process ensure any important high value, or significant low value, is captured and rendered in the visual.
+Each bin is represented by two data points, which become the bin's representative data points in the visual. The data points are simply the high and low value for that bin, and by selecting the high and low, the binning process ensures any important high value, or significant low value, is captured and rendered in the visual.
 
 If that sounds like a lot of analysis to ensure the occasional outlier is captured, and is properly displayed in the visual, then you are correct – and that’s exactly the reason behind the new algorithm and binning process.
 
 ## Tooltips and high density line sampling
 
-It’s important to note that this binning process, which ensures any outliers in a given bin is captured and displayed in the visual, may affect how tooltips display data when you hover over data points. To explain how and why this occurs, let’s revisit our example about stock prices from earlier in this article.
+It’s important to note that this binning process, which results in the minimum and maximum value in a given bin being captured and displayed in the visual, may affect how tooltips display data when you hover over data points. To explain how and why this occurs, let’s revisit our example about stock prices from earlier in this article.
 
 Let’s say you’re creating a visual based on stock price, and you're comparing two different stocks, both of which are using **High Density Sampling**. The underlying data for each series has lots of data points (maybe you capture the stock price each second of the day). The high density line sampling algorithm with perform binning for each series independently of the other.
 
@@ -100,4 +100,4 @@ The new algorithm for high density line sampling is an important improvement to 
 
 -   The **Show items with no data** setting is not supported with the new algorithm.
 
--   The new algorithm is not supported when using a live connection to a model hosted in SQL Server Analysis Services. It is supported in models hosted in **Power BI** or Azure Analysis Services.
+-   The new algorithm is not supported when using a live connection to a model hosted in SQL Server Analysis Services (version 2016 or earlier). It is supported in models hosted in **Power BI** or Azure Analysis Services.
