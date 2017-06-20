@@ -35,6 +35,24 @@ To download Power BI Report Server, go to [On-premises reporting with Power BI R
 
 Before you install Power BI Report Server, it is recommended that you review the [Hardware and Software Requirements for installing Power BI Report Server](reportserver-system-requirements.md).
 
+### Power BI Report Server product key
+
+#### Power BI Premium
+
+If you have purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
+
+![](../media/powerbi-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
+
+Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
+
+![](../media/powerbi-admin-premium-manage/pbirs-product-key-dialog.png "Power BI Report Server product key")
+
+For more information, see [Install Power BI Report Server](report-server/reportserver-install-report-server.md).
+
+#### SQL Server Enterprise Software Assurance (SA)
+
+If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/).
+
 ## Install your report server
 
 Installing Power BI Report Server is straight forward. There are only a few steps to install the files.
@@ -50,6 +68,12 @@ Installing Power BI Report Server is straight forward. There are only a few step
 3. Choose an edition to install and then select **Next**.
 
     ![Choose an edition](media/reportserver-install-report-server/pbireportserver-choose-edition.png)
+
+    You can choose either Evaluation or Developer edition from the drop down.
+
+    ![](media/reportserver-install-report-server/pbireportserver-choose-edition2.png)
+
+    Otherwise, you can enter a product key for the server that you acquired from either the Power BI service or the Volume License Service Center. For more information about how to get your product key, see the [Before you begin](#before-you-begin) section.
 
 4. Read and agree to the license terms and conditions and then select **Next**.
 
