@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # Configure Kerberos to use Power BI reports

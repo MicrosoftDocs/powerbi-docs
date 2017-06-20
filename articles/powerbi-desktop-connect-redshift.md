@@ -1,10 +1,10 @@
 ﻿<properties
-   pageTitle="Connect to an Amazon Redshift database in Power BI Desktop (Preview)"
+   pageTitle="Connect to an Amazon Redshift database in Power BI Desktop"
    description="Easily connect to and use an Amazon Redshift database in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,28 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2017"
+   ms.date="06/12/2017"
    ms.author="davidi"/>
 
-# Connect to Amazon Redshift in Power BI Desktop (Preview)
+# Connect to Amazon Redshift in Power BI Desktop
 
-In **Power BI Desktop**, you can connect to an **Amazon Redshift** database and use the underlying data just like any other data source in Power BI Desktop. This release of the **Amazon Redshift** connector is in preview, and is subject to change.
-
-## Enable the Amazon Redshift (Preview) feature
-
-To get access to the **Amazon Redshift** connector, you first need to enable this preview feature. In **Power BI Desktop**, select **File > Options and settings > Option** then in the **Options** window, select the **Preview Features** section and enable **Amazon Redshift**, as shown below.
-
-![](media/powerbi-desktop-connect-redshift/connect_redshift_1.png)
-
-When you check that box, you turn on the **Amazon Redshift** preview feature. You'll need to restart Power BI Desktop for the change to take effect - that's the case whenever you enable or disable a preview feature.
-
-![](media/powerbi-desktop-connect-redshift/connect_redshift_2.png)
-
-Once you restart, the preview features is available.
+In **Power BI Desktop**, you can connect to an **Amazon Redshift** database and use the underlying data just like any other data source in Power BI Desktop.
 
 ## Connect to an Amazon Redshift database
 
-Once you've enabled to preview feature, to connect to an **Amazon Redshift** database select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Amazon Redshift (Beta)**.
+To connect to an **Amazon Redshift** database select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Amazon Redshift**.
 
 ![](media/powerbi-desktop-connect-redshift/connect_redshift_3.png)
 

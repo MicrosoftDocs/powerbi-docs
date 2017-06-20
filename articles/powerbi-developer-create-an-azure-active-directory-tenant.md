@@ -1,6 +1,6 @@
 ﻿<properties
    pageTitle="Create an Azure Active Directory tenant"
-   description="Create an Azure Active Directory tenant"
+   description="Learn how to create a new Azure Active Directory (Azure AD) tenant for use with your custom application using the Power BI REST APIs."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,72 +17,88 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # Create an Azure Active Directory tenant
 
-Using the Power BI REST API, you can create a Power BI app in any platform that supports calling REST operations. However, before you get started creating a Power BI app, you need an **Azure Active Directory**, an organizational user, and a [Power BI service account](powerbi-admin-free-with-custom-azure-directory.md).
+Learn how to create a new Azure Active Directory (Azure AD) tenant for use with your custom application using the Power BI REST APIs.
 
-## Create an Azure Active Directory tenant for a Power BI app
+A tenant is representative of an organization within Azure Active Directory. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 
-Power BI apps are integrated with **Azure Active Directory** (Azure AD) to provide secure sign in and authorization for your app. To integrate a Power BI app with Azure AD, you register the details about your application with Azure AD by using the Azure Management Portal.
+Once you have an Azure AD tenant, you can define an application and assign permissions so your application can make use of the Power BI REST APIs.
 
-**Important** To sign up for the **Power BI service**, your **Azure Active Directory** must have at least one organizational user. Use your organizational user to [sign up for the Power BI service](powerbi-admin-free-with-custom-azure-directory.md).
+Your organization may already have an Azure AD tenant that you can use for your application. You can make use of that tenant for your application needs or you can create a new tenant specifically for your application. This article looks at how to create a new tenant.
 
-<a name="setup"></a>
-### Create an Azure Active Directory tenant
-Before you get started creating a Power BI app, you need **Azure Active Directory** and an organizational user. Here's how to setup **Azure Active Directory**:
+## Create an Azure Active Directory tenant
 
- 1. Navigate to https://manage.windowsazure.com and log in with the account that has an Azure subscription.
- 2. Click **ACTIVE DIRECTORY** management icon in the left pane.
+In order to integrate Power BI into your custom application, you need to define an application within Azure AD. To do that, you need a directory within Azure AD. This is your tenant. If you organization doesn't have a tenant yet, because they aren't using Power BI or Office 365, you will need to create one. You may also need to create one if you don't want your application mixing with your organization's tenant. This allows you to keep things isolated.
 
-    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/active-directory.png)
+Or, you may just want to create a tenant for testing purposes.
 
- 3. Click **NEW** button at the bottom of the page.
- 4. Choose **APP SERVICES** > **ACTIVE DIRECTORY** > **DIRECTORY** > **CUSTOM CREATE**
+To create a new Azure AD tenant, do the following.
 
-    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/new-ad.png)
+1. Browse to the [Azure portal](https://portal.azure.com) and sign in with an account that has an Azure subscription.
 
- 5. In the **Add directory** page, enter a name and domain name. For country or region choose United States or the country were Power BI is available.
+2. Select the **plus icon (+)** and search for *Azure Active Directory*.
 
-    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-directory.png)
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/new-directory.png)
 
- 6. Choose OK icon. An Azure Active Directory is created.
+3. Select **Azure Active Directory** in the search results.
 
-<a name="newuser"></a>
-### Add a user to your Azure Active Directory tenant
-You need an organizational user from your Azure AD to sign up for the **Power BI service**. Once you login to the **Power BI service** for the first time, you’ll see the **Power BI service** added to your Azure AD which will allow you to create Power BI apps with the right permissions. Here's how to add a user to your Azure Active Directory:
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/new-directory2.png)
 
-1. Navigate to https://manage.windowsazure.com and log in with the account that has an Azure subscription.
-2. Click **ACTIVE DIRECTORY** management icon in the left pane.
-3. In your **Azure Active Directory**, click **USERS**.
+4. Select **Create**.
 
-    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-ad-user.png)
-4. At the bottom of the page, click **ADD USER**. A user account is used to register a Power BI app.
-5. In the **Tell us about this user page**:
+5. Provide a **name for the organization** along with the **initial domain name**. Then select **Create**. This will create your directory.
 
-	1. For **TYPE OF USER**, choose **New user in your organization**.
-	2. Enter your **USER NAME**.
-	3. Click **Next**.
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/organization-and-domain.png)
 
-        ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-ad-user2.png)
+    > [AZURE.NOTE] Your initial domain will be part of onmicrosoft.com. You can add other domain names later. The directory, of a tenant, can have multiple domains assigned to it.
 
-6. In the **user profile** page, enter your **DISPLAY NAME**. Display name is a required field.
+6. After your directory creation is complete, select the information box to manage your new directory.
 
-	![](media/powerbi-developer-create-an-azure-active-directory-tenant/user-profile.png)
+Your directory is now created. Next we will want to add a user to the tenant.
 
-7. Click **Next**. For **ROLE**, you can use **User**.
-8. Click **Create** to create a temporary password. The new user is assigned a temporary password that must be changed on first sign in.
-9. In the **Get temporary password** page, copy the temporary password, and click **Complete** icon. You use the temporary password when you first login to your AAD.
-10. After you click the **Complete** icon, a new Azure AD user is created.
+## Create some users in your Azure Active Directory tenant
 
-Once you have an **Azure Active Directory** tenant, and an organizational user, you [sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md).
+Now that we have a directory, let's create at least two users. One that will be a Global Admin for the tenant and another that will be our master user for embedding. Think of this as a service account.
 
-**Note** When you sign up for the Power BI service, use your organizational user. Once you login to the **Power BI service** for the first time, you will see the **Power BI service** added to your Azure AD.
+1. Within the Azure portal, make sure we are on the Azure Active Directory fly out.
 
-## See Also
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/aad-flyout.png)
 
-[What is an Azure AD directory?](https://msdn.microsoft.com/library/azure/jj573650.aspx)  
-[How to get an Azure Active Directory tenant](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+    If you are not, select the Azure Active Directory icon from the left services bar.
+
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/aad-service.png)
+
+2. Under **Manage**, select **Users and groups**.
+
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/users-and-groups.png)
+
+3. Select **All users** and then select **+ New user**.
+
+4. Provide a name and username for this user. This will be your Global Admin for the tenant. You will also want to change the **Directory role** to *Global administrator*. You can also show the temporary password. When you are done, select **Create**.
+
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/global-admin.png)
+
+5. You will want to do the same thing again for a regular user in your tenant. This could also be used for your master embedding account. This time, for **Directory role**, we will leave it as *User*. Be sure to make note of the password. Then select **Create**.
+
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/pbiembed-user.png)
+
+6. Sign up for Power BI with your user account that you created in step 5. You can do that by going to [powerbi.com](https://powerbi.microsoft.com/get-started/) and selecting **Try free** under *Power BI - Cloud collaboration and sharing*.
+
+    ![](media/powerbi-developer-create-an-azure-active-directory-tenant/try-powerbi-free.png)
+
+    When you sign up, you will be prompted to try Power BI Pro free for 60 days. You can opt into that to become a pro user. Now you can also start developing an embedded solution if that is what you are looking for.
+
+    > [AZURE.NOTE] Make sure you sign up with the email address you gave the user account.
+
+## Next steps
+
+Now that you have an Azure AD tenant, you can use this tenant to test items within Power BI, and/or you can move forward to embed Power BI dashboards and reports in your application. For more information on how to embed items, see [How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md).
+
+[What is an Azure AD directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
+[How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
