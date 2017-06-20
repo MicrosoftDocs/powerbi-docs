@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/31/2017"
+ms.date="06/20/2017"
 ms.author="asaxton"/>
 
 # Row-level security (RLS) with Power BI Desktop
