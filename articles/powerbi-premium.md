@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/19/2017"
+   ms.date="06/20/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium - what is it?
@@ -90,9 +90,9 @@ Power BI Premium is available in node configurations with different v-core capac
 |**Connect to 70+ data sources**|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
 |**Publish to Web**|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
 |**Peer-to-peer sharing**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
+|**Export to PowerPoint, Excel, CSV**|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
 |**Enterprise distribution**|||
 |Apps|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
-|Export to PowerPoint, Excel, CSV|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
 |Email subscriptions|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
 |Embed APIs and controls|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
 |**Collaboration**|||
