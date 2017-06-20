@@ -107,25 +107,25 @@ You will want to perform these steps with a tenant/organization admin. This woul
 
 1. Browse to the [App registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions01.png =502x286)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions01.png)
 
 2. Select **Required permissions** under **API Access**.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions02.png  =302x322)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions02.png)
 
 3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions03.png  =572x380)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions03.png)
 
 4. Within **Required permissions**, select **Power BI Service (Power BI)**.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions05.png  =502x194)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions05.png)
 
     > [AZURE.NOTE] If you created the app directly in the Azure AD portal, **Power BI Servcie (Power BI)** may not be present. If it is not, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**. You can then continue to step 5.
 
 5. Select all permissions under **Delegated Permissions**. You will need to select them one by one in order to save the selections. Select **Save** when done.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions06.png =502x345)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions06.png)
 
 6. Within **Required permissions**, select **Grant Permissions**.
 
@@ -133,7 +133,7 @@ You will want to perform these steps with a tenant/organization admin. This woul
 
     > [AZURE.NOTE] In order to give permission to all users in the tenant, this operation should be made by an account in the Global admin role. Otherwise the permission is only granted to the user that performed the step.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions07.png =502x193)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions07.png)
 
 ##### Applying permissions programmatically
 
@@ -241,7 +241,7 @@ If you are embedding for non-Power BI users, you will want to do the following.
 
 * Edit the App workspace and assign it to a Premium capacity under advanced.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png =567x343)
+    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png)
 
 * Deploy your updated application to production and begin embedding reports from the Power BI service.
 
