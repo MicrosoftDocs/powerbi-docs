@@ -237,7 +237,7 @@ If you are embedding for non-Power BI users, you will want to do the following.
 |P2|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|2,401-4,800|Available|
 |P3|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|4,801-9600|Available|
 
-> [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
+> [AZURE.NOTE] You must be a Global or Billing Admin, within your tenant, in order to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
 
 * Edit the App workspace and assign it to a Premium capacity under advanced.
 
