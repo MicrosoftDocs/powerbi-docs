@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="06/20/2017"
    ms.author="asaxton"/>
 
 # Install Power BI Desktop optimized for Power BI Report Server
@@ -29,7 +29,7 @@ You will need to download and install Power BI Desktop optimized for Power BI Re
 
 ## Download and install
 
-You can download Power BI Desktop from [powerbi.com](https://powerbi.microsoft.com/report-server/) or from within the web portal of your report server.
+You can download Power BI Desktop optimized for Power BI Report Server from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581) or from within the web portal of your report server.
 
 After you download the installer, you can install Power BI Desktop.
 
