@@ -65,21 +65,24 @@ By default, your workspace will be in shared capacity. This includes your person
 
 ### Premium capacity nodes
 
-Power BI Premium is available in node configurations with different v-core capacities. For more information about specific SKU offereings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available.
+Power BI Premium is available in node configurations with different v-core capacities. For more information about specific SKU offereings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available. For information regarding embedded analytics capacity planning, see [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy).
 
-- P nodes can be used for embedded (Platform as a Service - PaaS) or service (Software as a Service - SaaS) deployments
+- P nodes can be used for embedded or service deployments
+- EM nodes can be used for embedded deployments only
 
-|Capacity Node|Total cores<br/>*(Backend + frontend)*|Backend Cores|Frontend Cores|DirectQuery/live connection limits|
-|---------|---------|---------|---------|---------|
-|P1|8 v-cores|4 cores, 25GB RAM|4 cores|30 per second|
-|P2|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|
-|P3|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|
+|Capacity Node|Total cores<br/>*(Backend + frontend)*|Backend Cores|Frontend Cores|DirectQuery/live connection limits|Max page renders at peak hour|Availability|
+|---------|---------|---------|---------|---------|---------|---------|
+|EM1|1 v-cores|1 core|1 core|30 per second|1-300|July 2017|
+|EM2|16 v-cores|8 cores|8 cores|60 per second|301-600|July 2017|
+|EM3|32 v-cores|16 cores|16 cores|120 per second|601-1,200|July 2017|
+|P1|8 v-cores|4 cores, 25GB RAM|4 cores|30 per second|1,201-2,400|Available|
+|P2|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|2,401-4,800|Available|
+|P3|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|4,801-9600|Available|
+
 
 * The frontend cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience.
 
 * The backend cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
-
-> [AZURE.NOTE] The current cost calculator will be updated soon to reflect ISV pricing.
 
 ## Free vs. Pro tiers
 

@@ -226,9 +226,18 @@ If you are embedding for non-Power BI users, you will want to do the following.
 
 * If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
 
-* Purchase a capacity that fits your needs. You can use the [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper) to help understand what you may need. When you are ready to purchase, you can do so within the [Office 365 admin center](https://portal.office.com/adminportal/home#/catalog).
+* Purchase a capacity that fits your needs. You can use the table below to understand which Premium capacity SKU you may need. For more details, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). When you are ready to purchase, you can do so within the [Office 365 admin center](https://portal.office.com/adminportal/home#/catalog).
 
-    > [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
+|Capacity Node|Total cores<br/>*(Backend + frontend)*|Backend Cores|Frontend Cores|DirectQuery/live connection limits|Max page renders at peak hour|Availability|
+|---------|---------|---------|---------|---------|---------|---------|
+|EM1|1 v-cores|1 core|1 core|30 per second|1-300|July 2017|
+|EM2|16 v-cores|8 cores|8 cores|60 per second|301-600|July 2017|
+|EM3|32 v-cores|16 cores|16 cores|120 per second|601-1,200|July 2017|
+|P1|8 v-cores|4 cores, 25GB RAM|4 cores|30 per second|1,201-2,400|Available|
+|P2|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|2,401-4,800|Available|
+|P3|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|4,801-9600|Available|
+
+> [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
 
 * Edit the App workspace and assign it to a Premium capacity under advanced.
 
