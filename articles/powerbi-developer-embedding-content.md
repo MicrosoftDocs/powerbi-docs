@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="06/20/2017"
    ms.author="asaxton"/>
 
 # How to embed your Power BI dashboards, reports and tiles
@@ -107,25 +107,25 @@ You will want to perform these steps with a tenant/organization admin. This woul
 
 1. Browse to the [App registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions01.png)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions01.png =502x286)
 
 2. Select **Required permissions** under **API Access**.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions02.png)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions02.png  =302x322)
 
 3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions03.png)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions03.png  =572x380)
 
 4. Within **Required permissions**, select **Power BI Service (Power BI)**.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions05.png)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions05.png  =502x194)
 
     > [AZURE.NOTE] If you created the app directly in the Azure AD portal, **Power BI Servcie (Power BI)** may not be present. If it is not, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**. You can then continue to step 5.
 
 5. Select all permissions under **Delegated Permissions**. You will need to select them one by one in order to save the selections. Select **Save** when done.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions06.png)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions06.png =502x345)
 
 6. Within **Required permissions**, select **Grant Permissions**.
 
@@ -133,7 +133,7 @@ You will want to perform these steps with a tenant/organization admin. This woul
 
     > [AZURE.NOTE] In order to give permission to all users in the tenant, this operation should be made by an account in the Global admin role. Otherwise the permission is only granted to the user that performed the step.
 
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions07.png)
+    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions07.png =502x193)
 
 ##### Applying permissions programmatically
 
@@ -226,11 +226,13 @@ If you are embedding for non-Power BI users, you will want to do the following.
 
 * If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
 
-* Purchase a capacity that fits your needs. You can use the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/) to help understand what you may need. When you are ready to purchase, you can do so within the [Office 365 admin center](https://portal.office.com/adminportal/home#/catalog).
+* Purchase a capacity that fits your needs. You can use the [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper) to help understand what you may need. When you are ready to purchase, you can do so within the [Office 365 admin center](https://portal.office.com/adminportal/home#/catalog).
+
+    > [AZURE.INFORMATION] For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
 
 * Edit the App workspace and assign it to a Premium capacity under advanced.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png)
+    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png =567x343)
 
 * Deploy your updated application to production and begin embedding reports from the Power BI service.
 
@@ -238,10 +240,12 @@ If you are embedding for non-Power BI users, you will want to do the following.
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
-[Power BI Premium announcement](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
+[How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
+[Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
