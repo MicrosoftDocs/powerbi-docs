@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2017"
+   ms.date="06/21/2017"
    ms.author="asaxton"/>
 
 # How to embed your Power BI dashboards, reports and tiles
@@ -230,9 +230,9 @@ If you are embedding for non-Power BI users, you will want to do the following.
 
 |Capacity Node|Total cores<br/>*(Backend + frontend)*|Backend Cores|Frontend Cores|DirectQuery/live connection limits|Max page renders at peak hour|Availability|
 |---------|---------|---------|---------|---------|---------|---------|
-|EM1|1 v-cores|1 core|1 core|30 per second|1-300|July 2017|
-|EM2|16 v-cores|8 cores|8 cores|60 per second|301-600|July 2017|
-|EM3|32 v-cores|16 cores|16 cores|120 per second|601-1,200|July 2017|
+|EM1|1 v-cores|.5 cores, 3GB RAM|.5 cores||1-300|July 2017|
+|EM2|2 v-cores|1 core, 5GB RAM|1 core||301-600|July 2017|
+|EM3|4 v-cores|2 cores, 10GB RAM|2 cores||601-1,200|July 2017|
 |P1|8 v-cores|4 cores, 25GB RAM|4 cores|30 per second|1,201-2,400|Available|
 |P2|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|2,401-4,800|Available|
 |P3|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|4,801-9600|Available|
