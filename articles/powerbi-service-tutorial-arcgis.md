@@ -93,7 +93,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 <br/>
 
-## Create an AcrGIS map visual
+## Create an ArcGIS map visual
 Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](powerbi-sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
@@ -131,9 +131,9 @@ To access **ArcGIS Maps for Power BI** formatting features:
 ## Detailed documentation
 **Esri** provides [comprehensive documentation](https://go.microsoft.com/fwlink/?LinkID=828772) on the feature set of **ArcGIS Maps for Power BI**.
 
-### Features overview
+## Features overview
 
-#### Base Maps
+### Base Maps
 Four base maps are provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap, and Streets.  Streets is ArcGIS's standard base map.
 
 To apply a base map select it in the task pane.
@@ -141,7 +141,7 @@ To apply a base map select it in the task pane.
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps-new.png)
 
 
-#### Location type
+### Location type
 ArgGIS Maps for Power BI automatically detects the best way to show data on the map. It selects from Points or Boundaries. The Location type options allow you to fine tune these selections.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-location-types-new.png)
@@ -150,7 +150,7 @@ ArgGIS Maps for Power BI automatically detects the best way to show data on the 
 **Boundaries** will only work if your data contains standard geographic values. Esri automatically figures out the shape to show on the map. Standard geographic values include countries, provinces, zip codes, etc. But just like with GeoCoding, Power BI may not detect the field should be a boundary by default, or it may not have a boundary for your data.  
 
 
-#### Map theme
+### Map theme
 Four map themes are provided. Location Only and Size themes are automatically chosen based on the fields you bind to the location and added to the **Size** bucket in the Power BI Fields pane. We're currently using **Size**, so let's change to **Heat map**.  
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-map-theme-new.png)
@@ -176,12 +176,12 @@ Four map themes are provided. Location Only and Size themes are automatically ch
 </table>
 
 
-#### Symbol style
+### Symbol style
 Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme. The example below shows Location type set to **Size** and several adjustments to transparency, style and size.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-symbol-style-new.png)
 
-####  Pins
+###  Pins
 Call attention to points on your map by adding pins.  
 
 1.  Select the **Pins** tab.
@@ -206,8 +206,8 @@ The Drive time pane lets you select a location and then determine what other map
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-single-select.png)
 
-> [!TIP]
-> It's easier to select a location if you zoom in on the map (using the + icon). 
+    > [!TIP]
+    > It's easier to select a location if you zoom in on the map (using the + icon). 
 
 2. Let's say you're flying into Washington D.C. for a few days and want to figure out which stores are within a reasonable driving distance. Change Search area to **Radius** and Distance to **50** miles and select OK.    
 

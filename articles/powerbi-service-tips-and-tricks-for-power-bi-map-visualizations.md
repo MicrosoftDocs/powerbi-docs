@@ -23,7 +23,7 @@
 
 # Tips and Tricks for Power BI Map visualizations
 
-Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so you can create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. It first looks for data that has been categorized as a type of geo data and if none exists, it then uses column names to make a best guess.  
+Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so you can create maps. Bing uses some algorithms and hints to retrieve the right locations. It first looks for data that has been categorized as a type of geo data and if none exists, it then uses column names to make a best guess.  
 
 To increase the likelihood of correct geo-coding, use the following tips. The first set of tips is for you to use if you have access to the dataset itself. And the second set of tips is things you can do in Power BI if you don't have access to the dataset.
 
@@ -42,19 +42,21 @@ Power BI uses Bing's [unstructured URL template service](https://msdn.microsoft.
 
  If you only have a City column, for example, Bing may have a hard time geo-coding. Add additional geo columns to make the location unambiguous.  Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see #1 above.
 
-**3.  Use geo-hierarchies and your colleagues can then drill to different "levels" of location**
-
-Create a hierarchy by dragging more than one geo field to the **Location** bucket. Used together in this way, the fields become a geo-hierarchy. In the example below we have added geo fields for: Country/Region, State, and City. In Power BI you and your colleagues can drill up and down using this geo-hierarchy. 
-
-![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-hierarchy.png)
-
-![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-geo.gif)
-
 **3. Use specific Latitude and Longitude**
 
 Add latitude and longitude values to your dataset. This removes any ambiguity and returns results more quickly. Latitude and Longitude fields must be in *Decimal Number* format, which you can set in the data model.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
+
+## Use geo-hierarchies and your colleagues can then drill to different "levels" of location
+
+Create a hierarchy by dragging more than one geo field into the **Location** bucket. Used together in this way, the fields become a geo-hierarchy. In the example below we have added geo fields for: Country/Region, State, and City. In Power BI you and your colleagues can drill up and down using this geo-hierarchy. 
+
+![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-hierarchy.png)
+
+![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-geo.gif)
+
+
 
 ##  In Power BI: tips to get better results when using map visualizations
 
