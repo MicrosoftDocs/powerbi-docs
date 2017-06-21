@@ -159,7 +159,7 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
 
 1. Open the Admin portal by selecting the gear icon in the top-right-corner of Power BI service and choosing **Admin portal**.
 
-    ![](media/powerbi-service-usage-metrics/power-bi-admin-portal.png)
+    ![](media/powerbi-service-usage-metrics/power-bi-admin-portal-new.png)
 
 2. From the Admin portal, select **Tenant settings** and choose **Usage metrics for content creators**.
 

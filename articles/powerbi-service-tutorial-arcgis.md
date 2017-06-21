@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="ArcGIS maps by ESRI in Power BI service (Take a tour)"
-   description="Take a tour of ArcGIS maps by ESRI in Power BI service"
+   pageTitle="ArcGIS maps by ESRI in Power BI (Take a tour)"
+   description="Take a tour of ArcGIS maps by ESRI in Power BI "
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2017"
+   ms.date="06/20/2017"
    ms.author="mihart"/>
 
-# Take a tour of ArcGIS maps in Power BI service and Power BI Desktop (Preview) by Esri
+# Take a tour of ArcGIS maps in Power BI service and Power BI Desktop by Esri
 
 The combination of ArcGIS Maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
@@ -48,12 +48,12 @@ ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com). Your use o
 
 <br/>
 
-## Enable the ArcGIS map preview
+## Enable ArcGIS map
 ArcGIS maps are currently available in Power BI service, Power BI Desktop, and Power BI mobile. This article provides instructions for the service and for Desktop.
 
-### Enable the ArcGIS map preview ***in Power BI service***
+### Enable the ArcGIS map ***in Power BI service***
 
-The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). To enable **ArcGIS Maps for Power BI**:
+This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). To enable **ArcGIS Maps for Power BI**:
 
 1. From the top right section of the menubar, select the cog icon and open **Settings**
 
@@ -61,7 +61,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 2. Select the **ArcGIS Maps for Power BI** checkbox. You'll need to restart Power BI after you make the selection.
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-use-arcgis.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-use-arcgis-new.png)
 
 3. Open a report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md) and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
 
@@ -93,7 +93,7 @@ The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutor
 
 <br/>
 
-## Create an AcrGIS map visual
+## Create an ArcGIS map visual
 Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](powerbi-sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
@@ -111,7 +111,7 @@ Watch Will create a few different ArcGIS map visualizations and then use the ste
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size2new.png)
 
 
-## Settings and formatting for AcrGIS maps
+## Settings and formatting for ArcGIS maps
 To access **ArcGIS Maps for Power BI** formatting features:
 
 1.  Access additional features by selecting the ellipses in the top right corner of the visualization and choosing **Edit**,
@@ -131,29 +131,29 @@ To access **ArcGIS Maps for Power BI** formatting features:
 ## Detailed documentation
 **Esri** provides [comprehensive documentation](https://go.microsoft.com/fwlink/?LinkID=828772) on the feature set of **ArcGIS Maps for Power BI**.
 
-### Features overview
+## Features overview
 
-#### Base Maps
+### Base Maps
 Four base maps are provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap, and Streets.  Streets is ArcGIS's standard base map.
 
 To apply a base map select it in the task pane.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps-new.png)
 
 
-#### Location type
+### Location type
 ArgGIS Maps for Power BI automatically detects the best way to show data on the map. It selects from Points or Boundaries. The Location type options allow you to fine tune these selections.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-location-types3.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-location-types-new.png)
 
 
 **Boundaries** will only work if your data contains standard geographic values. Esri automatically figures out the shape to show on the map. Standard geographic values include countries, provinces, zip codes, etc. But just like with GeoCoding, Power BI may not detect the field should be a boundary by default, or it may not have a boundary for your data.  
 
 
-#### Map theme
+### Map theme
 Four map themes are provided. Location Only and Size themes are automatically chosen based on the fields you bind to the location and added to the **Size** bucket in the Power BI Fields pane. We're currently using **Size**, so let's change to **Heat map**.  
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-map-theme3.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-map-theme-new.png)
 
 <table>
 <tr><th>Theme</th><th>Description</th>
@@ -176,27 +176,46 @@ Four map themes are provided. Location Only and Size themes are automatically ch
 </table>
 
 
-#### Symbol style
-Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme.
+### Symbol style
+Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme. The example below shows Location type set to **Size** and several adjustments to transparency, style and size.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-symbol-style2.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-symbol-style-new.png)
 
-####  Pins
+###  Pins
 Call attention to points on your map by adding pins.  
 
 1.  Select the **Pins** tab.
 
-2.  Type a location in the search box and select from the dropdown.
+2.  Type keywords (such as addresses, places, and point of interest), in the search box and select from the dropdown. A symbol appears on the map, and the map automatically zooms to the location. Search results are saved as location cards in the Pins pane. You can save up to 10 location cards.
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin-arcgis.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin-arcgis-newer.png)
 
 3.  Power BI adds a pin to that location and you can change the color of the pin.
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin-color.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin-color-new.png)
 
 4.  Add and delete pins.
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-pin3.png)
+
+###  Drive time
+The Drive time pane lets you select a location and then determine what other map features are within a specified radius or driving time.  
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-drive-time.png)
+
+1. Select the **Drive time** tab and choose the single or multi select tool. Single select the pin for Washington D.C.
+
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-single-select.png)
+
+    > [!TIP]
+    > It's easier to select a location if you zoom in on the map (using the + icon). 
+
+2. Let's say you're flying into Washington D.C. for a few days and want to figure out which stores are within a reasonable driving distance. Change Search area to **Radius** and Distance to **50** miles and select OK.    
+
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-drive-time-radius.png)
+
+3. The radius is shown in purple. Select any location to display its details. Optionally, format the radius by changing color and outline. 
+
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-drive-time.png)
 
 ### Reference Layer
 
@@ -207,11 +226,11 @@ ArcGIS Maps for Power BI provides a selection of demographic layers that help co
 
 2. Each layer listed has a checkbox. Add a checkmark to add that layer to the map.  In this example we've added average household income.<br/>
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics1.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographic.png)
 
 2. Each layer is interactive as well. Just as you can hover over a bubble to see the details, you can click a shaded area on the map to see the details.<br/>
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-details.png)
 
 
 #### Reference layer - ArcGIS
@@ -221,7 +240,7 @@ ArcGIS Online provides the ability for organizations to publish public web maps.
 
 2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
 
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri2.png)
+    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri2-new.png)
 
 3. To see the details, select a shaded area to open the _Select from reference layer_: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
 
@@ -262,9 +281,9 @@ In Power BI Desktop, users can stop using ArcGIS Maps for Power BI by disabling 
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-desktop-security-dialog2.png)
 
-In Power BI service, users can stop using ArcGIS Maps for Power BI by disabling it on the ArcGIS Maps for Power BI (Preview) tab in user Settings. When disabled, ArcGIS Maps will not load by default.
+In Power BI service, users can stop using ArcGIS Maps for Power BI by disabling it on the ArcGIS Maps for Power BI tab in user Settings. When disabled, ArcGIS Maps will not load by default.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-service-user-settings3.png)
+![](media/powerbi-service-tutorial-arcgis/power-bi-use-arcgis-new.png)
 
 **Tenant admin options**
 In PowerBI.com, tenant administrators can prevent all tenant users from using ArcGIS Maps for Power BI by disabling. When this happens, Power BI will no longer see the ArcGIS Maps for Power BI icon in the visualizations pane.
@@ -341,6 +360,11 @@ When geocoding street addresses, only the first 1500 addresses are geocoded. Geo
 **Is there any charge for using ArcGIS Maps for Power BI?**
 
 The ArcGIS Map for Power BI (Preview) is available to all Power BI users at no additional cost. It is a component provided by **Esri** and your use is subject to the terms and privacy policy provided by **Esri** as noted earlier in this article.
+
+**I'm getting an error message in Power BI Desktop about my cache being full**
+
+This is a bug that is being addressed.  In the meantime, to clear your cache, please try to delete files at this location: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF and then restart Power BI.
+
 
 **Does ArcGIS Maps for Power BI support Esri Shapefiles?**
 
