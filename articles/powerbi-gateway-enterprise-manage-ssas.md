@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/20/2017"
+ms.date="06/21/2017"
 ms.author="davidi"/>
 # Manage your data source - Analysis Services
 
@@ -136,13 +136,11 @@ To get to the UPN Mapping screen, do the following.
 
 4. Select **Map user names**.
 
-    ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names.png)
+    ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names_02.png)
 
 You will then see options to add rules as well as test for a given user.
 
 > [AZURE.NOTE] You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.com would be sent as v-dave*@contoso.local*.
-
-Currently you can only supply rules for **Effective user names**.
 
 ### Working with mapping rules
 
