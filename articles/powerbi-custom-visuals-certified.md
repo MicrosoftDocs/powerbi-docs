@@ -18,30 +18,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/23/2017"
+   ms.date="06/21/2017"
    ms.author="mihart"/>
-
 # Getting a custom visual *certified*
 
 ## What is meant by *certified*?
-
-A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be run inside the Power BI service. Certified custom visuals are supported for [exporting to PowerPoint](powerbi-service-publish-to-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](powerbi-service-subscribe-to-report.md).
+A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](powerbi-service-publish-to-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](powerbi-service-subscribe-to-report.md).
 
 - Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery? See [Get started with Developer Tools](powerbi-custom-visuals-getting-started-with-developer-tools.md) and visit the [Office store](powerbi-custom-visuals-office-store.md) to learn how.
 
 - Is there an Office store visual that you use regularly? Ask the visual developer to certify the visual with Microsoft.  The developer’s contact information is on the visual’s **Learn more** page and listed as **Provider**.
 
-## Certification requirements
 
+##  Certification requirements
 - Office Store approved    
 - Custom visual is written with Versioned API 1.2 or higher    
 - Code repository available for review (e.g., Visual Code available to us through GitHub)    
 - Uses only public reviewable OSS components    
 - Does not access external services or resources    
 
+
 >**TIP**: We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
 
-## Process for submitting a custom visual for Certification
+##    Process for submitting a custom visual for Certification
 
 To submit a custom visual for certification:
 
@@ -53,11 +52,11 @@ To submit a custom visual for certification:
 
 The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
 
-## Removal of Power BI Certified custom visuals
+##  Removal of Power BI Certified custom visuals
+Microsoft, at its discretion, may remove a visual from the Certified list.  
 
-Microsoft, at its discretion, may remove a visual from the Certified list.
 
-## List of custom visuals that have been certified
+##    List of custom visuals that have been certified
 
 |Name  |
 |---------|
@@ -69,6 +68,8 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |Tachometer-coming soon   |
 |[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx?assetid=WA104380786&sourcecorrid=a21a11dd-be97-4758-879c-0d6dc56d5657&searchapppos=0)    |
 
+
+
 ## Next steps
 
 [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md)  
@@ -78,5 +79,4 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 [Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
 [Use custom visualizations in Power BI Desktop](powerbi-custom-visuals-use.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
-
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
