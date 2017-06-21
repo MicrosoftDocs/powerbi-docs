@@ -361,6 +361,11 @@ When geocoding street addresses, only the first 1500 addresses are geocoded. Geo
 
 The ArcGIS Map for Power BI (Preview) is available to all Power BI users at no additional cost. It is a component provided by **Esri** and your use is subject to the terms and privacy policy provided by **Esri** as noted earlier in this article.
 
+**I'm getting an error message in Power BI Desktop about my cache being full**
+
+This is a bug that is being addressed.  In the meantime, to clear your cache, please try to delete files at this location: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF and then restart Power BI.
+
+
 **Does ArcGIS Maps for Power BI support Esri Shapefiles?**
 
 ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes you can do so using the [Shape Maps for Power BI Desktop (Preview)](powerbi-desktop-shape-map.md).
