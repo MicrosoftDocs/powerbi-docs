@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/21/2017"
    ms.author="mihart"/>
 
 #  Delete almost anything in Power BI service
@@ -100,6 +100,10 @@ If a dataset is part of one or more [organizational content packs](powerbi-servi
 
 
 ##  Delete an app workspace
+
+> [!WARNING]
+> When you create an app workspace, you create an Office 365 group. And when you delete an app workspace you delete that Office365 group. What this means is that the group will also be deleted from other O365 products like SharePoint and Teams. 
+
 As the app workspace author, you can delete it. When you delete it, the associated app is also deleted for all group members and removed from your AppSource if you had published the app to your entire organization. Deleting an app workspace is different from leaving an app workspace.
 
 ###    To delete an app workspace - if you are an Admin
