@@ -18,14 +18,29 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2017"
+   ms.date="06/22/2017"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations
 
-Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so you can create maps. Bing uses some algorithms and hints to retrieve the right locations. It first looks for data that has been categorized as a type of geo data and if none exists, it then uses column names to make a best guess.  
+Power BI integrates with Bing Maps to provide default map coordinates (a process called geo-coding) so you can create maps. Together they use algorithms to identify the correct location, but sometimes it's a best guess. If Power BI tries can't create the map visualization on its own, it enlists the help of Bing Maps.  
 
 To increase the likelihood of correct geo-coding, use the following tips. The first set of tips is for you to use if you have access to the dataset itself. And the second set of tips is things you can do in Power BI if you don't have access to the dataset.
+
+##    What is sent to Bing Maps?
+Power BI service and Power BI Desktop send Bing the geo data it needs to create the map visualization. This may include the data in the **Location**, **Latitude**, and **Longitude** buckets and geo fields in any of the **Report level**, **Page level**, or **Visual level** filter buckets. Exactly what is sent varies by map type. To learn more, see [Bing Maps privacy] (go.microsoft.com/fwlink/?LinkID=248686). 
+
+-    For maps (bubble maps), if latitude and longitude are provided then no data is sent to Bing. Otherwise, any data in the Location (and filter) buckets is sent to Bing.     
+- Filled maps require a field in the Location bucket; even if latitude and longitude are provided. Whatever data is in the Location, Latitude, or Longitude buckets is sent to Bing.
+
+    In the example below, the field **Vendor** is being used for geo-coding, so all vendor data is sent to Bing. Data from the **Size** and **Color saturation** buckets is not sent to Bing.
+
+    ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-sent-to-bing-new.png)
+
+    In this second example below, the field **Territory** is being used for geo-coding, so all territory data is sent to Bing. Data from the **Legend** and **Color saturation** buckets is not sent to Bing.
+
+    ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-filled-map.png)
+
 
 ##  In the dataset: tips to improve the underlying dataset
 
@@ -40,7 +55,7 @@ In Power BI Desktop, you can ensure fields are correctly geo-coded by setting th
 
 Power BI uses Bing's [unstructured URL template service](https://msdn.microsoft.com/library/ff701714.aspx) to get the latitude and longitude coordinates based on a set of address values for any country. If your data doesn't contain enough location data, add those columns and categorize them appropriately.
 
- If you only have a City column, for example, Bing may have a hard time geo-coding. Add additional geo columns to make the location unambiguous.  Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see #1 above.
+ If you only have a City column, Bing may have a hard time geo-coding. Add additional geo columns to make the location unambiguous.  Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see #1 above.
 
 **3. Use specific Latitude and Longitude**
 
@@ -48,17 +63,8 @@ Add latitude and longitude values to your dataset. This removes any ambiguity an
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
-## Use geo-hierarchies and your colleagues can then drill to different "levels" of location
 
-Create a hierarchy by dragging more than one geo field into the **Location** bucket. Used together in this way, the fields become a geo-hierarchy. In the example below we have added geo fields for: Country/Region, State, and City. In Power BI you and your colleagues can drill up and down using this geo-hierarchy. 
-
-![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-hierarchy.png)
-
-![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-geo.gif)
-
-
-
-##  In Power BI: tips to get better results when using map visualizations
+## In Power BI: tips to get better results when using map visualizations
 
 **1.    Use latitude and longitude fields (if they exist)**
 
@@ -66,7 +72,13 @@ In Power BI, if the dataset you are using has fields for longitude and latitude 
 
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/PBI_Latitude.png) 
 
+## Use geo-hierarchies so you can drilldown to different "levels" of location
 
+When your dataset already has different levels of location data, you and your colleagues can use Power BI to create *geo-hierarchies*. To do this, drag more than one field into the **Location** bucket. Used together in this way, the fields become a geo-hierarchy. In the example below we have added geo fields for: Country/Region, State, and City. In Power BI you and your colleagues can drill up and down using this geo-hierarchy.
+
+  ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-hierarchy.png)
+
+   ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-geo.gif)
 
 ## See also
 
