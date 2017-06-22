@@ -58,9 +58,6 @@ For future reference, you can restart the *gateway Windows service* from the use
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
-## High Availability
-
-High availability options are available with the **Power BI** Premium offering. See [Power BI Premium](powerbi-premium.md) for more details.
 
 ## How to restart the gateway
 
