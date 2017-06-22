@@ -56,7 +56,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
     ![](media/powerbi-mobile-qr-code-for-tile/power-bi-ios-qr-ar-scanner.png)
 
-6.Tap the report or the tile to open it in focus mode, or go back to the scanner.
+6. Tap the report or the tile to open it in focus mode, or go back to the scanner.
 
 ### Scan a QR code from an external scanner on your iPhone
 
@@ -89,7 +89,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 
 2. If you don’t have the Power BI app installed, you are redirected to [Google Play to download it](http://go.microsoft.com/fwlink/?LinkID=544867). 
 
-## See also
+## Next steps
 
 -  [Connect to Power BI data from the real world](powerbi-mobile-data-in-real-world-context.md) with the mobile apps
 -  [Create a QR code for a tile in the Power BI service](powerbi-service-qr-code-for-tile.md)

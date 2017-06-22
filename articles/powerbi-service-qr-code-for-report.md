@@ -28,7 +28,7 @@ You can create a QR code in the Power BI service for any report, even for a repo
 
 Colleagues you've shared the report with can scan the QR code for access to the report, right from [their mobile device](powerbi-mobile-qr-code-for-tile.md). They can use either the QR code scanner located in the Power BI app, or any other QR scanner installed on their device.
 
-## Add a QR code to a report in the Power BI service
+## Create a QR code for a report
 
 1. Open a report in the Power BI service.
 
