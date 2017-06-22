@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="-MrYLjEwTrg"
+   featuredVideoId="-758Lnhj9DRo"
    featuredVideoThumb=""
    courseDuration="5m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/22/2017"
    ms.author="davidi"/>
 
 # Create a group in Power BI
