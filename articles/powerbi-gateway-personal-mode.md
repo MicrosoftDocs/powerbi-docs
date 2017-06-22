@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/21/2017"
    ms.author="davidi"/>
 
 # On-premises data gateway (personal mode)
@@ -85,12 +85,18 @@ You can go to **Add/Remove Programs** and see whether **Power BI Gateway - Perso
 If you were using **Fast Combine** with the previous gateway, you'll need to take the following steps to re-enable **Fast Combine** to work with the **On-premises data gateway (personal mode)**:
 
 1.  Using File Explorer, open the following file:
-        %localappdata%\Microsoft\on-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+
+    ```
+    %localappdata%\Microsoft\on-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+    ```
 
 2.  At the bottom of the file, add the following text:
-            <setting name="EnableFastCombine" serializeAs="String">
-            <value>true</value>
-            </setting>
+
+        ```
+        <setting name="EnableFastCombine" serializeAs="String">```
+        <value>true</value>
+        </setting>
+        ```
 
 3.  Once complete, the setting will take effect in approximately one minute. To check that it's working properly, try an on-demand refresh in the **Power BI service** to confirm that **Fast Combine** is working.
 
@@ -114,7 +120,7 @@ The following data sources are currently not supported for the **On-premises dat
 -   SAP BusinessObjects         
 -   Spark
 
-Support for Spark and R script is planned, and currently under development.
+Support for Spark and R script is planned, as is Active Directory, and currently under development.
 
 ## Frequently Asked Questions (FAQ)
 

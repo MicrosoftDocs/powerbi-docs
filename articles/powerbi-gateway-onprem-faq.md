@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="03/14/2017"
+ms.date="06/06/2017"
 ms.author="davidi"/>
 # On-Premises Data Gateway FAQ
 

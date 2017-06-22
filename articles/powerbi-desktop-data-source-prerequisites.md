@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="06/07/2017"
    ms.author="davidi"/>
 
 # Power BI Data Source Prerequisites
@@ -35,7 +35,7 @@ For each data provider, Power BI supports a specific provider version on objects
 |MySQL|Connector/Net|6.6.5|5.1|Tables/Views, Scalar functions|[Download link](http://go.microsoft.com/fwlink/?linkid=278885&clcid=0x409)
 |PostgreSQL|NPGSQL ADO.NET provider| 2.0.12|7.4|Tables/Views|[Download link](http://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409)
 |Teradata|.NET Data Provider for Teradata|14+|12+|Tables/Views|[Download link](http://go.microsoft.com/fwlink/?linkid=278886&clcid=0x409)
-|Sybse IQ|iAnywhere.Data.SQLAnywhere for .NET 3.5|16+|16+|Tables/Views|[Download link](http://go.microsoft.com/fwlink/?linkid=324846)
+|SAP Sybase SQL Anywhere|iAnywhere.Data.SQLAnywhere for .NET 3.5|16+|16+|Tables/Views|[Download link](http://go.microsoft.com/fwlink/?linkid=324846)
 
 
 > **Note 1:** Excel files that have an .xlsx extension do not require a separate provider installation.

@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="06/20/2017"
    ms.author="asaxton"/>
+
 # Embedding with Power BI
 
 The Power BI service and Power BI Embedded in Azure are coming together to offer a single API for embedding your dashboards and reports.
@@ -27,43 +28,49 @@ This means you will have one API surface, a consistent set of capabilities and a
 
 ## A single API
 
-The Power BI REST APIs are being updated to allow for the use of an embed token. This will allow you to embed dashboards and reports into your customer application and give you the control of managing your users and mapping them to a Power BI service user.
+There are two main scenarios when embedding Power BI content. Embedding with Power BI users and embedding to non-Power BI users. Previously, the Azure Power BI Embedded service was used to service non-Power BI users. This meant that the users of your application didn't need access to Power BI directly, or have any Power BI licenses assigned to them. They didn't have an account with the Power BI service. 
+
+The Power BI REST APIs have been updated to allow for both scenarios against the Power BI service. This will allow you to embed dashboards and reports into your custom application, using the same API to either service Power BI users or non-Power BI users.
 
 You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 
-## Embedding without an embed token
+To view a sample of how embedding works, see [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/code-demo).
 
-You can continue to embed content from the Power BI service into your applications using the REST API. This requires that the you sign into the Power BI service when you want to view your content in the application. For more information on how to do this, see the following.
+## Embedding with Power BI users
 
-- [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
-- [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
-- [Integrate a report into an app](powerbi-developer-integrate-report.md)
-
-## Embedding with an embed token
-
-You can use an embed token with the Power BI REST APIs to embed reports by using a single Power BI user. The embed token is then used with requests made by users in your application to view content within Power BI by way of a single Power BI user. The users within your application do not need to exist within your Power BI organization. The embed token is what makes it possible.
-
-To embed dashboards, reports and tiles, you would use the same APIs that you did without an embed token. When the new embedding updates are rolled out, we will update these steps with how to use an embed token.
+Embedding for Power BI users is the functionality that has been available with the Power BI service. You can continue to embed content from the Power BI service into your applications using the REST API. This requires that the end user of your application sign into the Power BI service when you want to view your content in the application. Once your end user signs in, they will only have access to dashboards and reports that have been shared with them in the Power BI service. For more information on how to do this, see the following.
 
 - [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
 - [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
 - [Integrate a report into an app](powerbi-developer-integrate-report.md)
 
-Using an embed token allows you to use a single Power BI user with your application. The embed token is generated based on authentication of that single Power BI user and you can then use that token with multiple users within your application. Those users within your application to not need to be represented within your Power BI organization or have any licenses.
+Self-service capabilities, such as edit, save and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
 
-> [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application.
+## Embedding with non-Power BI users
 
-For details on how to take advantage of an embed token, see [Use an embed token when embedding dashboards and reports](powerbi-developer-using-embed-token.md).
+Embedding for non-Power BI users provides the ability to embed dashboards and reports to users that don't have an account for Power BI. They don't need to know anything about Power BI. This is the scenario that is similar to the Azure Power BI Embedded service and what it offered. You will need at least one Power BI user with a Pro license. That account will act as a master account for your application. Think of this as a proxy account. This account allows you to generate tokens that provide access to dashboards and reports within the Power BI service.
 
-If you were using the Power BI Embedded service within Azure, see [Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md) for information on how to migrate your content over. If you never used Power BI Embedded, you can get started with using the embed token when it becomes available!
+![](media/powerbi-developer-embedding/powerbi-embed-flow.png "Embedding flow for non-Power BI users")
+
+To embed dashboards, reports and tiles, you would use the same APIs that you would use for embedding with Power BI users.
+
+> [AZURE.IMPORTANT] While embedding has a dependency on the Power BI service, there is not a dependecy on Power BI for the users of your application. They do not need to sign up for Power BI to view the embedded content in your application.
+
+When you are ready to move to production, your app workspace must be assigned to a Premium capacity. 
+
+For details on how to embed, see [How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md).
+
+If you were using the Power BI Embedded service within Azure, see [Migrate content from the Power BI Embedded Azure service](powerbi-developer-migrate-from-powerbi-embedded.md) for information on how to migrate your content over.
 
 ## Next steps
 
-[Use an embed token when embedding](powerbi-developer-using-embed-token.md)  
+[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](powerbi-developer-migrate-from-powerbi-embedded.md)  
+[Power BI Premium - what is it?](powerbi-premium.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
+[Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

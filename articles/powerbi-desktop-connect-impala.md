@@ -1,10 +1,10 @@
 ﻿<properties
-   pageTitle="Connect to an Impala database in Power BI Desktop (Preview)"
+   pageTitle="Connect to an Impala database in Power BI Desktop"
    description="Easily connect to and use an Impala database in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,24 +17,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/01/2017"
+   ms.date="06/12/2017"
    ms.author="davidi"/>
 
-# Connect to an Impala database in Power BI Desktop (Preview)
+# Connect to an Impala database in Power BI Desktop
 
-In Power BI Desktop, you can connect to an **Impala** database and use the underlying data just like any other data source in Power BI Desktop. This release of the **Impala** connector is in Preview, and is subject to change.
+In Power BI Desktop, you can connect to an **Impala** database and use the underlying data just like any other data source in Power BI Desktop.
 
-## Enable the Impala (Preview) feature
-
-To get access to the **Impala** connector, you first need to enable this preview feature. In **Power BI Desktop**, select **File > Options and settings > Option** then in the **Options** window, select the **Preview Features** section and enable **Impala**, as shown below.
-
-![](media/powerbi-desktop-connect-impala/connect_impala_1.png)
-
-When you check that box, you turn on the **Impala** preview feature. You'll need to restart Power BI Desktop for the change to take effect. Once you do, the preview feature is available.
 
 ## Connect to an Impala database
 
-Once you've enabled to preview feature, to connect to an **Impala** database select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Impala (Beta)**.
+To connect to an **Impala** database select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Impala**.
 
 ![](media/powerbi-desktop-connect-impala/connect_impala_2.png)
 
@@ -54,7 +47,7 @@ Once you successfully connect, a **Navigator** window appears and displays the d
 
 ## Considerations and Limitations
 
-There are a few limits and considerations to keep in mind in this preview version of the **Impala** connector:
+There are a few limits and considerations to keep in mind with the **Impala** connector:
 
 -   Future plans include enabling refresh support using the **Power BI Gateway**.
 

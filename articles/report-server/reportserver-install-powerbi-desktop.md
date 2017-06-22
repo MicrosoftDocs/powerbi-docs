@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="06/20/2017"
    ms.author="asaxton"/>
 
 # Install Power BI Desktop optimized for Power BI Report Server
@@ -29,17 +29,17 @@ You will need to download and install Power BI Desktop optimized for Power BI Re
 
 ## Download and install
 
-You can download Power BI Desktop from the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=837581) or from within the web portal of your report server.
+You can download Power BI Desktop optimized for Power BI Report Server from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581) or from within the web portal of your report server.
 
 After you download the installer, you can install Power BI Desktop.
 
 ## Verify you are using the correct version
 
-You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The launch screen will indicate *Power BI Report Server*. The title bar will indicated *(Report Server)*.
-
-![](media/reportserver-install-powerbi-desktop/launch-powerbi-desktop-rs3.png "Lauch screen for Power BI Desktop")
+You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar will indicated the release month and year of the release.
 
 ![](media/reportserver-install-powerbi-desktop/powerbi-desktop-rs-title-bar.png "Title bar for Power BI Desktop")
+
+The Power BI Desktop version for the Power BI service will not have the month and year in the title bar.
 
 ## File extension association
 

@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/22/2017"
+   ms.date="06/12/2017"
    ms.author="maggies"/>
 
 # Quickstart: Create a Power BI report for Power BI Report Server

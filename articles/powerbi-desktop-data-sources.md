@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="06/12/2017"
    ms.author="davidi"/>
 
 
@@ -72,14 +72,15 @@ The **Database** category provides the following data connections:
 -   Oracle Database
 -   IBM DB2 Database
 -   IBM Informix database (Beta)
+-   IBM Netezza (Beta)
 -   MySQL Database
 -   PostgreSQL Database
 -   Sybase Database
 -   Teradata Database
 -   SAP HANA Database
 -   SAP Business Warehouse server
--   Amazon Redshift (Beta)
--   Impala (Beta)
+-   Amazon Redshift
+-   Impala
 -   Snowflake (Beta)
 
 
@@ -95,7 +96,6 @@ The **Azure** category provides the following data connections:
 -   Azure SQL Database
 -   Azure SQL Data Warehouse
 -   Azure Analysis Services database (Beta)
--   Azure Data Marketplace
 -   Azure Blob Storage
 -   Azure Table Storage
 -   Azure DocumentDB (Beta)
@@ -112,7 +112,6 @@ The following image shows the **Get Data** window for **Azure**.
 
 The **Online Services** category provides the following data connections:
 
--   Power BI service
 -   SharePoint Online List
 -   Microsoft Exchange Online
 -   Dynamics 365 (online)
@@ -125,6 +124,7 @@ The **Online Services** category provides the following data connections:
 -   Google Analytics
 -   appFigures (Beta)
 -   comScore Digital Analytix (Beta)
+-   Dynamics 365 for Customer Insights (Beta)
 -   Facebook
 -   GitHub (Beta)
 -   Kusto (Beta)
@@ -144,8 +144,6 @@ The **Online Services** category provides the following data connections:
 -   tyGraph (Beta)
 -   Webtrends (Beta)
 -   Zendesk (Beta)
--   PowerApps Common Data Service (Beta)
--   Facebook
 
 The following image shows the **Get Data** window for **Online Services**.
 

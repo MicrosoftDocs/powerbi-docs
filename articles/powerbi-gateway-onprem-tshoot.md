@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/06/2017"
+ms.date="06/21/2017"
 ms.author="davidi"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -182,6 +182,11 @@ This could be because of a few different scenarios.
 3. Your Power BI Desktop file has multiple data sources within it and not all of those data sources are configured with the gateway. You will need to have each data source defined with the gateway for the gateway to show up within Scheduled Refresh.
 
 > [AZURE.WARNING] If one of your data sources requires OAuth authentication, you will not be able to configure it with the On-Premises Data Gateway. OAuth authentication is not currently supported with the On-Premises Data Gateway. You will need to remove the data source that requires OAuth authentication from Power BI Desktop in order to configured scheduled refresh.
+
+### Error: The received uncompressed data on the gateway client has exceeded limit.
+
+The exact limitation is 10 GB of uncompressed data per table. If you are hitting this issue, there are good options to optimize and avoid the issue. In particular, reducing the use of highly repetitive, long string values and instead using a normalized key or removing the column (if not in use) will help.
+
 
 ## Reports
 

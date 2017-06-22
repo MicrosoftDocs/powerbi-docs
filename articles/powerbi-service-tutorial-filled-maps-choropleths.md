@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/30/2017"
+   ms.date="06/21/2017"
    ms.author="mihart"/>
 
 # Filled maps (choropleths) in Power BI (Tutorial)

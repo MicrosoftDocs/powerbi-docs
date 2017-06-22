@@ -16,14 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/12/2017"
    ms.author="asaxton"/>
 
 # How to purchase Power BI Premium
 
 Learn how to purchase Power BI Premium capacity for your organization.
-
-> [AZURE.NOTE] Power BI Premium is not available yet, but coming soon. These documents are being made available ahead of the release of the offering.
 
 ![](media/powerbi-admin-premium-purchase/premium-purchased.png)
 
@@ -88,7 +86,9 @@ You can now manage this capacity within the Power BI admin center. For more info
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [Manage Power BI Premium](powerbi-admin-premium-manage.md)  
 [Power BI Premium FAQ](powerbi-premium-faq.md)  
+[Power BI Premium release notes](powerbi-premium-release-notes.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
+[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
 [Power BI admin portal](powerbi-admin-portal.md)  
 [Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
 
