@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/22/2017"
    ms.author="davidi"/>
 
 # How to modify colors in charts and visuals
@@ -47,8 +47,12 @@ In addition, you can change the scale and the colors that are used when filling 
 
 You can also use those values to create rules, for example, to set values above zero a certain color, and values below to another color.
 
-Another handy tool for using colors is setting a *reference line*. You can set the value of the reference line, set its color, and even have the reference line contain a label.
+Another handy tool for using colors is setting a *constant line*, also sometimes referred to as a *reference line*. You can set the value of the constant line, set its color, and even have the reference line contain a label. To create a constant line (and other interesting lines), select the **Analytics pane** (looks like a magnifying glass) then expand the **Reference Line** section.
 
 ![](media/powerbi-learning-3-9a-modifying-colors/3-9a_6.png)
+
+There are many other lines you can create for a visual, also found in the **Analytics pane**, such as Min, Max, Average, Median, and Percentile lines.
+
+![](media/powerbi-learning-3-9a-modifying-colors/3-9a_7.png)
 
 Lastly, you can create a border around an individual visualization, and like other controls, you can specify the color of that border as well.

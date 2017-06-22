@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="pZ8XnFfNJtc"
+   featuredVideoId="8-z6QoaNL3A"
    featuredVideoThumb=""
    courseDuration="4m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/22/2017"
    ms.author="davidi"/>
 
 # Import an Excel table into Power BI

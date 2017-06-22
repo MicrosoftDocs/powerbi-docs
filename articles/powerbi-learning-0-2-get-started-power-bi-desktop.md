@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="meDUu1sFP3Q"
+   featuredVideoId="1Bo1BrpR3AY"
    courseDuration="9m"/>
 
 <tags
@@ -19,7 +19,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/22/2017"
    ms.author="davidi"/>
 
 # Getting Started With Power BI Desktop
