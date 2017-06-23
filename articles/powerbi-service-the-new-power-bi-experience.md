@@ -18,32 +18,28 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2017"
+   ms.date="06/17/2017"
    ms.author="mihart"/>
 
 # The new Power BI navigation experience
 
 ####    May 2017
 
-We've redesigned the navigation experience to make it easier for you to find and navigate your Power BI content.  
+We've redesigned the navigation experience to make it easier for you to find and navigate your Power BI content.
 
-![](media/powerbi-service-the-new-power-bi-experience/power-bi-navbar.png)
+<table width=100% border="0">
+<colgroup width=30% border="0">
+<tr> 
+<td rowspan="10" valign="top" border="0"> <img src="media/powerbi-service-the-new-power-bi-experience/power-bi-navbar-bigger.png"</td>
+<td border="0"> streamlined the lists for dashboards, reports, workbooks, and datasets</td></tr>
+<tr><td> added quick access flyout menus for favorites, most-recent, and workspace selection</td></tr>
+<tr><td> added a way to identify related content for dashboards, reports, and datasets</td></tr>
+<tr><td> added a separate content area for workbooks</td></tr>
+<tr><td> created a separate area for your favorite dashboards</td></tr>
+<tr><td> created a separate area for content that has been shared with you</td></tr>
+<tr><td> created a separate area for your most-recent content</td></tr>
+<tr><td> reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen. For example, switching between dashboards and reports.</td></tr></table>
 
--  streamlined the lists for dashboards, reports, workbooks, and datasets
-
-- added quick access flyout menus for favorites, most-recent, and workspace selection
-
-- added a way to identify related content for dashboards, reports, and datasets
-
--  added a separate content area for workbooks
-
--  created a separate area for your favorite dashboards
-
--  created a separate area for content that has been shared with you
-
--  created a separate area for your most-recent content
-
--   reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen. For example, switching between dashboards and reports.
 
 Watch Amanda take you on a tour of the new navigation experience, explaining and demonstrating the improvements.  Then follow the step-by-step instructions below the video to explore for yourself.
 
@@ -69,7 +65,7 @@ Let's start by looking at how the basic content (dashboards, reports, datasets, 
 
     ![](media/powerbi-service-the-new-power-bi-experience/power-bi-unfavorite2.png)
 
-2. To display a list of all the dashboards that you have added as favorites, in the left navpane, select the arrow to the right of **Favorites**. The advantage of this is that you can display this list from just about any page in Power BI service.
+2. To display a list of all the dashboards that you have added as favorites, in the left nav, select the arrow to the right of **Favorites**. Because the left nav is a permanent feature of Power BI service, you have access to this list from anywhere in Power BI service.
 
     ![](media/powerbi-service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
 
@@ -92,7 +88,7 @@ Quickly get to the reports and dashboards that you’ve most recently accessed b
 
   ![](media/powerbi-service-the-new-power-bi-experience/power-bi-recent-new.png)
 
-Similar to Favorites, you can quickly access your recents from anywhere by selecting the arrow next to **Recents**.
+Similar to Favorites, you can quickly access your recents from anywhere in Power BI service by selecting the arrow next to **Recents** in the left nav.
 
   ![](media/powerbi-service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
@@ -107,7 +103,7 @@ Apps are collections of dashboards and reports purpose-built by your organizatio
 >**TIP**: To learn more, see **App workspaces** (below) and [What are Power BI apps](powerbi-service-what-are-apps.md).
 
 ##  Shared with me
-**Shared with me** is the location for all dashboards that colleagues have shared with you.  You can filter by the owner of the dashboard or search to find what’s relevant. You can also sort the items by the date it was shared with you.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.
+**Shared with me** is the location for all dashboards that colleagues have shared with you.  Filter by dashboard owner, use the search field to find what’s relevant, and sort the items by date.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-shared-new.png)
 
@@ -115,9 +111,9 @@ Apps are collections of dashboards and reports purpose-built by your organizatio
 
 ## Working with workspaces
 
-Next in the left nav is *workspaces*. Workspaces can be thought of as *containers* used by people authoring Apps and creating dashboards and reports and other Power BI content. There are two types of workspaces: **My Workspace** and App workspaces.
+Next in the left nav is *workspaces*. Workspaces can be thought of as *containers* for Power BI content. There are two types of workspaces: **My Workspace** and App workspaces.
 
->**NOTE**: If you are not a member or an admin, you may not see any app workspaces in your left nav.
+>**NOTE**: If you are not a member of an app workspace or an admin, you may not see any app workspaces in your left nav. And if you are a Power BI Free customer, you will not see any app workspaces.
 
 ### My Workspace
 **My Workspace** stores all the content that you own. Think of it as your personal sandbox or work area for your own content. You can share content from My Workspace with colleagues. Within My Workspace, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
@@ -133,7 +129,7 @@ Apps and app workspaces are a feature of Power BI Pro. If you are someone who au
 
 As with **My Workspace**, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
 
-![](media/powerbi-service-the-new-power-bi-experience/power-bi-apps-workspaces.png)
+![](media/powerbi-service-the-new-power-bi-experience/power-bi-app-workspace.png)
 
 Switch workspaces by selecting **Workspaces** in the left nav.
 
