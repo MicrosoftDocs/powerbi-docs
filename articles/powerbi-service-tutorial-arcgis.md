@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="ArcGIS maps by ESRI in Power BI (Take a tour)"
-   description="Take a tour of ArcGIS maps by ESRI in Power BI "
+   pageTitle="Create ArcGIS maps by ESRI in Power BI (Tutorial)"
+   description="Create an ArcGIS maps by ESRI in Power BI "
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -18,12 +18,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2017"
+   ms.date="06/22/2017"
    ms.author="mihart"/>
 
-# Take a tour of ArcGIS maps in Power BI service and Power BI Desktop by Esri
+# ArcGIS maps in Power BI service and Power BI Desktop by Esri
 
-The combination of ArcGIS Maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
+This tutorial is written from the point of view of a person creating an ArcGIS map. Once a creator shares an ArcGIS map with a colleague, that colleague can view and interact with the map but not save changes. To learn more about viewing an ArcGIS map, see [Interacting with ArcGIS maps](powerbi-visualizations-argcis.md).
+
+The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
+
+> [!NOTE]
+> While you cannot create an ArcGIS maps on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](powerbi-visualizations-argcis.md).
 
 >**TIP**: GIS stands for Geographic Information Science.
 
@@ -321,7 +326,7 @@ You can use the provided **Group Policy** templates to quickly add the required 
 
 ## Considerations and Limitations
 
-ArcGIS Maps for Power BI (Preview) is available in the following services and applications:
+ArcGIS Maps for Power BI is available in the following services and applications:
 
 <table>
 <tr><th>Service/App</th><th>Availability</th></tr>
@@ -378,7 +383,10 @@ No, Power BI needs network connectivity to display the maps.
 
 Not yet. [Vote for this idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases ) and we'll send you an email when we start working on this feature.  
 
+
 ## Next steps
+
+[Interacting with an ArcGIS map that has been shared with you](powerbi-visualizations-arcgis.md)
 
 [Blog post announcing availability of ArcGIS maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
