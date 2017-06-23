@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/08/2017"
+   ms.date="01/19/2017"
    ms.author="maggies"/>
 # Reports on the iPad mobile app
 

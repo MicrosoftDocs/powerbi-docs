@@ -105,11 +105,9 @@ After they sign in, they see the shared dashboard in its own browser window with
 
 They can't edit any content in this dashboard or report. They can interact with the charts in the report (cross-highlight) and change any filters/slicers available on the reports connected to the dashboard, but can't save their changes.
 
-Only your direct recipients can see the shared dashboard. For example, if you sent the email to Vicki@contoso.com, only Vicki can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
+Only your direct recipients can see the shared dashboard. In the example above, only Vicki@contoso.com can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
 
 People outside your organization can't see any data if role- or row-level security is implemented on on-premises Analysis Services tabular models.
-
-If you send a link from a Power BI mobile app to people outside your organization, when they click the link the dashboard opens in a browser, not in the Power BI mobile apps.
 
 ## Sharing just a report
 We've seen that when you share a dashboard with tiles that link to reports, those reports are also shared at the same time. But what if you want to share just a report? Just send the report page URL to your colleagues. As long as they have Power BI Pro licenses, are members of the same distribution group, in the same email domain as you, or have at least one dashboard that links to that same report (the dashboard has tiles that were pinned from that report), they'll be able to open the report.

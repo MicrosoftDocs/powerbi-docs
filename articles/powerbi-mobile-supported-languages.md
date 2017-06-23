@@ -1,6 +1,6 @@
 <properties 
    pageTitle="Supported languages in the Power BI mobile apps"
-   description="See the list of languages supported in the Power BI mobile apps."
+   description="These are the languages supported in the Power BI mobile apps"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="03/31/2017"
    ms.author="maggies"/>
 
 # Supported languages in the Power BI mobile apps  
@@ -59,12 +59,7 @@ The Power Bi mobile apps currently support these languages:
 -   Ukrainian - українська
 -   Vietnamese - Tiếng Việt
 
-## Notes
-
-- Power BI uses the language that corresponds with the locale of the mobile device. You can't set a different language.
-- Notifications are in English only. For example, if someone shares a dashboard with you, the notification will be in English. 
-
-## Next steps
+## See also
 *	[Supported languages and countries/regions for Power BI](powerbi-supported-languages.md)
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
