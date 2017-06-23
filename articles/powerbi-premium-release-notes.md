@@ -16,14 +16,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2017"
+   ms.date="06/23/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium release notes
 
 These are the June release notes for Power BI Premium, a dedicated capacity giving your organization or team more dependable performance, larger data volumes, and the ability to distribute content without per-user licenses for viewers.
-
-> [AZURE.NOTE] Power BI Premium is not available yet, but coming soon. These documents are being made available ahead of the release of the offering.
 
 ## June release notes
 
