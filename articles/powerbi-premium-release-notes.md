@@ -25,7 +25,7 @@ These are the June release notes for Power BI Premium, a dedicated capacity givi
 
 ## June release notes
 
-- Usage metrics for the capacity admin portal may under-report usage in the capacity. We are working on enabling this.
+- Usage metrics for the capacity admin portal may misreport usage in the capacity. The memory thrashing metric in particular may over-report the memory pressure on your capacity. We are working on increasing the accuracy of the usage metrics.
 - Dynamic row-level security (RLS) is not yet available for embedded use cases. We are working on enabling this.
 - Distributing Power BI apps to users in other AAD tenants using powerbi.com is not yet supported. We are working on enabling this.
 - Users of the Personal Gateway must upgrade to the latest version in order to continue refreshing their data in Premium workspaces.
