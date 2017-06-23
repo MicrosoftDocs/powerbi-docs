@@ -208,17 +208,17 @@ The Drive time pane lets you select a location and then determine what other map
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-drive-time.png)
 
 1. Select the **Drive time** tab and choose the single or multi select tool. Single select the pin for Washington D.C.
-
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-single-select.png)
 
     > [!TIP]
-    > It's easier to select a location if you zoom in on the map (using the + icon). 
+    > It's easier to select a location if you zoom in on the map (using the + icon).
 
+    
 2. Let's say you're flying into Washington D.C. for a few days and want to figure out which stores are within a reasonable driving distance. Change Search area to **Radius** and Distance to **50** miles and select OK.    
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-drive-time-radius.png)
 
-3. The radius is shown in purple. Select any location to display its details. Optionally, format the radius by changing color and outline. 
+3. The radius is shown in purple. Select any location to display its details. Optionally, format the radius by changing color and outline.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-drive-time.png)
 
