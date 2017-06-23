@@ -40,7 +40,7 @@ The example we're using is the same ArcGIS map created in the [ArcGIS maps by es
 <br/>
 
 ##    User consent
-The first time a colleague shares an ArcGIS map with you, Power BI will display a prompt. ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com) and your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals, need to accept the consent dialog.
+The first time a colleague shares an ArcGIS map with you, Power BI will display a prompt. ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com) and your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
 
 ## Selection tools
 ArcGIS Maps for Power BI allows three selection modes.
@@ -65,27 +65,27 @@ The features available to you depend on whether you are the *creator* (person wh
 - Expand the **Filters** pane to explore the map using filters. When you close the report, the filters you applied are not saved.    
     ![](media/powerbi-visualizations-arcgis/power-bi-filter-newer.png)  
 
-- If the map has a reference layer, select locations to display details in a tooltip. Here we've selected Adams County and see data from the average household income reference layer the creator added to the map. 
+- If the map has a reference layer, select locations to display details in a tooltip. Here we've selected Adams County and see data from the average household income reference layer the creator added to the map.
 
     ![](media/powerbi-visualizations-arcgis/power-bi-reference-layer.png)  
 
     In this case we also get a chart. Select a bar on the chart to dig into the data. Here we see that 79 households in Adams county earn $200,000 or greater.
 
-    ![](media/powerbi-visualizations-arcgis/power-bi-tooltip-chart.png) 
+    ![](media/powerbi-visualizations-arcgis/power-bi-tooltip-chart.png)
 
-    Select the arrow to display any additional charts. 
+    Select the arrow to display any additional charts.
 
 - Hover over basemap location symbols to display details in a tooltip.     
-![](media/powerbi-visualizations-arcgis/power-bi-arcgis-hover.png) 
+![](media/powerbi-visualizations-arcgis/power-bi-arcgis-hover.png)
 
     > [!TIP]
     > You may have to zoom in to select a specific location.  Otherwise, if there are overlapping locations, Power BI may present you with more than 1 tooltip at a time. Select the arrows to move between the tooltips
     >
-    >![](media/powerbi-visualizations-arcgis/power-bi-3-screens.png) 
+    >![](media/powerbi-visualizations-arcgis/power-bi-3-screens.png)
 
-- If the creator had added an Infographics layer to the ArcGIS map, you'll see additional data displayed in the upper-right corner of the map.  For example, here the map creator added "Children under 14." 
+- If the creator has added an Infographics layer to the ArcGIS map, you'll see additional data displayed in the upper-right corner of the map.  For example, here the map creator added "Children under 14."
 
-    ![](media/powerbi-visualizations-arcgis/power-bi-demographics.png) 
+    ![](media/powerbi-visualizations-arcgis/power-bi-demographics.png)
 
 
 
