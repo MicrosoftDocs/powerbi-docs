@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/02/2017"
+   ms.date="06/23/2017"
    ms.author="davidi"/>
 
 # Troubleshooting refresh scenarios
@@ -61,7 +61,7 @@ Microsoft is investigating a solution that allows the data loading process to re
 
 ## Uncompressed data limits for refresh
 
-The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit on the amount of uncompressed data that is processed during refresh. This limit accounts for the compression, and therefore is much higher than 1 GB. Datasets in Power BI Premium are not subject to this limit. If refresh in the Power BI service fails for this reason, please reduce the amount of data being imported to Power BI and try again.
+The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit on the amount of uncompressed data that is processed during refresh to 10 GB. This limit accounts for the compression, and therefore is much higher than 1 GB. Datasets in Power BI Premium are not subject to this limit. If refresh in the Power BI service fails for this reason, please reduce the amount of data being imported to Power BI and try again.
 
 ## Next steps
 
