@@ -10,7 +10,7 @@
    tags=""
    qualityFocus="no"
    qualityDate=""
-   featuredVideoId="exL0nmguK_4"
+   featuredVideoId="8V2WP4nFCiA"
    featuredVideoThumb=""
    courseDuration="5m"/>
 
@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="06/22/2017"
    ms.author="davidi"/>
 
 # Create a content pack in Power BI

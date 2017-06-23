@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/07/2017"
+   ms.date="06/21/2017"
    ms.author="davidi"/>
 
 # On-premises data gateway (personal mode)
@@ -120,7 +120,7 @@ The following data sources are currently not supported for the **On-premises dat
 -   SAP BusinessObjects         
 -   Spark
 
-Support for Spark and R script is planned, and currently under development.
+Support for Spark and R script is planned, as is Active Directory, and currently under development.
 
 ## Frequently Asked Questions (FAQ)
 
