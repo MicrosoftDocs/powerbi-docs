@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/04/2017"
+   ms.date="06/27/2017"
    ms.author="mihart"/>
 
 # Subscribe to a Power BI report or dashboard
