@@ -27,7 +27,7 @@ This tutorial is written from the point of view of a person creating an ArcGIS m
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
-> [!NOTE]
+> **NOTE**:
 > While you cannot create an ArcGIS maps on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](powerbi-visualizations-argcis.md).
 
 >**TIP**: GIS stands for Geographic Information Science.
@@ -210,7 +210,7 @@ The Drive time pane lets you select a location and then determine what other map
 1. Select the **Drive time** tab and choose the single or multi select tool. Single select the pin for Washington D.C.
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-single-select.png)
 
-    > [!TIP]
+    > **TIP**: 
     > It's easier to select a location if you zoom in on the map (using the + icon).
 
     
