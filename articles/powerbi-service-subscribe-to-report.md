@@ -23,7 +23,9 @@
 
 # Subscribe to a Power BI report or dashboard
 
-It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: from once a day, to once a week, or not at all.
+It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: from once a day to once a week
+
+>**NOTE**: Subscriptions can only be created in Power BI service. When you receive the email it will include a link to "go to report/dashboard". On mobile devices with Power BI apps installed, selecting this link launches the app (as opposed to the default action of opening the report or dashboard on the Power BI website).
 
 Watch Sirui set up an email subscription for a report. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -35,7 +37,8 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
 
 ## Subscribe to a dashboard
 ![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-orientation.png)
-1.  Open the report in [Reading view](powerbi-service-open-a-report-in-reading-view.md).
+
+1.  Open the dashboard.
 
 2.  From the top menubar, select **Subscribe** or select the envelope icon ![](media/powerbi-service-subscribe-to-report/power-bi-icon-envelope.png).
 
@@ -45,9 +48,7 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
 
     ![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-dashboard-new.png)
 
-5.  Select **Save and close** to save the subscription. You will receive an email snapshot of each report page when the report is refreshed. If the report doesn't refresh, you will not receive a snapshot email that day.  If the report refreshes more than once a day, you will only receive the email snapshot after the first refresh.
-
-    ![](media/powerbi-service-subscribe-to-report/power-bi-subscription-email.png)
+5.  Select **Save and close** to save the subscription. You will receive an email snapshot of the dashboard each time the data changes (a tile is added or removed, the dashboard itself is refreshed). If the dashboard doesn't refresh, you will not receive a snapshot email that day.  If the dashboard refreshes more than once a day, you will only receive the email snapshot after the first refresh.
 
     > [AZURE.TIP] Want to see the email right away? Trigger an email by opening one of the datasets associated with the dashboard and selecting **Refresh now**. If you don’t have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.
     >
@@ -84,13 +85,13 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
     >
     > ![](media/powerbi-service-subscribe-to-report/power-bi-refresh-now.png)
 
-## How the email schedule is determined
+## How the email schedule for reports is determined
 
 The following table describes how frequently you will receive an email. It all depends on the connection method of the dataset upon which the dashboard or report is based (DirectQuery, Live connection, imported to Power BI, or Excel file in OneDrive or SharePoint Online) and on the subscription options available and selected (daily, weekly, or none).
 
 |     |**DirectQuery**|**Live Connect**|**Scheduled refresh (import)**| **Excel file in OneDrive/SharePoint Online**|
 |-------------|----------|----------|----------|----------|
-|**How often does the report get refreshed?**|Every 15m|Power BI checks every 15 minutes, and if the dataset has changed, the report is refreshed.| User selects none, daily, or weekly. Daily can be up to 8 times a day. Weekly is actually a weekly schedule that the user creates and sets refresh for as few as once a week and as often as daily.| Once every hour|
+|**How often does the report/dashboard get refreshed?**|Every 15m|Power BI checks every 15 minutes, and if the dataset has changed, the report is refreshed.| User selects none, daily, or weekly. Daily can be up to 8 times a day. Weekly is actually a weekly schedule that the user creates and sets refresh for as few as once a week and as often as daily.| Once every hour|
 |**How much control does the user have over the subscription email schedule?**|Options are: daily or weekly|No options: users is sent an email if the report refreshes, but no more than once per day.| If the refresh schedule is daily, options are daily and weekly.  If the refresh schedule is weekly only option is weekly.|No options: user is sent an email whenever the dataset is updated, but no more than once per day.|
 
 ## Manage your subscriptions
@@ -107,7 +108,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 
 ## Considerations and troubleshooting
 
--    At the current time, subscribe is not available for dashboards or reports that come from content packs or Power BI apps. But there is a workaround...make a copy of the report and add subscriptions to that dashboard or report instead.
+-    At the current time, subscribe is not available for dashboards or reports that come from content packs or Power BI apps. But there is a workaround...make a copy of the report/dashboard and add subscriptions to that version instead.
 
 -    For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
 
