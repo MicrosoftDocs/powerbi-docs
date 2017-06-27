@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2017"
+   ms.date="06/27/2017"
    ms.author="mihart"/>
 
 # View related content in Power BI service
@@ -56,15 +56,15 @@ You'll need at least *view* permissions to a dashboard to open the **Related con
 
 **Method 1**
 
-In a workspace, select the **Dashboards** tab and then select the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon.png)  .
+In a workspace, select the **Dashboards** tab and then select the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  .
 
-![](media/powerbi-service-related-content/power-bi-view-related-dash.png)
+![](media/powerbi-service-related-content/power-bi-view-related-dash-new.png)
 
 <br>
 
 **Method 2**
 
-With a dashboard open, select   ![](media/powerbi-service-related-content/power-bi-view-related.png) from the top menubar.
+With a dashboard open, select   ![](media/powerbi-service-related-content/power-bi-view-related-new.png) from the top menubar.
 
 The **Related content** pane opens. It shows all the reports that have visualizations pinned to the dashboard and their associated datasets. For this dashboard, there are visualizations pinned from 3 different reports and those reports are based on 3 different datasets.
 
@@ -79,16 +79,16 @@ You'll need at least *view* permissions to a report to open the **Related conten
 
 **Method 1**
 
-In a workspace, select the **Reports** tab and then select the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon.png)  .
+In a workspace, select the **Reports** tab and then select the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  .
 
-![](media/powerbi-service-related-content/power-bi-view-related-report.png)
+![](media/powerbi-service-related-content/power-bi-view-related-report-new.png)
 
 
 <br>
 **Method 2**
 
 
-Open the report in [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md) and  select   ![](media/powerbi-service-related-content/power-bi-view-related.png) from the top menubar.
+Open the report in [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md) and  select   ![](media/powerbi-service-related-content/power-bi-view-related-new.png) from the top menubar.
 
 The **Related content** pane opens. It shows the associated dataset and all dashboards that have at least one tile pinned from the report. For this report, there are visualizations pinned to 2 different dashboards.
 
@@ -102,9 +102,9 @@ From here, you can take direct action on the related content.  For example, sele
 
 You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis.md).
 
-In a workspace, select the **Datasets** tab and locate the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon.png)  .
+In a workspace, select the **Datasets** tab and locate the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  .
 
-![](media/powerbi-service-related-content/power-bi-view-related-dataset.png)
+![](media/powerbi-service-related-content/power-bi-view-related-dataset-new.png)
 
 Select the icon to open the **Related content** pane.
 
@@ -116,7 +116,7 @@ From here, you can take direct action on the related content.  For example, sele
 
 ##  Limitations and troubleshooting
 
-- If your browser doesn't have enough space, you won't see an option for **View related** but you will still see the View related icon  ![](media/powerbi-service-related-content/power-bi-view-related-icon.png)  . Select the icon to open the **Related content** pane.
+- If your browser doesn't have enough space, you won't see an option for **View related** but you will still see the View related icon  ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  . Select the icon to open the **Related content** pane.
 
 - To open Related content for a report, you need to be in [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md).
 
