@@ -18,14 +18,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2017"
+   ms.date="06/28/2017"
    ms.author="mihart"/>
 
 # Subscribe to a Power BI report or dashboard
 
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: from once a day to once a week
 
->**NOTE**: Subscriptions can only be created in Power BI service. When you receive the email it will include a link to "go to report/dashboard". On mobile devices with Power BI apps installed, selecting this link launches the app (as opposed to the default action of opening the report or dashboard on the Power BI website).
+>[AZURE.NOTE] Subscriptions can only be created in Power BI service. When you receive the email it will include a link to "go to report/dashboard". On mobile devices with Power BI apps installed, selecting this link launches the app (as opposed to the default action of opening the report or dashboard on the Power BI website).
 
 Watch Sirui set up an email subscription for a report. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -50,14 +50,16 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
 
 5.  Select **Save and close** to save the subscription. You will receive an email snapshot of the dashboard each time the data changes (a tile is added or removed, the dashboard itself is refreshed). If the dashboard doesn't refresh, you will not receive a snapshot email that day.  If the dashboard refreshes more than once a day, you will only receive the email snapshot after the first refresh.
 
+    ![](media/powerbi-service-subscribe-to-report/power-bi-dashboard-email-new.png)
+
     > [AZURE.TIP] Want to see the email right away? Trigger an email by opening one of the datasets associated with the dashboard and selecting **Refresh now**. If you don’t have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.
     >
     > ![](media/powerbi-service-subscribe-to-report/power-bi-refresh-now.png)
 
-    > [!TIP]
+    > [AZURE.TIP]
     > To find out which datasets are being used to create the dashboard, from the dashboard, select the **View related** icon ![](media/powerbi-service-subscribe-to-report/power-bi-view-related.png)
 
-    ![](media/powerbi-service-subscribe-to-report/power-bi-view-related-screen.png) 
+    ![](media/powerbi-service-subscribe-to-report/power-bi-view-related-screen.png)
 
 ##    Subscribe to a report page
 
