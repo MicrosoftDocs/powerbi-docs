@@ -33,15 +33,15 @@ For more information about what Power BI Premium is, see [Power BI Premium - wha
 
 ## Create a new tenant with Power BI Premium P1
 
-If you don't have an existing tenant and want to create one, you can purchase Power BI Premium at the same time. The following link will walk you through the process of creating a new tenant for use with Office 365 and allow you to purchase Power BI Premium. You will need to purchase a Power BI Pro license for a user after the tenant is created.
+If you don't have an existing tenant and want to create one, you can purchase Power BI Premium at the same time. The following link will walk you through the process of creating a new tenant for use with Office 365 and allow you to purchase Power BI Premium. You will need to purchase a Power BI Pro license for a user after the tenant is created. When you create your tenant, you will automatically be the Global Admin for that tenant.
 
 To make this purchase, see [Power BI Premium P1 offer](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1).
 
 ![](media/powerbi-admin-premium-purchase/premium-purchase-with-tenant.png)
 
-## Purchase a Power BI Premium capacity
+## Purchase a Power BI Premium capacity for an existing organization
 
-You need to be either a Global admin or a Billing admin, for your organization, to purchase subscriptions and licenses. For more information, see [About Office 365 admin roles](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+If you have an existing organization, you need to be either a Global admin or a Billing admin, to purchase subscriptions and licenses. For more information, see [About Office 365 admin roles](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 To purchase a Premium capacity, you will need to do the following.
 
