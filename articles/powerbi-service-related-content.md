@@ -79,7 +79,7 @@ You'll need at least *view* permissions to a report to open the **Related conten
 
 **Method 1**
 
-In a workspace, select the **Reports** tab and then select the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon.png)  .
+In a workspace, select the **Reports** tab and then select the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  .
 
 ![](media/powerbi-service-related-content/power-bi-view-related-report-new.png)
 
@@ -116,7 +116,7 @@ From here, you can take direct action on the related content.  For example, sele
 
 ##  Limitations and troubleshooting
 
-- If your browser doesn't have enough space, you won't see an option for **View related** but you will still see the View related icon  ![](media/powerbi-service-related-content/power-bi-view-related-icon.png)  . Select the icon to open the **Related content** pane.
+- If your browser doesn't have enough space, you won't see an option for **View related** but you will still see the View related icon  ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  . Select the icon to open the **Related content** pane.
 
 - To open Related content for a report, you need to be in [Reading view](powerbi-service-interact-with-a-report-in-reading-view.md).
 
