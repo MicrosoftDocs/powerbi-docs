@@ -40,6 +40,18 @@ We've redesigned the navigation experience to make it easier for you to find and
 <tr><td> created a separate area for your most-recent content</td></tr>
 <tr><td> reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen. For example, switching between dashboards and reports.</td></tr></table>
 
+
+|||
+|---------|---------|
+|![](media/powerbi-service-the-new-power-bi-experience/power-bi-navbar-bigger.png) ||streamlined the lists for dashboards, reports, workbooks, and datasets|
+||added quick access flyout menus for favorites, most-recent, and workspace selection|
+||added a way to identify related content for dashboards, reports, and datasets|
+||added a separate content area for workbooks|
+||created a separate area for your favorite dashboards|
+||created a separate area for content that has been shared with you|
+||created a separate area for your most-recent content|
+||reduced the number of clicks required to accomplish tasks -- combined the lists of content, and the actions you can take on that content, on the same screen. For example, switching between dashboards and reports.|
+
 Watch Amanda take you on a tour of the new navigation experience, explaining and demonstrating the improvements.  Then follow the step-by-step instructions below the video to explore for yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
