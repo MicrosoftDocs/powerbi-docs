@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/17/2017"
+   ms.date="06/18/2017"
    ms.author="mihart"/>
 
 # The new Power BI navigation experience
@@ -30,7 +30,7 @@ We've redesigned the navigation experience to make it easier for you to find and
 <table width=100% border="0">
 <colgroup width=30% border="0">
 <tr> 
-<td rowspan="10" valign="top" border="0"> <img src="media/powerbi-service-the-new-power-bi-experience/power-bi-navbar-bigger.png"</td>
+<td rowspan="10" valign="top" border="0"> <img src="/media/powerbi-service-the-new-power-bi-experience/power-bi-navbar-bigger.png"</td>
 <td border="0">streamlined the lists for dashboards, reports, workbooks, and datasets</td></tr>
 <tr><td> added quick access flyout menus for favorites, most-recent, and workspace selection</td></tr>
 <tr><td> added a way to identify related content for dashboards, reports, and datasets</td></tr>
