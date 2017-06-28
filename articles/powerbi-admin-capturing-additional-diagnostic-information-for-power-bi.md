@@ -17,15 +17,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="06/28/2017"
    ms.author="asaxton"/>
 
 # Capturing additional diagnostic information
 
-## Capturing Additional Diagnostic Information for Power BI  
+## Capturing Additional Diagnostic Information for Power BI
+
 These instructions provide two potential options for manually collecting additional diagnostic information from the Power BI web client.  Only one of these options needs to be followed.
 
-## Network Capture - Edge & Internet Explorer 
+## Network Capture - Edge & Internet Explorer
+
 1.  Browse to [Power BI](https://app.powerbi.com) with Edge or Internet Explorer.
 
 2.  Open the Edge developer tools by pressing F12.
@@ -54,4 +56,4 @@ These instructions provide two potential options for manually collecting additio
 
 9. You can provide the HAR file to support for review.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

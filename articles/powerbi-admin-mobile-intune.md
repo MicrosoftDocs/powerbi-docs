@@ -17,11 +17,14 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/07/2017"
+ms.date="06/28/2017"
 ms.author="asaxton"/>
+
 # Configure mobile apps with Microsoft Intune
 
 Microsoft Intune enables organizations to manage devices and applications. The Power BI mobile applications, for iOS and Android, integrate with Intune to allow you to manage the application on your devices, and to control security. Through configuration policies, you can control items like requiring an access pin, controlling how data is handled by the application and even encrypting application data when the app is not in use.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9HF-qsdQvHw?list=PLv2BtOtLblH1nPVPU2etFzTNmpz49dwXm" frameborder="0" allowfullscreen></iframe>
 
 ## General mobile device management configuration
 
@@ -31,7 +34,7 @@ Microsoft Intune can co-exist with Mobile Device Management (MDM) within Office 
 
 This article assumes that Intune is configured properly and you have devices enrolled with Intune. If you are co-existing with MDM, the device will show enrolled within MDM, but is available to manage within Intune.
 
->**Note**: After your organization has configured Microsoft Intune MAM, if you use the Power BI mobile app on an iOS or Android device, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
+> [AZURE.NOTE] After your organization has configured Microsoft Intune MAM, if you use the Power BI mobile app on an iOS or Android device, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 
 ## Step 1: Get the url for the application
 
@@ -193,12 +196,9 @@ After it is installed, you will see that it is **Managed by your company**. If y
 
 ![](media/powerbi-admin-mobile-intune/intune-powerbi-pin.png)
 
-## Video
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9HF-qsdQvHw?list=PLv2BtOtLblH1nPVPU2etFzTNmpz49dwXm" frameborder="0" allowfullscreen></iframe>
-
-## See also
+## Next steps
 
 [Configure and deploy mobile application management policies in the Microsoft Intune console](https://technet.microsoft.com/library/dn878026.aspx)  
 [Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
