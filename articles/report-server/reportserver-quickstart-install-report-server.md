@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2017"
+   ms.date="06/28/2017"
    ms.author="asaxton"/>
 
 # Quickstart: Install Power BI Report Server
@@ -65,6 +65,7 @@ Now that you are configured, you should be able to open a browser to the web por
 ## Next steps
 
 [Administrator handbook](reportserver-admin-handbook-overview.md)  
+[How to find your report server product key](reportserver-find-product-key.md)  
 [Install Power BI Report Server](reportserver-install-report-server.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
 [Browser support for Power BI Report Server](reportserver-browser-support.md)
