@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="01/23/2017"
+ms.date="06/28/2017"
 ms.author="asaxton"/>
 # Governance and deployment approaches
 

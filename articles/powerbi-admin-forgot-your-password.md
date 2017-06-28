@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="06/28/2017"
    ms.author="asaxton"/>
+
 # Forgot your password for Power BI?
 
 If you've forgotten your password, you can use the following link to request a password reset.
@@ -33,4 +34,4 @@ If you are still having issues accessing your account you can try contacting the
 
 > [AZURE.NOTE] Please note, support is provided during the eastern standard time (EST) time zone. Support is provided during business hours and currently only supported in English.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
