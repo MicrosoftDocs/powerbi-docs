@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/28/2017"
+   ms.date="06/30/2017"
    ms.author="mihart"/>
 
 # Working with tables in Power BI reports and dashboards (Tutorial)
@@ -61,7 +61,23 @@ To follow along, sign in to Power BI and select **Get Data > Samples > Retail An
      ![](media/powerbi-service-tutorial-tables/PBI_PinTile.png)
 
 ## Format the table
-There are many many ways to format a table and we'll only cover a few of them here. A great way to learn about the other formatting options is to open the Formatting pane (Paint roller icon) and explore.
+There are many many ways to format a table and we'll only cover a few of them here. A great way to learn about the other formatting options is to open the Formatting pane (paint roller icon ![](media/powerbi-service-tutorial-tables/power-bi-format.png)) and explore.
+
+- Try formatting the table grid. Here we've added a blue vertical grid, added space to the rows, increased the outline and text size a bit.
+
+    ![](media/powerbi-service-tutorial-tables/power-bi-table-grid.png)
+
+    ![](media/powerbi-service-tutorial-tables/power-bi-table-grid2.png)
+
+- For the column headers we changed the background color, added an outline, and increased the font size. 
+
+    ![](media/powerbi-service-tutorial-tables/power-bi-table-column.png)
+
+    ![](media/powerbi-service-tutorial-tables/power-bi-table-column2.png)
+
+- And after some additional formatting, here is our final table. Since there are so many formatting options, the best way to learn is to start with a plain table, open the Formatting pane  ![](media/powerbi-service-tutorial-tables/power-bi-format.png) , and start exploring. 
+
+    ![](media/powerbi-service-tutorial-tables/power-bi-table-format.png)
 
 ###    Conditional formatting
 One type of formatting is referred to as *conditional formatting* and is applied to fields in the **Values** well of the **Visualizations** pane in Power BI service or Desktop. 

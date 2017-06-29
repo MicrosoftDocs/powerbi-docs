@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/28/2017"
+   ms.date="06/30/2017"
    ms.author="mihart"/>
 
 # Subscribe to a Power BI report or dashboard
@@ -48,16 +48,11 @@ Watch Sirui set up an email subscription for a report. Then follow the step-by-s
 
     ![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-dashboard-new.png)
 
-5.  Select **Save and close** to save the subscription. You will receive an email snapshot of the dashboard each time the data changes (a tile is added or removed, the dashboard itself is refreshed). If the dashboard doesn't refresh, you will not receive a snapshot email that day.  If the dashboard refreshes more than once a day, you will only receive the email snapshot after the first refresh.
+5.  Select **Save and close** to save the subscription. You will receive an email snapshot of the dashboard each time any of the underlying datasets change. If the dashboard refreshes more than once a day, you will only receive the email snapshot after the first refresh.
 
     ![](media/powerbi-service-subscribe-to-report/power-bi-dashboard-email-new.png)
 
-    > [AZURE.TIP] Want to see the email right away? Trigger an email by opening one of the datasets associated with the dashboard and selecting **Refresh now**. If you don’t have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.
-    >
-    > ![](media/powerbi-service-subscribe-to-report/power-bi-refresh-now.png)
-
-    > [AZURE.TIP]
-    > To find out which datasets are being used to create the dashboard, from the dashboard, select the **View related** icon ![](media/powerbi-service-subscribe-to-report/power-bi-view-related.png)
+    > [AZURE.TIP] Want to see the email right away? Trigger an email by refreshing one of the datasets associated with the dashboard. (If you don't have edit permissions to the dataset, you will have to ask someone who has those permissions to do this for you.) To find out which datasets are being used to create the dashboard, from the dashboard, select the **View related** icon ![](media/powerbi-service-subscribe-to-report/power-bi-view-related.png) to open **Related content** and then select the refresh icon  ![](media/powerbi-service-subscribe-to-report/power-bi-refresh.png). 
 
     ![](media/powerbi-service-subscribe-to-report/power-bi-view-related-screen.png)
 
@@ -123,4 +118,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 - Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that have not been visited in more than 2 months.  However, if you add a subscription to a dashboard or report, it will not be paused even if it goes unvisited.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
+## Next steps    
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)    
+- [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
