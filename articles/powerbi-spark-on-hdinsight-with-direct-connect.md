@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="06/28/2017"
    ms.author="asaxton"/>
 
 # Spark on HDInsight with DirectQuery

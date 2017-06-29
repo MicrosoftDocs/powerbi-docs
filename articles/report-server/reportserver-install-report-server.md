@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2017"
+   ms.date="06/28/2017"
    ms.author="asaxton"/>
 
 # Install Power BI Report Server
@@ -46,8 +46,6 @@ If you have purchased Power BI Premium, within the **Premium settings** tab of t
 Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
 
 ![](../media/powerbi-admin-premium-manage/pbirs-product-key-dialog.png "Power BI Report Server product key")
-
-For more information, see [Install Power BI Report Server](report-server/reportserver-install-report-server.md).
 
 #### SQL Server Enterprise Software Assurance (SA)
 
@@ -156,6 +154,7 @@ You need to open up the TCP port that you have configured for your Web Service U
 ## Next steps
 
 [Administrator handbook](reportserver-admin-handbook-overview.md)  
+[How to find your report server product key](reportserver-find-product-key.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md)  
 [Verify a reporting services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  

@@ -17,15 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="06/28/2017"
    ms.author="asaxton"/>
+
 # Closing your Power BI Account
 
 If you don't want to use Power BI any longer, you can ask us to close your Power BI account.  After your account is closed, you can no longer sign in to Power BI.  Also, any customer data you uploaded, or created, in Power BI is deleted according to the data retention policy in the Power BI Terms of Service.
 
-## Power BI (free) or individual Power BI Pro users
+## Individual Power BI users
 
-If you have a free account, or are paying for the individual Power BI Pro subscription, you close your account from the settings screen.
+You can close your account from the settings screen.
 
 1. Select the gear ![](media/powerbi-admin-closing-your-account/gear.png) in the upper right.
 
@@ -55,4 +56,4 @@ You will need to contact your tenant admin and ask them to unassign the license 
 
 ![](media/powerbi-admin-closing-your-account/closeaccountmanaged.png)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

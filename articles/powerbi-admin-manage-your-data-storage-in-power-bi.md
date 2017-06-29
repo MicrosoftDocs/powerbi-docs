@@ -1,6 +1,6 @@
 ﻿<properties 
-   pageTitle="Manage your data capacity (storage)"
-   description="Manage your data capacity and storage in Power BI"
+   pageTitle="Manage your data storage"
+   description="Learn how you can manage your individual, or app workspace, data storage to make sure you can continue to publish reports and datasets."
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -17,25 +17,23 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="06/28/2017"
    ms.author="asaxton"/>
-# Manage your data capacity (storage)
+# Manage your data storage
 
+Learn how you can manage your individual, or app workspace, data storage to make sure you can continue to publish reports and datasets.
 
+Users and app workspaces have their own data capacities
 
-Power BI offers two licenses, Power BI (free) and Power BI Pro, with different data capacity limits:
+-   Free and Pro users have a maximum 10 GB data storage.
 
--   Free users have a maximum 1 GB data capacity.
+-   Pro users can create app workspaces, with a maximum 10 GB data storage each.
 
--   Pro users of Power BI Pro have 10 GB maximum capacity.
-
--   Pro users can create groups, with a maximum 10 GB data capacity each.
-
-At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and groups in the tenant. 
+At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and app workspaces in the tenant.
 
 Read about other features of the [Power BI pricing model](https://powerbi.microsoft.com/pricing).
 
-Included in your data capacity are your own datasets and Excel reports, and those that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to, including Power BI Desktop files and Excel workbooks you’re using. The following are also included in your data capacity.
+Included in your data storage are your own datasets and Excel reports, and those that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to, including Power BI Desktop files and Excel workbooks you’re using. The following are also included in your data capacity.
 
 -   Excel ranges pinned to dashboard.
 
@@ -48,13 +46,13 @@ The size of a dashboard that you share will vary depending on what is pinned to 
 <a name="manage"/>
 ## Manage items owned by you
 
-See how much data capacity you’re using in your Power BI account, and manage your account.
+See how much data storage you’re using in your Power BI account, and manage your account.
 
-1.  To manage your own storage, go to **My Workspace** at the top of the left navigation pane. 
+1. To manage your own storage, go to **My Workspace** on the left navigation pane.
 
     ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_MyWorkspace.png)
 
-2.  Select the gear icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png) in the upper-right corner \> **Manage Personal Storage**. 
+2. Select the gear icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png) in the upper-right corner \> **Manage personal storage**.
 
     The top bar shows how much of your storage limit you’ve used.
 
@@ -62,21 +60,20 @@ See how much data capacity you’re using in your Power BI account, and manage y
 
     The datasets and reports are separated onto two tabs:
 
-    **Owned by Me:** These are reports and datasets you’ve uploaded to your Power BI account, including service datasets such as Salesforce and Dynamics CRM.
+    **Owned by Me:** These are reports and datasets you’ve uploaded to your Power BI account, including service datasets such as Salesforce and Dynamics CRM.  
 	**Owned by Others:** Others have shared these reports and datasets with you.
 
-3.  To delete a dataset or report, select the trash can icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_DeleteIcon.png).
-
+3. To delete a dataset or report, select the trash can icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_DeleteIcon.png).
 
 Keep in mind that you or someone else may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
 
-## Manage your group
+## Manage your app workspace
 
-1.  Select the arrow next to **My Workspace** \> select the name of the group.
+1. Select the arrow next to **Workspaces** \> select the name of the app workspace.
 
     ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GroupWorkspaces.png)
 
-2.  Select the gear icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png) in the upper-right corner \> **Manage Group Storage**.
+2. Select the gear icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png) in the upper-right corner \> **Manage group storage**.
 
     The top bar shows how much of the group’s storage limit is used.
 
@@ -87,8 +84,9 @@ Keep in mind that you or someone else may have reports and dashboards based on a
     **Owned by Us:** These are reports and datasets you or someone else has uploaded to the group’s Power BI account, including service datasets such as Salesforce and Dynamics CRM.
 	**Owned by Others:** Others have shared these reports and datasets with your group.
 
-3.  To delete a dataset or report, select the trash can icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_DeleteIcon.png).
-	>**Note:** Any member of the group has permissions to delete datasets and reports from the group storage.
+3. To delete a dataset or report, select the trash can icon ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_DeleteIcon.png).
+
+    > [AZURE.NOTE] Any member, with edit permissions, of an app workspace has permissions to delete datasets and reports from the app workspace.
 
 Keep in mind that you or someone else in the group may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
 
@@ -107,15 +105,9 @@ When you select the gear icon ![](media/powerbi-admin-manage-your-data-storage-i
 You will also see this indicated within **Manage personal storage**.
 
  ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
- 
- When you try to perform an action that will hit one of the limits, you will see a prompt indicating you are over the limit. For free users, you will have an opportunity to try Pro. Both free and pro users will be able to [manage](#manage) their storage.
- 
- **Free dialog**
- 
- ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/powerbi-free-over-limit.png)
- 
- **Pro dialog** 
- 
+
+ When you try to perform an action that will hit one of the limits, you will see a prompt indicating you are over the limit. You will be able to [manage](#manage) your storage to reduce your storage amount and get past the limit.
+
  ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- More questions? [Try the Power BI Community](http://community.powerbi.com/)
+ More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
