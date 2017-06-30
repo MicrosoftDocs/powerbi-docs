@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/30/2017"
    ms.author="asaxton"/>
    
 # Purchasing Power BI Pro
@@ -27,6 +27,7 @@ Power BI Pro is for those users publishing reports, sharing dashboards, collabor
 * Analyze data in Excel or Power BI Desktop
 * Share with Excel Web App support
 * Share dashboards and collaborate with app workspaces
+* View shared content
 * Integrate content with Microsoft Teams
 
 IT Admins have a few options to use Power BI Pro within your organization. You can purchase Power BI Pro through the Office 365 admin center or through your Microsoft representative or partner. This article will look at the two trial options available for Power BI Pro, and then how to purchase as an organization.
@@ -54,7 +55,6 @@ Then you can select **Start trial**.
 
 > **Notes**
 >
->- If you need more time to evaluate Power BI, you can request to extend your trial period for 60 more days.
 >- Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
 >- If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md).
 
