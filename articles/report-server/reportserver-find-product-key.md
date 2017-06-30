@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/28/2017"
+   ms.date="06/30/2017"
    ms.author="asaxton"/>
 
 # How to find your report server product key
@@ -44,7 +44,9 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/). Look under the latest service pack, for the latest version of SQL Server. If you don't see it there, look under the RTM release of the latest SQL Server version.
 
-![](media/reportserver-find-product-key/vlsc.png "Volume License Service Center")
+> [AZURE.NOTE] You need to look under the download section. Not the keys section.
+
+![](media/reportserver-find-product-key/vlsc-download.png "Volume Licensing Service Center")
 
 ## Next steps
 
