@@ -20,15 +20,15 @@
    ms.date="07/03/2017"
    ms.author="jaimeta"/>
 
-# Changelog Power BI Report Server 
+# Changelog for Power BI Report Server 
 
-## Build 14.0.600.298
+## Udpate (Build 14.0.600.301)
 
 ### Bug Fixes
 - The {{UserId}} tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
 - Some images fail to render in Power BI Report Server reports
 - Unable to change the name of a Power BI Report in the Power BI Report Server
-
+- Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
 
 ## June 2017 (Build 14.0.600.271)
 - Power BI Server initial release
