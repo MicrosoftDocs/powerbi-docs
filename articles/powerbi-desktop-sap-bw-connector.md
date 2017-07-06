@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/05/2017"
+   ms.date="07/06/2017"
    ms.author="davidi"/>
 
 # Use the SAP BW Connector in Power BI Desktop
@@ -39,7 +39,7 @@ To use the **SAP BW Connector**, go through the following installation steps:
 
 ## SAP BW Connector features
 
-The **SAP BW Connector** preview in Power BI Desktop lets users import data from their **SAP Business Warehouse Server** cubes. You must specify a *Server*, *System Number* and *Client ID* to establish the connection.
+The **SAP BW Connector** preview in Power BI Desktop lets users import data from their **SAP Business Warehouse Server** cubes. You can also use DirectQuery with the **SAP BW Connector**. You must specify a *Server*, *System Number* and *Client ID* to establish the connection.
 
 ![](media/powerbi-desktop-sap-bw-connector/SAP_BW_3a.png)
 
