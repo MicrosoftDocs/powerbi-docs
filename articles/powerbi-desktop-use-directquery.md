@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2017"
+   ms.date="07/07/2017"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  
@@ -25,17 +25,9 @@
 With **Power BI Desktop**, when you connect to your data source, it is always possible to import a copy of the data into the **Power BI Desktop**. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
 
 ## Supported Data Sources  
-The following data sources are currently supported:  
 
--   SQL Server
--   Azure SQL Database
--   Azure SQL Data Warehouse
--   [SAP HANA](powerbi-desktop-sap-hana.md)
--   [Oracle Database](powerbi-desktop-directquery-for-oracle-teradata.md)
--   [Teradata Database](powerbi-desktop-directquery-for-oracle-teradata.md)
--   [Amazon Redshift (Preview)](powerbi-desktop-connect-redshift.md)
--   [Impala (Preview)](powerbi-desktop-connect-impala.md)
--   [Snowflake (Preview)](powerbi-desktop-connect-snowflake.md)
+For a full listing of data sources that support **DirectQuery**, see [Data sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md).
+
 
 ## How to Connect using DirectQuery  
 When you use **Get Data** to connect to a data source supported by **DirectQuery**, the connection window lets you select how you want to connect.  
@@ -116,3 +108,17 @@ Power BI displays the **Settings** window. From there, select the **Datasets** t
 Until credentials are supplied, opening a published report or exploring a dataset created with a **DirectQuery** connection to **Azure SQL Database** or **Azure SQL Data Warehouse** results in an error.
 
 For data sources other than **Azure SQL Database** or **Azure SQL Data Warehouse** that use DirectQuery, and Enterprise Gateway must be installed and the data source must be registered to establish a data connection. You can [learn more about Enterprise Gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+
+## More Information
+
+For more information about **DirectQuery**, check out the following resources:
+
+-   [DirectQuery in Power BI](powerbi-desktop-directquery-about.md)
+
+-   [Data sources supported by DirectQuery](powerbi-desktop-directquery-data-sources.md)
+
+-   [DirectQuery and SAP BW](powerbi-desktop-directquery-sap-bw.md)
+
+-   [DirectQuery and SAP HANA](powerbi-desktop-directquery-sap-hana.md)
+
+-   [On-premises data gateway](powerbi-gateway-onprem.md)
