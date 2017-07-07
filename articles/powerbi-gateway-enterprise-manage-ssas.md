@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/05/2017"
+ms.date="07/06/2017"
 ms.author="davidi"/>
 # Manage your data source - Analysis Services
 
@@ -194,7 +194,7 @@ To create a mapping rule, enter a value for **Original name** and **New Name** a
 
 |Field|Description
 |---|---|
-|Replace (Orignal name)|The email address that you signed into Power BI with.|
+|Replace (Original name)|The email address that you signed into Power BI with.|
 |With (New Name)|The value you want to replace it with. The result of the replacement is what will be passed to the *EffectiveUserName* property for the Analysis Services connection.|
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-effective-user-names.png)
