@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="07/06/2017"
    ms.author="davidi"/>
 
 # Data sources supported by DirectQuery
@@ -26,20 +26,19 @@
 
 The following data sources support DirectQuery in Power BI:
 
--   SQL Server
+-   Amazon Redshift
+-   Azure HDInsight Spark (Beta)
 -   Azure SQL Database
 -   Azure SQL Data Warehouse
--   SAP HANA
--   Oracle Database (version 12 and above)
--   Teradata Database
--   Amazon Redshift
--   Impala (version 2.x)
--   Snowflake (Preview)
--   Spark (Beta)  (version 0.9 and above)
--   Azure HDInsight Spark (Beta)
 -   IBM Netezza (Beta)
+-   Impala (version 2.x)
+-   Oracle Database (version 12 and above)
 -   SAP Business Warehouse (Beta)
-
+-   SAP HANA
+-   Snowflake
+-   Spark (Beta)  (version 0.9 and above)
+-   SQL Server
+-   Teradata Database
 
 Data sources that are have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that  that opening a published report or exploring the dataset can result in an error.
 
