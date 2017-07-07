@@ -20,9 +20,10 @@
    ms.date="07/03/2017"
    ms.author="jaimeta"/>
 
-# Changelog for Power BI Report Server 
+# Changelog for Power BI Report Server
 
-## Udpate (Build 14.0.600.301)
+## June 2017 (Build 14.0.600.301)
+Released: July 10, 2017
 
 ### Bug Fixes
 - The {{UserId}} tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
@@ -31,4 +32,6 @@
 - Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
 
 ## June 2017 (Build 14.0.600.271)
+Released: June 12, 2017
+
 - Power BI Server initial release
