@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2017"
+   ms.date="07/07/2017"
    ms.author="asaxton"/>
 
 # How to embed your Power BI dashboards, reports and tiles
@@ -86,18 +86,18 @@ You will need to register an application within Azure AD and grant permissions t
 
 #### Register an application
 
-You will first need to register the application with Azure AD. While this can be done with the Azure AD portal, we have created a web page you can use to quickly register the app. Depending on who you are embedding content for will determine what items you want to select for the application. If you will be embedding for non-Power BI users, the app type must by **Native**.
+You will first need to register the application with Azure AD. While this can be done with the Azure AD portal, we have created a web page you can use to quickly register the app. Depending on who you are embedding content for will determine what items you want to select for the application. If you will be embedding for non-Power BI users (app owns data), the app type must by **Native**.
 
 |Embedding for|Application type|
 |---------|---------|---------|
-|Power BI users|Server-side Web app or Native app|
-|Non-Power BI users|Native app|
+|Power BI users (User owns data)|Server-side Web app or Native app|
+|Non-Power BI users (App owns data)|Native app|
 
 For steps on how to register the applications, see [Register an application](powerbi-developer-register-app.md).
 
 #### Apply permissions to your application
 
-> [AZURE.IMPORTANT] This section only applies to applications that are embedding content for *non-Power BI* users.
+> [AZURE.IMPORTANT] This section only applies to applications that are embedding content for non-Power BI users (app owns data).
 
 You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure AD portal, or programmatically.
 
