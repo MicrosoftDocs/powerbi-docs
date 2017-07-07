@@ -1,23 +1,23 @@
-﻿<properties 
+﻿<properties
    pageTitle="Troubleshooting scheduled refresh for Azure SQL Databases"
    description="Troubleshooting scheduled refresh for Azure SQL Databases in Power BI"
-   services="powerbi" 
-   documentationCenter="" 
-   authors="guyinacube" 
-   manager="mblythe" 
+   services="powerbi"
+   documentationCenter=""
+   authors="guyinacube"
+   manager="mblythe"
    backup=""
    editor=""
    tags=""
    qualityFocus="no"
    qualityDate=""/>
- 
+
 <tags
    ms.service="powerbi"
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="07/07/2017"
    ms.author="davidi"/>
 
 # Troubleshooting scheduled refresh for Azure SQL Databases in Power BI  
