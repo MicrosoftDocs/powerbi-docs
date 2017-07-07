@@ -101,15 +101,12 @@ To open your existing migration plan, do the following.
 
 The **Analyze & Plan Migration** tab gives you a view of what is currently in your Azure subscription’s resource group.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-plan-migration.png)
 
-We will look at the *SageResourceGroup* as an example.
+We will look at the *SampleResourceGroup* as an example.
 
 ### PaaS Topology
 
 This is a listing of your *Resource Group > Workspace collections > Workspaces*. The resource group and workspace collections will show a friendly name. The workspaces will show a GUID.
-
-![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-paas-topology.png)
 
 The items in the list will also display a color and a number in the format of (#/#). This indicates the number of reports that can be downloaded. 
 A black color means that all reports can be downloaded.
@@ -128,7 +125,6 @@ The reports section will list out the reports available and indicates whether it
 
 The migration plan section is where you tell the tool where things will be downloaded to and how to upload them.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-migration.png)
 
 #### Download Plan
 A path will automatically be created for you. You can change this path if you wish. If you do change the path, you will need to select **Generate PBIX Paths**.
@@ -165,8 +161,6 @@ You have two options.
 ![](media/powerbi-developer-migrate-tool/migrate-tool-download-options.png)
 
 For a successful download, you will see a status of *Done* and it will reflect that the PBIX file exists.
-
-![](media/powerbi-developer-migrate-tool/migrate-tool-download-done.png)
 
 After the download is completed, select the **Create Groups** tab.
 
@@ -214,14 +208,14 @@ In the above example, one of the cloned reports failed indicating a report with 
 
 ```
 <ReportMigrationData>
-    <PaaSWorkspaceCollectionName>SageBugBashWC</PaaSWorkspaceCollectionName>
+    <PaaSWorkspaceCollectionName>SampleWorkspaceCollection</PaaSWorkspaceCollectionName>
     <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
     <PaaSReportId>525a8328-b8cc-4f0d-b2cb-c3a9b4ba2efe</PaaSReportId>
     <PaaSReportLastImportTime>1/3/2017 2:10:19 PM</PaaSReportLastImportTime>
     <PaaSReportName>cloned</PaaSReportName>
     <IsPushDataset>false</IsPushDataset>
     <IsBoundToOldDataset>false</IsBoundToOldDataset>
-    <PbixPath>C:\MigrationData\SageResourceGroup\SageBugBashWC\4c04147b-d8fc-478b-8dcb-bcf687149823\cloned-525a8328-b8cc-4f0d-b2cb-c3a9b4ba2efe.pbix</PbixPath>
+    <PbixPath>C:\MigrationData\SampleResourceGroup\SampleWorkspaceCollection\4c04147b-d8fc-478b-8dcb-bcf687149823\cloned-525a8328-b8cc-4f0d-b2cb-c3a9b4ba2efe.pbix</PbixPath>
     <ExportState>Done</ExportState>
     <LastExportStatus>OK</LastExportStatus>
     <SaaSTargetGroupName>SampleMigrate</SaaSTargetGroupName>
