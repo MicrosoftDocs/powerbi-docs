@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/06/2017"
+ms.date="07/07/2017"
 ms.author="davidi"/>
 # Manage your data source - Analysis Services
 
@@ -181,7 +181,7 @@ How to configure your gateway to perform the AD Lookup:
 
         Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
-4.      Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
+4.  Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
 
     ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names_03.png)
 
