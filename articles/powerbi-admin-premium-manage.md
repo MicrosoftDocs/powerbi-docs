@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="07/11/2017"
    ms.author="asaxton"/>
 
 # Manage Power BI Premium
@@ -26,6 +26,8 @@ Learn how you can manage Power BI Premium and enable access to content for your 
 ![](media/powerbi-admin-premium-manage/premium-capacity-management.png)
 
 The Power BI Premium offering introduces the concept of Premium capacity, and it is the heart of the offering.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/0Cy1V6LYjng?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## What is Power BI Premium capacity?
 
