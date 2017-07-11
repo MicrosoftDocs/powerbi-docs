@@ -1,6 +1,6 @@
 <properties
    pageTitle="Changelog for Power BI Report Server"
-   description="Changelog, Power BI Report Server "
+   description="This change log is for Power BI Report Server and lists new items along with bug fixes for each released build."
    services="powerbi"
    documentationCenter=""
    authors="jaimeta"
@@ -22,9 +22,9 @@
 
 # Changelog for Power BI Report Server
 
-This change log is for Power BI Report Server.
+This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
-For detailed posts about what’s new and changed, please visit the SSDT Team blog
+For detailed information about new features, see [What's new in Power BI Report Server](reportserver-whats-new.md).
 
 ## June 2017 (Build 14.0.600.301)
 
