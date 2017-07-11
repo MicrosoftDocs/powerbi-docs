@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/30/2017"
+   ms.date="07/11/2017"
    ms.author="mihart"/>
 
 # Working with tables in Power BI reports and dashboards (Tutorial)
@@ -44,7 +44,7 @@ To follow along, sign in to Power BI and select **Get Data > Samples > Retail An
 
 1. In **My workspace**, select the Datasets tab, and scroll down to the Retail Analysis Sample dataset you just added.  Select the **Create report** icon.
 
-   ![](media/powerbi-service-tutorial-tables/power-bi-create-report.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-create-report.png)
 
 2. In the report editor, select **Item** > **Category**.  Power BI automatically creates a table that lists all the categories.
 
@@ -98,11 +98,11 @@ With conditional formatting for tables, you can specify customized cell backgrou
 
 3. Add a new field to the table that has both positive and negative values.  Select **Sales > Total Sales Variance**. 
 
-   ![](media/powerbi-service-tutorial-tables/power-bi-conditional-formatting2.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-conditional-formatting2.png)
 
 4. Add data bar conditional formatting by selecting the down-arrow beside **Total Sales Variance** and choosing **Conditional formatting > Data bars**.
 
-   ![](media/powerbi-service-tutorial-tables/power-bi-conditional-formatting-data-bars.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-conditional-formatting-data-bars.png)
 
 5. In the dialog that appears, set colors for **Positive bar**, **Negative bar**, place a checkmark next to **Show bar only**, and make any other changes you'd like.
     
