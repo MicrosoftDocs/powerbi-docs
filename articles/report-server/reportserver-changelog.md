@@ -3,7 +3,7 @@
    description="This change log is for Power BI Report Server and lists new items along with bug fixes for each released build."
    services="powerbi"
    documentationCenter=""
-   authors="jaimeta"
+   authors="jtarquino"
    manager="jonhp"
    backup="asaxton"
    editor=""
