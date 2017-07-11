@@ -30,10 +30,6 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 *Released: July 11, 2017*
 
-### What's new?
-
-- Machine key information now stored within the rsreportserver.config. For more information, see [How to install custom security extensions](https://docs.microsoft.com/sql/reporting-services/extensions/security-extension/how-to-install-custom-security-extensions#machine-keys).
-
 ### Bug Fixes
 
 - The {{UserId}} tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
