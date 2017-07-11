@@ -23,7 +23,7 @@
 # Changelog for Power BI Report Server
 
 ## June 2017 (Build 14.0.600.301)
-Released: July 10, 2017
+Released: July 11, 2017
 
 ### Bug Fixes
 - The {{UserId}} tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
