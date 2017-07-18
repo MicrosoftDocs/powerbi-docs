@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="06/30/2017"
    ms.author="mihart"/>
 
 # Data alerts in Power BI service
@@ -114,7 +114,7 @@ There are three ways to manage your alerts: From the dashboard tile itself, from
 
 -  Alerts only work on data that is refreshed. They do not work on static data.
 
-- Alerts do not work with tiles that contain streaming data.
+- Alerts do not work with tiles that link directly to an Azure Stream Analytic dashboard.
 
 ## Next steps
 

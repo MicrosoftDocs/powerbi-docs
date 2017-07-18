@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/21/2017"
+ms.date="07/07/2017"
 ms.author="davidi"/>
 # Manage your data source - Analysis Services
 
@@ -124,13 +124,24 @@ The result will look similar to an email address, but this is the UPN that is on
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
+You can map user names for Analysis Services in two different ways:
+
+1. Manual user re-mapping 
+2. On-premises Active Directory Property Lookup to remap AAD UPNs to Active Directory users (AD Lookup mapping)
+
+While it's possible to perform manual mapping using the second approach, doing so would be time consuming and difficult to maintain; it's especially difficult when pattern matching doesn't suffice--such as when domain names are different between AAD and on-premises AD, or when user account names are different between AAD and AD. As such, manual mapping with the second approach is not recommended.
+
+We describe these two approaches, in order, in the following two sections
+
+### Manual user name re-mapping
+
 For Analysis Services data sources, you can configure custom User Principal Name (UPN) rules. This will help you if your Power BI service login names do not match your local directory UPN. For example, if you sign into Power BI with john@contoso.com, but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
 
 To get to the UPN Mapping screen, do the following.
 
 1. Go to the **gear icon** and select **Manage Gateways**.
 
-2. Expand the gateway that contains the Analysis Services data source. Of, if you haven't created the Analysis Services data source, you can do that at this point.
+2. Expand the gateway that contains the Analysis Services data source. Or, if you haven't created the Analysis Services data source, you can do that at this point.
 
 3. Select the data source and then select the **Users** tab.
 
@@ -140,7 +151,42 @@ To get to the UPN Mapping screen, do the following.
 
 You will then see options to add rules as well as test for a given user.
 
-> [AZURE.NOTE] You may inadvertantly change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.com would be sent as v-dave*@contoso.local*.
+> [AZURE.NOTE] You may inadvertently change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.com would be sent as v-dave*@contoso.local*.
+
+### AD lookup mapping
+
+To perform on-premises AD property lookup to re-map AAD UPNs to Active Directory users, follow the steps in this section. To begin with, let's review how this works.
+
+In the **Power BI service** the following occurs:
+
+1.  For each query by a Power BI AAD user to an on-premises SSAS server, a UPN string is passed along, such as: 
+        firstName.lastName@contoso.com
+
+
+>   **Note:** Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* sending the user name string to the on-premises data gateway.
+
+On the On-Premises Data Gateway with configurable Custom User Mapping, do the following:
+
+1.  Find Active Directory to search (automatic, or configurable)
+2.  Look up the attribute of the AD Person (such as *Email*) based on incoming UPN string (“firstName.lastName@contoso.com”) from the **Power BI service**.
+3.  If the AD Lookup fails, it attempts to use the passed-along UPN as EffectiveUser to SSAS.
+4.  If the AD Lookup succeeds, it retrieves *UserPrincipalName* of that AD Person. 
+5.  It passes the *UserPrincipalName* email as *EffectiveUser* to SSAS, such as: *Alias@corp.on-prem.contoso*
+
+How to configure your gateway to perform the AD Lookup:
+
+1.  Download and install the latest gateway
+2.  In the gateway, you need to change the **On-premises Data Gateway Service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the Gateway service for the change to take effect.  Go to the Gateway app on your machine (search for “on-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
+3.  Navigate to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write-permissions, and edit the following file:
+
+        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
+
+4.  Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
+
+    ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names_03.png)
+
+5.  Restart the **On-premises Data Gateway** service for the configuration change to take effect.
+
 
 ### Working with mapping rules
 
@@ -148,7 +194,7 @@ To create a mapping rule, enter a value for **Original name** and **New Name** a
 
 |Field|Description
 |---|---|
-|Replace (Orignal name)|The email address that you signed into Power BI with.|
+|Replace (Original name)|The email address that you signed into Power BI with.|
 |With (New Name)|The value you want to replace it with. The result of the replacement is what will be passed to the *EffectiveUserName* property for the Analysis Services connection.|
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-effective-user-names.png)

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2017"
+   ms.date="06/30/2017"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations
@@ -48,14 +48,16 @@ If you have access to the dataset that is being used to create the map visualiza
 
 **1. Categorize geographic fields in Power BI Desktop**
 
-In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. Select the desired table, go to the **Advanced** ribbon and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **Country**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md).
+In Power BI Desktop, you can ensure fields are correctly geo-coded by setting the *Data Category* on the data fields. Select the desired table, go to the **Advanced** ribbon and then set the **Data Category** to **Address**, **City**, **Continent**, **Country/Region**, **Country**, **Postal Code**, **State** or **Province**. These data categories help Bing correctly encode the date. To learn more, see [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md). If you are live connectig to SQL Server Analysis Services, you will need to set the data categorization outside of Power BI using [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 **2. Use more than one location column.**    
  Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Some designations are ambiguous because the location exists in multiple countries or regions. For example, there's a ***Southampton*** in England, Pennsylvania, and New York.
 
 Power BI uses Bing's [unstructured URL template service](https://msdn.microsoft.com/library/ff701714.aspx) to get the latitude and longitude coordinates based on a set of address values for any country. If your data doesn't contain enough location data, add those columns and categorize them appropriately.
 
- If you only have a City column, Bing may have a hard time geo-coding. Add additional geo columns to make the location unambiguous.  Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see #1 above.
+ For example, if you only have a City column, Bing may have a hard time geo-coding. Add additional geo columns to make the location unambiguous.  Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see #1 above.
+
+Make sure when each field only has the specific information tied to the categorization.  For example, your City location field should be **Southampton**, not **Southampton, New York**.  And Address location fields should be **1 Microsoft Way** and not **1 Microsoft Way, Redmond, WA**.
 
 **3. Use specific Latitude and Longitude**
 
@@ -63,6 +65,9 @@ Add latitude and longitude values to your dataset. This removes any ambiguity an
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
+**4. Use Place category for columns with full location information**
+
+While we encourage you to use geo-hierarchies in your maps, if you must use a single location column with full geographical information, you can set the data categorization to **Place**. For example, if the data in your column is full addresses, such as 1 Microsoft Way, Redmond Washington 98052, this generalized data category will work best with Bing. 
 
 ## In Power BI: tips to get better results when using map visualizations
 
@@ -80,7 +85,17 @@ When your dataset already has different levels of location data, you and your co
 
    ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-geo.gif)
 
+When drilling with geo-hierarchies, it is important to know how each drill button works and what gets sent to Bing Maps. 
+
+- The drill button on the far right, called Drill Mode ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-drill-down.png) , allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn Drill Down on and click North America, you move down in the hierarchy to the next level -- states in North America. For geo-coding, Power BI sends Bing Maps country and state data for North America only.  
+
+- On the left there are 2 other drill options. The first option, ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-drill-down2.png) , drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
+
+- The second option, ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-drill-down3.png) , is similar to Drill Down, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level’s context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the Drill Down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
+
 ## See also
+
+[Drill down in a Power BI visualization](powerbi-service-drill-down-in-a-visualization.md)
 
 [Power Bi visualizations](powerbi-service-visualizations-for-reports.md)
 
