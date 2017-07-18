@@ -34,4 +34,4 @@ Released: July 11, 2017
 ## June 2017 (Build 14.0.600.271)
 Released: June 12, 2017
 
-- Power BI Server initial release
+- Power BI Report Server initial release
