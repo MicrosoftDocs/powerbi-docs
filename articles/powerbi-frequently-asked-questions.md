@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="07/17/2017"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -76,12 +76,16 @@ Yes, non-profit pricing is available when purchasing directly from Microsoft. Yo
 
 ## Is Power BI available on-premises?
 
-No, the Power BI service is not available as a private, internal cloud service. However, with Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises Data Gateway](powerbi-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](powerbi-personal-gateway.md).
+The Power BI service [https://powerbi.com](https://powerbi.com) isn't available as a private, internal cloud service. However, you have three other options for viewing and working with data on premises. 
 
-You can also view on-premises SQL Server mobile reports with the Power BI iOS apps:
+### On-premises data gateway
+With Power BI and Power BI Desktop, you can securely connect to your own on-premises data sources. With the [On-premises Data Gateway](powerbi-gateway-onprem.md), you can connect live to your on-premises SQL Server Analysis Services server, and other data sources. You can also set scheduled refresh with a centralized gateway. If a gateway is not available, you can refresh data from on-premises data sources using the [Power BI Gateway - Personal](powerbi-personal-gateway.md).
 
--   [SQL Server mobile reports on iPad and iPhone](powerbi-mobile-iphone-kpis-mobile-reports.md).
+### Power BI Report Server
+Power BI Report Server is a solution that you deploy on your own premises for creating, publishing, and managing reports, then delivering them to different users in different ways: in a web browser, on their mobile device, or as an email in their in-box. Read more about [Power BI Report Server](report-server/reportserver-get-started.md).
 
+### Power BI mobile apps
+You can also [view on-premises Power BI reports, Reporting Services mobile reports, and KPIs with the Power BI mobile apps](powerbi-mobile-iphone-kpis-mobile-reports.md).
 
 ## Does Power BI support mobile devices?
 
@@ -140,6 +144,7 @@ The following resources are available to help get your started:
 -  [Get started with Power BI](powerbi-service-get-started.md) article
 
 -  [Join our community](https://community.powerbi.com/) and ask questions
+- See [10 tips for getting help](powerbi-service-tips-for-getting-help.md) for more suggestions.
 
 ## What browsers does Power BI support?
 
