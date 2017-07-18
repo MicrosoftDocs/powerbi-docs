@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="07/18/2017"
    ms.author="asaxton"/>
 
 # Administrator handbook overview, Power BI Report Server
@@ -26,7 +26,7 @@ Welcome to the administrator handbook for Power BI Report Server, an on-premises
 
 ![](media/reportserver-admin-handbook-overview/admin-handbook.png)
 
-This handbook will help you understand concepts on planning, deploying and managing yoru Power BI Report Server.
+This handbook will help you understand concepts on planning, deploying and managing your Power BI Report Server.
 
 ## Installing and migration
 

@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="monitoring"
-   qualityDate="05/31/2017"/>
+   qualityDate="07/18/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -150,6 +150,7 @@ In many cases, registering for Power BI can be achieved by following the simple 
 
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
 [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
+[Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
