@@ -41,7 +41,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 *Released: June 12, 2017*
 
-- Power BI Server initial release
+- Power BI Report Server initial release
 
 ## Next steps
 
