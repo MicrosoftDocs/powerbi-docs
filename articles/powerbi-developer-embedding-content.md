@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2017"
+   ms.date="07/19/2017"
    ms.author="asaxton"/>
 
 # How to embed your Power BI dashboards, reports and tiles
@@ -82,115 +82,11 @@ This account must be an admin of the app workspace that is being used for embedd
 
 ### <a name="appreg"></a> App registration and permissions
 
-You will need to register an application within Azure AD and grant permissions to that application when embedding content from Power BI. You will want to register the app using the *master* account that you created in the last step.
-
-#### Register an application
-
-You will first need to register the application with Azure AD. While this can be done with the Azure AD portal, we have created a web page you can use to quickly register the app. Depending on who you are embedding content for will determine what items you want to select for the application. If you will be embedding for non-Power BI users (app owns data), the app type must by **Native**.
-
-|Embedding for|Application type|
-|---------|---------|---------|
-|Power BI users (User owns data)|Server-side Web app or Native app|
-|Non-Power BI users (App owns data)|Native app|
-
-For steps on how to register the applications, see [Register an application](powerbi-developer-register-app.md).
-
-#### Apply permissions to your application
-
-> [AZURE.IMPORTANT] This section only applies to applications that are embedding content for non-Power BI users (app owns data).
-
-You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure AD portal, or programmatically.
-
-You will want to perform these steps with a tenant/organization admin. This would be a user in the Global admin role.
-
-##### Using the Azure AD Portal
-
-1. Browse to the [App registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
-
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions01.png)
-
-2. Select **Required permissions** under **API Access**.
-
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions02.png)
-
-3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
-
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions03.png)
-
-4. Within **Required permissions**, select **Power BI Service (Power BI)**.
-
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions05.png)
-
-    > [AZURE.NOTE] If you created the app directly in the Azure AD portal, **Power BI Servcie (Power BI)** may not be present. If it is not, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**. You can then continue to step 5.
-
-5. Select all permissions under **Delegated Permissions**. You will need to select them one by one in order to save the selections. Select **Save** when done.
-
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions06.png)
-
-6. Within **Required permissions**, select **Grant Permissions**.
-
-    This will give the app permissions on behalf of all users in the tenant/organization. If you don't want this, you will need to sign in internactively with your app ID to Azure AD at least once.
-
-    > [AZURE.NOTE] In order to give permission to all users in the tenant, this operation should be made by an account in the Global admin role. Otherwise the permission is only granted to the user that performed the step.
-
-    ![](media\powerbi-developer-embedding-content\powerbi-embedded-azuread-app-permissions07.png)
-
-##### Applying permissions programmatically
-
-1. You will need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
-
-    > [AZURE.NOTE] You can call the *Get servicePrincipal* api without {id} and it will get you all of the service principals within the tenant.
-
-2. Check for a service principal with you app client id as **appId** property.
-
-3. Create a new service plan if missing for your app.
-
-    ```
-    Post https://graph.microsoft.com/beta/servicePrincipals
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    {
-    "accountEnabled" : true,
-    "appId" : "{App_Client_ID}",
-    "displayName" : "{App_DisplayName}"
-    }
-    ```
-
-4. Grant App Permission to PowerBI API
-
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
-    "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
-
-5. Grant App Permission to AAD
-
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
-    "scope":"User.Read Directory.AccessAsUser.All",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
+You will need to register your application with Azure AD in order to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](powerbi-developer-register-app.md).
 
 ### Create app workspaces
 
-If you are embedding dashboards and reports for non-Power BI users, those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create and distribute an app in Power BI](powerbi-service-create-apps.md).
+If you are embedding dashboards and reports for non-Power BI users (app owns data), those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create and distribute an app in Power BI](powerbi-service-create-apps.md).
 
 > [AZURE.IMPORTANT] The *master* account, that was mentioned above, needs to be an admin of the app workspace.
 
@@ -200,9 +96,9 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 ## Step 2: Embed your content
 
-Within your application, you will need to authenticate with Power BI. If you are embedding content for non-Power BI users, this will require you to store the credentials for the *master* account within your application.
+Within your application, you will need to authenticate with Power BI. If you are embedding content for non-Power BI users, this will require you to store the credentials for the *master* account within your application. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md).
 
-Use the Power BI and JavaScript APIs to embed dashboards and reports into your application. For more information, see the following.
+After you have authenticationed, within your application, use the Power BI and JavaScript APIs to embed dashboards and reports into your application. For more information, see the following examples.
 
 - [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
 - [Integrate a tile into an app](powerbi-developer-integrate-tile.md)

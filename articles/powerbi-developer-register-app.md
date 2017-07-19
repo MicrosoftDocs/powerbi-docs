@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2017"
+   ms.date="07/19/2017"
    ms.author="asaxton"/>
 
-# Register an app to embed Power BI content
+# Register an Azure AD app to embed Power BI content
 
 Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
 
 You register your application with Azure AD to allow your application access to the Power BI REST APIs. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources.
 
-> [AZURE.IMPORTANT] Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the App registration will not complete successfully.
+> [AZURE.IMPORTANT] Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the app registration will not complete successfully.
 
 There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/) or you can do it directly within the Azure Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to your app, this can be done through the Azure Portal.
 
@@ -49,7 +49,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 5. Enter a value for **Redirect URL** and **Home Page URL**. Any valid URL will work.
 
-    > [AZURE.NOTE] **Home Page URL** is only available if you choose **Server-side Web app** for the applciation type.
+    **Home Page URL** is only available if you choose **Server-side Web app** for the applciation type.
 
 6. Choose the APIs that this application will have access to. For more information about Power BI access permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
 
@@ -57,11 +57,11 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 7. Select **Register App**.
 
-    You will then be provided with a **Client ID**. If you selected **Server-side Web app**, you will also receive a **Client Secret**. The **Client ID** can be retrieved from the Azure portal, at a later time, if needed. If you lost the **Client Secret**, you will need to create a new one within the Azure portal.
+    You will then be provided with a **Client ID**. If you selected **Server-side Web app**, you will also receive a **Client Secret**. The **Client ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Client Secret**, you will need to create a new one within the Azure portal.
 
-You can now used the registered application as part of your custom application to interact with the Power BI service.
+You can now use the registered application as part of your custom application to interact with the Power BI service.
 
-> [AZURE.NOTE] If you are embedding content for non-Power BI users (app owns data), you will need to configure additional permissions within 
+> [AZURE.IMPORTANT] If you are embedding content for non-Power BI users (app owns data), you will need to configure additional permissions within the Azure portal. For more information, see [Apply permissions to your application](#apply-permissions-to-your-application).
 
 ## Register with the Azure portal
 
@@ -73,14 +73,14 @@ Your other option for registering your application is to do so directly in the A
 
 3. Choose your Azure AD tenant by selecting your account in the top right corner of the page.
 
-4. In the left-hand navigation pane, choose **More Services**, select **App Registrations**, and select **New application registration**.
+4. In the left-hand navigation pane, choose **More Services**, select **App Registrations** under **Security + Identity** and select **New application registration**.
 
     ![](media/powerbi-developer-register-app/azuread-new-app-registration.png)
 
 5. Follow the prompts and create a new application.
 
-    * For Web Applications, provide the Sign-On URL, which is the base URL of your app, where users can sign in e.g http://localhost:12345.
-    * For Native Applications, provide a Redirect URI, which Azure AD uses to return token responses. Enter a value specific to your application, .e.g http://MyFirstAADApp
+    * For Web Applications, provide the Sign-On URL, which is the base URL of your app, where users can sign in e.g http://localhost:13526.
+    * For Native Applications, provide a Redirect URI, which Azure AD uses to return token responses. Enter a value specific to your application, .e.g http://myapplication/redirect
 
 For more information about how to register applications in Azure Active Directory, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 
@@ -98,15 +98,17 @@ Here's how to get a client id:
 
 4. Select the application that you want to retrieve the client id for.
 
-5. You will see **Application ID** listed with a GUID. This is the client id for the application.
+5. You will see **Application ID** listed as a GUID. This is the client id for the application.
 
-## Apply permissions to your application
+    ![Client ID listed as Application ID within app registration](media/powerbi-developer-register-app/powerbi-embedded-app-registration-client-id.png)
+
+## Apply permissions to your application within Azure AD
 
 > [AZURE.IMPORTANT] This section only applies to applications that are embedding content for non-Power BI users (app owns data).
 
 You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure AD portal, or programmatically.
 
-You will want to perform these steps with a tenant/organization admin. This would be a user in the Global admin role.
+You will want to be logged in with either the *master* account, used for embedding, or a Global Admin account.
 
 ### Using the Azure AD Portal
 
@@ -134,15 +136,15 @@ You will want to perform these steps with a tenant/organization admin. This woul
 
 6. Within **Required permissions**, select **Grant Permissions**.
 
-    > [AZURE.NOTE] The **Grant Permissions** action is needed for the *master account* to avoid being prompted for concent by Azure AD. If the account performing this action is a Global Admin, you will grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you will grant permissions only to the *master account* for this application.
+    The **Grant Permissions** action is needed for the *master account* to avoid being prompted for concent by Azure AD. If the account performing this action is a Global Admin, you will grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you will grant permissions only to the *master account* for this application.
 
-    ![](media/powerbi-developer-register-app/powerbi-embedded-azuread-app-grant-permissions.png)
+    ![Grant permissions within required permissions dialog](media/powerbi-developer-register-app/powerbi-embedded-azuread-app-grant-permissions.png)
 
 ### Applying permissions programmatically
 
 1. You will need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
-    > [AZURE.NOTE] You can call the *Get servicePrincipal* api without {id} and it will get you all of the service principals within the tenant.
+    You can call the *Get servicePrincipal* api without {id} and it will get you all of the service principals within the tenant.
 
 2. Check for a service principal with you app client id as **appId** property.
 
@@ -177,7 +179,11 @@ You will want to perform these steps with a tenant/organization admin. This woul
 
 5. Grant App Permission to AAD
 
-    > [AZURE.NOTE] The **Grant Permissions** action is needed for the *master account* to avoid being prompted for concent by Azure AD. If the account performing this action is a Global Admin, you will grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you will grant permissions only to the *master account* for this application.
+    The value for **concentType** will depend on the user performing the request. You can supply either **AllPrincipals** or **Principal**. **AllPrincipals** can only be used by an administrator to grant permission to all users. **Principal** is used to grant permission to a specific user. 
+
+    The permission grant is needed for the *master account* to avoid being prompted for concent by Azure AD. 
+
+    If you are using an existing tenant, and not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by replacing the value of **contentType** to **Principal**.
 
     ```
     Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
@@ -193,14 +199,8 @@ You will want to perform these steps with a tenant/organization admin. This woul
     }
     ```
 
-    If you are using an existing tenant, and not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by replacing the value of **contentType**.
-    
-
 ## Next steps
 
-[Embedding with Power BI](powerbi-developer-embedding.md)  
-[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)  
-[Power BI permissions](powerbi-developer-power-bi-permissions.md)  
-[Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+Now that you have registered your application within Azure AD, you will need to authenticate users within your application. You can have a look at [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md) to learn more.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
