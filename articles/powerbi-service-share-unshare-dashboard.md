@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/17/2017"
+   ms.date="07/18/2017"
    ms.author="maggies"/>
 
 # Share dashboards and reports with colleagues and others
@@ -173,7 +173,7 @@ Only the dashboard owner can turn resharing on and off.
 
 -   If colleagues haven't accepted your sharing invitation yet, cancel the invitation and invite them again without selecting **Allow recipients to share your dashboard**.
 
--   If they have accepted your sharing invitation, select **Access**, select the ellipsis (**...**) next to **Can view** and click **Stop sharing**.
+-   If they have accepted your sharing invitation, select **Access**, select the ellipsis (**...**) next to **Can view** and click **Disable reshares**.
 
     ![](media/powerbi-service-share-unshare-dashboard/pbi_stop_sharing.png)
 
@@ -181,5 +181,4 @@ Only the dashboard owner can turn resharing on and off.
 
 - [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md)
 - [Share a dashboard that links to an Excel file](powerbi-service-share-dashboard-that-links-to-excel.md)
-- [Get Started with Power BI](powerbi-service-get-started.md)
 - More questions? [Try the Power BI Community](http://community.powerbi.com/).
