@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="06/28/2017"
    ms.author="mihart"/>
 # Waterfall charts in Power BI (Tutorial)
 
@@ -44,27 +44,45 @@ Waterfall charts are a great choice:
 
 ## Create a waterfall chart
 
-To follow along, sign in to Power BI and select **Get Data \> Samples \> Retail Analysis Sample**. 
+We'll create a waterfall chart that displays sales variance (estimated sales versus actual sales) by month. To follow along, sign in to Power BI and select **Get Data \> Samples \> Retail Analysis Sample**. 
 
-1. From the "Retail Analysis Sample" dashboard, select the **Total Stores** tile to open the "Retail Analysis Sample" report.
+1. Select the **Datasets** tab and scroll to the new "Retail Analysis Sample" dataset.  Select the **Create report** icon to open the dataset in report editing view. 
 
-2. Select **Edit Report** to open the report in Editing View.
+    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-report.png)
 
-3. [Add a new report page](powerbi-service-add-a-page-to-a-report.md).
+2. From the **Fields** pane, select **Sales \> Total Sales Variance**. If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
 
-4. Create a waterfall chart that displays this year's sales and sales goal by month.
+3. Convert the chart to a **Waterfall**. 
 
-  - From the **Fields** pane, select **Sales \> Total Sales Variance**.
+    ![](media/powerbi-service-tutorial-waterfall-charts/convertWaterfall.png)
 
-	- Convert the chart to a **Waterfall**. 
+4. Select **Time** \> **FiscalMonth** to add it to the **Category** well. 
 
-        ![](media/powerbi-service-tutorial-waterfall-charts/convertWaterfall.png)
+    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall.png)
 
-	- If **Total Sales Variance** isn't in the **Y Axis** area, drag it there.
+5. Sort the waterfall chart chronologically. From the top-right corner of the chart, select the ellipses (...) and choose **FiscalMonth**.
 
-	- Select **Time** \> **FiscalMonth** to add it to the **Category** well. 
+    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-sort.png)
 
-    ![](media/powerbi-service-tutorial-waterfall-charts/first_new.png)
+    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-sorted.png)
+
+6. Dig in a little more to see what's contributing most to the changes month to month. Drag **Store** > **Territory** to the **Breakdown** bucket.
+
+    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-breakdown.png)
+
+7. By default, Power BI adds the top 5 contributors to increases or decreases by month. But we're only interested in the top 2 contributors.  In the Formatting pane, select **Breakdown** and set **Maximum** to 2.
+
+    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+
+    A quick review reveals that the territories of Ohio and Pennsylvania are the biggest contributors to movement, negative and positive, in our waterfall chart. 
+
+    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-waterfall-axis.png)
+
+8. This is an interesting finding. Do Ohio and Pennsylvania have such a significant impact because sales in these 2 territories are much higher than the other territories?  We can check that. Create a map that looks at sales by territory.  
+
+    ![](media/powerbi-service-tutorial-waterfall-charts/power-bi-map.png)
+
+    Our map supports our theory.  It shows that these 2 territories had the highest value of sales last year (bubble size) and this year (bubble shading).
 
 ## Highlighting and cross-filtering
 

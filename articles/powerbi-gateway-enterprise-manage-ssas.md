@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="07/05/2017"
+ms.date="07/07/2017"
 ms.author="davidi"/>
 # Manage your data source - Analysis Services
 
@@ -181,7 +181,7 @@ How to configure your gateway to perform the AD Lookup:
 
         Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
-4.      Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
+4.  Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
 
     ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names_03.png)
 
@@ -194,7 +194,7 @@ To create a mapping rule, enter a value for **Original name** and **New Name** a
 
 |Field|Description
 |---|---|
-|Replace (Orignal name)|The email address that you signed into Power BI with.|
+|Replace (Original name)|The email address that you signed into Power BI with.|
 |With (New Name)|The value you want to replace it with. The result of the replacement is what will be passed to the *EffectiveUserName* property for the Analysis Services connection.|
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-effective-user-names.png)

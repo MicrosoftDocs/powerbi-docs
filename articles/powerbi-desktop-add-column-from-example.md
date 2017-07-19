@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/08/2017"
+   ms.date="07/06/2017"
    ms.author="davidi"/>
 
 # Add a column from an example in Power BI Desktop
@@ -86,57 +86,92 @@ There are many transformations that are available when using **Add column from E
 
 
 -   **Reference**
-    -   Reference to a specific column (including trim and case transformations)
+    -   Reference to a specific column (including trim, clean (as of June 2017), and case transformations)
 
 
 -   **Text transformations**
-    -   Text.Combine (supports combination of literal strings and entire column values)
-    -   Text.Replace
-    -   Text.Start
-    -   Text.Middle
-    -   Text.End
-    -   Text.BeforeDelimiter
-    -   Text.AfterDelimiter
-    -   Text.BetweenDelimiters
+    -   Combine (supports combination of literal strings and entire column values)
+    -   Replace
+    -   Length
+    -   Extract
+        -   First Characters
+        -   Last Characters
+        -   Range
+        -   Text before Delimiter
+        -   Text after Delimiter
+        -   Text between Delimiters
 
-    > **Note:** All *Text* transformations take into account the potential need to trim or apply a case transformation to the column value.
+    - The following supported **text transformations** are available beginning with the June 2017 release of **Power BI Desktop**:
+        -   Length
+
+> **Note:** All *Text* transformations take into account the potential need to trim, clean (as of June 2017), or apply a case transformation to the column value.
 
 -   **Date transformations**
-    -   Date.Day
-    -   Date.DayOfWeek
-    -   Date.DayOfWeekName
-    -   Date.DayOfYear
-    -   Date.Month
-    -   Date.MonthName
-    -   Date.QuarterOfYear
-    -   Date.WeekOfMonth
-    -   Date.WeekOfYear
-    -   Date.Year
+    -   Day
+    -   Day of Week
+    -   Day of Week Name
+    -   Day of Year
+    -   Month
+    -   Month Name
+    -   Quarter of Year
+    -   Week of Month
+    -   Week of Year
+    -   Year
 
 
--   The following supported **Date transformations** are available beginning with the June 2017 **Power BI Desktop** release:
-    -   Date -> Age
-    -   Date -> Year -> Start of Year
-    -   Date -> Year -> End of Year
-    -   Date -> Month -> Start of Month
-    -   Date -> Month -> End of Month
-    -   Date -> Quarter -> Start of Quarter
-    -   Date -> Month -> Days in Month
-    -   Date -> Quarter -> End of Quarter
-    -   Date -> Week -> Start of Week
-    -   Date -> Week -> End of Week
-    -   Date -> Day -> Day of Month
-    -   Date -> Day -> Start of Day
-    -   Date -> Day -> End of Day
+-   The following supported additional **Date transformations** are available beginning with the June 2017 **Power BI Desktop** release:
+    -   Age
+    -   Start of Year
+    -   End of Year
+    -   Start of Month
+    -   End of Month
+    -   Start of Quarter
+    -   Days in Month
+    -   End of Quarter
+    -   Start of Week
+    -   End of Week
+    -   Day of Month
+    -   Start of Day
+    -   End of Day
 
 
 -   **Time transformations**
-    -   Time.Hour
-    -   Time.Minute
-    -   Time.Second
+    -   Hour
+    -   Minute
+    -   Second
 
-    > **Note:** All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
 
-    -   **Other transformations** (added with the June 2017 **Power BI Desktop** release)
-        -   Format -> Clean
-        -   Extract -> Length
+-   **Date/Time/Timezone transformations** - The following supported transformation are available beginning with the July 2017 **Power BI Desktop** release:
+    -   To Local Time
+
+
+> **Note:** All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
+
+
+-   **Number transformations** - The following supported transformations are available beginning with the July 2017 **Power BI Desktop** release:
+    -   Absolute Value
+    -   Arccosine
+    -   Arcsine
+    -   Arctangent
+    -   Convert to Number
+    -   Cosine
+    -   Cube
+    -   Divide
+    -   Exponent
+    -   Factorial
+    -   Integer Divide
+    -   Is Even
+    -   Is Odd
+    -   Ln
+    -   Base-10 Logarithm
+    -   Modulo
+    -   Multiply
+    -   Round Down
+    -   Round Up
+    -   Sign
+    -   Sin
+    -   Square Root
+    -   Square
+    -   Subtract
+    -   Sum
+    -   Tangent
