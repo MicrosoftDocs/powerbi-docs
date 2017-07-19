@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Ask questions about your data in the iOS mobile apps (Tutorial)"
+   pageTitle="Ask questions with Q&A in the iOS mobile apps (Tutorial)"
    description="Try asking questions of sample data in your own words with Q&A on your iPad, iPhone, and iPod Touch."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/21/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
-# Ask questions about your data with Q&A in the iOS mobile apps (Tutorial)
+# Ask questions with Q&A in the iOS mobile apps (Tutorial)
 
 Applies to:
 
@@ -29,7 +29,7 @@ Applies to:
 | iPhones | iPads |
 
 
-The easiest way to learn about your data in to ask questions about it in your own words. You can already do that in the Power BI service at [https://powerbi.com](http://powerbi.com) by typing a question in the Q&A box at the top of a dashboard. Now in the Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices, you can type or say your questions. In this tutorial, you can ask questions with sample data.
+The easiest way to learn about your data in to ask questions about it in your own words. In the Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices, you can type or say a question, or ask Power BI for featured insights. In this tutorial, you can ask questions with sample data.
 
 ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
@@ -44,7 +44,11 @@ If you haven't already downloaded the Retail Analysis sample on the Power BI ser
 
 1. On your iPhone or iPad, open the Power BI app and navigate to the Retail Analysis Sample dashboard.
 2. Tap the Q&A icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
-3. Tap **show** from the keywords at the bottom of the screen, tap **sales** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
+     The Power BI virtual analyst offers some suggestions to get started.
+3. Tap **featured insights**.
+4. Scroll sideways. If one of the insights looks interesting, tap it.
+    You can tap one of the insights, or you can start asking your own questions.
+5. Tap **show** from the keywords at the bottom of the screen, tap **sales** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-show-sales.png)
 
