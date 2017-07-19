@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/07/2017"
+   ms.date="07/18/2017"
    ms.author="maggies"/>
 
 # Get Power BI data from the real world with the mobile apps
@@ -27,7 +27,7 @@ Power BI mobile apps can connect the real world directly to related BI informati
 ## QR codes for tiles
 Create a QR code for a tile in a dashboard, and put the QR code anywhere you want. When your colleagues scan the code with their iPhones or Android phones, they see the tile you've associated with that QR code &#151; on an iPhone, they see the tile in augmented reality.
 
-![](media/powerbi-mobile-data-in-real-world-context/power-bi-ios-qr-ar-scanner-small.png)
+![QR code](media/powerbi-mobile-data-in-real-world-context/power-bi-ios-qr-ar-scanner-small.png)
 
 More about:
 
@@ -42,7 +42,7 @@ More about [creating a QR code for a report in Power BI](powerbi-service-qr-code
 ## Barcodes
 Tag barcode data in your report so your colleagues can scan a barcode on a product and go straight to that report, filtered for that product.
 
-![](media/powerbi-mobile-data-in-real-world-context/power-bi-barcode-scanner.png)
+![Barcode](media/powerbi-mobile-data-in-real-world-context/power-bi-barcode-scanner.png)
 
 More about:
 
@@ -55,9 +55,7 @@ Categorize geographical data in a report in Power BI Desktop. Then your colleagu
 
 More about [filtering by location](powerbi-mobile-geofiltering.md).
 
-### See also
+## Next steps
 
 -  [Create a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
 -  [Create a QR code for a report in Power BI](powerbi-service-qr-code-for-report.md)
--  [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
--  [Dashboards in Power BI](powerbi-service-dashboards.md)

@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/23/2017"
+   ms.date="07/18/2017"
    ms.author="maggies"/>
 
 # Set geographic filters in Power BI Desktop for the mobile apps
@@ -29,15 +29,15 @@ For example, say you're a sales manager traveling to meet customers, and you'd l
 
 ## Identify geographic data in your report
 
-1. In Power BI Desktop, switch to Data View ![](media/powerbi-desktop-mobile-geofiltering/pbi_desktop_data_icon.png).
+1. In Power BI Desktop, switch to Data View ![Data View icon](media/powerbi-desktop-mobile-geofiltering/pbi_desktop_data_icon.png).
 
 2. Select a column with geographic data &#151; for example, a City column.
 
-    ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-column.png)
+    ![City column](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-column.png)
 
 3. On the **Modeling** tab, select **Data Category**, then the correct category &#151; in this example, **City**.
 
-    ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-category.png)
+    ![Data category box](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-category.png)
 
 4. Continue setting geographic data categories for any other fields in the model. 
 
@@ -45,13 +45,13 @@ For example, say you're a sales manager traveling to meet customers, and you'd l
 
 ## Create visuals with your geographic data
 
-5. Switch to Report view ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-report-icon.png), and create visuals that use the geographic fields in your data. 
+5. Switch to Report view ![Report View icon](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-report-icon.png), and create visuals that use the geographic fields in your data. 
 
-    ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-report.png)
+    ![Report with map](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-report.png)
 
     In this example, the model also contains a calculated column that brings city and state together in one column. Read about [creating calculated columns in Power BI Desktop](powerbi-desktop-calculated-columns.md).
 
-    ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-city-state-column.png)
+    ![City + State field](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-city-state-column.png)
 
 6. Publish the report to the Power BI service.
 
@@ -61,11 +61,11 @@ For example, say you're a sales manager traveling to meet customers, and you'd l
 
 2. If you're in a geographic location with data in the report, you can filter it automatically to your location.
 
-    ![](media/powerbi-desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
+    ![Geo filter in mobile app](media/powerbi-desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
 Read more about [filtering a report by location in the Power BI mobile apps](powerbi-mobile-geofiltering.md).
 
-## See also  
+## Next steps 
 
 - [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
