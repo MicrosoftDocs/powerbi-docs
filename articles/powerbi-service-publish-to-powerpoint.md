@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2017"
+   ms.date="07/20/2017"
    ms.author="davidi"/>
 
 # Export reports from Power BI to PowerPoint (Preview)
@@ -85,6 +85,7 @@ There are a few considerations and limitations to keep in mind when working with
 -   Background images will be cropped with the chart's bounding area. It's highly recommended that you remove background images before exporting to PowerPoint.
 -   **In-session interactivity** such as highlighting and filtering, drill-down, and so on, are not yet supported when exporting to PowerPoint. The exported PowerPoint shows the original visuals as they were saved in the report.
 -   Pages in PowerPoint are always created in the standard 9:16 size, regardless of the original page sizes or dimensions in the Power BI report.
+-   Reports that are owned by a user outside your Power BI tenant domain (such as, a report owned by someone outside your organization, and shared with you) cannot be published to PowerPoint. 
 
 
 
