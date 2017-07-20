@@ -3,9 +3,9 @@
    description="Find and open an organizational content pack in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="maggiesMSFT" 
    manager="erikre" 
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
-   ms.author="ajayan"/>
+   ms.date="07/19/2017"
+   ms.author="maggies"/>
 
 # Find and connect to an organizational content pack  
 
@@ -53,9 +53,8 @@ If the content pack owner changes the content pack, and:
 
 - **You have made a copy** Your copy won't be updated. 
 
-## See also  
+## Next steps
+
 - [Intro to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
-- [Get Started with Power BI](powerbi-service-get-started.md)  
-- [Power BI Basic Concepts](powerbi-service-basic-concepts.md)  
-- [Create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md)  
+- [Create and distribute an app in Power BI](powerbi-service-create-apps.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

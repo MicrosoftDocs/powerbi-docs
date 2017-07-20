@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/13/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
 # View your data offline in the Power BI mobile apps
@@ -31,7 +31,7 @@ Applies to:
 
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. 
 
-![](media/powerbi-mobile-offline-android/power-bi-iphone-no-network.png)
+![No network message](media/powerbi-mobile-offline-android/power-bi-iphone-no-network.png)
 
 
 By default, Power BI refreshes the data frequently so you get up-to-date answers to your business questions any time, even while commuting or roaming.
@@ -64,7 +64,7 @@ When you're offline with Power BI on your mobile device, you may encounter these
 -   Whole Excel workbooks in Power BI aren't available offline.
 -   You can see Reporting Services mobile reports and KPIs offline, if you have viewed them while connected. They don't refresh in the background. They refresh every time you open them. 
 
-### See also
+## Next steps
 
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
 

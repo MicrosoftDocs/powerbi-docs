@@ -3,9 +3,9 @@
    description="Read about managing, updating, and deleting organizational content packs in Power BI."
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="maggiesMSFT" 
    manager="erikre" 
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,8 +17,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
-   ms.author="ajayan"/>
+   ms.date="07/19/2017"
+   ms.author="maggies"/>
 # Manage, update, and delete organizational content packs
 
 > [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
@@ -27,7 +27,7 @@ You can package up and share your dashboards, reports, Excel workbooks, and data
 
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to decide on the best option for your situation.
 
-Only the content pack creator can do some organizational content pack tasks:
+You can only do some organizational content pack tasks if you're the content pack creator:
 
 -   Republish.
 -   Restrict or expand access to the content pack.
@@ -56,7 +56,7 @@ When you make and save a change to the dashboard that you included in a content 
 
 	-   For group members who haven't customized the content pack, the update is automatically applied.
 
-	-   Group members who have customized the content pack receive a notification that there is a new version.  They can navigate to the content pack library and get the updated content pack without losing their personalized version.  They'll now have 2 versions: the personalized version and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render.    
+	-   Group members who have customized the content pack receive a notification that there is a new version.  They can go to AppSource and get the updated content pack without losing their personalized version.  They'll now have 2 versions: the personalized version and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render.    
 
 ## Update the audience: expand or restrict access
 
@@ -80,25 +80,23 @@ Another modification available to content pack creators is expanding and restric
 
 As the content pack creator, you can [schedule refresh of the datasets](powerbi-refresh-data.md).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you need to re-publish the content pack (see above).
 
-## Delete an organizational content pack from the library
+## Delete an organizational content pack from AppSource
 
-You can only delete a content pack from the content pack library if you're the content creator. 
+You can only delete a content pack from AppSource if you created it. 
 
-> **Tip**: You can [delete your connection to a content pack](powerbi-service-organizational-content-pack-delete.md) you didn't create. That doesn't delete the content pack from the library.
+> **Tip**: You can [delete your connection to a content pack](powerbi-service-organizational-content-pack-delete.md) you didn't create. That doesn't delete the content pack from AppSource.
 
-1. To delete a content pack from the content pack library, select the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
+1. To delete a content pack from AppSource, go to the app workspace where you created the content pack, select the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
 
-2. Select **Delete \> Yes**. 
+2. Select **Delete \> Delete**. 
 
 	-   For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are automatically removed. They're no longer available, and the content pack doesn't appear in the Navigation Pane.
 
 	-   For group members who have customized the content pack, the next time they open the customized dashboard, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. The original content pack reports and dataset are no longer available, and the content pack doesn't appear in the Navigation pane.   
 
-### See also
+## Next steps
 
 -   [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)
--  [Get Started with Power BI](powerbi-service-get-started.md)
--  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
--  [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
--  More questions? [Try the Power BI Community](http://community.powerbi.com/)
+- [Create and distribute an app in Power BI](powerbi-service-create-apps.md) 
+-   More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

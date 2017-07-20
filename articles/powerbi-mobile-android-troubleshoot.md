@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
 # Troubleshoot the mobile app on Android devices
@@ -37,7 +37,7 @@ Turns out you actually need to upgrade your Chrome app.
 * Go back to Google Play Store, search for Chrome, and get the upgrade.
 
 
-## See also
+## Next steps
 
 -  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 -  [Get started with Power BI](powerbi-service-get-started.md)

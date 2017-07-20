@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
 # Remove your connection to an organizational content pack in Power BI 
 
-A coworker created a content pack. You discovered it in the content pack library and added it to your Power BI workspace. Now you don't need it any longer.  How do you remove it?
+A coworker created a content pack. You discovered it in AppSource and added it to your Power BI workspace. Now you don't need it any longer.  How do you remove it?
 
 To remove a content pack, you remove its dataset.  
 
@@ -30,10 +30,11 @@ To remove a content pack, you remove its dataset.  
 
     ![Remove content pack](media/powerbi-service-organizational-content-pack-delete/power-bi-remove-organizational-content-pack-dataset.png)
 
-Removing the dataset also removes all associated reports and dashboards. However, removing your connection to the content pack doesn't delete the content pack from your organization's content pack library.  You can always return to the content pack library and add the content pack back to your workspace. You can only [delete a content pack from the content pack library](powerbi-service-organizational-content-packs-manage-update-delete.md) if you're the one who created it.
+Removing the dataset also removes all associated reports and dashboards. However, removing your connection to the content pack doesn't delete the content pack from your organization's AppSource.  You can always return to AppSource and add the content pack back to your workspace. You can only [delete a content pack from AppSource](powerbi-service-organizational-content-packs-manage-update-delete.md) if you're the one who created it.
 
 ## Next steps
-- [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
+- [Introduction to organizational content packs](powerbi-service-organizational-content-packs-introduction.md) 
+- [Create and distribute an app in Power BI](powerbi-service-create-apps.md) 
 - [Power BI basic concepts](powerbi-service-basic-concepts.md)  
 - More questions? [Try the Power BI Community](http://community.powerbi.com/)
   

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/08/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
 # Optimize your dashboard for phones

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/20/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
 # Fixing 'your corporate SSL certificate is untrusted'
@@ -54,8 +54,7 @@ Go to **Settings** > **System** > **Date and time** to check them.
 
 If you're using a custom authentication server, the SSL certificate in the corporate authentication server may not be valid. Please contact your organization's IT admin to help you.
 
-## See also
+## Next steps
 
 -  [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
--  [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-  Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
