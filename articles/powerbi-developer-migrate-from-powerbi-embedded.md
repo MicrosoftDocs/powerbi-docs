@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/07/2017"
+   ms.date="07/20/2017"
    ms.author="asaxton"/>
 
 # How to migrate Power BI Embedded workspace collection content to Power BI
@@ -76,140 +76,9 @@ You will need to register an application within Azure AD and grant certain permi
 
 ### Register an application
 
-> [AZURE.NOTE] You should register the application using the application *master* account.
+You will need to register your application with Azure AD in order to make REST API calls. This includes going to the Azure portal to apply additional configuration in addition to the Power BI app registration page. For more information, see [Register an Azure AD app to embed Power BI content](powerbi-developer-register-app.md).
 
-You will need to register an application as a native Azure application witn your Azure AD tenant. You can either register your application from the Power BI app registration tool, or directly within the Azure AD portal. For more information, see [Register an application](powerbi-developer-register-app.md). Make sure that you select **Native App** for the **App type**.
-
-### Apply permissions to your application
-
-You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure AD portal, or programmatically.
-
-> [AZURE.NOTE] It is recommended you perform these steps using the application *master* account. It should be able to modify the app permissions within the Azure portal without admin rights. It will be the owner of the app.
-
-#### Using the Azure AD Portal
-
-1. Browse to the [App registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
-
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions01.png)
-
-2. Select **Required permissions** under **API Access**.
-
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions02.png)
-
-3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
-
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions03.png)
-
-4. Within **Required permissions**, select **Power BI Service (Power BI)**.
-
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions05.png)
-
-5. Select all permissions under **Delegated Permissions**. You will need to select them one by one in order to save the selections. Select **Save** when done.
-
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions06.png)
-
-6. Within **Required permissions**, select **Grant Permissions**.
-
-    This will give the app permissions on behalf of all users in the tenant/organization. If you don't want this, you will need to sign in interactively with your app ID to Azure AD at least once.
-
-    > [AZURE.NOTE] In order to give permission to all users in the tenant, this operation should be made by an account in the Global admin role. Otherwise the permission is only granted to the user that performed the step.
-
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-azuread-app-permissions07.png)
-
-#### Applying permissions programmatically
-
-1. You will need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
-
-    > [AZURE.NOTE] You can call the *Get servicePrincipal* api without {id} and it will get you all of the service principals within the tenant.
-
-2. Check for a service principal with your app client id as **appId** property.
-
-3. Create a new service plan if missing for your app.
-
-    ```
-    Post https://graph.microsoft.com/beta/servicePrincipals
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    {
-    "accountEnabled" : true,
-    "appId" : "{App_Client_ID}",
-    "displayName" : "{App_DisplayName}"
-    }
-    ```
-
-4. Grant App Permission to PowerBI API
-
-    If you would like to grant permisions on behalf of all tenant users, you can run the following.
-
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
-    "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
-
-    If you are using an existing tenant, and are not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by using the following.
-
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"Principal",
-    "principalId"= "{User_ObjectId}",
-    "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
-    "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
-
-    To get a list of users, you can use [List users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list).
-
-5. Grant App Permission to AAD
-
-    If you would like to grant permisions on behalf of all tenant users, you can run the following.
-
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
-    "scope":"User.Read Directory.AccessAsUser.All",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
-
-    If you are using an existing tenant, and are not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by using the following.
-
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"Principal",
-    "principalId"= "{User_ObjectId}",
-    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
-    "scope":"User.Read Directory.AccessAsUser.All",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
-
-    To get a list of users, you can use [List users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list).
+You should register the application using the application **master** account.
 
 ## Create App workspaces (Required)
 
