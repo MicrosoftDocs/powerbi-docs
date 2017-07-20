@@ -84,7 +84,7 @@ As the content pack creator, you can [schedule refresh of the datasets](powerbi-
 
 You can only delete a content pack from AppSource if you created it. 
 
-> **Tip**: You can [delete your connection to a content pack](powerbi-service-organizational-content-pack-delete.md) you didn't create. That doesn't delete the content pack from AppSource.
+> [AZURE.TIP] You can [delete your connection to a content pack](powerbi-service-organizational-content-pack-delete.md) you didn't create. That doesn't delete the content pack from AppSource.
 
 1. To delete a content pack from AppSource, go to the app workspace where you created the content pack, select the cog icon ![](media/powerbi-service-organizational-content-packs-manage-update-delete/cog.png) and choose **View Content Packs**.
 
