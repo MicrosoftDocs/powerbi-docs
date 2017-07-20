@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/20/2017"
+   ms.date="07/20/2017"
    ms.author="asaxton"/>
 
 # Embedding with Power BI
@@ -30,23 +30,25 @@ This means you will have one API surface, a consistent set of capabilities and a
 
 There are two main scenarios when embedding Power BI content. Embedding with Power BI users and embedding to non-Power BI users. Previously, the Azure Power BI Embedded service was used to service non-Power BI users. This meant that the users of your application didn't need access to Power BI directly, or have any Power BI licenses assigned to them. They didn't have an account with the Power BI service. 
 
-The Power BI REST APIs have been updated to allow for both scenarios against the Power BI service. This will allow you to embed dashboards and reports into your custom application, using the same API to either service Power BI users or non-Power BI users.
+The Power BI REST APIs have been updated to allow for both scenarios against the Power BI service. This will allow you to embed dashboards and reports into your custom application, using the same API to either service Power BI users (user owns data) or non-Power BI users (app owns data).
 
 You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 
 To view a sample of how embedding works, see [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/code-demo).
 
-## Embedding with Power BI users
+## Embedding with Power BI users (users own data)
 
-Embedding for Power BI users is the functionality that has been available with the Power BI service. You can continue to embed content from the Power BI service into your applications using the REST API. This requires that the end user of your application sign into the Power BI service when you want to view your content in the application. Once your end user signs in, they will only have access to dashboards and reports that have been shared with them in the Power BI service. For more information on how to do this, see the following.
+Embedding for Power BI users is the functionality that has been available with the Power BI service. You can continue to embed content from the Power BI service into your applications using the REST API. This requires that the end user of your application sign into the Power BI service when you want to view your content in the application. Once your end user signs in, they will only have access to dashboards and reports that have been shared with them in the Power BI service.
 
-- [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
-- [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
-- [Integrate a report into an app](powerbi-developer-integrate-report.md)
+For embedding with Power BI users (users own data), see the following:
+
+- [Integrate a dashboard into an app (user owns data)](powerbi-developer-integrate-dashboard.md)
+- [Integrate a tile into an app (user owns data)](powerbi-developer-integrate-tile.md)
+- [Integrate a report into an app (user owns data)](powerbi-developer-integrate-report.md)
 
 Self-service capabilities, such as edit, save and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
 
-## Embedding with non-Power BI users
+## Embedding with non-Power BI users (app owns data)
 
 Embedding for non-Power BI users provides the ability to embed dashboards and reports to users that don't have an account for Power BI. They don't need to know anything about Power BI. This is the scenario that is similar to the Azure Power BI Embedded service and what it offered. You will need at least one Power BI user with a Pro license. That account will act as a master account for your application. Think of this as a proxy account. This account allows you to generate tokens that provide access to dashboards and reports within the Power BI service.
 

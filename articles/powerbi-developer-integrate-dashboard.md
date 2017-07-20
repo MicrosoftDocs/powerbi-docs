@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="07/20/2017"
    ms.author="asaxton"/>
 
 # Integrate a dashboard into an app (user owns data)
@@ -54,7 +54,7 @@ To get a **Power BI** dashboard, you use the [Get Dashboards](https://msdn.micro
 
 ![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard-get-dashboards.png)
 
-### Get dashboards using access token
+### Get dashboards using an access token
 
 With the **access token** you retrieved in [step 2](#step-2-get-an-access-token-from-azure-ad), you can call the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation. The [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation returns a list of dashboards. You can get a single dashboard from the list of dashboards. Below is a complete C# method to get a dashboard. For examples on how to use the Power BI REST API, see [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/).
 
@@ -119,7 +119,7 @@ public class PBIDashboard
 
 You can use the .NET SDK to retrieve a list of dashbaords instead of calling the REST API directly.
 
-'''
+```
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -139,7 +139,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
     var embedUrl = dashboard.EmbedUrl
 }
-'''
+```
 
 ## Step 3 - load a dashboard using JavaScript
 
@@ -292,10 +292,8 @@ https://app.powerbi.com/dashboardEmbed?dashboardId={dashboardId}&groupId={groupI
 
 ## Next steps
 
-[Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app)  
-[Embed sample for non-Power BI users (app owns data)](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)  
-[App permissions](powerbi-developer-power-bi-permissions.md)  
-[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)  
-[Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
+A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [User Owns Data sample - integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app).
+
+More information is also available for the JavaScript API, see [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

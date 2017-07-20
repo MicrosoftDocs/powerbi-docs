@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="07/20/2017"
    ms.author="asaxton"/>
 
 # Authenticate users and get an Azure AD access token for your Power BI app

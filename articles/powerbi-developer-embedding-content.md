@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="07/20/2017"
    ms.author="asaxton"/>
 
 # How to embed your Power BI dashboards, reports and tiles
@@ -98,23 +98,31 @@ You can create your reports and datasets using Power BI Desktop and then publish
 
 Within your application, you will need to authenticate with Power BI. If you are embedding content for non-Power BI users, this will require you to store the credentials for the *master* account within your application. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md).
 
-After you have authenticationed, within your application, use the Power BI and JavaScript APIs to embed dashboards and reports into your application. For more information, see the following examples.
+After you have authenticated, within your application, use the Power BI and JavaScript APIs to embed dashboards and reports into your application. 
 
-- [Integrate a dashboard into an app](powerbi-developer-integrate-dashboard.md)
-- [Integrate a tile into an app](powerbi-developer-integrate-tile.md)
-- [Integrate a report into an app](powerbi-developer-integrate-report.md)
+For embedding with Power BI users (users own data), see the following:
 
-When embedding for non-Power BI users, an embed token is required. To learn more see, [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
+- [Integrate a dashboard into an app (user owns data)](powerbi-developer-integrate-dashboard.md)
+- [Integrate a tile into an app (user owns data)](powerbi-developer-integrate-tile.md)
+- [Integrate a report into an app (user owns data)](powerbi-developer-integrate-report.md)
+
+For embeding with non-Power BI users (app owns data), which is typical for ISV scenarios, see the following:
+
+- [Integrate a dashboard, tile, or report into your application (app owns data)](powerbi-developer-embed-sample-app-owns-data.md)
+
+When embedding for non-Power BI users (app owns data), an embed token is required. To learn more see, [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
 
 ## Step 3: Promote your solution to production
 
 When you are ready to move to production, you will need to do the following.
 
-### Power BI users
+### Power BI users (user owns data)
 
-If you are embedding for Power BI users, you only need to let people know how to get to your application.
+If you are embedding for Power BI users, you only need to let people know how to get to your application. 
 
-### Non-Power BI users
+Free users can consume content that is embedded from a group (app workspace), if that workspace is backed by a Premium capacity. The Free user needs to be listed as a member of group (app workspace), otherwise you will receive a 401 unauthorized error.
+
+### Non-Power BI users (app owns data)
 
 If you are embedding for non-Power BI users, you will want to do the following.
 

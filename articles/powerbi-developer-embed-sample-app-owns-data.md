@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="07/20/2017"
    ms.author="asaxton"/>
 
 # Integrate a dashboard, tile, or report into your application (app owns data)
@@ -319,7 +319,8 @@ An application sample of this is available within the [App Owns Data sample](htt
 
 ## Next steps
 
-[Embed sample for non-Power BI users (app owns data)](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)  
-[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)  
+A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embed sample for non-Power BI users (app owns data)](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+
+More information is also available for the JavaScript API, see [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
