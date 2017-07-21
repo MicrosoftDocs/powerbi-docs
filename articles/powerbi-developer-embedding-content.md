@@ -86,7 +86,7 @@ You will need to register your application with Azure AD in order to make REST A
 
 ### Create app workspaces
 
-If you are embedding dashboards and reports for non-Power BI users (app owns data), those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create and distribute an app in Power BI](powerbi-service-create-apps.md).
+If you are embedding dashboards and reports for non-Power BI users (app owns data), those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](powerbi-service-create-apps.md#create-an-app-workspace).
 
 > [AZURE.IMPORTANT] The *master* account, that was mentioned above, needs to be an admin of the app workspace.
 
