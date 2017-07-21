@@ -34,7 +34,7 @@ The Power BI REST APIs have been updated to allow for both scenarios against the
 
 You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 
-To view a sample of how embedding works, see [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/code-demo).
+To view a sample of how embedding works, see [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 ## Embedding with Power BI users (users own data)
 
