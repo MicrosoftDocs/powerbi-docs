@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2017"
+   ms.date="07/20/2017"
    ms.author="davidi"/>
 
 # Use Quick measures to easily perform common and powerful calculations (Preview)
@@ -138,6 +138,32 @@ In this preview release of the **Quick measures**, there are a few limitations a
 
 >   **Warning:** Quick measures currently *only* generate DAX statements with commas for argument separators. If your version of **Power BI Desktop** is localized to a language that uses commas as decimal separators, quick measures will not operate properly.
 
+### Time intelligence and Quick measures
+
+When using time intelligence Quick measures with date fields, there is a limitation you want to consider when using a date field.
+
+When you use a Quick measure in a visual that's filtered by the date field that you've used in the Quick measure, you may see the following error string:
+
+    *Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy.*
+
+This limitation also exists when you have a slicer on the page that uses the date field, or a visual-, page-, or report-level filter.
+
+Consider the image that follows, and the fields and Quick measures used. In that image, the *Unit Sales YTD* measure seen in the *Fields* well was created using the **Year to date** Quick measure. The line chart shows that field (and the *Unit Sales* measure) plotted against the *OrderDate* field.
+
+You can see the *Year, Quarter, Month*, and *Day* levels in the *Fields* pane, showing that the field is using the internal date hierarchy. There’s also a slicer on the page filtering the *OrderDate* field.
+
+![](media/powerbi-desktop-quick-measures/quick-measures_12a.png)
+
+If you try and select dates in that slicer, however, you’ll get the following error.
+
+![](media/powerbi-desktop-quick-measures/quick-measures_12.png)
+
+The reason this happens is because the slicer is filtering on the *OrderDate* field in the **Sales** table, rather than filtering on one of the Year/Quarter/Month/Day columns in the built-in date hierarchy. There is no current work-around for this limitation, but the Power BI team is actively working on improving this feature for upcoming releases of **Power BI Desktop**.
+
+For information about how you may be able to adjust the DAX associated with the Quick measure to refer to your own date tables, take a look at [this blog post](https://www.kasperonbi.com/use-the-power-bi-quick-calcs-with-your-own-date-table).
+
+
+### Additional information and examples
 
 We anticipate providing examples and guidance for each of the **Quick measures** calculations, so please check back soon for updates on that focused article.
 

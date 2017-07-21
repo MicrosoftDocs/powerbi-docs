@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/04/2017"
+   ms.date="07/20/2017"
    ms.author="davidi"/>
 
 # Publish Reports from Power BI Desktop to the Power BI Service
