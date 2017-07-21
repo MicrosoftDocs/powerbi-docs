@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Integrate a dashboard, tile, or report into your application (app owns data)"
+   pageTitle="Integrate a dashboard, tile, or report into your application"
    description="Learn how to integrate, or embed, a dashboard into a web app using the Power BI C# SDK along with the Power BI JavaScript API when embedding for Non-Power BI users (app owns the data)."
    services="powerbi"
    documentationCenter=""
@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/20/2017"
+   ms.date="07/21/2017"
    ms.author="asaxton"/>
 
 # Integrate a dashboard, tile, or report into your application (app owns data)

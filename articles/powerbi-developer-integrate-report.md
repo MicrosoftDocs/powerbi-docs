@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Integrate a Power BI report into an app (user owns data)"
+   pageTitle="Integrate a Power BI report into an app"
    description="Walkthrough to integrate a report into an app, sample code"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/20/2017"
+   ms.date="07/21/2017"
    ms.author="asaxton"/>
 
 # Integrate a report into an app (user owns data)
