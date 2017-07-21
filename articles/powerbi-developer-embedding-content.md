@@ -149,6 +149,10 @@ If you are embedding for non-Power BI users, you will want to do the following.
 
 * Deploy your updated application to production and begin embedding reports from the Power BI service.
 
+## Admin settings
+
+Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off. Admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](powerbi-admin-portal.md). 
+
 ## Next steps
 
 [Embedding with Power BI](powerbi-developer-embedding.md)  
