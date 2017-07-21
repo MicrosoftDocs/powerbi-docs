@@ -86,7 +86,7 @@ You will need to register your application with Azure AD in order to make REST A
 
 ### Create app workspaces
 
-If you are embedding dashboards and reports for non-Power BI users (app owns data), those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create and distribute an app in Power BI](powerbi-service-create-apps.md).
+If you are embedding dashboards and reports for non-Power BI users (app owns data), those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](powerbi-service-create-apps.md#create-an-app-workspace).
 
 > [AZURE.IMPORTANT] The *master* account, that was mentioned above, needs to be an admin of the app workspace.
 
@@ -148,6 +148,10 @@ If you are embedding for non-Power BI users, you will want to do the following.
     ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png)
 
 * Deploy your updated application to production and begin embedding reports from the Power BI service.
+
+## Admin settings
+
+Global Admins, or Power BI service administrators, can turn the ability to use the REST APIs, on or off. Admins can set this setting for the entire organization, or for individual security groups. It is enabled for the entire organization by default. This is done through the [Power BI admin portal](powerbi-admin-portal.md). 
 
 ## Next steps
 
