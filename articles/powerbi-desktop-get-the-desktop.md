@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/20/2017"
+   ms.date="07/24/2017"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
@@ -54,6 +54,7 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 -    Internet Explorer 9 or later
 -    **Memory (RAM):** At least 1 GB available, 1.5 GB or more recommended.
 -    **Display:** At least 1440x900 or 1600x900 (16:9) recommended. Lower resolutions such as 1024x768 or 1280x800 are not recommended, as certain controls (such as closing the startup screen) display beyond those resolutions.
+-    **Windows Display settings:** If your display settings are set to change the size of text, apps, and other items to more than 100%, you may not be able to see certain dialogs that must be closed or responded to in order to proceed using **Power BI Desktop**. If you encounter this issue, check your **Display settings** by going to **Settings > System > Display** in Windows, and use the slider to return display settings to 100%.
 -    **CPU:** 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
 
 ## More information
