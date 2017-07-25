@@ -85,7 +85,7 @@ In a standard installation, the gateway runs as a machine-local service account 
 To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your AAD is already synchronized with your local Active Directory (using AAD DirSync/Connect). For this account change to work correctly, you have two options:
 
 -   If you started with a previous version of the On-premises data gateway, follow precisely all five steps in sequence (including running the gateway configurator in step 3) described in the following article:
-    -   [Changing the gateway service account to a domain user](https://powerbi.microsoft.com/en-us/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
+    -   [Changing the gateway service account to a domain user](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
 
     -   If you already installed the Preview version of the On-premises data gateway, there is a new UI-guided approach to switch service accounts directly from within the gateway’s configurator. See the **Switching the gateway to a domain account** section near the end of this article.
 
