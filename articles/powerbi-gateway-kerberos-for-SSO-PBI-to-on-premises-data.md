@@ -37,7 +37,7 @@ When a user interacts with a DirectQuery report in the Power BI Service, each cr
 
 A query that runs with SSO consists of three steps, as shown in the following diagram.
 
-image 1
+![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_01.png) 
 
 Here are additional details about those steps:
 
