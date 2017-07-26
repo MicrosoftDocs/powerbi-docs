@@ -50,7 +50,6 @@ Here are additional details about those steps:
         b.  Otherwise, the gateway can look up and map the Azure AD UPN to a local user by performing a lookup against the local Active Directory domain.
 
 3.	The gateway service process impersonates the mapped local user, opens the connection to the underlying database and sends the query. The gateway does not need to be installed on the same machine as the database.
-
         a.	The user impersonation and connection to the database is only successful if the gateway service account is a domain account (or service SID), and if Kerberos constrained delegation was configured for the database to accept Kerberos tickets from the gateway service account.  
 
         > Note: Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
@@ -84,8 +83,8 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your AAD is already synchronized with your local Active Directory (using AAD DirSync/Connect). For this account change to work correctly, you have two options:
 
--   If you started with a previous version of the On-premises data gateway, follow precisely all five steps in sequence (including running the gateway configurator in step 3) described in the following article:
-    -   [Changing the gateway service account to a domain user](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
+-   If you started with a previous version of the On-premises data gateway, follow precisely all five steps in sequence (including running the gateway configuration changes in step 3) described in the following section of the linked article:
+    -   [Changing the gateway service account to a domain user](powerbi-gateway-proxy.md)
 
     -   If you already installed the Preview version of the On-premises data gateway, there is a new UI-guided approach to switch service accounts directly from within the gateway’s configurator. See the **Switching the gateway to a domain account** section near the end of this article.
 
