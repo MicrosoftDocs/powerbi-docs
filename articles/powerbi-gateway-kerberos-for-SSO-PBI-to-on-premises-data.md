@@ -37,7 +37,7 @@ When a user interacts with a DirectQuery report in the Power BI Service, each cr
 
 A query that runs with SSO consists of three steps, as shown in the following diagram.
 
-![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_01.png)
+image 1
 
 Here are additional details about those steps:
 
@@ -60,11 +60,11 @@ Here are additional details about those steps:
 
 If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you may receive the following error message:
 
-![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_02.png)
+image 2
 
 And the technical details associated with the error message may look like the following:
 
-![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_03.png)
+image 3
 
 The result is that the because of insufficient Kerberos configuration, the gateway could not impersonate the originating user properly, and the database connection attempt failed.
 
@@ -80,12 +80,12 @@ This Preview release of the On-premises data gateway supports an in-place upgrad
 ### Pre-requisite 2: Run the Gateway Windows service as a domain account
 In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:
 
-![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_04.png)
+image 4
 
 To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your AAD is already synchronized with your local Active Directory (using AAD DirSync/Connect). For this account change to work correctly, you have two options:
 
 -   If you started with a previous version of the On-premises data gateway, follow precisely all five steps in sequence (including running the gateway configurator in step 3) described in the following article:
-    -   [Changing the gateway service account to a domain user](https://powerbi.microsoft.com/en-us/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
+    -   [Changing the gateway service account to a domain user](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
 
     -   If you already installed the Preview version of the On-premises data gateway, there is a new UI-guided approach to switch service accounts directly from within the gateway’s configurator. See the **Switching the gateway to a domain account** section near the end of this article.
 
@@ -121,7 +121,7 @@ If there is no **Delegation** tab on the **Properties** dialog, you can manually
 
 For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”, and the machine name with the gateway service running is called **Machine1**. To set the SPN for the gateway service account for that machine in this example, you would run the following command:
 
-![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_05.png)
+image 5
 
 With that step completed, we can move on to configuring delegation settings.
 
@@ -155,7 +155,7 @@ Given those example names and settings, the configuration steps are the followin
 11.	Optionally, you can select **Expanded** to show both the FQDN and NetBIOS SPN in
 12.	The dialog will look similar to the following if you checked **Expanded**.
 
-    ![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_06.png)
+    image 6
 
 13.	Select **OK**.
 
@@ -164,11 +164,11 @@ Given those example names and settings, the configuration steps are the followin
 14.	On the gateway machine, run: *gpedit.msc*
 15.	Navigate to **Local Computer Policy > Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment**, as shown in the following image.
 
-    ![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_07.png)
+    image 7
 
 16.	From the list of policies under **User Rights Assignment**, select **Impersonate a client after authentication**.
 
-    ![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_08.png)
+    image 8
 
     Right-click and open the **Properties** for **Impersonate a client after authentication** and check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
 
@@ -180,7 +180,7 @@ Given those example names and settings, the configuration steps are the followin
 
 After all the configuration steps outlined earlier in this article have been completed, you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings**, enable SSO, then publish reports and datasets binding to that data source.
 
-![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_09.png)
+image 9
 
 This configuration will work in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, you'll need to contact your domain administrator to investigate further.
 
@@ -190,13 +190,13 @@ Earlier in this article, we discussed switching the gateway from a local service
 
 1.	Launch the **On-premises Data Gateway** configuration tool.
 
-    ![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_10.png)
+    image 10
 
 2.	Select the **Sign-in** button on the main page, and sign in with your Power BI account.
 3.	After sign-in is completed, select the **Service Settings** tab.
 4.	Click **Change account** to start the guided walk-through, as shown in the following figure.
 
-    ![](media/powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data/kerberos-SSO-on-prem_11.png)
+    image 11
 
 
 
