@@ -121,7 +121,7 @@ If there is no **Delegation** tab on the **Properties** dialog, you can manually
 
 For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”, and the machine name with the gateway service running is called **Machine1**. To set the SPN for the gateway service account for that machine in this example, you would run the following command:
 
-image 5
+image 555
 
 With that step completed, we can move on to configuring delegation settings.
 
