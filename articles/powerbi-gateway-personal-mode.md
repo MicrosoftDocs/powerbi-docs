@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2017"
+   ms.date="07/28/2017"
    ms.author="davidi"/>
 
 # On-premises data gateway (personal mode)
@@ -111,16 +111,14 @@ There are a few things to consider when using the **On-premises data gateway (pe
 
 The following data sources are currently not supported for the **On-premises data gateway (personal mode)**:
 
--   Active Directory
 -   ADO.NET 
 -   CurrentWorkbook
 -   FTP
 -   HDFS
--   R script
 -   SAP BusinessObjects         
 -   Spark
 
-Support for Spark and R script is planned, as is Active Directory, and currently under development.
+Support for Spark is planned for the second half of the 2017 calendar year.
 
 ## Frequently Asked Questions (FAQ)
 
