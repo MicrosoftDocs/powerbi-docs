@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="07/27/2017"
    ms.author="maggies"/>
 
 # How should I collaborate and share dashboards and reports?  
 
 You create dashboards and reports. Maybe you collaborate on them with your colleagues, too. Then you want others to have access to them. What's the best way to distribute them?
 
-In this article, we'll talk about options for collaborating and sharing in Power BI: 
+In this article, we'll compare these options for collaborating and sharing in Power BI: 
 
 - Collaborating with colleagues to create meaningful reports and dashboards in *app workspaces*.
 - Bundling those dashboards and reports into *apps* and distributing them to a larger group or your whole organization.
@@ -32,9 +32,7 @@ In this article, we'll talk about options for collaborating and sharing in Power
 - Publishing to the web, where anyone can interact with them.
 - Printing. 
 
-This article compares these and other activities.
-
-> [AZURE.NOTE] The people you collaborate with need [Power BI Pro](powerbi-premium.md#free-vs-pro-tiers) licenses. In most cases the people you want to see your dashboards need free or Pro licenses, depending on how you distribute them. Each section spells out details. 
+> [AZURE.NOTE] The people you collaborate with need [Power BI Pro](powerbi-premium.md#free-vs-pro-tiers) licenses. The people you want to see your dashboards need [free or Pro licenses](powerbi-premium.md#free-vs-pro-tiers), depending on how you distribute them. The following sections spell out details. The Power BI team is always interested in your feedback. Go to the [Power BI Community site](https://community.powerbi.com/) to make suggestions.
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-home-blog.png)
 
@@ -94,6 +92,8 @@ You can publish Power BI reports to the whole Internet by embedding interactive 
 You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. More about [printing or saving as a static file](powerbi-service-print.md).
 
 ## Next steps
+
+-   Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 -   [Share a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md)
 -   [Create and distribute an app in Power BI](powerbi-service-create-apps.md)
 -   More questions? [Try the Power BI Community](http://community.powerbi.com/).
