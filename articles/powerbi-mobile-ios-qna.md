@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Ask questions with Q&A in the iOS mobile apps (Tutorial)"
-   description="Try asking questions of sample data in your own words with Q&A on your iPad, iPhone, and iPod Touch."
+   pageTitle="Ask questions about your data in the iOS mobile apps (Tutorial)"
+   description="Try asking questions about this sample data in your own words with the Power BI virtual analyst on your iPad, iPhone, and iPod Touch."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/24/2017"
+   ms.date="07/28/2017"
    ms.author="maggies"/>
 
-# Ask questions with Q&A in the iOS mobile apps (Tutorial)
+# Ask questions about your data in the iOS mobile apps (Tutorial)
 
 Applies to:
 
@@ -29,9 +29,11 @@ Applies to:
 | iPhones | iPads |
 
 
-The easiest way to learn about your data in to ask questions about it in your own words. In the Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices, you can view featured insightes, or type or say a question. In this tutorial, you can ask questions about sample data.
+The easiest way to learn about your data in to ask questions about it in your own words. In the Microsoft Power BI app for iOS devices, you can view featured insights, and type or say a question. In this tutorial, you ask questions about sample data.
 
-![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
+![Top sales virtual analyst](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
+
+The virtual analyst is a conversational BI experience that replaces the Q&A feature in Power BI mobile apps for iOS devices. The virtual analyst still accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com), but it also delivers meaningful data insights in context, as part of an interactive, conversational BI experience.
 
 ## Download the samples
 
@@ -46,9 +48,9 @@ If you haven't already downloaded the Retail Analysis and Opportunity Analysis s
 
 1. On your iPhone or iPad, open the Power BI app and navigate to the Opportunity Analysis Sample dashboard.
 
-     ![Opportunity Analysis Sample dashboard](media/powerbi-mobile-ios-qna/power-bi-ios-qna-opportunity-analysis.png)
+1. Tap the virtual analyst icon ![virtual analyst icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
 
-1. Tap the Q&A icon ![Q&A icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+     ![Opportunity Analysis Sample dashboard](media/powerbi-mobile-ios-qna/power-bi-ios-qna-opportunity-analysis.png)
 
      The Power BI virtual analyst offers some suggestions to get started.
 
@@ -70,21 +72,21 @@ If you haven't already downloaded the Retail Analysis and Opportunity Analysis s
 
     ![Insight 2 chart in focus mode](media/powerbi-mobile-ios-qna/power-bi-ios-qna-open-insight-2.png)
 
-6. Tap the arrow in teh upper-left corner to go back to the Q&A experience.
+6. Tap the arrow in the upper-left corner to go back to the virtual analyst experience.
 
 
 ## Try asking questions on your iPhone or iPad
 
 1. On your iPhone or iPad, open the Power BI app and navigate to the Retail Analysis Sample dashboard.
-2. Tap the Q&A icon ![Q&A icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+2. Tap the virtual analyst icon ![virtual analyst icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
      The Power BI virtual analyst offers some suggestions to get started.
 3. Type **show**, tap **sales** from the suggestion list > **Send** ![Send icon](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-show-sales.png)
+    ![Show sales](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-show-sales.png)
 
 4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
+    ![Sales by item](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
 
 5. Tap **as** from the keywords, tap the column chart icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), then tap **Send** ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
@@ -96,7 +98,7 @@ If you haven't already downloaded the Retail Analysis and Opportunity Analysis s
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 
-7. Tap the arrow in the upper-left corner to go back to the Q&A chat window. 
+7. Tap the arrow in the upper-left corner to go back to the virtual analyst chat window. 
  
 9. Tap the X at the right of the text box to delete the text and start over.
 
@@ -116,7 +118,7 @@ If you haven't already downloaded the Retail Analysis and Opportunity Analysis s
 
 You can now ask questions about your data in the Power BI mobile app by speaking instead of typing. 
 
-1. Tap the Q&A icon ![Q&A icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+1. Tap the virtual analyst icon ![virtual analyst icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
 
 2. Tap the microphone icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-mic-icon.png).
 
@@ -142,15 +144,15 @@ See the Speech Recognition section of [What's New in iOS](https://go.microsoft.c
 
     Your feedback is anonymous, and helps us improve our answers to questions.
 
-## Enhance your Q&A results
+## Enhance your virtual analyst results
 
-You can improve the results you and your customers get when they use Q&A on a dataset, either by asking more targeted questions or by enhancing the dataset. 
+You can improve the results you and your customers get when they use the virtual analyst on a dataset, either by asking more targeted questions or by enhancing the dataset. 
 
 ### How to ask questions
-- Follow these [tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md), in the Power BI service or in your iOS mobile app.
+- Follow these [tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md) in the Power BI service or the virtual analyst in your iOS mobile app.
 
 ### How to enhance the dataset  
-- Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md). 
+- Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the virtual analyst](powerbi-service-make-your-data-work-well-with-q-and-a.md). 
 
 
 ## See also
