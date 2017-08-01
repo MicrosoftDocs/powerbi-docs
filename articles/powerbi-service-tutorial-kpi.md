@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="07/31/2017"
    ms.author="mihart"/>
 
 # KPI visuals (Tutorial)
@@ -50,13 +50,13 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 
 2. Convert the visual to a KPI by selecting the KPI icon from the Visualization pane.
 
-    ![](media/powerbi-service-tutorial-kpi/kpi-icon.png)
+    ![](media/powerbi-service-tutorial-kpi/power-bi-kpi-icon.png)
 
 3. Add a goal. Add last years sales as the goal. Drag **Total Units Last Year** to the **Target goals** field.
 
-    ![](media/powerbi-service-tutorial-kpi/kpi-new.png)
+    ![](media/powerbi-service-tutorial-kpi/power-bi-kpi.png)
 
-4.  Optionally, format the KPI by selecting the paintbrush icon to open the Formatting pane.
+4.  Optionally, format the KPI by selecting the paint roller icon to open the Formatting pane.
 
     -   **Indicator** - controls the indicator’s display units and decimal places.
 
@@ -73,7 +73,7 @@ KPIs are also available on your mobile devices – keeping you always connected 
 
 
 
-##  See also
+##  Next steps
 
 [Reports in Power BI](powerbi-service-reports.md)
 
