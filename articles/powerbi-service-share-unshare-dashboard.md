@@ -18,16 +18,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2017"
+   ms.date="07/27/2017"
    ms.author="maggies"/>
 
 # Share dashboards and reports with colleagues and others
 
-*Sharing* is one way to give other people access to your dashboards and reports. Power BI offers several ways to collaborate and distribute your dashboards, and sharing is just one. Sharing is a good solution if you want just a few other people to view your work. See [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to compare.
+*Sharing* is one way to give other people access to your dashboards and reports. Power BI offers [several ways to collaborate and distribute your dashboards](powerbi-service-how-should-i-share-my-dashboard.md), and sharing is just one. Sharing is a good solution if you want just a few other people to view your work.
+
+Whether you share content inside or outside your organization, you and your recipients need a Power BI Pro license. See this [comparison of Power BI free and Pro](powerbi-premium.md#free-vs-pro-tiers). The Power BI team is always interested in your feedback. Go to the [Power BI Community site](https://community.powerbi.com/) to make suggestions.
 
 ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-in-situ.png)
-
-Whether you share content inside or outside your organization, you and your recipients need a Power BI Pro license. See this [comparison of Power BI free and Pro](powerbi-premium.md#free-vs-pro-tiers).
 
 You can share a dashboard from your own My Workspace, or from an app workspace. When you share a dashboard, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports, unless row-level security (RLS) is applied. The colleagues you share it with can share the dashboard with their colleagues, if you allow them to. The people outside your organization can view and interact with the dashboard too, but can't share it. 
 
@@ -179,6 +179,7 @@ Only the dashboard owner can turn resharing on and off.
 
 ## Next steps
 
+- Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 - [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md)
 - [Share a dashboard that links to an Excel file](powerbi-service-share-dashboard-that-links-to-excel.md)
 - More questions? [Try the Power BI Community](http://community.powerbi.com/).
