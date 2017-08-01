@@ -1,5 +1,5 @@
-## Update to the latest version 
- 
+## Update to the latest version
+
 A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
 
 ## Common issues
@@ -14,9 +14,9 @@ Your proxy may require authentication from a domain user account. By default, th
 
 ### Your proxy only allows ports 80 and 443 traffic
 
-Some proxies restrict traffic to only ports 80 and 443. By default, communication to Azure Service Bus will occur on ports other than 443. 
+Some proxies restrict traffic to only ports 80 and 443. By default, communication to Azure Service Bus will occur on ports other than 443.
 
-You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP. Although, this will greatly reduce performance. You will need to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file. Change the value from `AutoDetect` to `Https`. This file is located, by default, at *C:\Program Files\On-premises data gateway*.
+You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP. You will need to modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file. Change the value from `AutoDetect` to `Https`. This file is located, by default, at *C:\Program Files\On-premises data gateway*.
 
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
