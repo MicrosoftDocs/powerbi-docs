@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/20/2017"
+   ms.date="08/01/2017"
    ms.author="mihart"/>
 # Getting a custom visual *certified*
 
@@ -60,13 +60,19 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 
 |Name  |
 |---------|
-|[Bullet Chart](https://store.office.com/en-us/app.aspx?assetid=WA104380755&sourcecorrid=48334e83-53cf-4bc0-a022-1da4d06618b9&searchapppos=0)   |
-|Card with States by OKViz - coming soon |
+|[Bullet chart](https://store.office.com/en-us/app.aspx?assetid=WA104380755&sourcecorrid=48334e83-53cf-4bc0-a022-1da4d06618b9&searchapppos=0)   |
+|[Bullet chart by OKViz](https://store.office.com/app.aspx?assetid=WA104380953&sourcecorrid=284954d6-ff05-41e6-a29b-4fb76c125efb )
+|[Card with States by OKViz](https://store.office.com/app.aspx?assetid=WA104380967&sourcecorrid=3ed8c486-8a50-4b05-a3e8-ae27dec65711 )|
 |[Chiclet slicer ](https://store.office.com/chiclet-slicer-WA104380756.aspx?assetid=WA104380756&sourcecorrid=83cc564f-4d8f-40f7-85bc-5488c1309a58&searchapppos=0)    |
 |[Dual KPI](https://store.office.com/dual-kpi-WA104380774.aspx?assetid=WA104380774&sourcecorrid=b76ac0d1-a367-46f3-bc56-677102c9b784&searchapppos=0)     |
-|KPI Status With History / KPI Indicator - coming soon   |
-|Tachometer-coming soon   |
+|[Forcasting (Forecasting HTML)](https://store.office.com/app.aspx?assetid=WA104380816&sourcecorrid=c2ff679c-35a2-439c-9e6e-e82e8e0ec006)  |
+|[KPI Indicator](https://store.office.com/app.aspx?assetid=WA104380832&sourcecorrid=a151e749-3b1e-4a97-9166-86259fcd99bc )|
+|Long text - coming soon  |
+|[Play Axis](https://store.office.com/app.aspx?assetid=WA104380981&sourcecorrid=46179fa4-a4ec-49b6-b026-4810e94cc8c5 )   |
+|[Scroller](https://store.office.com/app.aspx?assetid=WA104381018&sourcecorrid=9d991ed7-3e61-487a-9386-12742aa673a8)   |
+|[Tachometer](https://store.office.com/app.aspx?assetid=WA104380937&sourcecorrid=3e1ab0b2-cbce-4d3c-a3f3-07a45a39984e )   |
 |[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx?assetid=WA104380786&sourcecorrid=a21a11dd-be97-4758-879c-0d6dc56d5657&searchapppos=0)    |
+|[Word Cloud](https://store.office.com/app.aspx?assetid=WA104380752&sourcecorrid=fcc6056e-35a6-40a6-9d4a-8762877d902b)   |
 
 
 
