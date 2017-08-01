@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/0117"
+   ms.date="08/01/17"
    ms.author="maggies"/>
 
 # Ask questions about your data in the iOS mobile apps (Tutorial)
