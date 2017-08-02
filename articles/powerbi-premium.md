@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2017"
+   ms.date="08/02/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium - what is it?
@@ -63,6 +63,7 @@ If an app is backed by premium capacity (i.e. it was published from an app works
 
 By default, your workspace will be in shared capacity. This includes your personal *My workspace* along with App workspaces. A Shared capacity is the experience you are used to with Power BI, where your workloads run on computational resources shared by other customers.
 
+<a name="premiumskus"/>
 ### Premium capacity nodes
 
 Power BI Premium is available in node configurations with different v-core capacities. For more information about specific SKU offereings and cost, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). A [cost calculator](https://powerbi.microsoft.com/calculator/) is also available. For information regarding embedded analytics capacity planning, see [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy).
@@ -72,35 +73,14 @@ Power BI Premium is available in node configurations with different v-core capac
 
 |Capacity Node|Total cores<br/>*(Backend + frontend)*|Backend Cores|Frontend Cores|DirectQuery/live connection limits|Max page renders at peak hour|Availability|
 |---------|---------|---------|---------|---------|---------|---------|
-|EM1|1 v-cores|.5 cores, 3GB RAM|.5 cores||1-300|July 2017|
-|EM2|2 v-cores|1 core, 5GB RAM|1 core||301-600|July 2017|
-|EM3|4 v-cores|2 cores, 10GB RAM|2 cores||601-1,200|July 2017|
-|P1|8 v-cores|4 cores, 25GB RAM|4 cores|30 per second|1,201-2,400|Available|
-|P2|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|2,401-4,800|Available|
-|P3|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|4,801-9600|Available|
-
+|[EM3 (month to month)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1)|4 v-cores|2 cores, 10GB RAM|2 cores||601-1,200|Available|
+|[P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1)|8 v-cores|4 cores, 25GB RAM|4 cores|30 per second|1,201-2,400|Available ([month to month](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) is also available)|
+|[P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1)|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|2,401-4,800|Available|
+|[P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1)|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|4,801-9600|Available|
 
 * The frontend cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience.
 
 * The backend cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
-
-## Free vs. Pro tiers
-
-*All users* in the service are either Free or Pro. While Pro users can publish content to both shared and Premium capacity, only Pro users can publish content to Premium capacity. Free users can now connect to all data sources through all connectivity options such as DirectQuery, live connection and the use of the data gateway.
-
-||Free|Pro|
-|---------|---------|---------|
-|**Connect to 70+ data sources**|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
-|**Publish to Web**|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
-|**Peer-to-peer sharing**|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
-|**Export to PowerPoint, Excel, CSV**|![](media/powerbi-premium/available.png "Available")|![](media/powerbi-premium/available.png "Available")|
-|**Enterprise distribution**|||
-|Apps|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
-|Email subscriptions|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
-|Embed APIs and controls|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
-|**Collaboration**|||
-|App workspaces|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
-|Analyze in Excel, analyze in Power BI Desktop|![](media/common/not-available.png "Not available")|![](media/powerbi-premium/available.png "Available")|
 
 ## Power BI Report Server
 
