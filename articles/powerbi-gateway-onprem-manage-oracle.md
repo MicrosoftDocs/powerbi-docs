@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/01/2017"
+ms.date="08/02/2017"
 ms.author="davidi"/>
 
 # Manage your data source - Oracle
@@ -40,7 +40,7 @@ For **32-bit** versions of Power BI Desktop, use the following link to download 
 
 For **64-bit** versions of Power BI Desktop, or for the On-Premises Data Gateway, use the following link to download and install the **64-bit** Oracle client:
 
--   [64-bit ODAC 12c Release 4 (12.1.0.2.4) Xcopy for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+-   [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 Once that is installed, you will need to configure your tnsnames.ora file with the proper information for your database. Power BI Desktop and the gateway will go off of the net_service_name defined in the tnsnames.ora file. If it isn't configured, you will not be able to connect. The default path for tnsnames.ora is the following: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. For more information about how to configure tnsnames.ora files, see [Oracle: Local Naming Parameters (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
