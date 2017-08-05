@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2017"
+   ms.date=08/05/2017"
    ms.author="mihart"/>
 
 # Create featured questions for Power BI Q&A  
@@ -28,7 +28,8 @@ If you own a dataset, you can add your ownÂ featured questions to that dataset.Â
 Watch Will add some featured questions to Power BI Q&A and then use those featured questions to explore his dataset. Then follow the step-by-step instructions below the video to try it out yourself.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
-
+>[AZURE.NOTE]
+Q&A featured questions are also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](powerbi-mobile-ios-qna.md).
 
 This article uses the [Retail Analysis Sales sample](powerbi-sample-datasets.md).
 
