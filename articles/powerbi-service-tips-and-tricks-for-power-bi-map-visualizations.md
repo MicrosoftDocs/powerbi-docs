@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Tips and Tricks for Power BI Map visualizations"
-   description="Tips and Tricks for Power BI Map visualizations"
+   pageTitle="Tips and Tricks for Map visualizations including integration with Bing Maps"
+   description="Tips and Tricks for Power BI Map visualizations, visuals, locations, longitude and latitude, and how they work with Bing Maps. "
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/20/2017"
+   ms.date="08/05/2017"
    ms.author="mihart"/>
 
 # Tips and Tricks for Power BI Map visualizations
@@ -35,11 +35,11 @@ Power BI service and Power BI Desktop send Bing the geo data it needs to create 
 
     In the example below, the field **Vendor** is being used for geo-coding, so all vendor data is sent to Bing. Data from the **Size** and **Color saturation** buckets is not sent to Bing.
 
-    ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-sent-to-bing-new.png)
+    ![sent to Bing Maps](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-sent-to-bing-new.png)
 
     In this second example below, the field **Territory** is being used for geo-coding, so all territory data is sent to Bing. Data from the **Legend** and **Color saturation** buckets is not sent to Bing.
 
-    ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-filled-map.png)
+    ![Filled maps and Bing](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-filled-map.png)
 
 
 ##  In the dataset: tips to improve the underlying dataset
@@ -75,15 +75,15 @@ While we encourage you to use geo-hierarchies in your maps, if you must use a si
 
 In Power BI, if the dataset you are using has fields for longitude and latitude -- use them!  Power BI has special buckets to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area.  And do the same for your longitude data. When you do this, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level.
 
-![](media/powerbi-service-tutorial-filled-maps-choropleths/PBI_Latitude.png) 
+![latitude and longitude](media/powerbi-service-tutorial-filled-maps-choropleths/PBI_Latitude.png) 
 
 ## Use geo-hierarchies so you can drilldown to different "levels" of location
 
 When your dataset already has different levels of location data, you and your colleagues can use Power BI to create *geo-hierarchies*. To do this, drag more than one field into the **Location** bucket. Used together in this way, the fields become a geo-hierarchy. In the example below we have added geo fields for: Country/Region, State, and City. In Power BI you and your colleagues can drill up and down using this geo-hierarchy.
 
-  ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-hierarchy.png)
+  ![Location field](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-hierarchy.png)
 
-   ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-geo.gif)
+   ![create geo-hierarchy for maps](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-geo.gif)
 
 When drilling with geo-hierarchies, it is important to know how each drill button works and what gets sent to Bing Maps. 
 
@@ -91,7 +91,7 @@ When drilling with geo-hierarchies, it is important to know how each drill butto
 
 - On the left there are 2 other drill options. The first option, ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-drill-down2.png) , drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
 
-- The second option, ![](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-drill-down3.png) , is similar to Drill Down, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level’s context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the Drill Down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
+- The second option, ![drilldown with maps](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-drill-down3.png) , is similar to Drill Down, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level’s context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the Drill Down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
 
 ## See also
 
