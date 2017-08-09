@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/31/2017"
+   ms.date="08/09/2017"
    ms.author="mihart"/>
 
 # KPI visuals (Tutorial)
@@ -35,7 +35,7 @@ KPIs are a great choice:
 ##  KPI visual requirements
 A Key Performance Indicator (KPI) is based on a specific measure and is designed to help you evaluate the current value and status of a metric against a defined target. Therefore, a KPI visual requires a *base* measure that evaluates to a value and a *target* measure or value, and a threshold or goal.
 
->[AZURE.NOTE] Currently, a KPI dataset needs to contain goal values for a KPI. This can be done by adding an excel sheet with goals to your data model or PBIX file.
+>[AZURE.NOTE] Currently, a KPI dataset needs to contain goal values for a KPI. If your dataset doesn't contain one, you can create goals by adding an Excel sheet with goals to your data model or PBIX file.
 
 ##  How to create a KPI  
 
@@ -47,6 +47,8 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 1.  Select **Sales > Total Units This Year**.  This will be the indicator.
 
 2.  Add **Time > Month**.  This will be represent the trend.
+
+3. IMPORTANT: Sort the chart by **Month**. Once you convert the visualization to a KPI, there is no option to sort.
 
 2. Convert the visual to a KPI by selecting the KPI icon from the Visualization pane.
 
@@ -71,7 +73,8 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 
 KPIs are also available on your mobile devices – keeping you always connected to your businesses heartbeat
 
-
+##    Considerations and troubleshooting
+- If your KPI doesn't look like the one above, it may be because you need to sort by month. Since KPIs don't have a sort option, you'll need to sort by month *before* you convert your visualization to a KPI.
 
 ##  Next steps
 
