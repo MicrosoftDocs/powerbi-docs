@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="05/09/2017"
-   ms.author="amac"/>
+   ms.author="mihart"/>
 
 # Procurement Analysis sample for Power BI: Take a tour
 
