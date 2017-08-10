@@ -17,11 +17,13 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/24/2017"
+   ms.date="08/10/2017"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
-**Power BI Desktop** provides advanced query, modeling, and report creation features that enables you to build data models, create reports, and share your work by publishing to the Power BI service. **Power BI Desktop** is a free download.
+**Power BI Desktop** lets you build advanced queries, models, and reports that visualize data. With **Power BI Desktop**, you can build data models, create reports, and share your work by publishing to the Power BI service.  **Power BI Desktop** is a free download.
+
+## Download Power BI Desktop
 
 To download the most recent version of **Power BI Desktop**, you can select the download icon from the upper right corner of the Power BI service, and select **Power BI Desktop**.
 
@@ -30,6 +32,8 @@ To download the most recent version of **Power BI Desktop**, you can select the 
 You can also download the latest version of Power BI Desktop from the following download page:
 
 -   [**Power BI Desktop download** (both 32- and 64-bit versions)](https://powerbi.microsoft.com/desktop).
+
+    [![](media/powerbi-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
 
 Regardless of which way you choose to download, once **Power BI Desktop** is downloaded you're prompted to run the installation file:
 
