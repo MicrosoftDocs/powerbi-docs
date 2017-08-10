@@ -3,7 +3,7 @@
    description="Connect to services with content packs for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="joeshoukry"
+   authors="ajayan"
    manager="erikre"
    backup="maggiesMSFT"
    editor=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
-   ms.author="yshoukry"/>
+   ms.date="08/10/2017"
+   ms.author="ajayan"/>
 
-# Connect to services with content packs for Power&nbsp;BI
+# Connect to services with content packs for Power BI
 
 You can connect to content packs for a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. 
 

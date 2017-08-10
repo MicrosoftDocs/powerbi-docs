@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="08/10/2017"
    ms.author="asaxton"/>
+
 # Where is my Power BI tenant located?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -46,6 +47,5 @@ The data region is based on the country that was selected when the tenant was fi
 This selection is what drives the location of where your data will be stored. Power BI will pick a data region closest to this selection.
 
 > [AZURE.WARNING] This selection cannot be changed!
-
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

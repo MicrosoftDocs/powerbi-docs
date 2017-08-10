@@ -3,7 +3,7 @@
    description="SweetIQ content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="joeshoukry"
+   authors="ajayan"
    manager="erikre"
    backup="maggiesMSFT"
    editor=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
-   ms.author="yshoukry"/>
+   ms.date="08/10/2017"
+   ms.author="ajayan"/>
 
-# SweetIQ content pack for Power&nbsp;BI
+# SweetIQ content pack for Power BI
 
 The Power BI content pack pulls data from your SweetIQ account and generates set of out of box content allowing you to easily explore your data. Use the SweetIQ content pack to analyze data about your locations, listings, ratings and reviews. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 

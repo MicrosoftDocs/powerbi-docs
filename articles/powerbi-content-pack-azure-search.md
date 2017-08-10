@@ -3,7 +3,7 @@
    description="Azure Search content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="joeshoukry"
+   authors="ajayan"
    manager="erikre"
    backup="maggiesMSFT"
    editor=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
-   ms.author="yshoukry"/>
+   ms.date="08/10/2017"
+   ms.author="ajayan"/>
 
-# Azure Search content pack for Power&nbsp;BI
+# Azure Search content pack for Power BI
 
 Azure Search Traffic Analytics allows you to monitor and understand the traffic to your Azure Search service. The Azure Search content pack for Power BI provides detailed insights on your Search data, including Search, Indexing, Service Stats and Latency from the last 30 days. More details can be found in the [Azure blog post](https://azure.microsoft.com/en-us/blog/analyzing-your-azure-search-traffic/).
 

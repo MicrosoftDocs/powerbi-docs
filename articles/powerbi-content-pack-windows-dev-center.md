@@ -3,7 +3,7 @@
    description="Windows Dev Center content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="joeshoukry"
+   authors="ajayan"
    manager="erikre"
    backup="maggiesMSFT"
    editor=""
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
-   ms.author="yshoukry"/>
-# Windows Dev Center content pack for Power&nbsp;BI
+   ms.date="08/10/2017"
+   ms.author="ajayan"/>
+# Windows Dev Center content pack for Power BI
 
 Explore and monitor your Windows Dev Center app analytics data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 

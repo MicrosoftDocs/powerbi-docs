@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="08/10/2017"
    ms.author="asaxton"/>
+
 # Using OAuth to connect to Reporting Services
 
 Learn how to configure your environment to support OAuth authentication with the Power BI mobile app in order to connect to Reporting Services 2016 or later.
