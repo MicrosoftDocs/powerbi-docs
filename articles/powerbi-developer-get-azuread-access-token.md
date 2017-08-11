@@ -201,5 +201,6 @@ For information on how to use **await**, see [await (C# Reference)](https://docs
 ## Next steps
 
 Now that you have the access token, you can call the Power BI REST API to embed content. For information on how to embed your content, see [](powerbi-developer-embedding-content.md#step-2-embed-your-content).
+<!---Loc Comment: The reference link is missing--->
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
