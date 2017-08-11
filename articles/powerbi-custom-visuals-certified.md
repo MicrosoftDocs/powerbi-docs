@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/11/2017"
    ms.author="mihart"/>
 # Getting a custom visual *certified*
 
@@ -61,7 +61,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |Link to Office store  | Link to video |
 |---------|---------|
 |[Association Rules (R visual)](https://store.office.com/association-rules-WA104380815.aspx)  |   |
-|[Bullet Chart](https://store.office.com/bullet-chart-WA104380755.aspx)   | [Video](https://www.youtube.com/watch?v=AOlsFYkfkcw)
+|[Bullet Chart](https://store.office.com/bullet-chart-WA104380755.aspx)   | |
 |[Bullet Chart by OKViz](https://store.office.com/bullet-chart-by-okviz-WA104380953.aspx) |   |
 |[Card with States by OKViz](https://store.office.com/card-with-states-by-okviz-WA104380967.aspx) |[Video](https://youtu.be/myiX0BmZd8U)  |
 |[Chiclet slicer](https://store.office.com/chiclet-slicer-WA104380756.aspx)  |[Video](https://youtu.be/iYOkJ1APueY) |
