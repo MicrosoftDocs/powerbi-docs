@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="08/10/2017"
    ms.author="asaxton"/>
 
 # Azure SQL Data Warehouse with DirectQuery

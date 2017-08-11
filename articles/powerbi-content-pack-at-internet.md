@@ -3,7 +3,7 @@
    description="AT Internet Bridge content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="joeshoukry"
+   authors="ajayan"
    manager="erikre"
    backup="maggiesMSFT"
    editor=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
-   ms.author="yshoukry"/>
+   ms.date="08/10/2017"
+   ms.author="ajayan"/>
 
-# AT Internet Bridge content pack for Power&nbsp;BI
+# AT Internet Bridge content pack for Power BI
 
 AT Internet helps you to extract immediate value from your data using its unified digital analytics platform, the Analytics Suite. The AT Internet Bridge content pack for Power BI includes data around visits, sources, localization and devices for your site.
 

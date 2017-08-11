@@ -17,10 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="08/10/2017"
    ms.author="asaxton"/>
 
-# Template Content Pack Experiences 
+# Template Content Pack Experiences
+
 This section highlights a typical experience for a user connecting to an ISV [content pack](powerbi-content-packs-services.md). 
 
 Try the connection experience yourself by connecting to a released content pack at https://app.powerbi.com/getdata/services (such as the [GitHub content pack](https://app.powerbi.com/getdata/services/github) described below).

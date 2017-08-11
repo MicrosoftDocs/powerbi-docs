@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
+   ms.date="08/10/2017"
    ms.author="ajayan"/>
 
 # Create and publish an organizational content pack (tutorial)
