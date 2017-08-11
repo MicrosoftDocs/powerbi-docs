@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/02/2017"
+   ms.date="08/11/2017"
    ms.author="mihart"/>
 # Getting a custom visual *certified*
 
@@ -60,13 +60,29 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 
 |Link to Office store  | Link to video |
 |---------|---------|
-|[Bullet Chart](https://store.office.com/en-us/app.aspx?assetid=WA104380755&sourcecorrid=48334e83-53cf-4bc0-a022-1da4d06618b9&searchapppos=0)   | [Bullet chart video](https://www.youtube.com/watch?v=AOlsFYkfkcw)
-|Card with States by OKViz - coming soon |
-|[Chiclet slicer ](https://store.office.com/chiclet-slicer-WA104380756.aspx?assetid=WA104380756&sourcecorrid=83cc564f-4d8f-40f7-85bc-5488c1309a58&searchapppos=0)    |
-|[Dual KPI](https://store.office.com/dual-kpi-WA104380774.aspx?assetid=WA104380774&sourcecorrid=b76ac0d1-a367-46f3-bc56-677102c9b784&searchapppos=0)     |
-|KPI Status With History / KPI Indicator - coming soon   |
-|Tachometer-coming soon   |
-|[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx?assetid=WA104380786&sourcecorrid=a21a11dd-be97-4758-879c-0d6dc56d5657&searchapppos=0)    |
+|[Association Rules (R visual)](https://store.office.com/association-rules-WA104380815.aspx)  |   |
+|[Bullet Chart](https://store.office.com/bullet-chart-WA104380755.aspx)   | |
+|[Bullet Chart by OKViz](https://store.office.com/bullet-chart-by-okviz-WA104380953.aspx) |   |
+|[Card with States by OKViz](https://store.office.com/card-with-states-by-okviz-WA104380967.aspx) |[Video](https://youtu.be/myiX0BmZd8U)  |
+|[Chiclet slicer](https://store.office.com/chiclet-slicer-WA104380756.aspx)  |[Video](https://youtu.be/iYOkJ1APueY) |
+|[Clustering (R visual)](https://store.office.com/clustering-WA104380861.aspx)|     |
+|[Clustering with outliers (R visual)](https://store.office.com/clustering-with-outliers-WA104380889.aspx)|   |
+|[Correlation Plot (R visual)](https://store.office.com/correlation-plot-WA104380814.aspx)|  |
+|[Decision tree (R visual)](https://store.office.com/decision-tree-chart-WA104380817.aspx)|   |
+|[Dual KPI](https://store.office.com/dual-kpi-WA104380774.aspx)  | [Video](https://youtu.be/821o0-eVBXo?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)    |
+|Fly Wheel - coming soon |   |
+|[Forecasting with ARIMA (R visual)](https://store.office.com/forecasting-with-arima-WA104380888.aspx)|   |
+|[Funnel plot (R visual)](https://store.office.com/funnel-plot-WA104381066.aspx)|  |
+|[KPI Indicator](https://store.office.com/kpi-indicator-WA104380832.aspx)   |  |
+|[Play Axis Dynamic Slicer](https://store.office.com/play-axis-dynamic-slicer-WA104380981.aspx) |   |
+|[Radar chart](https://store.office.com/radar-chart-WA104380771.aspx) |   |
+|[Scroller](https://store.office.com/scroller-WA104381018.aspx) |  |
+|[Smart Filter by OKViz](https://store.office.com/smart-filter-by-okviz-WA104380859.aspx) |   |
+|[Spline (R visual)](https://store.office.com/spline-chart-WA104380860.aspx)|   |
+|[Tachometer](https://store.office.com/tachometer-WA104380937.aspx?)   | |
+|[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx)    | [Video](https://youtu.be/ozMtZ4_NZ10)|
+|[Time series decomposition (R visual](https://store.office.com/time-series-decomposition-chart-WA104380897.aspx?) | |
+| [Word Cloud](https://store.office.com/word-cloud-WA104380752.aspx?) |[Video](https://youtu.be/AblTenl9fqo)  |
 
 
 
