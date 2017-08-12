@@ -3,9 +3,9 @@
    description="In this tutorial you create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI."
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="maggiesMSFT" 
    manager="erikre" 
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="no"
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/10/2017"
-   ms.author="ajayan"/>
+   ms.author="maggies"/>
 
 # Create and publish an organizational content pack (tutorial)
 
