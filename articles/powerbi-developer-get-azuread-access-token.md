@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/21/2017"
+   ms.date="08/11/2017"
    ms.author="asaxton"/>
 
 # Authenticate users and get an Azure AD access token for your Power BI app
@@ -200,6 +200,6 @@ For information on how to use **await**, see [await (C# Reference)](https://docs
 
 ## Next steps
 
-Now that you have the access token, you can call the Power BI REST API to embed content. For information on how to embed your content, see [](powerbi-developer-embedding-content.md#step-2-embed-your-content).
+Now that you have the access token, you can call the Power BI REST API to embed content. For information on how to embed your content, see [How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md#step-2-embed-your-content).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

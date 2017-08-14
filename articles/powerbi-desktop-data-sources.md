@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="08/10/2017"
    ms.author="davidi"/>
 
 
@@ -81,6 +81,7 @@ The **Database** category provides the following data connections:
 -   SAP Business Warehouse server
 -   Amazon Redshift
 -   Impala
+-   Google BigQuery (Beta)
 -   Snowflake (Beta)
 
 
@@ -98,9 +99,9 @@ The **Azure** category provides the following data connections:
 -   Azure Analysis Services database (Beta)
 -   Azure Blob Storage
 -   Azure Table Storage
--   Azure DocumentDB (Beta)
+-   Azure Cosmos DB (Beta)
 -   Azure Data Lake Store
--   Azure HDInsight
+-   Azure HDInsight (HDFS)
 -   Azure HDInsight Spark (Beta)
 
 
@@ -112,6 +113,7 @@ The following image shows the **Get Data** window for **Azure**.
 
 The **Online Services** category provides the following data connections:
 
+-   Power BI service
 -   SharePoint Online List
 -   Microsoft Exchange Online
 -   Dynamics 365 (online)

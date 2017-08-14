@@ -15,7 +15,7 @@
 |Oledb|No|Yes|
 |Oracle|Yes|Yes|
 |PostgresSQL|No|Yes|
-|SAP BW|No|Yes|
+|SAP BW|Yes|Yes|
 |SAP HANA|Yes|Yes|
 |SharePoint list (on-premises)|No|Yes|
 |SQL Server|Yes|Yes|

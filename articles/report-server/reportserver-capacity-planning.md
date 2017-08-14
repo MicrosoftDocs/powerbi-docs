@@ -92,11 +92,11 @@ As stated earlier, tests started with 20 concurrent users making requests to the
 |Workload|8 Core/32 GB|16 Core/64 GB|
 |---------|---------|---------|
 |**Power BI Report Heavy**|50 concurrent users|150 concurrent users|
-|**Power BI Report Heavy**|100 concurrent users|160 concurrent users|
+|**Paginated Report Heavy**|100 concurrent users|160 concurrent users|
 
 ### Total user capacity
 
-At Microsoft, we have a production deployment of Power BI Report Server that several teams used. When we analyze actual usage of this environment, we observe that the number of concurrent users at any given time (even during daily peak load) doesn’t tend to exceed 5% of the total user base. Using this 5% concurrency ratio as a benchmark, we extrapolated the total user base Power BI Report Server could handle with 99% reliability. 
+At Microsoft, we have a production deployment of Power BI Report Server that several teams used. When we analyze actual usage of this environment, we observe that the number of concurrent users at any given time (even during daily peak load) doesn’t tend to exceed 5% of the total user base. Using this 5% concurrency ratio as a benchmark, we extrapolated the total user base Power BI Report Server could handle with 99% reliability.
 
 |Workload|8 Core/32 GB|16 Core/64 GB|
 |---------|---------|---------|
@@ -109,8 +109,16 @@ Select a report to view the results of the load test.
 
 |Workload|8 Core/32 GB|16 Core/64 GB|
 |---------|---------|---------|
-|**Power BI Report Heavy**|[View - 8 core](https://msit.powerbi.com/view?r=eyJrIjoiZjZmZWVkZmYtMDJjYy00NDQyLWI5YTYtMjI0MDdlMjExMWQ5IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)|[View - 16 core](https://msit.powerbi.com/view?r=eyJrIjoiZWNmZjIxNTEtNzY3Mi00NWFhLTkwNGYtOGY0NWRlOTdmMDE1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)|
-|**Paginated Report Heavy**|[View - 8 core](https://msit.powerbi.com/view?r=eyJrIjoiMTg1ZjMyZTAtMzBkNi00YmQ0LTlmNzYtNzhiNWMxNzY4Zjc2IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)|[View - 16 core](https://msit.powerbi.com/view?r=eyJrIjoiYTI0MzY5NzgtODkyOS00MWFkLTlhOGItYzJhNzE2MzNhNjczIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)|
+|**Power BI Report Heavy**|[View - 8 core](https://msit.powerbi.com/view?r=eyJrIjoiMDhhNGY4NGQtNGRhYy00Yzk4LTk2MzAtYzFlNWI5NjBkMGFiIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)|[View - 16 core](https://msit.powerbi.com/view?r=eyJrIjoiNDBiODk1OGUtYTAyOC00MzVhLThmZmYtNzVjNTFjNzMwYzkwIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)|
+|**Paginated Report Heavy**|[View - 8 core](https://msit.powerbi.com/view?r=eyJrIjoiNDFiZWYzMTktZGIxNS00MzcwLThjODQtMmJkMGRiZWEzNjhlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)|[View - 16 core](https://msit.powerbi.com/view?r=eyJrIjoiOTU0YjJkYTgtNDg4Yy00NzlhLWIwMGYtMzg4YWI2MjNmOTZjIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)|
+
+<iframe width="640" height="360" src="https://msit.powerbi.com/view?r=eyJrIjoiMDhhNGY4NGQtNGRhYy00Yzk4LTk2MzAtYzFlNWI5NjBkMGFiIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
+
+<iframe width="640" height="360" src="https://msit.powerbi.com/view?r=eyJrIjoiNDBiODk1OGUtYTAyOC00MzVhLThmZmYtNzVjNTFjNzMwYzkwIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
+
+<iframe width="640" height="360" src="https://msit.powerbi.com/view?r=eyJrIjoiNDFiZWYzMTktZGIxNS00MzcwLThjODQtMmJkMGRiZWEzNjhlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
+
+<iframe width="640" height="360" src="https://msit.powerbi.com/view?r=eyJrIjoiOTU0YjJkYTgtNDg4Yy00NzlhLWIwMGYtMzg4YWI2MjNmOTZjIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
 
 ## Summary
 

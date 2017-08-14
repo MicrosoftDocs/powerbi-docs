@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Use the matrix visual in Power BI Desktop (Preview)"
+   pageTitle="Use the matrix visual in Power BI Desktop"
    description="Learn how the matrix visual enables step layouts and granular highlighting in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2017"
+   ms.date="08/10/2017"
    ms.author="davidi"/>
 
 # Use the new Matrix visual in Power BI Desktop
@@ -32,7 +32,7 @@ There are many new features associated with the matrix, and we'll go through the
 
 ### Enable the Matrix visual for Preview
 
-Beginning with the July 2017 release of **Power BI Desktop**, the new matrix visual is generally available, and there are no steps necessary to enable the new Matrix visual. All matrix visuals created with the July 2017 or later versions of **Power BI Desktop** are based on the new matrix visual (rather than the previous version). 
+Beginning with the July 2017 release of **Power BI Desktop**, the new matrix visual is generally available, and there are no steps necessary to enable the new Matrix visual. All matrix visuals created with the July 2017 or later versions of **Power BI Desktop** are based on the new matrix visual (rather than the previous version).
 
 You can try the new **Matrix** visual with the **March 2017** through **June 2017** releases of **Power BI Desktop**. To enable this preview feature for those versions of **Power BI Desktop**, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **New matrix visual**. You'll need to restart **Power BI Desktop** after you make the selection.
 
@@ -121,6 +121,19 @@ You can easily adjust the **stepped layout** settings. With the new **Matrix** v
 
 If you turn off **Stepped layout**, the subcategories are shown in another column rather than indented beneath the parent category.
 
+
+## Subtotals with matrix visuals
+
+You can turn subtotals on or off in matrix visuals, for both rows and columns. In the following image, you can see that the row subtotals are set to **on**.
+
+![](media/powerbi-desktop-matrix-visual/matrix-visual_20.png)
+
+In the **Format** section of the **Visualizations** pane, expand the **Subtotals** card and turn the **Row subtotals** slider to **Off**. When you do so, the subtotals are not shown.
+
+![](media/powerbi-desktop-matrix-visual/matrix-visual_21.png)
+
+The same process applies for column subtotals.
+
 ## Cross-highlighting with matrix visuals
 
 With the new **Matrix** visual, any elements in the matrix can be selected as the basis for cross-highlighting. Select a column in a new **Matrix** and that column is highlighted, as are any other visuals on the report page. This has been a common feature of other visuals and the selection of a data point, and now the new **Matrix** visual can participate.
@@ -128,6 +141,25 @@ With the new **Matrix** visual, any elements in the matrix can be selected as th
 In addition, using CTRL+Click also works for cross-highlighting. For example, in the following image a collection of subcategories were selected from the new **Matrix** visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the new **Matrix** visual.
 
 ![](media/powerbi-desktop-matrix-visual/matrix-visual_16.png)
+
+## Shading and font colors with matrix visuals
+
+With the new **Matrix** visual, you can apply **conditional formatting** (colors and shading) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.
+
+To apply conditional formatting, you can do either of the following when a matrix visual is selected:
+
+-   In the **Fields** pane, right-click the Field, and select **Conditional formatting** from the menu.
+
+    ![](media/powerbi-desktop-matrix-visual/matrix-visual_17.png)
+
+-   Or, in the **Format** pane, expand the **Conditional formatting** card and for either **Background color scales** or **Font color scales**, turn the slider to **On**. Turning either on displays a link for *Advanced controls*, which allows you to customize the colors and values for the color formatting.
+
+    ![](media/powerbi-desktop-matrix-visual/matrix-visual_18.png)
+
+Either approach achieves the same result. Selecting *Advanced controls* displays the following dialog, which lets you make adjustments:
+
+![](media/powerbi-desktop-matrix-visual/matrix-visual_19.png)
+
 
 ## Limitations and considerations
 

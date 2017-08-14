@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/20/2017"
+   ms.date="08/10/2017"
    ms.author="davidi"/>
 
 # Use Quick measures to easily perform common and powerful calculations (Preview)
@@ -59,6 +59,7 @@ There are five distinct groups of Quick measure calculation types, each with a c
     -   Variance within category
     -   Max within category
     -   Min within category
+    -   Weighted average per category
 -   **Filters and baselines**
     -   Filtered measure
     -   Difference from baseline
@@ -70,14 +71,21 @@ There are five distinct groups of Quick measure calculation types, each with a c
     -   Year over year change
     -   Quarter over quarter change
     -   Month-over-month change
--   **Running total**
+    -   Rolling average
+-   **Totals**
     -   Running total
+    -   Total for category (filters applied)
+    -   Total for category (filters not applied)
 -   **Mathematical operations**
     -   Addition
     -   Subtraction
     -   Multiplication
     -   Division
     -   Percentage difference
+-   **Text**
+    -   Star rating
+    -   Concatenated list of values
+
 
 We anticipate adding to these calculations, and want to hear from you about which **Quick measures** you'd like to see, and if you have ideas (including underlying DAX formulas) for **Quick measures** that you'd like to submit for consideration. More on that at the end of this article.
 
