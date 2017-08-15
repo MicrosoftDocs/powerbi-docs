@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="08/15/2017"
    ms.author="maggies"/>
 
 # View and engage with reports optimized for your phone 
@@ -79,7 +79,7 @@ Some actions are only possible in focus mode, due to screen size constraints:
 
 ## Drill down in a visual
 
-If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You add drill-down to a visual either in the Power BI service or in Power BI Desktop. Read more about [adding drill-down](powerbi-service-drill-down-in-a-visualization.md).
+If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](powerbi-service-drill-down-in-a-visualization.md) either in the Power BI service or in Power BI Desktop. Drill-down only works in phone-optimized Power BI reports when you view them on a phone. 
 
 1. In a report on a phone, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
 

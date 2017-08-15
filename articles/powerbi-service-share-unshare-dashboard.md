@@ -42,7 +42,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 1.   In your My Workspace or in an app workspace, open a dashboard and select **Share** ![Share icon](media/powerbi-service-share-unshare-dashboard/power-bi-share-icon.png).
 
-2.  In the top box, enter the full email addresses for individuals, Office 365 groups, distribution groups, or security groups. You can't share with dynamic distribution lists. 
+2.  In the top box, enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. 
 
     You can share with people whose addresses are outside your organization, but you'll see a warning.
 
