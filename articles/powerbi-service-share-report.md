@@ -27,24 +27,24 @@
 
 With sharing, you and your recipients need a [Power BI Pro license](powerbi-premium.md#free-vs-pro-tiers). Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
 
-You can share a report with coworkers in the same email domain as you,from your own My Workspace or from an app workspace. When you share a report, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the report, unless row-level security (RLS) is applied. 
+You can share a report with coworkers in the same email domain as you,from your own My Workspace or from an app workspace. When you share a report, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the report, unless [row-level security (RLS)](powerbi-admin-rls.md) is applied. 
 
 ## Share a Power BI report
 
 1. [Share a dashboard](powerbi-service-share-unshare-dashboard.md) with tiles that link to the report you want to share. 
 
-   Even if you only want to share the report, you need to share a linked dashboard first. The people you share the dashboard with now have permission to see the underlying report. You don't need to send them mail when you share the dashboard.
+    Even if you only want to share the report, you need to share a dashboard that links to the report first. The people you share the dashboard with now have permission to see the underlying report. You don't need to send them mail when you share the dashboard.
 
 2. Copy the report page URL and send it to your coworkers. 
 
-    When they select the link, Power BI opens a read-only version of the filtered report.
+    When they select the link, Power BI opens a read-only version of the report.
 
 ## Share a filtered version of a report
 What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. You do this by creating a custom URL.
 
 1.   Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md), apply the filter, and save the report.
 
-     In this example we're filtering the [Retail Analysis sample](powerbi-sample-tutorial-connect-to-the-samples.md) to only show values where **Territory** equals **NC**.
+     In this example we're filtering the [Retail Analysis sample](powerbi-sample-tutorial-connect-to-the-samples.md) to show only values where **Territory** equals **NC**.
 
      ![Report filter pane](media/powerbi-service-share-report/power-bi-filter-report2.png)
 
