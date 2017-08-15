@@ -17,28 +17,28 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/27/2017"
+   ms.date="08/14/2017"
    ms.author="maggies"/>
 
 # How should I collaborate and share dashboards and reports?  
 
-You create dashboards and reports. Maybe you collaborate on them with your colleagues, too. Then you want others to have access to them. What's the best way to distribute them?
+You create dashboards and reports. Maybe you collaborate on them with your coworkers, too. Then you want others to have access to them. What's the best way to distribute them?
 
 In this article, we'll compare these options for collaborating and sharing in Power BI: 
 
-- Collaborating with colleagues to create meaningful reports and dashboards in *app workspaces*.
+- Collaborating with coworkers to create meaningful reports and dashboards in *app workspaces*.
 - Bundling those dashboards and reports into *apps* and distributing them to a larger group or your whole organization.
 - Sharing dashboards and reports with a few people, from the service or the Power BI mobile apps.
 - Publishing to the web, where anyone can see and interact with them.
 - Printing. 
 
-> [AZURE.NOTE] The people you collaborate with need [Power BI Pro](powerbi-premium.md#free-vs-pro-tiers) licenses. The people you want to see your dashboards need [free or Pro licenses](powerbi-premium.md#free-vs-pro-tiers), depending on how you distribute them. The following sections spell out details. The Power BI team is always interested in your feedback. Go to the [Power BI Community site](https://community.powerbi.com/) to make suggestions.
+No matter which option you choose, to share a dashboard you need a [Power BI Pro](powerbi-premium.md#free-vs-pro-tiers) license. License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-home-blog.png)
 
 *Apps in the Power BI service*
 
-## Collaborate with colleagues to create an app
+## Collaborate with coworkers to create an app
 
 Say you and your teammates want to distribute your Power BI insights to your organization. The best way to do that is to create an *app*. An app is a collection of dashboards and reports built to deliver key metrics for your organization. 
 
@@ -46,11 +46,11 @@ To create an app, you need a *app workspace*, with your teammates as members. Th
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-workspaces.png)
 
-**If you just want to share a finished dashboard with colleagues, don't add those colleagues to the app workspace.** Instead, [create the dashboard in an app workspace](powerbi-service-create-apps.md), and distribute the app to them. 
+**If you just want to share a finished dashboard with colleagues, don't add them to the app workspace.** Instead, [create the dashboard in an app workspace](powerbi-service-create-apps.md), and distribute the app to them. 
 
 ## Distribute your app to a broad audience
 
-Say you want to distribute your dashboard to a broad audience. You and your colleagues have created an *app workspace*, then created and refined dashboards, reports, and datasets in the app workspace. Now you bundle them together as an app and distribute it &#151; either to members of a security group or distribution list, or to your whole organization. 
+Say you want to distribute your dashboard to a broad audience. You and your coworkers have created an *app workspace*, then created and refined dashboards, reports, and datasets in the app workspace. Now you bundle them together as an app and distribute it &#151; either to members of a security group or distribution list, or to your whole organization. 
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-app-publish-600.png)
 
@@ -65,7 +65,7 @@ Let's say you've finalized a dashboard and a report in your own My Workspace or 
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-share-in-situ.png)
 
-You need a Power BI Pro license to share your content, and those you share it with do, too. When you share a dashboard or report, they can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports unless row-level security (RLS) is applied to the underlying dataset. The colleagues you share it with can share with their colleagues, if you allow them to. 
+You need a Power BI Pro license to share your content, and those you share it with do, too. When you share a dashboard or report, they can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports unless row-level security (RLS) is applied to the underlying dataset. The coworkers you share it with can share with their coworkers, if you allow them to. 
 
 You can share with people outside your organization, too. They can view and interact with the dashboard too, but can't share it. 
 
@@ -76,7 +76,7 @@ In the Power BI mobile apps for iOS and Android devices, you can annotate a tile
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-iphone-annotate.png)
 
-You're sharing a snapshot of the tile, report, or visual, and your recipients see it exactly as it was when you sent the mail. The mail also contains a link to the dashboard or report. If they have a Power BI Pro license and you've shared the object with them already, they can open it. You can send snapshots of tiles to anyone &#151; not just colleagues in the same email domain.
+You're sharing a snapshot of the tile, report, or visual, and your recipients see it exactly as it was when you sent the mail. The mail also contains a link to the dashboard or report. If they have a Power BI Pro license and you've shared the object with them already, they can open it. You can send snapshots of tiles to anyone &#151; not just coworkers in the same email domain.
 
 More about [annotating and sharing tiles, reports, and visuals](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) from the iOS and Android mobile apps.
 
@@ -94,7 +94,7 @@ You can print or save as PDF (or other static file format) an entire dashboard, 
 ## Next steps
 
 -   Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
--   [Share a dashboard with colleagues](powerbi-service-share-unshare-dashboard.md)
+-   [Share dashboards with coworkers and others](powerbi-service-share-unshare-dashboard.md)
 -   [Create and distribute an app in Power BI](powerbi-service-create-apps.md)
 -   More questions? [Try the Power BI Community](http://community.powerbi.com/).
 
