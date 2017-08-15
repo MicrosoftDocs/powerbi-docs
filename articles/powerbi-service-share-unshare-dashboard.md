@@ -9,8 +9,8 @@
    editor=""
    tags=""
    featuredVideoId="0tUwn8DHo3s"
-   qualityFocus="complete"
-   qualityDate="06/22/2016"/>
+   qualityFocus="monitoring"
+   qualityDate="08/14/2017"/>
 
 <tags
    ms.service="powerbi"
