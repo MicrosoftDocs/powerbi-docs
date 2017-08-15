@@ -30,7 +30,7 @@ For related "What's New" information, see:
 
 ## July 2017
 
-Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.com/en-us/blog/power-bi-service-and-mobile-july-feature-summary/#ios-preview)
+Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.com/blog/power-bi-service-and-mobile-july-feature-summary/#ios-preview)
 
 ### iOS devices
 

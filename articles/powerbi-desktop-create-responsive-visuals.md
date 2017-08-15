@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Optimize a visual for any size
+   pageTitle="Optimize a visual for any size"
    description="Learn how to optimize visuals in Power BI Desktop for the Power BI phone apps."
    services="powerbi" 
    documentationCenter="" 
