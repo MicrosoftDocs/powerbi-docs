@@ -3,9 +3,9 @@
    description="Read about creating copies of and troubleshooting access to organizational content packs in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="maggiesMSFT" 
    manager="erikre" 
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="no"
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/10/2017"
-   ms.author="ajayan"/>
+   ms.author="maggies"/>
 
 # Organizational content packs: Copy, refresh, & get access
 
