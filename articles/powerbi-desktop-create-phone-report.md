@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2017"
+   ms.date="08/17/2017"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
 
-When you [create a report in Power BI Desktop](powerbi-desktop-report-view.md), you can improve the experience of using it in the mobile apps on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience.  
+When you [create a report in Power BI Desktop](powerbi-desktop-report-view.md), you can improve the experience of using it in the mobile apps on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience. Plus you can [create *responsive* visuals](powerbi-desktop-create-responsive-visuals.md) that resize well for viewing on a phone.
 
 ![Optimized report on a phone](media/powerbi-desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -121,4 +121,5 @@ Report readers can turn their phones sideways to see the page in landscape mode.
 ## Next steps
 - [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
 - [View Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
+- [Create responsive visuals optimized for any size](powerbi-desktop-create-responsive-visuals.md)
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

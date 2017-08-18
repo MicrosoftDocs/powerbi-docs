@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View and engage with reports optimized for your phone"
+   pageTitle="View reports optimized for your phone"
    description="Read about interacting with report pages optimized for viewing in the Power BI phone apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/15/2017"
+   ms.date="08/17/2017"
    ms.author="maggies"/>
 
-# View and engage with reports optimized for your phone 
+# View reports optimized for your phone 
 
 When you create a Power BI report in Power BI Desktop, you can also create a version of that [report optimized for viewing in the Power BI app on a phone](powerbi-desktop-create-phone-report.md).
 
@@ -56,7 +56,7 @@ In phone reports when you select a visual, the phone report highlights that visu
 With the visual selected, you can do things like scroll within the visual. To de-select a visual, just touch anywhere outside the visual area.
 
 ## Open visuals in focus mode
-Phone reports offer a focus mode, so you can focus on a single visual to get a bigger view of the visual and explore the visual and the report.
+Phone reports also offer a focus mode, so you can get a bigger view of a single visual and explore it and the report.
 
 - In a phone report, tap the ellipsis (**...**) in the upper-right corner of a visual  > **Expand to focus mode**.
 
@@ -108,8 +108,8 @@ If hierarchy levels are defined in a visual, you can drill down into the detaile
     ![Revert](media/powerbi-mobile-view-phone-report/power-bi-phone-report-revert-levels.png)
 
 
-
 ## Next steps
 - [Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
 - [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
+- [Create responsive visuals optimized for any size](powerbi-desktop-create-responsive-visuals.md)
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

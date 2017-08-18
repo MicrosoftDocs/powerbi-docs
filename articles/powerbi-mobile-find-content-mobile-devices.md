@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Find your dashboards and reports on your mobile device"
+   pageTitle="Find your dashboards, reports, and apps on your mobile device"
    description="Read about where to find your dashboards and reports in the Power BI mobile apps, depending on where they came from."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/18/2017"
+   ms.date="08/17/2017"
    ms.author="maggies"/>
 
-# Find your dashboards and reports on your mobile device
+# Find your dashboards, reports, and apps on your mobile device
 
 Applies to:
 
@@ -28,7 +28,7 @@ Applies to:
 |:------------------------|:----------------------------|:----------------------------|:----------------------------------------|:-----------------|
 | iPhones | iPads | Android phones | Android tablets | Windows 10 devices |
 
-Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. This article explains what you'll find where. Plus you can always [search for anything](powerbi-mobile-find-content-mobile-devices.md#search) you have in Power BI. 
+Your dashboards, reports, and apps are stored in different locations in the Power BI mobile apps, depending on where they came from. This article explains what you'll find where. Plus you can always [search for anything](powerbi-mobile-find-content-mobile-devices.md#search) you have in Power BI. 
 
 ![Power BI new navigation](media/powerbi-mobile-find-content-mobile-devices/power-bi-mobile-find-content.png)
 

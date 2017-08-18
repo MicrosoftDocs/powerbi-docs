@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/14/2017"
+   ms.date="08/17/2017"
    ms.author="maggies"/>
 
 # Share dashboards with coworkers and others
