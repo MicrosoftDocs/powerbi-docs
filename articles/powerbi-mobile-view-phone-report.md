@@ -28,11 +28,7 @@ Then, when you open a Power BI report on a phone, Power BI detects if the report
 
 ![Report in portrait mode](media/powerbi-mobile-view-phone-report/07-power-bi-phone-report-portrait.png)
 
-If a phone-optimized report doesn’t exist, you can still open the report in the non-optimized landscape view by turning the phone sideways.  
-
-Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout.
-
-If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
+If a phone-optimized report doesn’t exist, you can still open the report in the non-optimized landscape view by turning the phone sideways. Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
 
 ![Report page not optimized](media/powerbi-mobile-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 
