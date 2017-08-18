@@ -56,7 +56,7 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 ## High Availability/Disaster Recovery
 
 **Question:** Are there any plans for enabling high availability scenarios with the gateway?  
-**Answer:** Yes. This is available with the Power BI Premium offering. For more information see [Power BI Premium](powerbi-premium.md).
+**Answer:** Yes, this is an area of active investment for the Power BI team. Please stay tuned to the [Power BI blog](https://powerbi.microsoft.com/blog/) for further updates about this feature.
 
 **Question:** What options are available for disaster recovery?  
 **Answer:** You can use the recovery key to restore or move a gateway. When you install the gateway, supply the recovery key.

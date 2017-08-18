@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/06/2017"
+ms.date="08/16/2017"
 ms.author="davidi"/>
 # On-Premises Data Gateway FAQ
 
@@ -57,7 +57,7 @@ ms.author="davidi"/>
 
 ## Power BI
 
-**Question:** Do i need to upgrade the personal gateway?
+**Question:** Do I need to upgrade the personal gateway?
 **Answer:** No, you can keep using the personal gateway for Power BI.
 
 **Question:** How often are tiles in a dashboard, in Power BI, refreshed when connected through the On-Premises Data Gateway?  
