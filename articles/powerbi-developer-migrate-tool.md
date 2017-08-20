@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/21/2017"
+   ms.date="08/21/2017"
    ms.author="asaxton"/>
 
 # Power BI Embedded migration tool
@@ -63,13 +63,13 @@ You will want to start by creating a new migration plan. To create a new migrati
 
     ![](media/powerbi-developer-migrate-tool/migrate-tool-select-resource-group2.png)
 
-6. Select **Analyze Resource Group**. This will get an inventory of the items within your Azure subscription for you to begin your plan.
+6. Select **Analyze**. This will get an inventory of the items within your Azure subscription for you to begin your plan.
 
     ![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-group.png)
 
     > [AZURE.NOTE] The analyze process could take several minutes depending on the number of Workspace collections and how much content exists in the workspace collection.
 
-7. When **Analyze Resource Group** is complete, it will prompt you to save your migration plan.
+7. When **Analyze** is complete, it will prompt you to save your migration plan.
 
 At this point, you have connected your migration plan to your Azure subscription. Read below to understand the flow of how to work with your migration plan. This includes Analyze & Plan Migration, Download, Create Groups and Upload.
 
@@ -101,6 +101,7 @@ To open your existing migration plan, do the following.
 
 The **Analyze & Plan Migration** tab gives you a view of what is currently in your Azure subscription’s resource group.
 
+![Analyze & Plan Migration tab](media/powerbi-developer-migrate-tool/migrate-tool-step1.png)
 
 We will look at the *SampleResourceGroup* as an example.
 
@@ -121,13 +122,12 @@ The reports section will list out the reports available and indicates whether it
 
 ![](media/powerbi-developer-migrate-tool/migrate-tool-analyze-reports.png)
 
-### Migration Plan
+### Target structure
 
-The migration plan section is where you tell the tool where things will be downloaded to and how to upload them.
-
+The **Target structure** is where you tell the tool where things will be downloaded to and how to upload them.
 
 #### Download Plan
-A path will automatically be created for you. You can change this path if you wish. If you do change the path, you will need to select **Generate PBIX Paths**.
+A path will automatically be created for you. You can change this path if you wish. If you do change the path, you will need to select **Update paths**.
 
 > [AZURE.NOTE] This does not actually perform the download. This is only specifying the structure of where the reports will be downloaded to.
 
