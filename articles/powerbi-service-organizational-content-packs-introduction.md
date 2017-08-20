@@ -34,7 +34,7 @@ In AppSource, you can browse or search for content packs published to the entire
 
 The dashboards, reports, and Excel workbooks are read-only, but you can copy and use the dashboards and reports as a starting point for creating your own personalized version of the content pack.
 
-> [AZURE.NOTE] Organizational content packs are only available when you and your colleagues have [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
+> [AZURE.NOTE] Organizational content packs are only available when you and your colleagues have [Power BI Pro](powerbi-free-vs-pro.md).
 
 ## What is *AppSource*?
 
