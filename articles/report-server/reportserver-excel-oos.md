@@ -24,6 +24,8 @@
 
 In addition to viewing Power BI reports in the web portal, business users can now do the same with Excel workbooks in Power BI Report Server, giving them a single location to publish and view their self-service Microsoft BI content.
 
+> [AZURE.NOTE] This is a preview feature included in the August 2017 preview release. For more information, see [What's new in Power BI Report Server](reportserver-whats-new.md).
+
 ![Excel reports being viewed from the report server web portal.](media/reportserver-excel-oos/excel-in-pbirs.png)
 
 This is accomplished by making use of [Office Online Server](https://technet.microsoft.com/library/jj219437(v=office.16).aspx) (OOS).
