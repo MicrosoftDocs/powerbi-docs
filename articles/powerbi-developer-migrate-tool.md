@@ -143,7 +143,7 @@ If you change the prefix, you will need to select **Generate Upload Plan**.
 
 You can right click on a group and choose to rename the group within the Upload plan directly, if desired.
 
-![](media/powerbi-developer-migrate-tool/migrate-tool-rename-group.png)
+![](media/powerbi-developer-migrate-tool/migrate-tool-upload-report-rename-item.png)
 
 > [AZURE.NOTE] The name of the *group* must not contain spaces or invalid characters.
 
