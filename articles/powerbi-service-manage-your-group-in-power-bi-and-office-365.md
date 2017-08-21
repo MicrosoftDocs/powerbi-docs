@@ -17,13 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="08/17/2017"
    ms.author="maggies"/>
 # Manage your app workspace in Power BI and Office 365
 
-> [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
-
-As creator or admin of an app workspace in Power BI or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
+As creator or admin of an [app workspace in Power BI](powerbi-service-what-are-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
 
 **In Power BI** you can:
 
@@ -38,7 +36,7 @@ As creator or admin of an app workspace in Power BI or in Office 365, you manage
 -   See the group email address.
 -   Delete the group.
 
-> [AZURE.NOTE] You need a [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md) license to be an admin or member of an app workspace. Your app users need a Power BI Pro license, too, unless your app workspace is in a Power BI Premium capacity. Then business users can access your app with a Power BI free license instead. Read [What is Power BI Premium?](powerbi-premium.md) for details.
+You need a [Power BI Pro](powerbi-free-vs-pro.md) license to be an admin or member of an app workspace. Your app users need a Power BI Pro license, too, unless your app workspace is in a Power BI Premium capacity. Then business users can access your app with a Power BI free license instead. Read [What is Power BI Premium?](powerbi-premium.md) for details.
 
 ## Edit your app workspace in Power BI
 
@@ -85,5 +83,6 @@ When you distribute your app from the app workspace, the image you add here will
 
 ## Next steps
 
+- [What are apps in Power BI?](powerbi-service-what-are-apps.md)
 - [Create apps and app workspaces in Power BI](powerbi-service-create-apps.md)
 - More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="08/15/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -28,9 +28,31 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](powerbi-desktop-latest-update.md)  
 * [What's new in the Power BI service](powerbi-service-whats-new.md)  
 
-## May 2017
+## July 2017
+
+Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.com/blog/power-bi-service-and-mobile-july-feature-summary/#ios-preview)
+
+### iOS devices
+
+**New Q&A experience on iOS (Preview)**
+Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. IEven if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](powerbi-mobile-ios-qna.md).
+
+### Responsive visuals
+**Responsive visual for phone reports and dashboards**
+You can set the visuals in your dashboard or report to be *responsive*, to change dynamically to display the maximum amount of data and insight, no matter the screen size. Read the [blog about responsive visuals](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
+
+## June 2107
 
 ### All devices
+
+**Make apps favorites**
+You can already make a dashboard a favorite. Recently, [Power BI added apps](powerbi-service-what-are-apps.md), and now you can make apps favorites, too. 
+
+## Previous months
+
+### May 2017
+
+#### All devices
 
 **New menu: Shared with me**
 Go to Shared with me in the mobile app menu to see all the content that's been shared with you.
@@ -40,13 +62,10 @@ An app is a collection of dashboards and reports built by your organization to d
 
 Read more about [how your Power BI content is organized](powerbi-mobile-find-content-mobile-devices.md).
 
-### iOS and Android devices
+#### iOS and Android devices
 
 **Power BI Report Server preview**
 Create and publish Power BI reports on premises. Then [view and interact with them in your iOS or Android](powerbi-mobile-iphone-kpis-mobile-reports.md) mobile device. 
-
-
-## Previous months
 
 ### April 2017
 

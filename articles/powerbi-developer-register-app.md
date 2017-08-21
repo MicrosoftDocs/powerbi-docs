@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/21/2017"
+   ms.date="08/21/2017"
    ms.author="asaxton"/>
 
 # Register an Azure AD app to embed Power BI content
@@ -138,7 +138,7 @@ You will want to be logged in with either the *master* account, used for embeddi
 
 6. Within **Required permissions**, select **Grant Permissions**.
 
-    The **Grant Permissions** action is needed for the *master account* to avoid being prompted for concent by Azure AD. If the account performing this action is a Global Admin, you will grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you will grant permissions only to the *master account* for this application.
+    The **Grant Permissions** action is needed for the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you will grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and is not a Global Admin, you will grant permissions only to the *master account* for this application.
 
     ![Grant permissions within required permissions dialog](media/powerbi-developer-register-app/powerbi-embedded-azuread-app-grant-permissions.png)
 
@@ -181,9 +181,9 @@ You will want to be logged in with either the *master* account, used for embeddi
 
 5. Grant App Permission to AAD
 
-    The value for **concentType** will depend on the user performing the request. You can supply either **AllPrincipals** or **Principal**. **AllPrincipals** can only be used by an administrator to grant permission to all users. **Principal** is used to grant permission to a specific user. 
+    The value for **consentType** will depend on the user performing the request. You can supply either **AllPrincipals** or **Principal**. **AllPrincipals** can only be used by an administrator to grant permission to all users. **Principal** is used to grant permission to a specific user. 
 
-    The permission grant is needed for the *master account* to avoid being prompted for concent by Azure AD. 
+    The permission grant is needed for the *master account* to avoid being prompted for consent by Azure AD. 
 
     If you are using an existing tenant, and not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by replacing the value of **contentType** to **Principal**.
 
