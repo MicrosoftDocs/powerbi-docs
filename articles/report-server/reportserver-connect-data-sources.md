@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="08/21/2017"
    ms.author="asaxton"/>
 
 # Connecting to data sources
@@ -26,6 +26,17 @@ Learn about what data sources you can connect to within Power BI Report Server.
 ## Power BI Reports
 
 Currently, the only data source supported for Power BI reports are a **live connection to Analysis Services (tabular or multidimensional)**. More data sources will be added in future releases.
+
+### August 2017 preview
+
+The August 2017 preview includes support for non-Analysis Services live connections. This includes imported data.  You can download the August 2017 preview over at [powerbi.com](https://powerbi.microsoft.com/report-server/).
+
+There are a few limitations with using non-Analysis Services live connections.
+
+- Scheduled data refresh is currently not available for reports using imported data.
+- DirectQuery data connections are not currently supported.
+- Scale-out environments are not officially supported.
+- Reports must be smaller than 100 MB in size.
 
 ### Cannot upload imported or DirectQuery sources
 
