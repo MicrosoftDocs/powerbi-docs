@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/21/2017"
+   ms.date="08/22/2017"
    ms.author="asaxton"/>
 
 # Configure your report server to host Excel workbooks using Office Online Server (OOS)
@@ -61,7 +61,7 @@ Perform these procedures on the server that will run Office Online Server. This 
 
 ### Install Office Online Server
 
-If you plan to use any Excel Online features that utilize external data access (such as Data Models, Power Pivot, or Power View), note that Office Online Server must reside in the same Active Directory forest as its users as well as any external data sources that you plan to access using Windows-based authentication.
+If you plan to use any Excel Online features that utilize external data access (such as Power Pivot), note that Office Online Server must reside in the same Active Directory forest as its users as well as any external data sources that you plan to access using Windows-based authentication.
 
 1. Download Office Online Server from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). The download is located under those Office products on the VLSC portal. For development purposes, you can download OOS from MSDN subscriber downloads.
 
@@ -161,11 +161,11 @@ Set-OfficeWebAppsFarm -ExcelAllowExternalData:$true
 Set-OfficeWebAppsFarm -ExcelWarnOnDataRefresh:$false
 ```
 
-## Configure a PowerPivot instance for data models
+## Configure a Power Pivot instance for data models
 
-Installing an Analysis Services PowerPivot mode instance lets you work with Excel workbooks that are using PowerPivot. Make sure that the instance name is *POWERPIVOT*. Add the machine account of the OOS server as an administrator, for the Analysis Services PowerPivot mode instance. Management Studio for SQL Server 2016 or later is needed to do this.
+Installing an Analysis Services Power Pivot mode instance lets you work with Excel workbooks that are using Power Pivot. Make sure that the instance name is *POWERPIVOT*. Add the machine account of the OOS server as an administrator, for the Analysis Services Power Pivot mode instance. Management Studio for SQL Server 2016 or later is needed to do this.
 
-For OOS to use the PowerPivot mode instance, run the following command.
+For OOS to use the Power Pivot mode instance, run the following command.
 
 ```
 New-OfficeWebAppsExcelBIServer -ServerId <server_name>\POWERPIVOT
@@ -179,7 +179,7 @@ Set-OfficeWebAppsFarm -ExcelAllowExternalData:$true
 
 ### Firewall considerations
 
-To avoid firewall issues, you may need to open the ports 2382 and 2383. You can also add the *msmdsrv.exe*, for the PowerPivot instance, as an application firewall wall policy.
+To avoid firewall issues, you may need to open the ports 2382 and 2383. You can also add the *msmdsrv.exe*, for the Power Pivot instance, as an application firewall wall policy.
 
 ## Configure Power BI Report Server to use the OOS Server
 
