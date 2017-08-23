@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/22/2017"
+   ms.date="08/223/2017"
    ms.author="asaxton"/>
 
 # Configure your report server to host Excel workbooks using Office Online Server (OOS)

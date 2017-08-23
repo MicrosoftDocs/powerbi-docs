@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/21/2017"
+   ms.date="08/23/2017"
    ms.author="asaxton"/>
 
 # What's new in Power BI Report Server
@@ -65,10 +65,6 @@ We’ve published a [walkthrough of how to add Office Online Server (OOS) to you
 - Have no external data source dependencies
 - Have a live connection to an external SQL Server Analysis Services data source
 - Have a PowerPivot data model
-
-### REST API for developers
-
-A common ask from developers and administrators is to have an API to develop against, or automate actions, on the server for Power BI reports. In this preview, we’ve added a fully documented REST API that can be used for these scenarios.
 
 ### Support for new table and matrix viuals
 
