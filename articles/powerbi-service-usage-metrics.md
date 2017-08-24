@@ -82,7 +82,8 @@ To dig down into the report data, or to build your own reports against the datas
 |Platforms slicer     | yes    | yes |  Was the dashboard or report accessed via the Power BI service (powerbi.com) or a mobile device? Mobile includes all our iOS, Android, and Windows apps.    |
 |Report page slicer    | no    | yes    | If the report has more than 1 page, slice the report by the page(s) that was viewed. If you see a list option for "Blank," that means a report page was recently added (within 24 hours the actual name of the new page will appear in the slicer list) and/or report pages have been deleted. "Blank" captures these types of situations.  |
 |Views per day     |   yes         |  yes       | Total number of views per day - a view is defined as a user loading a report page or dashboard.   |
-|Unique viewers per day     |   yes      |   yes      | Number of *different* users who viewed the dashboard or report (based on the AAD user account). Notice the users dimension also exposes the names and user principal names of the users who view the dashboard or report.
+|Unique viewers per day     |   yes      |   yes      | Number of *different* users who viewed the dashboard or report (based on the AAD user account). 
+|Views per user | yes | yes | Number of views in the past 90 days, broken down by individual users.
 |Shares per day     |   yes      |  no       | Number of times the dashboard was shared with another user or group.
 |Total views     |   yes      |   yes      | Number of views in the past 90 days.
 |Total viewers     |   yes      |  yes       | Number of unique viewers in the past 90 days.
