@@ -170,7 +170,7 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
 
     ![](media/powerbi-service-usage-metrics/power-bi-tenant-settings-updated.png)
 
-When disabling usage metrics for their entire organization, admins can use the delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. Be careful, because deleting existing usage metrics content is irreversible.
+When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. Be careful, because deleting existing usage metrics content is irreversible.
 
 ##    Considerations and limitations
 Q:    I can't run usage metrics on a dashboard or report    
