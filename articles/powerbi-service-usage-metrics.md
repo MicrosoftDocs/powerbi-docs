@@ -27,7 +27,7 @@ If you create dashboards and reports, usage metrics help you understand their im
 
 These usage metrics reports are read-only. However, you can personalize a usage metrics report by using "Save as." This creates a brand new dataset and converts the read-only report to a full-featured Power BI report that you can edit. Not only does the personalized report contain metrics for the selected dashboard or report, but by removing the default filter, you now have access to usage metrics for all dashboards or all reports in the selected workspace. 
 
-![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update-2.png)
+![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
 ##    Why are usage metrics important to me?
  Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization and it may show that a dashboard you created isn't being viewed at all. This type of feedback is invaluable in guiding your work efforts.
@@ -95,7 +95,7 @@ To dig down into the report data, or to build your own reports against the datas
 ###    Dashboard Usage Metrics report
 
 
-![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update-2.png)
+![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
 ###    Report Usage Metrics report
 
