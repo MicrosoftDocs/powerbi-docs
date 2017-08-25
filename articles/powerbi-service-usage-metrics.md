@@ -18,16 +18,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/24/2017"
+   ms.date="08/25/2017"
    ms.author="mihart"/>
 
-# Measure and magnify your impact with dashboard and report Usage Metrics for content creators
+# Usage metrics for dashboards and reports
 
 If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization; what is being used, by whom, and for what purpose.  
 
 These usage metrics reports are read-only. However, you can personalize a usage metrics report by using "Save as." This creates a brand new dataset and converts the read-only report to a full-featured Power BI report that you can edit. Not only does the personalized report contain metrics for the selected dashboard or report, but by removing the default filter, you now have access to usage metrics for all dashboards or all reports in the selected workspace. 
 
-![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update.png)
+![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update-2.png)
 
 ##    Why are usage metrics important to me?
  Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization and it may show that a dashboard you created isn't being viewed at all. This type of feedback is invaluable in guiding your work efforts.
@@ -170,7 +170,7 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
 
     ![](media/powerbi-service-usage-metrics/power-bi-tenant-settings-updated.png)
 
-When disabling usage metrics for their organization, admins can also choose to delete any existing reports and dashboard tiles that were built using the usage metrics datasets. This effectively removes all access to usage metrics data for all users for whom usage metrics are being disabled.
+When disabling usage metrics for their entire organization, admins can use the delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. Be careful, because deleting existing usage metrics content is irreversible.
 
 ##    Considerations and limitations
 Q:    I can't run usage metrics on a dashboard or report    
