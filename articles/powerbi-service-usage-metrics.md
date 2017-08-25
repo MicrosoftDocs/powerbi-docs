@@ -95,7 +95,7 @@ To dig down into the report data, or to build your own reports against the datas
 ###    Dashboard Usage Metrics report
 
 
-![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update.png)
+![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update-2.png)
 
 ###    Report Usage Metrics report
 
