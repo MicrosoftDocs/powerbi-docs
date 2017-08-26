@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="08/23/2017"
    ms.author="asaxton"/>
 
 # Power BI Report Server release notes
@@ -27,6 +27,12 @@ This topic describes limitations and issues with Power BI Report Server.
  **Download** ![download](media/download.png "download")
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## August 2017 (preview)
+
+* Support for imported data in Power BI reports
+* Ability to view excel workbooks within the web portal. This is done by configuring Office Online Server.
+* Support for the new Power BI table and matrix visuals.
 
 ## June 2017
 
