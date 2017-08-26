@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2017"
+   ms.date="08/25/2017"
    ms.author="asaxton"/>
 
 # Connecting to data sources
@@ -36,7 +36,7 @@ There are a few limitations with using non-Analysis Services live connections.
 - Scheduled data refresh is currently not available for reports using imported data.
 - DirectQuery data connections are not currently supported.
 - Scale-out environments are not officially supported.
-- Reports must be smaller than 100 MB in size.
+- Reports must be smaller than 50 MB in size.
 
 ### Cannot upload imported or DirectQuery sources
 
