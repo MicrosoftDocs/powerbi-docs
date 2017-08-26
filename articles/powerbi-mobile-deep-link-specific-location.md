@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="08/25/2017"
    ms.author="maggies"/>
 
 # Create a link to a specific location in the mobile apps
@@ -109,7 +109,7 @@ For example, see the highlighted section of this URL:
 
 https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**&context=SlackDeepLink**
 
-## See also
+## Next steps
 
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
 

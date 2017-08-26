@@ -18,16 +18,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/08/2017"
+   ms.date="08/25/2017"
    ms.author="mihart"/>
 
-# Measure and magnify your impact with dashboard and report Usage Metrics for content creators
+# Usage metrics for dashboards and reports
 
 If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization; what is being used, by whom, and for what purpose.  
 
 These usage metrics reports are read-only. However, you can personalize a usage metrics report by using "Save as." This creates a brand new dataset and converts the read-only report to a full-featured Power BI report that you can edit. Not only does the personalized report contain metrics for the selected dashboard or report, but by removing the default filter, you now have access to usage metrics for all dashboards or all reports in the selected workspace. 
 
-![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-newborder.png)
+![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
 ##    Why are usage metrics important to me?
  Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization and it may show that a dashboard you created isn't being viewed at all. This type of feedback is invaluable in guiding your work efforts.
@@ -82,7 +82,8 @@ To dig down into the report data, or to build your own reports against the datas
 |Platforms slicer     | yes    | yes |  Was the dashboard or report accessed via the Power BI service (powerbi.com) or a mobile device? Mobile includes all our iOS, Android, and Windows apps.    |
 |Report page slicer    | no    | yes    | If the report has more than 1 page, slice the report by the page(s) that was viewed. If you see a list option for "Blank," that means a report page was recently added (within 24 hours the actual name of the new page will appear in the slicer list) and/or report pages have been deleted. "Blank" captures these types of situations.  |
 |Views per day     |   yes         |  yes       | Total number of views per day - a view is defined as a user loading a report page or dashboard.   |
-|Unique viewers per day     |   yes      |   yes      | Number of *different* users who viewed the dashboard or report (based on the AAD user account).
+|Unique viewers per day     |   yes      |   yes      | Number of *different* users who viewed the dashboard or report (based on the AAD user account). 
+|Views per user | yes | yes | Number of views in the past 90 days, broken down by individual users.
 |Shares per day     |   yes      |  no       | Number of times the dashboard was shared with another user or group.
 |Total views     |   yes      |   yes      | Number of views in the past 90 days.
 |Total viewers     |   yes      |  yes       | Number of unique viewers in the past 90 days.
@@ -94,11 +95,11 @@ To dig down into the report data, or to build your own reports against the datas
 ###    Dashboard Usage Metrics report
 
 
-![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-newborder.png)
+![](media/powerbi-service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
 ###    Report Usage Metrics report
 
-![](media/powerbi-service-usage-metrics/power-bi-report-report-newborder.png)
+![](media/powerbi-service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
 
 
@@ -155,7 +156,7 @@ If, for example, you used the dashboard named "European sales" to create this ne
 
 
 ##    Admin controls for usage metrics - for Power BI administrators
-Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off; they are On by default.
+Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization.
 
 1. Open the Admin portal by selecting the gear icon in the top-right-corner of Power BI service and choosing **Admin portal**.
 
@@ -167,7 +168,9 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
 
 3. Enable (or disable) usage metrics and select **Apply**.
 
-    ![](media/powerbi-service-usage-metrics/power-bi-tenant-settings.png)
+    ![](media/powerbi-service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. Be careful, because deleting existing usage metrics content is irreversible.
 
 ##    Considerations and limitations
 Q:    I can't run usage metrics on a dashboard or report    
