@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Smartsheet content pack"
-   description="Smartsheet content pack for Power BI"
+   pageTitle="Smartsheet for Power BI"
+   description="Smartsheet for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/28/2017"
    ms.author="ajayan"/>
 
-# Smartsheet content pack for Power BI
+# Smartsheet for Power BI
 
 Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet content pack for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account. You can also use the [Power BI Desktop](powerbi-desktop-connect-to-data.md) to connect directly to individual sheets in your account. 
 

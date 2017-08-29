@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Google Analytics content pack"
-   description="Google Analytics content pack for Power BI"
+   pageTitle="Google Analytics for Power BI"
+   description="Google Analytics for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/28/2017"
    ms.author="ajayan"/>
 
-# Google Analytics content pack for Power BI
+# Google Analytics for Power BI
 
 Connecting to Google Analytics through Power BI starts by connecting to your Google Analytics account. You will get a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. You can use the dashboard and reports provided, or customize them to highlight the information you care most about. The data will be refreshed automatically once per day.
 

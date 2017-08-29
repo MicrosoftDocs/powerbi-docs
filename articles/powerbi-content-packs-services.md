@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect to services with content packs"
-   description="Connect to services with content packs for Power BI"
+   pageTitle="Connect to services with Power BI"
+   description="Connect to services with Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,49 +17,45 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/28/2017"
    ms.author="ajayan"/>
 
-# Connect to services with content packs for Power BI
+# Connect to services with Power BI
 
-You can connect to content packs for a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. 
+You can connect to a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. 
 
-View all of the [content packs for services](https://app.powerbi.com/getdata/services) by logging into Power BI. The Power BI team is working with other services to add new content packs every week.
+Log in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). The Power BI team adds new services regularly.
 
 ![](media/powerbi-content-packs-services/overview.png)
 
 ## What's included
 
-After connecting to a content pack, you'll see a newly created dashboard, report and dataset. The content packs include content from the service focused on a specific scenario and do not include all the information from the service. Once imported, you can customize them to highlight the information you care most about. The data is schedule to refresh automatically once per day, you can control the schedule by selecting the dataset.
+After connecting to a service, you see a newly created app with a dashboard, reports, and dataset. The apps include content from the service focused on a specific scenario and do not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the dataset.
 
 You can also use [Power BI Desktop](powerbi-desktop-get-the-desktop.md) to connect to some services, such as Google Analytics, and create your own customized dashboards and reports.  
 
-For more details on a specific content pack, please reference their individual help pages.
+For more details on connecting to a specific service, please refer to its individual help page.
 
 ## Get started
 
-1.  Select **Get Data** at the bottom of the left navigation pane.
-
-    ![](media/powerbi-content-packs-services/pbi_get_data.png) 
-
-2.  In the **Services** box, select **Get**.
-
-    ![](media/powerbi-content-packs-services/PBI_GetServices.png) 
+[AZURE.INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3.  Browse the content packs, or tap in the search box and type keywords:  
 
     ![](media/powerbi-content-packs-services/search.png)
 
-After you connect to a content pack, you see the dashboard created with your own data. You can change this dashboard to display your data the way you want. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report and pin other tiles to the dashboard.
-
-For more details on a specific content pack, please reference their individual help pages.
+After you connect to a service, go to **Apps** in the left navigation pane to see the dashboard created with your own data. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report.
 
 ## Troubleshooting
 
-**Empty Tiles**  
-While the content pack is loading, you will see an empty set of tiles on your dashboard. If you still see an empty dashboard after 2hrs, it's likely the import failed - if you didn't see an actionable error message please file a support ticket with the information in the "About Power BI" dialog in the top right.
+**Empty tiles**  
+While Power BI is first connecting to the service, you will see an empty set of tiles on your dashboard. If you still see an empty dashboard after 2 hours, it's likely the connection failed. If you didn't see an error message with information on correcting the issue, please file a support ticket.
 
-**Missing Information**  
+- Select the question mark icon (**?**) in the upper-right corner >  **Get help**.
+ 
+    ![](media/powerbi-content-packs-services/power-bi-service-get-help.png)
+
+**Missing information**  
 The content packs include content from the service focused on a specific scenario and do not include all the information from the service. If there's a specific metric that you're not seeing in the content pack, please add an idea on the [Power BI Support](https://support.powerbi.com/forums/265200-power-bi) page.
 
 ## Content pack suggestions
