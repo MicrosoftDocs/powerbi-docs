@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/17/2017"
+   ms.date="08/29/2017"
    ms.author="maggies"/>
 
 # Create and distribute an app in Power BI
@@ -24,7 +24,7 @@
 ## What are Power BI apps?
 Apps are collections of dashboards and reports you create to deliver key metrics to large groups of people in your organization. 
 
-![Power BI apps](media/powerbi-service-create-apps/power-bi-apps-home-blog.png)
+![Power BI apps](media/powerbi-service-create-apps/power-bi-apps-left-nav.png)
 
 Business users often need multiple Power BI dashboards and reports to run their business. With apps, they won't have to remember the names of all these dashboards and how to navigate to them, because the apps bring the pieces together.  
 

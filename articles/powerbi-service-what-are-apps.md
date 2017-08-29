@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2017"
+   ms.date="08/29/2017"
    ms.author="maggies"/>
 
 # What are apps in Power BI?
@@ -25,7 +25,7 @@ An app is a collection of dashboards and reports built to deliver key metrics fo
 
 With apps you automatically get all the updates the app author makes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping up to date.
 
-![](media/powerbi-what-are-apps/power-bi-apps-home-360.png)
+![](media/powerbi-what-are-apps/power-bi-apps-left-nav.png)
 
 Planning to author an app? See [Create and distribute apps in Power BI](powerbi-service-create-apps.md) for more information.
 
@@ -60,9 +60,9 @@ The easiest way to install a new app is to get a direct link from the app author
 
 You can also find and install apps that you have access to from Microsoft AppSource. 
 
-1. Select **Apps** ![](media/powerbi-what-are-apps/power-bi-apps-bar.png), then select **Download and explore more apps from AppSource**. 
+1. Select **Apps** ![](media/powerbi-what-are-apps/power-bi-apps-bar.png) > **Get apps**. 
 
-     ![](media/powerbi-what-are-apps/power-bi-apps-download-from-appsource.png)
+     ![](media/powerbi-what-are-apps/power-bi-service-apps-get-apps-oppty.png)
 
 3. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
 

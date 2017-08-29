@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="08/29/2017"
    ms.author="ajayan"/>
 
 # Adobe Analytics for Power BI
 
-Connecting to Adobe Analytics through Power BI starts by connecting to your Adobe Analytics Marketing Cloud account. You get an app with a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. The data is refreshed automatically once per day.
+Connecting to Adobe Analytics through Power BI starts by connecting to your Adobe Analytics Marketing Cloud account. You get an app with a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. The data is refreshed automatically once per day. You can interact with the dashboard and reports, but you can't save changes.
 
 Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-analytics) or read more about the [Adobe Analytics integration](https://powerbi.microsoft.com/integrations/adobe-analytics) with Power BI.
 
@@ -52,15 +52,14 @@ Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-anal
 
 	 ![](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
 
+## View the Adobe Analytics app
+
+[AZURE.INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-open-app.md)]
 
 **What Now?**
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
-
-- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-
+- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard.
 - [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
-
 - Your dataset is scheduled to refreshed daily. You can change the refresh schedule or try refreshing it on demand using **Refresh Now**.
 
 ## What's included
@@ -87,11 +86,12 @@ Power BI uses the Adobe Analytics Report API to define and run reports for the f
 Access to [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) is required, including access to the correct parameters as described below.
 
 <a name="FindingParams"></a>
+
 ## Finding parameters
 
 **Company**
 
-The Company value can be found in the top right of your account once you're signed in. **Note:** the value is case and spacing sensitive, enter it exactly as you see in your account.
+The Company value can be found in the top right of your account once you're signed in. The value is case and spacing sensitive. Enter it exactly as you see in your account.
 
 ![](media/powerbi-content-pack-adobe-analytics/adobe_companies.PNG)
 
@@ -106,10 +106,10 @@ From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/refe
 ## Troubleshooting
 If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company).
 
-If you've successfully passed the credentials screen  before encountering an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Please review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today however we're considering updates to better support larger instances, please provide feedback to the Power BI team at https://ideas.powerbi.com
+If you've successfully passed the credentials screen  before encountering an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Please review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today. However, we're considering updates to better support larger instances, please provide feedback to the Power BI team at https://ideas.powerbi.com
 
-### See also
+## Next steps
 
-[Get started in Power BI](powerbi-service-get-started.md)
-
-[Get data in Power BI](powerbi-service-get-data.md)
+- [Get started in Power BI](powerbi-service-get-started.md)
+- [Get data in Power BI](powerbi-service-get-data.md)
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
