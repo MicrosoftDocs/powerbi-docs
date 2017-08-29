@@ -86,15 +86,15 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
 
 ###    Having trouble retrieving answers from a report?
 
-- For reports, before running the troubleshooting tool, make sure to set the **Page level** filters on your Cortana answer cards to **Require single selection**. For help doing this see [Create Cortana answer cards](powerbi-service-cortana-desktop-entity-cards.md).
+1. For reports, before running the troubleshooting tool, make sure to set the **Page level** filters on your Cortana answer cards to **Require single selection**. For help doing this see [Create Cortana answer cards](powerbi-service-cortana-desktop-entity-cards.md).
 
-1.  Open the troubleshooting tool by adding "/cortana/test" to the end of your Power BI service URL. Your URL should look similar to this:
+2.  Open the troubleshooting tool by adding "/cortana/test" to the end of your Power BI service URL. Your URL should look similar to this:
 
     app.powerbi.com/cortana/test
 
     ![Open Cortana tool](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-tool2.png)
 
-2.  In the **Utterance** field, to troubleshoot reports, type the name of a Cortana answer card ***exactly as it appears in the Power BI tab***.
+3.  In the **Utterance** field, to troubleshoot reports, type the name of a Cortana answer card ***exactly as it appears in the Power BI tab***.
 
     ![Answer card](media/powerbi-service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
@@ -102,7 +102,7 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
 
     ![Answer card tab in Power BI](media/powerbi-service-cortana-troubleshoot/power-bi-answer-card2.png)
 
-3.  Sometimes, the first time you type something into the **Utterance** field, nothing happens. Think of it as priming the system; you're letting the troubleshooting tool know that it's time to turn on. Cut and paste or retype into the **Utterance** field again. In this example, the name of our answer card is **Cortana stores**. Pasting or typing **Cortana stores** into the tool produces a single result that displays in the **Interpretations** field. Click to see the answer card displayed in the Cortana window -- in this case, **Cortana stores**.
+4.  Sometimes, the first time you type something into the **Utterance** field, nothing happens. Think of it as priming the system; you're letting the troubleshooting tool know that it's time to turn on. Cut and paste or retype into the **Utterance** field again. In this example, the name of our answer card is **Cortana stores**. Pasting or typing **Cortana stores** into the tool produces a single result that displays in the **Interpretations** field. Click to see the answer card displayed in the Cortana window -- in this case, **Cortana stores**.
 
     ![Cortana stores in Utterance field](media/powerbi-service-cortana-troubleshoot/power-bi-utterance.png)
 

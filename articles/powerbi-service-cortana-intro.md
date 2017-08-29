@@ -118,7 +118,7 @@ When you ask a question in Cortana, Power BI answers from report pages designed 
 
      ![](media/powerbi-service-cortana-intro/power-bi-cortana-open-new.png)
 
-8. The report page opens in Power BI.
+8. The report page opens in Power BI.    
      ![Open the report from Cortana](media/powerbi-service-cortana-intro/power-bi-cortana-open2.png "Cortana answer card opens in Cortana search")
 
 
