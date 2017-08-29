@@ -54,9 +54,9 @@ Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-anal
 
 ## View the Adobe Analytics app
 
-[AZURE.INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-open-app.md)]
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
-**What Now?**
+**What now?**
 
 - Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard.
 - [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.

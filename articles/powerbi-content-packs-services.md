@@ -34,7 +34,7 @@ Log in to Power BI to view all of the [services you can connect to](https://app.
 
 ## View the dashboard and reports
 
-[AZURE.INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-open-app.md)]
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
 You can ask a question by typing in the Q&A box, or click a tile to open the underlying report.
 
