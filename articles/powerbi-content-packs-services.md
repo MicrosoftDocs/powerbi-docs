@@ -26,7 +26,7 @@ You can connect to a number of services you use to run your business, such as Sa
 
 Log in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). The Power BI team adds new services regularly.
 
-![](media/powerbi-content-packs-services/overview.png)
+![AppSource apps](media/powerbi-content-packs-services/overview.png)
 
 ## Get started
 
@@ -53,7 +53,7 @@ While Power BI is first connecting to the service, you may see an empty set of t
 
 - Select the question mark icon (**?**) in the upper-right corner >  **Get help**.
  
-    ![](media/powerbi-content-packs-services/power-bi-service-get-help.png)
+    ![Get help icon](media/powerbi-content-packs-services/power-bi-service-get-help.png)
 
 **Missing information**  
 The dashboard and reports include content from the service focused on a specific scenario and do not include all the information from the service. If there's a specific metric that you're not seeing in the content pack, please add an idea on the [Power BI Support](https://support.powerbi.com/forums/265200-power-bi) page.

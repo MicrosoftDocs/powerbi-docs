@@ -52,7 +52,7 @@ Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-anal
 
 	 ![](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
 
-## View the Adobe Analytics app
+## View the Adobe Analytics dashboard and reports
 
 [AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
@@ -110,6 +110,6 @@ If you've successfully passed the credentials screen  before encountering an err
 
 ## Next steps
 
-- [Get started in Power BI](powerbi-service-get-started.md)
+- [What are apps in Power BI?](powerbi-service-what-are-apps.md)
 - [Get data in Power BI](powerbi-service-get-data.md)
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
