@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="08/30/2017"
    ms.author="mihart"/>
 
 
@@ -25,7 +25,7 @@ You've read the [Introduction to Cortana and Power BI](powerbi-service-cortana-i
 > If you are trying out the Cortana and Power BI ***dashboard*** preview, you can skip the rest of this article. There are no setup requirements for Cortana to be able to search your Power BI dashboards.
 
 In Power BI service
-- enable one or more datasets for Cortana (reports are built on top of datasets,so Cortana needs access to those datasets)
+- enable one or more datasets for Cortana (reports are built on top of datasets, so Cortana needs access to those datasets)
 
 In Microsoft Windows
 - Check that you are running Windows 10 version 1511 or later

@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/27/2017"
+   ms.date="08/30/2017"
    ms.author="mihart"/>
 
 
@@ -43,11 +43,11 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
 
 4. If your dashboard has a title with more than one word, Cortana will only return that dashboard if your search matches at least two of the words. For a dashboard named "Sales FY16": 
 
-    - "show me sales" will *not* return a Power BI result.   
+    - "show sales" will *not* return a Power BI result.   
     - "show me sales fy16", "sales fy16", "show sales fy16", and "show me sales f" *will* return a Power BI result.    
-    - Adding the words "power bi" counts as one of the 2 required words, so "powerbi sales" *will* return a Power BI result.
+    - Adding the words "powerbi" counts as one of the 2 required words, so "powerbi sales" *will* return a Power BI result.
 
-4. Do you have access or edit permissions to any reports or dashboards? For reports, ensure the content you are attempting to search has an answer card.  For dashboards, ensure the content you are attempting to search is in  **Shared with me**, an app workspace, or **My workspace**. [Use the troubleshooting tool](#try-the-cortana-troubleshooting-tool) for help identifying the problem.
+4. Do you have access or edit permissions to any reports or dashboards? For reports, ensure the content you are attempting to search has an [answer card](powerbi-service-cortana-desktop-entity-cards.md).  For dashboards, ensure the content you are attempting to search is in  **Shared with me**, an app workspace, or **My workspace**. [Use the troubleshooting tool](#try-the-cortana-troubleshooting-tool) for help identifying the problem.
 
 4. Are you using a mobile device?  Currently we only support Power BI and Cortana integration on Windows mobile devices.
 
