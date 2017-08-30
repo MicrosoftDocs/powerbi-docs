@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Microsoft Dynamics NAV content pack"
-   description="Microsoft Dynamics NAV content pack for Power BI"
+   pageTitle="Microsoft Dynamics NAV for Power BI"
+   description="Microsoft Dynamics NAV for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,24 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/29/2017"
    ms.author="ajayan"/>
 
-# Microsoft Dynamics NAV content pack for Power BI
+# Microsoft Dynamics NAV for Power BI
 
-Getting insights into your Microsoft Dynamics NAV data is easy with Power BI and the Microsoft Dynamics NAV content pack. Power BI retrieves your data, both Sales and Financial data then builds an out-of-box dashboard and reports based on that data.
+Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Power BI retrieves your data, both Sales and Financial, then builds an out-of-box dashboard and reports based on that data. Power BI needs your permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements below.
 
 [Connect to the Microsoft Dynamics NAV for Power BI](https://app.powerbi.com/getdata/services/microsoft-dynamics-nav) or read more about the [Dynamics NAV integration](https://powerbi.microsoft.com/integrations/microsoft-dynamics-nav) with Power BI.
 
-Note: this content pack requires permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements below.
-
 ## How to connect
 
-1. Select Get Data at the bottom of the left navigation pane.  
-![](media/powerbi-content-pack-microsoft-dynamics-nav/getdata.png)
-
-2. In the **Services** box, select **Get**.  
-![](media/powerbi-content-pack-microsoft-dynamics-nav/services.PNG)
+[AZURE.INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3. Select **Microsoft Dynamics NAV**, then select **Get**.  
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/mdnav.png)
@@ -59,6 +53,10 @@ Note: this content pack requires permissions to the tables where data is retriev
 6. Power BI will retrieve your Microsoft Dynamics NAV data and create a ready-to-use dashboard and report for you.   
 ![](media/powerbi-content-pack-microsoft-dynamics-nav/dashboard.png)
 
+## View the dashboard and reports
+
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
+
 **What Now?**
 
 - Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
@@ -71,7 +69,7 @@ Note: this content pack requires permissions to the tables where data is retriev
 
 ## What's included
 
-The content pack includes data from the following tables (case sensitive):  
+The dashboard and reports contain data from the following tables (case sensitive):  
     - ItemSalesAndProfit  
     - ItemSalesByCustomer  
     - powerbifinance  
@@ -87,7 +85,7 @@ To import your Microsoft Dynamics NAV data into Power BI, you need to have permi
 
 ## Troubleshooting  
 
-The Power BI Microsoft Dynamics NAV content pack uses Microsoft Dynamics NAV's web services to retrieve your data. If you have a lot of data in your Microsoft Dynamics NAV instance, a suggestion to minimize the impact on your web service usage is to change the refresh frequency depending on your needs. Another suggestion is to have one admin create the content pack and share it instead of having every admin create their own.
+Power BI uses Microsoft Dynamics NAV's web services to retrieve your data. If you have a lot of data in your Microsoft Dynamics NAV instance, a suggestion to minimize the impact on your web service usage is to change the refresh frequency depending on your needs. Another suggestion is to have one admin create the app and share it instead of having every admin create their own.
 
 **"Parameter validation failed, please make sure all parameters are valid"**  
 If you see this error after typing your Microsoft Dynamics NAV URL. Make sure the following requirements are satisfied:
@@ -110,18 +108,18 @@ If you get a "login failed" error after using your Microsoft Dynamics NAV creden
 - The Dynamics NAV instance you're trying to connect to doesn't have a valid SSL certificate. In this case you'll see a more detailed error message ("unable to establish trusted SSL relationship"). Note that self-signed certs are not supported.
 
 **"Oops"**  
-If you see an "Oops" error dialog after you pass the authentication dialog, we're hitting an issue while loading the data for the content pack.
+If you see an "Oops" error dialog after you pass the authentication dialog box, Power BI is running into an issue while loading the data.
 
-- Verify the URL follows the pattern specified above. A common mistake is to specify
+- Verify the URL follows the pattern specified above. A common mistake is to specify:
 
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
 
-    however the 'Company('CRONUS%20International%20Ltd.')' section with your NAV Company name needs to be included:
+    However, you need to include the 'Company('CRONUS%20International%20Ltd.')' section with your NAV Company name:
 
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
-### See also
+## Next steps
 
-[Get started with Power BI](powerbi-service-get-started.md)
-
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+- [What are apps in Power BI?](powerbi-service-what-are-apps.md)
+- [Get data in Power BI](powerbi-service-get-data.md)
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
