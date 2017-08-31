@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Introduction to Cortana for Power BI"
-   description="Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset."
+   pageTitle="Quickly find and view your Power BI reports and dashboards using Cortana"
+   description="Use Cortana with Power BI to get answers from your data. Currently works with reports and dashboards."
    services="powerbi"
    documentationCenter=""
    authors="mihart"  
@@ -13,71 +13,117 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
-   ms.author="yaron"/>
+   ms.date="08/28/2017"
+   ms.author="mihart"/>
 
 
-# Introduction to Cortana for Power BI
-Use Cortana across your Windows 10 devices to get instant answers to your important business questions. By integrating with Power BI, Cortana can retrieve key information directly from Power BI datasets and reports. Interact with the data visualizations in Cortana or open the answers in Power BI to explore further. All it takes is Windows 10 November 2015 version or later, Cortana, Power BI, and at least one dataset enabled for Cortana.
+# Quickly find and view your Power BI data using Cortana for Power BI
+Use Cortana across your Windows 10 devices to get instant answers to your important business questions. By integrating with Power BI, Cortana can retrieve key information directly from Power BI dashboards and reports. All it takes is Windows 10 November 2015 version or later, Cortana, Power BI, and access to at least one dataset.
 
-This series of articles will take you through the steps to
+![Cortana search field](media/powerbi-service-cortana-intro/power-bi-cortana-searchbox.png)
+
+## Preview the new Cortana *dashboard* search experience for Windows 10
+For a while now you've been able to [use Cortana to retrieve certain types of report pages](powerbi-service-cortana-desktop-entity-cards.md). Now we've added a **new experience** -- the ability to also retrieve dashboards. Try it out and please [send us feedback ](mailto:pbicortanasg@microsoft.com). Eventually the *new experience* will be extended to include Cortana search for reports as well.  One of the key benefits of the new experience is that you don't need to do anything special to set it up -- no enabling Cortana or configuring Windows 10  -- it just works.
+
+>[AZURE.NOTE] If it doesn't "just work," see the [Troubleshooting article](powerbi-service-cortana-troubleshoot.md) for help.
+
+The underlying technology is using [Microsoft's Azure Search Service](). This search service provides extra capabilities such as smart ranking, error correction, and auto complete.
+
+Both Cortana experiences will exist side-by-side.
+
+## Cortana for Power BI documentation
+We have 4 documents that guide you through setting up and using Cortana for Power BI. This series of articles will take you through the steps to
 
 **Article 1** (this article): understand how Cortana and Power BI work together
 
-**Article 2**: [Enable the Cortana - Power BI - Windows integration](powerbi-service-cortana-enable.md)
+**Article 2**: [search Power BI reports: Enable the Cortana - Power BI - Windows integration](powerbi-service-cortana-enable.md)
 
-**Article 3**: [Create special *Cortana answer cards*](powerbi-service-cortana-desktop-entity-cards.md)
+**Article 3**: [search Power BI reports: create special *Cortana answer cards*](powerbi-service-cortana-desktop-entity-cards.md)
 
 **Article 4**: [Troubleshoot issues](powerbi-service-cortana-troubleshoot.md)
 
 ## How do Cortana and Power BI work together?
 
-When you use Cortana to ask a question, Power BI can be one of the places Cortana looks for answers. In Power BI, Cortana can find rich data-driven answers from Power BI  reports that contain a special type of report page called a *Cortana answer card*.
+When you use Cortana to ask a question, Power BI can be one of the places Cortana looks for answers. In Power BI, Cortana can find rich data-driven answers from Power BI reports (that contain a special type of report page called a *Cortana answer card*) and from Power BI dashboards.
 
-Answer cards are designed specifically for display by Cortana. When you ask Cortana a question using the title (or keywords) of one of these answer cards, Cortana shows you the answer -- without you having to navigate to Power BI.  The answer card shows up right there in your Cortana screen.
+If Cortana finds a match, it displays the name of the dashboard or report page right there in your Cortana screen. The dashboard or report page can be opened in Power BI. Report pages can also be explored right in Cortana - they're interactive.
 
-When you ask a question in Cortana, Power BI answers can range from simple numerical values (“revenue for the last quarter”), charts (“number of opportunities by team”), maps (“average customer spending in California by city”), or even complete reports from Power BI all provided directly from Cortana. Potential answers are determined by Cortana on the fly directly from the Cortana *answer cards* already created in Power BI that help answer a question. To further explore an answer, simply open a result in Power BI.
+![interactive report page displays in Cortana](media/powerbi-service-cortana-intro/power-bi-report-cortana-s.png)
 
-> [AZURE.NOTE]Before Cortana can look for answers in your Power BI datasets and reports, you'll need to [enable this feature using the Power BI service and set up Windows to communicate with Power BI](powerbi-service-Cortana-enable.md).  
 
-##  Use Cortana to get answers from Power BI
 
-1.  Select the Cortana icon in the taskbar and click in the Search box.
+### Cortana and Dashboards (the *new experience*)
+Cortana can find answers in dashboards that you own and dashboards that have been shared with you. Ask Cortana questions using titles, keywords, owner names, workspace names, app names, and more.
 
-2.  Type your question into the Cortana search bar. Cortana displays the available results. If there is a Power BI answer card that matches the question, it shows up under **Best Match** or **Power BI**.  And in this example the .pbix file (and backup) that I used to create the answer cards also display under **Documents**.
+>[AZURE.IMPORTANT] Your question must have at least 2 words for Cortana to find an answer. So if you search on a dashboard or report that has a one-word name (Marketing) add the word "show" or "Power BI" or "<owner name>"to your question, as in "show Marketing" and "michele hart sample". 
 
-    ![](media/powerbi-service-cortana-intro/power-bi-cortana-search.png)
+If your dashboard has a title with more than one word, Cortana will only return that dashboard if your search matches at least two of the words or if your dashboard matches one of the words plus the owner name. For a dashboard named "Customer Profitability Sample": 
 
-3.  Otherwise, select the **Cortana stores** *answer card* to display it in the Cortana window.
+- "show me customer" will *not* return a Power BI dashboard result.   
+- "utterances such as "show me customer profitability", "customer p", "customer s", "profitability sample", "michele hart sample", "show customer profitability sample", and "show me customer p" *will* return a Power BI result.
+- "show me customer s", "show me profitability s" will *not* return a Power BI dashboard result.
+- Adding the word "powerbi" counts as one of the 2 required words, so "power bi sample" *will* return a Power BI result. 
 
-    ![](media/powerbi-service-cortana-intro/power-bi-cortana.png)   
+    ![Cortana search with at least 2 words](media/powerbi-service-cortana-intro/power-bi-cortana-2-words.png)
+
+### Cortana and Reports
+ Cortana can find answers in reports that have [pages designed specifically for display by Cortana](powerbi-service-cortana-desktop-entity-cards.md). Simply ask questions using the title or keywords from one of these specialty report pages.  
+
+The underlying technology for reports is using [Microsoft's Power BI Q&A](powerbi-service-q-and-a.md).
+
+When you ask a question in Cortana, Power BI answers from report pages designed specifically for Cortana. Potential answers are determined by Cortana on the fly directly from the Cortana *answer cards* already created in Power BI.  To further explore an answer, simply open a result in Power BI.
+
+> [AZURE.NOTE] Before Cortana can look for answers in your Power BI reports, you'll need to [enable this feature using the Power BI service and set up Windows to communicate with Power BI](powerbi-service-Cortana-enable.md).  
+
+##  Using Cortana to get answers from Power BI
+
+1. Start in Cortana. There are many different ways to *open* Cortana: select the Cortana icon in the taskbar (pictured below), use voice commands, or tap the search icon on your Windows mobile device.
+
+     ![](media/powerbi-service-cortana-intro/power-bi-cortana-searchbox.png)
+
+2. Once Cortana is ready, type or speak your question into the Cortana search bar. Cortana displays the available results. If there is a Power BI dashboard that matches the question, it shows up under **Best match** or **Power BI**.
+
+     ![Cortana search finds Power BI dashboard](media/powerbi-service-cortana-intro/power-bi-cortana-searching2.png "Cortana finds a Power BI dashboard")
+
+     >[AZURE.NOTE] At the current time, only English is supported.
+
+3.  Open the dashboard in Power BI by selecting the dashboard name. 
+
+    ![Open the dashboard from Cortana](media/powerbi-service-cortana-intro/power-bi-dashboard-opens.png "Open the dashboard from Cortana")   
+
+
+3. Now let's use Cortana to search for a report. We'll need to know of a [report that has a page with a Cortana answer card ](powerbi-service-cortana-desktop-entity-cards.md). In this example, a report named "Cortana-New-Stores" has a Cortana answer card page named "cortana stores".  
+     
+     Type or speak your question into the Cortana search bar. Cortana displays the available results. If there is a Power BI report page that matches the question, it shows up under **Best match** or **Power BI**. And in this example the .pbix file (and backup) that I used to create the answer card also displays -- under **Documents**.
+
+     ![Search for a report](media/powerbi-service-cortana-intro/power-bi-cortana-search3-m.png "search for a report") 
+
+4. Select the **Cortana stores** report page to display it in the Cortana window.
+
+    ![report page opens in Cortana](media/powerbi-service-cortana-intro/power-bi-report-cortana-opens.png "report page opens in Cortana")   
 
     Remember, an *answer card* is a special type of Power BI report page that was created by a dataset owner.  For more information, see [Create a Cortana answer card](powerbi-service-cortana-desktop-entity-cards.md).
 
-##  Interact with the answer card without leaving Cortana
+3. But that's not all. Interact with the visualizations on the answer card as you would in Power BI.
 
-But that's not all. Interact with the visualizations on the answer card as you would in Power BI.
+     -   For example, select an element on one visualization to cross-filter and highlight the other visualizations on the answer card.
 
--   For example, select an element on one visualization to cross-filter and highlight the other visualizations on the answer card.
+         ![](media/powerbi-service-cortana-intro/power-bi-cortana-filtered-new.png)
 
-    ![](media/powerbi-service-cortana-intro/power-bi-cortana-cross-filter.png)
+     -   Or, use natural language to filter the results instead.  For example, ask "Cortana stores for Lindseys" and see the card filtered to only show data for the Lindseys chain.
 
--   Or, use natural language to filter the results instead.  For example, ask **Cortana stores for Lindseys** and see the card filtered to only show data for the Lindseys chain.
+         ![cross filter in Cortana](media/powerbi-service-cortana-intro/power-bi-cortana-filtered-2.png "cross-filter in Cortana")
 
-    ![](media/powerbi-service-cortana-intro/power-bi-cortana-filtered.png)
+7. Continue exploring. Scroll to the bottom of the Cortana window and select **Open in Power BI**.
 
--    Continue exploring. Scroll to the bottom of the Cortana window and select **Open in Power BI**.
+     ![](media/powerbi-service-cortana-intro/power-bi-cortana-open-new.png)
 
-     ![](media/powerbi-service-cortana-intro/power-bi-cortana-open.png)
-
-     The entire report opens in Power BI service.
-
-##  Create a Cortana card
-
-Dataset owners can [create the special Cortana report *answer cards* in Power BI service or Power BI Desktop](powerbi-service-cortana-desktop-entity-cards.md). Answer cards should be designed to answer the most-common questions.   
+8. The report page opens in Power BI.    
+     ![Open the report from Cortana](media/powerbi-service-cortana-intro/power-bi-cortana-open2.png "Cortana answer card opens in Cortana search")
 
 
-##  Considerations and limitations
+
+##  Considerations and troubleshooting
 
 - Cortana will not have access to any Cortana cards that have not been [enabled for Power BI](powerbi-service-Cortana-enable.md).
 
@@ -85,6 +131,9 @@ Dataset owners can [create the special Cortana report *answer cards* in Power BI
 
 - Cortana for Power BI is currently only available in English.
 
-- Cortana is not currently available on mobile devices.
+- Cortana for Power BI is only available on Windows mobile devices.
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+## Next steps    
+[Enable the Cortana - Power BI - Windows integration for reports](powerbi-service-cortana-enable.md)
