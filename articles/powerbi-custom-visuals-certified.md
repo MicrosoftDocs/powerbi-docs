@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2017"
+   ms.date="08/30/2017"
    ms.author="mihart"/>
 # Getting a custom visual *certified*
 
@@ -73,15 +73,21 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |Fly Wheel - coming soon |   |
 |[Forecasting with ARIMA (R visual)](https://store.office.com/forecasting-with-arima-WA104380888.aspx)|   |
 |[Funnel plot (R visual)](https://store.office.com/funnel-plot-WA104381066.aspx)|  |
+|[Gantt](https://store.office.com/gantt-WA104380765.aspx)  |  |
+|[Histogram](https://store.office.com/histogram-chart-WA104380776.aspx)  |  |
 |[KPI Indicator](https://store.office.com/kpi-indicator-WA104380832.aspx)   |  |
 |[Play Axis Dynamic Slicer](https://store.office.com/play-axis-dynamic-slicer-WA104380981.aspx) |   |
 |[Radar chart](https://store.office.com/radar-chart-WA104380771.aspx) |   |
+|[Sankey](https://store.office.com/ru-ru/app.aspx?assetid=WA104380777.aspx)  |  |
 |[Scroller](https://store.office.com/scroller-WA104381018.aspx) |  |
 |[Smart Filter by OKViz](https://store.office.com/smart-filter-by-okviz-WA104380859.aspx) |   |
 |[Spline (R visual)](https://store.office.com/spline-chart-WA104380860.aspx)|   |
 |[Tachometer](https://store.office.com/tachometer-WA104380937.aspx?)   | |
+|[Table Heat Map](https://store.office.com/table-heatmap-WA104380818.aspx)     |   |
 |[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx)    | [Video](https://youtu.be/ozMtZ4_NZ10)|
 |[Time series decomposition (R visual](https://store.office.com/time-series-decomposition-chart-WA104380897.aspx?) | |
+|[Tornado chart](https://store.office.com/tornado-chart-WA104380768.aspx) |  |
+|[Visio visual preview](https://store.office.com/visio-visual-preview-WA104381132.aspx)    |     |
 | [Word Cloud](https://store.office.com/word-cloud-WA104380752.aspx?) |[Video](https://youtu.be/AblTenl9fqo)  |
 
 
