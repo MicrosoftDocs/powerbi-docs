@@ -1,6 +1,6 @@
 <properties
    pageTitle="Connect to services with Power BI"
-   description="Connect to services with Power BI"
+   description="Connect to a number of the services you use to run your business, such as Salesforce, Microsoft Dynamics CRM, and Google Analytics."
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="08/31/2017"
    ms.author="ajayan"/>
 
 # Connect to services with Power BI

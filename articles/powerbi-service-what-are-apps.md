@@ -1,6 +1,6 @@
 <properties 
    pageTitle="What are apps in Power BI?"
-   description="Apps are a collection of dashboards and reports purpose-built by your organization to deliver key metrics for faster data-driven decisions."
+   description="Apps are a collection of dashboards and reports built to deliver key metrics to an organization."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -16,12 +16,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="08/31/2017"
    ms.author="maggies"/>
 
 # What are apps in Power BI?
 
-An app is a collection of dashboards and reports built to deliver key metrics for your organization. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device. 
+An app is a collection of dashboards and reports built to deliver key metrics, all in one place. You can have apps internal to your organization, and also [apps for external services](powerbi-content-packs-services.md) such as Google Analytics and Microsoft Dynamics CRM. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device. 
 
 With apps you automatically get all the updates the app author makes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping up to date.
 
@@ -74,4 +74,5 @@ Now you can explore the data in the dashboards and reports in the app.
 
 ## Next steps
 - [Create and distribute apps in Power BI](powerbi-service-create-apps.md)
+- [Power BI apps for external services](powerbi-content-packs-services.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -16,17 +16,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="08/31/2017"
    ms.author="maggies"/>
 
 # Create and distribute an app in Power BI
 
 ## What are Power BI apps?
-Apps are collections of dashboards and reports you create to deliver key metrics to large groups of people in your organization. 
+Apps are collections of dashboards and reports that deliver key metrics to large groups of people in an organization. You can create apps for your organization, and you can connect to [Power BI apps for external services](powerbi-content-packs-services.md) such as Google Analytics and Microsoft Dynamics CRM.
 
 ![Power BI apps](media/powerbi-service-create-apps/power-bi-apps-left-nav.png)
 
-Business users often need multiple Power BI dashboards and reports to run their business. With apps, they won't have to remember the names of all these dashboards and how to navigate to them, because the apps bring the pieces together.  
+Business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names of all these dashboards and how to navigate to them.  
 
 With Power BI apps, now in preview, you can create collections of dashboards and reports and distribute these apps to the whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
 
@@ -111,9 +111,7 @@ It’s empty, so now you add content to it. Adding content is just like adding c
 
 ## Add an image to your app (optional)
 
-By default, Power BI creates a little colored circle for your app, with the app's initials. But maybe you want to customize it with an image.
-
-> [AZURE.NOTE] To add an image to an app, you need an Exchange Online license.
+By default, Power BI creates a little colored circle for your app, with the app's initials. But maybe you want to customize it with an image. To add an image, you need an Exchange Online license.
 
 1. Select **Workspaces**, select the ellipsis (...) next to the name of the workspace, then **Members**. 
 
@@ -123,7 +121,7 @@ By default, Power BI creates a little colored circle for your app, with the app'
 
 2. When you hover over the colored circle in the upper left, it turns into a pencil icon. Select it.
 
-     ![Ofice 365 pencil icon](media/powerbi-service-create-apps/power-bi-apps-workspace-edit-image.png)
+     ![Office 365 pencil icon](media/powerbi-service-create-apps/power-bi-apps-workspace-edit-image.png)
 
 3. Select the pencil icon again, and find the image you want to use.
 
@@ -228,4 +226,5 @@ With apps, you can publish a read-only version of your app workspace to large au
 
 ## Next steps
 - [What are apps in Power BI?](powerbi-service-what-are-apps.md)
+- [Power BI apps for external services](powerbi-content-packs-services.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
