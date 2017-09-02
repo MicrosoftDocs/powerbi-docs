@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/30/2017"
+   ms.date="08/31/2017"
    ms.author="mihart"/>
 
 
@@ -110,11 +110,7 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
 
 ###    Having trouble retrieving answers from a dashboard?
 
-1. First, determine that you have dashboards that can be accessed. Type your own name in the **Utterance** field.  This should list all the dashboards that you own and that Cortana can access for you.
-
-    ![Type your own name in Utterance field](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-name.png)
-
-2. Looking for a dashboard that has been shared with you?  Open Power BI > **Shared with me** and locate the name of the dashboard.  Then type that name into the *Utterances** field. 
+Looking for a dashboard that has been shared with you?  Open Power BI > **Shared with me** and locate the name of the dashboard.  Then type that name into the *Utterances** field.
 
     ![Open Shared with me in Power BI](media/powerbi-service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
 

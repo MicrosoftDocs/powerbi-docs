@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2017"
+   ms.date="09/01/2017"
    ms.author="mihart"/>
 
 
@@ -28,7 +28,7 @@ Have a new dataset and not quite sure where to start?  Need to build a dashboard
 
 Run Quick Insights to generate interesting interactive visualizations based on your data. Quick Insights can be run on an entire dataset (Quick Insights) or on a specific dashboard tile (Scoped Insights). You can even run Insights on an Insight!
 
->**NOTE**: Quick Insights is not available in Power BI Desktop and does not work with DirectQuery - it only works with data uploaded to Power BI.
+>**NOTE**: Quick Insights does not work with DirectQuery - it only works with data uploaded to Power BI.
 
 The Insights feature is built on a growing [set of advanced analytical algorithms](powerbi-service-auto-insights-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
