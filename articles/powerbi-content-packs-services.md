@@ -26,11 +26,11 @@ You can connect to a number of services you use to run your business, such as Sa
 
 Log in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). The Power BI team adds new services regularly.
 
-![Google analytics app in the Power BI mobile app](media/powerbi-content-packs-services/overview.png)
+![AppSource apps](media/powerbi-content-packs-services/overview.png)
 
 After you install the app, you can view the dashboard and reports in the Power BI service (https://powerbi.com), and in the Power BI mobile apps. 
 
-![AppSource apps](media/powerbi-content-packs-services/power-bi-service-mobile-app.png)
+![Google analytics app in the Power BI mobile app](media/powerbi-content-packs-services/power-bi-service-mobile-app-240.png)
 
 ## Get started
 
