@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="09/05/2017"
    ms.author="ajayan"/>
 
 # Google Analytics for Power BI
@@ -48,23 +48,15 @@ You can create customized dashboards and reports by starting from the [Google An
 
     ![](media/powerbi-content-pack-google-analytics/params2.png)
 
-7.  Click **Connect** to begin the import process. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+7.  Click **Connect** to begin the import process. 
 
-     ![](media/powerbi-content-pack-google-analytics/googleanalytics2.png)
-
-## View the Adobe Analytics dashboard and reports
+## View the Google Analytics dashboard and reports
 
 [AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
-**What Now?**
+![](media/powerbi-content-pack-google-analytics/googleanalytics2.png)
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
-
-- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-
-- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
-
-- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
 ## System requirements
 

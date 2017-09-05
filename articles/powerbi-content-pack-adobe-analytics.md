@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="09/05/2017"
    ms.author="ajayan"/>
 
 # Adobe Analytics for Power BI
@@ -48,19 +48,15 @@ Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-anal
 
 	![](media/powerbi-content-pack-adobe-analytics/adobe_authorize.PNG)
 
-7. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
-
-	 ![](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
+7. After you approve, the import process begins automatically. 
 
 ## View the Adobe Analytics dashboard and reports
 
 [AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
-**What now?**
+![Adobe Analytics dashboard](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard.
-- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
-- Your dataset is scheduled to refreshed daily. You can change the refresh schedule or try refreshing it on demand using **Refresh Now**.
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
 ## What's included
 Power BI uses the Adobe Analytics Report API to define and run reports for the following tables:

@@ -1,5 +1,7 @@
-After you connect to a service, the app will be on the Apps page.
+When the import is complete, the new app will appear on the Apps page.
 
-- Select **Apps** in the left navigation pane > select the app.
+1. Select **Apps** in the left navigation pane > select the app.
 
-	 ![Apps page](media/powerbi-service-apps-open-app/power-bi-service-apps-open-app.png)
+	 ![Apps in the left navigation pane](media/powerbi-service-apps-open-app/power-bi-service-apps-left-nav.png)
+
+2. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report. 

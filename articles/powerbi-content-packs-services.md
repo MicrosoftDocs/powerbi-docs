@@ -3,9 +3,9 @@
    description="Connect to a number of the services you use to run your business, such as Salesforce, Microsoft Dynamics CRM, and Google Analytics."
    services="powerbi"
    documentationCenter=""
-   authors="ajayan"
+   authors="maggiesMSFT"
    manager="erikre"
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,16 +17,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/31/2017"
-   ms.author="ajayan"/>
+   ms.date="09/05/2017"
+   ms.author="maggies"/>
 
 # Connect to services with Power BI
 
-You can connect to a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. You can interact with the dashboard and reports, but you can't save changes.
+You can connect to a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. 
 
 Log in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). The Power BI team adds new services regularly.
 
-![AppSource apps](media/powerbi-content-packs-services/overview.png)
+![Google analytics app in the Power BI mobile app](media/powerbi-content-packs-services/overview.png)
+
+Open the app to view the dashboard and reports in the Power BI service (https://powerbi.com), and in the Power BI mobile apps. 
+
+![AppSource apps](media/powerbi-content-packs-services/power-bi-service-mobile-app.png)
 
 ## Get started
 
@@ -34,9 +38,18 @@ Log in to Power BI to view all of the [services you can connect to](https://app.
 
 ## View the dashboard and reports
 
-[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
+When the import is complete, the new app appears on the Apps page.
 
-You can ask a question by typing in the Q&A box, or click a tile to open the underlying report.
+1. Select **Apps** in the left navigation pane > select the app.
+
+	 ![Apps page](media/powerbi-content-packs-services/power-bi-service-apps-open-app.png)
+
+2. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report. 
+ 
+    ![Google Analytics dashboard](media/powerbi-content-packs-services/googleanalytics2.png)
+
+    You can filter and highlight the data in the report, but you can't save your changes.
+
 
 ## What's included
 
