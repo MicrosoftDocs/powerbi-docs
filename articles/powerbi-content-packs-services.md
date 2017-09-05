@@ -46,9 +46,9 @@ When the import is complete, the new app appears on the Apps page.
 
 2. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report. 
  
-      ![Google Analytics dashboard](media/powerbi-content-packs-services/googleanalytics2.png)
+    ![Google Analytics dashboard](media/powerbi-content-packs-services/googleanalytics2.png)
 
-      You can filter and highlight the data in the report, but you can't save your changes.
+    You can filter and highlight the data in the report, but you can't save your changes.
 
 
 ## What's included
