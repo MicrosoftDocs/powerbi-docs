@@ -16,8 +16,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="09/05/2017"
    ms.author="asaxton"/>
+
 # Power BI admin portal
 
 The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
@@ -28,17 +29,16 @@ All users will see **Admin portal** under the gear icon. If they are not an admi
 
 ## How to get to the admin portal
 
-To get to the Power BI admin portal, do the following.
+Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md). To get to the Power BI admin portal, do the following.
 
 1. Select the settings gear in the top right of the Power BI service.
 
 2. Select **Admin Portal**.
 
-> [AZURE.NOTE] Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](powerbi-admin-role.md).
-
 ![](media/powerbi-admin-portal/powerbi-admin-settings.png)
 
 Within the portal, there are five tabs. These are described below.
+
 - [Usage metrics](#usage-metrics)
 - [Users](#users)
 - [Audit logs](#audit-logs)
