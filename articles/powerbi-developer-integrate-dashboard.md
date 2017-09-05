@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/21/2017"
+   ms.date="09/05/2017"
    ms.author="asaxton"/>
 
 # Integrate a dashboard into an app (user owns data)
@@ -141,7 +141,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 }
 ```
 
-## Step 3 - load a dashboard using JavaScript
+## Step 4 - load a dashboard using JavaScript
 
 You can use JavaScript to load a dashboard into a div element on your web page.
 
