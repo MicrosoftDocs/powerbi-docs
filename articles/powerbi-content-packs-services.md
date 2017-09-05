@@ -48,7 +48,7 @@ When the import is complete, the new app appears on the Apps page.
  
       ![Google Analytics dashboard](media/powerbi-content-packs-services/googleanalytics2.png)
 
-     You can filter and highlight the data in the report, but you can't save your changes.
+      You can filter and highlight the data in the report, but you can't save your changes.
 
 
 ## What's included
