@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2017"
+   ms.date="09/05/2017"
    ms.author="asaxton"/>
 
 # What's new in Power BI Report Server
@@ -41,7 +41,7 @@ This preview release contains new capabilities.
 
 You can download the August 2017 preview of Power BI Report server, and Power BI Desktop optimized for Power BI Report Server (Preview) at [powerbi.com](https://powerbi.microsoft.com/report-server/). This cannot be installed side-by-side with an existing Power BI Report Server. If you have Power BI Report Server already installed, you will need to installthe preview on a separate server. 
 
-### Support for data sources outher than Analysis Services in Power BI Report Server
+### Support for data sources other than Analysis Services in Power BI Report Server
 
 With the August 2017 preview of Power BI Report Server, you can connect to any data source in Power BI Desktop and publish your reports to Power BI Report Server. To enable this functionality, there is no special configuration required. Simply install and configure the preview on a separate server and you’re ready to go. You can then use Power BI Desktop (August 2017 Preview) to connect to your data source(s), create your report and publish directly to the server to share it with others in your organization.
 
