@@ -18,12 +18,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2017"
+   ms.date="08/31/2017"
    ms.author="mihart"/>
 
 # Usage metrics for dashboards and reports
 
 If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization; what is being used, by whom, and for what purpose.  
+
+>[AZURE.NOTE] Usage metrics will capture usage when you embed dashboards and reports, but not when you use [publish to web](powerbi-service-publish-to-web.md)
 
 These usage metrics reports are read-only. However, you can personalize a usage metrics report by using "Save as." This creates a brand new dataset and converts the read-only report to a full-featured Power BI report that you can edit. Not only does the personalized report contain metrics for the selected dashboard or report, but by removing the default filter, you now have access to usage metrics for all dashboards or all reports in the selected workspace. 
 
@@ -34,7 +36,7 @@ These usage metrics reports are read-only. However, you can personalize a usage 
 
 Running usage metrics reports is only available in Power BI service.  However, if you save a usage metrics report or pin it to a dashboard, you will be able to open and interact with that report on mobile devices. 
 
->**NOTE**: The usage metrics feature captures usage information from all users, both Free and Pro. However, a Pro license is required to run and access the usage metrics data. This feature does not expose the names or email addresses of the users.
+>**NOTE**: The usage metrics feature captures usage information from all users, both Free and Pro. However, a Pro license is required to run and access the usage metrics data. 
 
 ## About the Usage Metrics report
 Usage metrics are provided on dashboards or reports in the selected workspace. To get access to usage metrics data for a particular dashboard or report, you must:    
@@ -175,6 +177,9 @@ When disabling usage metrics for their entire organization, admins can use the *
 ##    Considerations and limitations
 Q:    I can't run usage metrics on a dashboard or report    
 A:    You can only see usage metrics for content you own or have permissions to edit.
+
+Q;    Will usage metrics work with [publish to web](powerbi-service-publish-to-web.md)?
+A:    Uusage metrics are not captured when you use publish to web
 
 Q:    I can't run usage metrics on any content at all.    
 A1:    Admins can turn off this feature for their organization.  Contact your Admin to see if this is the case.    

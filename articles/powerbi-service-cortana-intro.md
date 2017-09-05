@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="08/30/2017"
    ms.author="mihart"/>
 
 
@@ -55,14 +55,13 @@ If Cortana finds a match, it displays the name of the dashboard or report page r
 ### Cortana and Dashboards (the *new experience*)
 Cortana can find answers in dashboards that you own and dashboards that have been shared with you. Ask Cortana questions using titles, keywords, owner names, workspace names, app names, and more.
 
->[AZURE.IMPORTANT] Your question must have at least 2 words for Cortana to find an answer. So if you search on a dashboard or report that has a one-word name (Marketing) add the word "show" or "Power BI" or "<owner name>"to your question, as in "show Marketing" and "michele hart sample". 
+> [AZURE.IMPORTANT] Your question must have at least 2 words for Cortana to find an answer. So if you search on a dashboard that has a one-word name (Marketing) add the word "show" or "Power BI" or "<owner name>"to your question, as in "show Marketing" and "michele hart sample". 
 
 If your dashboard has a title with more than one word, Cortana will only return that dashboard if your search matches at least two of the words or if your dashboard matches one of the words plus the owner name. For a dashboard named "Customer Profitability Sample": 
 
 - "show me customer" will *not* return a Power BI dashboard result.   
 - "utterances such as "show me customer profitability", "customer p", "customer s", "profitability sample", "michele hart sample", "show customer profitability sample", and "show me customer p" *will* return a Power BI result.
-- "show me customer s", "show me profitability s" will *not* return a Power BI dashboard result.
-- Adding the word "powerbi" counts as one of the 2 required words, so "power bi sample" *will* return a Power BI result. 
+- Adding the word "powerbi" counts as one of the 2 required words, so "powerbi sample" *will* return a Power BI result. 
 
     ![Cortana search with at least 2 words](media/powerbi-service-cortana-intro/power-bi-cortana-2-words.png)
 
