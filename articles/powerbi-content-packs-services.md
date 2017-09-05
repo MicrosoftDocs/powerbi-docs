@@ -28,7 +28,7 @@ Log in to Power BI to view all of the [services you can connect to](https://app.
 
 ![AppSource apps](media/powerbi-content-packs-services/overview.png)
 
-After you install the app, you can view the dashboard and reports in the Power BI service (https://powerbi.com), and in the Power BI mobile apps. 
+After you install the app, you can view the dashboard and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and in the Power BI mobile apps. 
 
 ![Google analytics app in the Power BI mobile app](media/powerbi-content-packs-services/power-bi-service-mobile-app-240.png)
 
