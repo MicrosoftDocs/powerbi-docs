@@ -28,7 +28,7 @@ Log in to Power BI to view all of the [services you can connect to](https://app.
 
 ![Google analytics app in the Power BI mobile app](media/powerbi-content-packs-services/overview.png)
 
-Open the app to view the dashboard and reports in the Power BI service (https://powerbi.com), and in the Power BI mobile apps. 
+After you install the app, you can view the dashboard and reports in the Power BI service (https://powerbi.com), and in the Power BI mobile apps. 
 
 ![AppSource apps](media/powerbi-content-packs-services/power-bi-service-mobile-app.png)
 
@@ -46,9 +46,9 @@ When the import is complete, the new app appears on the Apps page.
 
 2. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report. 
  
-    ![Google Analytics dashboard](media/powerbi-content-packs-services/googleanalytics2.png)
+      ![Google Analytics dashboard](media/powerbi-content-packs-services/googleanalytics2.png)
 
-    You can filter and highlight the data in the report, but you can't save your changes.
+     You can filter and highlight the data in the report, but you can't save your changes.
 
 
 ## What's included

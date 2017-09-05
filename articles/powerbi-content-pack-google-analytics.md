@@ -54,9 +54,9 @@ You can create customized dashboards and reports by starting from the [Google An
 
 [AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
-![](media/powerbi-content-pack-google-analytics/googleanalytics2.png)
+      ![](media/powerbi-content-pack-google-analytics/googleanalytics2.png)
 
-[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-what-now.md)]
 
 ## System requirements
 

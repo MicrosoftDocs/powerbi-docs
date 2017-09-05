@@ -54,9 +54,9 @@ Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-anal
 
 [AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
-![Adobe Analytics dashboard](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
+      ![Adobe Analytics dashboard](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
 
-[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-what-now.md)]
 
 ## What's included
 Power BI uses the Adobe Analytics Report API to define and run reports for the following tables:
