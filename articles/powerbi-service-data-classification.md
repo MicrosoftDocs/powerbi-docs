@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="amandacofsky"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""

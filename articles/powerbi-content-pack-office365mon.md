@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Office365Mon content pack"
-   description="Office365Mon content pack for Power BI"
+   pageTitle="Office365Mon for Power BI"
+   description="Office365Mon for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/28/2017"
    ms.author="ajayan"/>
 
-# Office365Mon content pack for Power BI
+# Office365Mon for Power BI
 
 Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon content pack. Power BI retrieves your data, including outages and health probes, then builds an out-of-box dashboard and reports based on that data.
 

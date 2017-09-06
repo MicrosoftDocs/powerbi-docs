@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Adobe Analytics content pack"
-   description="Adobe Analytics content pack for Power BI"
+   pageTitle="Adobe Analytics for Power BI"
+   description="Connect to Adobe Analytics from Power BI for an app that displays your account data in a dashboard and reports."
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,30 +17,24 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="09/05/2017"
    ms.author="ajayan"/>
 
-# Adobe Analytics content pack for Power BI
+# Adobe Analytics for Power BI
 
-Connecting to Adobe Analytics through Power BI starts by connecting to your Adobe Analytics Marketing Cloud account. You will get a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. You can use the dashboard and reports provided, or customize them to highlight the information you care most about.  The data will be refreshed automatically once per day.
+Connecting to Adobe Analytics through Power BI starts by connecting to your Adobe Analytics Marketing Cloud account. You get an app with a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. The data is refreshed automatically once per day. You can interact with the dashboard and reports, but you can't save changes.
 
-Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/services/adobe-analytics) or read more about the [Adobe Analytics integration](https://powerbi.microsoft.com/integrations/adobe-analytics) with Power BI.
+Connect to [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-analytics) or read more about the [Adobe Analytics integration](https://powerbi.microsoft.com/integrations/adobe-analytics) with Power BI.
 
 ## How to connect
 
-1.  Select **Get Data** at the bottom of the left navigation pane.
-
-	![](media/powerbi-content-pack-adobe-analytics/getdata.png)
-
-2.  In the **Services** box, select **Get**.
-
-	![](media/powerbi-content-pack-adobe-analytics/services.PNG)
+[AZURE.INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3.  Select **Adobe Analytics** \>  **Get**.
 
 	![](media/powerbi-content-pack-adobe-analytics/adobe.png)
 
-4.  The content pack connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on [finding those parameters](#FindingParams) below.
+4.  Power BI connects to a specific Adobe Analytics Company and Report Suite ID (not the Report Suite name). See details on [finding those parameters](#FindingParams) below.
 
 	![](media/powerbi-content-pack-adobe-analytics/parameters.PNG)
 
@@ -54,23 +48,18 @@ Connect to the [Adobe Analytics content pack](https://app.powerbi.com/getdata/se
 
 	![](media/powerbi-content-pack-adobe-analytics/adobe_authorize.PNG)
 
-7. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+7. After you approve, the import process begins automatically. 
 
-	 ![](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
+## View the Adobe Analytics dashboard and reports
 
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
-**What Now?**
+      ![Adobe Analytics dashboard](media/powerbi-content-pack-adobe-analytics/Dashboard.png)
 
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
-
-- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-
-- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
-
-- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-what-now.md)]
 
 ## What's included
-The content pack uses the Adobe Analytics Report API to define and run reports for the following tables:
+Power BI uses the Adobe Analytics Report API to define and run reports for the following tables:
 
 |**Table Name**|**Column Details**|
 |---|---|
@@ -93,11 +82,12 @@ The content pack uses the Adobe Analytics Report API to define and run reports f
 Access to [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) is required, including access to the correct parameters as described below.
 
 <a name="FindingParams"></a>
+
 ## Finding parameters
 
 **Company**
 
-The Company value can be found in the top right of your account once you're signed in. **Note:** the value is case and spacing sensitive, enter it exactly as you see in your account.
+The Company value can be found in the top right of your account once you're signed in. The value is case and spacing sensitive. Enter it exactly as you see in your account.
 
 ![](media/powerbi-content-pack-adobe-analytics/adobe_companies.PNG)
 
@@ -112,10 +102,10 @@ From Adobe [documentation](https://marketing.adobe.com/resources/help/en_US/refe
 ## Troubleshooting
 If you're seeing an error after providing your credentials indicating you do not have permissions, please confirm with your admin that you have access to the Adobe Analytics API. Also confirm the Adobe ID provided is linked to your Marketing Cloud Organization (associated to an Adobe Analytics company).
 
-If you've successfully passed the credentials screen and start the content pack loading before hitting an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Please review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today however we're considering updates to better support larger instances, please provide feedback to the Power BI team at https://ideas.powerbi.com
+If you've successfully passed the credentials screen  before encountering an error, it's possible the reports are taking too long to complete. A common error is in the form *"Failed to get data from the Adobe Analytics report. Contents included &quot;referrer, page&quot;, approximate duration was xx seconds"*. Please review the "What's included" section and compare to the size of your Adobe instance. Unfortunately there isn't a way to work around this timeout today. However, we're considering updates to better support larger instances, please provide feedback to the Power BI team at https://ideas.powerbi.com
 
-### See also
+## Next steps
 
-[Get started in Power BI](powerbi-service-get-started.md)
-
-[Get data in Power BI](powerbi-service-get-data.md)
+- [What are apps in Power BI?](powerbi-service-what-are-apps.md)
+- [Get data in Power BI](powerbi-service-get-data.md)
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

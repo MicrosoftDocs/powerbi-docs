@@ -1,6 +1,6 @@
 <properties
-   pageTitle="SparkPost content pack"
-   description="SparkPost content pack for Power BI"
+   pageTitle="SparkPost for Power BI"
+   description="SparkPost for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/28/2017"
    ms.author="ajayan"/>
 
-# SparkPost content pack for Power BI
+# SparkPost for Power BI
 
 The Power BI content pack for SparkPost allows you to extract valuable datasets from your SparkPost account all into one insightful dashboard. Using the SparkPost content pack you can visualize your overall email statistics, including domains, campaigns, and engagement by ISP.
 

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="ServiceNow content pack"
-   description="ServiceNow content pack"
+   pageTitle="ServiceNow for Power BI"
+   description="ServiceNow for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/28/2017"
    ms.author="ajayan"/>
 
-# Power BI content pack for ServiceNow incidents
+# Power BI for ServiceNow incidents
 
 ServiceNow offers multiple products and solutions including business, operations and IT management to improve your business. This content pack includes multiple reports and insights on your open, recently resolved and recently closed incidents.  
 

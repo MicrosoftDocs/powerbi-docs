@@ -18,7 +18,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
+<<<<<<< HEAD
    ms.date="08/31/2017"
+=======
+   ms.date="09/05/2017"
+>>>>>>> 6a1a65223bb346d7dcaf66bebda74ce7b5b942e4
    ms.author="mihart"/>
 
 # Usage metrics for dashboards and reports
@@ -178,6 +182,12 @@ When disabling usage metrics for their entire organization, admins can use the *
 Q:    I can't run usage metrics on a dashboard or report    
 A:    You can only see usage metrics for content you own or have permissions to edit.
 
+<<<<<<< HEAD
+=======
+Q:    Will usage metrics capture views from embedded dashboards and reports?     
+A:    Yes, the metrics do include views of dashboards and reports that are embeded in apps and websites.
+
+>>>>>>> 6a1a65223bb346d7dcaf66bebda74ce7b5b942e4
 Q;    Will usage metrics work with [publish to web](powerbi-service-publish-to-web.md)?
 A:    Uusage metrics are not captured when you use publish to web
 

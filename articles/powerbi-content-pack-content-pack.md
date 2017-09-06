@@ -1,6 +1,6 @@
 <properties
-   pageTitle="comScore Digital Analytix content pack"
-   description="comScore Digital Analytix content pack for Power BI"
+   pageTitle="comScore Digital Analytix for Power BI"
+   description="comScore Digital Analytix for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/28/2017"
    ms.author="ajayan"/>
    
-# comScore Digital Analytix content pack for Power BI
+# comScore Digital Analytix for Power BI
 
 Visual and explore your comScore Digital Analytix data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 
