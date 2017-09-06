@@ -18,11 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-<<<<<<< HEAD
-   ms.date="08/30/2017"
-=======
    ms.date="09/05/2017"
->>>>>>> 6a1a65223bb346d7dcaf66bebda74ce7b5b942e4
    ms.author="mihart"/>
 # Getting a custom visual *certified*
 
