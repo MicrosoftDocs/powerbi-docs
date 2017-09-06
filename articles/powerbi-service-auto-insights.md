@@ -26,15 +26,15 @@
 
 Have a new dataset and not quite sure where to start?  Need to build a dashboard fast?  Want to quickly look for insights you may have missed?
 
-Run Quick Insights to generate interesting interactive visualizations based on your data. Quick Insights can be run on an entire dataset (Quick Insights) or on a specific dashboard tile (Scoped Insights). You can even run Insights on an Insight!
+Run Quick Insights to generate interesting interactive visualizations based on your data. Quick Insights can be run on an entire dataset (Quick Insights) or on a specific dashboard tile (Scoped Insights). You can even run Quick Insights on an Insight!
 
 >**NOTE**: Quick Insights does not work with DirectQuery - it only works with data uploaded to Power BI.
 
-The Insights feature is built on a growing [set of advanced analytical algorithms](powerbi-service-auto-insights-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+The Quick Insights feature is built on a growing [set of advanced analytical algorithms](powerbi-service-auto-insights-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
 ## Run Quick Insights on a dataset
 
-Watch Amanda run Insights on a dataset, open an Insight in Focus mode, pin one of these Insights as a tile on her dashboard, and then get Insights for a visual.
+Watch Amanda run Quick Insights on a dataset, open an Insight in Focus mode, pin one of these Quick Insights as a tile on her dashboard, and then get Quick Insights for a visual.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
 
@@ -54,9 +54,9 @@ Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis 
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
 
-    >**NOTE**: Some datasets can't generate Insights because the data isn't statistically significant.  To learn more, see [Optimize your data for Quick Insights](powerbi-service-auto-insights-optimize.md).
+    >**NOTE**: Some datasets can't generate Quick Insights because the data isn't statistically significant.  To learn more, see [Optimize your data for Quick Insights](powerbi-service-auto-insights-optimize.md).
 
-4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate Insight cards. Each card has a chart or graph plus a short description.
+4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
 
     ![](media/powerbi-service-auto-insights/power-bi-insights.png)
 
@@ -82,7 +82,7 @@ Now it's your turn. Explore Quick Insights using the [Supplier Quality Analysis 
 
        ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
 
-    The insight displays on the left and new insight cards, based solely on the data in that single insight, display along the right.
+    The Quick Insight displays on the left and new cards, based solely on the data in that single Quick Insight, display along the right.
 
        ![](media/powerbi-service-auto-insights/power-bi-insights-on-insights-new.png)
 
@@ -104,9 +104,9 @@ Instead of searching for insights against an entire dataset, narrow your search 
 
     ![](media/powerbi-service-auto-insights/pbi-insights-tile.png)
 
-4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.
+4. Does one insight pique your interest? Select that insight card to dig further. The selected Quick Insight appears on the left and new insight cards, based solely on the data in that single Quick Insight, display along the right.
 
-5. Continue digging into your data, and when you find an interesting insight, pin its visual to your dashboard by selecting **Pin visual** from the top-right corner. Also, you can send feedback to let the dataset owner know if a particular insight was helpful or not.
+5. Continue digging into your data, and when you find an interesting Quick Insight, pin its visual to your dashboard by selecting **Pin visual** from the top-right corner. Also, you can send feedback to let the dataset owner know if a particular Quick Insight was helpful or not.
 
     ![](media/powerbi-service-auto-insights/useful.png)
 
@@ -115,6 +115,6 @@ Instead of searching for insights against an entire dataset, narrow your search 
 
 If you own a dataset, [optimize it for Quick Insights](powerbi-service-auto-insights-optimize.md)
 
-Learn about the [types of Insights available](powerbi-service-auto-insights-types.md)
+Learn about the [types of Quick Insights available](powerbi-service-auto-insights-types.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
