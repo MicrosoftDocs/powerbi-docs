@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="09/05/2017"
    ms.author="ajayan"/>
 
 # Microsoft Dynamics CRM for Power BI
 
-Microsoft Dynamics CRM Online for Power BI allows you to easily access and analyze your data. Power BI uses the OData feed to create a descriptive model, with all the entities and measures needed such as Accounts, Activities, Opportunities, Product, Leads, Users and more. You can interact with the dashboard and reports, but you can't save changes.
+Microsoft Dynamics CRM Online for Power BI allows you to easily access and analyze your data. Power BI uses the OData feed to create a descriptive model, with all the entities and measures needed such as Accounts, Activities, Opportunities, Product, Leads, Users and more. After you install the app, you can view the dashboard and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and in the Power BI mobile apps. 
 
 Connect to Dynamics CRM Online [Sales Manager](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-sales-manager) or [Service Manager](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-customer-service). Read more about [Dynamics CRM Online integration](https://powerbi.microsoft.com/integrations/microsoft-dynamicscrm) with Power BI.
 
@@ -52,15 +52,7 @@ This connection requires **Microsoft Dynamics CRM Online 2016 or later**. More d
 
 [AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
-**What Now?**
-
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
-
-- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-
-- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
-
-- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-what-now.md)]
 
 ## What's included
 The sections below detail what's included for the [Sales Manager](#Sales) and [Service Manager](#Service) personas.
@@ -71,7 +63,7 @@ The dashboard and reports are meant to provide operational reporting on near ter
 
 <a name="Sales"></a>
 ### Sales Manager
-These dashboard and reports contain key metrics such as:  
+The dashboard and reports contain key metrics such as:  
 -   Won Revenue   
 -   Win Rate   
 -   Open Revenue   

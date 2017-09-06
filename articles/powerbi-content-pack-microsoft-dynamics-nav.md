@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="09/05/2017"
    ms.author="ajayan"/>
 
 # Microsoft Dynamics NAV for Power BI
 
-Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Power BI retrieves your data, both Sales and Financial, then builds an out-of-box dashboard and reports based on that data. Power BI needs your permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements below.
+Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Power BI retrieves your data, both Sales and Financial, then builds an app with a dashboard and reports based on that data. Power BI needs your permissions to the tables where data is retrieved from, in this case sales and finance data. More details on requirements below. After you install the app, you can view the dashboard and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and in the Power BI mobile apps. 
 
 [Connect to the Microsoft Dynamics NAV for Power BI](https://app.powerbi.com/getdata/services/microsoft-dynamics-nav) or read more about the [Dynamics NAV integration](https://powerbi.microsoft.com/integrations/microsoft-dynamics-nav) with Power BI.
 
@@ -57,15 +57,7 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
 
 [AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-open-app.md)]
 
-**What Now?**
-
-- Try [asking a question in the Q&A box](powerbi-service-q-and-a.md) at the top of the dashboard
-
-- [Change the tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) in the dashboard.
-
-- [Select a tile](powerbi-service-dashboard-tiles.md) to open the underlying report.
-
-- While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+[AZURE.INCLUDE [powerbi-service-apps-open-app](../includes/powerbi-service-apps-what-now.md)]
 
 ## What's included
 
