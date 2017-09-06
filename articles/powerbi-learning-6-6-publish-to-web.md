@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="ericre"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
