@@ -3,7 +3,7 @@
    description="AT Internet Bridge for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="ajayan"
+   authors="joeshoukry"
    manager="erikre"
    backup="maggiesMSFT"
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/28/2017"
-   ms.author="ajayan"/>
+   ms.author="yshoukry"/>
 
 # AT Internet Bridge for Power BI
 

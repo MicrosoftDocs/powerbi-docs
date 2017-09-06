@@ -3,7 +3,7 @@
    description="If you use the Xero Power BI content pack, you may have experienced a problem with the content pack’s daily refresh due to a recent Power BI service incident."
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="joeshoukry" 
    manager="erikre" 
    backup="maggiesMSFT"
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/10/2017"
-   ms.author="ajayan"/>
+   ms.author="yshoukry"/>
 
 # How to refresh your Xero content pack credentials if refresh failed
 

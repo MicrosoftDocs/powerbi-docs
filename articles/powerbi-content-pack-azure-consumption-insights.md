@@ -3,7 +3,7 @@
    description="Microsoft Azure Consumption Insights for Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="joeshoukry" 
    manager="erikre" 
    backup="maggies"
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/28/2017"
-   ms.author="ajayan"/>
+   ms.author="yshoukry"/>
    
 # Microsoft Azure Consumption Insights for Power BI
 
