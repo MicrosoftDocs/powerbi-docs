@@ -65,11 +65,6 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |[Chiclet slicer](https://store.office.com/chiclet-slicer-WA104380756.aspx)  |[Video](https://youtu.be/iYOkJ1APueY) |
 |[Dual KPI](https://store.office.com/dual-kpi-WA104380774.aspx)  | [Video](https://youtu.be/821o0-eVBXo?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)    |
 |Fly Wheel - coming soon |   |
-<<<<<<< HEAD
-|[Forecasting with ARIMA (R visual)](https://store.office.com/forecasting-with-arima-WA104380888.aspx)|   |
-|[Funnel plot (R visual)](https://store.office.com/funnel-plot-WA104381066.aspx)|  |
-=======
->>>>>>> 6a1a65223bb346d7dcaf66bebda74ce7b5b942e4
 |[Gantt](https://store.office.com/gantt-WA104380765.aspx)  |  |
 |[Histogram](https://store.office.com/histogram-chart-WA104380776.aspx)  |  |
 |[KPI Indicator](https://store.office.com/kpi-indicator-WA104380832.aspx)   |  |
@@ -77,20 +72,12 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |[Long text](https://store.office.com/association-rules-WA104380815.aspx)  |   |
 |[Play Axis Dynamic Slicer](https://store.office.com/play-axis-dynamic-slicer-WA104380981.aspx) |   |
 |[Radar chart](https://store.office.com/radar-chart-WA104380771.aspx) |   |
-<<<<<<< HEAD
-|[Sankey](https://store.office.com/ru-ru/app.aspx?assetid=WA104380777.aspx)  |  |
-=======
 |[Sankey chart](https://store.office.com/ru-ru/app.aspx?assetid=WA104380777.aspx)  |  |
->>>>>>> 6a1a65223bb346d7dcaf66bebda74ce7b5b942e4
 |[Scroller](https://store.office.com/scroller-WA104381018.aspx) |  |
 |[Smart Filter by OKViz](https://store.office.com/smart-filter-by-okviz-WA104380859.aspx) |   |
 |[Tachometer](https://store.office.com/tachometer-WA104380937.aspx?)   | |
 |[Table Heat Map](https://store.office.com/table-heatmap-WA104380818.aspx)     |   |
 |[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx)    | [Video](https://youtu.be/ozMtZ4_NZ10)|
-<<<<<<< HEAD
-|[Time series decomposition (R visual](https://store.office.com/time-series-decomposition-chart-WA104380897.aspx?) | |
-=======
->>>>>>> 6a1a65223bb346d7dcaf66bebda74ce7b5b942e4
 |[Tornado chart](https://store.office.com/tornado-chart-WA104380768.aspx) |  |
 |[Visio visual preview](https://store.office.com/visio-visual-preview-WA104381132.aspx)    |     |
 | [Word Cloud](https://store.office.com/word-cloud-WA104380752.aspx?) |[Video](https://youtu.be/AblTenl9fqo)  |
