@@ -23,7 +23,7 @@
 # Capturing additional diagnostic information
 
 ## Capturing Additional Diagnostic Information for Power BI
-
+ 
 These instructions provide two potential options for manually collecting additional diagnostic information from the Power BI web client.  Only one of these options needs to be followed.
 
 ## Network Capture - Edge & Internet Explorer
