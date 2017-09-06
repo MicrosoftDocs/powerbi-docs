@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/14/2017"
+   ms.date="08/31/2017"
    ms.author="maggies"/>
 
 # How should I collaborate and share dashboards and reports?  
@@ -32,7 +32,7 @@ In this article, we'll compare these options for collaborating and sharing in Po
 - Publishing to the web, where anyone can see and interact with them.
 - Printing. 
 
-No matter which option you choose, to share a dashboard you need a [Power BI Pro](powerbi-premium.md#free-vs-pro-tiers) license. License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
+No matter which option you choose, to share a dashboard you need a [Power BI Pro license](powerbi-free-vs-pro.md). License requirements vary for the colleagues who view your dashboards, depending on the option you choose. The following sections spell out details. Suggestions? The Power BI team is always interested in your feedback, so go to the [Power BI Community site](https://community.powerbi.com/).
 
 ![](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-apps-home-blog.png)
 

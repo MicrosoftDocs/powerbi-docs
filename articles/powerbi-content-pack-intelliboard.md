@@ -1,6 +1,6 @@
 <properties
-   pageTitle="IntelliBoard content pack"
-   description="IntelliBoard content pack for Power BI"
+   pageTitle="IntelliBoard for Power BI"
+   description="IntelliBoard for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="08/28/2017"
    ms.author="ajayan"/>
 
-# IntelliBoard content pack for Power BI
+# IntelliBoard for Power BI
 
 IntelliBoard offers simplified access to your Moodle learning management system data through reporting services. The IntelliBoard content pack for Power BI offers additional analytics, including metrics on your courses, registered users, overall performance, and your LMS activity.
 
