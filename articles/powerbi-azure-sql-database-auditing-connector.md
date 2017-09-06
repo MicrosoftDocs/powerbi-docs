@@ -3,7 +3,7 @@
    description="SQL Database Auditing content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="ajayan"
+   authors="joeshoukry"
    manager="erikre"
    backup=""
    editor=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
    ms.date="08/10/2017"
-   ms.author="ajayan"/>
+   ms.author="yshoukry"/>
 
 # SQL Database Auditing content pack for Power BI
 
