@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="09/03/2017"
    ms.author="mihart"/>
 
 
@@ -29,7 +29,7 @@ Power BI quickly searches different subsets of your dataset while applying a set
 
 You can run Quick Insights against a dataset or tile (Related Insights).   
 
-##  What types of insights can we find?
+##  What types of Quick Insights can we find?
 These are some of the algorithms we use:
 
 
@@ -49,6 +49,7 @@ Detects cases where multiple measures show a correlation between each other when
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_correlation.png)
 
 ## Low Variance
+Detects cases where data points are not far from the mean.
 
 ![](media/powerbi-service-auto-insights-types/power-bi-low-variance.png)
 
