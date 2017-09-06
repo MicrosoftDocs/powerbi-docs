@@ -18,15 +18,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2017"
+   ms.date="08/31/2017"
    ms.author="mihart"/>
 
 # Add image, text, video, and more to your dashboard
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
 
-
->**NOTE**: The "Add widget" feature has been renamed "Add tile".
 
 ## Add tile
 
@@ -36,7 +34,7 @@ The **Add tile** control lets you directly add an image, text box, video, stream
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-tile-icon.png)
 
-2. Select which widget to add: **Image**, **Text box**, **Video**, **Web content**, or **Custom streaming data**.
+2. Select which type of tile to add: **Image**, **Text box**, **Video**, **Web content**, or **Custom streaming data**.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-tile.png)
 
@@ -64,7 +62,7 @@ Say you want your company logo on your dashboard, or some other image. You'll ne
 
 1. Select **Text box > Next**.
 
-    ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-text-box.png)
+    ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-text-box-new.png)
 
     >**NOTE**: To add a dashboard heading, type your heading in the text box and increase the font.
 
@@ -88,7 +86,7 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 
 2. Add video information to the **Tile details** pane.
 
-    ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-video.png)
+    ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-video-new.png)
 
    - to display a title and subtitle at the top of the video tile, select *Display title and subtitle* and type a title and/or subtitle. In this example, we'll add a subtitle and then turn it into a hyperlink back to the entire playlist on YouTube.
 

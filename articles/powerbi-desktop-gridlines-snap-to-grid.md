@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="09/06/2017"
    ms.author="davidi"/>
 
 # Use gridlines and snap-to-grid in Power BI Desktop reports
@@ -43,6 +43,21 @@ Gridlines are visual guides that let you see whether two or more visuals are pro
 You can use *CTRL+Click* to select more than one visual at a time, which displays all selected visuals' borders, easily letting you see whether the visuals are properly aligned.
 
 ![](media/powerbi-desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
+
+#### Using gridlines inside visuals
+
+In Power BI there are also gridlines inside visuals, which provide visual guides for comparing data points and values. Beginning with the September 2017 release of **Power BI Desktop**, you can now manage the gridlines within visuals using the **X-Axis** or **Y-Axis** card (as appropriate based on visual type), found in the **Format** section of the **Visualizations** pane. You can manage the following elements of gridlines within a visual:
+
+-   Turn gridlines on or off
+-   Change the color of gridlines
+-   Adjust the stroke (the width) of gridlines
+-   Select the line style of the gridlines in the visual, such as solid, dashed, or dotted
+
+Modifying certain elements of gridlines can be especially useful in reports where dark backgrounds are used for visuals. The following image shows the *Gridlines* section in the **X-Axis** card.
+
+![](media/powerbi-desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
+
+
 
 ### Using snap-to-grid
 
