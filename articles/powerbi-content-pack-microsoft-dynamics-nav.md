@@ -63,13 +63,13 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
 
 The dashboard and reports contain data from the following tables (case sensitive):  
 
-    - ItemSalesAndProfit  
-    - ItemSalesByCustomer  
-    - powerbifinance  
-    - SalesDashboard  
-    - SalesOpportunities  
-    - SalesOrdersBySalesPerson  
-    - TopCustomerOverview  
+- ItemSalesAndProfit  
+- ItemSalesByCustomer  
+- powerbifinance  
+- SalesDashboard  
+- SalesOpportunities  
+- SalesOrdersBySalesPerson  
+- TopCustomerOverview  
 
 ## System requirements
 
