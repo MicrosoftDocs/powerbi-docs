@@ -64,6 +64,7 @@ The dashboard and reports are meant to provide operational reporting on near ter
 <a name="Sales"></a>
 ### Sales Manager
 The dashboard and reports contain key metrics such as:  
+
 -   Won Revenue   
 -   Win Rate   
 -   Open Revenue   
@@ -72,6 +73,7 @@ The dashboard and reports contain key metrics such as:
 -   Average Deal Size and more.  
 
 They also contain key charts such as:  
+
 -   Won and Lost Revenue Trend, Won Revenue Vs Estimated Revenue Trend  
 -   Won Revenue by various dimensions such as Industry, Region, Territory   
 -   Sales Leaders By Revenue, Activities,   
@@ -97,6 +99,7 @@ Following table lists the CRM entities available for thsi service and also gives
 <a name="Service"></a>
 ### Service Manager
 These dashboard and reports contain key metrics such as:  
+
 -   CSAT Percentage   
 -   SLA Met percentage   
 -   Escalated Cases Percentage   
@@ -106,6 +109,7 @@ These dashboard and reports contain key metrics such as:
 -   Number of Times KB Article Used in cases and more.    
 
 They also contains key charts such as:   
+
 -   Case Volume Trends for Incoming Cases, Resolved Cases, Escalated Cases   
 -   Case Volume by various dimensions such as Origin, Location, Priority, Type  
 -   Leaders by CSAT percentage, SLA met percentage, Activities, Resolved cases  
@@ -147,18 +151,19 @@ Power BI only supports Dynamics CRM 2016 endpoints. The connection will not work
 
 ## Troubleshooting
 
-If you're having trouble connecting, please confirm:  
+If you're having trouble connecting, confirm:  
+
 - you're providing the correct instance URL (check with your admin)  
 - the instance is CRM Online 2016  
 - the OData endpoint is enabled  
 
-Also, try connecting directly in Power BI Desktop, with the OData URL https://[instance_name].crm.dynamics.com/api/data/v8.0/`.
+Also, try connecting directly in Power BI Desktop, with the OData URL `https://[instance_name].crm.dynamics.com/api/data/v8.0/`.
 
-If you confirm you have Dynamics CRM Online 2016, however you're still hitting issues connecting, please contact your CRM Admin to confirm you have all available updates.
+If you confirm you have Dynamics CRM Online 2016 but you're still hitting issues connecting, contact your CRM Admin to confirm you have all available updates.
 
-If you do not have CRM Online 2016 or later, please use the Power BI Desktop to connect directly to your account.
+If you do not have CRM Online 2016 or later, use the Power BI Desktop to connect directly to your account.
 
-If you see an error "Data refresh failed as query exceeded the maximum limit of 100000 records.", please consider connecting directly from the Power BI Desktop or leveraging the CRM solution template.
+If you see an error "Data refresh failed as query exceeded the maximum limit of 100000 records," consider connecting directly from the Power BI Desktop or leveraging the CRM solution template.
 
 ## Next steps
 

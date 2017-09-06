@@ -35,7 +35,8 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
 
 4. When prompted, enter your Microsoft Dynamics NAV OData URL. The URL should match the following pattern:
 
-    	https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')
+    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+
 	- "instance.navserver.com" with your NAV Server name
 	- "DynamicsNAV90\_Instance1" with your NAV Server Instance name
     - "Company('CRONUS%20International%20Ltd.')" with your NAV Company name
@@ -45,8 +46,7 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
 
 5. Select **Basic** and enter your Microsoft Dynamics NAV credentials.
 
-	>**Note:**  
-	>You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  Only Basic (Username and Password) authentication is currently supported.
+	You need admin credentials (or at least permissions to sales and finance data) for your Microsoft Dynamics NAV account.  Only Basic (Username and Password) authentication is currently supported.
 
 	![](media/powerbi-content-pack-microsoft-dynamics-nav/creds.PNG)
 
@@ -62,6 +62,7 @@ Getting insights into your Microsoft Dynamics NAV data is easy with Power BI. Po
 ## What's included
 
 The dashboard and reports contain data from the following tables (case sensitive):  
+
     - ItemSalesAndProfit  
     - ItemSalesByCustomer  
     - powerbifinance  
@@ -82,12 +83,14 @@ Power BI uses Microsoft Dynamics NAV's web services to retrieve your data. If yo
 **"Parameter validation failed, please make sure all parameters are valid"**  
 If you see this error after typing your Microsoft Dynamics NAV URL. Make sure the following requirements are satisfied:
 
-- The URL follows exactly this pattern
+- The URL follows exactly this pattern:
 
-    	https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')
+    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+
     - "instance.navserver.com" with your NAV Server name
     - "DynamicsNAV90\_Instance1" with your NAV Server Instance name
     - "Company('CRONUS%20International%20Ltd.')" with your NAV Company name
+
 - Make sure all the letters are lower case.  
 - Make sure the URL is in 'https'.  
 - Make sure there are no trailing forward slash at the end of the URL.
