@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="09/09/2017"
    ms.author="mihart"/>
 
 #  What sample data is available to use with Power BI?
@@ -227,7 +227,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 
 4. Select the .pbix file to open it in Desktop.
 
-##  See also
+##  Next steps
 
 [Power BI basic concepts](powerbi-service-basic-concepts.md)
 
