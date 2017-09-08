@@ -17,12 +17,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="09/08/2017"
    ms.author="davidi"/>
 
 # What's new in the latest Power BI Desktop update?
 
-## September 2017 Update (2.50.4859.202)
+## September 2017 Update (2.50.4859.502)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
@@ -58,7 +58,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Data Connectivity:
 
--   Azure Consumption Insights connector  [[video]](https://youtu.be/moTQJlnClJw?t=44m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#azureConsumptionInsights) [[article]](powerbi-desktop-connect-azure-consumption-insights.md) 
+-   Azure Consumption Insights connector  [[video]](https://youtu.be/moTQJlnClJw?t=44m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#azureConsumptionInsights) [[article]](powerbi-desktop-connect-azure-consumption-insights.md)
 -   Improvements to the Dynamics 365 for Financials connector  [[video]](https://youtu.be/moTQJlnClJw?t=45m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#dynamics365ForFinancials)
 
 
