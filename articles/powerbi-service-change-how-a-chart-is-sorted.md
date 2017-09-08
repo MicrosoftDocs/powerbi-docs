@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/082017"
+   ms.date="09/08/2017"
    ms.author="mihart"/>
 
 # Change how a chart is sorted in a Power BI report
