@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="09/06/2017"
    ms.author="davidi"/>
 
 # Reduce the size of an Excel workbook to view it in Power BI  

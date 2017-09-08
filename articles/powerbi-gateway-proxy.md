@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/01/2017"
+ms.date="09/06/2017"
 ms.author="davidi"/>
 # Configuring proxy settings for the On-premises Data Gateway
 
