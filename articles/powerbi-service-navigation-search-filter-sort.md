@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="09/09/2017"
    ms.author="mihart"/>
 
 # Searching and sorting content in Power BI
@@ -61,7 +61,7 @@ A workspace has four content tabs: Dashboards, Reports, Workbooks, and Datasets.
 
 -    For datasets, **Sort by** is not available by owner.
 
-##  See also
+##  Next steps
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

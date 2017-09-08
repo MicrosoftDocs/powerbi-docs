@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="09/09/2017"
    ms.author="mihart"/>
 
 # Pin a tile to a dashboard from Q&A  
@@ -34,7 +34,7 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 3.  For example, as you type "last year sales by month and territory"...  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-type-q-and-a.png)
 
-    the question box gives you suggestions "
+    the question box gives you suggestions.
 
 4.  To add the chart to your dashboard as a tile, select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_PinTile.png) on the top-right side of the canvas.
 
@@ -56,7 +56,7 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 
 ## Considerations and troubleshooting
 
--   When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is dashboard listed in the top navigation bar. For example, this question is being asked in the **Retail Analysis Sample** dashboard that is part of the **mihart** app workspace.
+-   When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard listed in the top navigation bar. For example, this question is being asked in the **Retail Analysis Sample** dashboard that is part of the **mihart** app workspace.
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-navbar.png)
 
