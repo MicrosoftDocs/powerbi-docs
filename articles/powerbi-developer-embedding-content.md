@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/21/2017"
+   ms.date="09/11/2017"
    ms.author="asaxton"/>
 
 # How to embed your Power BI dashboards, reports and tiles
@@ -26,7 +26,7 @@ Learn about the steps you need to take to embed Power BI content within your app
 
 Microsoft recently [announced Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance to the Power BI service.
 
-With the introduction of Power BI Premium, Power BI Embedded and the Power BI service are converging to advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium, which will be generally available late in the second quarter of 2017.
+With the introduction of Power BI Premium, Power BI Embedded and the Power BI service are converging to advance how Power BI content is embedded in apps. This means you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Premium.
 
 This article will look at embedding your Power BI content for both users of Power BI and non-Power BI users. The steps are similar between the two. Callouts will be made when a step is specific to embedding for non-Power BI users.
 
@@ -38,7 +38,7 @@ There are a few steps you have to do with your application to make this possible
 
 Before you start embedding dashboards and reports into your application, you need to make sure your environment is setup to allow for embedding. As part of the setup, you will need to do the following.
 
-* [Define your Azure Active Directory tenant](powerbi-developer-embedding-content.md#azureadtenant)
+* [Make sure you have an Azure Active Directory tenant](powerbi-developer-embedding-content.md#azureadtenant)
 * [Create your Power BI Pro account](powerbi-developer-embedding-content.md#proaccount)
 * [Register your Azure Active Directory application and permissions](powerbi-developer-embedding-content.md#appreg)
 
@@ -54,17 +54,13 @@ You will need to determine what tenant setup to use.
 * Use a separate tenant for your application?
 * Use a separate tenant for each customer?
 
-If you decide to create a new tenant for your application, or one for each customer, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
-
-> [AZURE.NOTE] It is recommended to create a new Azure AD tenant if you will be embedding for non-Power BI users. 
+If you do not want to use an existing tenant, you can decide to create a new tenant for your application, or one for each customer, see [Create an Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 
 ### <a name="proaccount"></a>Create a Power BI Pro user account
 
 You only need a single Power BI Pro account to embed content. However, you may want to have a few different users that have specific access to items. Here is a look at possible users to consider within your tenant.
 
-The following accounts will need to exist within your tenant and have a Power BI Pro license assigned to them.
-
-> [AZURE.NOTE] These accounts will need to have Power BI Pro licenses in order to use App workspaces.
+The following accounts will need to exist within your tenant and have a Power BI Pro license assigned to them. A Power BI Pro license is required to work with app workspaces within Power BI.
 
 #### An organization/tenant admin user
 
@@ -88,7 +84,7 @@ You will need to register your application with Azure AD in order to make REST A
 
 If you are embedding dashboards and reports for non-Power BI users (app owns data), those dashboards and reports have to be placed within an app workspace. For information on how to create an app workspace, see [Create an app workspace](powerbi-service-create-apps.md#create-an-app-workspace).
 
-> [AZURE.IMPORTANT] The *master* account, that was mentioned above, needs to be an admin of the app workspace.
+The *master* account, that was mentioned above, needs to be an admin of the app workspace.
 
 ### Create and upload your reports
 
@@ -132,14 +128,14 @@ If you are embedding for non-Power BI users, you will want to do the following.
 
 * Purchase a capacity that fits your needs. You can use the table below to understand which Premium capacity SKU you may need. For more details, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). When you are ready to purchase, you can do so within the [Office 365 admin center](https://portal.office.com/adminportal/home#/catalog).
 
-|Capacity Node|Total cores<br/>*(Backend + frontend)*|Backend Cores|Frontend Cores|DirectQuery/live connection limits|Max page renders at peak hour|Availability|
-|---------|---------|---------|---------|---------|---------|---------|
-|EM1|1 v-cores|.5 cores, 3GB RAM|.5 cores||1-300|July 2017|
-|EM2|2 v-cores|1 core, 5GB RAM|1 core||301-600|July 2017|
-|EM3|4 v-cores|2 cores, 10GB RAM|2 cores||601-1,200|July 2017|
-|P1|8 v-cores|4 cores, 25GB RAM|4 cores|30 per second|1,201-2,400|Available|
-|P2|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|2,401-4,800|Available|
-|P3|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|4,801-9600|Available|
+|Capacity Node|Total cores<br/>*(Backend + frontend)*|Backend Cores|Frontend Cores|DirectQuery/live connection limits|Max page renders at peak hour|
+|---------|---------|---------|---------|---------|---------|
+|EM1|1 v-cores|.5 cores, 3GB RAM|.5 cores||1-300|
+|EM2|2 v-cores|1 core, 5GB RAM|1 core||301-600|
+|EM3|4 v-cores|2 cores, 10GB RAM|2 cores||601-1,200|
+|P1|8 v-cores|4 cores, 25GB RAM|4 cores|30 per second|1,201-2,400|
+|P2|16 v-cores|8 cores, 50GB RAM|8 cores|60 per second|2,401-4,800|
+|P3|32 v-cores|16 cores, 100GB RAM|16 cores|120 per second|4,801-9600|
 
 > [AZURE.NOTE] You must be a Global or Billing Admin, within your tenant, in order to purchase Power BI Premium. For information on how to purchase Power BI Premium, see [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md).
 
