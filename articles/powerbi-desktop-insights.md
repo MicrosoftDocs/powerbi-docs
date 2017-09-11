@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="09/11/2017"
    ms.author="davidi"/>
 
 # Use insights in Power BI Desktop (Preview)
@@ -49,6 +49,25 @@ The *thumbs up* and *thumbs down* icons at the top of the page are provided so y
 And importantly, the **+** button at the top of the visual lets you add the selected visual to your report, just as if you created the visual manually. You can then format or otherwise adjust the added visual just as you would to any other visual on your report. You can only add a selected insight visual when you're editing a report in **Power BI Desktop**.
 
 You can use insights when your report is in reading or editing mode, making it versatile for both analyzing data, and for creating visuals you can easily add to your reports.
+
+## Considerations and limitations
+
+The following list is the collection of currently unsupported scenarios for **insights**:
+-   TopN filters
+-   Include/exclude filters
+-   Measure filters
+-   Non-additive measures and aggregates
+-   Show value as
+-   Filtered measures (it’s the new thing we use for scatter chart in insights)
+-   Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition
+-   Non-numeric measures
+
+In addition, the following model types and data sources are currently not supported for insights:
+-   DirectQuery
+-   Live connect
+-   On-premises Reporting Services
+-   Embedding
+
 
 ## More information
 
