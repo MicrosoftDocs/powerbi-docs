@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="09/11/2017"
    ms.author="davidi"/>
 
 # Real-time streaming in Power BI
@@ -68,7 +68,7 @@ Tiles based on a **PubNub streaming dataset** are optimized for quickly displayi
 
 The following table (or matrix, if you like) describes the three types of datasets for real-time streaming, and lists capabilities and limitations of each.
 
-![](media/powerbi-service-real-time-streaming/real-time-streaming_0.png)
+![](media/powerbi-service-real-time-streaming/real-time-streaming_11.png)
 
 > Note: See [this MSDN article](https://msdn.microsoft.com/library/dn950053.aspx) for information on **Push** limits on how much data can be pushed in.
 
@@ -215,6 +215,8 @@ Here are some common questions about real-time streaming in Power BI, and answer
 Unfortunately, streaming datasets do not support filtering. For push datasets, you can create a report, filter the report, and then pin the filtered visuals to a dashboard. However, there is no way to change the filter on the visual once it's on the dashboard.
 
 Separately, you can pin the live report tile to the dashboard, in which case you can change the filters. However, live report tiles will not update in real-time as data is pushed in – you'll have to manually update the visual by using the *refresh dashboard tiles* option in the **More** menu.
+
+When applying filters to push datasets with *DateTime* fields with millisecond precision, *equivalence* operators are not supported. However, operators such as greater than (>) or less than (<) do operate properly.
 
 #### How do I see the latest value on a push dataset? How about streaming dataset?
 Streaming datasets are designed for displaying the latest data. You can use the **Card** streaming visual to easily see latest numeric values. Unfortunately, the card does not support data of type *DateTime* or *Text*.
