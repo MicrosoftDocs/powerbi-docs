@@ -17,16 +17,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="08/15/2017"
    ms.author="mihart"/>
 
 # Interact with a report in Reading View in Power BI
 
 ##  Reading view
 
-Reading view is not as interactive as [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md), but it still gives you many options for exploring the data --which comes in useful when viewing reports [shared with you](powerbi-service-share-unshare-dashboard.md), that can only be opened in Reading View.
+Reading view is not as interactive as [Editing view](powerbi-service-interact-with-a-report-in-editing-view.md), but it still gives you many options for exploring your data. This comes in handy when viewing reports [shared with you](powerbi-service-share-unshare-dashboard.md), that can only be opened in Reading View.
 
-In Reading View you can cross-highlight and cross-filter visuals on a page.  Simply highlight or select  a value in one visual and instantly see its impact on the other visuals. Use the Filter pane to add and modify filters on a report page, and change the way values are sorted in a visualization. Reading view is a fun and safe way to play with and get to know your data. Any filtering and highlighting that you do is not saved with the report.
+Reading view is a fun and safe way to play with and get to know your data. In Reading View you can cross-highlight and cross-filter visuals on a page.  Simply highlight or select a value in one visual and instantly see its impact on the other visuals. Use the Filter pane to add and modify filters on a report page, and change the way values are sorted in a visualization. Any filtering and highlighting that you do is not saved with the report.
 
 
 ##  Cross-highlight the related visualizations on a page
@@ -66,11 +66,11 @@ If the report author added filters to a page in a report, you can interact with 
 
 4.  Make changes to the filters and see how the visuals are impacted.  
 
-    -   Filter on **Fashions Direct** instead of **Lindseys** by removing the checkmark from one and adding it to the other.
+    -   In this example, we have a Page level filter for **Chain**. Change it to **Fashions Direct** instead of **Lindseys** by removing the checkmark from one and adding it to the other.
 
         ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-filter-chain.png)
 
-    -   Or completely removing filtering on **Chain** by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png) or by adding a checkmark to the **Fashions Direct** box.
+    -   Or completely remove filtering on **Chain** by selecting the eraser icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png) or by selecting both chain stores.
 
     -   Select the **District** page level filter and switch to **Advanced filtering**. Filter to show only districts that start with **FD** and don't contain the number 4.
 
@@ -80,11 +80,11 @@ For more information, see [Add a filter to a report](powerbi-service-add-a-filte
 
 ##      Zoom in on individual visuals
 
-Hover over a visual and select the **Focus mode** icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PopOutIcon.jpg). When you view a visualization in Focus mode, it expands to fill the entire report canvas.
+Hover over a visual and select the **Focus mode** icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PopOutIcon.jpg). When you view a visualization in Focus mode, it expands to fill the entire report canvas as shown below.
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/powerbi-focus-mode.png)
 
-To display that same visualization without the distraction of menubars, filter pane, and other chrome -- select the **Full Screen** icon ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-focus-icon.png)  .
+To display that same visualization without the distraction of menubars, filter pane, and other chrome -- select the **Full Screen** icon from the top menubar  ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-focus-icon.png)  .
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-full-screen.png)
 
