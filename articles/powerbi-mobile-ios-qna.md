@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Ask questions about your data in the iOS mobile apps (Tutorial)"
-   description="Try asking questions about this sample data in your own words with the Q&A on iOS on your iPad, iPhone, and iPod Touch."
+   pageTitle="Ask questions with the Q&A virtual analyst in the iOS apps"
+   description="In this tutorial, try asking questions about this sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/01/2017"
+   ms.date="09/01/2017"
    ms.author="maggies"/>
 
-# Ask questions about your data in the iOS mobile apps (Tutorial)
+# Ask questions with the Q&A virtual analyst in the iOS apps
 
 Applies to:
 
@@ -29,15 +29,15 @@ Applies to:
 | iPhones | iPads |
 
 
-The easiest way to learn about your data in to ask questions about it in your own words. In the Microsoft Power BI app for iOS devices, you can view featured insights, and type or say a question. In this tutorial, you ask questions about sample data.
+The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, try asking questions and viewing featured insights about sample data with the Q&A virtual analyst. 
 
-![Top sales Q&A for iOS](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
+![Top sales Q&A virtual analyst](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
-Q&A for iOS is a conversational BI experience that replaces the Q&A feature in Power BI mobile apps for iOS devices. Q&A for iOS still accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com), but it also delivers meaningful data insights in context, as part of an interactive, conversational BI experience.
+In the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch, the Q&A virtual analyst is a conversational BI experience that enhances the previous version of Q&A in iOS. The Q&A virtual analyst still accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com). You can still type or say a question, and it also delivers data insights in context. 
 
 ## Download the samples
 
-If you haven't already downloaded the Retail Analysis and Opportunity Analysis samples in the Power BI service, that's the first step.
+The first step in the tutorial is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service.
 
 * In your workspace on the Power BI service ([https://powerbi.com](https://powerbi.com)):
 
@@ -48,23 +48,23 @@ If you haven't already downloaded the Retail Analysis and Opportunity Analysis s
 
 1. On your iPhone or iPad, open the Power BI app and navigate to the Opportunity Analysis Sample dashboard.
 
-1. Tap the Q&A for iOS icon ![Q&A for iOS icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+1. Tap the Q&A virtual analyst icon ![Q&A virtual analyst icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
 
      ![Opportunity Analysis Sample dashboard](media/powerbi-mobile-ios-qna/power-bi-ios-qna-opportunity-analysis.png)
 
-     Power BI Q&A for iOS offers some suggestions to get started.
+     The Power BI Q&A virtual analyst offers some suggestions to get started.
 
      ![featured insights button](media/powerbi-mobile-ios-qna/power-bi-ios-qna-suggest-insights.png)
 
 3. Tap **featured insights**.
 
-     Q&A for iOS suggests some insights.
+     The Q&A virtual analyst suggests some insights.
 
 4. Scroll to the right and tap **Insight 2**.
 
     ![Insight 2 button](media/powerbi-mobile-ios-qna/power-bi-ios-qna-suggest-insight-2.png)
 
-     Q&A for iOS displays Insight 2.
+     The Q&A virtual analyst displays Insight 2.
 
     ![Insight 2](media/powerbi-mobile-ios-qna/power-bi-ios-qna-show-insight-2.png)
 
@@ -72,14 +72,14 @@ If you haven't already downloaded the Retail Analysis and Opportunity Analysis s
 
     ![Insight 2 chart in focus mode](media/powerbi-mobile-ios-qna/power-bi-ios-qna-open-insight-2.png)
 
-6. Tap the arrow in the upper-left corner to go back to the Q&A for iOS experience.
+6. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst experience.
 
 
 ## Try asking questions on your iPhone or iPad
 
 1. On your iPhone or iPad, open the Power BI app and navigate to the Retail Analysis Sample dashboard.
-2. Tap the Q&A for iOS icon ![Q&A for iOS icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
-     Q&A for iOS offers some suggestions to get started.
+2. Tap the Q&A virtual analyst icon ![Q&A virtual analyst icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+     The Q&A virtual analyst offers some suggestions to get started.
 3. Type **show**, tap **sales** from the suggestion list > **Send** ![Send icon](media/powerbi-mobile-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Show sales](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-show-sales.png)
@@ -98,7 +98,7 @@ If you haven't already downloaded the Retail Analysis and Opportunity Analysis s
 
     ![](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 
-7. Tap the arrow in the upper-left corner to go back to the Q&A for iOS chat window.
+7. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst chat window.
 
 9. Tap the X at the right of the text box to delete the text and start over.
 
@@ -118,7 +118,7 @@ If you haven't already downloaded the Retail Analysis and Opportunity Analysis s
 
 You can now ask questions about your data in the Power BI mobile app by speaking instead of typing.
 
-1. Tap the Q&A for iOS icon ![Q&A for iOS icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+1. Tap the Q&A virtual analyst icon ![Q&A virtual analyst icon](media/powerbi-mobile-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
 
 2. Tap the microphone icon ![](media/powerbi-mobile-ios-qna/power-bi-ios-qna-mic-icon.png).
 
@@ -144,15 +144,15 @@ See the Speech Recognition section of [What's New in iOS](https://go.microsoft.c
 
     Your feedback is anonymous, and helps us improve our answers to questions.
 
-## Enhance your Q&A for iOS results
+## Enhance your Q&A virtual analyst results
 
-You can improve the results you and your customers get when they use Q&A for iOS on a dataset, either by asking more targeted questions or by enhancing the dataset.
+You can improve the results you and your customers get when they use the Q&A virtual analyst on a dataset, either by asking more targeted questions or by enhancing the dataset.
 
 ### How to ask questions
-- Follow these [tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md) in the Power BI service or Q&A for iOS in your iOS mobile app.
+- Follow these [tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md) in the Power BI service or the Q&A virtual analyst in your iOS mobile app.
 
 ### How to enhance the dataset  
-- Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and Q&A for iOS](powerbi-service-make-your-data-work-well-with-q-and-a.md).
+- Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](powerbi-service-make-your-data-work-well-with-q-and-a.md).
 
 
 ## See also
