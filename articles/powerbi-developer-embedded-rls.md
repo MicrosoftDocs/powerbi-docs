@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2017"
+   ms.date="09/13/2017"
    ms.author="asaxton"/>
 
 # Row-level security (RLS) with embedded analytics
@@ -120,7 +120,7 @@ If you are calling the REST API, the updated API now accepts an additional JSON 
     "accessLevel": "View",
     "identities": [
         {
-            "username": "EffectiveUsername",
+            "username": "EffectiveIdentity",
             "roles": [ "Role1", "Role2" ],
             "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
         }
@@ -130,13 +130,26 @@ If you are calling the REST API, the updated API now accepts an additional JSON 
 
 Now, with all the pieces together, when someone logs into your application to view this report, they’ll only be able to see the data that they are allowed to see, as defined by our row-level security.
 
-## Limitations and considerations
+## Working with Analysis Services live connections
+
+Row-level security can be used with Analysis Services live connections. There are a few specific concepts that you should understand when using this type of connection.
+
+The effective identity that is provided for the username property must be a windows user with permissions on the Analysis Services server.
+
+**On-Premises Data Gateway configuration**
+
+An [On-premises data gateway](powerbi-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account is not listed, the row-level security will not be applied property to the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
+
+**Use of roles**
+
+Roles can be provded with the identity in an embed token. If no role is provided, the username that was provided will be used to resolve the associated roles.
+
+## Considerations and limitations
 
 * Assignment of users to roles, within the Power BI service, does not affect RLS when using an embed token.
 * While the Power BI service will not apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it will be applied to the data.
 * Passing the identity information, when calling GenerateToken, is only supported for report read/write. Support for other resources will come later.
-* Only RLS roles defined within Power BI Desktop (cached model and DirectQuery) are currently supported.
-* Analysis Services live connections are not supported at this time. This includes Azure Analysis Services.
+* Analysis Services live connections are supported.
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role. Otherwise, role assignment will not occur.
 * Only one identity can be provided in the list of identities. We are using a list to enable multi-identity tokens for dashboard embedding in the future.
