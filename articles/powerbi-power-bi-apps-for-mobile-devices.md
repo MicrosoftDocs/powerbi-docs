@@ -1,6 +1,6 @@
 <properties
    pageTitle="Power BI apps for mobile devices"
-   description="The Power BI mobile apps keep you connected to your data on premises or in the cloud. View Power BI dashboards and reports on your mobile device. "
+   description="The Power BI mobile apps keep you connected to your data on premises or in the cloud. View Power BI dashboards and reports on your mobile device."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2017"
+   ms.date="09/13/2017"
    ms.author="maggies"/>
 
 # Power BI apps for mobile devices  
@@ -35,7 +35,7 @@ You view your Power BI dashboards and reports in the Power BI service ([https://
 
 | **Device** | **Highlights** |
 |---|---|
-|[![iPhone](media/powerbi-powerbi-apps-for-mobile-devices/iphone-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| Your **iPhone** goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. Besides viewing your Power BI dashboards and reports, you can also [add Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and [annotate and share a tile, report, or visualization](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md). Get started with the [Power BI mobile app for the iPhone](powerbi-mobile-iphone-app-get-started.md). |
+|[![iPhone](media/powerbi-powerbi-apps-for-mobile-devices/iphone-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| Your **iPhone** goes everywhere with you, and the [Power BI mobile app for the iPhone](powerbi-mobile-ipad-app-get-started.md) and the iPod Touch goes everywhere your iPhone goes. Besides viewing your Power BI dashboards and reports, you can also [add Power BI to your Apple Watch](powerbi-mobile-apple-watch.md), and [ask questions with the Q&A virtual analyst](powerbi-mobile-ios-qna.md). Get started with the [Power BI mobile app for the iPhone](powerbi-mobile-iphone-app-get-started.md). |
 |[![iPad](media/powerbi-powerbi-apps-for-mobile-devices/ipad-logo-50-px.png)](powerbi-mobile-ipad-app-get-started.md)| On the **iPad**, the Power BI mobile app displays dashboards and reports the way they were designed for the Power BI service. You can [set data alerts in the Power BI mobile app](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) to notify you when data in a dashboard changes beyond limits you set. Plus you can [filter a report by your geographic location](powerbi-mobile-geofiltering.md). Get started with the [Power BI mobile app for iPads](powerbi-mobile-ipad-app-get-started.md). |
 |[![Android phone](media/powerbi-powerbi-apps-for-mobile-devices/android-phone-logo-50-px.png)](powerbi-mobile-android-app-get-started.md) | The Power BI mobile app for the **Android phone** brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information.  Plus you can view your [Power BI Report Server and Reporting Services KPIs and reports](powerbi-mobile-android-kpis-mobile-reports.md) right on your phone. You can even [scan a QR code with your Android phone](powerbi-mobile-qr-code-for-tile.md) and go straight to a Power BI dashboard or report. Get started with the [Power BI mobile app for Android phones](powerbi-mobile-android-app-get-started.md). |
 |[![Android tablet](media/powerbi-powerbi-apps-for-mobile-devices/android-tablet-logo-50-px.png)](powerbi-mobile-android-tablet-app-get-started.md)| This mobile app runs on a number of different **Android tablets**, bringing you up-to-date, touch-enabled mobile access to your business information. On the Android tablet, the Power BI mobile app displays dashboards and reports the way they were designed for the Power BI service. You can [mark your favorite dashboards and reports](powerbi-mobile-favorites/.md), so you can get to them quickly, along with your favorite Power BI Report Server and Reporting Services KPIs and reports. Get started with the [Power BI mobile app for Android tablets](powerbi-mobile-android-tablet-app-get-started.md). |
