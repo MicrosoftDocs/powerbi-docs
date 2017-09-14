@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/31/2017"
+   ms.date="09/13/2017"
    ms.author="maggies"/>
 
 # Share dashboards with coworkers and others
@@ -58,7 +58,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
     ![Select the Share button](media/powerbi-service-share-unshare-dashboard/power-bi-share-dialog-share.png)  
 
-	Power BI sends an email invitation with a link to the shared dashboard, and you see a **Success** notification. 
+	Power BI sends an email invitation to the individuals but not to groups, with a link to the shared dashboard You see a **Success** notification. 
 
     When recipients in your organization click the link, Power BI adds the dashboard to their **Shared with me** list page. They can select your name to see all the dashboards you've shared. 
 
