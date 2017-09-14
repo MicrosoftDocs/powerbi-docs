@@ -16,31 +16,31 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2017"
+   ms.date="09/14/2017"
    ms.author="maggies"/>
 
 # Quickstart: Create a Power BI report for Power BI Report Server
 
-You can store and manage Power BI reports on premises in the Power BI Report Server web portal, just as you can store Power BI reports in the cloud in the Power BI service ([https://powerbi.com](https://powerbi.com)). You create and edit reports in Power BI Desktop, and publish them to the web portal. Then report readers in your organization can view them in a browser or in a Power BI mobile app on their mobile device.
+You can store and manage Power BI reports on premises in the Power BI Report Server web portal, just as you can store Power BI reports in the cloud in the Power BI service (https://powerbi.com). You create and edit reports in Power BI Desktop, and publish them to the web portal. Then report readers in your organization can view them in a browser or in a Power BI mobile app on a mobile device.
 
 ![Power BI report in the web portal](media/reportserver-quickstart-powerbi-report/report-server-powerbi-report.png)
 
 If you've already created Power BI reports in Power BI Desktop, then you're ready to create Power BI reports for Power BI Report Server. If not, here are four quick steps to get you started.
 
-## Step 1: Install Power BI Desktop
+## Step 1: Install Power BI Desktop (Report Server)
 
-You may already have installed Power BI Desktop to create reports for the Power BI service. We recommend installing the version of Power BI Desktop optimized for Power BI Report Server so you know the server and the app are always in sync. You can have both versions of Power BI Desktop on the same computer. See [Install Power BI Desktop optimized for Power BI Report Server](reportserver-install-powerbi-desktop.md) for details.
+You may already have installed Power BI Desktop to create reports for the Power BI service. We recommend installing the version of Power BI Desktop optimized for Power BI Report Server so you know the server and the app are always in sync. You can have both versions of Power BI Desktop on the same computer.
 
 1. In the Power BI Report Server web portal, select **New** > **Power BI Report**.
 
     ![New Power BI report](media/reportserver-getting-around/report-server-web-portal-new-powerbi-report.png)
 
-    If you don't have the Power BI Desktop app installed already, it leads you through the installation process now.
+    If you don't have access to a Power BI Report Server web portal, go to the Microsoft Download Center and download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=837581) (Optimized for Power BI Report Server - June 2017 GA).
 
 2. At the end of the installation process, check **Start Power BI Desktop now**.
 
-    It starts automatically and you're ready to go. 
-
+    It starts automatically and you're ready to go. You can tell you have the right version because "Power BI Desktop (Report Server)" is in the title bar.
+    
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
 
     ![Power BI Desktop start screen](media/reportserver-getting-around/report-server-powerbi-desktop-start.png)
@@ -59,13 +59,13 @@ With the August Preview release, you can connect to any data source. Read more a
 
     ![Select data source](media/reportserver-quickstart-powerbi-report/report-server-get-data-ssas.png)
 
-3. Fill in **Server**, and optionally, **Database**.
+3. Fill in **Server**, and optionally, **Database**. Make sure **Connect live** is selected > **OK**.
 
     ![Server name](media/reportserver-quickstart-powerbi-report/report-server-ssas-server-name.png)
 
-4. Make sure **Connect live** is selected > **OK**.
+4. Choose the report server where you'll save your reports.
 
-    ![Connect live option](media/reportserver-quickstart-powerbi-report/report-server-select-server.png)
+    ![Report server selection](media/reportserver-quickstart-powerbi-report/report-server-select-server.png)
 
 ## Step 3: Design your report
 
@@ -83,15 +83,15 @@ Read much more about [designing a Power BI report](../powerbi-desktop-report-vie
 
 ## Step 4: Save your report to the report server
 
-When your report is ready, you save it to Power BI Report Server.
+When your report is ready, you save it to the Power BI Report Server you chose in Step 2.
 
 1. On the **File** menu, select **Save as** > **Power BI Report Server**.
 
-    ![](media/reportserver-quickstart-powerbi-report/report-server-save-as-powerbi-report-server.png)
+    ![Save to the report server](media/reportserver-quickstart-powerbi-report/report-server-save-as-powerbi-report-server.png)
 
-2. Now you can view it in the browser.
+2. Now you can view it in the web portal.
 
-    ![](media/reportserver-quickstart-powerbi-report/report-server-powerbi-report.png)
+    ![View the report in the web portal](media/reportserver-quickstart-powerbi-report/report-server-powerbi-report.png)
 
 ## Considerations and limitations
 
@@ -111,9 +111,9 @@ Power BI Report Server reports don’t support:
 ### In the Power BI mobile apps
 Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](powerbi-power-bi-apps-for-mobile-devices.md), including:
 
-- [Phone report layout](powerbi-desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-icon.png), and layout.
+- [Phone report layout](powerbi-desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Phone report layout icon](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-icon.png), and layout.
 
-    ![](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-report.png)
+    ![Report optimized for phones](media/reportserver-quickstart-powerbi-report/power-bi-rs-mobile-optimized-report.png)
 
 Power BI Report Server reports don’t support these features in the Power BI mobile apps:
 
