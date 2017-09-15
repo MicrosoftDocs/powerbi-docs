@@ -61,7 +61,7 @@ You can also get **Power BI Desktop** from the Windows Store, using the followin
 
 ![](media/powerbi-desktop-get-the-desktop/GetPBID_04.png)
 
-There are a few advantages to getting **Power BI Desktop** from the Microsoft Store:
+There are a few advantages to getting **Power BI Desktop** from the Windows Store:
 
 -    **Automatic updates** - Windows downloads the latest version automatically in the background as soon as it's available, so your version will always be up to date
 -    **Admin priviledge is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Windows Store, admin priviledge is *not* required.
