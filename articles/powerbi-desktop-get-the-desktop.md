@@ -65,7 +65,7 @@ There are a few advantages to getting **Power BI Desktop** from the Windows Stor
 
 -    **Automatic updates** - Windows downloads the latest version automatically in the background as soon as it's available, so your version will always be up to date
 -    **Admin priviledge is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Windows Store, admin priviledge is *not* required.
--    **IT roll-out enabled** - the **Windows Store** version can more easily be deployed, or *rolled-out*, to everyone in your organization, and can make **Power BI Desktop** availble through the **Microsoft Store for Business**.
+-    **IT roll-out enabled** - the **Windows Store** version can more easily be deployed, or *rolled-out*, to everyone in your organization, and can make **Power BI Desktop** available through the **Microsoft Store for Business**.
 -    **Language detection** - the **Windows Store** version includes all supported languages, and checks which languages is being used on the computer each time it is launched. This also affects the localization of models created in **Power BI Desktop**; for example, built-in date hierarchies will match the language that **Power BI Desktop** was using when the .pbix file was created.
 
 There are a few consideration and limitations for installing **Power BI Desktop** from the Windows Store, which include the following:
