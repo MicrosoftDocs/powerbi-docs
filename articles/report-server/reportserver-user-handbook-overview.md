@@ -27,9 +27,9 @@ Welcome to the user handbook for Power BI Report Server, an on-premises location
 
 Power BI Report Server is also a set of products and experiences that work together to bring your data to life:
 
-- **A [web portal](#web-portal)** you can view in any modern browser. In the web portal, reports and KPIs are organized and displayed in folders, and you can mark them as favorites. You can also store Excel workbooks there.
-- **[Power BI reports](#power-bi-reports)** created with Power BI Desktop, which you view within the web portal or in the Power BI mobile apps.
-- **[Paginated reports](#paginated-reports)**, modern-looking, fixed-layout documents optimized for printing, with tools for creating them.
+- A [web portal](#web-portal) you can view in any modern browser. In the web portal, reports and KPIs are organized and displayed in folders, and you can mark them as favorites. You can also store Excel workbooks there.
+- [Power BI reports](#power-bi-reports) created with Power BI Desktop, which you view within the web portal or in the Power BI mobile apps.
+- [Paginated reports](#paginated-reports), modern-looking, fixed-layout documents optimized for printing, with tools for creating them.
 
 Read on for more about each.
 
@@ -55,7 +55,7 @@ Reports are based on a single dataset. The visualizations in a report each repre
 
 - If you're a report viewer, you can sort and apply filters and slicers as you dig into the data to discover insights and look for answers.
 
-You create Power BI reports with a special edition of Power BI Desktop. [Download Power BI Desktop].
+You create Power BI reports with a special edition of Power BI Desktop. Download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=837581) (Optimized for Power BI Report Server - June 2017 GA).
 
 ## Paginated reports
 

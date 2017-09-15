@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Work in Power BI Report Server"
+   pageTitle="Navigating Power BI Report Server"
    description="Read about navigating and working in the Power BI Report Server web portal."
    services="powerbi" 
    documentationCenter="" 
@@ -16,10 +16,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2017"
+   ms.date="09/14/2017"
    ms.author="maggies"/>
 
-# Work in the Power BI Report Server web portal
+# Navigating the Power BI Report Server web portal
 
 The Power BI Report Server web portal is an on-premises location for viewing, storing and managing your Power BI, mobile, and paginated reports, and KPIs.
 
@@ -29,7 +29,7 @@ You can view the web portal in any modern browser. In the web portal, reports an
 
 - **Power BI reports** created with Power BI Desktop: View them in the web portal and the Power BI mobile apps.
 - **Paginated reports** created in Report Builder: Modern-looking, fixed-layout documents optimized for printing.
-- **KPIs** created and visible right in the web portal.
+- **KPIs** created right in the web portal.
 
 In the web portal you can browse the report server folders or search for specific reports. You can view a report, its general properties and past copies of the report that are captured in report history. Depending on your permissions, you might also be able to subscribe to reports for delivery to your e-mail inbox or a shared folder on the file system.
 
@@ -58,7 +58,7 @@ The web portal is a web application that runs in a browser. When you start the w
 
 1. Open your web browser.
 
-    > [AZURE.NOTE] See this list of [supported web browsers and versions](reportserver-browser-support.md).
+    See this list of [supported web browsers and versions](reportserver-browser-support.md).
 
 2. In the address bar, type the web portal URL.
 
