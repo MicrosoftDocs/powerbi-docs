@@ -64,13 +64,13 @@ You can also get **Power BI Desktop** from the Windows Store, using the followin
 There are a few advantages to getting **Power BI Desktop** from the Windows Store:
 
 -    **Automatic updates** - Windows downloads the latest version automatically in the background as soon as it's available, so your version will always be up to date
--    **Admin priviledge is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Windows Store, admin priviledge is *not* required.
+-    **Admin privilege is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Windows Store, admin privilege is *not* required.
 -    **IT roll-out enabled** - the **Windows Store** version can more easily be deployed, or *rolled-out*, to everyone in your organization, and can make **Power BI Desktop** available through the **Microsoft Store for Business**.
 -    **Language detection** - the **Windows Store** version includes all supported languages, and checks which languages is being used on the computer each time it is launched. This also affects the localization of models created in **Power BI Desktop**; for example, built-in date hierarchies will match the language that **Power BI Desktop** was using when the .pbix file was created.
 
 There are a few consideration and limitations for installing **Power BI Desktop** from the Windows Store, which include the following:
 
--    R visuals are currently not supported when **Power BI Desktop** is installed from the Windows Store. We're actively working on fixing this limitation.
+-    For R visuals, you’ll need to change temporary storage location by adjusting the **R scripting** settings, under **File > Options and Settings > R scripting** in **Power BI Desktop**.
 -    If you use the SAP connector, you may need to move your SAP driver files to the *Windows\System32* folder.
 
 > **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
