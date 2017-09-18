@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/24/2017"
+   ms.date="09/14/2017"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  
@@ -66,7 +66,7 @@ There are currently a few limitations to using **DirectQuery**:
 
 -   Time intelligence capabilities are not available in **DirectQuery**. For example, special treatment of date columns (year, quarter, month, day, so on) are not supported in **DirectQuery** mode.
 
--   By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph for more information
+-   By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph (after this bulleted list) for more information
 
 -   There is a 1 million row limit for returning data when using **DirectQuery**. This does not affect aggregations or calculations used to create the dataset returned using **DirectQuery**, only the rows returned. For example, you can aggregate 10 million rows with your query that runs on the data source, and accurately return the results of that aggregation to Power BI using **DirectQuery** as long as the data returned to Power BI is less than 1 million rows. If more than 1 million rows would be returned from **DirectQuery**, Power BI returns an error.
 

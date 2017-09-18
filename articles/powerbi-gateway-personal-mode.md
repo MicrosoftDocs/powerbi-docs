@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/28/2017"
+   ms.date="09/14/2017"
    ms.author="davidi"/>
 
 # On-premises data gateway (personal mode)
@@ -104,7 +104,6 @@ If you were using **Fast Combine** with the previous gateway, you'll need to tak
 
 There are a few things to consider when using the **On-premises data gateway (personal mode)**, as described in the following list.
 
--   OLEDB and ODBC connections based on Windows authentication are currently not supported using the **On-premises data gateway (personal mode)**. Both OLEDB and ODBC connections are currently under development.
 -   If you're using **Windows Hello** or a pin to sign in to Windows, you might run into the following error: 
     -   *The user account you selected does not match the requirements of the application. Please use a different account.*
     -   To remedy that error, select *Use a different account* and sign in again. 
