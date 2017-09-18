@@ -70,7 +70,7 @@ There are a few advantages to getting **Power BI Desktop** from the Windows Stor
 
 There are a few consideration and limitations for installing **Power BI Desktop** from the Windows Store, which include the following:
 
--    For R visuals, you’ll need to change temporary storage location by adjusting the **R scripting** settings, under **File > Options and Settings > R scripting** in **Power BI Desktop**.
+-    For R visuals, you’ll need to change temporary storage location by adjusting the **R scripting** settings, under **File > Options and Settings > R scripting** in **Power BI Desktop**. You should change it to a location in your user directory.
 -    If you use the SAP connector, you may need to move your SAP driver files to the *Windows\System32* folder.
 
 > **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
