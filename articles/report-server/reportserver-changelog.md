@@ -32,7 +32,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ### Bug Fixes
 
-- Update to the lastest [Bing Maps Web Control](https://msdn.microsoft.com/en-us/library/mt712542.aspx)
+- Update to the lastest [Bing Maps Web Control](https://msdn.microsoft.com/library/mt712542.aspx)
 
 ## June 2017 (Build 14.0.600.301)
 
