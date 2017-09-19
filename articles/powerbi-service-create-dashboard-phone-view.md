@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="08/17/2017"
    ms.author="maggies"/>
 
 # Create a view of a dashboard optimized for mobile phones
@@ -37,7 +37,7 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
 
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-service-phone-view-dashboard.png)
 
-    > [AZURE.NOTE] If you aren't the dashboard owner, you won't see this option.
+    If you aren't the dashboard owner, you won't see this option.
 
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
 
@@ -56,7 +56,7 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
 
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-service-phone-view-reset-tiles.png)
 
-    > [AZURE.NOTE]  Just opening Phone Edit view in the Power BI service slightly changes the size and shape of the tiles on a phone. So to return the dashboard to its exact state before you opened it in Phone Edit view, select **Reset tiles**.
+    Just opening Phone Edit view in the Power BI service slightly changes the size and shape of the tiles on a phone. So to return the dashboard to its exact state before you opened it in Phone Edit view, select **Reset tiles**.
 
 5. When you're satisfied with the phone dashboard layout, select the arrow next to **Phone view** in the upper-right corner > select **Web view**.
 
@@ -65,4 +65,5 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
 ## Next steps
 
 - [Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
+- [Create responsive visuals optimized for any size](powerbi-desktop-create-responsive-visuals.md)
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

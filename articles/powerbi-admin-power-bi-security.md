@@ -17,12 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/20/2017"
+   ms.date="08/10/2017"
    ms.author="davidi"/>
 
 # Power BI Security
 
-For a detailed explanation of Power BI security, please [download the Power BI Security whitepaper](http://go.microsoft.com/fwlink/?LinkId=829185).
+For a detailed explanation of Power BI security, please [download the Power BI Security whitepaper](http://go.microsoft.com/fwlink/?LinkId=829185):
+
+[![](media/powerbi-admin-power-bi-security/PBI_Security_01.png)](http://go.microsoft.com/fwlink/?LinkId=829185)
 
 The Power BI service is built on **Azure**, which is Microsoft’s cloud computing infrastructure and platform. The Power BI service architecture is based on two clusters – the Web Front End (**WFE**) cluster and the **Back End** cluster. The WFE cluster is responsible for initial connection and authentication to the Power BI service, and once authenticated, the Back End handles all subsequent user interactions. Power BI uses Azure Active Directory (AAD) to store and manage user identities, and manages the storage of data and metadata using Azure BLOB and Azure SQL Database, respectively.
 

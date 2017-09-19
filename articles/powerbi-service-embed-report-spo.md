@@ -18,22 +18,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="09/01/2017"
    ms.author="asaxton"/>
+
 # Embed with report web part in SharePoint Online
 
 With Power BI's new report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
 
 When using the new **Embed in SharePoint Online** option, the embedded reports are fully secure so you can easily create secure internal portals.
 
-> [AZURE.NOTE] **Embed in SharePoint Online** is only available with [Power BI Pro](powerbi-premium.md). Each user that views the report mush have a Power BI Pro license. If they do not have a Pro license, they will be prompted to sign-up to view the report.
-
 ## Requirements
 
 There are a few requirements in order for **Embed in SharePoint Online** reports to work.
 
--   The Power BI (Preview) web part for SharePoint Online requires new SharePoint features to be enabled. Your tenant needs to be enrolled in the [Set up the Standard or First Release options in Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47) program to use this feature.
--   The *First Release for everyone* option must be selected.
 -   The Power BI (Preview) web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## Embed your report
@@ -96,6 +93,14 @@ Alternatively, you can grant users access to your report by doing the following.
 
 2. Share the dashboard with the users that need access to the report. For more information, see [Share a dashboard with colleagues and others](powerbi-service-share-unshare-dashboard.md).
 
+    If you share a dashboard to a security group, users will need to sign into Power BI at least once for the user to have access to the report.
+
+## Allowing Free users access to reports
+
+Free users can view reports that are embedded with the Power BI web part for SharePoint Online. You provide access to free users in the same way you do Pro users as described in [Granting access to reports](#granting-access-to-reports) above. The workspace, where the report is located, also has to be backed by Power BI Premium capacity. 
+
+For example, if you have a report, in an app workspace, you would have to assign the app workspace to a Power BI Premium capacity. You would also need to add the Free user to the list of members of that app workspace.
+
 ## Web part settings
 
 Below is a description of the settings that can be adjusted for the Power BI web part for SharePoint Online.
@@ -149,6 +154,10 @@ You should contact the owner of the SharePoint Online page to help you resolve t
     -   *An error occurred, please try logging out and back in and then revisiting this page.*
 
     To resolve this issue, ensure your tenant is set to *First release for everyone* as described in the **Requirements** section earlier in this article. To enable Single Sign On (SSO), the Power BI web part relies on *Authentication APIs* that are provided by SharePoint, which are only available when *First release for everyone* is selected.
+
+- Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
+
+- You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](powerbi-service-browser-support.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
 ## Next steps
 

@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/03/2017"
+   ms.date="07/20/2017"
    ms.author="asaxton"/>
+
 # What can developers do with Power BI?
 
 Power BI offers a wide range of options for developers. This ranges from embedding to custom visuals and streaming datasets.

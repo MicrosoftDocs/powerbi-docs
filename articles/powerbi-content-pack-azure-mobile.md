@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Azure Mobile Engagement content pack"
-   description="Azure Mobile Engagement content pack for Power BI"
+   pageTitle="Azure Mobile Engagement for Power BI"
+   description="Azure Mobile Engagement for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="joeshoukry"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Azure Mobile Engagement content pack for Power&nbsp;BI
+# Azure Mobile Engagement for Power BI
 
 The Power BI Azure Mobile Engagement content pack allows to you quickly gain insights into your app data.
 

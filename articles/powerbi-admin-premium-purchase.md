@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2017"
+   ms.date="08/02/2017"
    ms.author="asaxton"/>
 
 # How to purchase Power BI Premium
@@ -51,13 +51,24 @@ To purchase a Premium capacity, you will need to do the following.
 
 2. Select **Billing** > **Purchase services**.
 
-3. Under **Other plans**, look for Power BI Premium offerings. This will list as P1 through P3.
+3. Under **Other plans**, look for Power BI Premium offerings. This will list as P1 through P3, EM3 and P1 (month to month).
 
 4. Hover over the **ellipsis (...)** and then select **Buy now**.
 
     ![](media/powerbi-admin-premium-purchase/premium-purchase.png)
 
 5. Follow the steps to complete the purchase.
+
+You can also select the following links to take you directly to the purchase pages of those items. For more information about these SKUs, see [Power BI Premium - what is it?](powerbi-premium.md#premiumskus).
+
+|Direct purchase links|
+|---|
+|[EM3 (month to month) SKU](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1)|
+|[P1 SKU](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1)|
+|[P1 (month to month) SKU](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1)|
+|[P2 SKU](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1)|
+|[P3 SKU](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1)|
+
 
 After you have completed the purchase, the Purchase services screen will show that the item is purchased and active.
 

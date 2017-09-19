@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
 # Set data alerts in the Power BI mobile apps
@@ -54,7 +54,7 @@ You can set alerts in the Power BI mobile apps and in the Power BI service to no
 
 4.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
 
-    >**Note**: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
+    > [AZURE.NOTE] You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
 
 6.  You can change the alert title, too.
 
@@ -100,7 +100,7 @@ You can manage individual alerts on your mobile device or [manage all your alert
 
 5.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
 
-    >**Note**: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
+    > [AZURE.NOTE] You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
 
 6.  You can change the alert title, too.
 
@@ -142,7 +142,7 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 
 4.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
 
-    >**Note**: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
+    > [AZURE.NOTE] You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
 
 6.  You can change the alert title, too.
 
@@ -190,7 +190,7 @@ Data sources are often set to refresh daily, although some refresh more often. W
 
      ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-notifications.png) 
 
->**Note**: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
+> [AZURE.NOTE] Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
 
 ## Tips and troubleshooting
 - Alerts currently aren't supported for Bing tiles or card tiles with date/time measures.
@@ -198,8 +198,7 @@ Data sources are often set to refresh daily, although some refresh more often. W
 - Alerts only work on data that is refreshed. They don't work on static data.
 - Alerts don't work with tiles that contain streaming data.
 
-## See also  
+## Next steps 
 - [Manage your alerts in the Power BI service](powerbi-service-set-data-alerts.md)
 - [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
-- [Get started with Power BI](powerbi-service-get-started.md)  
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

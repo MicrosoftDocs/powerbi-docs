@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Microsoft Azure Enterprise content pack"
-   description="Microsoft Azure Enterprise content pack for Power BI"
+   pageTitle="Microsoft Azure Enterprise for Power BI"
+   description="Microsoft Azure Enterprise for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="joeshoukry"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Microsoft Azure Enterprise content pack for Power&nbsp;BI
+# Microsoft Azure Enterprise for Power BI
 
 Explore and monitor your Microsoft Azure Enterprise data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 

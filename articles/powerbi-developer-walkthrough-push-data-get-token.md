@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="08/10/2017"
    ms.author="asaxton"/>
 
 # Step 2: Get an authentication access token

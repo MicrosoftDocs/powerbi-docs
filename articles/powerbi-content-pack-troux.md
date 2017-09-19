@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Troux content pack"
-   description="Troux content pack for Power BI"
+   pageTitle="Troux for Power BI"
+   description="Troux for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="joeshoukry"
@@ -17,9 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="08/28/2017"
    ms.author="yshoukry"/>
-# Troux content pack for Power&nbsp;BI
+
+# Troux for Power BI
 
 With the Troux content pack, you can visualize your Enterprise Architecture repository in entirely new ways directly in Power BI. The content pack offers a set of insights on your business capabilities, the applications that deliver those capabilities, and the technologies that support those applications that can be fully customized using Power BI.
 

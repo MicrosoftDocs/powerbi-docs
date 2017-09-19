@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/31/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -165,7 +165,7 @@ Help is localized in these 10 languages:
 -   Russian - Русский
 -   Spanish - español
 
-## See also 
+## Next steps 
 * Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](powerbi-mobile-supported-languages.md) for details.
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).

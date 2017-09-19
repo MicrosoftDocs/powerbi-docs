@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/09/2017"
+   ms.date="07/17/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Windows 10
 
 The Power BI mobile app for Windows 10 brings Power BI to your tablet or phone, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere &#151; right on your [Windows Start screen](powerbi-mobile-pin-dashboard-from-win10phone-app.md).
 
-![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_livetile.gif)
+![Windows live tile](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_livetile.gif)
 
 You [create dashboards and reports in the Power BI service](powerbi-service-get-started.md) with your data. 
 
@@ -50,13 +50,13 @@ If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/) 
 
 1.  On the Start screen of your Windows 10 device, open the Power BI app.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_AppIconSm.png)
+    ![Power BI app icon](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_AppIconSm.png)
   
 2.  To view your Power BI dashboards and reports, tap **Power BI**. Sign in with the same credentials as your Power BI account on the web. 
 
     To view your Reporting Services mobile reports and KPIs, tap **SQL Server 2016 Reporting Services**. Sign in with your SQL Server Reporting Services credentials.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-connect.png)
+    ![Connect dialog box](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-connect.png)
 
 4.  Tap **Start exploring**  to view your own dashboards.
 
@@ -67,19 +67,19 @@ Even without signing up, you can play with the Power BI and Reporting Services s
 
 You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
 
-1.   Tap the global navigation button ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
+1.   Tap the global navigation button ![Global navigation button](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
   
-2.   Tap **Settings** icon ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-settings-icon.png), tap your name, then tap **View samples**.
+2.   Tap **Settings** icon ![Settings icon](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-settings-icon.png), tap your name, then tap **View samples**.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-view-samples.png)
+    ![View samples](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-view-samples.png)
 
 3.   Pick a role and explore the sample dashboard for that role.  
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-samples.png)
+    ![Pick a role](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-samples.png)
 
 ### Reporting Services mobile report samples
 
-1.   Tap the global navigation button ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
+1.   Tap the global navigation button ![global navigation button](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
 
 2.  Tap **Settings** icon ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-settings-icon.png), right-click or tap and hold **Connect to server**, then tap **View samples**.
 
@@ -95,21 +95,21 @@ Find your dashboards, reports, and apps quickly by typing in the search box, alw
 
 1.  Tap the search icon in the upper-right corner.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10ph_searchbarbrdr.png)
+    ![Search icon](media/powerbi-mobile-win10phone-app-get-started/pbi_win10ph_searchbarbrdr.png)
 
     Power BI displays your most recent dashboards, reports, and apps.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_searchrecent.png)
+    ![Search results](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_searchrecent.png)
 
 2.  As you start typing, Power BI displays all relevant results.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_search_m.png)
+    ![Relevant search results](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_search_m.png)
 
 ## Find your content in the Power BI mobile apps
 
 Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](powerbi-mobile-find-content-mobile-devices.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
-![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-left-nav.png)
+![Power BI left navigation](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-left-nav.png)
 
 ## View your favorite dashboards, KPIs, and reports
 
@@ -117,11 +117,11 @@ You can view all of your favorite Power BI dashboards, together with Reporting S
 
 -  Tap **Favorites**.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-favorite-menu.png)
+    ![Favorites](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-favorite-menu.png)
    
     Your Power BI favorites and your favorites from the Reporting Services web portal are all on this page.
 
-    ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-favorites.png)
+    ![View favorites](media/powerbi-mobile-win10phone-app-get-started/power-bi-win10-favorites.png)
 
 Read more about [favorites in the Power BI mobile apps](powerbi-mobile-favorites.md).
 
@@ -143,7 +143,7 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 - Create [KPIs on the Reporting Services web portal](https://msdn.microsoft.com/library/mt683632.aspx).
 - [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
-### See also
+## Next steps
 
 - [Download the Power BI app](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 - [Get started with Power BI](powerbi-service-get-started.md)

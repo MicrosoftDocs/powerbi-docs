@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2017"
+   ms.date="09/08/2017"
    ms.author="davidi"/>
 
 # Previous monthly updates to Power BI Desktop
@@ -27,6 +27,98 @@ This article describes previous updates to **Power BI Desktop**. For the most cu
 The following sections describe previous months' updates to **Power BI Desktop**.
 
 You can always [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
+
+
+## August 2017 Update (2.49.4831.222)
+
+The following updates were new to **Power BI Desktop** in August:
+
+### Report View:
+
+-   Show values on rows for matrix [[video]](https://youtu.be/ND8U0yXroaQ?t=39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#valuesOnRows)
+-   Color scales on font colors for table and matrix  [[video]](https://youtu.be/ND8U0yXroaQ?t=2m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#fontColorScales)
+-   Custom subtotal settings per level of matrix  [[video]](https://youtu.be/ND8U0yXroaQ?t=4m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#customSubtotal)
+-   Line styles and legend options  [[video]](https://youtu.be/ND8U0yXroaQ?t=6m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#lineStyles)
+-   Scatter chart performance improvements  [[video]](https://youtu.be/ND8U0yXroaQ?t=13m59s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#scatterChartPerformance)
+-   New custom visuals  [[video]](https://youtu.be/ND8U0yXroaQ?t=14m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#customVisuals)
+    -   Dot Plot by MAQ Software  [[video]](https://youtu.be/ND8U0yXroaQ?t=14m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#dotPlot)
+    -   Power KPI  [[video]](https://youtu.be/ND8U0yXroaQ?t=19m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#powerKPI)
+    -   Funnel plot  [[video]](https://youtu.be/ND8U0yXroaQ?t=21m55s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#funnelPlot)
+    -   Beyondsoft Calendar  [[video]](https://youtu.be/ND8U0yXroaQ?t=23m23s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#beyondsoftCalendar)
+
+
+### Analytics & Modeling:
+
+-   What if parameters [[video]](https://youtu.be/ND8U0yXroaQ?t=24m51s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#whatIf)
+-   New scatter chart analytics features [[video]](https://youtu.be/ND8U0yXroaQ?t=32m21s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#scatterChartAnalytics)
+    -   Symmetry shading [[video]](https://youtu.be/ND8U0yXroaQ?t=32m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#symmetryShading)
+    -   Ratio lines [[video]](https://youtu.be/ND8U0yXroaQ?t=35m3s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#ratioLine)
+-   New quick measure: weighted average [[video]](https://youtu.be/ND8U0yXroaQ?t=36m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#weightedAverage)
+
+### Data Connectivity:
+
+-   Live connect to the Power BI service is generally available  [[video]](https://youtu.be/ND8U0yXroaQ?t=41m15s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#liveConnect)
+-   Google BigQuery connector (beta)  [[video]](https://youtu.be/ND8U0yXroaQ?t=44m15s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary/#GoogleBigQuery)
+
+
+>NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2017-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ND8U0yXroaQ" frameborder="0" allowfullscreen></iframe>
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
+
+## July 2017 Update (2.48.4792.321)
+
+The following updates were new to **Power BI Desktop** in July:
+
+### Report View:
+
+-   New table & matrix visuals are now generally available [[video]](https://youtu.be/4X96ow7FnSY?t=1m27s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#tableAndMatrix)
+-   Renaming fields in visuals  [[video]](https://youtu.be/4X96ow7FnSY?t=6m3s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#rename)
+-   Custom visuals store integration  [[video]](https://youtu.be/4X96ow7FnSY?t=8m7s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisualsStore)
+-   Relative date filters  [[video]](https://youtu.be/4X96ow7FnSY?t=10m46s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#relativeDateFilter)
+-   Responsive layout for visuals (preview)  [[video]](https://youtu.be/4X96ow7FnSY?t=12m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals)
+-   New waterfall chart option - breakdown  [[video]](https://youtu.be/4X96ow7FnSY?t=14m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#waterfall)
+-   Custom visual updates  [[video]](https://youtu.be/4X96ow7FnSY?t=17m34s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisuals)
+    -   Drilldown Choropleth  [[video]](https://youtu.be/4X96ow7FnSY?t=18m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
+    -   Drilldown Cartogram  [[video]](https://youtu.be/4X96ow7FnSY?t=19m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
+    -   Drilldown Player  [[video]](https://youtu.be/4X96ow7FnSY?t=20m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
+    -   Certified custom visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#certifiedCustomVisuals)
+
+
+### Analytics & Modeling:
+
+-   Quick measures from the community [[video]](https://youtu.be/4X96ow7FnSY?t=22m6s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#quickMeasures)
+    -   Star rating [[video]](https://youtu.be/4X96ow7FnSY?t=22m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#starRating)
+    -   Concatenated list of values [[video]](https://youtu.be/4X96ow7FnSY?t=24m43s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#concatenate)
+-   Bidirectional cross filtering for DirectQuery is now generally available [[video]](https://youtu.be/4X96ow7FnSY?t=26m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#bidirectional)
+
+### Data Connectivity:
+
+-   Snowflake connector general availability  [[video]](https://youtu.be/4X96ow7FnSY?t=27m24s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#snowflake)
+
+
+### Query Editing:
+
+-   *Add Column from Examples* enhancements  [[video]](https://youtu.be/4X96ow7FnSY?t=27m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#addColumnFromExamples)
+
+
+
+>NOTE: You can also [check out all the data sources available to Power BI Desktop](powerbi-desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4X96ow7FnSY" frameborder="0" allowfullscreen></iframe>
+
+>NOTE: You might also be interested in learning [what's new in the Power BI service](powerbi-service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## June 2017 Update (2.47.4766.542)
 

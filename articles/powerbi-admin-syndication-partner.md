@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="05/31/2017"
+ms.date="09/05/2017"
 ms.author="asaxton"/>
 
 # Unable to add Power BI to Office 365 partner subscription

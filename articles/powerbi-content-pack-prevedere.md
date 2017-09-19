@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Prevedere content pack"
-   description="Prevedere content pack for Power BI"
+   pageTitle="Prevedere for Power BI"
+   description="Prevedere for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="joeshoukry"
@@ -17,9 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="08/28/2017"
    ms.author="yshoukry"/>
-# Prevedere content pack for Power&nbsp;BI
+
+# Prevedere for Power BI
 
 Gain access to exclusive and critical financial information to confidently and proactively drive your business forward.
 

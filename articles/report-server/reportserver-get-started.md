@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="09/05/2017"
    ms.author="asaxton"/>
 
 # Get started with Power BI Report Server

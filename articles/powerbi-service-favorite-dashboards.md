@@ -1,6 +1,6 @@
 <properties
    pageTitle="Favorites in Power BI service (dashboards)"
-   description="Documentation on how to set ashboards as favorites in Power BI service"
+   description="Documentation on how to set dashboards as favorites in Power BI service"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2017"
+   ms.date="09/08/2017"
    ms.author="mihart"/>
 
 # Favorite dashboards in the Power BI service

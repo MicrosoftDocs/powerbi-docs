@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/06/2017"
+   ms.date="09/14/2017"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  
@@ -66,7 +66,7 @@ There are currently a few limitations to using **DirectQuery**:
 
 -   Time intelligence capabilities are not available in **DirectQuery**. For example, special treatment of date columns (year, quarter, month, day, so on) are not supported in **DirectQuery** mode.
 
--   By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph for more information
+-   By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph (after this bulleted list) for more information
 
 -   There is a 1 million row limit for returning data when using **DirectQuery**. This does not affect aggregations or calculations used to create the dataset returned using **DirectQuery**, only the rows returned. For example, you can aggregate 10 million rows with your query that runs on the data source, and accurately return the results of that aggregation to Power BI using **DirectQuery** as long as the data returned to Power BI is less than 1 million rows. If more than 1 million rows would be returned from **DirectQuery**, Power BI returns an error.
 
@@ -87,7 +87,7 @@ The following three points should be taken into consideration when using **Direc
 
     This situation can occur with a simple chart that includes a very high cardinality column, with the aggregation option set to *Don’t Summarize*. The visual needs to only have columns with a cardinality below 1 million, or must have appropriate filters applied.
 
--   **Security** - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source.
+-   **Security** - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source. Customers who want per-user security implement with DirectQuery sources and use RLS. [Learn more about RLS](powerbi-admin-rls.md).
 
 -   **Supported features** - Not all features in **Power BI Desktop** are supported in **DirectQuery** mode, or have some limitations. In addition, there are some capabilities in the Power BI service (such as *Quick Insights*) that are not available for datasets using **DirectQuery**. As such, the limitation of such features when using **DirectQuery** should be taken into consideration when determining whether to use **DirectQuery**.   
 

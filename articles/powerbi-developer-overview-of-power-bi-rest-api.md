@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="07/20/2017"
    ms.author="asaxton"/>
 
 # What can developers do with Power BI?
@@ -30,10 +30,10 @@ Here are some of the things you can do with the Power BI APIs.
 
 |**To do this**| **Go here**|
 |---|---|
-|Embed dashboards, reports and tiles for Power BI users and Non-Power BI users|[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)|
+|Embed dashboards, reports and tiles for Power BI users and Non-Power BI users (app owns data)|[How to embed your Power BI dashboards, reports and tiles](powerbi-developer-embedding-content.md)|
 |Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)|
 |Import a Power BI Desktop file| [Import PBIX File](https://msdn.microsoft.com/library/mt243837.aspx)|
-|Authenticate a Power BI web app.|[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)|
+|Authenticate to Power BI.|[Authenticate to Power BI](powerbi-developer-get-azuread-access-token.md)|
 |Create a custom visual.|[Use developer tools to create custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md)|
 
 > [AZURE.NOTE] The Power BI APIs still refer to app workspaces as groups. Any references to groups mean that you are working with app workspaces.
@@ -59,7 +59,6 @@ The following are tools you can use to aid in your development of Power BI items
 
 * [Apiari interactive API console](http://docs.powerbi.apiary.io/)
 * [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo)
-
 
 ## Next steps
 

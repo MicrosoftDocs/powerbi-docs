@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/22/2017"
+   ms.date="09/06/2017"
    ms.author="davidi"/>
 
 # Accessibility in Power BI Desktop reports
@@ -30,6 +30,10 @@
 
 ## Consuming a Power BI Desktop report with a keyboard or screen reader
 
+Beginning with the September 2017 release of **Power BI Desktop**, you can press the **?** key to show a window that describes the accessibility keyboard shortcuts available in **Power BI Desktop**.
+
+![Press ? key in Power BI Desktop to show accessibility keyboard shortcuts](media/powerbi-desktop-accessibility/accessibility_03.png)
+
 With the accessibility enhancements, you can consume a **Power BI Desktop** report with a keyboard or a screen reader with the following techniques:
 
 You can **switch focus** between the report page tabs, or objects on a given report page, using **Ctrl+F6**.
@@ -37,6 +41,14 @@ You can **switch focus** between the report page tabs, or objects on a given rep
 -   When focus is on *report page tabs*, use the *Tab* or *Arrow* keys to move focus from one report page to the next. The title of the report page, and whether it is currently selected, is read out by the screen reader. To load the report page currently under focus, use the *Enter* or *Space* key.
 
 -   When focus is on a loaded *report page*, use the *Tab* key to shift focus to each object on the page, which includes all textboxes, images, shapes, and charts. The screen reader reads the type of object, and a description of that object that's provided by its author. 
+
+You can press **Alt+Shift+F10** to move focus to a visual menu.
+
+You can press **Alt+Shift+F11** to present an accessible version of the *See data* window.
+
+![Press Alt+Shift+F11 in Power BI Desktop to display an accessible See Data window for a visual](media/powerbi-desktop-accessibility/accessibility_04.png)
+
+These accessibility additions were created to let users fully consume **Power BI Desktop** reports using a screen reader and keyboard navigation.
 
 
 ## Tips for creating accessible reports
@@ -52,12 +64,20 @@ The following tips can help you create **Power BI Desktop** reports that are mor
 
     -   Using a different *Marker shape* for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 
+-   As a follow on to the previous bullet, don't rely on color to convey information. Using shapes on lines (markers, as described in the previous bullets) is helpful.
 
 -   Select a *theme* that is high contrast and color blind friendly from the theme gallery, and import it using the [**Theming** preview feature](powerbi-desktop-report-themes.md).
 
 -   For every object on a report, provide *Alt Text*. Doing so ensures that consumers of your report understand what you are trying to communicate with a visual, even if they cannot see the visual, image, shape, or textbox. You can provide *Alt Text* for any object on a **Power BI Desktop** report by selecting the object (such as a visual, shape, etc.) and in the **Visualizations** pane, select the **Format** section, expand **General**, then scroll to the bottom and fill in the **Alt Text** textbox.
 
     ![Alt text for any object in a report can be added in Visualizations > Format > General > Alt Text box](media/powerbi-desktop-accessibility/accessibility_02.png)
+
+-   Make sure your reports have sufficient contrast between text and any background colors.
+
+-   Use text sizes and fonts that are easily readable. Small text size, or fonts that might be difficult to read, are unhelpful for accessibility.
+
+-   Include a title, axis labels, and data labels in all visuals.
+
 
 ## Considerations and limitations
 

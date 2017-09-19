@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="ericre"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/27/2017"
+   ms.date="08/10/2017"
    ms.author="asaxton"/>
 
 # Find Power BI users that have signed in

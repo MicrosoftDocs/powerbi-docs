@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
-   manager="mblythe" 
+   manager="erikre" 
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/12/2017"
+   ms.date="08/10/2017"
    ms.author="asaxton"/>
+
 # Azure SQL Database with DirectQuery
 
 Learn how you can connect directly to Azure SQL Database and create reports that use live data. You can keep your data at the source and not in Power BI.

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
 # Scan a barcode from the Power BI app on your iPhone
@@ -79,7 +79,7 @@ Make sure you or the report owner has tagged a column as **Barcode** in Power BI
 The report you chose to filter is based on a data model that doesn't include this barcode value. For example, the product "mineral water" isn't included in the report. You can scan a different product, choose a different report (if more than one report is available), or view the report unfiltered. 
 
 
-### See also
+## Next steps
 
 -  [Tag a barcode field in Power BI Desktop](powerbi-desktop-mobile-barcodes.md)
 -  [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)

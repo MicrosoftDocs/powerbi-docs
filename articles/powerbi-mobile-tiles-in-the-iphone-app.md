@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/04/2017"
+   ms.date="07/19/2017"
    ms.author="maggies"/>
 
 # Interact with tiles in the mobile apps
@@ -34,7 +34,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact wit
 
 ## Tiles in the iOS apps
 
->**Note**: You can [create picture tiles with your iPhone app](powerbi-mobile-picture-tiles-in-the-iphone-app.md) and save them to your dashboards.
+> [AZURE.NOTE] You can [create picture tiles with your iPhone app](powerbi-mobile-picture-tiles-in-the-iphone-app.md) and save them to your dashboards.
 
 1.  Open a [dashboard in the mobile app for iOS](powerbi-mobile-create-dashboard.md).
 
@@ -130,7 +130,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact wit
 
     Tap the **Full screen** icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-full-screen-icon.png) to open the tile in full-screen mode, without the navigation and menu bars.
 
-    >**Note**: You can also [view dashboards and reports in full-screen mode](powerbi-mobile-win10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
+    > [AZURE.NOTE] You can also [view dashboards and reports in full-screen mode](powerbi-mobile-win10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
 
     In a map, tap the **Center Map** icon ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-center-map-icon.png) to center the map to your current location.
 
@@ -142,7 +142,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact wit
 
 4.   Tap the back arrow or the back button to close the tile and return to the dashboard.
 
-## See also
+## Next steps
 
 - [Get started with Power BI](powerbi-service-get-started.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

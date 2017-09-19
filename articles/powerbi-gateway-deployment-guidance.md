@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/21/2017"
+ms.date="09/06/2017"
 ms.author="davidi"/>
 
 # Guidance for deploying a data gateway for Power BI

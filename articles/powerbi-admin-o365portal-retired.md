@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup="amandacofsky"
    editor=""
    tags=""
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="09/06/2017"
    ms.author="davidi"/>
 
 # Power BI for Office 365 is retired

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/27/2017"
+   ms.date="07/18/2017"
    ms.author="maggies"/>
 
 # Power BI mobile app on your Apple Watch
@@ -30,17 +30,17 @@ The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when y
 ## Use the Power BI app on the Apple Watch
 Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI widget (if configured) directly from the watch face.
 
-![](media/powerbi-mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png)
+![Apple watch](media/powerbi-mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png)
 
 The Power BI Apple Watch app consists of two parts.
 
 -   The **index screen** allows a quick overview of all KPI and card tiles from the synced dashboard.
 
-    ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
+    ![Apple watch](media/powerbi-mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
 
 -   The **in-focus tile**: Click a tile on the index screen for an in-depth view of a specific tile.
 
-    ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_kpi.png)
+    ![Apple watch](media/powerbi-mobile-apple-watch/pbi_aplwatch_kpi.png)
 
 ## Refresh a dashboard from your Apple Watch
 You can refresh a synced dashboard directly from your watch.
@@ -79,19 +79,17 @@ Given the small space on the Apple Watch face, the Power BI Apple Watch app lets
 
 -   On your iPhone, go to the Apple Watch control app, select Power BI, navigate to the widget name field, and type a new name.
 
-    ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_oniphone.png)
+    ![Apple watch](media/powerbi-mobile-apple-watch/pbi_aplwatch_oniphone.png)
 
  
 > [AZURE.NOTE]  If you don't change the name, the Power BI widget will shorten the name to the number of characters that fit the small space on the watch face. 
 
-## See also
+## Next steps
 
 Your feedback will help us decide what to implement in the future, so please don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
 
 -   Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
 -   Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
 -   Join the conversation at the [Power BI Community](http://community.powerbi.com/)
-
-[Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
 
 
