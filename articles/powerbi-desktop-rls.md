@@ -4,7 +4,7 @@ description="How to configure row-level security for imported datasets, and Dire
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
-manager="mblythe"
+manager="erikre"
 backup=""
 editor=""
 tags=""
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="06/20/2017"
+ms.date="08/11/2017"
 ms.author="asaxton"/>
 
 # Row-level security (RLS) with Power BI Desktop

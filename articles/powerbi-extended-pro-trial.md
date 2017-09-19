@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="07/18/2017"
    ms.author="asaxton"/>
 
 # Extended Pro Trial activation
@@ -32,7 +32,7 @@ Also announced was that sharing and collaboration features will be exclusive to 
 
 Beginning June 1, 2017 existing users of the Free service who have been active within the past year (on or before May 2, 2017) will be eligible for a free, 12-month extended trial of Power BI Pro. The offer will let users take advantage of the full capabilities of Power BI Pro for the next year as a sign of appreciation to the community and to provide users with time to adjust to the changes.
 
-![](media/powerbi-extended-pro-trial/extended-pro-trial-activate-pop-up.png "Extended Pro Trial pop-up at sign in")
+![Extended Pro Trial pop-up at sign in](media/powerbi-extended-pro-trial/extended-pro-trial-activate-pop-up.png)
 
 On June 1, 2017 eligible users will receive a notification when they sign into the service letting them know the changes have gone into effect with a prompt to register for the Extended Power BI Pro trial offer. A user’s IT admin does not control the in-product notifications, nor does the IT admin have the ability to register for the extended Power BI Pro trial on behalf of a user. Each eligible user must individually take action to complete this process.
 
@@ -59,7 +59,7 @@ There are two ways to activate the Extended Pro Trial. The first is when you sig
 
 When you sign in to the Power BI service, and are eligible, you will get a pop-up notice. Selecting **Activate Trial** will begin the Extended Pro Trial. No further action will be needed.
 
-![](media/powerbi-extended-pro-trial/extended-pro-trial-pop-up.png "Extended Pro Trial pop-up at sign in")
+![Extended Pro Trial pop-up at sign in](media/powerbi-extended-pro-trial/extended-pro-trial-pop-up.png)
 
 You will then have the ability to access all existing shared dashboards and reports for the duration of the trial.
 
@@ -73,19 +73,17 @@ Within the notification center, you will see a notification regarding the Extend
 
 Within the notification, you can select **Activate Trial** to begin the trial. No further action will be needed.
 
-![](media/powerbi-extended-pro-trial/extended-pro-trial-notification.png "Extended Pro Trial notification")
+![Extended Pro Trial notification](media/powerbi-extended-pro-trial/extended-pro-trial-notification.png)
 
 You will then have the ability to access all existing shared dashboards and reports for the duration of the trial.
 
 ## After activation
 
-After activation, you will receive a confirmation in the **Notification center**. This is just a notification message and no action is needed on your part. There will be up to a 2 day lag on receiving this notification.
+After activation, you will see how many days are left in your trial in the top right.
 
-![](media/powerbi-extended-pro-trial/extended-pro-trial-confirmation.png "Extended Pro Trial notification - confirmation")
+![Days left in Power BI Pro trial](media/powerbi-extended-pro-trial/powerbi-trial-days-left.png)
 
-This notification will have a link to the [Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial).
-
-The Extended Pro Trial runs through May 31, 2018 for all eligible users.
+You can review the terms within the [Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial). The Extended Pro Trial runs through May 31, 2018 for all eligible users.
 
 ## Frequently Asked Questions
 
@@ -108,6 +106,7 @@ No. Admins do not have a way to restrict users from activating the Extended Pro 
 ## Next steps
 
 [Extended Pro Trial offer terms and conditions](https://aka.ms/power-bi-trial)  
+[Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
 [Power BI Premium announcement](https://aka.ms/pbipremium-announcement)  
 [Find Power BI users that have signed in](powerbi-admin-access-usage.md)
 

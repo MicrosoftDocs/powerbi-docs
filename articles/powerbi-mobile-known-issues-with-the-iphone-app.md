@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/19/2017"
+   ms.date="08/17/2017"
    ms.author="maggies"/>
 # Known issue with 'communication failures' in iOS mobile apps 
 

@@ -17,12 +17,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="09/12/2017"
    ms.author="maggies"/>
 
 # Supported browsers for Power BI  
 
-We support Power BI in these browsers:
+Power BI runs in these browsers:
 
 -   Microsoft Edge
 -   Internet Explorer 11

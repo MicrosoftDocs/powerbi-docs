@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Alpine Metrics Sales Predictions content pack"
-   description="Alpine Metrics Sales Predictions content pack for Power BI"
+   pageTitle="Alpine Metrics Sales Predictions for Power BI"
+   description="Alpine Metrics Sales Predictions for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="joeshoukry"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Alpine Metrics Sales Predictions content pack for Power&nbsp;BI  
+# Alpine Metrics Sales Predictions for Power BI
 
 Alpine Metrics provides state of the art Predictive Sales Process Optimization in the cloud and on demand for sales organizations large and small. The Alpine Metrics Sales Predictions content pack for Power BI includes metrics such as potential and predicted sales and risks, allowing you deeper insight into the future of your business. 
 

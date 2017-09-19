@@ -3,8 +3,8 @@
    description="SQL Database Auditing content pack for Power BI"
    services="powerbi"
    documentationCenter=""
-   authors="theresapalmer"
-   manager="mblythe"
+   authors="joeshoukry"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,8 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="12/08/2016"
-   ms.author="tpalmer"/>
+   ms.date="08/10/2017"
+   ms.author="yshoukry"/>
+
 # SQL Database Auditing content pack for Power BI
 
 The Power BI content pack for Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) allows you to understand your database activity and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations. 

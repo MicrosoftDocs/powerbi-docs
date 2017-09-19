@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2017"
+   ms.date="09/11/2017"
    ms.author="davidi"/>
 
 # Troubleshooting refresh scenarios
@@ -62,6 +62,10 @@ Microsoft is investigating a solution that allows the data loading process to re
 ## Uncompressed data limits for refresh
 
 The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit on the amount of uncompressed data that is processed during refresh to 10 GB. This limit accounts for the compression, and therefore is much higher than 1 GB. Datasets in Power BI Premium are not subject to this limit. If refresh in the Power BI service fails for this reason, please reduce the amount of data being imported to Power BI and try again.
+
+## Scheduled refresh timeout
+
+Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you are encountering this limit, you can consider reducing the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
 
 ## Next steps
 

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/30/2017"
+   ms.date="07/20/2017"
    ms.author="mihart"/>
 
 # Subscribe to a Power BI report or dashboard
@@ -109,14 +109,15 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 
 -    For email subscriptions on live connection datasets, you will only get emails when the data changes. So, if a refresh occurs but no data changes, Power BI will not send you an email.
 
--  Email subscriptions do not support most [custom visuals](powerbi-custom-visuals.md)  - they will be blank in the subscription email.  The one exception is those custom visuals that have been [certified](powerbi-custom-visuals-certified.md).  
+-  Email subscriptions do not support most [custom visuals](powerbi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](powerbi-custom-visuals-certified.md).  
 
 -  Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before subscribing will not show up in the email.    
 - E-mail subscriptions are not yet supported on reports pages created by the Power BI Desktop live connect to service feature.    
 - For dashboards subscriptions specifically, certain types of tiles are not yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 - If you share a dashboard with a colleague outside of your tenant, they will not be able to subscribe to the dashboard or its associated report pages. So if you are aaron@xyz.com, you can share with anyone@ABC.com.  But anyone@ABC.com cannot subscribe to the shared content.    
 - Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
-- Power BI automatically pauses refresh on datasets associated with dashboards and reports that have not been visited in more than 2 months.  However, if you add a subscription to a dashboard or report, it will not be paused even if it goes unvisited.
+- Power BI automatically pauses refresh on datasets associated with dashboards and reports that have not been visited in more than 2 months.  However, if you add a subscription to a dashboard or report, it will not be paused even if it goes unvisited.    
+- If you are not receiving the subscription emails, ensure that your User Principal Name (UPN) is able to receive emails. [The Power BI team is working on relaxing this requirement](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), so stay tuned. 
 
 
 ## Next steps    

@@ -9,7 +9,7 @@
    editor=""
    tags=""
    qualityFocus="monitoring"
-   qualityDate="05/31/2017"/>
+   qualityDate="08/02/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/01/2017"
+   ms.date="08/09/2017"
    ms.author="asaxton"/>
 
 # Signing up for Power BI as an individual
@@ -28,7 +28,7 @@ Learn how to sign up for Power BI and begin using it for your personal report an
 
 Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations.
 
-This article will walk you through your options on how to sign up and begin using the Power BI service.
+This article will walk you through your options on how to sign up and begin using the Power BI service. For information on the differences between Power BI Free and Pro, see [Power BI Free vs Pro](powerbi-free-vs-pro.md).
 
 ## You have a few options
 
@@ -120,7 +120,6 @@ Then you can select **Start trial**.
 
 > **Notes**
 >
->- If you need more time to evaluate Power BI, you can request to extend your trial period for 60 more days.
 >- Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
 >- If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md).
 
@@ -150,6 +149,7 @@ In many cases, registering for Power BI can be achieved by following the simple 
 
 [Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
 [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
+[Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 

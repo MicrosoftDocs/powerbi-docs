@@ -17,26 +17,26 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/10/2017"
+   ms.date="07/17/2017"
    ms.author="maggies"/>
 
 # 10 tips for getting help 
 
-​​Sometimes people get frustrated using Power BI, ​​or struggle because they can't get ​​answers to their Power BI questions​ when they need them -- i.e. "just-in-time" help. ​
+Do you ever get frustrated using Power BI, ​​or struggle because you can't get ​​answers to your Power BI questions​ when you need them -- i.e. "just-in-time"? ​
 
-Does that describe you? Here are 10 tips that Power BI experts (including people who work on the product at Microsoft) commonly follow to find answers to their Power BI questions.
+Here are 10 tips that Power BI experts (including people who work on the product at Microsoft) commonly follow to find answers to their Power BI questions.
 
 ## 1 Use a search engine
-​Experts who need to find answers​​ for Power BI often use search engines for quick answers. Want to find a DAX formula for a common business calculation? You can find this on the internet. Bookmark where you find the best answers. Create a folder for yourself on tips and answers you find.
+​Experts who need answers​​ for Power BI often use search. Want to find a DAX formula for a common business calculation? You can find this on the internet. Bookmark where you find the best answers. Create a folder for yourself on tips and answers you find.
 ​
 ## 2 Check the Power BI documentation
 The Power BI team is continually updating and improving the [Power BI documentation](powerbi-landing-page.md) and training. You can find great content including recordings of webinars, white papers, guided learning, and links to blog posts on all the latest features.
 
 ## 3 Read the Power BI blog​ for the latest news
-The Power BI team does a great job of explaining all new features in their regular [Power BI blog posts](https://powerbi.microsoft.com/blog/). Find out what's new in everything from Power BI Desktop features to versions of the Power BI mobile apps. Make a habit of returning often to see what's new: You'll thank yourself for taking a few minutes each week to scan the blogs. You never know when you'll benefit from that bit of information you noticed months ago.
+The Power BI team explains all the new features in their regular [Power BI blog posts](https://powerbi.microsoft.com/blog/). Find out what's new in everything from Power BI Desktop to the Power BI mobile apps. Make a habit of returning often to see what's new: Take a few minutes each week to scan the blogs. You never know when you'll benefit from that bit of information you noticed months ago.
 
 ## 4 Try Twitter
-Lots of Power BI customers and experts are on Twitter. Ask your question in a tweet, and don't forget to add the hashtag #powerbi.
+Lots of Power BI customers and experts are on Twitter. Ask your question in a tweet. Add the hashtags #powerbi and #powerbihelp so the people who know will see your tweet.
 
 ## 5 Watch videos on YouTube
 

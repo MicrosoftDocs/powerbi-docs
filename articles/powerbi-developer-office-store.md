@@ -17,14 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/12/2017"
+   ms.date="09/05/2017"
    ms.author="asaxton"/>
 
 # Publish custom visuals to the Office store
 
 Learn how you can publish your custom visual to the Office store for others to discover and use.
 
-Once you have created your custom visual, you may want to publish it on the Office store for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools).
+Once you have created your custom visual, you may want to publish it on the Office store for others to discover and use. There is some preperation that needs to be done before you can do that. For more information on how to create a custom visual, see [Use developer tools to create custom visuals](powerbi-custom-visuals-getting-started-with-developer-tools.md).
 
 ![](media/powerbi-developer-office-store/powerbi-custom-visual-store.png)
 

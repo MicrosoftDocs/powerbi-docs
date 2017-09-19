@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="04/20/2017"
+ms.date="08/02/2017"
 ms.author="davidi"/>
 # Manage your data source - SQL Server
 
@@ -54,6 +54,8 @@ You can add a data source by either selecting a gateway and click **Add data sou
 You can then select the **Data Source Type** from the list.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings2.png)
+
+> [AZURE.NOTE] The gateway supports **SQL Server 2012 SP1** and subsequent versions.
 
 You will then want to fill in the information for the data source which includes the **Server** and the **Database**.  
 

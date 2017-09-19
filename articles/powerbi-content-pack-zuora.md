@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Zuora content pack"
-   description="Zuora content pack for Power BI"
+   pageTitle="Zuora for Power BI"
+   description="Zuora for Power BI"
    services="powerbi"
    documentationCenter=""
    authors="joeshoukry"
@@ -17,11 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/10/2017"
+   ms.date="08/29/2017"
    ms.author="yshoukry"/>
-# Zuora content pack for Power&nbsp;BI
 
-The Zuora content pack for Power BI allows you to visualize important revenue, billing, and subscription data. Use the default dashboard and reports to analyze usage trends, track billings and payments, and monitor recurring revenue, or customize them to meet your own unique dashboard and reporting needs. 
+# Zuora for Power BI
+
+The Zuora for Power BI allows you to visualize important revenue, billing, and subscription data. Use the default dashboard and reports to analyze usage trends, track billings and payments, and monitor recurring revenue, or customize them to meet your own unique dashboard and reporting needs. 
 
 Connect to the [Zuora content pack](https://app.powerbi.com/getdata/services/Zuora) for Power BI.
 

@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
-   manager="mblythe"
+   manager="erikre"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="07/28/2017"
    ms.author="davidi"/>
 
 # Frequently Asked Questions for Power BI for Germany Cloud customers
@@ -58,7 +58,6 @@ The following questions and answers provide important information for Power BI P
 
     The following service features are currently not available in Power BI service for Germany cloud:
     -	Publish to Web
-    -	Email notification functionality. However, you can still see the notifications within service once logged in.
     -	ArcGIS maps by Esri
     -	Power BI Embedded (separate metered ISV licensing, will be offered through [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) in the future)
 

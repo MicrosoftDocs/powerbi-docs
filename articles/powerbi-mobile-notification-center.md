@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/13/2017"
+   ms.date="07/17/2017"
    ms.author="maggies"/>
 
 # Get notifications in the Power BI mobile apps
@@ -37,23 +37,23 @@ Notifications bring information related to your Power BI experience right to you
   
 1.  When you receive notifications on your mobile device, by default Power BI makes a sound and shows a notification banner.
 
-    ![](media/powerbi-mobile-notification-center/power-bi-mobile-notification-banner.png)
+    ![Notification banner](media/powerbi-mobile-notification-center/power-bi-mobile-notification-banner.png)
 
     Or on an iPad:
 
-    ![](media/powerbi-mobile-notification-center/power-bi-ipad-notifications.png)
+    ![Notifications](media/powerbi-mobile-notification-center/power-bi-ipad-notifications.png)
 
     You can [change how Power BI notifies you](powerbi-mobile-notification-center.md#change-or-turn-off-notifications-on-your-mobile-device).
 
-2.  If you've received notifications, when you sign in to Power BI on your mobile device you see a yellow dot on main menu icon ![](media/powerbi-mobile-notification-center/power-bi-android-menu-notifications-icon.png) (Android) or on the **Notifications** icon. 
+2.  If you've received notifications, when you sign in to Power BI on your mobile device you see a yellow dot on global navigation button ![Notifications dot](media/powerbi-mobile-notification-center/power-bi-android-menu-notifications-icon.png) (Android) or on the **Notifications** icon. 
   
-    ![](media/powerbi-mobile-notification-center/power-bi-windows-10-notifications.png)
+    ![Notifications dot](media/powerbi-mobile-notification-center/power-bi-windows-10-notifications.png)
 
-3.  Select the Notifications icon ![](media/powerbi-mobile-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10).
+3.  Select the Notifications icon ![Notifications icon](media/powerbi-mobile-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10).
 
      Notifications are displayed with the most recent on top and unread messages highlighted. Notifications are retained for 90 days unless you delete them or reach the maximum limit of 100.
 
-    ![](media/powerbi-mobile-notification-center/power-bi-iphone-notifications-list.png)
+    ![iOS Notifications list](media/powerbi-mobile-notification-center/power-bi-iphone-notifications-list.png)
 
 4.  To dismiss a notification, tap and hold it and select **Dismiss**.
 
@@ -73,18 +73,18 @@ You can change how Power BI notifies you.
 
     **On an iPhone**
 
-    ![](media/powerbi-mobile-notification-center/power-bi-notifications-iphone-settings.png)
+    ![Choose Notifications](media/powerbi-mobile-notification-center/power-bi-notifications-iphone-settings.png)
 
     **On an Android phone**
 
-    ![](media/powerbi-mobile-notification-center/power-bi-notifications-android-settings.png)
+    ![Choose Notifications](media/powerbi-mobile-notification-center/power-bi-notifications-android-settings.png)
 
 
     **On a Windows 10 device**
 
-    ![](media/powerbi-mobile-notification-center/power-bi-notifications-windows10-settings.png)
+    ![Choose Notifications](media/powerbi-mobile-notification-center/power-bi-notifications-windows10-settings.png)
 
-### See also
+### Next steps
 - [Data alerts in Power BI service](powerbi-service-set-data-alerts.md)
 - [Set data alerts in the iPhone app (Power BI for iOS)](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
 - [Set data alerts in the Power BI mobile app for Windows 10](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md)

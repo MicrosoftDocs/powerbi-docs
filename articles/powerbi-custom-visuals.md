@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/24/2017"
+   ms.date="09/07/2017"
    ms.author="mihart"/>
 
 # Custom visualizations in Power BI
 
-The [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) contains custom visualizations created by members of the community and by Microsoft. These visualizations can be downloaded and added to Power BI Service reports and Power BI Desktop reports. All of these custom visuals have been approved by Microsoft and they behave just similar to the native visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc. To learn how to use these visualizations, see [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md).
+The [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) contains custom visualizations created by members of the community and by Microsoft. These visualizations can be downloaded and added to Power BI Service reports and Power BI Desktop reports. All of these custom visuals have been approved by Microsoft and they behave similar to the native visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc. To learn how to use these visualizations, see [Download and use custom visuals from the Office store](powerbi-custom-visuals-office-store.md).
 
 The custom visuals in the Office store fall into 2 categories: **Office store approved** and **Power BI certified**. *Office store approved* visuals can be run in browsers, reports, and dashboards.  *Power BI certified* visuals have passed rigorous testing, and are supported in additional scenarios, such as [email subscriptions](powerbi-service-subscribe-to-report.md), and [export to PowerPoint](powerbi-service-publish-to-powerpoint.md).
 

@@ -1,6 +1,6 @@
 ﻿<properties
-   pageTitle="Create custom Power BI answer cards for Cortana"
-   description="Create custom answer cards for Cortana in Power BI"
+   pageTitle="Create custom Power BI answer pages for Cortana"
+   description="Create custom answer pages for Cortana in Power BI"
    services="powerbi"
    documentationCenter=""
    authors="yaron"  
@@ -17,22 +17,33 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/19/2017"
+   ms.date="08/29/2017"
    ms.author="mihart"/>
 
 
-# Use Power BI to create a custom Answer Page for Cortana
+# Use Power BI service or Power BI Desktop to create a custom Answer Page for Cortana
 
-Use the full capabilities of Power BI to create special report pages, called *answer cards*  designed specifically to answer Cortana questions.
+Use the full capabilities of Power BI to create special report pages, called *Cortana answer pages* (and sometimes called "Cortana answer cards") designed specifically to answer Cortana questions.
 
 ![](media/powerbi-service-cortana-desktop-entity-cards/power-bi-cortana.png)
 
+> [AZURE.NOTE]
+> If you are trying out the Cortana and Power BI **dashboard** preview, you can skip the rest of this article. There are no setup requirements for Cortana to be able to search your Power BI dashboards.
+
 ## Before you begin
 
-Before you can begin using answer cards for Cortana, [enable Cortana for Power BI](powerbi-service-cortana-enable.md).  
+We have 4 documents that guide you through setting up and using Cortana for Power BI. If you haven't already, we recommend that you start by reading article 1. And article 2 is especially important because it describes some steps you'll need to take before you can begin using Cortana answer pages.
 
-## Create an answer card designed specifically for Cortana
-An *answer card* in a report is sized specifically for Cortana so that Cortana can display it in-screen as an answer to a question.  To create an answer card for Cortana:
+**Article 1** [Learn how Cortana and Power BI work together](powerbi-service-cortana-intro.md)
+
+**Article 2**: [For searching Power BI reports: Enable the Cortana - Power BI - Windows integration](powerbi-service-cortana-enable.md)
+
+**Article 3**: This article
+
+**Article 4**: [Troubleshoot issues](powerbi-service-cortana-troubleshoot.md)
+
+## Create a Cortana answer page designed specifically for Cortana
+A *Cortana answer page* in a report is sized specifically for Cortana so that Cortana can display it in-screen as an answer to a question.  To create an answer page for Cortana:
 
 1. We recommend starting with a [blank report page](powerbi-service-add-a-page-to-a-report.md).
 
@@ -50,32 +61,32 @@ An *answer card* in a report is sized specifically for Cortana so that Cortana c
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_cortana_names-newer.png)
 
-    >[AZURE.TIP] To improve results, avoid using words that are also column names.
+     >[AZURE.TIP] To improve results, avoid using words that are also column names.
 
 6. Optionally, if your report has page level filters, you can set **Require single selection**. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
 
->[AZURE.NOTE] You don't have to set **Require single selection** to ask Cortana to display a report with page level filters.  For example “show sales for Charlotte Lindseys” will display the answer page regardless of the Require Single Selection setting.
+     >[AZURE.NOTE] You don't have to set **Require single selection** to ask Cortana to display a report with page level filters.  For example “show sales for Charlotte Lindseys” will display the answer page regardless of the Require Single Selection setting.
 
-    ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection-new.png)
+     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection-new.png)
 
       For example, if you ask Cortana:
 
-      - "show sales by store name," this Answer Page will not appear because you did not include any of the items in the required page level filter.
+      - "show sales by store name," this answer page will not appear because you did not include any of the items in the required page level filter.
 
-      - "show sales for Cary Lindseys and Charlotte Lindseys," this Answer Page will not appear because you specified more than one item from the required page level filter.
+      - "show sales for Cary Lindseys and Charlotte Lindseys," this answer page will not appear because you specified more than one item from the required page level filter.
 
-      - "show sales for Charlotte Lindseys," this Answer Page will display.
+      - "show sales for Charlotte Lindseys," this answer page will display.
 
-      = "show sales" this Answer Page will not appear because you didn't include any of the items in the required page level filter.
+      = "show sales" this answer page will not appear because you didn't include any of the items in the required page level filter.
 
 
->[AZURE.IMPORTANT]  Before your answer card can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
+>[AZURE.IMPORTANT]  Before your Cortana answer page can be accessed by Cortana, you will need to [Enable the dataset for Cortana](powerbi-service-cortana-enable.md).
 
 ## How does Cortana order the results?
 
-Results with high scoring answers (such as a complete match of a specified page name) will appear first as a *best match* in Cortana. Multiple best matches can appear if there are multiple answer cards in Power BI. Medium or lower scoring answers, such as answers not based on the name of an answer card or a question with words not understood by Power BI, are listed as links below best matches in Cortana.
+Results with high scoring answers (such as a complete match of a specified page name) will appear first as a *best match* in Cortana. Multiple best matches can appear if there are multiple Cortana answer pages in Power BI. Medium or lower scoring answers, such as answers not based on the name of an answer page or a question with words not understood by Power BI, are listed as links below best matches in Cortana.
 
->[AZURE.NOTE] When a new dataset or custom answer card is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+>[AZURE.NOTE] When a new dataset or custom Cortana answer page is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
 
 
 ## See also

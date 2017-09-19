@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="02/28/2017"
+   ms.date="08/10/2017"
    ms.author="asaxton"/>
 
 # Step 3: Create a dataset in Power BI
@@ -238,4 +238,5 @@ Below is the [complete code listing](#code).
 [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 [Power BI REST API on APIARY](http://docs.powerbi.apiary.io/)  
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

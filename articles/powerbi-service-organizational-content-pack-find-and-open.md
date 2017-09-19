@@ -3,9 +3,9 @@
    description="Find and open an organizational content pack in Power BI"
    services="powerbi" 
    documentationCenter="" 
-   authors="ajayan" 
+   authors="maggiesMSFT" 
    manager="erikre" 
-   backup="maggiesMSFT"
+   backup="ajayan"
    editor=""
    tags=""
    qualityFocus="no"
@@ -17,19 +17,19 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/01/2017"
-   ms.author="ajayan"/>
+   ms.date="07/19/2017"
+   ms.author="maggies"/>
 
 # Find and connect to an organizational content pack  
 
 > [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 
-When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9) that you belong to, it appears in your  content pack library.  Browse or search the content pack library to find and open organizational content packs.
+When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9) that you belong to, it appears in AppSource.  Browse or search AppSource to find and open organizational content packs.
 
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to decide on the best option for your situation.
 
 ## Find an organizational content pack  
-[Power BI Pro](https://powerbi.microsoft.com/pricing) users all have an organizational content pack library that displays content packs shared with their entire organization, to distribution or security groups, and to Office 365 groups they belong to.  
+[Power BI Pro](https://powerbi.microsoft.com/pricing) users can all go to AppSource, which displays content packs shared to their entire organization, to distribution or security groups, and to Office 365 groups they belong to.  
 
 1.  From the left Navigation Pane, select **Get Data \> My Organization** \> **Get**.
 
@@ -53,9 +53,8 @@ If the content pack owner changes the content pack, and:
 
 - **You have made a copy** Your copy won't be updated. 
 
-## See also  
+## Next steps
+
 - [Intro to organizational content packs](powerbi-service-organizational-content-packs-introduction.md)  
-- [Get Started with Power BI](powerbi-service-get-started.md)  
-- [Power BI Basic Concepts](powerbi-service-basic-concepts.md)  
-- [Create a group in the Power BI service](powerbi-service-create-a-group-in-power-bi.md)  
+- [Create and distribute an app in Power BI](powerbi-service-create-apps.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
