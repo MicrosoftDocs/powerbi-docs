@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/11/2017"
+   ms.date="09/19/2017"
    ms.author="jaimeta"/>
 
 # Changelog for Power BI Report Server
@@ -25,6 +25,14 @@
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
 For detailed information about new features, see [What's new in Power BI Report Server](reportserver-whats-new.md).
+
+## June 2017 (Build 14.0.600.305)
+
+*Released: September 19, 2017*
+
+### Bug Fixes
+
+- Update to the latest [Bing Maps Web Control](https://msdn.microsoft.com/library/mt712542.aspx)
 
 ## June 2017 (Build 14.0.600.301)
 

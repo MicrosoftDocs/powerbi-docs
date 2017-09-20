@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/11/2017"
+   ms.date="09/14/2017"
    ms.author="davidi"/>
 
 # Use insights in Power BI Desktop (Preview)
@@ -53,6 +53,7 @@ You can use insights when your report is in reading or editing mode, making it v
 ## Considerations and limitations
 
 The following list is the collection of currently unsupported scenarios for **insights**:
+
 -   TopN filters
 -   Include/exclude filters
 -   Measure filters
@@ -63,6 +64,7 @@ The following list is the collection of currently unsupported scenarios for **in
 -   Non-numeric measures
 
 In addition, the following model types and data sources are currently not supported for insights:
+
 -   DirectQuery
 -   Live connect
 -   On-premises Reporting Services
