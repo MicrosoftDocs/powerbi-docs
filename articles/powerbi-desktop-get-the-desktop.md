@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="09/25/2017"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
@@ -63,7 +63,8 @@ You can also get **Power BI Desktop** from the Windows Store, using the followin
 
 There are a few advantages to getting **Power BI Desktop** from the Windows Store:
 
--    **Automatic updates** - Windows downloads the latest version automatically in the background as soon as it's available, so your version will always be up to date
+-    **Automatic updates** - Windows downloads the latest version automatically in the background as soon as it's available, so your version will always be up to date.
+-    **Smaller downloads** - The **Windows Store** ensures only components that have changed in each update are downloaded to your machine, resulting in smaller downloads for each update.
 -    **Admin priviledge is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Windows Store, admin priviledge is *not* required.
 -    **IT roll-out enabled** - the **Windows Store** version can more easily be deployed, or *rolled-out*, to everyone in your organization, and can make **Power BI Desktop** available through the **Microsoft Store for Business**.
 -    **Language detection** - the **Windows Store** version includes all supported languages, and checks which languages is being used on the computer each time it is launched. This also affects the localization of models created in **Power BI Desktop**; for example, built-in date hierarchies will match the language that **Power BI Desktop** was using when the .pbix file was created.

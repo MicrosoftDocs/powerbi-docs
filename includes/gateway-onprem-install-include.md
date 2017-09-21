@@ -8,9 +8,16 @@ For Power BI, the first choice you have to make is the mode of the gateway.
 
 -	**On-premises data gateway:** Multiple users can share and reuse a gateway in this mode. This gateway can be used by Power BI, PowerApps, Flow or Logic Apps. For Power BI, this includes support for both schedule refresh and DirectQuery
 
--	**Personal:** This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh. This will launch the installation of the personal gateway.
+-	**Personal:** This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh. This selection launchs installation of the personal gateway.
 
-> [AZURE.NOTE] Regardless of which mode of gateway you select, you can only install one gateway on a computer.
+There are a few things to note about insalling either mode of the gateway:
+
+-   both gateways require 64-bit Windows operating systems
+-   gateways can’t be installed on a domain controller
+-   you can install up to two on-premises data gateways on the same computer, one running in each mode (personal and standard). 
+-   you cannot have more than one gateway running in the same mode on the same computer.
+-   you can install multiple on-premises data gateways on different computers, and manage them all from the same Power BI gateway management interface (excluding personal, see the following bullet point)
+-	You can only have one Personal mode gateway running for each Power BI user. If you install another Personal mode gateway for the same user, even on a different computer, the most recent installation replaces the existing previous installation.
 
 ![on-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
 

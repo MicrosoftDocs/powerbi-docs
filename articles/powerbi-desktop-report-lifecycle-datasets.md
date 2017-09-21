@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Connect to datasets in the Power BI service from Power BI Desktop (Preview)"
+   pageTitle="Connect to datasets in the Power BI service from Power BI Desktop"
    description="Use a common dataset for multiple Power BI Desktop reports, and manage your report lifecycle"
    services="powerbi"
    documentationCenter=""
@@ -17,24 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="09/25/2017"
    ms.author="davidi"/>
 
-# Connect to datasets in the Power BI service from Power BI Desktop (Preview)
+# Connect to datasets in the Power BI service from Power BI Desktop
 
-Starting with the April 2017 release of **Power BI Desktop**, you can establish a live connection to a shared dataset in the Power BI service, and create many different reports from the same dataset. This means you can create your perfect data model in Power BI Desktop, publish it to the Power BI service, then you and others can create multiple different reports (in separate .pbix files) from that same, common data model. This features is called **Power BI service Live connection**.
+You can establish a live connection to a shared dataset in the Power BI service, and create many different reports from the same dataset. This means you can create your perfect data model in Power BI Desktop, publish it to the Power BI service, then you and others can create multiple different reports (in separate .pbix files) from that same, common data model. This features is called **Power BI service Live connection**.
 
 ![](media/powerbi-desktop-report-lifecycle-datasets/report-lifecycle_01.png)
 
 There are all sorts of benefits of this feature, including best practices, which we’ll discuss during this article. There are also a few considerations and limitations, so please make sure you read through those - they're found at the end of this article.
 
-### Enable the Power BI service live connection preview
 
-You can try the new **Power BI service live connection** feature beginning with the **April 2017** release of **Power BI Desktop**. To enable this preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Power BI service Live Connection**. You'll need to restart Power BI Desktop after you make the selection.
-
-![](media/powerbi-desktop-report-lifecycle-datasets/report-lifecycle_02.png)
-
-You'll need to restart **Power BI Desktop** after you make the selection.
 
 ## Using a Power BI service live connection for report lifecycle management
 
@@ -115,7 +109,7 @@ Now you (and others) can create and share custom reports and share them, all fro
 
 ## Limitations and considerations
 
-In this preview release of the **Power BI service live connection**, there are a few limitations and considerations to keep in mind.
+When using the **Power BI service live connection**, there are a few limitations and considerations to keep in mind.
 
 -   Only users who are part of the same **Power BI service** workspace can connect to a published dataset using the **Power BI service live connection**. Users can (and often do) belong to more than one workspace.
 -   Since this is a live connection, left-navigation and modeling are disabled, similar to the behavior when connected to **SQL Server Analysis Services**.

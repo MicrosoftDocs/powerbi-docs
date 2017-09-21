@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2017"
+   ms.date="09/25/2017"
    ms.author="davidi"/>
 
 # Use DirectQuery in Power BI Desktop  

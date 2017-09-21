@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="09/25/2017"
    ms.author="davidi"/>
 
 # How to Use Map Visualizations
@@ -39,14 +39,14 @@ To create a bubble map, select the **Map** option in the **Visualization** pane.
 
 ![](media/powerbi-learning-3-5-create-map-visualizations/3-5_2.png)
 
-Power BI is flexible about what type of location value it accepts, from more general details like city name or airport code, down to very specific latitude and longitude data. Add a field to the **Values** bucket to change the size of the bubble accordingly for each map location.
+Power BI is flexible about what type of location value it accepts, from more general details like city name or airport code, down to very specific latitude and longitude data. Add a field to the **Size** bucket to change the size of the bubble accordingly for each map location.
 
 ![](media/powerbi-learning-3-5-create-map-visualizations/3-5_3.png)
 
 
 ## Create shape maps
 
-To create a shape map, select the **Filled Map** option in the Visualization pane. As with bubble maps, you must add some kind of value to the Location bucket to use this visual. Add a field to the Values bucket to change the intensity of the fill color accordingly.
+To create a shape map, select the **Filled Map** option in the Visualization pane. As with bubble maps, you must add some kind of value to the Location bucket to use this visual. Add a field to the Size bucket to change the intensity of the fill color accordingly.
 
 ![](media/powerbi-learning-3-5-create-map-visualizations/3-5_4.png)
 

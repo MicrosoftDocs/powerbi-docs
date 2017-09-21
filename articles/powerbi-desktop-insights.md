@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2017"
+   ms.date="09/25/2017"
    ms.author="davidi"/>
 
 # Use insights in Power BI Desktop (Preview)
@@ -51,6 +51,8 @@ And importantly, the **+** button at the top of the visual lets you add the sele
 You can use insights when your report is in reading or editing mode, making it versatile for both analyzing data, and for creating visuals you can easily add to your reports.
 
 ## Considerations and limitations
+
+Since insights are based on the change from the previous data point, they aren't available when you select the first data point in a visual. 
 
 The following list is the collection of currently unsupported scenarios for **insights**:
 
