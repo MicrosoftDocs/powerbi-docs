@@ -38,9 +38,9 @@ All the other features of Power BI reports still work in phone-optimized reports
 *   [Reports on Android phones](powerbi-mobile-reports-in-the-android-app.md).
 
 
-## Filter the report page
+## Filter the report page on an iPhone
 
-If the report has filters defined, then you can use those filters in the phone-optimized report. 
+If a phone-optimized report has filters defined, when you view the report on an iPhone you can use those filters. 
 
 1. Tap the filter icon ![Phone filter icon](media/powerbi-mobile-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page. 
 2. Use basic or advanced filtering to see the results you're interested in.
