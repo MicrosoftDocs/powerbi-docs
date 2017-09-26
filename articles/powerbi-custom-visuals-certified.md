@@ -77,7 +77,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |[KPI Indicator](https://store.office.com/kpi-indicator-WA104380832.aspx)   | |
 |Liquid Fill Gauge - coming soon  | [Video](https://youtu.be/wQ51TTqIZc4)  |
 |[Linear gauge by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821?src=office&tab=Overview)  | [Video](https://youtu.be/AOlsFYkfkcw)  |
-|[Long text viewer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380826)  |   |
+|Long text viewer - coming soon  |   |
 |[Play Axis (Dynamic Slicer)](https://store.office.com/play-axis-dynamic-slicer-WA104380981.aspx) |   |
 |[Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?src=office&tab=Overview)  | [Video](https://youtu.be/IvfIP3E6-1Q)  |
 |[Radar chart](https://store.office.com/radar-chart-WA104380771.aspx) |   |
