@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/25/2017"
+   ms.date="09/26/2017"
    ms.author="asaxton"/>
 
 # Manage capacities within Power BI Premium and Power BI Embedded
@@ -42,7 +42,7 @@ For more information, see [What is Power BI Premium?](powerbi-premium.md).
 To take advantage of dedicated capacity, you will need to purchase a subscription for Power BI Premium within the Office 365 admin center or create a Power BI Embedded resource within the Microsoft Azure portal. For more information, see the following:
 
 * **Power BI Premium:** [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)
-* **Power BI Embedded:** [Create Power BI Embedded capacity](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity)
+* **Power BI Embedded:** Coming soon.
 
 ## Capacity admins
 

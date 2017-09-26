@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/25/2017"
+   ms.date="09/26/2017"
    ms.author="asaxton"/>
 
 # How to find your report server product key
