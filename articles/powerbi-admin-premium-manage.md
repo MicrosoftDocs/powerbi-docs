@@ -44,13 +44,15 @@ To take advantage of dedicated capacity, you will need to purchase a subscriptio
 * **Power BI Premium:** [How to purchase Power BI Premium](powerbi-admin-premium-purchase.md)
 * **Power BI Embedded:** Coming soon.
 
+When you purchase Power BI Premium SKUs, your tenant will receive the corresponding number of v-cores for use in running capacities. For example, purchasing a Power BI Premium P3 SKU provides the tenant with 32 v-cores.
+
 ## Capacity admins
 
 > [AZURE.NOTE] Capacity admins, for Power BI Embedded capacity, are defined within the Microsoft Azure portal.
 
 When you are assigned as a capacity admin to a capacity, you have full control over the capacity and its administrative features. From the Power BI admin portal, you can add more capacity admins (Power BI Premium only) or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics on a capacity.
 
-Each capacity has its own admins. Defining a capacity admin to one capacity does not give them access to all capacities within your organization. Capacity admins do not have access to all Power BI admin areas by default such as usage metrics, audit logs or tenant settings. Only Global admins or Power BI service administrators have access to those items.
+Each capacity has its own admins. Defining a capacity admin to one capacity does not give them access to all capacities within your organization. Capacity admins do not have access to all Power BI admin areas by default such as usage metrics, audit logs or tenant settings. Capacities admins also do not have permissions to set up new capacities or change the SKU of existing capacities. Only Global admins or Power BI service administrators have access to those items.
 
 All Office 365 Global admins and Power BI admins are automatically capacity admins of both Power BI Premium capacity and Power BI Embedded capacity.
 
@@ -64,7 +66,7 @@ Selecting **Capacity settings** will take you to the capacity management screen 
 
 ### Setting up a new capacity (Power BI Premium)
 
-The number of v-cores will reflect the amount used and the amount available to create capacities with.
+The number of v-cores will reflect the amount used and the amount available to create capacities with. The amount of v-cores available to your organization is based on the Premium SKUs that you have purchased. For example, purchasing a P3 and a P2 would result in 48 available cores – 32 from the P3 and 16 from the P2.
 
 ![Used and available v-cores for Power BI Premium](media/powerbi-admin-premium-manage/admin-portal-v-cores.png)
 
@@ -104,7 +106,7 @@ Power BI admins and Office 365 Global admins change Power BI Premium capacity si
 
 ![Change Power BI Premium capacity size](media/powerbi-admin-premium-manage/change-capacity-size.png)
 
-The **Change capacity size** screen lets you upgrade or downgrade your capacity size if you have the available resources.
+The **Change capacity size** screen lets you upgrade or downgrade your capacity size if you have the available resources. Administrators are free to create, resize and delete nodes, so long as they have the requisite number of v-cores. 
 
 P SKUs cannot be down graded to EM SKUs. You can hover over disabled options which provide an explanation.
 
