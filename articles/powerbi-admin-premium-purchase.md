@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/02/2017"
+   ms.date="09/25/2017"
    ms.author="asaxton"/>
 
 # How to purchase Power BI Premium
@@ -92,9 +92,9 @@ When you are in the **Premium settings** section of the Power BI Admin portal, i
 
     > [AZURE.IMPORTANT] Selecting **Submit** will cause charges to be made to the credit card on file.
 
-The **Purchase services** page will then indicate the number of instances you have. Within the Power BI admin portal, under **Premium settings**, you will also see a capacity listed for each instance you have purchased.
+The **Purchase services** page will then indicate the number of instances you have. Within the Power BI admin portal, under **Capacity settings**, the available v-cores reflects the new capacity purchased.
 
-![](media/powerbi-admin-premium-purchase/premium-capacities.png)
+![Available v-cores for Power BI Premium capacity](media/powerbi-admin-premium-purchase/premium-capacities.png)
 
 You can now manage this capacity within the Power BI admin center. For more information, see [Manage Power BI Premium](powerbi-admin-premium-manage.md).
 
