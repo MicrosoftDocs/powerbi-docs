@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/25/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 # Getting a custom visual *certified*
 
@@ -79,7 +79,8 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |[Linear gauge by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821?src=office&tab=Overview)  | [Video](https://youtu.be/AOlsFYkfkcw)  |
 |Long text viewer - coming soon  |   |
 |[Play Axis (Dynamic Slicer)](https://store.office.com/play-axis-dynamic-slicer-WA104380981.aspx) |   |
-|[Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?src=office&tab=Overview)  | [Video](https://youtu.be/IvfIP3E6-1Q)  |
+|[Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083)  | [Video](https://youtu.be/IvfIP3E6-1Q)  |
+|[Pulse chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381006?src=office&tab=Overview) | [Video](https://www.youtube.com/watch?v=DQWdcQtjDVw)  |
 |[Radar chart](https://store.office.com/radar-chart-WA104380771.aspx) |   |
 |[Sankey chart](https://store.office.com/app.aspx?assetid=WA104380777.aspx)  | [Video](https://youtu.be/WWP9wVUHGaA) |
 |[Scroller](https://store.office.com/scroller-WA104381018.aspx) |[Video](https://youtu.be/uhRFQF2cGSY)  |

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 
 # ArcGIS maps in Power BI service and Power BI Desktop by Esri
@@ -27,8 +27,7 @@ This tutorial is written from the point of view of a person creating an ArcGIS m
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
-> **NOTE**:
-> While you cannot create an ArcGIS maps on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](powerbi-visualizations-arcgis.md).
+ While you cannot create an ArcGIS maps on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](powerbi-visualizations-arcgis.md).
 
 >**TIP**: GIS stands for Geographic Information Science.
 
@@ -56,7 +55,7 @@ ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com). Your use o
 ## Enable ArcGIS map
 ArcGIS maps are currently available in Power BI service, Power BI Desktop, and Power BI mobile. This article provides instructions for the service and for Desktop.
 
-### Enable the ArcGIS map ***in Power BI service***
+### Enable the ArcGIS map ***in Power BI service (app.powerbi.com)***
 
 This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). To enable **ArcGIS Maps for Power BI**:
 
@@ -78,25 +77,6 @@ This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-t
 
 <br/>
 
-### Enable the ArcGIS map preview ***in Power BI Desktop***
-
-The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutorial uses the [Retail Analysis sample](powerbi-sample-retail-analysis-take-a-tour.md). To follow along, [download the Excel samples](powerbi-sample-datasets.md).  Then load the Retail Analysis sample into Desktop by selecting **File > Import > Excel workbook contents**.
-
-1. Select **File > Options and Settings > Options > Preview Features**.
-
-2. Select the **ArcGIS Maps for Power BI** checkbox. You'll need to restart Power BI after you make the selection.
-
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-preview-dialog2.png)
-
-3. Open a report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md) and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
-
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane2.png)
-
-4.  Power BI adds an empty ArcGIS map template to the report canvas.
-
-    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2new.png)
-
-<br/>
 
 ## Create an ArcGIS map visual
 Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample](powerbi-sample-datasets.md).
@@ -356,7 +336,7 @@ ArcGIS Maps for Power BI is available in the following services and applications
 </tr>
 </table>
 
-In services or applications where ArcGIS Maps for Power BI (Preview) is not available, the visualization will show as an empty visual with the Power BI logo.
+In services or applications where ArcGIS Maps for Power BI is not available, the visualization will show as an empty visual with the Power BI logo.
 
 When geocoding street addresses, only the first 1500 addresses are geocoded. Geocoding place names or countries is not subject to the 1500 address limit.
 
@@ -364,7 +344,7 @@ When geocoding street addresses, only the first 1500 addresses are geocoded. Geo
 
 **Is there any charge for using ArcGIS Maps for Power BI?**
 
-The ArcGIS Map for Power BI (Preview) is available to all Power BI users at no additional cost. It is a component provided by **Esri** and your use is subject to the terms and privacy policy provided by **Esri** as noted earlier in this article.
+The ArcGIS Map for Power BI is available to all Power BI users at no additional cost. It is a component provided by **Esri** and your use is subject to the terms and privacy policy provided by **Esri** as noted earlier in this article.
 
 **I'm getting an error message in Power BI Desktop about my cache being full**
 

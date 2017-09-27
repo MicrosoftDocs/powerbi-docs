@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/08/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 
 # Usage metrics for dashboards and reports
@@ -179,7 +179,7 @@ Q:    I can't run usage metrics on a dashboard or report
 A:    You can only see usage metrics for content you own or have permissions to edit.
 
 Q:    Will usage metrics capture views from embedded dashboards and reports?     
-A:    Usage metrics will track usage of reports that are embedded in SharePoint online. They will also track embedding of dashboards and reports via both the [user owns data](powerbi-developer-integrate-report.md ) and [app owns data](powerbi-developer-embed-sample-app-owns-data.md) workflow. Usage metrics will not track usage of reports embedded via [publish to web](powerbi-service-publish-to-web.md).
+A:    Usage metrics currently does not support capturing usage for embedded dashboards and reports, including the [user owns data](powerbi-developer-integrate-report.md ) flow, the  [app owns data](powerbi-developer-embed-sample-app-owns-data.md) flow and the [publish to web](powerbi-service-publish-to-web.md) flow. In those cases, we recommend using existing web analytics platforms to track usage for the hosting app or portal.
 
 Q:    I can't run usage metrics on any content at all.    
 A1:    Admins can turn off this feature for their organization.  Contact your Admin to see if this is the case.    
