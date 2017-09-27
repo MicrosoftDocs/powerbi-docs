@@ -27,6 +27,9 @@
 
 If you've been using Power BI service for a while now, you've no doubt noticed that we've made significant changes to the user interface.  Most of these changes effect how your content (dashboards, reports, datasets) is organized and the paths (clicks) you take to perform tasks with that content. 
 
+
+![](media/powerbi-service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
+
 ##    How do I...
 For those of you who are familiar with the previous Power BI service interface, this reference guide will help you figure out how to get things done in the new interface. We realize it may be disorienting at first, but believe with use, you'll discover many time-saving benefits to the new layout. 
 
@@ -53,8 +56,7 @@ Quick reference guide
 |View a list of all the dashboards, reports, and datasets that you own  |  Workspaces > My workspace    |      
  
 
-![](media/powerbi-service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
-
+##    Why did we change the navigation experience for Power BI service?
 - streamlined the lists for dashboards, reports, workbooks, and datasets    
 - added quick access flyout menus for favorites, most-recent, and workspace selection    
 - added a way to identify related content for dashboards, reports, and datasets    
