@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/22/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 
 # Funnel charts (Tutorial)
@@ -69,7 +69,7 @@ Watch this video to see Will create a Funnel chart using the Sales and Marketing
 
 Now create your own funnel chart that shows the number of opportunities we have in each of our sales stages.
 
-These instructions use the Opportunity Tracking Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
+These instructions use the Opportunity Analysis Sample. To follow along, [download the sample](powerbi-sample-downloads.md), sign in to Power BI and select **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
 
 1. Start on a [blank report page ](powerbi-service-add-a-page-to-a-report.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **SalesStage** \> **Sales Stage** field.  
 
@@ -103,11 +103,9 @@ For information about using the Filters pane, see [Add a filter to a report](pow
 
 Highlighting a bar in a funnel cross-filters the other visualizations on the report page... and vice versa. To follow along, add a few more visuals to the report page that contains the funnel chart.
 
-1.  On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. 
+1.  On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
 
     ![](media/powerbi-service-tutorial-funnel-charts/FunnelChartNoOwl.gif)
-
-    >[AZURE.TIP]Use CTRL to multi-select. 
 
 3. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md)
 
@@ -123,9 +121,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 
     Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
 
-## See also
-
-[Add a visualization to a report](powerbi-custom-visuals-add-to-report.md)
+## Next steps
 
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/18/2017"
+   ms.date="09/26/2017"
    ms.author="mihart"/>
 
 
@@ -26,7 +26,9 @@
 
 ![](media/powerbi-service-create-a-dashboard-copy/power-bi-dashboard.png)
 
-There are many different reasons to make a copy of your dashboard.  Maybe you want to make changes and test its performance against the original; or create slightly different versions to distribute by colleague, region, or team. Perhaps a colleague admires your dashboard design and wants to use it for reporting out to her managers. Another reason would be if you have a new database with the same data structure and data types and want to reuse the dashboard you've already created -- this too can be done but would require some work in Power BI Desktop.
+There are many different reasons to make a copy of a dashboard you own. The copy will be saved to the active (same) workspace. Maybe you want to make changes and test its performance against the original; or create slightly different versions to distribute by colleague, region, or team. Perhaps a colleague admires your dashboard design and wants to use it for reporting out to her managers. Another reason would be if you have a new database with the same data structure and data types and want to reuse the dashboard you've already created -- this too can be done but would require some work in Power BI Desktop. 
+
+Dashboards that have been shared with you as an app cannot be duplicated.
 
 1.    Open the dashboard.
 
@@ -46,7 +48,6 @@ There are many different reasons to make a copy of your dashboard.  Maybe you wa
 
 -    [Edit, resize and move tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) 
 - [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md) 
-- [Set data alerts](powerbi-service-set-data-alerts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

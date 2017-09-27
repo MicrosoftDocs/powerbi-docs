@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 
 # Export a report from Power BI service to Desktop (Preview)
-In Power BI Desktop, you can export (also referred to as *download*) a report to Power BI service by saving the report and selecting **Publish**. With this preview, you can now export in the other direction as well, and download a report from Power BI service to Desktop. The file extension for files being exported, in either direction, is *.pbix*.
+In Power BI Desktop, you can export (also referred to as *download*) a report to Power BI service by saving the report and selecting **Publish**. You can also export in the other direction as well, and download a report from Power BI service to Desktop. The file extension for files being exported, in either direction, is *.pbix*.
 
 There are a few limitations and considerations to keep in mind, which are discussed later in this article.
 
@@ -37,18 +37,21 @@ To download the .pbix file, follow these steps:
 
     > [AZURE.NOTE] The report must have been [created using Power BI Desktop](powerbi-learning-4-1-publish-reports.md) after November 23, 2016 - or updated since then - to be able to download the report. If it hasn't, the *Download Report* menu option in Power BI service is grayed out.
 
-3. While the .pbix file is being created, a status banner displays the progress. When the file is ready, you'll be asked to save the .pbix file. The name of the file matches the title of the report.
+3. While the .pbix file is being created, a status banner displays the progress. When the file is ready, you'll be asked to open or save the .pbix file. The name of the file matches the title of the report.
 
-    ![](media/powerbi-service-export-to-pbix/power-bi-save.png)
+    ![](media/powerbi-service-export-to-pbix/power-bi-save-pbix.png)
 
-4.  Open the .pbix file in **Power BI Desktop** and work on it however you would like. From Desktop, select **File > Open** and choose the .pbix file you just exported. A Warning message lets you know that some features available in the Power BI service report may not be available in Desktop.
+    You now have the option of opening the .pbix file in either Power BI service (app.powerbi.com) or Power BI Desktop.     
+
+4. To immediately open the report in Desktop, select **Open**.  If you haven't already, [install Power BI Desktop](powerbi-desktop-get-the-desktop.md).
+
+    When you open the report in Desktop, you may see a warning message letting you know that some features available in the Power BI service report may not be available in Desktop.
 
     ![](media/powerbi-service-export-to-pbix/power-bi-export-to-pbix_2.png)
 
+5. To open the report in Power BI service, select **Save** and then use **Get Data** to navigate to the location where you saved the .pbix file.
 
-
->[AZURE.TIP] There are several different ways you can [get Power BI Desktop](powerbi-desktop-get-the-desktop.md).
-
+    ![](media/powerbi-service-export-to-pbix/power-bi-get-data.png)
 
 ## Considerations and troubleshooting
 
@@ -70,7 +73,6 @@ View the **Guy in a Cube** one-minute video about this feature:
 
 Also, here are some additional articles that can help you learn to use **Power BI service**:
 
--   [Dashboards in Power BI](powerbi-service-dashboards.md)
 -   [Reports in Power BI](powerbi-service-reports.md)
 -   [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

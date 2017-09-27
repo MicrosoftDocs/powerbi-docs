@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/02/2017"
+   ms.date="09/26/2017"
    ms.author="mihart"/>
 
 # Create a big number tile from Q&A  
@@ -62,21 +62,7 @@ The question box is the easiest way to make a number tile like this.
     
 
 ## Considerations and troubleshooting
-If you do not see a question box at all, it may be that the dataset owner has not enabled Q&A for this dataset.  
-
-##  Enable Q&A
-
-1.  In the upper-right corner of Power BI, select the cog icon ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-cog.png) and choose **Settings**.
-
-    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/powerbi-settings.png)
-
-2.  Select **datasets** and choose the dataset to enable for Q&A.
-
-    ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-settings-new.png)
-
-3. Expand **Q&A and Cortana**, select the checkbox for **Turn on Q&A for this dataset** and choose **Apply**.
-
-    ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+If you do not see a question box at all, contact your system or tenant administrator.
 
 ## Next steps  
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)  

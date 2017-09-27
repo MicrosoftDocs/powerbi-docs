@@ -14,13 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="09/25/2017"
    ms.author="mihart"/>
 
 # How to use Power BI Q&A  
 
 ## Ask questions of your data using natural language  
-The Q&A question box is where you type your question using natural language. Q&A recognizes the words you type and figures out where (which dataset) to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
+Start on a dashboard. The Q&A question box is where you type your question using natural language. Q&A recognizes the words you type and figures out where (which dataset) to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
 
 ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna.png)
 
@@ -57,7 +57,7 @@ Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, 
     >[AZURE.TIP] 
 	>So be careful, if you only have one tile from *datasetA* and you remove it from your dashboard, Q&A will no longer have access to *datasetA*.
 
-5.  When you're happy with the result, [pin the visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) by selecting the pin icon in the top right corner.
+5.  When you're happy with the result, [pin the visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) by selecting the pin icon in the top right corner. If the dashboard has been shared with you, or is part of an app, you won't be able to pin.
 
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_finish-typing-question.jpg)
 
