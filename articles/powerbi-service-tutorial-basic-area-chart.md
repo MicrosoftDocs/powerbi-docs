@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 
 # Basic Area chart (Tutorial)
@@ -25,6 +25,8 @@
 The basic area chart (aka layered area chart.) is based on the line chart. The area between axis and line is filled with colors to indicate volume. 
 
 Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
+
+![](media/powerbi-service-tutorial-basic-area-chart/powerbi-area-chartnew.png)
 
 ## When to use a basic area chart  
 Basic area charts are a great choice:
@@ -44,7 +46,7 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retai
 
 4.  Create an area chart that displays this year's sales and last year's sales by month.
 
-	a.  From the **Fields pane**, select **Sales \> Last Year Sales**, ﻿and **This Year Sales > Value**.
+	a.  From the **Fields pane**, select **Sales \> Last Year Sales**, and **This Year Sales > Value**.
 
 	b.  Convert the chart to a basic area chart.    
     ![](media/powerbi-service-tutorial-basic-area-chart/convertChart.png)
@@ -59,7 +61,7 @@ For information about using the Filters pane, see [Add a filter to a report](po
 
 To select an area, click inside that area or along the top line.  Basic area charts do not cross-filter the other visualizations on the report page. However, area charts are a target for cross-filtering triggered by other visualizations on the report page.
 
-## Tips and tricks for Basic Area charts  
+## Considerations and troubleshooting  
 -   Basic area charts are not effective for comparing the values due to the occlusion on the layered areas. Power BI uses transparency to indicate the overlap of areas. However, it only works well with two or three different areas. When you need to compare trend to more than three measures, try using line charts. When you need to compare volume to more than three measures, try using treemap.
 
 ## See also  

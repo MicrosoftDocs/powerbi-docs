@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 
 # Scatter charts and bubble charts in Power BI (Tutorial)
@@ -26,6 +26,8 @@
 A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
 A bubble chart replaces the data points with bubbles, with the bubble *size* representing an additional dimension of the data.
+
+![](media/powerbi-service-tutorial-scatter/power-bi-bubble-chart.png)
 
 
 ## When to use a scatter chart or bubble chart
@@ -87,7 +89,7 @@ We now have a scatter chart that plots Total Sales Variance % along the Y axis, 
 
 3. Optionally, [format the visualization colors, labels, titles, background, and more](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md).
 
-## Troubleshooting
+## Considerations and Troubleshooting
 
 ### **Your scatter chart has only one data point**  
 
@@ -96,25 +98,20 @@ Does your scatter chart have only one data point that aggregates all the values 
 ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot1.png)
 
 Add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot.  
+Like a simple row number or ID field:
 
-   -  Like a simple row number or ID field:
+![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
 
-      ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
+Or if you don’t have that in your data, create a field that concatenates your X and Y values together into something unique per point:
 
-   -  Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point:
+![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
 
-    ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](powerbi-desktop-add-custom-column.md) to your dataset.  Then add this column to the **Details** area of your visualization.
 
-   Use the Query Editor to add an Index Column to your dataset.  Then add this column to the **Details** area of your visualization.
 
-  For more information, see [Aggregates in reports](powerbi-service-aggregates.md).
-
-## See also  
- [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
+## Next steps  
 
  [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
-
- [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 
 [Try it out -- it's free!](https://powerbi.com/)  
 

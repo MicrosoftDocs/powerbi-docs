@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="01/31/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 
 # Doughnut charts in Power BI (Tutorial)
@@ -46,7 +46,7 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \>
 
         ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
 
-## Tips and Tricks for doughnut charts
+## Considerations and troubleshooting
 
 -   The sum of the doughnut chart values must add up to 100%.
 
@@ -54,7 +54,7 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \>
 
 -   Doughnut charts are best used to compare a particular section to the whole, rather than comparing individual sections with each other. 
 
-## See also
+## Next steps
 
 [Reports in Power BI](powerbi-service-reports.md)
 

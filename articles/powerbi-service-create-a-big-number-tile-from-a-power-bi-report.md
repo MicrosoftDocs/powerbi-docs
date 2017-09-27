@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="09/26/2017"
    ms.author="mihart"/>
 # Create a big number tile from a Power BI report
 
@@ -29,23 +29,23 @@ Sometimes a single number is the most important thing you want to track in your 
 
 2.  Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
 
-4.  In the report, find a page with some blank space, or [add a new page to the report](powerbi-service-add-a-page-to-a-report.md).
+3.  In the report, find a page with some blank space, or [add a new page to the report](powerbi-service-add-a-page-to-a-report.md).
 
-5.  In the Fields list, select the number field you want to display.
+4.  In the Fields list, select the number field you want to display.
 
     In this example, **Open Store count** in the **Store** table. Power BI creates a column chart with the one number.
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_RptNumberTileChart.png)
 
-6.  In the Visualizations pane, select the Card icon.
+5.  In the Visualizations pane, select the Card icon.
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_ChangeChartCard.png)
 
-7.  Select the pin icon ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_PinTile.png) in the upper-right corner to add the tile to the dashboard. 
+6.  Hover over the card and select the pin icon ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_PinTile.png) to add the tile to the dashboard. 
 
-    ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_DashNumberTileReport.png)
+    ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/power-bi-pin-icon.png)
 
-8.  Pin the tile to an existing dashboard or to a new dashboard. 
+7.  Pin the tile to an existing dashboard or to a new dashboard. 
 
     -   Existing dashboard: select the name of the dashboard from the dropdown.
 
@@ -55,20 +55,18 @@ Sometimes a single number is the most important thing you want to track in your 
 
     A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
 
-    ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/pinSuccess.png)
+    ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/power-bi-pin-success-message.png)
 
-10. From the navigation pane, select the dashboard with the new tile. There, you can [edit and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
+10. Select **Go to dashboard**. There, you can [edit and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
 
 
 
-## See also
+## Next steps
 
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-
-[](powerbi-service-dashboards.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

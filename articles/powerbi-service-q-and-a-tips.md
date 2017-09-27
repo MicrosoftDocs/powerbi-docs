@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="03/14/2017"
+   ms.date="09/24/2017"
    ms.author="jastru"/>
 
 # Tips for asking questions in Power BI Q&A
@@ -104,7 +104,7 @@ One of Power BI's most powerful features is the ability to combine data from dif
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.
 
 
-## See also
+## Next steps
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
