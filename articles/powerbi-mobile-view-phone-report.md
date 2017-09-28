@@ -17,18 +17,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2017"
+   ms.date="09/22/2017"
    ms.author="maggies"/>
 
 # View reports optimized for your phone 
 
 When you create a Power BI report in Power BI Desktop, you can also create a version of that [report optimized for viewing in the Power BI app on a phone](powerbi-desktop-create-phone-report.md).
 
-Then, when you open a Power BI report on a phone, Power BI detects if the report has been optimized for phones and automatically opens the optimized report.
+Then, when you open a Power BI report on a phone, Power BI detects if the report has been optimized for phones and automatically opens the optimized report in portrait view.
 
 ![Report in portrait mode](media/powerbi-mobile-view-phone-report/07-power-bi-phone-report-portrait.png)
 
-If a phone-optimized report doesn’t exist, you can still open the report in the non-optimized landscape view by turning the phone sideways. Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
+If a phone-optimized report doesn’t exist, the report still opens, but in the non-optimized landscape views. Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
 
 ![Report page not optimized](media/powerbi-mobile-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 
@@ -37,9 +37,13 @@ All the other features of Power BI reports still work in phone-optimized reports
 *   [Reports on iPhones](powerbi-mobile-reports-in-the-iphone-app.md). 
 *   [Reports on Android phones](powerbi-mobile-reports-in-the-android-app.md).
 
-## View other pages in the report
 
-- View other pages in the report by swiping from the side or tapping the pages icon ![Pages icon](media/powerbi-mobile-view-phone-report/power-bi-phone-report-page-icon.png).
+## Filter the report page on an iPhone
+
+If a phone-optimized report has filters defined, when you view the report on an iPhone you can use those filters. 
+
+1. Tap the filter icon ![Phone filter icon](media/powerbi-mobile-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page. 
+2. Use basic or advanced filtering to see the results you're interested in.
 
 ## Cross-highlight visuals
 Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
