@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/10/2017"
+   ms.date="09/27/2017"
    ms.author="mihart"/>
 
 # Tips for designing a great Power BI dashboard  
@@ -84,7 +84,7 @@ To master the art of excellent dashboard design, consider learning basic Gestalt
 - *Envisioning Information* by Edward Tufte  
 - *Advanced Presentations* by Design by Andrew Abela   
 
-## See Also  
+## Next steps  
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

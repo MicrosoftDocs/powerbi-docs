@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="09/25/2017"
    ms.author="mihart"/>
 
 #  Get started with Power BI Q&A (Tutorial)
@@ -36,7 +36,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 	-   But this tile was created in a report, so the report opens to the page that contains this visualization.
 
-3. Open the report in Editing View by selecting **Edit Report**.
+3. Open the report in Editing View by selecting **Edit Report**.  If you are not an owner of a report, you will not have the option to open the report in Editing view.
 
 	![](media/powerbi-service-tutorial-introduction-to-q-and-a/power-bi-edit-report.png)
 

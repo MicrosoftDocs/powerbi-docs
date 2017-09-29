@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2017"
+   ms.date="09/23/2017"
    ms.author="mihart"/>
 
 # Interacting with ArcGIS maps in Power BI
@@ -43,7 +43,7 @@ The example we're using is the same ArcGIS map created in the [ArcGIS maps by es
 The first time a colleague shares an ArcGIS map with you, Power BI will display a prompt. ArcGIS Maps for Power BI is provided by [Esri](https://www.esri.com) and your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
 
 ## Selection tools
-ArcGIS Maps for Power BI allows three selection modes.
+ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data points can be selected at a time.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
 
@@ -52,9 +52,7 @@ ArcGIS Maps for Power BI allows three selection modes.
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points. Use CTRL to select more than one rectangular area.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
-
-> [!NOTE]
-> A maximum of 250 data points can be selected at a time.
+ 
 <br/>
 
 
