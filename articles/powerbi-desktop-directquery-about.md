@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/02/2017"
    ms.author="davidi"/>
 
 # Power BI and DirectQuery
@@ -220,12 +220,6 @@ Hence careful consideration must be paid to the use of Row Level Security, and t
 
 #### Timeouts
 A timeout of four minutes is applied to individual queries in the **Power BI service**, and queries taking longer than that will simply fail. As stressed earlier, it is recommended that DirectQuery be used for sources that provide near interactive query performance, so this limit is intended to prevent issues from overly long execution times.
-
-### Licensing
-Users must have a Power BI Pro license in order to setup or use a **DirectQuery** dataset in the Power BI service. This includes the following:
-
--   Viewing a report based upon a **DirectQuery** dataset
--   Viewing any dashboard that contains a tile based upon a **DirectQuery** dataset
 
 ### Other implications
 

@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2017"
+   ms.date="10/02/2017"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
@@ -76,11 +76,17 @@ There are a few consideration and limitations for installing **Power BI Desktop*
 
 > **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
 
+> **Note:** The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/reportserver-quickstart-powerbi-report.md) article.
+
+
+
 ## Using Power BI Desktop
 
 When you launch **Power BI Desktop**, a *Welcome* screen is displayed.
 
-![](media/powerbi-desktop-getting-started/Designer_GSG_StartSplashScreen.png)
+![](media/powerbi-desktop-get-the-desktop/GetPBID_05.png)
+
+If this is your first time using **Power BI Desktop** (if the installation is not an upgrade), you'll be prompted to fill out a form and answer a few questions, or sign in to the **Power BI service** before you'll be able to proceed.
 
 From there, you can begin creating data models or reports, then share them with others on the Power BI service. Check out the **More information** links at the end of this article for links to guides that can help you get started using **Power BI Desktop**.
 

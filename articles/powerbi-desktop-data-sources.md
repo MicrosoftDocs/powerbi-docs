@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/02/2017"
    ms.author="davidi"/>
 
 
@@ -82,7 +82,7 @@ The **Database** category provides the following data connections:
 -   Amazon Redshift
 -   Impala
 -   Google BigQuery (Beta)
--   Snowflake (Beta)
+-   Snowflake
 
 
 > **Note:** Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -119,7 +119,7 @@ The **Online Services** category provides the following data connections:
 -   Dynamics 365 (online)
 -   Dynamics 365 for Financials (Beta)
 -   Common Data Service (Beta)
--   Azure Enterprise (Beta)
+-   Microsoft Azure Consumption Insights (Beta)
 -   Visual Studio Team Services (Beta)
 -   Salesforce Objects
 -   Salesforce Reports
@@ -131,7 +131,6 @@ The **Online Services** category provides the following data connections:
 -   GitHub (Beta)
 -   Kusto (Beta)
 -   MailChimp (Beta)
--   Marketo (Beta)
 -   Mixpanel (Beta)
 -   Planview Enterprise (Beta)
 -   Projectplace (Beta)
@@ -149,10 +148,11 @@ The **Online Services** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Online Services**.
 
-![](media/powerbi-desktop-data-sources/data-sources_6.png)
+![](media/powerbi-desktop-data-sources/data-sources_6b.png)
 
 The **Other** category provides the following data connections:
 
+-   Vertica (Beta)
 -   Web
 -   SharePoint List
 -   OData Feed
@@ -167,7 +167,7 @@ The **Other** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Other**.
 
-![](media/powerbi-desktop-data-sources/data-sources_7.png)
+![](media/powerbi-desktop-data-sources/data-sources_7a.png)
 
 > **Note:** At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
 
@@ -175,7 +175,7 @@ The following image shows the **Get Data** window for **Other**.
 
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
-![](media/powerbi-desktop-data-sources/data-sources_7.png)
+![](media/powerbi-desktop-data-sources/data-sources_7b.png)
 
 
 A connection window is displayed, specific to the type of data connection. If credentials are required, you’ll be prompted to provide them. The following image shows a URL being entered to connect to a Web data source.

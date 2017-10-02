@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/16/2017"
+ms.date="10/02/2017"
 ms.author="davidi"/>
 # On-Premises Data Gateway FAQ
 
@@ -68,12 +68,6 @@ ms.author="davidi"/>
 
 **Question:** If users share dashboards that has a DirectQuery connection, will those other users be able to see the data even though they might not have the same permissions.  
 **Answer:** For a dashboard connected to Analysis Services, users will only see the data they have access to. If the users do not have the same permissions, they will not be able to see any data. For other data sources, all users will share the credentials entered by the admin for that data source.
-
-**Question:** Is a Pro license required to use the gateway?  
-**Answer:** Yes.
-
-**Question:** Is a Pro license required for users when interacting with a dashboard or report that makes use of the gateway?  
-**Answer:** Yes.
 
 **Question:** Why can't I connect to my Oracle server?  
 **Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the Gateway. For more information, see [Installing the Oracle Client](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client).

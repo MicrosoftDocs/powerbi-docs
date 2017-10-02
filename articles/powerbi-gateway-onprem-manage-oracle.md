@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/02/2017"
+ms.date="10/02/2017"
 ms.author="davidi"/>
 
 # Manage your data source - Oracle
@@ -123,7 +123,7 @@ To remove a Data Source, go to the Data Source > **Remove**.
 
 ## Manage administrators
 
-On the Administrators tab, for the gateway, you can add, and remove, users that can administer the gateway. You can only add users at this time. Security groups cannot be added.
+On the Administrators tab for the gateway, you can add and remove users (or security groups) that can administer the gateway.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings8.png)
 

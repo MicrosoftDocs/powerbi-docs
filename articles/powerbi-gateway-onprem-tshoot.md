@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/25/2017"
+ms.date="10/02/2017"
 ms.author="davidi"/>
 # Troubleshooting the On-Premises Data Gateway
 
@@ -137,7 +137,7 @@ We were unable to connect to the specified data source. Be sure to validate the 
 
 Within **Show details**, you will see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**.
 
-If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](powerbi-gateway-onprem-manage-ssas.md#add-a-data-source)
+If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Learn more](https://docs.microsoft.com/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance)
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
