@@ -3,7 +3,9 @@
 <a name="logs" />
 ### Collecting logs from the gateway configurator
 
-There are several logs you can collect for the gateway. Always start with the logs!
+There are several logs you can collect for the gateway, and you should always start with the logs. The simplest way to collect logs after installing the gateway is through the user interface. In the **On-premises data gateway** user interface, select **Diagnostics** and then select the **Export logs** link near the bottom of the page, as shown in the following image.
+
+![on-prem-data-gateway-UI-logs](./media/gateway-onprem-tshoot-tools-include/gateway-onprem-UI-logs.png)
 
 **Installer logs**
 

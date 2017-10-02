@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="09/06/2017"
+ms.date="09/25/2017"
 ms.author="davidi"/>
 
 # Getting started with Power BI Gateways
@@ -82,7 +82,10 @@ There are a few things to note at this decision point:
 
 -   both gateways require 64-bit Windows operating systems
 -   gateways can’t be installed on a domain controller
--   you can install multiple on-premises data gateways on the same computer, and you can install multiple on-premises gateways on different computers, and manage them all from the same Power BI gateway management interface
+-   you can install up to two on-premises data gateways on the same computer, one running in each mode (personal and standard). 
+-   you cannot have more than one gateway running in the same mode on the same computer.
+-   you can install multiple on-premises data gateways on different computers, and manage them all from the same Power BI gateway management interface (excluding personal, see the following bullet point)
+-	You can only have one Personal mode gateway running for each Power BI user. If you install another Personal mode gateway for the same user, even on a different computer, the most recent installation replaces the existing previous installation.
 
 When we select **Next**, the gateway installation begins. You need to specify where it will be installed, and the default location is usually best.
 
