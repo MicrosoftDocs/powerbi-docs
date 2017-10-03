@@ -28,6 +28,7 @@ In Power BI, *apps* bring related dashboards and reports together, all in one pl
 Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in the app, in your browser or on your mobile device.
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
+
 Planning to author an app? See [Create and distribute apps in Power BI](powerbi-service-create-apps.md) for more information.
 
 ## Install an app
@@ -38,11 +39,15 @@ You can install apps two different ways. The app author can send you a direct li
 
 The easiest way to install a new app is to get a direct link from the app author. Power BI creates an installation link, which the author can send to you.
 
-**On your computer** When you click the link in email the Power BI service ([https://powerbi.com](https://powerbi.com)) opens in a browser. You confirm you want to install the app and it opens to the app landing page.
+**On your computer** 
+
+When you click the link in email the Power BI service ([https://powerbi.com](https://powerbi.com)) opens in a browser. You confirm you want to install the app and it opens to the app landing page.
 
 ![App landing page in the Power BI service](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity-480.png)
 
-**On your iOS or Android mobile device** When you click the link in email, the app installs automatically and opens the app content list. 
+**On your iOS or Android mobile device** 
+
+When you click the link in email on your mobile device, the app installs automatically and opens the app content list. 
 
 ![App content list on mobile device](media/powerbi-what-are-apps/power-bi-app-index-it-spend-360.png)
 
@@ -60,7 +65,7 @@ You can also find and install any apps that you have access to from Microsoft Ap
 
 2. Select **Get it now** to add it to your Apps page. 
 
-## Interact with an app
+## Interact with the dashboards and reports in the app
 
 Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](powerbi-service-interact-with-a-report-in-reading-view.md). 
 
