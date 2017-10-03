@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/04/2017"
+   ms.date="10/03/2017"
    ms.author="davidi"/>
 
 # Resolve Issues when Power BI Desktop will not launch  
