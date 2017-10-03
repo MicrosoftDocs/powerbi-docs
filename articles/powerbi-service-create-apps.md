@@ -16,19 +16,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/21/2017"
+   ms.date="10/02/2017"
    ms.author="maggies"/>
 
 # Create and distribute an app in Power BI
 
 ## What are Power BI apps?
-Apps are collections of dashboards and reports that deliver key metrics to large groups of people in an organization. You can create apps for your organization, and you can connect to [Power BI apps for external services](powerbi-content-packs-services.md) such as Google Analytics and Microsoft Dynamics CRM.
+
+In Power BI, you can create *apps* to bring related dashboards and reports together, all in one place, and then distribute them to large groups of people in your organization. You can also connect to [Power BI apps for external services](powerbi-content-packs-services.md) such as Google Analytics and Microsoft Dynamics CRM.
 
 ![Power BI apps](media/powerbi-service-create-apps/power-bi-apps-left-nav.png)
 
-Business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names of all these dashboards and how to navigate to them.  
+Your business users often need multiple Power BI dashboards and reports to run their business. Apps bring the pieces together so they don't have to remember the names of all these dashboards and how to navigate to them.  
 
-With Power BI apps, now in preview, you can create collections of dashboards and reports and distribute these apps to the whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
+With Power BI apps, now in preview, you can create collections of dashboards and reports and distribute these apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on collections of dashboards.
 
 Business users install these apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](powerbi-service-what-are-apps.md).
 
@@ -67,7 +68,9 @@ Now that you understand apps and app workspaces, let's start creating and publis
 
 [AZURE.INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
-It’s empty, so now you add content to it. Adding content is just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. A big difference is that when you get done, you can distribute the content as an app. While in the app workspace, you can upload or connect to files, or connect to third-party services, just as you would in your own My Workspace. For example:
+It’s empty, so now you add content to it. Note that when you first create it, you may need to wait an hour or so for the workspace to propagate to Office 365. 
+
+Adding content is just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. A big difference is that when you get done, you can distribute the content as an app. While in the app workspace, you can upload or connect to files, or connect to third-party services, just as you would in your own My Workspace. For example:
 
 - [Connect to services](powerbi-content-packs-services.md) such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
 
@@ -103,7 +106,7 @@ By default, Power BI creates a little colored circle for your app, with the app'
 
      ![Customized image](media/powerbi-service-create-apps/power-bi-apps-image.png)
 
-## Distribute an app
+## Distribute your app
 When you’ve finished creating and perfecting the dashboards and reports in your app workspace, you package it all up as an app and distribute it.
 
 1. In the workspace, select the **Publish app** button in the upper right to start the process of sharing all the content in that workspace.
