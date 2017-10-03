@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="10/03/2017"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -134,7 +134,7 @@ Power BI detects your language based on the language preferences on your compute
 
 You have the option to select a language when you download Power BI Desktop. 
 
--  Go to the [Power BI Desktop download page](https://www.microsoft.com/download/details.aspx?id=45331).
+-  [Install Power BI Desktop](http://aka.ms/pbidesktopstore) from the Windows Store.
 
 The only way to change the language in Power BI Desktop is to go back to the download page and download it in a different language.
 
