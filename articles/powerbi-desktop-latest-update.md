@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/02/2017"
+   ms.date="10/03/2017"
    ms.author="davidi"/>
 
 # What's new in the latest Power BI Desktop update?
@@ -41,28 +41,28 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting:
 
--   Bookmarking (preview) [[video]](https://youtu.be/jksjtR8GnBE?t=1m47s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#bookmarking) [[article]](powerbi-desktop-drillthrough.md)
--   Selection pane and visual display controls [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[article]](powerbi-desktop-ribbon-charts.md)
--   Bookmark links for shapes and images  [[video]](https://youtu.be/jksjtR8GnBE?t=8m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#links) [[article]](powerbi-desktop-insights.md)
--   Spotlight [[video]](https://youtu.be/jksjtR8GnBE?t=5m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[article]](powerbi-desktop-report-themes.md)
+-   Bookmarking (preview) [[video]](https://youtu.be/jksjtR8GnBE?t=1m47s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#bookmarking) [[article]](powerbi-desktop-bookmarks.md)
+-   Selection pane and visual display controls [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[article]](powerbi-desktop-bookmarks.md#visibility---using-the-selection-pane) 
+-   Bookmark links for shapes and images  [[video]](https://youtu.be/jksjtR8GnBE?t=8m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#links) [[article]](powerbi-desktop-bookmarks.md#bookmarks-for-shapes-and-images)
+-   Spotlight [[video]](https://youtu.be/jksjtR8GnBE?t=5m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[article]](powerbi-desktop-bookmarks.md#using-spotlight)
 -   Scatter and Bubble markers  [[video]](https://youtu.be/jksjtR8GnBE?t=17m20s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers) [[article]](powerbi-desktop-accessibility.md)
--   Increase the number of data points displayed in Scatter visuals  [[video]](https://youtu.be/jksjtR8GnBE?t=19m51s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#dataVolume) [[article]](powerbi-desktop-high-density-scatter-charts.md)
+-   Increase the number of data points displayed in Scatter visuals  [[video]](https://youtu.be/jksjtR8GnBE?t=19m51s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#dataVolume) 
 
 ### Analytics:
 
--   Quick measures for SSAS live connections  [[video]](https://youtu.be/jksjtR8GnBE?t=22m35s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#liveConnectQuickMeasures) [[article]](powerbi-desktop-connect-azure-consumption-insights.md)
--   Sales from new customers quick measure  [[video]](https://youtu.be/jksjtR8GnBE?t=23m16s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#newCustomers)
+-   Quick measures for SSAS live connections  [[video]](https://youtu.be/jksjtR8GnBE?t=22m35s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#liveConnectQuickMeasures) [[article]](powerbi-desktop-quick-measures.md)
+-   Sales from new customers quick measure  [[video]](https://youtu.be/jksjtR8GnBE?t=23m16s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#newCustomers) [[article]](powerbi-desktop-quick-measures.md)
 -   Cell-level formatting for multi-dimensional Analysis Services (AS) models  [[video]](https://youtu.be/jksjtR8GnBE?t=25m28s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#cellLevelFormatting)
 
 
 ### Data Connectivity:
 
--   Vertica connector (beta)  [[video]](https://youtu.be/jksjtR8GnBE?t=25m55s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#vertica) [[article]](powerbi-desktop-connect-azure-consumption-insights.md)
+-   Vertica connector (beta)  [[video]](https://youtu.be/jksjtR8GnBE?t=25m55s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#vertica) [[article]](powerbi-desktop-data-sources.md#data-sources)
 -   SAP BW connector - support for additional member properties  [[video]](https://youtu.be/jksjtR8GnBE?t=26m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#sapBW)
 
 ### Other:
 
--   Get **Power BI Desktop** from the Windows Store  [[video]](https://youtu.be/jksjtR8GnBE?t=27m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#windowsStore) [[article]](powerbi-desktop-connect-azure-consumption-insights.md)
+-   Get **Power BI Desktop** from the Windows Store  [[video]](https://youtu.be/jksjtR8GnBE?t=27m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#windowsStore) [[article]](powerbi-desktop-get-the-desktop.md#install-as-an-app-from-the-windows-store)
 -   Improved access to help content  [[video]](https://youtu.be/jksjtR8GnBE?t=28m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#help)
 
 
