@@ -1,14 +1,14 @@
 <properties 
-   pageTitle="What are apps in Power BI?"
-   description="Apps are a collection of dashboards and reports built to deliver key metrics to an organization."
+   pageTitle="Install and use apps in Power BI"
+   description="In Power BI, apps bring related dashboards and reports together, all in one place."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
    manager="erikre" 
    editor=""
    tags=""
-   qualityFocus="no"
-   qualityDate=""/>
+   qualityFocus="monitoring"
+   qualityDate="10/02/2017"/>
  
 <tags
    ms.service="powerbi"
@@ -16,61 +16,63 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/31/2017"
+   ms.date="10/02/2017"
    ms.author="maggies"/>
 
-# What are apps in Power BI?
+# Install and use apps in Power BI
 
-An app is a collection of dashboards and reports built to deliver key metrics, all in one place. You can have apps internal to your organization, and also [apps for external services](powerbi-content-packs-services.md) such as Google Analytics and Microsoft Dynamics CRM. Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). After you install them, you can view them in your browser or mobile device. 
+In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](powerbi-content-packs-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
 
-With apps you automatically get all the updates the app author makes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping up to date.
+![Apps in Power BI](media/powerbi-what-are-apps/power-bi-apps-left-nav.png)
 
-![](media/powerbi-what-are-apps/power-bi-apps-left-nav.png)
+Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in the app, in your browser or on your mobile device.
+
+With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
 Planning to author an app? See [Create and distribute apps in Power BI](powerbi-service-create-apps.md) for more information.
 
-## Video: What are apps?
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-## Licenses for apps
-
-There are two licensing options for viewing apps.
-
-* Option 1: All business users in your organization need Power BI Pro licenses to view apps. 
-* Option 2: Free users in your organization can view app content if the app resides in a Power BI Premium capacity. Read [What is Power BI Premium?](powerbi-premium.md) for details.
-
 ## Install an app
 
-You can find and install apps two different ways. The app author can send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access.
+You can install apps two different ways. The app author can send you a direct link to an app, or you can search for it in AppSource, where you see all the apps that you can access. In Power BI on your mobile device, you can only install it from a direct link, and not from AppSource. 
 
 ### Get a direct link to an app
 
-The easiest way to install a new app is to get a direct link from the app author. Power BI creates an installation link, which the author can then send to you.
+The easiest way to install a new app is to get a direct link from the app author. Power BI creates an installation link, which the author can send to you.
 
-- When you click the link in email, the Power BI service ([https://powerbi.com](https://powerbi.com)) opens. You confirm you want to install the app and it opens to the app content list.
+**On your computer** 
 
-     ![](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity-480.png)
+When you click the link in email the Power BI service ([https://powerbi.com](https://powerbi.com)) opens in a browser. You confirm you want to install the app and it opens to the app landing page.
 
-- On your iOS or Android mobile device, when you click the link in email, the app installs automatically and opens the app content list. 
+![App landing page in the Power BI service](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity-480.png)
 
-     ![](media/powerbi-what-are-apps/power-bi-app-index-it-spend-360.png)
+**On your iOS or Android mobile device** 
+
+When you click the link in email on your mobile device, the app installs automatically and opens the app content list. 
+
+![App content list on mobile device](media/powerbi-what-are-apps/power-bi-app-index-it-spend-360.png)
 
 ### Get the app from Microsoft AppSource
 
-You can also find and install apps that you have access to from Microsoft AppSource. 
+You can also find and install any apps that you have access to from Microsoft AppSource. 
 
-1. Select **Apps** ![](media/powerbi-what-are-apps/power-bi-apps-bar.png) > **Get apps**. 
+1. Select **Apps** ![Apps in the left navigation pane](media/powerbi-what-are-apps/power-bi-apps-bar.png) > **Get apps**. 
 
-     ![](media/powerbi-what-are-apps/power-bi-service-apps-get-apps-oppty.png)
+     ![The Get apps icon](media/powerbi-what-are-apps/power-bi-service-apps-get-apps-oppty.png)
 
 3. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
 
-     ![](media/powerbi-what-are-apps/power-bi-appsource-my-org.png)
+     ![In AppSource under My organization](media/powerbi-what-are-apps/power-bi-appsource-my-org.png)
 
 2. Select **Get it now** to add it to your Apps page. 
 
-Now you can explore the data in the dashboards and reports in the app.
+## Interact with the dashboards and reports in the app
+
+Now you can explore the data in the dashboards and reports in the app. You have access to all the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. Read about [interacting with reports in Power BI](powerbi-service-interact-with-a-report-in-reading-view.md). 
+
+You can't save changes you make, but you can always [export the data to Excel ](powerbi-service-export-data.md) from a table or other visual in a report.
+
+![Export data from a Power BI visual](media/powerbi-what-are-apps/power-bi-service-export-data-visual.png)
+
 
 ## Next steps
 - [Create and distribute apps in Power BI](powerbi-service-create-apps.md)
