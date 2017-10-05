@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="10/05/2017"
    ms.author="mihart"/>
 # Visualization types in Power BI
 
@@ -26,7 +26,7 @@
 
 We'll be adding new visualizations, stay tuned!
 
-And check out the [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) , where you'll find a growing list of  custom visuals you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to the community site](powerbi-custom-visuals-create-for-the-gallery.md).  
+And check out the [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of  custom visuals you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to the community site](powerbi-custom-visuals-create-for-the-gallery.md).  
 
 ## List of visualizations available in Power BI
 
