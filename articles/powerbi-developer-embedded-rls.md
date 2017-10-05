@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/19/2017"
+   ms.date="10/05/2017"
    ms.author="asaxton"/>
 
 # Row-level security (RLS) with embedded analytics

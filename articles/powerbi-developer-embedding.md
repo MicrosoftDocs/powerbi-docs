@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2017"
+   ms.date="10/05/2017"
    ms.author="asaxton"/>
 
 # Embedding with Power BI

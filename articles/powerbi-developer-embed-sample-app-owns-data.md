@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2017"
+   ms.date="10/05/2017"
    ms.author="asaxton"/>
 
 # Integrate a dashboard, tile, or report into your application (app owns data)
