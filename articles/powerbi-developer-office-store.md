@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="10/05/2017"
    ms.author="asaxton"/>
 
 # Publish custom visuals to the Office store
@@ -28,7 +28,7 @@ Once you have created your custom visual, you may want to publish it on the Offi
 
 ![](media/powerbi-developer-office-store/powerbi-custom-visual-store.png)
 
-What is the Office store? Simply put, it is the place to find apps (add-in) for your Office 365 software. The [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) connects millions of users of Office 365 to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
+What is the Office store? Simply put, it is the place to find apps (add-in) for your Office 365 software. The [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365 to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
 
 ## Preparing to submit your custom visual
 
