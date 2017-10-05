@@ -17,12 +17,12 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/03/2017"
+   ms.date="10/05/2017"
    ms.author="davidi"/>
 
 # What's new in the latest Power BI Desktop update?
 
-## October 2017 Update (2.51.4885.183)
+## October 2017 Update (2.51.4885.543)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop).
 

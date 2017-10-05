@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="10/02/2017"
+ms.date="10/05/2017"
 ms.author="davidi"/>
 # Troubleshooting the On-Premises Data Gateway
 

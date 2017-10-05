@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/02/2017"
+   ms.date="10/05/2017"
    ms.author="davidi"/>
 
 # Previous monthly updates to Power BI Desktop
