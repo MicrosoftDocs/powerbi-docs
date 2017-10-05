@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="10/01/2017"
    ms.author="mihart"/>
 # Customize X-axis and Y-axis properties (Tutorial)
 
@@ -32,65 +32,67 @@ Watch Amanda customize her X and Y axes and demonstrate the various ways to cont
 
 
 ## Customizing visualization X-axes in reports
+##    Create a stacked chart visualization
 
 Sign in to the Power BI service and open the **Retail Analysis Sample** report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
 
-1.  Create a new column chart that shows this year's sales and last year's sales by fiscal month. 
+1.  Create a new column chart that shows this year's sales and last year's sales value by fiscal month. 
 
 2. Convert it to a Stacked column chart.
 
-3.  In the Visualizations and Filters pane, select **Format** (the paint roller icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) to reveal the customization options.
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-create-chart.png)
 
-4.  Expand the X-Axis options.
+##    Customize the X axis
+1.  In the Visualizations and Filters pane, select **Format** (the paint roller icon ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) to reveal the customization options.
 
-5.  Turn the X-axis on and off by selecting the On (or Off) slider. For now, leave it **On**.  Turning the X-axis off removes the X-axis label and saves space for more data.
+2.  Expand the X-Axis options.
+
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-x-axis.png)
+
+3. Turn the X-axis on and off by selecting the On (or Off) slider. For now, leave it **On**.  One reason you might want to turn off the X-axis is to save space for more data.
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onoffslider.png)
 
-6.  Turn the X-axis title **On** and display the name of the X axis -- in this case, **FiscalMonth**.  
+4. Format the text color, size, and font. In this example we've set text **Color** to black, **Text Size** to 14, and **Font** to Arial Black.  
+
+5. Turn the X-axis Title **On** and display the name of the X axis -- in this case, **FiscalMonth**.  
+
+6.    Format the title text color, size, and font.  In this example we've set **Title color** to orange, changed **Axis title** to **Fiscal Month**, and set **Title text size** to 21.
+
+6. To sort by FiscalMonth, select the ellipses (...) in the top-right corner of the chart and select **Sort By FiscalMonth**.
 
     After all these customizations, your column chart should look something like this:
 
-     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-customizexaxisnew.png)
+     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-customize-axis.png)
 
-    >[AZURE.NOTE] If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical. 
+    
 
-To revert all the X-axis customization you've done so far, select **Revert To Default **at the bottom of the **X-axis** customization pane.
+To revert all the X-axis customization you've done so far, select **Revert To Default** at the bottom of the **X-axis** customization pane.
 
-## Customizing visualization Y-axes in reports
+##    Customize the Y axis
 
-Some visualizations have Y-axes and these too can be customized. There are even some visualizations that have dual Y-axes, and you'll learn how to customize those as well.
+1.  Expand the Y-Axis options.
 
-1.  From the **New Stores** tab of the Retail Analysis Sample report, select the chart "This Year Sales by FiscalMonth."
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-y-axis.png)
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/powerbi-chart.png)
+2. Turn the Y-axis on and off by selecting the On (or Off) slider. For now, leave it **On**.  One reason you might want to turn off the X-axis is to save space for more data.
 
-2. From the Fields pane, select **Store** > **Name** to add it as a **Legend**.
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onoffslider.png)
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/linechart2new.png)
+3. Move the Y-Axis **Position** to the right.
 
-3.  In the Visualizations and Filters pane, select **Format** (the paint roller icon.
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) to reveal the customization options.
+4.    Format the text color, size, and font. In this example we've set text **Color** to black, **Text Size** to 14, and **Font** to Arial Black.  
 
-4. Expand the Y-Axis options and ensure that the Y-Axis slider is toggled to **On**.
+5. Keep **Display units** set to Millions and **Value decimal places** to zero.
 
-     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onoffslider.png)
+5. For this visuaization, having a Y-axis title doesn't improve the visual, so leave **Title** turned Off.  
 
-4.  Turn the Title **On** so that colleagues can see at-a-glance what is being measured. And set the **Style** to **Show title** **only** (instead of **Show both** or **Show unit only**) since the Y-axis already shows that the unit of measurement is thousands of dollars.
+6. Let's make the gridlines stand out by changing the **Color** to a dark grey and increasing **Stroke** to 2.
 
-3.  Change the Y-axis Position to **Right** to move it away from the legend and easier to read.
+    After all these customizations, your column chart should look something like this:
 
-4.  Change the Start and End range to display only the companies with the higher sales.
+     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-y-axis-complete.png)
 
-    -   Set Start to **35,000**
-
-    -   Set End to **100,000**
-
-6.  After all these customizations, your line chart should look like this:
-
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizeyaxisnew.png)
-
-    To revert all the Y-axis customization you've done so far, select **Revert To Default**, at the bottom of the **Y-axis** customization pane.
 
 ## Customizing visualizations with dual Y-axes
 
@@ -98,15 +100,15 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 
 ### Create a chart with two Y-axes
 
-1.  Create a new line chart that tracks **Sales > Gross Margin last year %** by **Time > Month**. 
+1.  Create a new line chart that tracks **Sales > Gross Margin last year %** by **Time > FiscalMonth**. 
 
 2. Sort the visual by month by selecting the ellipses (...) and choosing **Sort by Month**
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo1_new.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-line-chart.png)
 
 3. In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
-4.  Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** is much smaller than the scale of **Sales** which makes it difficult to compare.      
+4.  Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** (the blue line running along the 0M% gridline) is much smaller than the scale of **Sales** which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.      
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/flatline_new.png)
 
@@ -114,9 +116,11 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
 
-4.  Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures dollars and the right measures percentage.
+4.  Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. What we havw now is the stacked column chart we created above ***plus*** a line chart.  (Optionally, use what you leared above to format the axes font color and size.)
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/combochart3done.png)
+    Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures dollars and the right measures percentage.
+
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-dual-axes-new.png)
 
   
 ### Format the secondary Y-axis
@@ -147,10 +151,12 @@ With a visualization this complicated, it helps to add axes titles.  Titles hel
 
 3.  Your Combo chart now displays dual axes, both with titles.
 
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-dual-titles.png)
-
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-combo-chart.png)
 
 For more information, see [Tips and tricks for color formatting, labeling, and axis properties](powerbi-service-tips-and-tricks-for-color-formatting.md).
+
+## Considerations and troubleshooting
+If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical. 
 
 ## See also
 
