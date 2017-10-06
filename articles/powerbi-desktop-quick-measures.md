@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/05/2017"
    ms.author="davidi"/>
 
 # Use Quick measures to easily perform common and powerful calculations (Preview)
@@ -32,7 +32,7 @@ You create **Quick measures** by right-clicking a field in the **Fields** well, 
 
 You can try the new **Quick measures** feature beginning with the **April 2017** release of **Power BI Desktop**. To enable this preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Quick measures**. You'll need to restart Power BI Desktop after you make the selection.
 
-![](media/powerbi-desktop-quick-measures/quick-measures_02.png)
+![](media/powerbi-desktop-quick-measures/quick-measures_02b.png)
 
 You'll need to restart **Power BI Desktop** after you make the selection.
 
@@ -42,7 +42,9 @@ To create a **Quick measure**, right-click on a field (any field) in the **Field
 
 ![](media/powerbi-desktop-quick-measures/quick-measures_01.png)
 
-> **Note:** Modeling must be available on the dataset currently loaded in order for **Quick measures** to be available. As such, live connections (such as a connection to a Power BI service dataset) will not display the **Quick measures** menu item when the **Fields** list is right-clicked.
+Modeling must be available on the dataset currently loaded in order for **Quick measures** to be available. As such, live connections (such as a connection to a Power BI service dataset) will not display the **Quick measures** menu item when the **Fields** list is right-clicked, with the exception of SSAS live connections. 
+
+When using SQL Server Analysis Services (SSAS) live connections, some **Quick measures** are available. **Power BI Desktop** displays only the collection of **Quick measures** that are supported for the version of SSAS to which the connection is made. So if you are connected to a SSAS live data source, and you do not see certain **Quick measures** in the list, it's because the SSAS version to which you are connected does not support the DAX measure used to implement that **Quick measure**.
 
 When selected from the right-click menu, the following **Quick measures** window appears, allowing you to select the calculation you want, and the fields against which you want to calculation to be run.
 
@@ -64,6 +66,7 @@ There are five distinct groups of Quick measure calculation types, each with a c
     -   Filtered measure
     -   Difference from baseline
     -   Percentage difference from baseline
+    -   Totals from new categories
 -   **Time intelligence**
     -   Year-to-date total
     -   Quarter-to-date total
@@ -139,7 +142,7 @@ And once you do have the measure perfected, you can rename it however you'd like
 
 In this preview release of the **Quick measures**, there are a few limitations and considerations to keep in mind.
 
--   **Quick measures** are only available if you can modify the model, which isn't the case when you're working with DirectQuery or Live connections.
+-   **Quick measures** are only available if you can modify the model, which isn't the case when you're working with DirectQuery or most Live connections (SSAS live connections are supported, as previously explained).
 -   The measure that's added to the **Fields** well can be used with any visual in the report.
 -   You can always see the DAX associated with a **Quick measure** by selecting the created measure in the **Fields** well, then looking at the formula in the **Formula bar**.
 
@@ -148,27 +151,7 @@ In this preview release of the **Quick measures**, there are a few limitations a
 
 ### Time intelligence and Quick measures
 
-When using time intelligence Quick measures with date fields, there is a limitation you want to consider when using a date field.
-
-When you use a Quick measure in a visual that's filtered by the date field that you've used in the Quick measure, you may see the following error string:
-
-    *Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy.*
-
-This limitation also exists when you have a slicer on the page that uses the date field, or a visual-, page-, or report-level filter.
-
-Consider the image that follows, and the fields and Quick measures used. In that image, the *Unit Sales YTD* measure seen in the *Fields* well was created using the **Year to date** Quick measure. The line chart shows that field (and the *Unit Sales* measure) plotted against the *OrderDate* field.
-
-You can see the *Year, Quarter, Month*, and *Day* levels in the *Fields* pane, showing that the field is using the internal date hierarchy. There’s also a slicer on the page filtering the *OrderDate* field.
-
-![](media/powerbi-desktop-quick-measures/quick-measures_12a.png)
-
-If you try and select dates in that slicer, however, you’ll get the following error.
-
-![](media/powerbi-desktop-quick-measures/quick-measures_12.png)
-
-The reason this happens is because the slicer is filtering on the *OrderDate* field in the **Sales** table, rather than filtering on one of the Year/Quarter/Month/Day columns in the built-in date hierarchy. There is no current work-around for this limitation, but the Power BI team is actively working on improving this feature for upcoming releases of **Power BI Desktop**.
-
-For information about how you may be able to adjust the DAX associated with the Quick measure to refer to your own date tables, take a look at [this blog post](https://www.kasperonbi.com/use-the-power-bi-quick-calcs-with-your-own-date-table).
+Beginning with the October 2017 update to **Power BI Desktop**, you can use your own custom date tables with time intelligence **Quick measures**. If your data model has a custom date table, you can use the primary date column in that table for time intelligence quick measures. You *must* ensure that when the model was built, that primary date column in that table was marked as a Date table, as described in [this article](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular).
 
 
 ### Additional information and examples

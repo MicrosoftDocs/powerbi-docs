@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/05/2017"
    ms.author="davidi"/>
 
 # Accessibility in Power BI Desktop reports
@@ -55,7 +55,7 @@ These accessibility additions were created to let users fully consume **Power BI
 
 The following tips can help you create **Power BI Desktop** reports that are more accessible.
 
--   For **Line**, **Area**, and **Combo** visuals, turn markers on, and use a different *Marker shape* for each line.
+-   For **Line**, **Area**, and **Combo** visuals, as well as for **Scatter** and **Bubble** visuals, turn markers on, and use a different *Marker shape* for each line.
     -   To turn *Markers* on, select the **Format** section in the **Visualizations** pane, expand the **Shapes** section, then scroll down to find the **Markers** toggle and turn it to *On*.
 
     -   Then, select the name of each line (or area, if using an **Area** chart) from the drop-down box in that **Shapes** section. Below the drop-down, you can then adjust many aspects of the marker used for the selected line, including its shape, color, and size.

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/05/2017"
    ms.author="davidi"/>
 
 # Use Report Themes in Power BI Desktop (Preview)
@@ -141,6 +141,14 @@ Rather than a download, here's the code for the Valentine's day JSON file:
 
 **Report Themes** can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday. Enjoy them, they're easy!
 
+Here are a few more report themes you can use as starting points, too:
+
+-    [Sunflower-twilight](https://community.powerbi.com/t5/Themes-Gallery/Sunflower-Twilight/m-p/140749)
+-    [Plum](https://community.powerbi.com/t5/Themes-Gallery/Plum/m-p/140711)
+-    [Autumn](https://community.powerbi.com/t5/Themes-Gallery/Autumn/m-p/140746)
+-    [High contrast](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
+
+
 ## Report theme JSON file format
 
 The basic JSON file has five required lines:
@@ -178,31 +186,18 @@ Booleans are either *true* or *false*. Strings must be in double quotes, as in "
 
 | **visualName** |
 |---|
-|accessibleTable|
-|animatedNumber|
 |areaChart|
 |barChart|
 |basicShape|
-|bingSocialNews|
-|bingSocialTweets|
 |card|
-|cheerMeter|
 |clusteredBarChart|
 |clusteredColumnChart|
 |columnChart|
 |comboChart|
-|consoleWriter|
-|dataDotChart|
-|dataDotClusteredColumnComboChart|
-|dataDotStackedColumnComboChart|
-|dataViewer|
-|debugVisual|
 |donutChart|
 |filledMap|
 |funnel|
 |gauge|
-|heatMap|
-|helloIVisual|
 |hundredPercentStackedBarChart|
 |hundredPercentStackedColumnChart|
 |image|
@@ -211,21 +206,15 @@ Booleans are either *true* or *false*. Strings must be in double quotes, as in "
 |lineClusteredColumnComboChart|
 |lineStackedColumnComboChart|
 |map|
-|matrix|
 |multiRowCard|
 |pieChart|
 |pivotTable|
-|realTimeLineChart|
 |ribbonChart|
 |scatterChart|
-|scriptVisual|
 |shapeMap|
 |slicer|
 |stackedAreaChart|
-|sunburst|
-|table|
 |tableEx|
-|textbox|
 |treemap|
 |waterfallChart|
 
@@ -241,22 +230,11 @@ The following table defines *cardName* values. The first value in each cell is t
 |cardTitle: Card Title|
 |categoryAxis: X-Axis|
 |categoryLabels: Category labels|
-|clustering: undefined|
-|colorBorder: Color border|
-|colorByCategory: Color by category|
 |columnFormatting: Field formatting|
 |columnHeaders: Column headers|
-|columnWidth: undefined|
-|currentFrameIndex: undefined|
-|data: undefined|
 |dataLabels: Data labels|
-|dataPoint: Data colors|
-|date: Date inputs|
-|dateRange: Date Range|
-|defaultColors: Default Color|
 |fill: Fill|
 |fillPoint: Fill point|
-|filters: undefined|
 |forecast: Forecast|
 |general: General|
 |goals: Goals|
@@ -267,7 +245,6 @@ The following table defines *cardName* values. The first value in each cell is t
 |items: Items|
 |labels: Data labels|
 |legend: Legend|
-|line: Line|
 |lineStyles: Shapes|
 |mapControls: Map controls|
 |mapStyles: Map styles|
@@ -280,8 +257,6 @@ The following table defines *cardName* values. The first value in each cell is t
 |ribbonChart: Ribbons|
 |rotation: Rotation|
 |rowHeaders: Row headers|
-|scalarKey: undefined|
-|script: undefined|
 |selection: Selection Controls|
 |sentimentColors: Sentiment colors|
 |shape: Shape|
@@ -298,6 +273,2883 @@ The following table defines *cardName* values. The first value in each cell is t
 |xAxisReferenceLine: X-Axis Constant Line|
 |y1AxisReferenceLine: Constant Line|
 |zoom: Zoom|
+
+
+### Properties within each card
+The following section defines the properties within each card.
+
+    "general":
+        "responsive": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "(Preview) Responsive"
+          ],
+          "description": [
+            "The visual will adapt to size changes"
+          ]
+        }
+        "legend": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "position": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Position"
+          ],
+          "description": [
+            "Select the location for the legend"
+          ]
+        },
+        "showTitle": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Title"
+          ],
+          "description": [
+            "Display a title for legend symbols"
+          ]
+        },
+        "labelColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        }
+      },
+    "categoryAxis": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "axisScale": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Scale type"
+          ]
+        },
+        "start": {
+          "type": [
+            "numeric",
+            "dateTime"
+          ],
+          "displayName": [
+            "Start"
+          ],
+          "description": [
+            "Enter a starting value (optional)"
+          ]
+        },
+        "end": {
+          "type": [
+            "numeric",
+            "dateTime"
+          ],
+          "displayName": [
+            "End"
+          ],
+          "description": [
+            "Enter an ending value (optional)"
+          ]
+        },
+        "axisType": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Type"
+          ]
+        },
+        "showAxisTitle": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Title"
+          ],
+          "description": [
+            "Title for the X-axis",
+            "Title for the Y-axis"
+          ]
+        },
+        "axisStyle": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Style"
+          ]
+        },
+        "labelColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "labelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        },
+        "labelPrecision": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value decimal places"
+          ],
+          "description": [
+            "Select the number of decimal places to display for the values"
+          ]
+        },
+        "concatenateLabels": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Concatenate labels"
+          ],
+          "description": [
+            "Always concatenate levels of the hierarchy instead of drawing the hierarchy."
+          ]
+        },
+        "preferredCategoryWidth": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Minimum category width"
+          ]
+        },
+        "titleColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Title color"
+          ]
+        },
+        "titleFontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "titleFontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Title text size"
+          ]
+        },
+        "position": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Position"
+          ],
+          "description": [
+            "Select left or right"
+          ]
+        },
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Select color for data labels"
+          ]
+        },
+        "duration": {
+          "type": [
+            "numeric"
+          ]
+        }
+      },
+    "valueAxis": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "position": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Position"
+          ],
+          "description": [
+            "Select left or right"
+          ]
+        },
+        "axisScale": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Scale type"
+          ]
+        },
+        "start": {
+          "type": [
+            "numeric",
+            "dateTime"
+          ],
+          "displayName": [
+            "Start"
+          ],
+          "description": [
+            "Enter a starting value (optional)"
+          ]
+        },
+        "end": {
+          "type": [
+            "numeric",
+            "dateTime"
+          ],
+          "displayName": [
+            "End"
+          ],
+          "description": [
+            "Enter an ending value (optional)"
+          ]
+        },
+        "showAxisTitle": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Title"
+          ],
+          "description": [
+            "Title for the Y-axis",
+            "Title for the X-axis"
+          ]
+        },
+        "axisStyle": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Style"
+          ]
+        },
+        "labelColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "labelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        },
+        "labelPrecision": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value decimal places"
+          ],
+          "description": [
+            "Select the number of decimal places to display for the values"
+          ]
+        },
+        "titleColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Title color"
+          ]
+        },
+        "titleFontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "titleFontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Title text size"
+          ]
+        },
+        "axisLabel": {
+          "type": [
+            "none"
+          ],
+          "displayName": [
+            "Y-Axis (Column)"
+          ]
+        },
+        "secShow": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show secondary"
+          ]
+        },
+        "alignZeros": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Align zeros"
+          ],
+          "description": [
+            "Align the zero tick marks for both value axes"
+          ]
+        },
+        "secAxisLabel": {
+          "type": [
+            "none"
+          ],
+          "displayName": [
+            "Y-Axis (Line)"
+          ]
+        },
+        "secPosition": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Position"
+          ],
+          "description": [
+            "Select left or right"
+          ]
+        },
+        "secAxisScale": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Scale type"
+          ]
+        },
+        "secStart": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Start"
+          ],
+          "description": [
+            "Enter a starting value (optional)"
+          ]
+        },
+        "secEnd": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "End"
+          ],
+          "description": [
+            "Enter an ending value (optional)"
+          ]
+        },
+        "secShowAxisTitle": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Title"
+          ],
+          "description": [
+            "Title for the Y-axis"
+          ]
+        },
+        "secAxisStyle": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Style"
+          ]
+        },
+        "secLabelColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ]
+        },
+        "secFontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "secFontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "secLabelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        },
+        "secLabelPrecision": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value decimal places"
+          ],
+          "description": [
+            "Select the number of decimal places to display for the values"
+          ]
+        },
+        "secTitleColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Title color"
+          ]
+        },
+        "secTitleFontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "secTitleFontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Title text size"
+          ]
+        }
+      },
+    "dataPoint": {
+        "defaultColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Default color",
+            "Default Column Color"
+          ]
+        },
+        "fill": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Fill"
+          ]
+        },
+        "defaultCategoryColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Default color",
+            "Default Column Color"
+          ]
+        },
+        "showAllDataPoints": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show all"
+          ]
+        }
+      },
+    "labels": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "showSeries": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Select color for data labels"
+          ]
+        },
+        "labelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        },
+        "labelPrecision": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value decimal places"
+          ],
+          "description": [
+            "Select the number of decimal places to display for the values"
+          ]
+        },
+        "showAll": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Customize series"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "labelDensity": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Label density"
+          ]
+        },
+        "labelOrientation": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Orientation"
+          ]
+        },
+        "labelPosition": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Position"
+          ]
+        },
+        "percentageLabelPrecision": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "% decimal places"
+          ],
+          "description": [
+            "Select the number of decimal places to display for the percentages"
+          ]
+        },
+        "labelStyle": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Label style"
+          ]
+        }
+      },
+    "lineStyles": {
+        "strokeWidth": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Stroke width"
+          ]
+        },
+        "strokeLineJoin": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Join type"
+          ]
+        },
+        "lineStyle": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Line style"
+          ]
+        },
+        "showMarker": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show marker"
+          ]
+        },
+        "markerShape": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Marker shape"
+          ]
+        },
+        "markerSize": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Marker size"
+          ]
+        },
+        "markerColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Marker color"
+          ]
+        },
+        "showSeries": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Customize series",
+            "Show"
+          ]
+        },
+        "shadeArea": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Shade area"
+          ]
+        }
+      },
+    "plotArea": {
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for background color"
+          ]
+        }
+      },
+    "trend": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "displayName": {
+          "type": [
+            "text"
+          ],
+          "displayName": [
+            "Name"
+          ],
+          "description": [
+            "Set trend line name"
+          ]
+        },
+        "lineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set trend line color"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for trend line color"
+          ]
+        },
+        "style": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Style"
+          ],
+          "description": [
+            "Set trend line style"
+          ]
+        },
+        "combineSeries": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Combine Series"
+          ],
+          "description": [
+            "Show one trend line per series or combine"
+          ]
+        }
+      },
+      "y1AxisReferenceLine": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "value": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value"
+          ],
+          "description": [
+            "Set reference line numeric value "
+          ]
+        },
+        "lineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set reference line color"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for reference line color"
+          ]
+        },
+        "style": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Line style"
+          ]
+        },
+        "position": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Position"
+          ],
+          "description": [
+            "Arrange relative to chart data points"
+          ]
+        },
+        "dataLabelShow": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Data label"
+          ],
+          "description": [
+            "Display a data label for the reference line"
+          ]
+        },
+        "dataLabelColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set the reference line data label color"
+          ]
+        },
+        "dataLabelDecimalPoints": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Decimal Places"
+          ]
+        },
+        "dataLabelHorizontalPosition": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Horizontal Position"
+          ],
+          "description": [
+            "Set the horizontal position for the reference line data label"
+          ]
+        },
+        "dataLabelVerticalPosition": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Vertical Position"
+          ],
+          "description": [
+            "Set the vertical position for the reference line data label"
+          ]
+        },
+        "dataLabelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        }
+      },
+    "referenceLine": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "displayName": {
+          "type": [
+            "text"
+          ],
+          "displayName": [
+            "Name"
+          ],
+          "description": [
+            "Set reference line name"
+          ]
+        },
+        "value": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value"
+          ],
+          "description": [
+            "Set reference line numeric value "
+          ]
+        },
+        "lineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set reference line color"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for reference line color"
+          ]
+        },
+        "style": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Line style"
+          ]
+        },
+        "position": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Position"
+          ],
+          "description": [
+            "Arrange relative to chart data points"
+          ]
+        },
+        "dataLabelShow": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Data label"
+          ],
+          "description": [
+            "Display a data label for the reference line"
+          ]
+        },
+        "dataLabelColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set the reference line data label color"
+          ]
+        },
+        "dataLabelDecimalPoints": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Decimal Places"
+          ]
+        },
+        "dataLabelHorizontalPosition": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Horizontal Position"
+          ],
+          "description": [
+            "Set the horizontal position for the reference line data label"
+          ]
+        },
+        "dataLabelVerticalPosition": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Vertical Position"
+          ],
+          "description": [
+            "Set the vertical position for the reference line data label"
+          ]
+        },
+        "dataLabelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        }
+      },
+    "line": {
+        "lineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Line color"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for background color"
+          ]
+        },
+        "weight": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Weight"
+          ]
+        },
+        "roundEdge": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Round edges"
+          ]
+        }
+      },
+    "fill": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "fillColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Fill color"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for background color"
+          ]
+        }
+      },
+    "rotation": {
+        "angle": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Rotation"
+          ]
+        }
+      },
+    "categoryLabels": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Select color for data labels"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        }
+      },
+    "wordWrap": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        }
+      },
+    "dataLabels": {
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Select color for data labels"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        }
+      },
+    "cardTitle": {
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Select color for data labels"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        }
+      },
+    "card": {
+        "outline": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Outline"
+          ]
+        },
+        "outlineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Outline color"
+          ],
+          "description": [
+            "Color of the outline"
+          ]
+        },
+        "outlineWeight": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Outline weight"
+          ],
+          "description": [
+            "Thickness of the outline in pixels"
+          ]
+        },
+        "barShow": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show bar"
+          ],
+          "description": [
+            "Display a bar to the left side of the card as an accent"
+          ]
+        },
+        "barColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Bar color"
+          ]
+        },
+        "barWeight": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Bar thickness"
+          ],
+          "description": [
+            "Thickness of the bar in pixels"
+          ]
+        },
+        "cardPadding": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Padding"
+          ],
+          "description": [
+            "Background"
+          ]
+        },
+        "cardBackground": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background"
+          ]
+        }
+      },
+    "percentBarLabel": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Select color for data labels"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        }
+      },
+    "axis": {
+        "min": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Min"
+          ]
+        },
+        "max": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Max"
+          ]
+        },
+        "target": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Target"
+          ]
+        }
+      },
+    "target": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Select color for data labels"
+          ]
+        },
+        "labelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        },
+        "labelPrecision": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value decimal places"
+          ],
+          "description": [
+            "Select the number of decimal places to display for the values"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        }
+      },
+    "calloutValue": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Select color for data labels"
+          ]
+        },
+        "labelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        },
+        "labelPrecision": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value decimal places"
+          ],
+          "description": [
+            "Select the number of decimal places to display for the values"
+          ]
+        }
+      },
+    "forecast": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "displayName": {
+          "type": [
+            "text"
+          ],
+          "displayName": [
+            "Name"
+          ],
+          "description": [
+            "Set forecast name"
+          ]
+        },
+        "confidenceBandStyle": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Confidence band style"
+          ],
+          "description": [
+            "Set forecast confidence band style"
+          ]
+        },
+        "lineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set forecast line color"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for background color"
+          ]
+        },
+        "style": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Line style"
+          ]
+        },
+        "transform": {
+          "type": [
+            "queryTransform"
+          ]
+        }
+      },
+    "bubbles": {
+        "bubbleSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Size"
+          ]
+        }
+      },
+    "mapControls": {
+        "autoZoom": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Auto zoom"
+          ]
+        },
+        "zoomLevel": {
+          "type": [
+            "numeric"
+          ]
+        },
+        "centerLatitude": {
+          "type": [
+            "numeric"
+          ]
+        },
+        "centerLongitude": {
+          "type": [
+            "numeric"
+          ]
+        }
+      },
+    "mapStyles": {
+        "mapTheme": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Theme"
+          ]
+        }
+      },
+    "shape": {
+        "map": {
+          "type": [
+            "geoJson"
+          ]
+        },
+        "projectionEnum": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Projection"
+          ],
+          "description": [
+            "Projection"
+          ]
+        }
+      },
+    "zoom": {
+        "autoZoom": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Auto zoom"
+          ],
+          "description": [
+            "Zoom in on shapes with available data"
+          ]
+        },
+        "selectionZoom": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Selection zoom"
+          ],
+          "description": [
+            "Zoom in on selected shapes"
+          ]
+        },
+        "manualZoom": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Manual zoom"
+          ],
+          "description": [
+            "Allow user to zoom and pan"
+          ]
+        }
+      },
+    "xAxisReferenceLine": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "value": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value"
+          ],
+          "description": [
+            "Set reference line numeric value "
+          ]
+        },
+        "lineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set reference line color"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for reference line color"
+          ]
+        },
+        "style": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Line style"
+          ]
+        },
+        "position": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Position"
+          ],
+          "description": [
+            "Arrange relative to chart data points"
+          ]
+        },
+        "dataLabelShow": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Data label"
+          ],
+          "description": [
+            "Display a data label for the reference line"
+          ]
+        },
+        "dataLabelColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set the reference line data label color"
+          ]
+        },
+        "dataLabelDecimalPoints": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Decimal Places"
+          ]
+        },
+        "dataLabelHorizontalPosition": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Horizontal Position"
+          ],
+          "description": [
+            "Set the horizontal position for the reference line data label"
+          ]
+        },
+        "dataLabelVerticalPosition": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Vertical Position"
+          ],
+          "description": [
+            "Set the vertical position for the reference line data label"
+          ]
+        },
+        "dataLabelDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        }
+      },
+    "fillPoint": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        }
+      },
+    "colorByCategory": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        }
+      },
+    "plotAreaShading": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "upperShadingColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Upper shading"
+          ],
+          "description": [
+            "Shading color of the upper region"
+          ]
+        },
+        "lowerShadingColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Lower shading"
+          ],
+          "description": [
+            "Shading color of the lower region"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for background color"
+          ]
+        }
+      },
+    "ratioLine": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "lineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ],
+          "description": [
+            "Set reference line color"
+          ]
+        },
+        "transparency": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Transparency"
+          ],
+          "description": [
+            "Set transparency for line color"
+          ]
+        },
+        "style": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Line style"
+          ]
+        }
+      },
+    "grid": {
+        "outlineColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Outline color"
+          ],
+          "description": [
+            "Color of the outline"
+          ]
+        },
+        "outlineWeight": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Outline weight"
+          ],
+          "description": [
+            "Thickness of the outline in pixels"
+          ]
+        },
+        "gridVertical": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Vert grid"
+          ],
+          "description": [
+            "Show/Hide the vertical gridlines"
+          ]
+        },
+        "gridVerticalColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Vert grid color"
+          ],
+          "description": [
+            "Color for the vertical gridlines"
+          ]
+        },
+        "gridVerticalWeight": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Vert grid thickness"
+          ],
+          "description": [
+            "Thickness of the vertical gridlines in pixels"
+          ]
+        },
+        "gridHorizontal": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Horiz grid"
+          ],
+          "description": [
+            "Show/Hide the horizontal gridlines"
+          ]
+        },
+        "gridHorizontalColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Horiz grid color"
+          ],
+          "description": [
+            "Color for the horizontal gridlines"
+          ]
+        },
+        "gridHorizontalWeight": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Horiz grid thickness"
+          ],
+          "description": [
+            "Thickness of the horizontal gridlines in pixels"
+          ]
+        },
+        "rowPadding": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Row padding"
+          ],
+          "description": [
+            "Padding in pixels applied to top and bottom of every row"
+          ]
+        },
+        "imageHeight": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Image height"
+          ],
+          "description": [
+            "The height of images in pixels"
+          ]
+        },
+        "textSize": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        }
+      },
+    "columnHeaders": {
+        "outline": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Outline"
+          ]
+        },
+        "fontColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the cells"
+          ]
+        },
+        "backColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background color"
+          ],
+          "description": [
+            "Background color of the cells"
+          ]
+        },
+        "wordWrap": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Word wrap"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "autoSizeColumnWidth": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Auto-size column width"
+          ]
+        },
+        "urlIcon": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "URL icon"
+          ],
+          "description": [
+            "Show an icon instead of the full URL"
+          ]
+        }
+      },
+    "values": {
+        "outline": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Outline"
+          ]
+        },
+        "backColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color scales"
+          ]
+        },
+        "fontColorPrimary": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the odd rows"
+          ]
+        },
+        "backColorPrimary": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background color"
+          ],
+          "description": [
+            "Background color of the odd rows"
+          ]
+        },
+        "fontColorSecondary": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Alternate font color"
+          ],
+          "description": [
+            "Font color of the even rows"
+          ]
+        },
+        "backColorSecondary": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Alternate background color"
+          ],
+          "description": [
+            "Background color of the even rows"
+          ]
+        },
+        "urlIcon": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "URL icon"
+          ],
+          "description": [
+            "Show an icon instead of the full URL"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "wordWrap": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Word wrap"
+          ]
+        },
+        "bandedRowHeaders": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Banded row style"
+          ],
+          "description": [
+            "Apply banded row style to the last level of the row group headers, using the colors of the values."
+          ]
+        },
+        "valuesOnRow": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show on rows"
+          ],
+          "description": [
+            "Show values in row groups rather than columns"
+          ]
+        }
+      },
+    "total": {
+        "outline": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Outline"
+          ]
+        },
+        "fontColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the cells"
+          ]
+        },
+        "backColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background color"
+          ],
+          "description": [
+            "Background color of the cells"
+          ]
+        },
+        "applyToHeaders": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Apply to labels"
+          ]
+        },
+        "totals": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Totals"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        }
+      },
+    "columnFormatting": {
+        "fontColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the cells"
+          ]
+        },
+        "backColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background color"
+          ],
+          "description": [
+            "Background color of the cells"
+          ]
+        },
+        "styleHeader": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Color header"
+          ]
+        },
+        "styleValues": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Color values"
+          ]
+        },
+        "styleTotal": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Color total"
+          ]
+        },
+        "styleSubtotals": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Color subtotals"
+          ]
+        }
+      },
+    "rowHeaders": {
+        "outline": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Outline"
+          ]
+        },
+        "fontColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the cells"
+          ]
+        },
+        "backColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background color"
+          ],
+          "description": [
+            "Background color of the cells"
+          ]
+        },
+        "wordWrap": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Word wrap"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "stepped": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Stepped layout"
+          ],
+          "description": [
+            "Render row headers with stepped layout"
+          ]
+        },
+        "steppedLayoutIndentation": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Stepped layout indentation"
+          ],
+          "description": [
+            "Set the indentation, in pixels, applied to row headers"
+          ]
+        },
+        "urlIcon": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "URL icon"
+          ],
+          "description": [
+            "Show an icon instead of the full URL"
+          ]
+        }
+      },
+    "subTotals": {
+        "outline": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Outline"
+          ]
+        },
+        "fontColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the cells"
+          ]
+        },
+        "backColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background color"
+          ],
+          "description": [
+            "Background color of the cells"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "fontSize": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "rowSubtotals": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Total row"
+          ]
+        },
+        "columnSubtotals": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Total column"
+          ]
+        },
+        "applyToHeaders": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Apply to labels"
+          ]
+        }
+      },
+    "selection": {
+        "selectAllCheckboxEnabled": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Select All"
+          ]
+        },
+        "singleSelect": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Single Select"
+          ]
+        }
+      },
+    "header": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "fontColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the cells"
+          ]
+        },
+        "background": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background"
+          ]
+        },
+        "outline": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Outline"
+          ]
+        },
+        "textSize": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        }
+      },
+    "items": {
+        "fontColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the cells"
+          ]
+        },
+        "background": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background"
+          ]
+        },
+        "outline": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Outline"
+          ]
+        },
+        "textSize": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        }
+      },
+    "numericInputStyle": {
+        "fontColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Font color"
+          ],
+          "description": [
+            "Font color of the cells"
+          ]
+        },
+        "textSize": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Text Size"
+          ]
+        },
+        "fontFamily": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Font family"
+          ]
+        },
+        "background": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Background"
+          ]
+        }
+      },
+    "slider": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        },
+        "color": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Color"
+          ]
+        }
+      },
+    "dateRange": {
+        "includeToday": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Include today"
+          ]
+        }
+      },
+    "sentimentColors": {
+        "increaseFill": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Increase"
+          ]
+        },
+        "decreaseFill": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Decrease"
+          ]
+        },
+        "totalFill": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Total"
+          ]
+        },
+        "otherFill": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Other"
+          ]
+        }
+      },
+    "breakdown": {
+        "maxBreakdowns": {
+          "type": [
+            "integer"
+          ],
+          "displayName": [
+            "Max breakdowns"
+          ],
+          "description": [
+            "The number of individual breakdowns to show (rest grouped into Other)"
+          ]
+        }
+      },
+    "indicator": {
+        "indicatorDisplayUnits": {
+          "type": [
+            "formatting"
+          ],
+          "displayName": [
+            "Display units"
+          ],
+          "description": [
+            "Select the units (millions, billions, etc.)"
+          ]
+        },
+        "indicatorPrecision": {
+          "type": [
+            "numeric"
+          ],
+          "displayName": [
+            "Value decimal places"
+          ],
+          "description": [
+            "Select the number of decimal places to display for the values"
+          ]
+        },
+        "kpiFormat": {
+          "type": [
+            "text"
+          ],
+          "displayName": [
+            "Format"
+          ]
+        }
+      },
+    "trendline": {
+        "show": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Show"
+          ]
+        }
+      },
+    "goals": {
+        "showGoal": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Goal"
+          ]
+        },
+        "showDistance": {
+          "type": [
+            "bool"
+          ],
+          "displayName": [
+            "Distance"
+          ]
+        }
+      },
+    "status": {
+        "direction": {
+          "type": [
+            "enumeration"
+          ],
+          "displayName": [
+            "Direction"
+          ]
+        },
+        "goodColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Good Color"
+          ]
+        },
+        "neutralColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Neutral Color"
+          ]
+        },
+        "badColor": {
+          "type": [
+            "fill"
+          ],
+          "displayName": [
+            "Bad Color"
+          ]
+        }
+      }
+
+
+
+
+### Enumerations in the JSON file
 
 The following section defines the enumerations you can use in the JSON file.
 
