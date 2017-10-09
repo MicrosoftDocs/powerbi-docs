@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/05/2017"
+   ms.date="10/09/2017"
    ms.author="asaxton"/>
 
-# How to embed your Power BI dashboards, reports and tiles
+# Embed your Power BI dashboards, reports and tiles
 
 Learn about the steps you need to take to embed Power BI content within your application.
 

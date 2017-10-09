@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Create an Azure Active Directory tenant"
+   pageTitle="Create an Azure Active Directory tenant to use with Power BI"
    description="Learn how to create a new Azure Active Directory (Azure AD) tenant for use with your custom application using the Power BI REST APIs."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/21/2017"
+   ms.date="10/09/2017"
    ms.author="asaxton"/>
 
-# Create an Azure Active Directory tenant
+# Create an Azure Active Directory tenant to use with Power BI
 
 Learn how to create a new Azure Active Directory (Azure AD) tenant for use with your custom application using the Power BI REST APIs.
 

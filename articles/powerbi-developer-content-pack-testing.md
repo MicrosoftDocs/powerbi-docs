@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Template Content Pack Testing"
+   pageTitle="Testing template content packs for Power BI"
    description="Template Content Pack Testing"
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/09/2017"
    ms.author="asaxton"/>
 
-# Template Content Pack Testing
+# Testing template content packs for Power BI
 
 There are multiple ways to test your content pack before submitting it for publishing.  
 

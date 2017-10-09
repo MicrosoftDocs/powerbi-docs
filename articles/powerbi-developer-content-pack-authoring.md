@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Template Content Pack Authoring"
+   pageTitle="Author template content packs in Power BI"
    description="Template Content Pack Authoring"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/09/2017"
    ms.author="asaxton"/>
 
-# Template Content Pack Authoring
+# Author template content packs in Power BI
 
 Authoring a template content pack uses the Power BI Desktop and PowerBI.com. There are four components to your content pack:
 
