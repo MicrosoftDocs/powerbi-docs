@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Template Content Pack Experiences"
+   pageTitle="Template content pack experiences in Power BI"
    description="Template Content Pack Experiences"
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/09/2017"
    ms.author="asaxton"/>
 
-# Template Content Pack Experiences
+# Template content pack experiences in Power BI
 
 This section highlights a typical experience for a user connecting to an ISV [content pack](powerbi-content-packs-services.md). 
 

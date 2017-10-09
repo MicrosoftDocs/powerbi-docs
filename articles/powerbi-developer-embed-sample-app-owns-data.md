@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Integrate a dashboard, tile, or report into your application for your customers"
+   pageTitle="Embed Power BI content into an application for your customers"
    description="Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI APIs for your customers."
    services="powerbi"
    documentationCenter=""
@@ -19,7 +19,7 @@
    ms.date="10/05/2017"
    ms.author="asaxton"/>
 
-# Integrate a dashboard, tile, or report into your application (app owns data)
+# Embed a Power BI dashboard, tile, or report into your application
 
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
