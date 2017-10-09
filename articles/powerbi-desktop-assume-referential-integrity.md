@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/09/2017"
    ms.author="davidi"/>
 
 # Assume referential integrity settings in Power BI Desktop
@@ -72,7 +72,7 @@ If you set **Assume Referential Integrity** when there are referential integrity
 
 ## More information
 
-Learn more about [DirectQuery](powerbi-deskto-use-directquery.md)
+Learn more about [DirectQuery](powerbi-desktop-use-directquery.md)
 
 Get more information about [Relationships in Power BI](powerbi-desktop-create-and-manage-relationships.md)
 

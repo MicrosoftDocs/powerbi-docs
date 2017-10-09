@@ -20,7 +20,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/09/2017"
    ms.author="davidi"/>
 
 # Congratulations - and what's next for you
@@ -32,7 +32,7 @@ You did it! **Congratulations!** You've completed the **Guided Learning** course
 This is the last section (and the final topic, unless you want to learn DAX) in the course, so if you went through all of these sections in order, take a moment to pat yourself on the back. Good job! You're now well versed in all these **important concepts**:
 
 -   What [Power BI is](powerbi-learning-0-0-what-is-power-bi.md)
--   The [building blocks](powerbi-learning-0b-building-blocks-power-bi.md) of Power BI
+-   The [building blocks](powerbi-learning-0-0b-building-blocks-power-bi.md) of Power BI
 -   [Getting](powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop.md) and [modeling](powerbi-learning-2-1-intro-modeling-data.md) data
 -   [Visualizations](powerbi-learning-3-1-intro-visualizations.md)
 -   [Exploring data](powerbi-learning-4-0-intro-power-bi-service.md) in the Power BI service

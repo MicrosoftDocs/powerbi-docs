@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/09/2017"
    ms.author="davidi"/>
 
 # Use See Data and See Records in Power BI Desktop
@@ -89,4 +89,4 @@ There are a few limitations to consider when using **See Data** or **See Records
 
 -   [Use grouping and binning in Power BI Desktop](powerbi-desktop-grouping-and-binning.md)
 
--   [Use gridlines, snap-to-grid, z-order, alignment and distribution in Power BI Desktop reports](powerbi-desktop-gtidlines-snap-to-grid.md)
+-   [Use gridlines, snap-to-grid, z-order, alignment and distribution in Power BI Desktop reports](powerbi-desktop-gridlines-snap-to-grid.md)
