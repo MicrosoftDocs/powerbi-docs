@@ -9,8 +9,8 @@
 
 2. My workspace in Shared capacity
 
-    * Sharing requires a Pro license.
+    * Sharing requires a Pro license. Recipients also need Pro licenses.
 
 3. App workspaces in Shared capacity
 
-    * Any app usage requires Pro licenses
+    * Any app usage requires Pro licenses.

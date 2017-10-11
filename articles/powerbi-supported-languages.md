@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/03/2017"
+   ms.date="10/10/2017"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -86,7 +86,7 @@ Stay tuned as we work to bring additional features to other languages. 
 
 ## Choose your language in the Power BI service
 
-1. In the Power BI service, select the **Settings** icon ![](media/powerbi-supported-languages/pbi_settings_icon.png) > **Settings**.
+1. In the Power BI service, select the **Settings** icon ![Settings icon](media/powerbi-supported-languages/pbi_settings_icon.png) > **Settings**.
 
 2. On the **General** tab > **Language**.
 
@@ -98,9 +98,9 @@ Power BI detects your language based on the language preferences on your compute
 
 ### Internet Explorer (version 11)
 
-1.  Click the Tools button in the top-right corner of your browser window:
+1.  Click the **Tools** button in the top-right corner of your browser window:
 
-    ![](media/powerbi-supported-languages/languages1.png)
+    ![Internet Explorer Tools button](media/powerbi-supported-languages/languages1.png)
 
 2.  Click **Internet Options**.
 
@@ -110,7 +110,7 @@ Power BI detects your language based on the language preferences on your compute
 
 1.  Click the menu button in the top-right corner of your browser window:
 
-    ![](media/powerbi-supported-languages/languages2.png)
+    ![Chrome menu button](media/powerbi-supported-languages/languages2.png)
 
 2.  Click **Settings**.
 
@@ -120,33 +120,50 @@ Power BI detects your language based on the language preferences on your compute
 
 5.  Click **Add**, select a language, and click **OK**.
 
-    ![](media/powerbi-supported-languages/pbi_langs_enus.png)
+    ![Chrome languages list](media/powerbi-supported-languages/pbi_langs_enus.png)
 
     The new language is at the end of the list. 
 
 6.  Drag the new language to the top of the list, and click **Display Google Chrome in this language**.
 
-    ![](media/powerbi-supported-languages/pbi_langs_eses.png)
+    ![Display Google Chrome in this language](media/powerbi-supported-languages/pbi_langs_eses.png)
 
     You may need to close and reopen your browser to see the change.
 
-## Choose your language when you download Power BI Desktop
+## Choose the language or locale of Power BI Desktop
 
-You have the option to select a language when you download Power BI Desktop. 
+You have two ways of getting Power BI Desktop: You can download it, or install it from the Windows Store.
 
--  [Install Power BI Desktop](http://aka.ms/pbidesktopstore) from the Windows Store.
+- If you [install Power BI Desktop from the Windows Store](#install-power-bi-desktop-from-the-windows-store), it installs all the locales and shows the locale that corresponds to the Windows default language.
+- If you [download Power BI Desktop](#download-power-bi-desktop), you choose the locale when you download it. You can change the date and number formats for a specific report. 
 
-The only way to change the language in Power BI Desktop is to go back to the download page and download it in a different language.
+### Choose a language for Power BI Desktop installed from the Windows Store
 
-## Choose the locale of a report in Power BI Desktop
+1.  [Install Power BI Desktop](http://aka.ms/pbidesktopstore) from the Windows Store.
+2. To change the locale, on your computer search for **Windows Settings**. 
+3. Select **Time & language**.
 
-You can set the locale (the date and number formats) for a specific report to be something other than the locale in your version of Power BI Desktop. 
+     ![Windows settings dialog box](media/powerbi-supported-languages/power-bi-service-windows-settings.png)
+    
+1. Select **Region & language**, select a language, and select **Set as default**.
 
-1.  Go to **File** > **Options and settings** > **Options**.
+     ![Windows language settings dialog box](media/powerbi-supported-languages/power-bi-service-language-settings.png)
+
+### Choose a language when you download Power BI Desktop
+
+- Select a language when you [download Power BI Desktop](https://powerbi.microsoft.com/desktop). 
+
+To change the language in Power BI Desktop, go back to the download page and download it in a different language.
+
+### Choose a locale for date and number formats
+
+You choose the locale when you download Power BI Desktop. After that, you can set the date and number formats for a specific report to be something other than the locale in your version of Power BI Desktop. 
+
+1.  In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2.  Under **Current file**, select **Regional Settings**.
 3.  In the **Locale** box, select a different locale. 
 
-    ![](media/powerbi-supported-languages/pbi_supptdlangs_locale.png)
+    ![Power BI Desktop Options dialog box](media/powerbi-supported-languages/pbi_supptdlangs_locale.png)
 
 4.  Select **OK**.
 
