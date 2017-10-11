@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="10/05/2017"
    ms.author="asaxton"/>
 
 # Download and use custom visuals from the Office store
@@ -28,11 +28,11 @@ The Office store has many useful custom visuals created by the community and [cr
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-visual-store.png)
 
-What is the Office store? Simply put, it is the place to find apps (add-in) for your Office 365 software. The [Office store](https://store.office.com/appshome.aspx?productgroup=PowerBI) connects millions of users of Office 365 to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
+What is the Office store? Simply put, it is the place to find apps (add-in) for your Office 365 software. The [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365 to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
 
 ## Power BI visualizations
 
-Power BI is a product in the Office store. Selecting Power BI will navigate to the [Power BI custom visuals](https://store.office.com/appshome.aspx?productgroup=PowerBI) main page where users can view top visuals in each category, including *Editor's Picks*.
+Power BI is a product in the Office store. Selecting Power BI will navigate to the [Power BI custom visuals](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) main page where users can view top visuals in each category, including *Editor's Picks*.
 
 ![](media/powerbi-custom-visuals-office-store/powerbi-custom-visual-store.png)
 

@@ -17,34 +17,22 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/05/2017"
    ms.author="davidi"/>
 
-# Use the new Matrix visual in Power BI Desktop
+# Use the Matrix visual in Power BI Desktop
 
-With the new **Matrix** visual, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** reports, and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Lastly, to make better use of layout space, the new matrix visual supports a stepped layout.
+With the **Matrix** visual, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** reports, and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Lastly, to make better use of layout space, the matrix visual supports a stepped layout.
 
 ![](media/powerbi-desktop-matrix-visual/matrix-visual_2a.png)
 
-There are many new features associated with the matrix, and we'll go through them in the following sections of this article.
+There are many features associated with the matrix, and we'll go through them in the following sections of this article.
 
-> **Note:** Beginning with the July 2017 release, new matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. See [**Use Report Themes in Power BI Desktop**](powerbi-desktop-report-themes.md) for more information about themes.
-
-### Enable the Matrix visual for Preview
-
-Beginning with the July 2017 release of **Power BI Desktop**, the new matrix visual is generally available, and there are no steps necessary to enable the new Matrix visual. All matrix visuals created with the July 2017 or later versions of **Power BI Desktop** are based on the new matrix visual (rather than the previous version).
-
-You can try the new **Matrix** visual with the **March 2017** through **June 2017** releases of **Power BI Desktop**. To enable this preview feature for those versions of **Power BI Desktop**, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **New matrix visual**. You'll need to restart **Power BI Desktop** after you make the selection.
-
-![](media/powerbi-desktop-matrix-visual/matrix-visual_1.png)
-
-The original version of the matrix visual continues to be available, to ensure your existing reports aren't affected by the new version of the matrix. In the image below, you'll see that the original matrix is called **Matrix** (1, in the image below, when hovered over), and the new matrix is called **Matrix Preview** (2, in the image below). Beginning with the **July 2017** release, the visual called **Matrix** is the new Matrix visual.
-
-![](media/powerbi-desktop-matrix-visual/matrix-visual_3.png)
+> **Note:** Beginning with the July 2017 release of **Power BI Desktop**, matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. See [**Use Report Themes in Power BI Desktop**](powerbi-desktop-report-themes.md) for more information about themes.
 
 ## Using drill-down with the Matrix visual
 
-With the new **Matrix** visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill-down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these work.
+With the **Matrix** visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill-down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these work.
 
 
 ### Drill-down on row headers
@@ -111,11 +99,11 @@ In the *original* version of the matrix visual, subcategories were shown in an e
 
 ![](media/powerbi-desktop-matrix-visual/matrix-visual_14.png)
 
-In the following image, you see a new **Matrix** visual, with **stepped layout** in action. Notice the category *Computers* has its subcategories (Computers Accessories, Desktops, Laptops, Monitors, and so on) slightly indented, providing a cleaner and much more condensed visual.
+In the following image, you see a **Matrix** visual, with **stepped layout** in action. Notice the category *Computers* has its subcategories (Computers Accessories, Desktops, Laptops, Monitors, and so on) slightly indented, providing a cleaner and much more condensed visual.
 
 ![](media/powerbi-desktop-matrix-visual/matrix-visual_13.png)
 
-You can easily adjust the **stepped layout** settings. With the new **Matrix** visual selected, in the **Format** section (the paint roller icon) of the **Visualizations** pane, expand the **Row headers** section. In there are two options: the **Stepped layout** toggle (which turns it off or on), and the **Stepped layout indentation** (specifies the indentation amount, in pixels).
+You can easily adjust the **stepped layout** settings. With the **Matrix** visual selected, in the **Format** section (the paint roller icon) of the **Visualizations** pane, expand the **Row headers** section. In there are two options: the **Stepped layout** toggle (which turns it off or on), and the **Stepped layout indentation** (specifies the indentation amount, in pixels).
 
 ![](media/powerbi-desktop-matrix-visual/matrix-visual_15.png)
 
@@ -136,15 +124,15 @@ The same process applies for column subtotals.
 
 ## Cross-highlighting with matrix visuals
 
-With the new **Matrix** visual, any elements in the matrix can be selected as the basis for cross-highlighting. Select a column in a new **Matrix** and that column is highlighted, as are any other visuals on the report page. This has been a common feature of other visuals and the selection of a data point, and now the new **Matrix** visual can participate.
+With the **Matrix** visual, any elements in the matrix can be selected as the basis for cross-highlighting. Select a column in a **Matrix** and that column is highlighted, as are any other visuals on the report page. This has been a common feature of other visuals and the selection of a data point, and now the **Matrix** visual can participate.
 
-In addition, using CTRL+Click also works for cross-highlighting. For example, in the following image a collection of subcategories were selected from the new **Matrix** visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the new **Matrix** visual.
+In addition, using CTRL+Click also works for cross-highlighting. For example, in the following image a collection of subcategories were selected from the **Matrix** visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the **Matrix** visual.
 
 ![](media/powerbi-desktop-matrix-visual/matrix-visual_16.png)
 
 ## Shading and font colors with matrix visuals
 
-With the new **Matrix** visual, you can apply **conditional formatting** (colors and shading) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.
+With the **Matrix** visual, you can apply **conditional formatting** (colors and shading) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.
 
 To apply conditional formatting, you can do either of the following when a matrix visual is selected:
 
@@ -163,7 +151,7 @@ Either approach achieves the same result. Selecting *Advanced controls* displays
 
 ## Limitations and considerations
 
-In this release of the new **Matrix** visual, there are a few limitations and considerations to keep in mind.
+In this release of the **Matrix** visual, there are a few limitations and considerations to keep in mind.
 
 -   Drill on columns can only be done by using the right-click menu, and there's currently no indication on the visual that you can drill into row or column groups
 -   You can only expand all items in a level at once, rather than expanding one category at a time
@@ -173,4 +161,4 @@ In this release of the new **Matrix** visual, there are a few limitations and co
 -   Column headers may be truncated if inner groups have shorter text than the outer group
 -   Changing the stepped layout indentation shouldn't indent the outermost row group's indent
 
-We're always eager to hear your thoughts. We're currently conducting a **survey** on this new **Matrix** visual, so if you have a few minutes, please [take the survey](https://www.instant.ly/s/PYXT1).
+We're always eager to hear your thoughts. We're currently conducting a **survey** on this **Matrix** visual, so if you have a few minutes, please [take the survey](https://www.instant.ly/s/PYXT1).

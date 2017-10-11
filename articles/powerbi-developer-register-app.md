@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/21/2017"
+   ms.date="10/05/2017"
    ms.author="asaxton"/>
 
 # Register an Azure AD app to embed Power BI content
@@ -28,7 +28,7 @@ You register your application with Azure AD to allow your application access to 
 
 > [AZURE.IMPORTANT] Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the app registration will not complete successfully.
 
-There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/) or you can do it directly within the Azure Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to your app, this can be done through the Azure Portal.
+There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/) or you can do it directly within the Azure portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to your app, use the Azure portal.
 
 ## Register with the Power BI App Registration Tool
 
@@ -45,13 +45,13 @@ Here's how to register your application with the Power BI App Registration Tool:
 4. The App type selection will depend on the type of application you are using.
 
     * Use **Server-side Web app** for web apps or web APIs.
-    * Use **Native app** for apps that run on client devices. *You will also choose **Native app** if you are embedding content for non-Power BI users (app owns data) regardless of what the actual application is.*
+    * Use **Native app** for apps that run on client devices. ***You will also choose **Native app** if you are embedding content for your customers regardless of what the actual application is. Even for web applications.***
 
 5. Enter a value for **Redirect URL** and **Home Page URL**. Any valid URL will work.
 
     **Home Page URL** is only available if you choose **Server-side Web app** for the applciation type.
 
-    For the *App owns data* and *User owns data/integrate-dashboard-web-app* samples, the redirect URL will be `http://localhost:13526/redirect`. For the report and tile sample, the redirect URL will be `http://localhost:13526/`.
+    For the *embedding for your customers* and *integrate-dashboard-web-app* samples, the redirect URL will be `http://localhost:13526/redirect`. For the report and tile sample, the redirect URL will be `http://localhost:13526/`.
 
 6. Choose the APIs that this application will have access to. For more information about Power BI access permissions, see [Power BI Permissions](powerbi-developer-power-bi-permissions.md).
 
@@ -63,7 +63,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 You can now use the registered application as part of your custom application to interact with the Power BI service.
 
-> [AZURE.IMPORTANT] If you are embedding content for non-Power BI users (app owns data), you will need to configure additional permissions within the Azure portal. For more information, see [Apply permissions to your application](#apply-permissions-to-your-application).
+> [AZURE.IMPORTANT] If you are embedding content for your customers, you will need to configure additional permissions within the Azure portal. For more information, see [Apply permissions to your application](#apply-permissions-to-your-application).
 
 ## Register with the Azure portal
 
@@ -106,15 +106,15 @@ Here's how to get a client id:
 
 ## Apply permissions to your application within Azure AD
 
-> [AZURE.IMPORTANT] This section only applies to applications that are embedding content for non-Power BI users (app owns data).
+> [AZURE.IMPORTANT] This section only applies to applications that are **embedding content for your organization**.
 
 You will need to enable additional permissions to your application in addition to what was provided in app registration page. You can accomplish this through the Azure AD portal, or programmatically.
 
-You will want to be logged in with either the *master* account, used for embedding, or a Global Admin account.
+You will want to be logged in with either the *master* account, used for embedding, or a Global admin account.
 
-### Using the Azure AD Portal
+### Using the Azure AD portal
 
-1. Browse to the [App registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
+1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you are using for embedding.
 
     ![](media/powerbi-developer-register-app/powerbi-embedded-azuread-registered-apps.png)
 
@@ -130,7 +130,7 @@ You will want to be logged in with either the *master* account, used for embeddi
 
     ![](media/powerbi-developer-register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-    > [AZURE.NOTE] If you created the app directly in the Azure AD portal, **Power BI Servcie (Power BI)** may not be present. If it is not, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**. You can then continue to step 5.
+    > [AZURE.NOTE] If you created the app directly in the Azure AD portal, **Power BI Service (Power BI)** may not be present. If it is not, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**.  If **Power BI Service (Power BI)** is not available within **+ Add**, sign up for Power BI with at least one user.
 
 5. Select all permissions under **Delegated Permissions**. You will need to select them one by one in order to save the selections. Select **Save** when done.
 
@@ -203,6 +203,6 @@ You will want to be logged in with either the *master* account, used for embeddi
 
 ## Next steps
 
-Now that you have registered your application within Azure AD, you will need to authenticate users within your application. You can have a look at [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md) to learn more.
+Now that you have registered your application within Azure AD, you will need to authenticate users within your application. Have a look at [Authenticate users and get an Azure AD access token for your Power BI app](powerbi-developer-get-azuread-access-token.md) to learn more.
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

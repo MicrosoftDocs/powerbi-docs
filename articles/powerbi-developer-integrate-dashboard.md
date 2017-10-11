@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate a Power BI dashboard into an app"
-   description="Walkthrough to integrate a tile into an app, sample code"
+   pageTitle="Integrate a dashboard into an app for your organization"
+   description="Learn how to integrate, or embed, a dashboard into a web app using the Power BI APIs."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -17,24 +17,24 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="10/05/2017"
    ms.author="asaxton"/>
 
-# Integrate a dashboard into an app (user owns data)
+# Integrate a dashboard into an app for your organization
 
-Learn how to integrate, or embed, a dashboard into a web app using REST API calls along with the Power BI JavaScript API when embedding for Power BI users (user owns the data).
+Learn how to integrate, or embed, a dashboard into a web app using REST API calls along with the Power BI JavaScript API when embedding for your organization.
 
-![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
+![Embedded dashboard](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, you can [sign up for a free Power BI account](powerbi-service-self-service-signup-for-power-bi.md), or you can create your own [Azure Active Directory tenant ](powerbi-developer-create-an-azure-active-directory-tenant.md) for testing purposes.
+To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, you can [sign up for a free Power BI account](powerbi-service-self-service-signup-for-power-bi.md), or you can create your own [Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) for testing purposes.
 
-> [AZURE.NOTE] Looking to embed a dashboard for non-Power BI users (app owns data), using an embedtoken, instead? See, [Integrate a dashboard, tile, or report into your application (app owns data)](powerbi-developer-embed-sample-app-owns-data.md).
+> [AZURE.NOTE] Looking to embed a dashboard for your customers, using an embedtoken, instead? See, [Integrate a dashboard, tile, or report into your application for your customers](powerbi-developer-embed-sample-app-owns-data.md).
 
 To integrate a dashboard into a web app, you use the **Power BI** REST API, or the Power BI C# SDK, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using the same access token. The **Power BI** API provides programmatic access to certain **Power BI** resources. For more information, see [Overview of Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## Download the sample
 
-This article shows the code used in the [User Owns Data sample - integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app) on GitHub. To follow along with this walkthrough, you can download the sample.
+This article shows the code used in the [integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app) on GitHub. To follow along with this walkthrough, you can download the sample.
 
 ## Step 1 - register an app in Azure AD
 
@@ -292,8 +292,8 @@ https://app.powerbi.com/dashboardEmbed?dashboardId={dashboardId}&groupId={groupI
 
 ## Next steps
 
-A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [User Owns Data sample - integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app).
+A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app).
 
-More information is also available for the JavaScript API, see [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+More information is available for the JavaScript API, see [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

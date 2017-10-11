@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Content Pack Certification Program"
+   pageTitle="Overview of the Power BI service content pack program"
    description="Content Pack Certification Program"
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/09/2017"
    ms.author="asaxton"/>
 
-# Service Content Packs Certification Program Overview
+# Overview of the Power BI service content pack program
 
 A content pack is a set of out-of-box content allowing users to immediately gain insights from a source. A content pack is typically focused on a specific business scenario providing insights for a role, domain, or workflow.
 

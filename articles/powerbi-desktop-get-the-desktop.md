@@ -8,8 +8,8 @@
    backup=""
    editor=""
    tags=""
-   qualityFocus="complete"
-   qualityDate="03/31/2016"/>
+   qualityFocus="monitoring"
+   qualityDate="08/15/2017"/>
 
 <tags
    ms.service="powerbi"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/28/2017"
+   ms.date="10/05/2017"
    ms.author="davidi"/>
 # Get Power BI Desktop
 
@@ -71,16 +71,21 @@ There are a few advantages to getting **Power BI Desktop** from the Windows Stor
 
 There are a few consideration and limitations for installing **Power BI Desktop** from the Windows Store, which include the following:
 
--    For R visuals, you’ll need to change temporary storage location by adjusting the **R scripting** settings, under **File > Options and Settings > R scripting** in **Power BI Desktop**. You should change it to a location in your user directory.
 -    If you use the SAP connector, you may need to move your SAP driver files to the *Windows\System32* folder.
 
 > **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
+
+> **Note:** The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/reportserver-quickstart-powerbi-report.md) article.
+
+
 
 ## Using Power BI Desktop
 
 When you launch **Power BI Desktop**, a *Welcome* screen is displayed.
 
-![](media/powerbi-desktop-getting-started/Designer_GSG_StartSplashScreen.png)
+![](media/powerbi-desktop-get-the-desktop/GetPBID_05.png)
+
+If this is your first time using **Power BI Desktop** (if the installation is not an upgrade), you'll be prompted to fill out a form and answer a few questions, or sign in to the **Power BI service** before you'll be able to proceed.
 
 From there, you can begin creating data models or reports, then share them with others on the Power BI service. Check out the **More information** links at the end of this article for links to guides that can help you get started using **Power BI Desktop**.
 

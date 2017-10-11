@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/09/2017"
    ms.author="davidi"/>
 
 # Data refresh in Power BI
@@ -228,7 +228,7 @@ Unfortunately, refresh is not supported in this scenario. In order to refresh th
 
 When you connect to a file on OneDrive, or SharePoint Online, your reports and dashboards will show data as it is in the file. In this case, your Excel workbook. Power BI automatically checks the file, about every hour, for updates. If you make changes to the workbook (stored in OneDrive or SharePoint Online), those changes are reflected in your dashboard and reports within an hour. You don’t need to setup refresh at all. However, if you need to see your updates in Power BI immediately, you can manually refresh the dataset by using Refresh Now.
 
-To learn more, see [Excel data in Power BI](powerbi-service-excel-data.md),[Replace an Excel, Power BI Desktop, or CSV file in Power BI](powerbi-replace-an-excel-power-bi-desktop-or-csv-file.md), [Refresh a dataset created from an Excel workbook on OneDrive](powerbi-refresh-excel-file-onedrive.md).
+To learn more, see [Excel data in Power BI](powerbi-service-excel-data.md), or [Refresh a dataset created from an Excel workbook on OneDrive](powerbi-refresh-excel-file-onedrive.md).
 
 ### Excel workbook connects to a SQL database in your company
 
