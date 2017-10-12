@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Optimize a visual for any size"
+   pageTitle="Optimize a Power BI visual for any size"
    description="Learn how to optimize visuals in Power BI Desktop and the Power BI service for the Power BI phone apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Optimize a visual for any size
+# Optimize a Power BI visual for any size
 
 You can set the visuals in your dashboard or report to be *responsive*, to change dynamically to display the maximum amount of data and insight, no matter the screen size.
 

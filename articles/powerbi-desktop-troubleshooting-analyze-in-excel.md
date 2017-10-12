@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Troubleshooting Analyze in Excel"
+   pageTitle="Troubleshooting Analyze in Excel in Power BI Desktop"
    description="Solutions to common issues for Analyze in Excel"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Troubleshooting Analyze in Excel

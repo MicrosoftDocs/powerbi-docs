@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Connect to a Snowflake computing warehouse in Power BI Desktop"
+   pageTitle="Connect to Snowflake computing warehouse in Power BI Desktop"
    description="Easily connect to and use a Snowflake computing warehouse in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/05/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Connect to Snowflake in Power BI Desktop

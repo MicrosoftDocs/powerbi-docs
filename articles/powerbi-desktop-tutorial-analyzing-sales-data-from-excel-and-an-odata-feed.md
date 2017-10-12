@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Tutorial: Analyzing sales data from Excel and an OData feed"
+   pageTitle="Tutorial: Analyzing sales data from Excel and an OData feed in Power BI Desktop"
    description="Tutorial: Analyzing sales data from Excel and an OData feed"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 # Tutorial: Analyzing sales data from Excel and an OData feed
 

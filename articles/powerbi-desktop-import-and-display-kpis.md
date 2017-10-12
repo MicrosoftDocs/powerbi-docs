@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Import and display KPIs (Preview)"
-   description="Import and display KPIs (Preview)"
+   pageTitle="Import and display KPIs in Power BI"
+   description="Import and display KPIs"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
-# Import and display KPIs
+# Import and display KPIs in Power BI
 
 With **Power BI Desktop**, you can import and display KPIs in tables, matrixes, and cards.
 

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Resolve issues importing Access and .XLS files in Power BI Desktop"
+   pageTitle="Resolve Access and .XLS import issues in Power BI Desktop"
    description="Resolve issues importing Access databases and .XLS spreadsheets in Power BI Desktop and Power Query"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/20/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Resolve issues importing Access and .XLS files in Power BI Desktop

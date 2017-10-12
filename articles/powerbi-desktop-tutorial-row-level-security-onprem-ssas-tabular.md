@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Tutorial: Dynamic row level security with Analysis services tabular model"
+   pageTitle="Tutorial: Dynamic row level security with Analysis services tabular model in Power BI"
    description="Tutorial: Dynamic row level security with Analysis services tabular model"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="selvar"/>
 
 # Tutorial: Dynamic row level security with Analysis services tabular model

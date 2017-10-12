@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Analysis Services Tabular data in Power BI Desktop"
+   pageTitle="Using Analysis Services Tabular data in Power BI Desktop
    description="Analysis Services Tabular data in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
-# Analysis Services Tabular data in Power BI Desktop
+# Using Analysis Services Tabular data in Power BI Desktop
 
 With Power BI Desktop, there are two ways you can connect to and get data from your SQL Server Analysis Services Tabular models: Explore by using a live connection or Select items and import into Power BI Desktop.
 

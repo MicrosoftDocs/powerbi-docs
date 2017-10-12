@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Analytics pane in Power BI Desktop"
+   pageTitle="Using the Analytics pane in Power BI Desktop"
    description="Create dynamic reference lines for visuals in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
@@ -17,11 +17,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 
-# Analytics pane in Power BI Desktop
+# Using the Analytics pane in Power BI Desktop
 
 With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** pane is found in the **Visualizations** area of Power BI Desktop, beginning with the August 2016 release (version 2.37.4464.321 or later), as shown below.
 

@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Power BI and DirectQuery"
+   pageTitle="Using DirectQuery in Power BI"
    description="Understand using DirectQuery with Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/09/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
-# Power BI and DirectQuery
+# Using DirectQuery in Power BI
 
 You can connect to all sorts of different data sources when using **Power BI Desktop** or the **Power BI service**, and you can make those data connections in different ways. You can either *import* data to Power BI, which is the most common way to get data, or you can connect directly to data in its original source repository, which is known as **DirectQuery**. This article describes **DirectQuery** and its capabilities, including the following topics:
 

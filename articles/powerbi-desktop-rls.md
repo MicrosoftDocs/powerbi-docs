@@ -1,5 +1,5 @@
 <properties
-pageTitle="Row-level security (RLS) with Power BI Desktop"
+pageTitle="Understand row-level security (RLS) with Power BI Desktop"
 description="How to configure row-level security for imported datasets, and DirectQuery, within Power BI Desktop."
 services="powerbi"
 documentationCenter=""
@@ -17,7 +17,7 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="08/11/2017"
+ms.date="10/12/2017"
 ms.author="asaxton"/>
 
 # Row-level security (RLS) with Power BI Desktop
