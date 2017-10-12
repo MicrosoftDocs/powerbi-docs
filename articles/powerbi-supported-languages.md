@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/11/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 # Supported languages and countries/regions for Power BI
 
@@ -140,7 +140,7 @@ You have two ways of getting Power BI Desktop: You can download it, or install i
 ### Choose a language for Power BI Desktop installed from the Windows Store
 
 1.  [Install Power BI Desktop](http://aka.ms/pbidesktopstore) from the Windows Store.
-2. To change the locale, on your computer search for **Windows Settings**. 
+2. To change the language, on your computer search for **Windows Settings**. 
 3. Select **Time & language**.
 
      ![Windows settings dialog box](media/powerbi-supported-languages/power-bi-service-windows-settings.png)
@@ -149,9 +149,11 @@ You have two ways of getting Power BI Desktop: You can download it, or install i
 
      ![Windows language settings dialog box](media/powerbi-supported-languages/power-bi-service-language-settings.png)
 
+     The next time you start Power BI Desktop it will use the language you set as the default. 
+
 ### Choose a language when you download Power BI Desktop
 
-The language you choose for Power BI Desktop affects the display format of numbers and dates in reports. For example, a currency column of 123456.78 could be shown as $123,456.78 or €123 456,78.
+The language you choose for Power BI Desktop affects the display format of numbers and dates in reports. 
 
 - Select a language when you [download Power BI Desktop](https://powerbi.microsoft.com/desktop). 
 
@@ -159,7 +161,7 @@ To change the language in Power BI Desktop, go back to the download page and dow
 
 ### Choose the locale to be used when importing data
 
-You choose the language when you download Power BI Desktop. After that, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop, for example, whether "3/4/2017" is interpreted as 3rd April or March 4th. 
+You choose the language when you download Power BI Desktop. After that, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. This changes the way data is interpreted when it’s imported from your data source, for example whether "3/4/2017" is interpreted as 3rd April or March 4th. 
 
 1.  In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2.  Under **Current file**, select **Regional Settings**.
