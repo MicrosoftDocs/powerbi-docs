@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Using Analysis Services Tabular data in Power BI Desktop
+   pageTitle="Using Analysis Services Tabular data in Power BI Desktop"
    description="Analysis Services Tabular data in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
