@@ -16,7 +16,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/02/2017"
+   ms.date="10/10/2017"
    ms.author="asaxton"/>
 
 # Power BI Premium - what is it?

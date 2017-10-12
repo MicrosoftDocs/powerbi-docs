@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2017"
+   ms.date="10/10/2017"
    ms.author="asaxton"/>
 
 # Manage capacities within Power BI Premium and Power BI Embedded
