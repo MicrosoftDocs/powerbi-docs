@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Find and connect to an organizational content pack"
+   pageTitle="Find and connect to organizational content packs - Power BI"
    description="Find and open an organizational content pack in Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
 # Find and connect to an organizational content pack  

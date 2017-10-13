@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="10 tips for getting help"
+   pageTitle="10 tips for getting help with your Power BI questions"
    description="Here are 10 ways to get help when you have a question about how Power BI works"
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/17/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# 10 tips for getting help 
+# 10 tips for getting help with your Power BI questions 
 
 Do you ever get frustrated using Power BI, ​​or struggle because you can't get ​​answers to your Power BI questions​ when you need them -- i.e. "just-in-time"? ​
 
@@ -49,7 +49,7 @@ Do videos fit your learning style better? Power BI has two sets you'll be intere
 ## 6 Attend training 
 The training options available to you are nearly endless, from in-person lab training to short videos.
 
-- [Guided learning](guided-learning.md) on the Power BI site.
+- [Guided learning](powerbi-learning-0-0-what-is-power-bi.md) on the Power BI site.
 - [Free Power BI  webinars](powerbi-webinars.md), live and on-demand, on the Power BI site.
 
 You can find additional options online, such as:

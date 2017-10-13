@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Remove your connection to an organizational content pack"
+   pageTitle="Disconnect from an organizational content pack - Power BI"
    description="Read about removing your connection to an organizational content pack by deleting its dataset in Power BI."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Remove your connection to an organizational content pack in Power BI 
+# Remove your connection to a Power BI organizational content pack
 
 A coworker created a content pack. You discovered it in AppSource and added it to your Power BI workspace. Now you don't need it any longer.  How do you remove it?
 

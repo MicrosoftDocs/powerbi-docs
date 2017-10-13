@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Organizational content packs: Copy, refresh, & get access"
+   pageTitle="Organizational content packs: Access and copy"
    description="Read about creating copies of and troubleshooting access to organizational content packs in Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Organizational content packs: Copy, refresh, & get access
+# Organizational content packs: Copy, refresh, and get access
 
 > [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. You create apps in *app workspaces*, which replace groups and group workspaces. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 

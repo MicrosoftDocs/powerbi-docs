@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Create and distribute an app in Power BI"
+   pageTitle="Create and distribute apps with dashboards and reports in Power BI"
    description="Apps are a collection of dashboards and reports built to deliver key metrics for your organization."
    services="powerbi" 
    documentationCenter="" 
@@ -16,10 +16,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/02/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Create and distribute an app in Power BI
+# Create and distribute apps with dashboards and reports in Power BI
 
 ## What are Power BI apps?
 

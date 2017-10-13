@@ -1,5 +1,5 @@
 <properties
-   pageTitle="How should I collaborate and share dashboards and reports?"
+   pageTitle="How should I collaborate and share dashboards and reports? Power BI"
    description="In Power BI you can collaborate on and share dashboards, reports, and tiles in several different ways. Each has its advantages."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# How should I collaborate and share dashboards and reports?  
+# How should I collaborate and share dashboards and reports in Power BI?  
 
 You create dashboards and reports. Maybe you collaborate on them with your coworkers, too. Then you want others to have access to them. What's the best way to distribute them?
 
@@ -80,7 +80,7 @@ You're sharing a snapshot of the tile, report, or visual, and your recipients se
 
 More about [annotating and sharing tiles, reports, and visuals](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) from the iOS and Android mobile apps.
 
-You can also share a snapshot of a tile from the [Power BI app for Windows 10 devices](powerbi-mobile-annotate-and-share-a-snapshot-from-the-windows-app.md).
+You can also [share a snapshot of a tile](powerbi-mobile-share-a-tile-from-the-win10phone-app.md) from the Power BI app for Windows 10 devices.
 
 ## Publish to the web
 

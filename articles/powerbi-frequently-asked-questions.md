@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Frequently asked questions"
+   pageTitle="Frequently asked questions in Power BI"
    description="Browse a list of frequently asked questions and answers about the Power BI service, Power BI Desktop, and the Power BI mobile apps."
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/17/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 # Frequently asked questions about Power BI
 
@@ -35,7 +35,7 @@ Power BI provides all sorts of features to help you get started exploring data i
 
 ## How much does Power BI cost?
 
-Power BI and Power BI Desktop are free. There is a 60-day free trial available for Power BI Pro. After that, Power BI Pro is $9.99/User/Month. Learn more about our pricing [Power BI pricing](https://powerbi.microsoft.com/pricing).
+Power BI Desktop are free. There is a 60-day free trial available for Power BI Pro. Read about pricing at [Power BI pricing](https://powerbi.microsoft.com/pricing).
 
 ## What if I have questions about Power BI Premium?
 
