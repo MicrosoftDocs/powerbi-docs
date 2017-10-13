@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/09/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Data refresh in Power BI
@@ -160,6 +160,8 @@ To learn more, see [Introduction to organizational content packs](powerbi-servic
 
 ## Live connections and DirectQuery to on-premises data sources
 With the On-premises Data Gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh.
+
+When connecting to a SQL Service Analysis Services (SSAS) data source using a Live connection, unlike DirectQuery, the Live connection to a SSAS source can run against the cache, even upon loading a report. This behavior improves load performance for the report. You can request the latest data from the SSAS data source by using the **refresh** button. Owners of SSAS data sources can configure the scheduled cache refresh frequency for the dataset to ensure reports are as up to date as they require. 
 
 When you configure a data source with the On-premises Data Gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
 

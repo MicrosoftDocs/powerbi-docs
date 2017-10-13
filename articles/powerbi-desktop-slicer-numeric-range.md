@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Use the numeric range slicer in Power BI Desktop (Preview)"
+   pageTitle="Use the numeric range slicer in Power BI Desktop"
    description="Learn how to use a slicer for constraining to numeric ranges in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
@@ -17,22 +17,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
-# Use the numeric range slicer in Power BI Desktop (Preview)
+# Use the numeric range slicer in Power BI Desktop
 
 With the **numeric range slicer**, you can apply all sorts of filters to any numeric column in your data model. You can choose to filter **between** numbers, **less than or equal** to a number, or **more than or equal** to a number. While this may sound straightforward, it's a very powerful way to filter your data.
 
 ![](media/powerbi-desktop-slicer-numeric-range/slicer-numeric-range_2.png)
-
-
-### Enable the numeric range slicer feature in Preview
-
-You can try the new **numeric range slicer** beginning with the **March 2017** release of **Power BI Desktop**. To enable this preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Numeric range slicer**. You'll need to restart Power BI Desktop after you make the selection.
-
-![](media/powerbi-desktop-slicer-numeric-range/slicer-numeric-range_1.png)
-
 
 ## Using the numeric range slicer
 

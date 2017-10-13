@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Use bookmarks to share insights and create stories in Power BI (Preview)"
+   pageTitle="Using bookmarks in Power BI (Preview)"
    description="Bookmarks in Power BI Desktop let you save views and settings in your reports, and build story-like presentations"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/05/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Use bookmarks to share insights and build stories in Power BI (Preview)

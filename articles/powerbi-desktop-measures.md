@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Measures in Power BI Desktop"
+   pageTitle="Use measures in Power BI Desktop"
    description="Measures in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 # Measures in Power BI Desktop
 

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Create and use a What if parameter to visualize variables in Power BI Desktop"
+   pageTitle="Using What if parameters to visualize variables in Power BI Desktop"
    description="Create your own What if variable to imagine and visualize variables in Power BI reports"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Create and use a What if parameter to visualize variables in Power BI Desktop

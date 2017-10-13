@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Connect to data sources using generic interfaces in Power BI Desktop"
+   pageTitle="Connect to data using generic interfaces in Power BI Desktop"
    description="Learn how to connect different data sources with generic interfaces in Power BI Desktop"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Connect to data using generic interfaces in Power BI Desktop

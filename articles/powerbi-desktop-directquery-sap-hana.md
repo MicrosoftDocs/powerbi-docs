@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="DirectQuery for SAP HANA"
+   pageTitle="DirectQuery for SAP HANA in Power BI"
    description="Considerations when using DirectQuery with SAP HANA"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # DirectQuery and SAP HANA

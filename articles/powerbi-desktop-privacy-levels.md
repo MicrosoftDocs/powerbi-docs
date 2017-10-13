@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Power BI Desktop privacy levels"
+   pageTitle="Understand Power BI Desktop privacy levels"
    description="Power BI Desktop privacy levels"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 # Power BI Desktop privacy levels
 

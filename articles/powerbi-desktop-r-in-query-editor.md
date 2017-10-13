@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Using R in Query Editor"
+   pageTitle="Using R in Power BI Query Editor"
    description="Use R in Power BI Desktop Query Editor for advanced analytics"
    services="powerbi"
    documentationCenter=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Using R in Query Editor

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Enroll your US Government organization in the Power BI service
@@ -92,7 +92,7 @@ The below is additional information for signing up for **Power BI US Government*
 ### Whitelisting Instructions
 *Whitelisting* is a process that the Power BI engineering team uses to move customers from the commercial cloud environment into the secure, Government cloud environment. This ensures that features available in the US Government cloud work as expected.
 
-To have your tenant *whitelisted* for the US Government cloud, fill out a supoprt ticket that makes the request, from the following link. Note that only administrators can make this request:
+To have your tenant *whitelisted* for the US Government cloud, fill out a support ticket that makes the request, from the following link. Note that only administrators can make this request:
 
 -   [*Whitelisting* online support request ](https://powerbi.microsoft.com/clouds/)
 -   Make sure you include the domain to be *whitelisted*, and the email for the Microsoft representative who is working with you on the process.

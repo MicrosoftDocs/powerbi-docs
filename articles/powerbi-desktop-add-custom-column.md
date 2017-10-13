@@ -17,12 +17,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/06/2017"
+   ms.date="10/12/2017"
    ms.author="davidi"/>
 
 # Add a custom column in Power BI Desktop
 
-You can easily add a new custom column of data to your model using **Query Editor** in **Power BI Desktop**. You can create and rename your custom column using easy buttons to create M formulas that define your custom column.
+You can easily add a new custom column of data to your model using **Query Editor** in **Power BI Desktop**. You can create and rename your custom column using easy buttons to create [M formulas](https://msdn.microsoft.com/library/mt270235.aspx) that define your custom column. The M formula has a [comprehensive function reference content set](https://msdn.microsoft.com/library/mt779182.aspx). 
 
 ![](media/powerbi-desktop-add-custom-column/add-custom-column_01.png)
 
@@ -42,7 +42,7 @@ When you do so, the **Add Custom Column** window appears, which we discuss in th
 
 ## The Add Custom Column window
 
-In the **Add Custom Column** window, you see the list of available fields in the pane on the right, the name of your custom column on the top (you can rename it just by typing a new name in that text box), and the **M** formula that you create (or write) based on inserting fields from the right, adding operators, and otherwise building the formula on which your new custom column will be defined.
+In the **Add Custom Column** window, you see the list of available fields in the pane on the right, the name of your custom column on the top (you can rename it just by typing a new name in that text box), and the [**M** formula](https://msdn.microsoft.com/library/mt779182.aspx) that you create (or write) based on inserting fields from the right, adding operators, and otherwise building the formula on which your new custom column will be defined. 
 
 ![](media/powerbi-desktop-add-custom-column/add-custom-column_03.png)
 
@@ -76,4 +76,6 @@ The **Advanced Editor** gives you full control over your query.
 
 There are other ways to create a custom column, including creating a column based on examples you provide to **Query Editor**. See the following article for more information on creating custom columns from examples:
 
--   [Add a column from an example in Power BI Desktop](powerbi-desktop-add-column-from-example.md)  
+-   [Add a column from an example in Power BI Desktop](powerbi-desktop-add-column-from-example.md)
+-   [Introduction to M formula language](https://msdn.microsoft.com/library/mt270235.aspx)
+-   [M function reference](https://msdn.microsoft.com/library/mt779182.aspx)  
