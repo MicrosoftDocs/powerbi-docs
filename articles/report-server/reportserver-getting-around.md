@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Navigating Power BI Report Server"
+   pageTitle="Power BI Report Server web portal basics"
    description="Read about navigating and working in the Power BI Report Server web portal."
    services="powerbi" 
    documentationCenter="" 
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
 # Navigating the Power BI Report Server web portal
@@ -91,7 +91,7 @@ You can view, upload, create, organize, and manage permissions for Power BI Desk
 
     ![Power BI Desktop app](media/reportserver-getting-around/report-server-powerbi-desktop-start.png)
 
-2. Create your Power BI report. See [Quickstart: Power BI reports](reportserver-quickstart-create-power-bi-report.md) for details.
+2. Create your Power BI report. See [Quickstart: Power BI reports](reportserver-quickstart-powerbi-report.md) for details.
 
 3. Upload your report to the report server.
 
@@ -117,7 +117,7 @@ You can view, upload, create, organize, and manage permissions for paginated rep
 
     ![New Report Builder report](media/reportserver-getting-around/report-server-report-builder-new.png)
 
-2. Create your paginated report. See [Quickstart: Paginated reports](reportserver-quickstart-create-paginated-report.md) for details.
+2. Create your paginated report. See [Quickstart: Paginated reports](reportserver-quickstart-paginated-report.md) for details.
 
 3. Upload your report to the report server.
 
@@ -215,6 +215,6 @@ You can switch to List view, where it's easy to move or delete multiple items at
 
 [User handbook](reportserver-user-handbook-overview.md)  
 [Quickstart: Paginated reports](reportserver-quickstart-paginated-report.md)  
-[Quickstart: Power BI reports](reportserver-quickstart-powerbi-report)
+[Quickstart: Power BI reports](reportserver-quickstart-powerbi-report.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

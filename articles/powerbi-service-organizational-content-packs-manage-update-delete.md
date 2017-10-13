@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Manage, update, and delete organizational content packs"
+   pageTitle="Organizational content packs: Manage and update"
    description="Read about managing, updating, and deleting organizational content packs in Power BI."
    services="powerbi" 
    documentationCenter="" 
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 # Manage, update, and delete organizational content packs
 

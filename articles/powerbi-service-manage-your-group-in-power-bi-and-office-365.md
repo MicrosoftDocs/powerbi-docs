@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 # Manage your app workspace in Power BI and Office 365
 

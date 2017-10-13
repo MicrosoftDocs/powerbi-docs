@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Create a QR code for a tile in Power BI"
+   pageTitle="Create a QR code for a tile to use in Power BI mobile apps"
    description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/15/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Create a QR code for a tile in Power BI
+# Create a QR code for a tile in Power BI to use in the mobile apps
 
 QR codes in Power BI can connect anything in the real world directly to related BI information &#151; no navigation or search needed.
 

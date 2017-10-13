@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/13/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
 # What's new in the mobile apps for Power BI  
@@ -146,7 +146,7 @@ With Q&A, you ask questions about your data in your own words, and Power BI prov
 Now you can have connections to up to five SQL Server Reporting Services (SSRS) servers at the same time.
 
 #### Android tablets
-**The Power BI mobile app** for Android tablets is now available globally. Get started with the [Power BI mobile app for Android tablets](powerbi-mobile-android-tablet-app-get-started).
+**The Power BI mobile app** for Android tablets is now available globally. Get started with the [Power BI on your Android tablet](powerbi-mobile-android-tablet-app-get-started.md).
 
 #### iOS and Android devices
 

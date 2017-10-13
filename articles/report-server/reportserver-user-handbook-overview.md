@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="User handbook overview, Power BI Report Server"
+   pageTitle="User handbook overview for Power BI Report Server"
    description="Welcome to the user handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports."
    services="powerbi" 
    documentationCenter="" 
@@ -16,10 +16,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# User handbook overview, Power BI Report Server
+# User handbook overview for Power BI Report Server
 
 Welcome to the user handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
 

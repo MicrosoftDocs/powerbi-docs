@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Install and use apps in Power BI"
+   pageTitle="Install and use apps, with dashboards and reports, in Power BI"
    description="In Power BI, apps bring related dashboards and reports together, all in one place."
    services="powerbi" 
    documentationCenter="" 
@@ -16,10 +16,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/02/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Install and use apps in Power BI
+# Install and use apps, with dashboards and reports, in Power BI
 
 In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](powerbi-content-packs-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
 

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Share reports with coworkers"
+   pageTitle="Share Power BI reports with coworkers"
    description="Learn how to share Power BI reports, and filtered reports, with coworkers in your organization."
    services="powerbi"
    documentationCenter=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Share reports with coworkers
+# Share Power BI reports with your coworkers
 
 *Sharing* is a good way to give a few people access to your dashboards and reports. Power BI offers [several ways to collaborate and distribute your reports](powerbi-service-how-should-i-share-my-dashboard.md), and sharing is just one.
 

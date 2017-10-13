@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Share a dashboard that links to an Excel file in OneDrive"
+   pageTitle="Share dashboard linked to an Excel file in OneDrive - Power BI"
    description="Read about sharing dashboards connected to an Excel workbook on OneDrive for Business, with tiles pinned from that workbook."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Share a dashboard that links to an Excel file in OneDrive
+# Share a Power BI dashboard that links to an Excel file in OneDrive
 
 In Power BI, you can [connect to Excel workbooks on OneDrive for Business](powerbi-bring-in-whole-excel-files.md) and pin tiles to a dashboard from that workbook. When you share that dashboard, or create a content pack that includes that dashboard:
 

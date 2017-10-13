@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Create and publish an organizational content pack (tutorial)"
+   pageTitle="Create and publish an organizational content pack - Power BI"
    description="In this tutorial you create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/10/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Create and publish an organizational content pack (tutorial)
+# Create and publish a Power BI organizational content pack (tutorial)
 
 > [AZURE.NOTE] Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](powerbi-service-what-are-apps.md).
 

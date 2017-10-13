@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Create a view of a dashboard optimized for mobile phones"
+   pageTitle="Create a view of a Power BI dashboard for mobile phones"
    description="Learn how to create a customized view of a dashboard in the Power BI service specifically for viewing on mobile phones."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Create a view of a dashboard optimized for mobile phones
+# Create a view of a Power BI dashboard optimized for mobile phones
 
 When you view dashboards in the Power BI mobile app on a phone, you notice the dashboard tiles are laid out one after another, all the same size. In the Power BI service, you can create a customized view of any dashboard that you own, specifically for phones.
 

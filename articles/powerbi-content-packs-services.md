@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Connect to services with Power BI"
+   pageTitle="Connect to the services you use with Power BI"
    description="Connect to a number of the services you use to run your business, such as Salesforce, Microsoft Dynamics CRM, and Google Analytics."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Connect to services with Power BI
+# Connect to the services you use with Power BI
 
 You can connect to a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business. 
 

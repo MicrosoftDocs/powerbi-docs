@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Add comments to a report in a report server"
+    pageTitle="Add comments to a report in a report server - Power BI Report Server"
    description="Learn how to add comments to a Power BI or a paginated report on a Power BI Report Server or SQL Server Reporting Services report server."
    services="powerbi"
    documentationCenter=""
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
 # Add comments to a report in a report server
