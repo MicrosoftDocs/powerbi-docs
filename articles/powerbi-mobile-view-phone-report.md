@@ -45,7 +45,7 @@ If a phone-optimized report has filters defined, when you view the report on an 
 1. Tap the filter icon ![Phone filter icon](media/powerbi-mobile-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page. 
 2. Use basic or advanced filtering to see the results you're interested in.
  
-    ![Phone BI phone report advanced filter](media/powerbi-mobile-view-phone-report/power-bi-iphone-advanced-filter toronto.gif)
+    ![Phone BI phone report advanced filter](media/powerbi-mobile-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## Cross-highlight visuals
 Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
