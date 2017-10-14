@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Ask questions with the Q&A virtual analyst in the iOS apps"
+   pageTitle="Ask questions with Q&A virtual analyst in iOS apps - Power BI"
    description="In this tutorial, try asking questions about this sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/01/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Ask questions with the Q&A virtual analyst in the iOS apps
+# Ask questions about your data with the Q&A virtual analyst in iOS apps - Power BI
 
 Applies to:
 

@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Known issue with 'communication failures' in iOS mobile apps"
+   pageTitle="Error: "communication failures" in iOS mobile apps - Power BI"
    description="This article may help if you see this message, 'We encountered communication failures. The failures might be related to proxy settings on your Wi-Fi connection.'" 
    services="powerbi" 
    documentationCenter="" 
@@ -17,9 +17,9 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
-# Known issue with 'communication failures' in iOS mobile apps 
+# Error: "communication failures" in iOS mobile apps - Power BI
 
 | ![iPhone](media/powerbi-mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png) |
 |:------------------------|:----------------------------|

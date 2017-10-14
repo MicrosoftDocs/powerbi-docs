@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Annotate & share a tile, report, or visual in the mobile apps"
+   pageTitle="Annotate and share in Power BI mobile apps"
    description="Read about annotating and sharing tiles, reports, and visuals from the Microsoft Power BI mobile app for iOS and Android. "
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/14/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Annotate & share a tile, report, or visual in the mobile apps
+# Annotate and share a tile, report, or visual in Power BI mobile apps
 
 Applies to:
 

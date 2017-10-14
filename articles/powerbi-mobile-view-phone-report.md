@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View reports optimized for your phone"
+   pageTitle="View Power BI reports optimized for your phone"
    description="Read about interacting with report pages optimized for viewing in the Power BI phone apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/22/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# View reports optimized for your phone 
+# View Power BI reports optimized for your phone 
 
 When you create a Power BI report in Power BI Desktop, you can also create a version of that [report optimized for viewing in the Power BI app on a phone](powerbi-desktop-create-phone-report.md).
 

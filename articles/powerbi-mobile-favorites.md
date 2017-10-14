@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Make favorites in the mobile apps"
+   pageTitle="Make favorites in the Power BI mobile apps"
    description="Read about making and viewing your favorite Power BI dashboards, apps, and Power BI Report Server and Reporting Services reports and KPIs in the mobile apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Favorite dashboards and on-premises reports in the mobile apps 
+# Make favorite dashboards, apps, and on-premises reports in the Power BI mobile apps
 
 Applies to:
 

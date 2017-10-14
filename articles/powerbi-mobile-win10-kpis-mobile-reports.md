@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View SSRS mobile reports and KPIs in the Windows 10 mobile app"
+   pageTitle="View SSRS mobile reports, KPIs in Windows 10 mobile app - Power BI"
    description="The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# View SSRS mobile reports and KPIs in the Windows 10 mobile app
+# View Reporting Services (SSRS) mobile reports and KPIs in the Windows 10 Power BI mobile app
 
 The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 
 

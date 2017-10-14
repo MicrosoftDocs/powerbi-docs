@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Reports in the Power BI mobile apps"
+   pageTitle="Explore reports in the Power BI mobile apps"
    description="Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps. "
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/12/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Reports in the Power BI mobile apps
+# Explore reports in the Power BI mobile apps
 
 Applies to:
 

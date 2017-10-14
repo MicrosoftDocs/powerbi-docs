@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Get Power BI data from the real world with the mobile apps"
+   pageTitle="Get real-world data with the Power BI mobile apps"
    description="Power BI mobile apps can connect the real world directly to related BI information, no search needed."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Get Power BI data from the real world with the mobile apps
+# Get data from the real world with the Power BI mobile apps
 
 Power BI mobile apps can connect the real world directly to related BI information, in a number of different ways. 
 

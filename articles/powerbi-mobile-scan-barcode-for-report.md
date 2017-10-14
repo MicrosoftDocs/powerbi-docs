@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Scan a barcode from the Power BI app on your iPhone"
+   pageTitle="Scan a barcode with an iPhone from the Power BI mobile app"
    description="Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Scan a barcode from the Power BI app on your iPhone
+# Scan a barcode with your iPhone from the Power BI mobile app
 
 Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
 

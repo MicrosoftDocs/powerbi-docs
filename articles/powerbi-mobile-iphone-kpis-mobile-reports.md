@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# View on-premises reports and KPIs in the Power BI mobile apps
+# View on-premises report server reports and KPIs in the Power BI mobile apps
 
 Applies to:
 

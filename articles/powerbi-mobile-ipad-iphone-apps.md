@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Power BI mobile app for iOS: Your data on your iOS device"
+   pageTitle="Explore your data on the Power BI mobile app for iOS devices"
    description="View and engage with your Power BI dashboards and reports, and Reporting Services mobile reports and KPIs, on your iPad, iPhone, Apple Watch, and iPod Touch."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Power BI mobile app for iOS: Your data on your iOS device
+# Explore your data on the Power BI mobile app for iOS devices
 
 The Microsoft Power BI app for iOS delivers the mobile BI experience on iPad, iPhone, Apple Watch, and iPod Touch. The apps provide live, touch-enabled mobile access to your important business information, so you can view and interact with your organization's Power BI dashboards and reports, and Reporting Services mobile reports and KPIs, from anywhere. Explore the data in your dashboards, and share them with your colleagues in email or text messages.
 

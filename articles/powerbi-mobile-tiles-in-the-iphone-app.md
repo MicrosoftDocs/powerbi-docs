@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Interact with tiles in the mobile apps"
+   pageTitle="Explore tiles in the Power BI mobile apps"
    description="Tiles are live snapshots of your data, pinned to a dashboard. Learn about interacting with tiles in the Power BI mobile apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Interact with tiles in the mobile apps
+# Explore tiles in the Power BI mobile apps
 
 Applies to:
 
