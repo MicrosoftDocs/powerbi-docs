@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Troubleshooting the Power BI mobile app on Android devices"
+   pageTitle="Error: "need to update Android System Webview" - Power BI"
    description="When signing in to the Android mobile app, you may get a message that you need to update Android System Webview."
    services="powerbi" 
    documentationCenter="" 
@@ -17,12 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/19/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Troubleshoot the mobile app on Android devices
-
-## Getting the message that you need to update Android System Webview
+# Error: "need to update Android System Webview" - Power BI
 
 When signing in to the Android mobile app for Microsoft Power BI, you may get a message that you need to update Android System Webview. 
 

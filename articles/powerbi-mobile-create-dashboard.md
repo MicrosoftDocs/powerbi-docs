@@ -19,7 +19,7 @@
    ms.workload="powerbi"
    ms.date="07/18/2017"
    ms.author="maggies"/>
-# View dashboards in the Power BI mobile apps
+# View your dashboards in the Power BI mobile apps
 
 Applies to:
 

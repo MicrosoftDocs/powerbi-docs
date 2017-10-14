@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Filter a report by geographic location in the mobile apps"
+   pageTitle="Filter report by geographic location in a Power BI mobile app"
    description="Learn how you can filter a report by your geographic location in the Microsoft Power BI mobile apps, if the report owner set geographic tags."
    services="powerbi" 
    documentationCenter="" 
@@ -16,10 +16,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Filter a report by geographic location in the mobile apps
+# Filter a report by geographic location in the Power BI mobile apps
 
 Applies to:
 

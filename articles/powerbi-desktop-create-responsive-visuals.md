@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
 # Optimize a Power BI visual for any size
@@ -28,11 +28,11 @@ As a visual changes size, Power BI prioritizes the data view, for example removi
 
 ![Responsive visual resizing](media/powerbi-desktop-create-phone-report/power-bi-responsive-visual.gif)
 
-You choose whether to turn on responsiveness for each visual.
+You can turn on responsiveness for any visual with X and Y axes, and slicers.
 
 ## Turn on responsiveness in Power BI Desktop
 
-1. In Power BI Desktop, go to **Desktop Layout**.
+1. In Power BI Desktop, on the **View** tab, make sure you're in **Desktop Layout**.
 
     ![Desktop Layout icon](media/powerbi-desktop-create-phone-report/power-bi-desktop-layout.png)
 

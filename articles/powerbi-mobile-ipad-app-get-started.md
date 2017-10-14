@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Get started with the iPad mobile app"
+   pageTitle="Get started with the Power BI mobile app on an iPad"
    description="Learn how the Microsoft Power BI for iOS app on the iPad brings Power BI to your pocket, with mobile access to business information on premises and in the cloud."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Get started with Power BI for iOS on the iPad  
+# Get started with the Power BI mobile app on an iPad  
 
 The Microsoft Power BI for iOS on the iPad delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. 
 

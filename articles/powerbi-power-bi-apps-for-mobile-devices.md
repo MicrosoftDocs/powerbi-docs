@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Power BI apps for mobile devices"
+   pageTitle="Power BI goes anywhere in mobile apps for your mobile device"
    description="The Power BI mobile apps keep you connected to your data on premises or in the cloud. View Power BI dashboards and reports on your mobile device."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/13/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Power BI apps for mobile devices  
+# Take Power BI anywhere in mobile apps for your mobile device 
 
 You view your Power BI dashboards and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and your on-premises Power BI reports on [Power BI Report Server](report-server/reportserver-get-started.md). Now you can connect to your on-premises and cloud data from the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards and reports on your mobile device &#151; be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone or tablet, or Windows 10 device.
 

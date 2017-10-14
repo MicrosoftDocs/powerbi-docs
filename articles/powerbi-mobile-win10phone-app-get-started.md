@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/17/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
 # Get started with the Power BI mobile app for Windows 10

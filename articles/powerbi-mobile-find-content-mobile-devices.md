@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Find your dashboards, reports, and apps on your mobile device"
+   pageTitle="Find dashboards, reports, apps in the Power BI mobile apps"
    description="Read about where to find your dashboards and reports in the Power BI mobile apps, depending on where they came from."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/17/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Find your dashboards, reports, and apps on your mobile device
+# Find your dashboards, reports, and apps in the Power BI mobile apps
 
 Applies to:
 

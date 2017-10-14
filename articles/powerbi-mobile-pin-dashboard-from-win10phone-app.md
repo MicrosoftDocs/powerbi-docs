@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Pin a tile or dashboard to the Windows 10 Start screen"
-   description="Learn how to pin a Power BI tile or dashboard to the Windows 10 Start screen from the Power BI mobile app, so you can see critical metrics at a glance."
+   pageTitle="Pin dashboard to Windows 10 Start screen - Power BI mobile app"
+   description="Learn how to pin a Power BI dashboard to the Windows 10 Start screen from the Power BI mobile app, so you can see critical metrics at a glance."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/17/2017"
+   ms.date="10/12/2017"
    ms.author="maggies"/>
 
-# Pin a tile or dashboard to the Windows 10 Start screen
+# Pin a dashboard to your Windows 10 Start screen from the Power BI mobile app
 
 You can pin Power BI tiles and dashboards to the Windows Start screen from the Power BI mobile app for Windows 10. They become *live tiles*, so you see all your critical metrics at a glance. You can pin tiles with KPIs and with a single number. When you add multiple tiles from the same dashboard, they're added to a single tile on the Start screen. When you tap the tile on the Start screen, the tile or dashboard opens in the Power BI mobile app for Windows 10.
 

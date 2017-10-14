@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/22/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
 # Create reports optimized for the Power BI phone apps
@@ -62,18 +62,7 @@ As a visual changes size, Power BI prioritizes the data view, for example removi
 
 ![Responsive visual resizing](media/powerbi-desktop-create-phone-report/power-bi-responsive-visual.gif)
 
-You choose whether to turn on responsiveness for each visual.
-
-1. In Power BI Desktop, go back to **Desktop Layout**.
-
-    ![Desktop Layout icon](media/powerbi-desktop-create-phone-report/power-bi-desktop-layout.png)
-
-2. Select a visual, and in the **Visualizations** pane select the **Format** section.
-3. Expand **General** > slide **Responsive** to **On**.
-
-    ![Responsive on](media/powerbi-desktop-create-phone-report/power-bi-turn-responsive-on.png)
-
-     Now when you add this visual to the phone or desktop layout, it resizes gracefully.
+You choose whether to turn on responsiveness for each visual. Read more about [optimizing visuals](powerbi-desktop-create-responsive-visuals.md).
 
 ## Considerations when creating phone report layouts
 - For reports with multiple pages, you can optimize all the pages or only a few. 

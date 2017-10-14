@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View reports optimized for your phone"
+   pageTitle="View Power BI reports optimized for your phone"
    description="Read about interacting with report pages optimized for viewing in the Power BI phone apps."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/22/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# View reports optimized for your phone 
+# View Power BI reports optimized for your phone 
 
 When you create a Power BI report in Power BI Desktop, you can also create a version of that [report optimized for viewing in the Power BI app on a phone](powerbi-desktop-create-phone-report.md).
 
@@ -44,6 +44,8 @@ If a phone-optimized report has filters defined, when you view the report on an 
 
 1. Tap the filter icon ![Phone filter icon](media/powerbi-mobile-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page. 
 2. Use basic or advanced filtering to see the results you're interested in.
+ 
+    ![Phone BI phone report advanced filter](media/powerbi-mobile-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## Cross-highlight visuals
 Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.

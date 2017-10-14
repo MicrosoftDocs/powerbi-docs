@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Get started with the Power BI for Android mobile app"
+   pageTitle="Get started with the Power BI mobile app on Android phones"
    description="Learn how the Android mobile app for Microsoft Power BI brings Power BI to your pocket, with mobile access to business information on premises and in the cloud."
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/01/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Get started with the Power BI for Android mobile app
+# Get started with the Power BI mobile app on Android phones
 
 The Android app for Microsoft Power BI delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. 
 

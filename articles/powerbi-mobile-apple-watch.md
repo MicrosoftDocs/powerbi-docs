@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Power BI mobile app on your Apple Watch"
+   pageTitle="Explore Power BI data in the mobile app on your Apple Watch"
    description="Power BI Apple Watch app"
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2017"
+   ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# Power BI mobile app on your Apple Watch
+# Explore your data in the Power BI mobile app on your Apple Watch
 
 With the Power BI Apple Watch app, you can view KPIs and card tiles from your Power BI dashboards, right on your watch. KPIs and card tiles are best suited to providing a heartbeat measure on the small screen. You can refresh a dashboard from your iPhone or from the Watch itself.
  
