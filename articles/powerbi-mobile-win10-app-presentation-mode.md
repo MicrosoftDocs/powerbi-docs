@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="View presentation mode on Surface Hub & Windows 10 - Power BI"
+   pageTitle="View presentation mode on Surface Hub, Windows 10 - Power BI I"
    description="Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in full-screen mode on Windows 10 devices."
    services="powerbi" 
    documentationCenter="" 
@@ -20,7 +20,7 @@
    ms.date="10/13/2017"
    ms.author="maggies"/>
 
-# View reports in presentation mode on Surface Hub & Windows 10 - Power BI
+# View reports in presentation mode on Surface Hub and Windows 10 - Power BI
 
 You can display reports in presentation mode on Surface Hub, and display dashboards, reports, and tiles in full-screen mode on Windows 10 devices. 
 
