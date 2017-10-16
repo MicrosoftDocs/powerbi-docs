@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
 # Connect to Xero with Power BI
