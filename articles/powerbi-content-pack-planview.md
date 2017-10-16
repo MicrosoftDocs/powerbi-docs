@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Planview Enterprise for Power BI"
+   pageTitle="Connect to Planview Enterprise with Power BI"
    description="Planview Enterprise for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Planview Enterprise for Power BI
+# Connect to Planview Enterprise with Power BI
 
 With the Planview Enterprise content pack, you can visualize your resource and work management data in entirely new ways directly in Power BI. Use your Planview Enterprise sign-in credentials to interactively see your portfolio investment spend, understand where you are over and under budget, and know how well your projects align with your corporate strategic priorities. You can also extend the out-of-the box dashboard and reports to get the insights that are most important to you.
 

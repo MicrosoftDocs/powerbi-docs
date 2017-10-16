@@ -1,5 +1,5 @@
 <properties
-   pageTitle="SQL Sentry for Power BI"
+   pageTitle="Connect to SQL Sentry with Power BI"
    description="SQL Sentry for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# SQL Sentry for Power BI
+# Connect to SQL Sentry with Power BI
 
 Analyzing your performance data collected by SQL Sentry is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data.
 

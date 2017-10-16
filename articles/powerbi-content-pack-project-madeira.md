@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Project Madeira for Power BI"
+   pageTitle="Connect to Project Madeira with Power BI"
    description="Project Madeira for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Project "Madeira" for Power BI
+# Connect to Project "Madeira" with Power BI
 
 Getting insights into your Project “Madeira” data is easy with Power BI and the Project “Madeira” content pack. Power BI retrieves your data, both Sales and Financial data then builds an out-of-box dashboard and reports based on that data.
 Connect to the Project "Madeira" for Power BI or read more about the Project "Madeira" integration with Power BI.

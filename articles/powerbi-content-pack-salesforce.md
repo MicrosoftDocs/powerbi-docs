@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Salesforce for Power BI"
+   pageTitle="Connect to Salesforce with Power BI"
    description="Salesforce for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Salesforce for Power BI
+# Connect to Salesforce with Power BI
 
 With Power BI, you can easily connect to your Salesforce.com account. Creating this connection retrieves your data and automatically provides a dashboard and related reports based on your data.
 

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Prevedere for Power BI"
+   pageTitle="Connect to Prevedere with Power BI"
    description="Prevedere for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Prevedere for Power BI
+# Connect to Prevedere with Power BI
 
 Gain access to exclusive and critical financial information to confidently and proactively drive your business forward.
 

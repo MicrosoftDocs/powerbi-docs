@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Windows Dev Center for Power BI"
+   pageTitle="Connect to Windows Dev Center with Power BI"
    description="Windows Dev Center for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -19,7 +19,7 @@
    ms.workload="powerbi"
    ms.date="08/29/2017"
    ms.author="yshoukry"/>
-# Windows Dev Center for Power BI
+# Connect to Windows Dev Center with Power BI
 
 Explore and monitor your Windows Dev Center app analytics data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 

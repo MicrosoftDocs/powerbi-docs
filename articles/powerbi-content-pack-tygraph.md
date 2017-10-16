@@ -1,5 +1,5 @@
 <properties
-   pageTitle="tyGraph for Power BI"
+   pageTitle="Connect to tyGraph with Power BI"
    description="tyGraph for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/29/2017"
    ms.author="yshoukry"/>
 
-# tyGraph  for Power BI
+# Connect to tyGraph  with Power BI
 
 Visualize and explore your tyGraph data in Power BI with the Power BI content pack. Start by connecting to your tyGraph account and loading the dashboard, reports and dataset. The out of box content includes insights such as the Measure of Active Engagement (MAE score) and Top Contributors. Customize it further to highlight the information you care most about.  The data will be refreshed automatically according to a schedule that you set.
 

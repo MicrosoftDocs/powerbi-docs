@@ -1,5 +1,5 @@
 <properties
-   pageTitle="SendGrid for Power BI"
+   pageTitle="Connect to SendGrid with Power BI"
    description="SendGrid for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# SendGrid for Power BI
+# Connect to SendGrid with Power BI
 
 The Power BI content pack for SendGrid allows you to extract insights and statistics from your SendGrid account. Using the SendGrid content pack you can visualize your SendGrid statistics in a dashboard.
 

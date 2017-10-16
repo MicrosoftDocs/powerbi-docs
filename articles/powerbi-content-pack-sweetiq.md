@@ -1,5 +1,5 @@
 <properties
-   pageTitle="SweetIQ for Power BI"
+   pageTitle="Connect to SweetIQ with Power BI"
    description="SweetIQ for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# SweetIQ for Power BI
+# Connect to SweetIQ with Power BI
 
 The Power BI content pack pulls data from your SweetIQ account and generates set of out of box content allowing you to easily explore your data. Use the SweetIQ content pack to analyze data about your locations, listings, ratings and reviews. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 
