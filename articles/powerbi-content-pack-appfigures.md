@@ -1,5 +1,5 @@
 <properties
-   pageTitle="appFigures for Power BI"
+   pageTitle="Connect to appFigures with Power BI"
    description="appFigures for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# appFigures for Power BI
+# Connect to appFigures with Power BI
 
 Tracking important statistics about your apps is easy with Power BI and the appFigures content pack. Power BI retrieves your data, including app sales, downloads, and ad statistics, then builds a default dashboard and related reports based on that data.
 

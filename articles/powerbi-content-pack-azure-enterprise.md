@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Microsoft Azure Enterprise for Power BI"
+   pageTitle="Connect to Microsoft Azure Enterprise with Power BI"
    description="Microsoft Azure Enterprise for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Microsoft Azure Enterprise for Power BI
+# Connect to Microsoft Azure Enterprise with Power BI
 
 Explore and monitor your Microsoft Azure Enterprise data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 

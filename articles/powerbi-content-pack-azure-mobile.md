@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Azure Mobile Engagement for Power BI"
+   pageTitle="Connect to Azure Mobile Engagement with Power BI"
    description="Azure Mobile Engagement for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Azure Mobile Engagement for Power BI
+# Connect to Azure Mobile Engagement with Power BI
 
 The Power BI Azure Mobile Engagement content pack allows to you quickly gain insights into your app data.
 

@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Adobe Analytics for Power BI"
+   pageTitle="Connect to Adobe Analytics with Power BI"
    description="Connect to Adobe Analytics from Power BI for an app that displays your account data in a dashboard and reports."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# Adobe Analytics for Power BI
+# Connect to Adobe Analytics with Power BI
 
 Connecting to Adobe Analytics through Power BI starts by connecting to your Adobe Analytics Marketing Cloud account. You get an app with a Power BI dashboard and a set of Power BI reports that provide insights about your site traffic and user dimensions. The data is refreshed automatically once per day. You can interact with the dashboard and reports, but you can't save changes.
 

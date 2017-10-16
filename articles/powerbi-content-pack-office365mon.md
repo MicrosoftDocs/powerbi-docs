@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Office365Mon for Power BI"
+   pageTitle="Connect to Office365Mon with Power BI"
    description="Office365Mon for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Office365Mon for Power BI
+# Connect to Office365Mon with Power BI
 
 Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon content pack. Power BI retrieves your data, including outages and health probes, then builds an out-of-box dashboard and reports based on that data.
 

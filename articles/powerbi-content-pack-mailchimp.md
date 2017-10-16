@@ -1,5 +1,5 @@
 <properties
-   pageTitle="MailChimp for Power BI"
+   pageTitle="Connect to MailChimp with Power BI"
    description="MailChimp for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# MailChimp for Power BI
+# Connect to MailChimp with Power BI
 
 The Power BI content pack pulls data from your MailChimp account and generates a dashboard, a set of reports and a dataset to allow you to explore your data. Pull in analytics to create [MailChimp dashboards](https://powerbi.microsoft.com/integrations/mailchimp) and quickly identify trends within your campaigns, reports, and individual subscribers. The data is set to refresh daily ensuring the data you're monitoring is up to date.
 

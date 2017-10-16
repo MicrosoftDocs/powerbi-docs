@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Azure Security Center for Power BI"
+   pageTitle="Connect to Azure Security Center with Power BI"
    description="Azure Security Center for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Azure Security Center for Power BI
+# Connect to Azure Security Center with Power BI
 
 Get insights into your Azure workload security by connecting your Azure Security Data with Power BI. Power BI automatically creates a dashboard and report on top of your Azure Security Center data enabling you to analyze and explore the data.
 

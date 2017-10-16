@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Application Insights for Power BI"
+   pageTitle="Connect to Application Insights Connect to  Power BI"
    description="Application Insights for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Application Insights for Power BI
+# Connect to Application Insights with Power BI
 
 Use Power BI to create powerful custom dashboards from [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) telemetry. Envision your app telemetry in new ways. Combine metrics from multiple apps or component services onto one dashboard. This first release of the Power BI content pack for Application Insights includes widgets for common usage-related metrics such as active users, page view, sessions, browser and OS version, and geographic distribution of users in a map.
 

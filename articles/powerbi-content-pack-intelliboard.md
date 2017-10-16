@@ -1,5 +1,5 @@
 <properties
-   pageTitle="IntelliBoard for Power BI"
+   pageTitle="Connect to IntelliBoard with Power BI"
    description="IntelliBoard for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# IntelliBoard for Power BI
+# Connect to IntelliBoard with Power BI
 
 IntelliBoard offers simplified access to your Moodle learning management system data through reporting services. The IntelliBoard content pack for Power BI offers additional analytics, including metrics on your courses, registered users, overall performance, and your LMS activity.
 

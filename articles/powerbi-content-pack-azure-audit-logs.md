@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Azure Audit Logs for Power BI"
+   pageTitle="Connect to Azure Audit Logs with Power BI"
    description="Azure Audit Logs for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Azure Audit Logs for Power BI
+# Connect to Azure Audit Logs with Power BI
 
 With the Azure Audit Logs content pack you can analyze and visualize the information stored in the audit logs. Power BI retrieves your data, builds an out-of-the box dashboard, and creates reports based on that data.
 

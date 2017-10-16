@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Marketo for Power BI"
+   pageTitle="Connect to Marketo with Power BI"
    description="Marketo for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -20,7 +20,7 @@
    ms.date="08/28/2017"
    ms.author="yshoukry"/>
 
-# Marketo for Power BI
+# Connect to Marketo with Power BI
 
 The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data.
 
