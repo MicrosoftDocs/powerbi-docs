@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/26/2017"
+   ms.date="10/17/2017"
    ms.author="asaxton"/>
 
 # How to purchase Power BI Premium
@@ -60,6 +60,8 @@ To purchase a Premium capacity, you will need to do the following.
 5. Follow the steps to complete the purchase.
 
 You can also select the following links to take you directly to the purchase pages of those items. For more information about these SKUs, see [Power BI Premium - what is it?](powerbi-premium.md#premiumskus).
+
+In order to pucharse a Power BI Premium SKU, ***you must be a Global or Billing admin*** within your tenant. Selecting the links below will produce an error if you are not an admin.
 
 |Direct purchase links|
 |---|
