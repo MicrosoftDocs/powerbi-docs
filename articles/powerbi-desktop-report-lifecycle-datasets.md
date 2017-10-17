@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/25/2017"
+   ms.date="10/17/2017"
    ms.author="davidi"/>
 
 # Connect to datasets in the Power BI service from Power BI Desktop
@@ -111,6 +111,7 @@ Now you (and others) can create and share custom reports and share them, all fro
 
 When using the **Power BI service live connection**, there are a few limitations and considerations to keep in mind.
 
+-   Read-only members of a workspace cannot connect to datasets from **Power BI Desktop**.
 -   Only users who are part of the same **Power BI service** workspace can connect to a published dataset using the **Power BI service live connection**. Users can (and often do) belong to more than one workspace.
 -   Since this is a live connection, left-navigation and modeling are disabled, similar to the behavior when connected to **SQL Server Analysis Services**.
 -   Since this is a live connection, RLS (row- and role-level security), OneDrive for Business, and other such connection behaviors are enforced, just as they are when connected to **SQL Server Analysis Services**.
