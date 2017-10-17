@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Projectplace for Power BI"
+   pageTitle="Connect to Projectplace with Power BI"
    description="Projectplace for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# Projectplace by Planview for Power BI
+# Connect to Projectplace by Planview with Power BI
 
 With the Projectplace by Planview content pack, you can visualize your collaborative project data in entirely new ways directly in Power BI. Use your Projectplace sign-in credentials to interactively view key project statistics, find out who your most active and productive team members are, and identify at-risk cards and activities across projects in your Projectplace account. You can also extend the out-of-the box dashboard and reports to get the insights that are most important to you.
 

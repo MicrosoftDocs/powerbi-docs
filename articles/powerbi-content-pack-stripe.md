@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Stripe for Power BI"
+   pageTitle="Connect to Stripe with Power BI"
    description="Stripe for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# Stripe for Power BI
+# Connect to Stripe with Power BI
 
 Visual and explore your Stripe data in Power BI with the Power BI content pack. The Power BI Stripe content pack pulls in data about your Customers, Charges, Events and Invoices. The data includes the most recent ten thousand events and five thousand charges over the last 30 days. The content will be refreshed automatically once per day at a schedule you control. 
 

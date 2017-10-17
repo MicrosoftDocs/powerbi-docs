@@ -1,5 +1,5 @@
 <properties
-   pageTitle="VMob for Power BI"
+   pageTitle="Connect to VMob with Power BI"
    description="VMob for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# VMob for Power BI
+# Connect to VMob with Power BI
 
 Tracking and exploring your VMob data is easy with Power BI and the VMob content pack. Power BI will retrieve the following data: User Statistics for all time and in the last 30 days, Retail KPI for the last 30 days and Campaign Performance for the last 30 days.
 

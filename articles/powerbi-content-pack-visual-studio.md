@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Visual Studio Team Services for Power BI"
+   pageTitle="Connect to Visual Studio Team Services with Power BI"
    description="Visual Studio Team Services for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# Visual Studio Team Services for Power BI
+# Connect to Visual Studio Team Services with Power BI
 
 Use the Visual Studio Team Services content pack for Power BI to gain insights into your git and TFVC team projects. After you make a connection, your data comes to you automatically on a dashboard and in reports. 
 

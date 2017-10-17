@@ -1,5 +1,5 @@
 <properties
-   pageTitle="QuickBooks Online for Power BI"
+   pageTitle="Connect to QuickBooks Online with Power BI"
    description="QuickBooks Online for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# QuickBooks Online for Power BI
+# Connect to QuickBooks Online with Power BI
 
 When you connect to your QuickBooks Online data from Power BI you immediately get a Power BI dashboard and Power BI reports that provide insights about your business cash flow, profitability, customers, and more. Use the dashboard and reports as they are, or customize them to highlight the information you care most about. The data is refreshed automatically once a day.
 

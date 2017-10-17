@@ -1,5 +1,5 @@
 <properties
-   pageTitle="UserVoice for Power BI"
+   pageTitle="Connect to UserVoice with Power BI"
    description="UserVoice for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# UserVoice  for Power BI
+# Connect to UserVoice with Power BI
 
 Tracking and exploring your UserVoice data is easy with Power BI and the UserVoice content pack. Power BI retrieves your data, including tickets, suggestions and satisfaction ratings, then builds an out-of-box dashboard and reports based on that data.
 

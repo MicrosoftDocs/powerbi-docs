@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Circuit ID for Power BI"
+   pageTitle="Connect to Circuit ID with Power BI"
    description="Circuit ID for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# Circuit ID for Power BI
+# Connect to Circuit ID with Power BI
 
 Analyzing your communication data from Circuit ID is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data. After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
 

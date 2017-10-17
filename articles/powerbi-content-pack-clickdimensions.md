@@ -1,5 +1,5 @@
 <properties
-   pageTitle="ClickDimensions for Power BI"
+   pageTitle="Connect to ClickDimensions with Power BI"
    description="ClickDimensions for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# ClickDimensions for Power BI
+# Connect to ClickDimensions with Power BI
 
 The ClickDimensions content pack for Power BI allows users to utilize ClickDimensions marketing data in Power BI, giving management teams further insight into the success of their sales and marketing efforts. Visualize and analyze email interactions, web visits and form submissions in Power BI dashboards and reports.
 

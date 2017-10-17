@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Ziosk for Power BI"
+   pageTitle="Connect to Ziosk Survey Analytics with Power BI"
    description="Ziosk for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/29/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# Ziosk Survey Analytics for Power BI
+# Connect to Ziosk Survey Analytics with Power BI
 
 Ziosk Survey Analytics content pack for Power BI offers restaurants with Ziosk tablets unparalleled access to insights provided by Ziosk survey data, including segmentation by day, location, employee, and more.
 

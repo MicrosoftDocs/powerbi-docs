@@ -1,5 +1,5 @@
 <properties 
-   pageTitle="Microsoft Azure Consumption Insights for Power BI"
+   pageTitle="Connect to Microsoft Azure Consumption Insights with Power BI"
    description="Microsoft Azure Consumption Insights for Power BI"
    services="powerbi" 
    documentationCenter="" 
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
    
-# Microsoft Azure Consumption Insights for Power BI
+# Connect to Microsoft Azure Consumption Insights with Power BI
 
 Explore and monitor your Microsoft Azure consumption data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 

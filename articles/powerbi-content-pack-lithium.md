@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Lithium for Power BI"
+   pageTitle="Connect to Lithium with Power BI"
    description="Lithium for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# Lithium for Power BI
+# Connect to Lithium with Power BI
 
 Lithium builds trusted relationships between the world's best brands and their customers, helping people get answers and share their experiences. By connecting the Lithium content pack to Power BI, you can measure key metrics about your online community to help drive sales, reduce service costs and increase loyalty. 
 

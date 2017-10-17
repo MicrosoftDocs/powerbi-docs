@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Bing for Power BI"
+   pageTitle="Connect to Bing with Power BI"
    description="Bing for Power BI"
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/28/2017"
+   ms.date="10/16/2017"
    ms.author="yshoukry"/>
 
-# Bing for Power BI
+# Connect to Bing with Power BI
 
 The Bing content pack will allow you to view analytics around Internet search activity for a term of your choice.
 
