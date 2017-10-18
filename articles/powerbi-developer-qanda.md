@@ -17,13 +17,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/17/2017"
+   ms.date="10/18/2017"
    ms.author="asaxton"/>
 # Q&A in Power BI Embedded
 
 Power BI Embedded offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language and receive immediate answers in the form of visuals like charts or graphs.
 
-![Q&A embedded with a predefined question](media/powerbi-developer-qanda/qanda-predefined-question.png)
+![Q&A Interactive question in an embedded frame](media/powerbi-developer-qanda/embedded-qanda.gif)
 
 There are two modes for embedding Q&A within your application: **interactive** and **result only**. **Interactive** mode allows you to type in questions and have them displayed within the visual. If you have a saved question, or a set question you want to display, you can use the **result only** mode by populating the question in your embed config.
 
@@ -98,7 +98,7 @@ qna.on("visualRendered", function(event) {
 
 ## Embed token
 
-Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token for dataset](https://msdn.microsoft.com/library/mt784614.aspx#Generate token for dataset \(creating a new report\)).
+Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token for Q&A](https://msdn.microsoft.com/library/mt784614.aspx#qanda).
 
 ## Next steps
 
