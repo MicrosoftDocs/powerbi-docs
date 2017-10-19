@@ -27,8 +27,9 @@ Power BI integrates with Bing Maps to provide default map coordinates (a process
 
 To increase the likelihood of correct geo-coding, use the following tips. The first set of tips is for you to use if you have access to the dataset itself. And the second set of tips is things you can do in Power BI if you don't have access to the dataset.
 
-##    What is sent to Bing Maps?
-Power BI service and Power BI Desktop send Bing the geo data it needs to create the map visualization. This may include the data in the **Location**, **Latitude**, and **Longitude** buckets and geo fields in any of the **Report level**, **Page level**, or **Visual level** filter buckets. Exactly what is sent varies by map type. To learn more, see [Bing Maps privacy] (go.microsoft.com/fwlink/?LinkID=248686). 
+## What is sent to Bing Maps?
+
+Power BI service and Power BI Desktop send Bing the geo data it needs to create the map visualization. This may include the data in the **Location**, **Latitude**, and **Longitude** buckets and geo fields in any of the **Report level**, **Page level**, or **Visual level** filter buckets. Exactly what is sent varies by map type. To learn more, see [Bing Maps privacy](https://go.microsoft.com/fwlink/?LinkID=248686).
 
 -    For maps (bubble maps), if latitude and longitude are provided then no data is sent to Bing. Otherwise, any data in the Location (and filter) buckets is sent to Bing.     
 - Filled maps require a field in the Location bucket; even if latitude and longitude are provided. Whatever data is in the Location, Latitude, or Longitude buckets is sent to Bing.
@@ -41,8 +42,7 @@ Power BI service and Power BI Desktop send Bing the geo data it needs to create 
 
     ![Filled maps and Bing](media/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/power-bi-filled-map.png)
 
-
-##  In the dataset: tips to improve the underlying dataset
+## In the dataset: tips to improve the underlying dataset
 
 If you have access to the dataset that is being used to create the map visualization, there are a few things you can do to increase the likelihood of correct geo-coding.
 
@@ -71,7 +71,7 @@ While we encourage you to use geo-hierarchies in your maps, if you must use a si
 
 ## In Power BI: tips to get better results when using map visualizations
 
-**1.    Use latitude and longitude fields (if they exist)**
+**1. Use latitude and longitude fields (if they exist)**
 
 In Power BI, if the dataset you are using has fields for longitude and latitude -- use them!  Power BI has special buckets to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area.  And do the same for your longitude data. When you do this, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level.
 
