@@ -91,7 +91,7 @@ You can only unshare a dashboard if you're the dashboard owner.
 
     ![Shared with me](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-shared-with-me-left-nav.png)
 
-    Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
+    Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md).
 
 
 ### Unshare a dashboard from your iPad
@@ -139,7 +139,7 @@ You can only unshare a dashboard if you're the dashboard owner.
 
     ![Shared with me](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-android-shared-with-me-left-nav.png)
 
-    Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
+    Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md).
 
 ### Unshare a dashboard from your Android device
 
