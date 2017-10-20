@@ -66,14 +66,14 @@ Depending on your role, you may be someone who creates reports for your own use 
 Here are some topics, by role, to help you get started.
 
 ###    If you will be creating and sharing reports
-- Start with a [tour of Power BI service](powerbi-service-take-a-tour.md) so you know where to find reports and report tools.
+- Start with a [tour of Power BI service](powerbi-service-basic-concepts.md) so you know where to find reports and report tools.
 - Take a tour of the [report editor](powerbi-service-the-report-editor-take-a-tour.md).
 -  Learn how to [create a report from a dataset](powerbi-service-create-a-new-report.md).
 - [Learn how to use visualization, page, and report-level filters](powerbi-service-how-to-use-a-report-filter.md)
 - Discover all the different ways you can [share a report with colleagues](powerbi-service-share-unshare-dashboard.md).
 
 ###    If you will be receiving and consuming reports
-- Start with a [tour of Power BI service](powerbi-service-take-a-tour.md) so you know where to find reports and report tools.
+- Start with a [tour of Power BI service](powerbi-service-basic-concepts.md) so you know where to find reports and report tools.
 -  Learn how to [open a report](powerbi-service-open-a-report-in-reading-view.md) and all the interaction available in [Reading view](powerbi-service-dashboard-tiles.md).
 - Get comfortable with reports by taking a tour of one of our [samples](powerbi-sample-tutorial-connect-to-the-samples.md).  
 -  Don't need the report any more? You can [remove it](powerbi-service-delete.md).
