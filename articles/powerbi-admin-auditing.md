@@ -217,7 +217,7 @@ For a full listing, see [Detailed properties in the Office 365 audit log](https:
 
 [Power BI Admin Portal](powerbi-admin-portal.md)  
 [Power BI Premium - what is it?](powerbi-premium.md)  
-[Purchasing Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md)  
+[Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
 [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx)  
 [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)  
 [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx)  
