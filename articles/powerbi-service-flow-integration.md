@@ -25,7 +25,7 @@
 ##  What is Microsoft Flow
 [Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Flow you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation.
 
-[Get started using Flow now.](flow.microsoft.com/documentation/getting-started)
+[Get started using Flow now.](https://flow.microsoft.com/documentation/getting-started)
 
 Watch Sirui create a Flow that sends a detailed email to colleagues when a Power BI alert is triggered. Then follow the step-by-step instructions below the video to try it out yourself.
 
