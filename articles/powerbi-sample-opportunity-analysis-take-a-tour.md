@@ -101,4 +101,4 @@ This is a safe environment to play in. You can always choose not to save your ch
 ## Next steps: Connect to your data  
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](powerbi-service-get-started.md).
 
-[Download samples](powerbi-service-sample-datasets.md)  
+[Download samples](powerbi-sample-datasets.md)  
