@@ -97,7 +97,7 @@ There are 2 paths to the screen for managing your subscriptions.  The first is b
 
 ![](media/powerbi-service-subscribe-to-report/power-bi-subscribe-settings.png)
 
-The particular subscriptions displayed will depend on which workspace is currently active.  To see all of your subscriptions at once for all workspaces, be sure that **My Workspace** is active. For help understanding workspaces, see [Workspaces in Power BI](powerbi-service-workspaces.md).
+The particular subscriptions displayed will depend on which workspace is currently active.  To see all of your subscriptions at once for all workspaces, be sure that **My Workspace** is active. For help understanding workspaces, see [Workspaces in Power BI](powerbi-service-create-apps.md).
 
 ![](media/powerbi-service-subscribe-to-report/power-bi-subscriptions.png)
 

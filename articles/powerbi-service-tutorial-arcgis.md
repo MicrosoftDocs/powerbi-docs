@@ -295,15 +295,6 @@ A value of 1 (decimal) enables ArcGIS Maps for Power BI.
 
 A value of 0 (decimal) disable ArcGIS Maps for Power BI.
 
-You can use the provided **Group Policy** templates to quickly add the required configuration to your **Group Policy**.
-
-**Template**
-
-[PowerBIEsri.adml](./groupPolicyTemplates/PowerBIEsri.adml)
-
-[PowerBIEsri.admx](./groupPolicyTemplates/PowerBIEsri.admx)
-
-
 ## Considerations and Limitations
 
 ArcGIS Maps for Power BI is available in the following services and applications:

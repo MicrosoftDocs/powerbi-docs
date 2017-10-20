@@ -131,7 +131,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 -   Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
 
--   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md#test-the-role): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+-   [Test your RLS roles with reports backed by the data with RLS in place](powerbi-admin-rls.md#validating-the-role-within-power-bi-desktop): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
 
 -   Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
 
@@ -662,7 +662,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 -   [Bring in CSV files](powerbi-service-get-data-from-files.md): Just like Excel or Power BI Desktop file, a comma-separated values text (CSV) file can also be a dataset for your Power BI dashboards and reports.
 
--   [Replace Excel, Power BI Desktop, and CSV files](powerbi-replace-an-excel-power-bi-desktop-or-csv-file.md): you can upload an updated version of a file to Power BI and it will replace the existing dataset. All the reports and dashboards that are connected to this dataset now automatically use the new version.
+-   Replace Excel, Power BI Desktop, and CSV files: you can upload an updated version of a file to Power BI and it will replace the existing dataset. All the reports and dashboards that are connected to this dataset now automatically use the new version.
 
 -   We’re excited to announce that this week’s update to Power BI now offers work item tracking in [the Visual Studio Online content pack](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx). This update includes a new dashboard, report and an updated data set offering insights on your work items in addition to important metrics about your Git repository, pull requests, and version control content included in the initial version. For additional details on how to get started, please see [the Visual Studio Online content pack for Power BI help page](powerbi-content-pack-quickbooks-online.md).
 

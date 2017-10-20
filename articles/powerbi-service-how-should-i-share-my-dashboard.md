@@ -54,7 +54,7 @@ Say you want to distribute your dashboard to a broad audience. You and your cowo
 
 ![Publish app icon](media/powerbi-service-how-should-i-share-my-dashboard/power-bi-app-publish-600.png)
 
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. Read more about [distributing your apps](powerbi-service-create-apps.md#distribute-an-app). 
+Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. Read more about [distributing your apps](powerbi-service-create-apps.md#distribute-your-app). 
 
 After they install an app, they can view it in their browser or mobile device.
 

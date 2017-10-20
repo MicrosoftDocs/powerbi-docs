@@ -48,6 +48,6 @@ From here you can interact with the content as you would on the individual [**Da
 
 ##  Next steps
 
-[Power BI service Apps](powerbi-service-apps.md)
+[Power BI service Apps](powerbi-service-what-are-apps.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

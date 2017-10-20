@@ -149,12 +149,10 @@ If you are not a member of an app workspace or an admin, you may not see any app
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-my-workspace2.png)
 
-To learn more, see [My Workspace](powerbi-service-workspaces.md)
-
 ### App workspaces
 Apps and app workspaces are a feature of Power BI Pro. If you are someone who authors dashboards and reports for others, you'll use app workspaces to do this. An app workspace is the place where you'll create the app, so to create an app, you'll first need to create the app workspace. They’re the evolution of group workspaces – staging areas and containers for the content in the app.  You and your colleagues can collaborate on dashboards, reports, and other content that you plan to distribute to a wider audience, or even your entire organization.
 
-To learn more, visit [Create and distribute an app in Power BI](powerbi-service-create-apps#app-workspaces.md).
+To learn more, visit [Create and distribute an app in Power BI](powerbi-service-create-apps#app-workspaces).
 
 As with **My Workspace**, your content is organized into 4 tabs: Dashboards, Reports, Workbooks, and Datasets.
 
