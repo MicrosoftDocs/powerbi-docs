@@ -52,7 +52,7 @@ From the Power BI mobile apps for iOS and Android, you can also [annotate and sh
 
     ![Shared with me](media/powerbi-mobile-share-a-dashboard-from-the-iphone-app/power-bi-iphone-shared-with-me-left-nav.png)
 
-    Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md#notes-about-sharing-a-dashboard).
+    Read more [notes about sharing dashboards with colleagues](powerbi-service-share-unshare-dashboard.md).
 
 
 ### Unshare a dashboard from your iPhone
