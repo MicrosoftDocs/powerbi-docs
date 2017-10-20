@@ -128,11 +128,11 @@ To identifying users in your tenant that are running the Free license of Power B
 
 ## More Information
 
-﻿There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
+There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 -   [Overview of Power BI for US Government](powerbi-service-govus-overview.md)
 
--   [Guided Learning for Power BI](powerbi-learning-0-0-what-is-power-bi/.md)
+-   [Guided Learning for Power BI](powerbi-learning-0-0-what-is-power-bi.md)
 
 -   [Get started with the Power BI service](powerbi-service-get-started.md)
 

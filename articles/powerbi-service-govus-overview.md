@@ -92,13 +92,13 @@ The following questions (and answers) are provided to help you quickly get infor
 
 ## More Information
 
-﻿There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
+There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 -   [Sign up for Power BI for US Government](powerbi-service-govus-signup.md)
 
 -   <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
 
--   [Guided Learning for Power BI](powerbi-learning-0-0-what-is-power-bi/.md)
+-   [Guided Learning for Power BI](powerbi-learning-0-0-what-is-power-bi.md)
 
 -   [Get started with the Power BI service](powerbi-service-get-started.md)
 
