@@ -23,14 +23,14 @@
 
 # Interacting with ArcGIS maps in Power BI
 
-This topic is written from the point of view of a person *consuming* an ArcGIS map in Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS maps by esri tutorial](powerbi-service-tutorial-argcis.md).
+This topic is written from the point of view of a person *consuming* an ArcGIS map in Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS maps by esri tutorial](powerbi-service-tutorial-arcgis.md).
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. The available options for base maps, location types, themes, symbol styles, and reference layers creates gorgeous informative map visualizations. The combination of authoritative data layers (such as census data) on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
 > [!TIP]
 > GIS stands for Geographic Information Science.
 
-The example we're using is the same ArcGIS map created in the [ArcGIS maps by esri tutorial](powerbi-service-tutorial-argcis.md). It looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).
+The example we're using is the same ArcGIS map created in the [ArcGIS maps by esri tutorial](powerbi-service-tutorial-arcgis.md). It looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).
 
 ![](media/powerbi-visualizations-arcgis/power-bi-arcgis-esri-new.png)
 
