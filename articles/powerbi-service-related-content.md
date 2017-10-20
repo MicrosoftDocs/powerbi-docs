@@ -49,7 +49,7 @@ Watch Will view related content for a dashboard. Then follow the step-by-step in
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
 
-You'll need at least *view* permissions to a dashboard to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis.md).
+You'll need at least *view* permissions to a dashboard to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
 
 **Method 1**
 
@@ -72,7 +72,7 @@ From here, you can take direct action on the related content.  For example, sele
  
 ##  View related content for a report
 
-You'll need at least *view* permissions to a report to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis.md).
+You'll need at least *view* permissions to a report to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
 
 **Method 1**
 
@@ -97,7 +97,7 @@ From here, you can take direct action on the related content.  For example, sele
 
 ##  View related content for a dataset
 
-You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis.md).
+You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example we're using the [Procurement Analysis sample](powerbi-sample-procurement-analysis-take-a-tour.md).
 
 In a workspace, select the **Datasets** tab and locate the **View related** icon ![](media/powerbi-service-related-content/power-bi-view-related-icon-new.png)  .
 
