@@ -69,7 +69,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
  
 2.  Are your running Windows version 1511 or later?  Find out by opening Windows Settings and selecting **System > About**. If not, update your version of Windows.
 
-3. Are your Windows and Power BI accounts connected? This can be confusing. Follow the instructions in [Enable Cortana for Power BI](powerbi-service-cortana-enable#Add your Power BI credentials to Windows).
+3. Are your Windows and Power BI accounts connected? This can be confusing. Follow the instructions in [Enable Cortana for Power BI](powerbi-service-cortana-enable#add-your-power-bi-credentials-to-windows).
 
 4.  Have the underlying datasets been enabled for Cortana? Maybe a colleague has shared a dataset that she has already enabled for Cortana. But, if not, [learn how to enable datasets for Cortana yourself](powerbi-service-cortana-enable.md). It's quick and easy.
 
