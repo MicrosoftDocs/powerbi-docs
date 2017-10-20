@@ -56,7 +56,7 @@ Power BI will start logging various activities that your users perform in Power 
 
 Auditing is a Power BI Pro feature and auditing events are only available for Power BI Pro users.  Users with Power BI (free) licenses will be displayed as **Free User**.
 
-For more information on how you can acquire and assign Power BI Pro licenses to users in your organization, see [Purchasing Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md).
+For more information on how you can acquire and assign Power BI Pro licenses to users in your organization, see [Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md).
 
 For more information on how to restrict free users from signing up, see [Enable, or disable, individual user sign up in Azure Active Directory](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory).
 
