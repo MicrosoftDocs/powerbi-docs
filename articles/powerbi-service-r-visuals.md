@@ -69,7 +69,7 @@ As another example, the following image shows the error message that appears whe
 
 ## Licensing
 
-R visuals require a [Power BI Pro](powerbi-free-trial-for-power-bi-pro.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](powerbi-powerbi-pro-content-what-is-it.md)
+R visuals require a [Power BI Pro](powerbi-free-trial-for-power-bi-pro.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](powerbi-premium.md)
 
 Free users of Power BI can only consume tiles shared with them. See [purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md) for more information.
 
