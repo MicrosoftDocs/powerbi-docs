@@ -34,11 +34,11 @@ The product key will be in one of two places depending on what you purchased.
 
 If you have purchased Power BI Premium, within the **Capacity settings** tab of the Power BI admin portal, you will have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role.
 
-![Power BI Report Server key within Premium settings](../media/powerbi-admin-premium-manage/pbirs-product-key.png)
+![Power BI Report Server key within Premium settings](media/reportserver-find-product-key/pbirs-product-key.png)
 
 Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
 
-![Power BI Report Server product key](../media/powerbi-admin-premium-manage/pbirs-product-key-dialog.png)
+![Power BI Report Server product key](media/reportserver-find-product-key/pbirs-product-key-dialog.png)
 
 ## Purchased Software Assurance agreeemnt
 
