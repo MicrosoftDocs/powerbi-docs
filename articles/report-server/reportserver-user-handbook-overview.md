@@ -23,7 +23,7 @@
 
 Welcome to the user handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
 
-![](media/reportserver-get-started/web-portal.png)
+![](media/reportserver-user-handbook-overview/web-portal.png)
 
 Power BI Report Server is also a set of products and experiences that work together to bring your data to life:
 
@@ -35,7 +35,7 @@ Read on for more about each.
 
 ## Web portal
 
-![](media/reportserver-get-started/web-portal.png)
+![](media/reportserver-user-handbook-overview/web-portal.png)
 
 The front door of Power BI Report Server is a modern web portal you can view in any modern browser. You can access all your reports and KPIs in the new portal.
 
@@ -45,7 +45,7 @@ The content on the web portal is organized into folders, and within each folder,
 
 ## Power BI reports
 
-![](media/reportserver-get-started/powerbi-reports.png)
+![](media/reportserver-user-handbook-overview/powerbi-reports.png)
 
 A Power BI report is a multi-perspective view into a dataset, with visualizations that represent different findings and insights from that dataset. A report can have a single visualization or pages full of visualizations. Depending on your role, you may be someone who creates reports and/or you may be someone who views and interacts with reports.
 
@@ -59,7 +59,7 @@ You create Power BI reports with a special edition of Power BI Desktop. Download
 
 ## Paginated reports
 
-![](media/reportserver-get-started/paginated-reports.png)
+![](media/reportserver-user-handbook-overview/paginated-reports.png)
 
 Paginated reports are document-style reports, in which the more data you have, the more rows in the tables, and the more pages the report has. They make great fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files.
 

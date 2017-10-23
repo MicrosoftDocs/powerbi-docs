@@ -42,7 +42,7 @@ Here are the steps to register an app in Azure AD.
 
 Here's how your **Register an Application for Power BI** page should look:
 
-![](media\powerbi-developer-walkthrough-push-data\powerbi-developer-sample-register-app.png)
+![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-sample-register-app.png)
 
 The next step shows you how to [get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md).
 

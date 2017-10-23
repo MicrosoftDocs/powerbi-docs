@@ -36,7 +36,7 @@ Custom visuals allow you to create your own visuals for use within Power BI repo
 
 For more information about how to develop and publish a custom visual, see [Publish custom visuals to the Office store](powerbi-developer-office-store.md).
 
-![](media/powerbi-developer-office-store/powerbi-custom-visual-store.png)
+![](media/powerbi-developer-what-can-you-do/powerbi-custom-visual-store.png)
 
 ## Push data into Power BI
 

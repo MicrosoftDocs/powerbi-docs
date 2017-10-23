@@ -24,7 +24,7 @@
 
 Applies to:
 
-| ![iPhone](media/powerbi-mobile-find-content-mobile-devices/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-find-content-mobile-devices/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-find-content-mobile-devices/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-find-content-mobile-devices/android-tablet-logo-50-px.png) |
+| ![iPhone](media/powerbi-mobile-iphone-kpis-mobile-reports/iphone-logo-50-px.png) | ![iPad](media/powerbi-mobile-iphone-kpis-mobile-reports/ipad-logo-50-px.png) | ![Android phone](media/powerbi-mobile-iphone-kpis-mobile-reports/android-phone-logo-50-px.png) | ![Android tablet](media/powerbi-mobile-iphone-kpis-mobile-reports/android-tablet-logo-50-px.png) |
 |:------------------------|:----------------------------|:----------------------------|:----------------------------------------|
 | iPhones | iPads | Android phones | Android tablets |
 

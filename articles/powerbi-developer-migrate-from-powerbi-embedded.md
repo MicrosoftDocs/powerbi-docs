@@ -32,7 +32,7 @@ The current Power BI Embedded service will continue to be available for a limite
 
 > [AZURE.IMPORTANT] While the migration will take a dependency on the Power BI service, there is not a dependency on Power BI for the users of your application when using an **embed token**. They do not need to sign up for Power BI to view the embedded content in your application. You can use this embedding approach to service non-Power BI users.
 
-![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embed-flow.png)
+![](media/powerbi-developer-migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
 ## Prepare for the migration
 
@@ -184,7 +184,7 @@ When you are ready to move to production, you will need to do the following.
 
 - Edit the App workspace and assign it to a Premium capacity under advanced.
 
-    ![](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png)
+    ![](media/powerbi-developer-migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
 
 - Deploy your updated application to production and begin embedding reports from the Power BI service.
 

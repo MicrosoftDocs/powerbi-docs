@@ -24,7 +24,7 @@
 
 Learn how to integrate, or embed, a dashboard into a web app using REST API calls along with the Power BI JavaScript API when embedding for your organization.
 
-![Embedded dashboard](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
+![Embedded dashboard](media/powerbi-developer-integrate-dashboard/powerbi-embed-dashboard.png)
 
 To get started with this walkthrough, you need a **Power BI** account. If you don't have an account, you can [sign up for a free Power BI account](powerbi-service-self-service-signup-for-power-bi.md), or you can create your own [Azure Active Directory tenant](powerbi-developer-create-an-azure-active-directory-tenant.md) for testing purposes.
 
@@ -42,7 +42,7 @@ You will need to register your application with Azure AD in order to make REST A
 
 If you downloaded the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app), you use the **Client ID** and **Client Secret** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **Client ID** and **Client Secret** in the *cloud.config* file.
 
-![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard-register-app4.png)
+![](media/powerbi-developer-integrate-dashboard/powerbi-embed-dashboard-register-app4.png)
 
 ## Step 2 - get an access token from Azure AD
 
@@ -52,7 +52,7 @@ Within your application, you will first need to get an **access token**, from Az
 
 To get a **Power BI** dashboard, you use the [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) operation which gets a list of **Power BI** dashboards. From the list of dashboards, you can get a dashboard id.
 
-![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard-get-dashboards.png)
+![](media/powerbi-developer-integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### Get dashboards using an access token
 
@@ -233,7 +233,7 @@ function updateEmbedDashboard() {
 
 If you downloaded and ran the [Integrate a dashboard sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app), the sample will look similar to below.
 
-![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
+![](media/powerbi-developer-integrate-dashboard/powerbi-embed-dashboard.png)
 
 ## Tile clicked events
 

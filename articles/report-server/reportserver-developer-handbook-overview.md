@@ -24,7 +24,7 @@
 
 Welcome to the developer handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
 
-![](media/reportserver-admin-handbook-overview/admin-handbook.png)
+![](media/reportserver-developer-handbook-overview/admin-handbook.png)
 
 This handbook will highlight options you have, as a developer, to work with Power BI Report Server.
 
