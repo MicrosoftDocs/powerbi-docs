@@ -110,7 +110,7 @@ On the Favorites page in the mobile apps, you can view all of your favorite Powe
 
 -  Tap **Favorites**.
 
-    ![Favorites in the left navigation pane](media/powerbi-mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
+    ![Favorites in the left navigation pane](media/powerbi-mobile-android-app-get-started/power-bi-android-favorites-left-nav.png)
    
     Your Power BI favorites and your favorites from the Power BI Report Server and Reporting Services web portal are all on this page.
 
