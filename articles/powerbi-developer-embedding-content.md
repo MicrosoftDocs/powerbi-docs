@@ -144,7 +144,7 @@ If you are embedding for your customers, you will want to do the following.
 
 * Edit the app workspace and assign it to a capacity under advanced.
 
-    ![Assign app workspace to capacity](media\powerbi-developer-migrate-from-powerbi-embedded\powerbi-embedded-premium-capacity.png)
+    ![Assign app workspace to capacity](media/powerbi-developer-embedding-content/powerbi-embedded-premium-capacity.png)
 
 * Deploy your updated application to production and begin embedding Power BI dashboards and reports.
 
