@@ -32,7 +32,7 @@ Creating a custom column is another **Applied Step** to the query you create in 
 
 To create a new custom column, launch **Query Editor**. You can do this by selecting **Edit Queries** from the **Home** ribbon in **Power BI Desktop**.
 
-![](media/powerbi-desktop-add-column-from-example/add-column-from-example_02.png)
+![](media/powerbi-desktop-add-custom-column/add-column-from-example_02.png)
 
 Once **Query Editor** is launched and you have some data loaded, you can add a custom column by selecting the **Add Column** tab on the ribbon, and then selecting **Custom Column**.
 
