@@ -33,7 +33,7 @@ You may already have installed Power BI Desktop to create reports for the Power 
 
 1. In the Power BI Report Server web portal, select **New** > **Power BI Report**.
 
-    ![New Power BI report](media/reportserver-getting-around/report-server-web-portal-new-powerbi-report.png)
+    ![New Power BI report](media/reportserver-quickstart-powerbi-report/report-server-web-portal-new-powerbi-report.png)
 
     If you don't have access to a Power BI Report Server web portal, go to the Microsoft Download Center and download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=837581) (Optimized for Power BI Report Server - June 2017 GA).
 
@@ -43,7 +43,7 @@ You may already have installed Power BI Desktop to create reports for the Power 
     
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
 
-    ![Power BI Desktop start screen](media/reportserver-getting-around/report-server-powerbi-desktop-start.png)
+    ![Power BI Desktop start screen](media/reportserver-quickstart-powerbi-report/report-server-powerbi-desktop-start.png)
 
 ## Step 2: Select a data source
 
