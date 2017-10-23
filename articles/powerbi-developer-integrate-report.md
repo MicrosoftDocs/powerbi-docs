@@ -42,7 +42,7 @@ You will need to register your application with Azure AD in order to make REST A
 
 If you downloaded the [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), you use the **Client ID** and **Client Secret** you get, after registration, so that the sample can authenticate to Azure AD. To configure the sample, change the **Client ID** and **Client Secret** in the *cloud.config* file.
 
-![](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard-register-app4.png)
+![](media/powerbi-developer-integrate-report/powerbi-embed-dashboard-register-app4.png)
 
 ## Step 2 - get an access token from Azure AD
 
