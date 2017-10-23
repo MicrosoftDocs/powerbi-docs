@@ -38,11 +38,11 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 |---------|---------|---------|
 |June 2017|June 12, 2017|June 12, 2018|
 
- **Download** ![download](media/download.png "download")
+ **Download** ![download](media/reportserver-support-timeline/download.png "download")
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-![tip](media/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
+![tip](media/reportserver-support-timeline/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
 ## Next steps
 
