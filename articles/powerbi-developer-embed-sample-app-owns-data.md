@@ -23,7 +23,7 @@
 
 Learn how to integrate, or embed, a dashboard, tile or report, into a web app using the Power BI .NET SDK along with the Power BI JavaScript API when embedding for your customers. This is typically the ISV scenario.
 
-![Embedded dashboard](media\powerbi-developer-integrate-dashboard\powerbi-embed-dashboard.png)
+![Embedded dashboard](media/powerbi-developer-embed-sample-app-owns-data/powerbi-embed-dashboard.png)
 
 To get started with this walkthrough, you need a **Power BI Pro** account. If you don't have an account, you can [sign up for a free Power BI account](powerbi-service-self-service-signup-for-power-bi.md) and then sign up for a [Power BI Pro trial](powerbi-service-self-service-signup-for-power-bi.md#in-service-power-bi-pro-60-day-trial), or you can create your own [Azure Active Directory tenant ](powerbi-developer-create-an-azure-active-directory-tenant.md) for testing purposes.
 
