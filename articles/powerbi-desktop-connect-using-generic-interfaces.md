@@ -109,7 +109,7 @@ The following list details a few examples of the data sources to which **Power B
 ## Data sources accessible through R Script
 You can use **R scripts** to access data sources, and use that data in **Power BI Desktop**.
 
-![](media/powerbi-desktop-r-scripts/r-scripts-2.png)
+![](media/powerbi-desktop-connect-using-generic-interfaces/r-scripts-2.png)
 
 The following list details a few examples of the data sources to which **Power BI Desktop** can connect by using the generic **R scripts** interface.
 
