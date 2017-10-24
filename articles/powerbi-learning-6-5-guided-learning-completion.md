@@ -27,7 +27,7 @@
 
 You did it! **Congratulations!** You've completed the **Guided Learning** course for Power BI. You've come full circle from learning the basic elements of Power BI, taken a tour through its software features and elements, and learned how they all work together.
 
-![](media/powerbi-learning-0-0-what-is-power-bi/c0a0_2.png)
+![](media/powerbi-learning-6-5-guided-learning-completion/c0a0_2.png)
 
 This is the last section (and the final topic, unless you want to learn DAX) in the course, so if you went through all of these sections in order, take a moment to pat yourself on the back. Good job! You're now well versed in all these **important concepts**:
 

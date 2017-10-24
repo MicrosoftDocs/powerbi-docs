@@ -69,7 +69,7 @@ And that's it. On the scheduled times, Power BI will go out to those data source
 
 One powerful and well-known partner of Power BI is **Excel**. Power BI and Excel are designed to work well together; your workbooks will feel at home in Power BI, and it's easy to get them there.
 
-![](media/powerbi-learning-5-1-intro-excel-data/5-1_1.png)
+![](media/powerbi-learning-4-6-install-configure-personal-gateway/5-1_1.png)
 
 How easy? In the next section, **Power BI and Excel** you learn exactly that.
 
