@@ -49,7 +49,7 @@ Regardless of which way you choose to download, once **Power BI Desktop** is dow
 
 **Power BI Desktop** is installed as an application, and runs on your desktop.
 
-![](media/powerbi-desktop-getting-started/Designer_GSG_Install.png)
+![](media/powerbi-desktop-get-the-desktop/Designer_GSG_Install.png)
 
 > **Note:** Installing the downloaded (MSI) version, and the **Windows Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
 
