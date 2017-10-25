@@ -23,6 +23,10 @@
 
 ## How this works
 
+### Analysis Services
+
+Rendering a Power BI report, as well as performing a scheduled refresh, requires loading the Power BI report's data model in Analysis Services. An Analysis Services process will be running with Power BI Report Server.
+
 ## Considerations and limitations
 
 ### When scheduled refresh can't be used
@@ -49,3 +53,5 @@ If your data source is set to use Windows credentials, Kerberos constrained dele
 ## Next steps
 
 Configure [scheduled refresh](reportserver-configure-scheduled-refresh.md) on a Power BI report.
+
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
