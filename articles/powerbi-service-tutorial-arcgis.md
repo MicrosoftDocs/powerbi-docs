@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/27/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 
 # ArcGIS maps in Power BI service and Power BI Desktop by Esri

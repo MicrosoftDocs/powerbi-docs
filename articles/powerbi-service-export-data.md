@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Export data from a visualization"
+   pageTitle="Export data from a Power BI visualization"
    description="Export data from a report visualization and dashboard visualization and view it in Excel."
    services="powerbi"
    documentationCenter=""
@@ -18,10 +18,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/24/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 
-# Export data from Power BI visualizations
+# Export data from visualizations
 
 If you'd like to see the data that is used to create a visualization, you can [display that data in Power BI](powerbi-service-reports-see-data.md) or export that data to Excel as an .xlsx or .csv file.   
 
@@ -100,6 +100,8 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
 - Power BI only supports export in visuals that use basic aggregates. Export is not available for visuals using model or report measures.
 
 - Custom visuals, and R visuals, are not currently supported.
+
+- Export data is not available for users outside of your organization who are using a dashboard that has been shared with them. 
 
 -  If there is unicode character in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode characters are currency symbols and foreign words. The workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this:
 
