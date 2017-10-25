@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/01/2017"
+   ms.date="11/01/2017"
    ms.author="davidi"/>
 
 # Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources (Preview)
