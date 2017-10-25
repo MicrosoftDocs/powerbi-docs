@@ -110,11 +110,11 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 
 4.  Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** (the blue line running along the 0M% gridline) is much smaller than the scale of **Sales** which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.      
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/flatline_new.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/flatline_new.png)
 
 5.  To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
 
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/converttocombo_new.png)
 
 4.  Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. What we havw now is the stacked column chart we created above ***plus*** a line chart.  (Optionally, use what you leared above to format the axes font color and size.)
 

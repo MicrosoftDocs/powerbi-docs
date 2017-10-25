@@ -28,7 +28,7 @@ Once you have installed the On-premises Data Gateway, you will need to add data 
 
 You can download the gateway from the Power BI service. Select **Downloads** > **Data Gateway**, or by going to the [gateway download page](https://go.microsoft.com/fwlink/?LinkId=698861).
 
-![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
+![](media/powerbi-gateway-onprem-manage-oracle/powerbi-download-data-gateway.png)
 
 > [AZURE.WARNING] In order for the gateway to be able to connect to your Oracle server, the Oracle Data Provider for .NET (ODP.NET) needs to be installed and configured. This is part of the Oracle Data Access Components (ODAC). For more information on how to download the Oracle provider, see [Installing the Oracle Client](#installing-the-oracle-client) below.
 

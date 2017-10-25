@@ -45,13 +45,13 @@ The first time a colleague shares an ArcGIS map with you, Power BI will display 
 ## Selection tools
 ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data points can be selected at a time.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
+![](media/powerbi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
+![](media/powerbi-visualizations-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points. Use CTRL to select more than one rectangular area.
+![](media/powerbi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points. Use CTRL to select more than one rectangular area.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
+![](media/powerbi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
  
 <br/>
 

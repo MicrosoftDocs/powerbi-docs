@@ -27,7 +27,7 @@ Power BI for Office 365, a previous version of Power BI, has been transitioned t
 
 Access to the **Power BI for Office 365** Admin portal is no longer available. Administrators can use the new [Admin portal](https://app.powerbi.com/admin-portal) to manage their organization's Power BI subscription.
 
-![](media/powerbi-admin-portal/powerbi-admin-landing-page.png)
+![](media/powerbi-admin-o365portal-retired/powerbi-admin-landing-page.png)
 
 For more information, see [Power BI admin portal](powerbi-admin-portal.md).
 
