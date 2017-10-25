@@ -59,7 +59,7 @@ Some uses for Full Screen mode are:
     -    Use the **Back** button to navigate to the previous page in your browser. If the previous page was a Power BI service page, it will display in Full Screen mode.  Full Screen mode will persist until you close Full Screen.
 
     -    To print a tile from Full Screen mode, select the Print icon.
-![](media/powerbi-service-dash-and-reports-fullscreen/print-icon.png)
+![](media/powerbi-service-display-tile-in-full-screen-mode/print-icon.png)
 
     -    To exit Full Screen mode, select the **Close Full Screen** icon ![](media/powerbi-service-display-tile-in-full-screen-mode/power-bi-close-full-screen.png)
 

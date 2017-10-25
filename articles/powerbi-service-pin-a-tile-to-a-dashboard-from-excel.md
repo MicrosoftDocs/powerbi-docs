@@ -59,7 +59,7 @@ One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is fr
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_selectRange.png)
 
-2.  Select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png) icon. 
+2.  Select the pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_PinTile_Small.png) icon. 
 
 3.  Pin the tile to an existing dashboard or to a new dashboard. 
 

@@ -30,7 +30,7 @@ When you store a **Power BI Desktop** file on OneDrive or SharePoint Online, any
 
 You can perform a one-time, manual refresh right in Power BI Desktop by selecting Refresh on the Home ribbon. When you select Refresh here, the data in the *file’s* model is refreshed with updated data from the original data source. This kind of refresh, entirely from within the Power BI Desktop application itself, is different from manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 
-![](media/powerbi-refresh-desktop-file-local-drive/pbix-refresh.png)
+![](media/powerbi-refresh-desktop-file-onedrive/pbix-refresh.png)
 
 When you import your Power BI Desktop file from OneDrive, or SharePoint Online, data, along with other information about the model is loaded into a dataset in Power BI. In the Power BI service, not Power BI Desktop, you want to refresh data in the dataset because that is what your reports, in the Power BI service, are based on. Because the data sources are external, you can manually refresh the dataset by using **Refresh now** or you can setup a refresh schedule by using **Schedule Refresh**.
 
