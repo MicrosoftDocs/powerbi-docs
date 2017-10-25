@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Certify a custom visualization"
-   description="Description and process for approving and certifying a custom visualization"
+   pageTitle="Certified Power BI custom visualizations"
+   description="Requirements and process to submit a custom visual for certification. And a list of already certified custom visuals."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/27/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 # Getting a custom visual *certified*
 
@@ -62,18 +62,23 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |---------|---------|
 |[Association rules](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380815) |   |
 |[Aster plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759?src=office&tab=Overview) |   |
+|[BciCalendar] coming soon |   |
 |[Box and Whisker](https://appsource.microsoft.com/product/power-bi-visuals/WA104380831?src=office&tab=Overview) |   |
 |[Bullet Chart](https://store.office.com/en-us/app.aspx?assetid=WA104380755) |  [Video1](https://youtu.be/AOlsFYkfkcw)   [Video2](https://youtu.be/AQvd2FhRyCI)|
 |[Bullet Chart by OKViz](https://store.office.com/bullet-chart-by-okviz-WA104380953.aspx) | [Video](https://youtu.be/mtvUNl9bMjA) |
 |[Card with States by OKViz](https://store.office.com/card-with-states-by-okviz-WA104380967.aspx) |[Video 1  ](https://youtu.be/myiX0BmZd8U) [Video 2](https://youtu.be/AOlsFYkfkcw) |
 |[Chiclet slicer](https://store.office.com/chiclet-slicer-WA104380756.aspx)  |[Video](https://youtu.be/iYOkJ1APueY) |
 |[Circular gauge by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380837?tab=Overview)  |   |
+|[Cylindrical gauge](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380874)  |  |
 |[Dial gauge](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381184)  |[Video](https://youtu.be/AOlsFYkfkcw)  |(https://appsource.microsoft.com/product/power-bi-visuals/WA104380831?src=office&tab=Overview) |   |
 [Donut chart (Ring chart) by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380824?tab=Overview)  | [Video](https://youtu.be/pDToHDFHnq8) |
+|[Dril down donut chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380858)  |      |
 |[Dual KPI](https://store.office.com/dual-kpi-WA104380774.aspx)  | [Video](https://youtu.be/821o0-eVBXo?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)    |
 |Fly Wheel - coming soon |   |
 |[Gantt](https://store.office.com/gantt-WA104380765.aspx)  |[Video](https://youtu.be/qJ7s_KrGiUU)  |
 |[Histogram](https://store.office.com/histogram-chart-WA104380776.aspx)  |  |
+|[Horizotal Funnel](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380846)  |  [Video](https://youtu.be/SudZei68PPo)|
+|[Image timeline](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381254)   | |
 |[KPI Indicator](https://store.office.com/kpi-indicator-WA104380832.aspx)   | |
 |Liquid Fill Gauge - coming soon  | [Video](https://youtu.be/wQ51TTqIZc4)  |
 |[Linear gauge by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821?src=office&tab=Overview)  | [Video](https://youtu.be/AOlsFYkfkcw)  |
@@ -83,12 +88,15 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 |[Pulse chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381006?src=office&tab=Overview) | [Video](https://www.youtube.com/watch?v=DQWdcQtjDVw)  |
 |[Radar chart](https://store.office.com/radar-chart-WA104380771.aspx) |   |
 |[Sankey chart](https://store.office.com/app.aspx?assetid=WA104380777.aspx)  | [Video](https://youtu.be/WWP9wVUHGaA) |
+|[Ring chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824)  | [Video](https://youtu.be/pDToHDFHnq8) |
 |[Scroller](https://store.office.com/scroller-WA104381018.aspx) |[Video](https://youtu.be/uhRFQF2cGSY)  |
 |[Smart Filter by OKViz](https://store.office.com/smart-filter-by-okviz-WA104380859.aspx) | [Video](https://youtu.be/gcJsDDRQq28) |
 |[Sparkline by OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380910?src=office&tab=Overview) | [Video](https://youtu.be/0m3Vnvso9tY)  |
 |[Sunburst](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380767?src=office&tab=Overview)  |   |
 |[Tachometer](https://store.office.com/tachometer-WA104380937.aspx?)   | [Video](https://www.youtube.com/watch?v=C3OXdETbS9o)|
+|[Time series decomposition](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380897)   |   |
 |[Table Heatmap](https://store.office.com/table-heatmap-WA104380818.aspx)     |   |
+|[Text wrapper](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380826)     |   |
 |[Timeline slicer](https://store.office.com/timeline-slicer-WA104380786.aspx)    | [Video](https://youtu.be/ozMtZ4_NZ10)|
 |[Tornado chart](https://store.office.com/tornado-chart-WA104380768.aspx) | [Video](https://youtu.be/AQvd2FhRyCI) |
 |[Visio visual preview](https://store.office.com/visio-visual-preview-WA104381132.aspx)    |  [Video](https://www.youtube.com/watch?v=dCcd7rftjZA&list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x&index=2)   |
