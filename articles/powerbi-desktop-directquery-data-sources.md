@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2017"
+   ms.date="10/26/2017"
    ms.author="davidi"/>
 
 # Data sources supported by DirectQuery in Power BI
@@ -30,6 +30,7 @@ The following data sources support DirectQuery in Power BI:
 -   Azure HDInsight Spark (Beta)
 -   Azure SQL Database
 -   Azure SQL Data Warehouse
+-   Google BigQuery (Beta)
 -   IBM Netezza (Beta)
 -   Impala (version 2.x)
 -   Oracle Database (version 12 and above)
@@ -39,6 +40,7 @@ The following data sources support DirectQuery in Power BI:
 -   Spark (Beta)  (version 0.9 and above)
 -   SQL Server
 -   Teradata Database
+-   Vertica (Beta)
 
 Data sources that are have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that  that opening a published report or exploring the dataset can result in an error.
 
