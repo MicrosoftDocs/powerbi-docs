@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/25/2017"
+   ms.date="10/26/2017"
    ms.author="davidi"/>
 
 # Troubleshooting refresh scenarios
@@ -58,6 +58,8 @@ The Azure Active Director (**AAD**) OAuth token, used by many different data sou
 Data sources that use AAD OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, this may be the reason.
 
 Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance (or other AAD OAuth data source) is so large that it could run into the two-hour data-load threshold, you may experience a data load timeout from the Power BI service as well.
+
+Also note that, for refresh to work properly, when connecting to a **SharePoint Online** data source using AAD OAuth, you must use the same account that you use to sign in to the **Power BI service**.
 
 ## Uncompressed data limits for refresh
 

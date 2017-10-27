@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/11/2017"
+   ms.date="10/26/2017"
    ms.author="davidi"/>
 
 # Real-time streaming in Power BI
@@ -232,6 +232,7 @@ Modeling is not possible on a streaming dataset, since the data is not stored pe
 On a push dataset, you can use the delete rows REST API call. Separately, you can also use this handy tool, which is a wrapper around the REST APIs. There is currently no way to clear data from a streaming dataset, though the data will clear itself after an hour.
 #### I set up an Azure Stream Analytics output to Power BI, but I don’t see it appearing in Power BI – what’s wrong?
 Here’s a checklist you can use to troubleshoot the issue:
+
 1.  Restart the Azure Stream Analytics job (jobs created before the streaming GA release will require a restart)
 2.  Try re-authorizing your Power BI connection in Azure Stream Analytics
 3.  Which workspace did you specify in the Azure Stream Analytics output? In the Power BI service, are you checking in that (same) workspace?

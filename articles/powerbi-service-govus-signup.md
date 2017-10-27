@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2017"
+   ms.date="10/26/2017"
    ms.author="davidi"/>
 
 # Enroll your US Government organization in the Power BI service
@@ -75,22 +75,24 @@ If your organization is an existing **Office Government Cloud** customer, but yo
 The below is additional information for signing up for **Power BI US Government** in various licensing migration cases.
 
 ### Direct Power BI Trial to Pro Customer Onboarding
--  Click and follow through the Billing\Purchase Service\PowerBI Pro Gov and select purchase and not Trial
+
+-  Click and follow through the Billing > Purchase Service > Power BI Pro Gov and select purchase and not Trial
 -  Fill in the necessary and get the licenses
--  Remove the PowerBI Pro Trial or remove the old licenses and Assign the new ones to the users
+-  Remove the Power BI Pro Trial or remove the old licenses and Assign the new ones to the users
 -  Log in to [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ### Reseller Power BI Trial to Pro Customer Onboarding
--  Go to **Billing > Subscriptions** and select **Power BI Pro for Government** subscription. There you will see:
-   -  Available
-   -  Assigned
-   -  Assign to users links
--  If you still have the Trial assigned:
-   -  Click on **Assigned** under the Trial subscription and remove the users you want to add to paid
-   -  Go to the Paid subscription and assign those users
+
+Go to **Billing > Subscriptions** and select **Power BI Pro for Government** subscription. There you will see:
+-   Available
+-   Assigned
+-   Assign to users links
+-   If you still have the Trial assigned:
+    -   Click on **Assigned** under the Trial subscription and remove the users you want to add to paid
+    -   Go to the Paid subscription and assign those users
 
 ### Whitelisting Instructions
-*Whitelisting* is a process that the Power BI engineering team uses to move customers from the commercial cloud environment into the secure, Government cloud environment. This ensures that features available in the US Government cloud work as expected.
+*Whitelisting* is a process that the Power BI engineering team uses to move customers from the commercial cloud environment into the secure, Government cloud environment. This ensures that features available in the US Government cloud work as expected. All existing (or new) US Government customers that purchase US Government **Power BI** services for the first time *must* initiate the following whitelisting process. The process must be done prior to setup or migration to US Government **Power BI** services. 
 
 To have your tenant *whitelisted* for the US Government cloud, fill out a support ticket that makes the request, from the following link. Note that only administrators can make this request:
 
@@ -112,15 +114,17 @@ If you have both Free and US Government Pro licenses in your tenant, both Free a
 When using a mix of Free and Pro licenses in a US Government tenant, and going through the *whitelisting* process, the following can be expected:
 
 **Before *whitelisting***:
+
 -   Users with Free licenses are running in commercial cloud
 -   Pro US Government licenses show up in the portal, and the administrator can assign those licenses to users. Pro US Government users will not lose data from their Free licenses once the admin assigns a US Government Pro license. The assigned users have access Power BI Pro features for US Government customers, but the following bullet list functionality gaps will exist until the tenant is successfully *whitelisted*:
 
-    -   Gateway, Mobile, and Power BI Desktop can’t authenticate
-    -   You cannot access Azure commercial data sources
-    -  PBIX files must be manually uploaded from the commercial Power BI service
-    -  Power BI mobile apps are not available
+    -    Gateway, Mobile, and Power BI Desktop can’t authenticate
+    -    You cannot access Azure commercial data sources
+    -    PBIX files must be manually uploaded from the commercial Power BI service
+    -    Power BI mobile apps are not available
 
 **After *whitelisting***:
+
 -  Free users running in the commercial Power BI service can continue to run, but the they will stop authenticating as expected.
 -  Pro users running in the US Government cloud can use the **Power BI for US Government customers** service as expected.
 
