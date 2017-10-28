@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/28/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 # Waterfall charts in Power BI (Tutorial)
 

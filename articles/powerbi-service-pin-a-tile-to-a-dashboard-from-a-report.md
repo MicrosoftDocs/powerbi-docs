@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/23/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
 # Pin a tile to a Power BI dashboard from a report
@@ -28,9 +28,9 @@ One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is fr
 
 And entire report pages can be pinned to a dashboard.  This is also known as pinning a *live* tile.  *Live* because you can interact with the tile on the dashboard and because, unlike individual visualization tiles, changes made in the report are synced with the dashboard. Read more about this below.
 
->**NOTE**:  You can't pin tiles from reports that have been shared with you or from Power BI Desktop. 
+You can't pin tiles from reports that have been shared with you or from Power BI Desktop. 
 
-> [!TIP]
+> **TIP**:
 > Some visualizations use background images. Pinning may not work if the background image is too large.  Try reducing the image size or using image compression.  
 
 ## Pin a tile from a report

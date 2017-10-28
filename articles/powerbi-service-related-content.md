@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/27/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 
 # View related content in Power BI service
@@ -31,16 +31,6 @@ As you've probably already discovered, reports are built on datasets, report vis
 ![](media/powerbi-service-related-content/power-bi-view-related-dashboard-new.png)
 
 >**NOTE**: The Related content feature does not work for streaming datasets.
-
-## Enable the new navigation preview
-
-1. To get started, make sure you’ve enabled the new navigation preview. From Power BI service, select the cog icon ![](media/powerbi-service-related-content/power-bi-settings-icon.png) and choose **Settings**.
-
-    ![](media/powerbi-service-related-content/power-bi-settings-menu.png)
-
-2. Select the **General** tab and choose **Preview features**. Turn **On** the New navigation preview and select **Apply**.
-
-    ![](media/powerbi-service-related-content/power-bi-preview-features.png)
 
 ##   View related content for a dashboard         
  

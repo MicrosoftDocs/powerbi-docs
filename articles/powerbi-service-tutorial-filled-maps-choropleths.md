@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/21/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
 # Filled maps (choropleths) in Power BI (Tutorial)
@@ -95,7 +95,9 @@ In this video, Kim creates a basic map and converts it to a filled map.
 ## Highlighting and cross-filtering  
 For information about using the Filters pane, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a Location in a Filled Map cross-filters the other visualizations on the report page... and vice versa.
+Highlighting a Location in a Filled Map cross-filters the other visualizations on the report page... and vice versa. 
+
+To follow along, copy and paste your Filled map onto the **Sentiment** page of the *Sales and Marketing* report. 
 
 1.  On the filled map, select a state.  This highlights the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 74, Texas is in the Central District \#23, and that most of the sales volume comes from the Moderation and Convenience segments.   
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/img008.png)

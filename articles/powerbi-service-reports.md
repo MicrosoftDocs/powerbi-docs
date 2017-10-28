@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/06/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 # Reports in Power BI
 
@@ -31,7 +31,7 @@ This report has 3 pages (or tabs) and we're currently viewing the Store Sales Ov
 
 If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](powerbi-service-basic-concepts.md)
 
->**NOTE**: Reports are a feature of Power BI service and Power BI Desktop. The experience of working with reports is almost identical. However, for mobile, you can't create reports but you can [view, share, and annotate reports](powerbi-mobile-reports-in-the-iphone-app.md).
+Reports are a feature of Power BI service and Power BI Desktop. The experience of working with reports is almost identical. However, for mobile, you can't create reports but you can [view, share, and annotate reports](powerbi-mobile-reports-in-the-iphone-app.md).
 
 ##    Advantages of reports
 
