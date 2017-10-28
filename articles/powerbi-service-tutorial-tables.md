@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Table visualizations in reports and dashboards (Tutorial)"
+   pageTitle="Table visualizations in Power BI reports and dashboards (Tutorial)"
    description="Tips for working with table visualizations in Power BI reports and dashboards, including how to resize column widths."
    services="powerbi"
    documentationCenter=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/11/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 
 # Working with tables in Power BI reports and dashboards (Tutorial)
@@ -65,9 +65,9 @@ There are many many ways to format a table and we'll only cover a few of them he
 
 - Try formatting the table grid. Here we've added a blue vertical grid, added space to the rows, increased the outline and text size a bit.
 
-    ![](media/powerbi-service-tutorial-tables/power-bi-table-grid.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-table-grid2-new.png)
 
-    ![](media/powerbi-service-tutorial-tables/power-bi-table-grid2.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-table-grid3.png)
 
 - For the column headers we changed the background color, added an outline, and increased the font size. 
 
@@ -82,19 +82,19 @@ There are many many ways to format a table and we'll only cover a few of them he
 ###    Conditional formatting
 One type of formatting is referred to as *conditional formatting* and is applied to fields in the **Values** well of the **Visualizations** pane in Power BI service or Desktop. 
 
-With conditional formatting for tables, you can specify customized cell background colors based on cell values, including using gradient colors. 
+With conditional formatting for tables, you can specify customized cell background colors and font colors based on cell values, including using gradient colors. 
 
 1. In the **Visualizations** pane in Power BI service or Desktop, select the down-arrow beside the value in the **Values** well that you want to format (or right-click the field). You can only manage conditional formatting for fields in the **Values** area of the **Fields** well.
 
-    ![](media/powerbi-service-tutorial-tables/power-bi-conditional-formatting-options.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-conditional-formatting-background.png)
 
-2. Select **Color scales**. In the dialog that appears, you can configure the color, as well as the *Minimum* and *Maximum* values. If you select the **Diverging** box, you can configure an optional *Center* value as well.
+2. Select **Background color scales**. In the dialog that appears, you can configure the color, as well as the *Minimum* and *Maximum* values. If you select the **Diverging** box, you can configure an optional *Center* value as well.
 
-    ![](media/powerbi-service-tutorial-tables/power-bi-color-scales.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-conditional-formatting-background2.png)
 
     Let's apply some custom formatting to our Average Unit Price values. Select **Diverging**, add some colors, and choose **OK**. 
 
-    ![](media/powerbi-service-tutorial-tables/power-bi-color-scales2.png)
+    ![](media/powerbi-service-tutorial-tables/power-bi-conditional-formatting-data-background.png)
 
 3. Add a new field to the table that has both positive and negative values.  Select **Sales > Total Sales Variance**. 
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/25/2017"
+   ms.date="10/25/2017"
    ms.author="mihart"/>
 
 # Change the size of a report page (Tutorial)
@@ -32,7 +32,15 @@ In the [previous article and video](powerbi-service-change-report-display-settin
 
 2.  Make sure that no visualizations are selected on the canvas. Select **View** and review the display options.
 
-    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-page-view-menu.png)
+- In Reading view you'll see this.
+
+     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-page-view-menu-new.png)
+
+- In Editing view you'll see this.
+
+    ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-view-editing-view.png)
+
+   
 
 3.  Let's see how the page looks using the **Actual size** setting.
 
@@ -77,7 +85,7 @@ The page size settings are only available in [Editing view](powerbi-service-inte
 
 2.  Make sure that no visualizations are selected on the canvas.  In the **Visualizations** pane, select the paint roller icon ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-paintroller.png).
 
-3.  Select **Page Size** &gt; **Type** to display the page size options.
+3.  Select **Page size** &gt; **Type** to display the page size options.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-page-size-menu-new.png)
 
@@ -89,7 +97,7 @@ The page size settings are only available in [Editing view](powerbi-service-inte
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-fit-to-width-new.png)
 
-6.  Select **16:9** page ratio.
+6.  Select **Page size** **16:9** ratio.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-16-to-9-new.png)
 

@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 # Combo Chart in Power  (Tutorial)
 
@@ -85,7 +85,7 @@ To create your own combo chart, sign in to Power BI and select **Get Data \> S
 
 In this task, we'll compare gross margin and sales.
 
-1.  Create a new line chart that tracks Gross Margin % last year.  In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
+1.  Create a new line chart that tracks Gross Margin % last year by Month.  In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo1_new.png)
 
@@ -136,7 +136,7 @@ Highlighting a column or line in a combo chart cross-filters the other visualiza
 
 
 
-## See also
+## Next steps
 
 [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)
 

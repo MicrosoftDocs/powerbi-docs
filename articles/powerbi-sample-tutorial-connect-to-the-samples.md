@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 
 # The Power BI samples, a tutorial
