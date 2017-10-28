@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Configure Kerberos to use Power BI reports
@@ -25,7 +25,7 @@
 
 Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
 
-Power BI Report Server includes the ability to host Power BI reports. The only data source supported currently is Analysis Services using a live connection. There is no option to use a stored credential. 
+Power BI Report Server includes the ability to host Power BI reports. Many data sources are supported by your report server. While this article focuses specificly on SQL Server Analysis Services, you can use the concepts and apply that to other data sources such as SQL Server.
 
 You can install Power BI Report Server, SQL Server and Analysis Services on a single machine and everything should work without additional configuration. This is great for a test environment. You may hit errors if you have these services installed on separate machines which is called a distributed environment. In this environment, you are required to use Kerberos authentication. There is configuration required to implement this. 
 

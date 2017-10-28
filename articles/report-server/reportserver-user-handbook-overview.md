@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2017"
+   ms.date="11/01/2017"
    ms.author="maggies"/>
 
 # User handbook overview for Power BI Report Server
@@ -55,7 +55,7 @@ Reports are based on a single dataset. The visualizations in a report each repre
 
 - If you're a report viewer, you can sort and apply filters and slicers as you dig into the data to discover insights and look for answers.
 
-You create Power BI reports with a special edition of Power BI Desktop. Download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=837581) (Optimized for Power BI Report Server - June 2017 GA).
+You create Power BI reports with a special edition of Power BI Desktop. Download [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=837581) (Optimized for Power BI Report Server - October 2017 GA).
 
 ## Paginated reports
 

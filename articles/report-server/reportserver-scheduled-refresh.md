@@ -16,12 +16,32 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/25/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Power BI report scheduled refresh in Power BI Report Server
 
+Scheduled refresh for Power BI reports allows the data for a report to stay up to date.
+
+![Scheduled refresh within Power BI Report Server](media/reportserver-scheduled-refresh/scheduled-refresh-success.png)
+
+Scheduled refresh is specific to Power BI reports with an embedded model. Meaning you imported data into the report instead of using a live connection or DirectQuery. When importing your data, it is disconnected from the original data source and needs to be updated to keep data fresh. Scheduled refresh is the way to keep your data up to date.
+
+Scheduled refresh is configured within the management section of a report. For more information on how to configure scheduled refresh, see [How to configure Power BI report scheduled refresh](reportserver-configure-scheduled-refresh.md).
+
 ## How this works
+
+Several components are involved when using scheduled refresh for your Power BI reports.
+
+* SQL Server Agent as a timer to generate scheduled events.
+* Scheduled jobs are added to a queue of events and notifications in the report server database. In a scale-out deployment, the queue is shared across all of the report servers in the deployment.
+* All report processing that occurs as a result of a schedule event is performed as a background process.
+* The data model is loaded within an Analysis Services instance.
+* For some data sources, the Power Query mashup engine is used to connect to data sources and transform the data. Other data sources may be connected to directly from an Analysis Services service used to host the data models for Power BI Report Server.
+* New data is loaded into the data model within Analysis Services.
+* Analysis Services processes the data and executes any needed calculations.
+
+Power BI Report Server maintains an event queue for all scheduled operations. It polls the queue at regular intervals to check for new events. By default, the queue is scanned at 10 second intervals. You can change the interval by modifying the **PollingInterval**, **IsNotificationService**, and **IsEventService** configuration settings in the RSReportServer.config file. **IsDataModelRefreshService** can also be used to set whether a report server process scheduled events.
 
 ### Analysis Services
 
@@ -45,6 +65,10 @@ In addition to the above list, there are specific scenarios with data sources in
 ### Memory limits
 
 Traditional workload for a report server has been similar to a web application. The ability to load reports with imported data or DirectQuery, and the ability to perform scheduled refresh, rely on an Analysis Services instance being hosted alongside of the report server. As a result, this could result is unexpected memory pressure on the server. Plan your server deployment accordingly knowning that Analysis Services may be consuming memory alongside the report server.
+
+For information on how to monitor an Analysis Services instance, see [Monitor an Analysis Services Instance](https://docs.microsoft.com/sql/analysis-services/instances/monitor-an-analysis-services-instance).
+
+For information about memory settings within Analysis Services, see [Memory Properties](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
 ### Authentication and Kerberos
 

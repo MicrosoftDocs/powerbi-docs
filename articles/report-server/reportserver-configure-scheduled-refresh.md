@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/25/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # How to configure Power BI report scheduled refresh
@@ -27,7 +27,7 @@ To refresh data in your Power BI report, a scheduled refresh plan must be create
 
 ## Configure data source credentials
 
-Prior to creating a schedule data refresh plan, you need to set the credentials for each data source used in your Power BI report.
+Prior to creating a schedule data refresh plan, you need to set the credentials for **each data source** used in your Power BI report.
 
 1. In the web portal, right-click on the Power BI report and select **Manage**.
 

@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/25/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Power BI report data sources in Power BI Report Server
@@ -25,43 +25,90 @@ Power BI reports can connect to different data sources. Depending on how data is
 
 These data sources are specific to Power BI reports used within Power BI Report Server. For information about data sources supported with paginated reports, see [Data Sources Supported by Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
+> [AZURE.IMPORTANT] All data sources in a Power BI Desktop report must be supported to configure scheduled refresh.
+
 ## List of supported data sources
 
-> [AZURE.NOTE] Other data sources may work even though they aren't on the supported list above.
+Other data sources may work even though they aren't on the supported list.
 
-|**Data source**|**Live/DirectQuery**|**Scheduled refresh**|
+|**Data source**|**Cached data**|**Scheduled refresh**|**Live/DirectQuery**|
 |---|---|---|---|
-|Access|No|Yes|
-|Active Directory|No|Yes|
-|Analysis Services Tabular|Yes|Yes|
-|Analysis Services Multidimensional|Yes|Yes|
-|Azure Blob Storage|No|Yes|
-|Azure SQL Database|Yes|Yes|
-|Azure Table|No|Yes|
-|Cosmos DB|No|Yes|
-|Excel|No|Yes|
-|Folder|No|Yes|
-|HDInsight (HDFS)|No|Yes|
-|HDInsight (Spark)|No|Yes|
-|IBM DB2|No|Yes|
-|IBM Informix Database|No|Yes|
-|JSON|No|Yes|
-|Microsoft Exchange|No|Yes|
-|MySQL|No|Yes|
-|OData|No|Yes|
-|ODBC|No|Yes|
-|Oledb|No|Yes|
-|Oracle|Yes|Yes|
-|PostgresSQL|No|Yes|
-|SAP BW|Yes|Yes|
-|SAP HANA|Yes|Yes|
-|SharePoint list (on-premises)|No|Yes|
-|SQL Server|Yes|Yes|
-|Sybase|No|Yes|
-|Teradata|Yes|Yes|
-|Text|No|Yes|
-|Web|No|Yes|
-|XML|No|Yes|
+|SQL Server Database|Yes|Yes|Yes|
+|SQL Server Analysis Services|Yes|Yes|Yes|
+|Azure SQL Database|Yes|Yes|Yes|
+|Azure SQL Data Warehouse|Yes|Yes|Yes|
+|Excel|Yes|Yes|No|
+|Access Database|Yes|Yes|No|
+|Active Directory|Yes|Yes|No|
+|Amazon Redshift|Yes|No|No|
+|Azure Blob Storage|Yes|Yes|No|
+|Azure Data Lake Store|Yes|No|No|
+|Azure HDInsight (HDFS)|Yes|Yes|No|
+|Azure HDInsight (Spark)|Yes|Yes|No|
+|Azure Table Storage|Yes|Yes|No|
+|Dynamics 365 (online)|Yes|No|No|
+|Facebook|Yes|No|No|
+|Folder|Yes|Yes|No|
+|Google Analytics|Yes|No|No|
+|Hadoop File (HDFS)|Yes|No|No|
+|IBM DB2 Database|Yes|Yes|No|
+|Impala|Yes|No|No|
+|JSON|Yes|Yes|No|
+|Microsoft Exchange|Yes|No|No|
+|Microsoft Exchange Online|Yes|No|No|
+|MySQL Database|Yes|Yes|No|
+|OData Feed|Yes|Yes|No|
+|ODBC|Yes|Yes|No|
+|OLE DB|Yes|Yes|No|
+|Oracle Database|Yes|Yes|Yes|
+|PostgreSQL Database|Yes|Yes|No|
+|Power BI service|No|No|No|
+|R Script|Yes|No|No|
+|Salesforce Objects|Yes|No|No|
+|Salesforce Reports|Yes|No|No|
+|SAP Business Warehouse server|Yes|Yes|Yes|
+|SAP HANA Database|Yes|Yes|Yes|
+|SharePoint Folder (on-premises)|Yes|Yes|No|
+|SharePoint List (on-premises)|Yes|Yes|No|
+|SharePoint Online List|Yes|No|No|
+|Snowflake|Yes|No|No|
+|Sybase Database|Yes|Yes|No|
+|Teradata Database|Yes|Yes|Yes|
+|Text/CSV|Yes|Yes|No|
+|Web|Yes|Yes|No|
+|XML|Yes|Yes|No|
+|appFigures (Beta)|Yes|No|No|
+|Azure Analysis Services database (Beta)|Yes|No|No|
+|Azure Cosmos DB (Beta)|Yes|No|No|
+|Azure HDInsight Spark (Beta)|Yes|No|No|
+|Common Data Service (Beta)|Yes|No|No|
+|comScore Digital Analytix (Beta)|Yes|No|No|
+|Dynamics 365 for Customer Insights (Beta)|Yes|No|No|
+|Dynamics 365 for Financials (Beta)|Yes|No|No|
+|GitHub (Beta)|Yes|No|No|
+|Google BigQuery (Beta)|Yes|No|No|
+|IBM Informix database (Beta)|Yes|No|No|
+|IBM Netezza (Beta)|Yes|No|No|
+|Kusto (Beta)|Yes|No|No|
+|MailChimp (Beta)|Yes|No|No|
+|Microsoft Azure Consumption Insights (Beta)|Yes|No|No|
+|Mixpanel (Beta)|Yes|No|No|
+|Planview Enterprise (Beta)|Yes|No|No|
+|Projectplace (Beta)|Yes|No|No|
+|QuickBooks Online (Beta)|Yes|No|No|
+|Smartsheet|Yes|No|No|
+|Spark (Beta)|Yes|No|No|
+|SparkPost (Beta)|Yes|No|No|
+|SQL Sentry (Beta)|Yes|No|No|
+|Stripe (Beta)|Yes|No|No|
+|SweetIQ (Beta)|Yes|No|No|
+|Troux (Beta)|Yes|No|No|
+|Twilio (Beta)|Yes|No|No|
+|tyGraph (Beta)|Yes|No|No|
+|Vertica (Beta)|Yes|No|No|
+|Visual Studio Team Services (Beta)|Yes|No|No|
+|Webtrends (Beta)|Yes|No|No|
+|Zendesk (Beta)|Yes|No|No|
 
 > [AZURE.IMPORTANT] Row-level security configured at the data source should work for certain DirectQuery (SQL Server, Azure SQL Database, Oracle and Teradata) and live connections assuming Kerberos is configured properly in your environment.
 

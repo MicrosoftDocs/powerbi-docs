@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/25/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Troubleshoot scheduled refresh in Power BI Report Server
@@ -25,9 +25,61 @@ This article discusses resources available to troubleshoot issues with scheduled
 
 As issues come up, this article will be updated with information to help you.
 
+## Common issues
+
+The following are the more common issues you will hit when trying to schedule refresh for a report. 
+
+### Driver related problems
+
+Connecting to different data sources may require 3rd party drivers that need to be installed in order to connect successfuly. Not only would you need to install them on the machine you are using Power BI Desktop on, but you will also need to make sure the driver is installed on the report server.
+
+The driver may also come in both 32bit and 64bit. Make sure to install the 64bit driver as Power BI Report Server is 64bit.
+
+Please refer to the manufacturer for details on how to install and configure 3rd party drivers.
+
+### Memory pressure
+
+Memory pressure can occur when reports require more memory to process and render. Schedule refresh on reports may demand a significant amount of memory on the machine. Especially for larger reports. Memory pressure can result in report failures as well as a potential crash of the report server itself.
+
+If you are encountering memory pressure consistently, it may be worth looking at a scaled out deployment of the report server in order to spread the load of resources. You can also define that a given report server is used for data refresh with the `IsDataModelRefreshService` setting within rsreportserver.config. With this setting, you could define one or more servers to be the front end server to handle on demand reports, and have another set of servers to only be used for scheduled refresh.
+
+For information on how to monitor an Analysis Services instance, see [Monitor an Analysis Services Instance](https://docs.microsoft.com/sql/analysis-services/instances/monitor-an-analysis-services-instance).
+
+For information about memory settings within Analysis Services, see [Memory Properties](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
+
+### Kerberos configuration
+
+Connecting to a data source with windows credentials may require configuring Kerberos constrained delegation to make a successful connection. For more information about how to configure Kerberos constrained delegation, see [Configure Kerberos to use Power BI reports](reportserver-configure-kerberos-powerbi-reports.md).
+
 ## Known issues
 
 Information about known issues will be listed here when they become available.
+
+## Configuration settings
+
+The following settings can be used to affect scheduled refresh. Settings set within SQL Server Management Studio (SSMS) apply to all report servers within a scale-out deployment. Settings configured within rsreportserver.config are for the specific server they are set on.
+
+**Settings within SSMS:**
+
+|Setting |Description  |
+|---------|---------|
+|EnablePowerBIReportEmbeddedModels|Enables or disables the ability to use imported data within your reports. Valid values are True or False.|
+|MaxFileSizeMb|Maximum file size for uploaded reports. Default is 1000 MB (1 GB). Maximum value is 2000 MB (2 GB).|
+|ModelCleanupCycleMinutes|Defines how often the model is checked to evict it from memory. Default is 15 minutes.|
+|ModelExpirationMinutes|Defines how long until the model expires based on the last time used and is evicted. Default is 60 minutes.|
+|ScheduleRefreshTimeoutMinutes|Defines how long the data refresh can take for a mode. Default is 120 minutes. There is no upper limit.|
+
+**Settings within rsreportserver.config:**
+
+```
+<Configuration>
+    <Service>
+        <PollingInterval>10</PollingInterval>
+        <IsDataModelRefreshService>false</IsDataModelRefreshService>
+        <MaxQueueThreads>0</MaxQueueThreads>
+    </Service>
+</Configuration>
+```
 
 ## Tools for troubleshooting
 
