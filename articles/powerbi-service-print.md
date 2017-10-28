@@ -50,7 +50,7 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
 
 1. [Open the tile in Focus mode](powerbi-service-display-dash-in-focus-mode.md) by selecting the ellipses and choosing the Focus icon ![](media/powerbi-service-print/power-bi-focus-icon.png).
 
-   ![](media/powerbi-service-print/menu-options.png)
+    ![](media/powerbi-service-print/menu-options.png)
 
 2. Open the tile in [full screen mode](powerbi-service-display-tile-in-full-screen-mode.md) by selecting the full screen icon ![](media/powerbi-service-print/power-bi-full-screen-icon.png) from the top navbar.
 
