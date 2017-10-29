@@ -65,9 +65,9 @@ You can access shared datasets from Power BI Desktop with an OData feed.
 
 3. Now you can use the data in designing reports.
 
-   ![Power BI Desktop report design with OData feed](media/reportserver-whats-new/report-server-odata-power-bi-desktop-report-design.png)
+    ![Power BI Desktop report design with OData feed](media/reportserver-whats-new/report-server-odata-power-bi-desktop-report-design.png)
 
-Make sure you use **Advanced Options** so you can turn on Open Type Columns and format the columns accordingly in Power Query to meet your needs. 
+Be sure to use **Advanced Options** so you can turn on Open Type Columns and format the columns accordingly in Power Query to meet your needs. 
 
 Read more about [connecting to OData fields in Power BI Desktop](../powerbi-desktop-connect-odata.md).
 
