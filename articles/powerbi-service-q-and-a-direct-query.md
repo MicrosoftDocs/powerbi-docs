@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Using Q&A with live connections (Preview)"
+   pageTitle="Using Q&A with live connections)"
    description="Documentation for using Power BI Q&A natural language queries with live connections to Analysis Services data and the On-premises data gateway."
    services="powerbi"
    documentationCenter=""
@@ -17,10 +17,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/31/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
-# Enable Q&A for live connections (Preview)
+# Enable Q&A for live connections
 
 ## What is On-premises Data Gateway?  What is a live connection?
 
@@ -32,7 +32,7 @@ If you'd like to use Q&A with datasets you access through a gateway, you'll need
 
 Once enabled, Power BI creates an index of your data source and uploads a subset of that data to Power BI to enable asking questions. It may take several minutes to create the initial index and Power BI maintains and updates the index automatically as your data changes. Using Q&A with these datasets behaves the same as with data published to Power BI. The full set of features available in the Q&A experience is supported in both cases, including using the data source with Cortana.
 
-As you ask questions in Power BI, Q&A determines the best visual to construct or report sheet to use to answer your question using an index of your dataset. After determining the best potential answer, Q&A uses DirectQuery to fetch live data from the data source via the Enterprise Gateway to populate charts and graphs. This ensures Power BI Q&A results always show the most up-to-date data directly from the underlying data source.
+As you ask questions in Power BI, Q&A determines the best visual to construct or report sheet to use to answer your question using an index of your dataset. After determining the best potential answer, Q&A uses DirectQuery to fetch live data from the data source via the gateway to populate charts and graphs. This ensures Power BI Q&A results always show the most up-to-date data directly from the underlying data source.
 
 Since Power BI Q&A uses the text and schema values from your data source to determine how to query the underlying model for answers, searches for specific new or deleted text values (such as asking for a customer name related to a newly added text record) rely on the index being up-to-date with the latest values. Power BI automatically keeps the text and schema index up to date within a 60 minute window of changes.
 
@@ -63,7 +63,7 @@ Once you have the data gateway set up, connect to your data from Power BI.  Eith
 
 When you enable Q&A for your on-premises data, a subset of your data is cached in the service. This is done to ensure that Q&A works with a reasonable performance. We exclude values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&A by unchecking **Turn on Q&A for this dataset**, or when you delete your dataset.
 
-## Limitations during Public Preview
+## Considerations and troubleshooting
 
 During the Preview phase of this feature, there are several limitations:
 

@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
 # Procurement Analysis sample for Power BI: Take a tour
@@ -45,7 +45,7 @@ Let’s first look for trends in spending by category and location.
 
 2. Select the dashboard tile **Total Invoice by Country/Region**. It opens to the "Spend Overview" page of the “Procurement Analysis Sample” report.
 
-![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement2.png)
+    ![](media/powerbi-sample-procurement-analysis-take-a-tour/procurement2.png)
 
 Notice a few things:
 

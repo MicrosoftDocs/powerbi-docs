@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Customize visual titles, legends, and backgrounds (Tutorial)"
+   pageTitle="Get started formatting Power BI visualizations (Tutorial)"
    description="Tutorial: Customize visualization title, background, and legend"
    services="powerbi"
    documentationCenter=""
@@ -17,16 +17,14 @@
    ms.devlang="NA"
    ms.topic="article"
    ms.tgt_pltfrm="NA"
-   ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.workload="10/28/2017"
    ms.author="mihart"/>
 
-# Customize visual titles, legends, and backgrounds (Tutorial)
+# Customize visualization titles, legends, and backgrounds (Tutorial)
 
-In this tutorial you'll learn many different ways to customize your visualizations. Not all visualizations can be customized, [see the complete list](#list).  Specifically, this tutorial covers customizing:  
--   visualization titles  
--   visualization backgrounds  
--   visualization legends
+In this tutorial you'll learn a few different ways to customize your visualizations.   There are so many options for customizing your visualizations, the best way to learn about them all is by exploring the Formatting pane (select the paintroller icon).  To get you started, this article shows you how to customize a visualization title, legend, and background.  
+
+Not all visualizations can be customized, [see the complete list](#list).  
 
 Watch Amanda customize visualizations in her report (fast-forward to 4:50 in the video). Then follow the instructions below the video to try it out yourself with your own data.
 
@@ -34,15 +32,16 @@ Watch Amanda customize visualizations in her report (fast-forward to 4:50 in the
 
 
 ## Customize visualization titles in reports    
-I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md). To follow along, [connect to the Retail Analysis sample](powerbi-sample-downloads.md).
+To follow along, sign into app.powerbi and [open the Retail Analysis Sample](powerbi-sample-downloads.md) report in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md).
 
 >[AZURE.NOTE] When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](powerbi-service-edit-a-tile-in-a-dashboard.md).
 
 1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
 
-2.  In the Visualizations and Filters pane, select the paintbrush icon ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) to reveal the formatting options and select **Title** to expand that section.  
+2.  In the Visualizations pane, select the paintroller icon to reveal the formatting options.  and select **Title** to expand that section.  
 
-	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull-new.png)
+	![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/power-bi-formatting-menu.png)
+
 
 3.  Turn  **Title** on and off by selecting the On (or Off) slider. For now, leave it **On**.  
 
@@ -59,7 +58,9 @@ I’ve signed in to the Power BI service and I’m starting with the Retail Anal
 
 	You can always revert to the default colors by selecting **Revert to default** in the color window.
 
-6.  The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
+6.  Increase the text size to 12.
+
+7. The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
 ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizealign.png)
 
 	At this point in the tutorial, your column chart **title** should look like something like this:  
@@ -78,7 +79,7 @@ With the same column chart selected, expand the Background options.
     -   Select the dropdown and choose a grey color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
 
     -    Change Transparency to 74%.   
-    ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizebackground.png)
+    ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/power-bi-customize-background.png)
 
     To revert all the title background customization we've done so far, select **Revert To Default**, at the bottom of the **Background** customization pane.
 
