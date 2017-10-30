@@ -61,7 +61,7 @@ You can also check out the YouTube channels for information about "What's new" a
 ### June 2017
 
 - [Power BI Premium](https://powerbi.microsoft.com/blog/power-bi-premium-generally-available/) made generally available.
-- Multiple API improvements to [automate scheduled refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [clone and rebind reports](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [update gateway bindings](https://msdn.microsoft.com/en-us/library/mt784650.aspx), and much, much more
+- Multiple API improvements to [automate scheduled refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [clone and rebind reports](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [update gateway bindings](https://msdn.microsoft.com/library/mt784650.aspx), and much, much more
 - Relative links in Power BI apps from dashboard tiles to other dashboards and reports.
 - [Impala connector](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) generally available on Power BI Desktop.
 - Extend visual capabilities of Power BI with [interactive R custom visuals](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
