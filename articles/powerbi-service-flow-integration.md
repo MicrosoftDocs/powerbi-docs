@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/17/2017"
+   ms.date="10/30/2017"
    ms.author="mihart"/>
 
 # Microsoft Flow and Power BI
@@ -37,7 +37,7 @@ This tutorial will show you how to create two different flows; one from a templa
 ##  Create a flow that uses Power BI - from a template
 In this task we'll use a template to create a simple flow that is triggered by a Power BI data alert (notification).
 
-1.  Sign in to Microsoft Flow.
+1.  Sign in to Microsoft Flow (flow.microsoft.com).
 
 2.  Select **My flows**.
 
@@ -69,13 +69,13 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
 
     ![](media/powerbi-service-flow-integration/power-bi-trigger-flow.png)
 
-2.  To post to Slack, enter a channel name and message text. Notice the dynamic content that we've included in the message text field.
+2.  To post to Slack, enter a channel name and message text (you can also select the default message that Flow creates). Notice the dynamic content that we've included in the message text field.
 
     >[AZURE.NOTE] Include "@" at the beginning of your channel name.  For example, if the Slack channel is named "channelA", in Flow enter "@channelA".
 
     ![](media/powerbi-service-flow-integration/power-bi-flow-slacker.png)
 
-3.  When you're done, select **Create flow**.  The flow is created and evaluated.  Flow lets you know if it finds errors.
+3.  When you're done, select **Create flow** or **Save flow**.  The flow is created and evaluated.  Flow lets you know if it finds errors.
 
 4.  If errors are found, select **Edit flow** to fix them, otherwise, select **Done** to run the new flow.
 
@@ -90,11 +90,11 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 
 1.  Sign in to Microsoft Flow.
 
-2.  Select **My flows** > **Create from scratch**.
+2.  Select **My flows** > **Create from blank**.
 
     ![](media/powerbi-service-flow-integration/power-bi-my-flows.png)
 
-3. Use the Search box to find a Power BI trigger and select **Power BI - When a data driven alert is triggered**.
+3. Use the Search box to find a Power BI trigger and select **Trigger a flow with a Power BI data driven aler**.
 
 ### Build your flow
 
@@ -108,7 +108,7 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 
 3.  Search for **Outlook** and select **Create event**.
 
-    ![](media/powerbi-service-flow-integration/power-bi-flow-create-event.png)
+    ![](media/powerbi-service-flow-integration/power-bi-create-event.png)
 
 4.  Fill in the event fields. As you select a field, Flow displays dynamic content that you can include.
 
@@ -124,7 +124,7 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 
 
 
-### See also
+### Next steps
 - [Get started with Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)
 -   [Set data alerts in Power BI service](powerbi-service-set-data-alerts.md)
 - [Set data alerts on your iphone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)

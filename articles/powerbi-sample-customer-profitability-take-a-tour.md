@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="10/29/2017"
    ms.author="mihart"/>
 
 # Customer Profitability sample for Power BI: Take a tour  
@@ -97,7 +97,7 @@ For our analysis, it would be helpful to determine which industry generates the 
 2.  Select the Q&A question box at the top of the dashboard.
 
      ![](media/powerbi-sample-customer-profitability-take-a-tour/customer4.png)
-3.  Type **total sales by store for Valery**. Notice how the visualization updates as you type the question.
+3.  Type **total revenue by industry for Valery**. Notice how the visualization updates as you type the question.
 
      ![](media/powerbi-sample-customer-profitability-take-a-tour/customer5.png)
 
@@ -118,7 +118,7 @@ Let's take a look at the *Distribution* industry.
 
 3.  The "Gross margin by Month and Executive Name" area chart tells us that only Valery and Tina have customers in this industry and Valery only worked with this industry from June to November.   
 
-4.  Select **﻿Tina**﻿ and then **Valery** in the "Gross Margin by Month and Executive Name" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery. 
+4.  Select **﻿Tina**﻿ and then **Valery** in the "Gross Margin by Month and Executive" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery. 
 
 5.  To see actual revenue, return to the dashboard and use Q&A to ask **total revenue for distribution by scenario by executive**.  
 

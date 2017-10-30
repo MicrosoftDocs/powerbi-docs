@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="06/05/2017"
+   ms.date="10/30/2017"
    ms.author="mihart"/>
 # Hyperlinks in tables
 
@@ -28,7 +28,7 @@ This topic teaches you how to use Power BI Desktop to create hyperlinks. Once cr
 >**NOTE**:
 >Hyperlinks in [tiles on dashboards](powerbi-service-edit-a-tile-in-a-dashboard.md) and [text boxes on dashboards](powerbi-service-add-a-widget-to-a-dashboard.md) can be created on-the-fly using Power BI service. Hyperlinks in [text boxes in reports](powerbi-service-add-a-hyperlink-to-a-text-box.md) can be created on-the-fly using Power BI service and Power BI Desktop.
 
-## To create a hyperlink in Power BI table or matrix
+## To create a hyperlink in a table or matrix using Power BI Desktop
 
 Hyperlinks in tables and matrixes can be created in Power BI Desktop, but not from Power BI Service. Hyperlinks can also be created in Excel Power Pivot before the workbook is imported into Power BI. Both methods are described below.
 
@@ -39,7 +39,7 @@ The procedure for adding a hyperlink depends on whether you've imported the data
 
 1. If the hyperlink doesn't already exist as a field in your dataset, use Desktop to add it as a [custom column](powerbi-desktop-common-query-tasks.md).
 
-2. Select the column and in the **Modeling** tab choose the dropdown for **Data Category**.
+2. In Data view, select the column and in the **Modeling** tab choose the dropdown for **Data Category**.
 
     ![](media/powerbi-service-hyperlinks-in-tables/PBI_data_category.png)
 

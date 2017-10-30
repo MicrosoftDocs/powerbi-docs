@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/15/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
 # Create a new Power BI report by importing a dataset
@@ -68,7 +68,7 @@ Now that our dataset is imported, let's start answering some questions.  Our Chi
 
     ![](media/powerbi-service-create-a-new-report/power-bi-report-step2.png)
 
-3. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well.
+3. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well. Looks like we're very close to our goal.
 
     ![](media/powerbi-service-create-a-new-report/power-bi-report-step3.png)
 
@@ -92,6 +92,9 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 3. Select **Time** > **Period** to add it to the **Axis** well.
 
     ![](media/powerbi-service-create-a-new-report/power-bi-report-step5.png)
+
+4. To sort the visualization, select the ellipses and choose **Sort by Period**.
+   
 
 3. Now let's add the slicer. Select an empty area on the canvas and choose the Slicer ![](media/powerbi-service-create-a-new-report/power-bi-slicer-icon.png)    template. This adds an empty slicer to our canvas.
 

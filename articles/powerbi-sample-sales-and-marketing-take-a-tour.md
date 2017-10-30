@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
 # Sales & Marketing sample for Power BI: Take a tour  
@@ -44,9 +44,10 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 
 ### Use Q&A to dig a little deeper  
 #### Which segments drive our sales? Does it match the industry trend?  
-1.  Click the “Total Units Overall by Segment” tile which will open Q&A.
+1.  Select the “Total Units Overall by Segment” tile which will open Q&A.
 
 2.  Type **for VanArsdel** at the end of the existing query. Q&A interprets the question and displays an updated chart with the answer. Our product volume comes from Convenience and Moderation.
+
     ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales2.png)
 
 3.  Our share in the **Moderation** and **Convenience** categories is very high; these are the segments where we compete.
@@ -54,11 +55,11 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 4.  Navigate back to the dashboard by selecting the dashboard name in the top navbar (breadcrumbs).
 
 #### What does total unit market share look like for category (versus region)?  
-1.  Notice “Total Units YTD by Manufacturer, Region” tile. I wonder how the total unit market share looks like by category? 
+1.  Notice the “Total Units YTD by Manufacturer, Region” tile. I wonder how the total unit market share looks by category? 
 
     ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales3.png)
 
-2.  In the question box at the top of the dashboard, type the question to **total units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
+2.  In the question box at the top of the dashboard, type the question **total units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
     ![](media/powerbi-sample-sales-and-marketing-take-a-tour/totalUnitsByManufacturerAndCategoryFor2014AsATreemap-new.png)
 
 3.  To compare the findings, pin the chart to your dashboard. Very interesting; in 2014 VanArsdel only sold products that fall into the **Urban** category.
@@ -73,29 +74,29 @@ On our dashboard, the R12M (Rolling 12 Months) line shows that our market share 
 #### Page 1 of our report focuses on VanArsdel’s market share.   
 ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales5.png)
 
-1.  Look at the “Total Units by Month and isVanArsdel” column chart at the bottom. The navy column represents VanArsdel (our products) and green is our competition. The drop in June 2014 that VanArsdel experiences is not experienced by the competition.
+1.  Look at the “Total Units by Month and isVanArsdel” column chart at the bottom. The black column represents VanArsdel (our products) and green is our competition. The drop in June 2014 that VanArsdel experienced is not experienced by the competition.
 
 2.  The “Total Category Volume by Segment” bar chart in the middle on the right, is filtered to show VanArsdel’s top 2 segments. Take a look at how this filter was created:  
 
 	a.  Expand the Filters pane on the right.  
     b.  Click to select the visualization.  
     c.  Under Visual Level Filters, notice that **Segment** is filtered to include only **Convenience** and **Moderation**.  
-    d.  Modify the filter by selecting Segment to expand that section and then checking Productivity to add that segment as well.  
+    d.  Modify the filter by selecting Segment to expand that section and then checking **Productivity** to add that segment as well.  
 
-3.  In “Total Units by Month and isVanArsdel”, click the navy “Yes” in the legend to cross-filter the page by VanArsdel. Notice that we don’t compete in the Productivity segment.
+3.  In “Total Units by Month and isVanArsdel”, select the black “Yes” in the legend to cross-filter the page by VanArsdel. Notice that we don’t compete in the Productivity segment.
 
-4.  Click the navy “Yes” again to remove the filter.
+4.  Select the black “Yes” again to remove the filter.
 
-5.  Take a look at the line chart. It shows our monthly market share and 12 month rolling market shares. Rolling 12 months data help in smoothing out monthly fluctuations and shows the long term trends. Click on Convenience and Moderation in the bar chart to see how much fluctuation in market share there is for each segment. The Moderation segment shows much more fluctuation in market share than the Convenience segment.
+5.  Take a look at the line chart. It shows our monthly market share and 12 month rolling market shares. Rolling 12 months data help in smoothing out monthly fluctuations and shows the long term trends. Select Convenience and then Moderation in the bar chart to see how much fluctuation in market share there is for each segment. The Moderation segment shows much more fluctuation in market share than the Convenience segment.
 
 We’re still looking to find out why our market share dipped so low in June. Let’s check Sentiment.
 
 #### Page 3 of our report focuses on Sentiment.  
 ![](media/powerbi-sample-sales-and-marketing-take-a-tour/sales6.png)
 
--   Tweets, Facebook, blogs, articles, etc. contribute to sentiment which is shown in the two line charts. The sentiment chart in the top left shows that sentiment for our products were pretty much neutral up until February. Then a big drop started in February and bottomed out in June. What happened to cause this drop in sentiment? We need to look at external sources. In February, several articles and blog posts rated VanArsdel’s customer service the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service and customers and the industry took note. In July positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment can be seen reflected in “Total Units by Month” on pages 1 and 3. Perhaps this partially explains our market share dips for June?
+Tweets, Facebook, blogs, articles, etc. contribute to sentiment which is shown in the two line charts. The sentiment chart in the top left shows that sentiment for our products were pretty much neutral up until February. Then a big drop started in February and bottomed out in June. What happened to cause this drop in sentiment? We need to look at external sources. In February, several articles and blog posts rated VanArsdel’s customer service the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service and customers and the industry took note. In July positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment can be seen reflected in “Total Units by Month” on pages 1 and 3. Perhaps this partially explains our market share dips for June?
 
--   Sentiment gap would be another area to explore: which districts have the highest sentiment gap, how can management capitalize on this, and discover ways to replicate it in other districts.
+Sentiment gap would be another area to explore: which districts have the highest sentiment gap, how can management capitalize on this, and discover ways to replicate it in other districts.
 
 #### Page 2 of our report focuses on YTD Category Trend  
 ![](media/powerbi-sample-sales-and-marketing-take-a-tour/reportPage2.png)
@@ -115,9 +116,9 @@ We’re still looking to find out why our market share dipped so low in June. Le
 
 -   The bottom left chart shows all the category segments except for VanArsdel’s two strongest segments. Filtering by category by clicking on the bars helps identify potential expansion areas for VanArsdel. The **Extreme** and **Productivity** segments are growing faster than others.
 
--   But we don’t compete in these segments. If we want to move into these areas, we can use our data to see which segments are popular in which regions. You can further investigate questions like which region is growing faster and who would be our biggest competitor in that segment.
+-   But we don’t compete in these segments. If we want to move into these areas, we can use our data to see which segments are popular in which regions. We can further investigate questions like which region is growing faster and who would be our biggest competitor in that segment.
 
--   Remember our market share dips in June? June is a huge month for the Productivity segment – a segment we don’t compete in at all. This could explain our market share dip in June.
+-   Remember our market share dip in June? June is a huge month for the Productivity segment – a segment we don’t compete in at all. This could help explain our market share dip in June.
 
 By filtering the visualizations by VanArsdel, by segment, by month, and by region, we can discover growth opportunities for VanArsdel.
 

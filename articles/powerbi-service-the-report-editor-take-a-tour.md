@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="10/30/2017"
    ms.author="mihart"/>
 # The report editor...Take a tour
 
@@ -56,7 +56,7 @@ The content displayed in the report editor varies by selections you make in the 
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/selectViz.png)
 
-Here is where you select a visualization type. The small pictures are called *templates*. In the image above, the Clustered bar chart is selected. If you don't select a visualization type first, but instead start building a visualization by selecting fields, Power BI will pick the visualization type for you. Yuo can keep Power BI's selection, or change the type by clicking a different template. Switch as many times as you need to find the visualization type that best represents your data.
+Here is where you select a visualization type. The small pictures are called *templates*. In the image above, the Clustered bar chart is selected. If you don't select a visualization type first, but instead start building a visualization by selecting fields, Power BI will pick the visualization type for you. You can keep Power BI's selection, or change the type by selecting a different template. Switch as many times as you need to find the visualization type that best represents your data.
 
 ### Manage the fields used in your visual.
 
@@ -76,7 +76,7 @@ For more information, see [Add visualizations to a Power BI report](powerbi-serv
 
 ### Format your visuals
 
-Select the paint roller icon to display the Format pane. 
+Select the paint roller icon to display the Format pane. The option available depend on the type of visualization selected.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-formatting.png)
 
@@ -88,7 +88,7 @@ The formatting possibilities are almost endless.  To learn more, explore on your
 
 ###   Add analytics to your visualizations
 
-Select the magnifying glass icon to display the Analytics pane. 
+Select the magnifying glass icon to display the Analytics pane. The option available depend on the type of visualization selected.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-analytics.png)    
 With the Analytics pane in Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in Power BI service](powerbi-service-analytics-pane.md) or [Analytics pane in Power BI Desktop](powerbi-desktop-analytics-pane.md).
@@ -98,9 +98,9 @@ With the Analytics pane in Power BI service, you can add dynamic reference lines
 
 ## The Filters pane
 
-View, set, and modify page, report, and visual-level filters.
+View, set, and modify page, report, drillthrough, and visual-level filters.
 
-![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-filter-pane.png)
+![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
 For more information, see [Add a filter to a report](powerbi-service-add-a-filter-to-a-report.md).
 
@@ -130,7 +130,7 @@ The Fields pane displays the tables and fields that exist in your data and are a
 -  ![](media/powerbi-service-the-report-editor-take-a-tour/PBI_calculated_icon.png) **Calculated measures (also called calculated fields)**  
 	Each calculated field has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. For more information, [read Understanding measures](powerbi-desktop-measures.md)
 
--  **Unique fields**  
+-  ![](media/powerbi-service-the-report-editor-take-a-tour/icon.png) **Unique fields**  
 	Fields with this icon were imported from Excel and are set to show all values, even if they have duplicates. For example your data might have two records for people named 'John Smith', and each will be treated as unique -- they won't be summed.  
 
 -  **![](media/powerbi-service-the-report-editor-take-a-tour/PBI_geo_icon.png) Geography fields**  

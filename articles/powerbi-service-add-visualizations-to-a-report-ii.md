@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
 # Part 2, Add visualizations to a Power BI report (Tutorial)
@@ -50,6 +50,8 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 
 3.  [Change the visualization](powerbi-service-change-the-type-of-visualization-in-a-report.md) to an Area chart.  There are many visualization types to choose from - see [descriptions of each, tips for best practices, and tutorials](powerbi-service-visualization-types-for-reports-and-q-and-a.md) for help deciding which type to use. From the Visualizations pane, select the Area chart icon.
 
+4. Sort the visualization by selecting the ellipses and choosing **Sort by Month**.
+
 5.  [Resize the visualization](powerbi-service-move-and-resize-a-visualization.md) by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7b.png)
@@ -57,7 +59,7 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 6.  [Save the report](powerbi-service-save-a-report.md).
 
 ### Add a map visualization that looks at sales by location  
-1.  From the **Store** table, click **Territory**. Power BI recognizes that Territory is a location, and creates a map visualization.  
+1.  From the **Store** table, select **Territory**. Power BI recognizes that Territory is a location, and creates a map visualization.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_8newnew.png)
 
 2.  Drag **Total Stores** into the Size area.  

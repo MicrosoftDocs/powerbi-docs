@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"  
+   ms.date="10/28/2017"  
    ms.author="mihart"/>
 
 # Dashboard tiles in Power BI
@@ -75,30 +75,30 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
     ![](media/powerbi-service-dashboard-tiles/ellipses_new.png)
 2. Select the ellipses to open the tile action menu.
 
-    ![](media/powerbi-service-dashboard-tiles/power-bi-menu.png)
+    ![](media/powerbi-service-dashboard-tiles/power-bi-tile-menu.png)
 
     From here you can:
 
-    - [View in Focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)  
+    - [Open the report that was used to create this tile ](powerbi-service-reports.md) ![](media/powerbi-service-dashboard-tiles/chart-icon.jpg)  
 
-    - [Run Quick Insights ](powerbi-service-auto-insights.md) ![](media/powerbi-service-dashboard-tiles/power-bi-insights.png)
+   - [Open the worksheet that was used to create this tile ](powerbi-service-reports.md) ![](media/powerbi-service-dashboard-tiles/power-bi-open-worksheet.png)  
+
+    - [View in focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)  
+
+    - [Export the data used in the tile](powerbi-service-export-data.md) ![](media/powerbi-service-dashboard-tiles/export-icon.png)
+
+    - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+
+    - [Run insights ](powerbi-service-auto-insights.md) ![](media/powerbi-service-dashboard-tiles/power-bi-insights.png)
 
     - [Pin the tile to another dashboard ](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
  ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
 
-    - [Export the data used in the tile ](powerbi-service-export-data.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
-
-    - [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
-
    - [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
  ![](media/powerbi-service-dashboard-tiles/trash-icon.png)
 
-3. To close the action menu, select the X icon ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg).
+3. To close the action menu, select a blank area in the canvas.
 
-### Resize column widths on a tile
-Sometimes Power BI will truncate a column heading on a dashboard or in a report. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows, select and drag.
-
-![](media/powerbi-service-tutorial-tables/resizetable.gif)
 
 ### Select (click) a tile
 When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
