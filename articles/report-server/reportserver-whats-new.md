@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="erikre"
+   manager="kfile"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="10/31/2017"
    ms.author="asaxton"/>
 
 # What's new in Power BI Report Server
@@ -28,31 +28,90 @@ To download Power BI Report Server, and Power BI Desktop optimized for Power BI 
 
 ![tip](media/reportserver-whats-new/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
-***Note:*** *For related "What's New" information, see:*
+For related "What's New" information, see:
 
 - [What's new in the Power BI service](../powerbi-service-whats-new.md)
 - [What's new in Power BI Desktop](../powerbi-desktop-latest-update.md)
 - [What's new in the mobile apps for Power BI](../powerbi-mobile-whats-new-in-the-mobile-apps.md)
 - [Power BI team blog](https://powerbi.microsoft.com/blog/)
 
-## August 2017 (preview)
+## October 2017 release
 
-This preview release contains new capabilities.
+### Power BI report data sources
 
-You can download the August 2017 preview of Power BI Report server, and Power BI Desktop optimized for Power BI Report Server (Preview) at [powerbi.com](https://powerbi.microsoft.com/report-server/). This cannot be installed side-by-side with an existing Power BI Report Server. If you have Power BI Report Server already installed, you will need to installthe preview on a separate server. 
+Power BI reports in Power BI Report Server can connect to a variety of data sources. You can import data and schedule data refresh, or query it directly using DirectQuery or a live connection to SQL Server Analysis Services. See the list of data sources that support scheduled refresh and those that support DirectQuery in "Power BI report data sources in Power BI Report Server".
 
-### Support for data sources other than Analysis Services in Power BI Report Server
+### Scheduled data refresh for imported data
 
-With the August 2017 preview of Power BI Report Server, you can connect to any data source in Power BI Desktop and publish your reports to Power BI Report Server. To enable this functionality, there is no special configuration required. Simply install and configure the preview on a separate server and you’re ready to go. You can then use Power BI Desktop (August 2017 Preview) to connect to your data source(s), create your report and publish directly to the server to share it with others in your organization.
+In Power BI Report Server, you can set up scheduled data refresh to keep data up to date in Power BI reports with an embedded model rather than a live connection or DirectQuery. With an embedded model you import the data, so it's disconnected from the original data source. It needs to be updated to keep the data fresh, and scheduled refresh is the way to do that. Read more about "scheduled refresh for Power BI reports in Power BI Report Server".
 
-There are a few limitations to keep in mind as you try out this preview.
+### Editing Power BI reports from the server
 
-- Scheduled data refresh is currently not available for reports using imported data.
-- DirectQuery data connections are not currently supported.
-- Scale-out environments are not currently supported.
-- Reports must be smaller than 50 MB in size.
+You can open and edit Power BI report (.pbix) files from the server, but you get back the original file you uploaded.  This means **if the data has been refreshed by the server, the data won’t be refreshed when you first open the file**. You need to manually refresh it locally to see the change.
 
-Support for these scenarios are planned for the GA release. The GA release is planned for Q4 of CY2017.
+### Large file upload/download
+
+You can upload files up to 2 GB in size, though by default this limit is set to 1 GB in the Report Server settings in SQL Server Management Studio (SSMS).  These files are stored in the database just as they are for SharePoint, and no special configuration for the SQL Server catalog is required.  
+
+### Accessing shared datasets as OData feeds
+
+You can access shared datasets from Power BI Desktop with an OData feed.
+
+1. With the OData feed URL, you connect to the OData source.
+
+    ![Report Server OData feed source](media/reportserver-whats-new/report-server-odata-feed.png)
+
+2. After you bring the data into Power BI Desktop, you can modify it in the Query Editor.
+
+    ![Power BI Desktop Query Editor with OData feed](media/reportserver-whats-new/report-server-odata-results-query-editor.png)
+
+3. Now you can use the data in designing reports.
+
+    ![Power BI Desktop report design with OData feed](media/reportserver-whats-new/report-server-odata-power-bi-desktop-report-design.png)
+
+Be sure to use **Advanced Options** so you can turn on Open Type Columns and format the columns accordingly in Power Query to meet your needs. 
+
+Read more about [connecting to OData fields in Power BI Desktop](../powerbi-desktop-connect-odata.md).
+
+
+### Scale-out
+
+This release supports scale-out. Use a load-balancer and set server affinity for the best experience. Note that the scenario is not yet optimized for scale-out, so you'll see models potentially replicated across multiple nodes. The scenario will work without the Network Load Balancer and sticky sessions. However, you'll not only see an over-use of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
+
+### Administrator settings
+
+Administrators can set the following properties in SSMS Advanced Properties for the server farm:
+
+- EnableCustomVisuals: True/False
+- EnablePowerBIReportEmbeddedModels: True/False
+- EnablePowerBIReportExportData: True/False
+- MaxFileSizeMb: Default is now 1000
+- ModelCleanupCycleMinutes: How often it checks to evict models from memory
+- ModelExpirationMinutes: How long until model expires and is evicted, based on last time used
+- ScheduleRefreshTimeoutMinutes: How long data refresh can take for a model. By default, this is two hours.  There is no hard upper limit.
+
+**Config file rsreportserver.config**
+
+```
+<Configuration>
+  <Service>
+    <PollingInterval>10</PollingInterval>
+    <IsDataModelRefreshService>false</IsDataModelRefreshService>
+    <MaxQueueThreads>0</MaxQueueThreads>
+  </Service>
+</Configuration>
+```
+
+### Developer API
+
+The developer API (REST API) introduced for SSRS 2017 has been extended for Power BI Report Server to work with both Excel files and .pbix files. One potential use case is to programmatically download files from the server, refresh them, and then republish them. This is the only way to refresh Excel workbooks with PowerPivot models, for example.
+
+Note that there is a new separate API for large files, which will be updated in the Power BI Report Server version of Swagger. 
+
+
+### SQL Server Analysis Services (SSAS) and the Power BI Report Server memory footprint
+
+Power BI Report Server now hosts SQL Server Analysis Services (SSAS) internally. This isn't specific to scheduled refresh. Hosting SSAS can greatly expand the report server memory footprint. The AS.ini configuration file is available on the server nodes, so if you're familiar with SSAS, you may want to update the settings, including maximum memory limit and disk caching etc. See [Server properties in Analysis Services](https://docs.microsoft.com/sql/analysis-services/server-properties/server-properties-in-analysis-services) for details.
 
 ### Viewing and interacting with Excel workbooks
 
@@ -64,9 +123,9 @@ We’ve published a [walkthrough of how to add Office Online Server (OOS) to you
 - Have a live connection to an external SQL Server Analysis Services data source
 - Have a PowerPivot data model
 
-### Support for new table and matrix viuals
+### Support for new table and matrix visuals
 
-The August 2017 preview of Power BI Report Server includes support for the new Power BI table and matrix visuals. To create reports with these visuals, you will need an updated Power BI Desktop release for the August 2017 preview. It cannot be installed side-by-side with Power BI Desktop (June 2017) release. 
+Power BI Report Server now supports the new Power BI table and matrix visuals. To create reports with these visuals, you will need an updated Power BI Desktop release for the October 2017 release. It can't be installed side-by-side with the Power BI Desktop (June 2017) release. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
 
 ## June 2017
 

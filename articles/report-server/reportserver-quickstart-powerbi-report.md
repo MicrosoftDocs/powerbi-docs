@@ -4,7 +4,7 @@
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
-   manager="erikre" 
+   manager="kfile" 
    backup=""
    editor=""
    tags=""
@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/12/2017"
+   ms.date="10/28/2017"
    ms.author="maggies"/>
 
 # Quickstart: Create a Power BI report for Power BI Report Server
@@ -47,15 +47,13 @@ You may already have installed Power BI Desktop to create reports for the Power 
 
 ## Step 2: Select a data source
 
-In the June release of Power BI Report Server, the only data source supported with Power BI Report Server is a live connection to a SQL Server Analysis Services (SSAS)tabular model or multidimensional cube. 
-
-With the August Preview release, you can connect to any data source. Read more about [connecting to data sources](reportserver-connect-data-sources.md).
+You can connect to a variety of data sources. Read more about [connecting to data sources](reportserver-connect-data-sources.md).
 
 1. From the welcome screen, select **Get Data**.
 
     Or on the **Home** tab, select **Get Data**.
 
-2. Select **Analysis Services** (or, in the August Preview release, select any data source).
+2. Select your data source -- in this example, **Analysis Services**.
 
     ![Select data source](media/reportserver-quickstart-powerbi-report/report-server-get-data-ssas.png)
 
