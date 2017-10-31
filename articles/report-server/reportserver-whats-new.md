@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/28/2017"
+   ms.date="10/31/2017"
    ms.author="asaxton"/>
 
 # What's new in Power BI Report Server
@@ -28,7 +28,7 @@ To download Power BI Report Server, and Power BI Desktop optimized for Power BI 
 
 ![tip](media/reportserver-whats-new/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
-***Note:*** *For related "What's New" information, see:*
+For related "What's New" information, see:
 
 - [What's new in the Power BI service](../powerbi-service-whats-new.md)
 - [What's new in Power BI Desktop](../powerbi-desktop-latest-update.md)
@@ -43,13 +43,15 @@ Power BI reports in Power BI Report Server can connect to a variety of data sour
 
 ### Scheduled data refresh for imported data
 
-In Power BI Report Server, you can set up scheduled data refresh to keep data up to date in Power BI reports with an embedded model rather than a live connection or DirectQuery. With an embedded model you import the data, so it's disconnected from the original data source. It needs to be updated to keep the data fresh, and scheduled refresh is the way to do that. Read more about scheduled refresh for Power BI reports in Power BI Report Server.
+In Power BI Report Server, you can set up scheduled data refresh to keep data up to date in Power BI reports with an embedded model rather than a live connection or DirectQuery. With an embedded model you import the data, so it's disconnected from the original data source. It needs to be updated to keep the data fresh, and scheduled refresh is the way to do that. Read more about "scheduled refresh for Power BI reports in Power BI Report Server".
+
+### Editing Power BI reports from the server
+
+You can open and edit Power BI report (.pbix) files from the server, but you get back the original file you uploaded.  This means **if the data has been refreshed by the server, the data won’t be refreshed when you first open the file**. You need to manually refresh it locally to see the change.
 
 ### Large file upload/download
 
 You can upload files up to 2 GB in size, though by default this limit is set to 1 GB in the Report Server settings in SQL Server Management Studio (SSMS).  These files are stored in the database just as they are for SharePoint, and no special configuration for the SQL Server catalog is required.  
-
-You can open and edit Power BI report files (.pbix) from the server just as you can with .pbix files that use only SQL Server Analysis Services (SSAS), but you get back the original file you uploaded.  Meaning, if the data has been refreshed by the server, that won’t be reflected when you first open the file. You need to manually refresh it locally to see the change.
 
 ### Accessing shared datasets as OData feeds
 
@@ -74,7 +76,7 @@ Read more about [connecting to OData fields in Power BI Desktop](../powerbi-desk
 
 ### Scale-out
 
-This release supports scale-out. Use a load-balancer and set server affinity for the best experience. Note that the scenario is not yet optimized for scale-out, so you'll see models potentially replicated across multiple nodes. The scenario will work without an NLB+sticky sessions. However, you'll not only see an over-use of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
+This release supports scale-out. Use a load-balancer and set server affinity for the best experience. Note that the scenario is not yet optimized for scale-out, so you'll see models potentially replicated across multiple nodes. The scenario will work without the Network Load Balancer and sticky sessions. However, you'll not only see an over-use of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
 
 ### Administrator settings
 
@@ -88,8 +90,9 @@ Administrators can set the following properties in SSMS Advanced Properties for 
 - ModelExpirationMinutes: How long until model expires and is evicted, based on last time used
 - ScheduleRefreshTimeoutMinutes: How long data refresh can take for a model. By default, this is two hours.  There is no hard upper limit.
 
-Config file rsreportserver.config
+**Config file rsreportserver.config**
 
+```
  <Configuration>
               <Service>
                <PollingInterval>10</PollingInterval>
@@ -97,6 +100,7 @@ Config file rsreportserver.config
                 <MaxQueueThreads>0</MaxQueueThreads>
               </Service>
             </Configuration>
+```
 
 ### Developer API
 
