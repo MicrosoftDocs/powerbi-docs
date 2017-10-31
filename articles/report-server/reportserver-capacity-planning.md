@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="parthsha"
-   manager="erikre"
+   manager="kfile"
    backup="asaxton"
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/11/2017"
+   ms.date="11/01/2017"
    ms.author="pashah"/>
 
 # Capacity planning guidance for Power BI Report Server

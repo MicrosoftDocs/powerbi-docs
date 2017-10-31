@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="erikre"
+   manager="kfile"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Hardware and software requirements for installing Power BI Report Server
@@ -41,6 +41,7 @@ Here you will find the minimum hardware and software requirements to install and
 
 SQL Server is used to host the report server databases. The SQL Server Database Engine instance can be a local or remote instance. The following are the supported versions of SQL Server Database Engine that can be used to host the report server databases:
 
+* SQL Server 2017
 * SQL Server 2016
 * SQL Server 2014
 * SQL Server 2012
@@ -73,7 +74,7 @@ You can use a live connection against tabular or multidimensional instances. You
 |---|---|
 |2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
 |2014|Business Intelligence and Enterprise SKU|
-|2016|Standard SKU or higher|
+|2016 and later|Standard SKU or higher|
 
 ## Next steps
 

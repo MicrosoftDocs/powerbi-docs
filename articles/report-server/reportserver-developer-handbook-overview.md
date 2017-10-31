@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Developer handbook overview, Power BI Report Server
@@ -40,7 +40,7 @@ For paginated reports, you can take advantage of the Report Viewer Control. This
 
 You have several API options for interacting with Power BI Report Server. This includes the following.
 
-* [SOAP APIs using the web services](https://docs.microsoft.com/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)
+* [REST APIs](reportserver-rest-api.md)
 * [URL Access](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)
 * [WMI Provider](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 

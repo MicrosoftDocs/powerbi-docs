@@ -16,7 +16,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/25/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Connecting to data sources
@@ -25,30 +25,9 @@ Learn about what data sources you can connect to within Power BI Report Server.
 
 ## Power BI Reports
 
-Currently, the only data source supported for Power BI reports are a **live connection to Analysis Services (tabular or multidimensional)**. More data sources will be added in future releases.
+Power BI reports can work with data that is imported or using an Analysis Services live connection along with DirectQuery. The October 2017 release includes support for connections other than Analyssi Services live connections. This includes imported data. You can download the October 2017 release over at [powerbi.com](https://powerbi.microsoft.com/report-server/).
 
-### August 2017 preview
-
-The August 2017 preview includes support for non-Analysis Services live connections. This includes imported data.  You can download the August 2017 preview over at [powerbi.com](https://powerbi.microsoft.com/report-server/).
-
-There are a few limitations with using non-Analysis Services live connections.
-
-- Scheduled data refresh is currently not available for reports using imported data.
-- DirectQuery data connections are not currently supported.
-- Scale-out environments are not officially supported.
-- Reports must be smaller than 50 MB in size.
-
-### Cannot upload imported or DirectQuery sources
-
-If you try to publish a Power BI Desktop file that contains anything other than an Analysis Services live connection, you will see the following error.
-
-![](media/reportserver-connect-data-sources/imported-data-source-error.png)
-
-```
-Can't upload this report
-
-We can’t open this Power BI report because it contains an unsupported data source connection or embedded data. This version of Power BI Report Server supports Power BI reports that connect live to SQL Server Analysis Services or Azure Analysis Services.
-```
+For information about what data soruces are supported, see [Power BI report data sources in Power BI Report Server](reportserver-data-sources.md).
 
 ## Other reports
 

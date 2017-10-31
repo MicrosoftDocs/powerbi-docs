@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="erikre"
+   manager="kfile"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="08/23/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Support timeline for Power BI Report Server
@@ -30,19 +30,18 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 * Security Updates (Only) servicing phase - After a new version is released, support for older versions will reduce to Security updates only for the remainder of the twelve (12) month support lifecycle (shown in figure 1).
 
 
-    ![Graph illustrating the support timeframe](media/reportserver-support-timeline/reportserver-support-example.png "Power BI Report Server example supported lifecycle")
+    ![Graph illustrating the support timeframe](media/reportserver-support-timeline/reportserver-support-lifecycle.png)
 
 ## Version history
 
 |**Version**|**Availability date**|**Support end date**|
 |---------|---------|---------|
+|October 2017|October 31, 2017|October 31, 2018|
 |June 2017|June 12, 2017|June 12, 2018|
-
- **Download** ![download](media/reportserver-support-timeline/download.png "download")
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-![tip](media/reportserver-support-timeline/fyi-tip.png "tip") For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
+For the current release notes, see [Power BI Report Server - Release notes](reportserver-release-notes.md).
 
 ## Next steps
 
