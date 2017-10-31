@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="04/27/2017"
+   ms.date="10/27/2017"
    ms.author="mihart"/>
 
 # Retail Analysis sample for Power BI: Take a tour
@@ -78,7 +78,7 @@ Let’s get more specific.
 
 3.  Play around with more questions and see what kind of results you get.
 
-4.  When you’re ready, return to the dashboard by selecting Power BI in the upper-left corner.
+4.  When you’re ready, return to the dashboard.
 
 ##  Dive deeper into the data
 
@@ -120,7 +120,7 @@ Let’s look at how specific districts are doing.
 
 2.  Now, while Allan is still selected, select the Women’s bubble.
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail14.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/power-bi-allan.png)
 
     Note that for the Women’s category, his district never met last year’s volume.
 
@@ -138,17 +138,17 @@ The last area we want to explore is our growth – new stores opened this year.
 
     As evident from the tile – more Fashions Direct stores than Lindseys stores opened this year.
 
-2.  Observe the Sales Per Sq Ft by Name chart:
+2.  Observe the 'Sales Per Sq Ft by Name' chart:
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/15.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/retail14.png)
 
      There is quite a bit of difference in Average Sales per SQF across the new stores.
 
 3.  Click on the Fashions Direct legend item in the top right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) $21.22 vs $12.86 respectively.
 
-    ![](media/powerbi-sample-retail-analysis-take-a-tour/17b.png)
+    ![](media/powerbi-sample-retail-analysis-take-a-tour/power-bi-lindseys.png)
 
-4.  Click Winchester Fashions Direct in the slicer and observe the line chart. The first sales numbers were reported in February and is a leading store in terms of volume for almost every month.
+4.  Click Winchester Fashions Direct in the slicer and observe the line chart. The first sales numbers were reported in February.
 
 5.  Click on Cincinnati 2 Fashions Direct in the slicer and you will see in the line chart that it was opened in June and it seems to be the worst performing store.
 

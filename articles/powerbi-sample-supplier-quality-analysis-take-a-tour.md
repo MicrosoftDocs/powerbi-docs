@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
 # Supplier Quality Analysis sample for Power BI: Take a tour  
@@ -66,14 +66,14 @@ Let’s analyze the downtime caused by defective materials and see which vendors
 
     From this tree map, we can see the top eight vendors are the eight blocks on the left of the tree map. We can also see they account for about 50% of all downtime minutes.  
 
-3.  Select **Power BI** in the top navigation bar to go back to the dashboard.
+3.  Select **Supplier Quality Analysis Sample** in the top navigation bar to go back to the dashboard.
 
 ### Comparing plants  
 Now let’s explore which plant does a better job managing defective material, resulting in less downtime.  
 
 1.  Select the **Total Defect Reports by Plant, Defect Type** map tile.  
 
-     The report opens to the “Supplier Quality Analysis” page.  
+     The report opens to the “Supplier Quality” page.  
 
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier6.png)  
 
@@ -87,7 +87,7 @@ Now let’s explore which plant does a better job managing defective material, r
 
     ![](media/powerbi-sample-supplier-quality-analysis-take-a-tour/Supplier8.png)  
 
-4.  Select **Power BI** in the top navigation bar to return to your active workspace.
+4.  Select **Supplier Quality Analysis Sample** in the top navigation bar to return to your active workspace.
 
 ## Which material type is best managed?  
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
@@ -107,7 +107,7 @@ Let’s verify that raw materials don’t cause a lot of downtime, despite high 
 Apparently raw materials are well managed: they have more defects, but lower total downtime minutes.
 
 ### Compare defects to downtime by year   
-1.  Select the **Total Defect Reports by Plant, Defect Type** map tile to open the report to the first report page, Supplier Quality Analysis.
+1.  Select the **Total Defect Reports by Plant, Defect Type** map tile to open the report to the first report page, Supplier Quality.
 
 2.  Notice that **Defect Qty** is higher in 2014 than in 2013.  
 
@@ -115,7 +115,7 @@ Apparently raw materials are well managed: they have more defects, but lower tot
 
 3.  Do more defects translate into more downtime? We can ask questions in the Q&A box to find out.  
 
-4.  Select **Power BI** in the top navigation bar to go back to the dashboard.  
+4.  Select **Supplier Quality Analysis Sample** in the top navigation bar to go back to the dashboard.  
 
 5.  Since we know Raw Materials have the highest number of defects, in the question box, type “show material types, year and total defect qty”.  
 

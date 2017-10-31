@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/09/2017"
+   ms.date="10/29/2017"
    ms.author="mihart"/>
 
 #  What sample data is available to use with Power BI?

@@ -33,7 +33,40 @@ You can also check out the YouTube channels for information about "What's new" a
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## April and May 2017
+## September 2017
+
+- Share dashboards to free users with Premium.
+- Allocate capacities to suit your business needs with v-core pooling.
+- Instantly scale-up or scale-down capacities with one click.
+- [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) to easily push data into REST APIs
+- Improved load performance for [usage metrics](powerbi-service-usage-metrics.md).
+
+## Previous months (2017)
+
+### August 2017
+
+- Know your audience with [per-user usage metrics](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
+- Get started with [Power BI service](powerbi-content-packs-services.md) apps for online services.
+- Connect to IBM Netezza with the on-premises data gateway through both import and DirectQuery connectivity modes.
+- [Dynamic RLS](powerbi-developer-embedded-rls.md) now supported for Power BI Embedded.
+- Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of custom visuals API.
+
+### July 2017
+
+- Support for [email subscriptions](powerbi-service-subscribe-to-report.md) on dashboards.
+- Inspect and diagnose why the loading time is poor for dashboards using the Performance Inspector.
+- Snowflake and SAP BusinessWarehouse DirectQuery now supported for on-premises data gateway.
+- New [APIs to manage data refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) in Power BI service.
+
+### June 2017
+
+- [Power BI Premium](https://powerbi.microsoft.com/blog/power-bi-premium-generally-available/) made generally available.
+- Multiple API improvements to [automate scheduled refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [clone and rebind reports](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [update gateway bindings](https://msdn.microsoft.com/library/mt784650.aspx), and much, much more
+- Relative links in Power BI apps from dashboard tiles to other dashboards and reports.
+- [Impala connector](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) generally available on Power BI Desktop.
+- Extend visual capabilities of Power BI with [interactive R custom visuals](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
+
+### April and May 2017
 
 - Measure and magnify your impact with [usage metrics for dashboard and report creators](powerbi-service-usage-metrics.md).
 - Connect to PostgreSQL with the on-premises data gateway.
@@ -41,8 +74,6 @@ You can also check out the YouTube channels for information about "What's new" a
 - Connect Power BI to any data source using the [Data Connector SDK](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
 - Navigate to reports with multiple URL filter parameters.
 - Preview: [Use Power BI Apps](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/) to widely distribute your dashboards and reports to large audiences.
-
-## Previous months (2017)
 
 ### March 2017
 

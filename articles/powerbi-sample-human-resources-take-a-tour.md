@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 
 # Human Resources sample for Power BI: Take a tour  
@@ -91,7 +91,7 @@ Change the pie charts to show Separates data instead of Actives.
 
 3.  Select the check box next to **Separation Count** in the Employees table to add it to the **Values** box in the field well.
 
-4.  Select the **Voluntary** bar in the **Separation Count by Separation Reason** bar chart. This highlights those who left voluntarily in the other visuals in the report.
+4.  Back on the report canvas, select the **Voluntary** bar in the **Separation Count by Separation Reason** bar chart. This highlights those who left voluntarily in the other visuals in the report.
 
 5.  Click the 50+ slice of the Separation Count by Age Group pie chart.
 
@@ -125,13 +125,11 @@ The [Q&A question box](powerbi-service-how-to-use-q-and-a.md) is where you type 
 
     ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_qabox.png)
 
-2.   You can pick one of those suggestions, or type:
+2.   You can pick one of those suggestions, or type:  **show age group, gender and bad hires SPLY  where region is east**.  
 
-    **show age group, gender and bad hires where region is east**.  
+     ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_qa_answer.png)
 
-    ![](media/powerbi-sample-human-resources-take-a-tour/pbi_hr_sample_qa_answer.png)
-
-    Notice most of the female bad hires are under 30.
+     Notice most of the female bad hires are under 30.
 
 This is a safe environment to play in. You can always choose not to save your changes. If you do save them, you can always go to **Get Data** for a new copy of this sample.
 

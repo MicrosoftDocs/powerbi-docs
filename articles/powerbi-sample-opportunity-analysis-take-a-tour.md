@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/09/2017"
+   ms.date="10/29/2017"
    ms.author="mihart"/>
 
 # Opportunity Analysis sample for Power BI: Take a tour  
@@ -59,7 +59,7 @@ Select the **Opportunity Count by Partner Driven and Sales Stage** tile to open 
 ![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity2.png)
 
 ## Explore the pages in the report  
-### Page 1 of our report is titled “Opportunity Counts Overview.”    
+### Page 1 of our report is titled “Opportunity Count Overview.”    
 ![](media/powerbi-sample-opportunity-analysis-take-a-tour/opportunity3.png)
 
 -   East is our biggest region in terms of opportunity counts.  

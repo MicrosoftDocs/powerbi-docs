@@ -1,5 +1,5 @@
 ﻿<properties
-   pageTitle="Text boxes, and shapes in Power BI reports"
+   pageTitle="Text boxes and shapes in Power BI reports"
    description="Documentation about adding and creating text boxes, and shapes in a report using Microsoft Power BI service."
    services="powerbi"
    documentationCenter=""
@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="05/16/2017"
+   ms.date="10/28/2017"
    ms.author="mihart"/>
 # Static content in Power BI reports
 
@@ -62,7 +62,7 @@ In Editing View, add text boxes and shapes to a report in Power BI service. 
 >**NOTE**: Shapes cannot be pinned to a dashboard. 
 
 
-### See also
+### Next steps
 
 [Add a hyperlink to a text box](powerbi-service-add-a-hyperlink-to-a-text-box.md)
 
