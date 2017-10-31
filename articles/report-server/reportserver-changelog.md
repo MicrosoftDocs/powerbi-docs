@@ -28,7 +28,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## October 2017 
 - **Power BI Report Server**
-    - *Version 1.1.6512.14084 (Build 14.0.600.432), Released: October 31, 2017*
+    - *Version 1.1.6513.3500 (Build 14.0.600.433), Released: October 31, 2017*
         - Features
             - Embedded Data Model Support
             - Excel Workbook Viewing (with Office Online Server integration enabled)
