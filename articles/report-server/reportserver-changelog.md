@@ -26,30 +26,37 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 For detailed information about new features, see [What's new in Power BI Report Server](reportserver-whats-new.md).
 
-## June 2017 (Build 14.0.600.305)
+## October 2017 
+- **Power BI Report Server**
+    - *Version 1.1.6512.14084 (Build 14.0.600.432), Released: October 31, 2017*
+        - Features
+            - Embedded Data Model Support
+            - Excel Workbook Viewing (with Office Online Server integration enabled)
+            - Scheduled Data Refresh (PBIX)
+            - Direct Query Support
+            - Large File Support (up to 2 GB)
+            - Public REST API
+                - Shared Dataset support in Power BI Desktop (via oData)
+            - URL Parameter Support for PBIX files
+            - Accessibility improvements
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.51.4885.1041 (October 2017), Released: October 31, 2017*
+        - Contains changes required for connection with Power BI Report Server (October 2017)
+## June 2017 
+- **Power BI Report Server**
+    - *Build 14.0.600.305, Released: September 19, 2017*  
+        - Bug Fixes
+            - Update to the latest [Bing Maps Web Control](https://msdn.microsoft.com/library/mt712542.aspx)
 
-*Released: September 19, 2017*
+    - *Build 14.0.600.301, Released: July 11, 2017*
+        - Bug Fixes
+            - The {{UserId}} tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
+            - Some images fail to render in Power BI Report Server reports
+            - Unable to change the name of a Power BI Report in the Power BI Report Server
+            - Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
 
-### Bug Fixes
-
-- Update to the latest [Bing Maps Web Control](https://msdn.microsoft.com/library/mt712542.aspx)
-
-## June 2017 (Build 14.0.600.301)
-
-*Released: July 11, 2017*
-
-### Bug Fixes
-
-- The {{UserId}} tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
-- Some images fail to render in Power BI Report Server reports
-- Unable to change the name of a Power BI Report in the Power BI Report Server
-- Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
-
-## June 2017 (Build 14.0.600.271)
-
-*Released: June 12, 2017*
-
-- Power BI Report Server initial release
+    - *Build 14.0.600.271,Released: June 12, 2017*
+        - Power BI Report Server initial release
 
 ## Next steps
 
