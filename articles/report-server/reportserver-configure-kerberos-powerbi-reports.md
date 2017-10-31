@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="erikre"
+   manager="kfile"
    backup=""
    editor=""
    tags=""

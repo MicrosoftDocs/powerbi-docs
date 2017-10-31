@@ -4,7 +4,7 @@
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
-   manager="erikre"
+   manager="kfile"
    backup=""
    editor=""
    tags=""
@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="07/18/2017"
+   ms.date="11/01/2017"
    ms.author="asaxton"/>
 
 # Administrator handbook overview, Power BI Report Server

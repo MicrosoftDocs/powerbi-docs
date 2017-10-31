@@ -36,7 +36,7 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
 |**Version**|**Availability date**|**Support end date**|
 |---------|---------|---------|
-|October 2017|November 1, 2017|November 1, 2018|
+|October 2017|October 31, 2017|October 31, 2018|
 |June 2017|June 12, 2017|June 12, 2018|
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
