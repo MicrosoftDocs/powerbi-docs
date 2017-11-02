@@ -17,18 +17,17 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="11/01/2017"
+   ms.date="11/02/2017"
    ms.author="davidi"/>
 
-# Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources (Preview)
+# Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources
 
 You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your on-premises data gateway with Kerberos. The On-premises data gateway facilitates single sign-on (SSO) using DirectQuery, which it uses to connect to on-premises data sources.
 
-The following data sources are currently supported, SQL Server, SAP HANA, Oracle, and Teradata, all based on [Kerberos Constrained Delegation](https://technet.microsoft.com/library/jj553400.aspx).
+The following data sources are currently supported, SQL Server, SAP HANA, and Teradata, all based on [Kerberos Constrained Delegation](https://technet.microsoft.com/library/jj553400.aspx).
 
 -   SQL Server
 -   SAP HANA
--   Oracle
 -   Teradata
 
 When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sorting, and report editing operation can result in queries executing live against the underlying on-premises data source.  When single sign-on is configured for the data source, queries execute under the identity of the user interacting with Power BI (that is, through the web experience or Power BI mobile apps). Thereby, each user sees precisely the data for which they have permissions in the underlying data source – with single sign-on configured, there is no shared data caching across different users.
@@ -39,21 +38,23 @@ A query that runs with SSO consists of three steps, as shown in the following di
 
 ![](media/powerbi-gateway-kerberos-SSO/Kerberos-SSO-on-prem_01.png)
 
+> **Note:** SSO for Oracle is not enabled yet, but is under development and coming soon.
+
 Here are additional details about those steps:
 
 1.  For each query, the **Power BI service** includes the *user principal name* (UPN) when sending a query request to the configured gateway.
 
 2.	The gateway needs to map the Azure Active Directory UPN to a local Active Directory identity.
 
-        a.  If AAD DirSync (also known as *AAD Connect*) is configured, then the mapping works automatically in the gateway.
+    a.  If AAD DirSync (also known as *AAD Connect*) is configured, then the mapping works automatically in the gateway.
 
-        b.  Otherwise, the gateway can look up and map the Azure AD UPN to a local user by performing a lookup against the local Active Directory domain.
+    b.  Otherwise, the gateway can look up and map the Azure AD UPN to a local user by performing a lookup against the local Active Directory domain.
 
 3.	The gateway service process impersonates the mapped local user, opens the connection to the underlying database and sends the query. The gateway does not need to be installed on the same machine as the database.
 
-        a.	The user impersonation and connection to the database is only successful if the gateway service account is a domain account (or service SID), and if Kerberos constrained delegation was configured for the database to accept Kerberos tickets from the gateway service account.  
+    a.	The user impersonation and connection to the database is only successful if the gateway service account is a domain account (or service SID), and if Kerberos constrained delegation was configured for the database to accept Kerberos tickets from the gateway service account.  
 
-        > Note: Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
+    > **Note:** Regarding the service sid, if AAD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service.  The Kerberos constrained delegation configuration steps outlined in this document are the same (just applied based on the service SID, instead of domain account).
 
 
 ## Errors from an insufficient Kerberos configuration
@@ -73,9 +74,9 @@ The result is that the because of insufficient Kerberos configuration, the gatew
 
 Several items must be configured in order for Kerberos Constrained Delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
 
-### Pre-requisite 1: Install & configure the Preview version of the On-premises data gateway
+### Pre-requisite 1: Install & configure the On-premises data gateway
 
-This Preview release of the On-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways. Importantly, though, this Preview version should be used for testing only, and should not be used in production environments.
+This release of the On-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
 
 ### Pre-requisite 2: Run the Gateway Windows service as a domain account
 In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:
@@ -131,7 +132,7 @@ The second configuration requirement is the delegation settings on the Gateway s
 
 We need to configure **Kerberos Constrained Delegation** with protocol transiting. With constrained delegation, you must be explicit with which services you want to delegate to – for example, only your SQL Server or your SAP HANA server will accept delegation calls from the Gateway service account.
 
-This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Oracle, Teradata, so on). To learn how to configure those data source server SPNs, please refer to technical documentation for the respective database server. You can also look at the blog post that describes [*What SPN does your app require?*](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/)
+This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, so on). To learn how to configure those data source server SPNs, please refer to technical documentation for the respective database server. You can also look at the blog post that describes [*What SPN does your app require?*](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/)
 
 In the following steps we assume an on-premises environment with two machines: a gateway machine and a database server (SQL Server database), and for the sake of this example we'll also assume the following settings and names:
 

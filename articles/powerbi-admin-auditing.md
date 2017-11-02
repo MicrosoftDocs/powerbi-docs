@@ -17,7 +17,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="09/05/2017"
+   ms.date="11/02/2017"
    ms.author="asaxton"/>
 
 # Using auditing within your organization
@@ -134,7 +134,7 @@ The results contain the following information about each event returned by the s
 
 You can view more details about an event by selecting the event record in the list of search results. A details page is displayed that contains the detailed properties from the event record. The properties that are displayed depend on the Office 365 service in which the event occurs. To display additional details, select **More information**.
 
-Here are some possible details that are displayed.
+The following table provides details on that you may see displayed.
 
 |**Parameter**|**Description**|
 |---|---|
@@ -149,6 +149,29 @@ Here are some possible details that are displayed.
 |ObjectId|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user.|
 |UserId|The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, my_name@my_domain_name. Note that records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included.|
 |ClientIp|The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.|
+
+The following table provides details on events you might see.
+
+|**Event**|**Description**|**Additional Details**|
+|---|---|---|
+|Downloaded Power BI report|This activity is logged everytime a report is downloaded|Report Name, Dataset Name|
+|Create report|This activity is logged everytime a new report is created.|Report Name, Dataset Name|
+|Edit Report|This activity is logged everytime a report is edited.|Report Name, Dataset Name|
+|Create dataset|This activity is logged everytime a dataset is created. |Dataset Name, DataConnectivityMode|
+|Delete Dataset|This activity is logged everytime a dataset is deleted. |Dataset Name, DataConnectivityMode|
+|Create Power BI app|This acitivity is logged everytime a Power BI app is created|App name, Permissions, Workspace Name|
+Install Power BI app|This activity is logged everytime a Power AI app installed|App name|
+|Update Power BI app|This activity is logged everytime a Power app in updated|App name, Permissions, Workspace Name|
+|Started Power BI extended trial|This activity is logged everytime an user accepts the extended pro trial that runs until May 31 2018||
+|Analyzed Power BI dataset|This activity is logged everytime a Power BI dataset is analyzed in Excel. ||
+|Created Power BI gateway|This activity is logged everytime a new gateway is created.|Gateway Name, Gateway Type|
+|Deleted Power BI gateway|This activity is logged everytime a gateway is deleted.|Gateway Name, Gateway Type|
+|Added Data source to Power BI gateway|This activity is logged everytime a data source in added to the gateway|Gateway Name, Gateway Type, Datasource Name, Datasource Type |
+|Removed data source from Power BI gateway|This activity is logged everytime a data source is removed from a gateway|Gateway Name, Gateway Type, Datasource Name, Datasource Type |
+|Changed Power BI gateway admins|This activity is logged everytime the admins of a gateway are changed (added/removed)|Gateway Name, Users Added, Users Removed |
+|Changed Power IB gateway data source users|This activity is logged everytime the users of a gateway are changed (added/removed)|Gateway Name, Users Added, Users Removed|
+|SetScheduledRefresh|This activity is logged everytime a new refresh is scheduled for a dataset|Dataset Name, Refresh Frequency (in minutes)|
+
 
 ## Using PowerShell to search
 
