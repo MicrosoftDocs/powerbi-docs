@@ -28,6 +28,10 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## October 2017 
 - **Power BI Report Server**
+    - *Version 1.1.6514.9163 (Build 14.0.600.434), Released: November 1, 2017*
+        - Bug Fixes
+            - Fix for upload reliability problems for PBIX reports over 500MB
+            - Fix for data loading issue for PBIX reports over 1GB
     - *Version 1.1.6513.3500 (Build 14.0.600.433), Released: October 31, 2017*
         - Features
             - Embedded Data Model Support
@@ -42,6 +46,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 - **Power BI Desktop (optimized for Power BI Report Server)**
     - *Version: 2.51.4885.1041 (October 2017), Released: October 31, 2017*
         - Contains changes required for connection with Power BI Report Server (October 2017)
+
 ## June 2017 
 - **Power BI Report Server**
     - *Build 14.0.600.305, Released: September 19, 2017*  
