@@ -18,7 +18,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="powerbi"
-   ms.date="10/27/2017"
+   ms.date="11/02/2017"
    ms.author="mihart"/>
 
 # Export data from visualizations
@@ -91,9 +91,9 @@ To follow along, open the [Procurement analysis sample report](powerbi-sample-pr
 
 ## Limitations and considerations
 
-- The maximum number of rows that can be exported to .csv is 30,000.
+- The maximum number of rows that can be exported from **Power BI Desktop** to .csv is 30,000.
 
-- The maximum number of rows that can be exported to .xlsx is 150,000 for Pro users and 30,000 for Free users.
+- The maximum number of rows that can be exported to .xlsx when in the **Power BI service** is 150,000 for Pro users and 30,000 for Free users.
 
 - When using DirectQuery, the maximum amount of data that can be exported is 16 MB. This may result in exporting less than the maximum number of rows, especially if there are many columns, data that is difficult to compress, and other factors that increase file size and decrease number of rows exported.
 

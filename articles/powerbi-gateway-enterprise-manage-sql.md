@@ -17,11 +17,11 @@ ms.devlang="NA"
 ms.topic="article"
 ms.tgt_pltfrm="na"
 ms.workload="powerbi"
-ms.date="10/05/2017"
+ms.date="11/02/2017"
 ms.author="davidi"/>
 # Manage your data source - SQL Server
 
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.
+Once you have installed the On-premises Data Gateway, you can add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.
 
 ## Download and install the gateway
 
@@ -33,7 +33,7 @@ You can download the gateway from the Power BI service. Select **Downloads** > *
 
 To add a Gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
-> [AZURE.NOTE] **Manage gateways** will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> [AZURE.NOTE] **Manage gateways** will not show up until you are the admin of at least one gateway. This occurs when you are added as an admin to a gateway, or you install and configur a gateway yourself.
 
 ## Remove a gateway
 
@@ -55,13 +55,13 @@ You can then select the **Data Source Type** from the list.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings2.png)
 
-> [AZURE.NOTE] The gateway supports **SQL Server 2012 SP1** and subsequent versions.
+> [AZURE.NOTE] When using DirectQuery, the gateway only supports **SQL Server 2012 SP1** and subsequent versions.
 
 You will then want to fill in the information for the data source which includes the **Server** and the **Database**.  
 
 You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use SQL Authentication instead of Windows Authentication. Then enter the credentials that will be used for this data source.
 
-> [AZURE.NOTE] All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored.
+> [AZURE.NOTE] All queries to the data source will run using these credentials, unless Kerberos Single Sign On (SSO) is configured and enabled for the data source. With SSO, import datasets use the stored credentials, but DirectQuery datasets use the current Power BI user to execut the queries using SSO. For more information, see the main on-premises data gateway article to learn more about how [credentials](powerbi-gateway-onprem.md#credentials) are stored, or the article describing how to [use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data.md).
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3.png)
 
@@ -103,13 +103,13 @@ After you have created the data source, it will be available to use with either 
 
 > [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway gateway!
 
-The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
+The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within **Power BI Desktop**, you will need to use the IP Address for the data source within the gateway configuration. If you use *SERVER\INSTANCE*, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
 
 This is the case for both DirectQuery and scheduled refresh.
 
 ### Using the data source with DirectQuery connections
 
-You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the gateway. You will also need to make sure your user is listed in the **Users** tab of the data source in order to publish DirectQuery datasets. The selection, for DirectQuery, occurs within Power BI Desktop when you first import data. [Learn more](powerbi-desktop-use-directquery.md)
+You will need to make sure the server and database name matches between **Power BI Desktop** and the configured data source for the gateway. You will also need to make sure your user is listed in the **Users** tab of the data source in order to publish DirectQuery datasets. The selection, for DirectQuery, occurs within Power BI Desktop when you first import data. [Learn more](powerbi-desktop-use-directquery.md)
 
 After you publish, either from Power BI Desktop or **Get Data**, your reports should start working. It may take several minutes, after creating the data source within the gateway, for the connection to be usable.
 
@@ -121,7 +121,8 @@ If you are listed in the **Users** tab of the data source configured within the 
 
 ## See Also
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+-    [On-premises Data Gateway](powerbi-gateway-onprem.md)  
+-    [On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
+-    [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+-    [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](powerbi-gateway-kerberos-for-SSO-PBI-to-on-premises-data.md). 
+-    More questions? [Try the Power BI Community](http://community.powerbi.com/)
