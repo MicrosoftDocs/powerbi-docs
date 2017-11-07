@@ -581,7 +581,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **June 2, 2015**
 
-* Now tracking important statistics about your apps is easy with Power BI and the [appFigures content pack](http://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx). For additional details on how to connect and get started, see the [documentation](powerbi-content-pack-appfigures.md) for appFigures content pack for Power BI.
+* Now tracking important statistics about your apps is easy with Power BI and the [appFigures content pack](http://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx). For additional details on how to connect and get started, see the [documentation](service-connect-to-appfigures.md) for appFigures content pack for Power BI.
 
 **May 28, 2015**
 

@@ -28,24 +28,24 @@ Connect to the [appFigures content pack](https://app.powerbi.com/getdata/service
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-appfigures/PBI_GetData.png)
+   ![](media/service-connect-to-appfigures/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-appfigures/PBI_GetServices.png)
+   ![](media/service-connect-to-appfigures/pbi_getservices.png)
 3. Select **appFigures** \>  **Get**.
    
-   ![](media/powerbi-content-pack-appfigures/appFigures.png)
+   ![](media/service-connect-to-appfigures/appfigures.png)
 4. For **Authentication Method**, select **oAuth2** \> **Sign In**. When prompted, enter your appFigures credentials and follow the appFigures authentication process.
    
    The first time you connect, Power BI prompts you to allow read-only access to your account. Select **Allow** to begin the import process. This can take a few minutes depending on the volume of data in your account.
    
-   ![](media/powerbi-content-pack-appfigures/appFiguresDoc_06.png)
+   ![](media/service-connect-to-appfigures/appfiguresdoc_06.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*:
    
-    ![](media/powerbi-content-pack-appfigures/PBI_appFigures3.png)
+    ![](media/service-connect-to-appfigures/pbi_appfigures3.png)
 6. Select the appFigures dashboard. This is the default dashboard that Power BI creates to display your data. You can modify this dashboard to display your data in any way you want.
    
-    ![](media/powerbi-content-pack-appfigures/appFiguresDoc_01.png)
+    ![](media/service-connect-to-appfigures/appfiguresdoc_01.png)
 
 **What Now?**
 
@@ -68,7 +68,7 @@ The following data is available from appFigures in Power BI.
 ## Troubleshooting
 If data from some of your apps is not showing up in Power BI, check to make sure that those apps are Visible and Active on the **apps** tab of the appFigures site.
 
-![](media/powerbi-content-pack-appfigures/appFiguresDoc_11.png)
+![](media/service-connect-to-appfigures/appfiguresdoc_11.png)
 
 ### See also
 * [Get started in Power BI](service-get-started.md)
