@@ -138,7 +138,7 @@ For more detailed information, see [Refresh a dataset created from an Excel work
 | --- | --- | --- | --- |
 | Simple comma separated value |Yes, hourly |Manual only |No |
 
-For more detailed information, see [Refresh a dataset created from a comma separated value (.csv) file on OneDrive](powerbi-refresh-csv-file-onedrive.md).
+For more detailed information, see [Refresh a dataset created from a comma separated value (.csv) file on OneDrive](refresh-csv-file-onedrive.md).
 
 ## Content packs
 There are two types of content packs in Power BI:

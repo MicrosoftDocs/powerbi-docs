@@ -38,7 +38,7 @@ Connecting to OneDrive for Business in Power BI is typically seamless because th
 
 When you sign into your Microsoft account, be sure to select Keep me signed in. Power BI can then synchronize any updates with datasets in Power BI
 
-![](media/powerbi-refresh-csv-file-onedrive/Refresh_SignIn_KeepMeSignedIn.png)
+![](media/refresh-csv-file-onedrive/refresh_signin_keepmesignedin.png)
 
 If you make changes to your .csv file on OneDrive that cannot be synchronized with the dataset in Power BI because your Microsoft account credentials might have changed, you’ll need to connect to the file and import it again from your personal OneDrive.
 
