@@ -51,7 +51,7 @@ You can also export the data that is being used to create the visualization as a
 
 ### Next steps
 [Export data from Power BI visualizations](powerbi-service-export-data.md)    
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)    
+[Visualizations in Power BI reports](power-bi-report-visualizations.md)    
 [Power BI reports](powerbi-service-reports.md)    
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)    
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

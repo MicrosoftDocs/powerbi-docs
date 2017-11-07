@@ -129,7 +129,7 @@ For more information, see [Tips and tricks for color formatting, labeling, and a
 If the X-axis is categorized by the report owner as a date type, the **Type** option will display and you can select between continuous or categorical. 
 
 ## See also
-More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Customize t](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)[itles, backgrounds, and legends](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 

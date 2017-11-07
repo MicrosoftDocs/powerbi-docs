@@ -96,7 +96,7 @@ This method uses the **Explore** dropdown from the top Power BI menubar.
   ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-change-data-type2.png)
 
 ### See also
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI reports](powerbi-service-reports.md)
 

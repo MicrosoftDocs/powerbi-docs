@@ -376,7 +376,7 @@ Run the visual server with the command `pbiviz start` in your terminal / command
 For more information, see [Running your visual](#running-your-visual) or [Server certificate setup](#ssl-setup).
 
 ## Next steps
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
+[Visualizations in Power BI](power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 [Publish custom visuals to the Office store](powerbi-developer-office-store.md)  
 [Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  

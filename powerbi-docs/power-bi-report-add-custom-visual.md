@@ -70,7 +70,7 @@ Watch Will download a custom visual and add it to his report. Then follow the st
 ## Next steps
 [Download and use custom visuals from the Office store](service-custom-visuals-office-store.md)  
 [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
+[Visualizations in Power BI](power-bi-report-visualizations.md)  
 [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 [Use custom visualizations in Power BI Desktop](power-bi-custom-visuals-use.md)  
 [Review custom visuals for security and privacy](service-custom-visuals-review-for-security-and-privacy.md)  

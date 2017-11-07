@@ -26,7 +26,7 @@ ms.author: mihart
    ![](media/powerbi-service-copy-and-paste-a-visualization/copypasteVizNew.gif)
 
 ## See also
-More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 

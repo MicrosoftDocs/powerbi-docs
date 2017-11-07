@@ -33,7 +33,7 @@ ms.author: mihart
    <iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## What's next
-More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

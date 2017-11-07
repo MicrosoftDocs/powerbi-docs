@@ -91,7 +91,7 @@ In the navigation pane, your reports are listed under the **Reports** heading. E
   ![](media/powerbi-service-basic-concepts/Drawing3new.png)
 
 ## Dashboards
-A *dashboard* is something you create or something a colleague creates and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile displays a single [visualization](powerbi-service-visualizations-for-reports.md) that was created from a dataset and pinned to the dashboard. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md). 
+A *dashboard* is something you create or something a colleague creates and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md). 
 
 In the navigation bar, "your" dashboards are listed under the **Dashboards** heading. "Your" means that you have access to them, not necessarily that you created them. Each dashboard represents a customized view of some subset of the underlying datasets.  If you own the dashboard, you'll also have access to the underlying dataset(s) and they'll appear in the navbar under **Datasets**.  If the dashboard was shared with you, it has a sharing icon ![](media/powerbi-service-basic-concepts/sharing-icon.png) next to it, and depending on how it was shared, you may or may not see the underlying datasets listed in your navbar.
 

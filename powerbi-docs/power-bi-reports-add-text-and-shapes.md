@@ -63,7 +63,7 @@ In Editing View, add text boxes and shapes to a report in Power BI service.
 
 [Reports in Power BI](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

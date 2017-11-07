@@ -49,7 +49,7 @@ To follow along, sign in to Power BI and select **Get Data** \> **Samples** \> *
 
 [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

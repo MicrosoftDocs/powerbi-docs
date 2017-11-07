@@ -35,7 +35,7 @@ Try different types of visualizations in Power BI to see which one illustrates y
 If you changed the visualization type in the report after you pinned it to your dashboard, the tile does not automatically update. So, if you pinned the visualization as a line chart and then, in the report, changed it to a bar chart, the already-pinned version of this data will remain a line chart. Pin the bar chart to see it too on the dashboard.
 
 ### See also
-More about [Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 

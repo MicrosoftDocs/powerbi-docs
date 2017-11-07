@@ -40,7 +40,7 @@ In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-vie
 
 [Display a dashboard tile in full-screen mode (In-focus)](powerbi-service-display-dash-in-focus-mode.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
 
