@@ -30,30 +30,30 @@ Note: To import your QuickBooks Online data into Power BI, you need to be an adm
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-quickbooks-online/PBI_GetData.png) 
+   ![](media/service-connect-to-quickbooks-online/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-quickbooks-online/PBI_GetServices.png) 
+   ![](media/service-connect-to-quickbooks-online/pbi_getservices.png) 
 3. Select **QuickBooks Online**, then select **Get**.
    
-   ![](media/powerbi-content-pack-quickbooks-online/qbo.png)
+   ![](media/service-connect-to-quickbooks-online/qbo.png)
 4. Select **oAuth2** for Authentication Method and select **Sign In**. 
 5. When prompted, enter your QuickBooks Online credentials and follow the QuickBooks Online authentication process. If you are already signed in to QuickBooks Online in your browser, you may not be prompted for credentials.
    
    **Note:** You need admin credentials for your QuickBooks Online account.
 6. Select the company you would like to connect to Power BI in the next screen.
    
-   ![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_Almost.png)
+   ![](media/service-connect-to-quickbooks-online/pbi_qbo_almost.png)
 7. Select **Authorize** in the next screen to begin the import process. This can take a few minutes depending on the size of your company data. 
    
-   ![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_AuthorizeSm.png)
+   ![](media/service-connect-to-quickbooks-online/pbi_qbo_authorizesm.png)
    
    After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
    
-   ![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_LeftNavNew.png)
+   ![](media/service-connect-to-quickbooks-online/pbi_qbo_leftnavnew.png)
 8. Select the QuickBooks Online dashboard. This is the dashboard Power BI created automatically to display your imported data. You can modify this dashboard to display your data any way you want. 
    
-   ![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_Dash.png)
+   ![](media/service-connect-to-quickbooks-online/pbi_qbo_dash.png)
 
 **What Now?**
 
@@ -71,7 +71,7 @@ If you get this message after selecting **Authorize**:
 
 The application has already been subscribed to by another user for this company. Please contact [admin email] to make changes to this subscription.”
 
-![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_OopsSm.png)
+![](media/service-connect-to-quickbooks-online/pbi_qbo_oopssm.png)
 
 ... this means another admin in your company has already connected to your company data with Power BI. Ask that admin to share the dashboard with you. Currently, only one admin user can connect a particular QuickBooks Online company dataset to Power BI. After Power BI creates the dashboard, the admin can shared it with multiple colleagues on the same Power BI tenants.
 
@@ -79,7 +79,7 @@ The application has already been subscribed to by another user for this company.
 
 Currently Power BI only supports US editions of QuickBooks Online. 
 
-![](media/powerbi-content-pack-quickbooks-online/PBI_QBO_CountryNotSupported.png)
+![](media/service-connect-to-quickbooks-online/pbi_qbo_countrynotsupported.png)
 
 ### See also
 [Get started with Power BI](service-get-started.md)
