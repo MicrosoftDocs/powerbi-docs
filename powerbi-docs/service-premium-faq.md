@@ -209,7 +209,7 @@ Power BI Report Server is available to SQL Server customers with EE + SA license
 
 ## Next steps
 [Power BI Premium - what is it?](service-premium.md)  
-[Power BI Premium release notes](powerbi-premium-release-notes.md)  
+[Power BI Premium release notes](service-premium-release-notes.md)  
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)  
 [Extended Pro Trial activation](service-extended-pro-trial.md)  
