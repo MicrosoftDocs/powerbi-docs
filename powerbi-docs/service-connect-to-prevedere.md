@@ -30,19 +30,19 @@ Note: If you are not an existing Prevedere user, please use the [sample key](htt
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-prevedere/getdata.png)
+   ![](media/service-connect-to-prevedere/getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-prevedere/services.png)
+   ![](media/service-connect-to-prevedere/services.png)
 3. Select **Prevedere** and then **Get**.
    
-   ![](media/powerbi-content-pack-prevedere/connect.png)
+   ![](media/service-connect-to-prevedere/connect.png)
 4. For **Authentication Method**, select **Key** and enter your Prevedere API key.
    
-    ![](media/powerbi-content-pack-prevedere/creds.png)
+    ![](media/service-connect-to-prevedere/creds.png)
 5. Select **Sign in** to begin the import process. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
-     ![](media/powerbi-content-pack-prevedere/dashboard.png)
+     ![](media/service-connect-to-prevedere/dashboard.png)
 
 **What Now?**
 
