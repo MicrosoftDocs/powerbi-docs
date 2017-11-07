@@ -63,7 +63,7 @@ One way to add a new [dashboard tile](powerbi-service-dashboard-tiles.md) is fro
 4. Select **Pin**. A Success message (near the top right corner) lets you know the range was added, as a tile, to your dashboard. 
    
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/power-bi-go-to-dashboard.png)
-5. Select **Go to dashboard**. From here you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization. By default, selecting the pinned tile opens the workbook in Power BI.
+5. Select **Go to dashboard**. From here you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization. By default, selecting the pinned tile opens the workbook in Power BI.
 
 ## Pin an entire table or pivot chart to a dashboard
 Follow the steps above except instead of selecting a range of cells, select an entire table or pivot table.

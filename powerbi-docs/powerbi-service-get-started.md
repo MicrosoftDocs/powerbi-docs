@@ -108,7 +108,7 @@ Now that you have connected to data, explore to find insights.  When you've foun
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
    
    ![](media/powerbi-service-get-started/power-bi-pin-success.png)
-8. Select **Go to dashboard** to see your new dashboard with the pinned til. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
+8. Select **Go to dashboard** to see your new dashboard with the pinned til. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by [renaming, resizing, linking, and repositioning tiles](service-dashboard-edit-tile.md).﻿﻿
    
    ![](media/powerbi-service-get-started/power-bi-new-dashboard.png)
    

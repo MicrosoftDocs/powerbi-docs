@@ -44,7 +44,7 @@ ms.author: mihart
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to the selected dashboard.
    
    ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/power-bi-pin-success.png)
-6. Select **Go to dashboard** to see the pinned tile. There, you can [rename, resize, link, and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
+6. Select **Go to dashboard** to see the pinned tile. There, you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization.
 
 ## Next steps
 [Tiles in Power BI](powerbi-service-dashboard-tiles.md)  

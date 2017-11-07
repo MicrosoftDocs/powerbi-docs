@@ -40,7 +40,7 @@ Dashboards that have been shared with you as an app cannot be duplicated.
    ![](media/service-dashboard-copy/power-bi-copied.png)
 
 ## Next steps
-* [Edit, resize and move tiles](powerbi-service-edit-a-tile-in-a-dashboard.md) 
+* [Edit, resize and move tiles](service-dashboard-edit-tile.md) 
 * [Tips for designing a great dashboard](powerbi-service-tips-for-designing-a-great-dashboard.md) 
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

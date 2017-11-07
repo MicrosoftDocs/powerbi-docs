@@ -48,7 +48,7 @@ The question box is the easiest way to make a number tile like this.
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.  
    
    ![](media/power-bi-visualization-big-number/power-bi-success.png)
-7. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
+7. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](service-dashboard-edit-tile.md) on your dashboard. 
    
    ![](media/power-bi-visualization-big-number/power-bi-pinned.png)
 

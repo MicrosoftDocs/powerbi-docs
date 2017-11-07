@@ -54,7 +54,7 @@ And standalone tiles for images, text boxes, videos, streaming data, and web con
 
 ## Interacting with tiles on a dashboard
 ### Move and resize a tile
-Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md). Hover and select the handle ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg) to resize the tile.
+Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md). Hover and select the handle ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg) to resize the tile.
 
 ### Hover over a tile to change the appearance and behavior
 1. Hover over the tile to display the ellipses.
@@ -72,16 +72,16 @@ Grab a tile and [move it around on the dashboard](powerbi-service-edit-a-tile-in
      
      * [View in focus mode ](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Export the data used in the tile](power-bi-visualization-export-data.md) ![](media/powerbi-service-dashboard-tiles/export-icon.png)
-     * [Edit title and subtitle, add a hyperlink, display last refresh time](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+     * [Edit title and subtitle, add a hyperlink, display last refresh time](service-dashboard-edit-tile.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
      * [Run insights ](powerbi-service-auto-insights.md) ![](media/powerbi-service-dashboard-tiles/power-bi-insights.png)
      * [Pin the tile to another dashboard ](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
        ![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
-   * [Remove the tile](powerbi-service-edit-a-tile-in-a-dashboard.md)
+   * [Remove the tile](service-dashboard-edit-tile.md)
      ![](media/powerbi-service-dashboard-tiles/trash-icon.png)
 3. To close the action menu, select a blank area in the canvas.
 
 ### Select (click) a tile
-When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](powerbi-service-edit-a-tile-in-a-dashboard.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
+When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](service-dashboard-edit-tile.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
 
 > [!NOTE]
 > The exception to this is video tiles created directly on the dashbaord using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   

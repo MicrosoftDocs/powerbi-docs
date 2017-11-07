@@ -83,7 +83,7 @@ We'll import one of the Power BI sample datasets and use it to create our new da
 Congratulations on creating your first dashboard! Now that you have a dashboard, there's so much more you can do with it.  Try one of the suggested **Next steps** below, or start playing and exploring on your own.   
 
 ## Next steps
-* [Resize and move tiles](powerbi-service-edit-a-tile-in-a-dashboard.md)
+* [Resize and move tiles](service-dashboard-edit-tile.md)
 * [All about dashboard tiles](powerbi-service-dashboard-tiles.md)
 * [Share your dashboard by creating an app](service-create-distribute-apps.md)
 

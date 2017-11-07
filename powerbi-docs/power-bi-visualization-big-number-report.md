@@ -48,7 +48,7 @@ Sometimes a single number is the most important thing you want to track in your 
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
    
    ![](media/power-bi-visualization-big-number-report/power-bi-pin-success-message.png)
-9. Select **Go to dashboard**. There, you can [edit and move](powerbi-service-edit-a-tile-in-a-dashboard.md) the pinned visualization.
+9. Select **Go to dashboard**. There, you can [edit and move](service-dashboard-edit-tile.md) the pinned visualization.
 
 ## Next steps
 [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)

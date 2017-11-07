@@ -36,7 +36,7 @@ In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-vie
   ![](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
 ## See also
-[Resize a visualization on a dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md)
+[Resize a visualization on a dashboard](service-dashboard-edit-tile.md)
 
 [Display a dashboard tile in full-screen mode (In-focus)](powerbi-service-display-dash-in-focus-mode.md)
 

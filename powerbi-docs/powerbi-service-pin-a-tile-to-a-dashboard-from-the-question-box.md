@@ -45,7 +45,7 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
    A success message (near the top-right corner) lets you know the visualization was added, as a tile, to your dashboard.  
    
    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-pin.png)
-7. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md) on your dashboard. 
+7. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, and reposition the tile, and more](service-dashboard-edit-tile.md) on your dashboard. 
    
    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-pinned.png)
 
@@ -56,7 +56,7 @@ Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? As
 * **How does Q&A know which datasets to use**?  Q&A has access to all datasets that have visualizations pinned to that dashboard.
 
 ## Next steps
-[Rename, resize, add a hyperlink, reposition the tile, and more](powerbi-service-edit-a-tile-in-a-dashboard.md)    
+[Rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md)    
 [Display your dashboard tile in Focus mode](powerbi-service-display-dash-in-focus-mode.md)     
 [Back to Q&A in Power BI](powerbi-service-q-and-a.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

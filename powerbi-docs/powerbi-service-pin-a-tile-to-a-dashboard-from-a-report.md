@@ -54,7 +54,7 @@ Now create your own dashboard using one of the Power BI sample reports.
    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
    
    ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/pinSuccess.png)
-5. From the navigation pane, select the dashboard with the new tile. Select the tile to jump back into the report. Or, [edit the tile display and behavior](powerbi-service-edit-a-tile-in-a-dashboard.md).
+5. From the navigation pane, select the dashboard with the new tile. Select the tile to jump back into the report. Or, [edit the tile display and behavior](service-dashboard-edit-tile.md).
 
 ## Pin an entire report page
 Another option is to pin an entire report page to a dashboard. This is an easy way to pin more than one visualization at a time.  Also, when you pin an entire page, the tiles are *live*; you can interact with them right there on the dashboard. And changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  

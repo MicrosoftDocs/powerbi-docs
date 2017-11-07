@@ -453,7 +453,7 @@ Read the [November 2015 Power BI mobile blog post](http://blogs.msdn.com/b/power
 * [Create QR codes in the Power BI service](service-create-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
 
 #### The Power BI app for Windows devices
-* [Link directly from a tile to a specific URL](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink).
+* [Link directly from a tile to a specific URL](service-dashboard-edit-tile.md#hyperlink).
 
 ### October 2015
 Read the [mid-October Power BI mobile blog post](http://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
