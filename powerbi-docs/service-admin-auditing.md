@@ -54,7 +54,7 @@ Auditing is a Power BI Pro feature and auditing events are only available for Po
 
 For more information on how you can acquire and assign Power BI Pro licenses to users in your organization, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 
-For more information on how to restrict free users from signing up, see [Enable, or disable, individual user sign up in Azure Active Directory](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory).
+For more information on how to restrict free users from signing up, see [Enable, or disable, individual user sign up in Azure Active Directory](service-admin-service-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory).
 
 > [!NOTE]
 > To enable auditing for Power BI in your tenant, you need at least one exchange mailbox license in your tenant.

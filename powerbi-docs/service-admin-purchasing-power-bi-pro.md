@@ -120,7 +120,7 @@ When you are in the service, you can verify that you have a Pro account by going
 
 ## Next steps
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[Power BI (free) in your organization](service-admin-service-free-in-your-organization.md)  
 [Extended Pro Trial activation](service-extended-pro-trial.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [How to purchase Power BI Premium](service-admin-premium-purchase.md)  

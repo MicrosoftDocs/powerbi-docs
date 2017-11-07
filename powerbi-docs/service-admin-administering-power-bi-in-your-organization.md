@@ -136,7 +136,7 @@ To perform the following steps, you must install the latest 64-bit version of th
     Get-MsolCompanyInformation | fl allow*
 
 ### How can I prevent my existing users from starting to use Power BI?
-There are steps you can take, as an admin, to prevent users from signing up for Power BI. If you do block this, users’ attempts to sign up will fail and they will be directed to contact their organization’s admin. You do not need to repeat this process if you have already disabled automatic license distribution (e.g. Office 365 for Education for Students, Faculty, and Staff). [Learn more](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-Azure-Active-Directory)
+There are steps you can take, as an admin, to prevent users from signing up for Power BI. If you do block this, users’ attempts to sign up will fail and they will be directed to contact their organization’s admin. You do not need to repeat this process if you have already disabled automatic license distribution (e.g. Office 365 for Education for Students, Faculty, and Staff). [Learn more](service-admin-service-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-Azure-Active-Directory)
 
 The AAD setting that controls this is **AllowAdHocSubscriptions**. Most tenants will have this setting set to true, which means it is enabled. If you acquired Power BI through a partner, this may be set to false by default, which means it is disabled.
 
@@ -268,7 +268,7 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 [Power BI admin portal](service-admin-portal.md)  
 [Understanding the Power BI admin role](service-admin-role.md)  
 [Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[Power BI (free) in your organization](service-admin-service-free-in-your-organization.md)  
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Premium - what is it?](service-premium.md)  
 [How to purchase Power BI Premium](service-admin-premium-purchase.md)  

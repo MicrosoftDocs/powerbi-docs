@@ -33,7 +33,7 @@ For more control, you can block individual sign up and assign Power BI licenses 
 ## How to get the unlimited license block
 Within the Office 365 admin center, under **Billing** > **Licenses**, you may or may not see Power BI (free) with unlimited licenses.
 
-![](media/powerbi-admin-powerbi-free-in-your-organization/unlimited-licenses.png)
+![](media/service-admin-service-free-in-your-organization/unlimited-licenses.png)
 
 This block of licenses will show up after the first time someone signs up for Power BI as an individual. During that process, this license block gets attached to your organization and a license is assigned to the user that is signing up.
 
@@ -47,7 +47,7 @@ Once the Power BI (free) license block is available, you can assign those licens
 3. Select **Add subscriptions +** on the right side.
 4. Under Other Plans, hover over the **ellipse (…)** for Power BI (free) and select **Buy now**.
    
-    ![](media/powerbi-admin-powerbi-free-in-your-organization/buy-powerbi-free.png)
+    ![](media/service-admin-service-free-in-your-organization/buy-powerbi-free.png)
 5. Enter the number of licenses you would like to add and select **Check out now** or **Add to cart**.
    
    > [!NOTE]
@@ -60,7 +60,7 @@ There is no purchase when using this approach, although you will need to either 
 
 If you decide later that you want to add more licenses, you can go back to **Add subscriptions**, and select **Change license quantity** for Power BI (free).
 
-![](media/powerbi-admin-powerbi-free-in-your-organization/change-license-quantity.png)
+![](media/service-admin-service-free-in-your-organization/change-license-quantity.png)
 
 You can now assign those licenses to your users. For more information about how to assign licenses, see [Assign licenses to users in Office 365 ](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
@@ -74,7 +74,7 @@ The AAD setting that controls this is **AllowAdHocSubscriptions**. Most tenants 
      $msolcred = get-credential
      connect-msolservice -credential $msolcred
    
-   ![](media/powerbi-admin-powerbi-free-in-your-organization/aad-signin.png)
+   ![](media/service-admin-service-free-in-your-organization/aad-signin.png)
 2. Once you are signed in, you can issue the following command to see what your tenant is currently configured for.
    
      Get-MsolCompanyInformation | fl AllowAdHocSubscriptions

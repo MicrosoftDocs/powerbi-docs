@@ -141,7 +141,7 @@ In many cases, registering for Power BI can be achieved by following the simple 
 | **Email address is not an Office 365 ID** You receive a message like the following during signup: <br /><br /> *We can't find you at contoso.com.  Do you use a different ID at work or school? <br /><br /> Try signing in with that, and if it doesn't work, contact your IT department.* |Your organization uses IDs to sign in to Office 365 and other Microsoft services that are different than your email address.  For example, your email address might be Nancy.Smith@contoso.com but your ID is nancys@contoso.com. <br /><br /> To complete signup, use the ID that your organization has assigned to for signing in to Office 365 or other Microsoft services.  If you don't know what this is, contact your IT administrator. <br /><br /> If you still can't sign up and are able to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
 ## Next steps
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
+[Power BI (free) in your organization](service-admin-service-free-in-your-organization.md)  
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
 [Power BI Premium - what is it?](service-premium.md)  
