@@ -730,7 +730,7 @@ To do this, open the Formatting pane, expand **Y-Axis** and set **Show Secondary
 
 For more information:
 
-* [Tutorial: Combo chart in Power BI](powerbi-service-tutorial-combo-chart-merge-visualizations.md)
+* [Tutorial: Combo chart in Power BI](power-bi-visualization-combo-chart.md)
 * [The danger of dual-scaled Axes in visuals](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf)
 
 ### Scatter Chart

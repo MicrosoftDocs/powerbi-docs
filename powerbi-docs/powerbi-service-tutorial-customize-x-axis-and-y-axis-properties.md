@@ -80,7 +80,7 @@ To revert all the X-axis customization you've done so far, select **Revert To De
      ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-y-axis-complete.png)
 
 ## Customizing visualizations with dual Y-axes
-First you'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](powerbi-service-tutorial-combo-chart-merge-visualizations.md). Then you'll format the dual Y-axes.
+First you'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the [Combo chart Tutorial](power-bi-visualization-combo-chart.md). Then you'll format the dual Y-axes.
 
 ### Create a chart with two Y-axes
 1. Create a new line chart that tracks **Sales > Gross Margin last year %** by **Time > FiscalMonth**. 

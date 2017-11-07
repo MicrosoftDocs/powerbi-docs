@@ -54,49 +54,49 @@ To create your own combo chart, sign in to Power BI and select **Get Data \> Sam
    
     c.  Select **Time** \> **FiscalMonth** to add it to the **Axis** well. 
    
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combotutorial1new.png)
+    ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Select the ellipses (...) in the upper-right corner of the visualization, and select **Sort by FiscalMonth**.
 6. Convert the column chart to a combo chart. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
    
-    ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new2.png)
+    ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line Values** bucket.
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/linevaluebucket.png)
+   ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
    
    Your combo chart should look something like this:
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combochartdone-new.png)
+   ![](media/power-bi-visualization-combo-chart/combochartdone-new.png)
 
 ## Create a combo chart with two axes
 In this task, we'll compare gross margin and sales.
 
 1. Create a new line chart that tracks Gross Margin % last year by Month.  In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo1_new.png)
+   ![](media/power-bi-visualization-combo-chart/combo1_new.png)
 2. Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** is much smaller than the scale of **Sales** which makes it difficult to compare.      
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/flatline_new.png)
+   ![](media/power-bi-visualization-combo-chart/flatline_new.png)
 3. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
+   ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
 4. Drag **Gross Margin% Last Year** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures dollars and the right measures percentage.
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-combochart.png)    
+   ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
 ## Add titles to the axes
-1. Select the paint roller icon ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-paintroller.png) to open the Formatting pane.
+1. Select the paint roller icon ![](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
 2. Select the down arrow to expand the **Y-axis** options.
 3. For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display** as **Millions**.
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-y-axis-column.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-y-axis-column.png)
 4. Under **Y-Axis (Column)** also ensure that **Show Secondary** is set to **On**. This displays options for formatting the line chart portion of the combo chart.
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-show-secondary.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-show-secondary.png)
 5. For **Y-Axis (Line)**, leave **Position** as **Right**, turn **Title** to **On**, and set **Style** to **Show title only**.
    
    Your combo chart now displays dual axes, both with titles.
    
-   ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/power-bi-titles-on.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
 
 From here you might want to:
 

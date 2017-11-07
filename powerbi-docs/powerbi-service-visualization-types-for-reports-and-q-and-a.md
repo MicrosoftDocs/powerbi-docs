@@ -56,7 +56,7 @@ For more information, see [Create a big number tile for a dashboard](power-bi-vi
 
 **Tip**: A Combo chart combines a column chart and a line chart. Choose from *Line and Stacked Column* and *Line and Clustered Column*.
 
-For more information, see [Tutorial: Combo charts in Power BI](powerbi-service-tutorial-combo-chart-merge-visualizations.md).
+For more information, see [Tutorial: Combo charts in Power BI](power-bi-visualization-combo-chart.md).
 
 ### Doughnut charts
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/donutSmall.png)
