@@ -109,7 +109,7 @@ After you get the gateway installed, you will want to create data sources for th
 [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
 [Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
-[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
+[Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
 ## Where things can go wrong
 Sometimes installing the gateway fails. Or, maybe the gateway seems to install ok, but the service is still unable to work with it. In many cases, it’s something simple, like the password for the credentials the gateway uses to sign into the data source.
