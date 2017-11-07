@@ -42,7 +42,7 @@ Step by step instructions for using Q&A and an overview of how it all works.
 [Microsoft Power BI mobile app](powerbi-mobile-ios-qna.md)
 For iOS on iPads, iPhones, and iPod Touch devices
 
-[Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md):
+[Tips for asking questions in Q&A](service-q-and-a-tips.md):
 Learn how to talk to Q&A to get the best possible results.
 
 [Add featured questions to your datasets](powerbi-service-q-and-a-create-featured-questions.md)

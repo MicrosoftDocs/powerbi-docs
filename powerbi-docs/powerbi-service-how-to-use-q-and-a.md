@@ -80,12 +80,12 @@ Q&A picks the best visualization based on the data being displayed. Sometimes da
 
 You can also tell Q&A which visualization to use by adding it to your question. But keep in mind that it may not always be possible for Q&A to display the data in the visualization type you requested.
 
-For information about keywords that Q&A recognizes, see [Tips for asking questions](powerbi-service-q-and-a-tips.md).
+For information about keywords that Q&A recognizes, see [Tips for asking questions](service-q-and-a-tips.md).
 
 ## Next steps
 Back to [Q&A in Power BI](powerbi-service-q-and-a.md)  
 [Tutorial: Use Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)  
-[Tips for asking questions in Q&A](powerbi-service-q-and-a-tips.md)  
+[Tips for asking questions in Q&A](service-q-and-a-tips.md)  
 [Prepare a workbook for Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
 [Pin a tile to the dashboard from Q&A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)  
 
