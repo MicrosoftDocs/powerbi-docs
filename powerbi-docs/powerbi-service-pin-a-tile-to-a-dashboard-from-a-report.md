@@ -59,7 +59,7 @@ Now create your own dashboard using one of the Power BI sample reports.
 ## Pin an entire report page
 Another option is to pin an entire report page to a dashboard. This is an easy way to pin more than one visualization at a time.  Also, when you pin an entire page, the tiles are *live*; you can interact with them right there on the dashboard. And changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
 
-For more information, see [Pin an entire report page](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md)
+For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md)
 
 ## See also
 [Dashboards in Power BI](powerbi-service-dashboards.md)
