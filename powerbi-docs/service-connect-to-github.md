@@ -30,26 +30,26 @@ Note: The content pack requires the GitHub account to have access to the repo. M
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-github/PBI_GetData.png) 
+   ![](media/service-connect-to-github/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-github/pbi_get_services.png) 
+   ![](media/service-connect-to-github/pbi_get_services.png) 
 3. Select **GitHub** \> **Get**.
    
-   ![](media/powerbi-content-pack-github/github.png)
+   ![](media/service-connect-to-github/github.png)
 4. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
    
-   ![](media/powerbi-content-pack-github/PBI_Github1.png)
+   ![](media/service-connect-to-github/pbi_github1.png)
 5. Enter your GitHub credentials (this step might be skipped if you are already signed in with your browser). 
 6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
 7. Follow the Github authentication screens. Grant the GitHub for Power BI content pack permission to the GitHub data.
    
-   ![](media/powerbi-content-pack-github/Github_Authorize.png)
+   ![](media/service-connect-to-github/github_authorize.png)
    
    This connects Power BI with GitHub and allows Power BI to connect to the data.  The data is refreshed once a day.
 8. After you connect to your repo, Power BI imports the data. You see a new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github), report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
    
-   ![](media/powerbi-content-pack-github/PBI_GithubDash.png)
+   ![](media/service-connect-to-github/pbi_githubdash.png)
 
 **What Now?**
 
@@ -85,7 +85,7 @@ To de-authorize Power BI from being connected to your GitHub repo you can Revoke
 ## Finding parameters
 You can determine the owner and repository by looking at the repository in GitHub itself:
 
-![](media/powerbi-content-pack-github/Github_OwnerRepo.png)
+![](media/service-connect-to-github/github_ownerrepo.png)
 
 The first part "Azure" is the owner and the second part "azure-sdk-for-php" is the repository itself.  You see these same two items in the URL of the repository:
 
