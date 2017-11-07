@@ -35,7 +35,7 @@ You'll have many options for interacting with the dashboard and underlying repor
 
 ## Actions available from the **Shared with me** screen
 * Select the star icon to [Favorite a dashboard](service-dashboard-favorite.md).
-* [Remove a dashboard](powerbi-service-delete.md)  ![](media/powerbi-service-new-dashboards/power-bi-delete-icon.png)
+* [Remove a dashboard](service-delete.md)  ![](media/powerbi-service-new-dashboards/power-bi-delete-icon.png)
 * Some dashboards can be re-shared  ![](media/powerbi-service-shared-with-me/power-bi-share-icon-new.png)
 * Additionally, if your lists of dashboards gets long, [use the search field and sorting to find what you need](powerbi-service-navigation-search-filter-sort.md).
   
