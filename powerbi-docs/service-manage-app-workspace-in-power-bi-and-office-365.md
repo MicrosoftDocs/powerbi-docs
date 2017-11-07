@@ -21,7 +21,7 @@ ms.author: maggies
 
 ---
 # Manage your app workspace in Power BI and Office 365
-As creator or admin of an [app workspace in Power BI](powerbi-service-what-are-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
+As creator or admin of an [app workspace in Power BI](service-install-use-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
 
 **In Power BI** you can:
 
@@ -76,7 +76,7 @@ When you distribute your app from the app workspace, the image you add here will
 3. Select **Save** or **Discard**.
 
 ## Next steps
-* [What are apps in Power BI?](powerbi-service-what-are-apps.md)
+* [What are apps in Power BI?](service-install-use-apps.md)
 * [Create apps and app workspaces in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

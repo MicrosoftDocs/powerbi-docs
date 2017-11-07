@@ -115,7 +115,7 @@ An app is a collection of dashboards and reports built to deliver key metrics, a
 
 ![](media/powerbi-service-the-new-power-bi-experience/power-bi-apps.png)
 
-To learn more, see **App workspaces** (below) and [What are Power BI apps](powerbi-service-what-are-apps.md).
+To learn more, see **App workspaces** (below) and [What are Power BI apps](service-install-use-apps.md).
 
 ## Shared with me
 **Shared with me** is the location for all dashboards that colleagues have shared with you.  Filter by dashboard owner, use the search field to find what’s relevant, and sort the items by date.  And for shared content you visit frequently, it's even easier to favorite it right from the **Shared with me** view.

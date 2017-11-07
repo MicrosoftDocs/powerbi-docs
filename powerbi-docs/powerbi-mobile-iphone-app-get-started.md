@@ -118,7 +118,7 @@ Read more about [configuring Power BI mobile apps with Microsoft Intune](service
 Here are some other things you can do in the iPhone app with dashboards and reports in Power BI, and reports and KPIs in the Power BI Report Server or Reporting Services web portal.
 
 ### Power BI dashboards and reports
-* View [your apps](powerbi-service-what-are-apps.md).
+* View [your apps](service-install-use-apps.md).
 * View your [Power BI dashboards](powerbi-mobile-create-dashboard.md).
 * [Ask questions of your data](powerbi-mobile-ios-qna.md) in your own words with Q&A
 * View your Power BI tiles on your [Apple Watch](powerbi-mobile-apple-watch.md).

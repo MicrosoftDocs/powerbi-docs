@@ -42,7 +42,7 @@ If you have more than five recently-visited items, select **See all** to open th
 
 ![](media/powerbi-service-recent/power-bi-recent-list.png)
 
-From here you can interact with the content as you would on the individual [**Dashboards**](powerbi-service-dashboards.md), [**Reports**](powerbi-service-reports.md), and **Workbooks** tabs, and on the [**Apps**](/powerbi-service-what-are-apps.md) screen.
+From here you can interact with the content as you would on the individual [**Dashboards**](powerbi-service-dashboards.md), [**Reports**](powerbi-service-reports.md), and **Workbooks** tabs, and on the [**Apps**](service-install-use-apps.md) screen.
 
 ## Next steps
 [Power BI service Apps](powerbi-service-what-are-apps.md)

@@ -50,7 +50,7 @@ You can set the visuals in your dashboard or report to be *responsive*, to chang
 ### June 2107
 #### All devices
 **Make apps favorites**
-You can already make a dashboard a favorite. Recently, [Power BI added apps](powerbi-service-what-are-apps.md), and now you can make apps favorites, too. 
+You can already make a dashboard a favorite. Recently, [Power BI added apps](service-install-use-apps.md), and now you can make apps favorites, too. 
 
 ### May 2017
 #### All devices

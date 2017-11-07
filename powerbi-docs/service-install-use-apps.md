@@ -22,7 +22,7 @@ ms.author: maggies
 # Install and use apps, with dashboards and reports, in Power BI
 In Power BI, *apps* bring related dashboards and reports together, all in one place. People in your organization can create and distribute apps with key business information. [External services](service-connect-to-services.md) you may already use, such as Google Analytics and Microsoft Dynamics CRM, also offer Power BI apps. 
 
-![Apps in Power BI](media/powerbi-what-are-apps/power-bi-apps-left-nav.png)
+![Apps in Power BI](media/service-install-use-apps/power-bi-apps-left-nav.png)
 
 Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in the app, in your browser or on your mobile device.
 
@@ -40,23 +40,23 @@ The easiest way to install a new app is to get a direct link from the app author
 
 When you click the link in email the Power BI service ([https://powerbi.com](https://powerbi.com)) opens in a browser. You confirm you want to install the app and it opens to the app landing page.
 
-![App landing page in the Power BI service](media/powerbi-what-are-apps/power-bi-app-landing-page-opportunity-480.png)
+![App landing page in the Power BI service](media/service-install-use-apps/power-bi-app-landing-page-opportunity-480.png)
 
 **On your iOS or Android mobile device** 
 
 When you click the link in email on your mobile device, the app installs automatically and opens the app content list. 
 
-![App content list on mobile device](media/powerbi-what-are-apps/power-bi-app-index-it-spend-360.png)
+![App content list on mobile device](media/service-install-use-apps/power-bi-app-index-it-spend-360.png)
 
 ### Get the app from Microsoft AppSource
 You can also find and install any apps that you have access to from Microsoft AppSource. 
 
-1. Select **Apps** ![Apps in the left navigation pane](media/powerbi-what-are-apps/power-bi-apps-bar.png) > **Get apps**. 
+1. Select **Apps** ![Apps in the left navigation pane](media/service-install-use-apps/power-bi-apps-bar.png) > **Get apps**. 
    
-     ![The Get apps icon](media/powerbi-what-are-apps/power-bi-service-apps-get-apps-oppty.png)
+     ![The Get apps icon](media/service-install-use-apps/power-bi-service-apps-get-apps-oppty.png)
 2. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
    
-     ![In AppSource under My organization](media/powerbi-what-are-apps/power-bi-appsource-my-org.png)
+     ![In AppSource under My organization](media/service-install-use-apps/power-bi-appsource-my-org.png)
 3. Select **Get it now** to add it to your Apps page. 
 
 ## Interact with the dashboards and reports in the app
@@ -64,7 +64,7 @@ Now you can explore the data in the dashboards and reports in the app. You have 
 
 You can't save changes you make, but you can always [export the data to Excel ](powerbi-service-export-data.md) from a table or other visual in a report.
 
-![Export data from a Power BI visual](media/powerbi-what-are-apps/power-bi-service-export-data-visual.png)
+![Export data from a Power BI visual](media/service-install-use-apps/power-bi-service-export-data-visual.png)
 
 ## Next steps
 * [Create and distribute apps in Power BI](service-create-distribute-apps.md)

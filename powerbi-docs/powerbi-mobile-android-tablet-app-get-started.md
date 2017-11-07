@@ -121,7 +121,7 @@ Read more about [configuring Power BI mobile apps for Android with Microsoft Int
 Here are some other things you can do in the Android tablet app for Power BI with dashboards and reports in Power BI, and reports and KPIs in the Power BI Report Server or Reporting Services web portal.
 
 ### Power BI dashboards and reports
-* View [your apps](powerbi-service-what-are-apps.md).
+* View [your apps](service-install-use-apps.md).
 * View your [dashboards](powerbi-mobile-create-dashboard.md).
 * [Annotate and share tiles](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md).
 * Share [dashboards](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md).
