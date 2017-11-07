@@ -28,7 +28,7 @@ When you store a **Power BI Desktop** file on OneDrive or SharePoint Online, any
 
 You can perform a one-time, manual refresh right in Power BI Desktop by selecting Refresh on the Home ribbon. When you select Refresh here, the data in the *file’s* model is refreshed with updated data from the original data source. This kind of refresh, entirely from within the Power BI Desktop application itself, is different from manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 
-![](media/powerbi-refresh-desktop-file-onedrive/pbix-refresh.png)
+![](media/refresh-desktop-file-onedrive/pbix-refresh.png)
 
 When you import your Power BI Desktop file from OneDrive, or SharePoint Online, data, along with other information about the model is loaded into a dataset in Power BI. In the Power BI service, not Power BI Desktop, you want to refresh data in the dataset because that is what your reports, in the Power BI service, are based on. Because the data sources are external, you can manually refresh the dataset by using **Refresh now** or you can setup a refresh schedule by using **Schedule Refresh**.
 
@@ -42,7 +42,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 * All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
-[!INCLUDE [refresh-datasources](includes/refresh-datasources.md)]
+[!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
 
 > [!NOTE]
 > A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
@@ -55,7 +55,7 @@ If you have both a personal OneDrive and OneDrive for Business, it’s recommend
 Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different [Microsoft account](http://www.microsoft.com/account/default.aspx).
 
 When you sign in with your Microsoft account, be sure to select Keep me signed in. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI  
-    ![](media/powerbi-refresh-desktop-file-onedrive/Refresh_SignIn_KeepMeSignedIn.png)
+    ![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
 
 If you make changes to your file on OneDrive that cannot be synchronized with the dataset or reports in Power BI, because your Microsoft account credentials might have changed, you’ll need to connect to and import your file again from your personal OneDrive.
 
