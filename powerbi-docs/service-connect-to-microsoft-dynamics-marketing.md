@@ -30,21 +30,21 @@ Note: You need to specify a valid OData URL for a Dynamics Marketing instance (t
 ## How to connect
 1. Select Get Data at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_GetData.png) 
+   ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_GetServices.png) 
+   ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_getservices.png) 
 3. Select **Microsoft Dynamics Marketing** \> **Get**.
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-marketing/mdmarketing.png)
+   ![](media/service-connect-to-microsoft-dynamics-marketing/mdmarketing.png)
 4. Provide the OData URL associated with your account.  This will be in the form  "https://[instance\_name].marketing.dynamics.com/analytics."
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_DynMktgServiceURL.png)
+   ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynmktgserviceurl.png)
 5. When prompted, provide your credentials (this step might be skipped if you are already signed in with your browser). For Authentication Method, enter **oAuth2** and click **Sign In**:
    
-   ![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_DynamMktgoAuth2.png)
+   ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynammktgoauth2.png)
 6. After connecting, you'll see a Dynamics Marketing dashboard, populated with your own data. The yellow asterisks mark the new items in the left navigation pane.
-   ![](media/powerbi-content-pack-microsoft-dynamics-marketing/PBI_DynamMktgNewDash.png)
+   ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynammktgnewdash.png)
 
 **What Now?**
 
