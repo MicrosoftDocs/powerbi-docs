@@ -100,7 +100,7 @@ R packages are collections of R functions, data, and compiled code that are comb
 
 **Power BI Desktop** can use any type of R packages without limitation. You can install R packages for use in **Power BI Desktop** on your own (using the [RStudio IDE](https://www.rstudio.com/), for example).
 
-R visuals in the **Power BI service** are supported by the packages found in the **Supported Packages** section found in [this article](powerbi-service-r-packages-support.md). If you don't find a package you're interested in among the supported packages list, you can request the support of the package. See [R packages in the Power BI service](powerbi-service-r-packages-support.md) for information on how to request support.
+R visuals in the **Power BI service** are supported by the packages found in the **Supported Packages** section found in [this article](service-r-packages-support.md). If you don't find a package you're interested in among the supported packages list, you can request the support of the package. See [R packages in the Power BI service](service-r-packages-support.md) for information on how to request support.
 
 ### Requirements and Limitations of R packages
 There are a handful of requirements and limitations for R packages:
@@ -111,11 +111,11 @@ There are a handful of requirements and limitations for R packages:
   
   * For R visuals, you can install any package, including custom R packages
   * For Custom R visuals, only public CRAN packages are supported for auto-installation of the packages
-* For security and privacy reasons, we currently don't support R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service. Networking is blocked for such attempts. See [R packages in the Power BI service](powerbi-service-r-packages-support.md) for a list of supported and unsupported R packages.
+* For security and privacy reasons, we currently don't support R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service. Networking is blocked for such attempts. See [R packages in the Power BI service](service-r-packages-support.md) for a list of supported and unsupported R packages.
 * The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service cannot be supported.
 
 ### Supported Packages:
 For a long list of supported R packages (and the short list of unsupported packages) please see the following article:
 
-* [R packages in the Power BI service](powerbi-service-r-packages-support.md)
+* [R packages in the Power BI service](service-r-packages-support.md)
 
