@@ -50,7 +50,7 @@ and Q&A will suggest these questions to your colleagues.
 
 [Enable Q&A for your on-premises datasets](powerbi-service-q-and-a-direct-query.md)
 
-[Tutorial: Use Power BI Q&A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md):
+[Tutorial: Use Power BI Q&A with the Retail Sales sample](power-bi-visualization-introduction-to-q-and-a.md):
 Use Q&A in a realistic industry tutorial.
 
 [Make your data work well with Q&A](powerbi-service-make-your-data-work-well-with-q-and-a.md):
