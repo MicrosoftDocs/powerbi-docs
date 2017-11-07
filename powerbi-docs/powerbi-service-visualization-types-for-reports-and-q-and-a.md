@@ -49,7 +49,7 @@ For more information, see [Tutorial: Basic Area chart](power-bi-visualization-ba
 ### Cards: Single number
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_card.png)
 
-For more information, see [Create a big number tile for a dashboard](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
+For more information, see [Create a big number tile for a dashboard](power-bi-visualization-big-number.md).
 
 ### Combo charts
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/comboSmall.png)

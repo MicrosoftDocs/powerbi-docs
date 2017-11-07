@@ -51,7 +51,7 @@ If the text and visualizations on your dashboard are all the same size, your rea
 
 But be sure to provide context.  
 
-Read about [creating a tile with just a number](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
+Read about [creating a tile with just a number](power-bi-visualization-big-number.md).
 
 ### Put the most important information in the upper corner
 Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).

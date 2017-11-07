@@ -99,7 +99,7 @@ When you select a tile, what happens next depends on how the tile was created an
 ## Next steps
 [Create a big number tile from a report](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
-[Create a big number tile from Q&A](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)
+[Create a big number tile from Q&A](power-bi-visualization-big-number.md)
 
 [Dashboards in Power BI](powerbi-service-dashboards.md)  
 
