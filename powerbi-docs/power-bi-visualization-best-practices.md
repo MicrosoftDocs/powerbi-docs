@@ -22,7 +22,7 @@ ms.author: mihart
 ---
 # Best design practices for reports and visuals
 <!-- Shared newnav Include -->
-[!INCLUDE [newnavbydefault](includes/newnavbydefault.md)]
+[!INCLUDE [newnavbydefault](./includes/newnavbydefault.md)]
 
 ## Introduction
 This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report.  Many of these best practices apply to dashboard design as well.
@@ -66,7 +66,7 @@ The report canvas has a finite amount of space.  If you can’t fit all the elem
 Think about filling an art gallery. You wouldn’t put 50 pieces of artwork into a small room, fill it with chairs and paint each wall a different color. As the curator, you’d choose just pieces that have a common theme, lay them out around the room with plenty of space for visitors to move and think, and place informational cards that describes what they’re looking at. And there’s a reason most modern galleries have plain walls!
 For this article, we’ll start with a report example that needs a lot of work.  As we apply our best practices and principles of design, our report will improve.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-example1newa.png)
+![](media/power-bi-visualization-best-practices/power-bi-example1newa.png)
 
 **Figure 1:    This ugly report page needs a lot of work**
 
@@ -96,19 +96,19 @@ Alignment doesn’t mean that that the different components need to be the same 
 
 We can see in our updated report below that the report components are now aligned on the left and right edges and each report row is aligned horizontally and vertically as well. Our slicers are to the left of the visuals they impact.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-example2new.png)
+![](media/power-bi-visualization-best-practices/power-bi-example2new.png)
 
 **Figure 2:    Our ugly report example improved with layout edits**
 
 Power BI includes tools to help you align your visuals. In Power BI Desktop, with multiple visuals selected, you can use the **Align and Distribute** options on the **Visuals** ribbon tab to match up the position of visuals.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-visualization.png)
+![](media/power-bi-visualization-best-practices/power-bi-visualization.png)
 
 **Figure 3:    Align visuals in Power BI Desktop**
 
 In Power BI online and Power BI Desktop, you also have precise control over the size and position of visuals through the **General** tab on the formatting pane for all visuals:
 
-![](media/powerbi-service-visualization-best-practices/power-bi-align-vizs.png)
+![](media/power-bi-visualization-best-practices/power-bi-align-vizs.png)
 
 **Figure 4:    Set exact position for your visual**
 
@@ -122,11 +122,11 @@ By reducing the page size, individual elements become larger relative to the ove
 
 Here is a report page using page size 4:3 and then using 16:9. Notice how the layout suits 16:9 so much better. There is even enough room to remove the scrollbar from the second visual.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-page-view-before.png)
+![](media/power-bi-visualization-best-practices/power-bi-page-view-before.png)
 
 **Figure 5a:    The report at 4:3 page size**
 
-![](media/powerbi-service-visualization-best-practices/power-bi-page-view-after.png)
+![](media/power-bi-visualization-best-practices/power-bi-page-view-after.png)
 
 **Figure 5b:    The report at 16:9 page size ratio**
 
@@ -134,7 +134,7 @@ Will your report be viewed 4:3, 16:9 or another ratio? On small screens or huge 
 
 Our example report page seems a bit cramped. With no visual selected, open the formatting pane by selecting the paintroller icon. Expand **Page Size** and change **Height** to 900.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-page-size.png)
+![](media/power-bi-visualization-best-practices/power-bi-page-size.png)
 
 **Figure 6:    Increase page height**
 
@@ -147,7 +147,7 @@ The clutter you remove will increase the whitespace on your report page and give
 
 Here our example is already looking better. We’ve removed lots of clutter and added shapes to group elements together.  The background image is gone, the unnecessary arrow shape and text box are gone, one visual has been moved to another page in the report, etc. We’ve also lengthened the page size to increase white (yellow?) space.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-example3newer.png)
+![](media/power-bi-visualization-best-practices/power-bi-example3newer.png)
 
 **Figure 7:    Our ugly report example de-cluttered**
 
@@ -161,13 +161,13 @@ Sometimes the titles on visualizations aren’t enough to tell the story.  Add t
 
 In Power BI service, from the top menubar, select **Text Box**. (In Power BI Desktop, select **Text Box** from the **Insert** area of the ribbon.)
 
-![](media/powerbi-service-visualization-best-practices/power-bi-text-boxes.png)
+![](media/power-bi-visualization-best-practices/power-bi-text-boxes.png)
 
 **Figure 8:    Add a text box**
 
 Type in the empty box and then use the controls at the bottom to set font face, size, alignment, and more. Use the handles to resize the box.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-text-box-edit.png)
+![](media/power-bi-visualization-best-practices/power-bi-text-box-edit.png)
 
 **Figure 9:    Format the text box**
 
@@ -179,17 +179,17 @@ Create a text style guide and apply it to all pages of your report. Pick just a 
 #### Shapes
 Shapes too can aid navigation and comprehension. Use shapes to group related information together, highlight important data, and use arrows to direct the eye. Shapes help readers understand where to start and how to interpret your report. In design terms, this is often referred to as *contrast*.
 
-![](media/powerbi-service-visualization-best-practices/shapes.png)
+![](media/power-bi-visualization-best-practices/shapes.png)
 
 **Figure 10a:    Shapes in Power BI service**
 
-![](media/powerbi-service-visualization-best-practices/power-bi-desktop-shapes2new.png)
+![](media/power-bi-visualization-best-practices/power-bi-desktop-shapes2new.png)
 
 **Figure 10b:    Shapes in Power BI Desktop**
 
 What does our example page look like now?  Figure 11 shows a cleaner, less cluttered page with a consistent use of text faces, fonts, and colors.  Our page title in the top-left corner tells us what the page is all about.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-example4new.png)
+![](media/power-bi-visualization-best-practices/power-bi-example4new.png)
 
 **Figure 11:    Our report example with text guidelines applied and title added**
 
@@ -206,7 +206,7 @@ Use color for consistency.  We’ll talk more about color in Principles of visua
 #### Backgrounds
 When setting backgrounds for report pages, choose colors that don’t overshadow the report, clash with other colors on the page, or generally hurt the eyes. Realize that some colors have inherent meaning.  For example, in the US, red in a report is typically interpreted as “bad”.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-page-background.png)
+![](media/power-bi-visualization-best-practices/power-bi-page-background.png)
 
 **Figure 12: Set report background**
 
@@ -222,7 +222,7 @@ Here are the additional steps we took to improve the example report:
 
 When we changed the background to black, our title disappeared because the text box field only allows black font.   To fix this, add a text box title instead.  With the text box selected, erase the text and in the Visualizations tab, select **Title** and turn it On. Select the arrow to expand the **Title** options, type **Summer Olympic Games** into the **Title Text** field and select white **Font color**.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-text-box-title.png)
+![](media/power-bi-visualization-best-practices/power-bi-text-box-title.png)
 
 **Figure 13: Add a page title**
 
@@ -234,25 +234,25 @@ For the card visuals, open the formatting pane (paint roller icon) and turn **Ba
 
 Up to this point the two slicers had different formatting, which doesn't make design sense. For both slicers, change the background color to aqua.  Aqua is a good choice because it is part of the page’s color palette – you can see it in the filled map, tree map, and column chart.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-slicer-background.png)
+![](media/power-bi-visualization-best-practices/power-bi-slicer-background.png)
 
 **Figure 14: Change slicer background color**
 
 Add a thin white border.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-slicer-outline.png)
+![](media/power-bi-visualization-best-practices/power-bi-slicer-outline.png)
 
 **Figure 15: Add a border to the slicer**
 
 The grey font is hard to see against the aqua, so change the **Items** color to white.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-slicer-items.png)
+![](media/power-bi-visualization-best-practices/power-bi-slicer-items.png)
 
 **Figure 16: Change slicer font color**
 
 And, finally, under **Title**, change **Font color** to white and add a black **Background color**.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-card-formatting.png)
+![](media/power-bi-visualization-best-practices/power-bi-card-formatting.png)
 
 **Figure 17: Format slicer title**
 
@@ -260,7 +260,7 @@ And, finally, under **Title**, change **Font color** to white and add a black **
 
 The rectangle too has disappeared into the black background.  To fix this, select the shape and in the **Format shape** pane, turn **Background** On.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-shape-format.png)
+![](media/power-bi-visualization-best-practices/power-bi-shape-format.png)
 
 **Figure 18: Format the shape**
 
@@ -268,15 +268,15 @@ The rectangle too has disappeared into the black background.  To fix this, selec
 
 Add a white background to the remaining visuals on the report page. From the formatting pane, expand the **Line** option and set the **Line Color** to white and **Weight** to 3.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-background.png)
+![](media/power-bi-visualization-best-practices/power-bi-background.png)
 
 **Figure 19: Add a white background to remaining visualizations**
 
-![](media/powerbi-service-visualization-best-practices/power-bi-example5a.png)
+![](media/power-bi-visualization-best-practices/power-bi-example5a.png)
 
 **Figure 20: Report example with color best practices applied (black background)**
 
-![](media/powerbi-service-visualization-best-practices/power-bi-example5b.png)
+![](media/power-bi-visualization-best-practices/power-bi-example5b.png)
 
 **Figure 21:    Report example with color best practices applied (white background)**
  
@@ -320,13 +320,13 @@ It’s possible to build a visual that distorts the truth. There’s a website w
 
 So create visuals that don’t intentionally distort reality and that aren’t manipulated to tell the story you want them to tell.  Here is an example:
 
-![](media/powerbi-service-visualization-best-practices/corp-success-distorted.png)
+![](media/power-bi-visualization-best-practices/corp-success-distorted.png)
 
 **Figure 22:    Distorted reality chart**
 
 In this example, it appears as if there is a big difference between the 4 companies, and that CorpB is way more successful than the other 3.  But notice that the X axis doesn’t start at zero and that the differences between the companies is likely within the margin of error.  Here’s the same data with an X axis that does start at zero.
 
-![](media/powerbi-service-visualization-best-practices/corp-success.png)
+![](media/power-bi-visualization-best-practices/corp-success.png)
 
 **Figure 23:    Realistic chart**
 
@@ -348,11 +348,11 @@ In the first set of charts below, there are redundant axis labels (Jan 2014, Apr
 
 If there were particular time periods that you wanted to call out, you could draw lines or rectangles behind all the charts to help draw the eye up and down to aid comparisons.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-multiples-before.png)
+![](media/power-bi-visualization-best-practices/power-bi-multiples-before.png)
 
 **Figure 24:    Before**
 
-![](media/powerbi-service-visualization-best-practices/power-bi-multiples-after.png)
+![](media/power-bi-visualization-best-practices/power-bi-multiples-after.png)
 
 **Figure 25:    After**
 
@@ -360,7 +360,7 @@ If there were particular time periods that you wanted to call out, you could dra
 
 Select the visual to make it active and open the Formatting pane. Expand the options for the **X-axis** or **Y-axis** and drag the slider for **Title** on or off.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-axis-titles.png)
+![](media/power-bi-visualization-best-practices/power-bi-axis-titles.png)
 
 **Figure 26:    Turn axis titles on and off**
 
@@ -368,7 +368,7 @@ Select the visual to make it active and open the Formatting pane. Expand the opt
 
 Select the visual to make it active and open the Formatting pane. Next to **X-Axis** and **Y-Axis** are sliders.  Drag the slider to turn axis labels on or off.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-axis-labels.png)
+![](media/power-bi-visualization-best-practices/power-bi-axis-labels.png)
 
 **Figure 27: Turn axis labels on and off**
 
@@ -381,7 +381,7 @@ Select the visual to make it active and open the Formatting pane. Next to **X-Ax
 
 Select the visual to make it active and open the Formatting pane. Set the slider for **Title** to Off.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-title-off.png)
+![](media/power-bi-visualization-best-practices/power-bi-title-off.png)
 
 **Figure 28:    Remove titles from visuals**
 
@@ -391,7 +391,7 @@ Consider how your readers will be viewing the report and ensure your visuals and
 
 Select the visual to make it active. Grab and drag one of the handles to adjust the size.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-drag-handles.png)
+![](media/power-bi-visualization-best-practices/power-bi-drag-handles.png)
 
 **Figure 29: Resize visual**
 
@@ -399,7 +399,7 @@ Select the visual to make it active. Grab and drag one of the handles to adjust 
 
 Select the visual to make it active. Select and hold the gripper bar at the top middle of the visual and drag the visual to its new location.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-move.png)
+![](media/power-bi-visualization-best-practices/power-bi-move.png)
 
 **Figure 30: Move a visual**
 
@@ -410,13 +410,13 @@ Ensure titles and labels are readable and self-explanatory. Text in titles and l
 
 For each of the formatting adjustments listed below, select the paint roller icon to open the Formatting pane.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-paintbrush.png)
+![](media/power-bi-visualization-best-practices/power-bi-paintbrush.png)
 
 **Figure 31: Open the Formatting pane**
 
 Then select the visual element to adjust and make sure it is set to On. Examples of visual elements are: **X-Axis**, **Y-Axis**, **Title**, **Data labels**, and **Legend**. The example below shows the **Title** element.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-title-formatting.png)
+![](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
 **Figure 32: Format a visual title**
 
@@ -444,7 +444,7 @@ Text color can be adjusted for titles, axes, and data labels.
 Earlier in this paper we discussed adding text boxes to report pages. Sometimes the titles on visualizations aren’t enough to tell the story.  Add text boxes to communicate additional information to the readers of your reports.  
 To keep your report page from looking too confusing or too busy, be consistent in your use of text box fonts, sizes, colors, and alignment. To make an adjustment to the text in a text box, select the text box to reveal the formatting menu.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-text-box-edit.png)
+![](media/power-bi-visualization-best-practices/power-bi-text-box-edit.png)
 
 **Figure 33: Format the font used in a text box**
 
@@ -456,7 +456,7 @@ To sort a chart, select the ellipses (…) in the top right of the chart, select
 #### Chart interaction and interplay
 One of the most compelling feature of Power BI is the ability to edit the way charts interact with each other.  By default, charts are cross-highlighted: when you select a data point, the related data of other charts light up and the unrelated data dims. You can override this behavior to use any chart as a true filter which saves you real estate on your page. To do this, select **Visual Interactions** from the menubar.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-visual-interactions.png)
+![](media/power-bi-visualization-best-practices/power-bi-visual-interactions.png)
 
 **Figure 34: Visual interactions**
 
@@ -486,13 +486,13 @@ This topic is broken down to cover:
 
 The simplest way to use color is by changing one or more data point’s color to call attention to it. In this example, the color changes when the Olympic games moved from a 4-year cycle to a 2-year cycle of alternating Summer and Winter games.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-data-color.png)
+![](media/power-bi-visualization-best-practices/power-bi-data-color.png)
 
 **Figure 35:    Use color to tell a story**
 
 You can change data point colors from the **Data colors** tab in the formatting pane. To customize each data point individually, make sure **Show all** is set to On.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-colors.png)
+![](media/power-bi-visualization-best-practices/power-bi-colors.png)
 
 **Figure 36: Set data point colors**
 
@@ -501,13 +501,13 @@ You can change data point colors from the **Data colors** tab in the formatting 
 > 
 > 
 
-![](media/powerbi-service-visualization-best-practices/power-bi-custom-color.png)
+![](media/power-bi-visualization-best-practices/power-bi-custom-color.png)
 
 **Figure 37: Choose a custom color**
 
 In Power BI Desktop, you can even highlight outliers or a section of a line by using a second series:
 
-![](media/powerbi-service-visualization-best-practices/power-bi-outliers.png)
+![](media/power-bi-visualization-best-practices/power-bi-outliers.png)
 
 **Figure 38:    Using Desktop to plot outliers**
 
@@ -525,13 +525,13 @@ As you explore all the formatting options available to you, you’ll find many d
 
 Charts with a series typically have a categorical value in the legend. For example, each color in the legend below represents a different category of Country/Region.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-bubble-color.png)
+![](media/power-bi-visualization-best-practices/power-bi-bubble-color.png)
 
 **Figure 39: Default colors applied**
 
 The colors Power BI uses by default were chosen to provide a good color separation between categorical values so they are easy to distinguish. Sometimes people change these colors to match their corporate scheme etc. but it can lead to problems.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-bubble-color2.png)
+![](media/power-bi-visualization-best-practices/power-bi-bubble-color2.png)
 
 **Figure 40: Color applied as hues of a single color**
 
@@ -542,23 +542,23 @@ To change the default colors, open the Formatting pane, and select **Data colors
 
 For fields that do have some inherent order and numerical value, you can also color data points by the value. This can be helpful to show the spread of values across the data, and also allow for two variables to be shown on a single chart. For example this chart makes it clear that although China has the highest medal count, Japan and Thailand have participated in more Olympic games.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-saturation.png)
+![](media/power-bi-visualization-best-practices/power-bi-saturation.png)
 
 **Figure 41: Color data points by the value**
 
 To create this chart, add a value to the Color saturation field and then adjust those colors in the Formatting pane.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-saturation2.png)
+![](media/power-bi-visualization-best-practices/power-bi-saturation2.png)
 
 **Figure 42: Add a color saturation field**
 
-![](media/powerbi-service-visualization-best-practices/power-bi-color-controls.png)
+![](media/power-bi-visualization-best-practices/power-bi-color-controls.png)
 
 **Figure 43: Adjust the colors used for saturation**
 
 Color can also be used to emphasize variance around a central value. For example, coloring positive values green and negative values red. Be aware of cultural differences when assigning colors to positive or negative values; not all cultures use red for bad and green for good!
 
-![](media/powerbi-service-visualization-best-practices/power-bi-color.png)
+![](media/power-bi-visualization-best-practices/power-bi-color.png)
 
 **Figure 44:    Color to emphasize variance around central value**
  
@@ -568,13 +568,13 @@ Now let’s take the visual principles discussed above and apply them to our sam
 
 Before
 
-![](media/powerbi-service-visualization-best-practices/power-bi-example5a.png)
+![](media/power-bi-visualization-best-practices/power-bi-example5a.png)
 
 **Figure 45:    Our example report (before)**
 
 After
 
-![](media/powerbi-service-visualization-best-practices/power-bi-example6anew.png)
+![](media/power-bi-visualization-best-practices/power-bi-example6anew.png)
 
 **Figure 46: Our example report (after)**
 
@@ -591,12 +591,12 @@ After
 Power BI provides many visual types natively.  To these, add the custom visuals available from Microsoft and from the Power BI community and total visual options become too numerous to document here. But let’s look at some of the most-used native visual types.  
 
 ### Line charts
-![](media/powerbi-service-visualization-best-practices/power-bi-line-chartb.png)
+![](media/power-bi-visualization-best-practices/power-bi-line-chartb.png)
 
 Line charts are a powerful way to look at data over time.  Looking at data in tables doesn’t really take advantage of the speed in which our eyes spot peaks, valleys, cycles, and patterns.  
 The example below shows the trends in the number of medals awarded and the number of athletes winning those medals.  
 
-![](media/powerbi-service-visualization-best-practices/power-bi-line-chart.png)
+![](media/power-bi-visualization-best-practices/power-bi-line-chart.png)
 
 **Figure 47:    Line charts**
 
@@ -605,16 +605,16 @@ The example below shows the trends in the number of medals awarded and the numbe
 * If you choose to place multiple charts above and below each other like this, to make it easier to compare across series, line up the X-axis. Use filters to make sure that the same range of values is shown.  For example, if you’re looking at date ranges, ensure they are the same date ranges.  For example, 1896 to 2012 on both charts.
 * Make full use of the space.  If it makes sense for your data, set the start and end points for the Y-axis to eliminate empty space at the top and bottom of your chart and to focus in on the actual data points. To do this, select the paint roller icon to open the Formatting pane. Expand the **Y-Axis** area and set the **Start** and **End** points.
   
-  ![](media/powerbi-service-visualization-best-practices/power-bi-start-end.png)
+  ![](media/power-bi-visualization-best-practices/power-bi-start-end.png)
   
   **Figure 48: Set the start and end points**
 * Another reason to explicitly set the Start and End points is if you’re comparing two or more charts on the same page using the same Y-axis field.  For example, if you’re looking at cumulative event counts, and the United Kingdom has counts that range from 1 to 70 and Australia has counts that range from 1 to 12, the 2 line charts will display very different Y-axes (Figure x). This makes it difficult to compare at a glance. Instead, set the charts to use the same Y-axis range (Figure x).
   
-  ![](media/powerbi-service-visualization-best-practices/power-bi-line-chart2.png)
+  ![](media/power-bi-visualization-best-practices/power-bi-line-chart2.png)
   
   **Figure 49:Line charts with different y-axes**
   
-  ![](media/powerbi-service-visualization-best-practices/power-bi-line-chart3.png)
+  ![](media/power-bi-visualization-best-practices/power-bi-line-chart3.png)
   
   **Figure 50:Line charts with matching y-axes**
 
@@ -625,18 +625,18 @@ For more information, see:
 * [Line charts 101](http://www.columnfivemedia.com/data-visualization-101-line-charts)
 
 ### Bar/Column Charts
-![](media/powerbi-service-visualization-best-practices/power-bi-bar-chart.png)
+![](media/power-bi-visualization-best-practices/power-bi-bar-chart.png)
 
 If line charts are the standard for looking at data over time, bar charts are the standard for looking at a specific value across different categories.  If you sort the bars based on the number, you will instantly see the top values and distribution.  Horizontal bar charts work well with long-ish labels.  
 
-![](media/powerbi-service-visualization-best-practices/power-bi-horizontal-scroll.png)
+![](media/power-bi-visualization-best-practices/power-bi-horizontal-scroll.png)
 
 **Figure 51: Horizontal bar chart**
 
 #### Best practices
 * Display data labels for values.  This makes it easier to identify specific values. To do this, open the Formatting pane, and set **Data labels** to On.
   
-  ![](media/powerbi-service-visualization-best-practices/power-bi-data-labels.png)
+  ![](media/power-bi-visualization-best-practices/power-bi-data-labels.png)
   
   **Figure 52: Turn on data labels**
 * The bar chart above is really useful to compare one measure against many **at a single point in time**.  While the line chart above showed us the trend over time, the bar chart shows us the trend for a single category at a specific point in time.  At a glance, our bar chart shows us Spain has one of the worst unemployment rates in the world, at 25%.
@@ -645,7 +645,7 @@ If line charts are the standard for looking at data over time, bar charts are th
   One way to limit the values included is to use a filter. For example, add a Visual level filter that shows the country only if unemployment rate is above 20%.
 * Bar/Column charts can be drilled down (and back up again).  This is a great way to pack more information into a visual without taking up more real estate.  The example below has a hierarchy for Regions > Countries.  Double-clicking a region bar drills down to the countries that make up that region.  For more information on drill, see [Drill down in a visualization](powerbi-service-drill-down-in-a-visualization.md).
   
-  ![](media/powerbi-service-visualization-best-practices/power-bi-drill.png)
+  ![](media/power-bi-visualization-best-practices/power-bi-drill.png)
   
   **Figure 53: Drill down**
 
@@ -656,17 +656,17 @@ For more details on Bar and Column charts:
 * [Data Visualization Catalogue: Multi-set Bar Chart](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
 ### Stacked Bar/Column Charts
-![](media/powerbi-service-visualization-best-practices/power-bi-stacked.png)
+![](media/power-bi-visualization-best-practices/power-bi-stacked.png)
 
 Add another dimension to your bar/column charts by stacking different categories within the bar or column.  Now the chart conveys information about one overall trend (based on height/length) but also shows the influence of the categories on that trend. The chart below shows the overall growth of Top soccer team revenue above 6 billion in 2014.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-deloite.png)
+![](media/power-bi-visualization-best-practices/power-bi-deloite.png)
 
 **Figure 54: Stacked column chart**
 
 This stacked column chart shows us that total revenue is growing over time and that the Commercial and the Broadcasting categories are increasing steadily over time – contributing to overall revenue increase.  But this chart doesn’t make it easy to compare the impact each of the 3 categories has on each other. For example, how does the growth of Commercial compare to the growth of Broadcasting or Match Day?  A better choice for this data, or a companion visual for this data, would be a line chart.  
 
-![](media/powerbi-service-visualization-best-practices/power-bi-deloite2.png)
+![](media/power-bi-visualization-best-practices/power-bi-deloite2.png)
 
 **Figure 55: Convert to a line chart**
 
@@ -679,7 +679,7 @@ In this line chart it is easier to see how commercial revenue has grown the most
 * As Few noted *it is difficult to compare the segments of a stacked bar. If the segments were arranged side-by-side and all grew upwards from the same baseline, it would be easy to compare their heights, but when stacked upon one another, the task becomes hard. Plus, although it’s fairly easy to see how (revenue) changed from month to month it is quite difficult to see how (revenue) in the other (categories) changed*.  
 * 100% Stacked charts are a good choice when using percentages that add up to 100.  In the example below, we see the category distribution by team.  The percentages are relative and allows us to, at a glance, see patterns. For example,  Everton’s revenue comes primarily from Broadcasting (over 70%) while PSG only derives 20% of its revenue from Broadcasting.  The choice of a horizontal display makes it easier to fit the team labels and to see the impact of revenue type.
   
-  ![](media/powerbi-service-visualization-best-practices/power-bi-deloite3.png)
+  ![](media/power-bi-visualization-best-practices/power-bi-deloite3.png)
   
   **Figure 56: Horizontal stacked chart**
 
@@ -689,7 +689,7 @@ For more information on stacked charts:
 * [When are 100% stacked bar graphs useful?](http://www.perceptualedge.com/blog/?p=2239)
 
 ### Combo Bar/Column Charts
-![](media/powerbi-service-visualization-best-practices/power-bi-combo.png)
+![](media/power-bi-visualization-best-practices/power-bi-combo.png)
 
 In Power BI, you can combine column and line charts into a combo chart. The choices are: Line and Stacked Column chart and Line and Clustered Column chart. Save valuable canvas space by combining two separate visuals into one.
 
@@ -697,11 +697,11 @@ The two screenshots below show a before and after.  The first page has two separ
 
 The new report page has a single visual: a line and stacked column chart. We could’ve just as easily created a line and clustered column chart.  It’s now easier to look for a relationship between the two  trends.   We can see that up until 2008, population and GDP followed a similar trend. But starting in 2009, as population growth flattened, GDP was more volatile.  
 
-![](media/powerbi-service-visualization-best-practices/power-bi-spain-line.png)
+![](media/power-bi-visualization-best-practices/power-bi-spain-line.png)
 
  **Figure 57: As two separate charts**
 
-![](media/powerbi-service-visualization-best-practices/power-bi-spain-combo.png)
+![](media/power-bi-visualization-best-practices/power-bi-spain-combo.png)
 
  **Figure 58: As a single combo chart**
 
@@ -710,7 +710,7 @@ Combo charts work best when both visuals have at least one axis in common.
 
 Watch your axes! Is your Combo chart easy to read and interpret?  Or does it use dissimilar ranges and values? For example, if the scale of the column chart’s Y-Axis is much smaller than the scale of the line chart’s Y-Axis, your combo chart won’t be meaningful.  For example, notice the third line (aqua color) way down at the bottom.
 
-   ![](media/powerbi-service-visualization-best-practices/power-bi-dual-line.png)
+   ![](media/power-bi-visualization-best-practices/power-bi-dual-line.png)
 
    **Figure 59: An unsuccessful line chart**
 
@@ -718,11 +718,11 @@ So too, your combo chart won’t be meaningful if your column chart and line cha
 
 To do this, open the Formatting pane, expand **Y-Axis** and set **Show Secondary** to On (if it isn’t already on). This setting is sometimes difficult to find; expand **Y-Axis (Column)** and scroll down until you see **Show secondary**. Also, set the Y-Axis (Column) **Title** to On and set the Y-Axis (Line) **Title** to On.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-show-secondary-new.png)
+![](media/power-bi-visualization-best-practices/power-bi-show-secondary-new.png)
 
 **Figure 60: Show secondary axis**
 
-![](media/powerbi-service-visualization-best-practices/power-bi-combo-chart.png)
+![](media/power-bi-visualization-best-practices/power-bi-combo-chart.png)
 
 **Figure 61: Create a combo chart instead**
 
@@ -734,7 +734,7 @@ For more information:
 * [The danger of dual-scaled Axes in visuals](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf)
 
 ### Scatter Chart
-![](media/powerbi-service-visualization-best-practices/power-bi-scatter.png)
+![](media/power-bi-visualization-best-practices/power-bi-scatter.png)
 
 Sometimes we have many variables that we want to see together, and a scatter chart can be a very useful way to get an overall picture.  Scatter charts display relationships between 2 (Scatter) or 3 (Bubble) quantitative measures.  A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
@@ -742,7 +742,7 @@ A bubble chart replaces the data points with bubbles, with the bubble size repre
 
 The bubble chart below looks at South America and compares GDP per capita (Y-Axis) sum of GDP (X-Axis) and population by South American country.  The size of the bubbles represents total population for that country. Brazil has the largest population (bubble size) and the largest share of South America’s GDP (it is farthest along on the X-Axis).  But notice that GDP per capita for Uruguay, Chile, and  Argentina is higher than Brazil (farther up on the Y-Axis).
 
-![](media/powerbi-service-visualization-best-practices/power-bi-bubble.png)
+![](media/power-bi-visualization-best-practices/power-bi-bubble.png)
 
 **Figure 62: South America GDP and population as a bubble chart**
 
@@ -756,7 +756,7 @@ If you add a play axis, you can pretend you are Hans Rosling and tell the story 
 * Did you create a scatter chart and see only one data point that aggregates all the values on the X and Y axes? Or, your chart aggregates all the values along a single horizontal or vertical line?  To fix this, add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot. For help, refer to the [Power BI scatter and bubble chart tutorial](powerbi-service-tutorial-scatter.md).
 
 ### Tree Map Charts
-![](media/powerbi-service-visualization-best-practices/power-bi-treemap.png)
+![](media/power-bi-visualization-best-practices/power-bi-treemap.png)
 
 Tree maps can be very useful for giving a good overview of the relative size of different components that make up a whole -- especially when you can group them by categories.  Any time I try to understand a new business, having a tree map of the main components can be very useful in knowing the overall distribution.
 
@@ -768,13 +768,13 @@ The main limitation of a tree map is the limited ability to compare the differen
  
 For example, the first tree map gives a broad indication of the order of the GDP size, but it’s hard to identify specific differences between countries, particularly the smaller unlabeled boxes. For this data, where a single grouping is compared, a bar or column chart might be a better choice.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-treemap3.png)
+![](media/power-bi-visualization-best-practices/power-bi-treemap3.png)
 
 **Figure 63: South America GDP comparison as a tree map**
 
 Here we’ve added another level of data, region, and we can see the overall contribution to GDP by regions, as well as the relative impact within the regions. Beware that doing this with non-summative measure (such as averages) that the sum of the details might not represent the actual value at the aggregate level.
 
-![](media/powerbi-service-visualization-best-practices/power-bi-treemap2.png)
+![](media/power-bi-visualization-best-practices/power-bi-treemap2.png)
 
 **Figure 64: GDP by region and country as a tree map**
 
@@ -785,7 +785,7 @@ For more information on tree maps, feel free to click on links below.
 
 ### Other charts
 #### Pie or Donut Charts
-![](media/powerbi-service-visualization-best-practices/power-bi-donut.png)
+![](media/power-bi-visualization-best-practices/power-bi-donut.png)
 
 In general, bar/column/line charts will serve most purposes. It’s well understood that pie and donut charts are difficult for humans to interpret correctly, and in fact can often distort data. Avoid them where possible. Stephen Few has an excellent write up on the history and dangers in [Save the Pies for Dessert]([www.percetualedge.com/articles/08-21-07.pdf](http://www.perceptualedge.com/articles/08-21-07.pdf)
 
@@ -796,13 +796,13 @@ Another fun article (and animation) about pie charts can be found on the [Darkho
 Or read an opposing point of view, [Why Tufte is flat-out wrong about pie charts](http://speakingppt.com/2013/03/18/why-tufte-is-flat-out-wrong-about-pie-charts/)
 
 #### Radial Gauges & KPIs
-![](media/powerbi-service-visualization-best-practices/power-bi-gauge.png)
+![](media/power-bi-visualization-best-practices/power-bi-gauge.png)
 
 Radial gauges seem like a good visual for indicating performance against a target, and they are very popular in executive dashboards. However, they suffer in two main ways. As with pie charts, it’s difficult to interpret the angle of the shaded area compared to the full 180 degree arc or target line. It also uses a lot of space to show a single metric.
 
 A good alternative is a simple KPI visual
 
-![](media/powerbi-service-visualization-best-practices/power-bi-kpi.png)
+![](media/power-bi-visualization-best-practices/power-bi-kpi.png)
 
 KPIs show the value, status, goal, variance from the goal and trend in the same amount of space. The green coloring turns red if the target isn’t being met and can be yellow if some intermediate target is hit. It’s much simpler to read and interpret than the gauge.
 

@@ -26,7 +26,7 @@ Now that you've created a dashboard and added some tiles, think about how to mak
 Here are a few tips.
 
 > [!TIP]
-> Many of the design principles for reports apply to dashboards as well.  Read our whitepaper [Best design principles for reports and visualizations](powerbi-service-visualization-best-practices.md).
+> Many of the design principles for reports apply to dashboards as well.  Read our whitepaper [Best design principles for reports and visualizations](power-bi-visualization-best-practices.md).
 > 
 > 
 

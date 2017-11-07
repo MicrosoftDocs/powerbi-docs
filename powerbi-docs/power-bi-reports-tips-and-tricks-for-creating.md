@@ -23,7 +23,7 @@ ms.author: mihart
 # Tips for creating stunning reports
 Creating and working with reports in Power BI service and in Power BI Desktop is very similar, so most of these links apply to either.
 
-## Read the whitepaper: [Principles for designing Power BI reports](powerbi-service-visualization-best-practices.md)
+## Read the whitepaper: [Principles for designing Power BI reports](power-bi-visualization-best-practices.md)
 This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report. Many of these best practices apply to dashboard design as well.
 
 ![](media/power-bi-reports-tips-and-tricks-for-creating/power-bi-example.png)
