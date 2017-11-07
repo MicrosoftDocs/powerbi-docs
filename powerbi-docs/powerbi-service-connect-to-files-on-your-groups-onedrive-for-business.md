@@ -50,7 +50,7 @@ Adding files to your app workspace is a two-step process:
 ## 2 Import Excel files as datasets or as Excel Online workbooks
 Now that your files are in the OneDrive for Business for your app workspace, you have a choice. You can: 
 
-* [Import the data from the Excel workbook as a dataset](powerbi-service-get-data-from-files.md), and use the data to build reports and dashboards you can view in a web browser and on mobile devices.
+* [Import the data from the Excel workbook as a dataset](service-get-data-from-files.md), and use the data to build reports and dashboards you can view in a web browser and on mobile devices.
 * Or [connect to a whole Excel workbook in Power BI](service-excel-workbook-files.md) and display it exactly as it appears in Excel Online.
 
 ### Import or connect to the files in your app workspace
@@ -66,7 +66,7 @@ Now that your files are in the OneDrive for Business for your app workspace, you
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Select the file you want > **Connect**.
    
-    This is the point where you decide whether to [import the data from the Excel workbook](powerbi-service-get-data-from-files.md), or [connect to the whole Excel workbooks](service-excel-workbook-files.md).
+    This is the point where you decide whether to [import the data from the Excel workbook](service-get-data-from-files.md), or [connect to the whole Excel workbooks](service-excel-workbook-files.md).
 6. Select **Import** or **Connect**.
    
     ![](media/powerbi-service-connect-to-files-on-your-groups-onedrive-for-business/PBI_ImportExcelDataOrWholeCrop.png)
@@ -80,7 +80,7 @@ Now that your files are in the OneDrive for Business for your app workspace, you
 
 ## Next steps
 * [Create apps and app workspaces in Power BI](powerbi-service-create-apps.md)
-* [Import data from Excel workbooks](powerbi-service-get-data-from-files.md)
+* [Import data from Excel workbooks](service-get-data-from-files.md)
 * [Connect to whole Excel workbooks](service-excel-workbook-files.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)

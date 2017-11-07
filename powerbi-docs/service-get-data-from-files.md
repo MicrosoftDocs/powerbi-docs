@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Get data from files
-![](media/powerbi-service-get-data-from-files/file_icons.png)
+![](media/service-get-data-from-files/file_icons.png)
 
 In Power BI, you can connect to or import data and reports from three types of files.
 
