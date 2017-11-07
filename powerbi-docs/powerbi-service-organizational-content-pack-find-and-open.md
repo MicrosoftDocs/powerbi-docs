@@ -28,7 +28,7 @@ ms.author: maggies
 
 When anyone publishes an organizational content pack to your organization, to distribution or security groups, or to [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9) that you belong to, it appears in AppSource.  Browse or search AppSource to find and open organizational content packs.
 
-Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md) to decide on the best option for your situation.
+Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation.
 
 ## Find an organizational content pack
 [Power BI Pro](https://powerbi.microsoft.com/pricing) users can all go to AppSource, which displays content packs shared to their entire organization, to distribution or security groups, and to Office 365 groups they belong to.  

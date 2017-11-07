@@ -87,7 +87,7 @@ Read more about [creating slicers in the Power BI service](guided-learning/visua
 ## Publish a phone report
 * To publish the phone version of a report, you [publish the main report from Power BI Desktop to the Power BI service](powerbi-desktop-upload-desktop-files.md), and the phone version publishes at the same time.
   
-    Read more about [sharing and permissions in Power BI](powerbi-service-how-should-i-share-my-dashboard.md).
+    Read more about [sharing and permissions in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ## View optimized and unoptimized reports on a phone
 In the mobile apps on phones, Power BI automatically detects optimized and unoptimized phone reports. If a phone-optimized report exists, the Power BI phone app automatically opens the report in phone report mode.

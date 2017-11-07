@@ -22,7 +22,7 @@ ms.author: maggies
 
 ---
 # Share your Power BI dashboards with coworkers and others
-*Sharing* is a good way to give a few people access to your dashboards and reports. Power BI offers [several ways to collaborate and distribute your dashboards](powerbi-service-how-should-i-share-my-dashboard.md), and sharing is just one.
+*Sharing* is a good way to give a few people access to your dashboards and reports. Power BI offers [several ways to collaborate and distribute your dashboards](service-how-to-collaborate-distribute-dashboards-reports.md), and sharing is just one.
 
 ![Share icon in a list of dashboards](media/powerbi-service-share-unshare-dashboard/power-bi-share-dash.png)
 
@@ -117,7 +117,7 @@ Things to keep in mind about sharing dashboards:
 
 ## Next steps
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
-* [How should I collaborate on and share dashboards and reports?](powerbi-service-how-should-i-share-my-dashboard.md)
+* [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a report](powerbi-service-share-report.md)
 * Questions? [Try the Power BI Community](http://community.powerbi.com/).
 
