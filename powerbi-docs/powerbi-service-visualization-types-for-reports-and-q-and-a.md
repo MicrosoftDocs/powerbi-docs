@@ -70,7 +70,7 @@ For more information, see [Tutorial: Doughnut charts in Power BI](power-bi-visua
 
 **Tip**: Funnels help visualize a process that has stages and items flow sequentially from one stage to the next.  Use a funnel when there is a sequential flow between stages, such as a sales process that starts with leads and ends with purchase fulfillment.
 
-For more information, see [Tutorial: Funnel Charts in Power BI](powerbi-service-tutorial-funnel-charts.md).
+For more information, see [Tutorial: Funnel Charts in Power BI](power-bi-visualization-funnel-charts.md).
 
 ### Gauge charts
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/gauge_m.PNG)

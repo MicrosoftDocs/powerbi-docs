@@ -26,7 +26,7 @@ A funnel chart helps you visualize a linear process that has sequential connecte
 
 Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
 
-![](media/powerbi-service-tutorial-funnel-charts/funnelplain.png)
+![](media/power-bi-visualization-funnel-charts/funnelplain.png)
 
 ## When to use a funnel chart
 Funnel charts are a great choice:
@@ -60,11 +60,11 @@ These instructions use the Opportunity Analysis Sample. To follow along, [downlo
 
 1. Start on a [blank report page ](power-bi-report-add-page.md)in [Editing View](powerbi-service-interact-with-a-report-in-editing-view.md) and select the **SalesStage** \> **Sales Stage** field.  
    
-    ![](media/powerbi-service-tutorial-funnel-charts/FunnelSelectField_new.png)
+    ![](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Convert the chart](power-bi-report-change-visualization-type.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
 3. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
    
-    ![](media/powerbi-service-tutorial-funnel-charts/funnelFinal_new.png)
+    ![](media/power-bi-visualization-funnel-charts/funnelfinal_new.png)
 4. Hovering over a bar displays a wealth of information.
    
    * The name of the stage
@@ -72,7 +72,7 @@ These instructions use the Opportunity Analysis Sample. To follow along, [downlo
    * Overall conversion rate (% of Lead) 
    * Stage-to-stage (aka Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
      
-     ![](media/powerbi-service-tutorial-funnel-charts/funnelHover_new.png)
+     ![](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
 5. [Add the Funnel as a dashboard tile](powerbi-service-dashboard-tiles.md). 
 6. [Save the report](powerbi-service-save-a-report.md).
 
@@ -83,7 +83,7 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
 
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
    
-   ![](media/powerbi-service-tutorial-funnel-charts/FunnelChartNoOwl.gif)
+   ![](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
 2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](powerbi-service-visual-interactions.md)
 
 ## Create a funnel chart in Q&A
@@ -92,7 +92,7 @@ Highlight the dashboard that has at least one visualization pinned from the "Opp
 1. Highlight a dashboard that has at least one tile pinned from the Opportunity Tracking dataset.
 2. Begin typing your question in the Q&A question box.
    
-   ![](media/powerbi-service-tutorial-funnel-charts/funnelFromQnA_new.png)
+   ![](media/power-bi-visualization-funnel-charts/funnelfromqna_new.png)
    
    Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
 
