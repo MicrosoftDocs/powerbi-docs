@@ -33,7 +33,7 @@ It's important to note that **Power BI US Government** is only available as a **
 The following features are available to **Power BI US Government** customers, as they apply to **Pro** license functionality:
 
 * Create and view dashboards and reports
-* [Data capacity limits](powerbi-admin-manage-your-data-storage-in-power-bi.md)
+* [Data capacity limits](service-admin-manage-your-data-storage-in-power-bi.md)
 * [Scheduled data refresh](powerbi-refresh-data.md)
 * Refreshable team dashboards
 * Active Directory groups for sharing and managing access control
