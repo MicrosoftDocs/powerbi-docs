@@ -73,7 +73,7 @@ Select the paint roller icon to display the Format pane. The option available de
 The formatting possibilities are almost endless.  To learn more, explore on your own, or visit these articles:
 
 * [Customizing  visualization title, background and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
-* [Color formatting](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
+* [Color formatting](service-getting-started-with-color-formatting-and-axis-properties.md)
 * [Customizing X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
 
 ### Add analytics to your visualizations

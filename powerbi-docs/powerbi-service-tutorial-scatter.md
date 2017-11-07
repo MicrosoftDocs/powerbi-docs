@@ -66,7 +66,7 @@ We now have a scatter chart that plots Total Sales Variance % along the Y axis, 
 2. Hover over a bubble.  The size of the bubble reflects the value of **This Year Sales**.
    
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_hover.png)
-3. Optionally, [format the visualization colors, labels, titles, background, and more](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md).
+3. Optionally, [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md).
 
 ## Considerations and Troubleshooting
 ### **Your scatter chart has only one data point**

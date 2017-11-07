@@ -24,14 +24,14 @@ ms.author: davidi
 In **Power BI**, you can change the color of data series, data points, and even the background of visualizations. You can also change how the x-axis and y-axis are presented, providing you with full control of how your dashboards and reports appear.
 
 To get started, select a **Report** from the **My Workspace** pane. Then from the top menu area, select **Edit Report**.  
-![](media/powerbi-service-getting-started-with-color-formatting-and-axis-properties/GettingStartedColor_1a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
 
 When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears which lets you add or change visualizations. Directly below the available visualizations are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a roller brush), and the **Analytics** icon (a magnifying glass). In the image below the **Fields** icon is selected, indicated by a yellow bar below the icon.
 
-![](media/powerbi-service-getting-started-with-color-formatting-and-axis-properties/GettingStartedColor_2a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_2a.png)
 
 When you select **Format**, the area below the icon displays the color and axis customizations available for the currently selected visualization.  
-![](media/powerbi-service-getting-started-with-color-formatting-and-axis-properties/GettingStartedColor_3a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_3a.png)
 
 You can customize many elements of each visualization:
 
@@ -63,23 +63,23 @@ Let’s walk through the steps necessary to customize colors on a chart.
 2. Next, I choose the **Format** icon to show the available customizations.
 3. Then I select the small down arrow to the left of the **Data Colors** customization. This will show how I can customize the Data Colors, with options that are specific to the visualization I’ve selected.
 4. **Data Colors** expands downward to show its available customizations.  
-   ![](media/powerbi-service-getting-started-with-color-formatting-and-axis-properties/GettingStartedColor_4a.png)
+   ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_4a.png)
 
 Let’s make some changes. I can select the down arrow next to the color to make changes on each available data series. I’ll make **Cost of living** yellow, **Weather** I’ll turn orange, and **Community well-being** will be green. The following screen shows me at the last step, changing **Cost of living**.  
 
-![](media/powerbi-service-getting-started-with-color-formatting-and-axis-properties/GettingStartedColor_5a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_5a.png)
 
 The changes are shown in the image below. Wow, that’s a bright chart. Here are a few useful elements to note about working with colors. The numbers in the following list are also shown on the following screen, indicating where these useful elements can be accessed or changed.
 
 1. Don’t like the colors? No problem, just select **Revert to default** and your selection reverts to the default settings. You can do that for one color, or for the entire visualization.
 2. Want a color you don’t see in the palette? Just select **Custom color**, and choose from the spectrum.  
-   ![](media/powerbi-service-getting-started-with-color-formatting-and-axis-properties/GettingStartedColor_6a.png)
+   ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_6a.png)
 
 Not crazy about the change you just made? Use **CTRL+Z** to undo , just like you’re used to doing.
 
 ## Changing Axis Properties
 It’s often useful to modify the X-Axis or the Y-Axis. Similar to working with colors, you can modify an axis by selecting the down-arrow icon to the left of the axis you want to change, as shown in the following image.  
-![](media/powerbi-service-getting-started-with-color-formatting-and-axis-properties/GettingStartedColor_7a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_7a.png)
 
 If you want to collapse the **X-Axis** options, just select the up arrow icon beside **X-Axis**.
 

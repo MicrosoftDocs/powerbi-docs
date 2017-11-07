@@ -133,7 +133,7 @@ More about [Visualizations in Power BI reports](powerbi-service-visualizations-f
 
 [Customize t](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)[itles, backgrounds, and legends](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 
-[Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
+[Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
 
