@@ -117,14 +117,14 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## Next steps
 [Data refresh in Power BI](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
 [On-premises Data Gateway](powerbi-gateway-onprem.md)  
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+[Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

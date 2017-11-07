@@ -68,6 +68,6 @@ If you are still having an issue, please [contact support](https://support.power
 
 ## See also
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+[Troubleshooting Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -80,7 +80,7 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 
 [Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -90,11 +90,11 @@ This will occur if you have a single row greater than 4 MB in size. You will nee
 
 **Sign in error when entering credentials for a datasource** - If you get an error similar to this when entering Windows credentials for a data source, you might still be on an older version of the personal gateway. [Install the latest version of Power BI Gateway - Personal](https://powerbi.microsoft.com/gateway/).
 
-  ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/PBI_PG_CredentialsError.jpg.png)
+  ![](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
 
 **Error: Sign in error when selecting Windows authentication for a data source using ACE OLEDB** - If you get the following error when entering data source credentials for a data source using ACE OLEDB provider:
 
-![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/ACEOLEDBerror.png)
+![](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
 
 Power BI does not currently support Windows authentication for a data source using ACE OLEDB provider.
 
@@ -110,30 +110,30 @@ If you are receiving an error with dashboard tiles refreshing, please refer to t
 **Refresh History** can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the **Refresh History**.
 
 1. In the Power BI navigation pane, in **Datasets**, select a dataset &gt; Open Menu &gt; **Schedule Refresh**.
-   ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Scheduled-Refresh.png)
+   ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 2. In **Settings for...** &gt; **Schedule Refresh**, select **Refresh History**.  
-   ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Scheduled-Refresh-2.png)
+   ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh-2.png)
    
-   ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Refresh-History.png)
+   ![](media/service-admin-troubleshooting-power-bi-personal-gateway/refresh-history.png)
 
 ### Event Logs
 There are several event logs that can provide information. The first two, **Data Management Gateway** and **PowerBIGateway**, are present if you are an admin on the machine.  If you are not an admin, and you are using the Personal Gateway, you will see the log entries within the **Application** log.
 
 The **Data Management Gateway** and **PowerBIGateway** logs are present under **Application and Services Logs**.
 
-![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Event-Logs.png)
+![](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### Fiddler Trace
 [Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
 
-![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Fiddler.png)
+![](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
 <a name="SetupLogs">
 
 ### Setup Logs
 If the **Personal Gateway**, fails to install, you will see a link to show the setup log. This could show you details about the failure. These are Windows Install logs, or also knows as MSI logs. They can be fairly complex and hard to read. Typically the resulting error will be at the bottom, but determining the cause of the error is not trivial. It could be a result of errors in a different log, or be a result of an error higher up in the log.
 
-![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Log.png)
+![](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-log.png)
 
 Alternatively, you can go to your **Temp folder** (%temp%) and look for files that start with **Power\_BI\_**.
 
@@ -142,7 +142,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 > 
 > 
 
-![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Logs2.png)
+![](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-logs2.png)
 
 ## See Also
 [Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
