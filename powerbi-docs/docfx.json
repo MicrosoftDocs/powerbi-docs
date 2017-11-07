@@ -20,11 +20,13 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/includes/media/**"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/*.md"
         ]
       }
     ],
@@ -32,7 +34,12 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/power-bi/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-MSPowerBI",
+      "contributors_to_exclude": ["openpublishingbuild","sudeepku"],      
+      "searchScope": ["Power-BI"],
+      "titleSuffix": "Power BI"
+
     },
     "fileMetadata": {},
     "template": [],
