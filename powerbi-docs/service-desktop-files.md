@@ -21,7 +21,7 @@ ms.author: davidi
 
 ---
 # Get data from Power BI Desktop files
-![](media/powerbi-service-powerbi-desktop-files/pbid_file_icon.png)
+![](media/service-desktop-files/pbid_file_icon.png)
 
 **Power BI Desktop** makes business intelligence and reporting easy. Whether you're connecting to a many different data sources, querying and transforming data, modeling your data, and creating powerful and dynamic reports, **Power BI Desktop** makes business intelligence tasks intuitive and fast. If you're not familiar with **Power BI Desktop**, check out [Getting started with Power BI Desktop](powerbi-desktop-getting-started.md).
 
@@ -41,25 +41,25 @@ Once you bring data into **Power BI Desktop** and create a few reports, it’s t
 
 1. In Power BI, in the navigator pane, click ** Get Data**.
    
-   ![](media/powerbi-service-powerbi-desktop-files/pbid_get_data_button.png)
+   ![](media/service-desktop-files/pbid_get_data_button.png)
 2. In **Files**, click **Get**.
    
-   ![](media/powerbi-service-powerbi-desktop-files/pbid_files_get.png)
+   ![](media/service-desktop-files/pbid_files_get.png)
 3. Find your file. Power BI Desktop files have a .PBIX extension.
    
-   ![](media/powerbi-service-powerbi-desktop-files/pbid_find_your_file.png)
+   ![](media/service-desktop-files/pbid_find_your_file.png)
 
 ## Publish a file from Power BI Desktop to your Power BI site
 Using Publish from Power BI Desktop is effectively the same as using Get Data in Power BI to import your file from a local drive or connecting to it on OneDrive.  Here’s the quick how to, but you can see [Publish from Power BI Desktop](powerbi-desktop-upload-desktop-files.md) to learn more.
 
 1. In Power BI Desktop, click **File** > **Publish** > **Publish to Power BI**, or click **Publish** on the ribbon.
    
-   ![](media/powerbi-service-powerbi-desktop-files/pbid_publish.png)
+   ![](media/service-desktop-files/pbid_publish.png)
 2. Sign in to Power BI. You'll only need to do this the first time.
    
    When complete, you'll get a link to open your report in your Power BI site.
    
-   ![](media/powerbi-service-powerbi-desktop-files/pbid_publishing.png)
+   ![](media/service-desktop-files/pbid_publishing.png)
 
 ## What's next
 **Explore your data** - Once you get data and reports from your file into Power BI, it's time to explore. If your file already has reports in it, they'll appear in the navigator pane in **Reports**. If your file just had data, you can create new reports; just right-click the new dataset and then click **Explore**.
