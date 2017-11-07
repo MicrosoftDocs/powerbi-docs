@@ -53,7 +53,7 @@ At the bottom of the left navigation pane, select **Get Data**. On the Get Data 
 
 On the Files page, select **Local File**. Navigate to the Excel workbook file on your computer and select it to load into Power BI. Select **Import**.
 
-> **NOTE**: To follow along with the rest of this tutorial, use the [Financial sample workbook](powerbi-sample-download-the-financial-sample-workbook.md).
+> **NOTE**: To follow along with the rest of this tutorial, use the [Financial sample workbook](sample-financial-download.md).
 > 
 > 
 

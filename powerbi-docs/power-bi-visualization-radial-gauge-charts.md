@@ -44,7 +44,7 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ### Step 1: Open the Financial Sample Excel file.
-1. [Download the sample Financial Excel file](powerbi-sample-download-the-financial-sample-workbook.md).
+1. [Download the sample Financial Excel file](sample-financial-download.md).
 2. Open the file in Power BI by selecting **Get Data \> Files** and browsing to the location where you saved the file. Select **Import**. The Financial Sample is added to your workspace as a dataset.
 3. Select **Financial Sample** to open it in Explore mode.
 
