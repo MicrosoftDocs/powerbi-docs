@@ -25,7 +25,7 @@ ms.author: mihart
 Reading View is a great way to explore the data in a Power BI report, without worrying that you'll break something.  You can browse the report, interact with the visualizations, and pin any of the visualizations to your dashboard. 
 
 > [!NOTE]
-> To edit the report and save your changes, [open it in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
+> To edit the report and save your changes, [open it in Editing View](service-reading-view-and-editing-view.md).
 > 
 > 
 

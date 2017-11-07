@@ -41,7 +41,7 @@ Watch Will export the data from one of the visualizations in his report, save it
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## From a visualization in a report
-To follow along, open the [Procurement analysis sample report](sample-procurement.md) in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md). [Add a new blank report page](power-bi-report-add-page.md). Then follow the steps below to add an aggregation and a visualization-level filter.
+To follow along, open the [Procurement analysis sample report](sample-procurement.md) in [Editing view](service-reading-view-and-editing-view.md). [Add a new blank report page](power-bi-report-add-page.md). Then follow the steps below to add an aggregation and a visualization-level filter.
 
 1. Create a new column chart.  From the Fields pane, select **Location > City** and **Invoice > Discount Percent**.   
    

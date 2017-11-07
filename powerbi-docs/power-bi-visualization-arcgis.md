@@ -63,7 +63,7 @@ This tutorial uses the [Retail Analysis sample](sample-retail-analysis.md). To e
 2. Select the **ArcGIS Maps for Power BI** checkbox. You'll need to restart Power BI after you make the selection.
    
     ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
-3. Open a report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md) and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
+3. Open a report in [Editing view](service-reading-view-and-editing-view.md) and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
    
     ![](media/power-bi-visualization-arcgis/power-bi-viz-pane2.png)
 4. Power BI adds an empty ArcGIS map template to the report canvas.

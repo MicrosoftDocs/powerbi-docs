@@ -95,7 +95,7 @@ Reports are viewed on many different devices, with varying screen sizes and aspe
 ## Next steps
 [Reports in Power BI](powerbi-service-reports.md)
 
-[Open Editing view](powerbi-service-go-from-reading-view-to-editing-view.md)
+[Open Editing view](service-reading-view-and-editing-view.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -30,7 +30,7 @@ There are a few limitations and considerations to keep in mind, which are discus
 ## Download the report as a .pbix
 To download the .pbix file, follow these steps:
 
-1. In **Power BI service**, open the report you want to download in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
+1. In **Power BI service**, open the report you want to download in [Editing view](service-reading-view-and-editing-view.md).
 2. From the menubar, select **File > Download report**.
    
    > [!NOTE]

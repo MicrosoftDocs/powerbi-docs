@@ -49,7 +49,7 @@ There are 2 ways to do this:
 * by identifying a field that is not already being used by the visualization, and adding that field directly to the **Visual level filters** bucket.
 
 ### By filtering the fields already in the visualization
-1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
+1. Open your [report in Editing View](service-reading-view-and-editing-view.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
@@ -82,7 +82,7 @@ There are 2 ways to do this:
      ![](media/power-bi-report-add-filter/power-bi-filtered-andrew.png)
 
 ## Add a filter to an entire page (aka page view filter)
-1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
+1. Open your [report in Editing View](service-reading-view-and-editing-view.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new page level filter, and drag it into the **Page level filters** area.  
 4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls (see [How to use report filters](power-bi-how-to-report-filter.md)).
@@ -121,7 +121,7 @@ Let's see how the drillthrough filter works.
     ![](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
 ## Add a filter to an entire report (aka Report filter)
-1. Open your [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md).
+1. Open your [report in Editing View](service-reading-view-and-editing-view.md).
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new report level filter, and drag it into the **Report level filters** area.  
 4. Select the values you want to filter (see [How to use report filters](power-bi-how-to-report-filter.md)).

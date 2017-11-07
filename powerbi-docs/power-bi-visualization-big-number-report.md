@@ -26,7 +26,7 @@ Sometimes a single number is the most important thing you want to track in your 
 1. Create a [dashboard](service-dashboards.md) and [get data](service-get-data.md).
    
    If you want data to practice on, [download the Retail Analysis sample](sample-retail-analysis.md). 
-2. Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
+2. Open the report in [Editing view](service-reading-view-and-editing-view.md).
 3. In the report, find a page with some blank space, or [add a new page to the report](power-bi-report-add-page.md).
 4. In the Fields list, select the number field you want to display.
    

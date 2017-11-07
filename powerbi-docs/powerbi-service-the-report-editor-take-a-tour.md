@@ -26,7 +26,7 @@ The report editor in Power BI service and the report editor in Power BI Desktop 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-In Power BI service, the *report editor* is only available in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). To open a report in Editing view, you must be a report owner.
+In Power BI service, the *report editor* is only available in [Editing View](service-reading-view-and-editing-view.md). To open a report in Editing view, you must be a report owner.
 
 The Power BI report editor is made up of 3 sections:  
 

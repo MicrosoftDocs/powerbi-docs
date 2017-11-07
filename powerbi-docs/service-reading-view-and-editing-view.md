@@ -25,12 +25,12 @@ In Editing View in Power BI (compared to [Reading View](service-interact-with-a-
 
 1. In Reading View, select **Edit Report**. 
    
-   ![](media/powerbi-service-go-from-reading-view-to-editing-view/EditReportnew.png)
+   ![](media/service-reading-view-and-editing-view/editreportnew.png)
    
    The report is now in Editing View and uses the same [display settings](power-bi-report-display-settings.md) you last used in Reading View.
 2. To return to **Reading View**, select Reading View from the top navigation bar.
    
-    ![](media/powerbi-service-go-from-reading-view-to-editing-view/ReadingViewReturnnew.png)
+    ![](media/service-reading-view-and-editing-view/readingviewreturnnew.png)
 
 There are so many ways to [edit your report](service-interact-with-a-report-in-editing-view.md), slicing and dicing your data to discover insights and get answers to questions.  The next topic, [Interact with a report in Editing View](service-interact-with-a-report-in-editing-view.md), lists and describes these in detail.
 

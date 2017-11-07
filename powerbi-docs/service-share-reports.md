@@ -39,7 +39,7 @@ You can share a report with coworkers in the same email domain as you, from your
 ## Share a filtered version of a report
 What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. You do this by creating a custom URL.
 
-1. Open the report in [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md), apply the filter, and save the report.
+1. Open the report in [Editing view](service-reading-view-and-editing-view.md), apply the filter, and save the report.
    
    In this example we're filtering the [Retail Analysis sample](sample-tutorial-connect-to-the-samples.md) to show only values where **Territory** equals **NC**.
    

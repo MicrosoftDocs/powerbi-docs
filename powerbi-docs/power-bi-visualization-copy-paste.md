@@ -21,7 +21,7 @@ ms.author: mihart
 
 ---
 # Copy and paste a visualization in Power BI
-1. In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) and [create a visualization](power-bi-report-add-visualizations-i.md) if your report doesn't already have one. 
+1. In Power BI, open a report in [Editing View](service-reading-view-and-editing-view.md) and [create a visualization](power-bi-report-add-visualizations-i.md) if your report doesn't already have one. 
 2. Select the visualization and use **Ctrl +C** to copy, and **Ctrl +V** to paste.  
    ![](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
 

@@ -50,7 +50,7 @@ There are 2 different way to drill down (and up) in your visualization.  Both ar
 ## Method 1 for drill down
 This method uses the drill icons that appear in the top corners of the visualization itself.
 
-1. In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). Drill requires a visualization with a hierarchy. 
+1. In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](service-reading-view-and-editing-view.md). Drill requires a visualization with a hierarchy. 
    
    A hierarchy is shown in the animation below.  The visualization has a hierarchy made up of territory, city, postal code, and city name. Each territory has one or more cities, each city has one or more postal codes, etc. By default, the visualization displays only the territory data, because *Territory* appears first in the list.
    
@@ -71,7 +71,7 @@ This method uses the drill icons that appear in the top corners of the visualiza
 ## Method 2 for drill down
 This method uses the **Explore** dropdown from the top Power BI menubar.
 
-1. In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). Drill requires a visualization with a hierarchy. 
+1. In Power BI, open a report in [Reading View](powerbi-service-open-a-report-in-reading-view.md) or [Editing View](service-reading-view-and-editing-view.md). Drill requires a visualization with a hierarchy. 
    
    A hierarchy is shown in the image below.  The visualization has a hierarchy made up of territory, city, postal code, and city name. Each territory has one or more cities, each city has one or more postal codes, etc. By default, the visualization displays only the territory data, because *Territory* appears first in the list.
    

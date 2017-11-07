@@ -22,7 +22,7 @@ ms.author: mihart
 ---
 # Move and resize a visualization in a report
 ## Open the report
-In Power BI, open a report in [Editing View](powerbi-service-go-from-reading-view-to-editing-view.md) and [create a visualization](power-bi-report-add-visualizations-i.md) if your report doesn't already have one.
+In Power BI, open a report in [Editing View](service-reading-view-and-editing-view.md) and [create a visualization](power-bi-report-add-visualizations-i.md) if your report doesn't already have one.
 
 ## Move the visualization﻿
 * Select (left-click) any area of the visualization and drag to the new location. 

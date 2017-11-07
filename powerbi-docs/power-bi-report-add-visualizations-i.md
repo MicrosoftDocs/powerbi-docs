@@ -28,7 +28,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
 
 ## Open a report and add a new page
-1. Open a [report in Editing View](powerbi-service-go-from-reading-view-to-editing-view.md). This tutorial uses the [Sales and Marketing sample](sample-datasets.md).
+1. Open a [report in Editing View](service-reading-view-and-editing-view.md). This tutorial uses the [Sales and Marketing sample](sample-datasets.md).
 2. If the Fields pane isn't visible, select the arrow icon to open it. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)

@@ -79,7 +79,7 @@ Slicers are a great choice in the following situations.
 ## Control what effect the slicer has on other visuals on the page
 Do you want the slicer to only filter some of the visuals on the report page?  Use the **Visual interactions** control to set this up.
 
-**NOTE**: If you don't see **Visual Interactions**, look for its icon instead ![](media/power-bi-visualization-slicers/power-bi-slicer-visual-interactions.png). If you don't see either, make sure you are in report [Editing view](powerbi-service-go-from-reading-view-to-editing-view.md).
+**NOTE**: If you don't see **Visual Interactions**, look for its icon instead ![](media/power-bi-visualization-slicers/power-bi-slicer-visual-interactions.png). If you don't see either, make sure you are in report [Editing view](service-reading-view-and-editing-view.md).
 
 1. Select the slicer to make it active and, from the menu bar, choose **Visual interactions**.
    
