@@ -30,26 +30,26 @@ Note: this content pack requires Acumatica v5.2 or higher.
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
    
-   ![](media/powerbi-content-pack-acumatica/getdata3.png)
+   ![](media/service-connect-to-acumatica/getdata3.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/powerbi-content-pack-acumatica/getdata2.png)
+   ![](media/service-connect-to-acumatica/getdata2.png)
 3. Select **Acumatica** \> **Get**.
    
-   ![](media/powerbi-content-pack-acumatica/acumatica.png)
+   ![](media/service-connect-to-acumatica/acumatica.png)
 4. Enter your Acumatica OData endpoint. An OData endpoint allows an external system to request data from Acumatica. Acumatica OData endpoint is formatted as follows and should us HTTPS:
    
      https://[sitedomain]/odata/[companyname]
    
    The Company Name is only required if you have a multi-company deployment. More information about finding this parameter in your Acumatica account is included below.
    
-   ![](media/powerbi-content-pack-acumatica/parameters.PNG)
+   ![](media/service-connect-to-acumatica/parameters.png)
 5. For Authentication Method, select **Basic**. Enter your username and password from your Acumatica account, then click **Sign In**.
    
-    ![](media/powerbi-content-pack-acumatica/creds2.PNG)
+    ![](media/service-connect-to-acumatica/creds2.png)
 6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \* which disappears once selected, chosing the dashboard will show a similar layout to the one below:
    
-    ![](media/powerbi-content-pack-acumatica/dashboard.png)
+    ![](media/service-connect-to-acumatica/dashboard.png)
 
 **What Now?**
 
@@ -70,11 +70,11 @@ The Acumatica OData endpoint is formatted as follows and should us HTTPS:
 
 The Application Site Domain can be found in your browser’s address bar when you’re signed into Acumatica. In the example below, the site domain is “https://pbi.acumatica.com” so the OData endpoint to provide would be “https://pbi.acumatica.com/odata”.
 
- ![](media/powerbi-content-pack-acumatica/URL.png)
+ ![](media/service-connect-to-acumatica/url.png)
 
 The Company Name is only required if you have a multi-company deployment. You can find this information from your Acumatica sign in page.
 
-![](media/powerbi-content-pack-acumatica/SignIn2.png)
+![](media/service-connect-to-acumatica/signin2.png)
 
 ## Troubleshooting
 If you’re not able to login, verify the Acumatica OData endpoint you provided is formatted correctly.
