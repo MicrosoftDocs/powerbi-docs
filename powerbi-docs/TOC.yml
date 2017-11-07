@@ -45,31 +45,31 @@
     - name: "Supported browsers for Power BI"
       href: service-browser-support.md
     - name: "Supported languages and countries/regions for Power BI"
-      href: powerbi-supported-languages.md
+      href: supported-languages-countries-regions.md
   - name: Samples
     items: 
     - name: "Samples for Power BI"
-      href: powerbi-sample-datasets.md
+      href: sample-datasets.md
     - name: "Tutorial: Using the Power BI sample content packs"
-      href: powerbi-sample-tutorial-connect-to-the-samples.md
+      href: sample-tutorial-connect-to-the-samples.md
     - name: "Download the Financial Sample workbook for Power BI"
-      href: powerbi-sample-download-the-financial-sample-workbook.md
+      href: sample-download-the-financial-sample-workbook.md
     - name: "Supplier Quality Analysis sample for Power BI: Take a tour"
-      href: powerbi-sample-supplier-quality-analysis-take-a-tour.md
+      href: sample-supplier-quality-analysis-take-a-tour.md
     - name: "IT Spend Analysis sample for Power BI: Take a tour"
-      href: powerbi-sample-it-spend-analysis-take-a-tour.md
+      href: sample-it-spend-analysis-take-a-tour.md
     - name: "Sales & Marketing sample for Power BI: Take a tour"
-      href: powerbi-sample-sales-and-marketing-take-a-tour.md
+      href: sample-sales-and-marketing-take-a-tour.md
     - name: "Customer Profitability sample for Power BI: Take a tour"
-      href: powerbi-sample-customer-profitability-take-a-tour.md
+      href: sample-customer-profitability-take-a-tour.md
     - name: "Human Resources sample: Take a tour"
-      href: powerbi-sample-human-resources-take-a-tour.md
+      href: sample-human-resources-take-a-tour.md
     - name: "Opportunity Analysis sample for Power BI: Take a tour"
-      href: powerbi-sample-opportunity-analysis-take-a-tour.md
+      href: sample-opportunity-analysis-take-a-tour.md
     - name: "Procurement Analysis sample: Take a tour"
-      href: powerbi-sample-procurement-analysis-take-a-tour.md
+      href: sample-procurement-analysis-take-a-tour.md
     - name: "Retail Analysis sample for Power BI: Take a tour"
-      href: powerbi-sample-retail-analysis-take-a-tour.md
+      href: sample-retail-analysis-take-a-tour.md
   - name: Common tasks
     items: 
     - name: "Favorite dashboards in Power BI"
@@ -93,9 +93,9 @@
     - name: "Power BI Premium - what is it?"
       href: powerbi-premium.md
     - name: "How to purchase Power BI Premium"
-      href: powerbi-admin-premium-purchase.md
+      href: service-admin-premium-purchase.md
     - name: "Manage Power BI Premium"
-      href: powerbi-admin-premium-manage.md
+      href: service-admin-premium-manage.md
     - name: "Power BI Premium FAQ"
       href: powerbi-premium-faq.md
     - name: "Power BI Premium release notes"
@@ -393,7 +393,7 @@
     - name: "Visualization best practices"
       href: service-visualization-best-practices.md
     - name: "Custom visualizations in Power BI"
-      href: powerbi-custom-visuals.md
+      href: power-bi-custom-visuals.md
     - name: "Tutorial: Part I, Add visualizations to a Power BI report"
       href: service-add-visualizations-to-a-report-i.md
     - name: "Tutorial: Part 2, Add visualizations to a Power BI report"
@@ -487,131 +487,131 @@
   - name: Data from databases
     items: 
     - name: "Azure SQL Data Warehouse with DirectQuery"
-      href: powerbi-azure-sql-data-warehouse-with-direct-connect.md
+      href: service-azure-sql-data-warehouse-with-direct-connect.md
     - name: "Azure SQL Database with DirectQuery"
-      href: powerbi-azure-sql-database-with-direct-connect.md
+      href: service-azure-sql-database-with-direct-connect.md
     - name: "Spark on HDInsight with DirectQuery"
-      href: powerbi-spark-on-hdinsight-with-direct-connect.md
+      href: spark-on-hdinsight-with-direct-connect.md
     - name: "SQL Server Analysis Services live data in Power BI"
-      href: powerbi-sql-server-analysis-services-tabular-data.md
+      href: sql-server-analysis-services-tabular-data.md
     - name: "Azure and Power BI"
-      href: powerbi-azure-and-power-bi.md
+      href: service-azure-and-power-bi.md
   - name: Data refresh
     items: 
     - name: "Data refresh in Power BI"
-      href: powerbi-refresh-data.md
+      href: refresh-data.md
     - name: "Configure scheduled refresh"
-      href: powerbi-refresh-scheduled-refresh.md
+      href: refresh-scheduled-refresh.md
     - name: "Refresh a dataset created from a Power BI Desktop file - local"
-      href: powerbi-refresh-desktop-file-local-drive.md
+      href: refresh-desktop-file-local-drive.md
     - name: "Refresh a dataset created from a Power BI Desktop file - cloud"
-      href: powerbi-refresh-desktop-file-onedrive.md
+      href: refresh-desktop-file-onedrive.md
     - name: "Refresh a dataset created from an Excel workbook - local"
-      href: powerbi-refresh-excel-file-local-drive.md
+      href: refresh-excel-file-local-drive.md
     - name: "Refresh a dataset created from an Excel workbook - cloud"
-      href: powerbi-refresh-excel-file-onedrive.md
+      href: refresh-excel-file-onedrive.md
     - name: "Refresh a dataset created from a comma separated value (.csv) file on OneDrive"
-      href: powerbi-refresh-csv-file-onedrive.md
+      href: refresh-csv-file-onedrive.md
     - name: "Troubleshooting refresh scenarios"
-      href: powerbi-refresh-troubleshooting-refresh-scenarios.md
+      href: refresh-troubleshooting-refresh-scenarios.md
     - name: "Disable privacy settings"
-      href: powerbi-refresh-enable-fast-combine.md
+      href: refresh-enable-fast-combine.md
   - name: Gateways
     items: 
     - name: "Get started with gateways"
-      href: powerbi-gateway-getting-started.md
+      href: service-gateway-getting-started.md
     - name: "Guidance for deploying a data gateway"
-      href: powerbi-gateway-deployment-guidance.md
+      href: service-gateway-deployment-guidance.md
     - name: "On-premises Data Gateway"
-      href: powerbi-gateway-onprem.md
+      href: service-gateway-onprem.md
     - name: "On-premises Data Gateway - in-depth"
-      href: powerbi-gateway-onprem-indepth.md
+      href: service-gateway-onprem-indepth.md
     - name: "On-Premises Data Gateway FAQ"
-      href: powerbi-gateway-onprem-faq.md
+      href: service-gateway-onprem-faq.md
     - name: "On-premises data gateway (personal mode)"
-      href: powerbi-gateway-personal-mode.md
+      href: service-gateway-personal-mode.md
     - name: "Troubleshooting the On-Premises Data Gateway"
-      href: powerbi-gateway-onprem-tshoot.md
+      href: service-gateway-onprem-tshoot.md
     - name: "Power BI Gateway - Personal"
-      href: powerbi-personal-gateway.md
+      href: personal-gateway.md
     - name: "Configuring proxy settings"
-      href: powerbi-gateway-proxy.md
+      href: service-gateway-proxy.md
     - name: "Manage your enterprise data source - Analysis Services"
-      href: powerbi-gateway-enterprise-manage-ssas.md
+      href: service-gateway-enterprise-manage-ssas.md
     - name: "Manage your enterprise data source - SAP HANA"
-      href: powerbi-gateway-enterprise-manage-sap.md
+      href: service-gateway-enterprise-manage-sap.md
     - name: "Manage your enterprise data source - SQL"
-      href: powerbi-gateway-enterprise-manage-sql.md
+      href: service-gateway-enterprise-manage-sql.md
     - name: "Manage your data source - Oracle"
-      href: powerbi-gateway-onprem-manage-oracle.md
+      href: service-gateway-onprem-manage-oracle.md
     - name: "Manage your enterprise data source - Import/Scheduled Refresh"
-      href: powerbi-gateway-enterprise-manage-scheduled-refresh.md
+      href: service-gateway-enterprise-manage-scheduled-refresh.md
   - name: Administration
     items: 
     - name: "Administering Power BI in your organization"
-      href: powerbi-admin-administering-power-bi-in-your-organization.md
+      href: service-admin-administering-power-bi-in-your-organization.md
     - name: "Power BI (free) in your organization"
-      href: powerbi-admin-powerbi-free-in-your-organization.md
+      href: service-admin-powerbi-free-in-your-organization.md
     - name: "Purchasing Power BI Pro"
-      href: powerbi-admin-purchasing-power-bi-pro.md
+      href: service-admin-purchasing-power-bi-pro.md
     - name: "Power BI Governance and Deployment Approaches"
-      href: powerbi-admin-governance.md
+      href: service-admin-governance.md
     - name: "Power BI Security"
-      href: powerbi-admin-power-bi-security.md
+      href: service-admin-power-bi-security.md
     - name: "Signing up for Power BI with a new Office 365 Trial"
-      href: powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+      href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
     - name: "Where is my tenant located?"
-      href: powerbi-admin-where-is-my-tenant-located.md
+      href: service-admin-where-is-my-tenant-located.md
     - name: "Power BI and ExpressRoute"
-      href: powerbi-admin-power-bi-expressroute.md
+      href: service-admin-power-bi-expressroute.md
     - name: "Administration Role in Office 365"
-      href: powerbi-admin-role.md
+      href: service-admin-role.md
     - name: "Admin portal"
-      href: powerbi-admin-portal.md
+      href: service-admin-portal.md
     - name: "Auditing Power BI"
-      href: powerbi-admin-auditing.md
+      href: service-admin-auditing.md
     - name: "Find users that have signed in"
-      href: powerbi-admin-access-usage.md
+      href: service-admin-access-usage.md
     - name: "Row-level security with Power BI"
-      href: powerbi-admin-rls.md
+      href: service-admin-rls.md
     - name: "Manage your data capacity in Power BI"
-      href: powerbi-admin-manage-your-data-storage-in-power-bi.md
+      href: service-admin-manage-your-data-storage-in-power-bi.md
     - name: "Power BI Archived Workspace"
-      href: powerbi-admin-power-bi-archived-workspace.md
+      href: service-admin-power-bi-archived-workspace.md
     - name: "Unable to add Power BI to O365 partner"
-      href: powerbi-admin-syndication-partner.md
+      href: service-admin-syndication-partner.md
     - name: "Closing your Power BI Account"
-      href: powerbi-admin-closing-your-account.md
+      href: service-admin-closing-your-account.md
     - name: "Configure mobile apps with Intune"
-      href: powerbi-admin-mobile-intune.md
+      href: service-admin-mobile-intune.md
     - name: "Power BI for Office 365 is transitioned to Power BI"
-      href: powerbi-admin-o365portal-retired.md
+      href: service-admin-o365portal-retired.md
   - name: Troubleshooting
     items: 
     - name: "Forgot your password for Power BI?"
-      href: powerbi-admin-forgot-your-password.md
+      href: service-admin-forgot-your-password.md
     - name: "Capturing additional diagnostic information for Power BI"
-      href: powerbi-admin-capturing-additional-diagnostic-information-for-power-bi.md
+      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
     - name: "Alternate Email Address for Power BI"
-      href: powerbi-admin-alternate-email-address-for-power-bi.md
+      href: service-admin-alternate-email-address-for-power-bi.md
     - name: "How to use the same account login for Power BI and Azure"
-      href: powerbi-admin-how-to-use-the-same-account-as-azure.md
+      href: service-admin-how-to-use-the-same-account-as-azure.md
     - name: "Office 365 dedicated - known issues"
-      href: powerbi-admin-office-365-dedicated-known-issues.md
+      href: service-admin-office-365-dedicated-known-issues.md
     - name: "Troubleshooting Analyze in Excel"
       href: powerbi-desktop-troubleshooting-analyze-in-excel.md
     - name: "Troubleshooting the On-Premises Data Gateway"
-      href: powerbi-gateway-onprem-tshoot.md
+      href: service-gateway-onprem-tshoot.md
     - name: "Troubleshooting Power BI Gateway - Personal"
-      href: powerbi-admin-troubleshooting-power-bi-personal-gateway.md
+      href: service-admin-troubleshooting-power-bi-personal-gateway.md
     - name: "Troubleshooting unsupported data source for refresh"
-      href: powerbi-admin-troubleshoot-unsupported-data-source-for-refresh.md
+      href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
     - name: "Troubleshooting scheduled refresh for Azure SQL Databases"
-      href: powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+      href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
     - name: "Error: We couldn't find any data in your Excel workbook"
-      href: powerbi-admin-troubleshoot-excel-workbook-data.md
+      href: service-admin-troubleshoot-excel-workbook-data.md
     - name: "Troubleshooting tile errors"
-      href: powerbi-refresh-troubleshooting-tile-errors.md
+      href: refresh-troubleshooting-tile-errors.md
     - name: "How to refresh your Xero content pack credentials if refresh failed"
       href: service-refresh-xero-content-pack-credentials.md    
 - name: Power BI Desktop
